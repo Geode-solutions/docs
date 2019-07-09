@@ -1,0 +1,18 @@
+.. index:: pair: class; geode::AttributeBase
+.. _doxid-classgeode_1_1_attribute_base:
+
+class geode::AttributeBase
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class AttributeBase {
+	};

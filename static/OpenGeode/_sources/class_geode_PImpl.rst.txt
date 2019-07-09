@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::PImpl
+.. _doxid-classgeode_1_1_p_impl:
+
+template class geode::PImpl
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <typename T>
+	class PImpl {
+	public:
+		// construction
+	
+		template <typename... Args>
+		:target:`PImpl<doxid-classgeode_1_1_p_impl_1a05b55d893b13dde8df4e46c66f9e09c5>`(Args&& ...);
+	
+		template <typename... Args>
+		:target:`PImpl<doxid-classgeode_1_1_p_impl_1adb28eaff61081aee2a49a77e5c4d3ca0>`(Args&&... args);
+
+		// methods
+	
+		T* :target:`operator-><doxid-classgeode_1_1_p_impl_1a14cf245237ee117197f3ed4a2c662432>`();
+		const T* :target:`operator-><doxid-classgeode_1_1_p_impl_1aca5877da1c96be51f511326fd4a552ef>`() const;
+		T& :target:`operator*<doxid-classgeode_1_1_p_impl_1a0842bbe1d39456bb6f47257d460ec578>`();
+		const T& :target:`operator*<doxid-classgeode_1_1_p_impl_1aab8cb5c2715f7677f82b8a310dea71ff>`() const;
+	
+		template <typename Archive>
+		void :target:`serialize<doxid-classgeode_1_1_p_impl_1a2190b056a6ceb34baae69c207853abf5>`(Archive& archive);
+	};

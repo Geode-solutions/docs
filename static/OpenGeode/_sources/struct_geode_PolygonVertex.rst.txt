@@ -1,0 +1,36 @@
+.. index:: pair: struct; geode::PolygonVertex
+.. _doxid-structgeode_1_1_polygon_vertex:
+
+struct geode::PolygonVertex
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct PolygonVertex {
+		// fields
+	
+		index_t :target:`polygon_id<doxid-structgeode_1_1_polygon_vertex_1adff99bd0472539eb2ba3cfed9102123a>`;
+		index_t :target:`vertex_id<doxid-structgeode_1_1_polygon_vertex_1a3b9665fe9730f9a5748372c79bbe2bfe>`;
+
+		// construction
+	
+		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1a4c57bf4d3c991bd883be0e4876740dbd>`();
+		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1aa4ef0c113362dfc1c6a8eb511d670cf3>`(index_t polygon_id, index_t vertex_id);
+		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1a2b1150205a357e97387da76b8e4e142f>`(:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` polygon_edge);
+
+		// methods
+	
+		bool :target:`operator==<doxid-structgeode_1_1_polygon_vertex_1affbd5665ff21740474b8d95cc9e3e7a4>`(const PolygonVertex& other) const;
+		bool :target:`operator!=<doxid-structgeode_1_1_polygon_vertex_1a5584122877dd4aaee200b4efdb46e89f>`(const PolygonVertex& other) const;
+	
+		template <typename Archive>
+		void :target:`serialize<doxid-structgeode_1_1_polygon_vertex_1ae8770b042e644e7f9c7bb067acb1518c>`(Archive& archive);
+	};

@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::RelationshipManager::IncidenceRange
+.. _doxid-classgeode_1_1_relationship_manager_1_1_incidence_range:
+
+class geode::RelationshipManager::IncidenceRange
+================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class IncidenceRange {
+	public:
+		// construction
+	
+		:target:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a089c857b3a95ecbba3c81af1d82f50f3>`(const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		:target:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1aa26b273a8c1f9151d0b5ac04c12a9270>`(IncidenceRange&& other);
+		:target:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a52230e3a996696dc28aa4e838641b803>`(const IncidenceRange& other);
+
+		// methods
+	
+		const IncidenceRange& :target:`begin<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a0e0762714da5b82b857c193070acb3dd>`() const;
+		const IncidenceRange& :target:`end<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a747f50fa57b2a4be21202ada370edd1a>`() const;
+		bool :target:`operator!=<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a6f7a1e355995c59e49b587ba2408a791>`(const IncidenceRange&) const;
+		void :target:`operator++<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1aafeb8db8f919c35f7473f7462b3d0bb1>`();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator*<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1ace6dd48398fb4b6359a69dee7940c349>`() const;
+	};

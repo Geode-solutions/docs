@@ -1,0 +1,122 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>class geode::VertexIdentifier &#8212; OpenGeode  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::VertexSet" href="class_geode_VertexSet.html" />
+    <link rel="prev" title="template class geode::Vector" href="class_geode_Vector.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-vertexidentifier">
+<span id="doxid-classgeode-1-1-vertex-identifier"></span><span id="index-0"></span><h1>class geode::VertexIdentifier<a class="headerlink" href="#class-geode-vertexidentifier" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block">
+<span></span><span class="k">class</span> <span class="n">VertexIdentifier</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a41aa11665980546c1102b8d169cfaae8">VertexIdentifier</span><span></span><span class="p">();</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a126167bad707bf6991d900419e8742a5">nb_unique_vertices</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a04919fb11ef214d5861809119867d731">mesh_component_vertices</span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1af50e6da4e87928eae7b6be99188c3b05">mesh_component_vertices</span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a5f6dfd3e7a4d98b6c1d05d77b8f392f6">mesh_component_vertices</span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1abb119e7a7b918a152362e48a7c75fdc4">unique_vertex</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">MeshComponent</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1aa0e48c044e602b71312bcef5e5f28d73">register_component</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">MeshComponent</span><span class="o">&amp;</span> <span class="n">component</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a58e9930bdd941d3889b00044821717a8">remove_component</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">);</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a71979507c1e499c162ea107904b0d5e7">create_unique_vertex</span><span></span><span class="p">();</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a1f68247b957f1b7905db5c37d3874fbf">create_unique_vertices</span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">nb</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a48d74658aeacf6f0b3b85ad5d9c4e460">set_unique_vertex</span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span> <span class="n">component_vertex_id</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">unique_vertex_id</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a052e9d89f3856e0ceb3c4a5316330010">save_unique_vertices</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1a4999703d2882a55cfa23bf73fe440fe1">load_unique_vertices</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
+<span class="p">};</span>
+</pre>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="global.html">Global Namespace</a><ul>
+  <li><a href="namespace_geode.html">namespace geode</a><ul>
+      <li>Previous: <a href="class_geode_Vector.html" title="previous chapter">template class geode::Vector</a></li>
+      <li>Next: <a href="class_geode_VertexSet.html" title="next chapter">class geode::VertexSet</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, tt.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_VertexIdentifier.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

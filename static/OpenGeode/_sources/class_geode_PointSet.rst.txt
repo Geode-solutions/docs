@@ -1,0 +1,41 @@
+.. index:: pair: class; geode::PointSet
+.. _doxid-classgeode_1_1_point_set:
+
+template class geode::PointSet
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class PointSet: public :ref:`geode::VertexSet<doxid-classgeode_1_1_vertex_set>` {
+	public:
+		// methods
+	
+		static std::unique_ptr<PointSet<dimension>> :target:`create<doxid-classgeode_1_1_point_set_1a07dc124248af6ca45f32bd1bc7dcfd73>`();
+		static std::unique_ptr<PointSet<dimension>> :target:`create<doxid-classgeode_1_1_point_set_1a5f73ef13481ddf946eea86bcc6553999>`(const :ref:`MeshType<doxid-classgeode_1_1_named_type>`& type);
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_point_set_1aa3ed43c031f8aa0415365cb1a0b67603>`(index_t vertex_id) const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
+		virtual std::string :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1a225c97c97fbb97dae48f33cd0d8c43f8>`() const = 0;
+		index_t :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
+		virtual :ref:`MeshType<doxid-classgeode_1_1_named_type>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+

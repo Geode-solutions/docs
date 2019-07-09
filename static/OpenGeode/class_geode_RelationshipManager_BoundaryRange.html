@@ -1,0 +1,116 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>class geode::RelationshipManager::BoundaryRange &#8212; OpenGeode  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::RelationshipManager::CollectionRange" href="class_geode_RelationshipManager_CollectionRange.html" />
+    <link rel="prev" title="class geode::RelationshipManager" href="class_geode_RelationshipManager.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-relationshipmanager-boundaryrange">
+<span id="doxid-classgeode-1-1-relationship-manager-1-1-boundary-range"></span><span id="index-0"></span><h1>class geode::RelationshipManager::BoundaryRange<a class="headerlink" href="#class-geode-relationshipmanager-boundaryrange" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block">
+<span></span><span class="k">class</span> <span class="n">BoundaryRange</span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a90b518a6a86cce62b43911385850081d">BoundaryRange</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager.html#doxid-classgeode-1-1-relationship-manager"><span class="std std-ref">RelationshipManager</span></a><span></span><span class="o">&amp;</span> <span class="n">manager</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a7d6aa52b4493d1cbca9076d9e2c62dc4">BoundaryRange</span><span></span><span class="p">(</span><span class="n">BoundaryRange</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a9cbc4d0aa703afa773463b9878a63a5b">BoundaryRange</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundaryRange</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">BoundaryRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1aa90b181cc549458c87a9c5e01218daf7">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">BoundaryRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a9177a9afadacfb29ece998b4b87bc026">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a210bb870f81a0995480606ab951fc99d">operator!=</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundaryRange</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1aa7cbef6da739bb002810ec02f6f7f61d">operator++</span><span></span><span class="p">();</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a6c9209065fd8601a9a5a0b23e9a8a4e5">operator*</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span>
+</pre>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="global.html">Global Namespace</a><ul>
+  <li><a href="namespace_geode.html">namespace geode</a><ul>
+  <li><a href="class_geode_RelationshipManager.html">class geode::RelationshipManager</a><ul>
+      <li>Previous: <a href="class_geode_RelationshipManager.html" title="previous chapter">class geode::RelationshipManager</a></li>
+      <li>Next: <a href="class_geode_RelationshipManager_CollectionRange.html" title="next chapter">class geode::RelationshipManager::CollectionRange</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, tt.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_RelationshipManager_BoundaryRange.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

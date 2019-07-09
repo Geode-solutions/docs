@@ -1,0 +1,172 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>template class geode::PolyhedralSolidBuilder &#8212; OpenGeode  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::PolyhedralSolidInput" href="class_geode_PolyhedralSolidInput.html" />
+    <link rel="prev" title="template class geode::PolyhedralSolid" href="class_geode_PolyhedralSolid.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="template-class-geode-polyhedralsolidbuilder">
+<span id="doxid-classgeode-1-1-polyhedral-solid-builder"></span><span id="index-0"></span><h1>template class geode::PolyhedralSolidBuilder<a class="headerlink" href="#template-class-geode-polyhedralsolidbuilder" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<pre class="highlight doxyrest-overview-code-block literal-block">
+<span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">PolyhedralSolidBuilder</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">geode::VertexSetBuilder</span></a><span></span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolyhedralSolidBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a7bda3be99351d67a661f0ceb9a6e776c">create</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_PolyhedralSolid.html#doxid-classgeode-1-1-polyhedral-solid"><span class="std std-ref">PolyhedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polyhedral-solid-builder-1a11b09292890093eee287e273df50bba9"><span class="std std-ref">set_point</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="n">index_t</span> <a class="reference internal" href="#doxid-classgeode-1-1-polyhedral-solid-builder-1a8175bf8ba66b935705317fa0057eb68e"><span class="std std-ref">create_point</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a6dba41319f48c1a2da2e61f4fa2234a2">set_polyhedron_vertex</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">);</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a839233413ea3b632a7b489d01821b54a">create_polyhedron</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;&amp;</span> <span class="n">facets</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a2597d8361224e70749f60c97e146b2c4">set_polyhedron_adjacent</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">adjacent_id</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a45556ef309b970fe69837480de337fcb">compute_polyhedron_adjacencies</span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a163619ff43cc372aedfa38ecfebcf14e">compute_polyhedron_adjacencies</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&amp;</span> <span class="n">polyhedra_to_connect</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a1e1fde1c3984916310457c2bff04346e">delete_polyhedra</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
+<span class="p">};</span>
+</pre>
+<div class="section" id="inherited-members">
+<h3>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block">
+<span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1ad20a5799994288413a1f198dbe0a505d"><span class="std std-ref">create_vertex</span></a><span></span><span class="p">();</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1a61231a71fdad16ddb2b7e14ebc21a772"><span class="std std-ref">create_vertices</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">nb</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1af0c55e98a9f0845c6f7f02e4b2715b0c"><span class="std std-ref">delete_vertices</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
+</pre>
+</div>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-polyhedral-solid-builder"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="methods">
+<h3>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a11b09292890093eee287e273df50bba9">
+<span id="index-1"></span><span></span><span class="kt">void</span> <span class="n">set_point</span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span>
+</pre>
+<p>Sets a point.</p>
+<p class="rubric">Parameters:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>vertex_id</td>
+<td>the vertex, in 0..  nb_vetices()-1.</td>
+</tr>
+<tr class="row-even"><td>point</td>
+<td>the vertex coordinates</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>reference to the point that corresponds to the vertex.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a8175bf8ba66b935705317fa0057eb68e">
+<span id="index-2"></span><span></span><span class="n">index_t</span> <span class="n">create_point</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span>
+</pre>
+<p>Creates a new vertex.</p>
+<p class="rubric">Parameters:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="20%" />
+<col width="80%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>point</td>
+<td>the point to create</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the index of the created vertex</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="global.html">Global Namespace</a><ul>
+  <li><a href="namespace_geode.html">namespace geode</a><ul>
+      <li>Previous: <a href="class_geode_PolyhedralSolid.html" title="previous chapter">template class geode::PolyhedralSolid</a></li>
+      <li>Next: <a href="class_geode_PolyhedralSolidInput.html" title="next chapter">template class geode::PolyhedralSolidInput</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, tt.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_PolyhedralSolidBuilder.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

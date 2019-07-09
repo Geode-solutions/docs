@@ -1,0 +1,32 @@
+.. index:: pair: namespace; std
+.. _doxid-namespacestd:
+
+namespace std
+=============
+
+.. toctree::
+	:hidden:
+
+	struct_std_hash.rst
+	class_std_hash.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace std {
+
+	// structs
+
+	template <>
+	struct :ref:`hash<geode::MeshType><doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4>`;
+
+	// classes
+
+	template <>
+	class :ref:`hash<geode::uuid><doxid-classstd_1_1hash_3_01geode_1_1uuid_01_4>`;
+
+	} // namespace std

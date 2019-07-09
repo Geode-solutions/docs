@@ -1,0 +1,38 @@
+.. index:: pair: class; geode::NNSearch
+.. _doxid-classgeode_1_1_n_n_search:
+
+template class geode::NNSearch
+==============================
+
+.. toctree::
+	:hidden:
+
+	struct_geode_NNSearch_ColocatedInfo.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class NNSearch {
+	public:
+		// structs
+	
+		struct :ref:`ColocatedInfo<doxid-structgeode_1_1_n_n_search_1_1_colocated_info>`;
+
+		// construction
+	
+		:target:`NNSearch<doxid-classgeode_1_1_n_n_search_1a500e918b386b1e6b046677e3dc958220>`(std::vector<:ref:`Point<doxid-classgeode_1_1_point>`<dimension>> points);
+
+		// methods
+	
+		index_t :target:`closest_neighbor<doxid-classgeode_1_1_n_n_search_1a44b483d8844bf0959a30181e90f894d4>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
+		std::vector<index_t> :target:`radius_neighbors<doxid-classgeode_1_1_n_n_search_1a79943bb931b1b553c380f8d9f1df7a91>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point, double threshold_distance) const;
+		std::vector<index_t> :target:`neighbors<doxid-classgeode_1_1_n_n_search_1afd26ff3ce7c46ee7e50dc93c03c9d3ae>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point, index_t nb_neighbors) const;
+		:ref:`ColocatedInfo<doxid-structgeode_1_1_n_n_search_1_1_colocated_info>` :target:`colocated_index_mapping<doxid-classgeode_1_1_n_n_search_1a0cb17bc97ef8883abda3c50f3356ed72>`(double epsilon) const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_n_n_search_1a2cbf72dcbdd9373c4ede269967eb6905>`(index_t index) const;
+		index_t :target:`nb_points<doxid-classgeode_1_1_n_n_search_1a7906b08ddb967c80d56d421daa074e96>`() const;
+	};

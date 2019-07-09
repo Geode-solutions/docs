@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>template class geode::OpenGeodeTriangulatedSurface &#8212; OpenGeode  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::OpenGeodeTriangulatedSurfaceBuilder" href="class_geode_OpenGeodeTriangulatedSurfaceBuilder.html" />
+    <link rel="prev" title="template class geode::OpenGeodeTetrahedralSolidBuilder" href="class_geode_OpenGeodeTetrahedralSolidBuilder.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="template-class-geode-opengeodetriangulatedsurface">
+<span id="doxid-classgeode-1-1-open-geode-triangulated-surface"></span><span id="index-0"></span><h1>template class geode::OpenGeodeTriangulatedSurface<a class="headerlink" href="#template-class-geode-opengeodetriangulatedsurface" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block">
+<span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">OpenGeodeTriangulatedSurface</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">geode::TriangulatedSurface</span></a><span></span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-triangulated-surface-1ac0b205e080a110c654e0d273e5c6fee3">OpenGeodeTriangulatedSurface</span><span></span><span class="p">();</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">virtual</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">MeshType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-triangulated-surface-1a7eff2ac25dc3347f6ac31e24986ec7d6">type_name</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-triangulated-surface-1a84e1a3a341a90795cbebc42995a3d2ff">native_extension</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">static</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">MeshType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-triangulated-surface-1a1d50deea9b9e67df9be2818616fd12b1">type_name_static</span><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-triangulated-surface-1a9363f25e6bf4308971a91344884633a6">native_extension_static</span><span></span><span class="p">();</span>
+<span class="p">};</span>
+</pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this headline">¶</a></h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block">
+<span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1a290e8167ed522d6c5cb70bae169cabcc"><span class="std std-ref">create</span></a><span></span><span class="p">();</span>
+    <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1a225c97c97fbb97dae48f33cd0d8c43f8"><span class="std std-ref">native_extension</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1a54faa6fb3f4a9086c44452058dc3919e"><span class="std std-ref">nb_vertices</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1aee0082194a8fb2660fb187687de79b2d"><span class="std std-ref">vertex_attribute_manager</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">MeshType</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1ae19dce429c1353a4616424fa9c1076e1"><span class="std std-ref">type_name</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a773e978b4f47b3958a5c9b22a9f4595e"><span class="std std-ref">point</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1acba9973b5bcad5e55eeff370fab27ee9"><span class="std std-ref">nb_polygons</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a446f31663e0268d2cea9ec11424fadb7"><span class="std std-ref">nb_polygon_vertices</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">polygon_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a0caba2f8e5808ca87455acb93de6c079"><span class="std std-ref">nb_polygon_edges</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">polygon_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a5f833a6e8b90bb24178d2c8727b0271f"><span class="std std-ref">polygon_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a8631179be95e1b7e39e4f95f85a842bb"><span class="std std-ref">next_polygon_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a520513d18f120d0c23d08f078ee7fa55"><span class="std std-ref">previous_polygon_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1abd000df5922011d8909c4fba612cdfe8"><span class="std std-ref">next_polygon_edge</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a2acdb16e764d4ca73b83b87ceed27c09"><span class="std std-ref">previous_polygon_edge</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1ac4eb3bd11a3051fa6c67bb22b558ad96"><span class="std std-ref">polygon_adjacent</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a6647fc74c30649ac734f3880d294f789"><span class="std std-ref">polygon_adjacent_edge</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1af2198831bacf2fd1c7c2394d0931e951"><span class="std std-ref">is_edge_on_border</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1af96280246399470ff3cf7a8d5e05e1e9"><span class="std std-ref">polygon_edges_on_border</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">polygon_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a1f147efd884fc60ed3e12aa72f87ee66"><span class="std std-ref">next_on_border</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a4fded2a29b3e14b488a04efcff6b2e0e"><span class="std std-ref">previous_on_border</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">double</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a0b0472c131a1c7824b0d629e21e76f6b"><span class="std std-ref">polygon_edge_length</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1aaecfaf2e355bcb1e99de7bc9b14311e6"><span class="std std-ref">polygon_edge_barycenter</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a2bbbb4f68538d59eba2bde694c95e748"><span class="std std-ref">polygon_edge_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a789c75d3563b53e61ba21d567b65f420"><span class="std std-ref">polygon_barycenter</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">polygon_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">double</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a2686dc758411ff26788f61734e849236"><span class="std std-ref">polygon_area</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">polygon_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1aeed9bcbd701e635a7619217e6d743eaa"><span class="std std-ref">polygons_around_vertex</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">bool</span><span class="p">,</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1aa69b611c271adb13470d073a8c82a899"><span class="std std-ref">polygon_edge_from_vertices</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">from_vertex_id</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">to_vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base-1a2116ebad3ee2d9fdefe09fd90d7ffe01"><span class="std std-ref">polygon_attribute_manager</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface-1a38e184ebddc3bc876adb573408654963"><span class="std std-ref">create</span></a><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface-1acf8bd20d36841076bb00ab5f2a5c5cb7"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">);</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">TriangulatedSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface-1a8f9db3c25bcc18d4a963071811dfc04b"><span class="std std-ref">create</span></a><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">TriangulatedSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface-1ae4d6c9ad9ca0b760e96c83b3893d1c81"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">);</span>
+    <span class="k">virtual</span> <span class="n">index_t</span> <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface-1ac02f89373c55321b9bad500ad6fc53a9"><span class="std std-ref">get_nb_polygon_vertices</span></a><span></span><span class="p">(</span><span class="n">index_t</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+</pre>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="global.html">Global Namespace</a><ul>
+  <li><a href="namespace_geode.html">namespace geode</a><ul>
+      <li>Previous: <a href="class_geode_OpenGeodeTetrahedralSolidBuilder.html" title="previous chapter">template class geode::OpenGeodeTetrahedralSolidBuilder</a></li>
+      <li>Next: <a href="class_geode_OpenGeodeTriangulatedSurfaceBuilder.html" title="next chapter">template class geode::OpenGeodeTriangulatedSurfaceBuilder</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, tt.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_OpenGeodeTriangulatedSurface.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

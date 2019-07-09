@@ -1,0 +1,36 @@
+.. index:: pair: class; geode::Surfaces
+.. _doxid-classgeode_1_1_surfaces:
+
+template class geode::Surfaces
+==============================
+
+.. toctree::
+	:hidden:
+
+	class_geode_Surfaces_ModifiableSurfaceRange.rst
+	class_geode_Surfaces_SurfaceRange.rst
+	class_geode_Surfaces_SurfaceRangeBase.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class Surfaces {
+	public:
+		// classes
+	
+		class :ref:`ModifiableSurfaceRange<doxid-classgeode_1_1_surfaces_1_1_modifiable_surface_range>`;
+		class :ref:`SurfaceRange<doxid-classgeode_1_1_surfaces_1_1_surface_range>`;
+		class :ref:`SurfaceRangeBase<doxid-classgeode_1_1_surfaces_1_1_surface_range_base>`;
+
+		// methods
+	
+		index_t :target:`nb_surfaces<doxid-classgeode_1_1_surfaces_1a04761b9c5ac32fdd9c71bc916205d43d>`() const;
+		const :ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& :target:`surface<doxid-classgeode_1_1_surfaces_1a593f10e2ff905efa6bb06475dcc125f3>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`SurfaceRange<doxid-classgeode_1_1_surfaces_1_1_surface_range>` :target:`surfaces<doxid-classgeode_1_1_surfaces_1a3eb2f792ff3aac7115da49e635dbddc0>`() const;
+		std::vector<std::string> :target:`save_surfaces<doxid-classgeode_1_1_surfaces_1adf6b65ebd85c3cb6ad281dbc5a3cd0e0>`(const std::string& directory) const;
+	};

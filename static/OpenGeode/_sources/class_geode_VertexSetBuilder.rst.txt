@@ -1,0 +1,103 @@
+.. index:: pair: class; geode::VertexSetBuilder
+.. _doxid-classgeode_1_1_vertex_set_builder:
+
+class geode::VertexSetBuilder
+=============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class VertexSetBuilder {
+	public:
+		// methods
+	
+		index_t :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
+		index_t :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(index_t nb);
+		void :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c>`(const std::vector<bool>& to_delete);
+	};
+.. _details-classgeode_1_1_vertex_set_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; create_vertex
+.. _doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	index_t create_vertex()
+
+Creates a new vertex.
+
+
+
+.. rubric:: Returns:
+
+the index of the created vertex
+
+.. index:: pair: function; create_vertices
+.. _doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	index_t create_vertices(index_t nb)
+
+Creates a contiguous chunk of vertices.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- nb
+
+		- number of sub-entities to create.
+
+
+
+.. rubric:: Returns:
+
+the index of the first created vertex
+
+.. index:: pair: function; delete_vertices
+.. _doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void delete_vertices(const std::vector<bool>& to_delete)
+
+Deletes a set of vertices.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- to_delete
+
+		- a vector of size  nb(). If to_delete[e] is true, then the element e will be destroyed.
+

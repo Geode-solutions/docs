@@ -1,0 +1,11 @@
+.. index:: pair: struct; geode::ComponentTag
+.. _doxid-structgeode_1_1_component_tag:
+
+struct geode::ComponentTag
+==========================
+
+.. toctree::
+	:hidden:
+
+
+

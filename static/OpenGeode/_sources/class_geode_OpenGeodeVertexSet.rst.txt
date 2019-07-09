@@ -1,0 +1,41 @@
+.. index:: pair: class; geode::OpenGeodeVertexSet
+.. _doxid-classgeode_1_1_open_geode_vertex_set:
+
+class geode::OpenGeodeVertexSet
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class OpenGeodeVertexSet: public :ref:`geode::VertexSet<doxid-classgeode_1_1_vertex_set>` {
+	public:
+		// methods
+	
+		static :ref:`MeshType<doxid-classgeode_1_1_named_type>` :target:`type_name_static<doxid-classgeode_1_1_open_geode_vertex_set_1a7490e40f875b6b40daa47807ef2c6286>`();
+		static std::string :target:`native_extension_static<doxid-classgeode_1_1_open_geode_vertex_set_1ad295005ff5c7d39862673bbba433f60f>`();
+		virtual :ref:`MeshType<doxid-classgeode_1_1_named_type>` :target:`type_name<doxid-classgeode_1_1_open_geode_vertex_set_1a9f812a7f6886aaec38fbd7300c435efa>`() const;
+		virtual std::string :target:`native_extension<doxid-classgeode_1_1_open_geode_vertex_set_1ab177abc4450d9efe85abbbdf9f2223d3>`() const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
+		virtual std::string :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1a225c97c97fbb97dae48f33cd0d8c43f8>`() const = 0;
+		index_t :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
+		virtual :ref:`MeshType<doxid-classgeode_1_1_named_type>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+

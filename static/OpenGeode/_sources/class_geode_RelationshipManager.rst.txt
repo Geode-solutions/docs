@@ -1,0 +1,51 @@
+.. index:: pair: class; geode::RelationshipManager
+.. _doxid-classgeode_1_1_relationship_manager:
+
+class geode::RelationshipManager
+================================
+
+.. toctree::
+	:hidden:
+
+	class_geode_RelationshipManager_BoundaryRange.rst
+	class_geode_RelationshipManager_CollectionRange.rst
+	class_geode_RelationshipManager_IncidenceRange.rst
+	class_geode_RelationshipManager_ItemRange.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class RelationshipManager {
+	public:
+		// classes
+	
+		class :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`;
+		class :ref:`CollectionRange<doxid-classgeode_1_1_relationship_manager_1_1_collection_range>`;
+		class :ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`;
+		class :ref:`ItemRange<doxid-classgeode_1_1_relationship_manager_1_1_item_range>`;
+
+		// construction
+	
+		:target:`RelationshipManager<doxid-classgeode_1_1_relationship_manager_1a26c3dfa33a7c0db5df408fc0aa9fab76>`();
+
+		// methods
+	
+		index_t :target:`nb_boundaries<doxid-classgeode_1_1_relationship_manager_1a43a51596b48fce4e3d14068dece5f351>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>` :target:`boundaries<doxid-classgeode_1_1_relationship_manager_1af80fe9dc5fbbc0ff52c165c888a65b0b>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		index_t :target:`nb_incidences<doxid-classgeode_1_1_relationship_manager_1a7090e72553ed91ec6d6a5becfbe7ad3f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>` :target:`incidences<doxid-classgeode_1_1_relationship_manager_1aa6029b8fd37ad91ca6a471deffc25bc0>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		index_t :target:`nb_items<doxid-classgeode_1_1_relationship_manager_1ae24f29fececb91c8908e13e051083929>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`ItemRange<doxid-classgeode_1_1_relationship_manager_1_1_item_range>` :target:`items<doxid-classgeode_1_1_relationship_manager_1a441cc7f864a223916c0bc8f457e96a68>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		index_t :target:`nb_collections<doxid-classgeode_1_1_relationship_manager_1acca37e197b318fe10a0370faf52cb82f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`CollectionRange<doxid-classgeode_1_1_relationship_manager_1_1_collection_range>` :target:`collections<doxid-classgeode_1_1_relationship_manager_1a49c741f81de1a4287fcc8dbb586e6a74>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		void :target:`add_component<doxid-classgeode_1_1_relationship_manager_1ac9963000e149a673272cd509ab8a81f8>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		void :target:`remove_component<doxid-classgeode_1_1_relationship_manager_1ae923af622ec06a4c3aa02e953edcb60f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		void :target:`add_boundary_relation<doxid-classgeode_1_1_relationship_manager_1a4fa211c39df4dd9861a12780e74318d5>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);
+		void :target:`add_item_in_collection<doxid-classgeode_1_1_relationship_manager_1af8c35fc212aed37e07feffff4a6a4d10>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection);
+		std::string :target:`save_relationships<doxid-classgeode_1_1_relationship_manager_1ac233b92b0736dd7f098a589c10eef164>`(const std::string& directory) const;
+		void :target:`load_relationships<doxid-classgeode_1_1_relationship_manager_1a785e9bbc489c730798704f648efc1da3>`(const std::string& directory);
+	};

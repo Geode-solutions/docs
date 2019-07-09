@@ -1,0 +1,23 @@
+.. index:: pair: enum; Level
+.. _doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8d:
+
+enum geode::Logger::Level
+=========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <logger.h>
+
+	enum Level {
+	    :target:`trace<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8da04a75036e9d520bb983c5ed03b8d0182>`,
+	    :target:`debug<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8daad42f6697b035b7580e4fef93be20b4d>`,
+	    :target:`info<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8dacaf9b6b99962bf5c2264824231d7a40c>`,
+	    :target:`warn<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8da1ea4c3ab05ee0c6d4de30740443769cb>`,
+	    :target:`err<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8da56bd7107802ebe56c6918992f0608ec6>`,
+	    :target:`critical<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8da7e85bcb66fb9a809d5ab4f62a8b8bea8>`,
+	    :target:`off<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8da3262d48df5d75e3452f0f16b313b7808>`,
+	};
+

@@ -1,0 +1,40 @@
+.. index:: pair: class; geode::OpenGeodePointSetBuilder
+.. _doxid-classgeode_1_1_open_geode_point_set_builder:
+
+template class geode::OpenGeodePointSetBuilder
+==============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class OpenGeodePointSetBuilder: public :ref:`geode::PointSetBuilder<doxid-classgeode_1_1_point_set_builder>` {
+	public:
+		// construction
+	
+		:target:`OpenGeodePointSetBuilder<doxid-classgeode_1_1_open_geode_point_set_builder_1a7df121de88fc09995f629b7cdfea83a1>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
+		index_t :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(index_t nb);
+		void :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c>`(const std::vector<bool>& to_delete);
+		static std::unique_ptr<:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_builder_1ab5c00c0739ace9a3125e0f1daf1e44ee>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh);
+		void :ref:`set_point<doxid-classgeode_1_1_point_set_builder_1a2a8878a90d56a0f60984bdc131443a70>`(index_t vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		index_t :ref:`create_point<doxid-classgeode_1_1_point_set_builder_1ada3e73058b784771e6e5c7b5480d9bde>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+

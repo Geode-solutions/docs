@@ -1,0 +1,25 @@
+.. index:: pair: class; geode::Component
+.. _doxid-classgeode_1_1_component:
+
+template class geode::Component
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class Component {
+	public:
+		// methods
+	
+		const std::string& :target:`name<doxid-classgeode_1_1_component_1aac9e69f6ec5c197a43ef76ca4a379f86>`() const;
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`id<doxid-classgeode_1_1_component_1aca5ed3aadbbbb38f6e30f63a4b3d8fa0>`() const;
+		virtual :ref:`ComponentType<doxid-classgeode_1_1_named_type>` :target:`component_type<doxid-classgeode_1_1_component_1a4468b6088e9bbc94ef9b59104488bf7d>`() const = 0;
+	};

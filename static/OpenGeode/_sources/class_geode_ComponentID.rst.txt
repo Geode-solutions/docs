@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::ComponentID
+.. _doxid-classgeode_1_1_component_i_d:
+
+class geode::ComponentID
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class ComponentID {
+	public:
+		// construction
+	
+		:target:`ComponentID<doxid-classgeode_1_1_component_i_d_1ad351ab9dde19ce3a150b8c7ee2bd1909>`(:ref:`ComponentType<doxid-classgeode_1_1_named_type>` component_type, :ref:`uuid<doxid-structgeode_1_1uuid>` id);
+
+		// methods
+	
+		:ref:`uuid<doxid-structgeode_1_1uuid>` :target:`id<doxid-classgeode_1_1_component_i_d_1aa802f7d00f56b5f0ee291b1e8ebdbcff>`() const;
+		const :ref:`ComponentType<doxid-classgeode_1_1_named_type>`& :target:`type<doxid-classgeode_1_1_component_i_d_1a866e41790b7821f8c9a4e05e6448be23>`() const;
+		bool :target:`operator!=<doxid-classgeode_1_1_component_i_d_1a70ae0d22797837d61d9db029758c6ae1>`(const ComponentID& other) const;
+		bool :target:`operator==<doxid-classgeode_1_1_component_i_d_1ad4c15e797f6986c786aa5c15e74a5963>`(const ComponentID& other) const;
+	};

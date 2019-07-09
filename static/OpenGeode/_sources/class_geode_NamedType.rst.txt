@@ -1,0 +1,28 @@
+.. index:: pair: class; geode::NamedType
+.. _doxid-classgeode_1_1_named_type:
+
+template class geode::NamedType
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <typename Type, typename Tag>
+	class NamedType {
+	public:
+		// construction
+	
+		:target:`NamedType<doxid-classgeode_1_1_named_type_1acea3c13e14546179104cc7f5f079e62c>`(Type value);
+
+		// methods
+	
+		const Type& :target:`get<doxid-classgeode_1_1_named_type_1ac0502248d9b341f2b088cd4dc993aab6>`() const;
+		bool :target:`operator==<doxid-classgeode_1_1_named_type_1a67a313f55fbe3c199d9c22749a78a9fe>`(const NamedType& other) const;
+	};

@@ -1,0 +1,26 @@
+.. index:: pair: enum; CellType
+.. _doxid-types_8h_1abe28fdc6b771ef9584372d3b31d57526:
+
+enum geode::CellType
+====================
+
+enum defining the type of cell in region
+
+* CellType::UNCLASSIFIED may be either a connector or more complex cell that is not specified.
+
+* CellType::UNDEFINED means that the cell is not defined and cannot be used.
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <types.h>
+
+	enum CellType {
+	    :target:`TETRAHEDRON<doxid-dummy_1abe28fdc6b771ef9584372d3b31d57526a921725623efcb888f85a941eb29906a9>`  = 0,
+	    :target:`HEXAHEDRON<doxid-dummy_1abe28fdc6b771ef9584372d3b31d57526a8efa397d080e415a2a4b45794abc1f76>`   = 1,
+	    :target:`PRISM<doxid-dummy_1abe28fdc6b771ef9584372d3b31d57526a25608df56c02f9fc6854a3de6a51822a>`        = 2,
+	    :target:`PYRAMID<doxid-dummy_1abe28fdc6b771ef9584372d3b31d57526acd996d3184761601a0e44e587a012d4f>`      = 3,
+	    :target:`UNCLASSIFIED<doxid-dummy_1abe28fdc6b771ef9584372d3b31d57526a6c92f88fdbcbe02e285a58ccee2068a6>` = 4,
+	    :target:`UNDEFINED<doxid-dummy_1abe28fdc6b771ef9584372d3b31d57526a0db45d2a4141101bdfe48e3314cfbca3>`    = 5,
+	};
+

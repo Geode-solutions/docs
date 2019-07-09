@@ -1,0 +1,26 @@
+.. index:: pair: class; geode::VertexSet
+.. _doxid-classgeode_1_1_vertex_set:
+
+class geode::VertexSet
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class VertexSet {
+	public:
+		// methods
+	
+		static std::unique_ptr<VertexSet> :target:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
+		virtual std::string :target:`native_extension<doxid-classgeode_1_1_vertex_set_1a225c97c97fbb97dae48f33cd0d8c43f8>`() const = 0;
+		index_t :target:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
+		virtual :ref:`MeshType<doxid-classgeode_1_1_named_type>` :target:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+	};

@@ -1,0 +1,23 @@
+.. index:: pair: class; geode::Blocks::BlockRangeBase
+.. _doxid-classgeode_1_1_blocks_1_1_block_range_base:
+
+class geode::Blocks::BlockRangeBase
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class BlockRangeBase {
+	public:
+		// methods
+	
+		bool :target:`operator!=<doxid-classgeode_1_1_blocks_1_1_block_range_base_1af88340cfc6894af77dba26e9631435df>`(const BlockRangeBase&) const;
+		void :target:`operator++<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a338c1a4a2671ab68c4ab3d8ed05ca213>`();
+	};

@@ -1,0 +1,25 @@
+.. index:: pair: class; geode::GeoRepresentation
+.. _doxid-classgeode_1_1_geo_representation:
+
+template class geode::GeoRepresentation
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension, template< index_t > class... Entities>
+	class GeoRepresentation: public Entities< dimension > {
+	public:
+		// methods
+	
+		const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& :target:`relationships<doxid-classgeode_1_1_geo_representation_1ae30fdc3a68119e4962df8ab0c0b97ba0>`() const;
+		const :ref:`VertexIdentifier<doxid-classgeode_1_1_vertex_identifier>`& :target:`unique_vertices<doxid-classgeode_1_1_geo_representation_1aad405ef3b17edb270e3cf617093c5197>`() const;
+		double :target:`epsilon<doxid-classgeode_1_1_geo_representation_1a43a8a6c1c8fa6f59e62d6acd14f26f07>`() const;
+	};

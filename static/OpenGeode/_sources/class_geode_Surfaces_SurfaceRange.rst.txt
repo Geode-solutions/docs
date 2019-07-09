@@ -1,0 +1,41 @@
+.. index:: pair: class; geode::Surfaces::SurfaceRange
+.. _doxid-classgeode_1_1_surfaces_1_1_surface_range:
+
+class geode::Surfaces::SurfaceRange
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class SurfaceRange: public :ref:`geode::Surfaces::SurfaceRangeBase<doxid-classgeode_1_1_surfaces_1_1_surface_range_base>` {
+	public:
+		// construction
+	
+		:target:`SurfaceRange<doxid-classgeode_1_1_surfaces_1_1_surface_range_1a1fd6ef75c0fdb10565451c9240fc3980>`(const :ref:`Surfaces<doxid-classgeode_1_1_surfaces>`& surfaces);
+
+		// methods
+	
+		const SurfaceRange& :target:`begin<doxid-classgeode_1_1_surfaces_1_1_surface_range_1afe82d2176be503d55e8434d8ddc83713>`() const;
+		const SurfaceRange& :target:`end<doxid-classgeode_1_1_surfaces_1_1_surface_range_1acb4ed0afe70678bc440431496541a70a>`() const;
+		const :ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& :target:`operator*<doxid-classgeode_1_1_surfaces_1_1_surface_range_1a0debe17e6188bb22bf397a33287c8362>`() const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator!=<doxid-classgeode_1_1_surfaces_1_1_surface_range_base_1adcb53ed2aba5db68cabd7264bc51f9cf>`(const :ref:`SurfaceRangeBase<doxid-classgeode_1_1_surfaces_1_1_surface_range_base>`&) const;
+		void :ref:`operator++<doxid-classgeode_1_1_surfaces_1_1_surface_range_base_1a728fd7f926790af2c8b6ec9bc3cf37d0>`();
+

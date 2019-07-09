@@ -1,0 +1,24 @@
+.. index:: pair: class; geode::LinesBuilder
+.. _doxid-classgeode_1_1_lines_builder:
+
+template class geode::LinesBuilder
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class LinesBuilder {
+	public:
+		// methods
+	
+		void :target:`load_lines<doxid-classgeode_1_1_lines_builder_1a9fcf2c7e9f7cfbe4deaf99e18e00268f>`(const std::string& directory);
+		std::unique_ptr<:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`<dimension>> :target:`line_mesh_builder<doxid-classgeode_1_1_lines_builder_1a8cc9faf107e8afd85b52c4714f82aaf8>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+	};

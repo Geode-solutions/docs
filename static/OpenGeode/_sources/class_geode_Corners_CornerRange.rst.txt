@@ -1,0 +1,41 @@
+.. index:: pair: class; geode::Corners::CornerRange
+.. _doxid-classgeode_1_1_corners_1_1_corner_range:
+
+class geode::Corners::CornerRange
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class CornerRange: public :ref:`geode::Corners::CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>` {
+	public:
+		// construction
+	
+		:target:`CornerRange<doxid-classgeode_1_1_corners_1_1_corner_range_1a362212b61370610f891749ff2181fb38>`(const :ref:`Corners<doxid-classgeode_1_1_corners>`& corners);
+
+		// methods
+	
+		const CornerRange& :target:`begin<doxid-classgeode_1_1_corners_1_1_corner_range_1a596796746e659f270957d728b462fa1a>`() const;
+		const CornerRange& :target:`end<doxid-classgeode_1_1_corners_1_1_corner_range_1a4504eab8e2a3380f8c94a74ddeec9828>`() const;
+		const :ref:`Corner<doxid-classgeode_1_1_corner>`<dimension>& :target:`operator*<doxid-classgeode_1_1_corners_1_1_corner_range_1ad81835321b5cf5b90198b552ed9cbec4>`() const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator!=<doxid-classgeode_1_1_corners_1_1_corner_range_base_1aa127256b3e478299eadee155dc5769d1>`(const :ref:`CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`&) const;
+		void :ref:`operator++<doxid-classgeode_1_1_corners_1_1_corner_range_base_1a68263571974d8287c65870eebb337710>`();
+

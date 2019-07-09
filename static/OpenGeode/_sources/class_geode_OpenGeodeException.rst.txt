@@ -1,0 +1,26 @@
+.. index:: pair: class; geode::OpenGeodeException
+.. _doxid-classgeode_1_1_open_geode_exception:
+
+class geode::OpenGeodeException
+===============================
+
+.. toctree::
+	:hidden:
+
+OpenGeode exception class. Example: throw :ref:`OpenGeodeException <doxid-classgeode_1_1_open_geode_exception>` ( "Error while loading the GeoModel" );
+
+try { ... } catch( const OpenGeodeException& e ) { Logger::critical( e.what() ); } catch( const std::exception& e ) { // Catch all others STL exceptions Logger::critical( e.what() ); }
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <assert.h>
+	
+	class OpenGeodeException: public runtime_error {
+	public:
+		// construction
+	
+		template <typename... Args>
+		:target:`OpenGeodeException<doxid-classgeode_1_1_open_geode_exception_1a0b89c86022db991fed656d1e35439ecc>`(const Args&... message);
+	};

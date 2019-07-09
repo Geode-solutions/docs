@@ -1,0 +1,22 @@
+.. index:: pair: class; geode::IOFile
+.. _doxid-classgeode_1_1_i_o_file:
+
+class geode::IOFile
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class IOFile {
+	public:
+		// methods
+	
+		const std::string& :target:`filename<doxid-classgeode_1_1_i_o_file_1ad340c6859158f143ecc6932468620610>`() const;
+	};

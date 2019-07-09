@@ -1,0 +1,47 @@
+.. index:: pair: class; geode::Logger
+.. _doxid-classgeode_1_1_logger:
+
+class geode::Logger
+===================
+
+.. toctree::
+	:hidden:
+
+	enum_geode_Logger_Level.rst
+
+Implementation class of a logger
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <logger.h>
+	
+	class Logger {
+	public:
+		// enums
+	
+		enum :ref:`Level<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8d>`;
+
+		// methods
+	
+		static void :target:`set_level<doxid-classgeode_1_1_logger_1a41985cecb1e201ccef3ca3402623f92d>`(Level level);
+	
+		template <typename... Args>
+		static void :target:`trace<doxid-classgeode_1_1_logger_1a3361969272bc61d7e06ffffd8c2a2220>`(const Args&... args);
+	
+		template <typename... Args>
+		static void :target:`debug<doxid-classgeode_1_1_logger_1a77e9ed5b6298ed3d35ce8715b25be4ef>`(const Args&... args);
+	
+		template <typename... Args>
+		static void :target:`info<doxid-classgeode_1_1_logger_1a702049a6914a030b983bcb316bdce9ab>`(const Args&... args);
+	
+		template <typename... Args>
+		static void :target:`warn<doxid-classgeode_1_1_logger_1a7340a1b0a0b4ce44580eef6abb0dc6bf>`(const Args&... args);
+	
+		template <typename... Args>
+		static void :target:`error<doxid-classgeode_1_1_logger_1ab073f3923ce1bf6281b4e2a4ccd00bf8>`(const Args&... args);
+	
+		template <typename... Args>
+		static void :target:`critical<doxid-classgeode_1_1_logger_1aafb9ff8a36b01b8c68923a83c00ebc33>`(const Args&... args);
+	};

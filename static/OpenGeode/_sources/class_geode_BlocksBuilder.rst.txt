@@ -1,0 +1,24 @@
+.. index:: pair: class; geode::BlocksBuilder
+.. _doxid-classgeode_1_1_blocks_builder:
+
+template class geode::BlocksBuilder
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class BlocksBuilder {
+	public:
+		// methods
+	
+		void :target:`load_blocks<doxid-classgeode_1_1_blocks_builder_1ab23ac7feaf8176d5b5d5abacfafd647c>`(const std::string& directory);
+		std::unique_ptr<:ref:`PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`<dimension>> :target:`block_mesh_builder<doxid-classgeode_1_1_blocks_builder_1a36da6d0d51e60075df1dc45529f3592f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+	};

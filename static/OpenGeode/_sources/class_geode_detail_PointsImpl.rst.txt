@@ -1,0 +1,28 @@
+.. index:: pair: class; geode::detail::PointsImpl
+.. _doxid-classgeode_1_1detail_1_1_points_impl:
+
+template class geode::detail::PointsImpl
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class PointsImpl {
+	public:
+		// construction
+	
+		:target:`PointsImpl<doxid-classgeode_1_1detail_1_1_points_impl_1abe9ab1eb5de494a6e18f5e2624702597>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh);
+
+		// methods
+	
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`get_point<doxid-classgeode_1_1detail_1_1_points_impl_1ada087d56fd850cbb479c0e6fb09e43dc>`(index_t vertex_id) const;
+		void :target:`set_point<doxid-classgeode_1_1detail_1_1_points_impl_1af7f9b9cc0c0cad3b014ad80e315c29f0>`(index_t vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+	};

@@ -1,0 +1,39 @@
+.. index:: pair: class; geode::BoundingBox
+.. _doxid-classgeode_1_1_bounding_box:
+
+template class geode::BoundingBox
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class BoundingBox {
+	public:
+		// construction
+	
+		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1aa21de0de5e303073891e631d1d13d8d6>`();
+		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1a7d78edf02cd77cc5b959223cd5ed5a74>`(const BoundingBox& other);
+		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1ab4a7ae0d283da73b7642aba161b7cc27>`(BoundingBox&& other);
+
+		// methods
+	
+		BoundingBox& :target:`operator=<doxid-classgeode_1_1_bounding_box_1a62af8bd08c52ca2016915f1bf82ce817>`(const BoundingBox& other);
+		BoundingBox& :target:`operator=<doxid-classgeode_1_1_bounding_box_1a0fabc63a1a18e5ec431315e6ffabc87f>`(BoundingBox&& other);
+		void :target:`add_point<doxid-classgeode_1_1_bounding_box_1ad2e23377b88d730ec18711bff7ea9229>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		void :target:`add_box<doxid-classgeode_1_1_bounding_box_1aa01ebddaebe0cb00ee4ce9af103910b1>`(const BoundingBox<dimension>& box);
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`min<doxid-classgeode_1_1_bounding_box_1a4989e863012fb87f1c94067f4a21b85a>`() const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`max<doxid-classgeode_1_1_bounding_box_1aa41b83189438c79f27a616322904542c>`() const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`center<doxid-classgeode_1_1_bounding_box_1ad04a5b1251acb4b743ef6129ab39578c>`() const;
+		bool :target:`boxes_overlap<doxid-classgeode_1_1_bounding_box_1ae6349d5ce126bd8bf293a6e75aed84b6>`(const BoundingBox<dimension>& box) const;
+		BoundingBox<dimension> :target:`box_union<doxid-classgeode_1_1_bounding_box_1a83de122183b475c77d2708470d0fe562>`(const BoundingBox<dimension>& box) const;
+		std::tuple<bool, BoundingBox<dimension>> :target:`box_intersection<doxid-classgeode_1_1_bounding_box_1a6f8cd406bf14390f9d22b60275f8fbff>`(const BoundingBox<dimension>& box) const;
+		bool :target:`contains<doxid-classgeode_1_1_bounding_box_1a06067c1ab22b26d7508f84e3be00f672>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
+	};

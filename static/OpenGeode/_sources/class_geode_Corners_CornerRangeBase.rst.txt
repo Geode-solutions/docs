@@ -1,0 +1,23 @@
+.. index:: pair: class; geode::Corners::CornerRangeBase
+.. _doxid-classgeode_1_1_corners_1_1_corner_range_base:
+
+class geode::Corners::CornerRangeBase
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class CornerRangeBase {
+	public:
+		// methods
+	
+		bool :target:`operator!=<doxid-classgeode_1_1_corners_1_1_corner_range_base_1aa127256b3e478299eadee155dc5769d1>`(const CornerRangeBase&) const;
+		void :target:`operator++<doxid-classgeode_1_1_corners_1_1_corner_range_base_1a68263571974d8287c65870eebb337710>`();
+	};

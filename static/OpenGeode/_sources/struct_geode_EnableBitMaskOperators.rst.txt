@@ -1,0 +1,22 @@
+.. index:: pair: struct; geode::EnableBitMaskOperators
+.. _doxid-structgeode_1_1_enable_bit_mask_operators:
+
+template struct geode::EnableBitMaskOperators
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <typename Enum>
+	struct EnableBitMaskOperators {
+		// fields
+	
+		static const bool :target:`enable<doxid-structgeode_1_1_enable_bit_mask_operators_1aff32d1ed6d8daa4a710760baf5acb8b5>`;
+	};

@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::VariableAttribute<bool>
+.. _doxid-classgeode_1_1_variable_attribute_3_01bool_01_4:
+
+template class geode::VariableAttribute<bool>
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <>
+	class VariableAttribute<bool>: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>` {
+	public:
+		// methods
+	
+		virtual const bool& :target:`value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a1d41633620b22c51d586000dd3ec572f>`(index_t element) const;
+		bool& :target:`value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1abdda2212f2441f5dc706804c623071d4>`(index_t element);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		virtual const T& :ref:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(index_t element) const = 0;
+		virtual std::string :ref:`type<doxid-classgeode_1_1_read_only_attribute_1a404613b1cdd0d15b0deed66baca23ab1>`();
+

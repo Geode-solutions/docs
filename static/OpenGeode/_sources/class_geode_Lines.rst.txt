@@ -1,0 +1,36 @@
+.. index:: pair: class; geode::Lines
+.. _doxid-classgeode_1_1_lines:
+
+template class geode::Lines
+===========================
+
+.. toctree::
+	:hidden:
+
+	class_geode_Lines_LineRange.rst
+	class_geode_Lines_LineRangeBase.rst
+	class_geode_Lines_ModifiableLineRange.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class Lines {
+	public:
+		// classes
+	
+		class :ref:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range>`;
+		class :ref:`LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`;
+		class :ref:`ModifiableLineRange<doxid-classgeode_1_1_lines_1_1_modifiable_line_range>`;
+
+		// methods
+	
+		index_t :target:`nb_lines<doxid-classgeode_1_1_lines_1a292302ade74503a488afe8136b37cf37>`() const;
+		const :ref:`Line<doxid-classgeode_1_1_line>`<dimension>& :target:`line<doxid-classgeode_1_1_lines_1ad9af9faff1b0b6def2c91333a7a75163>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range>` :target:`lines<doxid-classgeode_1_1_lines_1ac791249dd5a1c3ba883d5b4d901601a7>`() const;
+		std::vector<std::string> :target:`save_lines<doxid-classgeode_1_1_lines_1a574c607922f2971a6fe29f7ebcb1bdf2>`(const std::string& directory) const;
+	};

@@ -1,0 +1,122 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>class geode::Blocks::BlockRange &#8212; OpenGeode  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::Blocks::BlockRangeBase" href="class_geode_Blocks_BlockRangeBase.html" />
+    <link rel="prev" title="template class geode::Blocks" href="class_geode_Blocks.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-blocks-blockrange">
+<span id="doxid-classgeode-1-1-blocks-1-1-block-range"></span><span id="index-0"></span><h1>class geode::Blocks::BlockRange<a class="headerlink" href="#class-geode-blocks-blockrange" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block">
+<span></span><span class="k">class</span> <span class="nl">BlockRange</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base"><span class="std std-ref">geode::Blocks::BlockRangeBase</span></a><span></span> <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-blocks-1-1-block-range-1a5ddb3cd0f333bffe26cc990a0ae38345">BlockRange</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Blocks.html#doxid-classgeode-1-1-blocks"><span class="std std-ref">Blocks</span></a><span></span><span class="o">&amp;</span> <span class="n">blocks</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">BlockRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-blocks-1-1-block-range-1a90de5eec0c470745d819d70f1b20635f">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">BlockRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-blocks-1-1-block-range-1a7adda4a8c8d64df86d9d76d8c45bb9e6">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Block.html#doxid-classgeode-1-1-block"><span class="std std-ref">Block</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-blocks-1-1-block-range-1acb6cb43ec9a841edcc5fc556a6d8c45a">operator*</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span>
+</pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this headline">¶</a></h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block">
+<span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base-1af88340cfc6894af77dba26e9631435df"><span class="std std-ref">operator!=</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base"><span class="std std-ref">BlockRangeBase</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base-1a338c1a4a2671ab68c4ab3d8ed05ca213"><span class="std std-ref">operator++</span></a><span></span><span class="p">();</span>
+</pre>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="global.html">Global Namespace</a><ul>
+  <li><a href="namespace_geode.html">namespace geode</a><ul>
+  <li><a href="class_geode_Blocks.html">template class geode::Blocks</a><ul>
+      <li>Previous: <a href="class_geode_Blocks.html" title="previous chapter">template class geode::Blocks</a></li>
+      <li>Next: <a href="class_geode_Blocks_BlockRangeBase.html" title="next chapter">class geode::Blocks::BlockRangeBase</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, tt.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_Blocks_BlockRange.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

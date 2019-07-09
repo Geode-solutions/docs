@@ -1,0 +1,113 @@
+.. index:: pair: class; geode::PointSetBuilder
+.. _doxid-classgeode_1_1_point_set_builder:
+
+template class geode::PointSetBuilder
+=====================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	template <index_t dimension>
+	class PointSetBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` {
+	public:
+		// methods
+	
+		static std::unique_ptr<PointSetBuilder<dimension>> :target:`create<doxid-classgeode_1_1_point_set_builder_1ab5c00c0739ace9a3125e0f1daf1e44ee>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh);
+		void :ref:`set_point<doxid-classgeode_1_1_point_set_builder_1a2a8878a90d56a0f60984bdc131443a70>`(index_t vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		index_t :ref:`create_point<doxid-classgeode_1_1_point_set_builder_1ada3e73058b784771e6e5c7b5480d9bde>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
+		index_t :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(index_t nb);
+		void :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c>`(const std::vector<bool>& to_delete);
+
+.. _details-classgeode_1_1_point_set_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; set_point
+.. _doxid-classgeode_1_1_point_set_builder_1a2a8878a90d56a0f60984bdc131443a70:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void set_point(index_t vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+
+Sets a point.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertex_id
+
+		- the vertex, in 0..  nb_vetices()-1.
+
+	*
+		- point
+
+		- the vertex coordinates
+
+
+
+.. rubric:: Returns:
+
+reference to the point that corresponds to the vertex.
+
+.. index:: pair: function; create_point
+.. _doxid-classgeode_1_1_point_set_builder_1ada3e73058b784771e6e5c7b5480d9bde:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	index_t create_point(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+
+Creates a new vertex.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- the point to create
+
+
+
+.. rubric:: Returns:
+
+the index of the created vertex
+
