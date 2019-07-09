@@ -60,5 +60,20 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+
+  /*
+  ** Netlify configuration
+  */
+  netlify: {
+    redirects: [
+      {
+        from: 'https://docs.geode-solutions.netlify.com/*',
+        to: 'https://docs.geode-solutions.com/:splat',
+        status: 301,
+        force: true
+      }
+    ]
   }
+
 }
