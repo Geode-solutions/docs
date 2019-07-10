@@ -25,11 +25,6 @@ export default {
     this.$refs.docFrame.addEventListener("load", ()=>{
       this.$refs.docFrame.style.height = this.$refs.docFrame.contentWindow.document.body.offsetHeight + "px";
     });
-    this.$refs.docFrame.src = this.$refs.docFrame.src;
-    setTimeout(() => {
-    this.$refs.docFrame.src = this.$refs.docFrame.src;
-
-    }, 5000);
   }
 }
 </script>
