@@ -6,7 +6,7 @@
         width="100%"
         style="border: none;"
         scrolling="no"
-        src="about:blank"/>
+        src="'docs/' + project + '/index.html'"/>
     </v-flex>
   </v-layout>
 </template>
@@ -25,7 +25,6 @@ export default {
     this.$refs.docFrame.addEventListener("load", ()=>{
       this.$refs.docFrame.style.height = this.$refs.docFrame.contentWindow.document.body.offsetHeight + "px";
     });
-    this.$refs.docFrame.src = "docs/" + this.project + "/index.html";
     
   }
 }
