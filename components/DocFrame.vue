@@ -6,7 +6,7 @@
         width="100%"
         style="border: none;"
         scrolling="no"
-        :src="src"/>
+        src="about:blank"/>
     </v-flex>
   </v-layout>
 </template>
@@ -15,11 +15,6 @@
 <script>
 export default {
   name: "DocFrame",
-  data() {
-    return {
-      src: "about:blank"
-    }
-  },
   props: {
     project: {
       required: true,
@@ -30,7 +25,8 @@ export default {
     this.$refs.docFrame.addEventListener("load", ()=>{
       this.$refs.docFrame.style.height = this.$refs.docFrame.contentWindow.document.body.offsetHeight + "px";
     });
-    this.src = "docs/" + this.project + "/index.html";
+    this.$refs.docFrame.src = "docs/" + this.project + "/index.html";
+    
   }
 }
 </script>
