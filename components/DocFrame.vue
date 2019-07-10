@@ -6,7 +6,7 @@
         width="100%"
         style="border: none;"
         scrolling="no"
-        :src="'docs/' + project + '/index.html'"/>
+        :src="'/docs/' + project + '/index.html'"/>
     </v-flex>
   </v-layout>
 </template>
@@ -28,7 +28,7 @@ export default {
     this.$refs.docFrame.src = this.$refs.docFrame.src;
     setTimeout(() => {
     this.$refs.docFrame.src = this.$refs.docFrame.src;
-        
+
     }, 5000);
   }
 }
