@@ -1,7 +1,7 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
