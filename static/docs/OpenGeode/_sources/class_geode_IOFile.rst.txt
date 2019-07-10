@@ -14,9 +14,15 @@ class geode::IOFile
 	:class: doxyrest-overview-code-block
 
 	
-	class IOFile {
+	class IOFile
+	{
 	public:
 		// methods
 	
-		const std::string& :target:`filename<doxid-classgeode_1_1_i_o_file_1ad340c6859158f143ecc6932468620610>`() const;
+		const std::string& :target:`filename<doxid-classgeode_1_1_i_o_file_1a00af9913eee23e9bd533bed23ec29499>`() const;
 	};
+
+	// direct descendants
+
+	class :ref:`Input<doxid-classgeode_1_1_input>`;
+	class :ref:`Output<doxid-classgeode_1_1_output>`;

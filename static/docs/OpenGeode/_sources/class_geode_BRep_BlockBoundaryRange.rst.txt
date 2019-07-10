@@ -14,17 +14,22 @@ class geode::BRep::BlockBoundaryRange
 	:class: doxyrest-overview-code-block
 
 	
-	class BlockBoundaryRange: public :ref:`geode::RelationshipManager::BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>` {
+	class BlockBoundaryRange: public :ref:`geode::RelationshipManager::BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`
+	{
 	public:
 		// construction
 	
-		:target:`BlockBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a472488777a28a4186f21e46da6720fe0>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model, const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager, const Block3D& block);
+		:target:`BlockBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a472488777a28a4186f21e46da6720fe0>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
+			const Block3D& block
+			);
 
 		// methods
 	
-		const BlockBoundaryRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a84a73b7207944e90a01452884bb5a997>`() const;
-		const BlockBoundaryRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a92ff14e585659348d1099e390f089e13>`() const;
-		const Surface3D& :target:`operator*<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a4eee7deb438127702f66e091b887f6bf>`() const;
+		const BlockBoundaryRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a25b2a57e91a6a5a21e569f39f0890fce>`() const;
+		const BlockBoundaryRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a54fe104ea7c3b6cfe0cd09b926ea4cdb>`() const;
+		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a5566dc2a2555d48dd2ebb50a27b4ef23>` () const;
 	};
 
 Inherited Members
@@ -36,9 +41,9 @@ Inherited Members
 	public:
 		// methods
 	
-		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`& :ref:`begin<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1aa90b181cc549458c87a9c5e01218daf7>`() const;
-		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`& :ref:`end<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1a9177a9afadacfb29ece998b4b87bc026>`() const;
-		bool :ref:`operator!=<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1a210bb870f81a0995480606ab951fc99d>`(const :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`&) const;
-		void :ref:`operator++<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1aa7cbef6da739bb002810ec02f6f7f61d>`();
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator*<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1a6c9209065fd8601a9a5a0b23e9a8a4e5>`() const;
+		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`& :ref:`begin<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1aa05ec623d892c484af4cbfacc4ef8c8c>`() const;
+		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`& :ref:`end<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1a0f1d39ad2c5cb6b59b55c5a68c31cfc3>`() const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1a5e1bafb5241d3d880d1c9e5220d944b8>` (const :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1aa7cbef6da739bb002810ec02f6f7f61d>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator *<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1a996f27c3aeba86ffb8766a58e0bbb971>` () const;
 

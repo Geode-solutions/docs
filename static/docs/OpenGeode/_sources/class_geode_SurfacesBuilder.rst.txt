@@ -15,7 +15,8 @@ template class geode::SurfacesBuilder
 
 	
 	template <index_t dimension>
-	class SurfacesBuilder {
+	class SurfacesBuilder
+	{
 	public:
 		// methods
 	

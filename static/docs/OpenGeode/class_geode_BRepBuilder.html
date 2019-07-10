@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>class geode::BRepBuilder &#8212; OpenGeode  documentation</title>
+    <meta charset="utf-8" />
+    <title>class geode::BRepBuilder &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -40,8 +38,8 @@
 <span id="doxid-classgeode-1-1-b-rep-builder"></span><span id="index-0"></span><h1>class geode::BRepBuilder<a class="headerlink" href="#class-geode-brepbuilder" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block">
-<span></span><span class="k">class</span> <span class="nl">BRepBuilder</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_GeoRepresentationBuilder.html#doxid-classgeode-1-1-geo-representation-builder"><span class="std std-ref">geode::GeoRepresentationBuilder</span></a><span></span> <span class="p">{</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">class</span> <span class="nl">BRepBuilder</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_GeoRepresentationBuilder.html#doxid-classgeode-1-1-geo-representation-builder"><span class="std std-ref">geode::GeoRepresentationBuilder</span></a><span></span>
+<span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
@@ -61,20 +59,29 @@
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a01f76c177033c7c7abda6969c93f0345">remove_line</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">);</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a92906519d1f01ce14197943c3d3149cd">remove_surface</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a7adc5b711e04e05c6e643fef82329c64">remove_block</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a6d21f6349a3411baf5301cddc4f44b81">add_boundary_relation</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Corner3D</span><span class="o">&amp;</span> <span class="n">corner</span><span class="p">,</span> <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a55116afdee86a1be7eaeb892c85022fc">add_boundary_relation</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span> <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1ac19244d5593fa81def764f0c9b852c84">add_boundary_relation</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span> <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">);</span>
-<span class="p">};</span>
-</pre>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a6d21f6349a3411baf5301cddc4f44b81">add_boundary_relation</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Corner3D</span><span class="o">&amp;</span> <span class="n">corner</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a55116afdee86a1be7eaeb892c85022fc">add_boundary_relation</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1ac19244d5593fa81def764f0c9b852c84">add_boundary_relation</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span>
+        <span class="p">);</span>
+<span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this headline">¶</a></h2>
-<pre class="highlight doxyrest-overview-inherited-code-block literal-block">
-<span></span><span class="k">public</span><span class="o">:</span>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
     <span class="kt">void</span> <a class="reference internal" href="class_geode_GeoRepresentationBuilder.html#doxid-classgeode-1-1-geo-representation-builder-1a6ac56ba3f8671398e32cf0476b5d4934"><span class="std std-ref">load_relationships</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
-    <a class="reference internal" href="class_geode_VertexIdentifier.html#doxid-classgeode-1-1-vertex-identifier"><span class="std std-ref">VertexIdentifier</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_GeoRepresentationBuilder.html#doxid-classgeode-1-1-geo-representation-builder-1ab5555fd2b86b4d7e4dcdc0e18fcb0f2d"><span class="std std-ref">unique_vertices</span></a><span></span><span class="p">();</span>
-</pre>
+    <a class="reference internal" href="class_geode_VertexIdentifier.html#doxid-classgeode-1-1-vertex-identifier"><span class="std std-ref">VertexIdentifier</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_GeoRepresentationBuilder.html#doxid-classgeode-1-1-geo-representation-builder-1ab5555fd2b86b4d7e4dcdc0e18fcb0f2d"><span class="std std-ref">unique_vertices</span></a><span></span><span class="p">();</span></pre>
 </div>
 </div>
 
@@ -97,27 +104,15 @@
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2019, tt.
+      &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

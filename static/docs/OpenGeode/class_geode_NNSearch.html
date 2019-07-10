@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>template class geode::NNSearch &#8212; OpenGeode  documentation</title>
+    <meta charset="utf-8" />
+    <title>template class geode::NNSearch &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -40,9 +38,9 @@
 <span id="doxid-classgeode-1-1-n-n-search"></span><span id="index-0"></span><h1>template class geode::NNSearch<a class="headerlink" href="#template-class-geode-nnsearch" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block">
-<span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="n">NNSearch</span> <span class="p">{</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">NNSearch</span>
+<span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// structs</span>
 
@@ -54,14 +52,22 @@
 
     <span class="c1">// methods</span>
 
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a44b483d8844bf0959a30181e90f894d4">closest_neighbor</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a79943bb931b1b553c380f8d9f1df7a91">radius_neighbors</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="kt">double</span> <span class="n">threshold_distance</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1afd26ff3ce7c46ee7e50dc93c03c9d3ae">neighbors</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">nb_neighbors</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <a class="reference internal" href="struct_geode_NNSearch_ColocatedInfo.html#doxid-structgeode-1-1-n-n-search-1-1-colocated-info"><span class="std std-ref">ColocatedInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a0cb17bc97ef8883abda3c50f3356ed72">colocated_index_mapping</span><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">epsilon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a2cbf72dcbdd9373c4ede269967eb6905">point</span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a7906b08ddb967c80d56d421daa074e96">nb_points</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span>
-</pre>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1ae62b6cfe4106a0545c2f72ebaf6bca06">closest_neighbor</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1aaa981a586caffb12d3b5b1d6e731a90d">radius_neighbors</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">threshold_distance</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1ab2cb8ec4fbe94d5d6af2c5050dc98a2a">neighbors</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">nb_neighbors</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <a class="reference internal" href="struct_geode_NNSearch_ColocatedInfo.html#doxid-structgeode-1-1-n-n-search-1-1-colocated-info"><span class="std std-ref">ColocatedInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a9d1fa7816763e219d274369d5b14627a">colocated_index_mapping</span><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">epsilon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1ac55f16a043f0effb326ce4f10a1c7509">point</span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a40e5fd84b8221c4b0c1583333ab5c460">nb_points</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
 </div>
 
 
@@ -83,27 +89,15 @@
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2019, tt.
+      &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

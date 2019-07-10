@@ -19,7 +19,8 @@ template class geode::Lines
 
 	
 	template <index_t dimension>
-	class Lines {
+	class Lines
+	{
 	public:
 		// classes
 	
@@ -29,8 +30,8 @@ template class geode::Lines
 
 		// methods
 	
-		index_t :target:`nb_lines<doxid-classgeode_1_1_lines_1a292302ade74503a488afe8136b37cf37>`() const;
-		const :ref:`Line<doxid-classgeode_1_1_line>`<dimension>& :target:`line<doxid-classgeode_1_1_lines_1ad9af9faff1b0b6def2c91333a7a75163>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
-		:ref:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range>` :target:`lines<doxid-classgeode_1_1_lines_1ac791249dd5a1c3ba883d5b4d901601a7>`() const;
-		std::vector<std::string> :target:`save_lines<doxid-classgeode_1_1_lines_1a574c607922f2971a6fe29f7ebcb1bdf2>`(const std::string& directory) const;
+		index_t :target:`nb_lines<doxid-classgeode_1_1_lines_1a09e9c517e4b5e8e91dc7abcb9dc002ad>`() const;
+		const :ref:`Line<doxid-classgeode_1_1_line>`<dimension>& :target:`line<doxid-classgeode_1_1_lines_1a128794cc0b875bd17d462b6f52b1c083>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range>` :target:`lines<doxid-classgeode_1_1_lines_1ac85c4e344731cc0738566356a8e2102c>`() const;
+		std::vector<std::string> :target:`save_lines<doxid-classgeode_1_1_lines_1ac5220fcf22064c8b0cc8675fcdc3a6c8>`(const std::string& directory) const;
 	};

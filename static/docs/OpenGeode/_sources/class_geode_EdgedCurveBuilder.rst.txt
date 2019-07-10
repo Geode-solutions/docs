@@ -18,7 +18,8 @@ Overview
 
 	
 	template <index_t dimension>
-	class EdgedCurveBuilder: public :ref:`geode::GraphBuilder<doxid-classgeode_1_1_graph_builder>` {
+	class EdgedCurveBuilder: public :ref:`geode::GraphBuilder<doxid-classgeode_1_1_graph_builder>`
+	{
 	public:
 		// methods
 	
@@ -26,6 +27,11 @@ Overview
 		void :ref:`set_point<doxid-classgeode_1_1_edged_curve_builder_1a94e16d2c8d7fe3d83c3bc250f1e3bc84>`(index_t vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 		index_t :ref:`create_point<doxid-classgeode_1_1_edged_curve_builder_1a22553205c7f14c108a2904163ec79cce>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeEdgedCurveBuilder<doxid-classgeode_1_1_open_geode_edged_curve_builder>`;
 
 Inherited Members
 -----------------

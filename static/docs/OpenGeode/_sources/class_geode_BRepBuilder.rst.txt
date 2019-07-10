@@ -14,7 +14,8 @@ class geode::BRepBuilder
 	:class: doxyrest-overview-code-block
 
 	
-	class BRepBuilder: public :ref:`geode::GeoRepresentationBuilder<doxid-classgeode_1_1_geo_representation_builder>` {
+	class BRepBuilder: public :ref:`geode::GeoRepresentationBuilder<doxid-classgeode_1_1_geo_representation_builder>`
+	{
 	public:
 		// construction
 	
@@ -34,9 +35,21 @@ class geode::BRepBuilder
 		void :target:`remove_line<doxid-classgeode_1_1_b_rep_builder_1a01f76c177033c7c7abda6969c93f0345>`(const Line3D& line);
 		void :target:`remove_surface<doxid-classgeode_1_1_b_rep_builder_1a92906519d1f01ce14197943c3d3149cd>`(const Surface3D& surface);
 		void :target:`remove_block<doxid-classgeode_1_1_b_rep_builder_1a7adc5b711e04e05c6e643fef82329c64>`(const Block3D& block);
-		void :target:`add_boundary_relation<doxid-classgeode_1_1_b_rep_builder_1a6d21f6349a3411baf5301cddc4f44b81>`(const Corner3D& corner, const Line3D& line);
-		void :target:`add_boundary_relation<doxid-classgeode_1_1_b_rep_builder_1a55116afdee86a1be7eaeb892c85022fc>`(const Line3D& line, const Surface3D& surface);
-		void :target:`add_boundary_relation<doxid-classgeode_1_1_b_rep_builder_1ac19244d5593fa81def764f0c9b852c84>`(const Surface3D& surface, const Block3D& block);
+	
+		void :target:`add_boundary_relation<doxid-classgeode_1_1_b_rep_builder_1a6d21f6349a3411baf5301cddc4f44b81>`(
+			const Corner3D& corner,
+			const Line3D& line
+			);
+	
+		void :target:`add_boundary_relation<doxid-classgeode_1_1_b_rep_builder_1a55116afdee86a1be7eaeb892c85022fc>`(
+			const Line3D& line,
+			const Surface3D& surface
+			);
+	
+		void :target:`add_boundary_relation<doxid-classgeode_1_1_b_rep_builder_1ac19244d5593fa81def764f0c9b852c84>`(
+			const Surface3D& surface,
+			const Block3D& block
+			);
 	};
 
 Inherited Members

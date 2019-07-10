@@ -15,7 +15,8 @@ template class geode::OpenGeodeTriangulatedSurfaceBuilder
 
 	
 	template <index_t dimension>
-	class OpenGeodeTriangulatedSurfaceBuilder: public :ref:`geode::TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>` {
+	class OpenGeodeTriangulatedSurfaceBuilder: public :ref:`geode::TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>`
+	{
 	public:
 		// construction
 	

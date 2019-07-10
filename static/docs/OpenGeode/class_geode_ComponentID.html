@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>class geode::ComponentID &#8212; OpenGeode  documentation</title>
+    <meta charset="utf-8" />
+    <title>class geode::ComponentID &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -40,21 +38,23 @@
 <span id="doxid-classgeode-1-1-component-i-d"></span><span id="index-0"></span><h1>class geode::ComponentID<a class="headerlink" href="#class-geode-componentid" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block">
-<span></span><span class="k">class</span> <span class="n">ComponentID</span> <span class="p">{</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">class</span> <span class="n">ComponentID</span>
+<span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1ad351ab9dde19ce3a150b8c7ee2bd1909">ComponentID</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">ComponentType</span></a><span></span> <span class="n">component_type</span><span class="p">,</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span> <span class="n">id</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1ad351ab9dde19ce3a150b8c7ee2bd1909">ComponentID</span><span></span><span class="p">(</span>
+        <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">ComponentType</span></a><span></span> <span class="n">component_type</span><span class="p">,</span>
+        <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span> <span class="n">id</span>
+        <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1aa802f7d00f56b5f0ee291b1e8ebdbcff">id</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1a866e41790b7821f8c9a4e05e6448be23">type</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1a70ae0d22797837d61d9db029758c6ae1">operator!=</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1ad4c15e797f6986c786aa5c15e74a5963">operator==</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span>
-</pre>
+    <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1a018199d3c6d0ce8971121974c457bc5f">id</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1a061a57724f602468213a92254fc6ad13">type</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1a7eabd10cb0a0af9ef69b2d358a1dbf1c">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-i-d-1a283e28cd9e7c1f2b2e8f22bd24ccc13c">operator ==</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
 </div>
 
 
@@ -76,27 +76,15 @@
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2019, tt.
+      &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

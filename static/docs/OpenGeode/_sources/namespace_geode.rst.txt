@@ -446,12 +446,24 @@ namespace geode
 	// global functions
 
 	template <typename T, typename container>
-	index_t :target:`find<doxid-algorithm_8h_1ab8391fe55ae351afd82f83fc55d50475>`(const container& in, const T& value);
+	index_t :target:`find<doxid-algorithm_8h_1ab8391fe55ae351afd82f83fc55d50475>`(
+		const container& in,
+		const T& value
+		);
 
 	template <typename T, typename container>
-	bool :target:`contain<doxid-algorithm_8h_1acc05397671a445c57cb2dce614126605>`(const container& in, const T& value);
+	bool :target:`contain<doxid-algorithm_8h_1acc05397671a445c57cb2dce614126605>`(
+		const container& in,
+		const T& value
+		);
 
-	void opengeode_basic_api :target:`geode_assertion_failed<doxid-assert_8h_1a964e15927a4b2dc39f52f761506885e7>`(const std::string& condition, const std::string& message, const std::string& file, int line);
+	void opengeode_basic_api :target:`geode_assertion_failed<doxid-assert_8h_1a964e15927a4b2dc39f52f761506885e7>`(
+		const std::string& condition,
+		const std::string& message,
+		const std::string& file,
+		int line
+		);
+
 	int opengeode_basic_api :target:`geode_lippincott<doxid-assert_8h_1a0d6f934054bb20a7b43ff330dca7d363>`();
 	void opengeode_basic_api :target:`register_basic_serialize_pcontext<doxid-basic_2bitsery__archive_8h_1abf3517d752f9c05bbb40e02825f61243>`(PContext& context);
 	void opengeode_basic_api :target:`register_basic_deserialize_pcontext<doxid-basic_2bitsery__archive_8h_1a4971b040e31d95abe4053f71d315b4d7>`(PContext& context);
@@ -461,25 +473,40 @@ namespace geode
 	:target:`ALIAS_2D_AND_3D<doxid-point_8h_1ab9498c535a0152c93f4aad66e9e8a67c>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 
 	template <index_t dimension>
-	std::ostream& :target:`operator<<<doxid-point_8h_1a514e32fcadecc39918ce1147a7c97a65>`(std::ostream& out, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+	std::ostream& :target:`operator <<<doxid-point_8h_1a514e32fcadecc39918ce1147a7c97a65>` (
+		std::ostream& out,
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point
+		);
 
 	template <typename Enum>
 	auto :target:`to_underlying_type<doxid-types_8h_1ab05457fccfc04daeb9649c93a0a8280c>`(Enum e);
 
 	template <typename Enum>
-	std::enable_if<:ref:`EnableBitMaskOperators<doxid-structgeode_1_1_enable_bit_mask_operators>`<Enum>::enable, Enum>::type :target:`operator|<doxid-types_8h_1a87f3ffe060b98f5fa00bf73a61e38b4c>`(Enum first, Enum second);
+	std::enable_if<:ref:`EnableBitMaskOperators<doxid-structgeode_1_1_enable_bit_mask_operators>`<Enum>::enable, Enum>::type :target:`operator|<doxid-types_8h_1a87f3ffe060b98f5fa00bf73a61e38b4c>` (
+		Enum first,
+		Enum second
+		);
 
 	template <typename Enum>
-	std::enable_if<:ref:`EnableBitMaskOperators<doxid-structgeode_1_1_enable_bit_mask_operators>`<Enum>::enable, Enum>::type :target:`operator&<doxid-types_8h_1a77da098902b74f817bbd145b95a7cd81>`(Enum first, Enum second);
+	std::enable_if<:ref:`EnableBitMaskOperators<doxid-structgeode_1_1_enable_bit_mask_operators>`<Enum>::enable, Enum>::type :target:`operator &<doxid-types_8h_1aeba73fc2d267edd1373b505052be5754>` (
+		Enum first,
+		Enum second
+		);
 
 	template <typename Enum>
-	std::enable_if<:ref:`EnableBitMaskOperators<doxid-structgeode_1_1_enable_bit_mask_operators>`<Enum>::enable, Enum>::type :target:`operator^<doxid-types_8h_1af8f175479a6c75f96b226de0b0c61570>`(Enum first, Enum second);
+	std::enable_if<:ref:`EnableBitMaskOperators<doxid-structgeode_1_1_enable_bit_mask_operators>`<Enum>::enable, Enum>::type :target:`operator^<doxid-types_8h_1af8f175479a6c75f96b226de0b0c61570>` (
+		Enum first,
+		Enum second
+		);
 
 	template <typename Enum>
-	std::enable_if<:ref:`EnableBitMaskOperators<doxid-structgeode_1_1_enable_bit_mask_operators>`<Enum>::enable, Enum>::type :target:`operator~<doxid-types_8h_1a55ec7e71b211e227c3fccea3a2700bb7>`(Enum first);
+	std::enable_if<:ref:`EnableBitMaskOperators<doxid-structgeode_1_1_enable_bit_mask_operators>`<Enum>::enable, Enum>::type :target:`operator~<doxid-types_8h_1a55ec7e71b211e227c3fccea3a2700bb7>` (Enum first);
 
 	template <typename Enum>
-	bool :target:`enum_contains<doxid-types_8h_1abe07faacac292b85ad72f02f185950ad>`(Enum first, Enum second);
+	bool :target:`enum_contains<doxid-types_8h_1abe07faacac292b85ad72f02f185950ad>`(
+		Enum first,
+		Enum second
+		);
 
 	:target:`ALIAS_2D_AND_3D<doxid-vector_8h_1a69bca61d0800722900c8332a1452e3c8>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-blocks__builder_8h_1a995b8f5f0b0ac39cbe7af64fd0506205>`(:ref:`Block<doxid-classgeode_1_1_block>`);
@@ -517,8 +544,17 @@ namespace geode
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-surface_8h_1ae158570ed0cd81daf9e7241e6b16ba29>`(:ref:`SurfacesBuilder<doxid-classgeode_1_1_surfaces_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-surface_8h_1a4d748ee15a67c155610511b287f76076>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 	:target:`ALIAS_2D_AND_3D<doxid-surfaces_8h_1ac13224561e8b05e61b8dd0a988d90270>`(:ref:`Surfaces<doxid-classgeode_1_1_surfaces>`);
-	void opengeode_georepresentation_api :target:`load_brep<doxid-boundary__representation__input_8h_1a61cf12a83aa5acf8bac6b79c2147c2b0>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& model, const std::string& filename);
-	void opengeode_georepresentation_api :target:`save_brep<doxid-boundary__representation__output_8h_1a864bcb349c9737ddc3fbb09db6cc6dd1>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model, const std::string& filename);
+
+	void opengeode_georepresentation_api :target:`load_brep<doxid-boundary__representation__input_8h_1a61cf12a83aa5acf8bac6b79c2147c2b0>`(
+		:ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		const std::string& filename
+		);
+
+	void opengeode_georepresentation_api :target:`save_brep<doxid-boundary__representation__output_8h_1a864bcb349c9737ddc3fbb09db6cc6dd1>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		const std::string& filename
+		);
+
 	void opengeode_mesh_api :target:`register_geode_builder<doxid-register__builder_8h_1a618a67e60c63449f834b7f8fe67808e0>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-edged__curve__builder_8h_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`ALIAS_2D_AND_3D<doxid-edged__curve__builder_8h_1a25875b8f6532ca2e4fd9254c80be7aaf>`(:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`);
@@ -592,47 +628,91 @@ namespace geode
 	void opengeode_mesh_api :target:`register_geode_mesh_output<doxid-register__output_8h_1a073be32b66edf4bb62cf111b7833b67c>`();
 
 	template <index_t dimension>
-	void :target:`load_edged_curve<doxid-edged__curve__input_8h_1aed49e97c7a6e2a742e8f7a1df45861b7>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve, const std::string& filename);
+	void :target:`load_edged_curve<doxid-edged__curve__input_8h_1aed49e97c7a6e2a742e8f7a1df45861b7>`(
+		:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve,
+		const std::string& filename
+		);
 
 	:target:`ALIAS_2D_AND_3D<doxid-edged__curve__input_8h_1a94018066b3cdeb1ed0fac77be9069602>`(:ref:`EdgedCurveInputFactory<doxid-classgeode_1_1_factory>`);
 
 	template <index_t dimension>
-	void :target:`save_edged_curve<doxid-edged__curve__output_8h_1a55760718e47a86303ab0d0595c274115>`(const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve, const std::string& filename);
+	void :target:`save_edged_curve<doxid-edged__curve__output_8h_1a55760718e47a86303ab0d0595c274115>`(
+		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve,
+		const std::string& filename
+		);
 
-	void opengeode_mesh_api :target:`load_graph<doxid-graph__input_8h_1a747e5adbb1885dae4c00206117169e4c>`(:ref:`Graph<doxid-classgeode_1_1_graph>`& graph, const std::string& filename);
-	void opengeode_mesh_api :target:`save_graph<doxid-graph__output_8h_1a9e74f4165979a73a9ade2ad823a44541>`(const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph, const std::string& filename);
+	void opengeode_mesh_api :target:`load_graph<doxid-graph__input_8h_1a747e5adbb1885dae4c00206117169e4c>`(
+		:ref:`Graph<doxid-classgeode_1_1_graph>`& graph,
+		const std::string& filename
+		);
+
+	void opengeode_mesh_api :target:`save_graph<doxid-graph__output_8h_1a9e74f4165979a73a9ade2ad823a44541>`(
+		const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph,
+		const std::string& filename
+		);
+
 	std::string opengeode_mesh_api :target:`extension_from_filename<doxid-io_8h_1aee681992f98038a1192d5488cf91893a>`(const std::string& filename);
 
 	template <index_t dimension>
-	void :target:`load_point_set<doxid-point__set__input_8h_1a3f80100562d9f13ab52ba1826cf39b95>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set, const std::string& filename);
+	void :target:`load_point_set<doxid-point__set__input_8h_1a3f80100562d9f13ab52ba1826cf39b95>`(
+		:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set,
+		const std::string& filename
+		);
 
 	template <index_t dimension>
-	void :target:`save_point_set<doxid-point__set__output_8h_1abc30c1fa0cc157b978fcc3b968f03b98>`(const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set, const std::string& filename);
+	void :target:`save_point_set<doxid-point__set__output_8h_1abc30c1fa0cc157b978fcc3b968f03b98>`(
+		const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set,
+		const std::string& filename
+		);
 
 	template <index_t dimension>
-	void :target:`load_polygonal_surface<doxid-polygonal__surface__input_8h_1ab632fc0540f9fdcd1b345ff4dbb2e358>`(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& polygonal_surface, const std::string& filename);
+	void :target:`load_polygonal_surface<doxid-polygonal__surface__input_8h_1ab632fc0540f9fdcd1b345ff4dbb2e358>`(
+		:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& polygonal_surface,
+		const std::string& filename
+		);
 
 	template <index_t dimension>
-	void :target:`save_polygonal_surface<doxid-polygonal__surface__output_8h_1a5510613e6eadc28f25b848aae45c999d>`(const :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& polygonal_surface, const std::string& filename);
+	void :target:`save_polygonal_surface<doxid-polygonal__surface__output_8h_1a5510613e6eadc28f25b848aae45c999d>`(
+		const :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& polygonal_surface,
+		const std::string& filename
+		);
 
 	template <index_t dimension>
-	void :target:`load_polyhedral_solid<doxid-polyhedral__solid__input_8h_1aa15047803f9e281cb8ebfd534ab25c32>`(:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid, const std::string& filename);
+	void :target:`load_polyhedral_solid<doxid-polyhedral__solid__input_8h_1aa15047803f9e281cb8ebfd534ab25c32>`(
+		:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid,
+		const std::string& filename
+		);
 
 	:target:`ALIAS_3D<doxid-polyhedral__solid__input_8h_1a16c64147551fea5c5e199f0fb18b78d1>`(:ref:`PolyhedralSolidInputFactory<doxid-classgeode_1_1_factory>`);
 
 	template <index_t dimension>
-	void :target:`save_polyhedral_solid<doxid-polyhedral__solid__output_8h_1a12703363f28126fc21c3b00b78bbd2a8>`(const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid, const std::string& filename);
+	void :target:`save_polyhedral_solid<doxid-polyhedral__solid__output_8h_1a12703363f28126fc21c3b00b78bbd2a8>`(
+		const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid,
+		const std::string& filename
+		);
 
 	template <index_t dimension>
-	void :target:`load_tetrahedral_solid<doxid-tetrahedral__solid__input_8h_1a92714435e7ed27e64f05c4bdd737fd86>`(:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& tetrahedral_solid, const std::string& filename);
+	void :target:`load_tetrahedral_solid<doxid-tetrahedral__solid__input_8h_1a92714435e7ed27e64f05c4bdd737fd86>`(
+		:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& tetrahedral_solid,
+		const std::string& filename
+		);
 
 	template <index_t dimension>
-	void :target:`save_tetrahedral_solid<doxid-tetrahedral__solid__output_8h_1a847361571f35f96b558b4e40fd78fcce>`(const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& tetrahedral_solid, const std::string& filename);
+	void :target:`save_tetrahedral_solid<doxid-tetrahedral__solid__output_8h_1a847361571f35f96b558b4e40fd78fcce>`(
+		const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& tetrahedral_solid,
+		const std::string& filename
+		);
 
 	template <index_t dimension>
-	void :target:`load_triangulated_surface<doxid-triangulated__surface__input_8h_1add998e01641585054e7cefa98c0b2a68>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& triangulated_surface, const std::string& filename);
+	void :target:`load_triangulated_surface<doxid-triangulated__surface__input_8h_1add998e01641585054e7cefa98c0b2a68>`(
+		:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& triangulated_surface,
+		const std::string& filename
+		);
 
 	template <index_t dimension>
-	void :target:`save_triangulated_surface<doxid-triangulated__surface__output_8h_1a42fd57010ad0159b2c7831b6a2543762>`(const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& triangulated_surface, const std::string& filename);
+	void :target:`save_triangulated_surface<doxid-triangulated__surface__output_8h_1a42fd57010ad0159b2c7831b6a2543762>`(
+		const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& triangulated_surface,
+		const std::string& filename
+		);
 
 	} // namespace geode

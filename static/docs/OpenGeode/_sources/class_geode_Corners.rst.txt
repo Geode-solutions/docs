@@ -19,7 +19,8 @@ template class geode::Corners
 
 	
 	template <index_t dimension>
-	class Corners {
+	class Corners
+	{
 	public:
 		// classes
 	
@@ -29,8 +30,13 @@ template class geode::Corners
 
 		// methods
 	
-		index_t :target:`nb_corners<doxid-classgeode_1_1_corners_1a949ddaa0cde92f3d47986f520ecea125>`() const;
-		const :ref:`Corner<doxid-classgeode_1_1_corner>`<dimension>& :target:`corner<doxid-classgeode_1_1_corners_1a5258a25b20a106bdb93ef0100af9a60f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
-		:ref:`CornerRange<doxid-classgeode_1_1_corners_1_1_corner_range>` :target:`corners<doxid-classgeode_1_1_corners_1a80d5c977afe0ba4ae7a662099c381c0a>`() const;
-		std::vector<std::string> :target:`save_corners<doxid-classgeode_1_1_corners_1abbbfe32cceb5dbc156cf5befaccbbadf>`(const std::string& directory) const;
+		index_t :target:`nb_corners<doxid-classgeode_1_1_corners_1a3f262b33118a63bd5e02c354893fd93f>`() const;
+		const :ref:`Corner<doxid-classgeode_1_1_corner>`<dimension>& :target:`corner<doxid-classgeode_1_1_corners_1ac6615262c4c647df92f1f7c5bebc32f5>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`CornerRange<doxid-classgeode_1_1_corners_1_1_corner_range>` :target:`corners<doxid-classgeode_1_1_corners_1a142167d43eda96ffacbc8a3711f593a7>`() const;
+		std::vector<std::string> :target:`save_corners<doxid-classgeode_1_1_corners_1ab44e35cf6ff0b0839485840781514c8a>`(const std::string& directory) const;
 	};
+
+	// direct descendants
+
+	template <index_t dimension, template< index_t > class... Entities>
+	class :ref:`GeoRepresentation<doxid-classgeode_1_1_geo_representation>`;

@@ -14,7 +14,8 @@ class geode::OpenGeodeVertexSetBuilder
 	:class: doxyrest-overview-code-block
 
 	
-	class OpenGeodeVertexSetBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` {
+	class OpenGeodeVertexSetBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`
+	{
 	public:
 		// construction
 	

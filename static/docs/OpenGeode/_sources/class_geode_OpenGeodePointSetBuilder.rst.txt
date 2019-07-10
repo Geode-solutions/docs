@@ -15,7 +15,8 @@ template class geode::OpenGeodePointSetBuilder
 
 	
 	template <index_t dimension>
-	class OpenGeodePointSetBuilder: public :ref:`geode::PointSetBuilder<doxid-classgeode_1_1_point_set_builder>` {
+	class OpenGeodePointSetBuilder: public :ref:`geode::PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`
+	{
 	public:
 		// construction
 	

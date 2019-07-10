@@ -14,10 +14,15 @@ class geode::Blocks::BlockRangeBase
 	:class: doxyrest-overview-code-block
 
 	
-	class BlockRangeBase {
+	class BlockRangeBase
+	{
 	public:
 		// methods
 	
-		bool :target:`operator!=<doxid-classgeode_1_1_blocks_1_1_block_range_base_1af88340cfc6894af77dba26e9631435df>`(const BlockRangeBase&) const;
-		void :target:`operator++<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a338c1a4a2671ab68c4ab3d8ed05ca213>`();
+		bool :target:`operator !=<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a272b7fec869cdcc3799364195d4c0286>` (const BlockRangeBase&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a338c1a4a2671ab68c4ab3d8ed05ca213>` ();
 	};
+
+	// direct descendants
+
+	class :ref:`BlockRange<doxid-classgeode_1_1_blocks_1_1_block_range>`;

@@ -14,7 +14,8 @@ struct geode::EdgeVertex
 	:class: doxyrest-overview-code-block
 
 	
-	struct EdgeVertex {
+	struct EdgeVertex
+	{
 		// fields
 	
 		index_t :target:`edge_id<doxid-structgeode_1_1_edge_vertex_1a4c65692bb29333ba1aa7b1da7848b40e>`;
@@ -23,12 +24,16 @@ struct geode::EdgeVertex
 		// construction
 	
 		:target:`EdgeVertex<doxid-structgeode_1_1_edge_vertex_1a9070623605e1d3b154a866fdc1673195>`();
-		:target:`EdgeVertex<doxid-structgeode_1_1_edge_vertex_1a4027d759c0aa7190a2cbb4b693323c76>`(index_t edge_id, index_t vertex_id);
+	
+		:target:`EdgeVertex<doxid-structgeode_1_1_edge_vertex_1a4027d759c0aa7190a2cbb4b693323c76>`(
+			index_t edge_id,
+			index_t vertex_id
+			);
 
 		// methods
 	
-		bool :target:`operator==<doxid-structgeode_1_1_edge_vertex_1a7d4290000ba81123b0294227fcc71414>`(const EdgeVertex& other) const;
-		bool :target:`operator!=<doxid-structgeode_1_1_edge_vertex_1a8ef03c3a07a86be41c625f141b678473>`(const EdgeVertex& other) const;
+		bool :target:`operator ==<doxid-structgeode_1_1_edge_vertex_1a85ecdc9ed57e8c41fce0a201008f4c44>` (const EdgeVertex& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1_edge_vertex_1a71d45fef116caa54c38044a40a37e067>` (const EdgeVertex& other) const;
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_edge_vertex_1abe11699079e85d7e3a821897fd2e2fc2>`(Archive& archive);

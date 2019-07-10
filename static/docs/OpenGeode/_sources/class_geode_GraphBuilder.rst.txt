@@ -14,17 +14,35 @@ class geode::GraphBuilder
 	:class: doxyrest-overview-code-block
 
 	
-	class GraphBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` {
+	class GraphBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`
+	{
 	public:
 		// methods
 	
 		static std::unique_ptr<GraphBuilder> :target:`create<doxid-classgeode_1_1_graph_builder_1ad0246b4ef3c0eeab0aec072ab045d2f2>`(:ref:`Graph<doxid-classgeode_1_1_graph>`& mesh);
-		void :target:`set_edge_vertex<doxid-classgeode_1_1_graph_builder_1adfa4c5424c28d16a1a0b9865da89afba>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex, index_t vertex_id);
+	
+		void :target:`set_edge_vertex<doxid-classgeode_1_1_graph_builder_1adfa4c5424c28d16a1a0b9865da89afba>`(
+			const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex,
+			index_t vertex_id
+			);
+	
 		index_t :target:`create_edge<doxid-classgeode_1_1_graph_builder_1a0a07a5a07a8b4b0ec911e1a3080cc7a2>`();
-		index_t :target:`create_edge<doxid-classgeode_1_1_graph_builder_1aaa1dd04933dfa38205eac35b699d01d8>`(index_t v0_id, index_t v1_id);
+	
+		index_t :target:`create_edge<doxid-classgeode_1_1_graph_builder_1aaa1dd04933dfa38205eac35b699d01d8>`(
+			index_t v0_id,
+			index_t v1_id
+			);
+	
 		index_t :target:`create_edges<doxid-classgeode_1_1_graph_builder_1a425b20e444d272cc2ba6dff50a4664b3>`(index_t nb);
 		void :target:`delete_edges<doxid-classgeode_1_1_graph_builder_1a56154f54130958227274b8c3dbb9aa0c>`(const std::vector<bool>& to_delete);
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`;
+
+	class :ref:`OpenGeodeGraphBuilder<doxid-classgeode_1_1_open_geode_graph_builder>`;
 
 Inherited Members
 -----------------

@@ -17,7 +17,8 @@ Implementation class of a logger
 
 	#include <logger.h>
 	
-	class Logger {
+	class Logger
+	{
 	public:
 		// enums
 	
@@ -28,20 +29,20 @@ Implementation class of a logger
 		static void :target:`set_level<doxid-classgeode_1_1_logger_1a41985cecb1e201ccef3ca3402623f92d>`(Level level);
 	
 		template <typename... Args>
-		static void :target:`trace<doxid-classgeode_1_1_logger_1a3361969272bc61d7e06ffffd8c2a2220>`(const Args&... args);
+		static void :target:`trace<doxid-classgeode_1_1_logger_1ac05a1cbda59f973b31be1c943655ac6c>`(const Args&... args);
 	
 		template <typename... Args>
-		static void :target:`debug<doxid-classgeode_1_1_logger_1a77e9ed5b6298ed3d35ce8715b25be4ef>`(const Args&... args);
+		static void :target:`debug<doxid-classgeode_1_1_logger_1a439391a4c15101e1b4dce4ba5659f797>`(const Args&... args);
 	
 		template <typename... Args>
-		static void :target:`info<doxid-classgeode_1_1_logger_1a702049a6914a030b983bcb316bdce9ab>`(const Args&... args);
+		static void :target:`info<doxid-classgeode_1_1_logger_1ac380ea6432f41a821f5c7ba94c2a1170>`(const Args&... args);
 	
 		template <typename... Args>
-		static void :target:`warn<doxid-classgeode_1_1_logger_1a7340a1b0a0b4ce44580eef6abb0dc6bf>`(const Args&... args);
+		static void :target:`warn<doxid-classgeode_1_1_logger_1aa415c4c557b67f0a9b987644d606ab6d>`(const Args&... args);
 	
 		template <typename... Args>
-		static void :target:`error<doxid-classgeode_1_1_logger_1ab073f3923ce1bf6281b4e2a4ccd00bf8>`(const Args&... args);
+		static void :target:`error<doxid-classgeode_1_1_logger_1a7962db5dda7a345f0746f707b38125b9>`(const Args&... args);
 	
 		template <typename... Args>
-		static void :target:`critical<doxid-classgeode_1_1_logger_1aafb9ff8a36b01b8c68923a83c00ebc33>`(const Args&... args);
+		static void :target:`critical<doxid-classgeode_1_1_logger_1a1f2af68ddc2a9c36750c8af2d58ccf98>`(const Args&... args);
 	};

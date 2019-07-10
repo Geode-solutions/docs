@@ -15,13 +15,19 @@ template class geode::TriangulatedSurfaceBuilder
 
 	
 	template <index_t dimension>
-	class TriangulatedSurfaceBuilder: public :ref:`geode::PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>` {
+	class TriangulatedSurfaceBuilder: public :ref:`geode::PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`
+	{
 	public:
 		// methods
 	
 		static std::unique_ptr<TriangulatedSurfaceBuilder<dimension>> :target:`create<doxid-classgeode_1_1_triangulated_surface_builder_1a525758b4196d65870741e2224e75bbab>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& mesh);
 		index_t :target:`create_triangle<doxid-classgeode_1_1_triangulated_surface_builder_1a36e6538c550e10d71177ff2fc5e38c8b>`(const std::array<index_t, 3>& vertices);
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeTriangulatedSurfaceBuilder<doxid-classgeode_1_1_open_geode_triangulated_surface_builder>`;
 
 Inherited Members
 -----------------

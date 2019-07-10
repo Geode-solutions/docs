@@ -14,7 +14,8 @@ struct geode::PolyhedronFacet
 	:class: doxyrest-overview-code-block
 
 	
-	struct PolyhedronFacet {
+	struct PolyhedronFacet
+	{
 		// fields
 	
 		index_t :target:`polyhedron_id<doxid-structgeode_1_1_polyhedron_facet_1a85350733a7db6b1fce4aa1953cd1f1b1>`;
@@ -23,12 +24,16 @@ struct geode::PolyhedronFacet
 		// construction
 	
 		:target:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet_1ae0dcb4f2e9192a5bb1977d35a5d85d36>`();
-		:target:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet_1a9300f30c5f84e02a80daf756ca7e1772>`(index_t polyhedron_id, index_t facet_id);
+	
+		:target:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet_1a9300f30c5f84e02a80daf756ca7e1772>`(
+			index_t polyhedron_id,
+			index_t facet_id
+			);
 
 		// methods
 	
-		bool :target:`operator==<doxid-structgeode_1_1_polyhedron_facet_1a96331e1c8b0c8e05523ec2b99f6f9b68>`(const PolyhedronFacet& other) const;
-		bool :target:`operator!=<doxid-structgeode_1_1_polyhedron_facet_1a19e110343ea8c0f2bb7f8abe64fcc042>`(const PolyhedronFacet& other) const;
+		bool :target:`operator ==<doxid-structgeode_1_1_polyhedron_facet_1a3c86e31606e06af447f9c09596f9383c>` (const PolyhedronFacet& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1_polyhedron_facet_1abcc53506fdf82b06791a632619029ec4>` (const PolyhedronFacet& other) const;
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_polyhedron_facet_1a26801517bab62a2e92ea622e9f4efe12>`(Archive& archive);

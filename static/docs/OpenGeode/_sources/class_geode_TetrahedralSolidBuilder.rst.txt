@@ -15,13 +15,19 @@ template class geode::TetrahedralSolidBuilder
 
 	
 	template <index_t dimension>
-	class TetrahedralSolidBuilder: public :ref:`geode::PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>` {
+	class TetrahedralSolidBuilder: public :ref:`geode::PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`
+	{
 	public:
 		// methods
 	
 		static std::unique_ptr<TetrahedralSolidBuilder<dimension>> :target:`create<doxid-classgeode_1_1_tetrahedral_solid_builder_1a503c644c2e201a97294ded9e4479b27d>`(:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& mesh);
 		index_t :target:`create_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_builder_1a56c1d3ffeebb11cdcb9eb4c4042a5c13>`(const std::array<index_t, 4>& vertices);
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeTetrahedralSolidBuilder<doxid-classgeode_1_1_open_geode_tetrahedral_solid_builder>`;
 
 Inherited Members
 -----------------
@@ -39,7 +45,12 @@ Inherited Members
 		void :ref:`set_point<doxid-classgeode_1_1_polyhedral_solid_builder_1a11b09292890093eee287e273df50bba9>`(index_t vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 		index_t :ref:`create_point<doxid-classgeode_1_1_polyhedral_solid_builder_1a8175bf8ba66b935705317fa0057eb68e>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 		void :ref:`set_polyhedron_vertex<doxid-classgeode_1_1_polyhedral_solid_builder_1a6dba41319f48c1a2da2e61f4fa2234a2>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, index_t vertex_id);
-		index_t :ref:`create_polyhedron<doxid-classgeode_1_1_polyhedral_solid_builder_1a839233413ea3b632a7b489d01821b54a>`(const std::vector<index_t>& vertices, const std::vector<std::vector<index_t>>& facets);
+	
+		index_t :ref:`create_polyhedron<doxid-classgeode_1_1_polyhedral_solid_builder_1a839233413ea3b632a7b489d01821b54a>`(
+			const std::vector<index_t>& vertices,
+			const std::vector<std::vector<index_t>>& facets
+			);
+	
 		void :ref:`set_polyhedron_adjacent<doxid-classgeode_1_1_polyhedral_solid_builder_1a2597d8361224e70749f60c97e146b2c4>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet, index_t adjacent_id);
 		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_polyhedral_solid_builder_1a45556ef309b970fe69837480de337fcb>`();
 		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_polyhedral_solid_builder_1a163619ff43cc372aedfa38ecfebcf14e>`(const std::vector<index_t>& polyhedra_to_connect);

@@ -17,7 +17,8 @@ template class geode::NNSearch
 
 	
 	template <index_t dimension>
-	class NNSearch {
+	class NNSearch
+	{
 	public:
 		// structs
 	
@@ -29,10 +30,19 @@ template class geode::NNSearch
 
 		// methods
 	
-		index_t :target:`closest_neighbor<doxid-classgeode_1_1_n_n_search_1a44b483d8844bf0959a30181e90f894d4>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
-		std::vector<index_t> :target:`radius_neighbors<doxid-classgeode_1_1_n_n_search_1a79943bb931b1b553c380f8d9f1df7a91>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point, double threshold_distance) const;
-		std::vector<index_t> :target:`neighbors<doxid-classgeode_1_1_n_n_search_1afd26ff3ce7c46ee7e50dc93c03c9d3ae>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point, index_t nb_neighbors) const;
-		:ref:`ColocatedInfo<doxid-structgeode_1_1_n_n_search_1_1_colocated_info>` :target:`colocated_index_mapping<doxid-classgeode_1_1_n_n_search_1a0cb17bc97ef8883abda3c50f3356ed72>`(double epsilon) const;
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_n_n_search_1a2cbf72dcbdd9373c4ede269967eb6905>`(index_t index) const;
-		index_t :target:`nb_points<doxid-classgeode_1_1_n_n_search_1a7906b08ddb967c80d56d421daa074e96>`() const;
+		index_t :target:`closest_neighbor<doxid-classgeode_1_1_n_n_search_1ae62b6cfe4106a0545c2f72ebaf6bca06>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
+	
+		std::vector<index_t> :target:`radius_neighbors<doxid-classgeode_1_1_n_n_search_1aaa981a586caffb12d3b5b1d6e731a90d>`(
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+			double threshold_distance
+			) const;
+	
+		std::vector<index_t> :target:`neighbors<doxid-classgeode_1_1_n_n_search_1ab2cb8ec4fbe94d5d6af2c5050dc98a2a>`(
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+			index_t nb_neighbors
+			) const;
+	
+		:ref:`ColocatedInfo<doxid-structgeode_1_1_n_n_search_1_1_colocated_info>` :target:`colocated_index_mapping<doxid-classgeode_1_1_n_n_search_1a9d1fa7816763e219d274369d5b14627a>`(double epsilon) const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_n_n_search_1ac55f16a043f0effb326ce4f10a1c7509>`(index_t index) const;
+		index_t :target:`nb_points<doxid-classgeode_1_1_n_n_search_1a40e5fd84b8221c4b0c1583333ab5c460>`() const;
 	};

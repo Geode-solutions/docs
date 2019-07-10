@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>template class geode::Surface &#8212; OpenGeode  documentation</title>
+    <meta charset="utf-8" />
+    <title>template class geode::Surface &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -40,28 +38,25 @@
 <span id="doxid-classgeode-1-1-surface"></span><span id="index-0"></span><h1>template class geode::Surface<a class="headerlink" href="#template-class-geode-surface" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block">
-<span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="nl">Surface</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component"><span class="std std-ref">geode::Component</span></a><span></span> <span class="p">{</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">Surface</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component"><span class="std std-ref">geode::Component</span></a><span></span>
+<span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
     <span class="k">virtual</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">ComponentType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1af5857f1eaa972d6469e8d54ec57212e9">component_type</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a23aafe58297b0f553d6e2b42cef54ef8">component_id</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a3de9a63b450e8b8ea2a8cd3c26580a3f">mesh</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a0dbd6dd67f32faf351ad91198823abf6">component_id</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1aaed233c13267c3ec5dafe37f3b93652d">mesh</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">static</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">ComponentType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1adbea559118e1b62c032465cd635aff60">component_type_static</span><span></span><span class="p">();</span>
-<span class="p">};</span>
-</pre>
+<span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this headline">¶</a></h2>
-<pre class="highlight doxyrest-overview-inherited-code-block literal-block">
-<span></span><span class="k">public</span><span class="o">:</span>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component-1aac9e69f6ec5c197a43ef76ca4a379f86"><span class="std std-ref">name</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component-1aca5ed3aadbbbb38f6e30f63a4b3d8fa0"><span class="std std-ref">id</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">virtual</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">ComponentType</span></a><span></span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component-1a4468b6088e9bbc94ef9b59104488bf7d"><span class="std std-ref">component_type</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</pre>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component-1ae545ea00a79fe2b4d156c99f760885f8"><span class="std std-ref">name</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component-1a9610a777b6c2cf55556f5bb237345878"><span class="std std-ref">id</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">ComponentType</span></a><span></span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component-1a4468b6088e9bbc94ef9b59104488bf7d"><span class="std std-ref">component_type</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
 </div>
 </div>
 
@@ -84,27 +79,15 @@
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2019, tt.
+      &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

@@ -14,12 +14,27 @@ class geode::Output
 	:class: doxyrest-overview-code-block
 
 	
-	class Output: public :ref:`geode::IOFile<doxid-classgeode_1_1_i_o_file>` {
+	class Output: public :ref:`geode::IOFile<doxid-classgeode_1_1_i_o_file>`
+	{
 	public:
 		// methods
 	
 		virtual void :target:`write<doxid-classgeode_1_1_output_1a9c2f7d16a0ccf42ed237626c7acfa3f9>`() const = 0;
 	};
+
+	// direct descendants
+
+	class :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`;
+	class :ref:`GraphOutput<doxid-classgeode_1_1_graph_output>`;
+
+	template <index_t dimension>
+	class :ref:`PointSetOutput<doxid-classgeode_1_1_point_set_output>`;
+
+	template <index_t dimension>
+	class :ref:`PolygonalSurfaceOutput<doxid-classgeode_1_1_polygonal_surface_output>`;
+
+	template <index_t dimension>
+	class :ref:`PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`;
 
 Inherited Members
 -----------------
@@ -30,5 +45,5 @@ Inherited Members
 	public:
 		// methods
 	
-		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1ad340c6859158f143ecc6932468620610>`() const;
+		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1a00af9913eee23e9bd533bed23ec29499>`() const;
 
