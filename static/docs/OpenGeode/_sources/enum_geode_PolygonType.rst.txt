@@ -15,7 +15,8 @@ enum defining the type of polygon in surface.
 
 	#include <types.h>
 
-	enum PolygonType {
+	enum PolygonType
+	{
 	    :target:`TRIANGLE<doxid-dummy_1a5d87500c613c3f89fe793682022392eea9bcd89070cae224dce305f5011659ef4>`     = 0,
 	    :target:`QUAD<doxid-dummy_1a5d87500c613c3f89fe793682022392eeac88da92039291f825814816096db2ea2>`         = 1,
 	    :target:`UNCLASSIFIED<doxid-dummy_1a5d87500c613c3f89fe793682022392eea6c92f88fdbcbe02e285a58ccee2068a6>` = 2,

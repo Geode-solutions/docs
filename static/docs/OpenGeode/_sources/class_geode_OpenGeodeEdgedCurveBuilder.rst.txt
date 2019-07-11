@@ -15,7 +15,8 @@ template class geode::OpenGeodeEdgedCurveBuilder
 
 	
 	template <index_t dimension>
-	class OpenGeodeEdgedCurveBuilder: public :ref:`geode::EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>` {
+	class OpenGeodeEdgedCurveBuilder: public :ref:`geode::EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`
+	{
 	public:
 		// construction
 	

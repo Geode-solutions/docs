@@ -14,19 +14,24 @@ class geode::RelationshipManager::CollectionRange
 	:class: doxyrest-overview-code-block
 
 	
-	class CollectionRange {
+	class CollectionRange
+	{
 	public:
 		// construction
 	
-		:target:`CollectionRange<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1a6b04d962ad81ecb4d451ebe825cbe8d1>`(const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		:target:`CollectionRange<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1a6b04d962ad81ecb4d451ebe825cbe8d1>`(
+			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
+			);
+	
 		:target:`CollectionRange<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1a8c66a25c8ec8eee20a2d89c44b8a6a0b>`(CollectionRange&& other);
 		:target:`CollectionRange<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1ae47c28dd769adc47487d900ec452b401>`(const CollectionRange& other);
 
 		// methods
 	
-		const CollectionRange& :target:`begin<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1a3209f523b559bd15ac6dbaa8024a0ab4>`() const;
-		const CollectionRange& :target:`end<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1ac6ec43dad41cb511e02dd7a7546077dc>`() const;
-		bool :target:`operator!=<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1a28060f706851a80e47caa3fc3f1649af>`(const CollectionRange&) const;
-		void :target:`operator++<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1ade5887efa70b0d5d48f1077fb1be8acc>`();
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator*<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1ae9dc1109ae680000350ecc3c4ff79e21>`() const;
+		const CollectionRange& :target:`begin<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1a35eab9f5d77604c96b8691c29874990b>`() const;
+		const CollectionRange& :target:`end<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1a7504e70921c3eb35bb851ab323d956bd>`() const;
+		bool :target:`operator !=<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1aabd0b8487e545ec4de7045729a7c4b79>` (const CollectionRange&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1ade5887efa70b0d5d48f1077fb1be8acc>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator *<doxid-classgeode_1_1_relationship_manager_1_1_collection_range_1a80d4c771491c023cb67d318db4d107f0>` () const;
 	};

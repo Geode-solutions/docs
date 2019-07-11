@@ -16,12 +16,13 @@ Read and write interface for constant attribute
 	#include <attribute.h>
 	
 	template <typename T>
-	class ConstantAttribute: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>` {
+	class ConstantAttribute: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`
+	{
 	public:
 		// methods
 	
 		virtual const T& :target:`value<doxid-classgeode_1_1_constant_attribute_1ae456f281d3db9616c6fd7dc00fc4d8fd>`(index_t) const;
-		const T& :target:`value<doxid-classgeode_1_1_constant_attribute_1ace3aca22736ec60f761fa0a66d1b61e9>`() const;
+		const T& :target:`value<doxid-classgeode_1_1_constant_attribute_1a0f57c13d9363e34c37e50cc9c251c04a>`() const;
 		T& :target:`value<doxid-classgeode_1_1_constant_attribute_1a19eb02fe3df749c8f1459e119c288a1a>`();
 	};
 

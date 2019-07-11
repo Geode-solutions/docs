@@ -15,7 +15,8 @@ template class geode::PointSetInput
 
 	
 	template <index_t dimension>
-	class PointSetInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>` {
+	class PointSetInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`
+	{
 	};
 
 Inherited Members
@@ -27,6 +28,6 @@ Inherited Members
 	public:
 		// methods
 	
-		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1ad340c6859158f143ecc6932468620610>`() const;
+		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1a00af9913eee23e9bd533bed23ec29499>`() const;
 		virtual void :ref:`read<doxid-classgeode_1_1_input_1a3cddf55a1071542ca682bce780869794>`() = 0;
 

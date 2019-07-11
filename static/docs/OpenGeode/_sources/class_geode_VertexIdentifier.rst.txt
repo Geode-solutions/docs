@@ -14,19 +14,28 @@ class geode::VertexIdentifier
 	:class: doxyrest-overview-code-block
 
 	
-	class VertexIdentifier {
+	class VertexIdentifier
+	{
 	public:
-		// construction
-	
-		:target:`VertexIdentifier<doxid-classgeode_1_1_vertex_identifier_1a41aa11665980546c1102b8d169cfaae8>`();
-
 		// methods
 	
-		index_t :target:`nb_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a126167bad707bf6991d900419e8742a5>`() const;
-		const std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`>& :target:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a04919fb11ef214d5861809119867d731>`(index_t unique_vertex_id) const;
-		std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> :target:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1af50e6da4e87928eae7b6be99188c3b05>`(index_t unique_vertex_id, const :ref:`ComponentType<doxid-classgeode_1_1_named_type>`& type) const;
-		std::vector<index_t> :target:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a5f6dfd3e7a4d98b6c1d05d77b8f392f6>`(index_t unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
-		index_t :target:`unique_vertex<doxid-classgeode_1_1_vertex_identifier_1abb119e7a7b918a152362e48a7c75fdc4>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id, index_t vertex_id) const;
+		index_t :target:`nb_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1ada2513c61421efbd388258503e8ab95e>`() const;
+		const std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`>& :target:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1afff4a91d1a4c952faedd56585b938f59>`(index_t unique_vertex_id) const;
+	
+		std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> :target:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1ac1db26b74ed07f5b46ab8a8f5b1f3971>`(
+			index_t unique_vertex_id,
+			const :ref:`ComponentType<doxid-classgeode_1_1_named_type>`& type
+			) const;
+	
+		std::vector<index_t> :target:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1ad6f5f808567692a78009370abc1df495>`(
+			index_t unique_vertex_id,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
+			) const;
+	
+		index_t :target:`unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a52dceac1bfbba24f5ecba04fd7e547e6>`(
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id,
+			index_t vertex_id
+			) const;
 	
 		template <typename MeshComponent>
 		void :target:`register_component<doxid-classgeode_1_1_vertex_identifier_1aa0e48c044e602b71312bcef5e5f28d73>`(const MeshComponent& component);
@@ -34,7 +43,12 @@ class geode::VertexIdentifier
 		void :target:`remove_component<doxid-classgeode_1_1_vertex_identifier_1a58e9930bdd941d3889b00044821717a8>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id);
 		index_t :target:`create_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a71979507c1e499c162ea107904b0d5e7>`();
 		index_t :target:`create_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a1f68247b957f1b7905db5c37d3874fbf>`(index_t nb);
-		void :target:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a48d74658aeacf6f0b3b85ad5d9c4e460>`(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, index_t unique_vertex_id);
-		std::string :target:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a052e9d89f3856e0ceb3c4a5316330010>`(const std::string& directory) const;
+	
+		void :target:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a48d74658aeacf6f0b3b85ad5d9c4e460>`(
+			:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id,
+			index_t unique_vertex_id
+			);
+	
+		std::string :target:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a156b53c9cf26bb7d30077e4c2aef78b2>`(const std::string& directory) const;
 		void :target:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a4999703d2882a55cfa23bf73fe440fe1>`(const std::string& directory);
 	};

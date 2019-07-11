@@ -14,17 +14,22 @@ class geode::BRep::SurfaceIncidenceRange
 	:class: doxyrest-overview-code-block
 
 	
-	class SurfaceIncidenceRange: public :ref:`geode::RelationshipManager::IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>` {
+	class SurfaceIncidenceRange: public :ref:`geode::RelationshipManager::IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`
+	{
 	public:
 		// construction
 	
-		:target:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1afde18a585ee70d20ea06aad2b5460687>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model, const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager, const Surface3D& surface);
+		:target:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1afde18a585ee70d20ea06aad2b5460687>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
+			const Surface3D& surface
+			);
 
 		// methods
 	
-		const SurfaceIncidenceRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1ad6a25db10808160a31aa7f6d18851d67>`() const;
-		const SurfaceIncidenceRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1aaf77275b8dca09d55452a5aa69ef1b8f>`() const;
-		const Block3D& :target:`operator*<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1a48af3d648ad0d16300e47d507d067d22>`() const;
+		const SurfaceIncidenceRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1a1d6f2feb38e4547424519cb756b738df>`() const;
+		const SurfaceIncidenceRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1a671633c228b1fb82142e9a1f909effd5>`() const;
+		const Block3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1a38815ecf27a320e068a2927d08f8c23e>` () const;
 	};
 
 Inherited Members
@@ -36,9 +41,9 @@ Inherited Members
 	public:
 		// methods
 	
-		const :ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`& :ref:`begin<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a0e0762714da5b82b857c193070acb3dd>`() const;
-		const :ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`& :ref:`end<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a747f50fa57b2a4be21202ada370edd1a>`() const;
-		bool :ref:`operator!=<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a6f7a1e355995c59e49b587ba2408a791>`(const :ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`&) const;
-		void :ref:`operator++<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1aafeb8db8f919c35f7473f7462b3d0bb1>`();
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator*<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1ace6dd48398fb4b6359a69dee7940c349>`() const;
+		const :ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`& :ref:`begin<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a09425ad1ad7cd3293ea2ade5497af8ab>`() const;
+		const :ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`& :ref:`end<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a745cc17eee038ad870b769fa1b072bcf>`() const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1a896942cd2148ca7c4ee819ce9fc6ee6c>` (const :ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1aafeb8db8f919c35f7473f7462b3d0bb1>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator *<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range_1ab96bb1401192dae0df2629aef467c92d>` () const;
 

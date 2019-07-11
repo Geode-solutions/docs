@@ -17,5 +17,11 @@ To use this class, inherit from it and use the protected method Singleton::insta
 
 	#include <singleton.h>
 	
-	class Singleton {
+	class Singleton
+	{
 	};
+
+	// direct descendants
+
+	template <typename Key, typename BaseClass, typename... Args>
+	class :ref:`Factory<doxid-classgeode_1_1_factory>`;

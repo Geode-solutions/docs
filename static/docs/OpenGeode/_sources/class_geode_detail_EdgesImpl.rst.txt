@@ -14,7 +14,8 @@ class geode::detail::EdgesImpl
 	:class: doxyrest-overview-code-block
 
 	
-	class EdgesImpl {
+	class EdgesImpl
+	{
 	public:
 		// construction
 	
@@ -22,7 +23,12 @@ class geode::detail::EdgesImpl
 
 		// methods
 	
-		index_t :target:`get_edge_vertex<doxid-classgeode_1_1detail_1_1_edges_impl_1a7a9b108aea5fcab36ff71a85bc0afd42>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
-		void :target:`set_edge_vertex<doxid-classgeode_1_1detail_1_1_edges_impl_1a9facb9e1d6429f67392aabd672dad583>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex, index_t vertex_id);
+		index_t :target:`get_edge_vertex<doxid-classgeode_1_1detail_1_1_edges_impl_1af455bb721c01e25de129b8e4738b6a50>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
+	
+		void :target:`set_edge_vertex<doxid-classgeode_1_1detail_1_1_edges_impl_1a9facb9e1d6429f67392aabd672dad583>`(
+			const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex,
+			index_t vertex_id
+			);
+	
 		void :target:`register_attributes<doxid-classgeode_1_1detail_1_1_edges_impl_1af57975a176cc18bcf2f66572e716d2a7>`(:ref:`Graph<doxid-classgeode_1_1_graph>`& graph);
 	};

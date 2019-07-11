@@ -15,7 +15,8 @@ template class geode::SparseAttribute
 
 	
 	template <typename T>
-	class SparseAttribute: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>` {
+	class SparseAttribute: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`
+	{
 	public:
 		// methods
 	

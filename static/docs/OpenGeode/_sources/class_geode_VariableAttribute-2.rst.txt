@@ -15,7 +15,8 @@ template class geode::VariableAttribute<bool>
 
 	
 	template <>
-	class VariableAttribute<bool>: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>` {
+	class VariableAttribute<bool>: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`
+	{
 	public:
 		// methods
 	

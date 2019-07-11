@@ -18,7 +18,8 @@ Overview
 
 	
 	template <index_t dimension>
-	class PointSetBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` {
+	class PointSetBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`
+	{
 	public:
 		// methods
 	
@@ -26,6 +27,11 @@ Overview
 		void :ref:`set_point<doxid-classgeode_1_1_point_set_builder_1a2a8878a90d56a0f60984bdc131443a70>`(index_t vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 		index_t :ref:`create_point<doxid-classgeode_1_1_point_set_builder_1ada3e73058b784771e6e5c7b5480d9bde>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OpenGeodePointSetBuilder<doxid-classgeode_1_1_open_geode_point_set_builder>`;
 
 Inherited Members
 -----------------

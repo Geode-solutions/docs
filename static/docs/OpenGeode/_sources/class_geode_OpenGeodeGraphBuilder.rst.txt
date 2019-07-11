@@ -14,7 +14,8 @@ class geode::OpenGeodeGraphBuilder
 	:class: doxyrest-overview-code-block
 
 	
-	class OpenGeodeGraphBuilder: public :ref:`geode::GraphBuilder<doxid-classgeode_1_1_graph_builder>` {
+	class OpenGeodeGraphBuilder: public :ref:`geode::GraphBuilder<doxid-classgeode_1_1_graph_builder>`
+	{
 	public:
 		// construction
 	

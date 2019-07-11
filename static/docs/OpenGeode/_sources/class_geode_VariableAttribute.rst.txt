@@ -16,7 +16,8 @@ Read and write interface for variable attribute
 	#include <attribute.h>
 	
 	template <typename T>
-	class VariableAttribute: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>` {
+	class VariableAttribute: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`
+	{
 	public:
 		// methods
 	

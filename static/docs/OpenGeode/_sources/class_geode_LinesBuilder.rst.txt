@@ -15,7 +15,8 @@ template class geode::LinesBuilder
 
 	
 	template <index_t dimension>
-	class LinesBuilder {
+	class LinesBuilder
+	{
 	public:
 		// methods
 	

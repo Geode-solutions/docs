@@ -15,7 +15,8 @@ template class geode::OpenGeodePolygonalSurfaceBuilder
 
 	
 	template <index_t dimension>
-	class OpenGeodePolygonalSurfaceBuilder: public :ref:`geode::PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>` {
+	class OpenGeodePolygonalSurfaceBuilder: public :ref:`geode::PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`
+	{
 	public:
 		// construction
 	

@@ -14,7 +14,8 @@ struct geode::NNSearch::ColocatedInfo
 	:class: doxyrest-overview-code-block
 
 	
-	struct ColocatedInfo {
+	struct ColocatedInfo
+	{
 		// fields
 	
 		std::vector<index_t> :target:`colocated_mapping<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad691f2a50681a331119fcb95b99b2709>`;
@@ -22,6 +23,6 @@ struct geode::NNSearch::ColocatedInfo
 
 		// methods
 	
-		index_t :target:`nb_unique_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a37c3af9afc03d1a1a49a28a7a6aeb1f5>`() const;
-		index_t :target:`nb_colocated_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a2b80bd8ef464f4f5af3272e5fde117c1>`() const;
+		index_t :target:`nb_unique_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a6ae0637001783653fb3cba451de9ef28>`() const;
+		index_t :target:`nb_colocated_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad4b7d866771505dcd0fce0077aaf1a3c>`() const;
 	};

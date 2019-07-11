@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>class geode::BRep::BlockBoundaryRange &#8212; OpenGeode  documentation</title>
+    <meta charset="utf-8" />
+    <title>class geode::BRep::BlockBoundaryRange &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -40,32 +38,33 @@
 <span id="doxid-classgeode-1-1-b-rep-1-1-block-boundary-range"></span><span id="index-0"></span><h1>class geode::BRep::BlockBoundaryRange<a class="headerlink" href="#class-geode-brep-blockboundaryrange" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block">
-<span></span><span class="k">class</span> <span class="nl">BlockBoundaryRange</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range"><span class="std std-ref">geode::RelationshipManager::BoundaryRange</span></a><span></span> <span class="p">{</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">class</span> <span class="nl">BlockBoundaryRange</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range"><span class="std std-ref">geode::RelationshipManager::BoundaryRange</span></a><span></span>
+<span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-block-boundary-range-1a472488777a28a4186f21e46da6720fe0">BlockBoundaryRange</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager.html#doxid-classgeode-1-1-relationship-manager"><span class="std std-ref">RelationshipManager</span></a><span></span><span class="o">&amp;</span> <span class="n">manager</span><span class="p">,</span> <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-block-boundary-range-1a472488777a28a4186f21e46da6720fe0">BlockBoundaryRange</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager.html#doxid-classgeode-1-1-relationship-manager"><span class="std std-ref">RelationshipManager</span></a><span></span><span class="o">&amp;</span> <span class="n">manager</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span>
+        <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">BlockBoundaryRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-block-boundary-range-1a84a73b7207944e90a01452884bb5a997">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <span class="n">BlockBoundaryRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-block-boundary-range-1a92ff14e585659348d1099e390f089e13">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-block-boundary-range-1a4eee7deb438127702f66e091b887f6bf">operator*</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span>
-</pre>
+    <span class="k">const</span> <span class="n">BlockBoundaryRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-block-boundary-range-1a25b2a57e91a6a5a21e569f39f0890fce">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">BlockBoundaryRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-block-boundary-range-1a54fe104ea7c3b6cfe0cd09b926ea4cdb">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-block-boundary-range-1a5566dc2a2555d48dd2ebb50a27b4ef23">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this headline">¶</a></h2>
-<pre class="highlight doxyrest-overview-inherited-code-block literal-block">
-<span></span><span class="k">public</span><span class="o">:</span>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range"><span class="std std-ref">BoundaryRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1aa90b181cc549458c87a9c5e01218daf7"><span class="std std-ref">begin</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range"><span class="std std-ref">BoundaryRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a9177a9afadacfb29ece998b4b87bc026"><span class="std std-ref">end</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a210bb870f81a0995480606ab951fc99d"><span class="std std-ref">operator!=</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range"><span class="std std-ref">BoundaryRange</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1aa7cbef6da739bb002810ec02f6f7f61d"><span class="std std-ref">operator++</span></a><span></span><span class="p">();</span>
-    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a6c9209065fd8601a9a5a0b23e9a8a4e5"><span class="std std-ref">operator*</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-</pre>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range"><span class="std std-ref">BoundaryRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1aa05ec623d892c484af4cbfacc4ef8c8c"><span class="std std-ref">begin</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range"><span class="std std-ref">BoundaryRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a0f1d39ad2c5cb6b59b55c5a68c31cfc3"><span class="std std-ref">end</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a5e1bafb5241d3d880d1c9e5220d944b8"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range"><span class="std std-ref">BoundaryRange</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1aa7cbef6da739bb002810ec02f6f7f61d"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_RelationshipManager_BoundaryRange.html#doxid-classgeode-1-1-relationship-manager-1-1-boundary-range-1a996f27c3aeba86ffb8766a58e0bbb971"><span class="std std-ref">operator *</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
 </div>
 </div>
 
@@ -90,27 +89,15 @@
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2019, tt.
+      &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

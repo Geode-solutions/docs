@@ -17,10 +17,11 @@ try { ... } catch( const OpenGeodeException& e ) { Logger::critical( e.what() );
 
 	#include <assert.h>
 	
-	class OpenGeodeException: public runtime_error {
+	class OpenGeodeException: public runtime_error
+	{
 	public:
 		// construction
 	
 		template <typename... Args>
-		:target:`OpenGeodeException<doxid-classgeode_1_1_open_geode_exception_1a0b89c86022db991fed656d1e35439ecc>`(const Args&... message);
+		:target:`OpenGeodeException<doxid-classgeode_1_1_open_geode_exception_1a84295258cb86c0d9eaedc96babfba183>`(const Args&... message);
 	};

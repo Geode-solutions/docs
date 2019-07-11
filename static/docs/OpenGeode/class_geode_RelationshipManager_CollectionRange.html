@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>class geode::RelationshipManager::CollectionRange &#8212; OpenGeode  documentation</title>
+    <meta charset="utf-8" />
+    <title>class geode::RelationshipManager::CollectionRange &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -40,24 +38,27 @@
 <span id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range"></span><span id="index-0"></span><h1>class geode::RelationshipManager::CollectionRange<a class="headerlink" href="#class-geode-relationshipmanager-collectionrange" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block">
-<span></span><span class="k">class</span> <span class="n">CollectionRange</span> <span class="p">{</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">class</span> <span class="n">CollectionRange</span>
+<span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1a6b04d962ad81ecb4d451ebe825cbe8d1">CollectionRange</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager.html#doxid-classgeode-1-1-relationship-manager"><span class="std std-ref">RelationshipManager</span></a><span></span><span class="o">&amp;</span> <span class="n">manager</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1a6b04d962ad81ecb4d451ebe825cbe8d1">CollectionRange</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager.html#doxid-classgeode-1-1-relationship-manager"><span class="std std-ref">RelationshipManager</span></a><span></span><span class="o">&amp;</span> <span class="n">manager</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span>
+        <span class="p">);</span>
+
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1a8c66a25c8ec8eee20a2d89c44b8a6a0b">CollectionRange</span><span></span><span class="p">(</span><span class="n">CollectionRange</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1ae47c28dd769adc47487d900ec452b401">CollectionRange</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">CollectionRange</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">CollectionRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1a3209f523b559bd15ac6dbaa8024a0ab4">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <span class="n">CollectionRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1ac6ec43dad41cb511e02dd7a7546077dc">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1a28060f706851a80e47caa3fc3f1649af">operator!=</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">CollectionRange</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1ade5887efa70b0d5d48f1077fb1be8acc">operator++</span><span></span><span class="p">();</span>
-    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1ae9dc1109ae680000350ecc3c4ff79e21">operator*</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span>
-</pre>
+    <span class="k">const</span> <span class="n">CollectionRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1a35eab9f5d77604c96b8691c29874990b">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">CollectionRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1a7504e70921c3eb35bb851ab323d956bd">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1aabd0b8487e545ec4de7045729a7c4b79">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">CollectionRange</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1ade5887efa70b0d5d48f1077fb1be8acc">operator ++</span><span></span> <span class="p">();</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationship-manager-1-1-collection-range-1a80d4c771491c023cb67d318db4d107f0">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
 </div>
 
 
@@ -81,27 +82,15 @@
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2019, tt.
+      &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

@@ -14,7 +14,8 @@ struct geode::PolyhedronVertex
 	:class: doxyrest-overview-code-block
 
 	
-	struct PolyhedronVertex {
+	struct PolyhedronVertex
+	{
 		// fields
 	
 		index_t :target:`polyhedron_id<doxid-structgeode_1_1_polyhedron_vertex_1a24ca54900c1b99e72dcc9571588569f5>`;
@@ -23,12 +24,16 @@ struct geode::PolyhedronVertex
 		// construction
 	
 		:target:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex_1a417c7c988fdc35c5791f9bb9669a34fc>`();
-		:target:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex_1adf3781368eff823a155695a4484d8d01>`(index_t polyhedron_id, index_t vertex_id);
+	
+		:target:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex_1adf3781368eff823a155695a4484d8d01>`(
+			index_t polyhedron_id,
+			index_t vertex_id
+			);
 
 		// methods
 	
-		bool :target:`operator==<doxid-structgeode_1_1_polyhedron_vertex_1aa312d3741fba47b5d337025ea4ecccce>`(const PolyhedronVertex& other) const;
-		bool :target:`operator!=<doxid-structgeode_1_1_polyhedron_vertex_1ac8911162aa3fed95db15440ebb1d49d5>`(const PolyhedronVertex& other) const;
+		bool :target:`operator ==<doxid-structgeode_1_1_polyhedron_vertex_1a8a2b9e287cbb4a524a470e68bb65380d>` (const PolyhedronVertex& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1_polyhedron_vertex_1a1064e85a976ce6dd8606b98205b4dc7c>` (const PolyhedronVertex& other) const;
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_polyhedron_vertex_1a1952ed129331f13c962b75719c36ca32>`(Archive& archive);

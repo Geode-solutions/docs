@@ -15,11 +15,16 @@ template class geode::BaseRange
 
 	
 	template <typename Type>
-	class BaseRange {
+	class BaseRange
+	{
 	public:
 		// methods
 	
-		bool :target:`operator!=<doxid-classgeode_1_1_base_range_1ada75509e0f7aec5847e4421055c93229>`(const BaseRange&) const;
-		void :target:`operator++<doxid-classgeode_1_1_base_range_1ab852e42089eb90a6f00a23bf8344877f>`();
-		Type :target:`current<doxid-classgeode_1_1_base_range_1a5ffff3799328f85388001113dc230e6c>`() const;
+		bool :target:`operator !=<doxid-classgeode_1_1_base_range_1aea7d49b6d4ae44f19ea69e58a9715f8b>` (const BaseRange&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_base_range_1ab852e42089eb90a6f00a23bf8344877f>` ();
+		Type :target:`current<doxid-classgeode_1_1_base_range_1a77a6e320898b50e49c0cfa3c036cb639>`() const;
 	};
+
+	// direct descendants
+
+	class :ref:`Range<doxid-classgeode_1_1_range>`;

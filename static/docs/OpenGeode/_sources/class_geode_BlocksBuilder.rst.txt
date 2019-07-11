@@ -15,7 +15,8 @@ template class geode::BlocksBuilder
 
 	
 	template <index_t dimension>
-	class BlocksBuilder {
+	class BlocksBuilder
+	{
 	public:
 		// methods
 	

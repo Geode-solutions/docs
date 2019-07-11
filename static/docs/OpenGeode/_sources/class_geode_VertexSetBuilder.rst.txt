@@ -17,7 +17,8 @@ Overview
 	:class: doxyrest-overview-code-block
 
 	
-	class VertexSetBuilder {
+	class VertexSetBuilder
+	{
 	public:
 		// methods
 	
@@ -25,6 +26,20 @@ Overview
 		index_t :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(index_t nb);
 		void :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c>`(const std::vector<bool>& to_delete);
 	};
+
+	// direct descendants
+
+	class :ref:`GraphBuilder<doxid-classgeode_1_1_graph_builder>`;
+	class :ref:`OpenGeodeVertexSetBuilder<doxid-classgeode_1_1_open_geode_vertex_set_builder>`;
+
+	template <index_t dimension>
+	class :ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`;
+
+	template <index_t dimension>
+	class :ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`;
+
+	template <index_t dimension>
+	class :ref:`PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`;
 .. _details-classgeode_1_1_vertex_set_builder:
 
 Detailed Documentation

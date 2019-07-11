@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>template class geode::ReadOnlyAttribute &#8212; OpenGeode  documentation</title>
+    <meta charset="utf-8" />
+    <title>template class geode::ReadOnlyAttribute &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -41,18 +39,28 @@
 <div class="toctree-wrapper compound">
 </div>
 <p>Read only attribute interface that does not need to know the underlying attribute storage type.</p>
-<pre class="highlight doxyrest-overview-code-block literal-block">
-<span></span><span class="cp">#include</span> <span class="cpf">&lt;attribute.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;attribute.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="nl">ReadOnlyAttribute</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base"><span class="std std-ref">geode::AttributeBase</span></a><span></span> <span class="p">{</span>
+<span class="k">class</span> <span class="nl">ReadOnlyAttribute</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base"><span class="std std-ref">geode::AttributeBase</span></a><span></span>
+<span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
     <span class="k">virtual</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-read-only-attribute-1a1a0e2ac08b3bf0f4f77f662ef0c1abe5">value</span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-read-only-attribute-1a404613b1cdd0d15b0deed66baca23ab1">type</span><span></span><span class="p">();</span>
 <span class="p">};</span>
-</pre>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_ConstantAttribute.html#doxid-classgeode-1-1-constant-attribute"><span class="std std-ref">ConstantAttribute</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SparseAttribute.html#doxid-classgeode-1-1-sparse-attribute"><span class="std std-ref">SparseAttribute</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_VariableAttribute.html#doxid-classgeode-1-1-variable-attribute"><span class="std std-ref">VariableAttribute</span></a><span></span><span class="p">;</span></pre>
 </div>
 
 
@@ -74,27 +82,15 @@
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2019, tt.
+      &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

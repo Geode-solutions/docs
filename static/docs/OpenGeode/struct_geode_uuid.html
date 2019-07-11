@@ -1,12 +1,10 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>struct geode::uuid &#8212; OpenGeode  documentation</title>
+    <meta charset="utf-8" />
+    <title>struct geode::uuid &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -40,25 +38,20 @@
 <span id="doxid-structgeode-1-1uuid"></span><span id="index-0"></span><h1>struct geode::uuid<a class="headerlink" href="#struct-geode-uuid" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block">
-<span></span><span class="k">struct</span> <span class="n">uuid</span> <span class="p">{</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">struct</span> <span class="n">uuid</span>
+<span class="p">{</span>
     <span class="c1">// fields</span>
 
     <span class="kt">uint64_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1a898cf3d7f428f461c1fa1352a2d25b11">ab</span><span></span><span class="p">;</span>
     <span class="kt">uint64_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1a7c1895ea4fcae0ce2224f5cbdd0c7ed4">cd</span><span></span><span class="p">;</span>
 
-    <span class="c1">// construction</span>
-
-    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1a3ffeeb8abba14abbc05dba2c12932dae">uuid</span><span></span><span class="p">();</span>
-
     <span class="c1">// methods</span>
 
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1a25e7f7923b86d68997f4165049b3994d">operator==</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1a59231b9fdda45db08a33fd6b7bbcbadd">operator!=</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1aaeccc4fae72d607e742c53f0dee40754">operator&lt;</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1a8774b767ecb2c423237c6e7b75baa0d9">string</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span>
-</pre>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1aa3d6116755d0461a9c3d039f854f4174">operator ==</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1a08afe02369e79548d8531922bb6f6103">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1a7dcdb867c9040a910d6ff8746a0287da">operator &lt;</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1uuid-1a76221e98be66de85df9d6dc7e594c2cb">string</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
 </div>
 
 
@@ -80,27 +73,15 @@
   </ul></li>
 </ul>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2019, tt.
+      &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
