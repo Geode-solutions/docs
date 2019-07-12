@@ -1,1 +1,9 @@
-/* This file intentionally left blank. */
+.doxyrest-title-code-block{
+  margin-top: 60px
+}
+p.rubric{
+  margin-top: 15px
+}
+.highlight {
+    background: #E0F2F1
+}
