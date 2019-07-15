@@ -13,6 +13,7 @@ template class geode::EdgedCurve
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <edged_curve.h>
 	
 	template <index_t dimension>
 	class EdgedCurve: public :ref:`geode::Graph<doxid-classgeode_1_1_graph>`
@@ -21,10 +22,10 @@ template class geode::EdgedCurve
 		// methods
 	
 		static std::unique_ptr<EdgedCurve<dimension>> :target:`create<doxid-classgeode_1_1_edged_curve_1a3f3c61d911156a0d21ced730d2dc5c75>`();
-		static std::unique_ptr<EdgedCurve<dimension>> :target:`create<doxid-classgeode_1_1_edged_curve_1a1749dece9296ef0d1dcfd91fc63046bd>`(const :ref:`MeshType<doxid-classgeode_1_1_named_type>`& type);
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_edged_curve_1ab08ec2bb2b7ad4796cc40185cecd0998>`(index_t vertex_id) const;
-		double :target:`edge_length<doxid-classgeode_1_1_edged_curve_1a64318f66bbd4c8fb28e6ee6760ee37a8>`(index_t edge_id) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`edge_barycenter<doxid-classgeode_1_1_edged_curve_1adaab5c4d7120d387bcf7bbfca6b67879>`(index_t edge_id) const;
+		static std::unique_ptr<EdgedCurve<dimension>> :target:`create<doxid-classgeode_1_1_edged_curve_1a1749dece9296ef0d1dcfd91fc63046bd>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_edged_curve_1ab08ec2bb2b7ad4796cc40185cecd0998>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		double :target:`edge_length<doxid-classgeode_1_1_edged_curve_1a64318f66bbd4c8fb28e6ee6760ee37a8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`edge_barycenter<doxid-classgeode_1_1_edged_curve_1adaab5c4d7120d387bcf7bbfca6b67879>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 	};
 
 	// direct descendants
@@ -43,13 +44,13 @@ Inherited Members
 	
 		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
 		virtual std::string :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1a225c97c97fbb97dae48f33cd0d8c43f8>`() const = 0;
-		index_t :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a3a42d107eb25cb937844f7ab7034da90>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a3a42d107eb25cb937844f7ab7034da90>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aedbd294327746c3db692ae101cfd387d>`() const;
-		virtual :ref:`MeshType<doxid-classgeode_1_1_named_type>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
 		static std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`> :ref:`create<doxid-classgeode_1_1_graph_1a705c0e3c8069e5d3a841a74debaa22bb>`();
-		static std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`> :ref:`create<doxid-classgeode_1_1_graph_1a85cecebfebb0e4a0c1ca7032d108c352>`(const :ref:`MeshType<doxid-classgeode_1_1_named_type>`& type);
-		index_t :ref:`edge_vertex<doxid-classgeode_1_1_graph_1a2ab4fef836487a91e6fa3e4b9253c9c9>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
-		index_t :ref:`nb_edges<doxid-classgeode_1_1_graph_1a5c8751693701bce0fcd4f7d4d434b62a>`() const;
+		static std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`> :ref:`create<doxid-classgeode_1_1_graph_1a85cecebfebb0e4a0c1ca7032d108c352>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_vertex<doxid-classgeode_1_1_graph_1a2ab4fef836487a91e6fa3e4b9253c9c9>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_edges<doxid-classgeode_1_1_graph_1a5c8751693701bce0fcd4f7d4d434b62a>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_graph_1a1bd49171f530720d27c0e649efd2abc7>`() const;
-		const std::vector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`>& :ref:`edges_around_vertex<doxid-classgeode_1_1_graph_1a3c4bc28bf62f29446cf43c46d609e3be>`(index_t vertex_id) const;
+		const std::vector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`>& :ref:`edges_around_vertex<doxid-classgeode_1_1_graph_1a3c4bc28bf62f29446cf43c46d609e3be>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 

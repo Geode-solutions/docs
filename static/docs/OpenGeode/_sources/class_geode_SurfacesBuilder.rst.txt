@@ -7,12 +7,25 @@ template class geode::SurfacesBuilder
 .. toctree::
 	:hidden:
 
+Get a pointer to the builder of a :ref:`Surface <doxid-classgeode_1_1_surface>` mesh
 
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- id
+
+		- Unique index of the :ref:`Surface <doxid-classgeode_1_1_surface>`
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <surfaces_builder.h>
 	
 	template <index_t dimension>
 	class SurfacesBuilder

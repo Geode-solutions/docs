@@ -37,7 +37,9 @@
 <span id="doxid-classgeode-1-1-surfaces"></span><span id="index-0"></span><h1>template class geode::Surfaces</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surfaces.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="n">Surfaces</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -49,7 +51,7 @@
 
     <span class="c1">// methods</span>
 
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-1a16c69f3cfdcbd6443f3526f571728bf7">nb_surfaces</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-1a16c69f3cfdcbd6443f3526f571728bf7">nb_surfaces</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Surface.html#doxid-classgeode-1-1-surface"><span class="std std-ref">Surface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-1aa288abe2ab88fdc070cebb21eacd6724">surface</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_Surfaces_SurfaceRange.html#doxid-classgeode-1-1-surfaces-1-1-surface-range"><span class="std std-ref">SurfaceRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-1acc94b92e71932047d3c0ce2dfa74c550">surfaces</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-1a704b68639e9dd25bfb8df4bf857c4908">save_surfaces</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>

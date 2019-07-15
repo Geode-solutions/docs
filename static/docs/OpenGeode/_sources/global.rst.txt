@@ -10,6 +10,9 @@ Global Namespace
 	namespace_geode.rst
 	namespace_std.rst
 
+Overview
+~~~~~~~~
+
 
 
 
@@ -35,7 +38,6 @@ Global Namespace
 	#define :target:`ALIAS_3D<doxid-basic_2common_8h_1a11287681fe4b6c6538bc0c250960f095>`(Class)
 	#define :target:`BITSERY_OUTPUT_MESH<doxid-geode__bitsery__mesh__output_8h_1abc40be6ef0c2ced3f703c894b2def5e8>`(Mesh)
 	#define :target:`DEBUG<doxid-logger_8h_1a8a979668ecb044c9ac0e5017107f1d52>`(a)
-	#define :target:`ENABLE_BITMASK_OPERATORS<doxid-types_8h_1a9fee215a24fff55e43587dd0c2dc045f>`(Enum)
 	#define :target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-basic_2common_8h_1a0962b2dc2ca8f3e0c29d5dfa57e71c67>`(Class)
 	#define :target:`FORWARD_DECLARATION_DIMENSION_STRUCT<doxid-basic_2common_8h_1ad547625096e29b76318b989db41ffbcf>`(Struct)
 	#define :target:`IMPLEMENTATION_MEMBER<doxid-pimpl_8h_1a836288b4f8ac6ca94764f6bc984d0e8a>`(impl)
@@ -48,7 +50,7 @@ Global Namespace
 		message \
 		)
 
-	#define :target:`OPENGEODE_PLUGIN_INITIALIZE<doxid-plugin__manager_8h_1a0fc94a43073ceba70f8e98ab8fd3e69f>`(plugin_name)
+	#define :ref:`OPENGEODE_PLUGIN_INITIALIZE<doxid-plugin__manager_8h_1a0fc94a43073ceba70f8e98ab8fd3e69f>`(plugin_name)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_2D_OR_3D<doxid-basic_2common_8h_1a1fe9b7e669f40054b322ec0969b00812>`(type)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_3D<doxid-basic_2common_8h_1a37f476a50bc1a84e160210b7c02bf10c>`(type)
 
@@ -56,4 +58,24 @@ Global Namespace
 		EXPORT, \
 		TYPE \
 		)
+
+.. _details-global:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Macros
+------
+
+.. index:: pair: define; OPENGEODE_PLUGIN_INITIALIZE
+.. _doxid-plugin__manager_8h_1a0fc94a43073ceba70f8e98ab8fd3e69f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	#define OPENGEODE_PLUGIN_INITIALIZE(plugin_name)
+
+Use this macro to initialize an OpenGeode plugin and execute some functions at library loading.
 

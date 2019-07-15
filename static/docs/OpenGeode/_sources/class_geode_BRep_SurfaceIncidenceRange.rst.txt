@@ -13,6 +13,7 @@ class geode::BRep::SurfaceIncidenceRange
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <boundary_representation.h>
 	
 	class SurfaceIncidenceRange: public :ref:`geode::RelationshipManager::IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`
 	{

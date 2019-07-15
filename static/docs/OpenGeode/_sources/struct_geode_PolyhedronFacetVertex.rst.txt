@@ -13,13 +13,14 @@ struct geode::PolyhedronFacetVertex
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <polyhedral_solid.h>
 	
 	struct PolyhedronFacetVertex
 	{
 		// fields
 	
 		:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>` :target:`polyhedron_facet<doxid-structgeode_1_1_polyhedron_facet_vertex_1a77c0d5d9271c5ca307867f6096644e47>`;
-		index_t :target:`vertex_id<doxid-structgeode_1_1_polyhedron_facet_vertex_1a5bf0d5abb1ca905306fb62d3fe426656>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_id<doxid-structgeode_1_1_polyhedron_facet_vertex_1a5bf0d5abb1ca905306fb62d3fe426656>`;
 
 		// construction
 	
@@ -27,7 +28,7 @@ struct geode::PolyhedronFacetVertex
 	
 		:target:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex_1aeccc73c89afe2f788d2c3664581b8771>`(
 			:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>` facet,
-			index_t vertex_id
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
 			);
 
 		// methods

@@ -13,6 +13,7 @@ template class geode::TriangulatedSurfaceInput
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <triangulated_surface_input.h>
 	
 	template <index_t dimension>
 	class TriangulatedSurfaceInput: public :ref:`geode::PolygonalSurfaceInput<doxid-classgeode_1_1_polygonal_surface_input>`

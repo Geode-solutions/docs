@@ -7,12 +7,13 @@ struct geode::uuid
 .. toctree::
 	:hidden:
 
-
+128-bit basic UUID type that allows comparison and sorting.
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <uuid.h>
 	
 	struct uuid
 	{

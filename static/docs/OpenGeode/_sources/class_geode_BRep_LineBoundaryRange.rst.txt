@@ -13,6 +13,7 @@ class geode::BRep::LineBoundaryRange
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <boundary_representation.h>
 	
 	class LineBoundaryRange: public :ref:`geode::RelationshipManager::BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`
 	{

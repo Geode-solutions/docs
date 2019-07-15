@@ -16,7 +16,7 @@
     <script type="text/javascript" src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template struct geode::EnableBitMaskOperators" href="struct_geode_EnableBitMaskOperators.html" />
+    <link rel="next" title="struct geode::MeshComponentVertex" href="struct_geode_MeshComponentVertex.html" />
     <link rel="prev" title="struct geode::ComponentTag" href="struct_geode_ComponentTag.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -37,20 +37,22 @@
 <span id="doxid-structgeode-1-1-edge-vertex"></span><span id="index-0"></span><h1>struct geode::EdgeVertex</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">struct</span> <span class="n">EdgeVertex</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;graph.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">EdgeVertex</span>
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-vertex-1a4c65692bb29333ba1aa7b1da7848b40e">edge_id</span><span></span><span class="p">;</span>
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-vertex-1a210c793bba6da14cb0264c65b9597794">vertex_id</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-vertex-1a4c65692bb29333ba1aa7b1da7848b40e">edge_id</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-vertex-1a210c793bba6da14cb0264c65b9597794">vertex_id</span><span></span><span class="p">;</span>
 
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-vertex-1a9070623605e1d3b154a866fdc1673195">EdgeVertex</span><span></span><span class="p">();</span>
 
     <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-vertex-1a4027d759c0aa7190a2cbb4b693323c76">EdgeVertex</span><span></span><span class="p">(</span>
-        <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">vertex_id</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_id</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>

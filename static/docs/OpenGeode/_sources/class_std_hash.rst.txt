@@ -13,6 +13,7 @@ template class std::hash<geode::uuid>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <uuid.h>
 	
 	template <>
 	class hash<geode::uuid>

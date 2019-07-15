@@ -7,12 +7,13 @@ template class geode::SparseAttribute
 .. toctree::
 	:hidden:
 
-
+Read and write interface for sparse attribute storage. Only store what you use!
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <attribute.h>
 	
 	template <typename T>
 	class SparseAttribute: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`
@@ -20,8 +21,8 @@ template class geode::SparseAttribute
 	public:
 		// methods
 	
-		virtual const T& :target:`value<doxid-classgeode_1_1_sparse_attribute_1a413a8b15dbd1249fff7d3058d7c426d6>`(index_t element) const;
-		T& :target:`value<doxid-classgeode_1_1_sparse_attribute_1a9fdff5eb9497cd7fefa197f38726df66>`(index_t element);
+		virtual const T& :target:`value<doxid-classgeode_1_1_sparse_attribute_1a413a8b15dbd1249fff7d3058d7c426d6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
+		T& :target:`value<doxid-classgeode_1_1_sparse_attribute_1a9fdff5eb9497cd7fefa197f38726df66>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element);
 	};
 
 Inherited Members
@@ -33,6 +34,6 @@ Inherited Members
 	public:
 		// methods
 	
-		virtual const T& :ref:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(index_t element) const = 0;
+		virtual const T& :ref:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 		virtual std::string :ref:`type<doxid-classgeode_1_1_read_only_attribute_1a404613b1cdd0d15b0deed66baca23ab1>`();
 

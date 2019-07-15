@@ -7,9 +7,9 @@ class geode::OpenGeodeException
 .. toctree::
 	:hidden:
 
-OpenGeode exception class. Example: throw :ref:`OpenGeodeException <doxid-classgeode_1_1_open_geode_exception>` ( "Error while loading the GeoModel" );
+OpenGeode exception class. Example: throw :ref:`OpenGeodeException <doxid-classgeode_1_1_open_geode_exception>` ( "Error while loading the BRep" );
 
-try { ... } catch( const OpenGeodeException& e ) { Logger::critical( e.what() ); } catch( const std::exception& e ) { // Catch all others STL exceptions Logger::critical( e.what() ); }
+try { ... } catch( ... ) { return :ref:`geode_lippincott() <doxid-namespacegeode_1a0d6f934054bb20a7b43ff330dca7d363>`; }
 
 
 .. ref-code-block:: cpp

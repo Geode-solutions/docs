@@ -37,7 +37,7 @@
 <span id="doxid-classgeode-1-1-logger"></span><span id="index-0"></span><h1>class geode::Logger</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Implementation class of a logger</p>
+<p>Custom OpenGeode logger. Can be used with several levels: <a class="reference internal" href="#doxid-classgeode-1-1-logger-1ac380ea6432f41a821f5c7ba94c2a1170"><span class="std std-ref">Logger::info</span></a> ( “My information is “, 42 ); <a class="reference internal" href="#doxid-classgeode-1-1-logger-1aa415c4c557b67f0a9b987644d606ab6d"><span class="std std-ref">Logger::warn</span></a> ( “My warning is “, 42, ” or more” );</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;logger.h&gt;</span><span class="cp"></span>
 
 <span class="k">class</span> <span class="n">Logger</span>
@@ -49,7 +49,7 @@
 
     <span class="c1">// methods</span>
 
-    <span class="k">static</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-logger-1a41985cecb1e201ccef3ca3402623f92d">set_level</span><span></span><span class="p">(</span><span class="n">Level</span> <span class="n">level</span><span class="p">);</span>
+    <span class="k">static</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-logger-1a41985cecb1e201ccef3ca3402623f92d">set_level</span><span></span><span class="p">(</span><a class="reference internal" href="enum_geode_Logger_Level.html#doxid-classgeode-1-1-logger-1a9e0b4eaa3d1d9819fd2a58dbcf272f8d"><span class="std std-ref">Level</span></a><span></span> <span class="n">level</span><span class="p">);</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="o">&gt;</span>
     <span class="k">static</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-logger-1ac05a1cbda59f973b31be1c943655ac6c">trace</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span><span class="p">);</span>

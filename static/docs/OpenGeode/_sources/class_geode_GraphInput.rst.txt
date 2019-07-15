@@ -13,6 +13,7 @@ class geode::GraphInput
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <graph_input.h>
 	
 	class GraphInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`
 	{

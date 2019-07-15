@@ -37,7 +37,12 @@
 <span id="doxid-classgeode-1-1-bounding-box"></span><span id="index-0"></span><h1>template class geode::BoundingBox</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>Bounding box implemented for 2D and 3D points. <a class="reference internal" href="#details-classgeode-1-1-bounding-box"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;bounding_box.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="n">BoundingBox</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -51,16 +56,74 @@
 
     <span class="n">BoundingBox</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a62af8bd08c52ca2016915f1bf82ce817">operator =</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">);</span>
     <span class="n">BoundingBox</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a0fabc63a1a18e5ec431315e6ffabc87f">operator =</span><span></span> <span class="p">(</span><span class="n">BoundingBox</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1ad2e23377b88d730ec18711bff7ea9229">add_point</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1aa01ebddaebe0cb00ee4ce9af103910b1">add_box</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1ad2e23377b88d730ec18711bff7ea9229">add_point</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1abcbb35034e2afb57a7ffa0709c26696d">contains</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a1ab26b4a928e378a2aa74d5a28662b25">min</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a7a8a6e89ae1dfc3c4ccf76faa17ee565">max</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1ae6392363b653cab919587bdc001c7ce8">center</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1ac3088b09c2df451ba441e0cb92b30659">boxes_overlap</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a4e55460a59b991b3f2b3dfc58e63c52a">box_union</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">bool</span><span class="p">,</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1ac37523c65b4b542f49475949cbcb3779">box_intersection</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1abcbb35034e2afb57a7ffa0709c26696d">contains</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box-1ac3088b09c2df451ba441e0cb92b30659"><span class="std std-ref">boxes_overlap</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box-1a4e55460a59b991b3f2b3dfc58e63c52a"><span class="std std-ref">box_union</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">bool</span><span class="p">,</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box-1ac37523c65b4b542f49475949cbcb3779"><span class="std std-ref">box_intersection</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-bounding-box"></span><h2>Detailed Documentation</h2>
+<p>Bounding box implemented for 2D and 3D points.</p>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-bounding-box-1ac3088b09c2df451ba441e0cb92b30659"><span id="index-1"></span><span></span><span class="kt">bool</span> <span class="n">boxes_overlap</span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Check if another <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a> overlaps this one.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>box</p></td>
+<td><p>The other <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a> to test</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if there is an overlap</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-bounding-box-1a4e55460a59b991b3f2b3dfc58e63c52a"><span id="index-2"></span><span></span><span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">box_union</span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Compute the union with another <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a></p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>box</p></td>
+<td><p>The other <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a> to use</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>The <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a> representing the union of the two other boxes.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-bounding-box-1ac37523c65b4b542f49475949cbcb3779"><span id="index-3"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">bool</span><span class="p">,</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">box_intersection</span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Compute the intersection with another <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a></p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>box</p></td>
+<td><p>The other <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a> to use</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<ol class="arabic simple">
+<li><p>true is there is an intersection, 2) The <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a> representing the intersection of the two other boxes.</p></li>
+</ol>
+</div>
+</div>
 </div>
 
 

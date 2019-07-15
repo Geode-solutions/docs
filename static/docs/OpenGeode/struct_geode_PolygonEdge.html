@@ -37,20 +37,22 @@
 <span id="doxid-structgeode-1-1-polygon-edge"></span><span id="index-0"></span><h1>struct geode::PolygonEdge</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">struct</span> <span class="n">PolygonEdge</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;polygonal_surface.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">PolygonEdge</span>
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a89813d977355b1f203e3e0fdd73122c4">polygon_id</span><span></span><span class="p">;</span>
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a0143270c879039cc12e8b3870e9aa05e">edge_id</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a89813d977355b1f203e3e0fdd73122c4">polygon_id</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a0143270c879039cc12e8b3870e9aa05e">edge_id</span><span></span><span class="p">;</span>
 
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a55d0f0eb2c477561750d72b821ab6747">PolygonEdge</span><span></span><span class="p">();</span>
 
     <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1ab957c98b5be84d8ef4e2b672c198e6d0">PolygonEdge</span><span></span><span class="p">(</span>
-        <span class="n">index_t</span> <span class="n">polygon_id</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">edge_id</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon_id</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_id</span>
         <span class="p">);</span>
 
     <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a7810f60c7caf4ee1af13da161a2e3309">PolygonEdge</span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span> <span class="n">polygon_vertex</span><span class="p">);</span>

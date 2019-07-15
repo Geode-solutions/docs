@@ -13,15 +13,16 @@ class geode::OpenGeodeVertexSet
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <geode_vertex_set.h>
 	
 	class OpenGeodeVertexSet: public :ref:`geode::VertexSet<doxid-classgeode_1_1_vertex_set>`
 	{
 	public:
 		// methods
 	
-		static :ref:`MeshType<doxid-classgeode_1_1_named_type>` :target:`type_name_static<doxid-classgeode_1_1_open_geode_vertex_set_1a7490e40f875b6b40daa47807ef2c6286>`();
+		static :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :target:`type_name_static<doxid-classgeode_1_1_open_geode_vertex_set_1a7490e40f875b6b40daa47807ef2c6286>`();
 		static std::string :target:`native_extension_static<doxid-classgeode_1_1_open_geode_vertex_set_1ad295005ff5c7d39862673bbba433f60f>`();
-		virtual :ref:`MeshType<doxid-classgeode_1_1_named_type>` :target:`type_name<doxid-classgeode_1_1_open_geode_vertex_set_1a9f812a7f6886aaec38fbd7300c435efa>`() const;
+		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :target:`type_name<doxid-classgeode_1_1_open_geode_vertex_set_1a9f812a7f6886aaec38fbd7300c435efa>`() const;
 		virtual std::string :target:`native_extension<doxid-classgeode_1_1_open_geode_vertex_set_1ab177abc4450d9efe85abbbdf9f2223d3>`() const;
 	};
 
@@ -36,7 +37,7 @@ Inherited Members
 	
 		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
 		virtual std::string :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1a225c97c97fbb97dae48f33cd0d8c43f8>`() const = 0;
-		index_t :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a3a42d107eb25cb937844f7ab7034da90>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a3a42d107eb25cb937844f7ab7034da90>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aedbd294327746c3db692ae101cfd387d>`() const;
-		virtual :ref:`MeshType<doxid-classgeode_1_1_named_type>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
 

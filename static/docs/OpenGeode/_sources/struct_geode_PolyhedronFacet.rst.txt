@@ -13,21 +13,22 @@ struct geode::PolyhedronFacet
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <polyhedral_solid.h>
 	
 	struct PolyhedronFacet
 	{
 		// fields
 	
-		index_t :target:`polyhedron_id<doxid-structgeode_1_1_polyhedron_facet_1a85350733a7db6b1fce4aa1953cd1f1b1>`;
-		index_t :target:`facet_id<doxid-structgeode_1_1_polyhedron_facet_1acb9ee910462a8ceda3df5b8e93ab7dbc>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polyhedron_id<doxid-structgeode_1_1_polyhedron_facet_1a85350733a7db6b1fce4aa1953cd1f1b1>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`facet_id<doxid-structgeode_1_1_polyhedron_facet_1acb9ee910462a8ceda3df5b8e93ab7dbc>`;
 
 		// construction
 	
 		:target:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet_1ae0dcb4f2e9192a5bb1977d35a5d85d36>`();
 	
 		:target:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet_1a9300f30c5f84e02a80daf756ca7e1772>`(
-			index_t polyhedron_id,
-			index_t facet_id
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id
 			);
 
 		// methods

@@ -26,6 +26,13 @@ Description of a point in the given dimension with double coordinates
 
 		// methods
 	
+		double :target:`value<doxid-classgeode_1_1_point_1ae861186abf1cae06882980f59749c33c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
+	
+		void :target:`set_value<doxid-classgeode_1_1_point_1a6b2f04ebab4205dccc5494158ca7b673>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index,
+			double value
+			);
+	
 		bool :target:`operator ==<doxid-classgeode_1_1_point_1a86685d5fe9ae7139ab127d951360ebb1>` (const Point& other) const;
 		bool :target:`operator !=<doxid-classgeode_1_1_point_1a37ecb034aed5683869a792a7465d9ae6>` (const Point& other) const;
 		Point :target:`operator *<doxid-classgeode_1_1_point_1a16a0f22e2f77ab99cf77109e27e335d1>` (double multiplier) const;
@@ -37,13 +44,6 @@ Description of a point in the given dimension with double coordinates
 			const Point& other,
 			double epsilon
 			) const;
-	
-		double :target:`value<doxid-classgeode_1_1_point_1ae861186abf1cae06882980f59749c33c>`(index_t index) const;
-	
-		void :target:`set_value<doxid-classgeode_1_1_point_1a6b2f04ebab4205dccc5494158ca7b673>`(
-			index_t index,
-			double value
-			);
 	};
 
 	// direct descendants

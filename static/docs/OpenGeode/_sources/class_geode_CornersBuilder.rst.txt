@@ -7,12 +7,16 @@ template class geode::CornersBuilder
 .. toctree::
 	:hidden:
 
+Overview
+~~~~~~~~
+
 
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <corners_builder.h>
 	
 	template <index_t dimension>
 	class CornersBuilder
@@ -21,10 +25,42 @@ template class geode::CornersBuilder
 		// methods
 	
 		void :target:`load_corners<doxid-classgeode_1_1_corners_builder_1a4d67ce361e41375c36bc6cc1a90e4f2c>`(const std::string& directory);
-		std::unique_ptr<:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`<dimension>> :target:`corner_mesh_builder<doxid-classgeode_1_1_corners_builder_1a32bd13083857032419443b459ecc9693>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		std::unique_ptr<:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`<dimension>> :ref:`corner_mesh_builder<doxid-classgeode_1_1_corners_builder_1a32bd13083857032419443b459ecc9693>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 	};
 
 	// direct descendants
 
 	template <index_t dimension, template< index_t > class... EntityBuilderList>
 	class :ref:`GeoRepresentationBuilder<doxid-classgeode_1_1_geo_representation_builder>`;
+.. _details-classgeode_1_1_corners_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; corner_mesh_builder
+.. _doxid-classgeode_1_1_corners_builder_1a32bd13083857032419443b459ecc9693:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::unique_ptr<:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`<dimension>> corner_mesh_builder(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id)
+
+Get a pointer to the builder of a :ref:`Corner <doxid-classgeode_1_1_corner>` mesh
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- id
+
+		- Unique index of the :ref:`Corner <doxid-classgeode_1_1_corner>`
+

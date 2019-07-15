@@ -13,6 +13,7 @@ template class geode::TetrahedralSolidOutput
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <tetrahedral_solid_output.h>
 	
 	template <index_t dimension>
 	class TetrahedralSolidOutput: public :ref:`geode::PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`

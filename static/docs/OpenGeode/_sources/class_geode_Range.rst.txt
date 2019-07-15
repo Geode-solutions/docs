@@ -39,7 +39,7 @@ for( auto i : Range( n ) ) { // do something }
 	
 		const Range& :target:`begin<doxid-classgeode_1_1_range_1ac3fe43412bca4cbf8e4a441ad87b19cc>`() const;
 		const Range& :target:`end<doxid-classgeode_1_1_range_1a9021b819745fd7f5d558a07f86a27b83>`() const;
-		index_t :target:`operator *<doxid-classgeode_1_1_range_1a4d800d4b17a9fcbc76757a8d1c4a4a44>` () const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`operator *<doxid-classgeode_1_1_range_1a4d800d4b17a9fcbc76757a8d1c4a4a44>` () const;
 	};
 
 Inherited Members

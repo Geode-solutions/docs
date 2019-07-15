@@ -13,21 +13,22 @@ struct geode::PolygonVertex
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <polygonal_surface.h>
 	
 	struct PolygonVertex
 	{
 		// fields
 	
-		index_t :target:`polygon_id<doxid-structgeode_1_1_polygon_vertex_1adff99bd0472539eb2ba3cfed9102123a>`;
-		index_t :target:`vertex_id<doxid-structgeode_1_1_polygon_vertex_1a3b9665fe9730f9a5748372c79bbe2bfe>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polygon_id<doxid-structgeode_1_1_polygon_vertex_1adff99bd0472539eb2ba3cfed9102123a>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_id<doxid-structgeode_1_1_polygon_vertex_1a3b9665fe9730f9a5748372c79bbe2bfe>`;
 
 		// construction
 	
 		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1a4c57bf4d3c991bd883be0e4876740dbd>`();
 	
 		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1aa4ef0c113362dfc1c6a8eb511d670cf3>`(
-			index_t polygon_id,
-			index_t vertex_id
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
 			);
 	
 		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1a2b1150205a357e97387da76b8e4e142f>`(:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` polygon_edge);

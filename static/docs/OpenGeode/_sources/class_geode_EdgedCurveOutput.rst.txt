@@ -13,6 +13,7 @@ template class geode::EdgedCurveOutput
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <edged_curve_output.h>
 	
 	template <index_t dimension>
 	class EdgedCurveOutput: public :ref:`geode::GraphOutput<doxid-classgeode_1_1_graph_output>`

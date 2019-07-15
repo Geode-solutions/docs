@@ -37,7 +37,12 @@
 <span id="doxid-classgeode-1-1-n-n-search"></span><span id="index-0"></span><h1>template class geode::NNSearch</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>Given a list of points, this class returns neighboring points. <a class="reference internal" href="#details-classgeode-1-1-n-n-search"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;nn_search.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="n">NNSearch</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -51,22 +56,94 @@
 
     <span class="c1">// methods</span>
 
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1ae62b6cfe4106a0545c2f72ebaf6bca06">closest_neighbor</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1aaa981a586caffb12d3b5b1d6e731a90d">radius_neighbors</span><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
-        <span class="kt">double</span> <span class="n">threshold_distance</span>
-        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1ab2cb8ec4fbe94d5d6af2c5050dc98a2a">neighbors</span><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">nb_neighbors</span>
-        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-
-    <a class="reference internal" href="struct_geode_NNSearch_ColocatedInfo.html#doxid-structgeode-1-1-n-n-search-1-1-colocated-info"><span class="std std-ref">ColocatedInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a9d1fa7816763e219d274369d5b14627a">colocated_index_mapping</span><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">epsilon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1ac55f16a043f0effb326ce4f10a1c7509">point</span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a40e5fd84b8221c4b0c1583333ab5c460">nb_points</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1a40e5fd84b8221c4b0c1583333ab5c460">nb_points</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-n-n-search-1ac55f16a043f0effb326ce4f10a1c7509">point</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-n-n-search-1ae62b6cfe4106a0545c2f72ebaf6bca06"><span class="std std-ref">closest_neighbor</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-n-n-search-1aaa981a586caffb12d3b5b1d6e731a90d"><span class="std std-ref">radius_neighbors</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="kt">double</span> <span class="n">threshold_distance</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-n-n-search-1ab2cb8ec4fbe94d5d6af2c5050dc98a2a"><span class="std std-ref">neighbors</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_neighbors</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_NNSearch_ColocatedInfo.html#doxid-structgeode-1-1-n-n-search-1-1-colocated-info"><span class="std std-ref">ColocatedInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-n-n-search-1a9d1fa7816763e219d274369d5b14627a"><span class="std std-ref">colocated_index_mapping</span></a><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">epsilon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-n-n-search"></span><h2>Detailed Documentation</h2>
+<p>Given a list of points, this class returns neighboring points.</p>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-n-n-search-1ae62b6cfe4106a0545c2f72ebaf6bca06"><span id="index-1"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">closest_neighbor</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Get the closest neighbor from the given point</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>The requested point</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the index of the closest point</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-n-n-search-1aaa981a586caffb12d3b5b1d6e731a90d"><span id="index-2"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">radius_neighbors</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">threshold_distance</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Get the neighbors closer than a given distance from the given point or within a sphere</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>The center of the sphere</p></td>
+</tr>
+<tr class="row-even"><td><p>threshold_distance</p></td>
+<td><p>The radius of the sphere</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the list of points inside this distance</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-n-n-search-1ab2cb8ec4fbe94d5d6af2c5050dc98a2a"><span id="index-3"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">neighbors</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_neighbors</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Get a number ol close neighbors from the given point</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>The requested point</p></td>
+</tr>
+<tr class="row-even"><td><p>nb_neighbors</p></td>
+<td><p>The number of neighbors to return</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the list of points, it can be smaller than the requested number of neighbors if there is less neighbors than points in the tree</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-n-n-search-1a9d1fa7816763e219d274369d5b14627a"><span id="index-4"></span><a class="reference internal" href="struct_geode_NNSearch_ColocatedInfo.html#doxid-structgeode-1-1-n-n-search-1-1-colocated-info"><span class="std std-ref">ColocatedInfo</span></a><span></span> <span class="n">colocated_index_mapping</span><span class="p">(</span><span class="kt">double</span> <span class="n">epsilon</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Compute a colocation mapping from the list of points</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>epsilon</p></td>
+<td><p>The approximation allowed to test if two points are identical</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>The information related to this colocated operation</p>
+</div>
+</div>
 </div>
 
 

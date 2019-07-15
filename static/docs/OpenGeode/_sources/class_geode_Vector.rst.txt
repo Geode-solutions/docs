@@ -46,6 +46,8 @@ Inherited Members
 	public:
 		// methods
 	
+		double :ref:`value<doxid-classgeode_1_1_point_1ae861186abf1cae06882980f59749c33c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
+		void :ref:`set_value<doxid-classgeode_1_1_point_1a6b2f04ebab4205dccc5494158ca7b673>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index, double value);
 		bool :ref:`operator ==<doxid-classgeode_1_1_point_1a86685d5fe9ae7139ab127d951360ebb1>` (const :ref:`Point<doxid-classgeode_1_1_point>`& other) const;
 		bool :ref:`operator !=<doxid-classgeode_1_1_point_1a37ecb034aed5683869a792a7465d9ae6>` (const :ref:`Point<doxid-classgeode_1_1_point>`& other) const;
 		:ref:`Point<doxid-classgeode_1_1_point>` :ref:`operator *<doxid-classgeode_1_1_point_1a16a0f22e2f77ab99cf77109e27e335d1>` (double multiplier) const;
@@ -53,6 +55,4 @@ Inherited Members
 		:ref:`Point<doxid-classgeode_1_1_point>` :ref:`operator +<doxid-classgeode_1_1_point_1ad09d5c3797e072d775b9133d0b849548>` (const :ref:`Point<doxid-classgeode_1_1_point>`& other) const;
 		:ref:`Point<doxid-classgeode_1_1_point>` :ref:`operator -<doxid-classgeode_1_1_point_1a18113901e192ab14748ea6fd507fa3a5>` (const :ref:`Point<doxid-classgeode_1_1_point>`& other) const;
 		bool :ref:`inexact_equal<doxid-classgeode_1_1_point_1ae4ebf4615b3db3abef4a90cd7a310765>`(const :ref:`Point<doxid-classgeode_1_1_point>`& other, double epsilon) const;
-		double :ref:`value<doxid-classgeode_1_1_point_1ae861186abf1cae06882980f59749c33c>`(index_t index) const;
-		void :ref:`set_value<doxid-classgeode_1_1_point_1a6b2f04ebab4205dccc5494158ca7b673>`(index_t index, double value);
 

@@ -13,6 +13,7 @@ template class geode::PointSetInput
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <point_set_input.h>
 	
 	template <index_t dimension>
 	class PointSetInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`

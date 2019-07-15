@@ -37,7 +37,9 @@
 <span id="doxid-classgeode-1-1-lines"></span><span id="index-0"></span><h1>template class geode::Lines</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;lines.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="n">Lines</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -49,7 +51,7 @@
 
     <span class="c1">// methods</span>
 
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-lines-1a09e9c517e4b5e8e91dc7abcb9dc002ad">nb_lines</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-lines-1a09e9c517e4b5e8e91dc7abcb9dc002ad">nb_lines</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Line.html#doxid-classgeode-1-1-line"><span class="std std-ref">Line</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-lines-1a128794cc0b875bd17d462b6f52b1c083">line</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_Lines_LineRange.html#doxid-classgeode-1-1-lines-1-1-line-range"><span class="std std-ref">LineRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-lines-1ac85c4e344731cc0738566356a8e2102c">lines</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-lines-1ac5220fcf22064c8b0cc8675fcdc3a6c8">save_lines</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>

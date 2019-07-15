@@ -13,6 +13,7 @@ class geode::Lines::LineRange
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <lines.h>
 	
 	class LineRange: public :ref:`geode::Lines::LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`
 	{

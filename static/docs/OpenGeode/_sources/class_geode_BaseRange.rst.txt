@@ -7,12 +7,13 @@ template class geode::BaseRange
 .. toctree::
 	:hidden:
 
-
+Base class for range-based iteration on custom range. See derived classes for usage.
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <range.h>
 	
 	template <typename Type>
 	class BaseRange

@@ -13,6 +13,7 @@ template class geode::detail::MeshStorage
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <mesh_storage.h>
 	
 	template <typename Mesh>
 	class MeshStorage

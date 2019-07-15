@@ -9,7 +9,7 @@ class geode::Logger
 
 	enum_geode_Logger_Level.rst
 
-Implementation class of a logger
+Custom OpenGeode logger. Can be used with several levels: :ref:`Logger::info <doxid-classgeode_1_1_logger_1ac380ea6432f41a821f5c7ba94c2a1170>` ( "My information is ", 42 ); :ref:`Logger::warn <doxid-classgeode_1_1_logger_1aa415c4c557b67f0a9b987644d606ab6d>` ( "My warning is ", 42, " or more" );
 
 
 .. ref-code-block:: cpp
@@ -26,7 +26,7 @@ Implementation class of a logger
 
 		// methods
 	
-		static void :target:`set_level<doxid-classgeode_1_1_logger_1a41985cecb1e201ccef3ca3402623f92d>`(Level level);
+		static void :target:`set_level<doxid-classgeode_1_1_logger_1a41985cecb1e201ccef3ca3402623f92d>`(:ref:`Level<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8d>` level);
 	
 		template <typename... Args>
 		static void :target:`trace<doxid-classgeode_1_1_logger_1ac05a1cbda59f973b31be1c943655ac6c>`(const Args&... args);

@@ -7,12 +7,13 @@ template class geode::GeoRepresentationBuilder
 .. toctree::
 	:hidden:
 
-
+Class managing modification of :ref:`GeoRepresentation <doxid-classgeode_1_1_geo_representation>` It gives a modifiable access to the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>`
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <georepresentation_builder.h>
 	
 	template <index_t dimension, template< index_t > class... EntityBuilderList>
 	class GeoRepresentationBuilder: public EntityBuilderList< dimension >

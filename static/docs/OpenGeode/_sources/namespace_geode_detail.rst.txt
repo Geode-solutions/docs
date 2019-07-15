@@ -40,7 +40,7 @@ namespace geode::detail
 	// global functions
 
 	template <typename T>
-	index_t :target:`compress_vector<doxid-attribute_8h_1a8364e8962179e3b6abc978d57e6d2a48>`(
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`compress_vector<doxid-namespacegeode_1_1detail_1a8364e8962179e3b6abc978d57e6d2a48>`(
 		const std::vector<bool>& to_delete,
 		std::vector<T>& values
 		);

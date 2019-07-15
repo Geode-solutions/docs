@@ -13,6 +13,7 @@ class geode::OpenGeodeGraphOutput
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <geode_graph_output.h>
 	
 	class OpenGeodeGraphOutput: public :ref:`geode::GraphOutput<doxid-classgeode_1_1_graph_output>`
 	{

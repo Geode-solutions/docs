@@ -7,7 +7,7 @@ template class geode::VariableAttribute
 .. toctree::
 	:hidden:
 
-Read and write interface for variable attribute
+Read and write interface for variable attribute storage
 
 
 .. ref-code-block:: cpp
@@ -21,8 +21,8 @@ Read and write interface for variable attribute
 	public:
 		// methods
 	
-		virtual const T& :target:`value<doxid-classgeode_1_1_variable_attribute_1a12aee94b6cc66ff639ef3653d0a8ed44>`(index_t element) const;
-		T& :target:`value<doxid-classgeode_1_1_variable_attribute_1a7047dce35b5d123c03e116543c339bbd>`(index_t element);
+		virtual const T& :target:`value<doxid-classgeode_1_1_variable_attribute_1a12aee94b6cc66ff639ef3653d0a8ed44>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
+		T& :target:`value<doxid-classgeode_1_1_variable_attribute_1a7047dce35b5d123c03e116543c339bbd>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element);
 	};
 
 Inherited Members
@@ -34,6 +34,6 @@ Inherited Members
 	public:
 		// methods
 	
-		virtual const T& :ref:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(index_t element) const = 0;
+		virtual const T& :ref:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 		virtual std::string :ref:`type<doxid-classgeode_1_1_read_only_attribute_1a404613b1cdd0d15b0deed66baca23ab1>`();
 

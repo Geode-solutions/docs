@@ -7,12 +7,13 @@ class geode::Corners::CornerRange
 .. toctree::
 	:hidden:
 
-
+Class for range-based iteration on unmodifiable :ref:`Corners <doxid-classgeode_1_1_corners>`
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <corners.h>
 	
 	class CornerRange: public :ref:`geode::Corners::CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`
 	{

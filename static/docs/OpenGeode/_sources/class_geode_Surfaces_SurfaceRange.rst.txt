@@ -13,6 +13,7 @@ class geode::Surfaces::SurfaceRange
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <surfaces.h>
 	
 	class SurfaceRange: public :ref:`geode::Surfaces::SurfaceRangeBase<doxid-classgeode_1_1_surfaces_1_1_surface_range_base>`
 	{

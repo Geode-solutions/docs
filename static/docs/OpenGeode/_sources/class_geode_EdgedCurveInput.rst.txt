@@ -13,6 +13,7 @@ template class geode::EdgedCurveInput
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <edged_curve_input.h>
 	
 	template <index_t dimension>
 	class EdgedCurveInput: public :ref:`geode::GraphInput<doxid-classgeode_1_1_graph_input>`

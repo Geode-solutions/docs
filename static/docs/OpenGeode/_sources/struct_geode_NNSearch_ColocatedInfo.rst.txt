@@ -7,22 +7,46 @@ struct geode::NNSearch::ColocatedInfo
 .. toctree::
 	:hidden:
 
+Overview
+~~~~~~~~
+
 
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <nn_search.h>
 	
 	struct ColocatedInfo
 	{
 		// fields
 	
-		std::vector<index_t> :target:`colocated_mapping<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad691f2a50681a331119fcb95b99b2709>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`colocated_mapping<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad691f2a50681a331119fcb95b99b2709>`;
 		std::vector<:ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :target:`unique_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1adcff181d86aff052f378e4c9f111afce>`;
 
 		// methods
 	
-		index_t :target:`nb_unique_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a6ae0637001783653fb3cba451de9ef28>`() const;
-		index_t :target:`nb_colocated_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad4b7d866771505dcd0fce0077aaf1a3c>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_unique_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a6ae0637001783653fb3cba451de9ef28>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_colocated_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad4b7d866771505dcd0fce0077aaf1a3c>`() const;
 	};
+.. _details-structgeode_1_1_n_n_search_1_1_colocated_info:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; colocated_mapping
+.. _doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad691f2a50681a331119fcb95b99b2709:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> colocated_mapping
+
+This list has the size of the number of points in the tree. Each index is pointing to its new unique point stored in the unique_points vector.
+

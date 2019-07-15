@@ -16,14 +16,15 @@ Overview
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <vertex_set_builder.h>
 	
 	class VertexSetBuilder
 	{
 	public:
 		// methods
 	
-		index_t :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
-		index_t :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(index_t nb);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 		void :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c>`(const std::vector<bool>& to_delete);
 	};
 
@@ -56,7 +57,7 @@ Methods
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	index_t create_vertex()
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_vertex()
 
 Creates a new vertex.
 
@@ -72,7 +73,7 @@ the index of the created vertex
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	index_t create_vertices(index_t nb)
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb)
 
 Creates a contiguous chunk of vertices.
 
