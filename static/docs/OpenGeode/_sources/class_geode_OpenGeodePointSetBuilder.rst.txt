@@ -7,7 +7,7 @@ template class geode::OpenGeodePointSetBuilder
 .. toctree::
 	:hidden:
 
-
+Implementation class for :ref:`PointSetBuilder <doxid-classgeode_1_1_point_set_builder>` using OpenGeode data structure
 
 
 .. ref-code-block:: cpp

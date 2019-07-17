@@ -39,6 +39,7 @@
 </div>
 <div class="section" id="overview">
 <h2>Overview</h2>
+<p>Interface class to represent the builder of a <a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a> <a class="reference internal" href="#details-classgeode-1-1-point-set-builder"><span class="std std-ref">More…</span></a></p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;point_set_builder.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -47,7 +48,7 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSetBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-set-builder-1ab5c00c0739ace9a3125e0f1daf1e44ee">create</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSetBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-point-set-builder-1ab5c00c0739ace9a3125e0f1daf1e44ee"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-point-set-builder-1a2a8878a90d56a0f60984bdc131443a70"><span class="std std-ref">set_point</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-point-set-builder-1ada3e73058b784771e6e5c7b5480d9bde"><span class="std std-ref">create_point</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
 <span class="p">};</span>
@@ -68,10 +69,25 @@
 </div>
 <div class="section" id="detailed-documentation">
 <span id="details-classgeode-1-1-point-set-builder"></span><h2>Detailed Documentation</h2>
+<p>Interface class to represent the builder of a <a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a></p>
 <div class="section" id="methods">
 <h3>Methods</h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-point-set-builder-1a2a8878a90d56a0f60984bdc131443a70"><span id="index-1"></span><span></span><span class="kt">void</span> <span class="n">set_point</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
-<p>Sets a point.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-point-set-builder-1ab5c00c0739ace9a3125e0f1daf1e44ee"><span id="index-1"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSetBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">create</span><span class="p">(</span><a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">)</span></pre>
+<p>Create the builder associated with a <a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a>.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>The <a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a> to build/modify</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-point-set-builder-1a2a8878a90d56a0f60984bdc131443a70"><span id="index-2"></span><span></span><span class="kt">void</span> <span class="n">set_point</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Set coordinates to a vertex. This vertex should be created before.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -80,17 +96,15 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertex_id</p></td>
-<td><p>the vertex, in 0..  nb_vetices()-1.</p></td>
+<td><p>The vertex, in [0, nb_vertices()-1].</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>the vertex coordinates</p></td>
+<td><p>The vertex coordinates</p></td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Returns:</p>
-<p>reference to the point that corresponds to the vertex.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-point-set-builder-1ada3e73058b784771e6e5c7b5480d9bde"><span id="index-2"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_point</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
-<p>Creates a new vertex.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-point-set-builder-1ada3e73058b784771e6e5c7b5480d9bde"><span id="index-3"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_point</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Create a new point with associated coordinates.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -99,12 +113,12 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>point</p></td>
-<td><p>the point to create</p></td>
+<td><p>The point to create</p></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Returns:</p>
-<p>the index of the created vertex</p>
+<p>the index of the created point</p>
 </div>
 </div>
 </div>

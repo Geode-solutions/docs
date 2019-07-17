@@ -7,7 +7,7 @@ struct geode::PolygonVertex
 .. toctree::
 	:hidden:
 
-
+This struct represents a local vertex in a polygon
 
 
 .. ref-code-block:: cpp

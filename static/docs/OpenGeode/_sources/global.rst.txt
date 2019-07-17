@@ -50,7 +50,7 @@ Overview
 		message \
 		)
 
-	#define :ref:`OPENGEODE_PLUGIN_INITIALIZE<doxid-plugin__manager_8h_1a0fc94a43073ceba70f8e98ab8fd3e69f>`(plugin_name)
+	#define :ref:`OPENGEODE_LIBRARY_INITIALIZE<doxid-basic_2common_8h_1a0f3d08920a6e633fd2c203210bd5e9e8>`(library_name)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_2D_OR_3D<doxid-basic_2common_8h_1a1fe9b7e669f40054b322ec0969b00812>`(type)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_3D<doxid-basic_2common_8h_1a37f476a50bc1a84e160210b7c02bf10c>`(type)
 
@@ -69,13 +69,13 @@ Detailed Documentation
 Macros
 ------
 
-.. index:: pair: define; OPENGEODE_PLUGIN_INITIALIZE
-.. _doxid-plugin__manager_8h_1a0fc94a43073ceba70f8e98ab8fd3e69f:
+.. index:: pair: define; OPENGEODE_LIBRARY_INITIALIZE
+.. _doxid-basic_2common_8h_1a0f3d08920a6e633fd2c203210bd5e9e8:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	#define OPENGEODE_PLUGIN_INITIALIZE(plugin_name)
+	#define OPENGEODE_LIBRARY_INITIALIZE(library_name)
 
-Use this macro to initialize an OpenGeode plugin and execute some functions at library loading.
+Use this macro to initialize an OpenGeode library and execute some functions at library loading.
 

@@ -37,6 +37,9 @@
 <span id="doxid-classgeode-1-1-point-set"></span><span id="index-0"></span><h1>template class geode::PointSet</h1>
 <div class="toctree-wrapper compound">
 </div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>Interface class to represent a set of 2D or 3D points. <a class="reference internal" href="#details-classgeode-1-1-point-set"><span class="std std-ref">More…</span></a></p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;point_set.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -45,8 +48,8 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-set-1a07dc124248af6ca45f32bd1bc7dcfd73">create</span><span></span><span class="p">();</span>
-    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-set-1a5f73ef13481ddf946eea86bcc6553999">create</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">);</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-point-set-1a07dc124248af6ca45f32bd1bc7dcfd73"><span class="std std-ref">create</span></a><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-point-set-1a5f73ef13481ddf946eea86bcc6553999"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">);</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-set-1ac8343358ecffcabc084628ad951b7443">point</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span>
 
@@ -55,7 +58,7 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodePointSet.html#doxid-classgeode-1-1-open-geode-point-set"><span class="std std-ref">OpenGeodePointSet</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
-<h2>Inherited Members</h2>
+<h3>Inherited Members</h3>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
@@ -64,6 +67,30 @@
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1a3a42d107eb25cb937844f7ab7034da90"><span class="std std-ref">nb_vertices</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1aedbd294327746c3db692ae101cfd387d"><span class="std std-ref">vertex_attribute_manager</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1ae19dce429c1353a4616424fa9c1076e1"><span class="std std-ref">type_name</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
+</div>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-point-set"></span><h2>Detailed Documentation</h2>
+<p>Interface class to represent a set of 2D or 3D points. A point is a vertex associated to spatial coordinates</p>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-point-set-1a07dc124248af6ca45f32bd1bc7dcfd73"><span id="index-1"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">create</span><span class="p">()</span></pre>
+<p>Create a new <a class="reference internal" href="#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a> using default data structure.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-point-set-1a5f73ef13481ddf946eea86bcc6553999"><span id="index-2"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">create</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">)</span></pre>
+<p>Create a new <a class="reference internal" href="#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a> using a specified data structure.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>type</p></td>
+<td><p>Data structure type</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 

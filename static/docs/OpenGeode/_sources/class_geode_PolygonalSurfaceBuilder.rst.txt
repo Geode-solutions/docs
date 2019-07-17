@@ -7,7 +7,10 @@ template class geode::PolygonalSurfaceBuilder
 .. toctree::
 	:hidden:
 
+Overview
+~~~~~~~~
 
+Interface class to represent the builder of a :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>` :ref:`More...<details-classgeode_1_1_polygonal_surface_builder>`
 
 
 .. ref-code-block:: cpp
@@ -21,29 +24,15 @@ template class geode::PolygonalSurfaceBuilder
 	public:
 		// methods
 	
-		static std::unique_ptr<PolygonalSurfaceBuilder<dimension>> :target:`create<doxid-classgeode_1_1_polygonal_surface_builder_1aa877f758121e2aab2ed31477bb4e5a54>`(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& mesh);
-	
-		void :target:`set_point<doxid-classgeode_1_1_polygonal_surface_builder_1a664d0624465baaced2600e02800531a5>`(
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id,
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point
-			);
-	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`create_point<doxid-classgeode_1_1_polygonal_surface_builder_1a791ef3cf6547201245337b18bbdccb87>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`create_polygon<doxid-classgeode_1_1_polygonal_surface_builder_1a9d80d5c893dbcfdaa1cbd0ec99715281>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& vertices);
-	
-		void :target:`set_polygon_vertex<doxid-classgeode_1_1_polygonal_surface_builder_1a6b6192a1b7aa6f65c9fc631b18fb704b>`(
-			const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
-			);
-	
-		void :target:`set_polygon_adjacent<doxid-classgeode_1_1_polygonal_surface_builder_1a78c5c334ba4afeb4af32af1787c64dad>`(
-			const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` adjacent_id
-			);
-	
-		void :target:`compute_polygon_adjacencies<doxid-classgeode_1_1_polygonal_surface_builder_1a8665365e7b27d33811a05dce03628cc5>`();
-		void :target:`compute_polygon_adjacencies<doxid-classgeode_1_1_polygonal_surface_builder_1af90287faf0354e3986f17271a01587ea>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& polygons_to_connect);
-		void :target:`delete_polygons<doxid-classgeode_1_1_polygonal_surface_builder_1abb7255f836da15b17642495abb58fb3b>`(const std::vector<bool>& to_delete);
+		static std::unique_ptr<PolygonalSurfaceBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_polygonal_surface_builder_1aa877f758121e2aab2ed31477bb4e5a54>`(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& mesh);
+		void :ref:`set_point<doxid-classgeode_1_1_polygonal_surface_builder_1a664d0624465baaced2600e02800531a5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_polygonal_surface_builder_1a791ef3cf6547201245337b18bbdccb87>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_polygon<doxid-classgeode_1_1_polygonal_surface_builder_1a9d80d5c893dbcfdaa1cbd0ec99715281>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& vertices);
+		void :ref:`set_polygon_vertex<doxid-classgeode_1_1_polygonal_surface_builder_1a6b6192a1b7aa6f65c9fc631b18fb704b>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		void :ref:`set_polygon_adjacent<doxid-classgeode_1_1_polygonal_surface_builder_1a78c5c334ba4afeb4af32af1787c64dad>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` adjacent_id);
+		void :ref:`compute_polygon_adjacencies<doxid-classgeode_1_1_polygonal_surface_builder_1a8665365e7b27d33811a05dce03628cc5>`();
+		void :ref:`compute_polygon_adjacencies<doxid-classgeode_1_1_polygonal_surface_builder_1af90287faf0354e3986f17271a01587ea>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& polygons_to_connect);
+		void :ref:`delete_polygons<doxid-classgeode_1_1_polygonal_surface_builder_1abb7255f836da15b17642495abb58fb3b>`(const std::vector<bool>& to_delete);
 	};
 
 	// direct descendants
@@ -66,4 +55,227 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 		void :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c>`(const std::vector<bool>& to_delete);
+
+.. _details-classgeode_1_1_polygonal_surface_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Interface class to represent the builder of a :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>`
+
+Methods
+-------
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1aa877f758121e2aab2ed31477bb4e5a54:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static std::unique_ptr<PolygonalSurfaceBuilder<dimension>> create(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& mesh)
+
+Create the builder associated with a :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>`.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- The :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>` to build/modify
+
+.. index:: pair: function; set_point
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1a664d0624465baaced2600e02800531a5:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+
+Set coordinates to a vertex. This vertex should be created before.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertex_id
+
+		- The vertex, in [0, nb_vertices()-1].
+
+	*
+		- point
+
+		- The vertex coordinates
+
+.. index:: pair: function; create_point
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1a791ef3cf6547201245337b18bbdccb87:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_point(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+
+Create a new point with associated coordinates.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- The point to create
+
+
+
+.. rubric:: Returns:
+
+the index of the created point
+
+.. index:: pair: function; create_polygon
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1a9d80d5c893dbcfdaa1cbd0ec99715281:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_polygon(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& vertices)
+
+Create a new polygon from vertices.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertices
+
+		- The ordered vertices defining the polygon to create
+
+
+
+.. rubric:: Returns:
+
+the index of the created polygon
+
+.. index:: pair: function; set_polygon_vertex
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1a6b6192a1b7aa6f65c9fc631b18fb704b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void set_polygon_vertex(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id)
+
+Modify a polygon vertex.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polygon_vertex
+
+		- The index of the polygon vertex to modify
+
+	*
+		- vertex_id
+
+		- Index of the mesh vertex to set as polygon vertex
+
+.. index:: pair: function; set_polygon_adjacent
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1a78c5c334ba4afeb4af32af1787c64dad:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void set_polygon_adjacent(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` adjacent_id)
+
+Set a polygon adjacent through an edge.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polygon_edge
+
+		- The index of the polygon edge
+
+	*
+		- adjacent_id
+
+		- Index of the adjacent polygon
+
+.. index:: pair: function; compute_polygon_adjacencies
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1a8665365e7b27d33811a05dce03628cc5:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void compute_polygon_adjacencies()
+
+Compute all the adjacencies between the surface polygons
+
+.. index:: pair: function; compute_polygon_adjacencies
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1af90287faf0354e3986f17271a01587ea:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void compute_polygon_adjacencies(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& polygons_to_connect)
+
+Compute the adjacencies between the given surface polygons
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polygons_to_connect
+
+		- Set of polygons for which compute adjacencies
+
+.. index:: pair: function; delete_polygons
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1abb7255f836da15b17642495abb58fb3b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void delete_polygons(const std::vector<bool>& to_delete)
+
+Delete a set of surface polygons
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- to_delete
+
+		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size polygonal_surface_.nb_polygons(). If to_delete[i] is true the polygon of index i is deleted, else it is kept.
 

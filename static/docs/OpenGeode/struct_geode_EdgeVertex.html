@@ -37,14 +37,17 @@
 <span id="doxid-structgeode-1-1-edge-vertex"></span><span id="index-0"></span><h1>struct geode::EdgeVertex</h1>
 <div class="toctree-wrapper compound">
 </div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>This struct represents a graph edge endpoint <a class="reference internal" href="#details-structgeode-1-1-edge-vertex"><span class="std std-ref">More…</span></a></p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;graph.h&gt;</span><span class="cp"></span>
 
 <span class="k">struct</span> <span class="n">EdgeVertex</span>
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-vertex-1a4c65692bb29333ba1aa7b1da7848b40e">edge_id</span><span></span><span class="p">;</span>
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-vertex-1a210c793bba6da14cb0264c65b9597794">vertex_id</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-structgeode-1-1-edge-vertex-1a4c65692bb29333ba1aa7b1da7848b40e"><span class="std std-ref">edge_id</span></a><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-structgeode-1-1-edge-vertex-1a210c793bba6da14cb0264c65b9597794"><span class="std std-ref">vertex_id</span></a><span></span><span class="p">;</span>
 
     <span class="c1">// construction</span>
 
@@ -63,6 +66,18 @@
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Archive</span><span class="o">&gt;</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-vertex-1abe11699079e85d7e3a821897fd2e2fc2">serialize</span><span></span><span class="p">(</span><span class="n">Archive</span><span class="o">&amp;</span> <span class="n">archive</span><span class="p">);</span>
 <span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-structgeode-1-1-edge-vertex"></span><h2>Detailed Documentation</h2>
+<p>This struct represents a graph edge endpoint</p>
+<div class="section" id="fields">
+<h3>Fields</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-structgeode-1-1-edge-vertex-1a4c65692bb29333ba1aa7b1da7848b40e"><span id="index-1"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_id</span></pre>
+<p>Index of the edge</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-structgeode-1-1-edge-vertex-1a210c793bba6da14cb0264c65b9597794"><span id="index-2"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span></pre>
+<p>Identification of the edge endpoint (0 or 1)</p>
+</div>
+</div>
 </div>
 
 

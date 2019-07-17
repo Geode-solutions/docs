@@ -7,7 +7,7 @@ struct geode::PolyhedronFacet
 .. toctree::
 	:hidden:
 
-
+This struct represents a facet in a polyhedron
 
 
 .. ref-code-block:: cpp

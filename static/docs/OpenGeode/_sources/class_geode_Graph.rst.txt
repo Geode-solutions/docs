@@ -7,7 +7,10 @@ class geode::Graph
 .. toctree::
 	:hidden:
 
+Overview
+~~~~~~~~
 
+Interface class to represent a :ref:`Graph <doxid-classgeode_1_1_graph>`. :ref:`More...<details-classgeode_1_1_graph>`
 
 
 .. ref-code-block:: cpp
@@ -20,12 +23,12 @@ class geode::Graph
 	public:
 		// methods
 	
-		static std::unique_ptr<Graph> :target:`create<doxid-classgeode_1_1_graph_1a705c0e3c8069e5d3a841a74debaa22bb>`();
-		static std::unique_ptr<Graph> :target:`create<doxid-classgeode_1_1_graph_1a85cecebfebb0e4a0c1ca7032d108c352>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`edge_vertex<doxid-classgeode_1_1_graph_1a2ab4fef836487a91e6fa3e4b9253c9c9>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
+		static std::unique_ptr<Graph> :ref:`create<doxid-classgeode_1_1_graph_1a705c0e3c8069e5d3a841a74debaa22bb>`();
+		static std::unique_ptr<Graph> :ref:`create<doxid-classgeode_1_1_graph_1a85cecebfebb0e4a0c1ca7032d108c352>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_vertex<doxid-classgeode_1_1_graph_1a2ab4fef836487a91e6fa3e4b9253c9c9>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_edges<doxid-classgeode_1_1_graph_1a5c8751693701bce0fcd4f7d4d434b62a>`() const;
-		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`edge_attribute_manager<doxid-classgeode_1_1_graph_1a1bd49171f530720d27c0e649efd2abc7>`() const;
-		const std::vector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`>& :target:`edges_around_vertex<doxid-classgeode_1_1_graph_1a3c4bc28bf62f29446cf43c46d609e3be>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_graph_1a1bd49171f530720d27c0e649efd2abc7>`() const;
+		const std::vector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`>& :ref:`edges_around_vertex<doxid-classgeode_1_1_graph_1a3c4bc28bf62f29446cf43c46d609e3be>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	};
 
 	// direct descendants
@@ -49,4 +52,100 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a3a42d107eb25cb937844f7ab7034da90>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aedbd294327746c3db692ae101cfd387d>`() const;
 		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+
+.. _details-classgeode_1_1_graph:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Interface class to represent a :ref:`Graph <doxid-classgeode_1_1_graph>`. A graph is a set of vertices linked by edges
+
+Methods
+-------
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_graph_1a705c0e3c8069e5d3a841a74debaa22bb:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static std::unique_ptr<Graph> create()
+
+Create a new :ref:`Graph <doxid-classgeode_1_1_graph>` using default data structure.
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_graph_1a85cecebfebb0e4a0c1ca7032d108c352:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static std::unique_ptr<Graph> create(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type)
+
+Create a new :ref:`Graph <doxid-classgeode_1_1_graph>` using a specified data structure.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- type
+
+		- Data structure type
+
+.. index:: pair: function; edge_vertex
+.. _doxid-classgeode_1_1_graph_1a2ab4fef836487a91e6fa3e4b9253c9c9:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_vertex(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const
+
+Return the vertex index corresponding to an edge endpoint
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_vertex
+
+		- Edge endpoint
+
+.. index:: pair: function; edge_attribute_manager
+.. _doxid-classgeode_1_1_graph_1a1bd49171f530720d27c0e649efd2abc7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& edge_attribute_manager() const
+
+Access to the manager of attributes associated with edges.
+
+.. index:: pair: function; edges_around_vertex
+.. _doxid-classgeode_1_1_graph_1a3c4bc28bf62f29446cf43c46d609e3be:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	const std::vector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`>& edges_around_vertex(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
+
+Get all edge endpoints corresponding to a given vertex
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertex_id
+
+		- Index of the vertex
 

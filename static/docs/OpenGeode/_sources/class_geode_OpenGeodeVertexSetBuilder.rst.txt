@@ -7,7 +7,7 @@ class geode::OpenGeodeVertexSetBuilder
 .. toctree::
 	:hidden:
 
-
+Implementation class for :ref:`VertexSetBuilder <doxid-classgeode_1_1_vertex_set_builder>` using OpenGeode data structure
 
 
 .. ref-code-block:: cpp

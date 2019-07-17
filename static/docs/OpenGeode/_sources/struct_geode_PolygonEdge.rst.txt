@@ -7,7 +7,7 @@ struct geode::PolygonEdge
 .. toctree::
 	:hidden:
 
-
+This struct represents an edge in a polygon
 
 
 .. ref-code-block:: cpp

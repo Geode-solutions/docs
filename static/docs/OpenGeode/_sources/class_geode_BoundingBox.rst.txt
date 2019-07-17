@@ -134,5 +134,5 @@ Compute the intersection with another :ref:`BoundingBox <doxid-classgeode_1_1_bo
 
 .. rubric:: Returns:
 
-1) true is there is an intersection, 2) The :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` representing the intersection of the two other boxes.
+1) true if there is an intersection, 2) The :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` representing the intersection of the two other boxes.
 

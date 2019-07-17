@@ -153,7 +153,7 @@ Overview
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>`<dimension>, :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>&> :target:`TriangulatedSurfaceBuilderFactory<doxid-namespacegeode_1a80b028f21cb596526addf288321e0547>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>> :target:`EdgedCurveFactory<doxid-namespacegeode_1a6e729fb538f8c05b99d8d735a3306505>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`Graph<doxid-classgeode_1_1_graph>`> :target:`GraphFactory<doxid-namespacegeode_1a764564d286e4ea1b2277264d0b3e059d>`;
-	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshTag<doxid-structgeode_1_1_mesh_tag>`> :target:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`;
+	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshTag<doxid-structgeode_1_1_mesh_tag>`> :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> :target:`PointSetFactory<doxid-namespacegeode_1a2924cf9afc812feb79b5b840ddd1eea3>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>> :target:`PolygonalSurfaceFactory<doxid-namespacegeode_1abb3c86945c13f3b2cfefb0f9cced860f>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>> :target:`PolyhedralSolidFactory<doxid-namespacegeode_1a04048659b2ae3019ab7fbc80799cd078>`;
@@ -539,8 +539,8 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a5f77df444726f93a1df8e868ba125aa3>`(:ref:`TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7a7f219f0e7b67edcd9bf670e3e1c7c0>`(:ref:`TriangulatedSurfaceBuilderFactory<doxid-namespacegeode_1a80b028f21cb596526addf288321e0547>`);
-	void opengeode_mesh_api :target:`register_mesh_serialize_pcontext<doxid-namespacegeode_1aa05925dcfcae1d0f42d06f0f9a8dfb8a>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
-	void opengeode_mesh_api :target:`register_mesh_deserialize_pcontext<doxid-namespacegeode_1ad554073e01b714099ca0e253bdeee8e3>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
+	void opengeode_mesh_api :ref:`register_mesh_serialize_pcontext<doxid-namespacegeode_1aa05925dcfcae1d0f42d06f0f9a8dfb8a>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
+	void opengeode_mesh_api :ref:`register_mesh_deserialize_pcontext<doxid-namespacegeode_1ad554073e01b714099ca0e253bdeee8e3>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_mesh_api :target:`register_geode_mesh<doxid-namespacegeode_1adce51211caa99c2211735c26faf6323e>`();
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a80ee0d83f9eb471e3d0a3066c343cb42>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a979a4e06b735dd351265ad6c92b93227>`(:ref:`EdgedCurveFactory<doxid-namespacegeode_1a6e729fb538f8c05b99d8d735a3306505>`);
@@ -584,7 +584,7 @@ Overview
 	void opengeode_mesh_api :target:`register_geode_mesh_output<doxid-namespacegeode_1a073be32b66edf4bb62cf111b7833b67c>`();
 
 	template <index_t dimension>
-	void :target:`load_edged_curve<doxid-namespacegeode_1aed49e97c7a6e2a742e8f7a1df45861b7>`(
+	void :ref:`load_edged_curve<doxid-namespacegeode_1aed49e97c7a6e2a742e8f7a1df45861b7>`(
 		:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve,
 		const std::string& filename
 		);
@@ -592,49 +592,41 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a94018066b3cdeb1ed0fac77be9069602>`(:ref:`EdgedCurveInputFactory<doxid-namespacegeode_1a18810bd4ba8912d11c08a059a0830565>`);
 
 	template <index_t dimension>
-	void :target:`save_edged_curve<doxid-namespacegeode_1a55760718e47a86303ab0d0595c274115>`(
+	void :ref:`save_edged_curve<doxid-namespacegeode_1a55760718e47a86303ab0d0595c274115>`(
 		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve,
 		const std::string& filename
 		);
 
-	void opengeode_mesh_api :target:`load_graph<doxid-namespacegeode_1a747e5adbb1885dae4c00206117169e4c>`(
-		:ref:`Graph<doxid-classgeode_1_1_graph>`& graph,
-		const std::string& filename
-		);
-
-	void opengeode_mesh_api :target:`save_graph<doxid-namespacegeode_1a9e74f4165979a73a9ade2ad823a44541>`(
-		const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph,
-		const std::string& filename
-		);
-
+	void opengeode_mesh_api :ref:`load_graph<doxid-namespacegeode_1a747e5adbb1885dae4c00206117169e4c>`(:ref:`Graph<doxid-classgeode_1_1_graph>`& graph, const std::string& filename);
+	void opengeode_mesh_api :ref:`save_graph<doxid-namespacegeode_1a9e74f4165979a73a9ade2ad823a44541>`(const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph, const std::string& filename);
 	std::string opengeode_mesh_api :target:`extension_from_filename<doxid-namespacegeode_1aee681992f98038a1192d5488cf91893a>`(const std::string& filename);
 
 	template <index_t dimension>
-	void :target:`load_point_set<doxid-namespacegeode_1a3f80100562d9f13ab52ba1826cf39b95>`(
+	void :ref:`load_point_set<doxid-namespacegeode_1a3f80100562d9f13ab52ba1826cf39b95>`(
 		:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set,
 		const std::string& filename
 		);
 
 	template <index_t dimension>
-	void :target:`save_point_set<doxid-namespacegeode_1abc30c1fa0cc157b978fcc3b968f03b98>`(
+	void :ref:`save_point_set<doxid-namespacegeode_1abc30c1fa0cc157b978fcc3b968f03b98>`(
 		const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set,
 		const std::string& filename
 		);
 
 	template <index_t dimension>
-	void :target:`load_polygonal_surface<doxid-namespacegeode_1ab632fc0540f9fdcd1b345ff4dbb2e358>`(
+	void :ref:`load_polygonal_surface<doxid-namespacegeode_1ab632fc0540f9fdcd1b345ff4dbb2e358>`(
 		:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& polygonal_surface,
 		const std::string& filename
 		);
 
 	template <index_t dimension>
-	void :target:`save_polygonal_surface<doxid-namespacegeode_1a5510613e6eadc28f25b848aae45c999d>`(
+	void :ref:`save_polygonal_surface<doxid-namespacegeode_1a5510613e6eadc28f25b848aae45c999d>`(
 		const :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& polygonal_surface,
 		const std::string& filename
 		);
 
 	template <index_t dimension>
-	void :target:`load_polyhedral_solid<doxid-namespacegeode_1aa15047803f9e281cb8ebfd534ab25c32>`(
+	void :ref:`load_polyhedral_solid<doxid-namespacegeode_1aa15047803f9e281cb8ebfd534ab25c32>`(
 		:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid,
 		const std::string& filename
 		);
@@ -642,31 +634,31 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a16c64147551fea5c5e199f0fb18b78d1>`(:ref:`PolyhedralSolidInputFactory<doxid-namespacegeode_1a8e5d89b7b4a7d812a3653b44515fe0a1>`);
 
 	template <index_t dimension>
-	void :target:`save_polyhedral_solid<doxid-namespacegeode_1a12703363f28126fc21c3b00b78bbd2a8>`(
+	void :ref:`save_polyhedral_solid<doxid-namespacegeode_1a12703363f28126fc21c3b00b78bbd2a8>`(
 		const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid,
 		const std::string& filename
 		);
 
 	template <index_t dimension>
-	void :target:`load_tetrahedral_solid<doxid-namespacegeode_1a92714435e7ed27e64f05c4bdd737fd86>`(
+	void :ref:`load_tetrahedral_solid<doxid-namespacegeode_1a92714435e7ed27e64f05c4bdd737fd86>`(
 		:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& tetrahedral_solid,
 		const std::string& filename
 		);
 
 	template <index_t dimension>
-	void :target:`save_tetrahedral_solid<doxid-namespacegeode_1a847361571f35f96b558b4e40fd78fcce>`(
+	void :ref:`save_tetrahedral_solid<doxid-namespacegeode_1a847361571f35f96b558b4e40fd78fcce>`(
 		const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& tetrahedral_solid,
 		const std::string& filename
 		);
 
 	template <index_t dimension>
-	void :target:`load_triangulated_surface<doxid-namespacegeode_1add998e01641585054e7cefa98c0b2a68>`(
+	void :ref:`load_triangulated_surface<doxid-namespacegeode_1add998e01641585054e7cefa98c0b2a68>`(
 		:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& triangulated_surface,
 		const std::string& filename
 		);
 
 	template <index_t dimension>
-	void :target:`save_triangulated_surface<doxid-namespacegeode_1a42fd57010ad0159b2c7831b6a2543762>`(
+	void :ref:`save_triangulated_surface<doxid-namespacegeode_1a42fd57010ad0159b2c7831b6a2543762>`(
 		const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& triangulated_surface,
 		const std::string& filename
 		);
@@ -678,6 +670,19 @@ Detailed Documentation
 ~~~~~~~~~~~~~~~~~~~~~~
 
 
+
+Typedefs
+--------
+
+.. index:: pair: typedef; MeshType
+.. _doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshTag<doxid-structgeode_1_1_mesh_tag>`> MeshType
+
+Strong type for a mesh data structure
 
 Global Variables
 ----------------
@@ -852,4 +857,474 @@ API function for saving a BoundaryRepresentation. The adequate saver is called d
 		- filename
 
 		- Path to the file where save the model.
+
+.. index:: pair: function; register_mesh_serialize_pcontext
+.. _doxid-namespacegeode_1aa05925dcfcae1d0f42d06f0f9a8dfb8a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_mesh_api register_mesh_serialize_pcontext(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context)
+
+Register all the information needed by Bitsery to serialize the objects in the mesh library. The context can be used only once per archive.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- context
+
+		- The context where to register this information.
+
+.. index:: pair: function; register_mesh_deserialize_pcontext
+.. _doxid-namespacegeode_1ad554073e01b714099ca0e253bdeee8e3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_mesh_api register_mesh_deserialize_pcontext(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context)
+
+Register all the information needed by Bitsery to deserialize the objects in the mesh library. The context can be used only once per archive.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- context
+
+		- The context where to register this information.
+
+.. index:: pair: function; load_edged_curve
+.. _doxid-namespacegeode_1aed49e97c7a6e2a742e8f7a1df45861b7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void load_edged_curve(
+		:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve,
+		const std::string& filename
+		)
+
+API function for loading an :ref:`EdgedCurve <doxid-classgeode_1_1_edged_curve>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edged_curve
+
+		- Loaded :ref:`EdgedCurve <doxid-classgeode_1_1_edged_curve>`.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_edged_curve
+.. _doxid-namespacegeode_1a55760718e47a86303ab0d0595c274115:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void save_edged_curve(
+		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve,
+		const std::string& filename
+		)
+
+API function for saving a :ref:`EdgedCurve <doxid-classgeode_1_1_edged_curve>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edged_curve
+
+		- :ref:`EdgedCurve <doxid-classgeode_1_1_edged_curve>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`EdgedCurve <doxid-classgeode_1_1_edged_curve>`.
+
+.. index:: pair: function; load_graph
+.. _doxid-namespacegeode_1a747e5adbb1885dae4c00206117169e4c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_mesh_api load_graph(:ref:`Graph<doxid-classgeode_1_1_graph>`& graph, const std::string& filename)
+
+API function for loading an :ref:`Graph <doxid-classgeode_1_1_graph>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- graph
+
+		- Loaded :ref:`Graph <doxid-classgeode_1_1_graph>`.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_graph
+.. _doxid-namespacegeode_1a9e74f4165979a73a9ade2ad823a44541:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_mesh_api save_graph(const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph, const std::string& filename)
+
+API function for saving a :ref:`Graph <doxid-classgeode_1_1_graph>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- graph
+
+		- :ref:`Graph <doxid-classgeode_1_1_graph>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`Graph <doxid-classgeode_1_1_graph>`.
+
+.. index:: pair: function; load_point_set
+.. _doxid-namespacegeode_1a3f80100562d9f13ab52ba1826cf39b95:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void load_point_set(
+		:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set,
+		const std::string& filename
+		)
+
+API function for loading an :ref:`PointSet <doxid-classgeode_1_1_point_set>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point_set
+
+		- Loaded :ref:`PointSet <doxid-classgeode_1_1_point_set>`.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_point_set
+.. _doxid-namespacegeode_1abc30c1fa0cc157b978fcc3b968f03b98:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void save_point_set(
+		const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set,
+		const std::string& filename
+		)
+
+API function for saving a :ref:`PointSet <doxid-classgeode_1_1_point_set>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point_set
+
+		- :ref:`PointSet <doxid-classgeode_1_1_point_set>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`PointSet <doxid-classgeode_1_1_point_set>`.
+
+.. index:: pair: function; load_polygonal_surface
+.. _doxid-namespacegeode_1ab632fc0540f9fdcd1b345ff4dbb2e358:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void load_polygonal_surface(
+		:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& polygonal_surface,
+		const std::string& filename
+		)
+
+API function for loading an :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polygonal_surface
+
+		- Loaded :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>`.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_polygonal_surface
+.. _doxid-namespacegeode_1a5510613e6eadc28f25b848aae45c999d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void save_polygonal_surface(
+		const :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& polygonal_surface,
+		const std::string& filename
+		)
+
+API function for saving a :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>`. The adequate saver is called depending on the given filename extension. const PolygonalSurface< dimension >& polygonal_surface,
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edged_curve
+
+		- :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>`.
+
+.. index:: pair: function; load_polyhedral_solid
+.. _doxid-namespacegeode_1aa15047803f9e281cb8ebfd534ab25c32:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void load_polyhedral_solid(
+		:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid,
+		const std::string& filename
+		)
+
+API function for loading an :ref:`PolyhedralSolid <doxid-classgeode_1_1_polyhedral_solid>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polyhedral_solid
+
+		- Loaded :ref:`PolyhedralSolid <doxid-classgeode_1_1_polyhedral_solid>`.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_polyhedral_solid
+.. _doxid-namespacegeode_1a12703363f28126fc21c3b00b78bbd2a8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void save_polyhedral_solid(
+		const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid,
+		const std::string& filename
+		)
+
+API function for saving a :ref:`PolyhedralSolid <doxid-classgeode_1_1_polyhedral_solid>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polyhedral_solid
+
+		- :ref:`PolyhedralSolid <doxid-classgeode_1_1_polyhedral_solid>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`PolyhedralSolid <doxid-classgeode_1_1_polyhedral_solid>`.
+
+.. index:: pair: function; load_tetrahedral_solid
+.. _doxid-namespacegeode_1a92714435e7ed27e64f05c4bdd737fd86:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void load_tetrahedral_solid(
+		:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& tetrahedral_solid,
+		const std::string& filename
+		)
+
+API function for loading an :ref:`TetrahedralSolid <doxid-classgeode_1_1_tetrahedral_solid>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- tetrahedral_solid
+
+		- Loaded :ref:`TetrahedralSolid <doxid-classgeode_1_1_tetrahedral_solid>`.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_tetrahedral_solid
+.. _doxid-namespacegeode_1a847361571f35f96b558b4e40fd78fcce:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void save_tetrahedral_solid(
+		const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& tetrahedral_solid,
+		const std::string& filename
+		)
+
+API function for saving a :ref:`TetrahedralSolid <doxid-classgeode_1_1_tetrahedral_solid>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- tetrahedral_solid
+
+		- :ref:`TetrahedralSolid <doxid-classgeode_1_1_tetrahedral_solid>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`TetrahedralSolid <doxid-classgeode_1_1_tetrahedral_solid>`.
+
+.. index:: pair: function; load_triangulated_surface
+.. _doxid-namespacegeode_1add998e01641585054e7cefa98c0b2a68:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void load_triangulated_surface(
+		:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& triangulated_surface,
+		const std::string& filename
+		)
+
+API function for loading an :ref:`TriangulatedSurface <doxid-classgeode_1_1_triangulated_surface>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- triangulated_surface
+
+		- Loaded :ref:`TriangulatedSurface <doxid-classgeode_1_1_triangulated_surface>`.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_triangulated_surface
+.. _doxid-namespacegeode_1a42fd57010ad0159b2c7831b6a2543762:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void save_triangulated_surface(
+		const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& triangulated_surface,
+		const std::string& filename
+		)
+
+API function for saving a :ref:`TriangulatedSurface <doxid-classgeode_1_1_triangulated_surface>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- triangulated_surface
+
+		- :ref:`TriangulatedSurface <doxid-classgeode_1_1_triangulated_surface>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`TriangulatedSurface <doxid-classgeode_1_1_triangulated_surface>`.
 
