@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>How to compile OpenGeode &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to create your own OpenGeode module" href="page_opengeode_how_to_create_module.html" />
+    <link rel="prev" title="My Project Documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="how-to-compile-opengeode">
+<span id="doxid-opengeode-how-to-compile"></span><span id="index-0"></span><h1>How to compile OpenGeode</h1>
+</div>
+<div class="section" id="what-do-you-need">
+<h1>What do you need</h1>
+<div class="section" id="os">
+<h2>OS</h2>
+<p>OpenGeode is supported and continuously tested on several platforms:</p>
+<p>Windows - Visual Studio 2017 Ubuntu 16.04 macOS X High Sierra (10.13)</p>
+<p>Pre-compiled binaries on these three platforms are also provided. <a class="reference internal" href="page_opengeode_where_to_get_binaries.html#doxid-opengeode-where-to-get-binaries"><span class="std std-ref">This page</span></a> describes where to download these binaries.</p>
+</div>
+<div class="section" id="cmake">
+<h2>CMake</h2>
+<p>OpenGeode comes with a CMake configuration file. You can modified two items:</p>
+<p><code class="docutils literal notranslate"><span class="pre">CMAKE_BUILD_TYPE</span></code> : choose build configuration (Release, Debug). By default Release. <code class="docutils literal notranslate"><span class="pre">OPENGEODE_WITH_TESTS</span></code> : switch on/off the OpenGeode test environment</p>
+<p>Your version of CMake should be at least 3.5.</p>
+</div>
+<div class="section" id="compiler">
+<h2>Compiler</h2>
+<p>On Windows, we recommend to use Visual Studio 15 2017. On Linux and macOS, you can use gcc/g++ as compiler. You need a version equal to or higher than 4.8. On macOS, you can also install Mac OS “Command Line Developer Tools” and use clang.</p>
+</div>
+</div>
+<div class="section" id="opengeode-configuration-and-compilation">
+<h1>OpenGeode configuration and compilation</h1>
+<p>The configuration and compiling of OpenGeode is very simple. This will be achieved in few steps depending on your platform.</p>
+<div class="section" id="on-windows">
+<h2>On Windows</h2>
+<div class="section" id="configuration">
+<h3>Configuration</h3>
+<ol class="arabic simple">
+<li><p>Launch CMake interface.</p></li>
+<li><p>Set where is the OpenGeode source code and where to build the binaries as path/to/OpenGeode/build.</p></li>
+<li><p>Choose your configuration options. Take care to choose as current generator <code class="docutils literal notranslate"><span class="pre">Visual</span> <span class="pre">Studio</span> <span class="pre">15</span> <span class="pre">2017</span></code>.</p></li>
+<li><p>Launch the configure and generate option.</p></li>
+</ol>
+</div>
+<div class="section" id="compilation">
+<h3>Compilation</h3>
+<ol class="arabic simple">
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Project</span></code> in the CMake interface. It opens Visual Studio 2017 and the generated solution.</p></li>
+<li><p>Build the solution.</p></li>
+</ol>
+<p>That’s all! You are ready to work with OpenGeode.</p>
+</div>
+</div>
+<div class="section" id="on-linux">
+<h2>On Linux</h2>
+<div class="section" id="id1">
+<h3>Configuration</h3>
+<ol class="arabic">
+<li><p>Open a terminal where is the OpenGeode source code.</p></li>
+<li><p>Create a <code class="docutils literal notranslate"><span class="pre">build</span></code> directory:</p>
+<pre class="highlight literal-block"><span></span><span class="n">mkdir</span> <span class="n">build</span><span class="p">;</span> <span class="n">cd</span> <span class="n">build</span></pre>
+</li>
+<li><p>Run cmake:</p>
+<pre class="highlight literal-block"><span></span><span class="n">cmake</span> <span class="p">..</span></pre>
+<p>for default configuration or</p>
+<pre class="highlight literal-block"><span></span><span class="n">ccmake</span> <span class="p">..</span></pre>
+<p>or</p>
+<pre class="highlight literal-block"><span></span><span class="n">cmake</span><span class="o">-</span><span class="n">gui</span> <span class="p">..</span></pre>
+<p>for choosing configuration options.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h3>Compilation</h3>
+<ol class="arabic simple">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">make</span></code> command in the build directory.</p></li>
+</ol>
+<p>Now you are ready to work with OpenGeode.</p>
+</div>
+</div>
+<div class="section" id="on-macos">
+<h2>On macOS</h2>
+<div class="section" id="id3">
+<h3>Configuration</h3>
+<ol class="arabic">
+<li><p>Open a terminal where is the OpenGeode source code.</p></li>
+<li><p>Create a <code class="docutils literal notranslate"><span class="pre">build</span></code> directory:  build; cd build</p></li>
+<li><p>Run cmake:</p>
+<pre class="highlight literal-block"><span></span><span class="n">cmake</span> <span class="p">..</span></pre>
+<p>for default configuration or</p>
+<pre class="highlight literal-block"><span></span><span class="n">ccmake</span> <span class="p">..</span></pre>
+<p>or</p>
+<pre class="highlight literal-block"><span></span><span class="n">cmake</span><span class="o">-</span><span class="n">gui</span> <span class="p">..</span></pre>
+<p>for choosing configuration options.</p>
+</li>
+</ol>
+<p>If you want to use Xcode, we suggest you to use CMake GUI interface to select Xcode as generator (or use cmake options “-G Xcode” command lines).</p>
+</div>
+<div class="section" id="id4">
+<h3>Compilation</h3>
+<ol class="arabic simple">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">make</span></code> command in the build directory.</p></li>
+</ol>
+<p>Now you are ready to work with OpenGeode.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/page_opengeode_how_to_compile.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
