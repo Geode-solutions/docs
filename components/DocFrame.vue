@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     page() {
-      return '/docs/' + this.project + '/genindex.html';
+      return '/docs/' + this.project + '/index.html';
     }
   },
   mounted() {
