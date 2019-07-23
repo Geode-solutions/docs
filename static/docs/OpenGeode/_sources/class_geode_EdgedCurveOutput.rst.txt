@@ -18,6 +18,10 @@ template class geode::EdgedCurveOutput
 	template <index_t dimension>
 	class EdgedCurveOutput: public :ref:`geode::GraphOutput<doxid-classgeode_1_1_graph_output>`
 	{
+	public:
+		// methods
+	
+		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& :target:`edged_curve<doxid-classgeode_1_1_edged_curve_output_1a3f542fc112ef3fe8ddc995031eb401df>`() const;
 	};
 
 Inherited Members

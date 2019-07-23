@@ -26,16 +26,7 @@ class geode::Output
 	// direct descendants
 
 	class :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`;
-	class :ref:`GraphOutput<doxid-classgeode_1_1_graph_output>`;
-
-	template <index_t dimension>
-	class :ref:`PointSetOutput<doxid-classgeode_1_1_point_set_output>`;
-
-	template <index_t dimension>
-	class :ref:`PolygonalSurfaceOutput<doxid-classgeode_1_1_polygonal_surface_output>`;
-
-	template <index_t dimension>
-	class :ref:`PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`;
+	class :ref:`VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`;
 
 Inherited Members
 -----------------

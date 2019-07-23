@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>class geode::OpenGeodeGraphOutput &#8212; Python  documentation</title>
+    <title>class geode::VertexSetOutput &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -16,8 +16,8 @@
     <script type="text/javascript" src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::OpenGeodePointSet" href="class_geode_OpenGeodePointSet.html" />
-    <link rel="prev" title="class geode::OpenGeodeGraphInput" href="class_geode_OpenGeodeGraphInput.html" />
+    <link rel="next" title="namespace std" href="namespace_std.html" />
+    <link rel="prev" title="class geode::VertexSetInput" href="class_geode_VertexSetInput.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,26 +33,28 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-opengeodegraphoutput">
-<span id="doxid-classgeode-1-1-open-geode-graph-output"></span><span id="index-0"></span><h1>class geode::OpenGeodeGraphOutput</h1>
+  <div class="section" id="class-geode-vertexsetoutput">
+<span id="doxid-classgeode-1-1-vertex-set-output"></span><span id="index-0"></span><h1>class geode::VertexSetOutput</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;geode_graph_output.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vertex_set_output.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">OpenGeodeGraphOutput</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_GraphOutput.html#doxid-classgeode-1-1-graph-output"><span class="std std-ref">geode::GraphOutput</span></a><span></span>
+<span class="k">class</span> <span class="nl">VertexSetOutput</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Output.html#doxid-classgeode-1-1-output"><span class="std std-ref">geode::Output</span></a><span></span>
 <span class="p">{</span>
-<span class="k">public</span><span class="o">:</span>
-    <span class="c1">// construction</span>
+<span class="p">};</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-graph-output-1ada6650f2232cc97486f18dd3250f67f0">OpenGeodeGraphOutput</span><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="o">&amp;</span> <span class="n">graph</span><span class="p">,</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">filename</span>
-        <span class="p">);</span>
+<span class="c1">// direct descendants</span>
 
-    <span class="c1">// methods</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_GraphOutput.html#doxid-classgeode-1-1-graph-output"><span class="std std-ref">GraphOutput</span></a><span></span><span class="p">;</span>
 
-    <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-graph-output-1ac01c5281d1f19df77d7254eee29d1cdd">write</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span></pre>
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PointSetOutput.html#doxid-classgeode-1-1-point-set-output"><span class="std std-ref">PointSetOutput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PolygonalSurfaceOutput.html#doxid-classgeode-1-1-polygonal-surface-output"><span class="std std-ref">PolygonalSurfaceOutput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PolyhedralSolidOutput.html#doxid-classgeode-1-1-polyhedral-solid-output"><span class="std std-ref">PolyhedralSolidOutput</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
@@ -77,7 +79,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_OpenGeodeGraphOutput.rst.txt"
+      <a href="_sources/class_geode_VertexSetOutput.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

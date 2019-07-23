@@ -20,8 +20,8 @@ class geode::BRep::LineIncidenceRange
 	public:
 		// construction
 	
-		:target:`LineIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_line_incidence_range_1aa94e2e22c9a1949fd1445d4aaca83249>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:target:`LineIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_line_incidence_range_1a617e942b6f8a40afafe7f4fc7b3e100d>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
 			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
 			const Line3D& line
 			);

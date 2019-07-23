@@ -20,8 +20,8 @@ class geode::BRep::SurfaceIncidenceRange
 	public:
 		// construction
 	
-		:target:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1afde18a585ee70d20ea06aad2b5460687>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:target:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range_1a5a1f9ae3c4f13e27f412bfd853fd2bce>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
 			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
 			const Surface3D& surface
 			);

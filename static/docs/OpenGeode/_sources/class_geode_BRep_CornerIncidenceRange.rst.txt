@@ -20,8 +20,8 @@ class geode::BRep::CornerIncidenceRange
 	public:
 		// construction
 	
-		:target:`CornerIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_corner_incidence_range_1a3dbc4d48ba43b04121b3cb517d22da15>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:target:`CornerIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_corner_incidence_range_1afde7e339d09f36fa4b4a60c1a0420eb6>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
 			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
 			const Corner3D& corner
 			);

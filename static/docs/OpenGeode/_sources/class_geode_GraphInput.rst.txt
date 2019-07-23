@@ -15,7 +15,7 @@ class geode::GraphInput
 
 	#include <graph_input.h>
 	
-	class GraphInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`
+	class GraphInput: public :ref:`geode::VertexSetInput<doxid-classgeode_1_1_vertex_set_input>`
 	{
 	};
 
@@ -23,8 +23,6 @@ class geode::GraphInput
 
 	template <index_t dimension>
 	class :ref:`EdgedCurveInput<doxid-classgeode_1_1_edged_curve_input>`;
-
-	class :ref:`OpenGeodeGraphInput<doxid-classgeode_1_1_open_geode_graph_input>`;
 
 Inherited Members
 -----------------
@@ -37,4 +35,5 @@ Inherited Members
 	
 		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1a00af9913eee23e9bd533bed23ec29499>`() const;
 		virtual void :ref:`read<doxid-classgeode_1_1_input_1a3cddf55a1071542ca682bce780869794>`() = 0;
+		virtual void :ref:`read<doxid-classgeode_1_1_vertex_set_input_1a554fc7e35c43c3c4fe170e092bbe07a1>`();
 

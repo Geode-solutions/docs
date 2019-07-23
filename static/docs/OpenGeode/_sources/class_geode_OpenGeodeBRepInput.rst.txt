@@ -20,8 +20,8 @@ class geode::OpenGeodeBRepInput
 	public:
 		// construction
 	
-		:target:`OpenGeodeBRepInput<doxid-classgeode_1_1_open_geode_b_rep_input_1a97cea79627d00b621889fc035a322e50>`(
-			:ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:target:`OpenGeodeBRepInput<doxid-classgeode_1_1_open_geode_b_rep_input_1a9b5ead2ba02f90cf77fb96e3556e312b>`(
+			:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
 			std::string filename
 			);
 

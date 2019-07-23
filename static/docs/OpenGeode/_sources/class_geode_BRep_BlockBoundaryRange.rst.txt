@@ -20,8 +20,8 @@ class geode::BRep::BlockBoundaryRange
 	public:
 		// construction
 	
-		:target:`BlockBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a472488777a28a4186f21e46da6720fe0>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:target:`BlockBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1ab7ab742f284810596b70ebd2db8b2d06>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
 			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
 			const Block3D& block
 			);

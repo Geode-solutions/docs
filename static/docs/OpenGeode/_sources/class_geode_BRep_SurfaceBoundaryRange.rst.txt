@@ -20,8 +20,8 @@ class geode::BRep::SurfaceBoundaryRange
 	public:
 		// construction
 	
-		:target:`SurfaceBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_surface_boundary_range_1a8083841a9b9cdc1be10a0c91fffcbc1c>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:target:`SurfaceBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_surface_boundary_range_1a60ad48eafe3dc7551436f0d877d664c3>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
 			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
 			const Surface3D& surface
 			);

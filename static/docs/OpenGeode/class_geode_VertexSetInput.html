@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>class geode::OpenGeodeGraphInput &#8212; Python  documentation</title>
+    <title>class geode::VertexSetInput &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -16,8 +16,8 @@
     <script type="text/javascript" src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::OpenGeodeGraphOutput" href="class_geode_OpenGeodeGraphOutput.html" />
-    <link rel="prev" title="class geode::OpenGeodeGraphBuilder" href="class_geode_OpenGeodeGraphBuilder.html" />
+    <link rel="next" title="class geode::VertexSetOutput" href="class_geode_VertexSetOutput.html" />
+    <link rel="prev" title="class geode::VertexSetBuilder" href="class_geode_VertexSetBuilder.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,26 +33,32 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-opengeodegraphinput">
-<span id="doxid-classgeode-1-1-open-geode-graph-input"></span><span id="index-0"></span><h1>class geode::OpenGeodeGraphInput</h1>
+  <div class="section" id="class-geode-vertexsetinput">
+<span id="doxid-classgeode-1-1-vertex-set-input"></span><span id="index-0"></span><h1>class geode::VertexSetInput</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;geode_graph_input.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vertex_set_input.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">OpenGeodeGraphInput</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_GraphInput.html#doxid-classgeode-1-1-graph-input"><span class="std std-ref">geode::GraphInput</span></a><span></span>
+<span class="k">class</span> <span class="nl">VertexSetInput</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input"><span class="std std-ref">geode::Input</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
-    <span class="c1">// construction</span>
-
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-graph-input-1a2859aa7bb46c2ef4f43a6820b4307cab">OpenGeodeGraphInput</span><span></span><span class="p">(</span>
-        <a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="o">&amp;</span> <span class="n">graph</span><span class="p">,</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">filename</span>
-        <span class="p">);</span>
-
     <span class="c1">// methods</span>
 
-    <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-graph-input-1a26a98f9db1af8204c684d4860f4f673a">read</span><span></span><span class="p">();</span>
-<span class="p">};</span></pre>
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-set-input-1a554fc7e35c43c3c4fe170e092bbe07a1">read</span><span></span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_GraphInput.html#doxid-classgeode-1-1-graph-input"><span class="std std-ref">GraphInput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PointSetInput.html#doxid-classgeode-1-1-point-set-input"><span class="std std-ref">PointSetInput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PolygonalSurfaceInput.html#doxid-classgeode-1-1-polygonal-surface-input"><span class="std std-ref">PolygonalSurfaceInput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PolyhedralSolidInput.html#doxid-classgeode-1-1-polyhedral-solid-input"><span class="std std-ref">PolyhedralSolidInput</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
@@ -77,7 +83,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_OpenGeodeGraphInput.rst.txt"
+      <a href="_sources/class_geode_VertexSetInput.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

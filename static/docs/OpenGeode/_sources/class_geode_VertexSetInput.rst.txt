@@ -1,0 +1,50 @@
+.. index:: pair: class; geode::VertexSetInput
+.. _doxid-classgeode_1_1_vertex_set_input:
+
+class geode::VertexSetInput
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vertex_set_input.h>
+	
+	class VertexSetInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`
+	{
+	public:
+		// methods
+	
+		virtual void :target:`read<doxid-classgeode_1_1_vertex_set_input_1a554fc7e35c43c3c4fe170e092bbe07a1>`();
+	};
+
+	// direct descendants
+
+	class :ref:`GraphInput<doxid-classgeode_1_1_graph_input>`;
+
+	template <index_t dimension>
+	class :ref:`PointSetInput<doxid-classgeode_1_1_point_set_input>`;
+
+	template <index_t dimension>
+	class :ref:`PolygonalSurfaceInput<doxid-classgeode_1_1_polygonal_surface_input>`;
+
+	template <index_t dimension>
+	class :ref:`PolyhedralSolidInput<doxid-classgeode_1_1_polyhedral_solid_input>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1a00af9913eee23e9bd533bed23ec29499>`() const;
+		virtual void :ref:`read<doxid-classgeode_1_1_input_1a3cddf55a1071542ca682bce780869794>`() = 0;
+

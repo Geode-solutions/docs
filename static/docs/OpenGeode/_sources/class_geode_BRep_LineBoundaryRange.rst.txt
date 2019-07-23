@@ -20,8 +20,8 @@ class geode::BRep::LineBoundaryRange
 	public:
 		// construction
 	
-		:target:`LineBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_line_boundary_range_1ae9a9b39915a10456c08aca0e0fdec348>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:target:`LineBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_line_boundary_range_1a6e7d16672faec76402556898c0ed6b2e>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
 			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
 			const Line3D& line
 			);
