@@ -13,7 +13,7 @@ This class can be used to iterate over integer loop. Example: = C++98 loop = for
 
 	= C++11-like loop =
 
-for( auto i : Range( n ) ) { // do something }
+for( auto i : :ref:`Range <doxid-classgeode_1_1_range>` { n } ) { // do something }
 
 
 .. ref-code-block:: cpp
