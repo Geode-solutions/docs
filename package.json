@@ -12,17 +12,13 @@
   },
   "dependencies": {
     "@bazzite/nuxt-netlify": "^0.1.1",
-    "@nuxtjs/vuetify": "0.5.6",
-    "nuxt": "^2.8.1",
-    "vuetify": "^1.5.16",
-    "vuetify-loader": "^1.2.2"
+    "@nuxtjs/vuetify": "1.1.0",
+    "nuxt": "^2.8.1"
   },
   "devDependencies": {
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "nodemon": "^1.19.1",
-    "prettier": "^1.18.2",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "prettier": "^1.18.2"
   }
 }

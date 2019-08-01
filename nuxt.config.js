@@ -1,4 +1,4 @@
-import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
+import colors from 'vuetify/es5/util/colors'
 
 export default {
   mode: 'universal',
@@ -36,24 +36,37 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins//vuetify',
+    '@/plugins//vuetify_icons'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/vuetify'
   ],
+
+  vuetify: {
+    theme: {
+      themes: {
+        light: {
+          primary: colors.teal.darken1,
+          secondary: colors.teal.lighten4,
+          accent: colors.red.darken4
+        }
+      }
+    },
+    icons: {
+      values: {
+        logo: {
+          component: 'Logo'
+        }
+      } 
+    }
+  },
   /*
   ** Build configuration
   */
   build: {
-    transpile: ['vuetify/lib'],
-    plugins: [new VuetifyLoaderPlugin()],    
-    loaders: {
-      stylus: {
-        import: ['~assets/style/variables.styl']
-      }
-    },
 
     /*
     ** You can extend webpack config here

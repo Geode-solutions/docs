@@ -1,14 +1,16 @@
 <template>
   <v-app>
-    <v-toolbar dark app clipped-left color="primary">
-      <v-toolbar-side-icon>
+    <v-app-bar dark app clipped-left color="primary">
+        <v-btn text active-class="" nuxt to="/">
+      <v-app-bar-nav-icon>
         <v-icon large>$vuetify.icons.logo</v-icon>
-      </v-toolbar-side-icon>
+      </v-app-bar-nav-icon>
       <v-toolbar-title>Geode-solutions</v-toolbar-title>
+        </v-btn>
       <v-spacer></v-spacer>
       <v-toolbar-items>
         <v-btn
-          flat
+          text
           nuxt
           :to="item.to"
           :key="index"
@@ -18,9 +20,9 @@
         </v-btn>
       </v-toolbar-items>
 
-    </v-toolbar>
+    </v-app-bar>
     <v-content>
-      <v-container fluid fill-height>
+      <v-container>
         <nuxt />
       </v-container>
     </v-content>
@@ -32,7 +34,8 @@
     data() {
       return {
         items: [
-          { title: 'OpenGeode', to: '/OpenGeode' }
+          { title: 'OpenGeode', to: '/opengeode' },
+          { title: 'OpenGeode-IO', to: '/opengeode-io' }
         ]
       }
     }
