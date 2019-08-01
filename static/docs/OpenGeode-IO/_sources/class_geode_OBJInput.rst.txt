@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::OBJInput
+.. _doxid-classgeode_1_1_o_b_j_input:
+
+class geode::OBJInput
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <obj_input.h>
+	
+	class OBJInput: public PolygonalSurfaceInput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`OBJInput<doxid-classgeode_1_1_o_b_j_input_1af2c5149a560cc70d9c497a67ac4a00fb>`(
+			PolygonalSurface<3>& surface,
+			std::string filename
+			);
+
+		// methods
+	
+		void :target:`do_read<doxid-classgeode_1_1_o_b_j_input_1aff33995e98bac46255d268da973b997b>`();
+		static std::string :target:`extension<doxid-classgeode_1_1_o_b_j_input_1ae7dcdfa0c2982918fd7c6050e2487d6a>`();
+	};

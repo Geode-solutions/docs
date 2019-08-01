@@ -1,0 +1,30 @@
+.. index:: pair: page; Supported file formats
+.. _doxid-opengeodeio_supported_file_formats:
+
+Supported file formats
+======================
+
+This page lists the supported file formats, indicating for each the loaded/saved OpenGeode object.
+
+Models (comming soon!)
+======================
+
+===========  ================  =====  ======  
+File format  OpenGeode object  Input  Output  
+===========  ================  =====  ======  
+
+.msh         BRep              NO     NO      
+===========  ================  =====  ======
+
+Meshes
+======
+
+===========  =====================  =====  ======  
+File format  OpenGeode object       Input  Output  
+===========  =====================  =====  ======  
+
+.obj         PolygonalSurface3D     YES    YES     
+.ply         PolygonalSurface3D     YES    YES     
+.stl         TriangulatedSurface3D  YES    YES     
+===========  =====================  =====  ======
+

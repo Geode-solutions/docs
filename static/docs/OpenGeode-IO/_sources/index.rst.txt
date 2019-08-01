@@ -1,0 +1,25 @@
+My Project Documentation
+========================
+
+.. toctree::
+	:hidden:
+
+	page_opengeodeio_how_to_link_with_io.rst
+	page_opengeodeio_supported_file_formats.rst
+
+.. rubric:: Related Pages:
+
+|	:doc:`page_opengeodeio_how_to_link_with_io`
+|	:doc:`page_opengeodeio_supported_file_formats`
+
+
+.. rubric:: Reference and Index:
+
+.. toctree::
+	:hidden:
+
+	global.rst
+
+|	:doc:`global`
+|	:ref:`genindex`
+

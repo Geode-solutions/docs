@@ -1,0 +1,34 @@
+.. index:: pair: class; geode::detail::AssimpMeshOutput
+.. _doxid-classgeode_1_1detail_1_1_assimp_mesh_output:
+
+template class geode::detail::AssimpMeshOutput
+==============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <assimp_output.h>
+	
+	template <typename SurfaceMesh>
+	class AssimpMeshOutput
+	{
+	public:
+		// construction
+	
+		:target:`AssimpMeshOutput<doxid-classgeode_1_1detail_1_1_assimp_mesh_output_1a739a2df5a3eccc4cd48f7fb29c9b305c>`(
+			std::string filename,
+			const SurfaceMesh& surface_mesh,
+			std::string assimp_export_id
+			);
+
+		// methods
+	
+		void :target:`build_assimp_scene<doxid-classgeode_1_1detail_1_1_assimp_mesh_output_1a33e7c33834c0ab125b50fb94a3149dd7>`();
+		void :target:`write_file<doxid-classgeode_1_1detail_1_1_assimp_mesh_output_1a87ef261eeea77e28cf0b956754da96d4>`();
+	};

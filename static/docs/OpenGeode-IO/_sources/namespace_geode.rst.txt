@@ -1,0 +1,44 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+	namespace_geode_detail.rst
+	class_geode_OBJInput.rst
+	class_geode_OBJOutput.rst
+	class_geode_PLYInput.rst
+	class_geode_PLYOutput.rst
+	class_geode_STLInput.rst
+	class_geode_STLOutput.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// namespaces
+
+	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
+
+	// classes
+
+	class :ref:`OBJInput<doxid-classgeode_1_1_o_b_j_input>`;
+	class :ref:`OBJOutput<doxid-classgeode_1_1_o_b_j_output>`;
+	class :ref:`PLYInput<doxid-classgeode_1_1_p_l_y_input>`;
+	class :ref:`PLYOutput<doxid-classgeode_1_1_p_l_y_output>`;
+	class :ref:`STLInput<doxid-classgeode_1_1_s_t_l_input>`;
+	class :ref:`STLOutput<doxid-classgeode_1_1_s_t_l_output>`;
+
+	// global functions
+
+	void opengeodeio_mesh_api :target:`initialize_io<doxid-namespacegeode_1a16765c50c917339d81567e08c3d70e77>`();
+
+	} // namespace geode
