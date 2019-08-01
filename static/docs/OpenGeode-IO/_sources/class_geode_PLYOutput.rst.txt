@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::PLYOutput
+.. _doxid-classgeode_1_1_p_l_y_output:
+
+class geode::PLYOutput
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ply_output.h>
+	
+	class PLYOutput: public PolygonalSurfaceOutput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`PLYOutput<doxid-classgeode_1_1_p_l_y_output_1aeb9077c40d74b782215881ba736d30e5>`(
+			const PolygonalSurface<3>& surface,
+			std::string filename
+			);
+
+		// methods
+	
+		void :target:`write<doxid-classgeode_1_1_p_l_y_output_1a7f36bb29eaf75fe3aedc27020b9cdcb6>`() const;
+		static std::string :target:`extension<doxid-classgeode_1_1_p_l_y_output_1a6f157807cce6836095930de71b948482>`();
+	};

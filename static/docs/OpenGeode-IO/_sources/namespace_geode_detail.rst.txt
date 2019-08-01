@@ -1,0 +1,29 @@
+.. index:: pair: namespace; geode::detail
+.. _doxid-namespacegeode_1_1detail:
+
+namespace geode::detail
+=======================
+
+.. toctree::
+	:hidden:
+
+	class_geode_detail_AssimpMeshInput.rst
+	class_geode_detail_AssimpMeshOutput.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace detail {
+
+	// classes
+
+	class :ref:`AssimpMeshInput<doxid-classgeode_1_1detail_1_1_assimp_mesh_input>`;
+
+	template <typename SurfaceMesh>
+	class :ref:`AssimpMeshOutput<doxid-classgeode_1_1detail_1_1_assimp_mesh_output>`;
+
+	} // namespace detail
