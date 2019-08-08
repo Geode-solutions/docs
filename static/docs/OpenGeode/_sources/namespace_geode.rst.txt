@@ -135,10 +135,8 @@ Overview
 
 	typedef bitsery::ext::PolymorphicContext<bitsery::ext::StandardRTTI> :target:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`;
 	typedef std::tuple<:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`, bitsery::ext::PointerLinkingContext, bitsery::ext::InheritanceContext> :target:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`;
-	typedef bitsery::OutputBufferedStreamAdapter :target:`OutputAdapter<doxid-namespacegeode_1a68abc5bc19ceebaa6786357c1d97fc64>`;
-	typedef bitsery::InputStreamAdapter :target:`InputAdapter<doxid-namespacegeode_1a39a868965aed9f00e745c6afda1da135>`;
-	typedef bitsery::BasicSerializer<bitsery::AdapterWriter<:ref:`OutputAdapter<doxid-namespacegeode_1a68abc5bc19ceebaa6786357c1d97fc64>`, bitsery::DefaultConfig>, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Serializer<doxid-namespacegeode_1a62b7a388287571bf94af6f683218b779>`;
-	typedef bitsery::BasicDeserializer<bitsery::AdapterReader<:ref:`InputAdapter<doxid-namespacegeode_1a39a868965aed9f00e745c6afda1da135>`, bitsery::DefaultConfig>, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Deserializer<doxid-namespacegeode_1a33d1ddb77b3b05a9ed9fe91b8e2d6b9b>`;
+	typedef bitsery::Serializer<bitsery::OutputBufferedStreamAdapter, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Serializer<doxid-namespacegeode_1acde102fc3576cee8a5531f85902413bb>`;
+	typedef bitsery::Deserializer<bitsery::InputStreamAdapter, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Deserializer<doxid-namespacegeode_1a2090ae31c36f663e61f2af7d87cb5f44>`;
 	typedef unsigned int :target:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`;
 	typedef int :target:`signed_index_t<doxid-namespacegeode_1a82faef4b63f94932b7ced06209528cdd>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`ComponentTag<doxid-structgeode_1_1_component_tag>`> :target:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`;
@@ -448,6 +446,19 @@ Overview
 	bool :target:`contain<doxid-namespacegeode_1acc05397671a445c57cb2dce614126605>`(
 		const container& in,
 		const T& value
+		);
+
+	template <typename T>
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`delete_vector_elements<doxid-namespacegeode_1a03177b23306779d5f243e65b8af584ad>`(
+		const std::vector<bool>& to_delete,
+		std::vector<T>& values,
+		bool resize = false
+		);
+
+	template <typename T>
+	std::vector<T> :target:`extract_vector_elements<doxid-namespacegeode_1ab68ae84b2adb41524da91dd5daa553cc>`(
+		const std::vector<bool>& to_keep,
+		const std::vector<T>& in_values
 		);
 
 	void opengeode_basic_api :target:`geode_assertion_failed<doxid-namespacegeode_1a964e15927a4b2dc39f52f761506885e7>`(

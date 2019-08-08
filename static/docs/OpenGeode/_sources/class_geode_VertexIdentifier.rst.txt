@@ -32,7 +32,9 @@ This class identifies groups of geometric component vertices as unique vertices.
 		template <typename MeshComponent>
 		void :ref:`register_component<doxid-classgeode_1_1_vertex_identifier_1aa0e48c044e602b71312bcef5e5f28d73>`(const MeshComponent& component);
 	
-		void :ref:`remove_component<doxid-classgeode_1_1_vertex_identifier_1a58e9930bdd941d3889b00044821717a8>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id);
+		template <typename MeshComponent>
+		void :ref:`remove_component<doxid-classgeode_1_1_vertex_identifier_1a866790ece70b59b041490d38ccdf02da>`(const MeshComponent& component);
+	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a71979507c1e499c162ea107904b0d5e7>`();
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a1f68247b957f1b7905db5c37d3874fbf>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a48d74658aeacf6f0b3b85ad5d9c4e460>`(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id);
@@ -159,14 +161,15 @@ Return the unique vertex index of a given component vertex.
 Add a component
 
 .. index:: pair: function; remove_component
-.. _doxid-classgeode_1_1_vertex_identifier_1a58e9930bdd941d3889b00044821717a8:
+.. _doxid-classgeode_1_1_vertex_identifier_1a866790ece70b59b041490d38ccdf02da:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void remove_component(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id)
+	template <typename MeshComponent>
+	void remove_component(const MeshComponent& component)
 
-Remove a component from the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` and delete corresponding information.
+Remove a component from the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` and delete corresponding information (i.e. the attribute on component mesh).
 
 .. index:: pair: function; create_unique_vertex
 .. _doxid-classgeode_1_1_vertex_identifier_1a71979507c1e499c162ea107904b0d5e7:

@@ -34,8 +34,9 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 	
 		void :ref:`resize<doxid-classgeode_1_1_attribute_manager_1ab78ec5f69d4a452ef59fb824a7a0e95c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` size);
 		std::vector<std::string> :ref:`attribute_names<doxid-classgeode_1_1_attribute_manager_1a9331405f2fe8a2a3d66257b79d90e650>`() const;
+		bool :ref:`attribute_exists<doxid-classgeode_1_1_attribute_manager_1a723fddb0b2f2d0fc7c7546be5cd64ac1>`(const std::string& name) const;
 		void :ref:`delete_attribute<doxid-classgeode_1_1_attribute_manager_1a0b66879bc0bf9312a81fadfb8e2ea0d0>`(const std::string& name);
-		std::string :ref:`attribute_type<doxid-classgeode_1_1_attribute_manager_1ab047d012dafae06510637b567a3a37bc>`(const std::string& name);
+		std::string :ref:`attribute_type<doxid-classgeode_1_1_attribute_manager_1ad411fbf917b58ab82d8959218fd85463>`(const std::string& name) const;
 		void :ref:`clear<doxid-classgeode_1_1_attribute_manager_1a009194a92dfd94b2e0ac4c397c5f9ad8>`();
 		void :ref:`clear_attributes<doxid-classgeode_1_1_attribute_manager_1aa25870b7f9a775d641a23ee44e0fc7d0>`();
 		void :ref:`delete_elements<doxid-classgeode_1_1_attribute_manager_1af39ef3210749c1a18a7bc26c3b2a38c7>`(const std::vector<bool>& to_delete);
@@ -165,6 +166,28 @@ Resize all the attributes to the given size
 
 Get all the associated attribute names
 
+.. index:: pair: function; attribute_exists
+.. _doxid-classgeode_1_1_attribute_manager_1a723fddb0b2f2d0fc7c7546be5cd64ac1:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool attribute_exists(const std::string& name) const
+
+Return true if an attribute matching the given name.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- name
+
+		- The attribute name to use
+
 .. index:: pair: function; delete_attribute
 .. _doxid-classgeode_1_1_attribute_manager_1a0b66879bc0bf9312a81fadfb8e2ea0d0:
 
@@ -188,12 +211,12 @@ Delete the attribute matching the given name. Do nothing if the name does not ex
 		- The attribute name to delete
 
 .. index:: pair: function; attribute_type
-.. _doxid-classgeode_1_1_attribute_manager_1ab047d012dafae06510637b567a3a37bc:
+.. _doxid-classgeode_1_1_attribute_manager_1ad411fbf917b58ab82d8959218fd85463:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::string attribute_type(const std::string& name)
+	std::string attribute_type(const std::string& name) const
 
 Get the typeid name of the attribute type
 
