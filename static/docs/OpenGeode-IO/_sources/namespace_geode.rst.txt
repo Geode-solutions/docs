@@ -8,6 +8,7 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
+	class_geode_MSHInput.rst
 	class_geode_OBJInput.rst
 	class_geode_OBJOutput.rst
 	class_geode_PLYInput.rst
@@ -30,6 +31,7 @@ namespace geode
 
 	// classes
 
+	class :ref:`MSHInput<doxid-classgeode_1_1_m_s_h_input>`;
 	class :ref:`OBJInput<doxid-classgeode_1_1_o_b_j_input>`;
 	class :ref:`OBJOutput<doxid-classgeode_1_1_o_b_j_output>`;
 	class :ref:`PLYInput<doxid-classgeode_1_1_p_l_y_input>`;
@@ -39,6 +41,7 @@ namespace geode
 
 	// global functions
 
-	void opengeodeio_mesh_api :target:`initialize_io<doxid-namespacegeode_1a16765c50c917339d81567e08c3d70e77>`();
+	void opengeodeio_georepresentation_api :target:`initialize_georepresentation_io<doxid-namespacegeode_1aca2286a7030b6fe947c9a34c39f51f9c>`();
+	void opengeodeio_mesh_api :target:`initialize_mesh_io<doxid-namespacegeode_1a948975f1c984f3e942d315f2abd5ddf3>`();
 
 	} // namespace geode

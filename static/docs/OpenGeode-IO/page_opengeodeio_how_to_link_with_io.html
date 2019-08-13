@@ -39,16 +39,18 @@
 </div>
 <div class="section" id="what-to-do">
 <h1>What to do?</h1>
-<p>You just have to add in your executable/code:</p>
-<pre class="highlight literal-block"><span></span><span class="n">initialize_io</span><span class="p">();</span></pre>
-<p>This function is declare in the file <code class="docutils literal notranslate"><span class="pre">include/geode/mesh/detail/common.h</span></code>. Do not forget to include this file in your code.</p>
+<p>You just have to add in your executable/code depending on your needs:</p>
+<pre class="highlight literal-block"><span></span><span class="n">initialize_mesh_io</span><span class="p">();</span></pre>
+<p>and/or</p>
+<pre class="highlight literal-block"><span></span><span class="n">initialize_georepresentation_io</span><span class="p">();</span></pre>
+<p>These functions are declared in the files <code class="docutils literal notranslate"><span class="pre">include/geode/mesh/detail/common.h</span></code> and <code class="docutils literal notranslate"><span class="pre">include/geode/georepresentation/detail/common.h</span></code>. Do not forget to include the right file in your code.</p>
 <p>You have examples in the OpenGeode-IO tests.</p>
 </div>
 <div class="section" id="why-i-have-to-do-that">
 <h1>Why I have to do that?</h1>
 <p>The reason is quite simple. Have a quick look at the file <code class="docutils literal notranslate"><span class="pre">OpenGeode-IO/src/geode/mesh/common.cpp</span></code>.</p>
 <p>In this file you can see that supported file formats for meshes are registered when the <code class="docutils literal notranslate"><span class="pre">OpenGeode-IO_mesh</span></code> library is loaded. But the I/O code is not directly called in executable (see tests for examples), and as a consequence the <code class="docutils literal notranslate"><span class="pre">OpenGeode-IO_mesh</span></code> library is not loaded. This is called the lazy loading of dependencies.</p>
-<p>If you call the function <code class="docutils literal notranslate"><span class="pre">initialize_io()</span></code>, the library is loaded, the file formats are registered and you are able to use <a class="reference internal" href="page_opengeodeio_supported_file_formats.html#doxid-opengeodeio-supported-file-formats"><span class="std std-ref">our supported file formats</span></a>.</p>
+<p>If you call the function <code class="docutils literal notranslate"><span class="pre">initialize_mesh_io()</span></code>, the library is loaded, the file formats are registered and you are able to use <a class="reference internal" href="page_opengeodeio_supported_file_formats.html#doxid-opengeodeio-supported-file-formats"><span class="std std-ref">our supported file formats</span></a>.</p>
 </div>
 
 

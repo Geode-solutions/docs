@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::MSHInput
+.. _doxid-classgeode_1_1_m_s_h_input:
+
+class geode::MSHInput
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <msh_input.h>
+	
+	class MSHInput: public BRepInput
+	{
+	public:
+		// construction
+	
+		:target:`MSHInput<doxid-classgeode_1_1_m_s_h_input_1a60f48baf85b5c4e1a9b1811c80800e61>`(
+			BRep& brep,
+			std::string filename
+			);
+
+		// methods
+	
+		void :target:`read<doxid-classgeode_1_1_m_s_h_input_1a42719fcb6ca24caf09e0a74aeb0eb984>`();
+		static std::string :target:`extension<doxid-classgeode_1_1_m_s_h_input_1a4c1fee3da29873c74e079b1f80972133>`();
+	};
