@@ -476,7 +476,7 @@ Return the area of a polygon. Result guaranteed only for convex polygon.
 
 	std::vector<:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`> polygons_around_vertex(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
 
-Get all the polygons with one of the vertices matching given vertex.
+Get all the polygons with one of the vertices matching given vertex. This function needs that polygon adjacencies are computed
 
 
 
@@ -488,7 +488,7 @@ Get all the polygons with one of the vertices matching given vertex.
 	*
 		- vertex_id
 
-		- Index of the vertex
+		- Index of the vertex.
 
 .. index:: pair: function; polygon_edge_from_vertices
 .. _doxid-classgeode_1_1_polygonal_surface_base_1ae0462aca8b312fb8ba5eafdb0bb2cf40:
