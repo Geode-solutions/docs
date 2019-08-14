@@ -7,19 +7,10 @@ template class geode::SurfacesBuilder
 .. toctree::
 	:hidden:
 
-Get a pointer to the builder of a :ref:`Surface <doxid-classgeode_1_1_surface>` mesh
+Overview
+~~~~~~~~
 
 
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- id
-
-		- Unique index of the :ref:`Surface <doxid-classgeode_1_1_surface>`
 
 
 .. ref-code-block:: cpp
@@ -34,5 +25,37 @@ Get a pointer to the builder of a :ref:`Surface <doxid-classgeode_1_1_surface>` 
 		// methods
 	
 		void :target:`load_surfaces<doxid-classgeode_1_1_surfaces_builder_1a3c3ad81bdc210faef54883ef34ea453a>`(const std::string& directory);
-		std::unique_ptr<:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`<dimension>> :target:`surface_mesh_builder<doxid-classgeode_1_1_surfaces_builder_1a28413b308d264eb68e453e253591a62c>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		std::unique_ptr<:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`<dimension>> :ref:`surface_mesh_builder<doxid-classgeode_1_1_surfaces_builder_1a28413b308d264eb68e453e253591a62c>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 	};
+.. _details-classgeode_1_1_surfaces_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; surface_mesh_builder
+.. _doxid-classgeode_1_1_surfaces_builder_1a28413b308d264eb68e453e253591a62c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::unique_ptr<:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`<dimension>> surface_mesh_builder(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id)
+
+Get a pointer to the builder of a :ref:`Surface <doxid-classgeode_1_1_surface>` mesh
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- id
+
+		- Unique index of the :ref:`Surface <doxid-classgeode_1_1_surface>`
+

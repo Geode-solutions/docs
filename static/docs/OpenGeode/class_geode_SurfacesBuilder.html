@@ -37,6 +37,25 @@
 <span id="doxid-classgeode-1-1-surfaces-builder"></span><span id="index-0"></span><h1>template class geode::SurfacesBuilder</h1>
 <div class="toctree-wrapper compound">
 </div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surfaces_builder.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">SurfacesBuilder</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-builder-1a3c3ad81bdc210faef54883ef34ea453a">load_surfaces</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurfaceBuilder.html#doxid-classgeode-1-1-polygonal-surface-builder"><span class="std std-ref">PolygonalSurfaceBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-surfaces-builder-1a28413b308d264eb68e453e253591a62c"><span class="std std-ref">surface_mesh_builder</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-surfaces-builder"></span><h2>Detailed Documentation</h2>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-surfaces-builder-1a28413b308d264eb68e453e253591a62c"><span id="index-1"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurfaceBuilder.html#doxid-classgeode-1-1-polygonal-surface-builder"><span class="std std-ref">PolygonalSurfaceBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">surface_mesh_builder</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span></pre>
 <p>Get a pointer to the builder of a <a class="reference internal" href="class_geode_Surface.html#doxid-classgeode-1-1-surface"><span class="std std-ref">Surface</span></a> mesh</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
@@ -50,17 +69,8 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surfaces_builder.h&gt;</span><span class="cp"></span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="n">SurfacesBuilder</span>
-<span class="p">{</span>
-<span class="k">public</span><span class="o">:</span>
-    <span class="c1">// methods</span>
-
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-builder-1a3c3ad81bdc210faef54883ef34ea453a">load_surfaces</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurfaceBuilder.html#doxid-classgeode-1-1-polygonal-surface-builder"><span class="std std-ref">PolygonalSurfaceBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-builder-1a28413b308d264eb68e453e253591a62c">surface_mesh_builder</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
-<span class="p">};</span></pre>
+</div>
+</div>
 </div>
 
 
