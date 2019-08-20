@@ -106,6 +106,7 @@ namespace geode
 	class_geode_TriangulatedSurfaceBuilder.rst
 	class_geode_TriangulatedSurfaceInput.rst
 	class_geode_TriangulatedSurfaceOutput.rst
+	class_geode_UnzipFile.rst
 	class_geode_VariableAttribute.rst
 	class_geode_VariableAttribute-2.rst
 	class_geode_Vector.rst
@@ -114,6 +115,7 @@ namespace geode
 	class_geode_VertexSetBuilder.rst
 	class_geode_VertexSetInput.rst
 	class_geode_VertexSetOutput.rst
+	class_geode_ZipFile.rst
 
 Overview
 ~~~~~~~~
@@ -338,11 +340,11 @@ Overview
 	template <index_t dimension>
 	class :ref:`PointSetOutput<doxid-classgeode_1_1_point_set_output>`;
 
-	template <>
-	class :ref:`PolygonalSurface<3><doxid-classgeode_1_1_polygonal_surface_3_013_01_4>`;
-
 	template <index_t dimension>
 	class :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`;
+
+	template <>
+	class :ref:`PolygonalSurface<3><doxid-classgeode_1_1_polygonal_surface_3_013_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`PolygonalSurfaceBase<doxid-classgeode_1_1_polygonal_surface_base>`;
@@ -412,6 +414,8 @@ Overview
 	template <index_t dimension>
 	class :ref:`TriangulatedSurfaceOutput<doxid-classgeode_1_1_triangulated_surface_output>`;
 
+	class :ref:`UnzipFile<doxid-classgeode_1_1_unzip_file>`;
+
 	template <typename T>
 	class :ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`;
 
@@ -426,6 +430,7 @@ Overview
 	class :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`;
 	class :ref:`VertexSetInput<doxid-classgeode_1_1_vertex_set_input>`;
 	class :ref:`VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`;
+	class :ref:`ZipFile<doxid-classgeode_1_1_zip_file>`;
 
 	// global variables
 
