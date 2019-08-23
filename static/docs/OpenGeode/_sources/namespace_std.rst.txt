@@ -8,7 +8,7 @@ namespace std
 	:hidden:
 
 	struct_std_hash.rst
-	class_std_hash.rst
+	struct_std_hash-2.rst
 
 
 
@@ -24,9 +24,7 @@ namespace std
 	template <>
 	struct :ref:`hash<geode::MeshType><doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4>`;
 
-	// classes
-
 	template <>
-	class :ref:`hash<geode::uuid><doxid-classstd_1_1hash_3_01geode_1_1uuid_01_4>`;
+	struct :ref:`hash<geode::uuid><doxid-structstd_1_1hash_3_01geode_1_1uuid_01_4>`;
 
 	} // namespace std

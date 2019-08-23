@@ -31,5 +31,4 @@ Inherited Members
 	
 		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1a00af9913eee23e9bd533bed23ec29499>`() const;
 		virtual void :ref:`read<doxid-classgeode_1_1_input_1a3cddf55a1071542ca682bce780869794>`() = 0;
-		virtual void :ref:`read<doxid-classgeode_1_1_vertex_set_input_1a554fc7e35c43c3c4fe170e092bbe07a1>`();
 

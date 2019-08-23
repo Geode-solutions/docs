@@ -27,6 +27,7 @@ class geode::OpenGeodeBRepOutput
 
 		// methods
 	
+		void :target:`archive_brep_files<doxid-classgeode_1_1_open_geode_b_rep_output_1aab9ca937d07dcce3d3ff939040b8b192>`(const :ref:`ZipFile<doxid-classgeode_1_1_zip_file>`& zip_writer) const;
 		virtual void :target:`write<doxid-classgeode_1_1_open_geode_b_rep_output_1af7c30312e74094e9f554999faa055315>`() const;
 		static std::string :target:`extension<doxid-classgeode_1_1_open_geode_b_rep_output_1a390f62145c8ac9fd8b52b89d0c6f04e3>`();
 	};

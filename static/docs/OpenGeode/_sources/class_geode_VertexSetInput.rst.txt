@@ -17,10 +17,6 @@ class geode::VertexSetInput
 	
 	class VertexSetInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`
 	{
-	public:
-		// methods
-	
-		virtual void :target:`read<doxid-classgeode_1_1_vertex_set_input_1a554fc7e35c43c3c4fe170e092bbe07a1>`();
 	};
 
 	// direct descendants
