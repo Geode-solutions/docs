@@ -39,7 +39,7 @@ export default {
         route: "opengeode-io"
       },
       { 
-        title: "OpenGeode-Geosciences, 
+        title: "OpenGeode-Geosciences", 
         descr: "OpenGeode module for Geosciences", 
         route: "opengeode-geosciences"
       }
