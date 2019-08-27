@@ -1,0 +1,42 @@
+.. index:: pair: class; geode::Horizons
+.. _doxid-classgeode_1_1_horizons:
+
+template class geode::Horizons
+==============================
+
+.. toctree::
+	:hidden:
+
+	class_geode_Horizons_HorizonRange.rst
+	class_geode_Horizons_HorizonRangeBase.rst
+	class_geode_Horizons_ModifiableHorizonRange.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <horizons.h>
+	
+	template <index_t dimension>
+	class Horizons
+	{
+	public:
+		// classes
+	
+		class :ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>`;
+		class :ref:`HorizonRangeBase<doxid-classgeode_1_1_horizons_1_1_horizon_range_base>`;
+		class :ref:`ModifiableHorizonRange<doxid-classgeode_1_1_horizons_1_1_modifiable_horizon_range>`;
+
+		// methods
+	
+		index_t :target:`nb_horizons<doxid-classgeode_1_1_horizons_1a72b088ac3bf22e638e111bbdbfbc7ec8>`() const;
+		const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& :target:`horizon<doxid-classgeode_1_1_horizons_1aee399b0b6b6db924e22699a0f0e2435b>`(const uuid& id) const;
+		:ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>` :target:`horizons<doxid-classgeode_1_1_horizons_1ab93a8d9950015e80d5463bf29e89469e>`() const;
+		std::vector<std::string> :target:`save_horizons<doxid-classgeode_1_1_horizons_1ad483870b6dfeffe33001260b5ebbfc25>`(const std::string& directory) const;
+	};
+
+	// direct descendants
+
+	class :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`;

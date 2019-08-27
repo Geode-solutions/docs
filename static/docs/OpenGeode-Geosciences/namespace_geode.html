@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>namespace geode &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="namespace geode::detail" href="namespace_geode_detail.html" />
+    <link rel="prev" title="Global Namespace" href="global.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="namespace-geode">
+<span id="doxid-namespacegeode"></span><span id="index-0"></span><h1>namespace geode</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">geode</span> <span class="p">{</span>
+
+<span class="c1">// namespaces</span>
+
+<span class="k">namespace</span> <a class="reference internal" href="namespace_geode_detail.html#doxid-namespacegeode-1-1detail"><span class="std std-ref">geode::detail</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_StructuralModelInput.html#doxid-classgeode-1-1-structural-model-input"><span class="std std-ref">StructuralModelInput</span></a><span></span><span class="p">,</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab3b4084f6fc719ec50a1dcc8b70d8121">StructuralModelInputFactory</span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_StructuralModelOutput.html#doxid-classgeode-1-1-structural-model-output"><span class="std std-ref">StructuralModelOutput</span></a><span></span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4080d585755278673b19756c46e1028c">StructuralModelOutputFactory</span><span></span><span class="p">;</span>
+
+<span class="c1">// classes</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Fault.html#doxid-classgeode-1-1-fault"><span class="std std-ref">Fault</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults"><span class="std std-ref">Faults</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_FaultsBuilder.html#doxid-classgeode-1-1-faults-builder"><span class="std std-ref">FaultsBuilder</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Horizon.html#doxid-classgeode-1-1-horizon"><span class="std std-ref">Horizon</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons"><span class="std std-ref">Horizons</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_HorizonsBuilder.html#doxid-classgeode-1-1-horizons-builder"><span class="std std-ref">HorizonsBuilder</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeStructuralModelInput.html#doxid-classgeode-1-1-open-geode-structural-model-input"><span class="std std-ref">OpenGeodeStructuralModelInput</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeStructuralModelOutput.html#doxid-classgeode-1-1-open-geode-structural-model-output"><span class="std std-ref">OpenGeodeStructuralModelOutput</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModelBuilder.html#doxid-classgeode-1-1-structural-model-builder"><span class="std std-ref">StructuralModelBuilder</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModelInput.html#doxid-classgeode-1-1-structural-model-input"><span class="std std-ref">StructuralModelInput</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModelOutput.html#doxid-classgeode-1-1-structural-model-output"><span class="std std-ref">StructuralModelOutput</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// global functions</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a953eca29c715691e332b39cef2ba529c">FORWARD_DECLARATION_DIMENSION_CLASS</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Fault.html#doxid-classgeode-1-1-fault"><span class="std std-ref">Fault</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0f23c356286ee32ad1e921970677dad4">FORWARD_DECLARATION_DIMENSION_CLASS</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults"><span class="std std-ref">Faults</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad3992ab412f660265280d8e3d236c5ca">FORWARD_DECLARATION_DIMENSION_CLASS</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Horizon.html#doxid-classgeode-1-1-horizon"><span class="std std-ref">Horizon</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa14c0fbda1c21d46269f8f48083c930d">FORWARD_DECLARATION_DIMENSION_CLASS</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons"><span class="std std-ref">Horizons</span></a><span></span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ae3663b1c1416d9b40e81a48eaa4b9441"><span class="std std-ref">register_geosciences_serialize_pcontext</span></a><span></span><span class="p">(</span><span class="n">PContext</span><span class="o">&amp;</span> <span class="n">context</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a1ac997fa60ed4bd714610bcaa1403571"><span class="std std-ref">register_geosciences_deserialize_pcontext</span></a><span></span><span class="p">(</span><span class="n">PContext</span><span class="o">&amp;</span> <span class="n">context</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9c94113eab86ec12cd09b83a2a9faf4b">FORWARD_DECLARATION_DIMENSION_CLASS</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_FaultsBuilder.html#doxid-classgeode-1-1-faults-builder"><span class="std std-ref">FaultsBuilder</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa8a835e22495dda587443407042be92b">ALIAS_2D_AND_3D</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Fault.html#doxid-classgeode-1-1-fault"><span class="std std-ref">Fault</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7de8aff46871b888f294784bed9bdca1">ALIAS_2D_AND_3D</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults"><span class="std std-ref">Faults</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab8a66df746ac34753e25a6bf637e270b">FORWARD_DECLARATION_DIMENSION_CLASS</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_HorizonsBuilder.html#doxid-classgeode-1-1-horizons-builder"><span class="std std-ref">HorizonsBuilder</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1af19826a31c76aaa33efad0be302110f6">ALIAS_2D_AND_3D</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Horizon.html#doxid-classgeode-1-1-horizon"><span class="std std-ref">Horizon</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1020afb295a641bdc1a840c6cb850ba7">ALIAS_2D_AND_3D</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons"><span class="std std-ref">Horizons</span></a><span></span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a987388a72aeb0ddd6fdb7b20a82ee0ac"><span class="std std-ref">load_structural_model</span></a><span></span><span class="p">(</span>
+    <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <a class="reference internal" href="#doxid-namespacegeode-1aef274f5f60899b94120f344d30611ab0"><span class="std std-ref">save_structural_model</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
+<span class="p">}</span> <span class="c1">// namespace geode</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-namespacegeode"></span><h2>Detailed Documentation</h2>
+<div class="section" id="global-functions">
+<h3>Global Functions</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae3663b1c1416d9b40e81a48eaa4b9441"><span id="index-1"></span><span></span><span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <span class="n">register_geosciences_serialize_pcontext</span><span class="p">(</span><span class="n">PContext</span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
+<p>Register all the information needed by Bitsery to serialize the objects in the geosciences library. The context can be used only once per archive.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>context</p></td>
+<td><p>The context where to register this information.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a1ac997fa60ed4bd714610bcaa1403571"><span id="index-2"></span><span></span><span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <span class="n">register_geosciences_deserialize_pcontext</span><span class="p">(</span><span class="n">PContext</span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
+<p>Register all the information needed by Bitsery to deserialize the objects in the geosciences library. The context can be used only once per archive.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>context</p></td>
+<td><p>The context where to register this information.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a987388a72aeb0ddd6fdb7b20a82ee0ac"><span id="index-3"></span><span></span><span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <span class="n">load_structural_model</span><span class="p">(</span>
+    <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">filename</span>
+    <span class="p">)</span></pre>
+<p>API function for loading a <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a>. The adequate loader is called depending on the filename extension.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>structural_model</p></td>
+<td><p>Loaded <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>filename</p></td>
+<td><p>Path to the file to load.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aef274f5f60899b94120f344d30611ab0"><span id="index-4"></span><span></span><span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <span class="n">save_structural_model</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">filename</span>
+    <span class="p">)</span></pre>
+<p>API function for saving a <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a>. The adequate saver is called depending on the given filename extension.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>structural_model</p></td>
+<td><p><a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a> to save.</p></td>
+</tr>
+<tr class="row-even"><td><p>filename</p></td>
+<td><p>Path to the file where save the <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/namespace_geode.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

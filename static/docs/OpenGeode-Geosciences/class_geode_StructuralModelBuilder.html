@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::StructuralModelBuilder &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::StructuralModelInput" href="class_geode_StructuralModelInput.html" />
+    <link rel="prev" title="class geode::StructuralModel" href="class_geode_StructuralModel.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-structuralmodelbuilder">
+<span id="doxid-classgeode-1-1-structural-model-builder"></span><span id="index-0"></span><h1>class geode::StructuralModelBuilder</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Class managing modifications of a <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;structural_model_builder.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">StructuralModelBuilder</span><span class="p">:</span>
+    <span class="k">public</span> <span class="n">BRepBuilder</span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_FaultsBuilder.html#doxid-classgeode-1-1-faults-builder"><span class="std std-ref">geode::FaultsBuilder</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_HorizonsBuilder.html#doxid-classgeode-1-1-horizons-builder"><span class="std std-ref">geode::HorizonsBuilder</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1adaa334138eff750d52ec3f0bcff1a4e3">StructuralModelBuilder</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1a69e6317754624bf944beb6d2c25172af">add_fault</span><span></span><span class="p">();</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1a217c78dec273295715bcf273df22a1ce">add_fault</span><span></span><span class="p">(</span><span class="k">typename</span> <span class="n">Fault3D</span><span class="o">::</span><span class="n">FAULT_TYPE</span> <span class="n">type</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1a8f9c2b1741226fe314168ff6c6a10fdf">add_surface_in_fault</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Fault3D</span><span class="o">&amp;</span> <span class="n">fault</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1a50eecd5acdcea94ce012b6ef5be8f570">remove_fault</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Fault3D</span><span class="o">&amp;</span> <span class="n">fault</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1a59d799086e367948498737af391802aa">add_horizon</span><span></span><span class="p">();</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1a3fa06395f298cf9a5fefb73eb2466b7e">add_horizon</span><span></span><span class="p">(</span><span class="k">typename</span> <span class="n">Horizon3D</span><span class="o">::</span><span class="n">HORIZON_TYPE</span> <span class="n">type</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1aff9886fb2e26ea33a0d8c7efad11d05d">add_surface_in_horizon</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Horizon3D</span><span class="o">&amp;</span> <span class="n">horizon</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1aae160d2bc57bcbee1fbdd46cf30945b4">remove_horizon</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon3D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">);</span>
+<span class="p">};</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_FaultsBuilder.html#doxid-classgeode-1-1-faults-builder-1a496b6e10b92edee7672563405e959373"><span class="std std-ref">load_faults</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_FaultsBuilder.html#doxid-classgeode-1-1-faults-builder-1abdb5bb7ab5c434b49453364292e8f72b"><span class="std std-ref">set_fault_type</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">fault_id</span><span class="p">,</span> <span class="k">typename</span> <a class="reference internal" href="class_geode_Fault.html#doxid-classgeode-1-1-fault"><span class="std std-ref">Fault</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">FAULT_TYPE</span> <span class="n">type</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_HorizonsBuilder.html#doxid-classgeode-1-1-horizons-builder-1ac567003af741f8e3012a91fc8103e9a8"><span class="std std-ref">load_horizons</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_HorizonsBuilder.html#doxid-classgeode-1-1-horizons-builder-1aae9569213b2ae67e06c1e77d63f6eeb6"><span class="std std-ref">set_horizon_type</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">horizon_id</span><span class="p">,</span> <span class="k">typename</span> <a class="reference internal" href="class_geode_Horizon.html#doxid-classgeode-1-1-horizon"><span class="std std-ref">Horizon</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">HORIZON_TYPE</span> <span class="n">type</span><span class="p">);</span></pre>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_StructuralModelBuilder.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

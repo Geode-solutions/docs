@@ -1,0 +1,26 @@
+.. index:: pair: namespace; geode::detail
+.. _doxid-namespacegeode_1_1detail:
+
+namespace geode::detail
+=======================
+
+.. toctree::
+	:hidden:
+
+	class_geode_detail_GeologicalComponentsStorage.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace detail {
+
+	// classes
+
+	template <typename Component>
+	class :ref:`GeologicalComponentsStorage<doxid-classgeode_1_1detail_1_1_geological_components_storage>`;
+
+	} // namespace detail

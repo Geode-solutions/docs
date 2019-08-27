@@ -1,0 +1,34 @@
+.. index:: pair: class; geode::FaultsBuilder
+.. _doxid-classgeode_1_1_faults_builder:
+
+template class geode::FaultsBuilder
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <faults_builder.h>
+	
+	template <index_t dimension>
+	class FaultsBuilder
+	{
+	public:
+		// methods
+	
+		void :target:`load_faults<doxid-classgeode_1_1_faults_builder_1a496b6e10b92edee7672563405e959373>`(const std::string& directory);
+	
+		void :target:`set_fault_type<doxid-classgeode_1_1_faults_builder_1abdb5bb7ab5c434b49453364292e8f72b>`(
+			const uuid& fault_id,
+			typename :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>::FAULT_TYPE type
+			);
+	};
+
+	// direct descendants
+
+	class :ref:`StructuralModelBuilder<doxid-classgeode_1_1_structural_model_builder>`;

@@ -1,0 +1,30 @@
+.. index:: pair: class; geode::detail::GeologicalComponentsStorage
+.. _doxid-classgeode_1_1detail_1_1_geological_components_storage:
+
+template class geode::detail::GeologicalComponentsStorage
+=========================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <components_storage.h>
+	
+	template <typename Component>
+	class GeologicalComponentsStorage: public ComponentsStorage< Component >
+	{
+	public:
+		// typedefs
+	
+		typedef ComponentsStorage<Component> :target:`baseclass<doxid-classgeode_1_1detail_1_1_geological_components_storage_1a0d118b4e6c98ca5535870cf83a2e7783>`;
+
+		// methods
+	
+		void :target:`register_librairies_in_serialize_pcontext<doxid-classgeode_1_1detail_1_1_geological_components_storage_1a879864f71af5f74065a68f665740ff13>`(TContext& context) const;
+		void :target:`register_librairies_in_deserialize_pcontext<doxid-classgeode_1_1detail_1_1_geological_components_storage_1a8bc35faf751dd1516811ff277e778294>`(TContext& context) const;
+	};

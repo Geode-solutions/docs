@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::Horizons::HorizonRangeBase
+.. _doxid-classgeode_1_1_horizons_1_1_horizon_range_base:
+
+class geode::Horizons::HorizonRangeBase
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <horizons.h>
+	
+	class HorizonRangeBase
+	{
+	public:
+		// methods
+	
+		bool :target:`operator !=<doxid-classgeode_1_1_horizons_1_1_horizon_range_base_1a2894e97dd08d08a9ee87fb6a36e61a98>` (const HorizonRangeBase&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_horizons_1_1_horizon_range_base_1a1a3f39f75a813eef1a95d413894177f6>` ();
+	};
+
+	// direct descendants
+
+	class :ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>`;

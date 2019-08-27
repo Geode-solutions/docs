@@ -1,0 +1,211 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+	namespace_geode_detail.rst
+	class_geode_Fault.rst
+	class_geode_Faults.rst
+	class_geode_FaultsBuilder.rst
+	class_geode_Horizon.rst
+	class_geode_Horizons.rst
+	class_geode_HorizonsBuilder.rst
+	class_geode_OpenGeodeStructuralModelInput.rst
+	class_geode_OpenGeodeStructuralModelOutput.rst
+	class_geode_StructuralModel.rst
+	class_geode_StructuralModelBuilder.rst
+	class_geode_StructuralModelInput.rst
+	class_geode_StructuralModelOutput.rst
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// namespaces
+
+	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
+
+	// typedefs
+
+	typedef Factory<std::string, :ref:`StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`, :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`&, std::string> :target:`StructuralModelInputFactory<doxid-namespacegeode_1ab3b4084f6fc719ec50a1dcc8b70d8121>`;
+	typedef Factory<std::string, :ref:`StructuralModelOutput<doxid-classgeode_1_1_structural_model_output>`, const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`&, std::string> :target:`StructuralModelOutputFactory<doxid-namespacegeode_1a4080d585755278673b19756c46e1028c>`;
+
+	// classes
+
+	template <index_t dimension>
+	class :ref:`Fault<doxid-classgeode_1_1_fault>`;
+
+	template <index_t dimension>
+	class :ref:`Faults<doxid-classgeode_1_1_faults>`;
+
+	template <index_t dimension>
+	class :ref:`FaultsBuilder<doxid-classgeode_1_1_faults_builder>`;
+
+	template <index_t dimension>
+	class :ref:`Horizon<doxid-classgeode_1_1_horizon>`;
+
+	template <index_t dimension>
+	class :ref:`Horizons<doxid-classgeode_1_1_horizons>`;
+
+	template <index_t dimension>
+	class :ref:`HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`;
+
+	class :ref:`OpenGeodeStructuralModelInput<doxid-classgeode_1_1_open_geode_structural_model_input>`;
+	class :ref:`OpenGeodeStructuralModelOutput<doxid-classgeode_1_1_open_geode_structural_model_output>`;
+	class :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`;
+	class :ref:`StructuralModelBuilder<doxid-classgeode_1_1_structural_model_builder>`;
+	class :ref:`StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`;
+	class :ref:`StructuralModelOutput<doxid-classgeode_1_1_structural_model_output>`;
+
+	// global functions
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a953eca29c715691e332b39cef2ba529c>`(:ref:`Fault<doxid-classgeode_1_1_fault>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0f23c356286ee32ad1e921970677dad4>`(:ref:`Faults<doxid-classgeode_1_1_faults>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ad3992ab412f660265280d8e3d236c5ca>`(:ref:`Horizon<doxid-classgeode_1_1_horizon>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa14c0fbda1c21d46269f8f48083c930d>`(:ref:`Horizons<doxid-classgeode_1_1_horizons>`);
+	void opengeode_geosciences_geosciences_api :ref:`register_geosciences_serialize_pcontext<doxid-namespacegeode_1ae3663b1c1416d9b40e81a48eaa4b9441>`(PContext& context);
+	void opengeode_geosciences_geosciences_api :ref:`register_geosciences_deserialize_pcontext<doxid-namespacegeode_1a1ac997fa60ed4bd714610bcaa1403571>`(PContext& context);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9c94113eab86ec12cd09b83a2a9faf4b>`(:ref:`FaultsBuilder<doxid-classgeode_1_1_faults_builder>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa8a835e22495dda587443407042be92b>`(:ref:`Fault<doxid-classgeode_1_1_fault>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7de8aff46871b888f294784bed9bdca1>`(:ref:`Faults<doxid-classgeode_1_1_faults>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab8a66df746ac34753e25a6bf637e270b>`(:ref:`HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1af19826a31c76aaa33efad0be302110f6>`(:ref:`Horizon<doxid-classgeode_1_1_horizon>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1020afb295a641bdc1a840c6cb850ba7>`(:ref:`Horizons<doxid-classgeode_1_1_horizons>`);
+
+	void opengeode_geosciences_geosciences_api :ref:`load_structural_model<doxid-namespacegeode_1a987388a72aeb0ddd6fdb7b20a82ee0ac>`(
+		:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
+		const std::string& filename
+		);
+
+	void opengeode_geosciences_geosciences_api :ref:`save_structural_model<doxid-namespacegeode_1aef274f5f60899b94120f344d30611ab0>`(
+		const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
+		const std::string& filename
+		);
+
+	} // namespace geode
+.. _details-namespacegeode:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Global Functions
+----------------
+
+.. index:: pair: function; register_geosciences_serialize_pcontext
+.. _doxid-namespacegeode_1ae3663b1c1416d9b40e81a48eaa4b9441:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geosciences_geosciences_api register_geosciences_serialize_pcontext(PContext& context)
+
+Register all the information needed by Bitsery to serialize the objects in the geosciences library. The context can be used only once per archive.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- context
+
+		- The context where to register this information.
+
+.. index:: pair: function; register_geosciences_deserialize_pcontext
+.. _doxid-namespacegeode_1a1ac997fa60ed4bd714610bcaa1403571:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geosciences_geosciences_api register_geosciences_deserialize_pcontext(PContext& context)
+
+Register all the information needed by Bitsery to deserialize the objects in the geosciences library. The context can be used only once per archive.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- context
+
+		- The context where to register this information.
+
+.. index:: pair: function; load_structural_model
+.. _doxid-namespacegeode_1a987388a72aeb0ddd6fdb7b20a82ee0ac:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geosciences_geosciences_api load_structural_model(
+		:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
+		const std::string& filename
+		)
+
+API function for loading a :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- structural_model
+
+		- Loaded :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_structural_model
+.. _doxid-namespacegeode_1aef274f5f60899b94120f344d30611ab0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geosciences_geosciences_api save_structural_model(
+		const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
+		const std::string& filename
+		)
+
+API function for saving a :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- structural_model
+
+		- :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`.
+

@@ -1,0 +1,35 @@
+.. index:: pair: class; geode::Fault
+.. _doxid-classgeode_1_1_fault:
+
+template class geode::Fault
+===========================
+
+.. toctree::
+	:hidden:
+
+	enum_geode_Fault_FAULT_TYPE.rst
+
+Geological component describing a :ref:`Fault <doxid-classgeode_1_1_fault>`. This component is described by a fault type.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <fault.h>
+	
+	template <index_t dimension>
+	class Fault: public Component< dimension >
+	{
+	public:
+		// enums
+	
+		enum :ref:`FAULT_TYPE<doxid-classgeode_1_1_fault_1a73a0975687303a272447a52fc22b26fd>`;
+
+		// methods
+	
+		ComponentType :target:`component_type<doxid-classgeode_1_1_fault_1aa7658e4902be59886303080c1f65465e>`() const;
+		ComponentID :target:`component_id<doxid-classgeode_1_1_fault_1ad27294baf072791bc8a4494915660e04>`() const;
+		bool :target:`has_type<doxid-classgeode_1_1_fault_1a524f304aac3c32798d82a44d9cdfb4b6>`() const;
+		:ref:`FAULT_TYPE<doxid-classgeode_1_1_fault_1a73a0975687303a272447a52fc22b26fd>` :target:`type<doxid-classgeode_1_1_fault_1acef42c238cbfb34af5b7619e6611dea7>`() const;
+		static ComponentType :target:`component_type_static<doxid-classgeode_1_1_fault_1a0ce699294d4646994b27e3a21f13b3af>`();
+	};

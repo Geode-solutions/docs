@@ -1,0 +1,63 @@
+.. index:: pair: class; geode::StructuralModelBuilder
+.. _doxid-classgeode_1_1_structural_model_builder:
+
+class geode::StructuralModelBuilder
+===================================
+
+.. toctree::
+	:hidden:
+
+Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <structural_model_builder.h>
+	
+	class StructuralModelBuilder:
+	    public BRepBuilder,
+	    public :ref:`geode::FaultsBuilder<doxid-classgeode_1_1_faults_builder>`,
+	    public :ref:`geode::HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`
+	{
+	public:
+		// construction
+	
+		:target:`StructuralModelBuilder<doxid-classgeode_1_1_structural_model_builder_1adaa334138eff750d52ec3f0bcff1a4e3>`(:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model);
+
+		// methods
+	
+		const uuid& :target:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a69e6317754624bf944beb6d2c25172af>`();
+		const uuid& :target:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a217c78dec273295715bcf273df22a1ce>`(typename Fault3D::FAULT_TYPE type);
+	
+		void :target:`add_surface_in_fault<doxid-classgeode_1_1_structural_model_builder_1a8f9c2b1741226fe314168ff6c6a10fdf>`(
+			const Surface3D& surface,
+			const Fault3D& fault
+			);
+	
+		void :target:`remove_fault<doxid-classgeode_1_1_structural_model_builder_1a50eecd5acdcea94ce012b6ef5be8f570>`(const Fault3D& fault);
+		const uuid& :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a59d799086e367948498737af391802aa>`();
+		const uuid& :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a3fa06395f298cf9a5fefb73eb2466b7e>`(typename Horizon3D::HORIZON_TYPE type);
+	
+		void :target:`add_surface_in_horizon<doxid-classgeode_1_1_structural_model_builder_1aff9886fb2e26ea33a0d8c7efad11d05d>`(
+			const Surface3D& surface,
+			const Horizon3D& horizon
+			);
+	
+		void :target:`remove_horizon<doxid-classgeode_1_1_structural_model_builder_1aae160d2bc57bcbee1fbdd46cf30945b4>`(const Horizon3D& horizon);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		void :ref:`load_faults<doxid-classgeode_1_1_faults_builder_1a496b6e10b92edee7672563405e959373>`(const std::string& directory);
+		void :ref:`set_fault_type<doxid-classgeode_1_1_faults_builder_1abdb5bb7ab5c434b49453364292e8f72b>`(const uuid& fault_id, typename :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>::FAULT_TYPE type);
+		void :ref:`load_horizons<doxid-classgeode_1_1_horizons_builder_1ac567003af741f8e3012a91fc8103e9a8>`(const std::string& directory);
+		void :ref:`set_horizon_type<doxid-classgeode_1_1_horizons_builder_1aae9569213b2ae67e06c1e77d63f6eeb6>`(const uuid& horizon_id, typename :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>::HORIZON_TYPE type);
+

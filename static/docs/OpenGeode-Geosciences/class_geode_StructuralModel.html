@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::StructuralModel &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::StructuralModelBuilder" href="class_geode_StructuralModelBuilder.html" />
+    <link rel="prev" title="class geode::OpenGeodeStructuralModelOutput" href="class_geode_OpenGeodeStructuralModelOutput.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-structuralmodel">
+<span id="doxid-classgeode-1-1-structural-model"></span><span id="index-0"></span><h1>class geode::StructuralModel</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>A Structural Model is a Boundary Representation composed of <a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults"><span class="std std-ref">Faults</span></a> and <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons"><span class="std std-ref">Horizons</span></a>.</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;structural_model.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">StructuralModel</span><span class="p">:</span>
+    <span class="k">public</span> <span class="n">BRep</span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults"><span class="std std-ref">geode::Faults</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons"><span class="std std-ref">geode::Horizons</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1a9967f59c8dbb42317d60f16ec1281cde">native_extension_static</span><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1aa90b9672515d2060909191e29350971a">native_extension</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// classes</span>
+
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Faults_FaultRange.html#doxid-classgeode-1-1-faults-1-1-fault-range"><span class="std std-ref">FaultRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Faults_FaultRangeBase.html#doxid-classgeode-1-1-faults-1-1-fault-range-base"><span class="std std-ref">FaultRangeBase</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Faults_ModifiableFaultRange.html#doxid-classgeode-1-1-faults-1-1-modifiable-fault-range"><span class="std std-ref">ModifiableFaultRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Horizons_HorizonRange.html#doxid-classgeode-1-1-horizons-1-1-horizon-range"><span class="std std-ref">HorizonRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Horizons_HorizonRangeBase.html#doxid-classgeode-1-1-horizons-1-1-horizon-range-base"><span class="std std-ref">HorizonRangeBase</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Horizons_ModifiableHorizonRange.html#doxid-classgeode-1-1-horizons-1-1-modifiable-horizon-range"><span class="std std-ref">ModifiableHorizonRange</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults-1a5f9cc2167fa58d73cddb65cc6634e87c"><span class="std std-ref">nb_faults</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Fault.html#doxid-classgeode-1-1-fault"><span class="std std-ref">Fault</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults-1ae31362b67daf5bacdb08d9cc08369721"><span class="std std-ref">fault</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Faults_FaultRange.html#doxid-classgeode-1-1-faults-1-1-fault-range"><span class="std std-ref">FaultRange</span></a><span></span> <a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults-1a682d8476f2554b4af790b5c1cc9e2737"><span class="std std-ref">faults</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults-1afeed286b14838345ef7eaf72d5d970a5"><span class="std std-ref">save_faults</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1a72b088ac3bf22e638e111bbdbfbc7ec8"><span class="std std-ref">nb_horizons</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Horizon.html#doxid-classgeode-1-1-horizon"><span class="std std-ref">Horizon</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1aee399b0b6b6db924e22699a0f0e2435b"><span class="std std-ref">horizon</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Horizons_HorizonRange.html#doxid-classgeode-1-1-horizons-1-1-horizon-range"><span class="std std-ref">HorizonRange</span></a><span></span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1ab93a8d9950015e80d5463bf29e89469e"><span class="std std-ref">horizons</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1ad483870b6dfeffe33001260b5ebbfc25"><span class="std std-ref">save_horizons</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span></pre>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_StructuralModel.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

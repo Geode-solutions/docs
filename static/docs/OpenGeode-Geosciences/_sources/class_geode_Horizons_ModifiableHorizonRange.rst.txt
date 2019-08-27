@@ -1,0 +1,42 @@
+.. index:: pair: class; geode::Horizons::ModifiableHorizonRange
+.. _doxid-classgeode_1_1_horizons_1_1_modifiable_horizon_range:
+
+class geode::Horizons::ModifiableHorizonRange
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class ModifiableHorizonRange: public :ref:`geode::Horizons::HorizonRangeBase<doxid-classgeode_1_1_horizons_1_1_horizon_range_base>`
+	{
+	public:
+		// construction
+	
+		:target:`ModifiableHorizonRange<doxid-classgeode_1_1_horizons_1_1_modifiable_horizon_range_1a12a22cde24d24a296e5e41c8c026c507>`(const :ref:`Horizons<doxid-classgeode_1_1_horizons>`& horizons);
+
+		// methods
+	
+		const ModifiableHorizonRange& :target:`begin<doxid-classgeode_1_1_horizons_1_1_modifiable_horizon_range_1aeb6d9b47fe6ab0ba2ad5294018e066fb>`() const;
+		const ModifiableHorizonRange& :target:`end<doxid-classgeode_1_1_horizons_1_1_modifiable_horizon_range_1aad8745eecb77032eeb7c2211049a617c>`() const;
+		:ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& :target:`operator *<doxid-classgeode_1_1_horizons_1_1_modifiable_horizon_range_1aabdd6b7cb8610046dd56518bfa7a955b>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_horizons_1_1_horizon_range_base_1a2894e97dd08d08a9ee87fb6a36e61a98>` (const :ref:`HorizonRangeBase<doxid-classgeode_1_1_horizons_1_1_horizon_range_base>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_horizons_1_1_horizon_range_base_1a1a3f39f75a813eef1a95d413894177f6>` ();
+

@@ -1,0 +1,56 @@
+.. index:: pair: class; geode::StructuralModel
+.. _doxid-classgeode_1_1_structural_model:
+
+class geode::StructuralModel
+============================
+
+.. toctree::
+	:hidden:
+
+A Structural Model is a Boundary Representation composed of :ref:`Faults <doxid-classgeode_1_1_faults>` and :ref:`Horizons <doxid-classgeode_1_1_horizons>`.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <structural_model.h>
+	
+	class StructuralModel:
+	    public BRep,
+	    public :ref:`geode::Faults<doxid-classgeode_1_1_faults>`,
+	    public :ref:`geode::Horizons<doxid-classgeode_1_1_horizons>`
+	{
+	public:
+		// methods
+	
+		static std::string :target:`native_extension_static<doxid-classgeode_1_1_structural_model_1a9967f59c8dbb42317d60f16ec1281cde>`();
+		std::string :target:`native_extension<doxid-classgeode_1_1_structural_model_1aa90b9672515d2060909191e29350971a>`() const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// classes
+	
+		class :ref:`FaultRange<doxid-classgeode_1_1_faults_1_1_fault_range>`;
+		class :ref:`FaultRangeBase<doxid-classgeode_1_1_faults_1_1_fault_range_base>`;
+		class :ref:`ModifiableFaultRange<doxid-classgeode_1_1_faults_1_1_modifiable_fault_range>`;
+		class :ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>`;
+		class :ref:`HorizonRangeBase<doxid-classgeode_1_1_horizons_1_1_horizon_range_base>`;
+		class :ref:`ModifiableHorizonRange<doxid-classgeode_1_1_horizons_1_1_modifiable_horizon_range>`;
+
+		// methods
+	
+		index_t :ref:`nb_faults<doxid-classgeode_1_1_faults_1a5f9cc2167fa58d73cddb65cc6634e87c>`() const;
+		const :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>& :ref:`fault<doxid-classgeode_1_1_faults_1ae31362b67daf5bacdb08d9cc08369721>`(const uuid& id) const;
+		:ref:`FaultRange<doxid-classgeode_1_1_faults_1_1_fault_range>` :ref:`faults<doxid-classgeode_1_1_faults_1a682d8476f2554b4af790b5c1cc9e2737>`() const;
+		std::vector<std::string> :ref:`save_faults<doxid-classgeode_1_1_faults_1afeed286b14838345ef7eaf72d5d970a5>`(const std::string& directory) const;
+		index_t :ref:`nb_horizons<doxid-classgeode_1_1_horizons_1a72b088ac3bf22e638e111bbdbfbc7ec8>`() const;
+		const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& :ref:`horizon<doxid-classgeode_1_1_horizons_1aee399b0b6b6db924e22699a0f0e2435b>`(const uuid& id) const;
+		:ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>` :ref:`horizons<doxid-classgeode_1_1_horizons_1ab93a8d9950015e80d5463bf29e89469e>`() const;
+		std::vector<std::string> :ref:`save_horizons<doxid-classgeode_1_1_horizons_1ad483870b6dfeffe33001260b5ebbfc25>`(const std::string& directory) const;
+
