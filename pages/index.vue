@@ -37,6 +37,11 @@ export default {
         title: "OpenGeode-IO", 
         descr: "Implementation of input and output formats for OpenGeode", 
         route: "opengeode-io"
+      },
+      { 
+        title: "OpenGeode-Geosciences, 
+        descr: "OpenGeode module for Geosciences", 
+        route: "opengeode-geosciences"
       }
     ]
   })
