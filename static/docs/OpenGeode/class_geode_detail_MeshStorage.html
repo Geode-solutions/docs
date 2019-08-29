@@ -43,11 +43,20 @@
 <span class="k">class</span> <span class="n">MeshStorage</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-mesh-storage-1a77a8fe2ff1664d579e7e1ef59faf4fb9">MeshStorage</span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-mesh-storage-1a7109aeac4e18f6d9f8f1f1ea94dae0bd">MeshStorage</span><span></span><span class="p">(</span><span class="n">CreateMesh</span> <span class="n">impl</span><span class="p">);</span>
+
     <span class="c1">// methods</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-mesh-storage-1a6bf78bb9b43af40214615a5baf26a453">set_mesh</span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">Mesh</span><span class="o">&gt;</span> <span class="n">mesh</span><span class="p">);</span>
     <span class="k">const</span> <span class="n">Mesh</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-mesh-storage-1a30e278f92674bad837b55c9c066280ef">mesh</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">Mesh</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-mesh-storage-1a35fccb2be0d5c690db2571d473a498c9">modifiable_mesh</span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-mesh-storage-1a1758849570b31b0c88a29e9d4567c1cc">ensure_mesh_type</span><span></span><span class="p">();</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Archive</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-mesh-storage-1a4fe0e457ee9268f8ab0011f2eacb779b">serialize</span><span></span><span class="p">(</span><span class="n">Archive</span><span class="o">&amp;</span> <span class="n">archive</span><span class="p">);</span>
 <span class="p">};</span></pre>
 </div>
 

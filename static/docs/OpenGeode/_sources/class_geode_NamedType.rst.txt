@@ -29,4 +29,5 @@ CustomType is a new type with a std::string as underlying storage.
 	
 		const Type& :target:`get<doxid-classgeode_1_1_named_type_1ae2ce80984c0bf2851a60471dcbcb36a3>`() const;
 		bool :target:`operator ==<doxid-classgeode_1_1_named_type_1afb9bd149187dd0dea9c7e4f45e492973>` (const NamedType& other) const;
+		bool :target:`operator !=<doxid-classgeode_1_1_named_type_1a825c4d187fb1a4324ed89003bc67510d>` (const NamedType& other) const;
 	};

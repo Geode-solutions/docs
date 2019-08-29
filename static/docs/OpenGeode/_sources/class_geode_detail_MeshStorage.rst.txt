@@ -19,9 +19,18 @@ template class geode::detail::MeshStorage
 	class MeshStorage
 	{
 	public:
+		// construction
+	
+		:target:`MeshStorage<doxid-classgeode_1_1detail_1_1_mesh_storage_1a77a8fe2ff1664d579e7e1ef59faf4fb9>`();
+		:target:`MeshStorage<doxid-classgeode_1_1detail_1_1_mesh_storage_1a7109aeac4e18f6d9f8f1f1ea94dae0bd>`(CreateMesh impl);
+
 		// methods
 	
 		void :target:`set_mesh<doxid-classgeode_1_1detail_1_1_mesh_storage_1a6bf78bb9b43af40214615a5baf26a453>`(std::unique_ptr<Mesh> mesh);
 		const Mesh& :target:`mesh<doxid-classgeode_1_1detail_1_1_mesh_storage_1a30e278f92674bad837b55c9c066280ef>`() const;
 		Mesh& :target:`modifiable_mesh<doxid-classgeode_1_1detail_1_1_mesh_storage_1a35fccb2be0d5c690db2571d473a498c9>`();
+		void :target:`ensure_mesh_type<doxid-classgeode_1_1detail_1_1_mesh_storage_1a1758849570b31b0c88a29e9d4567c1cc>`();
+	
+		template <typename Archive>
+		void :target:`serialize<doxid-classgeode_1_1detail_1_1_mesh_storage_1a4fe0e457ee9268f8ab0011f2eacb779b>`(Archive& archive);
 	};
