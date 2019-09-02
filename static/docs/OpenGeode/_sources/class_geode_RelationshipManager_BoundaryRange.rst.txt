@@ -42,3 +42,5 @@ class geode::RelationshipManager::BoundaryRange
 	class :ref:`BlockBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range>`;
 	class :ref:`LineBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_line_boundary_range>`;
 	class :ref:`SurfaceBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_surface_boundary_range>`;
+	class :ref:`LineBoundaryRange<doxid-classgeode_1_1_section_1_1_line_boundary_range>`;
+	class :ref:`SurfaceBoundaryRange<doxid-classgeode_1_1_section_1_1_surface_boundary_range>`;

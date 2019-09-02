@@ -26,6 +26,7 @@ class geode::Input
 	// direct descendants
 
 	class :ref:`BRepInput<doxid-classgeode_1_1_b_rep_input>`;
+	class :ref:`SectionInput<doxid-classgeode_1_1_section_input>`;
 	class :ref:`VertexSetInput<doxid-classgeode_1_1_vertex_set_input>`;
 
 Inherited Members

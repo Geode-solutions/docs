@@ -28,3 +28,4 @@ Class managing modification of :ref:`GeoRepresentation <doxid-classgeode_1_1_geo
 	// direct descendants
 
 	class :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`;
+	class :ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`;

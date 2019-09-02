@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::OpenGeodeSectionOutput
+.. _doxid-classgeode_1_1_open_geode_section_output:
+
+class geode::OpenGeodeSectionOutput
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geode_section_output.h>
+	
+	class OpenGeodeSectionOutput: public :ref:`geode::SectionOutput<doxid-classgeode_1_1_section_output>`
+	{
+	public:
+		// construction
+	
+		:target:`OpenGeodeSectionOutput<doxid-classgeode_1_1_open_geode_section_output_1a402c8766026a83aa33283fb0285d0c34>`(
+			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+			std::string filename
+			);
+
+		// methods
+	
+		void :target:`archive_section_files<doxid-classgeode_1_1_open_geode_section_output_1ab5e8eb7a3efdab9eb59b483dec2a57d6>`(const :ref:`ZipFile<doxid-classgeode_1_1_zip_file>`& zip_writer) const;
+		virtual void :target:`write<doxid-classgeode_1_1_open_geode_section_output_1a93fc4eab75ee7b9c974c6186199e82d8>`() const;
+		static std::string :target:`extension<doxid-classgeode_1_1_open_geode_section_output_1abd19d93a8c8b531a60c471fe0990728f>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1a00af9913eee23e9bd533bed23ec29499>`() const;
+		virtual void :ref:`write<doxid-classgeode_1_1_output_1a9c2f7d16a0ccf42ed237626c7acfa3f9>`() const = 0;
+

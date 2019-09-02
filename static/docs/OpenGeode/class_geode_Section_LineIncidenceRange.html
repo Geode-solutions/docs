@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::Section::LineIncidenceRange &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::Section::SurfaceBoundaryRange" href="class_geode_Section_SurfaceBoundaryRange.html" />
+    <link rel="prev" title="class geode::Section::LineBoundaryRange" href="class_geode_Section_LineBoundaryRange.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-section-lineincidencerange">
+<span id="doxid-classgeode-1-1-section-1-1-line-incidence-range"></span><span id="index-0"></span><h1>class geode::Section::LineIncidenceRange</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;section.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">LineIncidenceRange</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_RelationshipManager_IncidenceRange.html#doxid-classgeode-1-1-relationship-manager-1-1-incidence-range"><span class="std std-ref">geode::RelationshipManager::IncidenceRange</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1-1-line-incidence-range-1a0b0a96b3e3b1b128a2e7792bafcb6658">LineIncidenceRange</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager.html#doxid-classgeode-1-1-relationship-manager"><span class="std std-ref">RelationshipManager</span></a><span></span><span class="o">&amp;</span> <span class="n">manager</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span>
+        <span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">LineIncidenceRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1-1-line-incidence-range-1a523f864addccf5b8a073f271a665bfdc">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">LineIncidenceRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1-1-line-incidence-range-1a15c2f700e6f80225dd5e1a024e077212">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1-1-line-incidence-range-1ad92a030b7d13442c5fbc01a1bf7108be">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager_IncidenceRange.html#doxid-classgeode-1-1-relationship-manager-1-1-incidence-range"><span class="std std-ref">IncidenceRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_RelationshipManager_IncidenceRange.html#doxid-classgeode-1-1-relationship-manager-1-1-incidence-range-1a09425ad1ad7cd3293ea2ade5497af8ab"><span class="std std-ref">begin</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager_IncidenceRange.html#doxid-classgeode-1-1-relationship-manager-1-1-incidence-range"><span class="std std-ref">IncidenceRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_RelationshipManager_IncidenceRange.html#doxid-classgeode-1-1-relationship-manager-1-1-incidence-range-1a745cc17eee038ad870b769fa1b072bcf"><span class="std std-ref">end</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_RelationshipManager_IncidenceRange.html#doxid-classgeode-1-1-relationship-manager-1-1-incidence-range-1a896942cd2148ca7c4ee819ce9fc6ee6c"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_RelationshipManager_IncidenceRange.html#doxid-classgeode-1-1-relationship-manager-1-1-incidence-range"><span class="std std-ref">IncidenceRange</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipManager_IncidenceRange.html#doxid-classgeode-1-1-relationship-manager-1-1-incidence-range-1aafeb8db8f919c35f7473f7462b3d0bb1"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_RelationshipManager_IncidenceRange.html#doxid-classgeode-1-1-relationship-manager-1-1-incidence-range-1ab96bb1401192dae0df2629aef467c92d"><span class="std std-ref">operator *</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_Section_LineIncidenceRange.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

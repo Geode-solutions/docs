@@ -1,0 +1,50 @@
+.. index:: pair: class; geode::Section::SurfaceBoundaryRange
+.. _doxid-classgeode_1_1_section_1_1_surface_boundary_range:
+
+class geode::Section::SurfaceBoundaryRange
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section.h>
+	
+	class SurfaceBoundaryRange: public :ref:`geode::RelationshipManager::BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`
+	{
+	public:
+		// construction
+	
+		:target:`SurfaceBoundaryRange<doxid-classgeode_1_1_section_1_1_surface_boundary_range_1a760f4be142b873eea777c447684b6c27>`(
+			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+			const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& manager,
+			const Surface2D& surface
+			);
+
+		// methods
+	
+		const SurfaceBoundaryRange& :target:`begin<doxid-classgeode_1_1_section_1_1_surface_boundary_range_1a57402d9558b7c8dddb497ed500a394a6>`() const;
+		const SurfaceBoundaryRange& :target:`end<doxid-classgeode_1_1_section_1_1_surface_boundary_range_1aed2f4b90c80340ba047ca0c5812b4b46>`() const;
+		const Line2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_surface_boundary_range_1a8820cff5e448f320348415c1272f5497>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`& :ref:`begin<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1aa05ec623d892c484af4cbfacc4ef8c8c>`() const;
+		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`& :ref:`end<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1a0f1d39ad2c5cb6b59b55c5a68c31cfc3>`() const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1a5e1bafb5241d3d880d1c9e5220d944b8>` (const :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1aa7cbef6da739bb002810ec02f6f7f61d>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator *<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range_1a996f27c3aeba86ffb8766a58e0bbb971>` () const;
+

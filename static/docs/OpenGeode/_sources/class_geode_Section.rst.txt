@@ -1,0 +1,55 @@
+.. index:: pair: class; geode::Section
+.. _doxid-classgeode_1_1_section:
+
+class geode::Section
+====================
+
+.. toctree::
+	:hidden:
+
+	class_geode_Section_CornerIncidenceRange.rst
+	class_geode_Section_LineBoundaryRange.rst
+	class_geode_Section_LineIncidenceRange.rst
+	class_geode_Section_SurfaceBoundaryRange.rst
+
+A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D :ref:`GeoRepresentation <doxid-classgeode_1_1_geo_representation>` composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, and :ref:`Surfaces <doxid-classgeode_1_1_surfaces>`. This class provides classes for range-based iteration on :ref:`Component <doxid-classgeode_1_1_component>` boundaries and incidences.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section.h>
+	
+	class Section: public :ref:`geode::GeoRepresentation<doxid-classgeode_1_1_geo_representation>`
+	{
+	public:
+		// classes
+	
+		class :ref:`CornerIncidenceRange<doxid-classgeode_1_1_section_1_1_corner_incidence_range>`;
+		class :ref:`LineBoundaryRange<doxid-classgeode_1_1_section_1_1_line_boundary_range>`;
+		class :ref:`LineIncidenceRange<doxid-classgeode_1_1_section_1_1_line_incidence_range>`;
+		class :ref:`SurfaceBoundaryRange<doxid-classgeode_1_1_section_1_1_surface_boundary_range>`;
+
+		// methods
+	
+		:ref:`LineBoundaryRange<doxid-classgeode_1_1_section_1_1_line_boundary_range>` :target:`boundaries<doxid-classgeode_1_1_section_1abfd1b63aeeefbcd1bce1232c08049b73>`(const Line2D& line) const;
+		:ref:`SurfaceBoundaryRange<doxid-classgeode_1_1_section_1_1_surface_boundary_range>` :target:`boundaries<doxid-classgeode_1_1_section_1a0ef3e0b94d6fdb24e58df89808298ad3>`(const Surface2D& surface) const;
+		:ref:`CornerIncidenceRange<doxid-classgeode_1_1_section_1_1_corner_incidence_range>` :target:`incidences<doxid-classgeode_1_1_section_1a2395b6bcc8c1fc62f1af4230dade6e78>`(const Corner2D& corner) const;
+		:ref:`LineIncidenceRange<doxid-classgeode_1_1_section_1_1_line_incidence_range>` :target:`incidences<doxid-classgeode_1_1_section_1ad8d78a1afb7179cc30c277454cc68bc0>`(const Line2D& line) const;
+		std::string :target:`native_extension<doxid-classgeode_1_1_section_1ae79d0c63b8b5205babd67a054b5f0d5e>`() const;
+		static std::string :target:`native_extension_static<doxid-classgeode_1_1_section_1a6b047f58b1915c2a8f3e39e46a5ec577>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& :ref:`relationships<doxid-classgeode_1_1_geo_representation_1a53442f05d1666984df7c9f65f3c08e58>`() const;
+		const :ref:`VertexIdentifier<doxid-classgeode_1_1_vertex_identifier>`& :ref:`unique_vertices<doxid-classgeode_1_1_geo_representation_1a7aea37c8934d213718b0dae39eaae1c3>`() const;
+		double :ref:`epsilon<doxid-classgeode_1_1_geo_representation_1a37247046bef4c26665723039d06c9c95>`() const;
+

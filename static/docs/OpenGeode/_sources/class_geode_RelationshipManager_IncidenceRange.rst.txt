@@ -42,3 +42,5 @@ class geode::RelationshipManager::IncidenceRange
 	class :ref:`CornerIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_corner_incidence_range>`;
 	class :ref:`LineIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_line_incidence_range>`;
 	class :ref:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range>`;
+	class :ref:`CornerIncidenceRange<doxid-classgeode_1_1_section_1_1_corner_incidence_range>`;
+	class :ref:`LineIncidenceRange<doxid-classgeode_1_1_section_1_1_line_incidence_range>`;
