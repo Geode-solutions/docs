@@ -62,6 +62,6 @@ Inherited Members
 	public:
 		// methods
 	
-		void :ref:`load_relationships<doxid-classgeode_1_1_geo_representation_builder_1a6ac56ba3f8671398e32cf0476b5d4934>`(const std::string& directory);
-		:ref:`VertexIdentifier<doxid-classgeode_1_1_vertex_identifier>`& :ref:`unique_vertices<doxid-classgeode_1_1_geo_representation_builder_1ab5555fd2b86b4d7e4dcdc0e18fcb0f2d>`();
+		void :ref:`load_relationships<doxid-classgeode_1_1_geo_representation_builder_1a614eab8c4ea1992beb5b3b7bb93e362f>`(const std::string& directory);
+		:ref:`VertexIdentifier<doxid-classgeode_1_1_vertex_identifier>`& :ref:`unique_vertices<doxid-classgeode_1_1_geo_representation_builder_1a5058b48d550540ce88e41100b843645c>`();
 

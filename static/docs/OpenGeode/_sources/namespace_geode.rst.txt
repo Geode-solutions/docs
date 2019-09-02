@@ -256,7 +256,7 @@ Overview
 	template <index_t dimension, template< index_t > class... Components>
 	class :ref:`GeoRepresentation<doxid-classgeode_1_1_geo_representation>`;
 
-	template <index_t dimension, template< index_t > class... EntityBuilderList>
+	template <index_t dimension, template< index_t > class... ComponentBuilderList>
 	class :ref:`GeoRepresentationBuilder<doxid-classgeode_1_1_geo_representation_builder>`;
 
 	class :ref:`Graph<doxid-classgeode_1_1_graph>`;

@@ -40,14 +40,14 @@
 <p>Class managing modification of <a class="reference internal" href="class_geode_GeoRepresentation.html#doxid-classgeode-1-1-geo-representation"><span class="std std-ref">GeoRepresentation</span></a> It gives a modifiable access to the <a class="reference internal" href="class_geode_VertexIdentifier.html#doxid-classgeode-1-1-vertex-identifier"><span class="std std-ref">VertexIdentifier</span></a></p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;georepresentation_builder.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">template</span><span class="o">&lt;</span> <span class="n">index_t</span> <span class="o">&gt;</span> <span class="k">class</span><span class="p">...</span> <span class="n">EntityBuilderList</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="nl">GeoRepresentationBuilder</span><span class="p">:</span> <span class="k">public</span> <span class="n">EntityBuilderList</span><span class="o">&lt;</span> <span class="n">dimension</span> <span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">template</span><span class="o">&lt;</span> <span class="n">index_t</span> <span class="o">&gt;</span> <span class="k">class</span><span class="p">...</span> <span class="n">ComponentBuilderList</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">GeoRepresentationBuilder</span><span class="p">:</span> <span class="k">public</span> <span class="n">ComponentBuilderList</span><span class="o">&lt;</span> <span class="n">dimension</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-geo-representation-builder-1a6ac56ba3f8671398e32cf0476b5d4934">load_relationships</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
-    <a class="reference internal" href="class_geode_VertexIdentifier.html#doxid-classgeode-1-1-vertex-identifier"><span class="std std-ref">VertexIdentifier</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-geo-representation-builder-1ab5555fd2b86b4d7e4dcdc0e18fcb0f2d">unique_vertices</span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-geo-representation-builder-1a614eab8c4ea1992beb5b3b7bb93e362f">load_relationships</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
+    <a class="reference internal" href="class_geode_VertexIdentifier.html#doxid-classgeode-1-1-vertex-identifier"><span class="std std-ref">VertexIdentifier</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-geo-representation-builder-1a5058b48d550540ce88e41100b843645c">unique_vertices</span><span></span><span class="p">();</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
