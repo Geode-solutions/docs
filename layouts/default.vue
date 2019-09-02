@@ -36,7 +36,8 @@
         items: [
           { title: 'OpenGeode', to: '/opengeode' },
           { title: 'OpenGeode-IO', to: '/opengeode-io' },
-          { title: 'OpenGeode-Geosciences', to: '/opengeode-geosciences' }
+          { title: 'OpenGeode-Geosciences', to: '/opengeode-geosciences' },
+          { title: 'OpenGeode-GeosciencesIO', to: '/opengeode-geosciencesio' }
         ]
       }
     }
