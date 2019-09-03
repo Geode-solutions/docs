@@ -1,0 +1,29 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+	class_geode_MLInput.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// classes
+
+	class :ref:`MLInput<doxid-classgeode_1_1_m_l_input>`;
+
+	// global functions
+
+	void opengeode_geosciencesio_geosciences_api :target:`initialize_geosciences_io<doxid-namespacegeode_1a833d9ee9b99c675a6c67f36de8ab1eba>`();
+
+	} // namespace geode
