@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::VertexIdentifier &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::VertexSet" href="class_geode_VertexSet.html" />
+    <link rel="prev" title="template class geode::Vector" href="class_geode_Vector.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-vertexidentifier">
+<span id="doxid-classgeode-1-1-vertex-identifier"></span><span id="index-0"></span><h1>class geode::VertexIdentifier</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>This class identifies groups of geometric component vertices as unique vertices. <a class="reference internal" href="#details-classgeode-1-1-vertex-identifier"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vertex_identifier.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">VertexIdentifier</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vertex-identifier-1ada2513c61421efbd388258503e8ab95e">nb_unique_vertices</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span><span class="o">&gt;&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1afff4a91d1a4c952faedd56585b938f59"><span class="std std-ref">mesh_component_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1ac1db26b74ed07f5b46ab8a8f5b1f3971"><span class="std std-ref">mesh_component_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1ad6f5f808567692a78009370abc1df495"><span class="std std-ref">mesh_component_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1a78f8b50c8066236be2be69b75703d29f"><span class="std std-ref">unique_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">component_vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">MeshComponent</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1aa0e48c044e602b71312bcef5e5f28d73"><span class="std std-ref">register_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">MeshComponent</span><span class="o">&amp;</span> <span class="n">component</span><span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">MeshComponent</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1a866790ece70b59b041490d38ccdf02da"><span class="std std-ref">remove_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">MeshComponent</span><span class="o">&amp;</span> <span class="n">component</span><span class="p">);</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1a71979507c1e499c162ea107904b0d5e7"><span class="std std-ref">create_unique_vertex</span></a><span></span><span class="p">();</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1a1f68247b957f1b7905db5c37d3874fbf"><span class="std std-ref">create_unique_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1a48d74658aeacf6f0b3b85ad5d9c4e460"><span class="std std-ref">set_unique_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span> <span class="n">component_vertex_id</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex_id</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1a156b53c9cf26bb7d30077e4c2aef78b2"><span class="std std-ref">save_unique_vertices</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier-1a4999703d2882a55cfa23bf73fe440fe1"><span class="std std-ref">load_unique_vertices</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-vertex-identifier"></span><h2>Detailed Documentation</h2>
+<p>This class identifies groups of geometric component vertices as unique vertices. This is a only topological information.</p>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1afff4a91d1a4c952faedd56585b938f59"><span id="index-1"></span><span></span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span><span class="o">&gt;&amp;</span> <span class="n">mesh_component_vertices</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the component vertices identified with an unique vertex.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>unique_vertex_id</p></td>
+<td><p>Indice of the unique vertex.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1ac1db26b74ed07f5b46ab8a8f5b1f3971"><span id="index-2"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span><span class="o">&gt;</span> <span class="n">mesh_component_vertices</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the component vertices identified with an unique vertex only for vertices belonging to component of the specified type.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>unique_vertex_id</p></td>
+<td><p>Indice of the unique vertex.</p></td>
+</tr>
+<tr class="row-even"><td><p>type</p></td>
+<td><p>Type of components used to filter returned vertices.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1ad6f5f808567692a78009370abc1df495"><span id="index-3"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">mesh_component_vertices</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the component vertices identified with an unique vertex only for vertices belonging to one specified component.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>unique_vertex_id</p></td>
+<td><p>Indice of the unique vertex.</p></td>
+</tr>
+<tr class="row-even"><td><p>component_id</p></td>
+<td><p><a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component"><span class="std std-ref">Component</span></a> unique index used to filter returned vertices.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1a78f8b50c8066236be2be69b75703d29f"><span id="index-4"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">component_vertex</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the unique vertex index of a given component vertex.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>component_vertex</p></td>
+<td><p>Vertex index in a geometric component.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1aa0e48c044e602b71312bcef5e5f28d73"><span id="index-5"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">MeshComponent</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">register_component</span><span class="p">(</span><span class="k">const</span> <span class="n">MeshComponent</span><span class="o">&amp;</span> <span class="n">component</span><span class="p">)</span></pre>
+<p>Add a component</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1a866790ece70b59b041490d38ccdf02da"><span id="index-6"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">MeshComponent</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">remove_component</span><span class="p">(</span><span class="k">const</span> <span class="n">MeshComponent</span><span class="o">&amp;</span> <span class="n">component</span><span class="p">)</span></pre>
+<p>Remove a component from the <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier"><span class="std std-ref">VertexIdentifier</span></a> and delete corresponding information (i.e. the attribute on component mesh).</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1a71979507c1e499c162ea107904b0d5e7"><span id="index-7"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_unique_vertex</span><span class="p">()</span></pre>
+<p>Create an empty unique vertex.</p>
+<p class="rubric">Returns:</p>
+<p>Index of the created unique vertex.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1a1f68247b957f1b7905db5c37d3874fbf"><span id="index-8"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_unique_vertices</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">)</span></pre>
+<p>Create several empty unique vertices</p>
+<p class="rubric">Returns:</p>
+<p>Index of the first created unique vertex</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1a48d74658aeacf6f0b3b85ad5d9c4e460"><span id="index-9"></span><span></span><span class="kt">void</span> <span class="n">set_unique_vertex</span><span class="p">(</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span> <span class="n">component_vertex_id</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex_id</span><span class="p">)</span></pre>
+<p>Identify a component vertex to an existing unique vertex index.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>component_vertex_id</p></td>
+<td><p>Index of the vertex in the component.</p></td>
+</tr>
+<tr class="row-even"><td><p>unique_vertex_id</p></td>
+<td><p>Unique vertex index.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1a156b53c9cf26bb7d30077e4c2aef78b2"><span id="index-10"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">save_unique_vertices</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Save the <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier"><span class="std std-ref">VertexIdentifier</span></a> into a file.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>directory</p></td>
+<td><p>Folder in which create the file.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the filename.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-identifier-1a4999703d2882a55cfa23bf73fe440fe1"><span id="index-11"></span><span></span><span class="kt">void</span> <span class="n">load_unique_vertices</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">)</span></pre>
+<p>Load the <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier"><span class="std std-ref">VertexIdentifier</span></a> from a file.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>directory</p></td>
+<td><p>Folder containing the file that stores <a class="reference internal" href="#doxid-classgeode-1-1-vertex-identifier"><span class="std std-ref">VertexIdentifier</span></a> information.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_VertexIdentifier.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

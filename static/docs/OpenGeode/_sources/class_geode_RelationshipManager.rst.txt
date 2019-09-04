@@ -1,0 +1,138 @@
+.. index:: pair: class; geode::RelationshipManager
+.. _doxid-classgeode_1_1_relationship_manager:
+
+class geode::RelationshipManager
+================================
+
+.. toctree::
+	:hidden:
+
+	class_geode_RelationshipManager_BoundaryRange.rst
+	class_geode_RelationshipManager_CollectionRange.rst
+	class_geode_RelationshipManager_IncidenceRange.rst
+	class_geode_RelationshipManager_ItemRange.rst
+
+Overview
+~~~~~~~~
+
+This class manages all the relations between a set of components. :ref:`More...<details-classgeode_1_1_relationship_manager>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationship_manager.h>
+	
+	class RelationshipManager
+	{
+	public:
+		// classes
+	
+		class :ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>`;
+		class :ref:`CollectionRange<doxid-classgeode_1_1_relationship_manager_1_1_collection_range>`;
+		class :ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>`;
+		class :ref:`ItemRange<doxid-classgeode_1_1_relationship_manager_1_1_item_range>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_boundaries<doxid-classgeode_1_1_relationship_manager_1a009209f2f25516e084917b67d7c38003>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`BoundaryRange<doxid-classgeode_1_1_relationship_manager_1_1_boundary_range>` :target:`boundaries<doxid-classgeode_1_1_relationship_manager_1a0526c7ddfd849c02a250186dbc915412>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_incidences<doxid-classgeode_1_1_relationship_manager_1a53cd136bea5d2519515c9073285fff96>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`IncidenceRange<doxid-classgeode_1_1_relationship_manager_1_1_incidence_range>` :target:`incidences<doxid-classgeode_1_1_relationship_manager_1ac78cccf9e69b7fbc33f9129311afac83>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_items<doxid-classgeode_1_1_relationship_manager_1afd241c785194756754798257bd760c0b>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`ItemRange<doxid-classgeode_1_1_relationship_manager_1_1_item_range>` :target:`items<doxid-classgeode_1_1_relationship_manager_1a43674ff8ae2ef32e5ebad7b0274eefb6>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_collections<doxid-classgeode_1_1_relationship_manager_1adf8c64f8a89f56de84899217f87f3604>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`CollectionRange<doxid-classgeode_1_1_relationship_manager_1_1_collection_range>` :target:`collections<doxid-classgeode_1_1_relationship_manager_1a1b810b256fd409e9e6e324792269bfbf>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		void :target:`add_component<doxid-classgeode_1_1_relationship_manager_1ac9963000e149a673272cd509ab8a81f8>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		void :ref:`remove_component<doxid-classgeode_1_1_relationship_manager_1ae923af622ec06a4c3aa02e953edcb60f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationship_manager_1a4fa211c39df4dd9861a12780e74318d5>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);
+		void :ref:`add_item_in_collection<doxid-classgeode_1_1_relationship_manager_1af8c35fc212aed37e07feffff4a6a4d10>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection);
+		std::string :target:`save_relationships<doxid-classgeode_1_1_relationship_manager_1a8de6d6342ee1f1ac93b8a9ccc16ebd31>`(const std::string& directory) const;
+		void :target:`load_relationships<doxid-classgeode_1_1_relationship_manager_1a785e9bbc489c730798704f648efc1da3>`(const std::string& directory);
+	};
+.. _details-classgeode_1_1_relationship_manager:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This class manages all the relations between a set of components. Each relationship links two components. Relationship types are boundary and its dual incidence, and item and its dual collection. Components should be added through their uuids.
+
+Methods
+-------
+
+.. index:: pair: function; remove_component
+.. _doxid-classgeode_1_1_relationship_manager_1ae923af622ec06a4c3aa02e953edcb60f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void remove_component(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id)
+
+Remove a component from the set of components managed by the :ref:`RelationshipManager <doxid-classgeode_1_1_relationship_manager>` and all its associated relationships
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- id
+
+		- Unique index of the component to remove
+
+.. index:: pair: function; add_boundary_relation
+.. _doxid-classgeode_1_1_relationship_manager_1a4fa211c39df4dd9861a12780e74318d5:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void add_boundary_relation(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence)
+
+Add a new relationship of type boundary-incidence between two components
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- boundary
+
+		- Unique index of the boundary component
+
+	*
+		- incidence
+
+		- Unique index of the incidence component
+
+.. index:: pair: function; add_item_in_collection
+.. _doxid-classgeode_1_1_relationship_manager_1af8c35fc212aed37e07feffff4a6a4d10:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void add_item_in_collection(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection)
+
+Add a new relationship of type item-collection between two components
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- item
+
+		- Unique index of the item component
+
+	*
+		- collection
+
+		- Unique index of the collection component
+

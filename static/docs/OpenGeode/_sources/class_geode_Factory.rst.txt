@@ -1,0 +1,39 @@
+.. index:: pair: class; geode::Factory
+.. _doxid-classgeode_1_1_factory:
+
+template class geode::Factory
+=============================
+
+.. toctree::
+	:hidden:
+
+Generic factory Example of use with A the base class and B, C derived classes // Instantiation using MyFactory = Factory< std::string, A, int, double >; // Registration MyFactory::register_creator< B >( "B" ); // B constructor takes an int and a double MyFactory::register_creator< C >( "C" ); // C constructor takes an int and a double // Creation std::unique_ptr< A > c = MyFactory::create( "C", 2, 8.6 );
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <factory.h>
+	
+	template <typename Key, typename BaseClass, typename... Args>
+	class Factory: public :ref:`geode::Singleton<doxid-classgeode_1_1_singleton>`
+	{
+	public:
+		// typedefs
+	
+		typedef typename std::add_pointer<std::unique_ptr<BaseClass>(Args...)>::type :target:`Creator<doxid-classgeode_1_1_factory_1a8a5f9b2c866fcbf7da3cfdc53660a484>`;
+		typedef std::unordered_map<Key, :ref:`Creator<doxid-classgeode_1_1_factory_1a8a5f9b2c866fcbf7da3cfdc53660a484>`> :target:`FactoryStore<doxid-classgeode_1_1_factory_1a0741e69d1ccccd5042419f38a8366e21>`;
+
+		// methods
+	
+		template <typename DerivedClass>
+		static void :target:`register_creator<doxid-classgeode_1_1_factory_1a932118a9a4eb02337960089b2e923cad>`(const Key& key);
+	
+		static std::unique_ptr<BaseClass> :target:`create<doxid-classgeode_1_1_factory_1a6f3378006d002e6ffcffc02f8aea0ec6>`(
+			const Key& key,
+			Args... args
+			);
+	
+		static std::vector<Key> :target:`list_creators<doxid-classgeode_1_1_factory_1a55358a36c619ce71b677dce9073245a5>`();
+		static bool :target:`has_creator<doxid-classgeode_1_1_factory_1add6d9295d642005c51a23bd5e03b6212>`(const Key& key);
+	};

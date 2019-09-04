@@ -1,0 +1,119 @@
+.. index:: pair: class; geode::VertexSetBuilder
+.. _doxid-classgeode_1_1_vertex_set_builder:
+
+class geode::VertexSetBuilder
+=============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Interface class to represent the builder of a :ref:`VertexSet <doxid-classgeode_1_1_vertex_set>` :ref:`More...<details-classgeode_1_1_vertex_set_builder>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vertex_set_builder.h>
+	
+	class VertexSetBuilder
+	{
+	public:
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
+		void :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c>`(const std::vector<bool>& to_delete);
+	};
+
+	// direct descendants
+
+	class :ref:`GraphBuilder<doxid-classgeode_1_1_graph_builder>`;
+	class :ref:`OpenGeodeVertexSetBuilder<doxid-classgeode_1_1_open_geode_vertex_set_builder>`;
+
+	template <index_t dimension>
+	class :ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`;
+
+	template <index_t dimension>
+	class :ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`;
+
+	template <index_t dimension>
+	class :ref:`PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`;
+.. _details-classgeode_1_1_vertex_set_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Interface class to represent the builder of a :ref:`VertexSet <doxid-classgeode_1_1_vertex_set>`
+
+Methods
+-------
+
+.. index:: pair: function; create_vertex
+.. _doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_vertex()
+
+Create a new vertex.
+
+
+
+.. rubric:: Returns:
+
+the index of the created vertex
+
+.. index:: pair: function; create_vertices
+.. _doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb)
+
+Create a set of vertices.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- nb
+
+		- Number of vertices to create.
+
+
+
+.. rubric:: Returns:
+
+the index of the first created vertex
+
+.. index:: pair: function; delete_vertices
+.. _doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void delete_vertices(const std::vector<bool>& to_delete)
+
+Delete a set of vertices.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- to_delete
+
+		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size vertex_set_.nb_vertices(). If to_delete[i] is true the vertex of index i is deleted, else it is kept.
+

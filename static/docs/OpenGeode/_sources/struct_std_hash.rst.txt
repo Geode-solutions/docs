@@ -1,0 +1,24 @@
+.. index:: pair: struct; std::hash<geode::MeshType>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4:
+
+template struct std::hash<geode::MeshType>
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <mesh_type.h>
+	
+	template <>
+	struct hash<geode::MeshType>
+	{
+		// methods
+	
+		std::size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4_1a07514eb981e4df01a9d6eaf5ff550bc5>` (const :ref:`geode::MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& f) const;
+	};

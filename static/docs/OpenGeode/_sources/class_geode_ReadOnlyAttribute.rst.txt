@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::ReadOnlyAttribute
+.. _doxid-classgeode_1_1_read_only_attribute:
+
+template class geode::ReadOnlyAttribute
+=======================================
+
+.. toctree::
+	:hidden:
+
+Read only attribute interface that does not need to know the underlying attribute storage type.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <attribute.h>
+	
+	template <typename T>
+	class ReadOnlyAttribute: public :ref:`geode::AttributeBase<doxid-classgeode_1_1_attribute_base>`
+	{
+	public:
+		// methods
+	
+		virtual const T& :target:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
+		virtual std::string :target:`type<doxid-classgeode_1_1_read_only_attribute_1a404613b1cdd0d15b0deed66baca23ab1>`();
+	};
+
+	// direct descendants
+
+	template <typename T>
+	class :ref:`ConstantAttribute<doxid-classgeode_1_1_constant_attribute>`;
+
+	template <typename T>
+	class :ref:`SparseAttribute<doxid-classgeode_1_1_sparse_attribute>`;
+
+	template <typename T>
+	class :ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`;

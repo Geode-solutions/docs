@@ -1,0 +1,43 @@
+.. index:: pair: class; geode::Lines::LineRange
+.. _doxid-classgeode_1_1_lines_1_1_line_range:
+
+class geode::Lines::LineRange
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <lines.h>
+	
+	class LineRange: public :ref:`geode::Lines::LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`
+	{
+	public:
+		// construction
+	
+		:target:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range_1a79705347cbc7f9925c32e35ca0e18757>`(const :ref:`Lines<doxid-classgeode_1_1_lines>`& lines);
+
+		// methods
+	
+		const LineRange& :target:`begin<doxid-classgeode_1_1_lines_1_1_line_range_1ae1f37dd0c2a88a742bc9ead7df64f64e>`() const;
+		const LineRange& :target:`end<doxid-classgeode_1_1_lines_1_1_line_range_1a4a656eda56cd4c8f060797d4794c7468>`() const;
+		const :ref:`Line<doxid-classgeode_1_1_line>`<dimension>& :target:`operator *<doxid-classgeode_1_1_lines_1_1_line_range_1af072902cd3e2e1be75795a51d27180e2>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_lines_1_1_line_range_base_1a8a18f4612c9e502e48e259e8eaaed7d1>` (const :ref:`LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_lines_1_1_line_range_base_1a5e87d07af3f242a4c5255283de83172b>` ();
+

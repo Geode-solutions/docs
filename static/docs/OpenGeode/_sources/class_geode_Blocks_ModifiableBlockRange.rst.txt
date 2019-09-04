@@ -1,0 +1,42 @@
+.. index:: pair: class; geode::Blocks::ModifiableBlockRange
+.. _doxid-classgeode_1_1_blocks_1_1_modifiable_block_range:
+
+class geode::Blocks::ModifiableBlockRange
+=========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class ModifiableBlockRange: public :ref:`geode::Blocks::BlockRangeBase<doxid-classgeode_1_1_blocks_1_1_block_range_base>`
+	{
+	public:
+		// construction
+	
+		:target:`ModifiableBlockRange<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1ac9647e8ad5a083966e5e9099db0a8223>`(const :ref:`Blocks<doxid-classgeode_1_1_blocks>`& blocks);
+
+		// methods
+	
+		const ModifiableBlockRange& :target:`begin<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1a7af73a49f90a148d0ff4dd47d206ebbb>`() const;
+		const ModifiableBlockRange& :target:`end<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1ab3a170ffd290496785d8388b8234929b>`() const;
+		:ref:`Block<doxid-classgeode_1_1_block>`<dimension>& :target:`operator *<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1a80b3137b6de4d760e0f580c4f8ed3c12>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a272b7fec869cdcc3799364195d4c0286>` (const :ref:`BlockRangeBase<doxid-classgeode_1_1_blocks_1_1_block_range_base>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a338c1a4a2671ab68c4ab3d8ed05ca213>` ();
+

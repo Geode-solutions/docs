@@ -1,0 +1,42 @@
+.. index:: pair: class; geode::Output
+.. _doxid-classgeode_1_1_output:
+
+class geode::Output
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <output.h>
+	
+	class Output: public :ref:`geode::IOFile<doxid-classgeode_1_1_i_o_file>`
+	{
+	public:
+		// methods
+	
+		virtual void :target:`write<doxid-classgeode_1_1_output_1a9c2f7d16a0ccf42ed237626c7acfa3f9>`() const = 0;
+	};
+
+	// direct descendants
+
+	class :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`;
+	class :ref:`SectionOutput<doxid-classgeode_1_1_section_output>`;
+	class :ref:`VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1a00af9913eee23e9bd533bed23ec29499>`() const;
+

@@ -1,0 +1,136 @@
+.. index:: pair: class; geode::PointSetBuilder
+.. _doxid-classgeode_1_1_point_set_builder:
+
+template class geode::PointSetBuilder
+=====================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Interface class to represent the builder of a :ref:`PointSet <doxid-classgeode_1_1_point_set>` :ref:`More...<details-classgeode_1_1_point_set_builder>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <point_set_builder.h>
+	
+	template <index_t dimension>
+	class PointSetBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`
+	{
+	public:
+		// methods
+	
+		static std::unique_ptr<PointSetBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_builder_1ab5c00c0739ace9a3125e0f1daf1e44ee>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh);
+		void :ref:`set_point<doxid-classgeode_1_1_point_set_builder_1a2a8878a90d56a0f60984bdc131443a70>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_point_set_builder_1ada3e73058b784771e6e5c7b5480d9bde>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OpenGeodePointSetBuilder<doxid-classgeode_1_1_open_geode_point_set_builder>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
+		void :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1af0c55e98a9f0845c6f7f02e4b2715b0c>`(const std::vector<bool>& to_delete);
+
+.. _details-classgeode_1_1_point_set_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Interface class to represent the builder of a :ref:`PointSet <doxid-classgeode_1_1_point_set>`
+
+Methods
+-------
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_point_set_builder_1ab5c00c0739ace9a3125e0f1daf1e44ee:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static std::unique_ptr<PointSetBuilder<dimension>> create(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh)
+
+Create the builder associated with a :ref:`PointSet <doxid-classgeode_1_1_point_set>`.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- The :ref:`PointSet <doxid-classgeode_1_1_point_set>` to build/modify
+
+.. index:: pair: function; set_point
+.. _doxid-classgeode_1_1_point_set_builder_1a2a8878a90d56a0f60984bdc131443a70:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+
+Set coordinates to a vertex. This vertex should be created before.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertex_id
+
+		- The vertex, in [0, nb_vertices()-1].
+
+	*
+		- point
+
+		- The vertex coordinates
+
+.. index:: pair: function; create_point
+.. _doxid-classgeode_1_1_point_set_builder_1ada3e73058b784771e6e5c7b5480d9bde:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_point(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+
+Create a new point with associated coordinates.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- The point to create
+
+
+
+.. rubric:: Returns:
+
+the index of the created point
+

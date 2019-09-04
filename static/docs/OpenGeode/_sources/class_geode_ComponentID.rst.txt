@@ -1,0 +1,34 @@
+.. index:: pair: class; geode::ComponentID
+.. _doxid-classgeode_1_1_component_i_d:
+
+class geode::ComponentID
+========================
+
+.. toctree::
+	:hidden:
+
+Identify a component by its type and a unique index
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_type.h>
+	
+	class ComponentID
+	{
+	public:
+		// construction
+	
+		:target:`ComponentID<doxid-classgeode_1_1_component_i_d_1ad351ab9dde19ce3a150b8c7ee2bd1909>`(
+			:ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` component_type,
+			:ref:`uuid<doxid-structgeode_1_1uuid>` id
+			);
+
+		// methods
+	
+		:ref:`uuid<doxid-structgeode_1_1uuid>` :target:`id<doxid-classgeode_1_1_component_i_d_1a018199d3c6d0ce8971121974c457bc5f>`() const;
+		const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& :target:`type<doxid-classgeode_1_1_component_i_d_1a061a57724f602468213a92254fc6ad13>`() const;
+		bool :target:`operator !=<doxid-classgeode_1_1_component_i_d_1a7eabd10cb0a0af9ef69b2d358a1dbf1c>` (const ComponentID& other) const;
+		bool :target:`operator ==<doxid-classgeode_1_1_component_i_d_1a283e28cd9e7c1f2b2e8f22bd24ccc13c>` (const ComponentID& other) const;
+	};

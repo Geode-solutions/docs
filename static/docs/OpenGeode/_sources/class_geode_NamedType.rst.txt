@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::NamedType
+.. _doxid-classgeode_1_1_named_type:
+
+template class geode::NamedType
+===============================
+
+.. toctree::
+	:hidden:
+
+This class enforces a strong typing that can be used in API signature. For example: struct CustomTag { }; using CustomType = :ref:`NamedType\< std::string, CustomTag > <doxid-classgeode_1_1_named_type_1acea3c13e14546179104cc7f5f079e62c>`;
+
+CustomType is a new type with a std::string as underlying storage.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <named_type.h>
+	
+	template <typename Type, typename Tag>
+	class NamedType
+	{
+	public:
+		// construction
+	
+		:target:`NamedType<doxid-classgeode_1_1_named_type_1acea3c13e14546179104cc7f5f079e62c>`(Type value);
+
+		// methods
+	
+		const Type& :target:`get<doxid-classgeode_1_1_named_type_1ae2ce80984c0bf2851a60471dcbcb36a3>`() const;
+		bool :target:`operator ==<doxid-classgeode_1_1_named_type_1afb9bd149187dd0dea9c7e4f45e492973>` (const NamedType& other) const;
+		bool :target:`operator !=<doxid-classgeode_1_1_named_type_1a825c4d187fb1a4324ed89003bc67510d>` (const NamedType& other) const;
+	};

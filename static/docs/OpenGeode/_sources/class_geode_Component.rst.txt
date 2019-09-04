@@ -1,0 +1,41 @@
+.. index:: pair: class; geode::Component
+.. _doxid-classgeode_1_1_component:
+
+template class geode::Component
+===============================
+
+.. toctree::
+	:hidden:
+
+This abstract class represents a component that can be used in assembly.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component.h>
+	
+	template <index_t dimension>
+	class Component
+	{
+	public:
+		// methods
+	
+		const std::string& :target:`name<doxid-classgeode_1_1_component_1ae545ea00a79fe2b4d156c99f760885f8>`() const;
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`id<doxid-classgeode_1_1_component_1a9610a777b6c2cf55556f5bb237345878>`() const;
+		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_component_1a4468b6088e9bbc94ef9b59104488bf7d>`() const = 0;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`Block<doxid-classgeode_1_1_block>`;
+
+	template <index_t dimension>
+	class :ref:`Corner<doxid-classgeode_1_1_corner>`;
+
+	template <index_t dimension>
+	class :ref:`Line<doxid-classgeode_1_1_line>`;
+
+	template <index_t dimension>
+	class :ref:`Surface<doxid-classgeode_1_1_surface>`;

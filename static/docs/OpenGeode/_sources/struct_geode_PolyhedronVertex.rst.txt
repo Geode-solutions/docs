@@ -1,0 +1,41 @@
+.. index:: pair: struct; geode::PolyhedronVertex
+.. _doxid-structgeode_1_1_polyhedron_vertex:
+
+struct geode::PolyhedronVertex
+==============================
+
+.. toctree::
+	:hidden:
+
+This struct represents a local vertex in a polyhedron
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <polyhedral_solid.h>
+	
+	struct PolyhedronVertex
+	{
+		// fields
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polyhedron_id<doxid-structgeode_1_1_polyhedron_vertex_1a24ca54900c1b99e72dcc9571588569f5>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_id<doxid-structgeode_1_1_polyhedron_vertex_1a33afec4a879a418e0c2f15b22bb5d9fe>`;
+
+		// construction
+	
+		:target:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex_1a417c7c988fdc35c5791f9bb9669a34fc>`();
+	
+		:target:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex_1adf3781368eff823a155695a4484d8d01>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
+			);
+
+		// methods
+	
+		bool :target:`operator ==<doxid-structgeode_1_1_polyhedron_vertex_1a8a2b9e287cbb4a524a470e68bb65380d>` (const PolyhedronVertex& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1_polyhedron_vertex_1a1064e85a976ce6dd8606b98205b4dc7c>` (const PolyhedronVertex& other) const;
+	
+		template <typename Archive>
+		void :target:`serialize<doxid-structgeode_1_1_polyhedron_vertex_1a1952ed129331f13c962b75719c36ca32>`(Archive& archive);
+	};

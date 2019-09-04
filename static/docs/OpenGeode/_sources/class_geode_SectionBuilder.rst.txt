@@ -1,0 +1,59 @@
+.. index:: pair: class; geode::SectionBuilder
+.. _doxid-classgeode_1_1_section_builder:
+
+class geode::SectionBuilder
+===========================
+
+.. toctree::
+	:hidden:
+
+Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_builder.h>
+	
+	class SectionBuilder: public :ref:`geode::GeoRepresentationBuilder<doxid-classgeode_1_1_geo_representation_builder>`
+	{
+	public:
+		// construction
+	
+		:target:`SectionBuilder<doxid-classgeode_1_1_section_builder_1a9eb6a1ccb9b8f8ccc267fba7aa1cc9b2>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
+
+		// methods
+	
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_section_builder_1a10a2edfa78c3fa9b5bcafd8847560a2c>`();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_section_builder_1afce041ba3c4e9e763b446ae1ac71b33c>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_line<doxid-classgeode_1_1_section_builder_1a1a434d58142c845842136cf2a5d9c9bb>`();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_line<doxid-classgeode_1_1_section_builder_1ababaf5b9d66f4e7f451fb2bb68b4e48a>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_surface<doxid-classgeode_1_1_section_builder_1a40d5be580b4d063e6b63b87bf009860b>`();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_surface<doxid-classgeode_1_1_section_builder_1ad36bb5f862cacf7d8c3f8e2518145c6b>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		void :target:`remove_corner<doxid-classgeode_1_1_section_builder_1a434d3beff111801f13886bd054152dfa>`(const Corner2D& corner);
+		void :target:`remove_line<doxid-classgeode_1_1_section_builder_1a3b64393f3c4fbb20e38fc255088c011c>`(const Line2D& line);
+		void :target:`remove_surface<doxid-classgeode_1_1_section_builder_1a9e20dbff4e8e711e73c1a7fd4abe0018>`(const Surface2D& surface);
+	
+		void :target:`add_boundary_relation<doxid-classgeode_1_1_section_builder_1a0067afac589a8b45f0942cd9578d98b3>`(
+			const Corner2D& corner,
+			const Line2D& line
+			);
+	
+		void :target:`add_boundary_relation<doxid-classgeode_1_1_section_builder_1a133f7dbe88626f397ed2052137593b03>`(
+			const Line2D& line,
+			const Surface2D& surface
+			);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		void :ref:`load_relationships<doxid-classgeode_1_1_geo_representation_builder_1a614eab8c4ea1992beb5b3b7bb93e362f>`(const std::string& directory);
+		:ref:`VertexIdentifier<doxid-classgeode_1_1_vertex_identifier>`& :ref:`unique_vertices<doxid-classgeode_1_1_geo_representation_builder_1a5058b48d550540ce88e41100b843645c>`();
+

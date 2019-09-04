@@ -1,0 +1,22 @@
+.. index:: pair: page; Where to download OpenGeode binaries
+.. _doxid-opengeode_where_to_get_binaries:
+
+Where to download OpenGeode binaries
+====================================
+
+Download pre-compiled binaries
+==============================
+
+We provide three pre-compiled binaries for OpenGeode. They are automatically generated for each OpenGeode release and can be downloaded following this link:
+
+```https://github.com/Geode-solutions/OpenGeode/releases <https://github.com/Geode-solutions/OpenGeode/releases>`__``
+
+``OpenGeode-X.Y.Z-Darwin.tar.gz`` corresponds to the package generated on macOS X High Sierra (10.13) for OpenGeode X.Y.Z. release; ``OpenGeode-X.Y.Z-Linux.tar.gz`` corresponds to the package generated on Ubuntu 16.04 for OpenGeode X.Y.Z. release; ``OpenGeode-X.Y.Z-win64.zip`` corresponds to the package generated on Windows Visual Studio 15 2017 for OpenGeode X.Y.Z. release;
+
+Select the one that fits your platform and needs. You can now use these pre-compiled binaries for your own projects.
+
+Download source code
+====================
+
+On the release page, you can also download source code archives. Extract the archive, and then compile the source code. Let be guided :ref:`here <doxid-opengeode_how_to_compile>`.
+

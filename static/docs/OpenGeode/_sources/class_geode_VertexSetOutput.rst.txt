@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::VertexSetOutput
+.. _doxid-classgeode_1_1_vertex_set_output:
+
+class geode::VertexSetOutput
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vertex_set_output.h>
+	
+	class VertexSetOutput: public :ref:`geode::Output<doxid-classgeode_1_1_output>`
+	{
+	};
+
+	// direct descendants
+
+	class :ref:`GraphOutput<doxid-classgeode_1_1_graph_output>`;
+
+	template <index_t dimension>
+	class :ref:`PointSetOutput<doxid-classgeode_1_1_point_set_output>`;
+
+	template <index_t dimension>
+	class :ref:`PolygonalSurfaceOutput<doxid-classgeode_1_1_polygonal_surface_output>`;
+
+	template <index_t dimension>
+	class :ref:`PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1a00af9913eee23e9bd533bed23ec29499>`() const;
+		virtual void :ref:`write<doxid-classgeode_1_1_output_1a9c2f7d16a0ccf42ed237626c7acfa3f9>`() const = 0;
+

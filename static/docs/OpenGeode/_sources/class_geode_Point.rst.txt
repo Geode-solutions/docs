@@ -1,0 +1,52 @@
+.. index:: pair: class; geode::Point
+.. _doxid-classgeode_1_1_point:
+
+template class geode::Point
+===========================
+
+.. toctree::
+	:hidden:
+
+Description of a point in the given dimension with double coordinates
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <point.h>
+	
+	template <index_t dimension>
+	class Point
+	{
+	public:
+		// construction
+	
+		:target:`Point<doxid-classgeode_1_1_point_1a0ea410798ae3680abb59cbf2815c1691>`();
+		:target:`Point<doxid-classgeode_1_1_point_1a1493e964a22304c1d1bfd6c0a524ea12>`(std::array<double, dimension> values);
+
+		// methods
+	
+		double :target:`value<doxid-classgeode_1_1_point_1ae861186abf1cae06882980f59749c33c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
+	
+		void :target:`set_value<doxid-classgeode_1_1_point_1a6b2f04ebab4205dccc5494158ca7b673>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index,
+			double value
+			);
+	
+		bool :target:`operator ==<doxid-classgeode_1_1_point_1a86685d5fe9ae7139ab127d951360ebb1>` (const Point& other) const;
+		bool :target:`operator !=<doxid-classgeode_1_1_point_1a37ecb034aed5683869a792a7465d9ae6>` (const Point& other) const;
+		Point :target:`operator *<doxid-classgeode_1_1_point_1a16a0f22e2f77ab99cf77109e27e335d1>` (double multiplier) const;
+		Point :target:`operator/<doxid-classgeode_1_1_point_1ae72641862ab4e8f2a33331168d2ac398>` (double divider) const;
+		Point :target:`operator +<doxid-classgeode_1_1_point_1ad09d5c3797e072d775b9133d0b849548>` (const Point& other) const;
+		Point :target:`operator -<doxid-classgeode_1_1_point_1a18113901e192ab14748ea6fd507fa3a5>` (const Point& other) const;
+	
+		bool :target:`inexact_equal<doxid-classgeode_1_1_point_1ae4ebf4615b3db3abef4a90cd7a310765>`(
+			const Point& other,
+			double epsilon
+			) const;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`Vector<doxid-classgeode_1_1_vector>`;

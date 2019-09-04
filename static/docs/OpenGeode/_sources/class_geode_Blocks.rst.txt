@@ -1,0 +1,77 @@
+.. index:: pair: class; geode::Blocks
+.. _doxid-classgeode_1_1_blocks:
+
+template class geode::Blocks
+============================
+
+.. toctree::
+	:hidden:
+
+	class_geode_Blocks_BlockRange.rst
+	class_geode_Blocks_BlockRangeBase.rst
+	class_geode_Blocks_ModifiableBlockRange.rst
+
+Overview
+~~~~~~~~
+
+Storage class providing range loop to iterate on :ref:`Blocks <doxid-classgeode_1_1_blocks>` :ref:`More...<details-classgeode_1_1_blocks>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <blocks.h>
+	
+	template <index_t dimension>
+	class Blocks
+	{
+	public:
+		// classes
+	
+		class :ref:`BlockRange<doxid-classgeode_1_1_blocks_1_1_block_range>`;
+		class :ref:`BlockRangeBase<doxid-classgeode_1_1_blocks_1_1_block_range_base>`;
+		class :ref:`ModifiableBlockRange<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_blocks<doxid-classgeode_1_1_blocks_1a41126152f124dc23fcbdf0725499dcb9>`() const;
+		const :ref:`Block<doxid-classgeode_1_1_block>`<dimension>& :ref:`block<doxid-classgeode_1_1_blocks_1a60bf76804be4f5415c680dca6b5b421e>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`BlockRange<doxid-classgeode_1_1_blocks_1_1_block_range>` :target:`blocks<doxid-classgeode_1_1_blocks_1a43c87339d3d297944fd4f606fe1f18c1>`() const;
+		std::vector<std::string> :ref:`save_blocks<doxid-classgeode_1_1_blocks_1a123eedc9fe9d0b382be958ff62f80362>`(const std::string& directory) const;
+	};
+.. _details-classgeode_1_1_blocks:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Storage class providing range loop to iterate on :ref:`Blocks <doxid-classgeode_1_1_blocks>`
+
+Methods
+-------
+
+.. index:: pair: function; block
+.. _doxid-classgeode_1_1_blocks_1a60bf76804be4f5415c680dca6b5b421e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	const :ref:`Block<doxid-classgeode_1_1_block>`<dimension>& block(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const
+
+Access to an unmodifiable :ref:`Block <doxid-classgeode_1_1_block>` by its unique index
+
+.. index:: pair: function; save_blocks
+.. _doxid-classgeode_1_1_blocks_1a123eedc9fe9d0b382be958ff62f80362:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<std::string> save_blocks(const std::string& directory) const
+
+Save each :ref:`Block <doxid-classgeode_1_1_block>` in a file located in the specified directory
+
+
+
+.. rubric:: Returns:
+
+the list of filenames
+

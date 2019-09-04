@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::AttributeManager &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::BRep" href="class_geode_BRep.html" />
+    <link rel="prev" title="class geode::AttributeBase" href="class_geode_AttributeBase.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-attributemanager">
+<span id="doxid-classgeode-1-1-attribute-manager"></span><span id="index-0"></span><h1>class geode::AttributeManager</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>This class manages all its associated Attributes. <a class="reference internal" href="#details-classgeode-1-1-attribute-manager"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;attribute_manager.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">AttributeManager</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_ReadOnlyAttribute.html#doxid-classgeode-1-1-read-only-attribute"><span class="std std-ref">ReadOnlyAttribute</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1aaba435916e40673d8432463c22c7dc5f"><span class="std std-ref">find_attribute</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="o">&gt;</span> <span class="k">class</span> <span class="n">Attribute</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="o">&gt;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Attribute</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a9724050b57c631ef96a741028e1df81b"><span class="std std-ref">find_or_create_attribute</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1ab78ec5f69d4a452ef59fb824a7a0e95c"><span class="std std-ref">resize</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">size</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a9331405f2fe8a2a3d66257b79d90e650"><span class="std std-ref">attribute_names</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a723fddb0b2f2d0fc7c7546be5cd64ac1"><span class="std std-ref">attribute_exists</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a0b66879bc0bf9312a81fadfb8e2ea0d0"><span class="std std-ref">delete_attribute</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1ad411fbf917b58ab82d8959218fd85463"><span class="std std-ref">attribute_type</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a009194a92dfd94b2e0ac4c397c5f9ad8"><span class="std std-ref">clear</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1aa25870b7f9a775d641a23ee44e0fc7d0"><span class="std std-ref">clear_attributes</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1af39ef3210749c1a18a7bc26c3b2a38c7"><span class="std std-ref">delete_elements</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a44da96b84e6d1a25159cee065cc4d073"><span class="std std-ref">nb_elements</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Serializer</span><span class="o">&gt;</span>
+    <span class="k">static</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-manager-1a1e567bda8fee0ef3a90c54c1dac37790">register_attribute_type</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-attribute-manager"></span><h2>Detailed Documentation</h2>
+<p>This class manages all its associated Attributes. Each Attribute is registered and can be retrieved by a given name.</p>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1aaba435916e40673d8432463c22c7dc5f"><span id="index-1"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_ReadOnlyAttribute.html#doxid-classgeode-1-1-read-only-attribute"><span class="std std-ref">ReadOnlyAttribute</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <span class="n">find_attribute</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">)</span></pre>
+<p>Recover the typed Attribute from the attribute name</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>name</p></td>
+<td><p>The associated attribute name to look for</p></td>
+</tr>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>The type to of the <a class="reference internal" href="class_geode_ReadOnlyAttribute.html#doxid-classgeode-1-1-read-only-attribute"><span class="std std-ref">ReadOnlyAttribute</span></a> element</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_geode_OpenGeodeException.html#doxid-classgeode-1-1-open-geode-exception"><span class="std std-ref">OpenGeodeException</span></a></p></td>
+<td><p>if no Attribute found</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a9724050b57c631ef96a741028e1df81b"><span id="index-2"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="o">&gt;</span> <span class="k">class</span> <span class="n">Attribute</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Attribute</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <span class="n">find_or_create_attribute</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span>
+    <span class="p">)</span></pre>
+<p>Recover or create the attribute from the manager and the attribute name. If the recovered Attribute is not a of the same type than the attribute, it replaces it by the Attribute corresponding to the attribute.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>name</p></td>
+<td><p>The associated attribute name to look for</p></td>
+</tr>
+<tr class="row-even"><td><p>Attribute</p></td>
+<td><p>The attribute type to look for, such as <a class="reference internal" href="class_geode_ConstantAttribute.html#doxid-classgeode-1-1-constant-attribute"><span class="std std-ref">ConstantAttribute</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>T</p></td>
+<td><p>The type of the Attribute element</p></td>
+</tr>
+<tr class="row-even"><td><p>Args</p></td>
+<td><p>The optional arguments to construct the Attribute</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="class_geode_OpenGeodeException.html#doxid-classgeode-1-1-open-geode-exception"><span class="std std-ref">OpenGeodeException</span></a></p></td>
+<td><p>if the Attribute replacement failed</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1ab78ec5f69d4a452ef59fb824a7a0e95c"><span id="index-3"></span><span></span><span class="kt">void</span> <span class="n">resize</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">size</span><span class="p">)</span></pre>
+<p>Resize all the attributes to the given size</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>size</p></td>
+<td><p>The new attribute size</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a9331405f2fe8a2a3d66257b79d90e650"><span id="index-4"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">attribute_names</span><span class="p">()</span> <span class="k">const</span></pre>
+<p>Get all the associated attribute names</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a723fddb0b2f2d0fc7c7546be5cd64ac1"><span id="index-5"></span><span></span><span class="kt">bool</span> <span class="n">attribute_exists</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return true if an attribute matching the given name.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>name</p></td>
+<td><p>The attribute name to use</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a0b66879bc0bf9312a81fadfb8e2ea0d0"><span id="index-6"></span><span></span><span class="kt">void</span> <span class="n">delete_attribute</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">)</span></pre>
+<p>Delete the attribute matching the given name. Do nothing if the name does not exist.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>name</p></td>
+<td><p>The attribute name to delete</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1ad411fbf917b58ab82d8959218fd85463"><span id="index-7"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">attribute_type</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Get the typeid name of the attribute type</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>name</p></td>
+<td><p>The attribute name to use</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a009194a92dfd94b2e0ac4c397c5f9ad8"><span id="index-8"></span><span></span><span class="kt">void</span> <span class="n">clear</span><span class="p">()</span></pre>
+<p>Remove all the attributes in the manager</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1aa25870b7f9a775d641a23ee44e0fc7d0"><span id="index-9"></span><span></span><span class="kt">void</span> <span class="n">clear_attributes</span><span class="p">()</span></pre>
+<p>Clear all the attribute content. This is equivalent to calling resize( 0 ).</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1af39ef3210749c1a18a7bc26c3b2a38c7"><span id="index-10"></span><span></span><span class="kt">void</span> <span class="n">delete_elements</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">)</span></pre>
+<p>Delete a set of attribute elements.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>to_delete</p></td>
+<td><p>a vector of size <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a44da96b84e6d1a25159cee065cc4d073"><span class="std std-ref">nb_elements()</span></a>. If to_delete[e] is true, then the element e will be destroyed.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a44da96b84e6d1a25159cee065cc4d073"><span id="index-11"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_elements</span><span class="p">()</span> <span class="k">const</span></pre>
+<p>Get the number of elements in each attribute</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_AttributeManager.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

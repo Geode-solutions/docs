@@ -1,0 +1,43 @@
+.. index:: pair: class; geode::Blocks::BlockRange
+.. _doxid-classgeode_1_1_blocks_1_1_block_range:
+
+class geode::Blocks::BlockRange
+===============================
+
+.. toctree::
+	:hidden:
+
+Class for range-based iteration on unmodifiable :ref:`Blocks <doxid-classgeode_1_1_blocks>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <blocks.h>
+	
+	class BlockRange: public :ref:`geode::Blocks::BlockRangeBase<doxid-classgeode_1_1_blocks_1_1_block_range_base>`
+	{
+	public:
+		// construction
+	
+		:target:`BlockRange<doxid-classgeode_1_1_blocks_1_1_block_range_1a5ddb3cd0f333bffe26cc990a0ae38345>`(const :ref:`Blocks<doxid-classgeode_1_1_blocks>`& blocks);
+
+		// methods
+	
+		const BlockRange& :target:`begin<doxid-classgeode_1_1_blocks_1_1_block_range_1a9cf917fa5873da64843ae114d09fca87>`() const;
+		const BlockRange& :target:`end<doxid-classgeode_1_1_blocks_1_1_block_range_1a53a7e98cd441cac4175dcd3b1f4b2630>`() const;
+		const :ref:`Block<doxid-classgeode_1_1_block>`<dimension>& :target:`operator *<doxid-classgeode_1_1_blocks_1_1_block_range_1ab7648def4af300ce276edb30a94763b3>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a272b7fec869cdcc3799364195d4c0286>` (const :ref:`BlockRangeBase<doxid-classgeode_1_1_blocks_1_1_block_range_base>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a338c1a4a2671ab68c4ab3d8ed05ca213>` ();
+
