@@ -19,9 +19,9 @@ and/or
 
 .. ref-code-block:: cpp
 
-	initialize_georepresentation_io();
+	initialize_model_io();
 
-These functions are declared in the files ``:ref:`include/geode/mesh/detail/common.h <doxid-mesh_2detail_2common_8h_source>``` and ``:ref:`include/geode/georepresentation/detail/common.h <doxid-georepresentation_2detail_2common_8h_source>```. Do not forget to include the right file in your code.
+These functions are declared in the files ``:ref:`include/geode/mesh/detail/common.h <doxid-mesh_2detail_2common_8h_source>``` and ``include/geode/model/representation/detail/common.h``. Do not forget to include the right file in your code.
 
 You have examples in the OpenGeode-IO tests.
 

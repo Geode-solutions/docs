@@ -41,7 +41,7 @@ namespace geode
 
 	// global functions
 
-	void opengeodeio_georepresentation_api :target:`initialize_georepresentation_io<doxid-namespacegeode_1aca2286a7030b6fe947c9a34c39f51f9c>`();
 	void opengeodeio_mesh_api :target:`initialize_mesh_io<doxid-namespacegeode_1a948975f1c984f3e942d315f2abd5ddf3>`();
+	void opengeodeio_model_api :target:`initialize_model_io<doxid-namespacegeode_1a90c453835e6356b790638a86ca6c0a20>`();
 
 	} // namespace geode
