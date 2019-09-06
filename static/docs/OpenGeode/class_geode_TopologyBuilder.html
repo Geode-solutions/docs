@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::TopologyBuilder &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::TriangulatedSurface" href="class_geode_TriangulatedSurface.html" />
+    <link rel="prev" title="class geode::Topology" href="class_geode_Topology.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-topologybuilder">
+<span id="doxid-classgeode-1-1-topology-builder"></span><span id="index-0"></span><h1>class geode::TopologyBuilder</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Class managing modification of <a class="reference internal" href="class_geode_Topology.html#doxid-classgeode-1-1-topology"><span class="std std-ref">Topology</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;topology_builder.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">TopologyBuilder</span><span class="p">:</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder"><span class="std std-ref">geode::RelationshipsBuilder</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_VertexIdentifierBuilder.html#doxid-classgeode-1-1-vertex-identifier-builder"><span class="std std-ref">geode::VertexIdentifierBuilder</span></a><span></span>
+<span class="p">{</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRepBuilder.html#doxid-classgeode-1-1-b-rep-builder"><span class="std std-ref">BRepBuilder</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SectionBuilder.html#doxid-classgeode-1-1-section-builder"><span class="std std-ref">SectionBuilder</span></a><span></span><span class="p">;</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a875c4be67f9214ad261de4ad943adc15"><span class="std std-ref">register_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1aee190cedcd627f2e9bdc5e3815afcdfd"><span class="std std-ref">unregister_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a6c661d5abfdf4600024e03a1535b43d9"><span class="std std-ref">add_boundary_relation</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">boundary</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">incidence</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a951ced98812449fedd537cec5b66ceec"><span class="std std-ref">add_item_in_collection</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">item</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">collection</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a5a64bac350c1065b91174605ef82f48f"><span class="std std-ref">load_relationships</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">MeshComponent</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_VertexIdentifierBuilder.html#doxid-classgeode-1-1-vertex-identifier-builder-1a8b4ab10edefe09a84fe1ebb36b533acc"><span class="std std-ref">register_mesh_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">MeshComponent</span><span class="o">&amp;</span> <span class="n">component</span><span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">MeshComponent</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_VertexIdentifierBuilder.html#doxid-classgeode-1-1-vertex-identifier-builder-1a80df0aaaa456029f413cf70374f9dacb"><span class="std std-ref">unregister_mesh_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">MeshComponent</span><span class="o">&amp;</span> <span class="n">component</span><span class="p">);</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_VertexIdentifierBuilder.html#doxid-classgeode-1-1-vertex-identifier-builder-1a4ef2cfb59a9670ebf8e781ebde233196"><span class="std std-ref">create_unique_vertex</span></a><span></span><span class="p">();</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_VertexIdentifierBuilder.html#doxid-classgeode-1-1-vertex-identifier-builder-1a61b9f5f69cb29c6a070f377ef7669a36"><span class="std std-ref">create_unique_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_VertexIdentifierBuilder.html#doxid-classgeode-1-1-vertex-identifier-builder-1a3ca57fc5665a96f33daf6057d52c1813"><span class="std std-ref">set_unique_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_MeshComponentVertex.html#doxid-structgeode-1-1-mesh-component-vertex"><span class="std std-ref">MeshComponentVertex</span></a><span></span> <span class="n">component_vertex_id</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">unique_vertex_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_VertexIdentifierBuilder.html#doxid-classgeode-1-1-vertex-identifier-builder-1a7f023da66b731c2260b290471a60812f"><span class="std std-ref">load_unique_vertices</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span></pre>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_TopologyBuilder.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

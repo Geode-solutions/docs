@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>template class geode::AddComponentsBuilders &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::AttributeBase" href="class_geode_AttributeBase.html" />
+    <link rel="prev" title="template class geode::AddComponents" href="class_geode_AddComponents.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="template-class-geode-addcomponentsbuilders">
+<span id="doxid-classgeode-1-1-add-components-builders"></span><span id="index-0"></span><h1>template class geode::AddComponentsBuilders</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>This mixin represents the builders of an assembly of components. Syntax for create a derived class is class DerivateClass : public <a class="reference internal" href="#doxid-classgeode-1-1-add-components-builders"><span class="std std-ref">AddComponentsBuilders</span></a> &lt; dimension, ComponentClassA, ComponentClassB, ComponentClassC &gt; Each ComponentClass should have a ComponentClass::Builder.</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;add_components_builders.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">template</span><span class="o">&lt;</span> <span class="n">index_t</span> <span class="o">&gt;</span> <span class="k">class</span><span class="p">...</span> <span class="n">Components</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">AddComponentsBuilders</span><span class="p">:</span> <span class="k">public</span> <span class="n">Components</span><span class="o">::</span><span class="n">Builder</span><span class="o">&lt;</span> <span class="n">dimension</span> <span class="o">&gt;</span>
+<span class="p">{</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRepBuilder.html#doxid-classgeode-1-1-b-rep-builder"><span class="std std-ref">BRepBuilder</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SectionBuilder.html#doxid-classgeode-1-1-section-builder"><span class="std std-ref">SectionBuilder</span></a><span></span><span class="p">;</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_AddComponentsBuilders.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

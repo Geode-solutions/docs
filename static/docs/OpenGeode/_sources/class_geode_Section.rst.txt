@@ -12,7 +12,7 @@ class geode::Section
 	class_geode_Section_LineIncidenceRange.rst
 	class_geode_Section_SurfaceBoundaryRange.rst
 
-A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D :ref:`GeoRepresentation <doxid-classgeode_1_1_geo_representation>` composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, and :ref:`Surfaces <doxid-classgeode_1_1_surfaces>`. This class provides classes for range-based iteration on :ref:`Component <doxid-classgeode_1_1_component>` boundaries and incidences.
+A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, and :ref:`Surfaces <doxid-classgeode_1_1_surfaces>`. This class provides classes for range-based iteration on :ref:`Component <doxid-classgeode_1_1_component>` boundaries and incidences.
 
 
 .. ref-code-block:: cpp
@@ -20,7 +20,9 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D :ref:`GeoRepresentation 
 
 	#include <section.h>
 	
-	class Section: public :ref:`geode::GeoRepresentation<doxid-classgeode_1_1_geo_representation>`
+	class Section:
+	    public :ref:`geode::Topology<doxid-classgeode_1_1_topology>`,
+	    public :ref:`geode::AddComponents<doxid-classgeode_1_1_add_components>`
 	{
 	public:
 		// classes
@@ -47,9 +49,28 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// classes
+	
+		class :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`;
+		class :ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>`;
+		class :ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>`;
+		class :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`;
+
 		// methods
 	
-		const :ref:`RelationshipManager<doxid-classgeode_1_1_relationship_manager>`& :ref:`relationships<doxid-classgeode_1_1_geo_representation_1a53442f05d1666984df7c9f65f3c08e58>`() const;
-		const :ref:`VertexIdentifier<doxid-classgeode_1_1_vertex_identifier>`& :ref:`unique_vertices<doxid-classgeode_1_1_geo_representation_1a7aea37c8934d213718b0dae39eaae1c3>`() const;
-		double :ref:`epsilon<doxid-classgeode_1_1_geo_representation_1a37247046bef4c26665723039d06c9c95>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_boundaries<doxid-classgeode_1_1_relationships_1a6d20caa44769e50b498d84ead538e8ea>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>` :ref:`boundaries<doxid-classgeode_1_1_relationships_1a50fb7346a1d521024ba93889e79a1367>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_incidences<doxid-classgeode_1_1_relationships_1abbc8b47ab3a49bf8e535c8c26e2f1f59>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>` :ref:`incidences<doxid-classgeode_1_1_relationships_1aded689c44bb785364614857d8eed75ac>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_items<doxid-classgeode_1_1_relationships_1a54102d15836e1c293a1af12846bdfc96>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>` :ref:`items<doxid-classgeode_1_1_relationships_1aa1aa3eb2f1413cb785c7a35b11c2fc1f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_collections<doxid-classgeode_1_1_relationships_1a2dfe25535658df66652d30d9728138e5>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>` :ref:`collections<doxid-classgeode_1_1_relationships_1a69e2ed78d89cd61adb808cf264a95d86>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		std::string :ref:`save_relationships<doxid-classgeode_1_1_relationships_1abe9ab3423e0f529f306c6dd08cba1c29>`(const std::string& directory) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1ada2513c61421efbd388258503e8ab95e>`() const;
+		const std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`>& :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1afff4a91d1a4c952faedd56585b938f59>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id) const;
+		std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1ac1db26b74ed07f5b46ab8a8f5b1f3971>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1ad6f5f808567692a78009370abc1df495>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a78f8b50c8066236be2be69b75703d29f>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex) const;
+		std::string :ref:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a156b53c9cf26bb7d30077e4c2aef78b2>`(const std::string& directory) const;
 

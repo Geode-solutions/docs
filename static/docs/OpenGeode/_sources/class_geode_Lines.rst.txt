@@ -23,11 +23,19 @@ template class geode::Lines
 	class Lines
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`LinesBuilder<doxid-classgeode_1_1_lines_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_lines_1a5e74d207edf00cf4e66438efe9febd03>`;
+
 		// classes
 	
 		class :ref:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range>`;
 		class :ref:`LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`;
 		class :ref:`ModifiableLineRange<doxid-classgeode_1_1_lines_1_1_modifiable_line_range>`;
+
+		// fields
+	
+		friend :target:`Builder<doxid-classgeode_1_1_lines_1a8cb2078c38eeb5b2e13aa27530d5e25e>`;
 
 		// methods
 	

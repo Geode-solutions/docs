@@ -28,19 +28,12 @@ This class identifies groups of geometric component vertices as unique vertices.
 		std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1ac1db26b74ed07f5b46ab8a8f5b1f3971>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1ad6f5f808567692a78009370abc1df495>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a78f8b50c8066236be2be69b75703d29f>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex) const;
-	
-		template <typename MeshComponent>
-		void :ref:`register_component<doxid-classgeode_1_1_vertex_identifier_1aa0e48c044e602b71312bcef5e5f28d73>`(const MeshComponent& component);
-	
-		template <typename MeshComponent>
-		void :ref:`remove_component<doxid-classgeode_1_1_vertex_identifier_1a866790ece70b59b041490d38ccdf02da>`(const MeshComponent& component);
-	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a71979507c1e499c162ea107904b0d5e7>`();
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a1f68247b957f1b7905db5c37d3874fbf>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
-		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a48d74658aeacf6f0b3b85ad5d9c4e460>`(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id);
 		std::string :ref:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a156b53c9cf26bb7d30077e4c2aef78b2>`(const std::string& directory) const;
-		void :ref:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a4999703d2882a55cfa23bf73fe440fe1>`(const std::string& directory);
 	};
+
+	// direct descendants
+
+	class :ref:`Topology<doxid-classgeode_1_1_topology>`;
 .. _details-classgeode_1_1_vertex_identifier:
 
 Detailed Documentation
@@ -149,87 +142,6 @@ Return the unique vertex index of a given component vertex.
 
 		- Vertex index in a geometric component.
 
-.. index:: pair: function; register_component
-.. _doxid-classgeode_1_1_vertex_identifier_1aa0e48c044e602b71312bcef5e5f28d73:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	template <typename MeshComponent>
-	void register_component(const MeshComponent& component)
-
-Add a component
-
-.. index:: pair: function; remove_component
-.. _doxid-classgeode_1_1_vertex_identifier_1a866790ece70b59b041490d38ccdf02da:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	template <typename MeshComponent>
-	void remove_component(const MeshComponent& component)
-
-Remove a component from the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` and delete corresponding information (i.e. the attribute on component mesh).
-
-.. index:: pair: function; create_unique_vertex
-.. _doxid-classgeode_1_1_vertex_identifier_1a71979507c1e499c162ea107904b0d5e7:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_unique_vertex()
-
-Create an empty unique vertex.
-
-
-
-.. rubric:: Returns:
-
-Index of the created unique vertex.
-
-.. index:: pair: function; create_unique_vertices
-.. _doxid-classgeode_1_1_vertex_identifier_1a1f68247b957f1b7905db5c37d3874fbf:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_unique_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb)
-
-Create several empty unique vertices
-
-
-
-.. rubric:: Returns:
-
-Index of the first created unique vertex
-
-.. index:: pair: function; set_unique_vertex
-.. _doxid-classgeode_1_1_vertex_identifier_1a48d74658aeacf6f0b3b85ad5d9c4e460:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void set_unique_vertex(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id)
-
-Identify a component vertex to an existing unique vertex index.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- component_vertex_id
-
-		- Index of the vertex in the component.
-
-	*
-		- unique_vertex_id
-
-		- Unique vertex index.
-
 .. index:: pair: function; save_unique_vertices
 .. _doxid-classgeode_1_1_vertex_identifier_1a156b53c9cf26bb7d30077e4c2aef78b2:
 
@@ -257,26 +169,4 @@ Save the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` into a
 .. rubric:: Returns:
 
 the filename.
-
-.. index:: pair: function; load_unique_vertices
-.. _doxid-classgeode_1_1_vertex_identifier_1a4999703d2882a55cfa23bf73fe440fe1:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void load_unique_vertices(const std::string& directory)
-
-Load the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` from a file.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- directory
-
-		- Folder containing the file that stores :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` information.
 

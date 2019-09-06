@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::Relationships::IncidenceRange
+.. _doxid-classgeode_1_1_relationships_1_1_incidence_range:
+
+class geode::Relationships::IncidenceRange
+==========================================
+
+.. toctree::
+	:hidden:
+
+:ref:`Range <doxid-classgeode_1_1_range>` to iterates on all incidences of one component
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class IncidenceRange
+	{
+	public:
+		// construction
+	
+		:target:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a1a5c7fd00c47282f7007627359c61e58>`(
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
+			);
+	
+		:target:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range_1aebb965ce313ad51cf9efc1d11889b883>`(IncidenceRange&& other);
+		:target:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range_1ac770852199d122708db1ac42da39d134>`(const IncidenceRange& other);
+
+		// methods
+	
+		const IncidenceRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a20f3651603221b4d626ee9df97f91eeb>`() const;
+		const IncidenceRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a9f527a79189b44128b32f5467a4731ea>`() const;
+		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a57f1c8dfcbd33b847b71581870cca079>` (const IncidenceRange&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a040a08fbe1e5606026daa24224552a1e>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_incidence_range_1ad5d3f973f0b7447d8aef89a9eca65ba6>` () const;
+	};
+
+	// direct descendants
+
+	class :ref:`CornerIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_corner_incidence_range>`;
+	class :ref:`LineIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_line_incidence_range>`;
+	class :ref:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range>`;
+	class :ref:`CornerIncidenceRange<doxid-classgeode_1_1_section_1_1_corner_incidence_range>`;
+	class :ref:`LineIncidenceRange<doxid-classgeode_1_1_section_1_1_line_incidence_range>`;

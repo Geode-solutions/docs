@@ -1,0 +1,38 @@
+.. index:: pair: class; geode::Relationships::ItemRange
+.. _doxid-classgeode_1_1_relationships_1_1_item_range:
+
+class geode::Relationships::ItemRange
+=====================================
+
+.. toctree::
+	:hidden:
+
+:ref:`Range <doxid-classgeode_1_1_range>` to iterates on all items of one component
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class ItemRange
+	{
+	public:
+		// construction
+	
+		:target:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range_1a6f024107fa148081483209fdad93d09f>`(
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
+			);
+	
+		:target:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range_1a556876c5b8f3d3bd2907edc61caeb95e>`(ItemRange&& other);
+		:target:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range_1a314a75a284ad3603723b3152b17d567e>`(const ItemRange& other);
+
+		// methods
+	
+		const ItemRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_item_range_1a43a4434c34dbd1de9e6084ea51d5c9c2>`() const;
+		const ItemRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_item_range_1af895fe1c23912a384a6f383fd366e2ba>`() const;
+		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_item_range_1ac27b930c74c380e8ad30e186f36c0bb9>` (const ItemRange&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_relationships_1_1_item_range_1ae9e4c28cb682d6f3dbe686968ed4fefd>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_item_range_1af5d059f2e25adc9180172e9c501a17e5>` () const;
+	};

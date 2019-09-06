@@ -26,11 +26,19 @@ Storage class providing range loop to iterate on :ref:`Blocks <doxid-classgeode_
 	class Blocks
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`BlocksBuilder<doxid-classgeode_1_1_blocks_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_blocks_1ad67109db746f7f04ff59daf8d9393518>`;
+
 		// classes
 	
 		class :ref:`BlockRange<doxid-classgeode_1_1_blocks_1_1_block_range>`;
 		class :ref:`BlockRangeBase<doxid-classgeode_1_1_blocks_1_1_block_range_base>`;
 		class :ref:`ModifiableBlockRange<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range>`;
+
+		// fields
+	
+		friend :target:`Builder<doxid-classgeode_1_1_blocks_1a54557798c0f6c5d4b48684496cb76913>`;
 
 		// methods
 	

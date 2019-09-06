@@ -30,8 +30,8 @@ Overview
 
 	// direct descendants
 
-	template <index_t dimension, template< index_t > class... ComponentBuilderList>
-	class :ref:`GeoRepresentationBuilder<doxid-classgeode_1_1_geo_representation_builder>`;
+	template <index_t dimension, template< index_t > class... Components>
+	class :ref:`AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`;
 .. _details-classgeode_1_1_corners_builder:
 
 Detailed Documentation

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>template class geode::PolygonalSurface &#8212; Python  documentation</title>
+    <title>template class geode::PolygonalSurface&lt;3&gt; &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="template class geode::PolygonalSurfaceBase" href="class_geode_PolygonalSurfaceBase.html" />
-    <link rel="prev" title="template class geode::PolygonalSurface&lt;3&gt;" href="class_geode_PolygonalSurface.html" />
+    <link rel="prev" title="template class geode::PolygonalSurface" href="class_geode_PolygonalSurface.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,32 +33,26 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="template-class-geode-polygonalsurface">
-<span id="doxid-classgeode-1-1-polygonal-surface"></span><span id="index-0"></span><h1>template class geode::PolygonalSurface</h1>
+  <div class="section" id="template-class-geode-polygonalsurface-3">
+<span id="doxid-classgeode-1-1-polygonal-surface-3-013-01-4"></span><span id="index-0"></span><h1>template class geode::PolygonalSurface&lt;3&gt;</h1>
 <div class="toctree-wrapper compound">
 </div>
 <div class="section" id="overview">
 <h2>Overview</h2>
-<p>Interface class for <a class="reference internal" href="class_geode_Surface.html#doxid-classgeode-1-1-surface"><span class="std std-ref">Surface</span></a> made up with polygons (triangles, quads, …) of arbitrary dimension. <a class="reference internal" href="#details-classgeode-1-1-polygonal-surface"><span class="std std-ref">More…</span></a></p>
+<p>Interface class for 3D <a class="reference internal" href="class_geode_Surface.html#doxid-classgeode-1-1-surface"><span class="std std-ref">Surface</span></a> made up with polygons. <a class="reference internal" href="#details-classgeode-1-1-polygonal-surface-3-013-01-4"><span class="std std-ref">More…</span></a></p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;polygonal_surface.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="nl">PolygonalSurface</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base"><span class="std std-ref">geode::PolygonalSurfaceBase</span></a><span></span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">class</span> <span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_PolygonalSurfaceBase.html#doxid-classgeode-1-1-polygonal-surface-base"><span class="std std-ref">geode::PolygonalSurfaceBase</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-1a38e184ebddc3bc876adb573408654963"><span class="std std-ref">create</span></a><span></span><span class="p">();</span>
-    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-1acf8bd20d36841076bb00ab5f2a5c5cb7"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">);</span>
-<span class="p">};</span>
-
-<span class="c1">// direct descendants</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodePolygonalSurface.html#doxid-classgeode-1-1-open-geode-polygonal-surface"><span class="std std-ref">OpenGeodePolygonalSurface</span></a><span></span><span class="p">;</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">TriangulatedSurface</span></a><span></span><span class="p">;</span></pre>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polygonal-surface-3-013-01-4-1ae8729a1c765868f99b0fead96944723d">create</span><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polygonal-surface-3-013-01-4-1a590a25a86695121d9296ef05a37b17de">create</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">);</span>
+    <span class="n">Vector3D</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-3-013-01-4-1a86d42fdf1a07ad235ca3dbd77d6a936d"><span class="std std-ref">polygon_normal</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Vector3D</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-3-013-01-4-1ade736f7f8c99af925c4f2d64c7485738"><span class="std std-ref">polygon_vertex_normal</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h3>Inherited Members</h3>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
@@ -95,26 +89,14 @@
 </div>
 </div>
 <div class="section" id="detailed-documentation">
-<span id="details-classgeode-1-1-polygonal-surface"></span><h2>Detailed Documentation</h2>
-<p>Interface class for <a class="reference internal" href="class_geode_Surface.html#doxid-classgeode-1-1-surface"><span class="std std-ref">Surface</span></a> made up with polygons (triangles, quads, …) of arbitrary dimension.</p>
+<span id="details-classgeode-1-1-polygonal-surface-3-013-01-4"></span><h2>Detailed Documentation</h2>
+<p>Interface class for 3D <a class="reference internal" href="class_geode_Surface.html#doxid-classgeode-1-1-surface"><span class="std std-ref">Surface</span></a> made up with polygons.</p>
 <div class="section" id="methods">
 <h3>Methods</h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-1a38e184ebddc3bc876adb573408654963"><span id="index-1"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">create</span><span class="p">()</span></pre>
-<p>Create a new <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a> using default data structure.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-1acf8bd20d36841076bb00ab5f2a5c5cb7"><span id="index-2"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">create</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">)</span></pre>
-<p>Create a new <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a> using a specified data structure.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>type</p></td>
-<td><p>Data structure type</p></td>
-</tr>
-</tbody>
-</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-3-013-01-4-1a86d42fdf1a07ad235ca3dbd77d6a936d"><span id="index-1"></span><span></span><span class="n">Vector3D</span> <span class="n">polygon_normal</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon_id</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the normal of a polygon</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-3-013-01-4-1ade736f7f8c99af925c4f2d64c7485738"><span id="index-2"></span><span></span><span class="n">Vector3D</span> <span class="n">polygon_vertex_normal</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the normal at a polygon vertex</p>
 </div>
 </div>
 </div>

@@ -13,7 +13,7 @@ class geode::OpenGeodeBRepOutput
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <geode_boundary_representation_output.h>
+	#include <geode_brep_output.h>
 	
 	class OpenGeodeBRepOutput: public :ref:`geode::BRepOutput<doxid-classgeode_1_1_b_rep_output>`
 	{

@@ -26,11 +26,19 @@ Storage class providing range loop to iterate on :ref:`Corners <doxid-classgeode
 	class Corners
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`CornersBuilder<doxid-classgeode_1_1_corners_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_corners_1a9220c07e27ed372763b0eb3057c5dd7a>`;
+
 		// classes
 	
 		class :ref:`CornerRange<doxid-classgeode_1_1_corners_1_1_corner_range>`;
 		class :ref:`CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`;
 		class :ref:`ModifiableCornerRange<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range>`;
+
+		// fields
+	
+		friend :target:`Builder<doxid-classgeode_1_1_corners_1a6da9c6513948605b3001af36cc944b3a>`;
 
 		// methods
 	
@@ -43,7 +51,7 @@ Storage class providing range loop to iterate on :ref:`Corners <doxid-classgeode
 	// direct descendants
 
 	template <index_t dimension, template< index_t > class... Components>
-	class :ref:`GeoRepresentation<doxid-classgeode_1_1_geo_representation>`;
+	class :ref:`AddComponents<doxid-classgeode_1_1_add_components>`;
 .. _details-classgeode_1_1_corners:
 
 Detailed Documentation
