@@ -23,11 +23,19 @@ template class geode::Faults
 	class Faults
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`FaultsBuilder<doxid-classgeode_1_1_faults_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_faults_1a5084d39656c355812fdc8b1cc4bac3ed>`;
+
 		// classes
 	
 		class :ref:`FaultRange<doxid-classgeode_1_1_faults_1_1_fault_range>`;
 		class :ref:`FaultRangeBase<doxid-classgeode_1_1_faults_1_1_fault_range_base>`;
 		class :ref:`ModifiableFaultRange<doxid-classgeode_1_1_faults_1_1_modifiable_fault_range>`;
+
+		// fields
+	
+		friend :target:`Builder<doxid-classgeode_1_1_faults_1ae53eee0a7d485094fd451c31ee9b676c>`;
 
 		// methods
 	
@@ -36,7 +44,3 @@ template class geode::Faults
 		:ref:`FaultRange<doxid-classgeode_1_1_faults_1_1_fault_range>` :target:`faults<doxid-classgeode_1_1_faults_1a682d8476f2554b4af790b5c1cc9e2737>`() const;
 		std::vector<std::string> :target:`save_faults<doxid-classgeode_1_1_faults_1afeed286b14838345ef7eaf72d5d970a5>`(const std::string& directory) const;
 	};
-
-	// direct descendants
-
-	class :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`;

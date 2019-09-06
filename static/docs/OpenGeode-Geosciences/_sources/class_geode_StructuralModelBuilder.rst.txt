@@ -17,8 +17,7 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 	
 	class StructuralModelBuilder:
 	    public BRepBuilder,
-	    public :ref:`geode::FaultsBuilder<doxid-classgeode_1_1_faults_builder>`,
-	    public :ref:`geode::HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`
+	    public AddComponentsBuilders< 3, Faults, Horizons >
 	{
 	public:
 		// construction
@@ -46,18 +45,3 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 	
 		void :target:`remove_horizon<doxid-classgeode_1_1_structural_model_builder_1aae160d2bc57bcbee1fbdd46cf30945b4>`(const Horizon3D& horizon);
 	};
-
-Inherited Members
------------------
-
-.. ref-code-block:: cpp
-	:class: doxyrest-overview-inherited-code-block
-
-	public:
-		// methods
-	
-		void :ref:`load_faults<doxid-classgeode_1_1_faults_builder_1a496b6e10b92edee7672563405e959373>`(const std::string& directory);
-		void :ref:`set_fault_type<doxid-classgeode_1_1_faults_builder_1abdb5bb7ab5c434b49453364292e8f72b>`(const uuid& fault_id, typename :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>::FAULT_TYPE type);
-		void :ref:`load_horizons<doxid-classgeode_1_1_horizons_builder_1ac567003af741f8e3012a91fc8103e9a8>`(const std::string& directory);
-		void :ref:`set_horizon_type<doxid-classgeode_1_1_horizons_builder_1aae9569213b2ae67e06c1e77d63f6eeb6>`(const uuid& horizon_id, typename :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>::HORIZON_TYPE type);
-

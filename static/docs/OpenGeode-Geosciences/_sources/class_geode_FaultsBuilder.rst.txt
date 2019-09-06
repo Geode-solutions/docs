@@ -28,7 +28,3 @@ template class geode::FaultsBuilder
 			typename :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>::FAULT_TYPE type
 			);
 	};
-
-	// direct descendants
-
-	class :ref:`StructuralModelBuilder<doxid-classgeode_1_1_structural_model_builder>`;

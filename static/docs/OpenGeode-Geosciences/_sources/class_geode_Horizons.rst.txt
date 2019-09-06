@@ -23,11 +23,19 @@ template class geode::Horizons
 	class Horizons
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_horizons_1a4f8e04f5ffe5cf10f0cb8ae3713e5039>`;
+
 		// classes
 	
 		class :ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>`;
 		class :ref:`HorizonRangeBase<doxid-classgeode_1_1_horizons_1_1_horizon_range_base>`;
 		class :ref:`ModifiableHorizonRange<doxid-classgeode_1_1_horizons_1_1_modifiable_horizon_range>`;
+
+		// fields
+	
+		friend :target:`Builder<doxid-classgeode_1_1_horizons_1a980f5f49c743e80b423fad956b347b87>`;
 
 		// methods
 	
@@ -36,7 +44,3 @@ template class geode::Horizons
 		:ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>` :target:`horizons<doxid-classgeode_1_1_horizons_1ab93a8d9950015e80d5463bf29e89469e>`() const;
 		std::vector<std::string> :target:`save_horizons<doxid-classgeode_1_1_horizons_1ad483870b6dfeffe33001260b5ebbfc25>`(const std::string& directory) const;
 	};
-
-	// direct descendants
-
-	class :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`;
