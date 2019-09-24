@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::ModelBoundaries::ModelBoundaryRangeBase
+.. _doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base:
+
+class geode::ModelBoundaries::ModelBoundaryRangeBase
+====================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <model_boundaries.h>
+	
+	class ModelBoundaryRangeBase
+	{
+	public:
+		// methods
+	
+		bool :target:`operator !=<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base_1a7c3ad2e44b6b54c216c2f15823efb72d>` (const ModelBoundaryRangeBase&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base_1a69d9c03b8800fa80f2539f366ca1104f>` ();
+	};
+
+	// direct descendants
+
+	class :ref:`ModelBoundaryRange<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range>`;

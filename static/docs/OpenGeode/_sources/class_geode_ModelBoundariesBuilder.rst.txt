@@ -1,0 +1,25 @@
+.. index:: pair: class; geode::ModelBoundariesBuilder
+.. _doxid-classgeode_1_1_model_boundaries_builder:
+
+template class geode::ModelBoundariesBuilder
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <model_boundaries_builder.h>
+	
+	template <index_t dimension>
+	class ModelBoundariesBuilder
+	{
+	public:
+		// methods
+	
+		void :target:`load_model_boundaries<doxid-classgeode_1_1_model_boundaries_builder_1a06d7e5e8c27d2eeda6c914f4580c673e>`(const std::string& directory);
+	};

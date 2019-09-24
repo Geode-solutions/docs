@@ -38,4 +38,7 @@ This abstract class represents a component that can be used in assembly.
 	class :ref:`Line<doxid-classgeode_1_1_line>`;
 
 	template <index_t dimension>
+	class :ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`;
+
+	template <index_t dimension>
 	class :ref:`Surface<doxid-classgeode_1_1_surface>`;

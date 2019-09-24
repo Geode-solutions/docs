@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::ModelBoundaries::ModelBoundaryRange &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::ModelBoundaries::ModelBoundaryRangeBase" href="class_geode_ModelBoundaries_ModelBoundaryRangeBase.html" />
+    <link rel="prev" title="template class geode::ModelBoundaries" href="class_geode_ModelBoundaries.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-modelboundaries-modelboundaryrange">
+<span id="doxid-classgeode-1-1-model-boundaries-1-1-model-boundary-range"></span><span id="index-0"></span><h1>class geode::ModelBoundaries::ModelBoundaryRange</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;model_boundaries.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">ModelBoundaryRange</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_ModelBoundaries_ModelBoundaryRangeBase.html#doxid-classgeode-1-1-model-boundaries-1-1-model-boundary-range-base"><span class="std std-ref">geode::ModelBoundaries::ModelBoundaryRangeBase</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-boundaries-1-1-model-boundary-range-1af4c8136412d89e23e011a0163914bc9d">ModelBoundaryRange</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_ModelBoundaries.html#doxid-classgeode-1-1-model-boundaries"><span class="std std-ref">ModelBoundaries</span></a><span></span><span class="o">&amp;</span> <span class="n">boundaries</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">ModelBoundaryRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-boundaries-1-1-model-boundary-range-1ae2293dcdaf40f161d7319ce7aef64f3c">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">ModelBoundaryRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-boundaries-1-1-model-boundary-range-1a4df101bf12c1f3177b363d620c454f7e">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ModelBoundary.html#doxid-classgeode-1-1-model-boundary"><span class="std std-ref">ModelBoundary</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-boundaries-1-1-model-boundary-range-1a5eb14be6742024c4ed4fbb342ee0467b">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_ModelBoundaries_ModelBoundaryRangeBase.html#doxid-classgeode-1-1-model-boundaries-1-1-model-boundary-range-base-1a7c3ad2e44b6b54c216c2f15823efb72d"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_ModelBoundaries_ModelBoundaryRangeBase.html#doxid-classgeode-1-1-model-boundaries-1-1-model-boundary-range-base"><span class="std std-ref">ModelBoundaryRangeBase</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_ModelBoundaries_ModelBoundaryRangeBase.html#doxid-classgeode-1-1-model-boundaries-1-1-model-boundary-range-base-1a69d9c03b8800fa80f2539f366ca1104f"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span></pre>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_ModelBoundaries_ModelBoundaryRange.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

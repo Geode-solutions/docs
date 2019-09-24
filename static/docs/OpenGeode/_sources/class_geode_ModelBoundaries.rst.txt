@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::ModelBoundaries
+.. _doxid-classgeode_1_1_model_boundaries:
+
+template class geode::ModelBoundaries
+=====================================
+
+.. toctree::
+	:hidden:
+
+	class_geode_ModelBoundaries_ModelBoundaryRange.rst
+	class_geode_ModelBoundaries_ModelBoundaryRangeBase.rst
+	class_geode_ModelBoundaries_ModifiableModelBoundaryRange.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <model_boundaries.h>
+	
+	template <index_t dimension>
+	class ModelBoundaries
+	{
+	public:
+		// typedefs
+	
+		typedef :ref:`ModelBoundariesBuilder<doxid-classgeode_1_1_model_boundaries_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_model_boundaries_1ab97112a50cd1b045e4410d8534c625d8>`;
+
+		// classes
+	
+		class :ref:`ModelBoundaryRange<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range>`;
+		class :ref:`ModelBoundaryRangeBase<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base>`;
+		class :ref:`ModifiableModelBoundaryRange<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range>`;
+
+		// fields
+	
+		friend :target:`Builder<doxid-classgeode_1_1_model_boundaries_1ac2f53f0b1bec7321b94e0fa4427b5f27>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_model_boundaries<doxid-classgeode_1_1_model_boundaries_1aae1f804ae1468702b791688cd5df30db>`() const;
+		const :ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`<dimension>& :target:`model_boundary<doxid-classgeode_1_1_model_boundaries_1a938d4e6efeec28d27eb7a67014927d45>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`ModelBoundaryRange<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range>` :target:`model_boundaries<doxid-classgeode_1_1_model_boundaries_1a54883c89353c6f4216433e6ef4211028>`() const;
+		std::vector<std::string> :target:`save_model_boundaries<doxid-classgeode_1_1_model_boundaries_1a72a3977699fb5df54a98a8c44143d6d4>`(const std::string& directory) const;
+	};

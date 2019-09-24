@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::BRep::ModelBoundaryItemRange &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::BRep::SurfaceBoundaryRange" href="class_geode_BRep_SurfaceBoundaryRange.html" />
+    <link rel="prev" title="class geode::BRep::LineIncidenceRange" href="class_geode_BRep_LineIncidenceRange.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-brep-modelboundaryitemrange">
+<span id="doxid-classgeode-1-1-b-rep-1-1-model-boundary-item-range"></span><span id="index-0"></span><h1>class geode::BRep::ModelBoundaryItemRange</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;brep.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">ModelBoundaryItemRange</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range"><span class="std std-ref">geode::Relationships::ItemRange</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-model-boundary-item-range-1aec12bcb3adf6f4197b9c43a584d54929">ModelBoundaryItemRange</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">ModelBoundary3D</span><span class="o">&amp;</span> <span class="n">boundary</span>
+        <span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">ModelBoundaryItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-model-boundary-item-range-1a3aaad85fff07b098bf52ea74ab90cb25">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">ModelBoundaryItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-model-boundary-item-range-1a1910a697da042a5ae110cd07b35f5be4">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-model-boundary-item-range-1af44cd5b454c07850c234e75b96965a9d">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range"><span class="std std-ref">ItemRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range-1a43a4434c34dbd1de9e6084ea51d5c9c2"><span class="std std-ref">begin</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range"><span class="std std-ref">ItemRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range-1af895fe1c23912a384a6f383fd366e2ba"><span class="std std-ref">end</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range-1ac27b930c74c380e8ad30e186f36c0bb9"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range"><span class="std std-ref">ItemRange</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range-1ae9e4c28cb682d6f3dbe686968ed4fefd"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range-1af5d059f2e25adc9180172e9c501a17e5"><span class="std std-ref">operator *</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_BRep_ModelBoundaryItemRange.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
