@@ -27,4 +27,9 @@ template class geode::HorizonsBuilder
 			const uuid& horizon_id,
 			typename :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>::HORIZON_TYPE type
 			);
+	
+		void :target:`set_horizon_name<doxid-classgeode_1_1_horizons_builder_1aabf92e26c37506c88c186bbe5700e6d5>`(
+			const uuid& id,
+			std::string name
+			);
 	};

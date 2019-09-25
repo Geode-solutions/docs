@@ -27,4 +27,9 @@ template class geode::FaultsBuilder
 			const uuid& fault_id,
 			typename :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>::FAULT_TYPE type
 			);
+	
+		void :target:`set_fault_name<doxid-classgeode_1_1_faults_builder_1aa1ed744c4260df11893e15267473bbc9>`(
+			const uuid& id,
+			std::string name
+			);
 	};
