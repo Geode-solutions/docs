@@ -26,6 +26,11 @@ Overview
 	
 		void :target:`load_corners<doxid-classgeode_1_1_corners_builder_1a4d67ce361e41375c36bc6cc1a90e4f2c>`(const std::string& directory);
 		std::unique_ptr<:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`<dimension>> :ref:`corner_mesh_builder<doxid-classgeode_1_1_corners_builder_1a32bd13083857032419443b459ecc9693>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+	
+		void :target:`set_corner_name<doxid-classgeode_1_1_corners_builder_1a859a33040b17c564456bfe022aaa098a>`(
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id,
+			std::string name
+			);
 	};
 
 	// direct descendants

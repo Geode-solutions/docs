@@ -26,6 +26,11 @@ Overview
 	
 		void :target:`load_lines<doxid-classgeode_1_1_lines_builder_1a9fcf2c7e9f7cfbe4deaf99e18e00268f>`(const std::string& directory);
 		std::unique_ptr<:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`<dimension>> :ref:`line_mesh_builder<doxid-classgeode_1_1_lines_builder_1a8cc9faf107e8afd85b52c4714f82aaf8>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+	
+		void :target:`set_line_name<doxid-classgeode_1_1_lines_builder_1a42038070684e41eb113ece41abbd5541>`(
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id,
+			std::string name
+			);
 	};
 .. _details-classgeode_1_1_lines_builder:
 

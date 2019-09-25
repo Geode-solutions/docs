@@ -22,4 +22,9 @@ template class geode::ModelBoundariesBuilder
 		// methods
 	
 		void :target:`load_model_boundaries<doxid-classgeode_1_1_model_boundaries_builder_1a06d7e5e8c27d2eeda6c914f4580c673e>`(const std::string& directory);
+	
+		void :target:`set_model_boundary_name<doxid-classgeode_1_1_model_boundaries_builder_1a26048f48d03af976ae1d4aa567e78fc8>`(
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id,
+			std::string name
+			);
 	};
