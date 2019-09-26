@@ -1,0 +1,44 @@
+.. index:: pair: class; geode::Relationships::InternalRange
+.. _doxid-classgeode_1_1_relationships_1_1_internal_range:
+
+class geode::Relationships::InternalRange
+=========================================
+
+.. toctree::
+	:hidden:
+
+:ref:`Range <doxid-classgeode_1_1_range>` to iterates on all internal components of one component
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class InternalRange
+	{
+	public:
+		// construction
+	
+		:target:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range_1aa91b3172f956a6463aefe915d1148de8>`(
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
+			);
+	
+		:target:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range_1afb1ce1f6fcc85ad30e1660511cf96d0c>`(InternalRange&& other);
+		:target:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range_1a121944590bcdca8b9d9d9669c1d91987>`(const InternalRange& other);
+
+		// methods
+	
+		const InternalRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_internal_range_1a9207636689ad0272a7ca42c69b0534a4>`() const;
+		const InternalRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_internal_range_1a71343dd97cafc5b180b9387def946ac3>`() const;
+		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_internal_range_1a2f110819758927c0f6fb9440791c9e70>` (const InternalRange&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_relationships_1_1_internal_range_1aab35f95d79abb66cd468b34631d03ac6>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_internal_range_1a7c32ea855422550a8c9a60ebdd442673>` () const;
+	};
+
+	// direct descendants
+
+	class :ref:`BlockInternalRange<doxid-classgeode_1_1_b_rep_1_1_block_internal_range>`;
+	class :ref:`SurfaceInternalRange<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range>`;
+	class :ref:`SurfaceInternalRange<doxid-classgeode_1_1_section_1_1_surface_internal_range>`;

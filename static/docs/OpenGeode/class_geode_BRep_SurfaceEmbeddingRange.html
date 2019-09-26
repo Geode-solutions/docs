@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::BRep::SurfaceEmbeddingRange &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::BRep::SurfaceIncidenceRange" href="class_geode_BRep_SurfaceIncidenceRange.html" />
+    <link rel="prev" title="class geode::BRep::SurfaceBoundaryRange" href="class_geode_BRep_SurfaceBoundaryRange.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-brep-surfaceembeddingrange">
+<span id="doxid-classgeode-1-1-b-rep-1-1-surface-embedding-range"></span><span id="index-0"></span><h1>class geode::BRep::SurfaceEmbeddingRange</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;brep.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">SurfaceEmbeddingRange</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range"><span class="std std-ref">geode::Relationships::EmbeddingRange</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-surface-embedding-range-1ad9b2839e5c648efb5721751b8cbbfbeb">SurfaceEmbeddingRange</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span>
+        <span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">SurfaceEmbeddingRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-surface-embedding-range-1aaa9bcfba16380a3fd8042d19711b97da">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">SurfaceEmbeddingRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-surface-embedding-range-1a572b875c393ffcac878ab73daef79393">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-surface-embedding-range-1a900f8395853eb351b7700a80a8666593">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range"><span class="std std-ref">EmbeddingRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range-1aabeba305c60e405b2816f208f895250d"><span class="std std-ref">begin</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range"><span class="std std-ref">EmbeddingRange</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range-1a1e92f6e8925ae64d943e8e5ad8b4de1d"><span class="std std-ref">end</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range-1a78ffb07af8d6120b562abe74e4b24989"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range"><span class="std std-ref">EmbeddingRange</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range-1abaab533f7417e63649ecf44647b84a40"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range-1ad04f3c01441ba5d664a3c75d1fedfb06"><span class="std std-ref">operator *</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_BRep_SurfaceEmbeddingRange.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

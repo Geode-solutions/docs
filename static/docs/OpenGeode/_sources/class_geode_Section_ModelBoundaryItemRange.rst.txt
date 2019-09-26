@@ -1,0 +1,49 @@
+.. index:: pair: class; geode::Section::ModelBoundaryItemRange
+.. _doxid-classgeode_1_1_section_1_1_model_boundary_item_range:
+
+class geode::Section::ModelBoundaryItemRange
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section.h>
+	
+	class ModelBoundaryItemRange: public :ref:`geode::Relationships::ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`
+	{
+	public:
+		// construction
+	
+		:target:`ModelBoundaryItemRange<doxid-classgeode_1_1_section_1_1_model_boundary_item_range_1a630de41217b7b3cf54b7315a7655711f>`(
+			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+			const ModelBoundary2D& boundary
+			);
+
+		// methods
+	
+		const ModelBoundaryItemRange& :target:`begin<doxid-classgeode_1_1_section_1_1_model_boundary_item_range_1a6cc5735e2f47d542ffd34e2ea2da61d9>`() const;
+		const ModelBoundaryItemRange& :target:`end<doxid-classgeode_1_1_section_1_1_model_boundary_item_range_1a95509faad00843e53a2c14a85ad60c17>`() const;
+		const Line2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_model_boundary_item_range_1afca6cc01f685cbb20222b3143da27ccb>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`& :ref:`begin<doxid-classgeode_1_1_relationships_1_1_item_range_1a43a4434c34dbd1de9e6084ea51d5c9c2>`() const;
+		const :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`& :ref:`end<doxid-classgeode_1_1_relationships_1_1_item_range_1af895fe1c23912a384a6f383fd366e2ba>`() const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_item_range_1ac27b930c74c380e8ad30e186f36c0bb9>` (const :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_item_range_1ae9e4c28cb682d6f3dbe686968ed4fefd>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_item_range_1af5d059f2e25adc9180172e9c501a17e5>` () const;
+

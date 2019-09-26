@@ -8,12 +8,16 @@ class geode::BRep
 	:hidden:
 
 	class_geode_BRep_BlockBoundaryRange.rst
+	class_geode_BRep_BlockInternalRange.rst
 	class_geode_BRep_CornerIncidenceRange.rst
 	class_geode_BRep_LineBoundaryRange.rst
+	class_geode_BRep_LineEmbeddingRange.rst
 	class_geode_BRep_LineIncidenceRange.rst
 	class_geode_BRep_ModelBoundaryItemRange.rst
 	class_geode_BRep_SurfaceBoundaryRange.rst
+	class_geode_BRep_SurfaceEmbeddingRange.rst
 	class_geode_BRep_SurfaceIncidenceRange.rst
+	class_geode_BRep_SurfaceInternalRange.rst
 
 A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D model composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, :ref:`Surfaces <doxid-classgeode_1_1_surfaces>` and :ref:`Blocks <doxid-classgeode_1_1_blocks>`. This class provides classes for range-based iteration on :ref:`Component <doxid-classgeode_1_1_component>` boundaries and incidences.
 
@@ -31,12 +35,16 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 		// classes
 	
 		class :ref:`BlockBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range>`;
+		class :ref:`BlockInternalRange<doxid-classgeode_1_1_b_rep_1_1_block_internal_range>`;
 		class :ref:`CornerIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_corner_incidence_range>`;
 		class :ref:`LineBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_line_boundary_range>`;
+		class :ref:`LineEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_line_embedding_range>`;
 		class :ref:`LineIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_line_incidence_range>`;
 		class :ref:`ModelBoundaryItemRange<doxid-classgeode_1_1_b_rep_1_1_model_boundary_item_range>`;
 		class :ref:`SurfaceBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_surface_boundary_range>`;
+		class :ref:`SurfaceEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_surface_embedding_range>`;
 		class :ref:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range>`;
+		class :ref:`SurfaceInternalRange<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range>`;
 
 		// methods
 	
@@ -46,6 +54,10 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 		:ref:`CornerIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_corner_incidence_range>` :target:`incidences<doxid-classgeode_1_1_b_rep_1ade423c7019aedab2c66947f50e17d6be>`(const Corner3D& corner) const;
 		:ref:`LineIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_line_incidence_range>` :target:`incidences<doxid-classgeode_1_1_b_rep_1ad4ba08da8a89a1a4bb055708d8844912>`(const Line3D& line) const;
 		:ref:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range>` :target:`incidences<doxid-classgeode_1_1_b_rep_1a6bbb9525c2b29da5bf311defdaa28f4f>`(const Surface3D& surface) const;
+		:ref:`SurfaceInternalRange<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range>` :target:`internals<doxid-classgeode_1_1_b_rep_1ad120708ba7934de46c39fe59ac9de574>`(const Surface3D& surface) const;
+		:ref:`BlockInternalRange<doxid-classgeode_1_1_b_rep_1_1_block_internal_range>` :target:`internals<doxid-classgeode_1_1_b_rep_1a97701ea7f2caacc64b3e3d35d7c39e25>`(const Block3D& block) const;
+		:ref:`LineEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_line_embedding_range>` :target:`embeddings<doxid-classgeode_1_1_b_rep_1a7a80482da3dfb24ce1d2f5d77dfaa646>`(const Line3D& line) const;
+		:ref:`SurfaceEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_surface_embedding_range>` :target:`embeddings<doxid-classgeode_1_1_b_rep_1a2faff7e518b5ba43f0db8c7abbfb0ddc>`(const Surface3D& surface) const;
 		:ref:`ModelBoundaryItemRange<doxid-classgeode_1_1_b_rep_1_1_model_boundary_item_range>` :target:`items<doxid-classgeode_1_1_b_rep_1a0beec02a5f6615f26105388770a9032b>`(const ModelBoundary3D& boundary) const;
 		std::string :target:`native_extension<doxid-classgeode_1_1_b_rep_1a81f081b67459fd2657fdc426fc0b8eab>`() const;
 		static std::string :target:`native_extension_static<doxid-classgeode_1_1_b_rep_1aacd20a97ef190e2f0033a9977c8fa230>`();
@@ -62,7 +74,9 @@ Inherited Members
 	
 		class :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`;
 		class :ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>`;
+		class :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`;
 		class :ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>`;
+		class :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`;
 		class :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`;
 
 		// methods
@@ -71,6 +85,10 @@ Inherited Members
 		:ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>` :ref:`boundaries<doxid-classgeode_1_1_relationships_1a50fb7346a1d521024ba93889e79a1367>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_incidences<doxid-classgeode_1_1_relationships_1abbc8b47ab3a49bf8e535c8c26e2f1f59>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>` :ref:`incidences<doxid-classgeode_1_1_relationships_1aded689c44bb785364614857d8eed75ac>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_internals<doxid-classgeode_1_1_relationships_1a9e1882db9ee27ae4bb1418f3a9552579>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>` :ref:`internals<doxid-classgeode_1_1_relationships_1a430f1b4d0320785866862551b67a3031>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_embeddings<doxid-classgeode_1_1_relationships_1a1dee0ca9dca97839b63e81b28c9d67e3>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>` :ref:`embeddings<doxid-classgeode_1_1_relationships_1afe23147d9642f409ea8f5717e69e8714>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_items<doxid-classgeode_1_1_relationships_1a54102d15836e1c293a1af12846bdfc96>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>` :ref:`items<doxid-classgeode_1_1_relationships_1aa1aa3eb2f1413cb785c7a35b11c2fc1f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_collections<doxid-classgeode_1_1_relationships_1a2dfe25535658df66652d30d9728138e5>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;

@@ -1,0 +1,49 @@
+.. index:: pair: class; geode::BRep::LineEmbeddingRange
+.. _doxid-classgeode_1_1_b_rep_1_1_line_embedding_range:
+
+class geode::BRep::LineEmbeddingRange
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep.h>
+	
+	class LineEmbeddingRange: public :ref:`geode::Relationships::EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`
+	{
+	public:
+		// construction
+	
+		:target:`LineEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_line_embedding_range_1ada479d76338f8dbdc2297b20605f2608>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+			const Line3D& line
+			);
+
+		// methods
+	
+		const LineEmbeddingRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_line_embedding_range_1acb7a75e44a58ad4248e83b128e24a881>`() const;
+		const LineEmbeddingRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_line_embedding_range_1a4edc83b6be794ba0813434f770b05fd3>`() const;
+		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_line_embedding_range_1a471f5fdc8605ec3d7700d7ab345db497>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`& :ref:`begin<doxid-classgeode_1_1_relationships_1_1_embedding_range_1aabeba305c60e405b2816f208f895250d>`() const;
+		const :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`& :ref:`end<doxid-classgeode_1_1_relationships_1_1_embedding_range_1a1e92f6e8925ae64d943e8e5ad8b4de1d>`() const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_embedding_range_1a78ffb07af8d6120b562abe74e4b24989>` (const :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_embedding_range_1abaab533f7417e63649ecf44647b84a40>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_embedding_range_1ad04f3c01441ba5d664a3c75d1fedfb06>` () const;
+

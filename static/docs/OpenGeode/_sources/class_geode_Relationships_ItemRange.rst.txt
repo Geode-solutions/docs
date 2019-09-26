@@ -40,3 +40,4 @@ class geode::Relationships::ItemRange
 	// direct descendants
 
 	class :ref:`ModelBoundaryItemRange<doxid-classgeode_1_1_b_rep_1_1_model_boundary_item_range>`;
+	class :ref:`ModelBoundaryItemRange<doxid-classgeode_1_1_section_1_1_model_boundary_item_range>`;

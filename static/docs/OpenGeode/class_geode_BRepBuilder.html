@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::BRepInput" href="class_geode_BRepInput.html" />
-    <link rel="prev" title="class geode::BRep::SurfaceIncidenceRange" href="class_geode_BRep_SurfaceIncidenceRange.html" />
+    <link rel="prev" title="class geode::BRep::SurfaceInternalRange" href="class_geode_BRep_SurfaceInternalRange.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -81,6 +81,16 @@
         <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span>
         <span class="p">);</span>
 
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a460689f5bb9d659ccfe1236a945a1912">add_line_surface_internal_relationship</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1ac7d5c71abde95c24bc02dbfcdb94b885">add_surface_block_internal_relationship</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span>
+        <span class="p">);</span>
+
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a108e066b6742da5fdec6c3fdc7c7df58">add_surface_in_model_boundary</span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">ModelBoundary3D</span><span class="o">&amp;</span> <span class="n">boundary</span>
@@ -94,6 +104,7 @@
     <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a875c4be67f9214ad261de4ad943adc15"><span class="std std-ref">register_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1aee190cedcd627f2e9bdc5e3815afcdfd"><span class="std std-ref">unregister_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a6c661d5abfdf4600024e03a1535b43d9"><span class="std std-ref">add_boundary_relation</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">boundary</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">incidence</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a785391408cff3d0af65ad246dd4acdf9"><span class="std std-ref">add_internal_relation</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">internal</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">embedding</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a951ced98812449fedd537cec5b66ceec"><span class="std std-ref">add_item_in_collection</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">item</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">collection</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a5a64bac350c1065b91174605ef82f48f"><span class="std std-ref">load_relationships</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
 

@@ -724,6 +724,7 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a5cfa2b7765eb0c1e52445038d29a7317>`(:ref:`Corner<doxid-classgeode_1_1_corner>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(:ref:`Line<doxid-classgeode_1_1_line>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a764b37be83e42f8680a9cb1c0ce3e2b1>`(:ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 	void opengeode_model_api :ref:`load_brep<doxid-namespacegeode_1aa26193dd22e3d8cda6710e403023544e>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const std::string& filename);
 	void opengeode_model_api :ref:`save_brep<doxid-namespacegeode_1ada507675c45683e2c0ae558d471c1956>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const std::string& filename);

@@ -37,7 +37,9 @@ Inherited Members
 	
 		class :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`;
 		class :ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>`;
+		class :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`;
 		class :ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>`;
+		class :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`;
 		class :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`;
 
 		// methods
@@ -46,6 +48,10 @@ Inherited Members
 		:ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>` :ref:`boundaries<doxid-classgeode_1_1_relationships_1a50fb7346a1d521024ba93889e79a1367>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_incidences<doxid-classgeode_1_1_relationships_1abbc8b47ab3a49bf8e535c8c26e2f1f59>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>` :ref:`incidences<doxid-classgeode_1_1_relationships_1aded689c44bb785364614857d8eed75ac>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_internals<doxid-classgeode_1_1_relationships_1a9e1882db9ee27ae4bb1418f3a9552579>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>` :ref:`internals<doxid-classgeode_1_1_relationships_1a430f1b4d0320785866862551b67a3031>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_embeddings<doxid-classgeode_1_1_relationships_1a1dee0ca9dca97839b63e81b28c9d67e3>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>` :ref:`embeddings<doxid-classgeode_1_1_relationships_1afe23147d9642f409ea8f5717e69e8714>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_items<doxid-classgeode_1_1_relationships_1a54102d15836e1c293a1af12846bdfc96>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>` :ref:`items<doxid-classgeode_1_1_relationships_1aa1aa3eb2f1413cb785c7a35b11c2fc1f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_collections<doxid-classgeode_1_1_relationships_1a2dfe25535658df66652d30d9728138e5>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;

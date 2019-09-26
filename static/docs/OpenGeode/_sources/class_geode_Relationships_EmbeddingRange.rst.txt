@@ -1,0 +1,44 @@
+.. index:: pair: class; geode::Relationships::EmbeddingRange
+.. _doxid-classgeode_1_1_relationships_1_1_embedding_range:
+
+class geode::Relationships::EmbeddingRange
+==========================================
+
+.. toctree::
+	:hidden:
+
+:ref:`Range <doxid-classgeode_1_1_range>` to iterates on all embeddings of one component
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class EmbeddingRange
+	{
+	public:
+		// construction
+	
+		:target:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range_1a9206fb35a0a48cba6795c536cc5b16af>`(
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
+			);
+	
+		:target:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range_1a96c3f3e4ff1264c77bc0c176b213a485>`(EmbeddingRange&& other);
+		:target:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range_1a117c89b35ecb4c232feefd27b7cb35fa>`(const EmbeddingRange& other);
+
+		// methods
+	
+		const EmbeddingRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_embedding_range_1aabeba305c60e405b2816f208f895250d>`() const;
+		const EmbeddingRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_embedding_range_1a1e92f6e8925ae64d943e8e5ad8b4de1d>`() const;
+		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_embedding_range_1a78ffb07af8d6120b562abe74e4b24989>` (const EmbeddingRange&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_relationships_1_1_embedding_range_1abaab533f7417e63649ecf44647b84a40>` ();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_embedding_range_1ad04f3c01441ba5d664a3c75d1fedfb06>` () const;
+	};
+
+	// direct descendants
+
+	class :ref:`LineEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_line_embedding_range>`;
+	class :ref:`SurfaceEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_surface_embedding_range>`;
+	class :ref:`LineEmbeddingRange<doxid-classgeode_1_1_section_1_1_line_embedding_range>`;
