@@ -32,10 +32,12 @@ Description of a vector in the given dimension with double coordinates
 
 		// methods
 	
+		double :target:`length2<doxid-classgeode_1_1_vector_1a7abe255ccdc23d49c26c839c89250dcc>`() const;
 		double :target:`length<doxid-classgeode_1_1_vector_1a38b6b60c41a4b7a53e834682795f52c9>`() const;
 		Vector :target:`normalize<doxid-classgeode_1_1_vector_1a2ea215b61fa7b4a693acc61d2e1c4ba7>`() const;
-		double :target:`dot<doxid-classgeode_1_1_vector_1a8d1c6d61756e2ece189aaa0e342e4e85>`(const Vector& other);
-		Vector :target:`cross<doxid-classgeode_1_1_vector_1a15ee82fb371f6c8cae3729ad6186ae2c>`(const Vector& other);
+		Vector :target:`operator *<doxid-classgeode_1_1_vector_1a2678ecbca9cafe2121c1b06b78c7e964>` (double s) const;
+		double :target:`dot<doxid-classgeode_1_1_vector_1a989b8f165c3b3d9867a552d7fbf1b274>`(const Vector& other) const;
+		Vector :target:`cross<doxid-classgeode_1_1_vector_1a94e28bd7f6692a35c557fb140dac8e81>`(const Vector& other) const;
 	};
 
 Inherited Members
