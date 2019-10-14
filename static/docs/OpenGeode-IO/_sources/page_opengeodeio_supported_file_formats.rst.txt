@@ -6,25 +6,13 @@ Supported file formats
 
 This page lists the supported file formats, indicating for each the loaded/saved OpenGeode object.
 
-Models (comming soon!)
-======================
+Models
+======
 
-===========  ================  =====  ======  
-File format  OpenGeode object  Input  Output  
-===========  ================  =====  ======  
-
-.msh         BRep              NO     NO      
-===========  ================  =====  ======
+| File format | OpenGeode object | Input | Output | | .msh | BRep | YES | NO |
 
 Meshes
 ======
 
-===========  =====================  =====  ======  
-File format  OpenGeode object       Input  Output  
-===========  =====================  =====  ======  
-
-.obj         PolygonalSurface3D     YES    YES     
-.ply         PolygonalSurface3D     YES    YES     
-.stl         TriangulatedSurface3D  YES    YES     
-===========  =====================  =====  ======
+| File format | OpenGeode object | Input | Output | | .obj | PolygonalSurface3D | YES | YES | | .ply | PolygonalSurface3D | YES | YES | | .stl | TriangulatedSurface3D | YES | YES |
 
