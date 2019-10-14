@@ -27,8 +27,8 @@ Overview
 
 		// methods
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_unique_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a6ae0637001783653fb3cba451de9ef28>`() const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_colocated_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad4b7d866771505dcd0fce0077aaf1a3c>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_unique_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a37c3af9afc03d1a1a49a28a7a6aeb1f5>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_colocated_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a2b80bd8ef464f4f5af3272e5fde117c1>`() const;
 	};
 .. _details-structgeode_1_1_n_n_search_1_1_colocated_info:
 

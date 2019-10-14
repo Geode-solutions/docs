@@ -24,9 +24,9 @@ Class for range-based iteration on unmodifiable :ref:`Corners <doxid-classgeode_
 
 		// methods
 	
-		const CornerRange& :target:`begin<doxid-classgeode_1_1_corners_1_1_corner_range_1a321196d68f3d117fefbf11e1aa5ea13d>`() const;
-		const CornerRange& :target:`end<doxid-classgeode_1_1_corners_1_1_corner_range_1af7989f3839ed83b94bc49e98ce89ede6>`() const;
-		const :ref:`Corner<doxid-classgeode_1_1_corner>`<dimension>& :target:`operator *<doxid-classgeode_1_1_corners_1_1_corner_range_1a77100753cf567bcfd3304132102d9216>` () const;
+		const CornerRange& :target:`begin<doxid-classgeode_1_1_corners_1_1_corner_range_1a596796746e659f270957d728b462fa1a>`() const;
+		const CornerRange& :target:`end<doxid-classgeode_1_1_corners_1_1_corner_range_1a4504eab8e2a3380f8c94a74ddeec9828>`() const;
+		const :ref:`Corner<doxid-classgeode_1_1_corner>`<dimension>& :target:`operator *<doxid-classgeode_1_1_corners_1_1_corner_range_1ad81835321b5cf5b90198b552ed9cbec4>` () const;
 	};
 
 Inherited Members
@@ -38,6 +38,6 @@ Inherited Members
 	public:
 		// methods
 	
-		bool :ref:`operator !=<doxid-classgeode_1_1_corners_1_1_corner_range_base_1a282b01976e835a38cafcabc2b6df3572>` (const :ref:`CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`&) const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_corners_1_1_corner_range_base_1aa127256b3e478299eadee155dc5769d1>` (const :ref:`CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_corners_1_1_corner_range_base_1a68263571974d8287c65870eebb337710>` ();
 

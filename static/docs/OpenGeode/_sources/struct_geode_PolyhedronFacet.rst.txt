@@ -33,8 +33,8 @@ This struct represents a facet in a polyhedron
 
 		// methods
 	
-		bool :target:`operator ==<doxid-structgeode_1_1_polyhedron_facet_1a3c86e31606e06af447f9c09596f9383c>` (const PolyhedronFacet& other) const;
-		bool :target:`operator !=<doxid-structgeode_1_1_polyhedron_facet_1abcc53506fdf82b06791a632619029ec4>` (const PolyhedronFacet& other) const;
+		bool :target:`operator ==<doxid-structgeode_1_1_polyhedron_facet_1a96331e1c8b0c8e05523ec2b99f6f9b68>` (const PolyhedronFacet& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1_polyhedron_facet_1a19e110343ea8c0f2bb7f8abe64fcc042>` (const PolyhedronFacet& other) const;
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_polyhedron_facet_1a26801517bab62a2e92ea622e9f4efe12>`(Archive& archive);

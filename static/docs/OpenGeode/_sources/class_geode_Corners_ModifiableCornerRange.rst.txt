@@ -23,9 +23,9 @@ class geode::Corners::ModifiableCornerRange
 
 		// methods
 	
-		const ModifiableCornerRange& :target:`begin<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range_1a19e02242c308e5aeb1dcccc7d3b34a82>`() const;
-		const ModifiableCornerRange& :target:`end<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range_1a7c7ae8d135cdee8ed0cce7c4f3d1a3d6>`() const;
-		:ref:`Corner<doxid-classgeode_1_1_corner>`<dimension>& :target:`operator *<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range_1afe9b6c7d3dd940996d8971b86277cd1f>` () const;
+		const ModifiableCornerRange& :target:`begin<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range_1a0325b5244d0094cd64eb8051e35a967d>`() const;
+		const ModifiableCornerRange& :target:`end<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range_1a40c21d08f183c50159f38ad6cf0c0326>`() const;
+		:ref:`Corner<doxid-classgeode_1_1_corner>`<dimension>& :target:`operator *<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range_1a9798cabe61a5183d5251964c0c1f0da6>` () const;
 	};
 
 Inherited Members
@@ -37,6 +37,6 @@ Inherited Members
 	public:
 		// methods
 	
-		bool :ref:`operator !=<doxid-classgeode_1_1_corners_1_1_corner_range_base_1a282b01976e835a38cafcabc2b6df3572>` (const :ref:`CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`&) const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_corners_1_1_corner_range_base_1aa127256b3e478299eadee155dc5769d1>` (const :ref:`CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_corners_1_1_corner_range_base_1a68263571974d8287c65870eebb337710>` ();
 

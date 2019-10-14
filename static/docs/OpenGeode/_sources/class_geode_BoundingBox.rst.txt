@@ -34,13 +34,13 @@ Bounding box implemented for 2D and 3D points. :ref:`More...<details-classgeode_
 		BoundingBox& :target:`operator =<doxid-classgeode_1_1_bounding_box_1a0fabc63a1a18e5ec431315e6ffabc87f>` (BoundingBox&& other);
 		void :target:`add_box<doxid-classgeode_1_1_bounding_box_1aa01ebddaebe0cb00ee4ce9af103910b1>`(const BoundingBox<dimension>& box);
 		void :target:`add_point<doxid-classgeode_1_1_bounding_box_1ad2e23377b88d730ec18711bff7ea9229>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
-		bool :target:`contains<doxid-classgeode_1_1_bounding_box_1abcbb35034e2afb57a7ffa0709c26696d>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`min<doxid-classgeode_1_1_bounding_box_1a1ab26b4a928e378a2aa74d5a28662b25>`() const;
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`max<doxid-classgeode_1_1_bounding_box_1a7a8a6e89ae1dfc3c4ccf76faa17ee565>`() const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`center<doxid-classgeode_1_1_bounding_box_1ae6392363b653cab919587bdc001c7ce8>`() const;
-		bool :ref:`boxes_overlap<doxid-classgeode_1_1_bounding_box_1ac3088b09c2df451ba441e0cb92b30659>`(const BoundingBox<dimension>& box) const;
-		BoundingBox<dimension> :ref:`box_union<doxid-classgeode_1_1_bounding_box_1a4e55460a59b991b3f2b3dfc58e63c52a>`(const BoundingBox<dimension>& box) const;
-		std::tuple<bool, BoundingBox<dimension>> :ref:`box_intersection<doxid-classgeode_1_1_bounding_box_1ac37523c65b4b542f49475949cbcb3779>`(const BoundingBox<dimension>& box) const;
+		bool :target:`contains<doxid-classgeode_1_1_bounding_box_1a06067c1ab22b26d7508f84e3be00f672>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`min<doxid-classgeode_1_1_bounding_box_1a4989e863012fb87f1c94067f4a21b85a>`() const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`max<doxid-classgeode_1_1_bounding_box_1aa41b83189438c79f27a616322904542c>`() const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`center<doxid-classgeode_1_1_bounding_box_1ad04a5b1251acb4b743ef6129ab39578c>`() const;
+		bool :ref:`boxes_overlap<doxid-classgeode_1_1_bounding_box_1ae6349d5ce126bd8bf293a6e75aed84b6>`(const BoundingBox<dimension>& box) const;
+		BoundingBox<dimension> :ref:`box_union<doxid-classgeode_1_1_bounding_box_1a83de122183b475c77d2708470d0fe562>`(const BoundingBox<dimension>& box) const;
+		std::tuple<bool, BoundingBox<dimension>> :ref:`box_intersection<doxid-classgeode_1_1_bounding_box_1a6f8cd406bf14390f9d22b60275f8fbff>`(const BoundingBox<dimension>& box) const;
 	};
 .. _details-classgeode_1_1_bounding_box:
 
@@ -53,7 +53,7 @@ Methods
 -------
 
 .. index:: pair: function; boxes_overlap
-.. _doxid-classgeode_1_1_bounding_box_1ac3088b09c2df451ba441e0cb92b30659:
+.. _doxid-classgeode_1_1_bounding_box_1ae6349d5ce126bd8bf293a6e75aed84b6:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
@@ -81,7 +81,7 @@ Check if another :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` overlaps
 true if there is an overlap
 
 .. index:: pair: function; box_union
-.. _doxid-classgeode_1_1_bounding_box_1a4e55460a59b991b3f2b3dfc58e63c52a:
+.. _doxid-classgeode_1_1_bounding_box_1a83de122183b475c77d2708470d0fe562:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
@@ -109,7 +109,7 @@ Compute the union with another :ref:`BoundingBox <doxid-classgeode_1_1_bounding_
 The :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` representing the union of the two other boxes.
 
 .. index:: pair: function; box_intersection
-.. _doxid-classgeode_1_1_bounding_box_1ac37523c65b4b542f49475949cbcb3779:
+.. _doxid-classgeode_1_1_bounding_box_1a6f8cd406bf14390f9d22b60275f8fbff:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block

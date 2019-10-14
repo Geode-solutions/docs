@@ -25,7 +25,7 @@ template class geode::detail::PointsImpl
 
 		// methods
 	
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`get_point<doxid-classgeode_1_1detail_1_1_points_impl_1a72d23ba56685967d62ebdced4ab7242b>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`get_point<doxid-classgeode_1_1detail_1_1_points_impl_1ada087d56fd850cbb479c0e6fb09e43dc>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	
 		void :target:`set_point<doxid-classgeode_1_1detail_1_1_points_impl_1af7f9b9cc0c0cad3b014ad80e315c29f0>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id,

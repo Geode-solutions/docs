@@ -22,8 +22,8 @@ Geometric component describing a :ref:`Line <doxid-classgeode_1_1_line>`. This c
 		// methods
 	
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_line_1af7c10eda2495dc8121670d2ccd119504>`() const;
-		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_line_1a6ae24b51a1a578b4148b14654c8671ff>`() const;
-		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& :target:`mesh<doxid-classgeode_1_1_line_1a6950f7740a7a376f916e21cd09910fe6>`() const;
+		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_line_1aa9c12802a9ce606ea5a956a51f878fe8>`() const;
+		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& :target:`mesh<doxid-classgeode_1_1_line_1a553da3d8a35de339b9a651d4251c5063>`() const;
 		static :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type_static<doxid-classgeode_1_1_line_1a3be0d783957fc981e0421f0b229122da>`();
 	};
 
@@ -36,7 +36,7 @@ Inherited Members
 	public:
 		// methods
 	
-		const std::string& :ref:`name<doxid-classgeode_1_1_component_1ae545ea00a79fe2b4d156c99f760885f8>`() const;
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`id<doxid-classgeode_1_1_component_1a9610a777b6c2cf55556f5bb237345878>`() const;
+		const std::string& :ref:`name<doxid-classgeode_1_1_component_1aac9e69f6ec5c197a43ef76ca4a379f86>`() const;
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`id<doxid-classgeode_1_1_component_1aca5ed3aadbbbb38f6e30f63a4b3d8fa0>`() const;
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :ref:`component_type<doxid-classgeode_1_1_component_1a4468b6088e9bbc94ef9b59104488bf7d>`() const = 0;
 

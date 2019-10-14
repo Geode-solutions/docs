@@ -31,7 +31,7 @@ Identify a vertex in a geometric component
 
 		// methods
 	
-		bool :target:`operator ==<doxid-structgeode_1_1_mesh_component_vertex_1af1a866104eb1f79fa357ecdd787a9b53>` (const MeshComponentVertex& other) const;
+		bool :target:`operator ==<doxid-structgeode_1_1_mesh_component_vertex_1a77cd79b5460ae95f4f15b6a68b71dd0a>` (const MeshComponentVertex& other) const;
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_mesh_component_vertex_1a7ec58e538b76592115bc857e98645ac3>`(Archive& archive);

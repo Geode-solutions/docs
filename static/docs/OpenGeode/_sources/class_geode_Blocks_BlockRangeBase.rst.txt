@@ -20,7 +20,7 @@ Base class for range-based iteration on :ref:`Blocks <doxid-classgeode_1_1_block
 	public:
 		// methods
 	
-		bool :target:`operator !=<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a272b7fec869cdcc3799364195d4c0286>` (const BlockRangeBase&) const;
+		bool :target:`operator !=<doxid-classgeode_1_1_blocks_1_1_block_range_base_1af88340cfc6894af77dba26e9631435df>` (const BlockRangeBase&) const;
 		void :target:`operator ++<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a338c1a4a2671ab68c4ab3d8ed05ca213>` ();
 	};
 

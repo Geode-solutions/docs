@@ -23,9 +23,9 @@ class geode::ModelBoundaries::ModifiableModelBoundaryRange
 
 		// methods
 	
-		const ModifiableModelBoundaryRange& :target:`begin<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range_1affe74d2166e793b5e7ceac5acacf5a3b>`() const;
-		const ModifiableModelBoundaryRange& :target:`end<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range_1a36cbac127dc4f692c731fa54be3ddc5c>`() const;
-		:ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`<dimension>& :target:`operator *<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range_1a27acee565703da50885bf04d69238290>` () const;
+		const ModifiableModelBoundaryRange& :target:`begin<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range_1a29c0c4986284e191af13aff89e43cd94>`() const;
+		const ModifiableModelBoundaryRange& :target:`end<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range_1aed85ac9455513a6d596bd5577fa95927>`() const;
+		:ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`<dimension>& :target:`operator *<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range_1ac09b861f3ce0eed647fc9a432f5ba8b3>` () const;
 	};
 
 Inherited Members
@@ -37,6 +37,6 @@ Inherited Members
 	public:
 		// methods
 	
-		bool :ref:`operator !=<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base_1a7c3ad2e44b6b54c216c2f15823efb72d>` (const :ref:`ModelBoundaryRangeBase<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base>`&) const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base_1a218ca4f09c21efa94cc51293069fd2bf>` (const :ref:`ModelBoundaryRangeBase<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base_1a69d9c03b8800fa80f2539f366ca1104f>` ();
 

@@ -24,7 +24,7 @@ class geode::detail::EdgesImpl
 
 		// methods
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`get_edge_vertex<doxid-classgeode_1_1detail_1_1_edges_impl_1af455bb721c01e25de129b8e4738b6a50>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`get_edge_vertex<doxid-classgeode_1_1detail_1_1_edges_impl_1a7a9b108aea5fcab36ff71a85bc0afd42>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
 	
 		void :target:`set_edge_vertex<doxid-classgeode_1_1detail_1_1_edges_impl_1a9facb9e1d6429f67392aabd672dad583>`(
 			const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex,

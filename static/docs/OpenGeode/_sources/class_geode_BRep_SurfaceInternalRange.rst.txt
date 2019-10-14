@@ -27,9 +27,9 @@ class geode::BRep::SurfaceInternalRange
 
 		// methods
 	
-		const SurfaceInternalRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range_1aa8c7fb43d65933e922bb0a987036baa4>`() const;
-		const SurfaceInternalRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range_1a64b62d4652592ab7837d1ca04a973966>`() const;
-		const Line3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range_1ace9911a4042819fec9f6cfb42c021ebb>` () const;
+		const SurfaceInternalRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range_1ac03147c0d24879766bc02a0ec5839db1>`() const;
+		const SurfaceInternalRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range_1aced83ccb1b7a8ebe7069a4ec6da921ee>`() const;
+		const Line3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range_1a2888c11bdca8c357c8f50c3a67b20b95>` () const;
 	};
 
 Inherited Members
@@ -41,9 +41,9 @@ Inherited Members
 	public:
 		// methods
 	
-		const :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`& :ref:`begin<doxid-classgeode_1_1_relationships_1_1_internal_range_1a9207636689ad0272a7ca42c69b0534a4>`() const;
-		const :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`& :ref:`end<doxid-classgeode_1_1_relationships_1_1_internal_range_1a71343dd97cafc5b180b9387def946ac3>`() const;
-		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_internal_range_1a2f110819758927c0f6fb9440791c9e70>` (const :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`&) const;
+		const :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`& :ref:`begin<doxid-classgeode_1_1_relationships_1_1_internal_range_1a2669a8d3dd4e6f1880473a8175eea510>`() const;
+		const :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`& :ref:`end<doxid-classgeode_1_1_relationships_1_1_internal_range_1a11d9f471d86178aaa3c0e2910da759c5>`() const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_internal_range_1a064e5667c0caa828866ac71365337806>` (const :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_internal_range_1aab35f95d79abb66cd468b34631d03ac6>` ();
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_internal_range_1a7c32ea855422550a8c9a60ebdd442673>` () const;
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_internal_range_1a17f2d5925dbfc3b3c916b0c7e0501bbc>` () const;
 

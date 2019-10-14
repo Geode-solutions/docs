@@ -27,6 +27,6 @@ class geode::UnzipFile
 
 		// methods
 	
-		void :target:`extract_all<doxid-classgeode_1_1_unzip_file_1adc34fe397d1b107527980e10b7cca748>`() const;
-		std::string :target:`directory<doxid-classgeode_1_1_unzip_file_1a2f9c1273e1152d5fa97ae05130b9edae>`() const;
+		void :target:`extract_all<doxid-classgeode_1_1_unzip_file_1ab498d1cf332e9533c2d15579251c33b6>`() const;
+		std::string :target:`directory<doxid-classgeode_1_1_unzip_file_1ac550ecc262a8cbe03a5ad164a0fd507e>`() const;
 	};

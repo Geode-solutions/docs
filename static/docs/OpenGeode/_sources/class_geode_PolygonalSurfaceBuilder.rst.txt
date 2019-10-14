@@ -33,6 +33,8 @@ Interface class to represent the builder of a :ref:`PolygonalSurface <doxid-clas
 		void :ref:`compute_polygon_adjacencies<doxid-classgeode_1_1_polygonal_surface_builder_1a8665365e7b27d33811a05dce03628cc5>`();
 		void :ref:`compute_polygon_adjacencies<doxid-classgeode_1_1_polygonal_surface_builder_1af90287faf0354e3986f17271a01587ea>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& polygons_to_connect);
 		void :ref:`delete_polygons<doxid-classgeode_1_1_polygonal_surface_builder_1abb7255f836da15b17642495abb58fb3b>`(const std::vector<bool>& to_delete);
+		const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& :ref:`polygon_around_vertex<doxid-classgeode_1_1_polygonal_surface_builder_1abf8f736aab76a65d4230998fe36ce4c1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		void :ref:`associate_polygon_vertex_to_vertex<doxid-classgeode_1_1_polygonal_surface_builder_1a52fd6bf957792f504870ba5e159184f8>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 	};
 
 	// direct descendants
@@ -278,4 +280,53 @@ Delete a set of surface polygons
 		- to_delete
 
 		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size polygonal_surface_.nb_polygons(). If to_delete[i] is true the polygon of index i is deleted, else it is kept.
+
+.. index:: pair: function; polygon_around_vertex
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1abf8f736aab76a65d4230998fe36ce4c1:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_around_vertex(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
+
+Return one polygon with one of the vertices matching given vertex.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertex_id
+
+		- Index of the vertex.  If vertex is isolated (no incident polygon), default :ref:`PolygonVertex <doxid-structgeode_1_1_polygon_vertex>` is returned.
+
+.. index:: pair: function; associate_polygon_vertex_to_vertex
+.. _doxid-classgeode_1_1_polygonal_surface_builder_1a52fd6bf957792f504870ba5e159184f8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void associate_polygon_vertex_to_vertex(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id)
+
+Set a polygon vertex to a given vertex.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polygon_vertex
+
+		- :ref:`PolygonVertex <doxid-structgeode_1_1_polygon_vertex>` corresponding to the vertex.
+
+	*
+		- vertex_id
+
+		- Index of the vertex.
 

@@ -22,8 +22,8 @@ Geometric component describing a :ref:`Point <doxid-classgeode_1_1_point>`. This
 		// methods
 	
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_corner_1aac623e25b471564400e54115a0a463e4>`() const;
-		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_corner_1adc057e57f06415b6783a371b48ec85b4>`() const;
-		const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& :target:`mesh<doxid-classgeode_1_1_corner_1a51635d601fa00566b1f408e53f340367>`() const;
+		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_corner_1a340e953e76f408576deb357224752562>`() const;
+		const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& :target:`mesh<doxid-classgeode_1_1_corner_1a74e2375207559323768798211f0fe1db>`() const;
 		static :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type_static<doxid-classgeode_1_1_corner_1a6c6790536b7ea661cc9a096d1ab8217f>`();
 	};
 
@@ -36,7 +36,7 @@ Inherited Members
 	public:
 		// methods
 	
-		const std::string& :ref:`name<doxid-classgeode_1_1_component_1ae545ea00a79fe2b4d156c99f760885f8>`() const;
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`id<doxid-classgeode_1_1_component_1a9610a777b6c2cf55556f5bb237345878>`() const;
+		const std::string& :ref:`name<doxid-classgeode_1_1_component_1aac9e69f6ec5c197a43ef76ca4a379f86>`() const;
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`id<doxid-classgeode_1_1_component_1aca5ed3aadbbbb38f6e30f63a4b3d8fa0>`() const;
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :ref:`component_type<doxid-classgeode_1_1_component_1a4468b6088e9bbc94ef9b59104488bf7d>`() const = 0;
 

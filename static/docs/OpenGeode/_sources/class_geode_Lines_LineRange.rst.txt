@@ -24,9 +24,9 @@ class geode::Lines::LineRange
 
 		// methods
 	
-		const LineRange& :target:`begin<doxid-classgeode_1_1_lines_1_1_line_range_1ae1f37dd0c2a88a742bc9ead7df64f64e>`() const;
-		const LineRange& :target:`end<doxid-classgeode_1_1_lines_1_1_line_range_1a4a656eda56cd4c8f060797d4794c7468>`() const;
-		const :ref:`Line<doxid-classgeode_1_1_line>`<dimension>& :target:`operator *<doxid-classgeode_1_1_lines_1_1_line_range_1af072902cd3e2e1be75795a51d27180e2>` () const;
+		const LineRange& :target:`begin<doxid-classgeode_1_1_lines_1_1_line_range_1a7ea47b5c377b5dc0ebb8faf5895c9009>`() const;
+		const LineRange& :target:`end<doxid-classgeode_1_1_lines_1_1_line_range_1a8de85912e297c24cdabbf05df0b51aad>`() const;
+		const :ref:`Line<doxid-classgeode_1_1_line>`<dimension>& :target:`operator *<doxid-classgeode_1_1_lines_1_1_line_range_1ab9baa4841cf0ca3619eacbcdf0024835>` () const;
 	};
 
 Inherited Members
@@ -38,6 +38,6 @@ Inherited Members
 	public:
 		// methods
 	
-		bool :ref:`operator !=<doxid-classgeode_1_1_lines_1_1_line_range_base_1a8a18f4612c9e502e48e259e8eaaed7d1>` (const :ref:`LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`&) const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_lines_1_1_line_range_base_1ae20e0c2e193ec1ad8a6c9ff9a6d61656>` (const :ref:`LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_lines_1_1_line_range_base_1a5e87d07af3f242a4c5255283de83172b>` ();
 

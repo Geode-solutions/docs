@@ -20,5 +20,5 @@ template struct std::hash<geode::uuid>
 	{
 		// methods
 	
-		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1uuid_01_4_1ac1bd34f15e0afc9c4ca3f52ab80c3616>` (const :ref:`geode::uuid<doxid-structgeode_1_1uuid>`& uuid) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1uuid_01_4_1adc9d49da2d1ceeeedc186a71b8a30553>` (const :ref:`geode::uuid<doxid-structgeode_1_1uuid>`& uuid) const;
 	};

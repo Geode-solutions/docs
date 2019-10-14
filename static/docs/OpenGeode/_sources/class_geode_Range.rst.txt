@@ -37,9 +37,9 @@ for( auto i : :ref:`Range <doxid-classgeode_1_1_range>` { n } ) { // do somethin
 
 		// methods
 	
-		const Range& :target:`begin<doxid-classgeode_1_1_range_1ac3fe43412bca4cbf8e4a441ad87b19cc>`() const;
-		const Range& :target:`end<doxid-classgeode_1_1_range_1a9021b819745fd7f5d558a07f86a27b83>`() const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`operator *<doxid-classgeode_1_1_range_1a4d800d4b17a9fcbc76757a8d1c4a4a44>` () const;
+		const Range& :target:`begin<doxid-classgeode_1_1_range_1af51a07c11a77a2acf97f52cd0881f219>`() const;
+		const Range& :target:`end<doxid-classgeode_1_1_range_1a2c759781ab2f8258ae5fca091ec8a0e2>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`operator *<doxid-classgeode_1_1_range_1af29b66fd5fddc1cbfb19a2d9ab589c46>` () const;
 	};
 
 Inherited Members
@@ -51,7 +51,7 @@ Inherited Members
 	public:
 		// methods
 	
-		bool :ref:`operator !=<doxid-classgeode_1_1_base_range_1aea7d49b6d4ae44f19ea69e58a9715f8b>` (const :ref:`BaseRange<doxid-classgeode_1_1_base_range>`&) const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_base_range_1ada75509e0f7aec5847e4421055c93229>` (const :ref:`BaseRange<doxid-classgeode_1_1_base_range>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_base_range_1ab852e42089eb90a6f00a23bf8344877f>` ();
-		Type :ref:`current<doxid-classgeode_1_1_base_range_1a77a6e320898b50e49c0cfa3c036cb639>`() const;
+		Type :ref:`current<doxid-classgeode_1_1_base_range_1a5ffff3799328f85388001113dc230e6c>`() const;
 

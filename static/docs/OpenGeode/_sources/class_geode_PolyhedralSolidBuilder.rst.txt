@@ -33,6 +33,8 @@ Interface class to represent the builder of a :ref:`PolyhedralSolid <doxid-class
 		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_polyhedral_solid_builder_1a45556ef309b970fe69837480de337fcb>`();
 		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_polyhedral_solid_builder_1a163619ff43cc372aedfa38ecfebcf14e>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& polyhedra_to_connect);
 		void :ref:`delete_polyhedra<doxid-classgeode_1_1_polyhedral_solid_builder_1a1e1fde1c3984916310457c2bff04346e>`(const std::vector<bool>& to_delete);
+		const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& :ref:`polyhedron_around_vertex<doxid-classgeode_1_1_polyhedral_solid_builder_1a80ddb82775444028c339b61d4e0a9466>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		void :ref:`associate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_polyhedral_solid_builder_1a3669caa58b7770cd34fddfe16e56e271>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 	};
 
 	// direct descendants
@@ -286,4 +288,56 @@ Delete a set of solid polyhedra
 		- to_delete
 
 		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size polyhedral_solid_.nb_polyhedra(). If to_delete[i] is true the polyhedra of index i is deleted, else it is kept.
+
+.. index:: pair: function; polyhedron_around_vertex
+.. _doxid-classgeode_1_1_polyhedral_solid_builder_1a80ddb82775444028c339b61d4e0a9466:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_around_vertex(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
+
+Return one polyhedron with one of the vertices matching given vertex.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertex_id
+
+		- Index of the vertex.  If vertex is isolated (no incident polyhedron), default :ref:`PolyhedronVertex <doxid-structgeode_1_1_polyhedron_vertex>` is returned.
+
+.. index:: pair: function; associate_polyhedron_vertex_to_vertex
+.. _doxid-classgeode_1_1_polyhedral_solid_builder_1a3669caa58b7770cd34fddfe16e56e271:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void associate_polyhedron_vertex_to_vertex(
+		const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
+		)
+
+Set a polyhedron vertex to a given vertex.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polyhedron_vertex
+
+		- :ref:`PolyhedronVertex <doxid-structgeode_1_1_polyhedron_vertex>` corresponding to the vertex.
+
+	*
+		- vertex_id
+
+		- Index of the vertex.
 

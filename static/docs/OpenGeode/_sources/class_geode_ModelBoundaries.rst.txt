@@ -39,8 +39,8 @@ template class geode::ModelBoundaries
 
 		// methods
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_model_boundaries<doxid-classgeode_1_1_model_boundaries_1aae1f804ae1468702b791688cd5df30db>`() const;
-		const :ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`<dimension>& :target:`model_boundary<doxid-classgeode_1_1_model_boundaries_1a938d4e6efeec28d27eb7a67014927d45>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
-		:ref:`ModelBoundaryRange<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range>` :target:`model_boundaries<doxid-classgeode_1_1_model_boundaries_1a54883c89353c6f4216433e6ef4211028>`() const;
-		std::vector<std::string> :target:`save_model_boundaries<doxid-classgeode_1_1_model_boundaries_1a72a3977699fb5df54a98a8c44143d6d4>`(const std::string& directory) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_model_boundaries<doxid-classgeode_1_1_model_boundaries_1a5692ab7f2fdddc9280f1c3e57997a97b>`() const;
+		const :ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`<dimension>& :target:`model_boundary<doxid-classgeode_1_1_model_boundaries_1a84b04613c9c77062577a4e28416e1e89>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`ModelBoundaryRange<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range>` :target:`model_boundaries<doxid-classgeode_1_1_model_boundaries_1acb04c32113fe1819a93f8675a34a3d0f>`() const;
+		std::vector<std::string> :target:`save_model_boundaries<doxid-classgeode_1_1_model_boundaries_1a700582aafe67e42d16fa95f45fa500f2>`(const std::string& directory) const;
 	};

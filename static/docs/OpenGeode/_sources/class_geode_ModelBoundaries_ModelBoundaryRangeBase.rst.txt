@@ -20,7 +20,7 @@ class geode::ModelBoundaries::ModelBoundaryRangeBase
 	public:
 		// methods
 	
-		bool :target:`operator !=<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base_1a7c3ad2e44b6b54c216c2f15823efb72d>` (const ModelBoundaryRangeBase&) const;
+		bool :target:`operator !=<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base_1a218ca4f09c21efa94cc51293069fd2bf>` (const ModelBoundaryRangeBase&) const;
 		void :target:`operator ++<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range_base_1a69d9c03b8800fa80f2539f366ca1104f>` ();
 	};
 

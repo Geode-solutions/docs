@@ -21,8 +21,8 @@ This abstract class represents a component that can be used in assembly.
 	public:
 		// methods
 	
-		const std::string& :target:`name<doxid-classgeode_1_1_component_1ae545ea00a79fe2b4d156c99f760885f8>`() const;
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`id<doxid-classgeode_1_1_component_1a9610a777b6c2cf55556f5bb237345878>`() const;
+		const std::string& :target:`name<doxid-classgeode_1_1_component_1aac9e69f6ec5c197a43ef76ca4a379f86>`() const;
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`id<doxid-classgeode_1_1_component_1aca5ed3aadbbbb38f6e30f63a4b3d8fa0>`() const;
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_component_1a4468b6088e9bbc94ef9b59104488bf7d>`() const = 0;
 	};
 

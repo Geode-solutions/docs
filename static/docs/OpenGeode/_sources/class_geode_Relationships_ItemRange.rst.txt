@@ -30,11 +30,11 @@ class geode::Relationships::ItemRange
 
 		// methods
 	
-		const ItemRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_item_range_1a43a4434c34dbd1de9e6084ea51d5c9c2>`() const;
-		const ItemRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_item_range_1af895fe1c23912a384a6f383fd366e2ba>`() const;
-		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_item_range_1ac27b930c74c380e8ad30e186f36c0bb9>` (const ItemRange&) const;
+		const ItemRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_item_range_1ae3109e2636d466244cec7f1f629d781d>`() const;
+		const ItemRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_item_range_1a2d55aadbfb4e142eaa6962c035a6d70e>`() const;
+		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_item_range_1a379c307cd3fbb3bcfe91385112ec23db>` (const ItemRange&) const;
 		void :target:`operator ++<doxid-classgeode_1_1_relationships_1_1_item_range_1ae9e4c28cb682d6f3dbe686968ed4fefd>` ();
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_item_range_1af5d059f2e25adc9180172e9c501a17e5>` () const;
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_item_range_1aa3f9937fa95a884f3a366c94bcad27d5>` () const;
 	};
 
 	// direct descendants

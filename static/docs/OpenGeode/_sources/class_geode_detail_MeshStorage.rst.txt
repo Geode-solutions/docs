@@ -27,7 +27,7 @@ template class geode::detail::MeshStorage
 		// methods
 	
 		void :target:`set_mesh<doxid-classgeode_1_1detail_1_1_mesh_storage_1a6bf78bb9b43af40214615a5baf26a453>`(std::unique_ptr<Mesh> mesh);
-		const Mesh& :target:`mesh<doxid-classgeode_1_1detail_1_1_mesh_storage_1a30e278f92674bad837b55c9c066280ef>`() const;
+		const Mesh& :target:`mesh<doxid-classgeode_1_1detail_1_1_mesh_storage_1aa37c056bd71a433d5b5ce605c760dd5f>`() const;
 		Mesh& :target:`modifiable_mesh<doxid-classgeode_1_1detail_1_1_mesh_storage_1a35fccb2be0d5c690db2571d473a498c9>`();
 		void :target:`ensure_mesh_type<doxid-classgeode_1_1detail_1_1_mesh_storage_1a1758849570b31b0c88a29e9d4567c1cc>`();
 	

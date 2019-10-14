@@ -27,20 +27,20 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 		std::shared_ptr<:ref:`ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`<T>> :ref:`find_attribute<doxid-classgeode_1_1_attribute_manager_1aaba435916e40673d8432463c22c7dc5f>`(const std::string& name);
 	
 		template <template< typename > class Attribute, typename T, typename... Args>
-		std::shared_ptr<Attribute<T>> :ref:`find_or_create_attribute<doxid-classgeode_1_1_attribute_manager_1a9724050b57c631ef96a741028e1df81b>`(
+		std::shared_ptr<Attribute<T>> :ref:`find_or_create_attribute<doxid-classgeode_1_1_attribute_manager_1a94deaa0dfaf92067e222c33fb2dffe1d>`(
 			const std::string& name,
 			const Args&... args
 			);
 	
 		void :ref:`resize<doxid-classgeode_1_1_attribute_manager_1ab78ec5f69d4a452ef59fb824a7a0e95c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` size);
-		std::vector<std::string> :ref:`attribute_names<doxid-classgeode_1_1_attribute_manager_1a9331405f2fe8a2a3d66257b79d90e650>`() const;
-		bool :ref:`attribute_exists<doxid-classgeode_1_1_attribute_manager_1a723fddb0b2f2d0fc7c7546be5cd64ac1>`(const std::string& name) const;
+		std::vector<std::string> :ref:`attribute_names<doxid-classgeode_1_1_attribute_manager_1a60ccf3d8430d0109ce39e95ed2df0f9e>`() const;
+		bool :ref:`attribute_exists<doxid-classgeode_1_1_attribute_manager_1a59168d7d1374409df02031fd4eca3df9>`(const std::string& name) const;
 		void :ref:`delete_attribute<doxid-classgeode_1_1_attribute_manager_1a0b66879bc0bf9312a81fadfb8e2ea0d0>`(const std::string& name);
-		std::string :ref:`attribute_type<doxid-classgeode_1_1_attribute_manager_1ad411fbf917b58ab82d8959218fd85463>`(const std::string& name) const;
+		std::string :ref:`attribute_type<doxid-classgeode_1_1_attribute_manager_1a63c42e1364d1f4de3edb98e8bbdc2b58>`(const std::string& name) const;
 		void :ref:`clear<doxid-classgeode_1_1_attribute_manager_1a009194a92dfd94b2e0ac4c397c5f9ad8>`();
 		void :ref:`clear_attributes<doxid-classgeode_1_1_attribute_manager_1aa25870b7f9a775d641a23ee44e0fc7d0>`();
 		void :ref:`delete_elements<doxid-classgeode_1_1_attribute_manager_1af39ef3210749c1a18a7bc26c3b2a38c7>`(const std::vector<bool>& to_delete);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_elements<doxid-classgeode_1_1_attribute_manager_1a44da96b84e6d1a25159cee065cc4d073>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_elements<doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`() const;
 	
 		template <typename Type, typename Serializer>
 		static void :target:`register_attribute_type<doxid-classgeode_1_1_attribute_manager_1a1e567bda8fee0ef3a90c54c1dac37790>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
@@ -89,7 +89,7 @@ Recover the typed Attribute from the attribute name
 		- if no Attribute found
 
 .. index:: pair: function; find_or_create_attribute
-.. _doxid-classgeode_1_1_attribute_manager_1a9724050b57c631ef96a741028e1df81b:
+.. _doxid-classgeode_1_1_attribute_manager_1a94deaa0dfaf92067e222c33fb2dffe1d:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
@@ -157,7 +157,7 @@ Resize all the attributes to the given size
 		- The new attribute size
 
 .. index:: pair: function; attribute_names
-.. _doxid-classgeode_1_1_attribute_manager_1a9331405f2fe8a2a3d66257b79d90e650:
+.. _doxid-classgeode_1_1_attribute_manager_1a60ccf3d8430d0109ce39e95ed2df0f9e:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
@@ -167,7 +167,7 @@ Resize all the attributes to the given size
 Get all the associated attribute names
 
 .. index:: pair: function; attribute_exists
-.. _doxid-classgeode_1_1_attribute_manager_1a723fddb0b2f2d0fc7c7546be5cd64ac1:
+.. _doxid-classgeode_1_1_attribute_manager_1a59168d7d1374409df02031fd4eca3df9:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
@@ -211,7 +211,7 @@ Delete the attribute matching the given name. Do nothing if the name does not ex
 		- The attribute name to delete
 
 .. index:: pair: function; attribute_type
-.. _doxid-classgeode_1_1_attribute_manager_1ad411fbf917b58ab82d8959218fd85463:
+.. _doxid-classgeode_1_1_attribute_manager_1a63c42e1364d1f4de3edb98e8bbdc2b58:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
@@ -272,10 +272,10 @@ Delete a set of attribute elements.
 	*
 		- to_delete
 
-		- a vector of size :ref:`nb_elements() <doxid-classgeode_1_1_attribute_manager_1a44da96b84e6d1a25159cee065cc4d073>`. If to_delete[e] is true, then the element e will be destroyed.
+		- a vector of size :ref:`nb_elements() <doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`. If to_delete[e] is true, then the element e will be destroyed.
 
 .. index:: pair: function; nb_elements
-.. _doxid-classgeode_1_1_attribute_manager_1a44da96b84e6d1a25159cee065cc4d073:
+.. _doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block

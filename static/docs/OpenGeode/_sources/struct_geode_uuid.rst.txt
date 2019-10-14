@@ -24,8 +24,8 @@ struct geode::uuid
 
 		// methods
 	
-		bool :target:`operator ==<doxid-structgeode_1_1uuid_1aa3d6116755d0461a9c3d039f854f4174>` (const uuid& other) const;
-		bool :target:`operator !=<doxid-structgeode_1_1uuid_1a08afe02369e79548d8531922bb6f6103>` (const uuid& other) const;
-		bool :target:`operator <<doxid-structgeode_1_1uuid_1a7dcdb867c9040a910d6ff8746a0287da>` (const uuid& other) const;
-		std::string :target:`string<doxid-structgeode_1_1uuid_1a76221e98be66de85df9d6dc7e594c2cb>`() const;
+		bool :target:`operator ==<doxid-structgeode_1_1uuid_1a25e7f7923b86d68997f4165049b3994d>` (const uuid& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1uuid_1a59231b9fdda45db08a33fd6b7bbcbadd>` (const uuid& other) const;
+		bool :target:`operator <<doxid-structgeode_1_1uuid_1aaeccc4fae72d607e742c53f0dee40754>` (const uuid& other) const;
+		std::string :target:`string<doxid-structgeode_1_1uuid_1a8774b767ecb2c423237c6e7b75baa0d9>`() const;
 	};

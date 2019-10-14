@@ -27,9 +27,9 @@ class geode::BRep::BlockBoundaryRange
 
 		// methods
 	
-		const BlockBoundaryRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a25b2a57e91a6a5a21e569f39f0890fce>`() const;
-		const BlockBoundaryRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a54fe104ea7c3b6cfe0cd09b926ea4cdb>`() const;
-		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a5566dc2a2555d48dd2ebb50a27b4ef23>` () const;
+		const BlockBoundaryRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a84a73b7207944e90a01452884bb5a997>`() const;
+		const BlockBoundaryRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a92ff14e585659348d1099e390f089e13>`() const;
+		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range_1a4eee7deb438127702f66e091b887f6bf>` () const;
 	};
 
 Inherited Members
@@ -41,9 +41,9 @@ Inherited Members
 	public:
 		// methods
 	
-		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`& :ref:`begin<doxid-classgeode_1_1_relationships_1_1_boundary_range_1a3b349587f7f5798b09021f1e41f4b97d>`() const;
-		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`& :ref:`end<doxid-classgeode_1_1_relationships_1_1_boundary_range_1a2487cf8abc6bd207db047a5c22ce9f25>`() const;
-		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_boundary_range_1a3ed2c270c9148483e028d70faa29a317>` (const :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`&) const;
+		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`& :ref:`begin<doxid-classgeode_1_1_relationships_1_1_boundary_range_1ae370118605dd1a14d816e9434a53140e>`() const;
+		const :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`& :ref:`end<doxid-classgeode_1_1_relationships_1_1_boundary_range_1a97df90b34ed241b73cc207d0334eca14>`() const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_boundary_range_1aba15d99aaa03e9cc76e1bffad84d091b>` (const :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_boundary_range_1a62079fde95e01ae698e10b6e908b53a0>` ();
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_boundary_range_1a8927530fea2797cd8c1c205a2ef5348b>` () const;
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_boundary_range_1a921dcd14f621cf7bd0caf93c4f857676>` () const;
 

@@ -45,6 +45,8 @@ Inherited Members
 		void :ref:`compute_polygon_adjacencies<doxid-classgeode_1_1_polygonal_surface_builder_1a8665365e7b27d33811a05dce03628cc5>`();
 		void :ref:`compute_polygon_adjacencies<doxid-classgeode_1_1_polygonal_surface_builder_1af90287faf0354e3986f17271a01587ea>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& polygons_to_connect);
 		void :ref:`delete_polygons<doxid-classgeode_1_1_polygonal_surface_builder_1abb7255f836da15b17642495abb58fb3b>`(const std::vector<bool>& to_delete);
+		const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& :ref:`polygon_around_vertex<doxid-classgeode_1_1_polygonal_surface_builder_1abf8f736aab76a65d4230998fe36ce4c1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		void :ref:`associate_polygon_vertex_to_vertex<doxid-classgeode_1_1_polygonal_surface_builder_1a52fd6bf957792f504870ba5e159184f8>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		static std::unique_ptr<:ref:`TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_triangulated_surface_builder_1a525758b4196d65870741e2224e75bbab>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& mesh);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_triangle<doxid-classgeode_1_1_triangulated_surface_builder_1a36e6538c550e10d71177ff2fc5e38c8b>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 3>& vertices);
 
