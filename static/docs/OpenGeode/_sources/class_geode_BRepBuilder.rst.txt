@@ -7,6 +7,8 @@ class geode::BRepBuilder
 .. toctree::
 	:hidden:
 
+	struct_geode_BRepBuilder_ComponentMapping.rst
+
 Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 
 
@@ -20,11 +22,28 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 	    public :ref:`geode::AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`
 	{
 	public:
+		// structs
+	
+		struct :ref:`ComponentMapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping>`;
+
 		// construction
 	
 		:target:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder_1accf768a7c4e92a10892ce0acc07a8b39>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 
 		// methods
+	
+		void :target:`copy<doxid-classgeode_1_1_b_rep_builder_1a3cf7736b8d1344a3153ab523fcd7d66f>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+		:ref:`ComponentMapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping>` :target:`copy_components<doxid-classgeode_1_1_b_rep_builder_1a7889382fadf3bd2e2fd9373e361e7b96>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+	
+		void :target:`copy_component_relationships<doxid-classgeode_1_1_b_rep_builder_1a1c43ae4adcb4eab1b3ee0aa8d1c459d3>`(
+			const :ref:`ComponentMapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping>`& mapping,
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep
+			);
+	
+		void :target:`copy_component_geometry<doxid-classgeode_1_1_b_rep_builder_1ad18f2549d7b042ab797ddeb0bd2e2c83>`(
+			const :ref:`ComponentMapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping>`& mapping,
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep
+			);
 	
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_b_rep_builder_1ade1b107ce2ac5c89c625614a4e44954b>`();
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_b_rep_builder_1a01ecb6e912eda4a49bbdcd7ecd7f4887>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);

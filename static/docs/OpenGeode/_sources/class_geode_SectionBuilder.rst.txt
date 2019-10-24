@@ -7,6 +7,8 @@ class geode::SectionBuilder
 .. toctree::
 	:hidden:
 
+	struct_geode_SectionBuilder_ComponentMapping.rst
+
 Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 
 
@@ -20,11 +22,28 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 	    public :ref:`geode::AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`
 	{
 	public:
+		// structs
+	
+		struct :ref:`ComponentMapping<doxid-structgeode_1_1_section_builder_1_1_component_mapping>`;
+
 		// construction
 	
 		:target:`SectionBuilder<doxid-classgeode_1_1_section_builder_1a9eb6a1ccb9b8f8ccc267fba7aa1cc9b2>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
 
 		// methods
+	
+		void :target:`copy<doxid-classgeode_1_1_section_builder_1a97467280fdcd6005857372bc68a80d69>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
+		:ref:`ComponentMapping<doxid-structgeode_1_1_section_builder_1_1_component_mapping>` :target:`copy_components<doxid-classgeode_1_1_section_builder_1a318aec2550165446d29259e048ab09bd>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
+	
+		void :target:`copy_component_relationships<doxid-classgeode_1_1_section_builder_1ae92aaf8de953d3e23aac9b36f17f97ca>`(
+			const :ref:`ComponentMapping<doxid-structgeode_1_1_section_builder_1_1_component_mapping>`& mapping,
+			const :ref:`Section<doxid-classgeode_1_1_section>`& section
+			);
+	
+		void :target:`copy_component_geometry<doxid-classgeode_1_1_section_builder_1a6c60cff6427f8e73223b4ee87e65d395>`(
+			const :ref:`ComponentMapping<doxid-structgeode_1_1_section_builder_1_1_component_mapping>`& mapping,
+			const :ref:`Section<doxid-classgeode_1_1_section>`& section
+			);
 	
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_section_builder_1a10a2edfa78c3fa9b5bcafd8847560a2c>`();
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_section_builder_1afce041ba3c4e9e763b446ae1ac71b33c>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);

@@ -16,7 +16,7 @@
     <script type="text/javascript" src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::SectionInput" href="class_geode_SectionInput.html" />
+    <link rel="next" title="struct geode::SectionBuilder::ComponentMapping" href="struct_geode_SectionBuilder_ComponentMapping.html" />
     <link rel="prev" title="class geode::Section::SurfaceInternalRange" href="class_geode_Section_SurfaceInternalRange.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -45,11 +45,28 @@
     <span class="k">public</span> <a class="reference internal" href="class_geode_AddComponentsBuilders.html#doxid-classgeode-1-1-add-components-builders"><span class="std std-ref">geode::AddComponentsBuilders</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// structs</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionBuilder_ComponentMapping.html#doxid-structgeode-1-1-section-builder-1-1-component-mapping"><span class="std std-ref">ComponentMapping</span></a><span></span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-builder-1a9eb6a1ccb9b8f8ccc267fba7aa1cc9b2">SectionBuilder</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-builder-1a97467280fdcd6005857372bc68a80d69">copy</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+    <a class="reference internal" href="struct_geode_SectionBuilder_ComponentMapping.html#doxid-structgeode-1-1-section-builder-1-1-component-mapping"><span class="std std-ref">ComponentMapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-builder-1a318aec2550165446d29259e048ab09bd">copy_components</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-builder-1ae92aaf8de953d3e23aac9b36f17f97ca">copy_component_relationships</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_SectionBuilder_ComponentMapping.html#doxid-structgeode-1-1-section-builder-1-1-component-mapping"><span class="std std-ref">ComponentMapping</span></a><span></span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-builder-1a6c60cff6427f8e73223b4ee87e65d395">copy_component_geometry</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_SectionBuilder_ComponentMapping.html#doxid-structgeode-1-1-section-builder-1-1-component-mapping"><span class="std std-ref">ComponentMapping</span></a><span></span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span>
+        <span class="p">);</span>
 
     <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-builder-1a10a2edfa78c3fa9b5bcafd8847560a2c">add_corner</span><span></span><span class="p">();</span>
     <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-builder-1afce041ba3c4e9e763b446ae1ac71b33c">add_corner</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">);</span>

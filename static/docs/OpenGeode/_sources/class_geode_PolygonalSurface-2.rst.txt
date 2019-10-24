@@ -26,6 +26,7 @@ Interface class for 3D :ref:`Surface <doxid-classgeode_1_1_surface>` made up wit
 	
 		static std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<3>> :target:`create<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1ae8729a1c765868f99b0fead96944723d>`();
 		static std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<3>> :target:`create<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a590a25a86695121d9296ef05a37b17de>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<3>> :target:`clone<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a7d9366cc03b91112bd8444562bcb835e>`() const;
 		Vector3D :ref:`polygon_normal<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1ac70dd1833962470bb3bb6a894e979719>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 		Vector3D :ref:`polygon_vertex_normal<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a4b924f444a2510bbca7ff3e4c8a317fb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	};
@@ -40,6 +41,8 @@ Inherited Members
 		// methods
 	
 		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
+		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a7dc1d253ac9d6a68c8380973f17d5667>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`clone<doxid-classgeode_1_1_vertex_set_1a59f8cdf17a798e4746e3b90baa8be080>`() const;
 		virtual std::string :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1a225c97c97fbb97dae48f33cd0d8c43f8>`() const = 0;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;

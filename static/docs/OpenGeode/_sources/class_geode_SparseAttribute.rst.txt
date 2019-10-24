@@ -23,6 +23,12 @@ Read and write interface for sparse attribute storage. Only store what you use!
 	
 		virtual const T& :target:`value<doxid-classgeode_1_1_sparse_attribute_1a413a8b15dbd1249fff7d3058d7c426d6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
 		T& :target:`value<doxid-classgeode_1_1_sparse_attribute_1a9fdff5eb9497cd7fefa197f38726df66>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element);
+		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :target:`clone<doxid-classgeode_1_1_sparse_attribute_1a7a46b3802991a2febc2470a14234a073>`() const;
+	
+		virtual void :target:`copy<doxid-classgeode_1_1_sparse_attribute_1a611b19143ed60c252c6ed4f20aeec284>`(
+			const :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`& attribute,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements
+			);
 	};
 
 Inherited Members
@@ -34,6 +40,8 @@ Inherited Members
 	public:
 		// methods
 	
+		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`clone<doxid-classgeode_1_1_attribute_base_1acea72fe269bc80ef99e4e2b869d46c45>`() const = 0;
+		virtual void :ref:`copy<doxid-classgeode_1_1_attribute_base_1ab69e09b7f30008232ba265e3e6150e5d>`(const :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`& attribute, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements) = 0;
 		virtual const T& :ref:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 		virtual std::string :ref:`type<doxid-classgeode_1_1_read_only_attribute_1a404613b1cdd0d15b0deed66baca23ab1>`();
 

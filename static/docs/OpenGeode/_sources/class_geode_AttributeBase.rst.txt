@@ -17,6 +17,15 @@ Base classe defining the virtual API used by the :ref:`AttributeManager <doxid-c
 	
 	class AttributeBase
 	{
+	public:
+		// methods
+	
+		virtual std::shared_ptr<AttributeBase> :target:`clone<doxid-classgeode_1_1_attribute_base_1acea72fe269bc80ef99e4e2b869d46c45>`() const = 0;
+	
+		virtual void :target:`copy<doxid-classgeode_1_1_attribute_base_1ab69e09b7f30008232ba265e3e6150e5d>`(
+			const AttributeBase& attribute,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements
+			) = 0;
 	};
 
 	// direct descendants

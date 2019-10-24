@@ -16,7 +16,7 @@
     <script type="text/javascript" src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::BRepInput" href="class_geode_BRepInput.html" />
+    <link rel="next" title="struct geode::BRepBuilder::ComponentMapping" href="struct_geode_BRepBuilder_ComponentMapping.html" />
     <link rel="prev" title="class geode::BRep::SurfaceInternalRange" href="class_geode_BRep_SurfaceInternalRange.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -45,11 +45,28 @@
     <span class="k">public</span> <a class="reference internal" href="class_geode_AddComponentsBuilders.html#doxid-classgeode-1-1-add-components-builders"><span class="std std-ref">geode::AddComponentsBuilders</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// structs</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepBuilder_ComponentMapping.html#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping"><span class="std std-ref">ComponentMapping</span></a><span></span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1accf768a7c4e92a10892ce0acc07a8b39">BRepBuilder</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a3cf7736b8d1344a3153ab523fcd7d66f">copy</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+    <a class="reference internal" href="struct_geode_BRepBuilder_ComponentMapping.html#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping"><span class="std std-ref">ComponentMapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a7889382fadf3bd2e2fd9373e361e7b96">copy_components</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a1c43ae4adcb4eab1b3ee0aa8d1c459d3">copy_component_relationships</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_BRepBuilder_ComponentMapping.html#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping"><span class="std std-ref">ComponentMapping</span></a><span></span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1ad18f2549d7b042ab797ddeb0bd2e2c83">copy_component_geometry</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_BRepBuilder_ComponentMapping.html#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping"><span class="std std-ref">ComponentMapping</span></a><span></span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span>
+        <span class="p">);</span>
 
     <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1ade1b107ce2ac5c89c625614a4e44954b">add_corner</span><span></span><span class="p">();</span>
     <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a01ecb6e912eda4a49bbdcd7ecd7f4887">add_corner</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">);</span>

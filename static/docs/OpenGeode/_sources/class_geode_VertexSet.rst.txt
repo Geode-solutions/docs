@@ -24,6 +24,8 @@ Interface class to represent set of vertices. :ref:`More...<details-classgeode_1
 		// methods
 	
 		static std::unique_ptr<VertexSet> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
+		static std::unique_ptr<VertexSet> :ref:`create<doxid-classgeode_1_1_vertex_set_1a7dc1d253ac9d6a68c8380973f17d5667>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		std::unique_ptr<VertexSet> :target:`clone<doxid-classgeode_1_1_vertex_set_1a59f8cdf17a798e4746e3b90baa8be080>`() const;
 		virtual std::string :target:`native_extension<doxid-classgeode_1_1_vertex_set_1a225c97c97fbb97dae48f33cd0d8c43f8>`() const = 0;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
@@ -62,6 +64,28 @@ Methods
 	static std::unique_ptr<VertexSet> create()
 
 Create a new :ref:`VertexSet <doxid-classgeode_1_1_vertex_set>`
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_vertex_set_1a7dc1d253ac9d6a68c8380973f17d5667:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static std::unique_ptr<VertexSet> create(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type)
+
+Create a new :ref:`VertexSet <doxid-classgeode_1_1_vertex_set>` using a specified data structure.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- type
+
+		- Data structure type
 
 .. index:: pair: function; vertex_attribute_manager
 .. _doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d:

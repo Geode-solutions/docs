@@ -48,7 +48,7 @@
 <h2>CMake</h2>
 <p>OpenGeode comes with a CMake configuration file. You can modified two items:</p>
 <p><code class="docutils literal notranslate"><span class="pre">CMAKE_BUILD_TYPE</span></code> : choose build configuration (Release, Debug). By default Release. <code class="docutils literal notranslate"><span class="pre">OPENGEODE_WITH_TESTS</span></code> : switch on/off the OpenGeode test environment</p>
-<p>Your version of CMake should be at least 3.7.2.</p>
+<p>Your version of CMake should be at least 3.7.2 (3.11 for MacOS Mojave and above users).</p>
 </div>
 <div class="section" id="compiler">
 <h2>Compiler</h2>
@@ -125,10 +125,16 @@
 </div>
 <div class="section" id="id4">
 <h3>Compilation</h3>
-<ol class="arabic simple">
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">make</span></code> command in the build directory.</p></li>
-</ol>
+<div class="section" id="without-xcode-clang-in-command-line">
+<h4>Without Xcode (Clang in command line)</h4>
+<p>Run <code class="docutils literal notranslate"><span class="pre">make</span></code> command in the build directory.</p>
+</div>
+<div class="section" id="with-xcode">
+<h4>With Xcode</h4>
+<p>Open the project “SuperBuild.xcodeproj” with Xcode: <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">SuperBuild.xcodeproj</span></code>, and then compile using the graphical interface.</p>
+<p>Or, you can directly compile with the terminal: <code class="docutils literal notranslate"><span class="pre">xcodebuild</span> <span class="pre">-project</span> <span class="pre">SuperBuild.xcodeproj</span> <span class="pre">-alltargets</span> <span class="pre">-configuration</span> <span class="pre">Release</span></code>. Replace “Release” by “Debug” to compile in debug mode.</p>
 <p>Now you are ready to work with OpenGeode.</p>
+</div>
 </div>
 </div>
 </div>

@@ -41,6 +41,7 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 		void :ref:`clear_attributes<doxid-classgeode_1_1_attribute_manager_1aa25870b7f9a775d641a23ee44e0fc7d0>`();
 		void :ref:`delete_elements<doxid-classgeode_1_1_attribute_manager_1af39ef3210749c1a18a7bc26c3b2a38c7>`(const std::vector<bool>& to_delete);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_elements<doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`() const;
+		void :target:`copy<doxid-classgeode_1_1_attribute_manager_1a95af02f8b79e0df86468c8aba1787d0f>`(const AttributeManager& attribute_manager);
 	
 		template <typename Type, typename Serializer>
 		static void :target:`register_attribute_type<doxid-classgeode_1_1_attribute_manager_1a1e567bda8fee0ef3a90c54c1dac37790>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);

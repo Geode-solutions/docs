@@ -25,6 +25,7 @@ Interface class to represent a :ref:`Graph <doxid-classgeode_1_1_graph>`. :ref:`
 	
 		static std::unique_ptr<Graph> :ref:`create<doxid-classgeode_1_1_graph_1a705c0e3c8069e5d3a841a74debaa22bb>`();
 		static std::unique_ptr<Graph> :ref:`create<doxid-classgeode_1_1_graph_1a85cecebfebb0e4a0c1ca7032d108c352>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		std::unique_ptr<Graph> :target:`clone<doxid-classgeode_1_1_graph_1ae0c3c2f45fc478d3f8d187a93dbf3c34>`() const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_vertex<doxid-classgeode_1_1_graph_1ad59eacb78c03b6f5d8858eb7f597f74d>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_edges<doxid-classgeode_1_1_graph_1a7ae6a6d4f1f52849125f55f8012d9819>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_graph_1a4958092d4cc40efc7f1ed612c2a8727e>`() const;
@@ -48,6 +49,8 @@ Inherited Members
 		// methods
 	
 		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
+		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a7dc1d253ac9d6a68c8380973f17d5667>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`clone<doxid-classgeode_1_1_vertex_set_1a59f8cdf17a798e4746e3b90baa8be080>`() const;
 		virtual std::string :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1a225c97c97fbb97dae48f33cd0d8c43f8>`() const = 0;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
