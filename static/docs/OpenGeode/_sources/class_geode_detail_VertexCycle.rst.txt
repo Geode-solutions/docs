@@ -1,0 +1,30 @@
+.. index:: pair: class; geode::detail::VertexCycle
+.. _doxid-classgeode_1_1detail_1_1_vertex_cycle:
+
+class geode::detail::VertexCycle
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vertex_cycle.h>
+	
+	class VertexCycle
+	{
+	public:
+		// construction
+	
+		:target:`VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle_1af8e578db571863abca276accc10b25e5>`(std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> vertices);
+
+		// methods
+	
+		const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& :target:`vertices<doxid-classgeode_1_1detail_1_1_vertex_cycle_1aaeb7e96be868e089f4b9027d1c626271>`() const;
+		bool :target:`operator ==<doxid-classgeode_1_1detail_1_1_vertex_cycle_1af189863349b573d9737b8f48f04e861a>` (const VertexCycle& other) const;
+		bool :target:`operator !=<doxid-classgeode_1_1detail_1_1_vertex_cycle_1a86d49d0f0778c7a6ef8f345f3efb23a6>` (const VertexCycle& other) const;
+	};

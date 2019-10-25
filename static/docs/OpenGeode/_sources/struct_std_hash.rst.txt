@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::MeshType>
-.. _doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4:
+.. index:: pair: struct; std::hash<geode::detail::VertexCycle>
+.. _doxid-structstd_1_1hash_3_01geode_1_1detail_1_1_vertex_cycle_01_4:
 
-template struct std::hash<geode::MeshType>
-==========================================
+template struct std::hash<geode::detail::VertexCycle>
+=====================================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct std::hash<geode::MeshType>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <mesh_type.h>
+	#include <vertex_cycle.h>
 	
 	template <>
-	struct hash<geode::MeshType>
+	struct hash<geode::detail::VertexCycle>
 	{
 		// methods
 	
-		std::size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4_1abf7e2eb865ba868378d92304970cb5ad>` (const :ref:`geode::MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& f) const;
+		std::size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1detail_1_1_vertex_cycle_01_4_1af0fe73c693300e07e6044aad3d90445e>` (const :ref:`geode::detail::VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`& cycle) const;
 	};

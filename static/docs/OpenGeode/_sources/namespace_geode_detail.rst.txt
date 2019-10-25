@@ -12,6 +12,7 @@ namespace geode::detail
 	class_geode_detail_MeshStorage.rst
 	class_geode_detail_PointsImpl.rst
 	class_geode_detail_UuidToIndex.rst
+	class_geode_detail_VertexCycle.rst
 
 
 
@@ -36,5 +37,6 @@ namespace geode::detail
 	class :ref:`PointsImpl<doxid-classgeode_1_1detail_1_1_points_impl>`;
 
 	class :ref:`UuidToIndex<doxid-classgeode_1_1detail_1_1_uuid_to_index>`;
+	class :ref:`VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`;
 
 	} // namespace detail

@@ -9,6 +9,7 @@ namespace std
 
 	struct_std_hash.rst
 	struct_std_hash-2.rst
+	struct_std_hash-3.rst
 
 
 
@@ -20,6 +21,9 @@ namespace std
 	namespace std {
 
 	// structs
+
+	template <>
+	struct :ref:`hash<geode::detail::VertexCycle><doxid-structstd_1_1hash_3_01geode_1_1detail_1_1_vertex_cycle_01_4>`;
 
 	template <>
 	struct :ref:`hash<geode::MeshType><doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4>`;
