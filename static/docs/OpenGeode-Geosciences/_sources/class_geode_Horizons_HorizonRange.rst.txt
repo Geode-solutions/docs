@@ -24,9 +24,9 @@ class geode::Horizons::HorizonRange
 
 		// methods
 	
-		const HorizonRange& :target:`begin<doxid-classgeode_1_1_horizons_1_1_horizon_range_1af164129c1a67ab50cf285fdc918605f6>`() const;
-		const HorizonRange& :target:`end<doxid-classgeode_1_1_horizons_1_1_horizon_range_1a1d8a60bc3664fa748216b2ae0c756504>`() const;
-		const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& :target:`operator *<doxid-classgeode_1_1_horizons_1_1_horizon_range_1a00b0ed1ef60164e5517cff9ee2143fbb>` () const;
+		const HorizonRange& :target:`begin<doxid-classgeode_1_1_horizons_1_1_horizon_range_1a095e7b414b7bfabfaf2e9c91b4d3c03f>`() const;
+		const HorizonRange& :target:`end<doxid-classgeode_1_1_horizons_1_1_horizon_range_1a9b5bae44b4c4ddb1eae56b38be0e7cf7>`() const;
+		const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& :target:`operator *<doxid-classgeode_1_1_horizons_1_1_horizon_range_1a1d1bdb3581cb396e11cb27d2230a764f>` () const;
 	};
 
 Inherited Members
@@ -38,6 +38,6 @@ Inherited Members
 	public:
 		// methods
 	
-		bool :ref:`operator !=<doxid-classgeode_1_1_horizons_1_1_horizon_range_base_1a2894e97dd08d08a9ee87fb6a36e61a98>` (const :ref:`HorizonRangeBase<doxid-classgeode_1_1_horizons_1_1_horizon_range_base>`&) const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_horizons_1_1_horizon_range_base_1a040e11d6bded11dfd66a07b4b653a04c>` (const :ref:`HorizonRangeBase<doxid-classgeode_1_1_horizons_1_1_horizon_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_horizons_1_1_horizon_range_base_1a1a3f39f75a813eef1a95d413894177f6>` ();
 

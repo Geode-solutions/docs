@@ -20,7 +20,7 @@ class geode::Faults::FaultRangeBase
 	public:
 		// methods
 	
-		bool :target:`operator !=<doxid-classgeode_1_1_faults_1_1_fault_range_base_1a8ae8d94f11c763477338f5cd4b0c6a5c>` (const FaultRangeBase&) const;
+		bool :target:`operator !=<doxid-classgeode_1_1_faults_1_1_fault_range_base_1a0fdb484e94fde22cd8c30c7efd679640>` (const FaultRangeBase&) const;
 		void :target:`operator ++<doxid-classgeode_1_1_faults_1_1_fault_range_base_1a719c2a38cb17d907305746f57a5ce72c>` ();
 	};
 

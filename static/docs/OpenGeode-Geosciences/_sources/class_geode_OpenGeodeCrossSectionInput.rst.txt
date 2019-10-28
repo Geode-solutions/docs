@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::OpenGeodeCrossSectionInput
+.. _doxid-classgeode_1_1_open_geode_cross_section_input:
+
+class geode::OpenGeodeCrossSectionInput
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geode_cross_section_input.h>
+	
+	class OpenGeodeCrossSectionInput: public :ref:`geode::CrossSectionInput<doxid-classgeode_1_1_cross_section_input>`
+	{
+	public:
+		// construction
+	
+		:target:`OpenGeodeCrossSectionInput<doxid-classgeode_1_1_open_geode_cross_section_input_1adcf60ad73ab31ed889bf8159962d04a0>`(
+			:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
+			std::string filename
+			);
+
+		// methods
+	
+		void :target:`read<doxid-classgeode_1_1_open_geode_cross_section_input_1a04b54837bc7b87dc8b3d7f36d715fb37>`();
+		static std::string :target:`extension<doxid-classgeode_1_1_open_geode_cross_section_input_1a27f97962fda0ac335364c42f9d36f718>`();
+	};

@@ -7,6 +7,9 @@ class geode::StructuralModel
 .. toctree::
 	:hidden:
 
+	class_geode_StructuralModel_FaultItemRange.rst
+	class_geode_StructuralModel_HorizonItemRange.rst
+
 A Structural Model is a Boundary Representation composed of :ref:`Faults <doxid-classgeode_1_1_faults>` and :ref:`Horizons <doxid-classgeode_1_1_horizons>`.
 
 
@@ -20,8 +23,15 @@ A Structural Model is a Boundary Representation composed of :ref:`Faults <doxid-
 	    public AddComponents< 3, Faults, Horizons >
 	{
 	public:
+		// classes
+	
+		class :ref:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range>`;
+		class :ref:`HorizonItemRange<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range>`;
+
 		// methods
 	
 		static std::string :target:`native_extension_static<doxid-classgeode_1_1_structural_model_1a9967f59c8dbb42317d60f16ec1281cde>`();
-		std::string :target:`native_extension<doxid-classgeode_1_1_structural_model_1aa90b9672515d2060909191e29350971a>`() const;
+		std::string :target:`native_extension<doxid-classgeode_1_1_structural_model_1aec1d9b270b145c1fed1d525b77927780>`() const;
+		:ref:`HorizonItemRange<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range>` :target:`items<doxid-classgeode_1_1_structural_model_1a8b68fdaaaac17374d0d6cd50d11701a4>`(const Horizon3D& horizon) const;
+		:ref:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range>` :target:`items<doxid-classgeode_1_1_structural_model_1a028676337ec423d99a502e08a994ac98>`(const Fault3D& fault) const;
 	};

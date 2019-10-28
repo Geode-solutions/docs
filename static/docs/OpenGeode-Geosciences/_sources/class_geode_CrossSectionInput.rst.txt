@@ -1,0 +1,24 @@
+.. index:: pair: class; geode::CrossSectionInput
+.. _doxid-classgeode_1_1_cross_section_input:
+
+class geode::CrossSectionInput
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cross_section_input.h>
+	
+	class CrossSectionInput: public Input
+	{
+	};
+
+	// direct descendants
+
+	class :ref:`OpenGeodeCrossSectionInput<doxid-classgeode_1_1_open_geode_cross_section_input>`;

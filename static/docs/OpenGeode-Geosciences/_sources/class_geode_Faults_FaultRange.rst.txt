@@ -24,9 +24,9 @@ class geode::Faults::FaultRange
 
 		// methods
 	
-		const FaultRange& :target:`begin<doxid-classgeode_1_1_faults_1_1_fault_range_1a2f46043f6f71dbc8d814f45487c62e35>`() const;
-		const FaultRange& :target:`end<doxid-classgeode_1_1_faults_1_1_fault_range_1a171f00a20aa95a2fac267c58597d32ee>`() const;
-		const :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>& :target:`operator *<doxid-classgeode_1_1_faults_1_1_fault_range_1a30a196d0869460318d8f39d055980e11>` () const;
+		const FaultRange& :target:`begin<doxid-classgeode_1_1_faults_1_1_fault_range_1a6c581bb0deca5844a179a008c5b622e3>`() const;
+		const FaultRange& :target:`end<doxid-classgeode_1_1_faults_1_1_fault_range_1ae2928a60192be2928a68b00a4abd6faf>`() const;
+		const :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>& :target:`operator *<doxid-classgeode_1_1_faults_1_1_fault_range_1a8b60fad7ab3550fdbcb9d7773efa3a96>` () const;
 	};
 
 Inherited Members
@@ -38,6 +38,6 @@ Inherited Members
 	public:
 		// methods
 	
-		bool :ref:`operator !=<doxid-classgeode_1_1_faults_1_1_fault_range_base_1a8ae8d94f11c763477338f5cd4b0c6a5c>` (const :ref:`FaultRangeBase<doxid-classgeode_1_1_faults_1_1_fault_range_base>`&) const;
+		bool :ref:`operator !=<doxid-classgeode_1_1_faults_1_1_fault_range_base_1a0fdb484e94fde22cd8c30c7efd679640>` (const :ref:`FaultRangeBase<doxid-classgeode_1_1_faults_1_1_fault_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_faults_1_1_fault_range_base_1a719c2a38cb17d907305746f57a5ce72c>` ();
 

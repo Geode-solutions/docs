@@ -1,0 +1,47 @@
+.. index:: pair: class; geode::CrossSectionBuilder
+.. _doxid-classgeode_1_1_cross_section_builder:
+
+class geode::CrossSectionBuilder
+================================
+
+.. toctree::
+	:hidden:
+
+Class managing modifications of a :ref:`CrossSection <doxid-classgeode_1_1_cross_section>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cross_section_builder.h>
+	
+	class CrossSectionBuilder:
+	    public SectionBuilder,
+	    public AddComponentsBuilders< 2, Faults, Horizons >
+	{
+	public:
+		// construction
+	
+		:target:`CrossSectionBuilder<doxid-classgeode_1_1_cross_section_builder_1a7c2d802571e8206f2375343d9cf073a5>`(:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section);
+
+		// methods
+	
+		const uuid& :target:`add_fault<doxid-classgeode_1_1_cross_section_builder_1ab5b235252d122f7e5c883cf2dd8c6f25>`();
+		const uuid& :target:`add_fault<doxid-classgeode_1_1_cross_section_builder_1a8552f2c04f88f028cf1ab6215a8c7442>`(typename Fault2D::FAULT_TYPE type);
+	
+		void :target:`add_line_in_fault<doxid-classgeode_1_1_cross_section_builder_1a833290e5e459d1987ce9c6b9035d5ed5>`(
+			const Line2D& line,
+			const Fault2D& fault
+			);
+	
+		void :target:`remove_fault<doxid-classgeode_1_1_cross_section_builder_1aeaf7eeabdaf4e1025bef1e22643e6538>`(const Fault2D& fault);
+		const uuid& :target:`add_horizon<doxid-classgeode_1_1_cross_section_builder_1a4298df10441878f44164e2c17214f888>`();
+		const uuid& :target:`add_horizon<doxid-classgeode_1_1_cross_section_builder_1ae2bc14f780dfb0a669075a2f6f753215>`(typename Horizon2D::HORIZON_TYPE type);
+	
+		void :target:`add_line_in_horizon<doxid-classgeode_1_1_cross_section_builder_1aa3b92bed509bfe25acb7d626e08bfa6d>`(
+			const Line2D& line,
+			const Horizon2D& horizon
+			);
+	
+		void :target:`remove_horizon<doxid-classgeode_1_1_cross_section_builder_1aa79085582792766aad52060795252df6>`(const Horizon2D& horizon);
+	};

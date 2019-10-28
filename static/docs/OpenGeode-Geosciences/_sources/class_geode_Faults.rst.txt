@@ -39,8 +39,8 @@ template class geode::Faults
 
 		// methods
 	
-		index_t :target:`nb_faults<doxid-classgeode_1_1_faults_1a5f9cc2167fa58d73cddb65cc6634e87c>`() const;
-		const :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>& :target:`fault<doxid-classgeode_1_1_faults_1ae31362b67daf5bacdb08d9cc08369721>`(const uuid& id) const;
-		:ref:`FaultRange<doxid-classgeode_1_1_faults_1_1_fault_range>` :target:`faults<doxid-classgeode_1_1_faults_1a682d8476f2554b4af790b5c1cc9e2737>`() const;
-		std::vector<std::string> :target:`save_faults<doxid-classgeode_1_1_faults_1afeed286b14838345ef7eaf72d5d970a5>`(const std::string& directory) const;
+		index_t :target:`nb_faults<doxid-classgeode_1_1_faults_1a2bbfaadaac0274091095626a0842163b>`() const;
+		const :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>& :target:`fault<doxid-classgeode_1_1_faults_1a43afabd22ce5db4df110134a8966266c>`(const uuid& id) const;
+		:ref:`FaultRange<doxid-classgeode_1_1_faults_1_1_fault_range>` :target:`faults<doxid-classgeode_1_1_faults_1a9e49ed1d02ed81ebccb5ef8c687fd997>`() const;
+		std::vector<std::string> :target:`save_faults<doxid-classgeode_1_1_faults_1ac5989da2a4eac569962eef7c1eb948c4>`(const std::string& directory) const;
 	};

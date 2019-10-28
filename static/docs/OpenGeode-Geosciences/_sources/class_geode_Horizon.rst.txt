@@ -28,8 +28,8 @@ Geological component describing a :ref:`Horizon <doxid-classgeode_1_1_horizon>`.
 		// methods
 	
 		ComponentType :target:`component_type<doxid-classgeode_1_1_horizon_1a5898405faae00710ce30977881cb52e5>`() const;
-		ComponentID :target:`component_id<doxid-classgeode_1_1_horizon_1a8524311701e745998df954c54893a081>`() const;
-		bool :target:`has_type<doxid-classgeode_1_1_horizon_1a27a06f5efa9e6abc0e869aafa9e9477a>`() const;
-		:ref:`HORIZON_TYPE<doxid-classgeode_1_1_horizon_1a1a8b2fbe75ab29e9c88e8b8dc78afbbf>` :target:`type<doxid-classgeode_1_1_horizon_1a785408cf240cd82de926ed187027e088>`() const;
+		ComponentID :target:`component_id<doxid-classgeode_1_1_horizon_1aec4742fc6dd68931e891d2c8f4b11d0f>`() const;
+		bool :target:`has_type<doxid-classgeode_1_1_horizon_1a49bd8e114b63a2e881f450fb3c29aa6f>`() const;
+		:ref:`HORIZON_TYPE<doxid-classgeode_1_1_horizon_1a1a8b2fbe75ab29e9c88e8b8dc78afbbf>` :target:`type<doxid-classgeode_1_1_horizon_1a469f7e889783a48e4335a03bf75b3889>`() const;
 		static ComponentType :target:`component_type_static<doxid-classgeode_1_1_horizon_1a2b3cebafd95952db19f7ad5194c19656>`();
 	};
