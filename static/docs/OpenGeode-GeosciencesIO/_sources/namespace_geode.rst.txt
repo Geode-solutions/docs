@@ -7,7 +7,12 @@ namespace geode
 .. toctree::
 	:hidden:
 
+	struct_geode_CRSData.rst
+	struct_geode_HeaderData.rst
+	struct_geode_TSurfBorderData.rst
+	struct_geode_TSurfData.rst
 	class_geode_MLInput.rst
+	class_geode_TSInput.rst
 
 
 
@@ -18,12 +23,41 @@ namespace geode
 	
 	namespace geode {
 
+	// structs
+
+	struct :ref:`CRSData<doxid-structgeode_1_1_c_r_s_data>`;
+	struct :ref:`HeaderData<doxid-structgeode_1_1_header_data>`;
+	struct :ref:`TSurfBorderData<doxid-structgeode_1_1_t_surf_border_data>`;
+	struct :ref:`TSurfData<doxid-structgeode_1_1_t_surf_data>`;
+
 	// classes
 
 	class :ref:`MLInput<doxid-classgeode_1_1_m_l_input>`;
+	class :ref:`TSInput<doxid-classgeode_1_1_t_s_input>`;
 
 	// global functions
 
 	void opengeode_geosciencesio_geosciences_api :target:`initialize_geosciences_io<doxid-namespacegeode_1a833d9ee9b99c675a6c67f36de8ab1eba>`();
+
+	bool opengeode_geosciencesio_geosciences_api :target:`string_starts_with<doxid-namespacegeode_1aaa1be7c0687b7c9c474dbf5ce1029aa2>`(
+		const std::string& string,
+		const std::string& check
+		);
+
+	void opengeode_geosciencesio_geosciences_api :target:`check_keyword<doxid-namespacegeode_1a8fc7a0eadf217b026eac2ea2686aa14d>`(
+		std::ifstream& file,
+		const std::string& keyword
+		);
+
+	std::string opengeode_geosciencesio_geosciences_api :target:`read_name<doxid-namespacegeode_1a1312edb6f6b0a8bd95ced495b7793536>`(std::istringstream& iss);
+	:ref:`HeaderData<doxid-structgeode_1_1_header_data>` opengeode_geosciencesio_geosciences_api :target:`read_header<doxid-namespacegeode_1a102fbd6176df6658f9c695e1d74fef5c>`(std::ifstream& file);
+	:ref:`CRSData<doxid-structgeode_1_1_c_r_s_data>` opengeode_geosciencesio_geosciences_api :target:`read_CRS<doxid-namespacegeode_1ad1487588143f6250853dbf4157a39d04>`(std::ifstream& file);
+
+	void opengeode_geosciencesio_geosciences_api :target:`goto_keyword<doxid-namespacegeode_1aac2c80baa1f7d6eac7bfe7a27699f7dd>`(
+		std::ifstream& file,
+		const std::string& word
+		);
+
+	:ref:`TSurfData<doxid-structgeode_1_1_t_surf_data>` opengeode_geosciencesio_geosciences_api :target:`read_tsurf<doxid-namespacegeode_1aa7422b47b23fabebe429eebb2354d33f>`(std::ifstream& file);
 
 	} // namespace geode

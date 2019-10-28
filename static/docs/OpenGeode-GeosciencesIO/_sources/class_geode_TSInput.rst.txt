@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::TSInput
+.. _doxid-classgeode_1_1_t_s_input:
+
+class geode::TSInput
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ts_input.h>
+	
+	class TSInput: public TriangulatedSurfaceInput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`TSInput<doxid-classgeode_1_1_t_s_input_1aa67b5463a89d7f09faeb37254094579b>`(
+			TriangulatedSurface<3>& surface,
+			std::string filename
+			);
+
+		// methods
+	
+		void :target:`do_read<doxid-classgeode_1_1_t_s_input_1a8245093c1ecf94ecf00b569c82efa2b0>`();
+		static std::string :target:`extension<doxid-classgeode_1_1_t_s_input_1aa2272fdb7a31366a072a4751c8ae3f8a>`();
+	};

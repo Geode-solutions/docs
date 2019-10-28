@@ -1,0 +1,31 @@
+.. index:: pair: struct; geode::TSurfBorderData
+.. _doxid-structgeode_1_1_t_surf_border_data:
+
+struct geode::TSurfBorderData
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <gocad_common.h>
+	
+	struct TSurfBorderData
+	{
+		// fields
+	
+		index_t :target:`corner_id<doxid-structgeode_1_1_t_surf_border_data_1a4b91f9f67dad19feb5d20cd470637e45>`;
+		index_t :target:`next_id<doxid-structgeode_1_1_t_surf_border_data_1a2a5d5964b0d7550da78ec0e9048e3f07>`;
+
+		// construction
+	
+		:target:`TSurfBorderData<doxid-structgeode_1_1_t_surf_border_data_1a38f83b8641be1f9df84de7efb6f8e4ed>`(
+			index_t corner_id_in,
+			index_t next_id_in
+			);
+	};

@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::CRSData
+.. _doxid-structgeode_1_1_c_r_s_data:
+
+struct geode::CRSData
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <gocad_common.h>
+	
+	struct CRSData
+	{
+		// fields
+	
+		int :target:`z_sign<doxid-structgeode_1_1_c_r_s_data_1aa8edfbb499f528ba94d348adc6b74e78>`;
+	};

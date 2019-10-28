@@ -1,0 +1,20 @@
+.. index:: pair: page; Supported file formats
+.. _doxid-opengeode_geosciencesio_supported_file_formats:
+
+Supported file formats
+======================
+
+This page lists the supported file formats, indicating for each the loaded/saved OpenGeode object.
+
+Models
+======
+
+| File format | OpenGeode object | Input | Output | | .ml* | StructuralModel | YES | NO |
+
+Meshes
+======
+
+| File format | OpenGeode object | Input | Output | | .ts* | TriangulatedSurface3D | YES | NO |
+
+) For Gocad-Skua file format, if there are several objects inside the file, only first object is loaded.
+
