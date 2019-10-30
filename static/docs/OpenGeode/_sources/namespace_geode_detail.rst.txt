@@ -9,6 +9,7 @@ namespace geode::detail
 
 	class_geode_detail_ComponentsStorage.rst
 	class_geode_detail_EdgesImpl.rst
+	class_geode_detail_FacetStorage.rst
 	class_geode_detail_MeshStorage.rst
 	class_geode_detail_PointsImpl.rst
 	class_geode_detail_UuidToIndex.rst
@@ -33,6 +34,7 @@ namespace geode::detail
 	class :ref:`ComponentsStorage<doxid-classgeode_1_1detail_1_1_components_storage>`;
 
 	class :ref:`EdgesImpl<doxid-classgeode_1_1detail_1_1_edges_impl>`;
+	class :ref:`FacetStorage<doxid-classgeode_1_1detail_1_1_facet_storage>`;
 
 	template <typename Mesh>
 	class :ref:`MeshStorage<doxid-classgeode_1_1detail_1_1_mesh_storage>`;
