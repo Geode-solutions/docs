@@ -54,6 +54,27 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_block<doxid-classgeode_1_1_b_rep_builder_1adf3c81e22abf0e81c78d3de7fd2fe24b>`();
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_block<doxid-classgeode_1_1_b_rep_builder_1a063bc7cfa2c6ee5bf7d206977aa65bb0>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_model_boundary<doxid-classgeode_1_1_b_rep_builder_1a67cf5aa434f1be87e1cb10a952cdffe3>`();
+	
+		void :target:`update_corner_mesh<doxid-classgeode_1_1_b_rep_builder_1a8c166b4c4c268b4c9a7c1317cad2a1ab>`(
+			const Corner3D& corner,
+			std::unique_ptr<PointSet3D> mesh
+			);
+	
+		void :target:`update_line_mesh<doxid-classgeode_1_1_b_rep_builder_1ab8ec4493be2a134714c07049ba6138e1>`(
+			const Line3D& line,
+			std::unique_ptr<EdgedCurve3D> mesh
+			);
+	
+		void :target:`update_surface_mesh<doxid-classgeode_1_1_b_rep_builder_1ab949c62735c6845b4e5802e389163f2a>`(
+			const Surface3D& surface,
+			std::unique_ptr<PolygonalSurface3D> mesh
+			);
+	
+		void :target:`update_block_mesh<doxid-classgeode_1_1_b_rep_builder_1af31a7159de4aceb011571fbcd35ab1cb>`(
+			const Block3D& block,
+			std::unique_ptr<PolyhedralSolid3D> mesh
+			);
+	
 		void :target:`remove_corner<doxid-classgeode_1_1_b_rep_builder_1acf98a742d80b9deb572ae60140f22ff0>`(const Corner3D& corner);
 		void :target:`remove_line<doxid-classgeode_1_1_b_rep_builder_1a01f76c177033c7c7abda6969c93f0345>`(const Line3D& line);
 		void :target:`remove_surface<doxid-classgeode_1_1_b_rep_builder_1a92906519d1f01ce14197943c3d3149cd>`(const Surface3D& surface);

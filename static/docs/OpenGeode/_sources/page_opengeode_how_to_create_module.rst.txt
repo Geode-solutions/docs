@@ -42,7 +42,9 @@ Your CMakeLists.txt is now ready.
 Last step - Configure and build your module.
 ============================================
 
-As for OpenGeode :ref:`configuration and compilation <doxid-opengeode_how_to_compile>`, this step depends on your platform. Follow the same procedure than for OpenGeode but by specifying the ``CMAKE_PREFIX_PATH`` to OpenGeode install path. For example:
+As for OpenGeode :ref:`configuration and compilation <doxid-opengeode_how_to_compile>`, this step depends on your platform. Follow :ref:`this page <doxid->` to learn how to configure and compile your own module.
+
+Follow the same procedure than for OpenGeode but by specifying the ``CMAKE_PREFIX_PATH`` to OpenGeode install path. For example:
 
 .. ref-code-block:: cpp
 
@@ -58,8 +60,6 @@ Template repository contains some files. Here is information on these files:
 * ``LICENSE`` - In this file you specify the Licence of your module
 
 * ``README.md`` - This file is used as overview of your GitHub project. Add any information you consider necessary.
-
-* ``azure-pipelines.yml`` - Configuration file for running jobs in Azure DevOps pipelines (for formatting, testing and much more).
 
 * ``.clang-format`` - Format rules file used by clang. Run it by your own or automatize formatting using this file and CI tools.
 

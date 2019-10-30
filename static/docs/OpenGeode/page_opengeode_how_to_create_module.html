@@ -64,7 +64,8 @@
 </div>
 <div class="section" id="last-step-configure-and-build-your-module">
 <h1>Last step - Configure and build your module.</h1>
-<p>As for OpenGeode <a class="reference internal" href="page_opengeode_how_to_compile.html#doxid-opengeode-how-to-compile"><span class="std std-ref">configuration and compilation</span></a>, this step depends on your platform. Follow the same procedure than for OpenGeode but by specifying the <code class="docutils literal notranslate"><span class="pre">CMAKE_PREFIX_PATH</span></code> to OpenGeode install path. For example:</p>
+<p>As for OpenGeode <a class="reference internal" href="page_opengeode_how_to_compile.html#doxid-opengeode-how-to-compile"><span class="std std-ref">configuration and compilation</span></a>, this step depends on your platform. Follow <span class="xref std std-ref">this page</span> to learn how to configure and compile your own module.</p>
+<p>Follow the same procedure than for OpenGeode but by specifying the <code class="docutils literal notranslate"><span class="pre">CMAKE_PREFIX_PATH</span></code> to OpenGeode install path. For example:</p>
 <pre class="highlight literal-block"><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DCMAKE_PREFIX_PATH</span><span class="o">=</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">OpenGeode</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">opengeode</span><span class="o">/</span><span class="n">install</span> <span class="p">..</span></pre>
 <p>The last thing to do is to modify headers (.h) and sources (.cpp) files by replacing <code class="docutils literal notranslate"><span class="pre">mylib</span></code> by the name your choose for your libs and <code class="docutils literal notranslate"><span class="pre">mymodule</span></code> by the name of your module. The rest is up to you!</p>
 <div class="section" id="additional-info-what-are-these-files-in-module-repository">
@@ -73,7 +74,6 @@
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">LICENSE</span></code> - In this file you specify the Licence of your module</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">README.md</span></code> - This file is used as overview of your GitHub project. Add any information you consider necessary.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">azure-pipelines.yml</span></code> - Configuration file for running jobs in Azure DevOps pipelines (for formatting, testing and much more).</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">.clang-format</span></code> - Format rules file used by clang. Run it by your own or automatize formatting using this file and CI tools.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">.gitattributes</span></code> - List of attributes on files and folders (e.g. ignored by GitHub for repository languages)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> - List of files and folders ignored by Git.</p></li>

@@ -52,6 +52,22 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_surface<doxid-classgeode_1_1_section_builder_1a40d5be580b4d063e6b63b87bf009860b>`();
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_surface<doxid-classgeode_1_1_section_builder_1ad36bb5f862cacf7d8c3f8e2518145c6b>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_model_boundary<doxid-classgeode_1_1_section_builder_1a305233732e71f2e2a3fb375bc5935912>`();
+	
+		void :target:`update_corner_mesh<doxid-classgeode_1_1_section_builder_1a3b2d1a148751f7b3b2f1c3d1d1cc4432>`(
+			const Corner2D& corner,
+			std::unique_ptr<PointSet2D> mesh
+			);
+	
+		void :target:`update_line_mesh<doxid-classgeode_1_1_section_builder_1a9b1e8d4b73b120a0373196d0605dc177>`(
+			const Line2D& line,
+			std::unique_ptr<EdgedCurve2D> mesh
+			);
+	
+		void :target:`update_surface_mesh<doxid-classgeode_1_1_section_builder_1a4758780663e6af4aa1af0be0bcf99b12>`(
+			const Surface2D& surface,
+			std::unique_ptr<PolygonalSurface2D> mesh
+			);
+	
 		void :target:`remove_corner<doxid-classgeode_1_1_section_builder_1a434d3beff111801f13886bd054152dfa>`(const Corner2D& corner);
 		void :target:`remove_line<doxid-classgeode_1_1_section_builder_1a3b64393f3c4fbb20e38fc255088c011c>`(const Line2D& line);
 		void :target:`remove_surface<doxid-classgeode_1_1_section_builder_1a9e20dbff4e8e711e73c1a7fd4abe0018>`(const Surface2D& surface);

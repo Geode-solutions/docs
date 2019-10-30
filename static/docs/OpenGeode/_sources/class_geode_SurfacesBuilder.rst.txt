@@ -31,11 +31,6 @@ Overview
 			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id,
 			std::string name
 			);
-	
-		void :target:`set_surface_mesh<doxid-classgeode_1_1_surfaces_builder_1a4d14003d5fe7e554ec2445fb4b312ced>`(
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id,
-			std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>> mesh
-			);
 	};
 .. _details-classgeode_1_1_surfaces_builder:
 
