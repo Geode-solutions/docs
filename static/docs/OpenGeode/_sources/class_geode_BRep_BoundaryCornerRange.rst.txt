@@ -1,0 +1,49 @@
+.. index:: pair: class; geode::BRep::BoundaryCornerRange
+.. _doxid-classgeode_1_1_b_rep_1_1_boundary_corner_range:
+
+class geode::BRep::BoundaryCornerRange
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep.h>
+	
+	class BoundaryCornerRange:
+	    public :ref:`geode::Relationships::BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`,
+	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	{
+	public:
+		// construction
+	
+		:target:`BoundaryCornerRange<doxid-classgeode_1_1_b_rep_1_1_boundary_corner_range_1a1c26b0305cc288baf8c0beedf4b74b84>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+			const Line3D& line
+			);
+
+		// methods
+	
+		const Corner3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_boundary_corner_range_1a85075fcbc30955991455022e9820e3d4>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a38a05e2d55cda5f7789faf1b0dd0d53b>` (const :ref:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1ad48bf5ca79534feea81482e831a47e15>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a490c05e8b656295797dc711a83e85f23>` () const;
+		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
+		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
+

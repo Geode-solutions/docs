@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="struct geode::BRepBuilder::ComponentMapping" href="struct_geode_BRepBuilder_ComponentMapping.html" />
-    <link rel="prev" title="class geode::BRep::SurfaceInternalRange" href="class_geode_BRep_SurfaceInternalRange.html" />
+    <link rel="prev" title="class geode::BRep::ItemSurfaceRange" href="class_geode_BRep_ItemSurfaceRange.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -104,24 +104,39 @@
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a7adc5b711e04e05c6e643fef82329c64">remove_block</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">);</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a28edee0947f9678df76e60da8e19afed">remove_model_boundary</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">ModelBoundary3D</span><span class="o">&amp;</span> <span class="n">boundary</span><span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a52b0621c2ba360515016dfb64d23e96a">add_corner_line_relationship</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a0b94051959d8328864e53b604c45dba4">add_corner_line_boundary_relationship</span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Corner3D</span><span class="o">&amp;</span> <span class="n">corner</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a585e49692e91714d3f6cd738dce5fc41">add_line_surface_relationship</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a4d9c88c6377f931c53e219b400b3a4f3">add_line_surface_boundary_relationship</span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a7263f37b4be2fccd11bee71d2fc41442">add_surface_block_relationship</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a536718d97ed71bf27121d20d49204676">add_surface_block_boundary_relationship</span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a98d4b151824135024c40dab12d652413">add_corner_surface_internal_relationship</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Corner3D</span><span class="o">&amp;</span> <span class="n">corner</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span>
         <span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a460689f5bb9d659ccfe1236a945a1912">add_line_surface_internal_relationship</span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a8bcb75ab80e041c5596ef904e6947712">add_corner_block_internal_relationship</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Corner3D</span><span class="o">&amp;</span> <span class="n">corner</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1a2257553afe4358dc532dd634530dfd60">add_line_block_internal_relationship</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span>
         <span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-builder-1ac7d5c71abde95c24bc02dbfcdb94b885">add_surface_block_internal_relationship</span><span></span><span class="p">(</span>
@@ -139,7 +154,7 @@
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a875c4be67f9214ad261de4ad943adc15"><span class="std std-ref">register_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1ac161cd45bffb92b0e3340ac80cfe9e1d"><span class="std std-ref">register_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1aee190cedcd627f2e9bdc5e3815afcdfd"><span class="std std-ref">unregister_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a6c661d5abfdf4600024e03a1535b43d9"><span class="std std-ref">add_boundary_relation</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">boundary</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">incidence</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder-1a785391408cff3d0af65ad246dd4acdf9"><span class="std std-ref">add_internal_relation</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">internal</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">embedding</span><span class="p">);</span>

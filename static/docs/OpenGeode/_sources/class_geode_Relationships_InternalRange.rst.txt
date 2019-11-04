@@ -7,7 +7,7 @@ class geode::Relationships::InternalRange
 .. toctree::
 	:hidden:
 
-:ref:`Range <doxid-classgeode_1_1_range>` to iterates on all internal components of one component
+
 
 
 .. ref-code-block:: cpp
@@ -15,7 +15,9 @@ class geode::Relationships::InternalRange
 
 	#include <relationships.h>
 	
-	class InternalRange
+	class InternalRange:
+	    public :ref:`geode::Relationships::InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`,
+	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
 	{
 	public:
 		// construction
@@ -24,21 +26,20 @@ class geode::Relationships::InternalRange
 			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
 			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
 			);
-	
-		:target:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range_1afb1ce1f6fcc85ad30e1660511cf96d0c>`(InternalRange&& other);
-		:target:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range_1a121944590bcdca8b9d9d9669c1d91987>`(const InternalRange& other);
-
-		// methods
-	
-		const InternalRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_internal_range_1a2669a8d3dd4e6f1880473a8175eea510>`() const;
-		const InternalRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_internal_range_1a11d9f471d86178aaa3c0e2910da759c5>`() const;
-		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_internal_range_1a064e5667c0caa828866ac71365337806>` (const InternalRange&) const;
-		void :target:`operator ++<doxid-classgeode_1_1_relationships_1_1_internal_range_1aab35f95d79abb66cd468b34631d03ac6>` ();
-		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_internal_range_1a17f2d5925dbfc3b3c916b0c7e0501bbc>` () const;
 	};
 
-	// direct descendants
+Inherited Members
+-----------------
 
-	class :ref:`BlockInternalRange<doxid-classgeode_1_1_b_rep_1_1_block_internal_range>`;
-	class :ref:`SurfaceInternalRange<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range>`;
-	class :ref:`SurfaceInternalRange<doxid-classgeode_1_1_section_1_1_surface_internal_range>`;
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a4ec071994352d9003b056190a43a3d3b>` (const :ref:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1ad9eef320c41a11ea8882af92030d95ae>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a5561d5ab9cc43df4bd56d0722cc92ed2>` () const;
+		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
+		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
+

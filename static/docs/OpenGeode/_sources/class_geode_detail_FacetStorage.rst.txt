@@ -1,8 +1,8 @@
 .. index:: pair: class; geode::detail::FacetStorage
 .. _doxid-classgeode_1_1detail_1_1_facet_storage:
 
-class geode::detail::FacetStorage
-=================================
+template class geode::detail::FacetStorage
+==========================================
 
 .. toctree::
 	:hidden:

@@ -1,0 +1,30 @@
+.. index:: pair: struct; bitsery::traits::ExtensionTraits<geode::DefaultGrowable<Archive, T>, T>
+.. _doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_default_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4:
+
+template struct bitsery::traits::ExtensionTraits<geode::DefaultGrowable<Archive, T>, T>
+=======================================================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bitsery_archive.h>
+	
+	template <typename Archive, typename T>
+	struct ExtensionTraits<geode::DefaultGrowable<Archive, T>, T>
+	{
+		// typedefs
+	
+		typedef T :target:`TValue<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_default_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1a53219d0efa6b942f9ac2264cb92b818c>`;
+
+		// fields
+	
+		static constexpr bool :target:`SupportValueOverload<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_default_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1a9d4834a0f8d4ce7feb718c540c3346ad>`;
+		static constexpr bool :target:`SupportObjectOverload<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_default_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1acaa938ac9b820f56daf3e8ee4601026a>`;
+		static constexpr bool :target:`SupportLambdaOverload<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_default_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1a689577087ebca0f43df54177f36b5147>`;
+	};

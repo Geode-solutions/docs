@@ -47,7 +47,18 @@
     <span class="c1">// methods</span>
 
     <span class="k">virtual</span> <span class="k">const</span> <span class="kt">bool</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a1d41633620b22c51d586000dd3ec572f">value</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1abdda2212f2441f5dc706804c623071d4">value</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a6eaae6ce4811fc868eec9f53896b2864">set_value</span><span></span><span class="p">(</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">,</span>
+        <span class="kt">bool</span> <span class="n">value</span>
+        <span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Modifier</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a74174adf8d248d601fed830bb4329daa">modify_value</span><span></span><span class="p">(</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">,</span>
+        <span class="n">Modifier</span><span class="o">&amp;&amp;</span> <span class="n">modifier</span>
+        <span class="p">);</span>
+
     <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base"><span class="std std-ref">AttributeBase</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a5da2a9ad4b7f25229407019f78d7e907">clone</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 
     <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a9b8af4752840b3338f7268773c01551b">copy</span><span></span><span class="p">(</span>

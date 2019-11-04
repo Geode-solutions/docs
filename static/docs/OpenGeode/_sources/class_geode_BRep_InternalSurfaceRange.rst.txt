@@ -1,0 +1,50 @@
+.. index:: pair: class; geode::BRep::InternalSurfaceRange
+.. _doxid-classgeode_1_1_b_rep_1_1_internal_surface_range:
+
+class geode::BRep::InternalSurfaceRange
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep.h>
+	
+	class InternalSurfaceRange:
+	    public :ref:`geode::Relationships::InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`,
+	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	{
+	public:
+		// construction
+	
+		:target:`InternalSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a46d8f9f49c39e38ac748f7c13afcda6d>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+			const Block3D& block
+			);
+
+		// methods
+	
+		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a58dcf818dc4fc2b2f483002650e8d9f8>` ();
+		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a6ce2983ce402ce522a91525071db06e4>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a4ec071994352d9003b056190a43a3d3b>` (const :ref:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1ad9eef320c41a11ea8882af92030d95ae>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a5561d5ab9cc43df4bd56d0722cc92ed2>` () const;
+		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
+		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
+

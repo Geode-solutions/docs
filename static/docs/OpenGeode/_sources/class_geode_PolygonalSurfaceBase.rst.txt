@@ -32,6 +32,7 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polygon_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a5f833a6e8b90bb24178d2c8727b0271f>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polygon_edge<doxid-classgeode_1_1_polygonal_surface_base_1a76fca1031258a97dddef154a046649c0>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polygon_edge_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a2bbbb4f68538d59eba2bde694c95e748>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :ref:`edge_vertices<doxid-classgeode_1_1_polygonal_surface_base_1a27a7f07718ac42a14802dd0702d7b402>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>` :ref:`next_polygon_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a8631179be95e1b7e39e4f95f85a842bb>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex) const;
 		:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>` :ref:`previous_polygon_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a520513d18f120d0c23d08f078ee7fa55>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex) const;
 		:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` :ref:`next_polygon_edge<doxid-classgeode_1_1_polygonal_surface_base_1abd000df5922011d8909c4fba612cdfe8>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
@@ -42,12 +43,13 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 		std::vector<:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`> :ref:`polygon_edges_on_border<doxid-classgeode_1_1_polygonal_surface_base_1af96280246399470ff3cf7a8d5e05e1e9>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 		:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` :ref:`next_on_border<doxid-classgeode_1_1_polygonal_surface_base_1a1f147efd884fc60ed3e12aa72f87ee66>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
 		:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` :ref:`previous_on_border<doxid-classgeode_1_1_polygonal_surface_base_1a4fded2a29b3e14b488a04efcff6b2e0e>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
-		double :ref:`polygon_edge_length<doxid-classgeode_1_1_polygonal_surface_base_1a0b0472c131a1c7824b0d629e21e76f6b>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`polygon_edge_barycenter<doxid-classgeode_1_1_polygonal_surface_base_1aaecfaf2e355bcb1e99de7bc9b14311e6>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
+		double :ref:`edge_length<doxid-classgeode_1_1_polygonal_surface_base_1ad87dd9cc3e6a56c07f693bd23cde684a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`edge_barycenter<doxid-classgeode_1_1_polygonal_surface_base_1ad9cbf518ab61250651969dab941ba575>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`polygon_barycenter<doxid-classgeode_1_1_polygonal_surface_base_1a789c75d3563b53e61ba21d567b65f420>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 		double :ref:`polygon_area<doxid-classgeode_1_1_polygonal_surface_base_1a2686dc758411ff26788f61734e849236>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 		std::vector<:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`> :ref:`polygons_around_vertex<doxid-classgeode_1_1_polygonal_surface_base_1aeed9bcbd701e635a7619217e6d743eaa>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		std::tuple<bool, :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`> :ref:`polygon_edge_from_vertices<doxid-classgeode_1_1_polygonal_surface_base_1aa69b611c271adb13470d073a8c82a899>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` from_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_from_vertices<doxid-classgeode_1_1_polygonal_surface_base_1ae13fd79fec8dfe17d4970103a3b8e8d8>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_polygonal_surface_base_1a4428489afb30dc89197990419cd03451>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`polygon_attribute_manager<doxid-classgeode_1_1_polygonal_surface_base_1a2116ebad3ee2d9fdefe09fd90d7ffe01>`() const;
 	};
@@ -174,6 +176,28 @@ Return the index in the mesh of a given polygon edge vertex.
 		- vertex_id
 
 		- Local index of vertex in the edge (0 or 1).
+
+.. index:: pair: function; edge_vertices
+.. _doxid-classgeode_1_1_polygonal_surface_base_1a27a7f07718ac42a14802dd0702d7b402:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const
+
+Return the indices of edge vertices.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Index of an edge.
 
 .. index:: pair: function; next_polygon_vertex
 .. _doxid-classgeode_1_1_polygonal_surface_base_1a8631179be95e1b7e39e4f95f85a842bb:
@@ -407,15 +431,15 @@ Return the previous edge on the border (local indexation). The given polygon edg
 
 		- Local index of edge in a polygon.
 
-.. index:: pair: function; polygon_edge_length
-.. _doxid-classgeode_1_1_polygonal_surface_base_1a0b0472c131a1c7824b0d629e21e76f6b:
+.. index:: pair: function; edge_length
+.. _doxid-classgeode_1_1_polygonal_surface_base_1ad87dd9cc3e6a56c07f693bd23cde684a:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	double polygon_edge_length(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const
+	double edge_length(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const
 
-Return the length of a given polygon edge
+Return the length of a given edge.
 
 
 
@@ -425,19 +449,19 @@ Return the length of a given polygon edge
 	:widths: 20 80
 
 	*
-		- polygon_edge
+		- edge_id
 
-		- Local index of edge in a polygon
+		- Index of edge.
 
-.. index:: pair: function; polygon_edge_barycenter
-.. _doxid-classgeode_1_1_polygonal_surface_base_1aaecfaf2e355bcb1e99de7bc9b14311e6:
+.. index:: pair: function; edge_barycenter
+.. _doxid-classgeode_1_1_polygonal_surface_base_1ad9cbf518ab61250651969dab941ba575:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`Point<doxid-classgeode_1_1_point>`<dimension> polygon_edge_barycenter(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const
+	:ref:`Point<doxid-classgeode_1_1_point>`<dimension> edge_barycenter(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const
 
-Return the coordinates of the barycenter of a given polygon edge.
+Return the coordinates of the barycenter of a given edge.
 
 
 
@@ -447,9 +471,9 @@ Return the coordinates of the barycenter of a given polygon edge.
 	:widths: 20 80
 
 	*
-		- polygon_edge
+		- edge_id
 
-		- Local index of edge in a polygon.
+		- Index of edge polygon.
 
 .. index:: pair: function; polygon_barycenter
 .. _doxid-classgeode_1_1_polygonal_surface_base_1a789c75d3563b53e61ba21d567b65f420:
@@ -549,6 +573,28 @@ Find the polygon edge corresponding to an ordered pair of vertex indices.
 .. rubric:: Returns:
 
 1) true if such an edge exists, 2) Local index of the found edge.
+
+.. index:: pair: function; edge_from_vertices
+.. _doxid-classgeode_1_1_polygonal_surface_base_1ae13fd79fec8dfe17d4970103a3b8e8d8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_from_vertices(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const
+
+Get the index of edge corresponding to given vertices
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertices
+
+		- Ordered vertex indices
 
 .. index:: pair: function; edge_attribute_manager
 .. _doxid-classgeode_1_1_polygonal_surface_base_1a4428489afb30dc89197990419cd03451:

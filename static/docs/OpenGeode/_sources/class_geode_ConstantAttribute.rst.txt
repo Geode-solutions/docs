@@ -23,7 +23,11 @@ Read and write interface for constant attribute storage
 	
 		virtual const T& :target:`value<doxid-classgeode_1_1_constant_attribute_1ae456f281d3db9616c6fd7dc00fc4d8fd>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`) const;
 		const T& :target:`value<doxid-classgeode_1_1_constant_attribute_1ace3aca22736ec60f761fa0a66d1b61e9>`() const;
-		T& :target:`value<doxid-classgeode_1_1_constant_attribute_1a19eb02fe3df749c8f1459e119c288a1a>`();
+		void :target:`set_value<doxid-classgeode_1_1_constant_attribute_1a364246a7490ba9443cf870129fd29756>`(T value);
+	
+		template <typename Modifier>
+		void :target:`modify_value<doxid-classgeode_1_1_constant_attribute_1a1104ffe966fece96387ae6da83827f95>`(Modifier&& modifier);
+	
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :target:`clone<doxid-classgeode_1_1_constant_attribute_1a19fd281f9d7a9119299ffa854c3c8023>`() const;
 	
 		virtual void :target:`copy<doxid-classgeode_1_1_constant_attribute_1acb33bc8b78e710386d8a44ca1aa71c27>`(

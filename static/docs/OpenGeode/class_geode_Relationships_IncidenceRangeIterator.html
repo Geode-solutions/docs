@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>class geode::Relationships::IncidenceRangeIterator &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::Relationships::InternalRange" href="class_geode_Relationships_InternalRange.html" />
+    <link rel="prev" title="class geode::Relationships::IncidenceRange" href="class_geode_Relationships_IncidenceRange.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-relationships-incidencerangeiterator">
+<span id="doxid-classgeode-1-1-relationships-1-1-incidence-range-iterator"></span><span id="index-0"></span><h1>class geode::Relationships::IncidenceRangeIterator</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p><a class="reference internal" href="class_geode_Range.html#doxid-classgeode-1-1-range"><span class="std std-ref">Range</span></a> to iterates on all incidences of one component</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;relationships.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">IncidenceRangeIterator</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-incidence-range-iterator-1a26da806205f8c941688b17774555988c">IncidenceRangeIterator</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Relationships.html#doxid-classgeode-1-1-relationships"><span class="std std-ref">Relationships</span></a><span></span><span class="o">&amp;</span> <span class="n">relationships</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span>
+        <span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-incidence-range-iterator-1a1b016ac57910c7f99b93b8e75d275a9e">IncidenceRangeIterator</span><span></span><span class="p">(</span><span class="n">IncidenceRangeIterator</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-incidence-range-iterator-1ad58b83d730bacd51cb246d1ced7f8c8a">IncidenceRangeIterator</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">IncidenceRangeIterator</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-incidence-range-iterator-1a4da2dbbdc4196686cb51616a83e04337">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">IncidenceRangeIterator</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-incidence-range-iterator-1ab3c89a8b3d09212de5b89707473435ab">operator ++</span><span></span> <span class="p">();</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-incidence-range-iterator-1a195e53879f3b211dd104d4a8c1f26b2f">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRep_IncidentBlockRange.html#doxid-classgeode-1-1-b-rep-1-1-incident-block-range"><span class="std std-ref">IncidentBlockRange</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRep_IncidentLineRange.html#doxid-classgeode-1-1-b-rep-1-1-incident-line-range"><span class="std std-ref">IncidentLineRange</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRep_IncidentSurfaceRange.html#doxid-classgeode-1-1-b-rep-1-1-incident-surface-range"><span class="std std-ref">IncidentSurfaceRange</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_IncidenceRange.html#doxid-classgeode-1-1-relationships-1-1-incidence-range"><span class="std std-ref">IncidenceRange</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Section_IncidentLineRange.html#doxid-classgeode-1-1-section-1-1-incident-line-range"><span class="std std-ref">IncidentLineRange</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Section_IncidentSurfaceRange.html#doxid-classgeode-1-1-section-1-1-incident-surface-range"><span class="std std-ref">IncidentSurfaceRange</span></a><span></span><span class="p">;</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_Relationships_IncidenceRangeIterator.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

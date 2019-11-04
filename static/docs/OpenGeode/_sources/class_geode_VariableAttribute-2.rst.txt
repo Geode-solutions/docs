@@ -22,7 +22,18 @@ Read and write interface for boolean variable attribute storage. This class remo
 		// methods
 	
 		virtual const bool& :target:`value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a1d41633620b22c51d586000dd3ec572f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
-		bool& :target:`value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1abdda2212f2441f5dc706804c623071d4>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element);
+	
+		void :target:`set_value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a6eaae6ce4811fc868eec9f53896b2864>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element,
+			bool value
+			);
+	
+		template <typename Modifier>
+		void :target:`modify_value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a74174adf8d248d601fed830bb4329daa>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element,
+			Modifier&& modifier
+			);
+	
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :target:`clone<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a5da2a9ad4b7f25229407019f78d7e907>`() const;
 	
 		virtual void :target:`copy<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a9b8af4752840b3338f7268773c01551b>`(

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>template class geode::Growable &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::IOFile" href="class_geode_IOFile.html" />
+    <link rel="prev" title="class geode::GraphOutput" href="class_geode_GraphOutput.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="template-class-geode-growable">
+<span id="doxid-classgeode-1-1-growable"></span><span id="index-0"></span><h1>template class geode::Growable</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;bitsery_archive.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Archive</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">Growable</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-growable-1a33716ba57a1f1c05397952d02a9f2354">Growable</span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="n">Archive</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">T</span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;&gt;</span> <span class="n">serializers</span><span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-growable-1a24d0cbc4c0a8a3307ab40fd164c719f1">Growable</span><span></span><span class="p">(</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="n">Archive</span><span class="o">&amp;</span><span class="p">,</span> <span class="n">T</span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;&gt;</span> <span class="n">serializers</span><span class="p">,</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="n">T</span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;&gt;</span> <span class="n">initializers</span>
+        <span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Fnc</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-growable-1a030fd2349488178eda47d928600006bd">serialize</span><span></span><span class="p">(</span>
+        <span class="n">Archive</span><span class="o">&amp;</span> <span class="n">ser</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">obj</span><span class="p">,</span>
+        <span class="n">Fnc</span><span class="o">&amp;&amp;</span> <span class="n">fnc</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Fnc</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-growable-1afe074d5e033742d9bc9be491e9831b32">deserialize</span><span></span><span class="p">(</span>
+        <span class="n">Archive</span><span class="o">&amp;</span> <span class="n">des</span><span class="p">,</span>
+        <span class="n">T</span><span class="o">&amp;</span> <span class="n">obj</span><span class="p">,</span>
+        <span class="n">Fnc</span><span class="o">&amp;&amp;</span> <span class="n">fnc</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_Growable.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

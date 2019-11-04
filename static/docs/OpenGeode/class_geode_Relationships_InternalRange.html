@@ -16,8 +16,8 @@
     <script type="text/javascript" src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::Relationships::ItemRange" href="class_geode_Relationships_ItemRange.html" />
-    <link rel="prev" title="class geode::Relationships::IncidenceRange" href="class_geode_Relationships_IncidenceRange.html" />
+    <link rel="next" title="class geode::Relationships::InternalRangeIterator" href="class_geode_Relationships_InternalRangeIterator.html" />
+    <link rel="prev" title="class geode::Relationships::IncidenceRangeIterator" href="class_geode_Relationships_IncidenceRangeIterator.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -37,10 +37,11 @@
 <span id="doxid-classgeode-1-1-relationships-1-1-internal-range"></span><span id="index-0"></span><h1>class geode::Relationships::InternalRange</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p><a class="reference internal" href="class_geode_Range.html#doxid-classgeode-1-1-range"><span class="std std-ref">Range</span></a> to iterates on all internal components of one component</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;relationships.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="n">InternalRange</span>
+<span class="k">class</span> <span class="nl">InternalRange</span><span class="p">:</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_Relationships_InternalRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-internal-range-iterator"><span class="std std-ref">geode::Relationships::InternalRangeIterator</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end"><span class="std std-ref">geode::BeginEnd</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
@@ -49,24 +50,18 @@
         <span class="k">const</span> <a class="reference internal" href="class_geode_Relationships.html#doxid-classgeode-1-1-relationships"><span class="std std-ref">Relationships</span></a><span></span><span class="o">&amp;</span> <span class="n">relationships</span><span class="p">,</span>
         <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span>
         <span class="p">);</span>
-
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-internal-range-1afb1ce1f6fcc85ad30e1660511cf96d0c">InternalRange</span><span></span><span class="p">(</span><span class="n">InternalRange</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-internal-range-1a121944590bcdca8b9d9d9669c1d91987">InternalRange</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">InternalRange</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">);</span>
-
+<span class="p">};</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">InternalRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-internal-range-1a2669a8d3dd4e6f1880473a8175eea510">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <span class="n">InternalRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-internal-range-1a11d9f471d86178aaa3c0e2910da759c5">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-internal-range-1a064e5667c0caa828866ac71365337806">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">InternalRange</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-internal-range-1aab35f95d79abb66cd468b34631d03ac6">operator ++</span><span></span> <span class="p">();</span>
-    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-internal-range-1a17f2d5925dbfc3b3c916b0c7e0501bbc">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="c1">// direct descendants</span>
-
-<span class="k">class</span> <a class="reference internal" href="class_geode_BRep_BlockInternalRange.html#doxid-classgeode-1-1-b-rep-1-1-block-internal-range"><span class="std std-ref">BlockInternalRange</span></a><span></span><span class="p">;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_BRep_SurfaceInternalRange.html#doxid-classgeode-1-1-b-rep-1-1-surface-internal-range"><span class="std std-ref">SurfaceInternalRange</span></a><span></span><span class="p">;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_Section_SurfaceInternalRange.html#doxid-classgeode-1-1-section-1-1-surface-internal-range"><span class="std std-ref">SurfaceInternalRange</span></a><span></span><span class="p">;</span></pre>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_Relationships_InternalRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-internal-range-iterator-1a4ec071994352d9003b056190a43a3d3b"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Relationships_InternalRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-internal-range-iterator"><span class="std std-ref">InternalRangeIterator</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Relationships_InternalRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-internal-range-iterator-1ad9eef320c41a11ea8882af92030d95ae"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Relationships_InternalRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-internal-range-iterator-1a5561d5ab9cc43df4bd56d0722cc92ed2"><span class="std std-ref">operator *</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Type</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end-1a75c49da0041050a3fef241e05eacbeba"><span class="std std-ref">begin</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Type</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end-1a2a998c5a4b898428a69aa420df0d63a9"><span class="std std-ref">end</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+</div>
 </div>
 
 

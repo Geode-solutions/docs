@@ -1,0 +1,55 @@
+.. index:: pair: class; geode::Section::EmbeddedSurfaceRange
+.. _doxid-classgeode_1_1_section_1_1_embedded_surface_range:
+
+class geode::Section::EmbeddedSurfaceRange
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section.h>
+	
+	class EmbeddedSurfaceRange:
+	    public :ref:`geode::Relationships::EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`,
+	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	{
+	public:
+		// construction
+	
+		:target:`EmbeddedSurfaceRange<doxid-classgeode_1_1_section_1_1_embedded_surface_range_1a22db08f3df8be8831cf305fb0dd14a80>`(
+			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+			const Line2D& line
+			);
+	
+		:target:`EmbeddedSurfaceRange<doxid-classgeode_1_1_section_1_1_embedded_surface_range_1a7a062a3ca4ac270071755bda1fc6a931>`(
+			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+			const Corner2D& corner
+			);
+
+		// methods
+	
+		void :target:`operator ++<doxid-classgeode_1_1_section_1_1_embedded_surface_range_1ad8ced1ab99367faf9867ae1a6a6f1a27>` ();
+		const Surface2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_embedded_surface_range_1adbc26fba983140eb80f7013a0e18587e>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1aa065cd1dfaffb9262c4f17dc36edc1aa>` (const :ref:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1aacf0b2e07b3aeca1a5c309d4451f9993>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1a79b742b5617680cb6d31ec15e6aba5b8>` () const;
+		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
+		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
+

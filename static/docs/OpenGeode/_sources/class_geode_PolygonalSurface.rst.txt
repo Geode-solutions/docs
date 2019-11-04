@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::PolygonalSurface
-.. _doxid-classgeode_1_1_polygonal_surface:
+.. index:: pair: class; geode::PolygonalSurface<3>
+.. _doxid-classgeode_1_1_polygonal_surface_3_013_01_4:
 
-template class geode::PolygonalSurface
-======================================
+template class geode::PolygonalSurface<3>
+=========================================
 
 .. toctree::
 	:hidden:
@@ -10,7 +10,7 @@ template class geode::PolygonalSurface
 Overview
 ~~~~~~~~
 
-Interface class for :ref:`Surface <doxid-classgeode_1_1_surface>` made up with polygons (triangles, quads, ...) of arbitrary dimension. :ref:`More...<details-classgeode_1_1_polygonal_surface>`
+Interface class for 3D :ref:`Surface <doxid-classgeode_1_1_surface>` made up with polygons. :ref:`More...<details-classgeode_1_1_polygonal_surface_3_013_01_4>`
 
 
 .. ref-code-block:: cpp
@@ -18,24 +18,18 @@ Interface class for :ref:`Surface <doxid-classgeode_1_1_surface>` made up with p
 
 	#include <polygonal_surface.h>
 	
-	template <index_t dimension>
-	class PolygonalSurface: public :ref:`geode::PolygonalSurfaceBase<doxid-classgeode_1_1_polygonal_surface_base>`
+	template <>
+	class PolygonalSurface<3>: public :ref:`geode::PolygonalSurfaceBase<doxid-classgeode_1_1_polygonal_surface_base>`
 	{
 	public:
 		// methods
 	
-		static std::unique_ptr<PolygonalSurface<dimension>> :ref:`create<doxid-classgeode_1_1_polygonal_surface_1a38e184ebddc3bc876adb573408654963>`();
-		static std::unique_ptr<PolygonalSurface<dimension>> :ref:`create<doxid-classgeode_1_1_polygonal_surface_1acf8bd20d36841076bb00ab5f2a5c5cb7>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
-		std::unique_ptr<PolygonalSurface<dimension>> :target:`clone<doxid-classgeode_1_1_polygonal_surface_1ab028f868da37f7ae2e1ade25a10fdabf>`() const;
+		static std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<3>> :target:`create<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1ae8729a1c765868f99b0fead96944723d>`();
+		static std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<3>> :target:`create<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a590a25a86695121d9296ef05a37b17de>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<3>> :target:`clone<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a7d9366cc03b91112bd8444562bcb835e>`() const;
+		Vector3D :ref:`polygon_normal<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1ac70dd1833962470bb3bb6a894e979719>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		Vector3D :ref:`polygon_vertex_normal<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a4b924f444a2510bbca7ff3e4c8a317fb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	};
-
-	// direct descendants
-
-	template <index_t dimension>
-	class :ref:`OpenGeodePolygonalSurface<doxid-classgeode_1_1_open_geode_polygonal_surface>`;
-
-	template <index_t dimension>
-	class :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`;
 
 Inherited Members
 -----------------
@@ -61,6 +55,7 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polygon_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a5f833a6e8b90bb24178d2c8727b0271f>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polygon_edge<doxid-classgeode_1_1_polygonal_surface_base_1a76fca1031258a97dddef154a046649c0>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polygon_edge_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a2bbbb4f68538d59eba2bde694c95e748>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :ref:`edge_vertices<doxid-classgeode_1_1_polygonal_surface_base_1a27a7f07718ac42a14802dd0702d7b402>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>` :ref:`next_polygon_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a8631179be95e1b7e39e4f95f85a842bb>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex) const;
 		:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>` :ref:`previous_polygon_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a520513d18f120d0c23d08f078ee7fa55>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex) const;
 		:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` :ref:`next_polygon_edge<doxid-classgeode_1_1_polygonal_surface_base_1abd000df5922011d8909c4fba612cdfe8>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
@@ -71,54 +66,43 @@ Inherited Members
 		std::vector<:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`> :ref:`polygon_edges_on_border<doxid-classgeode_1_1_polygonal_surface_base_1af96280246399470ff3cf7a8d5e05e1e9>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 		:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` :ref:`next_on_border<doxid-classgeode_1_1_polygonal_surface_base_1a1f147efd884fc60ed3e12aa72f87ee66>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
 		:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` :ref:`previous_on_border<doxid-classgeode_1_1_polygonal_surface_base_1a4fded2a29b3e14b488a04efcff6b2e0e>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
-		double :ref:`polygon_edge_length<doxid-classgeode_1_1_polygonal_surface_base_1a0b0472c131a1c7824b0d629e21e76f6b>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`polygon_edge_barycenter<doxid-classgeode_1_1_polygonal_surface_base_1aaecfaf2e355bcb1e99de7bc9b14311e6>`(const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
+		double :ref:`edge_length<doxid-classgeode_1_1_polygonal_surface_base_1ad87dd9cc3e6a56c07f693bd23cde684a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`edge_barycenter<doxid-classgeode_1_1_polygonal_surface_base_1ad9cbf518ab61250651969dab941ba575>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`polygon_barycenter<doxid-classgeode_1_1_polygonal_surface_base_1a789c75d3563b53e61ba21d567b65f420>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 		double :ref:`polygon_area<doxid-classgeode_1_1_polygonal_surface_base_1a2686dc758411ff26788f61734e849236>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 		std::vector<:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`> :ref:`polygons_around_vertex<doxid-classgeode_1_1_polygonal_surface_base_1aeed9bcbd701e635a7619217e6d743eaa>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		std::tuple<bool, :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`> :ref:`polygon_edge_from_vertices<doxid-classgeode_1_1_polygonal_surface_base_1aa69b611c271adb13470d073a8c82a899>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` from_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_from_vertices<doxid-classgeode_1_1_polygonal_surface_base_1ae13fd79fec8dfe17d4970103a3b8e8d8>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_polygonal_surface_base_1a4428489afb30dc89197990419cd03451>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`polygon_attribute_manager<doxid-classgeode_1_1_polygonal_surface_base_1a2116ebad3ee2d9fdefe09fd90d7ffe01>`() const;
 
-.. _details-classgeode_1_1_polygonal_surface:
+.. _details-classgeode_1_1_polygonal_surface_3_013_01_4:
 
 Detailed Documentation
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Interface class for :ref:`Surface <doxid-classgeode_1_1_surface>` made up with polygons (triangles, quads, ...) of arbitrary dimension.
+Interface class for 3D :ref:`Surface <doxid-classgeode_1_1_surface>` made up with polygons.
 
 Methods
 -------
 
-.. index:: pair: function; create
-.. _doxid-classgeode_1_1_polygonal_surface_1a38e184ebddc3bc876adb573408654963:
+.. index:: pair: function; polygon_normal
+.. _doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1ac70dd1833962470bb3bb6a894e979719:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static std::unique_ptr<PolygonalSurface<dimension>> create()
+	Vector3D polygon_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const
 
-Create a new :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>` using default data structure.
+Return the normal of a polygon
 
-.. index:: pair: function; create
-.. _doxid-classgeode_1_1_polygonal_surface_1acf8bd20d36841076bb00ab5f2a5c5cb7:
+.. index:: pair: function; polygon_vertex_normal
+.. _doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a4b924f444a2510bbca7ff3e4c8a317fb:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static std::unique_ptr<PolygonalSurface<dimension>> create(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type)
+	Vector3D polygon_vertex_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
 
-Create a new :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>` using a specified data structure.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- type
-
-		- Data structure type
+Return the normal at a polygon vertex
 

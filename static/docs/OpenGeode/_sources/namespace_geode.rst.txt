@@ -27,6 +27,7 @@ namespace geode
 	class_geode_BRepInput.rst
 	class_geode_BRepOutput.rst
 	class_geode_BaseRange.rst
+	class_geode_BeginEnd.rst
 	class_geode_Block.rst
 	class_geode_Blocks.rst
 	class_geode_BlocksBuilder.rst
@@ -37,6 +38,7 @@ namespace geode
 	class_geode_Corner.rst
 	class_geode_Corners.rst
 	class_geode_CornersBuilder.rst
+	class_geode_DefaultGrowable.rst
 	class_geode_EdgedCurve.rst
 	class_geode_EdgedCurveBuilder.rst
 	class_geode_EdgedCurveInput.rst
@@ -46,6 +48,7 @@ namespace geode
 	class_geode_GraphBuilder.rst
 	class_geode_GraphInput.rst
 	class_geode_GraphOutput.rst
+	class_geode_Growable.rst
 	class_geode_IOFile.rst
 	class_geode_Input.rst
 	class_geode_Line.rst
@@ -224,6 +227,9 @@ Overview
 	template <typename Type>
 	class :ref:`BaseRange<doxid-classgeode_1_1_base_range>`;
 
+	template <typename Type>
+	class :ref:`BeginEnd<doxid-classgeode_1_1_begin_end>`;
+
 	template <index_t dimension>
 	class :ref:`Block<doxid-classgeode_1_1_block>`;
 
@@ -253,6 +259,9 @@ Overview
 	template <index_t dimension>
 	class :ref:`CornersBuilder<doxid-classgeode_1_1_corners_builder>`;
 
+	template <typename Archive, typename T>
+	class :ref:`DefaultGrowable<doxid-classgeode_1_1_default_growable>`;
+
 	template <index_t dimension>
 	class :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`;
 
@@ -272,6 +281,10 @@ Overview
 	class :ref:`GraphBuilder<doxid-classgeode_1_1_graph_builder>`;
 	class :ref:`GraphInput<doxid-classgeode_1_1_graph_input>`;
 	class :ref:`GraphOutput<doxid-classgeode_1_1_graph_output>`;
+
+	template <typename Archive, typename T>
+	class :ref:`Growable<doxid-classgeode_1_1_growable>`;
+
 	class :ref:`IOFile<doxid-classgeode_1_1_i_o_file>`;
 	class :ref:`Input<doxid-classgeode_1_1_input>`;
 
@@ -369,11 +382,11 @@ Overview
 	template <index_t dimension>
 	class :ref:`PointSetOutput<doxid-classgeode_1_1_point_set_output>`;
 
-	template <index_t dimension>
-	class :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`;
-
 	template <>
 	class :ref:`PolygonalSurface<3><doxid-classgeode_1_1_polygonal_surface_3_013_01_4>`;
+
+	template <index_t dimension>
+	class :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`;
 
 	template <index_t dimension>
 	class :ref:`PolygonalSurfaceBase<doxid-classgeode_1_1_polygonal_surface_base>`;
@@ -514,6 +527,8 @@ Overview
 	int opengeode_basic_api :ref:`geode_lippincott<doxid-namespacegeode_1a0d6f934054bb20a7b43ff330dca7d363>`();
 	void opengeode_basic_api :ref:`register_basic_serialize_pcontext<doxid-namespacegeode_1abf3517d752f9c05bbb40e02825f61243>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_basic_api :ref:`register_basic_deserialize_pcontext<doxid-namespacegeode_1a4971b040e31d95abe4053f71d315b4d7>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
+	void opengeode_geometry_api :ref:`register_geometry_serialize_pcontext<doxid-namespacegeode_1a3a8183171407a05faea9c1edfcc12d6f>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
+	void opengeode_geometry_api :ref:`register_geometry_deserialize_pcontext<doxid-namespacegeode_1a21eee3ab8ab2f094ad300c9755cd6a94>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9ef1e2fd6ef5020023fd9aac662f20c3>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae9a3218d8a8d01e07d5fe03060e8b7e5>`(:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`);
@@ -811,6 +826,50 @@ Register all the information needed by Bitsery to serialize the objects in the b
 	void opengeode_basic_api register_basic_deserialize_pcontext(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context)
 
 Register all the information needed by Bitsery to deserialize the objects in the basic library. The context can be used only once per archive.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- context
+
+		- The context where to register this information.
+
+.. index:: pair: function; register_geometry_serialize_pcontext
+.. _doxid-namespacegeode_1a3a8183171407a05faea9c1edfcc12d6f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geometry_api register_geometry_serialize_pcontext(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context)
+
+Register all the information needed by Bitsery to serialize the objects in the geometry library. The context can be used only once per archive.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- context
+
+		- The context where to register this information.
+
+.. index:: pair: function; register_geometry_deserialize_pcontext
+.. _doxid-namespacegeode_1a21eee3ab8ab2f094ad300c9755cd6a94:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geometry_api register_geometry_deserialize_pcontext(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context)
+
+Register all the information needed by Bitsery to deserialize the objects in the geometry library. The context can be used only once per archive.
 
 
 

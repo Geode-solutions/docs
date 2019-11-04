@@ -1,0 +1,25 @@
+.. index:: pair: namespace; bitsery
+.. _doxid-namespacebitsery:
+
+namespace bitsery
+=================
+
+.. toctree::
+	:hidden:
+
+	namespace_bitsery_traits.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace bitsery {
+
+	// namespaces
+
+	namespace :ref:`bitsery::traits<doxid-namespacebitsery_1_1traits>`;
+
+	} // namespace bitsery

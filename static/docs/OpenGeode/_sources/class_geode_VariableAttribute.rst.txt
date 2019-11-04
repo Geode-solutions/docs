@@ -22,7 +22,18 @@ Read and write interface for variable attribute storage
 		// methods
 	
 		virtual const T& :target:`value<doxid-classgeode_1_1_variable_attribute_1a12aee94b6cc66ff639ef3653d0a8ed44>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
-		T& :target:`value<doxid-classgeode_1_1_variable_attribute_1a7047dce35b5d123c03e116543c339bbd>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element);
+	
+		void :target:`set_value<doxid-classgeode_1_1_variable_attribute_1af29b490896fca074786cb87791df9c88>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element,
+			T value
+			);
+	
+		template <typename Modifier>
+		void :target:`modify_value<doxid-classgeode_1_1_variable_attribute_1aed775cb0e1ebd634020bd17f9d20fc4e>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element,
+			Modifier&& modifier
+			);
+	
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :target:`clone<doxid-classgeode_1_1_variable_attribute_1abf3dc8a7ff6d706d82efef7d2506b241>`() const;
 	
 		virtual void :target:`copy<doxid-classgeode_1_1_variable_attribute_1af8f43a9434a320fa45c053d9d6b83b96>`(

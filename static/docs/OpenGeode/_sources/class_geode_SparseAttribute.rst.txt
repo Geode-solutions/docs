@@ -22,6 +22,18 @@ Read and write interface for sparse attribute storage. Only store what you use!
 		// methods
 	
 		virtual const T& :target:`value<doxid-classgeode_1_1_sparse_attribute_1a413a8b15dbd1249fff7d3058d7c426d6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
+	
+		void :target:`set_value<doxid-classgeode_1_1_sparse_attribute_1a6be7186f23a1b27829e161bd06a88900>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element,
+			T value
+			);
+	
+		template <typename Modifier>
+		void :target:`modify_value<doxid-classgeode_1_1_sparse_attribute_1a4216711e25743eb1816e7cfb67e4d553>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element,
+			Modifier&& modifier
+			);
+	
 		T& :target:`value<doxid-classgeode_1_1_sparse_attribute_1a9fdff5eb9497cd7fefa197f38726df66>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element);
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :target:`clone<doxid-classgeode_1_1_sparse_attribute_1a7a46b3802991a2febc2470a14234a073>`() const;
 	

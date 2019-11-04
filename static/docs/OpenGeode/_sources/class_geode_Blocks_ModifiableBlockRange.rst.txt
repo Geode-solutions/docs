@@ -14,7 +14,9 @@ class geode::Blocks::ModifiableBlockRange
 	:class: doxyrest-overview-code-block
 
 	
-	class ModifiableBlockRange: public :ref:`geode::Blocks::BlockRangeBase<doxid-classgeode_1_1_blocks_1_1_block_range_base>`
+	class ModifiableBlockRange:
+	    public :ref:`geode::Blocks::BlockRangeBase<doxid-classgeode_1_1_blocks_1_1_block_range_base>`,
+	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
 	{
 	public:
 		// construction
@@ -23,8 +25,6 @@ class geode::Blocks::ModifiableBlockRange
 
 		// methods
 	
-		const ModifiableBlockRange& :target:`begin<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1a27500d71ba74b050178190714e9192c3>`() const;
-		const ModifiableBlockRange& :target:`end<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1a550b22fad4ec8e4b986320cd9ca0f9d9>`() const;
 		:ref:`Block<doxid-classgeode_1_1_block>`<dimension>& :target:`operator *<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1aabd698a8f520dea8a9d8477cefc91a80>` () const;
 	};
 
@@ -39,4 +39,6 @@ Inherited Members
 	
 		bool :ref:`operator !=<doxid-classgeode_1_1_blocks_1_1_block_range_base_1af88340cfc6894af77dba26e9631435df>` (const :ref:`BlockRangeBase<doxid-classgeode_1_1_blocks_1_1_block_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_blocks_1_1_block_range_base_1a338c1a4a2671ab68c4ab3d8ed05ca213>` ();
+		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
+		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
 

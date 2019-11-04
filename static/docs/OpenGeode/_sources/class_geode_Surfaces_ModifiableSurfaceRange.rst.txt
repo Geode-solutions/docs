@@ -14,7 +14,9 @@ class geode::Surfaces::ModifiableSurfaceRange
 	:class: doxyrest-overview-code-block
 
 	
-	class ModifiableSurfaceRange: public :ref:`geode::Surfaces::SurfaceRangeBase<doxid-classgeode_1_1_surfaces_1_1_surface_range_base>`
+	class ModifiableSurfaceRange:
+	    public :ref:`geode::Surfaces::SurfaceRangeBase<doxid-classgeode_1_1_surfaces_1_1_surface_range_base>`,
+	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
 	{
 	public:
 		// construction
@@ -23,8 +25,6 @@ class geode::Surfaces::ModifiableSurfaceRange
 
 		// methods
 	
-		const ModifiableSurfaceRange& :target:`begin<doxid-classgeode_1_1_surfaces_1_1_modifiable_surface_range_1aa1ff96537e1904c9256021cfbb4541a9>`() const;
-		const ModifiableSurfaceRange& :target:`end<doxid-classgeode_1_1_surfaces_1_1_modifiable_surface_range_1a70c53638e0ed41851e77c57c33b5598a>`() const;
 		:ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& :target:`operator *<doxid-classgeode_1_1_surfaces_1_1_modifiable_surface_range_1af529e9fe4f632f1b6b4e1253ea3c8903>` () const;
 	};
 
@@ -39,4 +39,6 @@ Inherited Members
 	
 		bool :ref:`operator !=<doxid-classgeode_1_1_surfaces_1_1_surface_range_base_1adcb53ed2aba5db68cabd7264bc51f9cf>` (const :ref:`SurfaceRangeBase<doxid-classgeode_1_1_surfaces_1_1_surface_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_surfaces_1_1_surface_range_base_1a728fd7f926790af2c8b6ec9bc3cf37d0>` ();
+		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
+		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
 

@@ -35,7 +35,7 @@ Inherited Members
 	public:
 		// methods
 	
-		void :ref:`register_component<doxid-classgeode_1_1_relationships_builder_1a875c4be67f9214ad261de4ad943adc15>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		void :ref:`register_component<doxid-classgeode_1_1_relationships_builder_1ac161cd45bffb92b0e3340ac80cfe9e1d>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id);
 		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_builder_1aee190cedcd627f2e9bdc5e3815afcdfd>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a6c661d5abfdf4600024e03a1535b43d9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);
 		void :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_builder_1a785391408cff3d0af65ad246dd4acdf9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding);

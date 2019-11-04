@@ -1,0 +1,55 @@
+.. index:: pair: class; geode::BRep::EmbeddedSurfaceRange
+.. _doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range:
+
+class geode::BRep::EmbeddedSurfaceRange
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep.h>
+	
+	class EmbeddedSurfaceRange:
+	    public :ref:`geode::Relationships::EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`,
+	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	{
+	public:
+		// construction
+	
+		:target:`EmbeddedSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range_1a942be5e95a838dbd458b535b45fcdbda>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+			const Corner3D& corner
+			);
+	
+		:target:`EmbeddedSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range_1a966958445b9a30abbd967c57bb95a7ca>`(
+			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+			const Line3D& line
+			);
+
+		// methods
+	
+		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range_1a5761d2c153d259ea230e06f4fa847fd0>` ();
+		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range_1ad801163f8881173d0b0fda947bf8ca50>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1aa065cd1dfaffb9262c4f17dc36edc1aa>` (const :ref:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1aacf0b2e07b3aeca1a5c309d4451f9993>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1a79b742b5617680cb6d31ec15e6aba5b8>` () const;
+		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
+		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
+

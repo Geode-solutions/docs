@@ -20,6 +20,8 @@ Identify a component by its type and a unique index
 	public:
 		// construction
 	
+		:target:`ComponentID<doxid-classgeode_1_1_component_i_d_1a366ca89603981d8bb61d8dde1d17351b>`();
+	
 		:target:`ComponentID<doxid-classgeode_1_1_component_i_d_1ad351ab9dde19ce3a150b8c7ee2bd1909>`(
 			:ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` component_type,
 			:ref:`uuid<doxid-structgeode_1_1uuid>` id

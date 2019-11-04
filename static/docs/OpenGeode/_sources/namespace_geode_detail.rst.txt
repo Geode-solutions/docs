@@ -7,6 +7,7 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
+	struct_geode_detail_SetValue.rst
 	class_geode_detail_ComponentsStorage.rst
 	class_geode_detail_EdgesImpl.rst
 	class_geode_detail_FacetStorage.rst
@@ -28,12 +29,18 @@ namespace geode::detail
 
 	typedef std::unordered_map<:ref:`uuid<doxid-structgeode_1_1uuid>`, :ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>`;
 
+	// structs
+
+	struct :ref:`SetValue<doxid-structgeode_1_1detail_1_1_set_value>`;
+
 	// classes
 
 	template <typename Component>
 	class :ref:`ComponentsStorage<doxid-classgeode_1_1detail_1_1_components_storage>`;
 
 	class :ref:`EdgesImpl<doxid-classgeode_1_1detail_1_1_edges_impl>`;
+
+	template <typename VertexContainer>
 	class :ref:`FacetStorage<doxid-classgeode_1_1detail_1_1_facet_storage>`;
 
 	template <typename Mesh>
@@ -91,12 +98,39 @@ namespace geode::detail
 		);
 
 	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
+	void :target:`copy_corner_surface_relationships<doxid-namespacegeode_1_1detail_1acea1f0550a05ea3117bdaa8f164b8f91>`(
+		const ModelFrom& from,
+		const ModelTo& to,
+		BuilderTo& builder_to,
+		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>`& corners,
+		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>`& surfaces
+		);
+
+	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
 	void :target:`copy_line_surface_relationships<doxid-namespacegeode_1_1detail_1a7b082327bf7780bf989af299bfc293b5>`(
 		const ModelFrom& from,
 		const ModelTo& to,
 		BuilderTo& builder_to,
 		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>`& lines,
 		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>`& surfaces
+		);
+
+	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
+	void :target:`copy_corner_block_relationships<doxid-namespacegeode_1_1detail_1a083c140b86992afa8ab6cada0824ba6c>`(
+		const ModelFrom& from,
+		const ModelTo& to,
+		BuilderTo& builder_to,
+		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>`& corners,
+		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>`& blocks
+		);
+
+	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
+	void :target:`copy_line_block_relationships<doxid-namespacegeode_1_1detail_1a855a59c38ceebd98cfbb02076900dc0c>`(
+		const ModelFrom& from,
+		const ModelTo& to,
+		BuilderTo& builder_to,
+		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>`& lines,
+		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>`& blocks
 		);
 
 	template <typename ModelFrom, typename ModelTo, typename BuilderTo>

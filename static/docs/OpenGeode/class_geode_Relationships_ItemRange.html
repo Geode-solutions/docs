@@ -16,8 +16,8 @@
     <script type="text/javascript" src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::RelationshipsBuilder" href="class_geode_RelationshipsBuilder.html" />
-    <link rel="prev" title="class geode::Relationships::InternalRange" href="class_geode_Relationships_InternalRange.html" />
+    <link rel="next" title="class geode::Relationships::ItemRangeIterator" href="class_geode_Relationships_ItemRangeIterator.html" />
+    <link rel="prev" title="class geode::Relationships::InternalRangeIterator" href="class_geode_Relationships_InternalRangeIterator.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -37,10 +37,11 @@
 <span id="doxid-classgeode-1-1-relationships-1-1-item-range"></span><span id="index-0"></span><h1>class geode::Relationships::ItemRange</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p><a class="reference internal" href="class_geode_Range.html#doxid-classgeode-1-1-range"><span class="std std-ref">Range</span></a> to iterates on all items of one component</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;relationships.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="n">ItemRange</span>
+<span class="k">class</span> <span class="nl">ItemRange</span><span class="p">:</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_Relationships_ItemRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-item-range-iterator"><span class="std std-ref">geode::Relationships::ItemRangeIterator</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end"><span class="std std-ref">geode::BeginEnd</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
@@ -49,23 +50,18 @@
         <span class="k">const</span> <a class="reference internal" href="class_geode_Relationships.html#doxid-classgeode-1-1-relationships"><span class="std std-ref">Relationships</span></a><span></span><span class="o">&amp;</span> <span class="n">relationships</span><span class="p">,</span>
         <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span>
         <span class="p">);</span>
-
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-item-range-1a556876c5b8f3d3bd2907edc61caeb95e">ItemRange</span><span></span><span class="p">(</span><span class="n">ItemRange</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-item-range-1a314a75a284ad3603723b3152b17d567e">ItemRange</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">ItemRange</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">);</span>
-
+<span class="p">};</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">ItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-item-range-1ae3109e2636d466244cec7f1f629d781d">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <span class="n">ItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-item-range-1a2d55aadbfb4e142eaa6962c035a6d70e">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-item-range-1a379c307cd3fbb3bcfe91385112ec23db">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">ItemRange</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-item-range-1ae9e4c28cb682d6f3dbe686968ed4fefd">operator ++</span><span></span> <span class="p">();</span>
-    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1-1-item-range-1aa3f9937fa95a884f3a366c94bcad27d5">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="c1">// direct descendants</span>
-
-<span class="k">class</span> <a class="reference internal" href="class_geode_BRep_ModelBoundaryItemRange.html#doxid-classgeode-1-1-b-rep-1-1-model-boundary-item-range"><span class="std std-ref">ModelBoundaryItemRange</span></a><span></span><span class="p">;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_Section_ModelBoundaryItemRange.html#doxid-classgeode-1-1-section-1-1-model-boundary-item-range"><span class="std std-ref">ModelBoundaryItemRange</span></a><span></span><span class="p">;</span></pre>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_Relationships_ItemRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-item-range-iterator-1ad98ab0e8e52b173b9e81c6391a76a456"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Relationships_ItemRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-item-range-iterator"><span class="std std-ref">ItemRangeIterator</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Relationships_ItemRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-item-range-iterator-1a3466e49ea9ab5b56550e9147aa309289"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Relationships_ItemRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-item-range-iterator-1a09a69715e68f0ee5b880d66ee3a63e16"><span class="std std-ref">operator *</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Type</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end-1a75c49da0041050a3fef241e05eacbeba"><span class="std std-ref">begin</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Type</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end-1a2a998c5a4b898428a69aa420df0d63a9"><span class="std std-ref">end</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+</div>
 </div>
 
 

@@ -8,11 +8,17 @@ class geode::Relationships
 	:hidden:
 
 	class_geode_Relationships_BoundaryRange.rst
+	class_geode_Relationships_BoundaryRangeIterator.rst
 	class_geode_Relationships_CollectionRange.rst
+	class_geode_Relationships_CollectionRangeIterator.rst
 	class_geode_Relationships_EmbeddingRange.rst
+	class_geode_Relationships_EmbeddingRangeIterator.rst
 	class_geode_Relationships_IncidenceRange.rst
+	class_geode_Relationships_IncidenceRangeIterator.rst
 	class_geode_Relationships_InternalRange.rst
+	class_geode_Relationships_InternalRangeIterator.rst
 	class_geode_Relationships_ItemRange.rst
+	class_geode_Relationships_ItemRangeIterator.rst
 
 This class stores all the relations between a set of components. Each relationship links two components. Relationship types are boundary and its dual incidence, and item and its dual collection. Components should be added through their uuids.
 
@@ -28,11 +34,17 @@ This class stores all the relations between a set of components. Each relationsh
 		// classes
 	
 		class :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`;
+		class :ref:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`;
 		class :ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>`;
+		class :ref:`CollectionRangeIterator<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator>`;
 		class :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`;
+		class :ref:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`;
 		class :ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>`;
+		class :ref:`IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator>`;
 		class :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`;
+		class :ref:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`;
 		class :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`;
+		class :ref:`ItemRangeIterator<doxid-classgeode_1_1_relationships_1_1_item_range_iterator>`;
 
 		// methods
 	

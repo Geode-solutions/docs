@@ -1,0 +1,45 @@
+.. index:: pair: class; geode::Relationships::BoundaryRangeIterator
+.. _doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator:
+
+class geode::Relationships::BoundaryRangeIterator
+=================================================
+
+.. toctree::
+	:hidden:
+
+:ref:`Range <doxid-classgeode_1_1_range>` to iterates on all boundaries of one component
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class BoundaryRangeIterator
+	{
+	public:
+		// construction
+	
+		:target:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a7cb05347b03d064b205278431629bf18>`(
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
+			);
+	
+		:target:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a8169cb5d384fd29a6d77c57d07ac6516>`(BoundaryRangeIterator&& other);
+		:target:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a0a4153869d3964a186e39a427f7617e9>`(const BoundaryRangeIterator& other);
+
+		// methods
+	
+		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a38a05e2d55cda5f7789faf1b0dd0d53b>` (const BoundaryRangeIterator&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1ad48bf5ca79534feea81482e831a47e15>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a490c05e8b656295797dc711a83e85f23>` () const;
+	};
+
+	// direct descendants
+
+	class :ref:`BoundaryCornerRange<doxid-classgeode_1_1_b_rep_1_1_boundary_corner_range>`;
+	class :ref:`BoundaryLineRange<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range>`;
+	class :ref:`BoundarySurfaceRange<doxid-classgeode_1_1_b_rep_1_1_boundary_surface_range>`;
+	class :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`;
+	class :ref:`BoundaryCornerRange<doxid-classgeode_1_1_section_1_1_boundary_corner_range>`;
+	class :ref:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range>`;

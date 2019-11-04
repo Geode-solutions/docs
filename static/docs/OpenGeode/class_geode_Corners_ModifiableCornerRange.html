@@ -37,7 +37,9 @@
 <span id="doxid-classgeode-1-1-corners-1-1-modifiable-corner-range"></span><span id="index-0"></span><h1>class geode::Corners::ModifiableCornerRange</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">class</span> <span class="nl">ModifiableCornerRange</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Corners_CornerRangeBase.html#doxid-classgeode-1-1-corners-1-1-corner-range-base"><span class="std std-ref">geode::Corners::CornerRangeBase</span></a><span></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">class</span> <span class="nl">ModifiableCornerRange</span><span class="p">:</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_Corners_CornerRangeBase.html#doxid-classgeode-1-1-corners-1-1-corner-range-base"><span class="std std-ref">geode::Corners::CornerRangeBase</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end"><span class="std std-ref">geode::BeginEnd</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
@@ -46,8 +48,6 @@
 
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">ModifiableCornerRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1-1-modifiable-corner-range-1a0325b5244d0094cd64eb8051e35a967d">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <span class="n">ModifiableCornerRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1-1-modifiable-corner-range-1a40c21d08f183c50159f38ad6cf0c0326">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_Corner.html#doxid-classgeode-1-1-corner"><span class="std std-ref">Corner</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1-1-modifiable-corner-range-1a9798cabe61a5183d5251964c0c1f0da6">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
@@ -56,7 +56,9 @@
     <span class="c1">// methods</span>
 
     <span class="kt">bool</span> <a class="reference internal" href="class_geode_Corners_CornerRangeBase.html#doxid-classgeode-1-1-corners-1-1-corner-range-base-1aa127256b3e478299eadee155dc5769d1"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Corners_CornerRangeBase.html#doxid-classgeode-1-1-corners-1-1-corner-range-base"><span class="std std-ref">CornerRangeBase</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_Corners_CornerRangeBase.html#doxid-classgeode-1-1-corners-1-1-corner-range-base-1a68263571974d8287c65870eebb337710"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span></pre>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Corners_CornerRangeBase.html#doxid-classgeode-1-1-corners-1-1-corner-range-base-1a68263571974d8287c65870eebb337710"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span>
+    <span class="k">const</span> <span class="n">Type</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end-1a75c49da0041050a3fef241e05eacbeba"><span class="std std-ref">begin</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Type</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end-1a2a998c5a4b898428a69aa420df0d63a9"><span class="std std-ref">end</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
 </div>
 </div>
 

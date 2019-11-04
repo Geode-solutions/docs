@@ -7,17 +7,18 @@ class geode::BRep
 .. toctree::
 	:hidden:
 
-	class_geode_BRep_BlockBoundaryRange.rst
-	class_geode_BRep_BlockInternalRange.rst
-	class_geode_BRep_CornerIncidenceRange.rst
-	class_geode_BRep_LineBoundaryRange.rst
-	class_geode_BRep_LineEmbeddingRange.rst
-	class_geode_BRep_LineIncidenceRange.rst
-	class_geode_BRep_ModelBoundaryItemRange.rst
-	class_geode_BRep_SurfaceBoundaryRange.rst
-	class_geode_BRep_SurfaceEmbeddingRange.rst
-	class_geode_BRep_SurfaceIncidenceRange.rst
-	class_geode_BRep_SurfaceInternalRange.rst
+	class_geode_BRep_BoundaryCornerRange.rst
+	class_geode_BRep_BoundaryLineRange.rst
+	class_geode_BRep_BoundarySurfaceRange.rst
+	class_geode_BRep_EmbeddedBlockRange.rst
+	class_geode_BRep_EmbeddedSurfaceRange.rst
+	class_geode_BRep_IncidentBlockRange.rst
+	class_geode_BRep_IncidentLineRange.rst
+	class_geode_BRep_IncidentSurfaceRange.rst
+	class_geode_BRep_InternalCornerRange.rst
+	class_geode_BRep_InternalLineRange.rst
+	class_geode_BRep_InternalSurfaceRange.rst
+	class_geode_BRep_ItemSurfaceRange.rst
 
 A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D model composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, :ref:`Surfaces <doxid-classgeode_1_1_surfaces>` and :ref:`Blocks <doxid-classgeode_1_1_blocks>`. This class provides classes for range-based iteration on :ref:`Component <doxid-classgeode_1_1_component>` boundaries and incidences.
 
@@ -34,31 +35,38 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 	public:
 		// classes
 	
-		class :ref:`BlockBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range>`;
-		class :ref:`BlockInternalRange<doxid-classgeode_1_1_b_rep_1_1_block_internal_range>`;
-		class :ref:`CornerIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_corner_incidence_range>`;
-		class :ref:`LineBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_line_boundary_range>`;
-		class :ref:`LineEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_line_embedding_range>`;
-		class :ref:`LineIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_line_incidence_range>`;
-		class :ref:`ModelBoundaryItemRange<doxid-classgeode_1_1_b_rep_1_1_model_boundary_item_range>`;
-		class :ref:`SurfaceBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_surface_boundary_range>`;
-		class :ref:`SurfaceEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_surface_embedding_range>`;
-		class :ref:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range>`;
-		class :ref:`SurfaceInternalRange<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range>`;
+		class :ref:`BoundaryCornerRange<doxid-classgeode_1_1_b_rep_1_1_boundary_corner_range>`;
+		class :ref:`BoundaryLineRange<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range>`;
+		class :ref:`BoundarySurfaceRange<doxid-classgeode_1_1_b_rep_1_1_boundary_surface_range>`;
+		class :ref:`EmbeddedBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedded_block_range>`;
+		class :ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range>`;
+		class :ref:`IncidentBlockRange<doxid-classgeode_1_1_b_rep_1_1_incident_block_range>`;
+		class :ref:`IncidentLineRange<doxid-classgeode_1_1_b_rep_1_1_incident_line_range>`;
+		class :ref:`IncidentSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_incident_surface_range>`;
+		class :ref:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range>`;
+		class :ref:`InternalLineRange<doxid-classgeode_1_1_b_rep_1_1_internal_line_range>`;
+		class :ref:`InternalSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range>`;
+		class :ref:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range>`;
 
 		// methods
 	
-		:ref:`LineBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_line_boundary_range>` :target:`boundaries<doxid-classgeode_1_1_b_rep_1a1f4a25a5eb036329046258f5ac4065bb>`(const Line3D& line) const;
-		:ref:`SurfaceBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_surface_boundary_range>` :target:`boundaries<doxid-classgeode_1_1_b_rep_1acd0e9169c92913488fe460181d36a2fb>`(const Surface3D& surface) const;
-		:ref:`BlockBoundaryRange<doxid-classgeode_1_1_b_rep_1_1_block_boundary_range>` :target:`boundaries<doxid-classgeode_1_1_b_rep_1a59caa6593a94cb8200d376b4f3b83401>`(const Block3D& block) const;
-		:ref:`CornerIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_corner_incidence_range>` :target:`incidences<doxid-classgeode_1_1_b_rep_1a097ed38bf6af8295f796c2012a753de1>`(const Corner3D& corner) const;
-		:ref:`LineIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_line_incidence_range>` :target:`incidences<doxid-classgeode_1_1_b_rep_1a0e75dd92824e17bfbf21578e3df8b780>`(const Line3D& line) const;
-		:ref:`SurfaceIncidenceRange<doxid-classgeode_1_1_b_rep_1_1_surface_incidence_range>` :target:`incidences<doxid-classgeode_1_1_b_rep_1a54787a14a6d128c389c9a9e95b5f51c9>`(const Surface3D& surface) const;
-		:ref:`SurfaceInternalRange<doxid-classgeode_1_1_b_rep_1_1_surface_internal_range>` :target:`internals<doxid-classgeode_1_1_b_rep_1a21310788223a269f74b5f8e97b60da12>`(const Surface3D& surface) const;
-		:ref:`BlockInternalRange<doxid-classgeode_1_1_b_rep_1_1_block_internal_range>` :target:`internals<doxid-classgeode_1_1_b_rep_1a58482e70d85d9c4b7aef6d0f3e12a74a>`(const Block3D& block) const;
-		:ref:`LineEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_line_embedding_range>` :target:`embeddings<doxid-classgeode_1_1_b_rep_1ac395c45755a71119c1aa4aa86b8c4b6c>`(const Line3D& line) const;
-		:ref:`SurfaceEmbeddingRange<doxid-classgeode_1_1_b_rep_1_1_surface_embedding_range>` :target:`embeddings<doxid-classgeode_1_1_b_rep_1a348fdf50794390cb7808b77b5795f59f>`(const Surface3D& surface) const;
-		:ref:`ModelBoundaryItemRange<doxid-classgeode_1_1_b_rep_1_1_model_boundary_item_range>` :target:`items<doxid-classgeode_1_1_b_rep_1a1d0f0dcdc847b033564a592669793774>`(const ModelBoundary3D& boundary) const;
+		:ref:`BoundaryCornerRange<doxid-classgeode_1_1_b_rep_1_1_boundary_corner_range>` :target:`boundaries<doxid-classgeode_1_1_b_rep_1ad9717c1b4130cebb0805539ccdbe6d7b>`(const Line3D& line) const;
+		:ref:`BoundaryLineRange<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range>` :target:`boundaries<doxid-classgeode_1_1_b_rep_1a226d829b80f1b160063b3d1426195cd0>`(const Surface3D& surface) const;
+		:ref:`BoundarySurfaceRange<doxid-classgeode_1_1_b_rep_1_1_boundary_surface_range>` :target:`boundaries<doxid-classgeode_1_1_b_rep_1aaea3e92d8481d193ec09db644e5cca2f>`(const Block3D& block) const;
+		:ref:`IncidentLineRange<doxid-classgeode_1_1_b_rep_1_1_incident_line_range>` :target:`incidences<doxid-classgeode_1_1_b_rep_1aea573193931f64fc0c3dd91fcb9496a1>`(const Corner3D& corner) const;
+		:ref:`IncidentSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_incident_surface_range>` :target:`incidences<doxid-classgeode_1_1_b_rep_1aacbf59bd4227754adb36203ae0911a86>`(const Line3D& line) const;
+		:ref:`IncidentBlockRange<doxid-classgeode_1_1_b_rep_1_1_incident_block_range>` :target:`incidences<doxid-classgeode_1_1_b_rep_1a9ec1859039e8405a82b98937d5b0aed0>`(const Surface3D& surface) const;
+		:ref:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range>` :target:`internal_corners<doxid-classgeode_1_1_b_rep_1adff07ba0b46eecc146f4c29bfca0113c>`(const Surface3D& surface) const;
+		:ref:`InternalLineRange<doxid-classgeode_1_1_b_rep_1_1_internal_line_range>` :target:`internal_lines<doxid-classgeode_1_1_b_rep_1a3ad22798c098d269a00f88f040f03ffc>`(const Surface3D& surface) const;
+		:ref:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range>` :target:`internal_corners<doxid-classgeode_1_1_b_rep_1a39d3fcc3507100d1e1de90ca74f2f367>`(const Block3D& block) const;
+		:ref:`InternalLineRange<doxid-classgeode_1_1_b_rep_1_1_internal_line_range>` :target:`internal_lines<doxid-classgeode_1_1_b_rep_1a54435c7f695731c7fe57f8d9f379564b>`(const Block3D& block) const;
+		:ref:`InternalSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range>` :target:`internal_surfaces<doxid-classgeode_1_1_b_rep_1a47629e65c7d2041467df4a7ad9584c7c>`(const Block3D& block) const;
+		:ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range>` :target:`embedded_surfaces<doxid-classgeode_1_1_b_rep_1adabc7cceb987c436bbcee39417a8025f>`(const Corner3D& corner) const;
+		:ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range>` :target:`embedded_surfaces<doxid-classgeode_1_1_b_rep_1a151b14fd7f6bb57af9ec355c4a06d0bc>`(const Line3D& line) const;
+		:ref:`EmbeddedBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedded_block_range>` :target:`embedded_blocks<doxid-classgeode_1_1_b_rep_1a9885c640ccd2a53da5e66726a6b947df>`(const Corner3D& corner) const;
+		:ref:`EmbeddedBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedded_block_range>` :target:`embedded_blocks<doxid-classgeode_1_1_b_rep_1a21fbcb629da2f852dece4d389d8ece3f>`(const Line3D& line) const;
+		:ref:`EmbeddedBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedded_block_range>` :target:`embedded_blocks<doxid-classgeode_1_1_b_rep_1a68576ce268d33d863a3955e036981c84>`(const Surface3D& surface) const;
+		:ref:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range>` :target:`items<doxid-classgeode_1_1_b_rep_1ae946e08f5e16f2df2860e8bc13d5f7cf>`(const ModelBoundary3D& boundary) const;
 		std::string :target:`native_extension<doxid-classgeode_1_1_b_rep_1a4905c7fa65ff4ba7a06f8d103e560c6d>`() const;
 		static std::string :target:`native_extension_static<doxid-classgeode_1_1_b_rep_1aacd20a97ef190e2f0033a9977c8fa230>`();
 	};
@@ -73,11 +81,17 @@ Inherited Members
 		// classes
 	
 		class :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`;
+		class :ref:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`;
 		class :ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>`;
+		class :ref:`CollectionRangeIterator<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator>`;
 		class :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`;
+		class :ref:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`;
 		class :ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>`;
+		class :ref:`IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator>`;
 		class :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`;
+		class :ref:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`;
 		class :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`;
+		class :ref:`ItemRangeIterator<doxid-classgeode_1_1_relationships_1_1_item_range_iterator>`;
 
 		// methods
 	

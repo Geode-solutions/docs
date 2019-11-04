@@ -81,24 +81,39 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 		void :target:`remove_block<doxid-classgeode_1_1_b_rep_builder_1a7adc5b711e04e05c6e643fef82329c64>`(const Block3D& block);
 		void :target:`remove_model_boundary<doxid-classgeode_1_1_b_rep_builder_1a28edee0947f9678df76e60da8e19afed>`(const ModelBoundary3D& boundary);
 	
-		void :target:`add_corner_line_relationship<doxid-classgeode_1_1_b_rep_builder_1a52b0621c2ba360515016dfb64d23e96a>`(
+		void :target:`add_corner_line_boundary_relationship<doxid-classgeode_1_1_b_rep_builder_1a0b94051959d8328864e53b604c45dba4>`(
 			const Corner3D& corner,
 			const Line3D& line
 			);
 	
-		void :target:`add_line_surface_relationship<doxid-classgeode_1_1_b_rep_builder_1a585e49692e91714d3f6cd738dce5fc41>`(
+		void :target:`add_line_surface_boundary_relationship<doxid-classgeode_1_1_b_rep_builder_1a4d9c88c6377f931c53e219b400b3a4f3>`(
 			const Line3D& line,
 			const Surface3D& surface
 			);
 	
-		void :target:`add_surface_block_relationship<doxid-classgeode_1_1_b_rep_builder_1a7263f37b4be2fccd11bee71d2fc41442>`(
+		void :target:`add_surface_block_boundary_relationship<doxid-classgeode_1_1_b_rep_builder_1a536718d97ed71bf27121d20d49204676>`(
 			const Surface3D& surface,
 			const Block3D& block
+			);
+	
+		void :target:`add_corner_surface_internal_relationship<doxid-classgeode_1_1_b_rep_builder_1a98d4b151824135024c40dab12d652413>`(
+			const Corner3D& corner,
+			const Surface3D& surface
 			);
 	
 		void :target:`add_line_surface_internal_relationship<doxid-classgeode_1_1_b_rep_builder_1a460689f5bb9d659ccfe1236a945a1912>`(
 			const Line3D& line,
 			const Surface3D& surface
+			);
+	
+		void :target:`add_corner_block_internal_relationship<doxid-classgeode_1_1_b_rep_builder_1a8bcb75ab80e041c5596ef904e6947712>`(
+			const Corner3D& corner,
+			const Block3D& block
+			);
+	
+		void :target:`add_line_block_internal_relationship<doxid-classgeode_1_1_b_rep_builder_1a2257553afe4358dc532dd634530dfd60>`(
+			const Line3D& line,
+			const Block3D& block
 			);
 	
 		void :target:`add_surface_block_internal_relationship<doxid-classgeode_1_1_b_rep_builder_1ac7d5c71abde95c24bc02dbfcdb94b885>`(
@@ -121,7 +136,7 @@ Inherited Members
 	public:
 		// methods
 	
-		void :ref:`register_component<doxid-classgeode_1_1_relationships_builder_1a875c4be67f9214ad261de4ad943adc15>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		void :ref:`register_component<doxid-classgeode_1_1_relationships_builder_1ac161cd45bffb92b0e3340ac80cfe9e1d>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id);
 		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_builder_1aee190cedcd627f2e9bdc5e3815afcdfd>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a6c661d5abfdf4600024e03a1535b43d9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);
 		void :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_builder_1a785391408cff3d0af65ad246dd4acdf9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding);

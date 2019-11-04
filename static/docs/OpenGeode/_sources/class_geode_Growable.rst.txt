@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::Growable
+.. _doxid-classgeode_1_1_growable:
+
+template class geode::Growable
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bitsery_archive.h>
+	
+	template <typename Archive, typename T>
+	class Growable
+	{
+	public:
+		// construction
+	
+		:target:`Growable<doxid-classgeode_1_1_growable_1a33716ba57a1f1c05397952d02a9f2354>`(std::vector<std::function<void(Archive&, T&)>> serializers);
+	
+		:target:`Growable<doxid-classgeode_1_1_growable_1a24d0cbc4c0a8a3307ab40fd164c719f1>`(
+			std::vector<std::function<void(Archive&, T&)>> serializers,
+			std::vector<std::function<void(T&)>> initializers
+			);
+
+		// methods
+	
+		template <typename Fnc>
+		void :target:`serialize<doxid-classgeode_1_1_growable_1a030fd2349488178eda47d928600006bd>`(
+			Archive& ser,
+			const T& obj,
+			Fnc&& fnc
+			) const;
+	
+		template <typename Fnc>
+		void :target:`deserialize<doxid-classgeode_1_1_growable_1afe074d5e033742d9bc9be491e9831b32>`(
+			Archive& des,
+			T& obj,
+			Fnc&& fnc
+			) const;
+	};
