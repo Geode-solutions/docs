@@ -39,7 +39,9 @@
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;structural_model.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">HorizonItemRange</span><span class="p">:</span> <span class="k">public</span> <span class="n">ItemRange</span>
+<span class="k">class</span> <span class="nl">HorizonItemRange</span><span class="p">:</span>
+    <span class="k">public</span> <span class="n">ItemRangeIterator</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">BeginEnd</span><span class="o">&lt;</span> <span class="n">HorizonItemRange</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
@@ -51,8 +53,6 @@
 
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">HorizonItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-horizon-item-range-1a29565450bea03a6eea2ef07c4b643894">begin</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <span class="n">HorizonItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-horizon-item-range-1ad24bd00a19a1e01bad356a1992d7858e">end</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-horizon-item-range-1aaa86413e2b851f9233838229678e80ff">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>

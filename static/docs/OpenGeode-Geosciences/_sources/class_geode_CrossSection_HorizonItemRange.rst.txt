@@ -15,7 +15,9 @@ class geode::CrossSection::HorizonItemRange
 
 	#include <cross_section.h>
 	
-	class HorizonItemRange: public ItemRange
+	class HorizonItemRange:
+	    public ItemRangeIterator,
+	    public BeginEnd< HorizonItemRange >
 	{
 	public:
 		// construction
@@ -27,7 +29,5 @@ class geode::CrossSection::HorizonItemRange
 
 		// methods
 	
-		const HorizonItemRange& :target:`begin<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range_1afaa6a874ad146b2ec5203818f3f38cbc>`() const;
-		const HorizonItemRange& :target:`end<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range_1a62981db41d3bd98f25859df6a74ec283>`() const;
 		const Line2D& :target:`operator *<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range_1a8d9e4b5e96bd887493854272de40287c>` () const;
 	};
