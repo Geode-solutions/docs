@@ -33,7 +33,7 @@ template class geode::detail::ComponentsStorage
 		:ref:`Iterator<doxid-classgeode_1_1detail_1_1_components_storage_1a0105f7239a600cfacdc7f3dc1379ee6c>` :target:`begin<doxid-classgeode_1_1detail_1_1_components_storage_1a553da071095c3042a1ca90a5aeed2e60>`() const;
 		:ref:`Iterator<doxid-classgeode_1_1detail_1_1_components_storage_1a0105f7239a600cfacdc7f3dc1379ee6c>` :target:`end<doxid-classgeode_1_1detail_1_1_components_storage_1a06c2b4479a0234398eeb4a099f37b9f8>`() const;
 		void :target:`add_component<doxid-classgeode_1_1detail_1_1_components_storage_1ac7a30645bd80c26349f8c601dfc3fe7e>`(:ref:`ComponentPtr<doxid-classgeode_1_1detail_1_1_components_storage_1ac7363bde829d77c5b361b9ccd59fe148>` component);
-		virtual void :target:`save_components<doxid-classgeode_1_1detail_1_1_components_storage_1a214f5ec82fa6c6b0e39458220b4cd6b3>`(const std::string& filename) const;
+		void :target:`save_components<doxid-classgeode_1_1detail_1_1_components_storage_1afae997790245106b7be185dc70645af3>`(const std::string& filename) const;
 		void :target:`delete_component<doxid-classgeode_1_1detail_1_1_components_storage_1a3a34046b654d94a04665d5f63789cd40>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 		void :target:`load_components<doxid-classgeode_1_1detail_1_1_components_storage_1a6ebd5d6b35b823d433f446b50608ec4a>`(const std::string& filename);
 	};
