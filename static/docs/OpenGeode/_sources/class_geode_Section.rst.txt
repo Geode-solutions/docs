@@ -46,11 +46,16 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`
 		:ref:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range>` :target:`boundaries<doxid-classgeode_1_1_section_1a1e7d15848dac0b2d73a57fc528e6e593>`(const Surface2D& surface) const;
 		:ref:`IncidentLineRange<doxid-classgeode_1_1_section_1_1_incident_line_range>` :target:`incidences<doxid-classgeode_1_1_section_1a6c67e8a5a6bde877102e8f5bce7a9442>`(const Corner2D& corner) const;
 		:ref:`IncidentSurfaceRange<doxid-classgeode_1_1_section_1_1_incident_surface_range>` :target:`incidences<doxid-classgeode_1_1_section_1a2405072fda2e56bb6c7bb04fe0c291e0>`(const Line2D& line) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_internal_corners<doxid-classgeode_1_1_section_1a1aabd927ef94ebbbc00ea491b5b5dbeb>`(const Surface2D& surface) const;
 		:ref:`InternalCornerRange<doxid-classgeode_1_1_section_1_1_internal_corner_range>` :target:`internal_corners<doxid-classgeode_1_1_section_1aba4b934374a5a0b6097d1ed269527de3>`(const Surface2D& surface) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_internal_lines<doxid-classgeode_1_1_section_1aa4a6f34cbdec01b12fb07fe6181bd388>`(const Surface2D& surface) const;
 		:ref:`InternalLineRange<doxid-classgeode_1_1_section_1_1_internal_line_range>` :target:`internal_lines<doxid-classgeode_1_1_section_1a9622f3a3e2db076868c2e574610e5a96>`(const Surface2D& surface) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_embedded_surfaces<doxid-classgeode_1_1_section_1a0554e4d1b040827da670af448409232a>`(const Corner2D& corner) const;
 		:ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_section_1_1_embedded_surface_range>` :target:`embeddings<doxid-classgeode_1_1_section_1a9ceefb49fd490150ba46cd8584c1c547>`(const Corner2D& corner) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_embedded_surfaces<doxid-classgeode_1_1_section_1aa9df8bddcd82a064e75a014f7b5fdcb3>`(const Line2D& line) const;
 		:ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_section_1_1_embedded_surface_range>` :target:`embeddings<doxid-classgeode_1_1_section_1a42c9d294235623d981499daa0cc93d5a>`(const Line2D& line) const;
 		:ref:`ItemLineRange<doxid-classgeode_1_1_section_1_1_item_line_range>` :target:`items<doxid-classgeode_1_1_section_1a2d7fb657e22151e3a4fdb55e959aa6cc>`(const ModelBoundary2D& boundary) const;
+		bool :target:`is_closed<doxid-classgeode_1_1_section_1a896a8243466a8fd20037fb2f8deda788>`(const Line2D& line) const;
 		std::string :target:`native_extension<doxid-classgeode_1_1_section_1aa2e22b1974adb966eeea8f30b0e6cd2a>`() const;
 		static std::string :target:`native_extension_static<doxid-classgeode_1_1_section_1a6b047f58b1915c2a8f3e39e46a5ec577>`();
 	};

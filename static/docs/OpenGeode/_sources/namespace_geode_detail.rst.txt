@@ -56,6 +56,9 @@ namespace geode::detail
 
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`mapping_after_deletion<doxid-namespacegeode_1_1detail_1a90890e796e3fc5c2e28539ac82272d6c>`(const std::vector<bool>& to_delete);
 
+	template <typename Range>
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`count_relationships<doxid-namespacegeode_1_1detail_1a3922ed9d6481362fb802c3a6bcbfe712>`(const :ref:`Range<doxid-classgeode_1_1_range>`& range);
+
 	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
 	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a928f52cef724da829096ae938c01fc4e>` :target:`copy_corner_components<doxid-namespacegeode_1_1detail_1aaa63507ad5adbd85c85f5899e694087c>`(
 		const ModelFrom& from,
