@@ -485,10 +485,10 @@ Overview
 
 	// global variables
 
-	static const double :target:`global_epsilon<doxid-namespacegeode_1a0b8d2d4c7b330c83629a61e771f0b2f7>`;
-	static const double :target:`global_epsilon2<doxid-namespacegeode_1a5f3ec589c8fc61660c5afc3bd65c75c7>`;
-	static const double :target:`global_epsilon3<doxid-namespacegeode_1a6122a63a921a83ac1e9014d9c7aac626>`;
-	static const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`NO_ID<doxid-namespacegeode_1a406735564371af473449ff4581b7a53a>`;
+	static constexpr double :target:`global_epsilon<doxid-namespacegeode_1ad0b6fd0e0919965c35e9ddfa40a1f348>`;
+	static constexpr double :target:`global_epsilon2<doxid-namespacegeode_1ab575e903827bd50f7ef15e38caae8c57>`;
+	static constexpr double :target:`global_epsilon3<doxid-namespacegeode_1a016b0b7f36d945752eab94a03fbc27db>`;
+	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`NO_ID<doxid-namespacegeode_1a454319bfde41726e71f499e4e16322b3>`;
 
 	// global functions
 
@@ -773,12 +773,12 @@ Global Variables
 ----------------
 
 .. index:: pair: variable; NO_ID
-.. _doxid-namespacegeode_1a406735564371af473449ff4581b7a53a:
+.. _doxid-namespacegeode_1a454319bfde41726e71f499e4e16322b3:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` NO_ID
+	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` NO_ID
 
 Value used for a invalid index.
 
