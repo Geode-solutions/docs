@@ -31,5 +31,5 @@ struct geode::TSurfData
 
 		// methods
 	
-		geode::index_t :target:`tface_id<doxid-structgeode_1_1_t_surf_data_1a8dff988904de57a6e1f9c5ee50575fcf>`(geode::index_t vertex_id) const;
+		index_t :target:`tface_id<doxid-structgeode_1_1_t_surf_data_1afcfa2f7064d01519b324fbfd164eef0f>`(index_t vertex_id) const;
 	};
