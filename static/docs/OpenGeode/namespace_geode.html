@@ -388,15 +388,15 @@
 
 <span class="c1">// global functions</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">container</span><span class="o">&gt;</span>
-<a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab8391fe55ae351afd82f83fc55d50475">find</span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">container</span><span class="o">&amp;</span> <span class="n">in</span><span class="p">,</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Container</span><span class="o">&gt;</span>
+<a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae105bf6b9c5643292589e3973dbfa015">find</span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Container</span><span class="o">&amp;</span> <span class="n">in</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">value</span>
     <span class="p">);</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">container</span><span class="o">&gt;</span>
-<span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acc05397671a445c57cb2dce614126605">contain</span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">container</span><span class="o">&amp;</span> <span class="n">in</span><span class="p">,</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Container</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab8ea1ac6f571f266a0f417c425ed8d70">contain</span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Container</span><span class="o">&amp;</span> <span class="n">in</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">value</span>
     <span class="p">);</span>
 
@@ -412,6 +412,9 @@
     <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_keep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">in_values</span>
     <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Container</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a04f4dfe13f837a543eb430e7e3b737ae">sort_unique</span><span></span><span class="p">(</span><span class="n">Container</span><span class="o">&amp;</span> <span class="n">in</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">opengeode_basic_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a964e15927a4b2dc39f52f761506885e7">geode_assertion_failed</span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">condition</span><span class="p">,</span>

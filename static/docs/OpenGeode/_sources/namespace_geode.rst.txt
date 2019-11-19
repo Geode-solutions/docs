@@ -492,15 +492,15 @@ Overview
 
 	// global functions
 
-	template <typename T, typename container>
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`find<doxid-namespacegeode_1ab8391fe55ae351afd82f83fc55d50475>`(
-		const container& in,
+	template <typename T, typename Container>
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`find<doxid-namespacegeode_1ae105bf6b9c5643292589e3973dbfa015>`(
+		const Container& in,
 		const T& value
 		);
 
-	template <typename T, typename container>
-	bool :target:`contain<doxid-namespacegeode_1acc05397671a445c57cb2dce614126605>`(
-		const container& in,
+	template <typename T, typename Container>
+	bool :target:`contain<doxid-namespacegeode_1ab8ea1ac6f571f266a0f417c425ed8d70>`(
+		const Container& in,
 		const T& value
 		);
 
@@ -516,6 +516,9 @@ Overview
 		const std::vector<bool>& to_keep,
 		const std::vector<T>& in_values
 		);
+
+	template <typename Container>
+	void :target:`sort_unique<doxid-namespacegeode_1a04f4dfe13f837a543eb430e7e3b737ae>`(Container& in);
 
 	void opengeode_basic_api :target:`geode_assertion_failed<doxid-namespacegeode_1a964e15927a4b2dc39f52f761506885e7>`(
 		const std::string& condition,
