@@ -7,10 +7,7 @@ template class geode::BoundingBox
 .. toctree::
 	:hidden:
 
-Overview
-~~~~~~~~
-
-Bounding box implemented for 2D and 3D points. :ref:`More...<details-classgeode_1_1_bounding_box>`
+Bounding box implemented for 2D and 3D points.
 
 
 .. ref-code-block:: cpp
@@ -37,102 +34,4 @@ Bounding box implemented for 2D and 3D points. :ref:`More...<details-classgeode_
 		bool :target:`contains<doxid-classgeode_1_1_bounding_box_1a06067c1ab22b26d7508f84e3be00f672>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`min<doxid-classgeode_1_1_bounding_box_1a4989e863012fb87f1c94067f4a21b85a>`() const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`max<doxid-classgeode_1_1_bounding_box_1aa41b83189438c79f27a616322904542c>`() const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`center<doxid-classgeode_1_1_bounding_box_1ad04a5b1251acb4b743ef6129ab39578c>`() const;
-		bool :ref:`boxes_overlap<doxid-classgeode_1_1_bounding_box_1ae6349d5ce126bd8bf293a6e75aed84b6>`(const BoundingBox<dimension>& box) const;
-		BoundingBox<dimension> :ref:`box_union<doxid-classgeode_1_1_bounding_box_1a83de122183b475c77d2708470d0fe562>`(const BoundingBox<dimension>& box) const;
-		std::tuple<bool, BoundingBox<dimension>> :ref:`box_intersection<doxid-classgeode_1_1_bounding_box_1a6f8cd406bf14390f9d22b60275f8fbff>`(const BoundingBox<dimension>& box) const;
 	};
-.. _details-classgeode_1_1_bounding_box:
-
-Detailed Documentation
-~~~~~~~~~~~~~~~~~~~~~~
-
-Bounding box implemented for 2D and 3D points.
-
-Methods
--------
-
-.. index:: pair: function; boxes_overlap
-.. _doxid-classgeode_1_1_bounding_box_1ae6349d5ce126bd8bf293a6e75aed84b6:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	bool boxes_overlap(const BoundingBox<dimension>& box) const
-
-Check if another :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` overlaps this one.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- box
-
-		- The other :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` to test
-
-
-
-.. rubric:: Returns:
-
-true if there is an overlap
-
-.. index:: pair: function; box_union
-.. _doxid-classgeode_1_1_bounding_box_1a83de122183b475c77d2708470d0fe562:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	BoundingBox<dimension> box_union(const BoundingBox<dimension>& box) const
-
-Compute the union with another :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>`
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- box
-
-		- The other :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` to use
-
-
-
-.. rubric:: Returns:
-
-The :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` representing the union of the two other boxes.
-
-.. index:: pair: function; box_intersection
-.. _doxid-classgeode_1_1_bounding_box_1a6f8cd406bf14390f9d22b60275f8fbff:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	std::tuple<bool, BoundingBox<dimension>> box_intersection(const BoundingBox<dimension>& box) const
-
-Compute the intersection with another :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>`
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- box
-
-		- The other :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` to use
-
-
-
-.. rubric:: Returns:
-
-1) true if there is an intersection, 2) The :ref:`BoundingBox <doxid-classgeode_1_1_bounding_box>` representing the intersection of the two other boxes.
-
