@@ -473,7 +473,7 @@ Return the coordinates of the barycenter of a given edge.
 	*
 		- edge_id
 
-		- Index of edge polygon.
+		- Index of edge.
 
 .. index:: pair: function; polygon_barycenter
 .. _doxid-classgeode_1_1_polygonal_surface_base_1a789c75d3563b53e61ba21d567b65f420:
