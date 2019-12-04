@@ -1,5 +1,5 @@
 .. index:: pair: page; Supported file formats
-.. _doxid-opengeodeio_supported_file_formats:
+.. _doxid-opengeode_io_supported_file_formats:
 
 Supported file formats
 ======================
