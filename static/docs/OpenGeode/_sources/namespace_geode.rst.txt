@@ -566,6 +566,7 @@ Overview
 	void opengeode_mesh_api :ref:`register_mesh_serialize_pcontext<doxid-namespacegeode_1aa05925dcfcae1d0f42d06f0f9a8dfb8a>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_mesh_api :ref:`register_mesh_deserialize_pcontext<doxid-namespacegeode_1ad554073e01b714099ca0e253bdeee8e3>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_mesh_api :target:`register_geode_mesh<doxid-namespacegeode_1adce51211caa99c2211735c26faf6323e>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abca05657b8eb6a446c79a4e841068fcf>`(:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a80ee0d83f9eb471e3d0a3066c343cb42>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a979a4e06b735dd351265ad6c92b93227>`(:ref:`EdgedCurveFactory<doxid-namespacegeode_1a6e729fb538f8c05b99d8d735a3306505>`);
@@ -734,6 +735,8 @@ Overview
 	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(:ref:`Line<doxid-classgeode_1_1_line>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a764b37be83e42f8680a9cb1c0ce3e2b1>`(:ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a138f53359f6b0ed97828265b627ab688>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	void opengeode_model_api :ref:`load_brep<doxid-namespacegeode_1aa26193dd22e3d8cda6710e403023544e>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const std::string& filename);
 	void opengeode_model_api :ref:`save_brep<doxid-namespacegeode_1ada507675c45683e2c0ae558d471c1956>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const std::string& filename);
 	void opengeode_model_api :ref:`load_section<doxid-namespacegeode_1a09db0a97736509b57634ec9eb12ece12>`(:ref:`Section<doxid-classgeode_1_1_section>`& section, const std::string& filename);

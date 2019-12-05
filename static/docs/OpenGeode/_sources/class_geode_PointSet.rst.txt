@@ -28,6 +28,7 @@ Interface class to represent a set of 2D or 3D points. :ref:`More...<details-cla
 		static std::unique_ptr<PointSet<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_1a5f73ef13481ddf946eea86bcc6553999>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
 		std::unique_ptr<PointSet<dimension>> :target:`clone<doxid-classgeode_1_1_point_set_1ac4e200f55e1a637d9589016e815f22f4>`() const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_point_set_1aa3ed43c031f8aa0415365cb1a0b67603>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_point_set_1a44c8a6f5ca12d7cc7bd3b0dd3b809d0b>`() const;
 	};
 
 	// direct descendants
@@ -93,4 +94,14 @@ Create a new :ref:`PointSet <doxid-classgeode_1_1_point_set>` using a specified 
 		- type
 
 		- Data structure type
+
+.. index:: pair: function; bounding_box
+.. _doxid-classgeode_1_1_point_set_1a44c8a6f5ca12d7cc7bd3b0dd3b809d0b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> bounding_box() const
+
+Compute the bounding box from mesh vertices
 

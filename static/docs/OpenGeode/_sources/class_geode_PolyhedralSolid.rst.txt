@@ -56,6 +56,7 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`polyhedron_attribute_manager<doxid-classgeode_1_1_polyhedral_solid_1a7d3073df4c570fe249da997d4d129a3c>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`facet_attribute_manager<doxid-classgeode_1_1_polyhedral_solid_1aade0a4d95592ebf073b40e6e3da090bd>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_polyhedral_solid_1ab5ddd74cbfbe81be2f2d942f555e9d64>`() const;
+		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_polyhedral_solid_1a26733a79fb173284d5191e66cb7f08f3>`() const;
 	};
 
 	// direct descendants
@@ -626,4 +627,14 @@ Access to the manager of attributes associated with facets.
 	:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& edge_attribute_manager() const
 
 Access to the manager of attributes associated with edges.
+
+.. index:: pair: function; bounding_box
+.. _doxid-classgeode_1_1_polyhedral_solid_1a26733a79fb173284d5191e66cb7f08f3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> bounding_box() const
+
+Compute the bounding box from mesh vertices
 

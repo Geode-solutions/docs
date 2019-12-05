@@ -20,7 +20,10 @@ class geode::BRep
 	class_geode_BRep_InternalSurfaceRange.rst
 	class_geode_BRep_ItemSurfaceRange.rst
 
-A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D model composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, :ref:`Surfaces <doxid-classgeode_1_1_surfaces>` and :ref:`Blocks <doxid-classgeode_1_1_blocks>`. This class provides classes for range-based iteration on :ref:`Component <doxid-classgeode_1_1_component>` boundaries and incidences.
+Overview
+~~~~~~~~
+
+A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D model composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, :ref:`Surfaces <doxid-classgeode_1_1_surfaces>` and :ref:`Blocks <doxid-classgeode_1_1_blocks>`. :ref:`More...<details-classgeode_1_1_b_rep>`
 
 
 .. ref-code-block:: cpp
@@ -79,6 +82,7 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 		:ref:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range>` :target:`items<doxid-classgeode_1_1_b_rep_1ae946e08f5e16f2df2860e8bc13d5f7cf>`(const ModelBoundary3D& boundary) const;
 		bool :target:`is_closed<doxid-classgeode_1_1_b_rep_1a5c450ab242a3b8e6f9dda7474487dd15>`(const Line3D& line) const;
 		bool :target:`is_closed<doxid-classgeode_1_1_b_rep_1acabbcb4262dceeb2bba2558e96457a9d>`(const Surface3D& surface) const;
+		BoundingBox3D :ref:`bounding_box<doxid-classgeode_1_1_b_rep_1a01b6973cae1978a2b536d50aee93491e>`() const;
 		std::string :target:`native_extension<doxid-classgeode_1_1_b_rep_1a4905c7fa65ff4ba7a06f8d103e560c6d>`() const;
 		static std::string :target:`native_extension_static<doxid-classgeode_1_1_b_rep_1aacd20a97ef190e2f0033a9977c8fa230>`();
 	};
@@ -126,4 +130,24 @@ Inherited Members
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a5f6dfd3e7a4d98b6c1d05d77b8f392f6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`unique_vertex<doxid-classgeode_1_1_vertex_identifier_1ad46b7b2e70e92e6fbfe1028cd6c20655>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex) const;
 		std::string :ref:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a052e9d89f3856e0ceb3c4a5316330010>`(const std::string& directory) const;
+
+.. _details-classgeode_1_1_b_rep:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D model composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, :ref:`Surfaces <doxid-classgeode_1_1_surfaces>` and :ref:`Blocks <doxid-classgeode_1_1_blocks>`. This class provides classes for range-based iteration on :ref:`Component <doxid-classgeode_1_1_component>` boundaries and incidences.
+
+Methods
+-------
+
+.. index:: pair: function; bounding_box
+.. _doxid-classgeode_1_1_b_rep_1a01b6973cae1978a2b536d50aee93491e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	BoundingBox3D bounding_box() const
+
+Compute the bounding box from component meshes
 

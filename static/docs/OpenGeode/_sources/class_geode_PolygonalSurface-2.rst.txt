@@ -81,6 +81,7 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_from_vertices<doxid-classgeode_1_1_polygonal_surface_base_1ae13fd79fec8dfe17d4970103a3b8e8d8>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_polygonal_surface_base_1a4428489afb30dc89197990419cd03451>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`polygon_attribute_manager<doxid-classgeode_1_1_polygonal_surface_base_1a2116ebad3ee2d9fdefe09fd90d7ffe01>`() const;
+		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_polygonal_surface_base_1abb716060914c220168b8a6d490720fe5>`() const;
 
 .. _details-classgeode_1_1_polygonal_surface:
 

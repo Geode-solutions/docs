@@ -37,6 +37,8 @@
 <span id="doxid-classgeode-1-1-edged-curve"></span><span id="index-0"></span><h1>template class geode::EdgedCurve</h1>
 <div class="toctree-wrapper compound">
 </div>
+<div class="section" id="overview">
+<h2>Overview</h2>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;edged_curve.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -51,6 +53,7 @@
     <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-edged-curve-1a9533f46c0373592ba3ee5326f0a90f22">point</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-edged-curve-1ae91b29fbd20263e1e172299ab1e7a9c5">edge_length</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-edged-curve-1ae84704d93ee7a423cb6befcd2bdc29fd">edge_barycenter</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-1af61e77f36c3fb74706fb75bf2e76de77"><span class="std std-ref">bounding_box</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
@@ -58,7 +61,7 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeEdgedCurve.html#doxid-classgeode-1-1-open-geode-edged-curve"><span class="std std-ref">OpenGeodeEdgedCurve</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
-<h2>Inherited Members</h2>
+<h3>Inherited Members</h3>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
@@ -76,6 +79,15 @@
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph-1a7ae6a6d4f1f52849125f55f8012d9819"><span class="std std-ref">nb_edges</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph-1a4958092d4cc40efc7f1ed612c2a8727e"><span class="std std-ref">edge_attribute_manager</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_EdgeVertex.html#doxid-structgeode-1-1-edge-vertex"><span class="std std-ref">EdgeVertex</span></a><span></span><span class="o">&gt;&amp;</span> <a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph-1a218ffe84e47003bc192e61355cbededc"><span class="std std-ref">edges_around_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span></pre>
+</div>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-edged-curve"></span><h2>Detailed Documentation</h2>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-edged-curve-1af61e77f36c3fb74706fb75bf2e76de77"><span id="index-1"></span><a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">bounding_box</span><span class="p">()</span> <span class="k">const</span></pre>
+<p>Compute the bounding box from mesh vertices</p>
+</div>
 </div>
 </div>
 

@@ -16,7 +16,10 @@ class geode::Section
 	class_geode_Section_InternalLineRange.rst
 	class_geode_Section_ItemLineRange.rst
 
-A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, and :ref:`Surfaces <doxid-classgeode_1_1_surfaces>`. This class provides classes for range-based iteration on :ref:`Component <doxid-classgeode_1_1_component>` boundaries and incidences.
+Overview
+~~~~~~~~
+
+A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, and :ref:`Surfaces <doxid-classgeode_1_1_surfaces>`. :ref:`More...<details-classgeode_1_1_section>`
 
 
 .. ref-code-block:: cpp
@@ -56,6 +59,7 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`
 		:ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_section_1_1_embedded_surface_range>` :target:`embeddings<doxid-classgeode_1_1_section_1a42c9d294235623d981499daa0cc93d5a>`(const Line2D& line) const;
 		:ref:`ItemLineRange<doxid-classgeode_1_1_section_1_1_item_line_range>` :target:`items<doxid-classgeode_1_1_section_1a2d7fb657e22151e3a4fdb55e959aa6cc>`(const ModelBoundary2D& boundary) const;
 		bool :target:`is_closed<doxid-classgeode_1_1_section_1a896a8243466a8fd20037fb2f8deda788>`(const Line2D& line) const;
+		BoundingBox2D :ref:`bounding_box<doxid-classgeode_1_1_section_1a14185bc238dbfbc2b03c305bba179b7b>`() const;
 		std::string :target:`native_extension<doxid-classgeode_1_1_section_1aa2e22b1974adb966eeea8f30b0e6cd2a>`() const;
 		static std::string :target:`native_extension_static<doxid-classgeode_1_1_section_1a6b047f58b1915c2a8f3e39e46a5ec577>`();
 	};
@@ -103,4 +107,24 @@ Inherited Members
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a5f6dfd3e7a4d98b6c1d05d77b8f392f6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`unique_vertex<doxid-classgeode_1_1_vertex_identifier_1ad46b7b2e70e92e6fbfe1028cd6c20655>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex) const;
 		std::string :ref:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a052e9d89f3856e0ceb3c4a5316330010>`(const std::string& directory) const;
+
+.. _details-classgeode_1_1_section:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`Corners <doxid-classgeode_1_1_corners>`, :ref:`Lines <doxid-classgeode_1_1_lines>`, and :ref:`Surfaces <doxid-classgeode_1_1_surfaces>`. This class provides classes for range-based iteration on :ref:`Component <doxid-classgeode_1_1_component>` boundaries and incidences.
+
+Methods
+-------
+
+.. index:: pair: function; bounding_box
+.. _doxid-classgeode_1_1_section_1a14185bc238dbfbc2b03c305bba179b7b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	BoundingBox2D bounding_box() const
+
+Compute the bounding box from component meshes
 
