@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::detail::FacetId
+.. _doxid-structgeode_1_1detail_1_1_facet_id:
+
+struct geode::detail::FacetId
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <facet_storage.h>
+	
+	struct FacetId
+	{
+		// fields
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`id<doxid-structgeode_1_1detail_1_1_facet_id_1a6bad3b88a1f0141d306515b61184c628>`;
+	};

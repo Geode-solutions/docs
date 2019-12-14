@@ -53,6 +53,7 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`edge_barycenter<doxid-classgeode_1_1_polyhedral_solid_1a67bc2bfec0d982bd1b49a0555ae7df55>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		std::vector<:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`> :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_polyhedral_solid_1a28da8955482ace2221f0274041f0902e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`polyhedra_around_edge<doxid-classgeode_1_1_polyhedral_solid_1ab51e00a909d905e43df2babda59f8d81>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`polyhedra_from_facet<doxid-classgeode_1_1_polyhedral_solid_1aed7a529dd17c4e4d50582174ed9a76ab>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`polyhedron_attribute_manager<doxid-classgeode_1_1_polyhedral_solid_1a7d3073df4c570fe249da997d4d129a3c>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`facet_attribute_manager<doxid-classgeode_1_1_polyhedral_solid_1aade0a4d95592ebf073b40e6e3da090bd>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_polyhedral_solid_1ab5ddd74cbfbe81be2f2d942f555e9d64>`() const;
@@ -597,6 +598,28 @@ Get all the polyhedra with both edge vertices.
 		- edge_id
 
 		- Index of the edge
+
+.. index:: pair: function; polyhedra_from_facet
+.. _doxid-classgeode_1_1_polyhedral_solid_1aed7a529dd17c4e4d50582174ed9a76ab:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> polyhedra_from_facet(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const
+
+Return all polyhedra made with the given facet.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- facet_id
+
+		- Index of the facet
 
 .. index:: pair: function; polyhedron_attribute_manager
 .. _doxid-classgeode_1_1_polyhedral_solid_1a7d3073df4c570fe249da997d4d129a3c:

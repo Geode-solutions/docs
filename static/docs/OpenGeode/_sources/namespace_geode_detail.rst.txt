@@ -7,6 +7,7 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
+	struct_geode_detail_FacetId.rst
 	struct_geode_detail_SetValue.rst
 	class_geode_detail_ComponentsStorage.rst
 	class_geode_detail_EdgesImpl.rst
@@ -31,6 +32,7 @@ namespace geode::detail
 
 	// structs
 
+	struct :ref:`FacetId<doxid-structgeode_1_1detail_1_1_facet_id>`;
 	struct :ref:`SetValue<doxid-structgeode_1_1detail_1_1_set_value>`;
 
 	// classes
