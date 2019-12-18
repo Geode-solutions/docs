@@ -59,6 +59,7 @@
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polyhedral-solid-builder-1a1e1fde1c3984916310457c2bff04346e"><span class="std std-ref">delete_polyhedra</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polyhedral-solid-builder-1a2545e91d46de0847f3876c9f6734da01"><span class="std std-ref">delete_isolated_vertices</span></a><span></span><span class="p">();</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polyhedral-solid-builder-1acc883e03d29cc82c85bbcc63851c1a8f"><span class="std std-ref">delete_isolated_facets</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polyhedral-solid-builder-1a382653b0a1e0dc414ac2ac112ff95083"><span class="std std-ref">delete_isolated_edges</span></a><span></span><span class="p">();</span>
     <span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-polyhedral-solid-builder-1a80ddb82775444028c339b61d4e0a9466"><span class="std std-ref">polyhedron_around_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polyhedral-solid-builder-1a3669caa58b7770cd34fddfe16e56e271"><span class="std std-ref">associate_polyhedron_vertex_to_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span>
 <span class="p">};</span>
@@ -223,7 +224,9 @@
 <p>Delete all the isolated vertices (not used as polyhedron vertices)</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polyhedral-solid-builder-1acc883e03d29cc82c85bbcc63851c1a8f"><span id="index-11"></span><span></span><span class="kt">void</span> <span class="n">delete_isolated_facets</span><span class="p">()</span></pre>
 <p>Delete all the isolated facets (not used as polyhedron facets)</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a80ddb82775444028c339b61d4e0a9466"><span id="index-12"></span><span></span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_around_vertex</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a382653b0a1e0dc414ac2ac112ff95083"><span id="index-12"></span><span></span><span class="kt">void</span> <span class="n">delete_isolated_edges</span><span class="p">()</span></pre>
+<p>Delete all the isolated edges (not used as polyhedron edges)</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a80ddb82775444028c339b61d4e0a9466"><span id="index-13"></span><span></span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_around_vertex</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return one polyhedron with one of the vertices matching given vertex.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
@@ -237,7 +240,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a3669caa58b7770cd34fddfe16e56e271"><span id="index-13"></span><span></span><span class="kt">void</span> <span class="n">associate_polyhedron_vertex_to_vertex</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polyhedral-solid-builder-1a3669caa58b7770cd34fddfe16e56e271"><span id="index-14"></span><span></span><span class="kt">void</span> <span class="n">associate_polyhedron_vertex_to_vertex</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">,</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span>
     <span class="p">)</span></pre>
@@ -271,7 +274,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
