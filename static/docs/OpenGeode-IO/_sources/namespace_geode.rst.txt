@@ -15,6 +15,7 @@ namespace geode
 	class_geode_PLYOutput.rst
 	class_geode_STLInput.rst
 	class_geode_STLOutput.rst
+	class_geode_SVGInput.rst
 
 
 
@@ -38,6 +39,7 @@ namespace geode
 	class :ref:`PLYOutput<doxid-classgeode_1_1_p_l_y_output>`;
 	class :ref:`STLInput<doxid-classgeode_1_1_s_t_l_input>`;
 	class :ref:`STLOutput<doxid-classgeode_1_1_s_t_l_output>`;
+	class :ref:`SVGInput<doxid-classgeode_1_1_s_v_g_input>`;
 
 	// global functions
 
