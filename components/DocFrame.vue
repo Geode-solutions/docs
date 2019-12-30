@@ -4,13 +4,13 @@
       <v-btn @click="goIndex">
         Back to index
       </v-btn>
-      <span class="display-1  ">{{ project }} documentation</span>
+      <span class="display-1 ml-5">{{ project }} documentation</span>
       <iframe 
         ref="docFrame"
         width="100%"
         style="border: none;"
         scrolling="no"
-        :src="page"/>
+        :src="index"/>
     </v-flex>
   </v-layout>
 </template>
@@ -25,18 +25,21 @@ export default {
     }
   },
   computed: {
-    page() {
-      return '/docs/' + this.project + '/index.html';
+    index() {
+      return '/docs/' + this.project +'/genindex.html';
     }
   },
   mounted() {
+    if(this.$route.query.page) {
+      this.$refs.docFrame.src = '/docs/' + this.project + '/'+this.$route.query.page;
+    }
     this.$refs.docFrame.addEventListener("load", ()=>{
       this.$refs.docFrame.style.height = this.$refs.docFrame.contentWindow.document.body.offsetHeight + "px";
     });
   },
   methods: {
     goIndex() {
-      this.$refs.docFrame.src = this.page;
+      this.$refs.docFrame.src = this.index;
     }
   }
 }

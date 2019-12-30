@@ -1,25 +1,35 @@
 <template>
   <v-app>
-    <v-app-bar dark app clipped-left color="primary">
-        <v-btn text active-class="" nuxt to="/">
-      <v-app-bar-nav-icon>
-        <v-icon large>$vuetify.icons.logo</v-icon>
-      </v-app-bar-nav-icon>
-      <v-toolbar-title>Geode-solutions</v-toolbar-title>
-        </v-btn>
-      <v-spacer></v-spacer>
-      <v-toolbar-items>
-        <v-btn
-          text
+    <v-navigation-drawer
+      stateless
+      app
+      clipped
+      permanent
+    >
+      <v-list
+        dense
+        nav
+      >
+        <v-list-item
+          v-for="item in items"
+          :key="item.title"
+          link
           nuxt
           :to="item.to"
-          :key="index"
-          v-for="(item, index) in items"
         >
-          <span>{{ item.title }}</span>
-        </v-btn>
-      </v-toolbar-items>
-
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <v-app-bar dark app clipped-left color="primary">
+      <v-btn text active-class="" nuxt to="/">
+        <v-app-bar-nav-icon>
+          <v-icon large>$vuetify.icons.logo</v-icon>
+        </v-app-bar-nav-icon>
+        <v-toolbar-title>Geode-solutions</v-toolbar-title>
+      </v-btn>
     </v-app-bar>
     <v-content>
       <v-container>
