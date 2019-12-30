@@ -7,26 +7,35 @@
       permanent
     >
       <v-list
-        dense
         nav
       >
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          link
-          nuxt
-          :to="item.to"
-        >
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <template v-for="(item, index) in items">
+          <v-subheader v-if="item.divider"
+                       :key="index"
+          >
+            {{ item.divider }}
+          </v-subheader>
+          <v-list-item
+            v-else
+            :key="index"
+            link
+            nuxt
+            :to="item.to"
+            color="primary"
+          >
+            <v-list-item-content>
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </template>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar dark app clipped-left color="primary">
       <v-btn text active-class="" nuxt to="/">
         <v-app-bar-nav-icon>
-          <v-icon large>$vuetify.icons.logo</v-icon>
+          <v-icon large>
+            $vuetify.icons.logo
+          </v-icon>
         </v-app-bar-nav-icon>
         <v-toolbar-title>Geode-solutions</v-toolbar-title>
       </v-btn>
@@ -44,9 +53,12 @@
     data() {
       return {
         items: [
-          { title: 'OpenGeode', to: '/opengeode' },
-          { title: 'OpenGeode-IO', to: '/opengeode-io' },
-          { title: 'OpenGeode-Geosciences', to: '/opengeode-geosciences' },
+          { divider: 'PAGES'},
+          { title: 'OpenGeode DataModel', to: '/datamodel'},
+          { divider: 'CODE'},
+          { title: 'OpenGeode', to: '/opengeode'},
+          { title: 'OpenGeode-IO', to: '/opengeode-io'},
+          { title: 'OpenGeode-Geosciences', to: '/opengeode-geosciences'},
           { title: 'OpenGeode-GeosciencesIO', to: '/opengeode-geosciencesio' }
         ]
       }

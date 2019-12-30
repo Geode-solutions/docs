@@ -10,7 +10,8 @@
         width="100%"
         style="border: none;"
         scrolling="no"
-        :src="index"/>
+        :src="index"
+      />
     </v-flex>
   </v-layout>
 </template>
@@ -26,20 +27,20 @@ export default {
   },
   computed: {
     index() {
-      return '/docs/' + this.project +'/genindex.html';
+      return '/docs/' + this.project +'/genindex.html'
     }
   },
   mounted() {
     if(this.$route.query.page) {
-      this.$refs.docFrame.src = '/docs/' + this.project + '/'+this.$route.query.page;
+      this.$refs.docFrame.src = '/docs/' + this.project + '/'+this.$route.query.page
     }
     this.$refs.docFrame.addEventListener("load", ()=>{
-      this.$refs.docFrame.style.height = this.$refs.docFrame.contentWindow.document.body.offsetHeight + "px";
-    });
+      this.$refs.docFrame.style.height = this.$refs.docFrame.contentWindow.document.body.offsetHeight + "px"
+    })
   },
   methods: {
     goIndex() {
-      this.$refs.docFrame.src = this.index;
+      this.$refs.docFrame.src = this.index
     }
   }
 }

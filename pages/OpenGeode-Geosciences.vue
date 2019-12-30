@@ -1,10 +1,10 @@
 <template>
-  <doc-frame project="OpenGeode-Geosciences"/>
+  <doc-frame project="OpenGeode-Geosciences" />
 </template>
 
 
 <script>
-import DocFrame from "@/components/DocFrame";
+import DocFrame from "@/components/DocFrame"
 export default {
   components: {
     DocFrame
