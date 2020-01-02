@@ -55,7 +55,7 @@
         items: [
           { divider: 'PAGES'},
           { title: 'OpenGeode DataModel', to: '/datamodel'},
-          { divider: 'CODE'},
+          { divider: 'CODE DOCUMENTATION'},
           { title: 'OpenGeode', to: '/opengeode'},
           { title: 'OpenGeode-IO', to: '/opengeode-io'},
           { title: 'OpenGeode-Geosciences', to: '/opengeode-geosciences'},
