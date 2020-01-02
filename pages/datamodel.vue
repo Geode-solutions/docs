@@ -8,6 +8,10 @@
       <code>BRep</code>, let's use this class as an exemple.
     </p>
 
+    <img src="@/assets/datamodel1.png" />
+
+    <!-- <v-img src="@/assets/datamodel1.png" aspect-ratio="1" &#x3C;!-- class="grey lighten-2" -->
+
     <h2>Manipulating Surfaces</h2>
 
     <p>
