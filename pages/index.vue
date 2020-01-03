@@ -1,25 +1,17 @@
 <template>
-  <v-layout column justify-center align-left>
-    <h2 class="display-1 ma-5">Guide</h2>
-    <v-flex v-for="guide in guides" :key="guide.title" ma-3>
-      <v-card nuxt :to="guide.route">
-        <v-card-title primary-title class="headline">{{ guide.title }}</v-card-title>
-        <v-card-text>{{ guide.descr }}</v-card-text>
-      </v-card>
-    </v-flex>
-
-    <h2 class="display-1 ma-5">Code documentation</h2>
-    <v-flex v-for="project in projects" :key="project.title" ma-3>
-      <v-card nuxt :to="project.route">
-        <v-card-title primary-title class="headline">{{ project.title }}</v-card-title>
-        <v-card-text>{{ project.descr }}</v-card-text>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <v-row class="flex-column">
+    <theme title="Guide" :cards="guides"/>
+    <theme title="Code documentation" :cards="projects"/>
+  </v-row>
 </template>
 
 <script>
+import Theme from "@/components/Theme"
+
 export default {
+  components: {
+    Theme
+  },
   data: () => ({
     guides: [
       {

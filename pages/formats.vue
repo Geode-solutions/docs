@@ -1,88 +1,41 @@
 <template>
   <v-layout column>
     <h1 class="display-4 ma-5">Supporting file formats</h1>
-
-    <h2 :class="section">IO</h2>
-
-    <v-simple-table class="body-1">
-      <template v-slot:default>
-        <thead>
-          <tr>
-            <th>File format</th>
-            <th>OpenGeode object</th>
-            <th>Input</th>
-            <th>Output</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="format in formats_io" :key="format.name">
-            <td>{{ format.extension }}</td>
-            <td>{{ format.cpp }}</td>
-            <td>
-              <v-icon color="primary" v-if="format.in">fas fa-check</v-icon>
-            </td>
-            <td>
-              <v-icon color="primary" v-if="format.out">fas fa-check</v-icon>
-            </td>
-          </tr>
-        </tbody>
-      </template>
-    </v-simple-table>
-
-    <h2 :class="section">GeosciencesIO</h2>
-
-    <v-simple-table class="body-1">
-      <template v-slot:default>
-        <thead>
-          <tr>
-            <th>File format</th>
-            <th>OpenGeode object</th>
-            <th>Input</th>
-            <th>Output</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="format in formats_geosciencesio" :key="format.name">
-            <td>{{ format.extension }}</td>
-            <td>{{ format.cpp }}</td>
-            <td>
-              <v-icon color="primary" v-if="format.in">fas fa-check</v-icon>
-            </td>
-            <td>
-              <v-icon color="primary" v-if="format.out">fas fa-check</v-icon>
-            </td>
-          </tr>
-        </tbody>
-      </template>
-    </v-simple-table>
+    <format title="IO" :formats="formats_io"/>
+    <format title="GeosciencesIO" :formats="formats_geosciencesio"/>
   </v-layout>
 </template>
 
 <script>
+import Format from "@/components/Format"
+
 export default {
+  components: {
+    Format
+  },
   data: () => ({
     formats_io: [
       {
         extension: '.msh',
-        cpp: 'BRep',
+        cpp: "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
         in: true,
         out: false
       },
       {
         extension: '.stl',
-        cpp: 'TriangulatedSurface3D',
+        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
         in: true,
         out: true
       },
       {
         extension: '.ply',
-        cpp: 'PolygonalSurface3D',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
         in: true,
         out: true
       },
       {
         extension: '.obj',
-        cpp: 'PolygonalSurface3D',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
         in: true,
         out: true
       }
@@ -90,21 +43,17 @@ export default {
     formats_geosciencesio: [
       {
         extension: '.ml',
-        cpp: 'StructuralModel',
+        cpp: "<a href='/opengeode-geosciences?page=class_geode_StructuralModel.html'><code>StructuralModel</code></a>",
         in: true,
         out: false
       },
       {
         extension: '.ts',
-        cpp: 'TriangulatedSurface3D',
+        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
         in: true,
         out: false
       }
-    ],
-    section: 'display-2 ma-5 pa-5',
-    paragraph: 'body-1 my-5',
-    brep:
-      "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>"
+    ]
   })
 }
 </script>
