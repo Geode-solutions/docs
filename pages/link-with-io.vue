@@ -10,21 +10,59 @@
     <p :class="paragraph">You just have to add in your executable/code depending on your needs:</p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
-      BRep my_brep;
-      auto nb = my_brep.nb_surfaces();
-    </code>
+    <code class="cpp primary--text">initialize_mesh_io();</code>
     <!-- eslint-enable -->
-    \code initialize_mesh_io();
-    \endcode
-    and/or
-    \code initialize_model_io();
-    \endcode
-    These functions are declared in the files `include/geode/mesh/detail/common.h` and `include/geode/model/representation/detail/common.h`. Do not forget to include the right file in your code.
-    You have examples in the OpenGeode-IO tests.
-    <h2 :class="section">Why I have to do that?</h2>The reason is quite simple. Have a quick look at the file `OpenGeode-IO/src/geode/mesh/common.cpp`.
-    In this file you can see that supported file formats for meshes are registered when the `OpenGeode-IO_mesh` library is loaded. But the I/O code is not directly called in executable (see tests for examples), and as a consequence the `OpenGeode-IO_mesh` library is not loaded. This is called the lazy loading of dependencies.
-    If you call the function `initialize_mesh_io()`, the library is loaded, the file formats are registered and you are able to use \link opengeode_io_supported_file_formats our supported file formats\endlink.
+
+    <p :class="paragraph">and/or</p>
+
+    <!-- eslint-disable -->
+    <code class="cpp primary--text">initialize_model_io();</code>
+    <!-- eslint-enable -->
+
+    <p :class="paragraph">
+      These functions are declared in the files
+      <a
+        href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/include/geode/mesh/detail/common.h"
+      >include/geode/mesh/detail/common.h</a> and
+      <a
+        href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/include/geode/model/detail/common.h"
+      >include/geode/model/detail/common.h</a>.
+    </p>
+    <p :class="paragraph">
+      Do not forget to include the right file in your code.
+      You have examples in the OpenGeode-IO
+      <a
+        href="https://github.com/Geode-solutions/OpenGeode-IO/tree/master/tests"
+      >tests</a>.
+    </p>
+
+    <h2 :class="section">Why I have to do that?</h2>
+
+    <p :class="paragraph">
+      The reason is quite simple.
+      Have a quick look at the file
+      <a
+        href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/src/geode/mesh/common.cpp"
+      >OpenGeode-IO/src/geode/mesh/common.cpp</a>.
+    </p>
+    <p :class="paragraph">
+      In this file you can see that supported file formats for meshes are registered
+      when the
+      <code>OpenGeode_IO_mesh</code> library is loaded.
+      But the I/O code is not directly called in executable (see
+      <a
+        href="https://github.com/Geode-solutions/OpenGeode-IO/tree/master/tests"
+      >tests</a> for examples),
+      and as a consequence the
+      <code>OpenGeode_IO_mesh</code> library is not loaded.
+      This is called the lazy loading of dependencies.
+      If you call the function
+      <code>initialize_mesh_io()</code>, the library is loaded,
+      the file formats are registered and you are able to use
+      <a
+        href="/formats"
+      >our supported file formats</a>.
+    </p>
   </v-layout>
 </template>
 
