@@ -10,15 +10,13 @@
 
     <img src="@/assets/datamodel1.png" />
 
-    <!-- <v-img src="@/assets/datamodel1.png" aspect-ratio="1" &#x3C;!-- class="grey lighten-2" -->
-
     <h2>Manipulating Surfaces</h2>
 
     <p>
       A
       <code>BRep</code>, for Boundary Representation, represents a 3D object by its boundaries.
       In OpenGeode, these 3D boundaries are
-      <code>Surfaces</code>.
+      <code>Surfaces</code> (in grey on images).
       A BRep is thus composed of Surfaces:
       it means that the class
       <code>BRep</code> inherits from the class
@@ -62,7 +60,7 @@
       Hopefully, it is possible to get one
       <code>Surface</code> from a
       <code>BRep</code>.
-      An major feature of OpenGeode is that model components are not continuously numbered:
+      A major feature of OpenGeode is that model components are not continuously numbered:
       they are identified by an unique index
       <code>uuid</code>.
       This is a fondamental design element to allow modification of OpenGeode models.
@@ -112,8 +110,8 @@
     </p>
 
     <p>
-      But as Surfaces bound Blocks, BRep Surfaces are bounded by Lines,
-      and BRep Lines are bounded by Corners. These class are named
+      But as Surfaces bound Blocks, BRep Surfaces are bounded by Lines (in blue),
+      and BRep Lines are bounded by Corners (in green). These class are named
       <code>Components</code>.
       The
       <code>BRep</code> class thus inherits from all these classes.
@@ -146,7 +144,8 @@
     <p>
       A BRep is composed of several Components and several types of Components.
       There are some relations between Components;
-      for example and as mentionned above, Lines are boundaries of Surfaces.
+      for example and as mentionned above, Lines are boundaries of Surfaces
+      (boundaries are depicted by curved black arrows).
       All these relations between Components are stored in the class
       <code>Relationships</code>.
       <code>BRep</code> inherits from this class.
@@ -182,7 +181,8 @@
     </v-card>
 
     <p>
-      The opposite relation type of boundary is named incidence,
+      The opposite relation type of boundary is named incidence
+      (depicted by straight brown arrows),
       and the same methods and ranges are available.
     </p>
 
@@ -198,7 +198,8 @@
 
     <p>
       The number of relations of a Surface and a Line is used to define
-      if it is closed. A Line with no boundary or only one boundary is closed.
+      if it is closed. A Line with no boundary or only one boundary is closed
+      (as for the round Line on the right side of the cube).
       A Line with two boundaries is not closed.
       A Line with more that two boundaries is not valid.
       A Surface with no boundary is closed.
@@ -212,7 +213,8 @@
       An other kind of relations between Components allows to gather Components into groups.
       This is the notion of
       <code>Collections</code>. Components gathered into collections
-      are called items.
+      are called items. For example, the red Surfaces can be gather in a collection
+      standing for the right side of the cube.
     </p>
 
     <p>
