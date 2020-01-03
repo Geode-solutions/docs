@@ -7,7 +7,7 @@
       One of OpenGeode central classes is
       <span
         v-html="brep"
-      />, let's use this class as an exemple.
+      />. Let's use this class as an exemple.
     </p>
 
     <img src="@/assets/datamodel-1.svg" />
@@ -50,30 +50,30 @@
       BRep my_brep;
       for( const auto& surface : my_brep.surfaces() )
       {
-      // do something with surface (which is a Surface3D)
+      // Do something with surface (which is a Surface3D)
       auto nbv = surface.mesh().nb_vertices();
       }
     </code>
     <!-- eslint-enable -->
 
     <p :class="paragraph">
-      Notice that each surface is get using a const reference
-      since a
-      <span v-html="surface3d" /> is not copyable nor modifiable.
+      Note that each surface is got using a const reference
+      as a
+      <span v-html="surface3d" /> is neither copyable nor modifiable.
     </p>
 
     <p :class="paragraph">
       Now, you may want to process only a single
       <span v-html="surface3d" />.
-      Hopefully, it is possible to get one
+      Hopefully, it is possible to get a specific
       <span v-html="surface3d" /> from a
       <span v-html="brep" />.
       A major feature of OpenGeode is that model components are not continuously numbered:
-      they are identified by an unique index
+      they are identified by a unique index
       <span
         v-html="uuid"
       />.
-      This is a fondamental design element to allow modification of OpenGeode models.
+      This is a fundamental design element to allow modifications of OpenGeode models.
       You can thus get a
       <span
         v-html="surface3d"
@@ -92,7 +92,7 @@
     <h2 :class="section">What about other Components?</h2>
 
     <p :class="paragraph">
-      We have seen that
+      We have seen that a
       <span v-html="brep" /> is composed of
       <span v-html="surfaces3d" />.
       These Surfaces delimit volumes regionalizing an object.
@@ -118,7 +118,7 @@
     <!-- eslint-enable -->
 
     <p :class="paragraph">
-      You can count number of Blocks, iterates on Blocks,
+      You can count the number of Blocks, iterate on Blocks,
       get a specific
       <span
         v-html="block3d"
@@ -221,7 +221,7 @@
 
     <p :class="paragraph">
       Another type of relations is internal, and its opposite relation: embedded.
-      A Component A is interne to a Component B if A is included inside B.
+      A Component A is internal to a Component B if A is included inside B.
       Internal is different from boundary.
       You can notice that Corners and Lines can be internal Components
       of a Surface (but only Lines can be boundary of Surfaces).
@@ -275,7 +275,7 @@
 
     <p :class="paragraph">
       As for other relationships, you may get the number of items in a collection,
-      iterates on items, ...
+      iterates on items, etc.
     </p>
 
     <p :class="paragraph">
@@ -299,12 +299,12 @@
       The class
       <span v-html="brep" /> also inherits from the class
       <span v-html="vertexIdentifier" />
-      that store this kind of topological information between Components meshes.
+      that stores this kind of topological information between Components meshes.
       <span
         v-html="vertexIdentifier"
-      /> provide methods to request the number of unique
+      /> provides methods to request the number of unique
       vertices, to get all the mesh vertices from a unique vertex index, and,
-      conversely, get the unique vertex index of one mesh vertex:
+      conversely, get the unique vertex index of a mesh vertex:
     </p>
 
     <!-- eslint-disable -->
@@ -335,7 +335,7 @@
 
     <p :class="paragraph">
       Finally, the class
-      <span v-html="brep" /> is defined as following:
+      <span v-html="brep" /> is defined as follows:
     </p>
 
     <!-- eslint-disable -->
@@ -351,7 +351,7 @@
     <h2 :class="section">Creating your own models</h2>
 
     <p :class="paragraph">
-      At this point, you learn all the information about
+      At this point, you have learned all the information about
       <span v-html="brep" /> inheritance.
       OpenGeode provides other models, for example:
     </p>
