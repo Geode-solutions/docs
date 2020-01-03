@@ -31,14 +31,14 @@
 
     <h2 :class="section">GeosciencesIO</h2>
 
-    <v-simple-table>
+    <v-simple-table class="body-1">
       <template v-slot:default>
         <thead>
           <tr>
-            <th class="text-left">File format</th>
-            <th class="text-left">OpenGeode object</th>
-            <th class="text-left">Input</th>
-            <th class="text-left">Output</th>
+            <th>File format</th>
+            <th>OpenGeode object</th>
+            <th>Input</th>
+            <th>Output</th>
           </tr>
         </thead>
         <tbody>

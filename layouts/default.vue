@@ -36,6 +36,7 @@ export default {
         { divider: 'GUIDE' },
         { title: 'DataModel', to: '/datamodel' },
         { title: 'Supported file formats', to: '/formats' },
+        { title: 'How to link with OpenGeode-IO', to: '/link-with-io' },
         { divider: 'CODE DOCUMENTATION' },
         { title: 'OpenGeode', to: '/opengeode' },
         { title: 'OpenGeode-IO', to: '/opengeode-io' },
