@@ -8,7 +8,7 @@
       <code>BRep</code>, let's use this class as an exemple.
     </p>
 
-    <img src="@/assets/datamodel1.png" />
+    <img src="@/assets/datamodel-1.svg" />
 
     <h2>Manipulating Surfaces</h2>
 
@@ -31,6 +31,8 @@
         <p>auto nb = my_brep.nb_surfaces();</p>
       </v-card-text>
     </v-card>
+
+    <img src="@/assets/datamodel-2.svg" />
 
     <p>
       To iterate on all the Surfaces of a
@@ -109,6 +111,8 @@
       <code>uuid</code> as done for Surfaces.
     </p>
 
+    <img src="@/assets/datamodel-3.svg" />
+
     <p>
       But as Surfaces bound Blocks, BRep Surfaces are bounded by Lines (in blue),
       and BRep Lines are bounded by Corners (in green). These class are named
@@ -120,6 +124,8 @@
       The
       <code>BRep</code> class is defined as following:
     </p>
+
+    <img src="@/assets/datamodel-4.svg" />
 
     <v-card>
       <v-card-text>
@@ -150,6 +156,8 @@
       <code>Relationships</code>.
       <code>BRep</code> inherits from this class.
     </p>
+
+    <img src="@/assets/datamodel-5.svg" />
 
     <p>
       Methods and ranges are provided to request relationships between Components.
@@ -186,6 +194,8 @@
       and the same methods and ranges are available.
     </p>
 
+    <img src="@/assets/datamodel-6.svg" />
+
     <p>
       Another type of relations is internal, and its opposite relation: embedded.
       A Component A is interne to a Component B if A is included inside B.
@@ -216,6 +226,8 @@
       are called items. For example, the red Surfaces can be gather in a collection
       standing for the right side of the cube.
     </p>
+
+    <img src="@/assets/datamodel-7.svg" />
 
     <p>
       In the class
@@ -255,10 +267,12 @@
     <p>
       In a OpenGeode model, each Component mesh has its own set of vertices
       with a continuous indexing. But several vertices from several BRep Component
-      meshes may represent a single point in the model (XXX Image).
+      meshes may represent a single point in the model (groups of black points on image).
       Model vertex represented by potentially several mesh vertices is called
       <b>unique vertex</b>.
     </p>
+
+    <img src="@/assets/datamodel-8.svg" />
 
     <p>
       The class
