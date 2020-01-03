@@ -1,8 +1,8 @@
 <template>
   <v-layout column>
-    <h1>OpenGeode DataModel</h1>
+    <h1 class="display-4 ma-5">OpenGeode DataModel</h1>
 
-    <p>
+    <p :class="paragraph">
       In this guide, you will learn fundamental elements to understand and manipulate OpenGeode data model.
       One of OpenGeode central classes is
       <code>BRep</code>, let's use this class as an exemple.
@@ -12,9 +12,9 @@
 
     <!-- <v-img src="@/assets/datamodel1.png" aspect-ratio="1" &#x3C;!-- class="grey lighten-2" -->
 
-    <h2>Manipulating Surfaces</h2>
+    <h2 :class="section">Manipulating Surfaces</h2>
 
-    <p>
+    <p :class="paragraph">
       A
       <code>BRep</code>, for Boundary Representation, represents a 3D object by its boundaries.
       In OpenGeode, these 3D boundaries are
@@ -27,36 +27,32 @@
       <code>BRep</code> :
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>BRep my_brep;</p>
-        <p>auto nb = my_brep.nb_surfaces();</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      BRep my_brep;
+      auto nb = my_brep.nb_surfaces();
+    </code>
 
-    <p>
+    <p :class="paragraph">
       To iterate on all the Surfaces of a
       <code>BRep</code>, a range on Surfaces is provided:
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>BRep my_brep;</p>
-        <p>for(const Surface& surface : my_brep.surfaces() )</p>
-        <p>{</p>
-        <p style="margin-left: 4em;">// do something with surface</p>
-        <p style="margin-left: 4em;">const auto nbv = surface.mesh().nb_vertices();</p>
-        <p>}</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      BRep my_brep;
+      for( const auto& surface : my_brep.surfaces() )
+      {
+          // do something with surface (which is a Surface3D)
+          auto nbv = surface.mesh().nb_vertices();
+      }
+    </code>
 
-    <p>
+    <p :class="paragraph">
       Notice that each surface is get using a const reference
       since a
       <code>Surface</code> is not copyable nor modifiable.
     </p>
 
-    <p>
+    <p :class="paragraph">
       Now, you may want to process only a single
       <code>Surface</code>.
       Hopefully, it is possible to get one
@@ -71,17 +67,15 @@
       <code>uuid</code>:
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>BRep my_brep;</p>
-        <p>uuid surf_id;</p>
-        <p>const auto& surface = my_brep.surface( surf_id );</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      BRep my_brep;
+      uuid surf_id;
+      const auto& surface = my_brep.surface( surf_id );
+    </code>
 
-    <h2>What about other Components?</h2>
+    <h2 :class="section">What about other Components?</h2>
 
-    <p>
+    <p :class="paragraph">
       We have seen that
       <code>BRep</code> is composed of
       <code>Surfaces</code>.
@@ -95,23 +89,22 @@
       <code>Blocks3D</code>.
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>class BRep : public Surfaces3D, public Blocks3D</p>
-        <p>{</p>
-        <p style="margin-left: 4em;">...</p>
-        <p>}</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      class BRep : public Surfaces3D, 
+                   public Blocks3D
+      {
+          ...
+      }
+    </code>
 
-    <p>
+    <p :class="paragraph">
       You can count number of Blocks, iterates on Blocks,
       get a specific
       <code>Block</code> from its
       <code>uuid</code> as done for Surfaces.
     </p>
 
-    <p>
+    <p :class="paragraph">
       But as Surfaces bound Blocks, BRep Surfaces are bounded by Lines,
       and BRep Lines are bounded by Corners. These class are named
       <code>Components</code>.
@@ -123,16 +116,14 @@
       <code>BRep</code> class is defined as following:
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>class BRep : public AddComponents< 3, Corners, Lines, Surfaces, Blocks ></p>
-        <p>{</p>
-        <p style="margin-left: 4em;">...</p>
-        <p>}</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      class BRep : public AddComponents< 3, Corners, Lines, Surfaces, Blocks >
+      {
+          ...
+      };
+    </code>
 
-    <p>
+    <p :class="paragraph">
       In this code,
       <code>3</code> indicates that all
       <code>Corners</code>,
@@ -141,9 +132,9 @@
       <code>Blocks</code> are 3-dimensional.
     </p>
 
-    <h2>Relationships between Components</h2>
+    <h2 :class="section">Relationships between Components</h2>
 
-    <p>
+    <p :class="paragraph">
       A BRep is composed of several Components and several types of Components.
       There are some relations between Components;
       for example and as mentionned above, Lines are boundaries of Surfaces.
@@ -152,41 +143,37 @@
       <code>BRep</code> inherits from this class.
     </p>
 
-    <p>
+    <p :class="paragraph">
       Methods and ranges are provided to request relationships between Components.
       For example, you can get the number of Lines which are boundaries of a
       given Surface (using its
       <code>uuid</code>):
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>BRep my_brep;</p>
-        <p>uuid surf_id;</p>
-        <p>auto nb_boundary_lines = my_brep.nb_boundaries( surf_id );</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      BRep my_brep;
+      uuid surf_id;
+      auto nb_boundary_lines = my_brep.nb_boundaries( surf_id );
+    </code>
 
-    <p>As iteration on BRep Surfaces, it is also possible to iterate on Surface boundary Lines:</p>
+    <p :class="paragraph">As iteration on BRep Surfaces, it is also possible to iterate on Surface boundary Lines:</p>
 
-    <v-card>
-      <v-card-text>
-        <p>BRep my_brep;</p>
-        <p>uuid surf_id;</p>
-        <p>const auto& surface = my_brep.surface( surf_id );</p>
-        <p>for(const Line& line : my_brep.boundaries( surface ) )</p>
-        <p>{</p>
-        <p style="margin-left: 4em;">// do something with line</p>
-        <p>}</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      BRep my_brep;
+      uuid surf_id;
+      const auto& surface = my_brep.surface( surf_id );
+      for( const auto& line : my_brep.boundaries( surface ) )
+      {
+          // do something with line (which is a Line3D)
+      }
+    </code>
 
-    <p>
+    <p :class="paragraph">
       The opposite relation type of boundary is named incidence,
       and the same methods and ranges are available.
     </p>
 
-    <p>
+    <p :class="paragraph">
       Another type of relations is internal, and its opposite relation: embedded.
       A Component A is interne to a Component B if A is included inside B.
       Internal is different from boundary.
@@ -196,7 +183,7 @@
       internal Components of Blocks.
     </p>
 
-    <p>
+    <p :class="paragraph">
       The number of relations of a Surface and a Line is used to define
       if it is closed. A Line with no boundary or only one boundary is closed.
       A Line with two boundaries is not closed.
@@ -206,51 +193,47 @@
       regardless of the number of internal Components.
     </p>
 
-    <h2>Collections of Components</h2>
+    <h2 :class="section">Collections of Components</h2>
 
-    <p>
+    <p :class="paragraph">
       An other kind of relations between Components allows to gather Components into groups.
       This is the notion of
       <code>Collections</code>. Components gathered into collections
       are called items.
     </p>
 
-    <p>
+    <p :class="paragraph">
       In the class
       <code>BRep</code>, there is one type of Collections: ModelBoundaries.
       This collection gathers Surfaces that bounds the exterior of the model.
     </p>
 
-    <p>
+    <p :class="paragraph">
       The class
       <code>BRep</code> is defined as following:
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>class BRep : public Relationships,</p>
-        <p
-          style="margin-left: 4em;"
-        >public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries ></p>
-        <p>{</p>
-        <p style="margin-left: 4em;">...</p>
-        <p>}</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      class BRep : public Relationships,
+                   public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
+      {
+          ...
+      };
+    </code>
 
-    <p>
+    <p :class="paragraph">
       As for other relationships, you may get the number of items in a collection,
       iterates on items, ...
     </p>
 
-    <p>
+    <p :class="paragraph">
       You may define your own Collections to identify Components by making
       groups of Components.
     </p>
 
-    <h2>Unique indexing of Components mesh vertices</h2>
+    <h2 :class="section">Unique indexing of Components mesh vertices</h2>
 
-    <p>
+    <p :class="paragraph">
       In a OpenGeode model, each Component mesh has its own set of vertices
       with a continuous indexing. But several vertices from several BRep Component
       meshes may represent a single point in the model (XXX Image).
@@ -258,7 +241,7 @@
       <b>unique vertex</b>.
     </p>
 
-    <p>
+    <p :class="paragraph">
       The class
       <code>BRep</code> also inherits from the class
       <code>VertexIdentifier</code>
@@ -268,25 +251,23 @@
       conversely, get the unique vertex index of one mesh vertex:
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>BRep my_brep;</p>
-        <p>auto nb_unique_v = my_brep.nb_unique_vertices();</p>
+    <code class="cpp primary--text">
+      BRep my_brep;
+      auto nb_unique_v = my_brep.nb_unique_vertices();
 
-        <p>index_t unique_v_id;</p>
-        <p>const auto& mesh_vertices = my_brep.mesh_component_vertices( unique_v_id );</p>
+      index_t unique_v_id;
+      const auto& mesh_vertices = my_brep.mesh_component_vertices( unique_v_id );
 
-        <p>uuid surf_id;</p>
-        <p>const auto& mesh_vertices_in_surface = my_brep.mesh_component_vertices( unique_v_id, surf_id );</p>
-      </v-card-text>
-    </v-card>
+      uuid surf_id;
+      const auto& mesh_vertices_in_surface = my_brep.mesh_component_vertices( unique_v_id, surf_id );
+    </code>
 
-    <p>
+    <p :class="paragraph">
       Notice that all Component mesh vertices are not necessarily identified by
       unique vertices (only a few can be identified).
     </p>
 
-    <p>
+    <p :class="paragraph">
       To simplify inheritance and gather topological information (between
       Components and between Components meshes), OpenGeode provides a class named
       <code>Topology</code> inheriting from both
@@ -294,73 +275,69 @@
       <code>VertexIdentifier</code>.
     </p>
 
-    <p>
+    <p :class="paragraph">
       Finally, the class
       <code>BRep</code> is defined as following:
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>class BRep : public Topology,</p>
-        <p
-          style="margin-left: 4em;"
-        >public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries ></p>
-        <p>{</p>
-        <p style="margin-left: 4em;">...</p>
-        <p>}</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      class BRep : public Topology,
+                   public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
+      {
+          ...
+      };
+    </code>
 
-    <h2>Creating your own models</h2>
+    <h2 :class="section">Creating your own models</h2>
 
-    <p>
+    <p :class="paragraph">
       At this point, you learn all the information about
       <code>BRep</code> inheritance.
       OpenGeode provides other models, for example:
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>class Section : public Topology,</p>
-        <p
-          style="margin-left: 4em;"
-        >public AddComponents< 2, Corners, Lines, Surfaces, ModelBoundaries ></p>
-        <p>{</p>
-        <p style="margin-left: 4em;">...</p>
-        <p>}</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      class Section : public Topology,
+                      public AddComponents< 2, Corners, Lines, Surfaces, ModelBoundaries >
+      {
+          ...
+      };
+    </code>
 
-    <p>
+    <p :class="paragraph">
       Section is a
       <code>2</code>-dimensional model made of Corners, Lines, and Surfaces
       (as mesh Components) and ModelBoundaries as (Collections of Components).
     </p>
 
-    <p>
+    <p :class="paragraph">
       This design based on mixins is fully flexible.
       As a consequence, you are able to build your own OpenGeode
       models following the same design. Let's imagine a world map
       made of Surfaces, Lines, and Corners:
     </p>
 
-    <v-card>
-      <v-card-text>
-        <p>class WorldMap : public Topology,</p>
-        <p
-          style="margin-left: 4em;"
-        >public AddComponents< 2, Corners, Lines, Surfaces, CountryBorders, Countries, Continents ></p>
-        <p>{</p>
-        <p style="margin-left: 4em;">...</p>
-        <p>}</p>
-      </v-card-text>
-    </v-card>
+    <code class="cpp primary--text">
+      class WorldMap : public Topology,
+                      public AddComponents< 2, Corners, Lines, Surfaces, CountryBorders, Countries, Continents >
+      {
+          ...
+      };
+    </code>
   </v-layout>
 </template>
 
 <script>
-export default {}
+export default {
+  data: () => ({
+    section: "display-2 ma-5 pa-5",
+    paragraph: "body-1 my-5"
+  })
+}
 </script>
 
 <style>
+.cpp {
+  background-color: #ffffff !important;
+}
 </style> 
