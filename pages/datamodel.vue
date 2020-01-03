@@ -7,7 +7,7 @@
     <p :class="paragraph">
       In this guide, you will learn fundamental elements to understand and manipulate OpenGeode data model.
       One of OpenGeode central classes is
-      <code>BRep</code>, let's use this class as an exemple.
+      <span v-html="brep" />, let's use this class as an exemple.
     </p>
 
     <img src="@/assets/datamodel-1.svg">
@@ -18,64 +18,70 @@
 
     <p :class="paragraph">
       A
-      <code>BRep</code>, for Boundary Representation, represents a 3D object by its boundaries.
+      <span v-html="brep" />, for Boundary Representation, represents a 3D object by its boundaries.
       In OpenGeode, these 3D boundaries are
-      <code>Surfaces</code> (in grey on images).
+      <span v-html="surfaces3d" /> (in grey on images).
       A BRep is thus composed of Surfaces:
       it means that the class
-      <code>BRep</code> inherits from the class
-      <code>Surfaces3D</code>.
+      <span v-html="brep" /> inherits from the class
+      <span v-html="surfaces3d" />.
       This allows you to know the number of Surfaces in a
-      <code>BRep</code> :
+      <span v-html="brep" /> :
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       BRep my_brep;
       auto nb = my_brep.nb_surfaces();
     </code>
+    <!-- eslint-enable -->
 
     <img src="@/assets/datamodel-2.svg">
 
     <p :class="paragraph">
       To iterate on all the Surfaces of a
-      <code>BRep</code>, a range on Surfaces is provided:
+      <span v-html="brep" />, a range on Surfaces is provided:
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       BRep my_brep;
       for( const auto& surface : my_brep.surfaces() )
       {
-      // do something with surface (which is a Surface3D)
-      auto nbv = surface.mesh().nb_vertices();
+          // do something with surface (which is a Surface3D)
+          auto nbv = surface.mesh().nb_vertices();
       }
     </code>
+    <!-- eslint-enable -->
 
     <p :class="paragraph">
       Notice that each surface is get using a const reference
       since a
-      <code>Surface</code> is not copyable nor modifiable.
+      <span v-html="surface3d" /> is not copyable nor modifiable.
     </p>
 
     <p :class="paragraph">
       Now, you may want to process only a single
-      <code>Surface</code>.
+      <span v-html="surface3d" />.
       Hopefully, it is possible to get one
-      <code>Surface</code> from a
-      <code>BRep</code>.
+      <span v-html="surface3d" /> from a
+      <span v-html="brep" />.
       A major feature of OpenGeode is that model components are not continuously numbered:
       they are identified by an unique index
-      <code>uuid</code>.
+      <span v-html="uuid" />.
       This is a fondamental design element to allow modification of OpenGeode models.
       You can thus get a
-      <code>Surface</code> from its
-      <code>uuid</code>:
+      <span v-html="surface3d" /> from its
+      <span v-html="uuid" />:
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       BRep my_brep;
       uuid surf_id;
       const auto& surface = my_brep.surface( surf_id );
     </code>
+    <!-- eslint-enable -->
 
     <h2 :class="section">
       What about other Components?
@@ -83,31 +89,33 @@
 
     <p :class="paragraph">
       We have seen that
-      <code>BRep</code> is composed of
-      <code>Surfaces</code>.
+      <span v-html="brep" /> is composed of
+      <span v-html="surfaces3d" />.
       These Surfaces delimit volumes regionalizing an object.
       As a consequence, a
-      <code>BRep</code> is also composed of
-      <code>Blocks</code>.
+      <span v-html="brep" /> is also composed of
+      <span v-html="blocks3d" />.
       The
-      <code>BRep</code> class inherits from
-      <code>Surfaces3D</code> and
-      <code>Blocks3D</code>.
+      <span v-html="brep" /> class inherits from
+      <span v-html="surfaces3d" /> and
+      <span v-html="blocks3d" />.
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       class BRep : public Surfaces3D, 
-      public Blocks3D
+                   public Blocks3D
       {
-      ...
+          ...
       }
     </code>
+    <!-- eslint-enable -->
 
     <p :class="paragraph">
       You can count number of Blocks, iterates on Blocks,
       get a specific
-      <code>Block</code> from its
-      <code>uuid</code> as done for Surfaces.
+      <span v-html="block3d" /> from its
+      <span v-html="uuid" /> as done for Surfaces.
     </p>
 
     <img src="@/assets/datamodel-3.svg">
@@ -115,31 +123,33 @@
     <p :class="paragraph">
       But as Surfaces bound Blocks, BRep Surfaces are bounded by Lines (in blue),
       and BRep Lines are bounded by Corners (in green). These class are named
-      <code>Components</code>.
+      <strong>Components</strong>.
       The
-      <code>BRep</code> class thus inherits from all these classes.
+      <span v-html="brep" /> class thus inherits from all these classes.
       To ease the conception of custom OpenGeode models, the helper class
-      <code>AddComponents</code> is provided.
+      <span v-html="addComponents" /> is provided.
       The
-      <code>BRep</code> class is defined as following:
+      <span v-html="brep" /> class is defined as following:
     </p>
 
     <img src="@/assets/datamodel-4.svg">
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       class BRep : public AddComponents< 3, Corners, Lines, Surfaces, Blocks >
       {
-      ...
+          ...
       };
     </code>
+    <!-- eslint-enable -->
 
     <p :class="paragraph">
       In this code,
-      <code>3</code> indicates that all
-      <code>Corners</code>,
-      <code>Lines</code>,
-      <code>Surfaces</code> and
-      <code>Blocks</code> are 3-dimensional.
+      <strong>3</strong> indicates that all
+      <span v-html="corners3d" />,
+      <span v-html="lines3d" />,
+      <span v-html="surfaces3d" /> and
+      <span v-html="blocks3d" /> are 3-dimensional.
     </p>
 
     <h2 :class="section">
@@ -152,8 +162,8 @@
       for example and as mentionned above, Lines are boundaries of Surfaces
       (boundaries are depicted by curved black arrows).
       All these relations between Components are stored in the class
-      <code>Relationships</code>.
-      <code>BRep</code> inherits from this class.
+      <span v-html="relationships" />.
+      <span v-html="brep" /> inherits from this class.
     </p>
 
     <img src="@/assets/datamodel-5.svg">
@@ -162,28 +172,32 @@
       Methods and ranges are provided to request relationships between Components.
       For example, you can get the number of Lines which are boundaries of a
       given Surface (using its
-      <code>uuid</code>):
+      <span v-html="uuid" />):
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       BRep my_brep;
       uuid surf_id;
       auto nb_boundary_lines = my_brep.nb_boundaries( surf_id );
     </code>
+    <!-- eslint-enable -->
 
     <p :class="paragraph">
       As iteration on BRep Surfaces, it is also possible to iterate on Surface boundary Lines:
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       BRep my_brep;
       uuid surf_id;
       const auto& surface = my_brep.surface( surf_id );
       for( const auto& line : my_brep.boundaries( surface ) )
       {
-      // do something with line (which is a Line3D)
+          // do something with line (which is a Line3D)
       }
     </code>
+    <!-- eslint-enable -->
 
     <p :class="paragraph">
       The opposite relation type of boundary is named incidence
@@ -221,7 +235,7 @@
     <p :class="paragraph">
       An other kind of relations between Components allows to gather Components into groups.
       This is the notion of
-      <code>Collections</code>. Components gathered into collections
+      <strong>Collections</strong>. Components gathered into collections
       are called items. For example, the red Surfaces can be gather in a collection
       standing for the right side of the cube.
     </p>
@@ -230,22 +244,24 @@
 
     <p :class="paragraph">
       In the class
-      <code>BRep</code>, there is one type of Collections: ModelBoundaries.
+      <span v-html="brep" />, there is one type of Collections: ModelBoundaries.
       This collection gathers Surfaces that bounds the exterior of the model.
     </p>
 
     <p :class="paragraph">
       The class
-      <code>BRep</code> is defined as following:
+      <span v-html="brep" /> is defined as following:
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       class BRep : public Relationships,
-      public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
+                   public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
       {
-      ...
+          ...
       };
     </code>
+    <!-- eslint-enable -->
 
     <p :class="paragraph">
       As for other relationships, you may get the number of items in a collection,
@@ -266,21 +282,22 @@
       with a continuous indexing. But several vertices from several BRep Component
       meshes may represent a single point in the model (groups of black points on image).
       Model vertex represented by potentially several mesh vertices is called
-      <b>unique vertex</b>.
+      <strong>unique vertex</strong>.
     </p>
 
     <img src="@/assets/datamodel-8.svg">
 
     <p :class="paragraph">
       The class
-      <code>BRep</code> also inherits from the class
-      <code>VertexIdentifier</code>
+      <span v-html="brep" /> also inherits from the class
+      <span v-html="vertexIdentifier" />
       that store this kind of topological information between Components meshes.
-      <code>VertexIdentifier</code> provide methods to request the number of unique
+      <span v-html="vertexIdentifier" /> provide methods to request the number of unique
       vertices, to get all the mesh vertices from a unique vertex index, and,
       conversely, get the unique vertex index of one mesh vertex:
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       BRep my_brep;
       auto nb_unique_v = my_brep.nb_unique_vertices();
@@ -291,6 +308,7 @@
       uuid surf_id;
       const auto& mesh_vertices_in_surface = my_brep.mesh_component_vertices( unique_v_id, surf_id );
     </code>
+    <!-- eslint-enable -->
 
     <p :class="paragraph">
       Notice that all Component mesh vertices are not necessarily identified by
@@ -300,23 +318,26 @@
     <p :class="paragraph">
       To simplify inheritance and gather topological information (between
       Components and between Components meshes), OpenGeode provides a class named
-      <code>Topology</code> inheriting from both
-      <code>Relationships</code> and
-      <code>VertexIdentifier</code>.
+      <span v-html="topology" /> inheriting from both
+      <span v-html="relationships" /> and
+      <span v-html="vertexIdentifier" />.
     </p>
 
     <p :class="paragraph">
       Finally, the class
-      <code>BRep</code> is defined as following:
+      <span v-html="brep" /> is defined as following:
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       class BRep : public Topology,
-      public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
+                   public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
       {
-      ...
+          ...
       };
     </code>
+    <!-- eslint-enable -->
+
 
     <h2 :class="section">
       Creating your own models
@@ -324,21 +345,23 @@
 
     <p :class="paragraph">
       At this point, you learn all the information about
-      <code>BRep</code> inheritance.
+      <span v-html="brep" /> inheritance.
       OpenGeode provides other models, for example:
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       class Section : public Topology,
-      public AddComponents< 2, Corners, Lines, Surfaces, ModelBoundaries >
+                      public AddComponents< 2, Corners, Lines, Surfaces, ModelBoundaries >
       {
-      ...
+          ...
       };
     </code>
+    <!-- eslint-enable -->
 
     <p :class="paragraph">
       Section is a
-      <code>2</code>-dimensional model made of Corners, Lines, and Surfaces
+      <strong>2</strong>-dimensional model made of Corners, Lines, and Surfaces
       (as mesh Components) and ModelBoundaries as (Collections of Components).
     </p>
 
@@ -349,13 +372,15 @@
       made of Surfaces, Lines, and Corners:
     </p>
 
+    <!-- eslint-disable -->
     <code class="cpp primary--text">
       class WorldMap : public Topology,
-      public AddComponents< 2, Corners, Lines, Surfaces, CountryBorders, Countries, Continents >
+                       public AddComponents< 2, Corners, Lines, Surfaces, CountryBorders, Countries, Continents >
       {
-      ...
+          ...
       };
     </code>
+    <!-- eslint-enable -->
   </v-layout>
 </template>
 
@@ -363,7 +388,21 @@
 export default {
   data: () => ({
     section: "display-2 ma-5 pa-5",
-    paragraph: "body-1 my-5"
+    paragraph: "body-1 my-5",
+    uuid : "<a href='opengeode?page=struct_geode_uuid.html'><code>uuid</code></a>",
+    brep: "<a href='opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
+    surfaces3d : "<a href='opengeode?page=class_geode_Surfaces.html'><code>Surfaces3D</code></a>",
+    surface3d : "<a href='opengeode?page=class_geode_Surface.html'><code>Surface3D</code></a>",
+    blocks3d : "<a href='opengeode?page=class_geode_Blocks.html'><code>Blocks3D</code></a>",
+    block3d : "<a href='opengeode?page=class_geode_Block.html'><code>Block3D</code></a>",
+    corners3d : "<a href='opengeode?page=class_geode_Corners.html'><code>Corners3D</code></a>",
+    corner3d : "<a href='opengeode?page=class_geode_Corner.html'><code>Corner3D</code></a>",
+    lines3d : "<a href='opengeode?page=class_geode_Lines.html'><code>Lines3D</code></a>",
+    line3d : "<a href='opengeode?page=class_geode_Line.html'><code>Line3D</code></a>",
+    addComponents : "<a href='opengeode?page=class_geode_AddComponents.html'><code>AddComponents</code></a>",
+    relationships : "<a href='opengeode?page=class_geode_Relationships.html'><code>Relationships</code></a>",
+    vertexIdentifier : "<a href='opengeode?page=class_geode_VertexIdentifier.html'><code>VertexIdentifier</code></a>",
+    topology : "<a href='opengeode?page=class_geode_Topology.html'><code>Topology</code></a>"
   })
 }
 </script>
