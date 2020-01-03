@@ -389,20 +389,20 @@ export default {
   data: () => ({
     section: "display-2 ma-5 pa-5",
     paragraph: "body-1 my-5",
-    uuid : "<a href='opengeode?page=struct_geode_uuid.html'><code>uuid</code></a>",
-    brep: "<a href='opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
-    surfaces3d : "<a href='opengeode?page=class_geode_Surfaces.html'><code>Surfaces3D</code></a>",
-    surface3d : "<a href='opengeode?page=class_geode_Surface.html'><code>Surface3D</code></a>",
-    blocks3d : "<a href='opengeode?page=class_geode_Blocks.html'><code>Blocks3D</code></a>",
-    block3d : "<a href='opengeode?page=class_geode_Block.html'><code>Block3D</code></a>",
-    corners3d : "<a href='opengeode?page=class_geode_Corners.html'><code>Corners3D</code></a>",
-    corner3d : "<a href='opengeode?page=class_geode_Corner.html'><code>Corner3D</code></a>",
-    lines3d : "<a href='opengeode?page=class_geode_Lines.html'><code>Lines3D</code></a>",
-    line3d : "<a href='opengeode?page=class_geode_Line.html'><code>Line3D</code></a>",
-    addComponents : "<a href='opengeode?page=class_geode_AddComponents.html'><code>AddComponents</code></a>",
-    relationships : "<a href='opengeode?page=class_geode_Relationships.html'><code>Relationships</code></a>",
-    vertexIdentifier : "<a href='opengeode?page=class_geode_VertexIdentifier.html'><code>VertexIdentifier</code></a>",
-    topology : "<a href='opengeode?page=class_geode_Topology.html'><code>Topology</code></a>"
+    uuid : "<a href='/opengeode?page=struct_geode_uuid.html'><code>uuid</code></a>",
+    brep: "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
+    surfaces3d : "<a href='/opengeode?page=class_geode_Surfaces.html'><code>Surfaces3D</code></a>",
+    surface3d : "<a href='/opengeode?page=class_geode_Surface.html'><code>Surface3D</code></a>",
+    blocks3d : "<a href='/opengeode?page=class_geode_Blocks.html'><code>Blocks3D</code></a>",
+    block3d : "<a href='/opengeode?page=class_geode_Block.html'><code>Block3D</code></a>",
+    corners3d : "<a href='/opengeode?page=class_geode_Corners.html'><code>Corners3D</code></a>",
+    corner3d : "<a href='/opengeode?page=class_geode_Corner.html'><code>Corner3D</code></a>",
+    lines3d : "<a href='/opengeode?page=class_geode_Lines.html'><code>Lines3D</code></a>",
+    line3d : "<a href='/opengeode?page=class_geode_Line.html'><code>Line3D</code></a>",
+    addComponents : "<a href='/opengeode?page=class_geode_AddComponents.html'><code>AddComponents</code></a>",
+    relationships : "<a href='/opengeode?page=class_geode_Relationships.html'><code>Relationships</code></a>",
+    vertexIdentifier : "<a href='/opengeode?page=class_geode_VertexIdentifier.html'><code>VertexIdentifier</code></a>",
+    topology : "<a href='/opengeode?page=class_geode_Topology.html'><code>Topology</code></a>"
   })
 }
 </script>
