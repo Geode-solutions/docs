@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2 class="display-2 ma-5 pa-5">{{title}}</h2>
+    <h2 class="display-2 ma-5 pa-5">
+      {{ title }}
+    </h2>
     <v-simple-table class="body-1">
       <template v-slot:default>
         <thead>
@@ -14,12 +16,16 @@
         <tbody>
           <tr v-for="format in formats" :key="format.name">
             <td>{{ format.extension }}</td>
-            <td><span v-html="format.cpp"/></td>
+            <td><span v-html="format.cpp" /></td>
             <td>
-              <v-icon color="primary" v-if="format.in">fas fa-check</v-icon>
+              <v-icon v-if="format.in" color="primary">
+                fas fa-check
+              </v-icon>
             </td>
             <td>
-              <v-icon color="primary" v-if="format.out">fas fa-check</v-icon>
+              <v-icon v-if="format.out" color="primary">
+                fas fa-check
+              </v-icon>
             </td>
           </tr>
         </tbody>

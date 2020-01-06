@@ -1,19 +1,29 @@
 <template>
   <v-layout column>
-    <h1 class="display-4 ma-5">How to use IO file formats</h1>
+    <h1 class="display-4 ma-5">
+      How to use IO file formats
+    </h1>
     <p
       :class="paragraph"
-    >This page explains how to be able to use OpenGeode file formats in your code.</p>
+    >
+      This page explains how to be able to use OpenGeode file formats in your code.
+    </p>
 
-    <h2 :class="section">What to do?</h2>
+    <h2 :class="section">
+      What to do?
+    </h2>
 
-    <p :class="paragraph">You just have to add in your executable/code depending on your needs:</p>
+    <p :class="paragraph">
+      You just have to add in your executable/code depending on your needs:
+    </p>
 
     <!-- eslint-disable -->
     <code class="cpp primary--text">initialize_mesh_io();</code>
     <!-- eslint-enable -->
 
-    <p :class="paragraph">and/or</p>
+    <p :class="paragraph">
+      and/or
+    </p>
 
     <!-- eslint-disable -->
     <code class="cpp primary--text">initialize_model_io();</code>
@@ -36,7 +46,9 @@
       >tests</a>.
     </p>
 
-    <h2 :class="section">Why I have to do that?</h2>
+    <h2 :class="section">
+      Why I have to do that?
+    </h2>
 
     <p :class="paragraph">
       The reason is quite simple.

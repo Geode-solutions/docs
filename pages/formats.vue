@@ -1,8 +1,10 @@
 <template>
   <v-layout column>
-    <h1 class="display-4 ma-5">Supporting file formats</h1>
-    <format title="IO" :formats="formats_io"/>
-    <format title="GeosciencesIO" :formats="formats_geosciencesio"/>
+    <h1 class="display-4 ma-5">
+      Supporting file formats
+    </h1>
+    <format title="IO" :formats="formats_io" />
+    <format title="GeosciencesIO" :formats="formats_geosciencesio" />
   </v-layout>
 </template>
 

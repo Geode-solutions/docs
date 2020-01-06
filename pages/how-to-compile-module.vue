@@ -1,6 +1,8 @@
 <template>
   <v-layout column>
-    <h1 class="display-4 ma-5">How to configure and compile an OpenGeode module</h1>
+    <h1 class="display-4 ma-5">
+      How to configure and compile an OpenGeode module
+    </h1>
 
     <p :class="paragraph">
       This page explains how to configure and compile a module that depends on OpenGeode,
@@ -13,7 +15,9 @@
       the procedure is very simple.
     </p>
 
-    <h2 :class="section">What do you need</h2>
+    <h2 :class="section">
+      What do you need
+    </h2>
 
     <p :class="paragraph">
       You need exactly the same tools than for compiling OpenGeode (given
@@ -23,7 +27,9 @@
       You also need to have compiled or installed OpenGeode.
     </p>
 
-    <h2 :class="section">Module configuration</h2>
+    <h2 :class="section">
+      Module configuration
+    </h2>
 
     <p :class="paragraph">
       As for OpenGeode configuration, this step depends on your platform.
@@ -35,7 +41,9 @@
       <code>CMAKE_PREFIX_PATH</code> to OpenGeode install path.
     </p>
 
-    <p :class="paragraph">For example:</p>
+    <p :class="paragraph">
+      For example:
+    </p>
     <code>cmake -DCMAKE_PREFIX_PATH=path/to/OpenGeode/build/opengeode/install ..</code>
 
     <p :class="paragraph">

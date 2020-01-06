@@ -1,6 +1,8 @@
 <template>
   <v-layout column>
-    <h1 class="display-4 ma-5">How to create your own OpenGeode module</h1>
+    <h1 class="display-4 ma-5">
+      How to create your own OpenGeode module
+    </h1>
 
     <p :class="paragraph">
       This page explains how you can create a module that depends on OpenGeode,
@@ -8,13 +10,19 @@
       The procedure is very simple and we provide you tools for working quickly.
     </p>
 
-    <h2 :class="section">What do you need</h2>
+    <h2 :class="section">
+      What do you need
+    </h2>
 
     <p
       :class="paragraph"
-    >The only thing you need is OpenGeode. Make sure OpenGeode is compiled and installed.</p>
+    >
+      The only thing you need is OpenGeode. Make sure OpenGeode is compiled and installed.
+    </p>
 
-    <h2 :class="section">First step - Create an OpenGeode module architecture</h2>
+    <h2 :class="section">
+      First step - Create an OpenGeode module architecture
+    </h2>
 
     <p :class="paragraph">
       The first step is to create your module architecture.
@@ -45,7 +53,9 @@
       You can now clone it and go to the second step.
     </p>
 
-    <h2 :class="section">Second step - Replace templated names by your own</h2>
+    <h2 :class="section">
+      Second step - Replace templated names by your own
+    </h2>
 
     <p :class="paragraph">
       Have a quick look at your new repository.
@@ -75,9 +85,13 @@
       </li>
     </ol>
 
-    <p :class="paragraph">Your CMakeLists.txt is now ready.</p>
+    <p :class="paragraph">
+      Your CMakeLists.txt is now ready.
+    </p>
 
-    <h2 :class="section">Last step - Configure and build your module</h2>
+    <h2 :class="section">
+      Last step - Configure and build your module
+    </h2>
 
     <p :class="paragraph">
       As for OpenGeode \link opengeode_how_to_compile configuration and compilation\endlink,
@@ -100,9 +114,13 @@
       <code>mymodule</code> by the name of your module.
     </p>
 
-    <p :class="paragraph">The rest is up to you!</p>
+    <p :class="paragraph">
+      The rest is up to you!
+    </p>
 
-    <h2 :class="section">Additional info - What are these files in module repository</h2>
+    <h2 :class="section">
+      Additional info - What are these files in module repository
+    </h2>
 
     <p :class="paragraph">
       Template repository contains some files.

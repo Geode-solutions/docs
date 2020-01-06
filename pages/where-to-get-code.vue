@@ -1,8 +1,12 @@
 <template>
   <v-layout column>
-    <h1 class="display-4 ma-5">Where to download OpenGeode code</h1>
+    <h1 class="display-4 ma-5">
+      Where to download OpenGeode code
+    </h1>
 
-    <h2 :class="section">Download pre-compiled binaries</h2>
+    <h2 :class="section">
+      Download pre-compiled binaries
+    </h2>
 
     <p :class="paragraph">
       We provide three pre-compiled binaries for OpenGeode.
@@ -30,7 +34,9 @@
       You can now use these pre-compiled binaries for your own projects.
     </p>
 
-    <h2 :class="section">Download source code</h2>
+    <h2 :class="section">
+      Download source code
+    </h2>
 
     <p :class="paragraph">
       On the release page, you can also download source code archives.
