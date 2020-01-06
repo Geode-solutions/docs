@@ -15,7 +15,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-,
+      ,
       {
         rel: 'stylesheet',
         href:
@@ -46,6 +46,9 @@ export default {
   ],
 
   vuetify: {
+    defaultAssets: {
+      icons: 'fa'
+    },
     theme: {
       themes: {
         light: {
@@ -60,7 +63,7 @@ export default {
         logo: {
           component: 'Logo'
         }
-      } 
+      }
     }
   },
   /*

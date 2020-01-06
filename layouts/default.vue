@@ -1,28 +1,12 @@
 <template>
   <v-app>
-    <v-navigation-drawer
-      stateless
-      app
-      clipped
-      permanent
-    >
-      <v-list
-        nav
-      >
+    <v-navigation-drawer stateless app clipped permanent>
+      <v-list nav>
         <template v-for="(item, index) in items">
-          <v-subheader v-if="item.divider"
-                       :key="index"
-          >
+          <v-subheader v-if="item.divider" :key="index">
             {{ item.divider }}
           </v-subheader>
-          <v-list-item
-            v-else
-            :key="index"
-            link
-            nuxt
-            :to="item.to"
-            color="primary"
-          >
+          <v-list-item v-else :key="index" link nuxt :to="item.to" color="primary">
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item-content>
@@ -31,7 +15,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar dark app clipped-left color="primary">
-      <v-btn text active-class="" nuxt to="/">
+      <v-btn text active-class nuxt to="/">
         <v-app-bar-nav-icon>
           <v-icon large>
             $vuetify.icons.logo
@@ -49,21 +33,37 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        items: [
-          { divider: 'PAGES'},
-          { title: 'OpenGeode DataModel', to: '/datamodel'},
-          { divider: 'CODE'},
-          { title: 'OpenGeode', to: '/opengeode'},
-          { title: 'OpenGeode-IO', to: '/opengeode-io'},
-          { title: 'OpenGeode-Geosciences', to: '/opengeode-geosciences'},
-          { title: 'OpenGeode-GeosciencesIO', to: '/opengeode-geosciencesio' }
-        ]
-      }
+export default {
+  data() {
+    return {
+      items: [
+        { divider: 'GUIDE' },
+        { title: 'DataModel', to: '/datamodel' },
+        { title: 'Supported file formats', to: '/formats' },
+        { title: 'Compile OpenGeode', to: '/how-to-compile' },
+        {
+          title: 'Create OpenGeode module',
+          to: '/how-to-create-module'
+        },
+        {
+          title: 'Compile OpenGeode module',
+          to: '/how-to-compile-module'
+        },
+        { title: 'Get OpenGeode code', to: '/where-to-get-code' },
+        { title: 'How to link with OpenGeode-IO', to: '/link-with-io' },
+        { divider: 'CODE DOCUMENTATION' },
+        { title: 'OpenGeode', to: '/opengeode' },
+        { title: 'OpenGeode-IO', to: '/opengeode-io' },
+        { title: 'OpenGeode-Geosciences', to: '/opengeode-geosciences' },
+        { title: 'OpenGeode-GeosciencesIO', to: '/opengeode-geosciencesio' }
+      ]
     }
   }
+}
 </script>
 
-<style scoped> *{ text-transform: none !important; } </style>
+<style scoped>
+* {
+  text-transform: none !important;
+}
+</style>
