@@ -25,6 +25,29 @@ export default {
         route: 'formats'
       },
       {
+        title: 'How to compile OpenGeode',
+        descr:
+          'Complete guide on configuration and compilation of OpenGeode on Windows, Linux and macOS',
+        route: 'how-to-compile'
+      },
+      {
+        title: 'How to create OpenGeode module',
+        descr: 'Guide on creation of your own OpenGeode modules',
+        route: 'how-to-create-module'
+      },
+      {
+        title: 'How to compile OpenGeode module',
+        descr:
+          'Configuration and compilation of OpenGeode module on Windows, Linux and macOS',
+        route: 'how-to-compile-module'
+      },
+      {
+        title: 'Where to get OpenGeode code',
+        descr:
+          'Two ways to get OpenGeode code: download precompiled binaries or download source code',
+        route: 'where-to-get-code'
+      },
+      {
         title: 'How to use IO file formats',
         descr:
           'How to link with OpenGeode-IO or OpenGeode-GeosciencesIO to use OpenGeode file formats',

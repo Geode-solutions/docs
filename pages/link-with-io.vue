@@ -69,46 +69,6 @@
 <script>
 export default {
   data: () => ({
-    formats_io: [
-      {
-        extension: '.msh',
-        cpp: 'BRep',
-        in: true,
-        out: false
-      },
-      {
-        extension: '.stl',
-        cpp: 'TriangulatedSurface3D',
-        in: true,
-        out: true
-      },
-      {
-        extension: '.ply',
-        cpp: 'PolygonalSurface3D',
-        in: true,
-        out: true
-      },
-      {
-        extension: '.obj',
-        cpp: 'PolygonalSurface3D',
-        in: true,
-        out: true
-      }
-    ],
-    formats_geosciencesio: [
-      {
-        extension: '.ml',
-        cpp: 'StructuralModel',
-        in: true,
-        out: false
-      },
-      {
-        extension: '.ts',
-        cpp: 'TriangulatedSurface3D',
-        in: true,
-        out: false
-      }
-    ],
     section: 'display-2 ma-5 pa-5',
     paragraph: 'body-1 my-5',
     brep:

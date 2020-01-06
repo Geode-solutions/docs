@@ -36,6 +36,16 @@ export default {
         { divider: 'GUIDE' },
         { title: 'DataModel', to: '/datamodel' },
         { title: 'Supported file formats', to: '/formats' },
+        { title: 'Compile OpenGeode', to: '/how-to-compile' },
+        {
+          title: 'Create OpenGeode module',
+          to: '/how-to-create-module'
+        },
+        {
+          title: 'Compile OpenGeode module',
+          to: '/how-to-compile-module'
+        },
+        { title: 'Get OpenGeode code', to: '/where-to-get-code' },
         { title: 'How to link with OpenGeode-IO', to: '/link-with-io' },
         { divider: 'CODE DOCUMENTATION' },
         { title: 'OpenGeode', to: '/opengeode' },
