@@ -1,12 +1,12 @@
 <template>
   <v-row class="flex-column">
-    <theme title="Guide" :cards="guides"/>
-    <theme title="Code documentation" :cards="projects"/>
+    <theme title="Guide" :cards="guides" />
+    <theme title="Code documentation" :cards="projects" />
   </v-row>
 </template>
 
 <script>
-import Theme from "@/components/Theme"
+import Theme from '@/components/Theme'
 
 export default {
   components: {
@@ -23,6 +23,12 @@ export default {
         title: 'Supported file formats',
         descr: 'OpenGeode file formats available',
         route: 'formats'
+      },
+      {
+        title: 'How to use IO file formats',
+        descr:
+          'How to link with OpenGeode-IO or OpenGeode-GeosciencesIO to use OpenGeode file formats',
+        route: 'link-with-io'
       },
       {
         title: 'Attributes (soon)',

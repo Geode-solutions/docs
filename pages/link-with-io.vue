@@ -1,6 +1,6 @@
 <template>
   <v-layout column>
-    <h1 class="display-4 ma-5">How to use OpenGeode-IO file formats</h1>
+    <h1 class="display-4 ma-5">How to use IO file formats</h1>
     <p
       :class="paragraph"
     >This page explains how to be able to use OpenGeode file formats in your code.</p>
