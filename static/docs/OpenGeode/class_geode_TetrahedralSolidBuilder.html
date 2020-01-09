@@ -37,6 +37,8 @@
 <span id="doxid-classgeode-1-1-tetrahedral-solid-builder"></span><span id="index-0"></span><h1>template class geode::TetrahedralSolidBuilder</h1>
 <div class="toctree-wrapper compound">
 </div>
+<div class="section" id="overview">
+<h2>Overview</h2>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;tetrahedral_solid_builder.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -46,7 +48,8 @@
     <span class="c1">// methods</span>
 
     <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TetrahedralSolidBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-tetrahedral-solid-builder-1a503c644c2e201a97294ded9e4479b27d">create</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-tetrahedral-solid-builder-1a56c1d3ffeebb11cdcb9eb4c4042a5c13">create_tetrahedron</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">);</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-builder-1a56c1d3ffeebb11cdcb9eb4c4042a5c13"><span class="std std-ref">create_tetrahedron</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">);</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-builder-1af8d3d4f28a8ae1b8c1e158da3c87e403"><span class="std std-ref">create_tetrahedra</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">);</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
@@ -54,7 +57,7 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeTetrahedralSolidBuilder.html#doxid-classgeode-1-1-open-geode-tetrahedral-solid-builder"><span class="std std-ref">OpenGeodeTetrahedralSolidBuilder</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
-<h2>Inherited Members</h2>
+<h3>Inherited Members</h3>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
@@ -78,6 +81,45 @@
     <span class="kt">void</span> <a class="reference internal" href="class_geode_PolyhedralSolidBuilder.html#doxid-classgeode-1-1-polyhedral-solid-builder-1a3669caa58b7770cd34fddfe16e56e271"><span class="std std-ref">associate_polyhedron_vertex_to_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span></pre>
 </div>
 </div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-tetrahedral-solid-builder"></span><h2>Detailed Documentation</h2>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-builder-1a56c1d3ffeebb11cdcb9eb4c4042a5c13"><span id="index-1"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_tetrahedron</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">)</span></pre>
+<p>Create a new tetrahedron from four vertices.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>vertices</p></td>
+<td><p>The four vertices defining the tetrahedron to create</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the index of the created tetrahedron</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-builder-1af8d3d4f28a8ae1b8c1e158da3c87e403"><span id="index-2"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_tetrahedra</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">)</span></pre>
+<p>Create new tetrahedra.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>nb</p></td>
+<td><p>Number of tetrahedra to create</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the index of the first created tetrahedron</p>
+</div>
+</div>
+</div>
 
 
           </div>
@@ -89,7 +131,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

@@ -26,6 +26,7 @@ Interface class to represent the builder of a :ref:`TriangulatedSurface <doxid-c
 	
 		static std::unique_ptr<TriangulatedSurfaceBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_triangulated_surface_builder_1a525758b4196d65870741e2224e75bbab>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& mesh);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_triangle<doxid-classgeode_1_1_triangulated_surface_builder_1a36e6538c550e10d71177ff2fc5e38c8b>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 3>& vertices);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_triangles<doxid-classgeode_1_1_triangulated_surface_builder_1a0c1506fd705dd0c6d527fdcae7b806df>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 	};
 
 	// direct descendants
@@ -119,4 +120,32 @@ Create a new triangle from three vertices.
 .. rubric:: Returns:
 
 the index of the created triangle
+
+.. index:: pair: function; create_triangles
+.. _doxid-classgeode_1_1_triangulated_surface_builder_1a0c1506fd705dd0c6d527fdcae7b806df:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_triangles(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb)
+
+Create new triangles.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- nb
+
+		- Number of triangles to create
+
+
+
+.. rubric:: Returns:
+
+the index of the first created triangle
 

@@ -53,4 +53,5 @@ Inherited Members
 		void :ref:`associate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_polyhedral_solid_builder_1a3669caa58b7770cd34fddfe16e56e271>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		static std::unique_ptr<:ref:`TetrahedralSolidBuilder<doxid-classgeode_1_1_tetrahedral_solid_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_tetrahedral_solid_builder_1a503c644c2e201a97294ded9e4479b27d>`(:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& mesh);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_builder_1a56c1d3ffeebb11cdcb9eb4c4042a5c13>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 4>& vertices);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_tetrahedra<doxid-classgeode_1_1_tetrahedral_solid_builder_1af8d3d4f28a8ae1b8c1e158da3c87e403>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 
