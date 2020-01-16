@@ -36,6 +36,8 @@ Class managing modification of :ref:`VertexIdentifier <doxid-classgeode_1_1_vert
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a4ef2cfb59a9670ebf8e781ebde233196>`();
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a61b9f5f69cb29c6a070f377ef7669a36>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a3ca57fc5665a96f33daf6057d52c1813>`(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id);
+		void :ref:`unset_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a7a733cd91d04177fa0d1a79f250a00d0>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id);
+		void :ref:`update_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a7d86f2ce828712c080007a9bbd680025>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id, const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new);
 		void :ref:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a7f023da66b731c2260b290471a60812f>`(const std::string& directory);
 	};
 
@@ -132,6 +134,60 @@ Identify a component vertex to an existing unique vertex index.
 		- unique_vertex_id
 
 		- Unique vertex index.
+
+.. index:: pair: function; unset_unique_vertex
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a7a733cd91d04177fa0d1a79f250a00d0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void unset_unique_vertex(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id)
+
+Remove a component vertex to its unique vertex index.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- component_vertex_id
+
+		- Index of the vertex in the component.
+
+	*
+		- unique_vertex_id
+
+		- Unique vertex index.
+
+.. index:: pair: function; update_unique_vertices
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a7d86f2ce828712c080007a9bbd680025:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void update_unique_vertices(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id, const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new)
+
+Remove a component vertex to its unique vertex index.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- component_id
+
+		- :ref:`Component <doxid-classgeode_1_1_component>` unique index used to filter returned vertices.
+
+	*
+		- old2new
+
+		- Mapping between mesh component old vertex indices to new ones. Deleted vertices new index is NO_ID.
 
 .. index:: pair: function; load_unique_vertices
 .. _doxid-classgeode_1_1_vertex_identifier_builder_1a7f023da66b731c2260b290471a60812f:
