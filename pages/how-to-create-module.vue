@@ -40,7 +40,7 @@
         Click on
         <strong>Use this template</strong>.
         Il will allow you to create a repository from this template repository.
-        Choose all options you want inclding, ownership, repo name, public or private access.
+        Choose all options you want, including ownership, repo name, public or private access.
       </li>
       <li>
         Finalize by clicking on
