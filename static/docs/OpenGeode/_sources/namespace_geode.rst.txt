@@ -15,6 +15,7 @@ namespace geode
 	struct_geode_PolygonEdge.rst
 	struct_geode_PolygonVertex.rst
 	struct_geode_PolyhedronFacet.rst
+	struct_geode_PolyhedronFacetEdge.rst
 	struct_geode_PolyhedronFacetVertex.rst
 	struct_geode_PolyhedronVertex.rst
 	struct_geode_uuid.rst
@@ -205,6 +206,7 @@ Overview
 	struct :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`;
 	struct :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`;
 	struct :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`;
+	struct :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`;
 	struct :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`;
 	struct :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`;
 	struct :ref:`uuid<doxid-structgeode_1_1uuid>`;

@@ -40,6 +40,7 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polyhedron_vertex<doxid-classgeode_1_1_polyhedral_solid_1a4f7f52ffadb2c77a0ef9d7cbd547c4d5>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polyhedron_facet<doxid-classgeode_1_1_polyhedral_solid_1a2dac012b2db0caa6f32ce16454bd1a9f>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polyhedron_facet_vertex<doxid-classgeode_1_1_polyhedral_solid_1aeca706524d11f890c19aae5109086ad7>`(const :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polyhedron_facet_edge<doxid-classgeode_1_1_polyhedral_solid_1a1c47a14f89f3f3e53b00b197b79d8d66>`(const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& polyhedron_facet_edge) const;
 		const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& :ref:`facet_vertices<doxid-classgeode_1_1_polyhedral_solid_1a657f78e6fee150125878979c4c7be3f6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
 		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :ref:`edge_vertices<doxid-classgeode_1_1_polyhedral_solid_1ad6191e7acd6dcd165bdb1e031070a91a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`facet_from_vertices<doxid-classgeode_1_1_polyhedral_solid_1a6998d93c830e3ce47a19746f7b763f4c>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& vertices) const;
@@ -237,6 +238,28 @@ Return the index in the mesh of a given polyhedron facet vertex.
 		- polyhedron_facet_vertex
 
 		- Local index of the vertex in the facet of a polyhedron.
+
+.. index:: pair: function; polyhedron_facet_edge
+.. _doxid-classgeode_1_1_polyhedral_solid_1a1c47a14f89f3f3e53b00b197b79d8d66:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_facet_edge(const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& polyhedron_facet_edge) const
+
+Return the index in the mesh of a given polyhedron facet edge.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polyhedron_facet_edge
+
+		- Local index of the edge in the facet of a polyhedron.
 
 .. index:: pair: function; facet_vertices
 .. _doxid-classgeode_1_1_polyhedral_solid_1a657f78e6fee150125878979c4c7be3f6:
