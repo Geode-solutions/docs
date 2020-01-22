@@ -10,6 +10,7 @@ namespace geode
 	namespace_geode_detail.rst
 	struct_geode_ComponentTag.rst
 	struct_geode_EdgeVertex.rst
+	struct_geode_GenericAttributeConversion.rst
 	struct_geode_MeshComponentVertex.rst
 	struct_geode_MeshTag.rst
 	struct_geode_PolygonEdge.rst
@@ -201,6 +202,10 @@ Overview
 
 	struct :ref:`ComponentTag<doxid-structgeode_1_1_component_tag>`;
 	struct :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`;
+
+	template <typename AttributeType>
+	struct :ref:`GenericAttributeConversion<doxid-structgeode_1_1_generic_attribute_conversion>`;
+
 	struct :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`;
 	struct :ref:`MeshTag<doxid-structgeode_1_1_mesh_tag>`;
 	struct :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`;

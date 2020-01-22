@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>template struct geode::GenericAttributeConversion &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::MeshComponentVertex" href="struct_geode_MeshComponentVertex.html" />
+    <link rel="prev" title="struct geode::EdgeVertex" href="struct_geode_EdgeVertex.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="template-struct-geode-genericattributeconversion">
+<span id="doxid-structgeode-1-1-generic-attribute-conversion"></span><span id="index-0"></span><h1>template struct geode::GenericAttributeConversion</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Helper struct to convert an Attribute value to generic float. This struct may be customized for a given type. Example: template &lt;&gt; struct GenericAttributeConversion&lt; MyType &gt; { static float converted_value( const MyType&amp; value ) { return value.get_a_float(); } };</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;attribute.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">AttributeType</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">GenericAttributeConversion</span>
+<span class="p">{</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span> <span class="o">=</span> <span class="n">AttributeType</span><span class="o">&gt;</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">enable_if</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">is_arithmetic</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">,</span> <span class="kt">float</span><span class="o">&gt;::</span><span class="n">type</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-1aaa954363592fef432eb8ffcceb75fe7e">converted_value</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">value</span><span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span> <span class="o">=</span> <span class="n">AttributeType</span><span class="o">&gt;</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">enable_if</span><span class="o">&lt;!</span><span class="n">std</span><span class="o">::</span><span class="n">is_arithmetic</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">,</span> <span class="kt">float</span><span class="o">&gt;::</span><span class="n">type</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-1a5627a1006c48fad0e6d7106c1a322620">converted_value</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/struct_geode_GenericAttributeConversion.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

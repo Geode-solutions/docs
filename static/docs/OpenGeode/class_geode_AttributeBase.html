@@ -37,7 +37,7 @@
 <span id="doxid-classgeode-1-1-attribute-base"></span><span id="index-0"></span><h1>class geode::AttributeBase</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Base classe defining the virtual API used by the <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a>.</p>
+<p>Base class defining the virtual API used by the <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a>.</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;attribute.h&gt;</span><span class="cp"></span>
 
 <span class="k">class</span> <span class="n">AttributeBase</span>
@@ -51,6 +51,8 @@
         <span class="k">const</span> <span class="n">AttributeBase</span><span class="o">&amp;</span> <span class="n">attribute</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_elements</span>
         <span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">virtual</span> <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-base-1a1a5a7f1d11dc8e0dc7fb066726e35926">generic_value</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>

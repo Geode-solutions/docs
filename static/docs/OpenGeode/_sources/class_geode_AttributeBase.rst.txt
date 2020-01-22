@@ -7,7 +7,7 @@ class geode::AttributeBase
 .. toctree::
 	:hidden:
 
-Base classe defining the virtual API used by the :ref:`AttributeManager <doxid-classgeode_1_1_attribute_manager>`.
+Base class defining the virtual API used by the :ref:`AttributeManager <doxid-classgeode_1_1_attribute_manager>`.
 
 
 .. ref-code-block:: cpp
@@ -26,6 +26,8 @@ Base classe defining the virtual API used by the :ref:`AttributeManager <doxid-c
 			const AttributeBase& attribute,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements
 			) = 0;
+	
+		virtual float :target:`generic_value<doxid-classgeode_1_1_attribute_base_1a1a5a7f1d11dc8e0dc7fb066726e35926>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 	};
 
 	// direct descendants
