@@ -18,7 +18,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">initialize_mesh_io();</code>
+    <code class="cpp primary--text">detail::initialize_mesh_io();</code>
     <!-- eslint-enable -->
 
     <p :class="paragraph">
@@ -26,7 +26,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">initialize_model_io();</code>
+    <code class="cpp primary--text">detail::initialize_model_io();</code>
     <!-- eslint-enable -->
 
     <p :class="paragraph">
@@ -69,7 +69,7 @@
       <code>OpenGeode_IO_mesh</code> library is not loaded.
       This is called the lazy loading of dependencies.
       If you call the function
-      <code>initialize_mesh_io()</code>, the library is loaded,
+      <code>detail::initialize_mesh_io()</code>, the library is loaded,
       the file formats are registered and you are able to use
       <a
         href="/formats"
