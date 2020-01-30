@@ -33,4 +33,5 @@ Identify a component by its type and a unique index
 		const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& :target:`type<doxid-classgeode_1_1_component_i_d_1a866e41790b7821f8c9a4e05e6448be23>`() const;
 		bool :target:`operator !=<doxid-classgeode_1_1_component_i_d_1a70ae0d22797837d61d9db029758c6ae1>` (const ComponentID& other) const;
 		bool :target:`operator ==<doxid-classgeode_1_1_component_i_d_1ad4c15e797f6986c786aa5c15e74a5963>` (const ComponentID& other) const;
+		std::string :target:`string<doxid-classgeode_1_1_component_i_d_1af61ff9da2325a10ae3c6b27e9e06e2e1>`() const;
 	};

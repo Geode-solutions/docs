@@ -22,18 +22,18 @@ Generic factory Example of use with A the base class and B, C derived classes //
 		// typedefs
 	
 		typedef typename std::add_pointer<std::unique_ptr<BaseClass>(Args...)>::type :target:`Creator<doxid-classgeode_1_1_factory_1a8a5f9b2c866fcbf7da3cfdc53660a484>`;
-		typedef std::unordered_map<Key, :ref:`Creator<doxid-classgeode_1_1_factory_1a8a5f9b2c866fcbf7da3cfdc53660a484>`> :target:`FactoryStore<doxid-classgeode_1_1_factory_1a0741e69d1ccccd5042419f38a8366e21>`;
+		typedef absl::flat_hash_map<Key, :ref:`Creator<doxid-classgeode_1_1_factory_1a8a5f9b2c866fcbf7da3cfdc53660a484>`> :target:`FactoryStore<doxid-classgeode_1_1_factory_1a001ff1e87ff1cef75d3a42a88611e6bd>`;
 
 		// methods
 	
 		template <typename DerivedClass>
-		static void :target:`register_creator<doxid-classgeode_1_1_factory_1a932118a9a4eb02337960089b2e923cad>`(const Key& key);
+		static void :target:`register_creator<doxid-classgeode_1_1_factory_1a544b55fde53577df07da7726b7248b00>`(Key key);
 	
 		static std::unique_ptr<BaseClass> :target:`create<doxid-classgeode_1_1_factory_1aa21efa5ceb8b695190bffd2b7969d102>`(
 			const Key& key,
 			Args... args
 			);
 	
-		static std::vector<Key> :target:`list_creators<doxid-classgeode_1_1_factory_1a55358a36c619ce71b677dce9073245a5>`();
+		static absl::FixedArray<Key> :target:`list_creators<doxid-classgeode_1_1_factory_1aa5b6032e7ff08ca48747586c78b8cd99>`();
 		static bool :target:`has_creator<doxid-classgeode_1_1_factory_1add6d9295d642005c51a23bd5e03b6212>`(const Key& key);
 	};

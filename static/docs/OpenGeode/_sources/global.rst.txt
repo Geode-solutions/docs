@@ -53,9 +53,9 @@ Overview
 	#define :target:`OPENGEODE_DISABLE_COPY_AND_MOVE<doxid-basic_2common_8h_1a66abbbb0a8f40eedddd74febbb7b63ca>`(Class)
 	#define :target:`OPENGEODE_DISABLE_MOVE<doxid-basic_2common_8h_1a5b0dcfe243f2f27983090f3a248d853e>`(Class)
 
-	#define :target:`OPENGEODE_EXCEPTION<doxid-assert_8h_1a1bef1a2930838a5756f0a180931e7d7d>`( \
+	#define :target:`OPENGEODE_EXCEPTION<doxid-assert_8h_1a7cb606fee329d2bcd1f7e37a508ff63b>`( \
 		condition, \
-		message \
+		... \
 		)
 
 	#define :ref:`OPENGEODE_LIBRARY_INITIALIZE<doxid-basic_2common_8h_1a0f3d08920a6e633fd2c203210bd5e9e8>`(library_name)

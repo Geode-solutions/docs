@@ -21,9 +21,9 @@ class geode::OpenGeodeGraph
 		// methods
 	
 		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :target:`type_name<doxid-classgeode_1_1_open_geode_graph_1acf21de8e58dfbe6a26b003ef69463b3b>`() const;
-		virtual std::string :target:`native_extension<doxid-classgeode_1_1_open_geode_graph_1acf3ec9c5e9a21457b21c7be2637d5731>`() const;
+		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_graph_1a190f8631b48f02e9042ca9ebfde9d3b4>`() const;
 		static :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :target:`type_name_static<doxid-classgeode_1_1_open_geode_graph_1a4a3400542c189bfd8a65f2f4da8f9906>`();
-		static std::string :target:`native_extension_static<doxid-classgeode_1_1_open_geode_graph_1a3be6970772b9b9b663ed479b0ab06148>`();
+		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_open_geode_graph_1a2980c046c8d873d1e8bc08c5db6d86fc>`();
 	};
 
 Inherited Members
@@ -38,7 +38,7 @@ Inherited Members
 		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
 		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a7dc1d253ac9d6a68c8380973f17d5667>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
 		std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`clone<doxid-classgeode_1_1_vertex_set_1a59f8cdf17a798e4746e3b90baa8be080>`() const;
-		virtual std::string :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1a225c97c97fbb97dae48f33cd0d8c43f8>`() const = 0;
+		virtual absl::string_view :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1adee799d7c11a4401041b9da48fcbd86a>`() const = 0;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
 		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
@@ -48,5 +48,5 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_vertex<doxid-classgeode_1_1_graph_1ad59eacb78c03b6f5d8858eb7f597f74d>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_edges<doxid-classgeode_1_1_graph_1a7ae6a6d4f1f52849125f55f8012d9819>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_graph_1a4958092d4cc40efc7f1ed612c2a8727e>`() const;
-		const std::vector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`>& :ref:`edges_around_vertex<doxid-classgeode_1_1_graph_1a218ffe84e47003bc192e61355cbededc>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		const :ref:`EdgesAroundVertex<doxid-namespacegeode_1aab3c9dc52d762219dcc9137475590210>`& :ref:`edges_around_vertex<doxid-classgeode_1_1_graph_1ac1d310bffb226e03046ab4227809c422>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 

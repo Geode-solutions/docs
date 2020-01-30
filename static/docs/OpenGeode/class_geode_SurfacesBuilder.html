@@ -47,12 +47,12 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-builder-1a3c3ad81bdc210faef54883ef34ea453a">load_surfaces</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-builder-1af0db882b33d74874a9ab309d23a998d0">load_surfaces</span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">);</span>
     <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurfaceBuilder.html#doxid-classgeode-1-1-polygonal-surface-builder"><span class="std std-ref">PolygonalSurfaceBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-surfaces-builder-1a28413b308d264eb68e453e253591a62c"><span class="std std-ref">surface_mesh_builder</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-builder-1a01ee4ff5d8d95fd625a3462e9bb1a9cf">set_surface_name</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surfaces-builder-1ade216cb2926a07f4aece2f1910977252">set_surface_name</span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">,</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span>
         <span class="p">);</span>
 <span class="p">};</span></pre>
 </div>

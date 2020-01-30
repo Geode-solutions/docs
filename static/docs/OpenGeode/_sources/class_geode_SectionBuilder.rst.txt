@@ -113,7 +113,7 @@ Inherited Members
 		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a6c661d5abfdf4600024e03a1535b43d9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);
 		void :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_builder_1a785391408cff3d0af65ad246dd4acdf9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding);
 		void :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_builder_1a951ced98812449fedd537cec5b66ceec>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection);
-		void :ref:`load_relationships<doxid-classgeode_1_1_relationships_builder_1a5a64bac350c1065b91174605ef82f48f>`(const std::string& directory);
+		void :ref:`load_relationships<doxid-classgeode_1_1_relationships_builder_1a7901eef2fbf55303a0a3921477ffe450>`(absl::string_view directory);
 	
 		template <typename MeshComponent>
 		void :ref:`register_mesh_component<doxid-classgeode_1_1_vertex_identifier_builder_1a8b4ab10edefe09a84fe1ebb36b533acc>`(const MeshComponent& component);
@@ -126,5 +126,5 @@ Inherited Members
 		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a3ca57fc5665a96f33daf6057d52c1813>`(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id);
 		void :ref:`unset_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a7a733cd91d04177fa0d1a79f250a00d0>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id);
 		void :ref:`update_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a7d86f2ce828712c080007a9bbd680025>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id, const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new);
-		void :ref:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a7f023da66b731c2260b290471a60812f>`(const std::string& directory);
+		void :ref:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a666c161b0204f41f666cb8c61abd8221>`(absl::string_view directory);
 

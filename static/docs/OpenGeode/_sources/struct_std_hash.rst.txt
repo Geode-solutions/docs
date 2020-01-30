@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::detail::VertexCycle>
-.. _doxid-structstd_1_1hash_3_01geode_1_1detail_1_1_vertex_cycle_01_4:
+.. index:: pair: struct; std::hash<ArrayVertexCycle>
+.. _doxid-structstd_1_1hash_3_01_array_vertex_cycle_01_4:
 
-template struct std::hash<geode::detail::VertexCycle>
-=====================================================
+template struct std::hash<ArrayVertexCycle>
+===========================================
 
 .. toctree::
 	:hidden:
@@ -16,9 +16,9 @@ template struct std::hash<geode::detail::VertexCycle>
 	#include <vertex_cycle.h>
 	
 	template <>
-	struct hash<geode::detail::VertexCycle>
+	struct hash<ArrayVertexCycle>
 	{
 		// methods
 	
-		std::size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1detail_1_1_vertex_cycle_01_4_1af0fe73c693300e07e6044aad3d90445e>` (const :ref:`geode::detail::VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`& cycle) const;
+		std::size_t :target:`operator ()<doxid-structstd_1_1hash_3_01_array_vertex_cycle_01_4_1af4a02d01a639c466e40e1889f4803411>` (const :ref:`ArrayVertexCycle<doxid-namespacestd_1aa4fbec216049781ab8da0cc92b7cc0d3>`& cycle) const;
 	};

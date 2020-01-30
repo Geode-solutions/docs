@@ -43,6 +43,14 @@
 
 <span class="k">namespace</span> <a class="reference internal" href="namespace_bitsery_traits.html#doxid-namespacebitsery-1-1traits"><span class="std std-ref">bitsery::traits</span></a><span></span><span class="p">;</span>
 
+<span class="c1">// global functions</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Serializer</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">N</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacebitsery-1a30ce491c3beb8eb32f41328da95ed658">serialize</span><span></span><span class="p">(</span>
+    <span class="n">Serializer</span><span class="o">&amp;</span> <span class="n">s</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="n">N</span><span class="o">&gt;&amp;</span> <span class="n">obj</span>
+    <span class="p">);</span>
+
 <span class="p">}</span> <span class="c1">// namespace bitsery</span></pre>
 </div>
 

@@ -44,6 +44,8 @@ Description of a point in the given dimension with double coordinates
 			const Point& other,
 			double epsilon
 			) const;
+	
+		std::string :target:`string<doxid-classgeode_1_1_point_1aa5dd322eea26f1fa239b4e8d6ec094ef>`() const;
 	};
 
 	// direct descendants

@@ -24,9 +24,20 @@ Read and write interface for constant attribute storage
 		virtual const T& :target:`value<doxid-classgeode_1_1_constant_attribute_1ae456f281d3db9616c6fd7dc00fc4d8fd>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`) const;
 		const T& :target:`value<doxid-classgeode_1_1_constant_attribute_1ace3aca22736ec60f761fa0a66d1b61e9>`() const;
 		void :target:`set_value<doxid-classgeode_1_1_constant_attribute_1a364246a7490ba9443cf870129fd29756>`(T value);
+		T :target:`default_value<doxid-classgeode_1_1_constant_attribute_1a566df9542ba015267751a8381d67e995>`() const;
 	
 		template <typename Modifier>
 		void :target:`modify_value<doxid-classgeode_1_1_constant_attribute_1a1104ffe966fece96387ae6da83827f95>`(Modifier&& modifier);
+	
+		virtual void :target:`compute_value<doxid-classgeode_1_1_constant_attribute_1a702db7dad92fde60a3fa53d13af5255f>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`
+			);
+	
+		virtual void :target:`compute_value<doxid-classgeode_1_1_constant_attribute_1ad840a5675fe444192827f8f3cec61e50>`(
+			const :ref:`AttributeLinearInterpolation<doxid-classgeode_1_1_attribute_linear_interpolation>`&,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`
+			);
 	
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :target:`clone<doxid-classgeode_1_1_constant_attribute_1a19fd281f9d7a9119299ffa854c3c8023>`() const;
 	
@@ -49,6 +60,6 @@ Inherited Members
 		virtual void :ref:`copy<doxid-classgeode_1_1_attribute_base_1ab69e09b7f30008232ba265e3e6150e5d>`(const :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`& attribute, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements) = 0;
 		virtual float :ref:`generic_value<doxid-classgeode_1_1_attribute_base_1a1a5a7f1d11dc8e0dc7fb066726e35926>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 		virtual const T& :ref:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
-		virtual std::string :ref:`type<doxid-classgeode_1_1_read_only_attribute_1a404613b1cdd0d15b0deed66baca23ab1>`();
+		virtual absl::string_view :ref:`type<doxid-classgeode_1_1_read_only_attribute_1adfc9b760b42a6f7b891a19565d190559>`();
 		virtual float :ref:`generic_value<doxid-classgeode_1_1_read_only_attribute_1aee6bdac5b29c48a61eb704b6d4c7528e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
 

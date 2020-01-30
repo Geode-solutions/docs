@@ -24,12 +24,12 @@ Overview
 	public:
 		// methods
 	
-		void :target:`load_surfaces<doxid-classgeode_1_1_surfaces_builder_1a3c3ad81bdc210faef54883ef34ea453a>`(const std::string& directory);
+		void :target:`load_surfaces<doxid-classgeode_1_1_surfaces_builder_1af0db882b33d74874a9ab309d23a998d0>`(absl::string_view directory);
 		std::unique_ptr<:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`<dimension>> :ref:`surface_mesh_builder<doxid-classgeode_1_1_surfaces_builder_1a28413b308d264eb68e453e253591a62c>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 	
-		void :target:`set_surface_name<doxid-classgeode_1_1_surfaces_builder_1a01ee4ff5d8d95fd625a3462e9bb1a9cf>`(
+		void :target:`set_surface_name<doxid-classgeode_1_1_surfaces_builder_1ade216cb2926a07f4aece2f1910977252>`(
 			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id,
-			std::string name
+			absl::string_view name
 			);
 	};
 .. _details-classgeode_1_1_surfaces_builder:

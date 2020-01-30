@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>struct geode::detail::FacetId &#8212; Python  documentation</title>
+    <title>template struct std::hash&lt;VectorVertexCycle&gt; &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -16,8 +16,7 @@
     <script type="text/javascript" src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct geode::detail::SetValue" href="struct_geode_detail_SetValue.html" />
-    <link rel="prev" title="namespace geode::detail" href="namespace_geode_detail.html" />
+    <link rel="prev" title="template struct std::hash&lt;geode::MeshType&gt;" href="struct_std_hash-3.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,17 +32,18 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="struct-geode-detail-facetid">
-<span id="doxid-structgeode-1-1detail-1-1-facet-id"></span><span id="index-0"></span><h1>struct geode::detail::FacetId</h1>
+  <div class="section" id="template-struct-std-hash-vectorvertexcycle">
+<span id="doxid-structstd-1-1hash-3-01-vector-vertex-cycle-01-4"></span><span id="index-0"></span><h1>template struct std::hash&lt;VectorVertexCycle&gt;</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;facet_storage.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vertex_cycle.h&gt;</span><span class="cp"></span>
 
-<span class="k">struct</span> <span class="n">FacetId</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">struct</span> <span class="n">hash</span><span class="o">&lt;</span><span class="n">VectorVertexCycle</span><span class="o">&gt;</span>
 <span class="p">{</span>
-    <span class="c1">// fields</span>
+    <span class="c1">// methods</span>
 
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-facet-id-1a6bad3b88a1f0141d306515b61184c628">id</span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="doxyrest-code-target target" id="doxid-structstd-1-1hash-3-01-vector-vertex-cycle-01-4-1a300bb31f127c3f0258f7423fa7dd0058">operator ()</span><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_std.html#doxid-namespacestd-1aa16fc20247e76b5459f621a0781bb978"><span class="std std-ref">VectorVertexCycle</span></a><span></span><span class="o">&amp;</span> <span class="n">cycle</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -61,7 +61,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/struct_geode_detail_FacetId.rst.txt"
+      <a href="_sources/struct_std_hash-4.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

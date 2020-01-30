@@ -32,7 +32,7 @@ Class managing modification of :ref:`Relationships <doxid-classgeode_1_1_relatio
 		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a6c661d5abfdf4600024e03a1535b43d9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);
 		void :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_builder_1a785391408cff3d0af65ad246dd4acdf9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding);
 		void :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_builder_1a951ced98812449fedd537cec5b66ceec>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection);
-		void :target:`load_relationships<doxid-classgeode_1_1_relationships_builder_1a5a64bac350c1065b91174605ef82f48f>`(const std::string& directory);
+		void :target:`load_relationships<doxid-classgeode_1_1_relationships_builder_1a7901eef2fbf55303a0a3921477ffe450>`(absl::string_view directory);
 	};
 
 	// direct descendants

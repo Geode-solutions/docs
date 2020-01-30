@@ -20,14 +20,14 @@ class geode::ZipFile
 	public:
 		// construction
 	
-		:target:`ZipFile<doxid-classgeode_1_1_zip_file_1a1caa441d6891d92df4378774fd7e05dd>`(
-			const std::string& file,
-			const std::string& archive_temp_filename
+		:target:`ZipFile<doxid-classgeode_1_1_zip_file_1a6425adf70bfffcfcc6853167e66392d8>`(
+			absl::string_view file,
+			absl::string_view archive_temp_filename
 			);
 
 		// methods
 	
-		void :target:`archive_files<doxid-classgeode_1_1_zip_file_1a5996be223662b683bbe9ef9f3e08cba0>`(const std::vector<std::string>& files) const;
-		void :target:`archive_file<doxid-classgeode_1_1_zip_file_1ac733dd94957240a0d95ac4067d73e8c7>`(const std::string& file) const;
-		std::string :target:`directory<doxid-classgeode_1_1_zip_file_1ae7b12f79492d074ee11ce5da931a5fbc>`() const;
+		void :target:`archive_files<doxid-classgeode_1_1_zip_file_1a1c8f03bfd5e41c36ec7bbdc1670b30ac>`(const std::vector<absl::string_view>& files) const;
+		void :target:`archive_file<doxid-classgeode_1_1_zip_file_1a23782d6ee7d737e7684d0852ce5e3682>`(absl::string_view file) const;
+		absl::string_view :target:`directory<doxid-classgeode_1_1_zip_file_1afd2924540366fcc5fe4305a311fd34b2>`() const;
 	};

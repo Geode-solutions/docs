@@ -21,11 +21,11 @@ template class geode::Growable
 	public:
 		// construction
 	
-		:target:`Growable<doxid-classgeode_1_1_growable_1a33716ba57a1f1c05397952d02a9f2354>`(std::vector<std::function<void(Archive&, T&)>> serializers);
+		:target:`Growable<doxid-classgeode_1_1_growable_1a1e70868e3ba79a342a763a9ed0623c94>`(absl::FixedArray<std::function<void(Archive&, T&)>> serializers);
 	
-		:target:`Growable<doxid-classgeode_1_1_growable_1a24d0cbc4c0a8a3307ab40fd164c719f1>`(
-			std::vector<std::function<void(Archive&, T&)>> serializers,
-			std::vector<std::function<void(T&)>> initializers
+		:target:`Growable<doxid-classgeode_1_1_growable_1a1a653739abe7074432e2df453f27789b>`(
+			absl::FixedArray<std::function<void(Archive&, T&)>> serializers,
+			absl::FixedArray<std::function<void(T&)>> initializers
 			);
 
 		// methods

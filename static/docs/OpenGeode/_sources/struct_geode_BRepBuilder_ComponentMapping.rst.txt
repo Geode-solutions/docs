@@ -19,13 +19,13 @@ struct geode::BRepBuilder::ComponentMapping
 	{
 		// typedefs
 	
-		typedef std::unordered_map<:ref:`uuid<doxid-structgeode_1_1uuid>`, :ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a2b45e4484ca810014c8faf9251928abe>`;
+		typedef absl::flat_hash_map<:ref:`uuid<doxid-structgeode_1_1uuid>`, :ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a71eccbb95d9ba5b918497d451b137e0e>`;
 
 		// fields
 	
-		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a2b45e4484ca810014c8faf9251928abe>` :target:`corners<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a4cd748d8bd08bf8ecfa3e1a640deb318>`;
-		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a2b45e4484ca810014c8faf9251928abe>` :target:`lines<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1af51d4961b6c0da094e7e21782ef80af0>`;
-		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a2b45e4484ca810014c8faf9251928abe>` :target:`surfaces<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1afe0515b510d50847f6e081a318b7d282>`;
-		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a2b45e4484ca810014c8faf9251928abe>` :target:`blocks<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a46764c4ed22f57e877374aef235e5185>`;
-		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a2b45e4484ca810014c8faf9251928abe>` :target:`model_boundaries<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a0e4bf684079db8881cdac03e24fe5b68>`;
+		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a71eccbb95d9ba5b918497d451b137e0e>` :target:`corners<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a4cd748d8bd08bf8ecfa3e1a640deb318>`;
+		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a71eccbb95d9ba5b918497d451b137e0e>` :target:`lines<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1af51d4961b6c0da094e7e21782ef80af0>`;
+		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a71eccbb95d9ba5b918497d451b137e0e>` :target:`surfaces<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1afe0515b510d50847f6e081a318b7d282>`;
+		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a71eccbb95d9ba5b918497d451b137e0e>` :target:`blocks<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a46764c4ed22f57e877374aef235e5185>`;
+		:ref:`Mapping<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a71eccbb95d9ba5b918497d451b137e0e>` :target:`model_boundaries<doxid-structgeode_1_1_b_rep_builder_1_1_component_mapping_1a0e4bf684079db8881cdac03e24fe5b68>`;
 	};
