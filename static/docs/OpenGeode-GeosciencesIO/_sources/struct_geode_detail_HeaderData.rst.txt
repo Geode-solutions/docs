@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::detail::HeaderData
+.. _doxid-structgeode_1_1detail_1_1_header_data:
+
+struct geode::detail::HeaderData
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <gocad_common.h>
+	
+	struct HeaderData
+	{
+		// fields
+	
+		std::string :target:`name<doxid-structgeode_1_1detail_1_1_header_data_1a9572b90ed49b4bcb3538f475819a1587>`;
+	};
