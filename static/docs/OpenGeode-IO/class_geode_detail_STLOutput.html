@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>class geode::STLOutput &#8212; Python  documentation</title>
+    <title>class geode::detail::STLOutput &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -16,8 +16,8 @@
     <script type="text/javascript" src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::SVGInput" href="class_geode_SVGInput.html" />
-    <link rel="prev" title="class geode::STLInput" href="class_geode_STLInput.html" />
+    <link rel="next" title="class geode::detail::SVGInput" href="class_geode_detail_SVGInput.html" />
+    <link rel="prev" title="class geode::detail::STLInput" href="class_geode_detail_STLInput.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,8 +33,8 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-stloutput">
-<span id="doxid-classgeode-1-1-s-t-l-output"></span><span id="index-0"></span><h1>class geode::STLOutput</h1>
+  <div class="section" id="class-geode-detail-stloutput">
+<span id="doxid-classgeode-1-1detail-1-1-s-t-l-output"></span><span id="index-0"></span><h1>class geode::detail::STLOutput</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;stl_output.h&gt;</span><span class="cp"></span>
@@ -44,15 +44,15 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-s-t-l-output-1a68b7ef58cbb1eb42feb9002fb7324208">STLOutput</span><span></span><span class="p">(</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-s-t-l-output-1ad519826a3537cea783ca46a7f2080870">STLOutput</span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">filename</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-s-t-l-output-1ac481105262e85844b3318145094d7d4c">write</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-s-t-l-output-1a0f664dc41a043ab969704943c9a6aa13">extension</span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-s-t-l-output-1a2fb2b8b5e90c977720e76dccadec8087">write</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-s-t-l-output-1a559cd33eb1f644a6c4357e755261c7e2">extension</span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -70,7 +70,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_STLOutput.rst.txt"
+      <a href="_sources/class_geode_detail_STLOutput.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

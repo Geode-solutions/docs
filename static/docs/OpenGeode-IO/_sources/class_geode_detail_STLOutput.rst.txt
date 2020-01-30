@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::STLOutput
+.. _doxid-classgeode_1_1detail_1_1_s_t_l_output:
+
+class geode::detail::STLOutput
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <stl_output.h>
+	
+	class STLOutput: public TriangulatedSurfaceOutput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`STLOutput<doxid-classgeode_1_1detail_1_1_s_t_l_output_1ad519826a3537cea783ca46a7f2080870>`(
+			const TriangulatedSurface<3>& surface,
+			absl::string_view filename
+			);
+
+		// methods
+	
+		void :target:`write<doxid-classgeode_1_1detail_1_1_s_t_l_output_1a2fb2b8b5e90c977720e76dccadec8087>`() const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_s_t_l_output_1a559cd33eb1f644a6c4357e755261c7e2>`();
+	};

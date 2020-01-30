@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::PLYInput
+.. _doxid-classgeode_1_1detail_1_1_p_l_y_input:
+
+class geode::detail::PLYInput
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ply_input.h>
+	
+	class PLYInput: public PolygonalSurfaceInput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`PLYInput<doxid-classgeode_1_1detail_1_1_p_l_y_input_1af96c9c1c3b09ea07f954d1f671e143f0>`(
+			PolygonalSurface<3>& surface,
+			absl::string_view filename
+			);
+
+		// methods
+	
+		void :target:`do_read<doxid-classgeode_1_1detail_1_1_p_l_y_input_1ad76af1e108d82563fc87de93fab7a69b>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_p_l_y_input_1a6c3e4fcf4dfed5c806e83695cd576beb>`();
+	};

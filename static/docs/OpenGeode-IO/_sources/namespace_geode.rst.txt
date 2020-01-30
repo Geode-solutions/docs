@@ -8,14 +8,6 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
-	class_geode_MSHInput.rst
-	class_geode_OBJInput.rst
-	class_geode_OBJOutput.rst
-	class_geode_PLYInput.rst
-	class_geode_PLYOutput.rst
-	class_geode_STLInput.rst
-	class_geode_STLOutput.rst
-	class_geode_SVGInput.rst
 
 
 
@@ -29,21 +21,5 @@ namespace geode
 	// namespaces
 
 	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
-
-	// classes
-
-	class :ref:`MSHInput<doxid-classgeode_1_1_m_s_h_input>`;
-	class :ref:`OBJInput<doxid-classgeode_1_1_o_b_j_input>`;
-	class :ref:`OBJOutput<doxid-classgeode_1_1_o_b_j_output>`;
-	class :ref:`PLYInput<doxid-classgeode_1_1_p_l_y_input>`;
-	class :ref:`PLYOutput<doxid-classgeode_1_1_p_l_y_output>`;
-	class :ref:`STLInput<doxid-classgeode_1_1_s_t_l_input>`;
-	class :ref:`STLOutput<doxid-classgeode_1_1_s_t_l_output>`;
-	class :ref:`SVGInput<doxid-classgeode_1_1_s_v_g_input>`;
-
-	// global functions
-
-	void opengeode_io_mesh_api :target:`initialize_mesh_io<doxid-namespacegeode_1aa7789c2abce40c6e8b34b8b3c8ffc9e3>`();
-	void opengeode_io_model_api :target:`initialize_model_io<doxid-namespacegeode_1a62e0b7868bfa3f04b2e50aca0123f607>`();
 
 	} // namespace geode

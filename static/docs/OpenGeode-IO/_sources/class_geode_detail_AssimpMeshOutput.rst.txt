@@ -21,10 +21,10 @@ template class geode::detail::AssimpMeshOutput
 	public:
 		// construction
 	
-		:target:`AssimpMeshOutput<doxid-classgeode_1_1detail_1_1_assimp_mesh_output_1a739a2df5a3eccc4cd48f7fb29c9b305c>`(
-			std::string filename,
+		:target:`AssimpMeshOutput<doxid-classgeode_1_1detail_1_1_assimp_mesh_output_1ac3ff135a36317b7d8fdd39a08b8bff1b>`(
+			absl::string_view filename,
 			const SurfaceMesh& surface_mesh,
-			std::string assimp_export_id
+			absl::string_view assimp_export_id
 			);
 
 		// methods
