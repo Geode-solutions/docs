@@ -45,10 +45,10 @@ Overview
 
 	// typedefs
 
-	typedef Factory<std::string, :ref:`CrossSectionInput<doxid-classgeode_1_1_cross_section_input>`, :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`&, std::string> :target:`CrossSectionInputFactory<doxid-namespacegeode_1a4967b9d3f311a9b2637ba8f00a84327b>`;
-	typedef Factory<std::string, :ref:`CrossSectionOutput<doxid-classgeode_1_1_cross_section_output>`, const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`&, std::string> :target:`CrossSectionOutputFactory<doxid-namespacegeode_1ac46a6ae02f93679475a4e819162f5e46>`;
-	typedef Factory<std::string, :ref:`StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`, :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`&, std::string> :target:`StructuralModelInputFactory<doxid-namespacegeode_1ab3b4084f6fc719ec50a1dcc8b70d8121>`;
-	typedef Factory<std::string, :ref:`StructuralModelOutput<doxid-classgeode_1_1_structural_model_output>`, const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`&, std::string> :target:`StructuralModelOutputFactory<doxid-namespacegeode_1a4080d585755278673b19756c46e1028c>`;
+	typedef Factory<std::string, :ref:`CrossSectionInput<doxid-classgeode_1_1_cross_section_input>`, :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`&, absl::string_view> :target:`CrossSectionInputFactory<doxid-namespacegeode_1ae837d796e8d1db1e9460d7c5419b66e5>`;
+	typedef Factory<std::string, :ref:`CrossSectionOutput<doxid-classgeode_1_1_cross_section_output>`, const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`&, absl::string_view> :target:`CrossSectionOutputFactory<doxid-namespacegeode_1ad890c7fd52321eddf39bc19e9d1aee41>`;
+	typedef Factory<std::string, :ref:`StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`, :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`&, absl::string_view> :target:`StructuralModelInputFactory<doxid-namespacegeode_1a3d6a2b30cd979ad6fb0c535d2cf43966>`;
+	typedef Factory<std::string, :ref:`StructuralModelOutput<doxid-classgeode_1_1_structural_model_output>`, const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`&, absl::string_view> :target:`StructuralModelOutputFactory<doxid-namespacegeode_1a963b0e3ab10a304ad22428015d47e28f>`;
 
 	// classes
 
@@ -99,24 +99,24 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1af19826a31c76aaa33efad0be302110f6>`(:ref:`Horizon<doxid-classgeode_1_1_horizon>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1020afb295a641bdc1a840c6cb850ba7>`(:ref:`Horizons<doxid-classgeode_1_1_horizons>`);
 
-	void opengeode_geosciences_geosciences_api :ref:`load_cross_section<doxid-namespacegeode_1aea0f481b1ea97ddb31b1e66323deb8dc>`(
+	void opengeode_geosciences_geosciences_api :ref:`load_cross_section<doxid-namespacegeode_1ae770ae8cdf08e12efeb84eb4658137e8>`(
 		:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-		const std::string& filename
+		absl::string_view filename
 		);
 
-	void opengeode_geosciences_geosciences_api :ref:`save_cross_section<doxid-namespacegeode_1af8b22782d40d6b49c4d839beac1f5680>`(
+	void opengeode_geosciences_geosciences_api :ref:`save_cross_section<doxid-namespacegeode_1a686db0f6979efe582e3ab9b27e03a136>`(
 		const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-		const std::string& filename
+		absl::string_view filename
 		);
 
-	void opengeode_geosciences_geosciences_api :ref:`load_structural_model<doxid-namespacegeode_1a987388a72aeb0ddd6fdb7b20a82ee0ac>`(
+	void opengeode_geosciences_geosciences_api :ref:`load_structural_model<doxid-namespacegeode_1ab912d334c250a0988acd5bd9221531dc>`(
 		:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
-		const std::string& filename
+		absl::string_view filename
 		);
 
-	void opengeode_geosciences_geosciences_api :ref:`save_structural_model<doxid-namespacegeode_1aef274f5f60899b94120f344d30611ab0>`(
+	void opengeode_geosciences_geosciences_api :ref:`save_structural_model<doxid-namespacegeode_1aedf25fba2a5257c41fe72e361cbe9d17>`(
 		const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
-		const std::string& filename
+		absl::string_view filename
 		);
 
 	} // namespace geode
@@ -175,14 +175,14 @@ Register all the information needed by Bitsery to deserialize the objects in the
 		- The context where to register this information.
 
 .. index:: pair: function; load_cross_section
-.. _doxid-namespacegeode_1aea0f481b1ea97ddb31b1e66323deb8dc:
+.. _doxid-namespacegeode_1ae770ae8cdf08e12efeb84eb4658137e8:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	void opengeode_geosciences_geosciences_api load_cross_section(
 		:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-		const std::string& filename
+		absl::string_view filename
 		)
 
 API function for loading a :ref:`CrossSection <doxid-classgeode_1_1_cross_section>`. The adequate loader is called depending on the filename extension.
@@ -205,14 +205,14 @@ API function for loading a :ref:`CrossSection <doxid-classgeode_1_1_cross_sectio
 		- Path to the file to load.
 
 .. index:: pair: function; save_cross_section
-.. _doxid-namespacegeode_1af8b22782d40d6b49c4d839beac1f5680:
+.. _doxid-namespacegeode_1a686db0f6979efe582e3ab9b27e03a136:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	void opengeode_geosciences_geosciences_api save_cross_section(
 		const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-		const std::string& filename
+		absl::string_view filename
 		)
 
 API function for saving a :ref:`CrossSection <doxid-classgeode_1_1_cross_section>`. The adequate saver is called depending on the given filename extension.
@@ -235,14 +235,14 @@ API function for saving a :ref:`CrossSection <doxid-classgeode_1_1_cross_section
 		- Path to the file where save the :ref:`CrossSection <doxid-classgeode_1_1_cross_section>`.
 
 .. index:: pair: function; load_structural_model
-.. _doxid-namespacegeode_1a987388a72aeb0ddd6fdb7b20a82ee0ac:
+.. _doxid-namespacegeode_1ab912d334c250a0988acd5bd9221531dc:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	void opengeode_geosciences_geosciences_api load_structural_model(
 		:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
-		const std::string& filename
+		absl::string_view filename
 		)
 
 API function for loading a :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`. The adequate loader is called depending on the filename extension.
@@ -265,14 +265,14 @@ API function for loading a :ref:`StructuralModel <doxid-classgeode_1_1_structura
 		- Path to the file to load.
 
 .. index:: pair: function; save_structural_model
-.. _doxid-namespacegeode_1aef274f5f60899b94120f344d30611ab0:
+.. _doxid-namespacegeode_1aedf25fba2a5257c41fe72e361cbe9d17:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	void opengeode_geosciences_geosciences_api save_structural_model(
 		const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
-		const std::string& filename
+		absl::string_view filename
 		)
 
 API function for saving a :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`. The adequate saver is called depending on the given filename extension.
