@@ -84,11 +84,17 @@
         <code>add_geode_library</code> per library.
       </li>
     </ol>
-
+  
+    <p :class="paragraph">
+      If you want to compile the tests and enabled the <code>MYMODULE_WITH_TESTS</code> option, 
+      also open tests/CMakeLists.txt and replace 
+       <code>MyModule</code> by the name of your module.
+    </p>
+    
     <p :class="paragraph">
       Your CMakeLists.txt is now ready.
     </p>
-
+  
     <h2 :class="section">
       Last step - Configure and build your module
     </h2>
@@ -112,6 +118,10 @@
       The last thing to do is to modify headers (.h) and sources (.cpp) files by replacing
       <code>mylib</code> by the name your choose for your libs and
       <code>mymodule</code> by the name of your module.
+    </p>
+    
+    <p :class="paragraph">
+    Don't forget to also do it for the tests directory if you enabled the <code>MYMODULE_WITH_TESTS</code> option!
     </p>
 
     <p :class="paragraph">
