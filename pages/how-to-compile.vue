@@ -50,7 +50,7 @@
     <p
       :class="paragraph"
     >
-      Your version of CMake should be at least 3.7.2 (3.11 for MacOS Catalina and above users).
+      Your version of CMake should be at least 3.11.
     </p>
 
     <h3 :class="subsection">
