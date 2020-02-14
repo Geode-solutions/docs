@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="namespace geode::detail" href="namespace_geode_detail.html" />
@@ -134,7 +134,7 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_BRepInput.html#doxid-classgeode-1-1-b-rep-input"><span class="std std-ref">BRepInput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_BRepOutput.html#doxid-classgeode-1-1-b-rep-output"><span class="std std-ref">BRepOutput</span></a><span></span><span class="p">;</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="p">,</span> <span class="k">typename</span> <span class="n">NextOperator</span> <span class="o">=</span> <span class="n">IncrementOperator</span><span class="o">&lt;</span> <span class="n">Type</span> <span class="o">&gt;&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_BaseRange.html#doxid-classgeode-1-1-base-range"><span class="std std-ref">BaseRange</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
@@ -169,6 +169,9 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_CornersBuilder.html#doxid-classgeode-1-1-corners-builder"><span class="std std-ref">CornersBuilder</span></a><span></span><span class="p">;</span>
 
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_DecrementOperator.html#doxid-classgeode-1-1-decrement-operator"><span class="std std-ref">DecrementOperator</span></a><span></span><span class="p">;</span>
+
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Archive</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_DefaultGrowable.html#doxid-classgeode-1-1-default-growable"><span class="std std-ref">DefaultGrowable</span></a><span></span><span class="p">;</span>
 
@@ -196,6 +199,10 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_Growable.html#doxid-classgeode-1-1-growable"><span class="std std-ref">Growable</span></a><span></span><span class="p">;</span>
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_IOFile.html#doxid-classgeode-1-1-i-o-file"><span class="std std-ref">IOFile</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_IncrementOperator.html#doxid-classgeode-1-1-increment-operator"><span class="std std-ref">IncrementOperator</span></a><span></span><span class="p">;</span>
+
 <span class="k">class</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input"><span class="std std-ref">Input</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -329,6 +336,7 @@
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships.html#doxid-classgeode-1-1-relationships"><span class="std std-ref">Relationships</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_RelationshipsBuilder.html#doxid-classgeode-1-1-relationships-builder"><span class="std std-ref">RelationshipsBuilder</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_ReverseRange.html#doxid-classgeode-1-1-reverse-range"><span class="std std-ref">ReverseRange</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_SectionBuilder.html#doxid-classgeode-1-1-section-builder"><span class="std std-ref">SectionBuilder</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_SectionInput.html#doxid-classgeode-1-1-section-input"><span class="std std-ref">SectionInput</span></a><span></span><span class="p">;</span>
@@ -1191,7 +1199,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

@@ -1,0 +1,25 @@
+.. index:: pair: class; geode::IncrementOperator
+.. _doxid-classgeode_1_1_increment_operator:
+
+template class geode::IncrementOperator
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <range.h>
+	
+	template <typename Type>
+	class IncrementOperator
+	{
+	public:
+		// methods
+	
+		void :target:`operator ()<doxid-classgeode_1_1_increment_operator_1a5701a91d6c77e1dd5fbcdaadfdcf1de5>` (Type& value) const;
+	};

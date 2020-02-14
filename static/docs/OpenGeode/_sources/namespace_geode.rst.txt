@@ -41,6 +41,7 @@ namespace geode
 	class_geode_Corner.rst
 	class_geode_Corners.rst
 	class_geode_CornersBuilder.rst
+	class_geode_DecrementOperator.rst
 	class_geode_DefaultGrowable.rst
 	class_geode_EdgedCurve.rst
 	class_geode_EdgedCurveBuilder.rst
@@ -53,6 +54,7 @@ namespace geode
 	class_geode_GraphOutput.rst
 	class_geode_Growable.rst
 	class_geode_IOFile.rst
+	class_geode_IncrementOperator.rst
 	class_geode_Input.rst
 	class_geode_Line.rst
 	class_geode_Lines.rst
@@ -105,6 +107,7 @@ namespace geode
 	class_geode_ReadOnlyAttribute.rst
 	class_geode_Relationships.rst
 	class_geode_RelationshipsBuilder.rst
+	class_geode_ReverseRange.rst
 	class_geode_Section.rst
 	class_geode_SectionBuilder.rst
 	class_geode_SectionInput.rst
@@ -241,7 +244,7 @@ Overview
 	class :ref:`BRepInput<doxid-classgeode_1_1_b_rep_input>`;
 	class :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`;
 
-	template <typename Type>
+	template <typename Type, typename NextOperator = IncrementOperator< Type >>
 	class :ref:`BaseRange<doxid-classgeode_1_1_base_range>`;
 
 	template <typename Type>
@@ -276,6 +279,9 @@ Overview
 	template <index_t dimension>
 	class :ref:`CornersBuilder<doxid-classgeode_1_1_corners_builder>`;
 
+	template <typename Type>
+	class :ref:`DecrementOperator<doxid-classgeode_1_1_decrement_operator>`;
+
 	template <typename Archive, typename T>
 	class :ref:`DefaultGrowable<doxid-classgeode_1_1_default_growable>`;
 
@@ -303,6 +309,10 @@ Overview
 	class :ref:`Growable<doxid-classgeode_1_1_growable>`;
 
 	class :ref:`IOFile<doxid-classgeode_1_1_i_o_file>`;
+
+	template <typename Type>
+	class :ref:`IncrementOperator<doxid-classgeode_1_1_increment_operator>`;
+
 	class :ref:`Input<doxid-classgeode_1_1_input>`;
 
 	template <index_t dimension>
@@ -436,6 +446,7 @@ Overview
 
 	class :ref:`Relationships<doxid-classgeode_1_1_relationships>`;
 	class :ref:`RelationshipsBuilder<doxid-classgeode_1_1_relationships_builder>`;
+	class :ref:`ReverseRange<doxid-classgeode_1_1_reverse_range>`;
 	class :ref:`Section<doxid-classgeode_1_1_section>`;
 	class :ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`;
 	class :ref:`SectionInput<doxid-classgeode_1_1_section_input>`;
