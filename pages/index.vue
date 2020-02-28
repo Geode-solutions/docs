@@ -1,6 +1,7 @@
 <template>
   <v-row class="flex-column">
-    <theme title="Guide" :cards="guides" />
+    <theme title="Guides" :cards="guides" />
+    <theme title="Setup guides" :cards="setupguides" />
     <theme title="Code documentation" :cards="projects" />
   </v-row>
 </template>
@@ -19,6 +20,23 @@ export default {
         descr: 'OpenGeode data model for representing geometric models',
         route: 'datamodel'
       },
+      {
+        title: 'Mesh',
+        descr: 'OpenGeode mesh usage and implementation',
+        route: 'meshes'
+      },
+      {
+        title: 'Attributes (soon)',
+        descr: 'OpenGeode attribute usage and implementation',
+        route: ''
+      },
+      {
+        title: 'Builders (soon)',
+        descr: 'OpenGeode way to construct and edit meshes and models',
+        route: ''
+      }
+    ],
+    setupguides: [
       {
         title: 'Supported file formats',
         descr: 'OpenGeode file formats available',
@@ -52,21 +70,6 @@ export default {
         descr:
           'How to link with OpenGeode-IO or OpenGeode-GeosciencesIO to use OpenGeode file formats',
         route: 'link-with-io'
-      },
-      {
-        title: 'Attributes (soon)',
-        descr: 'OpenGeode attribute usage and implementation',
-        route: ''
-      },
-      {
-        title: 'Mesh (soon)',
-        descr: 'OpenGeode mesh usage and implementation',
-        route: ''
-      },
-      {
-        title: 'Builders (soon)',
-        descr: 'OpenGeode way to construct and edit meshes and models',
-        route: ''
       }
     ],
     projects: [
