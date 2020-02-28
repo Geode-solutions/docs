@@ -3,9 +3,7 @@
     <v-navigation-drawer stateless app clipped permanent>
       <v-list nav>
         <template v-for="(item, index) in items">
-          <v-subheader v-if="item.divider" :key="index">
-            {{ item.divider }}
-          </v-subheader>
+          <v-subheader v-if="item.divider" :key="index">{{ item.divider }}</v-subheader>
           <v-list-item v-else :key="index" link nuxt :to="item.to" color="primary">
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -17,9 +15,7 @@
     <v-app-bar dark app clipped-left color="primary">
       <v-btn text active-class nuxt to="/">
         <v-app-bar-nav-icon>
-          <v-icon large>
-            $vuetify.icons.logo
-          </v-icon>
+          <v-icon large>$vuetify.icons.logo</v-icon>
         </v-app-bar-nav-icon>
         <v-toolbar-title>Geode-solutions</v-toolbar-title>
       </v-btn>
@@ -37,8 +33,11 @@ export default {
   data() {
     return {
       items: [
-        { divider: 'GUIDE' },
+        { divider: 'GUIDES' },
         { title: 'DataModel', to: '/datamodel' },
+        { title: 'Meshes', to: '/meshes' },
+        { title: 'Attributes', to: '/datamodel' },
+        { divider: 'SETUP GUIDES' },
         { title: 'Supported file formats', to: '/formats' },
         { title: 'Compile OpenGeode', to: '/how-to-compile' },
         {
