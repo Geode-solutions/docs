@@ -1,0 +1,28 @@
+.. index:: pair: struct; geode::GenericAttributeConversion
+.. _doxid-structgeode_1_1_generic_attribute_conversion:
+
+template struct geode::GenericAttributeConversion
+=================================================
+
+.. toctree::
+	:hidden:
+
+Helper struct to convert an Attribute value to generic float. This struct may be customized for a given type. Example: template <> struct GenericAttributeConversion< MyType > { static float converted_value( const MyType& value ) { return value.get_a_float(); } };
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <attribute.h>
+	
+	template <typename AttributeType>
+	struct GenericAttributeConversion
+	{
+		// methods
+	
+		template <typename T = AttributeType>
+		static std::enable_if<std::is_arithmetic<T>::value, float>::type :target:`converted_value<doxid-structgeode_1_1_generic_attribute_conversion_1aaa954363592fef432eb8ffcceb75fe7e>`(const T& value);
+	
+		template <typename T = AttributeType>
+		static std::enable_if<!std::is_arithmetic<T>::value, float>::type :target:`converted_value<doxid-structgeode_1_1_generic_attribute_conversion_1a5627a1006c48fad0e6d7106c1a322620>`(const T&);
+	};

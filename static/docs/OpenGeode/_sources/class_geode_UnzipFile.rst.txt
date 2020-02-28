@@ -20,13 +20,13 @@ class geode::UnzipFile
 	public:
 		// construction
 	
-		:target:`UnzipFile<doxid-classgeode_1_1_unzip_file_1aef08457dd1e6d22c9cd528393c095f61>`(
-			const std::string& file,
-			std::string unarchive_temp_filename
+		:target:`UnzipFile<doxid-classgeode_1_1_unzip_file_1a6a12099568d585ac72e6405adcc8776d>`(
+			absl::string_view file,
+			absl::string_view unarchive_temp_filename
 			);
 
 		// methods
 	
 		void :target:`extract_all<doxid-classgeode_1_1_unzip_file_1ab498d1cf332e9533c2d15579251c33b6>`() const;
-		std::string :target:`directory<doxid-classgeode_1_1_unzip_file_1ac550ecc262a8cbe03a5ad164a0fd507e>`() const;
+		absl::string_view :target:`directory<doxid-classgeode_1_1_unzip_file_1a9db4a47f1e20e4c412f54f62074194b3>`() const;
 	};

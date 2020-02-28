@@ -1,0 +1,24 @@
+.. index:: pair: struct; std::hash<VectorVertexCycle>
+.. _doxid-structstd_1_1hash_3_01_vector_vertex_cycle_01_4:
+
+template struct std::hash<VectorVertexCycle>
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vertex_cycle.h>
+	
+	template <>
+	struct hash<VectorVertexCycle>
+	{
+		// methods
+	
+		std::size_t :target:`operator ()<doxid-structstd_1_1hash_3_01_vector_vertex_cycle_01_4_1a300bb31f127c3f0258f7423fa7dd0058>` (const :ref:`VectorVertexCycle<doxid-namespacestd_1aa16fc20247e76b5459f621a0781bb978>`& cycle) const;
+	};

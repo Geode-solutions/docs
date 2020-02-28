@@ -42,5 +42,5 @@ template class geode::Horizons
 		index_t :target:`nb_horizons<doxid-classgeode_1_1_horizons_1a80d586cfb1f6a7d4f57ab0977627d9dd>`() const;
 		const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& :target:`horizon<doxid-classgeode_1_1_horizons_1a1630eca3990d0ab21987e12f30b90a33>`(const uuid& id) const;
 		:ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>` :target:`horizons<doxid-classgeode_1_1_horizons_1a6519a0977dc913d8f512316718ad90b8>`() const;
-		std::vector<std::string> :target:`save_horizons<doxid-classgeode_1_1_horizons_1ab62968d8c69b6b5e902d4d28a5682b67>`(const std::string& directory) const;
+		void :target:`save_horizons<doxid-classgeode_1_1_horizons_1a45c8c9ea998662c670380632588ff79f>`(absl::string_view directory) const;
 	};

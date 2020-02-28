@@ -1,16 +1,6 @@
 My Project Documentation
 ========================
 
-.. toctree::
-	:hidden:
-
-	page_opengeode_geosciencesio_supported_file_formats.rst
-
-.. rubric:: Related Pages:
-
-|	:doc:`page_opengeode_geosciencesio_supported_file_formats`
-
-
 .. rubric:: Reference and Index:
 
 .. toctree::

@@ -20,7 +20,7 @@ class geode::detail::AssimpMeshInput
 	public:
 		// construction
 	
-		:target:`AssimpMeshInput<doxid-classgeode_1_1detail_1_1_assimp_mesh_input_1affeaf7eb9504a5a5ed0256fa5c61f58d>`(std::string filename);
+		:target:`AssimpMeshInput<doxid-classgeode_1_1detail_1_1_assimp_mesh_input_1a1a58f064728ce75d238d8b5627e92da4>`(absl::string_view filename);
 
 		// methods
 	

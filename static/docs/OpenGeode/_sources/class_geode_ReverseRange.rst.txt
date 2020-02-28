@@ -1,0 +1,53 @@
+.. index:: pair: class; geode::ReverseRange
+.. _doxid-classgeode_1_1_reverse_range:
+
+class geode::ReverseRange
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <range.h>
+	
+	class ReverseRange:
+	    public :ref:`geode::BaseRange<doxid-classgeode_1_1_base_range>`,
+	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	{
+	public:
+		// construction
+	
+		template <typename T1, typename T2>
+		:target:`ReverseRange<doxid-classgeode_1_1_reverse_range_1a4bef130b631fe08b648e79ec112fe6e0>`(
+			T1 begin,
+			T2 end
+			);
+	
+		template <typename T>
+		:target:`ReverseRange<doxid-classgeode_1_1_reverse_range_1a03aded1931e0be83bfce4d283baf5359>`(T begin);
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`operator *<doxid-classgeode_1_1_reverse_range_1ad9f5371fb94f330404957fd53cad857f>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_base_range_1a3c8892964239c42e1e914ad91c1849cc>` (const :ref:`BaseRange<doxid-classgeode_1_1_base_range>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_base_range_1afe90da29578e4e5022ffc71598163bfe>` ();
+		Type :ref:`current<doxid-classgeode_1_1_base_range_1a62c35fce8f88bcff37fedb47da9f9240>`() const;
+		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
+		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
+

@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::VertexSetInput" href="class_geode_VertexSetInput.html" />
@@ -49,7 +49,7 @@
 
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-set-builder-1ad20a5799994288413a1f198dbe0a505d"><span class="std std-ref">create_vertex</span></a><span></span><span class="p">();</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-set-builder-1a61231a71fdad16ddb2b7e14ebc21a772"><span class="std std-ref">create_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-set-builder-1af0c55e98a9f0845c6f7f02e4b2715b0c"><span class="std std-ref">delete_vertices</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-set-builder-1a2f167c430554a70b6dd09587d2dbbcff"><span class="std std-ref">delete_vertices</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
     <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">VertexSetBuilder</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-vertex-set-builder-1a771651214baac8b1f85db964a73a4952"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 <span class="p">};</span>
 
@@ -92,7 +92,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>the index of the first created vertex</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-set-builder-1af0c55e98a9f0845c6f7f02e4b2715b0c"><span id="index-3"></span><span></span><span class="kt">void</span> <span class="n">delete_vertices</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-set-builder-1a2f167c430554a70b6dd09587d2dbbcff"><span id="index-3"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">delete_vertices</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">)</span></pre>
 <p>Delete a set of vertices.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
@@ -106,6 +106,8 @@
 </tr>
 </tbody>
 </table>
+<p class="rubric">Returns:</p>
+<p>the mapping between old vertex indices to new ones. Deleted vertices new index is NO_ID</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-vertex-set-builder-1a771651214baac8b1f85db964a73a4952"><span id="index-4"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">VertexSetBuilder</span><span class="o">&gt;</span> <span class="n">create</span><span class="p">(</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">)</span></pre>
 <p>Create the builder associated with a <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a>.</p>
 <p class="rubric">Parameters:</p>
@@ -134,7 +136,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

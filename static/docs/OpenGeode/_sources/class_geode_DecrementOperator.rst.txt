@@ -1,0 +1,25 @@
+.. index:: pair: class; geode::DecrementOperator
+.. _doxid-classgeode_1_1_decrement_operator:
+
+template class geode::DecrementOperator
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <range.h>
+	
+	template <typename Type>
+	class DecrementOperator
+	{
+	public:
+		// methods
+	
+		void :target:`operator ()<doxid-classgeode_1_1_decrement_operator_1ab1c6e0e5c22139759b33e9e53089f694>` (Type& value) const;
+	};

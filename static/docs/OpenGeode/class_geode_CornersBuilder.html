@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::DefaultGrowable" href="class_geode_DefaultGrowable.html" />
+    <link rel="next" title="template class geode::DecrementOperator" href="class_geode_DecrementOperator.html" />
     <link rel="prev" title="class geode::Corners::ModifiableCornerRange" href="class_geode_Corners_ModifiableCornerRange.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -47,12 +47,12 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-builder-1a4d67ce361e41375c36bc6cc1a90e4f2c">load_corners</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">directory</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-builder-1a0aff45966593d880314a29018874761d">load_corners</span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">);</span>
     <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PointSetBuilder.html#doxid-classgeode-1-1-point-set-builder"><span class="std std-ref">PointSetBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-corners-builder-1a32bd13083857032419443b459ecc9693"><span class="std std-ref">corner_mesh_builder</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-builder-1a859a33040b17c564456bfe022aaa098a">set_corner_name</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-builder-1a79b6436ebfb064c6af6e72412d4a723d">set_corner_name</span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">,</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span>
         <span class="p">);</span>
 <span class="p">};</span>
 
@@ -93,7 +93,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

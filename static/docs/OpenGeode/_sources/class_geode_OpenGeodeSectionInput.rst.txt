@@ -20,15 +20,15 @@ class geode::OpenGeodeSectionInput
 	public:
 		// construction
 	
-		:target:`OpenGeodeSectionInput<doxid-classgeode_1_1_open_geode_section_input_1aed98b67374ca3e2a061379b826f69874>`(
+		:target:`OpenGeodeSectionInput<doxid-classgeode_1_1_open_geode_section_input_1a2ec1c1e718bb7790e2c5767f47898454>`(
 			:ref:`Section<doxid-classgeode_1_1_section>`& section,
-			std::string filename
+			absl::string_view filename
 			);
 
 		// methods
 	
 		virtual void :target:`read<doxid-classgeode_1_1_open_geode_section_input_1ae2e026f65fcd27209e9977ea4db4cbdf>`();
-		static std::string :target:`extension<doxid-classgeode_1_1_open_geode_section_input_1a270ebe2f154c45902ada627114b5d14e>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_section_input_1acce0e454f9eff7b2992f459dfa49e9b6>`();
 	};
 
 Inherited Members
@@ -40,6 +40,6 @@ Inherited Members
 	public:
 		// methods
 	
-		const std::string& :ref:`filename<doxid-classgeode_1_1_i_o_file_1ad340c6859158f143ecc6932468620610>`() const;
+		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
 		virtual void :ref:`read<doxid-classgeode_1_1_input_1a3cddf55a1071542ca682bce780869794>`() = 0;
 

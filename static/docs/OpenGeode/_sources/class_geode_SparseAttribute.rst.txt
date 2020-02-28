@@ -28,10 +28,22 @@ Read and write interface for sparse attribute storage. Only store what you use!
 			T value
 			);
 	
+		T :target:`default_value<doxid-classgeode_1_1_sparse_attribute_1a6bd98d900b63aacf5febf5527795ea61>`() const;
+	
 		template <typename Modifier>
 		void :target:`modify_value<doxid-classgeode_1_1_sparse_attribute_1a4216711e25743eb1816e7cfb67e4d553>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element,
 			Modifier&& modifier
+			);
+	
+		virtual void :target:`compute_value<doxid-classgeode_1_1_sparse_attribute_1a792b55d828a8afd1468e79f79ac0a897>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` from_element,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element
+			);
+	
+		virtual void :target:`compute_value<doxid-classgeode_1_1_sparse_attribute_1a474ba0ae8beda433f139e02318961290>`(
+			const :ref:`AttributeLinearInterpolation<doxid-classgeode_1_1_attribute_linear_interpolation>`& interpolation,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element
 			);
 	
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :target:`clone<doxid-classgeode_1_1_sparse_attribute_1a7a46b3802991a2febc2470a14234a073>`() const;
@@ -53,6 +65,8 @@ Inherited Members
 	
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`clone<doxid-classgeode_1_1_attribute_base_1acea72fe269bc80ef99e4e2b869d46c45>`() const = 0;
 		virtual void :ref:`copy<doxid-classgeode_1_1_attribute_base_1ab69e09b7f30008232ba265e3e6150e5d>`(const :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`& attribute, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements) = 0;
+		virtual float :ref:`generic_value<doxid-classgeode_1_1_attribute_base_1a1a5a7f1d11dc8e0dc7fb066726e35926>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 		virtual const T& :ref:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
-		virtual std::string :ref:`type<doxid-classgeode_1_1_read_only_attribute_1a404613b1cdd0d15b0deed66baca23ab1>`();
+		virtual absl::string_view :ref:`type<doxid-classgeode_1_1_read_only_attribute_1adfc9b760b42a6f7b891a19565d190559>`();
+		virtual float :ref:`generic_value<doxid-classgeode_1_1_read_only_attribute_1aee6bdac5b29c48a61eb704b6d4c7528e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
 

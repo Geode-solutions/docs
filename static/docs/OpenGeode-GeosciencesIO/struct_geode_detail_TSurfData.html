@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>struct geode::detail::TSurfData &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::detail::MLInput" href="class_geode_detail_MLInput.html" />
+    <link rel="prev" title="struct geode::detail::TSurfBorderData" href="struct_geode_detail_TSurfBorderData.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-geode-detail-tsurfdata">
+<span id="doxid-structgeode-1-1detail-1-1-t-surf-data"></span><span id="index-0"></span><h1>struct geode::detail::TSurfData</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;gocad_common.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">TSurfData</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1af2001fb432f1ffd3f896b284afcedefa">OFFSET_START</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_detail_HeaderData.html#doxid-structgeode-1-1detail-1-1-header-data"><span class="std std-ref">HeaderData</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1a2ac5a348467d49f649b8d347843da30e">header</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_detail_CRSData.html#doxid-structgeode-1-1detail-1-1-c-r-s-data"><span class="std std-ref">CRSData</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1a6560944d03c9c4b80806d1211565b473">crs</span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">deque</span><span class="o">&lt;</span><span class="n">Point3D</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1ab7796b24af50a71f451ed0027de46c1f">points</span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">deque</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1abf8ac4ff5f113bdc1457769489be03e5">triangles</span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">deque</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1a49fc8a1d720af46ad7ac6b62224eb0d6">tface_triangles_offset</span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">deque</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1ac8e90d470d710d0ab16c561ca8a2e006">tface_vertices_offset</span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">deque</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1a59f95b7f9ec1e59cd580eb434b10fe2f">bstones</span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">deque</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_detail_TSurfBorderData.html#doxid-structgeode-1-1detail-1-1-t-surf-border-data"><span class="std std-ref">TSurfBorderData</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1aa91a1688c1546d8ab4ce5331cc8770cb">borders</span><span></span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-data-1a8c47688dbcc48d27c2e809e2104c7e4d">tface_id</span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/struct_geode_detail_TSurfData.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

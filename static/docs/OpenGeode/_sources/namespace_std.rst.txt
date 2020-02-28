@@ -10,6 +10,7 @@ namespace std
 	struct_std_hash.rst
 	struct_std_hash-2.rst
 	struct_std_hash-3.rst
+	struct_std_hash-4.rst
 
 
 
@@ -20,15 +21,23 @@ namespace std
 	
 	namespace std {
 
+	// typedefs
+
+	typedef :ref:`geode::detail::VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`<absl::InlinedVector<:ref:`geode::index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 4>> :target:`VectorVertexCycle<doxid-namespacestd_1aa16fc20247e76b5459f621a0781bb978>`;
+	typedef :ref:`geode::detail::VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`<std::array<:ref:`geode::index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>> :target:`ArrayVertexCycle<doxid-namespacestd_1aa4fbec216049781ab8da0cc92b7cc0d3>`;
+
 	// structs
 
 	template <>
-	struct :ref:`hash<geode::detail::VertexCycle><doxid-structstd_1_1hash_3_01geode_1_1detail_1_1_vertex_cycle_01_4>`;
+	struct :ref:`hash<ArrayVertexCycle><doxid-structstd_1_1hash_3_01_array_vertex_cycle_01_4>`;
+
+	template <>
+	struct :ref:`hash<geode::uuid><doxid-structstd_1_1hash_3_01geode_1_1uuid_01_4>`;
 
 	template <>
 	struct :ref:`hash<geode::MeshType><doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4>`;
 
 	template <>
-	struct :ref:`hash<geode::uuid><doxid-structstd_1_1hash_3_01geode_1_1uuid_01_4>`;
+	struct :ref:`hash<VectorVertexCycle><doxid-structstd_1_1hash_3_01_vector_vertex_cycle_01_4>`;
 
 	} // namespace std

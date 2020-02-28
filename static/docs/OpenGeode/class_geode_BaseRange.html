@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="template class geode::BeginEnd" href="class_geode_BeginEnd.html" />
@@ -40,20 +40,21 @@
 <p>Base class for range-based iteration on custom range. See derived classes for usage.</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;range.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="p">,</span> <span class="k">typename</span> <span class="n">NextOperator</span> <span class="o">=</span> <span class="n">IncrementOperator</span><span class="o">&lt;</span> <span class="n">Type</span> <span class="o">&gt;&gt;</span>
 <span class="k">class</span> <span class="n">BaseRange</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1ada75509e0f7aec5847e4421055c93229">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">BaseRange</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1ab852e42089eb90a6f00a23bf8344877f">operator ++</span><span></span> <span class="p">();</span>
-    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1a5ffff3799328f85388001113dc230e6c">current</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1a3c8892964239c42e1e914ad91c1849cc">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">BaseRange</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1afe90da29578e4e5022ffc71598163bfe">operator ++</span><span></span> <span class="p">();</span>
+    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1a62c35fce8f88bcff37fedb47da9f9240">current</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
 
-<span class="k">class</span> <a class="reference internal" href="class_geode_Range.html#doxid-classgeode-1-1-range"><span class="std std-ref">Range</span></a><span></span><span class="p">;</span></pre>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Range.html#doxid-classgeode-1-1-range"><span class="std std-ref">Range</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_ReverseRange.html#doxid-classgeode-1-1-reverse-range"><span class="std std-ref">ReverseRange</span></a><span></span><span class="p">;</span></pre>
 </div>
 
 
@@ -66,7 +67,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

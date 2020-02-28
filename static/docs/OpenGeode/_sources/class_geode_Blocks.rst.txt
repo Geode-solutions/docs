@@ -45,7 +45,7 @@ Storage class providing range loop to iterate on :ref:`Blocks <doxid-classgeode_
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_blocks<doxid-classgeode_1_1_blocks_1a6b69d68633d6f985c99f575be60363ee>`() const;
 		const :ref:`Block<doxid-classgeode_1_1_block>`<dimension>& :ref:`block<doxid-classgeode_1_1_blocks_1a3c627b284c80c7391fbbfea5da7855b7>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`BlockRange<doxid-classgeode_1_1_blocks_1_1_block_range>` :target:`blocks<doxid-classgeode_1_1_blocks_1a127fd020680baeedb8adc554584be20a>`() const;
-		std::vector<std::string> :ref:`save_blocks<doxid-classgeode_1_1_blocks_1a53d527822617ea939e5d3ec18d80728f>`(const std::string& directory) const;
+		void :ref:`save_blocks<doxid-classgeode_1_1_blocks_1af2477bd97c4999311919bd4adc501951>`(absl::string_view directory) const;
 	};
 .. _details-classgeode_1_1_blocks:
 
@@ -68,18 +68,12 @@ Methods
 Access to an unmodifiable :ref:`Block <doxid-classgeode_1_1_block>` by its unique index
 
 .. index:: pair: function; save_blocks
-.. _doxid-classgeode_1_1_blocks_1a53d527822617ea939e5d3ec18d80728f:
+.. _doxid-classgeode_1_1_blocks_1af2477bd97c4999311919bd4adc501951:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::vector<std::string> save_blocks(const std::string& directory) const
+	void save_blocks(absl::string_view directory) const
 
 Save each :ref:`Block <doxid-classgeode_1_1_block>` in a file located in the specified directory
-
-
-
-.. rubric:: Returns:
-
-the list of filenames
 

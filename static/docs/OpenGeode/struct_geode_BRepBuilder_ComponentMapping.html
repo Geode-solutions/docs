@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::BRepInput" href="class_geode_BRepInput.html" />
@@ -43,15 +43,15 @@
 <span class="p">{</span>
     <span class="c1">// typedefs</span>
 
-    <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="p">,</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a2b45e4484ca810014c8faf9251928abe">Mapping</span><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="p">,</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a71eccbb95d9ba5b918497d451b137e0e">Mapping</span><span></span><span class="p">;</span>
 
     <span class="c1">// fields</span>
 
-    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a2b45e4484ca810014c8faf9251928abe"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a4cd748d8bd08bf8ecfa3e1a640deb318">corners</span><span></span><span class="p">;</span>
-    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a2b45e4484ca810014c8faf9251928abe"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1af51d4961b6c0da094e7e21782ef80af0">lines</span><span></span><span class="p">;</span>
-    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a2b45e4484ca810014c8faf9251928abe"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1afe0515b510d50847f6e081a318b7d282">surfaces</span><span></span><span class="p">;</span>
-    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a2b45e4484ca810014c8faf9251928abe"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a46764c4ed22f57e877374aef235e5185">blocks</span><span></span><span class="p">;</span>
-    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a2b45e4484ca810014c8faf9251928abe"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a0e4bf684079db8881cdac03e24fe5b68">model_boundaries</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a71eccbb95d9ba5b918497d451b137e0e"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a4cd748d8bd08bf8ecfa3e1a640deb318">corners</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a71eccbb95d9ba5b918497d451b137e0e"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1af51d4961b6c0da094e7e21782ef80af0">lines</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a71eccbb95d9ba5b918497d451b137e0e"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1afe0515b510d50847f6e081a318b7d282">surfaces</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a71eccbb95d9ba5b918497d451b137e0e"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a46764c4ed22f57e877374aef235e5185">blocks</span><span></span><span class="p">;</span>
+    <a class="reference internal" href="#doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a71eccbb95d9ba5b918497d451b137e0e"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-b-rep-builder-1-1-component-mapping-1a0e4bf684079db8881cdac03e24fe5b68">model_boundaries</span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -65,7 +65,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

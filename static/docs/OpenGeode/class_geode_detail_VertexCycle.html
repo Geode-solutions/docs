@@ -4,16 +4,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>class geode::detail::VertexCycle &#8212; Python  documentation</title>
+    <title>template class geode::detail::VertexCycle &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="struct geode::ComponentTag" href="struct_geode_ComponentTag.html" />
@@ -33,25 +33,29 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-detail-vertexcycle">
-<span id="doxid-classgeode-1-1detail-1-1-vertex-cycle"></span><span id="index-0"></span><h1>class geode::detail::VertexCycle</h1>
+  <div class="section" id="template-class-geode-detail-vertexcycle">
+<span id="doxid-classgeode-1-1detail-1-1-vertex-cycle"></span><span id="index-0"></span><h1>template class geode::detail::VertexCycle</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vertex_cycle.h&gt;</span><span class="cp"></span>
 
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Container</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="n">VertexCycle</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">Container</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1ad351738ca244b990264ea0adb334ca1f">vertices_</span><span></span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1af8e578db571863abca276accc10b25e5">VertexCycle</span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">vertices</span><span class="p">);</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1aab0157741ba7cc2704c7ed5597033bc2">VertexCycle</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1a6b16979a3ca88dd18c8f8876b7ee412c">VertexCycle</span><span></span><span class="p">(</span><span class="n">Container</span> <span class="n">vertices</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1aaeb7e96be868e089f4b9027d1c626271">vertices</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1af189863349b573d9737b8f48f04e861a">operator ==</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">VertexCycle</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1a86d49d0f0778c7a6ef8f345f3efb23a6">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">VertexCycle</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Container</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1a18a7f2f3b45466cdad2ec87efc41f38e">vertices</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1a448ca005a69d48c22299d9fb9f0c8308">operator ==</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">VertexCycle</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1aeb892b9b372365eff453bde720747940">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">VertexCycle</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -65,7 +69,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

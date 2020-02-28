@@ -32,8 +32,8 @@ Begin and end methods for range-based iteration on custom range. See derived cla
 	// direct descendants
 
 	class :ref:`BlockRange<doxid-classgeode_1_1_blocks_1_1_block_range>`;
-	class :ref:`BoundaryCornerRange<doxid-classgeode_1_1_section_1_1_boundary_corner_range>`;
 	class :ref:`BoundaryCornerRange<doxid-classgeode_1_1_b_rep_1_1_boundary_corner_range>`;
+	class :ref:`BoundaryCornerRange<doxid-classgeode_1_1_section_1_1_boundary_corner_range>`;
 	class :ref:`BoundaryLineRange<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range>`;
 	class :ref:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range>`;
 	class :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`;
@@ -48,12 +48,12 @@ Begin and end methods for range-based iteration on custom range. See derived cla
 	class :ref:`IncidentBlockRange<doxid-classgeode_1_1_b_rep_1_1_incident_block_range>`;
 	class :ref:`IncidentLineRange<doxid-classgeode_1_1_b_rep_1_1_incident_line_range>`;
 	class :ref:`IncidentLineRange<doxid-classgeode_1_1_section_1_1_incident_line_range>`;
-	class :ref:`IncidentSurfaceRange<doxid-classgeode_1_1_section_1_1_incident_surface_range>`;
 	class :ref:`IncidentSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_incident_surface_range>`;
-	class :ref:`InternalCornerRange<doxid-classgeode_1_1_section_1_1_internal_corner_range>`;
+	class :ref:`IncidentSurfaceRange<doxid-classgeode_1_1_section_1_1_incident_surface_range>`;
 	class :ref:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range>`;
-	class :ref:`InternalLineRange<doxid-classgeode_1_1_b_rep_1_1_internal_line_range>`;
+	class :ref:`InternalCornerRange<doxid-classgeode_1_1_section_1_1_internal_corner_range>`;
 	class :ref:`InternalLineRange<doxid-classgeode_1_1_section_1_1_internal_line_range>`;
+	class :ref:`InternalLineRange<doxid-classgeode_1_1_b_rep_1_1_internal_line_range>`;
 	class :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`;
 	class :ref:`InternalSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range>`;
 	class :ref:`ItemLineRange<doxid-classgeode_1_1_section_1_1_item_line_range>`;
@@ -67,4 +67,5 @@ Begin and end methods for range-based iteration on custom range. See derived cla
 	class :ref:`ModifiableModelBoundaryRange<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range>`;
 	class :ref:`ModifiableSurfaceRange<doxid-classgeode_1_1_surfaces_1_1_modifiable_surface_range>`;
 	class :ref:`Range<doxid-classgeode_1_1_range>`;
+	class :ref:`ReverseRange<doxid-classgeode_1_1_reverse_range>`;
 	class :ref:`SurfaceRange<doxid-classgeode_1_1_surfaces_1_1_surface_range>`;

@@ -22,4 +22,12 @@ namespace bitsery
 
 	namespace :ref:`bitsery::traits<doxid-namespacebitsery_1_1traits>`;
 
+	// global functions
+
+	template <typename Serializer, typename T, size_t N>
+	void :target:`serialize<doxid-namespacebitsery_1a30ce491c3beb8eb32f41328da95ed658>`(
+		Serializer& s,
+		absl::InlinedVector<T, N>& obj
+		);
+
 	} // namespace bitsery

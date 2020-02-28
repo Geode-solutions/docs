@@ -30,8 +30,8 @@ A Cross Section is a Section composed of :ref:`Faults <doxid-classgeode_1_1_faul
 
 		// methods
 	
-		static std::string :target:`native_extension_static<doxid-classgeode_1_1_cross_section_1a41c4bbca7922812934272ab33b1731b7>`();
-		std::string :target:`native_extension<doxid-classgeode_1_1_cross_section_1a339691d69bb11a4e22a80724347e8d1f>`() const;
+		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_cross_section_1a1e442ee6953bfc242fd5ccb248d84b85>`();
+		absl::string_view :target:`native_extension<doxid-classgeode_1_1_cross_section_1aba46451bcac9f3b8a7dcdcbcddffb9ac>`() const;
 		:ref:`HorizonItemRange<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1a9f70d9ec468e65ed5c629039fcbde27f>`(const Horizon2D& horizon) const;
 		:ref:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1a5986646330bbc153aa42dfc07fa8349e>`(const Fault2D& fault) const;
 	};

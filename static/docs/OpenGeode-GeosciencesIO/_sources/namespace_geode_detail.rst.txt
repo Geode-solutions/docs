@@ -1,0 +1,63 @@
+.. index:: pair: namespace; geode::detail
+.. _doxid-namespacegeode_1_1detail:
+
+namespace geode::detail
+=======================
+
+.. toctree::
+	:hidden:
+
+	struct_geode_detail_CRSData.rst
+	struct_geode_detail_HeaderData.rst
+	struct_geode_detail_TSurfBorderData.rst
+	struct_geode_detail_TSurfData.rst
+	class_geode_detail_MLInput.rst
+	class_geode_detail_TSInput.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace detail {
+
+	// structs
+
+	struct :ref:`CRSData<doxid-structgeode_1_1detail_1_1_c_r_s_data>`;
+	struct :ref:`HeaderData<doxid-structgeode_1_1detail_1_1_header_data>`;
+	struct :ref:`TSurfBorderData<doxid-structgeode_1_1detail_1_1_t_surf_border_data>`;
+	struct :ref:`TSurfData<doxid-structgeode_1_1detail_1_1_t_surf_data>`;
+
+	// classes
+
+	class :ref:`MLInput<doxid-classgeode_1_1detail_1_1_m_l_input>`;
+	class :ref:`TSInput<doxid-classgeode_1_1detail_1_1_t_s_input>`;
+
+	// global functions
+
+	void opengeode_geosciencesio_geosciences_api :target:`initialize_geosciences_io<doxid-namespacegeode_1_1detail_1aa3f5ecadb7bedfd3a78c5ab7bc0e6bd2>`();
+
+	bool :target:`string_starts_with<doxid-namespacegeode_1_1detail_1a1339af97e5440f128cfacf3e2a0bb25a>`(
+		const std::string& string,
+		const std::string& check
+		);
+
+	void :target:`check_keyword<doxid-namespacegeode_1_1detail_1adb7e01e825a72cd70d45a46584dc901d>`(
+		std::ifstream& file,
+		const std::string& keyword
+		);
+
+	std::string :target:`read_name<doxid-namespacegeode_1_1detail_1a7678ddeb1406c17479dbac5f60fcceff>`(std::istringstream& iss);
+	:ref:`HeaderData<doxid-structgeode_1_1detail_1_1_header_data>` :target:`read_header<doxid-namespacegeode_1_1detail_1a1cc9507dbb47f49cb5ec6f69f8d3de5e>`(std::ifstream& file);
+	:ref:`CRSData<doxid-structgeode_1_1detail_1_1_c_r_s_data>` :target:`read_CRS<doxid-namespacegeode_1_1detail_1a8e6b125235321742b86b957b12b971e7>`(std::ifstream& file);
+
+	void :target:`goto_keyword<doxid-namespacegeode_1_1detail_1a39156daff5242104b99716dcea6af31d>`(
+		std::ifstream& file,
+		const std::string& word
+		);
+
+	:ref:`TSurfData<doxid-structgeode_1_1detail_1_1_t_surf_data>` :target:`read_tsurf<doxid-namespacegeode_1_1detail_1af8a1258d782f29e54dc176767d809f5f>`(std::ifstream& file);
+
+	} // namespace detail

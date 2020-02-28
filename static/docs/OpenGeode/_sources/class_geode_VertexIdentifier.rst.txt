@@ -28,7 +28,7 @@ This class identifies groups of geometric component vertices as unique vertices.
 		std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1af50e6da4e87928eae7b6be99188c3b05>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a5f6dfd3e7a4d98b6c1d05d77b8f392f6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`unique_vertex<doxid-classgeode_1_1_vertex_identifier_1ad46b7b2e70e92e6fbfe1028cd6c20655>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex) const;
-		std::string :ref:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a052e9d89f3856e0ceb3c4a5316330010>`(const std::string& directory) const;
+		void :ref:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a4603484680ba1fe316b79a63da7481db>`(absl::string_view directory) const;
 	};
 
 	// direct descendants
@@ -143,12 +143,12 @@ Return the unique vertex index of a given component vertex.
 		- Vertex index in a geometric component.
 
 .. index:: pair: function; save_unique_vertices
-.. _doxid-classgeode_1_1_vertex_identifier_1a052e9d89f3856e0ceb3c4a5316330010:
+.. _doxid-classgeode_1_1_vertex_identifier_1a4603484680ba1fe316b79a63da7481db:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::string save_unique_vertices(const std::string& directory) const
+	void save_unique_vertices(absl::string_view directory) const
 
 Save the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` into a file.
 
@@ -163,10 +163,4 @@ Save the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` into a
 		- directory
 
 		- Folder in which create the file.
-
-
-
-.. rubric:: Returns:
-
-the filename.
 

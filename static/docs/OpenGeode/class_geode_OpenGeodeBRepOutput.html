@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="template class geode::OpenGeodeEdgedCurve" href="class_geode_OpenGeodeEdgedCurve.html" />
@@ -44,23 +44,24 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-b-rep-output-1a8c7ee88e511d03a95c5074fda2bda158">OpenGeodeBRepOutput</span><span></span><span class="p">(</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-b-rep-output-1ac4e6805332715ce616604e4c42c54339">OpenGeodeBRepOutput</span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">filename</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-b-rep-output-1a2f5a2da4bd31fea6d528587d802f7fcf">archive_brep_files</span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_ZipFile.html#doxid-classgeode-1-1-zip-file"><span class="std std-ref">ZipFile</span></a><span></span><span class="o">&amp;</span> <span class="n">zip_writer</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-b-rep-output-1af7feb1e4ed969afb6c9ff76f799dd54a">save_brep_files</span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-b-rep-output-1af7c30312e74094e9f554999faa055315">write</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-b-rep-output-1a390f62145c8ac9fd8b52b89d0c6f04e3">extension</span><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-b-rep-output-1a66279fd109bad62575e450efad83c12b">extension</span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_IOFile.html#doxid-classgeode-1-1-i-o-file-1ad340c6859158f143ecc6932468620610"><span class="std std-ref">filename</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_IOFile.html#doxid-classgeode-1-1-i-o-file-1a252a3f70be21314b482cfc576824b9db"><span class="std std-ref">filename</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">virtual</span> <span class="kt">void</span> <a class="reference internal" href="class_geode_Output.html#doxid-classgeode-1-1-output-1a9c2f7d16a0ccf42ed237626c7acfa3f9"><span class="std std-ref">write</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
 </div>
 </div>
@@ -75,7 +76,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

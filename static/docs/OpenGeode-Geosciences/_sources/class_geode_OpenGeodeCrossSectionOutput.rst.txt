@@ -20,13 +20,13 @@ class geode::OpenGeodeCrossSectionOutput
 	public:
 		// construction
 	
-		:target:`OpenGeodeCrossSectionOutput<doxid-classgeode_1_1_open_geode_cross_section_output_1a50f92498ff70f155136807e607b94fbb>`(
+		:target:`OpenGeodeCrossSectionOutput<doxid-classgeode_1_1_open_geode_cross_section_output_1a71ab988e25ff52a057eff6fa9c089cc1>`(
 			const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-			std::string filename
+			absl::string_view filename
 			);
 
 		// methods
 	
 		void :target:`write<doxid-classgeode_1_1_open_geode_cross_section_output_1a0f97bb99db9aeed7810f00d7bec6a4a3>`() const;
-		static std::string :target:`extension<doxid-classgeode_1_1_open_geode_cross_section_output_1ab70307bffa0404e82752d7f357eb414b>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_cross_section_output_1a68fd12ed8c64b7a6d11fc58919b27562>`();
 	};

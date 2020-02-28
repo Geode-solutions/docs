@@ -9,6 +9,14 @@ namespace geode::detail
 
 	class_geode_detail_AssimpMeshInput.rst
 	class_geode_detail_AssimpMeshOutput.rst
+	class_geode_detail_MSHInput.rst
+	class_geode_detail_OBJInput.rst
+	class_geode_detail_OBJOutput.rst
+	class_geode_detail_PLYInput.rst
+	class_geode_detail_PLYOutput.rst
+	class_geode_detail_STLInput.rst
+	class_geode_detail_STLOutput.rst
+	class_geode_detail_SVGInput.rst
 
 
 
@@ -25,5 +33,19 @@ namespace geode::detail
 
 	template <typename SurfaceMesh>
 	class :ref:`AssimpMeshOutput<doxid-classgeode_1_1detail_1_1_assimp_mesh_output>`;
+
+	class :ref:`MSHInput<doxid-classgeode_1_1detail_1_1_m_s_h_input>`;
+	class :ref:`OBJInput<doxid-classgeode_1_1detail_1_1_o_b_j_input>`;
+	class :ref:`OBJOutput<doxid-classgeode_1_1detail_1_1_o_b_j_output>`;
+	class :ref:`PLYInput<doxid-classgeode_1_1detail_1_1_p_l_y_input>`;
+	class :ref:`PLYOutput<doxid-classgeode_1_1detail_1_1_p_l_y_output>`;
+	class :ref:`STLInput<doxid-classgeode_1_1detail_1_1_s_t_l_input>`;
+	class :ref:`STLOutput<doxid-classgeode_1_1detail_1_1_s_t_l_output>`;
+	class :ref:`SVGInput<doxid-classgeode_1_1detail_1_1_s_v_g_input>`;
+
+	// global functions
+
+	void opengeode_io_mesh_api :target:`initialize_mesh_io<doxid-namespacegeode_1_1detail_1ac48c45dfac4b396b8d183e9c93e27534>`();
+	void opengeode_io_model_api :target:`initialize_model_io<doxid-namespacegeode_1_1detail_1af4d169070858c31cf8246572caa2798d>`();
 
 	} // namespace detail

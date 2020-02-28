@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/target-highlight.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::VertexIdentifier" href="class_geode_VertexIdentifier.html" />
@@ -60,7 +60,6 @@
     <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vector-1a9562bb6ffb8c7866b6512857492d630e">length2</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vector-1aff52e0769e3090e366d8ce1dd34643e0">length</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">Vector</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vector-1a3624163adf6a18e7e377df345cbaf3e7">normalize</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">Vector</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vector-1ab41ac56c504b5ab1b157483ae83bcc52">operator *</span><span></span> <span class="p">(</span><span class="kt">double</span> <span class="n">s</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vector-1a5a3e0637cb1ab31f956c6f4cb22e82f4">dot</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Vector</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">Vector</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-vector-1a90915fe62be27f0ecf12f131a4b25e83">cross</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Vector</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
@@ -77,7 +76,8 @@
     <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point-1af21d13fe05e29749aa399fd7ee013bb9"><span class="std std-ref">operator/</span></a><span></span> <span class="p">(</span><span class="kt">double</span> <span class="n">divider</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point-1a22151aab6c4e1c94578f7a7e93eef87a"><span class="std std-ref">operator +</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point-1a281c4560a67109bee87f517997ddae15"><span class="std std-ref">operator -</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point-1a019778a2d6a6bc70d113f4c7292bf795"><span class="std std-ref">inexact_equal</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">,</span> <span class="kt">double</span> <span class="n">epsilon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span></pre>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point-1a019778a2d6a6bc70d113f4c7292bf795"><span class="std std-ref">inexact_equal</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">,</span> <span class="kt">double</span> <span class="n">epsilon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point-1aa5dd322eea26f1fa239b4e8d6ec094ef"><span class="std std-ref">string</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
 </div>
 </div>
 
@@ -91,7 +91,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

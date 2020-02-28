@@ -20,13 +20,13 @@ class geode::OpenGeodeStructuralModelOutput
 	public:
 		// construction
 	
-		:target:`OpenGeodeStructuralModelOutput<doxid-classgeode_1_1_open_geode_structural_model_output_1aed23ee39b737c53d12e095e96f6c1f92>`(
+		:target:`OpenGeodeStructuralModelOutput<doxid-classgeode_1_1_open_geode_structural_model_output_1a9ab0c3cb0ea9014ec7c8a452856f9215>`(
 			const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
-			std::string filename
+			absl::string_view filename
 			);
 
 		// methods
 	
 		void :target:`write<doxid-classgeode_1_1_open_geode_structural_model_output_1af4492202a5dc44418feb5ee368dd70b4>`() const;
-		static std::string :target:`extension<doxid-classgeode_1_1_open_geode_structural_model_output_1a2b5f18a2e6e186cdd94841e7bf5b4973>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_structural_model_output_1a70853b371403a6528f6e00d8b60946d7>`();
 	};

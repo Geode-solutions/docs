@@ -1,20 +1,6 @@
 My Project Documentation
 ========================
 
-.. toctree::
-	:hidden:
-
-	page_opengeode_how_to_compile.rst
-	page_opengeode_how_to_create_module.rst
-	page_opengeode_where_to_get_binaries.rst
-
-.. rubric:: Related Pages:
-
-|	:doc:`page_opengeode_how_to_compile`
-|	:doc:`page_opengeode_how_to_create_module`
-|	:doc:`page_opengeode_where_to_get_binaries`
-
-
 .. rubric:: Reference and Index:
 
 .. toctree::

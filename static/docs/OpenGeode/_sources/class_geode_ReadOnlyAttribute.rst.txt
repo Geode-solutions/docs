@@ -22,7 +22,8 @@ Read only attribute interface that does not need to know the underlying attribut
 		// methods
 	
 		virtual const T& :target:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
-		virtual std::string :target:`type<doxid-classgeode_1_1_read_only_attribute_1a404613b1cdd0d15b0deed66baca23ab1>`();
+		virtual absl::string_view :target:`type<doxid-classgeode_1_1_read_only_attribute_1adfc9b760b42a6f7b891a19565d190559>`();
+		virtual float :target:`generic_value<doxid-classgeode_1_1_read_only_attribute_1aee6bdac5b29c48a61eb704b6d4c7528e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
 	};
 
 	// direct descendants
@@ -47,4 +48,5 @@ Inherited Members
 	
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`clone<doxid-classgeode_1_1_attribute_base_1acea72fe269bc80ef99e4e2b869d46c45>`() const = 0;
 		virtual void :ref:`copy<doxid-classgeode_1_1_attribute_base_1ab69e09b7f30008232ba265e3e6150e5d>`(const :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`& attribute, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements) = 0;
+		virtual float :ref:`generic_value<doxid-classgeode_1_1_attribute_base_1a1a5a7f1d11dc8e0dc7fb066726e35926>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 
