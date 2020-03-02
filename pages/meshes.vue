@@ -17,21 +17,18 @@
 
     <p :class="paragraph">
       All these meshes are available in 2D and 3D
-      (excepted solids that are definitely three-dimensional, and graphs that are dimensionless).
-      The dimension is given by a template parameter. Aliases are defined such as TriangulatedSurface2D and TriangulatedSurface3D.
+      (excepted solids that are definitely three-dimensional, and vertex sets and graphs that are dimensionless).
+      The dimension is given by a template parameter. For example, two aliases are defined for 
+      <span v-html="triangulatedSurface" />: 
+      <strong>TriangulatedSurface2D</strong> and <strong>TriangulatedSurface3D</strong>.
     </p>
-
-    <!-- eslint-disable -->
-    <!-- <code class="cpp primary--text">
-      BRep my_brep;
-      auto nb = my_brep.nb_surfaces();
-    </code>-->
-    <!-- eslint-enable -->
 
     <h2 :class="section">Mesh definitions</h2>
 
     <p :class="paragraph">
-      We will take the example of a PolygonalSurface mesh to give some definitions on meshes
+      We will take the example of a 
+      <span v-html="polygonalSurface" />
+      mesh to give some definitions on meshes
       and to show how to manipulate meshes.
       Potential differences with other kind of meshes will be pointed if necessary.
     </p>
@@ -44,7 +41,9 @@
 
     <p
       :class="paragraph"
-    >This PolygonalSurface is defined by 11 vertices (left) and 6 polygons (right) as shown on this image.</p>
+    >This 
+    <span v-html="polygonalSurface" /> 
+    is defined by 11 vertices (left) and 6 polygons (right) as shown on this image.</p>
 
     <img src="@/assets/mesh_surface-2.svg" />
 
@@ -75,8 +74,8 @@
     <code class="cpp primary--text">
       PolygonalSurface2D surface;
       const auto pv0 = surface.polygon_vertex( {0, 0} ); // 6
-      const auto pv1 = surface.polygon_vertex( {0, 0} ); // 5
-      const auto pv2 = surface.polygon_vertex( {0, 0} ); // 8
+      const auto pv1 = surface.polygon_vertex( {0, 1} ); // 5
+      const auto pv2 = surface.polygon_vertex( {0, 2} ); // 8
       ...
     </code>
     <!-- eslint-enable -->
@@ -85,12 +84,12 @@
 
     <p :class="paragraph">
       This is called
-      <strong>PolygonVertex</strong>.
+      <span v-html="polygonVertex" />.
     </p>
 
     <p :class="nb">
       NB: For Solid, this is called
-      <strong>PolyhedronVertex</strong>.
+      <span v-html="polyhedronVertex" />.
     </p>
 
     <h3 :class="subsection">Edges and Facets</h3>
@@ -100,31 +99,30 @@
       you can access to mesh facets and edges.
       Edges are defined for Surfaces and Solids and facets for Solids.
       As for vertices and polygons, edge and facet indexings are continuous and starts at 0.
-      If the example, the polygonal surface is composed of 16 edges indexed from 0 to 15.
+      In the example, the polygonal surface is composed of 16 edges indexed from 0 to 15.
     </p>
 
     <img src="@/assets/mesh_surface-4.svg" />
 
     <p :class="paragraph">
       As for vertices, it is possible to have access to the global index of a polygon edge.
-      A PolygonEdge is the edge that starts from the same PolygonVertex:
-      PolygonEdge (2, 1) is an edge of the polygon 2 that starts from the Polygonvertex (2, 1).
+      A <span v-html="polygonEdge" /> is the edge that starts from the same <span v-html="polygonVertex" />:
+      <span v-html="polygonEdge" /> (2, 1) is an edge of the polygon 2 that starts from the <span v-html="polygonVertex" /> (2, 1).
     </p>
 
     <img src="@/assets/mesh_surface-5.svg" />
 
     <p :class="nb">
-      NB: For Solid, there is
-      <strong>PolyhedronFacet</strong>,
-      <strong>PolyhedronEdge</strong> and
-      <strong>PolyhedronFacetEdge</strong>.
+      NB: For Solid, there are
+      <span v-html="polyhedronFacet" /> and
+      <span v-html="polyhedronFacetEdge" />.
     </p>
 
     <h3 :class="subsection">Topological queries</h3>
     <p :class="paragraph">
       Meshes provide numerous methods to query the mesh topology.
       One information you can get is to know which polygon is adjacent to another one.
-      More precisely, to known which polygon is adjacent to another one through a given PolygonEdge,
+      More precisely, to known which polygon is adjacent to another one through a given <span v-html="polygonEdge" />,
       you can use the following code:
     </p>
 
@@ -139,7 +137,7 @@
 
     <p
       :class="paragraph"
-    >You can have more information and get the adjacent PolygonEdge, using the following code:</p>
+    >You can have more information and get the adjacent <span v-html="polygonEdge" />, using the following code:</p>
 
     <!-- eslint-disable -->
     <code class="cpp primary--text">
@@ -149,11 +147,11 @@
     <!-- eslint-enable -->
 
     <p :class="paragraph">
-      If there is no polygon adjacent to the given PolygonEdge,
+      If there is no polygon adjacent to the given <span v-html="polygonEdge" />,
       the results of these methods are
-      <code>NO_ID</code> or the PolygonEdge
-      <code>{NO_ID, NO_ID}</code>. The given PolygonEdge is on border.
-      There is a method to known if a PolygonEdge is on border:
+      <code>NO_ID</code> or the <span v-html="polygonEdge" />
+      <code>{NO_ID, NO_ID}</code>. The given <span v-html="polygonEdge" /> is on border.
+      There is a method to known if a <span v-html="polygonEdge" /> is on border:
     </p>
 
     <!-- eslint-disable -->
@@ -172,7 +170,7 @@
     <code class="cpp primary--text">
       PolygonalSurface2D surface;
       PolygonEdge start{0, 2};
-      auto next_edge = surface.next_on_border( next_edge ); // {0, 3}
+      auto next_edge = surface.next_on_border( start ); // {0, 3}
       next_edge = surface.next_on_border( next_edge ); // {0, 4}
       next_edge = surface.next_on_border( next_edge ); // {1, 0}
       auto prev_edge = surface.previous_on_border( next_edge ); // {0, 4}
@@ -187,7 +185,7 @@
 
     <p
       :class="paragraph"
-    >You will fail an assertion if you give as method parameter a PolygonEdge that is not on border.</p>
+    >An exception is raised if you give as method parameter a <span v-html="polygonEdge" /> that is not on border.</p>
 
     <p :class="paragraph">Another topological query is to get the polygon list around a vertex:</p>
 
@@ -232,35 +230,21 @@ export default {
     section: 'display-2 ma-5 pa-5',
     subsection: 'display-1 mx-10 px-10',
     paragraph: 'body-1 my-5',
-    nb: 'body-2 my-5',
-    uuid:
-      "<a href='/opengeode?page=struct_geode_uuid.html'><code>uuid</code></a>",
-    brep:
-      "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
-    surfaces3d:
-      "<a href='/opengeode?page=class_geode_Surfaces.html'><code>Surfaces3D</code></a>",
-    surface3d:
-      "<a href='/opengeode?page=class_geode_Surface.html'><code>Surface3D</code></a>",
-    blocks3d:
-      "<a href='/opengeode?page=class_geode_Blocks.html'><code>Blocks3D</code></a>",
-    block3d:
-      "<a href='/opengeode?page=class_geode_Block.html'><code>Block3D</code></a>",
-    corners3d:
-      "<a href='/opengeode?page=class_geode_Corners.html'><code>Corners3D</code></a>",
-    corner3d:
-      "<a href='/opengeode?page=class_geode_Corner.html'><code>Corner3D</code></a>",
-    lines3d:
-      "<a href='/opengeode?page=class_geode_Lines.html'><code>Lines3D</code></a>",
-    line3d:
-      "<a href='/opengeode?page=class_geode_Line.html'><code>Line3D</code></a>",
-    addComponents:
-      "<a href='/opengeode?page=class_geode_AddComponents.html'><code>AddComponents</code></a>",
-    relationships:
-      "<a href='/opengeode?page=class_geode_Relationships.html'><code>Relationships</code></a>",
-    vertexIdentifier:
-      "<a href='/opengeode?page=class_geode_VertexIdentifier.html'><code>VertexIdentifier</code></a>",
-    topology:
-      "<a href='/opengeode?page=class_geode_Topology.html'><code>Topology</code></a>"
+    nb: 'secondary font-italic body-1 pa-5',
+    polygonVertex:
+      "<a href='/opengeode?page=struct_geode_PolygonVertex.html'><code>PolygonVertex</code></a>",
+    polygonEdge:
+      "<a href='/opengeode?page=struct_geode_PolygonEdge.html'><code>PolygonEdge</code></a>",
+    polyhedronVertex:
+      "<a href='/opengeode?page=struct_geode_PolyhedronVertex.html'><code>PolyhedronVertex</code></a>",
+    polyhedronFacet:
+      "<a href='/opengeode?page=struct_geode_PolyhedronFacet.html'><code>PolyhedronFacet</code></a>",
+    polyhedronFacetEdge:
+      "<a href='/opengeode?page=struct_geode_PolyhedronFacetEdge.html'><code>PolyhedronFacetEdge</code></a>",
+    triangulatedSurface:
+      "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface</code></a>",
+    polygonalSurface:
+      "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface</code></a>",
   })
 }
 </script>

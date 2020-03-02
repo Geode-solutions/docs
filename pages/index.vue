@@ -1,7 +1,7 @@
 <template>
   <v-row class="flex-column">
     <theme title="Guides" :cards="guides" />
-    <theme title="Setup guides" :cards="setupguides" />
+    <theme title="Developer guides" :cards="devguides" />
     <theme title="Code documentation" :cards="projects" />
   </v-row>
 </template>
@@ -21,7 +21,7 @@ export default {
         route: 'datamodel'
       },
       {
-        title: 'Mesh',
+        title: 'Meshes',
         descr: 'OpenGeode mesh usage and implementation',
         route: 'meshes'
       },
@@ -36,7 +36,7 @@ export default {
         route: ''
       }
     ],
-    setupguides: [
+    devguides: [
       {
         title: 'Supported file formats',
         descr: 'OpenGeode file formats available',
