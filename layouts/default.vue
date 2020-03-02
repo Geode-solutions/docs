@@ -36,9 +36,9 @@ export default {
         { divider: 'GUIDES' },
         { title: 'DataModel', to: '/datamodel' },
         { title: 'Meshes', to: '/meshes' },
-        { title: 'Attributes', to: '/datamodel' },
-        { divider: 'SETUP GUIDES' },
+        //{ title: 'Attributes', to: '/datamodel' },
         { title: 'Supported file formats', to: '/formats' },
+        { divider: 'DEVELOPER GUIDES' },
         { title: 'Compile OpenGeode', to: '/how-to-compile' },
         {
           title: 'Create OpenGeode module',

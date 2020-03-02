@@ -1,6 +1,8 @@
 <template>
   <v-layout column>
-    <h1 class="display-4 ma-5">DataModel</h1>
+    <h1 class="display-4 ma-5">
+      DataModel
+    </h1>
 
     <p :class="paragraph">
       In this guide, you will learn fundamental elements to understand and manipulate OpenGeode data model.
@@ -10,9 +12,11 @@
       />. Let's use this class as an exemple.
     </p>
 
-    <img src="@/assets/datamodel-1.svg" />
+    <img src="@/assets/datamodel-1.svg">
 
-    <h2 :class="section">Manipulate Surfaces</h2>
+    <h2 :class="section">
+      Manipulate Surfaces
+    </h2>
 
     <p :class="paragraph">
       A
@@ -38,7 +42,7 @@
     </code>
     <!-- eslint-enable -->
 
-    <img src="@/assets/datamodel-2.svg" />
+    <img src="@/assets/datamodel-2.svg">
 
     <p :class="paragraph">
       To iterate on all the Surfaces of a
@@ -50,8 +54,8 @@
       BRep my_brep;
       for( const auto& surface : my_brep.surfaces() )
       {
-      // Do something with surface (which is a Surface3D)
-      auto nbv = surface.mesh().nb_vertices();
+        // Do something with surface (which is a Surface3D)
+        auto nbv = surface.mesh().nb_vertices();
       }
     </code>
     <!-- eslint-enable -->
@@ -89,7 +93,9 @@
     </code>
     <!-- eslint-enable -->
 
-    <h2 :class="section">What about other Components?</h2>
+    <h2 :class="section">
+      What about other Components?
+    </h2>
 
     <p :class="paragraph">
       We have seen that a
@@ -110,9 +116,9 @@
     <!-- eslint-disable -->
     <code class="cpp primary--text">
       class BRep : public Surfaces3D,
-      public Blocks3D
+                   public Blocks3D
       {
-      ...
+        ...
       }
     </code>
     <!-- eslint-enable -->
@@ -126,7 +132,7 @@
       <span v-html="uuid" /> as done for Surfaces.
     </p>
 
-    <img src="@/assets/datamodel-3.svg" />
+    <img src="@/assets/datamodel-3.svg">
 
     <p :class="paragraph">
       But as Surfaces bound Blocks, BRep Surfaces are bounded by Lines (in blue),
@@ -142,13 +148,13 @@
       <span v-html="brep" /> class is defined as following:
     </p>
 
-    <img src="@/assets/datamodel-4.svg" />
+    <img src="@/assets/datamodel-4.svg">
 
     <!-- eslint-disable -->
     <code class="cpp primary--text">
       class BRep : public AddComponents< 3, Corners, Lines, Surfaces, Blocks >
       {
-      ...
+        ...
       };
     </code>
     <!-- eslint-enable -->
@@ -162,7 +168,9 @@
       <span v-html="blocks3d" /> are 3-dimensional.
     </p>
 
-    <h2 :class="section">Relationships between Components</h2>
+    <h2 :class="section">
+      Relationships between Components
+    </h2>
 
     <p :class="paragraph">
       A BRep is composed of several Components and several types of Components.
@@ -176,7 +184,7 @@
       <span v-html="brep" /> inherits from this class.
     </p>
 
-    <img src="@/assets/datamodel-5.svg" />
+    <img src="@/assets/datamodel-5.svg">
 
     <p :class="paragraph">
       Methods and ranges are provided to request relationships between Components.
@@ -197,7 +205,9 @@
 
     <p
       :class="paragraph"
-    >As iteration on BRep Surfaces, it is also possible to iterate on Surface boundary Lines:</p>
+    >
+      As iteration on BRep Surfaces, it is also possible to iterate on Surface boundary Lines:
+    </p>
 
     <!-- eslint-disable -->
     <code class="cpp primary--text">
@@ -206,7 +216,7 @@
       const auto& surface = my_brep.surface( surf_id );
       for( const auto& line : my_brep.boundaries( surface ) )
       {
-      // do something with line (which is a Line3D)
+        // do something with line (which is a Line3D)
       }
     </code>
     <!-- eslint-enable -->
@@ -217,7 +227,7 @@
       and the same methods and ranges are available.
     </p>
 
-    <img src="@/assets/datamodel-6.svg" />
+    <img src="@/assets/datamodel-6.svg">
 
     <p :class="paragraph">
       Another type of relations is internal, and its opposite relation: embedded.
@@ -240,7 +250,9 @@
       regardless of the number of internal Components.
     </p>
 
-    <h2 :class="section">Collections of Components</h2>
+    <h2 :class="section">
+      Collections of Components
+    </h2>
 
     <p :class="paragraph">
       An other kind of relations between Components allows to gather Components into groups.
@@ -250,7 +262,7 @@
       standing for the right side of the cube.
     </p>
 
-    <img src="@/assets/datamodel-7.svg" />
+    <img src="@/assets/datamodel-7.svg">
 
     <p :class="paragraph">
       In the class
@@ -266,9 +278,9 @@
     <!-- eslint-disable -->
     <code class="cpp primary--text">
       class BRep : public Relationships,
-      public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
+                   public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
       {
-      ...
+        ...
       };
     </code>
     <!-- eslint-enable -->
@@ -283,7 +295,9 @@
       groups of Components.
     </p>
 
-    <h2 :class="section">Unique indexing of Components mesh vertices</h2>
+    <h2 :class="section">
+      Unique indexing of Components mesh vertices
+    </h2>
 
     <p :class="paragraph">
       In a OpenGeode model, each Component mesh has its own set of vertices
@@ -293,7 +307,7 @@
       <strong>unique vertex</strong>.
     </p>
 
-    <img src="@/assets/datamodel-8.svg" />
+    <img src="@/assets/datamodel-8.svg">
 
     <p :class="paragraph">
       The class
@@ -341,14 +355,16 @@
     <!-- eslint-disable -->
     <code class="cpp primary--text">
       class BRep : public Topology,
-      public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
+                   public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
       {
-      ...
+        ...
       };
     </code>
     <!-- eslint-enable -->
 
-    <h2 :class="section">Create your own models</h2>
+    <h2 :class="section">
+      Creating your own models
+    </h2>
 
     <p :class="paragraph">
       At this point, you have learned all the information about
@@ -359,11 +375,12 @@
     <!-- eslint-disable -->
     <code class="cpp primary--text">
       class Section : public Topology,
-      public AddComponents< 2, Corners, Lines, Surfaces, ModelBoundaries >
+                      public AddComponents< 2, Corners, Lines, Surfaces, ModelBoundaries >
       {
-      ...
+        ...
       };
     </code>
+    <!-- eslint-enable -->
 
     <p :class="paragraph">
       Section is a
@@ -381,9 +398,9 @@
     <!-- eslint-disable -->
     <code class="cpp primary--text">
       class WorldMap : public Topology,
-      public AddComponents< 2, Corners, Lines, Surfaces, CountryBorders, Countries, Continents >
+                       public AddComponents< 2, Corners, Lines, Surfaces, CountryBorders, Countries, Continents >
       {
-      ...
+        ...
       };
     </code>
     <!-- eslint-enable -->
