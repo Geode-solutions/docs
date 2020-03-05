@@ -30,7 +30,7 @@ A Structural Model is a Boundary Representation composed of :ref:`Faults <doxid-
 
 		// methods
 	
-		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_structural_model_1a9f260cf0a955b1d923987e9fae373ab2>`();
+		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_structural_model_1aa77725f25f214c8c90293ee9908d18a8>`();
 		absl::string_view :target:`native_extension<doxid-classgeode_1_1_structural_model_1a5edd32082ab7608f3c9e7782e5980a95>`() const;
 		:ref:`HorizonItemRange<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range>` :target:`items<doxid-classgeode_1_1_structural_model_1a8b68fdaaaac17374d0d6cd50d11701a4>`(const Horizon3D& horizon) const;
 		:ref:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range>` :target:`items<doxid-classgeode_1_1_structural_model_1a028676337ec423d99a502e08a994ac98>`(const Fault3D& fault) const;
