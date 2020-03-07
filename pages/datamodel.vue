@@ -9,7 +9,7 @@
       One of OpenGeode central classes is
       <span
         v-html="brep"
-      />. Let's use this class as an exemple.
+      />. Let's use this class as an example.
     </p>
 
     <img src="@/assets/datamodel-1.svg">
@@ -24,7 +24,7 @@
       In OpenGeode, these 3D boundaries are
       <span
         v-html="surfaces3d"
-      /> (in grey on images).
+      /> (in gray on images).
       A BRep is thus composed of Surfaces:
       it means that the class
       <span
@@ -61,7 +61,7 @@
     <!-- eslint-enable -->
 
     <p :class="paragraph">
-      Note that each surface is got using a const reference
+      Note that each surface is accessed using a constant reference
       as a
       <span v-html="surface3d" /> is neither copyable nor modifiable.
     </p>
@@ -78,7 +78,7 @@
         v-html="uuid"
       />.
       This is a fundamental design element to allow modifications of OpenGeode models.
-      You can thus get a
+      You can thus obtain a
       <span
         v-html="surface3d"
       /> from its
@@ -136,7 +136,7 @@
 
     <p :class="paragraph">
       But as Surfaces bound Blocks, BRep Surfaces are bounded by Lines (in blue),
-      and BRep Lines are bounded by Corners (in green). These class are named
+      and BRep Lines are bounded by Corners (in green). These classes are named
       <strong>Components</strong>.
       The
       <span v-html="brep" /> class thus inherits from all these classes.
@@ -145,7 +145,7 @@
         v-html="addComponents"
       /> is provided.
       The
-      <span v-html="brep" /> class is defined as following:
+      <span v-html="brep" /> class is defined as follows:
     </p>
 
     <img src="@/assets/datamodel-4.svg">
@@ -234,7 +234,7 @@
       A Component A is internal to a Component B if A is included inside B.
       Internal is different from boundary.
       You can notice that Corners and Lines can be internal Components
-      of a Surface (but only Lines can be boundary of Surfaces).
+      of a Surface (but only Lines can be boundaries of Surfaces).
       Following the same idea, Corners, Lines, and Surfaces can be
       internal Components of Blocks.
     </p>
@@ -244,8 +244,8 @@
       if it is closed. A Line with no boundary or only one boundary is closed
       (as for the round Line on the right side of the cube).
       A Line with two boundaries is not closed.
-      A Line with more that two boundaries is not valid.
-      A Surface with no boundary is closed.
+      A Line with more than two boundaries is not valid.
+      A Surface with no boundaries is closed.
       A Surface with at least one boundary is not closed,
       regardless of the number of internal Components.
     </p>
@@ -267,12 +267,12 @@
     <p :class="paragraph">
       In the class
       <span v-html="brep" />, there is one type of Collections: ModelBoundaries.
-      This collection gathers Surfaces that bounds the exterior of the model.
+      This collection gathers Surfaces that bind the exterior of the model.
     </p>
 
     <p :class="paragraph">
       The class
-      <span v-html="brep" /> is defined as following:
+      <span v-html="brep" /> is defined as follows:
     </p>
 
     <!-- eslint-disable -->
