@@ -35,7 +35,7 @@
 
     <p :class="paragraph">
       OpenGeode comes with a CMake configuration file.
-      You can modified two items:
+      You can modify two items:
     </p>
 
     <ul :class="paragraph">
@@ -58,8 +58,8 @@
     </h3>
 
     <p :class="paragraph">
-      On Windows, we recommend to use Visual Studio 15 2017. On Linux and macOS, you can use gcc/g++ as compiler. You need a version equal to or higher than 4.8.
-      On macOS, you can also install Mac OS "Command Line Developer Tools" and use clang.
+      On Windows, we recommend to use Visual Studio 15 2017. On Linux, you can use gcc/g++ as compiler. You need a version equal to or higher than 4.8.
+      On macOS, install Mac OS "Command Line Developer Tools" and use clang. On macOS you can also use Xcode as an IDE which uses clang.
     </p>
 
     <h2 :class="section">
@@ -67,8 +67,8 @@
     </h2>
 
     <p :class="paragraph">
-      The configuration and compiling of OpenGeode is very simple.
-      This will be achieved in few steps depending on your platform.
+      The configuration and compilation of OpenGeode are very simple.
+      They can be achieved in few steps depending on your platform.
     </p>
 
     <h3 :class="subsection">
@@ -117,7 +117,7 @@
         Run cmake:
         <code>cmake ..</code> for default configuration or
         <code>ccmake ..</code> or
-        <code>cmake-gui ..</code> for choosing configuration options.
+        <code>cmake-gui ..</code> to modify configuration options.
       </li>
     </ol>
 
@@ -151,7 +151,7 @@
         Run cmake:
         <code>cmake ..</code> for default configuration or
         <code>ccmake ..</code> or
-        <code>cmake-gui ..</code> for choosing configuration options.
+        <code>cmake-gui ..</code> to modify configuration options.
       </li>
     </ol>
 
