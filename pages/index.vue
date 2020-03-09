@@ -26,9 +26,9 @@ export default {
         route: 'meshes'
       },
       {
-        title: 'Attributes (soon)',
+        title: 'Attributes',
         descr: 'OpenGeode attribute usage and implementation',
-        route: ''
+        route: 'attributes'
       },
       {
         title: 'Builders (soon)',
