@@ -105,7 +105,7 @@
     >If the attribute already exists and has the same name, 
     same storage and same value type, 
    a pointer to the pre-existing attribute is returned
-    without creating a new one. If the attribute name already exist but 
+    without creating a new attribute. If the attribute name already exist but 
     with a different storage or a different value type, an exception is thrown.
     </p>
 
