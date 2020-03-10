@@ -187,7 +187,7 @@
     <p
       :class="paragraph"
     >
-    The pointer points to an
+    The pointed object is an
     <span v-html="attributeBase" /> which is a non-typed attribute from which
     derive <span v-html="constantAttribute" />, <span v-html="sparseAttribute" />, 
     and <span v-html="variableAttribute" />.
