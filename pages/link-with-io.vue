@@ -18,7 +18,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">detail::initialize_mesh_io();</code>
+    <code class="cpp primary--text">geode::detail::initialize_mesh_io();</code>
     <!-- eslint-enable -->
 
     <p :class="paragraph">
@@ -26,7 +26,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">detail::initialize_model_io();</code>
+    <code class="cpp primary--text">geode::detail::initialize_model_io();</code>
     <!-- eslint-enable -->
 
     <p :class="paragraph">
