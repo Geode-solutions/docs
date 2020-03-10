@@ -32,11 +32,11 @@
     <p :class="paragraph">
       These functions are declared in the files
       <a
-        href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/include/geode/mesh/detail/common.h"
-      >include/geode/mesh/detail/common.h</a> and
+        href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/include/geode/io/mesh/detail/common.h"
+      >include/geode/io/mesh/detail/common.h</a> and
       <a
-        href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/include/geode/model/detail/common.h"
-      >include/geode/model/detail/common.h</a>.
+        href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/include/geode/io/model/detail/common.h"
+      >include/geode/io/model/detail/common.h</a>.
     </p>
     <p :class="paragraph">
       Do not forget to include the right file in your code.
