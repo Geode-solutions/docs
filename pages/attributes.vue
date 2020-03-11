@@ -11,21 +11,21 @@
 
     <p
       :class="paragraph"
-    >Attributes stand for properties you can add on OpenGeode objects, typically meshes. 
-    These properties are not directly stored on meshes, so you can imagine add Attributes
+    >Attributes stand for properties you can add to OpenGeode objects, typically meshes. 
+    These properties are not directly stored on objects or meshes, so you can add Attributes
     on other objects. </p>
 
     <p
       :class="paragraph"
     >Attributes are managed by an 
     <span v-html="attributeManager" />.
-    Meshes have manager defined on their vertices, edges, facets, and so on.
+    Meshes have managers defined on their vertices, edges, facets, and so on.
     Updating the mesh (e.g. by adding or removing vertices) automatically updates attached
     <span v-html="attributeManager" />. </p>
 
     <p
       :class="paragraph"
-    >But you can create an
+    >You can also create an
     <span v-html="attributeManager" />
     that is not attached to a mesh.</p>
     
@@ -35,7 +35,19 @@
       :class="paragraph"
     >First of all, let's get an  
     <span v-html="attributeManager" />
-    by the dedicated mesh methods or by creating it:</p>
+    by the dedicated mesh methods:</p>
+
+    <!-- eslint-disable -->
+    <code class="cpp primary--text">
+      TriangulatedSurface3D mesh;
+      auto manager = mesh.polygon_attribute_manager();
+      ...
+    </code>
+    <!-- eslint-enable -->
+
+    <p
+      :class="paragraph"
+    >or by creating it:</p>
 
     <!-- eslint-disable -->
     <code class="cpp primary--text">
@@ -62,7 +74,7 @@
 
     <p
       :class="paragraph"
-    >Notice that this method can be called before and after 
+    >Note that this method can be called before and after 
     the creation of Attributes associated to the 
     <span v-html="attributeManager" /> 
     (as done at the fourth line of the above code). 
@@ -70,7 +82,7 @@
 
     <p
       :class="paragraph"
-    >As in standard library, there is also a method to reserve Attributes capacities. 
+    >As in the standard library, there is also a method to reserve Attributes capacities. 
     </p>
 
     <p
@@ -82,10 +94,6 @@
 
     <ul :class="paragraph">
       <li>
-        An <strong>attribute name</strong> (here <code>first_attribute</code>): 
-        the first parameter of the method <code>find_or_create</code>;
-      </li>
-      <li>
         The <strong>type</strong> of Attribute storage (here a 
         <span v-html="variableAttribute" />): 
         the first template parameter of the method (more details below);
@@ -93,6 +101,10 @@
       <li>
         The <strong>type</strong> of Attribute values (here <code>double</code>): 
         the second template parameter of the method;
+      </li>
+      <li>
+        An <strong>attribute name</strong> (here <code>first_attribute</code>): 
+        the first parameter of the method <code>find_or_create</code>;
       </li>
       <li>
         The <strong>default value</strong> (here <code>12.3</code>): 
