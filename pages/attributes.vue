@@ -116,8 +116,8 @@
       :class="paragraph"
     >If the attribute already exists and has the same name, 
     same storage and same value type, 
-    the returned pointer points on the pre-existing attribute
-    without creating a new one. If the attribute name already exist but 
+   a pointer to the pre-existing attribute is returned
+    without creating a new attribute. If the attribute name already exist but 
     with a different storage or a different value type, an exception is thrown.
     </p>
 
@@ -199,7 +199,7 @@
     <p
       :class="paragraph"
     >
-    The pointer points to an
+    The pointed object is an
     <span v-html="attributeBase" /> which is a non-typed attribute from which
     derive <span v-html="constantAttribute" />, <span v-html="sparseAttribute" />, 
     and <span v-html="variableAttribute" />.
