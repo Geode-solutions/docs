@@ -53,7 +53,7 @@
     <code class="cpp primary--text">
       AttributeManager manager;
       manager.resize( 10 );
-      auto attribute_ptr = manager.find_or_create< VariableAttribute, double >(
+      auto attribute_ptr = manager.find_or_create_attribute< VariableAttribute, double >(
         "first_attribute", 12.3 );
       manager.resize( 6 );
     </code>
@@ -88,7 +88,8 @@
     <p
       :class="paragraph"
     >Now, take a look at the third line of the above code. 
-    This line creates an attribute using the method <code>find_or_create</code>.
+    This line creates an attribute using the method 
+    <code>find_or_create_attribute</code>.
     Four elements are needed to define the Attribute to create:
     </p>
 
@@ -104,7 +105,7 @@
       </li>
       <li>
         An <strong>attribute name</strong> (here <code>first_attribute</code>): 
-        the first parameter of the method <code>find_or_create</code>;
+        the first parameter of the method <code>find_or_create_attribute</code>;
       </li>
       <li>
         The <strong>default value</strong> (here <code>12.3</code>): 
@@ -265,7 +266,7 @@
     <code class="cpp primary--text">
       AttributeManager manager;
       manager.resize( 6 );
-      auto attribute_ptr = manager.find_or_create< VariableAttribute, double >(
+      auto attribute_ptr = manager.find_or_create_attribute< VariableAttribute, double >(
         "first_attribute", 12.3 );
       std::vector< bool > to_delete( 6, false );
       to_delete[0] = true;
@@ -295,7 +296,7 @@
     <code class="cpp primary--text">
       AttributeManager manager;
       manager.resize( 6 );
-      auto attribute_ptr = manager.find_or_create< VariableAttribute, double >(
+      auto attribute_ptr = manager.find_or_create_attribute< VariableAttribute, double >(
         "first_attribute", 12.3 );
       // values: 12.3 12.3 12.3 12.3 12.3 12.3 
       
