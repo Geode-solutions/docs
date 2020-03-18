@@ -20,7 +20,10 @@ class geode::Relationships
 	class_geode_Relationships_ItemRange.rst
 	class_geode_Relationships_ItemRangeIterator.rst
 
-This class stores all the relations between a set of components. Each relationship links two components. Relationship types are boundary and its dual incidence, and item and its dual collection. Components should be added through their uuids.
+Overview
+~~~~~~~~
+
+This class stores all the relations between a set of components. :ref:`More...<details-classgeode_1_1_relationships>`
 
 
 .. ref-code-block:: cpp
@@ -61,8 +64,165 @@ This class stores all the relations between a set of components. Each relationsh
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_collections<doxid-classgeode_1_1_relationships_1a5dc1cfa64023d4bdbece7378dc1515c5>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>` :target:`collections<doxid-classgeode_1_1_relationships_1a991844aeb03263f0a615547cf95b858c>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		void :target:`save_relationships<doxid-classgeode_1_1_relationships_1a0dab2f54985d3932dbff14c1ede028e6>`(absl::string_view directory) const;
+		void :ref:`register_component<doxid-classgeode_1_1_relationships_1ac21315bddd9f19be957e0b709700ec87>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id, RelationshipsBuilderKey);
+		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_1ad14c78840ca287f342b699a4961fc28e>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, RelationshipsBuilderKey);
+		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_1a1b9e665dcc3b96a1a7c4e906a5c21195>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence, RelationshipsBuilderKey);
+		void :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_1a194b38962a800d8c8b40f1230b0ca05f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding, RelationshipsBuilderKey);
+		void :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_1a8a8d73a4dde73bcf515884e7211385b8>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection, RelationshipsBuilderKey);
+	
+		void :target:`load_relationships<doxid-classgeode_1_1_relationships_1aa702a19e6aa4adbf78a60f0574525344>`(
+			absl::string_view directory,
+			RelationshipsBuilderKey
+			);
 	};
 
 	// direct descendants
 
 	class :ref:`Topology<doxid-classgeode_1_1_topology>`;
+.. _details-classgeode_1_1_relationships:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This class stores all the relations between a set of components. Each relationship links two components. Relationship types are boundary and its dual incidence, and item and its dual collection. Components should be added through their uuids.
+
+Methods
+-------
+
+.. index:: pair: function; register_component
+.. _doxid-classgeode_1_1_relationships_1ac21315bddd9f19be957e0b709700ec87:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void register_component(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id, RelationshipsBuilderKey)
+
+Add a component in the set of components registered by the :ref:`Relationships <doxid-classgeode_1_1_relationships>`
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- id
+
+		- The component identifier to add
+
+.. index:: pair: function; unregister_component
+.. _doxid-classgeode_1_1_relationships_1ad14c78840ca287f342b699a4961fc28e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void unregister_component(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, RelationshipsBuilderKey)
+
+Remove a component from the set of components registered by the :ref:`Relationships <doxid-classgeode_1_1_relationships>` and all its associated relationships
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- id
+
+		- Unique index of the component to remove
+
+.. index:: pair: function; add_boundary_relation
+.. _doxid-classgeode_1_1_relationships_1a1b9e665dcc3b96a1a7c4e906a5c21195:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void add_boundary_relation(
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary,
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence,
+		RelationshipsBuilderKey
+		)
+
+Add a new relationship of type boundary-incidence between two components
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- boundary
+
+		- Unique index of the boundary component
+
+	*
+		- incidence
+
+		- Unique index of the incidence component
+
+.. index:: pair: function; add_internal_relation
+.. _doxid-classgeode_1_1_relationships_1a194b38962a800d8c8b40f1230b0ca05f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void add_internal_relation(
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal,
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding,
+		RelationshipsBuilderKey
+		)
+
+Add a new relationship of type internal-embedding between two components
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- internal
+
+		- Unique index of the internal component
+
+	*
+		- embedding
+
+		- Unique index of the embedding component
+
+.. index:: pair: function; add_item_in_collection
+.. _doxid-classgeode_1_1_relationships_1a8a8d73a4dde73bcf515884e7211385b8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void add_item_in_collection(
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& item,
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection,
+		RelationshipsBuilderKey
+		)
+
+Add a new relationship of type item-collection between two components
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- item
+
+		- Unique index of the item component
+
+	*
+		- collection
+
+		- Unique index of the collection component
+

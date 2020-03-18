@@ -124,12 +124,37 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_collections<doxid-classgeode_1_1_relationships_1a5dc1cfa64023d4bdbece7378dc1515c5>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>` :ref:`collections<doxid-classgeode_1_1_relationships_1a991844aeb03263f0a615547cf95b858c>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		void :ref:`save_relationships<doxid-classgeode_1_1_relationships_1a0dab2f54985d3932dbff14c1ede028e6>`(absl::string_view directory) const;
+		void :ref:`register_component<doxid-classgeode_1_1_relationships_1ac21315bddd9f19be957e0b709700ec87>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id, RelationshipsBuilderKey);
+		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_1ad14c78840ca287f342b699a4961fc28e>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, RelationshipsBuilderKey);
+		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_1a1b9e665dcc3b96a1a7c4e906a5c21195>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence, RelationshipsBuilderKey);
+		void :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_1a194b38962a800d8c8b40f1230b0ca05f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding, RelationshipsBuilderKey);
+		void :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_1a8a8d73a4dde73bcf515884e7211385b8>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection, RelationshipsBuilderKey);
+		void :ref:`load_relationships<doxid-classgeode_1_1_relationships_1aa702a19e6aa4adbf78a60f0574525344>`(absl::string_view directory, RelationshipsBuilderKey);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a126167bad707bf6991d900419e8742a5>`() const;
 		const std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`>& :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a04919fb11ef214d5861809119867d731>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id) const;
 		std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1af50e6da4e87928eae7b6be99188c3b05>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a5f6dfd3e7a4d98b6c1d05d77b8f392f6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`unique_vertex<doxid-classgeode_1_1_vertex_identifier_1ad46b7b2e70e92e6fbfe1028cd6c20655>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex) const;
 		void :ref:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a4603484680ba1fe316b79a63da7481db>`(absl::string_view directory) const;
+	
+		template <typename MeshComponent>
+		void :ref:`register_mesh_component<doxid-classgeode_1_1_vertex_identifier_1af38ca38c2720c3032afb08aaa851bcbc>`(
+			const MeshComponent& component,
+			BuilderKey
+			);
+	
+		template <typename MeshComponent>
+		void :ref:`unregister_mesh_component<doxid-classgeode_1_1_vertex_identifier_1a0a1eac5d84b67502a88d2231c3a490c5>`(
+			const MeshComponent& component,
+			BuilderKey
+			);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1ac4e674026f62dc1cfee21cd64c65b177>`(BuilderKey);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1ac5557f2f84451e261bdea1e2b5323449>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb, BuilderKey);
+		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a033bf54aed4241dbfc1c95e367be5523>`(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, BuilderKey);
+		void :ref:`unset_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a676665aca54fb83b160309e0755dc33e>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, BuilderKey);
+		void :ref:`update_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1adca7148a2c47c97a06abcc8e8bd7a055>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id, const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new, BuilderKey);
+		void :ref:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a80b58e4324bd5f2c9fd03839b0922316>`(absl::string_view directory, BuilderKey);
 
 .. _details-classgeode_1_1_b_rep:
 

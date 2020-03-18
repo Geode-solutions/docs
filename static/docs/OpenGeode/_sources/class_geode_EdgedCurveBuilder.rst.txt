@@ -27,6 +27,11 @@ Interface class to represent the builder of a :ref:`EdgedCurve <doxid-classgeode
 		static std::unique_ptr<EdgedCurveBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_edged_curve_builder_1ac1d31e425b0233fca9d10f07d735df23>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh);
 		void :ref:`set_point<doxid-classgeode_1_1_edged_curve_builder_1a94e16d2c8d7fe3d83c3bc250f1e3bc84>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_edged_curve_builder_1a22553205c7f14c108a2904163ec79cce>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+	
+		void :target:`copy<doxid-classgeode_1_1_edged_curve_builder_1a36ce7c529523d736c829aae94bef8303>`(
+			const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve,
+			BuilderKey
+			);
 	};
 
 	// direct descendants
@@ -54,6 +59,7 @@ Inherited Members
 		void :ref:`set_edge_vertex<doxid-classgeode_1_1_graph_builder_1adfa4c5424c28d16a1a0b9865da89afba>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_edges<doxid-classgeode_1_1_graph_builder_1a720f73e63377bc700fb57c37e95bd99c>`(const std::vector<bool>& to_delete);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_graph_builder_1a9de42792403694c3cffbfb504cd9de62>`();
+		void :ref:`copy<doxid-classgeode_1_1_graph_builder_1ac8dba2461fe4b63b5259ee614b3de9ce>`(const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph, BuilderKey);
 
 .. _details-classgeode_1_1_edged_curve_builder:
 

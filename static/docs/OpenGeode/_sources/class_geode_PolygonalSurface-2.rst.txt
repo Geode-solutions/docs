@@ -84,6 +84,21 @@ Inherited Members
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_polygonal_surface_base_1a4428489afb30dc89197990419cd03451>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`polygon_attribute_manager<doxid-classgeode_1_1_polygonal_surface_base_1a2116ebad3ee2d9fdefe09fd90d7ffe01>`() const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_polygonal_surface_base_1abb716060914c220168b8a6d490720fe5>`() const;
+		const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& :ref:`polygon_around_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a3267f58a8a0dca1fea4f842c95e2e90a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, PolygonalSurfaceKey) const;
+		void :ref:`associate_polygon_vertex_to_vertex<doxid-classgeode_1_1_polygonal_surface_base_1aa439d0491fb068e63fb4cafab6053859>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, PolygonalSurfaceKey);
+		void :ref:`update_edge_vertices<doxid-classgeode_1_1_polygonal_surface_base_1ae4bb0846982994437aed1fb0e2af0e6e>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new, PolygonalSurfaceKey);
+	
+		void :ref:`update_edge_vertex<doxid-classgeode_1_1_polygonal_surface_base_1ad12b16d08d0c7b26a2d3e320f6e1ae88>`(
+			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id,
+			PolygonalSurfaceKey
+			);
+	
+		void :ref:`remove_edge<doxid-classgeode_1_1_polygonal_surface_base_1ad2b01e6af6c7d8f772a54d87ae40ded7>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices, PolygonalSurfaceKey);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_edges<doxid-classgeode_1_1_polygonal_surface_base_1a2d67bb355d7c04dec4fb3eeec52a78b7>`(const std::vector<bool>& to_delete, PolygonalSurfaceKey);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`remove_isolated_edges<doxid-classgeode_1_1_polygonal_surface_base_1a62da1595b06ed585aec9495f94e01fa8>`(PolygonalSurfaceKey);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`find_or_create_edge<doxid-classgeode_1_1_polygonal_surface_base_1a15e2d3dcefba701fdc000ef42c07eaee>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices, PolygonalSurfaceKey);
 
 .. _details-classgeode_1_1_polygonal_surface:
 

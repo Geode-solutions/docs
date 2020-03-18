@@ -19,11 +19,34 @@ Geometric component describing a :ref:`Line <doxid-classgeode_1_1_line>`. This c
 	class Line: public :ref:`geode::Component<doxid-classgeode_1_1_component>`
 	{
 	public:
+		// construction
+	
+		:target:`Line<doxid-classgeode_1_1_line_1adb4bc3ef09c66407c8a80baa43a0abdf>`(LinesKey);
+	
+		:target:`Line<doxid-classgeode_1_1_line_1a9e3959286f81d2fc440ad649675d9f86>`(
+			const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type,
+			LinesKey
+			);
+
 		// methods
 	
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_line_1af7c10eda2495dc8121670d2ccd119504>`() const;
 		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_line_1aa9c12802a9ce606ea5a956a51f878fe8>`() const;
 		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& :target:`mesh<doxid-classgeode_1_1_line_1a553da3d8a35de339b9a651d4251c5063>`() const;
+		void :target:`ensure_mesh_type<doxid-classgeode_1_1_line_1a772ab244ce7d03bc17cb780be3b532f3>`(LinesKey);
+		:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_line_1a89479b54fe820c47d7590117409d7fdc>`(LinesKey);
+	
+		void :target:`set_mesh<doxid-classgeode_1_1_line_1a5aa72366890a9c5a5009ead403df0f97>`(
+			std::unique_ptr<:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>> mesh,
+			LinesBuilderKey
+			);
+	
+		void :target:`set_line_name<doxid-classgeode_1_1_line_1a049084c25552f962bb60a176046c4733>`(
+			absl::string_view name,
+			LinesBuilderKey
+			);
+	
+		:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_line_1a52977829f71a9a775210f37ab0286367>`(LinesBuilderKey);
 		static :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type_static<doxid-classgeode_1_1_line_1a3be0d783957fc981e0421f0b229122da>`();
 	};
 

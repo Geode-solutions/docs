@@ -19,11 +19,35 @@ Geometric component describing a 3D volume This component is described by a mesh
 	class Block: public :ref:`geode::Component<doxid-classgeode_1_1_component>`
 	{
 	public:
+		// construction
+	
+		:target:`Block<doxid-classgeode_1_1_block_1a18f1fa9eafdce67c86e813eca1e27c33>`(BlocksKey);
+	
+		:target:`Block<doxid-classgeode_1_1_block_1a576c5edbd2fd83f963713b751512748b>`(
+			const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type,
+			BlocksKey
+			);
+
 		// methods
 	
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_block_1a478d8946a6d5a83e268b184c105537be>`() const;
 		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_block_1a9564b4b1e94aed521790de6c89d993f8>`() const;
 		const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& :target:`mesh<doxid-classgeode_1_1_block_1a5f0626e3cb5bf31f7fb6771638893f8b>`() const;
+		void :target:`ensure_mesh_type<doxid-classgeode_1_1_block_1a2e83aa928e74ded0bdb6518f93f1f2db>`(BlocksKey);
+		:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_block_1ab3eeb74ff69ad06d1bd91f24304cd9dc>`(BlocksKey);
+	
+		void :target:`set_mesh<doxid-classgeode_1_1_block_1a1820446f94784339bb289180aa87977f>`(
+			std::unique_ptr<:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>> mesh,
+			BlocksBuilderKey
+			);
+	
+		:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_block_1aded09671b08b53cd417be6435f98e9dd>`(BlocksBuilderKey);
+	
+		void :target:`set_block_name<doxid-classgeode_1_1_block_1a4fd3c3a7b3707cc3f3490707ad62035c>`(
+			absl::string_view name,
+			BlocksBuilderKey
+			);
+	
 		static :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type_static<doxid-classgeode_1_1_block_1aa48ae4ed7dacfd18f11a017335655188>`();
 	};
 

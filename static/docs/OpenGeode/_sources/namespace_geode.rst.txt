@@ -88,6 +88,7 @@ namespace geode
 	class_geode_OpenGeodeVertexSetBuilder.rst
 	class_geode_Output.rst
 	class_geode_PImpl.rst
+	class_geode_PassKey.rst
 	class_geode_Point.rst
 	class_geode_PointSet.rst
 	class_geode_PointSetBuilder.rst
@@ -393,6 +394,9 @@ Overview
 
 	template <typename T>
 	class :ref:`PImpl<doxid-classgeode_1_1_p_impl>`;
+
+	template <typename T>
+	class :ref:`PassKey<doxid-classgeode_1_1_pass_key>`;
 
 	template <index_t dimension>
 	class :ref:`Point<doxid-classgeode_1_1_point>`;

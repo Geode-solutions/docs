@@ -62,6 +62,75 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`facet_attribute_manager<doxid-classgeode_1_1_polyhedral_solid_1aade0a4d95592ebf073b40e6e3da090bd>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_polyhedral_solid_1ab5ddd74cbfbe81be2f2d942f555e9d64>`() const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_polyhedral_solid_1a26733a79fb173284d5191e66cb7f08f3>`() const;
+		const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& :target:`polyhedron_around_vertex<doxid-classgeode_1_1_polyhedral_solid_1a750d88fd4247baaaa7b18be2cbc79b43>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+	
+		void :target:`associate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_polyhedral_solid_1ade0f2e410b7a9db0fa6b10aad094e613>`(
+			const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id,
+			PolyhedralSolidKey
+			);
+	
+		void :target:`update_facet_vertices<doxid-classgeode_1_1_polyhedral_solid_1abd23a5248bed83f32529d1acf247cd7d>`(
+			const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new,
+			PolyhedralSolidKey
+			);
+	
+		void :target:`update_edge_vertices<doxid-classgeode_1_1_polyhedral_solid_1af9aa9c5307a052be370893788ec419de>`(
+			const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new,
+			PolyhedralSolidKey
+			);
+	
+		void :target:`update_facet_vertex<doxid-classgeode_1_1_polyhedral_solid_1a95b3dadc2a3a2b330923ed2d0c945663>`(
+			:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id,
+			PolyhedralSolidKey
+			);
+	
+		void :target:`update_edge_vertex<doxid-classgeode_1_1_polyhedral_solid_1a6bad29a362222bffd989203d3aa367cb>`(
+			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id,
+			PolyhedralSolidKey
+			);
+	
+		void :target:`remove_facet<doxid-classgeode_1_1_polyhedral_solid_1a685db934aeae0587e43b075c2fa2ba5c>`(
+			:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices,
+			PolyhedralSolidKey
+			);
+	
+		void :target:`remove_edge<doxid-classgeode_1_1_polyhedral_solid_1a5bdf4695007fdf7c57bf0b44b8229b4d>`(
+			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
+			PolyhedralSolidKey
+			);
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`delete_facets<doxid-classgeode_1_1_polyhedral_solid_1a9c47ee256185d35fcbbad7c1afc2b4fd>`(
+			const std::vector<bool>& to_delete,
+			PolyhedralSolidKey
+			);
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`delete_edges<doxid-classgeode_1_1_polyhedral_solid_1a39d8b4c3d7b9cf744bd3a68bcfe1a611>`(
+			const std::vector<bool>& to_delete,
+			PolyhedralSolidKey
+			);
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`remove_isolated_facets<doxid-classgeode_1_1_polyhedral_solid_1a972ef59f4d473312a7b894053ebf9b03>`(PolyhedralSolidKey);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`remove_isolated_edges<doxid-classgeode_1_1_polyhedral_solid_1ab576c9593016dba1de150f7226aad84a>`(PolyhedralSolidKey);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`find_or_create_facet<doxid-classgeode_1_1_polyhedral_solid_1ac515537dde8fcb8d8eeb536d831c1ea3>`(
+			:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices,
+			PolyhedralSolidKey
+			);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`find_or_create_edge<doxid-classgeode_1_1_polyhedral_solid_1a69f28e77bbea883d311fe6a554370374>`(
+			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
+			PolyhedralSolidKey
+			);
+	
+		:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>` :target:`polyhedron_facet_vertex_id<doxid-classgeode_1_1_polyhedral_solid_1acbb46cf6e38b94403799e26cb872c52e>`(
+			const :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex,
+			PolyhedralSolidKey
+			) const;
 	};
 
 	// direct descendants

@@ -19,11 +19,34 @@ Geometric component describing a :ref:`Surface <doxid-classgeode_1_1_surface>`. 
 	class Surface: public :ref:`geode::Component<doxid-classgeode_1_1_component>`
 	{
 	public:
+		// construction
+	
+		:target:`Surface<doxid-classgeode_1_1_surface_1aa3771c8ad77407b05e054f934436d41e>`(SurfacesKey);
+	
+		:target:`Surface<doxid-classgeode_1_1_surface_1a279751968be56296ef3e4b88a2f23c51>`(
+			const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type,
+			SurfacesKey
+			);
+
 		// methods
 	
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_surface_1af5857f1eaa972d6469e8d54ec57212e9>`() const;
 		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_surface_1a23aafe58297b0f553d6e2b42cef54ef8>`() const;
 		const :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& :target:`mesh<doxid-classgeode_1_1_surface_1a3de9a63b450e8b8ea2a8cd3c26580a3f>`() const;
+		:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_surface_1ad8f802bc65f3a22258d9b629e89040b0>`(SurfacesKey);
+		void :target:`ensure_mesh_type<doxid-classgeode_1_1_surface_1a88ec913af85609c51b1b1c72a03e8de3>`(SurfacesKey);
+	
+		void :target:`set_mesh<doxid-classgeode_1_1_surface_1a37c00916e74ee683c57da492e2c5f6ef>`(
+			std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>> mesh,
+			SurfacesBuilderKey
+			);
+	
+		void :target:`set_surface_name<doxid-classgeode_1_1_surface_1ab71e8e74a971dc0c342485a350c3e68f>`(
+			absl::string_view name,
+			SurfacesBuilderKey
+			);
+	
+		:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_surface_1a94dd3f62255f35227aa42e836fbc126d>`(SurfacesBuilderKey);
 		static :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type_static<doxid-classgeode_1_1_surface_1adbea559118e1b62c032465cd635aff60>`();
 	};
 

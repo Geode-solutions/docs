@@ -44,11 +44,34 @@
 <span class="k">class</span> <span class="nl">Line</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component"><span class="std std-ref">geode::Component</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1adb4bc3ef09c66407c8a80baa43a0abdf">Line</span><span></span><span class="p">(</span><span class="n">LinesKey</span><span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1a9e3959286f81d2fc440ad649675d9f86">Line</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">,</span>
+        <span class="n">LinesKey</span>
+        <span class="p">);</span>
+
     <span class="c1">// methods</span>
 
     <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1af7c10eda2495dc8121670d2ccd119504">component_type</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1aa9c12802a9ce606ea5a956a51f878fe8">component_id</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1a553da3d8a35de339b9a651d4251c5063">mesh</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1a772ab244ce7d03bc17cb780be3b532f3">ensure_mesh_type</span><span></span><span class="p">(</span><span class="n">LinesKey</span><span class="p">);</span>
+    <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1a89479b54fe820c47d7590117409d7fdc">modifiable_mesh</span><span></span><span class="p">(</span><span class="n">LinesKey</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1a5aa72366890a9c5a5009ead403df0f97">set_mesh</span><span></span><span class="p">(</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">mesh</span><span class="p">,</span>
+        <span class="n">LinesBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1a049084c25552f962bb60a176046c4733">set_line_name</span><span></span><span class="p">(</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">,</span>
+        <span class="n">LinesBuilderKey</span>
+        <span class="p">);</span>
+
+    <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1a52977829f71a9a775210f37ab0286367">modifiable_mesh</span><span></span><span class="p">(</span><span class="n">LinesBuilderKey</span><span class="p">);</span>
     <span class="k">static</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-line-1a3be0d783957fc981e0421f0b229122da">component_type_static</span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
