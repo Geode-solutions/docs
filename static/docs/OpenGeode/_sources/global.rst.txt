@@ -61,6 +61,7 @@ Overview
 	#define :ref:`OPENGEODE_LIBRARY_INITIALIZE<doxid-basic_2common_8h_1a0f3d08920a6e633fd2c203210bd5e9e8>`(library_name)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_2D_OR_3D<doxid-basic_2common_8h_1a1fe9b7e669f40054b322ec0969b00812>`(type)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_3D<doxid-basic_2common_8h_1a37f476a50bc1a84e160210b7c02bf10c>`(type)
+	#define :target:`SDEBUG<doxid-logger_8h_1a120329974cc6b605cc45eafbd7f8b731>`(a)
 
 	#define :target:`SERIALIZE_BITSERY_ARCHIVE<doxid-basic_2bitsery__archive_8h_1acb581b9262906a58a1a2b573cfbbdbb5>`( \
 		EXPORT, \
