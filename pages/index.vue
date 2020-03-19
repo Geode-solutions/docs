@@ -31,17 +31,17 @@ export default {
         route: 'attributes'
       },
       {
+        title: 'Supported file formats',
+        descr: 'OpenGeode file formats available',
+        route: 'formats'
+      },
+      {
         title: 'Builders (soon)',
         descr: 'OpenGeode way to construct and edit meshes and models',
         route: ''
       }
     ],
     devguides: [
-      {
-        title: 'Supported file formats',
-        descr: 'OpenGeode file formats available',
-        route: 'formats'
-      },
       {
         title: 'How to compile OpenGeode',
         descr:
