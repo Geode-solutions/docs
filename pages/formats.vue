@@ -24,6 +24,12 @@ export default {
         out: false
       },
       {
+        extension: '.svg',
+        cpp: "<a href='/opengeode?page=class_geode_Section.html'><code>Section</code></a>",
+        in: true,
+        out: false
+      },
+      {
         extension: '.stl',
         cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
         in: true,
