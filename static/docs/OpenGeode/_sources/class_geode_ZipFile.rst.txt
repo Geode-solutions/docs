@@ -27,7 +27,7 @@ class geode::ZipFile
 
 		// methods
 	
-		void :target:`archive_files<doxid-classgeode_1_1_zip_file_1a1c8f03bfd5e41c36ec7bbdc1670b30ac>`(const std::vector<absl::string_view>& files) const;
+		void :target:`archive_files<doxid-classgeode_1_1_zip_file_1ac6d0b0f8dd1ebe7c48d043a338820493>`(absl::Span<const absl::string_view>& files) const;
 		void :target:`archive_file<doxid-classgeode_1_1_zip_file_1a23782d6ee7d737e7684d0852ce5e3682>`(absl::string_view file) const;
 		absl::string_view :target:`directory<doxid-classgeode_1_1_zip_file_1afd2924540366fcc5fe4305a311fd34b2>`() const;
 	};

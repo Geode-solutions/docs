@@ -67,8 +67,8 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 			PolygonalSurfaceKey
 			);
 	
-		void :target:`update_edge_vertices<doxid-classgeode_1_1_polygonal_surface_base_1ae4bb0846982994437aed1fb0e2af0e6e>`(
-			const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new,
+		void :target:`update_edge_vertices<doxid-classgeode_1_1_polygonal_surface_base_1ae9e1e4c1717775c3189c50e831936dab>`(
+			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new,
 			PolygonalSurfaceKey
 			);
 	

@@ -86,7 +86,7 @@ Inherited Members
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_polygonal_surface_base_1abb716060914c220168b8a6d490720fe5>`() const;
 		const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& :ref:`polygon_around_vertex<doxid-classgeode_1_1_polygonal_surface_base_1a3267f58a8a0dca1fea4f842c95e2e90a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, PolygonalSurfaceKey) const;
 		void :ref:`associate_polygon_vertex_to_vertex<doxid-classgeode_1_1_polygonal_surface_base_1aa439d0491fb068e63fb4cafab6053859>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, PolygonalSurfaceKey);
-		void :ref:`update_edge_vertices<doxid-classgeode_1_1_polygonal_surface_base_1ae4bb0846982994437aed1fb0e2af0e6e>`(const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new, PolygonalSurfaceKey);
+		void :ref:`update_edge_vertices<doxid-classgeode_1_1_polygonal_surface_base_1ae9e1e4c1717775c3189c50e831936dab>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new, PolygonalSurfaceKey);
 	
 		void :ref:`update_edge_vertex<doxid-classgeode_1_1_polygonal_surface_base_1ad12b16d08d0c7b26a2d3e320f6e1ae88>`(
 			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,

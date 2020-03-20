@@ -70,13 +70,13 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 			PolyhedralSolidKey
 			);
 	
-		void :target:`update_facet_vertices<doxid-classgeode_1_1_polyhedral_solid_1abd23a5248bed83f32529d1acf247cd7d>`(
-			const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new,
+		void :target:`update_facet_vertices<doxid-classgeode_1_1_polyhedral_solid_1a134ba93a6f8a87acc187863d7407231e>`(
+			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new,
 			PolyhedralSolidKey
 			);
 	
-		void :target:`update_edge_vertices<doxid-classgeode_1_1_polyhedral_solid_1af9aa9c5307a052be370893788ec419de>`(
-			const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new,
+		void :target:`update_edge_vertices<doxid-classgeode_1_1_polyhedral_solid_1a36f07c9135fae7bb825814d13cb493b2>`(
+			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new,
 			PolyhedralSolidKey
 			);
 	
