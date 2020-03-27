@@ -29,6 +29,7 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 		// construction
 	
 		:target:`SectionBuilder<doxid-classgeode_1_1_section_builder_1a9eb6a1ccb9b8f8ccc267fba7aa1cc9b2>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
+		:target:`SectionBuilder<doxid-classgeode_1_1_section_builder_1ab385ad1f5f497ca5a60cb295fa2b70c6>`(SectionBuilder&&);
 
 		// methods
 	
