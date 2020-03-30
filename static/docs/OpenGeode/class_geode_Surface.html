@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="template class geode::Surfaces" href="class_geode_Surfaces.html" />
-    <link rel="prev" title="template class geode::SparseAttribute" href="class_geode_SparseAttribute.html" />
+    <link rel="prev" title="template class geode::Sphere" href="class_geode_Sphere.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -57,12 +57,12 @@
 
     <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1af5857f1eaa972d6469e8d54ec57212e9">component_type</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a23aafe58297b0f553d6e2b42cef54ef8">component_id</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_PolygonalSurface-2.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a3de9a63b450e8b8ea2a8cd3c26580a3f">mesh</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <a class="reference internal" href="class_geode_PolygonalSurface-2.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1ad8f802bc65f3a22258d9b629e89040b0">modifiable_mesh</span><span></span><span class="p">(</span><span class="n">SurfacesKey</span><span class="p">);</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a3de9a63b450e8b8ea2a8cd3c26580a3f">mesh</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1ad8f802bc65f3a22258d9b629e89040b0">modifiable_mesh</span><span></span><span class="p">(</span><span class="n">SurfacesKey</span><span class="p">);</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a88ec913af85609c51b1b1c72a03e8de3">ensure_mesh_type</span><span></span><span class="p">(</span><span class="n">SurfacesKey</span><span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a37c00916e74ee683c57da492e2c5f6ef">set_mesh</span><span></span><span class="p">(</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurface-2.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">mesh</span><span class="p">,</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">mesh</span><span class="p">,</span>
         <span class="n">SurfacesBuilderKey</span>
         <span class="p">);</span>
 
@@ -71,7 +71,7 @@
         <span class="n">SurfacesBuilderKey</span>
         <span class="p">);</span>
 
-    <a class="reference internal" href="class_geode_PolygonalSurface-2.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a94dd3f62255f35227aa42e836fbc126d">modifiable_mesh</span><span></span><span class="p">(</span><span class="n">SurfacesBuilderKey</span><span class="p">);</span>
+    <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1a94dd3f62255f35227aa42e836fbc126d">modifiable_mesh</span><span></span><span class="p">(</span><span class="n">SurfacesBuilderKey</span><span class="p">);</span>
     <span class="k">static</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-1adbea559118e1b62c032465cd635aff60">component_type_static</span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">

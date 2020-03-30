@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::Circle
+.. _doxid-classgeode_1_1_circle:
+
+class geode::Circle
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <basic_objects.h>
+	
+	class Circle
+	{
+	public:
+		// construction
+	
+		:target:`Circle<doxid-classgeode_1_1_circle_1a6d94c376ac548f76ab1bb09739889c11>`(
+			const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane,
+			double radius
+			);
+
+		// methods
+	
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& :target:`plane<doxid-classgeode_1_1_circle_1a9252221a7fd8e82833e8e3e65a027afc>`() const;
+		double :target:`radius<doxid-classgeode_1_1_circle_1a1eeb145d8ebb217102678d726da561a3>`() const;
+	};

@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::Triangle
+.. _doxid-classgeode_1_1_triangle:
+
+template class geode::Triangle
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <basic_objects.h>
+	
+	template <index_t dimension>
+	class Triangle
+	{
+	public:
+		// construction
+	
+		:target:`Triangle<doxid-classgeode_1_1_triangle_1abae7cc5597c459031bc8299b142e4fd9>`(
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p0,
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p1,
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p2
+			);
+
+		// methods
+	
+		const std::array<const std::reference_wrapper<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>>, 3>& :target:`vertices<doxid-classgeode_1_1_triangle_1aa827595a29d39e11944108b11976af06>`() const;
+	};

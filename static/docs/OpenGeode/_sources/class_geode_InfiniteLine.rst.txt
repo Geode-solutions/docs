@@ -1,0 +1,35 @@
+.. index:: pair: class; geode::InfiniteLine
+.. _doxid-classgeode_1_1_infinite_line:
+
+template class geode::InfiniteLine
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <basic_objects.h>
+	
+	template <index_t dimension>
+	class InfiniteLine
+	{
+	public:
+		// construction
+	
+		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1afb235364851a11362ede66f171b4635d>`(
+			const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& direction,
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin
+			);
+	
+		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1aacdf05212f673ca7bc87c05769ccf798>`(const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment);
+
+		// methods
+	
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`origin<doxid-classgeode_1_1_infinite_line_1a89898aa638214809eedd44da997f6e31>`() const;
+		const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& :target:`direction<doxid-classgeode_1_1_infinite_line_1a5b37e57723054b63b57a9eb7c2273e79>`() const;
+	};

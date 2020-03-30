@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::Plane
+.. _doxid-classgeode_1_1_plane:
+
+class geode::Plane
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <basic_objects.h>
+	
+	class Plane
+	{
+	public:
+		// construction
+	
+		:target:`Plane<doxid-classgeode_1_1_plane_1a7cd64861e175472499be1024961e2229>`(
+			const Vector3D& normal,
+			const Point3D& origin
+			);
+
+		// methods
+	
+		const Vector3D& :target:`normal<doxid-classgeode_1_1_plane_1a5a309f97f7a1fc2723e330e34c844a84>`() const;
+		const Point3D& :target:`origin<doxid-classgeode_1_1_plane_1a29cfddbaf70be0fdcc595d711f1bfc95>`() const;
+		double :target:`plane_constant<doxid-classgeode_1_1_plane_1adeb5c5a407acaf8e5c2e017848491256>`() const;
+	};

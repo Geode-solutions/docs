@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::PolygonalSurface
-.. _doxid-classgeode_1_1_polygonal_surface:
+.. index:: pair: class; geode::PolygonalSurface<3>
+.. _doxid-classgeode_1_1_polygonal_surface_3_013_01_4:
 
-template class geode::PolygonalSurface
-======================================
+template class geode::PolygonalSurface<3>
+=========================================
 
 .. toctree::
 	:hidden:
@@ -10,7 +10,7 @@ template class geode::PolygonalSurface
 Overview
 ~~~~~~~~
 
-Interface class for :ref:`Surface <doxid-classgeode_1_1_surface>` made up with polygons (triangles, quads, ...) of arbitrary dimension. :ref:`More...<details-classgeode_1_1_polygonal_surface>`
+Interface class for 3D :ref:`Surface <doxid-classgeode_1_1_surface>` made up with polygons. :ref:`More...<details-classgeode_1_1_polygonal_surface_3_013_01_4>`
 
 
 .. ref-code-block:: cpp
@@ -18,24 +18,18 @@ Interface class for :ref:`Surface <doxid-classgeode_1_1_surface>` made up with p
 
 	#include <polygonal_surface.h>
 	
-	template <index_t dimension>
-	class PolygonalSurface: public :ref:`geode::PolygonalSurfaceBase<doxid-classgeode_1_1_polygonal_surface_base>`
+	template <>
+	class PolygonalSurface<3>: public :ref:`geode::PolygonalSurfaceBase<doxid-classgeode_1_1_polygonal_surface_base>`
 	{
 	public:
 		// methods
 	
-		static std::unique_ptr<PolygonalSurface<dimension>> :ref:`create<doxid-classgeode_1_1_polygonal_surface_1a38e184ebddc3bc876adb573408654963>`();
-		static std::unique_ptr<PolygonalSurface<dimension>> :ref:`create<doxid-classgeode_1_1_polygonal_surface_1acf8bd20d36841076bb00ab5f2a5c5cb7>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
-		std::unique_ptr<PolygonalSurface<dimension>> :target:`clone<doxid-classgeode_1_1_polygonal_surface_1ab028f868da37f7ae2e1ade25a10fdabf>`() const;
+		static std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<3>> :target:`create<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1ae8729a1c765868f99b0fead96944723d>`();
+		static std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<3>> :target:`create<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a590a25a86695121d9296ef05a37b17de>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<3>> :target:`clone<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a7d9366cc03b91112bd8444562bcb835e>`() const;
+		Vector3D :ref:`polygon_normal<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1ac70dd1833962470bb3bb6a894e979719>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		Vector3D :ref:`polygon_vertex_normal<doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a4b924f444a2510bbca7ff3e4c8a317fb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	};
-
-	// direct descendants
-
-	template <index_t dimension>
-	class :ref:`OpenGeodePolygonalSurface<doxid-classgeode_1_1_open_geode_polygonal_surface>`;
-
-	template <index_t dimension>
-	class :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`;
 
 Inherited Members
 -----------------
@@ -100,45 +94,33 @@ Inherited Members
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`remove_isolated_edges<doxid-classgeode_1_1_polygonal_surface_base_1a62da1595b06ed585aec9495f94e01fa8>`(PolygonalSurfaceKey);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`find_or_create_edge<doxid-classgeode_1_1_polygonal_surface_base_1a15e2d3dcefba701fdc000ef42c07eaee>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices, PolygonalSurfaceKey);
 
-.. _details-classgeode_1_1_polygonal_surface:
+.. _details-classgeode_1_1_polygonal_surface_3_013_01_4:
 
 Detailed Documentation
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Interface class for :ref:`Surface <doxid-classgeode_1_1_surface>` made up with polygons (triangles, quads, ...) of arbitrary dimension.
+Interface class for 3D :ref:`Surface <doxid-classgeode_1_1_surface>` made up with polygons.
 
 Methods
 -------
 
-.. index:: pair: function; create
-.. _doxid-classgeode_1_1_polygonal_surface_1a38e184ebddc3bc876adb573408654963:
+.. index:: pair: function; polygon_normal
+.. _doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1ac70dd1833962470bb3bb6a894e979719:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static std::unique_ptr<PolygonalSurface<dimension>> create()
+	Vector3D polygon_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const
 
-Create a new :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>` using default data structure.
+Return the normal of a polygon
 
-.. index:: pair: function; create
-.. _doxid-classgeode_1_1_polygonal_surface_1acf8bd20d36841076bb00ab5f2a5c5cb7:
+.. index:: pair: function; polygon_vertex_normal
+.. _doxid-classgeode_1_1_polygonal_surface_3_013_01_4_1a4b924f444a2510bbca7ff3e4c8a317fb:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static std::unique_ptr<PolygonalSurface<dimension>> create(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type)
+	Vector3D polygon_vertex_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
 
-Create a new :ref:`PolygonalSurface <doxid-classgeode_1_1_polygonal_surface>` using a specified data structure.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- type
-
-		- Data structure type
+Return the normal at a polygon vertex
 

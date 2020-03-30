@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::Tetra
+.. _doxid-classgeode_1_1_tetra:
+
+class geode::Tetra
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <basic_objects.h>
+	
+	class Tetra
+	{
+	public:
+		// fields
+	
+		static constexpr std::array<std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 3>, 4> :target:`tetra_facet_vertex<doxid-classgeode_1_1_tetra_1a9b9069a6ad2c93f4da774210cbf1406e>`;
+
+		// construction
+	
+		:target:`Tetra<doxid-classgeode_1_1_tetra_1a448b7d6daf2ecf81d03bb377fa1d4e6a>`(
+			const Point3D& p0,
+			const Point3D& p1,
+			const Point3D& p2,
+			const Point3D& p3
+			);
+
+		// methods
+	
+		const std::array<const std::reference_wrapper<const Point3D>, 4>& :target:`vertices<doxid-classgeode_1_1_tetra_1a61a2c48affb29c884ba3adf07cb2aae4>`() const;
+	};

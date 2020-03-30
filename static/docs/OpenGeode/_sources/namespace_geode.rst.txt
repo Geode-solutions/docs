@@ -8,6 +8,8 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
+	enum_geode_Position.rst
+	enum_geode_Side.rst
 	struct_geode_ComponentTag.rst
 	struct_geode_EdgeVertex.rst
 	struct_geode_GenericAttributeConversion.rst
@@ -35,6 +37,7 @@ namespace geode
 	class_geode_Blocks.rst
 	class_geode_BlocksBuilder.rst
 	class_geode_BoundingBox.rst
+	class_geode_Circle.rst
 	class_geode_Component.rst
 	class_geode_ComponentID.rst
 	class_geode_ConstantAttribute.rst
@@ -55,6 +58,7 @@ namespace geode
 	class_geode_Growable.rst
 	class_geode_IOFile.rst
 	class_geode_IncrementOperator.rst
+	class_geode_InfiniteLine.rst
 	class_geode_Input.rst
 	class_geode_Line.rst
 	class_geode_Lines.rst
@@ -89,6 +93,7 @@ namespace geode
 	class_geode_Output.rst
 	class_geode_PImpl.rst
 	class_geode_PassKey.rst
+	class_geode_Plane.rst
 	class_geode_Point.rst
 	class_geode_PointSet.rst
 	class_geode_PointSetBuilder.rst
@@ -113,17 +118,22 @@ namespace geode
 	class_geode_SectionBuilder.rst
 	class_geode_SectionInput.rst
 	class_geode_SectionOutput.rst
+	class_geode_Segment.rst
 	class_geode_Singleton.rst
 	class_geode_SparseAttribute.rst
+	class_geode_Sphere.rst
 	class_geode_Surface.rst
 	class_geode_Surfaces.rst
 	class_geode_SurfacesBuilder.rst
+	class_geode_Tetra.rst
 	class_geode_TetrahedralSolid.rst
 	class_geode_TetrahedralSolidBuilder.rst
 	class_geode_TetrahedralSolidInput.rst
 	class_geode_TetrahedralSolidOutput.rst
 	class_geode_Topology.rst
 	class_geode_TopologyBuilder.rst
+	class_geode_Triangle.rst
+	class_geode_Triangle-2.rst
 	class_geode_TriangulatedSurface.rst
 	class_geode_TriangulatedSurfaceBuilder.rst
 	class_geode_TriangulatedSurfaceInput.rst
@@ -164,6 +174,8 @@ Overview
 	typedef bitsery::Deserializer<bitsery::InputStreamAdapter, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Deserializer<doxid-namespacegeode_1a2090ae31c36f663e61f2af7d87cb5f44>`;
 	typedef unsigned int :target:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`;
 	typedef int :target:`signed_index_t<doxid-namespacegeode_1a82faef4b63f94932b7ced06209528cdd>`;
+	typedef :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension> :target:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`;
+	typedef :ref:`Circle<doxid-classgeode_1_1_circle>` :target:`Disk<doxid-namespacegeode_1a8eb9eb3432b2897512a02b4410f6a9f8>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`<dimension>, :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>&> :target:`EdgedCurveBuilderFactory<doxid-namespacegeode_1a1b470b010221d391a9363f0d4380e0c5>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`GraphBuilder<doxid-classgeode_1_1_graph_builder>`, :ref:`Graph<doxid-classgeode_1_1_graph>`&> :target:`GraphBuilderFactory<doxid-namespacegeode_1ab5a76c0f1e87d0a6d193e7c4e1212128>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`<dimension>, :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>&> :target:`PointSetBuilderFactory<doxid-namespacegeode_1a36aa5af3e78a9976426cd467dcca3f82>`;
@@ -210,6 +222,11 @@ Overview
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`, const :ref:`BRep<doxid-classgeode_1_1_b_rep>`&, absl::string_view> :target:`BRepOutputFactory<doxid-namespacegeode_1a77782b13c53f40c01391984dd773c6ee>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`SectionInput<doxid-classgeode_1_1_section_input>`, :ref:`Section<doxid-classgeode_1_1_section>`&, absl::string_view> :target:`SectionInputFactory<doxid-namespacegeode_1abd13822ca4d8513ed764b7b84dff46d3>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`SectionOutput<doxid-classgeode_1_1_section_output>`, const :ref:`Section<doxid-classgeode_1_1_section>`&, absl::string_view> :target:`SectionOutputFactory<doxid-namespacegeode_1a009ecfcd2a4879a236494429c6eba4c0>`;
+
+	// enums
+
+	enum :ref:`Position<doxid-namespacegeode_1a316ec3486ec794c86021f0fea71f54a7>`;
+	enum :ref:`Side<doxid-namespacegeode_1a0805566e7d9eb8e31ef1d932837fdb1b>`;
 
 	// structs
 
@@ -263,6 +280,8 @@ Overview
 	template <index_t dimension>
 	class :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`;
 
+	class :ref:`Circle<doxid-classgeode_1_1_circle>`;
+
 	template <index_t dimension>
 	class :ref:`Component<doxid-classgeode_1_1_component>`;
 
@@ -313,6 +332,9 @@ Overview
 
 	template <typename Type>
 	class :ref:`IncrementOperator<doxid-classgeode_1_1_increment_operator>`;
+
+	template <index_t dimension>
+	class :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`;
 
 	class :ref:`Input<doxid-classgeode_1_1_input>`;
 
@@ -398,6 +420,8 @@ Overview
 	template <typename T>
 	class :ref:`PassKey<doxid-classgeode_1_1_pass_key>`;
 
+	class :ref:`Plane<doxid-classgeode_1_1_plane>`;
+
 	template <index_t dimension>
 	class :ref:`Point<doxid-classgeode_1_1_point>`;
 
@@ -413,11 +437,11 @@ Overview
 	template <index_t dimension>
 	class :ref:`PointSetOutput<doxid-classgeode_1_1_point_set_output>`;
 
-	template <>
-	class :ref:`PolygonalSurface<3><doxid-classgeode_1_1_polygonal_surface_3_013_01_4>`;
-
 	template <index_t dimension>
 	class :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`;
+
+	template <>
+	class :ref:`PolygonalSurface<3><doxid-classgeode_1_1_polygonal_surface_3_013_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`PolygonalSurfaceBase<doxid-classgeode_1_1_polygonal_surface_base>`;
@@ -455,10 +479,17 @@ Overview
 	class :ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`;
 	class :ref:`SectionInput<doxid-classgeode_1_1_section_input>`;
 	class :ref:`SectionOutput<doxid-classgeode_1_1_section_output>`;
+
+	template <index_t dimension>
+	class :ref:`Segment<doxid-classgeode_1_1_segment>`;
+
 	class :ref:`Singleton<doxid-classgeode_1_1_singleton>`;
 
 	template <typename T>
 	class :ref:`SparseAttribute<doxid-classgeode_1_1_sparse_attribute>`;
+
+	template <index_t dimension>
+	class :ref:`Sphere<doxid-classgeode_1_1_sphere>`;
 
 	template <index_t dimension>
 	class :ref:`Surface<doxid-classgeode_1_1_surface>`;
@@ -468,6 +499,8 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`SurfacesBuilder<doxid-classgeode_1_1_surfaces_builder>`;
+
+	class :ref:`Tetra<doxid-classgeode_1_1_tetra>`;
 
 	template <index_t dimension>
 	class :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`;
@@ -483,6 +516,12 @@ Overview
 
 	class :ref:`Topology<doxid-classgeode_1_1_topology>`;
 	class :ref:`TopologyBuilder<doxid-classgeode_1_1_topology_builder>`;
+
+	template <index_t dimension>
+	class :ref:`Triangle<doxid-classgeode_1_1_triangle>`;
+
+	template <>
+	class :ref:`Triangle<3><doxid-classgeode_1_1_triangle_3_013_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`;
@@ -550,12 +589,110 @@ Overview
 	int opengeode_basic_api :ref:`geode_lippincott<doxid-namespacegeode_1a0d6f934054bb20a7b43ff330dca7d363>`();
 	void opengeode_basic_api :ref:`register_basic_serialize_pcontext<doxid-namespacegeode_1abf3517d752f9c05bbb40e02825f61243>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_basic_api :ref:`register_basic_deserialize_pcontext<doxid-namespacegeode_1a4971b040e31d95abe4053f71d315b4d7>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a713615f1e1f632a857fbbda376b9b832>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3fbc1fb49f0ca7c4ea4744e735440007>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(:ref:`Point<doxid-classgeode_1_1_point>`);
+
+	std::array<double, 4> opengeode_geometry_api :ref:`tetra_barycentric_coordinates<doxid-namespacegeode_1a64ae7fbecb417c18b710b3fcaedff648>`(
+		const Point3D& point,
+		const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra
+		);
+
+	template <index_t dimension>
+	std::array<double, 3> :ref:`triangle_barycentric_coordinates<doxid-namespacegeode_1ac777b102ddf86dd83a97f0df569aa315>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
+		);
+
+	template <index_t dimension>
+	std::array<double, 2> :ref:`segment_barycentric_coordinates<doxid-namespacegeode_1a31a7b32940d4db933c477fecec72d7c3>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
+		);
+
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad391ccfd3ec3b37beae6bcc7c210f915>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a46c93d7de8cb42c63334569e28c385bd>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6bd5b8618c1a9a6ff0f6c60bb98fe807>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a2ef1614f38ff6bbfa27ffe769235c4ee>`(:ref:`Sphere<doxid-classgeode_1_1_sphere>`);
 	void opengeode_geometry_api :ref:`register_geometry_serialize_pcontext<doxid-namespacegeode_1a3a8183171407a05faea9c1edfcc12d6f>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_geometry_api :ref:`register_geometry_deserialize_pcontext<doxid-namespacegeode_1a21eee3ab8ab2f094ad300c9755cd6a94>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9ef1e2fd6ef5020023fd9aac662f20c3>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afdb46be0cc0cf92e9c480d0f4af7ede7>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_segment_distance<doxid-namespacegeode_1aa93b0c934f3fb83dd110e44bedfd5a30>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
+		);
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_line_distance<doxid-namespacegeode_1a0152cc4808d761c36b5a7f3d95a85644>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
+		);
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_triangle_distance<doxid-namespacegeode_1a330049f15e84cc2f0d868038057142ec>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
+		);
+
+	std::tuple<double, Point3D> :ref:`point_triangle_signed_distance<doxid-namespacegeode_1adde4afe0dd3cc2809cdd33d777602d21>`(const Point3D& point, const Triangle3D& triangle);
+
+	std::tuple<double, Point3D> opengeode_geometry_api :ref:`point_tetra_distance<doxid-namespacegeode_1a4cb8cbcd4026804a442944f264408267>`(
+		const Point3D& point,
+		const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra
+		);
+
+	std::tuple<double, Point3D> opengeode_geometry_api :ref:`point_plane_distance<doxid-namespacegeode_1a51e4913dfa9e0460508a63d03bee9241>`(
+		const Point3D& point,
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane
+		);
+
+	std::tuple<double, Point3D> opengeode_geometry_api :ref:`point_plane_signed_distance<doxid-namespacegeode_1a4e3aa1f40ed1f1c1d11dd39240155949>`(
+		const Point3D& point,
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane
+		);
+
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae9a3218d8a8d01e07d5fe03060e8b7e5>`(:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8aa2b23c4d6223ad5baa9bd94971837a>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a08bdfe9994f732c45460e93dd950194d>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
+	Vector2D opengeode_geometry_api :ref:`perpendicular<doxid-namespacegeode_1abf7d35d6f59c66989de52f35d6c6cae0>`(const Vector2D& v);
+	double opengeode_geometry_api :ref:`dot_perpendicular<doxid-namespacegeode_1a86b4ac219780962e02ecaf1becde9633>`(const Vector2D& v0, const Vector2D& v1);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(:ref:`Point<doxid-classgeode_1_1_point>`);
+
+	template <index_t dimension>
+	:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`point_segment_projection<doxid-namespacegeode_1a25b6b03e0454dc3a0c3b7816febec9ca>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
+		);
+
+	template <index_t dimension>
+	:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`point_line_projection<doxid-namespacegeode_1afb3cdab999cf5c78c24663bdee4d224d>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
+		);
+
+	template <index_t dimension>
+	:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`point_triangle_projection<doxid-namespacegeode_1a3a26f982ece1cac2c9a2b7ec4f4667bf>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
+		);
+
+	:target:`ALIAS_3D<doxid-namespacegeode_1a9040936b048d9dc9c295e26f746624ab>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
+
+	template <index_t dimension>
+	double :ref:`triangle_area<doxid-namespacegeode_1ac9bae29e562e6285b6377475738e08bc>`(const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle);
+
+	double opengeode_geometry_api :ref:`triangle_signed_area<doxid-namespacegeode_1a7bcf51b8e17c92dc052b3c62c8abd1ab>`(const Triangle2D& triangle);
+
+	double opengeode_geometry_api :ref:`triangle_signed_area<doxid-namespacegeode_1a0c0bcc660d0424ace824fa79dd83139f>`(
+		const Triangle3D& triangle,
+		const Vector3D& direction
+		);
+
+	double opengeode_geometry_api :ref:`tetra_signed_volume<doxid-namespacegeode_1a032f45054900e005dabe262e5736e9e6>`(const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a69bca61d0800722900c8332a1452e3c8>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	void opengeode_mesh_api :target:`register_geode_builder<doxid-namespacegeode_1a618a67e60c63449f834b7f8fe67808e0>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
@@ -608,7 +745,6 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1afeb3d280ffcd275ef0148dceffda7eb8>`(:ref:`OpenGeodeTriangulatedSurface<doxid-classgeode_1_1_open_geode_triangulated_surface>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a11058d89bacb297358eb8a8a8a29490c>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abaaf5c9c93b57ba0d9df2d33530fd623>`(:ref:`PointSetFactory<doxid-namespacegeode_1a2924cf9afc812feb79b5b840ddd1eea3>`);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8aa2b23c4d6223ad5baa9bd94971837a>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a34993c9c8235be7221449c93152372f7>`(:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a17500ec2de892636daee915109d8bfe6>`(:ref:`PolygonalSurfaceBase<doxid-classgeode_1_1_polygonal_surface_base>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a36eeebddb61f6b3acc7e4711bb6bbeb4>`(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`);
@@ -863,6 +999,116 @@ Register all the information needed by Bitsery to deserialize the objects in the
 
 		- The context where to register this information.
 
+.. index:: pair: function; tetra_barycentric_coordinates
+.. _doxid-namespacegeode_1a64ae7fbecb417c18b710b3fcaedff648:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::array<double, 4> opengeode_geometry_api tetra_barycentric_coordinates(
+		const Point3D& point,
+		const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra
+		)
+
+Compute the barycentric coordinates of a point with regards to a tetra.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- the query point.
+
+	*
+		- tetra
+
+		- the tetra.
+
+
+
+.. rubric:: Returns:
+
+an array containing the parametric coordinates corresponding to the tetra vertices.
+
+.. index:: pair: function; triangle_barycentric_coordinates
+.. _doxid-namespacegeode_1ac777b102ddf86dd83a97f0df569aa315:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::array<double, 3> triangle_barycentric_coordinates(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
+		)
+
+Compute barycentric coordinates of a point with regards to a triangle.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- the query point.
+
+	*
+		- triangle
+
+		- the triangle.
+
+
+
+.. rubric:: Returns:
+
+an array containing the parametric coordinates corresponding to the triangle vertices.
+
+.. index:: pair: function; segment_barycentric_coordinates
+.. _doxid-namespacegeode_1a31a7b32940d4db933c477fecec72d7c3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::array<double, 2> segment_barycentric_coordinates(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
+		)
+
+Compute barycentric coordinates of a point with regards to a segment.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- the query point.
+
+	*
+		- segment
+
+		- the segment.
+
+
+
+.. rubric:: Returns:
+
+an array containing the parametric coordinates corresponding to the segment vertices.
+
 .. index:: pair: function; register_geometry_serialize_pcontext
 .. _doxid-namespacegeode_1a3a8183171407a05faea9c1edfcc12d6f:
 
@@ -906,6 +1152,371 @@ Register all the information needed by Bitsery to deserialize the objects in the
 		- context
 
 		- The context where to register this information.
+
+.. index:: pair: function; point_segment_distance
+.. _doxid-namespacegeode_1aa93b0c934f3fb83dd110e44bedfd5a30:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> point_segment_distance(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
+		)
+
+Compute the smallest distance between a point and a segment
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the segment.
+
+.. index:: pair: function; point_line_distance
+.. _doxid-namespacegeode_1a0152cc4808d761c36b5a7f3d95a85644:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> point_line_distance(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
+		)
+
+Compute the smallest distance between a point and an infinite line
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the line.
+
+.. index:: pair: function; point_triangle_distance
+.. _doxid-namespacegeode_1a330049f15e84cc2f0d868038057142ec:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> point_triangle_distance(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
+		)
+
+Compute the smallest distance between a point and a triangle the sign is given by the triangle normal (positive if in the same plane).
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the triangle.
+
+.. index:: pair: function; point_triangle_signed_distance
+.. _doxid-namespacegeode_1adde4afe0dd3cc2809cdd33d777602d21:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point3D> point_triangle_signed_distance(
+		const Point3D& point,
+		const Triangle3D& triangle
+		)
+
+Compute the signed distance between a point and a triangle
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the triangle.
+
+.. index:: pair: function; point_tetra_distance
+.. _doxid-namespacegeode_1a4cb8cbcd4026804a442944f264408267:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point3D> opengeode_geometry_api point_tetra_distance(
+		const Point3D& point,
+		const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra
+		)
+
+Compute the distance between a point and a tetrahedron
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the nearest point on the tetrahedron.
+
+.. index:: pair: function; point_plane_distance
+.. _doxid-namespacegeode_1a51e4913dfa9e0460508a63d03bee9241:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point3D> opengeode_geometry_api point_plane_distance(
+		const Point3D& point,
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane
+		)
+
+Compute the distance between a point and a plane
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the nearest point on the plane.
+
+.. index:: pair: function; point_plane_signed_distance
+.. _doxid-namespacegeode_1a4e3aa1f40ed1f1c1d11dd39240155949:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point3D> opengeode_geometry_api point_plane_signed_distance(
+		const Point3D& point,
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane
+		)
+
+Compute the signed distance between a point and a plane
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the signed distance (sign is given by the plane normal direction).
+
+* the nearest point on the plane.
+
+.. index:: pair: function; perpendicular
+.. _doxid-namespacegeode_1abf7d35d6f59c66989de52f35d6c6cae0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Vector2D opengeode_geometry_api perpendicular(const Vector2D& v)
+
+Return a 2D vector perpendicular to the given one
+
+.. index:: pair: function; dot_perpendicular
+.. _doxid-namespacegeode_1a86b4ac219780962e02ecaf1becde9633:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	double opengeode_geometry_api dot_perpendicular(
+		const Vector2D& v0,
+		const Vector2D& v1
+		)
+
+compute the dot product between two 2D vectors
+
+.. index:: pair: function; point_segment_projection
+.. _doxid-namespacegeode_1a25b6b03e0454dc3a0c3b7816febec9ca:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point_segment_projection(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
+		)
+
+Return the projection of a point on a segment
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- the point to project
+
+	*
+		- segment
+
+		- the segment
+
+.. index:: pair: function; point_line_projection
+.. _doxid-namespacegeode_1afb3cdab999cf5c78c24663bdee4d224d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point_line_projection(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
+		)
+
+Return the projection of a point on a line
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- the point to project
+
+	*
+		- line
+
+		- the line
+
+.. index:: pair: function; point_triangle_projection
+.. _doxid-namespacegeode_1a3a26f982ece1cac2c9a2b7ec4f4667bf:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point_triangle_projection(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
+		)
+
+Return the projection of a point on a triangle
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- the point to project
+
+	*
+		- segment
+
+		- the segment
+
+.. index:: pair: function; triangle_area
+.. _doxid-namespacegeode_1ac9bae29e562e6285b6377475738e08bc:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	double triangle_area(const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle)
+
+Compute the (positive) area of a triangle
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- triangle
+
+		- :ref:`Triangle <doxid-classgeode_1_1_triangle>` to compute area
+
+.. index:: pair: function; triangle_signed_area
+.. _doxid-namespacegeode_1a7bcf51b8e17c92dc052b3c62c8abd1ab:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	double opengeode_geometry_api triangle_signed_area(const Triangle2D& triangle)
+
+Compute the signed area of a triangle
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- triangle
+
+		- :ref:`Triangle <doxid-classgeode_1_1_triangle>` to compute area returned area is positive if the triangle vertices are ordered counter-clockwise, negative if clockwise.
+
+.. index:: pair: function; triangle_signed_area
+.. _doxid-namespacegeode_1a0c0bcc660d0424ace824fa79dd83139f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	double opengeode_geometry_api triangle_signed_area(
+		const Triangle3D& triangle,
+		const Vector3D& direction
+		)
+
+Compute the signed area of a 3D triangle
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- triangle
+
+		- :ref:`Triangle <doxid-classgeode_1_1_triangle>` to compute area
+
+	*
+		- direction
+
+		- Direction used to determined the sign of returned area: positive if the triangle normal is in the same direction than direction, negative if the triangle normal is in the opposition direction.
+
+.. index:: pair: function; tetra_signed_volume
+.. _doxid-namespacegeode_1a032f45054900e005dabe262e5736e9e6:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	double opengeode_geometry_api tetra_signed_volume(const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra)
+
+Compute the signed volume of a tetrahedron
 
 .. index:: pair: function; register_mesh_serialize_pcontext
 .. _doxid-namespacegeode_1aa05925dcfcae1d0f42d06f0f9a8dfb8a:
