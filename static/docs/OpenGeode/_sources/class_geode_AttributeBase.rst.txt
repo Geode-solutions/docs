@@ -57,10 +57,12 @@ Base class defining the virtual API used by the :ref:`AttributeManager <doxid-cl
 			) = 0;
 	
 		virtual void :target:`compute_value<doxid-classgeode_1_1_attribute_base_1ab5f62114b3edd5f46256c515bf3c21e4>`(
-			const :ref:`AttributeLinearInterpolation<doxid-classgeode_1_1_attribute_linear_interpolation>`& interpolation,
+			const :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`& interpolation,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element,
 			AttributeKey
 			) = 0;
+	
+		const :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`& :target:`properties<doxid-classgeode_1_1_attribute_base_1ac4fb14460b4961e69295b9295d177410>`() const;
 	};
 
 	// direct descendants

@@ -1,0 +1,36 @@
+.. index:: pair: struct; geode::AttributeLinearInterpolation
+.. _doxid-structgeode_1_1_attribute_linear_interpolation:
+
+struct geode::AttributeLinearInterpolation
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <attribute_utils.h>
+	
+	struct AttributeLinearInterpolation
+	{
+		// fields
+	
+		const absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`indices_<doxid-structgeode_1_1_attribute_linear_interpolation_1a227d02d87d11ba25cedb8c09df0140bc>`;
+		const absl::FixedArray<double> :target:`lambdas_<doxid-structgeode_1_1_attribute_linear_interpolation_1aa2e40e21bd9143b37ceb4bf69e3e5b22>`;
+
+		// construction
+	
+		:target:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation_1a22d2eeab62311a5a3f3c3d13f89e3c14>`(
+			absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> indices,
+			absl::FixedArray<double> lambdas
+			);
+
+		// methods
+	
+		template <template< typename > class Attribute, typename T>
+		T :target:`compute_value<doxid-structgeode_1_1_attribute_linear_interpolation_1a4efa71ee050352461a6f8c391243455f>`(const Attribute<T>& attribute) const;
+	};

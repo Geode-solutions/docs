@@ -50,8 +50,8 @@ Begin and end methods for range-based iteration on custom range. See derived cla
 	class :ref:`IncidentLineRange<doxid-classgeode_1_1_section_1_1_incident_line_range>`;
 	class :ref:`IncidentSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_incident_surface_range>`;
 	class :ref:`IncidentSurfaceRange<doxid-classgeode_1_1_section_1_1_incident_surface_range>`;
-	class :ref:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range>`;
 	class :ref:`InternalCornerRange<doxid-classgeode_1_1_section_1_1_internal_corner_range>`;
+	class :ref:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range>`;
 	class :ref:`InternalLineRange<doxid-classgeode_1_1_section_1_1_internal_line_range>`;
 	class :ref:`InternalLineRange<doxid-classgeode_1_1_b_rep_1_1_internal_line_range>`;
 	class :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`;

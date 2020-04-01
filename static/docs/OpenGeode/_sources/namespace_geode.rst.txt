@@ -10,6 +10,10 @@ namespace geode
 	namespace_geode_detail.rst
 	enum_geode_Position.rst
 	enum_geode_Side.rst
+	struct_geode_AttributeLinearInterpolation.rst
+	struct_geode_AttributeLinearInterpolationImpl.rst
+	struct_geode_AttributeLinearInterpolationImpl-2.rst
+	struct_geode_AttributeProperties.rst
 	struct_geode_ComponentTag.rst
 	struct_geode_EdgeVertex.rst
 	struct_geode_GenericAttributeConversion.rst
@@ -25,7 +29,6 @@ namespace geode
 	class_geode_AddComponents.rst
 	class_geode_AddComponentsBuilders.rst
 	class_geode_AttributeBase.rst
-	class_geode_AttributeLinearInterpolation.rst
 	class_geode_AttributeManager.rst
 	class_geode_BRep.rst
 	class_geode_BRepBuilder.rst
@@ -230,6 +233,15 @@ Overview
 
 	// structs
 
+	struct :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`;
+
+	template <typename AttributeType>
+	struct :ref:`AttributeLinearInterpolationImpl<doxid-structgeode_1_1_attribute_linear_interpolation_impl>`;
+
+	template <index_t dimension>
+	struct :ref:`AttributeLinearInterpolationImpl<Point<dimension>><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_point_3_01dimension_01_4_01_4>`;
+
+	struct :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`;
 	struct :ref:`ComponentTag<doxid-structgeode_1_1_component_tag>`;
 	struct :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`;
 
@@ -255,7 +267,6 @@ Overview
 	class :ref:`AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`;
 
 	class :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`;
-	class :ref:`AttributeLinearInterpolation<doxid-classgeode_1_1_attribute_linear_interpolation>`;
 	class :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`;
 	class :ref:`BRep<doxid-classgeode_1_1_b_rep>`;
 	class :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`;
@@ -587,6 +598,13 @@ Overview
 		);
 
 	int opengeode_basic_api :ref:`geode_lippincott<doxid-namespacegeode_1a0d6f934054bb20a7b43ff330dca7d363>`();
+	:target:`IMPLICIT_ATTRIBUTE_LINEAR_INTERPOLATION<doxid-namespacegeode_1af4996f210d9fb27190699984a933fd17>`(float);
+	:target:`IMPLICIT_ATTRIBUTE_LINEAR_INTERPOLATION<doxid-namespacegeode_1a70b45d032cb29bb76d8626e9cabec3cb>`(double);
+	:target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1a54c603b2d16adf2f5031334a98e528bf>`(bool);
+	:target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1a22128fee88dd065547c291a5b6cc120c>`(int);
+	:target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1a9844da4a83f3093fcc8c77a5d0219ef9>`(unsigned int);
+	:target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1ab99035acc811564161f94c59b0551d4c>`(float);
+	:target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1af3f8b74262365844a60b7cefa0932d4c>`(double);
 	void opengeode_basic_api :ref:`register_basic_serialize_pcontext<doxid-namespacegeode_1abf3517d752f9c05bbb40e02825f61243>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_basic_api :ref:`register_basic_deserialize_pcontext<doxid-namespacegeode_1a4971b040e31d95abe4053f71d315b4d7>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);

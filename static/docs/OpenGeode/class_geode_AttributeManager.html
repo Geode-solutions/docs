@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::BRep" href="class_geode_BRep.html" />
-    <link rel="prev" title="class geode::AttributeLinearInterpolation" href="class_geode_AttributeLinearInterpolation.html" />
+    <link rel="prev" title="class geode::AttributeBase" href="class_geode_AttributeBase.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -52,16 +52,23 @@
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_ReadOnlyAttribute.html#doxid-classgeode-1-1-read-only-attribute"><span class="std std-ref">ReadOnlyAttribute</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1aff74019fbaa9939a5e1ba5f1bf81b5a5"><span class="std std-ref">find_attribute</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="o">&gt;</span> <span class="k">class</span> <span class="n">Attribute</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="o">&gt;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Attribute</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a598ab1d9b4f79c1838217923f0f33791"><span class="std std-ref">find_or_create_attribute</span></a><span></span><span class="p">(</span>
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="o">&gt;</span> <span class="k">class</span> <span class="n">Attribute</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Attribute</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a11138e8873c9452f32070a5605c73b61"><span class="std std-ref">find_or_create_attribute</span></a><span></span><span class="p">(</span>
         <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">,</span>
-        <span class="k">const</span> <span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span>
+        <span class="n">T</span> <span class="n">default_value</span><span class="p">,</span>
+        <a class="reference internal" href="struct_geode_AttributeProperties.html#doxid-structgeode-1-1-attribute-properties"><span class="std std-ref">AttributeProperties</span></a><span></span> <span class="n">properties</span>
+        <span class="p">);</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="o">&gt;</span> <span class="k">class</span> <span class="n">Attribute</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Attribute</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-manager-1a8f9a1c11cbf453abe704d9715b231995">find_or_create_attribute</span><span></span><span class="p">(</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">,</span>
+        <span class="n">T</span> <span class="n">default_value</span>
         <span class="p">);</span>
 
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1ab78ec5f69d4a452ef59fb824a7a0e95c"><span class="std std-ref">resize</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">size</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1af88978db245106a3d17d3afa38887a72"><span class="std std-ref">reserve</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">capacity</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a205c2ea07cb52eacf8d6e1846ffdbda8"><span class="std std-ref">assign_attribute_value</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">from_element</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">to_element</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a379b913c2075d50627ea85c0dd85b4cd"><span class="std std-ref">interpolate_attribute_value</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_AttributeLinearInterpolation.html#doxid-classgeode-1-1-attribute-linear-interpolation"><span class="std std-ref">AttributeLinearInterpolation</span></a><span></span><span class="o">&amp;</span> <span class="n">interpolation</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">to_element</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a379b913c2075d50627ea85c0dd85b4cd"><span class="std std-ref">interpolate_attribute_value</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_AttributeLinearInterpolation.html#doxid-structgeode-1-1-attribute-linear-interpolation"><span class="std std-ref">AttributeLinearInterpolation</span></a><span></span><span class="o">&amp;</span> <span class="n">interpolation</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">to_element</span><span class="p">);</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a8d53d29e3f40fe7802cf4d110e8637d5"><span class="std std-ref">attribute_names</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a0c6ae388a4f462673e075f348455fafd"><span class="std std-ref">attribute_exists</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1aa367a80342330917e6343ca13fe6b5cd"><span class="std std-ref">delete_attribute</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">);</span>
@@ -118,10 +125,11 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a598ab1d9b4f79c1838217923f0f33791"><span id="index-3"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="o">&gt;</span> <span class="k">class</span> <span class="n">Attribute</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a11138e8873c9452f32070a5605c73b61"><span id="index-3"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span> <span class="k">typename</span> <span class="o">&gt;</span> <span class="k">class</span> <span class="n">Attribute</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Attribute</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <span class="n">find_or_create_attribute</span><span class="p">(</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span>
+    <span class="n">T</span> <span class="n">default_value</span><span class="p">,</span>
+    <a class="reference internal" href="struct_geode_AttributeProperties.html#doxid-structgeode-1-1-attribute-properties"><span class="std std-ref">AttributeProperties</span></a><span></span> <span class="n">properties</span>
     <span class="p">)</span></pre>
 <p>Recover or create the attribute from the manager and the attribute name. If the recovered Attribute is not a of the same type than the attribute, it replaces it by the Attribute corresponding to the attribute.</p>
 <p class="rubric">Parameters:</p>
@@ -134,16 +142,19 @@
 <tr class="row-odd"><td><p>name</p></td>
 <td><p>The associated attribute name to look for</p></td>
 </tr>
+<tr class="row-even"><td><p>default_value</p></td>
+<td><p>The default value to use when new attribute element are created</p></td>
+</tr>
+<tr class="row-odd"><td><p>properties</p></td>
+<td><p>The <a class="reference internal" href="struct_geode_AttributeProperties.html#doxid-structgeode-1-1-attribute-properties"><span class="std std-ref">AttributeProperties</span></a> to set the attribute flags for future modifications</p></td>
+</tr>
 <tr class="row-even"><td><p>Attribute</p></td>
 <td><p>The attribute type to look for, such as <a class="reference internal" href="class_geode_ConstantAttribute.html#doxid-classgeode-1-1-constant-attribute"><span class="std std-ref">ConstantAttribute</span></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>T</p></td>
 <td><p>The type of the Attribute element</p></td>
 </tr>
-<tr class="row-even"><td><p>Args</p></td>
-<td><p>The optional arguments to construct the Attribute</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="class_geode_OpenGeodeException.html#doxid-classgeode-1-1-open-geode-exception"><span class="std std-ref">OpenGeodeException</span></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="class_geode_OpenGeodeException.html#doxid-classgeode-1-1-open-geode-exception"><span class="std std-ref">OpenGeodeException</span></a></p></td>
 <td><p>if the Attribute replacement failed</p></td>
 </tr>
 </tbody>
@@ -177,7 +188,7 @@
 </tbody>
 </table>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a205c2ea07cb52eacf8d6e1846ffdbda8"><span id="index-6"></span><span></span><span class="kt">void</span> <span class="n">assign_attribute_value</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">from_element</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">to_element</span><span class="p">)</span></pre>
-<p>Assign attribute value from other value in the same attribute</p>
+<p>Assign attribute value from other value in the same attribute Only affect Attributes created with its <a class="reference internal" href="struct_geode_AttributeProperties.html#doxid-structgeode-1-1-attribute-properties"><span class="std std-ref">AttributeProperties</span></a> assignable flag set to true</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -193,8 +204,8 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a379b913c2075d50627ea85c0dd85b4cd"><span id="index-7"></span><span></span><span class="kt">void</span> <span class="n">interpolate_attribute_value</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_AttributeLinearInterpolation.html#doxid-classgeode-1-1-attribute-linear-interpolation"><span class="std std-ref">AttributeLinearInterpolation</span></a><span></span><span class="o">&amp;</span> <span class="n">interpolation</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">to_element</span><span class="p">)</span></pre>
-<p>Interpolate attribute value from other values in the same attribute</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a379b913c2075d50627ea85c0dd85b4cd"><span id="index-7"></span><span></span><span class="kt">void</span> <span class="n">interpolate_attribute_value</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_AttributeLinearInterpolation.html#doxid-structgeode-1-1-attribute-linear-interpolation"><span class="std std-ref">AttributeLinearInterpolation</span></a><span></span><span class="o">&amp;</span> <span class="n">interpolation</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">to_element</span><span class="p">)</span></pre>
+<p>Interpolate attribute value from other values in the same attribute Only affect Attributes created with its <a class="reference internal" href="struct_geode_AttributeProperties.html#doxid-structgeode-1-1-attribute-properties"><span class="std std-ref">AttributeProperties</span></a> interpolable flag set to true</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
