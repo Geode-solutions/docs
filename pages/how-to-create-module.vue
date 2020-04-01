@@ -93,6 +93,9 @@
             <code>PUBLIC_HEADERS</code> the list of header files
           </li>
           <li>
+            <code>SOURCES</code> the list of source files
+          </li>
+          <li>
             <code>PUBLIC_DEPENDENCIES</code> the list of CMake target dependencies
           </li>
         </ul>
@@ -100,9 +103,24 @@
     </ol>
   
     <p :class="paragraph">
-      If you want to compile the tests and enabled the <code>MYMODULE_WITH_TESTS</code> option, 
-      also open tests/CMakeLists.txt and replace 
-       <code>MyModule</code> by the name of your module.
+      If you want to compile the tests and enabled the <code>MYMODULE_WITH_TESTS</code> option. 
+      You can add tests for each library, here an example with mylib: 
+      <ol>
+        <li>
+          open tests/CMakeLists.txt and ensure there is the call <code>add_subdirectory(mylib)</code> 
+        </li>
+        <li>
+          open tests/mylib/CMakeLists.txt and use one call <code>add_geode_test</code> by test. Here are the parameters:
+          <ul>
+          <li>
+            <code>SOURCE</code> the test file (path relative to tests/mylib)
+          </li>
+          <li>
+            <code>DEPENDENCIES</code> the list of CMake target dependencies
+          </li>
+        </ul>
+        </li>
+      </ol>
     </p>
     
     <p :class="paragraph">
