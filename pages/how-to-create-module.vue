@@ -87,7 +87,7 @@
             <code>NAME</code> the name of the library
           </li>
           <li>
-            <code>FOLDER</code> the folder hierarchy where your files are located
+            <code>FOLDER</code> the folder hierarchy where your files are located from MyModule/include and MyModule/src
           </li>
           <li>
             <code>PUBLIC_HEADERS</code> the list of header files
@@ -96,7 +96,10 @@
             <code>SOURCES</code> the list of source files
           </li>
           <li>
-            <code>PUBLIC_DEPENDENCIES</code> the list of CMake target dependencies
+            <code>PUBLIC_DEPENDENCIES</code> the list of CMake target public dependencies, they will be inherited when depending on your library
+          </li>
+          <li>
+            <code>PRIVATE_DEPENDENCIES</code> the list of CMake target private dependencies
           </li>
         </ul>
       </li>
