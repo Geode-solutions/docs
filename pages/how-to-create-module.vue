@@ -81,7 +81,21 @@
       </li>
       <li>
         Define the libraries in your module by adding one call to
-        <code>add_geode_library</code> per library.
+        <code>add_geode_library</code> per library. Here are the basic parameters (for advanced parameters, see examples in OpenGeode code):
+        <ul>
+          <li>
+            <code>NAME</code> the name of the library
+          </li>
+          <li>
+            <code>FOLDER</code> the folder hierarchy where your files are located
+          </li>
+          <li>
+            <code>PUBLIC_HEADERS</code> the list of header files
+          </li>
+          <li>
+            <code>PUBLIC_DEPENDENCIES</code> the list of CMake target dependencies
+          </li>
+        </ul>
       </li>
     </ol>
   
