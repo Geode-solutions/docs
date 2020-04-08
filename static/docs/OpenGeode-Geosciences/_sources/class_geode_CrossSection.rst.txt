@@ -7,10 +7,12 @@ class geode::CrossSection
 .. toctree::
 	:hidden:
 
+	class_geode_CrossSection_FaultBlockItemRange.rst
 	class_geode_CrossSection_FaultItemRange.rst
 	class_geode_CrossSection_HorizonItemRange.rst
+	class_geode_CrossSection_StratigraphicUnitItemRange.rst
 
-A Cross Section is a Section composed of :ref:`Faults <doxid-classgeode_1_1_faults>` and :ref:`Horizons <doxid-classgeode_1_1_horizons>`.
+A Cross Section is a Section composed of :ref:`Faults <doxid-classgeode_1_1_faults>` and :ref:`Horizons <doxid-classgeode_1_1_horizons>` (as Lines) and :ref:`FaultBlocks <doxid-classgeode_1_1_fault_blocks>` and :ref:`StratigraphicUnits <doxid-classgeode_1_1_stratigraphic_units>` (as Surfaces).
 
 
 .. ref-code-block:: cpp
@@ -20,13 +22,15 @@ A Cross Section is a Section composed of :ref:`Faults <doxid-classgeode_1_1_faul
 	
 	class CrossSection:
 	    public Section,
-	    public AddComponents< 2, Faults, Horizons >
+	    public AddComponents< 2, Faults, Horizons, FaultBlocks, StratigraphicUnits >
 	{
 	public:
 		// classes
 	
+		class :ref:`FaultBlockItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_block_item_range>`;
 		class :ref:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range>`;
 		class :ref:`HorizonItemRange<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range>`;
+		class :ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range>`;
 
 		// methods
 	
@@ -34,4 +38,6 @@ A Cross Section is a Section composed of :ref:`Faults <doxid-classgeode_1_1_faul
 		absl::string_view :target:`native_extension<doxid-classgeode_1_1_cross_section_1aba46451bcac9f3b8a7dcdcbcddffb9ac>`() const;
 		:ref:`HorizonItemRange<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1a9f70d9ec468e65ed5c629039fcbde27f>`(const Horizon2D& horizon) const;
 		:ref:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1a5986646330bbc153aa42dfc07fa8349e>`(const Fault2D& fault) const;
+		:ref:`FaultBlockItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_block_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1ae180b90bfabfac6d48a840d28bdbe863>`(const FaultBlock2D& fault_block) const;
+		:ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1a3f84e1ee98cdc8ab3433ca961525219b>`(const StratigraphicUnit2D& stratigraphic_unit) const;
 	};

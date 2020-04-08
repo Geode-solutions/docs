@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::StructuralModelInput" href="class_geode_StructuralModelInput.html" />
-    <link rel="prev" title="class geode::StructuralModel::HorizonItemRange" href="class_geode_StructuralModel_HorizonItemRange.html" />
+    <link rel="prev" title="class geode::StructuralModel::StratigraphicUnitItemRange" href="class_geode_StructuralModel_StratigraphicUnitItemRange.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -42,7 +42,7 @@
 
 <span class="k">class</span> <span class="nl">StructuralModelBuilder</span><span class="p">:</span>
     <span class="k">public</span> <span class="n">BRepBuilder</span><span class="p">,</span>
-    <span class="k">public</span> <span class="n">AddComponentsBuilders</span><span class="o">&lt;</span> <span class="mi">3</span><span class="p">,</span> <span class="n">Faults</span><span class="p">,</span> <span class="n">Horizons</span> <span class="o">&gt;</span>
+    <span class="k">public</span> <span class="n">AddComponentsBuilders</span><span class="o">&lt;</span> <span class="mi">3</span><span class="p">,</span> <span class="n">Faults</span><span class="p">,</span> <span class="n">Horizons</span><span class="p">,</span> <span class="n">FaultBlocks</span><span class="p">,</span> <span class="n">StratigraphicUnits</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
@@ -69,6 +69,22 @@
         <span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1aae160d2bc57bcbee1fbdd46cf30945b4">remove_horizon</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon3D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1aa5569e237610918d10bdc622f44098da">add_fault_block</span><span></span><span class="p">();</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1a85a5a3fc5b8334904ad25dafe19ddfcc">add_block_in_fault_block</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">FaultBlock3D</span><span class="o">&amp;</span> <span class="n">fault_block</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1adb970268a91a7a8b330eaf9e5d2430fc">remove_fault_block</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">FaultBlock3D</span><span class="o">&amp;</span> <span class="n">fault_block</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1adecbb31da72ad01624123ff31baadd62">add_stratigraphic_unit</span><span></span><span class="p">();</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1a55d8ebbe2178c5bdb886a478be3a6662">add_block_in_stratigraphic_unit</span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">StratigraphicUnit3D</span><span class="o">&amp;</span> <span class="n">stratigraphic_unit</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-builder-1a2dbd86d61d696d9dd901a7c9af084687">remove_stratigraphic_unit</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">StratigraphicUnit3D</span><span class="o">&amp;</span> <span class="n">stratigraphic_unit</span><span class="p">);</span>
 <span class="p">};</span></pre>
 </div>
 

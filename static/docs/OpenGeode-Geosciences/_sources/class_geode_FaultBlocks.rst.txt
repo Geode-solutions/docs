@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::FaultBlocks
+.. _doxid-classgeode_1_1_fault_blocks:
+
+template class geode::FaultBlocks
+=================================
+
+.. toctree::
+	:hidden:
+
+	class_geode_FaultBlocks_FaultBlockRange.rst
+	class_geode_FaultBlocks_FaultBlockRangeBase.rst
+	class_geode_FaultBlocks_ModifiableFaultBlockRange.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <fault_blocks.h>
+	
+	template <index_t dimension>
+	class FaultBlocks
+	{
+	public:
+		// typedefs
+	
+		typedef :ref:`FaultBlocksBuilder<doxid-classgeode_1_1_fault_blocks_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_fault_blocks_1a219fa0e42a7db583e0315bcb24175d98>`;
+
+		// classes
+	
+		class :ref:`FaultBlockRange<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range>`;
+		class :ref:`FaultBlockRangeBase<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range_base>`;
+		class :ref:`ModifiableFaultBlockRange<doxid-classgeode_1_1_fault_blocks_1_1_modifiable_fault_block_range>`;
+
+		// fields
+	
+		friend :target:`Builder<doxid-classgeode_1_1_fault_blocks_1ae3ddaad96649da0900c4533fc01995d5>`;
+
+		// methods
+	
+		index_t :target:`nb_fault_blocks<doxid-classgeode_1_1_fault_blocks_1a66135fac13ff3c74f0c00f1796a3a0d0>`() const;
+		const :ref:`FaultBlock<doxid-classgeode_1_1_fault_block>`<dimension>& :target:`fault_block<doxid-classgeode_1_1_fault_blocks_1a3d1f6ae43de8371cb6d75de4e0a78f6a>`(const uuid& id) const;
+		:ref:`FaultBlockRange<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range>` :target:`fault_blocks<doxid-classgeode_1_1_fault_blocks_1a807c4bd8956fe6398ed2557b4013324a>`() const;
+		void :target:`save_fault_blocks<doxid-classgeode_1_1_fault_blocks_1a4feff2d18c7dbdaf09614938fdaf355e>`(absl::string_view directory) const;
+	};

@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::StructuralModel::StratigraphicUnitItemRange
+.. _doxid-classgeode_1_1_structural_model_1_1_stratigraphic_unit_item_range:
+
+class geode::StructuralModel::StratigraphicUnitItemRange
+========================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <structural_model.h>
+	
+	class StratigraphicUnitItemRange:
+	    public ItemRangeIterator,
+	    public BeginEnd< StratigraphicUnitItemRange >
+	{
+	public:
+		// construction
+	
+		:target:`StratigraphicUnitItemRange<doxid-classgeode_1_1_structural_model_1_1_stratigraphic_unit_item_range_1a8a95daace8964d485ea780f0ca801ce8>`(
+			const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
+			const StratigraphicUnit3D& stratigraphic_unit
+			);
+
+		// methods
+	
+		const Block3D& :target:`operator *<doxid-classgeode_1_1_structural_model_1_1_stratigraphic_unit_item_range_1a66a5c2f00d4a7b2a7b78a72239ad51e4>` () const;
+	};

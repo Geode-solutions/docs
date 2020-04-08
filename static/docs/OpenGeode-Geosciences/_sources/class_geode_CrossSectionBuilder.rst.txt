@@ -17,7 +17,7 @@ Class managing modifications of a :ref:`CrossSection <doxid-classgeode_1_1_cross
 	
 	class CrossSectionBuilder:
 	    public SectionBuilder,
-	    public AddComponentsBuilders< 2, Faults, Horizons >
+	    public AddComponentsBuilders< 2, Faults, Horizons, FaultBlocks, StratigraphicUnits >
 	{
 	public:
 		// construction
@@ -44,4 +44,20 @@ Class managing modifications of a :ref:`CrossSection <doxid-classgeode_1_1_cross
 			);
 	
 		void :target:`remove_horizon<doxid-classgeode_1_1_cross_section_builder_1aa79085582792766aad52060795252df6>`(const Horizon2D& horizon);
+		const uuid& :target:`add_fault_block<doxid-classgeode_1_1_cross_section_builder_1a18d8eef532ee97bfbb8fe88e80623934>`();
+	
+		void :target:`add_surface_in_fault_block<doxid-classgeode_1_1_cross_section_builder_1a4b5ca9c2479fcec5af3bcf5c8b0cf34a>`(
+			const Surface2D& surface,
+			const FaultBlock2D& fault_block
+			);
+	
+		void :target:`remove_fault_block<doxid-classgeode_1_1_cross_section_builder_1a8bac1d0709803b83baa5d6dc82c9124d>`(const FaultBlock2D& fault_block);
+		const uuid& :target:`add_stratigraphic_unit<doxid-classgeode_1_1_cross_section_builder_1a96c39381fc6087229a95906c93e08576>`();
+	
+		void :target:`add_surface_in_stratigraphic_unit<doxid-classgeode_1_1_cross_section_builder_1a77df3c70349c4ee7cb55e7e72ad16860>`(
+			const Surface2D& surface,
+			const StratigraphicUnit2D& stratigraphic_unit
+			);
+	
+		void :target:`remove_stratigraphic_unit<doxid-classgeode_1_1_cross_section_builder_1a5bd7ab37d57205c89107dd81bb35b8fd>`(const StratigraphicUnit2D& stratigraphic_unit);
 	};

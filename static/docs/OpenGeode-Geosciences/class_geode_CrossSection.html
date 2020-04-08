@@ -16,7 +16,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::CrossSection::FaultItemRange" href="class_geode_CrossSection_FaultItemRange.html" />
+    <link rel="next" title="class geode::CrossSection::FaultBlockItemRange" href="class_geode_CrossSection_FaultBlockItemRange.html" />
     <link rel="prev" title="template class geode::detail::GeologicalComponentsStorage" href="class_geode_detail_GeologicalComponentsStorage.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -37,18 +37,20 @@
 <span id="doxid-classgeode-1-1-cross-section"></span><span id="index-0"></span><h1>class geode::CrossSection</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>A Cross Section is a Section composed of <a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults"><span class="std std-ref">Faults</span></a> and <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons"><span class="std std-ref">Horizons</span></a>.</p>
+<p>A Cross Section is a Section composed of <a class="reference internal" href="class_geode_Faults.html#doxid-classgeode-1-1-faults"><span class="std std-ref">Faults</span></a> and <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons"><span class="std std-ref">Horizons</span></a> (as Lines) and <a class="reference internal" href="class_geode_FaultBlocks.html#doxid-classgeode-1-1-fault-blocks"><span class="std std-ref">FaultBlocks</span></a> and <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units"><span class="std std-ref">StratigraphicUnits</span></a> (as Surfaces).</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;cross_section.h&gt;</span><span class="cp"></span>
 
 <span class="k">class</span> <span class="nl">CrossSection</span><span class="p">:</span>
     <span class="k">public</span> <span class="n">Section</span><span class="p">,</span>
-    <span class="k">public</span> <span class="n">AddComponents</span><span class="o">&lt;</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Faults</span><span class="p">,</span> <span class="n">Horizons</span> <span class="o">&gt;</span>
+    <span class="k">public</span> <span class="n">AddComponents</span><span class="o">&lt;</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Faults</span><span class="p">,</span> <span class="n">Horizons</span><span class="p">,</span> <span class="n">FaultBlocks</span><span class="p">,</span> <span class="n">StratigraphicUnits</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// classes</span>
 
+    <span class="k">class</span> <a class="reference internal" href="class_geode_CrossSection_FaultBlockItemRange.html#doxid-classgeode-1-1-cross-section-1-1-fault-block-item-range"><span class="std std-ref">FaultBlockItemRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_CrossSection_FaultItemRange.html#doxid-classgeode-1-1-cross-section-1-1-fault-item-range"><span class="std std-ref">FaultItemRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_CrossSection_HorizonItemRange.html#doxid-classgeode-1-1-cross-section-1-1-horizon-item-range"><span class="std std-ref">HorizonItemRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_CrossSection_StratigraphicUnitItemRange.html#doxid-classgeode-1-1-cross-section-1-1-stratigraphic-unit-item-range"><span class="std std-ref">StratigraphicUnitItemRange</span></a><span></span><span class="p">;</span>
 
     <span class="c1">// methods</span>
 
@@ -56,6 +58,8 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1aba46451bcac9f3b8a7dcdcbcddffb9ac">native_extension</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_CrossSection_HorizonItemRange.html#doxid-classgeode-1-1-cross-section-1-1-horizon-item-range"><span class="std std-ref">HorizonItemRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1a9f70d9ec468e65ed5c629039fcbde27f">items</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon2D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_CrossSection_FaultItemRange.html#doxid-classgeode-1-1-cross-section-1-1-fault-item-range"><span class="std std-ref">FaultItemRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1a5986646330bbc153aa42dfc07fa8349e">items</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Fault2D</span><span class="o">&amp;</span> <span class="n">fault</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_CrossSection_FaultBlockItemRange.html#doxid-classgeode-1-1-cross-section-1-1-fault-block-item-range"><span class="std std-ref">FaultBlockItemRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1ae180b90bfabfac6d48a840d28bdbe863">items</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">FaultBlock2D</span><span class="o">&amp;</span> <span class="n">fault_block</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_CrossSection_StratigraphicUnitItemRange.html#doxid-classgeode-1-1-cross-section-1-1-stratigraphic-unit-item-range"><span class="std std-ref">StratigraphicUnitItemRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1a3f84e1ee98cdc8ab3433ca961525219b">items</span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">StratigraphicUnit2D</span><span class="o">&amp;</span> <span class="n">stratigraphic_unit</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 

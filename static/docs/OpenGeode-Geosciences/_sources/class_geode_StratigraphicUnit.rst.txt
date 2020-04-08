@@ -1,0 +1,27 @@
+.. index:: pair: class; geode::StratigraphicUnit
+.. _doxid-classgeode_1_1_stratigraphic_unit:
+
+template class geode::StratigraphicUnit
+=======================================
+
+.. toctree::
+	:hidden:
+
+Geological component describing a :ref:`StratigraphicUnit <doxid-classgeode_1_1_stratigraphic_unit>`.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <stratigraphic_unit.h>
+	
+	template <index_t dimension>
+	class StratigraphicUnit: public Component< dimension >
+	{
+	public:
+		// methods
+	
+		ComponentType :target:`component_type<doxid-classgeode_1_1_stratigraphic_unit_1a98c2d1089f2c979318a75b8c77d06dfb>`() const;
+		ComponentID :target:`component_id<doxid-classgeode_1_1_stratigraphic_unit_1aa99dea5d603764417e059b2ede9a3aae>`() const;
+		static ComponentType :target:`component_type_static<doxid-classgeode_1_1_stratigraphic_unit_1a698f30c2346b2413a97d64554f4badbe>`();
+	};

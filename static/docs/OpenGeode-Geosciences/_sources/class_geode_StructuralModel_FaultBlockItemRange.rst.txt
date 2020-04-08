@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::StructuralModel::FaultBlockItemRange
+.. _doxid-classgeode_1_1_structural_model_1_1_fault_block_item_range:
+
+class geode::StructuralModel::FaultBlockItemRange
+=================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <structural_model.h>
+	
+	class FaultBlockItemRange:
+	    public ItemRangeIterator,
+	    public BeginEnd< FaultBlockItemRange >
+	{
+	public:
+		// construction
+	
+		:target:`FaultBlockItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_block_item_range_1a2ae365549cf98522511e3c30c78dd01b>`(
+			const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
+			const FaultBlock3D& fault_block
+			);
+
+		// methods
+	
+		const Block3D& :target:`operator *<doxid-classgeode_1_1_structural_model_1_1_fault_block_item_range_1a32920c5007b324ece83291875b5997d6>` () const;
+	};

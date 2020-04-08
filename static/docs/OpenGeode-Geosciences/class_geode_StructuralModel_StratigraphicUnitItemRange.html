@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>class geode::StructuralModel::FaultItemRange &#8212; Python  documentation</title>
+    <title>class geode::StructuralModel::StratigraphicUnitItemRange &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -16,8 +16,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::StructuralModel::HorizonItemRange" href="class_geode_StructuralModel_HorizonItemRange.html" />
-    <link rel="prev" title="class geode::StructuralModel::FaultBlockItemRange" href="class_geode_StructuralModel_FaultBlockItemRange.html" />
+    <link rel="next" title="class geode::StructuralModelBuilder" href="class_geode_StructuralModelBuilder.html" />
+    <link rel="prev" title="class geode::StructuralModel::HorizonItemRange" href="class_geode_StructuralModel_HorizonItemRange.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,27 +33,27 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-structuralmodel-faultitemrange">
-<span id="doxid-classgeode-1-1-structural-model-1-1-fault-item-range"></span><span id="index-0"></span><h1>class geode::StructuralModel::FaultItemRange</h1>
+  <div class="section" id="class-geode-structuralmodel-stratigraphicunititemrange">
+<span id="doxid-classgeode-1-1-structural-model-1-1-stratigraphic-unit-item-range"></span><span id="index-0"></span><h1>class geode::StructuralModel::StratigraphicUnitItemRange</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;structural_model.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">FaultItemRange</span><span class="p">:</span>
+<span class="k">class</span> <span class="nl">StratigraphicUnitItemRange</span><span class="p">:</span>
     <span class="k">public</span> <span class="n">ItemRangeIterator</span><span class="p">,</span>
-    <span class="k">public</span> <span class="n">BeginEnd</span><span class="o">&lt;</span> <span class="n">FaultItemRange</span> <span class="o">&gt;</span>
+    <span class="k">public</span> <span class="n">BeginEnd</span><span class="o">&lt;</span> <span class="n">StratigraphicUnitItemRange</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-fault-item-range-1a7a9ac9acf1d3d844d94a983417ea0dcc">FaultItemRange</span><span></span><span class="p">(</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-stratigraphic-unit-item-range-1a8a95daace8964d485ea780f0ca801ce8">StratigraphicUnitItemRange</span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span>
-        <span class="k">const</span> <span class="n">Fault3D</span><span class="o">&amp;</span> <span class="n">fault</span>
+        <span class="k">const</span> <span class="n">StratigraphicUnit3D</span><span class="o">&amp;</span> <span class="n">stratigraphic_unit</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-fault-item-range-1adbc2e12bf87dd4ad302be2b867e541ca">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-stratigraphic-unit-item-range-1a66a5c2f00d4a7b2a7b78a72239ad51e4">operator *</span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -71,7 +71,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_StructuralModel_FaultItemRange.rst.txt"
+      <a href="_sources/class_geode_StructuralModel_StratigraphicUnitItemRange.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::FaultBlocks::FaultBlockRangeBase
+.. _doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range_base:
+
+class geode::FaultBlocks::FaultBlockRangeBase
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <fault_blocks.h>
+	
+	class FaultBlockRangeBase
+	{
+	public:
+		// methods
+	
+		bool :target:`operator !=<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range_base_1af9d3d9c6657d29749477e06871b132a0>` (const FaultBlockRangeBase&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range_base_1aa4ce5be1ec05f997d82329c4d275debb>` ();
+	};
+
+	// direct descendants
+
+	class :ref:`FaultBlockRange<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range>`;

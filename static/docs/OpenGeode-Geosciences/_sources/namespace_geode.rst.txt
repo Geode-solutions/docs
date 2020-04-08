@@ -13,6 +13,9 @@ namespace geode
 	class_geode_CrossSectionInput.rst
 	class_geode_CrossSectionOutput.rst
 	class_geode_Fault.rst
+	class_geode_FaultBlock.rst
+	class_geode_FaultBlocks.rst
+	class_geode_FaultBlocksBuilder.rst
 	class_geode_Faults.rst
 	class_geode_FaultsBuilder.rst
 	class_geode_Horizon.rst
@@ -22,6 +25,9 @@ namespace geode
 	class_geode_OpenGeodeCrossSectionOutput.rst
 	class_geode_OpenGeodeStructuralModelInput.rst
 	class_geode_OpenGeodeStructuralModelOutput.rst
+	class_geode_StratigraphicUnit.rst
+	class_geode_StratigraphicUnits.rst
+	class_geode_StratigraphicUnitsBuilder.rst
 	class_geode_StructuralModel.rst
 	class_geode_StructuralModelBuilder.rst
 	class_geode_StructuralModelInput.rst
@@ -61,6 +67,15 @@ Overview
 	class :ref:`Fault<doxid-classgeode_1_1_fault>`;
 
 	template <index_t dimension>
+	class :ref:`FaultBlock<doxid-classgeode_1_1_fault_block>`;
+
+	template <index_t dimension>
+	class :ref:`FaultBlocks<doxid-classgeode_1_1_fault_blocks>`;
+
+	template <index_t dimension>
+	class :ref:`FaultBlocksBuilder<doxid-classgeode_1_1_fault_blocks_builder>`;
+
+	template <index_t dimension>
 	class :ref:`Faults<doxid-classgeode_1_1_faults>`;
 
 	template <index_t dimension>
@@ -79,6 +94,16 @@ Overview
 	class :ref:`OpenGeodeCrossSectionOutput<doxid-classgeode_1_1_open_geode_cross_section_output>`;
 	class :ref:`OpenGeodeStructuralModelInput<doxid-classgeode_1_1_open_geode_structural_model_input>`;
 	class :ref:`OpenGeodeStructuralModelOutput<doxid-classgeode_1_1_open_geode_structural_model_output>`;
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`;
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`;
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnitsBuilder<doxid-classgeode_1_1_stratigraphic_units_builder>`;
+
 	class :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`;
 	class :ref:`StructuralModelBuilder<doxid-classgeode_1_1_structural_model_builder>`;
 	class :ref:`StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`;
@@ -86,18 +111,28 @@ Overview
 
 	// global functions
 
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa1b34122cda2b0187ae32fc8009ca448>`(:ref:`FaultBlock<doxid-classgeode_1_1_fault_block>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a5684061c0d55912a4bcf9649dbb224db>`(:ref:`FaultBlocks<doxid-classgeode_1_1_fault_blocks>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a953eca29c715691e332b39cef2ba529c>`(:ref:`Fault<doxid-classgeode_1_1_fault>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0f23c356286ee32ad1e921970677dad4>`(:ref:`Faults<doxid-classgeode_1_1_faults>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ad3992ab412f660265280d8e3d236c5ca>`(:ref:`Horizon<doxid-classgeode_1_1_horizon>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa14c0fbda1c21d46269f8f48083c930d>`(:ref:`Horizons<doxid-classgeode_1_1_horizons>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aea57c093c88c72fca305a68ab581c977>`(:ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a034776a1edf03eb2a0e8f718243b1202>`(:ref:`StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`);
 	void opengeode_geosciences_geosciences_api :ref:`register_geosciences_serialize_pcontext<doxid-namespacegeode_1ae3663b1c1416d9b40e81a48eaa4b9441>`(PContext& context);
 	void opengeode_geosciences_geosciences_api :ref:`register_geosciences_deserialize_pcontext<doxid-namespacegeode_1a1ac997fa60ed4bd714610bcaa1403571>`(PContext& context);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9c94113eab86ec12cd09b83a2a9faf4b>`(:ref:`FaultsBuilder<doxid-classgeode_1_1_faults_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa8a835e22495dda587443407042be92b>`(:ref:`Fault<doxid-classgeode_1_1_fault>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55699ccfbe48a2be2bb3cf8a1eca317d>`(:ref:`FaultBlocksBuilder<doxid-classgeode_1_1_fault_blocks_builder>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aff6c3523cb1f3285733580eb8824a133>`(:ref:`FaultBlock<doxid-classgeode_1_1_fault_block>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a278a2141a83f591385bb7f65dc37650a>`(:ref:`FaultBlocks<doxid-classgeode_1_1_fault_blocks>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7de8aff46871b888f294784bed9bdca1>`(:ref:`Faults<doxid-classgeode_1_1_faults>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab8a66df746ac34753e25a6bf637e270b>`(:ref:`HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1af19826a31c76aaa33efad0be302110f6>`(:ref:`Horizon<doxid-classgeode_1_1_horizon>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1020afb295a641bdc1a840c6cb850ba7>`(:ref:`Horizons<doxid-classgeode_1_1_horizons>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af10b9fea3efb1a501b0a13ea9cf8240f>`(:ref:`StratigraphicUnitsBuilder<doxid-classgeode_1_1_stratigraphic_units_builder>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a25ef31899ff6065c94d0d77f4c167215>`(:ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a068944b4aa3095a51776291dbc52dde4>`(:ref:`StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`);
 
 	void opengeode_geosciences_geosciences_api :ref:`load_cross_section<doxid-namespacegeode_1ae770ae8cdf08e12efeb84eb4658137e8>`(
 		:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,

@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::CrossSection::StratigraphicUnitItemRange
+.. _doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range:
+
+class geode::CrossSection::StratigraphicUnitItemRange
+=====================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cross_section.h>
+	
+	class StratigraphicUnitItemRange:
+	    public ItemRangeIterator,
+	    public BeginEnd< StratigraphicUnitItemRange >
+	{
+	public:
+		// construction
+	
+		:target:`StratigraphicUnitItemRange<doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range_1a196a29f4b0829f5ba65943318080c754>`(
+			const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
+			const StratigraphicUnit2D& stratigraphic_unit
+			);
+
+		// methods
+	
+		const Surface2D& :target:`operator *<doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range_1a65fbcc8d0d588c14e2c6957561d48bed>` () const;
+	};

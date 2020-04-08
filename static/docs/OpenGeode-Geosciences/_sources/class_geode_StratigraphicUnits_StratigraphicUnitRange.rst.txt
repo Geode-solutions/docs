@@ -1,0 +1,43 @@
+.. index:: pair: class; geode::StratigraphicUnits::StratigraphicUnitRange
+.. _doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range:
+
+class geode::StratigraphicUnits::StratigraphicUnitRange
+=======================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <stratigraphic_units.h>
+	
+	class StratigraphicUnitRange: public :ref:`geode::StratigraphicUnits::StratigraphicUnitRangeBase<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range_base>`
+	{
+	public:
+		// construction
+	
+		:target:`StratigraphicUnitRange<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range_1a99571ff2598342c268cf7e7bf9816e8e>`(const :ref:`StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`& stratigraphic_units);
+
+		// methods
+	
+		const StratigraphicUnitRange& :target:`begin<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range_1a6568dfa282513b1ae11a8be0e54b7915>`() const;
+		const StratigraphicUnitRange& :target:`end<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range_1a8cd040648fb793581105fe61ff9343f3>`() const;
+		const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& :target:`operator *<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range_1a3f26250efd51202dc422a9934871f3af>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range_base_1a7162709012ccefb2e2fe6b911b4920cf>` (const :ref:`StratigraphicUnitRangeBase<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range_base>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range_base_1a826d82578cbb815cc81257c3608d1481>` ();
+
