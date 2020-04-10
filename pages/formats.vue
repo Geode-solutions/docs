@@ -53,7 +53,7 @@ export default {
         extension: '.ml',
         cpp: "<a href='/opengeode-geosciences?page=class_geode_StructuralModel.html'><code>StructuralModel</code></a>",
         in: true,
-        out: false
+        out: true
       },
       {
         extension: '.ts',
