@@ -19,5 +19,8 @@ struct geode::detail::CRSData
 	{
 		// fields
 	
+		std::string :target:`name<doxid-structgeode_1_1detail_1_1_c_r_s_data_1a943d500ab19084ef42c5f157978009ee>`;
+		std::array<std::string, 3> :target:`axis_names<doxid-structgeode_1_1detail_1_1_c_r_s_data_1a3367846df708304187bfc583620387f8>`;
+		std::array<std::string, 3> :target:`axis_units<doxid-structgeode_1_1detail_1_1_c_r_s_data_1a9ba7c6ff26fe946cdfd5cfeda9a08ccf>`;
 		int :target:`z_sign<doxid-structgeode_1_1detail_1_1_c_r_s_data_1a6eac0e1398bf1ddf515a7352c9217587>`;
 	};
