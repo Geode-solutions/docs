@@ -37,7 +37,9 @@
 <span id="doxid-classgeode-1-1-factory"></span><span id="index-0"></span><h1>template class geode::Factory</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Generic factory Example of use with A the base class and B, C derived classes // Instantiation using MyFactory = Factory&lt; std::string, A, int, double &gt;; // Registration MyFactory::register_creator&lt; B &gt;( “B” ); // B constructor takes an int and a double MyFactory::register_creator&lt; C &gt;( “C” ); // C constructor takes an int and a double // Creation std::unique_ptr&lt; A &gt; c = MyFactory::create( “C”, 2, 8.6 );</p>
+<p>Generic factory Example of use with A the base class and B, C derived classes // Instantiation using MyFactory = Factory&lt; std::string, A, int, double &gt;; // where: - std::string is the Key type // - int and double are the constructor arguments required by // the derived classes B and C</p>
+<p>// Registration MyFactory::register_creator&lt; B &gt;( “key_value_for_B” ); MyFactory::register_creator&lt; C &gt;( “key_value_for_C” ); // B and C constructors take an int and a double</p>
+<p>// Creation auto c = MyFactory::create( “key_value_for_C”, 2, 8.6 ); // where c is a std::unique_ptr&lt; A &gt;</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;factory.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Key</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BaseClass</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="o">&gt;</span>
