@@ -700,6 +700,12 @@ Overview
 		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
 		);
 
+	Point3D opengeode_geometry_api :ref:`rotate<doxid-namespacegeode_1a7d29de54b64ca62f8e8b794ae0202f74>`(
+		const Point3D& point,
+		const Vector3D& axis,
+		double angle
+		);
+
 	:target:`ALIAS_3D<doxid-namespacegeode_1a9040936b048d9dc9c295e26f746624ab>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 
 	template <index_t dimension>
@@ -1452,6 +1458,42 @@ Return the projection of a point on a triangle
 		- segment
 
 		- the segment
+
+.. index:: pair: function; rotate
+.. _doxid-namespacegeode_1a7d29de54b64ca62f8e8b794ae0202f74:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Point3D opengeode_geometry_api rotate(
+		const Point3D& point,
+		const Vector3D& axis,
+		double angle
+		)
+
+Rotate a Point3D by an angle around an axis
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- point
+
+		- The point to rotate.
+
+	*
+		- axis
+
+		- Axis for the rotation (not null but not necessary normalized).
+
+	*
+		- angle
+
+		- Rotation angle expresses in radians.
 
 .. index:: pair: function; triangle_area
 .. _doxid-namespacegeode_1ac9bae29e562e6285b6377475738e08bc:
