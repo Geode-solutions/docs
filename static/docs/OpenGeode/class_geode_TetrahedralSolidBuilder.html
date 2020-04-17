@@ -50,6 +50,7 @@
     <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TetrahedralSolidBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-tetrahedral-solid-builder-1a503c644c2e201a97294ded9e4479b27d">create</span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-builder-1a56c1d3ffeebb11cdcb9eb4c4042a5c13"><span class="std std-ref">create_tetrahedron</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">);</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-builder-1af8d3d4f28a8ae1b8c1e158da3c87e403"><span class="std std-ref">create_tetrahedra</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-builder-1a30284c21702ac88d9ab956b5734dafb1"><span class="std std-ref">reserve_tetrahedra</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-tetrahedral-solid-builder-1a757a9718ecf5a28d0e85c00adc57235d">copy</span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">tetrahedral_solid</span><span class="p">,</span>
@@ -123,6 +124,20 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>the index of the first created tetrahedron</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-builder-1a30284c21702ac88d9ab956b5734dafb1"><span id="index-3"></span><span></span><span class="kt">void</span> <span class="n">reserve_tetrahedra</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">)</span></pre>
+<p>Reserve storage for new tetrahedra without creating them.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>nb</p></td>
+<td><p>Number of tetrahedra to reserve</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
