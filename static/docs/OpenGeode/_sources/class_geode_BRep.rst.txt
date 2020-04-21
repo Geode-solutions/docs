@@ -82,6 +82,52 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 		:ref:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range>` :target:`items<doxid-classgeode_1_1_b_rep_1ae946e08f5e16f2df2860e8bc13d5f7cf>`(const ModelBoundary3D& boundary) const;
 		bool :target:`is_closed<doxid-classgeode_1_1_b_rep_1a5c450ab242a3b8e6f9dda7474487dd15>`(const Line3D& line) const;
 		bool :target:`is_closed<doxid-classgeode_1_1_b_rep_1acabbcb4262dceeb2bba2558e96457a9d>`(const Surface3D& surface) const;
+	
+		bool :target:`is_boundary<doxid-classgeode_1_1_b_rep_1ac6d59f17c13324890766f053294cc105>`(
+			const Corner3D& corner,
+			const Line3D& line
+			) const;
+	
+		bool :target:`is_boundary<doxid-classgeode_1_1_b_rep_1aff0cc570083625b5cd31aa4f2d4e4167>`(
+			const Line3D& line,
+			const Surface3D& surface
+			) const;
+	
+		bool :target:`is_boundary<doxid-classgeode_1_1_b_rep_1aad379f53235ad3fda81f20be7b111121>`(
+			const Surface3D& surface,
+			const Block3D& block
+			) const;
+	
+		bool :target:`is_internal<doxid-classgeode_1_1_b_rep_1af0d3f7e88f6a49f195554b2ee590fc92>`(
+			const Corner3D& corner,
+			const Surface3D& surface
+			) const;
+	
+		bool :target:`is_internal<doxid-classgeode_1_1_b_rep_1a0cf6eec80fad09000e8e4376842cface>`(
+			const Line3D& line,
+			const Surface3D& surface
+			) const;
+	
+		bool :target:`is_internal<doxid-classgeode_1_1_b_rep_1a40eae599c235be3d21d80a16100e2300>`(
+			const Corner3D& corner,
+			const Block3D& block
+			) const;
+	
+		bool :target:`is_internal<doxid-classgeode_1_1_b_rep_1ae7cbeba69776091a3c21f8f31847722b>`(
+			const Line3D& line,
+			const Block3D& block
+			) const;
+	
+		bool :target:`is_internal<doxid-classgeode_1_1_b_rep_1a7fe8bb1b34286e90b87084cd13667680>`(
+			const Surface3D& surface,
+			const Block3D& block
+			) const;
+	
+		bool :target:`is_item<doxid-classgeode_1_1_b_rep_1a4292046b50f2b33c8afbebd9a65388e5>`(
+			const Surface3D& surface,
+			const ModelBoundary3D& boundary
+			) const;
+	
 		BoundingBox3D :ref:`bounding_box<doxid-classgeode_1_1_b_rep_1a01b6973cae1978a2b536d50aee93491e>`() const;
 		absl::string_view :target:`native_extension<doxid-classgeode_1_1_b_rep_1a8e2b04649e385d4e67a6f8f4601d05c0>`() const;
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_b_rep_1ac1c4d2a198be8e0ead8e15e579956ce6>`();
@@ -123,6 +169,9 @@ Inherited Members
 		:ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>` :ref:`items<doxid-classgeode_1_1_relationships_1a81a6d86d5f71cfa0ab76da47062956ab>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_collections<doxid-classgeode_1_1_relationships_1a5dc1cfa64023d4bdbece7378dc1515c5>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>` :ref:`collections<doxid-classgeode_1_1_relationships_1a991844aeb03263f0a615547cf95b858c>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		bool :ref:`is_boundary<doxid-classgeode_1_1_relationships_1a82cd221591f5fdff4799c209c364b549>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence) const;
+		bool :ref:`is_internal<doxid-classgeode_1_1_relationships_1a6138acef8b9971b5f40d4925bc35ac71>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding) const;
+		bool :ref:`is_item<doxid-classgeode_1_1_relationships_1a57d4e54f764e3053bd29dff88be2b1ac>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection) const;
 		void :ref:`save_relationships<doxid-classgeode_1_1_relationships_1a0dab2f54985d3932dbff14c1ede028e6>`(absl::string_view directory) const;
 		void :ref:`register_component<doxid-classgeode_1_1_relationships_1ac21315bddd9f19be957e0b709700ec87>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id, RelationshipsBuilderKey);
 		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_1ad14c78840ca287f342b699a4961fc28e>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, RelationshipsBuilderKey);
