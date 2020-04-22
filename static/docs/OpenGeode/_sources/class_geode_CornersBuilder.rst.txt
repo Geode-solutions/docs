@@ -37,6 +37,9 @@ Overview
 
 	template <index_t dimension, template< index_t > class... Components>
 	class :ref:`AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`;
+
+	class :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`;
+	class :ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`;
 .. _details-classgeode_1_1_corners_builder:
 
 Detailed Documentation

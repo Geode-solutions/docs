@@ -9,7 +9,7 @@ class geode::SectionBuilder
 
 	struct_geode_SectionBuilder_ComponentMapping.rst
 
-Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
+Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>` :ref:`LinesBuilder <doxid-classgeode_1_1_lines_builder>`
 
 
 .. ref-code-block:: cpp
@@ -18,6 +18,7 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 	#include <section_builder.h>
 	
 	class SectionBuilder:
+	    public :ref:`geode::CornersBuilder<doxid-classgeode_1_1_corners_builder>`,
 	    public :ref:`geode::TopologyBuilder<doxid-classgeode_1_1_topology_builder>`,
 	    public :ref:`geode::AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`
 	{
@@ -109,6 +110,9 @@ Inherited Members
 	public:
 		// methods
 	
+		void :ref:`load_corners<doxid-classgeode_1_1_corners_builder_1a0aff45966593d880314a29018874761d>`(absl::string_view directory);
+		std::unique_ptr<:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`<dimension>> :ref:`corner_mesh_builder<doxid-classgeode_1_1_corners_builder_1a32bd13083857032419443b459ecc9693>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		void :ref:`set_corner_name<doxid-classgeode_1_1_corners_builder_1a79b6436ebfb064c6af6e72412d4a723d>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, absl::string_view name);
 		void :ref:`register_component<doxid-classgeode_1_1_relationships_builder_1ac161cd45bffb92b0e3340ac80cfe9e1d>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id);
 		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_builder_1aee190cedcd627f2e9bdc5e3815afcdfd>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a6c661d5abfdf4600024e03a1535b43d9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);

@@ -32,6 +32,10 @@ Overview
 			absl::string_view name
 			);
 	};
+
+	// direct descendants
+
+	class :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`;
 .. _details-classgeode_1_1_surfaces_builder:
 
 Detailed Documentation
