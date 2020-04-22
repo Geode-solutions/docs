@@ -22,6 +22,7 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 	    public :ref:`geode::LinesBuilder<doxid-classgeode_1_1_lines_builder>`,
 	    public :ref:`geode::SurfacesBuilder<doxid-classgeode_1_1_surfaces_builder>`,
 	    public :ref:`geode::BlocksBuilder<doxid-classgeode_1_1_blocks_builder>`,
+	    public :ref:`geode::ModelBoundariesBuilder<doxid-classgeode_1_1_model_boundaries_builder>`,
 	    public :ref:`geode::TopologyBuilder<doxid-classgeode_1_1_topology_builder>`,
 	    public :ref:`geode::AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`
 	{
@@ -153,6 +154,8 @@ Inherited Members
 		void :ref:`load_blocks<doxid-classgeode_1_1_blocks_builder_1a07055febb98f04a79bf3a6f22d3ec6dd>`(absl::string_view directory);
 		std::unique_ptr<:ref:`PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`<dimension>> :ref:`block_mesh_builder<doxid-classgeode_1_1_blocks_builder_1a36da6d0d51e60075df1dc45529f3592f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 		void :ref:`set_block_name<doxid-classgeode_1_1_blocks_builder_1a8b748c7a5bf428c3609326d965fe185b>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, absl::string_view name);
+		void :ref:`load_model_boundaries<doxid-classgeode_1_1_model_boundaries_builder_1a0fc9466fddeb174031b4f714ec8faf40>`(absl::string_view directory);
+		void :ref:`set_model_boundary_name<doxid-classgeode_1_1_model_boundaries_builder_1ac2e4b713a49d8b3bee7a09b042b02037>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, absl::string_view name);
 		void :ref:`register_component<doxid-classgeode_1_1_relationships_builder_1ac161cd45bffb92b0e3340ac80cfe9e1d>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id);
 		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_builder_1aee190cedcd627f2e9bdc5e3815afcdfd>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a6c661d5abfdf4600024e03a1535b43d9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);

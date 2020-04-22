@@ -47,6 +47,10 @@ Storage class providing range loop to iterate on :ref:`Blocks <doxid-classgeode_
 		:ref:`BlockRange<doxid-classgeode_1_1_blocks_1_1_block_range>` :target:`blocks<doxid-classgeode_1_1_blocks_1a127fd020680baeedb8adc554584be20a>`() const;
 		void :ref:`save_blocks<doxid-classgeode_1_1_blocks_1af2477bd97c4999311919bd4adc501951>`(absl::string_view directory) const;
 	};
+
+	// direct descendants
+
+	class :ref:`BRep<doxid-classgeode_1_1_b_rep>`;
 .. _details-classgeode_1_1_blocks:
 
 Detailed Documentation

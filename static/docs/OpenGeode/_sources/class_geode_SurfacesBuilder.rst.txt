@@ -36,6 +36,7 @@ Overview
 	// direct descendants
 
 	class :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`;
+	class :ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`;
 .. _details-classgeode_1_1_surfaces_builder:
 
 Detailed Documentation

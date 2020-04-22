@@ -44,3 +44,8 @@ template class geode::ModelBoundaries
 		:ref:`ModelBoundaryRange<doxid-classgeode_1_1_model_boundaries_1_1_model_boundary_range>` :target:`model_boundaries<doxid-classgeode_1_1_model_boundaries_1acb04c32113fe1819a93f8675a34a3d0f>`() const;
 		void :target:`save_model_boundaries<doxid-classgeode_1_1_model_boundaries_1a0164da2e64bc46b86f78e8d4899b1099>`(absl::string_view directory) const;
 	};
+
+	// direct descendants
+
+	class :ref:`BRep<doxid-classgeode_1_1_b_rep>`;
+	class :ref:`Section<doxid-classgeode_1_1_section>`;

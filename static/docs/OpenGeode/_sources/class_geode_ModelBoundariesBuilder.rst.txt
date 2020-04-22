@@ -28,3 +28,8 @@ template class geode::ModelBoundariesBuilder
 			absl::string_view name
 			);
 	};
+
+	// direct descendants
+
+	class :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`;
+	class :ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`;
