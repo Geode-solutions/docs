@@ -1,0 +1,143 @@
+.. index:: pair: class; geode::AABBTree::Impl
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl:
+
+class geode::AABBTree::Impl
+===========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+AABB tree structure implementation The tree is store in s single vector following this example: ROOT / \ A1 A2 / \ / \ B1 B2 B3 B4 where B* are the input bboxes Storage: |empty|ROOT|A1|A2|B1|B2|B3|B4| :ref:`More...<details-classgeode_1_1_a_a_b_b_tree_1_1_impl>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <aabb_impl.h>
+	
+	class Impl
+	{
+	public:
+		// fields
+	
+		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`ROOT_INDEX<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a0ebfc604c18def1b51f3efa6c47da8e5>`;
+
+		// construction
+	
+		:target:`Impl<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a8e518906a98c560b10ee66e75f89c593>`(absl::Span<const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>> bboxes);
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_bboxes<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a5931e3f90255df24d747b34aa38a9bdb>`() const;
+		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& :target:`node<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1aa20e64c08bb5baebd2c837041ac1a101>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` i) const;
+	
+		void :target:`set_node<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a6ce146305ba58c0a24fa0f17dbd0fe7a>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` i,
+			const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box
+			);
+	
+		void :target:`add_box<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a8c9795672b9081af2b60e533b8c0f112>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` i,
+			const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box
+			);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`mapping_morton<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1aaca42adfea4e9edd8d09283b5c5de7a0>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` i) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`max_node_index<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a99c98181116e8b2fcfda1a16e2c6e10c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` box_begin, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` box_end) const;
+	
+		void :ref:`initialize_tree_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1ad8f7a688bc0d10bdbcc8ee41321732b9>`(
+			absl::Span<const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>> bboxes,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end
+			);
+	
+		template <typename ACTION>
+		void :ref:`closest_element_box_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a2b8463172521353412924640f177c8ea>`(
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`& nearest_box,
+			:ref:`Point<doxid-classgeode_1_1_point>`<dimension>& nearest_point,
+			double& distance,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end,
+			const ACTION& action
+			) const;
+	
+		template <class ACTION>
+		void :target:`bbox_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a01c0ec594996e95e61e16b731e3329be>`(
+			const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end,
+			ACTION& action
+			) const;
+	
+		template <class ACTION>
+		void :target:`self_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a48b0cabc72837f0672ec1cc2462ed0c6>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index1,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin1,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end1,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index2,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin2,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end2,
+			ACTION& action
+			) const;
+	};
+.. _details-classgeode_1_1_a_a_b_b_tree_1_1_impl:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+AABB tree structure implementation The tree is store in s single vector following this example: ROOT / \ A1 A2 / \ / \ B1 B2 B3 B4 where B* are the input bboxes Storage: |empty|ROOT|A1|A2|B1|B2|B3|B4|
+
+Methods
+-------
+
+.. index:: pair: function; max_node_index
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a99c98181116e8b2fcfda1a16e2c6e10c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` max_node_index(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` box_begin, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` box_end) const
+
+Gets the number of nodes in the tree subset.
+
+.. index:: pair: function; initialize_tree_recursive
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1ad8f7a688bc0d10bdbcc8ee41321732b9:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void initialize_tree_recursive(
+		absl::Span<const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>> bboxes,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end
+		)
+
+The recursive instruction used in initialize_tree()
+
+.. index:: pair: function; closest_element_box_recursive
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a2b8463172521353412924640f177c8ea:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <typename ACTION>
+	void closest_element_box_recursive(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`& nearest_box,
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension>& nearest_point,
+		double& distance,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end,
+		const ACTION& action
+		) const
+
+The recursive instruction used in :ref:`closest_element_box() <doxid-classgeode_1_1_a_a_b_b_tree_1a3cc03c54455ea2e519b4d336e53e9689>`
+
