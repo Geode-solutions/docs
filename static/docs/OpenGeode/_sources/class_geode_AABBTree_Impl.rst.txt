@@ -23,7 +23,7 @@ AABB tree structure implementation The tree is store in s single vector followin
 	public:
 		// fields
 	
-		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`ROOT_INDEX<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a0ebfc604c18def1b51f3efa6c47da8e5>`;
+		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`ROOT_INDEX<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a0ebfc604c18def1b51f3efa6c47da8e5>` { 1 };
 
 		// construction
 	
@@ -83,6 +83,15 @@ AABB tree structure implementation The tree is store in s single vector followin
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index2,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin2,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end2,
+			ACTION& action
+			) const;
+	
+		template <class ACTION>
+		void :target:`ray_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a6f01acdd9cc7afad7ae6eb5fd9ab7f95>`(
+			const :ref:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`<dimension>& ray,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end,
 			ACTION& action
 			) const;
 	};

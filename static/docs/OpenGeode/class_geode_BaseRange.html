@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>template class geode::BaseRange &#8212; Python  documentation</title>
@@ -40,15 +40,15 @@
 <p>Base class for range-based iteration on custom range. See derived classes for usage.</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;range.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="p">,</span> <span class="k">typename</span> <span class="n">NextOperator</span> <span class="o">=</span> <span class="n">IncrementOperator</span><span class="o">&lt;</span> <span class="n">Type</span> <span class="o">&gt;&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="p">,</span> <span class="k">typename</span> <span class="n">NextOperator</span> <span class="o">=</span> <span class="n">IncrementOperator</span><span class="o">&lt;</span><span class="n">Type</span><span class="o">&gt;&gt;</span>
 <span class="k">class</span> <span class="n">BaseRange</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1a3c8892964239c42e1e914ad91c1849cc">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">BaseRange</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1afe90da29578e4e5022ffc71598163bfe">operator ++</span><span></span> <span class="p">();</span>
-    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1a62c35fce8f88bcff37fedb47da9f9240">current</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1a3c8892964239c42e1e914ad91c1849cc"><span></span><span class="k">operator</span> <span class="o">!=</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">BaseRange</span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1afe90da29578e4e5022ffc71598163bfe"><span></span><span class="k">operator</span> <span class="o">++</span></span><span></span> <span class="p">();</span>
+    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-base-range-1a62c35fce8f88bcff37fedb47da9f9240"><span></span><span class="n">current</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
@@ -67,7 +67,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

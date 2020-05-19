@@ -31,6 +31,6 @@ struct geode::AttributeLinearInterpolation
 
 		// methods
 	
-		template <template< typename > class Attribute, typename T>
+		template <template<typename> class Attribute, typename T>
 		T :target:`compute_value<doxid-structgeode_1_1_attribute_linear_interpolation_1a4efa71ee050352461a6f8c391243455f>`(const Attribute<T>& attribute) const;
 	};

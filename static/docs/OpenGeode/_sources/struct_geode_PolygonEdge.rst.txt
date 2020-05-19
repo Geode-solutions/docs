@@ -19,8 +19,8 @@ This struct represents an edge in a polygon
 	{
 		// fields
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polygon_id<doxid-structgeode_1_1_polygon_edge_1a89813d977355b1f203e3e0fdd73122c4>`;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`edge_id<doxid-structgeode_1_1_polygon_edge_1a0143270c879039cc12e8b3870e9aa05e>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polygon_id<doxid-structgeode_1_1_polygon_edge_1a89813d977355b1f203e3e0fdd73122c4>` { NO_ID };
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`edge_id<doxid-structgeode_1_1_polygon_edge_1a0143270c879039cc12e8b3870e9aa05e>` { NO_ID };
 
 		// construction
 	

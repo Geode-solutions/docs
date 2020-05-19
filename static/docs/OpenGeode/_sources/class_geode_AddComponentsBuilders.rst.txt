@@ -15,7 +15,7 @@ This mixin represents the builders of an assembly of components. Syntax for crea
 
 	#include <add_components_builders.h>
 	
-	template <index_t dimension, template< index_t > class... Components>
+	template <index_t dimension, template<index_t> class... Components>
 	class AddComponentsBuilders: public Components::Builder< dimension >
 	{
 	};

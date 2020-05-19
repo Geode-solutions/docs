@@ -22,8 +22,8 @@ This struct represents a graph edge endpoint :ref:`More...<details-structgeode_1
 	{
 		// fields
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_id<doxid-structgeode_1_1_edge_vertex_1a4c65692bb29333ba1aa7b1da7848b40e>`;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`vertex_id<doxid-structgeode_1_1_edge_vertex_1a210c793bba6da14cb0264c65b9597794>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_id<doxid-structgeode_1_1_edge_vertex_1a4c65692bb29333ba1aa7b1da7848b40e>` { NO_ID };
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`vertex_id<doxid-structgeode_1_1_edge_vertex_1a210c793bba6da14cb0264c65b9597794>` { NO_ID };
 
 		// construction
 	
@@ -58,7 +58,7 @@ Fields
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id { NO_ID }
 
 Index of the edge
 
@@ -68,7 +68,7 @@ Index of the edge
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id { NO_ID }
 
 Identification of the edge endpoint (0 or 1)
 

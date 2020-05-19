@@ -45,4 +45,6 @@ Custom OpenGeode logger. Can be used with several levels: :ref:`Logger::info <do
 	
 		template <typename... Args>
 		static void :target:`critical<doxid-classgeode_1_1_logger_1aafb9ff8a36b01b8c68923a83c00ebc33>`(const Args&... args);
+
+	private:
 	};

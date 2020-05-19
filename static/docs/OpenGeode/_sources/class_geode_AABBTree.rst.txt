@@ -31,6 +31,7 @@ Overview
 		// construction
 	
 		:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1a5946d01f19301b57c2040e76dcf271d3>`(absl::Span<const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>> bboxes);
+		:target:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1aa94c01bb152254e5eaa7326e0612e52f>`(AABBTree&&);
 
 		// methods
 	
@@ -50,6 +51,12 @@ Overview
 	
 		template <class EvalIntersection>
 		void :ref:`compute_self_element_bbox_intersections<doxid-classgeode_1_1_a_a_b_b_tree_1a1265a269f8b687b6f199af13b7c4e0b4>`(EvalIntersection& action) const;
+	
+		template <class EvalIntersection>
+		void :ref:`compute_ray_element_bbox_intersections<doxid-classgeode_1_1_a_a_b_b_tree_1a557f99f2a9fa9cb159c8508660694d05>`(
+			const :ref:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`<dimension>& ray,
+			EvalIntersection& action
+			) const;
 	};
 .. _details-classgeode_1_1_a_a_b_b_tree:
 
@@ -167,9 +174,7 @@ a tuple containing:
 
 Computes the intersections between a given box and the all element boxes.
 
-where cur_element_box is the element box index that is intersected by ``box``.
-
-A posibility is to define this operator to add ``cur_element_box`` to a set and build a set of tree element that intersect the ``box``.
+the operator define what to do with the box ``cur_element_box`` if it is intersected by the ``box``.
 
 
 
@@ -206,7 +211,7 @@ Computes the self intersections of the element boxes.
 
 cur_element_box1 and cur_element_box2 are the element box indices that intersect.
 
-the operator can be defined to test real intersection between element in boxes and store the result.
+the operator defines what to do when two boxes of the tree (``cur_element_box1`` and ``cur_element_box2``) intesect each other (for example: test real intersection between each element in boxes and store the result.)
 
 
 
@@ -224,4 +229,42 @@ the operator can be defined to test real intersection between element in boxes a
 		- EvalIntersection
 
 		- this functor should have an operator() defined like this: void operator()( index_t cur_element_box1, index_t cur_element_box2 ) ;
+
+.. index:: pair: function; compute_ray_element_bbox_intersections
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1a557f99f2a9fa9cb159c8508660694d05:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <class EvalIntersection>
+	void compute_ray_element_bbox_intersections(
+		const :ref:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`<dimension>& ray,
+		EvalIntersection& action
+		) const
+
+Computes the intersections between a given ray and all element boxes.
+
+the operator define what to do with the box ``cur_element_box`` if it is intersected by the ``ray``.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- ray
+
+		- The ray to test.
+
+	*
+		- action
+
+		- The functor to run when a box is intersected by the ray.
+
+	*
+		- EvalIntersection
+
+		- this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;
 

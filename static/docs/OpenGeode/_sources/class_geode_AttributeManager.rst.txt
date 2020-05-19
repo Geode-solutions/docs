@@ -28,14 +28,14 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 		template <typename T>
 		std::shared_ptr<:ref:`ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`<T>> :ref:`find_attribute<doxid-classgeode_1_1_attribute_manager_1aff74019fbaa9939a5e1ba5f1bf81b5a5>`(absl::string_view name) const;
 	
-		template <template< typename > class Attribute, typename T>
+		template <template<typename> class Attribute, typename T>
 		std::shared_ptr<Attribute<T>> :ref:`find_or_create_attribute<doxid-classgeode_1_1_attribute_manager_1a11138e8873c9452f32070a5605c73b61>`(
 			absl::string_view name,
 			T default_value,
 			:ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>` properties
 			);
 	
-		template <template< typename > class Attribute, typename T>
+		template <template<typename> class Attribute, typename T>
 		std::shared_ptr<Attribute<T>> :target:`find_or_create_attribute<doxid-classgeode_1_1_attribute_manager_1a8f9a1c11cbf453abe704d9715b231995>`(
 			absl::string_view name,
 			T default_value
@@ -135,7 +135,7 @@ Recover the typed Attribute from the attribute name
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	template <template< typename > class Attribute, typename T>
+	template <template<typename> class Attribute, typename T>
 	std::shared_ptr<Attribute<T>> find_or_create_attribute(
 		absl::string_view name,
 		T default_value,

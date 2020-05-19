@@ -19,8 +19,8 @@ Struct holding Attribute flags used by the :ref:`AttributeManager <doxid-classge
 	{
 		// fields
 	
-		bool :target:`assignable<doxid-structgeode_1_1_attribute_properties_1a452e7d6f062415352e708e2bd464707c>`;
-		bool :target:`interpolable<doxid-structgeode_1_1_attribute_properties_1a79e3e1b284fbc2a820a427a8ca2e9cdd>`;
+		bool :target:`assignable<doxid-structgeode_1_1_attribute_properties_1a452e7d6f062415352e708e2bd464707c>` { false };
+		bool :target:`interpolable<doxid-structgeode_1_1_attribute_properties_1a79e3e1b284fbc2a820a427a8ca2e9cdd>` { false };
 
 		// construction
 	

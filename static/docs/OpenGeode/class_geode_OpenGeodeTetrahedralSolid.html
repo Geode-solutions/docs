@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>template class geode::OpenGeodeTetrahedralSolid &#8212; Python  documentation</title>
@@ -45,44 +45,44 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a103ed827f6acafa0b8554bc57a8bf45e">type_name</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">virtual</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1aa12e72a894de1ee6040b03a34b90a93a">native_extension</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a103ed827f6acafa0b8554bc57a8bf45e"><span></span><span class="n">type_name</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1aa12e72a894de1ee6040b03a34b90a93a"><span></span><span class="n">native_extension</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a02f2e0b236a29513cbcee5a22ac88d8a">set_vertex</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a02f2e0b236a29513cbcee5a22ac88d8a"><span></span><span class="n">set_vertex</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
         <span class="n">OGTetrahedralSolidKey</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a3862a10722fe82192b0525e0cae0d2b4">set_polyhedron_vertex</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a3862a10722fe82192b0525e0cae0d2b4"><span></span><span class="n">set_polyhedron_vertex</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span>
         <span class="n">OGTetrahedralSolidKey</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a199e80fa27d643c355e12a3a608a5194">set_polyhedron_adjacent</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a199e80fa27d643c355e12a3a608a5194"><span></span><span class="n">set_polyhedron_adjacent</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">adjacent_id</span><span class="p">,</span>
         <span class="n">OGTetrahedralSolidKey</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a98abca31cd8d0cfb4092374e485b5593">add_tetrahedron</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a98abca31cd8d0cfb4092374e485b5593"><span></span><span class="n">add_tetrahedron</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">,</span>
         <span class="n">OGTetrahedralSolidKey</span>
         <span class="p">);</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6490f410ec95b55f5f14923a65000792"><span class="std std-ref">PolyhedronFacetVertices</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1af8efdbfc3d78e81b1f17d0cc6a656599">get_polyhedron_facet_vertices</span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6490f410ec95b55f5f14923a65000792"><span class="std std-ref">PolyhedronFacetVertices</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1af8efdbfc3d78e81b1f17d0cc6a656599"><span></span><span class="n">get_polyhedron_facet_vertices</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">,</span>
         <span class="n">OGTetrahedralSolidKey</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1ac991a03518b9c3937f1648ace6bdc4c7">get_polyhedron_edge_vertices</span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1ac991a03518b9c3937f1648ace6bdc4c7"><span></span><span class="n">get_polyhedron_edge_vertices</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">,</span>
         <span class="n">OGTetrahedralSolidKey</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="k">static</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1ac6be4f2f3f735b9c092887d4fa4e2273">type_name_static</span><span></span><span class="p">();</span>
-    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1af92d21f4ab4a7d09803403acd017dec0">native_extension_static</span><span></span><span class="p">();</span>
+    <span class="k">static</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1ac6be4f2f3f735b9c092887d4fa4e2273"><span></span><span class="n">type_name_static</span></span><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1af92d21f4ab4a7d09803403acd017dec0"><span></span><span class="n">native_extension_static</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
@@ -174,7 +174,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

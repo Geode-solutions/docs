@@ -19,8 +19,8 @@ This struct represents a facet in a polyhedron
 	{
 		// fields
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polyhedron_id<doxid-structgeode_1_1_polyhedron_facet_1a85350733a7db6b1fce4aa1953cd1f1b1>`;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`facet_id<doxid-structgeode_1_1_polyhedron_facet_1acb9ee910462a8ceda3df5b8e93ab7dbc>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polyhedron_id<doxid-structgeode_1_1_polyhedron_facet_1a85350733a7db6b1fce4aa1953cd1f1b1>` { NO_ID };
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`facet_id<doxid-structgeode_1_1_polyhedron_facet_1acb9ee910462a8ceda3df5b8e93ab7dbc>` { NO_ID };
 
 		// construction
 	

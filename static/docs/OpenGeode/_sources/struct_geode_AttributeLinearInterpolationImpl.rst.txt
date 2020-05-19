@@ -20,7 +20,7 @@ Helper struct to interpolate an Attribute value. This struct may be customized f
 	{
 		// methods
 	
-		template <template< typename > class Attribute>
+		template <template<typename> class Attribute>
 		static AttributeType :target:`compute<doxid-structgeode_1_1_attribute_linear_interpolation_impl_1a55dfffe38ab9c2b7fe0723b046f3556d>`(
 			const :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`&,
 			const Attribute<AttributeType>& attribute

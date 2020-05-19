@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>class geode::AABBTree::Impl &#8212; Python  documentation</title>
@@ -47,28 +47,28 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// fields</span>
 
-    <span class="k">static</span> <span class="k">constexpr</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a0ebfc604c18def1b51f3efa6c47da8e5">ROOT_INDEX</span><span></span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a0ebfc604c18def1b51f3efa6c47da8e5"><span></span><span class="n">ROOT_INDEX</span></span><span></span> <span class="p">{</span> <span class="mi">1</span> <span class="p">};</span>
 
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a8e518906a98c560b10ee66e75f89c593">Impl</span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">bboxes</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a8e518906a98c560b10ee66e75f89c593"><span></span><span class="n">Impl</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">bboxes</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a5931e3f90255df24d747b34aa38a9bdb">nb_bboxes</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1aa20e64c08bb5baebd2c837041ac1a101">node</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">i</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a5931e3f90255df24d747b34aa38a9bdb"><span></span><span class="n">nb_bboxes</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1aa20e64c08bb5baebd2c837041ac1a101"><span></span><span class="n">node</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">i</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a6ce146305ba58c0a24fa0f17dbd0fe7a">set_node</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a6ce146305ba58c0a24fa0f17dbd0fe7a"><span></span><span class="n">set_node</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">i</span><span class="p">,</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a8c9795672b9081af2b60e533b8c0f112">add_box</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a8c9795672b9081af2b60e533b8c0f112"><span></span><span class="n">add_box</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">i</span><span class="p">,</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span>
         <span class="p">);</span>
 
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1aaca42adfea4e9edd8d09283b5c5de7a0">mapping_morton</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">i</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1aaca42adfea4e9edd8d09283b5c5de7a0"><span></span><span class="n">mapping_morton</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">i</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a99c98181116e8b2fcfda1a16e2c6e10c"><span class="std std-ref">max_node_index</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">node_index</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">box_begin</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">box_end</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1ad8f7a688bc0d10bdbcc8ee41321732b9"><span class="std std-ref">initialize_tree_recursive</span></a><span></span><span class="p">(</span>
@@ -91,7 +91,7 @@
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">ACTION</span><span class="o">&gt;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a01c0ec594996e95e61e16b731e3329be">bbox_intersect_recursive</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a01c0ec594996e95e61e16b731e3329be"><span></span><span class="n">bbox_intersect_recursive</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">node_index</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_begin</span><span class="p">,</span>
@@ -100,13 +100,22 @@
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">ACTION</span><span class="o">&gt;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a48b0cabc72837f0672ec1cc2462ed0c6">self_intersect_recursive</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a48b0cabc72837f0672ec1cc2462ed0c6"><span></span><span class="n">self_intersect_recursive</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">node_index1</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_begin1</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_end1</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">node_index2</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_begin2</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_end2</span><span class="p">,</span>
+        <span class="n">ACTION</span><span class="o">&amp;</span> <span class="n">action</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">ACTION</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a6f01acdd9cc7afad7ae6eb5fd9ab7f95"><span></span><span class="n">ray_intersect_recursive</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a02bd9a3f32244e9da6f9ce982c2ff3"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">node_index</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_begin</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_end</span><span class="p">,</span>
         <span class="n">ACTION</span><span class="o">&amp;</span> <span class="n">action</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
@@ -151,7 +160,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

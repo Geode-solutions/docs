@@ -15,7 +15,7 @@ Base class for range-based iteration on custom range. See derived classes for us
 
 	#include <range.h>
 	
-	template <typename Type, typename NextOperator = IncrementOperator< Type >>
+	template <typename Type, typename NextOperator = IncrementOperator<Type>>
 	class BaseRange
 	{
 	public:

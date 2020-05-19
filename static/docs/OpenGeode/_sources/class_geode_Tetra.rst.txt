@@ -20,7 +20,7 @@ class geode::Tetra
 	public:
 		// fields
 	
-		static constexpr std::array<std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 3>, 4> :target:`tetra_facet_vertex<doxid-classgeode_1_1_tetra_1a9b9069a6ad2c93f4da774210cbf1406e>`;
+		static constexpr std::array<std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 3>, 4> :target:`tetra_facet_vertex<doxid-classgeode_1_1_tetra_1a9b9069a6ad2c93f4da774210cbf1406e>` { { { { 1, 3, 2 } }, { { 0, 2, 3 } },                 { { 3, 1, 0 } }, { { 0, 1, 2 } } } };
 
 		// construction
 	

@@ -19,6 +19,7 @@ To use this class, inherit from it and use the protected method :ref:`Singleton:
 	
 	class Singleton
 	{
+	public:
 	};
 
 	// direct descendants

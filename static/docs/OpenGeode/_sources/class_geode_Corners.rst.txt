@@ -50,7 +50,7 @@ Storage class providing range loop to iterate on :ref:`Corners <doxid-classgeode
 
 	// direct descendants
 
-	template <index_t dimension, template< index_t > class... Components>
+	template <index_t dimension, template<index_t> class... Components>
 	class :ref:`AddComponents<doxid-classgeode_1_1_add_components>`;
 
 	class :ref:`BRep<doxid-classgeode_1_1_b_rep>`;

@@ -19,8 +19,8 @@ This struct represents a local vertex in a polygon
 	{
 		// fields
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polygon_id<doxid-structgeode_1_1_polygon_vertex_1adff99bd0472539eb2ba3cfed9102123a>`;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_id<doxid-structgeode_1_1_polygon_vertex_1a3b9665fe9730f9a5748372c79bbe2bfe>`;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polygon_id<doxid-structgeode_1_1_polygon_vertex_1adff99bd0472539eb2ba3cfed9102123a>` { NO_ID };
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_id<doxid-structgeode_1_1_polygon_vertex_1a3b9665fe9730f9a5748372c79bbe2bfe>` { NO_ID };
 
 		// construction
 	

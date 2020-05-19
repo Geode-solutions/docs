@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>template class geode::Point &#8212; Python  documentation</title>
@@ -46,31 +46,31 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a0ea410798ae3680abb59cbf2815c1691">Point</span><span></span><span class="p">();</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a1493e964a22304c1d1bfd6c0a524ea12">Point</span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="n">values</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a0ea410798ae3680abb59cbf2815c1691"><span></span><span class="n">Point</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a1493e964a22304c1d1bfd6c0a524ea12"><span></span><span class="n">Point</span></span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="n">values</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a0092304f3dc6e230d136d1b510fdaf55">value</span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a0092304f3dc6e230d136d1b510fdaf55"><span></span><span class="n">value</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a6b2f04ebab4205dccc5494158ca7b673">set_value</span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a6b2f04ebab4205dccc5494158ca7b673"><span></span><span class="n">set_value</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">index</span><span class="p">,</span>
         <span class="kt">double</span> <span class="n">value</span>
         <span class="p">);</span>
 
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a2ff562e9f09e3b20d292080add63d7c2">operator ==</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1abd314dfc91d0b07692224138294df68c">operator !=</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">Point</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a0c04a7f5b698a12dcec319f8cff44244">operator *</span><span></span> <span class="p">(</span><span class="kt">double</span> <span class="n">multiplier</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">Point</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1af21d13fe05e29749aa399fd7ee013bb9">operator/</span><span></span> <span class="p">(</span><span class="kt">double</span> <span class="n">divider</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">Point</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a22151aab6c4e1c94578f7a7e93eef87a">operator +</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">Point</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a281c4560a67109bee87f517997ddae15">operator -</span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a2ff562e9f09e3b20d292080add63d7c2"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1abd314dfc91d0b07692224138294df68c"><span></span><span class="k">operator</span> <span class="o">!=</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Point</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a0c04a7f5b698a12dcec319f8cff44244"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">(</span><span class="kt">double</span> <span class="n">multiplier</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Point</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1af21d13fe05e29749aa399fd7ee013bb9"><span></span><span class="k">operator</span><span class="o">/</span></span><span></span> <span class="p">(</span><span class="kt">double</span> <span class="n">divider</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Point</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a22151aab6c4e1c94578f7a7e93eef87a"><span></span><span class="k">operator</span> <span class="o">+</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Point</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a281c4560a67109bee87f517997ddae15"><span></span><span class="k">operator</span> <span class="o">-</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a019778a2d6a6bc70d113f4c7292bf795">inexact_equal</span><span></span><span class="p">(</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1a019778a2d6a6bc70d113f4c7292bf795"><span></span><span class="n">inexact_equal</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Point</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">,</span>
         <span class="kt">double</span> <span class="n">epsilon</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1aa5dd322eea26f1fa239b4e8d6ec094ef">string</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-1aa5dd322eea26f1fa239b4e8d6ec094ef"><span></span><span class="n">string</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
@@ -89,7 +89,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>template class geode::Corners &#8212; Python  documentation</title>
@@ -48,7 +48,7 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// typedefs</span>
 
-    <span class="k">typedef</span> <a class="reference internal" href="class_geode_CornersBuilder.html#doxid-classgeode-1-1-corners-builder"><span class="std std-ref">CornersBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1a9220c07e27ed372763b0eb3057c5dd7a">Builder</span><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_CornersBuilder.html#doxid-classgeode-1-1-corners-builder"><span class="std std-ref">CornersBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1a9220c07e27ed372763b0eb3057c5dd7a"><span></span><span class="n">Builder</span></span><span></span><span class="p">;</span>
 
     <span class="c1">// classes</span>
 
@@ -58,19 +58,19 @@
 
     <span class="c1">// fields</span>
 
-    <span class="k">friend</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1a6da9c6513948605b3001af36cc944b3a">Builder</span><span></span><span class="p">;</span>
+    <span class="k">friend</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1a6da9c6513948605b3001af36cc944b3a"><span></span><span class="n">Builder</span></span><span></span><span class="p">;</span>
 
     <span class="c1">// methods</span>
 
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1a949ddaa0cde92f3d47986f520ecea125">nb_corners</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1a949ddaa0cde92f3d47986f520ecea125"><span></span><span class="n">nb_corners</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Corner.html#doxid-classgeode-1-1-corner"><span class="std std-ref">Corner</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-corners-1a5258a25b20a106bdb93ef0100af9a60f"><span class="std std-ref">corner</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <a class="reference internal" href="class_geode_Corners_CornerRange.html#doxid-classgeode-1-1-corners-1-1-corner-range"><span class="std std-ref">CornerRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1a80d5c977afe0ba4ae7a662099c381c0a">corners</span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Corners_CornerRange.html#doxid-classgeode-1-1-corners-1-1-corner-range"><span class="std std-ref">CornerRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corners-1a80d5c977afe0ba4ae7a662099c381c0a"><span></span><span class="n">corners</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-corners-1ae919a2d2ab3ec13804fa56cb7375ab3f"><span class="std std-ref">save_corners</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">template</span><span class="o">&lt;</span> <span class="n">index_t</span> <span class="o">&gt;</span> <span class="k">class</span><span class="p">...</span> <span class="n">Components</span><span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span><span class="p">...</span> <span class="n">Components</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_AddComponents.html#doxid-classgeode-1-1-add-components"><span class="std std-ref">AddComponents</span></a><span></span><span class="p">;</span>
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="p">;</span>
@@ -99,7 +99,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

@@ -50,6 +50,8 @@ namespace geode
 	class_geode_CornersBuilder.rst
 	class_geode_DecrementOperator.rst
 	class_geode_DefaultGrowable.rst
+	class_geode_DistanceToEdge.rst
+	class_geode_DistanceToTriangle.rst
 	class_geode_EdgedCurve.rst
 	class_geode_EdgedCurveBuilder.rst
 	class_geode_EdgedCurveInput.rst
@@ -178,6 +180,7 @@ Overview
 	typedef bitsery::Deserializer<bitsery::InputStreamAdapter, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Deserializer<doxid-namespacegeode_1a2090ae31c36f663e61f2af7d87cb5f44>`;
 	typedef unsigned int :target:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`;
 	typedef int :target:`signed_index_t<doxid-namespacegeode_1a82faef4b63f94932b7ced06209528cdd>`;
+	typedef :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension> :target:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`;
 	typedef :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension> :target:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`;
 	typedef :ref:`Circle<doxid-classgeode_1_1_circle>` :target:`Disk<doxid-namespacegeode_1a8eb9eb3432b2897512a02b4410f6a9f8>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<:ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`, :ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`<dimension>, :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>&> :target:`EdgedCurveBuilderFactory<doxid-namespacegeode_1a1b470b010221d391a9363f0d4380e0c5>`;
@@ -264,10 +267,10 @@ Overview
 	template <index_t dimension>
 	class :ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`;
 
-	template <index_t dimension, template< index_t > class... Components>
+	template <index_t dimension, template<index_t> class... Components>
 	class :ref:`AddComponents<doxid-classgeode_1_1_add_components>`;
 
-	template <index_t dimension, template< index_t > class... Components>
+	template <index_t dimension, template<index_t> class... Components>
 	class :ref:`AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`;
 
 	class :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`;
@@ -277,7 +280,7 @@ Overview
 	class :ref:`BRepInput<doxid-classgeode_1_1_b_rep_input>`;
 	class :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`;
 
-	template <typename Type, typename NextOperator = IncrementOperator< Type >>
+	template <typename Type, typename NextOperator = IncrementOperator<Type>>
 	class :ref:`BaseRange<doxid-classgeode_1_1_base_range>`;
 
 	template <typename Type>
@@ -319,6 +322,12 @@ Overview
 
 	template <typename Archive, typename T>
 	class :ref:`DefaultGrowable<doxid-classgeode_1_1_default_growable>`;
+
+	template <index_t dimension>
+	class :ref:`DistanceToEdge<doxid-classgeode_1_1_distance_to_edge>`;
+
+	template <index_t dimension>
+	class :ref:`DistanceToTriangle<doxid-classgeode_1_1_distance_to_triangle>`;
 
 	template <index_t dimension>
 	class :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`;
@@ -532,11 +541,11 @@ Overview
 	class :ref:`Topology<doxid-classgeode_1_1_topology>`;
 	class :ref:`TopologyBuilder<doxid-classgeode_1_1_topology_builder>`;
 
-	template <index_t dimension>
-	class :ref:`Triangle<doxid-classgeode_1_1_triangle>`;
-
 	template <>
 	class :ref:`Triangle<3><doxid-classgeode_1_1_triangle_3_013_01_4>`;
+
+	template <index_t dimension>
+	class :ref:`Triangle<doxid-classgeode_1_1_triangle>`;
 
 	template <index_t dimension>
 	class :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`;
@@ -571,10 +580,10 @@ Overview
 
 	// global variables
 
-	static constexpr double :target:`global_epsilon<doxid-namespacegeode_1ad0b6fd0e0919965c35e9ddfa40a1f348>`;
-	static constexpr double :target:`global_epsilon2<doxid-namespacegeode_1ab575e903827bd50f7ef15e38caae8c57>`;
-	static constexpr double :target:`global_epsilon3<doxid-namespacegeode_1a016b0b7f36d945752eab94a03fbc27db>`;
-	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`NO_ID<doxid-namespacegeode_1a454319bfde41726e71f499e4e16322b3>`;
+	static constexpr double :target:`global_epsilon<doxid-namespacegeode_1ad0b6fd0e0919965c35e9ddfa40a1f348>` { 1E-8 };
+	static constexpr double :target:`global_epsilon2<doxid-namespacegeode_1ab575e903827bd50f7ef15e38caae8c57>` { global_epsilon* global_epsilon };
+	static constexpr double :target:`global_epsilon3<doxid-namespacegeode_1a016b0b7f36d945752eab94a03fbc27db>` { global_epsilon2* global_epsilon };
+	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`NO_ID<doxid-namespacegeode_1a454319bfde41726e71f499e4e16322b3>` = :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`(-1);
 
 	// global functions
 
@@ -650,7 +659,31 @@ Overview
 		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box
 		);
 
+	template <index_t dimension>
+	bool :target:`ray_box_intersection<doxid-namespacegeode_1a23075cf62e329b5789cb4d87dacc865a>`(
+		const :ref:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`<dimension>& ray,
+		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box
+		);
+
+	template <index_t dimension>
+	bool :target:`line_box_intersection<doxid-namespacegeode_1aedbd52515ef089d54c1d56f355f314e5>`(
+		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line,
+		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box
+		);
+
+	bool :target:`line_box_intersection<doxid-namespacegeode_1a78a19b9e5419a56b30af3435d547defc>`(
+		const InfiniteLine3D& line,
+		const BoundingBox3D& box
+		);
+
+	bool :target:`line_box_intersection<doxid-namespacegeode_1a0766e026e3e852056a55f07486ef5501>`(
+		const InfiniteLine2D& line,
+		const BoundingBox2D& box
+		);
+
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afdb46be0cc0cf92e9c480d0f4af7ede7>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(:ref:`Point<doxid-classgeode_1_1_point>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a8ec76900496f8c6e59d65c6ad941af27>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
 
 	template <index_t dimension>
 	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_segment_distance<doxid-namespacegeode_1aa93b0c934f3fb83dd110e44bedfd5a30>`(
@@ -662,6 +695,11 @@ Overview
 	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_line_distance<doxid-namespacegeode_1a0152cc4808d761c36b5a7f3d95a85644>`(
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
+		);
+
+	std::tuple<double, Point2D> opengeode_geometry_api :ref:`point_line_signed_distance<doxid-namespacegeode_1a75d0260bbbaced72944408a98c21b06f>`(
+		const Point2D& point,
+		const InfiniteLine2D& line
 		);
 
 	template <index_t dimension>
@@ -692,7 +730,6 @@ Overview
 	:target:`ALIAS_2D<doxid-namespacegeode_1a08bdfe9994f732c45460e93dd950194d>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	Vector2D opengeode_geometry_api :ref:`perpendicular<doxid-namespacegeode_1abf7d35d6f59c66989de52f35d6c6cae0>`(const Vector2D& v);
 	double opengeode_geometry_api :ref:`dot_perpendicular<doxid-namespacegeode_1a86b4ac219780962e02ecaf1becde9633>`(const Vector2D& v0, const Vector2D& v1);
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 
 	template <index_t dimension>
 	:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`point_segment_projection<doxid-namespacegeode_1a25b6b03e0454dc3a0c3b7816febec9ca>`(
@@ -794,6 +831,14 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3f1afb0b6a3f596327f797a32bfe3542>`(:ref:`TetrahedralSolidFactory<doxid-namespacegeode_1acec9524de1b2523c5c68b763b56e4d62>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac5ecef06abef60896357a8eb77586520>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a8ed14be806bcfb131748f6e0da828293>`(:ref:`TriangulatedSurfaceFactory<doxid-namespacegeode_1a0110c4762174d6c63a339f5e8e5acfff>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0895a17483512f1e7888d150089db0e2>`(:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`);
+
+	template <index_t dimension>
+	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1a0d28522356eb132aec3133d2b376f40a>`(const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh);
+
+	template <index_t dimension>
+	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1aaff4b2cf961daa113e891079cf3e63e0>`(const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& mesh);
+
 	:target:`BITSERY_INPUT_MESH_DIMENSION<doxid-namespacegeode_1a2b924df3f51c8cba73c920c33e613352>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`BITSERY_OUTPUT_MESH_DIMENSION<doxid-namespacegeode_1aa9bc004f80438dfdb47b55329b548805>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`BITSERY_INPUT_MESH_NO_DIMENSION<doxid-namespacegeode_1a6b8dac0b909b7c5eb4db841a6117bd0f>`(:ref:`Graph<doxid-classgeode_1_1_graph>`);
@@ -976,7 +1021,7 @@ Global Variables
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` NO_ID
+	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` NO_ID = :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`(-1)
 
 Value used for a invalid index.
 
@@ -1239,6 +1284,29 @@ a tuple containing:
 
 * the closest point on the line.
 
+.. index:: pair: function; point_line_signed_distance
+.. _doxid-namespacegeode_1a75d0260bbbaced72944408a98c21b06f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point2D> opengeode_geometry_api point_line_signed_distance(
+		const Point2D& point,
+		const InfiniteLine2D& line
+		)
+
+Compute the smallest signed distance between a point and an infinite line in 2D
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest signed distance.
+
+* the closest point on the line.
+
 .. index:: pair: function; point_triangle_distance
 .. _doxid-namespacegeode_1a330049f15e84cc2f0d868038057142ec:
 
@@ -1376,7 +1444,7 @@ Return a 2D vector perpendicular to the given one
 		const Vector2D& v1
 		)
 
-compute the dot product between two 2D vectors
+Compute the dot product between a 2D vector ``v0`` and another 2D vector perpendicular to ``v1``.
 
 .. index:: pair: function; point_segment_projection
 .. _doxid-namespacegeode_1a25b6b03e0454dc3a0c3b7816febec9ca:

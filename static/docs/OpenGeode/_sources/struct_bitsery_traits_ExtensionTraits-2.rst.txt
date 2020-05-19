@@ -24,7 +24,7 @@ template struct bitsery::traits::ExtensionTraits<geode::Growable<Archive, T>, T>
 
 		// fields
 	
-		static constexpr bool :target:`SupportValueOverload<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1a9032305ac843110e2a6b82e5be99a1d2>`;
-		static constexpr bool :target:`SupportObjectOverload<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1a4a84ab83e76b530ca2b264d3365b7771>`;
-		static constexpr bool :target:`SupportLambdaOverload<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1a2c4b8238f0343add24948af6df98dcff>`;
+		static constexpr bool :target:`SupportValueOverload<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1a9032305ac843110e2a6b82e5be99a1d2>` = false;
+		static constexpr bool :target:`SupportObjectOverload<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1a4a84ab83e76b530ca2b264d3365b7771>` = true;
+		static constexpr bool :target:`SupportLambdaOverload<doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4_1a2c4b8238f0343add24948af6df98dcff>` = true;
 	};

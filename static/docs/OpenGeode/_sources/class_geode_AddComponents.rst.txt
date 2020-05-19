@@ -15,7 +15,7 @@ This mixin represents an assembly of components. The component types are flexibl
 
 	#include <add_components.h>
 	
-	template <index_t dimension, template< index_t > class... Components>
+	template <index_t dimension, template<index_t> class... Components>
 	class AddComponents: public Components< dimension >
 	{
 	};

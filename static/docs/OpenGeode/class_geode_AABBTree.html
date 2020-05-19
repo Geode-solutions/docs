@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
     <title>template class geode::AABBTree &#8212; Python  documentation</title>
@@ -52,6 +52,7 @@
     <span class="c1">// construction</span>
 
     <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a5946d01f19301b57c2040e76dcf271d3"><span class="std std-ref">AABBTree</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">bboxes</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1aa94c01bb152254e5eaa7326e0612e52f"><span></span><span class="n">AABBTree</span></span><span></span><span class="p">(</span><span class="n">AABBTree</span><span class="o">&amp;&amp;</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
@@ -71,6 +72,12 @@
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a1265a269f8b687b6f199af13b7c4e0b4"><span class="std std-ref">compute_self_element_bbox_intersections</span></a><span></span><span class="p">(</span><span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a557f99f2a9fa9cb159c8508660694d05"><span class="std std-ref">compute_ray_element_bbox_intersections</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a02bd9a3f32244e9da6f9ce982c2ff3"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">,</span>
+        <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 <div class="section" id="detailed-documentation">
@@ -140,8 +147,7 @@
     <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Computes the intersections between a given box and the all element boxes.</p>
-<p>where cur_element_box is the element box index that is intersected by <code class="docutils literal notranslate"><span class="pre">box</span></code>.</p>
-<p>A posibility is to define this operator to add <code class="docutils literal notranslate"><span class="pre">cur_element_box</span></code> to a set and build a set of tree element that intersect the <code class="docutils literal notranslate"><span class="pre">box</span></code>.</p>
+<p>the operator define what to do with the box <code class="docutils literal notranslate"><span class="pre">cur_element_box</span></code> if it is intersected by the <code class="docutils literal notranslate"><span class="pre">box</span></code>.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -164,7 +170,7 @@
 <span class="kt">void</span> <span class="n">compute_self_element_bbox_intersections</span><span class="p">(</span><span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Computes the self intersections of the element boxes.</p>
 <p>cur_element_box1 and cur_element_box2 are the element box indices that intersect.</p>
-<p>the operator can be defined to test real intersection between element in boxes and store the result.</p>
+<p>the operator defines what to do when two boxes of the tree (<code class="docutils literal notranslate"><span class="pre">cur_element_box1</span></code> and <code class="docutils literal notranslate"><span class="pre">cur_element_box2</span></code>) intesect each other (for example: test real intersection between each element in boxes and store the result.)</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -177,6 +183,31 @@
 </tr>
 <tr class="row-even"><td><p>EvalIntersection</p></td>
 <td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box1, index_t cur_element_box2 ) ;</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-a-a-b-b-tree-1a557f99f2a9fa9cb159c8508660694d05"><span id="index-6"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">compute_ray_element_bbox_intersections</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a02bd9a3f32244e9da6f9ce982c2ff3"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">,</span>
+    <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Computes the intersections between a given ray and all element boxes.</p>
+<p>the operator define what to do with the box <code class="docutils literal notranslate"><span class="pre">cur_element_box</span></code> if it is intersected by the <code class="docutils literal notranslate"><span class="pre">ray</span></code>.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>ray</p></td>
+<td><p>The ray to test.</p></td>
+</tr>
+<tr class="row-even"><td><p>action</p></td>
+<td><p>The functor to run when a box is intersected by the ray.</p></td>
+</tr>
+<tr class="row-odd"><td><p>EvalIntersection</p></td>
+<td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;</p></td>
 </tr>
 </tbody>
 </table>
@@ -194,7 +225,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
