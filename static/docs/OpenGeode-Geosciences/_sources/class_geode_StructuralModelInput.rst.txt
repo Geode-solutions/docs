@@ -17,6 +17,7 @@ class geode::StructuralModelInput
 	
 	class StructuralModelInput: public Input
 	{
+	public:
 	};
 
 	// direct descendants

@@ -17,6 +17,7 @@ class geode::CrossSectionInput
 	
 	class CrossSectionInput: public Input
 	{
+	public:
 	};
 
 	// direct descendants

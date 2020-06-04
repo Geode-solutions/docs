@@ -113,12 +113,16 @@ Overview
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa1b34122cda2b0187ae32fc8009ca448>`(:ref:`FaultBlock<doxid-classgeode_1_1_fault_block>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a5684061c0d55912a4bcf9649dbb224db>`(:ref:`FaultBlocks<doxid-classgeode_1_1_fault_blocks>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a280a21f5fe532b72c465f504fb1b0152>`(:ref:`FaultBlocksBuilder<doxid-classgeode_1_1_fault_blocks_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a953eca29c715691e332b39cef2ba529c>`(:ref:`Fault<doxid-classgeode_1_1_fault>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0f23c356286ee32ad1e921970677dad4>`(:ref:`Faults<doxid-classgeode_1_1_faults>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7023cfb24f8b0a78297340f467576aa8>`(:ref:`FaultsBuilder<doxid-classgeode_1_1_faults_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ad3992ab412f660265280d8e3d236c5ca>`(:ref:`Horizon<doxid-classgeode_1_1_horizon>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa14c0fbda1c21d46269f8f48083c930d>`(:ref:`Horizons<doxid-classgeode_1_1_horizons>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a38cacb6ef04d09a14e04380b2a0987b3>`(:ref:`HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aea57c093c88c72fca305a68ab581c977>`(:ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a034776a1edf03eb2a0e8f718243b1202>`(:ref:`StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a0e705bf508ac7c037fae49ac3cc7344b>`(:ref:`StratigraphicUnitsBuilder<doxid-classgeode_1_1_stratigraphic_units_builder>`);
 	void opengeode_geosciences_geosciences_api :ref:`register_geosciences_serialize_pcontext<doxid-namespacegeode_1ae3663b1c1416d9b40e81a48eaa4b9441>`(PContext& context);
 	void opengeode_geosciences_geosciences_api :ref:`register_geosciences_deserialize_pcontext<doxid-namespacegeode_1a1ac997fa60ed4bd714610bcaa1403571>`(PContext& context);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9c94113eab86ec12cd09b83a2a9faf4b>`(:ref:`FaultsBuilder<doxid-classgeode_1_1_faults_builder>`);

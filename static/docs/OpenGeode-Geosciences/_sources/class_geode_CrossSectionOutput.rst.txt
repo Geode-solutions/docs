@@ -17,6 +17,7 @@ class geode::CrossSectionOutput
 	
 	class CrossSectionOutput: public Output
 	{
+	public:
 	};
 
 	// direct descendants

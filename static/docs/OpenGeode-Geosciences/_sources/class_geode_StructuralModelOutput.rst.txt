@@ -17,6 +17,7 @@ class geode::StructuralModelOutput
 	
 	class StructuralModelOutput: public Output
 	{
+	public:
 	};
 
 	// direct descendants
