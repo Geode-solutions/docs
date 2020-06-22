@@ -13,7 +13,7 @@ This struct represents a local vertex in a polygon
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <polygonal_surface.h>
+	#include <surface_mesh.h>
 	
 	struct PolygonVertex
 	{

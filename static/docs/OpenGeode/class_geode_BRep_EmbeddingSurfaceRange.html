@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>class geode::Section::EmbeddedSurfaceRange &#8212; Python  documentation</title>
+    <title>class geode::BRep::EmbeddingSurfaceRange &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -16,8 +16,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::Section::IncidentLineRange" href="class_geode_Section_IncidentLineRange.html" />
-    <link rel="prev" title="class geode::Section::BoundaryLineRange" href="class_geode_Section_BoundaryLineRange.html" />
+    <link rel="next" title="class geode::BRep::IncidentBlockRange" href="class_geode_BRep_IncidentBlockRange.html" />
+    <link rel="prev" title="class geode::BRep::EmbeddingBlockRange" href="class_geode_BRep_EmbeddingBlockRange.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,33 +33,33 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-section-embeddedsurfacerange">
-<span id="doxid-classgeode-1-1-section-1-1-embedded-surface-range"></span><span id="index-0"></span><h1>class geode::Section::EmbeddedSurfaceRange</h1>
+  <div class="section" id="class-geode-brep-embeddingsurfacerange">
+<span id="doxid-classgeode-1-1-b-rep-1-1-embedding-surface-range"></span><span id="index-0"></span><h1>class geode::BRep::EmbeddingSurfaceRange</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;section.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;brep.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">EmbeddedSurfaceRange</span><span class="p">:</span>
+<span class="k">class</span> <span class="nl">EmbeddingSurfaceRange</span><span class="p">:</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-embedding-range-iterator"><span class="std std-ref">geode::Relationships::EmbeddingRangeIterator</span></a><span></span><span class="p">,</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end"><span class="std std-ref">geode::BeginEnd</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1-1-embedded-surface-range-1a22db08f3df8be8831cf305fb0dd14a80"><span></span><span class="n">EmbeddedSurfaceRange</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
-        <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-embedding-surface-range-1a74b0db679b7db548b309b60805968739"><span></span><span class="n">EmbeddingSurfaceRange</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Corner3D</span><span class="o">&amp;</span> <span class="n">corner</span>
         <span class="p">);</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1-1-embedded-surface-range-1a7a062a3ca4ac270071755bda1fc6a931"><span></span><span class="n">EmbeddedSurfaceRange</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
-        <span class="k">const</span> <span class="n">Corner2D</span><span class="o">&amp;</span> <span class="n">corner</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-embedding-surface-range-1aaf886ec1f97ed4131b4857e4f18dedca"><span></span><span class="n">EmbeddingSurfaceRange</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1-1-embedded-surface-range-1ad8ced1ab99367faf9867ae1a6a6f1a27"><span></span><span class="k">operator</span> <span class="o">++</span></span><span></span> <span class="p">();</span>
-    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1-1-embedded-surface-range-1adbc26fba983140eb80f7013a0e18587e"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-embedding-surface-range-1a8c740586b77321890368a889db84f9bd"><span></span><span class="k">operator</span> <span class="o">++</span></span><span></span> <span class="p">();</span>
+    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-1-1-embedding-surface-range-1a40feb375724f2e502f69730f51d6272d"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
@@ -88,7 +88,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_Section_EmbeddedSurfaceRange.rst.txt"
+      <a href="_sources/class_geode_BRep_EmbeddingSurfaceRange.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

@@ -21,10 +21,11 @@ Geometric component describing a :ref:`Line <doxid-classgeode_1_1_line>`. This c
 	public:
 		// construction
 	
+		:target:`Line<doxid-classgeode_1_1_line_1a5d655f049db7653fd6f79be5f569fa09>`(Line&&);
 		:target:`Line<doxid-classgeode_1_1_line_1adb4bc3ef09c66407c8a80baa43a0abdf>`(LinesKey);
 	
-		:target:`Line<doxid-classgeode_1_1_line_1a9e3959286f81d2fc440ad649675d9f86>`(
-			const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type,
+		:target:`Line<doxid-classgeode_1_1_line_1ad209f39203bd67f9baf3a0f13d5bb52d>`(
+			const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl,
 			LinesKey
 			);
 
@@ -33,8 +34,13 @@ Geometric component describing a :ref:`Line <doxid-classgeode_1_1_line>`. This c
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_line_1af7c10eda2495dc8121670d2ccd119504>`() const;
 		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_line_1aa9c12802a9ce606ea5a956a51f878fe8>`() const;
 		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& :target:`mesh<doxid-classgeode_1_1_line_1a553da3d8a35de339b9a651d4251c5063>`() const;
-		void :target:`ensure_mesh_type<doxid-classgeode_1_1_line_1a772ab244ce7d03bc17cb780be3b532f3>`(LinesKey);
+		const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& :target:`mesh_type<doxid-classgeode_1_1_line_1a92d4a06715637eb659f7f93347f549db>`() const;
 		:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_line_1a89479b54fe820c47d7590117409d7fdc>`(LinesKey);
+	
+		void :target:`set_mesh<doxid-classgeode_1_1_line_1aee446f3d480f13957d84ac33b1f654ad>`(
+			std::unique_ptr<:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>> mesh,
+			LinesKey
+			);
 	
 		void :target:`set_mesh<doxid-classgeode_1_1_line_1a5aa72366890a9c5a5009ead403df0f97>`(
 			std::unique_ptr<:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>> mesh,

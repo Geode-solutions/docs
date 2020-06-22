@@ -55,13 +55,6 @@ Read and write interface for sparse attribute storage. Only store what you use!
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element,
 			AttributeBase::AttributeKey
 			);
-	
-		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :target:`clone<doxid-classgeode_1_1_sparse_attribute_1a7a46b3802991a2febc2470a14234a073>`() const;
-	
-		virtual void :target:`copy<doxid-classgeode_1_1_sparse_attribute_1a611b19143ed60c252c6ed4f20aeec284>`(
-			const :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`& attribute,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements
-			);
 	};
 
 Inherited Members
@@ -74,10 +67,10 @@ Inherited Members
 		// methods
 	
 		:ref:`PASSKEY<doxid-classgeode_1_1_attribute_base_1a66cbc8b9b09d6173d7cfd759343338d6>`(:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`, AttributeKey);
-		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`clone<doxid-classgeode_1_1_attribute_base_1acea72fe269bc80ef99e4e2b869d46c45>`() const = 0;
-		virtual void :ref:`copy<doxid-classgeode_1_1_attribute_base_1ab69e09b7f30008232ba265e3e6150e5d>`(const :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`& attribute, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements) = 0;
 		virtual float :ref:`generic_value<doxid-classgeode_1_1_attribute_base_1a1a5a7f1d11dc8e0dc7fb066726e35926>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 		virtual absl::string_view :ref:`type<doxid-classgeode_1_1_attribute_base_1a45818b81b18f3b0cbd335b87fb6c5c0d>`() = 0;
+		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`clone<doxid-classgeode_1_1_attribute_base_1aa26f51fb45f03edb9ffb5afc527d51ef>`(AttributeKey) const = 0;
+		virtual void :ref:`copy<doxid-classgeode_1_1_attribute_base_1a84e8e7e09907c265e4f3bc05e6956c5f>`(const :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`& attribute, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements, AttributeKey) = 0;
 		virtual void :ref:`resize<doxid-classgeode_1_1_attribute_base_1a3e2dbef8e0c1297686d9a7bdaec3133e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` size, AttributeKey) = 0;
 		virtual void :ref:`reserve<doxid-classgeode_1_1_attribute_base_1a1eb03a604e255777c8deee9fb9957873>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` capacity, AttributeKey) = 0;
 		virtual void :ref:`delete_elements<doxid-classgeode_1_1_attribute_base_1adb70e1efee2b3c2df569b62c624bbf04>`(const std::vector<bool>& to_delete, AttributeKey) = 0;

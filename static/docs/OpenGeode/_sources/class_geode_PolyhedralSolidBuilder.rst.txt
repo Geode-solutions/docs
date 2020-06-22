@@ -19,29 +19,21 @@ Interface class to represent the builder of a :ref:`PolyhedralSolid <doxid-class
 	#include <polyhedral_solid_builder.h>
 	
 	template <index_t dimension>
-	class PolyhedralSolidBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`
+	class PolyhedralSolidBuilder: public :ref:`geode::SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`
 	{
 	public:
 		// methods
 	
 		static std::unique_ptr<PolyhedralSolidBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_polyhedral_solid_builder_1a7bda3be99351d67a661f0ceb9a6e776c>`(:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& mesh);
-		void :ref:`set_point<doxid-classgeode_1_1_polyhedral_solid_builder_1a11b09292890093eee287e273df50bba9>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_polyhedral_solid_builder_1a8175bf8ba66b935705317fa0057eb68e>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_polyhedron<doxid-classgeode_1_1_polyhedral_solid_builder_1af4bf926c9c808838c342adbd41ceb606>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> vertices, absl::Span<const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>> facets);
-		void :ref:`set_polyhedron_vertex<doxid-classgeode_1_1_polyhedral_solid_builder_1a6dba41319f48c1a2da2e61f4fa2234a2>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
-		void :ref:`set_polyhedron_adjacent<doxid-classgeode_1_1_polyhedral_solid_builder_1a2597d8361224e70749f60c97e146b2c4>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` adjacent_id);
-		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_polyhedral_solid_builder_1a45556ef309b970fe69837480de337fcb>`();
-		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_polyhedral_solid_builder_1aa6053d23be5aa334bb0ec9dd872178e5>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> polyhedra_to_connect);
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_polyhedra<doxid-classgeode_1_1_polyhedral_solid_builder_1aa5ab6f7fdea10341987a8d8a38154743>`(const std::vector<bool>& to_delete);
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_polyhedral_solid_builder_1afb045b5bc7547b1d031039d2be3f14ff>`();
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_facets<doxid-classgeode_1_1_polyhedral_solid_builder_1ab9a8d2a761d1957900ce88e1c6681d1c>`();
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_edges<doxid-classgeode_1_1_polyhedral_solid_builder_1af5aca4b519c7ba304cba1969bd607511>`();
-		const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& :ref:`polyhedron_around_vertex<doxid-classgeode_1_1_polyhedral_solid_builder_1a80ddb82775444028c339b61d4e0a9466>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
-		void :ref:`associate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_polyhedral_solid_builder_1a3669caa58b7770cd34fddfe16e56e271>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 	
 		void :target:`copy<doxid-classgeode_1_1_polyhedral_solid_builder_1a5de55b086657ef0069ed34f379efe791>`(
 			const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid,
 			BuilderKey
+			);
+	
+		void :target:`set_mesh<doxid-classgeode_1_1_polyhedral_solid_builder_1a59521da08718e35fd6cc273466de2ab7>`(
+			:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& mesh,
+			:ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>` key
 			);
 	};
 
@@ -51,7 +43,7 @@ Interface class to represent the builder of a :ref:`PolyhedralSolid <doxid-class
 	class :ref:`OpenGeodePolyhedralSolidBuilder<doxid-classgeode_1_1_open_geode_polyhedral_solid_builder>`;
 
 	template <index_t dimension>
-	class :ref:`TetrahedralSolidBuilder<doxid-classgeode_1_1_tetrahedral_solid_builder>`;
+	class :ref:`PolyhedralSolidViewBuilder<doxid-classgeode_1_1_polyhedral_solid_view_builder>`;
 
 Inherited Members
 -----------------
@@ -65,7 +57,25 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1a2f167c430554a70b6dd09587d2dbbcff>`(const std::vector<bool>& to_delete);
+		void :ref:`set_mesh<doxid-classgeode_1_1_vertex_set_builder_1ae00c46d0983aef744f8eadba2f0e6fba>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>`);
 		static std::unique_ptr<:ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`> :ref:`create<doxid-classgeode_1_1_vertex_set_builder_1a771651214baac8b1f85db964a73a4952>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh);
+		static std::unique_ptr<:ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_solid_mesh_builder_1ae4bf1f3889aa3198e1e4f178a2669643>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& mesh);
+		void :ref:`set_point<doxid-classgeode_1_1_solid_mesh_builder_1abe40cec543cba8e45414669e2f79b221>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_solid_mesh_builder_1ac722a6250d1c71a934a38e03b58ce0d6>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_polyhedron<doxid-classgeode_1_1_solid_mesh_builder_1ac29ae34b9f7105592542f7feb49476ac>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> vertices, absl::Span<const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>> facets);
+		void :ref:`set_polyhedron_vertex<doxid-classgeode_1_1_solid_mesh_builder_1a2a671a534963827f8543fe5bcec949d5>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		void :ref:`set_polyhedron_adjacent<doxid-classgeode_1_1_solid_mesh_builder_1a04bcc2fa5f0683ef300c3803ef2029cb>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` adjacent_id);
+		void :ref:`unset_polyhedron_adjacent<doxid-classgeode_1_1_solid_mesh_builder_1ad796770e14b37399078225c28176adef>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet);
+		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_solid_mesh_builder_1a6c1e88b2e62239f95bfa8ac1a5ccd7cd>`();
+		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_solid_mesh_builder_1a453601b728f5cee2ed4260152ad98a25>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> polyhedra_to_connect);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_polyhedra<doxid-classgeode_1_1_solid_mesh_builder_1a32f574612c6eccb0ca785a2901b9ea5f>`(const std::vector<bool>& to_delete);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_solid_mesh_builder_1aeaf218f62a394d16e9f9d42ad91648a1>`();
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_facets<doxid-classgeode_1_1_solid_mesh_builder_1abc852be15ef9f2dd79785c09e7452819>`();
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_edges<doxid-classgeode_1_1_solid_mesh_builder_1a11d48ea535b4640b5e6656f58c14c466>`();
+		void :ref:`associate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_solid_mesh_builder_1aa40541c7f2f810609b90037af4c0d968>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		void :ref:`disassociate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_solid_mesh_builder_1ada24ba26ccc6c9e3dff028de0e37606a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		void :ref:`copy<doxid-classgeode_1_1_solid_mesh_builder_1af79edca495dfb0bed0bbdaf464681950>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid_mesh, BuilderKey);
+		void :ref:`set_mesh<doxid-classgeode_1_1_solid_mesh_builder_1a9fe392711684b0c56b017077df8d1d45>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>` key);
 
 .. _details-classgeode_1_1_polyhedral_solid_builder:
 
@@ -98,309 +108,4 @@ Create the builder associated with a :ref:`PolyhedralSolid <doxid-classgeode_1_1
 		- mesh
 
 		- The :ref:`PolyhedralSolid <doxid-classgeode_1_1_polyhedral_solid>` to build/modify
-
-.. index:: pair: function; set_point
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1a11b09292890093eee287e273df50bba9:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
-
-Set coordinates to a vertex. This vertex should be created before.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- vertex_id
-
-		- The vertex, in [0, nb_vertices()-1].
-
-	*
-		- point
-
-		- The vertex coordinates
-
-.. index:: pair: function; create_point
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1a8175bf8ba66b935705317fa0057eb68e:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_point(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
-
-Create a new point with associated coordinates.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- point
-
-		- The point to create
-
-
-
-.. rubric:: Returns:
-
-the index of the created point
-
-.. index:: pair: function; create_polyhedron
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1af4bf926c9c808838c342adbd41ceb606:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_polyhedron(
-		absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> vertices,
-		absl::Span<const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>> facets
-		)
-
-Create a new polyhedron from vertices and facets.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- vertices
-
-		- The vertices defining the polyhedron to create
-
-	*
-		- facets
-
-		- The list of ordered vertices defining all the facets of the polyhedron
-
-
-
-.. rubric:: Returns:
-
-the index of the created polyhedron
-
-.. index:: pair: function; set_polyhedron_vertex
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1a6dba41319f48c1a2da2e61f4fa2234a2:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void set_polyhedron_vertex(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id)
-
-Modify a polyhedron vertex.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- polyhedron_vertex
-
-		- The index of the polyhedron vertex to modify
-
-	*
-		- vertex_id
-
-		- Index of the mesh vertex to set as polyhedron vertex
-
-.. index:: pair: function; set_polyhedron_adjacent
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1a2597d8361224e70749f60c97e146b2c4:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void set_polyhedron_adjacent(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` adjacent_id)
-
-Set a polyhedron adgjacent through a facet.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- polygon_facet
-
-		- The index of the polygon facet
-
-	*
-		- adjacent_id
-
-		- Index of the adjacent polyhedron
-
-.. index:: pair: function; compute_polyhedron_adjacencies
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1a45556ef309b970fe69837480de337fcb:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void compute_polyhedron_adjacencies()
-
-Compute all the adjacencies between the solid polyhedra
-
-.. index:: pair: function; compute_polyhedron_adjacencies
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1aa6053d23be5aa334bb0ec9dd872178e5:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void compute_polyhedron_adjacencies(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> polyhedra_to_connect)
-
-Compute the adjacencies between the given solid polyhedra
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- polyhedra_to_connect
-
-		- Set of polyhedra for which compute adjacencies
-
-.. index:: pair: function; delete_polyhedra
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1aa5ab6f7fdea10341987a8d8a38154743:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> delete_polyhedra(const std::vector<bool>& to_delete)
-
-Delete a set of solid polyhedra
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- to_delete
-
-		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size polyhedral_solid_.nb_polyhedra(). If to_delete[i] is true the polyhedra of index i is deleted, else it is kept.
-
-
-
-.. rubric:: Returns:
-
-the mapping between old polyhedron indices to new ones. Deleted polyhedra new index is NO_ID
-
-.. index:: pair: function; delete_isolated_vertices
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1afb045b5bc7547b1d031039d2be3f14ff:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> delete_isolated_vertices()
-
-Delete all the isolated vertices (not used as polyhedron vertices)
-
-
-
-.. rubric:: Returns:
-
-the mapping between old vertex indices to new ones. Deleted vertices new index is NO_ID
-
-.. index:: pair: function; delete_isolated_facets
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1ab9a8d2a761d1957900ce88e1c6681d1c:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> delete_isolated_facets()
-
-Delete all the isolated facets (not used as polyhedron facets)
-
-
-
-.. rubric:: Returns:
-
-the mapping between old facet indices to new ones. Deleted facets new index is NO_ID
-
-.. index:: pair: function; delete_isolated_edges
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1af5aca4b519c7ba304cba1969bd607511:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> delete_isolated_edges()
-
-Delete all the isolated edges (not used as polyhedron edges)
-
-
-
-.. rubric:: Returns:
-
-the mapping between old edge indices to new ones. Deleted edges new index is NO_ID
-
-.. index:: pair: function; polyhedron_around_vertex
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1a80ddb82775444028c339b61d4e0a9466:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_around_vertex(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
-
-Return one polyhedron with one of the vertices matching given vertex.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- vertex_id
-
-		- Index of the vertex.  If vertex is isolated (no incident polyhedron), default :ref:`PolyhedronVertex <doxid-structgeode_1_1_polyhedron_vertex>` is returned.
-
-.. index:: pair: function; associate_polyhedron_vertex_to_vertex
-.. _doxid-classgeode_1_1_polyhedral_solid_builder_1a3669caa58b7770cd34fddfe16e56e271:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void associate_polyhedron_vertex_to_vertex(
-		const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex,
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
-		)
-
-Set a polyhedron vertex to a given vertex.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- polyhedron_vertex
-
-		- :ref:`PolyhedronVertex <doxid-structgeode_1_1_polyhedron_vertex>` corresponding to the vertex.
-
-	*
-		- vertex_id
-
-		- Index of the vertex.
 

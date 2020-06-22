@@ -9,7 +9,7 @@ class geode::Section
 
 	class_geode_Section_BoundaryCornerRange.rst
 	class_geode_Section_BoundaryLineRange.rst
-	class_geode_Section_EmbeddedSurfaceRange.rst
+	class_geode_Section_EmbeddingSurfaceRange.rst
 	class_geode_Section_IncidentLineRange.rst
 	class_geode_Section_IncidentSurfaceRange.rst
 	class_geode_Section_InternalCornerRange.rst
@@ -40,7 +40,7 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`
 	
 		class :ref:`BoundaryCornerRange<doxid-classgeode_1_1_section_1_1_boundary_corner_range>`;
 		class :ref:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range>`;
-		class :ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_section_1_1_embedded_surface_range>`;
+		class :ref:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range>`;
 		class :ref:`IncidentLineRange<doxid-classgeode_1_1_section_1_1_incident_line_range>`;
 		class :ref:`IncidentSurfaceRange<doxid-classgeode_1_1_section_1_1_incident_surface_range>`;
 		class :ref:`InternalCornerRange<doxid-classgeode_1_1_section_1_1_internal_corner_range>`;
@@ -57,11 +57,11 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`
 		:ref:`InternalCornerRange<doxid-classgeode_1_1_section_1_1_internal_corner_range>` :target:`internal_corners<doxid-classgeode_1_1_section_1aba4b934374a5a0b6097d1ed269527de3>`(const Surface2D& surface) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_internal_lines<doxid-classgeode_1_1_section_1aa4a6f34cbdec01b12fb07fe6181bd388>`(const Surface2D& surface) const;
 		:ref:`InternalLineRange<doxid-classgeode_1_1_section_1_1_internal_line_range>` :target:`internal_lines<doxid-classgeode_1_1_section_1a9622f3a3e2db076868c2e574610e5a96>`(const Surface2D& surface) const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_embedded_surfaces<doxid-classgeode_1_1_section_1a0554e4d1b040827da670af448409232a>`(const Corner2D& corner) const;
-		:ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_section_1_1_embedded_surface_range>` :target:`embedded_surfaces<doxid-classgeode_1_1_section_1a7702ffb08cf613b4062fba70739632e5>`(const Corner2D& corner) const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_embedded_surfaces<doxid-classgeode_1_1_section_1aa9df8bddcd82a064e75a014f7b5fdcb3>`(const Line2D& line) const;
-		:ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_section_1_1_embedded_surface_range>` :target:`embedded_surfaces<doxid-classgeode_1_1_section_1aa20828143b7e2c78f29c6228a4bb3698>`(const Line2D& line) const;
-		:ref:`ItemLineRange<doxid-classgeode_1_1_section_1_1_item_line_range>` :target:`items<doxid-classgeode_1_1_section_1a2d7fb657e22151e3a4fdb55e959aa6cc>`(const ModelBoundary2D& boundary) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_embedding_surfaces<doxid-classgeode_1_1_section_1ab311d9a627a73286c727b637e1a75266>`(const Corner2D& corner) const;
+		:ref:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range>` :target:`embedding_surfaces<doxid-classgeode_1_1_section_1afcb1f494b8a6049f5581315afd3bdb83>`(const Corner2D& corner) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_embedding_surfaces<doxid-classgeode_1_1_section_1a50fb6bd8b5638cb95035746a7a7f45bd>`(const Line2D& line) const;
+		:ref:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range>` :target:`embedding_surfaces<doxid-classgeode_1_1_section_1a9897ae247009058754666a9af5df9927>`(const Line2D& line) const;
+		:ref:`ItemLineRange<doxid-classgeode_1_1_section_1_1_item_line_range>` :target:`model_boundary_items<doxid-classgeode_1_1_section_1aa3eb315aa144562d5c4e80a80f40024b>`(const ModelBoundary2D& boundary) const;
 		bool :target:`is_closed<doxid-classgeode_1_1_section_1a896a8243466a8fd20037fb2f8deda788>`(const Line2D& line) const;
 	
 		bool :target:`is_boundary<doxid-classgeode_1_1_section_1ab92ffe7a199abaadd88c20c98a438fea>`(
@@ -84,7 +84,7 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`
 			const Surface2D& surface
 			) const;
 	
-		bool :target:`is_item<doxid-classgeode_1_1_section_1a5ba5b50742ef5553cd72047543810d71>`(
+		bool :target:`is_model_boundary_item<doxid-classgeode_1_1_section_1a425a07d3731573e93045b5d2d2103fa4>`(
 			const Line2D& line,
 			const ModelBoundary2D& boundary
 			) const;

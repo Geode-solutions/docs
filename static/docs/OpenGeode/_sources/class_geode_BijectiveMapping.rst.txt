@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::BijectiveMapping
+.. _doxid-classgeode_1_1_bijective_mapping:
+
+template class geode::BijectiveMapping
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <mapping.h>
+	
+	template <typename T>
+	class BijectiveMapping
+	{
+	public:
+		// methods
+	
+		void :target:`map<doxid-classgeode_1_1_bijective_mapping_1a30b41b884c31e7ba946e3631e3d2b793>`(
+			const T& in,
+			const T& out
+			);
+	
+		void :target:`reserve<doxid-classgeode_1_1_bijective_mapping_1a734a0c1a5b975f7c1fc1b353c8cf8700>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` capacity);
+		const T& :target:`in2out<doxid-classgeode_1_1_bijective_mapping_1a9d88f5a0597ea40b48c446085863105f>`(const T& in) const;
+		const T& :target:`out2in<doxid-classgeode_1_1_bijective_mapping_1a8fca8a78bf748bf4509d12b808e21f9d>`(const T& out) const;
+	};

@@ -1,0 +1,59 @@
+.. index:: pair: class; geode::detail::EdgesViewImpl
+.. _doxid-classgeode_1_1detail_1_1_edges_view_impl:
+
+template class geode::detail::EdgesViewImpl
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <edges_view_impl.h>
+	
+	template <index_t dimension, typename Mesh>
+	class EdgesViewImpl: public :ref:`geode::detail::PointsViewImpl<doxid-classgeode_1_1detail_1_1_points_view_impl>`
+	{
+	public:
+		// construction
+	
+		:target:`EdgesViewImpl<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a2021b76faa2d4c0b9f85c11090fe3c03>`(
+			Mesh& mesh_view,
+			Mesh& mesh
+			);
+
+		// methods
+	
+		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`get_edge_from_vertices<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a1b2296dfa74ec166d03c877d2be3a454>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
+		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :target:`get_edge_vertices<doxid-classgeode_1_1detail_1_1_edges_view_impl_1ab51ea6cc3ff8e3353c755194facab3a1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`viewed_edge<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a910479c1640030134662b11ba6816948>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`edge_in_view<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a9dff2f7bda1748fa5c59e0eb4c972b86>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		void :target:`add_viewed_edge<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a22a4bf2988ce9afb5d0a591207544987>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id);
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`SolidMeshViewImpl<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshViewImpl<doxid-classgeode_1_1detail_1_1_surface_mesh_view_impl>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`get_point<doxid-classgeode_1_1detail_1_1_points_view_impl_1ae90ccd03f39878b4e322284f9abe3dcb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`viewed_vertex<doxid-classgeode_1_1detail_1_1_points_view_impl_1a3d1f88c1ddd493a70ac59980b775f5a6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`vertex_in_view<doxid-classgeode_1_1detail_1_1_points_view_impl_1a995fe9567687b931441442960bb9825c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_viewed_vertex<doxid-classgeode_1_1detail_1_1_points_view_impl_1a946290d4f95b91c8101c2b3ee3e92f2a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+

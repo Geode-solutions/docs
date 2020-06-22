@@ -1,0 +1,50 @@
+.. index:: pair: class; geode::MeshBuilderFactory
+.. _doxid-classgeode_1_1_mesh_builder_factory:
+
+class geode::MeshBuilderFactory
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <mesh_builder_factory.h>
+	
+	class MeshBuilderFactory: public :ref:`geode::Factory<doxid-classgeode_1_1_factory>`
+	{
+	public:
+		// methods
+	
+		template <typename MeshBuilder>
+		static void :target:`register_mesh_builder<doxid-classgeode_1_1_mesh_builder_factory_1abd93916ef7617388e837a7b9c6555d1e>`(:ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key);
+	
+		template <typename MeshBuilder, typename Mesh>
+		static std::unique_ptr<MeshBuilder> :target:`create_mesh_builder<doxid-classgeode_1_1_mesh_builder_factory_1a841b8c316a8676fce036495d575a925f>`(Mesh& mesh);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef typename std::add_pointer<std::unique_ptr<BaseClass>(Args...)>::type :ref:`Creator<doxid-classgeode_1_1_factory_1a8a5f9b2c866fcbf7da3cfdc53660a484>`;
+		typedef absl::flat_hash_map<Key, :ref:`Creator<doxid-classgeode_1_1_factory_1a8a5f9b2c866fcbf7da3cfdc53660a484>`> :ref:`FactoryStore<doxid-classgeode_1_1_factory_1a001ff1e87ff1cef75d3a42a88611e6bd>`;
+
+		// methods
+	
+		template <typename DerivedClass>
+		static void :ref:`register_creator<doxid-classgeode_1_1_factory_1a544b55fde53577df07da7726b7248b00>`(Key key);
+	
+		static std::unique_ptr<BaseClass> :ref:`create<doxid-classgeode_1_1_factory_1aa21efa5ceb8b695190bffd2b7969d102>`(const Key& key, Args... args);
+		static absl::FixedArray<Key> :ref:`list_creators<doxid-classgeode_1_1_factory_1aa5b6032e7ff08ca48747586c78b8cd99>`();
+		static bool :ref:`has_creator<doxid-classgeode_1_1_factory_1add6d9295d642005c51a23bd5e03b6212>`(const Key& key);
+

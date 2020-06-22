@@ -37,7 +37,7 @@ class geode::Relationships::EmbeddingRangeIterator
 
 	// direct descendants
 
-	class :ref:`EmbeddedBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedded_block_range>`;
-	class :ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range>`;
+	class :ref:`EmbeddingBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range>`;
+	class :ref:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range>`;
 	class :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`;
-	class :ref:`EmbeddedSurfaceRange<doxid-classgeode_1_1_section_1_1_embedded_surface_range>`;
+	class :ref:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range>`;

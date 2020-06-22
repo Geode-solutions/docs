@@ -18,10 +18,6 @@ Implementation class for :ref:`EdgedCurveBuilder <doxid-classgeode_1_1_edged_cur
 	template <index_t dimension>
 	class OpenGeodeEdgedCurveBuilder: public :ref:`geode::EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`
 	{
-	public:
-		// construction
-	
-		:target:`OpenGeodeEdgedCurveBuilder<doxid-classgeode_1_1_open_geode_edged_curve_builder_1acf333a80a9572b357801d1586af815c9>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve);
 	};
 
 Inherited Members
@@ -36,6 +32,7 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1a2f167c430554a70b6dd09587d2dbbcff>`(const std::vector<bool>& to_delete);
+		void :ref:`set_mesh<doxid-classgeode_1_1_vertex_set_builder_1ae00c46d0983aef744f8eadba2f0e6fba>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>`);
 		static std::unique_ptr<:ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`> :ref:`create<doxid-classgeode_1_1_vertex_set_builder_1a771651214baac8b1f85db964a73a4952>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh);
 		static std::unique_ptr<:ref:`GraphBuilder<doxid-classgeode_1_1_graph_builder>`> :ref:`create<doxid-classgeode_1_1_graph_builder_1ad0246b4ef3c0eeab0aec072ab045d2f2>`(:ref:`Graph<doxid-classgeode_1_1_graph>`& mesh);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_edge<doxid-classgeode_1_1_graph_builder_1a0a07a5a07a8b4b0ec911e1a3080cc7a2>`();
@@ -45,8 +42,10 @@ Inherited Members
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_edges<doxid-classgeode_1_1_graph_builder_1a720f73e63377bc700fb57c37e95bd99c>`(const std::vector<bool>& to_delete);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_graph_builder_1a9de42792403694c3cffbfb504cd9de62>`();
 		void :ref:`copy<doxid-classgeode_1_1_graph_builder_1ac8dba2461fe4b63b5259ee614b3de9ce>`(const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph, BuilderKey);
+		void :ref:`set_mesh<doxid-classgeode_1_1_graph_builder_1a929583ba3b6e4652f108187f8f524bd4>`(:ref:`Graph<doxid-classgeode_1_1_graph>`& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>` key);
 		static std::unique_ptr<:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_edged_curve_builder_1ac1d31e425b0233fca9d10f07d735df23>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh);
 		void :ref:`set_point<doxid-classgeode_1_1_edged_curve_builder_1a94e16d2c8d7fe3d83c3bc250f1e3bc84>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_edged_curve_builder_1a22553205c7f14c108a2904163ec79cce>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 		void :ref:`copy<doxid-classgeode_1_1_edged_curve_builder_1a36ce7c529523d736c829aae94bef8303>`(const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve, BuilderKey);
+		void :ref:`set_mesh<doxid-classgeode_1_1_edged_curve_builder_1ab48d025ac8adee1daaca13c9443aac2d>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>` key);
 

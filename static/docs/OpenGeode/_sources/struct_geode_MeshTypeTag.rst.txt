@@ -1,0 +1,11 @@
+.. index:: pair: struct; geode::MeshTypeTag
+.. _doxid-structgeode_1_1_mesh_type_tag:
+
+struct geode::MeshTypeTag
+=========================
+
+.. toctree::
+	:hidden:
+
+
+

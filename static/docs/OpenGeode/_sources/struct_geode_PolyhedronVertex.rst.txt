@@ -13,7 +13,7 @@ This struct represents a local vertex in a polyhedron
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <polyhedral_solid.h>
+	#include <solid_mesh.h>
 	
 	struct PolyhedronVertex
 	{

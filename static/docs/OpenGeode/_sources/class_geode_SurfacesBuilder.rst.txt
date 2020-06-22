@@ -25,7 +25,7 @@ Overview
 		// methods
 	
 		void :target:`load_surfaces<doxid-classgeode_1_1_surfaces_builder_1af0db882b33d74874a9ab309d23a998d0>`(absl::string_view directory);
-		std::unique_ptr<:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`<dimension>> :ref:`surface_mesh_builder<doxid-classgeode_1_1_surfaces_builder_1a28413b308d264eb68e453e253591a62c>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		std::unique_ptr<:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension>> :ref:`surface_mesh_builder<doxid-classgeode_1_1_surfaces_builder_1afc9aa9fc11b2e823438bacc3857ac06b>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 	
 		void :target:`set_surface_name<doxid-classgeode_1_1_surfaces_builder_1ade216cb2926a07f4aece2f1910977252>`(
 			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id,
@@ -48,12 +48,12 @@ Methods
 -------
 
 .. index:: pair: function; surface_mesh_builder
-.. _doxid-classgeode_1_1_surfaces_builder_1a28413b308d264eb68e453e253591a62c:
+.. _doxid-classgeode_1_1_surfaces_builder_1afc9aa9fc11b2e823438bacc3857ac06b:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::unique_ptr<:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`<dimension>> surface_mesh_builder(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id)
+	std::unique_ptr<:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension>> surface_mesh_builder(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id)
 
 Get a pointer to the builder of a :ref:`Surface <doxid-classgeode_1_1_surface>` mesh
 

@@ -32,6 +32,12 @@ class geode::VertexSetOutput
 	template <index_t dimension>
 	class :ref:`PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`;
 
+	template <index_t dimension>
+	class :ref:`TetrahedralSolidOutput<doxid-classgeode_1_1_tetrahedral_solid_output>`;
+
+	template <index_t dimension>
+	class :ref:`TriangulatedSurfaceOutput<doxid-classgeode_1_1_triangulated_surface_output>`;
+
 Inherited Members
 -----------------
 

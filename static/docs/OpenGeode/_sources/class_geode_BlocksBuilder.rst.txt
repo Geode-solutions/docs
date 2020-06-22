@@ -25,7 +25,7 @@ Overview
 		// methods
 	
 		void :target:`load_blocks<doxid-classgeode_1_1_blocks_builder_1a07055febb98f04a79bf3a6f22d3ec6dd>`(absl::string_view directory);
-		std::unique_ptr<:ref:`PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`<dimension>> :ref:`block_mesh_builder<doxid-classgeode_1_1_blocks_builder_1a36da6d0d51e60075df1dc45529f3592f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		std::unique_ptr<:ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`<dimension>> :ref:`block_mesh_builder<doxid-classgeode_1_1_blocks_builder_1a22ae0274bdfea5373d6e8b365547de4d>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 	
 		void :target:`set_block_name<doxid-classgeode_1_1_blocks_builder_1a8b748c7a5bf428c3609326d965fe185b>`(
 			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id,
@@ -47,12 +47,12 @@ Methods
 -------
 
 .. index:: pair: function; block_mesh_builder
-.. _doxid-classgeode_1_1_blocks_builder_1a36da6d0d51e60075df1dc45529f3592f:
+.. _doxid-classgeode_1_1_blocks_builder_1a22ae0274bdfea5373d6e8b365547de4d:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::unique_ptr<:ref:`PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`<dimension>> block_mesh_builder(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id)
+	std::unique_ptr<:ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`<dimension>> block_mesh_builder(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id)
 
 Get a pointer to the builder of a :ref:`Block <doxid-classgeode_1_1_block>` mesh
 

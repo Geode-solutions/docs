@@ -36,4 +36,9 @@ template class geode::detail::ComponentsStorage
 		void :target:`save_components<doxid-classgeode_1_1detail_1_1_components_storage_1a2158044d6810aeba3e9ec4dc4069a2c8>`(absl::string_view filename) const;
 		void :target:`delete_component<doxid-classgeode_1_1detail_1_1_components_storage_1a3a34046b654d94a04665d5f63789cd40>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 		void :target:`load_components<doxid-classgeode_1_1detail_1_1_components_storage_1ae67232a1413d9477392cc3b5e0c3778c>`(absl::string_view filename);
+	
+		std::string :target:`find_file<doxid-classgeode_1_1detail_1_1_components_storage_1a4cbc9abf93bbeda5e9f868e999955e43>`(
+			absl::string_view directory,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id
+			) const;
 	};

@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::BRep::EmbeddedSurfaceRange
-.. _doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range:
+.. index:: pair: class; geode::Section::EmbeddingSurfaceRange
+.. _doxid-classgeode_1_1_section_1_1_embedding_surface_range:
 
-class geode::BRep::EmbeddedSurfaceRange
-=======================================
+class geode::Section::EmbeddingSurfaceRange
+===========================================
 
 .. toctree::
 	:hidden:
@@ -13,29 +13,29 @@ class geode::BRep::EmbeddedSurfaceRange
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <brep.h>
+	#include <section.h>
 	
-	class EmbeddedSurfaceRange:
+	class EmbeddingSurfaceRange:
 	    public :ref:`geode::Relationships::EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`,
 	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
 	{
 	public:
 		// construction
 	
-		:target:`EmbeddedSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range_1a942be5e95a838dbd458b535b45fcdbda>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Corner3D& corner
+		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range_1ae34ea33195811f7f0314508e78266bda>`(
+			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+			const Line2D& line
 			);
 	
-		:target:`EmbeddedSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range_1a966958445b9a30abbd967c57bb95a7ca>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Line3D& line
+		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range_1a7152fb36b65d64cfbcaa54a81f6bb7dd>`(
+			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+			const Corner2D& corner
 			);
 
 		// methods
 	
-		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range_1a5761d2c153d259ea230e06f4fa847fd0>` ();
-		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_embedded_surface_range_1ad801163f8881173d0b0fda947bf8ca50>` () const;
+		void :target:`operator ++<doxid-classgeode_1_1_section_1_1_embedding_surface_range_1af3c733ceea3ae8b677260c4f5659a398>` ();
+		const Surface2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_embedding_surface_range_1a396886643b0f6d46a16f5c9ed252e666>` () const;
 	};
 
 Inherited Members

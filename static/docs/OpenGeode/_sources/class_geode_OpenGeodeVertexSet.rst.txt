@@ -20,9 +20,10 @@ class geode::OpenGeodeVertexSet
 	public:
 		// methods
 	
-		static :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :target:`type_name_static<doxid-classgeode_1_1_open_geode_vertex_set_1a7490e40f875b6b40daa47807ef2c6286>`();
+		static :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name_static<doxid-classgeode_1_1_open_geode_vertex_set_1abe2eedcb272dbdc4331391095d9c2de3>`();
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_open_geode_vertex_set_1a4e6d778702f707c1ba06e5bc0cbebe00>`();
-		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :target:`type_name<doxid-classgeode_1_1_open_geode_vertex_set_1a9f812a7f6886aaec38fbd7300c435efa>`() const;
+		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_vertex_set_1a5744593286cab2ec02c8f5ab0344a36b>`() const;
+		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_vertex_set_1a9f812a7f6886aaec38fbd7300c435efa>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_vertex_set_1a3343a5b6a847b003a5b74f6056b9a0a1>`() const;
 	};
 
@@ -36,10 +37,12 @@ Inherited Members
 		// methods
 	
 		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
-		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a7dc1d253ac9d6a68c8380973f17d5667>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a4cedcfab9f71d2cbcde7d049d0556d21>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
+		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :ref:`type_name_static<doxid-classgeode_1_1_vertex_set_1adde63eb22b6564fd2ffd20bb374c3996>`();
 		std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`clone<doxid-classgeode_1_1_vertex_set_1a59f8cdf17a798e4746e3b90baa8be080>`() const;
 		virtual absl::string_view :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1adee799d7c11a4401041b9da48fcbd86a>`() const = 0;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
-		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :ref:`impl_name<doxid-classgeode_1_1_vertex_set_1a27db2667d140cc8f6645531788765815>`() const = 0;
+		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
 

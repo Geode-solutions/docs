@@ -16,7 +16,7 @@ template class geode::TriangulatedSurfaceOutput
 	#include <triangulated_surface_output.h>
 	
 	template <index_t dimension>
-	class TriangulatedSurfaceOutput: public :ref:`geode::PolygonalSurfaceOutput<doxid-classgeode_1_1_polygonal_surface_output>`
+	class TriangulatedSurfaceOutput: public :ref:`geode::VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`
 	{
 	};
 

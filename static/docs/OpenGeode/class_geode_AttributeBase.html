@@ -50,15 +50,15 @@
         <span class="n">AttributeKey</span>
         <span class="p">);</span>
 
-    <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">AttributeBase</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-base-1acea72fe269bc80ef99e4e2b869d46c45"><span></span><span class="n">clone</span></span><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-    <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-base-1ab69e09b7f30008232ba265e3e6150e5d"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">AttributeBase</span><span class="o">&amp;</span> <span class="n">attribute</span><span class="p">,</span>
-        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_elements</span>
-        <span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
     <span class="k">virtual</span> <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-base-1a1a5a7f1d11dc8e0dc7fb066726e35926"><span></span><span class="n">generic_value</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">virtual</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-base-1a45818b81b18f3b0cbd335b87fb6c5c0d"><span></span><span class="n">type</span></span><span></span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">AttributeBase</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-base-1aa26f51fb45f03edb9ffb5afc527d51ef"><span></span><span class="n">clone</span></span><span></span><span class="p">(</span><span class="n">AttributeKey</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-base-1a84e8e7e09907c265e4f3bc05e6956c5f"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">AttributeBase</span><span class="o">&amp;</span> <span class="n">attribute</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_elements</span><span class="p">,</span>
+        <span class="n">AttributeKey</span>
+        <span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
     <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-base-1a3e2dbef8e0c1297686d9a7bdaec3133e"><span></span><span class="n">resize</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">size</span><span class="p">,</span>

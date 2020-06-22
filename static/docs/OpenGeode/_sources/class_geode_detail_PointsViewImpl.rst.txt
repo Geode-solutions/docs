@@ -1,0 +1,40 @@
+.. index:: pair: class; geode::detail::PointsViewImpl
+.. _doxid-classgeode_1_1detail_1_1_points_view_impl:
+
+template class geode::detail::PointsViewImpl
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <points_view_impl.h>
+	
+	template <index_t dimension, typename Mesh>
+	class PointsViewImpl
+	{
+	public:
+		// construction
+	
+		:target:`PointsViewImpl<doxid-classgeode_1_1detail_1_1_points_view_impl_1a159d4f501449a9c8aafe263441940036>`(
+			:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh_view,
+			Mesh& mesh
+			);
+
+		// methods
+	
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`get_point<doxid-classgeode_1_1detail_1_1_points_view_impl_1ae90ccd03f39878b4e322284f9abe3dcb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`viewed_vertex<doxid-classgeode_1_1detail_1_1_points_view_impl_1a3d1f88c1ddd493a70ac59980b775f5a6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_in_view<doxid-classgeode_1_1detail_1_1_points_view_impl_1a995fe9567687b931441442960bb9825c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`add_viewed_vertex<doxid-classgeode_1_1detail_1_1_points_view_impl_1a946290d4f95b91c8101c2b3ee3e92f2a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+	};
+
+	// direct descendants
+
+	template <index_t dimension, typename Mesh>
+	class :ref:`EdgesViewImpl<doxid-classgeode_1_1detail_1_1_edges_view_impl>`;

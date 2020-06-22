@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="template class geode::Blocks" href="class_geode_Blocks.html" />
-    <link rel="prev" title="template class geode::BeginEnd" href="class_geode_BeginEnd.html" />
+    <link rel="prev" title="template class geode::BijectiveMapping" href="class_geode_BijectiveMapping.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -46,10 +46,11 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a0e3e295d582bea24a87d941f721edcd3"><span></span><span class="n">Block</span></span><span></span><span class="p">(</span><span class="n">Block</span><span class="o">&amp;&amp;</span><span class="p">);</span>
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a18f1fa9eafdce67c86e813eca1e27c33"><span></span><span class="n">Block</span></span><span></span><span class="p">(</span><span class="n">BlocksKey</span><span class="p">);</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a576c5edbd2fd83f963713b751512748b"><span></span><span class="n">Block</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1ad3ab6ea798e33840905c2502e93e2707"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a320472d69fef6dbf7c75dcf93e566a7f"><span></span><span class="n">Block</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
         <span class="n">BlocksKey</span>
         <span class="p">);</span>
 
@@ -57,16 +58,21 @@
 
     <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a478d8946a6d5a83e268b184c105537be"><span></span><span class="n">component_type</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a9564b4b1e94aed521790de6c89d993f8"><span></span><span class="n">component_id</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_PolyhedralSolid.html#doxid-classgeode-1-1-polyhedral-solid"><span class="std std-ref">PolyhedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a5f0626e3cb5bf31f7fb6771638893f8b"><span></span><span class="n">mesh</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a2e83aa928e74ded0bdb6518f93f1f2db"><span></span><span class="n">ensure_mesh_type</span></span><span></span><span class="p">(</span><span class="n">BlocksKey</span><span class="p">);</span>
-    <a class="reference internal" href="class_geode_PolyhedralSolid.html#doxid-classgeode-1-1-polyhedral-solid"><span class="std std-ref">PolyhedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1ab3eeb74ff69ad06d1bd91f24304cd9dc"><span></span><span class="n">modifiable_mesh</span></span><span></span><span class="p">(</span><span class="n">BlocksKey</span><span class="p">);</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1ad501f117e3ed64b37043244eeba44950"><span></span><span class="n">mesh</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a8fdd05a8a9fb25b8f918dc44f13808f5"><span></span><span class="n">mesh_type</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a652124b10751863ab6a9d717cb96b5d4"><span></span><span class="n">modifiable_mesh</span></span><span></span><span class="p">(</span><span class="n">BlocksKey</span><span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a1820446f94784339bb289180aa87977f"><span></span><span class="n">set_mesh</span></span><span></span><span class="p">(</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolyhedralSolid.html#doxid-classgeode-1-1-polyhedral-solid"><span class="std std-ref">PolyhedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a302738975c62d2a0c177469b0e9ab6db"><span></span><span class="n">set_mesh</span></span><span></span><span class="p">(</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">mesh</span><span class="p">,</span>
+        <span class="n">BlocksKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1aad9bc6089a9147b215d8d7226772041d"><span></span><span class="n">set_mesh</span></span><span></span><span class="p">(</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">mesh</span><span class="p">,</span>
         <span class="n">BlocksBuilderKey</span>
         <span class="p">);</span>
 
-    <a class="reference internal" href="class_geode_PolyhedralSolid.html#doxid-classgeode-1-1-polyhedral-solid"><span class="std std-ref">PolyhedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1aded09671b08b53cd417be6435f98e9dd"><span></span><span class="n">modifiable_mesh</span></span><span></span><span class="p">(</span><span class="n">BlocksBuilderKey</span><span class="p">);</span>
+    <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1aca6d316e2356f59f9c45d82f10ff8b1c"><span></span><span class="n">modifiable_mesh</span></span><span></span><span class="p">(</span><span class="n">BlocksBuilderKey</span><span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-block-1a4fd3c3a7b3707cc3f3490707ad62035c"><span></span><span class="n">set_block_name</span></span><span></span><span class="p">(</span>
         <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">,</span>

@@ -19,6 +19,10 @@ This abstract class represents a component that can be used in assembly.
 	class Component
 	{
 	public:
+		// construction
+	
+		:target:`Component<doxid-classgeode_1_1_component_1a8fdd0fc8c352de0c16398030e92dbf7a>`(Component&&);
+
 		// methods
 	
 		absl::string_view :target:`name<doxid-classgeode_1_1_component_1affdaaf238e5d4fa561f32f7c8c4215f2>`() const;

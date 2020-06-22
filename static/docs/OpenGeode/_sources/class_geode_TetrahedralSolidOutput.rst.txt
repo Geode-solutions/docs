@@ -16,7 +16,7 @@ template class geode::TetrahedralSolidOutput
 	#include <tetrahedral_solid_output.h>
 	
 	template <index_t dimension>
-	class TetrahedralSolidOutput: public :ref:`geode::PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`
+	class TetrahedralSolidOutput: public :ref:`geode::VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`
 	{
 	};
 

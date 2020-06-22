@@ -20,11 +20,6 @@ template class geode::PolyhedralSolidOutput
 	{
 	};
 
-	// direct descendants
-
-	template <index_t dimension>
-	class :ref:`TetrahedralSolidOutput<doxid-classgeode_1_1_tetrahedral_solid_output>`;
-
 Inherited Members
 -----------------
 

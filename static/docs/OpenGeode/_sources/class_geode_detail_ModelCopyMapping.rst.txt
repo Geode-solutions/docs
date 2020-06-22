@@ -1,0 +1,30 @@
+.. index:: pair: class; geode::detail::ModelCopyMapping
+.. _doxid-classgeode_1_1detail_1_1_model_copy_mapping:
+
+class geode::detail::ModelCopyMapping
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <copy.h>
+	
+	class ModelCopyMapping
+	{
+	public:
+		// methods
+	
+		:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>`& :target:`at<doxid-classgeode_1_1detail_1_1_model_copy_mapping_1a24c54abe83b47f8bd2bacb60ccfcffae>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type);
+		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>`& :target:`at<doxid-classgeode_1_1detail_1_1_model_copy_mapping_1a78e48a73de6dbff4a8e439fb81190c38>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
+	
+		void :target:`emplace<doxid-classgeode_1_1detail_1_1_model_copy_mapping_1a4aeda5cd7e1332922d3e10e1ef6e17ad>`(
+			const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type,
+			:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` mapping
+			);
+	};

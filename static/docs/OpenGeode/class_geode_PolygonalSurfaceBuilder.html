@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="template class geode::PolygonalSurfaceInput" href="class_geode_PolygonalSurfaceInput.html" />
-    <link rel="prev" title="template class geode::PolygonalSurfaceBase" href="class_geode_PolygonalSurfaceBase.html" />
+    <link rel="prev" title="template class geode::PolygonalSurface" href="class_geode_PolygonalSurface.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -43,28 +43,20 @@
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;polygonal_surface_builder.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="nl">PolygonalSurfaceBuilder</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">geode::VertexSetBuilder</span></a><span></span>
+<span class="k">class</span> <span class="nl">PolygonalSurfaceBuilder</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder"><span class="std std-ref">geode::SurfaceMeshBuilder</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
     <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurfaceBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1aa877f758121e2aab2ed31477bb4e5a54"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1a664d0624465baaced2600e02800531a5"><span class="std std-ref">set_point</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1a791ef3cf6547201245337b18bbdccb87"><span class="std std-ref">create_point</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1ac1a1a2e6ae01bb56cc9db6e6f2a96539"><span class="std std-ref">create_polygon</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">vertices</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1a6b6192a1b7aa6f65c9fc631b18fb704b"><span class="std std-ref">set_polygon_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1a6055edf18438b350d5c73977eb1f41f6"><span class="std std-ref">replace_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">old_vertex_id</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">new_vertex_id</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1a78c5c334ba4afeb4af32af1787c64dad"><span class="std std-ref">set_polygon_adjacent</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">adjacent_id</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1a8665365e7b27d33811a05dce03628cc5"><span class="std std-ref">compute_polygon_adjacencies</span></a><span></span><span class="p">();</span>
-    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1ae79eb606a519f696b43723e78cffea54"><span class="std std-ref">compute_polygon_adjacencies</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">polygons_to_connect</span><span class="p">);</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1ac2d12f30e3ff3dad121039cd992c9a58"><span class="std std-ref">delete_polygons</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1a0bedbf13ccf5f17bbb0d56a51d9d2aff"><span class="std std-ref">delete_isolated_vertices</span></a><span></span><span class="p">();</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1a73424cabd5a93ec0ed8834e597e9e195"><span class="std std-ref">delete_isolated_edges</span></a><span></span><span class="p">();</span>
-    <span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1abf8f736aab76a65d4230998fe36ce4c1"><span class="std std-ref">polygon_around_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-polygonal-surface-builder-1a52fd6bf957792f504870ba5e159184f8"><span class="std std-ref">associate_polygon_vertex_to_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polygonal-surface-builder-1aa3e4bcaa993d5980f67ad1c3e5e96fd9"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">polygonal_surface</span><span class="p">,</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polygonal-surface-builder-1a959db7ef81c94da78e3bd9eb7dde73c4"><span></span><span class="n">set_mesh</span></span><span></span><span class="p">(</span>
+        <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+        <a class="reference internal" href="class_geode_MeshBuilderFactoryKey.html#doxid-classgeode-1-1-mesh-builder-factory-key"><span class="std std-ref">MeshBuilderFactoryKey</span></a><span></span> <span class="n">key</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-polygonal-surface-builder-1a2fa78313b9045abebffafc7ae6859b8c"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface_mesh</span><span class="p">,</span>
         <span class="n">BuilderKey</span>
         <span class="p">);</span>
 <span class="p">};</span>
@@ -75,7 +67,7 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodePolygonalSurfaceBuilder.html#doxid-classgeode-1-1-open-geode-polygonal-surface-builder"><span class="std std-ref">OpenGeodePolygonalSurfaceBuilder</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_TriangulatedSurfaceBuilder.html#doxid-classgeode-1-1-triangulated-surface-builder"><span class="std std-ref">TriangulatedSurfaceBuilder</span></a><span></span><span class="p">;</span></pre>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PolygonalSurfaceViewBuilder.html#doxid-classgeode-1-1-polygonal-surface-view-builder"><span class="std std-ref">PolygonalSurfaceViewBuilder</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
 <h3>Inherited Members</h3>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
@@ -84,7 +76,25 @@
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1ad20a5799994288413a1f198dbe0a505d"><span class="std std-ref">create_vertex</span></a><span></span><span class="p">();</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1a61231a71fdad16ddb2b7e14ebc21a772"><span class="std std-ref">create_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">);</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1a2f167c430554a70b6dd09587d2dbbcff"><span class="std std-ref">delete_vertices</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
-    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">VertexSetBuilder</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1a771651214baac8b1f85db964a73a4952"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span></pre>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1ae00c46d0983aef744f8eadba2f0e6fba"><span class="std std-ref">set_mesh</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span> <a class="reference internal" href="class_geode_MeshBuilderFactoryKey.html#doxid-classgeode-1-1-mesh-builder-factory-key"><span class="std std-ref">MeshBuilderFactoryKey</span></a><span></span><span class="p">);</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">VertexSetBuilder</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1a771651214baac8b1f85db964a73a4952"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder"><span class="std std-ref">SurfaceMeshBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1a3dd05fba0da3a5d38f4454d8f1a30313"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1aa159bc22122d10300785d6acc5ad2270"><span class="std std-ref">set_point</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1ad8183ea74cb99fb6d2ec2994a7b5d705"><span class="std std-ref">create_point</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1a6063056553b4f4b55a28f2f38cfabb90"><span class="std std-ref">create_polygon</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">vertices</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1a2ec2acc13bc870d4ad6f1a0dece1354d"><span class="std std-ref">set_polygon_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1a85855cbe2571545fde17fbe126b65d33"><span class="std std-ref">replace_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">old_vertex_id</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">new_vertex_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1ad3832f6730a4f1070c6d5b86769050a2"><span class="std std-ref">set_polygon_adjacent</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">adjacent_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1aa38e83f9906577c33dd0f93fefcb1f57"><span class="std std-ref">unset_polygon_adjacent</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1aa7408ae0c41006bde6b38debfac45c43"><span class="std std-ref">compute_polygon_adjacencies</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1a0ec4744301db4bfbb03a2c269620bb10"><span class="std std-ref">compute_polygon_adjacencies</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">polygons_to_connect</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1ae2d50c247d8a4f6d99f75945387d1333"><span class="std std-ref">delete_polygons</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1a825f04ca1a2a1e7ce28c64e90b8e54a0"><span class="std std-ref">delete_isolated_vertices</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1a8406833a1b2767f485dc4e2edb518d9f"><span class="std std-ref">delete_isolated_edges</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1aae4c8f265f35d2693ad24c1425fab3f2"><span class="std std-ref">associate_polygon_vertex_to_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1ad9efd670b129a62d5164d804da05bc31"><span class="std std-ref">disassociate_polygon_vertex_to_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1afee86ff47dbfedb04a142fd24fc75fb4"><span class="std std-ref">copy</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface_mesh</span><span class="p">,</span> <span class="n">BuilderKey</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1a528b779cdbc391f3f586a5f283c0de8a"><span class="std std-ref">set_mesh</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span> <a class="reference internal" href="class_geode_MeshBuilderFactoryKey.html#doxid-classgeode-1-1-mesh-builder-factory-key"><span class="std std-ref">MeshBuilderFactoryKey</span></a><span></span> <span class="n">key</span><span class="p">);</span></pre>
 </div>
 </div>
 <div class="section" id="detailed-documentation">
@@ -103,177 +113,6 @@
 <tbody>
 <tr class="row-odd"><td><p>mesh</p></td>
 <td><p>The <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a> to build/modify</p></td>
-</tr>
-</tbody>
-</table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1a664d0624465baaced2600e02800531a5"><span id="index-2"></span><span></span><span class="kt">void</span> <span class="n">set_point</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
-<p>Set coordinates to a vertex. This vertex should be created before.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>vertex_id</p></td>
-<td><p>The vertex, in [0, nb_vertices()-1].</p></td>
-</tr>
-<tr class="row-even"><td><p>point</p></td>
-<td><p>The vertex coordinates</p></td>
-</tr>
-</tbody>
-</table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1a791ef3cf6547201245337b18bbdccb87"><span id="index-3"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_point</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
-<p>Create a new point with associated coordinates.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>point</p></td>
-<td><p>The point to create</p></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Returns:</p>
-<p>the index of the created point</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1ac1a1a2e6ae01bb56cc9db6e6f2a96539"><span id="index-4"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_polygon</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">vertices</span><span class="p">)</span></pre>
-<p>Create a new polygon from vertices.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>vertices</p></td>
-<td><p>The ordered vertices defining the polygon to create</p></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Returns:</p>
-<p>the index of the created polygon</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1a6b6192a1b7aa6f65c9fc631b18fb704b"><span id="index-5"></span><span></span><span class="kt">void</span> <span class="n">set_polygon_vertex</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span></pre>
-<p>Modify a polygon vertex.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>polygon_vertex</p></td>
-<td><p>The index of the polygon vertex to modify</p></td>
-</tr>
-<tr class="row-even"><td><p>vertex_id</p></td>
-<td><p>Index of the mesh vertex to set as polygon vertex</p></td>
-</tr>
-</tbody>
-</table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1a6055edf18438b350d5c73977eb1f41f6"><span id="index-6"></span><span></span><span class="kt">void</span> <span class="n">replace_vertex</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">old_vertex_id</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">new_vertex_id</span><span class="p">)</span></pre>
-<p>Replace old polygon vertices from a given vertex to another.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>old_vertex_id</p></td>
-<td><p>Index of the initial mesh vertex to modify</p></td>
-</tr>
-<tr class="row-even"><td><p>new_vertex_id</p></td>
-<td><p>Index of the target mesh vertex to set as polygon vertex</p></td>
-</tr>
-</tbody>
-</table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1a78c5c334ba4afeb4af32af1787c64dad"><span id="index-7"></span><span></span><span class="kt">void</span> <span class="n">set_polygon_adjacent</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_edge</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">adjacent_id</span><span class="p">)</span></pre>
-<p>Set a polygon adjacent through an edge.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>polygon_edge</p></td>
-<td><p>The index of the polygon edge</p></td>
-</tr>
-<tr class="row-even"><td><p>adjacent_id</p></td>
-<td><p>Index of the adjacent polygon</p></td>
-</tr>
-</tbody>
-</table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1a8665365e7b27d33811a05dce03628cc5"><span id="index-8"></span><span></span><span class="kt">void</span> <span class="n">compute_polygon_adjacencies</span><span class="p">()</span></pre>
-<p>Compute all the adjacencies between the surface polygons</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1ae79eb606a519f696b43723e78cffea54"><span id="index-9"></span><span></span><span class="kt">void</span> <span class="n">compute_polygon_adjacencies</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">polygons_to_connect</span><span class="p">)</span></pre>
-<p>Compute the adjacencies between the given surface polygons</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>polygons_to_connect</p></td>
-<td><p>Set of polygons for which compute adjacencies</p></td>
-</tr>
-</tbody>
-</table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1ac2d12f30e3ff3dad121039cd992c9a58"><span id="index-10"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">delete_polygons</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">)</span></pre>
-<p>Delete a set of surface polygons</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>to_delete</p></td>
-<td><p><a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a> of size <a href="#id1"><span class="problematic" id="id2">polygonal_surface_</span></a>.nb_polygons(). If to_delete[i] is true the polygon of index i is deleted, else it is kept.</p></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Returns:</p>
-<p>the mapping between old polygon indices to new ones. Deleted polygons new index is NO_ID</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1a0bedbf13ccf5f17bbb0d56a51d9d2aff"><span id="index-11"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">delete_isolated_vertices</span><span class="p">()</span></pre>
-<p>Delete all the isolated vertices (not used as polygon vertices)</p>
-<p class="rubric">Returns:</p>
-<p>the mapping between old vertex indices to new ones. Deleted vertices new index is NO_ID</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1a73424cabd5a93ec0ed8834e597e9e195"><span id="index-12"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">delete_isolated_edges</span><span class="p">()</span></pre>
-<p>Delete all the isolated edges (not used as polygon edges)</p>
-<p class="rubric">Returns:</p>
-<p>the mapping between old edge indices to new ones. Deleted edges new index is NO_ID</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1abf8f736aab76a65d4230998fe36ce4c1"><span id="index-13"></span><span></span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_around_vertex</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
-<p>Return one polygon with one of the vertices matching given vertex.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>vertex_id</p></td>
-<td><p>Index of the vertex.  If vertex is isolated (no incident polygon), default <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a> is returned.</p></td>
-</tr>
-</tbody>
-</table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-polygonal-surface-builder-1a52fd6bf957792f504870ba5e159184f8"><span id="index-14"></span><span></span><span class="kt">void</span> <span class="n">associate_polygon_vertex_to_vertex</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span></pre>
-<p>Set a polygon vertex to a given vertex.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>polygon_vertex</p></td>
-<td><p><a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a> corresponding to the vertex.</p></td>
-</tr>
-<tr class="row-even"><td><p>vertex_id</p></td>
-<td><p>Index of the vertex.</p></td>
 </tr>
 </tbody>
 </table>

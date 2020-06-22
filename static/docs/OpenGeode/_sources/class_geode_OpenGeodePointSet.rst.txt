@@ -21,7 +21,8 @@ template class geode::OpenGeodePointSet
 	public:
 		// methods
 	
-		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :target:`type_name<doxid-classgeode_1_1_open_geode_point_set_1ae705a1d4ba976eb7fb8278f2ad310c1c>`() const;
+		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_point_set_1a22972ad05320eaf307606e9034f36e9b>`() const;
+		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_point_set_1ae705a1d4ba976eb7fb8278f2ad310c1c>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_point_set_1a962962a7acf12f2fd1eed819e25117af>`() const;
 	
 		void :target:`set_vertex<doxid-classgeode_1_1_open_geode_point_set_1ae72466c4435ac965eb0e1522a2ef65d5>`(
@@ -30,7 +31,7 @@ template class geode::OpenGeodePointSet
 			OGPointSetKey
 			);
 	
-		static :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :target:`type_name_static<doxid-classgeode_1_1_open_geode_point_set_1a7c7aa895935445e8c517fc24898f8487>`();
+		static :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name_static<doxid-classgeode_1_1_open_geode_point_set_1adc77c3a978302549498b9a8d8bcd9b65>`();
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_open_geode_point_set_1a0b94e6b5b54b787131b46ecc5f1ecdd5>`();
 	};
 
@@ -44,14 +45,17 @@ Inherited Members
 		// methods
 	
 		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
-		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a7dc1d253ac9d6a68c8380973f17d5667>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a4cedcfab9f71d2cbcde7d049d0556d21>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
+		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :ref:`type_name_static<doxid-classgeode_1_1_vertex_set_1adde63eb22b6564fd2ffd20bb374c3996>`();
 		std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`clone<doxid-classgeode_1_1_vertex_set_1a59f8cdf17a798e4746e3b90baa8be080>`() const;
 		virtual absl::string_view :ref:`native_extension<doxid-classgeode_1_1_vertex_set_1adee799d7c11a4401041b9da48fcbd86a>`() const = 0;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
-		virtual :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :ref:`impl_name<doxid-classgeode_1_1_vertex_set_1a27db2667d140cc8f6645531788765815>`() const = 0;
+		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
 		static std::unique_ptr<:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_1a07dc124248af6ca45f32bd1bc7dcfd73>`();
-		static std::unique_ptr<:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_1a5f73ef13481ddf946eea86bcc6553999>`(const :ref:`MeshType<doxid-namespacegeode_1ad3ab6ea798e33840905c2502e93e2707>`& type);
+		static std::unique_ptr<:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_1a826dd0e1eaead54aa156a7417f37ad46>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
+		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :ref:`type_name_static<doxid-classgeode_1_1_point_set_1a3306f5d9c44a135ea24f36192fd53bb3>`();
 		std::unique_ptr<:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> :ref:`clone<doxid-classgeode_1_1_point_set_1ac4e200f55e1a637d9589016e815f22f4>`() const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`point<doxid-classgeode_1_1_point_set_1aa3ed43c031f8aa0415365cb1a0b67603>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_point_set_1a44c8a6f5ca12d7cc7bd3b0dd3b809d0b>`() const;

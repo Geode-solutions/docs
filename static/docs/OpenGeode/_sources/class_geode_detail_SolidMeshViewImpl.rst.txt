@@ -1,0 +1,68 @@
+.. index:: pair: class; geode::detail::SolidMeshViewImpl
+.. _doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl:
+
+template class geode::detail::SolidMeshViewImpl
+===============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <solid_mesh_view_impl.h>
+	
+	template <index_t dimension>
+	class SolidMeshViewImpl: public :ref:`geode::detail::EdgesViewImpl<doxid-classgeode_1_1detail_1_1_edges_view_impl>`
+	{
+	public:
+		// construction
+	
+		:target:`SolidMeshViewImpl<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a25a35f1dfa6a55f76e125ce0552635bb>`(
+			:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid_view,
+			:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid
+			);
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`get_polyhedron_vertex<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1aa17927b78904d92a268340129e69be7a>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`get_nb_polyhedron_vertices<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1aa6ce2fc3797e8c7430a36183feb3e69a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`get_nb_polyhedron_facets<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1ab4bdf9d30e6db38d3d78c3f4e1694589>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`get_nb_polyhedron_facet_vertices<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1aa40f0419f8a7a7a52e2ce1767c971aea>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
+		absl::optional<:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`> :target:`get_polyhedron_around_vertex<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1aa63d3aa48fe920f2cff362ff2882e72c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		bool :target:`get_isolated_edge<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a1b198e9f769b96c721e5144c4a6e9f85>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		bool :target:`get_isolated_facet<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a20c8585fa072a7d1922592e585f80860>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
+		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`get_facet_from_vertices<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a490c5fdf5b6ad8dbed4737ce7942628b>`(const :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`& vertices) const;
+		const :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`& :target:`get_facet_vertices<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1af3cb05b6ac03a1fd632e77c9d07b49b5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`viewed_facet<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a48a1b1b8306c4008d01be86f321a5864>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`facet_in_view<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a33b38b42ba0a3162c70c434dee85ee35>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`add_viewed_facet<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a142fcc1e9e09ab1e1343f31fbfba7f41>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id);
+		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`get_polyhedron_adjacent<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a4d52d186b49166330201ec0362e61f43>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`get_polyhedron_facet<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1ad17c8d64af601fa3d4b8b47602b66ebd>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
+		:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>` :target:`get_polyhedron_facet_vertex_id<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1aff33404c945a7e427024116fc26632ea>`(const :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`viewed_polyhedron<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a0f4c38200e29c46e71ed20549361c8ba>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`add_viewed_polyhedron<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1ae6a5610cdad33022e46fd01acf104377>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`get_point<doxid-classgeode_1_1detail_1_1_points_view_impl_1ae90ccd03f39878b4e322284f9abe3dcb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`viewed_vertex<doxid-classgeode_1_1detail_1_1_points_view_impl_1a3d1f88c1ddd493a70ac59980b775f5a6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`vertex_in_view<doxid-classgeode_1_1detail_1_1_points_view_impl_1a995fe9567687b931441442960bb9825c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_viewed_vertex<doxid-classgeode_1_1detail_1_1_points_view_impl_1a946290d4f95b91c8101c2b3ee3e92f2a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`get_edge_from_vertices<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a1b2296dfa74ec166d03c877d2be3a454>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
+		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :ref:`get_edge_vertices<doxid-classgeode_1_1detail_1_1_edges_view_impl_1ab51ea6cc3ff8e3353c755194facab3a1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`viewed_edge<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a910479c1640030134662b11ba6816948>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_in_view<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a9dff2f7bda1748fa5c59e0eb4c972b86>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		void :ref:`add_viewed_edge<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a22a4bf2988ce9afb5d0a591207544987>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id);
+

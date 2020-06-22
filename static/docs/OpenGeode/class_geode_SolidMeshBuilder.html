@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>template class geode::SolidMeshBuilder &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::SparseAttribute" href="class_geode_SparseAttribute.html" />
+    <link rel="prev" title="template class geode::SolidMesh" href="class_geode_SolidMesh.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="template-class-geode-solidmeshbuilder">
+<span id="doxid-classgeode-1-1-solid-mesh-builder"></span><span id="index-0"></span><h1>template class geode::SolidMeshBuilder</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>Interface class to represent the builder of a <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a> <a class="reference internal" href="#details-classgeode-1-1-solid-mesh-builder"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;solid_mesh_builder.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">SolidMeshBuilder</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">geode::VertexSetBuilder</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SolidMeshBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1ae4bf1f3889aa3198e1e4f178a2669643"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1abe40cec543cba8e45414669e2f79b221"><span class="std std-ref">set_point</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1ac722a6250d1c71a934a38e03b58ce0d6"><span class="std std-ref">create_point</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1ac29ae34b9f7105592542f7feb49476ac"><span class="std std-ref">create_polyhedron</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">vertices</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;&gt;</span> <span class="n">facets</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1a2a671a534963827f8543fe5bcec949d5"><span class="std std-ref">set_polyhedron_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1a04bcc2fa5f0683ef300c3803ef2029cb"><span class="std std-ref">set_polyhedron_adjacent</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">adjacent_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1ad796770e14b37399078225c28176adef"><span class="std std-ref">unset_polyhedron_adjacent</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1a6c1e88b2e62239f95bfa8ac1a5ccd7cd"><span class="std std-ref">compute_polyhedron_adjacencies</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1a453601b728f5cee2ed4260152ad98a25"><span class="std std-ref">compute_polyhedron_adjacencies</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">polyhedra_to_connect</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1a32f574612c6eccb0ca785a2901b9ea5f"><span class="std std-ref">delete_polyhedra</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1aeaf218f62a394d16e9f9d42ad91648a1"><span class="std std-ref">delete_isolated_vertices</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1abc852be15ef9f2dd79785c09e7452819"><span class="std std-ref">delete_isolated_facets</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1a11d48ea535b4640b5e6656f58c14c466"><span class="std std-ref">delete_isolated_edges</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1aa40541c7f2f810609b90037af4c0d968"><span class="std std-ref">associate_polyhedron_vertex_to_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh-builder-1ada24ba26ccc6c9e3dff028de0e37606a"><span class="std std-ref">disassociate_polyhedron_vertex_to_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-builder-1af79edca495dfb0bed0bbdaf464681950"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">solid_mesh</span><span class="p">,</span>
+        <span class="n">BuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-builder-1a9fe392711684b0c56b017077df8d1d45"><span></span><span class="n">set_mesh</span></span><span></span><span class="p">(</span>
+        <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+        <a class="reference internal" href="class_geode_MeshBuilderFactoryKey.html#doxid-classgeode-1-1-mesh-builder-factory-key"><span class="std std-ref">MeshBuilderFactoryKey</span></a><span></span> <span class="n">key</span>
+        <span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PolyhedralSolidBuilder.html#doxid-classgeode-1-1-polyhedral-solid-builder"><span class="std std-ref">PolyhedralSolidBuilder</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TetrahedralSolidBuilder.html#doxid-classgeode-1-1-tetrahedral-solid-builder"><span class="std std-ref">TetrahedralSolidBuilder</span></a><span></span><span class="p">;</span></pre>
+<div class="section" id="inherited-members">
+<h3>Inherited Members</h3>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1ad20a5799994288413a1f198dbe0a505d"><span class="std std-ref">create_vertex</span></a><span></span><span class="p">();</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1a61231a71fdad16ddb2b7e14ebc21a772"><span class="std std-ref">create_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1a2f167c430554a70b6dd09587d2dbbcff"><span class="std std-ref">delete_vertices</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1ae00c46d0983aef744f8eadba2f0e6fba"><span class="std std-ref">set_mesh</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span> <a class="reference internal" href="class_geode_MeshBuilderFactoryKey.html#doxid-classgeode-1-1-mesh-builder-factory-key"><span class="std std-ref">MeshBuilderFactoryKey</span></a><span></span><span class="p">);</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">VertexSetBuilder</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder-1a771651214baac8b1f85db964a73a4952"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span></pre>
+</div>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-solid-mesh-builder"></span><h2>Detailed Documentation</h2>
+<p>Interface class to represent the builder of a <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a></p>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1ae4bf1f3889aa3198e1e4f178a2669643"><span id="index-1"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SolidMeshBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">create</span><span class="p">(</span><a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">)</span></pre>
+<p>Create the builder associated with a <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a>.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>The <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a> to build/modify</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1abe40cec543cba8e45414669e2f79b221"><span id="index-2"></span><span></span><span class="kt">void</span> <span class="n">set_point</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Set coordinates to a vertex. This vertex should be created before.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>vertex_id</p></td>
+<td><p>The vertex, in [0, nb_vertices()-1].</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>The vertex coordinates</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1ac722a6250d1c71a934a38e03b58ce0d6"><span id="index-3"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_point</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Create a new point with associated coordinates.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>The point to create</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the index of the created point</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1ac29ae34b9f7105592542f7feb49476ac"><span id="index-4"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_polyhedron</span><span class="p">(</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">vertices</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;&gt;</span> <span class="n">facets</span>
+    <span class="p">)</span></pre>
+<p>Create a new polyhedron from vertices and facets.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>vertices</p></td>
+<td><p>The vertices defining the polyhedron to create</p></td>
+</tr>
+<tr class="row-even"><td><p>facets</p></td>
+<td><p>The list of ordered vertices defining all the facets of the polyhedron</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the index of the created polyhedron</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1a2a671a534963827f8543fe5bcec949d5"><span id="index-5"></span><span></span><span class="kt">void</span> <span class="n">set_polyhedron_vertex</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span></pre>
+<p>Modify a polyhedron vertex.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>polyhedron_vertex</p></td>
+<td><p>The index of the polyhedron vertex to modify</p></td>
+</tr>
+<tr class="row-even"><td><p>vertex_id</p></td>
+<td><p>Index of the mesh vertex to set as polyhedron vertex</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1a04bcc2fa5f0683ef300c3803ef2029cb"><span id="index-6"></span><span></span><span class="kt">void</span> <span class="n">set_polyhedron_adjacent</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">adjacent_id</span><span class="p">)</span></pre>
+<p>Set a polyhedron adgjacent through a facet.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>polygon_facet</p></td>
+<td><p>The index of the polygon facet</p></td>
+</tr>
+<tr class="row-even"><td><p>adjacent_id</p></td>
+<td><p>Index of the adjacent polyhedron</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1ad796770e14b37399078225c28176adef"><span id="index-7"></span><span></span><span class="kt">void</span> <span class="n">unset_polyhedron_adjacent</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">)</span></pre>
+<p>Unset a polyhedron adjacency through a facet.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>polygon_facet</p></td>
+<td><p>The index of the polygon facet</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1a6c1e88b2e62239f95bfa8ac1a5ccd7cd"><span id="index-8"></span><span></span><span class="kt">void</span> <span class="n">compute_polyhedron_adjacencies</span><span class="p">()</span></pre>
+<p>Compute all the adjacencies between the solid polyhedra</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1a453601b728f5cee2ed4260152ad98a25"><span id="index-9"></span><span></span><span class="kt">void</span> <span class="n">compute_polyhedron_adjacencies</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">polyhedra_to_connect</span><span class="p">)</span></pre>
+<p>Compute the adjacencies between the given solid polyhedra</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>polyhedra_to_connect</p></td>
+<td><p>Set of polyhedra for which compute adjacencies</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1a32f574612c6eccb0ca785a2901b9ea5f"><span id="index-10"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">delete_polyhedra</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">)</span></pre>
+<p>Delete a set of solid polyhedra</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>to_delete</p></td>
+<td><p><a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a> of size <a href="#id1"><span class="problematic" id="id2">solid_mesh_</span></a>.nb_polyhedra(). If to_delete[i] is true the polyhedra of index i is deleted, else it is kept.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the mapping between old polyhedron indices to new ones. Deleted polyhedra new index is NO_ID</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1aeaf218f62a394d16e9f9d42ad91648a1"><span id="index-11"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">delete_isolated_vertices</span><span class="p">()</span></pre>
+<p>Delete all the isolated vertices (not used as polyhedron vertices)</p>
+<p class="rubric">Returns:</p>
+<p>the mapping between old vertex indices to new ones. Deleted vertices new index is NO_ID</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1abc852be15ef9f2dd79785c09e7452819"><span id="index-12"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">delete_isolated_facets</span><span class="p">()</span></pre>
+<p>Delete all the isolated facets (not used as polyhedron facets)</p>
+<p class="rubric">Returns:</p>
+<p>the mapping between old facet indices to new ones. Deleted facets new index is NO_ID</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1a11d48ea535b4640b5e6656f58c14c466"><span id="index-13"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">delete_isolated_edges</span><span class="p">()</span></pre>
+<p>Delete all the isolated edges (not used as polyhedron edges)</p>
+<p class="rubric">Returns:</p>
+<p>the mapping between old edge indices to new ones. Deleted edges new index is NO_ID</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1aa40541c7f2f810609b90037af4c0d968"><span id="index-14"></span><span></span><span class="kt">void</span> <span class="n">associate_polyhedron_vertex_to_vertex</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">,</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span>
+    <span class="p">)</span></pre>
+<p>Set a polyhedron vertex to a given vertex.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>polyhedron_vertex</p></td>
+<td><p><a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a> corresponding to the vertex.</p></td>
+</tr>
+<tr class="row-even"><td><p>vertex_id</p></td>
+<td><p>Index of the vertex.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-builder-1ada24ba26ccc6c9e3dff028de0e37606a"><span id="index-15"></span><span></span><span class="kt">void</span> <span class="n">disassociate_polyhedron_vertex_to_vertex</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span></pre>
+<p>Unset polyhedron vertex information to a given vertex.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>vertex_id</p></td>
+<td><p>Index of the vertex.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_SolidMeshBuilder.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

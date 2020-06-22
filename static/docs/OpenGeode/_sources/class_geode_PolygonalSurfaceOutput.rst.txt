@@ -20,11 +20,6 @@ template class geode::PolygonalSurfaceOutput
 	{
 	};
 
-	// direct descendants
-
-	template <index_t dimension>
-	class :ref:`TriangulatedSurfaceOutput<doxid-classgeode_1_1_triangulated_surface_output>`;
-
 Inherited Members
 -----------------
 

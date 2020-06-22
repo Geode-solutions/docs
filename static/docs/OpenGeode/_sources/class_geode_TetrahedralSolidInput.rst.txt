@@ -16,7 +16,7 @@ template class geode::TetrahedralSolidInput
 	#include <tetrahedral_solid_input.h>
 	
 	template <index_t dimension>
-	class TetrahedralSolidInput: public :ref:`geode::PolyhedralSolidInput<doxid-classgeode_1_1_polyhedral_solid_input>`
+	class TetrahedralSolidInput: public :ref:`geode::VertexSetInput<doxid-classgeode_1_1_vertex_set_input>`
 	{
 	};
 
