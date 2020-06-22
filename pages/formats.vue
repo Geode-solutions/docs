@@ -18,7 +18,7 @@ export default {
   data: () => ({
     formats_io: [
       {
-        extension: '.msh',
+        extension: '.msh (v2 and v4 supported)',
         cpp: "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
         in: true,
         out: false
@@ -46,6 +46,12 @@ export default {
         cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
         in: true,
         out: true
+      },
+      {
+        extension: '.vtp (ascii and binary supported)',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
+        in: true,
+        out: false
       }
     ],
     formats_geosciencesio: [
