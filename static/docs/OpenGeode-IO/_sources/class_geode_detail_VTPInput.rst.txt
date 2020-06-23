@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::VTPInput
+.. _doxid-classgeode_1_1detail_1_1_v_t_p_input:
+
+class geode::detail::VTPInput
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vtp_input.h>
+	
+	class VTPInput: public PolygonalSurfaceInput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`VTPInput<doxid-classgeode_1_1detail_1_1_v_t_p_input_1a78ba86ab1123355e756a80c16fef1da2>`(
+			PolygonalSurface<3>& surface,
+			absl::string_view filename
+			);
+
+		// methods
+	
+		void :target:`do_read<doxid-classgeode_1_1detail_1_1_v_t_p_input_1ae35d47dbcb341766a68458d210944192>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_p_input_1ae0a4551f1b71ea8fac7d1a59b1271b53>`();
+	};

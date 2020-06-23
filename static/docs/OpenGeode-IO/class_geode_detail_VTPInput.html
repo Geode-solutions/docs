@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>class geode::detail::SVGInput &#8212; Python  documentation</title>
+    <title>class geode::detail::VTPInput &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -16,8 +16,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::detail::VTPInput" href="class_geode_detail_VTPInput.html" />
-    <link rel="prev" title="class geode::detail::STLOutput" href="class_geode_detail_STLOutput.html" />
+    <link rel="prev" title="class geode::detail::SVGInput" href="class_geode_detail_SVGInput.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,26 +32,26 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-detail-svginput">
-<span id="doxid-classgeode-1-1detail-1-1-s-v-g-input"></span><span id="index-0"></span><h1>class geode::detail::SVGInput</h1>
+  <div class="section" id="class-geode-detail-vtpinput">
+<span id="doxid-classgeode-1-1detail-1-1-v-t-p-input"></span><span id="index-0"></span><h1>class geode::detail::VTPInput</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;svg_input.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vtp_input.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">SVGInput</span><span class="p">:</span> <span class="k">public</span> <span class="n">SectionInput</span>
+<span class="k">class</span> <span class="nl">VTPInput</span><span class="p">:</span> <span class="k">public</span> <span class="n">PolygonalSurfaceInput</span><span class="o">&lt;</span> <span class="mi">3</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-s-v-g-input-1a9a5daf7939095a081039d03247692cb5"><span></span><span class="n">SVGInput</span></span><span></span><span class="p">(</span>
-        <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-input-1a78ba86ab1123355e756a80c16fef1da2"><span></span><span class="n">VTPInput</span></span><span></span><span class="p">(</span>
+        <span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
         <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-s-v-g-input-1a879540eeb8015c0e37d9bd5e790d2e5e"><span></span><span class="n">read</span></span><span></span><span class="p">();</span>
-    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-s-v-g-input-1a9df0f7c07fe331bfe317607ecab80427"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-input-1ae35d47dbcb341766a68458d210944192"><span></span><span class="n">do_read</span></span><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-input-1ae0a4551f1b71ea8fac7d1a59b1271b53"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -70,7 +69,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_detail_SVGInput.rst.txt"
+      <a href="_sources/class_geode_detail_VTPInput.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

@@ -17,6 +17,7 @@ namespace geode::detail
 	class_geode_detail_STLInput.rst
 	class_geode_detail_STLOutput.rst
 	class_geode_detail_SVGInput.rst
+	class_geode_detail_VTPInput.rst
 
 
 
@@ -42,6 +43,7 @@ namespace geode::detail
 	class :ref:`STLInput<doxid-classgeode_1_1detail_1_1_s_t_l_input>`;
 	class :ref:`STLOutput<doxid-classgeode_1_1detail_1_1_s_t_l_output>`;
 	class :ref:`SVGInput<doxid-classgeode_1_1detail_1_1_s_v_g_input>`;
+	class :ref:`VTPInput<doxid-classgeode_1_1detail_1_1_v_t_p_input>`;
 
 	// global functions
 
