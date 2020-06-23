@@ -137,21 +137,14 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af10b9fea3efb1a501b0a13ea9cf8240f>`(:ref:`StratigraphicUnitsBuilder<doxid-classgeode_1_1_stratigraphic_units_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a25ef31899ff6065c94d0d77f4c167215>`(:ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a068944b4aa3095a51776291dbc52dde4>`(:ref:`StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`);
-
-	void opengeode_geosciences_geosciences_api :ref:`load_cross_section<doxid-namespacegeode_1ae770ae8cdf08e12efeb84eb4658137e8>`(
-		:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-		absl::string_view filename
-		);
+	:ref:`CrossSection<doxid-classgeode_1_1_cross_section>` opengeode_geosciences_geosciences_api :ref:`load_cross_section<doxid-namespacegeode_1a56ce531cf7190565fd429b603c835bbf>`(absl::string_view filename);
 
 	void opengeode_geosciences_geosciences_api :ref:`save_cross_section<doxid-namespacegeode_1a686db0f6979efe582e3ab9b27e03a136>`(
 		const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
 		absl::string_view filename
 		);
 
-	void opengeode_geosciences_geosciences_api :ref:`load_structural_model<doxid-namespacegeode_1ab912d334c250a0988acd5bd9221531dc>`(
-		:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
-		absl::string_view filename
-		);
+	:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` opengeode_geosciences_geosciences_api :ref:`load_structural_model<doxid-namespacegeode_1a163a868e3b17affba29b446707f6a874>`(absl::string_view filename);
 
 	void opengeode_geosciences_geosciences_api :ref:`save_structural_model<doxid-namespacegeode_1aedf25fba2a5257c41fe72e361cbe9d17>`(
 		const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
@@ -214,15 +207,12 @@ Register all the information needed by Bitsery to deserialize the objects in the
 		- The context where to register this information.
 
 .. index:: pair: function; load_cross_section
-.. _doxid-namespacegeode_1ae770ae8cdf08e12efeb84eb4658137e8:
+.. _doxid-namespacegeode_1a56ce531cf7190565fd429b603c835bbf:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void opengeode_geosciences_geosciences_api load_cross_section(
-		:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-		absl::string_view filename
-		)
+	:ref:`CrossSection<doxid-classgeode_1_1_cross_section>` opengeode_geosciences_geosciences_api load_cross_section(absl::string_view filename)
 
 API function for loading a :ref:`CrossSection <doxid-classgeode_1_1_cross_section>`. The adequate loader is called depending on the filename extension.
 
@@ -232,11 +222,6 @@ API function for loading a :ref:`CrossSection <doxid-classgeode_1_1_cross_sectio
 
 .. list-table::
 	:widths: 20 80
-
-	*
-		- cross_section
-
-		- Loaded :ref:`CrossSection <doxid-classgeode_1_1_cross_section>`.
 
 	*
 		- filename
@@ -274,15 +259,12 @@ API function for saving a :ref:`CrossSection <doxid-classgeode_1_1_cross_section
 		- Path to the file where save the :ref:`CrossSection <doxid-classgeode_1_1_cross_section>`.
 
 .. index:: pair: function; load_structural_model
-.. _doxid-namespacegeode_1ab912d334c250a0988acd5bd9221531dc:
+.. _doxid-namespacegeode_1a163a868e3b17affba29b446707f6a874:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void opengeode_geosciences_geosciences_api load_structural_model(
-		:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
-		absl::string_view filename
-		)
+	:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` opengeode_geosciences_geosciences_api load_structural_model(absl::string_view filename)
 
 API function for loading a :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`. The adequate loader is called depending on the filename extension.
 
@@ -292,11 +274,6 @@ API function for loading a :ref:`StructuralModel <doxid-classgeode_1_1_structura
 
 .. list-table::
 	:widths: 20 80
-
-	*
-		- structural_model
-
-		- Loaded :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`.
 
 	*
 		- filename

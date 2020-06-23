@@ -36,8 +36,8 @@ A Cross Section is a Section composed of :ref:`Faults <doxid-classgeode_1_1_faul
 	
 		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_cross_section_1a0e50d74bd8a40e67ddbb24e15c9976c4>`();
 		absl::string_view :target:`native_extension<doxid-classgeode_1_1_cross_section_1aba46451bcac9f3b8a7dcdcbcddffb9ac>`() const;
-		:ref:`HorizonItemRange<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1a9f70d9ec468e65ed5c629039fcbde27f>`(const Horizon2D& horizon) const;
-		:ref:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1a5986646330bbc153aa42dfc07fa8349e>`(const Fault2D& fault) const;
-		:ref:`FaultBlockItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_block_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1ae180b90bfabfac6d48a840d28bdbe863>`(const FaultBlock2D& fault_block) const;
-		:ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range>` :target:`items<doxid-classgeode_1_1_cross_section_1a3f84e1ee98cdc8ab3433ca961525219b>`(const StratigraphicUnit2D& stratigraphic_unit) const;
+		:ref:`HorizonItemRange<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range>` :target:`horizon_items<doxid-classgeode_1_1_cross_section_1a84b7eca5ee42db6c06a3a320147bf15c>`(const Horizon2D& horizon) const;
+		:ref:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range>` :target:`fault_items<doxid-classgeode_1_1_cross_section_1a7856154c97bef7e30c6df7707e7f0b91>`(const Fault2D& fault) const;
+		:ref:`FaultBlockItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_block_item_range>` :target:`fault_block_items<doxid-classgeode_1_1_cross_section_1a93247bfa59536ddfa82d5403a7bbeb26>`(const FaultBlock2D& fault_block) const;
+		:ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range>` :target:`stratigraphic_unit_items<doxid-classgeode_1_1_cross_section_1af2c447d3ca2829de5fa198576f0fa998>`(const StratigraphicUnit2D& stratigraphic_unit) const;
 	};
