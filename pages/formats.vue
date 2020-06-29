@@ -56,6 +56,12 @@ export default {
     ],
     formats_geosciencesio: [
       {
+        extension: '.lso',
+        cpp: "<a href='/opengeode-geosciences?page=class_geode_StructuralModel.html'><code>StructuralModel</code></a>",
+        in: true,
+        out: false
+      },
+      {
         extension: '.ml',
         cpp: "<a href='/opengeode-geosciences?page=class_geode_StructuralModel.html'><code>StructuralModel</code></a>",
         in: true,
