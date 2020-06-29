@@ -48,6 +48,7 @@
 
 <span class="c1">// classes</span>
 
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_LSOInput.html#doxid-classgeode-1-1detail-1-1-l-s-o-input"><span class="std std-ref">LSOInput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_MLInput.html#doxid-classgeode-1-1detail-1-1-m-l-input"><span class="std std-ref">MLInput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_MLOutput.html#doxid-classgeode-1-1detail-1-1-m-l-output"><span class="std std-ref">MLOutput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_TSInput.html#doxid-classgeode-1-1detail-1-1-t-s-input"><span class="std std-ref">TSInput</span></a><span></span><span class="p">;</span>
@@ -56,14 +57,14 @@
 
 <span class="kt">void</span> <span class="n">opengeode_geosciencesio_geosciences_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1aa3f5ecadb7bedfd3a78c5ab7bc0e6bd2"><span></span><span class="n">initialize_geosciences_io</span></span><span></span><span class="p">();</span>
 
-<span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a1339af97e5440f128cfacf3e2a0bb25a"><span></span><span class="n">string_starts_with</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">string</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">check</span>
+<span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a0c325d7389879a3e8e5f9376bb83bdeb"><span></span><span class="n">string_starts_with</span></span><span></span><span class="p">(</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">string</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">check</span>
     <span class="p">);</span>
 
-<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1adb7e01e825a72cd70d45a46584dc901d"><span></span><span class="n">check_keyword</span></span><span></span><span class="p">(</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a596dbdeda9c569dcc2a784e6b9c26255"><span></span><span class="n">check_keyword</span></span><span></span><span class="p">(</span>
     <span class="n">std</span><span class="o">::</span><span class="n">ifstream</span><span class="o">&amp;</span> <span class="n">file</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">keyword</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">keyword</span>
     <span class="p">);</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a7678ddeb1406c17479dbac5f60fcceff"><span></span><span class="n">read_name</span></span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">istringstream</span><span class="o">&amp;</span> <span class="n">iss</span><span class="p">);</span>
@@ -81,9 +82,14 @@
     <span class="k">const</span> <a class="reference internal" href="struct_geode_detail_CRSData.html#doxid-structgeode-1-1detail-1-1-c-r-s-data"><span class="std std-ref">CRSData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span>
     <span class="p">);</span>
 
-<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a39156daff5242104b99716dcea6af31d"><span></span><span class="n">goto_keyword</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a51c6af2c945d7fcdbef97909363b6020"><span></span><span class="n">goto_keyword</span></span><span></span><span class="p">(</span>
     <span class="n">std</span><span class="o">::</span><span class="n">ifstream</span><span class="o">&amp;</span> <span class="n">file</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">word</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">word</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ae071b9b035a199896e2b372dfab940b3"><span></span><span class="n">goto_keywords</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">ifstream</span><span class="o">&amp;</span> <span class="n">file</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="n">words</span>
     <span class="p">);</span>
 
 <a class="reference internal" href="struct_geode_detail_TSurfData.html#doxid-structgeode-1-1detail-1-1-t-surf-data"><span class="std std-ref">TSurfData</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1af8a1258d782f29e54dc176767d809f5f"><span></span><span class="n">read_tsurf</span></span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ifstream</span><span class="o">&amp;</span> <span class="n">file</span><span class="p">);</span>
