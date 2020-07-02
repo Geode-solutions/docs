@@ -88,6 +88,13 @@ Inherited Members
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`polyhedron_barycenter<doxid-classgeode_1_1_solid_mesh_1a8ec29c3c46b5990fbc66a2080e97da97>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`facet_barycenter<doxid-classgeode_1_1_solid_mesh_1a56846d23c67777cc5bb6e03bfb4704d6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`edge_barycenter<doxid-classgeode_1_1_solid_mesh_1a5436d166d9cdc58916407d06f2d20682>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, Vector3D>::type :ref:`facet_normal<doxid-classgeode_1_1_solid_mesh_1af028ac4b04a98e6e0e039370c70edb05>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, Vector3D>::type :ref:`polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1ac11c243a8507b7a5590b48ca05d50648>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
+	
 		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a3c64897434c58970bbf1e9d05d8ef826>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		:ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1aa10209870411622c4f7729ca1a799b89>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>` :ref:`polyhedra_from_facet<doxid-classgeode_1_1_solid_mesh_1a657c3be06f695e14ee6c08f840933063>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
