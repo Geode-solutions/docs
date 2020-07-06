@@ -21,9 +21,9 @@ template class geode::detail::SurfaceMeshViewImpl
 	public:
 		// construction
 	
-		:target:`SurfaceMeshViewImpl<doxid-classgeode_1_1detail_1_1_surface_mesh_view_impl_1a6c48adbb5c6da20c8bc640895f6515bc>`(
+		:target:`SurfaceMeshViewImpl<doxid-classgeode_1_1detail_1_1_surface_mesh_view_impl_1aca1f7cf3c455b176dc6e6dce3d027a3a>`(
 			:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface_view,
-			:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface
+			const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface
 			);
 
 		// methods

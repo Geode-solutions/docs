@@ -21,9 +21,9 @@ template class geode::detail::SolidMeshViewImpl
 	public:
 		// construction
 	
-		:target:`SolidMeshViewImpl<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1a25a35f1dfa6a55f76e125ce0552635bb>`(
+		:target:`SolidMeshViewImpl<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl_1ad9d48bb1585c3dbd1da90929d7b314c0>`(
 			:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid_view,
-			:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid
+			const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid
 			);
 
 		// methods

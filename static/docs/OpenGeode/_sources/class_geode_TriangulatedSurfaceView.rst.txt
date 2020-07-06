@@ -23,7 +23,8 @@ the corresponding view.
 	public:
 		// construction
 	
-		:target:`TriangulatedSurfaceView<doxid-classgeode_1_1_triangulated_surface_view_1a334891374d815d0152cc09241921c3a7>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& surface);
+		:target:`TriangulatedSurfaceView<doxid-classgeode_1_1_triangulated_surface_view_1ad3c1cd650192bbf7783689fc6a8a6644>`(const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& surface);
+		:target:`TriangulatedSurfaceView<doxid-classgeode_1_1_triangulated_surface_view_1a624a6600a450c8c382d178fe1cc26748>`(TriangulatedSurfaceView&& other);
 
 		// methods
 	

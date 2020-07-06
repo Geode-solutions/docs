@@ -21,9 +21,9 @@ template class geode::detail::EdgesViewImpl
 	public:
 		// construction
 	
-		:target:`EdgesViewImpl<doxid-classgeode_1_1detail_1_1_edges_view_impl_1a2021b76faa2d4c0b9f85c11090fe3c03>`(
+		:target:`EdgesViewImpl<doxid-classgeode_1_1detail_1_1_edges_view_impl_1af3ba37d65f45c6c081b0ed1314b8a906>`(
 			Mesh& mesh_view,
-			Mesh& mesh
+			const Mesh& mesh
 			);
 
 		// methods

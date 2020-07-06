@@ -23,7 +23,8 @@ the corresponding view.
 	public:
 		// construction
 	
-		:target:`PolygonalSurfaceView<doxid-classgeode_1_1_polygonal_surface_view_1a796833c6f99be0260e94ca368a628196>`(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& surface);
+		:target:`PolygonalSurfaceView<doxid-classgeode_1_1_polygonal_surface_view_1a4309831817091f6d3dd7021f44add463>`(const :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>& surface);
+		:target:`PolygonalSurfaceView<doxid-classgeode_1_1_polygonal_surface_view_1a3b6ce4760c8dcca6bc9585f1c07a7865>`(PolygonalSurfaceView&& other);
 
 		// methods
 	
