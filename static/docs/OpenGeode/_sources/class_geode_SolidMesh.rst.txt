@@ -22,6 +22,10 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 	class SolidMesh: public :ref:`geode::VertexSet<doxid-classgeode_1_1_vertex_set>`
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_solid_mesh_1a616af1178b8bbc060231133fa749fa45>`;
+
 		// methods
 	
 		static std::unique_ptr<SolidMesh<dimension>> :ref:`create<doxid-classgeode_1_1_solid_mesh_1aca1fc3d15eb1c8250965eda84408e302>`();

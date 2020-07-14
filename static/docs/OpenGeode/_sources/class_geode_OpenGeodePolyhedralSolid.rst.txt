@@ -65,6 +65,11 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// typedefs
+	
+		typedef :ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_solid_mesh_1a616af1178b8bbc060231133fa749fa45>`;
+		typedef :ref:`PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_polyhedral_solid_1ab3324167a8979356c9b9d7bc25d8c410>`;
+
 		// methods
 	
 		static std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();

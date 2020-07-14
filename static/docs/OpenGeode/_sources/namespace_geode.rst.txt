@@ -876,9 +876,11 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8d32d54426edeaad7cfe32bbf73441b4>`(:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7986437714612066a303580285ecf217>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ae9dc6097b7f8cfa25fc265176e3c5aa9>`(:ref:`TetrahedralSolidBuilder<doxid-classgeode_1_1_tetrahedral_solid_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ac0ce47977b9b924ad8469c9270116992>`(:ref:`TetrahedralSolidViewBuilder<doxid-classgeode_1_1_tetrahedral_solid_view_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a356eed59f8c4e2e146653502610ee526>`(:ref:`TetrahedralSolidView<doxid-classgeode_1_1_tetrahedral_solid_view>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a4b6e0eef43419c522c8afdef30e0c045>`(:ref:`TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac5ecef06abef60896357a8eb77586520>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0118fa847aba50e9c6a47519492f6daf>`(:ref:`TriangulatedSurfaceViewBuilder<doxid-classgeode_1_1_triangulated_surface_view_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a2f9a6a4677db9fb64957a2062442df1d>`(:ref:`TriangulatedSurfaceView<doxid-classgeode_1_1_triangulated_surface_view>`);
