@@ -25,8 +25,8 @@ Interface class to represent the builder of a :ref:`PointSet <doxid-classgeode_1
 		// methods
 	
 		static std::unique_ptr<PointSetBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_builder_1ab5c00c0739ace9a3125e0f1daf1e44ee>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh);
-		void :ref:`set_point<doxid-classgeode_1_1_point_set_builder_1a2a8878a90d56a0f60984bdc131443a70>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_point_set_builder_1ada3e73058b784771e6e5c7b5480d9bde>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		void :ref:`set_point<doxid-classgeode_1_1_point_set_builder_1a3f2f23e0415984ab546ea0350e0e343a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_point_set_builder_1a00aa71ee29025486d00b8b481527246a>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 	
 		void :target:`copy<doxid-classgeode_1_1_point_set_builder_1a71cd6f1391d6a010d7d0728d3b7c40c7>`(
 			const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set,
@@ -92,12 +92,12 @@ Create the builder associated with a :ref:`PointSet <doxid-classgeode_1_1_point_
 		- The :ref:`PointSet <doxid-classgeode_1_1_point_set>` to build/modify
 
 .. index:: pair: function; set_point
-.. _doxid-classgeode_1_1_point_set_builder_1a2a8878a90d56a0f60984bdc131443a70:
+.. _doxid-classgeode_1_1_point_set_builder_1a3f2f23e0415984ab546ea0350e0e343a:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point)
 
 Set coordinates to a vertex. This vertex should be created before.
 
@@ -119,12 +119,12 @@ Set coordinates to a vertex. This vertex should be created before.
 		- The vertex coordinates
 
 .. index:: pair: function; create_point
-.. _doxid-classgeode_1_1_point_set_builder_1ada3e73058b784771e6e5c7b5480d9bde:
+.. _doxid-classgeode_1_1_point_set_builder_1a00aa71ee29025486d00b8b481527246a:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_point(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_point(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point)
 
 Create a new point with associated coordinates.
 

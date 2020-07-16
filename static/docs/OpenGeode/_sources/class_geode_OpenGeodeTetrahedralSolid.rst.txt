@@ -25,9 +25,9 @@ template class geode::OpenGeodeTetrahedralSolid
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_tetrahedral_solid_1a103ed827f6acafa0b8554bc57a8bf45e>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_tetrahedral_solid_1aa12e72a894de1ee6040b03a34b90a93a>`() const;
 	
-		void :target:`set_vertex<doxid-classgeode_1_1_open_geode_tetrahedral_solid_1a02f2e0b236a29513cbcee5a22ac88d8a>`(
+		void :target:`set_vertex<doxid-classgeode_1_1_open_geode_tetrahedral_solid_1a0f500b3961806e28f56a976e4b2032b0>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id,
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+			:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point,
 			OGTetrahedralSolidKey
 			);
 	

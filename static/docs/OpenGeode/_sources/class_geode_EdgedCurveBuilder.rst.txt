@@ -25,8 +25,8 @@ Interface class to represent the builder of a :ref:`EdgedCurve <doxid-classgeode
 		// methods
 	
 		static std::unique_ptr<EdgedCurveBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_edged_curve_builder_1ac1d31e425b0233fca9d10f07d735df23>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh);
-		void :ref:`set_point<doxid-classgeode_1_1_edged_curve_builder_1a94e16d2c8d7fe3d83c3bc250f1e3bc84>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_edged_curve_builder_1a22553205c7f14c108a2904163ec79cce>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		void :ref:`set_point<doxid-classgeode_1_1_edged_curve_builder_1a189e5ca28d052777d2eabb94e69c9fb8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_edged_curve_builder_1a5a7c369306897ce006676f81cacbe7e5>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 	
 		void :target:`copy<doxid-classgeode_1_1_edged_curve_builder_1a36ce7c529523d736c829aae94bef8303>`(
 			const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve,
@@ -101,12 +101,12 @@ Create the builder associated with an :ref:`EdgedCurve <doxid-classgeode_1_1_edg
 		- The :ref:`EdgedCurve <doxid-classgeode_1_1_edged_curve>` to build/modify
 
 .. index:: pair: function; set_point
-.. _doxid-classgeode_1_1_edged_curve_builder_1a94e16d2c8d7fe3d83c3bc250f1e3bc84:
+.. _doxid-classgeode_1_1_edged_curve_builder_1a189e5ca28d052777d2eabb94e69c9fb8:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point)
 
 Set coordinates to a vertex. This vertex should be created before.
 
@@ -128,12 +128,12 @@ Set coordinates to a vertex. This vertex should be created before.
 		- The vertex coordinates
 
 .. index:: pair: function; create_point
-.. _doxid-classgeode_1_1_edged_curve_builder_1a22553205c7f14c108a2904163ec79cce:
+.. _doxid-classgeode_1_1_edged_curve_builder_1a5a7c369306897ce006676f81cacbe7e5:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_point(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_point(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point)
 
 Create a new point with associated coordinates.
 

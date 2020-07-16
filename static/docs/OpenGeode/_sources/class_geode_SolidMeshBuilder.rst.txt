@@ -25,8 +25,8 @@ Interface class to represent the builder of a :ref:`SolidMesh <doxid-classgeode_
 		// methods
 	
 		static std::unique_ptr<SolidMeshBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_solid_mesh_builder_1ae4bf1f3889aa3198e1e4f178a2669643>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& mesh);
-		void :ref:`set_point<doxid-classgeode_1_1_solid_mesh_builder_1abe40cec543cba8e45414669e2f79b221>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_solid_mesh_builder_1ac722a6250d1c71a934a38e03b58ce0d6>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		void :ref:`set_point<doxid-classgeode_1_1_solid_mesh_builder_1ac4f521e4a58819291ac7dbc5d9f3ecef>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_solid_mesh_builder_1a87b47e801441813c7e14a6f7c6532f45>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_polyhedron<doxid-classgeode_1_1_solid_mesh_builder_1ac29ae34b9f7105592542f7feb49476ac>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> vertices, absl::Span<const std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>> facets);
 		void :ref:`set_polyhedron_vertex<doxid-classgeode_1_1_solid_mesh_builder_1a2a671a534963827f8543fe5bcec949d5>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		void :ref:`set_polyhedron_adjacent<doxid-classgeode_1_1_solid_mesh_builder_1a04bcc2fa5f0683ef300c3803ef2029cb>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` adjacent_id);
@@ -107,12 +107,12 @@ Create the builder associated with a :ref:`SolidMesh <doxid-classgeode_1_1_solid
 		- The :ref:`SolidMesh <doxid-classgeode_1_1_solid_mesh>` to build/modify
 
 .. index:: pair: function; set_point
-.. _doxid-classgeode_1_1_solid_mesh_builder_1abe40cec543cba8e45414669e2f79b221:
+.. _doxid-classgeode_1_1_solid_mesh_builder_1ac4f521e4a58819291ac7dbc5d9f3ecef:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point)
 
 Set coordinates to a vertex. This vertex should be created before.
 
@@ -134,12 +134,12 @@ Set coordinates to a vertex. This vertex should be created before.
 		- The vertex coordinates
 
 .. index:: pair: function; create_point
-.. _doxid-classgeode_1_1_solid_mesh_builder_1ac722a6250d1c71a934a38e03b58ce0d6:
+.. _doxid-classgeode_1_1_solid_mesh_builder_1a87b47e801441813c7e14a6f7c6532f45:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_point(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point)
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_point(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point)
 
 Create a new point with associated coordinates.
 

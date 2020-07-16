@@ -25,9 +25,9 @@ template class geode::OpenGeodeTriangulatedSurface
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_triangulated_surface_1a7eff2ac25dc3347f6ac31e24986ec7d6>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_triangulated_surface_1afd42744a1465b9d1ffb097565d331ea4>`() const;
 	
-		void :target:`set_vertex<doxid-classgeode_1_1_open_geode_triangulated_surface_1a280ba741676548fc6dbbd0172614a2e2>`(
+		void :target:`set_vertex<doxid-classgeode_1_1_open_geode_triangulated_surface_1a5844866cafd1c9e6381023e25866d2d8>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id,
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+			:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point,
 			OGTriangulatedSurfaceKey
 			);
 	
