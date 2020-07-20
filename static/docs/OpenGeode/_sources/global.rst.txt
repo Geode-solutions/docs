@@ -43,7 +43,19 @@ Overview
 	#define :target:`BITSERY_INPUT_MESH_DIMENSION<doxid-geode__bitsery__mesh__input_8h_1a130024e4657a4e352337f645ba7babe7>`(Mesh)
 	#define :target:`BITSERY_INPUT_MESH_NO_DIMENSION<doxid-geode__bitsery__mesh__input_8h_1a3df9e3b5ed7d5924fb2d8a30aca8c9d9>`(Mesh)
 	#define :target:`BITSERY_OUTPUT_MESH_DIMENSION<doxid-geode__bitsery__mesh__output_8h_1aa0f6e02799ce683c602fad552968e3bd>`(Mesh)
+
+	#define :target:`BITSERY_OUTPUT_MESH_DIMENSION_IMPL<doxid-geode__bitsery__mesh__output_8h_1a8068841a77f3fe6e321450fe075f2753>`( \
+		Mesh, \
+		MeshImpl \
+		)
+
 	#define :target:`BITSERY_OUTPUT_MESH_NO_DIMENSION<doxid-geode__bitsery__mesh__output_8h_1a269e812ba7f5b0eed17799a5b191a39b>`(Mesh)
+
+	#define :target:`BITSERY_OUTPUT_MESH_NO_DIMENSION_IMPL<doxid-geode__bitsery__mesh__output_8h_1a2956014c9b472b065601d0a52916ce14>`( \
+		Mesh, \
+		MeshImpl \
+		)
+
 	#define :target:`BITSERY_WRITE<doxid-geode__bitsery__mesh__output_8h_1a5ceb57df595debd3eefe3227965b26c3>`()
 	#define :target:`DEBUG<doxid-logger_8h_1a8a979668ecb044c9ac0e5017107f1d52>`(a)
 	#define :target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-basic_2common_8h_1a0962b2dc2ca8f3e0c29d5dfa57e71c67>`(Class)

@@ -94,6 +94,7 @@ namespace geode
 	class_geode_OpenGeodePolygonalSurfaceBuilder.rst
 	class_geode_OpenGeodePolyhedralSolid.rst
 	class_geode_OpenGeodePolyhedralSolidBuilder.rst
+	class_geode_OpenGeodeRegularGridInput.rst
 	class_geode_OpenGeodeSectionInput.rst
 	class_geode_OpenGeodeSectionOutput.rst
 	class_geode_OpenGeodeTetrahedralSolid.rst
@@ -125,6 +126,9 @@ namespace geode
 	class_geode_PolyhedralSolidViewBuilder.rst
 	class_geode_Range.rst
 	class_geode_ReadOnlyAttribute.rst
+	class_geode_RegularGrid.rst
+	class_geode_RegularGridInput.rst
+	class_geode_RegularGridOutput.rst
 	class_geode_Relationships.rst
 	class_geode_RelationshipsBuilder.rst
 	class_geode_ReverseRange.rst
@@ -219,6 +223,8 @@ Overview
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`PolygonalSurfaceOutput<doxid-classgeode_1_1_polygonal_surface_output>`<dimension>, const :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>&, absl::string_view> :target:`PolygonalSurfaceOutputFactory<doxid-namespacegeode_1a382dd232c3c35d7380abfb77ea512645>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`PolyhedralSolidInput<doxid-classgeode_1_1_polyhedral_solid_input>`<dimension>, :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>&, absl::string_view> :target:`PolyhedralSolidInputFactory<doxid-namespacegeode_1a03242cd517f98670ee7f8d4aa41a67b2>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`<dimension>, const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>&, absl::string_view> :target:`PolyhedralSolidOutputFactory<doxid-namespacegeode_1ae2e1fb4c87cee86628bb874b8f2018bf>`;
+	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`RegularGridInput<doxid-classgeode_1_1_regular_grid_input>`<dimension>, absl::string_view> :target:`RegularGridInputFactory<doxid-namespacegeode_1a6fb817e5f6a812ece8cb8a81ec9886b8>`;
+	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`RegularGridOutput<doxid-classgeode_1_1_regular_grid_output>`<dimension>, const :ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`<dimension>&, absl::string_view> :target:`RegularGridOutputFactory<doxid-namespacegeode_1adab3a608b9906e6f415b14771dcfd16e>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`TetrahedralSolidInput<doxid-classgeode_1_1_tetrahedral_solid_input>`<dimension>, :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>&, absl::string_view> :target:`TetrahedralSolidInputFactory<doxid-namespacegeode_1a56b8f35bc32943bf9e80e229b42af648>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`TetrahedralSolidOutput<doxid-classgeode_1_1_tetrahedral_solid_output>`<dimension>, const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>&, absl::string_view> :target:`TetrahedralSolidOutputFactory<doxid-namespacegeode_1a1914967db670357e1320d367941c5d18>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`TriangulatedSurfaceInput<doxid-classgeode_1_1_triangulated_surface_input>`<dimension>, :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>&, absl::string_view> :target:`TriangulatedSurfaceInputFactory<doxid-namespacegeode_1abec5e1720055023d078431c6a926df2e>`;
@@ -430,6 +436,9 @@ Overview
 	template <index_t dimension>
 	class :ref:`OpenGeodePolyhedralSolidBuilder<doxid-classgeode_1_1_open_geode_polyhedral_solid_builder>`;
 
+	template <index_t dimension>
+	class :ref:`OpenGeodeRegularGridInput<doxid-classgeode_1_1_open_geode_regular_grid_input>`;
+
 	class :ref:`OpenGeodeSectionInput<doxid-classgeode_1_1_open_geode_section_input>`;
 	class :ref:`OpenGeodeSectionOutput<doxid-classgeode_1_1_open_geode_section_output>`;
 
@@ -512,6 +521,15 @@ Overview
 
 	template <typename T>
 	class :ref:`ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridInput<doxid-classgeode_1_1_regular_grid_input>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridOutput<doxid-classgeode_1_1_regular_grid_output>`;
 
 	class :ref:`Relationships<doxid-classgeode_1_1_relationships>`;
 	class :ref:`RelationshipsBuilder<doxid-classgeode_1_1_relationships_builder>`;
@@ -872,6 +890,7 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1ae3a0efd7d2b1a538c139321616df2007>`(:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1868badab23067bbd9a426b8cce96665>`(:ref:`PolyhedralSolidViewBuilder<doxid-classgeode_1_1_polyhedral_solid_view_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ab57eb299d31f7ff17e1a54391b1e9538>`(:ref:`PolyhedralSolidView<doxid-classgeode_1_1_polyhedral_solid_view>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa3df0d5866380998f87957299ec1334d>`(:ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8a7d3b56ede8584b86aacd34f9406b10>`(:ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8d32d54426edeaad7cfe32bbf73441b4>`(:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`);
@@ -908,6 +927,13 @@ Overview
 	:target:`BITSERY_OUTPUT_MESH_DIMENSION<doxid-namespacegeode_1a49cf1b2f5f7a1e3cae6319b9e9396e43>`(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`);
 	:target:`BITSERY_INPUT_MESH_DIMENSION<doxid-namespacegeode_1af16989ab9befa5e2a3d3551802a20afd>`(:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`);
 	:target:`BITSERY_OUTPUT_MESH_DIMENSION<doxid-namespacegeode_1a929fc6ebddb2dd41979506177bc5663c>`(:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a999acfa914514f16af04d5450c1c3236>`(:ref:`OpenGeodeRegularGridInput<doxid-classgeode_1_1_open_geode_regular_grid_input>`);
+
+	:target:`BITSERY_OUTPUT_MESH_DIMENSION_IMPL<doxid-namespacegeode_1aea84619d180b13595adb8c4185dcbd96>`(
+		:ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`,
+		:ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`
+		);
+
 	:target:`BITSERY_INPUT_MESH_DIMENSION<doxid-namespacegeode_1a828b8fcd92371a82d1e2482e9b71d623>`(:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`);
 	:target:`BITSERY_OUTPUT_MESH_DIMENSION<doxid-namespacegeode_1a3d50acb5776571f3ab75818a381007b5>`(:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`);
 	:target:`BITSERY_INPUT_MESH_DIMENSION<doxid-namespacegeode_1a112d6f77a8a63172f901bf937f318f5a>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`);
@@ -984,6 +1010,17 @@ Overview
 	template <index_t dimension>
 	void :ref:`save_polyhedral_solid<doxid-namespacegeode_1a21ca1aff84553e8332fd172dc651a521>`(
 		const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid,
+		absl::string_view filename
+		);
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(:ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`);
+
+	template <index_t dimension>
+	std::unique_ptr<:ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`<dimension>> :ref:`load_regular_grid<doxid-namespacegeode_1afcf1d96c3b37241ad459bc855980cc4a>`(absl::string_view filename);
+
+	template <index_t dimension>
+	void :ref:`save_regular_grid<doxid-namespacegeode_1ad51a801008d7bedde89b06be6cfaa992>`(
+		const :ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`<dimension>& regular_grid,
 		absl::string_view filename
 		);
 
@@ -2194,6 +2231,60 @@ API function for saving a :ref:`PolyhedralSolid <doxid-classgeode_1_1_polyhedral
 		- filename
 
 		- Path to the file where save the :ref:`PolyhedralSolid <doxid-classgeode_1_1_polyhedral_solid>`.
+
+.. index:: pair: function; load_regular_grid
+.. _doxid-namespacegeode_1afcf1d96c3b37241ad459bc855980cc4a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::unique_ptr<:ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`<dimension>> load_regular_grid(absl::string_view filename)
+
+API function for loading a :ref:`RegularGrid <doxid-classgeode_1_1_regular_grid>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_regular_grid
+.. _doxid-namespacegeode_1ad51a801008d7bedde89b06be6cfaa992:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void save_regular_grid(
+		const :ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`<dimension>& regular_grid,
+		absl::string_view filename
+		)
+
+API function for saving a :ref:`RegularGrid <doxid-classgeode_1_1_regular_grid>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- regular_grid
+
+		- :ref:`RegularGrid <doxid-classgeode_1_1_regular_grid>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`RegularGrid <doxid-classgeode_1_1_regular_grid>`.
 
 .. index:: pair: function; load_tetrahedral_solid
 .. _doxid-namespacegeode_1a14a941221d7d7185843588ef1796198e:

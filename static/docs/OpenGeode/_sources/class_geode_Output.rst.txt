@@ -26,6 +26,10 @@ class geode::Output
 	// direct descendants
 
 	class :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridOutput<doxid-classgeode_1_1_regular_grid_output>`;
+
 	class :ref:`SectionOutput<doxid-classgeode_1_1_section_output>`;
 	class :ref:`VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`;
 
