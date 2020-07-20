@@ -47,6 +47,18 @@ Interface class to represent regular grids.
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_cells<doxid-classgeode_1_1_regular_grid_1aa89a6dce9e17a6c52e8bb3396f3f0cf8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		double :target:`cell_size<doxid-classgeode_1_1_regular_grid_1ad7fc89425179c82a30ba13e76c932410>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`cell_index<doxid-classgeode_1_1_regular_grid_1a7dddd1553a612491b5d6e18de7b92153>`(const :ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`& index) const;
+		:ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>` :target:`cell_index<doxid-classgeode_1_1_regular_grid_1a1ee4a3b2291b14276e39943909e6b913>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
+	
+		absl::optional<:ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`> :target:`next_cell<doxid-classgeode_1_1_regular_grid_1a74c89ca14dac294b2e78398fb7892bb2>`(
+			const :ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`& index,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
+			) const;
+	
+		absl::optional<:ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`> :target:`previous_cell<doxid-classgeode_1_1_regular_grid_1ac85a6adc87a74cce4c2964c6d7b9b504>`(
+			const :ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`& index,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
+			) const;
+	
 		absl::optional<:ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`> :target:`cell<doxid-classgeode_1_1_regular_grid_1a5d14746e95000a7bd1adfd14293fd961>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`point<doxid-classgeode_1_1_regular_grid_1a6523421e26a0315a646a22e596b9e826>`(const :ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`& index) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`cell_attribute_manager<doxid-classgeode_1_1_regular_grid_1ab8db5ba1fa1809fbe1851c7a38d587b0>`() const;
