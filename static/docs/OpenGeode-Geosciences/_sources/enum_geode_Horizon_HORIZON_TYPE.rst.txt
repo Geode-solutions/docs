@@ -19,6 +19,8 @@ Overview
 	    :ref:`NO_TYPE<doxid-classgeode_1_1_horizon_1a1a8b2fbe75ab29e9c88e8b8dc78afbbfa245d11a3709454cc69b2de7911073d57>`,
 	    :target:`CONFORMAL<doxid-classgeode_1_1_horizon_1a1a8b2fbe75ab29e9c88e8b8dc78afbbfafa7a1be970f581a01cb646504c485db6>`,
 	    :target:`NON_CONFORMAL<doxid-classgeode_1_1_horizon_1a1a8b2fbe75ab29e9c88e8b8dc78afbbfacf7609ee7b959dd4d0a7a718fe3ff41e>`,
+	    :target:`TOPOGRAPHY<doxid-classgeode_1_1_horizon_1a1a8b2fbe75ab29e9c88e8b8dc78afbbfa06111a9d9a11d479d24305fedf2efcd9>`,
+	    :target:`INTRUSION<doxid-classgeode_1_1_horizon_1a1a8b2fbe75ab29e9c88e8b8dc78afbbfa6f67032932e0a0bb4723c78c1c2d3bcc>`,
 	};
 
 .. _details-classgeode_1_1_horizon_1a1a8b2fbe75ab29e9c88e8b8dc78afbbf:
