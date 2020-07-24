@@ -9,7 +9,7 @@
     </h2>
 
     <p :class="paragraph">
-      We provide three pre-compiled binaries for OpenGeode.
+      We provide pre-compiled binaries for OpenGeode.
       They are automatically generated for each OpenGeode release and can be
       downloaded following
       <a
