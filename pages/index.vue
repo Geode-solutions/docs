@@ -60,6 +60,12 @@ export default {
         route: 'how-to-compile-module'
       },
       {
+        title: 'How to use OpenGeode bindings',
+        descr:
+          'Configuration and execution of OpenGeode Python bindings on Windows, Linux and macOS',
+        route: 'how-to-use-binding'
+      },
+      {
         title: 'Where to get OpenGeode code',
         descr:
           'Two ways to get OpenGeode code: download precompiled binaries or download source code',
