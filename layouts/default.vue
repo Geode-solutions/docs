@@ -20,11 +20,11 @@
         <v-toolbar-title>Geode-solutions</v-toolbar-title>
       </v-btn>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <v-container>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
@@ -48,6 +48,7 @@ export default {
           title: 'Compile OpenGeode module',
           to: '/how-to-compile-module'
         },
+        { title: 'Use OpenGeode binding', to: '/how-to-use-binding' },
         { title: 'Get OpenGeode code', to: '/where-to-get-code' },
         { title: 'How to link with OpenGeode-IO', to: '/link-with-io' },
         { divider: 'CODE DOCUMENTATION' },
