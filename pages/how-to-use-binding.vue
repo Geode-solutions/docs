@@ -48,7 +48,7 @@
     </h4>
 
     <ol :class="paragraph">
-      <li>The bindgins are located in the bin directory of the package.</li>
+      <li>The bindings are located in the bin directory of the package.</li>
       <li>Add this path to the <code>PYHTONPATH</code> and the <code>PATH</code> environment variables.</li>
     </ol>
 
@@ -58,7 +58,7 @@
 
     <ol :class="paragraph">
       <li>Open a Python script or Jupyter notebook.</li>
-      <li>Import OpenGeode bindings, there is one bindings for each C++ library. Example for the basic library: 
+      <li>Import OpenGeode bindings, there is one binding for each C++ library. Example for the basic library: 
         <code>import opengeode_py_basic as basic</code>.</li>
       <li>Use any OpenGeode objects, methods and functions <code>point = basic.Point3D([0.1, 42, 54.9])</code></li>
     </ol>
@@ -76,7 +76,7 @@
     </h4>
 
     <ol :class="paragraph">
-      <li>The bindgins are located in the lib directory of the package.</li>
+      <li>The bindings are located in the lib directory of the package.</li>
       <li>Add this path to the <code>PYHTONPATH</code> and the <code>LD_LIBRARY_PATH</code> environment variables.</li>
     </ol>
 
@@ -86,7 +86,7 @@
 
     <ol :class="paragraph">
       <li>Open a Python script or Jupyter notebook.</li>
-      <li>Import OpenGeode bindings, there is one bindings for each C++ library. Example for the basic library: 
+      <li>Import OpenGeode bindings, there is one binding for each C++ library. Example for the basic library: 
         <code>import opengeode_py_basic as basic</code>.</li>
       <li>Use any OpenGeode objects, methods and functions <code>point = basic.Point3D([0.1, 42, 54.9])</code></li>
     </ol> 
