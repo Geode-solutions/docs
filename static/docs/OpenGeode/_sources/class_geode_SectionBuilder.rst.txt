@@ -31,7 +31,7 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 
 		// methods
 	
-		void :target:`copy<doxid-classgeode_1_1_section_builder_1a97467280fdcd6005857372bc68a80d69>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
+		:ref:`detail::ModelCopyMapping<doxid-classgeode_1_1detail_1_1_model_copy_mapping>` :target:`copy<doxid-classgeode_1_1_section_builder_1a71b2c0f82f48c015a4a255923d06dd29>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
 		:ref:`detail::ModelCopyMapping<doxid-classgeode_1_1detail_1_1_model_copy_mapping>` :target:`copy_components<doxid-classgeode_1_1_section_builder_1a48b673cd6cae4cc3a57073ad64fb5e55>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
 	
 		void :target:`copy_component_relationships<doxid-classgeode_1_1_section_builder_1a6eecf3a0aa61b5a20181b9940064fe4e>`(

@@ -32,7 +32,7 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 
 		// methods
 	
-		void :target:`copy<doxid-classgeode_1_1_b_rep_builder_1a3cf7736b8d1344a3153ab523fcd7d66f>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+		:ref:`detail::ModelCopyMapping<doxid-classgeode_1_1detail_1_1_model_copy_mapping>` :target:`copy<doxid-classgeode_1_1_b_rep_builder_1a687670380d7d7beb607e723760b82e55>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 		:ref:`detail::ModelCopyMapping<doxid-classgeode_1_1detail_1_1_model_copy_mapping>` :target:`copy_components<doxid-classgeode_1_1_b_rep_builder_1a5943fdecb561a7938d9a312804d86cbf>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 	
 		void :target:`copy_component_relationships<doxid-classgeode_1_1_b_rep_builder_1a13fc2185d0d2ac4d1afcf34c85899089>`(
