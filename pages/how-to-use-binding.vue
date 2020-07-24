@@ -24,7 +24,7 @@
     </ul>
 
     <p :class="paragraph">
-      Pre-compiled binaries on these three platforms are also provided.
+      Pre-compiled binaries on these platforms are also provided.
       <a
         href="/where-to-get-code"
       >This page</a> describes where to download these binaries.
