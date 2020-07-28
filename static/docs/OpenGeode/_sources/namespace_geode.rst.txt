@@ -917,6 +917,15 @@ Overview
 	template <index_t dimension>
 	absl::optional<std::unique_ptr<:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>>> :target:`convert_surface_mesh_into_triangulated_surface<doxid-namespacegeode_1ae33b5150d1f10a917e6025e1e83de2eb>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface);
 
+	template <index_t dimension>
+	void :target:`triangulate_surface_mesh<doxid-namespacegeode_1ad29fa84c1540c2d42eb6046050f9e89f>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface);
+
+	template <index_t dimension>
+	void :target:`triangulate_surface_mesh<doxid-namespacegeode_1a28c3db55c0a7c5f6625be5059a560de5>`(
+		const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface,
+		:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension>& builder
+		);
+
 	:target:`BITSERY_INPUT_MESH_DIMENSION<doxid-namespacegeode_1a2b924df3f51c8cba73c920c33e613352>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`BITSERY_OUTPUT_MESH_DIMENSION<doxid-namespacegeode_1aa9bc004f80438dfdb47b55329b548805>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`BITSERY_INPUT_MESH_NO_DIMENSION<doxid-namespacegeode_1a6b8dac0b909b7c5eb4db841a6117bd0f>`(:ref:`Graph<doxid-classgeode_1_1_graph>`);
@@ -1060,6 +1069,8 @@ Overview
 	void opengeode_model_api :target:`convert_surface_meshes_into_triangulated_surfaces<doxid-namespacegeode_1a36c5dede7d04df0ccda26ff36e23ddab>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 	void opengeode_model_api :target:`convert_surface_meshes_into_triangulated_surfaces<doxid-namespacegeode_1a56ebff95719334e0394bf1a20957d59d>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
 	void opengeode_model_api :target:`convert_block_meshes_into_tetrahedral_solids<doxid-namespacegeode_1a50185e6f94e236ed316b6c14fc5f8688>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1a250abe68306f3ff924e11ca40db2e0ed>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1a0bd6c1db09b0798ca9530ed601b1c445>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(:ref:`Block<doxid-classgeode_1_1_block>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a6454289fb6bd960ae468b483e350c107>`(:ref:`Blocks<doxid-classgeode_1_1_blocks>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a829aef1a1c5495a494fc2fc55b4922c3>`(:ref:`BlocksBuilder<doxid-classgeode_1_1_blocks_builder>`);
