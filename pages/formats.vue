@@ -21,7 +21,7 @@ export default {
         extension: '.msh (v2 and v4 supported)',
         cpp: "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
         in: true,
-        out: false
+        out: true
       },
       {
         extension: '.svg',
