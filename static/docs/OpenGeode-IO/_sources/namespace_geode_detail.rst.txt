@@ -10,6 +10,7 @@ namespace geode::detail
 	class_geode_detail_AssimpMeshInput.rst
 	class_geode_detail_AssimpMeshOutput.rst
 	class_geode_detail_MSHInput.rst
+	class_geode_detail_MSHOutput.rst
 	class_geode_detail_OBJInput.rst
 	class_geode_detail_OBJOutput.rst
 	class_geode_detail_PLYInput.rst
@@ -36,6 +37,7 @@ namespace geode::detail
 	class :ref:`AssimpMeshOutput<doxid-classgeode_1_1detail_1_1_assimp_mesh_output>`;
 
 	class :ref:`MSHInput<doxid-classgeode_1_1detail_1_1_m_s_h_input>`;
+	class :ref:`MSHOutput<doxid-classgeode_1_1detail_1_1_m_s_h_output>`;
 	class :ref:`OBJInput<doxid-classgeode_1_1detail_1_1_o_b_j_input>`;
 	class :ref:`OBJOutput<doxid-classgeode_1_1detail_1_1_o_b_j_output>`;
 	class :ref:`PLYInput<doxid-classgeode_1_1detail_1_1_p_l_y_input>`;
