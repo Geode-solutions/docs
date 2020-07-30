@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::VTUInput
+.. _doxid-classgeode_1_1detail_1_1_v_t_u_input:
+
+class geode::detail::VTUInput
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vtu_input.h>
+	
+	class VTUInput: public PolyhedralSolidInput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`VTUInput<doxid-classgeode_1_1detail_1_1_v_t_u_input_1afe80696501b3da57517d965d5f5f9895>`(
+			PolyhedralSolid<3>& solid,
+			absl::string_view filename
+			);
+
+		// methods
+	
+		void :target:`do_read<doxid-classgeode_1_1detail_1_1_v_t_u_input_1a56c2b3de5addd484785d0b7c0de16166>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_u_input_1a67a6e3413e14306737d8de76275a4986>`();
+	};
