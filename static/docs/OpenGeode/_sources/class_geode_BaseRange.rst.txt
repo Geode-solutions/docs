@@ -28,5 +28,6 @@ Base class for range-based iteration on custom range. See derived classes for us
 
 	// direct descendants
 
+	class :ref:`Indices<doxid-classgeode_1_1_indices>`;
 	class :ref:`Range<doxid-classgeode_1_1_range>`;
 	class :ref:`ReverseRange<doxid-classgeode_1_1_reverse_range>`;
