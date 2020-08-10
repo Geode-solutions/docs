@@ -7,7 +7,10 @@ template class geode::RegularGrid
 .. toctree::
 	:hidden:
 
-Interface class to represent regular grids.
+Overview
+~~~~~~~~
+
+Interface class to represent regular grids. :ref:`More...<details-classgeode_1_1_regular_grid>`
 
 
 .. ref-code-block:: cpp
@@ -22,6 +25,7 @@ Interface class to represent regular grids.
 		// typedefs
 	
 		typedef std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> :target:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`;
+		typedef absl::InlinedVector<:ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`, dimension*dimension> :target:`Indices<doxid-classgeode_1_1_regular_grid_1a13cf71d8b2c3618a3df8482032834a45>`;
 
 		// construction
 	
@@ -59,8 +63,46 @@ Interface class to represent regular grids.
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
 			) const;
 	
-		absl::optional<:ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`> :target:`cell<doxid-classgeode_1_1_regular_grid_1a5d14746e95000a7bd1adfd14293fd961>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
+		absl::optional<:ref:`Indices<doxid-classgeode_1_1_regular_grid_1a13cf71d8b2c3618a3df8482032834a45>`> :ref:`cell<doxid-classgeode_1_1_regular_grid_1a597ca7ee726447c54617289b10c49f54>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`point<doxid-classgeode_1_1_regular_grid_1a6523421e26a0315a646a22e596b9e826>`(const :ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`& index) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`cell_attribute_manager<doxid-classgeode_1_1_regular_grid_1ab8db5ba1fa1809fbe1851c7a38d587b0>`() const;
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_regular_grid_1a89cb9b53414e1a7aa659de3bab59683f>`();
 	};
+.. _details-classgeode_1_1_regular_grid:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Interface class to represent regular grids.
+
+Methods
+-------
+
+.. index:: pair: function; cell
+.. _doxid-classgeode_1_1_regular_grid_1a597ca7ee726447c54617289b10c49f54:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<:ref:`Indices<doxid-classgeode_1_1_regular_grid_1a13cf71d8b2c3618a3df8482032834a45>`> cell(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const
+
+Return the cell(s) containing the query point
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- query
+
+		- Position of point
+
+
+
+.. rubric:: Returns:
+
+No, one index or several cell indices that contain the query point.  When query point is geometrically near to cell limit, several cell indices are returned: they correspond the potential cells that may contain the point.
+

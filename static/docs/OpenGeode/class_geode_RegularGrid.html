@@ -37,7 +37,9 @@
 <span id="doxid-classgeode-1-1-regular-grid"></span><span id="index-0"></span><h1>template class geode::RegularGrid</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Interface class to represent regular grids.</p>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>Interface class to represent regular grids. <a class="reference internal" href="#details-classgeode-1-1-regular-grid"><span class="std std-ref">More…</span></a></p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;regular_grid.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -47,6 +49,7 @@
     <span class="c1">// typedefs</span>
 
     <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-1a23d49d9013264222745829c7530782ad"><span></span><span class="n">Index</span></span><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-classgeode-1-1-regular-grid-1a23d49d9013264222745829c7530782ad"><span class="std std-ref">Index</span></a><span></span><span class="p">,</span> <span class="n">dimension</span><span class="o">*</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-1a13cf71d8b2c3618a3df8482032834a45"><span></span><span class="n">Indices</span></span><span></span><span class="p">;</span>
 
     <span class="c1">// construction</span>
 
@@ -84,11 +87,35 @@
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">direction</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-classgeode-1-1-regular-grid-1a23d49d9013264222745829c7530782ad"><span class="std std-ref">Index</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-1a5d14746e95000a7bd1adfd14293fd961"><span></span><span class="n">cell</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">query</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-classgeode-1-1-regular-grid-1a13cf71d8b2c3618a3df8482032834a45"><span class="std std-ref">Indices</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-regular-grid-1a597ca7ee726447c54617289b10c49f54"><span class="std std-ref">cell</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">query</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-1a6523421e26a0315a646a22e596b9e826"><span></span><span class="n">point</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="#doxid-classgeode-1-1-regular-grid-1a23d49d9013264222745829c7530782ad"><span class="std std-ref">Index</span></a><span></span><span class="o">&amp;</span> <span class="n">index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-1ab8db5ba1fa1809fbe1851c7a38d587b0"><span></span><span class="n">cell_attribute_manager</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-1a89cb9b53414e1a7aa659de3bab59683f"><span></span><span class="n">native_extension_static</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-regular-grid"></span><h2>Detailed Documentation</h2>
+<p>Interface class to represent regular grids.</p>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-regular-grid-1a597ca7ee726447c54617289b10c49f54"><span id="index-1"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-classgeode-1-1-regular-grid-1a13cf71d8b2c3618a3df8482032834a45"><span class="std std-ref">Indices</span></a><span></span><span class="o">&gt;</span> <span class="n">cell</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">query</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the cell(s) containing the query point</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>query</p></td>
+<td><p>Position of point</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>No, one index or several cell indices that contain the query point.  When query point is geometrically near to cell limit, several cell indices are returned: they correspond the potential cells that may contain the point.</p>
+</div>
+</div>
 </div>
 
 
