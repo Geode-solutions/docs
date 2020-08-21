@@ -28,7 +28,7 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 
 		// methods
 	
-		std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`find_generic_attribute<doxid-classgeode_1_1_attribute_manager_1a87db4be6c012e9ceb47d5e618e5bcba4>`(const std::string& name) const;
+		std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`find_generic_attribute<doxid-classgeode_1_1_attribute_manager_1a0ef59b09e7216b51bd072d9895cdba04>`(absl::string_view name) const;
 	
 		template <typename T>
 		std::shared_ptr<:ref:`ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`<T>> :ref:`find_attribute<doxid-classgeode_1_1_attribute_manager_1aff74019fbaa9939a5e1ba5f1bf81b5a5>`(absl::string_view name) const;
@@ -74,12 +74,12 @@ Methods
 -------
 
 .. index:: pair: function; find_generic_attribute
-.. _doxid-classgeode_1_1_attribute_manager_1a87db4be6c012e9ceb47d5e618e5bcba4:
+.. _doxid-classgeode_1_1_attribute_manager_1a0ef59b09e7216b51bd072d9895cdba04:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> find_generic_attribute(const std::string& name) const
+	std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> find_generic_attribute(absl::string_view name) const
 
 Recover the non-typed/generic Attribute from the attribute name. This can be used when attribute type is not known in a context.
 

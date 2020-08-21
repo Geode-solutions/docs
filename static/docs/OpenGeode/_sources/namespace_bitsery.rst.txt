@@ -7,6 +7,7 @@ namespace bitsery
 .. toctree::
 	:hidden:
 
+	namespace_bitsery_ext.rst
 	namespace_bitsery_traits.rst
 
 
@@ -20,6 +21,7 @@ namespace bitsery
 
 	// namespaces
 
+	namespace :ref:`bitsery::ext<doxid-namespacebitsery_1_1ext>`;
 	namespace :ref:`bitsery::traits<doxid-namespacebitsery_1_1traits>`;
 
 	// global functions

@@ -1,0 +1,90 @@
+.. index:: pair: namespace; bitsery::ext
+.. _doxid-namespacebitsery_1_1ext:
+
+namespace bitsery::ext
+======================
+
+.. toctree::
+	:hidden:
+
+	struct_bitsery_ext_PolymorphicBaseClass.rst
+	struct_bitsery_ext_PolymorphicBaseClass-2.rst
+	struct_bitsery_ext_PolymorphicBaseClass-3.rst
+	struct_bitsery_ext_PolymorphicBaseClass-4.rst
+	struct_bitsery_ext_PolymorphicBaseClass-5.rst
+	struct_bitsery_ext_PolymorphicBaseClass-6.rst
+	struct_bitsery_ext_PolymorphicBaseClass-7.rst
+	struct_bitsery_ext_PolymorphicBaseClass-8.rst
+	struct_bitsery_ext_PolymorphicBaseClass-9.rst
+	struct_bitsery_ext_PolymorphicBaseClass-10.rst
+	struct_bitsery_ext_PolymorphicBaseClass-11.rst
+	struct_bitsery_ext_PolymorphicBaseClass-12.rst
+	struct_bitsery_ext_PolymorphicBaseClass-13.rst
+	struct_bitsery_ext_PolymorphicBaseClass-14.rst
+	struct_bitsery_ext_PolymorphicBaseClass-15.rst
+	struct_bitsery_ext_PolymorphicBaseClass-16.rst
+	struct_bitsery_ext_PolymorphicBaseClass-17.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace ext {
+
+	// structs
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::Component2D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_component2_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::SurfaceMesh2D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_surface_mesh2_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::SolidMesh3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_solid_mesh3_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::PolyhedralSolid3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_polyhedral_solid3_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::SurfaceMesh3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_surface_mesh3_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::TriangulatedSurface2D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_triangulated_surface2_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::TetrahedralSolid3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_tetrahedral_solid3_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::TriangulatedSurface3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_triangulated_surface3_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::PolygonalSurface3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_polygonal_surface3_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::PointSet3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_point_set3_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::EdgedCurve2D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_edged_curve2_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::Component3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_component3_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::PolygonalSurface2D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_polygonal_surface2_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::EdgedCurve3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_edged_curve3_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::PointSet2D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_point_set2_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::Graph><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_graph_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::VertexSet><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_vertex_set_01_4>`;
+
+	} // namespace ext

@@ -1,0 +1,21 @@
+.. index:: pair: struct; bitsery::ext::PolymorphicBaseClass<geode::Graph>
+.. _doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_graph_01_4:
+
+template struct bitsery::ext::PolymorphicBaseClass<geode::Graph>
+================================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bitsery_archive.h>
+	
+	template <>
+	struct PolymorphicBaseClass<geode::Graph>: public PolymorphicDerivedClasses< geode::OpenGeodeGraph, geode::EdgedCurve2D, geode::EdgedCurve3D >
+	{
+	};

@@ -1,0 +1,21 @@
+.. index:: pair: struct; bitsery::ext::PolymorphicBaseClass<geode::Component3D>
+.. _doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_component3_d_01_4:
+
+template struct bitsery::ext::PolymorphicBaseClass<geode::Component3D>
+======================================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bitsery_archive.h>
+	
+	template <>
+	struct PolymorphicBaseClass<geode::Component3D>: public PolymorphicDerivedClasses< geode::Corner3D, geode::Line3D, geode::Surface3D, geode::Block3D, geode::ModelBoundary3D >
+	{
+	};

@@ -24,6 +24,7 @@ Overview
 	// namespaces
 
 	namespace :ref:`bitsery<doxid-namespacebitsery>`;
+		namespace :ref:`bitsery::ext<doxid-namespacebitsery_1_1ext>`;
 		namespace :ref:`bitsery::traits<doxid-namespacebitsery_1_1traits>`;
 	namespace :ref:`geode<doxid-namespacegeode>`;
 		namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;

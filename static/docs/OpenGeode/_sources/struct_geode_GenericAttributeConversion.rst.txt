@@ -21,4 +21,5 @@ Helper struct to convert an Attribute value to generic float. This struct may be
 		// methods
 	
 		static float :target:`converted_value<doxid-structgeode_1_1_generic_attribute_conversion_1a63f8846e71483b0a357ce037b22abe93>`(const AttributeType&);
+		static bool :target:`is_genericable<doxid-structgeode_1_1_generic_attribute_conversion_1a822d76cb2d9a207199b4f8c6f08e363f>`();
 	};

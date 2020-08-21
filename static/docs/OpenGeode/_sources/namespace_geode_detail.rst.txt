@@ -70,7 +70,16 @@ namespace geode::detail
 
 	// global functions
 
+	template <typename Serializer>
+	void :target:`register_basic_pcontext<doxid-namespacegeode_1_1detail_1a8648101a87baa0975d8f9ccf34abb183>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
+
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`mapping_after_deletion<doxid-namespacegeode_1_1detail_1a90890e796e3fc5c2e28539ac82272d6c>`(const std::vector<bool>& to_delete);
+
+	template <typename Serializer>
+	void :target:`register_geometry_pcontext<doxid-namespacegeode_1_1detail_1aef91870a0b7782c65a3aa06b974a4270>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
+
+	template <typename Serializer>
+	void :target:`register_mesh_pcontext<doxid-namespacegeode_1_1detail_1a95d40203e8b1657a545acd288633fbb2>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 
 	template <typename Container>
 	void :target:`rotate<doxid-namespacegeode_1_1detail_1afc9fe5a2d2089d4b9a5585c6b06aa0eb>`(Container& vertices);
@@ -82,6 +91,9 @@ namespace geode::detail
 		H h,
 		const :ref:`VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`<Container>& m
 		);
+
+	template <typename Serializer>
+	void :target:`register_model_pcontext<doxid-namespacegeode_1_1detail_1aabe609223c623a9e6fbad122d1949d3f>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 
 	template <typename Range>
 	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`count_relationships<doxid-namespacegeode_1_1detail_1a3922ed9d6481362fb802c3a6bcbfe712>`(const :ref:`Range<doxid-classgeode_1_1_range>`& range);
