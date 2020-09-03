@@ -753,6 +753,12 @@ Overview
 		);
 
 	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`segment_segment_distance<doxid-namespacegeode_1a74f738f4982f62937cd9640b8e5236f0>`(
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment0,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment1
+		);
+
+	template <index_t dimension>
 	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_line_distance<doxid-namespacegeode_1a0152cc4808d761c36b5a7f3d95a85644>`(
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
@@ -1406,6 +1412,32 @@ a tuple containing:
 * the smallest distance.
 
 * the closest point on the segment.
+
+.. index:: pair: function; segment_segment_distance
+.. _doxid-namespacegeode_1a74f738f4982f62937cd9640b8e5236f0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> segment_segment_distance(
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment0,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment1
+		)
+
+Compute the smallest distance between two segments
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the first segment.
+
+* the closest point on the second segment.
 
 .. index:: pair: function; point_line_distance
 .. _doxid-namespacegeode_1a0152cc4808d761c36b5a7f3d95a85644:
