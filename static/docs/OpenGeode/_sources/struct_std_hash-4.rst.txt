@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::uuid>
-.. _doxid-structstd_1_1hash_3_01geode_1_1uuid_01_4:
+.. index:: pair: struct; std::hash<geode::PolyhedronFacetVertex>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_polyhedron_facet_vertex_01_4:
 
-template struct std::hash<geode::uuid>
-======================================
+template struct std::hash<geode::PolyhedronFacetVertex>
+=======================================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct std::hash<geode::uuid>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <uuid.h>
+	#include <solid_mesh.h>
 	
 	template <>
-	struct hash<geode::uuid>
+	struct hash<geode::PolyhedronFacetVertex>
 	{
 		// methods
 	
-		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1uuid_01_4_1adc9d49da2d1ceeeedc186a71b8a30553>` (const :ref:`geode::uuid<doxid-structgeode_1_1uuid>`& uuid) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_polyhedron_facet_vertex_01_4_1af84f7b91ab6ae3e7fc51563d33fe0348>` (const :ref:`geode::PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex) const;
 	};
