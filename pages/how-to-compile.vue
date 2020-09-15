@@ -29,14 +29,18 @@
         href="/where-to-get-code"
       >This page</a> describes where to download these binaries.
     </p>
-
+    
     <h3 :class="subsection">
+      Development tools
+    </h3>
+
+    <h3 :class="subsubsection">
       CMake
     </h3>
 
     <p :class="paragraph">
       OpenGeode comes with a CMake configuration file.
-      You can modify two items:
+      You can modify three items:
     </p>
 
     <ul :class="paragraph">
@@ -59,13 +63,21 @@
       Your version of CMake should be at least 3.11.
     </p>
 
-    <h3 :class="subsection">
+    <h3 :class="subsubsection">
       Compiler
     </h3>
 
     <p :class="paragraph">
       On Windows, we recommend to use Visual Studio 15 2017. On Linux, you can use gcc/g++ as compiler. You need a version equal to or higher than 4.8.
       On macOS, install Mac OS "Command Line Developer Tools" and use clang. On macOS you can also use Xcode as an IDE which uses clang.
+    </p>
+    
+    <h3 :class="subsubsection">
+      Git
+    </h3>
+    
+    <p :class="paragraph">
+      You need git to clone OpenGeode's dependancy repositories during configuration.
     </p>
 
     <h2 :class="section">
