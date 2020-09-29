@@ -60,7 +60,7 @@
     <p
       :class="paragraph"
     >
-      Your version of CMake should be at least 3.11.
+      Your version of CMake should be at least 3.14.
     </p>
 
     <h3 :class="subsubsection">
