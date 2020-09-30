@@ -32,5 +32,6 @@ enum geode::Position
 	    :target:`facet1<doxid-namespacegeode_1a316ec3486ec794c86021f0fea71f54a7a70e014086df287ba1d83699f9ab3f380>`,
 	    :target:`facet2<doxid-namespacegeode_1a316ec3486ec794c86021f0fea71f54a7ae375b284dcb270edd56efe5ec86716a6>`,
 	    :target:`facet3<doxid-namespacegeode_1a316ec3486ec794c86021f0fea71f54a7ab40b36becdd4ef7f89a5cf82c4c00429>`,
+	    :target:`parallel<doxid-namespacegeode_1a316ec3486ec794c86021f0fea71f54a7a48920c071f6a5c97ae3739be64630697>`,
 	};
 
