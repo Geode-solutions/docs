@@ -26,6 +26,13 @@ Class managing modifications of a :ref:`CrossSection <doxid-classgeode_1_1_cross
 
 		// methods
 	
+		void :target:`copy<doxid-classgeode_1_1_cross_section_builder_1ad8b45913f5889c375bd49edc23475630>`(const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section);
+	
+		void :target:`copy_geological_components<doxid-classgeode_1_1_cross_section_builder_1a9e70f394c2c63b5adb5660d964968e70>`(
+			detail::ModelCopyMapping& mapping,
+			const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section
+			);
+	
 		const uuid& :target:`add_fault<doxid-classgeode_1_1_cross_section_builder_1ab5b235252d122f7e5c883cf2dd8c6f25>`();
 		const uuid& :target:`add_fault<doxid-classgeode_1_1_cross_section_builder_1a8552f2c04f88f028cf1ab6215a8c7442>`(typename Fault2D::FAULT_TYPE type);
 	

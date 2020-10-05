@@ -26,6 +26,13 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 
 		// methods
 	
+		void :target:`copy<doxid-classgeode_1_1_structural_model_builder_1af95e5991be9b7072e6505790a2360c9d>`(const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model);
+	
+		void :target:`copy_geological_components<doxid-classgeode_1_1_structural_model_builder_1ae80f2cbc47a77ac8170360dd4316ba96>`(
+			detail::ModelCopyMapping& mapping,
+			const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model
+			);
+	
 		const uuid& :target:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a69e6317754624bf944beb6d2c25172af>`();
 		const uuid& :target:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a217c78dec273295715bcf273df22a1ce>`(typename Fault3D::FAULT_TYPE type);
 	

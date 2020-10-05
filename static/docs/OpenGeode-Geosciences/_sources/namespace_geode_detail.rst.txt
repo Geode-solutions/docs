@@ -18,9 +18,52 @@ namespace geode::detail
 	
 	namespace detail {
 
+	// typedefs
+
+	typedef BijectiveMapping<uuid> :target:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>`;
+
 	// classes
 
 	template <typename Component>
 	class :ref:`GeologicalComponentsStorage<doxid-classgeode_1_1detail_1_1_geological_components_storage>`;
+
+	// global functions
+
+	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
+	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_faults<doxid-namespacegeode_1_1detail_1a9f00af679b64fad6cac12b2cc89c56d9>`(
+		const ModelFrom& from,
+		const ModelTo& to,
+		BuilderTo& builder_to
+		);
+
+	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
+	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_horizons<doxid-namespacegeode_1_1detail_1a8b27a331efe3f5a5667326c794a1d260>`(
+		const ModelFrom& from,
+		const ModelTo& to,
+		BuilderTo& builder_to
+		);
+
+	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
+	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_fault_blocks<doxid-namespacegeode_1_1detail_1a7d7109638ee81b2c0487409977f6d401>`(
+		const ModelFrom& from,
+		const ModelTo& to,
+		BuilderTo& builder_to
+		);
+
+	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
+	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_stratigraphic_units<doxid-namespacegeode_1_1detail_1a9d2cdea265e3faf92f9c9b8d675da4b2>`(
+		const ModelFrom& from,
+		const ModelTo& to,
+		BuilderTo& builder_to
+		);
+
+	template <typename ModelFrom, typename CollectionRangeFrom, typename BuilderTo>
+	void :target:`copy_collection_item_relationships<doxid-namespacegeode_1_1detail_1a8b1d3dc5293808b772a371c16f01510c>`(
+		const ModelFrom& from,
+		const CollectionRangeFrom& collection_range_from,
+		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>`& collection_mapping,
+		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>`& item_mapping,
+		BuilderTo& builder_to
+		);
 
 	} // namespace detail
