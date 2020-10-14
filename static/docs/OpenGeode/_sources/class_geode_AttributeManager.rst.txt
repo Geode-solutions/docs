@@ -50,6 +50,8 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 		void :ref:`reserve<doxid-classgeode_1_1_attribute_manager_1af88978db245106a3d17d3afa38887a72>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` capacity);
 		void :ref:`assign_attribute_value<doxid-classgeode_1_1_attribute_manager_1a205c2ea07cb52eacf8d6e1846ffdbda8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` from_element, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element);
 		void :ref:`interpolate_attribute_value<doxid-classgeode_1_1_attribute_manager_1a379b913c2075d50627ea85c0dd85b4cd>`(const :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`& interpolation, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element);
+		bool :target:`has_assignable_attributes<doxid-classgeode_1_1_attribute_manager_1ab9ddc171e5e884603ae4784ee2225da8>`() const;
+		bool :target:`has_interpolable_attributes<doxid-classgeode_1_1_attribute_manager_1a782cded6137eea453a89d072d00367a4>`() const;
 		absl::FixedArray<absl::string_view> :ref:`attribute_names<doxid-classgeode_1_1_attribute_manager_1a8d53d29e3f40fe7802cf4d110e8637d5>`() const;
 		bool :ref:`attribute_exists<doxid-classgeode_1_1_attribute_manager_1a0c6ae388a4f462673e075f348455fafd>`(absl::string_view name) const;
 		void :ref:`delete_attribute<doxid-classgeode_1_1_attribute_manager_1aa367a80342330917e6343ca13fe6b5cd>`(absl::string_view name);
