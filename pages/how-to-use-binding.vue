@@ -52,7 +52,6 @@
     <p :class="paragraph">
       That's all! You are ready to work with OpenGeode bindings.
     </p>
-
   </v-layout>
 </template>
 
@@ -69,8 +68,3 @@ export default {
 }
 </script>
 
-<style>
-.cpp {
-  background-color: #ffffff !important;
-}
-</style> 

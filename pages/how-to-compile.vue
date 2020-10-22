@@ -52,8 +52,8 @@
       </li>
       <li>
         <code>OPENGEODE_WITH_PYTHON</code>: switch on/off the OpenGeode Python binding (see <a
-        href="/how-to-use-binding"
-      >this page</a>  for usage).
+          href="/how-to-use-binding"
+        >this page</a>  for usage).
       </li>
     </ul>
 
@@ -218,9 +218,3 @@ export default {
   })
 }
 </script>
-
-<style>
-.cpp {
-  background-color: #ffffff !important;
-}
-</style> 

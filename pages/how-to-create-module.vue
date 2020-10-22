@@ -115,13 +115,13 @@
         <li>
           open tests/mylib/CMakeLists.txt and use one call <code>add_geode_test</code> by test. Here are the parameters:
           <ul>
-          <li>
-            <code>SOURCE</code> the test file (path relative to tests/mylib)
-          </li>
-          <li>
-            <code>DEPENDENCIES</code> the list of CMake target dependencies
-          </li>
-        </ul>
+            <li>
+              <code>SOURCE</code> the test file (path relative to tests/mylib)
+            </li>
+            <li>
+              <code>DEPENDENCIES</code> the list of CMake target dependencies
+            </li>
+          </ul>
         </li>
       </ol>
     </p>
@@ -156,7 +156,7 @@
     </p>
     
     <p :class="paragraph">
-    Don't forget to also do it for the tests directory if you enabled the <code>MYMODULE_WITH_TESTS</code> option!
+      Don't forget to also do it for the tests directory if you enabled the <code>MYMODULE_WITH_TESTS</code> option!
     </p>
 
     <p :class="paragraph">
@@ -224,8 +224,3 @@ export default {
 }
 </script>
 
-<style>
-.cpp {
-  background-color: #ffffff !important;
-}
-</style> 

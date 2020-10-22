@@ -50,6 +50,7 @@ export default {
       icons: 'fa'
     },
     theme: {
+      options: { customProperties: true },
       themes: {
         light: {
           primary: colors.teal.darken1,

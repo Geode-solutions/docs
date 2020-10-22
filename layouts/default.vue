@@ -3,7 +3,9 @@
     <v-navigation-drawer stateless app clipped permanent>
       <v-list nav>
         <template v-for="(item, index) in items">
-          <v-subheader v-if="item.divider" :key="index">{{ item.divider }}</v-subheader>
+          <v-subheader v-if="item.divider" :key="index">
+            {{ item.divider }}
+          </v-subheader>
           <v-list-item v-else :key="index" link nuxt :to="item.to" color="primary">
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -15,7 +17,9 @@
     <v-app-bar dark app clipped-left color="primary">
       <v-btn text active-class nuxt to="/">
         <v-app-bar-nav-icon>
-          <v-icon large>$vuetify.icons.logo</v-icon>
+          <v-icon large>
+            $vuetify.icons.logo
+          </v-icon>
         </v-app-bar-nav-icon>
         <v-toolbar-title>Geode-solutions</v-toolbar-title>
       </v-btn>
@@ -62,8 +66,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 * {
   text-transform: none !important;
 }
-</style>
+code {
+  background-color: #E0F2F1 !important;
+  color: var(--v-primary-base) !important;
+  white-space: pre;
+}
+</style> 

@@ -36,8 +36,8 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
-      BRep my_brep;
+    <code>
+      BRep my_brep; 
       auto nb = my_brep.nb_surfaces();
     </code>
     <!-- eslint-enable -->
@@ -50,7 +50,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       BRep my_brep;
       for( const auto& surface : my_brep.surfaces() )
       {
@@ -86,7 +86,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       BRep my_brep;
       uuid surf_id;
       const auto& surface = my_brep.surface( surf_id );
@@ -114,7 +114,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       class BRep : public Surfaces3D,
                    public Blocks3D
       {
@@ -151,7 +151,7 @@
     <img src="@/assets/datamodel-4.svg">
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       class BRep : public AddComponents< 3, Corners, Lines, Surfaces, Blocks >
       {
         ...
@@ -196,7 +196,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       BRep my_brep;
       uuid surf_id;
       auto nb_boundary_lines = my_brep.nb_boundaries( surf_id );
@@ -210,7 +210,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       BRep my_brep;
       uuid surf_id;
       const auto& surface = my_brep.surface( surf_id );
@@ -276,7 +276,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       class BRep : public Relationships,
                    public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
       {
@@ -322,7 +322,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       BRep my_brep;
       auto nb_unique_v = my_brep.nb_unique_vertices();
       index_t unique_v_id;
@@ -353,7 +353,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       class BRep : public Topology,
                    public AddComponents< 3, Corners, Lines, Surfaces, Blocks, ModelBoundaries >
       {
@@ -373,7 +373,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       class Section : public Topology,
                       public AddComponents< 2, Corners, Lines, Surfaces, ModelBoundaries >
       {
@@ -396,7 +396,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       class WorldMap : public Topology,
                        public AddComponents< 2, Corners, Lines, Surfaces, CountryBorders, Countries, Continents >
       {
@@ -443,9 +443,3 @@ export default {
   })
 }
 </script>
-
-<style>
-.cpp {
-  background-color: #ffffff !important;
-}
-</style> 

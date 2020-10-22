@@ -66,9 +66,3 @@ export default {
   })
 }
 </script>
-
-<style>
-.cpp {
-  background-color: #ffffff !important;
-}
-</style> 

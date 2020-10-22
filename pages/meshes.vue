@@ -1,19 +1,25 @@
 <template>
   <v-layout column>
-    <h1 class="display-4 ma-5">Meshes</h1>
+    <h1 class="display-4 ma-5">
+      Meshes
+    </h1>
 
     <p :class="paragraph">
       In this guide, you will learn fundamental elements to understand and manipulate meshes in OpenGeode.
       Let's begin by introducing all kind of meshes you can work with in OpenGeode.
     </p>
 
-    <h2 :class="section">Mesh gallery</h2>
+    <h2 :class="section">
+      Mesh gallery
+    </h2>
 
     <p
       :class="paragraph"
-    >There are several kind of meshes representing points, lines, surfaces and solids.</p>
+    >
+      There are several kind of meshes representing points, lines, surfaces and solids.
+    </p>
 
-    <img src="@/assets/mesh_hierarchy.svg" />
+    <img src="@/assets/mesh_hierarchy.svg">
 
     <p :class="paragraph">
       All these meshes are available in 2D and 3D
@@ -23,7 +29,9 @@
       <strong>TriangulatedSurface2D</strong> and <strong>TriangulatedSurface3D</strong>.
     </p>
 
-    <h2 :class="section">Mesh definitions</h2>
+    <h2 :class="section">
+      Mesh definitions
+    </h2>
 
     <p :class="paragraph">
       We will take the example of a 
@@ -33,19 +41,25 @@
       Potential differences with other kind of meshes will be pointed if necessary.
     </p>
 
-    <img src="@/assets/mesh_surface-1.svg" />
+    <img src="@/assets/mesh_surface-1.svg">
 
-    <p :class="paragraph">Let's take the above polygonal mesh as the example.</p>
+    <p :class="paragraph">
+      Let's take the above polygonal mesh as the example.
+    </p>
 
-    <h3 :class="subsection">Vertices and Polygons</h3>
+    <h3 :class="subsection">
+      Vertices and Polygons
+    </h3>
 
     <p
       :class="paragraph"
-    >This 
-    <span v-html="polygonalSurface" /> 
-    is defined by 11 vertices (left) and 6 polygons (right) as shown on this image.</p>
+    >
+      This 
+      <span v-html="polygonalSurface" /> 
+      is defined by 11 vertices (left) and 6 polygons (right) as shown on this image.
+    </p>
 
-    <img src="@/assets/mesh_surface-2.svg" />
+    <img src="@/assets/mesh_surface-2.svg">
 
     <p :class="paragraph">
       Indexing of vertices is continuous, starts at
@@ -55,9 +69,11 @@
 
     <p
       :class="paragraph"
-    >To known the number of vertices and the polygons, use the following methods:</p>
+    >
+      To known the number of vertices and the polygons, use the following methods:
+    </p>
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       PolygonalSurface2D surface;
       const auto nbv = surface.nb_vertices();
       const auto nbp = surface.nb_polygons();
@@ -71,7 +87,7 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       PolygonalSurface2D surface;
       const auto pv0 = surface.polygon_vertex( {0, 0} ); // 6
       const auto pv1 = surface.polygon_vertex( {0, 1} ); // 5
@@ -80,7 +96,7 @@
     </code>
     <!-- eslint-enable -->
 
-    <img src="@/assets/mesh_surface-3.svg" />
+    <img src="@/assets/mesh_surface-3.svg">
 
     <p :class="paragraph">
       This is called
@@ -92,7 +108,9 @@
       <span v-html="polyhedronVertex" />.
     </p>
 
-    <h3 :class="subsection">Edges and Facets</h3>
+    <h3 :class="subsection">
+      Edges and Facets
+    </h3>
 
     <p :class="paragraph">
       Even if meshes are entirely defined by vertices and polygons,
@@ -102,7 +120,7 @@
       In the example, the polygonal surface is composed of 16 edges indexed from 0 to 15.
     </p>
 
-    <img src="@/assets/mesh_surface-4.svg" />
+    <img src="@/assets/mesh_surface-4.svg">
 
     <p :class="paragraph">
       As for vertices, it is possible to have access to the global index of a polygon edge.
@@ -110,7 +128,7 @@
       <span v-html="polygonEdge" /> (2, 1) is an edge of the polygon 2 that starts from the <span v-html="polygonVertex" /> (2, 1).
     </p>
 
-    <img src="@/assets/mesh_surface-5.svg" />
+    <img src="@/assets/mesh_surface-5.svg">
 
     <p :class="nb">
       NB: For Solid, there are
@@ -118,7 +136,9 @@
       <span v-html="polyhedronFacetEdge" />.
     </p>
 
-    <h3 :class="subsection">Topological queries</h3>
+    <h3 :class="subsection">
+      Topological queries
+    </h3>
     <p :class="paragraph">
       Meshes provide numerous methods to query the mesh topology.
       One information you can get is to know which polygon is adjacent to another one.
@@ -127,20 +147,22 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       PolygonalSurface2D surface;
       const auto polygon = surface.polygon_adjacent( {0, 0} ); // 1
     </code>
     <!-- eslint-enable -->
 
-    <img src="@/assets/mesh_surface-6.svg" />
+    <img src="@/assets/mesh_surface-6.svg">
 
     <p
       :class="paragraph"
-    >You can have more information and get the adjacent <span v-html="polygonEdge" />, using the following code:</p>
+    >
+      You can have more information and get the adjacent <span v-html="polygonEdge" />, using the following code:
+    </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       PolygonalSurface2D surface;
       const auto polygon = surface.polygon_adjacent_edge( {0, 0} ); // {1, 2}
     </code>
@@ -155,19 +177,21 @@
     </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       PolygonalSurface2D surface;
       const auto on_border0 = surface.is_edge_on_border( {0, 0} ); // false
       const auto on_border1 = surface.is_edge_on_border( {0, 2} ); // true
     </code>
     <!-- eslint-enable -->
 
-    <img src="@/assets/mesh_surface-7.svg" />
+    <img src="@/assets/mesh_surface-7.svg">
 
-    <p :class="paragraph">You can go from one edge on border to anther one using:</p>
+    <p :class="paragraph">
+      You can go from one edge on border to anther one using:
+    </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       PolygonalSurface2D surface;
       PolygonEdge start{0, 2};
       auto next_edge = surface.next_on_border( start ); // {0, 3}
@@ -185,37 +209,47 @@
 
     <p
       :class="paragraph"
-    >An exception is raised if you give as method parameter a <span v-html="polygonEdge" /> that is not on border.</p>
+    >
+      An exception is raised if you give as method parameter a <span v-html="polygonEdge" /> that is not on border.
+    </p>
 
-    <p :class="paragraph">Another topological query is to get the polygon list around a vertex:</p>
+    <p :class="paragraph">
+      Another topological query is to get the polygon list around a vertex:
+    </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       PolygonalSurface2D surface;
       const auto polygons_around4 = surface.polygons_around( 4 ); // an inlined vector containing {4, 3, 1, 2, 5}
     </code>
     <!-- eslint-enable -->
 
-    <img src="@/assets/mesh_surface-8.svg" />
+    <img src="@/assets/mesh_surface-8.svg">
 
-    <h3 :class="subsection">Geometrical queries</h3>
+    <h3 :class="subsection">
+      Geometrical queries
+    </h3>
     <p :class="paragraph">
       Beside topological queries, you also can ask for geometrical mesh queries
       such as polygon area, edge length, polygon barycenter and so on.
     </p>
 
-    <p :class="paragraph">You can get the (axis-aligned) bounding box of a mesh using:</p>
+    <p :class="paragraph">
+      You can get the (axis-aligned) bounding box of a mesh using:
+    </p>
 
     <!-- eslint-disable -->
-    <code class="cpp primary--text">
+    <code>
       PolygonalSurface2D surface;
       const auto bbox = surface.bounding_box();
     </code>
     <!-- eslint-enable -->
 
-    <img src="@/assets/mesh_surface-9.svg" />
+    <img src="@/assets/mesh_surface-9.svg">
 
-    <h2 :class="section">Manipulating meshes</h2>
+    <h2 :class="section">
+      Manipulating meshes
+    </h2>
     <p :class="paragraph">
       All the queries illustrated above are const mesh methods.
       As a consequence, you can work with a const mesh and have access to all information you want.
@@ -248,9 +282,3 @@ export default {
   })
 }
 </script>
-
-<style>
-.cpp {
-  background-color: #ffffff !important;
-}
-</style> 
