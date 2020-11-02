@@ -54,10 +54,22 @@ export default {
         out: false
       },
       {
+        extension: '.vtp (ascii only)',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
+        in: false,
+        out: true
+      },
+      {
         extension: '.vtu (ascii and binary supported)',
         cpp: "<a href='/opengeode?page=class_geode_PolyhedralSolid.html'><code>PolyhedralSolid3D</code></a>",
         in: true,
         out: false
+      },
+      {
+        extension: '.vtu (ascii only)',
+        cpp: "<a href='/opengeode?page=class_geode_TetrahedralSolid.html'><code>TetrahedralSolid3D</code></a>",
+        in: false,
+        out: true
       }
     ],
     formats_geosciencesio: [
