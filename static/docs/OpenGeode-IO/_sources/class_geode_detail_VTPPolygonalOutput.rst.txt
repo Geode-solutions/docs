@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::VTPPolygonalOutput
+.. _doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output:
+
+class geode::detail::VTPPolygonalOutput
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vtp_polygonal_output.h>
+	
+	class VTPPolygonalOutput: public PolygonalSurfaceOutput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`VTPPolygonalOutput<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output_1a29301f00990ea6f6c3631117959c77c9>`(
+			const PolygonalSurface<3>& surface,
+			absl::string_view filename
+			);
+
+		// methods
+	
+		void :target:`write<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output_1ab635ab52d838ed38a97035740a379488>`() const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output_1a8a861d42567fe1b1d19fa0176e142c49>`();
+	};

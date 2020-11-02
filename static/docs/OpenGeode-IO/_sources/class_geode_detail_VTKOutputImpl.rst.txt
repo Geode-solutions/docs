@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::VTKOutputImpl
+.. _doxid-classgeode_1_1detail_1_1_v_t_k_output_impl:
+
+template class geode::detail::VTKOutputImpl
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vtk_output.h>
+	
+	template <typename Mesh>
+	class VTKOutputImpl
+	{
+	public:
+		// methods
+	
+		void :target:`write_file<doxid-classgeode_1_1detail_1_1_v_t_k_output_impl_1ac7c7eff54c0572f7dde873162a38383b>`();
+
+	protected:
+	};
+
+	// direct descendants
+
+	template <typename Mesh>
+	class :ref:`VTPOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_p_output_impl>`;
