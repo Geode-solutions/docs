@@ -27,6 +27,8 @@ class geode::OpenGeodeCrossSectionOutput
 
 		// methods
 	
+		void :target:`save_cross_section_files<doxid-classgeode_1_1_open_geode_cross_section_output_1aab92e29778a8a629170b74a5824e2b9a>`(absl::string_view directory) const;
+		void :target:`archive_cross_section_files<doxid-classgeode_1_1_open_geode_cross_section_output_1ae48174816ee4c93248332fb3d656c6d6>`(const ZipFile& zip_writer) const;
 		void :target:`write<doxid-classgeode_1_1_open_geode_cross_section_output_1a0f97bb99db9aeed7810f00d7bec6a4a3>`() const;
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_cross_section_output_1a68fd12ed8c64b7a6d11fc58919b27562>`();
 	};
