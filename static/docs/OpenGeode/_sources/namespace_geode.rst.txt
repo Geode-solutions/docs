@@ -139,11 +139,17 @@ namespace geode
 	class_geode_SectionOutput.rst
 	class_geode_Segment.rst
 	class_geode_Singleton.rst
+	class_geode_SolidEdges.rst
+	class_geode_SolidEdgesBuilder.rst
+	class_geode_SolidFacets.rst
+	class_geode_SolidFacetsBuilder.rst
 	class_geode_SolidMesh.rst
 	class_geode_SolidMeshBuilder.rst
 	class_geode_SparseAttribute.rst
 	class_geode_Sphere.rst
 	class_geode_Surface.rst
+	class_geode_SurfaceEdges.rst
+	class_geode_SurfaceEdgesBuilder.rst
 	class_geode_SurfaceMesh.rst
 	class_geode_SurfaceMeshBuilder.rst
 	class_geode_Surfaces.rst
@@ -548,6 +554,18 @@ Overview
 	class :ref:`Singleton<doxid-classgeode_1_1_singleton>`;
 
 	template <index_t dimension>
+	class :ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`;
+
+	template <index_t dimension>
+	class :ref:`SolidEdgesBuilder<doxid-classgeode_1_1_solid_edges_builder>`;
+
+	template <index_t dimension>
+	class :ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`;
+
+	template <index_t dimension>
+	class :ref:`SolidFacetsBuilder<doxid-classgeode_1_1_solid_facets_builder>`;
+
+	template <index_t dimension>
 	class :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`;
 
 	template <index_t dimension>
@@ -561,6 +579,12 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`Surface<doxid-classgeode_1_1_surface>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceEdges<doxid-classgeode_1_1_surface_edges>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceEdgesBuilder<doxid-classgeode_1_1_surface_edges_builder>`;
 
 	template <index_t dimension>
 	class :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`;
@@ -597,11 +621,11 @@ Overview
 	class :ref:`Topology<doxid-classgeode_1_1_topology>`;
 	class :ref:`TopologyBuilder<doxid-classgeode_1_1_topology_builder>`;
 
-	template <>
-	class :ref:`Triangle<3><doxid-classgeode_1_1_triangle_3_013_01_4>`;
-
 	template <index_t dimension>
 	class :ref:`Triangle<doxid-classgeode_1_1_triangle>`;
+
+	template <>
+	class :ref:`Triangle<3><doxid-classgeode_1_1_triangle_3_013_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`;
@@ -623,11 +647,11 @@ Overview
 
 	class :ref:`UnzipFile<doxid-classgeode_1_1_unzip_file>`;
 
-	template <typename T>
-	class :ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`;
-
 	template <>
 	class :ref:`VariableAttribute<bool><doxid-classgeode_1_1_variable_attribute_3_01bool_01_4>`;
+
+	template <typename T>
+	class :ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`;
 
 	template <index_t dimension>
 	class :ref:`Vector<doxid-classgeode_1_1_vector>`;
@@ -860,8 +884,18 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1adc471ee93a9ccfd5ff001e3d4fa0a3e2>`(:ref:`PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0f17a471330cddd1e6521dc5a06e1848>`(:ref:`PolyhedralSolidView<doxid-classgeode_1_1_polyhedral_solid_view>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a5b8c6f8a432f5a61f6e3e3a0b6abc023>`(:ref:`PolyhedralSolidViewBuilder<doxid-classgeode_1_1_polyhedral_solid_view_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8a7d3b56ede8584b86aacd34f9406b10>`(:ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9d53aa81c96e72b60443232e70ecb56e>`(:ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1adb80b0375986d7e6fba1fd8cdacfb91b>`(:ref:`SolidEdgesBuilder<doxid-classgeode_1_1_solid_edges_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aea10f1e52539e47c02860e1d249eaefc>`(:ref:`SolidEdgesBuilder<doxid-classgeode_1_1_solid_edges_builder>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a723a49c552154e039e98cf3e5928a3d6>`(:ref:`SolidFacetsBuilder<doxid-classgeode_1_1_solid_facets_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a966e61ea4fa8ee73f2dcffbb3813496a>`(:ref:`SolidFacetsBuilder<doxid-classgeode_1_1_solid_facets_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a98ba9276158785b41affd84db1d2f6f7>`(:ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8d32d54426edeaad7cfe32bbf73441b4>`(:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0ed06c418aa07e326b15c4f88463a415>`(:ref:`SurfaceEdges<doxid-classgeode_1_1_surface_edges>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6a92fe492d0925603ec23f1230e44540>`(:ref:`SurfaceEdgesBuilder<doxid-classgeode_1_1_surface_edges_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa0de7495eb3035f752608b7dde881368>`(:ref:`SurfaceEdgesBuilder<doxid-classgeode_1_1_surface_edges_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab4d4d8985175a9631086ea3a7bf8f61d>`(:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af14e4907bb3d08e5cc6822c283db8b65>`(:ref:`TetrahedralSolidBuilder<doxid-classgeode_1_1_tetrahedral_solid_builder>`);
@@ -899,9 +933,11 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1868badab23067bbd9a426b8cce96665>`(:ref:`PolyhedralSolidViewBuilder<doxid-classgeode_1_1_polyhedral_solid_view_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ab57eb299d31f7ff17e1a54391b1e9538>`(:ref:`PolyhedralSolidView<doxid-classgeode_1_1_polyhedral_solid_view>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa3df0d5866380998f87957299ec1334d>`(:ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8a7d3b56ede8584b86aacd34f9406b10>`(:ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ad28cbab7eb31a152c58dcd693b4c046e>`(:ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1af2c105ceeccb7ccf5f0cf0c085264268>`(:ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9dcd689e2898db560ce9cd6f8436006a>`(:ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8d32d54426edeaad7cfe32bbf73441b4>`(:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1c6dd7cae76a885ab1af263c8bb58c32>`(:ref:`SurfaceEdges<doxid-classgeode_1_1_surface_edges>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7986437714612066a303580285ecf217>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ae9dc6097b7f8cfa25fc265176e3c5aa9>`(:ref:`TetrahedralSolidBuilder<doxid-classgeode_1_1_tetrahedral_solid_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`);
@@ -1129,9 +1165,9 @@ Overview
 	:target:`ALIAS_2D<doxid-namespacegeode_1a775f43c93e557302fbaa359aa0af2f19>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a138f53359f6b0ed97828265b627ab688>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
-	void opengeode_model_api :ref:`load_brep<doxid-namespacegeode_1afbce626a6aaf97ccd9a4f5446e688778>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, absl::string_view filename);
+	:ref:`BRep<doxid-classgeode_1_1_b_rep>` opengeode_model_api :ref:`load_brep<doxid-namespacegeode_1aa6aae08635ec147db4348b2aa375b46d>`(absl::string_view filename);
 	void opengeode_model_api :ref:`save_brep<doxid-namespacegeode_1a5740f1154ca1ae97b38be95bdf0caa3c>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, absl::string_view filename);
-	void opengeode_model_api :ref:`load_section<doxid-namespacegeode_1a0e37040877f68c1073475e371daf5d45>`(:ref:`Section<doxid-classgeode_1_1_section>`& section, absl::string_view filename);
+	:ref:`Section<doxid-classgeode_1_1_section>` opengeode_model_api :ref:`load_section<doxid-namespacegeode_1a14fe29f519ee8cf81b5b9e7f651c203e>`(absl::string_view filename);
 	void opengeode_model_api :ref:`save_section<doxid-namespacegeode_1ae92f24302459ce1748811758a5f24f96>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, absl::string_view filename);
 
 	} // namespace geode
@@ -2628,12 +2664,12 @@ Register all the information needed by Bitsery to deserialize the objects in the
 		- The context where to register this information.
 
 .. index:: pair: function; load_brep
-.. _doxid-namespacegeode_1afbce626a6aaf97ccd9a4f5446e688778:
+.. _doxid-namespacegeode_1aa6aae08635ec147db4348b2aa375b46d:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void opengeode_model_api load_brep(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, absl::string_view filename)
+	:ref:`BRep<doxid-classgeode_1_1_b_rep>` opengeode_model_api load_brep(absl::string_view filename)
 
 API function for loading a BoundaryRepresentation. The adequate loader is called depending on the filename extension.
 
@@ -2645,14 +2681,15 @@ API function for loading a BoundaryRepresentation. The adequate loader is called
 	:widths: 20 80
 
 	*
-		- brep
-
-		- Loaded :ref:`BRep <doxid-classgeode_1_1_b_rep>`.
-
-	*
 		- filename
 
 		- Path to the file to load.
+
+
+
+.. rubric:: Returns:
+
+Loaded :ref:`BRep <doxid-classgeode_1_1_b_rep>`.
 
 .. index:: pair: function; save_brep
 .. _doxid-namespacegeode_1a5740f1154ca1ae97b38be95bdf0caa3c:
@@ -2682,12 +2719,12 @@ API function for saving a BoundaryRepresentation. The adequate saver is called d
 		- Path to the file where save the brep.
 
 .. index:: pair: function; load_section
-.. _doxid-namespacegeode_1a0e37040877f68c1073475e371daf5d45:
+.. _doxid-namespacegeode_1a14fe29f519ee8cf81b5b9e7f651c203e:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void opengeode_model_api load_section(:ref:`Section<doxid-classgeode_1_1_section>`& section, absl::string_view filename)
+	:ref:`Section<doxid-classgeode_1_1_section>` opengeode_model_api load_section(absl::string_view filename)
 
 API function for loading a :ref:`Section <doxid-classgeode_1_1_section>`. The adequate loader is called depending on the filename extension.
 
@@ -2699,14 +2736,15 @@ API function for loading a :ref:`Section <doxid-classgeode_1_1_section>`. The ad
 	:widths: 20 80
 
 	*
-		- section
-
-		- Loaded :ref:`Section <doxid-classgeode_1_1_section>`.
-
-	*
 		- filename
 
 		- Path to the file to load.
+
+
+
+.. rubric:: Returns:
+
+Loaded :ref:`Section <doxid-classgeode_1_1_section>`.
 
 .. index:: pair: function; save_section
 .. _doxid-namespacegeode_1ae92f24302459ce1748811758a5f24f96:

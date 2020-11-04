@@ -1,13 +1,13 @@
-.. index:: pair: class; geode::VariableAttribute
-.. _doxid-classgeode_1_1_variable_attribute:
+.. index:: pair: class; geode::VariableAttribute<bool>
+.. _doxid-classgeode_1_1_variable_attribute_3_01bool_01_4:
 
-template class geode::VariableAttribute
-=======================================
+template class geode::VariableAttribute<bool>
+=============================================
 
 .. toctree::
 	:hidden:
 
-Read and write interface for variable attribute storage
+Read and write interface for boolean variable attribute storage. This class removes the custom storage use by the STL for std::vector<bool>.
 
 
 .. ref-code-block:: cpp
@@ -15,42 +15,42 @@ Read and write interface for variable attribute storage
 
 	#include <attribute.h>
 	
-	template <typename T>
-	class VariableAttribute: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`
+	template <>
+	class VariableAttribute<bool>: public :ref:`geode::ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`
 	{
 	public:
 		// construction
 	
-		:target:`VariableAttribute<doxid-classgeode_1_1_variable_attribute_1a630bf7519e455e428a7050f74fc41a22>`(
-			T default_value,
+		:target:`VariableAttribute<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a42d86d6e69132a1fd8ab4e32f41f6d40>`(
+			bool default_value,
 			:ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>` properties,
 			AttributeBase::AttributeKey
 			);
 
 		// methods
 	
-		virtual const T& :target:`value<doxid-classgeode_1_1_variable_attribute_1a12aee94b6cc66ff639ef3653d0a8ed44>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
+		virtual const bool& :target:`value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a1d41633620b22c51d586000dd3ec572f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
 	
-		void :target:`set_value<doxid-classgeode_1_1_variable_attribute_1af29b490896fca074786cb87791df9c88>`(
+		void :target:`set_value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a6eaae6ce4811fc868eec9f53896b2864>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element,
-			T value
+			bool value
 			);
 	
-		T :target:`default_value<doxid-classgeode_1_1_variable_attribute_1a2cc715560d3c23dc40bef4fbb14c954c>`() const;
+		bool :target:`default_value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1ab864b4861b047d487c0e3f5ea3d9ba66>`() const;
 	
 		template <typename Modifier>
-		void :target:`modify_value<doxid-classgeode_1_1_variable_attribute_1aed775cb0e1ebd634020bd17f9d20fc4e>`(
+		void :target:`modify_value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a74174adf8d248d601fed830bb4329daa>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element,
 			Modifier&& modifier
 			);
 	
-		void :target:`compute_value<doxid-classgeode_1_1_variable_attribute_1ae94c732b50b2756bd5908964a0a6724f>`(
+		void :target:`compute_value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1a8a8c279538c65aad7d5cf0c247d61095>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` from_element,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element,
 			AttributeBase::AttributeKey
 			);
 	
-		void :target:`compute_value<doxid-classgeode_1_1_variable_attribute_1a737d41140e9f30edffb64eda5298d886>`(
+		void :target:`compute_value<doxid-classgeode_1_1_variable_attribute_3_01bool_01_4_1adc7f2ef872ae1c98a5af4bf4b76bbe57>`(
 			const :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`& interpolation,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element,
 			AttributeBase::AttributeKey

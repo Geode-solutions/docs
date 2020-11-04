@@ -9,7 +9,7 @@ namespace geode::detail
 
 	class_geode_detail_ComponentsStorage.rst
 	class_geode_detail_EdgesImpl.rst
-	class_geode_detail_EdgesViewImpl.rst
+	class_geode_detail_FacetEdgesImpl.rst
 	class_geode_detail_FacetStorage.rst
 	class_geode_detail_MeshStorage.rst
 	class_geode_detail_ModelCopyMapping.rst
@@ -40,8 +40,8 @@ namespace geode::detail
 
 	class :ref:`EdgesImpl<doxid-classgeode_1_1detail_1_1_edges_impl>`;
 
-	template <index_t dimension, typename Mesh>
-	class :ref:`EdgesViewImpl<doxid-classgeode_1_1detail_1_1_edges_view_impl>`;
+	template <index_t dimension>
+	class :ref:`FacetEdgesImpl<doxid-classgeode_1_1detail_1_1_facet_edges_impl>`;
 
 	template <typename VertexContainer>
 	class :ref:`FacetStorage<doxid-classgeode_1_1detail_1_1_facet_storage>`;
@@ -77,9 +77,6 @@ namespace geode::detail
 
 	template <typename Serializer>
 	void :target:`register_geometry_pcontext<doxid-namespacegeode_1_1detail_1aef91870a0b7782c65a3aa06b974a4270>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
-
-	template <typename Serializer>
-	void :target:`register_mesh_pcontext<doxid-namespacegeode_1_1detail_1a95d40203e8b1657a545acd288633fbb2>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 
 	template <typename Container>
 	void :target:`rotate<doxid-namespacegeode_1_1detail_1afc9fe5a2d2089d4b9a5585c6b06aa0eb>`(Container& vertices);

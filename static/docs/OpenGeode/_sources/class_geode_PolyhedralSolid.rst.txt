@@ -70,69 +70,48 @@ Inherited Members
 		std::unique_ptr<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> :ref:`clone<doxid-classgeode_1_1_solid_mesh_1af6ee29444ebffabe588d9dfd3c3f255e>`() const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`point<doxid-classgeode_1_1_solid_mesh_1a959ceff17791c65beab2b4d4cff17d5d>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_polyhedra<doxid-classgeode_1_1_solid_mesh_1ab6ba9784484547e90881d7282525508b>`() const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_facets<doxid-classgeode_1_1_solid_mesh_1aa726f913448ae7b0775bd2f64e3a16d9>`() const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_edges<doxid-classgeode_1_1_solid_mesh_1a20d0d6bc837504e96fb1211dd0a89171>`() const;
 		bool :ref:`isolated_vertex<doxid-classgeode_1_1_solid_mesh_1ac06eda7eebc5436b48f397fa58503f80>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
-		bool :ref:`isolated_edge<doxid-classgeode_1_1_solid_mesh_1aa9071519e83a2a869d06c5fe471b02c2>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
-		bool :ref:`isolated_facet<doxid-classgeode_1_1_solid_mesh_1acf9e462d8b88bc9dd7c1156e6d4fa5e0>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_polyhedron_vertices<doxid-classgeode_1_1_solid_mesh_1ae187aec81cab8bbf9877487a74fa5304>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_polyhedron_facets<doxid-classgeode_1_1_solid_mesh_1aa1636ccd569ffaa332efbed964e7f110>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_polyhedron_facet_vertices<doxid-classgeode_1_1_solid_mesh_1a7622ca33f7589dbc7de066a16ca5e577>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polyhedron_vertex<doxid-classgeode_1_1_solid_mesh_1a6360114433cfc117c6eefec026573c0a>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
 		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`vertex_in_polyhedron<doxid-classgeode_1_1_solid_mesh_1afe984046f16e98584baddcc0aba69acc>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polyhedron_facet<doxid-classgeode_1_1_solid_mesh_1a1c2e7e01f963824567c39d30228c0cdc>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polyhedron_facet_vertex<doxid-classgeode_1_1_solid_mesh_1a71743c64ea758589375cf1fccd5c2689>`(const :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex) const;
-		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`polyhedron_facet_edge<doxid-classgeode_1_1_solid_mesh_1ae9044cd84b4140126a35f8067cd92cfe>`(const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& polyhedron_facet_edge) const;
-		const :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`& :ref:`facet_vertices<doxid-classgeode_1_1_solid_mesh_1af06f1d96de2c9a59bfc84041050cfbe4>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
-		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :ref:`edge_vertices<doxid-classgeode_1_1_solid_mesh_1a0679a96822c5e9330c418d2622adda02>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
-		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`facet_from_vertices<doxid-classgeode_1_1_solid_mesh_1ab4fd57d51667b62ed5ec392605453ce5>`(const :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`& vertices) const;
-		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`edge_from_vertices<doxid-classgeode_1_1_solid_mesh_1ae4802769012cfcd88f2a09931f36088d>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
+		std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :ref:`polyhedron_facet_edge_vertices<doxid-classgeode_1_1_solid_mesh_1adad7d78bd7283f72a303d7fa08935e97>`(const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& polyhedron_facet_edge) const;
+		virtual std::vector<std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>> :ref:`polyhedron_edges_vertices<doxid-classgeode_1_1_solid_mesh_1a74e8f4d14656f1ced71bce55ca67edac>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron) const;
+		absl::optional<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`> :ref:`polyhedron_facet_from_vertices<doxid-classgeode_1_1_solid_mesh_1a4bb6fd112112c1080398664d29785f94>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` polyhedron_facet_vertices) const;
+		:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` :ref:`polyhedron_facet_vertices<doxid-classgeode_1_1_solid_mesh_1a0a538983e9b6b3efdb69f71613e82c7a>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
+		virtual std::vector<:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`> :ref:`polyhedron_facets_vertices<doxid-classgeode_1_1_solid_mesh_1a158c6703be6c8931eb9ee6b237d07f9c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron) const;
 		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`polyhedron_adjacent<doxid-classgeode_1_1_solid_mesh_1aaa1d7072ec4e0386ab0c5af1cf513fbc>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		absl::optional<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`> :ref:`polyhedron_adjacent_facet<doxid-classgeode_1_1_solid_mesh_1af4cb2cd51f421e6d91f5589dd97a99fd>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		bool :ref:`is_polyhedron_facet_on_border<doxid-classgeode_1_1_solid_mesh_1ad2bd1d05bf8802deb5b31d802ac19f53>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		:ref:`PolyhedronFacetsOnBorder<doxid-namespacegeode_1aac1849b4c331eb722bf504d25370c912>` :ref:`polyhedron_facets_on_border<doxid-classgeode_1_1_solid_mesh_1acb84d73ca5dbfea33dc5a5ba1a0f5751>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
-		double :ref:`edge_length<doxid-classgeode_1_1_solid_mesh_1abc2f2f7634097f08ee707e1328d569ab>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		double :ref:`edge_length<doxid-classgeode_1_1_solid_mesh_1ab472b4dffe6e46a873df3fe706c0d9ca>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`polyhedron_barycenter<doxid-classgeode_1_1_solid_mesh_1a8ec29c3c46b5990fbc66a2080e97da97>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`facet_barycenter<doxid-classgeode_1_1_solid_mesh_1a56846d23c67777cc5bb6e03bfb4704d6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`edge_barycenter<doxid-classgeode_1_1_solid_mesh_1a5436d166d9cdc58916407d06f2d20682>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==3, Vector3D>::type :ref:`facet_normal<doxid-classgeode_1_1_solid_mesh_1af028ac4b04a98e6e0e039370c70edb05>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`facet_barycenter<doxid-classgeode_1_1_solid_mesh_1ad4c1c0e05fde802fc6aa89319e43b0aa>`(const :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`& facet_vertices) const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`edge_barycenter<doxid-classgeode_1_1_solid_mesh_1a64bebb118a6e633ec25aad26dcf8bf6a>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& polygon_edge_vertices) const;
 	
 		template <index_t T = dimension>
 		std::enable_if<T==3, Vector3D>::type :ref:`polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1ac11c243a8507b7a5590b48ca05d50648>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 	
 		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a3c64897434c58970bbf1e9d05d8ef826>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
-		:ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1aa10209870411622c4f7729ca1a799b89>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
-		:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>` :ref:`polyhedra_from_facet<doxid-classgeode_1_1_solid_mesh_1a657c3be06f695e14ee6c08f840933063>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
+		:ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1a647eec2f0bef2fc695c915d4a6c75d63>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
+		:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>` :ref:`polyhedra_from_facet<doxid-classgeode_1_1_solid_mesh_1aacd59a2158aeb1e465367f666e61c785>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices) const;
+		bool :ref:`are_edges_enabled<doxid-classgeode_1_1_solid_mesh_1ad7941fc3afe94462318f349a58ba63ab>`() const;
+		void :ref:`enable_edges<doxid-classgeode_1_1_solid_mesh_1a7805a82b740b482660ea134b84f0f8a1>`() const;
+		void :ref:`disable_edges<doxid-classgeode_1_1_solid_mesh_1af9ee142c16c448729d4a608ac5564173>`() const;
+		const :ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`<dimension>& :ref:`edges<doxid-classgeode_1_1_solid_mesh_1ab85cd38de75ed6e55295cc0fb2e29d0e>`() const;
+		bool :ref:`are_facets_enabled<doxid-classgeode_1_1_solid_mesh_1a176ada46eb7fe3d444107b192e97cf64>`() const;
+		void :ref:`enable_facets<doxid-classgeode_1_1_solid_mesh_1a30f2f2ebba1d60b2b8a2060a76d014ce>`() const;
+		void :ref:`disable_facets<doxid-classgeode_1_1_solid_mesh_1a3f6cff0c1f62fa68614846e082f30641>`() const;
+		const :ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`<dimension>& :ref:`facets<doxid-classgeode_1_1_solid_mesh_1ae69cb34991b48bf067390b7115112330>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`polyhedron_attribute_manager<doxid-classgeode_1_1_solid_mesh_1a3bc003370baf530d01e56a4a07de2339>`() const;
-		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`facet_attribute_manager<doxid-classgeode_1_1_solid_mesh_1afc9a622dee249c211e4173c3bdc1725a>`() const;
-		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_solid_mesh_1a1295f966d82015836ceb4a72fc335766>`() const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_solid_mesh_1a3b541dbe1f6688306b9c15a403bb35f6>`() const;
 		absl::optional<:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`> :ref:`polyhedron_around_vertex<doxid-classgeode_1_1_solid_mesh_1acd45f76a07bb340cf08b5303daaaf14f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		void :ref:`associate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_solid_mesh_1ad9e6fd9e2565359834899c089e4389b8>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, SolidMeshKey);
-		void :ref:`update_facet_vertices<doxid-classgeode_1_1_solid_mesh_1ad50e2723c798f1ac9ace4743e2be28b3>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new, SolidMeshKey);
-		void :ref:`update_edge_vertices<doxid-classgeode_1_1_solid_mesh_1a77bdae7e53a3ef21daa6c30a205b1d7d>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new, SolidMeshKey);
-		void :ref:`update_facet_vertex<doxid-classgeode_1_1_solid_mesh_1ad2be88efd750e21425b73b851d04a307>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id, SolidMeshKey);
-	
-		void :ref:`update_edge_vertex<doxid-classgeode_1_1_solid_mesh_1ab59431c5b8b04586e063ca78ae420fa4>`(
-			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_vertex_id,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id,
-			SolidMeshKey
-			);
-	
-		void :ref:`remove_facet<doxid-classgeode_1_1_solid_mesh_1a5df1f298a325e0e456874345ad851b65>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices, SolidMeshKey);
-		void :ref:`remove_edge<doxid-classgeode_1_1_solid_mesh_1abd2233b3db3e2e950eb460bb68da20c8>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices, SolidMeshKey);
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_facets<doxid-classgeode_1_1_solid_mesh_1a81968df0cb4428bce5d376efa992a1f4>`(const std::vector<bool>& to_delete, SolidMeshKey);
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_edges<doxid-classgeode_1_1_solid_mesh_1a301330be4e36df761a09eb8387792225>`(const std::vector<bool>& to_delete, SolidMeshKey);
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`remove_isolated_facets<doxid-classgeode_1_1_solid_mesh_1a19991dbcea53be9d03f890a9d7eeea3c>`(SolidMeshKey);
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`remove_isolated_edges<doxid-classgeode_1_1_solid_mesh_1a8a6933d27db967cdefb37c659b7868c2>`(SolidMeshKey);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`find_or_create_facet<doxid-classgeode_1_1_solid_mesh_1abc8b016e169a1000e193ec0a11553026>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices, SolidMeshKey);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`find_or_create_edge<doxid-classgeode_1_1_solid_mesh_1a89cd53085eb97daf2a0123809c266c4b>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices, SolidMeshKey);
 		:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>` :ref:`polyhedron_facet_vertex_id<doxid-classgeode_1_1_solid_mesh_1ab63b13aeca87ca04a4547dd462b3c913>`(const :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex, SolidMeshKey) const;
-		void :ref:`overwrite_facets<doxid-classgeode_1_1_solid_mesh_1a5c1323b77243dd3cf3f7ef3e548a5840>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& from, SolidMeshKey);
-		void :ref:`overwrite_edges<doxid-classgeode_1_1_solid_mesh_1a29d6e94acab3438e1692aa55e13deebd>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& from, SolidMeshKey);
+		:ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`<dimension>& :ref:`edges<doxid-classgeode_1_1_solid_mesh_1a6399afdca9d36a7c4a57a81e2e1f710f>`(SolidMeshKey);
+		:ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`<dimension>& :ref:`facets<doxid-classgeode_1_1_solid_mesh_1a554458d09cda9713a506dbb7656d8354>`(SolidMeshKey);
 
 .. _details-classgeode_1_1_polyhedral_solid:
 

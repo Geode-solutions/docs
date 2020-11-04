@@ -1,0 +1,74 @@
+.. index:: pair: class; geode::SolidFacetsBuilder
+.. _doxid-classgeode_1_1_solid_facets_builder:
+
+template class geode::SolidFacetsBuilder
+========================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Interface class to represent the builder of a :ref:`SolidFacets <doxid-classgeode_1_1_solid_facets>` :ref:`More...<details-classgeode_1_1_solid_facets_builder>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <solid_facets_builder.h>
+	
+	template <index_t dimension>
+	class SolidFacetsBuilder
+	{
+	public:
+		// construction
+	
+		:target:`SolidFacetsBuilder<doxid-classgeode_1_1_solid_facets_builder_1a00ea88b4ecd72597ac229556430344ee>`(:ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`<dimension>& facets);
+
+		// methods
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_facets<doxid-classgeode_1_1_solid_facets_builder_1aa4eb3a2f5b0b46134421ddbf4b94b6e2>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`find_or_create_facet<doxid-classgeode_1_1_solid_facets_builder_1af8f5d5345a26a05487361b444f76c03a>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`delete_facets<doxid-classgeode_1_1_solid_facets_builder_1a20d7f5fa53ed3e62cba95ccccdf0e5b3>`(const std::vector<bool>& to_delete);
+		void :target:`remove_facet<doxid-classgeode_1_1_solid_facets_builder_1a8de14214f2c1711b5e1f16299a88ba65>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices);
+	
+		void :target:`update_facet_vertex<doxid-classgeode_1_1_solid_facets_builder_1ac44af1f99c04f89ca456b52e42ba7a14>`(
+			:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id
+			);
+	
+		void :target:`update_facet_vertices<doxid-classgeode_1_1_solid_facets_builder_1a0dff9d63531bd5ef4ca25f5e8abf06b4>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new);
+	
+		void :target:`copy<doxid-classgeode_1_1_solid_facets_builder_1a0860c75608cca2db548ee98f5c205c23>`(
+			const :ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`<dimension>& facets,
+			BuilderKey
+			);
+	};
+.. _details-classgeode_1_1_solid_facets_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Interface class to represent the builder of a :ref:`SolidFacets <doxid-classgeode_1_1_solid_facets>`
+
+Methods
+-------
+
+.. index:: pair: function; delete_isolated_facets
+.. _doxid-classgeode_1_1_solid_facets_builder_1aa4eb3a2f5b0b46134421ddbf4b94b6e2:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> delete_isolated_facets()
+
+Delete all the isolated facets (not used as polyhedron facets)
+
+
+
+.. rubric:: Returns:
+
+the mapping between old facet indices to new ones. Deleted facets new index is NO_ID
+

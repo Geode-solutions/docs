@@ -36,5 +36,8 @@ template class geode::detail::PointsViewImpl
 
 	// direct descendants
 
-	template <index_t dimension, typename Mesh>
-	class :ref:`EdgesViewImpl<doxid-classgeode_1_1detail_1_1_edges_view_impl>`;
+	template <index_t dimension>
+	class :ref:`SolidMeshViewImpl<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshViewImpl<doxid-classgeode_1_1detail_1_1_surface_mesh_view_impl>`;

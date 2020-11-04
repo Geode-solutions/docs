@@ -1,0 +1,134 @@
+.. index:: pair: class; geode::SolidEdges
+.. _doxid-classgeode_1_1_solid_edges:
+
+template class geode::SolidEdges
+================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+This class represents a 3D Solid made up with polyhedra and provides mesh functionnalities. :ref:`More...<details-classgeode_1_1_solid_edges>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <solid_edges.h>
+	
+	template <index_t dimension>
+	class SolidEdges
+	{
+	public:
+		// construction
+	
+		:target:`SolidEdges<doxid-classgeode_1_1_solid_edges_1a96b9dc7764d3fc6d10a6ed4275ff92b2>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid);
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_edges<doxid-classgeode_1_1_solid_edges_1ad546a672431b009f49df9788e6aae718>`() const;
+		bool :target:`isolated_edge<doxid-classgeode_1_1_solid_edges_1ad528b1deb891732ba519accce358b44a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :ref:`edge_vertices<doxid-classgeode_1_1_solid_edges_1ad4d211251184382ee54e8df69c474e66>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`edge_from_vertices<doxid-classgeode_1_1_solid_edges_1a2a7fce612b4b855dbc38cbdaad415542>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_solid_edges_1a47ad9239c5f76a8a3da1d41e78343df8>`() const;
+	
+		void :target:`update_edge_vertices<doxid-classgeode_1_1_solid_edges_1a90fa0a2735ac3822d30d7d5793c035c0>`(
+			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new,
+			SolidEdgesKey
+			);
+	
+		void :target:`update_edge_vertex<doxid-classgeode_1_1_solid_edges_1afe33806ede0170f22d9cc8f0fc8a2928>`(
+			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id,
+			SolidEdgesKey
+			);
+	
+		void :target:`remove_edge<doxid-classgeode_1_1_solid_edges_1a71066819cb4d8a7b7bad2604356f9647>`(
+			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
+			SolidEdgesKey
+			);
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`delete_edges<doxid-classgeode_1_1_solid_edges_1aa92bdd2d090f3a82f9cae24fd97eb2e4>`(
+			const std::vector<bool>& to_delete,
+			SolidEdgesKey
+			);
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`remove_isolated_edges<doxid-classgeode_1_1_solid_edges_1a286eacf9269138528ce3c705e1f666e3>`(SolidEdgesKey);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`find_or_create_edge<doxid-classgeode_1_1_solid_edges_1aae28332cee7a2e15e3b8dd1d450cccf7>`(
+			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
+			SolidEdgesKey
+			);
+	
+		void :target:`overwrite_edges<doxid-classgeode_1_1_solid_edges_1ac28d4873d486a6c3a8f17c9ed69ef014>`(
+			const SolidEdges<dimension>& from,
+			SolidEdgesKey
+			);
+	};
+.. _details-classgeode_1_1_solid_edges:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This class represents a 3D Solid made up with polyhedra and provides mesh functionnalities.
+
+Methods
+-------
+
+.. index:: pair: function; edge_vertices
+.. _doxid-classgeode_1_1_solid_edges_1ad4d211251184382ee54e8df69c474e66:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const
+
+Return the indices of edge vertices.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Index of an edge.
+
+.. index:: pair: function; edge_from_vertices
+.. _doxid-classgeode_1_1_solid_edges_1a2a7fce612b4b855dbc38cbdaad415542:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> edge_from_vertices(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const
+
+Get the index of edge corresponding to given vertices
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertices
+
+		- Ordered vertex indices
+
+.. index:: pair: function; edge_attribute_manager
+.. _doxid-classgeode_1_1_solid_edges_1a47ad9239c5f76a8a3da1d41e78343df8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& edge_attribute_manager() const
+
+Access to the manager of attributes associated with edges.
+
