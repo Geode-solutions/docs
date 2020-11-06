@@ -48,12 +48,32 @@
 
     <span class="k">enum</span> <a class="reference internal" href="enum_geode_Fault_FAULT_TYPE.html#doxid-classgeode-1-1-fault-1a73a0975687303a272447a52fc22b26fd"><span class="std std-ref">FAULT_TYPE</span></a><span></span><span class="p">;</span>
 
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-fault-1a3c890669dfbb5fe2205f3da82f5376e4"><span></span><span class="n">Fault</span></span><span></span><span class="p">(</span><span class="n">FaultsKey</span><span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-fault-1abdc047a7bd6ecca3e82619946103d3c9"><span></span><span class="n">Fault</span></span><span></span><span class="p">(</span>
+        <a class="reference internal" href="enum_geode_Fault_FAULT_TYPE.html#doxid-classgeode-1-1-fault-1a73a0975687303a272447a52fc22b26fd"><span class="std std-ref">FAULT_TYPE</span></a><span></span> <span class="n">type</span><span class="p">,</span>
+        <span class="n">FaultsKey</span>
+        <span class="p">);</span>
+
     <span class="c1">// methods</span>
 
     <span class="n">ComponentType</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-fault-1aa7658e4902be59886303080c1f65465e"><span></span><span class="n">component_type</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">ComponentID</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-fault-1aa652a587c4ea4b7dda266929b94414a3"><span></span><span class="n">component_id</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-fault-1af7c60ce2fede1e2046f23611269339a3"><span></span><span class="n">has_type</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="enum_geode_Fault_FAULT_TYPE.html#doxid-classgeode-1-1-fault-1a73a0975687303a272447a52fc22b26fd"><span class="std std-ref">FAULT_TYPE</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-fault-1a47545ec7fac331ec0e526b36a2c177dc"><span></span><span class="n">type</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-fault-1a9f0feee2688689c4b9af4036c08701a0"><span></span><span class="n">set_type</span></span><span></span><span class="p">(</span>
+        <a class="reference internal" href="enum_geode_Fault_FAULT_TYPE.html#doxid-classgeode-1-1-fault-1a73a0975687303a272447a52fc22b26fd"><span class="std std-ref">FAULT_TYPE</span></a><span></span> <span class="n">type</span><span class="p">,</span>
+        <span class="n">FaultsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-fault-1ad9276a5cc20bde0633e915ef0ac2d40a"><span></span><span class="n">set_fault_name</span></span><span></span><span class="p">(</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">,</span>
+        <span class="n">FaultsBuilderKey</span>
+        <span class="p">);</span>
+
     <span class="k">static</span> <span class="n">ComponentType</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-fault-1a0ce699294d4646994b27e3a21f13b3af"><span></span><span class="n">component_type_static</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </div>
