@@ -24,9 +24,14 @@ class geode::Circle
 			const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane,
 			double radius
 			);
+	
+		:target:`Circle<doxid-classgeode_1_1_circle_1a770c7123f1b800c34c29bfed4a9c74dd>`(const Circle& other);
+		:target:`Circle<doxid-classgeode_1_1_circle_1a0a5bd2a756f18dbd9e18764ff106eeb6>`(Circle&& other);
 
 		// methods
 	
+		Circle& :target:`operator =<doxid-classgeode_1_1_circle_1a9182710372bb812a1717eb77f5eaad77>` (const Circle& other);
+		Circle& :target:`operator =<doxid-classgeode_1_1_circle_1a6be5e089932375513d81a1264bfbf99b>` (Circle&& other);
 		const :ref:`Plane<doxid-classgeode_1_1_plane>`& :target:`plane<doxid-classgeode_1_1_circle_1a9252221a7fd8e82833e8e3e65a027afc>`() const;
 		double :target:`radius<doxid-classgeode_1_1_circle_1a1eeb145d8ebb217102678d726da561a3>`() const;
 	};

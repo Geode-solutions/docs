@@ -25,12 +25,17 @@ template class geode::Segment
 			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p0,
 			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p1
 			);
+	
+		:target:`Segment<doxid-classgeode_1_1_segment_1a7bdd9c8de494c8416e1118674200fa67>`(const Segment<dimension>& other);
+		:target:`Segment<doxid-classgeode_1_1_segment_1aac0b85486474c0b4c223a51d5e589832>`(Segment<dimension>&& other);
 
 		// methods
 	
+		Segment<dimension>& :target:`operator =<doxid-classgeode_1_1_segment_1ab118cbd8239189ce46fa4f24351eeffb>` (const Segment<dimension>& other);
+		Segment<dimension>& :target:`operator =<doxid-classgeode_1_1_segment_1a6b55e40891aaa36109ea79dc0bad14b7>` (Segment<dimension>&& other);
 		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`direction<doxid-classgeode_1_1_segment_1a23cc90ff5fa19c8485969548e0b481e5>`() const;
 		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`normalized_direction<doxid-classgeode_1_1_segment_1aba234680ea52a7703d76b34b0c75737b>`() const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`barycenter<doxid-classgeode_1_1_segment_1ade0c3ea243f0d805a6a2e3963728926a>`() const;
 		double :target:`length<doxid-classgeode_1_1_segment_1ad580754d6023e3a0d47ece06f8ba635b>`() const;
-		const std::array<const std::reference_wrapper<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>>, 2>& :target:`vertices<doxid-classgeode_1_1_segment_1a8dea2d85f842ffb7cccc48575aa6ce0c>`() const;
+		const std::array<std::reference_wrapper<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>>, 2>& :target:`vertices<doxid-classgeode_1_1_segment_1a1c019bd1f4ddcfdfca37767f0ef735f1>`() const;
 	};

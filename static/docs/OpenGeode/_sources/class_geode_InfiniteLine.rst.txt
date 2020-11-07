@@ -27,9 +27,13 @@ template class geode::InfiniteLine
 			);
 	
 		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1aacdf05212f673ca7bc87c05769ccf798>`(const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment);
+		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1a65fe79bf0153e01da292aebae19f1fb5>`(const InfiniteLine<dimension>& other);
+		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1a62e3a8657a9de262289e9fec6ec68f05>`(InfiniteLine<dimension>&& other);
 
 		// methods
 	
+		InfiniteLine<dimension>& :target:`operator =<doxid-classgeode_1_1_infinite_line_1ac467d8c12154731443293dd99c27d337>` (const InfiniteLine<dimension>& other);
+		InfiniteLine<dimension>& :target:`operator =<doxid-classgeode_1_1_infinite_line_1a808992a8593f7aed9e5458e5f86d53e2>` (InfiniteLine<dimension>&& other);
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`origin<doxid-classgeode_1_1_infinite_line_1a89898aa638214809eedd44da997f6e31>`() const;
 		const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& :target:`direction<doxid-classgeode_1_1_infinite_line_1a5b37e57723054b63b57a9eb7c2273e79>`() const;
 	};

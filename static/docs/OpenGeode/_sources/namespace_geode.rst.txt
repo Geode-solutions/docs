@@ -164,7 +164,6 @@ namespace geode
 	class_geode_Topology.rst
 	class_geode_TopologyBuilder.rst
 	class_geode_Triangle.rst
-	class_geode_Triangle-2.rst
 	class_geode_TriangulatedSurface.rst
 	class_geode_TriangulatedSurfaceBuilder.rst
 	class_geode_TriangulatedSurfaceInput.rst
@@ -623,9 +622,6 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`Triangle<doxid-classgeode_1_1_triangle>`;
-
-	template <>
-	class :ref:`Triangle<3><doxid-classgeode_1_1_triangle_3_013_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`;

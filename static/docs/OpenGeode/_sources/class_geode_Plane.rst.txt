@@ -24,9 +24,14 @@ class geode::Plane
 			const Vector3D& normal,
 			const Point3D& origin
 			);
+	
+		:target:`Plane<doxid-classgeode_1_1_plane_1a9d875f82d2f5e855bebfd60ab8604ab6>`(const Plane& other);
+		:target:`Plane<doxid-classgeode_1_1_plane_1a534bc15d9b1f500f895292c19d8595ce>`(Plane&& other);
 
 		// methods
 	
+		Plane& :target:`operator =<doxid-classgeode_1_1_plane_1a4c38f327f6c50d9b518b2ab8060e819e>` (const Plane& other);
+		Plane& :target:`operator =<doxid-classgeode_1_1_plane_1ada939f3061084b7d84999708ed686b52>` (Plane&& other);
 		const Vector3D& :target:`normal<doxid-classgeode_1_1_plane_1a5a309f97f7a1fc2723e330e34c844a84>`() const;
 		const Point3D& :target:`origin<doxid-classgeode_1_1_plane_1a29cfddbaf70be0fdcc595d711f1bfc95>`() const;
 		double :target:`plane_constant<doxid-classgeode_1_1_plane_1adeb5c5a407acaf8e5c2e017848491256>`() const;
