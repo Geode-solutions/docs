@@ -27,6 +27,7 @@ class geode::OpenGeodeSectionInput
 
 		// methods
 	
+		void :target:`load_section_files<doxid-classgeode_1_1_open_geode_section_input_1aa11a00649ce709922d1d836b4f54da3c>`(absl::string_view directory);
 		virtual void :target:`read<doxid-classgeode_1_1_open_geode_section_input_1ae2e026f65fcd27209e9977ea4db4cbdf>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_section_input_1acce0e454f9eff7b2992f459dfa49e9b6>`();
 	};

@@ -27,6 +27,7 @@ class geode::OpenGeodeBRepInput
 
 		// methods
 	
+		void :target:`load_brep_files<doxid-classgeode_1_1_open_geode_b_rep_input_1a2912898858a951d509f641b9b59d6751>`(absl::string_view directory);
 		virtual void :target:`read<doxid-classgeode_1_1_open_geode_b_rep_input_1a79c76008c7eba24f4d5d65812fe0ae3d>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_b_rep_input_1a65ddd1db71f2697552868c84e22cef16>`();
 	};
