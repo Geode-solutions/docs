@@ -27,6 +27,7 @@ class geode::OpenGeodeCrossSectionInput
 
 		// methods
 	
+		void :target:`load_cross_section_files<doxid-classgeode_1_1_open_geode_cross_section_input_1a3128e6690694036ece8529545a058718>`(absl::string_view directory);
 		void :target:`read<doxid-classgeode_1_1_open_geode_cross_section_input_1a04b54837bc7b87dc8b3d7f36d715fb37>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_cross_section_input_1aaef8b5e1e50cee2a6b2074ef091ecc66>`();
 	};

@@ -27,6 +27,7 @@ class geode::OpenGeodeStructuralModelInput
 
 		// methods
 	
+		void :target:`load_structural_model_files<doxid-classgeode_1_1_open_geode_structural_model_input_1a9e34ad598c13e7ef2d2483ff2b9d7a48>`(absl::string_view directory);
 		void :target:`read<doxid-classgeode_1_1_open_geode_structural_model_input_1a320427774f2e405309bc12d3c373baa9>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_structural_model_input_1a8ef512ea37ce2b93f77a9d37c58f1b80>`();
 	};
