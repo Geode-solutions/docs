@@ -48,7 +48,7 @@ export default {
         out: true
       },
       {
-        extension: '.vtp (ascii and binary supported)',
+        extension: '.vtp (ascii, binary and encoded appendedData supported)',
         cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
         in: true,
         out: false
@@ -60,7 +60,7 @@ export default {
         out: true
       },
       {
-        extension: '.vtu (ascii and binary supported)',
+        extension: '.vtu (ascii, binary and encoded appendedData supported)',
         cpp: "<a href='/opengeode?page=class_geode_PolyhedralSolid.html'><code>PolyhedralSolid3D</code></a>",
         in: true,
         out: false
