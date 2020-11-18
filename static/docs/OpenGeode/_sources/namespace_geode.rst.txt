@@ -949,7 +949,7 @@ Overview
 	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1a0d28522356eb132aec3133d2b376f40a>`(const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh);
 
 	template <index_t dimension>
-	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1aaff4b2cf961daa113e891079cf3e63e0>`(const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& mesh);
+	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1ab8ef3e331d6a87e8d072ae4e7d473eaa>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh);
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`);
 	absl::optional<std::unique_ptr<TetrahedralSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_tetrahedral_solid<doxid-namespacegeode_1ad88abdc0180700dd94d4dc05d56f4149>`(const SolidMesh3D& solid);
