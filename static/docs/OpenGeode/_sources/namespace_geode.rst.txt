@@ -763,6 +763,7 @@ Overview
 		);
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afdb46be0cc0cf92e9c480d0f4af7ede7>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a73b98a5519467f090fd3b8dd6a9eb008>`(:ref:`Sphere<doxid-classgeode_1_1_sphere>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a8ec76900496f8c6e59d65c6ad941af27>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
 
@@ -810,6 +811,24 @@ Overview
 	std::tuple<double, Point3D> opengeode_geometry_api :ref:`point_plane_signed_distance<doxid-namespacegeode_1a4e3aa1f40ed1f1c1d11dd39240155949>`(
 		const Point3D& point,
 		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane
+		);
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_sphere_distance<doxid-namespacegeode_1a0f501c5dbc2326ec774ef23df0304192>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension>& sphere
+		);
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_sphere_signed_distance<doxid-namespacegeode_1a8c3f73b578501a0fea39ac5ff90c0ab6>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension>& sphere
+		);
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_ball_distance<doxid-namespacegeode_1a669070168188e8e7388c893431858478>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`<dimension>& sphere
 		);
 
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae9a3218d8a8d01e07d5fe03060e8b7e5>`(:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`);
@@ -1530,7 +1549,7 @@ a tuple containing:
 		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
 		)
 
-Compute the smallest distance between a point and a triangle the sign is given by the triangle normal (positive if in the same plane).
+Compute the smallest distance between a point and a triangle
 
 
 
@@ -1553,7 +1572,7 @@ a tuple containing:
 		const Triangle3D& triangle
 		)
 
-Compute the signed distance between a point and a triangle
+Compute the signed distance between a point and a triangle the sign is given by the triangle normal (positive if in the same plane).
 
 
 
@@ -1633,6 +1652,78 @@ a tuple containing:
 * the signed distance (sign is given by the plane normal direction).
 
 * the nearest point on the plane.
+
+.. index:: pair: function; point_sphere_distance
+.. _doxid-namespacegeode_1a0f501c5dbc2326ec774ef23df0304192:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> point_sphere_distance(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension>& sphere
+		)
+
+Compute the smallest distance between a point and a sphere (circle in 2D)
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the sphere.
+
+.. index:: pair: function; point_sphere_signed_distance
+.. _doxid-namespacegeode_1a8c3f73b578501a0fea39ac5ff90c0ab6:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> point_sphere_signed_distance(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension>& sphere
+		)
+
+Compute the smallest signed distance between a point and a sphere (circle in 2D) the sign is positive outside the sphere, negative inside.
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest signed distance.
+
+* the closest point on the sphere.
+
+.. index:: pair: function; point_ball_distance
+.. _doxid-namespacegeode_1a669070168188e8e7388c893431858478:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> point_ball_distance(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`<dimension>& sphere
+		)
+
+Compute the smallest distance between a point and a ball (disk in 2D) Result is always positive or null. If point is inside the ball, the returned distance is 0.
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the ball.
 
 .. index:: pair: function; perpendicular
 .. _doxid-namespacegeode_1abf7d35d6f59c66989de52f35d6c6cae0:
