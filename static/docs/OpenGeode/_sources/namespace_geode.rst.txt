@@ -208,7 +208,7 @@ Overview
 	typedef int :target:`signed_index_t<doxid-namespacegeode_1a82faef4b63f94932b7ced06209528cdd>`;
 	typedef :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension> :target:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`;
 	typedef :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension> :target:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`;
-	typedef :ref:`Circle<doxid-classgeode_1_1_circle>` :target:`Disk<doxid-namespacegeode_1a8eb9eb3432b2897512a02b4410f6a9f8>`;
+	typedef :ref:`Circle<doxid-classgeode_1_1_circle>` :target:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`;
 	typedef absl::InlinedVector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`, 2> :target:`EdgesAroundVertex<doxid-namespacegeode_1aab3c9dc52d762219dcc9137475590210>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshImplTag<doxid-structgeode_1_1_mesh_impl_tag>`> :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`> :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`;
@@ -829,6 +829,21 @@ Overview
 	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_ball_distance<doxid-namespacegeode_1a669070168188e8e7388c893431858478>`(
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 		const :ref:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`<dimension>& sphere
+		);
+
+	std::tuple<double, Point3D> opengeode_geometry_api :ref:`point_circle_distance<doxid-namespacegeode_1abf9b58beecf7ff892fdf6d61abc6b159>`(
+		const Point3D& point,
+		const :ref:`Circle<doxid-classgeode_1_1_circle>`& circle
+		);
+
+	std::tuple<double, Point3D> opengeode_geometry_api :ref:`point_circle_signed_distance<doxid-namespacegeode_1a886d2b7f7076e9913b4e357e1f1f6dc2>`(
+		const Point3D& point,
+		const :ref:`Circle<doxid-classgeode_1_1_circle>`& circle
+		);
+
+	std::tuple<double, Point3D> opengeode_geometry_api :ref:`point_disk_distance<doxid-namespacegeode_1a8f557d275dd00fc33ece3bd7b18d0b0b>`(
+		const Point3D& point,
+		const :ref:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`& disk
 		);
 
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae9a3218d8a8d01e07d5fe03060e8b7e5>`(:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`);
@@ -1665,7 +1680,7 @@ a tuple containing:
 		const :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension>& sphere
 		)
 
-Compute the smallest distance between a point and a sphere (circle in 2D)
+Compute the smallest distance between a point and a sphere
 
 
 
@@ -1689,7 +1704,7 @@ a tuple containing:
 		const :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension>& sphere
 		)
 
-Compute the smallest signed distance between a point and a sphere (circle in 2D) the sign is positive outside the sphere, negative inside.
+Compute the smallest signed distance between a point and a sphere the sign is positive outside the sphere, negative inside.
 
 
 
@@ -1713,7 +1728,7 @@ a tuple containing:
 		const :ref:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`<dimension>& sphere
 		)
 
-Compute the smallest distance between a point and a ball (disk in 2D) Result is always positive or null. If point is inside the ball, the returned distance is 0.
+Compute the smallest distance between a point and a ball Result is always positive or null. If point is inside the ball, the returned distance is 0.
 
 
 
@@ -1724,6 +1739,75 @@ a tuple containing:
 * the smallest distance.
 
 * the closest point on the ball.
+
+.. index:: pair: function; point_circle_distance
+.. _doxid-namespacegeode_1abf9b58beecf7ff892fdf6d61abc6b159:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point3D> opengeode_geometry_api point_circle_distance(
+		const Point3D& point,
+		const :ref:`Circle<doxid-classgeode_1_1_circle>`& circle
+		)
+
+Compute the smallest distance between a point and a circle
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the circle.
+
+.. index:: pair: function; point_circle_signed_distance
+.. _doxid-namespacegeode_1a886d2b7f7076e9913b4e357e1f1f6dc2:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point3D> opengeode_geometry_api point_circle_signed_distance(
+		const Point3D& point,
+		const :ref:`Circle<doxid-classgeode_1_1_circle>`& circle
+		)
+
+Compute the smallest signed distance between a point and a circle the sign is positive outside the circle, negative inside.
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest signed distance.
+
+* the closest point on the circle.
+
+.. index:: pair: function; point_disk_distance
+.. _doxid-namespacegeode_1a8f557d275dd00fc33ece3bd7b18d0b0b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point3D> opengeode_geometry_api point_disk_distance(
+		const Point3D& point,
+		const :ref:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`& disk
+		)
+
+Compute the smallest distance between a point and a disk Result is always positive or null. If point is inside the disk, the returned distance is 0.
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the disk.
 
 .. index:: pair: function; perpendicular
 .. _doxid-namespacegeode_1abf7d35d6f59c66989de52f35d6c6cae0:
