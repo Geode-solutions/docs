@@ -48,6 +48,12 @@ export default {
         out: true
       },
       {
+        extension: '.obj',
+        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
+        in: false,
+        out: true
+      },
+      {
         extension: '.vtp (ascii, binary and encoded appendedData supported)',
         cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
         in: true,
