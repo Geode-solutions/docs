@@ -209,6 +209,7 @@ Overview
 	typedef :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension> :target:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`;
 	typedef :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension> :target:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`;
 	typedef :ref:`Circle<doxid-classgeode_1_1_circle>` :target:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`;
+	typedef :ref:`Side<doxid-namespacegeode_1a0805566e7d9eb8e31ef1d932837fdb1b>` :target:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>`;
 	typedef absl::InlinedVector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`, 2> :target:`EdgesAroundVertex<doxid-namespacegeode_1aab3c9dc52d762219dcc9137475590210>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshImplTag<doxid-structgeode_1_1_mesh_impl_tag>`> :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`> :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`;
