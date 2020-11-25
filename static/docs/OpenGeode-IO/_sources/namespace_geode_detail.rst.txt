@@ -12,7 +12,8 @@ namespace geode::detail
 	class_geode_detail_MSHInput.rst
 	class_geode_detail_MSHOutput.rst
 	class_geode_detail_OBJInput.rst
-	class_geode_detail_OBJOutput.rst
+	class_geode_detail_OBJPolygonalOutput.rst
+	class_geode_detail_OBJTriangulatedOutput.rst
 	class_geode_detail_PLYInput.rst
 	class_geode_detail_PLYOutput.rst
 	class_geode_detail_STLInput.rst
@@ -46,7 +47,8 @@ namespace geode::detail
 	class :ref:`MSHInput<doxid-classgeode_1_1detail_1_1_m_s_h_input>`;
 	class :ref:`MSHOutput<doxid-classgeode_1_1detail_1_1_m_s_h_output>`;
 	class :ref:`OBJInput<doxid-classgeode_1_1detail_1_1_o_b_j_input>`;
-	class :ref:`OBJOutput<doxid-classgeode_1_1detail_1_1_o_b_j_output>`;
+	class :ref:`OBJPolygonalOutput<doxid-classgeode_1_1detail_1_1_o_b_j_polygonal_output>`;
+	class :ref:`OBJTriangulatedOutput<doxid-classgeode_1_1detail_1_1_o_b_j_triangulated_output>`;
 	class :ref:`PLYInput<doxid-classgeode_1_1detail_1_1_p_l_y_input>`;
 	class :ref:`PLYOutput<doxid-classgeode_1_1detail_1_1_p_l_y_output>`;
 	class :ref:`STLInput<doxid-classgeode_1_1detail_1_1_s_t_l_input>`;
