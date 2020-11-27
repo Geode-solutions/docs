@@ -78,6 +78,6 @@ namespace geode::detail
 		absl::Span<const absl::string_view> words
 		);
 
-	:ref:`TSurfData<doxid-structgeode_1_1detail_1_1_t_surf_data>` :target:`read_tsurf<doxid-namespacegeode_1_1detail_1af8a1258d782f29e54dc176767d809f5f>`(std::ifstream& file);
+	absl::optional<:ref:`TSurfData<doxid-structgeode_1_1detail_1_1_t_surf_data>`> :target:`read_tsurf<doxid-namespacegeode_1_1detail_1a25af5d9eb259f502dee11081cfdbd3af>`(std::ifstream& file);
 
 	} // namespace detail
