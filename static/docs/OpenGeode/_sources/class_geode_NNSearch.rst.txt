@@ -31,6 +31,7 @@ Given a list of points, this class returns neighboring points. :ref:`More...<det
 		// construction
 	
 		:target:`NNSearch<doxid-classgeode_1_1_n_n_search_1a500e918b386b1e6b046677e3dc958220>`(std::vector<:ref:`Point<doxid-classgeode_1_1_point>`<dimension>> points);
+		:target:`NNSearch<doxid-classgeode_1_1_n_n_search_1abeab30121058b671ea8abb2126261ca1>`(NNSearch&& other);
 
 		// methods
 	
