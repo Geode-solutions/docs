@@ -71,13 +71,6 @@ Overview
 	#define :target:`IMPLICIT_ATTRIBUTE_LINEAR_INTERPOLATION<doxid-attribute__utils_8h_1a0545b441c6ca2abeda7c4c193d023353>`(Type)
 	#define :target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-attribute__utils_8h_1afd6099a12361a95c806e35da237633fc>`(Type)
 	#define :target:`M_PI<doxid-types_8h_1ae71449b1cc6e6250b91f539153a7a0d3>`
-
-	#define :target:`OPENGEODE_ASSERT<doxid-assert_8h_1a3be5b68593ead97b12cf479a44083b1f>`( \
-		condition, \
-		message \
-		)
-
-	#define :target:`OPENGEODE_ASSERT_NOT_REACHED<doxid-assert_8h_1a0fbe9d87d9dd8ead18bb6d0dfc0508aa>`(message)
 	#define :target:`OPENGEODE_DISABLE_COPY<doxid-basic_2common_8h_1a97efa477e84e482549ac7e9ad66ea509>`(Class)
 	#define :target:`OPENGEODE_DISABLE_COPY_AND_MOVE<doxid-basic_2common_8h_1a66abbbb0a8f40eedddd74febbb7b63ca>`(Class)
 	#define :target:`OPENGEODE_DISABLE_MOVE<doxid-basic_2common_8h_1a5b0dcfe243f2f27983090f3a248d853e>`(Class)
