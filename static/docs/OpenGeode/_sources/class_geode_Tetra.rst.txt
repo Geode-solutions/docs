@@ -38,5 +38,6 @@ class geode::Tetra
 	
 		Tetra& :target:`operator =<doxid-classgeode_1_1_tetra_1a8b463970088a5e6dffef971d07a0c791>` (const Tetra& other);
 		Tetra& :target:`operator =<doxid-classgeode_1_1_tetra_1a769b11762de1bade011749d32e7639f9>` (Tetra&& other);
+		Point3D :target:`barycenter<doxid-classgeode_1_1_tetra_1a97b5eb448bbce9fb96eb430cbfccfda3>`() const;
 		const std::array<std::reference_wrapper<const Point3D>, 4>& :target:`vertices<doxid-classgeode_1_1_tetra_1ac88540be071e39247372823c15a8c30d>`() const;
 	};

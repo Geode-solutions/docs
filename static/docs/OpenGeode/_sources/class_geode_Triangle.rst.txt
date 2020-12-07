@@ -34,6 +34,7 @@ template class geode::Triangle
 	
 		Triangle<dimension>& :target:`operator =<doxid-classgeode_1_1_triangle_1abd70b5e90ce4c1dc7f9b819518015823>` (const Triangle<dimension>& other);
 		Triangle<dimension>& :target:`operator =<doxid-classgeode_1_1_triangle_1aa7848d3f95f27c3b8fce41b5596f9da8>` (Triangle<dimension>&& other);
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`barycenter<doxid-classgeode_1_1_triangle_1adfa76978dfb13995a710b3ac8f0b3782>`() const;
 	
 		template <index_t T = dimension>
 		std::enable_if<T==3, Vector3D>::type :target:`normal<doxid-classgeode_1_1_triangle_1aaa87a6b0f49b38ee8180787e74f5a146>`() const;
