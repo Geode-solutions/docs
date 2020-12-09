@@ -26,8 +26,10 @@ namespace geode::detail
 	class_geode_detail_VTPOutputImpl.rst
 	class_geode_detail_VTPPolygonalOutput.rst
 	class_geode_detail_VTPTriangulatedOutput.rst
-	class_geode_detail_VTUInput.rst
+	class_geode_detail_VTUInputImpl.rst
 	class_geode_detail_VTUOutput.rst
+	class_geode_detail_VTUPolyhedralInput.rst
+	class_geode_detail_VTUTetrahedralInput.rst
 
 
 
@@ -70,8 +72,13 @@ namespace geode::detail
 
 	class :ref:`VTPPolygonalOutput<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output>`;
 	class :ref:`VTPTriangulatedOutput<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output>`;
-	class :ref:`VTUInput<doxid-classgeode_1_1detail_1_1_v_t_u_input>`;
+
+	template <typename Mesh, typename Builder>
+	class :ref:`VTUInputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_input_impl>`;
+
 	class :ref:`VTUOutput<doxid-classgeode_1_1detail_1_1_v_t_u_output>`;
+	class :ref:`VTUPolyhedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_polyhedral_input>`;
+	class :ref:`VTUTetrahedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_tetrahedral_input>`;
 
 	// global functions
 

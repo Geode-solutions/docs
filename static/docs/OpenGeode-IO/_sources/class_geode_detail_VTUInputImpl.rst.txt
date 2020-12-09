@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::detail::VTUInputImpl
+.. _doxid-classgeode_1_1detail_1_1_v_t_u_input_impl:
+
+template class geode::detail::VTUInputImpl
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vtu_input_impl.h>
+	
+	template <typename Mesh, typename Builder>
+	class VTUInputImpl: public :ref:`geode::detail::VTKInputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_input_impl>`
+	{
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		void :ref:`read_file<doxid-classgeode_1_1detail_1_1_v_t_k_input_impl_1a5b1323ca32bff404a80db306c2aa1797>`();
+
