@@ -36,6 +36,12 @@ export default {
         out: true
       },
       {
+        extension: '.dxf',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
+        in: true,
+        out: true
+      },
+      {
         extension: '.ply',
         cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
         in: true,
@@ -68,6 +74,12 @@ export default {
       {
         extension: '.vtu (ascii, binary and encoded appendedData supported)',
         cpp: "<a href='/opengeode?page=class_geode_PolyhedralSolid.html'><code>PolyhedralSolid3D</code></a>",
+        in: true,
+        out: false
+      },
+      {
+        extension: '.vtu (ascii, binary and encoded appendedData supported)',
+        cpp: "<a href='/opengeode?page=class_geode_TetrahedralSolid.html'><code>TetrahedralSolid3D</code></a>",
         in: true,
         out: false
       },
