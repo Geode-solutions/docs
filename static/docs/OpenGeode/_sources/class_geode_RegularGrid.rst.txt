@@ -66,6 +66,8 @@ Interface class to represent regular grids. :ref:`More...<details-classgeode_1_1
 		absl::optional<:ref:`Indices<doxid-classgeode_1_1_regular_grid_1a13cf71d8b2c3618a3df8482032834a45>`> :ref:`cell<doxid-classgeode_1_1_regular_grid_1a597ca7ee726447c54617289b10c49f54>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`point<doxid-classgeode_1_1_regular_grid_1a6523421e26a0315a646a22e596b9e826>`(const :ref:`Index<doxid-classgeode_1_1_regular_grid_1a23d49d9013264222745829c7530782ad>`& index) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`cell_attribute_manager<doxid-classgeode_1_1_regular_grid_1ab8db5ba1fa1809fbe1851c7a38d587b0>`() const;
+		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_regular_grid_1aaed9cbd54060d8d3e8a18d8535cf1978>`() const;
+		RegularGrid<dimension> :target:`clone<doxid-classgeode_1_1_regular_grid_1a6f8680fd78b73475e8aa1e512c5543cb>`() const;
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_regular_grid_1a89cb9b53414e1a7aa659de3bab59683f>`();
 	};
 .. _details-classgeode_1_1_regular_grid:
@@ -105,4 +107,14 @@ Return the cell(s) containing the query point
 .. rubric:: Returns:
 
 No, one index or several cell indices that contain the query point.  When query point is geometrically near to cell limit, several cell indices are returned: they correspond the potential cells that may contain the point.
+
+.. index:: pair: function; bounding_box
+.. _doxid-classgeode_1_1_regular_grid_1aaed9cbd54060d8d3e8a18d8535cf1978:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> bounding_box() const
+
+Compute the bounding box of the grid
 
