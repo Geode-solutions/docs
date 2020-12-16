@@ -26,6 +26,7 @@ namespace geode::detail
 	class_geode_detail_VTPOutputImpl.rst
 	class_geode_detail_VTPPolygonalOutput.rst
 	class_geode_detail_VTPTriangulatedOutput.rst
+	class_geode_detail_VTUHybridInput.rst
 	class_geode_detail_VTUInputImpl.rst
 	class_geode_detail_VTUOutput.rst
 	class_geode_detail_VTUPolyhedralInput.rst
@@ -72,6 +73,7 @@ namespace geode::detail
 
 	class :ref:`VTPPolygonalOutput<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output>`;
 	class :ref:`VTPTriangulatedOutput<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output>`;
+	class :ref:`VTUHybridInput<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_input>`;
 
 	template <typename Mesh, typename Builder>
 	class :ref:`VTUInputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_input_impl>`;

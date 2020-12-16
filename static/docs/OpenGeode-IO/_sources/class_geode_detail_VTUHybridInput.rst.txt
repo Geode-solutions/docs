@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::VTUHybridInput
+.. _doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_input:
+
+class geode::detail::VTUHybridInput
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vtu_hybrid_input.h>
+	
+	class VTUHybridInput: public HybridSolidInput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`VTUHybridInput<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_input_1a48ff2bdbe1747c67621af5a5fad0aeb3>`(
+			HybridSolid<3>& solid,
+			absl::string_view filename
+			);
+
+		// methods
+	
+		void :target:`do_read<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_input_1a2a9f78d4199d3edf15c80b0f1d3a57ea>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_input_1ad7af87e78568ce6da03fcc308c3a84ee>`();
+	};
