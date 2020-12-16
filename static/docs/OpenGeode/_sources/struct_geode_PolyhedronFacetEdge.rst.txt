@@ -20,15 +20,15 @@ struct geode::PolyhedronFacetEdge
 		// fields
 	
 		:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>` :target:`polyhedron_facet<doxid-structgeode_1_1_polyhedron_facet_edge_1ac4da34dd331a48d3f0026f82b5abd0f3>`;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`edge_id<doxid-structgeode_1_1_polyhedron_facet_edge_1aaf152261e200a05ac6dedd33fdc0571e>` { NO_ID };
+		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`edge_id<doxid-structgeode_1_1_polyhedron_facet_edge_1a42893da55f21a1c6d5516bc0c53f80da>` { NO_LID };
 
 		// construction
 	
 		:target:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge_1a3da0c10f1cef4dd29d0f30a61c06e5e8>`();
 	
-		:target:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge_1ac57de1b546e50b7522594c1974e056f5>`(
+		:target:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge_1a1b92ca2f8c7171006b5c0017fde50653>`(
 			:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>` facet,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id
+			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` edge_id_in
 			);
 
 		// methods

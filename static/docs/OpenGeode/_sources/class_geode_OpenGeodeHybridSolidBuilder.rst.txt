@@ -1,0 +1,61 @@
+.. index:: pair: class; geode::OpenGeodeHybridSolidBuilder
+.. _doxid-classgeode_1_1_open_geode_hybrid_solid_builder:
+
+template class geode::OpenGeodeHybridSolidBuilder
+=================================================
+
+.. toctree::
+	:hidden:
+
+Implementation class for :ref:`HybridSolidBuilder <doxid-classgeode_1_1_hybrid_solid_builder>` using OpenGeode data structure
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geode_hybrid_solid_builder.h>
+	
+	template <index_t dimension>
+	class OpenGeodeHybridSolidBuilder: public :ref:`geode::HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`
+	{
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1a2f167c430554a70b6dd09587d2dbbcff>`(const std::vector<bool>& to_delete);
+		void :ref:`set_mesh<doxid-classgeode_1_1_vertex_set_builder_1ae00c46d0983aef744f8eadba2f0e6fba>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>`);
+		static std::unique_ptr<:ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`> :ref:`create<doxid-classgeode_1_1_vertex_set_builder_1a771651214baac8b1f85db964a73a4952>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh);
+		static std::unique_ptr<:ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_solid_mesh_builder_1ae4bf1f3889aa3198e1e4f178a2669643>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& mesh);
+		:ref:`SolidEdgesBuilder<doxid-classgeode_1_1_solid_edges_builder>`<dimension> :ref:`edges_builder<doxid-classgeode_1_1_solid_mesh_builder_1a4badac502a7ff9d8ccf8b1804326eae6>`();
+		:ref:`SolidFacetsBuilder<doxid-classgeode_1_1_solid_facets_builder>`<dimension> :ref:`facets_builder<doxid-classgeode_1_1_solid_mesh_builder_1a15e918b91b0c9214ecdf66e45304a375>`();
+		void :ref:`set_point<doxid-classgeode_1_1_solid_mesh_builder_1ac4f521e4a58819291ac7dbc5d9f3ecef>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_solid_mesh_builder_1a87b47e801441813c7e14a6f7c6532f45>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_polyhedron<doxid-classgeode_1_1_solid_mesh_builder_1af612451ad7f4f77dac10fadc12fac4d2>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> vertices, absl::Span<const std::vector<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`>> facets);
+		void :ref:`set_polyhedron_vertex<doxid-classgeode_1_1_solid_mesh_builder_1a2a671a534963827f8543fe5bcec949d5>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		void :ref:`set_polyhedron_adjacent<doxid-classgeode_1_1_solid_mesh_builder_1a04bcc2fa5f0683ef300c3803ef2029cb>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` adjacent_id);
+		void :ref:`unset_polyhedron_adjacent<doxid-classgeode_1_1_solid_mesh_builder_1ad796770e14b37399078225c28176adef>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet);
+		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_solid_mesh_builder_1a6c1e88b2e62239f95bfa8ac1a5ccd7cd>`();
+		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_solid_mesh_builder_1a453601b728f5cee2ed4260152ad98a25>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> polyhedra_to_connect);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_polyhedra<doxid-classgeode_1_1_solid_mesh_builder_1a32f574612c6eccb0ca785a2901b9ea5f>`(const std::vector<bool>& to_delete);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_solid_mesh_builder_1aeaf218f62a394d16e9f9d42ad91648a1>`();
+		void :ref:`associate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_solid_mesh_builder_1aa40541c7f2f810609b90037af4c0d968>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		void :ref:`disassociate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_solid_mesh_builder_1ada24ba26ccc6c9e3dff028de0e37606a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		void :ref:`copy<doxid-classgeode_1_1_solid_mesh_builder_1af79edca495dfb0bed0bbdaf464681950>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid_mesh, BuilderKey);
+		void :ref:`set_mesh<doxid-classgeode_1_1_solid_mesh_builder_1a9fe392711684b0c56b017077df8d1d45>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>` key);
+		static std::unique_ptr<:ref:`HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_hybrid_solid_builder_1af5229d0b5e7839d584c602bcd1d775d6>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>& mesh);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_tetrahedron<doxid-classgeode_1_1_hybrid_solid_builder_1a4ebb760398a36ce56ee2ce1dd19397ea>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 4>& vertices);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_hexahedron<doxid-classgeode_1_1_hybrid_solid_builder_1a9a78c8bc7a038ca37424dc65460686a4>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 8>& vertices);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_prism<doxid-classgeode_1_1_hybrid_solid_builder_1a4e01184ea95ec1df0d9fd180ac0dd196>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 6>& vertices);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_pyramid<doxid-classgeode_1_1_hybrid_solid_builder_1ae436162971b8530961bfa3518b8d8ef2>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 5>& vertices);
+		void :ref:`copy<doxid-classgeode_1_1_hybrid_solid_builder_1ae2dbc37695b05f51fa7466b6d63f9e97>`(const :ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>& hybrid_solid, BuilderKey);
+		void :ref:`set_mesh<doxid-classgeode_1_1_hybrid_solid_builder_1a5193c04ef4ab9f096fde22a771207f91>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>` key);
+

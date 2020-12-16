@@ -20,15 +20,15 @@ This struct represents an edge in a polygon
 		// fields
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polygon_id<doxid-structgeode_1_1_polygon_edge_1a89813d977355b1f203e3e0fdd73122c4>` { NO_ID };
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`edge_id<doxid-structgeode_1_1_polygon_edge_1a0143270c879039cc12e8b3870e9aa05e>` { NO_ID };
+		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`edge_id<doxid-structgeode_1_1_polygon_edge_1a38b852545f6f8f2faa71068dc1748b6e>` { NO_LID };
 
 		// construction
 	
 		:target:`PolygonEdge<doxid-structgeode_1_1_polygon_edge_1a55d0f0eb2c477561750d72b821ab6747>`();
 	
-		:target:`PolygonEdge<doxid-structgeode_1_1_polygon_edge_1ab957c98b5be84d8ef4e2b672c198e6d0>`(
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id
+		:target:`PolygonEdge<doxid-structgeode_1_1_polygon_edge_1a1fa7e96e1b4b3e43f4c9effe6054a813>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id_in,
+			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` edge_id_in
 			);
 	
 		:target:`PolygonEdge<doxid-structgeode_1_1_polygon_edge_1a7810f60c7caf4ee1af13da161a2e3309>`(:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>` polygon_vertex);

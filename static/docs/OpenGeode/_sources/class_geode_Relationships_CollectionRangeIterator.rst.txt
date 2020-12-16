@@ -7,7 +7,7 @@ class geode::Relationships::CollectionRangeIterator
 .. toctree::
 	:hidden:
 
-:ref:`Range <doxid-classgeode_1_1_range>` to iterates on all collections of one component
+Range to iterates on all collections of one component
 
 
 .. ref-code-block:: cpp

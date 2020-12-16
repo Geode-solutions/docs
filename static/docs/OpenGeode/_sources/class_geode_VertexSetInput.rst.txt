@@ -24,6 +24,9 @@ class geode::VertexSetInput
 	class :ref:`GraphInput<doxid-classgeode_1_1_graph_input>`;
 
 	template <index_t dimension>
+	class :ref:`HybridSolidInput<doxid-classgeode_1_1_hybrid_solid_input>`;
+
+	template <index_t dimension>
 	class :ref:`PointSetInput<doxid-classgeode_1_1_point_set_input>`;
 
 	template <index_t dimension>

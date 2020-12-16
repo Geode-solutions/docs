@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::ReverseRange &#8212; Python  documentation</title>
+    <title>template class geode::TReverseRange &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::Section" href="class_geode_Section.html" />
-    <link rel="prev" title="class geode::RelationshipsBuilder" href="class_geode_RelationshipsBuilder.html" />
+    <link rel="next" title="class geode::Tetra" href="class_geode_Tetra.html" />
+    <link rel="prev" title="template class geode::TRange" href="class_geode_TRange.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,13 +34,14 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-reverserange">
-<span id="doxid-classgeode-1-1-reverse-range"></span><span id="index-0"></span><h1>class geode::ReverseRange</h1>
+  <div class="section" id="template-class-geode-treverserange">
+<span id="doxid-classgeode-1-1-t-reverse-range"></span><span id="index-0"></span><h1>template class geode::TReverseRange</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;range.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">ReverseRange</span><span class="p">:</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">TReverseRange</span><span class="p">:</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_BaseRange.html#doxid-classgeode-1-1-base-range"><span class="std std-ref">geode::BaseRange</span></a><span></span><span class="p">,</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end"><span class="std std-ref">geode::BeginEnd</span></a><span></span>
 <span class="p">{</span>
@@ -48,17 +49,17 @@
     <span class="c1">// construction</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T1</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T2</span><span class="o">&gt;</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-reverse-range-1a4bef130b631fe08b648e79ec112fe6e0"><span></span><span class="n">ReverseRange</span></span><span></span><span class="p">(</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-t-reverse-range-1a2981f631c909bcd95a7f9aecd8726245"><span></span><span class="n">TReverseRange</span></span><span></span><span class="p">(</span>
         <span class="n">T1</span> <span class="n">begin</span><span class="p">,</span>
         <span class="n">T2</span> <span class="n">end</span>
         <span class="p">);</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-reverse-range-1a03aded1931e0be83bfce4d283baf5359"><span></span><span class="n">ReverseRange</span></span><span></span><span class="p">(</span><span class="n">T</span> <span class="n">begin</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-t-reverse-range-1aa53da9660565df2d3fbc81691a3a12cc"><span></span><span class="n">TReverseRange</span></span><span></span><span class="p">(</span><span class="n">T</span> <span class="n">begin</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-reverse-range-1ad9f5371fb94f330404957fd53cad857f"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-t-reverse-range-1ae3d5a84a4bb08d0c8206392d8d35de22"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
@@ -87,7 +88,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_ReverseRange.rst.txt"
+      <a href="_sources/class_geode_TReverseRange.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

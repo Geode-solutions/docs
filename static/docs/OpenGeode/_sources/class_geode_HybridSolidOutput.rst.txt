@@ -1,0 +1,34 @@
+.. index:: pair: class; geode::HybridSolidOutput
+.. _doxid-classgeode_1_1_hybrid_solid_output:
+
+template class geode::HybridSolidOutput
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <hybrid_solid_output.h>
+	
+	template <index_t dimension>
+	class HybridSolidOutput: public :ref:`geode::VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`
+	{
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
+		virtual void :ref:`write<doxid-classgeode_1_1_output_1a9c2f7d16a0ccf42ed237626c7acfa3f9>`() const = 0;
+

@@ -24,6 +24,9 @@ class geode::VertexSetOutput
 	class :ref:`GraphOutput<doxid-classgeode_1_1_graph_output>`;
 
 	template <index_t dimension>
+	class :ref:`HybridSolidOutput<doxid-classgeode_1_1_hybrid_solid_output>`;
+
+	template <index_t dimension>
 	class :ref:`PointSetOutput<doxid-classgeode_1_1_point_set_output>`;
 
 	template <index_t dimension>

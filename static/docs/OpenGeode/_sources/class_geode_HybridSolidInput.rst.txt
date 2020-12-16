@@ -1,0 +1,34 @@
+.. index:: pair: class; geode::HybridSolidInput
+.. _doxid-classgeode_1_1_hybrid_solid_input:
+
+template class geode::HybridSolidInput
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <hybrid_solid_input.h>
+	
+	template <index_t dimension>
+	class HybridSolidInput: public :ref:`geode::VertexSetInput<doxid-classgeode_1_1_vertex_set_input>`
+	{
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
+		virtual void :ref:`read<doxid-classgeode_1_1_input_1a3cddf55a1071542ca682bce780869794>`() = 0;
+

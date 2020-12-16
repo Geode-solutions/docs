@@ -65,9 +65,12 @@ namespace geode
 	class_geode_GraphInput.rst
 	class_geode_GraphOutput.rst
 	class_geode_Growable.rst
+	class_geode_HybridSolid.rst
+	class_geode_HybridSolidBuilder.rst
+	class_geode_HybridSolidInput.rst
+	class_geode_HybridSolidOutput.rst
 	class_geode_IOFile.rst
 	class_geode_IncrementOperator.rst
-	class_geode_Indices.rst
 	class_geode_InfiniteLine.rst
 	class_geode_Input.rst
 	class_geode_Line.rst
@@ -89,6 +92,8 @@ namespace geode
 	class_geode_OpenGeodeException.rst
 	class_geode_OpenGeodeGraph.rst
 	class_geode_OpenGeodeGraphBuilder.rst
+	class_geode_OpenGeodeHybridSolid.rst
+	class_geode_OpenGeodeHybridSolidBuilder.rst
 	class_geode_OpenGeodePointSet.rst
 	class_geode_OpenGeodePointSetBuilder.rst
 	class_geode_OpenGeodePolygonalSurface.rst
@@ -125,14 +130,12 @@ namespace geode
 	class_geode_PolyhedralSolidOutput.rst
 	class_geode_PolyhedralSolidView.rst
 	class_geode_PolyhedralSolidViewBuilder.rst
-	class_geode_Range.rst
 	class_geode_ReadOnlyAttribute.rst
 	class_geode_RegularGrid.rst
 	class_geode_RegularGridInput.rst
 	class_geode_RegularGridOutput.rst
 	class_geode_Relationships.rst
 	class_geode_RelationshipsBuilder.rst
-	class_geode_ReverseRange.rst
 	class_geode_Section.rst
 	class_geode_SectionBuilder.rst
 	class_geode_SectionInput.rst
@@ -154,6 +157,9 @@ namespace geode
 	class_geode_SurfaceMeshBuilder.rst
 	class_geode_Surfaces.rst
 	class_geode_SurfacesBuilder.rst
+	class_geode_TIndices.rst
+	class_geode_TRange.rst
+	class_geode_TReverseRange.rst
 	class_geode_Tetra.rst
 	class_geode_TetrahedralSolid.rst
 	class_geode_TetrahedralSolidBuilder.rst
@@ -204,8 +210,15 @@ Overview
 	typedef std::tuple<:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`, bitsery::ext::PointerLinkingContext, bitsery::ext::InheritanceContext> :target:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`;
 	typedef bitsery::Serializer<bitsery::OutputBufferedStreamAdapter, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Serializer<doxid-namespacegeode_1acde102fc3576cee8a5531f85902413bb>`;
 	typedef bitsery::Deserializer<bitsery::InputStreamAdapter, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Deserializer<doxid-namespacegeode_1a2090ae31c36f663e61f2af7d87cb5f44>`;
+	typedef :ref:`TRange<doxid-classgeode_1_1_t_range>`<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`Range<doxid-namespacegeode_1af2b42e3794d9eb6a1abf901029f56c5e>`;
+	typedef :ref:`TRange<doxid-classgeode_1_1_t_range>`<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`> :target:`LRange<doxid-namespacegeode_1ab5da71b86e46c42efa37d163a65b04fc>`;
+	typedef :ref:`TReverseRange<doxid-classgeode_1_1_t_reverse_range>`<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`ReverseRange<doxid-namespacegeode_1a80fac5bf1c3ce3f4f6556e86954c0ddc>`;
+	typedef :ref:`TReverseRange<doxid-classgeode_1_1_t_reverse_range>`<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`> :target:`LReverseRange<doxid-namespacegeode_1a5ab844024112f71b10da5bb373ad7f50>`;
+	typedef :ref:`TIndices<doxid-classgeode_1_1_t_indices>`<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`Indices<doxid-namespacegeode_1aaebb9dbe6e25893b15659ec4df809184>`;
+	typedef :ref:`TIndices<doxid-classgeode_1_1_t_indices>`<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`> :target:`LIndices<doxid-namespacegeode_1a368939a0e951366dbffeaf4276f9295a>`;
 	typedef unsigned int :target:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`;
 	typedef int :target:`signed_index_t<doxid-namespacegeode_1a82faef4b63f94932b7ced06209528cdd>`;
+	typedef unsigned char :target:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`;
 	typedef :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension> :target:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`;
 	typedef :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension> :target:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`;
 	typedef :ref:`Circle<doxid-classgeode_1_1_circle>` :target:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`;
@@ -224,6 +237,8 @@ Overview
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`EdgedCurveOutput<doxid-classgeode_1_1_edged_curve_output>`<dimension>, const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>&, absl::string_view> :target:`EdgedCurveOutputFactory<doxid-namespacegeode_1ade1100f8641d319b1d6b54e56381224d>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`GraphInput<doxid-classgeode_1_1_graph_input>`, :ref:`Graph<doxid-classgeode_1_1_graph>`&, absl::string_view> :target:`GraphInputFactory<doxid-namespacegeode_1a89f247749451e2ec9a44ffd6cc1928c3>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`GraphOutput<doxid-classgeode_1_1_graph_output>`, const :ref:`Graph<doxid-classgeode_1_1_graph>`&, absl::string_view> :target:`GraphOutputFactory<doxid-namespacegeode_1a3c53900da38ba521ff48628bc9e681fd>`;
+	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`HybridSolidInput<doxid-classgeode_1_1_hybrid_solid_input>`<dimension>, :ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>&, absl::string_view> :target:`HybridSolidInputFactory<doxid-namespacegeode_1a9ced05f563eccb67e347c192b53440da>`;
+	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`HybridSolidOutput<doxid-classgeode_1_1_hybrid_solid_output>`<dimension>, const :ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>&, absl::string_view> :target:`HybridSolidOutputFactory<doxid-namespacegeode_1a78acec4ed76d78885b6e7fafc081a037>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`PointSetInput<doxid-classgeode_1_1_point_set_input>`<dimension>, :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>&, absl::string_view> :target:`PointSetInputFactory<doxid-namespacegeode_1ac753c3da1f897933c17216ceb89c9f19>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`PointSetOutput<doxid-classgeode_1_1_point_set_output>`<dimension>, const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>&, absl::string_view> :target:`PointSetOutputFactory<doxid-namespacegeode_1a72f21836dd1fdb8011224aa7f49ef008>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`PolygonalSurfaceInput<doxid-classgeode_1_1_polygonal_surface_input>`<dimension>, :ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>&, absl::string_view> :target:`PolygonalSurfaceInputFactory<doxid-namespacegeode_1a703c7d3b9c9ecd6f043dc61ccedbcc11>`;
@@ -295,7 +310,10 @@ Overview
 	class :ref:`BRepInput<doxid-classgeode_1_1_b_rep_input>`;
 	class :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`;
 
-	template <typename Type, typename NextOperator = IncrementOperator<Type>>
+	template <
+		typename Type,
+		template<typename> class NextOperator = IncrementOperator
+		>
 	class :ref:`BaseRange<doxid-classgeode_1_1_base_range>`;
 
 	template <typename Type>
@@ -373,12 +391,22 @@ Overview
 	template <typename Archive, typename T>
 	class :ref:`Growable<doxid-classgeode_1_1_growable>`;
 
+	template <index_t dimension>
+	class :ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`;
+
+	template <index_t dimension>
+	class :ref:`HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`;
+
+	template <index_t dimension>
+	class :ref:`HybridSolidInput<doxid-classgeode_1_1_hybrid_solid_input>`;
+
+	template <index_t dimension>
+	class :ref:`HybridSolidOutput<doxid-classgeode_1_1_hybrid_solid_output>`;
+
 	class :ref:`IOFile<doxid-classgeode_1_1_i_o_file>`;
 
 	template <typename Type>
 	class :ref:`IncrementOperator<doxid-classgeode_1_1_increment_operator>`;
-
-	class :ref:`Indices<doxid-classgeode_1_1_indices>`;
 
 	template <index_t dimension>
 	class :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`;
@@ -426,6 +454,12 @@ Overview
 	class :ref:`OpenGeodeException<doxid-classgeode_1_1_open_geode_exception>`;
 	class :ref:`OpenGeodeGraph<doxid-classgeode_1_1_open_geode_graph>`;
 	class :ref:`OpenGeodeGraphBuilder<doxid-classgeode_1_1_open_geode_graph_builder>`;
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeHybridSolid<doxid-classgeode_1_1_open_geode_hybrid_solid>`;
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeHybridSolidBuilder<doxid-classgeode_1_1_open_geode_hybrid_solid_builder>`;
 
 	template <index_t dimension>
 	class :ref:`OpenGeodePointSet<doxid-classgeode_1_1_open_geode_point_set>`;
@@ -526,8 +560,6 @@ Overview
 	template <index_t dimension>
 	class :ref:`PolyhedralSolidViewBuilder<doxid-classgeode_1_1_polyhedral_solid_view_builder>`;
 
-	class :ref:`Range<doxid-classgeode_1_1_range>`;
-
 	template <typename T>
 	class :ref:`ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`;
 
@@ -542,7 +574,6 @@ Overview
 
 	class :ref:`Relationships<doxid-classgeode_1_1_relationships>`;
 	class :ref:`RelationshipsBuilder<doxid-classgeode_1_1_relationships_builder>`;
-	class :ref:`ReverseRange<doxid-classgeode_1_1_reverse_range>`;
 	class :ref:`Section<doxid-classgeode_1_1_section>`;
 	class :ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`;
 	class :ref:`SectionInput<doxid-classgeode_1_1_section_input>`;
@@ -597,6 +628,15 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`SurfacesBuilder<doxid-classgeode_1_1_surfaces_builder>`;
+
+	template <typename Type>
+	class :ref:`TIndices<doxid-classgeode_1_1_t_indices>`;
+
+	template <typename Type>
+	class :ref:`TRange<doxid-classgeode_1_1_t_range>`;
+
+	template <typename Type>
+	class :ref:`TReverseRange<doxid-classgeode_1_1_t_reverse_range>`;
 
 	class :ref:`Tetra<doxid-classgeode_1_1_tetra>`;
 
@@ -667,6 +707,7 @@ Overview
 	static constexpr double :target:`global_epsilon2<doxid-namespacegeode_1ab575e903827bd50f7ef15e38caae8c57>` { global_epsilon* global_epsilon };
 	static constexpr double :target:`global_epsilon3<doxid-namespacegeode_1a016b0b7f36d945752eab94a03fbc27db>` { global_epsilon2* global_epsilon };
 	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`NO_ID<doxid-namespacegeode_1a454319bfde41726e71f499e4e16322b3>` = :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`(-1);
+	static constexpr :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`NO_LID<doxid-namespacegeode_1a0bb1a49fb70c62b71374aeff91a8fb11>` = :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`(-1);
 
 	// global functions
 
@@ -704,6 +745,7 @@ Overview
 	void opengeode_basic_api :ref:`register_basic_deserialize_pcontext<doxid-namespacegeode_1a4971b040e31d95abe4053f71d315b4d7>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	std::string opengeode_basic_api :target:`filename_with_extension<doxid-namespacegeode_1a00deaeb8544d7b897c2eeb80260c6bc6>`(absl::string_view path);
 	std::string opengeode_basic_api :target:`filename_without_extension<doxid-namespacegeode_1a9368b64fa9978d1188bab4c3ce416fde>`(absl::string_view path);
+	constexpr unsigned char :target:`operator"" _uc<doxid-namespacegeode_1af0d0d274032ba787172bd59efededf50>` (unsigned long long arg);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a704add8ff33f82fa87b376794c8183d1>`(:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a713615f1e1f632a857fbbda376b9b832>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
@@ -847,6 +889,9 @@ Overview
 		const :ref:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`& disk
 		);
 
+	template <index_t dimension>
+	absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`morton_sort<doxid-namespacegeode_1a9ddcd20b5e963287fb1b87ee10e48750>`(absl::Span<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> points);
+
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae9a3218d8a8d01e07d5fe03060e8b7e5>`(:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8aa2b23c4d6223ad5baa9bd94971837a>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a08bdfe9994f732c45460e93dd950194d>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
@@ -896,6 +941,8 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a25875b8f6532ca2e4fd9254c80be7aaf>`(:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ae7ad36948deefa4fe158f9e929cae4d5>`(:ref:`OpenGeodeEdgedCurve<doxid-classgeode_1_1_open_geode_edged_curve>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1a6f282161b666b5ad2548ae1367a13a>`(:ref:`OpenGeodeEdgedCurveBuilder<doxid-classgeode_1_1_open_geode_edged_curve_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a2eac4941a89e5129710dc9fed92cefa4>`(:ref:`OpenGeodeHybridSolid<doxid-classgeode_1_1_open_geode_hybrid_solid>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1af7fef224a5877c2a2ff950f8c1409421>`(:ref:`OpenGeodeHybridSolidBuilder<doxid-classgeode_1_1_open_geode_hybrid_solid_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8252b03e21a42a1833384e1b6ddd2fd7>`(:ref:`OpenGeodePointSet<doxid-classgeode_1_1_open_geode_point_set>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1adb3e0d666830c5126e5e1e46ab16fbec>`(:ref:`OpenGeodePointSetBuilder<doxid-classgeode_1_1_open_geode_point_set_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aeeb83da836913b87d1e5ede6369da218>`(:ref:`OpenGeodePolygonalSurface<doxid-classgeode_1_1_open_geode_polygonal_surface>`);
@@ -906,6 +953,8 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a5d76de73ac3b9f41e76ba78ae062363a>`(:ref:`OpenGeodeTetrahedralSolidBuilder<doxid-classgeode_1_1_open_geode_tetrahedral_solid_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1adbd85d0226bd7cecafa7630498fe8389>`(:ref:`OpenGeodeTriangulatedSurface<doxid-classgeode_1_1_open_geode_triangulated_surface>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a5234a7b55489aa84a4f6a5f9f8429993>`(:ref:`OpenGeodeTriangulatedSurfaceBuilder<doxid-classgeode_1_1_open_geode_triangulated_surface_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1da5adee14f91deff17a0b855b2c8e84>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a2182e5d2fc2bcb1a0dd4f1ef38fb0806>`(:ref:`HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a26bc8c2703a42415e402bbb51bd8aed5>`(:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa326268026b80210a023b9d2edec059d>`(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`);
@@ -944,6 +993,8 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a80ee0d83f9eb471e3d0a3066c343cb42>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a10bca5e5d2bdb673816feac3d71aab17>`(:ref:`OpenGeodeEdgedCurveBuilder<doxid-classgeode_1_1_open_geode_edged_curve_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a4b4a327bb4bd20e0d3f9a8dd02dfd2f5>`(:ref:`OpenGeodeEdgedCurve<doxid-classgeode_1_1_open_geode_edged_curve>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9425186c3f7735902f08a0ac204aefba>`(:ref:`OpenGeodeHybridSolidBuilder<doxid-classgeode_1_1_open_geode_hybrid_solid_builder>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ad3a58dbaac7c9c3cb15d5223ff1f9b91>`(:ref:`OpenGeodeHybridSolid<doxid-classgeode_1_1_open_geode_hybrid_solid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a659fc30ac32b4f89b76a5c926bd3d459>`(:ref:`OpenGeodePointSetBuilder<doxid-classgeode_1_1_open_geode_point_set_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae07cdbfe711c5f8f66983868a5e34f1e>`(:ref:`OpenGeodePointSet<doxid-classgeode_1_1_open_geode_point_set>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ad80387a97d060455522a423a5e06e6fc>`(:ref:`OpenGeodePolygonalSurfaceBuilder<doxid-classgeode_1_1_open_geode_polygonal_surface_builder>`);
@@ -954,6 +1005,8 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a1a155ae4d12c72e621175834fe9f1bf5>`(:ref:`OpenGeodeTetrahedralSolid<doxid-classgeode_1_1_open_geode_tetrahedral_solid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a397ee7f2b69d05f9e9ab91cf0b6c391d>`(:ref:`OpenGeodeTriangulatedSurfaceBuilder<doxid-classgeode_1_1_open_geode_triangulated_surface_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1afeb3d280ffcd275ef0148dceffda7eb8>`(:ref:`OpenGeodeTriangulatedSurface<doxid-classgeode_1_1_open_geode_triangulated_surface>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af4f182876ad2706cfd67cfa0a7ff23b4>`(:ref:`HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ad1e677b7ca1b4a9e3461a5ab070e8b42>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a11058d89bacb297358eb8a8a8a29490c>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a34993c9c8235be7221449c93152372f7>`(:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a36eeebddb61f6b3acc7e4711bb6bbeb4>`(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`);
@@ -1008,6 +1061,8 @@ Overview
 	:target:`BITSERY_OUTPUT_MESH_DIMENSION<doxid-namespacegeode_1aa9bc004f80438dfdb47b55329b548805>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`BITSERY_INPUT_MESH_NO_DIMENSION<doxid-namespacegeode_1a6b8dac0b909b7c5eb4db841a6117bd0f>`(:ref:`Graph<doxid-classgeode_1_1_graph>`);
 	:target:`BITSERY_OUTPUT_MESH_NO_DIMENSION<doxid-namespacegeode_1a6ee30d99771a42eefaac649d4fb0c4d6>`(:ref:`Graph<doxid-classgeode_1_1_graph>`);
+	:target:`BITSERY_INPUT_MESH_DIMENSION<doxid-namespacegeode_1ade26ecdd0a847c3e94fd0be14c048af9>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`);
+	:target:`BITSERY_OUTPUT_MESH_DIMENSION<doxid-namespacegeode_1ada304607cd49e4b332f3067b7013f368>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`);
 	:target:`BITSERY_INPUT_MESH_DIMENSION<doxid-namespacegeode_1a5ee7a0e67251d51d2a41892d5e0558d2>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`);
 	:target:`BITSERY_OUTPUT_MESH_DIMENSION<doxid-namespacegeode_1aec69f9763c807240649836e2ccda71ee>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`);
 	:target:`BITSERY_INPUT_MESH_DIMENSION<doxid-namespacegeode_1a409d10b0bfd6abbee0e2d2a600e4c150>`(:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`);
@@ -1047,8 +1102,27 @@ Overview
 		absl::string_view filename
 		);
 
-	void opengeode_mesh_api :ref:`load_graph<doxid-namespacegeode_1a72a2dabe113e197bb65ef977a3669501>`(:ref:`Graph<doxid-classgeode_1_1_graph>`& graph, absl::string_view filename);
+	std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`> opengeode_mesh_api :ref:`load_graph<doxid-namespacegeode_1aade7384ff1a5237cd20ad03e7bb36db3>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl, absl::string_view filename);
+	std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`> opengeode_mesh_api :ref:`load_graph<doxid-namespacegeode_1a90ea541741fdf3169e5e67c31b51648f>`(absl::string_view filename);
 	void opengeode_mesh_api :ref:`save_graph<doxid-namespacegeode_1a7bfdf4be37e5f3d64db9c16d8a4c5a23>`(const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph, absl::string_view filename);
+
+	template <index_t dimension>
+	std::unique_ptr<:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>> :ref:`load_hybrid_solid<doxid-namespacegeode_1a88d3b49d086cb5cbff847101dbbd98c1>`(
+		const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl,
+		absl::string_view filename
+		);
+
+	template <index_t dimension>
+	std::unique_ptr<:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>> :ref:`load_hybrid_solid<doxid-namespacegeode_1a6be4f5843d0a729a7385d523471ed6b9>`(absl::string_view filename);
+
+	:target:`ALIAS_3D<doxid-namespacegeode_1a538bb1f70017d299f05fb5e294cb4fd5>`(:ref:`HybridSolidInputFactory<doxid-namespacegeode_1a9ced05f563eccb67e347c192b53440da>`);
+
+	template <index_t dimension>
+	void :ref:`save_hybrid_solid<doxid-namespacegeode_1af75d6f3d6e6dae0feef877910944ea74>`(
+		const :ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>& hybrid_solid,
+		absl::string_view filename
+		);
+
 	absl::string_view opengeode_mesh_api :target:`extension_from_filename<doxid-namespacegeode_1a8b7fdb6caef0b4f201c81f17455f299d>`(absl::string_view filename);
 
 	template <index_t dimension>
@@ -1091,8 +1165,6 @@ Overview
 
 	template <index_t dimension>
 	std::unique_ptr<:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>> :ref:`load_polyhedral_solid<doxid-namespacegeode_1a82056bc821eca46dfd66810f500eebdb>`(absl::string_view filename);
-
-	:target:`ALIAS_3D<doxid-namespacegeode_1a16c64147551fea5c5e199f0fb18b78d1>`(:ref:`PolyhedralSolidInputFactory<doxid-namespacegeode_1a03242cd517f98670ee7f8d4aa41a67b2>`);
 
 	template <index_t dimension>
 	void :ref:`save_polyhedral_solid<doxid-namespacegeode_1a21ca1aff84553e8332fd172dc651a521>`(
@@ -2180,12 +2252,15 @@ API function for saving a :ref:`EdgedCurve <doxid-classgeode_1_1_edged_curve>`. 
 		- Path to the file where save the :ref:`EdgedCurve <doxid-classgeode_1_1_edged_curve>`.
 
 .. index:: pair: function; load_graph
-.. _doxid-namespacegeode_1a72a2dabe113e197bb65ef977a3669501:
+.. _doxid-namespacegeode_1aade7384ff1a5237cd20ad03e7bb36db3:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void opengeode_mesh_api load_graph(:ref:`Graph<doxid-classgeode_1_1_graph>`& graph, absl::string_view filename)
+	std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`> opengeode_mesh_api load_graph(
+		const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl,
+		absl::string_view filename
+		)
 
 API function for loading an :ref:`Graph <doxid-classgeode_1_1_graph>`. The adequate loader is called depending on the filename extension.
 
@@ -2197,9 +2272,31 @@ API function for loading an :ref:`Graph <doxid-classgeode_1_1_graph>`. The adequ
 	:widths: 20 80
 
 	*
-		- graph
+		- impl
 
-		- Loaded :ref:`Graph <doxid-classgeode_1_1_graph>`.
+		- Data structure implementation.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; load_graph
+.. _doxid-namespacegeode_1a90ea541741fdf3169e5e67c31b51648f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`> opengeode_mesh_api load_graph(absl::string_view filename)
+
+API function for loading an :ref:`Graph <doxid-classgeode_1_1_graph>`. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
 
 	*
 		- filename
@@ -2232,6 +2329,91 @@ API function for saving a :ref:`Graph <doxid-classgeode_1_1_graph>`. The adequat
 		- filename
 
 		- Path to the file where save the :ref:`Graph <doxid-classgeode_1_1_graph>`.
+
+.. index:: pair: function; load_hybrid_solid
+.. _doxid-namespacegeode_1a88d3b49d086cb5cbff847101dbbd98c1:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::unique_ptr<:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>> load_hybrid_solid(
+		const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl,
+		absl::string_view filename
+		)
+
+API function for loading an :ref:`HybridSolid <doxid-classgeode_1_1_hybrid_solid>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- impl
+
+		- Data structure implementation.
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; load_hybrid_solid
+.. _doxid-namespacegeode_1a6be4f5843d0a729a7385d523471ed6b9:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::unique_ptr<:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>> load_hybrid_solid(absl::string_view filename)
+
+API function for loading an :ref:`HybridSolid <doxid-classgeode_1_1_hybrid_solid>`. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_hybrid_solid
+.. _doxid-namespacegeode_1af75d6f3d6e6dae0feef877910944ea74:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void save_hybrid_solid(
+		const :ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>& hybrid_solid,
+		absl::string_view filename
+		)
+
+API function for saving a :ref:`HybridSolid <doxid-classgeode_1_1_hybrid_solid>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- hybrid_solid
+
+		- :ref:`HybridSolid <doxid-classgeode_1_1_hybrid_solid>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`HybridSolid <doxid-classgeode_1_1_hybrid_solid>`.
 
 .. index:: pair: function; load_point_set
 .. _doxid-namespacegeode_1aa4ae84c454aa519617fcae8cc910a892:

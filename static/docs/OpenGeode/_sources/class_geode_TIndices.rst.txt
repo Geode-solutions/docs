@@ -1,19 +1,13 @@
-.. index:: pair: class; geode::Range
-.. _doxid-classgeode_1_1_range:
+.. index:: pair: class; geode::TIndices
+.. _doxid-classgeode_1_1_t_indices:
 
-class geode::Range
-==================
+template class geode::TIndices
+==============================
 
 .. toctree::
 	:hidden:
 
-This class can be used to iterate over integer loop. Example: = C++98 loop = for( index_t i = 0; i < n; i++ ) { // do something }
 
-.. code-block:: none
-
-	= C++11-like loop =
-
-for( const auto i : :ref:`Range <doxid-classgeode_1_1_range>` { n } ) { // do something }
 
 
 .. ref-code-block:: cpp
@@ -21,25 +15,20 @@ for( const auto i : :ref:`Range <doxid-classgeode_1_1_range>` { n } ) { // do so
 
 	#include <range.h>
 	
-	class Range:
+	template <typename Type>
+	class TIndices:
 	    public :ref:`geode::BaseRange<doxid-classgeode_1_1_base_range>`,
 	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
 	{
 	public:
 		// construction
 	
-		template <typename T1, typename T2>
-		:target:`Range<doxid-classgeode_1_1_range_1a9a1f5c5fe5dcbf630685a0dde7d40aac>`(
-			T1 begin,
-			T2 end
-			);
-	
-		template <typename T>
-		:target:`Range<doxid-classgeode_1_1_range_1a1fe6d9cab085faa5df33d5964385d356>`(T end);
+		template <typename Container>
+		:target:`TIndices<doxid-classgeode_1_1_t_indices_1a3ce116ffba6d6507aa69606f06864406>`(const Container& container);
 
 		// methods
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`operator *<doxid-classgeode_1_1_range_1af29b66fd5fddc1cbfb19a2d9ab589c46>` () const;
+		Type :target:`operator *<doxid-classgeode_1_1_t_indices_1a40954a6f0513574820ce32a720252b40>` () const;
 	};
 
 Inherited Members

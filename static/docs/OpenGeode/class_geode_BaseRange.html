@@ -41,7 +41,10 @@
 <p>Base class for range-based iteration on custom range. See derived classes for usage.</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;range.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="p">,</span> <span class="k">typename</span> <span class="n">NextOperator</span> <span class="o">=</span> <span class="n">IncrementOperator</span><span class="o">&lt;</span><span class="n">Type</span><span class="o">&gt;&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span>
+    <span class="k">typename</span> <span class="n">Type</span><span class="p">,</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">NextOperator</span> <span class="o">=</span> <span class="n">IncrementOperator</span>
+    <span class="o">&gt;</span>
 <span class="k">class</span> <span class="n">BaseRange</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -54,9 +57,14 @@
 
 <span class="c1">// direct descendants</span>
 
-<span class="k">class</span> <a class="reference internal" href="class_geode_Indices.html#doxid-classgeode-1-1-indices"><span class="std std-ref">Indices</span></a><span></span><span class="p">;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_Range.html#doxid-classgeode-1-1-range"><span class="std std-ref">Range</span></a><span></span><span class="p">;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_ReverseRange.html#doxid-classgeode-1-1-reverse-range"><span class="std std-ref">ReverseRange</span></a><span></span><span class="p">;</span></pre>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TIndices.html#doxid-classgeode-1-1-t-indices"><span class="std std-ref">TIndices</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TRange.html#doxid-classgeode-1-1-t-range"><span class="std std-ref">TRange</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TReverseRange.html#doxid-classgeode-1-1-t-reverse-range"><span class="std std-ref">TReverseRange</span></a><span></span><span class="p">;</span></pre>
 </div>
 
 

@@ -68,6 +68,17 @@ namespace geode::detail
 	template <typename Container>
 	class :ref:`VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`;
 
+	// global variables
+
+	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 3>, 4> :target:`tetrahedron_facet_vertices<doxid-namespacegeode_1_1detail_1aacb41daae58ca0fa195c1853f1b09b5d>` { { { 1, 3, 2 }, { 0, 2, 3 }, { 3, 1, 0 },                 { 0, 1, 2 } } };
+	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 2>, 6> :target:`tetrahedron_edge_vertices<doxid-namespacegeode_1_1detail_1add7598fd43e5034e6e77f674d9549ad4>` { { { 0, 1 }, { 0, 2 }, { 0, 3 }, { 1, 2 },                 { 1, 3 }, { 2, 3 } } };
+	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 4>, 6> :target:`hexahedron_facet_vertices<doxid-namespacegeode_1_1detail_1abf12ff103c7582b56934c84a2a20ff74>` { { { 0, 1, 2, 3 }, { 4, 7, 6, 5 },                 { 0, 4, 5, 1 }, { 2, 6, 7, 3 }, { 1, 5, 6, 2 },                 { 0, 3, 7, 4 } } };
+	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 2>, 12> :target:`hexahedron_edge_vertices<doxid-namespacegeode_1_1detail_1a10efee30430b64e9f7bf12bc7301a184>` { { { 0, 1 }, { 1, 2 }, { 2, 3 }, { 3, 0 },                 { 4, 5 }, { 5, 6 }, { 6, 7 }, { 7, 4 }, { 0, 4 }, { 1, 5 },                 { 2, 6 }, { 3, 7 } } };
+	static const std::array<std::vector<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`>, 5> :target:`prism_facet_vertices<doxid-namespacegeode_1_1detail_1a77fd094253d7346e406d14978724c1b8>` { { { 0, 1, 2 }, { 3, 5, 4 }, { 0, 3, 4, 1 },                 { 1, 4, 5, 2 }, { 0, 2, 5, 3 } } };
+	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 2>, 9> :target:`prism_edge_vertices<doxid-namespacegeode_1_1detail_1afc6c2dd561eebfef093c6e528ac457e6>` { { { 0, 1 }, { 1, 2 }, { 2, 0 }, { 3, 4 },                 { 4, 5 }, { 5, 3 }, { 0, 3 }, { 1, 4 }, { 2, 5 } } };
+	static const std::array<std::vector<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`>, 5> :target:`pyramid_facet_vertices<doxid-namespacegeode_1_1detail_1ac9591673c726e2a1204f86e099947d9f>` { { { 0, 1, 2, 3 }, { 0, 4, 1 }, { 1, 4, 2 },                 { 2, 4, 3 }, { 0, 3, 4 } } };
+	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 2>, 8> :target:`pyramid_edge_vertices<doxid-namespacegeode_1_1detail_1a16111543f7fd79e890f0fe960f7d3b12>` { { { 0, 1 }, { 1, 2 }, { 2, 3 }, { 3, 0 },                 { 0, 4 }, { 1, 4 }, { 2, 4 }, { 3, 4 } } };
+
 	// global functions
 
 	template <typename Serializer>
@@ -93,7 +104,7 @@ namespace geode::detail
 	void :target:`register_model_pcontext<doxid-namespacegeode_1_1detail_1aabe609223c623a9e6fbad122d1949d3f>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 
 	template <typename Range>
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`count_relationships<doxid-namespacegeode_1_1detail_1a3922ed9d6481362fb802c3a6bcbfe712>`(const :ref:`Range<doxid-classgeode_1_1_range>`& range);
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`count_relationships<doxid-namespacegeode_1_1detail_1a3922ed9d6481362fb802c3a6bcbfe712>`(const :ref:`Range<doxid-namespacegeode_1af2b42e3794d9eb6a1abf901029f56c5e>`& range);
 
 	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
 	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_corner_components<doxid-namespacegeode_1_1detail_1aaa63507ad5adbd85c85f5899e694087c>`(

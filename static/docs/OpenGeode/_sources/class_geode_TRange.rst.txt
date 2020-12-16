@@ -1,13 +1,19 @@
-.. index:: pair: class; geode::ReverseRange
-.. _doxid-classgeode_1_1_reverse_range:
+.. index:: pair: class; geode::TRange
+.. _doxid-classgeode_1_1_t_range:
 
-class geode::ReverseRange
-=========================
+template class geode::TRange
+============================
 
 .. toctree::
 	:hidden:
 
+This class can be used to iterate over integer loop. Example: = C++98 loop = for( index_t i = 0; i < n; i++ ) { // do something }
 
+.. code-block:: none
+
+	= C++11-like loop =
+
+for( const auto i : Range{ n } ) { // do something }
 
 
 .. ref-code-block:: cpp
@@ -15,7 +21,8 @@ class geode::ReverseRange
 
 	#include <range.h>
 	
-	class ReverseRange:
+	template <typename Type>
+	class TRange:
 	    public :ref:`geode::BaseRange<doxid-classgeode_1_1_base_range>`,
 	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
 	{
@@ -23,17 +30,17 @@ class geode::ReverseRange
 		// construction
 	
 		template <typename T1, typename T2>
-		:target:`ReverseRange<doxid-classgeode_1_1_reverse_range_1a4bef130b631fe08b648e79ec112fe6e0>`(
+		:target:`TRange<doxid-classgeode_1_1_t_range_1a758710ede8450fa07502a49480a75b20>`(
 			T1 begin,
 			T2 end
 			);
 	
 		template <typename T>
-		:target:`ReverseRange<doxid-classgeode_1_1_reverse_range_1a03aded1931e0be83bfce4d283baf5359>`(T begin);
+		:target:`TRange<doxid-classgeode_1_1_t_range_1af8a2b01ad995ca2aa562f3de05f6b8cb>`(T end);
 
 		// methods
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`operator *<doxid-classgeode_1_1_reverse_range_1ad9f5371fb94f330404957fd53cad857f>` () const;
+		Type :target:`operator *<doxid-classgeode_1_1_t_range_1aadf6983950805c77946e6a3a60c579cb>` () const;
 	};
 
 Inherited Members

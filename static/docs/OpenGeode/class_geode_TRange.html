@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::Range &#8212; Python  documentation</title>
+    <title>template class geode::TRange &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::ReadOnlyAttribute" href="class_geode_ReadOnlyAttribute.html" />
-    <link rel="prev" title="template class geode::PolyhedralSolidViewBuilder" href="class_geode_PolyhedralSolidViewBuilder.html" />
+    <link rel="next" title="template class geode::TReverseRange" href="class_geode_TReverseRange.html" />
+    <link rel="prev" title="template class geode::TIndices" href="class_geode_TIndices.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,18 +34,19 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-range">
-<span id="doxid-classgeode-1-1-range"></span><span id="index-0"></span><h1>class geode::Range</h1>
+  <div class="section" id="template-class-geode-trange">
+<span id="doxid-classgeode-1-1-t-range"></span><span id="index-0"></span><h1>template class geode::TRange</h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>This class can be used to iterate over integer loop. Example: = C++98 loop = for( index_t i = 0; i &lt; n; i++ ) { // do something }</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>= C++11-like loop =
 </pre></div>
 </div>
-<p>for( const auto i : <a class="reference internal" href="#doxid-classgeode-1-1-range"><span class="std std-ref">Range</span></a> { n } ) { // do something }</p>
+<p>for( const auto i : Range{ n } ) { // do something }</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;range.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">Range</span><span class="p">:</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">TRange</span><span class="p">:</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_BaseRange.html#doxid-classgeode-1-1-base-range"><span class="std std-ref">geode::BaseRange</span></a><span></span><span class="p">,</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end"><span class="std std-ref">geode::BeginEnd</span></a><span></span>
 <span class="p">{</span>
@@ -53,17 +54,17 @@
     <span class="c1">// construction</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T1</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T2</span><span class="o">&gt;</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-range-1a9a1f5c5fe5dcbf630685a0dde7d40aac"><span></span><span class="n">Range</span></span><span></span><span class="p">(</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-t-range-1a758710ede8450fa07502a49480a75b20"><span></span><span class="n">TRange</span></span><span></span><span class="p">(</span>
         <span class="n">T1</span> <span class="n">begin</span><span class="p">,</span>
         <span class="n">T2</span> <span class="n">end</span>
         <span class="p">);</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-range-1a1fe6d9cab085faa5df33d5964385d356"><span></span><span class="n">Range</span></span><span></span><span class="p">(</span><span class="n">T</span> <span class="n">end</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-t-range-1af8a2b01ad995ca2aa562f3de05f6b8cb"><span></span><span class="n">TRange</span></span><span></span><span class="p">(</span><span class="n">T</span> <span class="n">end</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-range-1af29b66fd5fddc1cbfb19a2d9ab589c46"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-t-range-1aadf6983950805c77946e6a3a60c579cb"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
@@ -92,7 +93,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_Range.rst.txt"
+      <a href="_sources/class_geode_TRange.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

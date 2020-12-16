@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::Indices &#8212; Python  documentation</title>
+    <title>template class geode::TIndices &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::InfiniteLine" href="class_geode_InfiniteLine.html" />
-    <link rel="prev" title="template class geode::IncrementOperator" href="class_geode_IncrementOperator.html" />
+    <link rel="next" title="template class geode::TRange" href="class_geode_TRange.html" />
+    <link rel="prev" title="template class geode::SurfacesBuilder" href="class_geode_SurfacesBuilder.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,13 +34,14 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-indices">
-<span id="doxid-classgeode-1-1-indices"></span><span id="index-0"></span><h1>class geode::Indices</h1>
+  <div class="section" id="template-class-geode-tindices">
+<span id="doxid-classgeode-1-1-t-indices"></span><span id="index-0"></span><h1>template class geode::TIndices</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;range.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">Indices</span><span class="p">:</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">TIndices</span><span class="p">:</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_BaseRange.html#doxid-classgeode-1-1-base-range"><span class="std std-ref">geode::BaseRange</span></a><span></span><span class="p">,</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end"><span class="std std-ref">geode::BeginEnd</span></a><span></span>
 <span class="p">{</span>
@@ -48,11 +49,11 @@
     <span class="c1">// construction</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Container</span><span class="o">&gt;</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-indices-1aa4a26b8dd74b529fd8f4780799f991f6"><span></span><span class="n">Indices</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Container</span><span class="o">&amp;</span> <span class="n">container</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-t-indices-1a3ce116ffba6d6507aa69606f06864406"><span></span><span class="n">TIndices</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Container</span><span class="o">&amp;</span> <span class="n">container</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-indices-1a8b3e6b1e1759b45d6bf97f590716382b"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-t-indices-1a40954a6f0513574820ce32a720252b40"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
@@ -81,7 +82,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_Indices.rst.txt"
+      <a href="_sources/class_geode_TIndices.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

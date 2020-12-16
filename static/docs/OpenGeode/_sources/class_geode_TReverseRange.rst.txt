@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::Indices
-.. _doxid-classgeode_1_1_indices:
+.. index:: pair: class; geode::TReverseRange
+.. _doxid-classgeode_1_1_t_reverse_range:
 
-class geode::Indices
-====================
+template class geode::TReverseRange
+===================================
 
 .. toctree::
 	:hidden:
@@ -15,19 +15,26 @@ class geode::Indices
 
 	#include <range.h>
 	
-	class Indices:
+	template <typename Type>
+	class TReverseRange:
 	    public :ref:`geode::BaseRange<doxid-classgeode_1_1_base_range>`,
 	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
 	{
 	public:
 		// construction
 	
-		template <typename Container>
-		:target:`Indices<doxid-classgeode_1_1_indices_1aa4a26b8dd74b529fd8f4780799f991f6>`(const Container& container);
+		template <typename T1, typename T2>
+		:target:`TReverseRange<doxid-classgeode_1_1_t_reverse_range_1a2981f631c909bcd95a7f9aecd8726245>`(
+			T1 begin,
+			T2 end
+			);
+	
+		template <typename T>
+		:target:`TReverseRange<doxid-classgeode_1_1_t_reverse_range_1aa53da9660565df2d3fbc81691a3a12cc>`(T begin);
 
 		// methods
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`operator *<doxid-classgeode_1_1_indices_1a8b3e6b1e1759b45d6bf97f590716382b>` () const;
+		Type :target:`operator *<doxid-classgeode_1_1_t_reverse_range_1ae3d5a84a4bb08d0c8206392d8d35de22>` () const;
 	};
 
 Inherited Members
