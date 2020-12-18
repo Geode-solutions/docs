@@ -24,6 +24,6 @@ class geode::detail::AssimpMeshInput
 
 		// methods
 	
-		bool :target:`read_file<doxid-classgeode_1_1detail_1_1_assimp_mesh_input_1af79338c33aec1180c95df07e2b481a99>`();
+		void :target:`read_file<doxid-classgeode_1_1detail_1_1_assimp_mesh_input_1a5d722d74a7ef513f273fae589b182ad0>`();
 		virtual void :target:`build_mesh<doxid-classgeode_1_1detail_1_1_assimp_mesh_input_1a8f97be76ec7a582dc0f988f482012b4a>`() = 0;
 	};
