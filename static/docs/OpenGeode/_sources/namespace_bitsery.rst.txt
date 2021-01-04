@@ -32,4 +32,10 @@ namespace bitsery
 		absl::InlinedVector<T, N>& obj
 		);
 
+	template <typename Serializer, typename T, size_t N>
+	void :target:`serialize<doxid-namespacebitsery_1a5afe29a444c0b279f93be23c5b35cb65>`(
+		Serializer& s,
+		absl::FixedArray<T, N>& obj
+		);
+
 	} // namespace bitsery
