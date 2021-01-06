@@ -745,6 +745,14 @@ Overview
 	void opengeode_basic_api :ref:`register_basic_deserialize_pcontext<doxid-namespacegeode_1a4971b040e31d95abe4053f71d315b4d7>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	std::string opengeode_basic_api :target:`filename_with_extension<doxid-namespacegeode_1a00deaeb8544d7b897c2eeb80260c6bc6>`(absl::string_view path);
 	std::string opengeode_basic_api :target:`filename_without_extension<doxid-namespacegeode_1a9368b64fa9978d1188bab4c3ce416fde>`(absl::string_view path);
+
+	template <typename Container>
+	void :target:`permute<doxid-namespacegeode_1a12681ad1ca2cf850c4014577c273e5fb>`(
+		Container& data,
+		absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation
+		);
+
+	absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> opengeode_basic_api :target:`old2new_permutation<doxid-namespacegeode_1a6686c8d91d83f4068fdea688a415b5b2>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 	constexpr unsigned char :target:`operator"" _uc<doxid-namespacegeode_1af0d0d274032ba787172bd59efededf50>` (unsigned long long arg);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a704add8ff33f82fa87b376794c8183d1>`(:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);

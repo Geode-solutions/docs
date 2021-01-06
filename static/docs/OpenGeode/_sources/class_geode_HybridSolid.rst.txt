@@ -93,7 +93,7 @@ Inherited Members
 		double :ref:`edge_length<doxid-classgeode_1_1_solid_mesh_1ab472b4dffe6e46a873df3fe706c0d9ca>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`polyhedron_barycenter<doxid-classgeode_1_1_solid_mesh_1a8ec29c3c46b5990fbc66a2080e97da97>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`facet_barycenter<doxid-classgeode_1_1_solid_mesh_1ad4c1c0e05fde802fc6aa89319e43b0aa>`(const :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`& facet_vertices) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`edge_barycenter<doxid-classgeode_1_1_solid_mesh_1a64bebb118a6e633ec25aad26dcf8bf6a>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& polygon_edge_vertices) const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`edge_barycenter<doxid-classgeode_1_1_solid_mesh_1a5cb898499b4522f8ac9e7c55e42dfa22>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices) const;
 	
 		template <index_t T = dimension>
 		std::enable_if<T==3, Vector3D>::type :ref:`polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1ac11c243a8507b7a5590b48ca05d50648>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;

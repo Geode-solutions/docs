@@ -51,6 +51,11 @@ Base class defining the virtual API used by the :ref:`AttributeManager <doxid-cl
 			AttributeKey
 			) = 0;
 	
+		virtual void :target:`permute_elements<doxid-classgeode_1_1_attribute_base_1a7fceef23eefd409a4d59f94d95412b88>`(
+			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation,
+			AttributeKey
+			) = 0;
+	
 		virtual void :target:`compute_value<doxid-classgeode_1_1_attribute_base_1a85fb37b8f3dd166c7cbe0d90a611059d>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` from_element,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element,

@@ -84,6 +84,7 @@
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a009194a92dfd94b2e0ac4c397c5f9ad8"><span class="std std-ref">clear</span></a><span></span><span class="p">();</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1aa25870b7f9a775d641a23ee44e0fc7d0"><span class="std std-ref">clear_attributes</span></a><span></span><span class="p">();</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1af39ef3210749c1a18a7bc26c3b2a38c7"><span class="std std-ref">delete_elements</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a6262e1c6201661f3f47fcc47226b8283"><span class="std std-ref">permute_elements</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">permutation</span><span class="p">);</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a3c1aa6aa5f1e1792e7080c537edc7d5c"><span class="std std-ref">nb_elements</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-attribute-manager-1a95af02f8b79e0df86468c8aba1787d0f"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">AttributeManager</span><span class="o">&amp;</span> <span class="n">attribute_manager</span><span class="p">);</span>
 
@@ -294,7 +295,21 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a3c1aa6aa5f1e1792e7080c537edc7d5c"><span id="index-15"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_elements</span><span class="p">()</span> <span class="k">const</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a6262e1c6201661f3f47fcc47226b8283"><span id="index-15"></span><span></span><span class="kt">void</span> <span class="n">permute_elements</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">permutation</span><span class="p">)</span></pre>
+<p>Permute attribute elements.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>permutation</p></td>
+<td><p><a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a> of size <a class="reference internal" href="#doxid-classgeode-1-1-attribute-manager-1a3c1aa6aa5f1e1792e7080c537edc7d5c"><span class="std std-ref">nb_elements()</span></a>. Each value correponds to the destination index.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-attribute-manager-1a3c1aa6aa5f1e1792e7080c537edc7d5c"><span id="index-16"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_elements</span><span class="p">()</span> <span class="k">const</span></pre>
 <p>Get the number of elements in each attribute</p>
 </div>
 </div>

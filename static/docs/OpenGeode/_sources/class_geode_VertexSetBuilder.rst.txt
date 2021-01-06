@@ -26,6 +26,7 @@ Interface class to represent the builder of a :ref:`VertexSet <doxid-classgeode_
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1a2f167c430554a70b6dd09587d2dbbcff>`(const std::vector<bool>& to_delete);
+		absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`permute_vertices<doxid-classgeode_1_1_vertex_set_builder_1acca378778dc4b775f45b1723ea754d8c>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 	
 		void :target:`set_mesh<doxid-classgeode_1_1_vertex_set_builder_1ae00c46d0983aef744f8eadba2f0e6fba>`(
 			:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh,
@@ -129,6 +130,34 @@ Delete a set of vertices.
 .. rubric:: Returns:
 
 the mapping between old vertex indices to new ones. Deleted vertices new index is NO_ID
+
+.. index:: pair: function; permute_vertices
+.. _doxid-classgeode_1_1_vertex_set_builder_1acca378778dc4b775f45b1723ea754d8c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permute_vertices(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation)
+
+Permute vertices to match the given order.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- permutation
+
+		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size vertex_set_.nb_vertices(). Each value corresponds to the destination position.
+
+
+
+.. rubric:: Returns:
+
+the mapping between old vertex indices to new ones.
 
 .. index:: pair: function; create
 .. _doxid-classgeode_1_1_vertex_set_builder_1a771651214baac8b1f85db964a73a4952:

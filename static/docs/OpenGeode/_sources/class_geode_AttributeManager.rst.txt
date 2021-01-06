@@ -59,6 +59,7 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 		void :ref:`clear<doxid-classgeode_1_1_attribute_manager_1a009194a92dfd94b2e0ac4c397c5f9ad8>`();
 		void :ref:`clear_attributes<doxid-classgeode_1_1_attribute_manager_1aa25870b7f9a775d641a23ee44e0fc7d0>`();
 		void :ref:`delete_elements<doxid-classgeode_1_1_attribute_manager_1af39ef3210749c1a18a7bc26c3b2a38c7>`(const std::vector<bool>& to_delete);
+		void :ref:`permute_elements<doxid-classgeode_1_1_attribute_manager_1a6262e1c6201661f3f47fcc47226b8283>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_elements<doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`() const;
 		void :target:`copy<doxid-classgeode_1_1_attribute_manager_1a95af02f8b79e0df86468c8aba1787d0f>`(const AttributeManager& attribute_manager);
 	
@@ -406,6 +407,28 @@ Delete a set of attribute elements.
 		- to_delete
 
 		- a vector of size :ref:`nb_elements() <doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`. If to_delete[e] is true, then the element e will be destroyed.
+
+.. index:: pair: function; permute_elements
+.. _doxid-classgeode_1_1_attribute_manager_1a6262e1c6201661f3f47fcc47226b8283:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void permute_elements(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation)
+
+Permute attribute elements.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- permutation
+
+		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size :ref:`nb_elements() <doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`. Each value correponds to the destination index.
 
 .. index:: pair: function; nb_elements
 .. _doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c:

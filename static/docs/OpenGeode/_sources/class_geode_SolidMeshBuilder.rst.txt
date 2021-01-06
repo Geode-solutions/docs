@@ -36,6 +36,7 @@ Interface class to represent the builder of a :ref:`SolidMesh <doxid-classgeode_
 		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_solid_mesh_builder_1a6c1e88b2e62239f95bfa8ac1a5ccd7cd>`();
 		void :ref:`compute_polyhedron_adjacencies<doxid-classgeode_1_1_solid_mesh_builder_1a453601b728f5cee2ed4260152ad98a25>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> polyhedra_to_connect);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_polyhedra<doxid-classgeode_1_1_solid_mesh_builder_1a32f574612c6eccb0ca785a2901b9ea5f>`(const std::vector<bool>& to_delete);
+		absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`permute_polyhedra<doxid-classgeode_1_1_solid_mesh_builder_1a01b04879d1f892f98b1238b59444076d>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_solid_mesh_builder_1aeaf218f62a394d16e9f9d42ad91648a1>`();
 		void :ref:`associate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_solid_mesh_builder_1aa40541c7f2f810609b90037af4c0d968>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		void :ref:`disassociate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_solid_mesh_builder_1ada24ba26ccc6c9e3dff028de0e37606a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
@@ -74,6 +75,7 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertex<doxid-classgeode_1_1_vertex_set_builder_1ad20a5799994288413a1f198dbe0a505d>`();
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1a2f167c430554a70b6dd09587d2dbbcff>`(const std::vector<bool>& to_delete);
+		absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`permute_vertices<doxid-classgeode_1_1_vertex_set_builder_1acca378778dc4b775f45b1723ea754d8c>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 		void :ref:`set_mesh<doxid-classgeode_1_1_vertex_set_builder_1ae00c46d0983aef744f8eadba2f0e6fba>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>`);
 		static std::unique_ptr<:ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`> :ref:`create<doxid-classgeode_1_1_vertex_set_builder_1a771651214baac8b1f85db964a73a4952>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh);
 
@@ -335,6 +337,34 @@ Delete a set of solid polyhedra
 .. rubric:: Returns:
 
 the mapping between old polyhedron indices to new ones. Deleted polyhedra new index is NO_ID
+
+.. index:: pair: function; permute_polyhedra
+.. _doxid-classgeode_1_1_solid_mesh_builder_1a01b04879d1f892f98b1238b59444076d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permute_polyhedra(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation)
+
+Permute polyhedra to match the given order.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- permutation
+
+		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size solid_mesh_.nb_polyhedra(). Each value corresponds to the destination position.
+
+
+
+.. rubric:: Returns:
+
+the mapping between old polyhedron indices to new ones.
 
 .. index:: pair: function; delete_isolated_vertices
 .. _doxid-classgeode_1_1_solid_mesh_builder_1aeaf218f62a394d16e9f9d42ad91648a1:
