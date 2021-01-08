@@ -1,0 +1,47 @@
+.. index:: pair: class; geode::EraserRange
+.. _doxid-classgeode_1_1_eraser_range:
+
+template class geode::EraserRange
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <range.h>
+	
+	template <typename Type>
+	class EraserRange:
+	    public :ref:`geode::BaseRange<doxid-classgeode_1_1_base_range>`,
+	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	{
+	public:
+		// construction
+	
+		:target:`EraserRange<doxid-classgeode_1_1_eraser_range_1a6fe1ac02f9b156cb973f9963d8f54f5c>`(std::vector<Type>& values);
+
+		// methods
+	
+		Type&& :target:`operator *<doxid-classgeode_1_1_eraser_range_1a5ab88c87f239338356863f67f549485f>` ();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_base_range_1a3c8892964239c42e1e914ad91c1849cc>` (const :ref:`BaseRange<doxid-classgeode_1_1_base_range>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_base_range_1afe90da29578e4e5022ffc71598163bfe>` ();
+		Type :ref:`current<doxid-classgeode_1_1_base_range_1a62c35fce8f88bcff37fedb47da9f9240>`() const;
+		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
+		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
+

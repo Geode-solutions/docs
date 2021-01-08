@@ -44,6 +44,10 @@ Begin and end methods for range-based iteration on custom range. See derived cla
 	class :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`;
 	class :ref:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range>`;
 	class :ref:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range>`;
+
+	template <typename Type>
+	class :ref:`EraserRange<doxid-classgeode_1_1_eraser_range>`;
+
 	class :ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>`;
 	class :ref:`IncidentBlockRange<doxid-classgeode_1_1_b_rep_1_1_incident_block_range>`;
 	class :ref:`IncidentLineRange<doxid-classgeode_1_1_b_rep_1_1_incident_line_range>`;

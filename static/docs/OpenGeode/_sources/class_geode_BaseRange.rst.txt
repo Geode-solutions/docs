@@ -32,6 +32,9 @@ Base class for range-based iteration on custom range. See derived classes for us
 	// direct descendants
 
 	template <typename Type>
+	class :ref:`EraserRange<doxid-classgeode_1_1_eraser_range>`;
+
+	template <typename Type>
 	class :ref:`TIndices<doxid-classgeode_1_1_t_indices>`;
 
 	template <typename Type>

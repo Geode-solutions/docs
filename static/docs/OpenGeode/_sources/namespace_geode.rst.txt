@@ -58,6 +58,7 @@ namespace geode
 	class_geode_EdgedCurveBuilder.rst
 	class_geode_EdgedCurveInput.rst
 	class_geode_EdgedCurveOutput.rst
+	class_geode_EraserRange.rst
 	class_geode_Factory.rst
 	class_geode_GenericMapping.rst
 	class_geode_Graph.rst
@@ -376,6 +377,9 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`EdgedCurveOutput<doxid-classgeode_1_1_edged_curve_output>`;
+
+	template <typename Type>
+	class :ref:`EraserRange<doxid-classgeode_1_1_eraser_range>`;
 
 	template <typename Key, typename BaseClass, typename... Args>
 	class :ref:`Factory<doxid-classgeode_1_1_factory>`;
