@@ -44,6 +44,8 @@
 
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_CRSData.html#doxid-structgeode-1-1detail-1-1-c-r-s-data"><span class="std std-ref">CRSData</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_HeaderData.html#doxid-structgeode-1-1detail-1-1-header-data"><span class="std std-ref">HeaderData</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_PropClassHeaderData.html#doxid-structgeode-1-1detail-1-1-prop-class-header-data"><span class="std std-ref">PropClassHeaderData</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_PropHeaderData.html#doxid-structgeode-1-1detail-1-1-prop-header-data"><span class="std std-ref">PropHeaderData</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_TSurfBorderData.html#doxid-structgeode-1-1detail-1-1-t-surf-border-data"><span class="std std-ref">TSurfBorderData</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_TSurfData.html#doxid-structgeode-1-1detail-1-1-t-surf-data"><span class="std std-ref">TSurfData</span></a><span></span><span class="p">;</span>
 
@@ -52,6 +54,7 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_LSOInput.html#doxid-classgeode-1-1detail-1-1-l-s-o-input"><span class="std std-ref">LSOInput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_MLInput.html#doxid-classgeode-1-1detail-1-1-m-l-input"><span class="std std-ref">MLInput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_MLOutput.html#doxid-classgeode-1-1detail-1-1-m-l-output"><span class="std std-ref">MLOutput</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_PLOutput.html#doxid-classgeode-1-1detail-1-1-p-l-output"><span class="std std-ref">PLOutput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_TSInput.html#doxid-classgeode-1-1detail-1-1-t-s-input"><span class="std std-ref">TSInput</span></a><span></span><span class="p">;</span>
 
 <span class="c1">// global functions</span>
@@ -81,6 +84,16 @@
 <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1aa24c63bcac7f660cd96dde66babb7857"><span></span><span class="n">write_CRS</span></span><span></span><span class="p">(</span>
     <span class="n">std</span><span class="o">::</span><span class="n">ofstream</span><span class="o">&amp;</span> <span class="n">file</span><span class="p">,</span>
     <span class="k">const</span> <a class="reference internal" href="struct_geode_detail_CRSData.html#doxid-structgeode-1-1detail-1-1-c-r-s-data"><span class="std std-ref">CRSData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a75d75e311a3b94c629e4046334540e55"><span></span><span class="n">write_prop_header</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">ofstream</span><span class="o">&amp;</span> <span class="n">file</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_detail_PropHeaderData.html#doxid-structgeode-1-1detail-1-1-prop-header-data"><span class="std std-ref">PropHeaderData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a9e5f4ed56bb768a1face412316691339"><span></span><span class="n">write_property_class_header</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">ofstream</span><span class="o">&amp;</span> <span class="n">file</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_detail_PropClassHeaderData.html#doxid-structgeode-1-1detail-1-1-prop-class-header-data"><span class="std std-ref">PropClassHeaderData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span>
     <span class="p">);</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a51c6af2c945d7fcdbef97909363b6020"><span></span><span class="n">goto_keyword</span></span><span></span><span class="p">(</span>
