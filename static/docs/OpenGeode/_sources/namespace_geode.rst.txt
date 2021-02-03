@@ -131,6 +131,7 @@ namespace geode
 	class_geode_PolyhedralSolidOutput.rst
 	class_geode_PolyhedralSolidView.rst
 	class_geode_PolyhedralSolidViewBuilder.rst
+	class_geode_ProgressLogger.rst
 	class_geode_ReadOnlyAttribute.rst
 	class_geode_RegularGrid.rst
 	class_geode_RegularGridInput.rst
@@ -563,6 +564,8 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`PolyhedralSolidViewBuilder<doxid-classgeode_1_1_polyhedral_solid_view_builder>`;
+
+	class :ref:`ProgressLogger<doxid-classgeode_1_1_progress_logger>`;
 
 	template <typename T>
 	class :ref:`ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`;
