@@ -42,7 +42,7 @@
 
 <span class="c1">// typedefs</span>
 
-<span class="k">typedef</span> <a class="reference internal" href="class_geode_BijectiveMapping.html#doxid-classgeode-1-1-bijective-mapping"><span class="std std-ref">BijectiveMapping</span></a><span></span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span></span><span class="n">Mapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="class_geode_ModelCopyMapping.html#doxid-classgeode-1-1-model-copy-mapping-1a2d0b4129e3ddabacb1e0759bbfb4d65c"><span class="std std-ref">ModelCopyMapping::Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span></span><span class="n">Mapping</span></span><span></span><span class="p">;</span>
 
 <span class="c1">// classes</span>
 
@@ -59,8 +59,6 @@
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Mesh</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_MeshStorage.html#doxid-classgeode-1-1detail-1-1-mesh-storage"><span class="std std-ref">MeshStorage</span></a><span></span><span class="p">;</span>
-
-<span class="k">class</span> <a class="reference internal" href="class_geode_detail_ModelCopyMapping.html#doxid-classgeode-1-1detail-1-1-model-copy-mapping"><span class="std std-ref">ModelCopyMapping</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_PointsImpl.html#doxid-classgeode-1-1detail-1-1-points-impl"><span class="std std-ref">PointsImpl</span></a><span></span><span class="p">;</span>
@@ -118,91 +116,37 @@
 <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a3922ed9d6481362fb802c3a6bcbfe712"><span></span><span class="n">count_relationships</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1af2b42e3794d9eb6a1abf901029f56c5e"><span class="std std-ref">Range</span></a><span></span><span class="o">&amp;</span> <span class="n">range</span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1aaa63507ad5adbd85c85f5899e694087c"><span></span><span class="n">copy_corner_components</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1aaa63507ad5adbd85c85f5899e694087c"><span></span><span class="n">copy_corner_components</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a4dff5a59d71b79b432ad89b665bc9020"><span></span><span class="n">copy_line_components</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a4dff5a59d71b79b432ad89b665bc9020"><span></span><span class="n">copy_line_components</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a9e00e77352d569b7d4118c4a0c3bb85a"><span></span><span class="n">copy_surface_components</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a9e00e77352d569b7d4118c4a0c3bb85a"><span></span><span class="n">copy_surface_components</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a4f39e7bcd6c2710d589b4270538b51f9"><span></span><span class="n">copy_block_components</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a4f39e7bcd6c2710d589b4270538b51f9"><span></span><span class="n">copy_block_components</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a37efd9128fecff2a59ad00a6f8e0ee0f"><span></span><span class="n">copy_model_boundary_components</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a37efd9128fecff2a59ad00a6f8e0ee0f"><span></span><span class="n">copy_model_boundary_components</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span>
-    <span class="p">);</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a02af73a5031dda78596c89e1d4b5f376"><span></span><span class="n">copy_corner_line_relationships</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
-    <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">corners</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">lines</span>
-    <span class="p">);</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1acea1f0550a05ea3117bdaa8f164b8f91"><span></span><span class="n">copy_corner_surface_relationships</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
-    <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">corners</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">surfaces</span>
-    <span class="p">);</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a7b082327bf7780bf989af299bfc293b5"><span></span><span class="n">copy_line_surface_relationships</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
-    <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">lines</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">surfaces</span>
-    <span class="p">);</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a083c140b86992afa8ab6cada0824ba6c"><span></span><span class="n">copy_corner_block_relationships</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
-    <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">corners</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">blocks</span>
-    <span class="p">);</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a855a59c38ceebd98cfbb02076900dc0c"><span></span><span class="n">copy_line_block_relationships</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
-    <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">lines</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">blocks</span>
-    <span class="p">);</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1aa3defe4a820a05f0e679006257a3c269"><span></span><span class="n">copy_surface_block_relationships</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
-    <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">surfaces</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">blocks</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
@@ -210,7 +154,7 @@
     <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">corners</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">corners</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
@@ -218,7 +162,7 @@
     <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">lines</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">lines</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
@@ -226,7 +170,7 @@
     <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">surfaces</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">surfaces</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ModelFrom</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelTo</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
@@ -234,7 +178,7 @@
     <span class="k">const</span> <span class="n">ModelFrom</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">ModelTo</span><span class="o">&amp;</span> <span class="n">to</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">blocks</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">blocks</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="p">,</span> <span class="k">typename</span> <span class="n">BuilderTo</span><span class="o">&gt;</span>
@@ -242,7 +186,7 @@
     <span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">from</span><span class="p">,</span>
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span><span class="p">,</span>
     <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a1211d6d4d0e64d30fd7b4beeebc85a78"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">mapping</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">mapping</span>
     <span class="p">);</span>
 
 <span class="p">}</span> <span class="c1">// namespace detail</span></pre>

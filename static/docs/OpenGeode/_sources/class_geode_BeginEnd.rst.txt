@@ -70,6 +70,7 @@ Begin and end methods for range-based iteration on custom range. See derived cla
 	class :ref:`ModifiableLineRange<doxid-classgeode_1_1_lines_1_1_modifiable_line_range>`;
 	class :ref:`ModifiableModelBoundaryRange<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range>`;
 	class :ref:`ModifiableSurfaceRange<doxid-classgeode_1_1_surfaces_1_1_modifiable_surface_range>`;
+	class :ref:`RelationRange<doxid-classgeode_1_1_relationships_1_1_relation_range>`;
 	class :ref:`SurfaceRange<doxid-classgeode_1_1_surfaces_1_1_surface_range>`;
 
 	template <typename Type>

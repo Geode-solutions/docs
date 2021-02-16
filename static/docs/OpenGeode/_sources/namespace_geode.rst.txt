@@ -71,6 +71,8 @@ namespace geode
 	class_geode_HybridSolidInput.rst
 	class_geode_HybridSolidOutput.rst
 	class_geode_IOFile.rst
+	class_geode_Identifier.rst
+	class_geode_IdentifierBuilder.rst
 	class_geode_IncrementOperator.rst
 	class_geode_InfiniteLine.rst
 	class_geode_Input.rst
@@ -84,6 +86,7 @@ namespace geode
 	class_geode_ModelBoundaries.rst
 	class_geode_ModelBoundariesBuilder.rst
 	class_geode_ModelBoundary.rst
+	class_geode_ModelCopyMapping.rst
 	class_geode_NNSearch.rst
 	class_geode_NamedType.rst
 	class_geode_OpenGeodeBRepInput.rst
@@ -409,6 +412,8 @@ Overview
 	class :ref:`HybridSolidOutput<doxid-classgeode_1_1_hybrid_solid_output>`;
 
 	class :ref:`IOFile<doxid-classgeode_1_1_i_o_file>`;
+	class :ref:`Identifier<doxid-classgeode_1_1_identifier>`;
+	class :ref:`IdentifierBuilder<doxid-classgeode_1_1_identifier_builder>`;
 
 	template <typename Type>
 	class :ref:`IncrementOperator<doxid-classgeode_1_1_increment_operator>`;
@@ -440,6 +445,8 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`;
+
+	class :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`;
 
 	template <index_t dimension>
 	class :ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`;
@@ -759,7 +766,7 @@ Overview
 		absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation
 		);
 
-	absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> opengeode_basic_api :target:`old2new_permutation<doxid-namespacegeode_1a6686c8d91d83f4068fdea688a415b5b2>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> opengeode_basic_api :target:`old2new_permutation<doxid-namespacegeode_1ab1356e215313d6b14a021c9a6b1c01cd>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 	constexpr unsigned char :target:`operator"" _uc<doxid-namespacegeode_1af0d0d274032ba787172bd59efededf50>` (unsigned long long arg);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a704add8ff33f82fa87b376794c8183d1>`(:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);
@@ -905,7 +912,7 @@ Overview
 		);
 
 	template <index_t dimension>
-	absl::FixedArray<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`morton_sort<doxid-namespacegeode_1a9ddcd20b5e963287fb1b87ee10e48750>`(absl::Span<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> points);
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`morton_sort<doxid-namespacegeode_1aebe1aca557efbb8134f19fcac7b67365>`(absl::Span<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> points);
 
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae9a3218d8a8d01e07d5fe03060e8b7e5>`(:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8aa2b23c4d6223ad5baa9bd94971837a>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);

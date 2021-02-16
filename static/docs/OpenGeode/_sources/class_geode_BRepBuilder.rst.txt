@@ -22,7 +22,8 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 	    public :ref:`geode::BlocksBuilder<doxid-classgeode_1_1_blocks_builder>`,
 	    public :ref:`geode::ModelBoundariesBuilder<doxid-classgeode_1_1_model_boundaries_builder>`,
 	    public :ref:`geode::TopologyBuilder<doxid-classgeode_1_1_topology_builder>`,
-	    public :ref:`geode::AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`
+	    public :ref:`geode::AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`,
+	    public :ref:`geode::IdentifierBuilder<doxid-classgeode_1_1_identifier_builder>`
 	{
 	public:
 		// construction
@@ -32,16 +33,11 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 
 		// methods
 	
-		:ref:`detail::ModelCopyMapping<doxid-classgeode_1_1detail_1_1_model_copy_mapping>` :target:`copy<doxid-classgeode_1_1_b_rep_builder_1a687670380d7d7beb607e723760b82e55>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
-		:ref:`detail::ModelCopyMapping<doxid-classgeode_1_1detail_1_1_model_copy_mapping>` :target:`copy_components<doxid-classgeode_1_1_b_rep_builder_1a5943fdecb561a7938d9a312804d86cbf>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+		:ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>` :target:`copy<doxid-classgeode_1_1_b_rep_builder_1a553edd504dd2175ed5651e53c65f7fed>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+		:ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>` :target:`copy_components<doxid-classgeode_1_1_b_rep_builder_1ab581eb1d2c677ea7ab77eaf954b52c25>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 	
-		void :target:`copy_component_relationships<doxid-classgeode_1_1_b_rep_builder_1a13fc2185d0d2ac4d1afcf34c85899089>`(
-			const :ref:`detail::ModelCopyMapping<doxid-classgeode_1_1detail_1_1_model_copy_mapping>`& mapping,
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep
-			);
-	
-		void :target:`copy_component_geometry<doxid-classgeode_1_1_b_rep_builder_1a57a8093f70d6199a953741b09b1db7cc>`(
-			const :ref:`detail::ModelCopyMapping<doxid-classgeode_1_1detail_1_1_model_copy_mapping>`& mapping,
+		void :target:`copy_component_geometry<doxid-classgeode_1_1_b_rep_builder_1aed5a8008cec019d6431f2781c8a3a5cb>`(
+			const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping,
 			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep
 			);
 	
@@ -161,6 +157,7 @@ Inherited Members
 		void :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a6c661d5abfdf4600024e03a1535b43d9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);
 		void :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_builder_1a785391408cff3d0af65ad246dd4acdf9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding);
 		void :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_builder_1a951ced98812449fedd537cec5b66ceec>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection);
+		void :ref:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping, const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships);
 		void :ref:`load_relationships<doxid-classgeode_1_1_relationships_builder_1a7901eef2fbf55303a0a3921477ffe450>`(absl::string_view directory);
 	
 		template <typename MeshComponent>
@@ -176,4 +173,7 @@ Inherited Members
 		void :ref:`update_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1ac1b5b74dbb4a5168e694d3666fce69b7>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id, absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new);
 		void :ref:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a666c161b0204f41f666cb8c61abd8221>`(absl::string_view directory);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a81453d117dc87b4f461021683ee42c61>`();
+		void :ref:`set_id<doxid-classgeode_1_1_identifier_builder_1a54f3f0e185bc0f387508a422048f6d70>`(:ref:`uuid<doxid-structgeode_1_1uuid>` id);
+		void :ref:`set_name<doxid-classgeode_1_1_identifier_builder_1a59ec84c189b0a4b3d8bd4918598df976>`(absl::string_view name);
+		void :ref:`load_identifier<doxid-classgeode_1_1_identifier_builder_1a53e44408c91930a686f25ba31f8c4931>`(absl::string_view directory);
 

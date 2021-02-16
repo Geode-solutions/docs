@@ -31,6 +31,7 @@ template class geode::PImpl
 
 		// methods
 	
+		void :target:`reset<doxid-classgeode_1_1_p_impl_1a9f7ecd7540719e7ef768843113e7568b>`();
 		T* :target:`operator -><doxid-classgeode_1_1_p_impl_1a14cf245237ee117197f3ed4a2c662432>` ();
 		const T* :target:`operator -><doxid-classgeode_1_1_p_impl_1aca5877da1c96be51f511326fd4a552ef>` () const;
 		T& :target:`operator *<doxid-classgeode_1_1_p_impl_1a0842bbe1d39456bb6f47257d460ec578>` ();

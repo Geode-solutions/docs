@@ -1,0 +1,36 @@
+.. index:: pair: class; geode::IdentifierBuilder
+.. _doxid-classgeode_1_1_identifier_builder:
+
+class geode::IdentifierBuilder
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <identifier_builder.h>
+	
+	class IdentifierBuilder
+	{
+	public:
+		// construction
+	
+		:target:`IdentifierBuilder<doxid-classgeode_1_1_identifier_builder_1ac0f9b658103977ab776170e3adac37a8>`(:ref:`Identifier<doxid-classgeode_1_1_identifier>`& identifier);
+
+		// methods
+	
+		void :target:`set_id<doxid-classgeode_1_1_identifier_builder_1a54f3f0e185bc0f387508a422048f6d70>`(:ref:`uuid<doxid-structgeode_1_1uuid>` id);
+		void :target:`set_name<doxid-classgeode_1_1_identifier_builder_1a59ec84c189b0a4b3d8bd4918598df976>`(absl::string_view name);
+		void :target:`load_identifier<doxid-classgeode_1_1_identifier_builder_1a53e44408c91930a686f25ba31f8c4931>`(absl::string_view directory);
+	};
+
+	// direct descendants
+
+	class :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`;
+	class :ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`;
+	class :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`;
