@@ -28,8 +28,8 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 	
 		void :target:`copy<doxid-classgeode_1_1_structural_model_builder_1af95e5991be9b7072e6505790a2360c9d>`(const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model);
 	
-		void :target:`copy_geological_components<doxid-classgeode_1_1_structural_model_builder_1ae80f2cbc47a77ac8170360dd4316ba96>`(
-			detail::ModelCopyMapping& mapping,
+		void :target:`copy_geological_components<doxid-classgeode_1_1_structural_model_builder_1acd847988747f65bdf0be9172c2ce3a4f>`(
+			ModelCopyMapping& mapping,
 			const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model
 			);
 	
