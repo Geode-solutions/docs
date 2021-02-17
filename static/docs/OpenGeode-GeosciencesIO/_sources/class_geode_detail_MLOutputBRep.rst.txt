@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::MLOutputBRep
+.. _doxid-classgeode_1_1detail_1_1_m_l_output_b_rep:
+
+class geode::detail::MLOutputBRep
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ml_output_brep.h>
+	
+	class MLOutputBRep: public BRepOutput
+	{
+	public:
+		// construction
+	
+		:target:`MLOutputBRep<doxid-classgeode_1_1detail_1_1_m_l_output_b_rep_1a4a666d167470ec76bce184980e0bd316>`(
+			const BRep& brep,
+			absl::string_view filename
+			);
+
+		// methods
+	
+		void :target:`write<doxid-classgeode_1_1detail_1_1_m_l_output_b_rep_1a9173595cffc1815ec7e1dc4021c9d660>`() const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_m_l_output_b_rep_1addb492fcc7d5ac94dc43d7a0c90e6ab9>`();
+	};

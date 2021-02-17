@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::detail::MLInput &#8212; Python  documentation</title>
+    <title>class geode::detail::MLOutputBRep &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::detail::MLOutputBRep" href="class_geode_detail_MLOutputBRep.html" />
-    <link rel="prev" title="class geode::detail::LSOInput" href="class_geode_detail_LSOInput.html" />
+    <link rel="next" title="template class geode::detail::MLOutputImpl" href="class_geode_detail_MLOutputImpl.html" />
+    <link rel="prev" title="class geode::detail::MLInput" href="class_geode_detail_MLInput.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,26 +34,26 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-detail-mlinput">
-<span id="doxid-classgeode-1-1detail-1-1-m-l-input"></span><span id="index-0"></span><h1>class geode::detail::MLInput</h1>
+  <div class="section" id="class-geode-detail-mloutputbrep">
+<span id="doxid-classgeode-1-1detail-1-1-m-l-output-b-rep"></span><span id="index-0"></span><h1>class geode::detail::MLOutputBRep</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;ml_input.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;ml_output_brep.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">MLInput</span><span class="p">:</span> <span class="k">public</span> <span class="n">StructuralModelInput</span>
+<span class="k">class</span> <span class="nl">MLOutputBRep</span><span class="p">:</span> <span class="k">public</span> <span class="n">BRepOutput</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-m-l-input-1a29f047ebf90a71883c9d6b94409d57eb"><span></span><span class="n">MLInput</span></span><span></span><span class="p">(</span>
-        <span class="n">StructuralModel</span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-m-l-output-b-rep-1a4a666d167470ec76bce184980e0bd316"><span></span><span class="n">MLOutputBRep</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
         <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-m-l-input-1a92c46998fe07741520f79ebeca0a0803"><span></span><span class="n">read</span></span><span></span><span class="p">();</span>
-    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-m-l-input-1ae4e122d968b08d9d21d8efcde9e5b836"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-m-l-output-b-rep-1a9173595cffc1815ec7e1dc4021c9d660"><span></span><span class="n">write</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-m-l-output-b-rep-1addb492fcc7d5ac94dc43d7a0c90e6ab9"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -71,7 +71,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_detail_MLInput.rst.txt"
+      <a href="_sources/class_geode_detail_MLOutputBRep.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

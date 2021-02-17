@@ -53,7 +53,12 @@
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_LSOInput.html#doxid-classgeode-1-1detail-1-1-l-s-o-input"><span class="std std-ref">LSOInput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_MLInput.html#doxid-classgeode-1-1detail-1-1-m-l-input"><span class="std std-ref">MLInput</span></a><span></span><span class="p">;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_detail_MLOutput.html#doxid-classgeode-1-1detail-1-1-m-l-output"><span class="std std-ref">MLOutput</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_MLOutputBRep.html#doxid-classgeode-1-1detail-1-1-m-l-output-b-rep"><span class="std std-ref">MLOutputBRep</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_MLOutputImpl.html#doxid-classgeode-1-1detail-1-1-m-l-output-impl"><span class="std std-ref">MLOutputImpl</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_MLOutputStructuralModel.html#doxid-classgeode-1-1detail-1-1-m-l-output-structural-model"><span class="std std-ref">MLOutputStructuralModel</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_PLOutput.html#doxid-classgeode-1-1detail-1-1-p-l-output"><span class="std std-ref">PLOutput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_TSInput.html#doxid-classgeode-1-1detail-1-1-t-s-input"><span class="std std-ref">TSInput</span></a><span></span><span class="p">;</span>
 
@@ -107,6 +112,8 @@
     <span class="p">);</span>
 
 <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_detail_TSurfData.html#doxid-structgeode-1-1detail-1-1-t-surf-data"><span class="std std-ref">TSurfData</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a25af5d9eb259f502dee11081cfdbd3af"><span></span><span class="n">read_tsurf</span></span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ifstream</span><span class="o">&amp;</span> <span class="n">file</span><span class="p">);</span>
+<span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ac6a8b3f9f70d9d7471c9275cb2532a2c"><span></span><span class="n">check_brep_polygons</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+<span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">PolygonEdge</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a67da0f0d36a6f7d549ff339e54693b03"><span></span><span class="n">get_one_border_edge</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 
 <span class="p">}</span> <span class="c1">// namespace detail</span></pre>
 </div>

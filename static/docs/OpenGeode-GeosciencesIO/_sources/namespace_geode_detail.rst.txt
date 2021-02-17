@@ -15,7 +15,9 @@ namespace geode::detail
 	struct_geode_detail_TSurfData.rst
 	class_geode_detail_LSOInput.rst
 	class_geode_detail_MLInput.rst
-	class_geode_detail_MLOutput.rst
+	class_geode_detail_MLOutputBRep.rst
+	class_geode_detail_MLOutputImpl.rst
+	class_geode_detail_MLOutputStructuralModel.rst
 	class_geode_detail_PLOutput.rst
 	class_geode_detail_TSInput.rst
 
@@ -41,7 +43,12 @@ namespace geode::detail
 
 	class :ref:`LSOInput<doxid-classgeode_1_1detail_1_1_l_s_o_input>`;
 	class :ref:`MLInput<doxid-classgeode_1_1detail_1_1_m_l_input>`;
-	class :ref:`MLOutput<doxid-classgeode_1_1detail_1_1_m_l_output>`;
+	class :ref:`MLOutputBRep<doxid-classgeode_1_1detail_1_1_m_l_output_b_rep>`;
+
+	template <typename Model>
+	class :ref:`MLOutputImpl<doxid-classgeode_1_1detail_1_1_m_l_output_impl>`;
+
+	class :ref:`MLOutputStructuralModel<doxid-classgeode_1_1detail_1_1_m_l_output_structural_model>`;
 	class :ref:`PLOutput<doxid-classgeode_1_1detail_1_1_p_l_output>`;
 	class :ref:`TSInput<doxid-classgeode_1_1detail_1_1_t_s_input>`;
 
@@ -95,5 +102,7 @@ namespace geode::detail
 		);
 
 	absl::optional<:ref:`TSurfData<doxid-structgeode_1_1detail_1_1_t_surf_data>`> :target:`read_tsurf<doxid-namespacegeode_1_1detail_1a25af5d9eb259f502dee11081cfdbd3af>`(std::ifstream& file);
+	bool :target:`check_brep_polygons<doxid-namespacegeode_1_1detail_1ac6a8b3f9f70d9d7471c9275cb2532a2c>`(const BRep& brep);
+	absl::optional<PolygonEdge> :target:`get_one_border_edge<doxid-namespacegeode_1_1detail_1a67da0f0d36a6f7d549ff339e54693b03>`(const SurfaceMesh3D& mesh);
 
 	} // namespace detail
