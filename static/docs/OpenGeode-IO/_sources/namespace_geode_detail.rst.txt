@@ -23,6 +23,7 @@ namespace geode::detail
 	class_geode_detail_TriangleOutput.rst
 	class_geode_detail_VTKInputImpl.rst
 	class_geode_detail_VTKOutputImpl.rst
+	class_geode_detail_VTPEdgedCurveOutput.rst
 	class_geode_detail_VTPInput.rst
 	class_geode_detail_VTPOutputImpl.rst
 	class_geode_detail_VTPPolygonalOutput.rst
@@ -68,6 +69,7 @@ namespace geode::detail
 	template <typename Mesh>
 	class :ref:`VTKOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_output_impl>`;
 
+	class :ref:`VTPEdgedCurveOutput<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output>`;
 	class :ref:`VTPInput<doxid-classgeode_1_1detail_1_1_v_t_p_input>`;
 
 	template <typename Mesh>
