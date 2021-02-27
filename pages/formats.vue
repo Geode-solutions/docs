@@ -30,6 +30,12 @@ export default {
         out: false
       },
       {
+        extension: 'Triangle (.ele, .node, .neigh)',
+        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface2D</code></a>",
+        in: true,
+        out: true
+      },
+      {
         extension: '.stl',
         cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
         in: true,
@@ -67,19 +73,13 @@ export default {
       },
       {
         extension: '.vtp (ascii only)',
-        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
         in: false,
         out: true
       },
       {
         extension: '.vtu (ascii, binary and encoded appendedData supported)',
-        cpp: "<a href='/opengeode?page=class_geode_PolyhedralSolid.html'><code>PolyhedralSolid3D</code></a>",
-        in: true,
-        out: false
-      },
-      {
-        extension: '.vtu (ascii, binary and encoded appendedData supported)',
-        cpp: "<a href='/opengeode?page=class_geode_TetrahedralSolid.html'><code>TetrahedralSolid3D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_PolyhedralSolid.html'><code>PolyhedralSolid3D</code></a><br/><a href='/opengeode?page=class_geode_TetrahedralSolid.html'><code>TetrahedralSolid3D</code></a>",
         in: true,
         out: false
       },
@@ -101,6 +101,12 @@ export default {
         extension: '.ml',
         cpp: "<a href='/opengeode-geosciences?page=class_geode_StructuralModel.html'><code>StructuralModel</code></a>",
         in: true,
+        out: true
+      },
+      {
+        extension: '.ml',
+        cpp: "<a href='/opengeode-geosciences?page=class_geode_BRep.html'><code>BRep</code></a>",
+        in: false,
         out: true
       },
       {
