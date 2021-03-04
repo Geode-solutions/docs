@@ -74,6 +74,7 @@ Inherited Members
 		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :ref:`type_name_static<doxid-classgeode_1_1_graph_1a5d19443288366fe083b601a044459ada>`();
 		std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`> :ref:`clone<doxid-classgeode_1_1_graph_1ae0c3c2f45fc478d3f8d187a93dbf3c34>`() const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_vertex<doxid-classgeode_1_1_graph_1ad59eacb78c03b6f5d8858eb7f597f74d>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
+		std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :ref:`edge_vertices<doxid-classgeode_1_1_graph_1a0fa4addccbedf6647585e0b0501d1563>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_edges<doxid-classgeode_1_1_graph_1a7ae6a6d4f1f52849125f55f8012d9819>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_graph_1a4958092d4cc40efc7f1ed612c2a8727e>`() const;
 		const :ref:`EdgesAroundVertex<doxid-namespacegeode_1aab3c9dc52d762219dcc9137475590210>`& :ref:`edges_around_vertex<doxid-classgeode_1_1_graph_1ac1d310bffb226e03046ab4227809c422>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
