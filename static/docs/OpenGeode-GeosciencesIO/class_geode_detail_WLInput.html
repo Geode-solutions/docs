@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::detail::TSInput &#8212; Python  documentation</title>
+    <title>class geode::detail::WLInput &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::detail::WLInput" href="class_geode_detail_WLInput.html" />
-    <link rel="prev" title="class geode::detail::PLOutput" href="class_geode_detail_PLOutput.html" />
+    <link rel="prev" title="class geode::detail::TSInput" href="class_geode_detail_TSInput.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,26 +33,26 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-detail-tsinput">
-<span id="doxid-classgeode-1-1detail-1-1-t-s-input"></span><span id="index-0"></span><h1>class geode::detail::TSInput</h1>
+  <div class="section" id="class-geode-detail-wlinput">
+<span id="doxid-classgeode-1-1detail-1-1-w-l-input"></span><span id="index-0"></span><h1>class geode::detail::WLInput</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;ts_input.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;wl_input.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">TSInput</span><span class="p">:</span> <span class="k">public</span> <span class="n">TriangulatedSurfaceInput</span><span class="o">&lt;</span> <span class="mi">3</span> <span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">WLInput</span><span class="p">:</span> <span class="k">public</span> <span class="n">EdgedCurveInput</span><span class="o">&lt;</span> <span class="mi">3</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-t-s-input-1a80173f18903001c3605340a2edc4bb4e"><span></span><span class="n">TSInput</span></span><span></span><span class="p">(</span>
-        <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-w-l-input-1ac2b33534c1c8e5df42b6781fbf7bcf1a"><span></span><span class="n">WLInput</span></span><span></span><span class="p">(</span>
+        <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">curve</span><span class="p">,</span>
         <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-t-s-input-1a66a8c10db9a4dae2d38faa56c26a5987"><span></span><span class="n">do_read</span></span><span></span><span class="p">();</span>
-    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-t-s-input-1a66e65c5d3d73a9ba22958e80e8e8d703"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-w-l-input-1ac7e8414179155396a36e820ef522ec3c"><span></span><span class="n">do_read</span></span><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-w-l-input-1af68f18ceddbe66208a3c3ad3f0ec8632"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -71,7 +70,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_detail_TSInput.rst.txt"
+      <a href="_sources/class_geode_detail_WLInput.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

@@ -20,6 +20,7 @@ namespace geode::detail
 	class_geode_detail_MLOutputStructuralModel.rst
 	class_geode_detail_PLOutput.rst
 	class_geode_detail_TSInput.rst
+	class_geode_detail_WLInput.rst
 
 
 
@@ -51,6 +52,7 @@ namespace geode::detail
 	class :ref:`MLOutputStructuralModel<doxid-classgeode_1_1detail_1_1_m_l_output_structural_model>`;
 	class :ref:`PLOutput<doxid-classgeode_1_1detail_1_1_p_l_output>`;
 	class :ref:`TSInput<doxid-classgeode_1_1detail_1_1_t_s_input>`;
+	class :ref:`WLInput<doxid-classgeode_1_1detail_1_1_w_l_input>`;
 
 	// global functions
 
