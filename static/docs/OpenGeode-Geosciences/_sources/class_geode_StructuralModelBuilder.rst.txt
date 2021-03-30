@@ -36,7 +36,7 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 		const uuid& :target:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a69e6317754624bf944beb6d2c25172af>`();
 		const uuid& :target:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a217c78dec273295715bcf273df22a1ce>`(typename Fault3D::FAULT_TYPE type);
 	
-		void :target:`add_surface_in_fault<doxid-classgeode_1_1_structural_model_builder_1a8f9c2b1741226fe314168ff6c6a10fdf>`(
+		index_t :target:`add_surface_in_fault<doxid-classgeode_1_1_structural_model_builder_1a8165157896d097edaac0347bfcc0d77c>`(
 			const Surface3D& surface,
 			const Fault3D& fault
 			);
@@ -45,7 +45,7 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 		const uuid& :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a59d799086e367948498737af391802aa>`();
 		const uuid& :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a3fa06395f298cf9a5fefb73eb2466b7e>`(typename Horizon3D::HORIZON_TYPE type);
 	
-		void :target:`add_surface_in_horizon<doxid-classgeode_1_1_structural_model_builder_1aff9886fb2e26ea33a0d8c7efad11d05d>`(
+		index_t :target:`add_surface_in_horizon<doxid-classgeode_1_1_structural_model_builder_1a24a3d2029666927f9aa5affa75beaacf>`(
 			const Surface3D& surface,
 			const Horizon3D& horizon
 			);
@@ -53,7 +53,7 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 		void :target:`remove_horizon<doxid-classgeode_1_1_structural_model_builder_1aae160d2bc57bcbee1fbdd46cf30945b4>`(const Horizon3D& horizon);
 		const uuid& :target:`add_fault_block<doxid-classgeode_1_1_structural_model_builder_1aa5569e237610918d10bdc622f44098da>`();
 	
-		void :target:`add_block_in_fault_block<doxid-classgeode_1_1_structural_model_builder_1a85a5a3fc5b8334904ad25dafe19ddfcc>`(
+		index_t :target:`add_block_in_fault_block<doxid-classgeode_1_1_structural_model_builder_1ad3ea04f156bb10e69a6128a0f0fa13cc>`(
 			const Block3D& block,
 			const FaultBlock3D& fault_block
 			);
@@ -61,7 +61,7 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 		void :target:`remove_fault_block<doxid-classgeode_1_1_structural_model_builder_1adb970268a91a7a8b330eaf9e5d2430fc>`(const FaultBlock3D& fault_block);
 		const uuid& :target:`add_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1adecbb31da72ad01624123ff31baadd62>`();
 	
-		void :target:`add_block_in_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1a55d8ebbe2178c5bdb886a478be3a6662>`(
+		index_t :target:`add_block_in_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1adaf88250bb9f24f92c03e25bab94f93c>`(
 			const Block3D& block,
 			const StratigraphicUnit3D& stratigraphic_unit
 			);
