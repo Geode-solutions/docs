@@ -17,6 +17,8 @@ namespace geode::detail
 	class_geode_detail_OBJTriangulatedOutput.rst
 	class_geode_detail_PLYInput.rst
 	class_geode_detail_PLYOutput.rst
+	class_geode_detail_SMESHCurveInput.rst
+	class_geode_detail_SMESHInputImpl.rst
 	class_geode_detail_SMESHTriangulatedInput.rst
 	class_geode_detail_STLInput.rst
 	class_geode_detail_STLOutput.rst
@@ -59,6 +61,11 @@ namespace geode::detail
 	class :ref:`OBJTriangulatedOutput<doxid-classgeode_1_1detail_1_1_o_b_j_triangulated_output>`;
 	class :ref:`PLYInput<doxid-classgeode_1_1detail_1_1_p_l_y_input>`;
 	class :ref:`PLYOutput<doxid-classgeode_1_1detail_1_1_p_l_y_output>`;
+	class :ref:`SMESHCurveInput<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_curve_input>`;
+
+	template <typename Mesh, typename Builder, index_t element>
+	class :ref:`SMESHInputImpl<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_input_impl>`;
+
 	class :ref:`SMESHTriangulatedInput<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_triangulated_input>`;
 	class :ref:`STLInput<doxid-classgeode_1_1detail_1_1_s_t_l_input>`;
 	class :ref:`STLOutput<doxid-classgeode_1_1detail_1_1_s_t_l_output>`;

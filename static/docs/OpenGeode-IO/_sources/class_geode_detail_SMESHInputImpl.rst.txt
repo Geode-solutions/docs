@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::SMESHInputImpl
+.. _doxid-classgeode_1_1detail_1_1_s_m_e_s_h_input_impl:
+
+template class geode::detail::SMESHInputImpl
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <smesh_input.h>
+	
+	template <typename Mesh, typename Builder, index_t element>
+	class SMESHInputImpl
+	{
+	public:
+		// construction
+	
+		:target:`SMESHInputImpl<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_input_impl_1a913f5c8286a269ed6f4440b0dbde8e48>`(
+			absl::string_view filename,
+			Mesh& mesh
+			);
+
+		// methods
+	
+		void :target:`read_file<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_input_impl_1a2084d66612960545ba1fd3f4f3f18106>`();
+	};
