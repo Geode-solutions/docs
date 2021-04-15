@@ -833,6 +833,12 @@ Overview
 	:target:`ALIAS_2D<doxid-namespacegeode_1a8ec76900496f8c6e59d65c6ad941af27>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
 
 	template <index_t dimension>
+	double :ref:`point_point_distance<doxid-namespacegeode_1a4580257fb6522eceb29536b03fb1c21a>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point0,
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point1
+		);
+
+	template <index_t dimension>
 	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_segment_distance<doxid-namespacegeode_1aa93b0c934f3fb83dd110e44bedfd5a30>`(
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
@@ -957,6 +963,7 @@ Overview
 		);
 
 	double opengeode_geometry_api :ref:`tetra_signed_volume<doxid-namespacegeode_1a032f45054900e005dabe262e5736e9e6>`(const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra);
+	double opengeode_geometry_api :ref:`tetra_volume<doxid-namespacegeode_1abccda754431fa0b0a8cf72b4b9bf8b72>`(const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a69bca61d0800722900c8332a1452e3c8>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	void opengeode_mesh_api :target:`register_geode_builder<doxid-namespacegeode_1a618a67e60c63449f834b7f8fe67808e0>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
@@ -1553,6 +1560,20 @@ Register all the information needed by Bitsery to deserialize the objects in the
 
 		- The context where to register this information.
 
+.. index:: pair: function; point_point_distance
+.. _doxid-namespacegeode_1a4580257fb6522eceb29536b03fb1c21a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	double point_point_distance(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point0,
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point1
+		)
+
+Compute the Euclidean distance between a two points
+
 .. index:: pair: function; point_segment_distance
 .. _doxid-namespacegeode_1aa93b0c934f3fb83dd110e44bedfd5a30:
 
@@ -2143,6 +2164,16 @@ Compute the signed area of a 3D triangle
 	double opengeode_geometry_api tetra_signed_volume(const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra)
 
 Compute the signed volume of a tetrahedron
+
+.. index:: pair: function; tetra_volume
+.. _doxid-namespacegeode_1abccda754431fa0b0a8cf72b4b9bf8b72:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	double opengeode_geometry_api tetra_volume(const :ref:`Tetra<doxid-classgeode_1_1_tetra>`& tetra)
+
+Compute the (positive) volume of a tetrahedron
 
 .. index:: pair: function; register_mesh_serialize_pcontext
 .. _doxid-namespacegeode_1aa05925dcfcae1d0f42d06f0f9a8dfb8a:
