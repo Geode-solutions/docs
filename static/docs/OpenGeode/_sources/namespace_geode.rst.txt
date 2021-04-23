@@ -232,7 +232,8 @@ Overview
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshImplTag<doxid-structgeode_1_1_mesh_impl_tag>`> :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`> :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 4> :target:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`;
-	typedef absl::InlinedVector<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`, 4> :target:`PolyhedronFacetsOnBorder<doxid-namespacegeode_1aac1849b4c331eb722bf504d25370c912>`;
+	typedef absl::InlinedVector<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`, 4> :target:`PolyhedronFacets<doxid-namespacegeode_1a118116e866a37dbbadecebb92207436d>`;
+	typedef :ref:`PolyhedronFacets<doxid-namespacegeode_1a118116e866a37dbbadecebb92207436d>` :target:`PolyhedronFacetsOnBorder<doxid-namespacegeode_1af2f63049603178fd6a0be3783c5487e0>`;
 	typedef absl::InlinedVector<:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`, 20> :target:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 10> :target:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :target:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>`;
