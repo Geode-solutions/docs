@@ -107,6 +107,7 @@ Inherited Members
 	
 		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a3c64897434c58970bbf1e9d05d8ef826>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1acf73eb0cf305960a2f9759198332caa0>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
+		virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1a3067852c0b40b0d60ae850a431f09261>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` first_polyhedron) const;
 		:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>` :ref:`polyhedra_from_facet<doxid-classgeode_1_1_solid_mesh_1aacd59a2158aeb1e465367f666e61c785>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices) const;
 		bool :ref:`are_edges_enabled<doxid-classgeode_1_1_solid_mesh_1ad7941fc3afe94462318f349a58ba63ab>`() const;
 		void :ref:`enable_edges<doxid-classgeode_1_1_solid_mesh_1a7805a82b740b482660ea134b84f0f8a1>`() const;
