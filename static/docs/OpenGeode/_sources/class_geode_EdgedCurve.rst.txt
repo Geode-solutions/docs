@@ -31,6 +31,7 @@ Overview
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_edged_curve_1a9533f46c0373592ba3ee5326f0a90f22>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		double :target:`edge_length<doxid-classgeode_1_1_edged_curve_1ae91b29fbd20263e1e172299ab1e7a9c5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`edge_barycenter<doxid-classgeode_1_1_edged_curve_1ae84704d93ee7a423cb6befcd2bdc29fd>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		:ref:`Segment<doxid-classgeode_1_1_segment>`<dimension> :target:`segment<doxid-classgeode_1_1_edged_curve_1aa2a1f1c337af06e5ce035dca2828f1e1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_edged_curve_1af61e77f36c3fb74706fb75bf2e76de77>`() const;
 	};
 

@@ -140,4 +140,5 @@ Inherited Members
 		static std::unique_ptr<:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>> :ref:`create<doxid-classgeode_1_1_triangulated_surface_1af15169fb9da442c5b7af2edfc566e476>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
 		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :ref:`type_name_static<doxid-classgeode_1_1_triangulated_surface_1a4b0ab5091f3349cfb93f6fe33fa96abd>`();
 		std::unique_ptr<:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>> :ref:`clone<doxid-classgeode_1_1_triangulated_surface_1aa5174fad7b3a192210adf98fd2aadc43>`() const;
+		:ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension> :ref:`triangle<doxid-classgeode_1_1_triangulated_surface_1afbe26d8e8f4760609a59fb63629b8daa>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` triangle_id) const;
 
