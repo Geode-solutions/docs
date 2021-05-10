@@ -4,7 +4,7 @@
       {{ title }}
     </h2>
     <v-simple-table class="body-1">
-      <template v-slot:default>
+      <template #default>
         <thead>
           <tr>
             <th>File format</th>

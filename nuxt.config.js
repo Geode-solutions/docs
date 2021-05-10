@@ -22,6 +22,7 @@ export default {
       }
     ]
   },
+  target: 'static',
   /*
   ** Customize the progress-bar color
   */

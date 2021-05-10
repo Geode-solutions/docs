@@ -75,4 +75,7 @@ code {
   color: var(--v-primary-base) !important;
   white-space: pre;
 }
+code.example {
+  display: block;
+}
 </style> 

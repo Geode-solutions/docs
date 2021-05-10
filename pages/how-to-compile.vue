@@ -1,209 +1,211 @@
 <template>
-  <v-layout column>
-    <h1 class="display-4 ma-5">
-      How to compile OpenGeode
-    </h1>
+  <v-row>
+    <v-col>
+      <h1 class="display-4 ma-5">
+        How to compile OpenGeode
+      </h1>
 
-    <h2 :class="section">
-      What do you need
-    </h2>
+      <h2 :class="section">
+        What do you need
+      </h2>
 
-    <h3 :class="subsection">
-      OS
-    </h3>
+      <h3 :class="subsection">
+        OS
+      </h3>
 
-    <p :class="paragraph">
-      OpenGeode is supported and continuously tested on several platforms:
-    </p>
+      <p :class="paragraph">
+        OpenGeode is supported and continuously tested on several platforms:
+      </p>
 
-    <ul :class="paragraph">
-      <li>Windows - Visual Studio 2017</li>
-      <li>Ubuntu 18.04</li>
-      <li>RHEL 7 / CentOS 7</li>
-      <li>macOS X Catalina (10.15)</li>
-    </ul>
+      <ul :class="paragraph">
+        <li>Windows - Visual Studio 2017</li>
+        <li>Ubuntu 18.04</li>
+        <li>RHEL 7 / CentOS 7</li>
+        <li>macOS X Catalina (10.15)</li>
+      </ul>
 
-    <p :class="paragraph">
-      Pre-compiled binaries on these platforms are also provided.
-      <a
-        href="/where-to-get-code"
-      >This page</a> describes where to download these binaries.
-    </p>
+      <p :class="paragraph">
+        Pre-compiled binaries on these platforms are also provided.
+        <a
+          href="/where-to-get-code"
+        >This page</a> describes where to download these binaries.
+      </p>
     
-    <h3 :class="subsection">
-      Development tools
-    </h3>
+      <h3 :class="subsection">
+        Development tools
+      </h3>
 
-    <h3 :class="subsubsection">
-      CMake
-    </h3>
+      <h3 :class="subsubsection">
+        CMake
+      </h3>
 
-    <p :class="paragraph">
-      OpenGeode comes with a CMake configuration file.
-      You can modify three items:
-    </p>
+      <p :class="paragraph">
+        OpenGeode comes with a CMake configuration file.
+        You can modify three items:
+      </p>
 
-    <ul :class="paragraph">
-      <li>
-        <code>CMAKE_BUILD_TYPE</code>: choose build configuration (Release, Debug). By default Release.
-      </li>
-      <li>
-        <code>OPENGEODE_WITH_TESTS</code>: switch on/off the OpenGeode test environment.
-      </li>
-      <li>
-        <code>OPENGEODE_WITH_PYTHON</code>: switch on/off the OpenGeode Python binding (see <a
-          href="/how-to-use-binding"
-        >this page</a>  for usage).
-      </li>
-    </ul>
+      <ul :class="paragraph">
+        <li>
+          <code>CMAKE_BUILD_TYPE</code>: choose build configuration (Release, Debug). By default Release.
+        </li>
+        <li>
+          <code>OPENGEODE_WITH_TESTS</code>: switch on/off the OpenGeode test environment.
+        </li>
+        <li>
+          <code>OPENGEODE_WITH_PYTHON</code>: switch on/off the OpenGeode Python binding (see <a
+            href="/how-to-use-binding"
+          >this page</a>  for usage).
+        </li>
+      </ul>
 
-    <p
-      :class="paragraph"
-    >
-      Your version of CMake should be at least 3.14.
-    </p>
+      <p
+        :class="paragraph"
+      >
+        Your version of CMake should be at least 3.14.
+      </p>
 
-    <h3 :class="subsubsection">
-      Compiler
-    </h3>
+      <h3 :class="subsubsection">
+        Compiler
+      </h3>
 
-    <p :class="paragraph">
-      On Windows, we recommend to use Visual Studio 15 2017. On Linux, you can use gcc/g++ as compiler. You need a version equal to or higher than 4.8.
-      On macOS, install Mac OS "Command Line Developer Tools" and use clang. On macOS you can also use Xcode as an IDE which uses clang.
-    </p>
+      <p :class="paragraph">
+        On Windows, we recommend to use Visual Studio 15 2017. On Linux, you can use gcc/g++ as compiler. You need a version equal to or higher than 4.8.
+        On macOS, install Mac OS "Command Line Developer Tools" and use clang. On macOS you can also use Xcode as an IDE which uses clang.
+      </p>
     
-    <h3 :class="subsubsection">
-      Git
-    </h3>
+      <h3 :class="subsubsection">
+        Git
+      </h3>
     
-    <p :class="paragraph">
-      You need git to clone OpenGeode's dependancy repositories during configuration.
-    </p>
+      <p :class="paragraph">
+        You need git to clone OpenGeode's dependancy repositories during configuration.
+      </p>
 
-    <h2 :class="section">
-      OpenGeode configuration and compilation
-    </h2>
+      <h2 :class="section">
+        OpenGeode configuration and compilation
+      </h2>
 
-    <p :class="paragraph">
-      The configuration and compilation of OpenGeode are very simple.
-      They can be achieved in few steps depending on your platform.
-    </p>
+      <p :class="paragraph">
+        The configuration and compilation of OpenGeode are very simple.
+        They can be achieved in few steps depending on your platform.
+      </p>
 
-    <h3 :class="subsection">
-      On Windows
-    </h3>
+      <h3 :class="subsection">
+        On Windows
+      </h3>
 
-    <h4 :class="subsubsection">
-      Configuration
-    </h4>
+      <h4 :class="subsubsection">
+        Configuration
+      </h4>
 
-    <ol :class="paragraph">
-      <li>Launch CMake interface.</li>
-      <li>Set where is the OpenGeode source code and where to build the binaries as path/to/OpenGeode/build.</li>
-      <li>Choose your configuration options. Take care to choose as current generator `Visual Studio 15 2017`.</li>
-      <li>Launch the configure and generate option.</li>
-    </ol>
+      <ol :class="paragraph">
+        <li>Launch CMake interface.</li>
+        <li>Set where is the OpenGeode source code and where to build the binaries as path/to/OpenGeode/build.</li>
+        <li>Choose your configuration options. Take care to choose as current generator `Visual Studio 15 2017`.</li>
+        <li>Launch the configure and generate option.</li>
+      </ol>
 
-    <h4 :class="subsubsection">
-      Compilation
-    </h4>
+      <h4 :class="subsubsection">
+        Compilation
+      </h4>
 
-    <ol :class="paragraph">
-      <li>Click on `Open Project` in the CMake interface. It opens Visual Studio 2017 and the generated solution.</li>
-      <li>Build the solution.</li>
-    </ol>
+      <ol :class="paragraph">
+        <li>Click on `Open Project` in the CMake interface. It opens Visual Studio 2017 and the generated solution.</li>
+        <li>Build the solution.</li>
+      </ol>
 
-    <p :class="paragraph">
-      That's all! You are ready to work with OpenGeode.
-    </p>
+      <p :class="paragraph">
+        That's all! You are ready to work with OpenGeode.
+      </p>
 
-    <h3 :class="subsection">
-      On Linux
-    </h3>
+      <h3 :class="subsection">
+        On Linux
+      </h3>
 
-    <h4 :class="subsubsection">
-      Configuration
-    </h4>
+      <h4 :class="subsubsection">
+        Configuration
+      </h4>
 
-    <ol :class="paragraph">
-      <li>Open a terminal where is the OpenGeode source code.</li>
-      <li>
-        Create a `build` directory:
-        <code>mkdir build; cd build</code>
-      </li>
-      <li>
-        Run cmake:
-        <code>cmake ..</code> for default configuration or
-        <code>ccmake ..</code> or
-        <code>cmake-gui ..</code> to modify configuration options.
-      </li>
-    </ol>
+      <ol :class="paragraph">
+        <li>Open a terminal where is the OpenGeode source code.</li>
+        <li>
+          Create a `build` directory:
+          <code>mkdir build; cd build</code>
+        </li>
+        <li>
+          Run cmake:
+          <code>cmake ..</code> for default configuration or
+          <code>ccmake ..</code> or
+          <code>cmake-gui ..</code> to modify configuration options.
+        </li>
+      </ol>
 
-    <h4 :class="subsubsection">
-      Compilation
-    </h4>
+      <h4 :class="subsubsection">
+        Compilation
+      </h4>
 
-    <ol :class="paragraph">
-      <li>Run `make` command in the build directory.</li>
-    </ol>
+      <ol :class="paragraph">
+        <li>Run `make` command in the build directory.</li>
+      </ol>
 
-    <p :class="paragraph">
-      Now you are ready to work with OpenGeode.
-    </p>
+      <p :class="paragraph">
+        Now you are ready to work with OpenGeode.
+      </p>
 
-    <h3 :class="subsection">
-      On macOS
-    </h3>
+      <h3 :class="subsection">
+        On macOS
+      </h3>
 
-    <h4 :class="subsubsection">
-      Configuration
-    </h4>
+      <h4 :class="subsubsection">
+        Configuration
+      </h4>
 
-    <ol :class="paragraph">
-      <li>Open a terminal where is the OpenGeode source code.</li>
-      <li>
-        Create a `build` directory:
-        <code>mkdir build; cd build</code>
-      </li>
-      <li>
-        Run cmake:
-        <code>cmake ..</code> for default configuration or
-        <code>ccmake ..</code> or
-        <code>cmake-gui ..</code> to modify configuration options.
-      </li>
-    </ol>
+      <ol :class="paragraph">
+        <li>Open a terminal where is the OpenGeode source code.</li>
+        <li>
+          Create a `build` directory:
+          <code>mkdir build; cd build</code>
+        </li>
+        <li>
+          Run cmake:
+          <code>cmake ..</code> for default configuration or
+          <code>ccmake ..</code> or
+          <code>cmake-gui ..</code> to modify configuration options.
+        </li>
+      </ol>
 
-    <p
-      :class="paragraph"
-    >
-      If you want to use Xcode, we suggest you to use CMake GUI interface to select Xcode as generator (or use cmake options "-G Xcode" command lines).
-    </p>
+      <p
+        :class="paragraph"
+      >
+        If you want to use Xcode, we suggest you to use CMake GUI interface to select Xcode as generator (or use cmake options "-G Xcode" command lines).
+      </p>
 
-    <h4 :class="subsubsection">
-      Compilation without Xcode (Clang in command line)
-    </h4>
+      <h4 :class="subsubsection">
+        Compilation without Xcode (Clang in command line)
+      </h4>
 
-    <ol :class="paragraph">
-      <li>Run `make` command in the build directory.</li>
-    </ol>
+      <ol :class="paragraph">
+        <li>Run `make` command in the build directory.</li>
+      </ol>
 
-    <h4 :class="subsubsection">
-      Compilation with Xcode
-    </h4>
+      <h4 :class="subsubsection">
+        Compilation with Xcode
+      </h4>
 
-    <ol :class="paragraph">
-      <li>Open the project "SuperBuild.xcodeproj" with Xcode: `open SuperBuild.xcodeproj`, and then compile using the graphical interface.</li>
-    </ol>
+      <ol :class="paragraph">
+        <li>Open the project "SuperBuild.xcodeproj" with Xcode: `open SuperBuild.xcodeproj`, and then compile using the graphical interface.</li>
+      </ol>
 
-    <p :class="paragraph">
-      Or, you can directly compile with the terminal: `xcodebuild -project SuperBuild.xcodeproj -alltargets -configuration Release`.
-      Replace "Release" by "Debug" to compile in debug mode.
-    </p>
+      <p :class="paragraph">
+        Or, you can directly compile with the terminal: `xcodebuild -project SuperBuild.xcodeproj -alltargets -configuration Release`.
+        Replace "Release" by "Debug" to compile in debug mode.
+      </p>
 
-    <p :class="paragraph">
-      Now you are ready to work with OpenGeode.
-    </p>
-  </v-layout>
+      <p :class="paragraph">
+        Now you are ready to work with OpenGeode.
+      </p>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
