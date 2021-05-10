@@ -1,10 +1,11 @@
 <template>
-  <v-layout column fill-height>
-    <v-flex text-xs-center>
+  <v-row fill-height>
+    <v-col align="center">
       <v-btn @click="goIndex">
         Back to index
       </v-btn>
       <span class="display-1 ml-5">{{ project }} documentation</span>
+      <v-col />
       <iframe 
         ref="docFrame"
         width="100%"
@@ -12,8 +13,8 @@
         scrolling="no"
         :src="index"
       />
-    </v-flex>
-  </v-layout>
+    </v-col>
+  </v-row>
 </template>
 
 <script>

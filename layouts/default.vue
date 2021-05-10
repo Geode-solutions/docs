@@ -3,7 +3,7 @@
     <v-navigation-drawer stateless app clipped permanent>
       <v-list nav>
         <template v-for="(item, index) in items">
-          <v-subheader v-if="item.divider" :key="index">
+          <v-subheader v-if="item.divider" :key="index" class="primary--text">
             {{ item.divider }}
           </v-subheader>
           <v-list-item v-else :key="index" link nuxt :to="item.to" color="primary">
@@ -77,5 +77,8 @@ code {
 }
 code.example {
   display: block;
+}
+.v-card__text, .v-card__title {
+  word-break: normal; /* maybe !important  */
 }
 </style> 
