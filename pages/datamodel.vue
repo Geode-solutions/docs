@@ -223,7 +223,7 @@
     <!-- eslint-enable -->
 
       <p :class="paragraph">
-        The opposite relation type of boundary is named incidence
+        The opposite relation type of <strong>boundary</strong> is named <strong>incidence</strong>
         (depicted by straight brown arrows),
         and the same methods and ranges are available.
       </p>
@@ -231,7 +231,7 @@
       <img src="@/assets/datamodel-6.svg">
 
       <p :class="paragraph">
-        Another type of relations is internal, and its opposite relation: embedded.
+        Another type of relations is <strong>internal</strong>, and its opposite relation: <strong>embedded</strong>.
         A Component A is internal to a Component B if A is included inside B.
         Internal is different from boundary.
         You can notice that Corners and Lines can be internal Components
@@ -259,7 +259,7 @@
         An other kind of relations between Components allows to gather Components into groups.
         This is the notion of
         <strong>Collections</strong>. Components gathered into collections
-        are called items. For example, the red Surfaces can be gather in a collection
+        are called <strong>items</strong>. For example, the red Surfaces can be gather in a collection
         standing for the right side of the cube.
       </p>
 

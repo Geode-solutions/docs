@@ -54,7 +54,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      TriangulatedSurface3D mesh;
+      // Let's have a TriangulatedSurface3D& called mesh;
       auto manager = mesh.polygon_attribute_manager();
       ...
     </code>

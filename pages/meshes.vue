@@ -75,7 +75,7 @@
       </p>
       <!-- eslint-disable -->
     <code class="example">
-      PolygonalSurface2D surface;
+      // Let's have a PolygonalSurface2D& called surface;
       const auto nbv = surface.nb_vertices();
       const auto nbp = surface.nb_polygons();
     </code>
@@ -89,7 +89,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      PolygonalSurface2D surface;
+      // Let's have a PolygonalSurface2D& called surface;
       const auto pv0 = surface.polygon_vertex( {0, 0} ); // 6
       const auto pv1 = surface.polygon_vertex( {0, 1} ); // 5
       const auto pv2 = surface.polygon_vertex( {0, 2} ); // 8
@@ -134,7 +134,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      PolygonalSurface2D surface;
+      // Let's have a PolygonalSurface2D& called surface;
       surface.enable_edges();
       const auto nbe = surfaces.edges().nb_edges();
       const auto vertices = surfaces.edges().edge_vertices( 3 ); // [4, 5]
@@ -168,7 +168,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      PolygonalSurface2D surface;
+      // Let's have a PolygonalSurface2D& called surface;
       const auto polygon = surface.polygon_adjacent( {0, 0} ); // 1
     </code>
     <!-- eslint-enable -->
@@ -183,7 +183,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      PolygonalSurface2D surface;
+      // Let's have a PolygonalSurface2D& called surface;
       const auto polygon = surface.polygon_adjacent_edge( {0, 0} ); // {1, 2}
     </code>
     <!-- eslint-enable -->
@@ -197,7 +197,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      PolygonalSurface2D surface;
+      // Let's have a PolygonalSurface2D& called surface;
       const auto on_border0 = surface.is_edge_on_border( {0, 0} ); // false
       const auto on_border1 = surface.is_edge_on_border( {0, 2} ); // true
     </code>
@@ -211,7 +211,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      PolygonalSurface2D surface;
+      // Let's have a PolygonalSurface2D& called surface;
       PolygonEdge start{0, 2};
       auto next_edge = surface.next_on_border( start ); // {0, 3}
       next_edge = surface.next_on_border( next_edge ); // {0, 4}
@@ -238,7 +238,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      PolygonalSurface2D surface;
+      // Let's have a PolygonalSurface2D& called surface;
       const auto polygons_around4 = surface.polygons_around( 4 ); // an inlined vector containing {4, 3, 1, 2, 5}
     </code>
     <!-- eslint-enable -->
@@ -259,7 +259,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      PolygonalSurface2D surface;
+      // Let's have a PolygonalSurface2D& called surface;
       const auto bbox = surface.bounding_box();
     </code>
     <!-- eslint-enable -->
