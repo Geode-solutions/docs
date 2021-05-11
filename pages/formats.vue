@@ -2,10 +2,15 @@
   <v-row>
     <v-col>
       <h1 class="display-4 ma-5">
-        Supporting file formats
+        Native file formats
       </h1>
-      <format title="IO" :formats="formats_io" />
-      <format title="GeosciencesIO" :formats="formats_geosciencesio" />
+      <format title="Using OpenGeode" :formats="formats" native />
+      <format title="Using OpenGeode-Geosciences" :formats="formats_geosciences" native />
+      <h1 class="display-4 ma-5">
+        Supported file formats
+      </h1>
+      <format title="Using OpenGeode-IO" :formats="formats_io" />
+      <format title="Using OpenGeode-GeosciencesIO" :formats="formats_geosciencesio" />
     </v-col>
   </v-row>
 </template>
@@ -18,6 +23,86 @@ export default {
     Format
   },
   data: () => ({
+    formats: [
+      {
+        extension: '.og_vts',
+        cpp: "<a href='/opengeode?page=class_geode_VertexSet.html'><code>VertexSet</code></a>"  
+      },
+      {
+        extension: '.og_grp',
+        cpp: "<a href='/opengeode?page=class_geode_Graph.html'><code>Graph</code></a>"  
+      },
+      {
+        extension: '.og_pts2d',
+        cpp: "<a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet2D</code></a>"  
+      },
+      {
+        extension: '.og_pts3d',
+        cpp: "<a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet3D</code></a>"  
+      },
+      {
+        extension: '.og_edc2d',
+        cpp: "<a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve2D</code></a>"  
+      },
+      {
+        extension: '.og_edc3d',
+        cpp: "<a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>"  
+      },
+      {
+        extension: '.og_tsf2d',
+        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface2D</code></a>"  
+      },
+      {
+        extension: '.og_tsf3d',
+        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>"  
+      },
+      {
+        extension: '.og_psf2d',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface2D</code></a>"  
+      },
+      {
+        extension: '.og_psf3d',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>"  
+      },
+      {
+        extension: '.og_pso3d',
+        cpp: "<a href='/opengeode?page=class_geode_PolyhedralSolid.html'><code>PolyhedralSolid3D</code></a>"  
+      },
+      {
+        extension: '.og_tso3d',
+        cpp: "<a href='/opengeode?page=class_geode_TetrahedralSolid.html'><code>TetrahedralSolid3D</code></a>"  
+      },
+      {
+        extension: '.og_hso3d',
+        cpp: "<a href='/opengeode?page=class_geode_HybridSolid.html'><code>HybridSolid3D</code></a>"  
+      },
+      {
+        extension: '.og_rgd2d',
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a>"  
+      },
+      {
+        extension: '.og_pts2d',
+        cpp: "<a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet2D</code></a>"  
+      },
+      {
+        extension: '.og_sctn',
+        cpp: "<a href='/opengeode?page=class_geode_Section.html'><code>Section</code></a>"  
+      },
+      {
+        extension: '.og_brep',
+        cpp: "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>"  
+      },
+    ],
+    formats_geosciences: [
+      {
+        extension: '.og_xsctn',
+        cpp: "<a href='/opengeode?page=class_geode_CrossSection.html'><code>CrossSection</code></a>"  
+      },
+      {
+        extension: '.og_strm',
+        cpp: "<a href='/opengeode?page=class_geode_StructuralModel.html'><code>StructuralModel</code></a>"  
+      },
+    ],
     formats_io: [
       {
         extension: '.msh (v2 and v4 supported)',
@@ -112,8 +197,20 @@ export default {
         out: true
       },
       {
+        extension: '.pl',
+        cpp: "<a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
+        in: false,
+        out: true
+      },
+      {
         extension: '.ts',
         cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
+        in: true,
+        out: false
+      },
+      {
+        extension: '.wl',
+        cpp: "<a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
         in: true,
         out: false
       }

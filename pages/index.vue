@@ -36,9 +36,9 @@ export default {
         route: 'formats'
       },
       {
-        title: 'Builders (soon)',
+        title: 'Builders',
         descr: 'OpenGeode way to construct and edit meshes and models',
-        route: ''
+        route: 'builders'
       }
     ],
     devguides: [
