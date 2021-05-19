@@ -33,6 +33,7 @@ Class managing modification of :ref:`Relationships <doxid-classgeode_1_1_relatio
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_builder_1a997f8b35c4bae99d81465dc62ee1b0e9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_builder_1acbbf95685f778de7dc3e568750e4dbf2>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_relation<doxid-classgeode_1_1_relationships_builder_1a0201343c12ef8ac4ad07c8c93ac2b291>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
+		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
 	
 		void :target:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(
 			const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping,
@@ -189,4 +190,14 @@ Add a new relationship of type item-collection between two components
 	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_relation(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2)
 
 Add a new relationship between two components
+
+.. index:: pair: function; remove_relation
+.. _doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void remove_relation(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2)
+
+Remove a relationship between two components
 

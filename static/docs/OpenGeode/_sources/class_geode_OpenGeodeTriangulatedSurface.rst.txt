@@ -112,10 +112,10 @@ Inherited Members
 		double :ref:`polygon_area<doxid-classgeode_1_1_surface_mesh_1a1c027dea78fbae8ca3aaadf192b3b2bc>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 	
 		template <index_t T = dimension>
-		OPENGEODE_MESH_DEPRECATED std::enable_if<T==3, Vector3D>::type :ref:`polygon_normal<doxid-classgeode_1_1_surface_mesh_1aab402113ea081b387560bc1c2ea93305>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		std::enable_if<T==3, Vector3D>::type :ref:`polygon_normal<doxid-classgeode_1_1_surface_mesh_1a89037be5314ce4ba5897393dd70b2ce8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 	
 		template <index_t T = dimension>
-		OPENGEODE_MESH_DEPRECATED std::enable_if<T==3, Vector3D>::type :ref:`polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a91c291265c1c3faaa044a4223625f704>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		std::enable_if<T==3, Vector3D>::type :ref:`polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a57a532622974810570f74d4d7dd4e56f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	
 		template <index_t T = dimension>
 		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`new_polygon_normal<doxid-classgeode_1_1_surface_mesh_1a3d2ee2ee4e97a1fa3b7fac30fd113d17>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;

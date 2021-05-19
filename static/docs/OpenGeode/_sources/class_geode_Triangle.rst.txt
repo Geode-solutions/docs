@@ -37,10 +37,10 @@ template class geode::Triangle
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`barycenter<doxid-classgeode_1_1_triangle_1adfa76978dfb13995a710b3ac8f0b3782>`() const;
 	
 		template <index_t T = dimension>
-		OPENGEODE_GEOMETRY_DEPRECATED std::enable_if<T==3, Vector3D>::type :target:`normal<doxid-classgeode_1_1_triangle_1a1e3d9df1673005e50935070a3c9150db>`() const;
+		std::enable_if<T==3, Vector3D>::type :target:`normal<doxid-classgeode_1_1_triangle_1aaa87a6b0f49b38ee8180787e74f5a146>`() const;
 	
 		template <index_t T = dimension>
-		OPENGEODE_GEOMETRY_DEPRECATED std::enable_if<T==3, :ref:`Plane<doxid-classgeode_1_1_plane>`>::type :target:`plane<doxid-classgeode_1_1_triangle_1aae7eaa8660dd52f7d3a5b1ea49704a14>`() const;
+		std::enable_if<T==3, :ref:`Plane<doxid-classgeode_1_1_plane>`>::type :target:`plane<doxid-classgeode_1_1_triangle_1a598669dbc4a51e65af7f7e894656fa27>`() const;
 	
 		template <index_t T = dimension>
 		std::enable_if<T==3, absl::optional<Vector3D>>::type :target:`new_normal<doxid-classgeode_1_1_triangle_1a99971d648d6e5c1190020a5cbc2b2f98>`() const;

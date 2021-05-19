@@ -158,6 +158,7 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_builder_1a997f8b35c4bae99d81465dc62ee1b0e9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_builder_1acbbf95685f778de7dc3e568750e4dbf2>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_relation<doxid-classgeode_1_1_relationships_builder_1a0201343c12ef8ac4ad07c8c93ac2b291>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
+		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
 		void :ref:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping, const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships);
 		void :ref:`load_relationships<doxid-classgeode_1_1_relationships_builder_1a7901eef2fbf55303a0a3921477ffe450>`(absl::string_view directory);
 	
