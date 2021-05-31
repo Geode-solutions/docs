@@ -2,11 +2,11 @@
   <v-row>
     <v-col>
       <h1 class="display-4 ma-5">
-        DataModel
+        Models
       </h1>
 
       <p :class="paragraph">
-        In this guide, you will learn fundamental elements to understand and manipulate OpenGeode data model.
+        In this guide, you will learn fundamental elements to understand and manipulate OpenGeode data model for geometric models.
         One of OpenGeode central classes is
         <span
           v-html="brep"
@@ -405,6 +405,30 @@
       };
     </code>
     <!-- eslint-enable -->
+
+    <h2 :class="section">
+        Geosciences models
+      </h2>
+
+      <p :class="paragraph">
+        OpenGeode-Geosciences provides two classes for 
+        geological models, <span v-html="structuralModel" /> in 3D 
+        and <span v-html="crossSection" /> in 2D. They derive respectively from <span v-html="brep" /> and <span v-html="section" />. 
+        They add Geological collections, 
+        allowing you to classify the geometrical entities (for instance Surfaces) 
+        into geological entities (for instance Faults, Horizons, ...).
+      </p>
+
+      <!-- eslint-disable -->
+    <code class="example">
+      class StructuralModel : public BRep,
+                      public AddComponents< 3, Faults, Horizons, FaultBlocks, StratigraphicUnits >
+      {
+        ...
+      };
+    </code>
+    <!-- eslint-enable -->
+
     </v-col>
   </v-row>
 </template>
@@ -418,6 +442,12 @@ export default {
       "<a href='/opengeode?page=struct_geode_uuid.html'><code>uuid</code></a>",
     brep:
       "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
+    section:
+      "<a href='/opengeode?page=class_geode_Section.html'><code>Section</code></a>",
+    crossSection:
+      "<a href='/opengeode?page=class_geode_CrossSection.html'><code>CrossSection</code></a>",
+    structuralModel:
+      "<a href='/opengeode?page=class_geode_StructuralModel.html'><code>StructuralModel</code></a>",
     surfaces3d:
       "<a href='/opengeode?page=class_geode_Surfaces.html'><code>Surfaces3D</code></a>",
     surface3d:
