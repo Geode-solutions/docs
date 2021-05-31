@@ -16,7 +16,7 @@ export default {
   data: () => ({
     guides: [
       {
-        title: 'Data model',
+        title: 'Models',
         descr: 'OpenGeode data model for representing geometric models',
         route: 'datamodel'
       },
