@@ -18,7 +18,7 @@ export default {
       {
         title: 'Models',
         descr: 'OpenGeode data model for representing geometric models',
-        route: 'datamodel'
+        route: 'models'
       },
       {
         title: 'Meshes',
