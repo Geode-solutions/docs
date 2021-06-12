@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::AlongSolidSplitEdgeInfo
+.. _doxid-structgeode_1_1_along_solid_split_edge_info:
+
+struct geode::AlongSolidSplitEdgeInfo
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier.h>
+	
+	struct AlongSolidSplitEdgeInfo
+	{
+		// fields
+	
+		absl::InlinedVector<:ref:`FacetMapping<doxid-namespacegeode_1a0fe3791ddb7ee08d858458346d5f1367>`, 2> :target:`facets<doxid-structgeode_1_1_along_solid_split_edge_info_1a1da90cba644f302c2f9e4365618b0b4d>`;
+		absl::InlinedVector<:ref:`EdgeMapping<doxid-namespacegeode_1a07f622f9290301bd1b0b364ed0807b44>`, 2> :target:`edges<doxid-structgeode_1_1_along_solid_split_edge_info_1aff43e63da1b4d11c2c9fb7e2003662ab>`;
+	};

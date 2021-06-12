@@ -1,0 +1,613 @@
+.. index:: pair: class; geode::TetrahedralSolidModifier
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier:
+
+class geode::TetrahedralSolidModifier
+=====================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier.h>
+	
+	class TetrahedralSolidModifier
+	{
+	public:
+		// construction
+	
+		:target:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a89471a112234e63ba56d967719cb5e0e>`(
+			const SolidMesh3D& solid,
+			TetrahedralSolidBuilder3D& builder
+			);
+
+		// methods
+	
+		bool :target:`is_tetrahedron_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af187b78931d693da120ab9da5c5b4549>`(index_t tetrahedron_id) const;
+		bool :target:`is_facet_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a49fdcfaf239bff7e181f1aaa5c7bb932>`(index_t facet_id) const;
+		bool :ref:`is_split_tetrahedron_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a4edcaa0ed7b9661d5a8deb6fe63c7839>`(index_t tetrahedron_id, const Point3D& point) const;
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1645e8ce599bf3ab1036071f1af3a939>`(index_t tetrahedron_id, const Point3D& point);
+		bool :ref:`is_split_facet_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a60b6e5ebe55c5b9bc26f016589eb3054>`(const PolyhedronFacet& facet, const Point3D& point) const;
+		bool :ref:`is_split_facet_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1acf9cdefd8a07481ca6b3b4d8b1ef280c>`(index_t facet_id, const Point3D& point) const;
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abfd8444fde310d0e8229cb353f718451>`(index_t facet_id, const Point3D& point);
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a5de1767b5b8ae9b7ae522c5434930f5b>`(const PolyhedronFacet& facet, const Point3D& point);
+		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a8ba26a3c56f7221bd96d8a812c4c7b70>`(const PolyhedronFacetEdge& edge, const Point3D& point) const;
+		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a38a52fa447ee7e454cc894bb49968f43>`(index_t edge_id, const Point3D& point) const;
+		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a954f2875b98f31ae3ce7e255d1c008c3>`(index_t edge_id, const Point3D& point);
+		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abf56f3477626be27058311526b2b5aef>`(const PolyhedronFacetEdge& edge, const Point3D& point);
+		bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ac448e964d5b58cfc1edd8cad2458f2c1>`(const PolyhedronFacetEdge& edge, const Point3D& point) const;
+		bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a62d81880d33946209a739309db819d8d>`(index_t _id, const Point3D& point) const;
+		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad74eb355746ffd52b66a4788a99868bd>`(const PolyhedronFacetEdge& edge, const Point3D& point);
+		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ae1f62e44988d327a78be2c5a3452add2>`(index_t edge_id, const Point3D& point);
+		std::vector<index_t> :ref:`clean_tetrahedra<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac>`();
+		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a0f1152b138581b514523cbaf00b42fa1>`();
+		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ab4e1a4c3bc3099e9b4472b7229ab89c4>`();
+		std::vector<index_t> :ref:`clean_facets<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a37193dc0a7951ee5239b1dda623cb083>`();
+		std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_t>, std::vector<index_t>> :ref:`clean<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1d6c7140659d7b7378acc662ecc304f3>`();
+	};
+
+	// direct descendants
+
+	class :ref:`TetrahedralSolidEpsilonModifier<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier>`;
+.. _details-classgeode_1_1_tetrahedral_solid_modifier:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; is_split_tetrahedron_valid
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a4edcaa0ed7b9661d5a8deb6fe63c7839:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool is_split_tetrahedron_valid(index_t tetrahedron_id, const Point3D& point) const
+
+Check if a tetrahedron split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- tetrahedron_id
+
+		- Index of the tetrahedron to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.
+
+
+
+.. rubric:: Returns:
+
+true if split will keep mesh valid.
+
+.. index:: pair: function; split_tetrahedron
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1645e8ce599bf3ab1036071f1af3a939:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` split_tetrahedron(index_t tetrahedron_id, const Point3D& point)
+
+Split a tetrahedron into four new tetrahedra.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- tetrahedron_id
+
+		- Index of the tetrahedron to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.  Given tetrahedron is set as inactive but not deleted.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; is_split_facet_valid
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a60b6e5ebe55c5b9bc26f016589eb3054:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool is_split_facet_valid(const PolyhedronFacet& facet, const Point3D& point) const
+
+Check if a facet split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- facet
+
+		- Index of the PolyhedronFacet to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.
+
+
+
+.. rubric:: Returns:
+
+true if split will keep mesh valid.
+
+.. index:: pair: function; is_split_facet_valid
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1acf9cdefd8a07481ca6b3b4d8b1ef280c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool is_split_facet_valid(index_t facet_id, const Point3D& point) const
+
+Check if a facet split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- facet_id
+
+		- Unique index of the facet to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.
+
+
+
+.. rubric:: Returns:
+
+true if split will keep mesh valid.
+
+.. index:: pair: function; split_facet
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1abfd8444fde310d0e8229cb353f718451:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` split_facet(index_t facet_id, const Point3D& point)
+
+Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- facet_id
+
+		- Unique index of the facet to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.  Split tetrahedra are set as inactive but not deleted.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; split_facet
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a5de1767b5b8ae9b7ae522c5434930f5b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` split_facet(const PolyhedronFacet& facet, const Point3D& point)
+
+Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra. Edge unique index is found and then the above function is called.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- facet
+
+		- Index of the PolyhedronFacet to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.  Split tetrahedra are set as inactive but not deleted.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; is_split_edge_valid
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a8ba26a3c56f7221bd96d8a812c4c7b70:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool is_split_edge_valid(const PolyhedronFacetEdge& edge, const Point3D& point) const
+
+Check if an edge split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge
+
+		- Index of the PolyhedronFacetEdge to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.
+
+
+
+.. rubric:: Returns:
+
+true if split will keep mesh valid.
+
+.. index:: pair: function; is_split_edge_valid
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a38a52fa447ee7e454cc894bb49968f43:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool is_split_edge_valid(index_t edge_id, const Point3D& point) const
+
+Check if an edge split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Unique index of the edge to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.
+
+
+
+.. rubric:: Returns:
+
+true if split will keep mesh valid.
+
+.. index:: pair: function; split_edge
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a954f2875b98f31ae3ce7e255d1c008c3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` split_edge(index_t edge_id, const Point3D& point)
+
+Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Unique index of the edge to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.  Split tetrahedra are set as inactive but not deleted.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; split_edge
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1abf56f3477626be27058311526b2b5aef:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` split_edge(const PolyhedronFacetEdge& edge, const Point3D& point)
+
+Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge
+
+		- Index of the PolyhedronFacetEdge to split.
+
+	*
+		- point
+
+		- Coordinates of the split point.  Split tetrahedra are set as inactive but not deleted.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; is_collapse_edge_valid
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1ac448e964d5b58cfc1edd8cad2458f2c1:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool is_collapse_edge_valid(
+		const PolyhedronFacetEdge& edge,
+		const Point3D& point
+		) const
+
+Check if an edge collapse will keep the mesh valid, meaning no tetrahedra volume flip its sign. The collapse is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge
+
+		- Index of the PolyhedronFacetEdge to collapse.
+
+	*
+		- point
+
+		- Coordinates of the collapse point.
+
+
+
+.. rubric:: Returns:
+
+true if collapse will keep mesh valid.
+
+.. index:: pair: function; is_collapse_edge_valid
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a62d81880d33946209a739309db819d8d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool is_collapse_edge_valid(index_t _id, const Point3D& point) const
+
+Check if an edge collapse will keep the mesh valid, meaning no tetrahedra volume flip its sign. The collapse is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Unique index of the edge to collapse.
+
+	*
+		- point
+
+		- Coordinates of the collapse point.
+
+
+
+.. rubric:: Returns:
+
+true if collapse will keep mesh valid.
+
+.. index:: pair: function; collapse_edge
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad74eb355746ffd52b66a4788a99868bd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` collapse_edge(const PolyhedronFacetEdge& edge, const Point3D& point)
+
+Collapse an edge. The tetrahedra incident to this edge are set as inactive but not deleted.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge
+
+		- Index of the PolyhedronFacetEdge to collapse.
+
+	*
+		- point
+
+		- Coordinates of the collapse point.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; collapse_edge
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1ae1f62e44988d327a78be2c5a3452add2:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` collapse_edge(index_t edge_id, const Point3D& point)
+
+Collapse an edge. The tetrahedra incident to this edge are set as inactive but not deleted.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Unique index of the edge to collapse.
+
+	*
+		- point
+
+		- Coordinates of the collapse point.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; clean_tetrahedra
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<index_t> clean_tetrahedra()
+
+Clean up the mesh removing inactive tetrahedra
+
+
+
+.. rubric:: Returns:
+
+old2new mappings for tetrahedra
+
+.. index:: pair: function; clean_vertices
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a0f1152b138581b514523cbaf00b42fa1:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<index_t> clean_vertices()
+
+Clean up the mesh removing isolated vertices This method should be called after :ref:`clean_tetrahedra() <doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac>`
+
+
+
+.. rubric:: Returns:
+
+old2new mappings for vertices
+
+.. index:: pair: function; clean_edges
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1ab4e1a4c3bc3099e9b4472b7229ab89c4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<index_t> clean_edges()
+
+Clean up the mesh removing edges This method should be called after :ref:`clean_tetrahedra() <doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac>`
+
+
+
+.. rubric:: Returns:
+
+old2new mappings for edges
+
+.. index:: pair: function; clean_facets
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a37193dc0a7951ee5239b1dda623cb083:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<index_t> clean_facets()
+
+Clean up the mesh removing facets This method should be called after :ref:`clean_tetrahedra() <doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac>`
+
+
+
+.. rubric:: Returns:
+
+old2new mappings for facets
+
+.. index:: pair: function; clean
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1d6c7140659d7b7378acc662ecc304f3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_t>, std::vector<index_t>> clean()
+
+Clean up the mesh removing inactive tetrahedra, isolated vertices, edges and facets.
+
+
+
+.. rubric:: Returns:
+
+old2new mappings for tetrahedra, vertices, edges and facets.
+

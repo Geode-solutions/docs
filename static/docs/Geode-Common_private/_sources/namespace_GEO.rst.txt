@@ -1,0 +1,61 @@
+.. index:: pair: namespace; GEO
+.. _doxid-namespace_g_e_o:
+
+namespace GEO
+=============
+
+.. toctree::
+	:hidden:
+
+	namespace_GEO_Numeric.rst
+	namespace_GEO_PCK.rst
+	enum_GEO_Sign.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace GEO {
+
+	// namespaces
+
+	namespace :ref:`GEO::Numeric<doxid-namespace_g_e_o_1_1_numeric>`;
+	namespace :ref:`GEO::PCK<doxid-namespace_g_e_o_1_1_p_c_k>`;
+
+	// typedefs
+
+	typedef geo_index_t :target:`index_t<doxid-namespace_g_e_o_1a915b0eb4dd0c3efe278d558468383534>`;
+	typedef geo_signed_index_t :target:`signed_index_t<doxid-namespace_g_e_o_1a545c8df15809d86c5efeea8500b1d14c>`;
+	typedef geo_coord_index_t :target:`coord_index_t<doxid-namespace_g_e_o_1ae771f961036ac7f98502ff145b99d424>`;
+
+	// enums
+
+	enum :ref:`Sign<doxid-namespace_g_e_o_1a9c97e58e4526cb2ab931b3fde0a3b002>`;
+
+	// global functions
+
+	template <class T>
+	void :target:`geo_argused<doxid-namespace_g_e_o_1a4ca5364c7e7832c0b3382f32ba5c92be>`(const T&);
+
+	template <class T>
+	:ref:`Sign<doxid-namespace_g_e_o_1a9c97e58e4526cb2ab931b3fde0a3b002>` :target:`geo_sgn<doxid-namespace_g_e_o_1a8e59d9c172507c159f0bee7a004f34f6>`(const T& x);
+
+	template <class T>
+	T :target:`geo_sqr<doxid-namespace_g_e_o_1a38306dc5e49d6eb82d7831c971db600a>`(T x);
+
+	template <class T>
+	void :target:`geo_clamp<doxid-namespace_g_e_o_1a805127975ed6494e3b6e0c2432221c67>`(
+		T& x,
+		T min,
+		T max
+		);
+
+	:ref:`index_t<doxid-namespace_g_e_o_1a915b0eb4dd0c3efe278d558468383534>` :target:`max_index_t<doxid-namespace_g_e_o_1a3f1009bfe42518cc1b5cfb63d1e6d261>`();
+	:ref:`signed_index_t<doxid-namespace_g_e_o_1a545c8df15809d86c5efeea8500b1d14c>` :target:`max_signed_index_t<doxid-namespace_g_e_o_1ad95e207a448865de6d95eb46abecf236>`();
+	:ref:`signed_index_t<doxid-namespace_g_e_o_1a545c8df15809d86c5efeea8500b1d14c>` :target:`min_signed_index_t<doxid-namespace_g_e_o_1a194370ec786c598bd8b5f2c72a2b7519>`();
+	double :target:`round<doxid-namespace_g_e_o_1ae22897cf36b6315d684bf4b7de314f3b>`(double x);
+
+	} // namespace GEO

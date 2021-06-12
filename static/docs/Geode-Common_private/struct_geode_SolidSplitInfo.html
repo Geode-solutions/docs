@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>struct geode::SolidSplitInfo &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::SortedSurfaces" href="struct_geode_SortedSurfaces.html" />
+    <link rel="prev" title="struct geode::SolidSplitEdgeInfo" href="struct_geode_SolidSplitEdgeInfo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-geode-solidsplitinfo">
+<span id="doxid-structgeode-1-1-solid-split-info"></span><span id="index-0"></span><h1>struct geode::SolidSplitInfo</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;tetrahedral_solid_modifier.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">SolidSplitInfo</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-split-info-1add987ec0b362b84af15b5791cd0cf43e"><span></span><span class="n">vertex</span></span><span></span> <span class="p">{</span> <span class="n">NO_ID</span> <span class="p">};</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a5f5bb31d010c44cbc41f6753a1d28304"><span class="std std-ref">TetrahedronMapping</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-split-info-1a6a1464ad9698828668a811c25c4e9b47"><span></span><span class="n">tetrahedra</span></span><span></span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a0fe3791ddb7ee08d858458346d5f1367"><span class="std std-ref">FacetMapping</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-split-info-1ae28b58cbb5eddcd74ba774b102b8c63f"><span></span><span class="n">facets</span></span><span></span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a07f622f9290301bd1b0b364ed0807b44"><span class="std std-ref">EdgeMapping</span></a><span></span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-split-info-1ad581220e61117036567aff64f7745561"><span></span><span class="n">edges</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-split-info-1ad71cd367874678989afac90616f266b4"><span></span><span class="n">SolidSplitInfo</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-split-info-1a37f8fb42a259ff5a0ba6b29c79fbc966"><span></span><span class="n">SolidSplitInfo</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_SolidSplitEdgeInfo.html#doxid-structgeode-1-1-solid-split-edge-info"><span class="std std-ref">SolidSplitEdgeInfo</span></a><span></span><span class="o">&amp;&amp;</span> <span class="n">split_edge_info</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/struct_geode_SolidSplitInfo.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

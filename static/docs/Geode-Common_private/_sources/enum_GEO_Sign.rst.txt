@@ -1,0 +1,20 @@
+.. index:: pair: enum; Sign
+.. _doxid-namespace_g_e_o_1a9c97e58e4526cb2ab931b3fde0a3b002:
+
+enum GEO::Sign
+==============
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <predicates.h>
+
+	enum Sign
+	{
+	    :target:`NEGATIVE<doxid-namespace_g_e_o_1a9c97e58e4526cb2ab931b3fde0a3b002a9eb4ffe4e9a390edffacf6fdee1c448d>` = -1,
+	    :target:`ZERO<doxid-namespace_g_e_o_1a9c97e58e4526cb2ab931b3fde0a3b002a19487c53cbd1094f292d198a16eccebc>`     = 0,
+	    :target:`POSITIVE<doxid-namespace_g_e_o_1a9c97e58e4526cb2ab931b3fde0a3b002afd4ce942c8d5b86fcd788ac7500ccbf2>` = 1,
+	};
+

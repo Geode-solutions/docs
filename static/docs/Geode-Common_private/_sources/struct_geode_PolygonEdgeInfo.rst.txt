@@ -1,0 +1,26 @@
+.. index:: pair: struct; geode::PolygonEdgeInfo
+.. _doxid-structgeode_1_1_polygon_edge_info:
+
+struct geode::PolygonEdgeInfo
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier.h>
+	
+	struct PolygonEdgeInfo
+	{
+		// fields
+	
+		absl::InlinedVector<PolygonEdge, 2> :target:`added<doxid-structgeode_1_1_polygon_edge_info_1a401a69e203ba8f4ade84214de806e34b>`;
+		absl::InlinedVector<:ref:`PolygonEdgeMapping<doxid-namespacegeode_1a5a7ed69f08e560d569e1f124dc238d77>`, 2> :target:`modified<doxid-structgeode_1_1_polygon_edge_info_1acc37e498c751b1986ace0c52dee7c9bb>`;
+		absl::InlinedVector<:ref:`PolygonEdgeMapping<doxid-namespacegeode_1a5a7ed69f08e560d569e1f124dc238d77>`, 2> :target:`remaining<doxid-structgeode_1_1_polygon_edge_info_1a07987af188c0184fefc2ed4601fdfbe6>`;
+		absl::InlinedVector<:ref:`TriangleMapping<doxid-namespacegeode_1af3ede97a06831da5d71e5a7212f089cc>`, 2> :target:`triangles<doxid-structgeode_1_1_polygon_edge_info_1adb8b7acd55e789616fa8cd4649b8f185>`;
+	};

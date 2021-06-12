@@ -1,0 +1,50 @@
+.. index:: pair: class; geode::BRepGeometricModifier
+.. _doxid-classgeode_1_1_b_rep_geometric_modifier:
+
+class geode::BRepGeometricModifier
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier.h>
+	
+	class BRepGeometricModifier
+	{
+	public:
+		// construction
+	
+		:target:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier_1a8697097b86dd8a811b4566a8a46724bd>`(BRep& brep);
+
+		// methods
+	
+		:ref:`ModelCollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a4fa3aec5d7b6339de30574d499fedfbf>`(
+			const Surface3D& surface,
+			const PolygonEdge& edge,
+			const Point3D& point
+			);
+	
+		:ref:`ModelSplitPolygonEdgeInfo<doxid-structgeode_1_1_model_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a9c112dfc4be93b9840d1841c9ef6821b>`(
+			const Surface3D& surface,
+			const PolygonEdge& edge,
+			const Point3D& point
+			);
+	
+		:ref:`ModelSplitPolygonEdgeInfo<doxid-structgeode_1_1_model_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a0223a94b643d823c9463823b8e2b925d>`(
+			const Line3D& line,
+			index_t edge,
+			const Point3D& point
+			);
+	
+		void :target:`clean_triangles_surfaces<doxid-classgeode_1_1_b_rep_geometric_modifier_1a022dd6b1e3205997e5f738cfd9155ace>`();
+		void :target:`clean_vertices_surfaces<doxid-classgeode_1_1_b_rep_geometric_modifier_1a63338b255dc0751fd2d359dd3abd0990>`();
+		void :target:`clean_edges_lines<doxid-classgeode_1_1_b_rep_geometric_modifier_1a807147e864c75b70d37fb85fc44ad7b1>`();
+		void :target:`clean_vertices_lines<doxid-classgeode_1_1_b_rep_geometric_modifier_1a703f8d3219864346bb3c29d6c55457b3>`();
+		void :target:`clean_unique_vertices<doxid-classgeode_1_1_b_rep_geometric_modifier_1a31e69ab2d5f2de669cf822d1270124c8>`();
+	};

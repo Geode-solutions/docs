@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::ModelSplitPolygonEdgeInfo
+.. _doxid-structgeode_1_1_model_split_polygon_edge_info:
+
+struct geode::ModelSplitPolygonEdgeInfo
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	struct ModelSplitPolygonEdgeInfo
+	{
+		// fields
+	
+		absl::flat_hash_map<uuid, absl::InlinedVector<index_t, 1>> :target:`line_info<doxid-structgeode_1_1_model_split_polygon_edge_info_1ac492ebd4729c4838ec429698834c6e5a>`;
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`SplitPolygonEdgeInfo<doxid-structgeode_1_1_split_polygon_edge_info>`, 1>> :target:`surface_info<doxid-structgeode_1_1_model_split_polygon_edge_info_1ac88621465b3547bfc712d167c7f655f3>`;
+	};

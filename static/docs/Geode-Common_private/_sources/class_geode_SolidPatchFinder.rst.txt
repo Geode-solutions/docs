@@ -1,0 +1,87 @@
+.. index:: pair: class; geode::SolidPatchFinder
+.. _doxid-classgeode_1_1_solid_patch_finder:
+
+class geode::SolidPatchFinder
+=============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+The objective of this class is to find patchs inside TetrahedralSolid3D. :ref:`More...<details-classgeode_1_1_solid_patch_finder>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <patch_finder.h>
+	
+	class SolidPatchFinder
+	{
+	public:
+		// typedefs
+	
+		typedef :ref:`SolidPatch<doxid-structgeode_1_1_solid_patch>` :target:`solid_patch_attribute_type<doxid-classgeode_1_1_solid_patch_finder_1a6ab6b56ff51890539bcdcdcdab65d45b>`;
+		typedef local_index_t :target:`edge_hint_attribute_type<doxid-classgeode_1_1_solid_patch_finder_1a8d3eee7846209b65bc80f50c680e89b5>`;
+
+		// fields
+	
+		static constexpr auto :target:`solid_patch_attribute_name<doxid-classgeode_1_1_solid_patch_finder_1aac6208e4dc5eb04424c720ea592205a1>` = "patch";
+		static constexpr auto :target:`edge_hint_attribute_name<doxid-classgeode_1_1_solid_patch_finder_1a2afc1d7fff4e8f322a8e97e5130c124f>` = "hint";
+
+		// construction
+	
+		:ref:`SolidPatchFinder<doxid-classgeode_1_1_solid_patch_finder_1a46cfc6b798abb9ea140f436ec53357bb>`(
+			const TetrahedralSolid3D& solid,
+			absl::Span<const :ref:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge>`> boundary_edges,
+			const Triangle3D& triangle
+			);
+
+		// methods
+	
+		TriangulatedSurface3D& :target:`find_patch<doxid-classgeode_1_1_solid_patch_finder_1ab837edf9fb4be4443d37049176730459>`();
+		const TetrahedralSolid3D& :target:`solid<doxid-classgeode_1_1_solid_patch_finder_1a7d388a564067cf142d8941c7265509a8>`() const;
+	};
+.. _details-classgeode_1_1_solid_patch_finder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+The objective of this class is to find patchs inside TetrahedralSolid3D. As an example, this class is able to find a triangular patch given boundary edges. This class may be derived for custom patch findings.
+
+Construction
+------------
+
+.. index:: pair: function; SolidPatchFinder
+.. _doxid-classgeode_1_1_solid_patch_finder_1a46cfc6b798abb9ea140f436ec53357bb:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	SolidPatchFinder(
+		const TetrahedralSolid3D& solid,
+		absl::Span<const :ref:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge>`> boundary_edges,
+		const Triangle3D& triangle
+		)
+
+Find a triangular patch.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- begin
+
+		- Index of the cut starting vertex
+
+	*
+		- end
+
+		- Index of the cut ending vertex.
+

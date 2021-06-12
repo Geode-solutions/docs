@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>struct geode::SortedSurfaces &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::SplitInfo" href="struct_geode_SplitInfo.html" />
+    <link rel="prev" title="struct geode::SolidSplitInfo" href="struct_geode_SolidSplitInfo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-geode-sortedsurfaces">
+<span id="doxid-structgeode-1-1-sorted-surfaces"></span><span id="index-0"></span><h1>struct geode::SortedSurfaces</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;model.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">SortedSurfaces</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_SidedSurface.html#doxid-structgeode-1-1-sided-surface"><span class="std std-ref">SidedSurface</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sorted-surfaces-1aaf1e2ab4b666382318ce4cf39cada1cd"><span></span><span class="n">surfaces</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sorted-surfaces-1ad51a9c68603b32fa2a36087ab0f88806"><span></span><span class="n">SortedSurfaces</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">nb_surfaces</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sorted-surfaces-1aff1861989d7a4614edb142b354720845"><span></span><span class="n">find</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SidedSurface.html#doxid-structgeode-1-1-sided-surface"><span class="std std-ref">SidedSurface</span></a><span></span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sorted-surfaces-1a6cc97edbb3841558b54cfc74fb4bb2bb"><span></span><span class="n">opposite</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">position</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sorted-surfaces-1a6c5463377668add7fcd6f2633ab75673"><span></span><span class="n">next</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">position</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/struct_geode_SortedSurfaces.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.. index:: pair: class; geode::SectionGeometricModifier
+.. _doxid-classgeode_1_1_section_geometric_modifier:
+
+class geode::SectionGeometricModifier
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_geometric_modifier.h>
+	
+	class SectionGeometricModifier
+	{
+	public:
+		// construction
+	
+		:target:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier_1ab20dbca919d4736fe3bd3995d7c177a6>`(Section& section);
+
+		// methods
+	
+		:ref:`ModelCollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_section_geometric_modifier_1afa6184234a78c3c8bb4b72e43d5d813f>`(
+			const Surface2D& surface,
+			const PolygonEdge& edge,
+			const Point2D& point
+			);
+	
+		:ref:`ModelSplitPolygonEdgeInfo<doxid-structgeode_1_1_model_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_section_geometric_modifier_1aaa84b9e9c91419629dfea828f5350612>`(
+			const Surface2D& surface,
+			const PolygonEdge& edge,
+			const Point2D& point
+			);
+	
+		:ref:`ModelSplitPolygonEdgeInfo<doxid-structgeode_1_1_model_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_section_geometric_modifier_1a2a8f1e546614f2bb1f962f5efe8e0caa>`(
+			const Line2D& line,
+			index_t edge,
+			const Point2D& point
+			);
+	
+		void :target:`clean_triangles_surfaces<doxid-classgeode_1_1_section_geometric_modifier_1a3dcc736acfa4dd6c30df8999383a148f>`();
+		void :target:`clean_vertices_surfaces<doxid-classgeode_1_1_section_geometric_modifier_1a8b023789f46bf1bf5e040bb4ba2b776c>`();
+		void :target:`clean_edges_lines<doxid-classgeode_1_1_section_geometric_modifier_1aedefe764b3f17c9f0d4fd07c2dc1e823>`();
+		void :target:`clean_vertices_lines<doxid-classgeode_1_1_section_geometric_modifier_1abb9540db50090275c48e3a7674af64b8>`();
+		void :target:`clean_unique_vertices<doxid-classgeode_1_1_section_geometric_modifier_1ae4d457da946a41ccdf5cf24886541b28>`();
+	};

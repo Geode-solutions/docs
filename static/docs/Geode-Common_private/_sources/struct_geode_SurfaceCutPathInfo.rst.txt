@@ -1,0 +1,29 @@
+.. index:: pair: struct; geode::SurfaceCutPathInfo
+.. _doxid-structgeode_1_1_surface_cut_path_info:
+
+struct geode::SurfaceCutPathInfo
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cut_along_surface_path.h>
+	
+	struct SurfaceCutPathInfo
+	{
+		// fields
+	
+		std::vector<:ref:`VertexMultiMapping<doxid-namespacegeode_1a2ea479fa70766a1514e507fb6912f9e5>`> :target:`vertices<doxid-structgeode_1_1_surface_cut_path_info_1a4c3bfc5565bd3fbc0dfcf6973d608e05>`;
+		:ref:`SideSurfaceCutPathInfo<doxid-structgeode_1_1_side_surface_cut_path_info>` :target:`left<doxid-structgeode_1_1_surface_cut_path_info_1a58f8877a82c0fc29a9957308633d198c>`;
+		:ref:`SideSurfaceCutPathInfo<doxid-structgeode_1_1_side_surface_cut_path_info>` :target:`right<doxid-structgeode_1_1_surface_cut_path_info_1ad22e601cf3d2e719cf641ca1d174e444>`;
+
+		// construction
+	
+		:target:`SurfaceCutPathInfo<doxid-structgeode_1_1_surface_cut_path_info_1adbb11a1be9770ed201a622aab3d80e2f>`(std::size_t size);
+	};

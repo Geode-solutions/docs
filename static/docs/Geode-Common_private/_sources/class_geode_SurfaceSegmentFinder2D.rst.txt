@@ -1,0 +1,78 @@
+.. index:: pair: class; geode::SurfaceSegmentFinder2D
+.. _doxid-classgeode_1_1_surface_segment_finder2_d:
+
+class geode::SurfaceSegmentFinder2D
+===================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+The objective of this class is to find paths inside TrianguledSurface2D. :ref:`More...<details-classgeode_1_1_surface_segment_finder2_d>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_segment_finder2d.h>
+	
+	class SurfaceSegmentFinder2D: public :ref:`geode::SurfaceSegmentFinder<doxid-classgeode_1_1_surface_segment_finder>`
+	{
+	public:
+		// construction
+	
+		:target:`SurfaceSegmentFinder2D<doxid-classgeode_1_1_surface_segment_finder2_d_1af2f0d6678b473447ce4252c308ebafbc>`(
+			const TriangulatedSurface2D& surface,
+			index_t begin,
+			index_t end
+			);
+
+		// methods
+	
+		std::vector<:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>`> :ref:`find_path<doxid-classgeode_1_1_surface_segment_finder2_d_1ae175a95f4ba131b145902440b8e3b65e>`() const;
+	};
+.. _details-classgeode_1_1_surface_segment_finder2_d:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+The objective of this class is to find paths inside TrianguledSurface2D. As an example, this class is able to find a rectilinear path between two vertices. This class may be derived for custom path findings.
+
+Methods
+-------
+
+.. index:: pair: function; find_path
+.. _doxid-classgeode_1_1_surface_segment_finder2_d_1ae175a95f4ba131b145902440b8e3b65e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>`> find_path() const
+
+Find a rectilinear path between two vertices.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- begin
+
+		- Index of the cut starting vertex
+
+	*
+		- end
+
+		- Index of the cut ending vertex
+
+
+
+.. rubric:: Returns:
+
+an ordered list of path locations between begin and end.
+

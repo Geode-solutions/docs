@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class geode::TetrahedralSolidModifier &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::TrianglesClosestThan" href="class_geode_TrianglesClosestThan.html" />
+    <link rel="prev" title="class geode::TetrahedralSolidEpsilonModifier" href="class_geode_TetrahedralSolidEpsilonModifier.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-tetrahedralsolidmodifier">
+<span id="doxid-classgeode-1-1-tetrahedral-solid-modifier"></span><span id="index-0"></span><h1>class geode::TetrahedralSolidModifier</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;tetrahedral_solid_modifier.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">TetrahedralSolidModifier</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a89471a112234e63ba56d967719cb5e0e"><span></span><span class="n">TetrahedralSolidModifier</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+        <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span>
+        <span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1af187b78931d693da120ab9da5c5b4549"><span></span><span class="n">is_tetrahedron_active</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a49fdcfaf239bff7e181f1aaa5c7bb932"><span></span><span class="n">is_facet_active</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">facet_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a4edcaa0ed7b9661d5a8deb6fe63c7839"><span class="std std-ref">is_split_tetrahedron_valid</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a1645e8ce599bf3ab1036071f1af3a939"><span class="std std-ref">split_tetrahedron</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a60b6e5ebe55c5b9bc26f016589eb3054"><span class="std std-ref">is_split_facet_valid</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1acf9cdefd8a07481ca6b3b4d8b1ef280c"><span class="std std-ref">is_split_facet_valid</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1abfd8444fde310d0e8229cb353f718451"><span class="std std-ref">split_facet</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a5de1767b5b8ae9b7ae522c5434930f5b"><span class="std std-ref">split_facet</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a8ba26a3c56f7221bd96d8a812c4c7b70"><span class="std std-ref">is_split_edge_valid</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a38a52fa447ee7e454cc894bb49968f43"><span class="std std-ref">is_split_edge_valid</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_SolidSplitEdgeInfo.html#doxid-structgeode-1-1-solid-split-edge-info"><span class="std std-ref">SolidSplitEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a954f2875b98f31ae3ce7e255d1c008c3"><span class="std std-ref">split_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <a class="reference internal" href="struct_geode_SolidSplitEdgeInfo.html#doxid-structgeode-1-1-solid-split-edge-info"><span class="std std-ref">SolidSplitEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1abf56f3477626be27058311526b2b5aef"><span class="std std-ref">split_edge</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1ac448e964d5b58cfc1edd8cad2458f2c1"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a62d81880d33946209a739309db819d8d"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_SolidCollapseEdgeInfo.html#doxid-structgeode-1-1-solid-collapse-edge-info"><span class="std std-ref">SolidCollapseEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1ad74eb355746ffd52b66a4788a99868bd"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <a class="reference internal" href="struct_geode_SolidCollapseEdgeInfo.html#doxid-structgeode-1-1-solid-collapse-edge-info"><span class="std std-ref">SolidCollapseEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1ae1f62e44988d327a78be2c5a3452add2"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span class="std std-ref">clean_tetrahedra</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a0f1152b138581b514523cbaf00b42fa1"><span class="std std-ref">clean_vertices</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1ab4e1a4c3bc3099e9b4472b7229ab89c4"><span class="std std-ref">clean_edges</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a37193dc0a7951ee5239b1dda623cb083"><span class="std std-ref">clean_facets</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a1d6c7140659d7b7378acc662ecc304f3"><span class="std std-ref">clean</span></a><span></span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_TetrahedralSolidEpsilonModifier.html#doxid-classgeode-1-1-tetrahedral-solid-epsilon-modifier"><span class="std std-ref">TetrahedralSolidEpsilonModifier</span></a><span></span><span class="p">;</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-tetrahedral-solid-modifier"></span><h2>Detailed Documentation</h2>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a4edcaa0ed7b9661d5a8deb6fe63c7839"><span id="index-1"></span><span></span><span class="kt">bool</span> <span class="n">is_split_tetrahedron_valid</span><span class="p">(</span><span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Check if a tetrahedron split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>tetrahedron_id</p></td>
+<td><p>Index of the tetrahedron to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a1645e8ce599bf3ab1036071f1af3a939"><span id="index-2"></span><a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <span class="n">split_tetrahedron</span><span class="p">(</span><span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Split a tetrahedron into four new tetrahedra.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>tetrahedron_id</p></td>
+<td><p>Index of the tetrahedron to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.  Given tetrahedron is set as inactive but not deleted.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>new vertex index and mappings between old and new mesh.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a60b6e5ebe55c5b9bc26f016589eb3054"><span id="index-3"></span><span></span><span class="kt">bool</span> <span class="n">is_split_facet_valid</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Check if a facet split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>facet</p></td>
+<td><p>Index of the PolyhedronFacet to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1acf9cdefd8a07481ca6b3b4d8b1ef280c"><span id="index-4"></span><span></span><span class="kt">bool</span> <span class="n">is_split_facet_valid</span><span class="p">(</span><span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Check if a facet split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>facet_id</p></td>
+<td><p>Unique index of the facet to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1abfd8444fde310d0e8229cb353f718451"><span id="index-5"></span><a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <span class="n">split_facet</span><span class="p">(</span><span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>facet_id</p></td>
+<td><p>Unique index of the facet to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.  Split tetrahedra are set as inactive but not deleted.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>new vertex index and mappings between old and new mesh.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a5de1767b5b8ae9b7ae522c5434930f5b"><span id="index-6"></span><a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <span class="n">split_facet</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra. Edge unique index is found and then the above function is called.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>facet</p></td>
+<td><p>Index of the PolyhedronFacet to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.  Split tetrahedra are set as inactive but not deleted.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>new vertex index and mappings between old and new mesh.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a8ba26a3c56f7221bd96d8a812c4c7b70"><span id="index-7"></span><span></span><span class="kt">bool</span> <span class="n">is_split_edge_valid</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Check if an edge split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a38a52fa447ee7e454cc894bb49968f43"><span id="index-8"></span><span></span><span class="kt">bool</span> <span class="n">is_split_edge_valid</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Check if an edge split will keep the mesh valid, meaning no tetrahedra volume flip its sign. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a954f2875b98f31ae3ce7e255d1c008c3"><span id="index-9"></span><a class="reference internal" href="struct_geode_SolidSplitEdgeInfo.html#doxid-structgeode-1-1-solid-split-edge-info"><span class="std std-ref">SolidSplitEdgeInfo</span></a><span></span> <span class="n">split_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.  Split tetrahedra are set as inactive but not deleted.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>new vertex index and mappings between old and new mesh.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1abf56f3477626be27058311526b2b5aef"><span id="index-10"></span><a class="reference internal" href="struct_geode_SolidSplitEdgeInfo.html#doxid-structgeode-1-1-solid-split-edge-info"><span class="std std-ref">SolidSplitEdgeInfo</span></a><span></span> <span class="n">split_edge</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the split point.  Split tetrahedra are set as inactive but not deleted.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>new vertex index and mappings between old and new mesh.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1ac448e964d5b58cfc1edd8cad2458f2c1"><span id="index-11"></span><span></span><span class="kt">bool</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning no tetrahedra volume flip its sign. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge to collapse.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if collapse will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a62d81880d33946209a739309db819d8d"><span id="index-12"></span><span></span><span class="kt">bool</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span><span class="n">index_t</span> <span class="n">_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning no tetrahedra volume flip its sign. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to collapse.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if collapse will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1ad74eb355746ffd52b66a4788a99868bd"><span id="index-13"></span><a class="reference internal" href="struct_geode_SolidCollapseEdgeInfo.html#doxid-structgeode-1-1-solid-collapse-edge-info"><span class="std std-ref">SolidCollapseEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Collapse an edge. The tetrahedra incident to this edge are set as inactive but not deleted.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge to collapse.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>new vertex index and mappings between old and new mesh.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1ae1f62e44988d327a78be2c5a3452add2"><span id="index-14"></span><a class="reference internal" href="struct_geode_SolidCollapseEdgeInfo.html#doxid-structgeode-1-1-solid-collapse-edge-info"><span class="std std-ref">SolidCollapseEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Collapse an edge. The tetrahedra incident to this edge are set as inactive but not deleted.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to collapse.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>new vertex index and mappings between old and new mesh.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span id="index-15"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_tetrahedra</span><span class="p">()</span></pre>
+<p>Clean up the mesh removing inactive tetrahedra</p>
+<p class="rubric">Returns:</p>
+<p>old2new mappings for tetrahedra</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a0f1152b138581b514523cbaf00b42fa1"><span id="index-16"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_vertices</span><span class="p">()</span></pre>
+<p>Clean up the mesh removing isolated vertices This method should be called after <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span class="std std-ref">clean_tetrahedra()</span></a></p>
+<p class="rubric">Returns:</p>
+<p>old2new mappings for vertices</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1ab4e1a4c3bc3099e9b4472b7229ab89c4"><span id="index-17"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_edges</span><span class="p">()</span></pre>
+<p>Clean up the mesh removing edges This method should be called after <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span class="std std-ref">clean_tetrahedra()</span></a></p>
+<p class="rubric">Returns:</p>
+<p>old2new mappings for edges</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a37193dc0a7951ee5239b1dda623cb083"><span id="index-18"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_facets</span><span class="p">()</span></pre>
+<p>Clean up the mesh removing facets This method should be called after <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span class="std std-ref">clean_tetrahedra()</span></a></p>
+<p class="rubric">Returns:</p>
+<p>old2new mappings for facets</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a1d6c7140659d7b7378acc662ecc304f3"><span id="index-19"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">clean</span><span class="p">()</span></pre>
+<p>Clean up the mesh removing inactive tetrahedra, isolated vertices, edges and facets.</p>
+<p class="rubric">Returns:</p>
+<p>old2new mappings for tetrahedra, vertices, edges and facets.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_TetrahedralSolidModifier.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

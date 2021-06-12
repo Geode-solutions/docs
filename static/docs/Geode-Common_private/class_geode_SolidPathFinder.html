@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class geode::SolidPathFinder &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::SurfacePathFinder" href="class_geode_SurfacePathFinder.html" />
+    <link rel="prev" title="class geode::SolidPatchFinder" href="class_geode_SolidPatchFinder.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-solidpathfinder">
+<span id="doxid-classgeode-1-1-solid-path-finder"></span><span id="index-0"></span><h1>class geode::SolidPathFinder</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>The objective of this class is to find paths inside TetrahedralSolid3D. <a class="reference internal" href="#details-classgeode-1-1-solid-path-finder"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;path_finder.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">SolidPathFinder</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <a class="reference internal" href="#doxid-classgeode-1-1-solid-path-finder-1a4c3b84a202eadd603d163839912df22c"><span class="std std-ref">SolidPathFinder</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">end</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_SolidPath.html#doxid-structgeode-1-1-solid-path"><span class="std std-ref">SolidPath</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-path-finder-1aa044d06e1ec4c568bb5acfc7f8448b15"><span></span><span class="n">find_path</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-solid-path-finder"></span><h2>Detailed Documentation</h2>
+<p>The objective of this class is to find paths inside TetrahedralSolid3D. As an example, this class is able to find a rectilinear path between two vertices. This class may be derived for custom path findings.</p>
+<div class="section" id="construction">
+<h3>Construction</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-path-finder-1a4c3b84a202eadd603d163839912df22c"><span id="index-1"></span><span></span><span class="n">SolidPathFinder</span><span class="p">(</span><span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">end</span><span class="p">)</span></pre>
+<p>Find a rectilinear path between two vertices.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>begin</p></td>
+<td><p>Index of the cut starting vertex</p></td>
+</tr>
+<tr class="row-even"><td><p>end</p></td>
+<td><p>Index of the cut ending vertex.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_SolidPathFinder.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

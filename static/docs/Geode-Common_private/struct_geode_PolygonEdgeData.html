@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template struct geode::PolygonEdgeData &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::PolygonEdgeInfo" href="struct_geode_PolygonEdgeInfo.html" />
+    <link rel="prev" title="template struct geode::PolygonData" href="struct_geode_PolygonData.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="template-struct-geode-polygonedgedata">
+<span id="doxid-structgeode-1-1-polygon-edge-data"></span><span id="index-0"></span><h1>template struct geode::PolygonEdgeData</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;data.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">PolygonEdgeData</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">PolygonEdge</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-data-1abf4245aafdcabf08c71bdd39998cfe0d"><span></span><span class="n">id</span></span><span></span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-data-1a05fbfb300e0e1d3d3c24c1d70fb309d1"><span></span><span class="n">vertex</span></span><span></span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-data-1a5fdab00bce77d7110fa35170462b0730"><span></span><span class="n">point</span></span><span></span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-data-1a26ef64f5d78cce35ec8f7b76d0110fc7"><span></span><span class="n">adj</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-data-1a76b201c5cbebb1d39cea9205a9a3ee9e"><span></span><span class="n">PolygonEdgeData</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+        <span class="n">PolygonEdge</span> <span class="n">edge_in</span>
+        <span class="p">);</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/struct_geode_PolygonEdgeData.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

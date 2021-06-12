@@ -1,0 +1,741 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>namespace geode &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="namespace geode::detail" href="namespace_geode_detail.html" />
+    <link rel="prev" title="enum GEO::Sign" href="enum_GEO_Sign.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="namespace-geode">
+<span id="doxid-namespacegeode"></span><span id="index-0"></span><h1>namespace geode</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">geode</span> <span class="p">{</span>
+
+<span class="c1">// namespaces</span>
+
+<span class="k">namespace</span> <a class="reference internal" href="namespace_geode_detail.html#doxid-namespacegeode-1-1detail"><span class="std std-ref">geode::detail</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2ea479fa70766a1514e507fb6912f9e5"><span></span><span class="n">VertexMultiMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a07f622f9290301bd1b0b364ed0807b44"><span></span><span class="n">EdgeMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1a07f622f9290301bd1b0b364ed0807b44"><span class="std std-ref">EdgeMapping</span></a><span></span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a54b0871837c233adb2d5b88a496cdd7a"><span></span><span class="n">OrientedEdgeMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7453100f135dccdd205cb9fa758be45d"><span></span><span class="n">EdgeMultiMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af88fc51271b7af46a7bb4b84a2d90d1e"><span></span><span class="n">FacetMultiMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f5bb31d010c44cbc41f6753a1d28304"><span></span><span class="n">TetrahedronMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1a7453100f135dccdd205cb9fa758be45d"><span class="std std-ref">EdgeMultiMapping</span></a><span></span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1bab4ec7e9ccefea836c5553826d6d3b"><span></span><span class="n">OrientedEdgeMultiMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab7c515d34c7589c847c6947c92e86274"><span></span><span class="n">OrientedEdge</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">Position</span><span class="p">,</span> <span class="n">Position</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad08f71e1c9db568dd62df0bf066813b1"><span></span><span class="n">SegmentSegmentIntersection</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">Position</span><span class="p">,</span> <span class="n">Position</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acbc58086feed61355d4235a09e6e6b80"><span></span><span class="n">SegmentTriangleIntersection</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">Side</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span></span><span class="n">Sign</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_SplitInfo.html#doxid-structgeode-1-1-split-info"><span class="std std-ref">SplitInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8e7703a3cc6ba023b28ebf51044c7abe"><span></span><span class="n">SplitTetrahedron</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_SplitInfo.html#doxid-structgeode-1-1-split-info"><span class="std std-ref">SplitInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4a52808eb7e527ae9ef93c94e03f11d2"><span></span><span class="n">SplitFacet</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0fe3791ddb7ee08d858458346d5f1367"><span></span><span class="n">FacetMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_SplitInfo.html#doxid-structgeode-1-1-split-info"><span class="std std-ref">SplitInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3ac1e72c38e74398b33cfe0180a2cdbb"><span></span><span class="n">SplitTriangle</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af3ede97a06831da5d71e5a7212f089cc"><span></span><span class="n">TriangleMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">PolygonEdge</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5a7ed69f08e560d569e1f124dc238d77"><span></span><span class="n">PolygonEdgeMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">PolygonEdge</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6c5d94f1b735ee60044b0c6dee07ef83"><span></span><span class="n">PolygonEdgeMultiMapping</span></span><span></span><span class="p">;</span>
+
+<span class="c1">// enums</span>
+
+<span class="k">enum</span> <a class="reference internal" href="enum_geode_IntersectionType.html#doxid-namespacegeode-1a9f15c2c020c07607391e3dd6a6ce8075"><span class="std std-ref">IntersectionType</span></a><span></span><span class="p">;</span>
+<span class="k">enum</span> <a class="reference internal" href="enum_geode_SplitSide.html#doxid-namespacegeode-1a379962424c8a834ac6bc5800259a57de"><span class="std std-ref">SplitSide</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// structs</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_AlongSolidSplitEdgeInfo.html#doxid-structgeode-1-1-along-solid-split-edge-info"><span class="std std-ref">AlongSolidSplitEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_CollapseEdgeInfo.html#doxid-structgeode-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Intersection</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_CorrectnessInfo.html#doxid-structgeode-1-1-correctness-info"><span class="std std-ref">CorrectnessInfo</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_GeometricSurfacePath.html#doxid-structgeode-1-1-geometric-surface-path"><span class="std std-ref">GeometricSurfacePath</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Intersection</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="p">;</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelCollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-model-collapse-polygon-edge-info"><span class="std std-ref">ModelCollapsePolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelSplitPolygonEdgeInfo.html#doxid-structgeode-1-1-model-split-polygon-edge-info"><span class="std std-ref">ModelSplitPolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="p">;</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_PatchFrontEdge.html#doxid-structgeode-1-1-patch-front-edge"><span class="std std-ref">PatchFrontEdge</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_PolygonData.html#doxid-structgeode-1-1-polygon-data"><span class="std std-ref">PolygonData</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_PolygonEdgeData.html#doxid-structgeode-1-1-polygon-edge-data"><span class="std std-ref">PolygonEdgeData</span></a><span></span><span class="p">;</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_PolygonEdgeInfo.html#doxid-structgeode-1-1-polygon-edge-info"><span class="std std-ref">PolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SideSurfaceCutPathInfo.html#doxid-structgeode-1-1-side-surface-cut-path-info"><span class="std std-ref">SideSurfaceCutPathInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SidedSolidSplitEdgeInfo.html#doxid-structgeode-1-1-sided-solid-split-edge-info"><span class="std std-ref">SidedSolidSplitEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SidedSurface.html#doxid-structgeode-1-1-sided-surface"><span class="std std-ref">SidedSurface</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidCollapseEdgeInfo.html#doxid-structgeode-1-1-solid-collapse-edge-info"><span class="std std-ref">SolidCollapseEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidPatch.html#doxid-structgeode-1-1-solid-patch"><span class="std std-ref">SolidPatch</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidPath.html#doxid-structgeode-1-1-solid-path"><span class="std std-ref">SolidPath</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidSplitEdgeInfo.html#doxid-structgeode-1-1-solid-split-edge-info"><span class="std std-ref">SolidSplitEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SortedSurfaces.html#doxid-structgeode-1-1-sorted-surfaces"><span class="std std-ref">SortedSurfaces</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SplitInfo.html#doxid-structgeode-1-1-split-info"><span class="std std-ref">SplitInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SplitPolygonEdgeInfo.html#doxid-structgeode-1-1-split-polygon-edge-info"><span class="std std-ref">SplitPolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SplitTriangleInfo.html#doxid-structgeode-1-1-split-triangle-info"><span class="std std-ref">SplitTriangleInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SurfaceCutPathInfo.html#doxid-structgeode-1-1-surface-cut-path-info"><span class="std std-ref">SurfaceCutPathInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SurfacePath.html#doxid-structgeode-1-1-surface-path"><span class="std std-ref">SurfacePath</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// classes</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRepGeometricModifier.html#doxid-classgeode-1-1-b-rep-geometric-modifier"><span class="std std-ref">BRepGeometricModifier</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_EdgedCurveModifier.html#doxid-classgeode-1-1-edged-curve-modifier"><span class="std std-ref">EdgedCurveModifier</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_LicensedModule.html#doxid-classgeode-1-1-licensed-module"><span class="std std-ref">LicensedModule</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PropagationSettings.html#doxid-classgeode-1-1-propagation-settings"><span class="std std-ref">PropagationSettings</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RayTracing3D.html#doxid-classgeode-1-1-ray-tracing3-d"><span class="std std-ref">RayTracing3D</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SectionGeometricModifier.html#doxid-classgeode-1-1-section-geometric-modifier"><span class="std std-ref">SectionGeometricModifier</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SolidPatchFinder.html#doxid-classgeode-1-1-solid-patch-finder"><span class="std std-ref">SolidPatchFinder</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SolidPathFinder.html#doxid-classgeode-1-1-solid-path-finder"><span class="std std-ref">SolidPathFinder</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SurfacePathFinder.html#doxid-classgeode-1-1-surface-path-finder"><span class="std std-ref">SurfacePathFinder</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SurfaceSegmentFinder.html#doxid-classgeode-1-1-surface-segment-finder"><span class="std std-ref">SurfaceSegmentFinder</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_SurfaceSegmentFinder2D.html#doxid-classgeode-1-1-surface-segment-finder2-d"><span class="std std-ref">SurfaceSegmentFinder2D</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TetrahedraClosestThan.html#doxid-classgeode-1-1-tetrahedra-closest-than"><span class="std std-ref">TetrahedraClosestThan</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TetrahedralSolidEpsilonModifier.html#doxid-classgeode-1-1-tetrahedral-solid-epsilon-modifier"><span class="std std-ref">TetrahedralSolidEpsilonModifier</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier"><span class="std std-ref">TetrahedralSolidModifier</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TrianglesClosestThan.html#doxid-classgeode-1-1-triangles-closest-than"><span class="std std-ref">TrianglesClosestThan</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TriangulatedSurfaceEpsilonModifier.html#doxid-classgeode-1-1-triangulated-surface-epsilon-modifier"><span class="std std-ref">TriangulatedSurfaceEpsilonModifier</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TriangulatedSurfaceModifier.html#doxid-classgeode-1-1-triangulated-surface-modifier"><span class="std std-ref">TriangulatedSurfaceModifier</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// global functions</span>
+
+<span class="kt">void</span> <span class="n">geode_common_core_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad4f10777dddbda52723e94f7296c94b1"><span></span><span class="n">initialize_common_core</span></span><span></span><span class="p">();</span>
+<span class="kt">void</span> <span class="n">geode_common_cutter_solid_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3d2ffecdc8e22361a688f058b4374a46"><span></span><span class="n">initialize_cutter_solid</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b691d4711522d638d7d8f1b087e597a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae9dc6097b7f8cfa25fc265176e3c5aa9"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolidBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3fbc1fb49f0ca7c4ea4744e735440007"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a80b5a064401aa01835668d57032444e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1af14e4907bb3d08e5cc6822c283db8b65"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolidBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1af40a127c86216f0ba2c8d1276fe61644"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aaf755b9136ab518d12e2fa75dd8bdd12"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ae6c593d0a7700b98143c840c6582c7ae"><span class="std std-ref">cut_along_patch</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">,</span>
+    <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">patch</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a6ede9860c6f3ee584c3027d348c51acf"><span class="std std-ref">cut_along_patch</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PatchFrontEdge.html#doxid-structgeode-1-1-patch-front-edge"><span class="std std-ref">PatchFrontEdge</span></a><span></span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a0ead8515ad1babd6030021fc91093a81"><span class="std std-ref">cut_along_path</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SolidPath.html#doxid-structgeode-1-1-solid-path"><span class="std std-ref">SolidPath</span></a><span></span><span class="o">&gt;</span> <span class="n">path_splits</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8d1965d343d128794d9cd2aac35db44a"><span></span><span class="n">cut_along_path</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_common_cutter_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca8984bbdbafc24b674832791b57573b"><span></span><span class="n">initialize_cutter_surface</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac5ecef06abef60896357a8eb77586520"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f77df444726f93a1df8e868ba125aa3"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurfaceBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9fc374c0a89e96e09ba3f518abe2341d"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_GeometricSurfacePath.html#doxid-structgeode-1-1-geometric-surface-path"><span class="std std-ref">GeometricSurfacePath</span></a><span></span><span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">GeometricSurfacePath2D</span><span class="o">&gt;</span> <span class="n">geode_common_cutter_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa01a2e2353edd1a8fb5b271d31b4dca5"><span></span><span class="n">determine_cuts</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SurfacePath.html#doxid-structgeode-1-1-surface-path"><span class="std std-ref">geode::SurfacePath</span></a><span></span><span class="o">&gt;</span> <span class="n">path_splits</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">GeometricSurfacePath3D</span><span class="o">&gt;</span> <span class="n">geode_common_cutter_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a560e11ef71319023220ec1bfe13197b8"><span></span><span class="n">determine_cuts</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SurfacePath.html#doxid-structgeode-1-1-surface-path"><span class="std std-ref">geode::SurfacePath</span></a><span></span><span class="o">&gt;</span> <span class="n">path_splits</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_SurfaceCutPathInfo.html#doxid-structgeode-1-1-surface-cut-path-info"><span class="std std-ref">SurfaceCutPathInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6295c002ad4fdf131e7e66f0babc6bc5"><span></span><span class="n">cut_along_path</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">TriangulatedSurfaceBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_GeometricSurfacePath.html#doxid-structgeode-1-1-geometric-surface-path"><span class="std std-ref">GeometricSurfacePath</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">path_splits</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SurfaceCutPathInfo.html#doxid-structgeode-1-1-surface-cut-path-info"><span class="std std-ref">SurfaceCutPathInfo</span></a><span></span> <span class="n">geode_common_cutter_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1a483e9ec7c6543eb0d0f6c3210961b0"><span></span><span class="n">cut_along_path</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">TriangulatedSurfaceBuilder2D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a504bb34b6ea51d563984b00589d5001d"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1afdb46be0cc0cf92e9c480d0f4af7ede7"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">InfiniteLine</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a713615f1e1f632a857fbbda376b9b832"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Segment</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a73b98a5519467f090fd3b8dd6a9eb008"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Sphere</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a46c93d7de8cb42c63334569e28c385bd"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">InfiniteLine</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab9498c535a0152c93f4aad66e9e8a67c"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad391ccfd3ec3b37beae6bcc7c210f915"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">Segment</span><span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a2be04752895258a178372f17bcace4dc"><span class="std std-ref">line_plane_intersection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1aa1614736eca38ee7ade9cf48c445a838"><span class="std std-ref">line_sphere_intersection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Sphere</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">sphere</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a5d4565bc53220aad033ce4b621bedbcc"><span class="std std-ref">segment_sphere_intersection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Sphere</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">sphere</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a8fff93860d7f97aeb966ec33cd2d71f2"><span class="std std-ref">segment_plane_intersection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1af9361729db9df02b711991f81bba98bd"><span class="std std-ref">segment_triangle_intersection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a7d1e1b37a522869c6aa9f970db7f69e6"><span class="std std-ref">line_triangle_intersection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point2D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a9c077cf02fe9fde29c4ee125d4fc6577"><span class="std std-ref">line_line_intersection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line0</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line1</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point2D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a5c0fb083b5a148832f504c4981cb8b27"><span class="std std-ref">segment_segment_intersection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment0</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment1</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point2D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1af183d9de8277fcdb343ccb102892c9bd"><span class="std std-ref">segment_line_intersection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="#doxid-namespacegeode-1ad08f71e1c9db568dd62df0bf066813b1"><span class="std std-ref">SegmentSegmentIntersection</span></a><span></span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a6e73cb933a08dd19f9b8d930883240f7"><span class="std std-ref">segment_segment_intersection_detection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment0</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment1</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="#doxid-namespacegeode-1ad08f71e1c9db568dd62df0bf066813b1"><span class="std std-ref">SegmentSegmentIntersection</span></a><span></span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ac7925cfa4dfaac09f950f40514c745ca"><span class="std std-ref">colinear_segment_segment_intersection_detection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment0</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment1</span>
+    <span class="p">);</span>
+
+<span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a0a70f0f58f9404726abb3afc63550f20"><span class="std std-ref">segment_line_intersection_detection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line</span>
+    <span class="p">);</span>
+
+<span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a3cac0c99ae68f2ec47d7f4c6f005b259"><span class="std std-ref">line_triangle_intersection_detection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="#doxid-namespacegeode-1acbc58086feed61355d4235a09e6e6b80"><span class="std std-ref">SegmentTriangleIntersection</span></a><span></span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab6cb9014250ab15075f54ab5778e279c"><span class="std std-ref">segment_triangle_intersection_detection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">);</span>
+
+<span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a64525bfc296dc98d1afc8207452d0c62"><span class="std std-ref">segment_plane_intersection_detection</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8ec76900496f8c6e59d65c6ad941af27"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">InfiniteLine</span><span class="p">);</span>
+<span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab05fa036a7c8d00967ee8e15eaeacb09"><span class="std std-ref">point_side_to_segment</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">);</span>
+
+<span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a31276d066b93fb849913d63da10b6eda"><span class="std std-ref">point_side_to_line</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line</span>
+    <span class="p">);</span>
+
+<span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a55ddbf669431e9529c59dd8e88d20ca6"><span class="std std-ref">point_side_to_plane</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span><span class="p">);</span>
+
+<span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1aa4be1ed023ad79bd838d97bd70735e6f"><span class="std std-ref">point_side_to_triangle</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">Position</span> <a class="reference internal" href="#doxid-namespacegeode-1a8e59e9b66e1c5c4167e62abee2b3bf2e"><span class="std std-ref">point_segment_position</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">Position</span> <a class="reference internal" href="#doxid-namespacegeode-1ada03d7b63f307fc70de42337fd7d681d"><span class="std std-ref">point_triangle_position</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">triangle</span>
+    <span class="p">);</span>
+
+<span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a011ada8de7ea0f54da515a843817c1b4"><span class="std std-ref">point_tetra_position</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="k">const</span> <span class="n">Tetra</span><span class="o">&amp;</span> <span class="n">tetra</span><span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1358409b9ea9320efee0633fe3018bf4"><span></span><span class="n">radial_sort</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">points</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a373fb1dcaf2e8846a3b38103abfc8894"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
+<a class="reference internal" href="#doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span class="std std-ref">Sign</span></a><span></span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a7864fa260bdcfb6a4e6e4671a965b901"><span class="std std-ref">tetrahedron_volume_sign</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Tetra</span><span class="o">&amp;</span> <span class="n">tetra</span><span class="p">);</span>
+<a class="reference internal" href="#doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span class="std std-ref">Sign</span></a><span></span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1adb0cb74f7e5d499a3ebb08b1c3bdb70d"><span class="std std-ref">triangle_area_sign</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Triangle2D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">geode_common_helpers_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab5f1a298e8cd7b6d981d223be950705b"><span></span><span class="n">initialize_helpers</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9dd3655e0b4d0e1d23b6d3a8fd68c87b"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4efa1c27af37ca80b792b5290f406968"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SortedSurfaces.html#doxid-structgeode-1-1-sorted-surfaces"><span class="std std-ref">SortedSurfaces</span></a><span></span> <span class="n">geode_common_helpers_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aee16667b6580d0598a7fed9572f015b7"><span></span><span class="n">surface_radial_sort</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">MeshComponentVertex</span><span class="p">,</span> <span class="n">MeshComponentVertex</span><span class="o">&gt;&gt;</span> <span class="n">geode_common_helpers_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a62c919c40a7b61ff43951c517f3330fd"><span></span><span class="n">common_vertices</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MeshComponentVertex</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca4385eb3d676a070003e6270f6472ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">geode</span><span class="o">::</span><span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa46b66899e41d9590a9f8281e072b65f"><span></span><span class="n">rasterize_segment</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">grid</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">geode</span><span class="o">::</span><span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad89afc03c97241b12a048dd02cce17e3"><span></span><span class="n">conservative_rasterize_segment</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">grid</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">geode</span><span class="o">::</span><span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abe0639689b0be977a0a0effddf288782"><span></span><span class="n">rasterize_triangle</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">grid</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">triangle</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa9eca13715aca2567523b81021cda51a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8494fd593c0c13b77aa7c916bb8662e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_common_helpers_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ade7ecbb9ca6e76e682b979d2f8acb541"><span></span><span class="n">perform_propagation</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_PropagationSettings.html#doxid-classgeode-1-1-propagation-settings"><span class="std std-ref">PropagationSettings</span></a><span></span><span class="o">&amp;</span> <span class="n">settings</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac0e6f9c48056d3f1695aa602ed310cfa"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TrianglesClosestThan.html#doxid-classgeode-1-1-triangles-closest-than"><span class="std std-ref">TrianglesClosestThan</span></a><span></span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0724070a31543e94ba43204f99fd8a42"><span></span><span class="n">perform_propagation</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_PropagationSettings.html#doxid-classgeode-1-1-propagation-settings"><span class="std std-ref">PropagationSettings</span></a><span></span><span class="o">&amp;</span> <span class="n">settings</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_common_mesh_repair_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aac11f2412c9fca989fc3f1bae9c7538a"><span></span><span class="n">initialize_mesh_repair</span></span><span></span><span class="p">();</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac6689e12e8d42828a65f520146878ecb"><span></span><span class="n">repair_polygon_bad_orientations</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">geode_common_modifier_common_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af2e70f64eee004f3002873a2f84d9220"><span></span><span class="n">extract_mappings_from_split_info</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SplitInfo.html#doxid-structgeode-1-1-split-info"><span class="std std-ref">SplitInfo</span></a><span></span><span class="o">&gt;</span> <span class="n">split_info</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a03f85f290c26e7f47af72ee7e6376e84"><span></span><span class="n">add_mappings_in_multi_mappings</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;&amp;</span> <span class="n">multi_mappings</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <span class="n">new_mappings</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a51420c6569ed676b3aea3662b8916ffb"><span></span><span class="n">process_mapping_element</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">geode::Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">element</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_set</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">to_remove</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">new_to_old</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a677d786d9de7ae023085808c24b03000"><span></span><span class="n">process_mapping_element</span></span><span></span><span class="p">(</span>
+    <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">geode::MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">element</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_set</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">to_remove</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&gt;&amp;</span> <span class="n">new_to_olds</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">no_value</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">MappingType</span><span class="p">,</span> <span class="k">typename</span> <span class="n">NewToOldMap</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab8a5fed1171cccd934981effd0b9298d"><span></span><span class="n">update_mappings</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MappingType</span><span class="o">&gt;&amp;</span> <span class="n">mappings</span><span class="p">,</span>
+    <span class="n">NewToOldMap</span><span class="o">&amp;</span> <span class="n">new_to_old</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">no_value</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab111240fe8fa96fc5b1005232f8c9209"><span></span><span class="n">update_mappings</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">geode::Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;&amp;</span> <span class="n">mappings</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">no_value</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aed78bf3f2539f5f3dc9f4780b85598de"><span></span><span class="n">update_multi_mappings</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">geode::MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;&amp;</span> <span class="n">multi_mappings</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">no_value</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">MappingType</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abbfd06ee3b641e5af79bd27ee7972b22"><span></span><span class="n">erase_mapping_values</span></span><span></span><span class="p">(</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">T</span><span class="o">&gt;</span> <span class="n">values_to_delete</span><span class="p">,</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MappingType</span><span class="o">&gt;&amp;</span> <span class="n">mappings</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_common_modifier_edged_curve_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1adface64b1fe591fb1470d875e00906a5"><span></span><span class="n">initialize_modifier_edged_curve</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1abca05657b8eb6a446c79a4e841068fcf"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurveBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab753a4c9c96a0711fc42d95d03de3555"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_EdgedCurveModifier.html#doxid-classgeode-1-1-edged-curve-modifier"><span class="std std-ref">EdgedCurveModifier</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a74a13005266ccc48f0d9545d28c09dcb"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3dfa90e12c4f46df6d4d4c73cc499ab6"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f0825f02564723bd52f856a1ae100c9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6566ef2173a01c0dd2eae7f558bbbd33"><span></span><span class="n">initialize_modifier_model</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a85b04296d2e759083127ceaf2a792264"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4bd02aabaf2cf4d25e7f1471d6f5f682"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a96755a4b4b643ca905a8a29e0a07543b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">geode_common_modifier_solid_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca1037c51008da68e1286546ecb8a4cb"><span></span><span class="n">initialize_modifier_solid</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8ac5cec34b9c5986e0c83548aeb19f2d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b78e29335d938bae6153ff18f271541"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">geode_common_modifier_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae501c95d009522882c623f08458b10d6"><span></span><span class="n">initialize_modifier_surface</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4b6e0eef43419c522c8afdef30e0c045"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurfaceBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1cd4849bc62b1ce5604ec265c2a12ce4"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TriangulatedSurfaceEpsilonModifier.html#doxid-classgeode-1-1-triangulated-surface-epsilon-modifier"><span class="std std-ref">TriangulatedSurfaceEpsilonModifier</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1abf44db269e53cff0346ca0ff7a67be5a"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TriangulatedSurfaceModifier.html#doxid-classgeode-1-1-triangulated-surface-modifier"><span class="std std-ref">TriangulatedSurfaceModifier</span></a><span></span><span class="p">);</span>
+
+<span class="p">}</span> <span class="c1">// namespace geode</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-namespacegeode"></span><h2>Detailed Documentation</h2>
+<div class="section" id="global-functions">
+<h3>Global Functions</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae6c593d0a7700b98143c840c6582c7ae"><span id="index-1"></span><a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_patch</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">,</span>
+    <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">patch</span>
+    <span class="p">)</span></pre>
+<p>Perform a TetrahedralSolid3D planar cut along a triangle given the patch cut information.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>solid</p></td>
+<td><p>TetrahedralSolid to cut</p></td>
+</tr>
+<tr class="row-even"><td><p>builder</p></td>
+<td><p>Builder of the Solid</p></td>
+</tr>
+<tr class="row-odd"><td><p>triangle</p></td>
+<td><p>The triangle corresponding to the patch to insert in solid</p></td>
+</tr>
+<tr class="row-even"><td><p>patch</p></td>
+<td><p>Patch cut information  Cut tetrahedra are set as inactive but not deleted.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6ede9860c6f3ee584c3027d348c51acf"><span id="index-2"></span><a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_patch</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PatchFrontEdge.html#doxid-structgeode-1-1-patch-front-edge"><span class="std std-ref">PatchFrontEdge</span></a><span></span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">)</span></pre>
+<p>Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>solid</p></td>
+<td><p>TetrahedralSolid to cut</p></td>
+</tr>
+<tr class="row-even"><td><p>builder</p></td>
+<td><p>Builder of the Solid</p></td>
+</tr>
+<tr class="row-odd"><td><p>boundary_edges</p></td>
+<td><p>List of oriented Patch boundary as solid edges</p></td>
+</tr>
+<tr class="row-even"><td><p>triangle</p></td>
+<td><p>The triangle corresponding to the patch to insert in solid  Cut tetrahedra are set as inactive but not deleted.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a0ead8515ad1babd6030021fc91093a81"><span id="index-3"></span><a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_path</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SolidPath.html#doxid-structgeode-1-1-solid-path"><span class="std std-ref">SolidPath</span></a><span></span><span class="o">&gt;</span> <span class="n">path_splits</span>
+    <span class="p">)</span></pre>
+<p>Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>begin</p></td>
+<td><p>Index of the cut starting vertex</p></td>
+</tr>
+<tr class="row-even"><td><p>end</p></td>
+<td><p>Index of the cut ending vertex</p></td>
+</tr>
+<tr class="row-odd"><td><p>path_splits</p></td>
+<td><p>Ordered list of Path splits  Cut tetrahedra are set as inactive but not deleted.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2be04752895258a178372f17bcace4dc"><span id="index-4"></span><a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <span class="n">line_plane_intersection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span>
+    <span class="p">)</span></pre>
+<p>Compute the intersection between a plane and an infinite line</p>
+<p class="rubric">Returns:</p>
+<p>an optional of the intersection.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa1614736eca38ee7ade9cf48c445a838"><span id="index-5"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&gt;</span> <span class="n">line_sphere_intersection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Sphere</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">sphere</span>
+    <span class="p">)</span></pre>
+<p>Compute the intersection(s) between a sphere and an infinite line</p>
+<p class="rubric">Returns:</p>
+<p>an optional of the intersection points.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5d4565bc53220aad033ce4b621bedbcc"><span id="index-6"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&gt;</span> <span class="n">segment_sphere_intersection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Sphere</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">sphere</span>
+    <span class="p">)</span></pre>
+<p>Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.</p>
+<p class="rubric">Returns:</p>
+<p>an optional of the intersection points.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a8fff93860d7f97aeb966ec33cd2d71f2"><span id="index-7"></span><a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <span class="n">segment_plane_intersection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span>
+    <span class="p">)</span></pre>
+<p>Compute the intersection between a plane and a segment if the segment is included in the plane nothing is returned</p>
+<p class="rubric">Returns:</p>
+<p>an optional of the intersection point.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af9361729db9df02b711991f81bba98bd"><span id="index-8"></span><a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <span class="n">segment_triangle_intersection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">)</span></pre>
+<p>Compute the intersection of a segment and a triangle if the segment is included in the triangle plane nothing is returned</p>
+<p class="rubric">Returns:</p>
+<p>an optional of the intersection point.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7d1e1b37a522869c6aa9f970db7f69e6"><span id="index-9"></span><a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <span class="n">line_triangle_intersection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">)</span></pre>
+<p>Compute the intersection of a line and a triangle if the segment is included in the triangle plane nothing is returned</p>
+<p class="rubric">Returns:</p>
+<p>an optional of the intersection point.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a9c077cf02fe9fde29c4ee125d4fc6577"><span id="index-10"></span><a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point2D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <span class="n">line_line_intersection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line0</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line1</span>
+    <span class="p">)</span></pre>
+<p>Compute the intersection between two infinite lines</p>
+<p class="rubric">Returns:</p>
+<p>an optional of the intersection point.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5c0fb083b5a148832f504c4981cb8b27"><span id="index-11"></span><a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point2D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <span class="n">segment_segment_intersection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment0</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment1</span>
+    <span class="p">)</span></pre>
+<p>Compute the intersection between two segments</p>
+<p class="rubric">Returns:</p>
+<p>an optional of the intersection point.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af183d9de8277fcdb343ccb102892c9bd"><span id="index-12"></span><a class="reference internal" href="struct_geode_IntersectionResult.html#doxid-structgeode-1-1-intersection-result"><span class="std std-ref">IntersectionResult</span></a><span></span><span class="o">&lt;</span><span class="n">Point2D</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <span class="n">segment_line_intersection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line</span>
+    <span class="p">)</span></pre>
+<p>Compute the intersection between a segment and an infinite line</p>
+<p class="rubric">Returns:</p>
+<p>an optional of the intersection point.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6e73cb933a08dd19f9b8d930883240f7"><span id="index-13"></span><a class="reference internal" href="#doxid-namespacegeode-1ad08f71e1c9db568dd62df0bf066813b1"><span class="std std-ref">SegmentSegmentIntersection</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="n">segment_segment_intersection_detection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment0</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment1</span>
+    <span class="p">)</span></pre>
+<p>Detect if there is an intersection between two 2D segments</p>
+<p class="rubric">Returns:</p>
+<p>the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ac7925cfa4dfaac09f950f40514c745ca"><span id="index-14"></span><a class="reference internal" href="#doxid-namespacegeode-1ad08f71e1c9db568dd62df0bf066813b1"><span class="std std-ref">SegmentSegmentIntersection</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="n">colinear_segment_segment_intersection_detection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment0</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment1</span>
+    <span class="p">)</span></pre>
+<p>Detect the configuration between two 2D colinear segments</p>
+<p class="rubric">Returns:</p>
+<p>the position of the intersection on the two segments. Returns parallel-pallel if there is segment overlap</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a0a70f0f58f9404726abb3afc63550f20"><span id="index-15"></span><span></span><span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <span class="n">segment_line_intersection_detection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line</span>
+    <span class="p">)</span></pre>
+<p>Detect if there is an intersection between a line and a segment</p>
+<p class="rubric">Returns:</p>
+<p>the position of the intersection on the segment. Returns outside if there is no intersection or all points are colinear</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a3cac0c99ae68f2ec47d7f4c6f005b259"><span id="index-16"></span><span></span><span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <span class="n">line_triangle_intersection_detection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">InfiniteLine3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">)</span></pre>
+<p>Detect if there is an intersection between a line and a triangle</p>
+<p class="rubric">Returns:</p>
+<p>the position of the intersection on the triangle. Returns outside if there is no intersection or the line is coplanar with the triangle</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab6cb9014250ab15075f54ab5778e279c"><span id="index-17"></span><a class="reference internal" href="#doxid-namespacegeode-1acbc58086feed61355d4235a09e6e6b80"><span class="std std-ref">SegmentTriangleIntersection</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="n">segment_triangle_intersection_detection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">)</span></pre>
+<p>Detect if there is an intersection between a segment and a triangle</p>
+<p class="rubric">Returns:</p>
+<p>the position of the intersection on the segment and on the triangle. Returns outside if there is no intersection or the segment is coplanar with the triangle</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a64525bfc296dc98d1afc8207452d0c62"><span id="index-18"></span><span></span><span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <span class="n">segment_plane_intersection_detection</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span>
+    <span class="p">)</span></pre>
+<p>Detect if there is an intersection between a segment and a plane</p>
+<p class="rubric">Returns:</p>
+<p>the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab05fa036a7c8d00967ee8e15eaeacb09"><span id="index-19"></span><span></span><span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <span class="n">point_side_to_segment</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment</span>
+    <span class="p">)</span></pre>
+<p>Return the point side to a segment.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a31276d066b93fb849913d63da10b6eda"><span id="index-20"></span><span></span><span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <span class="n">point_side_to_line</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line</span>
+    <span class="p">)</span></pre>
+<p>Return the point side to a line.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a55ddbf669431e9529c59dd8e88d20ca6"><span id="index-21"></span><span></span><span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <span class="n">point_side_to_plane</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span>
+    <span class="p">)</span></pre>
+<p>Return the point side to a plane.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa4be1ed023ad79bd838d97bd70735e6f"><span id="index-22"></span><span></span><span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <span class="n">point_side_to_triangle</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">)</span></pre>
+<p>Return the point side to a 3D triangle.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a8e59e9b66e1c5c4167e62abee2b3bf2e"><span id="index-23"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">Position</span> <span class="n">point_segment_position</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span>
+    <span class="p">)</span></pre>
+<p>Return the position of a point on a segment: inside, outside or on segment vertex.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ada03d7b63f307fc70de42337fd7d681d"><span id="index-24"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">Position</span> <span class="n">point_triangle_position</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">triangle</span>
+    <span class="p">)</span></pre>
+<p>Return the position of a point in a triangle: inside, outside, on a triangle vertex or an edge.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a011ada8de7ea0f54da515a843817c1b4"><span id="index-25"></span><span></span><span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <span class="n">point_tetra_position</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Tetra</span><span class="o">&amp;</span> <span class="n">tetra</span>
+    <span class="p">)</span></pre>
+<p>Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7864fa260bdcfb6a4e6e4671a965b901"><span id="index-26"></span><a class="reference internal" href="#doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span class="std std-ref">Sign</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="n">tetrahedron_volume_sign</span><span class="p">(</span><span class="k">const</span> <span class="n">Tetra</span><span class="o">&amp;</span> <span class="n">tetra</span><span class="p">)</span></pre>
+<p>Return the sign of a tetrahedron volume.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1adb0cb74f7e5d499a3ebb08b1c3bdb70d"><span id="index-27"></span><a class="reference internal" href="#doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span class="std std-ref">Sign</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="n">triangle_area_sign</span><span class="p">(</span><span class="k">const</span> <span class="n">Triangle2D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">)</span></pre>
+<p>Return the sign of a 2D triangle area.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/namespace_geode.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

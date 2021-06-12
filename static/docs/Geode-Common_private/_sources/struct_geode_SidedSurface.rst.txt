@@ -1,0 +1,47 @@
+.. index:: pair: struct; geode::SidedSurface
+.. _doxid-structgeode_1_1_sided_surface:
+
+struct geode::SidedSurface
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <model.h>
+	
+	struct SidedSurface
+	{
+		// fields
+	
+		static constexpr local_index_t :target:`POSITIVE<doxid-structgeode_1_1_sided_surface_1aeb0c3b9a42a8864394fc82c040244d04>` { 0 };
+		static constexpr local_index_t :target:`NEGATIVE<doxid-structgeode_1_1_sided_surface_1aa7e7c499ed951427ff6f4176545fb767>` { 1 };
+		uuid :target:`id<doxid-structgeode_1_1_sided_surface_1a4e589aabbb425ac86a5dd5196f6ba417>`;
+		local_index_t :target:`side<doxid-structgeode_1_1_sided_surface_1a1a3ca619ad5d4cca9f2a3f45922606cb>` { 0 };
+		PolygonEdge :target:`edge<doxid-structgeode_1_1_sided_surface_1a3788e877fa91327156cf0895935c5fe7>`;
+
+		// construction
+	
+		:target:`SidedSurface<doxid-structgeode_1_1_sided_surface_1ae00513d85a8a66b8bb518ad1298b466a>`();
+	
+		:target:`SidedSurface<doxid-structgeode_1_1_sided_surface_1ae52abf5282af4bb5c4d88766cd04c6c6>`(
+			uuid id_in,
+			local_index_t side_in,
+			PolygonEdge edge_in
+			);
+	
+		:target:`SidedSurface<doxid-structgeode_1_1_sided_surface_1a749ed56706a5323b4a2c55b3aa1356c5>`(
+			uuid id_in,
+			local_index_t side_in
+			);
+
+		// methods
+	
+		bool :target:`operator ==<doxid-structgeode_1_1_sided_surface_1a4f8e28f9db3251d0b35fbcc31663fcf0>` (const SidedSurface& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1_sided_surface_1a12b69d62dc71214983f0a689a7275b95>` (const SidedSurface& other) const;
+	};

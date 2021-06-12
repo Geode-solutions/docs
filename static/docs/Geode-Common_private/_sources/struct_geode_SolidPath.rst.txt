@@ -1,0 +1,56 @@
+.. index:: pair: struct; geode::SolidPath
+.. _doxid-structgeode_1_1_solid_path:
+
+struct geode::SolidPath
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <path_finder.h>
+	
+	struct SolidPath
+	{
+		// fields
+	
+		static constexpr std::array<geode::Position, 3> :target:`vertex_position<doxid-structgeode_1_1_solid_path_1a58043b36f003604bb78a1ab66623da66>` {             { geode::Position::vertex0, geode::Position::vertex1,                 geode::Position::vertex2 }         };
+		static constexpr std::array<geode::Position, 3> :target:`edge_position<doxid-structgeode_1_1_solid_path_1a6ed3c0d6c5ac7302165c3dae6f61d0a3>` {             { geode::Position::edge0, geode::Position::edge1,                 geode::Position::edge2 }         };
+		Position :target:`position<doxid-structgeode_1_1_solid_path_1a337c883f7ef580ae8079dae02901047f>` { Position::outside };
+		PolyhedronFacet :target:`facet<doxid-structgeode_1_1_solid_path_1abdb2c75da894ee83ca4721e0be6252bb>`;
+		index_t :target:`vertex_id<doxid-structgeode_1_1_solid_path_1adb7493b7a4f05efe4e2319b04f7b83d4>` { NO_ID };
+
+		// construction
+	
+		:target:`SolidPath<doxid-structgeode_1_1_solid_path_1ab158486ef5c9ffae9723214e63adbcb1>`(
+			const TetrahedralSolid3D& solid,
+			PolyhedronFacet facet_in,
+			Position position_in
+			);
+	
+		:target:`SolidPath<doxid-structgeode_1_1_solid_path_1aa08d8a94153680f85dc62587e826f2a4>`(index_t vertex_in);
+		:target:`SolidPath<doxid-structgeode_1_1_solid_path_1acde8427867de502c6c5a501378704e91>`();
+
+		// methods
+	
+		bool :target:`is_vertex<doxid-structgeode_1_1_solid_path_1a84107ad20b67716a35d1edd4593a894a>`() const;
+		bool :target:`is_facet_vertex<doxid-structgeode_1_1_solid_path_1a470acbce58ad57671195aa450ac53799>`() const;
+		bool :target:`is_edge<doxid-structgeode_1_1_solid_path_1a790b28afedcdad4a169de7ac79745084>`() const;
+		bool :target:`is_facet<doxid-structgeode_1_1_solid_path_1aecdb4304fb52b398bf8a0b148b9b60ca>`() const;
+	
+		bool :target:`are_same_paths<doxid-structgeode_1_1_solid_path_1a11b9237dbb2ae2d53582bd38aa4cdb7f>`(
+			const TetrahedralSolid3D& solid,
+			const SolidPath& other
+			) const;
+	
+		geode::Position :target:`get_vertex_position<doxid-structgeode_1_1_solid_path_1a2e55b28f242dbab408854ed1b3d2ea5c>`(geode::local_index_t vertex) const;
+		geode::Position :target:`get_edge_position<doxid-structgeode_1_1_solid_path_1a409bb5f198a44b29dc6128f339f65809>`(geode::local_index_t edge) const;
+		geode::local_index_t :target:`get_edge_index<doxid-structgeode_1_1_solid_path_1a6161462f28d61ea5ccc4afaeb7a21997>`() const;
+		geode::local_index_t :target:`get_vertex_index<doxid-structgeode_1_1_solid_path_1afca54257f30239d739fc664d3cb4036f>`() const;
+		geode::local_index_t :target:`get_edge_vertex_id<doxid-structgeode_1_1_solid_path_1a7a5bcab42b0a3a9b00e40a1a8c25c08c>`(geode::local_index_t vertex) const;
+	};

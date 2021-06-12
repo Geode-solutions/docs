@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::SurfaceSegmentFinder
+.. _doxid-classgeode_1_1_surface_segment_finder:
+
+template class geode::SurfaceSegmentFinder
+==========================================
+
+.. toctree::
+	:hidden:
+
+This class is able to find a rectilinear path between two vertices. This class may be derived for custom path findings.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_segment_finder.h>
+	
+	template <index_t dimension>
+	class SurfaceSegmentFinder: public :ref:`geode::SurfacePathFinder<doxid-classgeode_1_1_surface_path_finder>`
+	{
+	public:
+		// construction
+	
+		:target:`SurfaceSegmentFinder<doxid-classgeode_1_1_surface_segment_finder_1a368dfbcbc6bf5234048e20bc0d0afe49>`(
+			const TriangulatedSurface<dimension>& surface,
+			index_t begin,
+			index_t end
+			);
+	};
+
+	// direct descendants
+
+	class :ref:`SurfaceSegmentFinder2D<doxid-classgeode_1_1_surface_segment_finder2_d>`;

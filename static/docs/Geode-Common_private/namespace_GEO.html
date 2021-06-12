@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>namespace GEO &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="namespace GEO::Numeric" href="namespace_GEO_Numeric.html" />
+    <link rel="prev" title="Global Namespace" href="global.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="namespace-geo">
+<span id="doxid-namespace-g-e-o"></span><span id="index-0"></span><h1>namespace GEO</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">GEO</span> <span class="p">{</span>
+
+<span class="c1">// namespaces</span>
+
+<span class="k">namespace</span> <a class="reference internal" href="namespace_GEO_Numeric.html#doxid-namespace-g-e-o-1-1-numeric"><span class="std std-ref">GEO::Numeric</span></a><span></span><span class="p">;</span>
+<span class="k">namespace</span> <a class="reference internal" href="namespace_GEO_PCK.html#doxid-namespace-g-e-o-1-1-p-c-k"><span class="std std-ref">GEO::PCK</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="n">geo_index_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1a915b0eb4dd0c3efe278d558468383534"><span></span><span class="n">index_t</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">geo_signed_index_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1a545c8df15809d86c5efeea8500b1d14c"><span></span><span class="n">signed_index_t</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">geo_coord_index_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1ae771f961036ac7f98502ff145b99d424"><span></span><span class="n">coord_index_t</span></span><span></span><span class="p">;</span>
+
+<span class="c1">// enums</span>
+
+<span class="k">enum</span> <a class="reference internal" href="enum_GEO_Sign.html#doxid-namespace-g-e-o-1a9c97e58e4526cb2ab931b3fde0a3b002"><span class="std std-ref">Sign</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// global functions</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1a4ca5364c7e7832c0b3382f32ba5c92be"><span></span><span class="n">geo_argused</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">T</span><span class="o">&gt;</span>
+<a class="reference internal" href="enum_GEO_Sign.html#doxid-namespace-g-e-o-1a9c97e58e4526cb2ab931b3fde0a3b002"><span class="std std-ref">Sign</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1a8e59d9c172507c159f0bee7a004f34f6"><span></span><span class="n">geo_sgn</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">x</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="n">T</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1a38306dc5e49d6eb82d7831c971db600a"><span></span><span class="n">geo_sqr</span></span><span></span><span class="p">(</span><span class="n">T</span> <span class="n">x</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1a805127975ed6494e3b6e0c2432221c67"><span></span><span class="n">geo_clamp</span></span><span></span><span class="p">(</span>
+    <span class="n">T</span><span class="o">&amp;</span> <span class="n">x</span><span class="p">,</span>
+    <span class="n">T</span> <span class="n">min</span><span class="p">,</span>
+    <span class="n">T</span> <span class="n">max</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="#doxid-namespace-g-e-o-1a915b0eb4dd0c3efe278d558468383534"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1a3f1009bfe42518cc1b5cfb63d1e6d261"><span></span><span class="n">max_index_t</span></span><span></span><span class="p">();</span>
+<a class="reference internal" href="#doxid-namespace-g-e-o-1a545c8df15809d86c5efeea8500b1d14c"><span class="std std-ref">signed_index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1ad95e207a448865de6d95eb46abecf236"><span></span><span class="n">max_signed_index_t</span></span><span></span><span class="p">();</span>
+<a class="reference internal" href="#doxid-namespace-g-e-o-1a545c8df15809d86c5efeea8500b1d14c"><span class="std std-ref">signed_index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1a194370ec786c598bd8b5f2c72a2b7519"><span></span><span class="n">min_signed_index_t</span></span><span></span><span class="p">();</span>
+<span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1ae22897cf36b6315d684bf4b7de314f3b"><span></span><span class="n">round</span></span><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">x</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="c1">// namespace GEO</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/namespace_GEO.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

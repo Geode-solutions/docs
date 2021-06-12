@@ -1,0 +1,89 @@
+.. index:: pair: namespace; geode::detail
+.. _doxid-namespacegeode_1_1detail:
+
+namespace geode::detail
+=======================
+
+.. toctree::
+	:hidden:
+
+	class_geode_detail_ModelGeometricModifier.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace detail {
+
+	// classes
+
+	template <typename Model, typename ModelBuilder, index_t dimension>
+	class :ref:`ModelGeometricModifier<doxid-classgeode_1_1detail_1_1_model_geometric_modifier>`;
+
+	// global functions
+
+	Side :target:`side<doxid-namespacegeode_1_1detail_1af240c2fbebec7966f07c3384d1f45dbc>`(const :ref:`GEO::Sign<doxid-namespace_g_e_o_1a9c97e58e4526cb2ab931b3fde0a3b002>`& sign);
+	Side :target:`opposite_side<doxid-namespacegeode_1_1detail_1a197bc5b4585fbe6eff35b9945c68c70c>`(const :ref:`GEO::Sign<doxid-namespace_g_e_o_1a9c97e58e4526cb2ab931b3fde0a3b002>`& sign);
+
+	Position :target:`segment_intersection_detection<doxid-namespacegeode_1_1detail_1a808512cbe026809fad5f4d3327a1915c>`(
+		const Side& s0,
+		const Side& s1
+		);
+
+	Position :target:`triangle_intersection_detection<doxid-namespacegeode_1_1detail_1ad3375c97b21ce2e75e0cb6cb98906478>`(
+		const Side s0,
+		const Side s1,
+		const Side s2
+		);
+
+	Position :target:`point_segment_position<doxid-namespacegeode_1_1detail_1ae006296facae0cdf8a48919f6d16ba43>`(
+		const Side& s0,
+		const Side& s1
+		);
+
+	Position :target:`point_segment_position<doxid-namespacegeode_1_1detail_1a17cd7336647722d6a938e38db95c493f>`(
+		const Side& s0,
+		const Side& s1,
+		bool points_aligned
+		);
+
+	Position :target:`point_triangle_position<doxid-namespacegeode_1_1detail_1a0c105b001ec37936b1c2247621a1a4e0>`(
+		const Side s0,
+		const Side s1,
+		const Side s2
+		);
+
+	Position :target:`point_triangle_position<doxid-namespacegeode_1_1detail_1a71e42ea75e91419c0efb39e3a3ebf5ce>`(
+		const Side s0,
+		const Side s1,
+		const Side s2,
+		bool point_on_plane
+		);
+
+	Position :target:`point_tetra_position<doxid-namespacegeode_1_1detail_1a7a024a66fee6f3e05ea230a9849dbaf9>`(const std::array<:ref:`GEO::Sign<doxid-namespace_g_e_o_1a9c97e58e4526cb2ab931b3fde0a3b002>`, 4>& signs);
+
+	template <index_t dimension>
+	std::tuple<Position, Point<dimension>> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1af9132842ac0d7db9548c17013cc24d75>`(
+		const SolidMesh<dimension>& solid,
+		index_t polyhedron,
+		const Point<dimension>& point
+		);
+
+	template <index_t dimension>
+	std::tuple<Position, Point<dimension>> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1aa5c05a99a079d88f9c4fe82c072e6221>`(
+		const SolidMesh<dimension>& solid,
+		const PolyhedronFacet& facet,
+		const Point<dimension>& point
+		);
+
+	template <index_t dimension>
+	std::tuple<Position, Point<dimension>> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1ac1945e2ee1563343057f561ec34df602>`(
+		const SurfaceMesh<dimension>& surface,
+		index_t polygon,
+		const Point<dimension>& point
+		);
+
+	} // namespace detail

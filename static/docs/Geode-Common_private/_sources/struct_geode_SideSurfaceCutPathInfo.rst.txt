@@ -1,0 +1,30 @@
+.. index:: pair: struct; geode::SideSurfaceCutPathInfo
+.. _doxid-structgeode_1_1_side_surface_cut_path_info:
+
+struct geode::SideSurfaceCutPathInfo
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cut_along_surface_path.h>
+	
+	struct SideSurfaceCutPathInfo
+	{
+		// fields
+	
+		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`> :target:`along_path<doxid-structgeode_1_1_side_surface_cut_path_info_1abd31dce367d6f92211ebae99494269b5>`;
+		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`> :target:`across_path<doxid-structgeode_1_1_side_surface_cut_path_info_1aeba7c7ebc629be024d425799d805f3ed>`;
+		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`> :target:`remaining<doxid-structgeode_1_1_side_surface_cut_path_info_1aa7ac747b4e97921477fd01dec0090d8e>`;
+		std::vector<:ref:`TriangleMapping<doxid-namespacegeode_1af3ede97a06831da5d71e5a7212f089cc>`> :target:`triangles<doxid-structgeode_1_1_side_surface_cut_path_info_1ad9ba84dfeb56a0c1334d90ceae133ba1>`;
+
+		// construction
+	
+		:target:`SideSurfaceCutPathInfo<doxid-structgeode_1_1_side_surface_cut_path_info_1ac73f29b6eb70956b3e44ffb82f02cd90>`(std::size_t size);
+	};

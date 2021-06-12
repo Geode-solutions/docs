@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>namespace GEO::Numeric &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template struct GEO::Numeric::Limits" href="struct_GEO_Numeric_Limits.html" />
+    <link rel="prev" title="namespace GEO" href="namespace_GEO.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="namespace-geo-numeric">
+<span id="doxid-namespace-g-e-o-1-1-numeric"></span><span id="index-0"></span><h1>namespace GEO::Numeric</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">Numeric</span> <span class="p">{</span>
+
+<span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="kt">void</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a4f516f53674a10a4189c6542af31838a"><span></span><span class="n">pointer</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">int8_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a2d580e2799fb5dbf968781bec533208a"><span></span><span class="n">int8</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">int16_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1af4570a294abbfeb6ed32cd72a5e40cd6"><span></span><span class="n">int16</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">int32_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a32555b9f4021482b8ba971b6f85bc1e3"><span></span><span class="n">int32</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">int64_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1af901fbac3dae8d2574abe80982f8ebad"><span></span><span class="n">int64</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">uint8_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a10c083442de46256356949e839c1e198"><span></span><span class="n">uint8</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">uint16_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a6b2dc7b1b027b4ade569f51d8dfa7689"><span></span><span class="n">uint16</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a709b9e865f51e98312c609af91cf26cb"><span></span><span class="n">uint32</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">uint64_t</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a22fe0b5f90a7aae0b6b4ece65b6fb08f"><span></span><span class="n">uint64</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a009bf03423eda0c619926c52fc819cc0"><span></span><span class="n">float32</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a2dbc489fe1916af86c3cec8f7b3f2345"><span></span><span class="n">float64</span></span><span></span><span class="p">;</span>
+
+<span class="c1">// structs</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_GEO_Numeric_Limits.html#doxid-struct-g-e-o-1-1-numeric-1-1-limits"><span class="std std-ref">Limits</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">T</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">is_numeric</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_GEO_Numeric_LimitsHelper.html#doxid-struct-g-e-o-1-1-numeric-1-1-limits-helper"><span class="std std-ref">LimitsHelper</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_GEO_Numeric_LimitsHelper-2.html#doxid-struct-g-e-o-1-1-numeric-1-1-limits-helper-3-01-t-00-01true-01-4"><span class="std std-ref">LimitsHelper&lt;T, true&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// global functions</span>
+
+<a class="reference internal" href="#doxid-namespace-g-e-o-1-1-numeric-1a009bf03423eda0c619926c52fc819cc0"><span class="std std-ref">float32</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a563dbae28bbe5d82c90a04e106d8fb6b"><span></span><span class="n">max_float32</span></span><span></span><span class="p">();</span>
+<a class="reference internal" href="#doxid-namespace-g-e-o-1-1-numeric-1a009bf03423eda0c619926c52fc819cc0"><span class="std std-ref">float32</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1ac4427788e2549a621df5a7521d88f8a4"><span></span><span class="n">min_float32</span></span><span></span><span class="p">();</span>
+<a class="reference internal" href="#doxid-namespace-g-e-o-1-1-numeric-1a2dbc489fe1916af86c3cec8f7b3f2345"><span class="std std-ref">float64</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a52d499ce3d358f905ce81f2981701e0c"><span></span><span class="n">max_float64</span></span><span></span><span class="p">();</span>
+<a class="reference internal" href="#doxid-namespace-g-e-o-1-1-numeric-1a2dbc489fe1916af86c3cec8f7b3f2345"><span class="std std-ref">float64</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1abfc33298edb6f9db917a43ce78cc4940"><span></span><span class="n">min_float64</span></span><span></span><span class="p">();</span>
+<span class="kt">bool</span> <span class="n">geode_common_geometry_api</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a9001e8fd7c4162e11106c92ab6b02471"><span></span><span class="n">is_nan</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespace-g-e-o-1-1-numeric-1a009bf03423eda0c619926c52fc819cc0"><span class="std std-ref">float32</span></a><span></span> <span class="n">x</span><span class="p">);</span>
+<span class="kt">bool</span> <span class="n">geode_common_geometry_api</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1af379c1e1fbdb1cd26c097c4ba977edbd"><span></span><span class="n">is_nan</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespace-g-e-o-1-1-numeric-1a2dbc489fe1916af86c3cec8f7b3f2345"><span class="std std-ref">float64</span></a><span></span> <span class="n">x</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">geode_common_geometry_api</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a6c736d3899f87ad17420b7a5e3a39b3b"><span></span><span class="n">random_reset</span></span><span></span><span class="p">();</span>
+<a class="reference internal" href="#doxid-namespace-g-e-o-1-1-numeric-1a32555b9f4021482b8ba971b6f85bc1e3"><span class="std std-ref">int32</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1a44800ae83b92984a3d8a7c4752aec39e"><span></span><span class="n">random_int32</span></span><span></span><span class="p">();</span>
+<a class="reference internal" href="#doxid-namespace-g-e-o-1-1-numeric-1a009bf03423eda0c619926c52fc819cc0"><span class="std std-ref">float32</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1af06c1f3423d6b91601cb316978d69ced"><span></span><span class="n">random_float32</span></span><span></span><span class="p">();</span>
+<a class="reference internal" href="#doxid-namespace-g-e-o-1-1-numeric-1a2dbc489fe1916af86c3cec8f7b3f2345"><span class="std std-ref">float64</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="doxyrest-code-target target" id="doxid-namespace-g-e-o-1-1-numeric-1ac65050bf5277d30ba88f6542dc2af213"><span></span><span class="n">random_float64</span></span><span></span><span class="p">();</span>
+
+<span class="p">}</span> <span class="c1">// namespace Numeric</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/namespace_GEO_Numeric.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

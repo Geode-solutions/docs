@@ -1,0 +1,1039 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+	namespace_geode_detail.rst
+	enum_geode_IntersectionType.rst
+	enum_geode_SplitSide.rst
+	struct_geode_AlongSolidSplitEdgeInfo.rst
+	struct_geode_CollapseEdgeInfo.rst
+	struct_geode_CollapsePolygonEdgeInfo.rst
+	struct_geode_CorrectnessInfo.rst
+	struct_geode_GeometricSurfacePath.rst
+	struct_geode_IntersectionResult.rst
+	struct_geode_Mapping.rst
+	struct_geode_ModelCollapsePolygonEdgeInfo.rst
+	struct_geode_ModelSplitPolygonEdgeInfo.rst
+	struct_geode_MultiMapping.rst
+	struct_geode_PatchFrontEdge.rst
+	struct_geode_PolygonData.rst
+	struct_geode_PolygonEdgeData.rst
+	struct_geode_PolygonEdgeInfo.rst
+	struct_geode_SideSurfaceCutPathInfo.rst
+	struct_geode_SidedSolidSplitEdgeInfo.rst
+	struct_geode_SidedSurface.rst
+	struct_geode_SolidCollapseEdgeInfo.rst
+	struct_geode_SolidCutPatchInfo.rst
+	struct_geode_SolidCutPathInfo.rst
+	struct_geode_SolidPatch.rst
+	struct_geode_SolidPath.rst
+	struct_geode_SolidSplitEdgeInfo.rst
+	struct_geode_SolidSplitInfo.rst
+	struct_geode_SortedSurfaces.rst
+	struct_geode_SplitInfo.rst
+	struct_geode_SplitPolygonEdgeInfo.rst
+	struct_geode_SplitTriangleInfo.rst
+	struct_geode_SurfaceCutPathInfo.rst
+	struct_geode_SurfacePath.rst
+	class_geode_BRepGeometricModifier.rst
+	class_geode_EdgedCurveModifier.rst
+	class_geode_LicensedModule.rst
+	class_geode_PropagationSettings.rst
+	class_geode_RayTracing3D.rst
+	class_geode_SectionGeometricModifier.rst
+	class_geode_SolidPatchFinder.rst
+	class_geode_SolidPathFinder.rst
+	class_geode_SurfacePathFinder.rst
+	class_geode_SurfaceSegmentFinder.rst
+	class_geode_SurfaceSegmentFinder2D.rst
+	class_geode_TetrahedraClosestThan.rst
+	class_geode_TetrahedralSolidEpsilonModifier.rst
+	class_geode_TetrahedralSolidModifier.rst
+	class_geode_TrianglesClosestThan.rst
+	class_geode_TriangulatedSurfaceEpsilonModifier.rst
+	class_geode_TriangulatedSurfaceModifier.rst
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// namespaces
+
+	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
+
+	// typedefs
+
+	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`VertexMultiMapping<doxid-namespacegeode_1a2ea479fa70766a1514e507fb6912f9e5>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`EdgeMapping<doxid-namespacegeode_1a07f622f9290301bd1b0b364ed0807b44>`;
+	typedef std::pair<:ref:`EdgeMapping<doxid-namespacegeode_1a07f622f9290301bd1b0b364ed0807b44>`, bool> :target:`OrientedEdgeMapping<doxid-namespacegeode_1a54b0871837c233adb2d5b88a496cdd7a>`;
+	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`EdgeMultiMapping<doxid-namespacegeode_1a7453100f135dccdd205cb9fa758be45d>`;
+	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`FacetMultiMapping<doxid-namespacegeode_1af88fc51271b7af46a7bb4b84a2d90d1e>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`TetrahedronMapping<doxid-namespacegeode_1a5f5bb31d010c44cbc41f6753a1d28304>`;
+	typedef std::pair<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a7453100f135dccdd205cb9fa758be45d>`, bool> :target:`OrientedEdgeMultiMapping<doxid-namespacegeode_1a1bab4ec7e9ccefea836c5553826d6d3b>`;
+	typedef std::pair<index_t, bool> :target:`OrientedEdge<doxid-namespacegeode_1ab7c515d34c7589c847c6947c92e86274>`;
+	typedef std::pair<Position, Position> :target:`SegmentSegmentIntersection<doxid-namespacegeode_1ad08f71e1c9db568dd62df0bf066813b1>`;
+	typedef std::pair<Position, Position> :target:`SegmentTriangleIntersection<doxid-namespacegeode_1acbc58086feed61355d4235a09e6e6b80>`;
+	typedef Side :target:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>`;
+	typedef :ref:`SplitInfo<doxid-structgeode_1_1_split_info>` :target:`SplitTetrahedron<doxid-namespacegeode_1a8e7703a3cc6ba023b28ebf51044c7abe>`;
+	typedef :ref:`SplitInfo<doxid-structgeode_1_1_split_info>` :target:`SplitFacet<doxid-namespacegeode_1a4a52808eb7e527ae9ef93c94e03f11d2>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`FacetMapping<doxid-namespacegeode_1a0fe3791ddb7ee08d858458346d5f1367>`;
+	typedef :ref:`SplitInfo<doxid-structgeode_1_1_split_info>` :target:`SplitTriangle<doxid-namespacegeode_1a3ac1e72c38e74398b33cfe0180a2cdbb>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`TriangleMapping<doxid-namespacegeode_1af3ede97a06831da5d71e5a7212f089cc>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<PolygonEdge> :target:`PolygonEdgeMapping<doxid-namespacegeode_1a5a7ed69f08e560d569e1f124dc238d77>`;
+	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<PolygonEdge> :target:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`;
+
+	// enums
+
+	enum :ref:`IntersectionType<doxid-namespacegeode_1a9f15c2c020c07607391e3dd6a6ce8075>`;
+	enum :ref:`SplitSide<doxid-namespacegeode_1a379962424c8a834ac6bc5800259a57de>`;
+
+	// structs
+
+	struct :ref:`AlongSolidSplitEdgeInfo<doxid-structgeode_1_1_along_solid_split_edge_info>`;
+	struct :ref:`CollapseEdgeInfo<doxid-structgeode_1_1_collapse_edge_info>`;
+	struct :ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>`;
+
+	template <typename Intersection>
+	struct :ref:`CorrectnessInfo<doxid-structgeode_1_1_correctness_info>`;
+
+	template <index_t dimension>
+	struct :ref:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path>`;
+
+	template <typename Intersection>
+	struct :ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`;
+
+	template <typename Type>
+	struct :ref:`Mapping<doxid-structgeode_1_1_mapping>`;
+
+	struct :ref:`ModelCollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info>`;
+	struct :ref:`ModelSplitPolygonEdgeInfo<doxid-structgeode_1_1_model_split_polygon_edge_info>`;
+
+	template <typename Type>
+	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
+
+	struct :ref:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge>`;
+
+	template <index_t dimension>
+	struct :ref:`PolygonData<doxid-structgeode_1_1_polygon_data>`;
+
+	template <index_t dimension>
+	struct :ref:`PolygonEdgeData<doxid-structgeode_1_1_polygon_edge_data>`;
+
+	struct :ref:`PolygonEdgeInfo<doxid-structgeode_1_1_polygon_edge_info>`;
+	struct :ref:`SideSurfaceCutPathInfo<doxid-structgeode_1_1_side_surface_cut_path_info>`;
+	struct :ref:`SidedSolidSplitEdgeInfo<doxid-structgeode_1_1_sided_solid_split_edge_info>`;
+	struct :ref:`SidedSurface<doxid-structgeode_1_1_sided_surface>`;
+	struct :ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>`;
+	struct :ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>`;
+	struct :ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>`;
+	struct :ref:`SolidPatch<doxid-structgeode_1_1_solid_patch>`;
+	struct :ref:`SolidPath<doxid-structgeode_1_1_solid_path>`;
+	struct :ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>`;
+	struct :ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>`;
+	struct :ref:`SortedSurfaces<doxid-structgeode_1_1_sorted_surfaces>`;
+	struct :ref:`SplitInfo<doxid-structgeode_1_1_split_info>`;
+	struct :ref:`SplitPolygonEdgeInfo<doxid-structgeode_1_1_split_polygon_edge_info>`;
+	struct :ref:`SplitTriangleInfo<doxid-structgeode_1_1_split_triangle_info>`;
+	struct :ref:`SurfaceCutPathInfo<doxid-structgeode_1_1_surface_cut_path_info>`;
+	struct :ref:`SurfacePath<doxid-structgeode_1_1_surface_path>`;
+
+	// classes
+
+	class :ref:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier>`;
+
+	template <index_t dimension>
+	class :ref:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier>`;
+
+	class :ref:`LicensedModule<doxid-classgeode_1_1_licensed_module>`;
+	class :ref:`PropagationSettings<doxid-classgeode_1_1_propagation_settings>`;
+	class :ref:`RayTracing3D<doxid-classgeode_1_1_ray_tracing3_d>`;
+	class :ref:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier>`;
+	class :ref:`SolidPatchFinder<doxid-classgeode_1_1_solid_patch_finder>`;
+	class :ref:`SolidPathFinder<doxid-classgeode_1_1_solid_path_finder>`;
+
+	template <index_t dimension>
+	class :ref:`SurfacePathFinder<doxid-classgeode_1_1_surface_path_finder>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceSegmentFinder<doxid-classgeode_1_1_surface_segment_finder>`;
+
+	class :ref:`SurfaceSegmentFinder2D<doxid-classgeode_1_1_surface_segment_finder2_d>`;
+	class :ref:`TetrahedraClosestThan<doxid-classgeode_1_1_tetrahedra_closest_than>`;
+	class :ref:`TetrahedralSolidEpsilonModifier<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier>`;
+	class :ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`;
+
+	template <index_t dimension>
+	class :ref:`TrianglesClosestThan<doxid-classgeode_1_1_triangles_closest_than>`;
+
+	template <index_t dimension>
+	class :ref:`TriangulatedSurfaceEpsilonModifier<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier>`;
+
+	template <index_t dimension>
+	class :ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`;
+
+	// global functions
+
+	void geode_common_core_api :target:`initialize_common_core<doxid-namespacegeode_1ad4f10777dddbda52723e94f7296c94b1>`();
+	void geode_common_cutter_solid_api :target:`initialize_cutter_solid<doxid-namespacegeode_1a3d2ffecdc8e22361a688f058b4374a46>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ae9dc6097b7f8cfa25fc265176e3c5aa9>`(TetrahedralSolidBuilder);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3fbc1fb49f0ca7c4ea4744e735440007>`(Triangle);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(TetrahedralSolid);
+	:target:`ALIAS_3D<doxid-namespacegeode_1af14e4907bb3d08e5cc6822c283db8b65>`(TetrahedralSolidBuilder);
+	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+	:target:`ALIAS_3D<doxid-namespacegeode_1aaf755b9136ab518d12e2fa75dd8bdd12>`(Triangle);
+
+	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api :ref:`cut_along_patch<doxid-namespacegeode_1ae6c593d0a7700b98143c840c6582c7ae>`(
+		const TetrahedralSolid3D& solid,
+		TetrahedralSolidBuilder3D& builder,
+		const Triangle3D& triangle,
+		TriangulatedSurface3D& patch
+		);
+
+	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api :ref:`cut_along_patch<doxid-namespacegeode_1a6ede9860c6f3ee584c3027d348c51acf>`(
+		const TetrahedralSolid3D& solid,
+		TetrahedralSolidBuilder3D& builder,
+		absl::Span<const :ref:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge>`> boundary_edges,
+		const Triangle3D& triangle
+		);
+
+	:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` geode_common_cutter_solid_api :ref:`cut_along_path<doxid-namespacegeode_1a0ead8515ad1babd6030021fc91093a81>`(
+		const TetrahedralSolid3D& solid,
+		TetrahedralSolidBuilder3D& builder,
+		index_t begin,
+		index_t end,
+		absl::Span<const :ref:`SolidPath<doxid-structgeode_1_1_solid_path>`> path_splits
+		);
+
+	:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` geode_common_cutter_solid_api :target:`cut_along_path<doxid-namespacegeode_1a8d1965d343d128794d9cd2aac35db44a>`(
+		const TetrahedralSolid3D& solid,
+		TetrahedralSolidBuilder3D& builder,
+		index_t begin,
+		index_t end
+		);
+
+	void geode_common_cutter_surface_api :target:`initialize_cutter_surface<doxid-namespacegeode_1aca8984bbdbafc24b674832791b57573b>`();
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac5ecef06abef60896357a8eb77586520>`(TriangulatedSurface);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a5f77df444726f93a1df8e868ba125aa3>`(TriangulatedSurfaceBuilder);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9fc374c0a89e96e09ba3f518abe2341d>`(:ref:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path>`);
+
+	std::vector<GeometricSurfacePath2D> geode_common_cutter_surface_api :target:`determine_cuts<doxid-namespacegeode_1aa01a2e2353edd1a8fb5b271d31b4dca5>`(
+		const TriangulatedSurface2D& surface,
+		index_t begin,
+		index_t end,
+		absl::Span<const :ref:`geode::SurfacePath<doxid-structgeode_1_1_surface_path>`> path_splits
+		);
+
+	std::vector<GeometricSurfacePath3D> geode_common_cutter_surface_api :target:`determine_cuts<doxid-namespacegeode_1a560e11ef71319023220ec1bfe13197b8>`(
+		const TriangulatedSurface3D& surface,
+		index_t begin,
+		index_t end,
+		const Plane& plane,
+		absl::Span<const :ref:`geode::SurfacePath<doxid-structgeode_1_1_surface_path>`> path_splits
+		);
+
+	template <index_t dimension>
+	:ref:`SurfaceCutPathInfo<doxid-structgeode_1_1_surface_cut_path_info>` :target:`cut_along_path<doxid-namespacegeode_1a6295c002ad4fdf131e7e66f0babc6bc5>`(
+		const TriangulatedSurface<dimension>& surface,
+		TriangulatedSurfaceBuilder<dimension>& builder,
+		index_t begin,
+		index_t end,
+		absl::Span<const :ref:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path>`<dimension>> path_splits
+		);
+
+	:ref:`SurfaceCutPathInfo<doxid-structgeode_1_1_surface_cut_path_info>` geode_common_cutter_surface_api :target:`cut_along_path<doxid-namespacegeode_1a1a483e9ec7c6543eb0d0f6c3210961b0>`(
+		const TriangulatedSurface2D& surface,
+		TriangulatedSurfaceBuilder2D& builder,
+		index_t begin,
+		index_t end
+		);
+
+	:target:`ALIAS_2D<doxid-namespacegeode_1a504bb34b6ea51d563984b00589d5001d>`(TriangulatedSurface);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afdb46be0cc0cf92e9c480d0f4af7ede7>`(InfiniteLine);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a713615f1e1f632a857fbbda376b9b832>`(Segment);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a73b98a5519467f090fd3b8dd6a9eb008>`(Sphere);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a46c93d7de8cb42c63334569e28c385bd>`(InfiniteLine);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(Point);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad391ccfd3ec3b37beae6bcc7c210f915>`(Segment);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point3D> geode_common_geometry_api :ref:`line_plane_intersection<doxid-namespacegeode_1a2be04752895258a178372f17bcace4dc>`(
+		const InfiniteLine3D& line,
+		const Plane& plane
+		);
+
+	template <index_t dimension>
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point<dimension>, 2>> :ref:`line_sphere_intersection<doxid-namespacegeode_1aa1614736eca38ee7ade9cf48c445a838>`(
+		const InfiniteLine<dimension>& line,
+		const Sphere<dimension>& sphere
+		);
+
+	template <index_t dimension>
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point<dimension>, 2>> :ref:`segment_sphere_intersection<doxid-namespacegeode_1a5d4565bc53220aad033ce4b621bedbcc>`(
+		const Segment<dimension>& segment,
+		const Sphere<dimension>& sphere
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point3D> geode_common_geometry_api :ref:`segment_plane_intersection<doxid-namespacegeode_1a8fff93860d7f97aeb966ec33cd2d71f2>`(
+		const Segment3D& segment,
+		const Plane& plane
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point3D> geode_common_geometry_api :ref:`segment_triangle_intersection<doxid-namespacegeode_1af9361729db9df02b711991f81bba98bd>`(
+		const Segment3D& segment,
+		const Triangle3D& triangle
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point3D> geode_common_geometry_api :ref:`line_triangle_intersection<doxid-namespacegeode_1a7d1e1b37a522869c6aa9f970db7f69e6>`(
+		const InfiniteLine3D& line,
+		const Triangle3D& triangle
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point2D> geode_common_geometry_api :ref:`line_line_intersection<doxid-namespacegeode_1a9c077cf02fe9fde29c4ee125d4fc6577>`(
+		const InfiniteLine2D& line0,
+		const InfiniteLine2D& line1
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point2D> geode_common_geometry_api :ref:`segment_segment_intersection<doxid-namespacegeode_1a5c0fb083b5a148832f504c4981cb8b27>`(
+		const Segment2D& segment0,
+		const Segment2D& segment1
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point2D> geode_common_geometry_api :ref:`segment_line_intersection<doxid-namespacegeode_1af183d9de8277fcdb343ccb102892c9bd>`(
+		const Segment2D& segment,
+		const InfiniteLine2D& line
+		);
+
+	:ref:`SegmentSegmentIntersection<doxid-namespacegeode_1ad08f71e1c9db568dd62df0bf066813b1>` geode_common_geometry_api :ref:`segment_segment_intersection_detection<doxid-namespacegeode_1a6e73cb933a08dd19f9b8d930883240f7>`(
+		const Segment2D& segment0,
+		const Segment2D& segment1
+		);
+
+	:ref:`SegmentSegmentIntersection<doxid-namespacegeode_1ad08f71e1c9db568dd62df0bf066813b1>` geode_common_geometry_api :ref:`colinear_segment_segment_intersection_detection<doxid-namespacegeode_1ac7925cfa4dfaac09f950f40514c745ca>`(
+		const Segment2D& segment0,
+		const Segment2D& segment1
+		);
+
+	Position geode_common_geometry_api :ref:`segment_line_intersection_detection<doxid-namespacegeode_1a0a70f0f58f9404726abb3afc63550f20>`(
+		const Segment2D& segment,
+		const InfiniteLine2D& line
+		);
+
+	Position geode_common_geometry_api :ref:`line_triangle_intersection_detection<doxid-namespacegeode_1a3cac0c99ae68f2ec47d7f4c6f005b259>`(
+		const InfiniteLine3D& line,
+		const Triangle3D& triangle
+		);
+
+	:ref:`SegmentTriangleIntersection<doxid-namespacegeode_1acbc58086feed61355d4235a09e6e6b80>` geode_common_geometry_api :ref:`segment_triangle_intersection_detection<doxid-namespacegeode_1ab6cb9014250ab15075f54ab5778e279c>`(
+		const Segment3D& segment,
+		const Triangle3D& triangle
+		);
+
+	Position geode_common_geometry_api :ref:`segment_plane_intersection_detection<doxid-namespacegeode_1a64525bfc296dc98d1afc8207452d0c62>`(
+		const Segment3D& segment,
+		const Plane& plane
+		);
+
+	:target:`ALIAS_2D<doxid-namespacegeode_1a8ec76900496f8c6e59d65c6ad941af27>`(InfiniteLine);
+	Side geode_common_geometry_api :ref:`point_side_to_segment<doxid-namespacegeode_1ab05fa036a7c8d00967ee8e15eaeacb09>`(const Point2D& point, const Segment2D& segment);
+
+	Side geode_common_geometry_api :ref:`point_side_to_line<doxid-namespacegeode_1a31276d066b93fb849913d63da10b6eda>`(
+		const Point2D& point,
+		const InfiniteLine2D& line
+		);
+
+	Side geode_common_geometry_api :ref:`point_side_to_plane<doxid-namespacegeode_1a55ddbf669431e9529c59dd8e88d20ca6>`(const Point3D& point, const Plane& plane);
+
+	Side geode_common_geometry_api :ref:`point_side_to_triangle<doxid-namespacegeode_1aa4be1ed023ad79bd838d97bd70735e6f>`(
+		const Point3D& point,
+		const Triangle3D& triangle
+		);
+
+	template <index_t dimension>
+	Position :ref:`point_segment_position<doxid-namespacegeode_1a8e59e9b66e1c5c4167e62abee2b3bf2e>`(
+		const Point<dimension>& point,
+		const Segment<dimension>& segment
+		);
+
+	template <index_t dimension>
+	Position :ref:`point_triangle_position<doxid-namespacegeode_1ada03d7b63f307fc70de42337fd7d681d>`(
+		const Point<dimension>& point,
+		const Triangle<dimension>& triangle
+		);
+
+	Position geode_common_geometry_api :ref:`point_tetra_position<doxid-namespacegeode_1a011ada8de7ea0f54da515a843817c1b4>`(const Point3D& point, const Tetra& tetra);
+
+	absl::FixedArray<index_t> geode_common_geometry_api :target:`radial_sort<doxid-namespacegeode_1a1358409b9ea9320efee0633fe3018bf4>`(
+		const Segment3D& segment,
+		absl::Span<const Point3D> points
+		);
+
+	:target:`ALIAS_2D<doxid-namespacegeode_1a373fb1dcaf2e8846a3b38103abfc8894>`(Triangle);
+	:ref:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>` geode_common_geometry_api :ref:`tetrahedron_volume_sign<doxid-namespacegeode_1a7864fa260bdcfb6a4e6e4671a965b901>`(const Tetra& tetra);
+	:ref:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>` geode_common_geometry_api :ref:`triangle_area_sign<doxid-namespacegeode_1adb0cb74f7e5d499a3ebb08b1c3bdb70d>`(const Triangle2D& triangle);
+	void geode_common_helpers_api :target:`initialize_helpers<doxid-namespacegeode_1ab5f1a298e8cd7b6d981d223be950705b>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9dd3655e0b4d0e1d23b6d3a8fd68c87b>`(Line);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
+
+	:ref:`SortedSurfaces<doxid-structgeode_1_1_sorted_surfaces>` geode_common_helpers_api :target:`surface_radial_sort<doxid-namespacegeode_1aee16667b6580d0598a7fed9572f015b7>`(
+		const BRep& brep,
+		const Line3D& line
+		);
+
+	std::vector<std::pair<MeshComponentVertex, MeshComponentVertex>> geode_common_helpers_api :target:`common_vertices<doxid-namespacegeode_1a62c919c40a7b61ff43951c517f3330fd>`(const std::array<std::vector<MeshComponentVertex>, 2>& vertices);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
+
+	template <index_t dimension>
+	std::vector<typename geode::RegularGrid<dimension>::Index> :target:`rasterize_segment<doxid-namespacegeode_1aa46b66899e41d9590a9f8281e072b65f>`(
+		const RegularGrid<dimension>& grid,
+		const Segment<dimension>& segment
+		);
+
+	template <index_t dimension>
+	std::vector<typename geode::RegularGrid<dimension>::Index> :target:`conservative_rasterize_segment<doxid-namespacegeode_1ad89afc03c97241b12a048dd02cce17e3>`(
+		const RegularGrid<dimension>& grid,
+		const Segment<dimension>& segment
+		);
+
+	template <index_t dimension>
+	std::vector<typename geode::RegularGrid<dimension>::Index> :target:`rasterize_triangle<doxid-namespacegeode_1abe0639689b0be977a0a0effddf288782>`(
+		const RegularGrid<dimension>& grid,
+		const Triangle<dimension>& triangle
+		);
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
+
+	void geode_common_helpers_api :target:`perform_propagation<doxid-namespacegeode_1ade7ecbb9ca6e76e682b979d2f8acb541>`(
+		const TetrahedralSolid3D& solid,
+		:ref:`PropagationSettings<doxid-classgeode_1_1_propagation_settings>`& settings
+		);
+
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac0e6f9c48056d3f1695aa602ed310cfa>`(:ref:`TrianglesClosestThan<doxid-classgeode_1_1_triangles_closest_than>`);
+
+	template <index_t dimension>
+	void :target:`perform_propagation<doxid-namespacegeode_1a0724070a31543e94ba43204f99fd8a42>`(
+		const TriangulatedSurface<dimension>& surface,
+		:ref:`PropagationSettings<doxid-classgeode_1_1_propagation_settings>`& settings
+		);
+
+	void geode_common_mesh_repair_api :target:`initialize_mesh_repair<doxid-namespacegeode_1aac11f2412c9fca989fc3f1bae9c7538a>`();
+
+	template <index_t dimension>
+	void :target:`repair_polygon_bad_orientations<doxid-namespacegeode_1ac6689e12e8d42828a65f520146878ecb>`(SurfaceMesh<dimension>& mesh);
+
+	absl::FixedArray<:ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t>> geode_common_modifier_common_api :target:`extract_mappings_from_split_info<doxid-namespacegeode_1af2e70f64eee004f3002873a2f84d9220>`(absl::Span<const :ref:`SplitInfo<doxid-structgeode_1_1_split_info>`> split_info);
+
+	template <typename T>
+	void :target:`add_mappings_in_multi_mappings<doxid-namespacegeode_1a03f85f290c26e7f47af72ee7e6376e84>`(
+		std::vector<:ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<T>>& multi_mappings,
+		absl::Span<const :ref:`Mapping<doxid-structgeode_1_1_mapping>`<T>> new_mappings
+		);
+
+	template <typename T>
+	void :target:`process_mapping_element<doxid-namespacegeode_1a51420c6569ed676b3aea3662b8916ffb>`(
+		const :ref:`geode::Mapping<doxid-structgeode_1_1_mapping>`<T>& element,
+		absl::flat_hash_set<T>& to_remove,
+		absl::flat_hash_map<T, T>& new_to_old,
+		const T&
+		);
+
+	template <typename T>
+	void :target:`process_mapping_element<doxid-namespacegeode_1a677d786d9de7ae023085808c24b03000>`(
+		:ref:`geode::MultiMapping<doxid-structgeode_1_1_multi_mapping>`<T>& element,
+		absl::flat_hash_set<T>& to_remove,
+		absl::flat_hash_map<T, absl::InlinedVector<T, 1>>& new_to_olds,
+		const T& no_value
+		);
+
+	template <typename T, typename MappingType, typename NewToOldMap>
+	void :target:`update_mappings<doxid-namespacegeode_1ab8a5fed1171cccd934981effd0b9298d>`(
+		std::vector<MappingType>& mappings,
+		NewToOldMap& new_to_old,
+		const T& no_value
+		);
+
+	template <typename T>
+	void :target:`update_mappings<doxid-namespacegeode_1ab111240fe8fa96fc5b1005232f8c9209>`(
+		std::vector<:ref:`geode::Mapping<doxid-structgeode_1_1_mapping>`<T>>& mappings,
+		const T& no_value
+		);
+
+	template <typename T>
+	void :target:`update_multi_mappings<doxid-namespacegeode_1aed78bf3f2539f5f3dc9f4780b85598de>`(
+		std::vector<:ref:`geode::MultiMapping<doxid-structgeode_1_1_multi_mapping>`<T>>& multi_mappings,
+		const T& no_value
+		);
+
+	template <typename T, typename MappingType>
+	void :target:`erase_mapping_values<doxid-namespacegeode_1abbfd06ee3b641e5af79bd27ee7972b22>`(
+		absl::Span<const T> values_to_delete,
+		std::vector<MappingType>& mappings
+		);
+
+	void geode_common_modifier_edged_curve_api :target:`initialize_modifier_edged_curve<doxid-namespacegeode_1adface64b1fe591fb1470d875e00906a5>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abca05657b8eb6a446c79a4e841068fcf>`(EdgedCurveBuilder);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab753a4c9c96a0711fc42d95d03de3555>`(:ref:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(Surface);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(Point);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(Surface);
+	void geode_common_modifier_model_api :target:`initialize_modifier_model<doxid-namespacegeode_1a6566ef2173a01c0dd2eae7f558bbbd33>`();
+	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(Line);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(Surface);
+	void geode_common_modifier_solid_api :target:`initialize_modifier_solid<doxid-namespacegeode_1aca1037c51008da68e1286546ecb8a4cb>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(SolidMesh);
+	void geode_common_modifier_surface_api :target:`initialize_modifier_surface<doxid-namespacegeode_1ae501c95d009522882c623f08458b10d6>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a4b6e0eef43419c522c8afdef30e0c045>`(TriangulatedSurfaceBuilder);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1cd4849bc62b1ce5604ec265c2a12ce4>`(:ref:`TriangulatedSurfaceEpsilonModifier<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abf44db269e53cff0346ca0ff7a67be5a>`(:ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`);
+
+	} // namespace geode
+.. _details-namespacegeode:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Global Functions
+----------------
+
+.. index:: pair: function; cut_along_patch
+.. _doxid-namespacegeode_1ae6c593d0a7700b98143c840c6582c7ae:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api cut_along_patch(
+		const TetrahedralSolid3D& solid,
+		TetrahedralSolidBuilder3D& builder,
+		const Triangle3D& triangle,
+		TriangulatedSurface3D& patch
+		)
+
+Perform a TetrahedralSolid3D planar cut along a triangle given the patch cut information.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- solid
+
+		- TetrahedralSolid to cut
+
+	*
+		- builder
+
+		- Builder of the Solid
+
+	*
+		- triangle
+
+		- The triangle corresponding to the patch to insert in solid
+
+	*
+		- patch
+
+		- Patch cut information  Cut tetrahedra are set as inactive but not deleted.
+
+.. index:: pair: function; cut_along_patch
+.. _doxid-namespacegeode_1a6ede9860c6f3ee584c3027d348c51acf:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api cut_along_patch(
+		const TetrahedralSolid3D& solid,
+		TetrahedralSolidBuilder3D& builder,
+		absl::Span<const :ref:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge>`> boundary_edges,
+		const Triangle3D& triangle
+		)
+
+Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- solid
+
+		- TetrahedralSolid to cut
+
+	*
+		- builder
+
+		- Builder of the Solid
+
+	*
+		- boundary_edges
+
+		- List of oriented Patch boundary as solid edges
+
+	*
+		- triangle
+
+		- The triangle corresponding to the patch to insert in solid  Cut tetrahedra are set as inactive but not deleted.
+
+.. index:: pair: function; cut_along_path
+.. _doxid-namespacegeode_1a0ead8515ad1babd6030021fc91093a81:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` geode_common_cutter_solid_api cut_along_path(
+		const TetrahedralSolid3D& solid,
+		TetrahedralSolidBuilder3D& builder,
+		index_t begin,
+		index_t end,
+		absl::Span<const :ref:`SolidPath<doxid-structgeode_1_1_solid_path>`> path_splits
+		)
+
+Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- begin
+
+		- Index of the cut starting vertex
+
+	*
+		- end
+
+		- Index of the cut ending vertex
+
+	*
+		- path_splits
+
+		- Ordered list of Path splits  Cut tetrahedra are set as inactive but not deleted.
+
+.. index:: pair: function; line_plane_intersection
+.. _doxid-namespacegeode_1a2be04752895258a178372f17bcace4dc:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point3D> geode_common_geometry_api line_plane_intersection(
+		const InfiniteLine3D& line,
+		const Plane& plane
+		)
+
+Compute the intersection between a plane and an infinite line
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection.
+
+.. index:: pair: function; line_sphere_intersection
+.. _doxid-namespacegeode_1aa1614736eca38ee7ade9cf48c445a838:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point<dimension>, 2>> line_sphere_intersection(
+		const InfiniteLine<dimension>& line,
+		const Sphere<dimension>& sphere
+		)
+
+Compute the intersection(s) between a sphere and an infinite line
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection points.
+
+.. index:: pair: function; segment_sphere_intersection
+.. _doxid-namespacegeode_1a5d4565bc53220aad033ce4b621bedbcc:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point<dimension>, 2>> segment_sphere_intersection(
+		const Segment<dimension>& segment,
+		const Sphere<dimension>& sphere
+		)
+
+Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection points.
+
+.. index:: pair: function; segment_plane_intersection
+.. _doxid-namespacegeode_1a8fff93860d7f97aeb966ec33cd2d71f2:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point3D> geode_common_geometry_api segment_plane_intersection(
+		const Segment3D& segment,
+		const Plane& plane
+		)
+
+Compute the intersection between a plane and a segment if the segment is included in the plane nothing is returned
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection point.
+
+.. index:: pair: function; segment_triangle_intersection
+.. _doxid-namespacegeode_1af9361729db9df02b711991f81bba98bd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point3D> geode_common_geometry_api segment_triangle_intersection(
+		const Segment3D& segment,
+		const Triangle3D& triangle
+		)
+
+Compute the intersection of a segment and a triangle if the segment is included in the triangle plane nothing is returned
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection point.
+
+.. index:: pair: function; line_triangle_intersection
+.. _doxid-namespacegeode_1a7d1e1b37a522869c6aa9f970db7f69e6:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point3D> geode_common_geometry_api line_triangle_intersection(
+		const InfiniteLine3D& line,
+		const Triangle3D& triangle
+		)
+
+Compute the intersection of a line and a triangle if the segment is included in the triangle plane nothing is returned
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection point.
+
+.. index:: pair: function; line_line_intersection
+.. _doxid-namespacegeode_1a9c077cf02fe9fde29c4ee125d4fc6577:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point2D> geode_common_geometry_api line_line_intersection(
+		const InfiniteLine2D& line0,
+		const InfiniteLine2D& line1
+		)
+
+Compute the intersection between two infinite lines
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection point.
+
+.. index:: pair: function; segment_segment_intersection
+.. _doxid-namespacegeode_1a5c0fb083b5a148832f504c4981cb8b27:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point2D> geode_common_geometry_api segment_segment_intersection(
+		const Segment2D& segment0,
+		const Segment2D& segment1
+		)
+
+Compute the intersection between two segments
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection point.
+
+.. index:: pair: function; segment_line_intersection
+.. _doxid-namespacegeode_1af183d9de8277fcdb343ccb102892c9bd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point2D> geode_common_geometry_api segment_line_intersection(
+		const Segment2D& segment,
+		const InfiniteLine2D& line
+		)
+
+Compute the intersection between a segment and an infinite line
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection point.
+
+.. index:: pair: function; segment_segment_intersection_detection
+.. _doxid-namespacegeode_1a6e73cb933a08dd19f9b8d930883240f7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SegmentSegmentIntersection<doxid-namespacegeode_1ad08f71e1c9db568dd62df0bf066813b1>` geode_common_geometry_api segment_segment_intersection_detection(
+		const Segment2D& segment0,
+		const Segment2D& segment1
+		)
+
+Detect if there is an intersection between two 2D segments
+
+
+
+.. rubric:: Returns:
+
+the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
+
+.. index:: pair: function; colinear_segment_segment_intersection_detection
+.. _doxid-namespacegeode_1ac7925cfa4dfaac09f950f40514c745ca:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SegmentSegmentIntersection<doxid-namespacegeode_1ad08f71e1c9db568dd62df0bf066813b1>` geode_common_geometry_api colinear_segment_segment_intersection_detection(
+		const Segment2D& segment0,
+		const Segment2D& segment1
+		)
+
+Detect the configuration between two 2D colinear segments
+
+
+
+.. rubric:: Returns:
+
+the position of the intersection on the two segments. Returns parallel-pallel if there is segment overlap
+
+.. index:: pair: function; segment_line_intersection_detection
+.. _doxid-namespacegeode_1a0a70f0f58f9404726abb3afc63550f20:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Position geode_common_geometry_api segment_line_intersection_detection(
+		const Segment2D& segment,
+		const InfiniteLine2D& line
+		)
+
+Detect if there is an intersection between a line and a segment
+
+
+
+.. rubric:: Returns:
+
+the position of the intersection on the segment. Returns outside if there is no intersection or all points are colinear
+
+.. index:: pair: function; line_triangle_intersection_detection
+.. _doxid-namespacegeode_1a3cac0c99ae68f2ec47d7f4c6f005b259:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Position geode_common_geometry_api line_triangle_intersection_detection(
+		const InfiniteLine3D& line,
+		const Triangle3D& triangle
+		)
+
+Detect if there is an intersection between a line and a triangle
+
+
+
+.. rubric:: Returns:
+
+the position of the intersection on the triangle. Returns outside if there is no intersection or the line is coplanar with the triangle
+
+.. index:: pair: function; segment_triangle_intersection_detection
+.. _doxid-namespacegeode_1ab6cb9014250ab15075f54ab5778e279c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SegmentTriangleIntersection<doxid-namespacegeode_1acbc58086feed61355d4235a09e6e6b80>` geode_common_geometry_api segment_triangle_intersection_detection(
+		const Segment3D& segment,
+		const Triangle3D& triangle
+		)
+
+Detect if there is an intersection between a segment and a triangle
+
+
+
+.. rubric:: Returns:
+
+the position of the intersection on the segment and on the triangle. Returns outside if there is no intersection or the segment is coplanar with the triangle
+
+.. index:: pair: function; segment_plane_intersection_detection
+.. _doxid-namespacegeode_1a64525bfc296dc98d1afc8207452d0c62:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Position geode_common_geometry_api segment_plane_intersection_detection(
+		const Segment3D& segment,
+		const Plane& plane
+		)
+
+Detect if there is an intersection between a segment and a plane
+
+
+
+.. rubric:: Returns:
+
+the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane
+
+.. index:: pair: function; point_side_to_segment
+.. _doxid-namespacegeode_1ab05fa036a7c8d00967ee8e15eaeacb09:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Side geode_common_geometry_api point_side_to_segment(
+		const Point2D& point,
+		const Segment2D& segment
+		)
+
+Return the point side to a segment.
+
+.. index:: pair: function; point_side_to_line
+.. _doxid-namespacegeode_1a31276d066b93fb849913d63da10b6eda:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Side geode_common_geometry_api point_side_to_line(
+		const Point2D& point,
+		const InfiniteLine2D& line
+		)
+
+Return the point side to a line.
+
+.. index:: pair: function; point_side_to_plane
+.. _doxid-namespacegeode_1a55ddbf669431e9529c59dd8e88d20ca6:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Side geode_common_geometry_api point_side_to_plane(
+		const Point3D& point,
+		const Plane& plane
+		)
+
+Return the point side to a plane.
+
+.. index:: pair: function; point_side_to_triangle
+.. _doxid-namespacegeode_1aa4be1ed023ad79bd838d97bd70735e6f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Side geode_common_geometry_api point_side_to_triangle(
+		const Point3D& point,
+		const Triangle3D& triangle
+		)
+
+Return the point side to a 3D triangle.
+
+.. index:: pair: function; point_segment_position
+.. _doxid-namespacegeode_1a8e59e9b66e1c5c4167e62abee2b3bf2e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	Position point_segment_position(
+		const Point<dimension>& point,
+		const Segment<dimension>& segment
+		)
+
+Return the position of a point on a segment: inside, outside or on segment vertex.
+
+.. index:: pair: function; point_triangle_position
+.. _doxid-namespacegeode_1ada03d7b63f307fc70de42337fd7d681d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	Position point_triangle_position(
+		const Point<dimension>& point,
+		const Triangle<dimension>& triangle
+		)
+
+Return the position of a point in a triangle: inside, outside, on a triangle vertex or an edge.
+
+.. index:: pair: function; point_tetra_position
+.. _doxid-namespacegeode_1a011ada8de7ea0f54da515a843817c1b4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Position geode_common_geometry_api point_tetra_position(
+		const Point3D& point,
+		const Tetra& tetra
+		)
+
+Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
+
+.. index:: pair: function; tetrahedron_volume_sign
+.. _doxid-namespacegeode_1a7864fa260bdcfb6a4e6e4671a965b901:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>` geode_common_geometry_api tetrahedron_volume_sign(const Tetra& tetra)
+
+Return the sign of a tetrahedron volume.
+
+.. index:: pair: function; triangle_area_sign
+.. _doxid-namespacegeode_1adb0cb74f7e5d499a3ebb08b1c3bdb70d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>` geode_common_geometry_api triangle_area_sign(const Triangle2D& triangle)
+
+Return the sign of a 2D triangle area.
+

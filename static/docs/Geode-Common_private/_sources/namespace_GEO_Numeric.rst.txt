@@ -1,0 +1,61 @@
+.. index:: pair: namespace; GEO::Numeric
+.. _doxid-namespace_g_e_o_1_1_numeric:
+
+namespace GEO::Numeric
+======================
+
+.. toctree::
+	:hidden:
+
+	struct_GEO_Numeric_Limits.rst
+	struct_GEO_Numeric_LimitsHelper.rst
+	struct_GEO_Numeric_LimitsHelper-2.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace Numeric {
+
+	// typedefs
+
+	typedef void* :target:`pointer<doxid-namespace_g_e_o_1_1_numeric_1a4f516f53674a10a4189c6542af31838a>`;
+	typedef int8_t :target:`int8<doxid-namespace_g_e_o_1_1_numeric_1a2d580e2799fb5dbf968781bec533208a>`;
+	typedef int16_t :target:`int16<doxid-namespace_g_e_o_1_1_numeric_1af4570a294abbfeb6ed32cd72a5e40cd6>`;
+	typedef int32_t :target:`int32<doxid-namespace_g_e_o_1_1_numeric_1a32555b9f4021482b8ba971b6f85bc1e3>`;
+	typedef int64_t :target:`int64<doxid-namespace_g_e_o_1_1_numeric_1af901fbac3dae8d2574abe80982f8ebad>`;
+	typedef uint8_t :target:`uint8<doxid-namespace_g_e_o_1_1_numeric_1a10c083442de46256356949e839c1e198>`;
+	typedef uint16_t :target:`uint16<doxid-namespace_g_e_o_1_1_numeric_1a6b2dc7b1b027b4ade569f51d8dfa7689>`;
+	typedef uint32_t :target:`uint32<doxid-namespace_g_e_o_1_1_numeric_1a709b9e865f51e98312c609af91cf26cb>`;
+	typedef uint64_t :target:`uint64<doxid-namespace_g_e_o_1_1_numeric_1a22fe0b5f90a7aae0b6b4ece65b6fb08f>`;
+	typedef float :target:`float32<doxid-namespace_g_e_o_1_1_numeric_1a009bf03423eda0c619926c52fc819cc0>`;
+	typedef double :target:`float64<doxid-namespace_g_e_o_1_1_numeric_1a2dbc489fe1916af86c3cec8f7b3f2345>`;
+
+	// structs
+
+	template <class T>
+	struct :ref:`Limits<doxid-struct_g_e_o_1_1_numeric_1_1_limits>`;
+
+	template <class T, bool is_numeric>
+	struct :ref:`LimitsHelper<doxid-struct_g_e_o_1_1_numeric_1_1_limits_helper>`;
+
+	template <class T>
+	struct :ref:`LimitsHelper<T, true><doxid-struct_g_e_o_1_1_numeric_1_1_limits_helper_3_01_t_00_01true_01_4>`;
+
+	// global functions
+
+	:ref:`float32<doxid-namespace_g_e_o_1_1_numeric_1a009bf03423eda0c619926c52fc819cc0>` :target:`max_float32<doxid-namespace_g_e_o_1_1_numeric_1a563dbae28bbe5d82c90a04e106d8fb6b>`();
+	:ref:`float32<doxid-namespace_g_e_o_1_1_numeric_1a009bf03423eda0c619926c52fc819cc0>` :target:`min_float32<doxid-namespace_g_e_o_1_1_numeric_1ac4427788e2549a621df5a7521d88f8a4>`();
+	:ref:`float64<doxid-namespace_g_e_o_1_1_numeric_1a2dbc489fe1916af86c3cec8f7b3f2345>` :target:`max_float64<doxid-namespace_g_e_o_1_1_numeric_1a52d499ce3d358f905ce81f2981701e0c>`();
+	:ref:`float64<doxid-namespace_g_e_o_1_1_numeric_1a2dbc489fe1916af86c3cec8f7b3f2345>` :target:`min_float64<doxid-namespace_g_e_o_1_1_numeric_1abfc33298edb6f9db917a43ce78cc4940>`();
+	bool geode_common_geometry_api :target:`is_nan<doxid-namespace_g_e_o_1_1_numeric_1a9001e8fd7c4162e11106c92ab6b02471>`(:ref:`float32<doxid-namespace_g_e_o_1_1_numeric_1a009bf03423eda0c619926c52fc819cc0>` x);
+	bool geode_common_geometry_api :target:`is_nan<doxid-namespace_g_e_o_1_1_numeric_1af379c1e1fbdb1cd26c097c4ba977edbd>`(:ref:`float64<doxid-namespace_g_e_o_1_1_numeric_1a2dbc489fe1916af86c3cec8f7b3f2345>` x);
+	void geode_common_geometry_api :target:`random_reset<doxid-namespace_g_e_o_1_1_numeric_1a6c736d3899f87ad17420b7a5e3a39b3b>`();
+	:ref:`int32<doxid-namespace_g_e_o_1_1_numeric_1a32555b9f4021482b8ba971b6f85bc1e3>` geode_common_geometry_api :target:`random_int32<doxid-namespace_g_e_o_1_1_numeric_1a44800ae83b92984a3d8a7c4752aec39e>`();
+	:ref:`float32<doxid-namespace_g_e_o_1_1_numeric_1a009bf03423eda0c619926c52fc819cc0>` geode_common_geometry_api :target:`random_float32<doxid-namespace_g_e_o_1_1_numeric_1af06c1f3423d6b91601cb316978d69ced>`();
+	:ref:`float64<doxid-namespace_g_e_o_1_1_numeric_1a2dbc489fe1916af86c3cec8f7b3f2345>` geode_common_geometry_api :target:`random_float64<doxid-namespace_g_e_o_1_1_numeric_1ac65050bf5277d30ba88f6542dc2af213>`();
+
+	} // namespace Numeric
