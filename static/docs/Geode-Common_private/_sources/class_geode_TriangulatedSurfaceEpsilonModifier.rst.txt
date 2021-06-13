@@ -31,8 +31,15 @@ Overview
 
 		// methods
 	
-		std::tuple<Position, :ref:`SplitTriangleInfo<doxid-structgeode_1_1_split_triangle_info>`> :ref:`insert_point_in_triangle<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier_1ace808093c2e70c75bcacd077fda13ab6>`(index_t triangle_id, const Point<dimension>& point);
-		std::tuple<Position, :ref:`SplitPolygonEdgeInfo<doxid-structgeode_1_1_split_polygon_edge_info>`> :ref:`insert_point_on_edge<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier_1ad61c98434485dc99e86b8aa2f5e304a7>`(const PolygonEdge& edge, const Point<dimension>& point);
+		std::tuple<Position, :ref:`SplitTriangleInfo<doxid-structgeode_1_1_split_triangle_info>`> :ref:`insert_point_in_triangle<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier_1ace808093c2e70c75bcacd077fda13ab6>`(
+			index_t triangle_id,
+			const Point<dimension>& point
+			);
+	
+		std::tuple<Position, :ref:`SplitPolygonEdgeInfo<doxid-structgeode_1_1_split_polygon_edge_info>`> :ref:`insert_point_on_edge<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier_1ad61c98434485dc99e86b8aa2f5e304a7>`(
+			const PolygonEdge& edge,
+			const Point<dimension>& point
+			);
 	};
 
 Inherited Members
@@ -47,8 +54,16 @@ Inherited Members
 		bool :ref:`is_triangle_active<doxid-classgeode_1_1_triangulated_surface_modifier_1a6a0003eaa0337099e027bb9418ea373f>`(index_t triangle_id) const;
 		bool :ref:`is_edge_active<doxid-classgeode_1_1_triangulated_surface_modifier_1a5e73c85b316662435978b88096bd34d5>`(index_t edge_id) const;
 		bool :ref:`is_edge_active<doxid-classgeode_1_1_triangulated_surface_modifier_1af33792af1c0062e08d5392631a723f1d>`(const PolygonEdge& edge) const;
-		:ref:`SplitTriangleInfo<doxid-structgeode_1_1_split_triangle_info>` :ref:`split_triangle<doxid-classgeode_1_1_triangulated_surface_modifier_1aa0d800216074d30d9413d77148509d27>`(index_t triangle_id, const Point<dimension>& point);
-		:ref:`SplitPolygonEdgeInfo<doxid-structgeode_1_1_split_polygon_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1a71bd11173aede092c0fde70c1e2d5981>`(const PolygonEdge& edge, const Point<dimension>& point);
+	
+		:ref:`SplitTriangleInfo<doxid-structgeode_1_1_split_triangle_info>` :ref:`split_triangle<doxid-classgeode_1_1_triangulated_surface_modifier_1aa0d800216074d30d9413d77148509d27>`(
+			index_t triangle_id,
+			const Point<dimension>& point
+			);
+	
+		:ref:`SplitPolygonEdgeInfo<doxid-structgeode_1_1_split_polygon_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1a71bd11173aede092c0fde70c1e2d5981>`(
+			const PolygonEdge& edge,
+			const Point<dimension>& point
+			);
 	
 		template <index_t T = dimension>
 		std::enable_if<T==2, bool>::type :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1a0b016cabf10928b662c101d95fe9673d>`(
@@ -62,7 +77,11 @@ Inherited Members
 			const Point<dimension>& point
 			) const;
 	
-		:ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1a49d0d73288724398a6bd046f2ffb7813>`(const PolygonEdge& edge, const Point<dimension>& point);
+		:ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1a49d0d73288724398a6bd046f2ffb7813>`(
+			const PolygonEdge& edge,
+			const Point<dimension>& point
+			);
+	
 		:ref:`CollapseEdgeInfo<doxid-structgeode_1_1_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1ad36af2def7e5726fc60b920c3d23b017>`(index_t edge_id, const Point<dimension>& point);
 		void :ref:`swap_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1aabc8f7b290f31d56b3a2ef014d772008>`(const PolygonEdge& edge);
 		std::vector<index_t> :ref:`clean_triangles<doxid-classgeode_1_1_triangulated_surface_modifier_1af8b435ff949b373922c3130aec0ee212>`();

@@ -25,12 +25,7 @@ struct geode::SplitInfo
 		// construction
 	
 		:target:`SplitInfo<doxid-structgeode_1_1_split_info_1a029d829e8d1d4a62a80d11bc2daa6327>`();
-	
-		:target:`SplitInfo<doxid-structgeode_1_1_split_info_1a352958c5de622feaab6d0209d218e549>`(
-			index_t new_id_in,
-			index_t old_id_in,
-			:ref:`SplitSide<doxid-namespacegeode_1a379962424c8a834ac6bc5800259a57de>` side_in
-			);
+		:target:`SplitInfo<doxid-structgeode_1_1_split_info_1a352958c5de622feaab6d0209d218e549>`(index_t new_id_in, index_t old_id_in, :ref:`SplitSide<doxid-namespacegeode_1a379962424c8a834ac6bc5800259a57de>` side_in);
 
 		// methods
 	

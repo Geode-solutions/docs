@@ -25,8 +25,5 @@ template struct geode::GeometricSurfacePath
 
 		// construction
 	
-		:target:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path_1a05d6cc326c83ac66bf01d80e554c682f>`(
-			:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>` path_in,
-			Point<dimension> point
-			);
+		:target:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path_1a05d6cc326c83ac66bf01d80e554c682f>`(:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>` path_in, Point<dimension> point);
 	};

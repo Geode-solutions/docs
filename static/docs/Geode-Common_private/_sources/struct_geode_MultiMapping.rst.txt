@@ -26,12 +26,7 @@ template struct geode::MultiMapping
 		// construction
 	
 		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1adc7a0ec0e80779ca7bd0358a579a9b48>`();
-	
-		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1ab9d75eef917302d01c2ae681140b1068>`(
-			Type new_id_in,
-			absl::InlinedVector<Type, 1> old_id_in
-			);
-	
+		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1ab9d75eef917302d01c2ae681140b1068>`(Type new_id_in, absl::InlinedVector<Type, 1> old_id_in);
 		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1ad8eaf94e147938ac8e18d975f3daaf28>`(:ref:`Mapping<doxid-structgeode_1_1_mapping>`<Type> mapping);
 
 		// methods

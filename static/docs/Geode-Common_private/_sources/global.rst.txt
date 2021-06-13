@@ -7,7 +7,6 @@ Global Namespace
 .. toctree::
 	:hidden:
 
-	namespace_GEO.rst
 	namespace_geode.rst
 	namespace_std.rst
 
@@ -20,57 +19,11 @@ Global Namespace
 	
 	// namespaces
 
-	namespace :ref:`GEO<doxid-namespace_g_e_o>`;
-		namespace :ref:`GEO::Numeric<doxid-namespace_g_e_o_1_1_numeric>`;
-		namespace :ref:`GEO::PCK<doxid-namespace_g_e_o_1_1_p_c_k>`;
 	namespace :ref:`geode<doxid-namespacegeode>`;
 		namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
 	namespace :ref:`std<doxid-namespacestd>`;
 
-	// typedefs
-
-	typedef int :target:`GeoMesh<doxid-predicates_8h_1a4553a6b588a1bb78178ae394800b469a>`;
-	typedef unsigned char :target:`geo_coord_index_t<doxid-predicates_8h_1a9ddf80edf66161a279b30182135ca7df>`;
-	typedef unsigned int :target:`geo_index_t<doxid-predicates_8h_1ae5fa4e566065ddd7f5f6ab1ab26ca80d>`;
-	typedef int :target:`geo_signed_index_t<doxid-predicates_8h_1aeb0397ead5451c97c9edd1902394cea2>`;
-	typedef double :target:`geo_coord_t<doxid-predicates_8h_1a5fdd474ecf9ca6b2dd53e0232d8023a3>`;
-	typedef int :target:`geo_boolean<doxid-predicates_8h_1a59958e50783a62a38bf0ebb437d1e229>`;
-
-	// enums
-
-	enum
-	{
-	    :target:`GEO_FALSE<doxid-predicates_8h_1a06fc87d81c62e9abb8790b6e5713c55ba31826e6055bf3c9f3892e86b90407867>` = 0,
-	    :target:`GEO_TRUE<doxid-predicates_8h_1a06fc87d81c62e9abb8790b6e5713c55ba42466f084f0b67e24419fb5f97463c67>`  = 1,
-	};
-
 	// macros
 
-	#define :target:`CPP_CONCAT<doxid-predicates_8h_1a0ee80af40c3c2e22eb2a9d3c9ee48848>`( \
-		A, \
-		B \
-		)
-
-	#define :target:`CPP_CONCAT_<doxid-predicates_8h_1a154d89d4de30f687645d7d2d530ffa37>`( \
-		A, \
-		B \
-		)
-
-	#define :target:`FOR<doxid-predicates_8h_1ac8ca783bb7cf5d9932661a544582d45e>`( \
-		I, \
-		UPPERBND \
-		)
-
-	#define :target:`FPG_UNCERTAIN_VALUE<doxid-predicates_8h_1a69b443f3f98ec5b30d7a7423ac5775fa>`
-	#define :target:`GEOGRAM_API<doxid-predicates_8h_1a0764c2ea84bb8686acde074e2eb79c6b>`
-	#define :target:`GEO_NOEXCEPT<doxid-predicates_8h_1a5149759ad35de247871e77d32ae6cd2c>`
 	#define :target:`OPENGEODE_LICENSED_LIBRARY_INITIALIZE<doxid-core_2common_8h_1a3ad8180ee4deebf1b32a08b96628b42c>`(library_name)
-	#define :target:`geo_assert<doxid-predicates_8h_1ad81221a472653ab37d87159a30433bf9>`(x)
-	#define :target:`geo_assert_not_reached<doxid-predicates_8h_1a157ba16d84cc9745be3b02923bb9dd25>`
-
-	#define :target:`geo_range_assert<doxid-predicates_8h_1aad89755ebf750f8aaa72f2bb27d2f6c4>`( \
-		x, \
-		min_val, \
-		max_val \
-		)
 

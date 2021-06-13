@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="namespace GEO" href="namespace_GEO.html" />
+    <link rel="next" title="namespace geode" href="namespace_geode.html" />
     <link rel="prev" title="My Project Documentation" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -40,59 +40,13 @@
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="c1">// namespaces</span>
 
-<span class="k">namespace</span> <a class="reference internal" href="namespace_GEO.html#doxid-namespace-g-e-o"><span class="std std-ref">GEO</span></a><span></span><span class="p">;</span>
-    <span class="k">namespace</span> <a class="reference internal" href="namespace_GEO_Numeric.html#doxid-namespace-g-e-o-1-1-numeric"><span class="std std-ref">GEO::Numeric</span></a><span></span><span class="p">;</span>
-    <span class="k">namespace</span> <a class="reference internal" href="namespace_GEO_PCK.html#doxid-namespace-g-e-o-1-1-p-c-k"><span class="std std-ref">GEO::PCK</span></a><span></span><span class="p">;</span>
 <span class="k">namespace</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode"><span class="std std-ref">geode</span></a><span></span><span class="p">;</span>
     <span class="k">namespace</span> <a class="reference internal" href="namespace_geode_detail.html#doxid-namespacegeode-1-1detail"><span class="std std-ref">geode::detail</span></a><span></span><span class="p">;</span>
 <span class="k">namespace</span> <a class="reference internal" href="namespace_std.html#doxid-namespacestd"><span class="std std-ref">std</span></a><span></span><span class="p">;</span>
 
-<span class="c1">// typedefs</span>
-
-<span class="k">typedef</span> <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-predicates-8h-1a4553a6b588a1bb78178ae394800b469a"><span></span><span class="n">GeoMesh</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-predicates-8h-1a9ddf80edf66161a279b30182135ca7df"><span></span><span class="n">geo_coord_index_t</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-predicates-8h-1ae5fa4e566065ddd7f5f6ab1ab26ca80d"><span></span><span class="n">geo_index_t</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-predicates-8h-1aeb0397ead5451c97c9edd1902394cea2"><span></span><span class="n">geo_signed_index_t</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-predicates-8h-1a5fdd474ecf9ca6b2dd53e0232d8023a3"><span></span><span class="n">geo_coord_t</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-predicates-8h-1a59958e50783a62a38bf0ebb437d1e229"><span></span><span class="n">geo_boolean</span></span><span></span><span class="p">;</span>
-
-<span class="c1">// enums</span>
-
-<span class="k">enum</span>
-<span class="p">{</span>
-    <span class="doxyrest-code-target target" id="doxid-predicates-8h-1a06fc87d81c62e9abb8790b6e5713c55ba31826e6055bf3c9f3892e86b90407867"><span></span><span class="n">GEO_FALSE</span></span><span></span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-    <span class="doxyrest-code-target target" id="doxid-predicates-8h-1a06fc87d81c62e9abb8790b6e5713c55ba42466f084f0b67e24419fb5f97463c67"><span></span><span class="n">GEO_TRUE</span></span><span></span>  <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
-<span class="p">};</span>
-
 <span class="c1">// macros</span>
 
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-predicates-8h-1a0ee80af40c3c2e22eb2a9d3c9ee48848"><span></span><span class="n">CPP_CONCAT</span></span><span></span><span class="p">(</span> \
-    <span class="n">A</span><span class="p">,</span> \
-    <span class="n">B</span> \
-    <span class="p">)</span>
-
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-predicates-8h-1a154d89d4de30f687645d7d2d530ffa37"><span></span><span class="n">CPP_CONCAT_</span></span><span></span><span class="p">(</span> \
-    <span class="n">A</span><span class="p">,</span> \
-    <span class="n">B</span> \
-    <span class="p">)</span>
-
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-predicates-8h-1ac8ca783bb7cf5d9932661a544582d45e"><span></span><span class="n">FOR</span></span><span></span><span class="p">(</span> \
-    <span class="n">I</span><span class="p">,</span> \
-    <span class="n">UPPERBND</span> \
-    <span class="p">)</span>
-
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-predicates-8h-1a69b443f3f98ec5b30d7a7423ac5775fa"><span></span><span class="n">FPG_UNCERTAIN_VALUE</span></span><span></span>
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-predicates-8h-1a0764c2ea84bb8686acde074e2eb79c6b"><span></span><span class="n">GEOGRAM_API</span></span><span></span>
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-predicates-8h-1a5149759ad35de247871e77d32ae6cd2c"><span></span><span class="n">GEO_NOEXCEPT</span></span><span></span>
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-core-2common-8h-1a3ad8180ee4deebf1b32a08b96628b42c"><span></span><span class="n">OPENGEODE_LICENSED_LIBRARY_INITIALIZE</span></span><span></span><span class="p">(</span><span class="n">library_name</span><span class="p">)</span>
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-predicates-8h-1ad81221a472653ab37d87159a30433bf9"><span></span><span class="n">geo_assert</span></span><span></span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-predicates-8h-1a157ba16d84cc9745be3b02923bb9dd25"><span></span><span class="n">geo_assert_not_reached</span></span><span></span>
-
-<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-predicates-8h-1aad89755ebf750f8aaa72f2bb27d2f6c4"><span></span><span class="n">geo_range_assert</span></span><span></span><span class="p">(</span> \
-    <span class="n">x</span><span class="p">,</span> \
-    <span class="n">min_val</span><span class="p">,</span> \
-    <span class="n">max_val</span> \
-    <span class="p">)</span></pre>
+<span class="cp">#define </span><span class="doxyrest-code-target target" id="doxid-core-2common-8h-1a3ad8180ee4deebf1b32a08b96628b42c"><span></span><span class="n">OPENGEODE_LICENSED_LIBRARY_INITIALIZE</span></span><span></span><span class="p">(</span><span class="n">library_name</span><span class="p">)</span></pre>
 </div>
 
 

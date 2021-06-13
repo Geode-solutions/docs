@@ -28,17 +28,8 @@ struct geode::SidedSurface
 		// construction
 	
 		:target:`SidedSurface<doxid-structgeode_1_1_sided_surface_1ae00513d85a8a66b8bb518ad1298b466a>`();
-	
-		:target:`SidedSurface<doxid-structgeode_1_1_sided_surface_1ae52abf5282af4bb5c4d88766cd04c6c6>`(
-			uuid id_in,
-			local_index_t side_in,
-			PolygonEdge edge_in
-			);
-	
-		:target:`SidedSurface<doxid-structgeode_1_1_sided_surface_1a749ed56706a5323b4a2c55b3aa1356c5>`(
-			uuid id_in,
-			local_index_t side_in
-			);
+		:target:`SidedSurface<doxid-structgeode_1_1_sided_surface_1ae52abf5282af4bb5c4d88766cd04c6c6>`(uuid id_in, local_index_t side_in, PolygonEdge edge_in);
+		:target:`SidedSurface<doxid-structgeode_1_1_sided_surface_1a749ed56706a5323b4a2c55b3aa1356c5>`(uuid id_in, local_index_t side_in);
 
 		// methods
 	

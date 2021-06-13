@@ -26,11 +26,7 @@ class geode::RayTracing3D
 
 		// construction
 	
-		:target:`RayTracing3D<doxid-classgeode_1_1_ray_tracing3_d_1ad752690dfa9e2871c0ebb23519b478c7>`(
-			const SurfaceMesh3D& mesh,
-			const Ray3D& ray
-			);
-	
+		:target:`RayTracing3D<doxid-classgeode_1_1_ray_tracing3_d_1ad752690dfa9e2871c0ebb23519b478c7>`(const SurfaceMesh3D& mesh, const Ray3D& ray);
 		:target:`RayTracing3D<doxid-classgeode_1_1_ray_tracing3_d_1a8a21a4228b1d38626b199a29e18ec0d6>`(RayTracing3D&& other);
 
 		// methods

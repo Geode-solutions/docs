@@ -25,9 +25,5 @@ struct geode::PatchFrontEdge
 
 		// construction
 	
-		:target:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge_1a8d8cec9c7e83bf65737a47711b5b16de>`(
-			index_t id_in,
-			bool orientation_in,
-			index_t patch_edge_in
-			);
+		:target:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge_1a8d8cec9c7e83bf65737a47711b5b16de>`(index_t id_in, bool orientation_in, index_t patch_edge_in);
 	};
