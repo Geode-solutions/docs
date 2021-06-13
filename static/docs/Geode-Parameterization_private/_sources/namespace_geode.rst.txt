@@ -1,0 +1,109 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// global functions
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac5ecef06abef60896357a8eb77586520>`(TriangulatedSurface);
+
+	std::unique_ptr<TriangulatedSurface2D> geode_parameterization_surface_api :ref:`convert_surface3d_into_2d<doxid-namespacegeode_1ae6c6ef77c2c07b085836259718a82e5a>`(
+		const TriangulatedSurface3D& mesh,
+		absl::string_view attribute_name
+		);
+
+	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+
+	void geode_parameterization_surface_api :ref:`compute_LSCM_parameterization<doxid-namespacegeode_1a245a698d8faefbf26d414d10b268ff0d>`(
+		const TriangulatedSurface3D& mesh,
+		absl::string_view attribute_name
+		);
+
+	} // namespace geode
+.. _details-namespacegeode:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Global Functions
+----------------
+
+.. index:: pair: function; convert_surface3d_into_2d
+.. _doxid-namespacegeode_1ae6c6ef77c2c07b085836259718a82e5a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::unique_ptr<TriangulatedSurface2D> geode_parameterization_surface_api convert_surface3d_into_2d(
+		const TriangulatedSurface3D& mesh,
+		absl::string_view attribute_name
+		)
+
+Compute a 2D mesh from a 3D mesh and its parametric coordinates
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Input triangulated mesh
+
+	*
+		- attribute_name
+
+		- The VariableAttribute< Point2D > name which holds the parametric values. Values are stored on the vertices.
+
+.. index:: pair: function; compute_LSCM_parameterization
+.. _doxid-namespacegeode_1a245a698d8faefbf26d414d10b268ff0d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void geode_parameterization_surface_api compute_LSCM_parameterization(
+		const TriangulatedSurface3D& mesh,
+		absl::string_view attribute_name
+		)
+
+Compute Least Squares Conformal Maps
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Input triangulated mesh
+
+	*
+		- attribute_name
+
+		- The VariableAttribute< Point2D > name which holds the parametric values. Values are stored on the vertices.
+
