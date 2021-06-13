@@ -5,7 +5,6 @@
         Back to index
       </v-btn>
       <span class="display-1 ml-5">{{ project }} documentation</span>
-      <v-col />
       <iframe 
         ref="docFrame"
         width="100%"
