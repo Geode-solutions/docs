@@ -62,7 +62,8 @@ export default {
         { title: 'OpenGeode-Geosciences', to: '/opengeode-geosciences' },
         { title: 'OpenGeode-GeosciencesIO', to: '/opengeode-geosciencesio' },
         { divider: 'PROPRIETARY CODE DOCUMENTATION' },
-        { title: 'Geode-Common', to: '/geode-common' }
+        { title: 'Geode-Common', to: '/geode-common' },
+        { title: 'Geode-Conversion', to: '/geode-conversion' }
       ]
     }
   }

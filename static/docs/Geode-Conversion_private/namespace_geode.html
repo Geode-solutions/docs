@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>namespace geode &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="namespace geode::detail" href="namespace_geode_detail.html" />
+    <link rel="prev" title="Global Namespace" href="global.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="namespace-geode">
+<span id="doxid-namespacegeode"></span><span id="index-0"></span><h1>namespace geode</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">geode</span> <span class="p">{</span>
+
+<span class="c1">// namespaces</span>
+
+<span class="k">namespace</span> <a class="reference internal" href="namespace_geode_detail.html#doxid-namespacegeode-1-1detail"><span class="std std-ref">geode::detail</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// global variables</span>
+
+<span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a904052a9ccedabc1fb657c3b811cdb75"><span></span><span class="n">uuid_from_conversion_attribute_name</span></span><span></span> <span class="o">=</span>         <span class="s">&quot;uuid_from_conversion&quot;</span><span class="p">;</span>
+
+<span class="c1">// global functions</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa9eca13715aca2567523b81021cda51a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a80ee0d83f9eb471e3d0a3066c343cb42"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve2D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5d42cb1fdfd5f238cb7a19352be4b9df"><span></span><span class="n">convert_edged_curve3d_into_2d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">EdgedCurve3D</span><span class="o">&amp;</span> <span class="n">curve3d</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve3D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af63312aeec876df7a70ac520a712fe39"><span></span><span class="n">convert_edged_curve2d_into_3d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">EdgedCurve2D</span><span class="o">&amp;</span> <span class="n">curve2d</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a55897b30a3ff5e25684f4268a974caad"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PointSet</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a11058d89bacb297358eb8a8a8a29490c"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">PointSet</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet2D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abbc8761c3b7799d4008a5310279a35aa"><span></span><span class="n">convert_point_set3d_into_2d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PointSet3D</span><span class="o">&amp;</span> <span class="n">point_set3d</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet3D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab84ab44f7930d36c4b4fd0a8d343484d"><span></span><span class="n">convert_point_set2d_into_3d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PointSet2D</span><span class="o">&amp;</span> <span class="n">point_set2d</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa326268026b80210a023b9d2edec059d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PolygonalSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7986437714612066a303580285ecf217"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a36eeebddb61f6b3acc7e4711bb6bbeb4"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">PolygonalSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac5ecef06abef60896357a8eb77586520"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SurfaceMesh3D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa9202c848c215cca7960b4dccd7d8848"><span></span><span class="n">convert_surface_mesh2d_into_3d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface2d</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SurfaceMesh2D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a11044d805f02b1adbe31cde463b5e54c"><span></span><span class="n">convert_surface_mesh3d_into_2d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">surface3d</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface3D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad542ff61f62bc955fa53e0a7dafedc13"><span></span><span class="n">convert_polygonal_surface2d_into_3d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolygonalSurface2D</span><span class="o">&amp;</span> <span class="n">surface2d</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface2D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6c1f6971a347f7c1d0d7fef37b4bda2a"><span></span><span class="n">convert_polygonal_surface3d_into_2d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolygonalSurface3D</span><span class="o">&amp;</span> <span class="n">surface3d</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TriangulatedSurface3D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0742293fa947b4cbf86928661084d4c9"><span></span><span class="n">convert_triangulated_surface2d_into_3d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">TriangulatedSurface2D</span><span class="o">&amp;</span> <span class="n">surface2d</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TriangulatedSurface2D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aceeeaf110cb9f1136b3b5c70136c68c7"><span></span><span class="n">convert_triangulated_surface3d_into_2d</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">surface3d</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a42bbac6585bd93d1b5efd8d3a7df2e89"><span></span><span class="n">merge_surface_mesh</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SurfaceMesh3D</span><span class="o">&gt;</span> <span class="n">geode_conversion_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a887ca37961b199efb35bbf147f9a592b"><span></span><span class="n">merge_closed_surface_mesh</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afdb0662672f33a008eac14437a46f0b6"><span></span><span class="n">merge_surface_meshes</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;&gt;&amp;</span> <span class="n">surfaces</span><span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1e8e55e5371b72b9963704762267ff26"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PolyhedralSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae3a0efd7d2b1a538c139321616df2007"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">PolyhedralSolid</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve2D</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a49d9e3ea593bf9c845d0574dbe43e449"><span></span><span class="n">convert_section_into_curve</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface2D</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4c31988aaab691a47c9532a60f6c1816"><span></span><span class="n">convert_section_into_surface</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve2D</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface2D</span><span class="o">&gt;&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac9cbfa7c910ca5e03e3ecff2d790a4b7"><span></span><span class="n">convert_section_into_curve_and_surface</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve3D</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aeb300bb8b3680f7dddef2aaa87067fdf"><span></span><span class="n">convert_brep_into_curve</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface3D</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a233d450b2c51d76e7862a87fefb13020"><span></span><span class="n">convert_brep_into_surface</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolyhedralSolid3D</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a16064982268caf1251802fad818097aa"><span></span><span class="n">convert_brep_into_solid</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve3D</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface3D</span><span class="o">&gt;&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a04057cd2ef858bdb99831624d8d12037"><span></span><span class="n">convert_brep_into_curve_and_surface</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface3D</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolyhedralSolid3D</span><span class="o">&gt;&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a09bf602c87d51f35dbc19002dbabd52c"><span></span><span class="n">convert_brep_into_surface_and_solid</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve3D</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface3D</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolyhedralSolid3D</span><span class="o">&gt;&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7dfa74cacea2e76b43b5eb2e46b21f54"><span></span><span class="n">convert_brep_into_curve_and_surface_and_solid</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+<span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aea4c474cef70b8506453cb50683c8a05"><span></span><span class="n">convert_brep_into_section</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+<span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a27302f254f1ef20905e7c1bbef5a9730"><span></span><span class="n">convert_section_into_brep</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8494fd593c0c13b77aa7c916bb8662e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8ac5cec34b9c5986e0c83548aeb19f2d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b78e29335d938bae6153ff18f271541"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a74a13005266ccc48f0d9545d28c09dcb"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a775f43c93e557302fbaa359aa0af2f19"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
+<span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a7fa8e8933f7d3acd7930bad19d87e79a"><span class="std std-ref">convert_surface_into_brep</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&gt;&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab636f1e91aa498007e1fab1c3c3de778"><span class="std std-ref">convert_surfaces_into_brep</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;&amp;</span> <span class="n">surfaces</span><span class="p">);</span>
+<span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1acee492fff074e02fa81aebd8aab70e6b"><span class="std std-ref">convert_solid_into_brep_from_adjacencies</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">);</span>
+
+<span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a92d35cbc4515b193913214a9fb29e2f4"><span class="std std-ref">convert_solid_into_brep_from_attribute</span></a><span></span><span class="p">(</span>
+    <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
+    <span class="p">);</span>
+
+<span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a82b91748e58ceed17e8283e4fa57f39f"><span></span><span class="n">convert_surface_into_section</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="c1">// namespace geode</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-namespacegeode"></span><h2>Detailed Documentation</h2>
+<div class="section" id="global-functions">
+<h3>Global Functions</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7fa8e8933f7d3acd7930bad19d87e79a"><span id="index-1"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surface_into_brep</span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">)</span></pre>
+<p>Convert a SurfaceMesh3D into a BRep, without meshed Blocks. This function uses the adjacencies between surface polygons to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to SurfaceMesh3D edges shared by 1 or more than 2 polygons, or by 2 polygons if there are not set as adjacent.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>surface</p></td>
+<td><p>Input surface</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab636f1e91aa498007e1fab1c3c3de778"><span id="index-2"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&gt;&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surfaces_into_brep</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;&amp;</span> <span class="n">surfaces</span><span class="p">)</span></pre>
+<p>Convert a set of SurfaceMesh3D into a BRep, without meshed Blocks. This function first merged the input surfaces together and then uses the adjacencies between surface polygons to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to merged SurfaceMesh3D edges shared by 1 or more than 2 polygons, or by 2 polygons if there are not set as adjacent.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>surfaces</p></td>
+<td><p>Input surfaces</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the BRep and the mapping between input surfaces and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1acee492fff074e02fa81aebd8aab70e6b"><span id="index-3"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_solid_into_brep_from_adjacencies</span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">)</span></pre>
+<p>Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses the adjacencies between solid polyhedra to determine BRep Block extensions and, as a consequence, geometries of BRep Surfaces. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra if there are not set as adjacent.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>solid</p></td>
+<td><p>Input solid</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a92d35cbc4515b193913214a9fb29e2f4"><span id="index-4"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_solid_into_brep_from_attribute</span><span class="p">(</span>
+    <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
+    <span class="p">)</span></pre>
+<p>Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribute values on each solid polyhedron to determine BRep Block. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra with different attribute values.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>solid</p></td>
+<td><p>Input solid</p></td>
+</tr>
+<tr class="row-even"><td><p>attribute_name</p></td>
+<td><p>Name of attribute stored on solid polyhedra  Attribute should be convertible to float.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/namespace_geode.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
