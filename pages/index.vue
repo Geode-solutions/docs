@@ -2,7 +2,8 @@
   <v-row class="flex-column">
     <theme title="Guides" :cards="guides" />
     <theme title="Developer guides" :cards="devguides" />
-    <theme title="Code documentation" :cards="projects" />
+    <theme title="Open source code documentation" :cards="projects" />
+    <theme title="Proprietary code documentation" :cards="projectsX" />
   </v-row>
 </template>
 
@@ -18,7 +19,7 @@ export default {
       {
         title: 'Models',
         descr: 'OpenGeode data model for representing geometric models',
-        route: 'datamodel'
+        route: 'models'
       },
       {
         title: 'Meshes',
@@ -99,6 +100,33 @@ export default {
         title: 'OpenGeode-GeosciencesIO',
         descr: 'Input/Output formats for OpenGeode-Geosciences',
         route: 'opengeode-geosciencesio'
+      }
+    ],
+    projectsX: [
+      {
+        title: 'Geode-Common',
+        descr: 'Common tools and utils',
+        route: 'geode-common'
+      },
+      {
+        title: 'Geode-Conversion',
+        descr: 'Conversion between meshes and models',
+        route: 'geode-conversion'
+      },
+      {
+        title: 'Geode-Parameterization',
+        descr: 'Paramaterization computations',
+        route: 'geode-parameterization'
+      },
+      {
+        title: 'Geode-SimplexRemesh',
+        descr: 'Simplicial mesh/remeshing of models',
+        route: 'geode-simplexremesh'
+      },
+      {
+        title: 'Geode-SimplexRemeshGeosciences',
+        descr: 'Simplicial mesh/remeshing of geological models',
+        route: 'geode-simplexremeshgeosciences'
       }
     ]
   })

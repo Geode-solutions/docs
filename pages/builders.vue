@@ -162,7 +162,7 @@
       <p
         :class="paragraph"
       >
-       Deleting the polygon #0 will remove the polygon and renumber the remaining polygons.
+        Deleting the polygon #0 will remove the polygon and renumber the remaining polygons.
       </p>
 
       <!-- eslint-disable -->
@@ -176,7 +176,7 @@
       <p
         :class="paragraph"
       >
-       Deleting the vertex #3 will remove the vertex, renumber the remaining vertices and remove the polygons containing this vertex.
+        Deleting the vertex #3 will remove the vertex, renumber the remaining vertices and remove the polygons containing this vertex.
       </p>
 
       <!-- eslint-disable -->
@@ -194,14 +194,14 @@
       <p
         :class="nb"
       >
-      Note: Deletion methods can renumber your entire mesh to keep continuous indexing.
-      To know how the indexing was changed, all deletion methods return a table containing the mapping between the old index and the new index.
+        Note: Deletion methods can renumber your entire mesh to keep continuous indexing.
+        To know how the indexing was changed, all deletion methods return a table containing the mapping between the old index and the new index.
       </p>
 
       <p
         :class="paragraph"
       >
-      Equivalent methods can be found for all other mesh builders.
+        Equivalent methods can be found for all other mesh builders.
       </p>
 
       <h2 :class="section">
@@ -213,15 +213,15 @@
       >
         To build a model, you need to interact with three concepts:
         <ul>
-         <li>
-           add or remove a Component to the model
-         </li>
-         <li>
-           add or remove a relation between two model Components
-         </li>
-         <li>
-           add or remove information in the <span v-html="vertexIdentifier"/>
-         </li>
+          <li>
+            add or remove a Component to the model
+          </li>
+          <li>
+            add or remove a relation between two model Components
+          </li>
+          <li>
+            add or remove information in the <span v-html="vertexIdentifier" />
+          </li>
         </ul>
       </p>
 
@@ -235,7 +235,7 @@
         :class="paragraph"
       >
         There are predefined relations between Component types.
-        We will use the <span v-html="sctn"/> as example and build the following section:
+        We will use the <span v-html="sctn" /> as example and build the following section:
       </p>
 
       <img src="@/assets/builders-3.svg">
@@ -323,7 +323,7 @@
       <p
         :class="paragraph"
       >
-       Repeat this process for every unique vertex of the section.
+        Repeat this process for every unique vertex of the section.
       </p>
     </v-col>
   </v-row>

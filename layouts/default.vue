@@ -8,7 +8,17 @@
           </v-subheader>
           <v-list-item v-else :key="index" link nuxt :to="item.to" color="primary">
             <v-list-item-content>
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
+              <v-tooltip right>
+                <template #activator="{ on, attrs }">
+                  <v-list-item-title 
+                    v-bind="attrs"
+                    v-on="on"
+                  >
+                    {{ item.title }}
+                  </v-list-item-title>
+                </template>
+                <span>{{ item.title }}</span>
+              </v-tooltip>
             </v-list-item-content>
           </v-list-item>
         </template>
@@ -38,7 +48,7 @@ export default {
     return {
       items: [
         { divider: 'GUIDES' },
-        { title: 'DataModel', to: '/datamodel' },
+        { title: 'Models', to: '/models' },
         { title: 'Meshes', to: '/meshes' },
         { title: 'Attributes', to: '/attributes' },
         { title: 'Builders', to: '/builders' },
@@ -56,11 +66,17 @@ export default {
         { title: 'Use OpenGeode binding', to: '/how-to-use-binding' },
         { title: 'Get OpenGeode code', to: '/where-to-get-code' },
         { title: 'How to link with OpenGeode-IO', to: '/link-with-io' },
-        { divider: 'CODE DOCUMENTATION' },
+        { divider: 'OPEN SOURCE CODE DOCUMENTATION' },
         { title: 'OpenGeode', to: '/opengeode' },
         { title: 'OpenGeode-IO', to: '/opengeode-io' },
         { title: 'OpenGeode-Geosciences', to: '/opengeode-geosciences' },
-        { title: 'OpenGeode-GeosciencesIO', to: '/opengeode-geosciencesio' }
+        { title: 'OpenGeode-GeosciencesIO', to: '/opengeode-geosciencesio' },
+        { divider: 'PROPRIETARY CODE DOCUMENTATION' },
+        { title: 'Geode-Common', to: '/geode-common' },
+        { title: 'Geode-Conversion', to: '/geode-conversion' },
+        { title: 'Geode-Parameterization', to: '/geode-parameterization' },
+        { title: 'Geode-SimplexRemesh', to: '/geode-simplexremesh' },
+        { title: 'Geode-SimplexRemeshGeosciences', to: '/geode-simplexremeshgeosciences' }
       ]
     }
   }

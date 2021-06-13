@@ -406,7 +406,7 @@
     </code>
     <!-- eslint-enable -->
 
-    <h2 :class="section">
+      <h2 :class="section">
         Geosciences models
       </h2>
 
@@ -428,7 +428,6 @@
       };
     </code>
     <!-- eslint-enable -->
-
     </v-col>
   </v-row>
 </template>
