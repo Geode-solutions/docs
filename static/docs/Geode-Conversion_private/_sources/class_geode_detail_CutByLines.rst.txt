@@ -1,0 +1,30 @@
+.. index:: pair: class; geode::detail::CutByLines
+.. _doxid-classgeode_1_1detail_1_1_cut_by_lines:
+
+template class geode::detail::CutByLines
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cut_by_lines.h>
+	
+	template <typename Model, typename ModelBuilder, index_t dimension>
+	class CutByLines
+	{
+	public:
+		// construction
+	
+		:target:`CutByLines<doxid-classgeode_1_1detail_1_1_cut_by_lines_1adede1826663cfd123de8ad527455e67f>`(Model& model);
+
+		// methods
+	
+		void :target:`cut_all_surfaces<doxid-classgeode_1_1detail_1_1_cut_by_lines_1affc7224c99afb45fdcb5ea72bc1a896e>`();
+		void :target:`cut_surface<doxid-classgeode_1_1detail_1_1_cut_by_lines_1af46b45bf6732fef00d4f14c6c79a479c>`(const Surface<dimension>& surface);
+	};

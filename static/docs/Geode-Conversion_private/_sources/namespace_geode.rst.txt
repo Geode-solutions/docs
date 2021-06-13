@@ -7,6 +7,8 @@ namespace geode
 .. toctree::
 	:hidden:
 
+	namespace_geode_detail.rst
+
 Overview
 ~~~~~~~~
 
@@ -19,12 +21,17 @@ Overview
 	
 	namespace geode {
 
+	// namespaces
+
+	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
+
 	// global variables
 
 	static constexpr auto :target:`uuid_from_conversion_attribute_name<doxid-namespacegeode_1a904052a9ccedabc1fb657c3b811cdb75>` =         "uuid_from_conversion";
 
 	// global functions
 
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a80ee0d83f9eb471e3d0a3066c343cb42>`(EdgedCurve);
 	std::unique_ptr<EdgedCurve2D> geode_conversion_mesh_api :target:`convert_edged_curve3d_into_2d<doxid-namespacegeode_1a5d42cb1fdfd5f238cb7a19352be4b9df>`(const EdgedCurve3D& curve3d);
@@ -33,7 +40,6 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a11058d89bacb297358eb8a8a8a29490c>`(PointSet);
 	std::unique_ptr<PointSet2D> geode_conversion_mesh_api :target:`convert_point_set3d_into_2d<doxid-namespacegeode_1abbc8761c3b7799d4008a5310279a35aa>`(const PointSet3D& point_set3d);
 	std::unique_ptr<PointSet3D> geode_conversion_mesh_api :target:`convert_point_set2d_into_3d<doxid-namespacegeode_1ab84ab44f7930d36c4b4fd0a8d343484d>`(const PointSet2D& point_set2d);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa326268026b80210a023b9d2edec059d>`(PolygonalSurface);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7986437714612066a303580285ecf217>`(SurfaceMesh);
@@ -67,9 +73,12 @@ Overview
 	std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<PolygonalSurface3D>, std::unique_ptr<PolyhedralSolid3D>> geode_conversion_model_api :target:`convert_brep_into_curve_and_surface_and_solid<doxid-namespacegeode_1a7dfa74cacea2e76b43b5eb2e46b21f54>`(const BRep& brep);
 	Section geode_conversion_model_api :target:`convert_brep_into_section<doxid-namespacegeode_1aea4c474cef70b8506453cb50683c8a05>`(const BRep& brep);
 	BRep geode_conversion_model_api :target:`convert_section_into_brep<doxid-namespacegeode_1a27302f254f1ef20905e7c1bbef5a9730>`(const Section& section);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(SolidMesh);
-	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(Surface);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a775f43c93e557302fbaa359aa0af2f19>`(SurfaceMesh);
 	BRep geode_conversion_model_api :ref:`convert_surface_into_brep<doxid-namespacegeode_1a7fa8e8933f7d3acd7930bad19d87e79a>`(const SurfaceMesh3D& surface);
 	std::tuple<BRep, absl::FixedArray<absl::InlinedVector<uuid, 1>>> geode_conversion_model_api :ref:`convert_surfaces_into_brep<doxid-namespacegeode_1ab636f1e91aa498007e1fab1c3c3de778>`(const std::vector<std::reference_wrapper<const SurfaceMesh3D>>& surfaces);
 	BRep geode_conversion_model_api :ref:`convert_solid_into_brep_from_adjacencies<doxid-namespacegeode_1acee492fff074e02fa81aebd8aab70e6b>`(const SolidMesh3D& solid);
@@ -79,7 +88,6 @@ Overview
 		absl::string_view attribute_name
 		);
 
-	:target:`ALIAS_2D<doxid-namespacegeode_1a775f43c93e557302fbaa359aa0af2f19>`(SurfaceMesh);
 	Section geode_conversion_model_api :target:`convert_surface_into_section<doxid-namespacegeode_1a82b91748e58ceed17e8283e4fa57f39f>`(const SurfaceMesh2D& surface);
 
 	} // namespace geode

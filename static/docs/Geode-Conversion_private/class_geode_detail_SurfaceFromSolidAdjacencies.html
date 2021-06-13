@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class geode::detail::SurfaceFromSolidAdjacencies &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::detail::SurfaceIdentifier" href="class_geode_detail_SurfaceIdentifier.html" />
+    <link rel="prev" title="class geode::detail::SolidIdentifier" href="class_geode_detail_SolidIdentifier.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-detail-surfacefromsolidadjacencies">
+<span id="doxid-classgeode-1-1detail-1-1-surface-from-solid-adjacencies"></span><span id="index-0"></span><h1>class geode::detail::SurfaceFromSolidAdjacencies</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surface_from_solid_adjacencies.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">SurfaceFromSolidAdjacencies</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">PolyhedronFacet</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-from-solid-adjacencies-1abdb7d938e633199f333fc112c50a4f1b"><span></span><span class="n">polyhedra_exported_attribute_type</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-from-solid-adjacencies-1a4ae5e2584ffb8f0cd7b8d180c15f3829"><span></span><span class="n">polyhedra_exported_attribute_name</span></span><span></span> <span class="o">=</span>                 <span class="s">&quot;polyhedra_exported&quot;</span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-from-solid-adjacencies-1ad365d9a9981ceaeaa9a48b487d670b71"><span></span><span class="n">SurfaceFromSolidAdjacencies</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-from-solid-adjacencies-1a5aeca5eced2c5c70246d54bc2df3ac50"><span></span><span class="n">build</span></span><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SurfaceMesh3D</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-from-solid-adjacencies-1aa5567fb08b6be5e1958ec08753937f2e"><span></span><span class="n">result</span></span><span></span><span class="p">();</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-from-solid-adjacencies-1a267b3e5f6f32482b053475d930243382"><span></span><span class="n">mapping</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_detail_SurfaceFromSolidAdjacencies.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
