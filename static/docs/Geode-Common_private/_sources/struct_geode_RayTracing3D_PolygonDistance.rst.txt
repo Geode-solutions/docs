@@ -24,10 +24,7 @@ struct geode::RayTracing3D::PolygonDistance
 
 		// construction
 	
-		:target:`PolygonDistance<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance_1af7b673654375cadf20866a72950a4e60>`(
-			index_t polygon_in,
-			double distance_in
-			);
+		:target:`PolygonDistance<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance_1af7b673654375cadf20866a72950a4e60>`(index_t polygon_in, double distance_in);
 
 		// methods
 	

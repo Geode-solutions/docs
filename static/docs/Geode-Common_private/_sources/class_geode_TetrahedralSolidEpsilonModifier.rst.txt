@@ -30,9 +30,21 @@ Overview
 
 		// methods
 	
-		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`insert_point_in_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a2890eae4217a68f338e851e6575efcb7>`(index_t tetrahedron_id, const Point3D& point);
-		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`insert_point_on_facet<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a37b03f8220cee9cf1c20116427a65bab>`(const PolyhedronFacet& facet, const Point3D& point);
-		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`insert_point_on_edge<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1ab990b99fddf6e83ede45bdaa96c4e37f>`(const PolyhedronFacetEdge& edge, const Point3D& point);
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`insert_point_in_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a2890eae4217a68f338e851e6575efcb7>`(
+			index_t tetrahedron_id,
+			const Point3D& point
+			);
+	
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`insert_point_on_facet<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a37b03f8220cee9cf1c20116427a65bab>`(
+			const PolyhedronFacet& facet,
+			const Point3D& point
+			);
+	
+		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`insert_point_on_edge<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1ab990b99fddf6e83ede45bdaa96c4e37f>`(
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			);
+	
 		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`insert_point_on_edge<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a0e756b4dc67efcda62210add80a1e5c3>`(index_t edge_id, const Point3D& point);
 	};
 
@@ -56,10 +68,24 @@ Inherited Members
 		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a8ba26a3c56f7221bd96d8a812c4c7b70>`(const PolyhedronFacetEdge& edge, const Point3D& point) const;
 		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a38a52fa447ee7e454cc894bb49968f43>`(index_t edge_id, const Point3D& point) const;
 		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a954f2875b98f31ae3ce7e255d1c008c3>`(index_t edge_id, const Point3D& point);
-		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abf56f3477626be27058311526b2b5aef>`(const PolyhedronFacetEdge& edge, const Point3D& point);
-		bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ac448e964d5b58cfc1edd8cad2458f2c1>`(const PolyhedronFacetEdge& edge, const Point3D& point) const;
+	
+		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abf56f3477626be27058311526b2b5aef>`(
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			);
+	
+		bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ac448e964d5b58cfc1edd8cad2458f2c1>`(
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			) const;
+	
 		bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a62d81880d33946209a739309db819d8d>`(index_t _id, const Point3D& point) const;
-		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad74eb355746ffd52b66a4788a99868bd>`(const PolyhedronFacetEdge& edge, const Point3D& point);
+	
+		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad74eb355746ffd52b66a4788a99868bd>`(
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			);
+	
 		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ae1f62e44988d327a78be2c5a3452add2>`(index_t edge_id, const Point3D& point);
 		std::vector<index_t> :ref:`clean_tetrahedra<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac>`();
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a0f1152b138581b514523cbaf00b42fa1>`();
@@ -83,7 +109,10 @@ Methods
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` insert_point_in_tetrahedron(index_t tetrahedron_id, const Point3D& point)
+	:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` insert_point_in_tetrahedron(
+		index_t tetrahedron_id,
+		const Point3D& point
+		)
 
 Insert a point in a tetrahedron either by spliting the tetrahedron into four new ones, or by snapping the point on a facet (three new tetrahedra for each side), an edge (each incident tetrahedra is split into two new tetrahedra) or a vertex (no new tetrahedron).
 
@@ -116,7 +145,10 @@ new vertex index and mappings between old and new mesh.
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` insert_point_on_facet(const PolyhedronFacet& facet, const Point3D& point)
+	:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` insert_point_on_facet(
+		const PolyhedronFacet& facet,
+		const Point3D& point
+		)
 
 Insert a point on a facet either by spliting the facet into three new ones, or by snapping the point on a edge or a vertex.
 
@@ -149,7 +181,10 @@ new vertex index and mappings between old and new mesh.
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` insert_point_on_edge(const PolyhedronFacetEdge& edge, const Point3D& point)
+	:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` insert_point_on_edge(
+		const PolyhedronFacetEdge& edge,
+		const Point3D& point
+		)
 
 Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex.
 

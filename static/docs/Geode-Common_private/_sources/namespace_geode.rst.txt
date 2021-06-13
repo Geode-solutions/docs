@@ -349,14 +349,21 @@ Overview
 		);
 
 	:target:`ALIAS_2D<doxid-namespacegeode_1a8ec76900496f8c6e59d65c6ad941af27>`(InfiniteLine);
-	Side geode_common_geometry_api :ref:`point_side_to_segment<doxid-namespacegeode_1ab05fa036a7c8d00967ee8e15eaeacb09>`(const Point2D& point, const Segment2D& segment);
+
+	Side geode_common_geometry_api :ref:`point_side_to_segment<doxid-namespacegeode_1ab05fa036a7c8d00967ee8e15eaeacb09>`(
+		const Point2D& point,
+		const Segment2D& segment
+		);
 
 	Side geode_common_geometry_api :ref:`point_side_to_line<doxid-namespacegeode_1a31276d066b93fb849913d63da10b6eda>`(
 		const Point2D& point,
 		const InfiniteLine2D& line
 		);
 
-	Side geode_common_geometry_api :ref:`point_side_to_plane<doxid-namespacegeode_1a55ddbf669431e9529c59dd8e88d20ca6>`(const Point3D& point, const Plane& plane);
+	Side geode_common_geometry_api :ref:`point_side_to_plane<doxid-namespacegeode_1a55ddbf669431e9529c59dd8e88d20ca6>`(
+		const Point3D& point,
+		const Plane& plane
+		);
 
 	Side geode_common_geometry_api :ref:`point_side_to_triangle<doxid-namespacegeode_1aa4be1ed023ad79bd838d97bd70735e6f>`(
 		const Point3D& point,
@@ -375,7 +382,10 @@ Overview
 		const Triangle<dimension>& triangle
 		);
 
-	Position geode_common_geometry_api :ref:`point_tetra_position<doxid-namespacegeode_1a011ada8de7ea0f54da515a843817c1b4>`(const Point3D& point, const Tetra& tetra);
+	Position geode_common_geometry_api :ref:`point_tetra_position<doxid-namespacegeode_1a011ada8de7ea0f54da515a843817c1b4>`(
+		const Point3D& point,
+		const Tetra& tetra
+		);
 
 	absl::FixedArray<index_t> geode_common_geometry_api :target:`radial_sort<doxid-namespacegeode_1a1358409b9ea9320efee0633fe3018bf4>`(
 		const Segment3D& segment,

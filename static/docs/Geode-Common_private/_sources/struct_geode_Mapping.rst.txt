@@ -26,11 +26,7 @@ template struct geode::Mapping
 		// construction
 	
 		:target:`Mapping<doxid-structgeode_1_1_mapping_1a24b8abb6665c1fe06ff17f15d80040e4>`();
-	
-		:target:`Mapping<doxid-structgeode_1_1_mapping_1a3b26d6454dd275dc999bad0f296d8035>`(
-			Type new_id_in,
-			Type old_id_in
-			);
+		:target:`Mapping<doxid-structgeode_1_1_mapping_1a3b26d6454dd275dc999bad0f296d8035>`(Type new_id_in, Type old_id_in);
 
 		// methods
 	

@@ -26,8 +26,5 @@ template struct geode::PolygonData
 
 		// construction
 	
-		:target:`PolygonData<doxid-structgeode_1_1_polygon_data_1a4230b23794f0aea73402d1ed652480e3>`(
-			const SurfaceMesh<dimension>& mesh,
-			PolygonEdge edge
-			);
+		:target:`PolygonData<doxid-structgeode_1_1_polygon_data_1a4230b23794f0aea73402d1ed652480e3>`(const SurfaceMesh<dimension>& mesh, PolygonEdge edge);
 	};

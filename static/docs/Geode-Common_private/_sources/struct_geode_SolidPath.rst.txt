@@ -42,12 +42,7 @@ struct geode::SolidPath
 		bool :target:`is_facet_vertex<doxid-structgeode_1_1_solid_path_1a470acbce58ad57671195aa450ac53799>`() const;
 		bool :target:`is_edge<doxid-structgeode_1_1_solid_path_1a790b28afedcdad4a169de7ac79745084>`() const;
 		bool :target:`is_facet<doxid-structgeode_1_1_solid_path_1aecdb4304fb52b398bf8a0b148b9b60ca>`() const;
-	
-		bool :target:`are_same_paths<doxid-structgeode_1_1_solid_path_1a11b9237dbb2ae2d53582bd38aa4cdb7f>`(
-			const TetrahedralSolid3D& solid,
-			const SolidPath& other
-			) const;
-	
+		bool :target:`are_same_paths<doxid-structgeode_1_1_solid_path_1a11b9237dbb2ae2d53582bd38aa4cdb7f>`(const TetrahedralSolid3D& solid, const SolidPath& other) const;
 		geode::Position :target:`get_vertex_position<doxid-structgeode_1_1_solid_path_1a2e55b28f242dbab408854ed1b3d2ea5c>`(geode::local_index_t vertex) const;
 		geode::Position :target:`get_edge_position<doxid-structgeode_1_1_solid_path_1a409bb5f198a44b29dc6128f339f65809>`(geode::local_index_t edge) const;
 		geode::local_index_t :target:`get_edge_index<doxid-structgeode_1_1_solid_path_1a6161462f28d61ea5ccc4afaeb7a21997>`() const;

@@ -121,12 +121,12 @@ export default {
       {
         title: 'Geode-SimplexRemesh',
         descr: 'Simplicial mesh/remeshing of models',
-        route: 'geode-simpleremesh'
+        route: 'geode-simplexremesh'
       },
       {
         title: 'Geode-SimplexRemeshGeosciences',
         descr: 'Simplicial mesh/remeshing of geological models',
-        route: 'geode-simpleremeshgeosciences'
+        route: 'geode-simplexremeshgeosciences'
       }
     ]
   })

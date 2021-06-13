@@ -1,0 +1,31 @@
+.. index:: pair: class; geode::detail::BRepFromSolidAdjacenciesBuilder
+.. _doxid-classgeode_1_1detail_1_1_b_rep_from_solid_adjacencies_builder:
+
+class geode::detail::BRepFromSolidAdjacenciesBuilder
+====================================================
+
+.. toctree::
+	:hidden:
+
+Class that convert a SolidMesh3D into a BRep with meshed Blocks. Use this class if you want to modify SurfaceMesh3D (representing BRep Surfaces) polygon adjacencies. Else use API function convert_solid_into_brep_from_adjacencies( const SolidMesh3D& solid, BRep& brep )
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_from_solid_builder.h>
+	
+	class BRepFromSolidAdjacenciesBuilder
+	{
+	public:
+		// construction
+	
+		:target:`BRepFromSolidAdjacenciesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_adjacencies_builder_1acd13e7f00573fbe1e86057df45f2e403>`(BRep& brep, const SolidMesh3D& solid);
+
+		// methods
+	
+		SurfaceMesh3D& :target:`solid_boundaries<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_adjacencies_builder_1a514c4a45c352a0da54aa100c94cf4c54>`();
+		void :target:`build_surface_step<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_adjacencies_builder_1ae09fbee7c0c64b4795172c9e855d8212>`();
+		void :target:`build_brep_without_block_step<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_adjacencies_builder_1a32835533dd175f2aeabfad3b1db39901>`();
+		void :target:`build_blocks_step<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_adjacencies_builder_1ad806bcfb8c84b7366a93dad35138f6a3>`();
+	};

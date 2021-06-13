@@ -26,11 +26,7 @@ struct geode::SurfacePath
 
 		// construction
 	
-		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1acf3a1acc45fa6ce40ecc894fc2cce0e8>`(
-			PolygonEdge edge_in,
-			Position position_in
-			);
-	
+		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1acf3a1acc45fa6ce40ecc894fc2cce0e8>`(PolygonEdge edge_in, Position position_in);
 		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1accddadede745ec43861ef1403c1f5180>`(index_t vertex_in);
 		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1a4858e5b5451438f114796ba973fa291d>`();
 

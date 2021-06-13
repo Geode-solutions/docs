@@ -1,0 +1,41 @@
+.. index:: pair: struct; geode::RemeshingData
+.. _doxid-structgeode_1_1_remeshing_data:
+
+template struct geode::RemeshingData
+====================================
+
+.. toctree::
+	:hidden:
+
+Structure holding all the data required for the remeshing algorithm Aliases are defined for BRep and Section.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <remeshing_data.h>
+	
+	template <typename Model, index_t dimension>
+	struct RemeshingData
+	{
+		// fields
+	
+		const Model& :target:`input<doxid-structgeode_1_1_remeshing_data_1ad381fcce4b765e244fb88ae1dd991e92>`;
+		Model :target:`background<doxid-structgeode_1_1_remeshing_data_1a4f4295bc0ac887b7167ab20dd2e3a36e>`;
+		ModelCopyMapping :target:`background_mapping<doxid-structgeode_1_1_remeshing_data_1a2b6111a23dac7d5798a5853008301508>`;
+		Model& :target:`output<doxid-structgeode_1_1_remeshing_data_1a23df3c2801abbf4c960f14698b9c3b5b>`;
+		ModelCopyMapping :target:`output_mapping<doxid-structgeode_1_1_remeshing_data_1ae2ba6ca2903974896c9929dc9266883f>`;
+		const :ref:`Metric<doxid-classgeode_1_1_metric>`<dimension>& :target:`metric<doxid-structgeode_1_1_remeshing_data_1a5eee6c3955d7994e4a07b67d8c7f5053>`;
+
+		// construction
+	
+		:target:`RemeshingData<doxid-structgeode_1_1_remeshing_data_1a7deabd3b766336aced8592a410d2f389>`(const Model& in, Model& out, const :ref:`Metric<doxid-classgeode_1_1_metric>`<dimension>& metric_in);
+
+		// methods
+	
+		template <typename Component>
+		ComponentID :target:`background_id<doxid-structgeode_1_1_remeshing_data_1afe35acfb2d9d3cf9a8efbb62695fa0bd>`(const Component& component) const;
+	
+		template <typename Component>
+		ComponentID :target:`output_id<doxid-structgeode_1_1_remeshing_data_1a9f612ab1090f470762c2cef4d76c02d0>`(const Component& component) const;
+	};

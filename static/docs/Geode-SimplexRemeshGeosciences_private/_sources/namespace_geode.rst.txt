@@ -1,0 +1,45 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// global functions
+
+	template <
+		typename ModelBuilder,
+		typename GenericModel,
+		typename GenericModelBuilder,
+		typename GenericModelModifier,
+		typename Model,
+		index_t dimension
+		>
+	RemeshingData<GenericModel, dimension> :target:`initialize_geosciences_remeshing_data<doxid-namespacegeode_1add998ce7cfea44e621ec1015731e8c9d>`(
+		const Model& input,
+		Model& output,
+		const Metric<dimension>& metric
+		);
+
+	std::tuple<StructuralModel, ModelCopyMapping> geode_simplexremeshgeosciences_surface_api :target:`homogeneous_remeshing<doxid-namespacegeode_1a6e65e9d83b0085a60304d6e735cd392f>`(
+		const StructuralModel& structural_model,
+		double mesh_size
+		);
+
+	std::tuple<CrossSection, ModelCopyMapping> geode_simplexremeshgeosciences_surface_api :target:`homogeneous_remeshing<doxid-namespacegeode_1ac204cbe2c91f133206efb4a8d268ca7c>`(
+		const CrossSection& cross_section,
+		double mesh_size
+		);
+
+	} // namespace geode

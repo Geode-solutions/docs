@@ -18,7 +18,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="namespace geode::detail" href="namespace_geode_detail.html" />
-    <link rel="prev" title="enum GEO::Sign" href="enum_GEO_Sign.html" />
+    <link rel="prev" title="Global Namespace" href="global.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -321,14 +321,21 @@
     <span class="p">);</span>
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8ec76900496f8c6e59d65c6ad941af27"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">InfiniteLine</span><span class="p">);</span>
-<span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab05fa036a7c8d00967ee8e15eaeacb09"><span class="std std-ref">point_side_to_segment</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">);</span>
+
+<span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab05fa036a7c8d00967ee8e15eaeacb09"><span class="std std-ref">point_side_to_segment</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Segment2D</span><span class="o">&amp;</span> <span class="n">segment</span>
+    <span class="p">);</span>
 
 <span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a31276d066b93fb849913d63da10b6eda"><span class="std std-ref">point_side_to_line</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line</span>
     <span class="p">);</span>
 
-<span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a55ddbf669431e9529c59dd8e88d20ca6"><span class="std std-ref">point_side_to_plane</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span><span class="p">);</span>
+<span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a55ddbf669431e9529c59dd8e88d20ca6"><span class="std std-ref">point_side_to_plane</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span>
+    <span class="p">);</span>
 
 <span class="n">Side</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1aa4be1ed023ad79bd838d97bd70735e6f"><span class="std std-ref">point_side_to_triangle</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
@@ -347,7 +354,10 @@
     <span class="k">const</span> <span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">triangle</span>
     <span class="p">);</span>
 
-<span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a011ada8de7ea0f54da515a843817c1b4"><span class="std std-ref">point_tetra_position</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="k">const</span> <span class="n">Tetra</span><span class="o">&amp;</span> <span class="n">tetra</span><span class="p">);</span>
+<span class="n">Position</span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a011ada8de7ea0f54da515a843817c1b4"><span class="std std-ref">point_tetra_position</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Tetra</span><span class="o">&amp;</span> <span class="n">tetra</span>
+    <span class="p">);</span>
 
 <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">geode_common_geometry_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1358409b9ea9320efee0633fe3018bf4"><span></span><span class="n">radial_sort</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Segment3D</span><span class="o">&amp;</span> <span class="n">segment</span><span class="p">,</span>
