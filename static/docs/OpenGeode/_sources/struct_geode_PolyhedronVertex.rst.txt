@@ -25,11 +25,7 @@ This struct represents a local vertex in a polyhedron
 		// construction
 	
 		:target:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex_1a417c7c988fdc35c5791f9bb9669a34fc>`();
-	
-		:target:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex_1ad48eec28cc2cf3e6cb91c1e144d82a07>`(
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id_in,
-			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id_in
-			);
+		:target:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex_1ad48eec28cc2cf3e6cb91c1e144d82a07>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id_in, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id_in);
 
 		// methods
 	

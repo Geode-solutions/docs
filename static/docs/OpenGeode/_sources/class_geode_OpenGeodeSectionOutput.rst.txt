@@ -20,10 +20,7 @@ class geode::OpenGeodeSectionOutput
 	public:
 		// construction
 	
-		:target:`OpenGeodeSectionOutput<doxid-classgeode_1_1_open_geode_section_output_1a1304f2cfd1371b4d8e93a0aaa1e58504>`(
-			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-			absl::string_view filename
-			);
+		:target:`OpenGeodeSectionOutput<doxid-classgeode_1_1_open_geode_section_output_1a1304f2cfd1371b4d8e93a0aaa1e58504>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, absl::string_view filename);
 
 		// methods
 	

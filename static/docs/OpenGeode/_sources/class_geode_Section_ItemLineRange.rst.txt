@@ -22,10 +22,7 @@ class geode::Section::ItemLineRange
 	public:
 		// construction
 	
-		:target:`ItemLineRange<doxid-classgeode_1_1_section_1_1_item_line_range_1a32aa336582cddc3ba56abba89d1bb350>`(
-			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-			const ModelBoundary2D& boundary
-			);
+		:target:`ItemLineRange<doxid-classgeode_1_1_section_1_1_item_line_range_1a32aa336582cddc3ba56abba89d1bb350>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const ModelBoundary2D& boundary);
 
 		// methods
 	

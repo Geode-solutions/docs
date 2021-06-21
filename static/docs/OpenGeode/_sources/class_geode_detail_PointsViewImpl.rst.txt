@@ -21,10 +21,7 @@ template class geode::detail::PointsViewImpl
 	public:
 		// construction
 	
-		:target:`PointsViewImpl<doxid-classgeode_1_1detail_1_1_points_view_impl_1a9f142eef7f0a8e4116f235a503a16efa>`(
-			:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh_view,
-			const Mesh& mesh
-			);
+		:target:`PointsViewImpl<doxid-classgeode_1_1detail_1_1_points_view_impl_1a9f142eef7f0a8e4116f235a503a16efa>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh_view, const Mesh& mesh);
 
 		// methods
 	

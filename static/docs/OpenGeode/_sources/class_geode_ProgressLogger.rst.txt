@@ -20,10 +20,7 @@ class geode::ProgressLogger
 	public:
 		// construction
 	
-		:target:`ProgressLogger<doxid-classgeode_1_1_progress_logger_1a92e90c83c4aba0af8678f80caac009da>`(
-			std::string message,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` max_number
-			);
+		:target:`ProgressLogger<doxid-classgeode_1_1_progress_logger_1a92e90c83c4aba0af8678f80caac009da>`(std::string message, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` max_number);
 
 		// methods
 	

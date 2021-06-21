@@ -25,11 +25,7 @@ Struct holding Attribute flags used by the :ref:`AttributeManager <doxid-classge
 		// construction
 	
 		:target:`AttributeProperties<doxid-structgeode_1_1_attribute_properties_1aff857c4ab4f90dd3dca890e7774d3390>`();
-	
-		:target:`AttributeProperties<doxid-structgeode_1_1_attribute_properties_1ac888b2604180b3f8e53d4ba9e1bb9393>`(
-			bool is_assignable,
-			bool is_interpolable
-			);
+		:target:`AttributeProperties<doxid-structgeode_1_1_attribute_properties_1ac888b2604180b3f8e53d4ba9e1bb9393>`(bool is_assignable, bool is_interpolable);
 
 		// methods
 	

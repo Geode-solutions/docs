@@ -20,11 +20,7 @@ class geode::Plane
 	public:
 		// construction
 	
-		:target:`Plane<doxid-classgeode_1_1_plane_1a7cd64861e175472499be1024961e2229>`(
-			const Vector3D& normal,
-			const Point3D& origin
-			);
-	
+		:target:`Plane<doxid-classgeode_1_1_plane_1a7cd64861e175472499be1024961e2229>`(const Vector3D& normal, const Point3D& origin);
 		:target:`Plane<doxid-classgeode_1_1_plane_1a9d875f82d2f5e855bebfd60ab8604ab6>`(const Plane& other);
 		:target:`Plane<doxid-classgeode_1_1_plane_1a534bc15d9b1f500f895292c19d8595ce>`(Plane&& other);
 

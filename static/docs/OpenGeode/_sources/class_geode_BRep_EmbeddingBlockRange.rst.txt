@@ -22,20 +22,9 @@ class geode::BRep::EmbeddingBlockRange
 	public:
 		// construction
 	
-		:target:`EmbeddingBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1af4697f3ca359c1493139ee3a8003cb60>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Corner3D& corner
-			);
-	
-		:target:`EmbeddingBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1aa22e2f560b4aa02349c8f4e0412b4439>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Line3D& line
-			);
-	
-		:target:`EmbeddingBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1a66cfa3f9222d530c2a29067fad20b075>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Surface3D& surface
-			);
+		:target:`EmbeddingBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1af4697f3ca359c1493139ee3a8003cb60>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Corner3D& corner);
+		:target:`EmbeddingBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1aa22e2f560b4aa02349c8f4e0412b4439>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Line3D& line);
+		:target:`EmbeddingBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1a66cfa3f9222d530c2a29067fad20b075>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Surface3D& surface);
 
 		// methods
 	

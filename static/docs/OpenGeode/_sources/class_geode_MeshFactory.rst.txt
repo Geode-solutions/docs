@@ -27,7 +27,10 @@ Overview
 		static void :ref:`register_mesh<doxid-classgeode_1_1_mesh_factory_1a82b58157ffab9dc6ec504857a731c934>`(:ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` type, :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key);
 	
 		template <typename Mesh>
-		static void :ref:`register_default_mesh<doxid-classgeode_1_1_mesh_factory_1a3de894f15d04d11a33a9d0dd4f8a6150>`(:ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` type, :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key);
+		static void :ref:`register_default_mesh<doxid-classgeode_1_1_mesh_factory_1a3de894f15d04d11a33a9d0dd4f8a6150>`(
+			:ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` type,
+			:ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key
+			);
 	
 		static const :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`& :target:`type<doxid-classgeode_1_1_mesh_factory_1aeb824cd78211b595c9f831d329ce0e3b>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& key);
 		static const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& :target:`default_impl<doxid-classgeode_1_1_mesh_factory_1a9ff6499790e9d5c4e4cc0700d1960214>`(const :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`& type);
@@ -90,7 +93,10 @@ Register a mesh implementation to a given mesh type
 	:class: doxyrest-title-code-block
 
 	template <typename Mesh>
-	static void register_default_mesh(:ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` type, :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key)
+	static void register_default_mesh(
+		:ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` type,
+		:ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key
+		)
 
 Register the default mesh implementation to a given mesh type. This implementation will be used when no specific implementation is required.
 

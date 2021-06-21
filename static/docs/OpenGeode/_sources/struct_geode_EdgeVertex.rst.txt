@@ -28,11 +28,7 @@ This struct represents a graph edge endpoint :ref:`More...<details-structgeode_1
 		// construction
 	
 		:target:`EdgeVertex<doxid-structgeode_1_1_edge_vertex_1a9070623605e1d3b154a866fdc1673195>`();
-	
-		:target:`EdgeVertex<doxid-structgeode_1_1_edge_vertex_1a4f5a8587d9267c3a4070e43a2d31da14>`(
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id_in,
-			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id_in
-			);
+		:target:`EdgeVertex<doxid-structgeode_1_1_edge_vertex_1a4f5a8587d9267c3a4070e43a2d31da14>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id_in, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id_in);
 
 		// methods
 	

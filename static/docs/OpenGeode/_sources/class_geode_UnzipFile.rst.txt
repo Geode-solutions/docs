@@ -20,10 +20,7 @@ class geode::UnzipFile
 	public:
 		// construction
 	
-		:target:`UnzipFile<doxid-classgeode_1_1_unzip_file_1a6a12099568d585ac72e6405adcc8776d>`(
-			absl::string_view file,
-			absl::string_view unarchive_temp_filename
-			);
+		:target:`UnzipFile<doxid-classgeode_1_1_unzip_file_1a6a12099568d585ac72e6405adcc8776d>`(absl::string_view file, absl::string_view unarchive_temp_filename);
 
 		// methods
 	

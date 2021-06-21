@@ -22,10 +22,7 @@ class geode::Section::BoundaryCornerRange
 	public:
 		// construction
 	
-		:target:`BoundaryCornerRange<doxid-classgeode_1_1_section_1_1_boundary_corner_range_1ad8bc66484945ecbc06ff8b75ee2248ab>`(
-			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-			const Line2D& line
-			);
+		:target:`BoundaryCornerRange<doxid-classgeode_1_1_section_1_1_boundary_corner_range_1ad8bc66484945ecbc06ff8b75ee2248ab>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const Line2D& line);
 
 		// methods
 	

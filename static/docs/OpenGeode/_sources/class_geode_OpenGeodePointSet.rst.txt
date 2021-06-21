@@ -24,13 +24,7 @@ template class geode::OpenGeodePointSet
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_point_set_1a22972ad05320eaf307606e9034f36e9b>`() const;
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_point_set_1ae705a1d4ba976eb7fb8278f2ad310c1c>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_point_set_1a962962a7acf12f2fd1eed819e25117af>`() const;
-	
-		void :target:`set_vertex<doxid-classgeode_1_1_open_geode_point_set_1ab39baa1463ba508615eece5685201763>`(
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id,
-			:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point,
-			OGPointSetKey
-			);
-	
+		void :target:`set_vertex<doxid-classgeode_1_1_open_geode_point_set_1ab39baa1463ba508615eece5685201763>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point, OGPointSetKey);
 		static :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name_static<doxid-classgeode_1_1_open_geode_point_set_1adc77c3a978302549498b9a8d8bcd9b65>`();
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_open_geode_point_set_1a0b94e6b5b54b787131b46ecc5f1ecdd5>`();
 	};

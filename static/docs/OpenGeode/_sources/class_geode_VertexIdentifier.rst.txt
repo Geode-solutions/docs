@@ -25,11 +25,29 @@ This class identifies groups of geometric component vertices as unique vertices.
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a126167bad707bf6991d900419e8742a5>`() const;
 		const std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`>& :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a04919fb11ef214d5861809119867d731>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id) const;
-		std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1af50e6da4e87928eae7b6be99188c3b05>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a5f6dfd3e7a4d98b6c1d05d77b8f392f6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+	
+		std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1af50e6da4e87928eae7b6be99188c3b05>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+			const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type
+			) const;
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1a5f6dfd3e7a4d98b6c1d05d77b8f392f6>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
+			) const;
+	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`unique_vertex<doxid-classgeode_1_1_vertex_identifier_1ad46b7b2e70e92e6fbfe1028cd6c20655>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex) const;
-		bool :ref:`has_mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1afe8588225dc39ab4702b29ea643dece7>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
-		bool :ref:`has_mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1aeaf043a819739b192b4063bf6eb9c969>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+	
+		bool :ref:`has_mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1afe8588225dc39ab4702b29ea643dece7>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+			const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type
+			) const;
+	
+		bool :ref:`has_mesh_component_vertices<doxid-classgeode_1_1_vertex_identifier_1aeaf043a819739b192b4063bf6eb9c969>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
+			) const;
+	
 		void :ref:`save_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a4603484680ba1fe316b79a63da7481db>`(absl::string_view directory) const;
 	
 		template <typename MeshComponent>
@@ -46,9 +64,25 @@ This class identifies groups of geometric component vertices as unique vertices.
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1ac4e674026f62dc1cfee21cd64c65b177>`(BuilderKey);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1ac5557f2f84451e261bdea1e2b5323449>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb, BuilderKey);
-		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a033bf54aed4241dbfc1c95e367be5523>`(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, BuilderKey);
-		void :ref:`unset_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a676665aca54fb83b160309e0755dc33e>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, BuilderKey);
-		void :ref:`update_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1ace50278a3f13c600e8feacb91fc39d6c>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id, absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new, BuilderKey);
+	
+		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a033bf54aed4241dbfc1c95e367be5523>`(
+			:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+			BuilderKey
+			);
+	
+		void :ref:`unset_unique_vertex<doxid-classgeode_1_1_vertex_identifier_1a676665aca54fb83b160309e0755dc33e>`(
+			const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+			BuilderKey
+			);
+	
+		void :ref:`update_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1ace50278a3f13c600e8feacb91fc39d6c>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id,
+			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new,
+			BuilderKey
+			);
+	
 		void :ref:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_1a80b58e4324bd5f2c9fd03839b0922316>`(absl::string_view directory, BuilderKey);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_vertex_identifier_1afc431fa14c9d482bcd2bbc82f306b4d5>`(BuilderKey);
 	};
@@ -94,7 +128,10 @@ Return the component vertices identified with an unique vertex.
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> mesh_component_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const
+	std::vector<:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`> mesh_component_vertices(
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+		const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type
+		) const
 
 Return the component vertices identified with an unique vertex only for vertices belonging to component of the specified type.
 
@@ -121,7 +158,10 @@ Return the component vertices identified with an unique vertex only for vertices
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> mesh_component_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> mesh_component_vertices(
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
+		) const
 
 Return the component vertices identified with an unique vertex only for vertices belonging to one specified component.
 
@@ -170,7 +210,10 @@ Return the unique vertex index of a given component vertex.
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	bool has_mesh_component_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const
+	bool has_mesh_component_vertices(
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+		const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type
+		) const
 
 Return true if given unique vertex has at least one mesh component vertex of given component type
 
@@ -180,7 +223,10 @@ Return true if given unique vertex has at least one mesh component vertex of giv
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	bool has_mesh_component_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const
+	bool has_mesh_component_vertices(
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
+		) const
 
 Return true if given unique vertex has at least one mesh component vertex of given component
 
@@ -272,7 +318,11 @@ Index of the first created unique vertex
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void set_unique_vertex(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id, BuilderKey)
+	void set_unique_vertex(
+		:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
+		BuilderKey
+		)
 
 Identify a component vertex to an existing unique vertex index.
 

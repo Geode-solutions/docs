@@ -24,10 +24,7 @@ Identify a vertex in a geometric component
 
 		// construction
 	
-		:target:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex_1a88510ae524e23564a5fb7163e57593df>`(
-			:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` component_id_in,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id_in
-			);
+		:target:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex_1a88510ae524e23564a5fb7163e57593df>`(:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` component_id_in, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id_in);
 
 		// methods
 	

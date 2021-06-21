@@ -22,10 +22,7 @@ class geode::BRep::BoundaryLineRange
 	public:
 		// construction
 	
-		:target:`BoundaryLineRange<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range_1af000d0f26aa7761ab26350f49b4c672b>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Surface3D& surface
-			);
+		:target:`BoundaryLineRange<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range_1af000d0f26aa7761ab26350f49b4c672b>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Surface3D& surface);
 
 		// methods
 	

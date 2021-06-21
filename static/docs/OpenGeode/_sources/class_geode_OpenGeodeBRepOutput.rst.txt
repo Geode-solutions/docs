@@ -20,10 +20,7 @@ class geode::OpenGeodeBRepOutput
 	public:
 		// construction
 	
-		:target:`OpenGeodeBRepOutput<doxid-classgeode_1_1_open_geode_b_rep_output_1ac4e6805332715ce616604e4c42c54339>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			absl::string_view filename
-			);
+		:target:`OpenGeodeBRepOutput<doxid-classgeode_1_1_open_geode_b_rep_output_1ac4e6805332715ce616604e4c42c54339>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, absl::string_view filename);
 
 		// methods
 	

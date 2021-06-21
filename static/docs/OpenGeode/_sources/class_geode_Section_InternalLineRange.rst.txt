@@ -22,10 +22,7 @@ class geode::Section::InternalLineRange
 	public:
 		// construction
 	
-		:target:`InternalLineRange<doxid-classgeode_1_1_section_1_1_internal_line_range_1a1192c19111d0d36ddef2cfc8406104ac>`(
-			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-			const Surface2D& surface
-			);
+		:target:`InternalLineRange<doxid-classgeode_1_1_section_1_1_internal_line_range_1a1192c19111d0d36ddef2cfc8406104ac>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const Surface2D& surface);
 
 		// methods
 	

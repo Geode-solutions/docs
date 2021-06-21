@@ -49,7 +49,12 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 		void :ref:`resize<doxid-classgeode_1_1_attribute_manager_1ab78ec5f69d4a452ef59fb824a7a0e95c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` size);
 		void :ref:`reserve<doxid-classgeode_1_1_attribute_manager_1af88978db245106a3d17d3afa38887a72>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` capacity);
 		void :ref:`assign_attribute_value<doxid-classgeode_1_1_attribute_manager_1a205c2ea07cb52eacf8d6e1846ffdbda8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` from_element, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element);
-		void :ref:`interpolate_attribute_value<doxid-classgeode_1_1_attribute_manager_1a379b913c2075d50627ea85c0dd85b4cd>`(const :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`& interpolation, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element);
+	
+		void :ref:`interpolate_attribute_value<doxid-classgeode_1_1_attribute_manager_1a379b913c2075d50627ea85c0dd85b4cd>`(
+			const :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`& interpolation,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element
+			);
+	
 		bool :target:`has_assignable_attributes<doxid-classgeode_1_1_attribute_manager_1ab9ddc171e5e884603ae4784ee2225da8>`() const;
 		bool :target:`has_interpolable_attributes<doxid-classgeode_1_1_attribute_manager_1a782cded6137eea453a89d072d00367a4>`() const;
 		absl::FixedArray<absl::string_view> :ref:`attribute_names<doxid-classgeode_1_1_attribute_manager_1a8d53d29e3f40fe7802cf4d110e8637d5>`() const;
@@ -269,7 +274,10 @@ Assign attribute value from other value in the same attribute Only affect Attrib
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void interpolate_attribute_value(const :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`& interpolation, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element)
+	void interpolate_attribute_value(
+		const :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`& interpolation,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_element
+		)
 
 Interpolate attribute value from other values in the same attribute Only affect Attributes created with its :ref:`AttributeProperties <doxid-structgeode_1_1_attribute_properties>` interpolable flag set to true
 

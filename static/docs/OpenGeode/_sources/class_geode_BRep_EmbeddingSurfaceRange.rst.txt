@@ -22,15 +22,8 @@ class geode::BRep::EmbeddingSurfaceRange
 	public:
 		// construction
 	
-		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a74b0db679b7db548b309b60805968739>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Corner3D& corner
-			);
-	
-		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1aaf886ec1f97ed4131b4857e4f18dedca>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Line3D& line
-			);
+		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a74b0db679b7db548b309b60805968739>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Corner3D& corner);
+		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1aaf886ec1f97ed4131b4857e4f18dedca>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Line3D& line);
 
 		// methods
 	

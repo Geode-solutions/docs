@@ -29,10 +29,7 @@ Overview
 		template <typename Mesh = SurfaceMesh<dimension>>
 		std::unique_ptr<typename Mesh::Builder> :ref:`surface_mesh_builder<doxid-classgeode_1_1_surfaces_builder_1a4bddd7060536d7a1bd525a74cf0044ba>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 	
-		void :target:`set_surface_name<doxid-classgeode_1_1_surfaces_builder_1ade216cb2926a07f4aece2f1910977252>`(
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id,
-			absl::string_view name
-			);
+		void :target:`set_surface_name<doxid-classgeode_1_1_surfaces_builder_1ade216cb2926a07f4aece2f1910977252>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, absl::string_view name);
 	};
 
 	// direct descendants

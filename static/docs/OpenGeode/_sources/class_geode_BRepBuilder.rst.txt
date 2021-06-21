@@ -35,12 +35,7 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 	
 		:ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>` :target:`copy<doxid-classgeode_1_1_b_rep_builder_1a553edd504dd2175ed5651e53c65f7fed>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 		:ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>` :target:`copy_components<doxid-classgeode_1_1_b_rep_builder_1ab581eb1d2c677ea7ab77eaf954b52c25>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
-	
-		void :target:`copy_component_geometry<doxid-classgeode_1_1_b_rep_builder_1aed5a8008cec019d6431f2781c8a3a5cb>`(
-			const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping,
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep
-			);
-	
+		void :target:`copy_component_geometry<doxid-classgeode_1_1_b_rep_builder_1aed5a8008cec019d6431f2781c8a3a5cb>`(const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping, const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_b_rep_builder_1ade1b107ce2ac5c89c625614a4e44954b>`();
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_b_rep_builder_1ac3b039d63b9f4b0f14c8ed752dcc693d>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_line<doxid-classgeode_1_1_b_rep_builder_1a3a1a0133778bbe572172d8140debdf17>`();
@@ -56,21 +51,14 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 			std::unique_ptr<PointSet3D> mesh
 			);
 	
-		void :target:`update_line_mesh<doxid-classgeode_1_1_b_rep_builder_1ab8ec4493be2a134714c07049ba6138e1>`(
-			const Line3D& line,
-			std::unique_ptr<EdgedCurve3D> mesh
-			);
+		void :target:`update_line_mesh<doxid-classgeode_1_1_b_rep_builder_1ab8ec4493be2a134714c07049ba6138e1>`(const Line3D& line, std::unique_ptr<EdgedCurve3D> mesh);
 	
 		void :target:`update_surface_mesh<doxid-classgeode_1_1_b_rep_builder_1ac9c4b8cc2e5802fbf40461d3e582fbc6>`(
 			const Surface3D& surface,
 			std::unique_ptr<SurfaceMesh3D> mesh
 			);
 	
-		void :target:`update_block_mesh<doxid-classgeode_1_1_b_rep_builder_1a4d5ec01796e58c8a984833b46dd7f42a>`(
-			const Block3D& block,
-			std::unique_ptr<SolidMesh3D> mesh
-			);
-	
+		void :target:`update_block_mesh<doxid-classgeode_1_1_b_rep_builder_1a4d5ec01796e58c8a984833b46dd7f42a>`(const Block3D& block, std::unique_ptr<SolidMesh3D> mesh);
 		void :target:`remove_corner<doxid-classgeode_1_1_b_rep_builder_1acf98a742d80b9deb572ae60140f22ff0>`(const Corner3D& corner);
 		void :target:`remove_line<doxid-classgeode_1_1_b_rep_builder_1a01f76c177033c7c7abda6969c93f0345>`(const Line3D& line);
 		void :target:`remove_surface<doxid-classgeode_1_1_b_rep_builder_1a92906519d1f01ce14197943c3d3149cd>`(const Surface3D& surface);
@@ -159,7 +147,12 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_builder_1acbbf95685f778de7dc3e568750e4dbf2>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_relation<doxid-classgeode_1_1_relationships_builder_1a0201343c12ef8ac4ad07c8c93ac2b291>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
 		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
-		void :ref:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping, const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships);
+	
+		void :ref:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(
+			const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping,
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships
+			);
+	
 		void :ref:`load_relationships<doxid-classgeode_1_1_relationships_builder_1a7901eef2fbf55303a0a3921477ffe450>`(absl::string_view directory);
 	
 		template <typename MeshComponent>
@@ -170,9 +163,22 @@ Inherited Members
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a4ef2cfb59a9670ebf8e781ebde233196>`();
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a61b9f5f69cb29c6a070f377ef7669a36>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
-		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a3ca57fc5665a96f33daf6057d52c1813>`(:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id);
-		void :ref:`unset_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a7a733cd91d04177fa0d1a79f250a00d0>`(const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id);
-		void :ref:`update_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1ac1b5b74dbb4a5168e694d3666fce69b7>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id, absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new);
+	
+		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a3ca57fc5665a96f33daf6057d52c1813>`(
+			:ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>` component_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id
+			);
+	
+		void :ref:`unset_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a7a733cd91d04177fa0d1a79f250a00d0>`(
+			const :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& component_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id
+			);
+	
+		void :ref:`update_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1ac1b5b74dbb4a5168e694d3666fce69b7>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id,
+			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new
+			);
+	
 		void :ref:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a666c161b0204f41f666cb8c61abd8221>`(absl::string_view directory);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a81453d117dc87b4f461021683ee42c61>`();
 		void :ref:`set_id<doxid-classgeode_1_1_identifier_builder_1a54f3f0e185bc0f387508a422048f6d70>`(:ref:`uuid<doxid-structgeode_1_1uuid>` id);

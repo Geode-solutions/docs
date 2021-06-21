@@ -33,11 +33,7 @@ Overview
 		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :ref:`edge_vertices<doxid-classgeode_1_1_surface_edges_1ab13e9c1fe979cecdc98f11ac1c27eb59>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`edge_from_vertices<doxid-classgeode_1_1_surface_edges_1a53f3f8453e6688816782d2cf94f42e12>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_surface_edges_1a16dd72ecfb98b69b0b40a9177acf530b>`() const;
-	
-		void :target:`update_edge_vertices<doxid-classgeode_1_1_surface_edges_1a13979c4955d06df9042f1330ac13f1c6>`(
-			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new,
-			SurfaceEdgesKey
-			);
+		void :target:`update_edge_vertices<doxid-classgeode_1_1_surface_edges_1a13979c4955d06df9042f1330ac13f1c6>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new, SurfaceEdgesKey);
 	
 		void :target:`update_edge_vertex<doxid-classgeode_1_1_surface_edges_1a91ea22ea3d85d7809dbcacd83445de05>`(
 			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
@@ -46,10 +42,7 @@ Overview
 			SurfaceEdgesKey
 			);
 	
-		void :target:`remove_edge<doxid-classgeode_1_1_surface_edges_1aae16c000b0942038397a3b06f5c195ee>`(
-			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
-			SurfaceEdgesKey
-			);
+		void :target:`remove_edge<doxid-classgeode_1_1_surface_edges_1aae16c000b0942038397a3b06f5c195ee>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices, SurfaceEdgesKey);
 	
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`delete_edges<doxid-classgeode_1_1_surface_edges_1aace07e41081d419c22751222fbf40fd1>`(
 			const std::vector<bool>& to_delete,
@@ -63,10 +56,7 @@ Overview
 			SurfaceEdgesKey
 			);
 	
-		void :target:`overwrite_edges<doxid-classgeode_1_1_surface_edges_1a2b0b8ca559edf55df782a1155e61374e>`(
-			const SurfaceEdges<dimension>& from,
-			SurfaceEdgesKey
-			);
+		void :target:`overwrite_edges<doxid-classgeode_1_1_surface_edges_1a2b0b8ca559edf55df782a1155e61374e>`(const SurfaceEdges<dimension>& from, SurfaceEdgesKey);
 	};
 .. _details-classgeode_1_1_surface_edges:
 

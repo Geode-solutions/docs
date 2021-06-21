@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::MeshImpl>
-.. _doxid-structstd_1_1hash_3_01geode_1_1_mesh_impl_01_4:
+.. index:: pair: struct; std::hash<geode::MeshComponentVertex>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_mesh_component_vertex_01_4:
 
-template struct std::hash<geode::MeshImpl>
-==========================================
+template struct std::hash<geode::MeshComponentVertex>
+=====================================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct std::hash<geode::MeshImpl>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <mesh_id.h>
+	#include <vertex_identifier.h>
 	
 	template <>
-	struct hash<geode::MeshImpl>
+	struct hash<geode::MeshComponentVertex>
 	{
 		// methods
 	
-		std::size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_mesh_impl_01_4_1a51125c5d1faeb99825b05b662b3ff87d>` (const :ref:`geode::MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& f) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_mesh_component_vertex_01_4_1a67569142f740bb38e342b5fb237b708f>` (const :ref:`geode::MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`& mcv) const;
 	};

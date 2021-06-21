@@ -20,11 +20,7 @@ Range to iterates on all boundaries of one component
 	public:
 		// construction
 	
-		:target:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a7cb05347b03d064b205278431629bf18>`(
-			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
-			);
-	
+		:target:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a7cb05347b03d064b205278431629bf18>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 		:target:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a8169cb5d384fd29a6d77c57d07ac6516>`(BoundaryRangeIterator&& other);
 		:target:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a0a4153869d3964a186e39a427f7617e9>`(const BoundaryRangeIterator& other);
 

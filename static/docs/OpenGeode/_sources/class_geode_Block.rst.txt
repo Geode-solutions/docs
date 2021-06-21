@@ -23,11 +23,7 @@ Geometric component describing a 3D volume This component is described by a mesh
 	
 		:target:`Block<doxid-classgeode_1_1_block_1a0e3e295d582bea24a87d941f721edcd3>`(Block&&);
 		:target:`Block<doxid-classgeode_1_1_block_1a18f1fa9eafdce67c86e813eca1e27c33>`(BlocksKey);
-	
-		:target:`Block<doxid-classgeode_1_1_block_1a320472d69fef6dbf7c75dcf93e566a7f>`(
-			const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl,
-			BlocksKey
-			);
+		:target:`Block<doxid-classgeode_1_1_block_1a320472d69fef6dbf7c75dcf93e566a7f>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl, BlocksKey);
 
 		// methods
 	
@@ -42,24 +38,13 @@ Geometric component describing a 3D volume This component is described by a mesh
 		template <typename Mesh = SolidMesh<dimension>>
 		Mesh& :target:`modifiable_mesh<doxid-classgeode_1_1_block_1a1b50e76c0aa1596a5446c35996216d92>`(BlocksKey);
 	
-		void :target:`set_mesh<doxid-classgeode_1_1_block_1a302738975c62d2a0c177469b0e9ab6db>`(
-			std::unique_ptr<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> mesh,
-			BlocksKey
-			);
-	
-		void :target:`set_mesh<doxid-classgeode_1_1_block_1aad9bc6089a9147b215d8d7226772041d>`(
-			std::unique_ptr<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> mesh,
-			BlocksBuilderKey
-			);
+		void :target:`set_mesh<doxid-classgeode_1_1_block_1a302738975c62d2a0c177469b0e9ab6db>`(std::unique_ptr<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> mesh, BlocksKey);
+		void :target:`set_mesh<doxid-classgeode_1_1_block_1aad9bc6089a9147b215d8d7226772041d>`(std::unique_ptr<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> mesh, BlocksBuilderKey);
 	
 		template <typename Mesh = SolidMesh<dimension>>
 		Mesh& :target:`modifiable_mesh<doxid-classgeode_1_1_block_1afc1199709e7906c2f0c7d7a8da9005c8>`(BlocksBuilderKey);
 	
-		void :target:`set_block_name<doxid-classgeode_1_1_block_1a4fd3c3a7b3707cc3f3490707ad62035c>`(
-			absl::string_view name,
-			BlocksBuilderKey
-			);
-	
+		void :target:`set_block_name<doxid-classgeode_1_1_block_1a4fd3c3a7b3707cc3f3490707ad62035c>`(absl::string_view name, BlocksBuilderKey);
 		static :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type_static<doxid-classgeode_1_1_block_1aa48ae4ed7dacfd18f11a017335655188>`();
 	};
 

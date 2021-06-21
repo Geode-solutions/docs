@@ -20,10 +20,7 @@ class geode::ZipFile
 	public:
 		// construction
 	
-		:target:`ZipFile<doxid-classgeode_1_1_zip_file_1a6425adf70bfffcfcc6853167e66392d8>`(
-			absl::string_view file,
-			absl::string_view archive_temp_filename
-			);
+		:target:`ZipFile<doxid-classgeode_1_1_zip_file_1a6425adf70bfffcfcc6853167e66392d8>`(absl::string_view file, absl::string_view archive_temp_filename);
 
 		// methods
 	

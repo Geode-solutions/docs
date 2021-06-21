@@ -25,12 +25,7 @@ This struct represents a local vertex in a polygon
 		// construction
 	
 		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1a4c57bf4d3c991bd883be0e4876740dbd>`();
-	
-		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1a669c53e8769dd7e00e3b1fcdd8ba3c7e>`(
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id_in,
-			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id_in
-			);
-	
+		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1a669c53e8769dd7e00e3b1fcdd8ba3c7e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id_in, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id_in);
 		:target:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex_1a2b1150205a357e97387da76b8e4e142f>`(:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` polygon_edge);
 
 		// methods

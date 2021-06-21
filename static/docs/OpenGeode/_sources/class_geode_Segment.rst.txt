@@ -21,11 +21,7 @@ template class geode::Segment
 	public:
 		// construction
 	
-		:target:`Segment<doxid-classgeode_1_1_segment_1a8f57b8f934b015c32cfc148515b83b33>`(
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p0,
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p1
-			);
-	
+		:target:`Segment<doxid-classgeode_1_1_segment_1a8f57b8f934b015c32cfc148515b83b33>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p0, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p1);
 		:target:`Segment<doxid-classgeode_1_1_segment_1a7bdd9c8de494c8416e1118674200fa67>`(const Segment<dimension>& other);
 		:target:`Segment<doxid-classgeode_1_1_segment_1aac0b85486474c0b4c223a51d5e589832>`(Segment<dimension>&& other);
 

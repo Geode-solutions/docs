@@ -22,15 +22,8 @@ class geode::BRep::InternalCornerRange
 	public:
 		// construction
 	
-		:target:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1abfa4b1416ab1b92ce600a2b78bb9858a>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Surface3D& surface
-			);
-	
-		:target:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1a0ef39bb5437b20fe6e80594cee9b4e05>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Block3D& block
-			);
+		:target:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1abfa4b1416ab1b92ce600a2b78bb9858a>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Surface3D& surface);
+		:target:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1a0ef39bb5437b20fe6e80594cee9b4e05>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Block3D& block);
 
 		// methods
 	

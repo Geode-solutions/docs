@@ -22,10 +22,7 @@ class geode::BRep::ItemSurfaceRange
 	public:
 		// construction
 	
-		:target:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range_1afc44ab59a86acd94a93922bb66b1f193>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const ModelBoundary3D& boundary
-			);
+		:target:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range_1afc44ab59a86acd94a93922bb66b1f193>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const ModelBoundary3D& boundary);
 
 		// methods
 	

@@ -30,10 +30,7 @@ for( const auto i : Range{ n } ) { // do something }
 		// construction
 	
 		template <typename T1, typename T2>
-		:target:`TRange<doxid-classgeode_1_1_t_range_1a758710ede8450fa07502a49480a75b20>`(
-			T1 begin,
-			T2 end
-			);
+		:target:`TRange<doxid-classgeode_1_1_t_range_1a758710ede8450fa07502a49480a75b20>`(T1 begin, T2 end);
 	
 		template <typename T>
 		:target:`TRange<doxid-classgeode_1_1_t_range_1af8a2b01ad995ca2aa562f3de05f6b8cb>`(T end);

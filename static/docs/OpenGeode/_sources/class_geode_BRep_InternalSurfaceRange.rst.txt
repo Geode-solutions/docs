@@ -22,10 +22,7 @@ class geode::BRep::InternalSurfaceRange
 	public:
 		// construction
 	
-		:target:`InternalSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a46d8f9f49c39e38ac748f7c13afcda6d>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Block3D& block
-			);
+		:target:`InternalSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a46d8f9f49c39e38ac748f7c13afcda6d>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Block3D& block);
 
 		// methods
 	

@@ -21,11 +21,7 @@ template class geode::Sphere
 	public:
 		// construction
 	
-		:target:`Sphere<doxid-classgeode_1_1_sphere_1aa4fc5d19450208df645ee7527b3328cd>`(
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin,
-			double radius
-			);
-	
+		:target:`Sphere<doxid-classgeode_1_1_sphere_1aa4fc5d19450208df645ee7527b3328cd>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin, double radius);
 		:target:`Sphere<doxid-classgeode_1_1_sphere_1a62d56d050526854f889a0f2cb1e25890>`(const Sphere& other);
 		:target:`Sphere<doxid-classgeode_1_1_sphere_1a315184a6e718b148e7e42b1e1ffd79bc>`(Sphere&& other);
 

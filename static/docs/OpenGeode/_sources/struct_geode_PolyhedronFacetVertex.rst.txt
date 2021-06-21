@@ -25,11 +25,7 @@ struct geode::PolyhedronFacetVertex
 		// construction
 	
 		:target:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex_1a5e3a8e5f8f49fbed1afb0b2560cf6252>`();
-	
-		:target:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex_1aaf86c50345bdfdd451eccea63d1bb611>`(
-			:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>` facet,
-			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id_in
-			);
+		:target:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex_1aaf86c50345bdfdd451eccea63d1bb611>`(:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>` facet, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id_in);
 
 		// methods
 	

@@ -24,11 +24,7 @@ Description of a vector in the given dimension with double coordinates
 		:target:`Vector<doxid-classgeode_1_1_vector_1ad95d0a12373e9f24b3ff842de5109e42>`();
 		:target:`Vector<doxid-classgeode_1_1_vector_1a08f65b26abfe33a76741b66967853f8e>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& vector);
 		:target:`Vector<doxid-classgeode_1_1_vector_1afc0f634dd54ee77fa4763522e17c5a6a>`(std::array<double, dimension> values);
-	
-		:target:`Vector<doxid-classgeode_1_1_vector_1aeb1e3c9a0c25d886a2a6000f5b7453c0>`(
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& from,
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& to
-			);
+		:target:`Vector<doxid-classgeode_1_1_vector_1aeb1e3c9a0c25d886a2a6000f5b7453c0>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& from, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& to);
 
 		// methods
 	

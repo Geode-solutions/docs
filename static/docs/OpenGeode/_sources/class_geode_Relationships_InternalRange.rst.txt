@@ -22,10 +22,7 @@ class geode::Relationships::InternalRange
 	public:
 		// construction
 	
-		:target:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range_1aa91b3172f956a6463aefe915d1148de8>`(
-			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
-			);
+		:target:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range_1aa91b3172f956a6463aefe915d1148de8>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 	};
 
 Inherited Members

@@ -57,11 +57,7 @@
     <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6490f410ec95b55f5f14923a65000792"><span class="std std-ref">PolyhedronFacetVertices</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-facets-1a7c74ded75c7f02b6a1b9960c562b3d52"><span class="std std-ref">facet_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">facet_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-facets-1a992f09c503868d4486c832974b03846f"><span class="std std-ref">facet_from_vertices</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6490f410ec95b55f5f14923a65000792"><span class="std std-ref">PolyhedronFacetVertices</span></a><span></span><span class="o">&amp;</span> <span class="n">vertices</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-solid-facets-1abdf45dc310e4cb8d44eff373f9ebf934"><span class="std std-ref">facet_attribute_manager</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-facets-1a2d1c7533cb76370ab69d3702c5b5596b"><span></span><span class="n">update_facet_vertices</span></span><span></span><span class="p">(</span>
-        <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">old2new</span><span class="p">,</span>
-        <span class="n">SolidFacetsKey</span>
-        <span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-facets-1a2d1c7533cb76370ab69d3702c5b5596b"><span></span><span class="n">update_facet_vertices</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">old2new</span><span class="p">,</span> <span class="n">SolidFacetsKey</span><span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-facets-1aafb65ca5171d1962a723f0b27da0f25b"><span></span><span class="n">update_facet_vertex</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6490f410ec95b55f5f14923a65000792"><span class="std std-ref">PolyhedronFacetVertices</span></a><span></span> <span class="n">facet_vertices</span><span class="p">,</span>
@@ -70,10 +66,7 @@
         <span class="n">SolidFacetsKey</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-facets-1a17c8d075e81aa6d336bbf68dfe5e8749"><span></span><span class="n">remove_facet</span></span><span></span><span class="p">(</span>
-        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6490f410ec95b55f5f14923a65000792"><span class="std std-ref">PolyhedronFacetVertices</span></a><span></span> <span class="n">facet_vertices</span><span class="p">,</span>
-        <span class="n">SolidFacetsKey</span>
-        <span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-facets-1a17c8d075e81aa6d336bbf68dfe5e8749"><span></span><span class="n">remove_facet</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6490f410ec95b55f5f14923a65000792"><span class="std std-ref">PolyhedronFacetVertices</span></a><span></span> <span class="n">facet_vertices</span><span class="p">,</span> <span class="n">SolidFacetsKey</span><span class="p">);</span>
 
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-facets-1a48e4f33824ed1388f38b97f910b271bc"><span></span><span class="n">delete_facets</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">,</span>
@@ -87,10 +80,7 @@
         <span class="n">SolidFacetsKey</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-facets-1a68a36352a5a59efd1760c93ec093e8e9"><span></span><span class="n">overwrite_facets</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">SolidFacets</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">from</span><span class="p">,</span>
-        <span class="n">SolidFacetsKey</span>
-        <span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-facets-1a68a36352a5a59efd1760c93ec093e8e9"><span></span><span class="n">overwrite_facets</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidFacets</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">from</span><span class="p">,</span> <span class="n">SolidFacetsKey</span><span class="p">);</span>
 <span class="p">};</span></pre>
 </div>
 <div class="section" id="detailed-documentation">

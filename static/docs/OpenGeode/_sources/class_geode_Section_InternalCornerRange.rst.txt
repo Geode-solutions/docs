@@ -22,10 +22,7 @@ class geode::Section::InternalCornerRange
 	public:
 		// construction
 	
-		:target:`InternalCornerRange<doxid-classgeode_1_1_section_1_1_internal_corner_range_1a16ccdd67f9c954d82ab2ef9f6aa1d993>`(
-			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-			const Surface2D& surface
-			);
+		:target:`InternalCornerRange<doxid-classgeode_1_1_section_1_1_internal_corner_range_1a16ccdd67f9c954d82ab2ef9f6aa1d993>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const Surface2D& surface);
 
 		// methods
 	

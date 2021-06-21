@@ -22,10 +22,7 @@ class geode::BRep::IncidentBlockRange
 	public:
 		// construction
 	
-		:target:`IncidentBlockRange<doxid-classgeode_1_1_b_rep_1_1_incident_block_range_1ae5bad4e28ce507d90fad5da7d169f942>`(
-			const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
-			const Surface3D& surface
-			);
+		:target:`IncidentBlockRange<doxid-classgeode_1_1_b_rep_1_1_incident_block_range_1ae5bad4e28ce507d90fad5da7d169f942>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Surface3D& surface);
 
 		// methods
 	

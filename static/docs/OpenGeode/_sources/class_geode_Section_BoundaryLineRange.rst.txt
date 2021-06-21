@@ -22,10 +22,7 @@ class geode::Section::BoundaryLineRange
 	public:
 		// construction
 	
-		:target:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a4b7c01e6ebf9fc9b82d8b6c43a14adb7>`(
-			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-			const Surface2D& surface
-			);
+		:target:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a4b7c01e6ebf9fc9b82d8b6c43a14adb7>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const Surface2D& surface);
 
 		// methods
 	

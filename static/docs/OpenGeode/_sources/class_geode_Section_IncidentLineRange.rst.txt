@@ -22,10 +22,7 @@ class geode::Section::IncidentLineRange
 	public:
 		// construction
 	
-		:target:`IncidentLineRange<doxid-classgeode_1_1_section_1_1_incident_line_range_1adb668a0aa85391e4ae23395a222ea584>`(
-			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-			const Corner2D& corner
-			);
+		:target:`IncidentLineRange<doxid-classgeode_1_1_section_1_1_incident_line_range_1adb668a0aa85391e4ae23395a222ea584>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const Corner2D& corner);
 
 		// methods
 	

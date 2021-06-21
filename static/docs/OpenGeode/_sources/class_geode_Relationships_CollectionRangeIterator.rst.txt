@@ -20,11 +20,7 @@ Range to iterates on all collections of one component
 	public:
 		// construction
 	
-		:target:`CollectionRangeIterator<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator_1a54831146d4d151d2e34ed89935e76bf6>`(
-			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& id
-			);
-	
+		:target:`CollectionRangeIterator<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator_1a54831146d4d151d2e34ed89935e76bf6>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
 		:target:`CollectionRangeIterator<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator_1a8ae2e26ac2b76bbeef252dd6e9280857>`(CollectionRangeIterator&& other);
 		:target:`CollectionRangeIterator<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator_1a88fe03626ed2614e8c4a376fc8e6d934>`(const CollectionRangeIterator& other);
 

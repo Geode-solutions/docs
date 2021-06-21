@@ -22,15 +22,8 @@ class geode::Section::EmbeddingSurfaceRange
 	public:
 		// construction
 	
-		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range_1ae34ea33195811f7f0314508e78266bda>`(
-			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-			const Line2D& line
-			);
-	
-		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range_1a7152fb36b65d64cfbcaa54a81f6bb7dd>`(
-			const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-			const Corner2D& corner
-			);
+		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range_1ae34ea33195811f7f0314508e78266bda>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const Line2D& line);
+		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range_1a7152fb36b65d64cfbcaa54a81f6bb7dd>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const Corner2D& corner);
 
 		// methods
 	

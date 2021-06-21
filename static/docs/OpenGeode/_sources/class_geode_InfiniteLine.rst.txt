@@ -21,11 +21,7 @@ template class geode::InfiniteLine
 	public:
 		// construction
 	
-		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1afb235364851a11362ede66f171b4635d>`(
-			const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& direction,
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin
-			);
-	
+		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1afb235364851a11362ede66f171b4635d>`(const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& direction, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin);
 		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1aacdf05212f673ca7bc87c05769ccf798>`(const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment);
 		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1a65fe79bf0153e01da292aebae19f1fb5>`(const InfiniteLine<dimension>& other);
 		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1a62e3a8657a9de262289e9fec6ec68f05>`(InfiniteLine<dimension>&& other);
