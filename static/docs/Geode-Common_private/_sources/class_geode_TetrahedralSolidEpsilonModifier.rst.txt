@@ -63,10 +63,32 @@ Inherited Members
 		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1645e8ce599bf3ab1036071f1af3a939>`(index_t tetrahedron_id, const Point3D& point);
 		bool :ref:`is_split_facet_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a60b6e5ebe55c5b9bc26f016589eb3054>`(const PolyhedronFacet& facet, const Point3D& point) const;
 		bool :ref:`is_split_facet_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1acf9cdefd8a07481ca6b3b4d8b1ef280c>`(index_t facet_id, const Point3D& point) const;
+	
+		absl::optional<PolyhedronFacet> :ref:`first_invalid_element_on_split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a164e1630879da47e1776caa5a3d5fa40>`(
+			const PolyhedronFacet& facet,
+			const Point3D& point
+			) const;
+	
+		absl::optional<PolyhedronFacet> :ref:`first_invalid_element_on_split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad25a56f2bf2d6612e8dab0729615418b>`(
+			index_t facet_id,
+			const Point3D& point
+			) const;
+	
 		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abfd8444fde310d0e8229cb353f718451>`(index_t facet_id, const Point3D& point);
 		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a5de1767b5b8ae9b7ae522c5434930f5b>`(const PolyhedronFacet& facet, const Point3D& point);
 		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a8ba26a3c56f7221bd96d8a812c4c7b70>`(const PolyhedronFacetEdge& edge, const Point3D& point) const;
 		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a38a52fa447ee7e454cc894bb49968f43>`(index_t edge_id, const Point3D& point) const;
+	
+		absl::optional<index_t> :ref:`first_invalid_element_on_split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a17a255f74f309d4c8e9e2c5c148acaa5>`(
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			) const;
+	
+		absl::optional<index_t> :ref:`first_invalid_element_on_split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a2b94e2173ed1e7496f5246b076b8d237>`(
+			index_t edge_id,
+			const Point3D& point
+			) const;
+	
 		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a954f2875b98f31ae3ce7e255d1c008c3>`(index_t edge_id, const Point3D& point);
 	
 		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abf56f3477626be27058311526b2b5aef>`(
