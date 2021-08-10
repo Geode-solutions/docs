@@ -172,7 +172,7 @@ export default {
       },
       {
         extension: '.vtu (ascii only)',
-        cpp: "<a href='/opengeode?page=class_geode_TetrahedralSolid.html'><code>TetrahedralSolid3D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_TetrahedralSolid.html'><code>TetrahedralSolid3D</code></a><br/><a href='/opengeode?page=class_geode_HybridSolid.html'><code>HybridSolid3D</code></a>",
         in: false,
         out: true
       }
