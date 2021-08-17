@@ -11,6 +11,8 @@ namespace geode
 	enum_geode_IntersectionType.rst
 	enum_geode_SplitSide.rst
 	struct_geode_AlongSolidSplitEdgeInfo.rst
+	struct_geode_BRepCollapsePolygonEdgeInfo.rst
+	struct_geode_BRepSplitPolygonEdgeInfo.rst
 	struct_geode_CollapseEdgeInfo.rst
 	struct_geode_CollapsePolygonEdgeInfo.rst
 	struct_geode_CorrectnessInfo.rst
@@ -24,6 +26,8 @@ namespace geode
 	struct_geode_PolygonData.rst
 	struct_geode_PolygonEdgeData.rst
 	struct_geode_PolygonEdgeInfo.rst
+	struct_geode_SectionCollapsePolygonEdgeInfo.rst
+	struct_geode_SectionSplitPolygonEdgeInfo.rst
 	struct_geode_SideSurfaceCutPathInfo.rst
 	struct_geode_SidedSolidSplitEdgeInfo.rst
 	struct_geode_SidedSurface.rst
@@ -103,6 +107,8 @@ Overview
 	// structs
 
 	struct :ref:`AlongSolidSplitEdgeInfo<doxid-structgeode_1_1_along_solid_split_edge_info>`;
+	struct :ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>`;
+	struct :ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>`;
 	struct :ref:`CollapseEdgeInfo<doxid-structgeode_1_1_collapse_edge_info>`;
 	struct :ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>`;
 
@@ -133,6 +139,8 @@ Overview
 	struct :ref:`PolygonEdgeData<doxid-structgeode_1_1_polygon_edge_data>`;
 
 	struct :ref:`PolygonEdgeInfo<doxid-structgeode_1_1_polygon_edge_info>`;
+	struct :ref:`SectionCollapsePolygonEdgeInfo<doxid-structgeode_1_1_section_collapse_polygon_edge_info>`;
+	struct :ref:`SectionSplitPolygonEdgeInfo<doxid-structgeode_1_1_section_split_polygon_edge_info>`;
 	struct :ref:`SideSurfaceCutPathInfo<doxid-structgeode_1_1_side_surface_cut_path_info>`;
 	struct :ref:`SidedSolidSplitEdgeInfo<doxid-structgeode_1_1_sided_solid_split_edge_info>`;
 	struct :ref:`SidedSurface<doxid-structgeode_1_1_sided_surface>`;
