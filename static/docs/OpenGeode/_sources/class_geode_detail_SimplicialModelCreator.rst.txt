@@ -1,0 +1,42 @@
+.. index:: pair: class; geode::detail::SimplicialModelCreator
+.. _doxid-classgeode_1_1detail_1_1_simplicial_model_creator:
+
+template class geode::detail::SimplicialModelCreator
+====================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <simplicial_model_creator.h>
+	
+	template <typename Model, typename ModelBuilder, index_t dimension>
+	class SimplicialModelCreator
+	{
+	public:
+		// construction
+	
+		:target:`SimplicialModelCreator<doxid-classgeode_1_1detail_1_1_simplicial_model_creator_1a99e9a0aa2fa8da17bdabb9737c8a7b6c>`(
+			Model& model,
+			std::vector<:ref:`Point<doxid-classgeode_1_1_point>`<dimension>> unique_points
+			);
+
+		// methods
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_corners<doxid-classgeode_1_1detail_1_1_simplicial_model_creator_1a7612ab3bb7db2e7cbcf0aff897a7b93e>`(absl::Span<const :ref:`CornerDefinition<doxid-structgeode_1_1_corner_definition>`> definitions);
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_lines<doxid-classgeode_1_1detail_1_1_simplicial_model_creator_1acb4223898ba1109373bb1de7bbaf3d9e>`(
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> corners,
+			absl::Span<const :ref:`LineDefinition<doxid-structgeode_1_1_line_definition>`> definitions
+			);
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_surfaces<doxid-classgeode_1_1detail_1_1_simplicial_model_creator_1a315d5fe30e83dd779de22169f1145a4b>`(
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> lines,
+			absl::Span<const :ref:`SurfaceDefinition<doxid-structgeode_1_1_surface_definition>`> definitions
+			);
+	};

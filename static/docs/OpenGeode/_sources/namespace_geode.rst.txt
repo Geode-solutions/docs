@@ -14,9 +14,13 @@ namespace geode
 	struct_geode_AttributeLinearInterpolationImpl.rst
 	struct_geode_AttributeLinearInterpolationImpl-2.rst
 	struct_geode_AttributeProperties.rst
+	struct_geode_BlockDefinition.rst
+	struct_geode_BoundaryDefinition.rst
 	struct_geode_ComponentTag.rst
+	struct_geode_CornerDefinition.rst
 	struct_geode_EdgeVertex.rst
 	struct_geode_GenericAttributeConversion.rst
+	struct_geode_LineDefinition.rst
 	struct_geode_MeshComponentVertex.rst
 	struct_geode_MeshImplTag.rst
 	struct_geode_MeshTypeTag.rst
@@ -26,6 +30,7 @@ namespace geode
 	struct_geode_PolyhedronFacetEdge.rst
 	struct_geode_PolyhedronFacetVertex.rst
 	struct_geode_PolyhedronVertex.rst
+	struct_geode_SurfaceDefinition.rst
 	struct_geode_uuid.rst
 	class_geode_AABBTree.rst
 	class_geode_AddComponents.rst
@@ -146,6 +151,8 @@ namespace geode
 	class_geode_SectionInput.rst
 	class_geode_SectionOutput.rst
 	class_geode_Segment.rst
+	class_geode_SimplicialBRepCreator.rst
+	class_geode_SimplicialSectionCreator.rst
 	class_geode_Singleton.rst
 	class_geode_SolidEdges.rst
 	class_geode_SolidEdgesBuilder.rst
@@ -274,19 +281,23 @@ Overview
 
 	struct :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`;
 
-	template <typename AttributeType>
-	struct :ref:`AttributeLinearInterpolationImpl<doxid-structgeode_1_1_attribute_linear_interpolation_impl>`;
-
 	template <index_t dimension>
 	struct :ref:`AttributeLinearInterpolationImpl<Point<dimension>><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_point_3_01dimension_01_4_01_4>`;
 
+	template <typename AttributeType>
+	struct :ref:`AttributeLinearInterpolationImpl<doxid-structgeode_1_1_attribute_linear_interpolation_impl>`;
+
 	struct :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`;
+	struct :ref:`BlockDefinition<doxid-structgeode_1_1_block_definition>`;
+	struct :ref:`BoundaryDefinition<doxid-structgeode_1_1_boundary_definition>`;
 	struct :ref:`ComponentTag<doxid-structgeode_1_1_component_tag>`;
+	struct :ref:`CornerDefinition<doxid-structgeode_1_1_corner_definition>`;
 	struct :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`;
 
 	template <typename AttributeType>
 	struct :ref:`GenericAttributeConversion<doxid-structgeode_1_1_generic_attribute_conversion>`;
 
+	struct :ref:`LineDefinition<doxid-structgeode_1_1_line_definition>`;
 	struct :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`;
 	struct :ref:`MeshImplTag<doxid-structgeode_1_1_mesh_impl_tag>`;
 	struct :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`;
@@ -296,6 +307,7 @@ Overview
 	struct :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`;
 	struct :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`;
 	struct :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`;
+	struct :ref:`SurfaceDefinition<doxid-structgeode_1_1_surface_definition>`;
 	struct :ref:`uuid<doxid-structgeode_1_1uuid>`;
 
 	// classes
@@ -597,6 +609,8 @@ Overview
 	template <index_t dimension>
 	class :ref:`Segment<doxid-classgeode_1_1_segment>`;
 
+	class :ref:`SimplicialBRepCreator<doxid-classgeode_1_1_simplicial_b_rep_creator>`;
+	class :ref:`SimplicialSectionCreator<doxid-classgeode_1_1_simplicial_section_creator>`;
 	class :ref:`Singleton<doxid-classgeode_1_1_singleton>`;
 
 	template <index_t dimension>
@@ -1267,6 +1281,7 @@ Overview
 	void opengeode_model_api :target:`convert_block_meshes_into_tetrahedral_solids<doxid-namespacegeode_1a50185e6f94e236ed316b6c14fc5f8688>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1a250abe68306f3ff924e11ca40db2e0ed>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1a0bd6c1db09b0798ca9530ed601b1c445>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(:ref:`Block<doxid-classgeode_1_1_block>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a6454289fb6bd960ae468b483e350c107>`(:ref:`Blocks<doxid-classgeode_1_1_blocks>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a829aef1a1c5495a494fc2fc55b4922c3>`(:ref:`BlocksBuilder<doxid-classgeode_1_1_blocks_builder>`);

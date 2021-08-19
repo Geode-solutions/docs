@@ -14,6 +14,7 @@ namespace geode::detail
 	class_geode_detail_MeshStorage.rst
 	class_geode_detail_PointsImpl.rst
 	class_geode_detail_PointsViewImpl.rst
+	class_geode_detail_SimplicialModelCreator.rst
 	class_geode_detail_SolidMeshViewImpl.rst
 	class_geode_detail_SurfaceMeshViewImpl.rst
 	class_geode_detail_UuidToIndex.rst
@@ -53,6 +54,9 @@ namespace geode::detail
 
 	template <index_t dimension, typename Mesh>
 	class :ref:`PointsViewImpl<doxid-classgeode_1_1detail_1_1_points_view_impl>`;
+
+	template <typename Model, typename ModelBuilder, index_t dimension>
+	class :ref:`SimplicialModelCreator<doxid-classgeode_1_1detail_1_1_simplicial_model_creator>`;
 
 	template <index_t dimension>
 	class :ref:`SolidMeshViewImpl<doxid-classgeode_1_1detail_1_1_solid_mesh_view_impl>`;

@@ -1,0 +1,59 @@
+.. index:: pair: struct; geode::BlockDefinition
+.. _doxid-structgeode_1_1_block_definition:
+
+struct geode::BlockDefinition
+=============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <simplicial_creator_definitions.h>
+	
+	struct BlockDefinition
+	{
+		// fields
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`vertices<doxid-structgeode_1_1_block_definition_1a48cb382de0ce3777148b7c30c4ccc9e9>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`tetrahedra<doxid-structgeode_1_1_block_definition_1a31c11ffb11937cdef20fbcfdc8adc269>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`boundaries<doxid-structgeode_1_1_block_definition_1ad711a0cf86ad8ec339b6180803a01bec>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`internals<doxid-structgeode_1_1_block_definition_1acd7224a71cde3add18b671fd03f9808b>`;
+	};
+.. _details-structgeode_1_1_block_definition:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; boundaries
+.. _doxid-structgeode_1_1_block_definition_1ad711a0cf86ad8ec339b6180803a01bec:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> boundaries
+
+List of boundaries: index i correspond to the i-th created :ref:`Surface <doxid-classgeode_1_1_surface>`.
+
+.. index:: pair: variable; internals
+.. _doxid-structgeode_1_1_block_definition_1acd7224a71cde3add18b671fd03f9808b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> internals
+
+List of internals: index i correspond to the i-th created :ref:`Surface <doxid-classgeode_1_1_surface>`.
+
