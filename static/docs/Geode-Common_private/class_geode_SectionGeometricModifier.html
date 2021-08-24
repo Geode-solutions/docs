@@ -55,6 +55,12 @@
         <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
         <span class="p">);</span>
 
+    <a class="reference internal" href="struct_geode_SectionCollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-section-collapse-polygon-edge-info"><span class="std std-ref">SectionCollapsePolygonEdgeInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-geometric-modifier-1ab465013196a8bd9646aa827b0bd0a18d"><span></span><span class="n">collapse_edge</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
+
     <a class="reference internal" href="struct_geode_SectionSplitPolygonEdgeInfo.html#doxid-structgeode-1-1-section-split-polygon-edge-info"><span class="std std-ref">SectionSplitPolygonEdgeInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-geometric-modifier-1a29b6cd4bb427300d6b24aff60ecffa03"><span></span><span class="n">split_edge</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
@@ -68,6 +74,7 @@
         <span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-geometric-modifier-1aebe4d67cdf869984cbd175cdf2792976"><span></span><span class="n">move_point</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-geometric-modifier-1a6d5545f8b7706dabc89f54bb45355df7"><span></span><span class="n">clean</span></span><span></span><span class="p">();</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-geometric-modifier-1a3dcc736acfa4dd6c30df8999383a148f"><span></span><span class="n">clean_triangles_surfaces</span></span><span></span><span class="p">();</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-geometric-modifier-1a8b023789f46bf1bf5e040bb4ba2b776c"><span></span><span class="n">clean_vertices_surfaces</span></span><span></span><span class="p">();</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-geometric-modifier-1aedefe764b3f17c9f0d4fd07c2dc1e823"><span></span><span class="n">clean_edges_lines</span></span><span></span><span class="p">();</span>
