@@ -16,14 +16,6 @@ namespace geode::detail
 	
 	namespace detail {
 
-	// typedefs
-
-	typedef std::deque<std::pair<Point<dimension>, index_t>> :target:`remeshed_line_attribute_type<doxid-namespacegeode_1_1detail_1aa7cedb1e10042060dfb5c574d2468f62>`;
-
-	// global variables
-
-	static constexpr auto :target:`remeshed_line_attribute_name<doxid-namespacegeode_1_1detail_1a186f341d3ecc27c10c3f8bcd46c10980>` =             "remeshed_line_attribute";
-
 	// global functions
 
 	template <typename Model, index_t dimension, template<typename, index_t> class Data>

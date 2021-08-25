@@ -90,14 +90,27 @@
     <span class="kt">double</span> <span class="n">mesh_size</span>
     <span class="p">);</span>
 
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a65b92e04719b22bc521e1f2e664d44e4"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Metric-2.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1acccc96aede5f0687fbbeb3c7a80dde02"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Metric-2.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">geode_simplexremesh_api_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad70c93700b3f2dd208c8bc28cd719747"><span></span><span class="n">homogeneous_relax</span></span><span></span><span class="p">(</span><span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_simplexremesh_api_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a111a23597d5f70e82c968bd0d9e6800f"><span></span><span class="n">homogeneous_relax</span></span><span></span><span class="p">(</span>
+    <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Metric3D</span><span class="o">&amp;</span> <span class="n">metric</span>
+    <span class="p">);</span>
+
 <span class="kt">void</span> <span class="n">geode_simplexremesh_api_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3eb7f05c7e761d9f6ac6d73b6f8877cc"><span></span><span class="n">homogeneous_relax</span></span><span></span><span class="p">(</span><span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_simplexremesh_api_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9ced846f019350812570de47aa1aa866"><span></span><span class="n">homogeneous_relax</span></span><span></span><span class="p">(</span>
+    <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Metric2D</span><span class="o">&amp;</span> <span class="n">metric</span>
+    <span class="p">);</span>
+
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae6e689ab449ad55fffa309d356c002a0"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_ConstantMetric.html#doxid-classgeode-1-1-constant-metric"><span class="std std-ref">ConstantMetric</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a713615f1e1f632a857fbbda376b9b832"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Segment</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3fbc1fb49f0ca7c4ea4744e735440007"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ade9748159cd2c9b96979488d976af741"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_MetricBase.html#doxid-classgeode-1-1-metric-base"><span class="std std-ref">MetricBase</span></a><span></span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1acccc96aede5f0687fbbeb3c7a80dde02"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Metric-2.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span>
     <span class="k">typename</span> <span class="n">ModelBuilder</span><span class="p">,</span>
@@ -113,9 +126,23 @@
 
 <span class="kt">void</span> <span class="n">geode_simplexremesh_corner_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a87c70527693764d8f0f14f8a461edaa8"><span></span><span class="n">remesh_corners</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a818a96a4372068de35ac5f3f4ff78c98"><span class="std std-ref">SectionRemeshingData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">geode_simplexremesh_corner_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac282a37a4847addfabc11fb08f57cd7b"><span></span><span class="n">remesh_corners</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a6b84474111e7872dbfcab4e6e70681bf"><span class="std std-ref">BRepRemeshingData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7da074eb0c591f0688ceeb11edd1fc9b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Metric-2.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">geode_simplexremesh_line2d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acef47391c2492130f65b0d6d1a73bd78"><span></span><span class="n">relax_lines</span></span><span></span><span class="p">(</span><span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_simplexremesh_line2d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac721ea1a0c23223d134392a26959484c"><span></span><span class="n">relax_lines</span></span><span></span><span class="p">(</span>
+    <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Metric2D</span><span class="o">&amp;</span> <span class="n">metric</span>
+    <span class="p">);</span>
+
 <span class="kt">void</span> <span class="n">geode_simplexremesh_line2d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a08aabcb193cec998f15537bc52d896f2"><span></span><span class="n">remesh_lines</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a818a96a4372068de35ac5f3f4ff78c98"><span class="std std-ref">SectionRemeshingData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac93b93bd0a1e54b0ffb54f588b46dce9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Metric-2.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">geode_simplexremesh_line3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae4de5228bd08ce0e9c4301a7d7b17018"><span></span><span class="n">relax_lines</span></span><span></span><span class="p">(</span><span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_simplexremesh_line3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0d6197208ea505d0dba4f4c00dec27dc"><span></span><span class="n">relax_lines</span></span><span></span><span class="p">(</span>
+    <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Metric3D</span><span class="o">&amp;</span> <span class="n">metric</span>
+    <span class="p">);</span>
+
 <span class="kt">void</span> <span class="n">geode_simplexremesh_line3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a87f807a48fa6305ad803f88f7af45c99"><span></span><span class="n">remesh_lines</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a6b84474111e7872dbfcab4e6e70681bf"><span class="std std-ref">BRepRemeshingData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca4385eb3d676a070003e6270f6472ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
@@ -129,10 +156,13 @@
     <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">block</span>
     <span class="p">);</span>
 
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa9eca13715aca2567523b81021cda51a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a775f43c93e557302fbaa359aa0af2f19"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">geode_simplexremesh_surface2d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a82f4227d0c57753ae72d5261fd8388b4"><span></span><span class="n">relax_surfaces</span></span><span></span><span class="p">(</span><span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
-<span class="kt">void</span> <span class="n">geode_simplexremesh_surface2d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5fdbaebd42249b7e490e72e3d40877b5"><span></span><span class="n">relax_surface</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_simplexremesh_surface2d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad452fe312c5d09f7dac025f2a7fe6eef"><span></span><span class="n">relax_surfaces</span></span><span></span><span class="p">(</span>
+    <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">geode</span><span class="o">::</span><span class="n">Metric2D</span><span class="o">&amp;</span> <span class="n">metric</span>
+    <span class="p">);</span>
+
 <span class="kt">void</span> <span class="n">geode_simplexremesh_surface2d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0f4bcf370f31a54448d7531e41543549"><span></span><span class="n">remesh_surfaces</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a818a96a4372068de35ac5f3f4ff78c98"><span class="std std-ref">SectionRemeshingData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">geode_simplexremesh_surface2d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2220d2f2c2623b18f6102f875d529b7f"><span></span><span class="n">remesh_surface</span></span><span></span><span class="p">(</span>
@@ -140,9 +170,13 @@
     <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">input_surface</span>
     <span class="p">);</span>
 
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8494fd593c0c13b77aa7c916bb8662e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">geode_simplexremesh_surface3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3071b0316bff3c71e235a6a463ca50a7"><span></span><span class="n">relax_surfaces</span></span><span></span><span class="p">(</span><span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
-<span class="kt">void</span> <span class="n">geode_simplexremesh_surface3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a51bcc0ad699c2d9978d98d2a77b4f411"><span></span><span class="n">relax_surface</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_simplexremesh_surface3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aea09fb2d7d2b18c8c8beb229c8f7e0af"><span></span><span class="n">relax_surfaces</span></span><span></span><span class="p">(</span>
+    <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Metric3D</span><span class="o">&amp;</span> <span class="n">metric</span>
+    <span class="p">);</span>
+
 <span class="kt">void</span> <span class="n">geode_simplexremesh_surface3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2f184e6ac94854cb15e1d22cc5c11040"><span></span><span class="n">remesh_surfaces</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a6b84474111e7872dbfcab4e6e70681bf"><span class="std std-ref">BRepRemeshingData</span></a><span></span><span class="o">&amp;</span> <span class="n">data</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">geode_simplexremesh_surface3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9f2fdfc213e18bdf5cb53c738c51b7c7"><span></span><span class="n">remesh_surface</span></span><span></span><span class="p">(</span>
