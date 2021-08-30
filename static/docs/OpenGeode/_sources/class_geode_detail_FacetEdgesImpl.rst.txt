@@ -31,7 +31,7 @@ template class geode::detail::FacetEdgesImpl
 			const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id
 			);
 	
-		void :target:`update_edge_vertices<doxid-classgeode_1_1detail_1_1_facet_edges_impl_1a493a3583205ed68fbc052e1d25080d2f>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`update_edge_vertices<doxid-classgeode_1_1detail_1_1_facet_edges_impl_1a66f3c9d3c7e2692d04cc35f1ac808593>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new);
 		void :target:`remove_edge<doxid-classgeode_1_1detail_1_1_facet_edges_impl_1a67ff56e42a8533deb9ecaee1a8ab51bb>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`delete_edges<doxid-classgeode_1_1detail_1_1_facet_edges_impl_1a318ce29aa8bbd9d990bbe577ac80155c>`(const std::vector<bool>& to_delete);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`remove_isolated_edges<doxid-classgeode_1_1detail_1_1_facet_edges_impl_1a6e090fd9389667d80e166acb7a04b3ec>`();
