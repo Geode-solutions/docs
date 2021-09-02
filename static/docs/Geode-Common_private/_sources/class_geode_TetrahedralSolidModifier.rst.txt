@@ -27,6 +27,8 @@ Overview
 			const SolidMesh3D& solid,
 			TetrahedralSolidBuilder3D& builder
 			);
+	
+		:target:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a772073a33cc520c56b1f5fea8f01f38f>`(TetrahedralSolidModifier&& other);
 
 		// methods
 	

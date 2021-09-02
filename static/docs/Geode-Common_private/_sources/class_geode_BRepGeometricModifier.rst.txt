@@ -24,9 +24,9 @@ class geode::BRepGeometricModifier
 
 		// methods
 	
-		:ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1ab40ff5519151706c036cb2a378b8bd64>`(
+		:ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a772fe1a3ce552cc2e3053a2b8ee2cd00>`(
 			const Block3D& block,
-			index_t polyhedron,
+			index_t tetrahedron,
 			const std::array<index_t, 2>& edge,
 			const Point3D& point
 			);
@@ -43,9 +43,9 @@ class geode::BRepGeometricModifier
 			const Point3D& point
 			);
 	
-		:ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a4f85c9abe51f0d129abd9a7797903302>`(
+		:ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a394f624ed3638f57dbed165bf76966fb>`(
 			const Block3D& block,
-			index_t polyhedron,
+			index_t tetrahedron,
 			const std::array<index_t, 2>& edge,
 			const Point3D& point
 			);
@@ -63,6 +63,9 @@ class geode::BRepGeometricModifier
 			);
 	
 		void :target:`move_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1adf3d5f0ab94502e3880f24006eb45ead>`(index_t unique_vertex, const Point3D& point);
+		bool :target:`is_edge_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a2d4da300ac10675fb9365e82711235d2>`(const Line3D& line, index_t edge) const;
+		bool :target:`is_triangle_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a10b28d8df305de1e7bdf80900feff46c>`(const Surface3D& surface, index_t triangle) const;
+		bool :target:`is_tetrahedron_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1ac370bb4add81ec6c95f96b863a03a771>`(const Block3D& block, index_t tetrahedron) const;
 		void :target:`clean<doxid-classgeode_1_1_b_rep_geometric_modifier_1ae1afc8b3ab4b1cf7b0a17cefb480c32c>`();
 		void :target:`clean_triangles_surfaces<doxid-classgeode_1_1_b_rep_geometric_modifier_1a022dd6b1e3205997e5f738cfd9155ace>`();
 		void :target:`clean_vertices_surfaces<doxid-classgeode_1_1_b_rep_geometric_modifier_1a63338b255dc0751fd2d359dd3abd0990>`();

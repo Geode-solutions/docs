@@ -28,6 +28,8 @@ Overview
 			const EdgedCurve<dimension>& curve,
 			EdgedCurveBuilder<dimension>& builder
 			);
+	
+		:target:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier_1af5381bfdbd0c23a6cc5e737d42ffae28>`(EdgedCurveModifier&& other);
 
 		// methods
 	

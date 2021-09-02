@@ -28,6 +28,8 @@ Overview
 			const SurfaceMesh<dimension>& surface,
 			TriangulatedSurfaceBuilder<dimension>& builder
 			);
+	
+		:target:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier_1a7321eca487a44f27eafbc00849d94016>`(TriangulatedSurfaceModifier&& other);
 
 		// methods
 	
