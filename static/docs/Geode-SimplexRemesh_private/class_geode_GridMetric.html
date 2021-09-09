@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::Metric&lt;3&gt;" href="class_geode_Metric.html" />
+    <link rel="next" title="template class geode::Metric" href="class_geode_Metric.html" />
     <link rel="prev" title="template class geode::ConstantMetric" href="class_geode_ConstantMetric.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -42,7 +42,7 @@
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;grid_metric.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="nl">GridMetric</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Metric-2.html#doxid-classgeode-1-1-metric"><span class="std std-ref">geode::Metric</span></a><span></span>
+<span class="k">class</span> <span class="nl">GridMetric</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Metric.html#doxid-classgeode-1-1-metric"><span class="std std-ref">geode::Metric</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
@@ -57,7 +57,11 @@
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-metric-1a3d859b89fd5721278adbf6fe73abc1eb"><span></span><span class="n">paint_mesh</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span> <span class="kt">double</span> <span class="n">metric</span><span class="p">);</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-metric-1a94563bab03599f03c57bf4e91c582597"><span></span><span class="n">paint_mesh</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span> <span class="kt">double</span> <span class="n">metric</span><span class="p">);</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-metric-1a2e294edadd90e50c7919402a0837f34a"><span></span><span class="n">optimize</span></span><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">gradation</span><span class="p">);</span>
-<span class="p">};</span></pre>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRepGridMetric.html#doxid-classgeode-1-1-b-rep-grid-metric"><span class="std std-ref">BRepGridMetric</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>

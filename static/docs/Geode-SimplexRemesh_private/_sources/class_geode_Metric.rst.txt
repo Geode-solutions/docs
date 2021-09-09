@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::Metric<3>
-.. _doxid-classgeode_1_1_metric_3_013_01_4:
+.. index:: pair: class; geode::Metric
+.. _doxid-classgeode_1_1_metric:
 
-template class geode::Metric<3>
-===============================
+template class geode::Metric
+============================
 
 .. toctree::
 	:hidden:
@@ -15,14 +15,18 @@ template class geode::Metric<3>
 
 	#include <metric.h>
 	
-	template <>
-	class Metric<3>: public :ref:`geode::MetricBase<doxid-classgeode_1_1_metric_base>`
+	template <index_t dimension>
+	class Metric: public :ref:`geode::MetricBase<doxid-classgeode_1_1_metric_base>`
 	{
-	public:
-		// methods
-	
-		double :target:`tetra_metric<doxid-classgeode_1_1_metric_3_013_01_4_1a10bd72ac97a2cae5f4c33553b8cc09bd>`(const Tetra& tetra) const;
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`;
+
+	template <index_t dimension>
+	class :ref:`GridMetric<doxid-classgeode_1_1_grid_metric>`;
 
 Inherited Members
 -----------------
