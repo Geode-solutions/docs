@@ -175,6 +175,12 @@ export default {
         cpp: "<a href='/opengeode?page=class_geode_TetrahedralSolid.html'><code>TetrahedralSolid3D</code></a><br/><a href='/opengeode?page=class_geode_HybridSolid.html'><code>HybridSolid3D</code></a>",
         in: false,
         out: true
+      },
+      {
+        extension: '.vti (ascii only)',
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a><br/><a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a>",
+        in: false,
+        out: true
       }
     ],
     formats_geosciencesio: [
