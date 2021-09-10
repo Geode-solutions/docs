@@ -20,10 +20,7 @@ class geode::detail::OBJInput
 	public:
 		// construction
 	
-		:target:`OBJInput<doxid-classgeode_1_1detail_1_1_o_b_j_input_1a33850ced838c39fbbf162aa92c4fd422>`(
-			PolygonalSurface<3>& surface,
-			absl::string_view filename
-			);
+		:target:`OBJInput<doxid-classgeode_1_1detail_1_1_o_b_j_input_1a33850ced838c39fbbf162aa92c4fd422>`(PolygonalSurface<3>& surface, absl::string_view filename);
 
 		// methods
 	

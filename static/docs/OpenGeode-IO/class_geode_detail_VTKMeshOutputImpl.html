@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>template class geode::detail::VTPOutputImpl &#8212; Python  documentation</title>
+    <title>template class geode::detail::VTKMeshOutputImpl &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::detail::VTPPolygonalOutput" href="class_geode_detail_VTPPolygonalOutput.html" />
-    <link rel="prev" title="class geode::detail::VTPInput" href="class_geode_detail_VTPInput.html" />
+    <link rel="next" title="template class geode::detail::VTKOutputImpl" href="class_geode_detail_VTKOutputImpl.html" />
+    <link rel="prev" title="template class geode::detail::VTKInputImpl" href="class_geode_detail_VTKInputImpl.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,20 +34,21 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="template-class-geode-detail-vtpoutputimpl">
-<span id="doxid-classgeode-1-1detail-1-1-v-t-p-output-impl"></span><span id="index-0"></span><h1>template class geode::detail::VTPOutputImpl</h1>
+  <div class="section" id="template-class-geode-detail-vtkmeshoutputimpl">
+<span id="doxid-classgeode-1-1detail-1-1-v-t-k-mesh-output-impl"></span><span id="index-0"></span><h1>template class geode::detail::VTKMeshOutputImpl</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vtp_output_impl.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vtk_mesh_output.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Mesh</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="nl">VTPOutputImpl</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_detail_VTKMeshOutputImpl.html#doxid-classgeode-1-1detail-1-1-v-t-k-mesh-output-impl"><span class="std std-ref">geode::detail::VTKMeshOutputImpl</span></a><span></span>
+<span class="k">class</span> <span class="nl">VTKMeshOutputImpl</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_detail_VTKOutputImpl.html#doxid-classgeode-1-1detail-1-1-v-t-k-output-impl"><span class="std std-ref">geode::detail::VTKOutputImpl</span></a><span></span>
 <span class="p">{</span>
-<span class="k">public</span><span class="o">:</span>
-    <span class="c1">// construction</span>
+<span class="p">};</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-output-impl-1a9d3f7f8651954d9e30c9844db7a3d83a"><span></span><span class="n">VTPOutputImpl</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="n">Mesh</span><span class="o">&amp;</span> <span class="n">polygonal_surface</span><span class="p">);</span>
-<span class="p">};</span></pre>
+<span class="c1">// direct descendants</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Mesh</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTPOutputImpl.html#doxid-classgeode-1-1detail-1-1-v-t-p-output-impl"><span class="std std-ref">VTPOutputImpl</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
@@ -71,7 +72,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_detail_VTPOutputImpl.rst.txt"
+      <a href="_sources/class_geode_detail_VTKMeshOutputImpl.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

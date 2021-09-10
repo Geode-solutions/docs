@@ -20,10 +20,7 @@ class geode::detail::VTUHybridInput
 	public:
 		// construction
 	
-		:target:`VTUHybridInput<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_input_1a48ff2bdbe1747c67621af5a5fad0aeb3>`(
-			HybridSolid<3>& solid,
-			absl::string_view filename
-			);
+		:target:`VTUHybridInput<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_input_1a48ff2bdbe1747c67621af5a5fad0aeb3>`(HybridSolid<3>& solid, absl::string_view filename);
 
 		// methods
 	

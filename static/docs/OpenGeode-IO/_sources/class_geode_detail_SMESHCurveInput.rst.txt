@@ -20,10 +20,7 @@ class geode::detail::SMESHCurveInput
 	public:
 		// construction
 	
-		:target:`SMESHCurveInput<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_curve_input_1af2b6732445c9fd2074ddf5f8e8e9d230>`(
-			EdgedCurve<3>& curve,
-			absl::string_view filename
-			);
+		:target:`SMESHCurveInput<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_curve_input_1af2b6732445c9fd2074ddf5f8e8e9d230>`(EdgedCurve<3>& curve, absl::string_view filename);
 
 		// methods
 	

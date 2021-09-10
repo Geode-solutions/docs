@@ -20,10 +20,7 @@ class geode::detail::SVGInput
 	public:
 		// construction
 	
-		:target:`SVGInput<doxid-classgeode_1_1detail_1_1_s_v_g_input_1a9a5daf7939095a081039d03247692cb5>`(
-			Section& section,
-			absl::string_view filename
-			);
+		:target:`SVGInput<doxid-classgeode_1_1detail_1_1_s_v_g_input_1a9a5daf7939095a081039d03247692cb5>`(Section& section, absl::string_view filename);
 
 		// methods
 	

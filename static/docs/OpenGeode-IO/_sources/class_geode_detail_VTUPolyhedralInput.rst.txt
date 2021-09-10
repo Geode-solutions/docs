@@ -20,10 +20,7 @@ class geode::detail::VTUPolyhedralInput
 	public:
 		// construction
 	
-		:target:`VTUPolyhedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_polyhedral_input_1a7421e08e5d1011ba2c76b9a8d235e07b>`(
-			PolyhedralSolid<3>& solid,
-			absl::string_view filename
-			);
+		:target:`VTUPolyhedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_polyhedral_input_1a7421e08e5d1011ba2c76b9a8d235e07b>`(PolyhedralSolid<3>& solid, absl::string_view filename);
 
 		// methods
 	

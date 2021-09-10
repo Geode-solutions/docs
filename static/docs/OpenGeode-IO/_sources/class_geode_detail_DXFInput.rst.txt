@@ -20,10 +20,7 @@ class geode::detail::DXFInput
 	public:
 		// construction
 	
-		:target:`DXFInput<doxid-classgeode_1_1detail_1_1_d_x_f_input_1a05ca8bc66874fb1578f40bfcbbbaae3b>`(
-			PolygonalSurface<3>& surface,
-			absl::string_view filename
-			);
+		:target:`DXFInput<doxid-classgeode_1_1detail_1_1_d_x_f_input_1a05ca8bc66874fb1578f40bfcbbbaae3b>`(PolygonalSurface<3>& surface, absl::string_view filename);
 
 		// methods
 	

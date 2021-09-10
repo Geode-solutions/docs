@@ -24,7 +24,9 @@ namespace geode::detail
 	class_geode_detail_STLOutput.rst
 	class_geode_detail_SVGInput.rst
 	class_geode_detail_TriangleOutput.rst
+	class_geode_detail_VTIRegularGridOutput.rst
 	class_geode_detail_VTKInputImpl.rst
+	class_geode_detail_VTKMeshOutputImpl.rst
 	class_geode_detail_VTKOutputImpl.rst
 	class_geode_detail_VTPEdgedCurveOutput.rst
 	class_geode_detail_VTPInput.rst
@@ -72,8 +74,14 @@ namespace geode::detail
 	class :ref:`SVGInput<doxid-classgeode_1_1detail_1_1_s_v_g_input>`;
 	class :ref:`TriangleOutput<doxid-classgeode_1_1detail_1_1_triangle_output>`;
 
+	template <index_t dimension>
+	class :ref:`VTIRegularGridOutput<doxid-classgeode_1_1detail_1_1_v_t_i_regular_grid_output>`;
+
 	template <typename Mesh, typename MeshBuilder>
 	class :ref:`VTKInputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_input_impl>`;
+
+	template <typename Mesh>
+	class :ref:`VTKMeshOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_mesh_output_impl>`;
 
 	template <typename Mesh>
 	class :ref:`VTKOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_output_impl>`;

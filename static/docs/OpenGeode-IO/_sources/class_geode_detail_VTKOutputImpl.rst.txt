@@ -29,4 +29,4 @@ template class geode::detail::VTKOutputImpl
 	// direct descendants
 
 	template <typename Mesh>
-	class :ref:`VTPOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_p_output_impl>`;
+	class :ref:`VTKMeshOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_mesh_output_impl>`;
