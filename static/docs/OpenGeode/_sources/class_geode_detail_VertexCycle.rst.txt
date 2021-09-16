@@ -32,4 +32,5 @@ template class geode::detail::VertexCycle
 		const Container& :target:`vertices<doxid-classgeode_1_1detail_1_1_vertex_cycle_1a18a7f2f3b45466cdad2ec87efc41f38e>`() const;
 		bool :target:`operator ==<doxid-classgeode_1_1detail_1_1_vertex_cycle_1a448ca005a69d48c22299d9fb9f0c8308>` (const VertexCycle& other) const;
 		bool :target:`operator !=<doxid-classgeode_1_1detail_1_1_vertex_cycle_1aeb892b9b372365eff453bde720747940>` (const VertexCycle& other) const;
+		bool :target:`operator <<doxid-classgeode_1_1detail_1_1_vertex_cycle_1affb6ee33bf0aff0fddc036a2f2c9dc92>` (const VertexCycle& other) const;
 	};
