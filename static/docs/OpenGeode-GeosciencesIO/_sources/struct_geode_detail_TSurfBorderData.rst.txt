@@ -24,8 +24,5 @@ struct geode::detail::TSurfBorderData
 
 		// construction
 	
-		:target:`TSurfBorderData<doxid-structgeode_1_1detail_1_1_t_surf_border_data_1a29bd855b67abb23b6a36b05a70128b45>`(
-			index_t corner_id_in,
-			index_t next_id_in
-			);
+		:target:`TSurfBorderData<doxid-structgeode_1_1detail_1_1_t_surf_border_data_1a29bd855b67abb23b6a36b05a70128b45>`(index_t corner_id_in, index_t next_id_in);
 	};

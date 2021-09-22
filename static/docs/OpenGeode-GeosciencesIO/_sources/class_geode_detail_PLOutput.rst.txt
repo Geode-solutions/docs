@@ -20,10 +20,7 @@ class geode::detail::PLOutput
 	public:
 		// construction
 	
-		:target:`PLOutput<doxid-classgeode_1_1detail_1_1_p_l_output_1ae39aa3a6b458be885f530fad3300d03d>`(
-			const geode::EdgedCurve<3>& edge_curve,
-			absl::string_view filename
-			);
+		:target:`PLOutput<doxid-classgeode_1_1detail_1_1_p_l_output_1ae39aa3a6b458be885f530fad3300d03d>`(const geode::EdgedCurve<3>& edge_curve, absl::string_view filename);
 
 		// methods
 	

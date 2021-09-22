@@ -20,10 +20,7 @@ class geode::detail::MLOutputBRep
 	public:
 		// construction
 	
-		:target:`MLOutputBRep<doxid-classgeode_1_1detail_1_1_m_l_output_b_rep_1a4a666d167470ec76bce184980e0bd316>`(
-			const BRep& brep,
-			absl::string_view filename
-			);
+		:target:`MLOutputBRep<doxid-classgeode_1_1detail_1_1_m_l_output_b_rep_1a4a666d167470ec76bce184980e0bd316>`(const BRep& brep, absl::string_view filename);
 
 		// methods
 	

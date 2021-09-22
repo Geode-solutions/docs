@@ -57,46 +57,21 @@ namespace geode::detail
 	// global functions
 
 	void opengeode_geosciencesio_geosciences_api :target:`initialize_geosciences_io<doxid-namespacegeode_1_1detail_1aa3f5ecadb7bedfd3a78c5ab7bc0e6bd2>`();
-
-	bool :target:`string_starts_with<doxid-namespacegeode_1_1detail_1a0c325d7389879a3e8e5f9376bb83bdeb>`(
-		absl::string_view string,
-		absl::string_view check
-		);
-
-	void :target:`check_keyword<doxid-namespacegeode_1_1detail_1a596dbdeda9c569dcc2a784e6b9c26255>`(
-		std::ifstream& file,
-		absl::string_view keyword
-		);
-
+	bool :target:`string_starts_with<doxid-namespacegeode_1_1detail_1a0c325d7389879a3e8e5f9376bb83bdeb>`(absl::string_view string, absl::string_view check);
+	void :target:`check_keyword<doxid-namespacegeode_1_1detail_1a596dbdeda9c569dcc2a784e6b9c26255>`(std::ifstream& file, absl::string_view keyword);
 	std::string :target:`read_name<doxid-namespacegeode_1_1detail_1a7678ddeb1406c17479dbac5f60fcceff>`(std::istringstream& iss);
 	:ref:`HeaderData<doxid-structgeode_1_1detail_1_1_header_data>` :target:`read_header<doxid-namespacegeode_1_1detail_1a1cc9507dbb47f49cb5ec6f69f8d3de5e>`(std::ifstream& file);
-
-	void :target:`write_header<doxid-namespacegeode_1_1detail_1a4d9397ca55db86aea00229562063ad69>`(
-		std::ofstream& file,
-		const :ref:`HeaderData<doxid-structgeode_1_1detail_1_1_header_data>`& data
-		);
-
+	void :target:`write_header<doxid-namespacegeode_1_1detail_1a4d9397ca55db86aea00229562063ad69>`(std::ofstream& file, const :ref:`HeaderData<doxid-structgeode_1_1detail_1_1_header_data>`& data);
 	:ref:`CRSData<doxid-structgeode_1_1detail_1_1_c_r_s_data>` :target:`read_CRS<doxid-namespacegeode_1_1detail_1a8e6b125235321742b86b957b12b971e7>`(std::ifstream& file);
-
-	void :target:`write_CRS<doxid-namespacegeode_1_1detail_1aa24c63bcac7f660cd96dde66babb7857>`(
-		std::ofstream& file,
-		const :ref:`CRSData<doxid-structgeode_1_1detail_1_1_c_r_s_data>`& data
-		);
-
-	void :target:`write_prop_header<doxid-namespacegeode_1_1detail_1a75d75e311a3b94c629e4046334540e55>`(
-		std::ofstream& file,
-		const :ref:`PropHeaderData<doxid-structgeode_1_1detail_1_1_prop_header_data>`& data
-		);
+	void :target:`write_CRS<doxid-namespacegeode_1_1detail_1aa24c63bcac7f660cd96dde66babb7857>`(std::ofstream& file, const :ref:`CRSData<doxid-structgeode_1_1detail_1_1_c_r_s_data>`& data);
+	void :target:`write_prop_header<doxid-namespacegeode_1_1detail_1a75d75e311a3b94c629e4046334540e55>`(std::ofstream& file, const :ref:`PropHeaderData<doxid-structgeode_1_1detail_1_1_prop_header_data>`& data);
 
 	void :target:`write_property_class_header<doxid-namespacegeode_1_1detail_1a9e5f4ed56bb768a1face412316691339>`(
 		std::ofstream& file,
 		const :ref:`PropClassHeaderData<doxid-structgeode_1_1detail_1_1_prop_class_header_data>`& data
 		);
 
-	std::string :target:`goto_keyword<doxid-namespacegeode_1_1detail_1a51c6af2c945d7fcdbef97909363b6020>`(
-		std::ifstream& file,
-		absl::string_view word
-		);
+	std::string :target:`goto_keyword<doxid-namespacegeode_1_1detail_1a51c6af2c945d7fcdbef97909363b6020>`(std::ifstream& file, absl::string_view word);
 
 	std::string :target:`goto_keywords<doxid-namespacegeode_1_1detail_1ae071b9b035a199896e2b372dfab940b3>`(
 		std::ifstream& file,

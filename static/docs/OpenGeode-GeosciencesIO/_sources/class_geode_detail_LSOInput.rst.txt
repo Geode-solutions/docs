@@ -20,10 +20,7 @@ class geode::detail::LSOInput
 	public:
 		// construction
 	
-		:target:`LSOInput<doxid-classgeode_1_1detail_1_1_l_s_o_input_1a7b7abeab070df46ce041857e6c3f473e>`(
-			StructuralModel& structural_model,
-			absl::string_view filename
-			);
+		:target:`LSOInput<doxid-classgeode_1_1detail_1_1_l_s_o_input_1a7b7abeab070df46ce041857e6c3f473e>`(StructuralModel& structural_model, absl::string_view filename);
 
 		// methods
 	
