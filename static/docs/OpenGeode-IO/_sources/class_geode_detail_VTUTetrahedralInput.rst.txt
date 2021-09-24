@@ -20,10 +20,7 @@ class geode::detail::VTUTetrahedralInput
 	public:
 		// construction
 	
-		:target:`VTUTetrahedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_tetrahedral_input_1a3ca2960d34d62687f19b226539f8bd38>`(
-			TetrahedralSolid<3>& solid,
-			absl::string_view filename
-			);
+		:target:`VTUTetrahedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_tetrahedral_input_1a3ca2960d34d62687f19b226539f8bd38>`(TetrahedralSolid<3>& solid, absl::string_view filename);
 
 		// methods
 	

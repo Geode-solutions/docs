@@ -1,0 +1,28 @@
+.. index:: pair: class; geode::detail::VTIRegularGridOutput
+.. _doxid-classgeode_1_1detail_1_1_v_t_i_regular_grid_output:
+
+template class geode::detail::VTIRegularGridOutput
+==================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vti_regular_grid_output.h>
+	
+	template <index_t dimension>
+	class VTIRegularGridOutput: public RegularGridOutput< dimension >
+	{
+	public:
+		// construction
+	
+		:target:`VTIRegularGridOutput<doxid-classgeode_1_1detail_1_1_v_t_i_regular_grid_output_1a0cb8e2a78a4faf0e54997fa620b42d97>`(
+			const RegularGrid<dimension>& grid,
+			absl::string_view filename
+			);
+	};

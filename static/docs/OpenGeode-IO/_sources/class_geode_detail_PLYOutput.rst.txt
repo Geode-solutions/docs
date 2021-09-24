@@ -20,10 +20,7 @@ class geode::detail::PLYOutput
 	public:
 		// construction
 	
-		:target:`PLYOutput<doxid-classgeode_1_1detail_1_1_p_l_y_output_1a1b252569d0253bf2d4ab13b2d6575089>`(
-			const PolygonalSurface<3>& surface,
-			absl::string_view filename
-			);
+		:target:`PLYOutput<doxid-classgeode_1_1detail_1_1_p_l_y_output_1a1b252569d0253bf2d4ab13b2d6575089>`(const PolygonalSurface<3>& surface, absl::string_view filename);
 
 		// methods
 	

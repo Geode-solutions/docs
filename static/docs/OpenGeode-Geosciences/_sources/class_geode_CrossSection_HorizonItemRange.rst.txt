@@ -22,10 +22,7 @@ class geode::CrossSection::HorizonItemRange
 	public:
 		// construction
 	
-		:target:`HorizonItemRange<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range_1a0746d98bf6b9ab97dace449fc7980b8c>`(
-			const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-			const Horizon2D& horizon
-			);
+		:target:`HorizonItemRange<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range_1a0746d98bf6b9ab97dace449fc7980b8c>`(const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section, const Horizon2D& horizon);
 
 		// methods
 	

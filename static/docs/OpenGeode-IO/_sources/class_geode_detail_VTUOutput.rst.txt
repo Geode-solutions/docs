@@ -20,10 +20,7 @@ class geode::detail::VTUOutput
 	public:
 		// construction
 	
-		:target:`VTUOutput<doxid-classgeode_1_1detail_1_1_v_t_u_output_1a7bcbbb9c1ee330fbdb3bbb37515198f0>`(
-			const TetrahedralSolid<3>& solid,
-			absl::string_view filename
-			);
+		:target:`VTUOutput<doxid-classgeode_1_1detail_1_1_v_t_u_output_1a7bcbbb9c1ee330fbdb3bbb37515198f0>`(const TetrahedralSolid<3>& solid, absl::string_view filename);
 
 		// methods
 	

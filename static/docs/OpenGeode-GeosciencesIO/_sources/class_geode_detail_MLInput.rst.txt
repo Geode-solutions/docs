@@ -20,10 +20,7 @@ class geode::detail::MLInput
 	public:
 		// construction
 	
-		:target:`MLInput<doxid-classgeode_1_1detail_1_1_m_l_input_1a29f047ebf90a71883c9d6b94409d57eb>`(
-			StructuralModel& structural_model,
-			absl::string_view filename
-			);
+		:target:`MLInput<doxid-classgeode_1_1detail_1_1_m_l_input_1a29f047ebf90a71883c9d6b94409d57eb>`(StructuralModel& structural_model, absl::string_view filename);
 
 		// methods
 	

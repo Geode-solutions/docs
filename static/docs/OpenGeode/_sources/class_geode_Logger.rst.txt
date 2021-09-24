@@ -26,6 +26,7 @@ Custom OpenGeode logger. Can be used with several levels: :ref:`Logger::info <do
 
 		// methods
 	
+		static :ref:`Level<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8d>` :target:`level<doxid-classgeode_1_1_logger_1a25bb7cc8643c079fc8a09c071b31eed0>`();
 		static void :target:`set_level<doxid-classgeode_1_1_logger_1a41985cecb1e201ccef3ca3402623f92d>`(:ref:`Level<doxid-classgeode_1_1_logger_1a9e0b4eaa3d1d9819fd2a58dbcf272f8d>` level);
 	
 		template <typename... Args>

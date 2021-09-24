@@ -20,10 +20,7 @@ class geode::detail::MSHInput
 	public:
 		// construction
 	
-		:target:`MSHInput<doxid-classgeode_1_1detail_1_1_m_s_h_input_1a4e8ba674dc6a15c6bf4f79e14a2de3ca>`(
-			BRep& brep,
-			absl::string_view filename
-			);
+		:target:`MSHInput<doxid-classgeode_1_1detail_1_1_m_s_h_input_1a4e8ba674dc6a15c6bf4f79e14a2de3ca>`(BRep& brep, absl::string_view filename);
 
 		// methods
 	

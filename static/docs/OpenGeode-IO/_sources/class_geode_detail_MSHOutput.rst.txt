@@ -20,10 +20,7 @@ class geode::detail::MSHOutput
 	public:
 		// construction
 	
-		:target:`MSHOutput<doxid-classgeode_1_1detail_1_1_m_s_h_output_1a1d5ecc2c21758a0f4ba26b71989cfa0c>`(
-			const BRep& brep,
-			absl::string_view filename
-			);
+		:target:`MSHOutput<doxid-classgeode_1_1detail_1_1_m_s_h_output_1a1d5ecc2c21758a0f4ba26b71989cfa0c>`(const BRep& brep, absl::string_view filename);
 
 		// methods
 	

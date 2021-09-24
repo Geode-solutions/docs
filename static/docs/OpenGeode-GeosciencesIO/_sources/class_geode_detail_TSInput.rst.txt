@@ -20,10 +20,7 @@ class geode::detail::TSInput
 	public:
 		// construction
 	
-		:target:`TSInput<doxid-classgeode_1_1detail_1_1_t_s_input_1a80173f18903001c3605340a2edc4bb4e>`(
-			TriangulatedSurface<3>& surface,
-			absl::string_view filename
-			);
+		:target:`TSInput<doxid-classgeode_1_1detail_1_1_t_s_input_1a80173f18903001c3605340a2edc4bb4e>`(TriangulatedSurface<3>& surface, absl::string_view filename);
 
 		// methods
 	

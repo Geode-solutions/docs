@@ -9,6 +9,7 @@ namespace geode
 
 	namespace_geode_detail.rst
 	struct_geode_RemeshingData.rst
+	class_geode_BRepGridMetric.rst
 	class_geode_ConstantMetric.rst
 	class_geode_GridMetric.rst
 	class_geode_Metric.rst
@@ -43,17 +44,19 @@ Overview
 
 	// classes
 
+	class :ref:`BRepGridMetric<doxid-classgeode_1_1_b_rep_grid_metric>`;
+
 	template <index_t dimension>
 	class :ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`;
 
 	template <index_t dimension>
 	class :ref:`GridMetric<doxid-classgeode_1_1_grid_metric>`;
 
-	template <>
-	class :ref:`Metric<3><doxid-classgeode_1_1_metric_3_013_01_4>`;
-
 	template <index_t dimension>
 	class :ref:`Metric<doxid-classgeode_1_1_metric>`;
+
+	template <>
+	class :ref:`Metric<3><doxid-classgeode_1_1_metric_3_013_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`MetricBase<doxid-classgeode_1_1_metric_base>`;
@@ -129,11 +132,20 @@ Overview
 		);
 
 	void geode_simplexremesh_line3d_api :target:`remesh_lines<doxid-namespacegeode_1a87f807a48fa6305ad803f88f7af45c99>`(:ref:`BRepRemeshingData<doxid-namespacegeode_1a6b84474111e7872dbfcab4e6e70681bf>`& data);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(Block);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(Block);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a701f6897a4e87db11377f9081ccaa3cf>`(RegularGrid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae5a407c359cdfed3035da2857149c7c4>`(:ref:`GridMetric<doxid-classgeode_1_1_grid_metric>`);
 	void geode_simplexremesh_solid_api :target:`relax_blocks<doxid-namespacegeode_1a796b7a1ae32b584dc8d9fa666b519867>`(BRep& brep);
+
+	void geode_simplexremesh_solid_api :target:`relax_blocks<doxid-namespacegeode_1a3afbfe6a1d15391fbdda6e6ad37a834f>`(
+		BRep& brep,
+		const Metric3D& metric
+		);
+
 	void geode_simplexremesh_solid_api :target:`mesh_blocks<doxid-namespacegeode_1a0d43bee35ff9eb9ab1daa302d8d11a56>`(:ref:`BRepRemeshingData<doxid-namespacegeode_1a6b84474111e7872dbfcab4e6e70681bf>`& data);
 
 	void geode_simplexremesh_solid_api :target:`mesh_block<doxid-namespacegeode_1a9f930fc1157add8bf7851433c187b9f5>`(

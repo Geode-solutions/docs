@@ -20,10 +20,7 @@ class geode::detail::PLYInput
 	public:
 		// construction
 	
-		:target:`PLYInput<doxid-classgeode_1_1detail_1_1_p_l_y_input_1af96c9c1c3b09ea07f954d1f671e143f0>`(
-			PolygonalSurface<3>& surface,
-			absl::string_view filename
-			);
+		:target:`PLYInput<doxid-classgeode_1_1detail_1_1_p_l_y_input_1af96c9c1c3b09ea07f954d1f671e143f0>`(PolygonalSurface<3>& surface, absl::string_view filename);
 
 		// methods
 	

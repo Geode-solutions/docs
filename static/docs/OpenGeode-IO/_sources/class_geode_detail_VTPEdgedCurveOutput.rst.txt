@@ -20,10 +20,7 @@ class geode::detail::VTPEdgedCurveOutput
 	public:
 		// construction
 	
-		:target:`VTPEdgedCurveOutput<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output_1ab58020ad3a67c52ceb535a74c196ef16>`(
-			const EdgedCurve<3>& curve,
-			absl::string_view filename
-			);
+		:target:`VTPEdgedCurveOutput<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output_1ab58020ad3a67c52ceb535a74c196ef16>`(const EdgedCurve<3>& curve, absl::string_view filename);
 
 		// methods
 	

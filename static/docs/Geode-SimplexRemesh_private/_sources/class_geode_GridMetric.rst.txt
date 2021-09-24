@@ -33,6 +33,10 @@ Grid metric implementation
 		void :target:`optimize<doxid-classgeode_1_1_grid_metric_1a2e294edadd90e50c7919402a0837f34a>`(double gradation);
 	};
 
+	// direct descendants
+
+	class :ref:`BRepGridMetric<doxid-classgeode_1_1_b_rep_grid_metric>`;
+
 Inherited Members
 -----------------
 

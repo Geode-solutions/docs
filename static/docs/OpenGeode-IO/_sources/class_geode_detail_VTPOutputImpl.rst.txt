@@ -16,15 +16,12 @@ template class geode::detail::VTPOutputImpl
 	#include <vtp_output_impl.h>
 	
 	template <typename Mesh>
-	class VTPOutputImpl: public :ref:`geode::detail::VTKOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_output_impl>`
+	class VTPOutputImpl: public :ref:`geode::detail::VTKMeshOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_mesh_output_impl>`
 	{
 	public:
 		// construction
 	
-		:target:`VTPOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_p_output_impl_1a9d3f7f8651954d9e30c9844db7a3d83a>`(
-			absl::string_view filename,
-			const Mesh& polygonal_surface
-			);
+		:target:`VTPOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_p_output_impl_1a9d3f7f8651954d9e30c9844db7a3d83a>`(absl::string_view filename, const Mesh& polygonal_surface);
 	};
 
 Inherited Members

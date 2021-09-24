@@ -20,10 +20,7 @@ class geode::detail::VTPInput
 	public:
 		// construction
 	
-		:target:`VTPInput<doxid-classgeode_1_1detail_1_1_v_t_p_input_1a78ba86ab1123355e756a80c16fef1da2>`(
-			PolygonalSurface<3>& surface,
-			absl::string_view filename
-			);
+		:target:`VTPInput<doxid-classgeode_1_1detail_1_1_v_t_p_input_1a78ba86ab1123355e756a80c16fef1da2>`(PolygonalSurface<3>& surface, absl::string_view filename);
 
 		// methods
 	

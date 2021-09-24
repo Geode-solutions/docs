@@ -20,10 +20,7 @@ class geode::detail::WLInput
 	public:
 		// construction
 	
-		:target:`WLInput<doxid-classgeode_1_1detail_1_1_w_l_input_1ac2b33534c1c8e5df42b6781fbf7bcf1a>`(
-			EdgedCurve<3>& curve,
-			absl::string_view filename
-			);
+		:target:`WLInput<doxid-classgeode_1_1detail_1_1_w_l_input_1ac2b33534c1c8e5df42b6781fbf7bcf1a>`(EdgedCurve<3>& curve, absl::string_view filename);
 
 		// methods
 	

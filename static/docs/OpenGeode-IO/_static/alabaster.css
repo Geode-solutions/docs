@@ -5,7 +5,7 @@
 body {
     font-family: Roboto;
     font-size: 17px;
-    background-color: #fafafa;
+    background-color: white;
     color: #000;
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ hr {
 }
 
 div.body {
-    background-color: #fafafa;
+    background-color: white;
     color: #3E4349;
     padding: 0 30px 0 30px;
 }
@@ -251,7 +251,7 @@ div.admonition p.last {
 }
 
 div.highlight {
-    background-color: #fafafa;
+    background-color: white;
 }
 
 dt:target, .highlight {
@@ -564,7 +564,7 @@ a:hover tt, a:hover code {
 
     div.documentwrapper {
         float: none;
-        background: #fafafa;
+        background: white;
     }
 
     div.sphinxsidebar {
@@ -579,7 +579,7 @@ a:hover tt, a:hover code {
 
     div.sphinxsidebar h3, div.sphinxsidebar h4, div.sphinxsidebar p,
     div.sphinxsidebar h3 a {
-        color: #fafafa;
+        color: white;
     }
 
     div.sphinxsidebar a {
