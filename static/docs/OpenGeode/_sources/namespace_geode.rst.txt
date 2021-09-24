@@ -783,6 +783,7 @@ Overview
 
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> opengeode_basic_api :target:`old2new_permutation<doxid-namespacegeode_1ab1356e215313d6b14a021c9a6b1c01cd>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 	constexpr unsigned char :target:`operator"" _uc<doxid-namespacegeode_1af0d0d274032ba787172bd59efededf50>` (unsigned long long arg);
+	std::string :target:`to_string<doxid-namespacegeode_1a6ee93ebf942d8596cd314e424b79a128>`(absl::string_view view);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a704add8ff33f82fa87b376794c8183d1>`(:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a713615f1e1f632a857fbbda376b9b832>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
