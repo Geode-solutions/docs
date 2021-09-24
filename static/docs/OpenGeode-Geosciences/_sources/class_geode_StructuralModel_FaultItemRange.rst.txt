@@ -22,10 +22,7 @@ class geode::StructuralModel::FaultItemRange
 	public:
 		// construction
 	
-		:target:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range_1a7a9ac9acf1d3d844d94a983417ea0dcc>`(
-			const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
-			const Fault3D& fault
-			);
+		:target:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range_1a7a9ac9acf1d3d844d94a983417ea0dcc>`(const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model, const Fault3D& fault);
 
 		// methods
 	

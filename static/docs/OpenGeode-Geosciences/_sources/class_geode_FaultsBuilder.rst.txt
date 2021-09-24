@@ -28,8 +28,5 @@ template class geode::FaultsBuilder
 			typename :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>::FAULT_TYPE type
 			);
 	
-		void :target:`set_fault_name<doxid-classgeode_1_1_faults_builder_1a39a794ac51ad0db779feb3ed69991746>`(
-			const uuid& id,
-			absl::string_view name
-			);
+		void :target:`set_fault_name<doxid-classgeode_1_1_faults_builder_1a39a794ac51ad0db779feb3ed69991746>`(const uuid& id, absl::string_view name);
 	};

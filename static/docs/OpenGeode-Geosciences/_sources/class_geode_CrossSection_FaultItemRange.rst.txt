@@ -22,10 +22,7 @@ class geode::CrossSection::FaultItemRange
 	public:
 		// construction
 	
-		:target:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range_1a3d31b5298c581562dfc000eb86542f0e>`(
-			const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-			const Fault2D& fault
-			);
+		:target:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range_1a3d31b5298c581562dfc000eb86542f0e>`(const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section, const Fault2D& fault);
 
 		// methods
 	

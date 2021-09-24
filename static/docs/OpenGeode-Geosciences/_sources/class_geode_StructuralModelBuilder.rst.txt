@@ -35,12 +35,7 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 	
 		const uuid& :target:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a69e6317754624bf944beb6d2c25172af>`();
 		const uuid& :target:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a217c78dec273295715bcf273df22a1ce>`(typename Fault3D::FAULT_TYPE type);
-	
-		index_t :target:`add_surface_in_fault<doxid-classgeode_1_1_structural_model_builder_1a8165157896d097edaac0347bfcc0d77c>`(
-			const Surface3D& surface,
-			const Fault3D& fault
-			);
-	
+		index_t :target:`add_surface_in_fault<doxid-classgeode_1_1_structural_model_builder_1a8165157896d097edaac0347bfcc0d77c>`(const Surface3D& surface, const Fault3D& fault);
 		void :target:`remove_fault<doxid-classgeode_1_1_structural_model_builder_1a50eecd5acdcea94ce012b6ef5be8f570>`(const Fault3D& fault);
 		const uuid& :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a59d799086e367948498737af391802aa>`();
 		const uuid& :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a3fa06395f298cf9a5fefb73eb2466b7e>`(typename Horizon3D::HORIZON_TYPE type);
