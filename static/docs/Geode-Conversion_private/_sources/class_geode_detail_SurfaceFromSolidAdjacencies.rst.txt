@@ -21,10 +21,12 @@ class geode::detail::SurfaceFromSolidAdjacencies
 		// typedefs
 	
 		typedef absl::InlinedVector<PolyhedronFacet, 2> :target:`polyhedra_exported_attribute_type<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies_1abdb7d938e633199f333fc112c50a4f1b>`;
+		typedef index_t :target:`solid_vertex_attribute_type<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies_1aa0c61d357726a85cb8f17b63c1cb41dc>`;
 
 		// fields
 	
 		static constexpr auto :target:`polyhedra_exported_attribute_name<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies_1a4ae5e2584ffb8f0cd7b8d180c15f3829>` =                 "polyhedra_exported";
+		static constexpr auto :target:`solid_vertex_attribute_name<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies_1ac1963fcbcafef5705f964cded121974d>` = "solid_vertex";
 
 		// construction
 	
@@ -32,7 +34,5 @@ class geode::detail::SurfaceFromSolidAdjacencies
 
 		// methods
 	
-		void :target:`build<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies_1a5aeca5eced2c5c70246d54bc2df3ac50>`();
-		std::unique_ptr<SurfaceMesh3D> :target:`result<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies_1aa5567fb08b6be5e1958ec08753937f2e>`();
-		absl::flat_hash_map<index_t, index_t> :target:`mapping<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies_1a267b3e5f6f32482b053475d930243382>`();
+		std::unique_ptr<SurfaceMesh3D> :target:`build<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies_1ac340b1fbc025bf9677afc2530b5543ee>`();
 	};
