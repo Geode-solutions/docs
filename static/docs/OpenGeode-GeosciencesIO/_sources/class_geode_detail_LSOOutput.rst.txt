@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::detail::LSOOutput
+.. _doxid-classgeode_1_1detail_1_1_l_s_o_output:
+
+class geode::detail::LSOOutput
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <lso_output.h>
+	
+	class LSOOutput: public StructuralModelOutput
+	{
+	public:
+		// construction
+	
+		:target:`LSOOutput<doxid-classgeode_1_1detail_1_1_l_s_o_output_1ab14b682f69d9c1b34ca32045db48f82b>`(const StructuralModel& structural_model, absl::string_view filename);
+
+		// methods
+	
+		void :target:`write<doxid-classgeode_1_1detail_1_1_l_s_o_output_1a39ef596c4f86d0dbe8f3e1351a4fb9d3>`() const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_l_s_o_output_1a078deb91fcb89937cf3fb7ee16bb4cf9>`();
+	};

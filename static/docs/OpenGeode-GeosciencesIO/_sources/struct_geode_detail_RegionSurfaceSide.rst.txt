@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::detail::RegionSurfaceSide
+.. _doxid-structgeode_1_1detail_1_1_region_surface_side:
+
+struct geode::detail::RegionSurfaceSide
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <gocad_common.h>
+	
+	struct RegionSurfaceSide
+	{
+		// fields
+	
+		absl::flat_hash_map<uuid, bool> :target:`universe_surface_sides<doxid-structgeode_1_1detail_1_1_region_surface_side_1a5e2c9599809c0f90d42b342cde1eac88>`;
+		absl::flat_hash_map<std::pair<uuid, uuid>, bool> :target:`regions_surface_sides<doxid-structgeode_1_1detail_1_1_region_surface_side_1a10febb3fdc94dbcab741a0f90545746c>`;
+	};

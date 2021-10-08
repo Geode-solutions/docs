@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>struct geode::detail::TSurfBorderData &#8212; Python  documentation</title>
+    <title>struct geode::detail::RegionSurfaceSide &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct geode::detail::TSurfData" href="struct_geode_detail_TSurfData.html" />
-    <link rel="prev" title="struct geode::detail::RegionSurfaceSide" href="struct_geode_detail_RegionSurfaceSide.html" />
+    <link rel="next" title="struct geode::detail::TSurfBorderData" href="struct_geode_detail_TSurfBorderData.html" />
+    <link rel="prev" title="struct geode::detail::PropHeaderData" href="struct_geode_detail_PropHeaderData.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,22 +34,18 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="struct-geode-detail-tsurfborderdata">
-<span id="doxid-structgeode-1-1detail-1-1-t-surf-border-data"></span><span id="index-0"></span><h1>struct geode::detail::TSurfBorderData</h1>
+  <div class="section" id="struct-geode-detail-regionsurfaceside">
+<span id="doxid-structgeode-1-1detail-1-1-region-surface-side"></span><span id="index-0"></span><h1>struct geode::detail::RegionSurfaceSide</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;gocad_common.h&gt;</span><span class="cp"></span>
 
-<span class="k">struct</span> <span class="n">TSurfBorderData</span>
+<span class="k">struct</span> <span class="n">RegionSurfaceSide</span>
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-border-data-1aa4ee38b7bc6f1602d3274d23312ea1e2"><span></span><span class="n">corner_id</span></span><span></span><span class="p">;</span>
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-border-data-1aef6969e22d5641f4ed417c4c205a34a1"><span></span><span class="n">next_id</span></span><span></span><span class="p">;</span>
-
-    <span class="c1">// construction</span>
-
-    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-t-surf-border-data-1a29bd855b67abb23b6a36b05a70128b45"><span></span><span class="n">TSurfBorderData</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">corner_id_in</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">next_id_in</span><span class="p">);</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-region-surface-side-1a5e2c9599809c0f90d42b342cde1eac88"><span></span><span class="n">universe_surface_sides</span></span><span></span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="n">uuid</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1detail-1-1-region-surface-side-1a10febb3fdc94dbcab741a0f90545746c"><span></span><span class="n">regions_surface_sides</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -67,7 +63,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/struct_geode_detail_TSurfBorderData.rst.txt"
+      <a href="_sources/struct_geode_detail_RegionSurfaceSide.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
