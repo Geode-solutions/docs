@@ -266,6 +266,7 @@ Overview
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`TriangulatedSurfaceOutput<doxid-classgeode_1_1_triangulated_surface_output>`<dimension>, const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>&, absl::string_view> :target:`TriangulatedSurfaceOutputFactory<doxid-namespacegeode_1aa253b5861a39149d45a53b20049138f4>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`VertexSetInput<doxid-classgeode_1_1_vertex_set_input>`, :ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`&, absl::string_view> :target:`VertexSetInputFactory<doxid-namespacegeode_1afd6e9c5abc46c3dc7493bd6a4cbb91f9>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`, const :ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`&, absl::string_view> :target:`VertexSetOutputFactory<doxid-namespacegeode_1a04db025c8b6b885dc80e807cca276096>`;
+	typedef :ref:`uuid<doxid-structgeode_1_1uuid>` :target:`uuid_from_conversion_attribute_type<doxid-namespacegeode_1acf1a636803ffb21a84003a8d351c9391>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`ComponentTag<doxid-structgeode_1_1_component_tag>`> :target:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`BRepInput<doxid-classgeode_1_1_b_rep_input>`, :ref:`BRep<doxid-classgeode_1_1_b_rep>`&, absl::string_view> :target:`BRepInputFactory<doxid-namespacegeode_1ab282c89a7f4623744b3ae8dd78d93945>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`, const :ref:`BRep<doxid-classgeode_1_1_b_rep>`&, absl::string_view> :target:`BRepOutputFactory<doxid-namespacegeode_1a77782b13c53f40c01391984dd773c6ee>`;
@@ -737,6 +738,7 @@ Overview
 	static constexpr double :target:`global_epsilon3<doxid-namespacegeode_1a016b0b7f36d945752eab94a03fbc27db>` { global_epsilon2* global_epsilon };
 	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`NO_ID<doxid-namespacegeode_1a454319bfde41726e71f499e4e16322b3>` = :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`(-1);
 	static constexpr :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`NO_LID<doxid-namespacegeode_1a0bb1a49fb70c62b71374aeff91a8fb11>` = :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`(-1);
+	static constexpr auto :target:`uuid_from_conversion_attribute_name<doxid-namespacegeode_1a904052a9ccedabc1fb657c3b811cdb75>` =         "uuid_from_conversion";
 
 	// global functions
 
@@ -1282,6 +1284,31 @@ Overview
 	void opengeode_model_api :target:`convert_block_meshes_into_tetrahedral_solids<doxid-namespacegeode_1a50185e6f94e236ed316b6c14fc5f8688>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1a250abe68306f3ff924e11ca40db2e0ed>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1a0bd6c1db09b0798ca9530ed601b1c445>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
+	std::unique_ptr<EdgedCurve2D> opengeode_model_api :target:`convert_section_into_curve<doxid-namespacegeode_1a4169c588c51660f2599927c68509f2d1>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
+
+	template <typename SurfaceType = SurfaceMesh2D>
+	std::unique_ptr<SurfaceType> :target:`convert_section_into_surface<doxid-namespacegeode_1a62ff50b24a1547ae88aa435d6e87a7be>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
+
+	template <typename SurfaceType = SurfaceMesh2D>
+	std::tuple<std::unique_ptr<EdgedCurve2D>, std::unique_ptr<SurfaceType>> :target:`convert_section_into_curve_and_surface<doxid-namespacegeode_1a9821c2ade605d3d6163143d22a5b8c6b>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
+
+	std::unique_ptr<EdgedCurve3D> opengeode_model_api :target:`convert_brep_into_curve<doxid-namespacegeode_1adc4d1eb9312a9b88a5ae9985a568a4bb>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
+	template <typename SurfaceType = SurfaceMesh3D>
+	std::unique_ptr<SurfaceType> :target:`convert_brep_into_surface<doxid-namespacegeode_1a768625f254e1db6d39cf81abb492bbd6>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
+	template <typename SolidType = SolidMesh3D>
+	std::unique_ptr<SolidMesh3D> :target:`convert_brep_into_solid<doxid-namespacegeode_1aef05ef6a6ffcc4a093d5d29f25509e41>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
+	template <typename SurfaceType = SurfaceMesh3D>
+	std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType>> :target:`convert_brep_into_curve_and_surface<doxid-namespacegeode_1adde8715193b38d3f9840b4595a6ce0d1>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
+	template <typename SurfaceType = SurfaceMesh3D, typename SolidType = SolidMesh3D>
+	std::tuple<std::unique_ptr<SurfaceType>, std::unique_ptr<SolidType>> :target:`convert_brep_into_surface_and_solid<doxid-namespacegeode_1ab1bb8b480fcc5ac4a1f1c90cd304e1c3>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
+	template <typename SurfaceType = SurfaceMesh3D, typename SolidType = SolidMesh3D>
+	std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType>, std::unique_ptr<SolidType>> :target:`convert_brep_into_curve_and_surface_and_solid<doxid-namespacegeode_1a8770ad336e271b27011b7d3a2e48a052>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
 	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(:ref:`Block<doxid-classgeode_1_1_block>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a6454289fb6bd960ae468b483e350c107>`(:ref:`Blocks<doxid-classgeode_1_1_blocks>`);
