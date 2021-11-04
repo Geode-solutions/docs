@@ -52,7 +52,7 @@
       </p>
 
       <p :class="paragraph">
-        The builders inheritance diagram is the same than the one for meshes and models.
+        The builders inheritance diagram is the same as the one for the corresponding meshes and models.
         Like them, builders can be templated by their dimension. 
         For example, two aliases are defined for 
         <span v-html="triangulatedSurfaceBuilder" />: 
@@ -100,7 +100,7 @@
       <p
         :class="paragraph"
       >
-        We will use a simple <span v-html="polygonalSurface" /> and its builder and see what we can do.
+        We will use a simple <span v-html="polygonalSurface" /> (shown in the image below) and its builder and see what we can do.
       </p>
 
       <img src="@/assets/builders.svg">
@@ -131,7 +131,7 @@
       <!-- eslint-disable -->
     <code class="example">
       auto mesh = PolygonalSurface2D::create();
-      auto mesh_builder = PolygonalSurfaceBuilder3D::create( *mesh );
+      auto mesh_builder = PolygonalSurfaceBuilder2D::create( *mesh );
 
       // Create some points
       const auto pt0 = mesh_builder->create_point( { {0., 0.} } );
@@ -156,7 +156,7 @@
         :class="paragraph"
       >
         And now, two examples of deletion. 
-        You have to give for every elements which are the ones to keep and the ones to remove.
+        For every element, you have to give which ones to keep and which ones to remove.
       </p>
 
       <p
@@ -167,7 +167,7 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      mesh_builder->delete_polygons( {true, false} ); // Only the first polygon to remove
+      mesh_builder->delete_polygons( {true, false} ); // Only the first polygon is removed
     </code>
     <!-- eslint-enable -->
 
@@ -181,10 +181,10 @@
 
       <!-- eslint-disable -->
     <code class="example">
-      mesh_builder->delete_vertices( {false, false, false, true, false} ); // Only the fourth vertex to remove
+      mesh_builder->delete_vertices( {false, false, false, true, false} ); // Only the fourth vertex is removed
 
       // To remove several vertices at once
-      mesh_builder->delete_vertices( {false, true, false, true, false} ); // The second and fourth vertices to remove
+      mesh_builder->delete_vertices( {false, true, false, true, false} ); // The second and fourth vertices are removed
     </code>
     <!-- eslint-enable -->
       
@@ -235,7 +235,7 @@
         :class="paragraph"
       >
         There are predefined relations between Component types.
-        We will use the <span v-html="sctn" /> as example and build the following section:
+        We will use the following <span v-html="sctn" /> as example and build the following section:
       </p>
 
       <img src="@/assets/builders-3.svg">
@@ -257,7 +257,7 @@
       <!-- eslint-disable -->
     <code class="example">
       const auto& corner0_id = builder.add_corner(); // Add a new corner and get its unique identifier
-      const auto& corner0 = section.corner( corner0_id ); // Get the actuel corner in the section
+      const auto& corner0 = section.corner( corner0_id ); // Get the actual corner in the section
       ...
       const auto& line0_id = builder.add_line();
       const auto& line0 = section.line( line0_id );
@@ -312,10 +312,10 @@
       <!-- eslint-disable -->
     <code class="example">
       const auto vertex_id = builder.create_unique_vertex();
-      builder.set_unique_vertex( {corner0.component_id(), 0} ); // Link the vertex #0 of corner0 to vertex_id
-      builder.set_unique_vertex( {line1.component_id(), 0} ); // Link the vertex #0 of line1 to vertex_id
-      builder.set_unique_vertex( {line3.component_id(), 1} ); // Link the vertex #1 of line3 to vertex_id
-      builder.set_unique_vertex( {surface0.component_id(), 3} ); // Link the vertex #3 of surface0 to vertex_id
+      builder.set_unique_vertex( {corner0.component_id(), 0}, vertex_id ); // Link the vertex #0 of corner0 to vertex_id
+      builder.set_unique_vertex( {line1.component_id(), 0}, vertex_id ); // Link the vertex #0 of line1 to vertex_id
+      builder.set_unique_vertex( {line3.component_id(), 1}, vertex_id ); // Link the vertex #1 of line3 to vertex_id
+      builder.set_unique_vertex( {surface0.component_id(), 3}, vertex_id ); // Link the vertex #3 of surface0 to vertex_id
     </code>
     <!-- eslint-enable -->
 

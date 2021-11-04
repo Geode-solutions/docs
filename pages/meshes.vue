@@ -7,7 +7,7 @@
 
       <p :class="paragraph">
         In this guide, you will learn fundamental elements to understand and manipulate meshes in OpenGeode.
-        Let's begin by introducing all kind of meshes you can work with in OpenGeode.
+        Let's begin by introducing every kind of mesh you can work with in OpenGeode.
       </p>
 
       <h2 :class="section">
@@ -17,14 +17,14 @@
       <p
         :class="paragraph"
       >
-        There are several kind of meshes representing points, lines, surfaces and solids.
+        There are several kinds of meshes representing points, lines, surfaces and solids.
       </p>
 
       <img src="@/assets/mesh_hierarchy.svg">
 
       <p :class="paragraph">
         All these meshes are available in 2D and 3D
-        (excepted solids that are definitely three-dimensional, and vertex sets and graphs that are dimensionless).
+        (with the exception of solids that are by definition three-dimensional, and vertex sets and graphs which are dimensionless).
         The dimension is given by a template parameter. For example, two aliases are defined for 
         <span v-html="triangulatedSurface" />: 
         <strong>TriangulatedSurface2D</strong> and <strong>TriangulatedSurface3D</strong>.
@@ -39,7 +39,7 @@
         <span v-html="polygonalSurface" />
         mesh to give some definitions on meshes
         and to show how to manipulate meshes.
-        Potential differences with other kind of meshes will be pointed if necessary.
+        Potential differences with other kinds of meshes will be pointed if necessary.
       </p>
 
       <img src="@/assets/mesh_surface-1.svg">
@@ -57,21 +57,21 @@
       >
         This 
         <span v-html="polygonalSurface" /> 
-        is defined by 11 vertices (left) and 6 polygons (right) as shown on this image.
+        is defined by 11 vertices (left) and 6 polygons (right) as shown on the image below.
       </p>
 
       <img src="@/assets/mesh_surface-2.svg">
 
       <p :class="paragraph">
-        Indexing of vertices is continuous, starts at
-        <code>0</code> and ends at
-        <code>number of vertices - 1</code>. It is exactly the same of polygon indexing.
+        Indexing of vertices is continuous, starting at
+        <code>0</code> and ending at
+        <code>number of vertices - 1</code>. The polygon indexing is the same.
       </p>
 
       <p
         :class="paragraph"
       >
-        To known the number of vertices and the polygons, use the following methods:
+        To known the number of vertices and polygons, use the following methods:
       </p>
       <!-- eslint-disable -->
     <code class="example">
@@ -100,12 +100,12 @@
       <img src="@/assets/mesh_surface-3.svg">
 
       <p :class="paragraph">
-        This is called
+        Each of these vertices is then a
         <span v-html="polygonVertex" />.
       </p>
 
       <p :class="nb">
-        NB: For Solid, this is called
+        NB: For a Solid, they are called
         <span v-html="polyhedronVertex" />.
       </p>
 
@@ -115,10 +115,10 @@
 
       <p :class="paragraph">
         Even if meshes are entirely defined by vertices and polygons,
-        you can access to mesh facets and edges.
+        you can access the mesh facets and edges.
         Edges are defined for Surfaces and Solids and facets for Solids.
-        All edges and facets methods are accessible using the <code>surface.edges()</code> or <code>solid.facets()</code> getters.
-        As for vertices and polygons, edge and facet indexings are continuous and starts at 0.
+        All the methods related to edges and facets are accessible using the <code>surface.edges()</code> or <code>solid.facets()</code> getters.
+        As for vertices and polygons, edge and facet indexings are continuous and start at 0.
       </p>
 
       <p :class="nb">
@@ -144,14 +144,14 @@
     
       <p :class="paragraph">
         As for vertices, it is possible to have access to the global index of a polygon edge.
-        A <span v-html="polygonEdge" /> is the edge that starts from the same <span v-html="polygonVertex" />:
-        <span v-html="polygonEdge" /> (2, 1) is an edge of the polygon 2 that starts from the <span v-html="polygonVertex" /> (2, 1).
+        Each <span v-html="polygonEdge" /> is the edge that starts from the same <span v-html="polygonVertex" />; for example,
+        <span v-html="polygonEdge" /> (2, 1) is the edge of polygon 2 that starts from the <span v-html="polygonVertex" /> (2, 1).
       </p>
 
       <img src="@/assets/mesh_surface-5.svg">
 
       <p :class="nb">
-        NB: For Solid, there are
+        NB: For Solids, there are
         <span v-html="polyhedronFacet" /> and
         <span v-html="polyhedronFacetEdge" />.
       </p>
@@ -161,7 +161,7 @@
       </h3>
       <p :class="paragraph">
         Meshes provide numerous methods to query the mesh topology.
-        One information you can get is to know which polygon is adjacent to another one.
+        One information you can get, for example, is which polygons are adjacent to each other.
         More precisely, to known which polygon is adjacent to another one through a given <span v-html="polygonEdge" />,
         you can use the following code:
       </p>
@@ -178,21 +178,20 @@
       <p
         :class="paragraph"
       >
-        You can have more information and get the adjacent <span v-html="polygonEdge" />, using the following code:
+        You can have more information and get the index of the <span v-html="polygonEdge" /> on the adjacent polygon, using the following code:
       </p>
 
       <!-- eslint-disable -->
     <code class="example">
       // Let's have a PolygonalSurface2D& called surface;
       const auto polygon = surface.polygon_adjacent_edge( {0, 0} ); // {1, 2}
-    </code>
+    </code>adjacent
     <!-- eslint-enable -->
 
       <p :class="paragraph">
         If there is no polygon adjacent to the given <span v-html="polygonEdge" />,
-        the results of these methods are empty optionals. 
-        The given <span v-html="polygonEdge" /> is on border.
-        There is a method to known if a <span v-html="polygonEdge" /> is on border:
+        the results of these methods are empty optionals, and the given <span v-html="polygonEdge" /> is on a border.
+        There is a method to known if a <span v-html="polygonEdge" /> is on a border:
       </p>
 
       <!-- eslint-disable -->
@@ -206,7 +205,7 @@
       <img src="@/assets/mesh_surface-7.svg">
 
       <p :class="paragraph">
-        You can go from one edge on border to anther one using:
+        You can go from one edge on a border to another one using:
       </p>
 
       <!-- eslint-disable -->
@@ -215,21 +214,21 @@
       PolygonEdge start{0, 2};
       auto next_edge = surface.next_on_border( start ); // {0, 3}
       next_edge = surface.next_on_border( next_edge ); // {0, 4}
-      next_edge = surface.next_on_border( next_edge ); // {1, 0}
+      next_edge = surface.next_on_border( next_edge ); // {2, 0}
       auto prev_edge = surface.previous_on_border( next_edge ); // {0, 4}
       ...
     </code>
     <!-- eslint-enable -->
 
       <p :class="paragraph">
-        You can notice that "next" turns in the same direction that polygon vertices,
+        You can notice that "next" turns in the same direction than polygon vertices,
         and "previous" turns therefore in the inverse direction.
       </p>
 
       <p
         :class="paragraph"
       >
-        An exception is raised if you give as method parameter a <span v-html="polygonEdge" /> that is not on border.
+        An exception is raised if you give as method parameter a <span v-html="polygonEdge" /> that is not on a border.
       </p>
 
       <p :class="paragraph">
@@ -249,7 +248,7 @@
         Geometrical queries
       </h3>
       <p :class="paragraph">
-        Beside topological queries, you also can ask for geometrical mesh queries
+        Beside topological queries, you can also ask for geometrical mesh queries
         such as polygon area, edge length, polygon barycenter and so on.
       </p>
 
@@ -271,8 +270,10 @@
       </h2>
       <p :class="paragraph">
         All the queries illustrated above are const mesh methods.
-        As a consequence, you can work with a const mesh and have access to all information you want.
-        But if you want to create or modify a mesh, you should use a builder as explained in the following guide.
+        As a consequence, you can work with a const mesh and have access to all the information you want.
+        If you want to create or modify a mesh, however, you should use a builder as explained in the <a
+          href="/builders"
+        >following guide</a>.
       </p>
     </v-col>
   </v-row>

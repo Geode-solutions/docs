@@ -28,7 +28,7 @@
         Attributes are managed by an 
         <span v-html="attributeManager" />.
         Meshes have managers defined on their vertices, edges, facets, and so on.
-        Updating the mesh (e.g. by adding or removing vertices) automatically updates attached
+        Updating a mesh (<i>e.g.</i> by adding or removing vertices) automatically updates all the attached
         <span v-html="attributeManager" />.
       </p>
 
@@ -139,11 +139,11 @@
       <p
         :class="paragraph"
       >
-        If the attribute already exists and has the same name, 
+        If an attribute already exists with the same name, 
         same storage and same value type, 
         a pointer to the pre-existing attribute is returned
-        without creating a new attribute. If the attribute name already exist but 
-        with a different storage or a different value type, an exception is thrown.
+        without creating a new attribute. If an attribute already exists with the same name but 
+        a different storage or a different value type, an exception is thrown.
       </p>
 
       <h3 :class="subsection">
@@ -219,7 +219,7 @@
         :class="paragraph"
       >
         If you do not know the type of the attribute, 
-        an other way is to get a non-type Attribute called a generic attribute:
+        another way is to get a non-type Attribute called a generic attribute:
       </p>
 
       <!-- eslint-disable -->
@@ -291,7 +291,7 @@
       <p
         :class="paragraph"
       >
-        To modify the attribute size, you should use the <span v-html="attributeManager" />.
+        To modify the attribute size, you must use the <span v-html="attributeManager" />.
         The first solution is to use the method <code>resize</code> as shown above.
         The second solution is to select the element to remove:
       </p>
@@ -305,6 +305,7 @@
       std::vector< bool > to_delete( 6, false );
       to_delete[0] = true;
       to_delete[3] = true;
+      manager.delete_elements( to_delete );
     </code>
     <!-- eslint-enable -->
 
@@ -325,7 +326,7 @@
         To modify the value of attribute elements, 
         you may use either the attribute itself or 
         its associated <span v-html="attributeManager" />. 
-        In the code below, we present four ways to modify attribute values:
+        In the code below, we show four ways of modifying attribute values:
       </p>
 
       <!-- eslint-disable -->
