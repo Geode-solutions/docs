@@ -70,7 +70,7 @@
       <p :class="paragraph">
         Now, you may want to process only a single
         <span v-html="surface3d" />.
-        Hopefully, it is possible to get a specific
+        Thankfully, it is possible to get a specific
         <span v-html="surface3d" /> from a
         <span v-html="brep" />.
         A major feature of OpenGeode is that model components are not continuously numbered:
@@ -207,7 +207,7 @@
       <p
         :class="paragraph"
       >
-        As iteration on BRep Surfaces, it is also possible to iterate on Surface boundary Lines:
+        Much like the iteration on BRep Surfaces, it is also possible to iterate on Surface boundary Lines:
       </p>
 
       <!-- eslint-disable -->
@@ -256,10 +256,10 @@
       </h2>
 
       <p :class="paragraph">
-        An other kind of relations between Components allows to gather Components into groups.
+        Another kind of relations between Components allows to gather Components into groups.
         This is the notion of
         <strong>Collections</strong>. Components gathered into collections
-        are called <strong>items</strong>. For example, the red Surfaces can be gather in a collection
+        are called <strong>items</strong>. For example, in the image below, the red Surfaces can be gather in a collection
         standing for the right side of the cube.
       </p>
 
@@ -287,8 +287,8 @@
     <!-- eslint-enable -->
 
       <p :class="paragraph">
-        As for other relationships, you may get the number of items in a collection,
-        iterates on items, etc.
+        As for other relationships, you can get the number of items in a collection,
+        iterate on its items, etc.
       </p>
 
       <p :class="paragraph">
@@ -301,10 +301,10 @@
       </h2>
 
       <p :class="paragraph">
-        In a OpenGeode model, each Component mesh has its own set of vertices
+        In an OpenGeode model, each Component mesh has its own set of vertices
         with a continuous indexing. But several vertices from several BRep Component
         meshes may represent a single point in the model (groups of black points on image).
-        Model vertex represented by potentially several mesh vertices is called
+        A model vertex represented by potentially several mesh vertices is called
         <strong>unique vertex</strong>.
       </p>
 
@@ -314,7 +314,7 @@
         The class
         <span v-html="brep" /> also inherits from the class
         <span v-html="vertexIdentifier" />
-        that stores this kind of topological information between Components meshes.
+        that stores this kind of topological information between Component meshes.
         <span
           v-html="vertexIdentifier"
         /> provides methods to request the number of unique
@@ -340,7 +340,7 @@
 
       <p :class="paragraph">
         To simplify inheritance and gather topological information (between
-        Components and between Components meshes), OpenGeode provides a class named
+        Components and between Component meshes), OpenGeode provides a class named
         <span
           v-html="topology"
         /> inheriting from both
@@ -370,7 +370,7 @@
       <p :class="paragraph">
         At this point, you have learned all the information about
         <span v-html="brep" /> inheritance.
-        OpenGeode provides other models, for example:
+        Should you need other inheritances, OpenGeode provides other models, for example:
       </p>
 
       <!-- eslint-disable -->
@@ -386,13 +386,13 @@
       <p :class="paragraph">
         Section is a
         <strong>2</strong>-dimensional model made of Corners, Lines, and Surfaces
-        (as mesh Components) and ModelBoundaries as (Collections of Components).
+        (as mesh Components) and ModelBoundaries (as Collections of Components).
       </p>
 
       <p :class="paragraph">
         This design based on mixins is fully flexible.
         As a consequence, you are able to build your own OpenGeode
-        models following the same design. Let's imagine a world map
+        models following the same design. You can for example imagine a world map
         made of Surfaces, Lines, and Corners:
       </p>
 
