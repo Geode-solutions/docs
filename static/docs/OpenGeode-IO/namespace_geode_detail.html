@@ -87,13 +87,25 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTPPolygonalOutput.html#doxid-classgeode-1-1detail-1-1-v-t-p-polygonal-output"><span class="std std-ref">VTPPolygonalOutput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTPTriangulatedOutput.html#doxid-classgeode-1-1detail-1-1-v-t-p-triangulated-output"><span class="std std-ref">VTPTriangulatedOutput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTUHybridInput.html#doxid-classgeode-1-1detail-1-1-v-t-u-hybrid-input"><span class="std std-ref">VTUHybridInput</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTUHybridOutput.html#doxid-classgeode-1-1detail-1-1-v-t-u-hybrid-output"><span class="std std-ref">VTUHybridOutput</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Mesh</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Builder</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTUInputImpl.html#doxid-classgeode-1-1detail-1-1-v-t-u-input-impl"><span class="std std-ref">VTUInputImpl</span></a><span></span><span class="p">;</span>
 
-<span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTUOutput.html#doxid-classgeode-1-1detail-1-1-v-t-u-output"><span class="std std-ref">VTUOutput</span></a><span></span><span class="p">;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Mesh</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTUOutputImpl.html#doxid-classgeode-1-1detail-1-1-v-t-u-output-impl"><span class="std std-ref">VTUOutputImpl</span></a><span></span><span class="p">;</span>
+
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTUPolyhedralInput.html#doxid-classgeode-1-1detail-1-1-v-t-u-polyhedral-input"><span class="std std-ref">VTUPolyhedralInput</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTUTetrahedralInput.html#doxid-classgeode-1-1detail-1-1-v-t-u-tetrahedral-input"><span class="std std-ref">VTUTetrahedralInput</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_VTUTetrahedralOutput.html#doxid-classgeode-1-1detail-1-1-v-t-u-tetrahedral-output"><span class="std std-ref">VTUTetrahedralOutput</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// global variables</span>
+
+<span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ad706149d0e1845e9b75e472089bf3774"><span></span><span class="n">TETRAHEDRON</span></span><span></span> <span class="o">=</span> <span class="mi">10u</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a6d71968250bfad74d8e4d982a1736d6e"><span></span><span class="n">HEXAHEDRON</span></span><span></span> <span class="o">=</span> <span class="mi">12u</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a5842c38c45f25770bb1cb85bf207ab63"><span></span><span class="n">PRISM</span></span><span></span> <span class="o">=</span> <span class="mi">13u</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a8b046d07c62b7993a3d3b96b8cf5fb2b"><span></span><span class="n">PYRAMID</span></span><span></span> <span class="o">=</span> <span class="mi">14u</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="mi">9</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a5f40222abc9ad1660bcc59f53a018e9b"><span></span><span class="n">VTK_CELL_TYPE</span></span><span></span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>             <span class="n">TETRAHEDRON</span><span class="p">,</span> <span class="n">PYRAMID</span><span class="p">,</span> <span class="n">PRISM</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">HEXAHEDRON</span> <span class="p">};</span>
 
 <span class="c1">// global functions</span>
 

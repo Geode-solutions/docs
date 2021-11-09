@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::detail::VTUOutputImpl
+.. _doxid-classgeode_1_1detail_1_1_v_t_u_output_impl:
+
+template class geode::detail::VTUOutputImpl
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vtu_output_impl.h>
+	
+	template <typename Mesh>
+	class VTUOutputImpl: public :ref:`geode::detail::VTKMeshOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_mesh_output_impl>`
+	{
+	public:
+		// construction
+	
+		:target:`VTUOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_output_impl_1a7e3edf4c8368670c7546d14f5f79e576>`(absl::string_view filename, const Mesh& solid);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		void :ref:`write_file<doxid-classgeode_1_1detail_1_1_v_t_k_output_impl_1ac7c7eff54c0572f7dde873162a38383b>`();
+

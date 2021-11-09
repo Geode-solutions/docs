@@ -25,6 +25,9 @@ template class geode::detail::VTKMeshOutputImpl
 	template <typename Mesh>
 	class :ref:`VTPOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_p_output_impl>`;
 
+	template <typename Mesh>
+	class :ref:`VTUOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_output_impl>`;
+
 Inherited Members
 -----------------
 
