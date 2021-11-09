@@ -1,0 +1,31 @@
+.. index:: pair: class; geode::detail::DegenerationImpl
+.. _doxid-classgeode_1_1detail_1_1_degeneration_impl:
+
+template class geode::detail::DegenerationImpl
+==============================================
+
+.. toctree::
+	:hidden:
+
+Implementation of the inspection of the degeneration of a Mesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <degeneration_impl.h>
+	
+	template <class MeshType>
+	class DegenerationImpl
+	{
+	public:
+		// construction
+	
+		:target:`DegenerationImpl<doxid-classgeode_1_1detail_1_1_degeneration_impl_1ab1bb2783a9c4b25cc5822c527e291682>`(const MeshType& mesh);
+
+		// methods
+	
+		bool :target:`is_mesh_degenerated<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a0415369a9fa3c45e8a225283b0720687>`() const;
+		index_t :target:`nb_degenerated_edges<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a440ff74135b9e72ae81c032a4a4aacd6>`() const;
+		std::vector<index_t> :target:`degenerated_edges<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a6f3566c227e2e9f852d59352ba7e54cf>`() const;
+	};

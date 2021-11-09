@@ -1,0 +1,30 @@
+.. index:: pair: class; geode::SolidMeshDegeneration
+.. _doxid-classgeode_1_1_solid_mesh_degeneration:
+
+class geode::SolidMeshDegeneration
+==================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the degeneration of a SolidMesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <solid_degeneration.h>
+	
+	class SolidMeshDegeneration
+	{
+	public:
+		// construction
+	
+		:target:`SolidMeshDegeneration<doxid-classgeode_1_1_solid_mesh_degeneration_1a512fb10505926c43d10a4d5ab6ea29bd>`(const SolidMesh3D& mesh);
+
+		// methods
+	
+		bool :target:`is_mesh_degenerated<doxid-classgeode_1_1_solid_mesh_degeneration_1a72c749aa624d853f300d4d07c987e10d>`() const;
+		index_t :target:`nb_degenerated_edges<doxid-classgeode_1_1_solid_mesh_degeneration_1a48e239e291eb2d0624568cfb983f9ac5>`() const;
+		std::vector<index_t> :target:`degenerated_edges<doxid-classgeode_1_1_solid_mesh_degeneration_1afdcaf27480b5e5a09f3b9cdf33ec0b59>`() const;
+	};

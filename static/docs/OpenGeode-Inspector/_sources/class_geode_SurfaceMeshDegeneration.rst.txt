@@ -1,0 +1,31 @@
+.. index:: pair: class; geode::SurfaceMeshDegeneration
+.. _doxid-classgeode_1_1_surface_mesh_degeneration:
+
+template class geode::SurfaceMeshDegeneration
+=============================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the degeneration of a SurfaceMesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_degeneration.h>
+	
+	template <index_t dimension>
+	class SurfaceMeshDegeneration
+	{
+	public:
+		// construction
+	
+		:target:`SurfaceMeshDegeneration<doxid-classgeode_1_1_surface_mesh_degeneration_1ad1f57c23861c8f178b49bb3121901674>`(const SurfaceMesh<dimension>& mesh);
+
+		// methods
+	
+		bool :target:`is_mesh_degenerated<doxid-classgeode_1_1_surface_mesh_degeneration_1a26880ccbf318a8f901fd332f7e5236e3>`() const;
+		index_t :target:`nb_degenerated_edges<doxid-classgeode_1_1_surface_mesh_degeneration_1abe1502822aafe296bb4bd2fb05a2326b>`() const;
+		std::vector<index_t> :target:`degenerated_edges<doxid-classgeode_1_1_surface_mesh_degeneration_1a56672a74b5e9c738f019e117f5091215>`() const;
+	};
