@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class geode::BackgroundMeshBuilder2D &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::BackgroundMeshBuilder3D" href="class_geode_BackgroundMeshBuilder3D.html" />
+    <link rel="prev" title="template class geode::BackgroundMeshBuilder" href="class_geode_BackgroundMeshBuilder.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-backgroundmeshbuilder2d">
+<span id="doxid-classgeode-1-1-background-mesh-builder2-d"></span><span id="index-0"></span><h1>class geode::BackgroundMeshBuilder2D</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;background_mesh_builder.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">BackgroundMeshBuilder2D</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder"><span class="std std-ref">geode::BackgroundMeshBuilder</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1a7f10199452c4b545b0a05d7f14c0bc80"><span></span><span class="n">BackgroundMeshBuilder2D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BackgroundMesh2D.html#doxid-classgeode-1-1-background-mesh2-d"><span class="std std-ref">BackgroundMesh2D</span></a><span></span><span class="o">&amp;</span> <span class="n">background_mesh</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1aa8b9dc064b766d31536deb40809b1dab"><span></span><span class="n">insert_model</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1ae615dfdd56e2788e09f83de4e44ced53"><span></span><span class="n">insert_line</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">);</span>
+    <span class="n">uuid</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1ac6696e6f5697ffb1e8d2fa65b9df4c17"><span></span><span class="n">insert_line</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">EdgedCurve2D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TriangulatedSurfaceBuilder2D</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1a6d72eb9b2172fe60c96f0740b2fcedad"><span></span><span class="n">create_mesh_builder</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+<div class="section" id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1a03b467f7bf35bc609c1aa68ea754d55c"><span class="std std-ref">map_elements_to_cell</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a484cebea94c5af40bcb1b704f8720d00"><span class="std std-ref">MeshElements</span></a><span></span><span class="o">&amp;</span> <span class="n">elements</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">cell_id</span><span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1a54e1a51edc3831199e3dfcc4859d5f7c"><span class="std std-ref">set_cell_corner_vertex</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="k">typename</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&amp;</span> <span class="n">cell</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">vertex_id</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1aeb0c924954947256167233affc0694b7"><span class="std std-ref">set_vertex_on_border</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1af8597795ff4fc6f1011ab540c328035e"><span class="std std-ref">unset_vertex_on_border</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1a2625ecd1adff49f0c04335ca24708cc5"><span class="std std-ref">add_component_vertex_to_background_mesh_vertex</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">bmesh_v_id</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1a2ec82109306fd4196a35e67fc251e8e5"><span class="std std-ref">add_component_edge_to_background_mesh_edge</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">bmesh_edge_id</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1ae7b828ca766b992e036e137d2f1e6e7f"><span class="std std-ref">add_component_edge_to_background_mesh_vertices</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">bmesh_vertex_ids</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1ad6cbb72f14e7a4e1b13963922793a7e0"><span class="std std-ref">update_mesh_elements</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&amp;</span> <span class="n">mapping</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1a35b48042eba5939c074529880c299274"><span class="std std-ref">update_all_mesh_elements</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">nb_grid_cells</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">nb_elements</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1a67972aa9bc80cf3e4d2c66ea06795061"><span class="std std-ref">fill_holes</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder-1a8ee301a59d1ff7b67c79675929358a2c"><span class="std std-ref">activate_cell</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">cell_id</span><span class="p">);</span></pre>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_BackgroundMeshBuilder2D.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

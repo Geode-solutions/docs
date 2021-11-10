@@ -1,0 +1,105 @@
+.. index:: pair: class; geode::BackgroundMesh2D
+.. _doxid-classgeode_1_1_background_mesh2_d:
+
+class geode::BackgroundMesh2D
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <background_mesh.h>
+	
+	class BackgroundMesh2D: public :ref:`geode::BackgroundMesh<doxid-classgeode_1_1_background_mesh>`
+	{
+	public:
+		// construction
+	
+		:target:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d_1a6d72b71615f534cc9b0e00007a34d4a9>`(BoundingBox2D box, std::array<double, 2> cell_size);
+		:target:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d_1afe32fd8addff53c0fc3e3ae27dad95ec>`(BoundingBox2D box, double cell_size);
+		:target:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d_1a9af9a83101c48c262a2c95e0a7b69f60>`(RegularGrid2D grid);
+		:target:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d_1a64bfcde230cc400709dab37d7002dffb>`(BackgroundMesh2D&& other);
+
+		// methods
+	
+		BackgroundMesh2D :target:`clone<doxid-classgeode_1_1_background_mesh2_d_1a3f5a630bc58b23740cab7610cf346632>`() const;
+		const TriangulatedSurface2D& :target:`surface<doxid-classgeode_1_1_background_mesh2_d_1adb89c42e4a3159fa85be1ba3d5e84710>`() const;
+		std::unique_ptr<TriangulatedSurfaceBuilder2D> :target:`create_mesh_builder<doxid-classgeode_1_1_background_mesh2_d_1a8b81ef7189cee39c8f7b8b657cdfea8e>`(BackgroundMesh2DKey);
+		void :target:`save<doxid-classgeode_1_1_background_mesh2_d_1ac07f1e35377968cf372a7a69787ab267>`(absl::string_view filename) const;
+		static BackgroundMesh2D :target:`load<doxid-classgeode_1_1_background_mesh2_d_1a7cd5429e5b254cc47e75d3127a01877f>`(absl::string_view filename);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const RegularGrid<dimension>& :ref:`grid<doxid-classgeode_1_1_background_mesh_1a2b75c8ac880699065bd1102ef5627789>`() const;
+		absl::optional<typename RegularGrid<dimension>::Indices> :ref:`cell<doxid-classgeode_1_1_background_mesh_1a3e046cd9683a875db61a48f08ac9fe43>`(const Point<dimension>& point) const;
+		const :ref:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`& :ref:`mesh_elements<doxid-classgeode_1_1_background_mesh_1a30bf3c25f71397cc55b3f132610ef41e>`(const typename RegularGrid<dimension>::Index& cell) const;
+		index_t :ref:`one_mesh_element<doxid-classgeode_1_1_background_mesh_1a9b8ed3ea571d955c6a60fb0dee6f9ea1>`(const typename RegularGrid<dimension>::Index& cell) const;
+		absl::InlinedVector<index_t, 1> :ref:`cell_id<doxid-classgeode_1_1_background_mesh_1ad8233e0c26306e608e2bc8580e5d1bee>`(index_t element_id) const;
+		bool :ref:`is_cell_active<doxid-classgeode_1_1_background_mesh_1abc77ee08912aad3a92414d906d8b647c>`(index_t cell_id) const;
+		bool :ref:`is_cell_active<doxid-classgeode_1_1_background_mesh_1a21e7852a1d84c9a24be3253f69bb6cab>`(const typename RegularGrid<dimension>::Index& cell) const;
+		index_t :ref:`cell_corner_vertex<doxid-classgeode_1_1_background_mesh_1aa9d51c3a6208751e4bf3d4fc7e7675f9>`(const typename RegularGrid<dimension>::Index& cell) const;
+	
+		void :ref:`set_cell_corner_vertex<doxid-classgeode_1_1_background_mesh_1aaf2040bedf0e0c09579aa6e2a271d72e>`(
+			const typename RegularGrid<dimension>::Index& cell,
+			index_t vertex_id,
+			BackgroundMeshKey
+			);
+	
+		bool :ref:`is_on_border<doxid-classgeode_1_1_background_mesh_1a898dfd4e2f3446c22eb0b3e9223419f6>`(index_t vertex_id) const;
+		void :ref:`set_vertex_on_border<doxid-classgeode_1_1_background_mesh_1af49aaa0076f833ba6ec41f0d2e279e17>`(index_t vertex_id, BackgroundMeshKey);
+		void :ref:`unset_vertex_on_border<doxid-classgeode_1_1_background_mesh_1a9f188ff7c0d5b95596166e7e3e12a260>`(index_t vertex_id, BackgroundMeshKey);
+		std::vector<:ref:`ComponentVertex<doxid-namespacegeode_1a18addb3cd44b1f3927bae3085acc23e9>`> :ref:`component_vertices<doxid-classgeode_1_1_background_mesh_1ae56191277a937bf85f31926ee9bd66af>`(index_t background_mesh_vertex) const;
+		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :ref:`component_edges<doxid-classgeode_1_1_background_mesh_1ae820ab3b59ba130e33925837d6799c81>`(index_t background_mesh_edge) const;
+		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :ref:`incident_component_edges<doxid-classgeode_1_1_background_mesh_1a7f14421486b5c150796b3d06868e04b6>`(index_t background_mesh_vertex) const;
+		void :ref:`map_element_to_cell<doxid-classgeode_1_1_background_mesh_1ade00f37bc550f1238073c7bb6e6ecca7>`(index_t element, index_t cell_id, BackgroundMeshKey);
+	
+		void :ref:`map_elements_to_cell<doxid-classgeode_1_1_background_mesh_1a65ffa8fff241a4ace6bbeb87a8757c7f>`(
+			const :ref:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`& elements,
+			index_t cell_id,
+			BackgroundMeshKey
+			);
+	
+		void :ref:`add_component_vertex_to_background_mesh_vertex<doxid-classgeode_1_1_background_mesh_1ab2db15948c3c76d4b11a12c831cffa56>`(
+			const uuid& mesh_id,
+			index_t vertex_id,
+			index_t bmesh_v_id,
+			BackgroundMeshKey
+			);
+	
+		void :ref:`add_component_edge_to_background_mesh_edge<doxid-classgeode_1_1_background_mesh_1a050366ab111106803ccbd1ae4f60af47>`(
+			const uuid& mesh_id,
+			index_t edge_id,
+			index_t bmesh_edge_id,
+			BackgroundMeshKey
+			);
+	
+		void :ref:`add_component_edge_to_background_mesh_vertices<doxid-classgeode_1_1_background_mesh_1a233d6e52eb68b514bd5de5176981ba1d>`(
+			const uuid& mesh_id,
+			index_t edge_id,
+			absl::Span<const index_t> bmesh_vertex_ids,
+			BackgroundMeshKey
+			);
+	
+		void :ref:`update_mesh_elements<doxid-classgeode_1_1_background_mesh_1a4afa0e49a74e13752235b6968dec529d>`(const :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t>& mapping, BackgroundMeshKey);
+	
+		void :ref:`update_all_mesh_elements<doxid-classgeode_1_1_background_mesh_1aa6628ba99c1a7eb6ddf6a58587e9a030>`(
+			index_t nb_grid_cells,
+			index_t nb_elements,
+			BackgroundMeshKey
+			);
+	
+		void :ref:`activate_cell<doxid-classgeode_1_1_background_mesh_1aba4b6f3a2b9e8a2b84ffeb38e1a68665>`(index_t cell_id, BackgroundMeshKey);
+

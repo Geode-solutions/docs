@@ -1,0 +1,25 @@
+.. index:: pair: struct; geode::SectionComponentMappings
+.. _doxid-structgeode_1_1_section_component_mappings:
+
+struct geode::SectionComponentMappings
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <extract_section.h>
+	
+	struct SectionComponentMappings
+	{
+		// fields
+	
+		:ref:`ComponentMappings<doxid-namespacegeode_1a33d0cdfdef58cf0a882a32d6827d4326>` :target:`corners<doxid-structgeode_1_1_section_component_mappings_1a5bfbcbc2f44b0989af5bb84a4f0a77f3>`;
+		:ref:`ComponentMappings<doxid-namespacegeode_1a33d0cdfdef58cf0a882a32d6827d4326>` :target:`lines<doxid-structgeode_1_1_section_component_mappings_1a15cfec988ced9e63a6bffda89493eb76>`;
+		:ref:`ComponentMappings<doxid-namespacegeode_1a33d0cdfdef58cf0a882a32d6827d4326>` :target:`surfaces<doxid-structgeode_1_1_section_component_mappings_1a2cdaf70082d28c537737e75233485859>`;
+	};
