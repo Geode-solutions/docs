@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::ExplicitModeler3D
+.. _doxid-classgeode_1_1_explicit_modeler3_d:
+
+class geode::ExplicitModeler3D
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <explicit_modeler.h>
+	
+	class ExplicitModeler3D
+	{
+	public:
+		// construction
+	
+		:target:`ExplicitModeler3D<doxid-classgeode_1_1_explicit_modeler3_d_1a23ed71de5cabcb5c027832a46bcffdd2>`(BoundingBox3D bbox);
+
+		// methods
+	
+		void :target:`add_surface<doxid-classgeode_1_1_explicit_modeler3_d_1a6adae4bec7913bfd3f43538b00d2099b>`(const TriangulatedSurface3D& mesh);
+		BRep :target:`build<doxid-classgeode_1_1_explicit_modeler3_d_1a04d83f09b6517db6429caeb84ad4b288>`();
+	};

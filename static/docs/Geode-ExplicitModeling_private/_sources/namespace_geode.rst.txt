@@ -1,0 +1,32 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+	class_geode_ExplicitModeler3D.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// classes
+
+	class :ref:`ExplicitModeler3D<doxid-classgeode_1_1_explicit_modeler3_d>`;
+
+	// global functions
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(BoundingBox);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(BoundingBox);
+	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+
+	} // namespace geode
