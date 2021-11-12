@@ -8,6 +8,7 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
+	class_geode_EdgedCurveDegeneration.rst
 	class_geode_SolidMeshDegeneration.rst
 	class_geode_SurfaceMeshDegeneration.rst
 
@@ -26,6 +27,10 @@ namespace geode
 
 	// classes
 
+	template <index_t dimension>
+	class :ref:`EdgedCurveDegeneration<doxid-classgeode_1_1_edged_curve_degeneration>`;
+
+	template <index_t dimension>
 	class :ref:`SolidMeshDegeneration<doxid-classgeode_1_1_solid_mesh_degeneration>`;
 
 	template <index_t dimension>
@@ -33,8 +38,10 @@ namespace geode
 
 	// global functions
 
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab292174f383abd1f6d6e3a596d86a0f2>`(:ref:`EdgedCurveDegeneration<doxid-classgeode_1_1_edged_curve_degeneration>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
-	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(SolidMesh);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a927bcadf35dfee270dcfea338151c890>`(:ref:`SolidMeshDegeneration<doxid-classgeode_1_1_solid_mesh_degeneration>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6c59b52d1edafda37285841ba7388aa1>`(:ref:`SurfaceMeshDegeneration<doxid-classgeode_1_1_surface_mesh_degeneration>`);
 

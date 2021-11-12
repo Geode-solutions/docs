@@ -20,7 +20,7 @@ namespace geode::detail
 
 	// classes
 
-	template <class MeshType>
+	template <typename Mesh>
 	class :ref:`DegenerationImpl<doxid-classgeode_1_1detail_1_1_degeneration_impl>`;
 
 	} // namespace detail

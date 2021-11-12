@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::SolidMeshDegeneration" href="class_geode_SolidMeshDegeneration.html" />
+    <link rel="next" title="template class geode::EdgedCurveDegeneration" href="class_geode_EdgedCurveDegeneration.html" />
     <link rel="prev" title="namespace geode::detail" href="namespace_geode_detail.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -41,19 +41,19 @@
 <p>Implementation of the inspection of the degeneration of a Mesh</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;degeneration_impl.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">MeshType</span><span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Mesh</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="n">DegenerationImpl</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-degeneration-impl-1ab1bb2783a9c4b25cc5822c527e291682"><span></span><span class="n">DegenerationImpl</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">MeshType</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-degeneration-impl-1a33979c0608cda8f70418d525fad4f68f"><span></span><span class="n">DegenerationImpl</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Mesh</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-degeneration-impl-1a0415369a9fa3c45e8a225283b0720687"><span></span><span class="n">is_mesh_degenerated</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-degeneration-impl-1a440ff74135b9e72ae81c032a4a4aacd6"><span></span><span class="n">nb_degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-degeneration-impl-1a6f3566c227e2e9f852d59352ba7e54cf"><span></span><span class="n">degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-degeneration-impl-1a695521137ff2a9436787ee2977b2fdfc"><span></span><span class="n">is_mesh_degenerated</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-degeneration-impl-1a11cdb700c7522667e5e334d9bbe7bf75"><span></span><span class="n">nb_degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-degeneration-impl-1a5ca078f8bfbfcac6b31fc968158d0cb7"><span></span><span class="n">degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::SolidMeshDegeneration &#8212; Python  documentation</title>
+    <title>template class geode::SolidMeshDegeneration &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -18,7 +18,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="template class geode::SurfaceMeshDegeneration" href="class_geode_SurfaceMeshDegeneration.html" />
-    <link rel="prev" title="template class geode::detail::DegenerationImpl" href="class_geode_detail_DegenerationImpl.html" />
+    <link rel="prev" title="template class geode::EdgedCurveDegeneration" href="class_geode_EdgedCurveDegeneration.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,25 +34,26 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-solidmeshdegeneration">
-<span id="doxid-classgeode-1-1-solid-mesh-degeneration"></span><span id="index-0"></span><h1>class geode::SolidMeshDegeneration</h1>
+  <div class="section" id="template-class-geode-solidmeshdegeneration">
+<span id="doxid-classgeode-1-1-solid-mesh-degeneration"></span><span id="index-0"></span><h1>template class geode::SolidMeshDegeneration</h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>Class for inspecting the degeneration of a SolidMesh</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;solid_degeneration.h&gt;</span><span class="cp"></span>
 
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="n">SolidMeshDegeneration</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-degeneration-1a512fb10505926c43d10a4d5ab6ea29bd"><span></span><span class="n">SolidMeshDegeneration</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-degeneration-1a7b023775e45df0d6b79ddbce4e9120db"><span></span><span class="n">SolidMeshDegeneration</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-degeneration-1a72c749aa624d853f300d4d07c987e10d"><span></span><span class="n">is_mesh_degenerated</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-degeneration-1a48e239e291eb2d0624568cfb983f9ac5"><span></span><span class="n">nb_degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-degeneration-1afdcaf27480b5e5a09f3b9cdf33ec0b59"><span></span><span class="n">degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-degeneration-1a2f9903f06f7e2669afd68d54fe3a4d9c"><span></span><span class="n">is_mesh_degenerated</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-degeneration-1a9d6fcf5c89958d432b85ea66ca0bdd46"><span></span><span class="n">nb_degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-degeneration-1af6104b6301199d563cfcfb8aa5ba20b5"><span></span><span class="n">degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 

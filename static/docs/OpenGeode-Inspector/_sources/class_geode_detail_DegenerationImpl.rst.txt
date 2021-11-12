@@ -15,17 +15,17 @@ Implementation of the inspection of the degeneration of a Mesh
 
 	#include <degeneration_impl.h>
 	
-	template <class MeshType>
+	template <typename Mesh>
 	class DegenerationImpl
 	{
 	public:
 		// construction
 	
-		:target:`DegenerationImpl<doxid-classgeode_1_1detail_1_1_degeneration_impl_1ab1bb2783a9c4b25cc5822c527e291682>`(const MeshType& mesh);
+		:target:`DegenerationImpl<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a33979c0608cda8f70418d525fad4f68f>`(const Mesh& mesh);
 
 		// methods
 	
-		bool :target:`is_mesh_degenerated<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a0415369a9fa3c45e8a225283b0720687>`() const;
-		index_t :target:`nb_degenerated_edges<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a440ff74135b9e72ae81c032a4a4aacd6>`() const;
-		std::vector<index_t> :target:`degenerated_edges<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a6f3566c227e2e9f852d59352ba7e54cf>`() const;
+		bool :target:`is_mesh_degenerated<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a695521137ff2a9436787ee2977b2fdfc>`() const;
+		index_t :target:`nb_degenerated_edges<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a11cdb700c7522667e5e334d9bbe7bf75>`() const;
+		std::vector<index_t> :target:`degenerated_edges<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a5ca078f8bfbfcac6b31fc968158d0cb7>`() const;
 	};
