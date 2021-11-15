@@ -175,4 +175,5 @@ Inherited Members
 			) const;
 	
 		:ref:`Tetra<doxid-classgeode_1_1_tetra>` :ref:`tetra<doxid-classgeode_1_1_tetrahedral_solid_1ada27b86136318d391b5cdb1d3d0f1f32>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const;
+		:ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension> :ref:`triangle<doxid-classgeode_1_1_tetrahedral_solid_1a0f2dc71870506c6a0d5aa2cdb5c604e9>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& facet) const;
 

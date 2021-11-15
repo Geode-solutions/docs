@@ -46,7 +46,8 @@ Overview
 			const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
 			) const;
 	
-		:ref:`Tetra<doxid-classgeode_1_1_tetra>` :target:`tetra<doxid-classgeode_1_1_tetrahedral_solid_1ada27b86136318d391b5cdb1d3d0f1f32>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const;
+		:ref:`Tetra<doxid-classgeode_1_1_tetra>` :ref:`tetra<doxid-classgeode_1_1_tetrahedral_solid_1ada27b86136318d391b5cdb1d3d0f1f32>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const;
+		:ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension> :ref:`triangle<doxid-classgeode_1_1_tetrahedral_solid_1a0f2dc71870506c6a0d5aa2cdb5c604e9>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& facet) const;
 	};
 
 	// direct descendants
@@ -298,4 +299,24 @@ Return the local indices of the two facets incident to the opposite edge in tetr
 		- edge_vertices
 
 		- Indices of the two vertices of an edge.  throw an exception if edge_vertices are not tetrahedron vertices.
+
+.. index:: pair: function; tetra
+.. _doxid-classgeode_1_1_tetrahedral_solid_1ada27b86136318d391b5cdb1d3d0f1f32:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`Tetra<doxid-classgeode_1_1_tetra>` tetra(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const
+
+Return a geometrical :ref:`Tetra <doxid-classgeode_1_1_tetra>` from an element of the mesh.
+
+.. index:: pair: function; triangle
+.. _doxid-classgeode_1_1_tetrahedral_solid_1a0f2dc71870506c6a0d5aa2cdb5c604e9:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension> triangle(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& facet) const
+
+Return a geometrical :ref:`Triangle <doxid-classgeode_1_1_triangle>` from a tetrahedron facet of the mesh.
 
