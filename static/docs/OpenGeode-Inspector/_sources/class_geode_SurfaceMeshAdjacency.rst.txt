@@ -1,0 +1,31 @@
+.. index:: pair: class; geode::SurfaceMeshAdjacency
+.. _doxid-classgeode_1_1_surface_mesh_adjacency:
+
+template class geode::SurfaceMeshAdjacency
+==========================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the adjacency on the edges of a SurfaceMesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_adjacency.h>
+	
+	template <index_t dimension>
+	class SurfaceMeshAdjacency
+	{
+	public:
+		// construction
+	
+		:target:`SurfaceMeshAdjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1a288108b40e05ddd30f2aa8b43bc618ef>`(const SurfaceMesh<dimension>& mesh);
+
+		// methods
+	
+		bool :target:`mesh_has_wrong_adjacencies<doxid-classgeode_1_1_surface_mesh_adjacency_1a5a83254e11ba79da9ce0fe24ce1df78d>`() const;
+		index_t :target:`nb_edges_with_wrong_adjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1a30277596e668fb902bf205e7cf567b4a>`() const;
+		const std::vector<PolygonEdge>& :target:`polygon_edges_with_wrong_adjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1a0e11281b34b9af143c80c1e9d04e92c9>`() const;
+	};

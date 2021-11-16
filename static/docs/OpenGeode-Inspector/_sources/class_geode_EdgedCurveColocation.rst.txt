@@ -1,0 +1,31 @@
+.. index:: pair: class; geode::EdgedCurveColocation
+.. _doxid-classgeode_1_1_edged_curve_colocation:
+
+template class geode::EdgedCurveColocation
+==========================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the colocation of points in an EdgedCurve
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <edgedcurve_colocation.h>
+	
+	template <index_t dimension>
+	class EdgedCurveColocation
+	{
+	public:
+		// construction
+	
+		:target:`EdgedCurveColocation<doxid-classgeode_1_1_edged_curve_colocation_1ad885b26a01f1012fb8e7277cf44da8bb>`(const EdgedCurve<dimension>& mesh);
+
+		// methods
+	
+		bool :target:`mesh_has_colocated_points<doxid-classgeode_1_1_edged_curve_colocation_1a6b1e3e605cbce1df468e1ea1d56306c2>`() const;
+		index_t :target:`nb_colocated_points<doxid-classgeode_1_1_edged_curve_colocation_1a510086a05ef8e4f93a7749560730c76d>`() const;
+		std::vector<std::vector<index_t>> :target:`colocated_points_groups<doxid-classgeode_1_1_edged_curve_colocation_1a8816bdbd2b1f8045ccd016baeccb0054>`() const;
+	};

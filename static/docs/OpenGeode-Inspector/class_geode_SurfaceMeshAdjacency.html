@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template class geode::SurfaceMeshAdjacency &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::SurfaceMeshColocation" href="class_geode_SurfaceMeshColocation.html" />
+    <link rel="prev" title="template class geode::SolidMeshDegeneration" href="class_geode_SolidMeshDegeneration.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="template-class-geode-surfacemeshadjacency">
+<span id="doxid-classgeode-1-1-surface-mesh-adjacency"></span><span id="index-0"></span><h1>template class geode::SurfaceMeshAdjacency</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Class for inspecting the adjacency on the edges of a SurfaceMesh</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surface_adjacency.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">SurfaceMeshAdjacency</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-mesh-adjacency-1a288108b40e05ddd30f2aa8b43bc618ef"><span></span><span class="n">SurfaceMeshAdjacency</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-mesh-adjacency-1a5a83254e11ba79da9ce0fe24ce1df78d"><span></span><span class="n">mesh_has_wrong_adjacencies</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-mesh-adjacency-1a30277596e668fb902bf205e7cf567b4a"><span></span><span class="n">nb_edges_with_wrong_adjacency</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">PolygonEdge</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-mesh-adjacency-1a0e11281b34b9af143c80c1e9d04e92c9"><span></span><span class="n">polygon_edges_with_wrong_adjacency</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_SurfaceMeshAdjacency.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

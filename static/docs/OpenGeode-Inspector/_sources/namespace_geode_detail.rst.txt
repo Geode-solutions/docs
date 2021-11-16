@@ -7,6 +7,7 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
+	class_geode_detail_ColocationImpl.rst
 	class_geode_detail_DegenerationImpl.rst
 
 
@@ -19,6 +20,9 @@ namespace geode::detail
 	namespace detail {
 
 	// classes
+
+	template <index_t dimension, typename Mesh>
+	class :ref:`ColocationImpl<doxid-classgeode_1_1detail_1_1_colocation_impl>`;
 
 	template <typename Mesh>
 	class :ref:`DegenerationImpl<doxid-classgeode_1_1detail_1_1_degeneration_impl>`;

@@ -1,0 +1,27 @@
+.. index:: pair: class; geode::detail::ColocationImpl
+.. _doxid-classgeode_1_1detail_1_1_colocation_impl:
+
+template class geode::detail::ColocationImpl
+============================================
+
+.. toctree::
+	:hidden:
+
+Implementation of the inspection of the colocation of a Mesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <colocation_impl.h>
+	
+	template <index_t dimension, typename Mesh>
+	class ColocationImpl
+	{
+	public:
+		// methods
+	
+		bool :target:`mesh_has_colocated_points<doxid-classgeode_1_1detail_1_1_colocation_impl_1ad857a52f1f5175f81a30a6357b3e6686>`() const;
+		index_t :target:`nb_colocated_points<doxid-classgeode_1_1detail_1_1_colocation_impl_1a089dd6cfcf8d9d88cd0ba9974aa1b1f6>`() const;
+		std::vector<std::vector<index_t>> :target:`colocated_points_groups<doxid-classgeode_1_1detail_1_1_colocation_impl_1a5ab1595a4e93aed5c2b1d494121b4216>`() const;
+	};

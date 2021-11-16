@@ -19,10 +19,6 @@ Implementation of the inspection of the degeneration of a Mesh
 	class DegenerationImpl
 	{
 	public:
-		// construction
-	
-		:target:`DegenerationImpl<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a33979c0608cda8f70418d525fad4f68f>`(const Mesh& mesh);
-
 		// methods
 	
 		bool :target:`is_mesh_degenerated<doxid-classgeode_1_1detail_1_1_degeneration_impl_1a695521137ff2a9436787ee2977b2fdfc>`() const;
