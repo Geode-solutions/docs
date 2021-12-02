@@ -16,6 +16,8 @@ namespace geode
 	class_geode_SurfaceMeshAdjacency.rst
 	class_geode_SurfaceMeshColocation.rst
 	class_geode_SurfaceMeshDegeneration.rst
+	class_geode_SurfaceMeshEdgeManifold.rst
+	class_geode_SurfaceMeshVertexManifold.rst
 
 
 
@@ -56,6 +58,12 @@ namespace geode
 	template <index_t dimension>
 	class :ref:`SurfaceMeshDegeneration<doxid-classgeode_1_1_surface_mesh_degeneration>`;
 
+	template <index_t dimension>
+	class :ref:`SurfaceMeshEdgeManifold<doxid-classgeode_1_1_surface_mesh_edge_manifold>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshVertexManifold<doxid-classgeode_1_1_surface_mesh_vertex_manifold>`;
+
 	// global functions
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
@@ -70,5 +78,7 @@ namespace geode
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab292174f383abd1f6d6e3a596d86a0f2>`(:ref:`EdgedCurveDegeneration<doxid-classgeode_1_1_edged_curve_degeneration>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a927bcadf35dfee270dcfea338151c890>`(:ref:`SolidMeshDegeneration<doxid-classgeode_1_1_solid_mesh_degeneration>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6c59b52d1edafda37285841ba7388aa1>`(:ref:`SurfaceMeshDegeneration<doxid-classgeode_1_1_surface_mesh_degeneration>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a34b07f05f2aff0940c7d9e8f3c31cfb8>`(:ref:`SurfaceMeshEdgeManifold<doxid-classgeode_1_1_surface_mesh_edge_manifold>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab96a179956a77c508b5941878c8ba238>`(:ref:`SurfaceMeshVertexManifold<doxid-classgeode_1_1_surface_mesh_vertex_manifold>`);
 
 	} // namespace geode
