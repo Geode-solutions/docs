@@ -65,18 +65,6 @@ Inherited Members
 			const Point<dimension>& point
 			);
 	
-		template <index_t T = dimension>
-		std::enable_if<T==2, bool>::type :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1a0b016cabf10928b662c101d95fe9673d>`(
-			const PolygonEdge& edge,
-			const Point<dimension>& point
-			) const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==2, bool>::type :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1a7044dc6e68e57701d20143b8ec2cf0ff>`(
-			index_t edge_id,
-			const Point<dimension>& point
-			) const;
-	
 		:ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1a49d0d73288724398a6bd046f2ffb7813>`(
 			const PolygonEdge& edge,
 			const Point<dimension>& point
@@ -88,6 +76,18 @@ Inherited Members
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_triangulated_surface_modifier_1a932099dbcd5b09588f24897cc315bedd>`();
 		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_triangulated_surface_modifier_1af2557ffb518f9d3188949f8db39c2956>`();
 		std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_t>> :ref:`clean<doxid-classgeode_1_1_triangulated_surface_modifier_1a06a33437e9b4afd9ba7dbf07728ffff4>`();
+	
+		static bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1a8a22a9ec1de01230fe91bff263ea7a14>`(
+			const SurfaceMesh<dimension>& surface,
+			const PolygonEdge& edge,
+			const Point<dimension>& point
+			);
+	
+		static bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1ada10b48a1ff6958e596ea9bb865a78e9>`(
+			const SurfaceMesh<dimension>& surface,
+			index_t edge_id,
+			const Point<dimension>& point
+			);
 
 .. _details-classgeode_1_1_triangulated_surface_epsilon_modifier:
 

@@ -47,18 +47,6 @@ Overview
 			const Point<dimension>& point
 			);
 	
-		template <index_t T = dimension>
-		std::enable_if<T==2, bool>::type :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1a0b016cabf10928b662c101d95fe9673d>`(
-			const PolygonEdge& edge,
-			const Point<dimension>& point
-			) const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==2, bool>::type :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1a7044dc6e68e57701d20143b8ec2cf0ff>`(
-			index_t edge_id,
-			const Point<dimension>& point
-			) const;
-	
 		:ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1a49d0d73288724398a6bd046f2ffb7813>`(
 			const PolygonEdge& edge,
 			const Point<dimension>& point
@@ -70,6 +58,18 @@ Overview
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_triangulated_surface_modifier_1a932099dbcd5b09588f24897cc315bedd>`();
 		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_triangulated_surface_modifier_1af2557ffb518f9d3188949f8db39c2956>`();
 		std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_t>> :ref:`clean<doxid-classgeode_1_1_triangulated_surface_modifier_1a06a33437e9b4afd9ba7dbf07728ffff4>`();
+	
+		static bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1a8a22a9ec1de01230fe91bff263ea7a14>`(
+			const SurfaceMesh<dimension>& surface,
+			const PolygonEdge& edge,
+			const Point<dimension>& point
+			);
+	
+		static bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1ada10b48a1ff6958e596ea9bb865a78e9>`(
+			const SurfaceMesh<dimension>& surface,
+			index_t edge_id,
+			const Point<dimension>& point
+			);
 	};
 
 	// direct descendants
@@ -145,80 +145,6 @@ Split an edge into two new edges. The triangles incident to this edge are also s
 		- point
 
 		- Coordinates of the split point.  Split triangles are set as inactive but not deleted.
-
-.. index:: pair: function; is_collapse_edge_valid
-.. _doxid-classgeode_1_1_triangulated_surface_modifier_1a0b016cabf10928b662c101d95fe9673d:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	template <index_t T = dimension>
-	std::enable_if<T==2, bool>::type is_collapse_edge_valid(
-		const PolygonEdge& edge,
-		const Point<dimension>& point
-		) const
-
-Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- edge
-
-		- Index of the PolygonEdge to collapse.
-
-	*
-		- point
-
-		- Coordinates of the collapse point.
-
-
-
-.. rubric:: Returns:
-
-true if collapse will keep mesh valid.
-
-.. index:: pair: function; is_collapse_edge_valid
-.. _doxid-classgeode_1_1_triangulated_surface_modifier_1a7044dc6e68e57701d20143b8ec2cf0ff:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	template <index_t T = dimension>
-	std::enable_if<T==2, bool>::type is_collapse_edge_valid(
-		index_t edge_id,
-		const Point<dimension>& point
-		) const
-
-Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- edge_id
-
-		- Unique index of the edge to collapse.
-
-	*
-		- point
-
-		- Coordinates of the collapse point.
-
-
-
-.. rubric:: Returns:
-
-true if collapse will keep mesh valid.
 
 .. index:: pair: function; collapse_edge
 .. _doxid-classgeode_1_1_triangulated_surface_modifier_1a49d0d73288724398a6bd046f2ffb7813:
@@ -362,4 +288,78 @@ Clean up the mesh removing inactive triangles, isolated vertices and edges.
 .. rubric:: Returns:
 
 old2new mappings for triangles, vertices and edges.
+
+.. index:: pair: function; is_collapse_edge_valid
+.. _doxid-classgeode_1_1_triangulated_surface_modifier_1a8a22a9ec1de01230fe91bff263ea7a14:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static bool is_collapse_edge_valid(
+		const SurfaceMesh<dimension>& surface,
+		const PolygonEdge& edge,
+		const Point<dimension>& point
+		)
+
+Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge
+
+		- Index of the PolygonEdge to collapse.
+
+	*
+		- point
+
+		- Coordinates of the collapse point.
+
+
+
+.. rubric:: Returns:
+
+true if collapse will keep mesh valid.
+
+.. index:: pair: function; is_collapse_edge_valid
+.. _doxid-classgeode_1_1_triangulated_surface_modifier_1ada10b48a1ff6958e596ea9bb865a78e9:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static bool is_collapse_edge_valid(
+		const SurfaceMesh<dimension>& surface,
+		index_t edge_id,
+		const Point<dimension>& point
+		)
+
+Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Unique index of the edge to collapse.
+
+	*
+		- point
+
+		- Coordinates of the collapse point.
+
+
+
+.. rubric:: Returns:
+
+true if collapse will keep mesh valid.
 

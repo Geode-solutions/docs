@@ -71,18 +71,6 @@
         <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
         <span class="p">);</span>
 
-    <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">T</span> <span class="o">=</span> <span class="n">dimension</span><span class="o">&gt;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">enable_if</span><span class="o">&lt;</span><span class="n">T</span><span class="o">==</span><span class="mi">2</span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;::</span><span class="n">type</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a0b016cabf10928b662c101d95fe9673d"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
-        <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
-        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-
-    <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">T</span> <span class="o">=</span> <span class="n">dimension</span><span class="o">&gt;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">enable_if</span><span class="o">&lt;</span><span class="n">T</span><span class="o">==</span><span class="mi">2</span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;::</span><span class="n">type</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a7044dc6e68e57701d20143b8ec2cf0ff"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span>
-        <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
-        <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
-        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-
     <a class="reference internal" href="struct_geode_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a49d0d73288724398a6bd046f2ffb7813"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
@@ -94,6 +82,18 @@
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a932099dbcd5b09588f24897cc315bedd"><span class="std std-ref">clean_vertices</span></a><span></span><span class="p">();</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1af2557ffb518f9d3188949f8db39c2956"><span class="std std-ref">clean_edges</span></a><span></span><span class="p">();</span>
     <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a06a33437e9b4afd9ba7dbf07728ffff4"><span class="std std-ref">clean</span></a><span></span><span class="p">();</span>
+
+    <span class="k">static</span> <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a8a22a9ec1de01230fe91bff263ea7a14"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
+
+    <span class="k">static</span> <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1ada10b48a1ff6958e596ea9bb865a78e9"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
@@ -145,53 +145,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a0b016cabf10928b662c101d95fe9673d"><span id="index-3"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">T</span> <span class="o">=</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">enable_if</span><span class="o">&lt;</span><span class="n">T</span><span class="o">==</span><span class="mi">2</span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;::</span><span class="n">type</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
-    <span class="p">)</span> <span class="k">const</span></pre>
-<p>Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>edge</p></td>
-<td><p>Index of the PolygonEdge to collapse.</p></td>
-</tr>
-<tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the collapse point.</p></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Returns:</p>
-<p>true if collapse will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a7044dc6e68e57701d20143b8ec2cf0ff"><span id="index-4"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">T</span> <span class="o">=</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">enable_if</span><span class="o">&lt;</span><span class="n">T</span><span class="o">==</span><span class="mi">2</span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;::</span><span class="n">type</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
-    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
-    <span class="p">)</span> <span class="k">const</span></pre>
-<p>Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>edge_id</p></td>
-<td><p>Unique index of the edge to collapse.</p></td>
-</tr>
-<tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the collapse point.</p></td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Returns:</p>
-<p>true if collapse will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a49d0d73288724398a6bd046f2ffb7813"><span id="index-5"></span><a class="reference internal" href="struct_geode_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a49d0d73288724398a6bd046f2ffb7813"><span id="index-3"></span><a class="reference internal" href="struct_geode_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
@@ -211,7 +165,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1ad36af2def7e5726fc60b920c3d23b017"><span id="index-6"></span><a class="reference internal" href="struct_geode_CollapseEdgeInfo.html#doxid-structgeode-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1ad36af2def7e5726fc60b920c3d23b017"><span id="index-4"></span><a class="reference internal" href="struct_geode_CollapseEdgeInfo.html#doxid-structgeode-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
 <p>Collapse an edge. The triangles incident to this edge are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
@@ -228,7 +182,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1aabc8f7b290f31d56b3a2ef014d772008"><span id="index-7"></span><span></span><span class="kt">void</span> <span class="n">swap_edge</span><span class="p">(</span><span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1aabc8f7b290f31d56b3a2ef014d772008"><span id="index-5"></span><span></span><span class="kt">void</span> <span class="n">swap_edge</span><span class="p">(</span><span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">)</span></pre>
 <p>Swap an edge.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
@@ -242,22 +196,68 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1af8b435ff949b373922c3130aec0ee212"><span id="index-8"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_triangles</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1af8b435ff949b373922c3130aec0ee212"><span id="index-6"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_triangles</span><span class="p">()</span></pre>
 <p>Clean up the mesh removing inactive triangles</p>
 <p class="rubric">Returns:</p>
 <p>old2new mappings for triangles</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a932099dbcd5b09588f24897cc315bedd"><span id="index-9"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_vertices</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a932099dbcd5b09588f24897cc315bedd"><span id="index-7"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_vertices</span><span class="p">()</span></pre>
 <p>Clean up the mesh removing isolated vertices This method should be called after <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1af8b435ff949b373922c3130aec0ee212"><span class="std std-ref">clean_triangles()</span></a></p>
 <p class="rubric">Returns:</p>
 <p>old2new mappings for vertices</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1af2557ffb518f9d3188949f8db39c2956"><span id="index-10"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_edges</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1af2557ffb518f9d3188949f8db39c2956"><span id="index-8"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_edges</span><span class="p">()</span></pre>
 <p>Clean up the mesh removing edges This method should be called after <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1af8b435ff949b373922c3130aec0ee212"><span class="std std-ref">clean_triangles()</span></a></p>
 <p class="rubric">Returns:</p>
 <p>old2new mappings for edges</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a06a33437e9b4afd9ba7dbf07728ffff4"><span id="index-11"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">clean</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a06a33437e9b4afd9ba7dbf07728ffff4"><span id="index-9"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">clean</span><span class="p">()</span></pre>
 <p>Clean up the mesh removing inactive triangles, isolated vertices and edges.</p>
 <p class="rubric">Returns:</p>
 <p>old2new mappings for triangles, vertices and edges.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a8a22a9ec1de01230fe91bff263ea7a14"><span id="index-10"></span><span></span><span class="k">static</span> <span class="kt">bool</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge</p></td>
+<td><p>Index of the PolygonEdge to collapse.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if collapse will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1ada10b48a1ff6958e596ea9bb865a78e9"><span id="index-11"></span><span></span><span class="k">static</span> <span class="kt">bool</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to collapse.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if collapse will keep mesh valid.</p>
 </div>
 </div>
 </div>

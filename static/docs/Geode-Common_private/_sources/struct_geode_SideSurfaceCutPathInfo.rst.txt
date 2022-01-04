@@ -20,8 +20,7 @@ struct geode::SideSurfaceCutPathInfo
 		// fields
 	
 		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`> :target:`along_path<doxid-structgeode_1_1_side_surface_cut_path_info_1abd31dce367d6f92211ebae99494269b5>`;
-		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`> :target:`across_path<doxid-structgeode_1_1_side_surface_cut_path_info_1aeba7c7ebc629be024d425799d805f3ed>`;
-		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`> :target:`remaining<doxid-structgeode_1_1_side_surface_cut_path_info_1aa7ac747b4e97921477fd01dec0090d8e>`;
+		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`> :target:`modified<doxid-structgeode_1_1_side_surface_cut_path_info_1a3f89fa0b5e1215e86f60e792b72830b0>`;
 		std::vector<:ref:`TriangleMapping<doxid-namespacegeode_1af3ede97a06831da5d71e5a7212f089cc>`> :target:`triangles<doxid-structgeode_1_1_side_surface_cut_path_info_1ad9ba84dfeb56a0c1334d90ceae133ba1>`;
 
 		// construction
