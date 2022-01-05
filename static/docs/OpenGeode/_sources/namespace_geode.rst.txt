@@ -238,6 +238,9 @@ Overview
 	typedef absl::InlinedVector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`, 2> :target:`EdgesAroundVertex<doxid-namespacegeode_1aab3c9dc52d762219dcc9137475590210>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshImplTag<doxid-structgeode_1_1_mesh_impl_tag>`> :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`> :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`;
+	typedef std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> :target:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`;
+	typedef std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> :target:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`;
+	typedef absl::InlinedVector<:ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>, 1<<dimension> :target:`GridCellIndices<doxid-namespacegeode_1aca79d2a2adb6525593f62e267400cbbf>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 4> :target:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`;
 	typedef absl::InlinedVector<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`, 4> :target:`PolyhedronFacets<doxid-namespacegeode_1a118116e866a37dbbadecebb92207436d>`;
 	typedef :ref:`PolyhedronFacets<doxid-namespacegeode_1a118116e866a37dbbadecebb92207436d>` :target:`PolyhedronFacetsOnBorder<doxid-namespacegeode_1af2f63049603178fd6a0be3783c5487e0>`;
@@ -1067,6 +1070,8 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1ae3a0efd7d2b1a538c139321616df2007>`(:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1868badab23067bbd9a426b8cce96665>`(:ref:`PolyhedralSolidViewBuilder<doxid-classgeode_1_1_polyhedral_solid_view_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ab57eb299d31f7ff17e1a54391b1e9538>`(:ref:`PolyhedralSolidView<doxid-classgeode_1_1_polyhedral_solid_view>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa30656f85712839b100104ebf6232989>`(:ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a49cc1447b6c8a594f43a98d2dbbf4f5f>`(:ref:`GridCellIndices<doxid-namespacegeode_1aca79d2a2adb6525593f62e267400cbbf>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa3df0d5866380998f87957299ec1334d>`(:ref:`RegularGrid<doxid-classgeode_1_1_regular_grid>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ad28cbab7eb31a152c58dcd693b4c046e>`(:ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af2c105ceeccb7ccf5f0cf0c085264268>`(:ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`);
