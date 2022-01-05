@@ -24,8 +24,8 @@ Interface class to represent regular grids. :ref:`More...<details-classgeode_1_1
 	public:
 		// typedefs
 	
-		typedef :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension> :target:`OPENGEODE_MESH_DEPRECATED<doxid-classgeode_1_1_regular_grid_1aff6d14b7b48584b04fdd5a700357b04c>`;
-		typedef :ref:`GridCellIndices<doxid-namespacegeode_1aca79d2a2adb6525593f62e267400cbbf>`<dimension> :target:`OPENGEODE_MESH_DEPRECATED<doxid-classgeode_1_1_regular_grid_1a0c4c2d587f02739fcdfc8c052e05f466>`;
+		typedef :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension> :target:`Index<doxid-classgeode_1_1_regular_grid_1a248db4d0164bd04801110527269829e2>`;
+		typedef :ref:`GridCellIndices<doxid-namespacegeode_1aca79d2a2adb6525593f62e267400cbbf>`<dimension> :target:`Indices<doxid-classgeode_1_1_regular_grid_1a4a31501a2cd3ed32043f4c23313d4308>`;
 
 		// construction
 	
