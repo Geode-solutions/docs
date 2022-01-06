@@ -38,6 +38,7 @@ namespace geode::detail
 	class_geode_detail_VTUInputImpl.rst
 	class_geode_detail_VTUOutputImpl.rst
 	class_geode_detail_VTUPolyhedralInput.rst
+	class_geode_detail_VTUPolyhedralOutput.rst
 	class_geode_detail_VTUTetrahedralInput.rst
 	class_geode_detail_VTUTetrahedralOutput.rst
 
@@ -106,16 +107,9 @@ namespace geode::detail
 	class :ref:`VTUOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_output_impl>`;
 
 	class :ref:`VTUPolyhedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_polyhedral_input>`;
+	class :ref:`VTUPolyhedralOutput<doxid-classgeode_1_1detail_1_1_v_t_u_polyhedral_output>`;
 	class :ref:`VTUTetrahedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_tetrahedral_input>`;
 	class :ref:`VTUTetrahedralOutput<doxid-classgeode_1_1detail_1_1_v_t_u_tetrahedral_output>`;
-
-	// global variables
-
-	static constexpr auto :target:`TETRAHEDRON<doxid-namespacegeode_1_1detail_1ad706149d0e1845e9b75e472089bf3774>` = 10u;
-	static constexpr auto :target:`HEXAHEDRON<doxid-namespacegeode_1_1detail_1a6d71968250bfad74d8e4d982a1736d6e>` = 12u;
-	static constexpr auto :target:`PRISM<doxid-namespacegeode_1_1detail_1a5842c38c45f25770bb1cb85bf207ab63>` = 13u;
-	static constexpr auto :target:`PYRAMID<doxid-namespacegeode_1_1detail_1a8b046d07c62b7993a3d3b96b8cf5fb2b>` = 14u;
-	static constexpr std::array<index_t, 9> :target:`VTK_CELL_TYPE<doxid-namespacegeode_1_1detail_1a5f40222abc9ad1660bcc59f53a018e9b>` { 0, 0, 0, 0,             TETRAHEDRON, PYRAMID, PRISM, 0, HEXAHEDRON };
 
 	// global functions
 
