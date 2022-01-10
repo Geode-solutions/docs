@@ -49,6 +49,7 @@ namespace geode
 	class_geode_LicensedModule.rst
 	class_geode_PropagationSettings.rst
 	class_geode_RayTracing3D.rst
+	class_geode_RegularGridScalarFunction.rst
 	class_geode_SectionGeometricModifier.rst
 	class_geode_SolidPatchFinder.rst
 	class_geode_SolidPathFinder.rst
@@ -168,6 +169,10 @@ Overview
 	class :ref:`LicensedModule<doxid-classgeode_1_1_licensed_module>`;
 	class :ref:`PropagationSettings<doxid-classgeode_1_1_propagation_settings>`;
 	class :ref:`RayTracing3D<doxid-classgeode_1_1_ray_tracing3_d>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridScalarFunction<doxid-classgeode_1_1_regular_grid_scalar_function>`;
+
 	class :ref:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier>`;
 	class :ref:`SolidPatchFinder<doxid-classgeode_1_1_solid_patch_finder>`;
 	class :ref:`SolidPathFinder<doxid-classgeode_1_1_solid_path_finder>`;
@@ -435,6 +440,7 @@ Overview
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa3a77cddd3bb34d4120f88f3d36be399>`(:ref:`RegularGridScalarFunction<doxid-classgeode_1_1_regular_grid_scalar_function>`);
 
 	void geode_common_helpers_api :target:`perform_propagation<doxid-namespacegeode_1ade7ecbb9ca6e76e682b979d2f8acb541>`(
 		const TetrahedralSolid3D& solid,
