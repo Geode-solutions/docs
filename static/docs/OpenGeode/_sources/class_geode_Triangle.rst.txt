@@ -48,5 +48,6 @@ template class geode::Triangle
 		template <index_t T = dimension>
 		std::enable_if<T==3, absl::optional<:ref:`Plane<doxid-classgeode_1_1_plane>`>>::type :target:`new_plane<doxid-classgeode_1_1_triangle_1afbb10d8d0eecc2112438ffdb80105a35>`() const;
 	
+		void :target:`set_point<doxid-classgeode_1_1_triangle_1abdb2f7cdf7d55eb96fe8ff0c390e2f06>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 		const std::array<std::reference_wrapper<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>>, 3>& :target:`vertices<doxid-classgeode_1_1_triangle_1a5a94e5efecadcfe2572f1009658f95d2>`() const;
 	};

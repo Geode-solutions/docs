@@ -33,5 +33,6 @@ template class geode::Segment
 		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`normalized_direction<doxid-classgeode_1_1_segment_1aba234680ea52a7703d76b34b0c75737b>`() const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`barycenter<doxid-classgeode_1_1_segment_1ade0c3ea243f0d805a6a2e3963728926a>`() const;
 		double :target:`length<doxid-classgeode_1_1_segment_1ad580754d6023e3a0d47ece06f8ba635b>`() const;
+		void :target:`set_point<doxid-classgeode_1_1_segment_1a7acf900cd93e049ec72e4a771f46a3fb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
 		const std::array<std::reference_wrapper<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>>, 2>& :target:`vertices<doxid-classgeode_1_1_segment_1a1c019bd1f4ddcfdfca37767f0ef735f1>`() const;
 	};
