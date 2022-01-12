@@ -242,11 +242,13 @@ Overview
 	typedef std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> :target:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`;
 	typedef absl::InlinedVector<:ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>, 1<<dimension> :target:`GridCellIndices<doxid-namespacegeode_1aca79d2a2adb6525593f62e267400cbbf>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 4> :target:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`;
+	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 4> :target:`PolyhedronVertices<doxid-namespacegeode_1a6af0e9097515c9070ccb0168e4f77dec>`;
 	typedef absl::InlinedVector<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`, 4> :target:`PolyhedronFacets<doxid-namespacegeode_1a118116e866a37dbbadecebb92207436d>`;
 	typedef :ref:`PolyhedronFacets<doxid-namespacegeode_1a118116e866a37dbbadecebb92207436d>` :target:`PolyhedronFacetsOnBorder<doxid-namespacegeode_1af2f63049603178fd6a0be3783c5487e0>`;
 	typedef absl::InlinedVector<:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`, 20> :target:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 10> :target:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :target:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>`;
+	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 3> :target:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>`;
 	typedef absl::InlinedVector<:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`, 3> :target:`PolygonEdgesOnBorder<doxid-namespacegeode_1a67300fb765762517c4026ded480669fb>`;
 	typedef absl::InlinedVector<:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`, 10> :target:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`EdgedCurveInput<doxid-classgeode_1_1_edged_curve_input>`<dimension>, :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>&, absl::string_view> :target:`EdgedCurveInputFactory<doxid-namespacegeode_1aa97083e7009a0893e4b0dbaf53a863e9>`;

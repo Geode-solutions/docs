@@ -96,6 +96,7 @@ Inherited Members
 		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_polyhedron_facets<doxid-classgeode_1_1_solid_mesh_1adaebe9b7faace62e5ec8eefeb844b21b>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
 		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_polyhedron_facet_vertices<doxid-classgeode_1_1_solid_mesh_1a23cc4137a29fa6321cf684a901e75939>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polyhedron_vertex<doxid-classgeode_1_1_solid_mesh_1a6360114433cfc117c6eefec026573c0a>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
+		:ref:`PolyhedronVertices<doxid-namespacegeode_1a6af0e9097515c9070ccb0168e4f77dec>` :ref:`polyhedron_vertices<doxid-classgeode_1_1_solid_mesh_1a99b7c6f37fd2302b0ea9b464a18aed7f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
 	
 		absl::optional<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`> :ref:`vertex_in_polyhedron<doxid-classgeode_1_1_solid_mesh_1ae510c7176940952e3685f759224a8be0>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id,
