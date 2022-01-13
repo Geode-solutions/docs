@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::detail::VTPPointSetOutput
+.. _doxid-classgeode_1_1detail_1_1_v_t_p_point_set_output:
+
+class geode::detail::VTPPointSetOutput
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vtp_point_set_output.h>
+	
+	class VTPPointSetOutput: public PointSetOutput< 3 >
+	{
+	public:
+		// construction
+	
+		:target:`VTPPointSetOutput<doxid-classgeode_1_1detail_1_1_v_t_p_point_set_output_1a3539435b6fa87ae7197e88325bb29c2a>`(const PointSet<3>& point_set, absl::string_view filename);
+
+		// methods
+	
+		void :target:`write<doxid-classgeode_1_1detail_1_1_v_t_p_point_set_output_1a53643d168dae6e06c7a7002a32dd030f>`() const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_p_point_set_output_1a737addc55d3fd8ff8c696c8a2e573970>`();
+	};
