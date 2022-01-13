@@ -108,8 +108,44 @@ export default {
     ],
     formats_io: [
       {
+        extension: '.dxf',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
+        in: true,
+        out: true,
+      },
+      {
         extension: '.msh (v2 and v4 supported)',
         cpp: "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
+        in: true,
+        out: true,
+      },
+      {
+        extension: '.obj',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
+        in: true,
+        out: true,
+      },
+      {
+        extension: '.obj',
+        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
+        in: false,
+        out: true,
+      },
+      {
+        extension: '.ply',
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
+        in: true,
+        out: true,
+      },
+      {
+        extension: '.smesh',
+        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
+        in: true,
+        out: false,
+      },
+      {
+        extension: '.stl',
+        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
         in: true,
         out: true,
       },
@@ -126,32 +162,8 @@ export default {
         out: true,
       },
       {
-        extension: '.stl',
-        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
-        in: true,
-        out: true,
-      },
-      {
-        extension: '.dxf',
-        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
-        in: true,
-        out: true,
-      },
-      {
-        extension: '.ply',
-        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
-        in: true,
-        out: true,
-      },
-      {
-        extension: '.obj',
-        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
-        in: true,
-        out: true,
-      },
-      {
-        extension: '.obj',
-        cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
+        extension: '.vti (ascii only)',
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a><br/><a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a>",
         in: false,
         out: true,
       },
@@ -163,7 +175,7 @@ export default {
       },
       {
         extension: '.vtp (ascii only)',
-        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet3D</code></a><br/><a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
         in: false,
         out: true,
       },
@@ -176,12 +188,6 @@ export default {
       {
         extension: '.vtu (ascii only)',
         cpp: "<a href='/opengeode?page=class_geode_PolyhedralSolid.html'><code>PolyhedralSolid3D</code></a><br/><a href='/opengeode?page=class_geode_TetrahedralSolid.html'><code>TetrahedralSolid3D</code></a><br/><a href='/opengeode?page=class_geode_HybridSolid.html'><code>HybridSolid3D</code></a>",
-        in: false,
-        out: true,
-      },
-      {
-        extension: '.vti (ascii only)',
-        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a><br/><a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a>",
         in: false,
         out: true,
       },
