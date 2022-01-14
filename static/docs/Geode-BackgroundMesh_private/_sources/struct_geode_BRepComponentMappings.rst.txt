@@ -13,7 +13,7 @@ struct geode::BRepComponentMappings
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <extract_brep.h>
+	#include <brep_component_mappings.h>
 	
 	struct BRepComponentMappings
 	{

@@ -91,7 +91,6 @@ Overview
 		const BoundingBox2D& domain_box
 		);
 
-	std::tuple<BRep, :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`> geode_backgroundmesh_3d_api :target:`extract_brep<doxid-namespacegeode_1a5acb38b760e5f021cced3d3412f75ed4>`(const :ref:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d>`& background_mesh);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(TetrahedralSolid);
@@ -101,6 +100,7 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(Surface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);
+	std::tuple<BRep, :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`> geode_backgroundmesh_3d_api :target:`extract_brep<doxid-namespacegeode_1a5acb38b760e5f021cced3d3412f75ed4>`(const :ref:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d>`& background_mesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a4f46fd82e71ae8566c17fd392f72c55d>`(:ref:`BackgroundMeshBuilder<doxid-classgeode_1_1_background_mesh_builder>`);
