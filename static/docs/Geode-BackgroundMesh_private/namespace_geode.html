@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct geode::ComponentElement" href="struct_geode_ComponentElement.html" />
+    <link rel="next" title="struct geode::BRepComponentMappings" href="struct_geode_BRepComponentMappings.html" />
     <link rel="prev" title="Global Namespace" href="global.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -55,6 +55,7 @@
 
 <span class="c1">// structs</span>
 
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepComponentMappings.html#doxid-structgeode-1-1-b-rep-component-mappings"><span class="std std-ref">BRepComponentMappings</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_ComponentElement.html#doxid-structgeode-1-1-component-element"><span class="std std-ref">ComponentElement</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span><span class="o">&gt;</span>
@@ -110,7 +111,7 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f0825f02564723bd52f856a1ae100c9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4efa1c27af37ca80b792b5290f406968"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac3422b630458dde4bc69498508c56e4e"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
-<span class="n">BRep</span> <span class="n">geode_backgroundmesh_3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad6631f473979a406b1d3f7100342000b"><span></span><span class="n">extract_brep</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BackgroundMesh3D.html#doxid-classgeode-1-1-background-mesh3-d"><span class="std std-ref">BackgroundMesh3D</span></a><span></span><span class="o">&amp;</span> <span class="n">background_mesh</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_BRepComponentMappings.html#doxid-structgeode-1-1-b-rep-component-mappings"><span class="std std-ref">BRepComponentMappings</span></a><span></span><span class="o">&gt;</span> <span class="n">geode_backgroundmesh_3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5acb38b760e5f021cced3d3412f75ed4"><span></span><span class="n">extract_brep</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BackgroundMesh3D.html#doxid-classgeode-1-1-background-mesh3-d"><span class="std std-ref">BackgroundMesh3D</span></a><span></span><span class="o">&amp;</span> <span class="n">background_mesh</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca4385eb3d676a070003e6270f6472ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4f46fd82e71ae8566c17fd392f72c55d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder"><span class="std std-ref">BackgroundMeshBuilder</span></a><span></span><span class="p">);</span>

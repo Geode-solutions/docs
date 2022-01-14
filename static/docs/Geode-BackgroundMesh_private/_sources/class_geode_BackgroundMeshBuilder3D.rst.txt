@@ -29,12 +29,6 @@ class geode::BackgroundMeshBuilder3D
 		uuid :target:`insert_surface<doxid-classgeode_1_1_background_mesh_builder3_d_1af438e8e0bb3ba406c7bac4e47bdd67c6>`(const TriangulatedSurface3D& mesh);
 		uuid :target:`insert_line<doxid-classgeode_1_1_background_mesh_builder3_d_1adfb76d3c5462f1ac537a2d389398b23f>`(const Line3D& line);
 		uuid :target:`insert_curve<doxid-classgeode_1_1_background_mesh_builder3_d_1a252de8052c1564a28470c6a3b2df08a0>`(const EdgedCurve3D& mesh);
-		BRep :target:`extract_model<doxid-classgeode_1_1_background_mesh_builder3_d_1ae2a736a26c4d005c48875d4f4ea69a3c>`();
-	
-		BRep :target:`extract_model<doxid-classgeode_1_1_background_mesh_builder3_d_1ab0e98406c84a5f3798d501e64dea1a71>`(
-			absl::Span<const uuid> surface_uuids,
-			absl::Span<const uuid> line_uuids
-			);
 	
 		void :target:`add_component_facet_to_background_mesh_facet<doxid-classgeode_1_1_background_mesh_builder3_d_1a42189eae9ee63d0ce06ab767a74b5046>`(
 			const uuid& mesh_id,
@@ -47,6 +41,8 @@ class geode::BackgroundMeshBuilder3D
 			index_t facet_id,
 			absl::Span<const index_t> bmesh_vertex_ids
 			);
+	
+		virtual void :target:`clean_background_mesh<doxid-classgeode_1_1_background_mesh_builder3_d_1a1ef729f7feaeaafee0b509c6bdb80377>`();
 	};
 
 Inherited Members
