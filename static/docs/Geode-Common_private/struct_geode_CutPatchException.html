@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>struct geode::CutPatchException &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::CutPathException" href="struct_geode_CutPathException.html" />
+    <link rel="prev" title="template struct geode::CorrectnessInfo" href="struct_geode_CorrectnessInfo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="struct-geode-cutpatchexception">
+<span id="doxid-structgeode-1-1-cut-patch-exception"></span><span id="index-0"></span><h1>struct geode::CutPatchException</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;cut_exceptions.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="nl">CutPatchException</span><span class="p">:</span> <span class="k">public</span> <span class="n">OpenGeodeException</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">const</span> <span class="n">Point3D</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-cut-patch-exception-1aa3a89874c3b143b5e1fd576d70033852"><span></span><span class="n">location</span></span><span></span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-cut-patch-exception-1a9493db2eab51dfa97cf2eb755b5d3ce4"><span></span><span class="n">invalid_polyhedron</span></span><span></span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-cut-patch-exception-1a8b9e5f526e408b7174e4d9ee7cc3b5f4"><span></span><span class="n">edge_id</span></span><span></span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-cut-patch-exception-1acecbd6c1bca7e23b9f9f85057c62a4f3"><span></span><span class="n">cut_info</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-cut-patch-exception-1afc4af88cfb709066f6dcd75c0ad464ea"><span></span><span class="n">CutPatchException</span></span><span></span><span class="p">(</span><span class="n">Point3D</span> <span class="n">location_in</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/struct_geode_CutPatchException.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

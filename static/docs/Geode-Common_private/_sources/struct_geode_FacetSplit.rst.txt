@@ -1,0 +1,35 @@
+.. index:: pair: struct; geode::FacetSplit
+.. _doxid-structgeode_1_1_facet_split:
+
+struct geode::FacetSplit
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cut_exceptions.h>
+	
+	struct FacetSplit
+	{
+		// fields
+	
+		Point3D :target:`location<doxid-structgeode_1_1_facet_split_1a9c7816d0764b21fe016aa3ed335c10be>`;
+		PolyhedronFacet :target:`facet<doxid-structgeode_1_1_facet_split_1a9e4ecdbb5a8ebd08bf33bfae816df341>`;
+		index_t :target:`vertex_index<doxid-structgeode_1_1_facet_split_1a35d128ffd205fa79567fdc42470c4878>` { NO_ID };
+
+		// construction
+	
+		:target:`FacetSplit<doxid-structgeode_1_1_facet_split_1aea3c5cbabe95e51549ce302b42702267>`(
+			Point3D location_in,
+			PolyhedronFacet facet_in,
+			index_t vertex_index_in
+			);
+	
+		:target:`FacetSplit<doxid-structgeode_1_1_facet_split_1ab9117b0afd53441c795d7383b2a8fd1b>`();
+	};

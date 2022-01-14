@@ -207,20 +207,6 @@
 </li>
       </ul></li>
       <li>
-    first_invalid_element_on_split_edge
-
-      <ul>
-        <li><a href="class_geode_TetrahedralSolidModifier.html#index-11">function</a>, <a href="class_geode_TetrahedralSolidModifier.html#index-12">[1]</a>
-</li>
-      </ul></li>
-      <li>
-    first_invalid_element_on_split_facet
-
-      <ul>
-        <li><a href="class_geode_TetrahedralSolidModifier.html#index-5">function</a>, <a href="class_geode_TetrahedralSolidModifier.html#index-6">[1]</a>
-</li>
-      </ul></li>
-      <li>
     function
 
       <ul>
@@ -250,10 +236,6 @@
 </li>
         <li><a href="class_geode_SurfaceSegmentFinder2D.html#index-1">find_path</a>
 </li>
-        <li><a href="class_geode_TetrahedralSolidModifier.html#index-11">first_invalid_element_on_split_edge</a>, <a href="class_geode_TetrahedralSolidModifier.html#index-12">[1]</a>
-</li>
-        <li><a href="class_geode_TetrahedralSolidModifier.html#index-5">first_invalid_element_on_split_facet</a>, <a href="class_geode_TetrahedralSolidModifier.html#index-6">[1]</a>
-</li>
         <li><a href="class_geode_TetrahedralSolidEpsilonModifier.html#index-1">insert_point_in_tetrahedron</a>
 </li>
         <li><a href="class_geode_TriangulatedSurfaceEpsilonModifier.html#index-1">insert_point_in_triangle</a>
@@ -261,6 +243,10 @@
         <li><a href="class_geode_TetrahedralSolidEpsilonModifier.html#index-3">insert_point_on_edge</a>, <a href="class_geode_TetrahedralSolidEpsilonModifier.html#index-4">[1]</a>, <a href="class_geode_TriangulatedSurfaceEpsilonModifier.html#index-2">[2]</a>
 </li>
         <li><a href="class_geode_TetrahedralSolidEpsilonModifier.html#index-2">insert_point_on_facet</a>
+</li>
+        <li><a href="class_geode_TetrahedralSolidModifier.html#index-11">invalid_element_on_split_edge</a>, <a href="class_geode_TetrahedralSolidModifier.html#index-12">[1]</a>
+</li>
+        <li><a href="class_geode_TetrahedralSolidModifier.html#index-5">invalid_element_on_split_facet</a>, <a href="class_geode_TetrahedralSolidModifier.html#index-6">[1]</a>
 </li>
         <li><a href="class_geode_TetrahedralSolidModifier.html#index-15">is_collapse_edge_valid</a>, <a href="class_geode_TetrahedralSolidModifier.html#index-16">[1]</a>, <a href="class_geode_TriangulatedSurfaceModifier.html#index-10">[2]</a>, <a href="class_geode_TriangulatedSurfaceModifier.html#index-11">[3]</a>
 </li>
@@ -394,6 +380,20 @@
 </li>
       </ul></li>
       <li>
+    geode::CutPatchException
+
+      <ul>
+        <li><a href="struct_geode_CutPatchException.html#index-0">struct</a>
+</li>
+      </ul></li>
+      <li>
+    geode::CutPathException
+
+      <ul>
+        <li><a href="struct_geode_CutPathException.html#index-0">struct</a>
+</li>
+      </ul></li>
+      <li>
     geode::detail
 
       <ul>
@@ -405,6 +405,20 @@
 
       <ul>
         <li><a href="class_geode_EdgedCurveModifier.html#index-0">class</a>
+</li>
+      </ul></li>
+      <li>
+    geode::EdgeSplit
+
+      <ul>
+        <li><a href="struct_geode_EdgeSplit.html#index-0">struct</a>
+</li>
+      </ul></li>
+      <li>
+    geode::FacetSplit
+
+      <ul>
+        <li><a href="struct_geode_FacetSplit.html#index-0">struct</a>
 </li>
       </ul></li>
       <li>
@@ -519,6 +533,8 @@
         <li><a href="struct_geode_SectionCollapsePolygonEdgeInfo.html#index-0">struct</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     geode::SectionGeometricModifier
 
@@ -533,8 +549,6 @@
         <li><a href="struct_geode_SectionSplitPolygonEdgeInfo.html#index-0">struct</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     geode::SidedSolidSplitEdgeInfo
 
@@ -772,8 +786,22 @@
         <li><a href="enum_geode_IntersectionType.html#index-0">enum</a>
 </li>
       </ul></li>
+      <li>
+    invalid_element_on_split_edge
+
+      <ul>
+        <li><a href="class_geode_TetrahedralSolidModifier.html#index-11">function</a>, <a href="class_geode_TetrahedralSolidModifier.html#index-12">[1]</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    invalid_element_on_split_facet
+
+      <ul>
+        <li><a href="class_geode_TetrahedralSolidModifier.html#index-5">function</a>, <a href="class_geode_TetrahedralSolidModifier.html#index-6">[1]</a>
+</li>
+      </ul></li>
       <li>
     is_collapse_edge_valid
 
@@ -1068,6 +1096,14 @@
         <li><a href="struct_geode_CollapsePolygonEdgeInfo.html#index-0">geode::CollapsePolygonEdgeInfo</a>
 </li>
         <li><a href="struct_geode_CorrectnessInfo.html#index-0">geode::CorrectnessInfo</a>
+</li>
+        <li><a href="struct_geode_CutPatchException.html#index-0">geode::CutPatchException</a>
+</li>
+        <li><a href="struct_geode_CutPathException.html#index-0">geode::CutPathException</a>
+</li>
+        <li><a href="struct_geode_EdgeSplit.html#index-0">geode::EdgeSplit</a>
+</li>
+        <li><a href="struct_geode_FacetSplit.html#index-0">geode::FacetSplit</a>
 </li>
         <li><a href="struct_geode_GeometricSurfacePath.html#index-0">geode::GeometricSurfacePath</a>
 </li>

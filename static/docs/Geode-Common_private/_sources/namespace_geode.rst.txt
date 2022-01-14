@@ -16,6 +16,10 @@ namespace geode
 	struct_geode_CollapseEdgeInfo.rst
 	struct_geode_CollapsePolygonEdgeInfo.rst
 	struct_geode_CorrectnessInfo.rst
+	struct_geode_CutPatchException.rst
+	struct_geode_CutPathException.rst
+	struct_geode_EdgeSplit.rst
+	struct_geode_FacetSplit.rst
 	struct_geode_GeometricSurfacePath.rst
 	struct_geode_IntersectionResult.rst
 	struct_geode_Mapping.rst
@@ -115,6 +119,11 @@ Overview
 
 	template <typename Intersection>
 	struct :ref:`CorrectnessInfo<doxid-structgeode_1_1_correctness_info>`;
+
+	struct :ref:`CutPatchException<doxid-structgeode_1_1_cut_patch_exception>`;
+	struct :ref:`CutPathException<doxid-structgeode_1_1_cut_path_exception>`;
+	struct :ref:`EdgeSplit<doxid-structgeode_1_1_edge_split>`;
+	struct :ref:`FacetSplit<doxid-structgeode_1_1_facet_split>`;
 
 	template <index_t dimension>
 	struct :ref:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path>`;

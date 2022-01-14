@@ -21,7 +21,7 @@ struct geode::SolidPatch
 	
 		static constexpr std::array<geode::Position, 2> :target:`vertex_position<doxid-structgeode_1_1_solid_patch_1ac63841f095ff296d9ced9232d498be55>` {             { geode::Position::vertex0, geode::Position::vertex1 }         };
 		Position :target:`position<doxid-structgeode_1_1_solid_patch_1ad165fde32e60a8026dbf1936ed887737>` { Position::outside };
-		index_t :target:`edge_id<doxid-structgeode_1_1_solid_patch_1aef2270ce36f7d1f9e7c344777439c3fb>`;
+		index_t :target:`edge_id<doxid-structgeode_1_1_solid_patch_1aef2270ce36f7d1f9e7c344777439c3fb>` { NO_ID };
 		index_t :target:`vertex_id<doxid-structgeode_1_1_solid_patch_1a7169fdeb8b6b8681389f357ae8bb50e8>` { NO_ID };
 		absl::flat_hash_set<index_t> :target:`patch_front_edge<doxid-structgeode_1_1_solid_patch_1a044ad44d294c15b65778726040ec4aa4>`;
 

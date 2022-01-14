@@ -34,17 +34,18 @@ Overview
 	
 		bool :target:`is_tetrahedron_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af187b78931d693da120ab9da5c5b4549>`(index_t tetrahedron_id) const;
 		bool :target:`is_facet_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a49fdcfaf239bff7e181f1aaa5c7bb932>`(index_t facet_id) const;
+		void :target:`set_tetrahedron_inactive<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af9d87f2288c25f5e8d356a6551be2b0b>`(index_t tetrahedron_id);
 		bool :ref:`is_split_tetrahedron_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a4edcaa0ed7b9661d5a8deb6fe63c7839>`(index_t tetrahedron_id, const Point3D& point) const;
 		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1645e8ce599bf3ab1036071f1af3a939>`(index_t tetrahedron_id, const Point3D& point);
 		bool :ref:`is_split_facet_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a60b6e5ebe55c5b9bc26f016589eb3054>`(const PolyhedronFacet& facet, const Point3D& point) const;
 		bool :ref:`is_split_facet_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1acf9cdefd8a07481ca6b3b4d8b1ef280c>`(index_t facet_id, const Point3D& point) const;
 	
-		absl::optional<PolyhedronFacet> :ref:`first_invalid_element_on_split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a164e1630879da47e1776caa5a3d5fa40>`(
+		absl::optional<PolyhedronFacet> :ref:`invalid_element_on_split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a91da328b79d5e37876511e05e5ef52af>`(
 			const PolyhedronFacet& facet,
 			const Point3D& point
 			) const;
 	
-		absl::optional<PolyhedronFacet> :ref:`first_invalid_element_on_split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad25a56f2bf2d6612e8dab0729615418b>`(
+		absl::optional<PolyhedronFacet> :ref:`invalid_element_on_split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad6b6c210425d086bb192b365aea62704>`(
 			index_t facet_id,
 			const Point3D& point
 			) const;
@@ -54,12 +55,12 @@ Overview
 		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a8ba26a3c56f7221bd96d8a812c4c7b70>`(const PolyhedronFacetEdge& edge, const Point3D& point) const;
 		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a38a52fa447ee7e454cc894bb49968f43>`(index_t edge_id, const Point3D& point) const;
 	
-		absl::optional<index_t> :ref:`first_invalid_element_on_split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a17a255f74f309d4c8e9e2c5c148acaa5>`(
+		absl::optional<index_t> :ref:`invalid_element_on_split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a97af387391966435b11a5d3aa33b748f>`(
 			const PolyhedronFacetEdge& edge,
 			const Point3D& point
 			) const;
 	
-		absl::optional<index_t> :ref:`first_invalid_element_on_split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a2b94e2173ed1e7496f5246b076b8d237>`(
+		absl::optional<index_t> :ref:`invalid_element_on_split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ac8dd5edd8673b577407b40ee17e50085>`(
 			index_t edge_id,
 			const Point3D& point
 			) const;
@@ -236,13 +237,13 @@ Check if a facet split will keep the mesh valid, meaning no tetrahedra volume fl
 
 true if split will keep mesh valid.
 
-.. index:: pair: function; first_invalid_element_on_split_facet
-.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a164e1630879da47e1776caa5a3d5fa40:
+.. index:: pair: function; invalid_element_on_split_facet
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a91da328b79d5e37876511e05e5ef52af:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	absl::optional<PolyhedronFacet> first_invalid_element_on_split_facet(
+	absl::optional<PolyhedronFacet> invalid_element_on_split_facet(
 		const PolyhedronFacet& facet,
 		const Point3D& point
 		) const
@@ -272,13 +273,13 @@ Check if a facet split will keep the mesh valid, meaning no tetrahedra volume fl
 
 the split PolyhedronFacet of the first flipped Polyhedron, empty if the mesh is valid after split
 
-.. index:: pair: function; first_invalid_element_on_split_facet
-.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad25a56f2bf2d6612e8dab0729615418b:
+.. index:: pair: function; invalid_element_on_split_facet
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad6b6c210425d086bb192b365aea62704:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	absl::optional<PolyhedronFacet> first_invalid_element_on_split_facet(
+	absl::optional<PolyhedronFacet> invalid_element_on_split_facet(
 		index_t facet_id,
 		const Point3D& point
 		) const
@@ -440,13 +441,13 @@ Check if an edge split will keep the mesh valid, meaning no tetrahedra volume fl
 
 true if split will keep mesh valid.
 
-.. index:: pair: function; first_invalid_element_on_split_edge
-.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a17a255f74f309d4c8e9e2c5c148acaa5:
+.. index:: pair: function; invalid_element_on_split_edge
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a97af387391966435b11a5d3aa33b748f:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	absl::optional<index_t> first_invalid_element_on_split_edge(
+	absl::optional<index_t> invalid_element_on_split_edge(
 		const PolyhedronFacetEdge& edge,
 		const Point3D& point
 		) const
@@ -476,13 +477,13 @@ Check if an edge split will keep the mesh valid, meaning no tetrahedra volume fl
 
 the first flipped Polyhedron, empty if the mesh is valid after split
 
-.. index:: pair: function; first_invalid_element_on_split_edge
-.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a2b94e2173ed1e7496f5246b076b8d237:
+.. index:: pair: function; invalid_element_on_split_edge
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1ac8dd5edd8673b577407b40ee17e50085:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	absl::optional<index_t> first_invalid_element_on_split_edge(
+	absl::optional<index_t> invalid_element_on_split_edge(
 		index_t edge_id,
 		const Point3D& point
 		) const
