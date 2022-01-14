@@ -60,6 +60,7 @@ Overview
 	template <index_t dimension>
 	std::unique_ptr<SurfaceMesh<dimension>> :target:`merge_surface_meshes<doxid-namespacegeode_1afdb0662672f33a008eac14437a46f0b6>`(const std::vector<std::reference_wrapper<const SurfaceMesh<dimension>>>& surfaces);
 
+	void geode_conversion_model_api :target:`build_blocks<doxid-namespacegeode_1af824d8001dd7c0a95398f4811ac40d32>`(BRep& brep);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1e8e55e5371b72b9963704762267ff26>`(PolyhedralSolid);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ae3a0efd7d2b1a538c139321616df2007>`(PolyhedralSolid);
 	std::unique_ptr<EdgedCurve2D> geode_conversion_model_api :target:`convert_section_into_curve<doxid-namespacegeode_1a49d9e3ea593bf9c845d0574dbe43e449>`(const Section& section);

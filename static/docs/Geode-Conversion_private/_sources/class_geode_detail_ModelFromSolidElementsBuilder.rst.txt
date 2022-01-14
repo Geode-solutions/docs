@@ -32,7 +32,7 @@ template class geode::detail::ModelFromSolidElementsBuilder
 		// methods
 	
 		void :target:`build_whole_surface_step<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1a8ab9937e7ad43a40e6cf63b2cd3a2b41>`();
-		void :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1a8f00e434fb50202335252bdc44d87d99>`();
+		absl::flat_hash_map<uuid, std::vector<index_t>> :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1ae105ef1226e04cb83c069cc215ef08a3>`();
 		void :target:`build_blocks<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1a28157d921bc31102d2730228dbb8708b>`();
 		virtual bool :target:`is_corner<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1add5a06d0a0d8a6900ffa247d34fa5d76>`(index_t vertex) const;
 	};
