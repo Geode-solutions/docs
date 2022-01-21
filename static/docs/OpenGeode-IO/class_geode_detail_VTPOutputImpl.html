@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::detail::VTPPointSetOutput" href="class_geode_detail_VTPPointSetOutput.html" />
+    <link rel="next" title="template class geode::detail::VTPPointSetOutput" href="class_geode_detail_VTPPointSetOutput.html" />
     <link rel="prev" title="class geode::detail::VTPInput" href="class_geode_detail_VTPInput.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -40,13 +40,16 @@
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vtp_output_impl.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Mesh</span><span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Mesh</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="nl">VTPOutputImpl</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_detail_VTKMeshOutputImpl.html#doxid-classgeode-1-1detail-1-1-v-t-k-mesh-output-impl"><span class="std std-ref">geode::detail::VTKMeshOutputImpl</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-output-impl-1a9d3f7f8651954d9e30c9844db7a3d83a"><span></span><span class="n">VTPOutputImpl</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">,</span> <span class="k">const</span> <span class="n">Mesh</span><span class="o">&amp;</span> <span class="n">polygonal_surface</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-output-impl-1a289eb8898f2e0117892567ee8fb2348a"><span></span><span class="n">VTPOutputImpl</span></span><span></span><span class="p">(</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Mesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">polygonal_surface</span>
+        <span class="p">);</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>

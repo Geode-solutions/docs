@@ -1,8 +1,8 @@
 .. index:: pair: class; geode::detail::VTPPolygonalOutput
 .. _doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output:
 
-class geode::detail::VTPPolygonalOutput
-=======================================
+template class geode::detail::VTPPolygonalOutput
+================================================
 
 .. toctree::
 	:hidden:
@@ -15,18 +15,19 @@ class geode::detail::VTPPolygonalOutput
 
 	#include <vtp_polygonal_output.h>
 	
-	class VTPPolygonalOutput: public PolygonalSurfaceOutput< 3 >
+	template <index_t dimension>
+	class VTPPolygonalOutput: public PolygonalSurfaceOutput< dimension >
 	{
 	public:
 		// construction
 	
-		:target:`VTPPolygonalOutput<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output_1a29301f00990ea6f6c3631117959c77c9>`(
-			const PolygonalSurface<3>& surface,
+		:target:`VTPPolygonalOutput<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output_1ac05942dfa4ee6af83b86ea3f576f48c7>`(
+			const PolygonalSurface<dimension>& surface,
 			absl::string_view filename
 			);
 
 		// methods
 	
-		void :target:`write<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output_1ab635ab52d838ed38a97035740a379488>`() const;
-		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output_1a8a861d42567fe1b1d19fa0176e142c49>`();
+		void :target:`write<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output_1a2fd292d07fa444c0b3d70d5560250a41>`() const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output_1a3dfc93571269b7f23c6a9e4f7a436bb2>`();
 	};

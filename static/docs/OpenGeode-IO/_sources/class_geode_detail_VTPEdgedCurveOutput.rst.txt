@@ -1,8 +1,8 @@
 .. index:: pair: class; geode::detail::VTPEdgedCurveOutput
 .. _doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output:
 
-class geode::detail::VTPEdgedCurveOutput
-========================================
+template class geode::detail::VTPEdgedCurveOutput
+=================================================
 
 .. toctree::
 	:hidden:
@@ -15,15 +15,19 @@ class geode::detail::VTPEdgedCurveOutput
 
 	#include <vtp_edged_curve_output.h>
 	
-	class VTPEdgedCurveOutput: public EdgedCurveOutput< 3 >
+	template <index_t dimension>
+	class VTPEdgedCurveOutput: public EdgedCurveOutput< dimension >
 	{
 	public:
 		// construction
 	
-		:target:`VTPEdgedCurveOutput<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output_1ab58020ad3a67c52ceb535a74c196ef16>`(const EdgedCurve<3>& curve, absl::string_view filename);
+		:target:`VTPEdgedCurveOutput<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output_1a43b5c3f5442dd7fecec0213fefc893dc>`(
+			const EdgedCurve<dimension>& curve,
+			absl::string_view filename
+			);
 
 		// methods
 	
-		void :target:`write<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output_1affa10c0d032345418561361254b61519>`() const;
-		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output_1af04ba16419a521d949f4e6fea33a13c6>`();
+		void :target:`write<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output_1ad63e9eea04ca7fdc5c27dc8b79c55a35>`() const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output_1aa21c59ed18354b87740b135770dbeb12>`();
 	};

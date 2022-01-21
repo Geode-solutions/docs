@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::detail::VTPPolygonalOutput &#8212; Python  documentation</title>
+    <title>template class geode::detail::VTPPolygonalOutput &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::detail::VTPTriangulatedOutput" href="class_geode_detail_VTPTriangulatedOutput.html" />
-    <link rel="prev" title="class geode::detail::VTPPointSetOutput" href="class_geode_detail_VTPPointSetOutput.html" />
+    <link rel="next" title="template class geode::detail::VTPTriangulatedOutput" href="class_geode_detail_VTPTriangulatedOutput.html" />
+    <link rel="prev" title="template class geode::detail::VTPPointSetOutput" href="class_geode_detail_VTPPointSetOutput.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,26 +34,27 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-detail-vtppolygonaloutput">
-<span id="doxid-classgeode-1-1detail-1-1-v-t-p-polygonal-output"></span><span id="index-0"></span><h1>class geode::detail::VTPPolygonalOutput</h1>
+  <div class="section" id="template-class-geode-detail-vtppolygonaloutput">
+<span id="doxid-classgeode-1-1detail-1-1-v-t-p-polygonal-output"></span><span id="index-0"></span><h1>template class geode::detail::VTPPolygonalOutput</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vtp_polygonal_output.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">VTPPolygonalOutput</span><span class="p">:</span> <span class="k">public</span> <span class="n">PolygonalSurfaceOutput</span><span class="o">&lt;</span> <span class="mi">3</span> <span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">VTPPolygonalOutput</span><span class="p">:</span> <span class="k">public</span> <span class="n">PolygonalSurfaceOutput</span><span class="o">&lt;</span> <span class="n">dimension</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-polygonal-output-1a29301f00990ea6f6c3631117959c77c9"><span></span><span class="n">VTPPolygonalOutput</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-polygonal-output-1ac05942dfa4ee6af83b86ea3f576f48c7"><span></span><span class="n">VTPPolygonalOutput</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
         <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-polygonal-output-1ab635ab52d838ed38a97035740a379488"><span></span><span class="n">write</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-polygonal-output-1a8a861d42567fe1b1d19fa0176e142c49"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-polygonal-output-1a2fd292d07fa444c0b3d70d5560250a41"><span></span><span class="n">write</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-polygonal-output-1a3dfc93571269b7f23c6a9e4f7a436bb2"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </div>
 

@@ -1,8 +1,8 @@
 .. index:: pair: class; geode::detail::VTPTriangulatedOutput
 .. _doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output:
 
-class geode::detail::VTPTriangulatedOutput
-==========================================
+template class geode::detail::VTPTriangulatedOutput
+===================================================
 
 .. toctree::
 	:hidden:
@@ -15,18 +15,19 @@ class geode::detail::VTPTriangulatedOutput
 
 	#include <vtp_triangulated_output.h>
 	
-	class VTPTriangulatedOutput: public TriangulatedSurfaceOutput< 3 >
+	template <index_t dimension>
+	class VTPTriangulatedOutput: public TriangulatedSurfaceOutput< dimension >
 	{
 	public:
 		// construction
 	
-		:target:`VTPTriangulatedOutput<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output_1a941ecf16fdc4fa8dc5750eb758166580>`(
-			const TriangulatedSurface<3>& surface,
+		:target:`VTPTriangulatedOutput<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output_1a2c91c655af19cbd4b6b23e6b3b41638f>`(
+			const TriangulatedSurface<dimension>& surface,
 			absl::string_view filename
 			);
 
 		// methods
 	
-		void :target:`write<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output_1a4f49ab4da3ed3645e956cd56e50b9b3d>`() const;
-		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output_1adebdb88217d971fa27e330253d522107>`();
+		void :target:`write<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output_1a98d37c640c21083423d3151dcddc228f>`() const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output_1a71a880de33207cbace5fdb37f8e2582b>`();
 	};

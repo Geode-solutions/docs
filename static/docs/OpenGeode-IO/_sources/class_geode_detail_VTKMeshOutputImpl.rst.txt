@@ -15,18 +15,15 @@ template class geode::detail::VTKMeshOutputImpl
 
 	#include <vtk_mesh_output.h>
 	
-	template <typename Mesh>
+	template <template<index_t> class Mesh, index_t dimension>
 	class VTKMeshOutputImpl: public :ref:`geode::detail::VTKOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_output_impl>`
 	{
 	};
 
 	// direct descendants
 
-	template <typename Mesh>
+	template <template<index_t> class Mesh, index_t dimension>
 	class :ref:`VTPOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_p_output_impl>`;
-
-	template <typename Mesh>
-	class :ref:`VTUOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_output_impl>`;
 
 Inherited Members
 -----------------

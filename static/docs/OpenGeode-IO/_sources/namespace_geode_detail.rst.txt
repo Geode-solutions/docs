@@ -84,28 +84,36 @@ namespace geode::detail
 	template <typename Mesh, typename MeshBuilder>
 	class :ref:`VTKInputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_input_impl>`;
 
-	template <typename Mesh>
+	template <template<index_t> class Mesh, index_t dimension>
 	class :ref:`VTKMeshOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_mesh_output_impl>`;
 
 	template <typename Mesh>
 	class :ref:`VTKOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_output_impl>`;
 
+	template <index_t dimension>
 	class :ref:`VTPEdgedCurveOutput<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output>`;
+
 	class :ref:`VTPInput<doxid-classgeode_1_1detail_1_1_v_t_p_input>`;
 
-	template <typename Mesh>
+	template <template<index_t> class Mesh, index_t dimension>
 	class :ref:`VTPOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_p_output_impl>`;
 
+	template <index_t dimension>
 	class :ref:`VTPPointSetOutput<doxid-classgeode_1_1detail_1_1_v_t_p_point_set_output>`;
+
+	template <index_t dimension>
 	class :ref:`VTPPolygonalOutput<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output>`;
+
+	template <index_t dimension>
 	class :ref:`VTPTriangulatedOutput<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output>`;
+
 	class :ref:`VTUHybridInput<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_input>`;
 	class :ref:`VTUHybridOutput<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_output>`;
 
 	template <typename Mesh, typename Builder>
 	class :ref:`VTUInputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_input_impl>`;
 
-	template <typename Mesh>
+	template <template<index_t> class Mesh>
 	class :ref:`VTUOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_output_impl>`;
 
 	class :ref:`VTUPolyhedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_polyhedral_input>`;

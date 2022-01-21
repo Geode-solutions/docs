@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::detail::VTPPointSetOutput &#8212; Python  documentation</title>
+    <title>template class geode::detail::VTPPointSetOutput &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::detail::VTPPolygonalOutput" href="class_geode_detail_VTPPolygonalOutput.html" />
+    <link rel="next" title="template class geode::detail::VTPPolygonalOutput" href="class_geode_detail_VTPPolygonalOutput.html" />
     <link rel="prev" title="template class geode::detail::VTPOutputImpl" href="class_geode_detail_VTPOutputImpl.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -34,23 +34,27 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-detail-vtppointsetoutput">
-<span id="doxid-classgeode-1-1detail-1-1-v-t-p-point-set-output"></span><span id="index-0"></span><h1>class geode::detail::VTPPointSetOutput</h1>
+  <div class="section" id="template-class-geode-detail-vtppointsetoutput">
+<span id="doxid-classgeode-1-1detail-1-1-v-t-p-point-set-output"></span><span id="index-0"></span><h1>template class geode::detail::VTPPointSetOutput</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vtp_point_set_output.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">VTPPointSetOutput</span><span class="p">:</span> <span class="k">public</span> <span class="n">PointSetOutput</span><span class="o">&lt;</span> <span class="mi">3</span> <span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">VTPPointSetOutput</span><span class="p">:</span> <span class="k">public</span> <span class="n">PointSetOutput</span><span class="o">&lt;</span> <span class="n">dimension</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-point-set-output-1a3539435b6fa87ae7197e88325bb29c2a"><span></span><span class="n">VTPPointSetOutput</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PointSet</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">point_set</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-point-set-output-1a8d1dbc962b7d3eb02c968b22220166e8"><span></span><span class="n">VTPPointSetOutput</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point_set</span><span class="p">,</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+        <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-point-set-output-1a53643d168dae6e06c7a7002a32dd030f"><span></span><span class="n">write</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-point-set-output-1a737addc55d3fd8ff8c696c8a2e573970"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-point-set-output-1a10bb049cefa12eb2b7b5f5d4a3e44e1a"><span></span><span class="n">write</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-point-set-output-1aed9ebb11bccdea3646fa4dfef9b6b1c5"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </div>
 

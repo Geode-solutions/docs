@@ -15,7 +15,7 @@ template class geode::detail::VTUOutputImpl
 
 	#include <vtu_output_impl.h>
 	
-	template <typename Mesh>
+	template <template<index_t> class Mesh>
 	class VTUOutputImpl: public :ref:`geode::detail::VTKMeshOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_mesh_output_impl>`
 	{
 	};

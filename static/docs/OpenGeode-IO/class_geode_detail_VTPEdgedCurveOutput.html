@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::detail::VTPEdgedCurveOutput &#8212; Python  documentation</title>
+    <title>template class geode::detail::VTPEdgedCurveOutput &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -34,23 +34,27 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-detail-vtpedgedcurveoutput">
-<span id="doxid-classgeode-1-1detail-1-1-v-t-p-edged-curve-output"></span><span id="index-0"></span><h1>class geode::detail::VTPEdgedCurveOutput</h1>
+  <div class="section" id="template-class-geode-detail-vtpedgedcurveoutput">
+<span id="doxid-classgeode-1-1detail-1-1-v-t-p-edged-curve-output"></span><span id="index-0"></span><h1>template class geode::detail::VTPEdgedCurveOutput</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vtp_edged_curve_output.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">VTPEdgedCurveOutput</span><span class="p">:</span> <span class="k">public</span> <span class="n">EdgedCurveOutput</span><span class="o">&lt;</span> <span class="mi">3</span> <span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">VTPEdgedCurveOutput</span><span class="p">:</span> <span class="k">public</span> <span class="n">EdgedCurveOutput</span><span class="o">&lt;</span> <span class="n">dimension</span> <span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-edged-curve-output-1ab58020ad3a67c52ceb535a74c196ef16"><span></span><span class="n">VTPEdgedCurveOutput</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">curve</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-edged-curve-output-1a43b5c3f5442dd7fecec0213fefc893dc"><span></span><span class="n">VTPEdgedCurveOutput</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">curve</span><span class="p">,</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+        <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-edged-curve-output-1affa10c0d032345418561361254b61519"><span></span><span class="n">write</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-edged-curve-output-1af04ba16419a521d949f4e6fea33a13c6"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-edged-curve-output-1ad63e9eea04ca7fdc5c27dc8b79c55a35"><span></span><span class="n">write</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-v-t-p-edged-curve-output-1aa21c59ed18354b87740b135770dbeb12"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </div>
 
