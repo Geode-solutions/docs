@@ -29,7 +29,9 @@ Overview
 		// methods
 	
 		void :target:`set_value<doxid-classgeode_1_1_regular_grid_scalar_function_1a8eca2cd3bf606924ca2801e6f07ee5c2>`(const GridVertexIndex<dimension>& vertex_index, double value);
-		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1a9c916e361fc07ea63b97bf1faa645086>`(const GridVertexIndex<dimension>& pt_index) const;
+		void :target:`set_value<doxid-classgeode_1_1_regular_grid_scalar_function_1a09aee2e220ee65fbf331bffbc8986063>`(index_t vertex_index, double value);
+		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1a850694a22bd921b8188e53577ce71376>`(const GridVertexIndex<dimension>& vertex_index) const;
+		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1aa6547f7fa9a6b7cffdedec9ad6f64dcc>`(index_t vertex_index) const;
 		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1a4522a22c271200d4c5699583f66e6302>`(const Point<dimension>& point) const;
 	
 		static RegularGridScalarFunction<dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_scalar_function_1ad9dd9d9d1101e677d9972fcae411090c>`(
