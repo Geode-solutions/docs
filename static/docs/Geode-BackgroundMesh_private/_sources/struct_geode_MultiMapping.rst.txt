@@ -1,0 +1,11 @@
+.. index:: pair: struct; geode::MultiMapping
+.. _doxid-structgeode_1_1_multi_mapping:
+
+template struct geode::MultiMapping
+===================================
+
+.. toctree::
+	:hidden:
+
+
+

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class geode::BackgroundMeshBuilder3D::Optimizer &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::MacroEdgeSolidPathFinder" href="class_geode_MacroEdgeSolidPathFinder.html" />
+    <link rel="prev" title="class geode::BackgroundMeshBuilder3D" href="class_geode_BackgroundMeshBuilder3D.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-backgroundmeshbuilder3d-optimizer">
+<span id="doxid-classgeode-1-1-background-mesh-builder3-d-1-1-optimizer"></span><span id="index-0"></span><h1>class geode::BackgroundMeshBuilder3D::Optimizer</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">class</span> <span class="n">Optimizer</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1-1-optimizer-1a1c06f20bc2f7bc2b9403384eba61d982"><span></span><span class="n">Optimizer</span></span><span></span><span class="p">(</span>
+        <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D.html#doxid-classgeode-1-1-background-mesh-builder3-d"><span class="std std-ref">BackgroundMeshBuilder3D</span></a><span></span><span class="o">&amp;</span> <span class="n">backgroundmesh_builder</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_BackgroundMesh3D.html#doxid-classgeode-1-1-background-mesh3-d"><span class="std std-ref">BackgroundMesh3D</span></a><span></span><span class="o">&amp;</span> <span class="n">background_mesh</span><span class="p">,</span>
+        <span class="n">TetrahedralSolidModifier</span><span class="o">&amp;</span> <span class="n">modifier</span>
+        <span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1-1-optimizer-1ac91d78b313375d21d37627f845d49f7b"><span></span><span class="n">optimize_background_mesh_elements</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1-1-optimizer-1afe77158ce2ee536c744f6794ab9150c2"><span></span><span class="n">optimize_background_mesh_elements</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">elements</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1-1-optimizer-1aabe95a94b3904eab54952dc2f0d5e5d0"><span></span><span class="n">optimize_background_mesh_elements</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">first_element</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_BackgroundMeshBuilder3D_Optimizer.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::MacroEdgeSolidPathFinder" href="class_geode_MacroEdgeSolidPathFinder.html" />
+    <link rel="next" title="class geode::BackgroundMeshBuilder3D::Optimizer" href="class_geode_BackgroundMeshBuilder3D_Optimizer.html" />
     <link rel="prev" title="class geode::BackgroundMeshBuilder2D" href="class_geode_BackgroundMeshBuilder2D.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -43,6 +43,10 @@
 <span class="k">class</span> <span class="nl">BackgroundMeshBuilder3D</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder.html#doxid-classgeode-1-1-background-mesh-builder"><span class="std std-ref">geode::BackgroundMeshBuilder</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// classes</span>
+
+    <span class="k">class</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D_Optimizer.html#doxid-classgeode-1-1-background-mesh-builder3-d-1-1-optimizer"><span class="std std-ref">Optimizer</span></a><span></span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1a07162b5b2a412d86dd8ab69e26e91275"><span></span><span class="n">BackgroundMeshBuilder3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BackgroundMesh3D.html#doxid-classgeode-1-1-background-mesh3-d"><span class="std std-ref">BackgroundMesh3D</span></a><span></span><span class="o">&amp;</span> <span class="n">background_mesh</span><span class="p">);</span>
@@ -54,19 +58,6 @@
     <span class="n">uuid</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1af438e8e0bb3ba406c7bac4e47bdd67c6"><span></span><span class="n">insert_surface</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
     <span class="n">uuid</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1adfb76d3c5462f1ac537a2d389398b23f"><span></span><span class="n">insert_line</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">);</span>
     <span class="n">uuid</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1a252de8052c1564a28470c6a3b2df08a0"><span></span><span class="n">insert_curve</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">EdgedCurve3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
-
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1a42189eae9ee63d0ce06ab767a74b5046"><span></span><span class="n">add_component_facet_to_background_mesh_facet</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">bmesh_facet_id</span>
-        <span class="p">);</span>
-
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1acb6a3e062903c5dc0c96fcb4182389c4"><span></span><span class="n">add_component_facet_to_background_mesh_vertices</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
-        <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">bmesh_vertex_ids</span>
-        <span class="p">);</span>
-
     <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1a1ef729f7feaeaafee0b509c6bdb80377"><span></span><span class="n">clean_background_mesh</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 <div class="section" id="inherited-members">
