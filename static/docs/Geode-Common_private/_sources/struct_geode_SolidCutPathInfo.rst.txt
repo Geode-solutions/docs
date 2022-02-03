@@ -19,7 +19,7 @@ struct geode::SolidCutPathInfo
 	{
 		// fields
 	
-		std::vector<:ref:`VertexMultiMapping<doxid-namespacegeode_1a2ea479fa70766a1514e507fb6912f9e5>`> :target:`vertices<doxid-structgeode_1_1_solid_cut_path_info_1a59f89abedf90847e18256c9296f1243d>`;
+		std::vector<:ref:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>`> :target:`vertices<doxid-structgeode_1_1_solid_cut_path_info_1a59f89abedf90847e18256c9296f1243d>`;
 		std::vector<:ref:`OrientedEdgeMultiMapping<doxid-namespacegeode_1a1bab4ec7e9ccefea836c5553826d6d3b>`> :target:`along_path<doxid-structgeode_1_1_solid_cut_path_info_1ac337b32264697b59fa3fa2d486654626>`;
 		std::vector<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a7453100f135dccdd205cb9fa758be45d>`> :target:`across_path<doxid-structgeode_1_1_solid_cut_path_info_1a14b740d1639c90ae22b2b186f3b57844>`;
 		std::vector<:ref:`FacetMultiMapping<doxid-namespacegeode_1af88fc51271b7af46a7bb4b84a2d90d1e>`> :target:`facets<doxid-structgeode_1_1_solid_cut_path_info_1ac0db1d30d0369c489ecf99e6ffae3682>`;

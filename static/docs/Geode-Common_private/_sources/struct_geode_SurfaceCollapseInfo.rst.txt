@@ -1,0 +1,30 @@
+.. index:: pair: struct; geode::SurfaceCollapseInfo
+.. _doxid-structgeode_1_1_surface_collapse_info:
+
+struct geode::SurfaceCollapseInfo
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier.h>
+	
+	struct SurfaceCollapseInfo
+	{
+		// fields
+	
+		:ref:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>` :target:`vertex<doxid-structgeode_1_1_surface_collapse_info_1a635cf875cc2801d390166a6e57b51b41>`;
+		absl::InlinedVector<index_t, 2> :target:`inactive_polygons<doxid-structgeode_1_1_surface_collapse_info_1aef8a37dc35f25e181b75a431478a3e56>`;
+		std::vector<PolygonVertex> :target:`modified_polygons<doxid-structgeode_1_1_surface_collapse_info_1aa26f5bfaa9e26588a365db56a3c7de0e>`;
+	};
+
+	// direct descendants
+
+	struct :ref:`CollapseEdgeInfo<doxid-structgeode_1_1_collapse_edge_info>`;
+	struct :ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>`;

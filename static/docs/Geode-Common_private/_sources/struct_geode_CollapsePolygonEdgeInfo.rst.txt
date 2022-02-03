@@ -15,10 +15,23 @@ struct geode::CollapsePolygonEdgeInfo
 
 	#include <triangulated_surface_modifier.h>
 	
-	struct CollapsePolygonEdgeInfo
+	struct CollapsePolygonEdgeInfo: public :ref:`geode::SurfaceCollapseInfo<doxid-structgeode_1_1_surface_collapse_info>`
 	{
 		// fields
 	
-		index_t :target:`vertex<doxid-structgeode_1_1_collapse_polygon_edge_info_1a477e189f5308df70a97cbbb4baf0cc29>` { NO_ID };
 		absl::InlinedVector<:ref:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`, 4> :target:`modified<doxid-structgeode_1_1_collapse_polygon_edge_info_1a73fedcc4d6462c51e302b4e4590fd9f1>`;
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		:ref:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>` :ref:`vertex<doxid-structgeode_1_1_surface_collapse_info_1a635cf875cc2801d390166a6e57b51b41>`;
+		absl::InlinedVector<index_t, 2> :ref:`inactive_polygons<doxid-structgeode_1_1_surface_collapse_info_1aef8a37dc35f25e181b75a431478a3e56>`;
+		std::vector<PolygonVertex> :ref:`modified_polygons<doxid-structgeode_1_1_surface_collapse_info_1aa26f5bfaa9e26588a365db56a3c7de0e>`;
+

@@ -18,7 +18,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="struct geode::SurfacePath" href="struct_geode_SurfacePath.html" />
-    <link rel="prev" title="struct geode::SplitTriangleInfo" href="struct_geode_SplitTriangleInfo.html" />
+    <link rel="prev" title="struct geode::SurfaceCollapseInfo" href="struct_geode_SurfaceCollapseInfo.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -44,13 +44,11 @@
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a2ea479fa70766a1514e507fb6912f9e5"><span class="std std-ref">VertexMultiMapping</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-cut-path-info-1a4c3bfc5565bd3fbc0dfcf6973d608e05"><span></span><span class="n">vertices</span></span><span></span><span class="p">;</span>
-    <a class="reference internal" href="struct_geode_SideSurfaceCutPathInfo.html#doxid-structgeode-1-1-side-surface-cut-path-info"><span class="std std-ref">SideSurfaceCutPathInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-cut-path-info-1a58f8877a82c0fc29a9957308633d198c"><span></span><span class="n">left</span></span><span></span><span class="p">;</span>
-    <a class="reference internal" href="struct_geode_SideSurfaceCutPathInfo.html#doxid-structgeode-1-1-side-surface-cut-path-info"><span class="std std-ref">SideSurfaceCutPathInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-cut-path-info-1ad22e601cf3d2e719cf641ca1d174e444"><span></span><span class="n">right</span></span><span></span><span class="p">;</span>
-
-    <span class="c1">// construction</span>
-
-    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-cut-path-info-1adbb11a1be9770ed201a622aab3d80e2f"><span></span><span class="n">SurfaceCutPathInfo</span></span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="kt">size_t</span> <span class="n">size</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a981fe588540e18c37bf329ddf946ecff"><span class="std std-ref">VertexMultiMapping</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-cut-path-info-1a4c3bfc5565bd3fbc0dfcf6973d608e05"><span></span><span class="n">vertices</span></span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1af3ede97a06831da5d71e5a7212f089cc"><span class="std std-ref">TriangleMapping</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-cut-path-info-1a1964fa5d3f4aa7fe1cb595d6ff7da4af"><span></span><span class="n">triangles</span></span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6c5d94f1b735ee60044b0c6dee07ef83"><span class="std std-ref">PolygonEdgeMultiMapping</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-cut-path-info-1ae556936ec8631012d12ba7b91d1250fd"><span></span><span class="n">modified</span></span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6c5d94f1b735ee60044b0c6dee07ef83"><span class="std std-ref">PolygonEdgeMultiMapping</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-cut-path-info-1a9aef93b69a73cc4c9d4eb7ab849ff180"><span></span><span class="n">left_along_path</span></span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6c5d94f1b735ee60044b0c6dee07ef83"><span class="std std-ref">PolygonEdgeMultiMapping</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-cut-path-info-1a854e03b615b1440b4ef99f91dd5e8223"><span></span><span class="n">right_along_path</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 
