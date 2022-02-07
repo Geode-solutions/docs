@@ -28,7 +28,6 @@ Interface class to represent the builder of a :ref:`PointSet <doxid-classgeode_1
 		void :ref:`set_point<doxid-classgeode_1_1_point_set_builder_1a3f2f23e0415984ab546ea0350e0e343a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_point_set_builder_1a00aa71ee29025486d00b8b481527246a>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		void :target:`copy<doxid-classgeode_1_1_point_set_builder_1a71cd6f1391d6a010d7d0728d3b7c40c7>`(const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set, BuilderKey);
-		void :target:`set_mesh<doxid-classgeode_1_1_point_set_builder_1a45bae9bc438eae6d9502a4af7f1332ef>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>` key);
 	};
 
 	// direct descendants
@@ -52,7 +51,6 @@ Inherited Members
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_vertices<doxid-classgeode_1_1_vertex_set_builder_1a61231a71fdad16ddb2b7e14ebc21a772>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1a2f167c430554a70b6dd09587d2dbbcff>`(const std::vector<bool>& to_delete);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`permute_vertices<doxid-classgeode_1_1_vertex_set_builder_1a8f2013ad98ea09defcc82969d86d93e2>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
-		void :ref:`set_mesh<doxid-classgeode_1_1_vertex_set_builder_1ae00c46d0983aef744f8eadba2f0e6fba>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>`);
 		static std::unique_ptr<:ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`> :ref:`create<doxid-classgeode_1_1_vertex_set_builder_1a771651214baac8b1f85db964a73a4952>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh);
 
 .. _details-classgeode_1_1_point_set_builder:
