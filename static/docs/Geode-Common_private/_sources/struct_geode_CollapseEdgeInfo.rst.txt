@@ -19,7 +19,7 @@ struct geode::CollapseEdgeInfo
 	{
 		// fields
 	
-		std::vector<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a7453100f135dccdd205cb9fa758be45d>`> :target:`modified<doxid-structgeode_1_1_collapse_edge_info_1ab49362797c1326a52bc1c82ccdeb7e8d>`;
+		std::vector<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a940546afc1c9ff9d7a0285a1377285c5>`> :target:`modified<doxid-structgeode_1_1_collapse_edge_info_1ab49362797c1326a52bc1c82ccdeb7e8d>`;
 	};
 
 Inherited Members

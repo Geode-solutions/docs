@@ -23,5 +23,5 @@ struct geode::SolidCollapseEdgeInfo
 		std::vector<index_t> :target:`inactive_tetrahedra<doxid-structgeode_1_1_solid_collapse_edge_info_1a31407bb76965a382a54904e91f54e4fe>`;
 		std::vector<index_t> :target:`modified_tetrahedra<doxid-structgeode_1_1_solid_collapse_edge_info_1ad34810aac6ed14c9ced99261f67d533e>`;
 		std::vector<:ref:`FacetMapping<doxid-namespacegeode_1a0fe3791ddb7ee08d858458346d5f1367>`> :target:`facets<doxid-structgeode_1_1_solid_collapse_edge_info_1aca63424eca37d54f7f20acaf376f86b1>`;
-		std::vector<:ref:`EdgeMapping<doxid-namespacegeode_1a07f622f9290301bd1b0b364ed0807b44>`> :target:`edges<doxid-structgeode_1_1_solid_collapse_edge_info_1aeb5dc500a4b1af817bdf6d381bf875db>`;
+		std::vector<:ref:`EdgeMapping<doxid-namespacegeode_1ae9864a98f4db0737bb05ca34835a671f>`> :target:`edges<doxid-structgeode_1_1_solid_collapse_edge_info_1aeb5dc500a4b1af817bdf6d381bf875db>`;
 	};

@@ -85,22 +85,24 @@ Overview
 
 	// typedefs
 
-	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`EdgeMapping<doxid-namespacegeode_1a07f622f9290301bd1b0b364ed0807b44>`;
-	typedef std::pair<:ref:`EdgeMapping<doxid-namespacegeode_1a07f622f9290301bd1b0b364ed0807b44>`, bool> :target:`OrientedEdgeMapping<doxid-namespacegeode_1a54b0871837c233adb2d5b88a496cdd7a>`;
-	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`EdgeMultiMapping<doxid-namespacegeode_1a7453100f135dccdd205cb9fa758be45d>`;
-	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`FacetMultiMapping<doxid-namespacegeode_1af88fc51271b7af46a7bb4b84a2d90d1e>`;
-	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`TetrahedronMapping<doxid-namespacegeode_1a5f5bb31d010c44cbc41f6753a1d28304>`;
-	typedef std::pair<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a7453100f135dccdd205cb9fa758be45d>`, bool> :target:`OrientedEdgeMultiMapping<doxid-namespacegeode_1a1bab4ec7e9ccefea836c5553826d6d3b>`;
+	typedef std::pair<:ref:`EdgeMapping<doxid-namespacegeode_1ae9864a98f4db0737bb05ca34835a671f>`, bool> :target:`OrientedEdgeMapping<doxid-namespacegeode_1a54b0871837c233adb2d5b88a496cdd7a>`;
+	typedef std::pair<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a940546afc1c9ff9d7a0285a1377285c5>`, bool> :target:`OrientedEdgeMultiMapping<doxid-namespacegeode_1a1bab4ec7e9ccefea836c5553826d6d3b>`;
 	typedef std::pair<index_t, bool> :target:`OrientedEdge<doxid-namespacegeode_1ab7c515d34c7589c847c6947c92e86274>`;
 	typedef std::pair<Position, Position> :target:`SegmentSegmentIntersection<doxid-namespacegeode_1ad08f71e1c9db568dd62df0bf066813b1>`;
 	typedef std::pair<Position, Position> :target:`SegmentTriangleIntersection<doxid-namespacegeode_1acbc58086feed61355d4235a09e6e6b80>`;
 	typedef Side :target:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`VertexMapping<doxid-namespacegeode_1a3df0f1612915133946450acb704655b8>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`EdgeMapping<doxid-namespacegeode_1ae9864a98f4db0737bb05ca34835a671f>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`FacetMapping<doxid-namespacegeode_1a0fe3791ddb7ee08d858458346d5f1367>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`TriangleMapping<doxid-namespacegeode_1af3ede97a06831da5d71e5a7212f089cc>`;
+	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`TetrahedronMapping<doxid-namespacegeode_1a06665a8e2f6484c2bcaa061ae3b04ca5>`;
 	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>`;
+	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`EdgeMultiMapping<doxid-namespacegeode_1a940546afc1c9ff9d7a0285a1377285c5>`;
+	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`FacetMultiMapping<doxid-namespacegeode_1a9f8b3d4c75c6f9208940640c573c9e5a>`;
+	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`TetrahedronMultiMapping<doxid-namespacegeode_1a655dcda7e13504c6dfa582021f76a42c>`;
 	typedef :ref:`SplitInfo<doxid-structgeode_1_1_split_info>` :target:`SplitTetrahedron<doxid-namespacegeode_1a8e7703a3cc6ba023b28ebf51044c7abe>`;
 	typedef :ref:`SplitInfo<doxid-structgeode_1_1_split_info>` :target:`SplitFacet<doxid-namespacegeode_1a4a52808eb7e527ae9ef93c94e03f11d2>`;
-	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`FacetMapping<doxid-namespacegeode_1a0fe3791ddb7ee08d858458346d5f1367>`;
 	typedef :ref:`SplitInfo<doxid-structgeode_1_1_split_info>` :target:`SplitTriangle<doxid-namespacegeode_1a3ac1e72c38e74398b33cfe0180a2cdbb>`;
-	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`TriangleMapping<doxid-namespacegeode_1af3ede97a06831da5d71e5a7212f089cc>`;
 	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<PolygonEdge> :target:`PolygonEdgeMapping<doxid-namespacegeode_1a5a7ed69f08e560d569e1f124dc238d77>`;
 	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<PolygonEdge> :target:`PolygonEdgeMultiMapping<doxid-namespacegeode_1a6c5d94f1b735ee60044b0c6dee07ef83>`;
 

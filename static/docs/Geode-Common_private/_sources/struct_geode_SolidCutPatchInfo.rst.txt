@@ -20,8 +20,8 @@ struct geode::SolidCutPatchInfo
 		// fields
 	
 		std::vector<:ref:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>`> :target:`vertices<doxid-structgeode_1_1_solid_cut_patch_info_1afce6aaae1af70f1b0eb7ea9d4a9b89bc>`;
-		std::vector<:ref:`FacetMultiMapping<doxid-namespacegeode_1af88fc51271b7af46a7bb4b84a2d90d1e>`> :target:`facets_along<doxid-structgeode_1_1_solid_cut_patch_info_1a6799f289bb6ea65de7735045407afbf3>`;
-		std::vector<:ref:`FacetMultiMapping<doxid-namespacegeode_1af88fc51271b7af46a7bb4b84a2d90d1e>`> :target:`facets_across<doxid-structgeode_1_1_solid_cut_patch_info_1ac6b0d22c67cf4017e114e739c1e46a80>`;
-		std::vector<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a7453100f135dccdd205cb9fa758be45d>`> :target:`edges<doxid-structgeode_1_1_solid_cut_patch_info_1a1ca6c18c1c5c5d32ad4f73703a5bece0>`;
-		std::vector<:ref:`TetrahedronMapping<doxid-namespacegeode_1a5f5bb31d010c44cbc41f6753a1d28304>`> :target:`tetrahedra<doxid-structgeode_1_1_solid_cut_patch_info_1a8de0b9c24e76e8a44285d30cda0609c6>`;
+		std::vector<:ref:`FacetMultiMapping<doxid-namespacegeode_1a9f8b3d4c75c6f9208940640c573c9e5a>`> :target:`facets_along<doxid-structgeode_1_1_solid_cut_patch_info_1a6799f289bb6ea65de7735045407afbf3>`;
+		std::vector<:ref:`FacetMultiMapping<doxid-namespacegeode_1a9f8b3d4c75c6f9208940640c573c9e5a>`> :target:`facets_across<doxid-structgeode_1_1_solid_cut_patch_info_1ac6b0d22c67cf4017e114e739c1e46a80>`;
+		std::vector<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a940546afc1c9ff9d7a0285a1377285c5>`> :target:`edges<doxid-structgeode_1_1_solid_cut_patch_info_1a1ca6c18c1c5c5d32ad4f73703a5bece0>`;
+		std::vector<:ref:`TetrahedronMapping<doxid-namespacegeode_1a06665a8e2f6484c2bcaa061ae3b04ca5>`> :target:`tetrahedra<doxid-structgeode_1_1_solid_cut_patch_info_1a8de0b9c24e76e8a44285d30cda0609c6>`;
 	};
