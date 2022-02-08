@@ -21,12 +21,11 @@ template class geode::detail::ModelFromSolidElementsBuilder
 	public:
 		// construction
 	
-		:target:`ModelFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1a9b3b9ddc5e621b1a963e646db83d56e4>`(
+		:target:`ModelFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1a80ab90690135e39c316d360c0d119ee4>`(
 			Model& model,
 			const SolidMesh3D& solid,
 			absl::Span<const VertexCycle<std::array<index_t, 2>>> edges,
-			absl::Span<const VertexCycle<PolyhedronFacetVertices>> facets,
-			const MeshImpl& surface_mesh_impl
+			absl::Span<const VertexCycle<PolyhedronFacetVertices>> facets
 			);
 
 		// methods
