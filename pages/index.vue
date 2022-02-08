@@ -46,7 +46,7 @@ export default {
       {
         title: 'How to compile OpenGeode',
         descr:
-          'Complete guide on configuration and compilation of OpenGeode on Windows, Linux and macOS',
+          'Complete guide on configuration and compilation of OpenGeode on Windows and Linux',
         route: 'how-to-compile',
       },
       {
@@ -57,13 +57,13 @@ export default {
       {
         title: 'How to compile OpenGeode module',
         descr:
-          'Configuration and compilation of OpenGeode module on Windows, Linux and macOS',
+          'Configuration and compilation of OpenGeode module on Windows and Linux',
         route: 'how-to-compile-module',
       },
       {
         title: 'How to use OpenGeode bindings',
         descr:
-          'Configuration and execution of OpenGeode Python bindings on Windows, Linux and macOS',
+          'Configuration and execution of OpenGeode Python bindings on Windows and Linux',
         route: 'how-to-use-binding',
       },
       {

@@ -20,7 +20,6 @@
       <ul :class="paragraph">
         <li>3.6 and 3.7 on Windows - Visual Studio 2017</li>
         <li>3.6, 3.7 and 3.8 on Linux</li>
-        <li>3.6, 3.7 and 3.8 on macOS X Catalina (10.15)</li>
       </ul>
 
       <h2 :class="section">
