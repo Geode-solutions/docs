@@ -20,9 +20,6 @@
 
       <ul :class="paragraph">
         <li>
-          <strong>OpenGeode-X.Y.Z-darwin.tar.gz</strong> corresponds to the package generated on macOS Catalina (10.15) for OpenGeode X.Y.Z. release;
-        </li>
-        <li>
           <strong>OpenGeode-X.Y.Z-rhel.tar.gz</strong> corresponds to the package generated on CentOS 7 for OpenGeode X.Y.Z. release;
         </li>
         <li>

@@ -21,7 +21,6 @@
         <li>Windows - Visual Studio 2017</li>
         <li>Ubuntu 18.04</li>
         <li>RHEL 7 / CentOS 7</li>
-        <li>macOS X Catalina (10.15)</li>
       </ul>
 
       <p :class="paragraph">
@@ -70,7 +69,6 @@
 
       <p :class="paragraph">
         On Windows, we recommend to use Visual Studio 15 2017. On Linux, you can use gcc/g++ as compiler. You need a version equal to or higher than 4.8.
-        On macOS, install Mac OS "Command Line Developer Tools" and use clang. On macOS you can also use Xcode as an IDE which uses clang.
       </p>
     
       <h3 :class="subsubsection">
@@ -147,59 +145,6 @@
       <ol :class="paragraph">
         <li>Run `make` command in the build directory.</li>
       </ol>
-
-      <p :class="paragraph">
-        Now you are ready to work with OpenGeode.
-      </p>
-
-      <h3 :class="subsection">
-        On macOS
-      </h3>
-
-      <h4 :class="subsubsection">
-        Configuration
-      </h4>
-
-      <ol :class="paragraph">
-        <li>Open a terminal where is the OpenGeode source code.</li>
-        <li>
-          Create a `build` directory:
-          <code>mkdir build; cd build</code>
-        </li>
-        <li>
-          Run cmake:
-          <code>cmake ..</code> for default configuration or
-          <code>ccmake ..</code> or
-          <code>cmake-gui ..</code> to modify configuration options.
-        </li>
-      </ol>
-
-      <p
-        :class="paragraph"
-      >
-        If you want to use Xcode, we suggest you to use CMake GUI interface to select Xcode as generator (or use cmake options "-G Xcode" command lines).
-      </p>
-
-      <h4 :class="subsubsection">
-        Compilation without Xcode (Clang in command line)
-      </h4>
-
-      <ol :class="paragraph">
-        <li>Run `make` command in the build directory.</li>
-      </ol>
-
-      <h4 :class="subsubsection">
-        Compilation with Xcode
-      </h4>
-
-      <ol :class="paragraph">
-        <li>Open the project "SuperBuild.xcodeproj" with Xcode: `open SuperBuild.xcodeproj`, and then compile using the graphical interface.</li>
-      </ol>
-
-      <p :class="paragraph">
-        Or, you can directly compile with the terminal: `xcodebuild -project SuperBuild.xcodeproj -alltargets -configuration Release`.
-        Replace "Release" by "Debug" to compile in debug mode.
-      </p>
 
       <p :class="paragraph">
         Now you are ready to work with OpenGeode.
