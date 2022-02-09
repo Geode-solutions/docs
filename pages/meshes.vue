@@ -136,8 +136,8 @@
     <code class="example">
       // Let's have a PolygonalSurface2D& called surface;
       surface.enable_edges();
-      const auto nbe = surfaces.edges().nb_edges();
-      const auto vertices = surfaces.edges().edge_vertices( 3 ); // [4, 5]
+      const auto nbe = surface.edges().nb_edges();
+      const auto vertices = surface.edges().edge_vertices( 3 ); // [4, 5]
       const auto edge = surface.edges().edge_from_vertices( {8, 0} ); // 1
     </code>
     <!-- eslint-enable -->
