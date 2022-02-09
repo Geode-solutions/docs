@@ -7,12 +7,12 @@
 
       <p :class="paragraph">
         This page explains how you can create a module that depends on OpenGeode,
-        for developing your own features.
-        The procedure is very simple and we provide you tools for working quickly.
+        to develop your own features.
+        The procedure is very simple and you can quickly get to work, with the tools that we provide
       </p>
 
       <h2 :class="section">
-        What do you need
+        What you need
       </h2>
 
       <p
@@ -41,7 +41,7 @@
           Click on
           <strong>Use this template</strong>.
           Il will allow you to create a repository from this template repository.
-          Choose all options you want, including ownership, repo name, public or private access.
+          Choose all the options you want, including ownership, repo name, public or private access.
         </li>
         <li>
           Finalize by clicking on
@@ -62,10 +62,10 @@
         Have a quick look at your new repository.
         There are three folders: one for the headers of your libs, one for the sources,
         and the last for tests.
-        There are also few files.
-        If you need information on these files go to the last section
+        There are also a few files.
+        If you need information on these files, you can go to the last section
         `What are these files in module repository`.
-        Open CMakeLists.txt in your favorite text editor or IDE.
+        For now, open CMakeLists.txt in your favorite text editor or IDE.
       </p>
 
       <ol :class="paragraph">
@@ -76,7 +76,7 @@
         </li>
         <li>
           Change the name of the option
-          <code>MYMODULE_WITH_TESTS</code> or
+          <code>MYMODULE_WITH_TESTS</code>, or
           remove this option if you do not want to make tests for your module (which is not a good idea!).
           Be careful this option appears twice in the file.
         </li>
@@ -136,9 +136,9 @@
       </h2>
 
       <p :class="paragraph">
-        As for OpenGeode \link opengeode_how_to_compile configuration and compilation\endlink,
+        As for OpenGeode <href="opengeode_how_to_compile"> configuration and compilation</a>,
         this step depends on your platform.
-        Follow \link opengeode_how_to_compile_module this page\endlink to learn how to configure
+        Follow <href="opengeode_how_to_compile_module"> this page</a> to learn how to configure
         and compile your own module.
       </p>
 
@@ -220,9 +220,8 @@ export default {
     subsection: 'display-1 ma-5 pa-5',
     subsubsection: 'title ma-5 pa-5',
     paragraph: 'body-1 my-5',
-    brep:
-      "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>"
-  })
+    brep: "<a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
+  }),
 }
 </script>
 
