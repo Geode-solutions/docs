@@ -28,8 +28,8 @@ template class geode::BackgroundMeshBuilder
 			index_t vertex_id
 			);
 	
-		void :target:`set_vertex_on_border<doxid-classgeode_1_1_background_mesh_builder_1aeb0c924954947256167233affc0694b7>`(index_t vertex_id);
-		void :target:`unset_vertex_on_border<doxid-classgeode_1_1_background_mesh_builder_1af8597795ff4fc6f1011ab540c328035e>`(index_t vertex_id);
+		void :target:`set_vertex_as_border<doxid-classgeode_1_1_background_mesh_builder_1a2a6f7b705b1c66c0e392390a76eaf49e>`(index_t vertex_id);
+		void :target:`unset_vertex_as_border<doxid-classgeode_1_1_background_mesh_builder_1a9b80ce725756ccc9eab680c53081ec19>`(index_t vertex_id);
 	
 		void :target:`add_component_vertex_to_background_mesh_vertex<doxid-classgeode_1_1_background_mesh_builder_1a2625ecd1adff49f0c04335ca24708cc5>`(
 			const uuid& mesh_id,
@@ -58,4 +58,3 @@ template class geode::BackgroundMeshBuilder
 	// direct descendants
 
 	class :ref:`BackgroundMeshBuilder2D<doxid-classgeode_1_1_background_mesh_builder2_d>`;
-	class :ref:`BackgroundMeshBuilder3D<doxid-classgeode_1_1_background_mesh_builder3_d>`;

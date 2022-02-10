@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::BackgroundMeshInserter3D
+.. _doxid-classgeode_1_1_background_mesh_inserter3_d:
+
+class geode::BackgroundMeshInserter3D
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <background_mesh_inserter.h>
+	
+	class BackgroundMeshInserter3D
+	{
+	public:
+		// construction
+	
+		:target:`BackgroundMeshInserter3D<doxid-classgeode_1_1_background_mesh_inserter3_d_1a86cd118e5799cc60db68acea8a8c4935>`(:ref:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d>`& background_mesh);
+
+		// methods
+	
+		void :target:`insert_model<doxid-classgeode_1_1_background_mesh_inserter3_d_1a260e8e2d3a8fc918e5b602c7a103f92b>`(const BRep& brep);
+		void :target:`insert_surface<doxid-classgeode_1_1_background_mesh_inserter3_d_1ad03d6a4cd572d2840821c81b556a5eca>`(const Surface3D& surface);
+		void :target:`insert_surface<doxid-classgeode_1_1_background_mesh_inserter3_d_1acf91ec9296a3edd451bdeb3901b7a0eb>`(const TriangulatedSurface3D& mesh);
+		void :target:`insert_line<doxid-classgeode_1_1_background_mesh_inserter3_d_1a72a3f9ee29ad1671f78e5496e38daccc>`(const Line3D& line);
+		void :target:`insert_curve<doxid-classgeode_1_1_background_mesh_inserter3_d_1a5a86317d5720a9fc777bb2348fd69134>`(const EdgedCurve3D& mesh);
+	};

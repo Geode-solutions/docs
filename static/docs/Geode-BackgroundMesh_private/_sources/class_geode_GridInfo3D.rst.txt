@@ -1,0 +1,55 @@
+.. index:: pair: class; geode::GridInfo3D
+.. _doxid-classgeode_1_1_grid_info3_d:
+
+class geode::GridInfo3D
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <grid_info.h>
+	
+	class GridInfo3D
+	{
+	public:
+		// methods
+	
+		const RegularGrid3D& :target:`grid<doxid-classgeode_1_1_grid_info3_d_1a29b6cc27b9930ce9a757c1f97e83617b>`() const;
+		const :ref:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`& :target:`mesh_elements<doxid-classgeode_1_1_grid_info3_d_1add83cfe0484dd8c3dfa3378d20fbeb71>`(const RegularGrid3D::Index& cell) const;
+		index_t :target:`one_mesh_element<doxid-classgeode_1_1_grid_info3_d_1ab8651bd496d5cdf79e0f71fbe82065cc>`(const RegularGrid3D::Index& cell) const;
+		absl::InlinedVector<index_t, 1> :target:`cell_id<doxid-classgeode_1_1_grid_info3_d_1a9169f02240b529df05845648f0e16c8e>`(index_t mesh_element_id) const;
+		bool :target:`is_cell_active<doxid-classgeode_1_1_grid_info3_d_1aa2c739b7d2e1f5b8ed493d9f93d54144>`(index_t cell_id) const;
+		bool :target:`is_cell_active<doxid-classgeode_1_1_grid_info3_d_1a7e145e67bc66565d84c0b57753708ec0>`(const RegularGrid3D::Index& cell) const;
+		index_t :target:`cell_corner_vertex<doxid-classgeode_1_1_grid_info3_d_1a0764dcca23a9232ef109de3e49a55301>`(const RegularGrid3D::Index& cell) const;
+		bool :target:`is_on_border<doxid-classgeode_1_1_grid_info3_d_1ae11d3cd7be3091ac1877470dd372a9c3>`(index_t vertex_id) const;
+	
+		void :target:`set_cell_corner_vertex<doxid-classgeode_1_1_grid_info3_d_1a1adaf833360cdd28731c9fc3d00a5c66>`(
+			const RegularGrid3D::Index& cell,
+			index_t vertex_id,
+			GridInfo3DKey
+			);
+	
+		void :target:`set_vertex_as_border<doxid-classgeode_1_1_grid_info3_d_1aab90922268c3adf2a5c68afe5927df27>`(index_t vertex_id, GridInfo3DKey);
+		void :target:`unset_vertex_as_border<doxid-classgeode_1_1_grid_info3_d_1a6779c07e002255eb2fd948bd1b23c781>`(index_t vertex_id, GridInfo3DKey);
+		void :target:`map_element_to_cell<doxid-classgeode_1_1_grid_info3_d_1a59c0e491ec78e8b28c19560fdb95022d>`(index_t element, index_t cell_id, GridInfo3DKey);
+	
+		void :target:`map_elements_to_cell<doxid-classgeode_1_1_grid_info3_d_1a6d87ec11558c420c535ce1837b53972a>`(
+			const :ref:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`& elements,
+			index_t cell_id,
+			GridInfo3DKey
+			);
+	
+		void :target:`activate_cell<doxid-classgeode_1_1_grid_info3_d_1a533beef9037f0d05b9e95750e7d52da0>`(index_t cell_id, GridInfo3DKey);
+		void :target:`update_mesh_elements<doxid-classgeode_1_1_grid_info3_d_1a2cfcf1db78fe8180f2c6738596ef3a23>`(const :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t>& mapping, GridInfo3DKey);
+		void :target:`update_all_mesh_elements<doxid-classgeode_1_1_grid_info3_d_1a585c33db7102e85dbb8706d243d8ab44>`(index_t nb_total_mesh_elements, GridInfo3DKey);
+	};
+
+	// direct descendants
+
+	class :ref:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d>`;

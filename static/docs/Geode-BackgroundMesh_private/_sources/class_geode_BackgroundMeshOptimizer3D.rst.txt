@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::BackgroundMeshOptimizer3D
+.. _doxid-classgeode_1_1_background_mesh_optimizer3_d:
+
+class geode::BackgroundMeshOptimizer3D
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <background_mesh_optimizer.h>
+	
+	class BackgroundMeshOptimizer3D
+	{
+	public:
+		// construction
+	
+		:target:`BackgroundMeshOptimizer3D<doxid-classgeode_1_1_background_mesh_optimizer3_d_1ad618769d364a84f5b10fcedff53138ae>`(
+			const :ref:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d>`& background_mesh,
+			:ref:`BackgroundMeshModifier3D<doxid-classgeode_1_1_background_mesh_modifier3_d>`& modifier
+			);
+
+		// methods
+	
+		void :target:`optimize_background_mesh_elements<doxid-classgeode_1_1_background_mesh_optimizer3_d_1afb390d1d90db54e698d6f0d2d80bfc27>`();
+		void :target:`optimize_background_mesh_elements<doxid-classgeode_1_1_background_mesh_optimizer3_d_1a12c0ce9852b5ec8aa0dee5e5a8477dce>`(absl::Span<const index_t> elements);
+		void :target:`optimize_background_mesh_elements<doxid-classgeode_1_1_background_mesh_optimizer3_d_1a2c92cc0fe19acd07bac0f807e3b8c051>`(index_t first_element);
+	};

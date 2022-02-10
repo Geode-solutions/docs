@@ -1,0 +1,22 @@
+.. index:: pair: enum; MacroInfoTag
+.. _doxid-namespacegeode_1a2a391ee985bb96719d44373c124a5932:
+
+enum geode::MacroInfoTag
+========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <macro_info.h>
+
+	enum MacroInfoTag
+	{
+	    :target:`empty<doxid-namespacegeode_1a2a391ee985bb96719d44373c124a5932aa2e4822a98337283e39f7b60acf85ec9>`,
+	    :target:`egal<doxid-namespacegeode_1a2a391ee985bb96719d44373c124a5932a80321d141d771c93b16218e72de5734f>`,
+	    :target:`included<doxid-namespacegeode_1a2a391ee985bb96719d44373c124a5932a99f78c54130e752954404fff0707dcbd>`,
+	    :target:`fixed<doxid-namespacegeode_1a2a391ee985bb96719d44373c124a5932acec315e3d0975e5cc2811d5d8725f149>`,
+	    :target:`other<doxid-namespacegeode_1a2a391ee985bb96719d44373c124a5932a795f3202b17cb6bc3d4b771d8c6c9eaf>`,
+	};
+

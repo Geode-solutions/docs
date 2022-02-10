@@ -59,8 +59,8 @@ Inherited Members
 			);
 	
 		bool :ref:`is_on_border<doxid-classgeode_1_1_background_mesh_1a898dfd4e2f3446c22eb0b3e9223419f6>`(index_t vertex_id) const;
-		void :ref:`set_vertex_on_border<doxid-classgeode_1_1_background_mesh_1af49aaa0076f833ba6ec41f0d2e279e17>`(index_t vertex_id, BackgroundMeshKey);
-		void :ref:`unset_vertex_on_border<doxid-classgeode_1_1_background_mesh_1a9f188ff7c0d5b95596166e7e3e12a260>`(index_t vertex_id, BackgroundMeshKey);
+		void :ref:`set_vertex_as_border<doxid-classgeode_1_1_background_mesh_1ad92ae9cfb6688b522e7a5d43d21cea7e>`(index_t vertex_id, BackgroundMeshKey);
+		void :ref:`unset_vertex_as_border<doxid-classgeode_1_1_background_mesh_1a58228eccb8e38dcc838229af9387a788>`(index_t vertex_id, BackgroundMeshKey);
 		std::vector<:ref:`ComponentVertex<doxid-namespacegeode_1a18addb3cd44b1f3927bae3085acc23e9>`> :ref:`component_vertices<doxid-classgeode_1_1_background_mesh_1ae56191277a937bf85f31926ee9bd66af>`(index_t background_mesh_vertex) const;
 		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :ref:`component_edges<doxid-classgeode_1_1_background_mesh_1ae820ab3b59ba130e33925837d6799c81>`(index_t background_mesh_edge) const;
 		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :ref:`incident_component_edges<doxid-classgeode_1_1_background_mesh_1a7f14421486b5c150796b3d06868e04b6>`(index_t background_mesh_vertex) const;

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::BackgroundMeshBuilder3D &#8212; Python  documentation</title>
+    <title>class geode::BackgroundMeshModifier3D &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::BackgroundMeshDecimator3D" href="class_geode_BackgroundMeshDecimator3D.html" />
-    <link rel="prev" title="class geode::BackgroundMeshBuilder2D" href="class_geode_BackgroundMeshBuilder2D.html" />
+    <link rel="next" title="class geode::BackgroundMeshOptimizer3D" href="class_geode_BackgroundMeshOptimizer3D.html" />
+    <link rel="prev" title="class geode::BackgroundMeshInserter3D" href="class_geode_BackgroundMeshInserter3D.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,37 +34,37 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-backgroundmeshbuilder3d">
-<span id="doxid-classgeode-1-1-background-mesh-builder3-d"></span><span id="index-0"></span><h1>class geode::BackgroundMeshBuilder3D</h1>
+  <div class="section" id="class-geode-backgroundmeshmodifier3d">
+<span id="doxid-classgeode-1-1-background-mesh-modifier3-d"></span><span id="index-0"></span><h1>class geode::BackgroundMeshModifier3D</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;background_mesh_builder.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;background_mesh_modifier.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">BackgroundMeshBuilder3D</span><span class="p">:</span>
-    <span class="k">public</span> <span class="n">OpenGeodeTetrahedralSolidBuilder3D</span><span class="p">,</span>
-    <span class="k">public</span> <span class="n">TetrahedralSolidEpsilonModifier</span><span class="p">,</span>
-    <span class="k">public</span> <a class="reference internal" href="class_geode_MacroInfoBuilder3D.html#doxid-classgeode-1-1-macro-info-builder3-d"><span class="std std-ref">geode::MacroInfoBuilder3D</span></a><span></span><span class="p">,</span>
-    <span class="k">public</span> <a class="reference internal" href="class_geode_GridInfoBuilder3D.html#doxid-classgeode-1-1-grid-info-builder3-d"><span class="std std-ref">geode::GridInfoBuilder3D</span></a><span></span>
+<span class="k">class</span> <span class="nl">BackgroundMeshModifier3D</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D.html#doxid-classgeode-1-1-background-mesh-builder3-d"><span class="std std-ref">geode::BackgroundMeshBuilder3D</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1a370e324332a1e8b1738cd378f82fa859"><span></span><span class="n">BackgroundMeshBuilder3D</span></span><span></span><span class="p">(</span><span class="n">VertexSet</span><span class="o">&amp;</span> <span class="n">vertex_set</span><span class="p">,</span> <span class="n">MeshBuilderFactoryKey</span><span class="p">);</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1a2714fac2bfc6b0c5eff50a2ac047a346"><span></span><span class="n">BackgroundMeshBuilder3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BackgroundMesh3D.html#doxid-classgeode-1-1-background-mesh3-d"><span class="std std-ref">BackgroundMesh3D</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier3-d-1a0f257e4804894d35d0f685ef5d295704"><span></span><span class="n">BackgroundMeshModifier3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BackgroundMesh3D.html#doxid-classgeode-1-1-background-mesh3-d"><span class="std std-ref">BackgroundMesh3D</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1af7588225d5f61dc1b6edf518106acd2b"><span></span><span class="n">update_information</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidSplitInfo</span><span class="o">&amp;</span> <span class="n">split_info</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1ad2e914c6e3f8f5ca4ff7816b968b455a"><span></span><span class="n">update_information</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidSplitEdgeInfo</span><span class="o">&amp;</span> <span class="n">split_info</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1a8e3ce88cda3caa988b74d68504ff715c"><span></span><span class="n">update_information</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidCollapseEdgeInfo</span><span class="o">&amp;</span> <span class="n">collapse_info</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1ac32ae5b5c6efd1acb0a01e244d2fb985"><span></span><span class="n">create_background_mesh_elements</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">cells</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1ad3ef836ca1c3b37088ae7cba25a4a064"><span></span><span class="n">fill_holes</span></span><span></span><span class="p">();</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder3-d-1a68fe4ec563284b5514c6e5af44b182d5"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BackgroundMesh3D.html#doxid-classgeode-1-1-background-mesh3-d"><span class="std std-ref">BackgroundMesh3D</span></a><span></span><span class="o">&amp;</span> <span class="n">source</span><span class="p">);</span>
-<span class="p">};</span>
+    <span class="n">SolidSplitInfo</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier3-d-1ab0e6c3d7c9b5f4cb17581fd64a61337e"><span></span><span class="n">insert_point_in_tetrahedron</span></span><span></span><span class="p">(</span>
+        <span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
 
-<span class="c1">// direct descendants</span>
+    <span class="n">SolidSplitInfo</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier3-d-1a7dc2de0f819297127d836e5117299243"><span></span><span class="n">split_facet</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="n">SolidSplitEdgeInfo</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier3-d-1a73fd1887842c190a21f7cec6e710ba1b"><span></span><span class="n">split_edge</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
 
-<span class="k">class</span> <a class="reference internal" href="class_geode_BackgroundMeshModifier3D.html#doxid-classgeode-1-1-background-mesh-modifier3-d"><span class="std std-ref">BackgroundMeshModifier3D</span></a><span></span><span class="p">;</span></pre>
+    <span class="n">SolidSplitEdgeInfo</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier3-d-1a6021b26366d0cc69eb32bc75da935e97"><span></span><span class="n">split_edge</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
+
+    <span class="n">SolidCollapseEdgeInfo</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier3-d-1a1113ad5e81e4d2a9cd94ddf1045c0373"><span></span><span class="n">collapse_edge</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier3-d-1a0433cba58b3dbfa5458284799d412bba"><span></span><span class="n">clean_background_mesh</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
@@ -105,7 +105,13 @@
     <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder3D.html#doxid-classgeode-1-1-grid-info-builder3-d-1a380ee916f0c540478a8981e53f5d602e"><span class="std std-ref">map_elements_to_cell</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a484cebea94c5af40bcb1b704f8720d00"><span class="std std-ref">MeshElements</span></a><span></span><span class="o">&amp;</span> <span class="n">elements</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">cell_id</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder3D.html#doxid-classgeode-1-1-grid-info-builder3-d-1abe0cd473ebc8cfe3ab702b162343272b"><span class="std std-ref">update_tetrahedra</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">TetrahedronMapping</span><span class="o">&gt;</span> <span class="n">tetrahedra</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder3D.html#doxid-classgeode-1-1-grid-info-builder3-d-1a629f60b022379a5b1b2478c67d5b7764"><span class="std std-ref">update_tetrahedra</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidCollapseEdgeInfo</span><span class="o">&amp;</span> <span class="n">info</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder3D.html#doxid-classgeode-1-1-grid-info-builder3-d-1a010872fc7eefcfb362a40bc22b795573"><span class="std std-ref">activate_cell</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">cell_id</span><span class="p">);</span></pre>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder3D.html#doxid-classgeode-1-1-grid-info-builder3-d-1a010872fc7eefcfb362a40bc22b795573"><span class="std std-ref">activate_cell</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">cell_id</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D.html#doxid-classgeode-1-1-background-mesh-builder3-d-1af7588225d5f61dc1b6edf518106acd2b"><span class="std std-ref">update_information</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidSplitInfo</span><span class="o">&amp;</span> <span class="n">split_info</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D.html#doxid-classgeode-1-1-background-mesh-builder3-d-1ad2e914c6e3f8f5ca4ff7816b968b455a"><span class="std std-ref">update_information</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidSplitEdgeInfo</span><span class="o">&amp;</span> <span class="n">split_info</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D.html#doxid-classgeode-1-1-background-mesh-builder3-d-1a8e3ce88cda3caa988b74d68504ff715c"><span class="std std-ref">update_information</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidCollapseEdgeInfo</span><span class="o">&amp;</span> <span class="n">collapse_info</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D.html#doxid-classgeode-1-1-background-mesh-builder3-d-1ac32ae5b5c6efd1acb0a01e244d2fb985"><span class="std std-ref">create_background_mesh_elements</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">cells</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D.html#doxid-classgeode-1-1-background-mesh-builder3-d-1ad3ef836ca1c3b37088ae7cba25a4a064"><span class="std std-ref">fill_holes</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D.html#doxid-classgeode-1-1-background-mesh-builder3-d-1a68fe4ec563284b5514c6e5af44b182d5"><span class="std std-ref">copy</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BackgroundMesh3D.html#doxid-classgeode-1-1-background-mesh3-d"><span class="std std-ref">BackgroundMesh3D</span></a><span></span><span class="o">&amp;</span> <span class="n">source</span><span class="p">);</span></pre>
 </div>
 </div>
 
@@ -123,7 +129,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_BackgroundMeshBuilder3D.rst.txt"
+      <a href="_sources/class_geode_BackgroundMeshModifier3D.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

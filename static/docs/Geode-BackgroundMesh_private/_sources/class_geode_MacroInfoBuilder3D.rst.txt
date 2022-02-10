@@ -1,0 +1,53 @@
+.. index:: pair: class; geode::MacroInfoBuilder3D
+.. _doxid-classgeode_1_1_macro_info_builder3_d:
+
+class geode::MacroInfoBuilder3D
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <macro_info_builder.h>
+	
+	class MacroInfoBuilder3D
+	{
+	public:
+		// methods
+	
+		void :target:`add_macro_vertex_info<doxid-classgeode_1_1_macro_info_builder3_d_1adaa013abb3960a9f5bfa58111fc17dfb>`(
+			const uuid& component_uuid,
+			index_t macro_vertex_id,
+			index_t bmesh_vertex_id
+			);
+	
+		void :target:`add_macro_edge_info<doxid-classgeode_1_1_macro_info_builder3_d_1a88ed1731c1abf861d4cd64ff0c52cf2e>`(
+			const uuid& component_uuid,
+			index_t macro_edge_id,
+			absl::Span<const index_t> bmesh_edge_ids
+			);
+	
+		void :target:`add_macro_facet_info<doxid-classgeode_1_1_macro_info_builder3_d_1a6c412bcefdcc3379e2e8c3c5849b0cad>`(
+			const uuid& surface_uuid,
+			geode::index_t macro_polygon_id,
+			absl::Span<const index_t> bmesh_facets_id
+			);
+	
+		void :target:`update_information<doxid-classgeode_1_1_macro_info_builder3_d_1acd6b6449c5ccf4fe2a83b101acd1b6cf>`(const SolidSplitInfo& split_info);
+		void :target:`update_information<doxid-classgeode_1_1_macro_info_builder3_d_1a37d683714498174a1220d9549f8ee546>`(const SolidSplitEdgeInfo& split_info);
+		void :target:`update_information<doxid-classgeode_1_1_macro_info_builder3_d_1a3898d2120950f9168e2a37fa1897796c>`(const SolidCollapseEdgeInfo& collapse_info);
+		void :target:`update_vertices<doxid-classgeode_1_1_macro_info_builder3_d_1acbdb6d862dacec681a4ea56153ea38b1>`(absl::Span<const VertexMultiMapping> vertex_mappings);
+		void :target:`update_edges<doxid-classgeode_1_1_macro_info_builder3_d_1a27f37aee0c2b572b4c6a2c60b6540da0>`(absl::Span<const EdgeMapping> edges);
+		void :target:`update_edges<doxid-classgeode_1_1_macro_info_builder3_d_1a4406597beebffeb2c2307d767366707f>`(absl::Span<const EdgeMultiMapping> edges);
+		void :target:`update_facets<doxid-classgeode_1_1_macro_info_builder3_d_1acb189aa7f651f80441d81178e1ed3162>`(absl::Span<const FacetMultiMapping> facets);
+		void :target:`update_facets<doxid-classgeode_1_1_macro_info_builder3_d_1a7498efe8adf582db6402c7571abd7e2b>`(absl::Span<const FacetMapping> facets);
+	};
+
+	// direct descendants
+
+	class :ref:`BackgroundMeshBuilder3D<doxid-classgeode_1_1_background_mesh_builder3_d>`;

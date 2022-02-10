@@ -1,0 +1,72 @@
+.. index:: pair: class; geode::MacroInfo3D
+.. _doxid-classgeode_1_1_macro_info3_d:
+
+class geode::MacroInfo3D
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <macro_info.h>
+	
+	class MacroInfo3D
+	{
+	public:
+		// methods
+	
+		std::vector<:ref:`ComponentVertex<doxid-namespacegeode_1a18addb3cd44b1f3927bae3085acc23e9>`> :target:`component_vertices<doxid-classgeode_1_1_macro_info3_d_1a5c69c8daed0e36e79627c4cf6e7da269>`(index_t background_mesh_vertex) const;
+		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :target:`component_edges<doxid-classgeode_1_1_macro_info3_d_1aa598f8140e83ab93632d721fe2a6f971>`(index_t background_mesh_edge) const;
+		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :target:`incident_component_edges<doxid-classgeode_1_1_macro_info3_d_1a6455266159eb018528d09d1ae0403682>`(index_t background_mesh_vertex) const;
+		std::vector<:ref:`ComponentFacet<doxid-namespacegeode_1a565f96916671cc61257ab36f9e55a2e1>`> :target:`component_facets<doxid-classgeode_1_1_macro_info3_d_1ab4f2c6dcc12e2f6a0d8012d253ace3d2>`(index_t background_mesh_facet) const;
+		std::vector<:ref:`ComponentFacet<doxid-namespacegeode_1a565f96916671cc61257ab36f9e55a2e1>`> :target:`incident_component_facets<doxid-classgeode_1_1_macro_info3_d_1a168dfb3f684530ef93f25da97ce7319e>`(index_t background_mesh_vertex) const;
+	
+		:ref:`EdgeMacroInfoConfig<doxid-structgeode_1_1_edge_macro_info_config>` :target:`edge_configuration<doxid-classgeode_1_1_macro_info3_d_1ad1dda5a35b71957350814b60da364d69>`(
+			index_t edge_id,
+			const TetrahedralSolid3D& bmesh_solid
+			) const;
+	
+		void :target:`add_component_vertex_to_background_mesh_vertex<doxid-classgeode_1_1_macro_info3_d_1a6fd072fe0a3ec686e7da045164384e7e>`(
+			const uuid& mesh_id,
+			index_t vertex_id,
+			index_t bmesh_vertex_id,
+			MacroInfo3DKey
+			);
+	
+		void :target:`add_component_edge_to_background_mesh_edge<doxid-classgeode_1_1_macro_info3_d_1a20a4681591bed0aaffe16ccf39cf2e00>`(
+			const uuid& mesh_id,
+			index_t edge_id,
+			index_t bmesh_edge_id,
+			MacroInfo3DKey
+			);
+	
+		void :target:`add_component_edge_to_background_mesh_vertices<doxid-classgeode_1_1_macro_info3_d_1ada9f659e6b31c2239ca3b5e06168e907>`(
+			const uuid& mesh_id,
+			index_t edge_id,
+			absl::Span<const index_t> bmesh_vertex_ids,
+			MacroInfo3DKey
+			);
+	
+		void :target:`add_component_facet_to_background_mesh_facet<doxid-classgeode_1_1_macro_info3_d_1a9b33393a9a97fa42264d7c48a1779803>`(
+			const uuid& mesh_id,
+			index_t facet_id,
+			index_t bmesh_facet_id,
+			MacroInfo3DKey
+			);
+	
+		void :target:`add_component_facet_to_background_mesh_vertices<doxid-classgeode_1_1_macro_info3_d_1abdc3d881b1b630c504c758f76c40e088>`(
+			const uuid& mesh_id,
+			index_t facet_id,
+			absl::Span<const index_t> bmesh_vertex_ids,
+			MacroInfo3DKey
+			);
+	};
+
+	// direct descendants
+
+	class :ref:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d>`;

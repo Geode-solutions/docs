@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::GridInfoBuilder3D
+.. _doxid-classgeode_1_1_grid_info_builder3_d:
+
+class geode::GridInfoBuilder3D
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <grid_info_builder.h>
+	
+	class GridInfoBuilder3D
+	{
+	public:
+		// methods
+	
+		void :target:`update_mesh_elements<doxid-classgeode_1_1_grid_info_builder3_d_1ad4a78c35fb7f9ab22015358767ba4db8>`(const :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t>& mapping);
+		void :target:`update_all_mesh_elements<doxid-classgeode_1_1_grid_info_builder3_d_1ae1253b0a85f7448d889f168c6210e69d>`(index_t nb_elements);
+		void :target:`set_cell_corner_vertex<doxid-classgeode_1_1_grid_info_builder3_d_1a1217e378525f4ff04c25fd127f49bc3b>`(const RegularGrid3D::Index& cell, index_t vertex_id);
+		void :target:`set_vertex_as_border<doxid-classgeode_1_1_grid_info_builder3_d_1ac270bb3e3ce62849df6e71adc8673a58>`(index_t vertex_id);
+		void :target:`unset_vertex_as_border<doxid-classgeode_1_1_grid_info_builder3_d_1aec75646cb8f34f276dd9421f39c5c977>`(index_t vertex_id);
+		void :target:`map_element_to_cell<doxid-classgeode_1_1_grid_info_builder3_d_1a91fd4f2bd41aa6eea6b2ea8f51a99f1a>`(index_t element, index_t cell_id);
+		void :target:`map_elements_to_cell<doxid-classgeode_1_1_grid_info_builder3_d_1a380ee916f0c540478a8981e53f5d602e>`(const :ref:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`& elements, index_t cell_id);
+		void :target:`update_tetrahedra<doxid-classgeode_1_1_grid_info_builder3_d_1abe0cd473ebc8cfe3ab702b162343272b>`(absl::Span<const TetrahedronMapping> tetrahedra);
+		void :target:`update_tetrahedra<doxid-classgeode_1_1_grid_info_builder3_d_1a629f60b022379a5b1b2478c67d5b7764>`(const SolidCollapseEdgeInfo& info);
+		void :target:`activate_cell<doxid-classgeode_1_1_grid_info_builder3_d_1a010872fc7eefcfb362a40bc22b795573>`(index_t cell_id);
+	};
+
+	// direct descendants
+
+	class :ref:`BackgroundMeshBuilder3D<doxid-classgeode_1_1_background_mesh_builder3_d>`;
