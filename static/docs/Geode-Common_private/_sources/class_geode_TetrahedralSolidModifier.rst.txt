@@ -18,7 +18,7 @@ Overview
 
 	#include <tetrahedral_solid_modifier.h>
 	
-	class TetrahedralSolidModifier
+	class TetrahedralSolidModifier: public :ref:`geode::VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`
 	{
 	public:
 		// construction
@@ -95,6 +95,18 @@ Overview
 	// direct descendants
 
 	class :ref:`TetrahedralSolidEpsilonModifier<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+
 .. _details-classgeode_1_1_tetrahedral_solid_modifier:
 
 Detailed Documentation

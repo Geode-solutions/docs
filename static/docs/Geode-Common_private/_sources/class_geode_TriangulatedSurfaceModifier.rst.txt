@@ -19,7 +19,7 @@ Overview
 	#include <triangulated_surface_modifier.h>
 	
 	template <index_t dimension>
-	class TriangulatedSurfaceModifier
+	class TriangulatedSurfaceModifier: public :ref:`geode::VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`
 	{
 	public:
 		// construction
@@ -76,6 +76,18 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`TriangulatedSurfaceEpsilonModifier<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+
 .. _details-classgeode_1_1_triangulated_surface_modifier:
 
 Detailed Documentation

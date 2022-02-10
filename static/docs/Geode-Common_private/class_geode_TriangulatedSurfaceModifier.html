@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="namespace std" href="namespace_std.html" />
+    <link rel="next" title="class geode::VertexSetModifier" href="class_geode_VertexSetModifier.html" />
     <link rel="prev" title="template class geode::TriangulatedSurfaceEpsilonModifier" href="class_geode_TriangulatedSurfaceEpsilonModifier.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -43,7 +43,7 @@
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;triangulated_surface_modifier.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="n">TriangulatedSurfaceModifier</span>
+<span class="k">class</span> <span class="nl">TriangulatedSurfaceModifier</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_VertexSetModifier.html#doxid-classgeode-1-1-vertex-set-modifier"><span class="std std-ref">geode::VertexSetModifier</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
@@ -100,6 +100,13 @@
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_TriangulatedSurfaceEpsilonModifier.html#doxid-classgeode-1-1-triangulated-surface-epsilon-modifier"><span class="std std-ref">TriangulatedSurfaceEpsilonModifier</span></a><span></span><span class="p">;</span></pre>
+<div class="section" id="inherited-members">
+<h3>Inherited Members</h3>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_VertexSetModifier.html#doxid-classgeode-1-1-vertex-set-modifier-1a4766fb064f0d9232973c1f24d8726759"><span class="std std-ref">updated_vertex</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span></pre>
+</div>
 </div>
 <div class="section" id="detailed-documentation">
 <span id="details-classgeode-1-1-triangulated-surface-modifier"></span><h2>Detailed Documentation</h2>

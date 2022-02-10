@@ -57,6 +57,7 @@ Inherited Members
 	public:
 		// methods
 	
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
 		bool :ref:`is_tetrahedron_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af187b78931d693da120ab9da5c5b4549>`(index_t tetrahedron_id) const;
 		bool :ref:`is_facet_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a49fdcfaf239bff7e181f1aaa5c7bb932>`(index_t facet_id) const;
 		void :ref:`set_tetrahedron_inactive<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af9d87f2288c25f5e8d356a6551be2b0b>`(index_t tetrahedron_id);

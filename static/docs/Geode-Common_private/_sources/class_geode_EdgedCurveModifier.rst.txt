@@ -19,7 +19,7 @@ Overview
 	#include <edged_curve_modifier.h>
 	
 	template <index_t dimension>
-	class EdgedCurveModifier
+	class EdgedCurveModifier: public :ref:`geode::VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`
 	{
 	public:
 		// construction
@@ -40,6 +40,18 @@ Overview
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_edged_curve_modifier_1a15627e5266d1fc7b5c953011f7b7cde9>`();
 		std::tuple<std::vector<index_t>, std::vector<index_t>> :ref:`clean<doxid-classgeode_1_1_edged_curve_modifier_1a6e42da248f85fb030f34ffee19330d64>`();
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+
 .. _details-classgeode_1_1_edged_curve_modifier:
 
 Detailed Documentation

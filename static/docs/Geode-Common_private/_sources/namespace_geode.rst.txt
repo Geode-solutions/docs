@@ -66,6 +66,7 @@ namespace geode
 	class_geode_TrianglesClosestThan.rst
 	class_geode_TriangulatedSurfaceEpsilonModifier.rst
 	class_geode_TriangulatedSurfaceModifier.rst
+	class_geode_VertexSetModifier.rst
 
 Overview
 ~~~~~~~~
@@ -207,6 +208,8 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`;
+
+	class :ref:`VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`;
 
 	// global functions
 
