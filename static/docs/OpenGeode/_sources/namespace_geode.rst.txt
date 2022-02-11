@@ -1305,7 +1305,7 @@ Overview
 	std::unique_ptr<SurfaceType> :target:`convert_brep_into_surface<doxid-namespacegeode_1a768625f254e1db6d39cf81abb492bbd6>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 
 	template <typename SolidType = SolidMesh3D>
-	std::unique_ptr<SolidMesh3D> :target:`convert_brep_into_solid<doxid-namespacegeode_1aef05ef6a6ffcc4a093d5d29f25509e41>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+	std::unique_ptr<SolidType> :target:`convert_brep_into_solid<doxid-namespacegeode_1af91913455eac5d7e8c7f775842b7a22f>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 
 	template <typename SurfaceType = SurfaceMesh3D>
 	std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType>> :target:`convert_brep_into_curve_and_surface<doxid-namespacegeode_1adde8715193b38d3f9840b4595a6ce0d1>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
