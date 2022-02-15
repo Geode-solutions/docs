@@ -1,0 +1,55 @@
+.. index:: pair: class; geode::BRepVerticesTopology
+.. _doxid-classgeode_1_1_b_rep_vertices_topology:
+
+class geode::BRepVerticesTopology
+=================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Class for inspecting the topology of a BRep model corners :ref:`More...<details-classgeode_1_1_b_rep_vertices_topology>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_vertices_topology.h>
+	
+	class BRepVerticesTopology
+	{
+	public:
+		// construction
+	
+		:target:`BRepVerticesTopology<doxid-classgeode_1_1_b_rep_vertices_topology_1a33258e3c0f00d730d55ce34f8ee80c95>`(const BRep& brep);
+
+		// methods
+	
+		bool :ref:`brep_vertices_topology_is_valid<doxid-classgeode_1_1_b_rep_vertices_topology_1ab9fa4b68090aca517afeb701f771c16b>`() const;
+		std::vector<index_t> :target:`multiple_corners_unique_vertices<doxid-classgeode_1_1_b_rep_vertices_topology_1ad50ab27dd6bcda5aa382dcaed1e2f859>`() const;
+		std::vector<index_t> :target:`multiple_internals_corner_vertices<doxid-classgeode_1_1_b_rep_vertices_topology_1aa55b79b4fc77e49161942aac108a0225>`() const;
+		std::vector<index_t> :target:`not_internal_nor_boundary_corner_vertices<doxid-classgeode_1_1_b_rep_vertices_topology_1a4e3daf84acb182ffa92facc6893dafe9>`() const;
+		std::vector<index_t> :target:`line_corners_without_boundary_status<doxid-classgeode_1_1_b_rep_vertices_topology_1a2df8e72607f1947b36fee0a242779144>`() const;
+	};
+.. _details-classgeode_1_1_b_rep_vertices_topology:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Class for inspecting the topology of a BRep model corners
+
+Methods
+-------
+
+.. index:: pair: function; brep_vertices_topology_is_valid
+.. _doxid-classgeode_1_1_b_rep_vertices_topology_1ab9fa4b68090aca517afeb701f771c16b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool brep_vertices_topology_is_valid() const
+
+Checks if the brep has topologically valid unique vertices, i.e. has vertices which verify: Each unique_vertex can only be associated to one corner. Each corner can only be internal to one object (surface or block). Each corner is a boundary of every line it is associated to.
+

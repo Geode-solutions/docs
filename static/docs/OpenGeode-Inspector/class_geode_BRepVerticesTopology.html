@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class geode::BRepVerticesTopology &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::EdgedCurveColocation" href="class_geode_EdgedCurveColocation.html" />
+    <link rel="prev" title="template class geode::detail::VertexCycle" href="class_geode_detail_VertexCycle.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-brepverticestopology">
+<span id="doxid-classgeode-1-1-b-rep-vertices-topology"></span><span id="index-0"></span><h1>class geode::BRepVerticesTopology</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>Class for inspecting the topology of a BRep model corners <a class="reference internal" href="#details-classgeode-1-1-b-rep-vertices-topology"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;brep_vertices_topology.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">BRepVerticesTopology</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-vertices-topology-1a33258e3c0f00d730d55ce34f8ee80c95"><span></span><span class="n">BRepVerticesTopology</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-b-rep-vertices-topology-1ab9fa4b68090aca517afeb701f771c16b"><span class="std std-ref">brep_vertices_topology_is_valid</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-vertices-topology-1ad50ab27dd6bcda5aa382dcaed1e2f859"><span></span><span class="n">multiple_corners_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-vertices-topology-1aa55b79b4fc77e49161942aac108a0225"><span></span><span class="n">multiple_internals_corner_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-vertices-topology-1a4e3daf84acb182ffa92facc6893dafe9"><span></span><span class="n">not_internal_nor_boundary_corner_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-vertices-topology-1a2df8e72607f1947b36fee0a242779144"><span></span><span class="n">line_corners_without_boundary_status</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-b-rep-vertices-topology"></span><h2>Detailed Documentation</h2>
+<p>Class for inspecting the topology of a BRep model corners</p>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-b-rep-vertices-topology-1ab9fa4b68090aca517afeb701f771c16b"><span id="index-1"></span><span></span><span class="kt">bool</span> <span class="n">brep_vertices_topology_is_valid</span><span class="p">()</span> <span class="k">const</span></pre>
+<p>Checks if the brep has topologically valid unique vertices, i.e. has vertices which verify: Each unique_vertex can only be associated to one corner. Each corner can only be internal to one object (surface or block). Each corner is a boundary of every line it is associated to.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_BRepVerticesTopology.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
