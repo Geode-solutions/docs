@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>template class geode::GridInfo &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::GridInfoBuilder" href="class_geode_GridInfoBuilder.html" />
+    <link rel="prev" title="class geode::BackgroundMeshOptimizer3D" href="class_geode_BackgroundMeshOptimizer3D.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="template-class-geode-gridinfo">
+<span id="doxid-classgeode-1-1-grid-info"></span><span id="index-0"></span><h1>template class geode::GridInfo</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;grid_info.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">GridInfo</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1af5caf64c5b8f4a0b68dfed1db9c4f205"><span></span><span class="n">grid</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a484cebea94c5af40bcb1b704f8720d00"><span class="std std-ref">MeshElements</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a2b9830b9cb5a4833b8bdaca5bb6bbd6c"><span></span><span class="n">mesh_elements</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="k">typename</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&amp;</span> <span class="n">cell</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a824bb0415968da8488bc51c477692278"><span></span><span class="n">one_mesh_element</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="k">typename</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&amp;</span> <span class="n">cell</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a42fa9d075e84246b94c30df7ad5f8a2c"><span></span><span class="n">cell_id</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">mesh_element_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a7b6bead7d924aacf0eb0669c2e303668"><span></span><span class="n">is_cell_active</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">cell_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1ac5ad7261be38a95f564af353fdaab929"><span></span><span class="n">is_cell_active</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="k">typename</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&amp;</span> <span class="n">cell</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a3998b4a407b035fd4ac35719c5878de8"><span></span><span class="n">cell_corner_vertex</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="k">typename</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&amp;</span> <span class="n">cell</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a54f4470614845021a0253c1a5e512377"><span></span><span class="n">is_on_border</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a891dbc0dae163da32db948731e1b7ecd"><span></span><span class="n">set_cell_corner_vertex</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="k">typename</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&amp;</span> <span class="n">cell</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span>
+        <span class="n">GridInfoKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a2ea6d30bc38253fa6e0cee0139142bb5"><span></span><span class="n">set_vertex_as_border</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span> <span class="n">GridInfoKey</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a41a883ead4cfcf166fe10a182f7a148c"><span></span><span class="n">unset_vertex_as_border</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span> <span class="n">GridInfoKey</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1ac2f87dfcd4649c6e5d93f7a2c589bd76"><span></span><span class="n">map_element_to_cell</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">element</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">cell_id</span><span class="p">,</span> <span class="n">GridInfoKey</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a70880a4f6aabf7733cbd427a1362eba6"><span></span><span class="n">map_elements_to_cell</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a484cebea94c5af40bcb1b704f8720d00"><span class="std std-ref">MeshElements</span></a><span></span><span class="o">&amp;</span> <span class="n">elements</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">cell_id</span><span class="p">,</span>
+        <span class="n">GridInfoKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1adbc0f79b7c445f1cae6ee276c81b5166"><span></span><span class="n">activate_cell</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">cell_id</span><span class="p">,</span> <span class="n">GridInfoKey</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1a668ed864b16eae08c0020feb51078b26"><span></span><span class="n">update_mesh_elements</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&amp;</span> <span class="n">mapping</span><span class="p">,</span> <span class="n">GridInfoKey</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-1ab01ffddd6335122bff81e725fc691b73"><span></span><span class="n">update_all_mesh_elements</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">nb_total_mesh_elements</span><span class="p">,</span> <span class="n">GridInfoKey</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_GridInfo.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

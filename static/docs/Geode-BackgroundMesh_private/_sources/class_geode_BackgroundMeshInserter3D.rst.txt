@@ -24,7 +24,7 @@ class geode::BackgroundMeshInserter3D
 
 		// methods
 	
-		void :target:`insert_model<doxid-classgeode_1_1_background_mesh_inserter3_d_1a260e8e2d3a8fc918e5b602c7a103f92b>`(const BRep& brep);
+		void :target:`insert_brep<doxid-classgeode_1_1_background_mesh_inserter3_d_1a1611d1c417b85e3b8a5660783f89563d>`(const BRep& brep);
 		void :target:`insert_surface<doxid-classgeode_1_1_background_mesh_inserter3_d_1ad03d6a4cd572d2840821c81b556a5eca>`(const Surface3D& surface);
 		void :target:`insert_surface<doxid-classgeode_1_1_background_mesh_inserter3_d_1acf91ec9296a3edd451bdeb3901b7a0eb>`(const TriangulatedSurface3D& mesh);
 		void :target:`insert_line<doxid-classgeode_1_1_background_mesh_inserter3_d_1a72a3f9ee29ad1671f78e5496e38daccc>`(const Line3D& line);

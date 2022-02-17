@@ -15,16 +15,10 @@ class geode::MacroInfoBuilder3D
 
 	#include <macro_info_builder.h>
 	
-	class MacroInfoBuilder3D
+	class MacroInfoBuilder3D: public :ref:`geode::MacroInfoBuilder<doxid-classgeode_1_1_macro_info_builder>`
 	{
 	public:
 		// methods
-	
-		void :target:`add_macro_vertex_info<doxid-classgeode_1_1_macro_info_builder3_d_1adaa013abb3960a9f5bfa58111fc17dfb>`(
-			const uuid& component_uuid,
-			index_t macro_vertex_id,
-			index_t bmesh_vertex_id
-			);
 	
 		void :target:`add_macro_edge_info<doxid-classgeode_1_1_macro_info_builder3_d_1a88ed1731c1abf861d4cd64ff0c52cf2e>`(
 			const uuid& component_uuid,
@@ -51,3 +45,21 @@ class geode::MacroInfoBuilder3D
 	// direct descendants
 
 	class :ref:`BackgroundMeshBuilder3D<doxid-classgeode_1_1_background_mesh_builder3_d>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		void :ref:`add_macro_vertex_info<doxid-classgeode_1_1_macro_info_builder_1a0c9ecfe54c320bc9d252b0c5f0a62e13>`(
+			const uuid& component_uuid,
+			index_t macro_vertex_id,
+			index_t bmesh_vertex_id
+			);
+	
+		void :ref:`update_vertices<doxid-classgeode_1_1_macro_info_builder_1ab4a48906a349cef20e463a859ae63c06>`(absl::Span<const VertexMultiMapping> vertex_mappings);
+

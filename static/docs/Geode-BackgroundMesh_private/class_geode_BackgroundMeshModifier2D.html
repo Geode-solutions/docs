@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::BackgroundMeshBuilder2D &#8212; Python  documentation</title>
+    <title>class geode::BackgroundMeshModifier2D &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::BackgroundMeshBuilder3D" href="class_geode_BackgroundMeshBuilder3D.html" />
-    <link rel="prev" title="class geode::BackgroundMesh3D" href="class_geode_BackgroundMesh3D.html" />
+    <link rel="next" title="class geode::BackgroundMeshModifier3D" href="class_geode_BackgroundMeshModifier3D.html" />
+    <link rel="prev" title="class geode::BackgroundMeshInserter3D" href="class_geode_BackgroundMeshInserter3D.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,37 +34,30 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-backgroundmeshbuilder2d">
-<span id="doxid-classgeode-1-1-background-mesh-builder2-d"></span><span id="index-0"></span><h1>class geode::BackgroundMeshBuilder2D</h1>
+  <div class="section" id="class-geode-backgroundmeshmodifier2d">
+<span id="doxid-classgeode-1-1-background-mesh-modifier2-d"></span><span id="index-0"></span><h1>class geode::BackgroundMeshModifier2D</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;background_mesh_builder.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;background_mesh_modifier.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">BackgroundMeshBuilder2D</span><span class="p">:</span>
-    <span class="k">public</span> <span class="n">OpenGeodeTriangulatedSurfaceBuilder2D</span><span class="p">,</span>
-    <span class="k">public</span> <span class="n">TriangulatedSurfaceEpsilonModifier2D</span><span class="p">,</span>
-    <span class="k">public</span> <a class="reference internal" href="class_geode_GridInfoBuilder2D.html#doxid-classgeode-1-1-grid-info-builder2-d"><span class="std std-ref">geode::GridInfoBuilder2D</span></a><span></span><span class="p">,</span>
-    <span class="k">public</span> <a class="reference internal" href="class_geode_MacroInfoBuilder2D.html#doxid-classgeode-1-1-macro-info-builder2-d"><span class="std std-ref">geode::MacroInfoBuilder2D</span></a><span></span>
+<span class="k">class</span> <span class="nl">BackgroundMeshModifier2D</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder2D.html#doxid-classgeode-1-1-background-mesh-builder2-d"><span class="std std-ref">geode::BackgroundMeshBuilder2D</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1acde9071732abf8dd6e86bb129afd921c"><span></span><span class="n">BackgroundMeshBuilder2D</span></span><span></span><span class="p">(</span><span class="n">VertexSet</span><span class="o">&amp;</span> <span class="n">vertex_set</span><span class="p">,</span> <span class="n">MeshBuilderFactoryKey</span><span class="p">);</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1a7f10199452c4b545b0a05d7f14c0bc80"><span></span><span class="n">BackgroundMeshBuilder2D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BackgroundMesh2D.html#doxid-classgeode-1-1-background-mesh2-d"><span class="std std-ref">BackgroundMesh2D</span></a><span></span><span class="o">&amp;</span> <span class="n">background_mesh</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier2-d-1a4a3f0b419a329100b049d729a00b2e60"><span></span><span class="n">BackgroundMeshModifier2D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BackgroundMesh2D.html#doxid-classgeode-1-1-background-mesh2-d"><span class="std std-ref">BackgroundMesh2D</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1a2226d9d33ed6f89c28cefb87b5c4b522"><span></span><span class="n">update_information</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SplitTriangleInfo</span><span class="o">&amp;</span> <span class="n">split_info</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1ac5ae6be03fa8e5d4b8d1a23eb6382570"><span></span><span class="n">update_information</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SplitPolygonEdgeInfo</span><span class="o">&amp;</span> <span class="n">split_info</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1af86d61b6504df251b4d94c310181b21e"><span></span><span class="n">update_information</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">CollapseEdgeInfo</span><span class="o">&amp;</span> <span class="n">collapse_info</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1a4c298edfa24d47e0fb5df64927a3f0e4"><span></span><span class="n">create_background_mesh_elements</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">cells</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1a31c9b801fc483817164258a4f356f7ea"><span></span><span class="n">fill_holes</span></span><span></span><span class="p">();</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-builder2-d-1a95cc17fe4789596c71b9c8b2b92a28d4"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BackgroundMesh2D.html#doxid-classgeode-1-1-background-mesh2-d"><span class="std std-ref">BackgroundMesh2D</span></a><span></span><span class="o">&amp;</span> <span class="n">source</span><span class="p">);</span>
-<span class="p">};</span>
+    <span class="n">SplitTriangleInfo</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier2-d-1affb450c32547d9fae525b7060bd063f1"><span></span><span class="n">insert_point_in_triangle</span></span><span></span><span class="p">(</span>
+        <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
 
-<span class="c1">// direct descendants</span>
-
-<span class="k">class</span> <a class="reference internal" href="class_geode_BackgroundMeshModifier2D.html#doxid-classgeode-1-1-background-mesh-modifier2-d"><span class="std std-ref">BackgroundMeshModifier2D</span></a><span></span><span class="p">;</span></pre>
+    <span class="n">SplitPolygonEdgeInfo</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier2-d-1adfce34e967366f51a89c9b7151779e75"><span></span><span class="n">split_edge</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="n">CollapseEdgeInfo</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier2-d-1abae7cef92a292d1ee878d053eed09688"><span></span><span class="n">collapse_edge</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-background-mesh-modifier2-d-1af9adf732ba870affbd1c649684c26a9f"><span></span><span class="n">clean_background_mesh</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
@@ -105,7 +98,13 @@
     <span class="kt">void</span> <a class="reference internal" href="class_geode_MacroInfoBuilder2D.html#doxid-classgeode-1-1-macro-info-builder2-d-1ad01db663ae8c9b428bac8ade80345d79"><span class="std std-ref">update_information</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SplitPolygonEdgeInfo</span><span class="o">&amp;</span> <span class="n">split_info</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_MacroInfoBuilder2D.html#doxid-classgeode-1-1-macro-info-builder2-d-1a5946d43ea097de864f7e8e2a7dc42341"><span class="std std-ref">update_information</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">CollapseEdgeInfo</span><span class="o">&amp;</span> <span class="n">collapse_info</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_MacroInfoBuilder2D.html#doxid-classgeode-1-1-macro-info-builder2-d-1a0e7c9dbc691a56d22018fd6ca54f6e4e"><span class="std std-ref">update_edges</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">EdgeMapping</span><span class="o">&gt;</span> <span class="n">edges</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_MacroInfoBuilder2D.html#doxid-classgeode-1-1-macro-info-builder2-d-1a2581e5870bfc6f9b933bb0139c2c667b"><span class="std std-ref">update_edges</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">EdgeMultiMapping</span><span class="o">&gt;</span> <span class="n">edges</span><span class="p">);</span></pre>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_MacroInfoBuilder2D.html#doxid-classgeode-1-1-macro-info-builder2-d-1a2581e5870bfc6f9b933bb0139c2c667b"><span class="std std-ref">update_edges</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">EdgeMultiMapping</span><span class="o">&gt;</span> <span class="n">edges</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder2D.html#doxid-classgeode-1-1-background-mesh-builder2-d-1a2226d9d33ed6f89c28cefb87b5c4b522"><span class="std std-ref">update_information</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SplitTriangleInfo</span><span class="o">&amp;</span> <span class="n">split_info</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder2D.html#doxid-classgeode-1-1-background-mesh-builder2-d-1ac5ae6be03fa8e5d4b8d1a23eb6382570"><span class="std std-ref">update_information</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SplitPolygonEdgeInfo</span><span class="o">&amp;</span> <span class="n">split_info</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder2D.html#doxid-classgeode-1-1-background-mesh-builder2-d-1af86d61b6504df251b4d94c310181b21e"><span class="std std-ref">update_information</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">CollapseEdgeInfo</span><span class="o">&amp;</span> <span class="n">collapse_info</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder2D.html#doxid-classgeode-1-1-background-mesh-builder2-d-1a4c298edfa24d47e0fb5df64927a3f0e4"><span class="std std-ref">create_background_mesh_elements</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">cells</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder2D.html#doxid-classgeode-1-1-background-mesh-builder2-d-1a31c9b801fc483817164258a4f356f7ea"><span class="std std-ref">fill_holes</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder2D.html#doxid-classgeode-1-1-background-mesh-builder2-d-1a95cc17fe4789596c71b9c8b2b92a28d4"><span class="std std-ref">copy</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BackgroundMesh2D.html#doxid-classgeode-1-1-background-mesh2-d"><span class="std std-ref">BackgroundMesh2D</span></a><span></span><span class="o">&amp;</span> <span class="n">source</span><span class="p">);</span></pre>
 </div>
 </div>
 
@@ -123,7 +122,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_BackgroundMeshBuilder2D.rst.txt"
+      <a href="_sources/class_geode_BackgroundMeshModifier2D.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

@@ -1,0 +1,53 @@
+.. index:: pair: class; geode::MacroInfo
+.. _doxid-classgeode_1_1_macro_info:
+
+template class geode::MacroInfo
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <macro_info.h>
+	
+	template <index_t dimension>
+	class MacroInfo
+	{
+	public:
+		// methods
+	
+		std::vector<:ref:`ComponentVertex<doxid-namespacegeode_1a18addb3cd44b1f3927bae3085acc23e9>`> :target:`component_vertices<doxid-classgeode_1_1_macro_info_1a941021d0cf9740b5e220273a04c541e6>`(index_t background_mesh_vertex) const;
+		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :target:`component_edges<doxid-classgeode_1_1_macro_info_1ab352121404da22ce02b100f74b05624b>`(index_t background_mesh_edge) const;
+		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :target:`incident_component_edges<doxid-classgeode_1_1_macro_info_1a261a0d1aee37eab558941b60ff7a857a>`(index_t background_mesh_vertex) const;
+	
+		void :target:`add_component_vertex_to_background_mesh_vertex<doxid-classgeode_1_1_macro_info_1aed9b80736c677ab61406e5832b7d9f6c>`(
+			const uuid& mesh_id,
+			index_t vertex_id,
+			index_t bmesh_vertex_id,
+			MacroInfoKey
+			);
+	
+		void :target:`add_component_edge_to_background_mesh_edge<doxid-classgeode_1_1_macro_info_1adfc077f8c827fc9420483131ec274c17>`(
+			const uuid& mesh_id,
+			index_t edge_id,
+			index_t bmesh_edge_id,
+			MacroInfoKey
+			);
+	
+		void :target:`add_component_edge_to_background_mesh_vertices<doxid-classgeode_1_1_macro_info_1afd5f8a9bd6e61a834e40a01aae00f7d7>`(
+			const uuid& mesh_id,
+			index_t edge_id,
+			absl::Span<const index_t> bmesh_vertex_ids,
+			MacroInfoKey
+			);
+	};
+
+	// direct descendants
+
+	class :ref:`MacroInfo2D<doxid-classgeode_1_1_macro_info2_d>`;
+	class :ref:`MacroInfo3D<doxid-classgeode_1_1_macro_info3_d>`;

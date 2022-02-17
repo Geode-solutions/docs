@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::MacroInfo3D &#8212; Python  documentation</title>
+    <title>class geode::MacroInfo2D &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::MacroInfoBuilder" href="class_geode_MacroInfoBuilder.html" />
-    <link rel="prev" title="class geode::MacroInfo2D" href="class_geode_MacroInfo2D.html" />
+    <link rel="next" title="class geode::MacroInfo3D" href="class_geode_MacroInfo3D.html" />
+    <link rel="prev" title="template class geode::MacroInfo" href="class_geode_MacroInfo.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,64 +34,47 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-macroinfo3d">
-<span id="doxid-classgeode-1-1-macro-info3-d"></span><span id="index-0"></span><h1>class geode::MacroInfo3D</h1>
+  <div class="section" id="class-geode-macroinfo2d">
+<span id="doxid-classgeode-1-1-macro-info2-d"></span><span id="index-0"></span><h1>class geode::MacroInfo2D</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;macro_info.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">MacroInfo3D</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_MacroInfo.html#doxid-classgeode-1-1-macro-info"><span class="std std-ref">geode::MacroInfo</span></a><span></span>
+<span class="k">class</span> <span class="nl">MacroInfo2D</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_MacroInfo.html#doxid-classgeode-1-1-macro-info"><span class="std std-ref">geode::MacroInfo</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a565f96916671cc61257ab36f9e55a2e1"><span class="std std-ref">ComponentFacet</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info3-d-1ab4f2c6dcc12e2f6a0d8012d253ace3d2"><span></span><span class="n">component_facets</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">background_mesh_facet</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a565f96916671cc61257ab36f9e55a2e1"><span class="std std-ref">ComponentFacet</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info3-d-1a168dfb3f684530ef93f25da97ce7319e"><span></span><span class="n">incident_component_facets</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">background_mesh_vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-
-    <a class="reference internal" href="struct_geode_EdgeMacroInfoConfig.html#doxid-structgeode-1-1-edge-macro-info-config"><span class="std std-ref">EdgeMacroInfoConfig</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info3-d-1ad1dda5a35b71957350814b60da364d69"><span></span><span class="n">edge_configuration</span></span><span></span><span class="p">(</span>
+    <a class="reference internal" href="struct_geode_EdgeMacroInfoConfig.html#doxid-structgeode-1-1-edge-macro-info-config"><span class="std std-ref">EdgeMacroInfoConfig</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info2-d-1accc12081bf4f5d38196c66a8aa7be75c"><span></span><span class="n">edge_configuration</span></span><span></span><span class="p">(</span>
         <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
-        <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">bmesh_solid</span>
+        <span class="k">const</span> <span class="n">TriangulatedSurface2D</span><span class="o">&amp;</span> <span class="n">bmesh_surface</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info3-d-1a6fd072fe0a3ec686e7da045164384e7e"><span></span><span class="n">add_component_vertex_to_background_mesh_vertex</span></span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info2-d-1a42b68bd5b49d489d0105dc1452026d5b"><span></span><span class="n">add_component_vertex_to_background_mesh_vertex</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
         <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span>
         <span class="n">index_t</span> <span class="n">bmesh_vertex_id</span><span class="p">,</span>
-        <span class="n">MacroInfo3DKey</span>
+        <span class="n">MacroInfo2DKey</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info3-d-1a20a4681591bed0aaffe16ccf39cf2e00"><span></span><span class="n">add_component_edge_to_background_mesh_edge</span></span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info2-d-1a06895b57d567845cff66b7838039fe33"><span></span><span class="n">add_component_edge_to_background_mesh_edge</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
         <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
         <span class="n">index_t</span> <span class="n">bmesh_edge_id</span><span class="p">,</span>
-        <span class="n">MacroInfo3DKey</span>
+        <span class="n">MacroInfo2DKey</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info3-d-1ada9f659e6b31c2239ca3b5e06168e907"><span></span><span class="n">add_component_edge_to_background_mesh_vertices</span></span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info2-d-1a77d3740da274f6a6f0673ff8ea5fa629"><span></span><span class="n">add_component_edge_to_background_mesh_vertices</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
         <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
         <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">bmesh_vertex_ids</span><span class="p">,</span>
-        <span class="n">MacroInfo3DKey</span>
-        <span class="p">);</span>
-
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info3-d-1a9b33393a9a97fa42264d7c48a1779803"><span></span><span class="n">add_component_facet_to_background_mesh_facet</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">bmesh_facet_id</span><span class="p">,</span>
-        <span class="n">MacroInfo3DKey</span>
-        <span class="p">);</span>
-
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-macro-info3-d-1abdc3d881b1b630c504c758f76c40e088"><span></span><span class="n">add_component_facet_to_background_mesh_vertices</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">mesh_id</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
-        <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">bmesh_vertex_ids</span><span class="p">,</span>
-        <span class="n">MacroInfo3DKey</span>
+        <span class="n">MacroInfo2DKey</span>
         <span class="p">);</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
 
-<span class="k">class</span> <a class="reference internal" href="class_geode_BackgroundMesh3D.html#doxid-classgeode-1-1-background-mesh3-d"><span class="std std-ref">BackgroundMesh3D</span></a><span></span><span class="p">;</span></pre>
+<span class="k">class</span> <a class="reference internal" href="class_geode_BackgroundMesh2D.html#doxid-classgeode-1-1-background-mesh2-d"><span class="std std-ref">BackgroundMesh2D</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
@@ -138,7 +121,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_MacroInfo3D.rst.txt"
+      <a href="_sources/class_geode_MacroInfo2D.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

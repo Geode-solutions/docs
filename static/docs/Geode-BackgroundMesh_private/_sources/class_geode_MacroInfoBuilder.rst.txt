@@ -1,0 +1,36 @@
+.. index:: pair: class; geode::MacroInfoBuilder
+.. _doxid-classgeode_1_1_macro_info_builder:
+
+template class geode::MacroInfoBuilder
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <macro_info_builder.h>
+	
+	template <index_t dimension>
+	class MacroInfoBuilder
+	{
+	public:
+		// methods
+	
+		void :target:`add_macro_vertex_info<doxid-classgeode_1_1_macro_info_builder_1a0c9ecfe54c320bc9d252b0c5f0a62e13>`(
+			const uuid& component_uuid,
+			index_t macro_vertex_id,
+			index_t bmesh_vertex_id
+			);
+	
+		void :target:`update_vertices<doxid-classgeode_1_1_macro_info_builder_1ab4a48906a349cef20e463a859ae63c06>`(absl::Span<const VertexMultiMapping> vertex_mappings);
+	};
+
+	// direct descendants
+
+	class :ref:`MacroInfoBuilder2D<doxid-classgeode_1_1_macro_info_builder2_d>`;
+	class :ref:`MacroInfoBuilder3D<doxid-classgeode_1_1_macro_info_builder3_d>`;

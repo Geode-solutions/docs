@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::BackgroundMeshBuilder2D
-.. _doxid-classgeode_1_1_background_mesh_builder2_d:
+.. index:: pair: class; geode::BackgroundMeshModifier2D
+.. _doxid-classgeode_1_1_background_mesh_modifier2_d:
 
-class geode::BackgroundMeshBuilder2D
-====================================
+class geode::BackgroundMeshModifier2D
+=====================================
 
 .. toctree::
 	:hidden:
@@ -13,33 +13,26 @@ class geode::BackgroundMeshBuilder2D
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <background_mesh_builder.h>
+	#include <background_mesh_modifier.h>
 	
-	class BackgroundMeshBuilder2D:
-	    public OpenGeodeTriangulatedSurfaceBuilder2D,
-	    public TriangulatedSurfaceEpsilonModifier2D,
-	    public :ref:`geode::GridInfoBuilder2D<doxid-classgeode_1_1_grid_info_builder2_d>`,
-	    public :ref:`geode::MacroInfoBuilder2D<doxid-classgeode_1_1_macro_info_builder2_d>`
+	class BackgroundMeshModifier2D: public :ref:`geode::BackgroundMeshBuilder2D<doxid-classgeode_1_1_background_mesh_builder2_d>`
 	{
 	public:
 		// construction
 	
-		:target:`BackgroundMeshBuilder2D<doxid-classgeode_1_1_background_mesh_builder2_d_1acde9071732abf8dd6e86bb129afd921c>`(VertexSet& vertex_set, MeshBuilderFactoryKey);
-		:target:`BackgroundMeshBuilder2D<doxid-classgeode_1_1_background_mesh_builder2_d_1a7f10199452c4b545b0a05d7f14c0bc80>`(:ref:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d>`& background_mesh);
+		:target:`BackgroundMeshModifier2D<doxid-classgeode_1_1_background_mesh_modifier2_d_1a4a3f0b419a329100b049d729a00b2e60>`(:ref:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d>`& mesh);
 
 		// methods
 	
-		void :target:`update_information<doxid-classgeode_1_1_background_mesh_builder2_d_1a2226d9d33ed6f89c28cefb87b5c4b522>`(const SplitTriangleInfo& split_info);
-		void :target:`update_information<doxid-classgeode_1_1_background_mesh_builder2_d_1ac5ae6be03fa8e5d4b8d1a23eb6382570>`(const SplitPolygonEdgeInfo& split_info);
-		void :target:`update_information<doxid-classgeode_1_1_background_mesh_builder2_d_1af86d61b6504df251b4d94c310181b21e>`(const CollapseEdgeInfo& collapse_info);
-		void :target:`create_background_mesh_elements<doxid-classgeode_1_1_background_mesh_builder2_d_1a4c298edfa24d47e0fb5df64927a3f0e4>`(absl::Span<const index_t> cells);
-		void :target:`fill_holes<doxid-classgeode_1_1_background_mesh_builder2_d_1a31c9b801fc483817164258a4f356f7ea>`();
-		void :target:`copy<doxid-classgeode_1_1_background_mesh_builder2_d_1a95cc17fe4789596c71b9c8b2b92a28d4>`(const :ref:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d>`& source);
+		SplitTriangleInfo :target:`insert_point_in_triangle<doxid-classgeode_1_1_background_mesh_modifier2_d_1affb450c32547d9fae525b7060bd063f1>`(
+			index_t triangle_id,
+			const Point2D& point
+			);
+	
+		SplitPolygonEdgeInfo :target:`split_edge<doxid-classgeode_1_1_background_mesh_modifier2_d_1adfce34e967366f51a89c9b7151779e75>`(const PolygonEdge& edge, const Point2D& point);
+		CollapseEdgeInfo :target:`collapse_edge<doxid-classgeode_1_1_background_mesh_modifier2_d_1abae7cef92a292d1ee878d053eed09688>`(index_t edge_id, const Point2D& point);
+		void :target:`clean_background_mesh<doxid-classgeode_1_1_background_mesh_modifier2_d_1af9adf732ba870affbd1c649684c26a9f>`();
 	};
-
-	// direct descendants
-
-	class :ref:`BackgroundMeshModifier2D<doxid-classgeode_1_1_background_mesh_modifier2_d>`;
 
 Inherited Members
 -----------------
@@ -86,4 +79,10 @@ Inherited Members
 		void :ref:`update_information<doxid-classgeode_1_1_macro_info_builder2_d_1a5946d43ea097de864f7e8e2a7dc42341>`(const CollapseEdgeInfo& collapse_info);
 		void :ref:`update_edges<doxid-classgeode_1_1_macro_info_builder2_d_1a0e7c9dbc691a56d22018fd6ca54f6e4e>`(absl::Span<const EdgeMapping> edges);
 		void :ref:`update_edges<doxid-classgeode_1_1_macro_info_builder2_d_1a2581e5870bfc6f9b933bb0139c2c667b>`(absl::Span<const EdgeMultiMapping> edges);
+		void :ref:`update_information<doxid-classgeode_1_1_background_mesh_builder2_d_1a2226d9d33ed6f89c28cefb87b5c4b522>`(const SplitTriangleInfo& split_info);
+		void :ref:`update_information<doxid-classgeode_1_1_background_mesh_builder2_d_1ac5ae6be03fa8e5d4b8d1a23eb6382570>`(const SplitPolygonEdgeInfo& split_info);
+		void :ref:`update_information<doxid-classgeode_1_1_background_mesh_builder2_d_1af86d61b6504df251b4d94c310181b21e>`(const CollapseEdgeInfo& collapse_info);
+		void :ref:`create_background_mesh_elements<doxid-classgeode_1_1_background_mesh_builder2_d_1a4c298edfa24d47e0fb5df64927a3f0e4>`(absl::Span<const index_t> cells);
+		void :ref:`fill_holes<doxid-classgeode_1_1_background_mesh_builder2_d_1a31c9b801fc483817164258a4f356f7ea>`();
+		void :ref:`copy<doxid-classgeode_1_1_background_mesh_builder2_d_1a95cc17fe4789596c71b9c8b2b92a28d4>`(const :ref:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d>`& source);
 

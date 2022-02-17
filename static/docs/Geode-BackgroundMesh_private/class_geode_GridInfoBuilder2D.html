@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>class geode::GridInfoBuilder3D &#8212; Python  documentation</title>
+    <title>class geode::GridInfoBuilder2D &#8212; Python  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::MacroEdgeSolidPathFinder" href="class_geode_MacroEdgeSolidPathFinder.html" />
-    <link rel="prev" title="class geode::GridInfoBuilder2D" href="class_geode_GridInfoBuilder2D.html" />
+    <link rel="next" title="class geode::GridInfoBuilder3D" href="class_geode_GridInfoBuilder3D.html" />
+    <link rel="prev" title="template class geode::GridInfoBuilder" href="class_geode_GridInfoBuilder.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,24 +34,25 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-gridinfobuilder3d">
-<span id="doxid-classgeode-1-1-grid-info-builder3-d"></span><span id="index-0"></span><h1>class geode::GridInfoBuilder3D</h1>
+  <div class="section" id="class-geode-gridinfobuilder2d">
+<span id="doxid-classgeode-1-1-grid-info-builder2-d"></span><span id="index-0"></span><h1>class geode::GridInfoBuilder2D</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;grid_info_builder.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="nl">GridInfoBuilder3D</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder"><span class="std std-ref">geode::GridInfoBuilder</span></a><span></span>
+<span class="k">class</span> <span class="nl">GridInfoBuilder2D</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder"><span class="std std-ref">geode::GridInfoBuilder</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-builder3-d-1abe0cd473ebc8cfe3ab702b162343272b"><span></span><span class="n">update_tetrahedra</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">TetrahedronMapping</span><span class="o">&gt;</span> <span class="n">tetrahedra</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-builder3-d-1a629f60b022379a5b1b2478c67d5b7764"><span></span><span class="n">update_tetrahedra</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidCollapseEdgeInfo</span><span class="o">&amp;</span> <span class="n">info</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-builder2-d-1a10c6de345eaf79ecfd557578ff498bf6"><span></span><span class="n">update_triangles</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">TriangleMapping</span><span class="o">&gt;</span> <span class="n">triangles</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-builder2-d-1a1cd9add1674857c92a64582a1c574986"><span></span><span class="n">update_triangles</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">CollapsePolygonEdgeInfo</span><span class="o">&amp;</span> <span class="n">info</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-grid-info-builder2-d-1aa9cea2ce0b5c9ee4cf42921c127bfd27"><span></span><span class="n">update_triangles</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">CollapseEdgeInfo</span><span class="o">&amp;</span> <span class="n">info</span><span class="p">);</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
 
-<span class="k">class</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder3D.html#doxid-classgeode-1-1-background-mesh-builder3-d"><span class="std std-ref">BackgroundMeshBuilder3D</span></a><span></span><span class="p">;</span></pre>
+<span class="k">class</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder2D.html#doxid-classgeode-1-1-background-mesh-builder2-d"><span class="std std-ref">BackgroundMeshBuilder2D</span></a><span></span><span class="p">;</span></pre>
 <div class="section" id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
@@ -87,7 +88,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_GridInfoBuilder3D.rst.txt"
+      <a href="_sources/class_geode_GridInfoBuilder2D.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

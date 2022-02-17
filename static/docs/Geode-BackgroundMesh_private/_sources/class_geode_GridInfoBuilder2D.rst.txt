@@ -1,7 +1,7 @@
-.. index:: pair: class; geode::GridInfoBuilder3D
-.. _doxid-classgeode_1_1_grid_info_builder3_d:
+.. index:: pair: class; geode::GridInfoBuilder2D
+.. _doxid-classgeode_1_1_grid_info_builder2_d:
 
-class geode::GridInfoBuilder3D
+class geode::GridInfoBuilder2D
 ==============================
 
 .. toctree::
@@ -15,18 +15,19 @@ class geode::GridInfoBuilder3D
 
 	#include <grid_info_builder.h>
 	
-	class GridInfoBuilder3D: public :ref:`geode::GridInfoBuilder<doxid-classgeode_1_1_grid_info_builder>`
+	class GridInfoBuilder2D: public :ref:`geode::GridInfoBuilder<doxid-classgeode_1_1_grid_info_builder>`
 	{
 	public:
 		// methods
 	
-		void :target:`update_tetrahedra<doxid-classgeode_1_1_grid_info_builder3_d_1abe0cd473ebc8cfe3ab702b162343272b>`(absl::Span<const TetrahedronMapping> tetrahedra);
-		void :target:`update_tetrahedra<doxid-classgeode_1_1_grid_info_builder3_d_1a629f60b022379a5b1b2478c67d5b7764>`(const SolidCollapseEdgeInfo& info);
+		void :target:`update_triangles<doxid-classgeode_1_1_grid_info_builder2_d_1a10c6de345eaf79ecfd557578ff498bf6>`(absl::Span<const TriangleMapping> triangles);
+		void :target:`update_triangles<doxid-classgeode_1_1_grid_info_builder2_d_1a1cd9add1674857c92a64582a1c574986>`(const CollapsePolygonEdgeInfo& info);
+		void :target:`update_triangles<doxid-classgeode_1_1_grid_info_builder2_d_1aa9cea2ce0b5c9ee4cf42921c127bfd27>`(const CollapseEdgeInfo& info);
 	};
 
 	// direct descendants
 
-	class :ref:`BackgroundMeshBuilder3D<doxid-classgeode_1_1_background_mesh_builder3_d>`;
+	class :ref:`BackgroundMeshBuilder2D<doxid-classgeode_1_1_background_mesh_builder2_d>`;
 
 Inherited Members
 -----------------
