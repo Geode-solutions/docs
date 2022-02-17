@@ -23,9 +23,11 @@ namespace geode
 	struct_geode_GeometricSurfacePath.rst
 	struct_geode_IntersectionResult.rst
 	struct_geode_Mapping.rst
+	struct_geode_Mapping-2.rst
 	struct_geode_ModelCollapsePolygonEdgeInfo.rst
 	struct_geode_ModelSplitPolygonEdgeInfo.rst
 	struct_geode_MultiMapping.rst
+	struct_geode_MultiMapping-2.rst
 	struct_geode_PatchFrontEdge.rst
 	struct_geode_PolygonData.rst
 	struct_geode_PolygonEdgeData.rst
@@ -137,8 +139,14 @@ Overview
 	template <typename Type>
 	struct :ref:`Mapping<doxid-structgeode_1_1_mapping>`;
 
+	template <>
+	struct :ref:`Mapping<index_t><doxid-structgeode_1_1_mapping_3_01index__t_01_4>`;
+
 	struct :ref:`ModelCollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info>`;
 	struct :ref:`ModelSplitPolygonEdgeInfo<doxid-structgeode_1_1_model_split_polygon_edge_info>`;
+
+	template <>
+	struct :ref:`MultiMapping<index_t><doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4>`;
 
 	template <typename Type>
 	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;

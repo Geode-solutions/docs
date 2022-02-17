@@ -1,8 +1,8 @@
-.. index:: pair: struct; geode::MultiMapping
-.. _doxid-structgeode_1_1_multi_mapping:
+.. index:: pair: struct; geode::MultiMapping<index_t>
+.. _doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4:
 
-template struct geode::MultiMapping
-===================================
+template struct geode::MultiMapping<index_t>
+============================================
 
 .. toctree::
 	:hidden:
@@ -15,21 +15,21 @@ template struct geode::MultiMapping
 
 	#include <information.h>
 	
-	template <typename Type>
-	struct MultiMapping
+	template <>
+	struct MultiMapping<index_t>
 	{
 		// fields
 	
-		Type :target:`new_id<doxid-structgeode_1_1_multi_mapping_1abc9d5b464a724428f6216b3a4f499791>`;
-		absl::InlinedVector<Type, 1> :target:`old_id<doxid-structgeode_1_1_multi_mapping_1a57a485e8baa791acd082e1854ce24032>`;
+		index_t :target:`new_id<doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4_1a19ad795fbfdf7305e1ae11507fd95b6a>` { NO_ID };
+		absl::InlinedVector<index_t, 1> :target:`old_id<doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4_1aaabcc05a2aa1f78e1b99dadc1f9c74c8>`;
 
 		// construction
 	
-		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1adc7a0ec0e80779ca7bd0358a579a9b48>`();
-		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1ab9d75eef917302d01c2ae681140b1068>`(Type new_id_in, absl::InlinedVector<Type, 1> old_id_in);
-		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1ad8eaf94e147938ac8e18d975f3daaf28>`(:ref:`Mapping<doxid-structgeode_1_1_mapping>`<Type> mapping);
+		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4_1a9204c9dd572c70fbd0b5dde910dfb3e5>`();
+		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4_1ad60076cca873f7856390d7bc588f0a2a>`(index_t new_id_in, absl::InlinedVector<index_t, 1> old_id_in);
+		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4_1a8f9704419bbb49d183c11d229f2ae801>`(:ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> mapping);
 
 		// methods
 	
-		bool :target:`operator ==<doxid-structgeode_1_1_multi_mapping_1abd3278e4af799f9be385d4c29b5ddca3>` (const MultiMapping& other) const;
+		bool :target:`operator ==<doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4_1a900b956621dab2aa5d8d9dc03899c38e>` (const :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`& other) const;
 	};
