@@ -1,0 +1,24 @@
+.. index:: pair: class; geode::Timer
+.. _doxid-classgeode_1_1_timer:
+
+class geode::Timer
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <timer.h>
+	
+	class Timer
+	{
+	public:
+		// methods
+	
+		std::string :target:`duration<doxid-classgeode_1_1_timer_1a0f9bca97ad1fcf7c6938467caf06bf88>`() const;
+	};

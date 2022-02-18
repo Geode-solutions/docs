@@ -179,6 +179,7 @@ namespace geode
 	class_geode_TetrahedralSolidOutput.rst
 	class_geode_TetrahedralSolidView.rst
 	class_geode_TetrahedralSolidViewBuilder.rst
+	class_geode_Timer.rst
 	class_geode_Topology.rst
 	class_geode_TopologyBuilder.rst
 	class_geode_Triangle.rst
@@ -693,6 +694,7 @@ Overview
 	template <index_t dimension>
 	class :ref:`TetrahedralSolidViewBuilder<doxid-classgeode_1_1_tetrahedral_solid_view_builder>`;
 
+	class :ref:`Timer<doxid-classgeode_1_1_timer>`;
 	class :ref:`Topology<doxid-classgeode_1_1_topology>`;
 	class :ref:`TopologyBuilder<doxid-classgeode_1_1_topology_builder>`;
 
