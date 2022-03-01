@@ -63,6 +63,8 @@ class geode::BRepGeometricModifier
 			);
 	
 		void :target:`move_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1adf3d5f0ab94502e3880f24006eb45ead>`(index_t unique_vertex, const Point3D& point);
+		void :target:`translate_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1a4125ec6bd862b9451ad38a637c89200e>`(index_t unique_vertex, const Vector3D& translation);
+		void :target:`rescale_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1ac9795991173eb8fbef6a146607951d86>`(index_t unique_vertex, double scale);
 		bool :target:`is_edge_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a2d4da300ac10675fb9365e82711235d2>`(const Line3D& line, index_t edge) const;
 		bool :target:`is_triangle_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a10b28d8df305de1e7bdf80900feff46c>`(const Surface3D& surface, index_t triangle) const;
 		bool :target:`is_tetrahedron_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1ac370bb4add81ec6c95f96b863a03a771>`(const Block3D& block, index_t tetrahedron) const;
