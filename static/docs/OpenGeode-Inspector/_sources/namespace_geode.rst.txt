@@ -8,7 +8,7 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
-	class_geode_BRepVerticesTopology.rst
+	class_geode_BRepTopologyInspector.rst
 	class_geode_EdgedCurveColocation.rst
 	class_geode_EdgedCurveDegeneration.rst
 	class_geode_PointSetColocation.rst
@@ -35,7 +35,7 @@ namespace geode
 
 	// classes
 
-	class :ref:`BRepVerticesTopology<doxid-classgeode_1_1_b_rep_vertices_topology>`;
+	class :ref:`BRepTopologyInspector<doxid-classgeode_1_1_b_rep_topology_inspector>`;
 
 	template <index_t dimension>
 	class :ref:`EdgedCurveColocation<doxid-classgeode_1_1_edged_curve_colocation>`;

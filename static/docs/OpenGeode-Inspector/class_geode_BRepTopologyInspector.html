@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class geode::BRepTopologyInspector &#8212; Python  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::EdgedCurveColocation" href="class_geode_EdgedCurveColocation.html" />
+    <link rel="prev" title="template class geode::detail::VertexCycle" href="class_geode_detail_VertexCycle.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="class-geode-breptopologyinspector">
+<span id="doxid-classgeode-1-1-b-rep-topology-inspector"></span><span id="index-0"></span><h1>class geode::BRepTopologyInspector</h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>Class for inspecting the topology of a BRep model corners <a class="reference internal" href="#details-classgeode-1-1-b-rep-topology-inspector"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;brep_topology.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">BRepTopologyInspector</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1aac7dc72f00a2f536be7fc96c3745cd74"><span></span><span class="n">BRepTopologyInspector</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1-b-rep-topology-inspector-1aedff622da9a04c0224999968d3129588"><span class="std std-ref">brep_topology_is_valid</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1a4e7a9f66f07f28c1bff7ddd5a34b861b"><span></span><span class="n">brep_components_are_linked_to_a_unique_vertex</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1ac39380f2228abb8e9fd98404a414bb24"><span></span><span class="n">invalid_components_topology_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1a432fb1e6149214de9cc6a7e8f159fbc7"><span></span><span class="n">multiple_corners_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1afda3f1e5e1c5e8df59f1a0a0c8405a48"><span></span><span class="n">multiple_internals_corner_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1af09480661195dcf8c0b2e64ba39a256d"><span></span><span class="n">not_internal_nor_boundary_corner_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1ace1cca4d2ed3d3af69a4d469ae15d89d"><span></span><span class="n">line_corners_without_boundary_status</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1a6bc37a8a86c8ce347b2e55856e50cc6d"><span></span><span class="n">part_of_not_boundary_nor_internal_line_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1ab4f23d801217d3eb7f337c33f079fe1c"><span></span><span class="n">part_of_line_with_invalid_internal_topology_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1afa48bf01b426d290372cff649f335dfc"><span></span><span class="n">part_of_invalid_unique_line_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1a669a25b51e9f5fe5c4cf801dc1e48524"><span></span><span class="n">part_of_lines_but_not_corner_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1a3587f0141148dc3783f9a8cc23ae1b56"><span></span><span class="n">part_of_not_boundary_nor_internal_surface_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1a9c8836ebd08d17ed2a4afd8647343393"><span></span><span class="n">part_of_surface_with_invalid_internal_topology_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1ace3a17979b0f443bd95231509cbbe6ce"><span></span><span class="n">part_of_invalid_unique_surface_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1ad3af047e2441fc6fb5d6d265e864df25"><span></span><span class="n">part_of_invalid_multiple_surfaces_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-topology-inspector-1a5244f4a9527e2038ebf9811c2daaaae6"><span></span><span class="n">part_of_invalid_blocks_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-classgeode-1-1-b-rep-topology-inspector"></span><h2>Detailed Documentation</h2>
+<p>Class for inspecting the topology of a BRep model corners</p>
+<div class="section" id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-b-rep-topology-inspector-1aedff622da9a04c0224999968d3129588"><span id="index-1"></span><span></span><span class="kt">bool</span> <span class="n">brep_topology_is_valid</span><span class="p">()</span> <span class="k">const</span></pre>
+<p>Checks if the brep is topologically valid through the unique vertices.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_BRepTopologyInspector.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

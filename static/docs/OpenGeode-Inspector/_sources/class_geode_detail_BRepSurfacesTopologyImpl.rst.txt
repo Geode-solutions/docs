@@ -1,0 +1,55 @@
+.. index:: pair: class; geode::detail::BRepSurfacesTopologyImpl
+.. _doxid-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl:
+
+class geode::detail::BRepSurfacesTopologyImpl
+=============================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Class for inspecting the topology of a BRep model surfaces through their unique vertices :ref:`More...<details-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_surfaces_topology_impl.h>
+	
+	class BRepSurfacesTopologyImpl
+	{
+	public:
+		// construction
+	
+		:target:`BRepSurfacesTopologyImpl<doxid-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl_1ab57f837702b0846fd465cf8a5a322623>`(const BRep& brep);
+
+		// methods
+	
+		bool :ref:`brep_vertex_surfaces_topology_is_valid<doxid-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl_1a4fee051891144f9a323166cdc0c16016>`(index_t unique_vertex_index) const;
+		bool :target:`vertex_is_part_of_not_boundary_nor_internal_surface<doxid-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl_1aeb4fc79a72dc61a627c9a4b58adc032a>`(const index_t unique_vertex_index) const;
+		bool :target:`vertex_is_part_of_surface_with_invalid_internal_topology<doxid-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl_1a0f45adac6286f1a89a82f4d5b53867f6>`(const index_t unique_vertex_index) const;
+		bool :target:`vertex_is_part_of_invalid_unique_surface<doxid-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl_1a9fb4836e6151b822a6844f02013670a1>`(index_t unique_vertex_index) const;
+		bool :target:`vertex_is_part_of_invalid_multiple_surfaces<doxid-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl_1af65d981eacf711ba6c1efcdca8d37b82>`(index_t unique_vertex_index) const;
+	};
+.. _details-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Class for inspecting the topology of a BRep model surfaces through their unique vertices
+
+Methods
+-------
+
+.. index:: pair: function; brep_vertex_surfaces_topology_is_valid
+.. _doxid-classgeode_1_1detail_1_1_b_rep_surfaces_topology_impl_1a4fee051891144f9a323166cdc0c16016:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool brep_vertex_surfaces_topology_is_valid(index_t unique_vertex_index) const
+
+Checks if the brep unique vertices are parts of valid surfaces, i.e. verify: Each surface is either internal or boundary. Each internal surface is internal to only one object and is not boundary. If the vertex is part of only one surface, the vertex is part of no more than 2 blocks, and the surface is either internal to a block (and the vertex is in one and only one block) or a boundary of all the blocks the vertex is in. If the vertex is part of multiple surfaces, it is either part of only one line (and no corner, and the line is boundary to all the surfaces) or multiple lines (and all the lines are either internal or boundary to at least 2 of the surfaces the vertex is in).
+
