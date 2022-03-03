@@ -23,8 +23,6 @@ class geode::BackgroundMesh2D
 	public:
 		// construction
 	
-		:target:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d_1a6d72b71615f534cc9b0e00007a34d4a9>`(BoundingBox2D box, std::array<double, 2> cell_size);
-		:target:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d_1afe32fd8addff53c0fc3e3ae27dad95ec>`(BoundingBox2D box, double cell_size);
 		:target:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d_1a9af9a83101c48c262a2c95e0a7b69f60>`(RegularGrid2D grid);
 		:target:`BackgroundMesh2D<doxid-classgeode_1_1_background_mesh2_d_1a64bfcde230cc400709dab37d7002dffb>`(BackgroundMesh2D&& other);
 

@@ -22,16 +22,16 @@ template class geode::GridInfo
 		// methods
 	
 		const RegularGrid<dimension>& :target:`grid<doxid-classgeode_1_1_grid_info_1af5caf64c5b8f4a0b68dfed1db9c4f205>`() const;
-		const :ref:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`& :target:`mesh_elements<doxid-classgeode_1_1_grid_info_1a2b9830b9cb5a4833b8bdaca5bb6bbd6c>`(const typename RegularGrid<dimension>::Index& cell) const;
-		index_t :target:`one_mesh_element<doxid-classgeode_1_1_grid_info_1a824bb0415968da8488bc51c477692278>`(const typename RegularGrid<dimension>::Index& cell) const;
+		const :ref:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`& :target:`mesh_elements<doxid-classgeode_1_1_grid_info_1a4bf2b3fec026091e38a556ec58727538>`(const GridCellIndex<dimension>& cell) const;
+		index_t :target:`one_mesh_element<doxid-classgeode_1_1_grid_info_1a5976690201496ed96129b77c517e93a5>`(const GridCellIndex<dimension>& cell) const;
 		absl::InlinedVector<index_t, 1> :target:`cell_id<doxid-classgeode_1_1_grid_info_1a42fa9d075e84246b94c30df7ad5f8a2c>`(index_t mesh_element_id) const;
 		bool :target:`is_cell_active<doxid-classgeode_1_1_grid_info_1a7b6bead7d924aacf0eb0669c2e303668>`(index_t cell_id) const;
-		bool :target:`is_cell_active<doxid-classgeode_1_1_grid_info_1ac5ad7261be38a95f564af353fdaab929>`(const typename RegularGrid<dimension>::Index& cell) const;
-		index_t :target:`cell_corner_vertex<doxid-classgeode_1_1_grid_info_1a3998b4a407b035fd4ac35719c5878de8>`(const typename RegularGrid<dimension>::Index& cell) const;
+		bool :target:`is_cell_active<doxid-classgeode_1_1_grid_info_1a2b898b3561beafe0ce574e6e87119d6d>`(const GridCellIndex<dimension>& cell) const;
+		index_t :target:`cell_corner_vertex<doxid-classgeode_1_1_grid_info_1abc32867b55c04ee1ebb80656b56c4df2>`(const GridCellIndex<dimension>& cell) const;
 		bool :target:`is_on_border<doxid-classgeode_1_1_grid_info_1a54f4470614845021a0253c1a5e512377>`(index_t vertex_id) const;
 	
-		void :target:`set_cell_corner_vertex<doxid-classgeode_1_1_grid_info_1a891dbc0dae163da32db948731e1b7ecd>`(
-			const typename RegularGrid<dimension>::Index& cell,
+		void :target:`set_cell_corner_vertex<doxid-classgeode_1_1_grid_info_1ad2451d229d08a32c852f8db9f8547682>`(
+			const GridCellIndex<dimension>& cell,
 			index_t vertex_id,
 			GridInfoKey
 			);

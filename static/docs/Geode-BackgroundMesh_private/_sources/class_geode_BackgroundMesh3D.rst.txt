@@ -23,8 +23,6 @@ class geode::BackgroundMesh3D
 	public:
 		// construction
 	
-		:target:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d_1aec97fc35ae7a03b1bb756a47649b694c>`(BoundingBox3D box, std::array<double, 3> cell_size);
-		:target:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d_1a5dce50ebce899329c460dec9803cf986>`(BoundingBox3D box, double cell_size);
 		:target:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d_1a55353a6348d0c18fb1a62adcb327d9f1>`(RegularGrid3D grid);
 		:target:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d_1ac717eebb697b5c3dea7381efd3d1198e>`(BackgroundMesh3D&& other);
 
