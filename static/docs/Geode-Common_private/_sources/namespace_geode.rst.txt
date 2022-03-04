@@ -485,7 +485,8 @@ Overview
 
 	absl::FixedArray<:ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t>> geode_common_modifier_common_api :target:`extract_mappings_from_split_info<doxid-namespacegeode_1af2e70f64eee004f3002873a2f84d9220>`(absl::Span<const :ref:`SplitInfo<doxid-structgeode_1_1_split_info>`> split_info);
 
-	void geode_common_modifier_common_api :target:`update_vertex_mappings<doxid-namespacegeode_1abfbfa86c7bc2c9742c4c95e2e1e1b1bd>`(
+	void geode_common_modifier_common_api :target:`update_vertex_mappings<doxid-namespacegeode_1a3fd280aad927523aecb89941f175d2a9>`(
+		const :ref:`geode::VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`& modifier,
 		std::vector<:ref:`geode::VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>`>& vertex_multi_mappings,
 		const :ref:`geode::VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>`& collapse_mapping
 		);
