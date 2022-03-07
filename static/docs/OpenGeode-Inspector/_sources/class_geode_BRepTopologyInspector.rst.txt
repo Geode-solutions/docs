@@ -29,6 +29,10 @@ Class for inspecting the topology of a BRep model corners :ref:`More...<details-
 	
 		bool :ref:`brep_topology_is_valid<doxid-classgeode_1_1_b_rep_topology_inspector_1aedff622da9a04c0224999968d3129588>`() const;
 		bool :target:`brep_components_are_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1a4e7a9f66f07f28c1bff7ddd5a34b861b>`() const;
+		index_t :target:`nb_corners_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1a215ff2f3321b101c716a0c71d8d1cb65>`() const;
+		index_t :target:`nb_lines_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1ac3475e4f697b8a014f24c20e350b2638>`() const;
+		index_t :target:`nb_surfaces_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1a40101a6e05ccf561122bb0a8b7168e4d>`() const;
+		index_t :target:`nb_blocks_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1af21508ef3259f0f36a4fa3ea2d0ec611>`() const;
 		std::vector<index_t> :target:`invalid_components_topology_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1ac39380f2228abb8e9fd98404a414bb24>`() const;
 		std::vector<index_t> :target:`multiple_corners_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a432fb1e6149214de9cc6a7e8f159fbc7>`() const;
 		std::vector<index_t> :target:`multiple_internals_corner_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1afda3f1e5e1c5e8df59f1a0a0c8405a48>`() const;
