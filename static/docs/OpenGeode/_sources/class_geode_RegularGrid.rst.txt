@@ -22,11 +22,6 @@ Interface class to represent regular grids. :ref:`More...<details-classgeode_1_1
 	class RegularGrid
 	{
 	public:
-		// typedefs
-	
-		typedef :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension> :target:`Index<doxid-classgeode_1_1_regular_grid_1a248db4d0164bd04801110527269829e2>`;
-		typedef :ref:`GridCellIndices<doxid-namespacegeode_1aca79d2a2adb6525593f62e267400cbbf>`<dimension> :target:`Indices<doxid-classgeode_1_1_regular_grid_1a4a31501a2cd3ed32043f4c23313d4308>`;
-
 		// construction
 	
 		:target:`RegularGrid<doxid-classgeode_1_1_regular_grid_1a4c6bdc5a09fd715702d09a6a7bd2583e>`(
@@ -48,58 +43,51 @@ Interface class to represent regular grids. :ref:`More...<details-classgeode_1_1
 		absl::string_view :target:`native_extension<doxid-classgeode_1_1_regular_grid_1a7a0a99804f90a71dc23d1e787088ab69>`() const;
 		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`nb_cell_vertices<doxid-classgeode_1_1_regular_grid_1a0e725a8bac0b2bf4c2674b2d988ad5c1>`() const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`origin<doxid-classgeode_1_1_regular_grid_1add45cb7c94381c6b1e63aed7e49bbfb3>`() const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`cell_attribute_manager<doxid-classgeode_1_1_regular_grid_1ab8db5ba1fa1809fbe1851c7a38d587b0>`() const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`vertex_attribute_manager<doxid-classgeode_1_1_regular_grid_1a52343c33ba9a4a53ee03f9fb091ce216>`() const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_cells<doxid-classgeode_1_1_regular_grid_1a244e3423d459bb2e8ba9e972bc0f2b6b>`() const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_cells<doxid-classgeode_1_1_regular_grid_1aa89a6dce9e17a6c52e8bb3396f3f0cf8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
-		double OPENGEODE_MESH_DEPRECATED :target:`cell_size<doxid-classgeode_1_1_regular_grid_1a7ae6e00d9f8489e43ffb3eb36c0bad4f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		double :target:`cell_length<doxid-classgeode_1_1_regular_grid_1ad059c93325ac39346d60ed8fd4750946>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		double :target:`cell_size<doxid-classgeode_1_1_regular_grid_1a640470020e8f9447385ce42d311ff406>`() const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`cell_index<doxid-classgeode_1_1_regular_grid_1af1be47cd98e4bcb1158c53d305a85e5e>`(const :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>& index) const;
-		:ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension> :target:`cell_index<doxid-classgeode_1_1_regular_grid_1aaf29d0f612a04dc66cb04e3ca5100154>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`cell_index<doxid-classgeode_1_1_regular_grid_1a6dfe9878b4ea068c91f41446a6f74a27>`(const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& index) const;
+		:ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension> :target:`cell_indices<doxid-classgeode_1_1_regular_grid_1acf2eed6624ef92d6ee456fe5ebc9a7a9>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
 	
-		absl::optional<:ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>> :target:`next_cell<doxid-classgeode_1_1_regular_grid_1a71bcc79dd4d30ab2f41437c6041ec170>`(
-			const :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>& index,
+		absl::optional<:ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>> :target:`next_cell<doxid-classgeode_1_1_regular_grid_1a7cd91b4c9ebab1082a5ba3a6e855d039>`(
+			const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
 			) const;
 	
-		absl::optional<:ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>> :target:`previous_cell<doxid-classgeode_1_1_regular_grid_1a3dac78c9cc5de693d934e2a8e9f8b694>`(
-			const :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>& index,
+		absl::optional<:ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>> :target:`previous_cell<doxid-classgeode_1_1_regular_grid_1ab98c5b63b67bf7d0060186f377a4512e>`(
+			const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
 			) const;
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_vertices<doxid-classgeode_1_1_regular_grid_1a7b00efda93922f86f252ad55b8100c1c>`() const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_vertices<doxid-classgeode_1_1_regular_grid_1aa38f906c8cbea706463927e19ce3c3ed>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_vertices_on_borders<doxid-classgeode_1_1_regular_grid_1a2cbe6ec3a8cb65ca9fadae36944c0bb1>`() const;
-		:ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension> :target:`vertex_index<doxid-classgeode_1_1_regular_grid_1a3306afb159172fd158ed9144422a0595>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_index<doxid-classgeode_1_1_regular_grid_1ab7baf2f210f86844e34deb8739d575de>`(const :ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension>& index) const;
-		std::array<:ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension>, RegularGrid<dimension>:::ref:`nb_cell_vertices_static<doxid-classgeode_1_1_regular_grid_1af7eb9b6933d06a82fd8b58803f2e71dd>`()> :target:`cell_vertices<doxid-classgeode_1_1_regular_grid_1a6528042eef1f22250b473678e5e271f7>`(const :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>& cell_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_index<doxid-classgeode_1_1_regular_grid_1afac0b143208034711dfc98af81a64b74>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& index) const;
+		:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension> :target:`vertex_indices<doxid-classgeode_1_1_regular_grid_1a3cc32d34f4302cfcf46d761843f26d97>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
+		std::array<:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>, RegularGrid<dimension>:::ref:`nb_cell_vertices_static<doxid-classgeode_1_1_regular_grid_1af7eb9b6933d06a82fd8b58803f2e71dd>`()> :target:`cell_vertices<doxid-classgeode_1_1_regular_grid_1a5faa2c403ab0b842b5d130564a122f12>`(const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& cell_id) const;
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`cell_vertex_index<doxid-classgeode_1_1_regular_grid_1a5e3f9d45b6d67e9c6b866a42f87b78e2>`(
-			const :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>& cell_id,
+		:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension> :target:`cell_vertex_indices<doxid-classgeode_1_1_regular_grid_1aa2ec63361313b9302bd606c7f0639c6c>`(
+			const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& cell_id,
 			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id
 			) const;
 	
-		:ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension> :target:`cell_vertex_indices<doxid-classgeode_1_1_regular_grid_1abb1b2cc2ee48f5e81f52ecf8f6bca7c5>`(
-			const :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>& cell_id,
-			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id
-			) const;
-	
-		absl::optional<:ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension>> :target:`next_vertex<doxid-classgeode_1_1_regular_grid_1afe76deb758bd2eea5479b64814ad600c>`(
-			const :ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension>& index,
+		absl::optional<:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>> :target:`next_vertex<doxid-classgeode_1_1_regular_grid_1ab6ad2d71e5ab2b8456ac3b71914cf72f>`(
+			const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
 			) const;
 	
-		absl::optional<:ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension>> :target:`previous_vertex<doxid-classgeode_1_1_regular_grid_1a1d29606f8930afb6c309512f9d3893bc>`(
-			const :ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension>& index,
+		absl::optional<:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>> :target:`previous_vertex<doxid-classgeode_1_1_regular_grid_1ae8d38ac2df59e327abfb2db6a4a70be8>`(
+			const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
 			) const;
 	
-		bool :target:`is_vertex_on_border<doxid-classgeode_1_1_regular_grid_1a424e41ce120e199cf6ab3fdeedecf78d>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
-		bool :target:`is_vertex_on_border<doxid-classgeode_1_1_regular_grid_1a46dc721ab9fd3a771517dffe7d281eb7>`(const :ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension>& vertex_index) const;
-		absl::optional<:ref:`GridCellIndices<doxid-namespacegeode_1aca79d2a2adb6525593f62e267400cbbf>`<dimension>> :ref:`cell<doxid-classgeode_1_1_regular_grid_1aa7ea7c1d904e55505c717f68de8ba983>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`point<doxid-classgeode_1_1_regular_grid_1a8770a4f8b132e57b326e78f8a4f8aba9>`(const :ref:`GridVertexIndex<doxid-namespacegeode_1a2771044881b6cefaadb97fc40d8e52b2>`<dimension>& index) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`cell_barycenter<doxid-classgeode_1_1_regular_grid_1adedcddbc8ed151995d562198ba6b72de>`(const :ref:`GridCellIndex<doxid-namespacegeode_1aac7b5b341b7ffea330e423b89ea98f02>`<dimension>& index) const;
-		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`cell_attribute_manager<doxid-classgeode_1_1_regular_grid_1ab8db5ba1fa1809fbe1851c7a38d587b0>`() const;
-		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`vertex_attribute_manager<doxid-classgeode_1_1_regular_grid_1a52343c33ba9a4a53ee03f9fb091ce216>`() const;
+		bool :target:`is_vertex_on_border<doxid-classgeode_1_1_regular_grid_1a734ef8aaab07b8d4934c3ed89c8bc607>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& vertex_index) const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`point<doxid-classgeode_1_1_regular_grid_1a594f8783b91fdc908b31a4d817c4536d>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& index) const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`cell_barycenter<doxid-classgeode_1_1_regular_grid_1a567deb46ad502ae5e4b6cb47a25c6d91>`(const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& index) const;
+		absl::optional<:ref:`GridCellsAroundVertex<doxid-namespacegeode_1a0403bdf67bf85805094b6e99bb52b9bd>`<dimension>> :ref:`cell<doxid-classgeode_1_1_regular_grid_1aa03d975d629e5d07facecf88454dab70>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_regular_grid_1aaed9cbd54060d8d3e8a18d8535cf1978>`() const;
 		RegularGrid<dimension> :target:`clone<doxid-classgeode_1_1_regular_grid_1a6f8680fd78b73475e8aa1e512c5543cb>`() const;
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_regular_grid_1a89cb9b53414e1a7aa659de3bab59683f>`();
@@ -116,12 +104,12 @@ Methods
 -------
 
 .. index:: pair: function; cell
-.. _doxid-classgeode_1_1_regular_grid_1aa7ea7c1d904e55505c717f68de8ba983:
+.. _doxid-classgeode_1_1_regular_grid_1aa03d975d629e5d07facecf88454dab70:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	absl::optional<:ref:`GridCellIndices<doxid-namespacegeode_1aca79d2a2adb6525593f62e267400cbbf>`<dimension>> cell(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const
+	absl::optional<:ref:`GridCellsAroundVertex<doxid-namespacegeode_1a0403bdf67bf85805094b6e99bb52b9bd>`<dimension>> cell(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const
 
 Return the cell(s) containing the query point
 

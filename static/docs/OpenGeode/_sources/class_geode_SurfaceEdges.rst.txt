@@ -29,7 +29,7 @@ Overview
 		// methods
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_edges<doxid-classgeode_1_1_surface_edges_1a94c077cb2772c15351942649b179a34d>`() const;
-		bool :target:`isolated_edge<doxid-classgeode_1_1_surface_edges_1aed30d93cb93b6672d5dbcbd2cedbaeb3>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		bool :target:`is_edge_isolated<doxid-classgeode_1_1_surface_edges_1a9ba6603fb7b4a1be64e44e532d6e6553>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :ref:`edge_vertices<doxid-classgeode_1_1_surface_edges_1ab13e9c1fe979cecdc98f11ac1c27eb59>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`edge_from_vertices<doxid-classgeode_1_1_surface_edges_1a53f3f8453e6688816782d2cf94f42e12>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_surface_edges_1a16dd72ecfb98b69b0b40a9177acf530b>`() const;

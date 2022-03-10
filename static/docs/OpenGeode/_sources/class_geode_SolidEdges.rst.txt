@@ -29,7 +29,7 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		// methods
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_edges<doxid-classgeode_1_1_solid_edges_1ad546a672431b009f49df9788e6aae718>`() const;
-		bool :target:`isolated_edge<doxid-classgeode_1_1_solid_edges_1ad528b1deb891732ba519accce358b44a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		bool :target:`is_edge_isolated<doxid-classgeode_1_1_solid_edges_1adb6c06bc3358c15d1957040d2011a7d1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& :ref:`edge_vertices<doxid-classgeode_1_1_solid_edges_1ad4d211251184382ee54e8df69c474e66>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`edge_from_vertices<doxid-classgeode_1_1_solid_edges_1a2a7fce612b4b855dbc38cbdaad415542>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`edge_attribute_manager<doxid-classgeode_1_1_solid_edges_1a47ad9239c5f76a8a3da1d41e78343df8>`() const;

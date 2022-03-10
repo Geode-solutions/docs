@@ -29,7 +29,7 @@ Overview
 		// methods
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_facets<doxid-classgeode_1_1_solid_facets_1a02336ee1b439aa118ca5d121c472da34>`() const;
-		bool :target:`isolated_facet<doxid-classgeode_1_1_solid_facets_1a9a48d5d8fd219dc84d99d7586356dc28>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
+		bool :target:`is_facet_isolated<doxid-classgeode_1_1_solid_facets_1a2805138c293c60b59837b548f75e1d45>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
 		const :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`& :ref:`facet_vertices<doxid-classgeode_1_1_solid_facets_1a7c74ded75c7f02b6a1b9960c562b3d52>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` facet_id) const;
 		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`facet_from_vertices<doxid-classgeode_1_1_solid_facets_1a992f09c503868d4486c832974b03846f>`(const :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>`& vertices) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`facet_attribute_manager<doxid-classgeode_1_1_solid_facets_1abdf45dc310e4cb8d44eff373f9ebf934>`() const;

@@ -202,35 +202,36 @@ Inherited Members
 		bool :ref:`is_boundary<doxid-classgeode_1_1_relationships_1a82cd221591f5fdff4799c209c364b549>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence) const;
 		bool :ref:`is_internal<doxid-classgeode_1_1_relationships_1a6138acef8b9971b5f40d4925bc35ac71>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding) const;
 		bool :ref:`is_item<doxid-classgeode_1_1_relationships_1a57d4e54f764e3053bd29dff88be2b1ac>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection) const;
-		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`component_attribute_manager<doxid-classgeode_1_1_relationships_1a62dbd7577b1c90ebbc3396b0c0dbc9f2>`() const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`component_index<doxid-classgeode_1_1_relationships_1a73c8403fa70fdfd6b988cebb971370b1>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
-		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`component_from_index<doxid-classgeode_1_1_relationships_1aa3bc7d0693c461700ad29dd12ec57d1b>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` id) const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`relation_attribute_manager<doxid-classgeode_1_1_relationships_1a20eb06d7900f5dc8eb4c913edff21a36>`() const;
 		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`relation_index<doxid-classgeode_1_1_relationships_1a9b4e3b299580f1dc2bbcbf74ddce7619>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2) const;
 		std::tuple<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`, :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`> :ref:`relation_from_index<doxid-classgeode_1_1_relationships_1aa0fa38dfaad8a9f7e2a095dc195042fb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` id) const;
 		void :ref:`save_relationships<doxid-classgeode_1_1_relationships_1a0dab2f54985d3932dbff14c1ede028e6>`(absl::string_view directory) const;
-		void :ref:`register_component<doxid-classgeode_1_1_relationships_1ac21315bddd9f19be957e0b709700ec87>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id, RelationshipsBuilderKey);
-		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_1ad14c78840ca287f342b699a4961fc28e>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, RelationshipsBuilderKey);
+		void :ref:`remove_component<doxid-classgeode_1_1_relationships_1a7490d3cede781d7b5d175cfc235d0e7c>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, RelationshipsBuilderKey);
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_1a7db95a785f0ff2c8e0bf0acf28f300bd>`(
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary,
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_1ab8392df0e2b9c1a939aad02361928a11>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& boundary,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& incidence,
 			RelationshipsBuilderKey
 			);
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_1af812bc2ad7db51cbc3b8353cbf3342e4>`(
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal,
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_1a57de7479e9fea1343feaf9c3475559f5>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& internal,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& embedding,
 			RelationshipsBuilderKey
 			);
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_1aaef6ae17c47a3b460b544304058f5e24>`(
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& item,
-			const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_1a4cb50331febc11479034352fc8a547a0>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& item,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& collection,
 			RelationshipsBuilderKey
 			);
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_relation<doxid-classgeode_1_1_relationships_1a677e48ee184e9d7bc77feaa118f5f9e8>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2, RelationshipsBuilderKey);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_relation<doxid-classgeode_1_1_relationships_1a86960ab8bb8b8afd680ac72dd487ce44>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id1,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id2,
+			RelationshipsBuilderKey
+			);
+	
 		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_1aea905589564a93aac00dffbf8dab159a>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2, RelationshipsBuilderKey);
 	
 		void :ref:`copy_relationships<doxid-classgeode_1_1_relationships_1ab9d7bcc02926109fe74b6d6dc1db9631>`(

@@ -27,12 +27,24 @@ Class managing modification of :ref:`Relationships <doxid-classgeode_1_1_relatio
 
 		// methods
 	
-		void :ref:`register_component<doxid-classgeode_1_1_relationships_builder_1ac161cd45bffb92b0e3340ac80cfe9e1d>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id);
 		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_builder_1aee190cedcd627f2e9bdc5e3815afcdfd>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a880d843c0597bd3e6af69e38a4e81b83>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_builder_1a997f8b35c4bae99d81465dc62ee1b0e9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_builder_1acbbf95685f778de7dc3e568750e4dbf2>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_relation<doxid-classgeode_1_1_relationships_builder_1a0201343c12ef8ac4ad07c8c93ac2b291>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a4fcac933fa86e10ea81099fcf81e8b26>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& boundary,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& incidence
+			);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_builder_1a55d1c984cadd81928f368fddc7491bda>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& internal,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& embedding
+			);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_builder_1ae8760aa0d98df6cb711e163f27427bd2>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& item,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& collection
+			);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_relation<doxid-classgeode_1_1_relationships_builder_1ac24f613a79365bce8b725cc2c753d7be>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id1, const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id2);
 		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
 	
 		void :target:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(
@@ -55,28 +67,6 @@ Class managing modification of :ref:`Relationships <doxid-classgeode_1_1_relatio
 
 Methods
 -------
-
-.. index:: pair: function; register_component
-.. _doxid-classgeode_1_1_relationships_builder_1ac161cd45bffb92b0e3340ac80cfe9e1d:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void register_component(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id)
-
-Add a component in the set of components registered by the :ref:`Relationships <doxid-classgeode_1_1_relationships>`
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- id
-
-		- The component identifier to add
 
 .. index:: pair: function; unregister_component
 .. _doxid-classgeode_1_1_relationships_builder_1aee190cedcd627f2e9bdc5e3815afcdfd:
@@ -101,93 +91,51 @@ Remove a component from the set of components registered by the :ref:`Relationsh
 		- Unique index of the component to remove
 
 .. index:: pair: function; add_boundary_relation
-.. _doxid-classgeode_1_1_relationships_builder_1a880d843c0597bd3e6af69e38a4e81b83:
+.. _doxid-classgeode_1_1_relationships_builder_1a4fcac933fa86e10ea81099fcf81e8b26:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_boundary_relation(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence)
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_boundary_relation(
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& boundary,
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& incidence
+		)
 
 Add a new relationship of type boundary-incidence between two components
 
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- boundary
-
-		- Unique index of the boundary component
-
-	*
-		- incidence
-
-		- Unique index of the incidence component
-
 .. index:: pair: function; add_internal_relation
-.. _doxid-classgeode_1_1_relationships_builder_1a997f8b35c4bae99d81465dc62ee1b0e9:
+.. _doxid-classgeode_1_1_relationships_builder_1a55d1c984cadd81928f368fddc7491bda:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_internal_relation(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding)
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_internal_relation(
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& internal,
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& embedding
+		)
 
 Add a new relationship of type internal-embedding between two components
 
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- internal
-
-		- Unique index of the internal component
-
-	*
-		- embedding
-
-		- Unique index of the embedding component
-
 .. index:: pair: function; add_item_in_collection
-.. _doxid-classgeode_1_1_relationships_builder_1acbbf95685f778de7dc3e568750e4dbf2:
+.. _doxid-classgeode_1_1_relationships_builder_1ae8760aa0d98df6cb711e163f27427bd2:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_item_in_collection(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection)
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_item_in_collection(
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& item,
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& collection
+		)
 
 Add a new relationship of type item-collection between two components
 
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- item
-
-		- Unique index of the item component
-
-	*
-		- collection
-
-		- Unique index of the collection component
-
 .. index:: pair: function; add_relation
-.. _doxid-classgeode_1_1_relationships_builder_1a0201343c12ef8ac4ad07c8c93ac2b291:
+.. _doxid-classgeode_1_1_relationships_builder_1ac24f613a79365bce8b725cc2c753d7be:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_relation(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2)
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_relation(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id1, const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id2)
 
 Add a new relationship between two components
 
