@@ -62,6 +62,7 @@ Interface class to represent regular grids. :ref:`More...<details-classgeode_1_1
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
 			) const;
 	
+		bool :target:`is_cell_on_border<doxid-classgeode_1_1_regular_grid_1acb4bd7ca6b8e96e25ea7af2e4feb93f0>`(const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& cell_indices) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_vertices<doxid-classgeode_1_1_regular_grid_1a7b00efda93922f86f252ad55b8100c1c>`() const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_vertices<doxid-classgeode_1_1_regular_grid_1aa38f906c8cbea706463927e19ce3c3ed>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_vertices_on_borders<doxid-classgeode_1_1_regular_grid_1a2cbe6ec3a8cb65ca9fadae36944c0bb1>`() const;
