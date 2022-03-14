@@ -298,7 +298,7 @@ Return the local indices of the two facets incident to the opposite edge in tetr
 	*
 		- edge_vertices
 
-		- Indices of the two vertices of an edge.  throw an exception if edge_vertices are not tetrahedron vertices.
+		- Indices of the two vertices of an edge. @warn throw an exception if edge_vertices are not tetrahedron vertices.
 
 .. index:: pair: function; tetra
 .. _doxid-classgeode_1_1_tetrahedral_solid_1ada27b86136318d391b5cdb1d3d0f1f32:

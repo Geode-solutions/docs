@@ -414,7 +414,7 @@ Delete a set of attribute elements.
 	*
 		- to_delete
 
-		- a vector of size :ref:`nb_elements() <doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`. If to_delete[e] is true, then the element e will be destroyed.
+		- a vector of size @function :ref:`nb_elements() <doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`. If to_delete[e] is true, then the element e will be destroyed.
 
 .. index:: pair: function; permute_elements
 .. _doxid-classgeode_1_1_attribute_manager_1a6262e1c6201661f3f47fcc47226b8283:
@@ -436,7 +436,7 @@ Permute attribute elements.
 	*
 		- permutation
 
-		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size :ref:`nb_elements() <doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`. Each value correponds to the destination index.
+		- :ref:`Vector <doxid-classgeode_1_1_vector>` of size @function :ref:`nb_elements() <doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c>`. Each value correponds to the destination index.
 
 .. index:: pair: function; nb_elements
 .. _doxid-classgeode_1_1_attribute_manager_1a3c1aa6aa5f1e1792e7080c537edc7d5c:

@@ -130,7 +130,7 @@ Return the cell(s) containing the query point
 
 .. rubric:: Returns:
 
-No, one index or several cell indices that contain the query point.  When query point is geometrically near to cell limit, several cell indices are returned: they correspond the potential cells that may contain the point.
+No, one index or several cell indices that contain the query point. @detail When query point is geometrically near to cell limit, several cell indices are returned: they correspond the potential cells that may contain the point.
 
 .. index:: pair: function; bounding_box
 .. _doxid-classgeode_1_1_regular_grid_1aaed9cbd54060d8d3e8a18d8535cf1978:
