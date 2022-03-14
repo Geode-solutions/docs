@@ -126,7 +126,7 @@ Split a triangle into three new triangles.
 	*
 		- point
 
-		- Coordinates of the split point.  Given triangle is set as inactive but not deleted.
+		- Coordinates of the split point. @warn Given triangle is set as inactive but not deleted.
 
 .. index:: pair: function; split_edge
 .. _doxid-classgeode_1_1_triangulated_surface_modifier_1a71bd11173aede092c0fde70c1e2d5981:
@@ -156,7 +156,7 @@ Split an edge into two new edges. The triangles incident to this edge are also s
 	*
 		- point
 
-		- Coordinates of the split point.  Split triangles are set as inactive but not deleted.
+		- Coordinates of the split point. @warn Split triangles are set as inactive but not deleted.
 
 .. index:: pair: function; collapse_edge
 .. _doxid-classgeode_1_1_triangulated_surface_modifier_1a49d0d73288724398a6bd046f2ffb7813:

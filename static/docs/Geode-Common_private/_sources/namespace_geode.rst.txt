@@ -441,22 +441,21 @@ Overview
 		);
 
 	std::vector<std::pair<MeshComponentVertex, MeshComponentVertex>> geode_common_helpers_api :target:`common_vertices<doxid-namespacegeode_1a62c919c40a7b61ff43951c517f3330fd>`(const std::array<std::vector<MeshComponentVertex>, 2>& vertices);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
 
 	template <index_t dimension>
-	std::vector<typename geode::RegularGrid<dimension>::Index> :target:`rasterize_segment<doxid-namespacegeode_1aa46b66899e41d9590a9f8281e072b65f>`(
+	std::vector<GridCellIndices<dimension>> :target:`rasterize_segment<doxid-namespacegeode_1ae7018f2c9fa69cbb05d9ea118dfcc50b>`(
 		const RegularGrid<dimension>& grid,
 		const Segment<dimension>& segment
 		);
 
 	template <index_t dimension>
-	std::vector<typename geode::RegularGrid<dimension>::Index> :target:`conservative_rasterize_segment<doxid-namespacegeode_1ad89afc03c97241b12a048dd02cce17e3>`(
+	std::vector<GridCellIndices<dimension>> :target:`conservative_rasterize_segment<doxid-namespacegeode_1a2b2e666fcae22d4792c740ffb6b0c1b5>`(
 		const RegularGrid<dimension>& grid,
 		const Segment<dimension>& segment
 		);
 
 	template <index_t dimension>
-	std::vector<typename geode::RegularGrid<dimension>::Index> :target:`rasterize_triangle<doxid-namespacegeode_1abe0639689b0be977a0a0effddf288782>`(
+	std::vector<GridCellIndices<dimension>> :target:`rasterize_triangle<doxid-namespacegeode_1a46432925e3e78e4bf041790a33c12bfc>`(
 		const RegularGrid<dimension>& grid,
 		const Triangle<dimension>& triangle
 		);
@@ -610,7 +609,7 @@ Perform a TetrahedralSolid3D planar cut along a triangle given the patch cut inf
 	*
 		- patch
 
-		- Patch cut information  Cut tetrahedra are set as inactive but not deleted.
+		- Patch cut information @warn Cut tetrahedra are set as inactive but not deleted.
 
 .. index:: pair: function; cut_along_patch
 .. _doxid-namespacegeode_1a6ede9860c6f3ee584c3027d348c51acf:
@@ -652,7 +651,7 @@ Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edge
 	*
 		- triangle
 
-		- The triangle corresponding to the patch to insert in solid  Cut tetrahedra are set as inactive but not deleted.
+		- The triangle corresponding to the patch to insert in solid @warn Cut tetrahedra are set as inactive but not deleted.
 
 .. index:: pair: function; cut_along_path
 .. _doxid-namespacegeode_1a0ead8515ad1babd6030021fc91093a81:
@@ -690,7 +689,7 @@ Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to
 	*
 		- path_splits
 
-		- Ordered list of Path splits  Cut tetrahedra are set as inactive but not deleted.
+		- Ordered list of Path splits @warn Cut tetrahedra are set as inactive but not deleted.
 
 .. index:: pair: function; line_plane_intersection
 .. _doxid-namespacegeode_1a2be04752895258a178372f17bcace4dc:

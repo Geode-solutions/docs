@@ -155,7 +155,7 @@ Insert a point in a tetrahedron either by spliting the tetrahedron into four new
 	*
 		- point
 
-		- Coordinates of the split point.  Split tetrahedron is set as inactive but not deleted.
+		- Coordinates of the split point. @warn Split tetrahedron is set as inactive but not deleted.
 
 
 
@@ -191,7 +191,7 @@ Insert a point on a facet either by spliting the facet into three new ones, or b
 	*
 		- point
 
-		- Coordinates of the split point.  Potential split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point. @warn Potential split tetrahedra are set as inactive but not deleted.
 
 
 
@@ -227,7 +227,7 @@ Insert a point on an edge either by spliting the edge into two new ones, or by s
 	*
 		- point
 
-		- Coordinates of the split point.  Potential split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point. @warn Potential split tetrahedra are set as inactive but not deleted.
 
 
 
@@ -260,7 +260,7 @@ Insert a point on an edge either by spliting the edge into two new ones, or by s
 	*
 		- point
 
-		- Coordinates of the split point.  Potential split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point. @warn Potential split tetrahedra are set as inactive but not deleted.
 
 
 
