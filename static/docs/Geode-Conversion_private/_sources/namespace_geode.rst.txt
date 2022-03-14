@@ -202,5 +202,5 @@ Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribu
 	*
 		- attribute_name
 
-		- Name of attribute stored on solid polyhedra  Attribute should be convertible to float.
+		- Name of attribute stored on solid polyhedra @warn Attribute should be convertible to float.
 
