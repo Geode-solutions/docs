@@ -25,4 +25,9 @@ template class geode::detail::VTIRegularGridOutput
 			const RegularGrid<dimension>& grid,
 			absl::string_view filename
 			);
+
+		// methods
+	
+		void :target:`write<doxid-classgeode_1_1detail_1_1_v_t_i_regular_grid_output_1a5f14cf639cdadc4372343bd939281d3a>`() const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1detail_1_1_v_t_i_regular_grid_output_1abf1c67c1370f927fdc24aae1ce46cf18>`();
 	};
