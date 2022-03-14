@@ -29,31 +29,27 @@ namespace geode::detail
 
 	// global functions
 
-	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
-	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_faults<doxid-namespacegeode_1_1detail_1a9f00af679b64fad6cac12b2cc89c56d9>`(
+	template <typename ModelFrom, typename BuilderTo>
+	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_faults<doxid-namespacegeode_1_1detail_1a49709c64e8f9341891277e22b7cad992>`(
 		const ModelFrom& from,
-		const ModelTo& to,
 		BuilderTo& builder_to
 		);
 
-	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
-	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_horizons<doxid-namespacegeode_1_1detail_1a8b27a331efe3f5a5667326c794a1d260>`(
+	template <typename ModelFrom, typename BuilderTo>
+	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_horizons<doxid-namespacegeode_1_1detail_1a07eeb1a38b9f72b9c88329bc4bfde068>`(
 		const ModelFrom& from,
-		const ModelTo& to,
 		BuilderTo& builder_to
 		);
 
-	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
-	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_fault_blocks<doxid-namespacegeode_1_1detail_1a7d7109638ee81b2c0487409977f6d401>`(
+	template <typename ModelFrom, typename BuilderTo>
+	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_fault_blocks<doxid-namespacegeode_1_1detail_1aada558aceae46cf00917fa021b403261>`(
 		const ModelFrom& from,
-		const ModelTo& to,
 		BuilderTo& builder_to
 		);
 
-	template <typename ModelFrom, typename ModelTo, typename BuilderTo>
-	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_stratigraphic_units<doxid-namespacegeode_1_1detail_1a9d2cdea265e3faf92f9c9b8d675da4b2>`(
+	template <typename ModelFrom, typename BuilderTo>
+	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_stratigraphic_units<doxid-namespacegeode_1_1detail_1adceea0f47d830e614c0c696e1d6fa3f4>`(
 		const ModelFrom& from,
-		const ModelTo& to,
 		BuilderTo& builder_to
 		);
 
