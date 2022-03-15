@@ -35,8 +35,7 @@ template class geode::detail::CornersLinesBuilderFromSolid
 
 	// direct descendants
 
-	template <typename Model, typename ModelBuilder>
-	class :ref:`ModelFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder>`;
+	class :ref:`BRepFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder>`;
 
 Inherited Members
 -----------------

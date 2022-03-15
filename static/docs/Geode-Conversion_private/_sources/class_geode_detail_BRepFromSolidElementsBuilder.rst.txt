@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::detail::ModelFromSolidElementsBuilder
-.. _doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder:
+.. index:: pair: class; geode::detail::BRepFromSolidElementsBuilder
+.. _doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder:
 
-template class geode::detail::ModelFromSolidElementsBuilder
-===========================================================
+class geode::detail::BRepFromSolidElementsBuilder
+=================================================
 
 .. toctree::
 	:hidden:
@@ -15,14 +15,13 @@ template class geode::detail::ModelFromSolidElementsBuilder
 
 	#include <brep_from_solid_builder.h>
 	
-	template <typename Model, typename ModelBuilder>
-	class ModelFromSolidElementsBuilder: public :ref:`geode::detail::CornersLinesBuilderFromSolid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_solid>`
+	class BRepFromSolidElementsBuilder: public :ref:`geode::detail::CornersLinesBuilderFromSolid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_solid>`
 	{
 	public:
 		// construction
 	
-		:target:`ModelFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1a80ab90690135e39c316d360c0d119ee4>`(
-			Model& model,
+		:target:`BRepFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a2fecf0128628ee9b6b22d84885d9a293>`(
+			BRep& model,
 			const SolidMesh3D& solid,
 			absl::Span<const VertexCycle<std::array<index_t, 2>>> edges,
 			absl::Span<const VertexCycle<PolyhedronFacetVertices>> facets
@@ -30,10 +29,10 @@ template class geode::detail::ModelFromSolidElementsBuilder
 
 		// methods
 	
-		void :target:`build_whole_surface_step<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1a8ab9937e7ad43a40e6cf63b2cd3a2b41>`();
-		absl::flat_hash_map<uuid, std::vector<index_t>> :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1ae105ef1226e04cb83c069cc215ef08a3>`();
-		void :target:`build_blocks<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1a28157d921bc31102d2730228dbb8708b>`();
-		virtual bool :target:`is_corner<doxid-classgeode_1_1detail_1_1_model_from_solid_elements_builder_1add5a06d0a0d8a6900ffa247d34fa5d76>`(index_t vertex) const;
+		void :target:`build_whole_surface_step<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1ab21a2063ead6fb71caec0e2188d0e474>`();
+		absl::flat_hash_map<uuid, std::vector<index_t>> :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a94b271c48c5fd90729416201fec4189f>`();
+		void :target:`build_blocks<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a08d3787b459a18ece40aacf9eea93334>`();
+		virtual bool :target:`is_corner<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a6319b1f06d019a7c41e48656d396cb6b>`(index_t vertex) const;
 	};
 
 Inherited Members
