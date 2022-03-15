@@ -4,16 +4,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>class geode::GridInfoBuilder2D &#8212; Python  documentation</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -34,7 +34,7 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="class-geode-gridinfobuilder2d">
+  <section id="class-geode-gridinfobuilder2d">
 <span id="doxid-classgeode-1-1-grid-info-builder2-d"></span><span id="index-0"></span><h1>class geode::GridInfoBuilder2D</h1>
 <div class="toctree-wrapper compound">
 </div>
@@ -53,7 +53,7 @@
 <span class="c1">// direct descendants</span>
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_BackgroundMeshBuilder2D.html#doxid-classgeode-1-1-background-mesh-builder2-d"><span class="std std-ref">BackgroundMeshBuilder2D</span></a><span></span><span class="p">;</span></pre>
-<div class="section" id="inherited-members">
+<section id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
@@ -61,18 +61,16 @@
     <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder-1a166af712a4270d3ca6932b9a3dfd69d9"><span class="std std-ref">update_mesh_elements</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&amp;</span> <span class="n">mapping</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder-1a5ba120ef16601ef24b8ac44b7093ad4b"><span class="std std-ref">update_all_mesh_elements</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">nb_elements</span><span class="p">);</span>
 
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder-1ac93dd3f303d09233c62fd2f5849035d4"><span class="std std-ref">set_cell_corner_vertex</span></a><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="k">typename</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Index</span><span class="o">&amp;</span> <span class="n">cell</span><span class="p">,</span>
-        <span class="n">index_t</span> <span class="n">vertex_id</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder-1a40d7b2a6cf2812feb4a37c0d85309f8c"><span class="std std-ref">set_grid_vertex_to_mesh_vertex</span></a><span></span><span class="p">(</span>
+        <span class="n">index_t</span> <span class="n">grid_vertex_id</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">mesh_vertex_id</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder-1a1f86f14dd0a4393d40580659aae38d0e"><span class="std std-ref">set_vertex_as_border</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">);</span>
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder-1a29488c6e7769bb3ad8f61bc89989eaab"><span class="std std-ref">unset_vertex_as_border</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder-1a2521b774f2ea41b8a453628bf5b4559d"><span class="std std-ref">map_element_to_cell</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">element</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">cell_id</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder-1ac53117dd5d0cf54895a577374fe00ee1"><span class="std std-ref">map_elements_to_cell</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a484cebea94c5af40bcb1b704f8720d00"><span class="std std-ref">MeshElements</span></a><span></span><span class="o">&amp;</span> <span class="n">elements</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">cell_id</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_GridInfoBuilder.html#doxid-classgeode-1-1-grid-info-builder-1af87691e84455ecd9502e6a51ac26bc15"><span class="std std-ref">activate_cell</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">cell_id</span><span class="p">);</span></pre>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
@@ -84,7 +82,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

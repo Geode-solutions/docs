@@ -41,13 +41,11 @@ Inherited Members
 		void :ref:`update_mesh_elements<doxid-classgeode_1_1_grid_info_builder_1a166af712a4270d3ca6932b9a3dfd69d9>`(const :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t>& mapping);
 		void :ref:`update_all_mesh_elements<doxid-classgeode_1_1_grid_info_builder_1a5ba120ef16601ef24b8ac44b7093ad4b>`(index_t nb_elements);
 	
-		void :ref:`set_cell_corner_vertex<doxid-classgeode_1_1_grid_info_builder_1ac93dd3f303d09233c62fd2f5849035d4>`(
-			const typename RegularGrid<dimension>::Index& cell,
-			index_t vertex_id
+		void :ref:`set_grid_vertex_to_mesh_vertex<doxid-classgeode_1_1_grid_info_builder_1a40d7b2a6cf2812feb4a37c0d85309f8c>`(
+			index_t grid_vertex_id,
+			index_t mesh_vertex_id
 			);
 	
-		void :ref:`set_vertex_as_border<doxid-classgeode_1_1_grid_info_builder_1a1f86f14dd0a4393d40580659aae38d0e>`(index_t vertex_id);
-		void :ref:`unset_vertex_as_border<doxid-classgeode_1_1_grid_info_builder_1a29488c6e7769bb3ad8f61bc89989eaab>`(index_t vertex_id);
 		void :ref:`map_element_to_cell<doxid-classgeode_1_1_grid_info_builder_1a2521b774f2ea41b8a453628bf5b4559d>`(index_t element, index_t cell_id);
 		void :ref:`map_elements_to_cell<doxid-classgeode_1_1_grid_info_builder_1ac53117dd5d0cf54895a577374fe00ee1>`(const :ref:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`& elements, index_t cell_id);
 		void :ref:`activate_cell<doxid-classgeode_1_1_grid_info_builder_1af87691e84455ecd9502e6a51ac26bc15>`(index_t cell_id);
