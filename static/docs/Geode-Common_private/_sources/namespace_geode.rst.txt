@@ -28,7 +28,6 @@ namespace geode
 	struct_geode_ModelSplitPolygonEdgeInfo.rst
 	struct_geode_MultiMapping.rst
 	struct_geode_MultiMapping-2.rst
-	struct_geode_PatchFrontEdge.rst
 	struct_geode_PolygonData.rst
 	struct_geode_PolygonEdgeData.rst
 	struct_geode_PolygonEdgeInfo.rst
@@ -57,7 +56,6 @@ namespace geode
 	class_geode_RayTracing3D.rst
 	class_geode_RegularGridScalarFunction.rst
 	class_geode_SectionGeometricModifier.rst
-	class_geode_SolidPatchFinder.rst
 	class_geode_SolidPathFinder.rst
 	class_geode_SurfacePathFinder.rst
 	class_geode_SurfaceSegmentFinder.rst
@@ -90,7 +88,6 @@ Overview
 
 	typedef std::pair<:ref:`EdgeMapping<doxid-namespacegeode_1ae9864a98f4db0737bb05ca34835a671f>`, bool> :target:`OrientedEdgeMapping<doxid-namespacegeode_1a54b0871837c233adb2d5b88a496cdd7a>`;
 	typedef std::pair<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a940546afc1c9ff9d7a0285a1377285c5>`, bool> :target:`OrientedEdgeMultiMapping<doxid-namespacegeode_1a1bab4ec7e9ccefea836c5553826d6d3b>`;
-	typedef std::pair<index_t, bool> :target:`OrientedEdge<doxid-namespacegeode_1ab7c515d34c7589c847c6947c92e86274>`;
 	typedef std::pair<Position, Position> :target:`SegmentSegmentIntersection<doxid-namespacegeode_1ad08f71e1c9db568dd62df0bf066813b1>`;
 	typedef std::pair<Position, Position> :target:`SegmentTriangleIntersection<doxid-namespacegeode_1acbc58086feed61355d4235a09e6e6b80>`;
 	typedef Side :target:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>`;
@@ -151,8 +148,6 @@ Overview
 	template <typename Type>
 	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
 
-	struct :ref:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge>`;
-
 	template <index_t dimension>
 	struct :ref:`PolygonData<doxid-structgeode_1_1_polygon_data>`;
 
@@ -194,7 +189,6 @@ Overview
 	class :ref:`RegularGridScalarFunction<doxid-classgeode_1_1_regular_grid_scalar_function>`;
 
 	class :ref:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier>`;
-	class :ref:`SolidPatchFinder<doxid-classgeode_1_1_solid_patch_finder>`;
 	class :ref:`SolidPathFinder<doxid-classgeode_1_1_solid_path_finder>`;
 
 	template <index_t dimension>
@@ -242,7 +236,7 @@ Overview
 	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api :ref:`cut_along_patch<doxid-namespacegeode_1a6ede9860c6f3ee584c3027d348c51acf>`(
 		const TetrahedralSolid3D& solid,
 		TetrahedralSolidBuilder3D& builder,
-		absl::Span<const :ref:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge>`> boundary_edges,
+		absl::Span<const PatchFrontEdge> boundary_edges,
 		const Triangle3D& triangle
 		);
 
@@ -620,7 +614,7 @@ Perform a TetrahedralSolid3D planar cut along a triangle given the patch cut inf
 	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api cut_along_patch(
 		const TetrahedralSolid3D& solid,
 		TetrahedralSolidBuilder3D& builder,
-		absl::Span<const :ref:`PatchFrontEdge<doxid-structgeode_1_1_patch_front_edge>`> boundary_edges,
+		absl::Span<const PatchFrontEdge> boundary_edges,
 		const Triangle3D& triangle
 		)
 

@@ -50,7 +50,6 @@
 
 <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1ae9864a98f4db0737bb05ca34835a671f"><span class="std std-ref">EdgeMapping</span></a><span></span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a54b0871837c233adb2d5b88a496cdd7a"><span></span><span class="n">OrientedEdgeMapping</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1a940546afc1c9ff9d7a0285a1377285c5"><span class="std std-ref">EdgeMultiMapping</span></a><span></span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1bab4ec7e9ccefea836c5553826d6d3b"><span></span><span class="n">OrientedEdgeMultiMapping</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab7c515d34c7589c847c6947c92e86274"><span></span><span class="n">OrientedEdge</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">Position</span><span class="p">,</span> <span class="n">Position</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad08f71e1c9db568dd62df0bf066813b1"><span></span><span class="n">SegmentSegmentIntersection</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">Position</span><span class="p">,</span> <span class="n">Position</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acbc58086feed61355d4235a09e6e6b80"><span></span><span class="n">SegmentTriangleIntersection</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">Side</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span></span><span class="n">Sign</span></span><span></span><span class="p">;</span>
@@ -111,8 +110,6 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_MultiMapping-2.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="p">;</span>
 
-<span class="k">struct</span> <a class="reference internal" href="struct_geode_PatchFrontEdge.html#doxid-structgeode-1-1-patch-front-edge"><span class="std std-ref">PatchFrontEdge</span></a><span></span><span class="p">;</span>
-
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_PolygonData.html#doxid-structgeode-1-1-polygon-data"><span class="std std-ref">PolygonData</span></a><span></span><span class="p">;</span>
 
@@ -154,7 +151,6 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridScalarFunction.html#doxid-classgeode-1-1-regular-grid-scalar-function"><span class="std std-ref">RegularGridScalarFunction</span></a><span></span><span class="p">;</span>
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_SectionGeometricModifier.html#doxid-classgeode-1-1-section-geometric-modifier"><span class="std std-ref">SectionGeometricModifier</span></a><span></span><span class="p">;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_SolidPatchFinder.html#doxid-classgeode-1-1-solid-patch-finder"><span class="std std-ref">SolidPatchFinder</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_SolidPathFinder.html#doxid-classgeode-1-1-solid-path-finder"><span class="std std-ref">SolidPathFinder</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -202,7 +198,7 @@
 <a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a6ede9860c6f3ee584c3027d348c51acf"><span class="std std-ref">cut_along_patch</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
     <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PatchFrontEdge.html#doxid-structgeode-1-1-patch-front-edge"><span class="std std-ref">PatchFrontEdge</span></a><span></span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">PatchFrontEdge</span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
     <span class="p">);</span>
 
@@ -555,7 +551,7 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6ede9860c6f3ee584c3027d348c51acf"><span id="index-2"></span><a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_patch</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
     <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PatchFrontEdge.html#doxid-structgeode-1-1-patch-front-edge"><span class="std std-ref">PatchFrontEdge</span></a><span></span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">PatchFrontEdge</span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
     <span class="p">)</span></pre>
 <p>Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.</p>

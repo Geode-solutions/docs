@@ -13,7 +13,7 @@ struct geode::SolidPatch
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <patch_finder.h>
+	#include <solid_patch.h>
 	
 	struct SolidPatch
 	{
