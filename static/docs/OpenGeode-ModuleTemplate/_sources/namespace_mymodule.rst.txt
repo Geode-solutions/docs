@@ -1,0 +1,23 @@
+.. index:: pair: namespace; mymodule
+.. _doxid-namespacemymodule:
+
+namespace mymodule
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace mymodule {
+
+	// global functions
+
+	bool opengeode_mymodule_mylib_api :target:`hello_world<doxid-namespacemymodule_1a881e80bef3576cb65f0ec717543d2b89>`();
+
+	} // namespace mymodule
