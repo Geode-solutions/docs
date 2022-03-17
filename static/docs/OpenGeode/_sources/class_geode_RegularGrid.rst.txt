@@ -88,7 +88,7 @@ Interface class to represent regular grids. :ref:`More...<details-classgeode_1_1
 		bool :target:`is_vertex_on_border<doxid-classgeode_1_1_regular_grid_1a734ef8aaab07b8d4934c3ed89c8bc607>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& vertex_index) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`point<doxid-classgeode_1_1_regular_grid_1a594f8783b91fdc908b31a4d817c4536d>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& index) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`cell_barycenter<doxid-classgeode_1_1_regular_grid_1a567deb46ad502ae5e4b6cb47a25c6d91>`(const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& index) const;
-		absl::optional<:ref:`GridCellsAroundVertex<doxid-namespacegeode_1a0403bdf67bf85805094b6e99bb52b9bd>`<dimension>> :ref:`cell<doxid-classgeode_1_1_regular_grid_1aa03d975d629e5d07facecf88454dab70>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
+		:ref:`GridCellsAroundVertex<doxid-namespacegeode_1a0403bdf67bf85805094b6e99bb52b9bd>`<dimension> :ref:`cells<doxid-classgeode_1_1_regular_grid_1aa5b7c37ead5031ee7b780388d61c640b>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_regular_grid_1aaed9cbd54060d8d3e8a18d8535cf1978>`() const;
 		RegularGrid<dimension> :target:`clone<doxid-classgeode_1_1_regular_grid_1a6f8680fd78b73475e8aa1e512c5543cb>`() const;
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_regular_grid_1a89cb9b53414e1a7aa659de3bab59683f>`();
@@ -104,13 +104,13 @@ Interface class to represent regular grids.
 Methods
 -------
 
-.. index:: pair: function; cell
-.. _doxid-classgeode_1_1_regular_grid_1aa03d975d629e5d07facecf88454dab70:
+.. index:: pair: function; cells
+.. _doxid-classgeode_1_1_regular_grid_1aa5b7c37ead5031ee7b780388d61c640b:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	absl::optional<:ref:`GridCellsAroundVertex<doxid-namespacegeode_1a0403bdf67bf85805094b6e99bb52b9bd>`<dimension>> cell(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const
+	:ref:`GridCellsAroundVertex<doxid-namespacegeode_1a0403bdf67bf85805094b6e99bb52b9bd>`<dimension> cells(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const
 
 Return the cell(s) containing the query point
 
