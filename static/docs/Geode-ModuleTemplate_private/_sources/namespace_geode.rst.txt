@@ -1,0 +1,23 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// global functions
+
+	bool geode_moduletemplate_mylib_api :target:`hello_private_world<doxid-namespacegeode_1abd725dbea3fcff3356b089ba177fb0f4>`();
+
+	} // namespace geode
