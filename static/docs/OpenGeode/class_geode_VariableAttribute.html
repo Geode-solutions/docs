@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>template class geode::VariableAttribute&lt;bool&gt; &#8212; Python  documentation</title>
+    <title>template class geode::VariableAttribute &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::VariableAttribute" href="class_geode_VariableAttribute-2.html" />
+    <link rel="next" title="template class geode::VariableAttribute&lt;bool&gt;" href="class_geode_VariableAttribute-2.html" />
     <link rel="prev" title="class geode::UnzipFile" href="class_geode_UnzipFile.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -34,44 +34,44 @@
 
           <div class="body" role="main">
             
-  <section id="template-class-geode-variableattribute-bool">
-<span id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4"></span><span id="index-0"></span><h1>template class geode::VariableAttribute&lt;bool&gt;</h1>
+  <section id="template-class-geode-variableattribute">
+<span id="doxid-classgeode-1-1-variable-attribute"></span><span id="index-0"></span><h1>template class geode::VariableAttribute</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Read and write interface for boolean variable attribute storage. This class removes the custom storage use by the STL for std::vector&lt;bool&gt;.</p>
+<p>Read and write interface for variable attribute storage</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;attribute.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;&gt;</span>
-<span class="k">class</span> <span class="n">VariableAttribute</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_ReadOnlyAttribute.html#doxid-classgeode-1-1-read-only-attribute"><span class="std std-ref">geode::ReadOnlyAttribute</span></a><span></span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">VariableAttribute</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_ReadOnlyAttribute.html#doxid-classgeode-1-1-read-only-attribute"><span class="std std-ref">geode::ReadOnlyAttribute</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a42d86d6e69132a1fd8ab4e32f41f6d40"><span></span><span class="n">VariableAttribute</span></span><span></span><span class="p">(</span>
-        <span class="kt">bool</span> <span class="n">default_value</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-1a630bf7519e455e428a7050f74fc41a22"><span></span><span class="n">VariableAttribute</span></span><span></span><span class="p">(</span>
+        <span class="n">T</span> <span class="n">default_value</span><span class="p">,</span>
         <a class="reference internal" href="struct_geode_AttributeProperties.html#doxid-structgeode-1-1-attribute-properties"><span class="std std-ref">AttributeProperties</span></a><span></span> <span class="n">properties</span><span class="p">,</span>
         <span class="n">AttributeBase</span><span class="o">::</span><span class="n">AttributeKey</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="k">virtual</span> <span class="k">const</span> <span class="kt">bool</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a1d41633620b22c51d586000dd3ec572f"><span></span><span class="n">value</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a6eaae6ce4811fc868eec9f53896b2864"><span></span><span class="n">set_value</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">value</span><span class="p">);</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1ab864b4861b047d487c0e3f5ea3d9ba66"><span></span><span class="n">default_value</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-1a12aee94b6cc66ff639ef3653d0a8ed44"><span></span><span class="n">value</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-1af29b490896fca074786cb87791df9c88"><span></span><span class="n">set_value</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">,</span> <span class="n">T</span> <span class="n">value</span><span class="p">);</span>
+    <span class="n">T</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-1a2cc715560d3c23dc40bef4fbb14c954c"><span></span><span class="n">default_value</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Modifier</span><span class="o">&gt;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a74174adf8d248d601fed830bb4329daa"><span></span><span class="n">modify_value</span></span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-1aed775cb0e1ebd634020bd17f9d20fc4e"><span></span><span class="n">modify_value</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element</span><span class="p">,</span>
         <span class="n">Modifier</span><span class="o">&amp;&amp;</span> <span class="n">modifier</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1a8a8c279538c65aad7d5cf0c247d61095"><span></span><span class="n">compute_value</span></span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-1ae94c732b50b2756bd5908964a0a6724f"><span></span><span class="n">compute_value</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">from_element</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">to_element</span><span class="p">,</span>
         <span class="n">AttributeBase</span><span class="o">::</span><span class="n">AttributeKey</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-3-01bool-01-4-1adc7f2ef872ae1c98a5af4bf4b76bbe57"><span></span><span class="n">compute_value</span></span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-variable-attribute-1a737d41140e9f30edffb64eda5298d886"><span></span><span class="n">compute_value</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="struct_geode_AttributeLinearInterpolation.html#doxid-structgeode-1-1-attribute-linear-interpolation"><span class="std std-ref">AttributeLinearInterpolation</span></a><span></span><span class="o">&amp;</span> <span class="n">interpolation</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">to_element</span><span class="p">,</span>
         <span class="n">AttributeBase</span><span class="o">::</span><span class="n">AttributeKey</span>

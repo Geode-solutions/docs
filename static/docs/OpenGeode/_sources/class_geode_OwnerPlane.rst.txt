@@ -1,0 +1,47 @@
+.. index:: pair: class; geode::OwnerPlane
+.. _doxid-classgeode_1_1_owner_plane:
+
+class geode::OwnerPlane
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <plane.h>
+	
+	class OwnerPlane: public :ref:`geode::GenericPlane<doxid-classgeode_1_1_generic_plane>`
+	{
+	public:
+		// construction
+	
+		:target:`OwnerPlane<doxid-classgeode_1_1_owner_plane_1a1a597e6f7892dd773dad9b5d0e186258>`(const Vector3D& normal, const Point3D& origin);
+		:target:`OwnerPlane<doxid-classgeode_1_1_owner_plane_1a97fa2445e6abd9dea0b5b124f0169c7f>`(const OwnerPlane& other);
+		:target:`OwnerPlane<doxid-classgeode_1_1_owner_plane_1ab04e6a0faa8f84a3dd98b32a687f194b>`(OwnerPlane&& other);
+
+		// methods
+	
+		OwnerPlane& :target:`operator =<doxid-classgeode_1_1_owner_plane_1af0dbf32e2bdc0e6106a8066f74c15b2b>` (const OwnerPlane& other);
+		OwnerPlane& :target:`operator =<doxid-classgeode_1_1_owner_plane_1a7bde3884d713d0131ee698213839a45d>` (OwnerPlane&& other);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		:ref:`GenericPlane<doxid-classgeode_1_1_generic_plane>`& :ref:`operator =<doxid-classgeode_1_1_generic_plane_1abba6a8e30fd861f9ff7d3b2b1dc59f16>` (const :ref:`GenericPlane<doxid-classgeode_1_1_generic_plane>`& other);
+		:ref:`GenericPlane<doxid-classgeode_1_1_generic_plane>`& :ref:`operator =<doxid-classgeode_1_1_generic_plane_1a24383e2fad24beed7531988edf69f2ea>` (:ref:`GenericPlane<doxid-classgeode_1_1_generic_plane>`&& other);
+		const Vector3D& :ref:`normal<doxid-classgeode_1_1_generic_plane_1abec144ac0a247567385a3c93aa22c598>`() const;
+		const Point3D& :ref:`origin<doxid-classgeode_1_1_generic_plane_1ad8ec4ac6285d6a89b117d6b6e5ef322d>`() const;
+		double :ref:`plane_constant<doxid-classgeode_1_1_generic_plane_1af5b3690b349e1855d0a0d440d30539a6>`() const;
+

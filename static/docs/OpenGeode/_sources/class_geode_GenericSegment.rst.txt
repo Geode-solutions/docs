@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::GenericSegment
+.. _doxid-classgeode_1_1_generic_segment:
+
+template class geode::GenericSegment
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <infinite_line.h>
+	
+	template <typename PointType, index_t dimension>
+	class GenericSegment
+	{
+	public:
+		// construction
+	
+		:target:`GenericSegment<doxid-classgeode_1_1_generic_segment_1a93146b8758139c596c00d548bdbbad57>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p0, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p1);
+		:target:`GenericSegment<doxid-classgeode_1_1_generic_segment_1aa9c5ff03925260bb9ac44eda648c6d28>`(const GenericSegment<PointType, dimension>& other);
+		:target:`GenericSegment<doxid-classgeode_1_1_generic_segment_1ae4ad4c165f23035ef5615cb3cc6a2fba>`(GenericSegment<PointType, dimension>&& other);
+
+		// methods
+	
+		GenericSegment<PointType, dimension>& :target:`operator =<doxid-classgeode_1_1_generic_segment_1a888e1bf85968f36640015926f0873e1e>` (const GenericSegment<PointType, dimension>& other);
+		GenericSegment<PointType, dimension>& :target:`operator =<doxid-classgeode_1_1_generic_segment_1ac4312e8d2fb2fdca7baea9dfd794c476>` (GenericSegment<PointType, dimension>&& other);
+		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`direction<doxid-classgeode_1_1_generic_segment_1aed9612316cdb41c5b15a58058a9a0765>`() const;
+		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`normalized_direction<doxid-classgeode_1_1_generic_segment_1ab99d79707a32de2d9a8345c185100835>`() const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`barycenter<doxid-classgeode_1_1_generic_segment_1a325aebd0dcecde4093bf49eeb14a2d56>`() const;
+		double :target:`length<doxid-classgeode_1_1_generic_segment_1a6a28d5813e2f21f6f77bb7237dbc5b6b>`() const;
+		void :target:`set_point<doxid-classgeode_1_1_generic_segment_1a955241cdc70df439d13e73bd7908bb5a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		const std::array<PointType, 2>& :target:`vertices<doxid-classgeode_1_1_generic_segment_1a40802c7444821920a3495499ffd93be8>`() const;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OwnerSegment<doxid-classgeode_1_1_owner_segment>`;
+
+	template <index_t dimension>
+	class :ref:`Segment<doxid-classgeode_1_1_segment>`;

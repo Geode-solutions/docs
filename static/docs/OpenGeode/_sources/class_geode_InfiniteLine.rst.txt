@@ -13,10 +13,10 @@ template class geode::InfiniteLine
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <basic_objects.h>
+	#include <infinite_line.h>
 	
 	template <index_t dimension>
-	class InfiniteLine
+	class InfiniteLine: public :ref:`geode::GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`
 	{
 	public:
 		// construction
@@ -24,12 +24,26 @@ template class geode::InfiniteLine
 		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1afb235364851a11362ede66f171b4635d>`(const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& direction, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin);
 		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1aacdf05212f673ca7bc87c05769ccf798>`(const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment);
 		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1a65fe79bf0153e01da292aebae19f1fb5>`(const InfiniteLine<dimension>& other);
+		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1a16ec14274b2ee61ee39513eee9264a2c>`(const :ref:`OwnerInfiniteLine<doxid-classgeode_1_1_owner_infinite_line>`<dimension>& other);
 		:target:`InfiniteLine<doxid-classgeode_1_1_infinite_line_1a62e3a8657a9de262289e9fec6ec68f05>`(InfiniteLine<dimension>&& other);
 
 		// methods
 	
 		InfiniteLine<dimension>& :target:`operator =<doxid-classgeode_1_1_infinite_line_1ac467d8c12154731443293dd99c27d337>` (const InfiniteLine<dimension>& other);
 		InfiniteLine<dimension>& :target:`operator =<doxid-classgeode_1_1_infinite_line_1a808992a8593f7aed9e5458e5f86d53e2>` (InfiniteLine<dimension>&& other);
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`origin<doxid-classgeode_1_1_infinite_line_1a89898aa638214809eedd44da997f6e31>`() const;
-		const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& :target:`direction<doxid-classgeode_1_1_infinite_line_1a5b37e57723054b63b57a9eb7c2273e79>`() const;
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		:ref:`GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_infinite_line_1a001da72e8691371b0c89acd225b077ce>` (const :ref:`GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`<PointType, dimension>& other);
+		:ref:`GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_infinite_line_1a840910a84c9c70d0fa826da540fe9407>` (:ref:`GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`<PointType, dimension>&& other);
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`origin<doxid-classgeode_1_1_generic_infinite_line_1ab96c5fcd25d1c4305471acba5d92e76d>`() const;
+		const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& :ref:`direction<doxid-classgeode_1_1_generic_infinite_line_1ac7e811fd6a4c3aca8ec8cc757d0a450d>`() const;
+

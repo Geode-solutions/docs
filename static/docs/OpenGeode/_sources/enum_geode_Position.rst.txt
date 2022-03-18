@@ -9,7 +9,7 @@ enum geode::Position
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <basic_objects.h>
+	#include <information.h>
 
 	enum Position
 	{

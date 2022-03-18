@@ -65,7 +65,14 @@ namespace geode
 	class_geode_EdgedCurveOutput.rst
 	class_geode_EraserRange.rst
 	class_geode_Factory.rst
+	class_geode_GenericCircle.rst
+	class_geode_GenericInfiniteLine.rst
 	class_geode_GenericMapping.rst
+	class_geode_GenericPlane.rst
+	class_geode_GenericSegment.rst
+	class_geode_GenericSphere.rst
+	class_geode_GenericTetra.rst
+	class_geode_GenericTriangle.rst
 	class_geode_Graph.rst
 	class_geode_GraphBuilder.rst
 	class_geode_GraphInput.rst
@@ -119,6 +126,13 @@ namespace geode
 	class_geode_OpenGeodeVertexSet.rst
 	class_geode_OpenGeodeVertexSetBuilder.rst
 	class_geode_Output.rst
+	class_geode_OwnerCircle.rst
+	class_geode_OwnerInfiniteLine.rst
+	class_geode_OwnerPlane.rst
+	class_geode_OwnerSegment.rst
+	class_geode_OwnerSphere.rst
+	class_geode_OwnerTetra.rst
+	class_geode_OwnerTriangle.rst
 	class_geode_PImpl.rst
 	class_geode_PassKey.rst
 	class_geode_Plane.rst
@@ -232,9 +246,13 @@ Overview
 	typedef unsigned int :target:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`;
 	typedef int :target:`signed_index_t<doxid-namespacegeode_1a82faef4b63f94932b7ced06209528cdd>`;
 	typedef unsigned char :target:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`;
-	typedef :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension> :target:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`;
-	typedef :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension> :target:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`;
+	typedef std::reference_wrapper<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :target:`RefPoint<doxid-namespacegeode_1a223a5ea637f84c9b765dcbe24e70b5d6>`;
+	typedef :ref:`OwnerCircle<doxid-classgeode_1_1_owner_circle>` :target:`OwnerDisk<doxid-namespacegeode_1a023c4b06375c0b37686e7a8cc26784bf>`;
 	typedef :ref:`Circle<doxid-classgeode_1_1_circle>` :target:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`;
+	typedef :ref:`OwnerInfiniteLine<doxid-classgeode_1_1_owner_infinite_line>`<dimension> :target:`OwnerRay<doxid-namespacegeode_1a7d8a22b87f804685bcc14fd7086711b8>`;
+	typedef :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension> :target:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`;
+	typedef :ref:`OwnerSphere<doxid-classgeode_1_1_owner_sphere>`<dimension> :target:`OwnerBall<doxid-namespacegeode_1a906c3fc39345cc7c489fee57b1316f9d>`;
+	typedef :ref:`Sphere<doxid-classgeode_1_1_sphere>`<dimension> :target:`Ball<doxid-namespacegeode_1a5f85211114c18f5ec987940b9f2aac24>`;
 	typedef :ref:`Side<doxid-namespacegeode_1a0805566e7d9eb8e31ef1d932837fdb1b>` :target:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>`;
 	typedef absl::InlinedVector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`, 2> :target:`EdgesAroundVertex<doxid-namespacegeode_1aab3c9dc52d762219dcc9137475590210>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshImplTag<doxid-structgeode_1_1_mesh_impl_tag>`> :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`;
@@ -408,8 +426,29 @@ Overview
 	template <typename Key, typename BaseClass, typename... Args>
 	class :ref:`Factory<doxid-classgeode_1_1_factory>`;
 
+	template <typename PointType>
+	class :ref:`GenericCircle<doxid-classgeode_1_1_generic_circle>`;
+
+	template <typename PointType, index_t dimension>
+	class :ref:`GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`;
+
 	template <typename T, index_t Capacity>
 	class :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`;
+
+	template <typename PointType>
+	class :ref:`GenericPlane<doxid-classgeode_1_1_generic_plane>`;
+
+	template <typename PointType, index_t dimension>
+	class :ref:`GenericSegment<doxid-classgeode_1_1_generic_segment>`;
+
+	template <typename PointType, index_t dimension>
+	class :ref:`GenericSphere<doxid-classgeode_1_1_generic_sphere>`;
+
+	template <typename PointType>
+	class :ref:`GenericTetra<doxid-classgeode_1_1_generic_tetra>`;
+
+	template <typename PointType, index_t dimension>
+	class :ref:`GenericTriangle<doxid-classgeode_1_1_generic_triangle>`;
 
 	class :ref:`Graph<doxid-classgeode_1_1_graph>`;
 	class :ref:`GraphBuilder<doxid-classgeode_1_1_graph_builder>`;
@@ -532,6 +571,23 @@ Overview
 	class :ref:`OpenGeodeVertexSet<doxid-classgeode_1_1_open_geode_vertex_set>`;
 	class :ref:`OpenGeodeVertexSetBuilder<doxid-classgeode_1_1_open_geode_vertex_set_builder>`;
 	class :ref:`Output<doxid-classgeode_1_1_output>`;
+	class :ref:`OwnerCircle<doxid-classgeode_1_1_owner_circle>`;
+
+	template <index_t dimension>
+	class :ref:`OwnerInfiniteLine<doxid-classgeode_1_1_owner_infinite_line>`;
+
+	class :ref:`OwnerPlane<doxid-classgeode_1_1_owner_plane>`;
+
+	template <index_t dimension>
+	class :ref:`OwnerSegment<doxid-classgeode_1_1_owner_segment>`;
+
+	template <index_t dimension>
+	class :ref:`OwnerSphere<doxid-classgeode_1_1_owner_sphere>`;
+
+	class :ref:`OwnerTetra<doxid-classgeode_1_1_owner_tetra>`;
+
+	template <index_t dimension>
+	class :ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`;
 
 	template <typename T>
 	class :ref:`PImpl<doxid-classgeode_1_1_p_impl>`;
@@ -721,11 +777,11 @@ Overview
 
 	class :ref:`UnzipFile<doxid-classgeode_1_1_unzip_file>`;
 
-	template <>
-	class :ref:`VariableAttribute<bool><doxid-classgeode_1_1_variable_attribute_3_01bool_01_4>`;
-
 	template <typename T>
 	class :ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`;
+
+	template <>
+	class :ref:`VariableAttribute<bool><doxid-classgeode_1_1_variable_attribute_3_01bool_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`Vector<doxid-classgeode_1_1_vector>`;
@@ -814,10 +870,19 @@ Overview
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
 		);
 
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad391ccfd3ec3b37beae6bcc7c210f915>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aacfc981f6de337f0559278ccad9101e0>`(:ref:`RefPoint<doxid-namespacegeode_1a223a5ea637f84c9b765dcbe24e70b5d6>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aeca72f8ebd4bcdafdbbf6d2192939fb1>`(:ref:`OwnerInfiniteLine<doxid-classgeode_1_1_owner_infinite_line>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af576e4f3df4c4713a10c5a5e2842e20a>`(:ref:`OwnerSegment<doxid-classgeode_1_1_owner_segment>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a8c421780195fd0e88f7ff86f6d9970a2>`(:ref:`OwnerInfiniteLine<doxid-classgeode_1_1_owner_infinite_line>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a46c93d7de8cb42c63334569e28c385bd>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6bd5b8618c1a9a6ff0f6c60bb98fe807>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a942c6ff22fb894dd0a43358b52b076ef>`(:ref:`OwnerSegment<doxid-classgeode_1_1_owner_segment>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad391ccfd3ec3b37beae6bcc7c210f915>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afd24b32e35c77b2b7d28e6e402681ff3>`(:ref:`OwnerSphere<doxid-classgeode_1_1_owner_sphere>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abea6b522f3e44b741b8107092efcbd0b>`(:ref:`OwnerSphere<doxid-classgeode_1_1_owner_sphere>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a2ef1614f38ff6bbfa27ffe769235c4ee>`(:ref:`Sphere<doxid-classgeode_1_1_sphere>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a39927e08ed2d6703a8dbfd17781e7a19>`(:ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abb453314061448e9d6ed044da60d6cb6>`(:ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6bd5b8618c1a9a6ff0f6c60bb98fe807>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
 	void opengeode_geometry_api :ref:`register_geometry_serialize_pcontext<doxid-namespacegeode_1a3a8183171407a05faea9c1edfcc12d6f>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_geometry_api :ref:`register_geometry_deserialize_pcontext<doxid-namespacegeode_1a21eee3ab8ab2f094ad300c9755cd6a94>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9ef1e2fd6ef5020023fd9aac662f20c3>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);

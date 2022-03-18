@@ -13,26 +13,40 @@ template class geode::Segment
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <basic_objects.h>
+	#include <segment.h>
 	
 	template <index_t dimension>
-	class Segment
+	class Segment: public :ref:`geode::GenericSegment<doxid-classgeode_1_1_generic_segment>`
 	{
 	public:
 		// construction
 	
 		:target:`Segment<doxid-classgeode_1_1_segment_1a8f57b8f934b015c32cfc148515b83b33>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p0, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p1);
 		:target:`Segment<doxid-classgeode_1_1_segment_1a7bdd9c8de494c8416e1118674200fa67>`(const Segment<dimension>& other);
+		:target:`Segment<doxid-classgeode_1_1_segment_1a399406153d1dece58848900670bdfcc3>`(const :ref:`OwnerSegment<doxid-classgeode_1_1_owner_segment>`<dimension>& other);
 		:target:`Segment<doxid-classgeode_1_1_segment_1aac0b85486474c0b4c223a51d5e589832>`(Segment<dimension>&& other);
 
 		// methods
 	
 		Segment<dimension>& :target:`operator =<doxid-classgeode_1_1_segment_1ab118cbd8239189ce46fa4f24351eeffb>` (const Segment<dimension>& other);
 		Segment<dimension>& :target:`operator =<doxid-classgeode_1_1_segment_1a6b55e40891aaa36109ea79dc0bad14b7>` (Segment<dimension>&& other);
-		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`direction<doxid-classgeode_1_1_segment_1a23cc90ff5fa19c8485969548e0b481e5>`() const;
-		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`normalized_direction<doxid-classgeode_1_1_segment_1aba234680ea52a7703d76b34b0c75737b>`() const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`barycenter<doxid-classgeode_1_1_segment_1ade0c3ea243f0d805a6a2e3963728926a>`() const;
-		double :target:`length<doxid-classgeode_1_1_segment_1ad580754d6023e3a0d47ece06f8ba635b>`() const;
-		void :target:`set_point<doxid-classgeode_1_1_segment_1a7acf900cd93e049ec72e4a771f46a3fb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
-		const std::array<std::reference_wrapper<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>>, 2>& :target:`vertices<doxid-classgeode_1_1_segment_1a1c019bd1f4ddcfdfca37767f0ef735f1>`() const;
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		:ref:`GenericSegment<doxid-classgeode_1_1_generic_segment>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_segment_1a888e1bf85968f36640015926f0873e1e>` (const :ref:`GenericSegment<doxid-classgeode_1_1_generic_segment>`<PointType, dimension>& other);
+		:ref:`GenericSegment<doxid-classgeode_1_1_generic_segment>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_segment_1ac4312e8d2fb2fdca7baea9dfd794c476>` (:ref:`GenericSegment<doxid-classgeode_1_1_generic_segment>`<PointType, dimension>&& other);
+		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :ref:`direction<doxid-classgeode_1_1_generic_segment_1aed9612316cdb41c5b15a58058a9a0765>`() const;
+		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :ref:`normalized_direction<doxid-classgeode_1_1_generic_segment_1ab99d79707a32de2d9a8345c185100835>`() const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`barycenter<doxid-classgeode_1_1_generic_segment_1a325aebd0dcecde4093bf49eeb14a2d56>`() const;
+		double :ref:`length<doxid-classgeode_1_1_generic_segment_1a6a28d5813e2f21f6f77bb7237dbc5b6b>`() const;
+		void :ref:`set_point<doxid-classgeode_1_1_generic_segment_1a955241cdc70df439d13e73bd7908bb5a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		const std::array<PointType, 2>& :ref:`vertices<doxid-classgeode_1_1_generic_segment_1a40802c7444821920a3495499ffd93be8>`() const;
+
