@@ -9,7 +9,6 @@ namespace geode
 
 	enum_geode_CellMeshPattern.rst
 	enum_geode_MacroInfoTag.rst
-	struct_geode_BRepComponentMappings.rst
 	struct_geode_ComponentElement.rst
 	struct_geode_EdgeMacroInfoConfig.rst
 	struct_geode_Mapping.rst
@@ -70,7 +69,6 @@ Overview
 
 	// structs
 
-	struct :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`;
 	struct :ref:`ComponentElement<doxid-structgeode_1_1_component_element>`;
 	struct :ref:`EdgeMacroInfoConfig<doxid-structgeode_1_1_edge_macro_info_config>`;
 
@@ -149,7 +147,6 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);
-	std::tuple<BRep, :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`> geode_backgroundmesh_3d_api :target:`extract_brep<doxid-namespacegeode_1a5acb38b760e5f021cced3d3412f75ed4>`(const :ref:`BackgroundMesh3D<doxid-classgeode_1_1_background_mesh3_d>`& background_mesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(TetrahedralSolid);
 	void geode_backgroundmesh_common_api :target:`initialize_background_mesh_common<doxid-namespacegeode_1ac19bd4b68312a7d6bc88ace7bcb4146b>`();
