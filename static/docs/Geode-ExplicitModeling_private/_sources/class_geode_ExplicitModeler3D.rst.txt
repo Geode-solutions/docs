@@ -28,7 +28,7 @@ Overview
 		// methods
 	
 		void :target:`add_surface<doxid-classgeode_1_1_explicit_modeler3_d_1a6adae4bec7913bfd3f43538b00d2099b>`(const TriangulatedSurface3D& mesh);
-		std::tuple<BRep, BRepComponentMappings> :ref:`build<doxid-classgeode_1_1_explicit_modeler3_d_1afbafdf081d965ac5fb90a64ede990c99>`();
+		std::tuple<BRep, :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`> :ref:`build<doxid-classgeode_1_1_explicit_modeler3_d_1afbafdf081d965ac5fb90a64ede990c99>`();
 	};
 .. _details-classgeode_1_1_explicit_modeler3_d:
 
@@ -46,7 +46,7 @@ Methods
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<BRep, BRepComponentMappings> build()
+	std::tuple<BRep, :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`> build()
 
 Returns the Merged BRep including all the added surfaces and gives the "input to output" and "output to input" mappings between Surfaces
 

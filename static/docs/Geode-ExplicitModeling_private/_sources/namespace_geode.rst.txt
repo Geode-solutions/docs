@@ -7,6 +7,7 @@ namespace geode
 .. toctree::
 	:hidden:
 
+	struct_geode_BRepComponentMappings.rst
 	class_geode_ExplicitModeler3D.rst
 
 
@@ -18,6 +19,10 @@ namespace geode
 	
 	namespace geode {
 
+	// structs
+
+	struct :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`;
+
 	// classes
 
 	class :ref:`ExplicitModeler3D<doxid-classgeode_1_1_explicit_modeler3_d>`;
@@ -28,5 +33,6 @@ namespace geode
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(BoundingBox);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+	std::tuple<BRep, :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`> geode_explicitmodeling_3d_api :target:`extract_brep<doxid-namespacegeode_1a1651f424dae2305b81f65772275bd709>`(const BackgroundMesh3D& background_mesh);
 
 	} // namespace geode
