@@ -37,5 +37,11 @@ Structure holding all the data required for the remeshing algorithm Aliases are 
 		ComponentID :target:`background_id<doxid-structgeode_1_1_remeshing_data_1afe35acfb2d9d3cf9a8efbb62695fa0bd>`(const Component& component) const;
 	
 		template <typename Component>
+		ComponentID :target:`from_background_id<doxid-structgeode_1_1_remeshing_data_1a03a6269bda1e02d00465bd48b03987bc>`(const Component& component) const;
+	
+		template <typename Component>
 		ComponentID :target:`output_id<doxid-structgeode_1_1_remeshing_data_1a9f612ab1090f470762c2cef4d76c02d0>`(const Component& component) const;
+	
+		template <typename Component>
+		ComponentID :target:`from_output_id<doxid-structgeode_1_1_remeshing_data_1a905306b9ebb6fcad288b7b47ee7c8f63>`(const Component& component) const;
 	};
