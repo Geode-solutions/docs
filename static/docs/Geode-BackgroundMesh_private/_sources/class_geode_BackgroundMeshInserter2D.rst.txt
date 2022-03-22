@@ -28,8 +28,7 @@ class geode::BackgroundMeshInserter2D
 		void :target:`insert_line<doxid-classgeode_1_1_background_mesh_inserter2_d_1ab319c697182e863825f98c0980721d4a>`(const Line2D& line);
 		void :target:`insert_curve<doxid-classgeode_1_1_background_mesh_inserter2_d_1aa58b291cdf90171384c2334907311baa>`(const EdgedCurve2D& mesh);
 	
-		void :target:`insert_scalar_function_isovalues<doxid-classgeode_1_1_background_mesh_inserter2_d_1a9dfa8c09bd38301f690127d1b37977bf>`(
-			const RegularGrid2D& grid,
+		void :target:`insert_scalar_function_isovalues_from_background_grid<doxid-classgeode_1_1_background_mesh_inserter2_d_1a538096a3fc49912985f5128fbed6b7c6>`(
 			absl::string_view function_name,
 			absl::Span<const double> isovalues
 			);

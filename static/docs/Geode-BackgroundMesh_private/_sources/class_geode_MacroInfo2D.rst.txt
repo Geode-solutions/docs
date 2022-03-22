@@ -64,6 +64,11 @@ Inherited Members
 		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :ref:`component_edges<doxid-classgeode_1_1_macro_info_1ab352121404da22ce02b100f74b05624b>`(index_t background_mesh_edge) const;
 		std::vector<:ref:`ComponentEdge<doxid-namespacegeode_1a2df2d1482d6257f3d5cc50be76c8152e>`> :ref:`incident_component_edges<doxid-classgeode_1_1_macro_info_1a261a0d1aee37eab558941b60ff7a857a>`(index_t background_mesh_vertex) const;
 	
+		bool :ref:`is_vertex_part_of_component_vertices<doxid-classgeode_1_1_macro_info_1a1e1f101f3d994f2ce8e347a883254b8f>`(
+			index_t background_mesh_vertex,
+			const uuid& mesh_component_id
+			) const;
+	
 		void :ref:`add_component_vertex_to_background_mesh_vertex<doxid-classgeode_1_1_macro_info_1aed9b80736c677ab61406e5832b7d9f6c>`(
 			const uuid& mesh_id,
 			index_t vertex_id,
