@@ -27,7 +27,7 @@ Description of a point in the given dimension with double coordinates
 		// methods
 	
 		double :target:`value<doxid-classgeode_1_1_point_1a32f28003885c0dbac1f8d12321bcfb63>`(:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` index) const;
-		void :target:`set_value<doxid-classgeode_1_1_point_1aea27ec71eb00ea5d95bb0f0d3f35ed33>`(:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` index, double value);
+		void :target:`set_value<doxid-classgeode_1_1_point_1a76e6bba938054072bc57785be9b559a9>`(:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` index, double coordinate);
 		bool :target:`operator ==<doxid-classgeode_1_1_point_1a2ff562e9f09e3b20d292080add63d7c2>` (const Point& other) const;
 		bool :target:`operator !=<doxid-classgeode_1_1_point_1abd314dfc91d0b07692224138294df68c>` (const Point& other) const;
 		Point :target:`operator *<doxid-classgeode_1_1_point_1a0c04a7f5b698a12dcec319f8cff44244>` (double multiplier) const;
