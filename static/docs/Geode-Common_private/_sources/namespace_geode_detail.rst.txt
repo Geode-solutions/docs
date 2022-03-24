@@ -19,21 +19,21 @@ namespace geode::detail
 	// global functions
 
 	template <index_t dimension>
-	std::tuple<Position, Point<dimension>> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1af9132842ac0d7db9548c17013cc24d75>`(
+	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a2e98db8963586adc8bd80aa6573c1bd0>`(
 		const SolidMesh<dimension>& solid,
 		index_t polyhedron,
 		const Point<dimension>& point
 		);
 
 	template <index_t dimension>
-	std::tuple<Position, Point<dimension>> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1aa5c05a99a079d88f9c4fe82c072e6221>`(
+	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a059cf94db25ece8923cb444878742b39>`(
 		const SolidMesh<dimension>& solid,
 		const PolyhedronFacet& facet,
 		const Point<dimension>& point
 		);
 
 	template <index_t dimension>
-	std::tuple<Position, Point<dimension>> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1ac1945e2ee1563343057f561ec34df602>`(
+	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a7f86008e4f61b3099860fdea17fd0727>`(
 		const SurfaceMesh<dimension>& surface,
 		index_t polygon,
 		const Point<dimension>& point
