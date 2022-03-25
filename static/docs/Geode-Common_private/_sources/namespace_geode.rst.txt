@@ -434,7 +434,10 @@ Overview
 		const Line3D& line
 		);
 
-	std::vector<std::pair<MeshComponentVertex, MeshComponentVertex>> geode_common_helpers_api :target:`common_vertices<doxid-namespacegeode_1a62c919c40a7b61ff43951c517f3330fd>`(const std::array<std::vector<MeshComponentVertex>, 2>& vertices);
+	std::vector<std::pair<MeshComponentVertex, MeshComponentVertex>> geode_common_helpers_api :target:`common_vertices<doxid-namespacegeode_1a9bcc5d5b75495e77afbeb355b6b6fab4>`(
+		absl::Span<const MeshComponentVertex> vertex0,
+		absl::Span<const MeshComponentVertex> vertex1
+		);
 
 	template <index_t dimension>
 	std::vector<GridCellIndices<dimension>> :target:`rasterize_segment<doxid-namespacegeode_1ae7018f2c9fa69cbb05d9ea118dfcc50b>`(
