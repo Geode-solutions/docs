@@ -91,6 +91,11 @@ Overview
 
 	Section geode_conversion_model_api :target:`convert_surface_into_section<doxid-namespacegeode_1a82b91748e58ceed17e8283e4fa57f39f>`(const SurfaceMesh2D& surface);
 
+	Section geode_conversion_model_api :ref:`convert_surface_into_section_from_attribute<doxid-namespacegeode_1a4cd6697bea5e1468859e6c1d301eb324>`(
+		SurfaceMesh2D& surface,
+		absl::string_view attribute_name
+		);
+
 	} // namespace geode
 .. _details-namespacegeode:
 
@@ -160,7 +165,7 @@ the BRep and the mapping between input surfaces and Surface uuid. One input surf
 
 	BRep geode_conversion_model_api convert_solid_into_brep_from_adjacencies(const SolidMesh3D& solid)
 
-Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses the adjacencies between solid polyhedra to determine BRep Block extensions and, as a consequence, geometries of BRep Surfaces. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra if there are not set as adjacent.
+Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses the adjacencies between solid polyhedra to determine BRep Block extensions and, as a consequence, geometries of BRep Surfaces. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra if they are not set as adjacent.
 
 
 
@@ -203,4 +208,34 @@ Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribu
 		- attribute_name
 
 		- Name of attribute stored on solid polyhedra @warn Attribute should be convertible to float.
+
+.. index:: pair: function; convert_surface_into_section_from_attribute
+.. _doxid-namespacegeode_1a4cd6697bea5e1468859e6c1d301eb324:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Section geode_conversion_model_api convert_surface_into_section_from_attribute(
+		SurfaceMesh2D& surface,
+		absl::string_view attribute_name
+		)
+
+Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- solid
+
+		- Input solid
+
+	*
+		- attribute_name
+
+		- Name of attribute stored on solid polygons @warn Attribute should be convertible to float.
 

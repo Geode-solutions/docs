@@ -7,7 +7,7 @@ class geode::detail::BRepFromSolidAdjacenciesBuilder
 .. toctree::
 	:hidden:
 
-Class that convert a SolidMesh3D into a BRep with meshed Blocks. Use this class if you want to modify SurfaceMesh3D (representing BRep Surfaces) polygon adjacencies. Else use API function convert_solid_into_brep_from_adjacencies( const SolidMesh3D& solid, BRep& brep )
+Class that converts a SolidMesh3D into a BRep with meshed Blocks. Use this class if you want to modify SurfaceMesh3D (representing BRep Surfaces) polygon adjacencies. Else use API function convert_solid_into_brep_from_adjacencies( const SolidMesh3D& solid, BRep& brep )
 
 
 .. ref-code-block:: cpp

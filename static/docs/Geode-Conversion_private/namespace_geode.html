@@ -112,6 +112,11 @@
 
 <span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a82b91748e58ceed17e8283e4fa57f39f"><span></span><span class="n">convert_surface_into_section</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
 
+<span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a4cd6697bea5e1468859e6c1d301eb324"><span class="std std-ref">convert_surface_into_section_from_attribute</span></a><span></span><span class="p">(</span>
+    <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
+    <span class="p">);</span>
+
 <span class="p">}</span> <span class="c1">// namespace geode</span></pre>
 </section>
 <section id="detailed-documentation">
@@ -149,7 +154,7 @@
 <p class="rubric">Returns:</p>
 <p>the BRep and the mapping between input surfaces and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1acee492fff074e02fa81aebd8aab70e6b"><span id="index-3"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_solid_into_brep_from_adjacencies</span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">)</span></pre>
-<p>Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses the adjacencies between solid polyhedra to determine BRep Block extensions and, as a consequence, geometries of BRep Surfaces. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra if there are not set as adjacent.</p>
+<p>Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses the adjacencies between solid polyhedra to determine BRep Block extensions and, as a consequence, geometries of BRep Surfaces. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra if they are not set as adjacent.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -179,6 +184,26 @@
 </tr>
 <tr class="row-even"><td><p>attribute_name</p></td>
 <td><p>Name of attribute stored on solid polyhedra &#64;warn Attribute should be convertible to float.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4cd6697bea5e1468859e6c1d301eb324"><span id="index-5"></span><span></span><span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surface_into_section_from_attribute</span><span class="p">(</span>
+    <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
+    <span class="p">)</span></pre>
+<p>Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>solid</p></td>
+<td><p>Input solid</p></td>
+</tr>
+<tr class="row-even"><td><p>attribute_name</p></td>
+<td><p>Name of attribute stored on solid polygons &#64;warn Attribute should be convertible to float.</p></td>
 </tr>
 </tbody>
 </table>
