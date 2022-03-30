@@ -73,6 +73,11 @@ Inherited Members
 			MacroInfoKey
 			);
 	
+		static void :ref:`clean_bmesh_attributes<doxid-classgeode_1_1_macro_info_1a82fd2dc98075d2c4713f9a4407cddfd7>`(
+			AttributeManager& mesh_vertex_attribute_manager,
+			AttributeManager& mesh_edge_attribute_manager
+			);
+	
 		std::vector<:ref:`ComponentFacet<doxid-namespacegeode_1a565f96916671cc61257ab36f9e55a2e1>`> :ref:`component_facets<doxid-classgeode_1_1_macro_info3_d_1ab4f2c6dcc12e2f6a0d8012d253ace3d2>`(index_t background_mesh_facet) const;
 		std::vector<:ref:`ComponentFacet<doxid-namespacegeode_1a565f96916671cc61257ab36f9e55a2e1>`> :ref:`incident_component_facets<doxid-classgeode_1_1_macro_info3_d_1a168dfb3f684530ef93f25da97ce7319e>`(index_t background_mesh_vertex) const;
 	

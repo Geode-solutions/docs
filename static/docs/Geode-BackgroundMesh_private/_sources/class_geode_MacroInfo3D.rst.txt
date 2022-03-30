@@ -106,4 +106,9 @@ Inherited Members
 			absl::Span<const index_t> bmesh_vertex_ids,
 			MacroInfoKey
 			);
+	
+		static void :ref:`clean_bmesh_attributes<doxid-classgeode_1_1_macro_info_1a82fd2dc98075d2c4713f9a4407cddfd7>`(
+			AttributeManager& mesh_vertex_attribute_manager,
+			AttributeManager& mesh_edge_attribute_manager
+			);
 
