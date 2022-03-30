@@ -24,6 +24,7 @@ Overview
 	public:
 		// construction
 	
+		:target:`SolidFacets<doxid-classgeode_1_1_solid_facets_1aa169816297daad4e075faed9e2ebb70b>`();
 		:target:`SolidFacets<doxid-classgeode_1_1_solid_facets_1a60f17d6e481ba74efc55a9ce25671de2>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid);
 
 		// methods

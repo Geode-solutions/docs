@@ -169,7 +169,9 @@ Inherited Members
 			) const;
 	
 		:ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`<dimension>& :ref:`edges<doxid-classgeode_1_1_solid_mesh_1a6399afdca9d36a7c4a57a81e2e1f710f>`(SolidMeshKey);
+		void :ref:`copy_edges<doxid-classgeode_1_1_solid_mesh_1aa84e08b45f0845df7c44ac9b68832529>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid, SolidMeshKey);
 		:ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`<dimension>& :ref:`facets<doxid-classgeode_1_1_solid_mesh_1a554458d09cda9713a506dbb7656d8354>`(SolidMeshKey);
+		void :ref:`copy_facets<doxid-classgeode_1_1_solid_mesh_1affa8d0b9f64b256ae7e83e63c63ef61c>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid, SolidMeshKey);
 		static std::unique_ptr<:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>> :ref:`create<doxid-classgeode_1_1_hybrid_solid_1a80111f91fca9c9c197dd6a843ad0564f>`();
 		static std::unique_ptr<:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>> :ref:`create<doxid-classgeode_1_1_hybrid_solid_1a66dc518d042d50fc19e25f92141961e4>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
 		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :ref:`type_name_static<doxid-classgeode_1_1_hybrid_solid_1aa1ac2cf0e6ff90b56adbfbe8d2ca68bc>`();

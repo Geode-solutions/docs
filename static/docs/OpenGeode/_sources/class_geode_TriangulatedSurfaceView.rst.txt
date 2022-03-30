@@ -139,6 +139,7 @@ Inherited Members
 			);
 	
 		:ref:`SurfaceEdges<doxid-classgeode_1_1_surface_edges>`<dimension>& :ref:`edges<doxid-classgeode_1_1_surface_mesh_1aef243d0635132356851e33e1b0c36434>`(SurfaceMeshKey);
+		void :ref:`copy_edges<doxid-classgeode_1_1_surface_mesh_1ac48ea2693048d934a917e97ff1838b86>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface_mesh, SurfaceMeshKey);
 		static std::unique_ptr<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :ref:`create<doxid-classgeode_1_1_surface_mesh_1a4060a0918b99fc341081d094f4266edf>`();
 		static std::unique_ptr<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :ref:`create<doxid-classgeode_1_1_surface_mesh_1a283198577ed6d4c6009d91ccd95513b7>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
 		static std::unique_ptr<:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>> :ref:`create<doxid-classgeode_1_1_triangulated_surface_1a8f9db3c25bcc18d4a963071811dfc04b>`();

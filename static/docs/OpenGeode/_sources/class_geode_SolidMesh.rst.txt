@@ -112,7 +112,9 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 			) const;
 	
 		:ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`<dimension>& :target:`edges<doxid-classgeode_1_1_solid_mesh_1a6399afdca9d36a7c4a57a81e2e1f710f>`(SolidMeshKey);
+		void :target:`copy_edges<doxid-classgeode_1_1_solid_mesh_1aa84e08b45f0845df7c44ac9b68832529>`(const SolidMesh<dimension>& solid, SolidMeshKey);
 		:ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`<dimension>& :target:`facets<doxid-classgeode_1_1_solid_mesh_1a554458d09cda9713a506dbb7656d8354>`(SolidMeshKey);
+		void :target:`copy_facets<doxid-classgeode_1_1_solid_mesh_1affa8d0b9f64b256ae7e83e63c63ef61c>`(const SolidMesh<dimension>& solid, SolidMeshKey);
 	};
 
 	// direct descendants

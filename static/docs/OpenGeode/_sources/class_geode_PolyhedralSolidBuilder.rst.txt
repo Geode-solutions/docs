@@ -25,7 +25,7 @@ Interface class to represent the builder of a :ref:`PolyhedralSolid <doxid-class
 		// methods
 	
 		static std::unique_ptr<PolyhedralSolidBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_polyhedral_solid_builder_1a7bda3be99351d67a661f0ceb9a6e776c>`(:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& mesh);
-		void :target:`copy<doxid-classgeode_1_1_polyhedral_solid_builder_1a5de55b086657ef0069ed34f379efe791>`(const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid, BuilderKey);
+		void :target:`copy<doxid-classgeode_1_1_polyhedral_solid_builder_1a3b6088cb4af4d544f26fb06f81644737>`(const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid);
 	};
 
 	// direct descendants
@@ -87,7 +87,7 @@ Inherited Members
 			);
 	
 		void :ref:`disassociate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_solid_mesh_builder_1ada24ba26ccc6c9e3dff028de0e37606a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
-		void :ref:`copy<doxid-classgeode_1_1_solid_mesh_builder_1af79edca495dfb0bed0bbdaf464681950>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid_mesh, BuilderKey);
+		void :ref:`copy<doxid-classgeode_1_1_solid_mesh_builder_1adce151dbceb7a5691168a72d21e2e687>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid_mesh);
 
 .. _details-classgeode_1_1_polyhedral_solid_builder:
 

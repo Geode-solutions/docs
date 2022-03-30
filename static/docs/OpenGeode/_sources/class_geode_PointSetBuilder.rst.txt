@@ -27,7 +27,7 @@ Interface class to represent the builder of a :ref:`PointSet <doxid-classgeode_1
 		static std::unique_ptr<PointSetBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_builder_1ab5c00c0739ace9a3125e0f1daf1e44ee>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh);
 		void :ref:`set_point<doxid-classgeode_1_1_point_set_builder_1a3f2f23e0415984ab546ea0350e0e343a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_point_set_builder_1a00aa71ee29025486d00b8b481527246a>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
-		void :target:`copy<doxid-classgeode_1_1_point_set_builder_1a71cd6f1391d6a010d7d0728d3b7c40c7>`(const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set, BuilderKey);
+		void :target:`copy<doxid-classgeode_1_1_point_set_builder_1a038cabf86674285953ecf3527728e22d>`(const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set);
 	};
 
 	// direct descendants

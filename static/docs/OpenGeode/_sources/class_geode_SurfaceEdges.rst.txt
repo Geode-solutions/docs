@@ -24,6 +24,7 @@ Overview
 	public:
 		// construction
 	
+		:target:`SurfaceEdges<doxid-classgeode_1_1_surface_edges_1a18feec3765c829bd5b7eb40844bb8343>`();
 		:target:`SurfaceEdges<doxid-classgeode_1_1_surface_edges_1aa09ce5535340dccb6b16eb4c3b9628e5>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface);
 
 		// methods
