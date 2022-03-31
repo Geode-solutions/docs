@@ -1162,6 +1162,7 @@ Overview
 	template <index_t dimension>
 	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1ab8ef3e331d6a87e8d072ae4e7d473eaa>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh);
 
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a09e5e2ee9a47e15d877cc2593aad4911>`(:ref:`DistanceToTriangle<doxid-classgeode_1_1_distance_to_triangle>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`);
 	absl::optional<std::unique_ptr<TetrahedralSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_tetrahedral_solid<doxid-namespacegeode_1ad88abdc0180700dd94d4dc05d56f4149>`(const SolidMesh3D& solid);
 
