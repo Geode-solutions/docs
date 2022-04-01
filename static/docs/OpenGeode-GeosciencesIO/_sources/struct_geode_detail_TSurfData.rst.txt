@@ -19,7 +19,7 @@ struct geode::detail::TSurfData
 	{
 		// fields
 	
-		static constexpr index_t :target:`OFFSET_START<doxid-structgeode_1_1detail_1_1_t_surf_data_1af2001fb432f1ffd3f896b284afcedefa>` { 1 };
+		index_t :target:`OFFSET_START<doxid-structgeode_1_1detail_1_1_t_surf_data_1a1afcc2c33b7c2be0c74423fee2325fb6>` { 1 };
 		:ref:`HeaderData<doxid-structgeode_1_1detail_1_1_header_data>` :target:`header<doxid-structgeode_1_1detail_1_1_t_surf_data_1a2ac5a348467d49f649b8d347843da30e>`;
 		:ref:`CRSData<doxid-structgeode_1_1detail_1_1_c_r_s_data>` :target:`crs<doxid-structgeode_1_1detail_1_1_t_surf_data_1a6560944d03c9c4b80806d1211565b473>`;
 		std::deque<Point3D> :target:`points<doxid-structgeode_1_1detail_1_1_t_surf_data_1ab7796b24af50a71f451ed0027de46c1f>`;
