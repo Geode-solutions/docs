@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>class geode::detail::SectionSurfacesTopologyImpl &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::detail::VertexCycle" href="class_geode_detail_VertexCycle.html" />
+    <link rel="prev" title="class geode::detail::SectionLinesTopologyImpl" href="class_geode_detail_SectionLinesTopologyImpl.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-geode-detail-sectionsurfacestopologyimpl">
+<span id="doxid-classgeode-1-1detail-1-1-section-surfaces-topology-impl"></span><span id="index-0"></span><h1>class geode::detail::SectionSurfacesTopologyImpl</h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview</h2>
+<p>Class for inspecting the topology of a Section model surfaces through its unique vertices <a class="reference internal" href="#details-classgeode-1-1detail-1-1-section-surfaces-topology-impl"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;section_surfaces_topology_impl.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">SectionSurfacesTopologyImpl</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-section-surfaces-topology-impl-1a7f10ff8095228eba72052eca0f0f93ea"><span></span><span class="n">SectionSurfacesTopologyImpl</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-classgeode-1-1detail-1-1-section-surfaces-topology-impl-1a69462cb9d7953a994103ad2757faedc3"><span class="std std-ref">section_vertex_surfaces_topology_is_valid</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex_index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+<section id="detailed-documentation">
+<span id="details-classgeode-1-1detail-1-1-section-surfaces-topology-impl"></span><h2>Detailed Documentation</h2>
+<p>Class for inspecting the topology of a Section model surfaces through its unique vertices</p>
+<section id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1detail-1-1-section-surfaces-topology-impl-1a69462cb9d7953a994103ad2757faedc3"><span id="index-1"></span><span></span><span class="kt">bool</span> <span class="n">section_vertex_surfaces_topology_is_valid</span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex_index</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Checks if the section unique vertices are parts of valid surfaces, i.e. verify: If a unique vertex is part of two surfaces, it is part of a least one line which is boundary of the two blocks.</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_detail_SectionSurfacesTopologyImpl.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

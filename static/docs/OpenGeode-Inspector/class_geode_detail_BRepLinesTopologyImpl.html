@@ -65,7 +65,7 @@
 <section id="methods">
 <h3>Methods</h3>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1detail-1-1-b-rep-lines-topology-impl-1a45c923179b8e48e0e0fc7b2005cbffd9"><span id="index-1"></span><span></span><span class="kt">bool</span> <span class="n">brep_vertex_lines_topology_is_valid</span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex_index</span><span class="p">)</span> <span class="k">const</span></pre>
-<p>Checks if the brep unique vertices are parts of valid lines, i.e. verify: Each line is either internal or boundary. Each internal line is internal to only one object and is not boundary. If the vertex is part of only one line, the line is either internal to a surface, internal to a block, or a boundary of multiple surfaces. If the vertex is part of multiple lines, it is also a corner.</p>
+<p>Checks if the brep unique vertices are parts of valid lines, i.e. verify: Each line is either internal or boundary. If a line is internal to an object, it cannot be incident to it. If the vertex is part of only one line, the line is either internal to a surface, internal to a block, or a boundary of multiple surfaces. If the vertex is part of multiple lines, it is also a corner.</p>
 </section>
 </section>
 </section>

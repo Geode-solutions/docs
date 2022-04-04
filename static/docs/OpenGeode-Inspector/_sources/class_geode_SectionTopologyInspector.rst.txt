@@ -1,0 +1,66 @@
+.. index:: pair: class; geode::SectionTopologyInspector
+.. _doxid-classgeode_1_1_section_topology_inspector:
+
+class geode::SectionTopologyInspector
+=====================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Class for inspecting the topology of a Section model corners :ref:`More...<details-classgeode_1_1_section_topology_inspector>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_topology.h>
+	
+	class SectionTopologyInspector
+	{
+	public:
+		// construction
+	
+		:target:`SectionTopologyInspector<doxid-classgeode_1_1_section_topology_inspector_1a009bc7a8da28597f9f4afa38df87bfb3>`(const Section& section);
+
+		// methods
+	
+		bool :ref:`section_topology_is_valid<doxid-classgeode_1_1_section_topology_inspector_1abc8d7888f9ab7c9caa0741e89368b784>`() const;
+		bool :target:`section_meshed_components_are_linked_to_a_unique_vertex<doxid-classgeode_1_1_section_topology_inspector_1a14516a3d263f886a979f3ce5c08ece94>`() const;
+		index_t :target:`nb_corners_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_section_topology_inspector_1aae293b8ed52b77062e395c8b4b818140>`() const;
+		index_t :target:`nb_lines_meshed_but_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_section_topology_inspector_1a5e2e37cd471f157e050af78040574c0a>`() const;
+		index_t :target:`nb_surfaces_meshed_but_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_section_topology_inspector_1ab14219a5f3d9f99324f2a85ac34b8fea>`() const;
+		std::vector<index_t> :target:`invalid_components_topology_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a284df216c7a8520ebc1ce6498ff21790>`() const;
+		std::vector<index_t> :target:`multiple_corners_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a76fff8ef50b5624dd0144c76b08aec62>`() const;
+		std::vector<index_t> :target:`multiple_internals_corner_vertices<doxid-classgeode_1_1_section_topology_inspector_1a1fc7ea891ec1eeba7551f4175bf39439>`() const;
+		std::vector<index_t> :target:`not_internal_nor_boundary_corner_vertices<doxid-classgeode_1_1_section_topology_inspector_1a481668a7e5433d422dcb4f0edfbb8ead>`() const;
+		std::vector<index_t> :target:`internal_with_multiple_incidences_corner_vertices<doxid-classgeode_1_1_section_topology_inspector_1ade533fe56417a7573039974de412cfdd>`() const;
+		std::vector<index_t> :target:`line_corners_without_boundary_status<doxid-classgeode_1_1_section_topology_inspector_1ad90d53b7e301e73431201d153ef8c647>`() const;
+		std::vector<index_t> :target:`part_of_not_boundary_nor_internal_line_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a20403b9086b8d2245670008e4fea3f28>`() const;
+		std::vector<index_t> :target:`part_of_line_with_invalid_internal_topology_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a4b7a54c9a09f7cadea7585ebe4b16055>`() const;
+		std::vector<index_t> :target:`part_of_invalid_unique_line_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1ad4bf82af64d29670e4e59808fd07c129>`() const;
+		std::vector<index_t> :target:`part_of_lines_but_not_corner_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a54916a5b0abdc94e72a080a843d2f47f>`() const;
+		std::vector<index_t> :target:`part_of_invalid_surfaces_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a944adab229a619043c2cecd04fccf038>`() const;
+	};
+.. _details-classgeode_1_1_section_topology_inspector:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Class for inspecting the topology of a Section model corners
+
+Methods
+-------
+
+.. index:: pair: function; section_topology_is_valid
+.. _doxid-classgeode_1_1_section_topology_inspector_1abc8d7888f9ab7c9caa0741e89368b784:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool section_topology_is_valid() const
+
+Checks if the section is topologically valid through the unique vertices.
+

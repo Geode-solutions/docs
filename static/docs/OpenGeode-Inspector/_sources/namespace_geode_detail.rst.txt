@@ -13,6 +13,9 @@ namespace geode::detail
 	class_geode_detail_BRepSurfacesTopologyImpl.rst
 	class_geode_detail_ColocationImpl.rst
 	class_geode_detail_DegenerationImpl.rst
+	class_geode_detail_SectionCornersTopologyImpl.rst
+	class_geode_detail_SectionLinesTopologyImpl.rst
+	class_geode_detail_SectionSurfacesTopologyImpl.rst
 	class_geode_detail_VertexCycle.rst
 
 
@@ -36,6 +39,10 @@ namespace geode::detail
 
 	template <typename Mesh>
 	class :ref:`DegenerationImpl<doxid-classgeode_1_1detail_1_1_degeneration_impl>`;
+
+	class :ref:`SectionCornersTopologyImpl<doxid-classgeode_1_1detail_1_1_section_corners_topology_impl>`;
+	class :ref:`SectionLinesTopologyImpl<doxid-classgeode_1_1detail_1_1_section_lines_topology_impl>`;
+	class :ref:`SectionSurfacesTopologyImpl<doxid-classgeode_1_1detail_1_1_section_surfaces_topology_impl>`;
 
 	template <typename Container>
 	class :ref:`VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`;

@@ -1,0 +1,51 @@
+.. index:: pair: class; geode::detail::SectionSurfacesTopologyImpl
+.. _doxid-classgeode_1_1detail_1_1_section_surfaces_topology_impl:
+
+class geode::detail::SectionSurfacesTopologyImpl
+================================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Class for inspecting the topology of a Section model surfaces through its unique vertices :ref:`More...<details-classgeode_1_1detail_1_1_section_surfaces_topology_impl>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_surfaces_topology_impl.h>
+	
+	class SectionSurfacesTopologyImpl
+	{
+	public:
+		// construction
+	
+		:target:`SectionSurfacesTopologyImpl<doxid-classgeode_1_1detail_1_1_section_surfaces_topology_impl_1a7f10ff8095228eba72052eca0f0f93ea>`(const Section& section);
+
+		// methods
+	
+		bool :ref:`section_vertex_surfaces_topology_is_valid<doxid-classgeode_1_1detail_1_1_section_surfaces_topology_impl_1a69462cb9d7953a994103ad2757faedc3>`(index_t unique_vertex_index) const;
+	};
+.. _details-classgeode_1_1detail_1_1_section_surfaces_topology_impl:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Class for inspecting the topology of a Section model surfaces through its unique vertices
+
+Methods
+-------
+
+.. index:: pair: function; section_vertex_surfaces_topology_is_valid
+.. _doxid-classgeode_1_1detail_1_1_section_surfaces_topology_impl_1a69462cb9d7953a994103ad2757faedc3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool section_vertex_surfaces_topology_is_valid(index_t unique_vertex_index) const
+
+Checks if the section unique vertices are parts of valid surfaces, i.e. verify: If a unique vertex is part of two surfaces, it is part of a least one line which is boundary of the two blocks.
+

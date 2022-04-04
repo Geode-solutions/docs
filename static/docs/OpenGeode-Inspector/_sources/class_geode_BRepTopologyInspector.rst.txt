@@ -37,6 +37,7 @@ Class for inspecting the topology of a BRep model corners :ref:`More...<details-
 		std::vector<index_t> :target:`multiple_corners_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a432fb1e6149214de9cc6a7e8f159fbc7>`() const;
 		std::vector<index_t> :target:`multiple_internals_corner_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1afda3f1e5e1c5e8df59f1a0a0c8405a48>`() const;
 		std::vector<index_t> :target:`not_internal_nor_boundary_corner_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1af09480661195dcf8c0b2e64ba39a256d>`() const;
+		std::vector<index_t> :target:`internal_with_multiple_incidences_corner_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a73f223cc3339e5a70b486f9cd65f8b73>`() const;
 		std::vector<index_t> :target:`line_corners_without_boundary_status<doxid-classgeode_1_1_b_rep_topology_inspector_1ace1cca4d2ed3d3af69a4d469ae15d89d>`() const;
 		std::vector<index_t> :target:`part_of_not_boundary_nor_internal_line_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a6bc37a8a86c8ce347b2e55856e50cc6d>`() const;
 		std::vector<index_t> :target:`part_of_line_with_invalid_internal_topology_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1ab4f23d801217d3eb7f337c33f079fe1c>`() const;

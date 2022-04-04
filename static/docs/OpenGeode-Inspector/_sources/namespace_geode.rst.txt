@@ -12,6 +12,7 @@ namespace geode
 	class_geode_EdgedCurveColocation.rst
 	class_geode_EdgedCurveDegeneration.rst
 	class_geode_PointSetColocation.rst
+	class_geode_SectionTopologyInspector.rst
 	class_geode_SolidMeshColocation.rst
 	class_geode_SolidMeshDegeneration.rst
 	class_geode_SurfaceMeshAdjacency.rst
@@ -45,6 +46,8 @@ namespace geode
 
 	template <index_t dimension>
 	class :ref:`PointSetColocation<doxid-classgeode_1_1_point_set_colocation>`;
+
+	class :ref:`SectionTopologyInspector<doxid-classgeode_1_1_section_topology_inspector>`;
 
 	template <index_t dimension>
 	class :ref:`SolidMeshColocation<doxid-classgeode_1_1_solid_mesh_colocation>`;
