@@ -76,7 +76,8 @@ export default {
         { title: 'Geode-Conversion', to: '/geode-conversion' },
         { title: 'Geode-Parameterization', to: '/geode-parameterization' },
         { title: 'Geode-SimplexRemesh', to: '/geode-simplexremesh' },
-        { title: 'Geode-SimplexRemeshGeosciences', to: '/geode-simplexremeshgeosciences' }
+        { title: 'Geode-SimplexRemeshGeosciences', to: '/geode-simplexremeshgeosciences' },
+        { title: 'Geode-ExplicitModeling', to: '/geode-explicitmodeling' }
       ]
     }
   }
