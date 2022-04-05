@@ -19,5 +19,5 @@ struct geode::SectionComponentMappings
 	{
 		// fields
 	
-		GenericMapping<uuid, 1> :target:`lines<doxid-structgeode_1_1_section_component_mappings_1a12e1589fd5e6a4dccc7a7e2fe811d715>`;
+		GenericMapping<uuid> :target:`lines<doxid-structgeode_1_1_section_component_mappings_1aa59f797d1ed7c698664831c36d18e034>`;
 	};
