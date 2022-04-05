@@ -1,0 +1,30 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+	class_geode_ScalarFunctionExpliciter2D.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// classes
+
+	class :ref:`ScalarFunctionExpliciter2D<doxid-classgeode_1_1_scalar_function_expliciter2_d>`;
+
+	// global functions
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
+	:target:`ALIAS_2D<doxid-namespacegeode_1adaf39f90e9bc108a983f1600fb5f37d1>`(RegularGrid);
+
+	} // namespace geode
