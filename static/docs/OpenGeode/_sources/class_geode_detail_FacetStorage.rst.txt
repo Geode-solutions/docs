@@ -9,18 +9,3 @@ template class geode::detail::FacetStorage
 
 
 
-
-.. ref-code-block:: cpp
-	:class: doxyrest-overview-code-block
-
-	#include <facet_storage.h>
-	
-	template <typename VertexContainer>
-	class FacetStorage
-	{
-	};
-
-	// direct descendants
-
-	template <index_t dimension>
-	class :ref:`FacetEdgesImpl<doxid-classgeode_1_1detail_1_1_facet_edges_impl>`;
