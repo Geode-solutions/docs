@@ -32,10 +32,10 @@ AABB tree structure implementation The tree is store in s single vector followin
 		// methods
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_bboxes<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a5931e3f90255df24d747b34aa38a9bdb>`() const;
-		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& :target:`node<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1aa20e64c08bb5baebd2c837041ac1a101>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` i) const;
-		void :target:`set_node<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a6ce146305ba58c0a24fa0f17dbd0fe7a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` i, const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box);
-		void :target:`add_box<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a8c9795672b9081af2b60e533b8c0f112>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` i, const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box);
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`mapping_morton<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1aaca42adfea4e9edd8d09283b5c5de7a0>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` i) const;
+		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& :target:`node<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a16e15f764b7c6c97be727c6b60855a62>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
+		void :target:`set_node<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1ae9c093fe9ba72709ae525b3afe9100a1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index, const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box);
+		void :target:`add_box<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a831ba57e2e745eec832ae19569f7e8c1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index, const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`mapping_morton<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a76c91f388a7b4b0f2580a465f4b306a0>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`max_node_index<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a99c98181116e8b2fcfda1a16e2c6e10c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` box_begin, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` box_end) const;
 	
 		void :ref:`initialize_tree_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1ad8f7a688bc0d10bdbcc8ee41321732b9>`(
@@ -71,6 +71,18 @@ AABB tree structure implementation The tree is store in s single vector followin
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index1,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin1,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end1,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index2,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin2,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end2,
+			ACTION& action
+			) const;
+	
+		template <class ACTION>
+		void :target:`other_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a2e113823ceab581c463068468b231349>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index1,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin1,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end1,
+			const :ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension>& other_tree,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index2,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin2,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end2,

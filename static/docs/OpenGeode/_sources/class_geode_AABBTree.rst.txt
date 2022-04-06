@@ -7,6 +7,7 @@ template class geode::AABBTree
 .. toctree::
 	:hidden:
 
+	struct_geode_AABBTree_Iterator.rst
 	class_geode_AABBTree_Impl.rst
 
 Overview
@@ -24,6 +25,10 @@ Overview
 	class AABBTree
 	{
 	public:
+		// structs
+	
+		struct :ref:`Iterator<doxid-structgeode_1_1_a_a_b_b_tree_1_1_iterator>`;
+
 		// classes
 	
 		class :ref:`Impl<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl>`;
@@ -36,6 +41,7 @@ Overview
 		// methods
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_bboxes<doxid-classgeode_1_1_a_a_b_b_tree_1a279a079000abc4d4319b8dfce24ec5cf>`() const;
+		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& :target:`bounding_box<doxid-classgeode_1_1_a_a_b_b_tree_1afe20612e9621aa930458d1d9878b9745>`() const;
 	
 		template <typename EvalDistance>
 		std::tuple<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>, double> :ref:`closest_element_box<doxid-classgeode_1_1_a_a_b_b_tree_1a3cc03c54455ea2e519b4d336e53e9689>`(
@@ -51,6 +57,12 @@ Overview
 	
 		template <class EvalIntersection>
 		void :ref:`compute_self_element_bbox_intersections<doxid-classgeode_1_1_a_a_b_b_tree_1a1265a269f8b687b6f199af13b7c4e0b4>`(EvalIntersection& action) const;
+	
+		template <class EvalIntersection>
+		void :ref:`compute_other_element_bbox_intersections<doxid-classgeode_1_1_a_a_b_b_tree_1a7cb13bb10021dc9fe5b9044b603136da>`(
+			const AABBTree<dimension>& other_tree,
+			EvalIntersection& action
+			) const;
 	
 		template <class EvalIntersection>
 		void :ref:`compute_ray_element_bbox_intersections<doxid-classgeode_1_1_a_a_b_b_tree_1a557f99f2a9fa9cb159c8508660694d05>`(
@@ -119,7 +131,7 @@ This value should match the initial size of the container that store all objects
 
 Gets the closest element to a point.
 
-if several elements box cannot be discriminate by the distance computation one of them will be randomly retuned.
+if several elements box match the distance computation, then one of them will be randomly returned.
 
 
 
@@ -142,7 +154,7 @@ if several elements box cannot be discriminate by the distance computation one o
 		- EvalDistance
 
 		- 
-		  this functor should have an operator() defined like this: std::tuple< double, Point< dimension > > operator()( const Point< dimension >& query, index_t curent_element_box ) const ; the output tuple contain
+		  this functor should have an operator() defined like this: std::tuple< double, Point< dimension > > operator()( const Point< dimension >& query, index_t curent_element_box ) const ; the output tuple contains
 		  
 		  * a double to store the distance between the point ``query`` and the element stored in the ``curent_element_box``.
 		  
@@ -212,6 +224,39 @@ Computes the self intersections of the element boxes.
 cur_element_box1 and cur_element_box2 are the element box indices that intersect.
 
 the operator defines what to do when two boxes of the tree (``cur_element_box1`` and ``cur_element_box2``) intesect each other (for example: test real intersection between each element in boxes and store the result.)
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- action
+
+		- The functor to run when two boxes intersect
+
+	*
+		- EvalIntersection
+
+		- this functor should have an operator() defined like this: void operator()( index_t cur_element_box1, index_t cur_element_box2 ) ;
+
+.. index:: pair: function; compute_other_element_bbox_intersections
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1a7cb13bb10021dc9fe5b9044b603136da:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <class EvalIntersection>
+	void compute_other_element_bbox_intersections(
+		const AABBTree<dimension>& other_tree,
+		EvalIntersection& action
+		) const
+
+Computes all the intersections of the element boxes between this tree and another one.
+
+cur_element_box1 and cur_element_box2 are the element box indices that intersect in the current tree and in the other tree.
 
 
 

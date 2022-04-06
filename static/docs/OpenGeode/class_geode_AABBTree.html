@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::AABBTree::Impl" href="class_geode_AABBTree_Impl.html" />
+    <link rel="next" title="struct geode::AABBTree::Iterator" href="struct_geode_AABBTree_Iterator.html" />
     <link rel="prev" title="struct geode::uuid" href="struct_geode_uuid.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -46,6 +46,10 @@
 <span class="k">class</span> <span class="n">AABBTree</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// structs</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_AABBTree_Iterator.html#doxid-structgeode-1-1-a-a-b-b-tree-1-1-iterator"><span class="std std-ref">Iterator</span></a><span></span><span class="p">;</span>
+
     <span class="c1">// classes</span>
 
     <span class="k">class</span> <a class="reference internal" href="class_geode_AABBTree_Impl.html#doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl"><span class="std std-ref">Impl</span></a><span></span><span class="p">;</span>
@@ -58,6 +62,7 @@
     <span class="c1">// methods</span>
 
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a279a079000abc4d4319b8dfce24ec5cf"><span class="std std-ref">nb_bboxes</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1afe20612e9621aa930458d1d9878b9745"><span></span><span class="n">bounding_box</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">EvalDistance</span><span class="o">&gt;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a3cc03c54455ea2e519b4d336e53e9689"><span class="std std-ref">closest_element_box</span></a><span></span><span class="p">(</span>
@@ -73,6 +78,12 @@
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a1265a269f8b687b6f199af13b7c4e0b4"><span class="std std-ref">compute_self_element_bbox_intersections</span></a><span></span><span class="p">(</span><span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a7cb13bb10021dc9fe5b9044b603136da"><span class="std std-ref">compute_other_element_bbox_intersections</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">AABBTree</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">other_tree</span><span class="p">,</span>
+        <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a557f99f2a9fa9cb159c8508660694d05"><span class="std std-ref">compute_ray_element_bbox_intersections</span></a><span></span><span class="p">(</span>
@@ -111,7 +122,7 @@
     <span class="k">const</span> <span class="n">EvalDistance</span><span class="o">&amp;</span> <span class="n">action</span>
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Gets the closest element to a point.</p>
-<p>if several elements box cannot be discriminate by the distance computation one of them will be randomly retuned.</p>
+<p>if several elements box match the distance computation, then one of them will be randomly returned.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -126,7 +137,7 @@
 <td><p>the functor to compute the distance between the <code class="docutils literal notranslate"><span class="pre">query</span></code> and the tree element in boxes</p></td>
 </tr>
 <tr class="row-odd"><td><p>EvalDistance</p></td>
-<td><p>this functor should have an operator() defined like this: std::tuple&lt; double, Point&lt; dimension &gt; &gt; operator()( const Point&lt; dimension &gt;&amp; query, index_t curent_element_box ) const ; the output tuple contain</p>
+<td><p>this functor should have an operator() defined like this: std::tuple&lt; double, Point&lt; dimension &gt; &gt; operator()( const Point&lt; dimension &gt;&amp; query, index_t curent_element_box ) const ; the output tuple contains</p>
 <ul class="simple">
 <li><p>a double to store the distance between the point <code class="docutils literal notranslate"><span class="pre">query</span></code> and the element stored in the <code class="docutils literal notranslate"><span class="pre">curent_element_box</span></code>.</p></li>
 <li><p>a Point&lt; dimension &gt; to store the nearest point from <code class="docutils literal notranslate"><span class="pre">query</span></code> on the object stored in the <code class="docutils literal notranslate"><span class="pre">curent_element_box</span></code>.</p></li>
@@ -187,7 +198,29 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-a-a-b-b-tree-1a557f99f2a9fa9cb159c8508660694d05"><span id="index-6"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-a-a-b-b-tree-1a7cb13bb10021dc9fe5b9044b603136da"><span id="index-6"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">compute_other_element_bbox_intersections</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">AABBTree</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">other_tree</span><span class="p">,</span>
+    <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Computes all the intersections of the element boxes between this tree and another one.</p>
+<p>cur_element_box1 and cur_element_box2 are the element box indices that intersect in the current tree and in the other tree.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>action</p></td>
+<td><p>The functor to run when two boxes intersect</p></td>
+</tr>
+<tr class="row-even"><td><p>EvalIntersection</p></td>
+<td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box1, index_t cur_element_box2 ) ;</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-a-a-b-b-tree-1a557f99f2a9fa9cb159c8508660694d05"><span id="index-7"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">compute_ray_element_bbox_intersections</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a02bd9a3f32244e9da6f9ce982c2ff3"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">,</span>
     <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
