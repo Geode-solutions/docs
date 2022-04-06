@@ -19,5 +19,5 @@ struct geode::BRepComponentMappings
 	{
 		// fields
 	
-		GenericMapping<uuid, 1> :target:`surfaces<doxid-structgeode_1_1_b_rep_component_mappings_1a6b3bd48c3ed7c320460f65d0c437a75d>`;
+		GenericMapping<uuid> :target:`surfaces<doxid-structgeode_1_1_b_rep_component_mappings_1a0ab8bce93846852916ced6eaa2d6e571>`;
 	};
