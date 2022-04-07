@@ -32,12 +32,18 @@ A Structural Model is a Boundary Representation composed of :ref:`Faults <doxid-
 		class :ref:`HorizonItemRange<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range>`;
 		class :ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_structural_model_1_1_stratigraphic_unit_item_range>`;
 
+		// construction
+	
+		:target:`StructuralModel<doxid-classgeode_1_1_structural_model_1acb9fe4c85ce2ea601953ca0ca04508bb>`();
+		:target:`StructuralModel<doxid-classgeode_1_1_structural_model_1a88c5935318799c8aeb90cbcaa0f6139b>`(StructuralModel&&);
+		:target:`StructuralModel<doxid-classgeode_1_1_structural_model_1ae78e53fb8e810799ac1375bab21a117b>`(BRep&& brep);
+
 		// methods
 	
-		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_structural_model_1aa77725f25f214c8c90293ee9908d18a8>`();
 		absl::string_view :target:`native_extension<doxid-classgeode_1_1_structural_model_1a5edd32082ab7608f3c9e7782e5980a95>`() const;
 		:ref:`HorizonItemRange<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range>` :target:`horizon_items<doxid-classgeode_1_1_structural_model_1a27bd1e7936f014e4a8098216daa2adcb>`(const Horizon3D& horizon) const;
 		:ref:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range>` :target:`fault_items<doxid-classgeode_1_1_structural_model_1accd329626e1d6533072231b01854f97e>`(const Fault3D& fault) const;
 		:ref:`FaultBlockItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_block_item_range>` :target:`fault_block_items<doxid-classgeode_1_1_structural_model_1a92090ef7a1247a6eff61797c51af8112>`(const FaultBlock3D& fault_block) const;
 		:ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_structural_model_1_1_stratigraphic_unit_item_range>` :target:`stratigraphic_unit_items<doxid-classgeode_1_1_structural_model_1a5ce7e138030d6427fb9fed07402f8fa6>`(const StratigraphicUnit3D& stratigraphic_unit) const;
+		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_structural_model_1aa77725f25f214c8c90293ee9908d18a8>`();
 	};
