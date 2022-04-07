@@ -63,6 +63,30 @@ namespace geode::detail
 	template <typename Serializer>
 	void :target:`register_geometry_pcontext<doxid-namespacegeode_1_1detail_1aef91870a0b7782c65a3aa06b974a4270>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 
+	template <template<index_t> class Coords, index_t dimension>
+	Coords<dimension> :target:`coords_multiply<doxid-namespacegeode_1_1detail_1abbcb0e8e162836e1e9ff497271f56a9c>`(
+		const Coords<dimension>& input,
+		double multiplier
+		);
+
+	template <template<index_t> class Coords, index_t dimension>
+	Coords<dimension> :target:`coords_divide<doxid-namespacegeode_1_1detail_1a69f518f926141055e683bfd34eee98c5>`(
+		const Coords<dimension>& input,
+		double divider
+		);
+
+	template <template<index_t> class Coords, index_t dimension>
+	Coords<dimension> :target:`coords_add<doxid-namespacegeode_1_1detail_1a15e22082d1fee4203510d873589b461d>`(
+		const Coords<dimension>& input,
+		const Coords<dimension>& other
+		);
+
+	template <template<index_t> class Coords, index_t dimension>
+	Coords<dimension> :target:`coords_substract<doxid-namespacegeode_1_1detail_1a1e9da23181530c8ea264f4a7c91a043f>`(
+		const Coords<dimension>& input,
+		const Coords<dimension>& other
+		);
+
 	template <typename Container>
 	void :target:`polygon_sort<doxid-namespacegeode_1_1detail_1aa6d785a69b7f3b0704d67b3672f234e1>`(Container& vertices);
 

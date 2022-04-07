@@ -30,6 +30,10 @@ Description of a vector in the given dimension with double coordinates
 	
 		double :target:`length2<doxid-classgeode_1_1_vector_1a9562bb6ffb8c7866b6512857492d630e>`() const;
 		double :target:`length<doxid-classgeode_1_1_vector_1aff52e0769e3090e366d8ce1dd34643e0>`() const;
+		Vector :target:`operator *<doxid-classgeode_1_1_vector_1a6a3163b41d5db9303ac823a346d7bf9b>` (double multiplier) const;
+		Vector :target:`operator/<doxid-classgeode_1_1_vector_1a53ae4f5edf0e713f2f9498044fe4d0cd>` (double divider) const;
+		Vector :target:`operator +<doxid-classgeode_1_1_vector_1aca4ff1779f0bd67760ef73baadb4c17b>` (const Vector& other) const;
+		Vector :target:`operator -<doxid-classgeode_1_1_vector_1a53386161e4c70681affb6474a18262a4>` (const Vector& other) const;
 		Vector :target:`normalize<doxid-classgeode_1_1_vector_1a3624163adf6a18e7e377df345cbaf3e7>`() const;
 		double :target:`dot<doxid-classgeode_1_1_vector_1a5a3e0637cb1ab31f956c6f4cb22e82f4>`(const Vector& other) const;
 		Vector :target:`cross<doxid-classgeode_1_1_vector_1a90915fe62be27f0ecf12f131a4b25e83>`(const Vector& other) const;
