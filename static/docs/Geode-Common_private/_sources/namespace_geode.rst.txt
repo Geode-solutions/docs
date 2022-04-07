@@ -422,9 +422,15 @@ Overview
 		absl::Span<const Point3D> points
 		);
 
-	:target:`ALIAS_2D<doxid-namespacegeode_1a373fb1dcaf2e8846a3b38103abfc8894>`(Triangle);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6bd5b8618c1a9a6ff0f6c60bb98fe807>`(Triangle);
 	:ref:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>` geode_common_geometry_api :ref:`tetrahedron_volume_sign<doxid-namespacegeode_1a7864fa260bdcfb6a4e6e4671a965b901>`(const Tetra& tetra);
 	:ref:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>` geode_common_geometry_api :ref:`triangle_area_sign<doxid-namespacegeode_1adb0cb74f7e5d499a3ebb08b1c3bdb70d>`(const Triangle2D& triangle);
+
+	:ref:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>` geode_common_geometry_api :ref:`triangle_area_sign<doxid-namespacegeode_1af13a51f41db5ec58737fbba045e25509>`(
+		const Triangle3D& triangle,
+		local_index_t axis
+		);
+
 	void geode_common_helpers_api :target:`initialize_helpers<doxid-namespacegeode_1ab5f1a298e8cd7b6d981d223be950705b>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9dd3655e0b4d0e1d23b6d3a8fd68c87b>`(Line);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
@@ -1086,4 +1092,17 @@ Return the sign of a tetrahedron volume.
 	:ref:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>` geode_common_geometry_api triangle_area_sign(const Triangle2D& triangle)
 
 Return the sign of a 2D triangle area.
+
+.. index:: pair: function; triangle_area_sign
+.. _doxid-namespacegeode_1af13a51f41db5ec58737fbba045e25509:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`Sign<doxid-namespacegeode_1a7e8ca987ba3b9e74da58076ee17ae692>` geode_common_geometry_api triangle_area_sign(
+		const Triangle3D& triangle,
+		local_index_t axis
+		)
+
+Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
 

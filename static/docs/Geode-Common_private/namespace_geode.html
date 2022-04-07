@@ -384,9 +384,15 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">Point3D</span><span class="o">&gt;</span> <span class="n">points</span>
     <span class="p">);</span>
 
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a373fb1dcaf2e8846a3b38103abfc8894"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6bd5b8618c1a9a6ff0f6c60bb98fe807"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
 <a class="reference internal" href="#doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span class="std std-ref">Sign</span></a><span></span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a7864fa260bdcfb6a4e6e4671a965b901"><span class="std std-ref">tetrahedron_volume_sign</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Tetra</span><span class="o">&amp;</span> <span class="n">tetra</span><span class="p">);</span>
 <a class="reference internal" href="#doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span class="std std-ref">Sign</span></a><span></span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1adb0cb74f7e5d499a3ebb08b1c3bdb70d"><span class="std std-ref">triangle_area_sign</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Triangle2D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">);</span>
+
+<a class="reference internal" href="#doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span class="std std-ref">Sign</span></a><span></span> <span class="n">geode_common_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1af13a51f41db5ec58737fbba045e25509"><span class="std std-ref">triangle_area_sign</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">,</span>
+    <span class="n">local_index_t</span> <span class="n">axis</span>
+    <span class="p">);</span>
+
 <span class="kt">void</span> <span class="n">geode_common_helpers_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab5f1a298e8cd7b6d981d223be950705b"><span></span><span class="n">initialize_helpers</span></span><span></span><span class="p">();</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9dd3655e0b4d0e1d23b6d3a8fd68c87b"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4efa1c27af37ca80b792b5290f406968"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
@@ -752,6 +758,11 @@
 <p>Return the sign of a tetrahedron volume.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1adb0cb74f7e5d499a3ebb08b1c3bdb70d"><span id="index-27"></span><a class="reference internal" href="#doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span class="std std-ref">Sign</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="n">triangle_area_sign</span><span class="p">(</span><span class="k">const</span> <span class="n">Triangle2D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">)</span></pre>
 <p>Return the sign of a 2D triangle area.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af13a51f41db5ec58737fbba045e25509"><span id="index-28"></span><a class="reference internal" href="#doxid-namespacegeode-1a7e8ca987ba3b9e74da58076ee17ae692"><span class="std std-ref">Sign</span></a><span></span> <span class="n">geode_common_geometry_api</span> <span class="n">triangle_area_sign</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">,</span>
+    <span class="n">local_index_t</span> <span class="n">axis</span>
+    <span class="p">)</span></pre>
+<p>Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.</p>
 </section>
 </section>
 </section>
