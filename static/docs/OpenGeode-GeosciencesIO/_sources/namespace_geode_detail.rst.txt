@@ -7,23 +7,6 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
-	struct_geode_detail_CRSData.rst
-	struct_geode_detail_HeaderData.rst
-	struct_geode_detail_PropClassHeaderData.rst
-	struct_geode_detail_PropHeaderData.rst
-	struct_geode_detail_RegionSurfaceSide.rst
-	struct_geode_detail_TSurfBorderData.rst
-	struct_geode_detail_TSurfData.rst
-	class_geode_detail_LSOInput.rst
-	class_geode_detail_LSOOutput.rst
-	class_geode_detail_MLInput.rst
-	class_geode_detail_MLOutputBRep.rst
-	class_geode_detail_MLOutputImpl.rst
-	class_geode_detail_MLOutputStructuralModel.rst
-	class_geode_detail_PLOutput.rst
-	class_geode_detail_TSInput.rst
-	class_geode_detail_WLInput.rst
-
 
 
 
@@ -33,58 +16,8 @@ namespace geode::detail
 	
 	namespace detail {
 
-	// structs
-
-	struct :ref:`CRSData<doxid-structgeode_1_1detail_1_1_c_r_s_data>`;
-	struct :ref:`HeaderData<doxid-structgeode_1_1detail_1_1_header_data>`;
-	struct :ref:`PropClassHeaderData<doxid-structgeode_1_1detail_1_1_prop_class_header_data>`;
-	struct :ref:`PropHeaderData<doxid-structgeode_1_1detail_1_1_prop_header_data>`;
-	struct :ref:`RegionSurfaceSide<doxid-structgeode_1_1detail_1_1_region_surface_side>`;
-	struct :ref:`TSurfBorderData<doxid-structgeode_1_1detail_1_1_t_surf_border_data>`;
-	struct :ref:`TSurfData<doxid-structgeode_1_1detail_1_1_t_surf_data>`;
-
-	// classes
-
-	class :ref:`LSOInput<doxid-classgeode_1_1detail_1_1_l_s_o_input>`;
-	class :ref:`LSOOutput<doxid-classgeode_1_1detail_1_1_l_s_o_output>`;
-	class :ref:`MLInput<doxid-classgeode_1_1detail_1_1_m_l_input>`;
-	class :ref:`MLOutputBRep<doxid-classgeode_1_1detail_1_1_m_l_output_b_rep>`;
-
-	template <typename Model>
-	class :ref:`MLOutputImpl<doxid-classgeode_1_1detail_1_1_m_l_output_impl>`;
-
-	class :ref:`MLOutputStructuralModel<doxid-classgeode_1_1detail_1_1_m_l_output_structural_model>`;
-	class :ref:`PLOutput<doxid-classgeode_1_1detail_1_1_p_l_output>`;
-	class :ref:`TSInput<doxid-classgeode_1_1detail_1_1_t_s_input>`;
-	class :ref:`WLInput<doxid-classgeode_1_1detail_1_1_w_l_input>`;
-
 	// global functions
 
 	void opengeode_geosciencesio_geosciences_api :target:`initialize_geosciences_io<doxid-namespacegeode_1_1detail_1aa3f5ecadb7bedfd3a78c5ab7bc0e6bd2>`();
-	bool :target:`string_starts_with<doxid-namespacegeode_1_1detail_1a0c325d7389879a3e8e5f9376bb83bdeb>`(absl::string_view string, absl::string_view check);
-	void :target:`check_keyword<doxid-namespacegeode_1_1detail_1a596dbdeda9c569dcc2a784e6b9c26255>`(std::ifstream& file, absl::string_view keyword);
-	std::string :target:`read_name<doxid-namespacegeode_1_1detail_1a7678ddeb1406c17479dbac5f60fcceff>`(std::istringstream& iss);
-	:ref:`HeaderData<doxid-structgeode_1_1detail_1_1_header_data>` :target:`read_header<doxid-namespacegeode_1_1detail_1a1cc9507dbb47f49cb5ec6f69f8d3de5e>`(std::ifstream& file);
-	void :target:`write_header<doxid-namespacegeode_1_1detail_1a4d9397ca55db86aea00229562063ad69>`(std::ofstream& file, const :ref:`HeaderData<doxid-structgeode_1_1detail_1_1_header_data>`& data);
-	:ref:`CRSData<doxid-structgeode_1_1detail_1_1_c_r_s_data>` :target:`read_CRS<doxid-namespacegeode_1_1detail_1a8e6b125235321742b86b957b12b971e7>`(std::ifstream& file);
-	void :target:`write_CRS<doxid-namespacegeode_1_1detail_1aa24c63bcac7f660cd96dde66babb7857>`(std::ofstream& file, const :ref:`CRSData<doxid-structgeode_1_1detail_1_1_c_r_s_data>`& data);
-	void :target:`write_prop_header<doxid-namespacegeode_1_1detail_1a75d75e311a3b94c629e4046334540e55>`(std::ofstream& file, const :ref:`PropHeaderData<doxid-structgeode_1_1detail_1_1_prop_header_data>`& data);
-
-	void :target:`write_property_class_header<doxid-namespacegeode_1_1detail_1a9e5f4ed56bb768a1face412316691339>`(
-		std::ofstream& file,
-		const :ref:`PropClassHeaderData<doxid-structgeode_1_1detail_1_1_prop_class_header_data>`& data
-		);
-
-	std::string :target:`goto_keyword<doxid-namespacegeode_1_1detail_1a51c6af2c945d7fcdbef97909363b6020>`(std::ifstream& file, absl::string_view word);
-
-	std::string :target:`goto_keywords<doxid-namespacegeode_1_1detail_1ae071b9b035a199896e2b372dfab940b3>`(
-		std::ifstream& file,
-		absl::Span<const absl::string_view> words
-		);
-
-	absl::optional<:ref:`TSurfData<doxid-structgeode_1_1detail_1_1_t_surf_data>`> :target:`read_tsurf<doxid-namespacegeode_1_1detail_1a25af5d9eb259f502dee11081cfdbd3af>`(std::ifstream& file);
-	:ref:`RegionSurfaceSide<doxid-structgeode_1_1detail_1_1_region_surface_side>` :target:`determine_surface_to_regions_sides<doxid-namespacegeode_1_1detail_1a3446a80347191224d63c84c73682cd8b>`(const BRep& brep);
-	bool :target:`check_brep_polygons<doxid-namespacegeode_1_1detail_1ac6a8b3f9f70d9d7471c9275cb2532a2c>`(const BRep& brep);
-	absl::optional<PolygonEdge> :target:`get_one_border_edge<doxid-namespacegeode_1_1detail_1a67da0f0d36a6f7d549ff339e54693b03>`(const SurfaceMesh3D& mesh);
 
 	} // namespace detail
