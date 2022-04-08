@@ -533,12 +533,6 @@ Overview
 		const T& no_value
 		);
 
-	template <typename T, typename MappingType>
-	void :target:`erase_mapping_values<doxid-namespacegeode_1abbfd06ee3b641e5af79bd27ee7972b22>`(
-		absl::Span<const T> values_to_delete,
-		std::vector<MappingType>& mappings
-		);
-
 	void geode_common_modifier_edged_curve_api :target:`initialize_modifier_edged_curve<doxid-namespacegeode_1adface64b1fe591fb1470d875e00906a5>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abca05657b8eb6a446c79a4e841068fcf>`(EdgedCurveBuilder);
