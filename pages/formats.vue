@@ -229,6 +229,24 @@ export default {
         in: true,
         out: false,
       },
+      {
+        extension: '.dev',
+        cpp: "<a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
+        in: true,
+        out: false,
+      },
+      {
+        extension: '.txt',
+        cpp: "<a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
+        in: true,
+        out: false,
+      },
+      {
+        extension: '.dat',
+        cpp: "<a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
+        in: true,
+        out: false,
+      },
     ],
   }),
 }
