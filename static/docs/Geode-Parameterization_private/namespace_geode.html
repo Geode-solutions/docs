@@ -17,6 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="enum geode::RegularGridScalarFunctionComputerType" href="enum_geode_RegularGridScalarFunctionComputerType.html" />
     <link rel="prev" title="Global Namespace" href="global.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -41,8 +42,63 @@
 <h2>Overview</h2>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">geode</span> <span class="p">{</span>
 
+<span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><a class="reference internal" href="enum_geode_RegularGridScalarFunctionComputerType.html#doxid-namespacegeode-1ab6e81137e19b621f3b87d744bd61fce0"><span class="std std-ref">RegularGridScalarFunctionComputerType</span></a><span></span><span class="p">,</span> <a class="reference internal" href="class_geode_RegularGridDerivativesMinimization.html#doxid-classgeode-1-1-regular-grid-derivatives-minimization"><span class="std std-ref">RegularGridDerivativesMinimization</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9a38f80eab58a5266521c9dd9ba2a1e4"><span></span><span class="n">RegularGridDerivativesMinimizationFactory</span></span><span></span><span class="p">;</span>
+
+<span class="c1">// enums</span>
+
+<span class="k">enum</span> <a class="reference internal" href="enum_geode_RegularGridScalarFunctionComputerType.html#doxid-namespacegeode-1ab6e81137e19b621f3b87d744bd61fce0"><span class="std std-ref">RegularGridScalarFunctionComputerType</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// classes</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridDerivativesMinimization.html#doxid-classgeode-1-1-regular-grid-derivatives-minimization"><span class="std std-ref">RegularGridDerivativesMinimization</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridFDMBoundaryFreeCurvatureMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-boundary-free-curvature-minimization"><span class="std std-ref">RegularGridFDMBoundaryFreeCurvatureMinimization</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridFDMBoundaryFreeHessianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-boundary-free-hessian-minimization"><span class="std std-ref">RegularGridFDMBoundaryFreeHessianMinimization</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridFDMBoundaryFreeLaplacianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-boundary-free-laplacian-minimization"><span class="std std-ref">RegularGridFDMBoundaryFreeLaplacianMinimization</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridFDMCurvatureMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-curvature-minimization"><span class="std std-ref">RegularGridFDMCurvatureMinimization</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridFDMHessianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-hessian-minimization"><span class="std std-ref">RegularGridFDMHessianMinimization</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridFDMLaplacianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-laplacian-minimization"><span class="std std-ref">RegularGridFDMLaplacianMinimization</span></a><span></span><span class="p">;</span>
+
 <span class="c1">// global functions</span>
 
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a99e0e31c7cdbe87f1a2accf5d11b05fe"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca4385eb3d676a070003e6270f6472ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a88e7373e2780b9968a6fddc59703bcf9"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2177cb00369cd60aa5151e2d00d9c8c5"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGridScalarFunction</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8b17a9cd983208fb516bd600df660d44"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridFDMBoundaryFreeCurvatureMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-boundary-free-curvature-minimization"><span class="std std-ref">RegularGridFDMBoundaryFreeCurvatureMinimization</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9ccdb7f101c6841ace7161b12ebe17b7"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridFDMBoundaryFreeHessianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-boundary-free-hessian-minimization"><span class="std std-ref">RegularGridFDMBoundaryFreeHessianMinimization</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aed0a84753c32306acd30263608da80f5"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridFDMBoundaryFreeLaplacianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-boundary-free-laplacian-minimization"><span class="std std-ref">RegularGridFDMBoundaryFreeLaplacianMinimization</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab4cc0cf2f4db5260820c1e8cb02a71f3"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridFDMCurvatureMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-curvature-minimization"><span class="std std-ref">RegularGridFDMCurvatureMinimization</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1af51350a3b4a8985dd094f06d70e04791"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridDerivativesMinimization.html#doxid-classgeode-1-1-regular-grid-derivatives-minimization"><span class="std std-ref">RegularGridDerivativesMinimization</span></a><span></span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_RegularGridDerivativesMinimization.html#doxid-classgeode-1-1-regular-grid-derivatives-minimization"><span class="std std-ref">RegularGridDerivativesMinimization</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7e372acdf80be869063c2f8c752211e5"><span></span><span class="n">create_scalar_function_computer</span></span><span></span><span class="p">(</span>
+    <a class="reference internal" href="enum_geode_RegularGridScalarFunctionComputerType.html#doxid-namespacegeode-1ab6e81137e19b621f3b87d744bd61fce0"><span class="std std-ref">RegularGridScalarFunctionComputerType</span></a><span></span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">grid</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">data_constraints</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1abf5a5a87400584a24e8f0d511c307f6c"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a9a38f80eab58a5266521c9dd9ba2a1e4"><span class="std std-ref">RegularGridDerivativesMinimizationFactory</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9bf540386f2e72c1fb5fd912e8e149d8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridFDMHessianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-hessian-minimization"><span class="std std-ref">RegularGridFDMHessianMinimization</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a07e0283991d6dc72041312468a44f002"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridFDMLaplacianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-laplacian-minimization"><span class="std std-ref">RegularGridFDMLaplacianMinimization</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac5ecef06abef60896357a8eb77586520"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 

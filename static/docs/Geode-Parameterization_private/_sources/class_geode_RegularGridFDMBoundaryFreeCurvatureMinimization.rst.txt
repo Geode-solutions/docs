@@ -1,0 +1,49 @@
+.. index:: pair: class; geode::RegularGridFDMBoundaryFreeCurvatureMinimization
+.. _doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_curvature_minimization:
+
+template class geode::RegularGridFDMBoundaryFreeCurvatureMinimization
+=====================================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <regular_grid_FDM_boundaryfree_curvature_minimization.h>
+	
+	template <index_t dimension>
+	class RegularGridFDMBoundaryFreeCurvatureMinimization: public :ref:`geode::RegularGridDerivativesMinimization<doxid-classgeode_1_1_regular_grid_derivatives_minimization>`
+	{
+	public:
+		// construction
+	
+		:target:`RegularGridFDMBoundaryFreeCurvatureMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_curvature_minimization_1a2868f5d60ab5ff07f55da82c4001386b>`(
+			const RegularGrid<dimension>& grid,
+			const :ref:`DataConstraintManager<doxid-classgeode_1_1_data_constraint_manager>`<dimension>& data_constraints
+			);
+
+		// methods
+	
+		virtual void :target:`use_constraint_value_preconditioning<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_curvature_minimization_1afd3ac73a8469b6ac5af35566aa8d8cd7>`();
+		virtual void :target:`use_scalar_function_preconditioning<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_curvature_minimization_1a56ea5d30fb5dd292cf517b647b847372>`(absl::string_view function_name);
+		virtual RegularGridScalarFunction<dimension> :target:`compute_scalar_function<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_curvature_minimization_1aa081f1c071711a5e6432e94adb893a49>`(absl::string_view scalar_function_name);
+		static :ref:`RegularGridScalarFunctionComputerType<doxid-namespacegeode_1ab6e81137e19b621f3b87d744bd61fce0>` :target:`impl_type_static<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_curvature_minimization_1aedfba638d209c6b0d17e21fcb512976c>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		virtual void :ref:`use_constraint_value_preconditioning<doxid-classgeode_1_1_regular_grid_derivatives_minimization_1abfbe9bbfa45d175983cb04b826baafb5>`() = 0;
+		virtual void :ref:`use_scalar_function_preconditioning<doxid-classgeode_1_1_regular_grid_derivatives_minimization_1a1847884d45e3ae5dda3767470333e673>`(absl::string_view function_name) = 0;
+		virtual RegularGridScalarFunction<dimension> :ref:`compute_scalar_function<doxid-classgeode_1_1_regular_grid_derivatives_minimization_1afafa480cbf2638d036cb49989d1c9838>`(absl::string_view scalar_function_name) = 0;
+
