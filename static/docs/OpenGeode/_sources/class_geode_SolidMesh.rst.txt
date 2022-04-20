@@ -73,6 +73,7 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		std::enable_if<T==3, Vector3D>::type :ref:`polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1ac11c243a8507b7a5590b48ca05d50648>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 	
 		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a3c64897434c58970bbf1e9d05d8ef826>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		bool :ref:`is_vertex_on_border<doxid-classgeode_1_1_solid_mesh_1a6c42099f25a0ab99ade3b87973bc1749>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		bool :ref:`is_edge_on_border<doxid-classgeode_1_1_solid_mesh_1a78192ae66cdae976ca698983037100b5>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 	
 		bool :ref:`is_edge_on_border<doxid-classgeode_1_1_solid_mesh_1ad00e40eb68f5c3636fb34bd477c5c6e4>`(
@@ -650,6 +651,28 @@ Get all the polyhedra with one of the vertices matching given vertex.
 
 		- Index of the vertex
 
+.. index:: pair: function; is_vertex_on_border
+.. _doxid-classgeode_1_1_solid_mesh_1a6c42099f25a0ab99ade3b87973bc1749:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool is_vertex_on_border(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
+
+Return true if at least one of the polyhedron facets around the vertex is on border
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertex_id
+
+		- Index of the vertex
+
 .. index:: pair: function; is_edge_on_border
 .. _doxid-classgeode_1_1_solid_mesh_1a78192ae66cdae976ca698983037100b5:
 
@@ -658,9 +681,7 @@ Get all the polyhedra with one of the vertices matching given vertex.
 
 	bool is_edge_on_border(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const
 
-Return true if at least one of the polyhedron facets around the edge
-
-is on border
+Return true if at least one of the polyhedron facets around the edge is on border
 
 
 
@@ -685,9 +706,7 @@ is on border
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` first_polyhedron
 		) const
 
-Return true if at least one of the polyhedron facets around the edge
-
-is on border
+Return true if at least one of the polyhedron facets around the edges is on border
 
 
 
