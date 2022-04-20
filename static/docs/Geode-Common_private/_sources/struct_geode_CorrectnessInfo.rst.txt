@@ -20,6 +20,6 @@ template struct geode::CorrectnessInfo
 	{
 		// fields
 	
-		std::pair<bool, Intersection> :target:`first<doxid-structgeode_1_1_correctness_info_1a62860e00dcfbbc0455f120590665266e>` { true, {} };
-		std::pair<bool, Intersection> :target:`second<doxid-structgeode_1_1_correctness_info_1a09bd8248fc839af5b9f76b9ff5823aed>` { true, {} };
+		std::pair<bool, Intersection> :target:`first<doxid-structgeode_1_1_correctness_info_1a62860e00dcfbbc0455f120590665266e>` { false, {} };
+		std::pair<bool, Intersection> :target:`second<doxid-structgeode_1_1_correctness_info_1a09bd8248fc839af5b9f76b9ff5823aed>` { false, {} };
 	};
