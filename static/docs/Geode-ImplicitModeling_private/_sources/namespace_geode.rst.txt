@@ -7,7 +7,8 @@ namespace geode
 .. toctree::
 	:hidden:
 
-	class_geode_ScalarFunctionExpliciter2D.rst
+	class_geode_RegularGridScalarFunctionComputer.rst
+	class_geode_RegularGridScalarFunctionExpliciter2D.rst
 
 
 
@@ -20,11 +21,17 @@ namespace geode
 
 	// classes
 
-	class :ref:`ScalarFunctionExpliciter2D<doxid-classgeode_1_1_scalar_function_expliciter2_d>`;
+	template <index_t dimension>
+	class :ref:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer>`;
+
+	class :ref:`RegularGridScalarFunctionExpliciter2D<doxid-classgeode_1_1_regular_grid_scalar_function_expliciter2_d>`;
 
 	// global functions
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
 	:target:`ALIAS_2D<doxid-namespacegeode_1adaf39f90e9bc108a983f1600fb5f37d1>`(RegularGrid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(BoundingBox);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a88e7373e2780b9968a6fddc59703bcf9>`(DataConstraintManager);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa40ec52a1aa919899a089ac5e5a8640c>`(:ref:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer>`);
 
 	} // namespace geode
