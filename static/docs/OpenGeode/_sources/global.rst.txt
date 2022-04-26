@@ -53,6 +53,7 @@ Overview
 	#define :target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-basic_2common_8h_1a0962b2dc2ca8f3e0c29d5dfa57e71c67>`(Class)
 	#define :target:`FORWARD_DECLARATION_DIMENSION_STRUCT<doxid-basic_2common_8h_1ad547625096e29b76318b989db41ffbcf>`(Struct)
 	#define :target:`IMPLEMENTATION_MEMBER<doxid-pimpl_8h_1a836288b4f8ac6ca94764f6bc984d0e8a>`(impl)
+	#define :target:`IMPLICIT_ARRAY_GENERIC_ATTRIBUTE_CONVERSION<doxid-attribute__utils_8h_1a772e3247ce6f0b207121f006dc70ad6b>`(Type)
 	#define :target:`IMPLICIT_ATTRIBUTE_LINEAR_INTERPOLATION<doxid-attribute__utils_8h_1a0545b441c6ca2abeda7c4c193d023353>`(Type)
 	#define :target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-attribute__utils_8h_1afd6099a12361a95c806e35da237633fc>`(Type)
 	#define :target:`M_PI<doxid-types_8h_1ae71449b1cc6e6250b91f539153a7a0d3>`

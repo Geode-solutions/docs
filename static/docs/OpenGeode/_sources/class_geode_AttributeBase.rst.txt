@@ -22,7 +22,9 @@ Base class defining the virtual API used by the :ref:`AttributeManager <doxid-cl
 	
 		:target:`PASSKEY<doxid-classgeode_1_1_attribute_base_1a66cbc8b9b09d6173d7cfd759343338d6>`(:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`, AttributeKey);
 		virtual float :target:`generic_value<doxid-classgeode_1_1_attribute_base_1a1a5a7f1d11dc8e0dc7fb066726e35926>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
+		virtual float :target:`generic_item_value<doxid-classgeode_1_1_attribute_base_1ad3722d1da67193e66ceb232f1a5c41e3>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` item) const = 0;
 		virtual bool :target:`is_genericable<doxid-classgeode_1_1_attribute_base_1a7c0da18fa996b9b8751ad55227cf4a23>`() const = 0;
+		virtual bool :target:`nb_items<doxid-classgeode_1_1_attribute_base_1a1452bb9aef4f3cb12f355e6543245e06>`() const = 0;
 		virtual absl::string_view :target:`type<doxid-classgeode_1_1_attribute_base_1a45818b81b18f3b0cbd335b87fb6c5c0d>`() = 0;
 		virtual std::shared_ptr<AttributeBase> :target:`clone<doxid-classgeode_1_1_attribute_base_1aa26f51fb45f03edb9ffb5afc527d51ef>`(AttributeKey) const = 0;
 	

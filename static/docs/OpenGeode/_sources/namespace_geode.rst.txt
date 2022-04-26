@@ -20,6 +20,7 @@ namespace geode
 	struct_geode_CornerDefinition.rst
 	struct_geode_EdgeVertex.rst
 	struct_geode_GenericAttributeConversion.rst
+	struct_geode_GenericAttributeConversion-2.rst
 	struct_geode_LineDefinition.rst
 	struct_geode_MeshComponentVertex.rst
 	struct_geode_MeshImplTag.rst
@@ -306,11 +307,11 @@ Overview
 
 	struct :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`;
 
-	template <index_t dimension>
-	struct :ref:`AttributeLinearInterpolationImpl<Point<dimension>><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_point_3_01dimension_01_4_01_4>`;
-
 	template <typename AttributeType>
 	struct :ref:`AttributeLinearInterpolationImpl<doxid-structgeode_1_1_attribute_linear_interpolation_impl>`;
+
+	template <index_t dimension>
+	struct :ref:`AttributeLinearInterpolationImpl<Point<dimension>><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_point_3_01dimension_01_4_01_4>`;
 
 	struct :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`;
 	struct :ref:`BlockDefinition<doxid-structgeode_1_1_block_definition>`;
@@ -321,6 +322,9 @@ Overview
 
 	template <typename AttributeType>
 	struct :ref:`GenericAttributeConversion<doxid-structgeode_1_1_generic_attribute_conversion>`;
+
+	template <index_t dimension>
+	struct :ref:`GenericAttributeConversion<Point<dimension>><doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4>`;
 
 	struct :ref:`LineDefinition<doxid-structgeode_1_1_line_definition>`;
 	struct :ref:`MeshComponentVertex<doxid-structgeode_1_1_mesh_component_vertex>`;
@@ -833,6 +837,11 @@ Overview
 	:target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1a9844da4a83f3093fcc8c77a5d0219ef9>`(unsigned int);
 	:target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1ab99035acc811564161f94c59b0551d4c>`(float);
 	:target:`IMPLICIT_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1af3f8b74262365844a60b7cefa0932d4c>`(double);
+	:target:`IMPLICIT_ARRAY_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1ada7044d4e9acaee12ce44075e69c106a>`(bool);
+	:target:`IMPLICIT_ARRAY_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1ae11093115d66e84d47151f7d6a728384>`(int);
+	:target:`IMPLICIT_ARRAY_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1a40d80e343065e2725a95566b43737862>`(unsigned int);
+	:target:`IMPLICIT_ARRAY_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1aede7909f908fa9a32bed44025771aa60>`(float);
+	:target:`IMPLICIT_ARRAY_GENERIC_ATTRIBUTE_CONVERSION<doxid-namespacegeode_1acc3ac2ce16a71db86a9a521219a0363f>`(double);
 	void opengeode_basic_api :ref:`register_basic_serialize_pcontext<doxid-namespacegeode_1abf3517d752f9c05bbb40e02825f61243>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_basic_api :ref:`register_basic_deserialize_pcontext<doxid-namespacegeode_1a4971b040e31d95abe4053f71d315b4d7>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	std::string opengeode_basic_api :target:`filename_with_extension<doxid-namespacegeode_1a00deaeb8544d7b897c2eeb80260c6bc6>`(absl::string_view path);
