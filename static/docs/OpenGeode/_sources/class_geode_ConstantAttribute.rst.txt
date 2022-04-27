@@ -59,7 +59,7 @@ Inherited Members
 		virtual float :ref:`generic_value<doxid-classgeode_1_1_attribute_base_1a1a5a7f1d11dc8e0dc7fb066726e35926>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 		virtual float :ref:`generic_item_value<doxid-classgeode_1_1_attribute_base_1ad3722d1da67193e66ceb232f1a5c41e3>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` item) const = 0;
 		virtual bool :ref:`is_genericable<doxid-classgeode_1_1_attribute_base_1a7c0da18fa996b9b8751ad55227cf4a23>`() const = 0;
-		virtual bool :ref:`nb_items<doxid-classgeode_1_1_attribute_base_1a1452bb9aef4f3cb12f355e6543245e06>`() const = 0;
+		virtual :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_items<doxid-classgeode_1_1_attribute_base_1aa4b6c04a9c4d4f7003546a4d259e800b>`() const = 0;
 		virtual absl::string_view :ref:`type<doxid-classgeode_1_1_attribute_base_1a45818b81b18f3b0cbd335b87fb6c5c0d>`() = 0;
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`clone<doxid-classgeode_1_1_attribute_base_1aa26f51fb45f03edb9ffb5afc527d51ef>`(AttributeKey) const = 0;
 	
@@ -96,5 +96,5 @@ Inherited Members
 		virtual float :ref:`generic_value<doxid-classgeode_1_1_read_only_attribute_1aee6bdac5b29c48a61eb704b6d4c7528e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
 		virtual float :ref:`generic_item_value<doxid-classgeode_1_1_read_only_attribute_1ac4afffb6b9dfd18f01b945ccd06a6517>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` item) const;
 		virtual bool :ref:`is_genericable<doxid-classgeode_1_1_read_only_attribute_1ae5aa7cd46dd3dd2c4de01b3654409566>`() const;
-		virtual bool :ref:`nb_items<doxid-classgeode_1_1_read_only_attribute_1aaf8780a730f1bebc611cd299207de4cd>`() const;
+		virtual :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_items<doxid-classgeode_1_1_read_only_attribute_1adbf8e292829b1a31c4bcb8bae17e3736>`() const;
 
