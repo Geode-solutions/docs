@@ -7,42 +7,6 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
-	class_geode_detail_AssimpMeshInput.rst
-	class_geode_detail_AssimpMeshOutput.rst
-	class_geode_detail_DXFInput.rst
-	class_geode_detail_MSHInput.rst
-	class_geode_detail_MSHOutput.rst
-	class_geode_detail_OBJInput.rst
-	class_geode_detail_OBJPolygonalOutput.rst
-	class_geode_detail_OBJTriangulatedOutput.rst
-	class_geode_detail_PLYInput.rst
-	class_geode_detail_PLYOutput.rst
-	class_geode_detail_SMESHCurveInput.rst
-	class_geode_detail_SMESHInputImpl.rst
-	class_geode_detail_SMESHTriangulatedInput.rst
-	class_geode_detail_STLInput.rst
-	class_geode_detail_STLOutput.rst
-	class_geode_detail_SVGInput.rst
-	class_geode_detail_TriangleOutput.rst
-	class_geode_detail_VTIRegularGridOutput.rst
-	class_geode_detail_VTKInputImpl.rst
-	class_geode_detail_VTKMeshOutputImpl.rst
-	class_geode_detail_VTKOutputImpl.rst
-	class_geode_detail_VTPEdgedCurveOutput.rst
-	class_geode_detail_VTPInput.rst
-	class_geode_detail_VTPOutputImpl.rst
-	class_geode_detail_VTPPointSetOutput.rst
-	class_geode_detail_VTPPolygonalOutput.rst
-	class_geode_detail_VTPTriangulatedOutput.rst
-	class_geode_detail_VTUHybridInput.rst
-	class_geode_detail_VTUHybridOutput.rst
-	class_geode_detail_VTUInputImpl.rst
-	class_geode_detail_VTUOutputImpl.rst
-	class_geode_detail_VTUPolyhedralInput.rst
-	class_geode_detail_VTUPolyhedralOutput.rst
-	class_geode_detail_VTUTetrahedralInput.rst
-	class_geode_detail_VTUTetrahedralOutput.rst
-
 
 
 
@@ -51,75 +15,6 @@ namespace geode::detail
 
 	
 	namespace detail {
-
-	// classes
-
-	class :ref:`AssimpMeshInput<doxid-classgeode_1_1detail_1_1_assimp_mesh_input>`;
-
-	template <typename SurfaceMesh>
-	class :ref:`AssimpMeshOutput<doxid-classgeode_1_1detail_1_1_assimp_mesh_output>`;
-
-	class :ref:`DXFInput<doxid-classgeode_1_1detail_1_1_d_x_f_input>`;
-	class :ref:`MSHInput<doxid-classgeode_1_1detail_1_1_m_s_h_input>`;
-	class :ref:`MSHOutput<doxid-classgeode_1_1detail_1_1_m_s_h_output>`;
-	class :ref:`OBJInput<doxid-classgeode_1_1detail_1_1_o_b_j_input>`;
-	class :ref:`OBJPolygonalOutput<doxid-classgeode_1_1detail_1_1_o_b_j_polygonal_output>`;
-	class :ref:`OBJTriangulatedOutput<doxid-classgeode_1_1detail_1_1_o_b_j_triangulated_output>`;
-	class :ref:`PLYInput<doxid-classgeode_1_1detail_1_1_p_l_y_input>`;
-	class :ref:`PLYOutput<doxid-classgeode_1_1detail_1_1_p_l_y_output>`;
-	class :ref:`SMESHCurveInput<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_curve_input>`;
-
-	template <typename Mesh, typename Builder, index_t element>
-	class :ref:`SMESHInputImpl<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_input_impl>`;
-
-	class :ref:`SMESHTriangulatedInput<doxid-classgeode_1_1detail_1_1_s_m_e_s_h_triangulated_input>`;
-	class :ref:`STLInput<doxid-classgeode_1_1detail_1_1_s_t_l_input>`;
-	class :ref:`STLOutput<doxid-classgeode_1_1detail_1_1_s_t_l_output>`;
-	class :ref:`SVGInput<doxid-classgeode_1_1detail_1_1_s_v_g_input>`;
-	class :ref:`TriangleOutput<doxid-classgeode_1_1detail_1_1_triangle_output>`;
-
-	template <index_t dimension>
-	class :ref:`VTIRegularGridOutput<doxid-classgeode_1_1detail_1_1_v_t_i_regular_grid_output>`;
-
-	template <typename Mesh, typename MeshBuilder>
-	class :ref:`VTKInputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_input_impl>`;
-
-	template <template<index_t> class Mesh, index_t dimension>
-	class :ref:`VTKMeshOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_mesh_output_impl>`;
-
-	template <typename Mesh>
-	class :ref:`VTKOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_k_output_impl>`;
-
-	template <index_t dimension>
-	class :ref:`VTPEdgedCurveOutput<doxid-classgeode_1_1detail_1_1_v_t_p_edged_curve_output>`;
-
-	class :ref:`VTPInput<doxid-classgeode_1_1detail_1_1_v_t_p_input>`;
-
-	template <template<index_t> class Mesh, index_t dimension>
-	class :ref:`VTPOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_p_output_impl>`;
-
-	template <index_t dimension>
-	class :ref:`VTPPointSetOutput<doxid-classgeode_1_1detail_1_1_v_t_p_point_set_output>`;
-
-	template <index_t dimension>
-	class :ref:`VTPPolygonalOutput<doxid-classgeode_1_1detail_1_1_v_t_p_polygonal_output>`;
-
-	template <index_t dimension>
-	class :ref:`VTPTriangulatedOutput<doxid-classgeode_1_1detail_1_1_v_t_p_triangulated_output>`;
-
-	class :ref:`VTUHybridInput<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_input>`;
-	class :ref:`VTUHybridOutput<doxid-classgeode_1_1detail_1_1_v_t_u_hybrid_output>`;
-
-	template <typename Mesh, typename Builder>
-	class :ref:`VTUInputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_input_impl>`;
-
-	template <template<index_t> class Mesh>
-	class :ref:`VTUOutputImpl<doxid-classgeode_1_1detail_1_1_v_t_u_output_impl>`;
-
-	class :ref:`VTUPolyhedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_polyhedral_input>`;
-	class :ref:`VTUPolyhedralOutput<doxid-classgeode_1_1detail_1_1_v_t_u_polyhedral_output>`;
-	class :ref:`VTUTetrahedralInput<doxid-classgeode_1_1detail_1_1_v_t_u_tetrahedral_input>`;
-	class :ref:`VTUTetrahedralOutput<doxid-classgeode_1_1detail_1_1_v_t_u_tetrahedral_output>`;
 
 	// global functions
 
