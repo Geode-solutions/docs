@@ -22,6 +22,7 @@ Class for inspecting the colocation of points in a PointSet
 		// construction
 	
 		:target:`PointSetColocation<doxid-classgeode_1_1_point_set_colocation_1a20c531a6f8d7656384b535046defcdbf>`(const PointSet<dimension>& mesh);
+		:target:`PointSetColocation<doxid-classgeode_1_1_point_set_colocation_1a24774aa7fd496f63a3d7e1c66740ee17>`(const PointSet<dimension>& mesh, bool verbose);
 
 		// methods
 	

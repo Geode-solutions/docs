@@ -24,6 +24,7 @@ Class for inspecting the topology of a BRep model corners :ref:`More...<details-
 		// construction
 	
 		:target:`BRepTopologyInspector<doxid-classgeode_1_1_b_rep_topology_inspector_1aac7dc72f00a2f536be7fc96c3745cd74>`(const BRep& brep);
+		:target:`BRepTopologyInspector<doxid-classgeode_1_1_b_rep_topology_inspector_1af434e878595871d684bab3983193bf1d>`(const BRep& brep, bool verbose);
 
 		// methods
 	

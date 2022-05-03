@@ -22,6 +22,7 @@ Class for inspecting the colocation of points in a SolidMesh
 		// construction
 	
 		:target:`SolidMeshColocation<doxid-classgeode_1_1_solid_mesh_colocation_1ab3a5d0f0467d5197976915f00e4f80d2>`(const SolidMesh<dimension>& mesh);
+		:target:`SolidMeshColocation<doxid-classgeode_1_1_solid_mesh_colocation_1a0f999795b2817b3193dc040aa7aa06c7>`(const SolidMesh<dimension>& mesh, bool verbose);
 
 		// methods
 	

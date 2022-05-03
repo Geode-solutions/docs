@@ -22,6 +22,7 @@ Class for inspecting the colocation of points in an EdgedCurve
 		// construction
 	
 		:target:`EdgedCurveColocation<doxid-classgeode_1_1_edged_curve_colocation_1ad885b26a01f1012fb8e7277cf44da8bb>`(const EdgedCurve<dimension>& mesh);
+		:target:`EdgedCurveColocation<doxid-classgeode_1_1_edged_curve_colocation_1aa8956c96df00477d90fa22ec37d4eac6>`(const EdgedCurve<dimension>& mesh, bool verbose);
 
 		// methods
 	

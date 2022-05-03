@@ -24,6 +24,7 @@ Class for inspecting the topology of a Section model corners :ref:`More...<detai
 		// construction
 	
 		:target:`SectionTopologyInspector<doxid-classgeode_1_1_section_topology_inspector_1a009bc7a8da28597f9f4afa38df87bfb3>`(const Section& section);
+		:target:`SectionTopologyInspector<doxid-classgeode_1_1_section_topology_inspector_1ab7a1b892822f4519367abeea9e4b2e76>`(const Section& section, bool verbose);
 
 		// methods
 	

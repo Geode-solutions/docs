@@ -22,6 +22,7 @@ Class for inspecting the degeneration of an EdgedCurve
 		// construction
 	
 		:target:`EdgedCurveDegeneration<doxid-classgeode_1_1_edged_curve_degeneration_1a1ec6c807d24b6c8dcc10f20ae20c45b0>`(const EdgedCurve<dimension>& mesh);
+		:target:`EdgedCurveDegeneration<doxid-classgeode_1_1_edged_curve_degeneration_1a1611cfe921bc2b653d6ea4c1e3e5105a>`(const EdgedCurve<dimension>& mesh, bool verbose);
 
 		// methods
 	

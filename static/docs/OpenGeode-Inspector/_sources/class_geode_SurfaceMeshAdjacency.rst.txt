@@ -22,6 +22,7 @@ Class for inspecting the adjacency on the edges of a SurfaceMesh
 		// construction
 	
 		:target:`SurfaceMeshAdjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1a288108b40e05ddd30f2aa8b43bc618ef>`(const SurfaceMesh<dimension>& mesh);
+		:target:`SurfaceMeshAdjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1a267f160050b5797ac64a051cfac55b5f>`(const SurfaceMesh<dimension>& mesh, bool verbose);
 
 		// methods
 	

@@ -22,6 +22,7 @@ Class for inspecting the manifold property of a SurfaceMesh
 		// construction
 	
 		:target:`SurfaceMeshVertexManifold<doxid-classgeode_1_1_surface_mesh_vertex_manifold_1aca51894618d4007810c290a36ba28ce4>`(const SurfaceMesh<dimension>& mesh);
+		:target:`SurfaceMeshVertexManifold<doxid-classgeode_1_1_surface_mesh_vertex_manifold_1a2ad32acd9207606b47d52e60d9543d31>`(const SurfaceMesh<dimension>& mesh, bool verbose);
 
 		// methods
 	

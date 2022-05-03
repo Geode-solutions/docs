@@ -22,6 +22,7 @@ Class for inspecting the colocation of points in a SurfaceMesh
 		// construction
 	
 		:target:`SurfaceMeshColocation<doxid-classgeode_1_1_surface_mesh_colocation_1a6be17af407def2652e1df3f40e65bfad>`(const SurfaceMesh<dimension>& mesh);
+		:target:`SurfaceMeshColocation<doxid-classgeode_1_1_surface_mesh_colocation_1acf2b48cb0938b5d4063cb08fd7fca47f>`(const SurfaceMesh<dimension>& mesh, bool verbose);
 
 		// methods
 	
