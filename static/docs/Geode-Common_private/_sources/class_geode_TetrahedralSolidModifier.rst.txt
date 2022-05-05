@@ -35,6 +35,7 @@ Overview
 		bool :target:`is_tetrahedron_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af187b78931d693da120ab9da5c5b4549>`(index_t tetrahedron_id) const;
 		bool :target:`is_facet_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a49fdcfaf239bff7e181f1aaa5c7bb932>`(index_t facet_id) const;
 		void :target:`set_tetrahedron_inactive<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af9d87f2288c25f5e8d356a6551be2b0b>`(index_t tetrahedron_id);
+		void :target:`set_facet_inactive<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1a1d013d5b3e870655c4b797eb2886db>`(index_t facet_id);
 		bool :ref:`is_split_tetrahedron_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a4edcaa0ed7b9661d5a8deb6fe63c7839>`(index_t tetrahedron_id, const Point3D& point) const;
 		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1645e8ce599bf3ab1036071f1af3a939>`(index_t tetrahedron_id, const Point3D& point);
 		bool :ref:`is_split_facet_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a60b6e5ebe55c5b9bc26f016589eb3054>`(const PolyhedronFacet& facet, const Point3D& point) const;
