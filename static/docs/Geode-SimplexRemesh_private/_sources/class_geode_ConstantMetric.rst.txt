@@ -25,8 +25,8 @@ Constant metric implementation
 
 		// methods
 	
-		virtual double :target:`point_metric<doxid-classgeode_1_1_constant_metric_1ad3ae359abe1bc08841b6c7cfa7afd0e8>`(const Point<dimension>&) const;
-		double :target:`metric<doxid-classgeode_1_1_constant_metric_1a81f43700c8f891a396cf14c4745a824b>`() const;
+		virtual double :target:`metric<doxid-classgeode_1_1_constant_metric_1a6ea8dd6170278abfaa106df37e05c896>`(const Point<dimension>&) const;
+		double :target:`constant_metric<doxid-classgeode_1_1_constant_metric_1af5714533c573f1053ac8ad6ed0652196>`() const;
 		virtual double :target:`average_metric<doxid-classgeode_1_1_constant_metric_1a617c2145146ef5db78fcb9ea8e73eb13>`() const;
 	};
 
@@ -39,8 +39,6 @@ Inherited Members
 	public:
 		// methods
 	
-		virtual double :ref:`point_metric<doxid-classgeode_1_1_metric_base_1a737d198f4ebd786738b7f4e5feedff01>`(const Point<dimension>& point) const = 0;
-		virtual double :ref:`average_metric<doxid-classgeode_1_1_metric_base_1a69e244e29d9a7c8f9dd92292b7299a58>`() const = 0;
-		double :ref:`segment_metric<doxid-classgeode_1_1_metric_base_1a3b4f20838a1d5a20cfff769fafa1b0ee>`(const Segment<dimension>& segment) const;
-		double :ref:`triangle_metric<doxid-classgeode_1_1_metric_base_1ac0ce6b173f20bcaaa18cab4250b4be0d>`(const Triangle<dimension>& triangle) const;
+		virtual double :ref:`metric<doxid-classgeode_1_1_metric_1ae7772ff36e4ab8e23abc1fca5f81e21b>`(const Point<dimension>& point) const = 0;
+		virtual double :ref:`average_metric<doxid-classgeode_1_1_metric_1a1ac98e57f631f4b5207a0223cfff6768>`() const = 0;
 
