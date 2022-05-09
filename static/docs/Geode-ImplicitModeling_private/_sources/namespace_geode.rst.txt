@@ -7,8 +7,16 @@ namespace geode
 .. toctree::
 	:hidden:
 
+	namespace_geode_detail.rst
+	class_geode_ImplicitStructuralModel.rst
+	class_geode_ImplicitStructuralModelBuilder.rst
+	class_geode_ImplicitStructuralModelInput.rst
+	class_geode_ImplicitStructuralModelOutput.rst
 	class_geode_RegularGridScalarFunctionComputer.rst
 	class_geode_RegularGridScalarFunctionExpliciter2D.rst
+
+Overview
+~~~~~~~~
 
 
 
@@ -19,7 +27,21 @@ namespace geode
 	
 	namespace geode {
 
+	// namespaces
+
+	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
+
+	// typedefs
+
+	typedef Factory<std::string, :ref:`ImplicitStructuralModelInput<doxid-classgeode_1_1_implicit_structural_model_input>`, :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`&, absl::string_view> :target:`ImplicitStructuralModelInputFactory<doxid-namespacegeode_1aa023ec8e87563b5c8c79fb11c89b2afb>`;
+	typedef Factory<std::string, :ref:`ImplicitStructuralModelOutput<doxid-classgeode_1_1_implicit_structural_model_output>`, const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`&, absl::string_view> :target:`ImplicitStructuralModelOutputFactory<doxid-namespacegeode_1a17e29e5b76e1504f9403fbf21b9dbde8>`;
+
 	// classes
+
+	class :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`;
+	class :ref:`ImplicitStructuralModelBuilder<doxid-classgeode_1_1_implicit_structural_model_builder>`;
+	class :ref:`ImplicitStructuralModelInput<doxid-classgeode_1_1_implicit_structural_model_input>`;
+	class :ref:`ImplicitStructuralModelOutput<doxid-classgeode_1_1_implicit_structural_model_output>`;
 
 	template <index_t dimension>
 	class :ref:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer>`;
@@ -33,5 +55,75 @@ namespace geode
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(BoundingBox);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a88e7373e2780b9968a6fddc59703bcf9>`(DataConstraintManager);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa40ec52a1aa919899a089ac5e5a8640c>`(:ref:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(Point);
+	:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>` geode_implicitmodeling_model_api :ref:`load_implicit_structural_model<doxid-namespacegeode_1a5e33962083fa7d9ae330f405fee6212f>`(absl::string_view filename);
+
+	void geode_implicitmodeling_model_api :ref:`save_implicit_structural_model<doxid-namespacegeode_1a2136a592e634d026963a256339b3ecef>`(
+		const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model,
+		absl::string_view filename
+		);
 
 	} // namespace geode
+.. _details-namespacegeode:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Global Functions
+----------------
+
+.. index:: pair: function; load_implicit_structural_model
+.. _doxid-namespacegeode_1a5e33962083fa7d9ae330f405fee6212f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>` geode_implicitmodeling_model_api load_implicit_structural_model(absl::string_view filename)
+
+API function for loading a :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_implicit_structural_model
+.. _doxid-namespacegeode_1a2136a592e634d026963a256339b3ecef:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void geode_implicitmodeling_model_api save_implicit_structural_model(
+		const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model,
+		absl::string_view filename
+		)
+
+API function for saving a :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- implicit_model
+
+		- :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`.
+

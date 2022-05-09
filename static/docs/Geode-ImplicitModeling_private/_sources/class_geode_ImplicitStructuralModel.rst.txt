@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::ImplicitStructuralModel
+.. _doxid-classgeode_1_1_implicit_structural_model:
+
+class geode::ImplicitStructuralModel
+====================================
+
+.. toctree::
+	:hidden:
+
+An Implicit Model is a Structural model where each block has a specific attribute to store the stratigraphic coordinates of its vertices.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <implicit_structural_model.h>
+	
+	class ImplicitStructuralModel: public StructuralModel
+	{
+	public:
+		// construction
+	
+		:target:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model_1a6dacbb4ba9255849c369681715c8b915>`();
+		:target:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model_1a7462e1ab30875d83465887190762c3ee>`(ImplicitStructuralModel&& implicit_model);
+		:target:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model_1a139614a05ed9586ececd5c34403e2f1b>`(StructuralModel&& structural_model);
+
+		// methods
+	
+		absl::string_view :target:`native_extension<doxid-classgeode_1_1_implicit_structural_model_1a7db14da19101e19fe01bd10d345341f8>`() const;
+	
+		const Point3D& :target:`stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_1ab0481dda773dad5011ef0f9982b5a753>`(
+			const uuid& component_id,
+			index_t vertex_id
+			) const;
+	
+		void :target:`instantiate_stratigraphic_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_1a60b40e7b49cf5b1f728fbaf22f0d9613>`(ImplicitStructuralModelBuilderKey);
+	
+		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_1a93dd3b3c5240591bfa8e1c0a2db2a942>`(
+			const uuid& component_id,
+			index_t vertex_id,
+			Point3D value,
+			ImplicitStructuralModelBuilderKey
+			);
+	
+		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_implicit_structural_model_1aa69265945e3e076b61a3cf1367dc8325>`();
+	};

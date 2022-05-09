@@ -1,0 +1,35 @@
+.. index:: pair: class; geode::ImplicitStructuralModelBuilder
+.. _doxid-classgeode_1_1_implicit_structural_model_builder:
+
+class geode::ImplicitStructuralModelBuilder
+===========================================
+
+.. toctree::
+	:hidden:
+
+Class managing modifications of a :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <implicit_structural_model_builder.h>
+	
+	class ImplicitStructuralModelBuilder: public StructuralModelBuilder
+	{
+	public:
+		// construction
+	
+		:target:`ImplicitStructuralModelBuilder<doxid-classgeode_1_1_implicit_structural_model_builder_1ab11af805bb8a896ad5703019cb6b1319>`(:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model);
+
+		// methods
+	
+		void :target:`copy<doxid-classgeode_1_1_implicit_structural_model_builder_1a0416e37c3b401b46a5998bf0659cb004>`(const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model);
+		void :target:`instantiate_stratigraphic_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_builder_1ae22ff633115fa13031b3a172f38971bd>`();
+	
+		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_builder_1a5708da97c836080e19658179e641fe1c>`(
+			const uuid& component_id,
+			index_t vertex_id,
+			Point3D value
+			);
+	};

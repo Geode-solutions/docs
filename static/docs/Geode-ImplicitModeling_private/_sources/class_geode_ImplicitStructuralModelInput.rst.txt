@@ -1,0 +1,25 @@
+.. index:: pair: class; geode::ImplicitStructuralModelInput
+.. _doxid-classgeode_1_1_implicit_structural_model_input:
+
+class geode::ImplicitStructuralModelInput
+=========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <implicit_structural_model_input.h>
+	
+	class ImplicitStructuralModelInput: public Input
+	{
+	public:
+	};
+
+	// direct descendants
+
+	class :ref:`ImplicitLSOInput<doxid-classgeode_1_1detail_1_1_implicit_l_s_o_input>`;
