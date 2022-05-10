@@ -87,6 +87,30 @@ namespace geode::detail
 		const Coords<dimension>& other
 		);
 
+	template <template<index_t> class Coords, index_t dimension>
+	void :target:`coords_multiply_equal<doxid-namespacegeode_1_1detail_1a4e9b0150fb5a756a741a10d16f895349>`(
+		Coords<dimension>& input,
+		double multiplier
+		);
+
+	template <template<index_t> class Coords, index_t dimension>
+	void :target:`coords_divide_equal<doxid-namespacegeode_1_1detail_1abb9559a07b6aa3696aa26384dfcdde94>`(
+		Coords<dimension>& input,
+		double divider
+		);
+
+	template <template<index_t> class Coords, index_t dimension>
+	void :target:`coords_add_equal<doxid-namespacegeode_1_1detail_1a9b24e2fac8bc1bd31305afde9c988414>`(
+		Coords<dimension>& input,
+		const Coords<dimension>& other
+		);
+
+	template <template<index_t> class Coords, index_t dimension>
+	void :target:`coords_substract_equal<doxid-namespacegeode_1_1detail_1a5a8aa1adec1bbd3358cdc97b83f10d9e>`(
+		Coords<dimension>& input,
+		const Coords<dimension>& other
+		);
+
 	template <typename Container>
 	void :target:`polygon_sort<doxid-namespacegeode_1_1detail_1aa6d785a69b7f3b0704d67b3672f234e1>`(Container& vertices);
 

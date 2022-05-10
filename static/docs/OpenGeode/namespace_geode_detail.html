@@ -105,6 +105,30 @@
     <span class="k">const</span> <span class="n">Coords</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">other</span>
     <span class="p">);</span>
 
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Coords</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a4e9b0150fb5a756a741a10d16f895349"><span></span><span class="n">coords_multiply_equal</span></span><span></span><span class="p">(</span>
+    <span class="n">Coords</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">input</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">multiplier</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Coords</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1abb9559a07b6aa3696aa26384dfcdde94"><span></span><span class="n">coords_divide_equal</span></span><span></span><span class="p">(</span>
+    <span class="n">Coords</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">input</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">divider</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Coords</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a9b24e2fac8bc1bd31305afde9c988414"><span></span><span class="n">coords_add_equal</span></span><span></span><span class="p">(</span>
+    <span class="n">Coords</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">input</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Coords</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">other</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Coords</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a5a8aa1adec1bbd3358cdc97b83f10d9e"><span></span><span class="n">coords_substract_equal</span></span><span></span><span class="p">(</span>
+    <span class="n">Coords</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">input</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Coords</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">other</span>
+    <span class="p">);</span>
+
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Container</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1aa6d785a69b7f3b0704d67b3672f234e1"><span></span><span class="n">polygon_sort</span></span><span></span><span class="p">(</span><span class="n">Container</span><span class="o">&amp;</span> <span class="n">vertices</span><span class="p">);</span>
 

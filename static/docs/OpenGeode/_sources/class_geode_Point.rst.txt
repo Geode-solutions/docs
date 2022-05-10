@@ -34,6 +34,10 @@ Description of a point in the given dimension with double coordinates
 		Point :target:`operator/<doxid-classgeode_1_1_point_1af21d13fe05e29749aa399fd7ee013bb9>` (double divider) const;
 		Point :target:`operator +<doxid-classgeode_1_1_point_1a22151aab6c4e1c94578f7a7e93eef87a>` (const Point& other) const;
 		Point :target:`operator -<doxid-classgeode_1_1_point_1a281c4560a67109bee87f517997ddae15>` (const Point& other) const;
+		void :target:`operator *=<doxid-classgeode_1_1_point_1a0159ea07f187c6aed52ceffde3830d86>` (double multiplier);
+		void :target:`operator/=<doxid-classgeode_1_1_point_1a01766c14e3a3c99628f26133726aafe5>` (double divider);
+		void :target:`operator +=<doxid-classgeode_1_1_point_1aa35861cf278e23fd8721fa8f6aceb989>` (const Point& other);
+		void :target:`operator -=<doxid-classgeode_1_1_point_1aabe6dc4a793bfbc7e746f7cb4c274162>` (const Point& other);
 		bool :target:`inexact_equal<doxid-classgeode_1_1_point_1a019778a2d6a6bc70d113f4c7292bf795>`(const Point& other, double epsilon) const;
 		std::string :target:`string<doxid-classgeode_1_1_point_1aa5dd322eea26f1fa239b4e8d6ec094ef>`() const;
 	};
