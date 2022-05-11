@@ -43,6 +43,7 @@
 <span class="c1">// classes</span>
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_BRepGridMetric.html#doxid-classgeode-1-1-b-rep-grid-metric"><span class="std std-ref">BRepGridMetric</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRepMetricConstraints.html#doxid-classgeode-1-1-b-rep-metric-constraints"><span class="std std-ref">BRepMetricConstraints</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_ConstantMetric.html#doxid-classgeode-1-1-constant-metric"><span class="std std-ref">ConstantMetric</span></a><span></span><span class="p">;</span>
@@ -52,6 +53,8 @@
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_Metric.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_SectionMetricConstraints.html#doxid-classgeode-1-1-section-metric-constraints"><span class="std std-ref">SectionMetricConstraints</span></a><span></span><span class="p">;</span>
 
 <span class="c1">// global functions</span>
 
@@ -68,15 +71,25 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca4385eb3d676a070003e6270f6472ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0418407296b015103c7578c9c9c9a737"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Block</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a701f6897a4e87db11377f9081ccaa3cf"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8df2fe4dbae5eba91b79d7ae631ec4d4"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Corner</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9dd3655e0b4d0e1d23b6d3a8fd68c87b"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a74a13005266ccc48f0d9545d28c09dcb"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a00d59edb267adf404ca6e1ee957187be"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Corner</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4efa1c27af37ca80b792b5290f406968"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f0825f02564723bd52f856a1ae100c9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae6e689ab449ad55fffa309d356c002a0"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_ConstantMetric.html#doxid-classgeode-1-1-constant-metric"><span class="std std-ref">ConstantMetric</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a55897b30a3ff5e25684f4268a974caad"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PointSet</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae5a407c359cdfed3035da2857149c7c4"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_GridMetric.html#doxid-classgeode-1-1-grid-metric"><span class="std std-ref">GridMetric</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a713615f1e1f632a857fbbda376b9b832"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Segment</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3fbc1fb49f0ca7c4ea4744e735440007"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acccc96aede5f0687fbbeb3c7a80dde02"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Metric.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5cfa2b7765eb0c1e52445038d29a7317"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Corner</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a85b04296d2e759083127ceaf2a792264"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7da074eb0c591f0688ceeb11edd1fc9b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Metric.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a96755a4b4b643ca905a8a29e0a07543b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">Section</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplexremesh_section_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac00a2a574952aaffe6f0a16840b26db1"><span></span><span class="n">remesh</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>

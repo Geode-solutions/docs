@@ -8,9 +8,11 @@ namespace geode
 	:hidden:
 
 	class_geode_BRepGridMetric.rst
+	class_geode_BRepMetricConstraints.rst
 	class_geode_ConstantMetric.rst
 	class_geode_GridMetric.rst
 	class_geode_Metric.rst
+	class_geode_SectionMetricConstraints.rst
 
 
 
@@ -24,6 +26,7 @@ namespace geode
 	// classes
 
 	class :ref:`BRepGridMetric<doxid-classgeode_1_1_b_rep_grid_metric>`;
+	class :ref:`BRepMetricConstraints<doxid-classgeode_1_1_b_rep_metric_constraints>`;
 
 	template <index_t dimension>
 	class :ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`;
@@ -33,6 +36,8 @@ namespace geode
 
 	template <index_t dimension>
 	class :ref:`Metric<doxid-classgeode_1_1_metric>`;
+
+	class :ref:`SectionMetricConstraints<doxid-classgeode_1_1_section_metric_constraints>`;
 
 	// global functions
 
@@ -49,15 +54,25 @@ namespace geode
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(Block);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a701f6897a4e87db11377f9081ccaa3cf>`(RegularGrid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8df2fe4dbae5eba91b79d7ae631ec4d4>`(Corner);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9dd3655e0b4d0e1d23b6d3a8fd68c87b>`(Line);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(Surface);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a00d59edb267adf404ca6e1ee957187be>`(Corner);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(Surface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae6e689ab449ad55fffa309d356c002a0>`(:ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae5a407c359cdfed3035da2857149c7c4>`(:ref:`GridMetric<doxid-classgeode_1_1_grid_metric>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a713615f1e1f632a857fbbda376b9b832>`(Segment);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3fbc1fb49f0ca7c4ea4744e735440007>`(Triangle);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1acccc96aede5f0687fbbeb3c7a80dde02>`(:ref:`Metric<doxid-classgeode_1_1_metric>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a5cfa2b7765eb0c1e52445038d29a7317>`(Corner);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(Line);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a7da074eb0c591f0688ceeb11edd1fc9b>`(:ref:`Metric<doxid-classgeode_1_1_metric>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(Surface);
 
 	std::tuple<Section, ModelCopyMapping> geode_simplexremesh_section_api :target:`remesh<doxid-namespacegeode_1ac00a2a574952aaffe6f0a16840b26db1>`(
 		const Section& section,
