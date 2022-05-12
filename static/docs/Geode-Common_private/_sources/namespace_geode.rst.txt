@@ -54,6 +54,7 @@ namespace geode
 	class_geode_LicensedModule.rst
 	class_geode_PropagationSettings.rst
 	class_geode_RayTracing3D.rst
+	class_geode_RegularGridPointFunction.rst
 	class_geode_RegularGridScalarFunction.rst
 	class_geode_SectionGeometricModifier.rst
 	class_geode_SolidPathFinder.rst
@@ -63,6 +64,8 @@ namespace geode
 	class_geode_TetrahedraClosestThan.rst
 	class_geode_TetrahedralSolidEpsilonModifier.rst
 	class_geode_TetrahedralSolidModifier.rst
+	class_geode_TetrahedralSolidPointFunction.rst
+	class_geode_TetrahedralSolidScalarFunction.rst
 	class_geode_TrianglesClosestThan.rst
 	class_geode_TriangulatedSurfaceEpsilonModifier.rst
 	class_geode_TriangulatedSurfaceModifier.rst
@@ -186,6 +189,9 @@ Overview
 	class :ref:`RayTracing3D<doxid-classgeode_1_1_ray_tracing3_d>`;
 
 	template <index_t dimension>
+	class :ref:`RegularGridPointFunction<doxid-classgeode_1_1_regular_grid_point_function>`;
+
+	template <index_t dimension>
 	class :ref:`RegularGridScalarFunction<doxid-classgeode_1_1_regular_grid_scalar_function>`;
 
 	class :ref:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier>`;
@@ -201,6 +207,12 @@ Overview
 	class :ref:`TetrahedraClosestThan<doxid-classgeode_1_1_tetrahedra_closest_than>`;
 	class :ref:`TetrahedralSolidEpsilonModifier<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier>`;
 	class :ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`;
+
+	template <index_t dimension>
+	class :ref:`TetrahedralSolidPointFunction<doxid-classgeode_1_1_tetrahedral_solid_point_function>`;
+
+	template <index_t dimension>
+	class :ref:`TetrahedralSolidScalarFunction<doxid-classgeode_1_1_tetrahedral_solid_scalar_function>`;
 
 	template <index_t dimension>
 	class :ref:`TrianglesClosestThan<doxid-classgeode_1_1_triangles_closest_than>`;
@@ -465,7 +477,6 @@ Overview
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa3a77cddd3bb34d4120f88f3d36be399>`(:ref:`RegularGridScalarFunction<doxid-classgeode_1_1_regular_grid_scalar_function>`);
 
 	void geode_common_helpers_api :target:`perform_propagation<doxid-namespacegeode_1ade7ecbb9ca6e76e682b979d2f8acb541>`(
 		const TetrahedralSolid3D& solid,
@@ -480,6 +491,11 @@ Overview
 		:ref:`PropagationSettings<doxid-classgeode_1_1_propagation_settings>`& settings
 		);
 
+	void geode_common_interpolation_api :target:`initialize_interpolation<doxid-namespacegeode_1a797229b6d1f50384d7cbe6052c3a4503>`();
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa6ddcbb624385f54bdcf1dc8a027289d>`(:ref:`RegularGridPointFunction<doxid-classgeode_1_1_regular_grid_point_function>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa3a77cddd3bb34d4120f88f3d36be399>`(:ref:`RegularGridScalarFunction<doxid-classgeode_1_1_regular_grid_scalar_function>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a209df05cd0d3171410d26d91193060d3>`(:ref:`TetrahedralSolidPointFunction<doxid-classgeode_1_1_tetrahedral_solid_point_function>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ae9e0d03be26ef934e9a89f9b9c00f2d7>`(:ref:`TetrahedralSolidScalarFunction<doxid-classgeode_1_1_tetrahedral_solid_scalar_function>`);
 	void geode_common_mesh_repair_api :target:`initialize_mesh_repair<doxid-namespacegeode_1aac11f2412c9fca989fc3f1bae9c7538a>`();
 
 	template <index_t dimension>

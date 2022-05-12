@@ -32,7 +32,11 @@ Overview
 		void :target:`set_value<doxid-classgeode_1_1_regular_grid_scalar_function_1a09aee2e220ee65fbf331bffbc8986063>`(index_t vertex_index, double value);
 		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1ab032d243696e900380665f9854f476ea>`(const GridVertexIndices<dimension>& vertex_index) const;
 		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1aa6547f7fa9a6b7cffdedec9ad6f64dcc>`(index_t vertex_index) const;
-		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1a4522a22c271200d4c5699583f66e6302>`(const Point<dimension>& point) const;
+	
+		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1ad8aacf259ebad934f4d2657028f0c784>`(
+			const Point<dimension>& point,
+			const GridCellIndices<dimension>& grid_cell_indices
+			) const;
 	
 		static RegularGridScalarFunction<dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_scalar_function_1ad9dd9d9d1101e677d9972fcae411090c>`(
 			const RegularGrid<dimension>& grid,

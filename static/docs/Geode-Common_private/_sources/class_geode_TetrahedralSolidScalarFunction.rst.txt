@@ -1,0 +1,82 @@
+.. index:: pair: class; geode::TetrahedralSolidScalarFunction
+.. _doxid-classgeode_1_1_tetrahedral_solid_scalar_function:
+
+template class geode::TetrahedralSolidScalarFunction
+====================================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_scalar_function.h>
+	
+	template <index_t dimension>
+	class TetrahedralSolidScalarFunction
+	{
+	public:
+		// construction
+	
+		:target:`TetrahedralSolidScalarFunction<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a9d512366772d2fbcc1dd4cb29650fd63>`(TetrahedralSolidScalarFunction<dimension>&& other);
+
+		// methods
+	
+		void :target:`set_value<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1aa5ca51b28a71258ef442241d0e56c10c>`(index_t vertex_index, double value);
+		double :target:`value<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1ae05343cad361353121403e8ad531e649>`(index_t vertex_index) const;
+		double :target:`value<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1ace14b1d20c6f5f805c18e9709b5dc20b>`(const Point<dimension>& point, index_t tetrahedron_id) const;
+	
+		static TetrahedralSolidScalarFunction<dimension> :ref:`create<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a7646cf503756fc25d65d16e8c39cb16b>`(
+			const TetrahedralSolid<dimension>& grid,
+			absl::string_view function_name,
+			double value
+			);
+	
+		static TetrahedralSolidScalarFunction<dimension> :ref:`find<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a90fefff4f991891f46236024f631112a>`(
+			const TetrahedralSolid<dimension>& grid,
+			absl::string_view function_name
+			);
+	};
+.. _details-classgeode_1_1_tetrahedral_solid_scalar_function:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a7646cf503756fc25d65d16e8c39cb16b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static TetrahedralSolidScalarFunction<dimension> create(
+		const TetrahedralSolid<dimension>& grid,
+		absl::string_view function_name,
+		double value
+		)
+
+Create a new object function from a TetrahedralSolid, a name, and a value. Throws an exception if an attribute with the same name exists.
+
+.. index:: pair: function; find
+.. _doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a90fefff4f991891f46236024f631112a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static TetrahedralSolidScalarFunction<dimension> find(
+		const TetrahedralSolid<dimension>& grid,
+		absl::string_view function_name
+		)
+
+Finds an object function that already exists in the given TetrahedralSolid, from its given name. Throws an exception if no attribute with the same name exists.
+
