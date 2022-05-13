@@ -135,6 +135,7 @@ Inherited Members
 		std::enable_if<T==3, Vector3D>::type :ref:`polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1ac11c243a8507b7a5590b48ca05d50648>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 	
 		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a3c64897434c58970bbf1e9d05d8ef826>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a96c308bad90e88ac2e1c19e431320b9e>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
 		bool :ref:`is_vertex_on_border<doxid-classgeode_1_1_solid_mesh_1a6c42099f25a0ab99ade3b87973bc1749>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		bool :ref:`is_edge_on_border<doxid-classgeode_1_1_solid_mesh_1a78192ae66cdae976ca698983037100b5>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 	
@@ -144,6 +145,7 @@ Inherited Members
 			) const;
 	
 		virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1acf73eb0cf305960a2f9759198332caa0>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
+		virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1a1613b959b9af44b5e1813ca8b00f86d5>`(const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& edge) const;
 	
 		virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1a3067852c0b40b0d60ae850a431f09261>`(
 			const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices,
@@ -229,7 +231,7 @@ Create a new :ref:`TetrahedralSolid <doxid-classgeode_1_1_tetrahedral_solid>` us
 
 	virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` polyhedra_around_edge(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const
 
-Get all the polyhedra with both edge vertices.
+Get all the polyhedra with both edge vertices. This function needs that polyhedron adjacencies are computed
 
 
 
@@ -254,7 +256,7 @@ Get all the polyhedra with both edge vertices.
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` first_polyhedron
 		) const
 
-Get all the polyhedra with both edge vertices.
+Get all the polyhedra with both edge vertices. This function needs that polyhedron adjacencies are computed
 
 
 
@@ -271,7 +273,7 @@ Get all the polyhedra with both edge vertices.
 	*
 		- first_polyhedron
 
-		- One polyhedron index to begin research
+		- One polyhedron index to begin research.
 
 .. index:: pair: function; opposite_edge_incident_facets
 .. _doxid-classgeode_1_1_tetrahedral_solid_1afda064aae91c9f4ecdb0a6b527468b14:

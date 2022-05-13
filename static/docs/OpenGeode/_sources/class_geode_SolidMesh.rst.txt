@@ -73,6 +73,7 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		std::enable_if<T==3, Vector3D>::type :ref:`polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1ac11c243a8507b7a5590b48ca05d50648>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 	
 		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a3c64897434c58970bbf1e9d05d8ef826>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a96c308bad90e88ac2e1c19e431320b9e>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
 		bool :ref:`is_vertex_on_border<doxid-classgeode_1_1_solid_mesh_1a6c42099f25a0ab99ade3b87973bc1749>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		bool :ref:`is_edge_on_border<doxid-classgeode_1_1_solid_mesh_1a78192ae66cdae976ca698983037100b5>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 	
@@ -82,6 +83,7 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 			) const;
 	
 		virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1acf73eb0cf305960a2f9759198332caa0>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
+		virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1a1613b959b9af44b5e1813ca8b00f86d5>`(const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& edge) const;
 	
 		virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_solid_mesh_1a3067852c0b40b0d60ae850a431f09261>`(
 			const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices,
@@ -637,7 +639,7 @@ Return the normal of a given :ref:`PolyhedronFacet <doxid-structgeode_1_1_polyhe
 
 	:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` polyhedra_around_vertex(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
 
-Get all the polyhedra with one of the vertices matching given vertex.
+Get all the polyhedra with one of the vertices matching given vertex. This function needs that polyhedron adjacencies are computed
 
 
 
@@ -649,7 +651,29 @@ Get all the polyhedra with one of the vertices matching given vertex.
 	*
 		- vertex_id
 
-		- Index of the vertex
+		- Index of the vertex.
+
+.. index:: pair: function; polyhedra_around_vertex
+.. _doxid-classgeode_1_1_solid_mesh_1a96c308bad90e88ac2e1c19e431320b9e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` polyhedra_around_vertex(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const
+
+Get all the polyhedra with one of the vertices matching given polyhedron vertex. This function needs that polyhedron adjacencies are computed
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polyhedron_vertex
+
+		- Local index of vertex in polyhedron.
 
 .. index:: pair: function; is_vertex_on_border
 .. _doxid-classgeode_1_1_solid_mesh_1a6c42099f25a0ab99ade3b87973bc1749:
@@ -659,7 +683,7 @@ Get all the polyhedra with one of the vertices matching given vertex.
 
 	bool is_vertex_on_border(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
 
-Return true if at least one of the polyhedron facets around the vertex is on border
+Return true if at least one of the polyhedron facets around the vertex is on border. This function needs that polyhedron adjacencies are computed
 
 
 
@@ -671,7 +695,7 @@ Return true if at least one of the polyhedron facets around the vertex is on bor
 	*
 		- vertex_id
 
-		- Index of the vertex
+		- Index of the vertex.
 
 .. index:: pair: function; is_edge_on_border
 .. _doxid-classgeode_1_1_solid_mesh_1a78192ae66cdae976ca698983037100b5:
@@ -733,7 +757,7 @@ Return true if at least one of the polyhedron facets around the edges is on bord
 
 	virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` polyhedra_around_edge(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const
 
-Get all the polyhedra with both edge vertices.
+Get all the polyhedra with both edge vertices. This function needs that polyhedron adjacencies are computed
 
 
 
@@ -748,6 +772,28 @@ Get all the polyhedra with both edge vertices.
 		- Indices of edge vertices.
 
 .. index:: pair: function; polyhedra_around_edge
+.. _doxid-classgeode_1_1_solid_mesh_1a1613b959b9af44b5e1813ca8b00f86d5:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` polyhedra_around_edge(const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& edge) const
+
+Get all the polyhedra around the edge. This function needs that polyhedron adjacencies are computed
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge
+
+		- Local index of an edge in a polyhedron.
+
+.. index:: pair: function; polyhedra_around_edge
 .. _doxid-classgeode_1_1_solid_mesh_1a3067852c0b40b0d60ae850a431f09261:
 
 .. ref-code-block:: cpp
@@ -758,7 +804,7 @@ Get all the polyhedra with both edge vertices.
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` first_polyhedron
 		) const
 
-Get all the polyhedra with both edge vertices.
+Get all the polyhedra with both edge vertices. This function needs that polyhedron adjacencies are computed
 
 
 
@@ -775,7 +821,7 @@ Get all the polyhedra with both edge vertices.
 	*
 		- first_polyhedron
 
-		- One polyhedron index to begin research
+		- One polyhedron index to begin research.
 
 .. index:: pair: function; polyhedra_from_facet
 .. _doxid-classgeode_1_1_solid_mesh_1aacd59a2158aeb1e465367f666e61c785:

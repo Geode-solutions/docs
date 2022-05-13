@@ -75,6 +75,7 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`new_polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a4416e307e02aff4473789d373ea97e64>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	
 		:ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>` :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1a2dec484d66448843d6d774f92ce99c3b>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		:ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>` :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1addd0e0b5469798749d0b7cfaa140eafe>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& vertex) const;
 	
 		absl::optional<:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`> :ref:`polygon_edge_from_vertices<doxid-classgeode_1_1_surface_mesh_1a15bb1b056123e2389c5c9ef0e78b38e2>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` from_vertex_id,
@@ -693,6 +694,28 @@ Get all the polygons with one of the vertices matching given vertex. This functi
 		- vertex_id
 
 		- Index of the vertex.
+
+.. index:: pair: function; polygons_around_vertex
+.. _doxid-classgeode_1_1_surface_mesh_1addd0e0b5469798749d0b7cfaa140eafe:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>` polygons_around_vertex(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& vertex) const
+
+Get all the polygons with one of the vertices matching given vertex. This function needs that polygon adjacencies are computed
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polygon_vertex
+
+		- Local index of vertex in polygon.
 
 .. index:: pair: function; polygon_edge_from_vertices
 .. _doxid-classgeode_1_1_surface_mesh_1a15bb1b056123e2389c5c9ef0e78b38e2:
