@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>template class geode::DistanceToEdge &#8212; Python  documentation</title>
+    <title>template class geode::DistanceToTetrahedron &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::DistanceToTetrahedron" href="class_geode_DistanceToTetrahedron.html" />
-    <link rel="prev" title="template class geode::DefaultGrowable" href="class_geode_DefaultGrowable.html" />
+    <link rel="next" title="template class geode::DistanceToTriangle" href="class_geode_DistanceToTriangle.html" />
+    <link rel="prev" title="template class geode::DistanceToEdge" href="class_geode_DistanceToEdge.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,23 +34,23 @@
 
           <div class="body" role="main">
             
-  <section id="template-class-geode-distancetoedge">
-<span id="doxid-classgeode-1-1-distance-to-edge"></span><span id="index-0"></span><h1>template class geode::DistanceToEdge</h1>
+  <section id="template-class-geode-distancetotetrahedron">
+<span id="doxid-classgeode-1-1-distance-to-tetrahedron"></span><span id="index-0"></span><h1>template class geode::DistanceToTetrahedron</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;aabb_edged_curve_helpers.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;aabb_solid_helpers.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="n">DistanceToEdge</span>
+<span class="k">class</span> <span class="n">DistanceToTetrahedron</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-distance-to-edge-1a34a4389768c589572fc67e40a491ac83"><span></span><span class="n">DistanceToEdge</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-distance-to-tetrahedron-1a4dbc44b37aa419872227a9cd6f54f396"><span></span><span class="n">DistanceToTetrahedron</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-distance-to-edge-1a1d99041be67cf6a243e17953065def9b"><span></span><span class="k">operator</span> <span class="p">()</span></span><span></span> <span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-distance-to-tetrahedron-1ace4b00d181d7046cfe46091347d1e225"><span></span><span class="k">operator</span> <span class="p">()</span></span><span></span> <span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">query</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">cur_box</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
@@ -71,7 +71,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/class_geode_DistanceToEdge.rst.txt"
+      <a href="_sources/class_geode_DistanceToTetrahedron.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

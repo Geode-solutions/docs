@@ -59,6 +59,7 @@ namespace geode
 	class_geode_DecrementOperator.rst
 	class_geode_DefaultGrowable.rst
 	class_geode_DistanceToEdge.rst
+	class_geode_DistanceToTetrahedron.rst
 	class_geode_DistanceToTriangle.rst
 	class_geode_EdgedCurve.rst
 	class_geode_EdgedCurveBuilder.rst
@@ -408,6 +409,9 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`DistanceToEdge<doxid-classgeode_1_1_distance_to_edge>`;
+
+	template <index_t dimension>
+	class :ref:`DistanceToTetrahedron<doxid-classgeode_1_1_distance_to_tetrahedron>`;
 
 	template <index_t dimension>
 	class :ref:`DistanceToTriangle<doxid-classgeode_1_1_distance_to_triangle>`;
@@ -1168,11 +1172,17 @@ Overview
 	template <index_t dimension>
 	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1a0d28522356eb132aec3133d2b376f40a>`(const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh);
 
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`);
+
+	template <index_t dimension>
+	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1ac9dd68d53cd385d28fa2dd6a52a97be6>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& mesh);
+
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3441eec525b1a811e86a28146e4abcc6>`(:ref:`DistanceToTetrahedron<doxid-classgeode_1_1_distance_to_tetrahedron>`);
+
 	template <index_t dimension>
 	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1ab8ef3e331d6a87e8d072ae4e7d473eaa>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh);
 
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a09e5e2ee9a47e15d877cc2593aad4911>`(:ref:`DistanceToTriangle<doxid-classgeode_1_1_distance_to_triangle>`);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`);
 	absl::optional<std::unique_ptr<TetrahedralSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_tetrahedral_solid<doxid-namespacegeode_1ad88abdc0180700dd94d4dc05d56f4149>`(const SolidMesh3D& solid);
 
 	template <index_t dimension>
