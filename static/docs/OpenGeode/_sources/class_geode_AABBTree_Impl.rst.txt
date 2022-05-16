@@ -27,10 +27,13 @@ AABB tree structure implementation The tree is store in s single vector followin
 
 		// construction
 	
+		:target:`Impl<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a08065f53d8566a0d5728aac472bb11bb>`();
 		:target:`Impl<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a8e518906a98c560b10ee66e75f89c593>`(absl::Span<const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>> bboxes);
+		:target:`Impl<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1ac26a3938b1b08fb2eeffbe174d6fa0ef>`(Impl&& other);
 
 		// methods
 	
+		Impl& :target:`operator =<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a5b7960499758181a0a1bd132b8fed880>` (Impl&& other);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_bboxes<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a5931e3f90255df24d747b34aa38a9bdb>`() const;
 		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& :target:`node<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a16e15f764b7c6c97be727c6b60855a62>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
 		void :target:`set_node<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1ae9c093fe9ba72709ae525b3afe9100a1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index, const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box);

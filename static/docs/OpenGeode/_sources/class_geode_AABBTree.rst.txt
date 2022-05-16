@@ -35,11 +35,13 @@ Overview
 
 		// construction
 	
-		:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1a5946d01f19301b57c2040e76dcf271d3>`(absl::Span<const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>> bboxes);
-		:target:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1aa94c01bb152254e5eaa7326e0612e52f>`(AABBTree&&);
+		:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1a15a30ecc86d4ba1cd504ad6eeeb38c2e>`();
+		:target:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1a5946d01f19301b57c2040e76dcf271d3>`(absl::Span<const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>> bboxes);
+		:target:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1aa46b589d373f758717e8388254ee29db>`(AABBTree&&);
 
 		// methods
 	
+		AABBTree& :target:`operator =<doxid-classgeode_1_1_a_a_b_b_tree_1a1038006ebb78e73b13e34ce9ab7abbc5>` (AABBTree&& other);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_bboxes<doxid-classgeode_1_1_a_a_b_b_tree_1a279a079000abc4d4319b8dfce24ec5cf>`() const;
 		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& :target:`bounding_box<doxid-classgeode_1_1_a_a_b_b_tree_1afe20612e9621aa930458d1d9878b9745>`() const;
 	
@@ -81,12 +83,12 @@ Construction
 ------------
 
 .. index:: pair: function; AABBTree
-.. _doxid-classgeode_1_1_a_a_b_b_tree_1a5946d01f19301b57c2040e76dcf271d3:
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1a15a30ecc86d4ba1cd504ad6eeeb38c2e:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	AABBTree(absl::Span<const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>> bboxes)
+	AABBTree()
 
 AABB is a search tree for fast spatial request using the bounding box organisation of elements stored in a single container.
 
