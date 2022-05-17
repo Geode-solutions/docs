@@ -31,6 +31,7 @@ struct geode::PolyhedronFacetEdge
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_polyhedron_facet_edge_1ab644be2df19c1d3b13cbd1dcd4ecdc7f>` (const PolyhedronFacetEdge& other) const;
 		bool :target:`operator !=<doxid-structgeode_1_1_polyhedron_facet_edge_1a71967235658f813bfa5f05f8e3ecfee9>` (const PolyhedronFacetEdge& other) const;
+		std::string :target:`string<doxid-structgeode_1_1_polyhedron_facet_edge_1a805c80c4048cf6a7d821c9357ef5c47f>`() const;
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_polyhedron_facet_edge_1aa1ba1f87f1ef6d11a91b0ba16006f2ae>`(Archive& archive);

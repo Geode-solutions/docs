@@ -31,6 +31,7 @@ This struct represents a facet in a polyhedron
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_polyhedron_facet_1a96331e1c8b0c8e05523ec2b99f6f9b68>` (const PolyhedronFacet& other) const;
 		bool :target:`operator !=<doxid-structgeode_1_1_polyhedron_facet_1a19e110343ea8c0f2bb7f8abe64fcc042>` (const PolyhedronFacet& other) const;
+		std::string :target:`string<doxid-structgeode_1_1_polyhedron_facet_1ab617ebf55cc5a64ceaea3fb59ce17115>`() const;
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_polyhedron_facet_1a26801517bab62a2e92ea622e9f4efe12>`(Archive& archive);

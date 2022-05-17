@@ -32,6 +32,7 @@ This struct represents a local vertex in a polygon
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_polygon_vertex_1affbd5665ff21740474b8d95cc9e3e7a4>` (const PolygonVertex& other) const;
 		bool :target:`operator !=<doxid-structgeode_1_1_polygon_vertex_1a5584122877dd4aaee200b4efdb46e89f>` (const PolygonVertex& other) const;
+		std::string :target:`string<doxid-structgeode_1_1_polygon_vertex_1ad0c18b7c5960fe507c82ab3f32f4ca89>`() const;
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_polygon_vertex_1ae8770b042e644e7f9c7bb067acb1518c>`(Archive& archive);
