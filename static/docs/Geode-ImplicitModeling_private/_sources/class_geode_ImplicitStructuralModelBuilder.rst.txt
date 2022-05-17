@@ -27,8 +27,8 @@ Class managing modifications of a :ref:`ImplicitStructuralModel <doxid-classgeod
 		void :target:`copy<doxid-classgeode_1_1_implicit_structural_model_builder_1a0416e37c3b401b46a5998bf0659cb004>`(const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model);
 		void :target:`instantiate_stratigraphic_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_builder_1ae22ff633115fa13031b3a172f38971bd>`();
 	
-		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_builder_1a5708da97c836080e19658179e641fe1c>`(
-			const uuid& component_id,
+		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_builder_1a6e76830acc803b841a374f0867b12e0d>`(
+			const Block3D& block,
 			index_t vertex_id,
 			Point3D value
 			);

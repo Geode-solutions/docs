@@ -38,7 +38,9 @@
 <span id="doxid-classgeode-1-1-implicit-structural-model"></span><span id="index-0"></span><h1>class geode::ImplicitStructuralModel</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>An Implicit Model is a Structural model where each block has a specific attribute to store the stratigraphic coordinates of its vertices.</p>
+<section id="overview">
+<h2>Overview</h2>
+<p>An Implicit Model is a Structural model where each block has a specific attribute to store the stratigraphic coordinates of its vertices. <a class="reference internal" href="#details-classgeode-1-1-implicit-structural-model"><span class="std std-ref">More…</span></a></p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;implicit_structural_model.h&gt;</span><span class="cp"></span>
 
 <span class="k">class</span> <span class="nl">ImplicitStructuralModel</span><span class="p">:</span> <span class="k">public</span> <span class="n">StructuralModel</span>
@@ -54,15 +56,26 @@
 
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a7db14da19101e19fe01bd10d345341f8"><span></span><span class="n">native_extension</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1ab0481dda773dad5011ef0f9982b5a753"><span></span><span class="n">stratigraphic_coordinates</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1a081d311ade531d37333a8f1ae7194161"><span class="std std-ref">stratigraphic_coordinates</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
         <span class="n">index_t</span> <span class="n">vertex_id</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">Point3D</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1afb15e78cd08233bb9db3418f51e725eb"><span class="std std-ref">stratigraphic_coordinates</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">geometric_point</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">Point3D</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1ab6078d7c01975ffc1d7ac4a3e65ea3b8"><span class="std std-ref">stratigraphic_coordinates</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">geometric_point</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">polyhedron_id</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a60b40e7b49cf5b1f728fbaf22f0d9613"><span></span><span class="n">instantiate_stratigraphic_attribute_on_blocks</span></span><span></span><span class="p">(</span><span class="n">ImplicitStructuralModelBuilderKey</span><span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a93dd3b3c5240591bfa8e1c0a2db2a942"><span></span><span class="n">set_stratigraphic_coordinates</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">,</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1adc83dec63bf94995c79337d65e369fca"><span></span><span class="n">set_stratigraphic_coordinates</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
         <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span>
         <span class="n">Point3D</span> <span class="n">value</span><span class="p">,</span>
         <span class="n">ImplicitStructuralModelBuilderKey</span>
@@ -70,6 +83,30 @@
 
     <span class="k">static</span> <span class="k">constexpr</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1aa69265945e3e076b61a3cf1367dc8325"><span></span><span class="n">native_extension_static</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
+</section>
+<section id="detailed-documentation">
+<span id="details-classgeode-1-1-implicit-structural-model"></span><h2>Detailed Documentation</h2>
+<p>An Implicit Model is a Structural model where each block has a specific attribute to store the stratigraphic coordinates of its vertices.</p>
+<section id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1a081d311ade531d37333a8f1ae7194161"><span id="index-1"></span><span></span><span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">stratigraphic_coordinates</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex_id</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the value of the point stratigraphic coordinates at the given vertex of the given block.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1afb15e78cd08233bb9db3418f51e725eb"><span id="index-2"></span><span></span><span class="n">Point3D</span> <span class="n">stratigraphic_coordinates</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">geometric_point</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the value of the point stratigraphic coordinates, calculated in the polyhedron closest to the given point, in the given block.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1ab6078d7c01975ffc1d7ac4a3e65ea3b8"><span id="index-3"></span><span></span><span class="n">Point3D</span> <span class="n">stratigraphic_coordinates</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">geometric_point</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">polyhedron_id</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the value of the point stratigraphic coordinates, calculated in the given polyhedron of the given block.</p>
+</section>
+</section>
 </section>
 
 
