@@ -32,4 +32,5 @@ template struct geode::Mapping<index_t>
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1a5c7fc26a560eb88fde8558cee3c7dae0>` (const :ref:`Mapping<doxid-structgeode_1_1_mapping>`& other) const;
 		bool :target:`operator <<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1a4d681997e5feaf62bd4b508a60c1ac78>` (const :ref:`Mapping<doxid-structgeode_1_1_mapping>`& other) const;
+		std::string :target:`string<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1aae78febe999099a833f5430b8754a3fe>`() const;
 	};

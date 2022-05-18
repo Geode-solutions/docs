@@ -32,4 +32,5 @@ template struct geode::MultiMapping<index_t>
 		// methods
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4_1a900b956621dab2aa5d8d9dc03899c38e>` (const :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`& other) const;
+		std::string :target:`string<doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4_1ae99c9fa29a359489d05cad2e0130e6dc>`() const;
 	};
