@@ -47,6 +47,17 @@ An Implicit Model is a Structural model where each block has a specific attribut
 			index_t polyhedron_id
 			) const;
 	
+		Point3D :ref:`geometric_coordinates<doxid-classgeode_1_1_implicit_structural_model_1a4399a075ef5f371b3603568ece72732f>`(
+			const Block3D& block,
+			const Point3D& stratigraphic_point
+			) const;
+	
+		Point3D :ref:`geometric_coordinates<doxid-classgeode_1_1_implicit_structural_model_1a2e67bf0dd58750bc78573d971e8b9a5a>`(
+			const Block3D& block,
+			const Point3D& stratigraphic_point,
+			index_t polyhedron_id
+			) const;
+	
 		void :target:`instantiate_stratigraphic_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_1a60b40e7b49cf5b1f728fbaf22f0d9613>`(ImplicitStructuralModelBuilderKey);
 	
 		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_1adc83dec63bf94995c79337d65e369fca>`(
@@ -79,7 +90,7 @@ Methods
 		index_t vertex_id
 		) const
 
-Return the value of the point stratigraphic coordinates at the given vertex of the given block.
+Return the stratigraphic coordinates of the point at the given vertex of the given block.
 
 .. index:: pair: function; stratigraphic_coordinates
 .. _doxid-classgeode_1_1_implicit_structural_model_1afb15e78cd08233bb9db3418f51e725eb:
@@ -92,7 +103,7 @@ Return the value of the point stratigraphic coordinates at the given vertex of t
 		const Point3D& geometric_point
 		) const
 
-Return the value of the point stratigraphic coordinates, calculated in the polyhedron closest to the given point, in the given block.
+Return the stratigraphic coordinates of the point, calculated in the polyhedron closest to the given point, in the given block.
 
 .. index:: pair: function; stratigraphic_coordinates
 .. _doxid-classgeode_1_1_implicit_structural_model_1ab6078d7c01975ffc1d7ac4a3e65ea3b8:
@@ -106,5 +117,32 @@ Return the value of the point stratigraphic coordinates, calculated in the polyh
 		index_t polyhedron_id
 		) const
 
-Return the value of the point stratigraphic coordinates, calculated in the given polyhedron of the given block.
+Return the stratigraphic coordinates of the point, calculated in the given polyhedron of the given block.
+
+.. index:: pair: function; geometric_coordinates
+.. _doxid-classgeode_1_1_implicit_structural_model_1a4399a075ef5f371b3603568ece72732f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Point3D geometric_coordinates(
+		const Block3D& block,
+		const Point3D& stratigraphic_point
+		) const
+
+Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the polyhedron closest to the given coordinates in the stratigraphic space, in the given block.
+
+.. index:: pair: function; geometric_coordinates
+.. _doxid-classgeode_1_1_implicit_structural_model_1a2e67bf0dd58750bc78573d971e8b9a5a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Point3D geometric_coordinates(
+		const Block3D& block,
+		const Point3D& stratigraphic_point,
+		index_t polyhedron_id
+		) const
+
+Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the given polyhedron of the given block.
 
