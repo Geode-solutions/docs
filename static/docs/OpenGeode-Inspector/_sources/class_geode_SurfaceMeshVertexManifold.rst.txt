@@ -28,5 +28,10 @@ Class for inspecting the manifold property of a SurfaceMesh
 	
 		bool :target:`mesh_vertices_are_manifold<doxid-classgeode_1_1_surface_mesh_vertex_manifold_1a3fb919c515f7bc5d3da77ff93978dc17>`() const;
 		index_t :target:`nb_non_manifold_vertices<doxid-classgeode_1_1_surface_mesh_vertex_manifold_1ab42e0f2173c9840ed688920b55b3b5cd>`() const;
-		const std::vector<index_t>& :target:`non_manifold_vertices<doxid-classgeode_1_1_surface_mesh_vertex_manifold_1a70beba0004944e6299d7fae20fda3e36>`() const;
+		std::vector<index_t> :target:`non_manifold_vertices<doxid-classgeode_1_1_surface_mesh_vertex_manifold_1a1a2520e5a8747636aadb0bfd1f8b4de3>`() const;
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`;

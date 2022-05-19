@@ -50,6 +50,10 @@ Class for inspecting the topology of a BRep model corners :ref:`More...<details-
 		std::vector<index_t> :target:`part_of_invalid_multiple_surfaces_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1ad3af047e2441fc6fb5d6d265e864df25>`() const;
 		std::vector<index_t> :target:`part_of_invalid_blocks_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a5244f4a9527e2038ebf9811c2daaaae6>`() const;
 	};
+
+	// direct descendants
+
+	class :ref:`BRepInspector<doxid-classgeode_1_1_b_rep_inspector>`;
 .. _details-classgeode_1_1_b_rep_topology_inspector:
 
 Detailed Documentation

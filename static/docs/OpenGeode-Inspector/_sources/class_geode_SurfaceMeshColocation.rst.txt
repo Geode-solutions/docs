@@ -30,3 +30,8 @@ Class for inspecting the colocation of points in a SurfaceMesh
 		index_t :target:`nb_colocated_points<doxid-classgeode_1_1_surface_mesh_colocation_1afa6b9f940e609757d3de198f53a119bb>`() const;
 		std::vector<std::vector<index_t>> :target:`colocated_points_groups<doxid-classgeode_1_1_surface_mesh_colocation_1a184d12ddc78e6d0a5d361637843eba5d>`() const;
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`;

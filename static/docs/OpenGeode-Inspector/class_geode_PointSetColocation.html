@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::SectionTopologyInspector" href="class_geode_SectionTopologyInspector.html" />
-    <link rel="prev" title="template class geode::EdgedCurveDegeneration" href="class_geode_EdgedCurveDegeneration.html" />
+    <link rel="next" title="template class geode::PointSetInspector" href="class_geode_PointSetInspector.html" />
+    <link rel="prev" title="template class geode::EdgedCurveInspector" href="class_geode_EdgedCurveInspector.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -55,7 +55,19 @@
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-set-colocation-1aa553ad676d03e83b02b6034b68a8fe56"><span></span><span class="n">mesh_has_colocated_points</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-set-colocation-1a240d6add4e657ca430cbc8e6550772ee"><span></span><span class="n">nb_colocated_points</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-point-set-colocation-1af19a68e17efba9eb89f2972e626e973a"><span></span><span class="n">colocated_points_groups</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span></pre>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">template</span> <span class="o">&lt;</span>
+    <span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Mesh</span><span class="p">,</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span><span class="p">...</span> <span class="n">Inspectors</span>
+    <span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_AddInspectors.html#doxid-classgeode-1-1-add-inspectors"><span class="std std-ref">AddInspectors</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_PointSetInspector.html#doxid-classgeode-1-1-point-set-inspector"><span class="std std-ref">PointSetInspector</span></a><span></span><span class="p">;</span></pre>
 </section>
 
 

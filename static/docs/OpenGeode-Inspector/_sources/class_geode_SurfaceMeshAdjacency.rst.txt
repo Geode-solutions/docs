@@ -28,5 +28,17 @@ Class for inspecting the adjacency on the edges of a SurfaceMesh
 	
 		bool :target:`mesh_has_wrong_adjacencies<doxid-classgeode_1_1_surface_mesh_adjacency_1a5a83254e11ba79da9ce0fe24ce1df78d>`() const;
 		index_t :target:`nb_edges_with_wrong_adjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1a30277596e668fb902bf205e7cf567b4a>`() const;
-		const std::vector<PolygonEdge>& :target:`polygon_edges_with_wrong_adjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1a0e11281b34b9af143c80c1e9d04e92c9>`() const;
+		std::vector<PolygonEdge> :target:`polygon_edges_with_wrong_adjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1aff82d9e182ab2115a2197452e4642598>`() const;
 	};
+
+	// direct descendants
+
+	template <
+		index_t dimension,
+		template<index_t> class Mesh,
+		template<index_t> class... Inspectors
+		>
+	class :ref:`AddInspectors<doxid-classgeode_1_1_add_inspectors>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`;

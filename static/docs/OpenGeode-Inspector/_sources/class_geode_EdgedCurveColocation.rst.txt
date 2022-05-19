@@ -30,3 +30,15 @@ Class for inspecting the colocation of points in an EdgedCurve
 		index_t :target:`nb_colocated_points<doxid-classgeode_1_1_edged_curve_colocation_1a510086a05ef8e4f93a7749560730c76d>`() const;
 		std::vector<std::vector<index_t>> :target:`colocated_points_groups<doxid-classgeode_1_1_edged_curve_colocation_1a8816bdbd2b1f8045ccd016baeccb0054>`() const;
 	};
+
+	// direct descendants
+
+	template <
+		index_t dimension,
+		template<index_t> class Mesh,
+		template<index_t> class... Inspectors
+		>
+	class :ref:`AddInspectors<doxid-classgeode_1_1_add_inspectors>`;
+
+	template <index_t dimension>
+	class :ref:`EdgedCurveInspector<doxid-classgeode_1_1_edged_curve_inspector>`;

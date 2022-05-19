@@ -8,17 +8,24 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
+	class_geode_AddInspectors.rst
+	class_geode_BRepInspector.rst
 	class_geode_BRepTopologyInspector.rst
 	class_geode_EdgedCurveColocation.rst
 	class_geode_EdgedCurveDegeneration.rst
+	class_geode_EdgedCurveInspector.rst
 	class_geode_PointSetColocation.rst
+	class_geode_PointSetInspector.rst
+	class_geode_SectionInspector.rst
 	class_geode_SectionTopologyInspector.rst
 	class_geode_SolidMeshColocation.rst
 	class_geode_SolidMeshDegeneration.rst
+	class_geode_SolidMeshInspector.rst
 	class_geode_SurfaceMeshAdjacency.rst
 	class_geode_SurfaceMeshColocation.rst
 	class_geode_SurfaceMeshDegeneration.rst
 	class_geode_SurfaceMeshEdgeManifold.rst
+	class_geode_SurfaceMeshInspector.rst
 	class_geode_SurfaceMeshVertexManifold.rst
 
 
@@ -36,6 +43,14 @@ namespace geode
 
 	// classes
 
+	template <
+		index_t dimension,
+		template<index_t> class Mesh,
+		template<index_t> class... Inspectors
+		>
+	class :ref:`AddInspectors<doxid-classgeode_1_1_add_inspectors>`;
+
+	class :ref:`BRepInspector<doxid-classgeode_1_1_b_rep_inspector>`;
 	class :ref:`BRepTopologyInspector<doxid-classgeode_1_1_b_rep_topology_inspector>`;
 
 	template <index_t dimension>
@@ -45,8 +60,15 @@ namespace geode
 	class :ref:`EdgedCurveDegeneration<doxid-classgeode_1_1_edged_curve_degeneration>`;
 
 	template <index_t dimension>
+	class :ref:`EdgedCurveInspector<doxid-classgeode_1_1_edged_curve_inspector>`;
+
+	template <index_t dimension>
 	class :ref:`PointSetColocation<doxid-classgeode_1_1_point_set_colocation>`;
 
+	template <index_t dimension>
+	class :ref:`PointSetInspector<doxid-classgeode_1_1_point_set_inspector>`;
+
+	class :ref:`SectionInspector<doxid-classgeode_1_1_section_inspector>`;
 	class :ref:`SectionTopologyInspector<doxid-classgeode_1_1_section_topology_inspector>`;
 
 	template <index_t dimension>
@@ -54,6 +76,9 @@ namespace geode
 
 	template <index_t dimension>
 	class :ref:`SolidMeshDegeneration<doxid-classgeode_1_1_solid_mesh_degeneration>`;
+
+	template <index_t dimension>
+	class :ref:`SolidMeshInspector<doxid-classgeode_1_1_solid_mesh_inspector>`;
 
 	template <index_t dimension>
 	class :ref:`SurfaceMeshAdjacency<doxid-classgeode_1_1_surface_mesh_adjacency>`;
@@ -68,6 +93,9 @@ namespace geode
 	class :ref:`SurfaceMeshEdgeManifold<doxid-classgeode_1_1_surface_mesh_edge_manifold>`;
 
 	template <index_t dimension>
+	class :ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`;
+
+	template <index_t dimension>
 	class :ref:`SurfaceMeshVertexManifold<doxid-classgeode_1_1_surface_mesh_vertex_manifold>`;
 
 	// global functions
@@ -79,12 +107,16 @@ namespace geode
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a4b2d28efbacafeb880afa46dafde9c74>`(:ref:`PointSetColocation<doxid-classgeode_1_1_point_set_colocation>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a11fdfe07e5cec7ff5d7bec02a87386b5>`(:ref:`SolidMeshColocation<doxid-classgeode_1_1_solid_mesh_colocation>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ac2b0f04dcc3064a9ed051d4cfba98e9e>`(:ref:`SolidMeshColocation<doxid-classgeode_1_1_solid_mesh_colocation>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a5c56a8e1948596ea1b00836a73c42bba>`(:ref:`SurfaceMeshColocation<doxid-classgeode_1_1_surface_mesh_colocation>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab292174f383abd1f6d6e3a596d86a0f2>`(:ref:`EdgedCurveDegeneration<doxid-classgeode_1_1_edged_curve_degeneration>`);
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a927bcadf35dfee270dcfea338151c890>`(:ref:`SolidMeshDegeneration<doxid-classgeode_1_1_solid_mesh_degeneration>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a8dfb66533ed1e61b31ff95a6aa0e3a9d>`(:ref:`SolidMeshDegeneration<doxid-classgeode_1_1_solid_mesh_degeneration>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6c59b52d1edafda37285841ba7388aa1>`(:ref:`SurfaceMeshDegeneration<doxid-classgeode_1_1_surface_mesh_degeneration>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a34b07f05f2aff0940c7d9e8f3c31cfb8>`(:ref:`SurfaceMeshEdgeManifold<doxid-classgeode_1_1_surface_mesh_edge_manifold>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab96a179956a77c508b5941878c8ba238>`(:ref:`SurfaceMeshVertexManifold<doxid-classgeode_1_1_surface_mesh_vertex_manifold>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a019dc3aadc41fe1d76c70aba9e7c1858>`(:ref:`EdgedCurveInspector<doxid-classgeode_1_1_edged_curve_inspector>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a30c382d5f9da43812c930c9f57c9f932>`(:ref:`PointSetInspector<doxid-classgeode_1_1_point_set_inspector>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a5ccda8fbea25f82cb343f0ec4f463bde>`(:ref:`SolidMeshInspector<doxid-classgeode_1_1_solid_mesh_inspector>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a2c65ae8c01d5abfaa0dd349c38868db1>`(:ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`);
 
 	} // namespace geode

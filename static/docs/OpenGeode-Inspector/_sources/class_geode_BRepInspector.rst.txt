@@ -1,0 +1,57 @@
+.. index:: pair: class; geode::BRepInspector
+.. _doxid-classgeode_1_1_b_rep_inspector:
+
+class geode::BRepInspector
+==========================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting a BRep model
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_inspector.h>
+	
+	class BRepInspector: public :ref:`geode::BRepTopologyInspector<doxid-classgeode_1_1_b_rep_topology_inspector>`
+	{
+	public:
+		// construction
+	
+		:target:`BRepInspector<doxid-classgeode_1_1_b_rep_inspector_1a130c26ffc1f372f0828f1571f2b11a10>`(const BRep& brep);
+		:target:`BRepInspector<doxid-classgeode_1_1_b_rep_inspector_1a3f50cbc8c7f7884545480827a308ea31>`(const BRep& brep, bool verbose);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`brep_topology_is_valid<doxid-classgeode_1_1_b_rep_topology_inspector_1aedff622da9a04c0224999968d3129588>`() const;
+		bool :ref:`brep_meshed_components_are_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1ac26bc188aed1b771fd3833e8d227bef3>`() const;
+		index_t :ref:`nb_corners_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1a215ff2f3321b101c716a0c71d8d1cb65>`() const;
+		index_t :ref:`nb_lines_meshed_but_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1ad8cfeceb5b26534ca30fa296fa01eb94>`() const;
+		index_t :ref:`nb_surfaces_meshed_but_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1aa3f6b1346701ce548e54d472ae35d52c>`() const;
+		index_t :ref:`nb_blocks_meshed_but_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_b_rep_topology_inspector_1ab5e7563f379fcc1250c515372f9384be>`() const;
+		std::vector<index_t> :ref:`invalid_components_topology_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1ac39380f2228abb8e9fd98404a414bb24>`() const;
+		std::vector<index_t> :ref:`multiple_corners_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a432fb1e6149214de9cc6a7e8f159fbc7>`() const;
+		std::vector<index_t> :ref:`multiple_internals_corner_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1afda3f1e5e1c5e8df59f1a0a0c8405a48>`() const;
+		std::vector<index_t> :ref:`not_internal_nor_boundary_corner_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1af09480661195dcf8c0b2e64ba39a256d>`() const;
+		std::vector<index_t> :ref:`internal_with_multiple_incidences_corner_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a73f223cc3339e5a70b486f9cd65f8b73>`() const;
+		std::vector<index_t> :ref:`line_corners_without_boundary_status<doxid-classgeode_1_1_b_rep_topology_inspector_1ace1cca4d2ed3d3af69a4d469ae15d89d>`() const;
+		std::vector<index_t> :ref:`part_of_not_boundary_nor_internal_line_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a6bc37a8a86c8ce347b2e55856e50cc6d>`() const;
+		std::vector<index_t> :ref:`part_of_line_with_invalid_internal_topology_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1ab4f23d801217d3eb7f337c33f079fe1c>`() const;
+		std::vector<index_t> :ref:`part_of_invalid_unique_line_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1afa48bf01b426d290372cff649f335dfc>`() const;
+		std::vector<index_t> :ref:`part_of_lines_but_not_corner_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a669a25b51e9f5fe5c4cf801dc1e48524>`() const;
+		std::vector<index_t> :ref:`part_of_not_boundary_nor_internal_surface_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a3587f0141148dc3783f9a8cc23ae1b56>`() const;
+		std::vector<index_t> :ref:`part_of_surface_with_invalid_internal_topology_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a9c8836ebd08d17ed2a4afd8647343393>`() const;
+		std::vector<index_t> :ref:`part_of_invalid_unique_surface_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1ace3a17979b0f443bd95231509cbbe6ce>`() const;
+		std::vector<index_t> :ref:`part_of_invalid_multiple_surfaces_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1ad3af047e2441fc6fb5d6d265e864df25>`() const;
+		std::vector<index_t> :ref:`part_of_invalid_blocks_unique_vertices<doxid-classgeode_1_1_b_rep_topology_inspector_1a5244f4a9527e2038ebf9811c2daaaae6>`() const;
+

@@ -30,3 +30,15 @@ Class for inspecting the colocation of points in a SolidMesh
 		index_t :target:`nb_colocated_points<doxid-classgeode_1_1_solid_mesh_colocation_1a4129db8fce2229a38187afab2a2eba26>`() const;
 		std::vector<std::vector<index_t>> :target:`colocated_points_groups<doxid-classgeode_1_1_solid_mesh_colocation_1a8e159323fe1048ed7d2a78e9bef98c41>`() const;
 	};
+
+	// direct descendants
+
+	template <
+		index_t dimension,
+		template<index_t> class Mesh,
+		template<index_t> class... Inspectors
+		>
+	class :ref:`AddInspectors<doxid-classgeode_1_1_add_inspectors>`;
+
+	template <index_t dimension>
+	class :ref:`SolidMeshInspector<doxid-classgeode_1_1_solid_mesh_inspector>`;

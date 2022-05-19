@@ -45,6 +45,10 @@ Class for inspecting the topology of a Section model corners :ref:`More...<detai
 		std::vector<index_t> :target:`part_of_lines_but_not_corner_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a54916a5b0abdc94e72a080a843d2f47f>`() const;
 		std::vector<index_t> :target:`part_of_invalid_surfaces_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a944adab229a619043c2cecd04fccf038>`() const;
 	};
+
+	// direct descendants
+
+	class :ref:`SectionInspector<doxid-classgeode_1_1_section_inspector>`;
 .. _details-classgeode_1_1_section_topology_inspector:
 
 Detailed Documentation

@@ -30,3 +30,8 @@ Class for inspecting the degeneration of a SurfaceMesh
 		index_t :target:`nb_degenerated_edges<doxid-classgeode_1_1_surface_mesh_degeneration_1abe1502822aafe296bb4bd2fb05a2326b>`() const;
 		std::vector<index_t> :target:`degenerated_edges<doxid-classgeode_1_1_surface_mesh_degeneration_1a56672a74b5e9c738f019e117f5091215>`() const;
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`;

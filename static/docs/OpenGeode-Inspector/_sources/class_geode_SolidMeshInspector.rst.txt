@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::SolidMeshInspector
+.. _doxid-classgeode_1_1_solid_mesh_inspector:
+
+template class geode::SolidMeshInspector
+========================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting a SolidMesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <solid_inspector.h>
+	
+	template <index_t dimension>
+	class SolidMeshInspector:
+	    public :ref:`geode::SolidMeshColocation<doxid-classgeode_1_1_solid_mesh_colocation>`,
+	    public :ref:`geode::SolidMeshDegeneration<doxid-classgeode_1_1_solid_mesh_degeneration>`,
+	    public :ref:`geode::AddInspectors<doxid-classgeode_1_1_add_inspectors>`
+	{
+	public:
+		// construction
+	
+		:target:`SolidMeshInspector<doxid-classgeode_1_1_solid_mesh_inspector_1aff31e759f98225747d6ac06d57aebee8>`(const SolidMesh<dimension>& mesh);
+		:target:`SolidMeshInspector<doxid-classgeode_1_1_solid_mesh_inspector_1a8f99d1bba7b4b436bb526a34eaa56392>`(const SolidMesh<dimension>& mesh, bool verbose);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`mesh_has_colocated_points<doxid-classgeode_1_1_solid_mesh_colocation_1ac8aad2612c42f32d70b2af5560ec933a>`() const;
+		index_t :ref:`nb_colocated_points<doxid-classgeode_1_1_solid_mesh_colocation_1a4129db8fce2229a38187afab2a2eba26>`() const;
+		std::vector<std::vector<index_t>> :ref:`colocated_points_groups<doxid-classgeode_1_1_solid_mesh_colocation_1a8e159323fe1048ed7d2a78e9bef98c41>`() const;
+		bool :ref:`is_mesh_degenerated<doxid-classgeode_1_1_solid_mesh_degeneration_1a2f9903f06f7e2669afd68d54fe3a4d9c>`() const;
+		index_t :ref:`nb_degenerated_edges<doxid-classgeode_1_1_solid_mesh_degeneration_1a9d6fcf5c89958d432b85ea66ca0bdd46>`() const;
+		std::vector<index_t> :ref:`degenerated_edges<doxid-classgeode_1_1_solid_mesh_degeneration_1af6104b6301199d563cfcfb8aa5ba20b5>`() const;
+
