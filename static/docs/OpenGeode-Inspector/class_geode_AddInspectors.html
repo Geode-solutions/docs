@@ -41,12 +41,8 @@
 <p>This mixin represents an assembly of inspectors. Syntax to create a derivated class is class DerivateClass : public <a class="reference internal" href="#doxid-classgeode-1-1-add-inspectors"><span class="std std-ref">AddInspectors</span></a> &lt; dimension, Mesh, InspectorClassA, InspectorClassB, InspectorClassC &gt;, public OtherOptionalMixins</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;add_inspectors.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span>
-    <span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span>
-    <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Mesh</span><span class="p">,</span>
-    <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span><span class="p">...</span> <span class="n">Inspectors</span>
-    <span class="o">&gt;</span>
-<span class="k">class</span> <span class="nl">AddInspectors</span><span class="p">:</span> <span class="k">public</span> <span class="n">Inspectors</span><span class="o">&lt;</span> <span class="n">dimension</span> <span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">Mesh</span><span class="p">,</span> <span class="k">class</span><span class="p">...</span> <span class="n">Inspectors</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">AddInspectors</span><span class="p">:</span> <span class="k">public</span> <span class="n">Inspectors</span>
 <span class="p">{</span>
 <span class="p">};</span>
 

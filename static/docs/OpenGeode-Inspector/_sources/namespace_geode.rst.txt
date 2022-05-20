@@ -43,11 +43,7 @@ namespace geode
 
 	// classes
 
-	template <
-		index_t dimension,
-		template<index_t> class Mesh,
-		template<index_t> class... Inspectors
-		>
+	template <class Mesh, class... Inspectors>
 	class :ref:`AddInspectors<doxid-classgeode_1_1_add_inspectors>`;
 
 	class :ref:`BRepInspector<doxid-classgeode_1_1_b_rep_inspector>`;

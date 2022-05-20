@@ -15,12 +15,8 @@ This mixin represents an assembly of inspectors. Syntax to create a derivated cl
 
 	#include <add_inspectors.h>
 	
-	template <
-		index_t dimension,
-		template<index_t> class Mesh,
-		template<index_t> class... Inspectors
-		>
-	class AddInspectors: public Inspectors< dimension >
+	template <class Mesh, class... Inspectors>
+	class AddInspectors: public Inspectors
 	{
 	};
 

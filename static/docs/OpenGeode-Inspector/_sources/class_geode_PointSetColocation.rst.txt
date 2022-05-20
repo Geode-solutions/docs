@@ -33,12 +33,5 @@ Class for inspecting the colocation of points in a PointSet
 
 	// direct descendants
 
-	template <
-		index_t dimension,
-		template<index_t> class Mesh,
-		template<index_t> class... Inspectors
-		>
-	class :ref:`AddInspectors<doxid-classgeode_1_1_add_inspectors>`;
-
 	template <index_t dimension>
 	class :ref:`PointSetInspector<doxid-classgeode_1_1_point_set_inspector>`;
