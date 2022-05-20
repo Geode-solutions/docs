@@ -18,28 +18,19 @@ namespace geode
 
 	// global functions
 
-	template <
-		typename ModelBuilder,
-		typename GenericModel,
-		typename GenericModelBuilder,
-		typename GenericModelModifier,
-		typename Model,
-		index_t dimension
-		>
-	RemeshingData<GenericModel, dimension> :target:`initialize_geosciences_remeshing_data<doxid-namespacegeode_1add998ce7cfea44e621ec1015731e8c9d>`(
-		const Model& input,
-		Model& output,
-		const Metric<dimension>& metric
-		);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a65b92e04719b22bc521e1f2e664d44e4>`(Metric);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a7da074eb0c591f0688ceeb11edd1fc9b>`(Metric);
 
-	std::tuple<StructuralModel, ModelCopyMapping> geode_simplexremeshgeosciences_surface_api :target:`homogeneous_remeshing<doxid-namespacegeode_1a6e65e9d83b0085a60304d6e735cd392f>`(
-		const StructuralModel& structural_model,
-		double mesh_size
-		);
-
-	std::tuple<CrossSection, ModelCopyMapping> geode_simplexremeshgeosciences_surface_api :target:`homogeneous_remeshing<doxid-namespacegeode_1ac204cbe2c91f133206efb4a8d268ca7c>`(
+	std::tuple<CrossSection, ModelCopyMapping> geode_simplexremeshgeosciences_cross_section_api :target:`remesh<doxid-namespacegeode_1afaa3902bf5a4e424c31cfb5fe5092b08>`(
 		const CrossSection& cross_section,
-		double mesh_size
+		const Metric2D& metric
+		);
+
+	:target:`ALIAS_3D<doxid-namespacegeode_1ac93b93bd0a1e54b0ffb54f588b46dce9>`(Metric);
+
+	std::tuple<StructuralModel, ModelCopyMapping> geode_simplexremeshgeosciences_structural_model_api :target:`remesh<doxid-namespacegeode_1a58676afd23498c45f1dfc1a8997c1586>`(
+		const StructuralModel& structural_model,
+		const Metric3D& metric
 		);
 
 	} // namespace geode

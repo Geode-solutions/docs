@@ -41,28 +41,19 @@
 
 <span class="c1">// global functions</span>
 
-<span class="k">template</span> <span class="o">&lt;</span>
-    <span class="k">typename</span> <span class="n">ModelBuilder</span><span class="p">,</span>
-    <span class="k">typename</span> <span class="n">GenericModel</span><span class="p">,</span>
-    <span class="k">typename</span> <span class="n">GenericModelBuilder</span><span class="p">,</span>
-    <span class="k">typename</span> <span class="n">GenericModelModifier</span><span class="p">,</span>
-    <span class="k">typename</span> <span class="n">Model</span><span class="p">,</span>
-    <span class="n">index_t</span> <span class="n">dimension</span>
-    <span class="o">&gt;</span>
-<span class="n">RemeshingData</span><span class="o">&lt;</span><span class="n">GenericModel</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1add998ce7cfea44e621ec1015731e8c9d"><span></span><span class="n">initialize_geosciences_remeshing_data</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">input</span><span class="p">,</span>
-    <span class="n">Model</span><span class="o">&amp;</span> <span class="n">output</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">Metric</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">metric</span>
-    <span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a65b92e04719b22bc521e1f2e664d44e4"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Metric</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7da074eb0c591f0688ceeb11edd1fc9b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Metric</span><span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">StructuralModel</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplexremeshgeosciences_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6e65e9d83b0085a60304d6e735cd392f"><span></span><span class="n">homogeneous_remeshing</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">StructuralModel</span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span>
-    <span class="kt">double</span> <span class="n">mesh_size</span>
-    <span class="p">);</span>
-
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">CrossSection</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplexremeshgeosciences_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac204cbe2c91f133206efb4a8d268ca7c"><span></span><span class="n">homogeneous_remeshing</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">CrossSection</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplexremeshgeosciences_cross_section_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afaa3902bf5a4e424c31cfb5fe5092b08"><span></span><span class="n">remesh</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">CrossSection</span><span class="o">&amp;</span> <span class="n">cross_section</span><span class="p">,</span>
-    <span class="kt">double</span> <span class="n">mesh_size</span>
+    <span class="k">const</span> <span class="n">Metric2D</span><span class="o">&amp;</span> <span class="n">metric</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac93b93bd0a1e54b0ffb54f588b46dce9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Metric</span><span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">StructuralModel</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplexremeshgeosciences_structural_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a58676afd23498c45f1dfc1a8997c1586"><span></span><span class="n">remesh</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">StructuralModel</span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Metric3D</span><span class="o">&amp;</span> <span class="n">metric</span>
     <span class="p">);</span>
 
 <span class="p">}</span> <span class="c1">// namespace geode</span></pre>
