@@ -18,6 +18,8 @@ namespace std
 	struct_std_hash-9.rst
 	struct_std_hash-10.rst
 	struct_std_hash-11.rst
+	struct_std_hash-12.rst
+	struct_std_hash-13.rst
 
 
 
@@ -37,6 +39,9 @@ namespace std
 	struct :ref:`hash<geode::PolyhedronFacet><doxid-structstd_1_1hash_3_01geode_1_1_polyhedron_facet_01_4>`;
 
 	template <>
+	struct :ref:`hash<geode::PolygonVertex><doxid-structstd_1_1hash_3_01geode_1_1_polygon_vertex_01_4>`;
+
+	template <>
 	struct :ref:`hash<geode::PolyhedronFacetEdge><doxid-structstd_1_1hash_3_01geode_1_1_polyhedron_facet_edge_01_4>`;
 
 	template <>
@@ -46,19 +51,22 @@ namespace std
 	struct :ref:`hash<geode::PolyhedronVertex><doxid-structstd_1_1hash_3_01geode_1_1_polyhedron_vertex_01_4>`;
 
 	template <>
-	struct :ref:`hash<geode::PolygonVertex><doxid-structstd_1_1hash_3_01geode_1_1_polygon_vertex_01_4>`;
-
-	template <>
-	struct :ref:`hash<geode::MeshType><doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4>`;
-
-	template <>
 	struct :ref:`hash<geode::PolygonEdge><doxid-structstd_1_1hash_3_01geode_1_1_polygon_edge_01_4>`;
+
+	template <>
+	struct :ref:`hash<geode::Point2D><doxid-structstd_1_1hash_3_01geode_1_1_point2_d_01_4>`;
 
 	template <>
 	struct :ref:`hash<geode::MeshComponentVertex><doxid-structstd_1_1hash_3_01geode_1_1_mesh_component_vertex_01_4>`;
 
 	template <>
+	struct :ref:`hash<geode::Point3D><doxid-structstd_1_1hash_3_01geode_1_1_point3_d_01_4>`;
+
+	template <>
 	struct :ref:`hash<geode::MeshImpl><doxid-structstd_1_1hash_3_01geode_1_1_mesh_impl_01_4>`;
+
+	template <>
+	struct :ref:`hash<geode::MeshType><doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4>`;
 
 	template <>
 	struct :ref:`hash<geode::uuid><doxid-structstd_1_1hash_3_01geode_1_1uuid_01_4>`;

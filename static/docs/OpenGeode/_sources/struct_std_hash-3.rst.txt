@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::PolyhedronFacetEdge>
-.. _doxid-structstd_1_1hash_3_01geode_1_1_polyhedron_facet_edge_01_4:
+.. index:: pair: struct; std::hash<geode::PolygonVertex>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_polygon_vertex_01_4:
 
-template struct std::hash<geode::PolyhedronFacetEdge>
-=====================================================
+template struct std::hash<geode::PolygonVertex>
+===============================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct std::hash<geode::PolyhedronFacetEdge>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <solid_mesh.h>
+	#include <surface_mesh.h>
 	
 	template <>
-	struct hash<geode::PolyhedronFacetEdge>
+	struct hash<geode::PolygonVertex>
 	{
 		// methods
 	
-		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_polyhedron_facet_edge_01_4_1ab3502a333f94e61d6ecd138f2d2a331c>` (const :ref:`geode::PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& polyhedron_facet_edge) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_polygon_vertex_01_4_1aca60e12f51bfb3c7c3a541606dd2d0fe>` (const :ref:`geode::PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex) const;
 	};
