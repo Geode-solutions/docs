@@ -34,8 +34,8 @@ Begin and end methods for range-based iteration on custom range. See derived cla
 	class :ref:`BlockRange<doxid-classgeode_1_1_blocks_1_1_block_range>`;
 	class :ref:`BoundaryCornerRange<doxid-classgeode_1_1_section_1_1_boundary_corner_range>`;
 	class :ref:`BoundaryCornerRange<doxid-classgeode_1_1_b_rep_1_1_boundary_corner_range>`;
-	class :ref:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range>`;
 	class :ref:`BoundaryLineRange<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range>`;
+	class :ref:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range>`;
 	class :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`;
 	class :ref:`BoundarySurfaceRange<doxid-classgeode_1_1_b_rep_1_1_boundary_surface_range>`;
 	class :ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>`;

@@ -10,6 +10,7 @@ namespace geode::detail
 	class_geode_detail_ComponentsStorage.rst
 	class_geode_detail_FacetStorage.rst
 	class_geode_detail_MeshStorage.rst
+	class_geode_detail_OrientedVertexCycle.rst
 	class_geode_detail_UuidToIndex.rst
 	class_geode_detail_VertexCycle.rst
 
@@ -36,6 +37,9 @@ namespace geode::detail
 
 	template <typename Mesh>
 	class :ref:`MeshStorage<doxid-classgeode_1_1detail_1_1_mesh_storage>`;
+
+	template <typename Container>
+	class :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`;
 
 	class :ref:`UuidToIndex<doxid-classgeode_1_1detail_1_1_uuid_to_index>`;
 
@@ -115,14 +119,23 @@ namespace geode::detail
 	void :target:`polygon_sort<doxid-namespacegeode_1_1detail_1aa6d785a69b7f3b0704d67b3672f234e1>`(Container& vertices);
 
 	template <typename Container>
-	void :target:`rotate<doxid-namespacegeode_1_1detail_1afc9fe5a2d2089d4b9a5585c6b06aa0eb>`(Container& vertices);
+	void :target:`oriented_rotate<doxid-namespacegeode_1_1detail_1a9e4c8a142fe00725e614ef5eabd816bb>`(Container& vertices);
 
-	void :target:`rotate<doxid-namespacegeode_1_1detail_1a164616505cb543b1e9f47c8230001bdc>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices);
+	void :target:`oriented_rotate<doxid-namespacegeode_1_1detail_1afbef11772729feb392123bed80d689f4>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices);
+
+	template <typename Container>
+	void :target:`remove_orientation<doxid-namespacegeode_1_1detail_1abb0c8c531c14ea7b222d5011329c53d8>`(Container& vertices);
 
 	template <typename H, typename Container>
 	H :target:`AbslHashValue<doxid-namespacegeode_1_1detail_1a9ac1ec233c59cb29488d95fa5a307f2b>`(
 		H h,
 		const :ref:`VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`<Container>& m
+		);
+
+	template <typename H, typename Container>
+	H :target:`AbslHashValue<doxid-namespacegeode_1_1detail_1a5880292fb538e1c14514aa640ae9c393>`(
+		H h,
+		const :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`<Container>& m
 		);
 
 	template <typename Serializer>

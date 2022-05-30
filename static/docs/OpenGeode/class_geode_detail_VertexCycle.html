@@ -41,24 +41,24 @@
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vertex_cycle.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Container</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="n">VertexCycle</span>
+<span class="k">class</span> <span class="nl">VertexCycle</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle"><span class="std std-ref">geode::detail::OrientedVertexCycle</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
-    <span class="c1">// fields</span>
-
-    <span class="n">Container</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1ad351738ca244b990264ea0adb334ca1f"><span></span><span class="n">vertices_</span></span><span></span><span class="p">;</span>
-
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1a6b16979a3ca88dd18c8f8876b7ee412c"><span></span><span class="n">VertexCycle</span></span><span></span><span class="p">(</span><span class="n">Container</span> <span class="n">vertices</span><span class="p">);</span>
-
+<span class="p">};</span></pre>
+<section id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">Container</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1a18a7f2f3b45466cdad2ec87efc41f38e"><span></span><span class="n">vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1a448ca005a69d48c22299d9fb9f0c8308"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">VertexCycle</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1aeb892b9b372365eff453bde720747940"><span></span><span class="k">operator</span> <span class="o">!=</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">VertexCycle</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-vertex-cycle-1affb6ee33bf0aff0fddc036a2f2c9dc92"><span></span><span class="k">operator</span> <span class="o">&lt;</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">VertexCycle</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span></pre>
+    <span class="k">const</span> <span class="n">Container</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle-1ae04bbe9cf42d9c8870ca2ad822312a10"><span class="std std-ref">vertices</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle-1aaf96ef67c25d54d96fcb460aeb7a87b9"><span class="std std-ref">is_opposite</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle"><span class="std std-ref">OrientedVertexCycle</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle-1a80e72ca7d68c32715ea69a8d68c49182"><span class="std std-ref">operator ==</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle"><span class="std std-ref">OrientedVertexCycle</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle-1a96f1325491f61f0e1449b3622c81e209"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle"><span class="std std-ref">OrientedVertexCycle</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle-1afad35ee28ab15883cde35d03051e35aa"><span class="std std-ref">operator &lt;</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_detail_OrientedVertexCycle.html#doxid-classgeode-1-1detail-1-1-oriented-vertex-cycle"><span class="std std-ref">OrientedVertexCycle</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span></pre>
+</section>
 </section>
 
 
