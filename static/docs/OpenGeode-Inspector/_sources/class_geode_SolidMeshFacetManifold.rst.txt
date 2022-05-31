@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::SolidMeshFacetManifold
+.. _doxid-classgeode_1_1_solid_mesh_facet_manifold:
+
+template class geode::SolidMeshFacetManifold
+============================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the manifold property of a SolidMesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <solid_facet_manifold.h>
+	
+	template <index_t dimension>
+	class SolidMeshFacetManifold
+	{
+	public:
+		// construction
+	
+		:target:`SolidMeshFacetManifold<doxid-classgeode_1_1_solid_mesh_facet_manifold_1ad7893ab5c95e0e1b8c447e6de20fb3b0>`(const SolidMesh<dimension>& mesh);
+		:target:`SolidMeshFacetManifold<doxid-classgeode_1_1_solid_mesh_facet_manifold_1a01e3bf2497b0d502f06b8e0273be168c>`(const SolidMesh<dimension>& mesh, bool verbose);
+
+		// methods
+	
+		bool :target:`mesh_facets_are_manifold<doxid-classgeode_1_1_solid_mesh_facet_manifold_1a0a16075cef8ff51eb93ab6c32a45801e>`() const;
+		index_t :target:`nb_non_manifold_facets<doxid-classgeode_1_1_solid_mesh_facet_manifold_1a16491b307ffd2e4b3fd7202c19acef12>`() const;
+		std::vector<absl::InlinedVector<index_t, 4>> :target:`non_manifold_facets<doxid-classgeode_1_1_solid_mesh_facet_manifold_1aa8fff6ba74b35a6b1bbf4ddf67d30420>`() const;
+	};
