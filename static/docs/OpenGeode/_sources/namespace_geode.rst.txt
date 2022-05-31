@@ -270,6 +270,7 @@ Overview
 	typedef absl::InlinedVector<:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`, 20> :target:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 10> :target:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :target:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>`;
+	typedef absl::InlinedVector<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`, 2> :target:`newPolyhedraAroundFacet<doxid-namespacegeode_1a3150b3674e365926bb833fa5bf304268>`;
 	typedef absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 3> :target:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>`;
 	typedef absl::InlinedVector<:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`, 3> :target:`PolygonEdgesOnBorder<doxid-namespacegeode_1a67300fb765762517c4026ded480669fb>`;
 	typedef absl::InlinedVector<:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`, 10> :target:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`;
@@ -1379,7 +1380,7 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(:ref:`Block<doxid-classgeode_1_1_block>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(:ref:`Block<doxid-classgeode_1_1_block>`);
 
-	:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>` :target:`block_mesh_polyhedra_from_unique_vertices_facet<doxid-namespacegeode_1aa12ebac44007d56d7e31a01d8d4734fc>`(
+	:ref:`newPolyhedraAroundFacet<doxid-namespacegeode_1a3150b3674e365926bb833fa5bf304268>` opengeode_model_api :target:`block_mesh_polyhedra_from_unique_vertices_facet<doxid-namespacegeode_1a4ed8a3ef891a4fd4f4e57e00ce6e47c6>`(
 		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
 		const Block3D& block,
 		absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> facet_unique_vertices

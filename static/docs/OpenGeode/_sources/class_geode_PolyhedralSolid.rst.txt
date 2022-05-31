@@ -142,7 +142,8 @@ Inherited Members
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` first_polyhedron
 			) const;
 	
-		:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>` :ref:`polyhedra_from_facet<doxid-classgeode_1_1_solid_mesh_1aacd59a2158aeb1e465367f666e61c785>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices) const;
+		:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>` OPENGEODE_MESH_DEPRECATED :ref:`polyhedra_from_facet<doxid-classgeode_1_1_solid_mesh_1a035e6fa866f798ca6eecdb4a7e81e77f>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices) const;
+		:ref:`newPolyhedraAroundFacet<doxid-namespacegeode_1a3150b3674e365926bb833fa5bf304268>` :ref:`polyhedra_from_facet_vertices<doxid-classgeode_1_1_solid_mesh_1a6a538370bab3e8b3d262c8a8ab3f5f9f>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices) const;
 		bool :ref:`are_edges_enabled<doxid-classgeode_1_1_solid_mesh_1ad7941fc3afe94462318f349a58ba63ab>`() const;
 		void :ref:`enable_edges<doxid-classgeode_1_1_solid_mesh_1a7805a82b740b482660ea134b84f0f8a1>`() const;
 		void :ref:`disable_edges<doxid-classgeode_1_1_solid_mesh_1af9ee142c16c448729d4a608ac5564173>`() const;
