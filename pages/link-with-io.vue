@@ -55,7 +55,7 @@
         The reason is quite simple.
         Have a quick look at the file
         <a
-          href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/src/geode/mesh/common.cpp"
+          href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/src/geode/io/mesh/common.cpp"
         >OpenGeode-IO/src/geode/mesh/common.cpp</a>.
       </p>
       <p :class="paragraph">
