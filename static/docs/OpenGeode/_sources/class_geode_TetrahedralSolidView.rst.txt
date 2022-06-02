@@ -181,6 +181,11 @@ Inherited Members
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` first_polyhedron
 			) const;
 	
+		std::array<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`, 2> :ref:`edge_incident_facets<doxid-classgeode_1_1_tetrahedral_solid_1a18f25717f66e149630909fd120b05a06>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id,
+			const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
+			) const;
+	
 		std::array<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`, 2> :ref:`opposite_edge_incident_facets<doxid-classgeode_1_1_tetrahedral_solid_1afda064aae91c9f4ecdb0a6b527468b14>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id,
 			const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
