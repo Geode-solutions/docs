@@ -56,7 +56,7 @@
         Have a quick look at the file
         <a
           href="https://github.com/Geode-solutions/OpenGeode-IO/blob/master/src/geode/io/mesh/common.cpp"
-        >OpenGeode-IO/src/geode/mesh/common.cpp</a>.
+        >OpenGeode-IO/src/geode/io/mesh/common.cpp</a>.
       </p>
       <p :class="paragraph">
         In this file you can see that supported file formats for meshes are registered
