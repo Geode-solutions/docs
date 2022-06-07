@@ -55,6 +55,18 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="p">;</span>
 
+<span class="k">class</span> <a class="reference internal" href="class_geode_FieldLines.html#doxid-classgeode-1-1-field-lines"><span class="std std-ref">FieldLines</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame"><span class="std std-ref">Frame</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_FrameField.html#doxid-classgeode-1-1-frame-field"><span class="std std-ref">FrameField</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_FrameFieldParameterization.html#doxid-classgeode-1-1-frame-field-parameterization"><span class="std std-ref">FrameFieldParameterization</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_FrameFieldSmoother.html#doxid-classgeode-1-1-frame-field-smoother"><span class="std std-ref">FrameFieldSmoother</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_FrameTransform.html#doxid-classgeode-1-1-frame-transform"><span class="std std-ref">FrameTransform</span></a><span></span><span class="p">;</span>
+
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridDerivativesMinimization.html#doxid-classgeode-1-1-regular-grid-derivatives-minimization"><span class="std std-ref">RegularGridDerivativesMinimization</span></a><span></span><span class="p">;</span>
 
@@ -78,7 +90,21 @@
 
 <span class="c1">// global functions</span>
 
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac3422b630458dde4bc69498508c56e4e"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0d02be32408fc3196f2976840cc46548"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame"><span class="std std-ref">Frame</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0e024ab01b9700d19787593b90a745f3"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame"><span class="std std-ref">Frame</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b691d4711522d638d7d8f1b087e597a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a82b6b61fdb928daf4084c93632f90f47"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame"><span class="std std-ref">Frame</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a80b5a064401aa01835668d57032444e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1da5adee14f91deff17a0b855b2c8e84"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">HybridSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a55897b30a3ff5e25684f4268a974caad"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PointSet</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa326268026b80210a023b9d2edec059d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PolygonalSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad1e677b7ca1b4a9e3461a5ab070e8b42"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">HybridSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3f3c5cdeee9a9389ffd9f740f987e982"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">PointSet</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a39e77d985d0ff03e0a12e0b0d0106a11"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">PolygonalSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1e631365afa91db8a83b01da36eb4ea8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_FrameTransform.html#doxid-classgeode-1-1-frame-transform"><span class="std std-ref">FrameTransform</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a99e0e31c7cdbe87f1a2accf5d11b05fe"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca4385eb3d676a070003e6270f6472ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a88e7373e2780b9968a6fddc59703bcf9"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="p">);</span>
