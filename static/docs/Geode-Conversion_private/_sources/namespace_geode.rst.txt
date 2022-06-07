@@ -25,10 +25,6 @@ Overview
 
 	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
 
-	// global variables
-
-	static constexpr auto :target:`uuid_from_conversion_attribute_name<doxid-namespacegeode_1a904052a9ccedabc1fb657c3b811cdb75>` =         "uuid_from_conversion";
-
 	// global functions
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
@@ -61,17 +57,6 @@ Overview
 	std::unique_ptr<SurfaceMesh<dimension>> :target:`merge_surface_meshes<doxid-namespacegeode_1afdb0662672f33a008eac14437a46f0b6>`(const std::vector<std::reference_wrapper<const SurfaceMesh<dimension>>>& surfaces);
 
 	void geode_conversion_model_api :target:`build_blocks<doxid-namespacegeode_1af824d8001dd7c0a95398f4811ac40d32>`(BRep& brep);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1e8e55e5371b72b9963704762267ff26>`(PolyhedralSolid);
-	:target:`ALIAS_3D<doxid-namespacegeode_1ae3a0efd7d2b1a538c139321616df2007>`(PolyhedralSolid);
-	std::unique_ptr<EdgedCurve2D> geode_conversion_model_api :target:`convert_section_into_curve<doxid-namespacegeode_1a49d9e3ea593bf9c845d0574dbe43e449>`(const Section& section);
-	std::unique_ptr<PolygonalSurface2D> geode_conversion_model_api :target:`convert_section_into_surface<doxid-namespacegeode_1a4c31988aaab691a47c9532a60f6c1816>`(const Section& section);
-	std::tuple<std::unique_ptr<EdgedCurve2D>, std::unique_ptr<PolygonalSurface2D>> geode_conversion_model_api :target:`convert_section_into_curve_and_surface<doxid-namespacegeode_1ac9cbfa7c910ca5e03e3ecff2d790a4b7>`(const Section& section);
-	std::unique_ptr<EdgedCurve3D> geode_conversion_model_api :target:`convert_brep_into_curve<doxid-namespacegeode_1aeb300bb8b3680f7dddef2aaa87067fdf>`(const BRep& brep);
-	std::unique_ptr<PolygonalSurface3D> geode_conversion_model_api :target:`convert_brep_into_surface<doxid-namespacegeode_1a233d450b2c51d76e7862a87fefb13020>`(const BRep& brep);
-	std::unique_ptr<PolyhedralSolid3D> geode_conversion_model_api :target:`convert_brep_into_solid<doxid-namespacegeode_1a16064982268caf1251802fad818097aa>`(const BRep& brep);
-	std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<PolygonalSurface3D>> geode_conversion_model_api :target:`convert_brep_into_curve_and_surface<doxid-namespacegeode_1a04057cd2ef858bdb99831624d8d12037>`(const BRep& brep);
-	std::tuple<std::unique_ptr<PolygonalSurface3D>, std::unique_ptr<PolyhedralSolid3D>> geode_conversion_model_api :target:`convert_brep_into_surface_and_solid<doxid-namespacegeode_1a09bf602c87d51f35dbc19002dbabd52c>`(const BRep& brep);
-	std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<PolygonalSurface3D>, std::unique_ptr<PolyhedralSolid3D>> geode_conversion_model_api :target:`convert_brep_into_curve_and_surface_and_solid<doxid-namespacegeode_1a7dfa74cacea2e76b43b5eb2e46b21f54>`(const BRep& brep);
 	Section geode_conversion_model_api :target:`convert_brep_into_section<doxid-namespacegeode_1aea4c474cef70b8506453cb50683c8a05>`(const BRep& brep);
 	BRep geode_conversion_model_api :target:`convert_section_into_brep<doxid-namespacegeode_1a27302f254f1ef20905e7c1bbef5a9730>`(const Section& section);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
