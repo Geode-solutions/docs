@@ -19,8 +19,8 @@ struct geode::BlockPolyhedraFacetVertices
 	{
 		// fields
 	
-		absl::optional<:ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>`> :target:`oriented_polyhedron_vertices<doxid-structgeode_1_1_block_polyhedra_facet_vertices_1a36aafc59d654c06f4e5adbd24f8c95f6>`;
-		absl::optional<:ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>`> :target:`opposite_polyhedron_vertices<doxid-structgeode_1_1_block_polyhedra_facet_vertices_1a9a85347c68d6a79a19997d18bcc887da>`;
+		absl::optional<:ref:`BlockPolyhedronFacet<doxid-structgeode_1_1_block_polyhedron_facet>`> :target:`oriented_polyhedron_facet<doxid-structgeode_1_1_block_polyhedra_facet_vertices_1afb850cb2c5c85d4748e9a99b82a25eba>`;
+		absl::optional<:ref:`BlockPolyhedronFacet<doxid-structgeode_1_1_block_polyhedron_facet>`> :target:`opposite_polyhedron_facet<doxid-structgeode_1_1_block_polyhedra_facet_vertices_1a12d1a829899639eee00cbea845ee4ffe>`;
 
 		// methods
 	

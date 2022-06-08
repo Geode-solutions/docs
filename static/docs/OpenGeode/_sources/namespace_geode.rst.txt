@@ -16,6 +16,7 @@ namespace geode
 	struct_geode_AttributeProperties.rst
 	struct_geode_BlockDefinition.rst
 	struct_geode_BlockPolyhedraFacetVertices.rst
+	struct_geode_BlockPolyhedronFacet.rst
 	struct_geode_BoundaryDefinition.rst
 	struct_geode_ComponentTag.rst
 	struct_geode_CornerDefinition.rst
@@ -320,6 +321,7 @@ Overview
 	struct :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`;
 	struct :ref:`BlockDefinition<doxid-structgeode_1_1_block_definition>`;
 	struct :ref:`BlockPolyhedraFacetVertices<doxid-structgeode_1_1_block_polyhedra_facet_vertices>`;
+	struct :ref:`BlockPolyhedronFacet<doxid-structgeode_1_1_block_polyhedron_facet>`;
 	struct :ref:`BoundaryDefinition<doxid-structgeode_1_1_boundary_definition>`;
 	struct :ref:`ComponentTag<doxid-structgeode_1_1_component_tag>`;
 	struct :ref:`CornerDefinition<doxid-structgeode_1_1_corner_definition>`;
@@ -1379,10 +1381,10 @@ Overview
 		absl::string_view filename
 		);
 
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
-	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(:ref:`Block<doxid-classgeode_1_1_block>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(:ref:`Block<doxid-classgeode_1_1_block>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 
 	:ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>` opengeode_model_api :target:`surface_polygon_unique_vertices<doxid-namespacegeode_1a10d2d28f3470ffda6d62f58a1db2f7f8>`(
 		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
@@ -1397,14 +1399,14 @@ Overview
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id
 		);
 
-	absl::InlinedVector<:ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>`, 2> :target:`block_vertices_from_surface_polygon<doxid-namespacegeode_1a1ff4c3373aec3994763adfecd3c31fc2>`(
+	absl::InlinedVector<:ref:`BlockPolyhedronFacet<doxid-structgeode_1_1_block_polyhedron_facet>`, 2> opengeode_model_api :target:`block_vertices_from_surface_polygon<doxid-namespacegeode_1ad1e2d09b41c461df6c02d11ade9889f5>`(
 		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
 		const Block3D& block,
 		const Surface3D& surface,
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id
 		);
 
-	:ref:`BlockPolyhedraFacetVertices<doxid-structgeode_1_1_block_polyhedra_facet_vertices>` :target:`oriented_block_vertices_from_surface_polygon<doxid-namespacegeode_1a240175c96378ad6836fc2e86988c2903>`(
+	:ref:`BlockPolyhedraFacetVertices<doxid-structgeode_1_1_block_polyhedra_facet_vertices>` opengeode_model_api :target:`oriented_block_vertices_from_surface_polygon<doxid-namespacegeode_1a1ddd9f0dce63c42b56c3af37c5ceaf6f>`(
 		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
 		const Block3D& block,
 		const Surface3D& surface,
