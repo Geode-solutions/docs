@@ -58,6 +58,11 @@ An Implicit Model is a Structural model where each block has a specific attribut
 			index_t polyhedron_id
 			) const;
 	
+		absl::InlinedVector<std::unique_ptr<TriangulatedSurface3D>, 2> :target:`stratigraphic_surface<doxid-classgeode_1_1_implicit_structural_model_1a63611516fab5e51b5ade68c2f5ab2c7b>`(
+			const Block3D& block,
+			const Surface3D& surface
+			) const;
+	
 		void :target:`instantiate_stratigraphic_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_1a60b40e7b49cf5b1f728fbaf22f0d9613>`(ImplicitStructuralModelBuilderKey);
 	
 		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_1adc83dec63bf94995c79337d65e369fca>`(
