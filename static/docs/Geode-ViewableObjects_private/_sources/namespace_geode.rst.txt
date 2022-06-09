@@ -1,0 +1,23 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// global functions
+
+	bool geode_viewableobjects_qem_proxy_api :target:`simplify<doxid-namespacegeode_1abee83a62e8f878996b46484d71332508>`(geode::TriangulatedSurface3D& mesh);
+
+	} // namespace geode
