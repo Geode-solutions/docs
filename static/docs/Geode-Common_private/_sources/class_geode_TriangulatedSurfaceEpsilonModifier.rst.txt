@@ -77,18 +77,6 @@ Inherited Members
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_triangulated_surface_modifier_1a932099dbcd5b09588f24897cc315bedd>`();
 		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_triangulated_surface_modifier_1af2557ffb518f9d3188949f8db39c2956>`();
 		std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_t>> :ref:`clean<doxid-classgeode_1_1_triangulated_surface_modifier_1a06a33437e9b4afd9ba7dbf07728ffff4>`();
-	
-		static bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1a4787d75b7a6c1f77363c201121a4d8eb>`(
-			const TriangulatedSurface<dimension>& surface,
-			const PolygonEdge& edge,
-			const Point<dimension>& point
-			);
-	
-		static bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1abd5afafb7e91de383a709cf1694a8e83>`(
-			const TriangulatedSurface<dimension>& surface,
-			index_t edge_id,
-			const Point<dimension>& point
-			);
 
 .. _details-classgeode_1_1_triangulated_surface_epsilon_modifier:
 

@@ -20,7 +20,6 @@ struct geode::CutPatchException
 		// fields
 	
 		const Point3D :target:`location<doxid-structgeode_1_1_cut_patch_exception_1aa3a89874c3b143b5e1fd576d70033852>`;
-		index_t :target:`invalid_polyhedron<doxid-structgeode_1_1_cut_patch_exception_1a9493db2eab51dfa97cf2eb755b5d3ce4>`;
 		index_t :target:`edge_id<doxid-structgeode_1_1_cut_patch_exception_1a8b9e5f526e408b7174e4d9ee7cc3b5f4>`;
 		:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` :target:`cut_info<doxid-structgeode_1_1_cut_patch_exception_1acecbd6c1bca7e23b9f9f85057c62a4f3>`;
 

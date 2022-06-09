@@ -23,8 +23,8 @@ Overview
 	public:
 		// construction
 	
-		:target:`TetrahedralSolidEpsilonModifier<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a8f9fe5361d72c213824ec4887ebb4197>`(
-			const SolidMesh3D& solid,
+		:target:`TetrahedralSolidEpsilonModifier<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a1fe147b8d223ff4c10677d34616ae13d>`(
+			const TetrahedralSolid3D& solid,
 			TetrahedralSolidBuilder3D& builder
 			);
 
@@ -60,51 +60,15 @@ Inherited Members
 		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
 		bool :ref:`is_tetrahedron_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af187b78931d693da120ab9da5c5b4549>`(index_t tetrahedron_id) const;
 		bool :ref:`is_facet_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a49fdcfaf239bff7e181f1aaa5c7bb932>`(index_t facet_id) const;
-		void :ref:`set_tetrahedron_inactive<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af9d87f2288c25f5e8d356a6551be2b0b>`(index_t tetrahedron_id);
-		void :ref:`set_facet_inactive<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1a1d013d5b3e870655c4b797eb2886db>`(index_t facet_id);
-		bool :ref:`is_split_tetrahedron_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a4edcaa0ed7b9661d5a8deb6fe63c7839>`(index_t tetrahedron_id, const Point3D& point) const;
 		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1645e8ce599bf3ab1036071f1af3a939>`(index_t tetrahedron_id, const Point3D& point);
-		bool :ref:`is_split_facet_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a60b6e5ebe55c5b9bc26f016589eb3054>`(const PolyhedronFacet& facet, const Point3D& point) const;
-		bool :ref:`is_split_facet_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1acf9cdefd8a07481ca6b3b4d8b1ef280c>`(index_t facet_id, const Point3D& point) const;
-	
-		absl::optional<PolyhedronFacet> :ref:`invalid_element_on_split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a91da328b79d5e37876511e05e5ef52af>`(
-			const PolyhedronFacet& facet,
-			const Point3D& point
-			) const;
-	
-		absl::optional<PolyhedronFacet> :ref:`invalid_element_on_split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad6b6c210425d086bb192b365aea62704>`(
-			index_t facet_id,
-			const Point3D& point
-			) const;
-	
 		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abfd8444fde310d0e8229cb353f718451>`(index_t facet_id, const Point3D& point);
 		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a5de1767b5b8ae9b7ae522c5434930f5b>`(const PolyhedronFacet& facet, const Point3D& point);
-		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a8ba26a3c56f7221bd96d8a812c4c7b70>`(const PolyhedronFacetEdge& edge, const Point3D& point) const;
-		bool :ref:`is_split_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a38a52fa447ee7e454cc894bb49968f43>`(index_t edge_id, const Point3D& point) const;
-	
-		absl::optional<index_t> :ref:`invalid_element_on_split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a97af387391966435b11a5d3aa33b748f>`(
-			const PolyhedronFacetEdge& edge,
-			const Point3D& point
-			) const;
-	
-		absl::optional<index_t> :ref:`invalid_element_on_split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ac8dd5edd8673b577407b40ee17e50085>`(
-			index_t edge_id,
-			const Point3D& point
-			) const;
-	
 		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a954f2875b98f31ae3ce7e255d1c008c3>`(index_t edge_id, const Point3D& point);
 	
 		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abf56f3477626be27058311526b2b5aef>`(
 			const PolyhedronFacetEdge& edge,
 			const Point3D& point
 			);
-	
-		bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ac448e964d5b58cfc1edd8cad2458f2c1>`(
-			const PolyhedronFacetEdge& edge,
-			const Point3D& point
-			) const;
-	
-		bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a62d81880d33946209a739309db819d8d>`(index_t _id, const Point3D& point) const;
 	
 		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad74eb355746ffd52b66a4788a99868bd>`(
 			const PolyhedronFacetEdge& edge,

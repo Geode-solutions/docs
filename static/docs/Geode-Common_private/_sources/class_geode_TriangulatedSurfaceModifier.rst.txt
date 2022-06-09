@@ -58,18 +58,6 @@ Overview
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_triangulated_surface_modifier_1a932099dbcd5b09588f24897cc315bedd>`();
 		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_triangulated_surface_modifier_1af2557ffb518f9d3188949f8db39c2956>`();
 		std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_t>> :ref:`clean<doxid-classgeode_1_1_triangulated_surface_modifier_1a06a33437e9b4afd9ba7dbf07728ffff4>`();
-	
-		static bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1a4787d75b7a6c1f77363c201121a4d8eb>`(
-			const TriangulatedSurface<dimension>& surface,
-			const PolygonEdge& edge,
-			const Point<dimension>& point
-			);
-	
-		static bool :ref:`is_collapse_edge_valid<doxid-classgeode_1_1_triangulated_surface_modifier_1abd5afafb7e91de383a709cf1694a8e83>`(
-			const TriangulatedSurface<dimension>& surface,
-			index_t edge_id,
-			const Point<dimension>& point
-			);
 	};
 
 	// direct descendants
@@ -300,78 +288,4 @@ Clean up the mesh removing inactive triangles, isolated vertices and edges.
 .. rubric:: Returns:
 
 old2new mappings for triangles, vertices and edges.
-
-.. index:: pair: function; is_collapse_edge_valid
-.. _doxid-classgeode_1_1_triangulated_surface_modifier_1a4787d75b7a6c1f77363c201121a4d8eb:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	static bool is_collapse_edge_valid(
-		const TriangulatedSurface<dimension>& surface,
-		const PolygonEdge& edge,
-		const Point<dimension>& point
-		)
-
-Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- edge
-
-		- Index of the PolygonEdge to collapse.
-
-	*
-		- point
-
-		- Coordinates of the collapse point.
-
-
-
-.. rubric:: Returns:
-
-true if collapse will keep mesh valid.
-
-.. index:: pair: function; is_collapse_edge_valid
-.. _doxid-classgeode_1_1_triangulated_surface_modifier_1abd5afafb7e91de383a709cf1694a8e83:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	static bool is_collapse_edge_valid(
-		const TriangulatedSurface<dimension>& surface,
-		index_t edge_id,
-		const Point<dimension>& point
-		)
-
-Check if an edge collapse will keep the mesh valid, meaning no triangle area flip its sign. The collapse is not applied.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- edge_id
-
-		- Unique index of the edge to collapse.
-
-	*
-		- point
-
-		- Coordinates of the collapse point.
-
-
-
-.. rubric:: Returns:
-
-true if collapse will keep mesh valid.
 
