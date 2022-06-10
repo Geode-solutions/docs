@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::RegularGridScalarFunctionExpliciter3D
+.. _doxid-classgeode_1_1_regular_grid_scalar_function_expliciter3_d:
+
+class geode::RegularGridScalarFunctionExpliciter3D
+==================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <regular_grid_scalar_function_3d.h>
+	
+	class RegularGridScalarFunctionExpliciter3D
+	{
+	public:
+		// construction
+	
+		:target:`RegularGridScalarFunctionExpliciter3D<doxid-classgeode_1_1_regular_grid_scalar_function_expliciter3_d_1ac2b245f1cc6c866cbd87f32f6f8f580d>`(
+			const RegularGrid3D& grid,
+			absl::string_view scalar_function_name
+			);
+
+		// methods
+	
+		void :target:`add_scalar_isovalues<doxid-classgeode_1_1_regular_grid_scalar_function_expliciter3_d_1a1b64304c6b9684bf34404b79c26ecaaa>`(absl::Span<const double> scalar_function_values);
+		void :target:`add_one_scalar_isovalue<doxid-classgeode_1_1_regular_grid_scalar_function_expliciter3_d_1a4faceede85dec6ce5f7e3c151d92d97f>`(double isovalue);
+		BRep :target:`build_brep<doxid-classgeode_1_1_regular_grid_scalar_function_expliciter3_d_1a8e7e38937626c9db3c4d90e2671694ab>`();
+	};
