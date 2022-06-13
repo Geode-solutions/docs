@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>template class geode::TriangulatedSurfacePointFunction &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::TriangulatedSurfaceScalarFunction" href="class_geode_TriangulatedSurfaceScalarFunction.html" />
+    <link rel="prev" title="template class geode::TriangulatedSurfaceModifier" href="class_geode_TriangulatedSurfaceModifier.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-triangulatedsurfacepointfunction">
+<span id="doxid-classgeode-1-1-triangulated-surface-point-function"></span><span id="index-0"></span><h1>template class geode::TriangulatedSurfacePointFunction</h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview</h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;triangulated_surface_point_function.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">TriangulatedSurfacePointFunction</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-point-function-1ae871df0f62e30f7eb4f011051840cc36"><span></span><span class="n">TriangulatedSurfacePointFunction</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurfacePointFunction</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-point-function-1aa75753efd3f096617f8c8e09dce3cad2"><span></span><span class="n">set_value</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_index</span><span class="p">,</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">value</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-point-function-1a30904509228d6e9eef5ab84e99ed7eee"><span></span><span class="n">value</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-point-function-1afc39b04ec2173ac8eef30c8892160c09"><span></span><span class="n">value</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">static</span> <span class="n">TriangulatedSurfacePointFunction</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-point-function-1a4506e411d598b97acc089f58f7043632"><span class="std std-ref">create</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">solid</span><span class="p">,</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">function_name</span><span class="p">,</span>
+        <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">value</span>
+        <span class="p">);</span>
+
+    <span class="k">static</span> <span class="n">TriangulatedSurfacePointFunction</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-point-function-1a8880f38152b980ecbfbdf410b28b324a"><span class="std std-ref">find</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">solid</span><span class="p">,</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">function_name</span>
+        <span class="p">);</span>
+<span class="p">};</span></pre>
+</section>
+<section id="detailed-documentation">
+<span id="details-classgeode-1-1-triangulated-surface-point-function"></span><h2>Detailed Documentation</h2>
+<section id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-point-function-1a4506e411d598b97acc089f58f7043632"><span id="index-1"></span><span></span><span class="k">static</span> <span class="n">TriangulatedSurfacePointFunction</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">create</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">function_name</span><span class="p">,</span>
+    <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">value</span>
+    <span class="p">)</span></pre>
+<p>Create a new object function from a TriangulatedSurface, a name, and a value. Throws an exception if an attribute with the same name exists.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-point-function-1a8880f38152b980ecbfbdf410b28b324a"><span id="index-2"></span><span></span><span class="k">static</span> <span class="n">TriangulatedSurfacePointFunction</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">find</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">function_name</span>
+    <span class="p">)</span></pre>
+<p>Finds an object function that already exists in the given TriangulatedSurface, from its given name. Throws an exception if no attribute with the same name exists.</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_TriangulatedSurfacePointFunction.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -32,14 +32,14 @@ Overview
 		double :target:`value<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1ae05343cad361353121403e8ad531e649>`(index_t vertex_index) const;
 		double :target:`value<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1ace14b1d20c6f5f805c18e9709b5dc20b>`(const Point<dimension>& point, index_t tetrahedron_id) const;
 	
-		static TetrahedralSolidScalarFunction<dimension> :ref:`create<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a7646cf503756fc25d65d16e8c39cb16b>`(
-			const TetrahedralSolid<dimension>& grid,
+		static TetrahedralSolidScalarFunction<dimension> :ref:`create<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a4bef461219da024bbdf5bdc4c77021ed>`(
+			const TetrahedralSolid<dimension>& solid,
 			absl::string_view function_name,
 			double value
 			);
 	
-		static TetrahedralSolidScalarFunction<dimension> :ref:`find<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a90fefff4f991891f46236024f631112a>`(
-			const TetrahedralSolid<dimension>& grid,
+		static TetrahedralSolidScalarFunction<dimension> :ref:`find<doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a2665c37759ea6521c2df6ec9b3f33214>`(
+			const TetrahedralSolid<dimension>& solid,
 			absl::string_view function_name
 			);
 	};
@@ -54,13 +54,13 @@ Methods
 -------
 
 .. index:: pair: function; create
-.. _doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a7646cf503756fc25d65d16e8c39cb16b:
+.. _doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a4bef461219da024bbdf5bdc4c77021ed:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	static TetrahedralSolidScalarFunction<dimension> create(
-		const TetrahedralSolid<dimension>& grid,
+		const TetrahedralSolid<dimension>& solid,
 		absl::string_view function_name,
 		double value
 		)
@@ -68,13 +68,13 @@ Methods
 Create a new object function from a TetrahedralSolid, a name, and a value. Throws an exception if an attribute with the same name exists.
 
 .. index:: pair: function; find
-.. _doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a90fefff4f991891f46236024f631112a:
+.. _doxid-classgeode_1_1_tetrahedral_solid_scalar_function_1a2665c37759ea6521c2df6ec9b3f33214:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	static TetrahedralSolidScalarFunction<dimension> find(
-		const TetrahedralSolid<dimension>& grid,
+		const TetrahedralSolid<dimension>& solid,
 		absl::string_view function_name
 		)
 
