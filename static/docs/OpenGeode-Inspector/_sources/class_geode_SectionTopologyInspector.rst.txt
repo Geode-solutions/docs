@@ -37,7 +37,6 @@ Class for inspecting the topology of a Section model corners :ref:`More...<detai
 		std::vector<index_t> :target:`multiple_corners_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a76fff8ef50b5624dd0144c76b08aec62>`() const;
 		std::vector<index_t> :target:`multiple_internals_corner_vertices<doxid-classgeode_1_1_section_topology_inspector_1a1fc7ea891ec1eeba7551f4175bf39439>`() const;
 		std::vector<index_t> :target:`not_internal_nor_boundary_corner_vertices<doxid-classgeode_1_1_section_topology_inspector_1a481668a7e5433d422dcb4f0edfbb8ead>`() const;
-		std::vector<index_t> :target:`internal_with_multiple_incidences_corner_vertices<doxid-classgeode_1_1_section_topology_inspector_1ade533fe56417a7573039974de412cfdd>`() const;
 		std::vector<index_t> :target:`line_corners_without_boundary_status<doxid-classgeode_1_1_section_topology_inspector_1ad90d53b7e301e73431201d153ef8c647>`() const;
 		std::vector<index_t> :target:`part_of_not_boundary_nor_internal_line_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a20403b9086b8d2245670008e4fea3f28>`() const;
 		std::vector<index_t> :target:`part_of_line_with_invalid_internal_topology_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a4b7a54c9a09f7cadea7585ebe4b16055>`() const;
