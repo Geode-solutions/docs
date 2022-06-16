@@ -82,6 +82,7 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` to_vertex_id
 			) const;
 	
+		:ref:`PolygonsAroundEdge<doxid-namespacegeode_1a4d69665d76ac0fef1daae0daaf011dbd>` :ref:`polygons_from_edge_vertices<doxid-classgeode_1_1_surface_mesh_1ab8c000396f417cbfb53c1ffea481a11f>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> edge_vertices) const;
 		bool :target:`are_edges_enabled<doxid-classgeode_1_1_surface_mesh_1a859bfeea1897b44729c683a5d2b5d264>`() const;
 		void :target:`enable_edges<doxid-classgeode_1_1_surface_mesh_1aafb9dc79e3010815b04d69273b720f83>`() const;
 		void :target:`disable_edges<doxid-classgeode_1_1_surface_mesh_1ae71a51d702cfdd675ba8cf2abb6bd3f0>`() const;
@@ -752,6 +753,22 @@ Find the polygon edge corresponding to an ordered pair of vertex indices.
 .. rubric:: Returns:
 
 Local index if the edge is found.
+
+.. index:: pair: function; polygons_from_edge_vertices
+.. _doxid-classgeode_1_1_surface_mesh_1ab8c000396f417cbfb53c1ffea481a11f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`PolygonsAroundEdge<doxid-namespacegeode_1a4d69665d76ac0fef1daae0daaf011dbd>` polygons_from_edge_vertices(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> edge_vertices) const
+
+Find the polygon edges corresponding to a pair of vertex indices.
+
+
+
+.. rubric:: Returns:
+
+Local indices of the edges found
 
 .. index:: pair: function; polygon_attribute_manager
 .. _doxid-classgeode_1_1_surface_mesh_1a7768652288a50604a306550e38f298ed:
