@@ -26,6 +26,7 @@ Overview
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`triangles<doxid-structgeode_1_1_surface_definition_1ad9c5a7f1b76ca0bfe78d774dd8e96d49>`;
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`boundaries<doxid-structgeode_1_1_surface_definition_1aa7f38565328817b7fff2108b94154168>`;
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`internals<doxid-structgeode_1_1_surface_definition_1a584c9aa5f29796c37d8a6a2c61cc71e5>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`internal_corners<doxid-structgeode_1_1_surface_definition_1ab0794eb59a7b6776706efd351a487ce8>`;
 	};
 .. _details-structgeode_1_1_surface_definition:
 
@@ -75,5 +76,15 @@ List of boundaries: index i correspond to the i-th created :ref:`Line <doxid-cla
 
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> internals
 
-List of internals: index i correspond to the i-th created :ref:`Line <doxid-classgeode_1_1_line>`.
+List of internal lines: index i correspond to the i-th created :ref:`Line <doxid-classgeode_1_1_line>`.
+
+.. index:: pair: variable; internal_corners
+.. _doxid-structgeode_1_1_surface_definition_1ab0794eb59a7b6776706efd351a487ce8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> internal_corners
+
+List of internal corners: index i correspond to the i-th created :ref:`Corner <doxid-classgeode_1_1_corner>`
 

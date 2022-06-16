@@ -26,6 +26,8 @@ Overview
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`tetrahedra<doxid-structgeode_1_1_block_definition_1a31c11ffb11937cdef20fbcfdc8adc269>`;
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`boundaries<doxid-structgeode_1_1_block_definition_1ad711a0cf86ad8ec339b6180803a01bec>`;
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`internals<doxid-structgeode_1_1_block_definition_1acd7224a71cde3add18b671fd03f9808b>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`internal_lines<doxid-structgeode_1_1_block_definition_1a833e770431f9bd9ef633f2a70ec2e9c5>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`internal_corners<doxid-structgeode_1_1_block_definition_1a9e25d3bca053ef3d7dec0c460e113776>`;
 	};
 .. _details-structgeode_1_1_block_definition:
 
@@ -55,5 +57,25 @@ List of boundaries: index i correspond to the i-th created :ref:`Surface <doxid-
 
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> internals
 
-List of internals: index i correspond to the i-th created :ref:`Surface <doxid-classgeode_1_1_surface>`.
+List of internal surfaces: index i correspond to the i-th created :ref:`Surface <doxid-classgeode_1_1_surface>`
+
+.. index:: pair: variable; internal_lines
+.. _doxid-structgeode_1_1_block_definition_1a833e770431f9bd9ef633f2a70ec2e9c5:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> internal_lines
+
+List of internal lines: index i correspond to the i-th created :ref:`Line <doxid-classgeode_1_1_line>`.
+
+.. index:: pair: variable; internal_corners
+.. _doxid-structgeode_1_1_block_definition_1a9e25d3bca053ef3d7dec0c460e113776:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> internal_corners
+
+List of internal corners: index i correspond to the i-th created :ref:`Corner <doxid-classgeode_1_1_corner>`
 
