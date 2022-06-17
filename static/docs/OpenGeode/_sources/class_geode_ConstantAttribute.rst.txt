@@ -69,6 +69,12 @@ Inherited Members
 			AttributeKey
 			) = 0;
 	
+		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`extract<doxid-classgeode_1_1_attribute_base_1a7496e8dd4e5e93b1cc0bd7951701add7>`(
+			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements,
+			AttributeKey
+			) const = 0;
+	
 		virtual void :ref:`resize<doxid-classgeode_1_1_attribute_base_1a3e2dbef8e0c1297686d9a7bdaec3133e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` size, AttributeKey) = 0;
 		virtual void :ref:`reserve<doxid-classgeode_1_1_attribute_base_1a1eb03a604e255777c8deee9fb9957873>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` capacity, AttributeKey) = 0;
 		virtual void :ref:`delete_elements<doxid-classgeode_1_1_attribute_base_1adb70e1efee2b3c2df569b62c624bbf04>`(const std::vector<bool>& to_delete, AttributeKey) = 0;
