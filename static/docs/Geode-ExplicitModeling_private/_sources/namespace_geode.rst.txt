@@ -31,8 +31,9 @@ namespace geode
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(BoundingBox);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(BoundingBox);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
-	std::tuple<BRep, :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`> geode_explicitmodeling_3d_api :target:`extract_brep<doxid-namespacegeode_1a1651f424dae2305b81f65772275bd709>`(const BackgroundMesh3D& background_mesh);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);
 
 	} // namespace geode
