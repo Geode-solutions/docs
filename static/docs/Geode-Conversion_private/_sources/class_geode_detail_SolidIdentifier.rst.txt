@@ -33,5 +33,5 @@ class geode::detail::SolidIdentifier
 		// methods
 	
 		index_t :target:`identify_polyhedra<doxid-classgeode_1_1detail_1_1_solid_identifier_1a3bc2becb7327d7b57572657f91f636b4>`();
-		std::vector<std::vector<index_t>> :target:`identified_blocks<doxid-classgeode_1_1detail_1_1_solid_identifier_1a43b40255b418260e8f76f7edada7b929>`() const;
+		std::vector<std::vector<index_t>> :target:`identified_blocks_polyhedra<doxid-classgeode_1_1detail_1_1_solid_identifier_1aadebbf7cfed61309b6014bd24b73b4ab>`() const;
 	};

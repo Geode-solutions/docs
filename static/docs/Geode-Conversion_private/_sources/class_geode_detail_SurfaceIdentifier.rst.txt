@@ -34,5 +34,5 @@ template class geode::detail::SurfaceIdentifier
 		// methods
 	
 		index_t :target:`identify_polygons<doxid-classgeode_1_1detail_1_1_surface_identifier_1abc57110024851bdf4f27f35ba7eda0da>`();
-		std::vector<std::vector<index_t>> :target:`identified_surfaces<doxid-classgeode_1_1detail_1_1_surface_identifier_1ad66d6a24d18a8bf636faf0c046251d37>`() const;
+		std::vector<std::vector<index_t>> :target:`identified_surfaces_polygons<doxid-classgeode_1_1detail_1_1_surface_identifier_1a490762352646fc981eb4a5c7da431ec0>`() const;
 	};
