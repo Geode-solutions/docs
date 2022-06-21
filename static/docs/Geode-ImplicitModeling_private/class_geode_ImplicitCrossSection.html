@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>class geode::ImplicitCrossSection &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::ImplicitCrossSectionBuilder" href="class_geode_ImplicitCrossSectionBuilder.html" />
+    <link rel="prev" title="class geode::detail::ImplicitLSOInput" href="class_geode_detail_ImplicitLSOInput.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-geode-implicitcrosssection">
+<span id="doxid-classgeode-1-1-implicit-cross-section"></span><span id="index-0"></span><h1>class geode::ImplicitCrossSection</h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview</h2>
+<p>An <a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a> is a CrossSection where each surface has a specific attribute to store the stratigraphic coordinates of its vertices. <a class="reference internal" href="#details-classgeode-1-1-implicit-cross-section"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;implicit_cross_section.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">ImplicitCrossSection</span><span class="p">:</span> <span class="k">public</span> <span class="n">CrossSection</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1ad9f9b4007704e4a7be72e8d21d5e6898"><span></span><span class="n">ImplicitCrossSection</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1ac1d0e2dbe2ae87f289c4e0748bd39ef2"><span></span><span class="n">ImplicitCrossSection</span></span><span></span><span class="p">(</span><span class="n">ImplicitCrossSection</span><span class="o">&amp;&amp;</span> <span class="n">implicit_model</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a629239be6093a624d5f44616551f9e14"><span></span><span class="n">ImplicitCrossSection</span></span><span></span><span class="p">(</span><span class="n">CrossSection</span><span class="o">&amp;&amp;</span> <span class="n">cross_section</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a4ce3b33a337b77c21f02c85894cfc87b"><span></span><span class="n">native_extension</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section-1afff94b8b150433955cb2ec298e5d6421"><span class="std std-ref">stratigraphic_coordinates</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">vertex_id</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">Point2D</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section-1ae23499261833f94f3e0a1d0be34328cb"><span class="std std-ref">stratigraphic_coordinates</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">geometric_point</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">Point2D</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section-1a1b9c83e0206e7fb3e3ba09e295e22bb8"><span class="std std-ref">stratigraphic_coordinates</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">geometric_point</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">polygon_id</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">Point2D</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section-1a631c0057c135530ef4b13690382b673e"><span class="std std-ref">geometric_coordinates</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">Point2D</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section-1a19b8975513f8b6fef1ad7ce2521abd2b"><span class="std std-ref">geometric_coordinates</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">polygon_id</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve2D</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1aaebdcb713d664fa437184fcdfd7928a3"><span></span><span class="n">stratigraphic_line</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a60a3c9c2080c8ac99e66c77f660c58e2"><span></span><span class="n">instantiate_stratigraphic_attribute_on_surfaces</span></span><span></span><span class="p">(</span><span class="n">ImplicitCrossSectionBuilderKey</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1acdb0a3f24680fb36cb7f089c8ab1a724"><span></span><span class="n">set_stratigraphic_coordinates</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span>
+        <span class="n">Point2D</span> <span class="n">value</span><span class="p">,</span>
+        <span class="n">ImplicitCrossSectionBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1aa4038091dd25b0571305315e0a7661b6"><span></span><span class="n">native_extension_static</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+</section>
+<section id="detailed-documentation">
+<span id="details-classgeode-1-1-implicit-cross-section"></span><h2>Detailed Documentation</h2>
+<p>An <a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a> is a CrossSection where each surface has a specific attribute to store the stratigraphic coordinates of its vertices.</p>
+<section id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-cross-section-1afff94b8b150433955cb2ec298e5d6421"><span id="index-1"></span><span></span><span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">stratigraphic_coordinates</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex_id</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the stratigraphic coordinates of the point at the given vertex of the given surface.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-cross-section-1ae23499261833f94f3e0a1d0be34328cb"><span id="index-2"></span><span></span><span class="n">Point2D</span> <span class="n">stratigraphic_coordinates</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">geometric_point</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the stratigraphic coordinates of the point, calculated in the polygon closest to the given point, in the given surface.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-cross-section-1a1b9c83e0206e7fb3e3ba09e295e22bb8"><span id="index-3"></span><span></span><span class="n">Point2D</span> <span class="n">stratigraphic_coordinates</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">geometric_point</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">polygon_id</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the stratigraphic coordinates of the point, calculated in the given polygon of the given surface.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-cross-section-1a631c0057c135530ef4b13690382b673e"><span id="index-4"></span><span></span><span class="n">Point2D</span> <span class="n">geometric_coordinates</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the polygon closest to the given coordinates in the stratigraphic space, in the given surface.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-cross-section-1a19b8975513f8b6fef1ad7ce2521abd2b"><span id="index-5"></span><span></span><span class="n">Point2D</span> <span class="n">geometric_coordinates</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">polygon_id</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the given polygon of the given surface.</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_ImplicitCrossSection.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

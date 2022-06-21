@@ -8,6 +8,10 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
+	class_geode_ImplicitCrossSection.rst
+	class_geode_ImplicitCrossSectionBuilder.rst
+	class_geode_ImplicitCrossSectionInput.rst
+	class_geode_ImplicitCrossSectionOutput.rst
 	class_geode_ImplicitStructuralModel.rst
 	class_geode_ImplicitStructuralModelBuilder.rst
 	class_geode_ImplicitStructuralModelInput.rst
@@ -34,11 +38,17 @@ Overview
 
 	// typedefs
 
+	typedef Factory<std::string, :ref:`ImplicitCrossSectionInput<doxid-classgeode_1_1_implicit_cross_section_input>`, :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`&, absl::string_view> :target:`ImplicitCrossSectionInputFactory<doxid-namespacegeode_1a233ab92ddf487258251be263dc2032ed>`;
+	typedef Factory<std::string, :ref:`ImplicitCrossSectionOutput<doxid-classgeode_1_1_implicit_cross_section_output>`, const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`&, absl::string_view> :target:`ImplicitCrossSectionOutputFactory<doxid-namespacegeode_1a15c031ea914bb7b014e2fe770b358526>`;
 	typedef Factory<std::string, :ref:`ImplicitStructuralModelInput<doxid-classgeode_1_1_implicit_structural_model_input>`, :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`&, absl::string_view> :target:`ImplicitStructuralModelInputFactory<doxid-namespacegeode_1aa023ec8e87563b5c8c79fb11c89b2afb>`;
 	typedef Factory<std::string, :ref:`ImplicitStructuralModelOutput<doxid-classgeode_1_1_implicit_structural_model_output>`, const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`&, absl::string_view> :target:`ImplicitStructuralModelOutputFactory<doxid-namespacegeode_1a17e29e5b76e1504f9403fbf21b9dbde8>`;
 
 	// classes
 
+	class :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`;
+	class :ref:`ImplicitCrossSectionBuilder<doxid-classgeode_1_1_implicit_cross_section_builder>`;
+	class :ref:`ImplicitCrossSectionInput<doxid-classgeode_1_1_implicit_cross_section_input>`;
+	class :ref:`ImplicitCrossSectionOutput<doxid-classgeode_1_1_implicit_cross_section_output>`;
 	class :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`;
 	class :ref:`ImplicitStructuralModelBuilder<doxid-classgeode_1_1_implicit_structural_model_builder>`;
 	class :ref:`ImplicitStructuralModelInput<doxid-classgeode_1_1_implicit_structural_model_input>`;
@@ -59,9 +69,19 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a88e7373e2780b9968a6fddc59703bcf9>`(DataConstraintManager);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa40ec52a1aa919899a089ac5e5a8640c>`(:ref:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(Point);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+	:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` geode_implicitmodeling_model_api :ref:`load_implicit_cross_section<doxid-namespacegeode_1acb687cbedca7f7bcada2358582d6a0a7>`(absl::string_view filename);
+
+	void geode_implicitmodeling_model_api :ref:`save_implicit_cross_section<doxid-namespacegeode_1a752a47963d1b8d3a296efe5e800582e3>`(
+		const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model,
+		absl::string_view filename
+		);
+
 	:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>` geode_implicitmodeling_model_api :ref:`load_implicit_structural_model<doxid-namespacegeode_1a5e33962083fa7d9ae330f405fee6212f>`(absl::string_view filename);
 
 	void geode_implicitmodeling_model_api :ref:`save_implicit_structural_model<doxid-namespacegeode_1a2136a592e634d026963a256339b3ecef>`(
@@ -80,6 +100,58 @@ Detailed Documentation
 Global Functions
 ----------------
 
+.. index:: pair: function; load_implicit_cross_section
+.. _doxid-namespacegeode_1acb687cbedca7f7bcada2358582d6a0a7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` geode_implicitmodeling_model_api load_implicit_cross_section(absl::string_view filename)
+
+API function for loading an :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_implicit_cross_section
+.. _doxid-namespacegeode_1a752a47963d1b8d3a296efe5e800582e3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void geode_implicitmodeling_model_api save_implicit_cross_section(
+		const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model,
+		absl::string_view filename
+		)
+
+API function for saving an :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- implicit_model
+
+		- :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>`.
+
 .. index:: pair: function; load_implicit_structural_model
 .. _doxid-namespacegeode_1a5e33962083fa7d9ae330f405fee6212f:
 
@@ -88,7 +160,7 @@ Global Functions
 
 	:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>` geode_implicitmodeling_model_api load_implicit_structural_model(absl::string_view filename)
 
-API function for loading a :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`. The adequate loader is called depending on the filename extension.
+API function for loading an :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`. The adequate loader is called depending on the filename extension.
 
 
 
@@ -113,7 +185,7 @@ API function for loading a :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_i
 		absl::string_view filename
 		)
 
-API function for saving a :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`. The adequate saver is called depending on the given filename extension.
+API function for saving an :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`. The adequate saver is called depending on the given filename extension.
 
 
 

@@ -1,0 +1,35 @@
+.. index:: pair: class; geode::ImplicitCrossSectionBuilder
+.. _doxid-classgeode_1_1_implicit_cross_section_builder:
+
+class geode::ImplicitCrossSectionBuilder
+========================================
+
+.. toctree::
+	:hidden:
+
+Class managing modifications of a :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <implicit_cross_section_builder.h>
+	
+	class ImplicitCrossSectionBuilder: public CrossSectionBuilder
+	{
+	public:
+		// construction
+	
+		:target:`ImplicitCrossSectionBuilder<doxid-classgeode_1_1_implicit_cross_section_builder_1ac1b56f774506a01374e8d2c5b16fa76e>`(:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model);
+
+		// methods
+	
+		void :target:`copy<doxid-classgeode_1_1_implicit_cross_section_builder_1a67ddfc0fa765a18351eaef1c972ca1e7>`(const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model);
+		void :target:`instantiate_stratigraphic_attribute_on_surfaces<doxid-classgeode_1_1_implicit_cross_section_builder_1adaa07619c63cace0cbc38295ee85ea1f>`();
+	
+		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_cross_section_builder_1a469ec619d534b6f3d1172fc9304a3a16>`(
+			const Surface2D& surface,
+			index_t vertex_id,
+			Point2D value
+			);
+	};
