@@ -89,6 +89,7 @@ Interface class to represent regular grids. :ref:`More...<details-classgeode_1_1
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`point<doxid-classgeode_1_1_regular_grid_1a594f8783b91fdc908b31a4d817c4536d>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& index) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`cell_barycenter<doxid-classgeode_1_1_regular_grid_1a567deb46ad502ae5e4b6cb47a25c6d91>`(const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& index) const;
 		bool :ref:`contains<doxid-classgeode_1_1_regular_grid_1adea95c4cc74086f15c1d0452da666980>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
+		:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension> :ref:`closest_vertex<doxid-classgeode_1_1_regular_grid_1afdaedae5b8468ce583aa04a2fa62f567>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`GridCellsAroundVertex<doxid-namespacegeode_1a0403bdf67bf85805094b6e99bb52b9bd>`<dimension> :ref:`cells<doxid-classgeode_1_1_regular_grid_1aa5b7c37ead5031ee7b780388d61c640b>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_regular_grid_1aaed9cbd54060d8d3e8a18d8535cf1978>`() const;
 		RegularGrid<dimension> :target:`clone<doxid-classgeode_1_1_regular_grid_1a6f8680fd78b73475e8aa1e512c5543cb>`() const;
@@ -113,7 +114,17 @@ Methods
 
 	bool contains(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const
 
-Returns if the query point is inside the grid, up to a global_epsilon away from the grid bounding box.
+Return true if the query point is inside the grid, up to a global_epsilon away from the grid bounding box.
+
+.. index:: pair: function; closest_vertex
+.. _doxid-classgeode_1_1_regular_grid_1afdaedae5b8468ce583aa04a2fa62f567:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension> closest_vertex(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const
+
+Returns the closest grid vertex to the query point.
 
 .. index:: pair: function; cells
 .. _doxid-classgeode_1_1_regular_grid_1aa5b7c37ead5031ee7b780388d61c640b:
