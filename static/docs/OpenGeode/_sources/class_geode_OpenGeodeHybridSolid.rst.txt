@@ -19,6 +19,11 @@ template class geode::OpenGeodeHybridSolid
 	class OpenGeodeHybridSolid: public :ref:`geode::HybridSolid<doxid-classgeode_1_1_hybrid_solid>`
 	{
 	public:
+		// construction
+	
+		:target:`OpenGeodeHybridSolid<doxid-classgeode_1_1_open_geode_hybrid_solid_1a198a685e457690f24d910c1382dbd73e>`();
+		:target:`OpenGeodeHybridSolid<doxid-classgeode_1_1_open_geode_hybrid_solid_1a1134286cc9704f0969d3cfa8cfaa0d5c>`(OpenGeodeHybridSolid&& other);
+
 		// methods
 	
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_hybrid_solid_1a1c6cd35e15220611d855b32f714a52ad>`() const;

@@ -19,6 +19,11 @@ template class geode::OpenGeodePolygonalSurface
 	class OpenGeodePolygonalSurface: public :ref:`geode::PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`
 	{
 	public:
+		// construction
+	
+		:target:`OpenGeodePolygonalSurface<doxid-classgeode_1_1_open_geode_polygonal_surface_1a26870d1b65d2023a7be850680ab64ebf>`();
+		:target:`OpenGeodePolygonalSurface<doxid-classgeode_1_1_open_geode_polygonal_surface_1a890b7caa679f9d7eff52500e843aced4>`(OpenGeodePolygonalSurface&& other);
+
 		// methods
 	
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_polygonal_surface_1a2b4eb083bccaa5fcc04c0c6d781426ef>`() const;
