@@ -1222,6 +1222,28 @@ Overview
 		:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension>& builder
 		);
 
+	template <
+		template<index_t> class Mesh,
+		template<index_t> class MeshBuilder,
+		index_t dimension
+		>
+	void :target:`translate_mesh<doxid-namespacegeode_1aadf5811c018d1dcd98bb06afeb6c179b>`(
+		Mesh<dimension>& mesh,
+		MeshBuilder<dimension>& builder,
+		const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& translation
+		);
+
+	template <
+		template<index_t> class Mesh,
+		template<index_t> class MeshBuilder,
+		index_t dimension
+		>
+	void :target:`rescale_mesh<doxid-namespacegeode_1af8ca69d2d7b39bc07b6077a3fcbfcf0d>`(
+		Mesh<dimension>& mesh,
+		MeshBuilder<dimension>& builder,
+		const std::array<double, dimension>& scale
+		);
+
 	template <template<index_t> class Mesh, index_t dimension>
 	:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`<dimension> :target:`create_nn_search<doxid-namespacegeode_1abeee5ff5c5a7319611e59fe60ff6f740>`(const Mesh<dimension>& mesh);
 

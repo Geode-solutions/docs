@@ -1028,6 +1028,28 @@
     <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder"><span class="std std-ref">SurfaceMeshBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span>
     <span class="p">);</span>
 
+<span class="k">template</span> <span class="o">&lt;</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Mesh</span><span class="p">,</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">MeshBuilder</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">dimension</span>
+    <span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aadf5811c018d1dcd98bb06afeb6c179b"><span></span><span class="n">translate_mesh</span></span><span></span><span class="p">(</span>
+    <span class="n">Mesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">MeshBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">translation</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Mesh</span><span class="p">,</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">MeshBuilder</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">dimension</span>
+    <span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af8ca69d2d7b39bc07b6077a3fcbfcf0d"><span></span><span class="n">rescale_mesh</span></span><span></span><span class="p">(</span>
+    <span class="n">Mesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">MeshBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">scale</span>
+    <span class="p">);</span>
+
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span> <span class="n">Mesh</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <a class="reference internal" href="class_geode_NNSearch.html#doxid-classgeode-1-1-n-n-search"><span class="std std-ref">NNSearch</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abeee5ff5c5a7319611e59fe60ff6f740"><span></span><span class="n">create_nn_search</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Mesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 
