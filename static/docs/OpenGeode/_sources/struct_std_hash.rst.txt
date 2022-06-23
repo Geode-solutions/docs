@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::ComponentType>
-.. _doxid-structstd_1_1hash_3_01geode_1_1_component_type_01_4:
+.. index:: pair: struct; std::hash<geode::ComponentID>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_component_i_d_01_4:
 
-template struct std::hash<geode::ComponentType>
-===============================================
+template struct std::hash<geode::ComponentID>
+=============================================
 
 .. toctree::
 	:hidden:
@@ -16,9 +16,9 @@ template struct std::hash<geode::ComponentType>
 	#include <component_type.h>
 	
 	template <>
-	struct hash<geode::ComponentType>
+	struct hash<geode::ComponentID>
 	{
 		// methods
 	
-		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_component_type_01_4_1a797923e5e4b38c6b1706901c806df69b>` (const :ref:`geode::ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_component_i_d_01_4_1a0f27eb9d5de93249185cbebd6476faa3>` (const :ref:`geode::ComponentID<doxid-classgeode_1_1_component_i_d>`& id) const;
 	};

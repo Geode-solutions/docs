@@ -34,7 +34,9 @@ This struct represents a graph edge endpoint :ref:`More...<details-structgeode_1
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_edge_vertex_1a7d4290000ba81123b0294227fcc71414>` (const EdgeVertex& other) const;
 		bool :target:`operator !=<doxid-structgeode_1_1_edge_vertex_1a8ef03c3a07a86be41c625f141b678473>` (const EdgeVertex& other) const;
+		bool :target:`operator <<doxid-structgeode_1_1_edge_vertex_1a1566d93a926b26840ee804db9439c5dc>` (const EdgeVertex& other) const;
 		EdgeVertex :target:`opposite<doxid-structgeode_1_1_edge_vertex_1a7ce2d0837039c795024f11f4db861114>`() const;
+		std::string :target:`string<doxid-structgeode_1_1_edge_vertex_1a272d68d04c2e20bbeb92a44236a80f6d>`() const;
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_edge_vertex_1abe11699079e85d7e3a821897fd2e2fc2>`(Archive& archive);

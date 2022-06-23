@@ -32,6 +32,7 @@ This struct represents an edge in a polygon
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_polygon_edge_1a4b88836272b1a519e8d599eaeec20bff>` (const PolygonEdge& other) const;
 		bool :target:`operator !=<doxid-structgeode_1_1_polygon_edge_1a5c89d77e3cc9bcec1556d20852b8129a>` (const PolygonEdge& other) const;
+		bool :target:`operator <<doxid-structgeode_1_1_polygon_edge_1a361e0146c1e61c30591da025650cb5e0>` (const PolygonEdge& other) const;
 		std::string :target:`string<doxid-structgeode_1_1_polygon_edge_1acfde92fc0286835d47beb34b79cd6885>`() const;
 	
 		template <typename Archive>

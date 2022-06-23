@@ -13,7 +13,7 @@ struct geode::SurfacePolygonEdge
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <component_mesh_queries.h>
+	#include <component_mesh_polygons.h>
 	
 	struct SurfacePolygonEdge
 	{

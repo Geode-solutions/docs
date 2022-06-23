@@ -31,6 +31,7 @@ struct geode::PolyhedronFacetVertex
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_polyhedron_facet_vertex_1acbf550fc138ba5f085e53aebb26cd9cd>` (const PolyhedronFacetVertex& other) const;
 		bool :target:`operator !=<doxid-structgeode_1_1_polyhedron_facet_vertex_1acc8d6f349ab045161a099009532384b6>` (const PolyhedronFacetVertex& other) const;
+		bool :target:`operator <<doxid-structgeode_1_1_polyhedron_facet_vertex_1a19500e1b3b1e04957e3d52175960d89f>` (const PolyhedronFacetVertex& other) const;
 		std::string :target:`string<doxid-structgeode_1_1_polyhedron_facet_vertex_1a3e95be07055a43513f52295f58dab748>`() const;
 	
 		template <typename Archive>

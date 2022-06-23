@@ -31,6 +31,7 @@ This struct represents a local vertex in a polyhedron
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_polyhedron_vertex_1aa312d3741fba47b5d337025ea4ecccce>` (const PolyhedronVertex& other) const;
 		bool :target:`operator !=<doxid-structgeode_1_1_polyhedron_vertex_1ac8911162aa3fed95db15440ebb1d49d5>` (const PolyhedronVertex& other) const;
+		bool :target:`operator <<doxid-structgeode_1_1_polyhedron_vertex_1a29b571e45d08f751b0879f6abccf8848>` (const PolyhedronVertex& other) const;
 		std::string :target:`string<doxid-structgeode_1_1_polyhedron_vertex_1a43aa4de6ed9144991dc10a2777a4169e>`() const;
 	
 		template <typename Archive>
