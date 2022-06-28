@@ -463,11 +463,6 @@ Overview
 		const Line3D& line
 		);
 
-	std::vector<std::pair<MeshComponentVertex, MeshComponentVertex>> geode_common_helpers_api :target:`common_vertices<doxid-namespacegeode_1a9bcc5d5b75495e77afbeb355b6b6fab4>`(
-		absl::Span<const MeshComponentVertex> vertex0,
-		absl::Span<const MeshComponentVertex> vertex1
-		);
-
 	template <index_t dimension>
 	std::vector<GridCellIndices<dimension>> :target:`rasterize_segment<doxid-namespacegeode_1ae7018f2c9fa69cbb05d9ea118dfcc50b>`(
 		const RegularGrid<dimension>& grid,
@@ -571,10 +566,106 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(Block);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(Point);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(Surface);
+
+	bool geode_common_modifier_model_api :target:`is_collapse_edge_valid<doxid-namespacegeode_1afafff9191ebfeef774380bb1a0f66cf3>`(
+		const BRep& brep,
+		const Block3D& block,
+		const PolyhedronFacetEdge& edge,
+		const Point3D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_collapse_edge_valid<doxid-namespacegeode_1a2f082d27de26d7e598d8b0127dd163a2>`(
+		const BRep& brep,
+		const Surface3D& surface,
+		const PolygonEdge& edge,
+		const Point3D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_collapse_edge_valid<doxid-namespacegeode_1a4f57b1fe13b060a0df7940cae6566bb2>`(
+		const BRep& brep,
+		const Line3D& line,
+		index_t edge,
+		const Point3D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_split_edge_valid<doxid-namespacegeode_1a03be2bfab809dc40a1008f8b085db38f>`(
+		const BRep& brep,
+		const Block3D& block,
+		const PolyhedronFacetEdge& edge,
+		const Point3D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_split_edge_valid<doxid-namespacegeode_1aedd696df7ac6cae328199bde0c1369c1>`(
+		const BRep& brep,
+		const Surface3D& surface,
+		const PolygonEdge& edge,
+		const Point3D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_split_edge_valid<doxid-namespacegeode_1a3db257bdade7c79a8941cdf2d8634ea7>`(
+		const BRep& brep,
+		const Line3D& line,
+		index_t edge,
+		const Point3D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_swap_edge_valid<doxid-namespacegeode_1a60f35d93374174670d346aaeedee1b1d>`(
+		const BRep& brep,
+		const Surface3D& surface,
+		const PolygonEdge& edge
+		);
+
+	bool geode_common_modifier_model_api :target:`is_move_point_valid<doxid-namespacegeode_1a4034a1f74a10d1d8dc0505403fbe2b19>`(
+		const BRep& brep,
+		index_t unique_vertex,
+		const Point3D& point
+		);
+
 	void geode_common_modifier_model_api :target:`initialize_modifier_model<doxid-namespacegeode_1a6566ef2173a01c0dd2eae7f558bbbd33>`();
 	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(Line);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(Surface);
+
+	bool geode_common_modifier_model_api :target:`is_collapse_edge_valid<doxid-namespacegeode_1a9d65f2d5a9e77faa33730efd261031c0>`(
+		const Section& section,
+		const Surface2D& surface,
+		const PolygonEdge& edge,
+		const Point2D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_collapse_edge_valid<doxid-namespacegeode_1a6ca781e13f9fec080a835476964eab1d>`(
+		const Section& section,
+		const Line2D& line,
+		index_t edge,
+		const Point2D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_split_edge_valid<doxid-namespacegeode_1a805e28f46844d4e09d6e8d38a47a18d0>`(
+		const Section& section,
+		const Surface2D& surface,
+		const PolygonEdge& edge,
+		const Point2D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_split_edge_valid<doxid-namespacegeode_1abe764a1e4dc6d4dadef9def0b57cf1c1>`(
+		const Section& section,
+		const Line2D& line,
+		index_t edge,
+		const Point2D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_swap_edge_valid<doxid-namespacegeode_1aa8257594688153bf624792f8dcec4a7c>`(
+		const Section& section,
+		const Surface2D& surface,
+		const PolygonEdge& edge
+		);
+
+	bool geode_common_modifier_model_api :target:`is_move_point_valid<doxid-namespacegeode_1a1e444ca717fdce3694b325c62413851e>`(
+		const Section& section,
+		index_t unique_vertex,
+		const Point2D& point
+		);
+
 	void geode_common_modifier_solid_api :target:`initialize_modifier_solid<doxid-namespacegeode_1aca1037c51008da68e1286546ecb8a4cb>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
 
@@ -631,6 +722,12 @@ Overview
 		index_t apex
 		);
 
+	bool geode_common_modifier_solid_api :ref:`is_move_point_valid<doxid-namespacegeode_1aa61511c32d947c0e24e9a0558b587d4e>`(
+		const TetrahedralSolid3D& mesh,
+		index_t vertex,
+		const Point3D& point
+		);
+
 	std::array<Tetra, 4> geode_common_modifier_solid_api :ref:`tetrahedra_after_split_tetrahedron<doxid-namespacegeode_1a829593615628868c1c98c4810369f7f5>`(
 		const TetrahedralSolid3D& mesh,
 		index_t tetrahedron_id,
@@ -684,6 +781,12 @@ Overview
 		index_t apex
 		);
 
+	absl::FixedArray<Tetra> geode_common_modifier_solid_api :ref:`tetrahedra_after_move_point<doxid-namespacegeode_1a3414915b4db44f5aa5de2ff5f4788bfd>`(
+		const TetrahedralSolid3D& mesh,
+		index_t vertex,
+		const Point3D& point
+		);
+
 	void geode_common_modifier_surface_api :target:`initialize_modifier_surface<doxid-namespacegeode_1ae501c95d009522882c623f08458b10d6>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a4b6e0eef43419c522c8afdef30e0c045>`(TriangulatedSurfaceBuilder);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1cd4849bc62b1ce5604ec265c2a12ce4>`(:ref:`TriangulatedSurfaceEpsilonModifier<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier>`);
@@ -724,6 +827,13 @@ Overview
 		);
 
 	template <index_t dimension>
+	bool :ref:`is_move_point_valid<doxid-namespacegeode_1a20611982454e1f7dbc86eb9cd6fd6d9e>`(
+		const TriangulatedSurface<dimension>& mesh,
+		index_t vertex,
+		const Point<dimension>& point
+		);
+
+	template <index_t dimension>
 	std::array<Triangle<dimension>, 3> :ref:`triangles_after_split_triangle<doxid-namespacegeode_1a46de1238fbbcaadb42345226395d286a>`(
 		const TriangulatedSurface<dimension>& mesh,
 		index_t triangle_id,
@@ -755,6 +865,13 @@ Overview
 	absl::FixedArray<Triangle<dimension>> :ref:`triangles_after_swap_edge<doxid-namespacegeode_1af7bfff60df9c5fbe4d2e71bc947745c8>`(
 		const TriangulatedSurface<dimension>& mesh,
 		const PolygonEdge& edge
+		);
+
+	template <index_t dimension>
+	absl::FixedArray<Triangle<dimension>> :ref:`triangles_after_move_point<doxid-namespacegeode_1a2707eca5087583862d082826e99abef0>`(
+		const TriangulatedSurface<dimension>& mesh,
+		index_t vertex,
+		const Point<dimension>& point
 		);
 
 	} // namespace geode
@@ -1645,7 +1762,7 @@ true if swap facet will keep mesh valid.
 		index_t apex
 		)
 
-Check if a edge swap will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The swap is not applied.
+Check if an edge swap will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The swap is not applied.
 
 
 
@@ -1674,6 +1791,48 @@ Check if a edge swap will keep the mesh valid, meaning the signs of the tetrahed
 .. rubric:: Returns:
 
 true if swap edge will keep mesh valid.
+
+.. index:: pair: function; is_move_point_valid
+.. _doxid-namespacegeode_1aa61511c32d947c0e24e9a0558b587d4e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool geode_common_modifier_solid_api is_move_point_valid(
+		const TetrahedralSolid3D& mesh,
+		index_t vertex,
+		const Point3D& point
+		)
+
+Check if a vertex relocation will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The vertex relocation is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Tetrahedral mesh on which simulate operation.
+
+	*
+		- vertex
+
+		- Index of the vertex to relocate.
+
+	*
+		- point
+
+		- Coordinates of the destination point.
+
+
+
+.. rubric:: Returns:
+
+true if vertex relocation will keep mesh valid.
 
 .. index:: pair: function; tetrahedra_after_split_tetrahedron
 .. _doxid-namespacegeode_1a829593615628868c1c98c4810369f7f5:
@@ -1795,7 +1954,7 @@ Return all the tetrahedra resulting from a facet split. The split is not applied
 		const Point3D& point
 		)
 
-Return all the tetrahedra resulting from a edge split. The split is not applied.
+Return all the tetrahedra resulting from an edge split. The split is not applied.
 
 
 
@@ -1831,7 +1990,7 @@ Return all the tetrahedra resulting from a edge split. The split is not applied.
 		const Point3D& point
 		)
 
-Return all the tetrahedra resulting from a edge split. The split is not applied.
+Return all the tetrahedra resulting from an edge split. The split is not applied.
 
 
 
@@ -1867,7 +2026,7 @@ Return all the tetrahedra resulting from a edge split. The split is not applied.
 		const Point3D& point
 		)
 
-Return all the tetrahedra resulting from a edge collapse. The collapse is not applied.
+Return all the tetrahedra resulting from an edge collapse. The collapse is not applied.
 
 
 
@@ -1903,7 +2062,7 @@ Return all the tetrahedra resulting from a edge collapse. The collapse is not ap
 		const Point3D& point
 		)
 
-Return all the tetrahedra resulting from a edge collapse. The collapse is not applied.
+Return all the tetrahedra resulting from an edge collapse. The collapse is not applied.
 
 
 
@@ -1974,7 +2133,7 @@ Return the three tetrahedra resulting from a facet swap. The swap is not applied
 		index_t apex
 		)
 
-Return all the tetrahedra resulting from a edge swap. The swap is not applied.
+Return all the tetrahedra resulting from an edge swap. The swap is not applied.
 
 
 
@@ -1997,6 +2156,42 @@ Return all the tetrahedra resulting from a edge swap. The swap is not applied.
 		- apex
 
 		- Index of the vertex used as the new facets fan common vertex.
+
+.. index:: pair: function; tetrahedra_after_move_point
+.. _doxid-namespacegeode_1a3414915b4db44f5aa5de2ff5f4788bfd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::FixedArray<Tetra> geode_common_modifier_solid_api tetrahedra_after_move_point(
+		const TetrahedralSolid3D& mesh,
+		index_t vertex,
+		const Point3D& point
+		)
+
+Return all the tetrahedra resulting from a vertex relocation. The vertex relocation is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Tetrahedral mesh on which simulate operation.
+
+	*
+		- vertex
+
+		- Index of the vertex to relocate.
+
+	*
+		- point
+
+		- Coordinates of the destination point.
 
 .. index:: pair: function; is_split_triangle_valid
 .. _doxid-namespacegeode_1adf7d901f6e5bd81513781732d5780b96:
@@ -2054,7 +2249,7 @@ true if split will keep mesh valid.
 		const Point<dimension>& point
 		)
 
-Check if a edge split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
+Check if an edge split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
 
 
 
@@ -2182,7 +2377,7 @@ true if collapse will keep mesh valid.
 		const PolygonEdge& edge
 		)
 
-Check if a edge swap will keep the mesh valid, meaning the sign of the triangle areas are positive. The swap is not applied.
+Check if an edge swap will keep the mesh valid, meaning the sign of the triangle areas are positive. The swap is not applied.
 
 
 
@@ -2206,6 +2401,49 @@ Check if a edge swap will keep the mesh valid, meaning the sign of the triangle 
 .. rubric:: Returns:
 
 true if swap edge will keep mesh valid.
+
+.. index:: pair: function; is_move_point_valid
+.. _doxid-namespacegeode_1a20611982454e1f7dbc86eb9cd6fd6d9e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	bool is_move_point_valid(
+		const TriangulatedSurface<dimension>& mesh,
+		index_t vertex,
+		const Point<dimension>& point
+		)
+
+Check if a vertex relocation will keep the mesh valid, meaning the sign of the triangle areas are positive. The relocation is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Triangulated mesh on which simulate operation.
+
+	*
+		- vertex
+
+		- Index of the vertex to relocate.
+
+	*
+		- point
+
+		- Coordinates of the destination point.
+
+
+
+.. rubric:: Returns:
+
+true if vertex relocation will keep mesh valid.
 
 .. index:: pair: function; triangles_after_split_triangle
 .. _doxid-namespacegeode_1a46de1238fbbcaadb42345226395d286a:
@@ -2385,4 +2623,41 @@ Return all the triangles resulting from an edge swap. The swap is not applied.
 		- edge
 
 		- Index of the PolygonEdge to swap.
+
+.. index:: pair: function; triangles_after_move_point
+.. _doxid-namespacegeode_1a2707eca5087583862d082826e99abef0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	absl::FixedArray<Triangle<dimension>> triangles_after_move_point(
+		const TriangulatedSurface<dimension>& mesh,
+		index_t vertex,
+		const Point<dimension>& point
+		)
+
+Return all the triangles resulting from a vertex relocation. The vertex relocation is not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Triangulated mesh on which simulate operation.
+
+	*
+		- vertex
+
+		- Index of the vertex to relocate.
+
+	*
+		- point
+
+		- Coordinates of the destination point.
 

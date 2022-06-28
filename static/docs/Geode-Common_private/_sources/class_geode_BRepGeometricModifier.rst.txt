@@ -24,10 +24,9 @@ class geode::BRepGeometricModifier
 
 		// methods
 	
-		:ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a772fe1a3ce552cc2e3053a2b8ee2cd00>`(
+		:ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a31b03b4f1cccacc96e3e58f9295326df>`(
 			const Block3D& block,
-			index_t tetrahedron,
-			const std::array<index_t, 2>& edge,
+			const PolyhedronFacetEdge& edge,
 			const Point3D& point
 			);
 	
@@ -43,10 +42,9 @@ class geode::BRepGeometricModifier
 			const Point3D& point
 			);
 	
-		:ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a394f624ed3638f57dbed165bf76966fb>`(
+		:ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1af22dc4fe32165d1d83d5152d6d0783c0>`(
 			const Block3D& block,
-			index_t tetrahedron,
-			const std::array<index_t, 2>& edge,
+			const PolyhedronFacetEdge& edge,
 			const Point3D& point
 			);
 	

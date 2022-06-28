@@ -140,7 +140,7 @@ new vertex index and mappings between old and new mesh.
 		const Point3D& point
 		)
 
-Insert a point on a facet either by spliting the facet into three new ones, or by snapping the point on a edge or a vertex.
+Insert a point on a facet either by spliting the facet into three new ones, or by snapping the point on an edge or a vertex.
 
 
 
