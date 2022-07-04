@@ -63,7 +63,6 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(SolidMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(Surface);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a775f43c93e557302fbaa359aa0af2f19>`(SurfaceMesh);
 	BRep geode_conversion_model_api :ref:`convert_surface_into_brep<doxid-namespacegeode_1a7fa8e8933f7d3acd7930bad19d87e79a>`(const SurfaceMesh3D& surface);
 	std::tuple<BRep, absl::FixedArray<absl::InlinedVector<uuid, 1>>> geode_conversion_model_api :ref:`convert_surfaces_into_brep<doxid-namespacegeode_1ab636f1e91aa498007e1fab1c3c3de778>`(const std::vector<std::reference_wrapper<const SurfaceMesh3D>>& surfaces);
