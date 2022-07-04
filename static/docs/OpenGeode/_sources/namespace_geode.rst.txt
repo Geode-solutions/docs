@@ -876,6 +876,11 @@ Overview
 		);
 
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> opengeode_basic_api :target:`old2new_permutation<doxid-namespacegeode_1ab1356e215313d6b14a021c9a6b1c01cd>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
+	std::vector<absl::string_view> opengeode_basic_api :target:`string_split<doxid-namespacegeode_1a91e63f7358ed38f8a5248922fbf8fdad>`(absl::string_view string);
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` opengeode_basic_api :target:`string_to_index<doxid-namespacegeode_1a44d4220b8fc40e0248339f379efe6de6>`(absl::string_view string);
+	int opengeode_basic_api :target:`string_to_int<doxid-namespacegeode_1af1e95803c9c42a9078f520ab4945324c>`(absl::string_view string);
+	float opengeode_basic_api :target:`string_to_float<doxid-namespacegeode_1a93bdf495a836f82f4fee0eea8bfd9ae2>`(absl::string_view string);
+	double opengeode_basic_api :target:`string_to_double<doxid-namespacegeode_1ac444eab03e4359a671cf47bd89e02754>`(absl::string_view string);
 	constexpr unsigned char :target:`operator""_uc<doxid-namespacegeode_1a9190d15ac9b68969b470a72c3c379b99>` (unsigned long long arg);
 	std::string :target:`to_string<doxid-namespacegeode_1a6ee93ebf942d8596cd314e424b79a128>`(absl::string_view view);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a704add8ff33f82fa87b376794c8183d1>`(:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`);
