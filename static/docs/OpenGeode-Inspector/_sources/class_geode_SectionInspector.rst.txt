@@ -15,7 +15,9 @@ Class for inspecting a Section model
 
 	#include <section_inspector.h>
 	
-	class SectionInspector: public :ref:`geode::SectionTopologyInspector<doxid-classgeode_1_1_section_topology_inspector>`
+	class SectionInspector:
+	    public :ref:`geode::SectionTopologyInspector<doxid-classgeode_1_1_section_topology_inspector>`,
+	    public :ref:`geode::AddInspectors<doxid-classgeode_1_1_add_inspectors>`
 	{
 	public:
 		// construction
@@ -48,4 +50,5 @@ Inherited Members
 		std::vector<index_t> :ref:`part_of_invalid_unique_line_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1ad4bf82af64d29670e4e59808fd07c129>`() const;
 		std::vector<index_t> :ref:`part_of_lines_but_not_corner_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a54916a5b0abdc94e72a080a843d2f47f>`() const;
 		std::vector<index_t> :ref:`part_of_invalid_surfaces_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a944adab229a619043c2cecd04fccf038>`() const;
+		std::vector<index_t> :ref:`part_of_line_and_not_on_surface_border_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1acf2877be5558928250fa300b072721ed>`() const;
 

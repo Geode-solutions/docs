@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>template class geode::UniqueVerticesColocation &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="template class geode::SurfaceMeshVertexManifold" href="class_geode_SurfaceMeshVertexManifold.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-uniqueverticescolocation">
+<span id="doxid-classgeode-1-1-unique-vertices-colocation"></span><span id="index-0"></span><h1>template class geode::UniqueVerticesColocation</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Class for inspecting the colocation of points in a PointSet</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;unique_vertices_colocation.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">UniqueVerticesColocation</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1a72be605d4df2435bd8c7392521281cf4"><span></span><span class="n">UniqueVerticesColocation</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1adc727021b1158bc4f56e691592cecbcd"><span></span><span class="n">UniqueVerticesColocation</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">verbose</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1a740d2fb0332e173fb06e5352faa9a668"><span></span><span class="n">model_has_unique_vertices_linked_to_different_points</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1ae5604975e7622b4a993653144e86e3d4"><span></span><span class="n">model_has_colocated_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1a0192785080d4e5fd7eeaa76877df2882"><span></span><span class="n">nb_colocated_unique_vertices</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1a0b320f68552311ace6d2a4764b4a4b00"><span></span><span class="n">nb_unique_vertices_linked_to_different_points</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1a8aeeee6bbcef7e41421132856b9a1707"><span></span><span class="n">colocated_unique_vertices_groups</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1a6c5a0fdf6cfd91c8a58267ce94cfeb66"><span></span><span class="n">unique_vertices_linked_to_different_points</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_UniqueVerticesColocation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -22,11 +22,15 @@ This mixin represents an assembly of inspectors. Syntax to create a derivated cl
 
 	// direct descendants
 
+	class :ref:`BRepInspector<doxid-classgeode_1_1_b_rep_inspector>`;
+
 	template <index_t dimension>
 	class :ref:`EdgedCurveInspector<doxid-classgeode_1_1_edged_curve_inspector>`;
 
 	template <index_t dimension>
 	class :ref:`PointSetInspector<doxid-classgeode_1_1_point_set_inspector>`;
+
+	class :ref:`SectionInspector<doxid-classgeode_1_1_section_inspector>`;
 
 	template <index_t dimension>
 	class :ref:`SolidMeshInspector<doxid-classgeode_1_1_solid_mesh_inspector>`;
