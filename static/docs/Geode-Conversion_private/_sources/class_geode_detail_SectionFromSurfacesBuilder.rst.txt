@@ -1,0 +1,31 @@
+.. index:: pair: class; geode::detail::SectionFromSurfacesBuilder
+.. _doxid-classgeode_1_1detail_1_1_section_from_surfaces_builder:
+
+class geode::detail::SectionFromSurfacesBuilder
+===============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_from_surfaces_builder.h>
+	
+	class SectionFromSurfacesBuilder
+	{
+	public:
+		// construction
+	
+		:target:`SectionFromSurfacesBuilder<doxid-classgeode_1_1detail_1_1_section_from_surfaces_builder_1a6420ea640aad190330d47d4249aa9576>`(
+			Section& model,
+			absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces
+			);
+
+		// methods
+	
+		void :target:`build<doxid-classgeode_1_1detail_1_1_section_from_surfaces_builder_1adb2422bf573949dc48071adc6d4b804f>`();
+	};

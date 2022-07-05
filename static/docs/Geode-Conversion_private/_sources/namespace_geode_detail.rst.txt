@@ -15,6 +15,7 @@ namespace geode::detail
 	class_geode_detail_CornersLinesBuilderFromSolid.rst
 	class_geode_detail_CornersLinesBuilderFromSurface.rst
 	class_geode_detail_SectionFromSurfaceBuilder.rst
+	class_geode_detail_SectionFromSurfacesBuilder.rst
 	class_geode_detail_SolidIdentifier.rst
 	class_geode_detail_SurfaceFromSolidAdjacencies.rst
 	class_geode_detail_SurfaceIdentifier.rst
@@ -31,8 +32,8 @@ namespace geode::detail
 
 	// typedefs
 
-	typedef :ref:`CornersLinesBuilderFromModel<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_model>`<BRep, BRepBuilder, 3> :target:`BRepCornersLinesBuilderFromModel<doxid-namespacegeode_1_1detail_1a77b4c02aa65caac782b82895937f33ac>`;
-	typedef :ref:`CornersLinesBuilderFromModel<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_model>`<Section, SectionBuilder, 2> :target:`SectionCornersLinesBuilderFromModel<doxid-namespacegeode_1_1detail_1a6fd21deb0cff8632c62d5c39f1f4e500>`;
+	typedef :ref:`CornersLinesBuilderFromModel<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_model>`<BRep, BRepBuilder, 3> :target:`CornersLinesBuilderFromBRep<doxid-namespacegeode_1_1detail_1a91f257d0ae1a7c6e839d81fc51e9d845>`;
+	typedef :ref:`CornersLinesBuilderFromModel<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_model>`<Section, SectionBuilder, 2> :target:`CornersLinesBuilderFromSection<doxid-namespacegeode_1_1detail_1ade2b98bccc534d39c2c83763ad6f1839>`;
 	typedef :ref:`CornersLinesBuilderFromSolid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_solid>`<BRep, BRepBuilder> :target:`BRepCornersLinesBuilderFromSolid<doxid-namespacegeode_1_1detail_1a29554aed5867d2e153906ac874fd2130>`;
 	typedef :ref:`CornersLinesBuilderFromSurface<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_surface>`<BRep, BRepBuilder, 3> :target:`BRepCornersLinesBuilderFromSurface<doxid-namespacegeode_1_1detail_1a042841da55ff0a431e2b2035ecfb6438>`;
 	typedef :ref:`CornersLinesBuilderFromSurface<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_surface>`<Section, SectionBuilder, 2> :target:`SectionCornersLinesBuilderFromSurface<doxid-namespacegeode_1_1detail_1a70b1b4eefb4e8bb76eb06589688915f3>`;
@@ -56,6 +57,7 @@ namespace geode::detail
 	class :ref:`CornersLinesBuilderFromSurface<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_surface>`;
 
 	class :ref:`SectionFromSurfaceBuilder<doxid-classgeode_1_1detail_1_1_section_from_surface_builder>`;
+	class :ref:`SectionFromSurfacesBuilder<doxid-classgeode_1_1detail_1_1_section_from_surfaces_builder>`;
 	class :ref:`SolidIdentifier<doxid-classgeode_1_1detail_1_1_solid_identifier>`;
 	class :ref:`SurfaceFromSolidAdjacencies<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies>`;
 

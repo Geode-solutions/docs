@@ -30,23 +30,65 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a80ee0d83f9eb471e3d0a3066c343cb42>`(EdgedCurve);
-	std::unique_ptr<EdgedCurve2D> geode_conversion_mesh_api :target:`convert_edged_curve3d_into_2d<doxid-namespacegeode_1a5d42cb1fdfd5f238cb7a19352be4b9df>`(const EdgedCurve3D& curve3d);
-	std::unique_ptr<EdgedCurve3D> geode_conversion_mesh_api :target:`convert_edged_curve2d_into_3d<doxid-namespacegeode_1af63312aeec876df7a70ac520a712fe39>`(const EdgedCurve2D& curve2d);
+
+	std::unique_ptr<EdgedCurve2D> geode_conversion_mesh_api :target:`convert_edged_curve3d_into_2d<doxid-namespacegeode_1a9b2777a37340db2bd47b90f64d2bfe7a>`(
+		const EdgedCurve3D& curve3d,
+		index_t axis_to_remove
+		);
+
+	std::unique_ptr<EdgedCurve3D> geode_conversion_mesh_api :target:`convert_edged_curve2d_into_3d<doxid-namespacegeode_1a7e5fea8b4616314555417626a06c34d2>`(
+		const EdgedCurve2D& curve2d,
+		index_t axis_to_add
+		);
+
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a11058d89bacb297358eb8a8a8a29490c>`(PointSet);
-	std::unique_ptr<PointSet2D> geode_conversion_mesh_api :target:`convert_point_set3d_into_2d<doxid-namespacegeode_1abbc8761c3b7799d4008a5310279a35aa>`(const PointSet3D& point_set3d);
-	std::unique_ptr<PointSet3D> geode_conversion_mesh_api :target:`convert_point_set2d_into_3d<doxid-namespacegeode_1ab84ab44f7930d36c4b4fd0a8d343484d>`(const PointSet2D& point_set2d);
+
+	std::unique_ptr<PointSet2D> geode_conversion_mesh_api :target:`convert_point_set3d_into_2d<doxid-namespacegeode_1a8fae255457d5e5b0c9a98201bf68dfd0>`(
+		const PointSet3D& point_set3d,
+		index_t axis_to_remove
+		);
+
+	std::unique_ptr<PointSet3D> geode_conversion_mesh_api :target:`convert_point_set2d_into_3d<doxid-namespacegeode_1ade58d83ee5d02160a36709053d4ef69f>`(
+		const PointSet2D& point_set2d,
+		index_t axis_to_add
+		);
+
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa326268026b80210a023b9d2edec059d>`(PolygonalSurface);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7986437714612066a303580285ecf217>`(SurfaceMesh);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a36eeebddb61f6b3acc7e4711bb6bbeb4>`(PolygonalSurface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac5ecef06abef60896357a8eb77586520>`(TriangulatedSurface);
-	std::unique_ptr<SurfaceMesh3D> geode_conversion_mesh_api :target:`convert_surface_mesh2d_into_3d<doxid-namespacegeode_1aa9202c848c215cca7960b4dccd7d8848>`(const SurfaceMesh2D& surface2d);
-	std::unique_ptr<SurfaceMesh2D> geode_conversion_mesh_api :target:`convert_surface_mesh3d_into_2d<doxid-namespacegeode_1a11044d805f02b1adbe31cde463b5e54c>`(const SurfaceMesh3D& surface3d);
-	std::unique_ptr<PolygonalSurface3D> geode_conversion_mesh_api :target:`convert_polygonal_surface2d_into_3d<doxid-namespacegeode_1ad542ff61f62bc955fa53e0a7dafedc13>`(const PolygonalSurface2D& surface2d);
-	std::unique_ptr<PolygonalSurface2D> geode_conversion_mesh_api :target:`convert_polygonal_surface3d_into_2d<doxid-namespacegeode_1a6c1f6971a347f7c1d0d7fef37b4bda2a>`(const PolygonalSurface3D& surface3d);
-	std::unique_ptr<TriangulatedSurface3D> geode_conversion_mesh_api :target:`convert_triangulated_surface2d_into_3d<doxid-namespacegeode_1a0742293fa947b4cbf86928661084d4c9>`(const TriangulatedSurface2D& surface2d);
-	std::unique_ptr<TriangulatedSurface2D> geode_conversion_mesh_api :target:`convert_triangulated_surface3d_into_2d<doxid-namespacegeode_1aceeeaf110cb9f1136b3b5c70136c68c7>`(const TriangulatedSurface3D& surface3d);
+
+	std::unique_ptr<SurfaceMesh3D> geode_conversion_mesh_api :target:`convert_surface_mesh2d_into_3d<doxid-namespacegeode_1a21c6c0e00b0264269428c718cebc0a71>`(
+		const SurfaceMesh2D& surface2d,
+		index_t axis_to_add
+		);
+
+	std::unique_ptr<SurfaceMesh2D> geode_conversion_mesh_api :target:`convert_surface_mesh3d_into_2d<doxid-namespacegeode_1a6908792192c8406f2894bcf8ec24a3fd>`(
+		const SurfaceMesh3D& surface3d,
+		index_t axis_to_remove
+		);
+
+	std::unique_ptr<PolygonalSurface3D> geode_conversion_mesh_api :target:`convert_polygonal_surface2d_into_3d<doxid-namespacegeode_1ad7802990d95ad1e9605af426d8351489>`(
+		const PolygonalSurface2D& surface2d,
+		index_t axis_to_add
+		);
+
+	std::unique_ptr<PolygonalSurface2D> geode_conversion_mesh_api :target:`convert_polygonal_surface3d_into_2d<doxid-namespacegeode_1a7e8f8a6b2a759019bd9a8b5210419390>`(
+		const PolygonalSurface3D& surface3d,
+		index_t axis_to_remove
+		);
+
+	std::unique_ptr<TriangulatedSurface3D> geode_conversion_mesh_api :target:`convert_triangulated_surface2d_into_3d<doxid-namespacegeode_1a8a3e7feb9ec3e76148d011b1969391ca>`(
+		const TriangulatedSurface2D& surface2d,
+		index_t axis_to_add
+		);
+
+	std::unique_ptr<TriangulatedSurface2D> geode_conversion_mesh_api :target:`convert_triangulated_surface3d_into_2d<doxid-namespacegeode_1a573610dd8f1ca135b85895d651054e73>`(
+		const TriangulatedSurface3D& surface3d,
+		index_t axis_to_remove
+		);
 
 	template <index_t dimension>
 	std::unique_ptr<SurfaceMesh<dimension>> :target:`merge_surface_mesh<doxid-namespacegeode_1a42bbac6585bd93d1b5efd8d3a7df2e89>`(const SurfaceMesh<dimension>& surface);
@@ -57,8 +99,17 @@ Overview
 	std::unique_ptr<SurfaceMesh<dimension>> :target:`merge_surface_meshes<doxid-namespacegeode_1afdb0662672f33a008eac14437a46f0b6>`(const std::vector<std::reference_wrapper<const SurfaceMesh<dimension>>>& surfaces);
 
 	void geode_conversion_model_api :target:`build_blocks<doxid-namespacegeode_1af824d8001dd7c0a95398f4811ac40d32>`(BRep& brep);
-	Section geode_conversion_model_api :target:`convert_brep_into_section<doxid-namespacegeode_1aea4c474cef70b8506453cb50683c8a05>`(const BRep& brep);
-	BRep geode_conversion_model_api :target:`convert_section_into_brep<doxid-namespacegeode_1a27302f254f1ef20905e7c1bbef5a9730>`(const Section& section);
+
+	Section geode_conversion_model_api :target:`convert_brep_into_section<doxid-namespacegeode_1a09e0f314f624a7abfd2c63aade009418>`(
+		const BRep& brep,
+		index_t axis_to_remove
+		);
+
+	BRep geode_conversion_model_api :target:`convert_section_into_brep<doxid-namespacegeode_1a9b8ae9376cdd71ab2dbcc78f4c9a5ab4>`(
+		const Section& section,
+		index_t axis_to_add
+		);
+
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(SolidMesh);
@@ -74,6 +125,7 @@ Overview
 		);
 
 	Section geode_conversion_model_api :target:`convert_surface_into_section<doxid-namespacegeode_1a82b91748e58ceed17e8283e4fa57f39f>`(const SurfaceMesh2D& surface);
+	Section geode_conversion_model_api :target:`convert_surfaces_into_section<doxid-namespacegeode_1a31dc435c2149eec1ef5fca9ebe77921b>`(absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces);
 
 	Section geode_conversion_model_api :ref:`convert_surface_into_section_from_attribute<doxid-namespacegeode_1a4cd6697bea5e1468859e6c1d301eb324>`(
 		SurfaceMesh2D& surface,

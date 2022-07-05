@@ -21,8 +21,8 @@ template class geode::detail::SurfaceMeshMerger
 	public:
 		// construction
 	
-		:target:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger_1a0008c6aa95a9f37f4e3c08da0ccb57db>`(
-			const std::vector<std::reference_wrapper<const SurfaceMesh<dimension>>>& surfaces,
+		:target:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger_1ac3fd936acc9269671d1a540a4dc87f85>`(
+			absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension>>> surfaces,
 			double epsilon
 			);
 
