@@ -75,6 +75,7 @@
 
     <a class="reference internal" href="struct_geode_SolidCollapseEdgeInfo.html#doxid-structgeode-1-1-solid-collapse-edge-info"><span class="std std-ref">SolidCollapseEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1ae1f62e44988d327a78be2c5a3452add2"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
     <a class="reference internal" href="struct_geode_SolidSwapFacetInfo.html#doxid-structgeode-1-1-solid-swap-facet-info"><span class="std std-ref">SolidSwapFacetInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a4ccb9f6c1ee88360c458a6aafaab2437"><span class="std std-ref">swap_facet</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">);</span>
+    <a class="reference internal" href="struct_geode_SolidSwapEdgeInfo.html#doxid-structgeode-1-1-solid-swap-edge-info"><span class="std std-ref">SolidSwapEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a18e72cc7f103c5a218a432b6daf3bbed"><span class="std std-ref">swap_edge</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">apex</span><span class="p">);</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span class="std std-ref">clean_tetrahedra</span></a><span></span><span class="p">();</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a0f1152b138581b514523cbaf00b42fa1"><span class="std std-ref">clean_vertices</span></a><span></span><span class="p">();</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1ab4e1a4c3bc3099e9b4472b7229ab89c4"><span class="std std-ref">clean_edges</span></a><span></span><span class="p">();</span>
@@ -237,7 +238,7 @@
 <p class="rubric">Returns:</p>
 <p>new vertex index and mappings between old and new mesh.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a4ccb9f6c1ee88360c458a6aafaab2437"><span id="index-8"></span><a class="reference internal" href="struct_geode_SolidSwapFacetInfo.html#doxid-structgeode-1-1-solid-swap-facet-info"><span class="std std-ref">SolidSwapFacetInfo</span></a><span></span> <span class="n">swap_facet</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">)</span></pre>
-<p>Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahdera are set as inactive and three new tetrahedra are created.</p>
+<p>Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahedra are set as inactive and three new tetrahedra are created.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -250,25 +251,40 @@
 </tr>
 </tbody>
 </table>
-<p class="rubric">Returns:</p>
-<p>new vertex index and mappings between old and new mesh.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span id="index-9"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_tetrahedra</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a18e72cc7f103c5a218a432b6daf3bbed"><span id="index-9"></span><a class="reference internal" href="struct_geode_SolidSwapEdgeInfo.html#doxid-structgeode-1-1-solid-swap-edge-info"><span class="std std-ref">SolidSwapEdgeInfo</span></a><span></span> <span class="n">swap_edge</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">apex</span><span class="p">)</span></pre>
+<p>Swap an edge. The edge can be on border. The tetrahedra around given edge are set as inactive and new tetrahedra are created.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge to swap.</p></td>
+</tr>
+<tr class="row-even"><td><p>apex</p></td>
+<td><p>Index of the vertex used as the new facets fan common vertex. &#64;warn Old tetrahedra are set as inactive but not deleted.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span id="index-10"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_tetrahedra</span><span class="p">()</span></pre>
 <p>Clean up the mesh removing inactive tetrahedra</p>
 <p class="rubric">Returns:</p>
 <p>old2new mappings for tetrahedra</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a0f1152b138581b514523cbaf00b42fa1"><span id="index-10"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_vertices</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a0f1152b138581b514523cbaf00b42fa1"><span id="index-11"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_vertices</span><span class="p">()</span></pre>
 <p>Clean up the mesh removing isolated vertices This method should be called after <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span class="std std-ref">clean_tetrahedra()</span></a></p>
 <p class="rubric">Returns:</p>
 <p>old2new mappings for vertices</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1ab4e1a4c3bc3099e9b4472b7229ab89c4"><span id="index-11"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_edges</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1ab4e1a4c3bc3099e9b4472b7229ab89c4"><span id="index-12"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_edges</span><span class="p">()</span></pre>
 <p>Clean up the mesh removing edges This method should be called after <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span class="std std-ref">clean_tetrahedra()</span></a></p>
 <p class="rubric">Returns:</p>
 <p>old2new mappings for edges</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a37193dc0a7951ee5239b1dda623cb083"><span id="index-12"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_facets</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a37193dc0a7951ee5239b1dda623cb083"><span id="index-13"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_facets</span><span class="p">()</span></pre>
 <p>Clean up the mesh removing facets This method should be called after <a class="reference internal" href="#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a65cbaba9d81ea253ef1cfe6b8e4e71ac"><span class="std std-ref">clean_tetrahedra()</span></a></p>
 <p class="rubric">Returns:</p>
 <p>old2new mappings for facets</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a1d6c7140659d7b7378acc662ecc304f3"><span id="index-13"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">clean</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a1d6c7140659d7b7378acc662ecc304f3"><span id="index-14"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">clean</span><span class="p">()</span></pre>
 <p>Clean up the mesh removing inactive tetrahedra, isolated vertices, edges and facets.</p>
 <p class="rubric">Returns:</p>
 <p>old2new mappings for tetrahedra, vertices, edges and facets.</p>

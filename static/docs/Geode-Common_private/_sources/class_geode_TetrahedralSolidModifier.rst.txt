@@ -51,6 +51,7 @@ Overview
 	
 		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ae1f62e44988d327a78be2c5a3452add2>`(index_t edge_id, const Point3D& point);
 		:ref:`SolidSwapFacetInfo<doxid-structgeode_1_1_solid_swap_facet_info>` :ref:`swap_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a4ccb9f6c1ee88360c458a6aafaab2437>`(const PolyhedronFacet& facet);
+		:ref:`SolidSwapEdgeInfo<doxid-structgeode_1_1_solid_swap_edge_info>` :ref:`swap_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a18e72cc7f103c5a218a432b6daf3bbed>`(const PolyhedronFacetEdge& edge, index_t apex);
 		std::vector<index_t> :ref:`clean_tetrahedra<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac>`();
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a0f1152b138581b514523cbaf00b42fa1>`();
 		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ab4e1a4c3bc3099e9b4472b7229ab89c4>`();
@@ -328,7 +329,7 @@ new vertex index and mappings between old and new mesh.
 
 	:ref:`SolidSwapFacetInfo<doxid-structgeode_1_1_solid_swap_facet_info>` swap_facet(const PolyhedronFacet& facet)
 
-Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahdera are set as inactive and three new tetrahedra are created.
+Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahedra are set as inactive and three new tetrahedra are created.
 
 
 
@@ -342,11 +343,32 @@ Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahd
 
 		- Index of the PolyhedronFacet to swap. @warn Old tetrahedra are set as inactive but not deleted.
 
+.. index:: pair: function; swap_edge
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a18e72cc7f103c5a218a432b6daf3bbed:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSwapEdgeInfo<doxid-structgeode_1_1_solid_swap_edge_info>` swap_edge(const PolyhedronFacetEdge& edge, index_t apex)
+
+Swap an edge. The edge can be on border. The tetrahedra around given edge are set as inactive and new tetrahedra are created.
 
 
-.. rubric:: Returns:
 
-new vertex index and mappings between old and new mesh.
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge
+
+		- Index of the PolyhedronFacetEdge to swap.
+
+	*
+		- apex
+
+		- Index of the vertex used as the new facets fan common vertex. @warn Old tetrahedra are set as inactive but not deleted.
 
 .. index:: pair: function; clean_tetrahedra
 .. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac:

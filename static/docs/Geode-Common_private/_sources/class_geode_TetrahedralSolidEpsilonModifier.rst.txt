@@ -77,6 +77,7 @@ Inherited Members
 	
 		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ae1f62e44988d327a78be2c5a3452add2>`(index_t edge_id, const Point3D& point);
 		:ref:`SolidSwapFacetInfo<doxid-structgeode_1_1_solid_swap_facet_info>` :ref:`swap_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a4ccb9f6c1ee88360c458a6aafaab2437>`(const PolyhedronFacet& facet);
+		:ref:`SolidSwapEdgeInfo<doxid-structgeode_1_1_solid_swap_edge_info>` :ref:`swap_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a18e72cc7f103c5a218a432b6daf3bbed>`(const PolyhedronFacetEdge& edge, index_t apex);
 		std::vector<index_t> :ref:`clean_tetrahedra<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac>`();
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a0f1152b138581b514523cbaf00b42fa1>`();
 		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ab4e1a4c3bc3099e9b4472b7229ab89c4>`();
