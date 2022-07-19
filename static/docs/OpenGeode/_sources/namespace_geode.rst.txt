@@ -1848,7 +1848,7 @@ Overview
 	void opengeode_model_api :target:`filter_section_components_with_regards_to_surfaces<doxid-namespacegeode_1acfea5e8ddbea49332a7b5861ef8d6d23>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(:ref:`Line<doxid-classgeode_1_1_line>`);
 
-	:ref:`SortedSurfaces<doxid-structgeode_1_1_sorted_surfaces>` opengeode_mesh_api :target:`surface_radial_sort<doxid-namespacegeode_1aaefe5ad77b3c29e18f89aa7d9f9034ae>`(
+	:ref:`SortedSurfaces<doxid-structgeode_1_1_sorted_surfaces>` opengeode_model_api :target:`surface_radial_sort<doxid-namespacegeode_1aa649f1f8bc78ca4f92490f706388f0f8>`(
 		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
 		const Line3D& line
 		);
