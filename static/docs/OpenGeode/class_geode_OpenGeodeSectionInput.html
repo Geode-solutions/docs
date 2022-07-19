@@ -18,7 +18,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::OpenGeodeSectionOutput" href="class_geode_OpenGeodeSectionOutput.html" />
-    <link rel="prev" title="template class geode::OpenGeodeRegularGridInput" href="class_geode_OpenGeodeRegularGridInput.html" />
+    <link rel="prev" title="template class geode::OpenGeodeRegularGridBuilder&lt;3&gt;" href="class_geode_OpenGeodeRegularGridBuilder-2.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -45,12 +45,12 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-section-input-1a2ec1c1e718bb7790e2c5767f47898454"><span></span><span class="n">OpenGeodeSectionInput</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-section-input-1a6d7f5244c3a353a26ad04c3fb47ffa57"><span></span><span class="n">OpenGeodeSectionInput</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-section-input-1aa11a00649ce709922d1d836b4f54da3c"><span></span><span class="n">load_section_files</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">);</span>
-    <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-section-input-1ae2e026f65fcd27209e9977ea4db4cbdf"><span></span><span class="n">read</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-section-input-1aa84e51c2a8ab16429a95a56ff613c834"><span></span><span class="n">load_section_files</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">);</span>
+    <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-section-input-1a78819adcd75b76abd32b3a0281facfb2"><span></span><span class="n">read</span></span><span></span><span class="p">();</span>
     <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-section-input-1acce0e454f9eff7b2992f459dfa49e9b6"><span></span><span class="n">extension</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 <section id="inherited-members">
@@ -59,7 +59,7 @@
     <span class="c1">// methods</span>
 
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_IOFile.html#doxid-classgeode-1-1-i-o-file-1a252a3f70be21314b482cfc576824b9db"><span class="std std-ref">filename</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">virtual</span> <span class="kt">void</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input-1a3cddf55a1071542ca682bce780869794"><span class="std std-ref">read</span></a><span></span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
+    <span class="k">virtual</span> <span class="n">Mesh</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input-1a49038a185b2b36473f5e5528375195a6"><span class="std std-ref">read</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
 </section>
 </section>
 

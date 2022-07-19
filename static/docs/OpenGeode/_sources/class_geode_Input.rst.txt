@@ -1,8 +1,8 @@
 .. index:: pair: class; geode::Input
 .. _doxid-classgeode_1_1_input:
 
-class geode::Input
-==================
+template class geode::Input
+===========================
 
 .. toctree::
 	:hidden:
@@ -15,12 +15,13 @@ class geode::Input
 
 	#include <input.h>
 	
+	template <typename Mesh, typename... Args>
 	class Input: public :ref:`geode::IOFile<doxid-classgeode_1_1_i_o_file>`
 	{
 	public:
 		// methods
 	
-		virtual void :target:`read<doxid-classgeode_1_1_input_1a3cddf55a1071542ca682bce780869794>`() = 0;
+		virtual Mesh :target:`read<doxid-classgeode_1_1_input_1a49038a185b2b36473f5e5528375195a6>`(const Args&... args) = 0;
 	};
 
 	// direct descendants
@@ -28,9 +29,33 @@ class geode::Input
 	class :ref:`BRepInput<doxid-classgeode_1_1_b_rep_input>`;
 
 	template <index_t dimension>
+	class :ref:`EdgedCurveInput<doxid-classgeode_1_1_edged_curve_input>`;
+
+	class :ref:`GraphInput<doxid-classgeode_1_1_graph_input>`;
+
+	template <index_t dimension>
+	class :ref:`HybridSolidInput<doxid-classgeode_1_1_hybrid_solid_input>`;
+
+	template <index_t dimension>
+	class :ref:`PointSetInput<doxid-classgeode_1_1_point_set_input>`;
+
+	template <index_t dimension>
+	class :ref:`PolygonalSurfaceInput<doxid-classgeode_1_1_polygonal_surface_input>`;
+
+	template <index_t dimension>
+	class :ref:`PolyhedralSolidInput<doxid-classgeode_1_1_polyhedral_solid_input>`;
+
+	template <index_t dimension>
 	class :ref:`RegularGridInput<doxid-classgeode_1_1_regular_grid_input>`;
 
 	class :ref:`SectionInput<doxid-classgeode_1_1_section_input>`;
+
+	template <index_t dimension>
+	class :ref:`TetrahedralSolidInput<doxid-classgeode_1_1_tetrahedral_solid_input>`;
+
+	template <index_t dimension>
+	class :ref:`TriangulatedSurfaceInput<doxid-classgeode_1_1_triangulated_surface_input>`;
+
 	class :ref:`VertexSetInput<doxid-classgeode_1_1_vertex_set_input>`;
 
 Inherited Members

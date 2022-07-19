@@ -18,7 +18,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="template class geode::RegularGridOutput" href="class_geode_RegularGridOutput.html" />
-    <link rel="prev" title="template class geode::RegularGrid" href="class_geode_RegularGrid.html" />
+    <link rel="prev" title="template class geode::RegularGridBuilder&lt;3&gt;" href="class_geode_RegularGridBuilder-2.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -43,23 +43,14 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="nl">RegularGridInput</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input"><span class="std std-ref">geode::Input</span></a><span></span>
 <span class="p">{</span>
-<span class="k">public</span><span class="o">:</span>
-    <span class="c1">// methods</span>
-
-    <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_RegularGrid.html#doxid-classgeode-1-1-regular-grid"><span class="std std-ref">RegularGrid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-input-1af678b0d21cf2581131296a22ac712754"><span></span><span class="n">regular_grid</span></span><span></span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="c1">// direct descendants</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeRegularGridInput.html#doxid-classgeode-1-1-open-geode-regular-grid-input"><span class="std std-ref">OpenGeodeRegularGridInput</span></a><span></span><span class="p">;</span></pre>
+<span class="p">};</span></pre>
 <section id="inherited-members">
 <h2>Inherited Members</h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_IOFile.html#doxid-classgeode-1-1-i-o-file-1a252a3f70be21314b482cfc576824b9db"><span class="std std-ref">filename</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">virtual</span> <span class="kt">void</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input-1a3cddf55a1071542ca682bce780869794"><span class="std std-ref">read</span></a><span></span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
+    <span class="k">virtual</span> <span class="n">Mesh</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input-1a49038a185b2b36473f5e5528375195a6"><span class="std std-ref">read</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
 </section>
 </section>
 

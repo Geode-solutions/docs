@@ -17,8 +17,8 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::RegularGrid" href="class_geode_RegularGrid.html" />
-    <link rel="prev" title="class geode::ProgressLogger" href="class_geode_ProgressLogger.html" />
+    <link rel="next" title="template class geode::RegularGrid&lt;2&gt;" href="class_geode_RegularGrid.html" />
+    <link rel="prev" title="struct geode::RayTracing3D::PolygonDistance" href="struct_geode_RayTracing3D_PolygonDistance.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -76,6 +76,7 @@
     <span class="k">virtual</span> <span class="kt">bool</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base-1a7c0da18fa996b9b8751ad55227cf4a23"><span class="std std-ref">is_genericable</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base-1aa4b6c04a9c4d4f7003546a4d259e800b"><span class="std std-ref">nb_items</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">virtual</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base-1a45818b81b18f3b0cbd335b87fb6c5c0d"><span class="std std-ref">type</span></a><span></span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_AttributeProperties.html#doxid-structgeode-1-1-attribute-properties"><span class="std std-ref">AttributeProperties</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base-1ac4fb14460b4961e69295b9295d177410"><span class="std std-ref">properties</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base"><span class="std std-ref">AttributeBase</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base-1aa26f51fb45f03edb9ffb5afc527d51ef"><span class="std std-ref">clone</span></a><span></span><span class="p">(</span><span class="n">AttributeKey</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
     <span class="k">virtual</span> <span class="kt">void</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base-1a84e8e7e09907c265e4f3bc05e6956c5f"><span class="std std-ref">copy</span></a><span></span><span class="p">(</span>
@@ -109,9 +110,7 @@
         <span class="k">const</span> <a class="reference internal" href="struct_geode_AttributeLinearInterpolation.html#doxid-structgeode-1-1-attribute-linear-interpolation"><span class="std std-ref">AttributeLinearInterpolation</span></a><span></span><span class="o">&amp;</span> <span class="n">interpolation</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">to_element</span><span class="p">,</span>
         <span class="n">AttributeKey</span>
-        <span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-    <span class="k">const</span> <a class="reference internal" href="struct_geode_AttributeProperties.html#doxid-structgeode-1-1-attribute-properties"><span class="std std-ref">AttributeProperties</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base-1ac4fb14460b4961e69295b9295d177410"><span class="std std-ref">properties</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+        <span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
 </section>
 </section>
 

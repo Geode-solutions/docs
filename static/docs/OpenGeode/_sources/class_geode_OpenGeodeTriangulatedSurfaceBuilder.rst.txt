@@ -67,6 +67,7 @@ Inherited Members
 			);
 	
 		void :ref:`disassociate_polygon_vertex_to_vertex<doxid-classgeode_1_1_surface_mesh_builder_1ad9efd670b129a62d5164d804da05bc31>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		void :ref:`reset_polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_builder_1ad52fe61b9385757f1aac4a6fc870a0b4>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		void :ref:`copy<doxid-classgeode_1_1_surface_mesh_builder_1a2a38ff323d7996e3f61a5801653cb8fa>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface_mesh);
 		static std::unique_ptr<:ref:`TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_triangulated_surface_builder_1a525758b4196d65870741e2224e75bbab>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& mesh);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_triangle<doxid-classgeode_1_1_triangulated_surface_builder_1a36e6538c550e10d71177ff2fc5e38c8b>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 3>& vertices);

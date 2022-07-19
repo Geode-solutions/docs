@@ -67,6 +67,7 @@ Inherited Members
 		virtual bool :ref:`is_genericable<doxid-classgeode_1_1_attribute_base_1a7c0da18fa996b9b8751ad55227cf4a23>`() const = 0;
 		virtual :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_items<doxid-classgeode_1_1_attribute_base_1aa4b6c04a9c4d4f7003546a4d259e800b>`() const = 0;
 		virtual absl::string_view :ref:`type<doxid-classgeode_1_1_attribute_base_1a45818b81b18f3b0cbd335b87fb6c5c0d>`() = 0;
+		const :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`& :ref:`properties<doxid-classgeode_1_1_attribute_base_1ac4fb14460b4961e69295b9295d177410>`() const;
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`clone<doxid-classgeode_1_1_attribute_base_1aa26f51fb45f03edb9ffb5afc527d51ef>`(AttributeKey) const = 0;
 	
 		virtual void :ref:`copy<doxid-classgeode_1_1_attribute_base_1a84e8e7e09907c265e4f3bc05e6956c5f>`(
@@ -102,7 +103,6 @@ Inherited Members
 			AttributeKey
 			) = 0;
 	
-		const :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`& :ref:`properties<doxid-classgeode_1_1_attribute_base_1ac4fb14460b4961e69295b9295d177410>`() const;
 		virtual const T& :ref:`value<doxid-classgeode_1_1_read_only_attribute_1a1a0e2ac08b3bf0f4f77f662ef0c1abe5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const = 0;
 		virtual absl::string_view :ref:`type<doxid-classgeode_1_1_read_only_attribute_1adfc9b760b42a6f7b891a19565d190559>`();
 		virtual float :ref:`generic_value<doxid-classgeode_1_1_read_only_attribute_1aee6bdac5b29c48a61eb704b6d4c7528e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;

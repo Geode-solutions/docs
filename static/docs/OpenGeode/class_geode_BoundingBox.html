@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::Circle" href="class_geode_Circle.html" />
+    <link rel="next" title="template class geode::CachedValue" href="class_geode_CachedValue.html" />
     <link rel="prev" title="template class geode::BlocksBuilder" href="class_geode_BlocksBuilder.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -38,7 +38,9 @@
 <span id="doxid-classgeode-1-1-bounding-box"></span><span id="index-0"></span><h1>template class geode::BoundingBox</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Bounding box implemented for 2D and 3D points.</p>
+<section id="overview">
+<h2>Overview</h2>
+<p>Bounding box implemented for 2D and 3D points. <a class="reference internal" href="#details-classgeode-1-1-bounding-box"><span class="std std-ref">More…</span></a></p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;bounding_box.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -59,9 +61,23 @@
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1ad2e23377b88d730ec18711bff7ea9229"><span></span><span class="n">add_point</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a06067c1ab22b26d7508f84e3be00f672"><span></span><span class="n">contains</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a73fe42124b81e1daafedc5fc648efb75"><span></span><span class="n">intersects</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">bbox</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a360fec7a076b444ed514e252847c262f"><span></span><span class="n">intersects</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a02bd9a3f32244e9da6f9ce982c2ff3"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">double</span> <a class="reference internal" href="#doxid-classgeode-1-1-bounding-box-1aa8eeef680e1ce12041a863bf0b04eb67"><span class="std std-ref">signed_distance</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a4989e863012fb87f1c94067f4a21b85a"><span></span><span class="n">min</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1aa41b83189438c79f27a616322904542c"><span></span><span class="n">max</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1ad04a5b1251acb4b743ef6129ab39578c"><span></span><span class="n">center</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-bounding-box-1a8fb83a7908f25344ad57e6c5af3e01e6"><span></span><span class="n">diagonal</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
+</section>
+<section id="detailed-documentation">
+<span id="details-classgeode-1-1-bounding-box"></span><h2>Detailed Documentation</h2>
+<p>Bounding box implemented for 2D and 3D points.</p>
+<section id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-bounding-box-1aa8eeef680e1ce12041a863bf0b04eb67"><span id="index-1"></span><span></span><span class="kt">double</span> <span class="n">signed_distance</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Returns the distance between the point and the box. If the point is inside the box, the distance is negative.</p>
+</section>
+</section>
 </section>
 
 

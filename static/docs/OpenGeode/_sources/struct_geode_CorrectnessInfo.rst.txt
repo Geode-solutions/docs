@@ -1,0 +1,25 @@
+.. index:: pair: struct; geode::CorrectnessInfo
+.. _doxid-structgeode_1_1_correctness_info:
+
+template struct geode::CorrectnessInfo
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <intersection.h>
+	
+	template <typename Intersection>
+	struct CorrectnessInfo
+	{
+		// fields
+	
+		std::pair<bool, Intersection> :target:`first<doxid-structgeode_1_1_correctness_info_1a62860e00dcfbbc0455f120590665266e>` { false, {} };
+		std::pair<bool, Intersection> :target:`second<doxid-structgeode_1_1_correctness_info_1a09bd8248fc839af5b9f76b9ff5823aed>` { false, {} };
+	};

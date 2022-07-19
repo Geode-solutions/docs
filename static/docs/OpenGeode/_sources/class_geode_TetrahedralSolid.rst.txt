@@ -53,7 +53,7 @@ Overview
 			const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
 			) const;
 	
-		:ref:`Tetra<doxid-classgeode_1_1_tetra>` :ref:`tetra<doxid-classgeode_1_1_tetrahedral_solid_1ada27b86136318d391b5cdb1d3d0f1f32>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const;
+		:ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>` :ref:`tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_1a30dc2696bac1899f5de5acc617eb78bd>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const;
 		:ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension> :ref:`triangle<doxid-classgeode_1_1_tetrahedral_solid_1a0f2dc71870506c6a0d5aa2cdb5c604e9>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& facet) const;
 	};
 
@@ -61,9 +61,6 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`OpenGeodeTetrahedralSolid<doxid-classgeode_1_1_open_geode_tetrahedral_solid>`;
-
-	template <index_t dimension>
-	class :ref:`TetrahedralSolidView<doxid-classgeode_1_1_tetrahedral_solid_view>`;
 
 Inherited Members
 -----------------
@@ -147,8 +144,8 @@ Inherited Members
 		template <index_t T = dimension>
 		std::enable_if<T==3, Vector3D>::type :ref:`polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1ac11c243a8507b7a5590b48ca05d50648>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 	
-		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a3c64897434c58970bbf1e9d05d8ef826>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
-		:ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>` :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a96c308bad90e88ac2e1c19e431320b9e>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
+		const :ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>`& :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a1c69b104ef6642ab507026a47fc8c49e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		const :ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>`& :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a6e1b9a2240ab0563b03371d448aaefdd>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
 		bool :ref:`is_vertex_on_border<doxid-classgeode_1_1_solid_mesh_1a6c42099f25a0ab99ade3b87973bc1749>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		bool :ref:`is_edge_on_border<doxid-classgeode_1_1_solid_mesh_1a78192ae66cdae976ca698983037100b5>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& vertices) const;
 	
@@ -166,8 +163,7 @@ Inherited Members
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` first_polyhedron
 			) const;
 	
-		:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1ad2f52f704e53570cc3607e813db023e0>` OPENGEODE_MESH_DEPRECATED :ref:`polyhedra_from_facet<doxid-classgeode_1_1_solid_mesh_1a035e6fa866f798ca6eecdb4a7e81e77f>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices) const;
-		:ref:`newPolyhedraAroundFacet<doxid-namespacegeode_1a3150b3674e365926bb833fa5bf304268>` :ref:`polyhedra_from_facet_vertices<doxid-classgeode_1_1_solid_mesh_1a6a538370bab3e8b3d262c8a8ab3f5f9f>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices) const;
+		:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1a9f8d0fbd287f5475017252ef10b8eabd>` :ref:`polyhedra_from_facet_vertices<doxid-classgeode_1_1_solid_mesh_1aec3f37018127a1b9d5133fd8d2aee268>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices) const;
 		bool :ref:`are_edges_enabled<doxid-classgeode_1_1_solid_mesh_1ad7941fc3afe94462318f349a58ba63ab>`() const;
 		void :ref:`enable_edges<doxid-classgeode_1_1_solid_mesh_1a7805a82b740b482660ea134b84f0f8a1>`() const;
 		void :ref:`disable_edges<doxid-classgeode_1_1_solid_mesh_1af9ee142c16c448729d4a608ac5564173>`() const;
@@ -185,6 +181,8 @@ Inherited Members
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id,
 			SolidMeshKey
 			);
+	
+		void :ref:`reset_polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a63b85ccb943f53fcba38fd048718e303>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, SolidMeshKey);
 	
 		:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>` :ref:`polyhedron_facet_vertex_id<doxid-classgeode_1_1_solid_mesh_1ab63b13aeca87ca04a4547dd462b3c913>`(
 			const :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex,
@@ -372,15 +370,15 @@ Return the local indices of the two facets incident to the opposite edge in tetr
 
 		- Indices of the two vertices of an edge. @warn throw an exception if edge_vertices are not tetrahedron vertices.
 
-.. index:: pair: function; tetra
-.. _doxid-classgeode_1_1_tetrahedral_solid_1ada27b86136318d391b5cdb1d3d0f1f32:
+.. index:: pair: function; tetrahedron
+.. _doxid-classgeode_1_1_tetrahedral_solid_1a30dc2696bac1899f5de5acc617eb78bd:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`Tetra<doxid-classgeode_1_1_tetra>` tetra(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const
+	:ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>` tetrahedron(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const
 
-Return a geometrical :ref:`Tetra <doxid-classgeode_1_1_tetra>` from an element of the mesh.
+Return a geometrical Tetra from an element of the mesh.
 
 .. index:: pair: function; triangle
 .. _doxid-classgeode_1_1_tetrahedral_solid_1a0f2dc71870506c6a0d5aa2cdb5c604e9:

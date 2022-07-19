@@ -1,0 +1,33 @@
+.. index:: pair: struct; geode::SortedSurfaces
+.. _doxid-structgeode_1_1_sorted_surfaces:
+
+struct geode::SortedSurfaces
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_radial_sort.h>
+	
+	struct SortedSurfaces
+	{
+		// fields
+	
+		absl::FixedArray<:ref:`SidedSurface<doxid-structgeode_1_1_sided_surface>`> :target:`surfaces<doxid-structgeode_1_1_sorted_surfaces_1aaf1e2ab4b666382318ce4cf39cada1cd>`;
+
+		// construction
+	
+		:target:`SortedSurfaces<doxid-structgeode_1_1_sorted_surfaces_1ad51a9c68603b32fa2a36087ab0f88806>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_surfaces);
+
+		// methods
+	
+		absl::InlinedVector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 1> :target:`find<doxid-structgeode_1_1_sorted_surfaces_1aff1861989d7a4614edb142b354720845>`(const :ref:`SidedSurface<doxid-structgeode_1_1_sided_surface>`& surface) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`opposite<doxid-structgeode_1_1_sorted_surfaces_1a6cc97edbb3841558b54cfc74fb4bb2bb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` position) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`next<doxid-structgeode_1_1_sorted_surfaces_1a6c5463377668add7fcd6f2633ab75673>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` position) const;
+	};

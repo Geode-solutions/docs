@@ -74,8 +74,8 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 		template <index_t T = dimension>
 		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`new_polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a4416e307e02aff4473789d373ea97e64>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	
-		:ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>` :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1a2dec484d66448843d6d774f92ce99c3b>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
-		:ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>` :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1addd0e0b5469798749d0b7cfaa140eafe>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& vertex) const;
+		const :ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`& :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1a691ef7edf445b8b9dbd0fbb1b3111610>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		const :ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`& :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1a09b06781c0f9fdb8455ff65170a3280a>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& vertex) const;
 	
 		absl::optional<:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`> :ref:`polygon_edge_from_vertices<doxid-classgeode_1_1_surface_mesh_1a15bb1b056123e2389c5c9ef0e78b38e2>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` from_vertex_id,
@@ -97,6 +97,7 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 			SurfaceMeshKey
 			);
 	
+		void :target:`reset_polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1ac85d7018cd11be8ce865b3a895675595>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, SurfaceMeshKey);
 		:ref:`SurfaceEdges<doxid-classgeode_1_1_surface_edges>`<dimension>& :target:`edges<doxid-classgeode_1_1_surface_mesh_1aef243d0635132356851e33e1b0c36434>`(SurfaceMeshKey);
 		void :target:`copy_edges<doxid-classgeode_1_1_surface_mesh_1ac48ea2693048d934a917e97ff1838b86>`(const SurfaceMesh<dimension>& surface_mesh, SurfaceMeshKey);
 		static std::unique_ptr<SurfaceMesh<dimension>> :ref:`create<doxid-classgeode_1_1_surface_mesh_1a4060a0918b99fc341081d094f4266edf>`();
@@ -675,12 +676,12 @@ Return the normal of a polygon
 Return the normal at a polygon vertex
 
 .. index:: pair: function; polygons_around_vertex
-.. _doxid-classgeode_1_1_surface_mesh_1a2dec484d66448843d6d774f92ce99c3b:
+.. _doxid-classgeode_1_1_surface_mesh_1a691ef7edf445b8b9dbd0fbb1b3111610:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>` polygons_around_vertex(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
+	const :ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`& polygons_around_vertex(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
 
 Get all the polygons with one of the vertices matching given vertex. This function needs that polygon adjacencies are computed
 
@@ -697,12 +698,12 @@ Get all the polygons with one of the vertices matching given vertex. This functi
 		- Index of the vertex.
 
 .. index:: pair: function; polygons_around_vertex
-.. _doxid-classgeode_1_1_surface_mesh_1addd0e0b5469798749d0b7cfaa140eafe:
+.. _doxid-classgeode_1_1_surface_mesh_1a09b06781c0f9fdb8455ff65170a3280a:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>` polygons_around_vertex(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& vertex) const
+	const :ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`& polygons_around_vertex(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& vertex) const
 
 Get all the polygons with one of the vertices matching given vertex. This function needs that polygon adjacencies are computed
 

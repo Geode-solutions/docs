@@ -1,0 +1,32 @@
+.. index:: pair: struct; geode::RayTracing3D::PolygonDistance
+.. _doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance:
+
+struct geode::RayTracing3D::PolygonDistance
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ray_tracing.h>
+	
+	struct PolygonDistance
+	{
+		// fields
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polygon<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance_1adb5713cc2a6095fa01308556e4a7c87f>`;
+		double :target:`distance<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance_1a49d0e28493d5243094ecd98036c7b896>`;
+
+		// construction
+	
+		:target:`PolygonDistance<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance_1af7b673654375cadf20866a72950a4e60>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_in, double distance_in);
+
+		// methods
+	
+		bool :target:`operator <<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance_1a5dfc2aaf1e9c8f9240b08c1d8a8b274b>` (const PolygonDistance& other) const;
+	};

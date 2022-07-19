@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>struct geode::SidedSurface &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::SortedSurfaces" href="struct_geode_SortedSurfaces.html" />
+    <link rel="prev" title="struct geode::SectionComponentMeshEdges" href="struct_geode_SectionComponentMeshEdges.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="struct-geode-sidedsurface">
+<span id="doxid-structgeode-1-1-sided-surface"></span><span id="index-0"></span><h1>struct geode::SidedSurface</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surface_radial_sort.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">SidedSurface</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1aeb0c3b9a42a8864394fc82c040244d04"><span></span><span class="n">POSITIVE</span></span><span></span> <span class="p">{</span> <span class="mi">0</span> <span class="p">};</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1aa7e7c499ed951427ff6f4176545fb767"><span></span><span class="n">NEGATIVE</span></span><span></span> <span class="p">{</span> <span class="mi">1</span> <span class="p">};</span>
+    <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1a4e589aabbb425ac86a5dd5196f6ba417"><span></span><span class="n">id</span></span><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1a1a3ca619ad5d4cca9f2a3f45922606cb"><span></span><span class="n">side</span></span><span></span> <span class="p">{</span> <span class="mi">0</span> <span class="p">};</span>
+    <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1a3788e877fa91327156cf0895935c5fe7"><span></span><span class="n">edge</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1ae00513d85a8a66b8bb518ad1298b466a"><span></span><span class="n">SidedSurface</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1ae52abf5282af4bb5c4d88766cd04c6c6"><span></span><span class="n">SidedSurface</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span> <span class="n">id_in</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="n">side_in</span><span class="p">,</span> <a class="reference internal" href="struct_geode_PolygonEdge.html#doxid-structgeode-1-1-polygon-edge"><span class="std std-ref">PolygonEdge</span></a><span></span> <span class="n">edge_in</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1a749ed56706a5323b4a2c55b3aa1356c5"><span></span><span class="n">SidedSurface</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span> <span class="n">id_in</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="n">side_in</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1a4f8e28f9db3251d0b35fbcc31663fcf0"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">SidedSurface</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-sided-surface-1a12b69d62dc71214983f0a689a7275b95"><span></span><span class="k">operator</span> <span class="o">!=</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">SidedSurface</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/struct_geode_SidedSurface.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

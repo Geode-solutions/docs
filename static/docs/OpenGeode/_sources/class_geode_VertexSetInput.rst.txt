@@ -19,28 +19,6 @@ class geode::VertexSetInput
 	{
 	};
 
-	// direct descendants
-
-	class :ref:`GraphInput<doxid-classgeode_1_1_graph_input>`;
-
-	template <index_t dimension>
-	class :ref:`HybridSolidInput<doxid-classgeode_1_1_hybrid_solid_input>`;
-
-	template <index_t dimension>
-	class :ref:`PointSetInput<doxid-classgeode_1_1_point_set_input>`;
-
-	template <index_t dimension>
-	class :ref:`PolygonalSurfaceInput<doxid-classgeode_1_1_polygonal_surface_input>`;
-
-	template <index_t dimension>
-	class :ref:`PolyhedralSolidInput<doxid-classgeode_1_1_polyhedral_solid_input>`;
-
-	template <index_t dimension>
-	class :ref:`TetrahedralSolidInput<doxid-classgeode_1_1_tetrahedral_solid_input>`;
-
-	template <index_t dimension>
-	class :ref:`TriangulatedSurfaceInput<doxid-classgeode_1_1_triangulated_surface_input>`;
-
 Inherited Members
 -----------------
 
@@ -51,5 +29,5 @@ Inherited Members
 		// methods
 	
 		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
-		virtual void :ref:`read<doxid-classgeode_1_1_input_1a3cddf55a1071542ca682bce780869794>`() = 0;
+		virtual Mesh :ref:`read<doxid-classgeode_1_1_input_1a49038a185b2b36473f5e5528375195a6>`(const Args&... args) = 0;
 

@@ -20,13 +20,13 @@ class geode::OpenGeodeSectionOutput
 	public:
 		// construction
 	
-		:target:`OpenGeodeSectionOutput<doxid-classgeode_1_1_open_geode_section_output_1a1304f2cfd1371b4d8e93a0aaa1e58504>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, absl::string_view filename);
+		:target:`OpenGeodeSectionOutput<doxid-classgeode_1_1_open_geode_section_output_1aff7571c7c377b5e4826536a406c53b31>`(absl::string_view filename);
 
 		// methods
 	
-		void :target:`save_section_files<doxid-classgeode_1_1_open_geode_section_output_1a3e8db0bf21cef19ad8719fb0ba9a51a5>`(absl::string_view directory) const;
+		void :target:`save_section_files<doxid-classgeode_1_1_open_geode_section_output_1a442981c99e022c2013728bef38e36c9e>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, absl::string_view directory) const;
 		void :target:`archive_section_files<doxid-classgeode_1_1_open_geode_section_output_1aeb5fa90ccb4831d3a0ee43bc972e874f>`(const :ref:`ZipFile<doxid-classgeode_1_1_zip_file>`& zip_writer) const;
-		virtual void :target:`write<doxid-classgeode_1_1_open_geode_section_output_1a93fc4eab75ee7b9c974c6186199e82d8>`() const;
+		virtual void :target:`write<doxid-classgeode_1_1_open_geode_section_output_1abf5e5a73a01f8bad2e467a867140e40a>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section) const;
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_section_output_1aa1dd65ce45364e3451445b81af7f9391>`();
 	};
 
@@ -40,5 +40,5 @@ Inherited Members
 		// methods
 	
 		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
-		virtual void :ref:`write<doxid-classgeode_1_1_output_1a9c2f7d16a0ccf42ed237626c7acfa3f9>`() const = 0;
+		virtual void :ref:`write<doxid-classgeode_1_1_output_1a10d810517bfded77ca896bbb6aae0394>`(const Mesh& mesh) const = 0;
 

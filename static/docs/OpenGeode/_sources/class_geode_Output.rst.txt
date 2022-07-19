@@ -1,8 +1,8 @@
 .. index:: pair: class; geode::Output
 .. _doxid-classgeode_1_1_output:
 
-class geode::Output
-===================
+template class geode::Output
+============================
 
 .. toctree::
 	:hidden:
@@ -15,12 +15,13 @@ class geode::Output
 
 	#include <output.h>
 	
+	template <typename Mesh>
 	class Output: public :ref:`geode::IOFile<doxid-classgeode_1_1_i_o_file>`
 	{
 	public:
 		// methods
 	
-		virtual void :target:`write<doxid-classgeode_1_1_output_1a9c2f7d16a0ccf42ed237626c7acfa3f9>`() const = 0;
+		virtual void :target:`write<doxid-classgeode_1_1_output_1a10d810517bfded77ca896bbb6aae0394>`(const Mesh& mesh) const = 0;
 	};
 
 	// direct descendants
@@ -28,9 +29,33 @@ class geode::Output
 	class :ref:`BRepOutput<doxid-classgeode_1_1_b_rep_output>`;
 
 	template <index_t dimension>
+	class :ref:`EdgedCurveOutput<doxid-classgeode_1_1_edged_curve_output>`;
+
+	class :ref:`GraphOutput<doxid-classgeode_1_1_graph_output>`;
+
+	template <index_t dimension>
+	class :ref:`HybridSolidOutput<doxid-classgeode_1_1_hybrid_solid_output>`;
+
+	template <index_t dimension>
+	class :ref:`PointSetOutput<doxid-classgeode_1_1_point_set_output>`;
+
+	template <index_t dimension>
+	class :ref:`PolygonalSurfaceOutput<doxid-classgeode_1_1_polygonal_surface_output>`;
+
+	template <index_t dimension>
+	class :ref:`PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`;
+
+	template <index_t dimension>
 	class :ref:`RegularGridOutput<doxid-classgeode_1_1_regular_grid_output>`;
 
 	class :ref:`SectionOutput<doxid-classgeode_1_1_section_output>`;
+
+	template <index_t dimension>
+	class :ref:`TetrahedralSolidOutput<doxid-classgeode_1_1_tetrahedral_solid_output>`;
+
+	template <index_t dimension>
+	class :ref:`TriangulatedSurfaceOutput<doxid-classgeode_1_1_triangulated_surface_output>`;
+
 	class :ref:`VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`;
 
 Inherited Members

@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>template struct geode::IntersectionResult &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::LineDefinition" href="struct_geode_LineDefinition.html" />
+    <link rel="prev" title="template struct geode::GenericAttributeConversion&lt;Point&lt;dimension&gt;&gt;" href="struct_geode_GenericAttributeConversion-2.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-struct-geode-intersectionresult">
+<span id="doxid-structgeode-1-1-intersection-result"></span><span id="index-0"></span><h1>template struct geode::IntersectionResult</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;intersection.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Intersection</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">IntersectionResult</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">Intersection</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-intersection-result-1a677d3991f58d58f93ff49e0e39c8086b"><span></span><span class="n">result</span></span><span></span><span class="p">;</span>
+    <a class="reference internal" href="enum_geode_IntersectionType.html#doxid-namespacegeode-1a9f15c2c020c07607391e3dd6a6ce8075"><span class="std std-ref">IntersectionType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-intersection-result-1aaf0f9f3bbe674dcd7b912ce30e4e78e0"><span></span><span class="n">type</span></span><span></span> <span class="p">{</span> <a class="reference internal" href="enum_geode_IntersectionType.html#doxid-namespacegeode-1a9f15c2c020c07607391e3dd6a6ce8075ab50339a10e1de285ac99d4c3990b8693"><span class="std std-ref">IntersectionType::NONE</span></a><span></span> <span class="p">};</span>
+    <a class="reference internal" href="struct_geode_CorrectnessInfo.html#doxid-structgeode-1-1-correctness-info"><span class="std std-ref">CorrectnessInfo</span></a><span></span><span class="o">&lt;</span><span class="n">Intersection</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-intersection-result-1aba06722b219e1364d4c43d330b5a9fb7"><span></span><span class="n">correctness</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-intersection-result-1aa7a60daf3c561f191c021c1f5019b5c3"><span></span><span class="n">IntersectionResult</span></span><span></span><span class="p">();</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-intersection-result-1aff1077fec56abbaa1e3862920d4984c8"><span></span><span class="n">IntersectionResult</span></span><span></span><span class="p">(</span>
+        <span class="n">Intersection</span> <span class="n">intersection</span><span class="p">,</span>
+        <a class="reference internal" href="struct_geode_CorrectnessInfo.html#doxid-structgeode-1-1-correctness-info"><span class="std std-ref">CorrectnessInfo</span></a><span></span><span class="o">&lt;</span><span class="n">Intersection</span><span class="o">&gt;</span> <span class="n">correctness_info</span>
+        <span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-intersection-result-1aaecc7ab70a5c2239528cd6d0ff4a1536"><span></span><span class="n">IntersectionResult</span></span><span></span><span class="p">(</span><a class="reference internal" href="enum_geode_IntersectionType.html#doxid-namespacegeode-1a9f15c2c020c07607391e3dd6a6ce8075"><span class="std std-ref">IntersectionType</span></a><span></span> <span class="n">intersection</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-intersection-result-1a20a763424b4ad1892196bd21b0350efe"><span></span><span class="n">has_intersection</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-intersection-result-1a514fde35381293817a5307391735bab4"><span></span><span class="k">operator</span> <span class="kt">bool</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/struct_geode_IntersectionResult.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

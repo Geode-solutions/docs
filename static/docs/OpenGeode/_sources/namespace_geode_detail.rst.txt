@@ -12,6 +12,7 @@ namespace geode::detail
 	class_geode_detail_FacetStorage.rst
 	class_geode_detail_MeshStorage.rst
 	class_geode_detail_OrientedVertexCycle.rst
+	class_geode_detail_SurfaceMeshMerger.rst
 	class_geode_detail_UuidToIndex.rst
 	class_geode_detail_VertexCycle.rst
 
@@ -44,6 +45,9 @@ namespace geode::detail
 
 	template <typename Container>
 	class :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger>`;
 
 	class :ref:`UuidToIndex<doxid-classgeode_1_1detail_1_1_uuid_to_index>`;
 

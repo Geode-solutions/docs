@@ -15,14 +15,9 @@ class geode::GraphInput
 
 	#include <graph_input.h>
 	
-	class GraphInput: public :ref:`geode::VertexSetInput<doxid-classgeode_1_1_vertex_set_input>`
+	class GraphInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`
 	{
 	};
-
-	// direct descendants
-
-	template <index_t dimension>
-	class :ref:`EdgedCurveInput<doxid-classgeode_1_1_edged_curve_input>`;
 
 Inherited Members
 -----------------
@@ -34,5 +29,5 @@ Inherited Members
 		// methods
 	
 		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
-		virtual void :ref:`read<doxid-classgeode_1_1_input_1a3cddf55a1071542ca682bce780869794>`() = 0;
+		virtual Mesh :ref:`read<doxid-classgeode_1_1_input_1a49038a185b2b36473f5e5528375195a6>`(const Args&... args) = 0;
 

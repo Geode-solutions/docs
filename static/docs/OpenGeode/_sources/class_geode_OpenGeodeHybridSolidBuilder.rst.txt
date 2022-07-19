@@ -76,6 +76,7 @@ Inherited Members
 			);
 	
 		void :ref:`disassociate_polyhedron_vertex_to_vertex<doxid-classgeode_1_1_solid_mesh_builder_1ada24ba26ccc6c9e3dff028de0e37606a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
+		void :ref:`reset_polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_builder_1a9c7655378cd308935fe0188b9405ed89>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		void :ref:`copy<doxid-classgeode_1_1_solid_mesh_builder_1adce151dbceb7a5691168a72d21e2e687>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid_mesh);
 		static std::unique_ptr<:ref:`HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_hybrid_solid_builder_1af5229d0b5e7839d584c602bcd1d775d6>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>& mesh);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_tetrahedron<doxid-classgeode_1_1_hybrid_solid_builder_1a4ebb760398a36ce56ee2ce1dd19397ea>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 4>& vertices);

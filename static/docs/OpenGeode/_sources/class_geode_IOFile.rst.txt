@@ -25,5 +25,8 @@ class geode::IOFile
 
 	// direct descendants
 
+	template <typename Mesh, typename... Args>
 	class :ref:`Input<doxid-classgeode_1_1_input>`;
+
+	template <typename Mesh>
 	class :ref:`Output<doxid-classgeode_1_1_output>`;

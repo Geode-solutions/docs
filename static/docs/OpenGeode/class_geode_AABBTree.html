@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct geode::AABBTree::Iterator" href="struct_geode_AABBTree_Iterator.html" />
+    <link rel="next" title="class geode::AABBTree::Impl" href="class_geode_AABBTree_Impl.html" />
     <link rel="prev" title="struct geode::uuid" href="struct_geode_uuid.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -46,10 +46,6 @@
 <span class="k">class</span> <span class="n">AABBTree</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
-    <span class="c1">// structs</span>
-
-    <span class="k">struct</span> <a class="reference internal" href="struct_geode_AABBTree_Iterator.html#doxid-structgeode-1-1-a-a-b-b-tree-1-1-iterator"><span class="std std-ref">Iterator</span></a><span></span><span class="p">;</span>
-
     <span class="c1">// classes</span>
 
     <span class="k">class</span> <a class="reference internal" href="class_geode_AABBTree_Impl.html#doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl"><span class="std std-ref">Impl</span></a><span></span><span class="p">;</span>
@@ -64,7 +60,7 @@
 
     <span class="n">AABBTree</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1a1038006ebb78e73b13e34ce9ab7abbc5"><span></span><span class="k">operator</span> <span class="o">=</span></span><span></span> <span class="p">(</span><span class="n">AABBTree</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a279a079000abc4d4319b8dfce24ec5cf"><span class="std std-ref">nb_bboxes</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1afe20612e9621aa930458d1d9878b9745"><span></span><span class="n">bounding_box</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1a8c96181abacb46537004919fe764a657"><span></span><span class="n">bounding_box</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">EvalDistance</span><span class="o">&gt;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a3cc03c54455ea2e519b4d336e53e9689"><span class="std std-ref">closest_element_box</span></a><span></span><span class="p">(</span>

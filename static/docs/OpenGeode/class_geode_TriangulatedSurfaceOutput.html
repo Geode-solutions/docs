@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::TriangulatedSurfaceView" href="class_geode_TriangulatedSurfaceView.html" />
+    <link rel="next" title="template class geode::TriangulatedSurfacePointFunction" href="class_geode_TriangulatedSurfacePointFunction.html" />
     <link rel="prev" title="template class geode::TriangulatedSurfaceInput" href="class_geode_TriangulatedSurfaceInput.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -41,7 +41,7 @@
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;triangulated_surface_output.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <span class="nl">TriangulatedSurfaceOutput</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_VertexSetOutput.html#doxid-classgeode-1-1-vertex-set-output"><span class="std std-ref">geode::VertexSetOutput</span></a><span></span>
+<span class="k">class</span> <span class="nl">TriangulatedSurfaceOutput</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Output.html#doxid-classgeode-1-1-output"><span class="std std-ref">geode::Output</span></a><span></span>
 <span class="p">{</span>
 <span class="p">};</span></pre>
 <section id="inherited-members">
@@ -50,7 +50,7 @@
     <span class="c1">// methods</span>
 
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_IOFile.html#doxid-classgeode-1-1-i-o-file-1a252a3f70be21314b482cfc576824b9db"><span class="std std-ref">filename</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">virtual</span> <span class="kt">void</span> <a class="reference internal" href="class_geode_Output.html#doxid-classgeode-1-1-output-1a9c2f7d16a0ccf42ed237626c7acfa3f9"><span class="std std-ref">write</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
+    <span class="k">virtual</span> <span class="kt">void</span> <a class="reference internal" href="class_geode_Output.html#doxid-classgeode-1-1-output-1a10d810517bfded77ca896bbb6aae0394"><span class="std std-ref">write</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Mesh</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
 </section>
 </section>
 

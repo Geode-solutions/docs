@@ -7,7 +7,6 @@ template class geode::AABBTree
 .. toctree::
 	:hidden:
 
-	struct_geode_AABBTree_Iterator.rst
 	class_geode_AABBTree_Impl.rst
 
 Overview
@@ -25,10 +24,6 @@ Overview
 	class AABBTree
 	{
 	public:
-		// structs
-	
-		struct :ref:`Iterator<doxid-structgeode_1_1_a_a_b_b_tree_1_1_iterator>`;
-
 		// classes
 	
 		class :ref:`Impl<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl>`;
@@ -43,7 +38,7 @@ Overview
 	
 		AABBTree& :target:`operator =<doxid-classgeode_1_1_a_a_b_b_tree_1a1038006ebb78e73b13e34ce9ab7abbc5>` (AABBTree&& other);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_bboxes<doxid-classgeode_1_1_a_a_b_b_tree_1a279a079000abc4d4319b8dfce24ec5cf>`() const;
-		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& :target:`bounding_box<doxid-classgeode_1_1_a_a_b_b_tree_1afe20612e9621aa930458d1d9878b9745>`() const;
+		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& :target:`bounding_box<doxid-classgeode_1_1_a_a_b_b_tree_1a8c96181abacb46537004919fe764a657>`() const;
 	
 		template <typename EvalDistance>
 		std::tuple<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>, double> :ref:`closest_element_box<doxid-classgeode_1_1_a_a_b_b_tree_1a3cc03c54455ea2e519b4d336e53e9689>`(
