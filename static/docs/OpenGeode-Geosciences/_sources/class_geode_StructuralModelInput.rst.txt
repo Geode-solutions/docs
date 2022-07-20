@@ -15,7 +15,7 @@ class geode::StructuralModelInput
 
 	#include <structural_model_input.h>
 	
-	class StructuralModelInput: public Input
+	class StructuralModelInput: public Input< StructuralModel >
 	{
 	public:
 	};

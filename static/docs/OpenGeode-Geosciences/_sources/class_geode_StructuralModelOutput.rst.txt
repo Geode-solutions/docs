@@ -15,7 +15,7 @@ class geode::StructuralModelOutput
 
 	#include <structural_model_output.h>
 	
-	class StructuralModelOutput: public Output
+	class StructuralModelOutput: public Output< StructuralModel >
 	{
 	public:
 	};

@@ -20,14 +20,15 @@ class geode::OpenGeodeCrossSectionInput
 	public:
 		// construction
 	
-		:target:`OpenGeodeCrossSectionInput<doxid-classgeode_1_1_open_geode_cross_section_input_1af767c6d2e402b10c9ae4ff0f39755b17>`(
-			:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
-			absl::string_view filename
-			);
+		:target:`OpenGeodeCrossSectionInput<doxid-classgeode_1_1_open_geode_cross_section_input_1acd8802fa4d2588081c50085d7de22d9b>`(absl::string_view filename);
 
 		// methods
 	
-		void :target:`load_cross_section_files<doxid-classgeode_1_1_open_geode_cross_section_input_1a3128e6690694036ece8529545a058718>`(absl::string_view directory);
-		void :target:`read<doxid-classgeode_1_1_open_geode_cross_section_input_1a04b54837bc7b87dc8b3d7f36d715fb37>`();
+		void :target:`load_cross_section_files<doxid-classgeode_1_1_open_geode_cross_section_input_1ae8afc35a232ddb6cc66d86154f85aec8>`(
+			:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
+			absl::string_view directory
+			);
+	
+		:ref:`CrossSection<doxid-classgeode_1_1_cross_section>` :target:`read<doxid-classgeode_1_1_open_geode_cross_section_input_1a95a98f91d79230aab8098213339b5960>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_cross_section_input_1aaef8b5e1e50cee2a6b2074ef091ecc66>`();
 	};

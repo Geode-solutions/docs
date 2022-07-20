@@ -15,7 +15,7 @@ class geode::CrossSectionOutput
 
 	#include <cross_section_output.h>
 	
-	class CrossSectionOutput: public Output
+	class CrossSectionOutput: public Output< CrossSection >
 	{
 	public:
 	};

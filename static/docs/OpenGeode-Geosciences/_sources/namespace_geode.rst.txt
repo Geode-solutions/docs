@@ -51,10 +51,10 @@ Overview
 
 	// typedefs
 
-	typedef Factory<std::string, :ref:`CrossSectionInput<doxid-classgeode_1_1_cross_section_input>`, :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`&, absl::string_view> :target:`CrossSectionInputFactory<doxid-namespacegeode_1ae837d796e8d1db1e9460d7c5419b66e5>`;
-	typedef Factory<std::string, :ref:`CrossSectionOutput<doxid-classgeode_1_1_cross_section_output>`, const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`&, absl::string_view> :target:`CrossSectionOutputFactory<doxid-namespacegeode_1ad890c7fd52321eddf39bc19e9d1aee41>`;
-	typedef Factory<std::string, :ref:`StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`, :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`&, absl::string_view> :target:`StructuralModelInputFactory<doxid-namespacegeode_1a3d6a2b30cd979ad6fb0c535d2cf43966>`;
-	typedef Factory<std::string, :ref:`StructuralModelOutput<doxid-classgeode_1_1_structural_model_output>`, const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`&, absl::string_view> :target:`StructuralModelOutputFactory<doxid-namespacegeode_1a963b0e3ab10a304ad22428015d47e28f>`;
+	typedef Factory<std::string, :ref:`CrossSectionInput<doxid-classgeode_1_1_cross_section_input>`, absl::string_view> :target:`CrossSectionInputFactory<doxid-namespacegeode_1a53459284d3029d209cf61fb4d0ddbc94>`;
+	typedef Factory<std::string, :ref:`CrossSectionOutput<doxid-classgeode_1_1_cross_section_output>`, absl::string_view> :target:`CrossSectionOutputFactory<doxid-namespacegeode_1ae82607c018d576d200be2f4cdb3b9c1f>`;
+	typedef Factory<std::string, :ref:`StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`, absl::string_view> :target:`StructuralModelInputFactory<doxid-namespacegeode_1a6a6d67a3fd51f78f66fb38c7b46d30a5>`;
+	typedef Factory<std::string, :ref:`StructuralModelOutput<doxid-classgeode_1_1_structural_model_output>`, absl::string_view> :target:`StructuralModelOutputFactory<doxid-namespacegeode_1af2aaa676eaf7667c1ca7e2d629ff47a6>`;
 
 	// classes
 
