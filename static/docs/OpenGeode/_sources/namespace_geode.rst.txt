@@ -1465,7 +1465,7 @@ Overview
 
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`);
 
-	double :target:`hausdorff_distance<doxid-namespacegeode_1aae1e6f8411f1207d1819b5d55ce90fd8>`(
+	double opengeode_mesh_api :target:`hausdorff_distance<doxid-namespacegeode_1afed8936a3a77492a730d655e73f035a7>`(
 		const TriangulatedSurface3D& mesh_A,
 		const TriangulatedSurface3D& mesh_B
 		);
