@@ -19,7 +19,6 @@ namespace geode::detail
 	class_geode_detail_SolidIdentifier.rst
 	class_geode_detail_SurfaceFromSolidAdjacencies.rst
 	class_geode_detail_SurfaceIdentifier.rst
-	class_geode_detail_SurfaceMeshMerger.rst
 
 
 
@@ -63,9 +62,6 @@ namespace geode::detail
 
 	template <index_t dimension>
 	class :ref:`SurfaceIdentifier<doxid-classgeode_1_1detail_1_1_surface_identifier>`;
-
-	template <index_t dimension>
-	class :ref:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger>`;
 
 	// global functions
 
