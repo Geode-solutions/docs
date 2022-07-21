@@ -24,7 +24,6 @@ Interface class to represent the builder of a :ref:`SurfaceMesh <doxid-classgeod
 	public:
 		// methods
 	
-		static std::unique_ptr<SurfaceMeshBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_surface_mesh_builder_1a3dd05fba0da3a5d38f4454d8f1a30313>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh);
 		:ref:`SurfaceEdgesBuilder<doxid-classgeode_1_1_surface_edges_builder>`<dimension> :target:`edges_builder<doxid-classgeode_1_1_surface_mesh_builder_1a3c2b8286e513c7865370e6b1f39aae7e>`();
 		void :ref:`set_point<doxid-classgeode_1_1_surface_mesh_builder_1aa92a0c5ce717efc74d062155ba3ceeb8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_surface_mesh_builder_1acc96040259cb46b7cc56e156ffd766dd>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
@@ -47,6 +46,7 @@ Interface class to represent the builder of a :ref:`SurfaceMesh <doxid-classgeod
 		void :ref:`disassociate_polygon_vertex_to_vertex<doxid-classgeode_1_1_surface_mesh_builder_1ad9efd670b129a62d5164d804da05bc31>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		void :target:`reset_polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_builder_1ad52fe61b9385757f1aac4a6fc870a0b4>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		void :target:`copy<doxid-classgeode_1_1_surface_mesh_builder_1a2a38ff323d7996e3f61a5801653cb8fa>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface_mesh);
+		static std::unique_ptr<SurfaceMeshBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_surface_mesh_builder_1a3dd05fba0da3a5d38f4454d8f1a30313>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh);
 	};
 
 	// direct descendants
@@ -84,28 +84,6 @@ Interface class to represent the builder of a :ref:`SurfaceMesh <doxid-classgeod
 
 Methods
 -------
-
-.. index:: pair: function; create
-.. _doxid-classgeode_1_1_surface_mesh_builder_1a3dd05fba0da3a5d38f4454d8f1a30313:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	static std::unique_ptr<SurfaceMeshBuilder<dimension>> create(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh)
-
-Create the builder associated with a :ref:`SurfaceMesh <doxid-classgeode_1_1_surface_mesh>`.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- mesh
-
-		- The :ref:`SurfaceMesh <doxid-classgeode_1_1_surface_mesh>` to build/modify
 
 .. index:: pair: function; set_point
 .. _doxid-classgeode_1_1_surface_mesh_builder_1aa92a0c5ce717efc74d062155ba3ceeb8:
@@ -448,4 +426,26 @@ Unset polygon vertex information to a given vertex.
 		- vertex_id
 
 		- Index of the vertex.
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_surface_mesh_builder_1a3dd05fba0da3a5d38f4454d8f1a30313:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static std::unique_ptr<SurfaceMeshBuilder<dimension>> create(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh)
+
+Create the builder associated with a :ref:`SurfaceMesh <doxid-classgeode_1_1_surface_mesh>`.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- The :ref:`SurfaceMesh <doxid-classgeode_1_1_surface_mesh>` to build/modify
 
