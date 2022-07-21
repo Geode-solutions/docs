@@ -15,7 +15,7 @@ class geode::ImplicitCrossSectionInput
 
 	#include <implicit_cross_section_input.h>
 	
-	class ImplicitCrossSectionInput: public Input
+	class ImplicitCrossSectionInput: public Input< ImplicitCrossSection >
 	{
 	public:
 	};

@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::SolidMeshScalarFunctionExpliciter
+.. _doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter:
+
+class geode::SolidMeshScalarFunctionExpliciter
+==============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_scalar_function.h>
+	
+	class SolidMeshScalarFunctionExpliciter
+	{
+	public:
+		// construction
+	
+		:target:`SolidMeshScalarFunctionExpliciter<doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter_1ac4c75df07e1195460cd661731af92682>`(
+			const TetrahedralSolid3D& grid,
+			absl::string_view scalar_function_name
+			);
+
+		// methods
+	
+		void :target:`add_scalar_isovalues<doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter_1a8d4aace8e3920b5b19e94d27192720fc>`(absl::Span<const double> scalar_function_values);
+		void :target:`add_one_scalar_isovalue<doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter_1a539d513c23b47b7de71b9ab9591996f0>`(double isovalue);
+		BRep :target:`build_brep<doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter_1a85c7c0c91b3263c2a971dc3aa4152726>`();
+	};

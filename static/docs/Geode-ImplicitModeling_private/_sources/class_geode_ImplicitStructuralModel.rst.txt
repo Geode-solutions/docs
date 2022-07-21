@@ -21,6 +21,10 @@ An Implicit Model is a Structural model where each block has a specific attribut
 	class ImplicitStructuralModel: public StructuralModel
 	{
 	public:
+		// fields
+	
+		static constexpr auto :target:`stratigraphy_attribute_name<doxid-classgeode_1_1_implicit_structural_model_1a44caa6b6c8842df47acddb01b9e92aac>` =             "geode_stratigraphy";
+
 		// construction
 	
 		:target:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model_1a6dacbb4ba9255849c369681715c8b915>`();

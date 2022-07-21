@@ -15,7 +15,7 @@ class geode::ImplicitStructuralModelInput
 
 	#include <implicit_structural_model_input.h>
 	
-	class ImplicitStructuralModelInput: public Input
+	class ImplicitStructuralModelInput: public Input< ImplicitStructuralModel >
 	{
 	public:
 	};

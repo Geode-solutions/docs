@@ -19,6 +19,7 @@ namespace geode
 	class_geode_RegularGridScalarFunctionComputer.rst
 	class_geode_RegularGridScalarFunctionExpliciter2D.rst
 	class_geode_RegularGridScalarFunctionExpliciter3D.rst
+	class_geode_SolidMeshScalarFunctionExpliciter.rst
 
 Overview
 ~~~~~~~~
@@ -38,10 +39,10 @@ Overview
 
 	// typedefs
 
-	typedef Factory<std::string, :ref:`ImplicitCrossSectionInput<doxid-classgeode_1_1_implicit_cross_section_input>`, :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`&, absl::string_view> :target:`ImplicitCrossSectionInputFactory<doxid-namespacegeode_1a233ab92ddf487258251be263dc2032ed>`;
-	typedef Factory<std::string, :ref:`ImplicitCrossSectionOutput<doxid-classgeode_1_1_implicit_cross_section_output>`, const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`&, absl::string_view> :target:`ImplicitCrossSectionOutputFactory<doxid-namespacegeode_1a15c031ea914bb7b014e2fe770b358526>`;
-	typedef Factory<std::string, :ref:`ImplicitStructuralModelInput<doxid-classgeode_1_1_implicit_structural_model_input>`, :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`&, absl::string_view> :target:`ImplicitStructuralModelInputFactory<doxid-namespacegeode_1aa023ec8e87563b5c8c79fb11c89b2afb>`;
-	typedef Factory<std::string, :ref:`ImplicitStructuralModelOutput<doxid-classgeode_1_1_implicit_structural_model_output>`, const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`&, absl::string_view> :target:`ImplicitStructuralModelOutputFactory<doxid-namespacegeode_1a17e29e5b76e1504f9403fbf21b9dbde8>`;
+	typedef Factory<std::string, :ref:`ImplicitCrossSectionInput<doxid-classgeode_1_1_implicit_cross_section_input>`, absl::string_view> :target:`ImplicitCrossSectionInputFactory<doxid-namespacegeode_1a1bef0ef0cbfc9e11e41584046f0bcdea>`;
+	typedef Factory<std::string, :ref:`ImplicitCrossSectionOutput<doxid-classgeode_1_1_implicit_cross_section_output>`, absl::string_view> :target:`ImplicitCrossSectionOutputFactory<doxid-namespacegeode_1a781be7141886b86a1a073566c1b21f97>`;
+	typedef Factory<std::string, :ref:`ImplicitStructuralModelInput<doxid-classgeode_1_1_implicit_structural_model_input>`, absl::string_view> :target:`ImplicitStructuralModelInputFactory<doxid-namespacegeode_1af5f57250e7d05e0a4f1ab9141ff324c3>`;
+	typedef Factory<std::string, :ref:`ImplicitStructuralModelOutput<doxid-classgeode_1_1_implicit_structural_model_output>`, absl::string_view> :target:`ImplicitStructuralModelOutputFactory<doxid-namespacegeode_1aaba818855148afe7c23129b7fa2538fd>`;
 
 	// classes
 
@@ -59,12 +60,30 @@ Overview
 
 	class :ref:`RegularGridScalarFunctionExpliciter2D<doxid-classgeode_1_1_regular_grid_scalar_function_expliciter2_d>`;
 	class :ref:`RegularGridScalarFunctionExpliciter3D<doxid-classgeode_1_1_regular_grid_scalar_function_expliciter3_d>`;
+	class :ref:`SolidMeshScalarFunctionExpliciter<doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter>`;
+
+	// global variables
+
+	static constexpr auto :target:`imported_3d_stratigraphic_attribute_name<doxid-namespacegeode_1a3a122de16a91abf72199f1c757746ba9>` =         "geode_3d_stratigraphy";
 
 	// global functions
 
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
+
+	:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` geode_implicitmodeling_explicitation_api :target:`extract_implicit_cross_section_from_axis<doxid-namespacegeode_1aee4387c87e1a4bf89546ec1ea1d93ac3>`(
+		const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& model,
+		index_t axis_direction,
+		double axis_coordinate
+		);
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(SolidMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
 	:target:`ALIAS_2D<doxid-namespacegeode_1adaf39f90e9bc108a983f1600fb5f37d1>`(RegularGrid);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a701f6897a4e87db11377f9081ccaa3cf>`(RegularGrid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(TetrahedralSolid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(BoundingBox);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a88e7373e2780b9968a6fddc59703bcf9>`(DataConstraintManager);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa40ec52a1aa919899a089ac5e5a8640c>`(:ref:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer>`);

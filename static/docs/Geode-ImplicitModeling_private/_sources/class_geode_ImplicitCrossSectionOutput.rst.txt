@@ -15,7 +15,7 @@ class geode::ImplicitCrossSectionOutput
 
 	#include <implicit_cross_section_output.h>
 	
-	class ImplicitCrossSectionOutput: public Output
+	class ImplicitCrossSectionOutput: public Output< ImplicitCrossSection >
 	{
 	public:
 	};

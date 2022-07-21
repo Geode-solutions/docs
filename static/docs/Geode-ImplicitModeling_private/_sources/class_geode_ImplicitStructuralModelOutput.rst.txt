@@ -15,7 +15,7 @@ class geode::ImplicitStructuralModelOutput
 
 	#include <implicit_structural_model_output.h>
 	
-	class ImplicitStructuralModelOutput: public Output
+	class ImplicitStructuralModelOutput: public Output< ImplicitStructuralModel >
 	{
 	public:
 	};

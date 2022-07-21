@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>class geode::SolidMeshScalarFunctionExpliciter &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="class geode::RegularGridScalarFunctionExpliciter3D" href="class_geode_RegularGridScalarFunctionExpliciter3D.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-geode-solidmeshscalarfunctionexpliciter">
+<span id="doxid-classgeode-1-1-solid-mesh-scalar-function-expliciter"></span><span id="index-0"></span><h1>class geode::SolidMeshScalarFunctionExpliciter</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;tetrahedral_solid_scalar_function.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">SolidMeshScalarFunctionExpliciter</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-scalar-function-expliciter-1ac4c75df07e1195460cd661731af92682"><span></span><span class="n">SolidMeshScalarFunctionExpliciter</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">grid</span><span class="p">,</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">scalar_function_name</span>
+        <span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-scalar-function-expliciter-1a8d4aace8e3920b5b19e94d27192720fc"><span></span><span class="n">add_scalar_isovalues</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="n">scalar_function_values</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-scalar-function-expliciter-1a539d513c23b47b7de71b9ab9591996f0"><span></span><span class="n">add_one_scalar_isovalue</span></span><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">isovalue</span><span class="p">);</span>
+    <span class="n">BRep</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-solid-mesh-scalar-function-expliciter-1a85c7c0c91b3263c2a971dc3aa4152726"><span></span><span class="n">build_brep</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_SolidMeshScalarFunctionExpliciter.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
