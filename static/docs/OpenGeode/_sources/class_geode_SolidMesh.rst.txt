@@ -98,6 +98,12 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 			) const;
 	
 		:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1a9f8d0fbd287f5475017252ef10b8eabd>` :ref:`polyhedra_from_facet_vertices<doxid-classgeode_1_1_solid_mesh_1aec3f37018127a1b9d5133fd8d2aee268>`(:ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a6490f410ec95b55f5f14923a65000792>` facet_vertices) const;
+	
+		std::array<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 2> :ref:`edge_vertices_in_polyhedron<doxid-classgeode_1_1_solid_mesh_1a776d47bbd57b36cb91c12642dbb127d0>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id,
+			const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
+			) const;
+	
 		bool :target:`are_edges_enabled<doxid-classgeode_1_1_solid_mesh_1ad7941fc3afe94462318f349a58ba63ab>`() const;
 		void :target:`enable_edges<doxid-classgeode_1_1_solid_mesh_1a7805a82b740b482660ea134b84f0f8a1>`() const;
 		void :target:`disable_edges<doxid-classgeode_1_1_solid_mesh_1af9ee142c16c448729d4a608ac5564173>`() const;
@@ -875,6 +881,36 @@ Return all polyhedra facets made with the given facet vertices.
 		- facet_vertices
 
 		- Vertex indices of the facet.
+
+.. index:: pair: function; edge_vertices_in_polyhedron
+.. _doxid-classgeode_1_1_solid_mesh_1a776d47bbd57b36cb91c12642dbb127d0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::array<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 2> edge_vertices_in_polyhedron(
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id,
+		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
+		) const
+
+Get the local indices in the polyhedra of both edge vertices. If the vertices are not in the polyhedron, NO_LID is returned.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polyhedron_id
+
+		- Index of polyhedron.
+
+	*
+		- edge_vertices
+
+		- Global indices of the two edge vertices.
 
 .. index:: pair: function; polyhedron_attribute_manager
 .. _doxid-classgeode_1_1_solid_mesh_1a3bc003370baf530d01e56a4a07de2339:
