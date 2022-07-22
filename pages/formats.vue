@@ -191,6 +191,12 @@ export default {
         in: false,
         out: true,
       },
+      {
+        extension: '.vtm',
+        cpp: "<a href='/opengeode?page=class_geode_Section.html'><code>Section</code></a><br/><a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
+        in: false,
+        out: true,
+      },
     ],
     formats_geosciencesio: [
       {
