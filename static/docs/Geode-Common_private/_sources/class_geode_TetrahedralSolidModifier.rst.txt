@@ -52,6 +52,8 @@ Overview
 		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ae1f62e44988d327a78be2c5a3452add2>`(index_t edge_id, const Point3D& point);
 		:ref:`SolidSwapFacetInfo<doxid-structgeode_1_1_solid_swap_facet_info>` :ref:`swap_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a4ccb9f6c1ee88360c458a6aafaab2437>`(const PolyhedronFacet& facet);
 		:ref:`SolidSwapEdgeInfo<doxid-structgeode_1_1_solid_swap_edge_info>` :ref:`swap_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a18e72cc7f103c5a218a432b6daf3bbed>`(const PolyhedronFacetEdge& edge, index_t apex);
+		:ref:`SolidRemoveMultipleAdjacencyInfo<doxid-structgeode_1_1_solid_remove_multiple_adjacency_info>` :ref:`remove_double_adjacency<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a946344fe97b501ab2a749bd744eb7b53>`(const PolyhedronFacetEdge& edge);
+		:ref:`SolidRemoveMultipleAdjacencyInfo<doxid-structgeode_1_1_solid_remove_multiple_adjacency_info>` :ref:`remove_triple_adjacency<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad948040f1b0ccd271f2191fe840c79c6>`(const PolyhedronVertex& vertex);
 		std::vector<index_t> :ref:`clean_tetrahedra<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac>`();
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a0f1152b138581b514523cbaf00b42fa1>`();
 		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ab4e1a4c3bc3099e9b4472b7229ab89c4>`();
@@ -369,6 +371,50 @@ Swap an edge. The edge can be on border. The tetrahedra around given edge are se
 		- apex
 
 		- Index of the vertex used as the new facets fan common vertex. @warn Old tetrahedra are set as inactive but not deleted.
+
+.. index:: pair: function; remove_double_adjacency
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a946344fe97b501ab2a749bd744eb7b53:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidRemoveMultipleAdjacencyInfo<doxid-structgeode_1_1_solid_remove_multiple_adjacency_info>` remove_double_adjacency(const PolyhedronFacetEdge& edge)
+
+Remove an edge bearing a double adjacency. The two tetrahedra around given edge are set as inactive.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge
+
+		- Index of the PolyhedronFacetEdge shared by the two PolyhedronFacet adjacent to the same tetrahedron. @warn Old tetrahedra are set as inactive but not deleted.
+
+.. index:: pair: function; remove_triple_adjacency
+.. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad948040f1b0ccd271f2191fe840c79c6:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidRemoveMultipleAdjacencyInfo<doxid-structgeode_1_1_solid_remove_multiple_adjacency_info>` remove_triple_adjacency(const PolyhedronVertex& vertex)
+
+Remove a vertex bearing a triple adjacency. The two tetrahedra around given vertex are set as inactive.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- vertex
+
+		- Index of the PolyhedronVertex shared by the three PolyhedronFacet adjacent to the same tetrahedron. @warn Old tetrahedra are set as inactive but not deleted.
 
 .. index:: pair: function; clean_tetrahedra
 .. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac:

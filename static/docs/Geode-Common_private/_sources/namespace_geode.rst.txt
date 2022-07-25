@@ -36,6 +36,7 @@ namespace geode
 	struct_geode_SolidCutPathInfo.rst
 	struct_geode_SolidPatch.rst
 	struct_geode_SolidPath.rst
+	struct_geode_SolidRemoveMultipleAdjacencyInfo.rst
 	struct_geode_SolidSplitEdgeInfo.rst
 	struct_geode_SolidSplitInfo.rst
 	struct_geode_SolidSwapEdgeInfo.rst
@@ -145,6 +146,7 @@ Overview
 	struct :ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>`;
 	struct :ref:`SolidPatch<doxid-structgeode_1_1_solid_patch>`;
 	struct :ref:`SolidPath<doxid-structgeode_1_1_solid_path>`;
+	struct :ref:`SolidRemoveMultipleAdjacencyInfo<doxid-structgeode_1_1_solid_remove_multiple_adjacency_info>`;
 	struct :ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>`;
 	struct :ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>`;
 	struct :ref:`SolidSwapEdgeInfo<doxid-structgeode_1_1_solid_swap_edge_info>`;
