@@ -66,6 +66,7 @@ class geode::BRepGeometricModifier
 		void :target:`rescale_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1ac9795991173eb8fbef6a146607951d86>`(index_t unique_vertex, double scale);
 		void :target:`rescale_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1a9ef8d814dfbbf9b0360f9709f40bca1b>`(index_t unique_vertex, const std::array<double, 3>& scale);
 		bool :target:`is_edge_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a2d4da300ac10675fb9365e82711235d2>`(const Line3D& line, index_t edge) const;
+		bool :target:`is_edge_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1aef55dbe1d8719ff85e8a6d79985764f3>`(const Surface3D& surface, index_t edge) const;
 		bool :target:`is_triangle_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a10b28d8df305de1e7bdf80900feff46c>`(const Surface3D& surface, index_t triangle) const;
 		bool :target:`is_tetrahedron_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1ac370bb4add81ec6c95f96b863a03a771>`(const Block3D& block, index_t tetrahedron) const;
 		void :target:`clean<doxid-classgeode_1_1_b_rep_geometric_modifier_1ae1afc8b3ab4b1cf7b0a17cefb480c32c>`();
