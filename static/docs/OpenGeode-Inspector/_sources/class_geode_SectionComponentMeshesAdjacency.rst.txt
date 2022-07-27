@@ -1,0 +1,31 @@
+.. index:: pair: class; geode::SectionComponentMeshesAdjacency
+.. _doxid-classgeode_1_1_section_component_meshes_adjacency:
+
+class geode::SectionComponentMeshesAdjacency
+============================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the adjacency of the surface edges in the Component Meshes of a Section.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_meshes_adjacency.h>
+	
+	class SectionComponentMeshesAdjacency
+	{
+	public:
+		// construction
+	
+		:target:`SectionComponentMeshesAdjacency<doxid-classgeode_1_1_section_component_meshes_adjacency_1a2d3c53745f654350a8621eb92fd7f288>`(const Section& model);
+		:target:`SectionComponentMeshesAdjacency<doxid-classgeode_1_1_section_component_meshes_adjacency_1a68c358314bf5ded17d7f062e6ef27a58>`(const Section& model, bool verbose);
+
+		// methods
+	
+		std::vector<uuid> :target:`components_with_wrong_adjacencies<doxid-classgeode_1_1_section_component_meshes_adjacency_1a4e7c84d4f18b7491bd5bb465734757f7>`() const;
+		absl::flat_hash_map<uuid, index_t> :target:`surfaces_nb_edges_with_wrong_adjacencies<doxid-classgeode_1_1_section_component_meshes_adjacency_1a8cb1864f1b3d90364657008811d9b7ac>`() const;
+		absl::flat_hash_map<uuid, std::vector<PolygonEdge>> :target:`surfaces_edges_with_wrong_adjacencies<doxid-classgeode_1_1_section_component_meshes_adjacency_1a90e8219858b374c031e0f682ca16a00f>`() const;
+	};

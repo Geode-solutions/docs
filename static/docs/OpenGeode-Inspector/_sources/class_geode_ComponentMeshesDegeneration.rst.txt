@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::ComponentMeshesDegeneration
+.. _doxid-classgeode_1_1_component_meshes_degeneration:
+
+template class geode::ComponentMeshesDegeneration
+=================================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the degeneration of edges in the Component Meshes of a Model (BRep or Section).
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_meshes_degeneration.h>
+	
+	template <index_t dimension, typename Model>
+	class ComponentMeshesDegeneration
+	{
+	public:
+		// construction
+	
+		:target:`ComponentMeshesDegeneration<doxid-classgeode_1_1_component_meshes_degeneration_1a0225ba9c7bd3d5aa4e9d360a64faafd2>`(const Model& model);
+		:target:`ComponentMeshesDegeneration<doxid-classgeode_1_1_component_meshes_degeneration_1a6d57c980c9848aacb0484856b6ff6038>`(const Model& model, bool verbose);
+
+		// methods
+	
+		std::vector<uuid> :target:`components_with_degenerated_edges<doxid-classgeode_1_1_component_meshes_degeneration_1a3dffb3a027f52efb590ce0dbfd009d3d>`() const;
+		absl::flat_hash_map<uuid, index_t> :target:`components_nb_degenerated_edges<doxid-classgeode_1_1_component_meshes_degeneration_1a2cb07403959c8bf11be2593b0588baf1>`() const;
+		absl::flat_hash_map<uuid, std::vector<index_t>> :target:`components_degenerated_edges<doxid-classgeode_1_1_component_meshes_degeneration_1af33cbab608b282f4b209fd87fbfb3ea6>`() const;
+	};

@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::ComponentMeshesColocation
+.. _doxid-classgeode_1_1_component_meshes_colocation:
+
+template class geode::ComponentMeshesColocation
+===============================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the colocation of points in the Component Meshes of a Model (BRep or Section).
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_meshes_colocation.h>
+	
+	template <index_t dimension, typename Model>
+	class ComponentMeshesColocation
+	{
+	public:
+		// construction
+	
+		:target:`ComponentMeshesColocation<doxid-classgeode_1_1_component_meshes_colocation_1a27415c8f5ce7fb452bfe857b6b2b7f76>`(const Model& model);
+		:target:`ComponentMeshesColocation<doxid-classgeode_1_1_component_meshes_colocation_1a2687dbdac4de5fc87f8865f8c6dc0da3>`(const Model& model, bool verbose);
+
+		// methods
+	
+		std::vector<uuid> :target:`components_with_colocated_points<doxid-classgeode_1_1_component_meshes_colocation_1aa14c473084ed11288e7f71cf99d26646>`() const;
+		absl::flat_hash_map<uuid, index_t> :target:`components_nb_colocated_points<doxid-classgeode_1_1_component_meshes_colocation_1a1e35f9ffedb19051874de9e69c0a26fa>`() const;
+		absl::flat_hash_map<uuid, std::vector<std::vector<index_t>>> :target:`components_colocated_points_groups<doxid-classgeode_1_1_component_meshes_colocation_1ae7d5a967c9b9051632822032daa7ce0f>`() const;
+	};

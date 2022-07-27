@@ -37,7 +37,7 @@
 <span id="doxid-classgeode-1-1-unique-vertices-colocation"></span><span id="index-0"></span><h1>template class geode::UniqueVerticesColocation</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Class for inspecting the colocation of points in a PointSet</p>
+<p>Class for inspecting the colocation of unique vertices in a Model (BRep or Section)</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;unique_vertices_colocation.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
@@ -46,8 +46,8 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1a72be605d4df2435bd8c7392521281cf4"><span></span><span class="n">UniqueVerticesColocation</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1adc727021b1158bc4f56e691592cecbcd"><span></span><span class="n">UniqueVerticesColocation</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">verbose</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1a5a6e1452c702453db5216821eff76b52"><span></span><span class="n">UniqueVerticesColocation</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-unique-vertices-colocation-1a80b70b1ae4ecd70b770d63edc1ea23ae"><span></span><span class="n">UniqueVerticesColocation</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">verbose</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 

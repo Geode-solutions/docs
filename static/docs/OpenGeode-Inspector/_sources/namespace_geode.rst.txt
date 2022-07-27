@@ -9,13 +9,19 @@ namespace geode
 
 	namespace_geode_detail.rst
 	class_geode_AddInspectors.rst
+	class_geode_BRepComponentMeshesAdjacency.rst
+	class_geode_BRepComponentMeshesManifold.rst
 	class_geode_BRepInspector.rst
 	class_geode_BRepTopologyInspector.rst
+	class_geode_ComponentMeshesColocation.rst
+	class_geode_ComponentMeshesDegeneration.rst
 	class_geode_EdgedCurveColocation.rst
 	class_geode_EdgedCurveDegeneration.rst
 	class_geode_EdgedCurveInspector.rst
 	class_geode_PointSetColocation.rst
 	class_geode_PointSetInspector.rst
+	class_geode_SectionComponentMeshesAdjacency.rst
+	class_geode_SectionComponentMeshesManifold.rst
 	class_geode_SectionInspector.rst
 	class_geode_SectionTopologyInspector.rst
 	class_geode_SolidMeshAdjacency.rst
@@ -48,16 +54,28 @@ namespace geode
 
 	// typedefs
 
+	typedef :ref:`ComponentMeshesColocation<doxid-classgeode_1_1_component_meshes_colocation>`<2, Section> :target:`SectionComponentMeshesColocation<doxid-namespacegeode_1af2031ad5d5088a1de38a3381b8388947>`;
+	typedef :ref:`ComponentMeshesColocation<doxid-classgeode_1_1_component_meshes_colocation>`<3, BRep> :target:`BRepComponentMeshesColocation<doxid-namespacegeode_1a6d62a780043ff1dbd5ff1cb1d0db1cea>`;
 	typedef :ref:`UniqueVerticesColocation<doxid-classgeode_1_1_unique_vertices_colocation>`<2, Section> :target:`SectionUniqueVerticesColocation<doxid-namespacegeode_1a86355c6677cbb951ed69c954833400dd>`;
 	typedef :ref:`UniqueVerticesColocation<doxid-classgeode_1_1_unique_vertices_colocation>`<3, BRep> :target:`BRepUniqueVerticesColocation<doxid-namespacegeode_1ae69075bd9a8b0154d435f5a52c0190af>`;
+	typedef :ref:`ComponentMeshesDegeneration<doxid-classgeode_1_1_component_meshes_degeneration>`<2, Section> :target:`SectionComponentMeshesDegeneration<doxid-namespacegeode_1ae32ddf99705963dc9e7f9888441bc531>`;
+	typedef :ref:`ComponentMeshesDegeneration<doxid-classgeode_1_1_component_meshes_degeneration>`<3, BRep> :target:`BRepComponentMeshesDegeneration<doxid-namespacegeode_1ae956bf998adde768a642a2a5c1097786>`;
 
 	// classes
 
 	template <class Mesh, class... Inspectors>
 	class :ref:`AddInspectors<doxid-classgeode_1_1_add_inspectors>`;
 
+	class :ref:`BRepComponentMeshesAdjacency<doxid-classgeode_1_1_b_rep_component_meshes_adjacency>`;
+	class :ref:`BRepComponentMeshesManifold<doxid-classgeode_1_1_b_rep_component_meshes_manifold>`;
 	class :ref:`BRepInspector<doxid-classgeode_1_1_b_rep_inspector>`;
 	class :ref:`BRepTopologyInspector<doxid-classgeode_1_1_b_rep_topology_inspector>`;
+
+	template <index_t dimension, typename Model>
+	class :ref:`ComponentMeshesColocation<doxid-classgeode_1_1_component_meshes_colocation>`;
+
+	template <index_t dimension, typename Model>
+	class :ref:`ComponentMeshesDegeneration<doxid-classgeode_1_1_component_meshes_degeneration>`;
 
 	template <index_t dimension>
 	class :ref:`EdgedCurveColocation<doxid-classgeode_1_1_edged_curve_colocation>`;
@@ -74,6 +92,8 @@ namespace geode
 	template <index_t dimension>
 	class :ref:`PointSetInspector<doxid-classgeode_1_1_point_set_inspector>`;
 
+	class :ref:`SectionComponentMeshesAdjacency<doxid-classgeode_1_1_section_component_meshes_adjacency>`;
+	class :ref:`SectionComponentMeshesManifold<doxid-classgeode_1_1_section_component_meshes_manifold>`;
 	class :ref:`SectionInspector<doxid-classgeode_1_1_section_inspector>`;
 	class :ref:`SectionTopologyInspector<doxid-classgeode_1_1_section_topology_inspector>`;
 
@@ -122,7 +142,7 @@ namespace geode
 	// global functions
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a33af0fa8bde89ccf7dfdce137a01ccea>`(:ref:`SolidMeshAdjacency<doxid-classgeode_1_1_solid_mesh_adjacency>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ad0962685e631af46c26463cf5ea5428b>`(:ref:`SolidMeshAdjacency<doxid-classgeode_1_1_solid_mesh_adjacency>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a417a9013d66d2a33f1438636ce4aea66>`(:ref:`SurfaceMeshAdjacency<doxid-classgeode_1_1_surface_mesh_adjacency>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
