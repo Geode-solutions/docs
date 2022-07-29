@@ -65,6 +65,7 @@ namespace geode
 	class_geode_Circle.rst
 	class_geode_Component.rst
 	class_geode_ComponentID.rst
+	class_geode_ConsoleProgressLoggerClient.rst
 	class_geode_ConstantAttribute.rst
 	class_geode_Corner.rst
 	class_geode_Corners.rst
@@ -170,6 +171,7 @@ namespace geode
 	class_geode_PolyhedralSolidInput.rst
 	class_geode_PolyhedralSolidOutput.rst
 	class_geode_ProgressLogger.rst
+	class_geode_ProgressLoggerClient.rst
 	class_geode_RayTracing3D.rst
 	class_geode_ReadOnlyAttribute.rst
 	class_geode_RegularGrid.rst
@@ -259,6 +261,7 @@ Overview
 	typedef std::tuple<:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`, bitsery::ext::PointerLinkingContext, bitsery::ext::InheritanceContext> :target:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`;
 	typedef bitsery::Serializer<bitsery::OutputBufferedStreamAdapter, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Serializer<doxid-namespacegeode_1acde102fc3576cee8a5531f85902413bb>`;
 	typedef bitsery::Deserializer<bitsery::InputStreamAdapter, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Deserializer<doxid-namespacegeode_1a2090ae31c36f663e61f2af7d87cb5f44>`;
+	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`ProgressLoggerClient<doxid-classgeode_1_1_progress_logger_client>`, const std::string&> :target:`ProgressLoggerClientFactory<doxid-namespacegeode_1a102cec80ad556cb5433e0c98d3214936>`;
 	typedef :ref:`TRange<doxid-classgeode_1_1_t_range>`<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`Range<doxid-namespacegeode_1af2b42e3794d9eb6a1abf901029f56c5e>`;
 	typedef :ref:`TRange<doxid-classgeode_1_1_t_range>`<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`> :target:`LRange<doxid-namespacegeode_1ab5da71b86e46c42efa37d163a65b04fc>`;
 	typedef :ref:`TReverseRange<doxid-classgeode_1_1_t_reverse_range>`<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`ReverseRange<doxid-namespacegeode_1a80fac5bf1c3ce3f4f6556e86954c0ddc>`;
@@ -433,6 +436,7 @@ Overview
 	class :ref:`Component<doxid-classgeode_1_1_component>`;
 
 	class :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`;
+	class :ref:`ConsoleProgressLoggerClient<doxid-classgeode_1_1_console_progress_logger_client>`;
 
 	template <typename T>
 	class :ref:`ConstantAttribute<doxid-classgeode_1_1_constant_attribute>`;
@@ -611,10 +615,10 @@ Overview
 	class :ref:`OpenGeodePolyhedralSolidBuilder<doxid-classgeode_1_1_open_geode_polyhedral_solid_builder>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGrid<2><doxid-classgeode_1_1_open_geode_regular_grid_3_012_01_4>`;
+	class :ref:`OpenGeodeRegularGrid<3><doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGrid<3><doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4>`;
+	class :ref:`OpenGeodeRegularGrid<2><doxid-classgeode_1_1_open_geode_regular_grid_3_012_01_4>`;
 
 	template <>
 	class :ref:`OpenGeodeRegularGridBuilder<2><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4>`;
@@ -709,16 +713,17 @@ Overview
 	class :ref:`PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`;
 
 	class :ref:`ProgressLogger<doxid-classgeode_1_1_progress_logger>`;
+	class :ref:`ProgressLoggerClient<doxid-classgeode_1_1_progress_logger_client>`;
 	class :ref:`RayTracing3D<doxid-classgeode_1_1_ray_tracing3_d>`;
 
 	template <typename T>
 	class :ref:`ReadOnlyAttribute<doxid-classgeode_1_1_read_only_attribute>`;
 
 	template <>
-	class :ref:`RegularGrid<2><doxid-classgeode_1_1_regular_grid_3_012_01_4>`;
+	class :ref:`RegularGrid<3><doxid-classgeode_1_1_regular_grid_3_013_01_4>`;
 
 	template <>
-	class :ref:`RegularGrid<3><doxid-classgeode_1_1_regular_grid_3_013_01_4>`;
+	class :ref:`RegularGrid<2><doxid-classgeode_1_1_regular_grid_3_012_01_4>`;
 
 	template <>
 	class :ref:`RegularGridBuilder<2><doxid-classgeode_1_1_regular_grid_builder_3_012_01_4>`;
