@@ -8,6 +8,8 @@ namespace geode
 	:hidden:
 
 	struct_geode_BRepComponentMappings.rst
+	struct_geode_SectionComponentMappings.rst
+	class_geode_ExplicitModeler2D.rst
 	class_geode_ExplicitModeler3D.rst
 
 
@@ -22,16 +24,20 @@ namespace geode
 	// structs
 
 	struct :ref:`BRepComponentMappings<doxid-structgeode_1_1_b_rep_component_mappings>`;
+	struct :ref:`SectionComponentMappings<doxid-structgeode_1_1_section_component_mappings>`;
 
 	// classes
 
+	class :ref:`ExplicitModeler2D<doxid-classgeode_1_1_explicit_modeler2_d>`;
 	class :ref:`ExplicitModeler3D<doxid-classgeode_1_1_explicit_modeler3_d>`;
 
 	// global functions
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(BoundingBox);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a138f53359f6b0ed97828265b627ab688>`(BoundingBox);
+	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(BoundingBox);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);

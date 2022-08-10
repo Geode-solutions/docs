@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::SectionComponentMappings
+.. _doxid-structgeode_1_1_section_component_mappings:
+
+struct geode::SectionComponentMappings
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_component_mappings.h>
+	
+	struct SectionComponentMappings
+	{
+		// fields
+	
+		GenericMapping<uuid> :target:`lines<doxid-structgeode_1_1_section_component_mappings_1aa59f797d1ed7c698664831c36d18e034>`;
+	};
