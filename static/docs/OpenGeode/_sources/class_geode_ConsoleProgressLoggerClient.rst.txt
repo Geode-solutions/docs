@@ -18,9 +18,6 @@ class geode::ConsoleProgressLoggerClient
 	class ConsoleProgressLoggerClient: public :ref:`geode::ProgressLoggerClient<doxid-classgeode_1_1_progress_logger_client>`
 	{
 	public:
-		// construction
-	
-		:target:`ConsoleProgressLoggerClient<doxid-classgeode_1_1_console_progress_logger_client_1a66b1e661a79b94fc08fad17b476e3aab>`(const std::string& message);
 	};
 
 Inherited Members
@@ -32,7 +29,8 @@ Inherited Members
 	public:
 		// methods
 	
-		virtual void :ref:`start<doxid-classgeode_1_1_progress_logger_client_1a7691df13f437010644cd703e5aa11cd4>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_steps) = 0;
+		virtual void :ref:`start<doxid-classgeode_1_1_progress_logger_client_1a54fafa5fbca687c29e87ea89b9c0b0f2>`(const std::string& message, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_steps) = 0;
 		virtual void :ref:`update<doxid-classgeode_1_1_progress_logger_client_1a916c873e6d08f9283fbdb38889b173ed>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` current_step, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_steps) = 0;
-		virtual void :ref:`end<doxid-classgeode_1_1_progress_logger_client_1a561bce55a1195450abd3bc72a0db2a20>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` current_step, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_steps) = 0;
+		virtual void :ref:`completed<doxid-classgeode_1_1_progress_logger_client_1a1f39edaae3033aa72ec5948f1dfe6607>`() = 0;
+		virtual void :ref:`failed<doxid-classgeode_1_1_progress_logger_client_1a9ab3dc500a80caec620eea5a77fb3cd0>`() = 0;
 
