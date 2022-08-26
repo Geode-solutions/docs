@@ -65,6 +65,7 @@ namespace geode
 	class_geode_Circle.rst
 	class_geode_Component.rst
 	class_geode_ComponentID.rst
+	class_geode_ConsoleLoggerClient.rst
 	class_geode_ConsoleProgressLoggerClient.rst
 	class_geode_ConstantAttribute.rst
 	class_geode_Corner.rst
@@ -110,6 +111,8 @@ namespace geode
 	class_geode_Lines.rst
 	class_geode_LinesBuilder.rst
 	class_geode_Logger.rst
+	class_geode_LoggerClient.rst
+	class_geode_LoggerManager.rst
 	class_geode_MeshBuilderFactory.rst
 	class_geode_MeshBuilderFactoryKey.rst
 	class_geode_MeshFactory.rst
@@ -436,6 +439,7 @@ Overview
 	class :ref:`Component<doxid-classgeode_1_1_component>`;
 
 	class :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`;
+	class :ref:`ConsoleLoggerClient<doxid-classgeode_1_1_console_logger_client>`;
 	class :ref:`ConsoleProgressLoggerClient<doxid-classgeode_1_1_console_progress_logger_client>`;
 
 	template <typename T>
@@ -556,6 +560,8 @@ Overview
 	class :ref:`LinesBuilder<doxid-classgeode_1_1_lines_builder>`;
 
 	class :ref:`Logger<doxid-classgeode_1_1_logger>`;
+	class :ref:`LoggerClient<doxid-classgeode_1_1_logger_client>`;
+	class :ref:`LoggerManager<doxid-classgeode_1_1_logger_manager>`;
 	class :ref:`MeshBuilderFactory<doxid-classgeode_1_1_mesh_builder_factory>`;
 	class :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>`;
 	class :ref:`MeshFactory<doxid-classgeode_1_1_mesh_factory>`;
@@ -615,16 +621,16 @@ Overview
 	class :ref:`OpenGeodePolyhedralSolidBuilder<doxid-classgeode_1_1_open_geode_polyhedral_solid_builder>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGrid<3><doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4>`;
-
-	template <>
 	class :ref:`OpenGeodeRegularGrid<2><doxid-classgeode_1_1_open_geode_regular_grid_3_012_01_4>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGridBuilder<2><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4>`;
+	class :ref:`OpenGeodeRegularGrid<3><doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4>`;
 
 	template <>
 	class :ref:`OpenGeodeRegularGridBuilder<3><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_013_01_4>`;
+
+	template <>
+	class :ref:`OpenGeodeRegularGridBuilder<2><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4>`;
 
 	class :ref:`OpenGeodeSectionInput<doxid-classgeode_1_1_open_geode_section_input>`;
 	class :ref:`OpenGeodeSectionOutput<doxid-classgeode_1_1_open_geode_section_output>`;
@@ -727,10 +733,10 @@ Overview
 	class :ref:`RegularGrid<3><doxid-classgeode_1_1_regular_grid_3_013_01_4>`;
 
 	template <>
-	class :ref:`RegularGridBuilder<3><doxid-classgeode_1_1_regular_grid_builder_3_013_01_4>`;
+	class :ref:`RegularGridBuilder<2><doxid-classgeode_1_1_regular_grid_builder_3_012_01_4>`;
 
 	template <>
-	class :ref:`RegularGridBuilder<2><doxid-classgeode_1_1_regular_grid_builder_3_012_01_4>`;
+	class :ref:`RegularGridBuilder<3><doxid-classgeode_1_1_regular_grid_builder_3_013_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`RegularGridInput<doxid-classgeode_1_1_regular_grid_input>`;
