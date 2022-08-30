@@ -74,6 +74,7 @@
 
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_AlongSolidSplitEdgeInfo.html#doxid-structgeode-1-1-along-solid-split-edge-info"><span class="std std-ref">AlongSolidSplitEdgeInfo</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepCollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-b-rep-collapse-polygon-edge-info"><span class="std std-ref">BRepCollapsePolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepSplitPolygonEdgeInfo.html#doxid-structgeode-1-1-b-rep-split-polygon-edge-info"><span class="std std-ref">BRepSplitPolygonEdgeInfo</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_CollapseEdgeInfo.html#doxid-structgeode-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span><span class="p">;</span>
@@ -92,6 +93,7 @@
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_Mapping-2.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="p">;</span>
 
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelCollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-model-collapse-polygon-edge-info"><span class="std std-ref">ModelCollapsePolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelSimulationResult.html#doxid-structgeode-1-1-model-simulation-result"><span class="std std-ref">ModelSimulationResult</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelSplitPolygonEdgeInfo.html#doxid-structgeode-1-1-model-split-polygon-edge-info"><span class="std std-ref">ModelSplitPolygonEdgeInfo</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
@@ -108,6 +110,7 @@
 
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_PolygonEdgeInfo.html#doxid-structgeode-1-1-polygon-edge-info"><span class="std std-ref">PolygonEdgeInfo</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionCollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-section-collapse-polygon-edge-info"><span class="std std-ref">SectionCollapsePolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionSplitPolygonEdgeInfo.html#doxid-structgeode-1-1-section-split-polygon-edge-info"><span class="std std-ref">SectionSplitPolygonEdgeInfo</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_SidedSolidSplitEdgeInfo.html#doxid-structgeode-1-1-sided-solid-split-edge-info"><span class="std std-ref">SidedSolidSplitEdgeInfo</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidCollapseEdgeInfo.html#doxid-structgeode-1-1-solid-collapse-edge-info"><span class="std std-ref">SolidCollapseEdgeInfo</span></a><span></span><span class="p">;</span>
@@ -297,49 +300,49 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3dfa90e12c4f46df6d4d4c73cc499ab6"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f0825f02564723bd52f856a1ae100c9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afafff9191ebfeef774380bb1a0f66cf3"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a188a9a17dbf6c0fd00b76b93bb3f20b1"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2f082d27de26d7e598d8b0127dd163a2"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7e61ded745250794b3a32b9eea639909"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4f57b1fe13b060a0df7940cae6566bb2"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afd25c1e13f7fbf9f19383091b3d96e2c"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a03be2bfab809dc40a1008f8b085db38f"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad072451de30cc32ff654e9628079c3ae"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aedd696df7ac6cae328199bde0c1369c1"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2371f5d2ab9631795bdf238645d9d765"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3db257bdade7c79a8941cdf2d8634ea7"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad4dd5d424d8becdc2fefbbf8cef187c3"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a60f35d93374174670d346aaeedee1b1d"><span></span><span class="n">is_swap_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a786639763b2f5179ea84ba511f1b2c53"><span></span><span class="n">is_swap_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
@@ -356,35 +359,35 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4bd02aabaf2cf4d25e7f1471d6f5f682"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a96755a4b4b643ca905a8a29e0a07543b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9d65f2d5a9e77faa33730efd261031c0"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7164721ca8163f4d72d31854af522fbd"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6ca781e13f9fec080a835476964eab1d"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a280d9f7fbe6535fca5f41ed653af09a2"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a805e28f46844d4e09d6e8d38a47a18d0"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac8fc628258c784a78466a7426d9eba9b"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abe764a1e4dc6d4dadef9def0b57cf1c1"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1069bc2e8a715ba23352a89469c72316"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
-<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa8257594688153bf624792f8dcec4a7c"><span></span><span class="n">is_swap_edge_valid</span></span><span></span><span class="p">(</span>
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6523e663c00002a8ce9873333be26261"><span></span><span class="n">is_swap_edge_valid</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
