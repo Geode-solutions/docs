@@ -31,7 +31,6 @@ class geode::detail::BRepFromSolidElementsBuilder
 	
 		void :target:`build_whole_surface_step<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1ab21a2063ead6fb71caec0e2188d0e474>`();
 		absl::flat_hash_map<uuid, std::vector<index_t>> :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a94b271c48c5fd90729416201fec4189f>`();
-		void :target:`build_blocks<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a08d3787b459a18ece40aacf9eea93334>`();
 		virtual bool :target:`is_corner<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a6319b1f06d019a7c41e48656d396cb6b>`(index_t vertex) const;
 	};
 
