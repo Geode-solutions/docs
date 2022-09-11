@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::ComponentType>
-.. _doxid-structstd_1_1hash_3_01geode_1_1_component_type_01_4:
+.. index:: pair: struct; std::hash<geode::Point2D>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_point2_d_01_4:
 
-template struct std::hash<geode::ComponentType>
-===============================================
+template struct std::hash<geode::Point2D>
+=========================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct std::hash<geode::ComponentType>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <component_type.h>
+	#include <point.h>
 	
 	template <>
-	struct hash<geode::ComponentType>
+	struct hash<geode::Point2D>
 	{
 		// methods
 	
-		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_component_type_01_4_1a797923e5e4b38c6b1706901c806df69b>` (const :ref:`geode::ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_point2_d_01_4_1aa6bb8e1469ed91bc7b96739edf1c21a3>` (const geode::Point2D& point) const;
 	};

@@ -37,6 +37,8 @@ Overview
 
 	// macros
 
+	#define :target:`ALIAS_1D<doxid-basic_2common_8h_1ada58892ef6913a028f01bc0876ea01d4>`(Class)
+	#define :target:`ALIAS_1D_AND_2D_AND_3D<doxid-basic_2common_8h_1af911e7e7cf8596d8d166001645c3cc6b>`(Class)
 	#define :target:`ALIAS_2D<doxid-basic_2common_8h_1a88cb5917fe9deab9868089e8d62afde4>`(Class)
 	#define :target:`ALIAS_2D_AND_3D<doxid-basic_2common_8h_1ae91cd165a04813876ddd17a4a3789da5>`(Class)
 	#define :target:`ALIAS_3D<doxid-basic_2common_8h_1a11287681fe4b6c6538bc0c250960f095>`(Class)
