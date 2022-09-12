@@ -85,7 +85,7 @@ Overview
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a0d02be32408fc3196f2976840cc46548>`(:ref:`Frame<doxid-classgeode_1_1_frame>`);
+	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a44170ce276302d65a3fc91b764140680>`(:ref:`Frame<doxid-classgeode_1_1_frame>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0e024ab01b9700d19787593b90a745f3>`(:ref:`Frame<doxid-classgeode_1_1_frame>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a82b6b61fdb928daf4084c93632f90f47>`(:ref:`Frame<doxid-classgeode_1_1_frame>`);

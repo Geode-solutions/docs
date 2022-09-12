@@ -34,6 +34,7 @@ class geode::FrameFieldParameterization
 	
 		void :target:`compute_parameterization<doxid-classgeode_1_1_frame_field_parameterization_1a3be1866367df7e5ecdb8d3bbeb9b760c>`();
 		absl::flat_hash_map<uuid, std::unique_ptr<PointSet3D>> :target:`extract_points<doxid-classgeode_1_1_frame_field_parameterization_1a503df56ab886b5a62d6dc91ba8b7668e>`() const;
+		absl::flat_hash_map<uuid, std::unique_ptr<EdgedCurve3D>> :target:`extract_edges<doxid-classgeode_1_1_frame_field_parameterization_1a0f7bf5ceb8b84ee4e9dcdbf44ea334c4>`() const;
 		absl::flat_hash_map<uuid, std::unique_ptr<PolygonalSurface3D>> :target:`extract_quadrangles<doxid-classgeode_1_1_frame_field_parameterization_1af1a805423d8c22eda2ec7d20aa436b2b>`() const;
 		absl::flat_hash_map<uuid, std::unique_ptr<HybridSolid3D>> :target:`extract_hexahedra<doxid-classgeode_1_1_frame_field_parameterization_1a4771629eb036cf8858ea95204bb6cda1>`() const;
 	};
