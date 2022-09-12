@@ -11,6 +11,7 @@ namespace geode
 	class_geode_ImplicitCrossSection.rst
 	class_geode_ImplicitCrossSectionBuilder.rst
 	class_geode_ImplicitCrossSectionInput.rst
+	class_geode_ImplicitCrossSectionInserter.rst
 	class_geode_ImplicitCrossSectionOutput.rst
 	class_geode_ImplicitStructuralModel.rst
 	class_geode_ImplicitStructuralModelBuilder.rst
@@ -49,6 +50,7 @@ Overview
 	class :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`;
 	class :ref:`ImplicitCrossSectionBuilder<doxid-classgeode_1_1_implicit_cross_section_builder>`;
 	class :ref:`ImplicitCrossSectionInput<doxid-classgeode_1_1_implicit_cross_section_input>`;
+	class :ref:`ImplicitCrossSectionInserter<doxid-classgeode_1_1_implicit_cross_section_inserter>`;
 	class :ref:`ImplicitCrossSectionOutput<doxid-classgeode_1_1_implicit_cross_section_output>`;
 	class :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`;
 	class :ref:`ImplicitStructuralModelBuilder<doxid-classgeode_1_1_implicit_structural_model_builder>`;
@@ -65,11 +67,9 @@ Overview
 	// global variables
 
 	static constexpr auto :target:`imported_3d_stratigraphic_attribute_name<doxid-namespacegeode_1a3a122de16a91abf72199f1c757746ba9>` =         "geode_3d_stratigraphy";
+	static constexpr auto :target:`stratigraphic_line_polygon_edge_attribute_name<doxid-namespacegeode_1a9f2488ddd4fddba717312ab55a1601a8>` =         "geode_associated_surface_polygon_edge";
 
 	// global functions
-
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
-	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
 
 	:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` geode_implicitmodeling_explicitation_api :target:`extract_implicit_cross_section_from_axis<doxid-namespacegeode_1aee4387c87e1a4bf89546ec1ea1d93ac3>`(
 		const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& model,
@@ -87,13 +87,35 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(BoundingBox);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a88e7373e2780b9968a6fddc59703bcf9>`(DataConstraintManager);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa40ec52a1aa919899a089ac5e5a8640c>`(:ref:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(Point);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
-	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+
+	void geode_implicitmodeling_model_api :target:`rescale_stratigraphic_attribute<doxid-namespacegeode_1a101910cf6bc45a10f4ec68f2e896d038>`(
+		:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& section,
+		index_t direction,
+		double scaling_factor
+		);
+
+	void geode_implicitmodeling_model_api :target:`rescale_stratigraphic_attribute_to_bbox_scale<doxid-namespacegeode_1a23e502f338bb6cff9a3ee3d387e7f98c>`(:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& section);
+
+	void geode_implicitmodeling_model_api :target:`rescale_stratigraphic_attribute<doxid-namespacegeode_1acf29e213a6f0dd663cae56780e98c7aa>`(
+		:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& section,
+		index_t direction,
+		double scaling_factor
+		);
+
+	void geode_implicitmodeling_model_api :target:`rescale_stratigraphic_attribute_to_bbox_scale<doxid-namespacegeode_1a445d4fbc0a4c17c908fa9274c5b1c3dd>`(:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& section);
+
+	void geode_implicitmodeling_model_api :target:`save_stratigraphic_surfaces<doxid-namespacegeode_1a1a77fbaf475b9362e3808148e960eb88>`(
+		const :ref:`geode::ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model,
+		absl::string_view prefix
+		);
+
 	:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` geode_implicitmodeling_model_api :ref:`load_implicit_cross_section<doxid-namespacegeode_1acb687cbedca7f7bcada2358582d6a0a7>`(absl::string_view filename);
 
 	void geode_implicitmodeling_model_api :ref:`save_implicit_cross_section<doxid-namespacegeode_1a752a47963d1b8d3a296efe5e800582e3>`(

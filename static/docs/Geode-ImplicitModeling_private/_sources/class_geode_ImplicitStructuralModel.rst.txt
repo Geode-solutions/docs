@@ -67,6 +67,7 @@ An Implicit Model is a Structural model where each block has a specific attribut
 			const Surface3D& surface
 			) const;
 	
+		BoundingBox3D :target:`stratigraphic_bounding_box<doxid-classgeode_1_1_implicit_structural_model_1a8cdc8190e7957edf2c9f04911e6fd34a>`() const;
 		void :target:`instantiate_stratigraphic_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_1a60b40e7b49cf5b1f728fbaf22f0d9613>`(ImplicitStructuralModelBuilderKey);
 	
 		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_1adc83dec63bf94995c79337d65e369fca>`(

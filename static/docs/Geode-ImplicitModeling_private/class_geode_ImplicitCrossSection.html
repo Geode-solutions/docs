@@ -87,11 +87,17 @@
         <span class="n">index_t</span> <span class="n">polygon_id</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section-1ab8e9bc03da76daa8511e19fbe4a7f8fd"><span class="std std-ref">stratigraphic_containing_polygon</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
     <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve2D</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1aaebdcb713d664fa437184fcdfd7928a3"><span></span><span class="n">stratigraphic_line</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
+    <span class="n">BoundingBox2D</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1ac1245c1973197a3e2f1b792be231670b"><span></span><span class="n">stratigraphic_bounding_box</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a60a3c9c2080c8ac99e66c77f660c58e2"><span></span><span class="n">instantiate_stratigraphic_attribute_on_surfaces</span></span><span></span><span class="p">(</span><span class="n">ImplicitCrossSectionBuilderKey</span><span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1acdb0a3f24680fb36cb7f089c8ab1a724"><span></span><span class="n">set_stratigraphic_coordinates</span></span><span></span><span class="p">(</span>
@@ -136,6 +142,11 @@
     <span class="n">index_t</span> <span class="n">polygon_id</span>
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the given polygon of the given surface.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-cross-section-1ab8e9bc03da76daa8511e19fbe4a7f8fd"><span id="index-6"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">stratigraphic_containing_polygon</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Returns the surface polygon containing the given stratigraphic point, if there is any.</p>
 </section>
 </section>
 </section>

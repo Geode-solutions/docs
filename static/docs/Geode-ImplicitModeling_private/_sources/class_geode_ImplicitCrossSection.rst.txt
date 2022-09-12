@@ -62,11 +62,17 @@ An :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` is 
 			index_t polygon_id
 			) const;
 	
+		absl::optional<index_t> :ref:`stratigraphic_containing_polygon<doxid-classgeode_1_1_implicit_cross_section_1ab8e9bc03da76daa8511e19fbe4a7f8fd>`(
+			const Surface2D& surface,
+			const Point2D& stratigraphic_point
+			) const;
+	
 		absl::InlinedVector<std::unique_ptr<EdgedCurve2D>, 2> :target:`stratigraphic_line<doxid-classgeode_1_1_implicit_cross_section_1aaebdcb713d664fa437184fcdfd7928a3>`(
 			const Surface2D& surface,
 			const Line2D& line
 			) const;
 	
+		BoundingBox2D :target:`stratigraphic_bounding_box<doxid-classgeode_1_1_implicit_cross_section_1ac1245c1973197a3e2f1b792be231670b>`() const;
 		void :target:`instantiate_stratigraphic_attribute_on_surfaces<doxid-classgeode_1_1_implicit_cross_section_1a60a3c9c2080c8ac99e66c77f660c58e2>`(ImplicitCrossSectionBuilderKey);
 	
 		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_cross_section_1acdb0a3f24680fb36cb7f089c8ab1a724>`(
@@ -154,4 +160,17 @@ Return the geometric coordinates of the point, calculated from its stratigraphic
 		) const
 
 Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the given polygon of the given surface.
+
+.. index:: pair: function; stratigraphic_containing_polygon
+.. _doxid-classgeode_1_1_implicit_cross_section_1ab8e9bc03da76daa8511e19fbe4a7f8fd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<index_t> stratigraphic_containing_polygon(
+		const Surface2D& surface,
+		const Point2D& stratigraphic_point
+		) const
+
+Returns the surface polygon containing the given stratigraphic point, if there is any.
 
