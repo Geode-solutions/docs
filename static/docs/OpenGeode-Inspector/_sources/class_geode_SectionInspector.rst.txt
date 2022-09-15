@@ -37,9 +37,12 @@ Inherited Members
 	
 		bool :ref:`section_topology_is_valid<doxid-classgeode_1_1_section_topology_inspector_1abc8d7888f9ab7c9caa0741e89368b784>`() const;
 		bool :ref:`section_meshed_components_are_linked_to_a_unique_vertex<doxid-classgeode_1_1_section_topology_inspector_1a14516a3d263f886a979f3ce5c08ece94>`() const;
+		bool :ref:`section_unique_vertices_are_linked_to_a_component_vertex<doxid-classgeode_1_1_section_topology_inspector_1ae152098e7632282970b7bad2d9f50193>`() const;
 		index_t :ref:`nb_corners_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_section_topology_inspector_1aae293b8ed52b77062e395c8b4b818140>`() const;
 		index_t :ref:`nb_lines_meshed_but_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_section_topology_inspector_1a5e2e37cd471f157e050af78040574c0a>`() const;
 		index_t :ref:`nb_surfaces_meshed_but_not_linked_to_a_unique_vertex<doxid-classgeode_1_1_section_topology_inspector_1ab14219a5f3d9f99324f2a85ac34b8fea>`() const;
+		index_t :ref:`nb_unique_vertices_not_linked_to_a_component_vertex<doxid-classgeode_1_1_section_topology_inspector_1aa7804b628ee5974100fd099721b0d164>`() const;
+		std::vector<index_t> :ref:`unique_vertices_not_linked_to_a_component_vertex<doxid-classgeode_1_1_section_topology_inspector_1a058d1d02c7c8bde5d584b7660212b406>`() const;
 		std::vector<index_t> :ref:`invalid_components_topology_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a284df216c7a8520ebc1ce6498ff21790>`() const;
 		std::vector<index_t> :ref:`multiple_corners_unique_vertices<doxid-classgeode_1_1_section_topology_inspector_1a76fff8ef50b5624dd0144c76b08aec62>`() const;
 		std::vector<index_t> :ref:`multiple_internals_corner_vertices<doxid-classgeode_1_1_section_topology_inspector_1a1fc7ea891ec1eeba7551f4175bf39439>`() const;
