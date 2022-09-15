@@ -44,6 +44,11 @@ Overview
 		absl::string_view attribute_name
 		);
 
+	BRep geode_conversion_model_api :ref:`add_sharp_features<doxid-namespacegeode_1ab041f799b2bec00fc0bb9530b0f44bc1>`(
+		const BRep& model,
+		double max_angle
+		);
+
 	Section geode_conversion_model_api :target:`convert_surface_into_section<doxid-namespacegeode_1a82b91748e58ceed17e8283e4fa57f39f>`(const SurfaceMesh2D& surface);
 	Section geode_conversion_model_api :target:`convert_surfaces_into_section<doxid-namespacegeode_1a31dc435c2149eec1ef5fca9ebe77921b>`(absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces);
 
@@ -164,6 +169,36 @@ Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribu
 		- attribute_name
 
 		- Name of attribute stored on solid polyhedra @warn Attribute should be convertible to float.
+
+.. index:: pair: function; add_sharp_features
+.. _doxid-namespacegeode_1ab041f799b2bec00fc0bb9530b0f44bc1:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	BRep geode_conversion_model_api add_sharp_features(
+		const BRep& model,
+		double max_angle
+		)
+
+Creates a new BRep from the given one, with new lines on the sharp features of the surfaces (edges where the angle between the normals of the facets is higher than the given max_angle).
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- model
+
+		- Input brep
+
+	*
+		- max_angle
+
+		- Angle between the facets normals (dihedral angle) above which they are considered a sharp feature.
 
 .. index:: pair: function; convert_surface_into_section_from_attribute
 .. _doxid-namespacegeode_1a4cd6697bea5e1468859e6c1d301eb324:

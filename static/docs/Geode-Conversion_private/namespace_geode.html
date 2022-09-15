@@ -65,6 +65,11 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">);</span>
 
+<span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab041f799b2bec00fc0bb9530b0f44bc1"><span class="std std-ref">add_sharp_features</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">max_angle</span>
+    <span class="p">);</span>
+
 <span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a82b91748e58ceed17e8283e4fa57f39f"><span></span><span class="n">convert_surface_into_section</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
 <span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a31dc435c2149eec1ef5fca9ebe77921b"><span></span><span class="n">convert_surfaces_into_section</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh2D</span><span class="o">&gt;&gt;</span> <span class="n">surfaces</span><span class="p">);</span>
 
@@ -143,7 +148,27 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4cd6697bea5e1468859e6c1d301eb324"><span id="index-5"></span><span></span><span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surface_into_section_from_attribute</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab041f799b2bec00fc0bb9530b0f44bc1"><span id="index-5"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">add_sharp_features</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">max_angle</span>
+    <span class="p">)</span></pre>
+<p>Creates a new BRep from the given one, with new lines on the sharp features of the surfaces (edges where the angle between the normals of the facets is higher than the given max_angle).</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>model</p></td>
+<td><p>Input brep</p></td>
+</tr>
+<tr class="row-even"><td><p>max_angle</p></td>
+<td><p>Angle between the facets normals (dihedral angle) above which they are considered a sharp feature.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4cd6697bea5e1468859e6c1d301eb324"><span id="index-6"></span><span></span><span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surface_into_section_from_attribute</span><span class="p">(</span>
     <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">)</span></pre>
