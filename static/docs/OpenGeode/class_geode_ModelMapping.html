@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>template class geode::ModelMapping &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::NNSearch" href="class_geode_NNSearch.html" />
+    <link rel="prev" title="template class geode::ModelBoundary" href="class_geode_ModelBoundary.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-modelmapping">
+<span id="doxid-classgeode-1-1-model-mapping"></span><span id="index-0"></span><h1>template class geode::ModelMapping</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;mapping.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">MappingType</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">ModelMapping</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="n">MappingType</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-mapping-1a0b85325c36f11f4cba9d77f207abf9f8"><span></span><span class="n">Mapping</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">MappingType</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-mapping-1a5f26aaa3784983a5658cb7a66efbf976"><span></span><span class="n">at</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">MappingType</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-mapping-1acf5aa2a90941ca8e471604d73de4af87"><span></span><span class="n">at</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-mapping-1af0d8af949de36b1a79bd8ab57deaea4f"><span></span><span class="n">has_mapping_type</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-mapping-1a057b0509fa14b8f13625138dda244119"><span></span><span class="n">emplace</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">type</span><span class="p">,</span> <span class="n">MappingType</span> <span class="n">mapping</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_ModelMapping.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

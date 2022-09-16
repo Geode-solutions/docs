@@ -56,7 +56,7 @@ Inherited Members
 		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
 	
 		void :ref:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(
-			const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping,
+			const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping,
 			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships
 			);
 	

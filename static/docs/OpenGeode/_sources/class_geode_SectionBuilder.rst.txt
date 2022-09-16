@@ -32,11 +32,11 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 
 		// methods
 	
-		:ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>` :target:`copy<doxid-classgeode_1_1_section_builder_1a1da8af591ab009826b890bad989bbdc7>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
-		:ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>` :target:`copy_components<doxid-classgeode_1_1_section_builder_1a205c7c581ae0e2fa36a0b6fe98570dde>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
+		:ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>` :target:`copy<doxid-classgeode_1_1_section_builder_1a1da8af591ab009826b890bad989bbdc7>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
+		:ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>` :target:`copy_components<doxid-classgeode_1_1_section_builder_1a205c7c581ae0e2fa36a0b6fe98570dde>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
 	
 		void :target:`copy_component_geometry<doxid-classgeode_1_1_section_builder_1ab49fb28a66798d580fb3a2e525df4ca0>`(
-			const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping,
+			const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping,
 			const :ref:`Section<doxid-classgeode_1_1_section>`& section
 			);
 	
@@ -135,7 +135,7 @@ Inherited Members
 		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
 	
 		void :ref:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(
-			const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping,
+			const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping,
 			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships
 			);
 	

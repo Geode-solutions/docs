@@ -27,7 +27,7 @@ namespace geode::detail
 
 	// typedefs
 
-	typedef :ref:`ModelCopyMapping::Mapping<doxid-classgeode_1_1_model_copy_mapping_1a2d0b4129e3ddabacb1e0759bbfb4d65c>` :target:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>`;
+	typedef :ref:`ModelCopyMapping::Mapping<doxid-classgeode_1_1_model_mapping_1a0b85325c36f11f4cba9d77f207abf9f8>` :target:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>`;
 
 	// classes
 
@@ -228,7 +228,7 @@ namespace geode::detail
 	void :target:`copy_vertex_identifier_components<doxid-namespacegeode_1_1detail_1a6f174f356f0ce065d3155a7fd3e8084b>`(
 		const Model& from,
 		BuilderTo& builder_to,
-		const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping
+		const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping
 		);
 
 	} // namespace detail

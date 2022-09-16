@@ -33,9 +33,9 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 
 		// methods
 	
-		:ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>` :target:`copy<doxid-classgeode_1_1_b_rep_builder_1a553edd504dd2175ed5651e53c65f7fed>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
-		:ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>` :target:`copy_components<doxid-classgeode_1_1_b_rep_builder_1ab581eb1d2c677ea7ab77eaf954b52c25>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
-		void :target:`copy_component_geometry<doxid-classgeode_1_1_b_rep_builder_1aed5a8008cec019d6431f2781c8a3a5cb>`(const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping, const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+		:ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>` :target:`copy<doxid-classgeode_1_1_b_rep_builder_1a553edd504dd2175ed5651e53c65f7fed>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+		:ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>` :target:`copy_components<doxid-classgeode_1_1_b_rep_builder_1ab581eb1d2c677ea7ab77eaf954b52c25>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+		void :target:`copy_component_geometry<doxid-classgeode_1_1_b_rep_builder_1aed5a8008cec019d6431f2781c8a3a5cb>`(const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping, const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_b_rep_builder_1ade1b107ce2ac5c89c625614a4e44954b>`();
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_corner<doxid-classgeode_1_1_b_rep_builder_1ac3b039d63b9f4b0f14c8ed752dcc693d>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_line<doxid-classgeode_1_1_b_rep_builder_1a3a1a0133778bbe572172d8140debdf17>`();
@@ -161,7 +161,7 @@ Inherited Members
 		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
 	
 		void :ref:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(
-			const :ref:`ModelCopyMapping<doxid-classgeode_1_1_model_copy_mapping>`& mapping,
+			const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping,
 			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships
 			);
 	

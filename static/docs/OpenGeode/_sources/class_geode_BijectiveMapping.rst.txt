@@ -25,6 +25,7 @@ template class geode::BijectiveMapping
 		void :target:`reserve<doxid-classgeode_1_1_bijective_mapping_1a55f0e0f99b8e6f149670f5eb68fcbfa9>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` capacity);
 		bool :target:`has_mapping_input<doxid-classgeode_1_1_bijective_mapping_1aba709f5eba7cdb9ae39f4fde9d68dcc5>`(const T1& value) const;
 		bool :target:`has_mapping_output<doxid-classgeode_1_1_bijective_mapping_1a368f56cbd40a9c10ebdde2a6045daac7>`(const T2& value) const;
+		size_t :target:`size<doxid-classgeode_1_1_bijective_mapping_1af3c859927d66f9ef02b33d70dcc37188>`() const;
 		const T2& :target:`in2out<doxid-classgeode_1_1_bijective_mapping_1aaacb21eba813465669781c677187e614>`(const T1& in) const;
 		const T1& :target:`out2in<doxid-classgeode_1_1_bijective_mapping_1a4cdf9bef25ac40c4df9f932385398e3c>`(const T2& out) const;
 	};
