@@ -65,7 +65,7 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">);</span>
 
-<span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab041f799b2bec00fc0bb9530b0f44bc1"><span class="std std-ref">add_sharp_features</span></a><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelGenericMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab8639dfe33e5f30350fe42bbe9c404fb"><span class="std std-ref">add_sharp_features</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
     <span class="kt">double</span> <span class="n">max_angle</span>
     <span class="p">);</span>
@@ -148,7 +148,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab041f799b2bec00fc0bb9530b0f44bc1"><span id="index-5"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">add_sharp_features</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab8639dfe33e5f30350fe42bbe9c404fb"><span id="index-5"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelGenericMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">add_sharp_features</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
     <span class="kt">double</span> <span class="n">max_angle</span>
     <span class="p">)</span></pre>
@@ -164,7 +164,7 @@
 <td><p>Input brep</p></td>
 </tr>
 <tr class="row-even"><td><p>max_angle</p></td>
-<td><p>Angle between the facets normals (dihedral angle) above which they are considered a sharp feature.</p></td>
+<td><p>Dihedral angle between the facets under which their common edge is considered a sharp feature.</p></td>
 </tr>
 </tbody>
 </table>

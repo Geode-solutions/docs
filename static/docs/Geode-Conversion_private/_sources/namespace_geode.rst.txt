@@ -44,7 +44,7 @@ Overview
 		absl::string_view attribute_name
 		);
 
-	BRep geode_conversion_model_api :ref:`add_sharp_features<doxid-namespacegeode_1ab041f799b2bec00fc0bb9530b0f44bc1>`(
+	std::tuple<BRep, ModelGenericMapping> geode_conversion_model_api :ref:`add_sharp_features<doxid-namespacegeode_1ab8639dfe33e5f30350fe42bbe9c404fb>`(
 		const BRep& model,
 		double max_angle
 		);
@@ -171,12 +171,12 @@ Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribu
 		- Name of attribute stored on solid polyhedra @warn Attribute should be convertible to float.
 
 .. index:: pair: function; add_sharp_features
-.. _doxid-namespacegeode_1ab041f799b2bec00fc0bb9530b0f44bc1:
+.. _doxid-namespacegeode_1ab8639dfe33e5f30350fe42bbe9c404fb:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	BRep geode_conversion_model_api add_sharp_features(
+	std::tuple<BRep, ModelGenericMapping> geode_conversion_model_api add_sharp_features(
 		const BRep& model,
 		double max_angle
 		)
@@ -198,7 +198,7 @@ Creates a new BRep from the given one, with new lines on the sharp features of t
 	*
 		- max_angle
 
-		- Angle between the facets normals (dihedral angle) above which they are considered a sharp feature.
+		- Dihedral angle between the facets under which their common edge is considered a sharp feature.
 
 .. index:: pair: function; convert_surface_into_section_from_attribute
 .. _doxid-namespacegeode_1a4cd6697bea5e1468859e6c1d301eb324:
