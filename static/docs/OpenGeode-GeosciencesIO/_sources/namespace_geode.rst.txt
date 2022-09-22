@@ -7,8 +7,6 @@ namespace geode
 .. toctree::
 	:hidden:
 
-	namespace_geode_detail.rst
-
 
 
 
@@ -18,8 +16,11 @@ namespace geode
 	
 	namespace geode {
 
-	// namespaces
+	// global functions
 
-	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a5242e3b349b31d91db43e66a71b16551>`(
+		opengeode_geosciencesio_geosciences_api,
+		OpenGeodeGeosciencesIOGeosciences
+		);
 
 	} // namespace geode
