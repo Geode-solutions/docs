@@ -61,7 +61,8 @@ Overview
 	#define :target:`OPENGEODE_DISABLE_COPY_AND_MOVE<doxid-basic_2common_8h_1a66abbbb0a8f40eedddd74febbb7b63ca>`(Class)
 	#define :target:`OPENGEODE_DISABLE_MOVE<doxid-basic_2common_8h_1a5b0dcfe243f2f27983090f3a248d853e>`(Class)
 	#define :target:`OPENGEODE_EXCEPTION<doxid-assert_8h_1a7cb606fee329d2bcd1f7e37a508ff63b>`(condition, ...)
-	#define :ref:`OPENGEODE_LIBRARY_INITIALIZE<doxid-basic_2common_8h_1a0f3d08920a6e633fd2c203210bd5e9e8>`(library_name)
+	#define :ref:`OPENGEODE_LIBRARY<doxid-library_8h_1a696a3a37a69e36d278e3da6d15f99794>`(export_api, library_name)
+	#define :ref:`OPENGEODE_LIBRARY_IMPLEMENTATION<doxid-library_8h_1a51b67601a35f38c83cbfb7e8c7016f7a>`(library_name)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_2D_OR_3D<doxid-basic_2common_8h_1a1fe9b7e669f40054b322ec0969b00812>`(type)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_3D<doxid-basic_2common_8h_1a37f476a50bc1a84e160210b7c02bf10c>`(type)
 	#define :target:`PASSKEY<doxid-passkey_8h_1a973202197910e3ca8fca51d61235cd9b>`(Friend, Key)
@@ -78,13 +79,23 @@ Detailed Documentation
 Macros
 ------
 
-.. index:: pair: define; OPENGEODE_LIBRARY_INITIALIZE
-.. _doxid-basic_2common_8h_1a0f3d08920a6e633fd2c203210bd5e9e8:
+.. index:: pair: define; OPENGEODE_LIBRARY
+.. _doxid-library_8h_1a696a3a37a69e36d278e3da6d15f99794:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	#define OPENGEODE_LIBRARY_INITIALIZE(library_name)
+	#define OPENGEODE_LIBRARY(export_api, library_name)
 
-Use this macro to initialize an OpenGeode library and execute some functions at library loading.
+Use this macro to declare an OpenGeode library in a header file (usually common.h)
+
+.. index:: pair: define; OPENGEODE_LIBRARY_IMPLEMENTATION
+.. _doxid-library_8h_1a51b67601a35f38c83cbfb7e8c7016f7a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	#define OPENGEODE_LIBRARY_IMPLEMENTATION(library_name)
+
+Use this macro to implement an OpenGeode library in a cpp file (usually common.cpp) and call all functions that need to be initialized.
 

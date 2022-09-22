@@ -1,0 +1,11 @@
+.. index:: pair: class; geode::Library
+.. _doxid-classgeode_1_1_library:
+
+class geode::Library
+====================
+
+.. toctree::
+	:hidden:
+
+
+
