@@ -111,6 +111,11 @@ Overview
 
 	// global functions
 
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ab82bf49dec35bfcf1fab0c43b154a330>`(
+		opengeode_geosciences_geosciences_api,
+		OpenGeodeGeosciencesGeosciences
+		);
+
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa1b34122cda2b0187ae32fc8009ca448>`(:ref:`FaultBlock<doxid-classgeode_1_1_fault_block>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a5684061c0d55912a4bcf9649dbb224db>`(:ref:`FaultBlocks<doxid-classgeode_1_1_fault_blocks>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a280a21f5fe532b72c465f504fb1b0152>`(:ref:`FaultBlocksBuilder<doxid-classgeode_1_1_fault_blocks_builder>`);
