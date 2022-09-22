@@ -28,7 +28,7 @@ Overview
 		// methods
 	
 		void :target:`select_curve_to_insert<doxid-classgeode_1_1_explicit_modeler2_d_1ace94e454d49b53f4d451daa7eb62fe14>`(const EdgedCurve2D& mesh);
-		std::tuple<Section, :ref:`SectionComponentMappings<doxid-structgeode_1_1_section_component_mappings>`> :ref:`insert_and_build<doxid-classgeode_1_1_explicit_modeler2_d_1aaa29096cc6ae48cf590506818a49b314>`();
+		std::tuple<Section, ModelGenericMapping> :ref:`insert_and_build<doxid-classgeode_1_1_explicit_modeler2_d_1af6a9025bf12c8aeebbdf7b3bdf5a6b01>`();
 	};
 .. _details-classgeode_1_1_explicit_modeler2_d:
 
@@ -41,12 +41,12 @@ Methods
 -------
 
 .. index:: pair: function; insert_and_build
-.. _doxid-classgeode_1_1_explicit_modeler2_d_1aaa29096cc6ae48cf590506818a49b314:
+.. _doxid-classgeode_1_1_explicit_modeler2_d_1af6a9025bf12c8aeebbdf7b3bdf5a6b01:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<Section, :ref:`SectionComponentMappings<doxid-structgeode_1_1_section_component_mappings>`> insert_and_build()
+	std::tuple<Section, ModelGenericMapping> insert_and_build()
 
 Returns the Merged Section including all the added curves and gives the "input to output" and "output to input" mappings between Lines
 
