@@ -141,6 +141,11 @@ namespace geode
 
 	// global functions
 
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a83958921c793828f9a5467a1f44ead8d>`(
+		opengeode_inspector_inspector_api,
+		OpenGeodeInspectorInspector
+		);
+
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ad0962685e631af46c26463cf5ea5428b>`(:ref:`SolidMeshAdjacency<doxid-classgeode_1_1_solid_mesh_adjacency>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
