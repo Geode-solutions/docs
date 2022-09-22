@@ -52,7 +52,8 @@ namespace geode
 	struct_geode_SurfacePath.rst
 	class_geode_BRepGeometricModifier.rst
 	class_geode_EdgedCurveModifier.rst
-	class_geode_LicensedModule.rst
+	class_geode_FileLicenseChecker.rst
+	class_geode_ModuleLicenseChecker.rst
 	class_geode_SectionGeometricModifier.rst
 	class_geode_SolidPathFinder.rst
 	class_geode_SurfacePathFinder.rst
@@ -84,6 +85,7 @@ Overview
 
 	typedef std::pair<:ref:`EdgeMapping<doxid-namespacegeode_1ae9864a98f4db0737bb05ca34835a671f>`, bool> :target:`OrientedEdgeMapping<doxid-namespacegeode_1a54b0871837c233adb2d5b88a496cdd7a>`;
 	typedef std::pair<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a940546afc1c9ff9d7a0285a1377285c5>`, bool> :target:`OrientedEdgeMultiMapping<doxid-namespacegeode_1a1bab4ec7e9ccefea836c5553826d6d3b>`;
+	typedef :ref:`ModuleLicenseChecker<doxid-classgeode_1_1_module_license_checker>`<Common> :target:`CommonLicenseChecker<doxid-namespacegeode_1afae082621c1328dae00d84e99da7e9ed>`;
 	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`VertexMapping<doxid-namespacegeode_1a3df0f1612915133946450acb704655b8>`;
 	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`EdgeMapping<doxid-namespacegeode_1ae9864a98f4db0737bb05ca34835a671f>`;
 	typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t> :target:`FacetMapping<doxid-namespacegeode_1a0fe3791ddb7ee08d858458346d5f1367>`;
@@ -171,7 +173,11 @@ Overview
 	template <index_t dimension>
 	class :ref:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier>`;
 
-	class :ref:`LicensedModule<doxid-classgeode_1_1_licensed_module>`;
+	class :ref:`FileLicenseChecker<doxid-classgeode_1_1_file_license_checker>`;
+
+	template <const char* name>
+	class :ref:`ModuleLicenseChecker<doxid-classgeode_1_1_module_license_checker>`;
+
 	class :ref:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier>`;
 	class :ref:`SolidPathFinder<doxid-classgeode_1_1_solid_path_finder>`;
 
@@ -193,10 +199,14 @@ Overview
 
 	class :ref:`VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`;
 
+	// global variables
+
+	static constexpr char :target:`Common<doxid-namespacegeode_1abd624419c33a1b81e85404ea231a0406>`[] = "Common";
+
 	// global functions
 
-	void geode_common_core_api :target:`initialize_common_core<doxid-namespacegeode_1ad4f10777dddbda52723e94f7296c94b1>`();
-	void geode_common_cutter_solid_api :target:`initialize_cutter_solid<doxid-namespacegeode_1a3d2ffecdc8e22361a688f058b4374a46>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ad1dda6606b61207b70696cadfc1e8c98>`(geode_common_core_api, CommonCore);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a7e20432e19e00a3bd1850eee20d236c3>`(geode_common_cutter_solid_api, CommonCutterSolid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ae9dc6097b7f8cfa25fc265176e3c5aa9>`(TetrahedralSolidBuilder);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
@@ -235,7 +245,7 @@ Overview
 		index_t end
 		);
 
-	void geode_common_cutter_surface_api :target:`initialize_cutter_surface<doxid-namespacegeode_1aca8984bbdbafc24b674832791b57573b>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a5e137475587bb980db47ebc1c85430b1>`(geode_common_cutter_surface_api, CommonCutterSurface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac5ecef06abef60896357a8eb77586520>`(TriangulatedSurface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a5f77df444726f93a1df8e868ba125aa3>`(TriangulatedSurfaceBuilder);
 
@@ -273,6 +283,7 @@ Overview
 		);
 
 	:target:`ALIAS_2D<doxid-namespacegeode_1a504bb34b6ea51d563984b00589d5001d>`(TriangulatedSurface);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1aef14991cbf3e087f0360c30d1ea9194b>`(geode_common_modifier_common_api, CommonModifierCommon);
 	absl::FixedArray<:ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t>> geode_common_modifier_common_api :target:`extract_mappings_from_split_info<doxid-namespacegeode_1af2e70f64eee004f3002873a2f84d9220>`(absl::Span<const :ref:`SplitInfo<doxid-structgeode_1_1_split_info>`> split_info);
 
 	void geode_common_modifier_common_api :target:`update_vertex_mappings<doxid-namespacegeode_1abfbfa86c7bc2c9742c4c95e2e1e1b1bd>`(
@@ -321,7 +332,11 @@ Overview
 		const T& no_value
 		);
 
-	void geode_common_modifier_edged_curve_api :target:`initialize_modifier_edged_curve<doxid-namespacegeode_1adface64b1fe591fb1470d875e00906a5>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1abfd9c8984c1574e300deb8e5ca3ddcf4>`(
+		geode_common_modifier_edged_curve_api,
+		CommonModifierEdgedCurve
+		);
+
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abca05657b8eb6a446c79a4e841068fcf>`(EdgedCurveBuilder);
@@ -388,7 +403,7 @@ Overview
 		const Point3D& point
 		);
 
-	void geode_common_modifier_model_api :target:`initialize_modifier_model<doxid-namespacegeode_1a6566ef2173a01c0dd2eae7f558bbbd33>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a60bc4102ba1f8bc955e2d5c99bb03828>`(geode_common_modifier_model_api, CommonModifierModel);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(Line);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(Surface);
@@ -433,7 +448,7 @@ Overview
 		const Point2D& point
 		);
 
-	void geode_common_modifier_solid_api :target:`initialize_modifier_solid<doxid-namespacegeode_1aca1037c51008da68e1286546ecb8a4cb>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ac5452e2e9a1ad6be6347cc95471815a8>`(geode_common_modifier_solid_api, CommonModifierSolid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
 
 	bool geode_common_modifier_solid_api :ref:`is_split_tetrahedron_valid<doxid-namespacegeode_1afc0b8a8e317fbc02d3c18de4c2486d41>`(
@@ -554,7 +569,7 @@ Overview
 		const Point3D& point
 		);
 
-	void geode_common_modifier_surface_api :target:`initialize_modifier_surface<doxid-namespacegeode_1ae501c95d009522882c623f08458b10d6>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a689e425aa333c1a0dc9feac747284915>`(geode_common_modifier_surface_api, CommonModifierSurface);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a4b6e0eef43419c522c8afdef30e0c045>`(TriangulatedSurfaceBuilder);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1cd4849bc62b1ce5604ec265c2a12ce4>`(:ref:`TriangulatedSurfaceEpsilonModifier<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier>`);

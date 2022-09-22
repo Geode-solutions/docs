@@ -21,7 +21,3 @@ Global Namespace
 	namespace :ref:`geode<doxid-namespacegeode>`;
 		namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
 
-	// macros
-
-	#define :target:`OPENGEODE_LICENSED_LIBRARY_INITIALIZE<doxid-core_2common_8h_1a3ad8180ee4deebf1b32a08b96628b42c>`(library_name)
-

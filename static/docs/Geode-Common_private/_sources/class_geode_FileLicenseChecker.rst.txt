@@ -1,0 +1,26 @@
+.. index:: pair: class; geode::FileLicenseChecker
+.. _doxid-classgeode_1_1_file_license_checker:
+
+class geode::FileLicenseChecker
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <file_license_checker.h>
+	
+	class FileLicenseChecker
+	{
+	public:
+	};
+
+	// direct descendants
+
+	template <const char* name>
+	class :ref:`ModuleLicenseChecker<doxid-classgeode_1_1_module_license_checker>`;
