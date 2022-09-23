@@ -48,6 +48,7 @@
 
 <span class="c1">// typedefs</span>
 
+<span class="k">typedef</span> <span class="n">ModuleLicenseChecker</span><span class="o">&lt;</span><span class="n">ImplicitModeling</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aff0652df20546628e2806b5a4653122e"><span></span><span class="n">ImplicitModelingLicenseChecker</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_ImplicitCrossSectionInput.html#doxid-classgeode-1-1-implicit-cross-section-input"><span class="std std-ref">ImplicitCrossSectionInput</span></a><span></span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1bef0ef0cbfc9e11e41584046f0bcdea"><span></span><span class="n">ImplicitCrossSectionInputFactory</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_ImplicitCrossSectionOutput.html#doxid-classgeode-1-1-implicit-cross-section-output"><span class="std std-ref">ImplicitCrossSectionOutput</span></a><span></span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a781be7141886b86a1a073566c1b21f97"><span></span><span class="n">ImplicitCrossSectionOutputFactory</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_ImplicitStructuralModelInput.html#doxid-classgeode-1-1-implicit-structural-model-input"><span class="std std-ref">ImplicitStructuralModelInput</span></a><span></span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af5f57250e7d05e0a4f1ab9141ff324c3"><span></span><span class="n">ImplicitStructuralModelInputFactory</span></span><span></span><span class="p">;</span>
@@ -75,9 +76,15 @@
 <span class="c1">// global variables</span>
 
 <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3a122de16a91abf72199f1c757746ba9"><span></span><span class="n">imported_3d_stratigraphic_attribute_name</span></span><span></span> <span class="o">=</span>         <span class="s">&quot;geode_3d_stratigraphy&quot;</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a57efd788a819f0f1f693fbde1b87c897"><span></span><span class="n">ImplicitModeling</span></span><span></span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;ImplicitModeling&quot;</span><span class="p">;</span>
 <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9f2488ddd4fddba717312ab55a1601a8"><span></span><span class="n">stratigraphic_line_polygon_edge_attribute_name</span></span><span></span> <span class="o">=</span>         <span class="s">&quot;geode_associated_surface_polygon_edge&quot;</span><span class="p">;</span>
 
 <span class="c1">// global functions</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a85c3f8462537d0e1524e22ccedb90e7e"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
+    <span class="n">geode_implicitmodeling_explicitation_api</span><span class="p">,</span>
+    <span class="n">ImplicitModelingExplicitation</span>
+    <span class="p">);</span>
 
 <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span> <span class="n">geode_implicitmodeling_explicitation_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aee4387c87e1a4bf89546ec1ea1d93ac3"><span></span><span class="n">extract_implicit_cross_section_from_axis</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
@@ -92,14 +99,28 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a701f6897a4e87db11377f9081ccaa3cf"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b691d4711522d638d7d8f1b087e597a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a80b5a064401aa01835668d57032444e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad9caeeb23561419f7db1dec1fb948382"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
+    <span class="n">geode_implicitmodeling_implicitation_api</span><span class="p">,</span>
+    <span class="n">ImplicitModelingImplicitation</span>
+    <span class="p">);</span>
+
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a48dc7dc04a72af2e68092c3d4b4696ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">BoundingBox</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a88e7373e2780b9968a6fddc59703bcf9"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">DataConstraintManager</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa40ec52a1aa919899a089ac5e5a8640c"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridScalarFunctionComputer.html#doxid-classgeode-1-1-regular-grid-scalar-function-computer"><span class="std std-ref">RegularGridScalarFunctionComputer</span></a><span></span><span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca95c59226fe320bab09335963ee509e"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
+    <span class="n">geode_implicitmodeling_insertion_api</span><span class="p">,</span>
+    <span class="n">ImplicitModelingInsertion</span>
+    <span class="p">);</span>
+
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aae4bea6f137a47558d5d46c1f90525b8"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2ffd3144b24323e1843b6ecd22500dfc"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_implicitmodeling_io_api</span><span class="p">,</span> <span class="n">ImplicitModelingIO</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4bd02aabaf2cf4d25e7f1471d6f5f682"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3dfa90e12c4f46df6d4d4c73cc499ab6"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5e8e5828532178b105e3b6488c12277c"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_implicitmodeling_model_api</span><span class="p">,</span> <span class="n">ImplicitModelingModel</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af40a127c86216f0ba2c8d1276fe61644"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 

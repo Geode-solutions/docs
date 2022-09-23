@@ -28,7 +28,7 @@ Overview
 		// methods
 	
 		void :target:`select_stratigraphic_curve_to_insert<doxid-classgeode_1_1_implicit_cross_section_inserter_1a7d3f350e9fc39b82995baf86758392ef>`(const EdgedCurve2D& curve);
-		std::tuple<Section, SectionComponentMappings> :ref:`insert_and_build<doxid-classgeode_1_1_implicit_cross_section_inserter_1a2d743b52944314299096972de087d3ac>`();
+		std::tuple<Section, ModelGenericMapping> :ref:`insert_and_build<doxid-classgeode_1_1_implicit_cross_section_inserter_1a8f1dad8eef280904fe5d0f0c8535b55b>`();
 	};
 .. _details-classgeode_1_1_implicit_cross_section_inserter:
 
@@ -41,12 +41,12 @@ Methods
 -------
 
 .. index:: pair: function; insert_and_build
-.. _doxid-classgeode_1_1_implicit_cross_section_inserter_1a2d743b52944314299096972de087d3ac:
+.. _doxid-classgeode_1_1_implicit_cross_section_inserter_1a8f1dad8eef280904fe5d0f0c8535b55b:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<Section, SectionComponentMappings> insert_and_build()
+	std::tuple<Section, ModelGenericMapping> insert_and_build()
 
 Returns the Merged Section including all the added curves and gives the "input to output" and "output to input" mappings between Lines
 

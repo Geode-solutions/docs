@@ -24,8 +24,4 @@ namespace geode::detail
 	class :ref:`ImplicitLSOInput<doxid-classgeode_1_1detail_1_1_implicit_l_s_o_input>`;
 	class :ref:`ScalarFunctionExpliciter3DImpl<doxid-classgeode_1_1detail_1_1_scalar_function_expliciter3_d_impl>`;
 
-	// global functions
-
-	void geode_implicitmodeling_io_api :target:`initialize_implicitmodeling_io<doxid-namespacegeode_1_1detail_1a2ba61108fef892f2fa21a54f5e4b53cd>`();
-
 	} // namespace detail
