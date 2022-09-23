@@ -25,9 +25,18 @@ Overview
 
 	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
 
+	// typedefs
+
+	typedef ModuleLicenseChecker<Conversion> :target:`ConversionLicenseChecker<doxid-namespacegeode_1aefa3e912a2ba332b4c87206d124e8d3e>`;
+
+	// global variables
+
+	static constexpr char :target:`Conversion<doxid-namespacegeode_1ad1f4f315c04552ffca405b2d61f83a6f>`[] = "Conversion";
+
 	// global functions
 
 	void geode_conversion_model_api :target:`build_blocks<doxid-namespacegeode_1af824d8001dd7c0a95398f4811ac40d32>`(BRep& brep);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a0508a634edded691d15457985d1bfd10>`(geode_conversion_model_api, ConversionModel);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
