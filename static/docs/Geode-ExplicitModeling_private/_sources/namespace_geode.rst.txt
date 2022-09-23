@@ -19,20 +19,31 @@ namespace geode
 	
 	namespace geode {
 
+	// typedefs
+
+	typedef ModuleLicenseChecker<ExplicitModeling> :target:`ExplicitModelingLicenseChecker<doxid-namespacegeode_1aa226f835654495ee219fc3d44f52e389>`;
+
 	// classes
 
 	class :ref:`ExplicitModeler2D<doxid-classgeode_1_1_explicit_modeler2_d>`;
 	class :ref:`ExplicitModeler3D<doxid-classgeode_1_1_explicit_modeler3_d>`;
 
+	// global variables
+
+	static constexpr char :target:`ExplicitModeling<doxid-namespacegeode_1a00119fd4f53411190cd063abe912f221>`[] = "ExplicitModeling";
+
 	// global functions
 
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a183c64da842154f158c4ee8c1368a159>`(geode_explicitmodeling_2d_api, ExplicitModeling2d);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(BoundingBox);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a138f53359f6b0ed97828265b627ab688>`(BoundingBox);
 	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a3cde333630eb0eee3a923c5fd26f803f>`(geode_explicitmodeling_3d_api, ExplicitModeling3d);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(BoundingBox);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a54e944001fbf2a3a55a8887bd1f6c120>`(geode_explicitmodeling_common_api, ExplicitModelingCommon);
 
 	} // namespace geode
