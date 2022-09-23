@@ -23,6 +23,10 @@ namespace geode
 	
 	namespace geode {
 
+	// typedefs
+
+	typedef ModuleLicenseChecker<SimplexRemesh> :target:`SimplexRemeshLicenseChecker<doxid-namespacegeode_1a6c8476bd8b2cfd844f1376d32811e38b>`;
+
 	// classes
 
 	class :ref:`BRepGridMetric<doxid-classgeode_1_1_b_rep_grid_metric>`;
@@ -39,8 +43,13 @@ namespace geode
 
 	class :ref:`SectionMetricConstraints<doxid-classgeode_1_1_section_metric_constraints>`;
 
+	// global variables
+
+	static constexpr char :target:`SimplexRemesh<doxid-namespacegeode_1a4ae2cba03040862b66992ea52cd7c460>`[] = "SimplexRemesh";
+
 	// global functions
 
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a60fd110e46119896357452df79211e6f>`(geode_simplexremesh_brep_api, SimplexRemeshBRep);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a65b92e04719b22bc521e1f2e664d44e4>`(:ref:`Metric<doxid-classgeode_1_1_metric>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac93b93bd0a1e54b0ffb54f588b46dce9>`(:ref:`Metric<doxid-classgeode_1_1_metric>`);
 	void geode_simplexremesh_brep_api :target:`mesh<doxid-namespacegeode_1ac05192efec02fb0ddc2c7ba5e2597944>`(BRep& brep, const Metric3D& metric);
@@ -60,6 +69,7 @@ namespace geode
 	:target:`ALIAS_3D<doxid-namespacegeode_1a00d59edb267adf404ca6e1ee957187be>`(Corner);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(Surface);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1adbb92314d98a39ec341c93260832bea0>`(geode_simplexremesh_metric_api, SimplexRemeshMetric);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae6e689ab449ad55fffa309d356c002a0>`(:ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
@@ -73,6 +83,7 @@ namespace geode
 	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(Line);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a7da074eb0c591f0688ceeb11edd1fc9b>`(:ref:`Metric<doxid-classgeode_1_1_metric>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(Surface);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1af6228543229a69492ab6ffeba1e1c1e6>`(geode_simplexremesh_section_api, SimplexRemeshSection);
 
 	std::tuple<Section, ModelCopyMapping> geode_simplexremesh_section_api :target:`remesh<doxid-namespacegeode_1ac00a2a574952aaffe6f0a16840b26db1>`(
 		const Section& section,
