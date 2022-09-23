@@ -39,7 +39,20 @@
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">geode</span> <span class="p">{</span>
 
+<span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="n">ModuleLicenseChecker</span><span class="o">&lt;</span><span class="n">SimplexRemeshGeosciences</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae979419f55675565293820b4e22b33a0"><span></span><span class="n">SimplexRemeshGeosciencesLicenseChecker</span></span><span></span><span class="p">;</span>
+
+<span class="c1">// global variables</span>
+
+<span class="k">static</span> <span class="k">constexpr</span> <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a519bd82544df296ffb4fbcfd65875ec0"><span></span><span class="n">SimplexRemeshGeosciences</span></span><span></span><span class="p">[]</span> <span class="o">=</span>         <span class="s">&quot;SimplexRemeshGeosciences&quot;</span><span class="p">;</span>
+
 <span class="c1">// global functions</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6616ca86a84597adf6ce38d289d61291"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
+    <span class="n">geode_simplexremeshgeosciences_cross_section_api</span><span class="p">,</span>
+    <span class="n">SimplexRemeshGeosciencesCrossSection</span>
+    <span class="p">);</span>
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a65b92e04719b22bc521e1f2e664d44e4"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Metric</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7da074eb0c591f0688ceeb11edd1fc9b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Metric</span><span class="p">);</span>
@@ -47,6 +60,11 @@
 <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">CrossSection</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplexremeshgeosciences_cross_section_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afaa3902bf5a4e424c31cfb5fe5092b08"><span></span><span class="n">remesh</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">CrossSection</span><span class="o">&amp;</span> <span class="n">cross_section</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Metric2D</span><span class="o">&amp;</span> <span class="n">metric</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7189f04a1af69021067f774328515de1"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
+    <span class="n">geode_simplexremeshgeosciences_structural_model_api</span><span class="p">,</span>
+    <span class="n">SimplexRemeshGeosciencesStructuralModel</span>
     <span class="p">);</span>
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac93b93bd0a1e54b0ffb54f588b46dce9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Metric</span><span class="p">);</span>
