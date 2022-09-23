@@ -44,6 +44,7 @@
 
 <span class="c1">// typedefs</span>
 
+<span class="k">typedef</span> <span class="n">ModuleLicenseChecker</span><span class="o">&lt;</span><span class="n">Parameterization</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8c32caa63fe421fa4a2d9d0b7dfe4d6a"><span></span><span class="n">ParameterizationLicenseChecker</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><a class="reference internal" href="enum_geode_RegularGridScalarFunctionComputerType.html#doxid-namespacegeode-1ab6e81137e19b621f3b87d744bd61fce0"><span class="std std-ref">RegularGridScalarFunctionComputerType</span></a><span></span><span class="p">,</span> <a class="reference internal" href="class_geode_RegularGridDerivativesMinimization.html#doxid-classgeode-1-1-regular-grid-derivatives-minimization"><span class="std std-ref">RegularGridDerivativesMinimization</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9a38f80eab58a5266521c9dd9ba2a1e4"><span></span><span class="n">RegularGridDerivativesMinimizationFactory</span></span><span></span><span class="p">;</span>
 
 <span class="c1">// enums</span>
@@ -88,7 +89,16 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridFDMLaplacianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-laplacian-minimization"><span class="std std-ref">RegularGridFDMLaplacianMinimization</span></a><span></span><span class="p">;</span>
 
+<span class="c1">// global variables</span>
+
+<span class="k">static</span> <span class="k">constexpr</span> <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aabd4b2861eac6055c6aee85dba528554"><span></span><span class="n">Parameterization</span></span><span></span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;Parameterization&quot;</span><span class="p">;</span>
+
 <span class="c1">// global functions</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6353fd45c68ff43c60e6a0752149aa3f"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
+    <span class="n">geode_parameterization_frame_field_api</span><span class="p">,</span>
+    <span class="n">ParameterizationFrameField</span>
+    <span class="p">);</span>
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac3422b630458dde4bc69498508c56e4e"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
@@ -105,6 +115,12 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a39e77d985d0ff03e0a12e0b0d0106a11"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">PolygonalSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1e631365afa91db8a83b01da36eb4ea8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_FrameTransform.html#doxid-classgeode-1-1-frame-transform"><span class="std std-ref">FrameTransform</span></a><span></span><span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa334a43dec97966f580f83cbd46195fd"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
+    <span class="n">geode_parameterization_scalar_function_api</span><span class="p">,</span>
+    <span class="n">ParameterizationScalarFunction</span>
+    <span class="p">);</span>
+
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a99e0e31c7cdbe87f1a2accf5d11b05fe"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca4385eb3d676a070003e6270f6472ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a88e7373e2780b9968a6fddc59703bcf9"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_DataConstraintManager.html#doxid-classgeode-1-1-data-constraint-manager"><span class="std std-ref">DataConstraintManager</span></a><span></span><span class="p">);</span>
@@ -125,6 +141,7 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abf5a5a87400584a24e8f0d511c307f6c"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a9a38f80eab58a5266521c9dd9ba2a1e4"><span class="std std-ref">RegularGridDerivativesMinimizationFactory</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9bf540386f2e72c1fb5fd912e8e149d8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridFDMHessianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-hessian-minimization"><span class="std std-ref">RegularGridFDMHessianMinimization</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a07e0283991d6dc72041312468a44f002"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridFDMLaplacianMinimization.html#doxid-classgeode-1-1-regular-grid-f-d-m-laplacian-minimization"><span class="std std-ref">RegularGridFDMLaplacianMinimization</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a32fcea64b0d990f8fcb2086d18d85b4a"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_parameterization_surface_api</span><span class="p">,</span> <span class="n">ParameterizationSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac5ecef06abef60896357a8eb77586520"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 

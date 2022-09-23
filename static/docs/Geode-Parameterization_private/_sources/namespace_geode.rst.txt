@@ -37,6 +37,7 @@ Overview
 
 	// typedefs
 
+	typedef ModuleLicenseChecker<Parameterization> :target:`ParameterizationLicenseChecker<doxid-namespacegeode_1a8c32caa63fe421fa4a2d9d0b7dfe4d6a>`;
 	typedef Factory<:ref:`RegularGridScalarFunctionComputerType<doxid-namespacegeode_1ab6e81137e19b621f3b87d744bd61fce0>`, :ref:`RegularGridDerivativesMinimization<doxid-classgeode_1_1_regular_grid_derivatives_minimization>`<dimension>, const RegularGrid<dimension>&, const :ref:`DataConstraintManager<doxid-classgeode_1_1_data_constraint_manager>`<dimension>&> :target:`RegularGridDerivativesMinimizationFactory<doxid-namespacegeode_1a9a38f80eab58a5266521c9dd9ba2a1e4>`;
 
 	// enums
@@ -81,7 +82,16 @@ Overview
 	template <index_t dimension>
 	class :ref:`RegularGridFDMLaplacianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_laplacian_minimization>`;
 
+	// global variables
+
+	static constexpr char :target:`Parameterization<doxid-namespacegeode_1aabd4b2861eac6055c6aee85dba528554>`[] = "Parameterization";
+
 	// global functions
+
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a6353fd45c68ff43c60e6a0752149aa3f>`(
+		geode_parameterization_frame_field_api,
+		ParameterizationFrameField
+		);
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);
@@ -98,6 +108,12 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a39e77d985d0ff03e0a12e0b0d0106a11>`(PolygonalSurface);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1e631365afa91db8a83b01da36eb4ea8>`(:ref:`FrameTransform<doxid-classgeode_1_1_frame_transform>`);
+
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1aa334a43dec97966f580f83cbd46195fd>`(
+		geode_parameterization_scalar_function_api,
+		ParameterizationScalarFunction
+		);
+
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a99e0e31c7cdbe87f1a2accf5d11b05fe>`(:ref:`DataConstraintManager<doxid-classgeode_1_1_data_constraint_manager>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a88e7373e2780b9968a6fddc59703bcf9>`(:ref:`DataConstraintManager<doxid-classgeode_1_1_data_constraint_manager>`);
@@ -118,6 +134,7 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abf5a5a87400584a24e8f0d511c307f6c>`(:ref:`RegularGridDerivativesMinimizationFactory<doxid-namespacegeode_1a9a38f80eab58a5266521c9dd9ba2a1e4>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9bf540386f2e72c1fb5fd912e8e149d8>`(:ref:`RegularGridFDMHessianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_hessian_minimization>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a07e0283991d6dc72041312468a44f002>`(:ref:`RegularGridFDMLaplacianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_laplacian_minimization>`);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a32fcea64b0d990f8fcb2086d18d85b4a>`(geode_parameterization_surface_api, ParameterizationSurface);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac5ecef06abef60896357a8eb77586520>`(TriangulatedSurface);
 
