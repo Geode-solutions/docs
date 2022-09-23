@@ -21,15 +21,20 @@ namespace geode
 	// typedefs
 
 	typedef absl::InlinedVector<index_t, 10> :target:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`;
+	typedef ModuleLicenseChecker<BackgroundMesh> :target:`BackgroundMeshLicenseChecker<doxid-namespacegeode_1aa39abd44d264fd60bd7c6ed963d177cd>`;
 
 	// structs
 
 	struct :ref:`SectionComponentMappings<doxid-structgeode_1_1_section_component_mappings>`;
 
+	// global variables
+
+	static constexpr char :target:`BackgroundMesh<doxid-namespacegeode_1a2af0c3333a25eff6e062e3554151bbb5>`[] = "BackgroundMesh";
+
 	// global functions
 
-	void geode_backgroundmesh_2d_api :target:`initialize_background_mesh2D<doxid-namespacegeode_1aba58e0634a466e3d49b476096b15c238>`();
-	void geode_backgroundmesh_3d_api :target:`initialize_background_mesh3D<doxid-namespacegeode_1a461ace28bf32de9bfead3fbff9edd368>`();
-	void geode_backgroundmesh_common_api :target:`initialize_background_mesh_common<doxid-namespacegeode_1ac19bd4b68312a7d6bc88ace7bcb4146b>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1acda2fa9d151693f16d42c33b492eae85>`(geode_backgroundmesh_2d_api, BackgroundMesh2d);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ac2d26fd23a6ae409a54c81db1a1d4868>`(geode_backgroundmesh_3d_api, BackgroundMesh3d);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a611f15fc634d90bfde21ea79b98286a1>`(geode_backgroundmesh_common_api, BackgroundMeshCommon);
 
 	} // namespace geode
