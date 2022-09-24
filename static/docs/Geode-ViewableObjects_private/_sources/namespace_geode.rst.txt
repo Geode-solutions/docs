@@ -16,8 +16,17 @@ namespace geode
 	
 	namespace geode {
 
+	// typedefs
+
+	typedef ModuleLicenseChecker<ViewableObjects> :target:`ViewableObjectsLicenseChecker<doxid-namespacegeode_1a3c3e41d7ba56cb7d058fc0778c68d089>`;
+
+	// global variables
+
+	static constexpr char :target:`ViewableObjects<doxid-namespacegeode_1a0709375d14717bafc3fb0f081842dbf9>`[] = "ViewableObjects";
+
 	// global functions
 
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a4ecf6fa216cde1cec2b7f5067b9a305e>`(geode_viewableobjects_qem_proxy_api, ViewableObjectsQEMProxy);
 	bool geode_viewableobjects_qem_proxy_api :target:`simplify<doxid-namespacegeode_1abee83a62e8f878996b46484d71332508>`(geode::TriangulatedSurface3D& mesh);
 
 	} // namespace geode
