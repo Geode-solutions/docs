@@ -29,7 +29,9 @@ template class geode::detail::CornersLinesBuilder
 		void :target:`add_corner<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ae98c2c08224652ad1451876302ef395d>`(index_t vertex);
 		absl::optional<index_t> :target:`wireframe_edge_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a1766a514c8d3bb6cf9545dfd767a1a5d>`(const std::array<index_t, 2>& edge_vertices) const;
 		index_t :target:`vertex_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a3bcf6596f44dcb39e767d2a60c6bc4ee>`(index_t vertex) const;
-		const uuid& :target:`line_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ad9f7728de626a5a4545848fd7332fa28>`(index_t edge) const;
+		const uuid& :target:`line_uuid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1abfcc27a990ac2eaca491679a0a4589c2>`(index_t edge) const;
+		index_t :target:`line_edge_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a8d43e7ccf485a27db31c3c522b87c184>`(index_t edge) const;
+		index_t :target:`line_vertex_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a30d49951e02cdaf92794be5f878fec16>`(index_t vertex, const uuid& output_line_uuid) const;
 	};
 
 	// direct descendants
