@@ -29,8 +29,12 @@ namespace geode
 	struct_geode_GenericAttributeConversion-2.rst
 	struct_geode_IntersectionResult.rst
 	struct_geode_LineDefinition.rst
+	struct_geode_MeshEdge.rst
+	struct_geode_MeshElement.rst
 	struct_geode_MeshImplTag.rst
+	struct_geode_MeshPolygon.rst
 	struct_geode_MeshTypeTag.rst
+	struct_geode_MeshVertex.rst
 	struct_geode_ModelComponentMeshEdges.rst
 	struct_geode_PolygonEdge.rst
 	struct_geode_PolygonVertex.rst
@@ -343,11 +347,11 @@ Overview
 
 	struct :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`;
 
-	template <typename AttributeType>
-	struct :ref:`AttributeLinearInterpolationImpl<doxid-structgeode_1_1_attribute_linear_interpolation_impl>`;
-
 	template <index_t dimension>
 	struct :ref:`AttributeLinearInterpolationImpl<Point<dimension>><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_point_3_01dimension_01_4_01_4>`;
+
+	template <typename AttributeType>
+	struct :ref:`AttributeLinearInterpolationImpl<doxid-structgeode_1_1_attribute_linear_interpolation_impl>`;
 
 	struct :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`;
 	struct :ref:`BRepComponentMeshEdges<doxid-structgeode_1_1_b_rep_component_mesh_edges>`;
@@ -364,18 +368,22 @@ Overview
 
 	struct :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`;
 
-	template <typename AttributeType>
-	struct :ref:`GenericAttributeConversion<doxid-structgeode_1_1_generic_attribute_conversion>`;
-
 	template <index_t dimension>
 	struct :ref:`GenericAttributeConversion<Point<dimension>><doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4>`;
+
+	template <typename AttributeType>
+	struct :ref:`GenericAttributeConversion<doxid-structgeode_1_1_generic_attribute_conversion>`;
 
 	template <typename Intersection>
 	struct :ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`;
 
 	struct :ref:`LineDefinition<doxid-structgeode_1_1_line_definition>`;
+	struct :ref:`MeshEdge<doxid-structgeode_1_1_mesh_edge>`;
+	struct :ref:`MeshElement<doxid-structgeode_1_1_mesh_element>`;
 	struct :ref:`MeshImplTag<doxid-structgeode_1_1_mesh_impl_tag>`;
+	struct :ref:`MeshPolygon<doxid-structgeode_1_1_mesh_polygon>`;
 	struct :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`;
+	struct :ref:`MeshVertex<doxid-structgeode_1_1_mesh_vertex>`;
 	struct :ref:`ModelComponentMeshEdges<doxid-structgeode_1_1_model_component_mesh_edges>`;
 	struct :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`;
 	struct :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`;

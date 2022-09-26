@@ -1,27 +1,32 @@
-.. index:: pair: struct; geode::GenericAttributeConversion
-.. _doxid-structgeode_1_1_generic_attribute_conversion:
+.. index:: pair: struct; geode::GenericAttributeConversion<Point<dimension>>
+.. _doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4:
 
-template struct geode::GenericAttributeConversion
-=================================================
+template struct geode::GenericAttributeConversion<Point<dimension>>
+===================================================================
 
 .. toctree::
 	:hidden:
 
-Helper struct to convert an Attribute value to generic float. This struct may be customized for a given type. Example: template <> struct GenericAttributeConversion< MyType > { static float converted_value( const MyType& value ) { return value.get_a_float(); } };
+
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <attribute_utils.h>
+	#include <point.h>
 	
-	template <typename AttributeType>
-	struct GenericAttributeConversion
+	template <index_t dimension>
+	struct GenericAttributeConversion<Point<dimension>>
 	{
 		// methods
 	
-		static float :target:`converted_value<doxid-structgeode_1_1_generic_attribute_conversion_1a63f8846e71483b0a357ce037b22abe93>`(const AttributeType&);
-		static float :target:`converted_item_value<doxid-structgeode_1_1_generic_attribute_conversion_1ab76557f2bf0aa9596b469a700094cc63>`(const AttributeType&, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`);
-		static bool :target:`is_genericable<doxid-structgeode_1_1_generic_attribute_conversion_1a822d76cb2d9a207199b4f8c6f08e363f>`();
-		static :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`nb_items<doxid-structgeode_1_1_generic_attribute_conversion_1ac31eb1f6460ebd2640b03d04675c1c32>`();
+		static float :target:`converted_value<doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4_1a208c94ac1b3286526381f680263dd112>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+	
+		static float :target:`converted_item_value<doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4_1a9359e9903584abb0b55ea9ac4c4555e4>`(
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` item
+			);
+	
+		static bool :target:`is_genericable<doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4_1a7e96555a82bd1bbf2410f35c449d285c>`();
+		static :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`nb_items<doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4_1a17206e345ed3e91d80c98d7a8a5ea49e>`();
 	};

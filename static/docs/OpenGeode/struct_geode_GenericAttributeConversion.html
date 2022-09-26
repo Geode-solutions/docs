@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>template struct geode::GenericAttributeConversion &#8212; Python  documentation</title>
+    <title>template struct geode::GenericAttributeConversion&lt;Point&lt;dimension&gt;&gt; &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template struct geode::GenericAttributeConversion&lt;Point&lt;dimension&gt;&gt;" href="struct_geode_GenericAttributeConversion-2.html" />
+    <link rel="next" title="template struct geode::GenericAttributeConversion" href="struct_geode_GenericAttributeConversion-2.html" />
     <link rel="prev" title="struct geode::EdgeVertex" href="struct_geode_EdgeVertex.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -34,22 +34,26 @@
 
           <div class="body" role="main">
             
-  <section id="template-struct-geode-genericattributeconversion">
-<span id="doxid-structgeode-1-1-generic-attribute-conversion"></span><span id="index-0"></span><h1>template struct geode::GenericAttributeConversion</h1>
+  <section id="template-struct-geode-genericattributeconversion-point-dimension">
+<span id="doxid-structgeode-1-1-generic-attribute-conversion-3-01-point-3-01dimension-01-4-01-4"></span><span id="index-0"></span><h1>template struct geode::GenericAttributeConversion&lt;Point&lt;dimension&gt;&gt;</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Helper struct to convert an Attribute value to generic float. This struct may be customized for a given type. Example: template &lt;&gt; struct GenericAttributeConversion&lt; MyType &gt; { static float converted_value( const MyType&amp; value ) { return value.get_a_float(); } };</p>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;attribute_utils.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;point.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">AttributeType</span><span class="o">&gt;</span>
-<span class="k">struct</span> <span class="n">GenericAttributeConversion</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">GenericAttributeConversion</span><span class="o">&lt;</span><span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span>
 <span class="p">{</span>
     <span class="c1">// methods</span>
 
-    <span class="k">static</span> <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-1a63f8846e71483b0a357ce037b22abe93"><span></span><span class="n">converted_value</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">AttributeType</span><span class="o">&amp;</span><span class="p">);</span>
-    <span class="k">static</span> <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-1ab76557f2bf0aa9596b469a700094cc63"><span></span><span class="n">converted_item_value</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">AttributeType</span><span class="o">&amp;</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span><span class="p">);</span>
-    <span class="k">static</span> <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-1a822d76cb2d9a207199b4f8c6f08e363f"><span></span><span class="n">is_genericable</span></span><span></span><span class="p">();</span>
-    <span class="k">static</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-1ac31eb1f6460ebd2640b03d04675c1c32"><span></span><span class="n">nb_items</span></span><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-3-01-point-3-01dimension-01-4-01-4-1a208c94ac1b3286526381f680263dd112"><span></span><span class="n">converted_value</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+
+    <span class="k">static</span> <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-3-01-point-3-01dimension-01-4-01-4-1a9359e9903584abb0b55ea9ac4c4555e4"><span></span><span class="n">converted_item_value</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="n">item</span>
+        <span class="p">);</span>
+
+    <span class="k">static</span> <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-3-01-point-3-01dimension-01-4-01-4-1a7e96555a82bd1bbf2410f35c449d285c"><span></span><span class="n">is_genericable</span></span><span></span><span class="p">();</span>
+    <span class="k">static</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-generic-attribute-conversion-3-01-point-3-01dimension-01-4-01-4-1a17206e345ed3e91d80c98d7a8a5ea49e"><span></span><span class="n">nb_items</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </section>
 
