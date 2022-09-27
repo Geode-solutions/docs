@@ -16,16 +16,31 @@ template class geode::BijectiveMapping
 	#include <mapping.h>
 	
 	template <typename T1, typename T2 = T1>
-	class BijectiveMapping
+	class BijectiveMapping: public :ref:`geode::MappingBase<doxid-classgeode_1_1_mapping_base>`
 	{
 	public:
 		// methods
 	
 		void :target:`map<doxid-classgeode_1_1_bijective_mapping_1af72b340ba153b810b139746b14418472>`(const T1& in, const T2& out);
-		void :target:`reserve<doxid-classgeode_1_1_bijective_mapping_1a55f0e0f99b8e6f149670f5eb68fcbfa9>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` capacity);
-		bool :target:`has_mapping_input<doxid-classgeode_1_1_bijective_mapping_1aba709f5eba7cdb9ae39f4fde9d68dcc5>`(const T1& value) const;
-		bool :target:`has_mapping_output<doxid-classgeode_1_1_bijective_mapping_1a368f56cbd40a9c10ebdde2a6045daac7>`(const T2& value) const;
-		size_t :target:`size<doxid-classgeode_1_1_bijective_mapping_1af3c859927d66f9ef02b33d70dcc37188>`() const;
-		const T2& :target:`in2out<doxid-classgeode_1_1_bijective_mapping_1aaacb21eba813465669781c677187e614>`(const T1& in) const;
-		const T1& :target:`out2in<doxid-classgeode_1_1_bijective_mapping_1a4cdf9bef25ac40c4df9f932385398e3c>`(const T2& out) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`size<doxid-classgeode_1_1_bijective_mapping_1a3337ef0cb2fd6f0aa6fa3d656eff0723>`() const;
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef typename StorageType<T>::Type :ref:`Storage<doxid-classgeode_1_1_mapping_base_1aa321ec05a71d09c0fc82157cad65b39d>`;
+
+		// methods
+	
+		void :ref:`reserve<doxid-classgeode_1_1_mapping_base_1a4957b3cf72f620de80f70f4d59cc7f8f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` capacity);
+		bool :ref:`has_mapping_input<doxid-classgeode_1_1_mapping_base_1af2696e71a6ea94d34cced2f64af57240>`(const T1& value) const;
+		bool :ref:`has_mapping_output<doxid-classgeode_1_1_mapping_base_1a67776dfc4a153b49a9b195e38bdcf40e>`(const T2& value) const;
+		const :ref:`Storage<doxid-classgeode_1_1_mapping_base_1aa321ec05a71d09c0fc82157cad65b39d>`<T2>& :ref:`in2out<doxid-classgeode_1_1_mapping_base_1afe47b9cd85b9a03652c07a8c8c8343af>`(const T1& in) const;
+		const :ref:`Storage<doxid-classgeode_1_1_mapping_base_1aa321ec05a71d09c0fc82157cad65b39d>`<T1>& :ref:`out2in<doxid-classgeode_1_1_mapping_base_1af4254722e4cf10806628d98963ff47b7>`(const T2& out) const;
+

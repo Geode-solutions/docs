@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::OneValueStorage
+.. _doxid-structgeode_1_1_one_value_storage:
+
+template struct geode::OneValueStorage
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <mapping.h>
+	
+	template <typename T>
+	struct OneValueStorage
+	{
+		// typedefs
+	
+		typedef T :target:`Type<doxid-structgeode_1_1_one_value_storage_1a94dbc7155bb193e17561e059591898df>`;
+	};

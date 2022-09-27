@@ -36,6 +36,8 @@ namespace geode
 	struct_geode_MeshTypeTag.rst
 	struct_geode_MeshVertex.rst
 	struct_geode_ModelComponentMeshEdges.rst
+	struct_geode_MultipleValueStorage.rst
+	struct_geode_OneValueStorage.rst
 	struct_geode_PolygonEdge.rst
 	struct_geode_PolygonVertex.rst
 	struct_geode_PolyhedronFacet.rst
@@ -118,6 +120,7 @@ namespace geode
 	class_geode_Logger.rst
 	class_geode_LoggerClient.rst
 	class_geode_LoggerManager.rst
+	class_geode_MappingBase.rst
 	class_geode_MeshBuilderFactory.rst
 	class_geode_MeshBuilderFactoryKey.rst
 	class_geode_MeshFactory.rst
@@ -385,6 +388,13 @@ Overview
 	struct :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`;
 	struct :ref:`MeshVertex<doxid-structgeode_1_1_mesh_vertex>`;
 	struct :ref:`ModelComponentMeshEdges<doxid-structgeode_1_1_model_component_mesh_edges>`;
+
+	template <typename T>
+	struct :ref:`MultipleValueStorage<doxid-structgeode_1_1_multiple_value_storage>`;
+
+	template <typename T>
+	struct :ref:`OneValueStorage<doxid-structgeode_1_1_one_value_storage>`;
+
 	struct :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`;
 	struct :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`;
 	struct :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`;
@@ -575,6 +585,10 @@ Overview
 	class :ref:`Logger<doxid-classgeode_1_1_logger>`;
 	class :ref:`LoggerClient<doxid-classgeode_1_1_logger_client>`;
 	class :ref:`LoggerManager<doxid-classgeode_1_1_logger_manager>`;
+
+	template <typename T1, typename T2, template<typename> class StorageType>
+	class :ref:`MappingBase<doxid-classgeode_1_1_mapping_base>`;
+
 	class :ref:`MeshBuilderFactory<doxid-classgeode_1_1_mesh_builder_factory>`;
 	class :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>`;
 	class :ref:`MeshFactory<doxid-classgeode_1_1_mesh_factory>`;
