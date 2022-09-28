@@ -332,6 +332,7 @@ Overview
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`, absl::string_view> :target:`VertexSetOutputFactory<doxid-namespacegeode_1a70ed4ecf1f67bc9d4861fee1cdeea87f>`;
 	typedef absl::flat_hash_map<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`, std::vector<std::pair<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>>> :target:`ComponentMeshVertexPairs<doxid-namespacegeode_1ab0cc9fad3b163b933d6a81b0135bad90>`;
 	typedef :ref:`uuid<doxid-structgeode_1_1uuid>` :target:`uuid_from_conversion_attribute_type<doxid-namespacegeode_1acf1a636803ffb21a84003a8d351c9391>`;
+	typedef :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`unique_vertex_from_conversion_attribute_type<doxid-namespacegeode_1a48fde7c8ed05188f679e443bac7973ad>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`ComponentTag<doxid-structgeode_1_1_component_tag>`> :target:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`;
 	typedef :ref:`ModelMapping<doxid-classgeode_1_1_model_mapping>`<:ref:`BijectiveMapping<doxid-classgeode_1_1_bijective_mapping>`<:ref:`uuid<doxid-structgeode_1_1uuid>`>> :target:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`;
 	typedef :ref:`ModelMapping<doxid-classgeode_1_1_model_mapping>`<:ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`<:ref:`uuid<doxid-structgeode_1_1uuid>`>> :target:`ModelGenericMapping<doxid-namespacegeode_1a8154ea011c27a259f94c1d270eb485ea>`;
@@ -915,6 +916,7 @@ Overview
 	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`NO_ID<doxid-namespacegeode_1a454319bfde41726e71f499e4e16322b3>` = :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`(-1);
 	static constexpr :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`NO_LID<doxid-namespacegeode_1a0bb1a49fb70c62b71374aeff91a8fb11>` = :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`(-1);
 	static constexpr auto :target:`uuid_from_conversion_attribute_name<doxid-namespacegeode_1a904052a9ccedabc1fb657c3b811cdb75>` =         "uuid_from_conversion";
+	static constexpr auto :target:`unique_vertex_from_conversion_attribute_name<doxid-namespacegeode_1ae921c22923b316f45c087d9b9105cbd6>` =         "unique_vertex_from_conversion";
 
 	// global functions
 
