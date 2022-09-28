@@ -7,8 +7,6 @@ namespace geode
 .. toctree::
 	:hidden:
 
-	struct_geode_SectionComponentMappings.rst
-
 
 
 
@@ -22,10 +20,6 @@ namespace geode
 
 	typedef absl::InlinedVector<index_t, 10> :target:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`;
 	typedef ModuleLicenseChecker<BackgroundMesh> :target:`BackgroundMeshLicenseChecker<doxid-namespacegeode_1aa39abd44d264fd60bd7c6ed963d177cd>`;
-
-	// structs
-
-	struct :ref:`SectionComponentMappings<doxid-structgeode_1_1_section_component_mappings>`;
 
 	// global variables
 
