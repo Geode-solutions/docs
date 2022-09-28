@@ -8,6 +8,7 @@ Global Namespace
 	:hidden:
 
 	namespace_geode.rst
+	namespace_std.rst
 
 
 
@@ -19,4 +20,5 @@ Global Namespace
 	// namespaces
 
 	namespace :ref:`geode<doxid-namespacegeode>`;
+	namespace :ref:`std<doxid-namespacestd>`;
 

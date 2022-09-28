@@ -1,0 +1,35 @@
+.. index:: pair: struct; geode::ComponentMeshElement
+.. _doxid-structgeode_1_1_component_mesh_element:
+
+struct geode::ComponentMeshElement
+==================================
+
+.. toctree::
+	:hidden:
+
+Identify an element in a model component
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <types.h>
+	
+	struct ComponentMeshElement
+	{
+		// fields
+	
+		ComponentID :target:`component_id<doxid-structgeode_1_1_component_mesh_element_1a2ed5c21870c94c7a14c99d84207d4a46>`;
+		index_t :target:`element_id<doxid-structgeode_1_1_component_mesh_element_1afd9e94f3251dd06a6e25b4b6c52d8244>` { NO_ID };
+
+		// construction
+	
+		:target:`ComponentMeshElement<doxid-structgeode_1_1_component_mesh_element_1a3cb9eb89903ef44d30e31a38bfe9f8c7>`(ComponentID component_id_in, index_t element_id_in);
+
+		// methods
+	
+		bool :target:`operator ==<doxid-structgeode_1_1_component_mesh_element_1a236b63c17f36ee9cc90366944e936f3d>` (const ComponentMeshElement& other) const;
+	
+		template <typename Archive>
+		void :target:`serialize<doxid-structgeode_1_1_component_mesh_element_1ae240367a958270ada4af59ac1d9d1d95>`(Archive& archive);
+	};

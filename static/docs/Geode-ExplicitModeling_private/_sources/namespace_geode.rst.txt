@@ -7,6 +7,8 @@ namespace geode
 .. toctree::
 	:hidden:
 
+	struct_geode_ComponentMeshElement.rst
+	struct_geode_ExplicitModelerMappings.rst
 	class_geode_ExplicitModeler2D.rst
 	class_geode_ExplicitModeler3D.rst
 
@@ -21,7 +23,13 @@ namespace geode
 
 	// typedefs
 
+	typedef GenericMapping<MeshElement, :ref:`ComponentMeshElement<doxid-structgeode_1_1_component_mesh_element>`> :target:`ComponentMeshElementMapping<doxid-namespacegeode_1ac2ac20f54ecdf295f3b9001466885018>`;
 	typedef ModuleLicenseChecker<ExplicitModeling> :target:`ExplicitModelingLicenseChecker<doxid-namespacegeode_1aa226f835654495ee219fc3d44f52e389>`;
+
+	// structs
+
+	struct :ref:`ComponentMeshElement<doxid-structgeode_1_1_component_mesh_element>`;
+	struct :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`;
 
 	// classes
 
