@@ -47,6 +47,12 @@ namespace geode
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a138f53359f6b0ed97828265b627ab688>`(BoundingBox);
 	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
+
+	void geode_explicitmodeling_3d_api :target:`simplify_brep_from_macro_information<doxid-namespacegeode_1a66edabb3043cef50e2beffe7ce97461f>`(
+		BRep& brep,
+		:ref:`ComponentMeshElementMapping<doxid-namespacegeode_1ac2ac20f54ecdf295f3b9001466885018>`& mesh_element_mappings
+		);
+
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a3cde333630eb0eee3a923c5fd26f803f>`(geode_explicitmodeling_3d_api, ExplicitModeling3d);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(BoundingBox);
