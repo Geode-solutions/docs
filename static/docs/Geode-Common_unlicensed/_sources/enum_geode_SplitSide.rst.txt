@@ -1,0 +1,19 @@
+.. index:: pair: enum; SplitSide
+.. _doxid-namespacegeode_1a379962424c8a834ac6bc5800259a57de:
+
+enum geode::SplitSide
+=====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+
+	enum SplitSide
+	{
+	    :target:`left<doxid-namespacegeode_1a379962424c8a834ac6bc5800259a57dea811882fecd5c7618d7099ebbd39ea254>`,
+	    :target:`right<doxid-namespacegeode_1a379962424c8a834ac6bc5800259a57dea7c4f29407893c334a6cb7a87bf045c0d>`,
+	};
+

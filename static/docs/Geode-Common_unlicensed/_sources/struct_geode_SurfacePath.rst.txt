@@ -1,0 +1,37 @@
+.. index:: pair: struct; geode::SurfacePath
+.. _doxid-structgeode_1_1_surface_path:
+
+struct geode::SurfacePath
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_path_finder.h>
+	
+	struct SurfacePath
+	{
+		// fields
+	
+		PolygonEdge :target:`edge<doxid-structgeode_1_1_surface_path_1aecd7550fe4583b9d26e6b2b989e5b963>`;
+		Position :target:`position<doxid-structgeode_1_1_surface_path_1afdcb4a750f03ae5bd0b5f6edce5be13c>` { Position::outside };
+		index_t :target:`vertex_id<doxid-structgeode_1_1_surface_path_1a854a545053110cb32d90f3186df82096>` { NO_ID };
+		bool :target:`opposite_side<doxid-structgeode_1_1_surface_path_1a8c8ce05c9d4ee3e5c0a83ec2ef957a5e>` { true };
+
+		// construction
+	
+		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1acf3a1acc45fa6ce40ecc894fc2cce0e8>`(PolygonEdge edge_in, Position position_in);
+		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1accddadede745ec43861ef1403c1f5180>`(index_t vertex_in);
+		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1a4858e5b5451438f114796ba973fa291d>`();
+
+		// methods
+	
+		bool :target:`operator ==<doxid-structgeode_1_1_surface_path_1aeaed5b2458234464a87eb5da3863fa9c>` (const SurfacePath& rhs) const;
+		bool :target:`is_vertex<doxid-structgeode_1_1_surface_path_1a067c9e7b5919dcdaae52392997694953>`() const;
+	};

@@ -1,0 +1,29 @@
+.. index:: pair: struct; geode::CutPatchException
+.. _doxid-structgeode_1_1_cut_patch_exception:
+
+struct geode::CutPatchException
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cut_exceptions.h>
+	
+	struct CutPatchException: public OpenGeodeException
+	{
+		// fields
+	
+		const Point3D :target:`location<doxid-structgeode_1_1_cut_patch_exception_1aa3a89874c3b143b5e1fd576d70033852>`;
+		index_t :target:`edge_id<doxid-structgeode_1_1_cut_patch_exception_1a8b9e5f526e408b7174e4d9ee7cc3b5f4>`;
+		:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` :target:`cut_info<doxid-structgeode_1_1_cut_patch_exception_1acecbd6c1bca7e23b9f9f85057c62a4f3>`;
+
+		// construction
+	
+		:target:`CutPatchException<doxid-structgeode_1_1_cut_patch_exception_1afc4af88cfb709066f6dcd75c0ad464ea>`(Point3D location_in);
+	};

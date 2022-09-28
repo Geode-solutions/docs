@@ -1,0 +1,28 @@
+.. index:: pair: class; geode::ModuleLicenseChecker
+.. _doxid-classgeode_1_1_module_license_checker:
+
+template class geode::ModuleLicenseChecker
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <module_license_checker.h>
+	
+	template <const char* name>
+	class ModuleLicenseChecker:
+	    public :ref:`geode::FileLicenseChecker<doxid-classgeode_1_1_file_license_checker>`,
+	    public Singleton
+	{
+	public:
+		// methods
+	
+		static std::tuple<bool, std::string> :target:`is_license_available<doxid-classgeode_1_1_module_license_checker_1a1b4a63fb885b0721c2f4b12747ebb0fa>`();
+		static void :target:`acquire_license<doxid-classgeode_1_1_module_license_checker_1a91301941d24266c7f0c154d2359b3350>`();
+	};

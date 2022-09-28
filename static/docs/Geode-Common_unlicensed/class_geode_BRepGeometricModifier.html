@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>class geode::BRepGeometricModifier &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::EdgedCurveModifier" href="class_geode_EdgedCurveModifier.html" />
+    <link rel="prev" title="struct geode::SurfacePath" href="struct_geode_SurfacePath.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-geode-brepgeometricmodifier">
+<span id="doxid-classgeode-1-1-b-rep-geometric-modifier"></span><span id="index-0"></span><h1>class geode::BRepGeometricModifier</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;brep_geometric_modifier.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">BRepGeometricModifier</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a8697097b86dd8a811b4566a8a46724bd"><span></span><span class="n">BRepGeometricModifier</span></span><span></span><span class="p">(</span><span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <a class="reference internal" href="struct_geode_BRepCollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-b-rep-collapse-polygon-edge-info"><span class="std std-ref">BRepCollapsePolygonEdgeInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a31b03b4f1cccacc96e3e58f9295326df"><span></span><span class="n">collapse_edge</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
+
+    <a class="reference internal" href="struct_geode_BRepCollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-b-rep-collapse-polygon-edge-info"><span class="std std-ref">BRepCollapsePolygonEdgeInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1af9f9bee2fe4ffc2c8afb7e3a2db5d4c0"><span></span><span class="n">collapse_edge</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
+
+    <a class="reference internal" href="struct_geode_BRepCollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-b-rep-collapse-polygon-edge-info"><span class="std std-ref">BRepCollapsePolygonEdgeInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a6af78a7f0363263dde1078ed1e80ab95"><span></span><span class="n">collapse_edge</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
+
+    <a class="reference internal" href="struct_geode_BRepSplitPolygonEdgeInfo.html#doxid-structgeode-1-1-b-rep-split-polygon-edge-info"><span class="std std-ref">BRepSplitPolygonEdgeInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1af22dc4fe32165d1d83d5152d6d0783c0"><span></span><span class="n">split_edge</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
+
+    <a class="reference internal" href="struct_geode_BRepSplitPolygonEdgeInfo.html#doxid-structgeode-1-1-b-rep-split-polygon-edge-info"><span class="std std-ref">BRepSplitPolygonEdgeInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1abd47631882675fbe7d22166b09331c98"><span></span><span class="n">split_edge</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
+
+    <a class="reference internal" href="struct_geode_BRepSplitPolygonEdgeInfo.html#doxid-structgeode-1-1-b-rep-split-polygon-edge-info"><span class="std std-ref">BRepSplitPolygonEdgeInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a98bd4599d51d3239600be93000f9a47b"><span></span><span class="n">split_edge</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1ac202f411a29cead7be5d940f6b7dbe30"><span></span><span class="n">swap_edge</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span> <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1adf3d5f0ab94502e3880f24006eb45ead"><span></span><span class="n">move_point</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a4125ec6bd862b9451ad38a637c89200e"><span></span><span class="n">translate_point</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex</span><span class="p">,</span> <span class="k">const</span> <span class="n">Vector3D</span><span class="o">&amp;</span> <span class="n">translation</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1ac9795991173eb8fbef6a146607951d86"><span></span><span class="n">rescale_point</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex</span><span class="p">,</span> <span class="kt">double</span> <span class="n">scale</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a9ef8d814dfbbf9b0360f9709f40bca1b"><span></span><span class="n">rescale_point</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">unique_vertex</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;&amp;</span> <span class="n">scale</span><span class="p">);</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a2d4da300ac10675fb9365e82711235d2"><span></span><span class="n">is_edge_active</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1aef55dbe1d8719ff85e8a6d79985764f3"><span></span><span class="n">is_edge_active</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a10b28d8df305de1e7bdf80900feff46c"><span></span><span class="n">is_triangle_active</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">triangle</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1ac370bb4add81ec6c95f96b863a03a771"><span></span><span class="n">is_tetrahedron_active</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">tetrahedron</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1ae1afc8b3ab4b1cf7b0a17cefb480c32c"><span></span><span class="n">clean</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a022dd6b1e3205997e5f738cfd9155ace"><span></span><span class="n">clean_triangles_surfaces</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a63338b255dc0751fd2d359dd3abd0990"><span></span><span class="n">clean_vertices_surfaces</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a807147e864c75b70d37fb85fc44ad7b1"><span></span><span class="n">clean_edges_lines</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a703f8d3219864346bb3c29d6c55457b3"><span></span><span class="n">clean_vertices_lines</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a78cb38802a8cfbbd38b7ecdeca1f45d3"><span></span><span class="n">clean_tetrahedra_blocks</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a90e1ad260d6d3d92d89cb78998178314"><span></span><span class="n">clean_vertices_blocks</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-b-rep-geometric-modifier-1a31e69ab2d5f2de669cf822d1270124c8"><span></span><span class="n">clean_unique_vertices</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_BRepGeometricModifier.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

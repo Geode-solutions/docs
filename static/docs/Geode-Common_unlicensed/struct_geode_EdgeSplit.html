@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>struct geode::EdgeSplit &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::FacetSplit" href="struct_geode_FacetSplit.html" />
+    <link rel="prev" title="struct geode::CutPathException" href="struct_geode_CutPathException.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="struct-geode-edgesplit">
+<span id="doxid-structgeode-1-1-edge-split"></span><span id="index-0"></span><h1>struct geode::EdgeSplit</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;cut_exceptions.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">EdgeSplit</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">Point3D</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-split-1aaaf15b7f8ff9f0b4ffd167c9399dbe47"><span></span><span class="n">location</span></span><span></span><span class="p">;</span>
+    <span class="n">PolyhedronFacetEdge</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-split-1af1554e752c12cec7cef12713adf8b345"><span></span><span class="n">edge</span></span><span></span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-split-1a25bc18daa958921905a4efc2bd8c58a3"><span></span><span class="n">vertex_index</span></span><span></span> <span class="p">{</span> <span class="n">NO_ID</span> <span class="p">};</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-split-1ac4d0effcc50ff5b46f1ff7386acfc188"><span></span><span class="n">EdgeSplit</span></span><span></span><span class="p">(</span>
+        <span class="n">Point3D</span> <span class="n">location_in</span><span class="p">,</span>
+        <span class="n">PolyhedronFacetEdge</span> <span class="n">edge_in</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">vertex_index_in</span>
+        <span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-edge-split-1add97977aab6d4fba4010db8ccb71d6f1"><span></span><span class="n">EdgeSplit</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/struct_geode_EdgeSplit.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

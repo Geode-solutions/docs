@@ -1,0 +1,33 @@
+.. index:: pair: struct; geode::SectionCollapsePolygonEdgeInfo
+.. _doxid-structgeode_1_1_section_collapse_polygon_edge_info:
+
+struct geode::SectionCollapsePolygonEdgeInfo
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_geometric_modifier.h>
+	
+	struct SectionCollapsePolygonEdgeInfo: public :ref:`geode::ModelCollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info>`
+	{
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		absl::flat_hash_map<uuid, absl::InlinedVector<index_t, 1>> :ref:`line_info<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1aadda68d6138cc8b1f8ab70c077971616>`;
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>`, 1>> :ref:`surface_info<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1ae43c8847dd6dee7998404f373503f996>`;
+

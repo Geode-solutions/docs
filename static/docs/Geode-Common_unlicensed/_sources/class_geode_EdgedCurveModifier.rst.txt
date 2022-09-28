@@ -1,0 +1,178 @@
+.. index:: pair: class; geode::EdgedCurveModifier
+.. _doxid-classgeode_1_1_edged_curve_modifier:
+
+template class geode::EdgedCurveModifier
+========================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <edged_curve_modifier.h>
+	
+	template <index_t dimension>
+	class EdgedCurveModifier: public :ref:`geode::VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`
+	{
+	public:
+		// construction
+	
+		:target:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier_1adbed168275a611b1d8089b270dc864ed>`(
+			const EdgedCurve<dimension>& curve,
+			EdgedCurveBuilder<dimension>& builder
+			);
+	
+		:target:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier_1af5381bfdbd0c23a6cc5e737d42ffae28>`(EdgedCurveModifier&& other);
+
+		// methods
+	
+		bool :target:`is_edge_active<doxid-classgeode_1_1_edged_curve_modifier_1a553dbffd4b277e8ae7a099ada35b8aab>`(index_t edge_id) const;
+		index_t :ref:`collapse_edge<doxid-classgeode_1_1_edged_curve_modifier_1a7285707c860415a2dc3ead5c097bb8c5>`(index_t edge_id, const Point<dimension>& point);
+		index_t :ref:`split_edge<doxid-classgeode_1_1_edged_curve_modifier_1a89a83b95c825a8866a56e9e0ecc902d4>`(index_t edge_id, const Point<dimension>& point);
+		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_edged_curve_modifier_1aded8d8cd0bf12d83b9a078487fbffa1c>`();
+		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_edged_curve_modifier_1a15627e5266d1fc7b5c953011f7b7cde9>`();
+		std::tuple<std::vector<index_t>, std::vector<index_t>> :ref:`clean<doxid-classgeode_1_1_edged_curve_modifier_1a6e42da248f85fb030f34ffee19330d64>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+
+.. _details-classgeode_1_1_edged_curve_modifier:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; collapse_edge
+.. _doxid-classgeode_1_1_edged_curve_modifier_1a7285707c860415a2dc3ead5c097bb8c5:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	index_t collapse_edge(index_t edge_id, const Point<dimension>& point)
+
+Collapse an edge.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Index of the edge to collapse.
+
+	*
+		- point
+
+		- Coordinates of the collapse point.
+
+
+
+.. rubric:: Returns:
+
+the index of the collapse vertex.
+
+.. index:: pair: function; split_edge
+.. _doxid-classgeode_1_1_edged_curve_modifier_1a89a83b95c825a8866a56e9e0ecc902d4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	index_t split_edge(index_t edge_id, const Point<dimension>& point)
+
+Split an edge.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Index of the edge to split.
+
+	*
+		- point
+
+		- Coordinates of the new point.
+
+
+
+.. rubric:: Returns:
+
+the index of the new vertex.
+
+.. index:: pair: function; clean_edges
+.. _doxid-classgeode_1_1_edged_curve_modifier_1aded8d8cd0bf12d83b9a078487fbffa1c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<index_t> clean_edges()
+
+Clean up the mesh removing inactive edges
+
+
+
+.. rubric:: Returns:
+
+old2new mappings for edges
+
+.. index:: pair: function; clean_vertices
+.. _doxid-classgeode_1_1_edged_curve_modifier_1a15627e5266d1fc7b5c953011f7b7cde9:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<index_t> clean_vertices()
+
+Clean up the mesh removing isolated vertices
+
+
+
+.. rubric:: Returns:
+
+old2new mappings for vertices
+
+.. index:: pair: function; clean
+.. _doxid-classgeode_1_1_edged_curve_modifier_1a6e42da248f85fb030f34ffee19330d64:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<std::vector<index_t>, std::vector<index_t>> clean()
+
+Clean up the mesh removing inactive edges, isolated vertices.
+
+
+
+.. rubric:: Returns:
+
+old2new mappings for edges and vertices.
+

@@ -1,0 +1,80 @@
+.. index:: pair: class; geode::BRepGeometricModifier
+.. _doxid-classgeode_1_1_b_rep_geometric_modifier:
+
+class geode::BRepGeometricModifier
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier.h>
+	
+	class BRepGeometricModifier
+	{
+	public:
+		// construction
+	
+		:target:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier_1a8697097b86dd8a811b4566a8a46724bd>`(BRep& brep);
+
+		// methods
+	
+		:ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a31b03b4f1cccacc96e3e58f9295326df>`(
+			const Block3D& block,
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			);
+	
+		:ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1af9f9bee2fe4ffc2c8afb7e3a2db5d4c0>`(
+			const Surface3D& surface,
+			const PolygonEdge& edge,
+			const Point3D& point
+			);
+	
+		:ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a6af78a7f0363263dde1078ed1e80ab95>`(
+			const Line3D& line,
+			index_t edge,
+			const Point3D& point
+			);
+	
+		:ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1af22dc4fe32165d1d83d5152d6d0783c0>`(
+			const Block3D& block,
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			);
+	
+		:ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1abd47631882675fbe7d22166b09331c98>`(
+			const Surface3D& surface,
+			const PolygonEdge& edge,
+			const Point3D& point
+			);
+	
+		:ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>` :target:`split_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a98bd4599d51d3239600be93000f9a47b>`(
+			const Line3D& line,
+			index_t edge,
+			const Point3D& point
+			);
+	
+		void :target:`swap_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1ac202f411a29cead7be5d940f6b7dbe30>`(const Surface3D& surface, const PolygonEdge& edge);
+		void :target:`move_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1adf3d5f0ab94502e3880f24006eb45ead>`(index_t unique_vertex, const Point3D& point);
+		void :target:`translate_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1a4125ec6bd862b9451ad38a637c89200e>`(index_t unique_vertex, const Vector3D& translation);
+		void :target:`rescale_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1ac9795991173eb8fbef6a146607951d86>`(index_t unique_vertex, double scale);
+		void :target:`rescale_point<doxid-classgeode_1_1_b_rep_geometric_modifier_1a9ef8d814dfbbf9b0360f9709f40bca1b>`(index_t unique_vertex, const std::array<double, 3>& scale);
+		bool :target:`is_edge_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a2d4da300ac10675fb9365e82711235d2>`(const Line3D& line, index_t edge) const;
+		bool :target:`is_edge_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1aef55dbe1d8719ff85e8a6d79985764f3>`(const Surface3D& surface, index_t edge) const;
+		bool :target:`is_triangle_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a10b28d8df305de1e7bdf80900feff46c>`(const Surface3D& surface, index_t triangle) const;
+		bool :target:`is_tetrahedron_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1ac370bb4add81ec6c95f96b863a03a771>`(const Block3D& block, index_t tetrahedron) const;
+		void :target:`clean<doxid-classgeode_1_1_b_rep_geometric_modifier_1ae1afc8b3ab4b1cf7b0a17cefb480c32c>`();
+		void :target:`clean_triangles_surfaces<doxid-classgeode_1_1_b_rep_geometric_modifier_1a022dd6b1e3205997e5f738cfd9155ace>`();
+		void :target:`clean_vertices_surfaces<doxid-classgeode_1_1_b_rep_geometric_modifier_1a63338b255dc0751fd2d359dd3abd0990>`();
+		void :target:`clean_edges_lines<doxid-classgeode_1_1_b_rep_geometric_modifier_1a807147e864c75b70d37fb85fc44ad7b1>`();
+		void :target:`clean_vertices_lines<doxid-classgeode_1_1_b_rep_geometric_modifier_1a703f8d3219864346bb3c29d6c55457b3>`();
+		void :target:`clean_tetrahedra_blocks<doxid-classgeode_1_1_b_rep_geometric_modifier_1a78cb38802a8cfbbd38b7ecdeca1f45d3>`();
+		void :target:`clean_vertices_blocks<doxid-classgeode_1_1_b_rep_geometric_modifier_1a90e1ad260d6d3d92d89cb78998178314>`();
+		void :target:`clean_unique_vertices<doxid-classgeode_1_1_b_rep_geometric_modifier_1a31e69ab2d5f2de669cf822d1270124c8>`();
+	};

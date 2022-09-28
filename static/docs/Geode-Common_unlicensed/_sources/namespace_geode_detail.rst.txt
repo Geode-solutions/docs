@@ -1,0 +1,42 @@
+.. index:: pair: namespace; geode::detail
+.. _doxid-namespacegeode_1_1detail:
+
+namespace geode::detail
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace detail {
+
+	// global functions
+
+	template <index_t dimension>
+	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a2e98db8963586adc8bd80aa6573c1bd0>`(
+		const SolidMesh<dimension>& solid,
+		index_t polyhedron,
+		const Point<dimension>& point
+		);
+
+	template <index_t dimension>
+	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a059cf94db25ece8923cb444878742b39>`(
+		const SolidMesh<dimension>& solid,
+		const PolyhedronFacet& facet,
+		const Point<dimension>& point
+		);
+
+	template <index_t dimension>
+	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a7f86008e4f61b3099860fdea17fd0727>`(
+		const SurfaceMesh<dimension>& surface,
+		index_t polygon,
+		const Point<dimension>& point
+		);
+
+	} // namespace detail

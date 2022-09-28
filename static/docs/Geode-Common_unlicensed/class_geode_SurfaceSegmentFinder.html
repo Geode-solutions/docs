@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>template class geode::SurfaceSegmentFinder &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::SurfaceSegmentFinder2D" href="class_geode_SurfaceSegmentFinder2D.html" />
+    <link rel="prev" title="template class geode::SurfacePathFinder" href="class_geode_SurfacePathFinder.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-surfacesegmentfinder">
+<span id="doxid-classgeode-1-1-surface-segment-finder"></span><span id="index-0"></span><h1>template class geode::SurfaceSegmentFinder</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>This class is able to find a rectilinear path between two vertices. This class may be derived for custom path findings.</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surface_segment_finder.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">SurfaceSegmentFinder</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_SurfacePathFinder.html#doxid-classgeode-1-1-surface-path-finder"><span class="std std-ref">geode::SurfacePathFinder</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-segment-finder-1a368dfbcbc6bf5234048e20bc0d0afe49"><span></span><span class="n">SurfaceSegmentFinder</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">end</span>
+        <span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_SurfaceSegmentFinder2D.html#doxid-classgeode-1-1-surface-segment-finder2-d"><span class="std std-ref">SurfaceSegmentFinder2D</span></a><span></span><span class="p">;</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_SurfaceSegmentFinder.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

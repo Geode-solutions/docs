@@ -1,0 +1,239 @@
+.. index:: pair: class; geode::TetrahedralSolidEpsilonModifier
+.. _doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier:
+
+class geode::TetrahedralSolidEpsilonModifier
+============================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_epsilon_modifier.h>
+	
+	class TetrahedralSolidEpsilonModifier: public :ref:`geode::TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`
+	{
+	public:
+		// construction
+	
+		:target:`TetrahedralSolidEpsilonModifier<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a1fe147b8d223ff4c10677d34616ae13d>`(
+			const TetrahedralSolid3D& solid,
+			TetrahedralSolidBuilder3D& builder
+			);
+
+		// methods
+	
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`insert_point_in_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a2890eae4217a68f338e851e6575efcb7>`(
+			index_t tetrahedron_id,
+			const Point3D& point
+			);
+	
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`insert_point_on_facet<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a37b03f8220cee9cf1c20116427a65bab>`(
+			const PolyhedronFacet& facet,
+			const Point3D& point
+			);
+	
+		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`insert_point_on_edge<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1ab990b99fddf6e83ede45bdaa96c4e37f>`(
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			);
+	
+		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`insert_point_on_edge<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a0e756b4dc67efcda62210add80a1e5c3>`(index_t edge_id, const Point3D& point);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+		bool :ref:`is_tetrahedron_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af187b78931d693da120ab9da5c5b4549>`(index_t tetrahedron_id) const;
+		bool :ref:`is_facet_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a49fdcfaf239bff7e181f1aaa5c7bb932>`(index_t facet_id) const;
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1645e8ce599bf3ab1036071f1af3a939>`(index_t tetrahedron_id, const Point3D& point);
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abfd8444fde310d0e8229cb353f718451>`(index_t facet_id, const Point3D& point);
+		:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` :ref:`split_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a5de1767b5b8ae9b7ae522c5434930f5b>`(const PolyhedronFacet& facet, const Point3D& point);
+		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a954f2875b98f31ae3ce7e255d1c008c3>`(index_t edge_id, const Point3D& point);
+	
+		:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` :ref:`split_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1abf56f3477626be27058311526b2b5aef>`(
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			);
+	
+		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad74eb355746ffd52b66a4788a99868bd>`(
+			const PolyhedronFacetEdge& edge,
+			const Point3D& point
+			);
+	
+		:ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ae1f62e44988d327a78be2c5a3452add2>`(index_t edge_id, const Point3D& point);
+		:ref:`SolidSwapFacetInfo<doxid-structgeode_1_1_solid_swap_facet_info>` :ref:`swap_facet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a4ccb9f6c1ee88360c458a6aafaab2437>`(const PolyhedronFacet& facet);
+		:ref:`SolidSwapEdgeInfo<doxid-structgeode_1_1_solid_swap_edge_info>` :ref:`swap_edge<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a18e72cc7f103c5a218a432b6daf3bbed>`(const PolyhedronFacetEdge& edge, index_t apex);
+		:ref:`SolidRemoveMultipleAdjacencyInfo<doxid-structgeode_1_1_solid_remove_multiple_adjacency_info>` :ref:`remove_double_adjacency<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a946344fe97b501ab2a749bd744eb7b53>`(const PolyhedronFacetEdge& edge);
+		:ref:`SolidRemoveMultipleAdjacencyInfo<doxid-structgeode_1_1_solid_remove_multiple_adjacency_info>` :ref:`remove_triple_adjacency<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad948040f1b0ccd271f2191fe840c79c6>`(const PolyhedronVertex& vertex);
+		std::vector<index_t> :ref:`clean_tetrahedra<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac>`();
+		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a0f1152b138581b514523cbaf00b42fa1>`();
+		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ab4e1a4c3bc3099e9b4472b7229ab89c4>`();
+		std::vector<index_t> :ref:`clean_facets<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a37193dc0a7951ee5239b1dda623cb083>`();
+		std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_t>, std::vector<index_t>> :ref:`clean<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1d6c7140659d7b7378acc662ecc304f3>`();
+
+.. _details-classgeode_1_1_tetrahedral_solid_epsilon_modifier:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; insert_point_in_tetrahedron
+.. _doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a2890eae4217a68f338e851e6575efcb7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` insert_point_in_tetrahedron(
+		index_t tetrahedron_id,
+		const Point3D& point
+		)
+
+Insert a point in a tetrahedron either by spliting the tetrahedron into four new ones, or by snapping the point on a facet (three new tetrahedra for each side), an edge (each incident tetrahedra is split into two new tetrahedra) or a vertex (no new tetrahedron).
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- tetrahedron_id
+
+		- Index of the tetrahedron to split.
+
+	*
+		- point
+
+		- Coordinates of the split point. @warn Split tetrahedron is set as inactive but not deleted.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; insert_point_on_facet
+.. _doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a37b03f8220cee9cf1c20116427a65bab:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>` insert_point_on_facet(
+		const PolyhedronFacet& facet,
+		const Point3D& point
+		)
+
+Insert a point on a facet either by spliting the facet into three new ones, or by snapping the point on an edge or a vertex.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- facet
+
+		- Index of the PolyhedronFacet to split.
+
+	*
+		- point
+
+		- Coordinates of the split point. @warn Potential split tetrahedra are set as inactive but not deleted.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; insert_point_on_edge
+.. _doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1ab990b99fddf6e83ede45bdaa96c4e37f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` insert_point_on_edge(
+		const PolyhedronFacetEdge& edge,
+		const Point3D& point
+		)
+
+Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge
+
+		- Index of the PolyhedronFacetEdge to split.
+
+	*
+		- point
+
+		- Coordinates of the split point. @warn Potential split tetrahedra are set as inactive but not deleted.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
+.. index:: pair: function; insert_point_on_edge
+.. _doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier_1a0e756b4dc67efcda62210add80a1e5c3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info>` insert_point_on_edge(index_t edge_id, const Point3D& point)
+
+Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- edge_id
+
+		- Unique index of the edge to split.
+
+	*
+		- point
+
+		- Coordinates of the split point. @warn Potential split tetrahedra are set as inactive but not deleted.
+
+
+
+.. rubric:: Returns:
+
+new vertex index and mappings between old and new mesh.
+
