@@ -38,7 +38,11 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 	    public :ref:`geode::Blocks<doxid-classgeode_1_1_blocks>`,
 	    public :ref:`geode::ModelBoundaries<doxid-classgeode_1_1_model_boundaries>`,
 	    public :ref:`geode::Topology<doxid-classgeode_1_1_topology>`,
-	    public :ref:`geode::AddComponents<doxid-classgeode_1_1_add_components>`,
+	    public Corners3D,
+	    public Lines3D,
+	    public Surfaces3D,
+	    public Blocks3D,
+	    public ModelBoundaries3D,
 	    public :ref:`geode::Identifier<doxid-classgeode_1_1_identifier>`
 	{
 	public:
@@ -59,8 +63,8 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 
 		// construction
 	
-		:target:`BRep<doxid-classgeode_1_1_b_rep_1a3c7b08519ad1ca3167f9446360ece507>`();
-		:target:`BRep<doxid-classgeode_1_1_b_rep_1ab86b6cb725398bad6790568ee9632bcb>`(BRep&& brep);
+		:target:`BRep<doxid-classgeode_1_1_b_rep_1a384f789258676b3d556913741cc3181c>`();
+		:target:`BRep<doxid-classgeode_1_1_b_rep_1a14519239ca9e5f4e6dcda2e8be960773>`(BRep&& brep);
 
 		// methods
 	

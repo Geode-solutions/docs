@@ -49,7 +49,10 @@
     <span class="k">public</span> <a class="reference internal" href="class_geode_Surfaces.html#doxid-classgeode-1-1-surfaces"><span class="std std-ref">geode::Surfaces</span></a><span></span><span class="p">,</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_ModelBoundaries.html#doxid-classgeode-1-1-model-boundaries"><span class="std std-ref">geode::ModelBoundaries</span></a><span></span><span class="p">,</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_Topology.html#doxid-classgeode-1-1-topology"><span class="std std-ref">geode::Topology</span></a><span></span><span class="p">,</span>
-    <span class="k">public</span> <a class="reference internal" href="class_geode_AddComponents.html#doxid-classgeode-1-1-add-components"><span class="std std-ref">geode::AddComponents</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">Corners2D</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">Lines2D</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">Surfaces2D</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">ModelBoundaries2D</span><span class="p">,</span>
     <span class="k">public</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier"><span class="std std-ref">geode::Identifier</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
@@ -63,6 +66,11 @@
     <span class="k">class</span> <a class="reference internal" href="class_geode_Section_InternalCornerRange.html#doxid-classgeode-1-1-section-1-1-internal-corner-range"><span class="std std-ref">InternalCornerRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_Section_InternalLineRange.html#doxid-classgeode-1-1-section-1-1-internal-line-range"><span class="std std-ref">InternalLineRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_Section_ItemLineRange.html#doxid-classgeode-1-1-section-1-1-item-line-range"><span class="std std-ref">ItemLineRange</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1ae287bc9e7dea7665d67ba32c0d8c6781"><span></span><span class="n">Section</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-section-1a6a852a5d3ba341afd06dda1466c8eba8"><span></span><span class="n">Section</span></span><span></span><span class="p">(</span><span class="n">Section</span><span class="o">&amp;&amp;</span> <span class="n">section</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 

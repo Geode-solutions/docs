@@ -19,8 +19,3 @@ This mixin represents an assembly of components. The component types are flexibl
 	class AddComponents: public Components< dimension >
 	{
 	};
-
-	// direct descendants
-
-	class :ref:`BRep<doxid-classgeode_1_1_b_rep>`;
-	class :ref:`Section<doxid-classgeode_1_1_section>`;

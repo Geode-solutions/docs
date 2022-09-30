@@ -33,7 +33,10 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`
 	    public :ref:`geode::Surfaces<doxid-classgeode_1_1_surfaces>`,
 	    public :ref:`geode::ModelBoundaries<doxid-classgeode_1_1_model_boundaries>`,
 	    public :ref:`geode::Topology<doxid-classgeode_1_1_topology>`,
-	    public :ref:`geode::AddComponents<doxid-classgeode_1_1_add_components>`,
+	    public Corners2D,
+	    public Lines2D,
+	    public Surfaces2D,
+	    public ModelBoundaries2D,
 	    public :ref:`geode::Identifier<doxid-classgeode_1_1_identifier>`
 	{
 	public:
@@ -47,6 +50,11 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`
 		class :ref:`InternalCornerRange<doxid-classgeode_1_1_section_1_1_internal_corner_range>`;
 		class :ref:`InternalLineRange<doxid-classgeode_1_1_section_1_1_internal_line_range>`;
 		class :ref:`ItemLineRange<doxid-classgeode_1_1_section_1_1_item_line_range>`;
+
+		// construction
+	
+		:target:`Section<doxid-classgeode_1_1_section_1ae287bc9e7dea7665d67ba32c0d8c6781>`();
+		:target:`Section<doxid-classgeode_1_1_section_1a6a852a5d3ba341afd06dda1466c8eba8>`(Section&& section);
 
 		// methods
 	
