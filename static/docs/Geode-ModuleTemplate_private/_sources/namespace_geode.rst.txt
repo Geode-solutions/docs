@@ -16,8 +16,17 @@ namespace geode
 	
 	namespace geode {
 
+	// typedefs
+
+	typedef ModuleLicenseChecker<MyModule> :target:`MyModuleLicenseChecker<doxid-namespacegeode_1a2fd61eced097d0b6d01aeb3340cbee15>`;
+
+	// global variables
+
+	static constexpr char :target:`MyModule<doxid-namespacegeode_1a126af3fa2c5de6246c24dd8804dd0c79>`[] = "MyModule";
+
 	// global functions
 
-	bool geode_moduletemplate_mylib_api :target:`hello_private_world<doxid-namespacegeode_1abd725dbea3fcff3356b089ba177fb0f4>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a1cfa85f6b0b606ff6b5558f3def9b555>`(geode_mymodule_mylib_api, MyModuleMyLib);
+	bool geode_mymodule_mylib_api :target:`hello_private_world<doxid-namespacegeode_1a033526610ce3a4ab29f36d5bf93eb1ed>`();
 
 	} // namespace geode
