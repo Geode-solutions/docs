@@ -1,0 +1,49 @@
+.. index:: pair: class; geode::Ray
+.. _doxid-classgeode_1_1_ray:
+
+template class geode::Ray
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <infinite_line.h>
+	
+	template <index_t dimension>
+	class Ray: public :ref:`geode::GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`
+	{
+	public:
+		// construction
+	
+		:target:`Ray<doxid-classgeode_1_1_ray_1a7d6d1b9f10825d170984b76152721d17>`(const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& direction, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin);
+		:target:`Ray<doxid-classgeode_1_1_ray_1a94e88a2573f2bbae54716b86da7d434f>`(const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment);
+		:target:`Ray<doxid-classgeode_1_1_ray_1a293a3ec2a3ec3ec14005edae54506308>`(const Ray<dimension>& other);
+		:target:`Ray<doxid-classgeode_1_1_ray_1a50fdaa9f80a1407482ba7a17c9d67daa>`(const :ref:`OwnerRay<doxid-classgeode_1_1_owner_ray>`<dimension>& other);
+		:target:`Ray<doxid-classgeode_1_1_ray_1af6d9c8eb4ed31fae6e54e67a76b01bc1>`(Ray<dimension>&& other);
+
+		// methods
+	
+		Ray<dimension>& :target:`operator =<doxid-classgeode_1_1_ray_1afd332c550a8631c8fdbd71101744181c>` (const Ray<dimension>& other);
+		Ray<dimension>& :target:`operator =<doxid-classgeode_1_1_ray_1a04d37d3c0e2d2cbe2ac7fccd7f082fab>` (Ray<dimension>&& other);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		:ref:`GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_infinite_line_1a001da72e8691371b0c89acd225b077ce>` (const :ref:`GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`<PointType, dimension>& other);
+		:ref:`GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_infinite_line_1a840910a84c9c70d0fa826da540fe9407>` (:ref:`GenericInfiniteLine<doxid-classgeode_1_1_generic_infinite_line>`<PointType, dimension>&& other);
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`origin<doxid-classgeode_1_1_generic_infinite_line_1ab96c5fcd25d1c4305471acba5d92e76d>`() const;
+		const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& :ref:`direction<doxid-classgeode_1_1_generic_infinite_line_1ac7e811fd6a4c3aca8ec8cc757d0a450d>`() const;
+

@@ -45,3 +45,9 @@ template class geode::GenericInfiniteLine
 
 	template <index_t dimension>
 	class :ref:`OwnerInfiniteLine<doxid-classgeode_1_1_owner_infinite_line>`;
+
+	template <index_t dimension>
+	class :ref:`OwnerRay<doxid-classgeode_1_1_owner_ray>`;
+
+	template <index_t dimension>
+	class :ref:`Ray<doxid-classgeode_1_1_ray>`;

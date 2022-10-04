@@ -84,7 +84,7 @@
         <span class="k">const</span> <span class="n">ACTION</span><span class="o">&amp;</span> <span class="n">action</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">ACTION</span><span class="o">&gt;</span>
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ACTION</span><span class="o">&gt;</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a01c0ec594996e95e61e16b731e3329be"><span></span><span class="n">bbox_intersect_recursive</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_BoundingBox.html#doxid-classgeode-1-1-bounding-box"><span class="std std-ref">BoundingBox</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">box</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">node_index</span><span class="p">,</span>
@@ -93,7 +93,7 @@
         <span class="n">ACTION</span><span class="o">&amp;</span> <span class="n">action</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">ACTION</span><span class="o">&gt;</span>
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ACTION</span><span class="o">&gt;</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a48b0cabc72837f0672ec1cc2462ed0c6"><span></span><span class="n">self_intersect_recursive</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">node_index1</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_begin1</span><span class="p">,</span>
@@ -104,7 +104,7 @@
         <span class="n">ACTION</span><span class="o">&amp;</span> <span class="n">action</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">ACTION</span><span class="o">&gt;</span>
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ACTION</span><span class="o">&gt;</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a2e113823ceab581c463068468b231349"><span></span><span class="n">other_intersect_recursive</span></span><span></span><span class="p">(</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">node_index1</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_begin1</span><span class="p">,</span>
@@ -116,9 +116,9 @@
         <span class="n">ACTION</span><span class="o">&amp;</span> <span class="n">action</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">ACTION</span><span class="o">&gt;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a6f01acdd9cc7afad7ae6eb5fd9ab7f95"><span></span><span class="n">ray_intersect_recursive</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a02bd9a3f32244e9da6f9ce982c2ff3"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">,</span>
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Line</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ACTION</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-a-a-b-b-tree-1-1-impl-1a171d0d348931883c997a966dd2cea220"><span></span><span class="n">line_intersect_recursive</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Line.html#doxid-classgeode-1-1-line"><span class="std std-ref">Line</span></a><span></span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">node_index</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_begin</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">element_end</span><span class="p">,</span>

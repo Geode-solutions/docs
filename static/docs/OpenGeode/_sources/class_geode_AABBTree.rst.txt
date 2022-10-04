@@ -63,7 +63,13 @@ Overview
 	
 		template <class EvalIntersection>
 		void :ref:`compute_ray_element_bbox_intersections<doxid-classgeode_1_1_a_a_b_b_tree_1a557f99f2a9fa9cb159c8508660694d05>`(
-			const :ref:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`<dimension>& ray,
+			const :ref:`Ray<doxid-classgeode_1_1_ray>`<dimension>& ray,
+			EvalIntersection& action
+			) const;
+	
+		template <class EvalIntersection>
+		void :ref:`compute_line_element_bbox_intersections<doxid-classgeode_1_1_a_a_b_b_tree_1af0479516b1697fe1c7335c050de94326>`(
+			const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line,
 			EvalIntersection& action
 			) const;
 	};
@@ -280,7 +286,7 @@ cur_element_box1 and cur_element_box2 are the element box indices that intersect
 
 	template <class EvalIntersection>
 	void compute_ray_element_bbox_intersections(
-		const :ref:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`<dimension>& ray,
+		const :ref:`Ray<doxid-classgeode_1_1_ray>`<dimension>& ray,
 		EvalIntersection& action
 		) const
 
@@ -304,6 +310,44 @@ the operator define what to do with the box ``cur_element_box`` if it is interse
 		- action
 
 		- The functor to run when a box is intersected by the ray.
+
+	*
+		- EvalIntersection
+
+		- this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;
+
+.. index:: pair: function; compute_line_element_bbox_intersections
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1af0479516b1697fe1c7335c050de94326:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <class EvalIntersection>
+	void compute_line_element_bbox_intersections(
+		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line,
+		EvalIntersection& action
+		) const
+
+Computes the intersections between a given infinite line and all element boxes.
+
+the operator define what to do with the box ``cur_element_box`` if it is intersected by the ``line``.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- line
+
+		- The line to test.
+
+	*
+		- action
+
+		- The functor to run when a box is intersected by the line.
 
 	*
 		- EvalIntersection

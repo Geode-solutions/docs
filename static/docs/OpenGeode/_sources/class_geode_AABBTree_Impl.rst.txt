@@ -60,7 +60,7 @@ AABB tree structure implementation The tree is store in s single vector followin
 			const ACTION& action
 			) const;
 	
-		template <class ACTION>
+		template <typename ACTION>
 		void :target:`bbox_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a01c0ec594996e95e61e16b731e3329be>`(
 			const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
@@ -69,7 +69,7 @@ AABB tree structure implementation The tree is store in s single vector followin
 			ACTION& action
 			) const;
 	
-		template <class ACTION>
+		template <typename ACTION>
 		void :target:`self_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a48b0cabc72837f0672ec1cc2462ed0c6>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index1,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin1,
@@ -80,7 +80,7 @@ AABB tree structure implementation The tree is store in s single vector followin
 			ACTION& action
 			) const;
 	
-		template <class ACTION>
+		template <typename ACTION>
 		void :target:`other_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a2e113823ceab581c463068468b231349>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index1,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin1,
@@ -92,9 +92,9 @@ AABB tree structure implementation The tree is store in s single vector followin
 			ACTION& action
 			) const;
 	
-		template <class ACTION>
-		void :target:`ray_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a6f01acdd9cc7afad7ae6eb5fd9ab7f95>`(
-			const :ref:`Ray<doxid-namespacegeode_1a4a02bd9a3f32244e9da6f9ce982c2ff3>`<dimension>& ray,
+		template <typename Line, typename ACTION>
+		void :target:`line_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a171d0d348931883c997a966dd2cea220>`(
+			const :ref:`Line<doxid-classgeode_1_1_line>`& line,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end,

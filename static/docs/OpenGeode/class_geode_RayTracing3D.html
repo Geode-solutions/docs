@@ -18,7 +18,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="struct geode::RayTracing3D::PolygonDistance" href="struct_geode_RayTracing3D_PolygonDistance.html" />
-    <link rel="prev" title="class geode::ProgressLoggerManager" href="class_geode_ProgressLoggerManager.html" />
+    <link rel="prev" title="template class geode::Ray" href="class_geode_Ray.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -50,11 +50,14 @@
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-ray-tracing3-d-1ad752690dfa9e2871c0ebb23519b478c7"><span></span><span class="n">RayTracing3D</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span> <span class="k">const</span> <span class="n">Ray3D</span><span class="o">&amp;</span> <span class="n">ray</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-ray-tracing3-d-1af1fb1b2d53b62939818a34f6dc865581"><span></span><span class="n">RayTracing3D</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span> <span class="k">const</span> <span class="n">InfiniteLine3D</span><span class="o">&amp;</span> <span class="n">infinite_line</span><span class="p">);</span>
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-ray-tracing3-d-1a8a21a4228b1d38626b199a29e18ec0d6"><span></span><span class="n">RayTracing3D</span></span><span></span><span class="p">(</span><span class="n">RayTracing3D</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
     <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_RayTracing3D_PolygonDistance.html#doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance"><span class="std std-ref">PolygonDistance</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-ray-tracing3-d-1a7eec1a682dd045f0f67999955400f97e"><span></span><span class="n">closest_polygon</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_RayTracing3D_PolygonDistance.html#doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance"><span class="std std-ref">PolygonDistance</span></a><span></span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-ray-tracing3-d-1a655cd7c64d68f108b0c83bcc8a45fe29"><span></span><span class="n">closest_polygons</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">size</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_RayTracing3D_PolygonDistance.html#doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance"><span class="std std-ref">PolygonDistance</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-ray-tracing3-d-1af1069e9c5277e8760ca700bcef74f956"><span></span><span class="n">all_intersections</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-ray-tracing3-d-1a6faefb2b6e03a48191229e2de63c7b0d"><span></span><span class="k">operator</span> <span class="p">()</span></span><span></span> <span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon_id</span><span class="p">);</span>
 <span class="p">};</span></pre>
 </section>

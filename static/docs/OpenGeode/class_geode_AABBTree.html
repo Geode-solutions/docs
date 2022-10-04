@@ -85,7 +85,13 @@
 
     <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1a557f99f2a9fa9cb159c8508660694d05"><span class="std std-ref">compute_ray_element_bbox_intersections</span></a><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a02bd9a3f32244e9da6f9ce982c2ff3"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Ray.html#doxid-classgeode-1-1-ray"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">,</span>
+        <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1af0479516b1697fe1c7335c050de94326"><span class="std std-ref">compute_line_element_bbox_intersections</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_InfiniteLine.html#doxid-classgeode-1-1-infinite-line"><span class="std std-ref">InfiniteLine</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">line</span><span class="p">,</span>
         <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
@@ -220,7 +226,7 @@
 </table>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-a-a-b-b-tree-1a557f99f2a9fa9cb159c8508660694d05"><span id="index-7"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">compute_ray_element_bbox_intersections</span><span class="p">(</span>
-    <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a02bd9a3f32244e9da6f9ce982c2ff3"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Ray.html#doxid-classgeode-1-1-ray"><span class="std std-ref">Ray</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">ray</span><span class="p">,</span>
     <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Computes the intersections between a given ray and all element boxes.</p>
@@ -237,6 +243,31 @@
 </tr>
 <tr class="row-even"><td><p>action</p></td>
 <td><p>The functor to run when a box is intersected by the ray.</p></td>
+</tr>
+<tr class="row-odd"><td><p>EvalIntersection</p></td>
+<td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-a-a-b-b-tree-1af0479516b1697fe1c7335c050de94326"><span id="index-8"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">compute_line_element_bbox_intersections</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_InfiniteLine.html#doxid-classgeode-1-1-infinite-line"><span class="std std-ref">InfiniteLine</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Computes the intersections between a given infinite line and all element boxes.</p>
+<p>the operator define what to do with the box <code class="docutils literal notranslate"><span class="pre">cur_element_box</span></code> if it is intersected by the <code class="docutils literal notranslate"><span class="pre">line</span></code>.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>line</p></td>
+<td><p>The line to test.</p></td>
+</tr>
+<tr class="row-even"><td><p>action</p></td>
+<td><p>The functor to run when a box is intersected by the line.</p></td>
 </tr>
 <tr class="row-odd"><td><p>EvalIntersection</p></td>
 <td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;</p></td>

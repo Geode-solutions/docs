@@ -44,12 +44,21 @@
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
-    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance-1adb5713cc2a6095fa01308556e4a7c87f"><span></span><span class="n">polygon</span></span><span></span><span class="p">;</span>
-    <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance-1a49d0e28493d5243094ecd98036c7b896"><span></span><span class="n">distance</span></span><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance-1adb5713cc2a6095fa01308556e4a7c87f"><span></span><span class="n">polygon</span></span><span></span> <span class="p">{</span> <span class="n">NO_ID</span> <span class="p">};</span>
+    <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance-1a49d0e28493d5243094ecd98036c7b896"><span></span><span class="n">distance</span></span><span></span> <span class="p">{</span> <span class="mi">0</span> <span class="p">};</span>
+    <a class="reference internal" href="enum_geode_Position.html#doxid-namespacegeode-1a316ec3486ec794c86021f0fea71f54a7"><span class="std std-ref">Position</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance-1a355643b661983229fc4c374bd0a757c5"><span></span><span class="n">position</span></span><span></span> <span class="p">{</span> <a class="reference internal" href="enum_geode_Position.html#doxid-namespacegeode-1a316ec3486ec794c86021f0fea71f54a7ac30163615770c8b2b8873288e828de41"><span class="std std-ref">Position::outside</span></a><span></span> <span class="p">};</span>
+    <span class="n">Point3D</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance-1a2a13aef29042546cda5a0fad9364455a"><span></span><span class="n">point</span></span><span></span><span class="p">;</span>
 
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance-1af7b673654375cadf20866a72950a4e60"><span></span><span class="n">PolygonDistance</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon_in</span><span class="p">,</span> <span class="kt">double</span> <span class="n">distance_in</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance-1a02bf8acfa48f777c6ecd5017c7fe9c80"><span></span><span class="n">PolygonDistance</span></span><span></span><span class="p">();</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-ray-tracing3-d-1-1-polygon-distance-1acb8c08c95ab727ddcfd0709231039197"><span></span><span class="n">PolygonDistance</span></span><span></span><span class="p">(</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon_in</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">distance_in</span><span class="p">,</span>
+        <a class="reference internal" href="enum_geode_Position.html#doxid-namespacegeode-1a316ec3486ec794c86021f0fea71f54a7"><span class="std std-ref">Position</span></a><span></span> <span class="n">position_in</span><span class="p">,</span>
+        <span class="n">Point3D</span> <span class="n">point_in</span>
+        <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
