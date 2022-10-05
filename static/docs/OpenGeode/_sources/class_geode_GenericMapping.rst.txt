@@ -22,6 +22,8 @@ template class geode::GenericMapping
 		// methods
 	
 		void :target:`map<doxid-classgeode_1_1_generic_mapping_1adca8007ae2f158072615d3cc372c4e64>`(const T1& in, const T2& out);
+		void :target:`erase_in<doxid-classgeode_1_1_generic_mapping_1aa539ea2d1ad36942c65630c13f8f0ac0>`(const T1& in);
+		void :target:`erase_out<doxid-classgeode_1_1_generic_mapping_1ab27042c907562ad339467ddcce030565>`(const T2& out);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`size_in<doxid-classgeode_1_1_generic_mapping_1a09e7fe59f128ade40c6b693dae5c6216>`() const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`size_out<doxid-classgeode_1_1_generic_mapping_1adb068b532b135bb06ca0d9218cb4530b>`() const;
 	};

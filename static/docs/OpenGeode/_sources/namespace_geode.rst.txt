@@ -1907,8 +1907,8 @@ Overview
 	template <typename SurfaceType = SurfaceMesh3D, typename SolidType = SolidMesh3D>
 	std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType>, std::unique_ptr<SolidType>> :target:`convert_brep_into_curve_and_surface_and_solid<doxid-namespacegeode_1a8770ad336e271b27011b7d3a2e48a052>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 
-	void opengeode_model_api :target:`filter_brep_components_with_regards_to_blocks<doxid-namespacegeode_1a53b909cb9eddd023eb488546551e1e6c>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
-	void opengeode_model_api :target:`filter_section_components_with_regards_to_surfaces<doxid-namespacegeode_1acfea5e8ddbea49332a7b5861ef8d6d23>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
+	std::vector<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`> opengeode_model_api :target:`filter_brep_components_with_regards_to_blocks<doxid-namespacegeode_1a43f80ad46dbb6c082f1ad06c0e08862f>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+	std::vector<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`> opengeode_model_api :target:`filter_section_components_with_regards_to_surfaces<doxid-namespacegeode_1a889febd90df1600a45e741d08596dff4>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
 
 	:ref:`BoundarySurfaceIntersections<doxid-namespacegeode_1aacd9631a015e823014e0fe6db1df2a95>` opengeode_mesh_api :target:`find_intersections_with_boundaries<doxid-namespacegeode_1a4056ec59e067795c45a649374bcb3710>`(
 		const InfiniteLine3D& infinite_line,
