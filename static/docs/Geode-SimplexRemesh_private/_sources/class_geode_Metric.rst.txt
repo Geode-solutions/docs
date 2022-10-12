@@ -31,4 +31,7 @@ Interface class for metric computation
 	class :ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`;
 
 	template <index_t dimension>
+	class :ref:`CustomGridMetric<doxid-classgeode_1_1_custom_grid_metric>`;
+
+	template <index_t dimension>
 	class :ref:`GridMetric<doxid-classgeode_1_1_grid_metric>`;

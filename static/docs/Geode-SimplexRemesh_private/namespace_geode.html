@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::BRepGridMetric" href="class_geode_BRepGridMetric.html" />
+    <link rel="next" title="namespace geode::detail" href="namespace_geode_detail.html" />
     <link rel="prev" title="Global Namespace" href="global.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -40,6 +40,10 @@
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">geode</span> <span class="p">{</span>
 
+<span class="c1">// namespaces</span>
+
+<span class="k">namespace</span> <a class="reference internal" href="namespace_geode_detail.html#doxid-namespacegeode-1-1detail"><span class="std std-ref">geode::detail</span></a><span></span><span class="p">;</span>
+
 <span class="c1">// typedefs</span>
 
 <span class="k">typedef</span> <span class="n">ModuleLicenseChecker</span><span class="o">&lt;</span><span class="n">SimplexRemesh</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6c8476bd8b2cfd844f1376d32811e38b"><span></span><span class="n">SimplexRemeshLicenseChecker</span></span><span></span><span class="p">;</span>
@@ -51,6 +55,9 @@
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_ConstantMetric.html#doxid-classgeode-1-1-constant-metric"><span class="std std-ref">ConstantMetric</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_CustomGridMetric.html#doxid-classgeode-1-1-custom-grid-metric"><span class="std std-ref">CustomGridMetric</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_GridMetric.html#doxid-classgeode-1-1-grid-metric"><span class="std std-ref">GridMetric</span></a><span></span><span class="p">;</span>
@@ -88,6 +95,7 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f0825f02564723bd52f856a1ae100c9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1adbb92314d98a39ec341c93260832bea0"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_simplexremesh_metric_api</span><span class="p">,</span> <span class="n">SimplexRemeshMetric</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae6e689ab449ad55fffa309d356c002a0"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_ConstantMetric.html#doxid-classgeode-1-1-constant-metric"><span class="std std-ref">ConstantMetric</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad52827c3ed9c1440ecaf3d17e40d432c"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_CustomGridMetric.html#doxid-classgeode-1-1-custom-grid-metric"><span class="std std-ref">CustomGridMetric</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a55897b30a3ff5e25684f4268a974caad"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PointSet</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a713615f1e1f632a857fbbda376b9b832"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Segment</span><span class="p">);</span>

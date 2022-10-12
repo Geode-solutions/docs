@@ -1,0 +1,33 @@
+.. index:: pair: namespace; geode::detail
+.. _doxid-namespacegeode_1_1detail:
+
+namespace geode::detail
+=======================
+
+.. toctree::
+	:hidden:
+
+	struct_geode_detail_RemeshOptions.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace detail {
+
+	// structs
+
+	struct :ref:`RemeshOptions<doxid-structgeode_1_1detail_1_1_remesh_options>`;
+
+	// global functions
+
+	std::tuple<BRep, ModelCopyMapping> geode_simplexremesh_brep_api :target:`remesh<doxid-namespacegeode_1_1detail_1ad3a312fb64f0f612de4d6aa92620f2cb>`(
+		const BRep& brep,
+		const Metric3D& metric,
+		const :ref:`RemeshOptions<doxid-structgeode_1_1detail_1_1_remesh_options>`& options
+		);
+
+	} // namespace detail

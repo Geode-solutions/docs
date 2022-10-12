@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::CustomGridMetric
+.. _doxid-classgeode_1_1_custom_grid_metric:
+
+template class geode::CustomGridMetric
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <custom_grid_metric.h>
+	
+	template <index_t dimension>
+	class CustomGridMetric: public :ref:`geode::Metric<doxid-classgeode_1_1_metric>`
+	{
+	public:
+		// construction
+	
+		:target:`CustomGridMetric<doxid-classgeode_1_1_custom_grid_metric_1a4a2fd6b377b8cf3147a1e7c4ad859e46>`(
+			const RegularGrid<dimension>& grid,
+			absl::string_view attribute_name
+			);
+
+		// methods
+	
+		virtual double :target:`metric<doxid-classgeode_1_1_custom_grid_metric_1a8042ae03c6756ab6d4840f064bab2b04>`(const Point<dimension>& point) const;
+		virtual double :target:`average_metric<doxid-classgeode_1_1_custom_grid_metric_1a3398a3cc88ec1e33cae5c789c5357dfa>`() const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		virtual double :ref:`metric<doxid-classgeode_1_1_metric_1ae7772ff36e4ab8e23abc1fca5f81e21b>`(const Point<dimension>& point) const = 0;
+		virtual double :ref:`average_metric<doxid-classgeode_1_1_metric_1a1ac98e57f631f4b5207a0223cfff6768>`() const = 0;
+
