@@ -28,5 +28,5 @@ Class for inspecting the manifold property of a SolidMesh
 	
 		bool :target:`mesh_facets_are_manifold<doxid-classgeode_1_1_solid_mesh_facet_manifold_1a0a16075cef8ff51eb93ab6c32a45801e>`() const;
 		index_t :target:`nb_non_manifold_facets<doxid-classgeode_1_1_solid_mesh_facet_manifold_1a16491b307ffd2e4b3fd7202c19acef12>`() const;
-		std::vector<absl::InlinedVector<index_t, 4>> :target:`non_manifold_facets<doxid-classgeode_1_1_solid_mesh_facet_manifold_1aa8fff6ba74b35a6b1bbf4ddf67d30420>`() const;
+		std::vector<PolyhedronFacetVertices> :target:`non_manifold_facets<doxid-classgeode_1_1_solid_mesh_facet_manifold_1a7be29b8ba22db4655f9b04a4ab721965>`() const;
 	};
