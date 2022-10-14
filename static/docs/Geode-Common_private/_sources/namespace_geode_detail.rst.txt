@@ -19,6 +19,13 @@ namespace geode::detail
 	// global functions
 
 	template <index_t dimension>
+	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a676a4b03e01efebae1fa872a4f756d49>`(
+		const EdgedCurve<dimension>& curve,
+		index_t edge,
+		const Point<dimension>& point
+		);
+
+	template <index_t dimension>
 	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a2e98db8963586adc8bd80aa6573c1bd0>`(
 		const SolidMesh<dimension>& solid,
 		index_t polyhedron,
