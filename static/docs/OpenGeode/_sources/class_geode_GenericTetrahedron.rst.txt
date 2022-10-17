@@ -42,6 +42,7 @@ template class geode::GenericTetrahedron
 		Point3D :target:`barycenter<doxid-classgeode_1_1_generic_tetrahedron_1a9b40dcb9b842bacbce80cff27d5bd60a>`() const;
 		void :target:`set_point<doxid-classgeode_1_1_generic_tetrahedron_1a118f2b9634c2eac18d7063571266aa16>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, const Point3D& point);
 		const std::array<PointType, 4>& :target:`vertices<doxid-classgeode_1_1_generic_tetrahedron_1ab24a752999faac87c47b26daee7861f7>`() const;
+		BoundingBox3D :target:`bounding_box<doxid-classgeode_1_1_generic_tetrahedron_1aed36afd3edb9abaa8528a040aaad2c24>`() const;
 	};
 
 	// direct descendants

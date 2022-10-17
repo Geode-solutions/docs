@@ -1015,11 +1015,13 @@ Overview
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1ac76f96b22af4f11192d59d689a5b9fd5>`(:ref:`OwnerRay<doxid-classgeode_1_1_owner_ray>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1adee3f5b6404028f81f0c5a3d20d83a10>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a2f7b6283f967b361d2b98479549e0d58>`(:ref:`Ray<doxid-classgeode_1_1_ray>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1ab55f25b88963e8ab70b35e318cb30b28>`(:ref:`OwnerSegment<doxid-classgeode_1_1_owner_segment>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a0796c77a7e943e3ad0e1848dafc42814>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afd24b32e35c77b2b7d28e6e402681ff3>`(:ref:`OwnerSphere<doxid-classgeode_1_1_owner_sphere>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abea6b522f3e44b741b8107092efcbd0b>`(:ref:`OwnerSphere<doxid-classgeode_1_1_owner_sphere>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a2ef1614f38ff6bbfa27ffe769235c4ee>`(:ref:`Sphere<doxid-classgeode_1_1_sphere>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a39927e08ed2d6703a8dbfd17781e7a19>`(:ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abb453314061448e9d6ed044da60d6cb6>`(:ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6bd5b8618c1a9a6ff0f6c60bb98fe807>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
@@ -1371,7 +1373,6 @@ Overview
 	void opengeode_mesh_api :ref:`register_mesh_serialize_pcontext<doxid-namespacegeode_1aa05925dcfcae1d0f42d06f0f9a8dfb8a>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_mesh_api :ref:`register_mesh_deserialize_pcontext<doxid-namespacegeode_1ad554073e01b714099ca0e253bdeee8e3>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_mesh_api :target:`register_geode_mesh<doxid-namespacegeode_1adce51211caa99c2211735c26faf6323e>`();
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abca05657b8eb6a446c79a4e841068fcf>`(:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a80ee0d83f9eb471e3d0a3066c343cb42>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a10bca5e5d2bdb673816feac3d71aab17>`(:ref:`OpenGeodeEdgedCurveBuilder<doxid-classgeode_1_1_open_geode_edged_curve_builder>`);
@@ -1964,7 +1965,6 @@ Overview
 	:target:`ALIAS_2D<doxid-namespacegeode_1a764b37be83e42f8680a9cb1c0ce3e2b1>`(:ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a775f43c93e557302fbaa359aa0af2f19>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`);
-	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a138f53359f6b0ed97828265b627ab688>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:ref:`BRep<doxid-classgeode_1_1_b_rep>` opengeode_model_api :ref:`load_brep<doxid-namespacegeode_1aa6aae08635ec147db4348b2aa375b46d>`(absl::string_view filename);
 	void opengeode_model_api :ref:`save_brep<doxid-namespacegeode_1a5740f1154ca1ae97b38be95bdf0caa3c>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, absl::string_view filename);
