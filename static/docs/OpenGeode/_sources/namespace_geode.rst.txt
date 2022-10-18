@@ -14,6 +14,8 @@ namespace geode
 	struct_geode_AttributeLinearInterpolation.rst
 	struct_geode_AttributeLinearInterpolationImpl.rst
 	struct_geode_AttributeLinearInterpolationImpl-2.rst
+	struct_geode_AttributeLinearInterpolationImpl-3.rst
+	struct_geode_AttributeLinearInterpolationImpl-4.rst
 	struct_geode_AttributeProperties.rst
 	struct_geode_BRepComponentMeshEdges.rst
 	struct_geode_BlockDefinition.rst
@@ -27,6 +29,8 @@ namespace geode
 	struct_geode_EdgeVertex.rst
 	struct_geode_GenericAttributeConversion.rst
 	struct_geode_GenericAttributeConversion-2.rst
+	struct_geode_GenericAttributeConversion-3.rst
+	struct_geode_GenericAttributeConversion-4.rst
 	struct_geode_IntersectionResult.rst
 	struct_geode_LineDefinition.rst
 	struct_geode_MeshEdge.rst
@@ -100,6 +104,7 @@ namespace geode
 	class_geode_GraphBuilder.rst
 	class_geode_GraphInput.rst
 	class_geode_GraphOutput.rst
+	class_geode_GreyscaleColor.rst
 	class_geode_Grid.rst
 	class_geode_GridBuilder.rst
 	class_geode_Growable.rst
@@ -185,6 +190,7 @@ namespace geode
 	class_geode_ProgressLogger.rst
 	class_geode_ProgressLoggerClient.rst
 	class_geode_ProgressLoggerManager.rst
+	class_geode_RGBColor.rst
 	class_geode_Ray.rst
 	class_geode_RayTracing3D.rst
 	class_geode_ReadOnlyAttribute.rst
@@ -355,6 +361,12 @@ Overview
 	template <index_t dimension>
 	struct :ref:`AttributeLinearInterpolationImpl<Point<dimension>><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_point_3_01dimension_01_4_01_4>`;
 
+	template <>
+	struct :ref:`AttributeLinearInterpolationImpl<RGBColor><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_r_g_b_color_01_4>`;
+
+	template <>
+	struct :ref:`AttributeLinearInterpolationImpl<GreyscaleColor><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_greyscale_color_01_4>`;
+
 	template <typename AttributeType>
 	struct :ref:`AttributeLinearInterpolationImpl<doxid-structgeode_1_1_attribute_linear_interpolation_impl>`;
 
@@ -375,6 +387,12 @@ Overview
 
 	template <index_t dimension>
 	struct :ref:`GenericAttributeConversion<Point<dimension>><doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4>`;
+
+	template <>
+	struct :ref:`GenericAttributeConversion<RGBColor><doxid-structgeode_1_1_generic_attribute_conversion_3_01_r_g_b_color_01_4>`;
+
+	template <>
+	struct :ref:`GenericAttributeConversion<GreyscaleColor><doxid-structgeode_1_1_generic_attribute_conversion_3_01_greyscale_color_01_4>`;
 
 	template <typename AttributeType>
 	struct :ref:`GenericAttributeConversion<doxid-structgeode_1_1_generic_attribute_conversion>`;
@@ -538,6 +556,7 @@ Overview
 	class :ref:`GraphBuilder<doxid-classgeode_1_1_graph_builder>`;
 	class :ref:`GraphInput<doxid-classgeode_1_1_graph_input>`;
 	class :ref:`GraphOutput<doxid-classgeode_1_1_graph_output>`;
+	class :ref:`GreyscaleColor<doxid-classgeode_1_1_greyscale_color>`;
 
 	template <index_t dimension>
 	class :ref:`Grid<doxid-classgeode_1_1_grid>`;
@@ -754,6 +773,7 @@ Overview
 	class :ref:`ProgressLogger<doxid-classgeode_1_1_progress_logger>`;
 	class :ref:`ProgressLoggerClient<doxid-classgeode_1_1_progress_logger_client>`;
 	class :ref:`ProgressLoggerManager<doxid-classgeode_1_1_progress_logger_manager>`;
+	class :ref:`RGBColor<doxid-classgeode_1_1_r_g_b_color>`;
 
 	template <index_t dimension>
 	class :ref:`Ray<doxid-classgeode_1_1_ray>`;
@@ -770,10 +790,10 @@ Overview
 	class :ref:`RegularGrid<2><doxid-classgeode_1_1_regular_grid_3_012_01_4>`;
 
 	template <>
-	class :ref:`RegularGridBuilder<2><doxid-classgeode_1_1_regular_grid_builder_3_012_01_4>`;
+	class :ref:`RegularGridBuilder<3><doxid-classgeode_1_1_regular_grid_builder_3_013_01_4>`;
 
 	template <>
-	class :ref:`RegularGridBuilder<3><doxid-classgeode_1_1_regular_grid_builder_3_013_01_4>`;
+	class :ref:`RegularGridBuilder<2><doxid-classgeode_1_1_regular_grid_builder_3_012_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`RegularGridInput<doxid-classgeode_1_1_regular_grid_input>`;
