@@ -21,4 +21,5 @@ class geode::Timer
 		// methods
 	
 		std::string :target:`duration<doxid-classgeode_1_1_timer_1a0f9bca97ad1fcf7c6938467caf06bf88>`() const;
+		void :target:`reset<doxid-classgeode_1_1_timer_1ac13da432adf55b475b4d0d63120b2731>`();
 	};
