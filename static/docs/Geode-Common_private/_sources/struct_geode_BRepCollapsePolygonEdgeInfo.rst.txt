@@ -31,6 +31,7 @@ Inherited Members
 	public:
 		// fields
 	
+		:ref:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>` :ref:`unique_vertex<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1adee1a09c5bced33a6e0dc53aef71c14f>`;
 		absl::flat_hash_map<uuid, absl::InlinedVector<index_t, 1>> :ref:`line_info<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1aadda68d6138cc8b1f8ab70c077971616>`;
 		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>`, 1>> :ref:`surface_info<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1ae43c8847dd6dee7998404f373503f996>`;
 
