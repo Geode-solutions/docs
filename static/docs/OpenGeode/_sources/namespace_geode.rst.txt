@@ -988,6 +988,7 @@ Overview
 	std::string opengeode_basic_api :target:`filename_with_extension<doxid-namespacegeode_1a00deaeb8544d7b897c2eeb80260c6bc6>`(absl::string_view path);
 	std::string opengeode_basic_api :target:`filename_without_extension<doxid-namespacegeode_1a9368b64fa9978d1188bab4c3ce416fde>`(absl::string_view path);
 	std::string opengeode_basic_api :target:`filepath_without_extension<doxid-namespacegeode_1aedd97cf95ccd0818defedbd18b3bc1cb>`(absl::string_view path);
+	std::string opengeode_basic_api :target:`filepath_without_filename<doxid-namespacegeode_1af1d51232824360f245712001faac916c>`(absl::string_view path);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a243e78e6a7219c043fb30dc4a798d930>`(opengeode_basic_api, OpenGeodeBasic);
 
 	template <typename Container>
