@@ -84,6 +84,10 @@ export default {
         cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a>",
       },
       {
+        extension: '.og_rgd3d',
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a>",
+      },
+      {
         extension: '.og_pts2d',
         cpp: "<a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet2D</code></a>",
       },
@@ -169,13 +173,13 @@ export default {
       },
       {
         extension: '.vtp (ascii, binary and encoded appendedData supported)',
-        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a> href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface2D</code></a>",
         in: true,
         out: false,
       },
       {
         extension: '.vtp (ascii only)',
-        cpp: "<a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet3D</code></a><br/><a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet3D</code></a><br/><a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a> href='/opengeode?page=class_geode_PointSet.html'><code>PointSet2D</code></a><br/><a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface2D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface2D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve2D</code></a>",
         in: false,
         out: true,
       },
@@ -196,6 +200,18 @@ export default {
         cpp: "<a href='/opengeode?page=class_geode_Section.html'><code>Section</code></a><br/><a href='/opengeode?page=class_geode_BRep.html'><code>BRep</code></a>",
         in: false,
         out: true,
+      },
+      {
+        extension: '.jpg',
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a>",
+        in: true,
+        out: false,
+      },
+      {
+        extension: '.png',
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a>",
+        in: true,
+        out: false,
       },
     ],
     formats_geosciencesio: [
@@ -232,6 +248,12 @@ export default {
       {
         extension: '.wl',
         cpp: "<a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a>",
+        in: true,
+        out: false,
+      },
+      {
+        extension: '.vo',
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a>",
         in: true,
         out: false,
       },
