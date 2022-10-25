@@ -181,13 +181,6 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af40a127c86216f0ba2c8d1276fe61644"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aaf755b9136ab518d12e2fa75dd8bdd12"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
 
-<a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ae6c593d0a7700b98143c840c6582c7ae"><span class="std std-ref">cut_along_patch</span></a><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
-    <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">,</span>
-    <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">patch</span>
-    <span class="p">);</span>
-
 <a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a6ede9860c6f3ee584c3027d348c51acf"><span class="std std-ref">cut_along_patch</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
     <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
@@ -628,35 +621,7 @@
 <span id="details-namespacegeode"></span><h2>Detailed Documentation</h2>
 <section id="global-functions">
 <h3>Global Functions</h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae6c593d0a7700b98143c840c6582c7ae"><span id="index-1"></span><a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_patch</span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
-    <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
-    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span><span class="p">,</span>
-    <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">patch</span>
-    <span class="p">)</span></pre>
-<p>Perform a TetrahedralSolid3D planar cut along a triangle given the patch cut information.</p>
-<p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>solid</p></td>
-<td><p>TetrahedralSolid to cut</p></td>
-</tr>
-<tr class="row-even"><td><p>builder</p></td>
-<td><p>Builder of the Solid</p></td>
-</tr>
-<tr class="row-odd"><td><p>triangle</p></td>
-<td><p>The triangle corresponding to the patch to insert in solid</p></td>
-</tr>
-<tr class="row-even"><td><p>patch</p></td>
-<td><p>Patch cut information &#64;warn Cut tetrahedra are set as inactive but not deleted.</p></td>
-</tr>
-</tbody>
-</table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6ede9860c6f3ee584c3027d348c51acf"><span id="index-2"></span><a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_patch</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6ede9860c6f3ee584c3027d348c51acf"><span id="index-1"></span><a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_patch</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
     <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">PatchFrontEdge</span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
@@ -684,7 +649,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a0ead8515ad1babd6030021fc91093a81"><span id="index-3"></span><a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_path</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a0ead8515ad1babd6030021fc91093a81"><span id="index-2"></span><a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_path</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
     <span class="n">TetrahedralSolidBuilder3D</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
@@ -710,7 +675,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1afc0b8a8e317fbc02d3c18de4c2486d41"><span id="index-4"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_tetrahedron_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1afc0b8a8e317fbc02d3c18de4c2486d41"><span id="index-3"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_tetrahedron_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -736,7 +701,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if split will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a97acc33da20c851fdc46d60772408242"><span id="index-5"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_facet_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a97acc33da20c851fdc46d60772408242"><span id="index-4"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_facet_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -762,7 +727,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if split will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2c3c4b981719e5d75e8c34e800171357"><span id="index-6"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_facet_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2c3c4b981719e5d75e8c34e800171357"><span id="index-5"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_facet_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -788,7 +753,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if split will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a096165e6f54f3a665f7464eeefa71ff2"><span id="index-7"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_edge_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a096165e6f54f3a665f7464eeefa71ff2"><span id="index-6"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_edge_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -814,7 +779,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if split will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5a4fb7995d3b14826afe95a2c3b5da72"><span id="index-8"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_edge_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5a4fb7995d3b14826afe95a2c3b5da72"><span id="index-7"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_edge_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -840,7 +805,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if split will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af5a94c02dd07a63d0cb5ab5bd68ed7d7"><span id="index-9"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af5a94c02dd07a63d0cb5ab5bd68ed7d7"><span id="index-8"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -866,7 +831,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if collapse will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae74efa8e93eea46fbccc7c34c0955562"><span id="index-10"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae74efa8e93eea46fbccc7c34c0955562"><span id="index-9"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -892,7 +857,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if collapse will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aed4b501b78fd82d3c2cab6272381d223"><span id="index-11"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_swap_facet_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aed4b501b78fd82d3c2cab6272381d223"><span id="index-10"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_swap_facet_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span>
     <span class="p">)</span></pre>
@@ -914,7 +879,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if swap facet will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a79c4347d68c4e0c99b5e69ca7e5eb825"><span id="index-12"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_swap_edge_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a79c4347d68c4e0c99b5e69ca7e5eb825"><span id="index-11"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_swap_edge_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">apex</span>
@@ -940,7 +905,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if swap edge will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa61511c32d947c0e24e9a0558b587d4e"><span id="index-13"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_move_point_valid</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa61511c32d947c0e24e9a0558b587d4e"><span id="index-12"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_move_point_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -966,7 +931,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if vertex relocation will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1abd85b67704e77c042031ab82876bf2f1"><span id="index-14"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_tetrahedron</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1abd85b67704e77c042031ab82876bf2f1"><span id="index-13"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_tetrahedron</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -990,7 +955,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a1ce65cd1c3cec12cdb1f1b6ae08c68c8"><span id="index-15"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_facet</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a1ce65cd1c3cec12cdb1f1b6ae08c68c8"><span id="index-14"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_facet</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -1014,7 +979,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a782b92e44eba646be3ed350a618d35b0"><span id="index-16"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_facet</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a782b92e44eba646be3ed350a618d35b0"><span id="index-15"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_facet</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -1038,7 +1003,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4e480e8866b4619ab3ef224b09fef91d"><span id="index-17"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_edge</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4e480e8866b4619ab3ef224b09fef91d"><span id="index-16"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -1062,7 +1027,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a737fae3708b1c93277ab3ffae315e483"><span id="index-18"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_edge</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a737fae3708b1c93277ab3ffae315e483"><span id="index-17"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -1086,7 +1051,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a42999335f1f2a977cd185761f0c89d32"><span id="index-19"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_collapse_edge</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a42999335f1f2a977cd185761f0c89d32"><span id="index-18"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_collapse_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -1110,7 +1075,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ad30af208881ccc28c485560fe7f47703"><span id="index-20"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_collapse_edge</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ad30af208881ccc28c485560fe7f47703"><span id="index-19"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_collapse_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -1134,7 +1099,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a187dee7315c9d67797faa4248372a943"><span id="index-21"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_swap_facet</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a187dee7315c9d67797faa4248372a943"><span id="index-20"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_swap_facet</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span>
     <span class="p">)</span></pre>
@@ -1157,7 +1122,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a441d9f68d977b6035497ea52e73b10e8"><span id="index-22"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_swap_edge</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a441d9f68d977b6035497ea52e73b10e8"><span id="index-21"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_swap_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">apex</span>
@@ -1181,7 +1146,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2cf90096eea87b7c53ac0693200801c8"><span id="index-23"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_move_point</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2cf90096eea87b7c53ac0693200801c8"><span id="index-22"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_move_point</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
@@ -1205,7 +1170,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1adf7d901f6e5bd81513781732d5780b96"><span id="index-24"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1adf7d901f6e5bd81513781732d5780b96"><span id="index-23"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">bool</span> <span class="n">is_split_triangle_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
@@ -1232,7 +1197,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if split will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a892c0863555c3da84f80ae66543e23c3"><span id="index-25"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a892c0863555c3da84f80ae66543e23c3"><span id="index-24"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">bool</span> <span class="n">is_split_edge_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
@@ -1259,7 +1224,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if split will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a8ca976ae932a79bf0006a638ead4e599"><span id="index-26"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a8ca976ae932a79bf0006a638ead4e599"><span id="index-25"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">bool</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
@@ -1286,7 +1251,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if collapse will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a9e4e1df9da006fdc32923b7461d69902"><span id="index-27"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a9e4e1df9da006fdc32923b7461d69902"><span id="index-26"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">bool</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
@@ -1313,7 +1278,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if collapse will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1addc95a23afc2f3867f288a549fa3fbf7"><span id="index-28"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1addc95a23afc2f3867f288a549fa3fbf7"><span id="index-27"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">bool</span> <span class="n">is_swap_edge_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
@@ -1336,7 +1301,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if swap edge will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a20611982454e1f7dbc86eb9cd6fd6d9e"><span id="index-29"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a20611982454e1f7dbc86eb9cd6fd6d9e"><span id="index-28"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">bool</span> <span class="n">is_move_point_valid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
@@ -1363,7 +1328,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>true if vertex relocation will keep mesh valid.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a46de1238fbbcaadb42345226395d286a"><span id="index-30"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a46de1238fbbcaadb42345226395d286a"><span id="index-29"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">triangles_after_split_triangle</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
@@ -1388,7 +1353,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6b651fc62971c7c1c55bfa285c9e7541"><span id="index-31"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6b651fc62971c7c1c55bfa285c9e7541"><span id="index-30"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_split_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
@@ -1413,7 +1378,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a18953f8218ad0aace2d0b7298c79a859"><span id="index-32"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a18953f8218ad0aace2d0b7298c79a859"><span id="index-31"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_collapse_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
@@ -1438,7 +1403,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ac4732aa3dc1d98f2e70051f35eedc819"><span id="index-33"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ac4732aa3dc1d98f2e70051f35eedc819"><span id="index-32"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_collapse_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
@@ -1463,7 +1428,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af7bfff60df9c5fbe4d2e71bc947745c8"><span id="index-34"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af7bfff60df9c5fbe4d2e71bc947745c8"><span id="index-33"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_swap_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
@@ -1484,7 +1449,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2707eca5087583862d082826e99abef0"><span id="index-35"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2707eca5087583862d082826e99abef0"><span id="index-34"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_move_point</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>

@@ -216,13 +216,6 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1aaf755b9136ab518d12e2fa75dd8bdd12>`(Triangle);
 
-	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api :ref:`cut_along_patch<doxid-namespacegeode_1ae6c593d0a7700b98143c840c6582c7ae>`(
-		const TetrahedralSolid3D& solid,
-		TetrahedralSolidBuilder3D& builder,
-		const Triangle3D& triangle,
-		TriangulatedSurface3D& patch
-		);
-
 	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api :ref:`cut_along_patch<doxid-namespacegeode_1a6ede9860c6f3ee584c3027d348c51acf>`(
 		const TetrahedralSolid3D& solid,
 		TetrahedralSolidBuilder3D& builder,
@@ -667,48 +660,6 @@ Detailed Documentation
 
 Global Functions
 ----------------
-
-.. index:: pair: function; cut_along_patch
-.. _doxid-namespacegeode_1ae6c593d0a7700b98143c840c6582c7ae:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api cut_along_patch(
-		const TetrahedralSolid3D& solid,
-		TetrahedralSolidBuilder3D& builder,
-		const Triangle3D& triangle,
-		TriangulatedSurface3D& patch
-		)
-
-Perform a TetrahedralSolid3D planar cut along a triangle given the patch cut information.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- solid
-
-		- TetrahedralSolid to cut
-
-	*
-		- builder
-
-		- Builder of the Solid
-
-	*
-		- triangle
-
-		- The triangle corresponding to the patch to insert in solid
-
-	*
-		- patch
-
-		- Patch cut information @warn Cut tetrahedra are set as inactive but not deleted.
 
 .. index:: pair: function; cut_along_patch
 .. _doxid-namespacegeode_1a6ede9860c6f3ee584c3027d348c51acf:
