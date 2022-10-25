@@ -24,4 +24,5 @@ struct geode::SolidCutPatchInfo
 		std::vector<:ref:`FacetMultiMapping<doxid-namespacegeode_1a9f8b3d4c75c6f9208940640c573c9e5a>`> :target:`facets_across<doxid-structgeode_1_1_solid_cut_patch_info_1ac6b0d22c67cf4017e114e739c1e46a80>`;
 		std::vector<:ref:`EdgeMultiMapping<doxid-namespacegeode_1a940546afc1c9ff9d7a0285a1377285c5>`> :target:`edges<doxid-structgeode_1_1_solid_cut_patch_info_1a1ca6c18c1c5c5d32ad4f73703a5bece0>`;
 		std::vector<:ref:`TetrahedronMapping<doxid-namespacegeode_1a06665a8e2f6484c2bcaa061ae3b04ca5>`> :target:`tetrahedra<doxid-structgeode_1_1_solid_cut_patch_info_1a8de0b9c24e76e8a44285d30cda0609c6>`;
+		std::vector<index_t> :target:`small_edges<doxid-structgeode_1_1_solid_cut_patch_info_1aafdfd27415808ef6574ba63c718647c2>`;
 	};
