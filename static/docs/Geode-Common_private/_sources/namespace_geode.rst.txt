@@ -396,6 +396,13 @@ Overview
 		const Point3D& point
 		);
 
+	absl::flat_hash_map<uuid, std::vector<Triangle3D>> :target:`triangles_after_collapse_edge<doxid-namespacegeode_1a4be0c62f61984f198b6b664c911ed987>`(
+		const BRep& brep,
+		const Surface3D& surface,
+		const PolygonEdge& edge,
+		const Point3D& point
+		);
+
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a60bc4102ba1f8bc955e2d5c99bb03828>`(geode_common_modifier_model_api, CommonModifierModel);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(Line);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
