@@ -396,7 +396,7 @@ Overview
 		const Point3D& point
 		);
 
-	absl::flat_hash_map<uuid, std::vector<Triangle3D>> :target:`triangles_after_collapse_edge<doxid-namespacegeode_1a4be0c62f61984f198b6b664c911ed987>`(
+	absl::flat_hash_map<uuid, std::vector<Triangle3D>> geode_common_modifier_model_api :target:`triangles_after_collapse_edge<doxid-namespacegeode_1a73668253cb5a0c4e7f670d479f644f59>`(
 		const BRep& brep,
 		const Surface3D& surface,
 		const PolygonEdge& edge,
