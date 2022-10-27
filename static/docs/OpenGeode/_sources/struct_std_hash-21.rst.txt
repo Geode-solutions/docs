@@ -1,0 +1,24 @@
+.. index:: pair: struct; std::hash<geode::MeshPolygon>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_mesh_polygon_01_4:
+
+template struct std::hash<geode::MeshPolygon>
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <mesh_element.h>
+	
+	template <>
+	struct hash<geode::MeshPolygon>
+	{
+		// methods
+	
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_mesh_polygon_01_4_1a677d2d2f0f3395a9a835636e6847ecec>` (const :ref:`geode::MeshPolygon<doxid-structgeode_1_1_mesh_polygon>`& mesh_polygon) const;
+	};

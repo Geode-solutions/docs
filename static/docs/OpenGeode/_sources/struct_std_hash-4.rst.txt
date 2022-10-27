@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::PolygonEdge>
-.. _doxid-structstd_1_1hash_3_01geode_1_1_polygon_edge_01_4:
+.. index:: pair: struct; std::hash<geode::Point3D>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_point3_d_01_4:
 
-template struct std::hash<geode::PolygonEdge>
-=============================================
+template struct std::hash<geode::Point3D>
+=========================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct std::hash<geode::PolygonEdge>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <surface_mesh.h>
+	#include <point.h>
 	
 	template <>
-	struct hash<geode::PolygonEdge>
+	struct hash<geode::Point3D>
 	{
 		// methods
 	
-		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_polygon_edge_01_4_1a032f384131a827af3b12a7f810af356b>` (const :ref:`geode::PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_point3_d_01_4_1a14860ddecb39eb1240f7d36b81aab3e9>` (const geode::Point3D& point) const;
 	};
