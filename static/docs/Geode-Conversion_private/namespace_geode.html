@@ -58,15 +58,22 @@
 
 <span class="kt">void</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af824d8001dd7c0a95398f4811ac40d32"><span></span><span class="n">build_blocks</span></span><span></span><span class="p">(</span><span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0508a634edded691d15457985d1bfd10"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_conversion_model_api</span><span class="p">,</span> <span class="n">ConversionModel</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa9eca13715aca2567523b81021cda51a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac3422b630458dde4bc69498508c56e4e"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8494fd593c0c13b77aa7c916bb8662e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8ac5cec34b9c5986e0c83548aeb19f2d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b78e29335d938bae6153ff18f271541"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a775f43c93e557302fbaa359aa0af2f19"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
-<span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a7fa8e8933f7d3acd7930bad19d87e79a"><span class="std std-ref">convert_surface_into_brep</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&gt;&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab636f1e91aa498007e1fab1c3c3de778"><span class="std std-ref">convert_surfaces_into_brep</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;&amp;</span> <span class="n">surfaces</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ComponentMeshElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ac79deb3d85a612315e3727afd0475daa"><span class="std std-ref">convert_surface_into_brep</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ComponentMeshElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a0c772d2a21fc999bae130782b86f026f"><span class="std std-ref">convert_surfaces_into_brep</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;</span> <span class="n">surfaces</span><span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ComponentMeshElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a9b241eb2831ef6fa996a14232ab892dc"><span class="std std-ref">convert_curves_and_surfaces_into_brep</span></a><span></span><span class="p">(</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">EdgedCurve3D</span><span class="o">&gt;&gt;</span> <span class="n">curves</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;</span> <span class="n">surfaces</span>
+    <span class="p">);</span>
+
 <span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1acee492fff074e02fa81aebd8aab70e6b"><span class="std std-ref">convert_solid_into_brep_from_adjacencies</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">);</span>
 
 <span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a92d35cbc4515b193913214a9fb29e2f4"><span class="std std-ref">convert_solid_into_brep_from_attribute</span></a><span></span><span class="p">(</span>
@@ -74,7 +81,7 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelGenericMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ab8639dfe33e5f30350fe42bbe9c404fb"><span class="std std-ref">add_sharp_features</span></a><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ComponentMeshElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a6b64ed1684bf5f969f4d8267192fd978"><span class="std std-ref">add_sharp_features</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
     <span class="kt">double</span> <span class="n">max_angle</span>
     <span class="p">);</span>
@@ -93,7 +100,7 @@
 <span id="details-namespacegeode"></span><h2>Detailed Documentation</h2>
 <section id="global-functions">
 <h3>Global Functions</h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7fa8e8933f7d3acd7930bad19d87e79a"><span id="index-1"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surface_into_brep</span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ac79deb3d85a612315e3727afd0475daa"><span id="index-1"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ComponentMeshElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surface_into_brep</span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">)</span></pre>
 <p>Convert a SurfaceMesh3D into a BRep, without meshed Blocks. This function uses the adjacencies between surface polygons to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to SurfaceMesh3D edges shared by 1 or more than 2 polygons, or by 2 polygons if there are not set as adjacent.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
@@ -107,7 +114,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab636f1e91aa498007e1fab1c3c3de778"><span id="index-2"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&gt;&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surfaces_into_brep</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;&amp;</span> <span class="n">surfaces</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a0c772d2a21fc999bae130782b86f026f"><span id="index-2"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ComponentMeshElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surfaces_into_brep</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;</span> <span class="n">surfaces</span><span class="p">)</span></pre>
 <p>Convert a set of SurfaceMesh3D into a BRep, without meshed Blocks. This function first merged the input surfaces together and then uses the adjacencies between surface polygons to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to merged SurfaceMesh3D edges shared by 1 or more than 2 polygons, or by 2 polygons if there are not set as adjacent.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
@@ -123,7 +130,29 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>the BRep and the mapping between input surfaces and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1acee492fff074e02fa81aebd8aab70e6b"><span id="index-3"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_solid_into_brep_from_adjacencies</span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a9b241eb2831ef6fa996a14232ab892dc"><span id="index-3"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ComponentMeshElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_curves_and_surfaces_into_brep</span><span class="p">(</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">EdgedCurve3D</span><span class="o">&gt;&gt;</span> <span class="n">curves</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;</span> <span class="n">surfaces</span>
+    <span class="p">)</span></pre>
+<p>Convert a set of EdgedCurve3D and SurfaceMesh3D into a BRep, without meshed Blocks. This function first merges the input surfaces together and then uses the adjacencies between surface polygons and the given curves to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to merged SurfaceMesh3D edges shared by 1 or more than 2 polygons, by 2 polygons if there are not set as adjacent, or by Curve edges.</p>
+<p class="rubric">Parameters:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>curves</p></td>
+<td><p>Input curves</p></td>
+</tr>
+<tr class="row-even"><td><p>surfaces</p></td>
+<td><p>Input surfaces</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the BRep and the mapping between input curves and surfaces and Line and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1acee492fff074e02fa81aebd8aab70e6b"><span id="index-4"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_solid_into_brep_from_adjacencies</span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">)</span></pre>
 <p>Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses the adjacencies between solid polyhedra to determine BRep Block extensions and, as a consequence, geometries of BRep Surfaces. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra if they are not set as adjacent.</p>
 <p class="rubric">Parameters:</p>
 <table class="colwidths-given docutils align-default">
@@ -137,7 +166,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a92d35cbc4515b193913214a9fb29e2f4"><span id="index-4"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_solid_into_brep_from_attribute</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a92d35cbc4515b193913214a9fb29e2f4"><span id="index-5"></span><span></span><span class="n">BRep</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_solid_into_brep_from_attribute</span><span class="p">(</span>
     <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">)</span></pre>
@@ -157,7 +186,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab8639dfe33e5f30350fe42bbe9c404fb"><span id="index-5"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelGenericMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">add_sharp_features</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6b64ed1684bf5f969f4d8267192fd978"><span id="index-6"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ComponentMeshElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">add_sharp_features</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
     <span class="kt">double</span> <span class="n">max_angle</span>
     <span class="p">)</span></pre>
@@ -177,7 +206,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4cd6697bea5e1468859e6c1d301eb324"><span id="index-6"></span><span></span><span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surface_into_section_from_attribute</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4cd6697bea5e1468859e6c1d301eb324"><span id="index-7"></span><span></span><span class="n">Section</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_surface_into_section_from_attribute</span><span class="p">(</span>
     <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">)</span></pre>

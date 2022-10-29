@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::detail::BRepFromMeshBuilder" href="class_geode_detail_BRepFromMeshBuilder.html" />
+    <link rel="next" title="class geode::detail::BRepFromMeshesBuilder" href="class_geode_detail_BRepFromMeshesBuilder.html" />
     <link rel="prev" title="namespace geode" href="namespace_geode.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -42,6 +42,8 @@
 
 <span class="c1">// typedefs</span>
 
+<span class="k">typedef</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilderFromMeshes.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-from-meshes"><span class="std std-ref">CornersLinesBuilderFromMeshes</span></a><span></span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">BRepBuilder</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a16ab59f07d6fabe9d70334a1f2030117"><span></span><span class="n">BRepCornersLinesBuilderFromMeshes</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilderFromMeshes.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-from-meshes"><span class="std std-ref">CornersLinesBuilderFromMeshes</span></a><span></span><span class="o">&lt;</span><span class="n">Section</span><span class="p">,</span> <span class="n">SectionBuilder</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a8d7ee5b0f57216cba10f3a2fed3689fc"><span></span><span class="n">SectionCornersLinesBuilderFromMeshes</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilderFromModel.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-from-model"><span class="std std-ref">CornersLinesBuilderFromModel</span></a><span></span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">BRepBuilder</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a91f257d0ae1a7c6e839d81fc51e9d845"><span></span><span class="n">CornersLinesBuilderFromBRep</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilderFromModel.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-from-model"><span class="std std-ref">CornersLinesBuilderFromModel</span></a><span></span><span class="o">&lt;</span><span class="n">Section</span><span class="p">,</span> <span class="n">SectionBuilder</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ade2b98bccc534d39c2c83763ad6f1839"><span></span><span class="n">CornersLinesBuilderFromSection</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilderFromSolid.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-from-solid"><span class="std std-ref">CornersLinesBuilderFromSolid</span></a><span></span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">BRepBuilder</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a29554aed5867d2e153906ac874fd2130"><span></span><span class="n">BRepCornersLinesBuilderFromSolid</span></span><span></span><span class="p">;</span>
@@ -50,12 +52,16 @@
 
 <span class="c1">// classes</span>
 
-<span class="k">class</span> <a class="reference internal" href="class_geode_detail_BRepFromMeshBuilder.html#doxid-classgeode-1-1detail-1-1-b-rep-from-mesh-builder"><span class="std std-ref">BRepFromMeshBuilder</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_BRepFromMeshesBuilder.html#doxid-classgeode-1-1detail-1-1-b-rep-from-meshes-builder"><span class="std std-ref">BRepFromMeshesBuilder</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_BRepFromSolidAdjacenciesBuilder.html#doxid-classgeode-1-1detail-1-1-b-rep-from-solid-adjacencies-builder"><span class="std std-ref">BRepFromSolidAdjacenciesBuilder</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_BRepFromSolidElementsBuilder.html#doxid-classgeode-1-1detail-1-1-b-rep-from-solid-elements-builder"><span class="std std-ref">BRepFromSolidElementsBuilder</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_BRepFromSurfaceBuilder.html#doxid-classgeode-1-1detail-1-1-b-rep-from-surface-builder"><span class="std std-ref">BRepFromSurfaceBuilder</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelBuilder</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder"><span class="std std-ref">CornersLinesBuilder</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelBuilder</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilderFromMeshes.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-from-meshes"><span class="std std-ref">CornersLinesBuilderFromMeshes</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="p">,</span> <span class="k">typename</span> <span class="n">ModelBuilder</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilderFromModel.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-from-model"><span class="std std-ref">CornersLinesBuilderFromModel</span></a><span></span><span class="p">;</span>
@@ -77,11 +83,6 @@
 <span class="c1">// global functions</span>
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ae0a99fcb13877e208a070d8a56ce9640"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_detail_SurfaceIdentifier.html#doxid-classgeode-1-1detail-1-1-surface-identifier"><span class="std std-ref">SurfaceIdentifier</span></a><span></span><span class="p">);</span>
-
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&gt;&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ac0b189295eedb8e3769684b5430398cd"><span></span><span class="n">advanced_convert_surfaces_into_brep</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;&amp;</span> <span class="n">surfaces</span><span class="p">,</span>
-    <span class="kt">double</span> <span class="n">distance</span>
-    <span class="p">);</span>
 
 <span class="p">}</span> <span class="c1">// namespace detail</span></pre>
 </section>

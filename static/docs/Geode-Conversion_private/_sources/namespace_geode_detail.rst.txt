@@ -7,10 +7,12 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
-	class_geode_detail_BRepFromMeshBuilder.rst
+	class_geode_detail_BRepFromMeshesBuilder.rst
 	class_geode_detail_BRepFromSolidAdjacenciesBuilder.rst
 	class_geode_detail_BRepFromSolidElementsBuilder.rst
+	class_geode_detail_BRepFromSurfaceBuilder.rst
 	class_geode_detail_CornersLinesBuilder.rst
+	class_geode_detail_CornersLinesBuilderFromMeshes.rst
 	class_geode_detail_CornersLinesBuilderFromModel.rst
 	class_geode_detail_CornersLinesBuilderFromSolid.rst
 	class_geode_detail_CornersLinesBuilderFromSurface.rst
@@ -31,6 +33,8 @@ namespace geode::detail
 
 	// typedefs
 
+	typedef :ref:`CornersLinesBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes>`<BRep, BRepBuilder, 3> :target:`BRepCornersLinesBuilderFromMeshes<doxid-namespacegeode_1_1detail_1a16ab59f07d6fabe9d70334a1f2030117>`;
+	typedef :ref:`CornersLinesBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes>`<Section, SectionBuilder, 2> :target:`SectionCornersLinesBuilderFromMeshes<doxid-namespacegeode_1_1detail_1a8d7ee5b0f57216cba10f3a2fed3689fc>`;
 	typedef :ref:`CornersLinesBuilderFromModel<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_model>`<BRep, BRepBuilder, 3> :target:`CornersLinesBuilderFromBRep<doxid-namespacegeode_1_1detail_1a91f257d0ae1a7c6e839d81fc51e9d845>`;
 	typedef :ref:`CornersLinesBuilderFromModel<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_model>`<Section, SectionBuilder, 2> :target:`CornersLinesBuilderFromSection<doxid-namespacegeode_1_1detail_1ade2b98bccc534d39c2c83763ad6f1839>`;
 	typedef :ref:`CornersLinesBuilderFromSolid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_solid>`<BRep, BRepBuilder> :target:`BRepCornersLinesBuilderFromSolid<doxid-namespacegeode_1_1detail_1a29554aed5867d2e153906ac874fd2130>`;
@@ -39,12 +43,16 @@ namespace geode::detail
 
 	// classes
 
-	class :ref:`BRepFromMeshBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_mesh_builder>`;
+	class :ref:`BRepFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder>`;
 	class :ref:`BRepFromSolidAdjacenciesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_adjacencies_builder>`;
 	class :ref:`BRepFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder>`;
+	class :ref:`BRepFromSurfaceBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_surface_builder>`;
 
 	template <typename Model, typename ModelBuilder, index_t dimension>
 	class :ref:`CornersLinesBuilder<doxid-classgeode_1_1detail_1_1_corners_lines_builder>`;
+
+	template <typename Model, typename ModelBuilder, index_t dimension>
+	class :ref:`CornersLinesBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes>`;
 
 	template <typename Model, typename ModelBuilder, index_t dimension>
 	class :ref:`CornersLinesBuilderFromModel<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_model>`;
@@ -66,10 +74,5 @@ namespace geode::detail
 	// global functions
 
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1_1detail_1ae0a99fcb13877e208a070d8a56ce9640>`(:ref:`SurfaceIdentifier<doxid-classgeode_1_1detail_1_1_surface_identifier>`);
-
-	std::tuple<BRep, absl::FixedArray<absl::InlinedVector<uuid, 1>>> geode_conversion_model_api :target:`advanced_convert_surfaces_into_brep<doxid-namespacegeode_1_1detail_1ac0b189295eedb8e3769684b5430398cd>`(
-		const std::vector<std::reference_wrapper<const SurfaceMesh3D>>& surfaces,
-		double distance
-		);
 
 	} // namespace detail

@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::BRepFromMeshesBuilder
+.. _doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder:
+
+class geode::detail::BRepFromMeshesBuilder
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_from_meshes_builder.h>
+	
+	class BRepFromMeshesBuilder
+	{
+	public:
+		// construction
+	
+		:target:`BRepFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder_1a9089440cedccfc25c8566db5e8c755c4>`(
+			BRep& brep,
+			absl::Span<const std::reference_wrapper<const EdgedCurve3D>> curves,
+			absl::Span<const std::reference_wrapper<const SurfaceMesh3D>> surfaces
+			);
+
+		// methods
+	
+		std::pair<ComponentMeshVertexMapping, ComponentMeshElementMapping> :target:`build<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder_1abe641c231655ac49ffd1c6ff19857296>`();
+	};

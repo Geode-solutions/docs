@@ -37,6 +37,9 @@ template class geode::detail::CornersLinesBuilder
 	// direct descendants
 
 	template <typename Model, typename ModelBuilder, index_t dimension>
+	class :ref:`CornersLinesBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes>`;
+
+	template <typename Model, typename ModelBuilder, index_t dimension>
 	class :ref:`CornersLinesBuilderFromModel<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_model>`;
 
 	template <typename Model, typename ModelBuilder, index_t dimension>
