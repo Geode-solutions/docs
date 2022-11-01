@@ -1904,10 +1904,40 @@ Overview
 		);
 
 	void opengeode_model_api :target:`convert_surface_meshes_into_triangulated_surfaces<doxid-namespacegeode_1a36c5dede7d04df0ccda26ff36e23ddab>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
+	void opengeode_model_api :target:`convert_surface_meshes_into_triangulated_surfaces<doxid-namespacegeode_1ad2aec6aea84ff200432d79406f203f3c>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+		:ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`& builder
+		);
+
 	void opengeode_model_api :target:`convert_surface_meshes_into_triangulated_surfaces<doxid-namespacegeode_1a56ebff95719334e0394bf1a20957d59d>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
+
+	void opengeode_model_api :target:`convert_surface_meshes_into_triangulated_surfaces<doxid-namespacegeode_1a25f5d0ef69a5656d256682538cc195ea>`(
+		const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+		:ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`& builder
+		);
+
 	void opengeode_model_api :target:`convert_block_meshes_into_tetrahedral_solids<doxid-namespacegeode_1a50185e6f94e236ed316b6c14fc5f8688>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
+	void opengeode_model_api :target:`convert_block_meshes_into_tetrahedral_solids<doxid-namespacegeode_1a9ff3d262e4e102b6e3901c82a4522eaa>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+		:ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`& builder
+		);
+
 	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1a250abe68306f3ff924e11ca40db2e0ed>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
+	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1a9eec1060d3925833f87b896fdeab70df>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+		:ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`& builder
+		);
+
 	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1a0bd6c1db09b0798ca9530ed601b1c445>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
+
+	void opengeode_model_api :target:`triangulate_surface_meshes<doxid-namespacegeode_1ac6616a81ca0bbc7d62d87bb09ba161a8>`(
+		const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+		:ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`& builder
+		);
+
 	std::unique_ptr<EdgedCurve2D> opengeode_model_api :target:`convert_section_into_curve<doxid-namespacegeode_1a4169c588c51660f2599927c68509f2d1>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
 
 	template <typename SurfaceType = SurfaceMesh2D>

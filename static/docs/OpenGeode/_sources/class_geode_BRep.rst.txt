@@ -61,6 +61,10 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 		class :ref:`InternalSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range>`;
 		class :ref:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range>`;
 
+		// fields
+	
+		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`dimension<doxid-classgeode_1_1_b_rep_1a4ace13eab11176f8e2176d996a1744e2>` { 3 };
+
 		// construction
 	
 		:target:`BRep<doxid-classgeode_1_1_b_rep_1a384f789258676b3d556913741cc3181c>`();
