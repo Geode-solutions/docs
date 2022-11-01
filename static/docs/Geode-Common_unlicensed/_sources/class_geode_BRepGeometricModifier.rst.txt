@@ -21,6 +21,7 @@ class geode::BRepGeometricModifier
 		// construction
 	
 		:target:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier_1a8697097b86dd8a811b4566a8a46724bd>`(BRep& brep);
+		:target:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier_1abf50d521b19024dda8e47e8a92581a5e>`(BRepGeometricModifier&& other);
 
 		// methods
 	
