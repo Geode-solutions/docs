@@ -25,6 +25,6 @@ template class geode::detail::CutAlongInternalLines
 
 		// methods
 	
-		void :target:`cut_all_surfaces<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1a831cce0f5b039d9f3c2e879ec0ba7861>`();
-		void :target:`cut_surface<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1a5141708fcc770403059672b8f76d771f>`(const :ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& surface);
+		std::vector<std::pair<:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`, :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`>> :target:`cut_all_surfaces<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1ab714095f64c583e1b92ae97eb138e169>`();
+		std::vector<std::pair<:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`, :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`>> :target:`cut_surface<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1a898c277c2e1af661d7f46966184105d9>`(const :ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& surface);
 	};
