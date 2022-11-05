@@ -7,7 +7,8 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
-	struct_geode_detail_RemeshOptions.rst
+	struct_geode_detail_BRepRemeshOptions.rst
+	struct_geode_detail_SectionRemeshOptions.rst
 
 
 
@@ -20,14 +21,21 @@ namespace geode::detail
 
 	// structs
 
-	struct :ref:`RemeshOptions<doxid-structgeode_1_1detail_1_1_remesh_options>`;
+	struct :ref:`BRepRemeshOptions<doxid-structgeode_1_1detail_1_1_b_rep_remesh_options>`;
+	struct :ref:`SectionRemeshOptions<doxid-structgeode_1_1detail_1_1_section_remesh_options>`;
 
 	// global functions
 
-	std::tuple<BRep, ModelCopyMapping> geode_simplexremesh_brep_api :target:`remesh<doxid-namespacegeode_1_1detail_1ad3a312fb64f0f612de4d6aa92620f2cb>`(
+	std::tuple<BRep, ModelCopyMapping> geode_simplexremesh_brep_api :target:`remesh<doxid-namespacegeode_1_1detail_1a62308930622be1248bafddafcde9c572>`(
 		const BRep& brep,
 		const Metric3D& metric,
-		const :ref:`RemeshOptions<doxid-structgeode_1_1detail_1_1_remesh_options>`& options
+		const :ref:`BRepRemeshOptions<doxid-structgeode_1_1detail_1_1_b_rep_remesh_options>`& options
+		);
+
+	std::tuple<Section, ModelCopyMapping> geode_simplexremesh_section_api :target:`remesh<doxid-namespacegeode_1_1detail_1a9e4ef8603e26b0493aaf55e486838240>`(
+		const Section& section,
+		const Metric2D& metric,
+		const :ref:`SectionRemeshOptions<doxid-structgeode_1_1detail_1_1_section_remesh_options>`& options
 		);
 
 	} // namespace detail

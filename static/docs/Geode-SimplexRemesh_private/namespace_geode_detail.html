@@ -17,7 +17,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct geode::detail::RemeshOptions" href="struct_geode_detail_RemeshOptions.html" />
+    <link rel="next" title="struct geode::detail::BRepRemeshOptions" href="struct_geode_detail_BRepRemeshOptions.html" />
     <link rel="prev" title="namespace geode" href="namespace_geode.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -42,14 +42,21 @@
 
 <span class="c1">// structs</span>
 
-<span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_RemeshOptions.html#doxid-structgeode-1-1detail-1-1-remesh-options"><span class="std std-ref">RemeshOptions</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_BRepRemeshOptions.html#doxid-structgeode-1-1detail-1-1-b-rep-remesh-options"><span class="std std-ref">BRepRemeshOptions</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_SectionRemeshOptions.html#doxid-structgeode-1-1detail-1-1-section-remesh-options"><span class="std std-ref">SectionRemeshOptions</span></a><span></span><span class="p">;</span>
 
 <span class="c1">// global functions</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplexremesh_brep_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ad3a312fb64f0f612de4d6aa92620f2cb"><span></span><span class="n">remesh</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplexremesh_brep_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a62308930622be1248bafddafcde9c572"><span></span><span class="n">remesh</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Metric3D</span><span class="o">&amp;</span> <span class="n">metric</span><span class="p">,</span>
-    <span class="k">const</span> <a class="reference internal" href="struct_geode_detail_RemeshOptions.html#doxid-structgeode-1-1detail-1-1-remesh-options"><span class="std std-ref">RemeshOptions</span></a><span></span><span class="o">&amp;</span> <span class="n">options</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_detail_BRepRemeshOptions.html#doxid-structgeode-1-1detail-1-1-b-rep-remesh-options"><span class="std std-ref">BRepRemeshOptions</span></a><span></span><span class="o">&amp;</span> <span class="n">options</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">Section</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplexremesh_section_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a9e4ef8603e26b0493aaf55e486838240"><span></span><span class="n">remesh</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Metric2D</span><span class="o">&amp;</span> <span class="n">metric</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_detail_SectionRemeshOptions.html#doxid-structgeode-1-1detail-1-1-section-remesh-options"><span class="std std-ref">SectionRemeshOptions</span></a><span></span><span class="o">&amp;</span> <span class="n">options</span>
     <span class="p">);</span>
 
 <span class="p">}</span> <span class="c1">// namespace detail</span></pre>
