@@ -29,7 +29,14 @@ Overview
 	
 		void :target:`add_surface<doxid-classgeode_1_1_explicit_modeler3_d_1a6adae4bec7913bfd3f43538b00d2099b>`(const TriangulatedSurface3D& mesh);
 		void :target:`add_curve<doxid-classgeode_1_1_explicit_modeler3_d_1aa8b5896d7a8b9f62c4dbcf641afec5b7>`(const EdgedCurve3D& mesh);
+	
+		void :ref:`paint_volume<doxid-classgeode_1_1_explicit_modeler3_d_1ab870df593c5c0f433f5aa91b58e0069b>`(
+			const uuid& uuid,
+			absl::Span<const std::reference_wrapper<const TriangulatedSurface3D>> bounding_surfaces
+			);
+	
 		std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> :ref:`build<doxid-classgeode_1_1_explicit_modeler3_d_1af2946897cc63d4ef7d52fa3e6e6ae383>`();
+		std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> :ref:`build_painted_volumes<doxid-classgeode_1_1_explicit_modeler3_d_1ad210c25af0d4ec48826dbfd6bf383410>`();
 	};
 .. _details-classgeode_1_1_explicit_modeler3_d:
 
@@ -41,6 +48,19 @@ Detailed Documentation
 Methods
 -------
 
+.. index:: pair: function; paint_volume
+.. _doxid-classgeode_1_1_explicit_modeler3_d_1ab870df593c5c0f433f5aa91b58e0069b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void paint_volume(
+		const uuid& uuid,
+		absl::Span<const std::reference_wrapper<const TriangulatedSurface3D>> bounding_surfaces
+		)
+
+Paints the given uuid on the tetrahedra inside the given surfaces.
+
 .. index:: pair: function; build
 .. _doxid-classgeode_1_1_explicit_modeler3_d_1af2946897cc63d4ef7d52fa3e6e6ae383:
 
@@ -48,6 +68,16 @@ Methods
 	:class: doxyrest-title-code-block
 
 	std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> build()
+
+Returns the Merged BRep including all the added surfaces and curves and gives the "input to output" and "output to input" mappings between Surfaces and Lines
+
+.. index:: pair: function; build_painted_volumes
+.. _doxid-classgeode_1_1_explicit_modeler3_d_1ad210c25af0d4ec48826dbfd6bf383410:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> build_painted_volumes()
 
 Returns the Merged BRep including all the added surfaces and curves and gives the "input to output" and "output to input" mappings between Surfaces and Lines
 
