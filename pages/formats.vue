@@ -173,13 +173,13 @@ export default {
       },
       {
         extension: '.vtp (ascii, binary and encoded appendedData supported)',
-        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a> href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface2D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface2D</code></a>",
         in: true,
         out: false,
       },
       {
         extension: '.vtp (ascii only)',
-        cpp: "<a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet3D</code></a><br/><a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a> href='/opengeode?page=class_geode_PointSet.html'><code>PointSet2D</code></a><br/><a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface2D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface2D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve2D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet3D</code></a><br/><a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface3D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve3D</code></a><br/><a href='/opengeode?page=class_geode_PointSet.html'><code>PointSet2D</code></a><br/><a href='/opengeode?page=class_geode_PolygonalSurface.html'><code>PolygonalSurface2D</code></a><br/><a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface2D</code></a><br/><a href='/opengeode?page=class_geode_EdgedCurve.html'><code>EdgedCurve2D</code></a>",
         in: false,
         out: true,
       },
