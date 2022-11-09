@@ -15,6 +15,7 @@ namespace geode::detail
 	class_geode_detail_CornersLinesBuilderFromModel.rst
 	class_geode_detail_CornersLinesBuilderFromSolid.rst
 	class_geode_detail_CornersLinesBuilderFromSurface.rst
+	class_geode_detail_SectionFromMeshesBuilder.rst
 	class_geode_detail_SectionFromSurfaceBuilder.rst
 	class_geode_detail_SectionFromSurfacesBuilder.rst
 	class_geode_detail_SolidIdentifier.rst
@@ -61,6 +62,7 @@ namespace geode::detail
 	template <typename Model, typename ModelBuilder, index_t dimension>
 	class :ref:`CornersLinesBuilderFromSurface<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_surface>`;
 
+	class :ref:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder>`;
 	class :ref:`SectionFromSurfaceBuilder<doxid-classgeode_1_1detail_1_1_section_from_surface_builder>`;
 	class :ref:`SectionFromSurfacesBuilder<doxid-classgeode_1_1detail_1_1_section_from_surfaces_builder>`;
 	class :ref:`SolidIdentifier<doxid-classgeode_1_1detail_1_1_solid_identifier>`;

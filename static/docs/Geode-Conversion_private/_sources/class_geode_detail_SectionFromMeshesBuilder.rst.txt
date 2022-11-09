@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::detail::SectionFromMeshesBuilder
+.. _doxid-classgeode_1_1detail_1_1_section_from_meshes_builder:
+
+class geode::detail::SectionFromMeshesBuilder
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_from_meshes_builder.h>
+	
+	class SectionFromMeshesBuilder
+	{
+	public:
+		// construction
+	
+		:target:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder_1ad2b9961e70e229c2095b10c4f46f44e9>`(
+			Section& brep,
+			absl::Span<const std::reference_wrapper<const EdgedCurve2D>> curves,
+			absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces
+			);
+
+		// methods
+	
+		std::pair<ComponentMeshVertexMapping, ComponentMeshElementMapping> :target:`build<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder_1a05bc331295f40b1fbb92b93b00286573>`();
+	};
