@@ -1586,6 +1586,12 @@ Overview
 	template <index_t dimension>
 	void :target:`repair_polygon_orientations<doxid-namespacegeode_1a2077af68232ea9abbbace5eae9be71d8>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh);
 
+	template <index_t dimension>
+	void :target:`repair_polygon_orientations<doxid-namespacegeode_1a7d9dd3c1e109dbc0aeffdc271ad2639d>`(
+		const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh,
+		:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension>& builder
+		);
+
 	:target:`ALIAS_3D<doxid-namespacegeode_1a209df05cd0d3171410d26d91193060d3>`(:ref:`TetrahedralSolidPointFunction<doxid-classgeode_1_1_tetrahedral_solid_point_function>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ae9e0d03be26ef934e9a89f9b9c00f2d7>`(:ref:`TetrahedralSolidScalarFunction<doxid-classgeode_1_1_tetrahedral_solid_scalar_function>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aef902bbda79f83001a5929441d727794>`(:ref:`TriangulatedSurfacePointFunction<doxid-classgeode_1_1_triangulated_surface_point_function>`);
