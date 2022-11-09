@@ -78,6 +78,7 @@
 <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3a122de16a91abf72199f1c757746ba9"><span></span><span class="n">imported_3d_stratigraphic_attribute_name</span></span><span></span> <span class="o">=</span>         <span class="s">&quot;geode_3d_stratigraphy&quot;</span><span class="p">;</span>
 <span class="k">static</span> <span class="k">constexpr</span> <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a57efd788a819f0f1f693fbde1b87c897"><span></span><span class="n">ImplicitModeling</span></span><span></span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;ImplicitModeling&quot;</span><span class="p">;</span>
 <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9f2488ddd4fddba717312ab55a1601a8"><span></span><span class="n">stratigraphic_line_polygon_edge_attribute_name</span></span><span></span> <span class="o">=</span>         <span class="s">&quot;geode_associated_surface_polygon_edge&quot;</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af2a557266050cacd6fea122c1e9fee74"><span></span><span class="n">stratigraphic_surface_polyhedron_facet_attribute_name</span></span><span></span> <span class="o">=</span>             <span class="s">&quot;geode_associated_block_polyhedron_facet&quot;</span><span class="p">;</span>
 
 <span class="c1">// global functions</span>
 
@@ -143,6 +144,17 @@
 <span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1a77fbaf475b9362e3808148e960eb88"><span></span><span class="n">save_stratigraphic_surfaces</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">geode::ImplicitCrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">prefix</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7158fccabd2a2390667fa445f186430c"><span></span><span class="n">save_stratigraphic_blocks</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">geode::ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">prefix</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2f260cd2a91cf43dfde6a13d0cb96463"><span></span><span class="n">create_implicit_model_from_brep_attribute_and_coords</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span><span class="p">,</span>
+    <span class="n">local_index_t</span> <span class="n">axis_to_use_attribute_as_strati_coord</span>
     <span class="p">);</span>
 
 <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span> <span class="n">geode_implicitmodeling_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1acb687cbedca7f7bcada2358582d6a0a7"><span class="std std-ref">load_implicit_cross_section</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>

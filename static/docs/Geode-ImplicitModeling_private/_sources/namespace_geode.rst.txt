@@ -70,6 +70,7 @@ Overview
 	static constexpr auto :target:`imported_3d_stratigraphic_attribute_name<doxid-namespacegeode_1a3a122de16a91abf72199f1c757746ba9>` =         "geode_3d_stratigraphy";
 	static constexpr char :target:`ImplicitModeling<doxid-namespacegeode_1a57efd788a819f0f1f693fbde1b87c897>`[] = "ImplicitModeling";
 	static constexpr auto :target:`stratigraphic_line_polygon_edge_attribute_name<doxid-namespacegeode_1a9f2488ddd4fddba717312ab55a1601a8>` =         "geode_associated_surface_polygon_edge";
+	static constexpr auto :target:`stratigraphic_surface_polyhedron_facet_attribute_name<doxid-namespacegeode_1af2a557266050cacd6fea122c1e9fee74>` =             "geode_associated_block_polyhedron_facet";
 
 	// global functions
 
@@ -135,6 +136,17 @@ Overview
 	void geode_implicitmodeling_model_api :target:`save_stratigraphic_surfaces<doxid-namespacegeode_1a1a77fbaf475b9362e3808148e960eb88>`(
 		const :ref:`geode::ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model,
 		absl::string_view prefix
+		);
+
+	void geode_implicitmodeling_model_api :target:`save_stratigraphic_blocks<doxid-namespacegeode_1a7158fccabd2a2390667fa445f186430c>`(
+		const :ref:`geode::ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model,
+		absl::string_view prefix
+		);
+
+	:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>` geode_implicitmodeling_model_api :target:`create_implicit_model_from_brep_attribute_and_coords<doxid-namespacegeode_1a2f260cd2a91cf43dfde6a13d0cb96463>`(
+		const BRep& brep,
+		absl::string_view attribute_name,
+		local_index_t axis_to_use_attribute_as_strati_coord
 		);
 
 	:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` geode_implicitmodeling_model_api :ref:`load_implicit_cross_section<doxid-namespacegeode_1acb687cbedca7f7bcada2358582d6a0a7>`(absl::string_view filename);
