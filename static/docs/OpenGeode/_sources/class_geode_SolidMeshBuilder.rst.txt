@@ -39,6 +39,8 @@ Interface class to represent the builder of a :ref:`SolidMesh <doxid-classgeode_
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
 			);
 	
+		void :ref:`replace_vertex<doxid-classgeode_1_1_solid_mesh_builder_1a5abbc50594e1274e0494fa96c22255cf>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` old_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id);
+	
 		void :ref:`set_polyhedron_adjacent<doxid-classgeode_1_1_solid_mesh_builder_1a04bcc2fa5f0683ef300c3803ef2029cb>`(
 			const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` adjacent_id
@@ -221,6 +223,33 @@ Modify a polyhedron vertex.
 		- vertex_id
 
 		- Index of the mesh vertex to set as polyhedron vertex
+
+.. index:: pair: function; replace_vertex
+.. _doxid-classgeode_1_1_solid_mesh_builder_1a5abbc50594e1274e0494fa96c22255cf:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void replace_vertex(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` old_vertex_id, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id)
+
+Replace old polygon vertices from a given vertex to another.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- old_vertex_id
+
+		- Index of the initial mesh vertex to modify
+
+	*
+		- new_vertex_id
+
+		- Index of the target mesh vertex to set as polyhedron vertex
 
 .. index:: pair: function; set_polyhedron_adjacent
 .. _doxid-classgeode_1_1_solid_mesh_builder_1a04bcc2fa5f0683ef300c3803ef2029cb:

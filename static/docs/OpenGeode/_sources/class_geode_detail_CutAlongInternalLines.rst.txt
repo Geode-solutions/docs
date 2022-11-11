@@ -22,6 +22,7 @@ template class geode::detail::CutAlongInternalLines
 		// construction
 	
 		:target:`CutAlongInternalLines<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1aad9244b24c3cef71c7eafdfa35c78ba3>`(Model& model);
+		:target:`CutAlongInternalLines<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1a636f3d280c82e0591f5d994ccf508d1a>`(const Model& model, ModelBuilder& builder);
 
 		// methods
 	

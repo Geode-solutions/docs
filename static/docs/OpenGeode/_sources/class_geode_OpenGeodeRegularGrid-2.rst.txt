@@ -85,6 +85,7 @@ Inherited Members
 			) const;
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polyhedron_facet_vertex<doxid-classgeode_1_1_solid_mesh_1a71743c64ea758589375cf1fccd5c2689>`(const :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex) const;
+		:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>` :ref:`polyhedron_facet_vertex_id<doxid-classgeode_1_1_solid_mesh_1a8f4cef20122abb7aea05719c08fcd968>`(const :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex) const;
 		std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :ref:`polyhedron_facet_edge_vertices<doxid-classgeode_1_1_solid_mesh_1adad7d78bd7283f72a303d7fa08935e97>`(const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& polyhedron_facet_edge) const;
 		absl::optional<:ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`> :ref:`polyhedron_facet_edge_from_vertices<doxid-classgeode_1_1_solid_mesh_1afb0b9da79f1b3616a292ae0301ad4597>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices) const;
 	
@@ -162,12 +163,6 @@ Inherited Members
 			);
 	
 		void :ref:`reset_polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a63b85ccb943f53fcba38fd048718e303>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, SolidMeshKey);
-	
-		:ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>` :ref:`polyhedron_facet_vertex_id<doxid-classgeode_1_1_solid_mesh_1ab63b13aeca87ca04a4547dd462b3c913>`(
-			const :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`& polyhedron_facet_vertex,
-			SolidMeshKey
-			) const;
-	
 		:ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`<dimension>& :ref:`edges<doxid-classgeode_1_1_solid_mesh_1a6399afdca9d36a7c4a57a81e2e1f710f>`(SolidMeshKey);
 		void :ref:`copy_edges<doxid-classgeode_1_1_solid_mesh_1aa84e08b45f0845df7c44ac9b68832529>`(const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& solid, SolidMeshKey);
 		:ref:`SolidFacets<doxid-classgeode_1_1_solid_facets>`<dimension>& :ref:`facets<doxid-classgeode_1_1_solid_mesh_1a554458d09cda9713a506dbb7656d8354>`(SolidMeshKey);
