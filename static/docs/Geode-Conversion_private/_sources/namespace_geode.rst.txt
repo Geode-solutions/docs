@@ -66,10 +66,10 @@ Overview
 		double max_angle
 		);
 
-	Section geode_conversion_model_api :target:`convert_surface_into_section<doxid-namespacegeode_1a82b91748e58ceed17e8283e4fa57f39f>`(const SurfaceMesh2D& surface);
-	Section geode_conversion_model_api :target:`convert_surfaces_into_section<doxid-namespacegeode_1a31dc435c2149eec1ef5fca9ebe77921b>`(absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces);
+	std::tuple<Section, ComponentMeshVertexMapping, ComponentMeshElementMapping> geode_conversion_model_api :target:`convert_surface_into_section<doxid-namespacegeode_1a51b1b3f8c219793353d7b4373c5acdf5>`(const SurfaceMesh2D& surface);
+	std::tuple<Section, ComponentMeshVertexMapping, ComponentMeshElementMapping> geode_conversion_model_api :target:`convert_surfaces_into_section<doxid-namespacegeode_1a9f51392c90a476fda449115d22e157d1>`(absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces);
 
-	Section geode_conversion_model_api :ref:`convert_surface_into_section_from_attribute<doxid-namespacegeode_1a4cd6697bea5e1468859e6c1d301eb324>`(
+	std::tuple<Section, ComponentMeshVertexMapping, ComponentMeshElementMapping> geode_conversion_model_api :ref:`convert_surface_into_section_from_attribute<doxid-namespacegeode_1abf10a907a781f5d7fc76215f5749e55f>`(
 		SurfaceMesh2D& surface,
 		absl::string_view attribute_name
 		);
@@ -254,12 +254,12 @@ Creates a new BRep from the given one, with new lines on the sharp features of t
 		- Dihedral angle between the facets under which their common edge is considered a sharp feature.
 
 .. index:: pair: function; convert_surface_into_section_from_attribute
-.. _doxid-namespacegeode_1a4cd6697bea5e1468859e6c1d301eb324:
+.. _doxid-namespacegeode_1abf10a907a781f5d7fc76215f5749e55f:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	Section geode_conversion_model_api convert_surface_into_section_from_attribute(
+	std::tuple<Section, ComponentMeshVertexMapping, ComponentMeshElementMapping> geode_conversion_model_api convert_surface_into_section_from_attribute(
 		SurfaceMesh2D& surface,
 		absl::string_view attribute_name
 		)
