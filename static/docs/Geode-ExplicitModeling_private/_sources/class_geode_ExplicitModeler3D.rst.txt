@@ -27,12 +27,18 @@ Overview
 
 		// methods
 	
-		void :target:`add_surface<doxid-classgeode_1_1_explicit_modeler3_d_1a6adae4bec7913bfd3f43538b00d2099b>`(const TriangulatedSurface3D& mesh);
+		void :target:`add_point_set<doxid-classgeode_1_1_explicit_modeler3_d_1a644609a6c87e3f6fa298260f7a0736f4>`(const PointSet3D& mesh);
 		void :target:`add_curve<doxid-classgeode_1_1_explicit_modeler3_d_1aa8b5896d7a8b9f62c4dbcf641afec5b7>`(const EdgedCurve3D& mesh);
+		void :target:`add_triangulated_surface<doxid-classgeode_1_1_explicit_modeler3_d_1aab13f4a10de2d5e4c95689b895387b5d>`(const TriangulatedSurface3D& mesh);
+		void :target:`add_corner<doxid-classgeode_1_1_explicit_modeler3_d_1a860f8918ee1cf1abd5d976aa3a590089>`(const Corner3D& corner);
+		void :target:`add_line<doxid-classgeode_1_1_explicit_modeler3_d_1a801772ac63adbdc5b7ddfae970f23176>`(const Line3D& line);
+		void :target:`add_surface<doxid-classgeode_1_1_explicit_modeler3_d_1a2b12225e6b73986469ee4fb47f07ac09>`(const Surface3D& surface);
+		void :target:`add_block<doxid-classgeode_1_1_explicit_modeler3_d_1a22075226fe40e12a12460786cf4de1e6>`(const BRep& brep, const Block3D& block);
+		void :target:`add_brep<doxid-classgeode_1_1_explicit_modeler3_d_1a2bdf7c7c3104558687e08e5b27985b5f>`(const BRep& brep);
 	
-		void :ref:`paint_volume<doxid-classgeode_1_1_explicit_modeler3_d_1ab870df593c5c0f433f5aa91b58e0069b>`(
-			const uuid& uuid,
-			absl::Span<const std::reference_wrapper<const TriangulatedSurface3D>> bounding_surfaces
+		void :ref:`paint_volume<doxid-classgeode_1_1_explicit_modeler3_d_1a605009228410ca170be108c3df46200f>`(
+			const uuid& volume_uuid,
+			absl::Span<const uuid> bounding_surface_uuids
 			);
 	
 		std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> :ref:`build<doxid-classgeode_1_1_explicit_modeler3_d_1af2946897cc63d4ef7d52fa3e6e6ae383>`();
@@ -49,17 +55,17 @@ Methods
 -------
 
 .. index:: pair: function; paint_volume
-.. _doxid-classgeode_1_1_explicit_modeler3_d_1ab870df593c5c0f433f5aa91b58e0069b:
+.. _doxid-classgeode_1_1_explicit_modeler3_d_1a605009228410ca170be108c3df46200f:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	void paint_volume(
-		const uuid& uuid,
-		absl::Span<const std::reference_wrapper<const TriangulatedSurface3D>> bounding_surfaces
+		const uuid& volume_uuid,
+		absl::Span<const uuid> bounding_surface_uuids
 		)
 
-Paints the given uuid on the tetrahedra inside the given surfaces.
+Paints the given uuid on the tetrahedra inside the given surfaces. These surfaces should have already been added
 
 .. index:: pair: function; build
 .. _doxid-classgeode_1_1_explicit_modeler3_d_1af2946897cc63d4ef7d52fa3e6e6ae383:

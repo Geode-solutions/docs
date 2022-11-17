@@ -53,9 +53,19 @@ namespace geode
 
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a3cde333630eb0eee3a923c5fd26f803f>`(geode_explicitmodeling_3d_api, ExplicitModeling3d);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8df2fe4dbae5eba91b79d7ae631ec4d4>`(Corner);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9dd3655e0b4d0e1d23b6d3a8fd68c87b>`(Line);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(Surface);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(Block);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(BoundingBox);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3f3c5cdeee9a9389ffd9f740f987e982>`(PointSet);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a00d59edb267adf404ca6e1ee957187be>`(Corner);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(Surface);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(Block);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a54e944001fbf2a3a55a8887bd1f6c120>`(geode_explicitmodeling_common_api, ExplicitModelingCommon);
 
 	} // namespace geode
