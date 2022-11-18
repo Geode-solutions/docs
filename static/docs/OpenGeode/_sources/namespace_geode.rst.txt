@@ -1772,6 +1772,11 @@ Overview
 		);
 
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a3f23d1498e36ec1781d2f7b79c7f96bd>`(opengeode_model_api, OpenGeodeModel);
+	std::tuple<AABBTree3D, absl::FixedArray<:ref:`uuid<doxid-structgeode_1_1uuid>`>> opengeode_model_api :target:`create_lines_aabb_tree<doxid-namespacegeode_1a281d9ad2ab0322ed8b130b8cbcede9ff>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model);
+	std::tuple<AABBTree3D, absl::FixedArray<:ref:`uuid<doxid-structgeode_1_1uuid>`>> opengeode_model_api :target:`create_surfaces_aabb_tree<doxid-namespacegeode_1a12a1e2471fda77ea91b16f3f7a866cf2>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model);
+	std::tuple<AABBTree3D, absl::FixedArray<:ref:`uuid<doxid-structgeode_1_1uuid>`>> opengeode_model_api :target:`create_blocks_aabb_tree<doxid-namespacegeode_1a8e05e26a7bb6a7693b68b43590ef88d3>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model);
+	std::tuple<AABBTree2D, absl::FixedArray<:ref:`uuid<doxid-structgeode_1_1uuid>`>> opengeode_model_api :target:`create_lines_aabb_tree<doxid-namespacegeode_1afb9a1d73011470414448dfeab13c0407>`(const :ref:`Section<doxid-classgeode_1_1_section>`& model);
+	std::tuple<AABBTree2D, absl::FixedArray<:ref:`uuid<doxid-structgeode_1_1uuid>`>> opengeode_model_api :target:`create_surfaces_aabb_tree<doxid-namespacegeode_1a5f0b262a942a68f6a028aaa61696ff2f>`(const :ref:`Section<doxid-classgeode_1_1_section>`& model);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(:ref:`Block<doxid-classgeode_1_1_block>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9dd3655e0b4d0e1d23b6d3a8fd68c87b>`(:ref:`Line<doxid-classgeode_1_1_line>`);
