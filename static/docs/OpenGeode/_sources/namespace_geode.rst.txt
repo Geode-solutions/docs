@@ -1906,6 +1906,12 @@ Overview
 		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices1
 		);
 
+	:ref:`ComponentMeshVertexPairs<doxid-namespacegeode_1ab0cc9fad3b163b933d6a81b0135bad90>` opengeode_model_api :target:`component_mesh_vertex_pairs<doxid-namespacegeode_1a27ac43849a9ba436b95398d906bfb41c>`(
+		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices0,
+		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices1,
+		const :ref:`geode::ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type
+		);
+
 	std::tuple<:ref:`Section<doxid-classgeode_1_1_section>`, :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`> opengeode_model_api :target:`convert_brep_into_section<doxid-namespacegeode_1a2471e7d3579352477ff8618417c848ce>`(
 		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` axis_to_remove
