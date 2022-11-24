@@ -63,8 +63,8 @@ namespace geode
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac93b93bd0a1e54b0ffb54f588b46dce9>`(:ref:`Metric<doxid-classgeode_1_1_metric>`);
 	void geode_simplexremesh_brep_api :target:`mesh<doxid-namespacegeode_1ac05192efec02fb0ddc2c7ba5e2597944>`(BRep& brep, const Metric3D& metric);
 
-	std::tuple<BRep, ModelCopyMapping> geode_simplexremesh_brep_api :target:`remesh<doxid-namespacegeode_1ac3ac87c763640b40717eb314b11be3e4>`(
-		const BRep& brep,
+	std::tuple<BRep, ModelCopyMapping> geode_simplexremesh_brep_api :target:`remesh<doxid-namespacegeode_1afd49fde224571b02bb1f425c28156546>`(
+		BRep& brep,
 		const Metric3D& metric
 		);
 
@@ -95,8 +95,8 @@ namespace geode
 	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(Surface);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1af6228543229a69492ab6ffeba1e1c1e6>`(geode_simplexremesh_section_api, SimplexRemeshSection);
 
-	std::tuple<Section, ModelCopyMapping> geode_simplexremesh_section_api :target:`remesh<doxid-namespacegeode_1ac00a2a574952aaffe6f0a16840b26db1>`(
-		const Section& section,
+	std::tuple<Section, ModelCopyMapping> geode_simplexremesh_section_api :target:`remesh<doxid-namespacegeode_1afdfc3ca99073776256ecf2b484eda75d>`(
+		Section& section,
 		const Metric2D& metric
 		);
 
