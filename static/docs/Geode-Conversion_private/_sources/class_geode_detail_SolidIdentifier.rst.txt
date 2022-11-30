@@ -18,14 +18,6 @@ class geode::detail::SolidIdentifier
 	class SolidIdentifier
 	{
 	public:
-		// typedefs
-	
-		typedef index_t :target:`block_id_attribute_type<doxid-classgeode_1_1detail_1_1_solid_identifier_1a4edc38b80770c6d182c4060eb52e4b58>`;
-
-		// fields
-	
-		static constexpr auto :target:`block_id_attribute_name<doxid-classgeode_1_1detail_1_1_solid_identifier_1ae0ec30a7bbde08bcd48d9e28f584129c>` = "block_identifier";
-
 		// construction
 	
 		:target:`SolidIdentifier<doxid-classgeode_1_1detail_1_1_solid_identifier_1a62793d5eec4d7a21488a80ef586ffa82>`(const SolidMesh3D& solid);
@@ -33,5 +25,6 @@ class geode::detail::SolidIdentifier
 		// methods
 	
 		index_t :target:`identify_polyhedra<doxid-classgeode_1_1detail_1_1_solid_identifier_1a3bc2becb7327d7b57572657f91f636b4>`();
+		index_t :target:`polyhedron_identifier<doxid-classgeode_1_1detail_1_1_solid_identifier_1a1268b76997841688987c3df57fdac88e>`(index_t polyhedron) const;
 		std::vector<std::vector<index_t>> :target:`identified_blocks_polyhedra<doxid-classgeode_1_1detail_1_1_solid_identifier_1aadebbf7cfed61309b6014bd24b73b4ab>`() const;
 	};
