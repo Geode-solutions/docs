@@ -32,4 +32,5 @@ Class for inspecting the manifold property in the Component Meshes of a BRep.
 		absl::flat_hash_map<uuid, std::vector<index_t>> :target:`component_meshes_non_manifold_vertices<doxid-classgeode_1_1_b_rep_component_meshes_manifold_1aae6727cbe34c77809909d4f25ffd5015>`() const;
 		absl::flat_hash_map<uuid, std::vector<std::array<index_t, 2>>> :target:`component_meshes_non_manifold_edges<doxid-classgeode_1_1_b_rep_component_meshes_manifold_1a20577333a4b99333171dc8836080f4c1>`() const;
 		absl::flat_hash_map<uuid, std::vector<PolyhedronFacetVertices>> :target:`component_meshes_non_manifold_facets<doxid-classgeode_1_1_b_rep_component_meshes_manifold_1a5edf5abd2e8e65c59c8fdeb891ab7029>`() const;
+		absl::flat_hash_map<std::array<index_t, 2>, std::vector<uuid>> :target:`model_non_manifold_edges<doxid-classgeode_1_1_b_rep_component_meshes_manifold_1a0e9698a528fa614f01bed50371dbd43f>`() const;
 	};
