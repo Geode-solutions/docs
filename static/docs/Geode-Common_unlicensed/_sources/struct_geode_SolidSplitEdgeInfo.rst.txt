@@ -27,5 +27,5 @@ struct geode::SolidSplitEdgeInfo
 		// construction
 	
 		:target:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info_1ac7249a520118d53df3c6a54c029e4beb>`();
-		:target:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info_1add5e4d31fc0a6591905aea7f347dcb7c>`(index_t nb_tetrahedra);
+		:target:`SolidSplitEdgeInfo<doxid-structgeode_1_1_solid_split_edge_info_1a241cc4708da8175e73ca6cbe0fe01789>`(index_t nb_tetrahedra, bool with_edges, bool with_facets);
 	};
