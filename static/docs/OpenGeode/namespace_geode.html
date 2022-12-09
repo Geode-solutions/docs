@@ -844,6 +844,12 @@
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a76de721bf62a2cfc538036387f64ce99"><span></span><span class="n">new_point_segment_distance</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Segment.html#doxid-classgeode-1-1-segment"><span class="std std-ref">Segment</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a74f738f4982f62937cd9640b8e5236f0"><span class="std std-ref">segment_segment_distance</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Segment.html#doxid-classgeode-1-1-segment"><span class="std std-ref">Segment</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment0</span><span class="p">,</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Segment.html#doxid-classgeode-1-1-segment"><span class="std std-ref">Segment</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment1</span>
@@ -855,7 +861,18 @@
     <span class="k">const</span> <a class="reference internal" href="class_geode_InfiniteLine.html#doxid-classgeode-1-1-infinite-line"><span class="std std-ref">InfiniteLine</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">line</span>
     <span class="p">);</span>
 
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5eaa2d64bfec3038c08ef3a77bf4ceef"><span></span><span class="n">new_point_line_distance</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_InfiniteLine.html#doxid-classgeode-1-1-infinite-line"><span class="std std-ref">InfiniteLine</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">line</span>
+    <span class="p">);</span>
+
 <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="n">Point2D</span><span class="o">&gt;</span> <span class="n">opengeode_geometry_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a75d0260bbbaced72944408a98c21b06f"><span class="std std-ref">point_line_signed_distance</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line</span>
+    <span class="p">);</span>
+
+<span class="kt">double</span> <span class="n">opengeode_geometry_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a987e10bc64fd2b9fec81aa391e63c261"><span></span><span class="n">new_point_line_signed_distance</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">InfiniteLine2D</span><span class="o">&amp;</span> <span class="n">line</span>
     <span class="p">);</span>

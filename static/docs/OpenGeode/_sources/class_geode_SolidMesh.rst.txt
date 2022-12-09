@@ -61,7 +61,7 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		virtual :ref:`PolyhedronFacetsVertices<doxid-namespacegeode_1aecb5297ccd7fea9842b1e52b7db342ac>` :target:`polyhedron_facets_vertices<doxid-classgeode_1_1_solid_mesh_1a819ac16d5842e8032bdecfb9a686c6fb>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron) const;
 		virtual :ref:`PolyhedronFacets<doxid-namespacegeode_1a118116e866a37dbbadecebb92207436d>` :target:`polyhedron_vertex_facets<doxid-classgeode_1_1_solid_mesh_1a0de99ad5cfa70d6753ff14927387d83e>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
 		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`polyhedron_adjacent<doxid-classgeode_1_1_solid_mesh_1aaa1d7072ec4e0386ab0c5af1cf513fbc>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
-		absl::optional<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`> :ref:`polyhedron_adjacent_facet<doxid-classgeode_1_1_solid_mesh_1af4cb2cd51f421e6d91f5589dd97a99fd>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
+		virtual absl::optional<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`> :ref:`polyhedron_adjacent_facet<doxid-classgeode_1_1_solid_mesh_1a0f79553e1afee768d61aeb6c8d3bd296>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		bool :ref:`is_polyhedron_facet_on_border<doxid-classgeode_1_1_solid_mesh_1ad2bd1d05bf8802deb5b31d802ac19f53>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		bool :ref:`is_polyhedron_on_border<doxid-classgeode_1_1_solid_mesh_1a393a8443398cbe8a115929e9fdab137c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
 	
@@ -407,12 +407,12 @@ Return the index of the polyhedron adjacent through a facet.
 the index of the adjacent polyhedron if it exists.
 
 .. index:: pair: function; polyhedron_adjacent_facet
-.. _doxid-classgeode_1_1_solid_mesh_1af4cb2cd51f421e6d91f5589dd97a99fd:
+.. _doxid-classgeode_1_1_solid_mesh_1a0f79553e1afee768d61aeb6c8d3bd296:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	absl::optional<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`> polyhedron_adjacent_facet(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const
+	virtual absl::optional<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`> polyhedron_adjacent_facet(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const
 
 Return the index of the facet of the adjacent polyhedron through which polyhedra are adjacent.
 

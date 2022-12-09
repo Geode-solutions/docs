@@ -1074,6 +1074,12 @@ Overview
 		);
 
 	template <index_t dimension>
+	double :target:`new_point_segment_distance<doxid-namespacegeode_1a76de721bf62a2cfc538036387f64ce99>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
+		);
+
+	template <index_t dimension>
 	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`segment_segment_distance<doxid-namespacegeode_1a74f738f4982f62937cd9640b8e5236f0>`(
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment0,
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment1
@@ -1085,7 +1091,18 @@ Overview
 		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
 		);
 
+	template <index_t dimension>
+	double :target:`new_point_line_distance<doxid-namespacegeode_1a5eaa2d64bfec3038c08ef3a77bf4ceef>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
+		);
+
 	std::tuple<double, Point2D> opengeode_geometry_api :ref:`point_line_signed_distance<doxid-namespacegeode_1a75d0260bbbaced72944408a98c21b06f>`(
+		const Point2D& point,
+		const InfiniteLine2D& line
+		);
+
+	double opengeode_geometry_api :target:`new_point_line_signed_distance<doxid-namespacegeode_1a987e10bc64fd2b9fec81aa391e63c261>`(
 		const Point2D& point,
 		const InfiniteLine2D& line
 		);
