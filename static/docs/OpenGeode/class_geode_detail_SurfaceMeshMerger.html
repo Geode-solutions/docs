@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>template class geode::detail::SurfaceMeshMerger &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,11 +13,13 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::detail::UuidToIndex" href="class_geode_detail_UuidToIndex.html" />
+    <link rel="next" title="struct geode::detail::SurfaceMeshMerger::PolygonOrigin" href="struct_geode_detail_SurfaceMeshMerger_PolygonOrigin.html" />
     <link rel="prev" title="template class geode::detail::OrientedVertexCycle" href="class_geode_detail_OrientedVertexCycle.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -44,6 +46,14 @@
 <span class="k">class</span> <span class="n">SurfaceMeshMerger</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_detail_SurfaceMeshMerger_PolygonOrigin.html#doxid-structgeode-1-1detail-1-1-surface-mesh-merger-1-1-polygon-origin"><span class="std std-ref">PolygonOrigin</span></a><span></span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-mesh-merger-1aa8d16cf8badafed9f4868531065f601b"><span></span><span class="n">PolygonOrigins</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// structs</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_SurfaceMeshMerger_PolygonOrigin.html#doxid-structgeode-1-1detail-1-1-surface-mesh-merger-1-1-polygon-origin"><span class="std std-ref">PolygonOrigin</span></a><span></span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-mesh-merger-1ac3fd936acc9269671d1a540a4dc87f85"><span></span><span class="n">SurfaceMeshMerger</span></span><span></span><span class="p">(</span>
@@ -58,6 +68,7 @@
     <span class="k">const</span> <a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-mesh-merger-1a9b015bd2738df04543c633588cec7784"><span></span><span class="n">merged</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-mesh-merger-1ab5e5526c286c8eb20b0bf4d5ea9c7887"><span></span><span class="n">vertex_in_merged</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">surface</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-mesh-merger-1aa242c8f354008f75d85dc05f6e05b13d"><span></span><span class="n">polygon_in_merged</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">surface</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-classgeode-1-1detail-1-1-surface-mesh-merger-1aa8d16cf8badafed9f4868531065f601b"><span class="std std-ref">PolygonOrigins</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-surface-mesh-merger-1a00405cc27fb05a253e27c93d31137f24"><span></span><span class="n">polygon_origins</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </section>
 
@@ -71,7 +82,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

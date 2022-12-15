@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>template class geode::SolidMesh &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,7 +13,9 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -201,10 +203,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a22d62d5210d66ef81ba6e29846ce5bab"><span id="index-2"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SolidMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">create</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">)</span></pre>
 <p>Create a new <a class="reference internal" href="#doxid-classgeode-1-1-solid-mesh"><span class="std std-ref">SolidMesh</span></a> using a specified data structure.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>impl</p></td>
@@ -219,10 +221,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a23cc4137a29fa6321cf684a901e75939"><span id="index-5"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="n">nb_polyhedron_facet_vertices</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the number of vertices in polyhedron facet.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_facet</p></td>
@@ -233,10 +235,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a6360114433cfc117c6eefec026573c0a"><span id="index-6"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polyhedron_vertex</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the index in the mesh of a local vertex in a polyhedron.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_vertex</p></td>
@@ -247,10 +249,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a99b7c6f37fd2302b0ea9b464a18aed7f"><span id="index-7"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a6af0e9097515c9070ccb0168e4f77dec"><span class="std std-ref">PolyhedronVertices</span></a><span></span> <span class="n">polyhedron_vertices</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polyhedron_id</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return all the indices in the mesh of polyhedron vertices.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_id</p></td>
@@ -264,10 +266,10 @@
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the local index in the tetrahedron of a vertex in the mesh.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_id</p></td>
@@ -283,10 +285,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a71743c64ea758589375cf1fccd5c2689"><span id="index-9"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polyhedron_facet_vertex</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacetVertex.html#doxid-structgeode-1-1-polyhedron-facet-vertex"><span class="std std-ref">PolyhedronFacetVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet_vertex</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the index in the mesh of a given polyhedron facet vertex.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_facet_vertex</p></td>
@@ -297,10 +299,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1adad7d78bd7283f72a303d7fa08935e97"><span id="index-10"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="n">polyhedron_facet_edge_vertices</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacetEdge.html#doxid-structgeode-1-1-polyhedron-facet-edge"><span class="std std-ref">PolyhedronFacetEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet_edge</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the indices in the mesh of the two polyhedron edge vertices.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_facet_edge</p></td>
@@ -311,10 +313,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1aaa1d7072ec4e0386ab0c5af1cf513fbc"><span id="index-11"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">polyhedron_adjacent</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the index of the polyhedron adjacent through a facet.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_facet</p></td>
@@ -327,10 +329,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a0f79553e1afee768d61aeb6c8d3bd296"><span id="index-12"></span><span></span><span class="k">virtual</span> <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&gt;</span> <span class="n">polyhedron_adjacent_facet</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the index of the facet of the adjacent polyhedron through which polyhedra are adjacent.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_facet</p></td>
@@ -343,10 +345,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1ad2bd1d05bf8802deb5b31d802ac19f53"><span id="index-13"></span><span></span><span class="kt">bool</span> <span class="n">is_polyhedron_facet_on_border</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return true if the facet is on border, i.e. if the polyhedron has no adjacent through the specified facet.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_facet</p></td>
@@ -357,10 +359,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a393a8443398cbe8a115929e9fdab137c"><span id="index-14"></span><span></span><span class="kt">bool</span> <span class="n">is_polyhedron_on_border</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polyhedron_id</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return true if at least one polyhedron facet is on border</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_id</p></td>
@@ -374,10 +376,10 @@
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Return true if the edge belongs to the facet</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_facet</p></td>
@@ -391,10 +393,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1acb84d73ca5dbfea33dc5a5ba1a0f5751"><span id="index-16"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1af2f63049603178fd6a0be3783c5487e0"><span class="std std-ref">PolyhedronFacetsOnBorder</span></a><span></span> <span class="n">polyhedron_facets_on_border</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polyhedron_id</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return all the facets of a polyhedron that are on border</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_id</p></td>
@@ -405,10 +407,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1ab472b4dffe6e46a873df3fe706c0d9ca"><span id="index-17"></span><span></span><span class="kt">double</span> <span class="n">edge_length</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">edge_vertices</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the length of a given edge.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge_vertices</p></td>
@@ -419,10 +421,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a8ec29c3c46b5990fbc66a2080e97da97"><span id="index-18"></span><a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">polyhedron_barycenter</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polyhedron_id</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the barycenter of a polyhedron</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_id</p></td>
@@ -433,10 +435,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1ad4c1c0e05fde802fc6aa89319e43b0aa"><span id="index-19"></span><a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">facet_barycenter</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a8ff824f11177dd1e2808b7d9e0a44291"><span class="std std-ref">PolyhedronFacetVertices</span></a><span></span><span class="o">&amp;</span> <span class="n">facet_vertices</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the barycenter coordinates of a given facet.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>facet_vertices</p></td>
@@ -447,10 +449,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a5cb898499b4522f8ac9e7c55e42dfa22"><span id="index-20"></span><a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">edge_barycenter</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">edge_vertices</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the coordinates of the barycenter of a given edge.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge_vertices</p></td>
@@ -462,10 +464,10 @@
 <span class="n">std</span><span class="o">::</span><span class="n">enable_if</span><span class="o">&lt;</span><span class="n">T</span><span class="o">==</span><span class="mi">3</span><span class="p">,</span> <span class="n">Vector3D</span><span class="o">&gt;::</span><span class="n">type</span> <span class="n">polyhedron_facet_normal</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_facet</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return the normal of a given <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a>.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_facet</p></td>
@@ -476,10 +478,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a1c69b104ef6642ab507026a47fc8c49e"><span id="index-22"></span><span></span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1af2cce74521d6e23e0fc15f4666174436"><span class="std std-ref">PolyhedraAroundVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedra_around_vertex</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Get all the polyhedra with one of the vertices matching given vertex. This function needs that polyhedron adjacencies are computed</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertex_id</p></td>
@@ -490,10 +492,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a6e1b9a2240ab0563b03371d448aaefdd"><span id="index-23"></span><span></span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1af2cce74521d6e23e0fc15f4666174436"><span class="std std-ref">PolyhedraAroundVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedra_around_vertex</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">polyhedron_vertex</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Get all the polyhedra with one of the vertices matching given polyhedron vertex. This function needs that polyhedron adjacencies are computed</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_vertex</p></td>
@@ -504,10 +506,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a6c42099f25a0ab99ade3b87973bc1749"><span id="index-24"></span><span></span><span class="kt">bool</span> <span class="n">is_vertex_on_border</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return true if at least one of the polyhedron facets around the vertex is on border. This function needs that polyhedron adjacencies are computed</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertex_id</p></td>
@@ -518,10 +520,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a78192ae66cdae976ca698983037100b5"><span id="index-25"></span><span></span><span class="kt">bool</span> <span class="n">is_edge_on_border</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return true if at least one of the polyhedron facets around the edge is on border</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertices</p></td>
@@ -535,10 +537,10 @@
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Return true if at least one of the polyhedron facets around the edges is on border</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertices</p></td>
@@ -552,10 +554,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1acf73eb0cf305960a2f9759198332caa0"><span id="index-27"></span><span></span><span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa50986e7408aba331844fe80d1ba983c"><span class="std std-ref">PolyhedraAroundEdge</span></a><span></span> <span class="n">polyhedra_around_edge</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Get all the polyhedra with both edge vertices. This function needs that polyhedron adjacencies are computed</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertices</p></td>
@@ -566,10 +568,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1a1613b959b9af44b5e1813ca8b00f86d5"><span id="index-28"></span><span></span><span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa50986e7408aba331844fe80d1ba983c"><span class="std std-ref">PolyhedraAroundEdge</span></a><span></span> <span class="n">polyhedra_around_edge</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacetEdge.html#doxid-structgeode-1-1-polyhedron-facet-edge"><span class="std std-ref">PolyhedronFacetEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Get all the polyhedra around the edge. This function needs that polyhedron adjacencies are computed</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge</p></td>
@@ -580,10 +582,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1af8e6862b300e0802ffbd35d1e938e6ab"><span id="index-29"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">polyhedron_around_edge</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">vertices</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Get one polyhedron with both edge vertices. This function needs that polyhedron adjacencies are computed</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertices</p></td>
@@ -597,10 +599,10 @@
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Get all the polyhedra with both edge vertices. This function needs that polyhedron adjacencies are computed</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertices</p></td>
@@ -614,10 +616,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1aec3f37018127a1b9d5133fd8d2aee268"><span id="index-31"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a9f8d0fbd287f5475017252ef10b8eabd"><span class="std std-ref">PolyhedraAroundFacet</span></a><span></span> <span class="n">polyhedra_from_facet_vertices</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a8ff824f11177dd1e2808b7d9e0a44291"><span class="std std-ref">PolyhedronFacetVertices</span></a><span></span> <span class="n">facet_vertices</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return all polyhedra facets made with the given facet vertices.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>facet_vertices</p></td>
@@ -631,10 +633,10 @@
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Get the local indices in the polyhedra of both edge vertices. If the vertices are not in the polyhedron, NO_LID is returned.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>polyhedron_id</p></td>
@@ -652,10 +654,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-solid-mesh-1acd45f76a07bb340cf08b5303daaaf14f"><span id="index-35"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&gt;</span> <span class="n">polyhedron_around_vertex</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
 <p>Return one polyhedron with one of the vertices matching given vertex.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertex_id</p></td>
@@ -677,7 +679,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

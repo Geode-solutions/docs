@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>class geode::GraphBuilder &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,7 +13,9 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -96,10 +98,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-builder-1ad0246b4ef3c0eeab0aec072ab045d2f2"><span id="index-1"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">GraphBuilder</span><span class="o">&gt;</span> <span class="n">create</span><span class="p">(</span><a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">)</span></pre>
 <p>Create the builder associated with a <a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a>.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>mesh</p></td>
@@ -114,10 +116,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-builder-1aaa1dd04933dfa38205eac35b699d01d8"><span id="index-3"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_edge</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">v0_id</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">v1_id</span><span class="p">)</span></pre>
 <p>Create a new edge between to vertex.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>v0_id</p></td>
@@ -133,10 +135,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-builder-1a425b20e444d272cc2ba6dff50a4664b3"><span id="index-4"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">create_edges</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb</span><span class="p">)</span></pre>
 <p>Create several new edges.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>nb</p></td>
@@ -149,10 +151,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-builder-1adfa4c5424c28d16a1a0b9865da89afba"><span id="index-5"></span><span></span><span class="kt">void</span> <span class="n">set_edge_vertex</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_EdgeVertex.html#doxid-structgeode-1-1-edge-vertex"><span class="std std-ref">EdgeVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">edge_vertex</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span></pre>
 <p>Set a vertex as an edge endpoint</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge_vertex</p></td>
@@ -166,10 +168,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-builder-1a720f73e63377bc700fb57c37e95bd99c"><span id="index-6"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">delete_edges</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;&amp;</span> <span class="n">to_delete</span><span class="p">)</span></pre>
 <p>Delete a set of edges</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>to_delete</p></td>
@@ -182,10 +184,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-builder-1a86eb42954225c43f4ad99787a65e6b73"><span id="index-7"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">permute_edges</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">permutation</span><span class="p">)</span></pre>
 <p>Permute edges to match the given order.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>permutation</p></td>
@@ -213,7 +215,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
