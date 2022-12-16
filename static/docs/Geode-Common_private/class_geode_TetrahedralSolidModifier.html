@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>class geode::TetrahedralSolidModifier &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,7 +13,9 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -103,10 +105,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a1645e8ce599bf3ab1036071f1af3a939"><span id="index-1"></span><a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <span class="n">split_tetrahedron</span><span class="p">(</span><span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
 <p>Split a tetrahedron into four new tetrahedra.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>tetrahedron_id</p></td>
@@ -122,10 +124,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1abfd8444fde310d0e8229cb353f718451"><span id="index-2"></span><a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <span class="n">split_facet</span><span class="p">(</span><span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
 <p>Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>facet_id</p></td>
@@ -141,10 +143,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a5de1767b5b8ae9b7ae522c5434930f5b"><span id="index-3"></span><a class="reference internal" href="struct_geode_SolidSplitInfo.html#doxid-structgeode-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <span class="n">split_facet</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
 <p>Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra. Edge unique index is found and then the above function is called.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>facet</p></td>
@@ -160,10 +162,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a954f2875b98f31ae3ce7e255d1c008c3"><span id="index-4"></span><a class="reference internal" href="struct_geode_SolidSplitEdgeInfo.html#doxid-structgeode-1-1-solid-split-edge-info"><span class="std std-ref">SolidSplitEdgeInfo</span></a><span></span> <span class="n">split_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
 <p>Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge_id</p></td>
@@ -182,10 +184,10 @@
     <span class="p">)</span></pre>
 <p>Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge</p></td>
@@ -204,10 +206,10 @@
     <span class="p">)</span></pre>
 <p>Collapse an edge. The tetrahedra incident to this edge are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge</p></td>
@@ -223,10 +225,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1ae1f62e44988d327a78be2c5a3452add2"><span id="index-7"></span><a class="reference internal" href="struct_geode_SolidCollapseEdgeInfo.html#doxid-structgeode-1-1-solid-collapse-edge-info"><span class="std std-ref">SolidCollapseEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
 <p>Collapse an edge. The tetrahedra incident to this edge are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge_id</p></td>
@@ -242,10 +244,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a4ccb9f6c1ee88360c458a6aafaab2437"><span id="index-8"></span><a class="reference internal" href="struct_geode_SolidSwapFacetInfo.html#doxid-structgeode-1-1-solid-swap-facet-info"><span class="std std-ref">SolidSwapFacetInfo</span></a><span></span> <span class="n">swap_facet</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">)</span></pre>
 <p>Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahedra are set as inactive and three new tetrahedra are created.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>facet</p></td>
@@ -256,10 +258,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a18e72cc7f103c5a218a432b6daf3bbed"><span id="index-9"></span><a class="reference internal" href="struct_geode_SolidSwapEdgeInfo.html#doxid-structgeode-1-1-solid-swap-edge-info"><span class="std std-ref">SolidSwapEdgeInfo</span></a><span></span> <span class="n">swap_edge</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">apex</span><span class="p">)</span></pre>
 <p>Swap an edge. The edge can be on border. The tetrahedra around given edge are set as inactive and new tetrahedra are created.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge</p></td>
@@ -273,10 +275,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a946344fe97b501ab2a749bd744eb7b53"><span id="index-10"></span><a class="reference internal" href="struct_geode_SolidRemoveMultipleAdjacencyInfo.html#doxid-structgeode-1-1-solid-remove-multiple-adjacency-info"><span class="std std-ref">SolidRemoveMultipleAdjacencyInfo</span></a><span></span> <span class="n">remove_double_adjacency</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">)</span></pre>
 <p>Remove an edge bearing a double adjacency. The two tetrahedra around given edge are set as inactive.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge</p></td>
@@ -287,10 +289,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1ad948040f1b0ccd271f2191fe840c79c6"><span id="index-11"></span><a class="reference internal" href="struct_geode_SolidRemoveMultipleAdjacencyInfo.html#doxid-structgeode-1-1-solid-remove-multiple-adjacency-info"><span class="std std-ref">SolidRemoveMultipleAdjacencyInfo</span></a><span></span> <span class="n">remove_triple_adjacency</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronVertex</span><span class="o">&amp;</span> <span class="n">vertex</span><span class="p">)</span></pre>
 <p>Remove a vertex bearing a triple adjacency. The two tetrahedra around given vertex are set as inactive.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertex</p></td>
@@ -332,7 +334,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
