@@ -28,6 +28,6 @@ class geode::detail::BRepFromMeshesBuilder
 
 		// methods
 	
-		std::pair<ComponentMeshVertexMapping, ComponentMeshElementMapping> :target:`build_brep_without_blocks<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder_1a732f39de241638de98ea36e9a0443744>`();
-		std::pair<ComponentMeshVertexMapping, ComponentMeshElementMapping> :target:`build_brep_with_blocks<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder_1aa39589351553583d2d2e9c5527b4e4bf>`();
+		std::pair<ComponentMeshVertexMapping, ModelMeshesElementMapping> :target:`build_brep_without_blocks<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder_1accf5cd751e323a2ce86ca01742c80c8c>`();
+		std::pair<ComponentMeshVertexMapping, ModelMeshesElementMapping> :target:`build_brep_with_blocks<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder_1af713b8851ac696a273e015704aa89d3b>`();
 	};

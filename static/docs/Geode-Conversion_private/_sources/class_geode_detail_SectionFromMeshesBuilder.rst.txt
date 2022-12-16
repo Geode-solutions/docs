@@ -28,5 +28,5 @@ class geode::detail::SectionFromMeshesBuilder
 
 		// methods
 	
-		std::pair<ComponentMeshVertexMapping, ComponentMeshElementMapping> :target:`build<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder_1a05bc331295f40b1fbb92b93b00286573>`();
+		std::pair<ComponentMeshVertexMapping, ModelMeshesElementMapping> :target:`build<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder_1a64c98c7b9c6bcefadee729cfab983981>`();
 	};

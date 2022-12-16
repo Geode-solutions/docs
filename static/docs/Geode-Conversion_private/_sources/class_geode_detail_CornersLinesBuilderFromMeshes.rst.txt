@@ -31,7 +31,7 @@ template class geode::detail::CornersLinesBuilderFromMeshes
 	
 		virtual void :target:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes_1a72447ab2d3d91b43241935b0b76a8c09>`();
 		void :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes_1a6a6c1e68d6c44c72321856da18722f43>`();
-		std::pair<ComponentMeshVertexMapping, ComponentMeshElementMapping> :target:`mappings<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes_1a2abcc682e4cb1e0d76f9dc547c5c7f81>`();
+		std::pair<ComponentMeshVertexMapping, ModelMeshesElementMapping> :target:`mappings<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes_1a8308ddf4fe41181e1d507a82e9a33671>`();
 	};
 
 Inherited Members
