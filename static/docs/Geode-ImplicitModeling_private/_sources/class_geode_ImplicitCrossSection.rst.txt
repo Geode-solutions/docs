@@ -176,5 +176,5 @@ Return the geometric coordinates of the point, calculated from its stratigraphic
 		const Point2D& stratigraphic_point
 		) const
 
-Returns the surface polygon containing the given stratigraphic point, if there is any.
+Returns a surface polygon containing the given stratigraphic point, if there is any.
 

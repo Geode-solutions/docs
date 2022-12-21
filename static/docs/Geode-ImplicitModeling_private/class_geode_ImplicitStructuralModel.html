@@ -93,6 +93,11 @@
         <span class="n">index_t</span> <span class="n">polyhedron_id</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1a828af515bf3f3562c7d42127e843459b"><span class="std std-ref">stratigraphic_containing_polyhedron</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
     <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TriangulatedSurface3D</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a63611516fab5e51b5ade68c2f5ab2c7b"><span></span><span class="n">stratigraphic_surface</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span>
@@ -125,24 +130,29 @@
     <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">geometric_point</span>
     <span class="p">)</span> <span class="k">const</span></pre>
-<p>Return the stratigraphic coordinates of the point, calculated in the polyhedron closest to the given point, in the given block.</p>
+<p>Return the stratigraphic coordinates of the point, computed in the polyhedron closest to the given point, in the given block.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1ab6078d7c01975ffc1d7ac4a3e65ea3b8"><span id="index-3"></span><span></span><span class="n">Point3D</span> <span class="n">stratigraphic_coordinates</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">geometric_point</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">polyhedron_id</span>
     <span class="p">)</span> <span class="k">const</span></pre>
-<p>Return the stratigraphic coordinates of the point, calculated in the given polyhedron of the given block.</p>
+<p>Return the stratigraphic coordinates of the point, computed in the given polyhedron of the given block.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1a4399a075ef5f371b3603568ece72732f"><span id="index-4"></span><span></span><span class="n">Point3D</span> <span class="n">geometric_coordinates</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span>
     <span class="p">)</span> <span class="k">const</span></pre>
-<p>Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the polyhedron closest to the given coordinates in the stratigraphic space, in the given block.</p>
+<p>Return the geometric coordinates of the point, computed from its stratigraphic coordinates in the polyhedron closest to the given coordinates in the stratigraphic space, in the given block.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1a2e67bf0dd58750bc78573d971e8b9a5a"><span id="index-5"></span><span></span><span class="n">Point3D</span> <span class="n">geometric_coordinates</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">polyhedron_id</span>
     <span class="p">)</span> <span class="k">const</span></pre>
-<p>Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the given polyhedron of the given block.</p>
+<p>Return the geometric coordinates of the point, computed from its stratigraphic coordinates in the given polyhedron of the given block.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1a828af515bf3f3562c7d42127e843459b"><span id="index-6"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">stratigraphic_containing_polyhedron</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">stratigraphic_point</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Returns the block polyhedron containing the given stratigraphic point, if there is any.</p>
 </section>
 </section>
 </section>
