@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>namespace geode &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,7 +13,9 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -64,6 +66,7 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_ImplicitStructuralModelBuilder.html#doxid-classgeode-1-1-implicit-structural-model-builder"><span class="std std-ref">ImplicitStructuralModelBuilder</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_ImplicitStructuralModelInput.html#doxid-classgeode-1-1-implicit-structural-model-input"><span class="std std-ref">ImplicitStructuralModelInput</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_ImplicitStructuralModelInserter.html#doxid-classgeode-1-1-implicit-structural-model-inserter"><span class="std std-ref">ImplicitStructuralModelInserter</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_ImplicitStructuralModelOutput.html#doxid-classgeode-1-1-implicit-structural-model-output"><span class="std std-ref">ImplicitStructuralModelOutput</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -115,6 +118,8 @@
     <span class="n">ImplicitModelingInsertion</span>
     <span class="p">);</span>
 
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1af40a127c86216f0ba2c8d1276fe61644"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aae4bea6f137a47558d5d46c1f90525b8"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2ffd3144b24323e1843b6ecd22500dfc"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_implicitmodeling_io_api</span><span class="p">,</span> <span class="n">ImplicitModelingIO</span><span class="p">);</span>
@@ -122,8 +127,6 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4bd02aabaf2cf4d25e7f1471d6f5f682"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3dfa90e12c4f46df6d4d4c73cc499ab6"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5e8e5828532178b105e3b6488c12277c"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_implicitmodeling_model_api</span><span class="p">,</span> <span class="n">ImplicitModelingModel</span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1af40a127c86216f0ba2c8d1276fe61644"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a101910cf6bc45a10f4ec68f2e896d038"><span></span><span class="n">rescale_stratigraphic_attribute</span></span><span></span><span class="p">(</span>
     <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
@@ -141,13 +144,13 @@
 
 <span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a445d4fbc0a4c17c908fa9274c5b1c3dd"><span></span><span class="n">rescale_stratigraphic_attribute_to_bbox_scale</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
 
-<span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1a77fbaf475b9362e3808148e960eb88"><span></span><span class="n">save_stratigraphic_surfaces</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">geode::ImplicitCrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
+<span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a47ad9260b7a8fa865ab443fd0a966fdc"><span></span><span class="n">save_stratigraphic_surfaces</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">prefix</span>
     <span class="p">);</span>
 
-<span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7158fccabd2a2390667fa445f186430c"><span></span><span class="n">save_stratigraphic_blocks</span></span><span></span><span class="p">(</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">geode::ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
+<span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa7857f6391d1224773d63538f00943d8"><span></span><span class="n">save_stratigraphic_blocks</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">prefix</span>
     <span class="p">);</span>
 
@@ -157,6 +160,7 @@
     <span class="n">local_index_t</span> <span class="n">axis_to_use_attribute_as_strati_coord</span>
     <span class="p">);</span>
 
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MeshElement</span><span class="o">&gt;</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8e7d791e59eb7440d55b0ff8b3c11eb4"><span></span><span class="n">invalid_stratigraphic_tetrahedra</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">);</span>
 <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span> <span class="n">geode_implicitmodeling_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1acb687cbedca7f7bcada2358582d6a0a7"><span class="std std-ref">load_implicit_cross_section</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a752a47963d1b8d3a296efe5e800582e3"><span class="std std-ref">save_implicit_cross_section</span></a><span></span><span class="p">(</span>
@@ -180,10 +184,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1acb687cbedca7f7bcada2358582d6a0a7"><span id="index-1"></span><a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span> <span class="n">geode_implicitmodeling_model_api</span> <span class="n">load_implicit_cross_section</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a>. The adequate loader is called depending on the filename extension.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>filename</p></td>
@@ -197,10 +201,10 @@
     <span class="p">)</span></pre>
 <p>API function for saving an <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a>. The adequate saver is called depending on the given filename extension.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>implicit_model</p></td>
@@ -214,10 +218,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5e33962083fa7d9ae330f405fee6212f"><span id="index-3"></span><a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span> <span class="n">geode_implicitmodeling_model_api</span> <span class="n">load_implicit_structural_model</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a>. The adequate loader is called depending on the filename extension.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>filename</p></td>
@@ -231,10 +235,10 @@
     <span class="p">)</span></pre>
 <p>API function for saving an <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a>. The adequate saver is called depending on the given filename extension.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>implicit_model</p></td>
@@ -259,7 +263,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

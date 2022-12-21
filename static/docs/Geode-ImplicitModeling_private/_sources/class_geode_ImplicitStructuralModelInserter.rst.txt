@@ -1,0 +1,52 @@
+.. index:: pair: class; geode::ImplicitStructuralModelInserter
+.. _doxid-classgeode_1_1_implicit_structural_model_inserter:
+
+class geode::ImplicitStructuralModelInserter
+============================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <model_stratigraphic_inserter.h>
+	
+	class ImplicitStructuralModelInserter
+	{
+	public:
+		// construction
+	
+		:target:`ImplicitStructuralModelInserter<doxid-classgeode_1_1_implicit_structural_model_inserter_1a69fdca47ef0020668b9900f2e11c8369>`(const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& model);
+
+		// methods
+	
+		void :target:`select_stratigraphic_surface_to_insert<doxid-classgeode_1_1_implicit_structural_model_inserter_1a443603a9ddd014e4c2607caac2b22893>`(const TriangulatedSurface3D& surface);
+		std::tuple<BRep, ExplicitModelerMappings> :ref:`insert_and_build<doxid-classgeode_1_1_implicit_structural_model_inserter_1ac3e89a07e43ba913deaf3a980e390d7c>`();
+	};
+.. _details-classgeode_1_1_implicit_structural_model_inserter:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; insert_and_build
+.. _doxid-classgeode_1_1_implicit_structural_model_inserter_1ac3e89a07e43ba913deaf3a980e390d7c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<BRep, ExplicitModelerMappings> insert_and_build()
+
+Returns the Merged BRep including, in the xyz space, the ImplicitModel surfaces and all the added surfaces, and gives the "input to output" and "output to input" mappings between Surfaces
+

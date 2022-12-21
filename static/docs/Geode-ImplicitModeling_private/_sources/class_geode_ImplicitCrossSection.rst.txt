@@ -21,6 +21,10 @@ An :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` is 
 	class ImplicitCrossSection: public CrossSection
 	{
 	public:
+		// typedefs
+	
+		typedef Point2D :target:`stratigraphy_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1a1dd057da49fa9ebe67f4427e58eff115>`;
+
 		// fields
 	
 		static constexpr auto :target:`stratigraphy_attribute_name<doxid-classgeode_1_1_implicit_cross_section_1a2873688fd63a4200b0e3d4cc6b0cbd91>` =             "geode_stratigraphy";
