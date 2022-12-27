@@ -57,6 +57,8 @@ class geode::SectionGeometricModifier
 		bool :target:`is_edge_active<doxid-classgeode_1_1_section_geometric_modifier_1aae881e9c3cc8d5b33fdca112dbbf7d9a>`(const Line2D& line, index_t edge) const;
 		bool :target:`is_triangle_active<doxid-classgeode_1_1_section_geometric_modifier_1a59c12cd25a28a2ede0ac551b972061ac>`(const Surface2D& surface, index_t triangle) const;
 		void :target:`clean<doxid-classgeode_1_1_section_geometric_modifier_1a6d5545f8b7706dabc89f54bb45355df7>`();
+		void :target:`clean_vertices<doxid-classgeode_1_1_section_geometric_modifier_1a1738a2815fd0c3e229bbd4a9e094c306>`();
+		void :target:`clean_elements<doxid-classgeode_1_1_section_geometric_modifier_1acca1904d6c9f601dfb4c099ea3bae000>`();
 		void :target:`clean_triangles_surfaces<doxid-classgeode_1_1_section_geometric_modifier_1a3dcc736acfa4dd6c30df8999383a148f>`();
 		void :target:`clean_vertices_surfaces<doxid-classgeode_1_1_section_geometric_modifier_1a8b023789f46bf1bf5e040bb4ba2b776c>`();
 		void :target:`clean_edges_lines<doxid-classgeode_1_1_section_geometric_modifier_1aedefe764b3f17c9f0d4fd07c2dc1e823>`();
