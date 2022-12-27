@@ -71,6 +71,8 @@ class geode::BRepGeometricModifier
 		bool :target:`is_triangle_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a10b28d8df305de1e7bdf80900feff46c>`(const Surface3D& surface, index_t triangle) const;
 		bool :target:`is_tetrahedron_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1ac370bb4add81ec6c95f96b863a03a771>`(const Block3D& block, index_t tetrahedron) const;
 		void :target:`clean<doxid-classgeode_1_1_b_rep_geometric_modifier_1ae1afc8b3ab4b1cf7b0a17cefb480c32c>`();
+		void :target:`clean_vertices<doxid-classgeode_1_1_b_rep_geometric_modifier_1ad2f539d85698436d777e4d0842ee587c>`();
+		void :target:`clean_elements<doxid-classgeode_1_1_b_rep_geometric_modifier_1a87c7cdc2af9dceff75585873e479deb3>`();
 		void :target:`clean_triangles_surfaces<doxid-classgeode_1_1_b_rep_geometric_modifier_1a022dd6b1e3205997e5f738cfd9155ace>`();
 		void :target:`clean_vertices_surfaces<doxid-classgeode_1_1_b_rep_geometric_modifier_1a63338b255dc0751fd2d359dd3abd0990>`();
 		void :target:`clean_edges_lines<doxid-classgeode_1_1_b_rep_geometric_modifier_1a807147e864c75b70d37fb85fc44ad7b1>`();
