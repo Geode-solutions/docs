@@ -38,6 +38,16 @@ Bounding box implemented for 2D and 3D points. :ref:`More...<details-classgeode_
 		bool :target:`intersects<doxid-classgeode_1_1_bounding_box_1a73fe42124b81e1daafedc5fc648efb75>`(const BoundingBox<dimension>& bbox) const;
 		bool :target:`intersects<doxid-classgeode_1_1_bounding_box_1a360fec7a076b444ed514e252847c262f>`(const :ref:`Ray<doxid-classgeode_1_1_ray>`<dimension>& ray) const;
 		bool :target:`intersects<doxid-classgeode_1_1_bounding_box_1a791a8abb00dde376003dab5340f23a02>`(const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line) const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==2, bool>::type :ref:`intersects<doxid-classgeode_1_1_bounding_box_1aee7646c0f3a9a0b90e73d3e28f12e4aa>`(const :ref:`Segment<doxid-classgeode_1_1_segment>`<T>& segment) const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==2||T==3, bool>::type :ref:`intersects<doxid-classgeode_1_1_bounding_box_1a9b6c6b55b94e00f72526a91ad108ddd7>`(const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<T>& triangle) const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, bool>::type :ref:`intersects<doxid-classgeode_1_1_bounding_box_1a2b31c9a1fb84b58df5e0239a7a2dc93f>`(const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetra) const;
+	
 		double :ref:`signed_distance<doxid-classgeode_1_1_bounding_box_1aa8eeef680e1ce12041a863bf0b04eb67>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`min<doxid-classgeode_1_1_bounding_box_1a4989e863012fb87f1c94067f4a21b85a>`() const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`max<doxid-classgeode_1_1_bounding_box_1aa41b83189438c79f27a616322904542c>`() const;
@@ -53,6 +63,39 @@ Bounding box implemented for 2D and 3D points.
 
 Methods
 -------
+
+.. index:: pair: function; intersects
+.. _doxid-classgeode_1_1_bounding_box_1aee7646c0f3a9a0b90e73d3e28f12e4aa:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t T = dimension>
+	std::enable_if<T==2, bool>::type intersects(const :ref:`Segment<doxid-classgeode_1_1_segment>`<T>& segment) const
+
+Returns true if the element is crossing, is inside, or is containing the bbox
+
+.. index:: pair: function; intersects
+.. _doxid-classgeode_1_1_bounding_box_1a9b6c6b55b94e00f72526a91ad108ddd7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t T = dimension>
+	std::enable_if<T==2||T==3, bool>::type intersects(const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<T>& triangle) const
+
+Returns true if the element is crossing, is inside (or is containing the bbox in 2D)
+
+.. index:: pair: function; intersects
+.. _doxid-classgeode_1_1_bounding_box_1a2b31c9a1fb84b58df5e0239a7a2dc93f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t T = dimension>
+	std::enable_if<T==3, bool>::type intersects(const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetra) const
+
+Returns true if the element is crossing, is inside, or is containing the bbox
 
 .. index:: pair: function; signed_distance
 .. _doxid-classgeode_1_1_bounding_box_1aa8eeef680e1ce12041a863bf0b04eb67:

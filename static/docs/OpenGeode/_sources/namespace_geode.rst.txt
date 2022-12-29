@@ -1061,9 +1061,11 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6bd5b8618c1a9a6ff0f6c60bb98fe807>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
 	void opengeode_geometry_api :ref:`register_geometry_serialize_pcontext<doxid-namespacegeode_1a3a8183171407a05faea9c1edfcc12d6f>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_geometry_api :ref:`register_geometry_deserialize_pcontext<doxid-namespacegeode_1a21eee3ab8ab2f094ad300c9755cd6a94>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afdb46be0cc0cf92e9c480d0f4af7ede7>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a5af516b131738996cf8ff351a797e511>`(:ref:`Ray<doxid-classgeode_1_1_ray>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8aa2b23c4d6223ad5baa9bd94971837a>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a2a3a96558ff0144c829168764fb2264a>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a246f0bb471c47f488831765149625f85>`(opengeode_geometry_api, OpenGeodeGeometry);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afdb46be0cc0cf92e9c480d0f4af7ede7>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a73b98a5519467f090fd3b8dd6a9eb008>`(:ref:`Sphere<doxid-classgeode_1_1_sphere>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a8ec76900496f8c6e59d65c6ad941af27>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
@@ -1254,7 +1256,6 @@ Overview
 		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane
 		);
 
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8aa2b23c4d6223ad5baa9bd94971837a>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a9040936b048d9dc9c295e26f746624ab>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 
 	template <index_t dimension>
