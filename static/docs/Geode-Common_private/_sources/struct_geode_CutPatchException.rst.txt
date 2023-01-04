@@ -22,6 +22,7 @@ struct geode::CutPatchException
 		const Point3D :target:`location<doxid-structgeode_1_1_cut_patch_exception_1aa3a89874c3b143b5e1fd576d70033852>`;
 		index_t :target:`edge_id<doxid-structgeode_1_1_cut_patch_exception_1a8b9e5f526e408b7174e4d9ee7cc3b5f4>`;
 		:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` :target:`cut_info<doxid-structgeode_1_1_cut_patch_exception_1acecbd6c1bca7e23b9f9f85057c62a4f3>`;
+		std::vector<FrontCycle> :target:`remaining_cycles<doxid-structgeode_1_1_cut_patch_exception_1a7bae4ecf6145a5afcd223d6c95172439>`;
 
 		// construction
 	
