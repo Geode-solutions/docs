@@ -23,7 +23,6 @@ struct geode::SolidPatch
 		Position :target:`position<doxid-structgeode_1_1_solid_patch_1ad165fde32e60a8026dbf1936ed887737>` { Position::outside };
 		index_t :target:`edge_id<doxid-structgeode_1_1_solid_patch_1aef2270ce36f7d1f9e7c344777439c3fb>` { NO_ID };
 		index_t :target:`vertex_id<doxid-structgeode_1_1_solid_patch_1a7169fdeb8b6b8681389f357ae8bb50e8>` { NO_ID };
-		absl::flat_hash_set<index_t> :target:`patch_front_edge<doxid-structgeode_1_1_solid_patch_1a044ad44d294c15b65778726040ec4aa4>`;
 
 		// construction
 	
@@ -44,6 +43,4 @@ struct geode::SolidPatch
 		bool :target:`are_same_paths<doxid-structgeode_1_1_solid_patch_1abf60fcea2685278448245180b67114fe>`(const SolidPatch& other) const;
 		geode::Position :target:`get_vertex_position<doxid-structgeode_1_1_solid_patch_1a8b00f0c86f2b1681fa497a979712e27f>`(geode::index_t vertex) const;
 		geode::index_t :target:`get_vertex_index<doxid-structgeode_1_1_solid_patch_1a7887720c4cfc891023d8080184b04424>`() const;
-		void :target:`add_patch_front_edge<doxid-structgeode_1_1_solid_patch_1a620d8290dda59fa4c2f233e8a7c587d8>`(index_t patch_front_edge_id);
-		bool :target:`is_in_patch_front_edge<doxid-structgeode_1_1_solid_patch_1a92a9b506a8f5fde1b1b52c662eb3eb5d>`(index_t patch_front_edge_id) const;
 	};
