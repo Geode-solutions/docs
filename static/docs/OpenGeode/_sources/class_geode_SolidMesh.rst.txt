@@ -75,10 +75,9 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`polyhedron_barycenter<doxid-classgeode_1_1_solid_mesh_1a8ec29c3c46b5990fbc66a2080e97da97>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`facet_barycenter<doxid-classgeode_1_1_solid_mesh_1ad4c1c0e05fde802fc6aa89319e43b0aa>`(const :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a8ff824f11177dd1e2808b7d9e0a44291>`& facet_vertices) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`edge_barycenter<doxid-classgeode_1_1_solid_mesh_1a5cb898499b4522f8ac9e7c55e42dfa22>`(const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices) const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==3, Vector3D>::type :ref:`polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1ac11c243a8507b7a5590b48ca05d50648>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
-	
+		double :ref:`polyhedron_volume<doxid-classgeode_1_1_solid_mesh_1a0fba01cdd3873e8d1cdefbff872db6d6>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
+		Vector3D :ref:`polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1aa986f28d1f1cb6338b6d51785f6b4fd3>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
+		absl::optional<Vector3D> :ref:`new_polyhedron_facet_normal<doxid-classgeode_1_1_solid_mesh_1a159b4981507a839089f2bb82d1086da4>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 		const :ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>`& :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a1c69b104ef6642ab507026a47fc8c49e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		const :ref:`PolyhedraAroundVertex<doxid-namespacegeode_1af2cce74521d6e23e0fc15f4666174436>`& :ref:`polyhedra_around_vertex<doxid-classgeode_1_1_solid_mesh_1a6e1b9a2240ab0563b03371d448aaefdd>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& polyhedron_vertex) const;
 		bool :ref:`is_vertex_on_border<doxid-classgeode_1_1_solid_mesh_1a6c42099f25a0ab99ade3b87973bc1749>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
@@ -618,14 +617,57 @@ Return the coordinates of the barycenter of a given edge.
 
 		- Indices of edge vertices.
 
-.. index:: pair: function; polyhedron_facet_normal
-.. _doxid-classgeode_1_1_solid_mesh_1ac11c243a8507b7a5590b48ca05d50648:
+.. index:: pair: function; polyhedron_volume
+.. _doxid-classgeode_1_1_solid_mesh_1a0fba01cdd3873e8d1cdefbff872db6d6:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	template <index_t T = dimension>
-	std::enable_if<T==3, Vector3D>::type polyhedron_facet_normal(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const
+	double polyhedron_volume(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const
+
+Return the volume of a given polyhedron.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polyhedron_id
+
+		- Index of a polyhedron.
+
+.. index:: pair: function; polyhedron_facet_normal
+.. _doxid-classgeode_1_1_solid_mesh_1aa986f28d1f1cb6338b6d51785f6b4fd3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Vector3D polyhedron_facet_normal(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const
+
+Return the normal of a given :ref:`PolyhedronFacet <doxid-structgeode_1_1_polyhedron_facet>`.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polyhedron_facet
+
+		- Local index of facet in polyhedron.
+
+.. index:: pair: function; new_polyhedron_facet_normal
+.. _doxid-classgeode_1_1_solid_mesh_1a159b4981507a839089f2bb82d1086da4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<Vector3D> new_polyhedron_facet_normal(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const
 
 Return the normal of a given :ref:`PolyhedronFacet <doxid-structgeode_1_1_polyhedron_facet>`.
 
