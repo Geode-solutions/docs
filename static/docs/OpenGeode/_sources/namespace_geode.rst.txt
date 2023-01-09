@@ -1493,6 +1493,9 @@ Overview
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` axis_to_add
 		);
 
+	template <index_t dimension>
+	std::unique_ptr<:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>> :target:`merge_edged_curves<doxid-namespacegeode_1aa2e4dd2060696ac9598d9a8d8bc85246>`(absl::Span<const std::reference_wrapper<const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>>> curves);
+
 	std::unique_ptr<PointSet2D> opengeode_mesh_api :target:`convert_point_set3d_into_2d<doxid-namespacegeode_1accdfbecc41b0345f70d8f72fa01ba2b8>`(
 		const PointSet3D& point_set3d,
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` axis_to_remove
