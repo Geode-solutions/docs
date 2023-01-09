@@ -7,7 +7,7 @@ template class geode::ComponentMeshesDegeneration
 .. toctree::
 	:hidden:
 
-Class for inspecting the degeneration of edges in the Component Meshes of a Model (BRep or Section).
+Class for inspecting the degeneration of elements in the Component Meshes of a Model (BRep or Section).
 
 
 .. ref-code-block:: cpp
@@ -26,7 +26,7 @@ Class for inspecting the degeneration of edges in the Component Meshes of a Mode
 
 		// methods
 	
-		std::vector<uuid> :target:`components_with_degenerated_edges<doxid-classgeode_1_1_component_meshes_degeneration_1a3dffb3a027f52efb590ce0dbfd009d3d>`() const;
-		absl::flat_hash_map<uuid, index_t> :target:`components_nb_degenerated_edges<doxid-classgeode_1_1_component_meshes_degeneration_1a2cb07403959c8bf11be2593b0588baf1>`() const;
-		absl::flat_hash_map<uuid, std::vector<index_t>> :target:`components_degenerated_edges<doxid-classgeode_1_1_component_meshes_degeneration_1af33cbab608b282f4b209fd87fbfb3ea6>`() const;
+		std::vector<uuid> :target:`degenerated_component_meshes<doxid-classgeode_1_1_component_meshes_degeneration_1a4279c4d32e883fb61441fdc66459ab2e>`() const;
+		absl::flat_hash_map<uuid, index_t> :target:`components_nb_degenerated_elements<doxid-classgeode_1_1_component_meshes_degeneration_1a74b62f84ead7a751f1fda512a2a4d4dc>`() const;
+		absl::flat_hash_map<uuid, :ref:`DegeneratedElements<doxid-structgeode_1_1_degenerated_elements>`> :target:`components_degenerated_elements<doxid-classgeode_1_1_component_meshes_degeneration_1a6266ea2862e63e2e82403d190e1c17d9>`() const;
 	};

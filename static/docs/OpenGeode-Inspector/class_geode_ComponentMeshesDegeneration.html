@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>template class geode::ComponentMeshesDegeneration &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,7 +13,9 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -38,7 +40,7 @@
 <span id="doxid-classgeode-1-1-component-meshes-degeneration"></span><span id="index-0"></span><h1>template class geode::ComponentMeshesDegeneration</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Class for inspecting the degeneration of edges in the Component Meshes of a Model (BRep or Section).</p>
+<p>Class for inspecting the degeneration of elements in the Component Meshes of a Model (BRep or Section).</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;component_meshes_degeneration.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
@@ -52,9 +54,9 @@
 
     <span class="c1">// methods</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-meshes-degeneration-1a3dffb3a027f52efb590ce0dbfd009d3d"><span></span><span class="n">components_with_degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-meshes-degeneration-1a2cb07403959c8bf11be2593b0588baf1"><span></span><span class="n">components_nb_degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-meshes-degeneration-1af33cbab608b282f4b209fd87fbfb3ea6"><span></span><span class="n">components_degenerated_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-meshes-degeneration-1a4279c4d32e883fb61441fdc66459ab2e"><span></span><span class="n">degenerated_component_meshes</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-meshes-degeneration-1a74b62f84ead7a751f1fda512a2a4d4dc"><span></span><span class="n">components_nb_degenerated_elements</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <a class="reference internal" href="struct_geode_DegeneratedElements.html#doxid-structgeode-1-1-degenerated-elements"><span class="std std-ref">DegeneratedElements</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-component-meshes-degeneration-1a6266ea2862e63e2e82403d190e1c17d9"><span></span><span class="n">components_degenerated_elements</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </section>
 
@@ -68,7 +70,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

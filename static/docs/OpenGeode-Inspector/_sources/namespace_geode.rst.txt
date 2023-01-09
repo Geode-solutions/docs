@@ -8,6 +8,7 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
+	struct_geode_DegeneratedElements.rst
 	class_geode_AddInspectors.rst
 	class_geode_BRepComponentMeshesAdjacency.rst
 	class_geode_BRepComponentMeshesManifold.rst
@@ -60,6 +61,10 @@ namespace geode
 	typedef :ref:`UniqueVerticesColocation<doxid-classgeode_1_1_unique_vertices_colocation>`<3, BRep> :target:`BRepUniqueVerticesColocation<doxid-namespacegeode_1ae69075bd9a8b0154d435f5a52c0190af>`;
 	typedef :ref:`ComponentMeshesDegeneration<doxid-classgeode_1_1_component_meshes_degeneration>`<2, Section> :target:`SectionComponentMeshesDegeneration<doxid-namespacegeode_1ae32ddf99705963dc9e7f9888441bc531>`;
 	typedef :ref:`ComponentMeshesDegeneration<doxid-classgeode_1_1_component_meshes_degeneration>`<3, BRep> :target:`BRepComponentMeshesDegeneration<doxid-namespacegeode_1ae956bf998adde768a642a2a5c1097786>`;
+
+	// structs
+
+	struct :ref:`DegeneratedElements<doxid-structgeode_1_1_degenerated_elements>`;
 
 	// classes
 

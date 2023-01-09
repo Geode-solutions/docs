@@ -28,7 +28,9 @@ Class for inspecting the degeneration of a SurfaceMesh
 	
 		bool :target:`is_mesh_degenerated<doxid-classgeode_1_1_surface_mesh_degeneration_1a26880ccbf318a8f901fd332f7e5236e3>`() const;
 		index_t :target:`nb_degenerated_edges<doxid-classgeode_1_1_surface_mesh_degeneration_1abe1502822aafe296bb4bd2fb05a2326b>`() const;
+		index_t :target:`nb_degenerated_polygons<doxid-classgeode_1_1_surface_mesh_degeneration_1ae96987389c8758d1910635e2510e8623>`() const;
 		std::vector<index_t> :target:`degenerated_edges<doxid-classgeode_1_1_surface_mesh_degeneration_1a56672a74b5e9c738f019e117f5091215>`() const;
+		std::vector<index_t> :target:`degenerated_polygons<doxid-classgeode_1_1_surface_mesh_degeneration_1a47cb9eacadeb8240edb591df0d496ed1>`() const;
 	};
 
 	// direct descendants
