@@ -42,6 +42,7 @@ namespace geode
 	struct_geode_MeshTypeTag.rst
 	struct_geode_MeshVertex.rst
 	struct_geode_ModelComponentMeshEdges.rst
+	struct_geode_ModelMeshesAABBTree.rst
 	struct_geode_ModelMeshesElementMapping.rst
 	struct_geode_MultipleValueStorage.rst
 	struct_geode_OneValueStorage.rst
@@ -396,11 +397,11 @@ Overview
 
 	struct :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`;
 
-	template <index_t dimension>
-	struct :ref:`GenericAttributeConversion<Point<dimension>><doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4>`;
-
 	template <>
 	struct :ref:`GenericAttributeConversion<RGBColor><doxid-structgeode_1_1_generic_attribute_conversion_3_01_r_g_b_color_01_4>`;
+
+	template <index_t dimension>
+	struct :ref:`GenericAttributeConversion<Point<dimension>><doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4>`;
 
 	template <>
 	struct :ref:`GenericAttributeConversion<GreyscaleColor><doxid-structgeode_1_1_generic_attribute_conversion_3_01_greyscale_color_01_4>`;
@@ -419,6 +420,10 @@ Overview
 	struct :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`;
 	struct :ref:`MeshVertex<doxid-structgeode_1_1_mesh_vertex>`;
 	struct :ref:`ModelComponentMeshEdges<doxid-structgeode_1_1_model_component_mesh_edges>`;
+
+	template <index_t dimension>
+	struct :ref:`ModelMeshesAABBTree<doxid-structgeode_1_1_model_meshes_a_a_b_b_tree>`;
+
 	struct :ref:`ModelMeshesElementMapping<doxid-structgeode_1_1_model_meshes_element_mapping>`;
 
 	template <typename T>
@@ -1807,6 +1812,12 @@ Overview
 	std::tuple<AABBTree3D, absl::FixedArray<:ref:`uuid<doxid-structgeode_1_1uuid>`>> opengeode_model_api :target:`create_blocks_aabb_tree<doxid-namespacegeode_1a8e05e26a7bb6a7693b68b43590ef88d3>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model);
 	std::tuple<AABBTree2D, absl::FixedArray<:ref:`uuid<doxid-structgeode_1_1uuid>`>> opengeode_model_api :target:`create_lines_aabb_tree<doxid-namespacegeode_1afb9a1d73011470414448dfeab13c0407>`(const :ref:`Section<doxid-classgeode_1_1_section>`& model);
 	std::tuple<AABBTree2D, absl::FixedArray<:ref:`uuid<doxid-structgeode_1_1uuid>`>> opengeode_model_api :target:`create_surfaces_aabb_tree<doxid-namespacegeode_1a5f0b262a942a68f6a028aaa61696ff2f>`(const :ref:`Section<doxid-classgeode_1_1_section>`& model);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a313462244a1a36f8f9aa59af3d4e6be8>`(:ref:`ModelMeshesAABBTree<doxid-structgeode_1_1_model_meshes_a_a_b_b_tree>`);
+	ModelMeshesAABBTree3D opengeode_model_api :target:`create_line_meshes_aabb_trees<doxid-namespacegeode_1ab5953fc48490fa652934b316af07f695>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model);
+	ModelMeshesAABBTree3D opengeode_model_api :target:`create_surface_meshes_aabb_trees<doxid-namespacegeode_1ae5a0aa7587454578e9039b82a3fe27c3>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model);
+	ModelMeshesAABBTree3D opengeode_model_api :target:`create_block_meshes_aabb_trees<doxid-namespacegeode_1a6d7c292f26f5f5fb3666d8b170cc9e92>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model);
+	ModelMeshesAABBTree2D opengeode_model_api :target:`create_line_meshes_aabb_trees<doxid-namespacegeode_1a5a96063fa7470a29595393b31f83bad1>`(const :ref:`Section<doxid-classgeode_1_1_section>`& model);
+	ModelMeshesAABBTree2D opengeode_model_api :target:`create_surface_meshes_aabb_trees<doxid-namespacegeode_1a4010e1608ca12494383485adcace2e55>`(const :ref:`Section<doxid-classgeode_1_1_section>`& model);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(:ref:`Block<doxid-classgeode_1_1_block>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9dd3655e0b4d0e1d23b6d3a8fd68c87b>`(:ref:`Line<doxid-classgeode_1_1_line>`);
