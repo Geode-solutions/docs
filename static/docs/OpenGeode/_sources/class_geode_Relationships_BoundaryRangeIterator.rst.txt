@@ -7,7 +7,7 @@ class geode::Relationships::BoundaryRangeIterator
 .. toctree::
 	:hidden:
 
-Range to iterates on all boundaries of one component
+Range to iterate on all boundaries of one component
 
 
 .. ref-code-block:: cpp

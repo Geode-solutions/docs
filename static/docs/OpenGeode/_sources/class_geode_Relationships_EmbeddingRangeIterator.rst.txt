@@ -7,7 +7,7 @@ class geode::Relationships::EmbeddingRangeIterator
 .. toctree::
 	:hidden:
 
-Range to iterates on all embeddings of one component
+Range to iterate on all embeddings of one component
 
 
 .. ref-code-block:: cpp
