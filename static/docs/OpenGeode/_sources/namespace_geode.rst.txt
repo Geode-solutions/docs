@@ -1564,6 +1564,13 @@ Overview
 	template <index_t dimension>
 	std::unique_ptr<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :target:`merge_surface_meshes<doxid-namespacegeode_1afdb0662672f33a008eac14437a46f0b6>`(const std::vector<std::reference_wrapper<const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>>>& surfaces);
 
+	template <index_t dimension>
+	std::shared_ptr<:ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`<double>> :ref:`euclidean_distance_transform<doxid-namespacegeode_1aa0f1f2b8dc7bbf18aa226b6a4483bd00>`(
+		const RegularGrid<dimension>& grid,
+		absl::Span<const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>> grid_cell_ids,
+		absl::string_view distance_map_name
+		);
+
 	template <
 		template<index_t> class Mesh,
 		template<index_t> class MeshBuilder,
@@ -3444,6 +3451,64 @@ Register all the information needed by Bitsery to deserialize the objects in the
 		- context
 
 		- The context where to register this information.
+
+.. index:: pair: function; euclidean_distance_transform
+.. _doxid-namespacegeode_1aa0f1f2b8dc7bbf18aa226b6a4483bd00:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::shared_ptr<:ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`<double>> euclidean_distance_transform(
+		const RegularGrid<dimension>& grid,
+		absl::Span<const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>> grid_cell_ids,
+		absl::string_view distance_map_name
+		)
+
+API function for creating and computing the euclidean distance map from raterized objects. It computes the exact euclidean distance map.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- grid
+
+		- Regular grid on which the euclidean distance map is computed.
+
+	*
+		- grid_cell_ids
+
+		- Rasterization of every objects from which the distance will be computed.
+
+	*
+		- distance_map_name
+
+		- Name of the attribute to store the map on the
+
+	*
+		- grid.
+
+		- 
+
+	*
+		- :ref:`OpenGeodeException <doxid-classgeode_1_1_open_geode_exception>`
+
+		- if the attribute named
+
+	*
+		- distance_map_name
+
+		- cannot be accessed.
+
+
+
+.. rubric:: Returns:
+
+the created attribute
 
 .. index:: pair: function; load_edged_curve
 .. _doxid-namespacegeode_1aa7842b652ce91298cb5af68de7348148:
