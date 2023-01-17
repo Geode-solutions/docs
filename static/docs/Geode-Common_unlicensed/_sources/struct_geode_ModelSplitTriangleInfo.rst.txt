@@ -1,0 +1,29 @@
+.. index:: pair: struct; geode::ModelSplitTriangleInfo
+.. _doxid-structgeode_1_1_model_split_triangle_info:
+
+struct geode::ModelSplitTriangleInfo
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	struct ModelSplitTriangleInfo
+	{
+		// fields
+	
+		index_t :target:`unique_vertex<doxid-structgeode_1_1_model_split_triangle_info_1a6e83b5b16f42db75e0ccde0473403c00>` { NO_ID };
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`SplitTriangleInfo<doxid-structgeode_1_1_split_triangle_info>`, 1>> :target:`surface_info<doxid-structgeode_1_1_model_split_triangle_info_1a896a1809a4ce236e1aaf0aeb360dd92b>`;
+	};
+
+	// direct descendants
+
+	struct :ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_split_triangle_info>`;
+	struct :ref:`SectionSplitTriangleInfo<doxid-structgeode_1_1_section_split_triangle_info>`;

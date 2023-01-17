@@ -13,6 +13,7 @@ namespace geode
 	struct_geode_BRepCollapsePolygonEdgeInfo.rst
 	struct_geode_BRepSimulationResult.rst
 	struct_geode_BRepSplitPolygonEdgeInfo.rst
+	struct_geode_BRepSplitTriangleInfo.rst
 	struct_geode_CollapseEdgeInfo.rst
 	struct_geode_CollapsePolygonEdgeInfo.rst
 	struct_geode_CutPatchException.rst
@@ -25,6 +26,7 @@ namespace geode
 	struct_geode_ModelCollapsePolygonEdgeInfo.rst
 	struct_geode_ModelSimulationResult.rst
 	struct_geode_ModelSplitPolygonEdgeInfo.rst
+	struct_geode_ModelSplitTriangleInfo.rst
 	struct_geode_MultiMapping.rst
 	struct_geode_MultiMapping-2.rst
 	struct_geode_PolygonData.rst
@@ -33,6 +35,7 @@ namespace geode
 	struct_geode_SectionCollapsePolygonEdgeInfo.rst
 	struct_geode_SectionSimulationResult.rst
 	struct_geode_SectionSplitPolygonEdgeInfo.rst
+	struct_geode_SectionSplitTriangleInfo.rst
 	struct_geode_SidedSolidSplitEdgeInfo.rst
 	struct_geode_SolidCollapseEdgeInfo.rst
 	struct_geode_SolidCutPatchInfo.rst
@@ -112,6 +115,7 @@ Overview
 	struct :ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>`;
 	struct :ref:`BRepSimulationResult<doxid-structgeode_1_1_b_rep_simulation_result>`;
 	struct :ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>`;
+	struct :ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_split_triangle_info>`;
 	struct :ref:`CollapseEdgeInfo<doxid-structgeode_1_1_collapse_edge_info>`;
 	struct :ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>`;
 	struct :ref:`CutPatchException<doxid-structgeode_1_1_cut_patch_exception>`;
@@ -131,12 +135,13 @@ Overview
 	struct :ref:`ModelCollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info>`;
 	struct :ref:`ModelSimulationResult<doxid-structgeode_1_1_model_simulation_result>`;
 	struct :ref:`ModelSplitPolygonEdgeInfo<doxid-structgeode_1_1_model_split_polygon_edge_info>`;
-
-	template <typename Type>
-	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
+	struct :ref:`ModelSplitTriangleInfo<doxid-structgeode_1_1_model_split_triangle_info>`;
 
 	template <>
 	struct :ref:`MultiMapping<index_t><doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4>`;
+
+	template <typename Type>
+	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
 
 	template <index_t dimension>
 	struct :ref:`PolygonData<doxid-structgeode_1_1_polygon_data>`;
@@ -148,6 +153,7 @@ Overview
 	struct :ref:`SectionCollapsePolygonEdgeInfo<doxid-structgeode_1_1_section_collapse_polygon_edge_info>`;
 	struct :ref:`SectionSimulationResult<doxid-structgeode_1_1_section_simulation_result>`;
 	struct :ref:`SectionSplitPolygonEdgeInfo<doxid-structgeode_1_1_section_split_polygon_edge_info>`;
+	struct :ref:`SectionSplitTriangleInfo<doxid-structgeode_1_1_section_split_triangle_info>`;
 	struct :ref:`SidedSolidSplitEdgeInfo<doxid-structgeode_1_1_sided_solid_split_edge_info>`;
 	struct :ref:`SolidCollapseEdgeInfo<doxid-structgeode_1_1_solid_collapse_edge_info>`;
 	struct :ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>`;

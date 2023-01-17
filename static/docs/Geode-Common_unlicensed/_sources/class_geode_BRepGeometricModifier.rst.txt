@@ -25,6 +25,12 @@ class geode::BRepGeometricModifier
 
 		// methods
 	
+		:ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_split_triangle_info>` :target:`split_triangle<doxid-classgeode_1_1_b_rep_geometric_modifier_1afc36314e9e1557706f495bfe0862bfe3>`(
+			const Surface3D& surface,
+			index_t triangle,
+			const Point3D& point
+			);
+	
 		:ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_b_rep_geometric_modifier_1a31b03b4f1cccacc96e3e58f9295326df>`(
 			const Block3D& block,
 			const PolyhedronFacetEdge& edge,

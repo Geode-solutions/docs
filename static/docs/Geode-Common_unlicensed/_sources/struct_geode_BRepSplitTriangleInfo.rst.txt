@@ -1,0 +1,36 @@
+.. index:: pair: struct; geode::BRepSplitTriangleInfo
+.. _doxid-structgeode_1_1_b_rep_split_triangle_info:
+
+struct geode::BRepSplitTriangleInfo
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier.h>
+	
+	struct BRepSplitTriangleInfo: public :ref:`geode::ModelSplitTriangleInfo<doxid-structgeode_1_1_model_split_triangle_info>`
+	{
+		// fields
+	
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>`, 1>> :target:`block_info<doxid-structgeode_1_1_b_rep_split_triangle_info_1a17ce3f3a0302e18f02d159fb155aaecc>`;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		index_t :ref:`unique_vertex<doxid-structgeode_1_1_model_split_triangle_info_1a6e83b5b16f42db75e0ccde0473403c00>` { NO_ID };
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`SplitTriangleInfo<doxid-structgeode_1_1_split_triangle_info>`, 1>> :ref:`surface_info<doxid-structgeode_1_1_model_split_triangle_info_1a896a1809a4ce236e1aaf0aeb360dd92b>`;
+
