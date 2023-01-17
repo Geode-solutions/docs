@@ -25,6 +25,12 @@ class geode::SectionGeometricModifier
 
 		// methods
 	
+		:ref:`SectionSplitTriangleInfo<doxid-structgeode_1_1_section_split_triangle_info>` :target:`split_triangle<doxid-classgeode_1_1_section_geometric_modifier_1a9f0624d4866d2e366f3b3860fb85f261>`(
+			const Surface2D& surface,
+			index_t triangle,
+			const Point2D& point
+			);
+	
 		:ref:`SectionCollapsePolygonEdgeInfo<doxid-structgeode_1_1_section_collapse_polygon_edge_info>` :target:`collapse_edge<doxid-classgeode_1_1_section_geometric_modifier_1a98780dac92a6a4e939b676b2f85996ae>`(
 			const Surface2D& surface,
 			const PolygonEdge& edge,
