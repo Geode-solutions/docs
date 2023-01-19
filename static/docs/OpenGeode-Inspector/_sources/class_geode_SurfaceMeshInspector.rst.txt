@@ -20,6 +20,7 @@ Class for inspecting a SurfaceMesh
 	    public :ref:`geode::SurfaceMeshAdjacency<doxid-classgeode_1_1_surface_mesh_adjacency>`,
 	    public :ref:`geode::SurfaceMeshColocation<doxid-classgeode_1_1_surface_mesh_colocation>`,
 	    public :ref:`geode::SurfaceMeshDegeneration<doxid-classgeode_1_1_surface_mesh_degeneration>`,
+	    public :ref:`geode::SurfaceMeshIntersections<doxid-classgeode_1_1_surface_mesh_intersections>`,
 	    public :ref:`geode::SurfaceMeshEdgeManifold<doxid-classgeode_1_1_surface_mesh_edge_manifold>`,
 	    public :ref:`geode::SurfaceMeshVertexManifold<doxid-classgeode_1_1_surface_mesh_vertex_manifold>`,
 	    public :ref:`geode::AddInspectors<doxid-classgeode_1_1_add_inspectors>`
@@ -51,6 +52,9 @@ Inherited Members
 		index_t :ref:`nb_degenerated_polygons<doxid-classgeode_1_1_surface_mesh_degeneration_1ae96987389c8758d1910635e2510e8623>`() const;
 		std::vector<index_t> :ref:`degenerated_edges<doxid-classgeode_1_1_surface_mesh_degeneration_1a56672a74b5e9c738f019e117f5091215>`() const;
 		std::vector<index_t> :ref:`degenerated_polygons<doxid-classgeode_1_1_surface_mesh_degeneration_1a47cb9eacadeb8240edb591df0d496ed1>`() const;
+		bool :ref:`mesh_has_self_intersections<doxid-classgeode_1_1_surface_mesh_intersections_1a3f9db716584b6875782a135391bd4b2a>`() const;
+		index_t :ref:`nb_intersecting_elements_pair<doxid-classgeode_1_1_surface_mesh_intersections_1ad2e4bb5eeafc4a4ba9dfd49b747bb83d>`() const;
+		std::vector<std::array<index_t, 2>> :ref:`intersecting_elements<doxid-classgeode_1_1_surface_mesh_intersections_1a2c54f8a9e7d53e18958327e66534350e>`() const;
 		bool :ref:`mesh_edges_are_manifold<doxid-classgeode_1_1_surface_mesh_edge_manifold_1abf40bdd7fb8cab174eec84bfbd5cdbaf>`() const;
 		index_t :ref:`nb_non_manifold_edges<doxid-classgeode_1_1_surface_mesh_edge_manifold_1a22bdf6228defddb4d194e78d4f044995>`() const;
 		std::vector<std::array<index_t, 2>> :ref:`non_manifold_edges<doxid-classgeode_1_1_surface_mesh_edge_manifold_1a5af3a2f9dea2ad46f49fdedebed2d3b6>`() const;
