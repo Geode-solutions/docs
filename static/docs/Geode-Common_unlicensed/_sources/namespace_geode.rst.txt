@@ -62,6 +62,7 @@ namespace geode
 	class_geode_SurfacePathFinder.rst
 	class_geode_SurfaceSegmentFinder.rst
 	class_geode_SurfaceSegmentFinder2D.rst
+	class_geode_SurfaceSegmentFinder3D.rst
 	class_geode_TetrahedralSolidEpsilonModifier.rst
 	class_geode_TetrahedralSolidModifier.rst
 	class_geode_TriangulatedSurfaceEpsilonModifier.rst
@@ -194,6 +195,7 @@ Overview
 	class :ref:`SurfaceSegmentFinder<doxid-classgeode_1_1_surface_segment_finder>`;
 
 	class :ref:`SurfaceSegmentFinder2D<doxid-classgeode_1_1_surface_segment_finder2_d>`;
+	class :ref:`SurfaceSegmentFinder3D<doxid-classgeode_1_1_surface_segment_finder3_d>`;
 	class :ref:`TetrahedralSolidEpsilonModifier<doxid-classgeode_1_1_tetrahedral_solid_epsilon_modifier>`;
 	class :ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`;
 
