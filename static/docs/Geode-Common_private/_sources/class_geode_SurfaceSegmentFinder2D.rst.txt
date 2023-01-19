@@ -55,23 +55,6 @@ Find a rectilinear path between two vertices.
 
 
 
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- begin
-
-		- Index of the cut starting vertex
-
-	*
-		- end
-
-		- Index of the cut ending vertex
-
-
-
 .. rubric:: Returns:
 
 an ordered list of path locations between begin and end.
