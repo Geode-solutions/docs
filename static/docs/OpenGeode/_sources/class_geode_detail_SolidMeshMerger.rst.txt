@@ -1,0 +1,45 @@
+.. index:: pair: class; geode::detail::SolidMeshMerger
+.. _doxid-classgeode_1_1detail_1_1_solid_mesh_merger:
+
+template class geode::detail::SolidMeshMerger
+=============================================
+
+.. toctree::
+	:hidden:
+
+	struct_geode_detail_SolidMeshMerger_PolyhedronOrigin.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <solid_merger.h>
+	
+	template <index_t dimension>
+	class SolidMeshMerger
+	{
+	public:
+		// typedefs
+	
+		typedef absl::InlinedVector<:ref:`PolyhedronOrigin<doxid-structgeode_1_1detail_1_1_solid_mesh_merger_1_1_polyhedron_origin>`, 1> :target:`PolyhedronOrigins<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1ad48382831238101ed2f738c48f76a9cb>`;
+
+		// structs
+	
+		struct :ref:`PolyhedronOrigin<doxid-structgeode_1_1detail_1_1_solid_mesh_merger_1_1_polyhedron_origin>`;
+
+		// construction
+	
+		:target:`SolidMeshMerger<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1ac04260705995ac2fd059691b2493a0c1>`(
+			absl::Span<const std::reference_wrapper<const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>>> solids,
+			double epsilon
+			);
+
+		// methods
+	
+		std::unique_ptr<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> :target:`merge<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1a6e672b0884afa3e5ffe441304e951838>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_in_merged<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1ae89d968e4e6a025e0069b936288a64fa>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` solid, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polyhedron_in_merged<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1a59ec13d97200924042417761145ea3b5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` solid, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron) const;
+		const :ref:`PolyhedronOrigins<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1ad48382831238101ed2f738c48f76a9cb>`& :target:`polyhedron_origins<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1a0ca75b54478f38a1955c2c19573a0768>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron) const;
+	};

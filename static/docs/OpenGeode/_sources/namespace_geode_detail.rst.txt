@@ -14,6 +14,7 @@ namespace geode::detail
 	class_geode_detail_FacetStorage.rst
 	class_geode_detail_MeshStorage.rst
 	class_geode_detail_OrientedVertexCycle.rst
+	class_geode_detail_SolidMeshMerger.rst
 	class_geode_detail_SurfaceMeshMerger.rst
 	class_geode_detail_UuidToIndex.rst
 	class_geode_detail_VertexCycle.rst
@@ -52,6 +53,9 @@ namespace geode::detail
 
 	template <typename Container>
 	class :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`;
+
+	template <index_t dimension>
+	class :ref:`SolidMeshMerger<doxid-classgeode_1_1detail_1_1_solid_mesh_merger>`;
 
 	template <index_t dimension>
 	class :ref:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger>`;
@@ -154,6 +158,7 @@ namespace geode::detail
 		);
 
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1_1detail_1af5b3b4f7e07cb11bd8a472ed5ce099fa>`(:ref:`EdgedCurveMerger<doxid-classgeode_1_1detail_1_1_edged_curve_merger>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1_1detail_1adc7ebe872359976115ab0f6b1a3246ce>`(:ref:`SolidMeshMerger<doxid-classgeode_1_1detail_1_1_solid_mesh_merger>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1_1detail_1a8d6a6047214e15c4e8de8104fc71d5de>`(:ref:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger>`);
 
 	template <typename Serializer>

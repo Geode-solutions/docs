@@ -1512,6 +1512,7 @@ Overview
 		);
 
 	absl::optional<std::unique_ptr<TetrahedralSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_tetrahedral_solid<doxid-namespacegeode_1ad88abdc0180700dd94d4dc05d56f4149>`(const SolidMesh3D& solid);
+	std::unique_ptr<SolidMesh3D> opengeode_mesh_api :target:`merge_solid_meshes<doxid-namespacegeode_1a07d4f079e9d7b110ac110ae09f301844>`(absl::Span<const std::reference_wrapper<const SolidMesh3D>> solids);
 
 	template <index_t dimension>
 	std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>> :target:`convert_surface_mesh_into_polygonal_surface<doxid-namespacegeode_1a1f9318896e50084939d8cfb251b1f1bd>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface);
