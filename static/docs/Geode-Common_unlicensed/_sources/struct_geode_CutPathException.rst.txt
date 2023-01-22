@@ -19,8 +19,8 @@ struct geode::CutPathException
 	{
 		// fields
 	
-		std::vector<:ref:`FacetSplit<doxid-structgeode_1_1_facet_split>`> :target:`invalid_facet_splits<doxid-structgeode_1_1_cut_path_exception_1a801fe23a4210978c702499e67cb9e520>`;
-		std::vector<:ref:`EdgeSplit<doxid-structgeode_1_1_edge_split>`> :target:`invalid_edge_splits<doxid-structgeode_1_1_cut_path_exception_1aa8fbda0389a0af07bbd331446c8e1082>`;
+		std::vector<std::pair<index_t, :ref:`FacetSplit<doxid-structgeode_1_1_facet_split>`>> :target:`invalid_facet_splits<doxid-structgeode_1_1_cut_path_exception_1a9e6afeeb0e287736e75ac995db3f5a04>`;
+		std::vector<std::pair<index_t, :ref:`EdgeSplit<doxid-structgeode_1_1_edge_split>`>> :target:`invalid_edge_splits<doxid-structgeode_1_1_cut_path_exception_1a518720e80fd8a880cbbf3c1905d7fcae>`;
 		std::vector<std::pair<index_t, index_t>> :target:`uncut_subpaths<doxid-structgeode_1_1_cut_path_exception_1aa73f590a972d64ec862ca5218c58fff1>`;
 		:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` :target:`cut_info<doxid-structgeode_1_1_cut_path_exception_1a9ac17692b9755f5152a288ca114d0027>`;
 	};
