@@ -21,15 +21,9 @@ struct geode::EdgeSplit
 	
 		Point3D :target:`location<doxid-structgeode_1_1_edge_split_1aaaf15b7f8ff9f0b4ffd167c9399dbe47>`;
 		PolyhedronFacetEdge :target:`edge<doxid-structgeode_1_1_edge_split_1af1554e752c12cec7cef12713adf8b345>`;
-		index_t :target:`vertex_index<doxid-structgeode_1_1_edge_split_1a25bc18daa958921905a4efc2bd8c58a3>` { NO_ID };
 
 		// construction
 	
-		:target:`EdgeSplit<doxid-structgeode_1_1_edge_split_1ac4d0effcc50ff5b46f1ff7386acfc188>`(
-			Point3D location_in,
-			PolyhedronFacetEdge edge_in,
-			index_t vertex_index_in
-			);
-	
+		:target:`EdgeSplit<doxid-structgeode_1_1_edge_split_1a4dff1553969558bf75a8c7e8663447ac>`(Point3D location_in, PolyhedronFacetEdge edge_in);
 		:target:`EdgeSplit<doxid-structgeode_1_1_edge_split_1add97977aab6d4fba4010db8ccb71d6f1>`();
 	};
