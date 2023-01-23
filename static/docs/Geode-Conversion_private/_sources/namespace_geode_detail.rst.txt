@@ -11,8 +11,8 @@ namespace geode::detail
 	class_geode_detail_BRepFromSolidAdjacenciesBuilder.rst
 	class_geode_detail_BRepFromSolidElementsBuilder.rst
 	class_geode_detail_CornersLinesBuilder.rst
-	class_geode_detail_CornersLinesBuilderFromMeshes.rst
 	class_geode_detail_CornersLinesBuilderFromSolid.rst
+	class_geode_detail_ModelBuilderFromMeshes.rst
 	class_geode_detail_SectionFromMeshesBuilder.rst
 	class_geode_detail_SolidIdentifier.rst
 	class_geode_detail_SurfaceFromSolidAdjacencies.rst
@@ -29,8 +29,6 @@ namespace geode::detail
 
 	// typedefs
 
-	typedef :ref:`CornersLinesBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes>`<BRep, BRepBuilder, 3> :target:`BRepCornersLinesBuilderFromMeshes<doxid-namespacegeode_1_1detail_1a16ab59f07d6fabe9d70334a1f2030117>`;
-	typedef :ref:`CornersLinesBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes>`<Section, SectionBuilder, 2> :target:`SectionCornersLinesBuilderFromMeshes<doxid-namespacegeode_1_1detail_1a8d7ee5b0f57216cba10f3a2fed3689fc>`;
 	typedef :ref:`CornersLinesBuilderFromSolid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_solid>`<BRep, BRepBuilder> :target:`BRepCornersLinesBuilderFromSolid<doxid-namespacegeode_1_1detail_1a29554aed5867d2e153906ac874fd2130>`;
 
 	// classes
@@ -42,11 +40,11 @@ namespace geode::detail
 	template <typename Model, typename ModelBuilder, index_t dimension>
 	class :ref:`CornersLinesBuilder<doxid-classgeode_1_1detail_1_1_corners_lines_builder>`;
 
-	template <typename Model, typename ModelBuilder, index_t dimension>
-	class :ref:`CornersLinesBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes>`;
-
 	template <typename Model, typename ModelBuilder>
 	class :ref:`CornersLinesBuilderFromSolid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_solid>`;
+
+	template <typename Model, typename ModelBuilder, index_t dimension>
+	class :ref:`ModelBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes>`;
 
 	class :ref:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder>`;
 	class :ref:`SolidIdentifier<doxid-classgeode_1_1detail_1_1_solid_identifier>`;

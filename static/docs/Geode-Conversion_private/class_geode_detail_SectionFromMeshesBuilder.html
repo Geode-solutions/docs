@@ -20,7 +20,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::detail::SolidIdentifier" href="class_geode_detail_SolidIdentifier.html" />
-    <link rel="prev" title="template class geode::detail::CornersLinesBuilderFromSolid" href="class_geode_detail_CornersLinesBuilderFromSolid.html" />
+    <link rel="prev" title="template class geode::detail::ModelBuilderFromMeshes" href="class_geode_detail_ModelBuilderFromMeshes.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -42,7 +42,7 @@
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;section_from_meshes_builder.h&gt;</span><span class="cp"></span>
 
-<span class="k">class</span> <span class="n">SectionFromMeshesBuilder</span>
+<span class="k">class</span> <span class="nl">SectionFromMeshesBuilder</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_detail_ModelBuilderFromMeshes.html#doxid-classgeode-1-1detail-1-1-model-builder-from-meshes"><span class="std std-ref">geode::detail::ModelBuilderFromMeshes</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
@@ -55,8 +55,26 @@
 
     <span class="c1">// methods</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ModelMeshesElementMapping</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-section-from-meshes-builder-1a64c98c7b9c6bcefadee729cfab983981"><span></span><span class="n">build</span></span><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">ComponentMeshVertexMapping</span><span class="p">,</span> <span class="n">ModelMeshesElementMapping</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-section-from-meshes-builder-1a7ff2876400e23a2b5de5912b3efd386a"><span></span><span class="n">build_section</span></span><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
+<section id="inherited-members">
+<h2>Inherited Members</h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1af5e7ec2a77533ebec3131082e28885d2"><span class="std std-ref">wireframe</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1a2bdf51980d5a694c538bcfdf57f1d56a"><span class="std std-ref">build</span></a><span></span><span class="p">();</span>
+    <span class="k">virtual</span> <span class="kt">void</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1aaaf96512d484a5b482ce0480c8436823"><span class="std std-ref">build_wireframe_step</span></a><span></span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1a64493ee069a6269a038247f45ba51271"><span class="std std-ref">build_corners_step</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1a6c6ebf6a6c56f9434997322825136ae6"><span class="std std-ref">build_lines_step</span></a><span></span><span class="p">();</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1ae98c2c08224652ad1451876302ef395d"><span class="std std-ref">add_corner</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex</span><span class="p">);</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1a1766a514c8d3bb6cf9545dfd767a1a5d"><span class="std std-ref">wireframe_edge_id</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">edge_vertices</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1a3bcf6596f44dcb39e767d2a60c6bc4ee"><span class="std std-ref">vertex_id</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1abfcc27a990ac2eaca491679a0a4589c2"><span class="std std-ref">line_uuid</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1ac91bbe61940099c5254774b9d3da28a4"><span class="std std-ref">corner_uuid</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1a8d43e7ccf485a27db31c3c522b87c184"><span class="std std-ref">line_edge_id</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_detail_CornersLinesBuilder.html#doxid-classgeode-1-1detail-1-1-corners-lines-builder-1a30d49951e02cdaf92794be5f878fec16"><span class="std std-ref">line_vertex_id</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">output_line_uuid</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span></pre>
+</section>
 </section>
 
 

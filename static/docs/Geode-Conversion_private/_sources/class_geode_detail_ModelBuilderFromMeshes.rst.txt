@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::detail::CornersLinesBuilderFromMeshes
-.. _doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes:
+.. index:: pair: class; geode::detail::ModelBuilderFromMeshes
+.. _doxid-classgeode_1_1detail_1_1_model_builder_from_meshes:
 
-template class geode::detail::CornersLinesBuilderFromMeshes
-===========================================================
+template class geode::detail::ModelBuilderFromMeshes
+====================================================
 
 .. toctree::
 	:hidden:
@@ -13,26 +13,18 @@ template class geode::detail::CornersLinesBuilderFromMeshes
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <corners_lines_builder_from_meshes.h>
+	#include <model_builder_from_meshes.h>
 	
 	template <typename Model, typename ModelBuilder, index_t dimension>
-	class CornersLinesBuilderFromMeshes: public :ref:`geode::detail::CornersLinesBuilder<doxid-classgeode_1_1detail_1_1_corners_lines_builder>`
+	class ModelBuilderFromMeshes: public :ref:`geode::detail::CornersLinesBuilder<doxid-classgeode_1_1detail_1_1_corners_lines_builder>`
 	{
-	public:
-		// construction
-	
-		:target:`CornersLinesBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes_1a5a29ceb424ad449830e543aefb357cef>`(
-			Model& model,
-			absl::Span<const std::reference_wrapper<const EdgedCurve<dimension>>> curves,
-			absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension>>> surfaces
-			);
-
-		// methods
-	
-		virtual void :target:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes_1a72447ab2d3d91b43241935b0b76a8c09>`();
-		void :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes_1a6a6c1e68d6c44c72321856da18722f43>`();
-		std::pair<ComponentMeshVertexMapping, ModelMeshesElementMapping> :target:`mappings<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_meshes_1a8308ddf4fe41181e1d507a82e9a33671>`();
+	protected:
 	};
+
+	// direct descendants
+
+	class :ref:`BRepFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder>`;
+	class :ref:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder>`;
 
 Inherited Members
 -----------------
