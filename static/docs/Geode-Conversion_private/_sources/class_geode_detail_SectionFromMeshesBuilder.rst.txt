@@ -52,4 +52,8 @@ Inherited Members
 		absl::optional<uuid> :ref:`corner_uuid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ac91bbe61940099c5254774b9d3da28a4>`(index_t vertex) const;
 		index_t :ref:`line_edge_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a8d43e7ccf485a27db31c3c522b87c184>`(index_t edge) const;
 		index_t :ref:`line_vertex_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a30d49951e02cdaf92794be5f878fec16>`(index_t vertex, const uuid& output_line_uuid) const;
+		virtual void :ref:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a161fcbbec90705fe2681682051cc7efe>`();
+		void :ref:`build_surfaces<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ad70b63ec83becd02c3ec86230f01b276>`();
+		std::pair<ComponentMeshVertexMapping, ModelMeshesElementMapping> :ref:`mappings<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ae56669615321a071ef92461f3d68b682>`();
+		virtual bool :ref:`is_corner<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1af86357083ecf27409ea78bba4677e242>`(index_t vertex) const;
 

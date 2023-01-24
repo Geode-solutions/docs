@@ -18,7 +18,13 @@ template class geode::detail::ModelBuilderFromMeshes
 	template <typename Model, typename ModelBuilder, index_t dimension>
 	class ModelBuilderFromMeshes: public :ref:`geode::detail::CornersLinesBuilder<doxid-classgeode_1_1detail_1_1_corners_lines_builder>`
 	{
-	protected:
+	public:
+		// methods
+	
+		virtual void :target:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a161fcbbec90705fe2681682051cc7efe>`();
+		void :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ad70b63ec83becd02c3ec86230f01b276>`();
+		std::pair<ComponentMeshVertexMapping, ModelMeshesElementMapping> :target:`mappings<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ae56669615321a071ef92461f3d68b682>`();
+		virtual bool :target:`is_corner<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1af86357083ecf27409ea78bba4677e242>`(index_t vertex) const;
 	};
 
 	// direct descendants
