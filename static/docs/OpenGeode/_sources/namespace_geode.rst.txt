@@ -19,6 +19,7 @@ namespace geode
 	struct_geode_AttributeProperties.rst
 	struct_geode_BRepComponentMeshEdges.rst
 	struct_geode_BRepMeshesElementMapping.rst
+	struct_geode_BRepMeshesVertexMapping.rst
 	struct_geode_BlockDefinition.rst
 	struct_geode_BlockPolyhedraFacetVertices.rst
 	struct_geode_BlockPolyhedronFacet.rst
@@ -44,6 +45,7 @@ namespace geode
 	struct_geode_ModelComponentMeshEdges.rst
 	struct_geode_ModelMeshesAABBTree.rst
 	struct_geode_ModelMeshesElementMapping.rst
+	struct_geode_ModelMeshesVertexMapping.rst
 	struct_geode_MultipleValueStorage.rst
 	struct_geode_OneValueStorage.rst
 	struct_geode_PolygonEdge.rst
@@ -54,6 +56,7 @@ namespace geode
 	struct_geode_PolyhedronVertex.rst
 	struct_geode_SectionComponentMeshEdges.rst
 	struct_geode_SectionMeshesElementMapping.rst
+	struct_geode_SectionMeshesVertexMapping.rst
 	struct_geode_SidedSurface.rst
 	struct_geode_SortedSurfaces.rst
 	struct_geode_SurfaceDefinition.rst
@@ -351,6 +354,7 @@ Overview
 	typedef :ref:`ModelMapping<doxid-classgeode_1_1_model_mapping>`<:ref:`BijectiveMapping<doxid-classgeode_1_1_bijective_mapping>`<:ref:`uuid<doxid-structgeode_1_1uuid>`>> :target:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`;
 	typedef :ref:`ModelMapping<doxid-classgeode_1_1_model_mapping>`<:ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`<:ref:`uuid<doxid-structgeode_1_1uuid>`>> :target:`ModelGenericMapping<doxid-namespacegeode_1a8154ea011c27a259f94c1d270eb485ea>`;
 	typedef :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`<:ref:`MeshElement<doxid-structgeode_1_1_mesh_element>`, :ref:`MeshElement<doxid-structgeode_1_1_mesh_element>`> :target:`MeshElementMapping<doxid-namespacegeode_1aea423c63cd77225c4bafe32d82bce7f6>`;
+	typedef :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`<:ref:`MeshVertex<doxid-structgeode_1_1_mesh_vertex>`, :ref:`MeshVertex<doxid-structgeode_1_1_mesh_vertex>`> :target:`MeshVertexMapping<doxid-namespacegeode_1a1084e864bd3b856bff265850fdb62a27>`;
 	typedef :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`<:ref:`MeshElement<doxid-structgeode_1_1_mesh_element>`, :ref:`ComponentMeshElement<doxid-structgeode_1_1_component_mesh_element>`> :target:`ComponentMeshElementMapping<doxid-namespacegeode_1ac2ac20f54ecdf295f3b9001466885018>`;
 	typedef :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`<:ref:`MeshVertex<doxid-structgeode_1_1_mesh_vertex>`, :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> :target:`ComponentMeshVertexMapping<doxid-namespacegeode_1a0ff69b9086d7b5af26b09a981147fcad>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`BRepInput<doxid-classgeode_1_1_b_rep_input>`, absl::string_view> :target:`BRepInputFactory<doxid-namespacegeode_1abbbb675b09fc7e49c7b084c42b13381b>`;
@@ -383,6 +387,7 @@ Overview
 	struct :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`;
 	struct :ref:`BRepComponentMeshEdges<doxid-structgeode_1_1_b_rep_component_mesh_edges>`;
 	struct :ref:`BRepMeshesElementMapping<doxid-structgeode_1_1_b_rep_meshes_element_mapping>`;
+	struct :ref:`BRepMeshesVertexMapping<doxid-structgeode_1_1_b_rep_meshes_vertex_mapping>`;
 	struct :ref:`BlockDefinition<doxid-structgeode_1_1_block_definition>`;
 	struct :ref:`BlockPolyhedraFacetVertices<doxid-structgeode_1_1_block_polyhedra_facet_vertices>`;
 	struct :ref:`BlockPolyhedronFacet<doxid-structgeode_1_1_block_polyhedron_facet>`;
@@ -425,6 +430,7 @@ Overview
 	struct :ref:`ModelMeshesAABBTree<doxid-structgeode_1_1_model_meshes_a_a_b_b_tree>`;
 
 	struct :ref:`ModelMeshesElementMapping<doxid-structgeode_1_1_model_meshes_element_mapping>`;
+	struct :ref:`ModelMeshesVertexMapping<doxid-structgeode_1_1_model_meshes_vertex_mapping>`;
 
 	template <typename T>
 	struct :ref:`MultipleValueStorage<doxid-structgeode_1_1_multiple_value_storage>`;
@@ -440,6 +446,7 @@ Overview
 	struct :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`;
 	struct :ref:`SectionComponentMeshEdges<doxid-structgeode_1_1_section_component_mesh_edges>`;
 	struct :ref:`SectionMeshesElementMapping<doxid-structgeode_1_1_section_meshes_element_mapping>`;
+	struct :ref:`SectionMeshesVertexMapping<doxid-structgeode_1_1_section_meshes_vertex_mapping>`;
 	struct :ref:`SidedSurface<doxid-structgeode_1_1_sided_surface>`;
 	struct :ref:`SortedSurfaces<doxid-structgeode_1_1_sorted_surfaces>`;
 	struct :ref:`SurfaceDefinition<doxid-structgeode_1_1_surface_definition>`;

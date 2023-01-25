@@ -1,0 +1,37 @@
+.. index:: pair: struct; geode::BRepMeshesVertexMapping
+.. _doxid-structgeode_1_1_b_rep_meshes_vertex_mapping:
+
+struct geode::BRepMeshesVertexMapping
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <mapping.h>
+	
+	struct BRepMeshesVertexMapping: public :ref:`geode::ModelMeshesVertexMapping<doxid-structgeode_1_1_model_meshes_vertex_mapping>`
+	{
+		// fields
+	
+		:ref:`MeshVertexMapping<doxid-namespacegeode_1a1084e864bd3b856bff265850fdb62a27>` :target:`blocks<doxid-structgeode_1_1_b_rep_meshes_vertex_mapping_1a2dfccb69a56b7872e976ef8fc76287bd>`;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		:ref:`MeshVertexMapping<doxid-namespacegeode_1a1084e864bd3b856bff265850fdb62a27>` :ref:`corners<doxid-structgeode_1_1_model_meshes_vertex_mapping_1aefa46b65655816ef18e0e37a420653a6>`;
+		:ref:`MeshVertexMapping<doxid-namespacegeode_1a1084e864bd3b856bff265850fdb62a27>` :ref:`lines<doxid-structgeode_1_1_model_meshes_vertex_mapping_1afbef770435b22dc372aa06d8e422b836>`;
+		:ref:`MeshVertexMapping<doxid-namespacegeode_1a1084e864bd3b856bff265850fdb62a27>` :ref:`surfaces<doxid-structgeode_1_1_model_meshes_vertex_mapping_1a0802828d85cf921896358d100a7227a5>`;
+
