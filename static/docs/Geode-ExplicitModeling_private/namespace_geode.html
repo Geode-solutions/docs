@@ -68,9 +68,10 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a138f53359f6b0ed97828265b627ab688"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">BoundingBox</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aae4bea6f137a47558d5d46c1f90525b8"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 
-<span class="kt">void</span> <span class="n">geode_explicitmodeling_3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a66edabb3043cef50e2beffe7ce97461f"><span></span><span class="n">simplify_brep_from_macro_information</span></span><span></span><span class="p">(</span>
+<span class="kt">void</span> <span class="n">geode_explicitmodeling_3d_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8d22a3ddb2fa81b7e2dfa2b7be61ee58"><span></span><span class="n">simplify_brep_from_macro_information</span></span><span></span><span class="p">(</span>
     <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
-    <a class="reference internal" href="#doxid-namespacegeode-1ac2ac20f54ecdf295f3b9001466885018"><span class="std std-ref">ComponentMeshElementMapping</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh_element_mappings</span>
+    <span class="n">ModelMeshesElementMapping</span><span class="o">&amp;</span> <span class="n">mesh_element_mappings</span><span class="p">,</span>
+    <span class="n">ModelMeshesVertexMapping</span><span class="o">&amp;</span> <span class="n">mesh_vertices_mappings</span>
     <span class="p">);</span>
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3cde333630eb0eee3a923c5fd26f803f"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_explicitmodeling_3d_api</span><span class="p">,</span> <span class="n">ExplicitModeling3d</span><span class="p">);</span>
