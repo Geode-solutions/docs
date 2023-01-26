@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::ModelMeshesIntersections &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::PointSetColocation" href="class_geode_PointSetColocation.html" />
+    <link rel="prev" title="template class geode::EdgedCurveInspector" href="class_geode_EdgedCurveInspector.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-modelmeshesintersections">
+<span id="doxid-classgeode-1-1-model-meshes-intersections"></span><span id="index-0"></span><h1>template class geode::ModelMeshesIntersections</h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Class for inspecting the intersections of a Model meshes</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;model_intersections.h&gt;</span><span class="cp"></span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">ModelMeshesIntersections</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-meshes-intersections-1a452164a6611adb8ea254f101d7d6f539"><span></span><span class="n">ModelMeshesIntersections</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-meshes-intersections-1acfed3117674df570f41402612c83da4c"><span></span><span class="n">ModelMeshesIntersections</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">verbose</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-meshes-intersections-1a749105a1072920b778953420acd9e294"><span></span><span class="n">model_has_intersecting_surfaces</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-meshes-intersections-1a348012c8374a164c159d263454bf6d80"><span></span><span class="n">nb_intersecting_surfaces_elements_pair</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="n">ComponentMeshElement</span><span class="p">,</span> <span class="n">ComponentMeshElement</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-model-meshes-intersections-1a21a74b96ae43f352b40994ac472a9aff"><span></span><span class="n">intersecting_surfaces_elements</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_ModelMeshesIntersections.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

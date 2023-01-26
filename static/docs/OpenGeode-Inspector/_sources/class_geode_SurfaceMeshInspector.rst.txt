@@ -54,7 +54,7 @@ Inherited Members
 		std::vector<index_t> :ref:`degenerated_polygons<doxid-classgeode_1_1_surface_mesh_degeneration_1a47cb9eacadeb8240edb591df0d496ed1>`() const;
 		bool :ref:`mesh_has_self_intersections<doxid-classgeode_1_1_surface_mesh_intersections_1a3f9db716584b6875782a135391bd4b2a>`() const;
 		index_t :ref:`nb_intersecting_elements_pair<doxid-classgeode_1_1_surface_mesh_intersections_1ad2e4bb5eeafc4a4ba9dfd49b747bb83d>`() const;
-		std::vector<std::array<index_t, 2>> :ref:`intersecting_elements<doxid-classgeode_1_1_surface_mesh_intersections_1a2c54f8a9e7d53e18958327e66534350e>`() const;
+		std::vector<std::pair<index_t, index_t>> :ref:`intersecting_elements<doxid-classgeode_1_1_surface_mesh_intersections_1af5a039eaada7db1f5d08b7d560466a4b>`() const;
 		bool :ref:`mesh_edges_are_manifold<doxid-classgeode_1_1_surface_mesh_edge_manifold_1abf40bdd7fb8cab174eec84bfbd5cdbaf>`() const;
 		index_t :ref:`nb_non_manifold_edges<doxid-classgeode_1_1_surface_mesh_edge_manifold_1a22bdf6228defddb4d194e78d4f044995>`() const;
 		std::vector<std::array<index_t, 2>> :ref:`non_manifold_edges<doxid-classgeode_1_1_surface_mesh_edge_manifold_1a5af3a2f9dea2ad46f49fdedebed2d3b6>`() const;

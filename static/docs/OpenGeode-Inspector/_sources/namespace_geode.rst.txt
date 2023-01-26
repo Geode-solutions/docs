@@ -19,6 +19,7 @@ namespace geode
 	class_geode_EdgedCurveColocation.rst
 	class_geode_EdgedCurveDegeneration.rst
 	class_geode_EdgedCurveInspector.rst
+	class_geode_ModelMeshesIntersections.rst
 	class_geode_PointSetColocation.rst
 	class_geode_PointSetInspector.rst
 	class_geode_SectionComponentMeshesAdjacency.rst
@@ -62,6 +63,8 @@ namespace geode
 	typedef :ref:`UniqueVerticesColocation<doxid-classgeode_1_1_unique_vertices_colocation>`<3, BRep> :target:`BRepUniqueVerticesColocation<doxid-namespacegeode_1ae69075bd9a8b0154d435f5a52c0190af>`;
 	typedef :ref:`ComponentMeshesDegeneration<doxid-classgeode_1_1_component_meshes_degeneration>`<2, Section> :target:`SectionComponentMeshesDegeneration<doxid-namespacegeode_1ae32ddf99705963dc9e7f9888441bc531>`;
 	typedef :ref:`ComponentMeshesDegeneration<doxid-classgeode_1_1_component_meshes_degeneration>`<3, BRep> :target:`BRepComponentMeshesDegeneration<doxid-namespacegeode_1ae956bf998adde768a642a2a5c1097786>`;
+	typedef :ref:`ModelMeshesIntersections<doxid-classgeode_1_1_model_meshes_intersections>`<2, Section> :target:`SectionMeshesIntersections<doxid-namespacegeode_1a8c0866e5ba06e83858472a49f1547b6d>`;
+	typedef :ref:`ModelMeshesIntersections<doxid-classgeode_1_1_model_meshes_intersections>`<3, BRep> :target:`BRepMeshesIntersections<doxid-namespacegeode_1af707fb9c99a8ce842a0c21ce636818cf>`;
 
 	// structs
 
@@ -91,6 +94,9 @@ namespace geode
 
 	template <index_t dimension>
 	class :ref:`EdgedCurveInspector<doxid-classgeode_1_1_edged_curve_inspector>`;
+
+	template <index_t dimension, typename Model>
+	class :ref:`ModelMeshesIntersections<doxid-classgeode_1_1_model_meshes_intersections>`;
 
 	template <index_t dimension>
 	class :ref:`PointSetColocation<doxid-classgeode_1_1_point_set_colocation>`;

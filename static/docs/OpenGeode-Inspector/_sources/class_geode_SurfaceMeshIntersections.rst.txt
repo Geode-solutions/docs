@@ -28,7 +28,7 @@ Class for inspecting the intersections of SurfaceMeshes
 	
 		bool :target:`mesh_has_self_intersections<doxid-classgeode_1_1_surface_mesh_intersections_1a3f9db716584b6875782a135391bd4b2a>`() const;
 		index_t :target:`nb_intersecting_elements_pair<doxid-classgeode_1_1_surface_mesh_intersections_1ad2e4bb5eeafc4a4ba9dfd49b747bb83d>`() const;
-		std::vector<std::array<index_t, 2>> :target:`intersecting_elements<doxid-classgeode_1_1_surface_mesh_intersections_1a2c54f8a9e7d53e18958327e66534350e>`() const;
+		std::vector<std::pair<index_t, index_t>> :target:`intersecting_elements<doxid-classgeode_1_1_surface_mesh_intersections_1af5a039eaada7db1f5d08b7d560466a4b>`() const;
 	};
 
 	// direct descendants
