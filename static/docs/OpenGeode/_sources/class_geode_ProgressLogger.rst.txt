@@ -24,8 +24,8 @@ class geode::ProgressLogger
 
 		// methods
 	
-		void :target:`increment<doxid-classgeode_1_1_progress_logger_1ad0f2fb8f9a54236fee8b9365558da303>`();
-		void :target:`increment<doxid-classgeode_1_1_progress_logger_1a89cbcbb482e0095430ad373540e0bc0d>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_increments);
-		void :target:`increment_nb_steps<doxid-classgeode_1_1_progress_logger_1a06df545cd98e5ad71855a517cfee33d6>`();
-		void :target:`increment_nb_steps<doxid-classgeode_1_1_progress_logger_1a960a40b3b242df2288dcb69ffcc36faf>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_steps);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`increment<doxid-classgeode_1_1_progress_logger_1a2592f8edbc2682f86d12bd9eab08aa62>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`increment<doxid-classgeode_1_1_progress_logger_1ad731303de30f598fc4d19b04a6706e45>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_increments);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`increment_nb_steps<doxid-classgeode_1_1_progress_logger_1ac8fef852cbf19aade7c7b77c45d58dd1>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`increment_nb_steps<doxid-classgeode_1_1_progress_logger_1a4b0eb216c40b3b5c6b1a6eb0e1f67c45>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_steps);
 	};
