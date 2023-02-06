@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>namespace geode &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,7 +13,9 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -162,10 +164,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae3663b1c1416d9b40e81a48eaa4b9441"><span id="index-1"></span><span></span><span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <span class="n">register_geosciences_serialize_pcontext</span><span class="p">(</span><span class="n">PContext</span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
 <p>Register all the information needed by Bitsery to serialize the objects in the geosciences library. The context can be used only once per archive.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>context</p></td>
@@ -176,10 +178,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a1ac997fa60ed4bd714610bcaa1403571"><span id="index-2"></span><span></span><span class="kt">void</span> <span class="n">opengeode_geosciences_geosciences_api</span> <span class="n">register_geosciences_deserialize_pcontext</span><span class="p">(</span><span class="n">PContext</span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
 <p>Register all the information needed by Bitsery to deserialize the objects in the geosciences library. The context can be used only once per archive.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>context</p></td>
@@ -190,10 +192,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a56ce531cf7190565fd429b603c835bbf"><span id="index-3"></span><a class="reference internal" href="class_geode_CrossSection.html#doxid-classgeode-1-1-cross-section"><span class="std std-ref">CrossSection</span></a><span></span> <span class="n">opengeode_geosciences_geosciences_api</span> <span class="n">load_cross_section</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading a <a class="reference internal" href="class_geode_CrossSection.html#doxid-classgeode-1-1-cross-section"><span class="std std-ref">CrossSection</span></a>. The adequate loader is called depending on the filename extension.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>filename</p></td>
@@ -207,10 +209,10 @@
     <span class="p">)</span></pre>
 <p>API function for saving a <a class="reference internal" href="class_geode_CrossSection.html#doxid-classgeode-1-1-cross-section"><span class="std std-ref">CrossSection</span></a>. The adequate saver is called depending on the given filename extension.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>cross_section</p></td>
@@ -224,10 +226,10 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a163a868e3b17affba29b446707f6a874"><span id="index-5"></span><a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span> <span class="n">opengeode_geosciences_geosciences_api</span> <span class="n">load_structural_model</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading a <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a>. The adequate loader is called depending on the filename extension.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>filename</p></td>
@@ -241,10 +243,10 @@
     <span class="p">)</span></pre>
 <p>API function for saving a <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a>. The adequate saver is called depending on the given filename extension.</p>
 <p class="rubric">Parameters:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 80%" />
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>structural_model</p></td>
@@ -269,7 +271,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
