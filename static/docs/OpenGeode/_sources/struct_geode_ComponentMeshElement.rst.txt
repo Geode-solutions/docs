@@ -32,4 +32,6 @@ Identify an element in a model component
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_component_mesh_element_1ae240367a958270ada4af59ac1d9d1d95>`(Archive& archive);
+	
+		std::string :target:`string<doxid-structgeode_1_1_component_mesh_element_1a46cd9b278b56b5520faa5c0d9ae0a1af>`() const;
 	};
