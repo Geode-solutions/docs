@@ -46,6 +46,14 @@
 <span class="k">class</span> <span class="nl">OpenGeodeTetrahedralSolid</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">geode::TetrahedralSolid</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_OpenGeodeTetrahedralSolidBuilder.html#doxid-classgeode-1-1-open-geode-tetrahedral-solid-builder"><span class="std std-ref">OpenGeodeTetrahedralSolidBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a392f74f73b01a2b2ef491f034d560ca5"><span></span><span class="n">Builder</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1add0b293f262f9c90a2c2a865d707c3f3"><span></span><span class="n">dim</span></span><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-tetrahedral-solid-1a7dd5b94bdc37b986d410fde2c5b4502f"><span></span><span class="n">OpenGeodeTetrahedralSolid</span></span><span></span><span class="p">();</span>
@@ -88,12 +96,15 @@
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// typedefs</span>
 
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">VertexSetBuilder</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1ad63688e2a30d4c7cb5865df73012f9b4"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
     <span class="k">typedef</span> <a class="reference internal" href="class_geode_SolidMeshBuilder.html#doxid-classgeode-1-1-solid-mesh-builder"><span class="std std-ref">SolidMeshBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh-1a616af1178b8bbc060231133fa749fa45"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
     <span class="k">typedef</span> <a class="reference internal" href="class_geode_TetrahedralSolidBuilder.html#doxid-classgeode-1-1-tetrahedral-solid-builder"><span class="std std-ref">TetrahedralSolidBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid-1ab21cae01a8886c750176a2429b910b08"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
 
     <span class="c1">// fields</span>
 
     <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1ac97e8180509443914dde94fb59b338fa"><span class="std std-ref">DEFAULT_NAME</span></a><span></span> <span class="o">=</span> <span class="s">&quot;default_name&quot;</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh-1a70ff2ee1d329bc9ec37ef6ac7a448de7"><span class="std std-ref">dim</span></a><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid-1ac8f318589bfec0f2bacab18b9b632dfe"><span class="std std-ref">dim</span></a><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
 
     <span class="c1">// methods</span>
 

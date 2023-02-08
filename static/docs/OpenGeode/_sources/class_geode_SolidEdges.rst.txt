@@ -22,6 +22,14 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 	class SolidEdges
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`SolidEdgesBuilder<doxid-classgeode_1_1_solid_edges_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_solid_edges_1a17d236a28d142aca9531d44b8aa96a0e>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_solid_edges_1af040d683c4150235db93e27cafe63cba>` = dimension;
+
 		// construction
 	
 		:target:`SolidEdges<doxid-classgeode_1_1_solid_edges_1ab41d4abbe78d8d7f0dee59740f6ab773>`();

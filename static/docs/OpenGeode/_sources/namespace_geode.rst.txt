@@ -1475,6 +1475,7 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7811fa3e946852b9ee881b44a272de81>`(:ref:`Grid<doxid-classgeode_1_1_grid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af4f182876ad2706cfd67cfa0a7ff23b4>`(:ref:`HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ad1e677b7ca1b4a9e3461a5ab070e8b42>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afe2cb7fe1eafd07074f05210001c506e>`(:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a11058d89bacb297358eb8a8a8a29490c>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a34993c9c8235be7221449c93152372f7>`(:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a69bca61d0800722900c8332a1452e3c8>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
@@ -2069,7 +2070,6 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a829aef1a1c5495a494fc2fc55b4922c3>`(:ref:`BlocksBuilder<doxid-classgeode_1_1_blocks_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8df2fe4dbae5eba91b79d7ae631ec4d4>`(:ref:`Corner<doxid-classgeode_1_1_corner>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1556e82ba6f8ca420842d36c71b753c8>`(:ref:`Corners<doxid-classgeode_1_1_corners>`);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afe2cb7fe1eafd07074f05210001c506e>`(:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a477e2e30c5e9a2612031cad57d21a71e>`(:ref:`CornersBuilder<doxid-classgeode_1_1_corners_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a08c813e4a0386ec5defa48f29b3b8be8>`(:ref:`Lines<doxid-classgeode_1_1_lines>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a49256c599e3b6c2e13b5bbeb6f93e946>`(:ref:`LinesBuilder<doxid-classgeode_1_1_lines_builder>`);

@@ -22,6 +22,14 @@ Overview
 	class Grid
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`GridBuilder<doxid-classgeode_1_1_grid_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_grid_1a004445a041c0d318f4917633c1c3f669>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_grid_1a02019d81dfd0d6e6ebd5a34db2a2852b>` = dimension;
+
 		// construction
 	
 		:target:`Grid<doxid-classgeode_1_1_grid_1a0d8d3b50b2dc65a59353178d2f9aa585>`();

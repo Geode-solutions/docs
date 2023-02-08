@@ -19,6 +19,14 @@ template class geode::OpenGeodeHybridSolid
 	class OpenGeodeHybridSolid: public :ref:`geode::HybridSolid<doxid-classgeode_1_1_hybrid_solid>`
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`OpenGeodeHybridSolidBuilder<doxid-classgeode_1_1_open_geode_hybrid_solid_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_open_geode_hybrid_solid_1a2e6144fc40dd52826e88a6bd427dae64>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_open_geode_hybrid_solid_1a135f5eab1876ccd8e44815e51a028f4f>` = dimension;
+
 		// construction
 	
 		:target:`OpenGeodeHybridSolid<doxid-classgeode_1_1_open_geode_hybrid_solid_1a198a685e457690f24d910c1382dbd73e>`();
@@ -68,6 +76,7 @@ Inherited Members
 	public:
 		// typedefs
 	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
 		typedef :ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_solid_mesh_1a616af1178b8bbc060231133fa749fa45>`;
 		typedef :ref:`HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_hybrid_solid_1ad0f896b85dd63d6fcfb573057638651a>`;
 
@@ -78,6 +87,8 @@ Inherited Members
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_solid_mesh_1a70ff2ee1d329bc9ec37ef6ac7a448de7>` = dimension;
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_hybrid_solid_1adeb01ada6702b60d29b15c2628c73fb3>` = dimension;
 
 		// methods
 	

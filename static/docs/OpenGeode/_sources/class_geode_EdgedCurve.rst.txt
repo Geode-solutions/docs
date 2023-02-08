@@ -22,6 +22,14 @@ Overview
 	class EdgedCurve: public :ref:`geode::Graph<doxid-classgeode_1_1_graph>`
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_edged_curve_1acaa0e26c94ea265be3f08ce3934970db>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_edged_curve_1a1f28a1d56c03803d64cb32a39c4bd92a>` = dimension;
+
 		// methods
 	
 		static std::unique_ptr<EdgedCurve<dimension>> :target:`create<doxid-classgeode_1_1_edged_curve_1a3f3c61d911156a0d21ced730d2dc5c75>`();
@@ -47,6 +55,11 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// typedefs
+	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
+		typedef :ref:`GraphBuilder<doxid-classgeode_1_1_graph_builder>` :ref:`Builder<doxid-classgeode_1_1_graph_1a46b2113fc3a895abbda17723e432edc4>`;
+
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";

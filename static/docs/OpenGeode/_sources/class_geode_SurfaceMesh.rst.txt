@@ -26,6 +26,10 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 	
 		typedef :ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_surface_mesh_1a4987e1b4d68a9ee1250540c77b7cee1d>`;
 
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_surface_mesh_1a9ae0d73dabe06517c2d49993d0759e2e>` = dimension;
+
 		// methods
 	
 		std::unique_ptr<SurfaceMesh<dimension>> :target:`clone<doxid-classgeode_1_1_surface_mesh_1a31d11a116984af07cfbd3f9130436210>`() const;
@@ -119,6 +123,10 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// typedefs
+	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
+
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";

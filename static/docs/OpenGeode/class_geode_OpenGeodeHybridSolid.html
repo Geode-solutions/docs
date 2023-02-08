@@ -46,6 +46,14 @@
 <span class="k">class</span> <span class="nl">OpenGeodeHybridSolid</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid"><span class="std std-ref">geode::HybridSolid</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_OpenGeodeHybridSolidBuilder.html#doxid-classgeode-1-1-open-geode-hybrid-solid-builder"><span class="std std-ref">OpenGeodeHybridSolidBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-hybrid-solid-1a2e6144fc40dd52826e88a6bd427dae64"><span></span><span class="n">Builder</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-hybrid-solid-1a135f5eab1876ccd8e44815e51a028f4f"><span></span><span class="n">dim</span></span><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-hybrid-solid-1a198a685e457690f24d910c1382dbd73e"><span></span><span class="n">OpenGeodeHybridSolid</span></span><span></span><span class="p">();</span>
@@ -90,6 +98,7 @@
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// typedefs</span>
 
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">VertexSetBuilder</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1ad63688e2a30d4c7cb5865df73012f9b4"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
     <span class="k">typedef</span> <a class="reference internal" href="class_geode_SolidMeshBuilder.html#doxid-classgeode-1-1-solid-mesh-builder"><span class="std std-ref">SolidMeshBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh-1a616af1178b8bbc060231133fa749fa45"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
     <span class="k">typedef</span> <a class="reference internal" href="class_geode_HybridSolidBuilder.html#doxid-classgeode-1-1-hybrid-solid-builder"><span class="std std-ref">HybridSolidBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid-1ad0f896b85dd63d6fcfb573057638651a"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
 
@@ -100,6 +109,8 @@
     <span class="c1">// fields</span>
 
     <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1ac97e8180509443914dde94fb59b338fa"><span class="std std-ref">DEFAULT_NAME</span></a><span></span> <span class="o">=</span> <span class="s">&quot;default_name&quot;</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh-1a70ff2ee1d329bc9ec37ef6ac7a448de7"><span class="std std-ref">dim</span></a><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid-1adeb01ada6702b60d29b15c2628c73fb3"><span class="std std-ref">dim</span></a><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
 
     <span class="c1">// methods</span>
 

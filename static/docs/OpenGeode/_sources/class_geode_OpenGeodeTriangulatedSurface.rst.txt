@@ -19,6 +19,14 @@ template class geode::OpenGeodeTriangulatedSurface
 	class OpenGeodeTriangulatedSurface: public :ref:`geode::TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`OpenGeodeTriangulatedSurfaceBuilder<doxid-classgeode_1_1_open_geode_triangulated_surface_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_open_geode_triangulated_surface_1aeb49d1e9e46073cd14412ef108937fb1>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_open_geode_triangulated_surface_1a88bb4113e9c8a54cbb20e0da19ac6a8c>` = dimension;
+
 		// construction
 	
 		:target:`OpenGeodeTriangulatedSurface<doxid-classgeode_1_1_open_geode_triangulated_surface_1ac0b205e080a110c654e0d273e5c6fee3>`();
@@ -66,12 +74,15 @@ Inherited Members
 	public:
 		// typedefs
 	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
 		typedef :ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_surface_mesh_1a4987e1b4d68a9ee1250540c77b7cee1d>`;
 		typedef :ref:`TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_triangulated_surface_1acd9dc2a728062329f8a783a6c759e226>`;
 
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_surface_mesh_1a9ae0d73dabe06517c2d49993d0759e2e>` = dimension;
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_triangulated_surface_1a3056d5fc29824018085cad646f65d6c6>` = dimension;
 
 		// methods
 	

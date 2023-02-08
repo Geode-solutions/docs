@@ -19,6 +19,14 @@ template class geode::OpenGeodeRegularGrid<2>
 	class OpenGeodeRegularGrid<2>: public :ref:`geode::RegularGrid<2><doxid-classgeode_1_1_regular_grid_3_012_01_4>`
 	{
 	public:
+		// typedefs
+	
+		typedef OpenGeodeRegularGridBuilder<2> :target:`Builder<doxid-classgeode_1_1_open_geode_regular_grid_3_012_01_4_1a2aaaf178b3b8889970a5c53313a3aa01>`;
+
+		// fields
+	
+		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`dim<doxid-classgeode_1_1_open_geode_regular_grid_3_012_01_4_1aaf4000503194e5dcc50c56b1373cf113>` { 2 };
+
 		// construction
 	
 		:target:`OpenGeodeRegularGrid<doxid-classgeode_1_1_open_geode_regular_grid_3_012_01_4_1a3398cd4ae1f1883b05dcc3077a000fb2>`();
@@ -43,12 +51,17 @@ Inherited Members
 	public:
 		// typedefs
 	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
 		typedef :ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_surface_mesh_1a4987e1b4d68a9ee1250540c77b7cee1d>`;
+		typedef :ref:`GridBuilder<doxid-classgeode_1_1_grid_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_grid_1a004445a041c0d318f4917633c1c3f669>`;
 		typedef RegularGridBuilder<2> :ref:`Builder<doxid-classgeode_1_1_regular_grid_3_012_01_4_1a101170e3f1e4f0456e31764fdbe1dac5>`;
 
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_surface_mesh_1a9ae0d73dabe06517c2d49993d0759e2e>` = dimension;
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_grid_1a02019d81dfd0d6e6ebd5a34db2a2852b>` = dimension;
+		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`dim<doxid-classgeode_1_1_regular_grid_3_012_01_4_1a3de755d63e67550b5678a6bb101e148c>` { 2 };
 
 		// methods
 	

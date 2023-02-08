@@ -46,6 +46,14 @@
 <span class="k">class</span> <span class="n">OpenGeodeRegularGrid</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_RegularGrid.html#doxid-classgeode-1-1-regular-grid-3-013-01-4"><span class="std std-ref">geode::RegularGrid&lt;3&gt;</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="n">OpenGeodeRegularGridBuilder</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-regular-grid-3-013-01-4-1a09a70f0c09e1014bed5dfd18a7c790ef"><span></span><span class="n">Builder</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-regular-grid-3-013-01-4-1a888486bed51d56b31fd9fe52a5ca0417"><span></span><span class="n">dim</span></span><span></span> <span class="p">{</span> <span class="mi">3</span> <span class="p">};</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-regular-grid-3-013-01-4-1a7b0dd9c771bf118ea809c66a50870bd1"><span></span><span class="n">OpenGeodeRegularGrid</span></span><span></span><span class="p">();</span>
@@ -65,12 +73,17 @@
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// typedefs</span>
 
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">VertexSetBuilder</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1ad63688e2a30d4c7cb5865df73012f9b4"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
     <span class="k">typedef</span> <a class="reference internal" href="class_geode_SolidMeshBuilder.html#doxid-classgeode-1-1-solid-mesh-builder"><span class="std std-ref">SolidMeshBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh-1a616af1178b8bbc060231133fa749fa45"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_GridBuilder.html#doxid-classgeode-1-1-grid-builder"><span class="std std-ref">GridBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_Grid.html#doxid-classgeode-1-1-grid-1a004445a041c0d318f4917633c1c3f669"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
     <span class="k">typedef</span> <span class="n">RegularGridBuilder</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_RegularGrid.html#doxid-classgeode-1-1-regular-grid-3-013-01-4-1aaab0234acf3d62b2c2adf2bdd0637a70"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
 
     <span class="c1">// fields</span>
 
     <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1ac97e8180509443914dde94fb59b338fa"><span class="std std-ref">DEFAULT_NAME</span></a><span></span> <span class="o">=</span> <span class="s">&quot;default_name&quot;</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_SolidMesh.html#doxid-classgeode-1-1-solid-mesh-1a70ff2ee1d329bc9ec37ef6ac7a448de7"><span class="std std-ref">dim</span></a><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_Grid.html#doxid-classgeode-1-1-grid-1a02019d81dfd0d6e6ebd5a34db2a2852b"><span class="std std-ref">dim</span></a><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_RegularGrid.html#doxid-classgeode-1-1-regular-grid-3-013-01-4-1ac9d02684da430658ffc7a1a7f541c498"><span class="std std-ref">dim</span></a><span></span> <span class="p">{</span> <span class="mi">3</span> <span class="p">};</span>
 
     <span class="c1">// methods</span>
 

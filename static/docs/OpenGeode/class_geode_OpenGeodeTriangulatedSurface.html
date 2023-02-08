@@ -46,6 +46,14 @@
 <span class="k">class</span> <span class="nl">OpenGeodeTriangulatedSurface</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">geode::TriangulatedSurface</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_OpenGeodeTriangulatedSurfaceBuilder.html#doxid-classgeode-1-1-open-geode-triangulated-surface-builder"><span class="std std-ref">OpenGeodeTriangulatedSurfaceBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-triangulated-surface-1aeb49d1e9e46073cd14412ef108937fb1"><span></span><span class="n">Builder</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-triangulated-surface-1a88bb4113e9c8a54cbb20e0da19ac6a8c"><span></span><span class="n">dim</span></span><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-open-geode-triangulated-surface-1ac0b205e080a110c654e0d273e5c6fee3"><span></span><span class="n">OpenGeodeTriangulatedSurface</span></span><span></span><span class="p">();</span>
@@ -88,12 +96,15 @@
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// typedefs</span>
 
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">VertexSetBuilder</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1ad63688e2a30d4c7cb5865df73012f9b4"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
     <span class="k">typedef</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder"><span class="std std-ref">SurfaceMeshBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh-1a4987e1b4d68a9ee1250540c77b7cee1d"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
     <span class="k">typedef</span> <a class="reference internal" href="class_geode_TriangulatedSurfaceBuilder.html#doxid-classgeode-1-1-triangulated-surface-builder"><span class="std std-ref">TriangulatedSurfaceBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface-1acd9dc2a728062329f8a783a6c759e226"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
 
     <span class="c1">// fields</span>
 
     <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1ac97e8180509443914dde94fb59b338fa"><span class="std std-ref">DEFAULT_NAME</span></a><span></span> <span class="o">=</span> <span class="s">&quot;default_name&quot;</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh-1a9ae0d73dabe06517c2d49993d0759e2e"><span class="std std-ref">dim</span></a><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface-1a3056d5fc29824018085cad646f65d6c6"><span class="std std-ref">dim</span></a><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
 
     <span class="c1">// methods</span>
 

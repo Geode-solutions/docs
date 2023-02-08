@@ -19,6 +19,14 @@ template class geode::OpenGeodePointSet
 	class OpenGeodePointSet: public :ref:`geode::PointSet<doxid-classgeode_1_1_point_set>`
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`OpenGeodePointSetBuilder<doxid-classgeode_1_1_open_geode_point_set_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_open_geode_point_set_1a6a1d81307f3315dbf6fce772861bb53b>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_open_geode_point_set_1a325c8a517ecf1c6c6530459b0040bfcf>` = dimension;
+
 		// construction
 	
 		:target:`OpenGeodePointSet<doxid-classgeode_1_1_open_geode_point_set_1a1e2f7bff01c6f6af2e0ec67fe97ed579>`();
@@ -41,9 +49,15 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// typedefs
+	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
+		typedef :ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_point_set_1a026c3630d8710c90da57d2532ff3e69f>`;
+
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_point_set_1a905e9e9927ae42577e4e4a9775714245>` = dimension;
 
 		// methods
 	

@@ -18,6 +18,10 @@ class geode::OpenGeodeVertexSet
 	class OpenGeodeVertexSet: public :ref:`geode::VertexSet<doxid-classgeode_1_1_vertex_set>`
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`OpenGeodeVertexSetBuilder<doxid-classgeode_1_1_open_geode_vertex_set_builder>` :target:`Builder<doxid-classgeode_1_1_open_geode_vertex_set_1a4f467445614d6dc7c57ef8f3533365d9>`;
+
 		// methods
 	
 		static :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name_static<doxid-classgeode_1_1_open_geode_vertex_set_1abe2eedcb272dbdc4331391095d9c2de3>`();
@@ -34,6 +38,10 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// typedefs
+	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
+
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";

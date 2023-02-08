@@ -19,6 +19,14 @@ template class geode::OpenGeodePolygonalSurface
 	class OpenGeodePolygonalSurface: public :ref:`geode::PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`OpenGeodePolygonalSurfaceBuilder<doxid-classgeode_1_1_open_geode_polygonal_surface_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_open_geode_polygonal_surface_1a0d6faab0c842e681116f765a6cac6b94>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_open_geode_polygonal_surface_1ad6e16dc83ed282dd14df087f94462375>` = dimension;
+
 		// construction
 	
 		:target:`OpenGeodePolygonalSurface<doxid-classgeode_1_1_open_geode_polygonal_surface_1a26870d1b65d2023a7be850680ab64ebf>`();
@@ -74,12 +82,15 @@ Inherited Members
 	public:
 		// typedefs
 	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
 		typedef :ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_surface_mesh_1a4987e1b4d68a9ee1250540c77b7cee1d>`;
 		typedef :ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_polygonal_surface_1a6b94e2e6e2c14feed854b6019aa60da3>`;
 
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_surface_mesh_1a9ae0d73dabe06517c2d49993d0759e2e>` = dimension;
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_polygonal_surface_1a43481b13a6f48a75fee73ba5bb757e8c>` = dimension;
 
 		// methods
 	

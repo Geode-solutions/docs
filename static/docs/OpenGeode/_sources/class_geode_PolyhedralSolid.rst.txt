@@ -26,6 +26,10 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 	
 		typedef :ref:`PolyhedralSolidBuilder<doxid-classgeode_1_1_polyhedral_solid_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_polyhedral_solid_1ab3324167a8979356c9b9d7bc25d8c410>`;
 
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_polyhedral_solid_1a50aa4475cec6f77be1440af1a99d367e>` = dimension;
+
 		// methods
 	
 		static std::unique_ptr<PolyhedralSolid<dimension>> :ref:`create<doxid-classgeode_1_1_polyhedral_solid_1a8576566c9931953c1a1c4dbde62df9b1>`();
@@ -48,11 +52,13 @@ Inherited Members
 	public:
 		// typedefs
 	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
 		typedef :ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_solid_mesh_1a616af1178b8bbc060231133fa749fa45>`;
 
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_solid_mesh_1a70ff2ee1d329bc9ec37ef6ac7a448de7>` = dimension;
 
 		// methods
 	

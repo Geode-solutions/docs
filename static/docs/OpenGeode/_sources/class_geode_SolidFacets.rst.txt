@@ -22,6 +22,14 @@ Overview
 	class SolidFacets
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`SolidFacetsBuilder<doxid-classgeode_1_1_solid_facets_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_solid_facets_1ab062d9a9797fcbc58dafd93cd0256430>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_solid_facets_1a24c00519c508c8dad3af492366ba1dcd>` = dimension;
+
 		// construction
 	
 		:target:`SolidFacets<doxid-classgeode_1_1_solid_facets_1aa169816297daad4e075faed9e2ebb70b>`();

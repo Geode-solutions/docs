@@ -22,6 +22,14 @@ Overview
 	class SurfaceEdges
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`SurfaceEdgesBuilder<doxid-classgeode_1_1_surface_edges_builder>`<dimension> :target:`Builder<doxid-classgeode_1_1_surface_edges_1a9d6fbb29d895348fdd8e4bc8b80d700b>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_surface_edges_1a2c47392c3be87796bdf05618b3c50e0b>` = dimension;
+
 		// construction
 	
 		:target:`SurfaceEdges<doxid-classgeode_1_1_surface_edges_1a18feec3765c829bd5b7eb40844bb8343>`();
