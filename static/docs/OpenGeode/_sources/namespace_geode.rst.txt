@@ -89,6 +89,7 @@ namespace geode
 	class_geode_Corner.rst
 	class_geode_Corners.rst
 	class_geode_CornersBuilder.rst
+	class_geode_Cylinder.rst
 	class_geode_DecrementOperator.rst
 	class_geode_DefaultGrowable.rst
 	class_geode_DistanceToEdge.rst
@@ -520,6 +521,8 @@ Overview
 	template <index_t dimension>
 	class :ref:`CornersBuilder<doxid-classgeode_1_1_corners_builder>`;
 
+	class :ref:`Cylinder<doxid-classgeode_1_1_cylinder>`;
+
 	template <typename Type>
 	class :ref:`DecrementOperator<doxid-classgeode_1_1_decrement_operator>`;
 
@@ -701,10 +704,10 @@ Overview
 	class :ref:`OpenGeodeRegularGrid<3><doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGridBuilder<3><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_013_01_4>`;
+	class :ref:`OpenGeodeRegularGridBuilder<2><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGridBuilder<2><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4>`;
+	class :ref:`OpenGeodeRegularGridBuilder<3><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_013_01_4>`;
 
 	class :ref:`OpenGeodeSectionInput<doxid-classgeode_1_1_open_geode_section_input>`;
 	class :ref:`OpenGeodeSectionOutput<doxid-classgeode_1_1_open_geode_section_output>`;
@@ -1236,6 +1239,16 @@ Overview
 	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<Point2D> opengeode_geometry_api :ref:`segment_line_intersection<doxid-namespacegeode_1a6f5a9e0a2767316f0df3b282d12bcb34>`(
 		const Segment2D& segment,
 		const InfiniteLine2D& line
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point3D, 2>> opengeode_geometry_api :ref:`segment_cylinder_intersection<doxid-namespacegeode_1a60b208269d51790c32df005a28dd1cfd>`(
+		const Segment3D& segment,
+		const :ref:`Cylinder<doxid-classgeode_1_1_cylinder>`& cylinder
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point3D, 2>> opengeode_geometry_api :ref:`line_cylinder_intersection<doxid-namespacegeode_1a267b0006b4fd1e9de0c365fe791e7562>`(
+		const InfiniteLine3D& line,
+		const :ref:`Cylinder<doxid-classgeode_1_1_cylinder>`& cylinder
 		);
 
 	:ref:`SegmentSegmentIntersection<doxid-namespacegeode_1ad08f71e1c9db568dd62df0bf066813b1>` opengeode_geometry_api :ref:`segment_segment_intersection_detection<doxid-namespacegeode_1a460dcb7ba62a6607f4d51a9619d0ba2a>`(
@@ -2898,6 +2911,44 @@ Compute the intersection between a segment and an infinite line
 .. rubric:: Returns:
 
 an optional of the intersection point.
+
+.. index:: pair: function; segment_cylinder_intersection
+.. _doxid-namespacegeode_1a60b208269d51790c32df005a28dd1cfd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point3D, 2>> opengeode_geometry_api segment_cylinder_intersection(
+		const Segment3D& segment,
+		const :ref:`Cylinder<doxid-classgeode_1_1_cylinder>`& cylinder
+		)
+
+Compute the intersection between a segment and a cylinder
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection points.
+
+.. index:: pair: function; line_cylinder_intersection
+.. _doxid-namespacegeode_1a267b0006b4fd1e9de0c365fe791e7562:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point3D, 2>> opengeode_geometry_api line_cylinder_intersection(
+		const InfiniteLine3D& line,
+		const :ref:`Cylinder<doxid-classgeode_1_1_cylinder>`& cylinder
+		)
+
+Compute the intersection between a line and a cylinder
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection points.
 
 .. index:: pair: function; segment_segment_intersection_detection
 .. _doxid-namespacegeode_1a460dcb7ba62a6607f4d51a9619d0ba2a:
