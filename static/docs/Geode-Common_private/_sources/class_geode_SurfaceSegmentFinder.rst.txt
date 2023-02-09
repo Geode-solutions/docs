@@ -26,6 +26,10 @@ This class is able to find a rectilinear path between two vertices. This class m
 			index_t begin,
 			index_t end
 			);
+
+		// methods
+	
+		std::vector<:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>`> :target:`find_path<doxid-classgeode_1_1_surface_segment_finder_1ac3a42cfad2493eaabee20e6d5ff75a9a>`() const;
 	};
 
 	// direct descendants

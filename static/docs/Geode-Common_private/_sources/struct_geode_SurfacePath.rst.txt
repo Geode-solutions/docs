@@ -26,12 +26,25 @@ struct geode::SurfacePath
 
 		// construction
 	
-		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1acf3a1acc45fa6ce40ecc894fc2cce0e8>`(PolygonEdge edge_in, Position position_in);
+		template <index_t dimension>
+		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1af9fae6ed5a60eff7592bde74cc495ded>`(
+			const TriangulatedSurface<dimension>& surface,
+			PolygonEdge edge_in,
+			Position position_in
+			);
+	
 		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1accddadede745ec43861ef1403c1f5180>`(index_t vertex_in);
 		:target:`SurfacePath<doxid-structgeode_1_1_surface_path_1a4858e5b5451438f114796ba973fa291d>`();
 
 		// methods
 	
 		bool :target:`operator ==<doxid-structgeode_1_1_surface_path_1aeaed5b2458234464a87eb5da3863fa9c>` (const SurfacePath& rhs) const;
+	
+		template <index_t dimension>
+		bool :target:`are_same_path<doxid-structgeode_1_1_surface_path_1a88709c47482c3038ef4c59d0676080ce>`(
+			const TriangulatedSurface<dimension>& surface,
+			const SurfacePath& other
+			) const;
+	
 		bool :target:`is_vertex<doxid-structgeode_1_1_surface_path_1a067c9e7b5919dcdaae52392997694953>`() const;
 	};

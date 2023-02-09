@@ -7,9 +7,6 @@ class geode::SurfaceSegmentFinder3D
 .. toctree::
 	:hidden:
 
-Overview
-~~~~~~~~
-
 
 
 
@@ -29,34 +26,16 @@ Overview
 			index_t end,
 			const Plane& plane
 			);
-
-		// methods
-	
-		std::vector<:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>`> :ref:`find_path<doxid-classgeode_1_1_surface_segment_finder3_d_1a52d2fc68ffc81d5a48a5987f221bb926>`() const;
 	};
-.. _details-classgeode_1_1_surface_segment_finder3_d:
 
-Detailed Documentation
-~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-Methods
--------
-
-.. index:: pair: function; find_path
-.. _doxid-classgeode_1_1_surface_segment_finder3_d_1a52d2fc68ffc81d5a48a5987f221bb926:
+Inherited Members
+-----------------
 
 .. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
+	:class: doxyrest-overview-inherited-code-block
 
-	std::vector<:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>`> find_path() const
-
-Find a curvilinear path between two vertices along the plane.
-
-
-
-.. rubric:: Returns:
-
-an ordered list of path locations between begin and end.
+	public:
+		// methods
+	
+		std::vector<:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>`> :ref:`find_path<doxid-classgeode_1_1_surface_segment_finder_1ac3a42cfad2493eaabee20e6d5ff75a9a>`() const;
 
