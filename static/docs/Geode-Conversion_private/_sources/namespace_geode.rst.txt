@@ -8,6 +8,9 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
+	struct_geode_IndexToBRepMeshElementsMapping.rst
+	struct_geode_IndexToModelMeshElementsMapping.rst
+	struct_geode_IndexToSectionMeshElementsMapping.rst
 
 Overview
 ~~~~~~~~
@@ -28,6 +31,15 @@ Overview
 	// typedefs
 
 	typedef ModuleLicenseChecker<Conversion> :target:`ConversionLicenseChecker<doxid-namespacegeode_1aefa3e912a2ba332b4c87206d124e8d3e>`;
+	typedef GenericMapping<index_t, index_t> :target:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`;
+	typedef GenericMapping<index_t, MeshVertex> :target:`IndexToMeshVertexMapping<doxid-namespacegeode_1a4ce014adc6bcf2703d62a3543bbff66f>`;
+	typedef GenericMapping<index_t, MeshElement> :target:`IndexToMeshElementMapping<doxid-namespacegeode_1a2d22ceb1e7c8a9120859220ceb716c24>`;
+
+	// structs
+
+	struct :ref:`IndexToBRepMeshElementsMapping<doxid-structgeode_1_1_index_to_b_rep_mesh_elements_mapping>`;
+	struct :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`;
+	struct :ref:`IndexToSectionMeshElementsMapping<doxid-structgeode_1_1_index_to_section_mesh_elements_mapping>`;
 
 	// global variables
 
@@ -37,39 +49,59 @@ Overview
 
 	void geode_conversion_model_api :target:`build_blocks<doxid-namespacegeode_1af824d8001dd7c0a95398f4811ac40d32>`(BRep& brep);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a0508a634edded691d15457985d1bfd10>`(geode_conversion_model_api, ConversionModel);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa9eca13715aca2567523b81021cda51a>`(SurfaceMesh);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3f3c5cdeee9a9389ffd9f740f987e982>`(PointSet);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(SurfaceMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(SolidMesh);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a191f5017151d819329bd22601e529e17>`(PointSet);
 	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a775f43c93e557302fbaa359aa0af2f19>`(SurfaceMesh);
-	std::tuple<BRep, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`convert_surface_into_brep<doxid-namespacegeode_1a87e0d735149553a4636e9e96d8300e66>`(const SurfaceMesh3D& surface);
-	std::tuple<BRep, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`convert_surfaces_into_brep<doxid-namespacegeode_1a6046d745dde057d0c09b9b4ed88ba159>`(absl::Span<const std::reference_wrapper<const SurfaceMesh3D>> surfaces);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7986437714612066a303580285ecf217>`(SurfaceMesh);
 
-	std::tuple<BRep, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`convert_curves_and_surfaces_into_brep<doxid-namespacegeode_1a513616a48a443b202f58b153c221b781>`(
+	std::tuple<BRep, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`convert_meshes_into_brep<doxid-namespacegeode_1aff6017692c1ec62492f4d3d881836e26>`(
+		absl::Span<const std::reference_wrapper<const PointSet3D>> corners,
 		absl::Span<const std::reference_wrapper<const EdgedCurve3D>> curves,
 		absl::Span<const std::reference_wrapper<const SurfaceMesh3D>> surfaces
 		);
 
 	BRep geode_conversion_model_api :ref:`convert_solid_into_brep_from_adjacencies<doxid-namespacegeode_1acee492fff074e02fa81aebd8aab70e6b>`(const SolidMesh3D& solid);
 
+	std::tuple<BRep, :ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToBRepMeshElementsMapping<doxid-structgeode_1_1_index_to_b_rep_mesh_elements_mapping>`> geode_conversion_model_api :ref:`convert_solid_elements_into_brep<doxid-namespacegeode_1a1c1001a14c9a2d3348d47ab5f7199783>`(
+		const SolidMesh3D& solid,
+		absl::Span<const index_t> corner_vertices,
+		absl::Span<const index_t> line_edges,
+		absl::Span<const index_t> surface_facets
+		);
+
 	BRep geode_conversion_model_api :ref:`convert_solid_into_brep_from_attribute<doxid-namespacegeode_1a92d35cbc4515b193913214a9fb29e2f4>`(
 		SolidMesh3D& solid,
 		absl::string_view attribute_name
 		);
 
-	std::tuple<BRep, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`add_sharp_features<doxid-namespacegeode_1a4fe4bdf95c8808a9056567e88657e8b5>`(
+	std::tuple<BRep, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`add_sharp_features<doxid-namespacegeode_1a49cb67a8b0b0b2e1fab8dfe0d8c4b783>`(
 		const BRep& model,
 		double max_angle
 		);
 
-	std::tuple<Section, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :target:`convert_surface_into_section<doxid-namespacegeode_1a841eef0ed237bfc9c5c909f74cbd9161>`(const SurfaceMesh2D& surface);
-	std::tuple<Section, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :target:`convert_surfaces_into_section<doxid-namespacegeode_1a464e70fdfa7f1b8ab0476bb466095d85>`(absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces);
+	std::tuple<Section, :ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`> geode_conversion_model_api :target:`convert_surface_elements_into_section<doxid-namespacegeode_1a19d4a019dfc8a1f3f9d135b61a6fb7b6>`(
+		const SurfaceMesh2D& surface,
+		absl::Span<const index_t> corner_vertices,
+		absl::Span<const index_t> line_edges,
+		absl::Span<const index_t> surface_polygons
+		);
 
-	std::tuple<Section, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`convert_surface_into_section_from_attribute<doxid-namespacegeode_1a31220e62aebd41c86a9b9fffdc289bcb>`(
+	std::tuple<Section, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :target:`convert_meshes_into_section<doxid-namespacegeode_1a6835edf43c6cb86909b5fd0db7dfff76>`(
+		absl::Span<const std::reference_wrapper<const PointSet2D>> corners,
+		absl::Span<const std::reference_wrapper<const EdgedCurve2D>> curves,
+		absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces
+		);
+
+	std::tuple<Section, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`convert_surface_into_section_from_attribute<doxid-namespacegeode_1a6280b0a690369c7371a17214118bf057>`(
 		SurfaceMesh2D& surface,
 		absl::string_view attribute_name
 		);
@@ -85,68 +117,19 @@ Detailed Documentation
 Global Functions
 ----------------
 
-.. index:: pair: function; convert_surface_into_brep
-.. _doxid-namespacegeode_1a87e0d735149553a4636e9e96d8300e66:
+.. index:: pair: function; convert_meshes_into_brep
+.. _doxid-namespacegeode_1aff6017692c1ec62492f4d3d881836e26:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<BRep, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api convert_surface_into_brep(const SurfaceMesh3D& surface)
-
-Convert a SurfaceMesh3D into a BRep, without meshed Blocks. This function uses the adjacencies between surface polygons to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to SurfaceMesh3D edges shared by 1 or more than 2 polygons, or by 2 polygons if there are not set as adjacent.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- surface
-
-		- Input surface
-
-.. index:: pair: function; convert_surfaces_into_brep
-.. _doxid-namespacegeode_1a6046d745dde057d0c09b9b4ed88ba159:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	std::tuple<BRep, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api convert_surfaces_into_brep(absl::Span<const std::reference_wrapper<const SurfaceMesh3D>> surfaces)
-
-Convert a set of SurfaceMesh3D into a BRep, without meshed Blocks. This function first merged the input surfaces together and then uses the adjacencies between surface polygons to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to merged SurfaceMesh3D edges shared by 1 or more than 2 polygons, or by 2 polygons if there are not set as adjacent.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- surfaces
-
-		- Input surfaces
-
-
-
-.. rubric:: Returns:
-
-the BRep and the mapping between input surfaces and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.
-
-.. index:: pair: function; convert_curves_and_surfaces_into_brep
-.. _doxid-namespacegeode_1a513616a48a443b202f58b153c221b781:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	std::tuple<BRep, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api convert_curves_and_surfaces_into_brep(
+	std::tuple<BRep, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api convert_meshes_into_brep(
+		absl::Span<const std::reference_wrapper<const PointSet3D>> corners,
 		absl::Span<const std::reference_wrapper<const EdgedCurve3D>> curves,
 		absl::Span<const std::reference_wrapper<const SurfaceMesh3D>> surfaces
 		)
 
-Convert a set of EdgedCurve3D and SurfaceMesh3D into a BRep, without meshed Blocks. This function first merges the input surfaces together and then uses the adjacencies between surface polygons and the given curves to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to merged SurfaceMesh3D edges shared by 1 or more than 2 polygons, by 2 polygons if there are not set as adjacent, or by Curve edges.
+Convert a set of EdgedCurve3D and SurfaceMesh3D into a BRep, without meshed Blocks. This function first merges the input surfaces together and then uses the adjacencies between surface polygons to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to merged SurfaceMesh3D edges shared by 1 or more than 2 polygons, by 2 polygons if there are not set as adjacent, or by Curve edges. A colocation between the points of the input corners, curves and the merged surface is used to determine their common points, the position of the corners and the curves in the final model, and the corresponding topology of the corners and lines (internal/separating a line/surface in two/...).
 
 
 
@@ -154,6 +137,11 @@ Convert a set of EdgedCurve3D and SurfaceMesh3D into a BRep, without meshed Bloc
 
 .. list-table::
 	:widths: 20 80
+
+	*
+		- corners
+
+		- Input corners
 
 	*
 		- curves
@@ -169,7 +157,7 @@ Convert a set of EdgedCurve3D and SurfaceMesh3D into a BRep, without meshed Bloc
 
 .. rubric:: Returns:
 
-the BRep and the mapping between input curves and surfaces and Line and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.
+the BRep and the mapping between input corners, curves and surfaces and Corner, Line and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.
 
 .. index:: pair: function; convert_solid_into_brep_from_adjacencies
 .. _doxid-namespacegeode_1acee492fff074e02fa81aebd8aab70e6b:
@@ -180,6 +168,33 @@ the BRep and the mapping between input curves and surfaces and Line and Surface 
 	BRep geode_conversion_model_api convert_solid_into_brep_from_adjacencies(const SolidMesh3D& solid)
 
 Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses the adjacencies between solid polyhedra to determine BRep Block extensions and, as a consequence, geometries of BRep Surfaces. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra if they are not set as adjacent.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- solid
+
+		- Input solid
+
+.. index:: pair: function; convert_solid_elements_into_brep
+.. _doxid-namespacegeode_1a1c1001a14c9a2d3348d47ab5f7199783:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<BRep, :ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToBRepMeshElementsMapping<doxid-structgeode_1_1_index_to_b_rep_mesh_elements_mapping>`> geode_conversion_model_api convert_solid_elements_into_brep(
+		const SolidMesh3D& solid,
+		absl::Span<const index_t> corner_vertices,
+		absl::Span<const index_t> line_edges,
+		absl::Span<const index_t> surface_facets
+		)
+
+Convert a SolidMesh3D into a BRep without meshed Blocks. This function uses the given solid points, edges and facets to define BRep corners, lines and surfaces.
 
 
 
@@ -224,12 +239,12 @@ Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribu
 		- Name of attribute stored on solid polyhedra @warn Attribute should be convertible to float.
 
 .. index:: pair: function; add_sharp_features
-.. _doxid-namespacegeode_1a4fe4bdf95c8808a9056567e88657e8b5:
+.. _doxid-namespacegeode_1a49cb67a8b0b0b2e1fab8dfe0d8c4b783:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<BRep, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api add_sharp_features(
+	std::tuple<BRep, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api add_sharp_features(
 		const BRep& model,
 		double max_angle
 		)
@@ -254,12 +269,12 @@ Creates a new BRep from the given one, with new lines on the sharp features of t
 		- Dihedral angle between the facets under which their common edge is considered a sharp feature.
 
 .. index:: pair: function; convert_surface_into_section_from_attribute
-.. _doxid-namespacegeode_1a31220e62aebd41c86a9b9fffdc289bcb:
+.. _doxid-namespacegeode_1a6280b0a690369c7371a17214118bf057:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<Section, ComponentMeshVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api convert_surface_into_section_from_attribute(
+	std::tuple<Section, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api convert_surface_into_section_from_attribute(
 		SurfaceMesh2D& surface,
 		absl::string_view attribute_name
 		)

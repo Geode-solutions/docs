@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::detail::ModelBuilderFromMeshes
-.. _doxid-classgeode_1_1detail_1_1_model_builder_from_meshes:
+.. index:: pair: class; geode::detail::SectionFromSurfaceElementsBuilder
+.. _doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder:
 
-template class geode::detail::ModelBuilderFromMeshes
-====================================================
+class geode::detail::SectionFromSurfaceElementsBuilder
+======================================================
 
 .. toctree::
 	:hidden:
@@ -13,28 +13,25 @@ template class geode::detail::ModelBuilderFromMeshes
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <model_builder_from_meshes.h>
+	#include <section_from_surface_builder.h>
 	
-	template <typename Model>
-	class ModelBuilderFromMeshes: public :ref:`geode::detail::CornersLinesBuilder<doxid-classgeode_1_1detail_1_1_corners_lines_builder>`
+	class SectionFromSurfaceElementsBuilder: public :ref:`geode::detail::WireframeBuilderFromOneMesh<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh>`
 	{
 	public:
-		// fields
+		// construction
 	
-		static constexpr auto :target:`dimension<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ad71f2784a1bbb3305c60fb6dbb2f87b6>` = Model::dim;
+		:target:`SectionFromSurfaceElementsBuilder<doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder_1a01646160e8aa5ce55abdcd930bc114f4>`(
+			Section& model,
+			const SurfaceMesh2D& surface,
+			absl::Span<const index_t> corner_vertices,
+			absl::Span<const index_t> line_edges,
+			absl::Span<const index_t> surface_polygons
+			);
 
 		// methods
 	
-		virtual void :target:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a823729208184f7dd85afc4a7f5a03474>`();
-		void :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a351381be7bdb41b99de192d8de34e3b9>`();
-		std::pair<ModelMeshesVertexMapping, ModelMeshesElementMapping> :target:`mappings<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ab15f9b471379d5327c4c98941770c69d>`();
-		virtual bool :target:`is_corner<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a8a7be15f0a8eb5b6ccadf6376c800670>`(index_t vertex) const;
+		std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`> :target:`build_section<doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder_1aae069536638245d6897137c23f85f3b5>`();
 	};
-
-	// direct descendants
-
-	class :ref:`BRepFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder>`;
-	class :ref:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder>`;
 
 Inherited Members
 -----------------
@@ -46,6 +43,7 @@ Inherited Members
 		// fields
 	
 		static constexpr auto :ref:`dimension<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a93060e1d76ba16d147e0b88c956b859c>` = Model::dim;
+		static constexpr auto :ref:`dimension<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a818a740d01db3e8ae3152ccb9e33e509>` = Model::dim;
 
 		// methods
 	
@@ -61,4 +59,7 @@ Inherited Members
 		absl::optional<uuid> :ref:`corner_uuid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1aa266186d0ada0b6a951d456ef3f93c75>`(index_t vertex) const;
 		index_t :ref:`line_edge_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a8875fd1c5069c39ab34a66575f133c20>`(index_t edge) const;
 		index_t :ref:`line_vertex_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ae78a3829a1ca48906d9e52c45ea2051b>`(index_t vertex, const uuid& output_line_uuid) const;
+		virtual void :ref:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a2b5bfdacb183ce2b970d90094a47e195>`();
+		virtual bool :ref:`is_corner<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a7594332e4df1f128e5457d499a40f8bc>`(index_t vertex) const;
+		:ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>` :ref:`mappings<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a31f6f07f10d4c00f28aa133046bd2722>`();
 

@@ -11,12 +11,13 @@ namespace geode::detail
 	class_geode_detail_BRepFromSolidAdjacenciesBuilder.rst
 	class_geode_detail_BRepFromSolidElementsBuilder.rst
 	class_geode_detail_CornersLinesBuilder.rst
-	class_geode_detail_CornersLinesBuilderFromSolid.rst
 	class_geode_detail_ModelBuilderFromMeshes.rst
 	class_geode_detail_SectionFromMeshesBuilder.rst
+	class_geode_detail_SectionFromSurfaceElementsBuilder.rst
 	class_geode_detail_SolidIdentifier.rst
 	class_geode_detail_SurfaceFromSolidAdjacencies.rst
 	class_geode_detail_SurfaceIdentifier.rst
+	class_geode_detail_WireframeBuilderFromOneMesh.rst
 
 
 
@@ -27,31 +28,28 @@ namespace geode::detail
 	
 	namespace detail {
 
-	// typedefs
-
-	typedef :ref:`CornersLinesBuilderFromSolid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_solid>`<BRep, BRepBuilder> :target:`BRepCornersLinesBuilderFromSolid<doxid-namespacegeode_1_1detail_1a29554aed5867d2e153906ac874fd2130>`;
-
 	// classes
 
 	class :ref:`BRepFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder>`;
 	class :ref:`BRepFromSolidAdjacenciesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_adjacencies_builder>`;
 	class :ref:`BRepFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder>`;
 
-	template <typename Model, typename ModelBuilder, index_t dimension>
+	template <typename Model>
 	class :ref:`CornersLinesBuilder<doxid-classgeode_1_1detail_1_1_corners_lines_builder>`;
 
-	template <typename Model, typename ModelBuilder>
-	class :ref:`CornersLinesBuilderFromSolid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_from_solid>`;
-
-	template <typename Model, typename ModelBuilder, index_t dimension>
+	template <typename Model>
 	class :ref:`ModelBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes>`;
 
 	class :ref:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder>`;
+	class :ref:`SectionFromSurfaceElementsBuilder<doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder>`;
 	class :ref:`SolidIdentifier<doxid-classgeode_1_1detail_1_1_solid_identifier>`;
 	class :ref:`SurfaceFromSolidAdjacencies<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies>`;
 
 	template <index_t dimension>
 	class :ref:`SurfaceIdentifier<doxid-classgeode_1_1detail_1_1_surface_identifier>`;
+
+	template <typename Model, typename Mesh>
+	class :ref:`WireframeBuilderFromOneMesh<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh>`;
 
 	// global functions
 

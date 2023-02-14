@@ -20,15 +20,16 @@ class geode::detail::SectionFromMeshesBuilder
 	public:
 		// construction
 	
-		:target:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder_1ad2b9961e70e229c2095b10c4f46f44e9>`(
+		:target:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder_1ac952d4e757c8aa5475c7cd712ff95c0f>`(
 			Section& brep,
+			absl::Span<const std::reference_wrapper<const PointSet2D>> corners,
 			absl::Span<const std::reference_wrapper<const EdgedCurve2D>> curves,
 			absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces
 			);
 
 		// methods
 	
-		std::pair<ComponentMeshVertexMapping, ModelMeshesElementMapping> :target:`build_section<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder_1a7ff2876400e23a2b5de5912b3efd386a>`();
+		std::pair<ModelMeshesVertexMapping, ModelMeshesElementMapping> :target:`build_section<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder_1a04c832dc24503be271110de1dfb57cf2>`();
 	};
 
 Inherited Members
@@ -38,22 +39,27 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// fields
+	
+		static constexpr auto :ref:`dimension<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a93060e1d76ba16d147e0b88c956b859c>` = Model::dim;
+		static constexpr auto :ref:`dimension<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ad71f2784a1bbb3305c60fb6dbb2f87b6>` = Model::dim;
+
 		// methods
 	
-		const EdgedCurve<dimension>& :ref:`wireframe<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1af5e7ec2a77533ebec3131082e28885d2>`() const;
-		void :ref:`build<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a2bdf51980d5a694c538bcfdf57f1d56a>`();
-		virtual void :ref:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1aaaf96512d484a5b482ce0480c8436823>`() = 0;
-		void :ref:`build_corners_step<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a64493ee069a6269a038247f45ba51271>`();
-		void :ref:`build_lines_step<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a6c6ebf6a6c56f9434997322825136ae6>`();
-		void :ref:`add_corner<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ae98c2c08224652ad1451876302ef395d>`(index_t vertex);
-		absl::optional<index_t> :ref:`wireframe_edge_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a1766a514c8d3bb6cf9545dfd767a1a5d>`(const std::array<index_t, 2>& edge_vertices) const;
-		index_t :ref:`vertex_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a3bcf6596f44dcb39e767d2a60c6bc4ee>`(index_t vertex) const;
-		const uuid& :ref:`line_uuid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1abfcc27a990ac2eaca491679a0a4589c2>`(index_t edge) const;
-		absl::optional<uuid> :ref:`corner_uuid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ac91bbe61940099c5254774b9d3da28a4>`(index_t vertex) const;
-		index_t :ref:`line_edge_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a8d43e7ccf485a27db31c3c522b87c184>`(index_t edge) const;
-		index_t :ref:`line_vertex_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a30d49951e02cdaf92794be5f878fec16>`(index_t vertex, const uuid& output_line_uuid) const;
-		virtual void :ref:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a161fcbbec90705fe2681682051cc7efe>`();
-		void :ref:`build_surfaces<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ad70b63ec83becd02c3ec86230f01b276>`();
-		std::pair<ComponentMeshVertexMapping, ModelMeshesElementMapping> :ref:`mappings<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ae56669615321a071ef92461f3d68b682>`();
-		virtual bool :ref:`is_corner<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1af86357083ecf27409ea78bba4677e242>`(index_t vertex) const;
+		const EdgedCurve<:ref:`dimension<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a93060e1d76ba16d147e0b88c956b859c>`>& :ref:`wireframe<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a8514e5b8d1e4bce951b800c8baa96fa3>`() const;
+		void :ref:`build<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a222cee948aedc83323679402519d8b27>`();
+		virtual void :ref:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a122117b15e919611e98fca8a258e684f>`() = 0;
+		void :ref:`build_corners_step<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a27e8f7d67788ed7a2dd5f89ac814f2c1>`();
+		void :ref:`build_lines_step<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ad973aaf889272c67661d86ebc47d8291>`();
+		void :ref:`add_corner<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ae2cee08b3c8f09e96142a1ecd7ebc0a7>`(index_t vertex);
+		absl::optional<index_t> :ref:`wireframe_edge_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ab4673dadb093b90a302453c06fc702ab>`(const std::array<index_t, 2>& edge_vertices) const;
+		index_t :ref:`vertex_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ad25bca911023fb210ddd766588a4c598>`(index_t vertex) const;
+		const uuid& :ref:`line_uuid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1aa1bbdc39b84f7a3635bafcdfe7c2f63e>`(index_t edge) const;
+		absl::optional<uuid> :ref:`corner_uuid<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1aa266186d0ada0b6a951d456ef3f93c75>`(index_t vertex) const;
+		index_t :ref:`line_edge_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1a8875fd1c5069c39ab34a66575f133c20>`(index_t edge) const;
+		index_t :ref:`line_vertex_id<doxid-classgeode_1_1detail_1_1_corners_lines_builder_1ae78a3829a1ca48906d9e52c45ea2051b>`(index_t vertex, const uuid& output_line_uuid) const;
+		virtual void :ref:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a823729208184f7dd85afc4a7f5a03474>`();
+		void :ref:`build_surfaces<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a351381be7bdb41b99de192d8de34e3b9>`();
+		std::pair<ModelMeshesVertexMapping, ModelMeshesElementMapping> :ref:`mappings<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ab15f9b471379d5327c4c98941770c69d>`();
+		virtual bool :ref:`is_corner<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a8a7be15f0a8eb5b6ccadf6376c800670>`(index_t vertex) const;
 
