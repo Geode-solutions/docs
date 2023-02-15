@@ -1,0 +1,40 @@
+.. index:: pair: class; geode::SurfaceCurveIntersections
+.. _doxid-classgeode_1_1_surface_curve_intersections:
+
+template class geode::SurfaceCurveIntersections
+===============================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the intersections of SurfaceMeshes
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_curve_intersections.h>
+	
+	template <index_t dimension>
+	class SurfaceCurveIntersections
+	{
+	public:
+		// construction
+	
+		:target:`SurfaceCurveIntersections<doxid-classgeode_1_1_surface_curve_intersections_1aa94edf2ca6fc794448acaf730c47bd53>`(
+			const SurfaceMesh<dimension>& surface,
+			const EdgedCurve<dimension>& curve
+			);
+	
+		:target:`SurfaceCurveIntersections<doxid-classgeode_1_1_surface_curve_intersections_1a9bc3027470f8e0d3801d4e946c2af439>`(
+			const SurfaceMesh<dimension>& mesh,
+			const EdgedCurve<dimension>& curve,
+			bool verbose
+			);
+
+		// methods
+	
+		bool :target:`meshes_have_intersections<doxid-classgeode_1_1_surface_curve_intersections_1a410252bc0248877c7f05c1fc1f4f4b3b>`() const;
+		index_t :target:`nb_intersecting_elements_pair<doxid-classgeode_1_1_surface_curve_intersections_1a91bfa48526b553eb5cf43efcdcd415b7>`() const;
+		std::vector<std::pair<index_t, index_t>> :target:`intersecting_elements<doxid-classgeode_1_1_surface_curve_intersections_1ad21348f19cd36c7895e4de2b7f401b29>`() const;
+	};
