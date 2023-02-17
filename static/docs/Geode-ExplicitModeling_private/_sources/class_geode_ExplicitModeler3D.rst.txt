@@ -85,5 +85,5 @@ Returns the Merged BRep including all the added surfaces and curves and gives th
 
 	std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> build_painted_volumes()
 
-Returns the Merged BRep including all the added surfaces and curves and gives the "input to output" and "output to input" mappings between Surfaces and Lines
+Returns the Merged BRep including the added surfaces and curves around painted volumes only and gives the "input to output" and "output to input" mappings between Surfaces and Lines
 
