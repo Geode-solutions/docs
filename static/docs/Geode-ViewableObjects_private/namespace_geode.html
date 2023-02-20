@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>namespace geode &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,7 +13,9 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -37,6 +39,8 @@
 <span id="doxid-namespacegeode"></span><span id="index-0"></span><h1>namespace geode</h1>
 <div class="toctree-wrapper compound">
 </div>
+<section id="overview">
+<h2>Overview</h2>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">geode</span> <span class="p">{</span>
 
 <span class="c1">// typedefs</span>
@@ -49,10 +53,186 @@
 
 <span class="c1">// global functions</span>
 
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">geode_viewableobjects_conversion_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a7064294cd5522a6fdada86bb3618d9e1"><span class="std std-ref">save_viewable_brep</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae260e8d6abec49377b8031ebf7f6e5bc"><span></span><span class="n">brep_viewable_extension</span></span><span></span><span class="p">();</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1acc1341ca739e90709751e3417e9189c3"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
+    <span class="n">geode_viewableobjects_conversion_api</span><span class="p">,</span>
+    <span class="n">ViewableObjectsConversion</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-namespacegeode-1a3c7ef9032f92f75de1cd8b4986892cd4"><span class="std std-ref">save_viewable_edged_curve</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">edged_curve</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a965218e3fa1f9143d11297fd8e7dbba7"><span></span><span class="n">edged_curve_viewable_extension</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1da5adee14f91deff17a0b855b2c8e84"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">HybridSolid</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-namespacegeode-1a61e4b46005fbacfbefbce49ff6dc6501"><span class="std std-ref">save_viewable_hybrid_solid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">HybridSolid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">hybrid_solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab71ab4b53e8dc3556fce7173791b2c82"><span></span><span class="n">hybrid_solid_viewable_extension</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a55897b30a3ff5e25684f4268a974caad"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PointSet</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-namespacegeode-1a01e7d6ce6056d0d3a0f9e6a93820cd46"><span class="std std-ref">save_viewable_point_set</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point_set</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0866448a8a02acbfc1957dacc25465dd"><span></span><span class="n">point_set_viewable_extension</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa326268026b80210a023b9d2edec059d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PolygonalSurface</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-namespacegeode-1acced4f5f7f37d93a3f4c6381b43c4bdc"><span class="std std-ref">save_viewable_polygonal_surface</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">polygonal_surface</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6f4783f9844acbbdebe35d1c4d2fa92b"><span></span><span class="n">polygonal_surface_viewable_extension</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1e8e55e5371b72b9963704762267ff26"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PolyhedralSolid</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-namespacegeode-1a55dd7bfbbf4748c53e4cb2e1a49d22e0"><span class="std std-ref">save_viewable_polyhedral_solid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">PolyhedralSolid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">polyhedral_solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a55da274fff3c6e00b607ea3ee74cd305"><span></span><span class="n">polyhedral_solid_viewable_extension</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca4385eb3d676a070003e6270f6472ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-namespacegeode-1aac96b946c787e59f19939443d425fad1"><span class="std std-ref">save_viewable_regular_grid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">regular_grid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1adebf63125e786579179e016c662f0654"><span></span><span class="n">regular_grid_viewable_extension</span></span><span></span><span class="p">();</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">geode_viewableobjects_conversion_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a4f5ccbafb705888663990eeb2f059539"><span class="std std-ref">save_viewable_section</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2d976479737f8b54ee17f06d0dd3797e"><span></span><span class="n">section_viewable_extension</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b691d4711522d638d7d8f1b087e597a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-namespacegeode-1a6950083b4b55b8a479cce7e081e19dbd"><span class="std std-ref">save_viewable_tetrahedral_solid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">tetrahedral_solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac14b0680143b02740852526b963df709"><span></span><span class="n">tetrahedral_solid_viewable_extension</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="#doxid-namespacegeode-1a69103141949b89fc2eb65fdb1337ad25"><span class="std std-ref">save_viewable_triangulated_surface</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">triangulated_surface</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9cde15a37eb1ea3ce838f08797ef991d"><span></span><span class="n">triangulated_surface_viewable_extension</span></span><span></span><span class="p">();</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4ecf6fa216cde1cec2b7f5067b9a305e"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_viewableobjects_qem_proxy_api</span><span class="p">,</span> <span class="n">ViewableObjectsQEMProxy</span><span class="p">);</span>
 <span class="kt">bool</span> <span class="n">geode_viewableobjects_qem_proxy_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abee83a62e8f878996b46484d71332508"><span></span><span class="n">simplify</span></span><span></span><span class="p">(</span><span class="n">geode</span><span class="o">::</span><span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 
 <span class="p">}</span> <span class="c1">// namespace geode</span></pre>
+</section>
+<section id="detailed-documentation">
+<span id="details-namespacegeode"></span><h2>Detailed Documentation</h2>
+<section id="global-functions">
+<h3>Global Functions</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7064294cd5522a6fdada86bb3618d9e1"><span id="index-1"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="n">save_viewable_brep</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a3c7ef9032f92f75de1cd8b4986892cd4"><span id="index-2"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">save_viewable_edged_curve</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">edged_curve</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a61e4b46005fbacfbefbce49ff6dc6501"><span id="index-3"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">save_viewable_hybrid_solid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">HybridSolid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">hybrid_solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a01e7d6ce6056d0d3a0f9e6a93820cd46"><span id="index-4"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">save_viewable_point_set</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point_set</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1acced4f5f7f37d93a3f4c6381b43c4bdc"><span id="index-5"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">save_viewable_polygonal_surface</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">PolygonalSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">polygonal_surface</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a55dd7bfbbf4748c53e4cb2e1a49d22e0"><span id="index-6"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">save_viewable_polyhedral_solid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">PolyhedralSolid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">polyhedral_solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aac96b946c787e59f19939443d425fad1"><span id="index-7"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">save_viewable_regular_grid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">regular_grid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4f5ccbafb705888663990eeb2f059539"><span id="index-8"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">geode_viewableobjects_conversion_api</span> <span class="n">save_viewable_section</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6950083b4b55b8a479cce7e081e19dbd"><span id="index-9"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">save_viewable_tetrahedral_solid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">tetrahedral_solid</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a69103141949b89fc2eb65fdb1337ad25"><span id="index-10"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">save_viewable_triangulated_surface</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">triangulated_surface</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename_without_extension</span>
+    <span class="p">)</span></pre>
+<p>Save the Data in viewable file format (e.g. VTK format)</p>
+<p class="rubric">Returns:</p>
+<p>the name of th newly created file</p>
+</section>
+</section>
 </section>
 
 
@@ -65,7 +245,7 @@
       &copy;.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
