@@ -40,7 +40,7 @@
 <span id="doxid-classgeode-1-1-surface-curve-intersections"></span><span id="index-0"></span><h1>template class geode::SurfaceCurveIntersections</h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Class for inspecting the intersections of SurfaceMeshes</p>
+<p>Class for inspecting the intersections of TriangulatedSurfacees</p>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surface_curve_intersections.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -49,13 +49,13 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-curve-intersections-1aa94edf2ca6fc794448acaf730c47bd53"><span></span><span class="n">SurfaceCurveIntersections</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-curve-intersections-1a212d802c462454e183cbeb0a9069df46"><span></span><span class="n">SurfaceCurveIntersections</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">curve</span>
         <span class="p">);</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-curve-intersections-1a9bc3027470f8e0d3801d4e946c2af439"><span></span><span class="n">SurfaceCurveIntersections</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-curve-intersections-1a3d1515826c3183257c5ffdc13680f70f"><span></span><span class="n">SurfaceCurveIntersections</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">curve</span><span class="p">,</span>
         <span class="kt">bool</span> <span class="n">verbose</span>
         <span class="p">);</span>

@@ -37,3 +37,6 @@ This mixin represents an assembly of inspectors. Syntax to create a derivated cl
 
 	template <index_t dimension>
 	class :ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`;
+
+	template <index_t dimension>
+	class :ref:`TriangulatedSurfaceInspector<doxid-classgeode_1_1_triangulated_surface_inspector>`;

@@ -7,7 +7,7 @@ template class geode::SurfaceCurveIntersections
 .. toctree::
 	:hidden:
 
-Class for inspecting the intersections of SurfaceMeshes
+Class for inspecting the intersections of TriangulatedSurfacees
 
 
 .. ref-code-block:: cpp
@@ -21,13 +21,13 @@ Class for inspecting the intersections of SurfaceMeshes
 	public:
 		// construction
 	
-		:target:`SurfaceCurveIntersections<doxid-classgeode_1_1_surface_curve_intersections_1aa94edf2ca6fc794448acaf730c47bd53>`(
-			const SurfaceMesh<dimension>& surface,
+		:target:`SurfaceCurveIntersections<doxid-classgeode_1_1_surface_curve_intersections_1a212d802c462454e183cbeb0a9069df46>`(
+			const TriangulatedSurface<dimension>& surface,
 			const EdgedCurve<dimension>& curve
 			);
 	
-		:target:`SurfaceCurveIntersections<doxid-classgeode_1_1_surface_curve_intersections_1a9bc3027470f8e0d3801d4e946c2af439>`(
-			const SurfaceMesh<dimension>& mesh,
+		:target:`SurfaceCurveIntersections<doxid-classgeode_1_1_surface_curve_intersections_1a3d1515826c3183257c5ffdc13680f70f>`(
+			const TriangulatedSurface<dimension>& mesh,
 			const EdgedCurve<dimension>& curve,
 			bool verbose
 			);
