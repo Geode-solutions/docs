@@ -22,6 +22,10 @@ Interface class to represent the builder of a :ref:`SurfaceMesh <doxid-classgeod
 	class SurfaceMeshBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`
 	{
 	public:
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_surface_mesh_builder_1aed48194ac262646c60cd5168b09ccd21>` = dimension;
+
 		// methods
 	
 		:ref:`SurfaceEdgesBuilder<doxid-classgeode_1_1_surface_edges_builder>`<dimension> :target:`edges_builder<doxid-classgeode_1_1_surface_mesh_builder_1a3c2b8286e513c7865370e6b1f39aae7e>`();

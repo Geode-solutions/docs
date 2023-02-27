@@ -19,6 +19,10 @@ Implementation class for RegularGridBuilder using OpenGeode data structure
 	class OpenGeodeRegularGridBuilder<2>: public :ref:`geode::RegularGridBuilder<2><doxid-classgeode_1_1_regular_grid_builder_3_012_01_4>`
 	{
 	public:
+		// fields
+	
+		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`dim<doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4_1aef7f7852fcff57c623d73e06fab86679>` { 2 };
+
 		// construction
 	
 		:target:`OpenGeodeRegularGridBuilder<doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4_1a527c15b702eb58046d96a81106d2d74f>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& vertex_set, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>`);
@@ -32,6 +36,12 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// fields
+	
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_surface_mesh_builder_1aed48194ac262646c60cd5168b09ccd21>` = dimension;
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_grid_builder_1a2db435f15edbf0e8be61f5017fcfd683>` = dimension;
+		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`dim<doxid-classgeode_1_1_regular_grid_builder_3_012_01_4_1a46c6dd0774e9b59ec9968c7483aea336>` { 2 };
+
 		// methods
 	
 		void :ref:`set_id<doxid-classgeode_1_1_identifier_builder_1a54f3f0e185bc0f387508a422048f6d70>`(:ref:`uuid<doxid-structgeode_1_1uuid>` id);

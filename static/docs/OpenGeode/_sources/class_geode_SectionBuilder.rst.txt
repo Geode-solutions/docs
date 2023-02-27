@@ -25,6 +25,10 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 	    public :ref:`geode::IdentifierBuilder<doxid-classgeode_1_1_identifier_builder>`
 	{
 	public:
+		// fields
+	
+		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`dim<doxid-classgeode_1_1_section_builder_1a4ef1703a5dba58ee83aca9350a8f9c41>` { 2 };
+
 		// construction
 	
 		:target:`SectionBuilder<doxid-classgeode_1_1_section_builder_1a9eb6a1ccb9b8f8ccc267fba7aa1cc9b2>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
@@ -131,7 +135,6 @@ Inherited Members
 			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& collection
 			);
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_relation<doxid-classgeode_1_1_relationships_builder_1ac24f613a79365bce8b725cc2c753d7be>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id1, const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& id2);
 		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
 	
 		void :ref:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(

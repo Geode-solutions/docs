@@ -1,0 +1,39 @@
+.. index:: pair: class; geode::detail::RelationshipsImpl
+.. _doxid-classgeode_1_1detail_1_1_relationships_impl:
+
+class geode::detail::RelationshipsImpl
+======================================
+
+.. toctree::
+	:hidden:
+
+This class stores all the relations between a set of components. Each relationship links two components.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships_impl.h>
+	
+	class RelationshipsImpl
+	{
+	public:
+		// typedefs
+	
+		typedef typename EdgesAroundVertex::const_iterator :target:`Iterator<doxid-classgeode_1_1detail_1_1_relationships_impl_1a0ee023ce618d191dd46766678584d9d9>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_relations<doxid-classgeode_1_1detail_1_1_relationships_impl_1aeddc38d57e3a1365ce499c319221b4be>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`Iterator<doxid-classgeode_1_1detail_1_1_relationships_impl_1a0ee023ce618d191dd46766678584d9d9>` :target:`begin_edge<doxid-classgeode_1_1detail_1_1_relationships_impl_1ada7ba0f074e02420a070962a0abd9557>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		:ref:`Iterator<doxid-classgeode_1_1detail_1_1_relationships_impl_1a0ee023ce618d191dd46766678584d9d9>` :target:`end_edge<doxid-classgeode_1_1detail_1_1_relationships_impl_1a20c7ca7bea17f8f57dfc95e166e4308d>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :target:`vertex_component_id<doxid-classgeode_1_1detail_1_1_relationships_impl_1a5600fe57e0b1948b14993541e3f5a440>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex) const;
+		void :target:`remove_component<doxid-classgeode_1_1detail_1_1_relationships_impl_1a89701181c9c12b76d7120664ab99be53>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`add_relation_edge<doxid-classgeode_1_1detail_1_1_relationships_impl_1af56b64f64b8ea7f888d9c5dcf15c01e6>`(const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& from, const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& to);
+		void :target:`remove_relation<doxid-classgeode_1_1detail_1_1_relationships_impl_1ae5051c24cd63cff46c759e0e42182bf9>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`component_attribute_manager<doxid-classgeode_1_1detail_1_1_relationships_impl_1a6684c8c0a1dbbf3273c827ede69880ca>`() const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`relation_attribute_manager<doxid-classgeode_1_1detail_1_1_relationships_impl_1ae0ce3c0a681470bb2535a5aecdae62e1>`() const;
+		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`relation_edge_index<doxid-classgeode_1_1detail_1_1_relationships_impl_1a10b817c03acbb5245fbbcb0031b0a371>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2) const;
+		std::tuple<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`, :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`> :target:`relation_components_from_index<doxid-classgeode_1_1detail_1_1_relationships_impl_1abb5f08d8925d88612cf863012e8c1c62>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` id) const;
+		void :target:`copy<doxid-classgeode_1_1detail_1_1_relationships_impl_1a1b6800a83c720e2090bcb4f54fe91d5e>`(const RelationshipsImpl& impl, const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping);
+	};

@@ -19,6 +19,10 @@ Implementation class for :ref:`TriangulatedSurfaceBuilder <doxid-classgeode_1_1_
 	class OpenGeodeTriangulatedSurfaceBuilder: public :ref:`geode::TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>`
 	{
 	public:
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_open_geode_triangulated_surface_builder_1a3048aface0fb3a03c02efb24102437b8>` = dimension;
+
 		// construction
 	
 		:target:`OpenGeodeTriangulatedSurfaceBuilder<doxid-classgeode_1_1_open_geode_triangulated_surface_builder_1aa7007eb68f17f2c0e8e4337cf3a0a8d0>`(
@@ -36,6 +40,11 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// fields
+	
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_surface_mesh_builder_1aed48194ac262646c60cd5168b09ccd21>` = dimension;
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_triangulated_surface_builder_1a9cfa097b8313e2c0b80fae603e62d15f>` = dimension;
+
 		// methods
 	
 		void :ref:`set_id<doxid-classgeode_1_1_identifier_builder_1a54f3f0e185bc0f387508a422048f6d70>`(:ref:`uuid<doxid-structgeode_1_1uuid>` id);

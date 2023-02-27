@@ -19,6 +19,10 @@ Implementation class for :ref:`TetrahedralSolidBuilder <doxid-classgeode_1_1_tet
 	class OpenGeodeTetrahedralSolidBuilder: public :ref:`geode::TetrahedralSolidBuilder<doxid-classgeode_1_1_tetrahedral_solid_builder>`
 	{
 	public:
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_open_geode_tetrahedral_solid_builder_1a4f0f93d556d1df1162a898744361aef3>` = dimension;
+
 		// construction
 	
 		:target:`OpenGeodeTetrahedralSolidBuilder<doxid-classgeode_1_1_open_geode_tetrahedral_solid_builder_1ac79c588a9ccefb2ce36f6573ded6457d>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& vertex_set, :ref:`MeshBuilderFactoryKey<doxid-classgeode_1_1_mesh_builder_factory_key>`);
@@ -32,6 +36,11 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// fields
+	
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_solid_mesh_builder_1aacc6e2b116abd7d22bac613e81bd1b21>` = dimension;
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_tetrahedral_solid_builder_1ab0b8c99b6a6ca36152367ff173e7639e>` = dimension;
+
 		// methods
 	
 		void :ref:`set_id<doxid-classgeode_1_1_identifier_builder_1a54f3f0e185bc0f387508a422048f6d70>`(:ref:`uuid<doxid-structgeode_1_1uuid>` id);

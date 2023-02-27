@@ -22,6 +22,10 @@ Overview
 	class TetrahedralSolidBuilder: public :ref:`geode::SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`
 	{
 	public:
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_tetrahedral_solid_builder_1ab0b8c99b6a6ca36152367ff173e7639e>` = dimension;
+
 		// methods
 	
 		static std::unique_ptr<TetrahedralSolidBuilder<dimension>> :target:`create<doxid-classgeode_1_1_tetrahedral_solid_builder_1a503c644c2e201a97294ded9e4479b27d>`(:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& mesh);
@@ -43,6 +47,10 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// fields
+	
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_solid_mesh_builder_1aacc6e2b116abd7d22bac613e81bd1b21>` = dimension;
+
 		// methods
 	
 		void :ref:`set_id<doxid-classgeode_1_1_identifier_builder_1a54f3f0e185bc0f387508a422048f6d70>`(:ref:`uuid<doxid-structgeode_1_1uuid>` id);

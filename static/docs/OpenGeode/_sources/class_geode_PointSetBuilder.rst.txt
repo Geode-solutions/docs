@@ -22,6 +22,10 @@ Interface class to represent the builder of a :ref:`PointSet <doxid-classgeode_1
 	class PointSetBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`
 	{
 	public:
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_point_set_builder_1ab6e3e9388e32f6efa6ebd7d929f5ac7f>` = dimension;
+
 		// methods
 	
 		static std::unique_ptr<PointSetBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_builder_1ab5c00c0739ace9a3125e0f1daf1e44ee>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh);

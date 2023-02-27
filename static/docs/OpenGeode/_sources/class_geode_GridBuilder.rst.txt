@@ -19,6 +19,10 @@ template class geode::GridBuilder
 	class GridBuilder
 	{
 	public:
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_grid_builder_1a2db435f15edbf0e8be61f5017fcfd683>` = dimension;
+
 		// methods
 	
 		void :target:`set_grid_dimensions<doxid-classgeode_1_1_grid_builder_1a01c5a8eca8238d5840587710e03e0394>`(

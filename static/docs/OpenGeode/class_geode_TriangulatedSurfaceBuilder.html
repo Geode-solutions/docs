@@ -49,6 +49,10 @@
 <span class="k">class</span> <span class="nl">TriangulatedSurfaceBuilder</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder"><span class="std std-ref">geode::SurfaceMeshBuilder</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-builder-1a9cfa097b8313e2c0b80fae603e62d15f"><span></span><span class="n">dim</span></span><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+
     <span class="c1">// methods</span>
 
     <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TriangulatedSurfaceBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-builder-1a525758b4196d65870741e2224e75bbab"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">TriangulatedSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
@@ -65,6 +69,10 @@
 <section id="inherited-members">
 <h3>Inherited Members</h3>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder-1aed48194ac262646c60cd5168b09ccd21"><span class="std std-ref">dim</span></a><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+
     <span class="c1">// methods</span>
 
     <span class="kt">void</span> <a class="reference internal" href="class_geode_IdentifierBuilder.html#doxid-classgeode-1-1-identifier-builder-1a54f3f0e185bc0f387508a422048f6d70"><span class="std std-ref">set_id</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span> <span class="n">id</span><span class="p">);</span>

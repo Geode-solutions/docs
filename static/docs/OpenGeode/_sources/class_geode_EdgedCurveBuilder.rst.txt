@@ -22,6 +22,10 @@ Interface class to represent the builder of a :ref:`EdgedCurve <doxid-classgeode
 	class EdgedCurveBuilder: public :ref:`geode::GraphBuilder<doxid-classgeode_1_1_graph_builder>`
 	{
 	public:
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_edged_curve_builder_1a5faf20adecaae54a9e452f6d009757fc>` = dimension;
+
 		// methods
 	
 		static std::unique_ptr<EdgedCurveBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_edged_curve_builder_1ac1d31e425b0233fca9d10f07d735df23>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh);

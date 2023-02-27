@@ -21,6 +21,10 @@ template class geode::RegularGridBuilder<3>
 	    public :ref:`geode::GridBuilder<doxid-classgeode_1_1_grid_builder>`
 	{
 	public:
+		// fields
+	
+		static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`dim<doxid-classgeode_1_1_regular_grid_builder_3_013_01_4_1a0b2954147bfb73f876669e6cf4d66367>` { 3 };
+
 		// methods
 	
 		static std::unique_ptr<:ref:`RegularGridBuilder<doxid-classgeode_1_1_regular_grid_builder_3_013_01_4_1a670ca2e824926c892972e2cb767273dd>`<3>> :target:`create<doxid-classgeode_1_1_regular_grid_builder_3_013_01_4_1a351eafd1cd4604acb8e061db14fca293>`(RegularGrid3D& grid);
@@ -53,6 +57,11 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// fields
+	
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_solid_mesh_builder_1aacc6e2b116abd7d22bac613e81bd1b21>` = dimension;
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_grid_builder_1a2db435f15edbf0e8be61f5017fcfd683>` = dimension;
+
 		// methods
 	
 		void :ref:`set_id<doxid-classgeode_1_1_identifier_builder_1a54f3f0e185bc0f387508a422048f6d70>`(:ref:`uuid<doxid-structgeode_1_1uuid>` id);
