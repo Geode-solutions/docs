@@ -41,6 +41,12 @@ Overview
 		ViewableObjectsConversion
 		);
 
+	std::string geode_viewableobjects_conversion_api :ref:`save_viewable_cross_section<doxid-namespacegeode_1a908053e3ce0d3dc7df44760199757f5d>`(
+		const CrossSection& cross_section,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewableobjects_conversion_api :target:`cross_section_viewable_extension<doxid-namespacegeode_1a7d179ef0595426f0a55aeb2be9af7343>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 
 	template <index_t dimension>
@@ -102,6 +108,13 @@ Overview
 		);
 
 	absl::string_view geode_viewableobjects_conversion_api :target:`section_viewable_extension<doxid-namespacegeode_1a2d976479737f8b54ee17f06d0dd3797e>`();
+
+	std::string geode_viewableobjects_conversion_api :ref:`save_viewable_structural_model<doxid-namespacegeode_1a9dc1d2ebbe3d6f110485f0393592e274>`(
+		const StructuralModel& structural_model,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewableobjects_conversion_api :target:`structural_model_viewable_extension<doxid-namespacegeode_1abef65bd1ce102e1dfc372dc07aa0952e>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
 
 	template <index_t dimension>
@@ -142,6 +155,25 @@ Global Functions
 
 	std::string geode_viewableobjects_conversion_api save_viewable_brep(
 		const BRep& brep,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_cross_section
+.. _doxid-namespacegeode_1a908053e3ce0d3dc7df44760199757f5d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::string geode_viewableobjects_conversion_api save_viewable_cross_section(
+		const CrossSection& cross_section,
 		absl::string_view filename_without_extension
 		)
 
@@ -281,6 +313,25 @@ the name of th newly created file
 
 	std::string geode_viewableobjects_conversion_api save_viewable_section(
 		const Section& section,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_structural_model
+.. _doxid-namespacegeode_1a9dc1d2ebbe3d6f110485f0393592e274:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::string geode_viewableobjects_conversion_api save_viewable_structural_model(
+		const StructuralModel& structural_model,
 		absl::string_view filename_without_extension
 		)
 
