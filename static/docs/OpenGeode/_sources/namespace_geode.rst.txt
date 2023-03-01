@@ -141,6 +141,7 @@ namespace geode
 	class_geode_ModelBoundaries.rst
 	class_geode_ModelBoundariesBuilder.rst
 	class_geode_ModelBoundary.rst
+	class_geode_ModelConcatener.rst
 	class_geode_ModelMapping.rst
 	class_geode_NNSearch.rst
 	class_geode_NamedType.rst
@@ -350,6 +351,8 @@ Overview
 	typedef absl::flat_hash_map<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`, std::vector<std::pair<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>>> :target:`ComponentMeshVertexPairs<doxid-namespacegeode_1ab0cc9fad3b163b933d6a81b0135bad90>`;
 	typedef :ref:`uuid<doxid-structgeode_1_1uuid>` :target:`uuid_from_conversion_attribute_type<doxid-namespacegeode_1acf1a636803ffb21a84003a8d351c9391>`;
 	typedef :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`unique_vertex_from_conversion_attribute_type<doxid-namespacegeode_1a48fde7c8ed05188f679e443bac7973ad>`;
+	typedef :ref:`ModelConcatener<doxid-classgeode_1_1_model_concatener>`<:ref:`BRep<doxid-classgeode_1_1_b_rep>`> :target:`BRepConcatener<doxid-namespacegeode_1a50b43b853f82a3d45e61cf0022f40a27>`;
+	typedef :ref:`ModelConcatener<doxid-classgeode_1_1_model_concatener>`<:ref:`Section<doxid-classgeode_1_1_section>`> :target:`SectionConcatener<doxid-namespacegeode_1a0191d09d758f174a66f81e064b13d7f6>`;
 	typedef absl::flat_hash_map<:ref:`uuid<doxid-structgeode_1_1uuid>`, std::vector<:ref:`RayTracing3D::PolygonDistance<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance>`>> :target:`BoundarySurfaceIntersections<doxid-namespacegeode_1aacd9631a015e823014e0fe6db1df2a95>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`ComponentTag<doxid-structgeode_1_1_component_tag>`> :target:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`;
 	typedef :ref:`ModelMapping<doxid-classgeode_1_1_model_mapping>`<:ref:`BijectiveMapping<doxid-classgeode_1_1_bijective_mapping>`<:ref:`uuid<doxid-structgeode_1_1uuid>`>> :target:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`;
@@ -650,6 +653,9 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`;
+
+	template <typename Model>
+	class :ref:`ModelConcatener<doxid-classgeode_1_1_model_concatener>`;
 
 	template <typename MappingType>
 	class :ref:`ModelMapping<doxid-classgeode_1_1_model_mapping>`;
