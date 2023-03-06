@@ -17,7 +17,10 @@ Class managing modifications of a :ref:`CrossSection <doxid-classgeode_1_1_cross
 	
 	class CrossSectionBuilder:
 	    public SectionBuilder,
-	    public AddComponentsBuilders< 2, Faults, Horizons, FaultBlocks, StratigraphicUnits >
+	    public FaultsBuilder2D,
+	    public HorizonsBuilder2D,
+	    public FaultBlocksBuilder2D,
+	    public StratigraphicUnitsBuilder2D
 	{
 	public:
 		// construction

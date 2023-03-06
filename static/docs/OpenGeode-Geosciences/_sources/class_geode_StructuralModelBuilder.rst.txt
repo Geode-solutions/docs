@@ -17,7 +17,10 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 	
 	class StructuralModelBuilder:
 	    public BRepBuilder,
-	    public AddComponentsBuilders< 3, Faults, Horizons, FaultBlocks, StratigraphicUnits >
+	    public FaultsBuilder3D,
+	    public HorizonsBuilder3D,
+	    public FaultBlocksBuilder3D,
+	    public StratigraphicUnitsBuilder3D
 	{
 	public:
 		// construction

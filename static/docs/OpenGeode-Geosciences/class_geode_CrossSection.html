@@ -45,15 +45,26 @@
 
 <span class="k">class</span> <span class="nl">CrossSection</span><span class="p">:</span>
     <span class="k">public</span> <span class="n">Section</span><span class="p">,</span>
-    <span class="k">public</span> <span class="n">AddComponents</span><span class="o">&lt;</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Faults</span><span class="p">,</span> <span class="n">Horizons</span><span class="p">,</span> <span class="n">FaultBlocks</span><span class="p">,</span> <span class="n">StratigraphicUnits</span> <span class="o">&gt;</span>
+    <span class="k">public</span> <span class="n">Faults2D</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">Horizons2D</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">FaultBlocks2D</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">StratigraphicUnits2D</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_CrossSectionBuilder.html#doxid-classgeode-1-1-cross-section-builder"><span class="std std-ref">CrossSectionBuilder</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1abd610a7ce721476d308b113ce4bce646"><span></span><span class="n">Builder</span></span><span></span><span class="p">;</span>
+
     <span class="c1">// classes</span>
 
     <span class="k">class</span> <a class="reference internal" href="class_geode_CrossSection_FaultBlockItemRange.html#doxid-classgeode-1-1-cross-section-1-1-fault-block-item-range"><span class="std std-ref">FaultBlockItemRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_CrossSection_FaultItemRange.html#doxid-classgeode-1-1-cross-section-1-1-fault-item-range"><span class="std std-ref">FaultItemRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_CrossSection_HorizonItemRange.html#doxid-classgeode-1-1-cross-section-1-1-horizon-item-range"><span class="std std-ref">HorizonItemRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_CrossSection_StratigraphicUnitItemRange.html#doxid-classgeode-1-1-cross-section-1-1-stratigraphic-unit-item-range"><span class="std std-ref">StratigraphicUnitItemRange</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1a5a022a5900f4506ad2be9caffc40d60d"><span></span><span class="n">dim</span></span><span></span> <span class="p">{</span> <span class="mi">2</span> <span class="p">};</span>
 
     <span class="c1">// construction</span>
 

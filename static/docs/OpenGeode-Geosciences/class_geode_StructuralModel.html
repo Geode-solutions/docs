@@ -45,15 +45,26 @@
 
 <span class="k">class</span> <span class="nl">StructuralModel</span><span class="p">:</span>
     <span class="k">public</span> <span class="n">BRep</span><span class="p">,</span>
-    <span class="k">public</span> <span class="n">AddComponents</span><span class="o">&lt;</span> <span class="mi">3</span><span class="p">,</span> <span class="n">Faults</span><span class="p">,</span> <span class="n">Horizons</span><span class="p">,</span> <span class="n">FaultBlocks</span><span class="p">,</span> <span class="n">StratigraphicUnits</span> <span class="o">&gt;</span>
+    <span class="k">public</span> <span class="n">Faults3D</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">Horizons3D</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">FaultBlocks3D</span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">StratigraphicUnits3D</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_StructuralModelBuilder.html#doxid-classgeode-1-1-structural-model-builder"><span class="std std-ref">StructuralModelBuilder</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1adaac593ede6ae4e20d3ddd89a64e531d"><span></span><span class="n">Builder</span></span><span></span><span class="p">;</span>
+
     <span class="c1">// classes</span>
 
     <span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModel_FaultBlockItemRange.html#doxid-classgeode-1-1-structural-model-1-1-fault-block-item-range"><span class="std std-ref">FaultBlockItemRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModel_FaultItemRange.html#doxid-classgeode-1-1-structural-model-1-1-fault-item-range"><span class="std std-ref">FaultItemRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModel_HorizonItemRange.html#doxid-classgeode-1-1-structural-model-1-1-horizon-item-range"><span class="std std-ref">HorizonItemRange</span></a><span></span><span class="p">;</span>
     <span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModel_StratigraphicUnitItemRange.html#doxid-classgeode-1-1-structural-model-1-1-stratigraphic-unit-item-range"><span class="std std-ref">StratigraphicUnitItemRange</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1aa2db0a73ff5298cdd4092eff07138711"><span></span><span class="n">dim</span></span><span></span> <span class="p">{</span> <span class="mi">3</span> <span class="p">};</span>
 
     <span class="c1">// construction</span>
 
