@@ -189,6 +189,8 @@ a tuple containing:
 
 Computes the intersections between a given box and the all element boxes.
 
+The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
+
 the operator define what to do with the box ``cur_element_box`` if it is intersected by the ``box``.
 
 
@@ -211,7 +213,7 @@ the operator define what to do with the box ``cur_element_box`` if it is interse
 	*
 		- EvalIntersection
 
-		- this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;
+		- this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;
 
 .. index:: pair: function; compute_self_element_bbox_intersections
 .. _doxid-classgeode_1_1_a_a_b_b_tree_1a1265a269f8b687b6f199af13b7c4e0b4:
@@ -228,6 +230,8 @@ cur_element_box1 and cur_element_box2 are the element box indices that intersect
 
 the operator defines what to do when two boxes of the tree (``cur_element_box1`` and ``cur_element_box2``) intersect each other (for example: test real intersection between each element in boxes and store the result.)
 
+The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
+
 
 
 .. rubric:: Parameters:
@@ -243,7 +247,7 @@ the operator defines what to do when two boxes of the tree (``cur_element_box1``
 	*
 		- EvalIntersection
 
-		- this functor should have an operator() defined like this: void operator()( index_t cur_element_box1, index_t cur_element_box2 ) ;
+		- this functor should have an operator() defined like this: bool operator()( index_t cur_element_box1, index_t cur_element_box2 );
 
 .. index:: pair: function; compute_other_element_bbox_intersections
 .. _doxid-classgeode_1_1_a_a_b_b_tree_1a7cb13bb10021dc9fe5b9044b603136da:
@@ -261,6 +265,8 @@ Computes all the intersections of the element boxes between this tree and anothe
 
 cur_element_box1 and cur_element_box2 are the element box indices that intersect in the current tree and in the other tree.
 
+The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
+
 
 
 .. rubric:: Parameters:
@@ -276,7 +282,7 @@ cur_element_box1 and cur_element_box2 are the element box indices that intersect
 	*
 		- EvalIntersection
 
-		- this functor should have an operator() defined like this: void operator()( index_t cur_element_box1, index_t cur_element_box2 ) ;
+		- this functor should have an operator() defined like this: bool operator()( index_t cur_element_box1, index_t cur_element_box2 );
 
 .. index:: pair: function; compute_ray_element_bbox_intersections
 .. _doxid-classgeode_1_1_a_a_b_b_tree_1a557f99f2a9fa9cb159c8508660694d05:
@@ -293,6 +299,8 @@ cur_element_box1 and cur_element_box2 are the element box indices that intersect
 Computes the intersections between a given ray and all element boxes.
 
 the operator define what to do with the box ``cur_element_box`` if it is intersected by the ``ray``.
+
+The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
 
 
 
@@ -314,7 +322,7 @@ the operator define what to do with the box ``cur_element_box`` if it is interse
 	*
 		- EvalIntersection
 
-		- this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;
+		- this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;
 
 .. index:: pair: function; compute_line_element_bbox_intersections
 .. _doxid-classgeode_1_1_a_a_b_b_tree_1af0479516b1697fe1c7335c050de94326:
@@ -331,6 +339,8 @@ the operator define what to do with the box ``cur_element_box`` if it is interse
 Computes the intersections between a given infinite line and all element boxes.
 
 the operator define what to do with the box ``cur_element_box`` if it is intersected by the ``line``.
+
+The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
 
 
 
@@ -352,5 +362,5 @@ the operator define what to do with the box ``cur_element_box`` if it is interse
 	*
 		- EvalIntersection
 
-		- this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;
+		- this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;
 

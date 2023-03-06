@@ -1,0 +1,39 @@
+.. index:: pair: class; geode::RasterImageInput
+.. _doxid-classgeode_1_1_raster_image_input:
+
+template class geode::RasterImageInput
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <raster_image_input.h>
+	
+	template <index_t dimension>
+	class RasterImageInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`
+	{
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeRasterImageInput<doxid-classgeode_1_1_open_geode_raster_image_input>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
+		virtual Object :ref:`read<doxid-classgeode_1_1_input_1a6caf553bf75b99577a4117d4780199e1>`(const Args&... args) = 0;
+

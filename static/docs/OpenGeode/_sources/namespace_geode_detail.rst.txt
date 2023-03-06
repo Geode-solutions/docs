@@ -38,7 +38,7 @@ namespace geode::detail
 	template <typename Component>
 	class :ref:`ComponentsStorage<doxid-classgeode_1_1detail_1_1_components_storage>`;
 
-	template <typename Model, typename ModelBuilder, index_t dimension>
+	template <typename Model>
 	class :ref:`CutAlongInternalLines<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines>`;
 
 	class :ref:`CutAlongInternalSurfaces<doxid-classgeode_1_1detail_1_1_cut_along_internal_surfaces>`;
@@ -85,6 +85,12 @@ namespace geode::detail
 	void :target:`register_basic_pcontext<doxid-namespacegeode_1_1detail_1a8648101a87baa0975d8f9ccf34abb183>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`mapping_after_deletion<doxid-namespacegeode_1_1detail_1a90890e796e3fc5c2e28539ac82272d6c>`(const std::vector<bool>& to_delete);
+
+	template <typename Type, typename Serializer>
+	void :target:`register_inlinedvector<doxid-namespacegeode_1_1detail_1aa1bc80355e09c99baebee18500893693>`(
+		:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context,
+		absl::string_view type
+		);
 
 	template <typename Serializer>
 	void :target:`register_geometry_pcontext<doxid-namespacegeode_1_1detail_1aef91870a0b7782c65a3aa06b974a4270>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
@@ -206,35 +212,35 @@ namespace geode::detail
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_components
 		);
 
-	template <index_t dimension, typename ModelFrom, typename ModelTo, typename BuilderTo>
-	void :target:`copy_corner_geometry<doxid-namespacegeode_1_1detail_1acc462a8064071d28ae3d16f29a446456>`(
+	template <typename ModelFrom, typename ModelTo>
+	void :target:`copy_corner_geometry<doxid-namespacegeode_1_1detail_1ae3d29b3f24545f126a5cccfb33a1dabc>`(
 		const ModelFrom& from,
 		const ModelTo& to,
-		BuilderTo& builder_to,
+		typename ModelTo::Builder& builder_to,
 		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>`& corners
 		);
 
-	template <index_t dimension, typename ModelFrom, typename ModelTo, typename BuilderTo>
-	void :target:`copy_line_geometry<doxid-namespacegeode_1_1detail_1ad17d5acf049e2d58edff5d485aff054b>`(
+	template <typename ModelFrom, typename ModelTo>
+	void :target:`copy_line_geometry<doxid-namespacegeode_1_1detail_1afe1e37915792c23a1b3ff7e98afc6593>`(
 		const ModelFrom& from,
 		const ModelTo& to,
-		BuilderTo& builder_to,
+		typename ModelTo::Builder& builder_to,
 		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>`& lines
 		);
 
-	template <index_t dimension, typename ModelFrom, typename ModelTo, typename BuilderTo>
-	void :target:`copy_surface_geometry<doxid-namespacegeode_1_1detail_1ad27bee18dbf831c17a4a92ad74483f8d>`(
+	template <typename ModelFrom, typename ModelTo>
+	void :target:`copy_surface_geometry<doxid-namespacegeode_1_1detail_1ad93cc6287aacc3db3196e173637d8d0c>`(
 		const ModelFrom& from,
 		const ModelTo& to,
-		BuilderTo& builder_to,
+		typename ModelTo::Builder& builder_to,
 		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>`& surfaces
 		);
 
-	template <index_t dimension, typename ModelFrom, typename ModelTo, typename BuilderTo>
-	void :target:`copy_block_geometry<doxid-namespacegeode_1_1detail_1a702abdb455160a19accb594408ec2581>`(
+	template <typename ModelFrom, typename ModelTo>
+	void :target:`copy_block_geometry<doxid-namespacegeode_1_1detail_1a9e810d2b5e240d9ade10ac6aae8b7283>`(
 		const ModelFrom& from,
 		const ModelTo& to,
-		BuilderTo& builder_to,
+		typename ModelTo::Builder& builder_to,
 		const :ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>`& blocks
 		);
 

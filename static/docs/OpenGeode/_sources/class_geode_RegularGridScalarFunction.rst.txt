@@ -28,14 +28,18 @@ Overview
 
 		// methods
 	
-		void :target:`set_value<doxid-classgeode_1_1_regular_grid_scalar_function_1a8b120e4bac8168f59507cd5068d1fc92>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& vertex_index, double value);
+		void :target:`set_value<doxid-classgeode_1_1_regular_grid_scalar_function_1ac5ad3685305378eff2996bae27e6ec70>`(
+			const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::VertexIndices& vertex_index,
+			double value
+			);
+	
 		void :target:`set_value<doxid-classgeode_1_1_regular_grid_scalar_function_1a09aee2e220ee65fbf331bffbc8986063>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index, double value);
-		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1ab032d243696e900380665f9854f476ea>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& vertex_index) const;
+		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1ab88c461a8fe2add0ba64a5a7552b91c4>`(const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::VertexIndices& vertex_index) const;
 		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1aa6547f7fa9a6b7cffdedec9ad6f64dcc>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
 	
-		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1ad8aacf259ebad934f4d2657028f0c784>`(
+		double :target:`value<doxid-classgeode_1_1_regular_grid_scalar_function_1a21e1c85c66baab749656f9eb550a988f>`(
 			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
-			const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& grid_cell_indices
+			const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices& grid_cell_indices
 			) const;
 	
 		static RegularGridScalarFunction<dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_scalar_function_1ad9dd9d9d1101e677d9972fcae411090c>`(

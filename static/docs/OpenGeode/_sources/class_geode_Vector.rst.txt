@@ -64,6 +64,6 @@ Inherited Members
 		void :ref:`operator/=<doxid-classgeode_1_1_point_1a01766c14e3a3c99628f26133726aafe5>` (double divider);
 		void :ref:`operator +=<doxid-classgeode_1_1_point_1aa35861cf278e23fd8721fa8f6aceb989>` (const :ref:`Point<doxid-classgeode_1_1_point>`& other);
 		void :ref:`operator -=<doxid-classgeode_1_1_point_1aabe6dc4a793bfbc7e746f7cb4c274162>` (const :ref:`Point<doxid-classgeode_1_1_point>`& other);
-		bool :ref:`inexact_equal<doxid-classgeode_1_1_point_1a019778a2d6a6bc70d113f4c7292bf795>`(const :ref:`Point<doxid-classgeode_1_1_point>`& other, double epsilon) const;
+		bool :ref:`inexact_equal<doxid-classgeode_1_1_point_1a2733961bd2709b974200109411dcf6a3>`(const :ref:`Point<doxid-classgeode_1_1_point>`& other) const;
 		std::string :ref:`string<doxid-classgeode_1_1_point_1aa5dd322eea26f1fa239b4e8d6ec094ef>`() const;
 

@@ -39,5 +39,5 @@ Inherited Members
 		// methods
 	
 		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
-		virtual Mesh :ref:`read<doxid-classgeode_1_1_input_1a49038a185b2b36473f5e5528375195a6>`(const Args&... args) = 0;
+		virtual Object :ref:`read<doxid-classgeode_1_1_input_1a6caf553bf75b99577a4117d4780199e1>`(const Args&... args) = 0;
 

@@ -15,13 +15,13 @@ template class geode::Output
 
 	#include <output.h>
 	
-	template <typename Mesh>
+	template <typename Object>
 	class Output: public :ref:`geode::IOFile<doxid-classgeode_1_1_i_o_file>`
 	{
 	public:
 		// methods
 	
-		virtual void :target:`write<doxid-classgeode_1_1_output_1a10d810517bfded77ca896bbb6aae0394>`(const Mesh& mesh) const = 0;
+		virtual void :target:`write<doxid-classgeode_1_1_output_1accd2a5608104c26f189e83840d9f50a5>`(const Object& object) const = 0;
 	};
 
 	// direct descendants
@@ -44,6 +44,9 @@ template class geode::Output
 
 	template <index_t dimension>
 	class :ref:`PolyhedralSolidOutput<doxid-classgeode_1_1_polyhedral_solid_output>`;
+
+	template <index_t dimension>
+	class :ref:`RasterImageOutput<doxid-classgeode_1_1_raster_image_output>`;
 
 	template <index_t dimension>
 	class :ref:`RegularGridOutput<doxid-classgeode_1_1_regular_grid_output>`;

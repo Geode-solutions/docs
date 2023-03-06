@@ -15,13 +15,13 @@ template class geode::Input
 
 	#include <input.h>
 	
-	template <typename Mesh, typename... Args>
+	template <typename Object, typename... Args>
 	class Input: public :ref:`geode::IOFile<doxid-classgeode_1_1_i_o_file>`
 	{
 	public:
 		// methods
 	
-		virtual Mesh :target:`read<doxid-classgeode_1_1_input_1a49038a185b2b36473f5e5528375195a6>`(const Args&... args) = 0;
+		virtual Object :target:`read<doxid-classgeode_1_1_input_1a6caf553bf75b99577a4117d4780199e1>`(const Args&... args) = 0;
 	};
 
 	// direct descendants
@@ -44,6 +44,9 @@ template class geode::Input
 
 	template <index_t dimension>
 	class :ref:`PolyhedralSolidInput<doxid-classgeode_1_1_polyhedral_solid_input>`;
+
+	template <index_t dimension>
+	class :ref:`RasterImageInput<doxid-classgeode_1_1_raster_image_input>`;
 
 	template <index_t dimension>
 	class :ref:`RegularGridInput<doxid-classgeode_1_1_regular_grid_input>`;

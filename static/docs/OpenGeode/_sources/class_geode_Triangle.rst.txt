@@ -51,22 +51,13 @@ Inherited Members
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`barycenter<doxid-classgeode_1_1_generic_triangle_1a44a95a7325aac0dc67f25a6ca9e9cae0>`() const;
 	
 		template <index_t T = dimension>
-		std::enable_if<T==3, Vector3D>::type :ref:`normal<doxid-classgeode_1_1_generic_triangle_1ac1f5efb997cb8b036a5f778531dce87e>`() const;
+		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`normal<doxid-classgeode_1_1_generic_triangle_1a2dc5e608900dcec7e8f33a17ca237197>`() const;
 	
 		template <index_t T = dimension>
-		std::enable_if<T==3, :ref:`Plane<doxid-classgeode_1_1_plane>`>::type :ref:`plane<doxid-classgeode_1_1_generic_triangle_1a439265065e8575f384794d7a3b628150>`() const;
+		std::enable_if<T==3, absl::optional<:ref:`Plane<doxid-classgeode_1_1_plane>`>>::type :ref:`plane<doxid-classgeode_1_1_generic_triangle_1a72aaa9f875b362c0098b545b83e5400e>`() const;
 	
 		template <index_t T = dimension>
-		std::enable_if<T==3, :ref:`OwnerPlane<doxid-classgeode_1_1_owner_plane>`>::type :ref:`owner_plane<doxid-classgeode_1_1_generic_triangle_1aae7a003d9bfabc395f6e743e79a8a323>`() const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`new_normal<doxid-classgeode_1_1_generic_triangle_1a40aeb5223b49bbd72f2e412facdad77c>`() const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==3, absl::optional<:ref:`Plane<doxid-classgeode_1_1_plane>`>>::type :ref:`new_plane<doxid-classgeode_1_1_generic_triangle_1aa8b460f24ca932f2161be7c9d909d40d>`() const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==3, absl::optional<:ref:`OwnerPlane<doxid-classgeode_1_1_owner_plane>`>>::type :ref:`new_owner_plane<doxid-classgeode_1_1_generic_triangle_1add620220ffde2dce24a02a00885660ea>`() const;
+		std::enable_if<T==3, absl::optional<:ref:`OwnerPlane<doxid-classgeode_1_1_owner_plane>`>>::type :ref:`owner_plane<doxid-classgeode_1_1_generic_triangle_1a2267de086edff6ebff782145f595facc>`() const;
 	
 		template <index_t T = dimension>
 		std::enable_if<T==3, absl::optional<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`>>::type :ref:`pivot<doxid-classgeode_1_1_generic_triangle_1a4f64457d591db43da2b0c1a0a57ed223>`() const;

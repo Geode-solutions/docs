@@ -67,16 +67,10 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 		double :ref:`polygon_area<doxid-classgeode_1_1_surface_mesh_1a1c027dea78fbae8ca3aaadf192b3b2bc>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 	
 		template <index_t T = dimension>
-		std::enable_if<T==3, Vector3D>::type :ref:`polygon_normal<doxid-classgeode_1_1_surface_mesh_1a89037be5314ce4ba5897393dd70b2ce8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`polygon_normal<doxid-classgeode_1_1_surface_mesh_1af076b6fd25a7e52381e98c2e32045caa>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 	
 		template <index_t T = dimension>
-		std::enable_if<T==3, Vector3D>::type :ref:`polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a57a532622974810570f74d4d7dd4e56f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`new_polygon_normal<doxid-classgeode_1_1_surface_mesh_1a3d2ee2ee4e97a1fa3b7fac30fd113d17>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`new_polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a4416e307e02aff4473789d373ea97e64>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a73aaab3b1a411e8d73bde75bb471ca42>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	
 		const :ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`& :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1a691ef7edf445b8b9dbd0fbb1b3111610>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		const :ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`& :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1a09b06781c0f9fdb8455ff65170a3280a>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& vertex) const;
@@ -92,6 +86,7 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 		void :target:`disable_edges<doxid-classgeode_1_1_surface_mesh_1ae71a51d702cfdd675ba8cf2abb6bd3f0>`() const;
 		const :ref:`SurfaceEdges<doxid-classgeode_1_1_surface_edges>`<dimension>& :target:`edges<doxid-classgeode_1_1_surface_mesh_1ad5555be584ed9b5c17bbf414b8063026>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`polygon_attribute_manager<doxid-classgeode_1_1_surface_mesh_1a7768652288a50604a306550e38f298ed>`() const;
+		TextureManager2D :target:`texture_manager<doxid-classgeode_1_1_surface_mesh_1a02a8ff29ea2e8d2228a6e333e7b03b9d>`() const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_surface_mesh_1a58b343cffea2621809f6f6cd1ad8d937>`() const;
 		absl::optional<:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`> :ref:`polygon_around_vertex<doxid-classgeode_1_1_surface_mesh_1af352396b148fde5bd9c12b9befb6c4a2>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	
@@ -640,46 +635,24 @@ Return the area of a polygon. Result guaranteed only for convex polygon.
 		- Index of a polygon.
 
 .. index:: pair: function; polygon_normal
-.. _doxid-classgeode_1_1_surface_mesh_1a89037be5314ce4ba5897393dd70b2ce8:
+.. _doxid-classgeode_1_1_surface_mesh_1af076b6fd25a7e52381e98c2e32045caa:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t T = dimension>
-	std::enable_if<T==3, Vector3D>::type polygon_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const
+	std::enable_if<T==3, absl::optional<Vector3D>>::type polygon_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const
 
 Return the normal of a polygon
 
 .. index:: pair: function; polygon_vertex_normal
-.. _doxid-classgeode_1_1_surface_mesh_1a57a532622974810570f74d4d7dd4e56f:
+.. _doxid-classgeode_1_1_surface_mesh_1a73aaab3b1a411e8d73bde75bb471ca42:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t T = dimension>
-	std::enable_if<T==3, Vector3D>::type polygon_vertex_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
-
-Return the normal at a polygon vertex
-
-.. index:: pair: function; new_polygon_normal
-.. _doxid-classgeode_1_1_surface_mesh_1a3d2ee2ee4e97a1fa3b7fac30fd113d17:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	template <index_t T = dimension>
-	std::enable_if<T==3, absl::optional<Vector3D>>::type new_polygon_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const
-
-Return the normal of a polygon
-
-.. index:: pair: function; new_polygon_vertex_normal
-.. _doxid-classgeode_1_1_surface_mesh_1a4416e307e02aff4473789d373ea97e64:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	template <index_t T = dimension>
-	std::enable_if<T==3, absl::optional<Vector3D>>::type new_polygon_vertex_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
+	std::enable_if<T==3, absl::optional<Vector3D>>::type polygon_vertex_normal(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const
 
 Return the normal at a polygon vertex
 

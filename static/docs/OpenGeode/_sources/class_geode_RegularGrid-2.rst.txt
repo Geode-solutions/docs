@@ -59,12 +59,18 @@ Inherited Members
 	
 		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :ref:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
 		typedef :ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_surface_mesh_1a4987e1b4d68a9ee1250540c77b7cee1d>`;
+		typedef std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`;
 		typedef :ref:`GridBuilder<doxid-classgeode_1_1_grid_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_grid_1a004445a041c0d318f4917633c1c3f669>`;
+		typedef typename :ref:`CellArray<doxid-classgeode_1_1_cell_array>`<dimension>:::ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>` :ref:`CellIndices<doxid-classgeode_1_1_grid_1a9b5ae92207bd54091a0d27906e86da0c>`;
+		typedef :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>` :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`;
+		typedef std::array<:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`, 1<<dimension> :ref:`CellVertices<doxid-classgeode_1_1_grid_1ad406b11a0c431aff3541b9611b5c8840>`;
+		typedef absl::InlinedVector<:ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`, 1<<dimension> :ref:`CellsAroundVertex<doxid-classgeode_1_1_grid_1aef9092356509be9512cc08f610f3cc67>`;
 
 		// fields
 	
 		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
 		static constexpr auto :ref:`dim<doxid-classgeode_1_1_surface_mesh_1a9ae0d73dabe06517c2d49993d0759e2e>` = dimension;
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_cell_array_1a80ff42693e2de717be9b1539a311cfd1>` = dimension;
 		static constexpr auto :ref:`dim<doxid-classgeode_1_1_grid_1a02019d81dfd0d6e6ebd5a34db2a2852b>` = dimension;
 
 		// methods
@@ -119,16 +125,10 @@ Inherited Members
 		double :ref:`polygon_area<doxid-classgeode_1_1_surface_mesh_1a1c027dea78fbae8ca3aaadf192b3b2bc>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 	
 		template <index_t T = dimension>
-		std::enable_if<T==3, Vector3D>::type :ref:`polygon_normal<doxid-classgeode_1_1_surface_mesh_1a89037be5314ce4ba5897393dd70b2ce8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`polygon_normal<doxid-classgeode_1_1_surface_mesh_1af076b6fd25a7e52381e98c2e32045caa>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 	
 		template <index_t T = dimension>
-		std::enable_if<T==3, Vector3D>::type :ref:`polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a57a532622974810570f74d4d7dd4e56f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`new_polygon_normal<doxid-classgeode_1_1_surface_mesh_1a3d2ee2ee4e97a1fa3b7fac30fd113d17>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
-	
-		template <index_t T = dimension>
-		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`new_polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a4416e307e02aff4473789d373ea97e64>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		std::enable_if<T==3, absl::optional<Vector3D>>::type :ref:`polygon_vertex_normal<doxid-classgeode_1_1_surface_mesh_1a73aaab3b1a411e8d73bde75bb471ca42>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	
 		const :ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`& :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1a691ef7edf445b8b9dbd0fbb1b3111610>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		const :ref:`PolygonsAroundVertex<doxid-namespacegeode_1a405863c7baab80fbe2a2e3198fb297b8>`& :ref:`polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_1a09b06781c0f9fdb8455ff65170a3280a>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& vertex) const;
@@ -144,6 +144,7 @@ Inherited Members
 		void :ref:`disable_edges<doxid-classgeode_1_1_surface_mesh_1ae71a51d702cfdd675ba8cf2abb6bd3f0>`() const;
 		const :ref:`SurfaceEdges<doxid-classgeode_1_1_surface_edges>`<dimension>& :ref:`edges<doxid-classgeode_1_1_surface_mesh_1ad5555be584ed9b5c17bbf414b8063026>`() const;
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`polygon_attribute_manager<doxid-classgeode_1_1_surface_mesh_1a7768652288a50604a306550e38f298ed>`() const;
+		TextureManager2D :ref:`texture_manager<doxid-classgeode_1_1_surface_mesh_1a02a8ff29ea2e8d2228a6e333e7b03b9d>`() const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_surface_mesh_1a58b343cffea2621809f6f6cd1ad8d937>`() const;
 		absl::optional<:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`> :ref:`polygon_around_vertex<doxid-classgeode_1_1_surface_mesh_1af352396b148fde5bd9c12b9befb6c4a2>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 	
@@ -158,52 +159,52 @@ Inherited Members
 		void :ref:`copy_edges<doxid-classgeode_1_1_surface_mesh_1ac48ea2693048d934a917e97ff1838b86>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface_mesh, SurfaceMeshKey);
 		static std::unique_ptr<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :ref:`create<doxid-classgeode_1_1_surface_mesh_1a4060a0918b99fc341081d094f4266edf>`();
 		static std::unique_ptr<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :ref:`create<doxid-classgeode_1_1_surface_mesh_1a283198577ed6d4c6009d91ccd95513b7>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
-		absl::string_view :ref:`native_extension<doxid-classgeode_1_1_grid_1aaed3165e8db2e5f836abbbc35aa8d284>`() const;
+		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_neighbors<doxid-classgeode_1_1_cell_array_1a5f387853e1a36c42bbae97e36ab2f28b>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_cells<doxid-classgeode_1_1_cell_array_1adfd4e80e888bb6664af83c10e137a6f8>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_cells_in_direction<doxid-classgeode_1_1_cell_array_1a9b2683ee29fdd87bc676bca3d529e84d>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
+		virtual :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`cell_index<doxid-classgeode_1_1_cell_array_1abe1e6e9f4e3e55cefd0b2af65d5730fc>`(const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& index) const = 0;
+		virtual :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>` :ref:`cell_indices<doxid-classgeode_1_1_cell_array_1a7174d5a752e4e668a10f340e81c603ff>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const = 0;
+	
+		absl::optional<:ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`> :ref:`next_cell<doxid-classgeode_1_1_cell_array_1a6d47dab4f650163047500adf669778ff>`(
+			const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& index,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
+			) const;
+	
+		absl::optional<:ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`> :ref:`previous_cell<doxid-classgeode_1_1_cell_array_1a355b2a8afe92ac17c9f74694bb41815e>`(
+			const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& index,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
+			) const;
+	
+		bool :ref:`is_cell_on_border<doxid-classgeode_1_1_cell_array_1ac7901ecf129e84f87a0be7b18f2b3dbd>`(const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& cell_indices) const;
+		static constexpr :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_neighbors_static<doxid-classgeode_1_1_cell_array_1afdd120604539a139478011b4c25b92fe>`();
 		virtual const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`origin<doxid-classgeode_1_1_grid_1ae18c0135c9066914c76566524840651f>`() const = 0;
 		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_vertices<doxid-classgeode_1_1_grid_1a0002bbcca35721156935ac671d7e3ee6>`() const;
-		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_facets<doxid-classgeode_1_1_grid_1a54afab3992df656b5d6765e4e5274972>`() const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_cells<doxid-classgeode_1_1_grid_1a6136b908b2b7d281a52eaf24ad28bb2a>`() const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_cells_in_direction<doxid-classgeode_1_1_grid_1a2942f2852a9c6b0b5c6c45e5fba7c955>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		double :ref:`cell_length_in_direction<doxid-classgeode_1_1_grid_1a026997ee7c2efcc4f910bc4bf8474a3c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		double :ref:`cell_size<doxid-classgeode_1_1_grid_1ab798fa361e5dc94726c1f9477f68e570>`() const;
-		virtual :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`cell_index<doxid-classgeode_1_1_grid_1ae82e42e25ce312d26ac2c21f5f07cadc>`(const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& index) const = 0;
-		virtual :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension> :ref:`cell_indices<doxid-classgeode_1_1_grid_1aebe8b03a90a2d07b5818c9bd8e30678f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const = 0;
-	
-		absl::optional<:ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>> :ref:`next_cell<doxid-classgeode_1_1_grid_1a98af765c04eec59596eb27d595b00c00>`(
-			const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& index,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
-			) const;
-	
-		absl::optional<:ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>> :ref:`previous_cell<doxid-classgeode_1_1_grid_1ab7efb885afa1bf435ac532b60f6d7205>`(
-			const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& index,
-			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
-			) const;
-	
-		bool :ref:`is_cell_on_border<doxid-classgeode_1_1_grid_1a8057faa2faeaedf7f31e7e25a82748a6>`(const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& cell_indices) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices_in_direction<doxid-classgeode_1_1_grid_1a35308230a809ac408bec21d6f70e36b9>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices_on_borders<doxid-classgeode_1_1_grid_1a447fd9aaabd9b1615baf9bfbce89e117>`() const;
-		virtual :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`vertex_index<doxid-classgeode_1_1_grid_1a26145a878c649d37ecdef0c968d13815>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& index) const = 0;
-		virtual :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension> :ref:`vertex_indices<doxid-classgeode_1_1_grid_1a9f57843ded5fec0b81453b07820516d7>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const = 0;
-		:ref:`GridCellVertices<doxid-namespacegeode_1a54586595e29e2768b3eb1084ace9afa8>`<dimension> :ref:`cell_vertices<doxid-classgeode_1_1_grid_1a2e7de49ae2dce9e1f64ca6f1119688f9>`(const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& cell_id) const;
+		virtual :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`vertex_index<doxid-classgeode_1_1_grid_1ae318287cacbbd538390cec38a6a4df0c>`(const :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`& index) const = 0;
+		virtual :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>` :ref:`vertex_indices<doxid-classgeode_1_1_grid_1a426416c2644947eec5aeaee7ad99a290>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const = 0;
+		:ref:`CellVertices<doxid-classgeode_1_1_grid_1ad406b11a0c431aff3541b9611b5c8840>` :ref:`cell_vertices<doxid-classgeode_1_1_grid_1ad91c80638449da1ead04fa8b37dd60cc>`(const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& cell_id) const;
 	
-		:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension> :ref:`cell_vertex_indices<doxid-classgeode_1_1_grid_1a5b52cdba079c83a35226066b0282e29c>`(
-			const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& cell_id,
+		:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>` :ref:`cell_vertex_indices<doxid-classgeode_1_1_grid_1a4b0bc7adfa0015daf4490d34858d0076>`(
+			const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& cell_id,
 			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id
 			) const;
 	
-		absl::optional<:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>> :ref:`next_vertex<doxid-classgeode_1_1_grid_1a3f783babd2cb8b3de92e1c851d5e6a40>`(
-			const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& index,
+		absl::optional<:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`> :ref:`next_vertex<doxid-classgeode_1_1_grid_1a899a9d338921b9abd03521168ca249e5>`(
+			const :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`& index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
 			) const;
 	
-		absl::optional<:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>> :ref:`previous_vertex<doxid-classgeode_1_1_grid_1abc37d2af9e7da0ad57dc011f4dc6f226>`(
-			const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& index,
+		absl::optional<:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`> :ref:`previous_vertex<doxid-classgeode_1_1_grid_1a0b977c343fb1aa4075478d4298eb8c18>`(
+			const :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`& index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
 			) const;
 	
 		bool :ref:`contains<doxid-classgeode_1_1_grid_1ae40317e28fbbb3b1b665460ce200fd26>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
-		:ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension> :ref:`closest_vertex<doxid-classgeode_1_1_grid_1a6bf7f4ff9c2fdbf6c18a20a15771eb7d>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
-		:ref:`GridCellsAroundVertex<doxid-namespacegeode_1a0403bdf67bf85805094b6e99bb52b9bd>`<dimension> :ref:`cells<doxid-classgeode_1_1_grid_1ac84f457687e0bbeafec9da9ce745a38e>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
+		:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>` :ref:`closest_vertex<doxid-classgeode_1_1_grid_1afb70a567aabc60b134739e392c6819eb>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
+		:ref:`CellsAroundVertex<doxid-classgeode_1_1_grid_1aef9092356509be9512cc08f610f3cc67>` :ref:`cells<doxid-classgeode_1_1_grid_1aa2715e6c5fceda7836ac3b775af7d4b6>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 	
 		void :ref:`set_grid_dimensions<doxid-classgeode_1_1_grid_1ac89b3677c5413aaa60a98ecd84443c21>`(
 			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> cells_number,
@@ -212,9 +213,7 @@ Inherited Members
 			);
 	
 		void :ref:`copy<doxid-classgeode_1_1_grid_1ac369b76350f09c78e270e9bf7ecba75e>`(const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid, GridKey);
-		static absl::string_view :ref:`native_extension_static<doxid-classgeode_1_1_grid_1a9435afc3b14d04c2bb0360a6b56915e7>`();
 		static constexpr :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_vertices_static<doxid-classgeode_1_1_grid_1a34bf84c36e2e35720ffb6a6b502b550d>`();
-		static constexpr :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_facets_static<doxid-classgeode_1_1_grid_1aab0e178c88bd76b57f8b4305f634bce4>`();
 
 .. _details-classgeode_1_1_regular_grid_3_012_01_4:
 

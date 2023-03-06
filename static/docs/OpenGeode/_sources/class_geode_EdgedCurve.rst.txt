@@ -32,15 +32,16 @@ Overview
 
 		// methods
 	
-		static std::unique_ptr<EdgedCurve<dimension>> :target:`create<doxid-classgeode_1_1_edged_curve_1a3f3c61d911156a0d21ced730d2dc5c75>`();
-		static std::unique_ptr<EdgedCurve<dimension>> :target:`create<doxid-classgeode_1_1_edged_curve_1a7b9e9ef66eceee00f4e7cb6845297bd2>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
-		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name_static<doxid-classgeode_1_1_edged_curve_1a7b23545513e1eaf78e6afa10a942d9c1>`();
 		std::unique_ptr<EdgedCurve<dimension>> :target:`clone<doxid-classgeode_1_1_edged_curve_1a492acfc2cd03de07de386a875d77641b>`() const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_edged_curve_1a9533f46c0373592ba3ee5326f0a90f22>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		double :target:`edge_length<doxid-classgeode_1_1_edged_curve_1ae91b29fbd20263e1e172299ab1e7a9c5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`edge_barycenter<doxid-classgeode_1_1_edged_curve_1ae84704d93ee7a423cb6befcd2bdc29fd>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`Segment<doxid-classgeode_1_1_segment>`<dimension> :target:`segment<doxid-classgeode_1_1_edged_curve_1aa2a1f1c337af06e5ce035dca2828f1e1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
+		TextureManager1D :target:`texture_manager<doxid-classgeode_1_1_edged_curve_1a92ecef7f24579ec68ae26993e5f47470>`() const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_edged_curve_1af61e77f36c3fb74706fb75bf2e76de77>`() const;
+		static std::unique_ptr<EdgedCurve<dimension>> :target:`create<doxid-classgeode_1_1_edged_curve_1a3f3c61d911156a0d21ced730d2dc5c75>`();
+		static std::unique_ptr<EdgedCurve<dimension>> :target:`create<doxid-classgeode_1_1_edged_curve_1a7b9e9ef66eceee00f4e7cb6845297bd2>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
+		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name_static<doxid-classgeode_1_1_edged_curve_1a7b23545513e1eaf78e6afa10a942d9c1>`();
 	};
 
 	// direct descendants

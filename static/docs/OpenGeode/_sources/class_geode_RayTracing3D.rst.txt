@@ -35,5 +35,5 @@ class geode::RayTracing3D
 		absl::optional<:ref:`PolygonDistance<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance>`> :target:`closest_polygon<doxid-classgeode_1_1_ray_tracing3_d_1a7eec1a682dd045f0f67999955400f97e>`() const;
 		absl::optional<absl::FixedArray<:ref:`PolygonDistance<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance>`>> :target:`closest_polygons<doxid-classgeode_1_1_ray_tracing3_d_1a655cd7c64d68f108b0c83bcc8a45fe29>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` size) const;
 		std::vector<:ref:`PolygonDistance<doxid-structgeode_1_1_ray_tracing3_d_1_1_polygon_distance>`> :target:`all_intersections<doxid-classgeode_1_1_ray_tracing3_d_1af1069e9c5277e8760ca700bcef74f956>`() const;
-		void :target:`operator ()<doxid-classgeode_1_1_ray_tracing3_d_1a6faefb2b6e03a48191229e2de63c7b0d>` (:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id);
+		bool :target:`operator ()<doxid-classgeode_1_1_ray_tracing3_d_1af0bd033723d07cd6c700272dcc951148>` (:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id);
 	};

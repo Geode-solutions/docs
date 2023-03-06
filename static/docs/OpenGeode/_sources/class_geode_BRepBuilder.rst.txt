@@ -22,7 +22,11 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 	    public :ref:`geode::BlocksBuilder<doxid-classgeode_1_1_blocks_builder>`,
 	    public :ref:`geode::ModelBoundariesBuilder<doxid-classgeode_1_1_model_boundaries_builder>`,
 	    public :ref:`geode::TopologyBuilder<doxid-classgeode_1_1_topology_builder>`,
-	    public :ref:`geode::AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`,
+	    public CornersBuilder3D,
+	    public LinesBuilder3D,
+	    public SurfacesBuilder3D,
+	    public BlocksBuilder3D,
+	    public ModelBoundariesBuilder3D,
 	    public :ref:`geode::IdentifierBuilder<doxid-classgeode_1_1_identifier_builder>`
 	{
 	public:

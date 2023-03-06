@@ -21,7 +21,10 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 	    public :ref:`geode::SurfacesBuilder<doxid-classgeode_1_1_surfaces_builder>`,
 	    public :ref:`geode::ModelBoundariesBuilder<doxid-classgeode_1_1_model_boundaries_builder>`,
 	    public :ref:`geode::TopologyBuilder<doxid-classgeode_1_1_topology_builder>`,
-	    public :ref:`geode::AddComponentsBuilders<doxid-classgeode_1_1_add_components_builders>`,
+	    public CornersBuilder2D,
+	    public LinesBuilder2D,
+	    public SurfacesBuilder2D,
+	    public ModelBoundariesBuilder2D,
 	    public :ref:`geode::IdentifierBuilder<doxid-classgeode_1_1_identifier_builder>`
 	{
 	public:

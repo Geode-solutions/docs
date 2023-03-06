@@ -15,17 +15,17 @@ template class geode::detail::CutAlongInternalLines
 
 	#include <cut_along_internal_lines.h>
 	
-	template <typename Model, typename ModelBuilder, index_t dimension>
+	template <typename Model>
 	class CutAlongInternalLines
 	{
 	public:
 		// construction
 	
-		:target:`CutAlongInternalLines<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1aad9244b24c3cef71c7eafdfa35c78ba3>`(Model& model);
-		:target:`CutAlongInternalLines<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1a636f3d280c82e0591f5d994ccf508d1a>`(const Model& model, ModelBuilder& builder);
+		:target:`CutAlongInternalLines<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1ac99c1640f49218ef183071ec2f1f04cc>`(Model& model);
+		:target:`CutAlongInternalLines<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1a546404eb22be38343e4296f1c5d4c94f>`(const Model& model, typename Model::Builder& builder);
 
 		// methods
 	
-		std::vector<std::pair<:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`, :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`>> :target:`cut_all_surfaces<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1ab714095f64c583e1b92ae97eb138e169>`();
-		std::vector<std::pair<:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`, :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`>> :target:`cut_surface<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1a898c277c2e1af661d7f46966184105d9>`(const :ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& surface);
+		std::vector<std::pair<:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`, :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`>> :target:`cut_all_surfaces<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1a60547ca1a9b3c81b426af15f597a20e9>`();
+		std::vector<std::pair<:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`, :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`>> :target:`cut_surface<doxid-classgeode_1_1detail_1_1_cut_along_internal_lines_1a55f2105c070faef05bdf79515f468fd6>`(const :ref:`Surface<doxid-classgeode_1_1_surface>`<Model::dim>& surface);
 	};

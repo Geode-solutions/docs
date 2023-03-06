@@ -165,6 +165,7 @@
     <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Computes the intersections between a given box and the all element boxes.</p>
+<p>The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.</p>
 <p>the operator define what to do with the box <code class="docutils literal notranslate"><span class="pre">cur_element_box</span></code> if it is intersected by the <code class="docutils literal notranslate"><span class="pre">box</span></code>.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -180,7 +181,7 @@
 <td><p>The functor to run when an element box intersects <code class="docutils literal notranslate"><span class="pre">box</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>EvalIntersection</p></td>
-<td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;</p></td>
+<td><p>this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;</p></td>
 </tr>
 </tbody>
 </table>
@@ -189,6 +190,7 @@
 <p>Computes the self intersections of the element boxes.</p>
 <p>cur_element_box1 and cur_element_box2 are the element box indices that intersect.</p>
 <p>the operator defines what to do when two boxes of the tree (<code class="docutils literal notranslate"><span class="pre">cur_element_box1</span></code> and <code class="docutils literal notranslate"><span class="pre">cur_element_box2</span></code>) intersect each other (for example: test real intersection between each element in boxes and store the result.)</p>
+<p>The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -200,7 +202,7 @@
 <td><p>The functor to run when two boxes intersect</p></td>
 </tr>
 <tr class="row-even"><td><p>EvalIntersection</p></td>
-<td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box1, index_t cur_element_box2 ) ;</p></td>
+<td><p>this functor should have an operator() defined like this: bool operator()( index_t cur_element_box1, index_t cur_element_box2 );</p></td>
 </tr>
 </tbody>
 </table>
@@ -211,6 +213,7 @@
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Computes all the intersections of the element boxes between this tree and another one.</p>
 <p>cur_element_box1 and cur_element_box2 are the element box indices that intersect in the current tree and in the other tree.</p>
+<p>The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -222,7 +225,7 @@
 <td><p>The functor to run when two boxes intersect</p></td>
 </tr>
 <tr class="row-even"><td><p>EvalIntersection</p></td>
-<td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box1, index_t cur_element_box2 ) ;</p></td>
+<td><p>this functor should have an operator() defined like this: bool operator()( index_t cur_element_box1, index_t cur_element_box2 );</p></td>
 </tr>
 </tbody>
 </table>
@@ -233,6 +236,7 @@
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Computes the intersections between a given ray and all element boxes.</p>
 <p>the operator define what to do with the box <code class="docutils literal notranslate"><span class="pre">cur_element_box</span></code> if it is intersected by the <code class="docutils literal notranslate"><span class="pre">ray</span></code>.</p>
+<p>The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -247,7 +251,7 @@
 <td><p>The functor to run when a box is intersected by the ray.</p></td>
 </tr>
 <tr class="row-odd"><td><p>EvalIntersection</p></td>
-<td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;</p></td>
+<td><p>this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;</p></td>
 </tr>
 </tbody>
 </table>
@@ -258,6 +262,7 @@
     <span class="p">)</span> <span class="k">const</span></pre>
 <p>Computes the intersections between a given infinite line and all element boxes.</p>
 <p>the operator define what to do with the box <code class="docutils literal notranslate"><span class="pre">cur_element_box</span></code> if it is intersected by the <code class="docutils literal notranslate"><span class="pre">line</span></code>.</p>
+<p>The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -272,7 +277,7 @@
 <td><p>The functor to run when a box is intersected by the line.</p></td>
 </tr>
 <tr class="row-odd"><td><p>EvalIntersection</p></td>
-<td><p>this functor should have an operator() defined like this: void operator()( index_t cur_element_box ) ;</p></td>
+<td><p>this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;</p></td>
 </tr>
 </tbody>
 </table>

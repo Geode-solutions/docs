@@ -10,7 +10,6 @@ namespace bitsery::traits
 	struct_bitsery_traits_ContainerTraits.rst
 	struct_bitsery_traits_ContainerTraits-2.rst
 	struct_bitsery_traits_ExtensionTraits.rst
-	struct_bitsery_traits_ExtensionTraits-2.rst
 
 
 
@@ -28,9 +27,6 @@ namespace bitsery::traits
 
 	template <typename T, size_t N>
 	struct :ref:`ContainerTraits<absl::InlinedVector<T, N>><doxid-structbitsery_1_1traits_1_1_container_traits_3_01absl_1_1_inlined_vector_3_01_t_00_01_n_01_4_01_4>`;
-
-	template <typename Archive, typename T>
-	struct :ref:`ExtensionTraits<geode::DefaultGrowable<Archive, T>, T><doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_default_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4>`;
 
 	template <typename Archive, typename T>
 	struct :ref:`ExtensionTraits<geode::Growable<Archive, T>, T><doxid-structbitsery_1_1traits_1_1_extension_traits_3_01geode_1_1_growable_3_01_archive_00_01_t_01_4_00_01_t_01_4>`;

@@ -61,7 +61,7 @@ AABB tree structure implementation The tree is store in s single vector followin
 			) const;
 	
 		template <typename ACTION>
-		void :target:`bbox_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a01c0ec594996e95e61e16b731e3329be>`(
+		bool :target:`bbox_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a571e75a15cca084c3401e6bd05dfb645>`(
 			const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& box,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,
@@ -70,7 +70,7 @@ AABB tree structure implementation The tree is store in s single vector followin
 			) const;
 	
 		template <typename ACTION>
-		void :target:`self_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a48b0cabc72837f0672ec1cc2462ed0c6>`(
+		bool :target:`self_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a8b2979d4fda2164a41507f2b46ef90b4>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index1,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin1,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end1,
@@ -81,7 +81,7 @@ AABB tree structure implementation The tree is store in s single vector followin
 			) const;
 	
 		template <typename ACTION>
-		void :target:`other_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a2e113823ceab581c463068468b231349>`(
+		bool :target:`other_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1ae721ef3d2dc389f3954685a12c075c22>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index1,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin1,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end1,
@@ -93,7 +93,7 @@ AABB tree structure implementation The tree is store in s single vector followin
 			) const;
 	
 		template <typename Line, typename ACTION>
-		void :target:`line_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a171d0d348931883c997a966dd2cea220>`(
+		bool :target:`line_intersect_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a908c5f87fb9d0910f0fcc59bea806a10>`(
 			const :ref:`Line<doxid-classgeode_1_1_line>`& line,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,

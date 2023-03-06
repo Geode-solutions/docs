@@ -20,7 +20,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="namespace geode::detail" href="namespace_geode_detail.html" />
-    <link rel="prev" title="template struct bitsery::traits::ExtensionTraits&lt;geode::Growable&lt;Archive, T&gt;, T&gt;" href="struct_bitsery_traits_ExtensionTraits-2.html" />
+    <link rel="prev" title="template struct bitsery::traits::ExtensionTraits&lt;geode::Growable&lt;Archive, T&gt;, T&gt;" href="struct_bitsery_traits_ExtensionTraits.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -71,11 +71,9 @@
 <span class="k">typedef</span> <a class="reference internal" href="enum_geode_Side.html#doxid-namespacegeode-1a0805566e7d9eb8e31ef1d932837fdb1b"><span class="std std-ref">Side</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9aab5f18b488155fab8272238a18ee8d"><span></span><span class="n">Sign</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><a class="reference internal" href="enum_geode_Position.html#doxid-namespacegeode-1a316ec3486ec794c86021f0fea71f54a7"><span class="std std-ref">Position</span></a><span></span><span class="p">,</span> <a class="reference internal" href="enum_geode_Position.html#doxid-namespacegeode-1a316ec3486ec794c86021f0fea71f54a7"><span class="std std-ref">Position</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad08f71e1c9db568dd62df0bf066813b1"><span></span><span class="n">SegmentSegmentIntersection</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><a class="reference internal" href="enum_geode_Position.html#doxid-namespacegeode-1a316ec3486ec794c86021f0fea71f54a7"><span class="std std-ref">Position</span></a><span></span><span class="p">,</span> <a class="reference internal" href="enum_geode_Position.html#doxid-namespacegeode-1a316ec3486ec794c86021f0fea71f54a7"><span class="std std-ref">Position</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acbc58086feed61355d4235a09e6e6b80"><span></span><span class="n">SegmentTriangleIntersection</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="class_geode_Factory.html#doxid-classgeode-1-1-factory"><span class="std std-ref">Factory</span></a><span></span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_RasterImageInput.html#doxid-classgeode-1-1-raster-image-input"><span class="std std-ref">RasterImageInput</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a58c047148fb27d8472554cabf0a2c155"><span></span><span class="n">RasterImageInputFactory</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="class_geode_Factory.html#doxid-classgeode-1-1-factory"><span class="std std-ref">Factory</span></a><span></span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_RasterImageOutput.html#doxid-classgeode-1-1-raster-image-output"><span class="std std-ref">RasterImageOutput</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0e6ff47fb303843648ee5dba841e972e"><span></span><span class="n">RasterImageOutputFactory</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_EdgeVertex.html#doxid-structgeode-1-1-edge-vertex"><span class="std std-ref">EdgeVertex</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aab3c9dc52d762219dcc9137475590210"><span></span><span class="n">EdgesAroundVertex</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aac3d6c58a0093f05712734c7f3365eb2"><span></span><span class="n">GridCellIndices</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e"><span></span><span class="n">GridVertexIndices</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e"><span class="std std-ref">GridVertexIndices</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a54586595e29e2768b3eb1084ace9afa8"><span></span><span class="n">GridCellVertices</span></span><span></span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1aac3d6c58a0093f05712734c7f3365eb2"><span class="std std-ref">GridCellIndices</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0403bdf67bf85805094b6e99bb52b9bd"><span></span><span class="n">GridCellsAroundVertex</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">NamedType</span></a><span></span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="struct_geode_MeshImplTag.html#doxid-structgeode-1-1-mesh-impl-tag"><span class="std std-ref">MeshImplTag</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="p">;</span>
 <span class="k">typedef</span> <a class="reference internal" href="class_geode_NamedType.html#doxid-classgeode-1-1-named-type"><span class="std std-ref">NamedType</span></a><span></span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="struct_geode_MeshTypeTag.html#doxid-structgeode-1-1-mesh-type-tag"><span class="std std-ref">MeshTypeTag</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a4a0dbbac82ed73238f90bb9b2e51db53"><span class="std std-ref">MeshType</span></a><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">6</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af2526de921880c6b09814cb2e81af6ff"><span></span><span class="n">PolyhedronEdgesVertices</span></span><span></span><span class="p">;</span>
@@ -226,12 +224,6 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_AABBTree.html#doxid-classgeode-1-1-a-a-b-b-tree"><span class="std std-ref">AABBTree</span></a><span></span><span class="p">;</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span><span class="p">...</span> <span class="n">Components</span><span class="o">&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_AddComponents.html#doxid-classgeode-1-1-add-components"><span class="std std-ref">AddComponents</span></a><span></span><span class="p">;</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="p">,</span> <span class="k">template</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="k">class</span><span class="p">...</span> <span class="n">Components</span><span class="o">&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_AddComponentsBuilders.html#doxid-classgeode-1-1-add-components-builders"><span class="std std-ref">AddComponentsBuilders</span></a><span></span><span class="p">;</span>
-
 <span class="k">class</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base"><span class="std std-ref">AttributeBase</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="p">;</span>
@@ -266,6 +258,9 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">ReturnType</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_CachedValue.html#doxid-classgeode-1-1-cached-value"><span class="std std-ref">CachedValue</span></a><span></span><span class="p">;</span>
 
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_CellArray.html#doxid-classgeode-1-1-cell-array"><span class="std std-ref">CellArray</span></a><span></span><span class="p">;</span>
+
 <span class="k">class</span> <a class="reference internal" href="class_geode_Circle.html#doxid-classgeode-1-1-circle"><span class="std std-ref">Circle</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -291,9 +286,6 @@
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_DecrementOperator.html#doxid-classgeode-1-1-decrement-operator"><span class="std std-ref">DecrementOperator</span></a><span></span><span class="p">;</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Archive</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_DefaultGrowable.html#doxid-classgeode-1-1-default-growable"><span class="std std-ref">DefaultGrowable</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_DistanceToEdge.html#doxid-classgeode-1-1-distance-to-edge"><span class="std std-ref">DistanceToEdge</span></a><span></span><span class="p">;</span>
@@ -326,7 +318,7 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_GenericCircle.html#doxid-classgeode-1-1-generic-circle"><span class="std std-ref">GenericCircle</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">PointType</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_GenericInfiniteLine.html#doxid-classgeode-1-1-generic-infinite-line"><span class="std std-ref">GenericInfiniteLine</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_GenericLine.html#doxid-classgeode-1-1-generic-line"><span class="std std-ref">GenericLine</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T1</span><span class="p">,</span> <span class="k">typename</span> <span class="n">T2</span> <span class="o">=</span> <span class="n">T1</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_GenericMapping.html#doxid-classgeode-1-1-generic-mapping"><span class="std std-ref">GenericMapping</span></a><span></span><span class="p">;</span>
@@ -383,7 +375,7 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_InfiniteLine.html#doxid-classgeode-1-1-infinite-line"><span class="std std-ref">InfiniteLine</span></a><span></span><span class="p">;</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Mesh</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Object</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Args</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input"><span class="std std-ref">Input</span></a><span></span><span class="p">;</span>
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_Library.html#doxid-classgeode-1-1-library"><span class="std std-ref">Library</span></a><span></span><span class="p">;</span>
@@ -466,6 +458,12 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodePolyhedralSolidBuilder.html#doxid-classgeode-1-1-open-geode-polyhedral-solid-builder"><span class="std std-ref">OpenGeodePolyhedralSolidBuilder</span></a><span></span><span class="p">;</span>
 
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeRasterImageInput.html#doxid-classgeode-1-1-open-geode-raster-image-input"><span class="std std-ref">OpenGeodeRasterImageInput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeRasterImageOutput.html#doxid-classgeode-1-1-open-geode-raster-image-output"><span class="std std-ref">OpenGeodeRasterImageOutput</span></a><span></span><span class="p">;</span>
+
 <span class="k">template</span> <span class="o">&lt;&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeRegularGrid.html#doxid-classgeode-1-1-open-geode-regular-grid-3-012-01-4"><span class="std std-ref">OpenGeodeRegularGrid&lt;2&gt;</span></a><span></span><span class="p">;</span>
 
@@ -496,7 +494,7 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeVertexSet.html#doxid-classgeode-1-1-open-geode-vertex-set"><span class="std std-ref">OpenGeodeVertexSet</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeVertexSetBuilder.html#doxid-classgeode-1-1-open-geode-vertex-set-builder"><span class="std std-ref">OpenGeodeVertexSetBuilder</span></a><span></span><span class="p">;</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Mesh</span><span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Object</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_Output.html#doxid-classgeode-1-1-output"><span class="std std-ref">Output</span></a><span></span><span class="p">;</span>
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_OwnerCircle.html#doxid-classgeode-1-1-owner-circle"><span class="std std-ref">OwnerCircle</span></a><span></span><span class="p">;</span>
@@ -571,6 +569,15 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_ProgressLoggerClient.html#doxid-classgeode-1-1-progress-logger-client"><span class="std std-ref">ProgressLoggerClient</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_ProgressLoggerManager.html#doxid-classgeode-1-1-progress-logger-manager"><span class="std std-ref">ProgressLoggerManager</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_RGBColor.html#doxid-classgeode-1-1-r-g-b-color"><span class="std std-ref">RGBColor</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RasterImageInput.html#doxid-classgeode-1-1-raster-image-input"><span class="std std-ref">RasterImageInput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RasterImageOutput.html#doxid-classgeode-1-1-raster-image-output"><span class="std std-ref">RasterImageOutput</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_Ray.html#doxid-classgeode-1-1-ray"><span class="std std-ref">Ray</span></a><span></span><span class="p">;</span>
@@ -691,6 +698,22 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_TetrahedralSolidScalarFunction.html#doxid-classgeode-1-1-tetrahedral-solid-scalar-function"><span class="std std-ref">TetrahedralSolidScalarFunction</span></a><span></span><span class="p">;</span>
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_Tetrahedron.html#doxid-classgeode-1-1-tetrahedron"><span class="std std-ref">Tetrahedron</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Texture.html#doxid-classgeode-1-1-texture-3-013-01-4"><span class="std std-ref">Texture&lt;3&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Texture-2.html#doxid-classgeode-1-1-texture-3-012-01-4"><span class="std std-ref">Texture&lt;2&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Texture-3.html#doxid-classgeode-1-1-texture-3-011-01-4"><span class="std std-ref">Texture&lt;1&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TextureManager.html#doxid-classgeode-1-1-texture-manager"><span class="std std-ref">TextureManager</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TextureStorage.html#doxid-classgeode-1-1-texture-storage"><span class="std std-ref">TextureStorage</span></a><span></span><span class="p">;</span>
+
 <span class="k">class</span> <a class="reference internal" href="class_geode_Timer.html#doxid-classgeode-1-1-timer"><span class="std std-ref">Timer</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_Topology.html#doxid-classgeode-1-1-topology"><span class="std std-ref">Topology</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_TopologyBuilder.html#doxid-classgeode-1-1-topology-builder"><span class="std std-ref">TopologyBuilder</span></a><span></span><span class="p">;</span>
@@ -718,11 +741,11 @@
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_UnzipFile.html#doxid-classgeode-1-1-unzip-file"><span class="std std-ref">UnzipFile</span></a><span></span><span class="p">;</span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_VariableAttribute.html#doxid-classgeode-1-1-variable-attribute"><span class="std std-ref">VariableAttribute</span></a><span></span><span class="p">;</span>
-
 <span class="k">template</span> <span class="o">&lt;&gt;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_VariableAttribute-2.html#doxid-classgeode-1-1-variable-attribute-3-01bool-01-4"><span class="std std-ref">VariableAttribute&lt;bool&gt;</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_VariableAttribute.html#doxid-classgeode-1-1-variable-attribute-3-01bool-01-4"><span class="std std-ref">VariableAttribute&lt;bool&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_VariableAttribute-2.html#doxid-classgeode-1-1-variable-attribute"><span class="std std-ref">VariableAttribute</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a><span></span><span class="p">;</span>
@@ -782,10 +805,12 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acc3ac2ce16a71db86a9a521219a0363f"><span></span><span class="n">IMPLICIT_ARRAY_GENERIC_ATTRIBUTE_CONVERSION</span></span><span></span><span class="p">(</span><span class="kt">double</span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">opengeode_basic_api</span> <a class="reference internal" href="#doxid-namespacegeode-1abf3517d752f9c05bbb40e02825f61243"><span class="std std-ref">register_basic_serialize_pcontext</span></a><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">opengeode_basic_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a4971b040e31d95abe4053f71d315b4d7"><span class="std std-ref">register_basic_deserialize_pcontext</span></a><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1835a571f06931f017e86baacfa25bb8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_CellArray.html#doxid-classgeode-1-1-cell-array"><span class="std std-ref">CellArray</span></a><span></span><span class="p">);</span>
 <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">opengeode_basic_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a00deaeb8544d7b897c2eeb80260c6bc6"><span></span><span class="n">filename_with_extension</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">path</span><span class="p">);</span>
 <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">opengeode_basic_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9368b64fa9978d1188bab4c3ce416fde"><span></span><span class="n">filename_without_extension</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">path</span><span class="p">);</span>
 <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">opengeode_basic_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aedd97cf95ccd0818defedbd18b3bc1cb"><span></span><span class="n">filepath_without_extension</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">path</span><span class="p">);</span>
 <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">opengeode_basic_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af1d51232824360f245712001faac916c"><span></span><span class="n">filepath_without_filename</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">path</span><span class="p">);</span>
+<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">opengeode_basic_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a63b6bffce928fd3586fb0ec9c2822c0f"><span></span><span class="n">extension_from_filename</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a243e78e6a7219c043fb30dc4a798d930"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">opengeode_basic_api</span><span class="p">,</span> <span class="n">OpenGeodeBasic</span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Container</span><span class="o">&gt;</span>
@@ -1161,7 +1186,25 @@
     <span class="p">);</span>
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4cfe0d1d3550fe989f11f72256d754ce"><span></span><span class="n">ALIAS_1D_AND_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a><span></span><span class="p">);</span>
-<span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a618a67e60c63449f834b7f8fe67808e0"><span></span><span class="n">register_geode_builder</span></span><span></span><span class="p">();</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7221b07d7845e0fa8ab92e3b9e453cf9"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">opengeode_image_api</span><span class="p">,</span> <span class="n">OpenGeodeImage</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">opengeode_image_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a367deb7cdb7cc2551c438aa9b59b4aa9"><span class="std std-ref">register_image_serialize_pcontext</span></a><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">opengeode_image_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a7deb69019ef66a654e63ac9edb5cb184"><span class="std std-ref">register_image_deserialize_pcontext</span></a><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a38f02afa40348de0a5705923e4b7c7e9"><span></span><span class="n">ALIAS_1D_AND_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae3bc924cc59e9fbd527cec1d753c3cdc"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeRasterImageInput.html#doxid-classgeode-1-1-open-geode-raster-image-input"><span class="std std-ref">OpenGeodeRasterImageInput</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa2d059a76016336122a2e10bd83b2ce8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeRasterImageOutput.html#doxid-classgeode-1-1-open-geode-raster-image-output"><span class="std std-ref">OpenGeodeRasterImageOutput</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1abb1366c0b9eae9a09bd1d1de2ff08a26"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1ab535e9534394ed33581f9e86fd72cda7"><span class="std std-ref">load_raster</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a51eb99ef6c8ca6695fa7749501893dfd"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a58c047148fb27d8472554cabf0a2c155"><span class="std std-ref">RasterImageInputFactory</span></a><span></span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <a class="reference internal" href="#doxid-namespacegeode-1a35b65f58694110b854c49460a8066e6f"><span class="std std-ref">save_raster</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">raster</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a25875b8f6532ca2e4fd9254c80be7aaf"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_EdgedCurveBuilder.html#doxid-classgeode-1-1-edged-curve-builder"><span class="std std-ref">EdgedCurveBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae7ad36948deefa4fe158f9e929cae4d5"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeEdgedCurve.html#doxid-classgeode-1-1-open-geode-edged-curve"><span class="std std-ref">OpenGeodeEdgedCurve</span></a><span></span><span class="p">);</span>
@@ -1182,6 +1225,7 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5d76de73ac3b9f41e76ba78ae062363a"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeTetrahedralSolidBuilder.html#doxid-classgeode-1-1-open-geode-tetrahedral-solid-builder"><span class="std std-ref">OpenGeodeTetrahedralSolidBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1adbd85d0226bd7cecafa7630498fe8389"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeTriangulatedSurface.html#doxid-classgeode-1-1-open-geode-triangulated-surface"><span class="std std-ref">OpenGeodeTriangulatedSurface</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5234a7b55489aa84a4f6a5f9f8429993"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeTriangulatedSurfaceBuilder.html#doxid-classgeode-1-1-open-geode-triangulated-surface-builder"><span class="std std-ref">OpenGeodeTriangulatedSurfaceBuilder</span></a><span></span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a618a67e60c63449f834b7f8fe67808e0"><span></span><span class="n">register_geode_builder</span></span><span></span><span class="p">();</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aec45feff83bfe89a3608ad215c769920"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Grid.html#doxid-classgeode-1-1-grid"><span class="std std-ref">Grid</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa9578845c3fe3e883c456631eb638991"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_GridBuilder.html#doxid-classgeode-1-1-grid-builder"><span class="std std-ref">GridBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1da5adee14f91deff17a0b855b2c8e84"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid"><span class="std std-ref">HybridSolid</span></a><span></span><span class="p">);</span>
@@ -1218,7 +1262,6 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a88ead4fd5cb58782b06304e368357135"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">opengeode_mesh_api</span><span class="p">,</span> <span class="n">OpenGeodeMesh</span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <a class="reference internal" href="#doxid-namespacegeode-1aa05925dcfcae1d0f42d06f0f9a8dfb8a"><span class="std std-ref">register_mesh_serialize_pcontext</span></a><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ad554073e01b714099ca0e253bdeee8e3"><span class="std std-ref">register_mesh_deserialize_pcontext</span></a><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">);</span>
-<span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1adce51211caa99c2211735c26faf6323e"><span></span><span class="n">register_geode_mesh</span></span><span></span><span class="p">();</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abca05657b8eb6a446c79a4e841068fcf"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_EdgedCurveBuilder.html#doxid-classgeode-1-1-edged-curve-builder"><span class="std std-ref">EdgedCurveBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a80ee0d83f9eb471e3d0a3066c343cb42"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a10bca5e5d2bdb673816feac3d71aab17"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeEdgedCurveBuilder.html#doxid-classgeode-1-1-open-geode-edged-curve-builder"><span class="std std-ref">OpenGeodeEdgedCurveBuilder</span></a><span></span><span class="p">);</span>
@@ -1237,10 +1280,8 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1a155ae4d12c72e621175834fe9f1bf5"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeTetrahedralSolid.html#doxid-classgeode-1-1-open-geode-tetrahedral-solid"><span class="std std-ref">OpenGeodeTetrahedralSolid</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a397ee7f2b69d05f9e9ab91cf0b6c391d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeTriangulatedSurfaceBuilder.html#doxid-classgeode-1-1-open-geode-triangulated-surface-builder"><span class="std std-ref">OpenGeodeTriangulatedSurfaceBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afeb3d280ffcd275ef0148dceffda7eb8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeTriangulatedSurface.html#doxid-classgeode-1-1-open-geode-triangulated-surface"><span class="std std-ref">OpenGeodeTriangulatedSurface</span></a><span></span><span class="p">);</span>
+<span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1adce51211caa99c2211735c26faf6323e"><span></span><span class="n">register_geode_mesh</span></span><span></span><span class="p">();</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a66de9cc465de1ecbe09f56cc26820b8f"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_GridBuilder.html#doxid-classgeode-1-1-grid-builder"><span class="std std-ref">GridBuilder</span></a><span></span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a49cc1447b6c8a594f43a98d2dbbf4f5f"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1aac3d6c58a0093f05712734c7f3365eb2"><span class="std std-ref">GridCellIndices</span></a><span></span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0e3742c782734c041e4bd3c61d8a7741"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a54586595e29e2768b3eb1084ace9afa8"><span class="std std-ref">GridCellVertices</span></a><span></span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8456dc1d050943a29fe06026a07c0e87"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a0403bdf67bf85805094b6e99bb52b9bd"><span class="std std-ref">GridCellsAroundVertex</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7811fa3e946852b9ee881b44a272de81"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Grid.html#doxid-classgeode-1-1-grid"><span class="std std-ref">Grid</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af4f182876ad2706cfd67cfa0a7ff23b4"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_HybridSolidBuilder.html#doxid-classgeode-1-1-hybrid-solid-builder"><span class="std std-ref">HybridSolidBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad1e677b7ca1b4a9e3461a5ab070e8b42"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid"><span class="std std-ref">HybridSolid</span></a><span></span><span class="p">);</span>
@@ -1259,6 +1300,18 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7986437714612066a303580285ecf217"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae9dc6097b7f8cfa25fc265176e3c5aa9"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TetrahedralSolidBuilder.html#doxid-classgeode-1-1-tetrahedral-solid-builder"><span class="std std-ref">TetrahedralSolidBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a80b5a064401aa01835668d57032444e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a512a6325b48a1526f847b55d224e2694"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Texture</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8ddf51938fbf36783c6672e59751aff2"><span></span><span class="n">ALIAS_1D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa157d4463b5f2cc9b54bc7f180cfb10d"><span></span><span class="n">ALIAS_1D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a68b08a987200f0e95317eaa263e9705c"><span></span><span class="n">ALIAS_1D</span></span><span></span><span class="p">(</span><span class="n">Texture</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1abca1b6caa6f0aa782d8d2ca55fc5d5b0"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a61a98457ff3a3bf830d1d88cf5f6e5ee"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Texture</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a033611082e1f1a09d2f3bc48ea5b85bf"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a88337f7d6355d969c361defe0e440c31"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Texture</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a796e81798849ebd274f1e1644e7bbaf4"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TextureStorage.html#doxid-classgeode-1-1-texture-storage"><span class="std std-ref">TextureStorage</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9e57f611df52ee37980eedd9dc0880c3"><span></span><span class="n">ALIAS_1D_AND_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TextureManager.html#doxid-classgeode-1-1-texture-manager"><span class="std std-ref">TextureManager</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1acf0ae1071cc598398f5a6bc0c56fc0b5"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TextureManager.html#doxid-classgeode-1-1-texture-manager"><span class="std std-ref">TextureManager</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5774550809e7c4bfda4c9f17049d168d"><span></span><span class="n">ALIAS_1D_AND_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TextureStorage.html#doxid-classgeode-1-1-texture-storage"><span class="std std-ref">TextureStorage</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4b6e0eef43419c522c8afdef30e0c045"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TriangulatedSurfaceBuilder.html#doxid-classgeode-1-1-triangulated-surface-builder"><span class="std std-ref">TriangulatedSurfaceBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac5ecef06abef60896357a8eb77586520"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">TriangulatedSurface</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0895a17483512f1e7888d150089db0e2"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_AABBTree.html#doxid-classgeode-1-1-a-a-b-b-tree"><span class="std std-ref">AABBTree</span></a><span></span><span class="p">);</span>
@@ -1283,9 +1336,10 @@
     <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_remove</span>
     <span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a87c5224d3f946cfc5d9c5065e71a8a1a"><span></span><span class="n">convert_edged_curve2d_into_3d</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a64b64534ac394b5a5e1df2f2ef230852"><span></span><span class="n">convert_edged_curve2d_into_3d</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">EdgedCurve2D</span><span class="o">&amp;</span> <span class="n">curve2d</span><span class="p">,</span>
-    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span>
+    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">axis_coordinate</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -1296,9 +1350,10 @@
     <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_remove</span>
     <span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aaea8596332fd0deeb3f87519d961a2dd"><span></span><span class="n">convert_point_set2d_into_3d</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae49e2e52deb888ca89b07ffde9238ac5"><span></span><span class="n">convert_point_set2d_into_3d</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">PointSet2D</span><span class="o">&amp;</span> <span class="n">point_set2d</span><span class="p">,</span>
-    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span>
+    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">axis_coordinate</span>
     <span class="p">);</span>
 
 <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TetrahedralSolid3D</span><span class="o">&gt;&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad88abdc0180700dd94d4dc05d56f4149"><span></span><span class="n">convert_solid_mesh_into_tetrahedral_solid</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">);</span>
@@ -1319,9 +1374,10 @@
     <a class="reference internal" href="class_geode_SurfaceMeshBuilder.html#doxid-classgeode-1-1-surface-mesh-builder"><span class="std std-ref">SurfaceMeshBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span>
     <span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SurfaceMesh3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a56918db2e4c39715e296df3f1719e3bc"><span></span><span class="n">convert_surface_mesh2d_into_3d</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SurfaceMesh3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a06cd5f1843dde715587a83d39bcfae7e"><span></span><span class="n">convert_surface_mesh2d_into_3d</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface2d</span><span class="p">,</span>
-    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span>
+    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">axis_coordinate</span>
     <span class="p">);</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SurfaceMesh2D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8a62b99144d9a5f2f99fb4f611c8a889"><span></span><span class="n">convert_surface_mesh3d_into_2d</span></span><span></span><span class="p">(</span>
@@ -1329,9 +1385,10 @@
     <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_remove</span>
     <span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a09c44c3f7154784ab7f08a9746c4ef40"><span></span><span class="n">convert_polygonal_surface2d_into_3d</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad5f437dad2b4100ecf44f4f897085caf"><span></span><span class="n">convert_polygonal_surface2d_into_3d</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">PolygonalSurface2D</span><span class="o">&amp;</span> <span class="n">surface2d</span><span class="p">,</span>
-    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span>
+    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">axis_coordinate</span>
     <span class="p">);</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface2D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a891d5b78dde887b3c43e33d3430dd8a8"><span></span><span class="n">convert_polygonal_surface3d_into_2d</span></span><span></span><span class="p">(</span>
@@ -1339,9 +1396,10 @@
     <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_remove</span>
     <span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TriangulatedSurface3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae9e66a5c1a0dad20e8bcfafd712eb125"><span></span><span class="n">convert_triangulated_surface2d_into_3d</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TriangulatedSurface3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa63cf472fcf87d973694e9f9d99593b2"><span></span><span class="n">convert_triangulated_surface2d_into_3d</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">TriangulatedSurface2D</span><span class="o">&amp;</span> <span class="n">surface2d</span><span class="p">,</span>
-    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span>
+    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">axis_coordinate</span>
     <span class="p">);</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TriangulatedSurface2D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac06058e4a6318dc0efec26defe7b716f"><span></span><span class="n">convert_triangulated_surface3d_into_2d</span></span><span></span><span class="p">(</span>
@@ -1350,15 +1408,12 @@
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a42bbac6585bd93d1b5efd8d3a7df2e89"><span></span><span class="n">merge_surface_mesh</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">);</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aedc8b3a2039223306e3633e948791415"><span></span><span class="n">merge_surface_meshes</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;&gt;</span> <span class="n">surfaces</span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afdb0662672f33a008eac14437a46f0b6"><span></span><span class="n">merge_surface_meshes</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="class_geode_SurfaceMesh.html#doxid-classgeode-1-1-surface-mesh"><span class="std std-ref">SurfaceMesh</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;&gt;&amp;</span> <span class="n">surfaces</span><span class="p">);</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VariableAttribute.html#doxid-classgeode-1-1-variable-attribute"><span class="std std-ref">VariableAttribute</span></a><span></span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1aa0f1f2b8dc7bbf18aa226b6a4483bd00"><span class="std std-ref">euclidean_distance_transform</span></a><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VariableAttribute-2.html#doxid-classgeode-1-1-variable-attribute"><span class="std std-ref">VariableAttribute</span></a><span></span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a144157c044209926b01fb3da24ea3aec"><span class="std std-ref">euclidean_distance_transform</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">grid</span><span class="p">,</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1aac3d6c58a0093f05712734c7f3365eb2"><span class="std std-ref">GridCellIndices</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">grid_cell_ids</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="k">typename</span> <a class="reference internal" href="class_geode_Grid.html#doxid-classgeode-1-1-grid"><span class="std std-ref">Grid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">CellIndices</span><span class="o">&gt;</span> <span class="n">grid_cell_ids</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">distance_map_name</span>
     <span class="p">);</span>
 
@@ -1395,19 +1450,19 @@
 <a class="reference internal" href="class_geode_NNSearch.html#doxid-classgeode-1-1-n-n-search"><span class="std std-ref">NNSearch</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abeee5ff5c5a7319611e59fe60ff6f740"><span></span><span class="n">create_nn_search</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Mesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1aac3d6c58a0093f05712734c7f3365eb2"><span class="std std-ref">GridCellIndices</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae7018f2c9fa69cbb05d9ea118dfcc50b"><span></span><span class="n">rasterize_segment</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">typename</span> <a class="reference internal" href="class_geode_Grid.html#doxid-classgeode-1-1-grid"><span class="std std-ref">Grid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">CellIndices</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a583a6f173eda68c83c61f4e90ab0423f"><span></span><span class="n">rasterize_segment</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">grid</span><span class="p">,</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Segment.html#doxid-classgeode-1-1-segment"><span class="std std-ref">Segment</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1aac3d6c58a0093f05712734c7f3365eb2"><span class="std std-ref">GridCellIndices</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2b2e666fcae22d4792c740ffb6b0c1b5"><span></span><span class="n">conservative_rasterize_segment</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">typename</span> <a class="reference internal" href="class_geode_Grid.html#doxid-classgeode-1-1-grid"><span class="std std-ref">Grid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">CellIndices</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2624e26915bc283743138f3c110d0c83"><span></span><span class="n">conservative_rasterize_segment</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">grid</span><span class="p">,</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Segment.html#doxid-classgeode-1-1-segment"><span class="std std-ref">Segment</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span>
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1aac3d6c58a0093f05712734c7f3365eb2"><span class="std std-ref">GridCellIndices</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a46432925e3e78e4bf041790a33c12bfc"><span></span><span class="n">rasterize_triangle</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="k">typename</span> <a class="reference internal" href="class_geode_Grid.html#doxid-classgeode-1-1-grid"><span class="std std-ref">Grid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">CellIndices</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3d8366ce0bbc6b321bdef04c089e988a"><span></span><span class="n">rasterize_triangle</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">grid</span><span class="p">,</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Triangle.html#doxid-classgeode-1-1-triangle"><span class="std std-ref">Triangle</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">triangle</span>
     <span class="p">);</span>
@@ -1429,6 +1484,22 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae9e0d03be26ef934e9a89f9b9c00f2d7"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TetrahedralSolidScalarFunction.html#doxid-classgeode-1-1-tetrahedral-solid-scalar-function"><span class="std std-ref">TetrahedralSolidScalarFunction</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aef902bbda79f83001a5929441d727794"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TriangulatedSurfacePointFunction.html#doxid-classgeode-1-1-triangulated-surface-point-function"><span class="std std-ref">TriangulatedSurfacePointFunction</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad2eae98e11416498c4ba21d2db0c9030"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TriangulatedSurfaceScalarFunction.html#doxid-classgeode-1-1-triangulated-surface-scalar-function"><span class="std std-ref">TriangulatedSurfaceScalarFunction</span></a><span></span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1aa7842b652ce91298cb5af68de7348148"><span class="std std-ref">load_edged_curve</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1ae0ac6f74f5a4eca322a13409eed48561"><span class="std std-ref">load_edged_curve</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <a class="reference internal" href="#doxid-namespacegeode-1aba7ac11907d0a58ea7fc245965cd8b63"><span class="std std-ref">save_edged_curve</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">edged_curve</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2b924df3f51c8cba73c920c33e613352"><span></span><span class="n">BITSERY_INPUT_MESH_DIMENSION</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa9bc004f80438dfdb47b55329b548805"><span></span><span class="n">BITSERY_OUTPUT_MESH_DIMENSION</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6b8dac0b909b7c5eb4db841a6117bd0f"><span></span><span class="n">BITSERY_INPUT_MESH_NO_DIMENSION</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="p">);</span>
@@ -1451,23 +1522,6 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa8fd1925635f74f12031ea8e0d3eb98e"><span></span><span class="n">BITSERY_OUTPUT_MESH_NO_DIMENSION</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="p">);</span>
 <span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a949b3510b269f4536e069d3dc5f90be5"><span></span><span class="n">register_geode_mesh_input</span></span><span></span><span class="p">();</span>
 <span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a073be32b66edf4bb62cf111b7833b67c"><span></span><span class="n">register_geode_mesh_output</span></span><span></span><span class="p">();</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1aa7842b652ce91298cb5af68de7348148"><span class="std std-ref">load_edged_curve</span></a><span></span><span class="p">(</span>
-    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
-    <span class="p">);</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1ae0ac6f74f5a4eca322a13409eed48561"><span class="std std-ref">load_edged_curve</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
-
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a94018066b3cdeb1ed0fac77be9069602"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a3132f2678784f6cc58a8ba04bde4f294"><span class="std std-ref">EdgedCurveInputFactory</span></a><span></span><span class="p">);</span>
-
-<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="kt">void</span> <a class="reference internal" href="#doxid-namespacegeode-1aba7ac11907d0a58ea7fc245965cd8b63"><span class="std std-ref">save_edged_curve</span></a><span></span><span class="p">(</span>
-    <span class="k">const</span> <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">edged_curve</span><span class="p">,</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
-    <span class="p">);</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <a class="reference internal" href="#doxid-namespacegeode-1aade7384ff1a5237cd20ad03e7bb36db3"><span class="std std-ref">load_graph</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
@@ -1497,8 +1551,6 @@
     <span class="k">const</span> <a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid"><span class="std std-ref">HybridSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">hybrid_solid</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">);</span>
-
-<span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8b7fdb6caef0b4f201c81f17455f299d"><span></span><span class="n">extension_from_filename</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1aa4ae84c454aa519617fcae8cc910a892"><span class="std std-ref">load_point_set</span></a><span></span><span class="p">(</span>
@@ -1754,9 +1806,10 @@
     <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_remove</span>
     <span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="p">,</span> <a class="reference internal" href="#doxid-namespacegeode-1afc1226ecaedc88b75713a97ea1b34ce5"><span class="std std-ref">ModelCopyMapping</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a928178fac168a9f86e82aa9e8333538f"><span></span><span class="n">convert_section_into_brep</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="p">,</span> <a class="reference internal" href="#doxid-namespacegeode-1afc1226ecaedc88b75713a97ea1b34ce5"><span class="std std-ref">ModelCopyMapping</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae9f8bf71133a7edb0e7fe6c25f88ddc8"><span></span><span class="n">convert_section_into_brep</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
-    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span>
+    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">axis_to_add</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">axis_coordinate</span>
     <span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a36c5dede7d04df0ccda26ff36e23ddab"><span></span><span class="n">convert_surface_meshes_into_triangulated_surfaces</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
@@ -2542,7 +2595,71 @@
     <a class="reference internal" href="#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="n">axis</span>
     <span class="p">)</span></pre>
 <p>Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa05925dcfcae1d0f42d06f0f9a8dfb8a"><span id="index-67"></span><span></span><span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="n">register_mesh_serialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a367deb7cdb7cc2551c438aa9b59b4aa9"><span id="index-67"></span><span></span><span class="kt">void</span> <span class="n">opengeode_image_api</span> <span class="n">register_image_serialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
+<p>Register all the information needed by Bitsery to serialize the objects in the image library. The context can be used only once per archive.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>context</p></td>
+<td><p>The context where to register this information.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7deb69019ef66a654e63ac9edb5cb184"><span id="index-68"></span><span></span><span class="kt">void</span> <span class="n">opengeode_image_api</span> <span class="n">register_image_deserialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
+<p>Register all the information needed by Bitsery to deserialize the objects in the image library. The context can be used only once per archive.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>context</p></td>
+<td><p>The context where to register this information.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab535e9534394ed33581f9e86fd72cda7"><span id="index-69"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">load_raster</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
+<p>API function for loading an <a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>filename</p></td>
+<td><p>Path to the file to load.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a35b65f58694110b854c49460a8066e6f"><span id="index-70"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">save_raster</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">raster</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">)</span></pre>
+<p>API function for saving a <a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a>. The adequate saver is called depending on the given filename extension.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>raster</p></td>
+<td><p><a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a> to save.</p></td>
+</tr>
+<tr class="row-even"><td><p>filename</p></td>
+<td><p>Path to the file where save the <a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa05925dcfcae1d0f42d06f0f9a8dfb8a"><span id="index-71"></span><span></span><span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="n">register_mesh_serialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
 <p>Register all the information needed by Bitsery to serialize the objects in the mesh library. The context can be used only once per archive.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -2556,7 +2673,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ad554073e01b714099ca0e253bdeee8e3"><span id="index-68"></span><span></span><span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="n">register_mesh_deserialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ad554073e01b714099ca0e253bdeee8e3"><span id="index-72"></span><span></span><span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="n">register_mesh_deserialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
 <p>Register all the information needed by Bitsery to deserialize the objects in the mesh library. The context can be used only once per archive.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -2570,10 +2687,10 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa0f1f2b8dc7bbf18aa226b6a4483bd00"><span id="index-69"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VariableAttribute.html#doxid-classgeode-1-1-variable-attribute"><span class="std std-ref">VariableAttribute</span></a><span></span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span> <span class="n">euclidean_distance_transform</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a144157c044209926b01fb3da24ea3aec"><span id="index-73"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VariableAttribute-2.html#doxid-classgeode-1-1-variable-attribute"><span class="std std-ref">VariableAttribute</span></a><span></span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span> <span class="n">euclidean_distance_transform</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">grid</span><span class="p">,</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1aac3d6c58a0093f05712734c7f3365eb2"><span class="std std-ref">GridCellIndices</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">grid_cell_ids</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="k">typename</span> <a class="reference internal" href="class_geode_Grid.html#doxid-classgeode-1-1-grid"><span class="std std-ref">Grid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">CellIndices</span><span class="o">&gt;</span> <span class="n">grid_cell_ids</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">distance_map_name</span>
     <span class="p">)</span></pre>
 <p>API function for creating and computing the euclidean distance map from raterized objects. It computes the exact euclidean distance map.</p>
@@ -2606,7 +2723,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>the created attribute</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa7842b652ce91298cb5af68de7348148"><span id="index-70"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa7842b652ce91298cb5af68de7348148"><span id="index-74"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_edged_curve</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2627,7 +2744,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae0ac6f74f5a4eca322a13409eed48561"><span id="index-71"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae0ac6f74f5a4eca322a13409eed48561"><span id="index-75"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_edged_curve</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
@@ -2642,7 +2759,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aba7ac11907d0a58ea7fc245965cd8b63"><span id="index-72"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aba7ac11907d0a58ea7fc245965cd8b63"><span id="index-76"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">save_edged_curve</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">edged_curve</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2663,7 +2780,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aade7384ff1a5237cd20ad03e7bb36db3"><span id="index-73"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="n">load_graph</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aade7384ff1a5237cd20ad03e7bb36db3"><span id="index-77"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="n">load_graph</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">)</span></pre>
@@ -2683,7 +2800,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a90ea541741fdf3169e5e67c31b51648f"><span id="index-74"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="n">load_graph</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a90ea541741fdf3169e5e67c31b51648f"><span id="index-78"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="n">load_graph</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -2697,7 +2814,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7bfdf4be37e5f3d64db9c16d8a4c5a23"><span id="index-75"></span><span></span><span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="n">save_graph</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7bfdf4be37e5f3d64db9c16d8a4c5a23"><span id="index-79"></span><span></span><span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="n">save_graph</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Graph.html#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a><span></span><span class="o">&amp;</span> <span class="n">graph</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">)</span></pre>
@@ -2717,7 +2834,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a88d3b49d086cb5cbff847101dbbd98c1"><span id="index-76"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a88d3b49d086cb5cbff847101dbbd98c1"><span id="index-80"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid"><span class="std std-ref">HybridSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_hybrid_solid</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2738,7 +2855,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6be4f5843d0a729a7385d523471ed6b9"><span id="index-77"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a6be4f5843d0a729a7385d523471ed6b9"><span id="index-81"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid"><span class="std std-ref">HybridSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_hybrid_solid</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid"><span class="std std-ref">HybridSolid</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
@@ -2753,7 +2870,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af75d6f3d6e6dae0feef877910944ea74"><span id="index-78"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af75d6f3d6e6dae0feef877910944ea74"><span id="index-82"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">save_hybrid_solid</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_HybridSolid.html#doxid-classgeode-1-1-hybrid-solid"><span class="std std-ref">HybridSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">hybrid_solid</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2774,7 +2891,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa4ae84c454aa519617fcae8cc910a892"><span id="index-79"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa4ae84c454aa519617fcae8cc910a892"><span id="index-83"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_point_set</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2795,7 +2912,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a896fe5023e9476ab90920a265bd9ad23"><span id="index-80"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a896fe5023e9476ab90920a265bd9ad23"><span id="index-84"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_point_set</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
@@ -2810,7 +2927,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1abfd3fc09c7d0b0ad37241beac4fe7eb5"><span id="index-81"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1abfd3fc09c7d0b0ad37241beac4fe7eb5"><span id="index-85"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">save_point_set</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point_set</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2831,7 +2948,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a9f525be3a6117cea2ae87c4bfa59ca38"><span id="index-82"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a9f525be3a6117cea2ae87c4bfa59ca38"><span id="index-86"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_polygonal_surface</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2852,7 +2969,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ad9542d68d1e1ad3db59aad9b478b1e06"><span id="index-83"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ad9542d68d1e1ad3db59aad9b478b1e06"><span id="index-87"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_polygonal_surface</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
@@ -2867,7 +2984,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af4ba3331fa0355d15f855fc1fd77b737"><span id="index-84"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af4ba3331fa0355d15f855fc1fd77b737"><span id="index-88"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">save_polygonal_surface</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_PolygonalSurface.html#doxid-classgeode-1-1-polygonal-surface"><span class="std std-ref">PolygonalSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">polygonal_surface</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2888,7 +3005,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a176fda392f50036143ecdeb1bfa12d16"><span id="index-85"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a176fda392f50036143ecdeb1bfa12d16"><span id="index-89"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolyhedralSolid.html#doxid-classgeode-1-1-polyhedral-solid"><span class="std std-ref">PolyhedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_polyhedral_solid</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2909,7 +3026,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a82056bc821eca46dfd66810f500eebdb"><span id="index-86"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a82056bc821eca46dfd66810f500eebdb"><span id="index-90"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PolyhedralSolid.html#doxid-classgeode-1-1-polyhedral-solid"><span class="std std-ref">PolyhedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_polyhedral_solid</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_PolyhedralSolid.html#doxid-classgeode-1-1-polyhedral-solid"><span class="std std-ref">PolyhedralSolid</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
@@ -2924,7 +3041,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a21ca1aff84553e8332fd172dc651a521"><span id="index-87"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a21ca1aff84553e8332fd172dc651a521"><span id="index-91"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">save_polyhedral_solid</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_PolyhedralSolid.html#doxid-classgeode-1-1-polyhedral-solid"><span class="std std-ref">PolyhedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">polyhedral_solid</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2945,7 +3062,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a54883c0d0f11a6d8377f9a7d2f6a581f"><span id="index-88"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a54883c0d0f11a6d8377f9a7d2f6a581f"><span id="index-92"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_regular_grid</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -2966,7 +3083,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1afcf1d96c3b37241ad459bc855980cc4a"><span id="index-89"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1afcf1d96c3b37241ad459bc855980cc4a"><span id="index-93"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_regular_grid</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading a RegularGrid. The adequate loader is called depending on the filename extension.</p>
 <p class="rubric">Parameters:</p>
@@ -2981,7 +3098,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ad51a801008d7bedde89b06be6cfaa992"><span id="index-90"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ad51a801008d7bedde89b06be6cfaa992"><span id="index-94"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">save_regular_grid</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">RegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">regular_grid</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -3002,7 +3119,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a14a941221d7d7185843588ef1796198e"><span id="index-91"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a14a941221d7d7185843588ef1796198e"><span id="index-95"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_tetrahedral_solid</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -3023,7 +3140,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2e8813a261d4d7884f67f6e3e1497986"><span id="index-92"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2e8813a261d4d7884f67f6e3e1497986"><span id="index-96"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_tetrahedral_solid</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
@@ -3038,7 +3155,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a46ada7c17eacb9951ed8577a12f3a852"><span id="index-93"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a46ada7c17eacb9951ed8577a12f3a852"><span id="index-97"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">save_tetrahedral_solid</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">tetrahedral_solid</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -3059,7 +3176,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a29dc01620754b28942d24f7427943e78"><span id="index-94"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a29dc01620754b28942d24f7427943e78"><span id="index-98"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">TriangulatedSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_triangulated_surface</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -3080,7 +3197,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a0aa2012312b150d9250b853482f223ef"><span id="index-95"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a0aa2012312b150d9250b853482f223ef"><span id="index-99"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">TriangulatedSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">load_triangulated_surface</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">TriangulatedSurface</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
@@ -3095,7 +3212,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa80f5521075381d4ead39f194ac373e4"><span id="index-96"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa80f5521075381d4ead39f194ac373e4"><span id="index-100"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">save_triangulated_surface</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_TriangulatedSurface.html#doxid-classgeode-1-1-triangulated-surface"><span class="std std-ref">TriangulatedSurface</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">triangulated_surface</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
@@ -3116,7 +3233,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5b07f31ac96c4395bf09489f4f125720"><span id="index-97"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="n">load_vertex_set</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5b07f31ac96c4395bf09489f4f125720"><span id="index-101"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="n">load_vertex_set</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">)</span></pre>
@@ -3136,7 +3253,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7e0090ed0a8517172d5ec8f1f9cf83b7"><span id="index-98"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="n">load_vertex_set</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a7e0090ed0a8517172d5ec8f1f9cf83b7"><span id="index-102"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="n">load_vertex_set</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -3150,7 +3267,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a94cc8bcb32cd71b66c2d6cb320e40921"><span id="index-99"></span><span></span><span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="n">save_vertex_set</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a94cc8bcb32cd71b66c2d6cb320e40921"><span id="index-103"></span><span></span><span class="kt">void</span> <span class="n">opengeode_mesh_api</span> <span class="n">save_vertex_set</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&amp;</span> <span class="n">vertex_set</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">)</span></pre>
@@ -3170,7 +3287,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af2e947f37b4bf38da42682b7326b643e"><span id="index-100"></span><span></span><span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="n">register_model_serialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af2e947f37b4bf38da42682b7326b643e"><span id="index-104"></span><span></span><span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="n">register_model_serialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
 <p>Register all the information needed by Bitsery to serialize the objects in the model library. The context can be used only once per archive.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -3184,7 +3301,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a3a37e49676aa52fa069edf58ad2e0c3b"><span id="index-101"></span><span></span><span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="n">register_model_deserialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a3a37e49676aa52fa069edf58ad2e0c3b"><span id="index-105"></span><span></span><span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="n">register_model_deserialize_pcontext</span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a79da04720a9926e6212751b7e0d5b6c7"><span class="std std-ref">PContext</span></a><span></span><span class="o">&amp;</span> <span class="n">context</span><span class="p">)</span></pre>
 <p>Register all the information needed by Bitsery to deserialize the objects in the model library. The context can be used only once per archive.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -3198,7 +3315,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa6aae08635ec147db4348b2aa375b46d"><span id="index-102"></span><a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span> <span class="n">opengeode_model_api</span> <span class="n">load_brep</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa6aae08635ec147db4348b2aa375b46d"><span id="index-106"></span><a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span> <span class="n">opengeode_model_api</span> <span class="n">load_brep</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading a BoundaryRepresentation. The adequate loader is called depending on the filename extension.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -3214,7 +3331,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>Loaded <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a>.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5740f1154ca1ae97b38be95bdf0caa3c"><span id="index-103"></span><span></span><span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="n">save_brep</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5740f1154ca1ae97b38be95bdf0caa3c"><span id="index-107"></span><span></span><span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="n">save_brep</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for saving a BoundaryRepresentation. The adequate saver is called depending on the given filename extension.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -3231,7 +3348,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a14fe29f519ee8cf81b5b9e7f651c203e"><span id="index-104"></span><a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span> <span class="n">opengeode_model_api</span> <span class="n">load_section</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a14fe29f519ee8cf81b5b9e7f651c203e"><span id="index-108"></span><a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span> <span class="n">opengeode_model_api</span> <span class="n">load_section</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading a <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a>. The adequate loader is called depending on the filename extension.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -3247,7 +3364,7 @@
 </table>
 <p class="rubric">Returns:</p>
 <p>Loaded <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a>.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae92f24302459ce1748811758a5f24f96"><span id="index-105"></span><span></span><span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="n">save_section</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae92f24302459ce1748811758a5f24f96"><span id="index-109"></span><span></span><span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="n">save_section</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">)</span></pre>

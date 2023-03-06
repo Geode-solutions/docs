@@ -28,18 +28,18 @@ Overview
 
 		// methods
 	
-		void :target:`set_value<doxid-classgeode_1_1_regular_grid_point_function_1a3d8f6bd55895ba64fa367d284929255f>`(
-			const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& vertex_index,
+		void :target:`set_value<doxid-classgeode_1_1_regular_grid_point_function_1a737d62c4205207aee44c921b533e9eaa>`(
+			const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::VertexIndices& vertex_index,
 			:ref:`Point<doxid-classgeode_1_1_point>`<dimension> value
 			);
 	
 		void :target:`set_value<doxid-classgeode_1_1_regular_grid_point_function_1ac397dd02065d30584e1cddb923a59aee>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> value);
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1affb3b7e7f4b9c11afe59fa794d7b56a6>`(const :ref:`GridVertexIndices<doxid-namespacegeode_1a4b1e1d3c1f5c30c79a4ec9624d6d3f7e>`<dimension>& vertex_index) const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1a9545167d286b3e3a45419a272f00a011>`(const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::VertexIndices& vertex_index) const;
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1aa07ba34a9aca674bde64e40467fbe39d>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
 	
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1ab229e5fa511ec3ae2c178b0fd0f54bff>`(
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1aaf257bc8c7f1bb52afcb70286e914278>`(
 			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
-			const :ref:`GridCellIndices<doxid-namespacegeode_1aac3d6c58a0093f05712734c7f3365eb2>`<dimension>& grid_cell_indices
+			const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices& grid_cell_indices
 			) const;
 	
 		static RegularGridPointFunction<dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_point_function_1abb851dddaf84d70cfc89c163f36788af>`(
