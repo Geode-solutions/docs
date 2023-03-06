@@ -9,3 +9,13 @@ class geode::Library
 
 
 
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <library.h>
+	
+	class Library: public :ref:`geode::Singleton<doxid-classgeode_1_1_singleton>`
+	{
+	public:
+	};
