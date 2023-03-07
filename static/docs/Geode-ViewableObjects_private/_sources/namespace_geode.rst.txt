@@ -92,6 +92,15 @@ Overview
 		);
 
 	absl::string_view geode_viewableobjects_conversion_api :target:`polyhedral_solid_viewable_extension<doxid-namespacegeode_1a55da274fff3c6e00b607ea3ee74cd305>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abb1366c0b9eae9a09bd1d1de2ff08a26>`(RasterImage);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_raster_image<doxid-namespacegeode_1a51fd25cd453f9fb80936cc23765fbe3e>`(
+		const RasterImage<dimension>& raster_image,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewableobjects_conversion_api :target:`raster_image_viewable_extension<doxid-namespacegeode_1a1adac680e316a94284e9abcded16e8bd>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
 
 	template <index_t dimension>
@@ -274,6 +283,26 @@ the name of th newly created file
 	template <index_t dimension>
 	std::string save_viewable_polyhedral_solid(
 		const PolyhedralSolid<dimension>& polyhedral_solid,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_raster_image
+.. _doxid-namespacegeode_1a51fd25cd453f9fb80936cc23765fbe3e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_raster_image(
+		const RasterImage<dimension>& raster_image,
 		absl::string_view filename_without_extension
 		)
 
