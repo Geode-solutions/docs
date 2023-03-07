@@ -1195,12 +1195,12 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abb1366c0b9eae9a09bd1d1de2ff08a26"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1ab535e9534394ed33581f9e86fd72cda7"><span class="std std-ref">load_raster</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
+<a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a4a39f846fc8600f31607f47feec37a60"><span class="std std-ref">load_raster_image</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a51eb99ef6c8ca6695fa7749501893dfd"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a58c047148fb27d8472554cabf0a2c155"><span class="std std-ref">RasterImageInputFactory</span></a><span></span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="kt">void</span> <a class="reference internal" href="#doxid-namespacegeode-1a35b65f58694110b854c49460a8066e6f"><span class="std std-ref">save_raster</span></a><span></span><span class="p">(</span>
+<span class="kt">void</span> <a class="reference internal" href="#doxid-namespacegeode-1ab16da80d1b75dc98c72e9ade2dff910f"><span class="std std-ref">save_raster_image</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">raster</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">);</span>
@@ -2623,8 +2623,8 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab535e9534394ed33581f9e86fd72cda7"><span id="index-69"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">load_raster</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4a39f846fc8600f31607f47feec37a60"><span id="index-69"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">load_raster_image</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
 <p>API function for loading an <a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a>. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
@@ -2638,8 +2638,8 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a35b65f58694110b854c49460a8066e6f"><span id="index-70"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="n">save_raster</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ab16da80d1b75dc98c72e9ade2dff910f"><span id="index-70"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">save_raster_image</span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_RasterImage.html#doxid-classgeode-1-1-raster-image"><span class="std std-ref">RasterImage</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">raster</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">)</span></pre>

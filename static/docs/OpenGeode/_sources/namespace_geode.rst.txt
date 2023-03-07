@@ -1440,12 +1440,12 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abb1366c0b9eae9a09bd1d1de2ff08a26>`(:ref:`RasterImage<doxid-classgeode_1_1_raster_image>`);
 
 	template <index_t dimension>
-	:ref:`RasterImage<doxid-classgeode_1_1_raster_image>`<dimension> :ref:`load_raster<doxid-namespacegeode_1ab535e9534394ed33581f9e86fd72cda7>`(absl::string_view filename);
+	:ref:`RasterImage<doxid-classgeode_1_1_raster_image>`<dimension> :ref:`load_raster_image<doxid-namespacegeode_1a4a39f846fc8600f31607f47feec37a60>`(absl::string_view filename);
 
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a51eb99ef6c8ca6695fa7749501893dfd>`(:ref:`RasterImageInputFactory<doxid-namespacegeode_1a58c047148fb27d8472554cabf0a2c155>`);
 
 	template <index_t dimension>
-	void :ref:`save_raster<doxid-namespacegeode_1a35b65f58694110b854c49460a8066e6f>`(
+	void :ref:`save_raster_image<doxid-namespacegeode_1ab16da80d1b75dc98c72e9ade2dff910f>`(
 		const :ref:`RasterImage<doxid-classgeode_1_1_raster_image>`<dimension>& raster,
 		absl::string_view filename
 		);
@@ -3578,14 +3578,14 @@ Register all the information needed by Bitsery to deserialize the objects in the
 
 		- The context where to register this information.
 
-.. index:: pair: function; load_raster
-.. _doxid-namespacegeode_1ab535e9534394ed33581f9e86fd72cda7:
+.. index:: pair: function; load_raster_image
+.. _doxid-namespacegeode_1a4a39f846fc8600f31607f47feec37a60:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
-	:ref:`RasterImage<doxid-classgeode_1_1_raster_image>`<dimension> load_raster(absl::string_view filename)
+	:ref:`RasterImage<doxid-classgeode_1_1_raster_image>`<dimension> load_raster_image(absl::string_view filename)
 
 API function for loading an :ref:`RasterImage <doxid-classgeode_1_1_raster_image>`. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -3601,14 +3601,14 @@ API function for loading an :ref:`RasterImage <doxid-classgeode_1_1_raster_image
 
 		- Path to the file to load.
 
-.. index:: pair: function; save_raster
-.. _doxid-namespacegeode_1a35b65f58694110b854c49460a8066e6f:
+.. index:: pair: function; save_raster_image
+.. _doxid-namespacegeode_1ab16da80d1b75dc98c72e9ade2dff910f:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
-	void save_raster(
+	void save_raster_image(
 		const :ref:`RasterImage<doxid-classgeode_1_1_raster_image>`<dimension>& raster,
 		absl::string_view filename
 		)
