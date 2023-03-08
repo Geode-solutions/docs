@@ -1122,7 +1122,8 @@ Overview
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a246f0bb471c47f488831765149625f85>`(opengeode_geometry_api, OpenGeodeGeometry);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a73b98a5519467f090fd3b8dd6a9eb008>`(:ref:`Sphere<doxid-classgeode_1_1_sphere>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(:ref:`Point<doxid-classgeode_1_1_point>`);
-	:target:`ALIAS_2D<doxid-namespacegeode_1a8ec76900496f8c6e59d65c6ad941af27>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a46c93d7de8cb42c63334569e28c385bd>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a2e523aa919e037332ad66ac85ee6a280>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
 
 	template <index_t dimension>
 	double :ref:`point_point_distance<doxid-namespacegeode_1a4580257fb6522eceb29536b03fb1c21a>`(
@@ -1131,13 +1132,7 @@ Overview
 		);
 
 	template <index_t dimension>
-	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_segment_distance<doxid-namespacegeode_1aa93b0c934f3fb83dd110e44bedfd5a30>`(
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
-		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
-		);
-
-	template <index_t dimension>
-	double :target:`new_point_segment_distance<doxid-namespacegeode_1a76de721bf62a2cfc538036387f64ce99>`(
+	double :ref:`point_segment_distance<doxid-namespacegeode_1af2cfff4dc02045ce08727c8fb50aa037>`(
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
 		);
@@ -1149,23 +1144,18 @@ Overview
 		);
 
 	template <index_t dimension>
-	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :ref:`point_line_distance<doxid-namespacegeode_1a0152cc4808d761c36b5a7f3d95a85644>`(
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :target:`segment_line_distance<doxid-namespacegeode_1ac2fd8c655997fc343e7d154cbc3aeae0>`(
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment,
 		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
 		);
 
 	template <index_t dimension>
-	double :target:`new_point_line_distance<doxid-namespacegeode_1a5eaa2d64bfec3038c08ef3a77bf4ceef>`(
+	double :ref:`point_line_distance<doxid-namespacegeode_1aeb3191c0145b8a14cca192652b677bde>`(
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
 		);
 
-	std::tuple<double, Point2D> opengeode_geometry_api :ref:`point_line_signed_distance<doxid-namespacegeode_1a75d0260bbbaced72944408a98c21b06f>`(
-		const Point2D& point,
-		const InfiniteLine2D& line
-		);
-
-	double opengeode_geometry_api :target:`new_point_line_signed_distance<doxid-namespacegeode_1a987e10bc64fd2b9fec81aa391e63c261>`(
+	double opengeode_geometry_api :ref:`point_line_signed_distance<doxid-namespacegeode_1a8d60add2e85d3043aa70e0f01d1a4e57>`(
 		const Point2D& point,
 		const InfiniteLine2D& line
 		);
@@ -1178,6 +1168,16 @@ Overview
 
 	std::tuple<double, Point3D> :ref:`point_triangle_signed_distance<doxid-namespacegeode_1adde4afe0dd3cc2809cdd33d777602d21>`(
 		const Point3D& point,
+		const Triangle3D& triangle
+		);
+
+	std::tuple<double, Point3D, Point3D> opengeode_geometry_api :ref:`line_triangle_distance<doxid-namespacegeode_1a8a30d8ef6bfa0591d199ecca44dab89e>`(
+		const InfiniteLine3D& line,
+		const Triangle3D& triangle
+		);
+
+	std::tuple<double, Point3D, Point3D> opengeode_geometry_api :ref:`segment_triangle_distance<doxid-namespacegeode_1a0f3e7722342bcdc08d238b38eb8a4680>`(
+		const Segment3D& segment,
 		const Triangle3D& triangle
 		);
 
@@ -1229,7 +1229,6 @@ Overview
 		const :ref:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`& disk
 		);
 
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a46c93d7de8cb42c63334569e28c385bd>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad391ccfd3ec3b37beae6bcc7c210f915>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1aaf755b9136ab518d12e2fa75dd8bdd12>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
 
@@ -1350,6 +1349,8 @@ Overview
 
 	template <index_t dimension>
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`morton_mapping<doxid-namespacegeode_1a91ddfca0b4b6a35644648c236b8d815d>`(absl::Span<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> points);
+
+	:target:`ALIAS_2D<doxid-namespacegeode_1a8ec76900496f8c6e59d65c6ad941af27>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
 
 	:ref:`Side<doxid-namespacegeode_1a0805566e7d9eb8e31ef1d932837fdb1b>` opengeode_geometry_api :ref:`point_side_to_segment<doxid-namespacegeode_1a9dbc950e6ecafb4bf2d5336e5621e2b5>`(
 		const Point2D& point,
@@ -2453,28 +2454,18 @@ Register all the information needed by Bitsery to deserialize the objects in the
 Compute the Euclidean distance between a two points
 
 .. index:: pair: function; point_segment_distance
-.. _doxid-namespacegeode_1aa93b0c934f3fb83dd110e44bedfd5a30:
+.. _doxid-namespacegeode_1af2cfff4dc02045ce08727c8fb50aa037:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
-	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> point_segment_distance(
+	double point_segment_distance(
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
 		)
 
 Compute the smallest distance between a point and a segment
-
-
-
-.. rubric:: Returns:
-
-a tuple containing:
-
-* the smallest distance.
-
-* the closest point on the segment.
 
 .. index:: pair: function; segment_segment_distance
 .. _doxid-namespacegeode_1a74f738f4982f62937cd9640b8e5236f0:
@@ -2503,51 +2494,31 @@ a tuple containing:
 * the closest point on the second segment.
 
 .. index:: pair: function; point_line_distance
-.. _doxid-namespacegeode_1a0152cc4808d761c36b5a7f3d95a85644:
+.. _doxid-namespacegeode_1aeb3191c0145b8a14cca192652b677bde:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
-	std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> point_line_distance(
+	double point_line_distance(
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 		const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line
 		)
 
 Compute the smallest distance between a point and an infinite line
 
-
-
-.. rubric:: Returns:
-
-a tuple containing:
-
-* the smallest distance.
-
-* the closest point on the line.
-
 .. index:: pair: function; point_line_signed_distance
-.. _doxid-namespacegeode_1a75d0260bbbaced72944408a98c21b06f:
+.. _doxid-namespacegeode_1a8d60add2e85d3043aa70e0f01d1a4e57:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<double, Point2D> opengeode_geometry_api point_line_signed_distance(
+	double opengeode_geometry_api point_line_signed_distance(
 		const Point2D& point,
 		const InfiniteLine2D& line
 		)
 
 Compute the smallest signed distance between a point and an infinite line in 2D
-
-
-
-.. rubric:: Returns:
-
-a tuple containing:
-
-* the smallest signed distance.
-
-* the closest point on the line.
 
 .. index:: pair: function; point_triangle_distance
 .. _doxid-namespacegeode_1a330049f15e84cc2f0d868038057142ec:
@@ -2593,6 +2564,56 @@ Compute the signed distance between a point and a triangle the sign is given by 
 a tuple containing:
 
 * the smallest distance.
+
+* the closest point on the triangle.
+
+.. index:: pair: function; line_triangle_distance
+.. _doxid-namespacegeode_1a8a30d8ef6bfa0591d199ecca44dab89e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point3D, Point3D> opengeode_geometry_api line_triangle_distance(
+		const InfiniteLine3D& line,
+		const Triangle3D& triangle
+		)
+
+Compute the smallest distance between an infinite line and a triangle
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the line.
+
+* the closest point on the triangle.
+
+.. index:: pair: function; segment_triangle_distance
+.. _doxid-namespacegeode_1a0f3e7722342bcdc08d238b38eb8a4680:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<double, Point3D, Point3D> opengeode_geometry_api segment_triangle_distance(
+		const Segment3D& segment,
+		const Triangle3D& triangle
+		)
+
+Compute the smallest distance between an segment and a triangle
+
+
+
+.. rubric:: Returns:
+
+a tuple containing:
+
+* the smallest distance.
+
+* the closest point on the segment.
 
 * the closest point on the triangle.
 
