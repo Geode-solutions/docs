@@ -167,7 +167,7 @@ export default {
       },
       {
         extension: '.vti (ascii only)',
-        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a><br/><a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a><br/><a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a>"<br/><a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage2D</code></a><br/><a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage3D</code></a>,
         in: false,
         out: true,
       },
@@ -203,13 +203,13 @@ export default {
       },
       {
         extension: '.jpg',
-        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage2D</code></a>",
         in: true,
         out: false,
       },
       {
         extension: '.png',
-        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage2D</code></a>",
         in: true,
         out: false,
       },
