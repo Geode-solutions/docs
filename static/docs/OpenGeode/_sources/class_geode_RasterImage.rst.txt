@@ -43,6 +43,7 @@ template class geode::RasterImage
 		virtual :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>` :target:`cell_indices<doxid-classgeode_1_1_raster_image_1a09ef20a67fdf53e8b73123a6528bde68>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
 		const :ref:`RGBColor<doxid-classgeode_1_1_r_g_b_color>`& :target:`color<doxid-classgeode_1_1_raster_image_1ab672b69b8338fa96a51cb01af26e7b95>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
 		void :target:`set_color<doxid-classgeode_1_1_raster_image_1abfacdf415d5a379de3ae2375302de67e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index, :ref:`RGBColor<doxid-classgeode_1_1_r_g_b_color>` color);
+		RasterImage :target:`clone<doxid-classgeode_1_1_raster_image_1a025437d42bb18f7335dfdcf51ab04929>`() const;
 		static std::string :target:`native_extension_static<doxid-classgeode_1_1_raster_image_1a7ca97674c5adac390e983749f6e85329>`();
 	};
 
