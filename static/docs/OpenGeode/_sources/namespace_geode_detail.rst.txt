@@ -245,9 +245,10 @@ namespace geode::detail
 		);
 
 	template <typename Model, typename BuilderTo>
-	void :target:`copy_vertex_identifier_components<doxid-namespacegeode_1_1detail_1a6f174f356f0ce065d3155a7fd3e8084b>`(
+	void :target:`copy_vertex_identifier_components<doxid-namespacegeode_1_1detail_1aa96b7aa656995a240c9583d44880827a>`(
 		const Model& from,
 		BuilderTo& builder_to,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` first_new_unique_vertex_id,
 		const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping
 		);
 
