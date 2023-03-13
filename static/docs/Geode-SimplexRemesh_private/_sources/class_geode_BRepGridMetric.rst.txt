@@ -20,11 +20,7 @@ BRep grid metric implementation
 	public:
 		// construction
 	
-		:target:`BRepGridMetric<doxid-classgeode_1_1_b_rep_grid_metric_1ab27226b42011dd3e9009a63a69d4de71>`(
-			const BRep& brep,
-			const RegularGrid3D& grid,
-			double default_metric
-			);
+		:target:`BRepGridMetric<doxid-classgeode_1_1_b_rep_grid_metric_1aed5b076b2caa28d9f8bb7525643c7499>`(const BRep& brep, const Grid3D& grid, double default_metric);
 
 		// methods
 	

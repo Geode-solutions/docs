@@ -21,7 +21,7 @@ Grid metric implementation
 	public:
 		// construction
 	
-		:target:`GridMetric<doxid-classgeode_1_1_grid_metric_1a3bf9f8ea1dcc4d4747a1d3e65f3f4f71>`(const RegularGrid<dimension>& grid, double default_metric);
+		:target:`GridMetric<doxid-classgeode_1_1_grid_metric_1a475b4d856dbc7aa93c1ed65ac308f877>`(const Grid<dimension>& grid, double default_metric);
 
 		// methods
 	

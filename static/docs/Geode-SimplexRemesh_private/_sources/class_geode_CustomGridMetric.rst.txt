@@ -21,10 +21,7 @@ template class geode::CustomGridMetric
 	public:
 		// construction
 	
-		:target:`CustomGridMetric<doxid-classgeode_1_1_custom_grid_metric_1a4a2fd6b377b8cf3147a1e7c4ad859e46>`(
-			const RegularGrid<dimension>& grid,
-			absl::string_view attribute_name
-			);
+		:target:`CustomGridMetric<doxid-classgeode_1_1_custom_grid_metric_1a6179ed444bb4e7da95bfb26a30cfe2e7>`(const Grid<dimension>& grid, absl::string_view attribute_name);
 
 		// methods
 	
