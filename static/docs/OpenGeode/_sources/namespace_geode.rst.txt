@@ -126,6 +126,7 @@ namespace geode
 	class_geode_InfiniteLine.rst
 	class_geode_Input.rst
 	class_geode_Library.rst
+	class_geode_LightRegularGrid.rst
 	class_geode_Line.rst
 	class_geode_Lines.rst
 	class_geode_LinesBuilder.rst
@@ -624,6 +625,9 @@ Overview
 	class :ref:`Input<doxid-classgeode_1_1_input>`;
 
 	class :ref:`Library<doxid-classgeode_1_1_library>`;
+
+	template <index_t dimension>
+	class :ref:`LightRegularGrid<doxid-classgeode_1_1_light_regular_grid>`;
 
 	template <index_t dimension>
 	class :ref:`Line<doxid-classgeode_1_1_line>`;
@@ -1531,6 +1535,7 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7811fa3e946852b9ee881b44a272de81>`(:ref:`Grid<doxid-classgeode_1_1_grid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af4f182876ad2706cfd67cfa0a7ff23b4>`(:ref:`HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ad1e677b7ca1b4a9e3461a5ab070e8b42>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a45eb83db2b6e39935b2c928bcb7b376e>`(:ref:`LightRegularGrid<doxid-classgeode_1_1_light_regular_grid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afe2cb7fe1eafd07074f05210001c506e>`(:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a11058d89bacb297358eb8a8a8a29490c>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a34993c9c8235be7221449c93152372f7>`(:ref:`PolygonalSurfaceBuilder<doxid-classgeode_1_1_polygonal_surface_builder>`);
@@ -1657,8 +1662,8 @@ Overview
 	std::unique_ptr<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :target:`merge_surface_meshes<doxid-namespacegeode_1aedc8b3a2039223306e3633e948791415>`(absl::Span<const std::reference_wrapper<const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>>> surfaces);
 
 	template <index_t dimension>
-	std::shared_ptr<:ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`<double>> :ref:`euclidean_distance_transform<doxid-namespacegeode_1a144157c044209926b01fb3da24ea3aec>`(
-		const RegularGrid<dimension>& grid,
+	std::shared_ptr<:ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`<double>> :ref:`euclidean_distance_transform<doxid-namespacegeode_1ac4de379f6ffeadc6d509477bd3a176db>`(
+		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		absl::Span<const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> grid_cell_ids,
 		absl::string_view distance_map_name
 		);
@@ -1696,20 +1701,20 @@ Overview
 	:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`<dimension> :target:`create_nn_search<doxid-namespacegeode_1abeee5ff5c5a7319611e59fe60ff6f740>`(const Mesh<dimension>& mesh);
 
 	template <index_t dimension>
-	std::vector<typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> :target:`rasterize_segment<doxid-namespacegeode_1a583a6f173eda68c83c61f4e90ab0423f>`(
-		const RegularGrid<dimension>& grid,
+	std::vector<typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> :target:`rasterize_segment<doxid-namespacegeode_1a57b98dcfdf03f85bc30d00e97504fc7f>`(
+		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
 		);
 
 	template <index_t dimension>
-	std::vector<typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> :target:`conservative_rasterize_segment<doxid-namespacegeode_1a2624e26915bc283743138f3c110d0c83>`(
-		const RegularGrid<dimension>& grid,
+	std::vector<typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> :target:`conservative_rasterize_segment<doxid-namespacegeode_1a916cb4dbad8416f538fed3a7a5dcbc1f>`(
+		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
 		);
 
 	template <index_t dimension>
-	std::vector<typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> :target:`rasterize_triangle<doxid-namespacegeode_1a3d8366ce0bbc6b321bdef04c089e988a>`(
-		const RegularGrid<dimension>& grid,
+	std::vector<typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> :target:`rasterize_triangle<doxid-namespacegeode_1a1039948d950876b311030abbae1ccf67>`(
+		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
 		);
 
@@ -3698,14 +3703,14 @@ Register all the information needed by Bitsery to deserialize the objects in the
 		- The context where to register this information.
 
 .. index:: pair: function; euclidean_distance_transform
-.. _doxid-namespacegeode_1a144157c044209926b01fb3da24ea3aec:
+.. _doxid-namespacegeode_1ac4de379f6ffeadc6d509477bd3a176db:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
 	std::shared_ptr<:ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`<double>> euclidean_distance_transform(
-		const RegularGrid<dimension>& grid,
+		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		absl::Span<const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> grid_cell_ids,
 		absl::string_view distance_map_name
 		)

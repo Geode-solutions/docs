@@ -39,7 +39,7 @@ Overview
 		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name_static<doxid-classgeode_1_1_regular_grid_3_013_01_4_1ad6611b8d33edef62dbe224fa8c4ed669>`();
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_regular_grid_3_013_01_4_1a1af01fe75d8cd0d80e6ab7cc0f355187>`();
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_regular_grid_3_013_01_4_1af2c137d3b635aefbb609da79fefcea8d>`() const;
-		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`cell_attribute_manager<doxid-classgeode_1_1_regular_grid_3_013_01_4_1a03bee16ef204eec9539a2e37448cf606>`() const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`cell_attribute_manager<doxid-classgeode_1_1_regular_grid_3_013_01_4_1a60af6e340d877f6b3e9eb58c1f048d5c>`() const;
 		std::unique_ptr<RegularGrid3D> :target:`clone<doxid-classgeode_1_1_regular_grid_3_013_01_4_1a3e85b6f8e9b23837420b3c64e6adf8b7>`() const;
 	};
 
@@ -212,6 +212,8 @@ Inherited Members
 		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_vertices<doxid-classgeode_1_1_grid_1a0002bbcca35721156935ac671d7e3ee6>`() const;
 		double :ref:`cell_length_in_direction<doxid-classgeode_1_1_grid_1a026997ee7c2efcc4f910bc4bf8474a3c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		double :ref:`cell_size<doxid-classgeode_1_1_grid_1ab798fa361e5dc94726c1f9477f68e570>`() const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`grid_point<doxid-classgeode_1_1_grid_1a8ae765086cbc5bf7e5226860f89be79f>`(const :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`& index) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_grid_vertices<doxid-classgeode_1_1_grid_1a861a1b8f38cb2a4386cf8a3c9d040e84>`() const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices_in_direction<doxid-classgeode_1_1_grid_1a35308230a809ac408bec21d6f70e36b9>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_vertices_on_borders<doxid-classgeode_1_1_grid_1a447fd9aaabd9b1615baf9bfbce89e117>`() const;
 		virtual :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`vertex_index<doxid-classgeode_1_1_grid_1ae318287cacbbd538390cec38a6a4df0c>`(const :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`& index) const = 0;
@@ -233,9 +235,13 @@ Inherited Members
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
 			) const;
 	
+		bool :ref:`is_grid_vertex_on_border<doxid-classgeode_1_1_grid_1ac02e4942b12511d53a96d5c1fe5368cb>`(const :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`& index) const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`cell_barycenter<doxid-classgeode_1_1_grid_1a5169ba9b4ee301895b4ac5f56ddc9e3e>`(const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& cell_id) const;
 		bool :ref:`contains<doxid-classgeode_1_1_grid_1ae40317e28fbbb3b1b665460ce200fd26>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>` :ref:`closest_vertex<doxid-classgeode_1_1_grid_1afb70a567aabc60b134739e392c6819eb>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`CellsAroundVertex<doxid-classgeode_1_1_grid_1aef9092356509be9512cc08f610f3cc67>` :ref:`cells<doxid-classgeode_1_1_grid_1aa2715e6c5fceda7836ac3b775af7d4b6>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
+		virtual :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`cell_attribute_manager<doxid-classgeode_1_1_grid_1ac1700582e458b4f7de05a37f12811497>`() const = 0;
+		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`grid_bounding_box<doxid-classgeode_1_1_grid_1aa8e929bb5853b175ee9652ceec4a7464>`() const;
 	
 		void :ref:`set_grid_dimensions<doxid-classgeode_1_1_grid_1ac89b3677c5413aaa60a98ecd84443c21>`(
 			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> cells_number,
