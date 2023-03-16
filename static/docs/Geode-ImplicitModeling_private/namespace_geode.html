@@ -55,6 +55,8 @@
 <span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_ImplicitCrossSectionOutput.html#doxid-classgeode-1-1-implicit-cross-section-output"><span class="std std-ref">ImplicitCrossSectionOutput</span></a><span></span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a781be7141886b86a1a073566c1b21f97"><span></span><span class="n">ImplicitCrossSectionOutputFactory</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_ImplicitStructuralModelInput.html#doxid-classgeode-1-1-implicit-structural-model-input"><span class="std std-ref">ImplicitStructuralModelInput</span></a><span></span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af5f57250e7d05e0a4f1ab9141ff324c3"><span></span><span class="n">ImplicitStructuralModelInputFactory</span></span><span></span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_ImplicitStructuralModelOutput.html#doxid-classgeode-1-1-implicit-structural-model-output"><span class="std std-ref">ImplicitStructuralModelOutput</span></a><span></span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aaba818855148afe7c23129b7fa2538fd"><span></span><span class="n">ImplicitStructuralModelOutputFactory</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_StratigraphicUnitsStackInput.html#doxid-classgeode-1-1-stratigraphic-units-stack-input"><span class="std std-ref">StratigraphicUnitsStackInput</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9c2998ba712711c92a383b1467a9625f"><span></span><span class="n">StratigraphicUnitsStackInputFactory</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">Factory</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <a class="reference internal" href="class_geode_StratigraphicUnitsStackOutput.html#doxid-classgeode-1-1-stratigraphic-units-stack-output"><span class="std std-ref">StratigraphicUnitsStackOutput</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af0e2d7113a8f6a898361f84154b9b453"><span></span><span class="n">StratigraphicUnitsStackOutputFactory</span></span><span></span><span class="p">;</span>
 
 <span class="c1">// classes</span>
 
@@ -70,11 +72,31 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_ImplicitStructuralModelOutput.html#doxid-classgeode-1-1-implicit-structural-model-output"><span class="std std-ref">ImplicitStructuralModelOutput</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeStratigraphicUnitsStackInput.html#doxid-classgeode-1-1-open-geode-stratigraphic-units-stack-input"><span class="std std-ref">OpenGeodeStratigraphicUnitsStackInput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeStratigraphicUnitsStackOutput.html#doxid-classgeode-1-1-open-geode-stratigraphic-units-stack-output"><span class="std std-ref">OpenGeodeStratigraphicUnitsStackOutput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridScalarFunctionComputer.html#doxid-classgeode-1-1-regular-grid-scalar-function-computer"><span class="std std-ref">RegularGridScalarFunctionComputer</span></a><span></span><span class="p">;</span>
 
 <span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridScalarFunctionExpliciter2D.html#doxid-classgeode-1-1-regular-grid-scalar-function-expliciter2-d"><span class="std std-ref">RegularGridScalarFunctionExpliciter2D</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridScalarFunctionExpliciter3D.html#doxid-classgeode-1-1-regular-grid-scalar-function-expliciter3-d"><span class="std std-ref">RegularGridScalarFunctionExpliciter3D</span></a><span></span><span class="p">;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_SolidMeshScalarFunctionExpliciter.html#doxid-classgeode-1-1-solid-mesh-scalar-function-expliciter"><span class="std std-ref">SolidMeshScalarFunctionExpliciter</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships"><span class="std std-ref">StratigraphicRelationships</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicRelationshipsBuilder.html#doxid-classgeode-1-1-stratigraphic-relationships-builder"><span class="std std-ref">StratigraphicRelationshipsBuilder</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicUnitsStackBuilder.html#doxid-classgeode-1-1-stratigraphic-units-stack-builder"><span class="std std-ref">StratigraphicUnitsStackBuilder</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicUnitsStackInput.html#doxid-classgeode-1-1-stratigraphic-units-stack-input"><span class="std std-ref">StratigraphicUnitsStackInput</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicUnitsStackOutput.html#doxid-classgeode-1-1-stratigraphic-units-stack-output"><span class="std std-ref">StratigraphicUnitsStackOutput</span></a><span></span><span class="p">;</span>
 
 <span class="c1">// global variables</span>
 
@@ -126,6 +148,8 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4bd02aabaf2cf4d25e7f1471d6f5f682"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3dfa90e12c4f46df6d4d4c73cc499ab6"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7d56e38137e3b2cb915a262374174447"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5111a9d6455a1bd0910db6dc4399cdb7"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicUnitsStackBuilder.html#doxid-classgeode-1-1-stratigraphic-units-stack-builder"><span class="std std-ref">StratigraphicUnitsStackBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5e8e5828532178b105e3b6488c12277c"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_implicitmodeling_model_api</span><span class="p">,</span> <span class="n">ImplicitModelingModel</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a101910cf6bc45a10f4ec68f2e896d038"><span></span><span class="n">rescale_stratigraphic_attribute</span></span><span></span><span class="p">(</span>
@@ -161,6 +185,10 @@
     <span class="p">);</span>
 
 <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MeshElement</span><span class="o">&gt;</span> <span class="n">geode_implicitmodeling_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8e7d791e59eb7440d55b0ff8b3c11eb4"><span></span><span class="n">invalid_stratigraphic_tetrahedra</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a57881c042a92cf4aac33a896fce54523"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicUnitsStackBuilder.html#doxid-classgeode-1-1-stratigraphic-units-stack-builder"><span class="std std-ref">StratigraphicUnitsStackBuilder</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac1280113e4d0610339b3891240c11cc8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a45b9d1cc850529d5db9b5fd7b6c4e71b"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeStratigraphicUnitsStackInput.html#doxid-classgeode-1-1-open-geode-stratigraphic-units-stack-input"><span class="std std-ref">OpenGeodeStratigraphicUnitsStackInput</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1afc3b96fba8ea45fa95a9cfb0d48bae89"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_OpenGeodeStratigraphicUnitsStackOutput.html#doxid-classgeode-1-1-open-geode-stratigraphic-units-stack-output"><span class="std std-ref">OpenGeodeStratigraphicUnitsStackOutput</span></a><span></span><span class="p">);</span>
 <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span> <span class="n">geode_implicitmodeling_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1acb687cbedca7f7bcada2358582d6a0a7"><span class="std std-ref">load_implicit_cross_section</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">geode_implicitmodeling_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a752a47963d1b8d3a296efe5e800582e3"><span class="std std-ref">save_implicit_cross_section</span></a><span></span><span class="p">(</span>
@@ -174,6 +202,20 @@
     <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1ae5016add03b4f6b9d173a8952509aa0e"><span class="std std-ref">load_stratigraphic_units_stack</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a23b608deddd8189328c9ed674213f832"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1a9c2998ba712711c92a383b1467a9625f"><span class="std std-ref">StratigraphicUnitsStackInputFactory</span></a><span></span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <a class="reference internal" href="#doxid-namespacegeode-1a876e0d8d3d26b251ae2c8d29614389ac"><span class="std std-ref">save_stratigraphic_units_stack</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">stratigraphic_units_stack</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac6420f8fc7c96d1b7e3c03e9d9a584ac"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicUnitsStackOutput.html#doxid-classgeode-1-1-stratigraphic-units-stack-output"><span class="std std-ref">StratigraphicUnitsStackOutput</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7cff5854fd8e5ad05d236c4bb182f8ab"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-namespacegeode-1af0e2d7113a8f6a898361f84154b9b453"><span class="std std-ref">StratigraphicUnitsStackOutputFactory</span></a><span></span><span class="p">);</span>
 
 <span class="p">}</span> <span class="c1">// namespace geode</span></pre>
 </section>
@@ -246,6 +288,44 @@
 </tr>
 <tr class="row-even"><td><p>filename</p></td>
 <td><p>Path to the file where save the <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae5016add03b4f6b9d173a8952509aa0e"><span id="index-5"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">load_stratigraphic_units_stack</span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">)</span></pre>
+<p>API function for loading a <a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a>. The adequate loader is called depending on the filename extension.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>filename</p></td>
+<td><p>Path to the file to load.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>Loaded <a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a>.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a876e0d8d3d26b251ae2c8d29614389ac"><span id="index-6"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">save_stratigraphic_units_stack</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">stratigraphic_units_stack</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">)</span></pre>
+<p>API function for saving a <a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a>. The adequate saver is called depending on the given filename extension.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>stratigraphic_units_stack</p></td>
+<td><p><a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a> to save.</p></td>
+</tr>
+<tr class="row-even"><td><p>filename</p></td>
+<td><p>Path to the file where save the brep.</p></td>
 </tr>
 </tbody>
 </table>

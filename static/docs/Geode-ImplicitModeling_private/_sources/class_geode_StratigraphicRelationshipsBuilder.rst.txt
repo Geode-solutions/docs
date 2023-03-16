@@ -1,0 +1,86 @@
+.. index:: pair: class; geode::StratigraphicRelationshipsBuilder
+.. _doxid-classgeode_1_1_stratigraphic_relationships_builder:
+
+class geode::StratigraphicRelationshipsBuilder
+==============================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Class managing modification of :ref:`StratigraphicRelationships <doxid-classgeode_1_1_stratigraphic_relationships>` :ref:`More...<details-classgeode_1_1_stratigraphic_relationships_builder>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <stratigraphic_relationships_builder.h>
+	
+	class StratigraphicRelationshipsBuilder
+	{
+	public:
+		// construction
+	
+		:target:`StratigraphicRelationshipsBuilder<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a0a03f44cad2d11e366147fbb57dcc0e4>`(:ref:`StratigraphicRelationships<doxid-classgeode_1_1_stratigraphic_relationships>`& relationships);
+
+		// methods
+	
+		void :ref:`unregister_component<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a9a310c48cb4855cfb6def000b051a2f4>`(const uuid& id);
+		void :ref:`remove_relation<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a66c08fca5b07980c50f67ade884397f8>`(const uuid& id1, const uuid& id2);
+	
+		void :target:`copy_stratigraphic_relationships<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a579851b2174d129e0a4d9e64f7d4bafe>`(
+			const ModelCopyMapping& mapping,
+			const :ref:`StratigraphicRelationships<doxid-classgeode_1_1_stratigraphic_relationships>`& relationships
+			);
+	
+		void :target:`load_stratigraphic_relationships<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a640725b407487aa27b69274d53f50c61>`(absl::string_view directory);
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnitsStackBuilder<doxid-classgeode_1_1_stratigraphic_units_stack_builder>`;
+.. _details-classgeode_1_1_stratigraphic_relationships_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Class managing modification of :ref:`StratigraphicRelationships <doxid-classgeode_1_1_stratigraphic_relationships>`
+
+Methods
+-------
+
+.. index:: pair: function; unregister_component
+.. _doxid-classgeode_1_1_stratigraphic_relationships_builder_1a9a310c48cb4855cfb6def000b051a2f4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void unregister_component(const uuid& id)
+
+Remove a component from the set of components registered by the :ref:`StratigraphicRelationships <doxid-classgeode_1_1_stratigraphic_relationships>`, and its above/under relationships
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- id
+
+		- Unique index of the component to remove
+
+.. index:: pair: function; remove_relation
+.. _doxid-classgeode_1_1_stratigraphic_relationships_builder_1a66c08fca5b07980c50f67ade884397f8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void remove_relation(const uuid& id1, const uuid& id2)
+
+Remove a relationship between two components
+
