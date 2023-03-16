@@ -20,7 +20,7 @@ class geode::FrameField
 	public:
 		// construction
 	
-		:target:`FrameField<doxid-classgeode_1_1_frame_field_1a7437e83b8d8f0bd3d962334f86f5ba0a>`(const BRep& brep);
+		:target:`FrameField<doxid-classgeode_1_1_frame_field_1a3a79a24e9c7da2f6030eea328ab16034>`(BRep& brep);
 		:target:`FrameField<doxid-classgeode_1_1_frame_field_1a401705e3eb1d27595448b344020e7264>`(FrameField&& other);
 
 		// methods

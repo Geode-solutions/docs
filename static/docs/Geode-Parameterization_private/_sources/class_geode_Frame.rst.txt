@@ -31,4 +31,5 @@ template class geode::Frame
 		Frame :target:`inverse<doxid-classgeode_1_1_frame_1a96ced5cc37adade03710b8e6e5cb08d9>`() const;
 		Frame :target:`operator +<doxid-classgeode_1_1_frame_1add4ed0c967c4f2cd835b36c4c3caaeaa>` (const Frame& rhs) const;
 		Frame :target:`rescale<doxid-classgeode_1_1_frame_1a68c065ab3a06197174035fd7c80bd601>`(double length) const;
+		std::string :target:`string<doxid-classgeode_1_1_frame_1adab98782410b85effab33ead8fb5ee6c>`() const;
 	};
