@@ -3,17 +3,10 @@
     <v-col>
       <h1 class="display-4 ma-5">Native file formats</h1>
       <format title="Using OpenGeode" :formats="formats" native />
-      <format
-        title="Using OpenGeode-Geosciences"
-        :formats="formats_geosciences"
-        native
-      />
+      <format title="Using OpenGeode-Geosciences" :formats="formats_geosciences" native />
       <h1 class="display-4 ma-5">Supported file formats</h1>
       <format title="Using OpenGeode-IO" :formats="formats_io" />
-      <format
-        title="Using OpenGeode-GeosciencesIO"
-        :formats="formats_geosciencesio"
-      />
+      <format title="Using OpenGeode-GeosciencesIO" :formats="formats_geosciencesio" />
     </v-col>
   </v-row>
 </template>
@@ -148,6 +141,18 @@ export default {
         out: false,
       },
       {
+        extension: '.shp',
+        cpp: "<a href='/opengeode?page=class_geode_Section.html'><code>Section</code></a>",
+        in: true,
+        out: false,
+      },
+      {
+        extension: '.shz',
+        cpp: "<a href='/opengeode?page=class_geode_Section.html'><code>Section</code></a>",
+        in: true,
+        out: false,
+      },
+      {
         extension: '.stl',
         cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
         in: true,
@@ -167,7 +172,7 @@ export default {
       },
       {
         extension: '.vti (ascii only)',
-        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a><br/><a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a>"<br/><a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage2D</code></a><br/><a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage3D</code></a>",
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a><br/><a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a><br/><a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage2D</code></a><br/><a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage3D</code></a>",
         in: false,
         out: true,
       },
