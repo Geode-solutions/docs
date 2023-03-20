@@ -20,7 +20,7 @@ class geode::Cylinder
 	public:
 		// construction
 	
-		:target:`Cylinder<doxid-classgeode_1_1_cylinder_1a9546e0409c14b05e8f69eac5da39ab42>`(const Segment3D& axis, double radius);
+		:target:`Cylinder<doxid-classgeode_1_1_cylinder_1aa9b46cd171f1923831f879c4e6593bd4>`(Segment3D axis, double radius);
 		:target:`Cylinder<doxid-classgeode_1_1_cylinder_1a1d32a85926178df604a40172e1b31628>`(const Cylinder& other);
 		:target:`Cylinder<doxid-classgeode_1_1_cylinder_1a5fb011818432ae080d7c66091b59123d>`(Cylinder&& other);
 

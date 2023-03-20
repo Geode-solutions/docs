@@ -21,7 +21,7 @@ template class geode::GenericPlane
 	public:
 		// construction
 	
-		:target:`GenericPlane<doxid-classgeode_1_1_generic_plane_1a34a6e20b46e94b2b2b4b6f6db0f96490>`(const Vector3D& normal, const Point3D& origin);
+		:target:`GenericPlane<doxid-classgeode_1_1_generic_plane_1aab0174e2d795e6985fee7ef4815b6439>`(const Vector3D& normal, PointType origin);
 		:target:`GenericPlane<doxid-classgeode_1_1_generic_plane_1aa77067a582199c2766e466b59f3ba966>`(const GenericPlane& other);
 		:target:`GenericPlane<doxid-classgeode_1_1_generic_plane_1aa4ebc0c25ea029b6411b4ea53f8576a5>`(GenericPlane&& other);
 

@@ -20,7 +20,7 @@ class geode::Circle
 	public:
 		// construction
 	
-		:target:`Circle<doxid-classgeode_1_1_circle_1a6d94c376ac548f76ab1bb09739889c11>`(const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane, double radius);
+		:target:`Circle<doxid-classgeode_1_1_circle_1ae77c9e5391db0ceb913e5a2dd4692b3a>`(:ref:`Plane<doxid-classgeode_1_1_plane>` plane, double radius);
 		:target:`Circle<doxid-classgeode_1_1_circle_1a770c7123f1b800c34c29bfed4a9c74dd>`(const Circle& other);
 		:target:`Circle<doxid-classgeode_1_1_circle_1ab8ff6357406154362b7761cf8d5196a3>`(const :ref:`OwnerCircle<doxid-classgeode_1_1_owner_circle>`& other);
 		:target:`Circle<doxid-classgeode_1_1_circle_1a0a5bd2a756f18dbd9e18764ff106eeb6>`(Circle&& other);

@@ -20,7 +20,7 @@ class geode::OwnerCircle
 	public:
 		// construction
 	
-		:target:`OwnerCircle<doxid-classgeode_1_1_owner_circle_1a5915dca6fa56d3791d8279e9d1511bfc>`(const :ref:`OwnerPlane<doxid-classgeode_1_1_owner_plane>`& plane, double radius);
+		:target:`OwnerCircle<doxid-classgeode_1_1_owner_circle_1aa18114cb1e3563f5af297f0004db71d4>`(:ref:`OwnerPlane<doxid-classgeode_1_1_owner_plane>` plane, double radius);
 		:target:`OwnerCircle<doxid-classgeode_1_1_owner_circle_1a6eb355b865841ac90a65259958f0c7af>`(const OwnerCircle& other);
 		:target:`OwnerCircle<doxid-classgeode_1_1_owner_circle_1acb393560e4847b37bfe0d86a196aa51e>`(OwnerCircle&& other);
 

@@ -21,7 +21,7 @@ template class geode::OwnerRay
 	public:
 		// construction
 	
-		:target:`OwnerRay<doxid-classgeode_1_1_owner_ray_1aedf352e8e7f4529f6446774488f2475f>`(const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& direction, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin);
+		:target:`OwnerRay<doxid-classgeode_1_1_owner_ray_1a6e778f4e8f7c8d5cb597882d3f59b734>`(const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& direction, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> origin);
 		:target:`OwnerRay<doxid-classgeode_1_1_owner_ray_1aa7f81951425747a88194e3e2682821be>`(const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment);
 		:target:`OwnerRay<doxid-classgeode_1_1_owner_ray_1a9d1030ebd144ef43507307ef5ea88fdb>`(const OwnerRay<dimension>& other);
 		:target:`OwnerRay<doxid-classgeode_1_1_owner_ray_1a495a58fbead3eb36c25e35ff34d75af3>`(OwnerRay<dimension>&& other);

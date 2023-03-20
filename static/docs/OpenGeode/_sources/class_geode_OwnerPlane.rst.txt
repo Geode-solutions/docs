@@ -20,7 +20,7 @@ class geode::OwnerPlane
 	public:
 		// construction
 	
-		:target:`OwnerPlane<doxid-classgeode_1_1_owner_plane_1a1a597e6f7892dd773dad9b5d0e186258>`(const Vector3D& normal, const Point3D& origin);
+		:target:`OwnerPlane<doxid-classgeode_1_1_owner_plane_1a975290b078af44a29a565a8d71c3eb18>`(const Vector3D& normal, Point3D origin);
 		:target:`OwnerPlane<doxid-classgeode_1_1_owner_plane_1a97fa2445e6abd9dea0b5b124f0169c7f>`(const OwnerPlane& other);
 		:target:`OwnerPlane<doxid-classgeode_1_1_owner_plane_1ab04e6a0faa8f84a3dd98b32a687f194b>`(OwnerPlane&& other);
 

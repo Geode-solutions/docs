@@ -21,7 +21,7 @@ template class geode::GenericSegment
 	public:
 		// construction
 	
-		:target:`GenericSegment<doxid-classgeode_1_1_generic_segment_1a93146b8758139c596c00d548bdbbad57>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p0, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p1);
+		:target:`GenericSegment<doxid-classgeode_1_1_generic_segment_1a2c78d9a4b243f7590835a9b53ce024bd>`(PointType p0, PointType p1);
 		:target:`GenericSegment<doxid-classgeode_1_1_generic_segment_1aa9c5ff03925260bb9ac44eda648c6d28>`(const GenericSegment<PointType, dimension>& other);
 		:target:`GenericSegment<doxid-classgeode_1_1_generic_segment_1ae4ad4c165f23035ef5615cb3cc6a2fba>`(GenericSegment<PointType, dimension>&& other);
 
@@ -33,7 +33,7 @@ template class geode::GenericSegment
 		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`normalized_direction<doxid-classgeode_1_1_generic_segment_1ab99d79707a32de2d9a8345c185100835>`() const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`barycenter<doxid-classgeode_1_1_generic_segment_1a325aebd0dcecde4093bf49eeb14a2d56>`() const;
 		double :target:`length<doxid-classgeode_1_1_generic_segment_1a6a28d5813e2f21f6f77bb7237dbc5b6b>`() const;
-		void :target:`set_point<doxid-classgeode_1_1_generic_segment_1a955241cdc70df439d13e73bd7908bb5a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		void :target:`set_point<doxid-classgeode_1_1_generic_segment_1a4394a2d5bc417154836722ad272cf3ca>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, PointType point);
 		const std::array<PointType, 2>& :target:`vertices<doxid-classgeode_1_1_generic_segment_1a40802c7444821920a3495499ffd93be8>`() const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :target:`bounding_box<doxid-classgeode_1_1_generic_segment_1a1a7e726af02a05ae241a375786c9ca74>`() const;
 	};

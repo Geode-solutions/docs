@@ -21,7 +21,7 @@ template class geode::OwnerSphere
 	public:
 		// construction
 	
-		:target:`OwnerSphere<doxid-classgeode_1_1_owner_sphere_1a589c3b1eece6e20c732648dcbceb9eae>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin, double radius);
+		:target:`OwnerSphere<doxid-classgeode_1_1_owner_sphere_1a17d7c1020cc6f85aa78b193d1eeee2ac>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> origin, double radius);
 		:target:`OwnerSphere<doxid-classgeode_1_1_owner_sphere_1ae859f28274a4bde4193e10e62bb6c848>`(const OwnerSphere<dimension>& other);
 		:target:`OwnerSphere<doxid-classgeode_1_1_owner_sphere_1ae3b4fcd2fa00a8ee3a185715057c41a9>`(OwnerSphere<dimension>&& other);
 

@@ -21,7 +21,7 @@ template class geode::GenericLine
 	public:
 		// construction
 	
-		:target:`GenericLine<doxid-classgeode_1_1_generic_line_1ae8101f5a2cf03044b3c59d9ab0f7e449>`(const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& direction, const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin);
+		:target:`GenericLine<doxid-classgeode_1_1_generic_line_1a0a0c4c0c9c1a9ab895608bd3c85a9d4d>`(const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& direction, PointType origin);
 		:target:`GenericLine<doxid-classgeode_1_1_generic_line_1a29c90fc6d224d0b598c3ace515bb0f2e>`(const :ref:`GenericSegment<doxid-classgeode_1_1_generic_segment>`<PointType, dimension>& segment);
 		:target:`GenericLine<doxid-classgeode_1_1_generic_line_1a29ac3fa25788e0ffd1a40abddf8fa878>`(const GenericLine<PointType, dimension>& other);
 		:target:`GenericLine<doxid-classgeode_1_1_generic_line_1a96e8ef105e7b751e3e44fed1d850fe4e>`(GenericLine<PointType, dimension>&& other);

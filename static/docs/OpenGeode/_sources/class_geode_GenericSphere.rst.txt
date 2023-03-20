@@ -21,7 +21,7 @@ template class geode::GenericSphere
 	public:
 		// construction
 	
-		:target:`GenericSphere<doxid-classgeode_1_1_generic_sphere_1aa6c363c0348c3d3205c2cba5cdbc6006>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin, double radius);
+		:target:`GenericSphere<doxid-classgeode_1_1_generic_sphere_1a73a4ca9f18e20929db99cf4cd6298494>`(PointType origin, double radius);
 		:target:`GenericSphere<doxid-classgeode_1_1_generic_sphere_1ac1ef2dbeea1d985899d4f15673e5fe10>`(const GenericSphere<PointType, dimension>& other);
 		:target:`GenericSphere<doxid-classgeode_1_1_generic_sphere_1ad90b77a8f9b09e937120d66e617e1508>`(GenericSphere<PointType, dimension>&& other);
 
