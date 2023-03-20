@@ -854,7 +854,7 @@ Overview
 	template <index_t dimension>
 	class :ref:`RegularGridOutput<doxid-classgeode_1_1_regular_grid_output>`;
 
-	template <index_t dimension>
+	template <index_t dimension, index_t point_dimension = dimension>
 	class :ref:`RegularGridPointFunction<doxid-classgeode_1_1_regular_grid_point_function>`;
 
 	template <index_t dimension>
@@ -940,7 +940,7 @@ Overview
 	template <index_t dimension>
 	class :ref:`TetrahedralSolidOutput<doxid-classgeode_1_1_tetrahedral_solid_output>`;
 
-	template <index_t dimension>
+	template <index_t dimension, index_t point_dimension = dimension>
 	class :ref:`TetrahedralSolidPointFunction<doxid-classgeode_1_1_tetrahedral_solid_point_function>`;
 
 	template <index_t dimension>
@@ -982,7 +982,7 @@ Overview
 	template <index_t dimension>
 	class :ref:`TriangulatedSurfaceOutput<doxid-classgeode_1_1_triangulated_surface_output>`;
 
-	template <index_t dimension>
+	template <index_t dimension, index_t point_dimension = dimension>
 	class :ref:`TriangulatedSurfacePointFunction<doxid-classgeode_1_1_triangulated_surface_point_function>`;
 
 	template <index_t dimension>

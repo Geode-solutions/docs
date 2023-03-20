@@ -18,37 +18,37 @@ Overview
 
 	#include <regular_grid_point_function.h>
 	
-	template <index_t dimension>
+	template <index_t dimension, index_t point_dimension = dimension>
 	class RegularGridPointFunction
 	{
 	public:
 		// construction
 	
-		:target:`RegularGridPointFunction<doxid-classgeode_1_1_regular_grid_point_function_1ab69950db42b895a5ff0d4b084f663990>`(RegularGridPointFunction<dimension>&& other);
+		:target:`RegularGridPointFunction<doxid-classgeode_1_1_regular_grid_point_function_1a484ae570aed321d057383f37d99623c4>`(RegularGridPointFunction<dimension, point_dimension>&& other);
 
 		// methods
 	
-		void :target:`set_value<doxid-classgeode_1_1_regular_grid_point_function_1a737d62c4205207aee44c921b533e9eaa>`(
+		void :target:`set_value<doxid-classgeode_1_1_regular_grid_point_function_1af20308d81672644875858a462945b598>`(
 			const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::VertexIndices& vertex_index,
-			:ref:`Point<doxid-classgeode_1_1_point>`<dimension> value
+			:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value
 			);
 	
-		void :target:`set_value<doxid-classgeode_1_1_regular_grid_point_function_1ac397dd02065d30584e1cddb923a59aee>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> value);
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1a9545167d286b3e3a45419a272f00a011>`(const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::VertexIndices& vertex_index) const;
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1aa07ba34a9aca674bde64e40467fbe39d>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
+		void :target:`set_value<doxid-classgeode_1_1_regular_grid_point_function_1a47a44bf3bc48f9cc854fe6d17e66e3d8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index, :ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value);
+		const :ref:`Point<doxid-classgeode_1_1_point>`<point_dimension>& :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1a4dc07256cb22024a6465b7cb76b1cbe8>`(const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::VertexIndices& vertex_index) const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<point_dimension>& :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1adcd6cec1fb5aec5473d29a253aa8a389>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
 	
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1aaf257bc8c7f1bb52afcb70286e914278>`(
+		:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> :target:`value<doxid-classgeode_1_1_regular_grid_point_function_1af222e20c829103653be2e73682670093>`(
 			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 			const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices& grid_cell_indices
 			) const;
 	
-		static RegularGridPointFunction<dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_point_function_1abb851dddaf84d70cfc89c163f36788af>`(
+		static RegularGridPointFunction<dimension, point_dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_point_function_1aedb30b88c8d1648a73c68c223991ffb9>`(
 			const RegularGrid<dimension>& grid,
 			absl::string_view function_name,
-			:ref:`Point<doxid-classgeode_1_1_point>`<dimension> value
+			:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value
 			);
 	
-		static RegularGridPointFunction<dimension> :ref:`find<doxid-classgeode_1_1_regular_grid_point_function_1a0163dbcbec25d00b1666d908066b06cf>`(
+		static RegularGridPointFunction<dimension, point_dimension> :ref:`find<doxid-classgeode_1_1_regular_grid_point_function_1a6aaa78c6d4906969e43af1fee10a9dfc>`(
 			const RegularGrid<dimension>& grid,
 			absl::string_view function_name
 			);
@@ -64,26 +64,26 @@ Methods
 -------
 
 .. index:: pair: function; create
-.. _doxid-classgeode_1_1_regular_grid_point_function_1abb851dddaf84d70cfc89c163f36788af:
+.. _doxid-classgeode_1_1_regular_grid_point_function_1aedb30b88c8d1648a73c68c223991ffb9:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static RegularGridPointFunction<dimension> create(
+	static RegularGridPointFunction<dimension, point_dimension> create(
 		const RegularGrid<dimension>& grid,
 		absl::string_view function_name,
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> value
+		:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value
 		)
 
 Create a new object function from a RegularGrid, a name, and a value. Throws an exception if an attribute with the same name exists.
 
 .. index:: pair: function; find
-.. _doxid-classgeode_1_1_regular_grid_point_function_1a0163dbcbec25d00b1666d908066b06cf:
+.. _doxid-classgeode_1_1_regular_grid_point_function_1a6aaa78c6d4906969e43af1fee10a9dfc:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static RegularGridPointFunction<dimension> find(
+	static RegularGridPointFunction<dimension, point_dimension> find(
 		const RegularGrid<dimension>& grid,
 		absl::string_view function_name
 		)

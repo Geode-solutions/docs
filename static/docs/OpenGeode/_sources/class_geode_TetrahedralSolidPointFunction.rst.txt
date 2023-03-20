@@ -18,27 +18,31 @@ Overview
 
 	#include <tetrahedral_solid_point_function.h>
 	
-	template <index_t dimension>
+	template <index_t dimension, index_t point_dimension = dimension>
 	class TetrahedralSolidPointFunction
 	{
 	public:
 		// construction
 	
-		:target:`TetrahedralSolidPointFunction<doxid-classgeode_1_1_tetrahedral_solid_point_function_1aa437c39aa4373168fe5c6fd19eab7869>`(TetrahedralSolidPointFunction<dimension>&& other);
+		:target:`TetrahedralSolidPointFunction<doxid-classgeode_1_1_tetrahedral_solid_point_function_1a7c566cad645b4c8f536bc5bfeed5ee4b>`(TetrahedralSolidPointFunction<dimension, point_dimension>&& other);
 
 		// methods
 	
-		void :target:`set_value<doxid-classgeode_1_1_tetrahedral_solid_point_function_1ad456bd9a6d6902a16721d011aa203204>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> value);
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`value<doxid-classgeode_1_1_tetrahedral_solid_point_function_1ac0406a14d02dca732d214290041fc161>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`value<doxid-classgeode_1_1_tetrahedral_solid_point_function_1aa6024ea1b9acbe58594891f7f31472fd>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const;
+		void :target:`set_value<doxid-classgeode_1_1_tetrahedral_solid_point_function_1ae4ea83b3b5424cfec331bd84f1d5f52b>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index, :ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value);
+		const :ref:`Point<doxid-classgeode_1_1_point>`<point_dimension>& :target:`value<doxid-classgeode_1_1_tetrahedral_solid_point_function_1a4d2c933f652252c22ea50239577413a8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
 	
-		static TetrahedralSolidPointFunction<dimension> :ref:`create<doxid-classgeode_1_1_tetrahedral_solid_point_function_1a234a07963a6e936f15bf45431db607a1>`(
+		:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> :target:`value<doxid-classgeode_1_1_tetrahedral_solid_point_function_1ac8526d07512c05ef91728e1d23adc91b>`(
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id
+			) const;
+	
+		static TetrahedralSolidPointFunction<dimension, point_dimension> :ref:`create<doxid-classgeode_1_1_tetrahedral_solid_point_function_1ad2b5c1ca8bde96bca24f6f1b72254ed9>`(
 			const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& solid,
 			absl::string_view function_name,
-			:ref:`Point<doxid-classgeode_1_1_point>`<dimension> value
+			:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value
 			);
 	
-		static TetrahedralSolidPointFunction<dimension> :ref:`find<doxid-classgeode_1_1_tetrahedral_solid_point_function_1a0bd9352792e0da689bd3bf6dce697ce0>`(
+		static TetrahedralSolidPointFunction<dimension, point_dimension> :ref:`find<doxid-classgeode_1_1_tetrahedral_solid_point_function_1a9e5349753501b46faad6e42ad017abb7>`(
 			const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& solid,
 			absl::string_view function_name
 			);
@@ -54,26 +58,26 @@ Methods
 -------
 
 .. index:: pair: function; create
-.. _doxid-classgeode_1_1_tetrahedral_solid_point_function_1a234a07963a6e936f15bf45431db607a1:
+.. _doxid-classgeode_1_1_tetrahedral_solid_point_function_1ad2b5c1ca8bde96bca24f6f1b72254ed9:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static TetrahedralSolidPointFunction<dimension> create(
+	static TetrahedralSolidPointFunction<dimension, point_dimension> create(
 		const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& solid,
 		absl::string_view function_name,
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> value
+		:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value
 		)
 
 Create a new object function from a :ref:`TetrahedralSolid <doxid-classgeode_1_1_tetrahedral_solid>`, a name, and a value. Throws an exception if an attribute with the same name exists.
 
 .. index:: pair: function; find
-.. _doxid-classgeode_1_1_tetrahedral_solid_point_function_1a0bd9352792e0da689bd3bf6dce697ce0:
+.. _doxid-classgeode_1_1_tetrahedral_solid_point_function_1a9e5349753501b46faad6e42ad017abb7:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static TetrahedralSolidPointFunction<dimension> find(
+	static TetrahedralSolidPointFunction<dimension, point_dimension> find(
 		const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& solid,
 		absl::string_view function_name
 		)

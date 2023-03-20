@@ -18,27 +18,31 @@ Overview
 
 	#include <triangulated_surface_point_function.h>
 	
-	template <index_t dimension>
+	template <index_t dimension, index_t point_dimension = dimension>
 	class TriangulatedSurfacePointFunction
 	{
 	public:
 		// construction
 	
-		:target:`TriangulatedSurfacePointFunction<doxid-classgeode_1_1_triangulated_surface_point_function_1ae871df0f62e30f7eb4f011051840cc36>`(TriangulatedSurfacePointFunction<dimension>&& other);
+		:target:`TriangulatedSurfacePointFunction<doxid-classgeode_1_1_triangulated_surface_point_function_1ae35bede0cd23f289095cf738efd64896>`(TriangulatedSurfacePointFunction<dimension, point_dimension>&& other);
 
 		// methods
 	
-		void :target:`set_value<doxid-classgeode_1_1_triangulated_surface_point_function_1aa75753efd3f096617f8c8e09dce3cad2>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> value);
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`value<doxid-classgeode_1_1_triangulated_surface_point_function_1a30904509228d6e9eef5ab84e99ed7eee>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`value<doxid-classgeode_1_1_triangulated_surface_point_function_1afc39b04ec2173ac8eef30c8892160c09>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const;
+		void :target:`set_value<doxid-classgeode_1_1_triangulated_surface_point_function_1ac6f14785413418bbffeda097f65a1c07>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index, :ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value);
+		const :ref:`Point<doxid-classgeode_1_1_point>`<point_dimension>& :target:`value<doxid-classgeode_1_1_triangulated_surface_point_function_1acab8244129ee30b0e77896c28de3b9ff>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
 	
-		static TriangulatedSurfacePointFunction<dimension> :ref:`create<doxid-classgeode_1_1_triangulated_surface_point_function_1a4506e411d598b97acc089f58f7043632>`(
+		:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> :target:`value<doxid-classgeode_1_1_triangulated_surface_point_function_1ad0ca7c38db22f25ca6362b1cdedf0a29>`(
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id
+			) const;
+	
+		static TriangulatedSurfacePointFunction<dimension, point_dimension> :ref:`create<doxid-classgeode_1_1_triangulated_surface_point_function_1a7c28307c61033fe6019d0bf1389e3adf>`(
 			const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& solid,
 			absl::string_view function_name,
-			:ref:`Point<doxid-classgeode_1_1_point>`<dimension> value
+			:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value
 			);
 	
-		static TriangulatedSurfacePointFunction<dimension> :ref:`find<doxid-classgeode_1_1_triangulated_surface_point_function_1a8880f38152b980ecbfbdf410b28b324a>`(
+		static TriangulatedSurfacePointFunction<dimension, point_dimension> :ref:`find<doxid-classgeode_1_1_triangulated_surface_point_function_1a3d4b6849e72e2ebad26b631b7f237f7a>`(
 			const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& solid,
 			absl::string_view function_name
 			);
@@ -54,26 +58,26 @@ Methods
 -------
 
 .. index:: pair: function; create
-.. _doxid-classgeode_1_1_triangulated_surface_point_function_1a4506e411d598b97acc089f58f7043632:
+.. _doxid-classgeode_1_1_triangulated_surface_point_function_1a7c28307c61033fe6019d0bf1389e3adf:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static TriangulatedSurfacePointFunction<dimension> create(
+	static TriangulatedSurfacePointFunction<dimension, point_dimension> create(
 		const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& solid,
 		absl::string_view function_name,
-		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> value
+		:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value
 		)
 
 Create a new object function from a :ref:`TriangulatedSurface <doxid-classgeode_1_1_triangulated_surface>`, a name, and a value. Throws an exception if an attribute with the same name exists.
 
 .. index:: pair: function; find
-.. _doxid-classgeode_1_1_triangulated_surface_point_function_1a8880f38152b980ecbfbdf410b28b324a:
+.. _doxid-classgeode_1_1_triangulated_surface_point_function_1a3d4b6849e72e2ebad26b631b7f237f7a:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	static TriangulatedSurfacePointFunction<dimension> find(
+	static TriangulatedSurfacePointFunction<dimension, point_dimension> find(
 		const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& solid,
 		absl::string_view function_name
 		)
