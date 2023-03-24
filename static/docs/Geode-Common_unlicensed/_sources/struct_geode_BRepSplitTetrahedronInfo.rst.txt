@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::BRepSplitTetrahedronInfo
+.. _doxid-structgeode_1_1_b_rep_split_tetrahedron_info:
+
+struct geode::BRepSplitTetrahedronInfo
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier.h>
+	
+	struct BRepSplitTetrahedronInfo
+	{
+		// fields
+	
+		index_t :target:`unique_vertex<doxid-structgeode_1_1_b_rep_split_tetrahedron_info_1a30982729cc4ff57349c3ee4ad75f99a0>` { NO_ID };
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`SolidSplitInfo<doxid-structgeode_1_1_solid_split_info>`, 1>> :target:`block_info<doxid-structgeode_1_1_b_rep_split_tetrahedron_info_1ac9c564cd5cbcd7a145fafb29cbd10d6c>`;
+	};
