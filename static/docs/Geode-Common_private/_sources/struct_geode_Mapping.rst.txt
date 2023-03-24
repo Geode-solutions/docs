@@ -1,8 +1,8 @@
-.. index:: pair: struct; geode::Mapping
-.. _doxid-structgeode_1_1_mapping:
+.. index:: pair: struct; geode::Mapping<index_t>
+.. _doxid-structgeode_1_1_mapping_3_01index__t_01_4:
 
-template struct geode::Mapping
-==============================
+template struct geode::Mapping<index_t>
+=======================================
 
 .. toctree::
 	:hidden:
@@ -15,21 +15,22 @@ template struct geode::Mapping
 
 	#include <information.h>
 	
-	template <typename Type>
-	struct Mapping
+	template <>
+	struct Mapping<index_t>
 	{
 		// fields
 	
-		Type :target:`new_id<doxid-structgeode_1_1_mapping_1affe5e3c6e103d5d9d4cbca4f372140d4>`;
-		Type :target:`old_id<doxid-structgeode_1_1_mapping_1a9d90a5d9d3ad45272bc66190e09dee1a>`;
+		index_t :target:`new_id<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1a2c11baf68f7da1b62719dfb20a3101f7>` { NO_ID };
+		index_t :target:`old_id<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1a3ed2c553e67aa1f1d19aaf22f93eb248>` { NO_ID };
 
 		// construction
 	
-		:target:`Mapping<doxid-structgeode_1_1_mapping_1a24b8abb6665c1fe06ff17f15d80040e4>`();
-		:target:`Mapping<doxid-structgeode_1_1_mapping_1a3b26d6454dd275dc999bad0f296d8035>`(Type new_id_in, Type old_id_in);
+		:target:`Mapping<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1a92e9454424dfd557026e62718ed9c1a9>`();
+		:target:`Mapping<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1a8b683d3ebbd0f500966b9922c32b11ba>`(index_t new_id_in, index_t old_id_in);
 
 		// methods
 	
-		bool :target:`operator ==<doxid-structgeode_1_1_mapping_1ad9a8029ca74bab6dfe93345f9af7fd65>` (const Mapping& other) const;
-		bool :target:`operator <<doxid-structgeode_1_1_mapping_1afa96db0d75841f5460098bc7ee8848c0>` (const Mapping& other) const;
+		bool :target:`operator ==<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1a5c7fc26a560eb88fde8558cee3c7dae0>` (const :ref:`Mapping<doxid-structgeode_1_1_mapping>`& other) const;
+		bool :target:`operator <<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1a4d681997e5feaf62bd4b508a60c1ac78>` (const :ref:`Mapping<doxid-structgeode_1_1_mapping>`& other) const;
+		std::string :target:`string<doxid-structgeode_1_1_mapping_3_01index__t_01_4_1aae78febe999099a833f5430b8754a3fe>`() const;
 	};

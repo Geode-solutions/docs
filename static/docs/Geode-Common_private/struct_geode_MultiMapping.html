@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>template struct geode::MultiMapping &#8212; Python  documentation</title>
+    <title>template struct geode::MultiMapping&lt;index_t&gt; &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -19,7 +19,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template struct geode::MultiMapping&lt;index_t&gt;" href="struct_geode_MultiMapping-2.html" />
+    <link rel="next" title="template struct geode::MultiMapping" href="struct_geode_MultiMapping-2.html" />
     <link rel="prev" title="struct geode::ModelSplitTriangleInfo" href="struct_geode_ModelSplitTriangleInfo.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -36,29 +36,30 @@
 
           <div class="body" role="main">
             
-  <section id="template-struct-geode-multimapping">
-<span id="doxid-structgeode-1-1-multi-mapping"></span><span id="index-0"></span><h1>template struct geode::MultiMapping</h1>
+  <section id="template-struct-geode-multimapping-index-t">
+<span id="doxid-structgeode-1-1-multi-mapping-3-01index-t-01-4"></span><span id="index-0"></span><h1>template struct geode::MultiMapping&lt;index_t&gt;</h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;information.h&gt;</span><span class="cp"></span>
 
-<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
-<span class="k">struct</span> <span class="n">MultiMapping</span>
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">struct</span> <span class="n">MultiMapping</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span>
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
-    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-1abc9d5b464a724428f6216b3a4f499791"><span></span><span class="n">new_id</span></span><span></span><span class="p">;</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">Type</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-1a57a485e8baa791acd082e1854ce24032"><span></span><span class="n">old_id</span></span><span></span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-3-01index-t-01-4-1a19ad795fbfdf7305e1ae11507fd95b6a"><span></span><span class="n">new_id</span></span><span></span> <span class="p">{</span> <span class="n">NO_ID</span> <span class="p">};</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-3-01index-t-01-4-1aaabcc05a2aa1f78e1b99dadc1f9c74c8"><span></span><span class="n">old_id</span></span><span></span><span class="p">;</span>
 
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-1adc7a0ec0e80779ca7bd0358a579a9b48"><span></span><span class="n">MultiMapping</span></span><span></span><span class="p">();</span>
-    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-1ab9d75eef917302d01c2ae681140b1068"><span></span><span class="n">MultiMapping</span></span><span></span><span class="p">(</span><span class="n">Type</span> <span class="n">new_id_in</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">Type</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="n">old_id_in</span><span class="p">);</span>
-    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-1ad8eaf94e147938ac8e18d975f3daaf28"><span></span><span class="n">MultiMapping</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">Type</span><span class="o">&gt;</span> <span class="n">mapping</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-3-01index-t-01-4-1a9204c9dd572c70fbd0b5dde910dfb3e5"><span></span><span class="n">MultiMapping</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-3-01index-t-01-4-1ad60076cca873f7856390d7bc588f0a2a"><span></span><span class="n">MultiMapping</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">new_id_in</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="n">old_id_in</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-3-01index-t-01-4-1a8f9704419bbb49d183c11d229f2ae801"><span></span><span class="n">MultiMapping</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_Mapping-2.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">mapping</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-1abd3278e4af799f9be385d4c29b5ddca3"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">MultiMapping</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-3-01index-t-01-4-1a900b956621dab2aa5d8d9dc03899c38e"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_MultiMapping-2.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-multi-mapping-3-01index-t-01-4-1ae99c9fa29a359489d05cad2e0130e6dc"><span></span><span class="n">string</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </section>
 

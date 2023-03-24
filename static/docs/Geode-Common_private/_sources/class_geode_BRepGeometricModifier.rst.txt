@@ -25,6 +25,18 @@ class geode::BRepGeometricModifier
 
 		// methods
 	
+		:ref:`BRepSplitTetrahedronInfo<doxid-structgeode_1_1_b_rep_split_tetrahedron_info>` :target:`split_tetrahedron<doxid-classgeode_1_1_b_rep_geometric_modifier_1ad280c4945177bdb633f1fe28c37c6038>`(
+			const Block3D& block,
+			index_t tetrahedron,
+			const Point3D& point
+			);
+	
+		:ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_split_triangle_info>` :target:`split_triangle<doxid-classgeode_1_1_b_rep_geometric_modifier_1a34a167161ebb3c02001af93568b4c0d1>`(
+			const Block3D& block,
+			const PolyhedronFacet& facet,
+			const Point3D& point
+			);
+	
 		:ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_split_triangle_info>` :target:`split_triangle<doxid-classgeode_1_1_b_rep_geometric_modifier_1afc36314e9e1557706f495bfe0862bfe3>`(
 			const Surface3D& surface,
 			index_t triangle,

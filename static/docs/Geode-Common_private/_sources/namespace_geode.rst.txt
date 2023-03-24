@@ -13,6 +13,7 @@ namespace geode
 	struct_geode_BRepCollapsePolygonEdgeInfo.rst
 	struct_geode_BRepSimulationResult.rst
 	struct_geode_BRepSplitPolygonEdgeInfo.rst
+	struct_geode_BRepSplitTetrahedronInfo.rst
 	struct_geode_BRepSplitTriangleInfo.rst
 	struct_geode_CollapseEdgeInfo.rst
 	struct_geode_CollapsePolygonEdgeInfo.rst
@@ -117,6 +118,7 @@ Overview
 	struct :ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>`;
 	struct :ref:`BRepSimulationResult<doxid-structgeode_1_1_b_rep_simulation_result>`;
 	struct :ref:`BRepSplitPolygonEdgeInfo<doxid-structgeode_1_1_b_rep_split_polygon_edge_info>`;
+	struct :ref:`BRepSplitTetrahedronInfo<doxid-structgeode_1_1_b_rep_split_tetrahedron_info>`;
 	struct :ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_split_triangle_info>`;
 	struct :ref:`CollapseEdgeInfo<doxid-structgeode_1_1_collapse_edge_info>`;
 	struct :ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>`;
@@ -128,22 +130,22 @@ Overview
 	template <index_t dimension>
 	struct :ref:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path>`;
 
-	template <typename Type>
-	struct :ref:`Mapping<doxid-structgeode_1_1_mapping>`;
-
 	template <>
 	struct :ref:`Mapping<index_t><doxid-structgeode_1_1_mapping_3_01index__t_01_4>`;
+
+	template <typename Type>
+	struct :ref:`Mapping<doxid-structgeode_1_1_mapping>`;
 
 	struct :ref:`ModelCollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info>`;
 	struct :ref:`ModelSimulationResult<doxid-structgeode_1_1_model_simulation_result>`;
 	struct :ref:`ModelSplitPolygonEdgeInfo<doxid-structgeode_1_1_model_split_polygon_edge_info>`;
 	struct :ref:`ModelSplitTriangleInfo<doxid-structgeode_1_1_model_split_triangle_info>`;
 
-	template <typename Type>
-	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
-
 	template <>
 	struct :ref:`MultiMapping<index_t><doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4>`;
+
+	template <typename Type>
+	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
 
 	template <index_t dimension>
 	struct :ref:`PolygonData<doxid-structgeode_1_1_polygon_data>`;
