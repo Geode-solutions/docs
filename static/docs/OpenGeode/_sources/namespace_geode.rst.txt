@@ -18,6 +18,7 @@ namespace geode
 	struct_geode_AttributeLinearInterpolationImpl-4.rst
 	struct_geode_AttributeProperties.rst
 	struct_geode_BRepComponentMeshEdges.rst
+	struct_geode_BRepComponentMeshPolygons.rst
 	struct_geode_BRepMeshesElementMapping.rst
 	struct_geode_BRepMeshesVertexMapping.rst
 	struct_geode_BlockDefinition.rst
@@ -355,7 +356,8 @@ Overview
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`TriangulatedSurfaceOutput<doxid-classgeode_1_1_triangulated_surface_output>`<dimension>, absl::string_view> :target:`TriangulatedSurfaceOutputFactory<doxid-namespacegeode_1a9388a24803a251c79b515a95dff5c8c1>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`VertexSetInput<doxid-classgeode_1_1_vertex_set_input>`, absl::string_view> :target:`VertexSetInputFactory<doxid-namespacegeode_1aaacd0a2e03c02adfa7c874d6ebc3d398>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`VertexSetOutput<doxid-classgeode_1_1_vertex_set_output>`, absl::string_view> :target:`VertexSetOutputFactory<doxid-namespacegeode_1a70ed4ecf1f67bc9d4861fee1cdeea87f>`;
-	typedef absl::flat_hash_map<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`, std::vector<std::pair<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>>> :target:`ComponentMeshVertexPairs<doxid-namespacegeode_1ab0cc9fad3b163b933d6a81b0135bad90>`;
+	typedef absl::flat_hash_map<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`, std::vector<std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>>> :target:`ComponentMeshVertexPairs<doxid-namespacegeode_1afcb7c0c5762ff674c84cb62658de1214>`;
+	typedef absl::flat_hash_map<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`, std::vector<std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 3>>> :target:`ComponentMeshVertexTriplets<doxid-namespacegeode_1a2beb58457f73fcf917a444bfe5eb9fd3>`;
 	typedef :ref:`uuid<doxid-structgeode_1_1uuid>` :target:`uuid_from_conversion_attribute_type<doxid-namespacegeode_1acf1a636803ffb21a84003a8d351c9391>`;
 	typedef :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`unique_vertex_from_conversion_attribute_type<doxid-namespacegeode_1a48fde7c8ed05188f679e443bac7973ad>`;
 	typedef :ref:`ModelConcatener<doxid-classgeode_1_1_model_concatener>`<:ref:`BRep<doxid-classgeode_1_1_b_rep>`> :target:`BRepConcatener<doxid-namespacegeode_1a50b43b853f82a3d45e61cf0022f40a27>`;
@@ -397,6 +399,7 @@ Overview
 
 	struct :ref:`AttributeProperties<doxid-structgeode_1_1_attribute_properties>`;
 	struct :ref:`BRepComponentMeshEdges<doxid-structgeode_1_1_b_rep_component_mesh_edges>`;
+	struct :ref:`BRepComponentMeshPolygons<doxid-structgeode_1_1_b_rep_component_mesh_polygons>`;
 	struct :ref:`BRepMeshesElementMapping<doxid-structgeode_1_1_b_rep_meshes_element_mapping>`;
 	struct :ref:`BRepMeshesVertexMapping<doxid-structgeode_1_1_b_rep_meshes_vertex_mapping>`;
 	struct :ref:`BlockDefinition<doxid-structgeode_1_1_block_definition>`;
@@ -1992,6 +1995,24 @@ Overview
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id
 		);
 
+	:ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>` opengeode_model_api :target:`polygon_unique_vertices<doxid-namespacegeode_1aaf2912027ceffd16c612468d8450985d>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		const Block3D& block,
+		const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& facet
+		);
+
+	:ref:`BRepComponentMeshPolygons<doxid-structgeode_1_1_b_rep_component_mesh_polygons>` opengeode_model_api :target:`component_mesh_polygons<doxid-namespacegeode_1a56e3411cf9797db1919c5019a64a117e>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+		const Surface3D& surface,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id
+		);
+
+	:ref:`BRepComponentMeshPolygons<doxid-structgeode_1_1_b_rep_component_mesh_polygons>` opengeode_model_api :target:`component_mesh_polygons<doxid-namespacegeode_1aa8a3e4f12d50a1fd82e9c73340127b84>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+		const Block3D& block,
+		const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& facet
+		);
+
 	:ref:`PolyhedraAroundFacet<doxid-namespacegeode_1a9f8d0fbd287f5475017252ef10b8eabd>` opengeode_model_api :target:`block_mesh_polyhedra_from_surface_polygon<doxid-namespacegeode_1a2c3acbdbbe8872f610673608126db256>`(
 		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
 		const Block3D& block,
@@ -2041,15 +2062,28 @@ Overview
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id
 		);
 
-	:ref:`ComponentMeshVertexPairs<doxid-namespacegeode_1ab0cc9fad3b163b933d6a81b0135bad90>` opengeode_model_api :target:`component_mesh_vertex_pairs<doxid-namespacegeode_1af295c87a0e76867650850a2ec720d5cf>`(
+	:ref:`ComponentMeshVertexPairs<doxid-namespacegeode_1afcb7c0c5762ff674c84cb62658de1214>` opengeode_model_api :target:`component_mesh_vertex_pairs<doxid-namespacegeode_1af295c87a0e76867650850a2ec720d5cf>`(
 		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices0,
 		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices1
 		);
 
-	:ref:`ComponentMeshVertexPairs<doxid-namespacegeode_1ab0cc9fad3b163b933d6a81b0135bad90>` opengeode_model_api :target:`component_mesh_vertex_pairs<doxid-namespacegeode_1a27ac43849a9ba436b95398d906bfb41c>`(
+	:ref:`ComponentMeshVertexPairs<doxid-namespacegeode_1afcb7c0c5762ff674c84cb62658de1214>` opengeode_model_api :target:`component_mesh_vertex_pairs<doxid-namespacegeode_1a112527c35cd8cac0e84ab7102ce46c0d>`(
 		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices0,
 		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices1,
-		const :ref:`geode::ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type
+		const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type
+		);
+
+	:ref:`ComponentMeshVertexTriplets<doxid-namespacegeode_1a2beb58457f73fcf917a444bfe5eb9fd3>` opengeode_model_api :target:`component_mesh_vertex_triplets<doxid-namespacegeode_1a479628e7e2372827ce8f8acaa3373dde>`(
+		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices0,
+		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices1,
+		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices2
+		);
+
+	:ref:`ComponentMeshVertexTriplets<doxid-namespacegeode_1a2beb58457f73fcf917a444bfe5eb9fd3>` opengeode_model_api :target:`component_mesh_vertex_triplets<doxid-namespacegeode_1a1b3d268bf0d2879c7491767a167689b5>`(
+		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices0,
+		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices1,
+		absl::Span<const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> unique_vertices2,
+		const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type
 		);
 
 	std::tuple<:ref:`Section<doxid-classgeode_1_1_section>`, :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`> opengeode_model_api :target:`convert_brep_into_section<doxid-namespacegeode_1a2471e7d3579352477ff8618417c848ce>`(
