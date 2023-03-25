@@ -102,6 +102,15 @@ AABB tree structure implementation The tree is store in s single vector followin
 			) const;
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`closest_element_box_hint<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a6ce00d3a8d9ac7dcdbd8f3da6551304e>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
+	
+		void :target:`containing_boxes_recursive<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a9b6ef9a4dcb77bf35642f07ac8ee2c66>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` node_index,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_begin,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_end,
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query,
+			std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& result
+			) const;
+	
 		static bool :target:`is_leaf<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a20259418fd9ad8b35f8892f6ed7fd7a0>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` box_begin, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` box_end);
 	
 		static :ref:`Iterator<doxid-structgeode_1_1_a_a_b_b_tree_1_1_impl_1_1_iterator>` :target:`get_recursive_iterators<doxid-classgeode_1_1_a_a_b_b_tree_1_1_impl_1a9cff98c6921620e44c333181366f3fff>`(

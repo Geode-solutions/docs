@@ -39,6 +39,7 @@ Overview
 		AABBTree& :target:`operator =<doxid-classgeode_1_1_a_a_b_b_tree_1a1038006ebb78e73b13e34ce9ab7abbc5>` (AABBTree&& other);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_bboxes<doxid-classgeode_1_1_a_a_b_b_tree_1a279a079000abc4d4319b8dfce24ec5cf>`() const;
 		const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>& :target:`bounding_box<doxid-classgeode_1_1_a_a_b_b_tree_1a8c96181abacb46537004919fe764a657>`() const;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`containing_boxes<doxid-classgeode_1_1_a_a_b_b_tree_1a3405793121bacc6b4e9cc7f0ac809a07>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 	
 		template <typename EvalDistance>
 		std::tuple<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>, double> :ref:`closest_element_box<doxid-classgeode_1_1_a_a_b_b_tree_1a3cc03c54455ea2e519b4d336e53e9689>`(
@@ -119,6 +120,28 @@ Methods
 Gets the number of boxes in the lower level of the aabb tree.
 
 This value should match the initial size of the container that store all objects to organize the the aabb tree.
+
+.. index:: pair: function; containing_boxes
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1a3405793121bacc6b4e9cc7f0ac809a07:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> containing_boxes(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const
+
+Gets all the boxes containing a point.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- query
+
+		- the point to test
 
 .. index:: pair: function; closest_element_box
 .. _doxid-classgeode_1_1_a_a_b_b_tree_1a3cc03c54455ea2e519b4d336e53e9689:
