@@ -1,0 +1,25 @@
+.. index:: pair: struct; geode::SectionGeometricModifier::CleanVerticesMappings
+.. _doxid-structgeode_1_1_section_geometric_modifier_1_1_clean_vertices_mappings:
+
+struct geode::SectionGeometricModifier::CleanVerticesMappings
+=============================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_geometric_modifier.h>
+	
+	struct CleanVerticesMappings
+	{
+		// fields
+	
+		:ref:`OldToNews<doxid-classgeode_1_1_section_geometric_modifier_1a1fbd707c4cd3306bce692cbc8792be5f>` :target:`lines<doxid-structgeode_1_1_section_geometric_modifier_1_1_clean_vertices_mappings_1a51539d80722c827389a98d5053fd5274>`;
+		:ref:`OldToNews<doxid-classgeode_1_1_section_geometric_modifier_1a1fbd707c4cd3306bce692cbc8792be5f>` :target:`surfaces<doxid-structgeode_1_1_section_geometric_modifier_1_1_clean_vertices_mappings_1a5087c649dd656b5157d3a0f2e1fc950b>`;
+		std::vector<index_t> :target:`unique_vertices<doxid-structgeode_1_1_section_geometric_modifier_1_1_clean_vertices_mappings_1a895d3f192b9322605c5fe117feef3d55>`;
+	};

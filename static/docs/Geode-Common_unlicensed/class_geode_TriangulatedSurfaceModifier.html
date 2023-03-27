@@ -19,7 +19,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::VertexSetModifier" href="class_geode_VertexSetModifier.html" />
+    <link rel="next" title="struct geode::TriangulatedSurfaceModifier::CollapseEdgeInfo" href="struct_geode_TriangulatedSurfaceModifier_CollapseEdgeInfo.html" />
     <link rel="prev" title="template class geode::TriangulatedSurfaceEpsilonModifier" href="class_geode_TriangulatedSurfaceEpsilonModifier.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -48,6 +48,21 @@
 <span class="k">class</span> <span class="nl">TriangulatedSurfaceModifier</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_VertexSetModifier.html#doxid-classgeode-1-1-vertex-set-modifier"><span class="std std-ref">geode::VertexSetModifier</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="struct_geode_SplitInfo.html#doxid-structgeode-1-1-split-info"><span class="std std-ref">SplitInfo</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-modifier-1abf3a1e4ff2b7aea66269d45342485890"><span></span><span class="n">SplitTriangle</span></span><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping-2.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">PolygonEdge</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-modifier-1aa104b4f8cc68b98442e642c76bbd3873"><span></span><span class="n">PolygonEdgeMapping</span></span><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <a class="reference internal" href="struct_geode_MultiMapping-2.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">PolygonEdge</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a00c7756a6df982db728c4f9921d136f1"><span></span><span class="n">PolygonEdgeMultiMapping</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// structs</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_CollapseEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_PolygonEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-polygon-edge-info"><span class="std std-ref">PolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_SplitPolygonEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-split-polygon-edge-info"><span class="std std-ref">SplitPolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_SplitTriangleInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-split-triangle-info"><span class="std std-ref">SplitTriangleInfo</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_SurfaceCollapseInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-surface-collapse-info"><span class="std std-ref">SurfaceCollapseInfo</span></a><span></span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-modifier-1ac3b371bef4f3ff5f79e75e2e8995a182"><span></span><span class="n">TriangulatedSurfaceModifier</span></span><span></span><span class="p">(</span>
@@ -63,22 +78,22 @@
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a5e73c85b316662435978b88096bd34d5"><span></span><span class="n">is_edge_active</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-triangulated-surface-modifier-1af33792af1c0062e08d5392631a723f1d"><span></span><span class="n">is_edge_active</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <a class="reference internal" href="struct_geode_SplitTriangleInfo.html#doxid-structgeode-1-1-split-triangle-info"><span class="std std-ref">SplitTriangleInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1aa0d800216074d30d9413d77148509d27"><span class="std std-ref">split_triangle</span></a><span></span><span class="p">(</span>
+    <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_SplitTriangleInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-split-triangle-info"><span class="std std-ref">SplitTriangleInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1aa0d800216074d30d9413d77148509d27"><span class="std std-ref">split_triangle</span></a><span></span><span class="p">(</span>
         <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
         <span class="p">);</span>
 
-    <a class="reference internal" href="struct_geode_SplitPolygonEdgeInfo.html#doxid-structgeode-1-1-split-polygon-edge-info"><span class="std std-ref">SplitPolygonEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a71bd11173aede092c0fde70c1e2d5981"><span class="std std-ref">split_edge</span></a><span></span><span class="p">(</span>
+    <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_SplitPolygonEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-split-polygon-edge-info"><span class="std std-ref">SplitPolygonEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a71bd11173aede092c0fde70c1e2d5981"><span class="std std-ref">split_edge</span></a><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
         <span class="p">);</span>
 
-    <a class="reference internal" href="struct_geode_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a49d0d73288724398a6bd046f2ffb7813"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span>
+    <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a49d0d73288724398a6bd046f2ffb7813"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
         <span class="p">);</span>
 
-    <a class="reference internal" href="struct_geode_CollapseEdgeInfo.html#doxid-structgeode-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1ad36af2def7e5726fc60b920c3d23b017"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_CollapseEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1ad36af2def7e5726fc60b920c3d23b017"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1aabc8f7b290f31d56b3a2ef014d772008"><span class="std std-ref">swap_edge</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">);</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1af8b435ff949b373922c3130aec0ee212"><span class="std std-ref">clean_triangles</span></a><span></span><span class="p">();</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-triangulated-surface-modifier-1a932099dbcd5b09588f24897cc315bedd"><span class="std std-ref">clean_vertices</span></a><span></span><span class="p">();</span>
@@ -102,7 +117,7 @@
 <span id="details-classgeode-1-1-triangulated-surface-modifier"></span><h2>Detailed Documentation</h2>
 <section id="methods">
 <h3>Methods</h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1aa0d800216074d30d9413d77148509d27"><span id="index-1"></span><a class="reference internal" href="struct_geode_SplitTriangleInfo.html#doxid-structgeode-1-1-split-triangle-info"><span class="std std-ref">SplitTriangleInfo</span></a><span></span> <span class="n">split_triangle</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1aa0d800216074d30d9413d77148509d27"><span id="index-1"></span><a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_SplitTriangleInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-split-triangle-info"><span class="std std-ref">SplitTriangleInfo</span></a><span></span> <span class="n">split_triangle</span><span class="p">(</span>
     <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
@@ -122,7 +137,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a71bd11173aede092c0fde70c1e2d5981"><span id="index-2"></span><a class="reference internal" href="struct_geode_SplitPolygonEdgeInfo.html#doxid-structgeode-1-1-split-polygon-edge-info"><span class="std std-ref">SplitPolygonEdgeInfo</span></a><span></span> <span class="n">split_edge</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a71bd11173aede092c0fde70c1e2d5981"><span id="index-2"></span><a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_SplitPolygonEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-split-polygon-edge-info"><span class="std std-ref">SplitPolygonEdgeInfo</span></a><span></span> <span class="n">split_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
@@ -142,7 +157,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a49d0d73288724398a6bd046f2ffb7813"><span id="index-3"></span><a class="reference internal" href="struct_geode_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1a49d0d73288724398a6bd046f2ffb7813"><span id="index-3"></span><a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_CollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-collapse-polygon-edge-info"><span class="std std-ref">CollapsePolygonEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
@@ -162,7 +177,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1ad36af2def7e5726fc60b920c3d23b017"><span id="index-4"></span><a class="reference internal" href="struct_geode_CollapseEdgeInfo.html#doxid-structgeode-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-triangulated-surface-modifier-1ad36af2def7e5726fc60b920c3d23b017"><span id="index-4"></span><a class="reference internal" href="struct_geode_TriangulatedSurfaceModifier_CollapseEdgeInfo.html#doxid-structgeode-1-1-triangulated-surface-modifier-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
 <p>Collapse an edge. The triangles incident to this edge are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">

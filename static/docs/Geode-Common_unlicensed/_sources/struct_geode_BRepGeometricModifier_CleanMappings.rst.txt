@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::BRepGeometricModifier::CleanMappings
+.. _doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_clean_mappings:
+
+struct geode::BRepGeometricModifier::CleanMappings
+==================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier.h>
+	
+	struct CleanMappings
+	{
+		// fields
+	
+		:ref:`CleanVerticesMappings<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_clean_vertices_mappings>` :target:`vertices<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_clean_mappings_1a6c0143f609a9c023521c6310103e4c7a>`;
+		:ref:`CleanElementsMappings<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_clean_elements_mappings>` :target:`elements<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_clean_mappings_1af97dc378a89d12b4a2045847a3379e93>`;
+	};
