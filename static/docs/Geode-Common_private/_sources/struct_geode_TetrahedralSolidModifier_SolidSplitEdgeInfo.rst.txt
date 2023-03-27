@@ -1,0 +1,31 @@
+.. index:: pair: struct; geode::TetrahedralSolidModifier::SolidSplitEdgeInfo
+.. _doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_edge_info:
+
+struct geode::TetrahedralSolidModifier::SolidSplitEdgeInfo
+==========================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier.h>
+	
+	struct SolidSplitEdgeInfo
+	{
+		// fields
+	
+		index_t :target:`vertex<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_edge_info_1a348373e5ea19f1f2b2fccab243ecef86>` { NO_ID };
+		:ref:`SidedSolidSplitEdgeInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_sided_solid_split_edge_info>` :target:`left<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_edge_info_1a958900d5a6ab896e08db520f6ae9f9c8>`;
+		:ref:`SidedSolidSplitEdgeInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_sided_solid_split_edge_info>` :target:`right<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_edge_info_1a88eca2beefea664287e8b203538070ff>`;
+		:ref:`AlongSolidSplitEdgeInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_along_solid_split_edge_info>` :target:`along<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_edge_info_1a78cb9ed1c4afd16f2854fba2e47c3824>`;
+
+		// construction
+	
+		:target:`SolidSplitEdgeInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_edge_info_1a26da4aaab1270492f1594d885b8f58c2>`();
+		:target:`SolidSplitEdgeInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_edge_info_1ae12d73026e205ad0ac70b98590c5e651>`(index_t nb_tetrahedra, bool with_edges, bool with_facets);
+	};

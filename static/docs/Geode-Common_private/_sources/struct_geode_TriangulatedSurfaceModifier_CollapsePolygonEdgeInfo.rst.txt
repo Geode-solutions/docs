@@ -1,0 +1,37 @@
+.. index:: pair: struct; geode::TriangulatedSurfaceModifier::CollapsePolygonEdgeInfo
+.. _doxid-structgeode_1_1_triangulated_surface_modifier_1_1_collapse_polygon_edge_info:
+
+struct geode::TriangulatedSurfaceModifier::CollapsePolygonEdgeInfo
+==================================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier.h>
+	
+	struct CollapsePolygonEdgeInfo: public :ref:`geode::TriangulatedSurfaceModifier::SurfaceCollapseInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_surface_collapse_info>`
+	{
+		// fields
+	
+		absl::InlinedVector<:ref:`PolygonEdgeMultiMapping<doxid-classgeode_1_1_triangulated_surface_modifier_1a00c7756a6df982db728c4f9921d136f1>`, 4> :target:`modified<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_collapse_polygon_edge_info_1a6109827f1b40741c4e6e23007b6f4ebf>`;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		:ref:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>` :ref:`vertex<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_surface_collapse_info_1a5e06d4a26ee03997d813f0bdd3f0b77f>`;
+		absl::InlinedVector<index_t, 2> :ref:`inactive_polygons<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_surface_collapse_info_1a9f6a2b42002d6ad9467568e2a1269c45>`;
+		std::vector<PolygonVertex> :ref:`modified_polygons<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_surface_collapse_info_1adc6ecbe865f71257005808395b169db8>`;
+

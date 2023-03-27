@@ -1,8 +1,8 @@
 .. index:: pair: struct; geode::ModelCollapsePolygonEdgeInfo
 .. _doxid-structgeode_1_1_model_collapse_polygon_edge_info:
 
-struct geode::ModelCollapsePolygonEdgeInfo
-==========================================
+template struct geode::ModelCollapsePolygonEdgeInfo
+===================================================
 
 .. toctree::
 	:hidden:
@@ -15,16 +15,21 @@ struct geode::ModelCollapsePolygonEdgeInfo
 
 	#include <information.h>
 	
+	template <index_t dimension>
 	struct ModelCollapsePolygonEdgeInfo
 	{
+		// typedefs
+	
+		typedef typename :ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`<dimension>:::ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1a306800d5f4fe9f8bc50164f396c73b8e>` :target:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1a306800d5f4fe9f8bc50164f396c73b8e>`;
+
 		// fields
 	
-		:ref:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>` :target:`unique_vertex<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1adee1a09c5bced33a6e0dc53aef71c14f>`;
-		absl::flat_hash_map<uuid, absl::InlinedVector<index_t, 1>> :target:`line_info<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1aadda68d6138cc8b1f8ab70c077971616>`;
-		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_collapse_polygon_edge_info>`, 1>> :target:`surface_info<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1ae43c8847dd6dee7998404f373503f996>`;
+		:ref:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>` :target:`unique_vertex<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1ad9607d7c6ffe4d0a4a0133b6945d7372>`;
+		absl::flat_hash_map<uuid, absl::InlinedVector<index_t, 1>> :target:`line_info<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1ab40a73b52e278d90f1b804eeec0ae263>`;
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`CollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1a306800d5f4fe9f8bc50164f396c73b8e>`, 1>> :target:`surface_info<doxid-structgeode_1_1_model_collapse_polygon_edge_info_1a1adc2b43a203d7b172657dd6f4fbda41>`;
 	};
 
 	// direct descendants
 
-	struct :ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_collapse_polygon_edge_info>`;
-	struct :ref:`SectionCollapsePolygonEdgeInfo<doxid-structgeode_1_1_section_collapse_polygon_edge_info>`;
+	struct :ref:`BRepCollapsePolygonEdgeInfo<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_b_rep_collapse_polygon_edge_info>`;
+	struct :ref:`SectionCollapsePolygonEdgeInfo<doxid-structgeode_1_1_section_geometric_modifier_1_1_section_collapse_polygon_edge_info>`;

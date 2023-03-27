@@ -1,0 +1,27 @@
+.. index:: pair: struct; geode::TriangulatedSurfaceModifier::SplitTriangleInfo
+.. _doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_triangle_info:
+
+struct geode::TriangulatedSurfaceModifier::SplitTriangleInfo
+============================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier.h>
+	
+	struct SplitTriangleInfo
+	{
+		// fields
+	
+		index_t :target:`vertex<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_triangle_info_1a8437f3ef00be7c421a32cf2d56bf9cdd>` { NO_ID };
+		absl::InlinedVector<PolygonEdge, 6> :target:`added<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_triangle_info_1a604dbaeb014a4040a1cba9d0aa6c3fcb>`;
+		absl::InlinedVector<:ref:`PolygonEdgeMapping<doxid-classgeode_1_1_triangulated_surface_modifier_1aa104b4f8cc68b98442e642c76bbd3873>`, 2> :target:`modified<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_triangle_info_1a3715e4528298e33b9c53e1a591ff1273>`;
+		absl::InlinedVector<:ref:`PolygonEdgeMapping<doxid-classgeode_1_1_triangulated_surface_modifier_1aa104b4f8cc68b98442e642c76bbd3873>`, 3> :target:`remaining<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_triangle_info_1aef2cc609cfcf73b334d77d518fd7af32>`;
+		absl::InlinedVector<:ref:`TriangleMapping<doxid-namespacegeode_1af3ede97a06831da5d71e5a7212f089cc>`, 3> :target:`triangles<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_triangle_info_1ab3bc7c557bdb2a4d40b76bcd8e8f7d40>`;
+	};

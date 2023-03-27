@@ -1,8 +1,8 @@
 .. index:: pair: struct; geode::ModelSplitTriangleInfo
 .. _doxid-structgeode_1_1_model_split_triangle_info:
 
-struct geode::ModelSplitTriangleInfo
-====================================
+template struct geode::ModelSplitTriangleInfo
+=============================================
 
 .. toctree::
 	:hidden:
@@ -15,15 +15,20 @@ struct geode::ModelSplitTriangleInfo
 
 	#include <information.h>
 	
+	template <index_t dimension>
 	struct ModelSplitTriangleInfo
 	{
+		// typedefs
+	
+		typedef typename :ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`<dimension>:::ref:`SplitTriangleInfo<doxid-structgeode_1_1_model_split_triangle_info_1aff5b3eab576fc0afecfd010436e674a0>` :target:`SplitTriangleInfo<doxid-structgeode_1_1_model_split_triangle_info_1aff5b3eab576fc0afecfd010436e674a0>`;
+
 		// fields
 	
-		index_t :target:`unique_vertex<doxid-structgeode_1_1_model_split_triangle_info_1a6e83b5b16f42db75e0ccde0473403c00>` { NO_ID };
-		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`SplitTriangleInfo<doxid-structgeode_1_1_split_triangle_info>`, 1>> :target:`surface_info<doxid-structgeode_1_1_model_split_triangle_info_1a896a1809a4ce236e1aaf0aeb360dd92b>`;
+		index_t :target:`unique_vertex<doxid-structgeode_1_1_model_split_triangle_info_1a69e4965e6c23e82b05678539e5abe86c>` { NO_ID };
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`SplitTriangleInfo<doxid-structgeode_1_1_model_split_triangle_info_1aff5b3eab576fc0afecfd010436e674a0>`, 1>> :target:`surface_info<doxid-structgeode_1_1_model_split_triangle_info_1aa3f000430a9cda4e21219494d9d5fe57>`;
 	};
 
 	// direct descendants
 
-	struct :ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_split_triangle_info>`;
-	struct :ref:`SectionSplitTriangleInfo<doxid-structgeode_1_1_section_split_triangle_info>`;
+	struct :ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_b_rep_split_triangle_info>`;
+	struct :ref:`SectionSplitTriangleInfo<doxid-structgeode_1_1_section_geometric_modifier_1_1_section_split_triangle_info>`;
