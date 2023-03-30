@@ -1,0 +1,57 @@
+.. index:: pair: class; geode::AttributeCoordinateReferenceSystem
+.. _doxid-classgeode_1_1_attribute_coordinate_reference_system:
+
+template class geode::AttributeCoordinateReferenceSystem
+========================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <attribute_coordinate_reference_system.h>
+	
+	template <index_t dimension>
+	class AttributeCoordinateReferenceSystem: public :ref:`geode::CoordinateReferenceSystem<doxid-classgeode_1_1_coordinate_reference_system>`
+	{
+	public:
+		// construction
+	
+		:target:`AttributeCoordinateReferenceSystem<doxid-classgeode_1_1_attribute_coordinate_reference_system_1a1ae9ea4a171816476d3e8e1e81541a9f>`(:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& manager);
+	
+		:target:`AttributeCoordinateReferenceSystem<doxid-classgeode_1_1_attribute_coordinate_reference_system_1ab76475dd1858cd6f4b31c728fee1a35d>`(
+			:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& manager,
+			absl::string_view attribute_name
+			);
+
+		// methods
+	
+		virtual :ref:`CRSType<doxid-namespacegeode_1a1da798a270c4d8fa3ec8e817183a1df5>` :target:`type_name<doxid-classgeode_1_1_attribute_coordinate_reference_system_1aa0a599fba863eb25c9eb3c5f8d1c32f2>`() const;
+		virtual const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_attribute_coordinate_reference_system_1a4c7665d14c532ae65209ebc7340f09d8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` point_id) const;
+		virtual void :target:`set_point<doxid-classgeode_1_1_attribute_coordinate_reference_system_1a36438d215e0224d7e8905d52ce826a1a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` point_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
+		static :ref:`CRSType<doxid-namespacegeode_1a1da798a270c4d8fa3ec8e817183a1df5>` :target:`type_name_static<doxid-classgeode_1_1_attribute_coordinate_reference_system_1a62a6027b0b7877c86b536dc6983923e9>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		virtual :ref:`CRSType<doxid-namespacegeode_1a1da798a270c4d8fa3ec8e817183a1df5>` :ref:`type_name<doxid-classgeode_1_1_coordinate_reference_system_1ac8c61080cb3b5ae775ba3219c44d5f74>`() const = 0;
+		virtual const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`point<doxid-classgeode_1_1_coordinate_reference_system_1a412448bc25888ab1907b1f2020400f4c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` point_id) const = 0;
+		virtual void :ref:`set_point<doxid-classgeode_1_1_coordinate_reference_system_1aa64293e066da275821732d41cb858923>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` point_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point) = 0;
+	
+		template <typename Type, typename Serializer>
+		static void :ref:`register_coordinate_reference_system_type<doxid-classgeode_1_1_coordinate_reference_system_1a5eccfcf88391b6a073ab5cf2c149335a>`(
+			:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context,
+			absl::string_view name
+			);
+

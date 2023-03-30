@@ -19,7 +19,9 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 	#include <solid_mesh.h>
 	
 	template <index_t dimension>
-	class SolidMesh: public :ref:`geode::VertexSet<doxid-classgeode_1_1_vertex_set>`
+	class SolidMesh:
+	    public :ref:`geode::VertexSet<doxid-classgeode_1_1_vertex_set>`,
+	    public :ref:`geode::CoordinateReferenceSystemManagers<doxid-classgeode_1_1_coordinate_reference_system_managers>`
 	{
 	public:
 		// typedefs
@@ -35,7 +37,6 @@ This class represents a 3D Solid made up with polyhedra and provides mesh functi
 		static std::unique_ptr<SolidMesh<dimension>> :ref:`create<doxid-classgeode_1_1_solid_mesh_1aca1fc3d15eb1c8250965eda84408e302>`();
 		static std::unique_ptr<SolidMesh<dimension>> :ref:`create<doxid-classgeode_1_1_solid_mesh_1a22d62d5210d66ef81ba6e29846ce5bab>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
 		std::unique_ptr<SolidMesh<dimension>> :target:`clone<doxid-classgeode_1_1_solid_mesh_1af6ee29444ebffabe588d9dfd3c3f255e>`() const;
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_solid_mesh_1a959ceff17791c65beab2b4d4cff17d5d>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_polyhedra<doxid-classgeode_1_1_solid_mesh_1ab6ba9784484547e90881d7282525508b>`() const;
 		bool :target:`is_vertex_isolated<doxid-classgeode_1_1_solid_mesh_1a58d3ef813a897de156a155fd6f757af2>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_polyhedron_vertices<doxid-classgeode_1_1_solid_mesh_1a7c1cf47474f5f561503bd03cdfe67ede>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
@@ -177,6 +178,16 @@ Inherited Members
 		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :ref:`impl_name<doxid-classgeode_1_1_vertex_set_1a27db2667d140cc8f6645531788765815>`() const = 0;
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :ref:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+		const CoordinateReferenceSystemManager1D& :ref:`coordinate_reference_system_manager1D<doxid-classgeode_1_1_coordinate_reference_system_managers_1a99ad610f9e493f57d1c6afdf3e862b26>`() const;
+		const CoordinateReferenceSystemManager2D& :ref:`coordinate_reference_system_manager2D<doxid-classgeode_1_1_coordinate_reference_system_managers_1a8ac355f4521a198be975ae84fea2a6d0>`() const;
+		const CoordinateReferenceSystemManager3D& :ref:`coordinate_reference_system_manager3D<doxid-classgeode_1_1_coordinate_reference_system_managers_1ad3d17bccc65cce5f5143838f04f7bdd2>`() const;
+		const :ref:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager>`<dimension>& :ref:`main_coordinate_reference_system_manager<doxid-classgeode_1_1_coordinate_reference_system_managers_1a81d7fb91d3f46a400a31a5afa5274671>`() const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`point<doxid-classgeode_1_1_coordinate_reference_system_managers_1a5e09e80a2aee7453a246472b0148cb9d>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex) const;
+		CoordinateReferenceSystemManager1D& :ref:`coordinate_reference_system_manager1D<doxid-classgeode_1_1_coordinate_reference_system_managers_1a034ae065c5291f6b0d7195656321b181>`(CRSManagersKey);
+		CoordinateReferenceSystemManager2D& :ref:`coordinate_reference_system_manager2D<doxid-classgeode_1_1_coordinate_reference_system_managers_1ac28443d2dc3c2024ce56b00d3d251eb4>`(CRSManagersKey);
+		CoordinateReferenceSystemManager3D& :ref:`coordinate_reference_system_manager3D<doxid-classgeode_1_1_coordinate_reference_system_managers_1aa82c58b99053fa0964c98d6cc3589596>`(CRSManagersKey);
+		:ref:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager>`<dimension>& :ref:`main_coordinate_reference_system_manager<doxid-classgeode_1_1_coordinate_reference_system_managers_1a2d3e8b1f04bb85532ac30284264b3a78>`(CRSManagersKey);
+		void :ref:`set_point<doxid-classgeode_1_1_coordinate_reference_system_managers_1ae4290ceee99f291bdad19212d5da7fb2>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point, CRSManagersKey);
 
 .. _details-classgeode_1_1_solid_mesh:
 

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>template class geode::Texture&lt;3&gt; &#8212; Python  documentation</title>
+    <title>template class geode::Texture&lt;2&gt; &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -19,7 +19,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::Texture&lt;2&gt;" href="class_geode_Texture-2.html" />
+    <link rel="next" title="template class geode::Texture&lt;3&gt;" href="class_geode_Texture-2.html" />
     <link rel="prev" title="class geode::Tetrahedron" href="class_geode_Tetrahedron.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -36,30 +36,30 @@
 
           <div class="body" role="main">
             
-  <section id="template-class-geode-texture-3">
-<span id="doxid-classgeode-1-1-texture-3-013-01-4"></span><span id="index-0"></span><h1>template class geode::Texture&lt;3&gt;</h1>
+  <section id="template-class-geode-texture-2">
+<span id="doxid-classgeode-1-1-texture-3-012-01-4"></span><span id="index-0"></span><h1>template class geode::Texture&lt;2&gt;</h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;texture3d.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;texture2d.h&gt;</span><span class="cp"></span>
 
 <span class="k">template</span> <span class="o">&lt;&gt;</span>
-<span class="k">class</span> <span class="n">Texture</span><span class="o">&lt;</span><span class="mi">3</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">Texture</span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-013-01-4-1aa81e21f728e4f38edc1de930a7c10a25"><span></span><span class="n">Texture</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <span class="n">manager</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">);</span>
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-013-01-4-1a0dffc6bf04aa0fb22d570b4a42bd1128"><span></span><span class="n">Texture</span></span><span></span><span class="p">(</span><span class="n">Texture</span><span class="o">&amp;&amp;</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-012-01-4-1afbda60d70fa505889755a48fe0f89f40"><span></span><span class="n">Texture</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <span class="n">manager</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-012-01-4-1a0d9048bcd85597cfa18450586a1f7af2"><span></span><span class="n">Texture</span></span><span></span><span class="p">(</span><span class="n">Texture</span><span class="o">&amp;&amp;</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="k">const</span> <span class="n">RasterImage3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-013-01-4-1a720dd3c01cd0e071936e2c9604da0623"><span></span><span class="n">image</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-013-01-4-1ad58e74342b41b1d3c208978cbb03795f"><span></span><span class="n">set_image</span></span><span></span><span class="p">(</span><span class="n">RasterImage3D</span><span class="o">&amp;&amp;</span> <span class="n">image</span><span class="p">);</span>
-    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-013-01-4-1ab0ed6a756262f178ff862e5009e99984"><span></span><span class="n">texture_coordinates</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">RasterImage2D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-012-01-4-1abd2ae29251036b2045a309e1e416e7a6"><span></span><span class="n">image</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-012-01-4-1af06ab74a40040a091d21077af9f796c1"><span></span><span class="n">set_image</span></span><span></span><span class="p">(</span><span class="n">RasterImage2D</span><span class="o">&amp;&amp;</span> <span class="n">image</span><span class="p">);</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-012-01-4-1a94e6abff0d1267f211ba21becc83e9cf"><span></span><span class="n">texture_coordinates</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-013-01-4-1a020012d2c03bd68bfc48a9fa9f3e1855"><span></span><span class="n">set_texture_coordinates</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">vertex</span><span class="p">,</span>
-        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">coordinates</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-texture-3-012-01-4-1a2497b8be303821fe4538bbb48c4df59d"><span></span><span class="n">set_texture_coordinates</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">vertex</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">coordinates</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </section>

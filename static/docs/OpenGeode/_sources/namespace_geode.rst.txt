@@ -25,6 +25,7 @@ namespace geode
 	struct_geode_BlockPolyhedraFacetVertices.rst
 	struct_geode_BlockPolyhedronFacet.rst
 	struct_geode_BoundaryDefinition.rst
+	struct_geode_CRSTag.rst
 	struct_geode_ComponentMeshElement.rst
 	struct_geode_ComponentMeshVertex.rst
 	struct_geode_ComponentTag.rst
@@ -66,6 +67,7 @@ namespace geode
 	struct_geode_uuid.rst
 	class_geode_AABBTree.rst
 	class_geode_AttributeBase.rst
+	class_geode_AttributeCoordinateReferenceSystem.rst
 	class_geode_AttributeManager.rst
 	class_geode_BRep.rst
 	class_geode_BRepBuilder.rst
@@ -86,6 +88,11 @@ namespace geode
 	class_geode_ConsoleLoggerClient.rst
 	class_geode_ConsoleProgressLoggerClient.rst
 	class_geode_ConstantAttribute.rst
+	class_geode_CoordinateReferenceSystem.rst
+	class_geode_CoordinateReferenceSystemManager.rst
+	class_geode_CoordinateReferenceSystemManagerBuilder.rst
+	class_geode_CoordinateReferenceSystemManagers.rst
+	class_geode_CoordinateReferenceSystemManagersBuilder.rst
 	class_geode_Corner.rst
 	class_geode_Corners.rst
 	class_geode_CornersBuilder.rst
@@ -320,6 +327,7 @@ Overview
 	typedef std::pair<:ref:`Position<doxid-namespacegeode_1a316ec3486ec794c86021f0fea71f54a7>`, :ref:`Position<doxid-namespacegeode_1a316ec3486ec794c86021f0fea71f54a7>`> :target:`SegmentTriangleIntersection<doxid-namespacegeode_1acbc58086feed61355d4235a09e6e6b80>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`RasterImageInput<doxid-classgeode_1_1_raster_image_input>`<dimension>, absl::string_view> :target:`RasterImageInputFactory<doxid-namespacegeode_1a58c047148fb27d8472554cabf0a2c155>`;
 	typedef :ref:`Factory<doxid-classgeode_1_1_factory>`<std::string, :ref:`RasterImageOutput<doxid-classgeode_1_1_raster_image_output>`<dimension>, absl::string_view> :target:`RasterImageOutputFactory<doxid-namespacegeode_1a0e6ff47fb303843648ee5dba841e972e>`;
+	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`CRSTag<doxid-structgeode_1_1_c_r_s_tag>`> :target:`CRSType<doxid-namespacegeode_1a1da798a270c4d8fa3ec8e817183a1df5>`;
 	typedef absl::InlinedVector<:ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`, 2> :target:`EdgesAroundVertex<doxid-namespacegeode_1aab3c9dc52d762219dcc9137475590210>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshImplTag<doxid-structgeode_1_1_mesh_impl_tag>`> :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`;
 	typedef :ref:`NamedType<doxid-classgeode_1_1_named_type>`<std::string, :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`> :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`;
@@ -406,6 +414,7 @@ Overview
 	struct :ref:`BlockPolyhedraFacetVertices<doxid-structgeode_1_1_block_polyhedra_facet_vertices>`;
 	struct :ref:`BlockPolyhedronFacet<doxid-structgeode_1_1_block_polyhedron_facet>`;
 	struct :ref:`BoundaryDefinition<doxid-structgeode_1_1_boundary_definition>`;
+	struct :ref:`CRSTag<doxid-structgeode_1_1_c_r_s_tag>`;
 	struct :ref:`ComponentMeshElement<doxid-structgeode_1_1_component_mesh_element>`;
 	struct :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`;
 	struct :ref:`ComponentTag<doxid-structgeode_1_1_component_tag>`;
@@ -416,11 +425,11 @@ Overview
 
 	struct :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`;
 
-	template <>
-	struct :ref:`GenericAttributeConversion<RGBColor><doxid-structgeode_1_1_generic_attribute_conversion_3_01_r_g_b_color_01_4>`;
-
 	template <index_t dimension>
 	struct :ref:`GenericAttributeConversion<Point<dimension>><doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4>`;
+
+	template <>
+	struct :ref:`GenericAttributeConversion<RGBColor><doxid-structgeode_1_1_generic_attribute_conversion_3_01_r_g_b_color_01_4>`;
 
 	template <>
 	struct :ref:`GenericAttributeConversion<GreyscaleColor><doxid-structgeode_1_1_generic_attribute_conversion_3_01_greyscale_color_01_4>`;
@@ -474,6 +483,10 @@ Overview
 	class :ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`;
 
 	class :ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`;
+
+	template <index_t dimension>
+	class :ref:`AttributeCoordinateReferenceSystem<doxid-classgeode_1_1_attribute_coordinate_reference_system>`;
+
 	class :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`;
 	class :ref:`BRep<doxid-classgeode_1_1_b_rep>`;
 	class :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`;
@@ -521,6 +534,21 @@ Overview
 
 	template <typename T>
 	class :ref:`ConstantAttribute<doxid-classgeode_1_1_constant_attribute>`;
+
+	template <index_t dimension>
+	class :ref:`CoordinateReferenceSystem<doxid-classgeode_1_1_coordinate_reference_system>`;
+
+	template <index_t dimension>
+	class :ref:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager>`;
+
+	template <index_t dimension>
+	class :ref:`CoordinateReferenceSystemManagerBuilder<doxid-classgeode_1_1_coordinate_reference_system_manager_builder>`;
+
+	template <index_t dimension>
+	class :ref:`CoordinateReferenceSystemManagers<doxid-classgeode_1_1_coordinate_reference_system_managers>`;
+
+	template <index_t dimension>
+	class :ref:`CoordinateReferenceSystemManagersBuilder<doxid-classgeode_1_1_coordinate_reference_system_managers_builder>`;
 
 	template <index_t dimension>
 	class :ref:`Corner<doxid-classgeode_1_1_corner>`;
@@ -952,10 +980,10 @@ Overview
 	class :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`;
 
 	template <>
-	class :ref:`Texture<3><doxid-classgeode_1_1_texture_3_013_01_4>`;
+	class :ref:`Texture<2><doxid-classgeode_1_1_texture_3_012_01_4>`;
 
 	template <>
-	class :ref:`Texture<2><doxid-classgeode_1_1_texture_3_012_01_4>`;
+	class :ref:`Texture<3><doxid-classgeode_1_1_texture_3_013_01_4>`;
 
 	template <>
 	class :ref:`Texture<1><doxid-classgeode_1_1_texture_3_011_01_4>`;
@@ -1458,6 +1486,12 @@ Overview
 		absl::string_view filename
 		);
 
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aad427e0accf297fa9e88ce4247ec51aa>`(:ref:`CoordinateReferenceSystem<doxid-classgeode_1_1_coordinate_reference_system>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a904e02c945f45dd8ec5315353974fbdd>`(:ref:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager>`);
+	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1ae21369d0c2adbc00dade59443fa6f8c6>`(:ref:`CoordinateReferenceSystemManagerBuilder<doxid-classgeode_1_1_coordinate_reference_system_manager_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abd5662802430f7525ccf3c837bc16bab>`(:ref:`CoordinateReferenceSystemManagers<doxid-classgeode_1_1_coordinate_reference_system_managers>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a27d56d2178d26bb04a95fb470a812327>`(:ref:`CoordinateReferenceSystemManagerBuilder<doxid-classgeode_1_1_coordinate_reference_system_manager_builder>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a62dd8b86d2c1ac7dab0dd4ab17ead6fe>`(:ref:`CoordinateReferenceSystemManagersBuilder<doxid-classgeode_1_1_coordinate_reference_system_managers_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a25875b8f6532ca2e4fd9254c80be7aaf>`(:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ae7ad36948deefa4fe158f9e929cae4d5>`(:ref:`OpenGeodeEdgedCurve<doxid-classgeode_1_1_open_geode_edged_curve>`);
@@ -1513,8 +1547,13 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a5f77df444726f93a1df8e868ba125aa3>`(:ref:`TriangulatedSurfaceBuilder<doxid-classgeode_1_1_triangulated_surface_builder>`);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a88ead4fd5cb58782b06304e368357135>`(opengeode_mesh_api, OpenGeodeMesh);
+	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a2c42fe45ee0c7f4ede67912e264c9560>`(:ref:`AttributeCoordinateReferenceSystem<doxid-classgeode_1_1_attribute_coordinate_reference_system>`);
 	void opengeode_mesh_api :ref:`register_mesh_serialize_pcontext<doxid-namespacegeode_1aa05925dcfcae1d0f42d06f0f9a8dfb8a>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_mesh_api :ref:`register_mesh_deserialize_pcontext<doxid-namespacegeode_1ad554073e01b714099ca0e253bdeee8e3>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
+	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1ae97410620e3e04b7c5211a9e1849565f>`(:ref:`CoordinateReferenceSystem<doxid-classgeode_1_1_coordinate_reference_system>`);
+	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a4dbe42c128405833075c7eb7a739a6f3>`(:ref:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a2b80fbf831d9794fca2f888860be4c42>`(:ref:`CoordinateReferenceSystemManagersBuilder<doxid-classgeode_1_1_coordinate_reference_system_managers_builder>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a4c3d3de1cd978e3bd14492c7162855b4>`(:ref:`CoordinateReferenceSystemManagers<doxid-classgeode_1_1_coordinate_reference_system_managers>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abca05657b8eb6a446c79a4e841068fcf>`(:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a80ee0d83f9eb471e3d0a3066c343cb42>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a10bca5e5d2bdb673816feac3d71aab17>`(:ref:`OpenGeodeEdgedCurveBuilder<doxid-classgeode_1_1_open_geode_edged_curve_builder>`);

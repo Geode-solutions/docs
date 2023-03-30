@@ -19,7 +19,9 @@ Interface class to represent the builder of a :ref:`PointSet <doxid-classgeode_1
 	#include <point_set_builder.h>
 	
 	template <index_t dimension>
-	class PointSetBuilder: public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`
+	class PointSetBuilder:
+	    public :ref:`geode::VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`,
+	    public :ref:`geode::CoordinateReferenceSystemManagersBuilder<doxid-classgeode_1_1_coordinate_reference_system_managers_builder>`
 	{
 	public:
 		// fields
@@ -29,7 +31,6 @@ Interface class to represent the builder of a :ref:`PointSet <doxid-classgeode_1
 		// methods
 	
 		static std::unique_ptr<PointSetBuilder<dimension>> :ref:`create<doxid-classgeode_1_1_point_set_builder_1ab5c00c0739ace9a3125e0f1daf1e44ee>`(:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh);
-		void :ref:`set_point<doxid-classgeode_1_1_point_set_builder_1a3f2f23e0415984ab546ea0350e0e343a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_point_set_builder_1a00aa71ee29025486d00b8b481527246a>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		void :target:`copy<doxid-classgeode_1_1_point_set_builder_1a038cabf86674285953ecf3527728e22d>`(const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set);
 	};
@@ -56,6 +57,11 @@ Inherited Members
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_vertices<doxid-classgeode_1_1_vertex_set_builder_1a2f167c430554a70b6dd09587d2dbbcff>`(const std::vector<bool>& to_delete);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`permute_vertices<doxid-classgeode_1_1_vertex_set_builder_1a8f2013ad98ea09defcc82969d86d93e2>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 		static std::unique_ptr<:ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>`> :ref:`create<doxid-classgeode_1_1_vertex_set_builder_1a771651214baac8b1f85db964a73a4952>`(:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& mesh);
+		CoordinateReferenceSystemManagerBuilder1D :ref:`coordinate_reference_system_manager_builder1D<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1adbbcb8fe84c8f55573bf9f5cbc04f676>`();
+		CoordinateReferenceSystemManagerBuilder2D :ref:`coordinate_reference_system_manager_builder2D<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1aabb31840c6b544f66988a501aaf7b56d>`();
+		CoordinateReferenceSystemManagerBuilder3D :ref:`coordinate_reference_system_manager_builder3D<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1abe3cbded99e88008c5ef1851aa735f3a>`();
+		:ref:`CoordinateReferenceSystemManagerBuilder<doxid-classgeode_1_1_coordinate_reference_system_manager_builder>`<dimension> :ref:`main_coordinate_reference_system_manager_builder<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1a8553d6864c170523f754d9a98b2b38b1>`();
+		void :ref:`set_point<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1a8229033efe37e7dd87a6f4d86ec5059e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 
 .. _details-classgeode_1_1_point_set_builder:
 
@@ -88,33 +94,6 @@ Create the builder associated with a :ref:`PointSet <doxid-classgeode_1_1_point_
 		- mesh
 
 		- The :ref:`PointSet <doxid-classgeode_1_1_point_set>` to build/modify
-
-.. index:: pair: function; set_point
-.. _doxid-classgeode_1_1_point_set_builder_1a3f2f23e0415984ab546ea0350e0e343a:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	void set_point(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point)
-
-Set coordinates to a vertex. This vertex should be created before.
-
-
-
-.. rubric:: Parameters:
-
-.. list-table::
-	:widths: 20 80
-
-	*
-		- vertex_id
-
-		- The vertex, in [0, nb_vertices()-1].
-
-	*
-		- point
-
-		- The vertex coordinates
 
 .. index:: pair: function; create_point
 .. _doxid-classgeode_1_1_point_set_builder_1a00aa71ee29025486d00b8b481527246a:

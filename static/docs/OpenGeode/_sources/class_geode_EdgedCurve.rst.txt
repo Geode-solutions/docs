@@ -19,7 +19,9 @@ Overview
 	#include <edged_curve.h>
 	
 	template <index_t dimension>
-	class EdgedCurve: public :ref:`geode::Graph<doxid-classgeode_1_1_graph>`
+	class EdgedCurve:
+	    public :ref:`geode::Graph<doxid-classgeode_1_1_graph>`,
+	    public :ref:`geode::CoordinateReferenceSystemManagers<doxid-classgeode_1_1_coordinate_reference_system_managers>`
 	{
 	public:
 		// typedefs
@@ -33,7 +35,6 @@ Overview
 		// methods
 	
 		std::unique_ptr<EdgedCurve<dimension>> :target:`clone<doxid-classgeode_1_1_edged_curve_1a492acfc2cd03de07de386a875d77641b>`() const;
-		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_edged_curve_1a9533f46c0373592ba3ee5326f0a90f22>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
 		double :target:`edge_length<doxid-classgeode_1_1_edged_curve_1ae91b29fbd20263e1e172299ab1e7a9c5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`edge_barycenter<doxid-classgeode_1_1_edged_curve_1ae84704d93ee7a423cb6befcd2bdc29fd>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
 		:ref:`Segment<doxid-classgeode_1_1_segment>`<dimension> :target:`segment<doxid-classgeode_1_1_edged_curve_1aa2a1f1c337af06e5ce035dca2828f1e1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id) const;
@@ -107,6 +108,16 @@ Inherited Members
 			);
 	
 		void :ref:`disassociate_edge_vertex_to_vertex<doxid-classgeode_1_1_graph_1a6679cff1df6465b3966da99546c7308f>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& edge_vertex, GraphKey);
+		const CoordinateReferenceSystemManager1D& :ref:`coordinate_reference_system_manager1D<doxid-classgeode_1_1_coordinate_reference_system_managers_1a99ad610f9e493f57d1c6afdf3e862b26>`() const;
+		const CoordinateReferenceSystemManager2D& :ref:`coordinate_reference_system_manager2D<doxid-classgeode_1_1_coordinate_reference_system_managers_1a8ac355f4521a198be975ae84fea2a6d0>`() const;
+		const CoordinateReferenceSystemManager3D& :ref:`coordinate_reference_system_manager3D<doxid-classgeode_1_1_coordinate_reference_system_managers_1ad3d17bccc65cce5f5143838f04f7bdd2>`() const;
+		const :ref:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager>`<dimension>& :ref:`main_coordinate_reference_system_manager<doxid-classgeode_1_1_coordinate_reference_system_managers_1a81d7fb91d3f46a400a31a5afa5274671>`() const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`point<doxid-classgeode_1_1_coordinate_reference_system_managers_1a5e09e80a2aee7453a246472b0148cb9d>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex) const;
+		CoordinateReferenceSystemManager1D& :ref:`coordinate_reference_system_manager1D<doxid-classgeode_1_1_coordinate_reference_system_managers_1a034ae065c5291f6b0d7195656321b181>`(CRSManagersKey);
+		CoordinateReferenceSystemManager2D& :ref:`coordinate_reference_system_manager2D<doxid-classgeode_1_1_coordinate_reference_system_managers_1ac28443d2dc3c2024ce56b00d3d251eb4>`(CRSManagersKey);
+		CoordinateReferenceSystemManager3D& :ref:`coordinate_reference_system_manager3D<doxid-classgeode_1_1_coordinate_reference_system_managers_1aa82c58b99053fa0964c98d6cc3589596>`(CRSManagersKey);
+		:ref:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager>`<dimension>& :ref:`main_coordinate_reference_system_manager<doxid-classgeode_1_1_coordinate_reference_system_managers_1a2d3e8b1f04bb85532ac30284264b3a78>`(CRSManagersKey);
+		void :ref:`set_point<doxid-classgeode_1_1_coordinate_reference_system_managers_1ae4290ceee99f291bdad19212d5da7fb2>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point, CRSManagersKey);
 
 .. _details-classgeode_1_1_edged_curve:
 

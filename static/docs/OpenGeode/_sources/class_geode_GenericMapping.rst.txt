@@ -46,4 +46,6 @@ Inherited Members
 		bool :ref:`has_mapping_output<doxid-classgeode_1_1_mapping_base_1a67776dfc4a153b49a9b195e38bdcf40e>`(const T2& value) const;
 		const :ref:`Storage<doxid-classgeode_1_1_mapping_base_1aa321ec05a71d09c0fc82157cad65b39d>`<T2>& :ref:`in2out<doxid-classgeode_1_1_mapping_base_1afe47b9cd85b9a03652c07a8c8c8343af>`(const T1& in) const;
 		const :ref:`Storage<doxid-classgeode_1_1_mapping_base_1aa321ec05a71d09c0fc82157cad65b39d>`<T1>& :ref:`out2in<doxid-classgeode_1_1_mapping_base_1af4254722e4cf10806628d98963ff47b7>`(const T2& out) const;
+		const absl::flat_hash_map<T1, :ref:`Storage<doxid-classgeode_1_1_mapping_base_1aa321ec05a71d09c0fc82157cad65b39d>`<T2>>& :ref:`in2out_map<doxid-classgeode_1_1_mapping_base_1a0844ffa6fd698468819534cd6a69357b>`() const;
+		const absl::flat_hash_map<T2, :ref:`Storage<doxid-classgeode_1_1_mapping_base_1aa321ec05a71d09c0fc82157cad65b39d>`<T1>>& :ref:`out2in_map<doxid-classgeode_1_1_mapping_base_1ae48422b8e0c43624f8fc1ba6b35aaab7>`() const;
 

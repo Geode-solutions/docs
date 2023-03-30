@@ -67,8 +67,12 @@ Inherited Members
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`permute_edges<doxid-classgeode_1_1_graph_builder_1a86eb42954225c43f4ad99787a65e6b73>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_graph_builder_1a9de42792403694c3cffbfb504cd9de62>`();
 		void :ref:`copy<doxid-classgeode_1_1_graph_builder_1aeeee94658d5603628ffa2f7c6e9aea48>`(const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph);
+		CoordinateReferenceSystemManagerBuilder1D :ref:`coordinate_reference_system_manager_builder1D<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1adbbcb8fe84c8f55573bf9f5cbc04f676>`();
+		CoordinateReferenceSystemManagerBuilder2D :ref:`coordinate_reference_system_manager_builder2D<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1aabb31840c6b544f66988a501aaf7b56d>`();
+		CoordinateReferenceSystemManagerBuilder3D :ref:`coordinate_reference_system_manager_builder3D<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1abe3cbded99e88008c5ef1851aa735f3a>`();
+		:ref:`CoordinateReferenceSystemManagerBuilder<doxid-classgeode_1_1_coordinate_reference_system_manager_builder>`<dimension> :ref:`main_coordinate_reference_system_manager_builder<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1a8553d6864c170523f754d9a98b2b38b1>`();
+		void :ref:`set_point<doxid-classgeode_1_1_coordinate_reference_system_managers_builder_1a8229033efe37e7dd87a6f4d86ec5059e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		static std::unique_ptr<:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_edged_curve_builder_1ac1d31e425b0233fca9d10f07d735df23>`(:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh);
-		void :ref:`set_point<doxid-classgeode_1_1_edged_curve_builder_1a189e5ca28d052777d2eabb94e69c9fb8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_point<doxid-classgeode_1_1_edged_curve_builder_1a5a7c369306897ce006676f81cacbe7e5>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
 		void :ref:`copy<doxid-classgeode_1_1_edged_curve_builder_1a8585c831b3239ccbb09f786da22a0fe5>`(const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve);
 
