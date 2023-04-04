@@ -40,6 +40,7 @@ template class geode::Lines
 		// methods
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_lines<doxid-classgeode_1_1_lines_1a292302ade74503a488afe8136b37cf37>`() const;
+		bool :target:`has_line<doxid-classgeode_1_1_lines_1a64ca85bbf6624d4c18aef4c700ad0571>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		const :ref:`Line<doxid-classgeode_1_1_line>`<dimension>& :target:`line<doxid-classgeode_1_1_lines_1ad9af9faff1b0b6def2c91333a7a75163>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range>` :target:`lines<doxid-classgeode_1_1_lines_1ac791249dd5a1c3ba883d5b4d901601a7>`() const;
 		void :target:`save_lines<doxid-classgeode_1_1_lines_1ad39dd02ee042c4279d342ef5df9b802b>`(absl::string_view directory) const;

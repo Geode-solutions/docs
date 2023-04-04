@@ -40,6 +40,7 @@ template class geode::Surfaces
 		// methods
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_surfaces<doxid-classgeode_1_1_surfaces_1a04761b9c5ac32fdd9c71bc916205d43d>`() const;
+		bool :target:`has_surface<doxid-classgeode_1_1_surfaces_1a1d599879ee8f1370a74a2c5554283689>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		const :ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& :target:`surface<doxid-classgeode_1_1_surfaces_1a593f10e2ff905efa6bb06475dcc125f3>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`SurfaceRange<doxid-classgeode_1_1_surfaces_1_1_surface_range>` :target:`surfaces<doxid-classgeode_1_1_surfaces_1a3eb2f792ff3aac7115da49e635dbddc0>`() const;
 		void :target:`save_surfaces<doxid-classgeode_1_1_surfaces_1a1779f17f453cc64da53ae45383f404a9>`(absl::string_view directory) const;

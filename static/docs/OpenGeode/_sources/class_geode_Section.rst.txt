@@ -144,14 +144,17 @@ Inherited Members
 		// methods
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_corners<doxid-classgeode_1_1_corners_1a949ddaa0cde92f3d47986f520ecea125>`() const;
+		bool :ref:`has_corner<doxid-classgeode_1_1_corners_1a8140f836ea35984c658fe8a2f98afe34>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		const :ref:`Corner<doxid-classgeode_1_1_corner>`<dimension>& :ref:`corner<doxid-classgeode_1_1_corners_1a5258a25b20a106bdb93ef0100af9a60f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`CornerRange<doxid-classgeode_1_1_corners_1_1_corner_range>` :ref:`corners<doxid-classgeode_1_1_corners_1a80d5c977afe0ba4ae7a662099c381c0a>`() const;
 		void :ref:`save_corners<doxid-classgeode_1_1_corners_1ae919a2d2ab3ec13804fa56cb7375ab3f>`(absl::string_view directory) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_lines<doxid-classgeode_1_1_lines_1a292302ade74503a488afe8136b37cf37>`() const;
+		bool :ref:`has_line<doxid-classgeode_1_1_lines_1a64ca85bbf6624d4c18aef4c700ad0571>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		const :ref:`Line<doxid-classgeode_1_1_line>`<dimension>& :ref:`line<doxid-classgeode_1_1_lines_1ad9af9faff1b0b6def2c91333a7a75163>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range>` :ref:`lines<doxid-classgeode_1_1_lines_1ac791249dd5a1c3ba883d5b4d901601a7>`() const;
 		void :ref:`save_lines<doxid-classgeode_1_1_lines_1ad39dd02ee042c4279d342ef5df9b802b>`(absl::string_view directory) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_surfaces<doxid-classgeode_1_1_surfaces_1a04761b9c5ac32fdd9c71bc916205d43d>`() const;
+		bool :ref:`has_surface<doxid-classgeode_1_1_surfaces_1a1d599879ee8f1370a74a2c5554283689>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		const :ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& :ref:`surface<doxid-classgeode_1_1_surfaces_1a593f10e2ff905efa6bb06475dcc125f3>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id) const;
 		:ref:`SurfaceRange<doxid-classgeode_1_1_surfaces_1_1_surface_range>` :ref:`surfaces<doxid-classgeode_1_1_surfaces_1a3eb2f792ff3aac7115da49e635dbddc0>`() const;
 		void :ref:`save_surfaces<doxid-classgeode_1_1_surfaces_1a1779f17f453cc64da53ae45383f404a9>`(absl::string_view directory) const;
