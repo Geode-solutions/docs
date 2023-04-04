@@ -20,16 +20,20 @@ Class managing modifications of a :ref:`ImplicitCrossSection <doxid-classgeode_1
 	public:
 		// construction
 	
-		:target:`ImplicitCrossSectionBuilder<doxid-classgeode_1_1_implicit_cross_section_builder_1ac1b56f774506a01374e8d2c5b16fa76e>`(:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model);
+		:target:`ImplicitCrossSectionBuilder<doxid-classgeode_1_1_implicit_cross_section_builder_1afe7a4aa4fe079de4cab7650acd1d371a>`(:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_section);
 
 		// methods
 	
-		void :target:`copy<doxid-classgeode_1_1_implicit_cross_section_builder_1a67ddfc0fa765a18351eaef1c972ca1e7>`(const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model);
-		void :target:`instantiate_stratigraphic_attribute_on_surfaces<doxid-classgeode_1_1_implicit_cross_section_builder_1adaa07619c63cace0cbc38295ee85ea1f>`();
+		void :target:`copy<doxid-classgeode_1_1_implicit_cross_section_builder_1a92f67c5f749f0347fd780e11d7e1c830>`(const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_section);
+		void :target:`instantiate_implicit_attribute_on_surfaces<doxid-classgeode_1_1_implicit_cross_section_builder_1a8c6040867043eb61d0a1f1df286ec297>`();
 	
-		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_cross_section_builder_1a469ec619d534b6f3d1172fc9304a3a16>`(
+		void :target:`set_implicit_value<doxid-classgeode_1_1_implicit_cross_section_builder_1a585a4b3d90de46ccee0f21169e0be203>`(
 			const Surface2D& surface,
 			index_t vertex_id,
-			Point2D value
+			double value
 			);
 	};
+
+	// direct descendants
+
+	class :ref:`StratigraphicSectionBuilder<doxid-classgeode_1_1_stratigraphic_section_builder>`;

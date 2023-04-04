@@ -10,7 +10,7 @@ class geode::ImplicitStructuralModel
 Overview
 ~~~~~~~~
 
-An Implicit Model is a Structural model where each block has a specific attribute to store the stratigraphic coordinates of its vertices. :ref:`More...<details-classgeode_1_1_implicit_structural_model>`
+An Implicit Model is a Structural model where each block has a specific attribute to store the implicit value on its vertices. :ref:`More...<details-classgeode_1_1_implicit_structural_model>`
 
 
 .. ref-code-block:: cpp
@@ -23,11 +23,11 @@ An Implicit Model is a Structural model where each block has a specific attribut
 	public:
 		// typedefs
 	
-		typedef Point3D :target:`stratigraphy_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1ae2a8c2ade3a950e9505c2096fc9a8f79>`;
+		typedef double :target:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>`;
 
 		// fields
 	
-		static constexpr auto :target:`stratigraphy_attribute_name<doxid-classgeode_1_1_implicit_structural_model_1a44caa6b6c8842df47acddb01b9e92aac>` =             "geode_stratigraphy";
+		static constexpr auto :target:`implicit_attribute_name<doxid-classgeode_1_1_implicit_structural_model_1a594c3769161690e5e8967c1177ed208b>` =             "geode_implicit_attribute";
 
 		// construction
 	
@@ -38,143 +38,96 @@ An Implicit Model is a Structural model where each block has a specific attribut
 		// methods
 	
 		absl::string_view :target:`native_extension<doxid-classgeode_1_1_implicit_structural_model_1a7db14da19101e19fe01bd10d345341f8>`() const;
+		:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` :ref:`implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a7139a76c808b9cfe34ea541bfa3b9cbe>`(const Block3D& block, index_t vertex_id) const;
 	
-		const Point3D& :ref:`stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_1a081d311ade531d37333a8f1ae7194161>`(
+		absl::optional<:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>`> :ref:`implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a6bec3ca80954768dd5c52eefd5bee85f>`(
 			const Block3D& block,
-			index_t vertex_id
+			const Point3D& point
 			) const;
 	
-		Point3D :ref:`stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_1afb15e78cd08233bb9db3418f51e725eb>`(
+		:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` :ref:`implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a328dca77e31a771b65550ebc5bb7deff>`(
 			const Block3D& block,
-			const Point3D& geometric_point
-			) const;
-	
-		Point3D :ref:`stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_1ab6078d7c01975ffc1d7ac4a3e65ea3b8>`(
-			const Block3D& block,
-			const Point3D& geometric_point,
+			const Point3D& point,
 			index_t polyhedron_id
 			) const;
 	
-		Point3D :ref:`geometric_coordinates<doxid-classgeode_1_1_implicit_structural_model_1a4399a075ef5f371b3603568ece72732f>`(
+		absl::optional<index_t> :ref:`containing_polyhedron<doxid-classgeode_1_1_implicit_structural_model_1a8de86437d9872d3d492b4a2d9ea745b5>`(
 			const Block3D& block,
-			const Point3D& stratigraphic_point
+			const Point3D& point
 			) const;
 	
-		Point3D :ref:`geometric_coordinates<doxid-classgeode_1_1_implicit_structural_model_1a2e67bf0dd58750bc78573d971e8b9a5a>`(
-			const Block3D& block,
-			const Point3D& stratigraphic_point,
-			index_t polyhedron_id
-			) const;
+		void :target:`instantiate_implicit_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_1a8e88861949ffca6ac1477a5e3ef54b31>`(ImplicitStructuralModelBuilderKey);
 	
-		absl::optional<index_t> :ref:`stratigraphic_containing_polyhedron<doxid-classgeode_1_1_implicit_structural_model_1a828af515bf3f3562c7d42127e843459b>`(
-			const Block3D& block,
-			const Point3D& stratigraphic_point
-			) const;
-	
-		absl::InlinedVector<std::unique_ptr<TriangulatedSurface3D>, 2> :target:`stratigraphic_surface<doxid-classgeode_1_1_implicit_structural_model_1a63611516fab5e51b5ade68c2f5ab2c7b>`(
-			const Block3D& block,
-			const Surface3D& surface
-			) const;
-	
-		BoundingBox3D :target:`stratigraphic_bounding_box<doxid-classgeode_1_1_implicit_structural_model_1a8cdc8190e7957edf2c9f04911e6fd34a>`() const;
-		void :target:`instantiate_stratigraphic_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_1a60b40e7b49cf5b1f728fbaf22f0d9613>`(ImplicitStructuralModelBuilderKey);
-	
-		void :target:`set_stratigraphic_coordinates<doxid-classgeode_1_1_implicit_structural_model_1adc83dec63bf94995c79337d65e369fca>`(
+		void :target:`set_implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a496dc79c00c843dd60d5a65dc5bb4fdc>`(
 			const Block3D& block,
 			index_t vertex_id,
-			Point3D value,
+			:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` value,
 			ImplicitStructuralModelBuilderKey
 			);
 	
 		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_implicit_structural_model_1aa69265945e3e076b61a3cf1367dc8325>`();
 	};
+
+	// direct descendants
+
+	class :ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`;
 .. _details-classgeode_1_1_implicit_structural_model:
 
 Detailed Documentation
 ~~~~~~~~~~~~~~~~~~~~~~
 
-An Implicit Model is a Structural model where each block has a specific attribute to store the stratigraphic coordinates of its vertices.
+An Implicit Model is a Structural model where each block has a specific attribute to store the implicit value on its vertices.
 
 Methods
 -------
 
-.. index:: pair: function; stratigraphic_coordinates
-.. _doxid-classgeode_1_1_implicit_structural_model_1a081d311ade531d37333a8f1ae7194161:
+.. index:: pair: function; implicit_value
+.. _doxid-classgeode_1_1_implicit_structural_model_1a7139a76c808b9cfe34ea541bfa3b9cbe:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	const Point3D& stratigraphic_coordinates(
+	:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` implicit_value(const Block3D& block, index_t vertex_id) const
+
+Return the implicit value at the given vertex of the given block.
+
+.. index:: pair: function; implicit_value
+.. _doxid-classgeode_1_1_implicit_structural_model_1a6bec3ca80954768dd5c52eefd5bee85f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>`> implicit_value(
 		const Block3D& block,
-		index_t vertex_id
+		const Point3D& point
 		) const
 
-Return the stratigraphic coordinates of the point at the given vertex of the given block.
+Return the implicit value on the point, computed in the polyhedron containing the given point in the given block, if there is any.
 
-.. index:: pair: function; stratigraphic_coordinates
-.. _doxid-classgeode_1_1_implicit_structural_model_1afb15e78cd08233bb9db3418f51e725eb:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	Point3D stratigraphic_coordinates(
-		const Block3D& block,
-		const Point3D& geometric_point
-		) const
-
-Return the stratigraphic coordinates of the point, computed in the polyhedron closest to the given point, in the given block.
-
-.. index:: pair: function; stratigraphic_coordinates
-.. _doxid-classgeode_1_1_implicit_structural_model_1ab6078d7c01975ffc1d7ac4a3e65ea3b8:
+.. index:: pair: function; implicit_value
+.. _doxid-classgeode_1_1_implicit_structural_model_1a328dca77e31a771b65550ebc5bb7deff:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	Point3D stratigraphic_coordinates(
+	:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` implicit_value(
 		const Block3D& block,
-		const Point3D& geometric_point,
+		const Point3D& point,
 		index_t polyhedron_id
 		) const
 
-Return the stratigraphic coordinates of the point, computed in the given polyhedron of the given block.
+Return the implicit value on the point, computed in the given polyhedron of the given block.
 
-.. index:: pair: function; geometric_coordinates
-.. _doxid-classgeode_1_1_implicit_structural_model_1a4399a075ef5f371b3603568ece72732f:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	Point3D geometric_coordinates(
-		const Block3D& block,
-		const Point3D& stratigraphic_point
-		) const
-
-Return the geometric coordinates of the point, computed from its stratigraphic coordinates in the polyhedron closest to the given coordinates in the stratigraphic space, in the given block.
-
-.. index:: pair: function; geometric_coordinates
-.. _doxid-classgeode_1_1_implicit_structural_model_1a2e67bf0dd58750bc78573d971e8b9a5a:
+.. index:: pair: function; containing_polyhedron
+.. _doxid-classgeode_1_1_implicit_structural_model_1a8de86437d9872d3d492b4a2d9ea745b5:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	Point3D geometric_coordinates(
+	absl::optional<index_t> containing_polyhedron(
 		const Block3D& block,
-		const Point3D& stratigraphic_point,
-		index_t polyhedron_id
+		const Point3D& point
 		) const
 
-Return the geometric coordinates of the point, computed from its stratigraphic coordinates in the given polyhedron of the given block.
-
-.. index:: pair: function; stratigraphic_containing_polyhedron
-.. _doxid-classgeode_1_1_implicit_structural_model_1a828af515bf3f3562c7d42127e843459b:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	absl::optional<index_t> stratigraphic_containing_polyhedron(
-		const Block3D& block,
-		const Point3D& stratigraphic_point
-		) const
-
-Returns the block polyhedron containing the given stratigraphic point, if there is any.
+Returns the block polyhedron containing the given point, if there is any.
 

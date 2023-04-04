@@ -1,0 +1,229 @@
+.. index:: pair: class; geode::StratigraphicSection
+.. _doxid-classgeode_1_1_stratigraphic_section:
+
+class geode::StratigraphicSection
+=================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+A :ref:`StratigraphicSection <doxid-classgeode_1_1_stratigraphic_section>` is an :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` where each surface has a specific attribute to store the stratigraphic coordinates of its vertices. :ref:`More...<details-classgeode_1_1_stratigraphic_section>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <stratigraphic_section.h>
+	
+	class StratigraphicSection: public :ref:`geode::ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`
+	{
+	public:
+		// typedefs
+	
+		typedef Point1D :target:`stratigraphic_location_type<doxid-classgeode_1_1_stratigraphic_section_1af07401ac0c534a632372617927d26178>`;
+
+		// fields
+	
+		static constexpr auto :target:`stratigraphic_location_attribute_name<doxid-classgeode_1_1_stratigraphic_section_1a95376f5daf9fd197411dc4754a9f1318>` =             "geode_stratigraphic_location";
+
+		// construction
+	
+		:target:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section_1afed0e209854130ccdd750b0296dbdccb>`();
+		:target:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section_1a042496db5147589f7d48d38151026ac9>`(StratigraphicSection&& implicit_model);
+		:target:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section_1a6a85f70575d163a08baf64fc6e4e53b8>`(:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`&& implicit_model);
+		:target:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section_1a884d4e36be8dfb0e414cc30a5616c74a>`(CrossSection&& cross_section);
+
+		// methods
+	
+		absl::string_view :target:`native_extension<doxid-classgeode_1_1_stratigraphic_section_1a7ef4dba2ec110ee036bbcaaef0100db3>`() const;
+	
+		StratigraphicPoint2D :ref:`stratigraphic_coordinates<doxid-classgeode_1_1_stratigraphic_section_1a5783fdc658fe2f87d473ff06e41cb692>`(
+			const Surface2D& surface,
+			index_t vertex_id
+			) const;
+	
+		absl::optional<StratigraphicPoint2D> :ref:`stratigraphic_coordinates<doxid-classgeode_1_1_stratigraphic_section_1a4a23f6455243ebee4e2a7e66b2e31fba>`(
+			const Surface2D& surface,
+			const Point2D& geometric_point
+			) const;
+	
+		StratigraphicPoint2D :ref:`stratigraphic_coordinates<doxid-classgeode_1_1_stratigraphic_section_1ad058bd8fa1c7e7c9884526b4068c58c6>`(
+			const Surface2D& surface,
+			const Point2D& geometric_point,
+			index_t polygon_id
+			) const;
+	
+		absl::optional<Point2D> :ref:`geometric_coordinates<doxid-classgeode_1_1_stratigraphic_section_1ad72b7c6315c6952f9472614d95beae3d>`(
+			const Surface2D& surface,
+			const StratigraphicPoint2D& stratigraphic_point
+			) const;
+	
+		Point2D :ref:`geometric_coordinates<doxid-classgeode_1_1_stratigraphic_section_1ad662cdb0c614c20d16ed2fff24499997>`(
+			const Surface2D& surface,
+			const StratigraphicPoint2D& stratigraphic_point,
+			index_t polygon_id
+			) const;
+	
+		absl::optional<index_t> :ref:`stratigraphic_containing_polygon<doxid-classgeode_1_1_stratigraphic_section_1ae7783833bb4bac9a79980603c6482e20>`(
+			const Surface2D& surface,
+			const StratigraphicPoint2D& stratigraphic_point
+			) const;
+	
+		absl::InlinedVector<std::unique_ptr<EdgedCurve2D>, 2> :target:`stratigraphic_line<doxid-classgeode_1_1_stratigraphic_section_1aac649046bde263eca8156cea34403a2b>`(
+			const Surface2D& surface,
+			const Line2D& line
+			) const;
+	
+		BoundingBox2D :target:`stratigraphic_bounding_box<doxid-classgeode_1_1_stratigraphic_section_1a23f661ffc3240cd0769a20aa9d736e9b>`() const;
+		void :target:`instantiate_stratigraphic_location_on_surfaces<doxid-classgeode_1_1_stratigraphic_section_1ad47826bb0379e99e4df202a8ec069995>`(StratigraphicSectionBuilderKey);
+	
+		void :target:`set_stratigraphic_location<doxid-classgeode_1_1_stratigraphic_section_1a1f6e553e50c408409ad0ee63a3f9a204>`(
+			const Surface2D& surface,
+			index_t vertex_id,
+			Point1D value,
+			StratigraphicSectionBuilderKey
+			);
+	
+		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_stratigraphic_section_1a40cfdc46473bdbd8ccbfcc81bb7a8b8a>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef double :ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1adf6f904c13dfb12c6a6d17c418b958bc>`;
+
+		// fields
+	
+		static constexpr auto :ref:`implicit_attribute_name<doxid-classgeode_1_1_implicit_cross_section_1a081c8f72c7eaf97301ef6e557b9a75b0>` =             "geode_implicit_attribute";
+
+		// methods
+	
+		absl::string_view :ref:`native_extension<doxid-classgeode_1_1_implicit_cross_section_1a4ce3b33a337b77c21f02c85894cfc87b>`() const;
+		double :ref:`implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a30112b09223d1444d0ee06ca20c11b9d>`(const Surface2D& surface, index_t vertex_id) const;
+	
+		absl::optional<double> :ref:`implicit_value<doxid-classgeode_1_1_implicit_cross_section_1ade6a7d8a3a1fbef211a0750f86f83d0b>`(
+			const Surface2D& surface,
+			const Point2D& point
+			) const;
+	
+		double :ref:`implicit_value<doxid-classgeode_1_1_implicit_cross_section_1acc105602542f26489e277f80a7d9dbb0>`(
+			const Surface2D& surface,
+			const Point2D& point,
+			index_t polygon_id
+			) const;
+	
+		absl::optional<index_t> :ref:`containing_polygon<doxid-classgeode_1_1_implicit_cross_section_1adaffb1d66296333f3bc36ad71cfff919>`(
+			const Surface2D& surface,
+			const Point2D& point
+			) const;
+	
+		void :ref:`instantiate_implicit_attribute_on_surfaces<doxid-classgeode_1_1_implicit_cross_section_1a5e8f58be8c5b25119952b7da457adf05>`(ImplicitCrossSectionBuilderKey);
+	
+		void :ref:`set_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a4990eab8037dc7ac85447dfba7361f19>`(
+			const Surface2D& surface,
+			index_t vertex_id,
+			double value,
+			ImplicitCrossSectionBuilderKey
+			);
+	
+		static constexpr absl::string_view :ref:`native_extension_static<doxid-classgeode_1_1_implicit_cross_section_1aa4038091dd25b0571305315e0a7661b6>`();
+
+.. _details-classgeode_1_1_stratigraphic_section:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+A :ref:`StratigraphicSection <doxid-classgeode_1_1_stratigraphic_section>` is an :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` where each surface has a specific attribute to store the stratigraphic coordinates of its vertices.
+
+Methods
+-------
+
+.. index:: pair: function; stratigraphic_coordinates
+.. _doxid-classgeode_1_1_stratigraphic_section_1a5783fdc658fe2f87d473ff06e41cb692:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	StratigraphicPoint2D stratigraphic_coordinates(
+		const Surface2D& surface,
+		index_t vertex_id
+		) const
+
+Return the stratigraphic coordinates of the point at the given vertex of the given surface.
+
+.. index:: pair: function; stratigraphic_coordinates
+.. _doxid-classgeode_1_1_stratigraphic_section_1a4a23f6455243ebee4e2a7e66b2e31fba:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<StratigraphicPoint2D> stratigraphic_coordinates(
+		const Surface2D& surface,
+		const Point2D& geometric_point
+		) const
+
+Return the stratigraphic coordinates of the point, calculated in the polygon containing the given point in the given surface, if there is any.
+
+.. index:: pair: function; stratigraphic_coordinates
+.. _doxid-classgeode_1_1_stratigraphic_section_1ad058bd8fa1c7e7c9884526b4068c58c6:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	StratigraphicPoint2D stratigraphic_coordinates(
+		const Surface2D& surface,
+		const Point2D& geometric_point,
+		index_t polygon_id
+		) const
+
+Return the stratigraphic coordinates of the point, calculated in the given polygon of the given surface.
+
+.. index:: pair: function; geometric_coordinates
+.. _doxid-classgeode_1_1_stratigraphic_section_1ad72b7c6315c6952f9472614d95beae3d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<Point2D> geometric_coordinates(
+		const Surface2D& surface,
+		const StratigraphicPoint2D& stratigraphic_point
+		) const
+
+Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the polygon containing the given coordinates in the stratigraphic space in the given surface, if there is any.
+
+.. index:: pair: function; geometric_coordinates
+.. _doxid-classgeode_1_1_stratigraphic_section_1ad662cdb0c614c20d16ed2fff24499997:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	Point2D geometric_coordinates(
+		const Surface2D& surface,
+		const StratigraphicPoint2D& stratigraphic_point,
+		index_t polygon_id
+		) const
+
+Return the geometric coordinates of the point, calculated from its stratigraphic coordinates in the given polygon of the given surface.
+
+.. index:: pair: function; stratigraphic_containing_polygon
+.. _doxid-classgeode_1_1_stratigraphic_section_1ae7783833bb4bac9a79980603c6482e20:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<index_t> stratigraphic_containing_polygon(
+		const Surface2D& surface,
+		const StratigraphicPoint2D& stratigraphic_point
+		) const
+
+Returns a surface polygon containing the given stratigraphic point, if there is any.
+

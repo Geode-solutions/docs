@@ -19,7 +19,3 @@ class geode::ImplicitStructuralModelInput
 	{
 	public:
 	};
-
-	// direct descendants
-
-	class :ref:`ImplicitLSOInput<doxid-classgeode_1_1detail_1_1_implicit_l_s_o_input>`;

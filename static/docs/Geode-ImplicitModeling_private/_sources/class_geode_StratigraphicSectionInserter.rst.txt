@@ -1,0 +1,52 @@
+.. index:: pair: class; geode::StratigraphicSectionInserter
+.. _doxid-classgeode_1_1_stratigraphic_section_inserter:
+
+class geode::StratigraphicSectionInserter
+=========================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_stratigraphic_inserter.h>
+	
+	class StratigraphicSectionInserter
+	{
+	public:
+		// construction
+	
+		:target:`StratigraphicSectionInserter<doxid-classgeode_1_1_stratigraphic_section_inserter_1a900344a29aa0dbdf97ec6bd8dc5704d6>`(const :ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>`& section);
+
+		// methods
+	
+		void :target:`select_stratigraphic_curve_to_insert<doxid-classgeode_1_1_stratigraphic_section_inserter_1a21afa831f57310540b6ea2f764684ca3>`(const EdgedCurve2D& curve);
+		std::tuple<Section, ModelGenericMapping> :ref:`insert_and_build<doxid-classgeode_1_1_stratigraphic_section_inserter_1a7df1e545f616a365a794e3f6dbddcbcf>`();
+	};
+.. _details-classgeode_1_1_stratigraphic_section_inserter:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; insert_and_build
+.. _doxid-classgeode_1_1_stratigraphic_section_inserter_1a7df1e545f616a365a794e3f6dbddcbcf:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<Section, ModelGenericMapping> insert_and_build()
+
+Returns the Merged Section including all the added curves and gives the "input to output" and "output to input" mappings between Lines
+

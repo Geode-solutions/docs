@@ -1,0 +1,21 @@
+.. index:: pair: class; geode::StratigraphicSectionOutput
+.. _doxid-classgeode_1_1_stratigraphic_section_output:
+
+class geode::StratigraphicSectionOutput
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <stratigraphic_section_output.h>
+	
+	class StratigraphicSectionOutput: public Output< StratigraphicSection >
+	{
+	public:
+	};

@@ -1,0 +1,21 @@
+.. index:: pair: class; geode::StratigraphicSectionInput
+.. _doxid-classgeode_1_1_stratigraphic_section_input:
+
+class geode::StratigraphicSectionInput
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <stratigraphic_section_input.h>
+	
+	class StratigraphicSectionInput: public Input< StratigraphicSection >
+	{
+	public:
+	};

@@ -7,8 +7,8 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
-	class_geode_detail_ImplicitLSOInput.rst
 	class_geode_detail_ScalarFunctionExpliciter3DImpl.rst
+	class_geode_detail_StratigraphicLSOInput.rst
 
 
 
@@ -21,7 +21,7 @@ namespace geode::detail
 
 	// classes
 
-	class :ref:`ImplicitLSOInput<doxid-classgeode_1_1detail_1_1_implicit_l_s_o_input>`;
 	class :ref:`ScalarFunctionExpliciter3DImpl<doxid-classgeode_1_1detail_1_1_scalar_function_expliciter3_d_impl>`;
+	class :ref:`StratigraphicLSOInput<doxid-classgeode_1_1detail_1_1_stratigraphic_l_s_o_input>`;
 
 	} // namespace detail
