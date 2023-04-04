@@ -40,6 +40,7 @@ template class geode::Faults
 		// methods
 	
 		index_t :target:`nb_faults<doxid-classgeode_1_1_faults_1a2bbfaadaac0274091095626a0842163b>`() const;
+		bool :target:`has_fault<doxid-classgeode_1_1_faults_1ac18f1dc61b292a8bcd1e291ec48c08ee>`(const uuid& id) const;
 		const :ref:`Fault<doxid-classgeode_1_1_fault>`<dimension>& :target:`fault<doxid-classgeode_1_1_faults_1a43afabd22ce5db4df110134a8966266c>`(const uuid& id) const;
 		:ref:`FaultRange<doxid-classgeode_1_1_faults_1_1_fault_range>` :target:`faults<doxid-classgeode_1_1_faults_1a9e49ed1d02ed81ebccb5ef8c687fd997>`() const;
 		void :target:`save_faults<doxid-classgeode_1_1_faults_1aebc75e5780aedce046b8def8ad9693f1>`(absl::string_view directory) const;
