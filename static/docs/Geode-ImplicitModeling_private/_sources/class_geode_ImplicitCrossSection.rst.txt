@@ -56,12 +56,25 @@ An :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` is 
 			const Point2D& point
 			) const;
 	
+		const StratigraphicUnitsStack2D& :target:`stratigraphic_units_stack<doxid-classgeode_1_1_implicit_cross_section_1a79d4bb2c42dcd6d43e6451bb459e8386>`() const;
+		double :target:`horizon_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a4339327029ffa56418df24a9bcc523c6>`(const Horizon2D& horizon) const;
 		void :target:`instantiate_implicit_attribute_on_surfaces<doxid-classgeode_1_1_implicit_cross_section_1a5e8f58be8c5b25119952b7da457adf05>`(ImplicitCrossSectionBuilderKey);
 	
 		void :target:`set_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a4990eab8037dc7ac85447dfba7361f19>`(
 			const Surface2D& surface,
 			index_t vertex_id,
 			double value,
+			ImplicitCrossSectionBuilderKey
+			);
+	
+		void :target:`set_stratigraphic_units_stack<doxid-classgeode_1_1_implicit_cross_section_1a1a99c2b9556e841eb00a2c36b28967d9>`(
+			StratigraphicUnitsStack2D&& stack,
+			ImplicitCrossSectionBuilderKey
+			);
+	
+		void :target:`set_horizon_isovalue<doxid-classgeode_1_1_implicit_cross_section_1a50a0deef756cf4add0583588f207baf1>`(
+			const Horizon2D& horizon,
+			double isovalue,
 			ImplicitCrossSectionBuilderKey
 			);
 	

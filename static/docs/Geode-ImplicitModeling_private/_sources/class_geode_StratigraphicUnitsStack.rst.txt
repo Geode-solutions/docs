@@ -30,6 +30,7 @@ A :ref:`StratigraphicUnitsStack <doxid-classgeode_1_1_stratigraphic_units_stack>
 
 		// methods
 	
+		StratigraphicUnitsStack<dimension>& :target:`operator =<doxid-classgeode_1_1_stratigraphic_units_stack_1a74a9d51544b1b5fa13ec2b72767b4e1e>` (StratigraphicUnitsStack<dimension>&& other);
 		absl::string_view :target:`native_extension<doxid-classgeode_1_1_stratigraphic_units_stack_1af46cd17b62bb8bd47d79f34d5453c3f2>`() const;
 		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_stratigraphic_units_stack_1a08bf8b7b4e01e1800eb36fbc583064ca>`();
 	};

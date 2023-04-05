@@ -175,13 +175,15 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a2ffd3144b24323e1843b6ecd22500dfc>`(geode_implicitmodeling_io_api, ImplicitModelingIO);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
-	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a7d56e38137e3b2cb915a262374174447>`(:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1aaf532d3b9b08fcf7130e72783d150337>`(:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ab7a85cf8b553f1afaa29658dae8201d0>`(:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a52aeddfd54127f18770524e573fb5c24>`(:ref:`StratigraphicPoint<doxid-classgeode_1_1_stratigraphic_point>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
 	:target:`ALIAS_3D<doxid-namespacegeode_1aaa75b88ee6eae57f907ac1e9769d3154>`(:ref:`StratigraphicPoint<doxid-classgeode_1_1_stratigraphic_point>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a623a1df1ffc308aff611834cda600919>`(:ref:`StratigraphicPoint<doxid-classgeode_1_1_stratigraphic_point>`);
 	:target:`ALIAS_1D<doxid-namespacegeode_1a8ddf51938fbf36783c6672e59751aff2>`(Point);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a7d56e38137e3b2cb915a262374174447>`(:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a5111a9d6455a1bd0910db6dc4399cdb7>`(:ref:`StratigraphicUnitsStackBuilder<doxid-classgeode_1_1_stratigraphic_units_stack_builder>`);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a5e8e5828532178b105e3b6488c12277c>`(geode_implicitmodeling_model_api, ImplicitModelingModel);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(Point);

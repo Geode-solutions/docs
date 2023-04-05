@@ -126,12 +126,25 @@ Inherited Members
 			const Point3D& point
 			) const;
 	
+		const StratigraphicUnitsStack3D& :ref:`stratigraphic_units_stack<doxid-classgeode_1_1_implicit_structural_model_1a8b3174d3828ea67ff863b7a6f2a7a751>`() const;
+		double :ref:`horizon_implicit_value<doxid-classgeode_1_1_implicit_structural_model_1abd6319c12a3a6e2f4909ba59097eedda>`(const Horizon3D& horizon) const;
 		void :ref:`instantiate_implicit_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_1a8e88861949ffca6ac1477a5e3ef54b31>`(ImplicitStructuralModelBuilderKey);
 	
 		void :ref:`set_implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a496dc79c00c843dd60d5a65dc5bb4fdc>`(
 			const Block3D& block,
 			index_t vertex_id,
 			:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` value,
+			ImplicitStructuralModelBuilderKey
+			);
+	
+		void :ref:`set_stratigraphic_units_stack<doxid-classgeode_1_1_implicit_structural_model_1a2cbc93a187ed8398d4ca44a4556f30a1>`(
+			StratigraphicUnitsStack3D&& stack,
+			ImplicitStructuralModelBuilderKey
+			);
+	
+		void :ref:`set_horizon_isovalue<doxid-classgeode_1_1_implicit_structural_model_1aa8b473730aef2a1f4d5f23409a069e17>`(
+			const Horizon3D& horizon,
+			double isovalue,
 			ImplicitStructuralModelBuilderKey
 			);
 	

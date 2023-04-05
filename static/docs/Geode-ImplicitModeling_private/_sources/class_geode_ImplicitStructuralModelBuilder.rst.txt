@@ -27,6 +27,8 @@ Class managing modifications of a :ref:`ImplicitStructuralModel <doxid-classgeod
 		void :target:`copy<doxid-classgeode_1_1_implicit_structural_model_builder_1a0416e37c3b401b46a5998bf0659cb004>`(const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model);
 		void :target:`instantiate_implicit_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_builder_1aa6b714c05a50f268228993c14b4d0fb7>`();
 		void :target:`set_implicit_value<doxid-classgeode_1_1_implicit_structural_model_builder_1ac25938e374344a2ab117d0731cb488b1>`(const Block3D& block, index_t vertex_id, double value);
+		void :target:`set_stratigraphic_units_stack<doxid-classgeode_1_1_implicit_structural_model_builder_1a05c4c789257ce8b7c52ea56df01d407c>`(StratigraphicUnitsStack3D&& stack);
+		void :target:`set_horizon_isovalue<doxid-classgeode_1_1_implicit_structural_model_builder_1abf7ad9997631e997071a609ff5f6a218>`(const Horizon3D& horizon, double isovalue);
 	};
 
 	// direct descendants

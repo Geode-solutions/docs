@@ -57,4 +57,7 @@ Inherited Members
 			index_t vertex_id,
 			double value
 			);
+	
+		void :ref:`set_stratigraphic_units_stack<doxid-classgeode_1_1_implicit_cross_section_builder_1aa73a13c74b3ae88f66fd5434535a95a6>`(StratigraphicUnitsStack2D&& stack);
+		void :ref:`set_horizon_isovalue<doxid-classgeode_1_1_implicit_cross_section_builder_1a8ff2e6571a9fe3e7d9817a532af4055a>`(const Horizon2D& horizon, double isovalue);
 
