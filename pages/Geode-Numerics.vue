@@ -1,5 +1,5 @@
 <template>
-  <doc-frame project="Geode-Parameterization" private />
+  <doc-frame project="Geode-Numerics" private />
 </template>
 
 

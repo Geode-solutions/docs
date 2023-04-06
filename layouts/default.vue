@@ -10,10 +10,7 @@
             <v-list-item-content>
               <v-tooltip right>
                 <template #activator="{ on, attrs }">
-                  <v-list-item-title 
-                    v-bind="attrs"
-                    v-on="on"
-                  >
+                  <v-list-item-title v-bind="attrs" v-on="on">
                     {{ item.title }}
                   </v-list-item-title>
                 </template>
@@ -74,7 +71,7 @@ export default {
         { divider: 'PROPRIETARY CODE DOCUMENTATION' },
         { title: 'Geode-Common', to: '/geode-common' },
         { title: 'Geode-Conversion', to: '/geode-conversion' },
-        { title: 'Geode-Parameterization', to: '/geode-parameterization' },
+        { title: 'Geode-Numerics', to: '/geode-numerics' },
         { title: 'Geode-SimplexRemesh', to: '/geode-simplexremesh' },
         { title: 'Geode-SimplexRemeshGeosciences', to: '/geode-simplexremeshgeosciences' },
         { title: 'Geode-ExplicitModeling', to: '/geode-explicitmodeling' }
@@ -88,15 +85,20 @@ export default {
 * {
   text-transform: none !important;
 }
+
 code {
   background-color: #E0F2F1 !important;
   color: var(--v-primary-base) !important;
   white-space: pre;
 }
+
 code.example {
   display: block;
 }
-.v-card__text, .v-card__title {
-  word-break: normal; /* maybe !important  */
+
+.v-card__text,
+.v-card__title {
+  word-break: normal;
+  /* maybe !important  */
 }
 </style> 
