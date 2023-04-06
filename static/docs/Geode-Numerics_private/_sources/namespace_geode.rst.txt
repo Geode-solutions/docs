@@ -1,0 +1,214 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+	enum_geode_RegularGridScalarFunctionComputerType.rst
+	class_geode_DataConstraintManager.rst
+	class_geode_FieldLines.rst
+	class_geode_Frame.rst
+	class_geode_FrameField.rst
+	class_geode_FrameFieldParameterization.rst
+	class_geode_FrameFieldSmoother.rst
+	class_geode_FrameTransform.rst
+	class_geode_RegularGridDerivativesMinimization.rst
+	class_geode_RegularGridFDMBoundaryFreeCurvatureMinimization.rst
+	class_geode_RegularGridFDMBoundaryFreeHessianMinimization.rst
+	class_geode_RegularGridFDMBoundaryFreeLaplacianMinimization.rst
+	class_geode_RegularGridFDMCurvatureMinimization.rst
+	class_geode_RegularGridFDMHessianMinimization.rst
+	class_geode_RegularGridFDMLaplacianMinimization.rst
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// typedefs
+
+	typedef ModuleLicenseChecker<Numerics> :target:`NumericsLicenseChecker<doxid-namespacegeode_1ac7af48c7fa9a158f7e242b4450d0dca5>`;
+	typedef Factory<:ref:`RegularGridScalarFunctionComputerType<doxid-namespacegeode_1ab6e81137e19b621f3b87d744bd61fce0>`, :ref:`RegularGridDerivativesMinimization<doxid-classgeode_1_1_regular_grid_derivatives_minimization>`<dimension>, const RegularGrid<dimension>&, const :ref:`DataConstraintManager<doxid-classgeode_1_1_data_constraint_manager>`<dimension>&> :target:`RegularGridDerivativesMinimizationFactory<doxid-namespacegeode_1a9a38f80eab58a5266521c9dd9ba2a1e4>`;
+
+	// enums
+
+	enum :ref:`RegularGridScalarFunctionComputerType<doxid-namespacegeode_1ab6e81137e19b621f3b87d744bd61fce0>`;
+
+	// classes
+
+	template <index_t dimension>
+	class :ref:`DataConstraintManager<doxid-classgeode_1_1_data_constraint_manager>`;
+
+	class :ref:`FieldLines<doxid-classgeode_1_1_field_lines>`;
+
+	template <index_t dimension>
+	class :ref:`Frame<doxid-classgeode_1_1_frame>`;
+
+	class :ref:`FrameField<doxid-classgeode_1_1_frame_field>`;
+	class :ref:`FrameFieldParameterization<doxid-classgeode_1_1_frame_field_parameterization>`;
+	class :ref:`FrameFieldSmoother<doxid-classgeode_1_1_frame_field_smoother>`;
+
+	template <index_t dimension>
+	class :ref:`FrameTransform<doxid-classgeode_1_1_frame_transform>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridDerivativesMinimization<doxid-classgeode_1_1_regular_grid_derivatives_minimization>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridFDMBoundaryFreeCurvatureMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_curvature_minimization>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridFDMBoundaryFreeHessianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_hessian_minimization>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridFDMBoundaryFreeLaplacianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_laplacian_minimization>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridFDMCurvatureMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_curvature_minimization>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridFDMHessianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_hessian_minimization>`;
+
+	template <index_t dimension>
+	class :ref:`RegularGridFDMLaplacianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_laplacian_minimization>`;
+
+	// global variables
+
+	static constexpr char :target:`Numerics<doxid-namespacegeode_1a17caffed458b3842c0cdfc20837f4cc0>`[] = "Numerics";
+
+	// global functions
+
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a53953276159ce928f3fc012a17bc6737>`(geode_numerics_frame_field_api, NumericsFrameField);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ac3422b630458dde4bc69498508c56e4e>`(EdgedCurve);
+	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a44170ce276302d65a3fc91b764140680>`(:ref:`Frame<doxid-classgeode_1_1_frame>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0e024ab01b9700d19787593b90a745f3>`(:ref:`Frame<doxid-classgeode_1_1_frame>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a82b6b61fdb928daf4084c93632f90f47>`(:ref:`Frame<doxid-classgeode_1_1_frame>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(TetrahedralSolid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1da5adee14f91deff17a0b855b2c8e84>`(HybridSolid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa326268026b80210a023b9d2edec059d>`(PolygonalSurface);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ad1e677b7ca1b4a9e3461a5ab070e8b42>`(HybridSolid);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3f3c5cdeee9a9389ffd9f740f987e982>`(PointSet);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a39e77d985d0ff03e0a12e0b0d0106a11>`(PolygonalSurface);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1e631365afa91db8a83b01da36eb4ea8>`(:ref:`FrameTransform<doxid-classgeode_1_1_frame_transform>`);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ac7460483fc781252e3a9b61ecaac8b41>`(geode_numerics_scalar_function_api, NumericsScalarFunction);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a99e0e31c7cdbe87f1a2accf5d11b05fe>`(:ref:`DataConstraintManager<doxid-classgeode_1_1_data_constraint_manager>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a88e7373e2780b9968a6fddc59703bcf9>`(:ref:`DataConstraintManager<doxid-classgeode_1_1_data_constraint_manager>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a2177cb00369cd60aa5151e2d00d9c8c5>`(RegularGridScalarFunction);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a8b17a9cd983208fb516bd600df660d44>`(:ref:`RegularGridFDMBoundaryFreeCurvatureMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_curvature_minimization>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9ccdb7f101c6841ace7161b12ebe17b7>`(:ref:`RegularGridFDMBoundaryFreeHessianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_hessian_minimization>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aed0a84753c32306acd30263608da80f5>`(:ref:`RegularGridFDMBoundaryFreeLaplacianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_boundary_free_laplacian_minimization>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab4cc0cf2f4db5260820c1e8cb02a71f3>`(:ref:`RegularGridFDMCurvatureMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_curvature_minimization>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1af51350a3b4a8985dd094f06d70e04791>`(:ref:`RegularGridDerivativesMinimization<doxid-classgeode_1_1_regular_grid_derivatives_minimization>`);
+
+	template <index_t dimension>
+	std::unique_ptr<:ref:`RegularGridDerivativesMinimization<doxid-classgeode_1_1_regular_grid_derivatives_minimization>`<dimension>> :target:`create_scalar_function_computer<doxid-namespacegeode_1a7e372acdf80be869063c2f8c752211e5>`(
+		:ref:`RegularGridScalarFunctionComputerType<doxid-namespacegeode_1ab6e81137e19b621f3b87d744bd61fce0>`,
+		const RegularGrid<dimension>& grid,
+		const :ref:`DataConstraintManager<doxid-classgeode_1_1_data_constraint_manager>`<dimension>& data_constraints
+		);
+
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abf5a5a87400584a24e8f0d511c307f6c>`(:ref:`RegularGridDerivativesMinimizationFactory<doxid-namespacegeode_1a9a38f80eab58a5266521c9dd9ba2a1e4>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9bf540386f2e72c1fb5fd912e8e149d8>`(:ref:`RegularGridFDMHessianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_hessian_minimization>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a07e0283991d6dc72041312468a44f002>`(:ref:`RegularGridFDMLaplacianMinimization<doxid-classgeode_1_1_regular_grid_f_d_m_laplacian_minimization>`);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a72c9ec9e6151feb2fd1c51c07f754574>`(geode_numerics_surface_api, NumericsSurface);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac5ecef06abef60896357a8eb77586520>`(TriangulatedSurface);
+
+	std::unique_ptr<TriangulatedSurface2D> geode_numerics_surface_api :ref:`convert_surface3d_into_2d<doxid-namespacegeode_1a33f2cf8607789ed0a06b3d0f75611f21>`(
+		const TriangulatedSurface3D& mesh,
+		absl::string_view attribute_name
+		);
+
+	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+
+	void geode_numerics_surface_api :ref:`compute_LSCM_parameterization<doxid-namespacegeode_1a79169aadc72c31f4c4c0374faa962ed8>`(
+		const TriangulatedSurface3D& mesh,
+		absl::string_view attribute_name
+		);
+
+	} // namespace geode
+.. _details-namespacegeode:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Global Functions
+----------------
+
+.. index:: pair: function; convert_surface3d_into_2d
+.. _doxid-namespacegeode_1a33f2cf8607789ed0a06b3d0f75611f21:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::unique_ptr<TriangulatedSurface2D> geode_numerics_surface_api convert_surface3d_into_2d(
+		const TriangulatedSurface3D& mesh,
+		absl::string_view attribute_name
+		)
+
+Compute a 2D mesh from a 3D mesh and its parametric coordinates
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Input triangulated mesh
+
+	*
+		- attribute_name
+
+		- The VariableAttribute< Point2D > name which holds the parametric values. Values are stored on the vertices.
+
+.. index:: pair: function; compute_LSCM_parameterization
+.. _doxid-namespacegeode_1a79169aadc72c31f4c4c0374faa962ed8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void geode_numerics_surface_api compute_LSCM_parameterization(
+		const TriangulatedSurface3D& mesh,
+		absl::string_view attribute_name
+		)
+
+Compute Least Squares Conformal Maps
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Input triangulated mesh
+
+	*
+		- attribute_name
+
+		- The VariableAttribute< Point2D > name which holds the parametric values. Values are stored on the vertices.
+

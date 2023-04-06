@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>class geode::FrameFieldParameterization &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::FrameFieldSmoother" href="class_geode_FrameFieldSmoother.html" />
+    <link rel="prev" title="class geode::FrameField" href="class_geode_FrameField.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-geode-framefieldparameterization">
+<span id="doxid-classgeode-1-1-frame-field-parameterization"></span><span id="index-0"></span><h1>class geode::FrameFieldParameterization</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;frame_field_parameterization.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="n">FrameFieldParameterization</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1a9922d1485c15b8ab0c8fee1bac13cd97"><span></span><span class="n">mesh_element_attribute_type</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1a1ec466be2a00bf5e2effa7dc210c5f28"><span></span><span class="n">mesh_element_attribute_name</span></span><span></span> <span class="o">=</span>             <span class="s">&quot;mesh_element_attribute_name&quot;</span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1ae714c0016701c140630ace4c6705d7b9"><span></span><span class="n">FrameFieldParameterization</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_FrameField.html#doxid-classgeode-1-1-frame-field"><span class="std std-ref">FrameField</span></a><span></span><span class="o">&amp;</span> <span class="n">frame_field</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1a98a83b3e7f879d7d94a04f3538ab9b12"><span></span><span class="n">compute_parameterization</span></span><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">mesh_size</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1abcf1fb6faf56b8b1f5f336cffb98f9d7"><span></span><span class="n">delete_parameterization_attribute</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1a76917dd6d1dde2285cf512a3da510142"><span></span><span class="n">delete_singularity_attribute</span></span><span></span><span class="p">();</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1aa93ff1bcbe7574d0fc3f6616c41640ef"><span></span><span class="n">delete_attributes</span></span><span></span><span class="p">();</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PointSet3D</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1a503df56ab886b5a62d6dc91ba8b7668e"><span></span><span class="n">extract_points</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">EdgedCurve3D</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1a0f7bf5ceb8b84ee4e9dcdbf44ea334c4"><span></span><span class="n">extract_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">PolygonalSurface3D</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1af1a805423d8c22eda2ec7d20aa436b2b"><span></span><span class="n">extract_quadrangles</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">uuid</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">HybridSolid3D</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-frame-field-parameterization-1a4771629eb036cf8858ea95204bb6cda1"><span></span><span class="n">extract_hexahedra</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_FrameFieldParameterization.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

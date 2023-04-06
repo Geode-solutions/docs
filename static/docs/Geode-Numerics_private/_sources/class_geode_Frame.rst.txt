@@ -1,0 +1,35 @@
+.. index:: pair: class; geode::Frame
+.. _doxid-classgeode_1_1_frame:
+
+template class geode::Frame
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <frame.h>
+	
+	template <index_t dimension>
+	class Frame
+	{
+	public:
+		// construction
+	
+		:target:`Frame<doxid-classgeode_1_1_frame_1ae4db4086904d8b9b31d2263e8418f39e>`();
+		:target:`Frame<doxid-classgeode_1_1_frame_1a349ee01dd1eca37c917b940749e4cfad>`(std::array<Vector<dimension>, dimension> directions);
+
+		// methods
+	
+		const Vector<dimension>& :target:`direction<doxid-classgeode_1_1_frame_1ae114972a5ea2e61af2a0796ce9328ad3>`(local_index_t index) const;
+		void :target:`set_direction<doxid-classgeode_1_1_frame_1aa94cd676580e0264f8cdbe00a935a0cd>`(local_index_t index, Vector<dimension> direction);
+		Frame :target:`inverse<doxid-classgeode_1_1_frame_1a96ced5cc37adade03710b8e6e5cb08d9>`() const;
+		Frame :target:`operator +<doxid-classgeode_1_1_frame_1add4ed0c967c4f2cd835b36c4c3caaeaa>` (const Frame& rhs) const;
+		Frame :target:`rescale<doxid-classgeode_1_1_frame_1a68c065ab3a06197174035fd7c80bd601>`(double length) const;
+		std::string :target:`string<doxid-classgeode_1_1_frame_1adab98782410b85effab33ead8fb5ee6c>`() const;
+	};
