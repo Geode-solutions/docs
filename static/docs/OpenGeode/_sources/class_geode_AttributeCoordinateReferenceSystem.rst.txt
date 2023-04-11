@@ -33,6 +33,8 @@ template class geode::AttributeCoordinateReferenceSystem
 		virtual :ref:`CRSType<doxid-namespacegeode_1a1da798a270c4d8fa3ec8e817183a1df5>` :target:`type_name<doxid-classgeode_1_1_attribute_coordinate_reference_system_1aa0a599fba863eb25c9eb3c5f8d1c32f2>`() const;
 		virtual const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`point<doxid-classgeode_1_1_attribute_coordinate_reference_system_1a4c7665d14c532ae65209ebc7340f09d8>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` point_id) const;
 		virtual void :target:`set_point<doxid-classgeode_1_1_attribute_coordinate_reference_system_1a36438d215e0224d7e8905d52ce826a1a>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` point_id, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> point);
+		absl::string_view :target:`attribute_name<doxid-classgeode_1_1_attribute_coordinate_reference_system_1a01183f9dc12c662816681c6c02d1a786>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_points<doxid-classgeode_1_1_attribute_coordinate_reference_system_1a6351e2f230c85be9246c0dfab657ca45>`() const;
 		static :ref:`CRSType<doxid-namespacegeode_1a1da798a270c4d8fa3ec8e817183a1df5>` :target:`type_name_static<doxid-classgeode_1_1_attribute_coordinate_reference_system_1a62a6027b0b7877c86b536dc6983923e9>`();
 	};
 
