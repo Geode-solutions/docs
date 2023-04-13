@@ -58,3 +58,7 @@ A Cross Section is a Section composed of :ref:`Faults <doxid-classgeode_1_1_faul
 		:ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range>` :target:`stratigraphic_unit_items<doxid-classgeode_1_1_cross_section_1af2c447d3ca2829de5fa198576f0fa998>`(const StratigraphicUnit2D& stratigraphic_unit) const;
 		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_cross_section_1a0e50d74bd8a40e67ddbb24e15c9976c4>`();
 	};
+
+	// direct descendants
+
+	class :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`;

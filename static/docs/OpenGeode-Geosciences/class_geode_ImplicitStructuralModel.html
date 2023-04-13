@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>class geode::ImplicitStructuralModel &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::ImplicitStructuralModelBuilder" href="class_geode_ImplicitStructuralModelBuilder.html" />
+    <link rel="prev" title="class geode::ImplicitCrossSectionOutput" href="class_geode_ImplicitCrossSectionOutput.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-geode-implicitstructuralmodel">
+<span id="doxid-classgeode-1-1-implicit-structural-model"></span><span id="index-0"></span><h1>class geode::ImplicitStructuralModel</h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview</h2>
+<p>An Implicit Model is a Structural model where each block has a specific attribute to store the implicit value on its vertices. <a class="reference internal" href="#details-classgeode-1-1-implicit-structural-model"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;implicit_structural_model.h&gt;</span><span class="cp"></span>
+
+<span class="k">class</span> <span class="nl">ImplicitStructuralModel</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">geode::StructuralModel</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1af8fa3507f1b90e0c89056d0a1e9124c5"><span></span><span class="n">implicit_attribute_type</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a594c3769161690e5e8967c1177ed208b"><span></span><span class="n">implicit_attribute_name</span></span><span></span> <span class="o">=</span>             <span class="s">&quot;geode_implicit_attribute&quot;</span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a6dacbb4ba9255849c369681715c8b915"><span></span><span class="n">ImplicitStructuralModel</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a7462e1ab30875d83465887190762c3ee"><span></span><span class="n">ImplicitStructuralModel</span></span><span></span><span class="p">(</span><span class="n">ImplicitStructuralModel</span><span class="o">&amp;&amp;</span> <span class="n">implicit_model</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a139614a05ed9586ececd5c34403e2f1b"><span></span><span class="n">ImplicitStructuralModel</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;&amp;</span> <span class="n">structural_model</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a7db14da19101e19fe01bd10d345341f8"><span></span><span class="n">native_extension</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1af8fa3507f1b90e0c89056d0a1e9124c5"><span class="std std-ref">implicit_attribute_type</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1a7139a76c808b9cfe34ea541bfa3b9cbe"><span class="std std-ref">implicit_value</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1af8fa3507f1b90e0c89056d0a1e9124c5"><span class="std std-ref">implicit_attribute_type</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1a6bec3ca80954768dd5c52eefd5bee85f"><span class="std std-ref">implicit_value</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1af8fa3507f1b90e0c89056d0a1e9124c5"><span class="std std-ref">implicit_attribute_type</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1a328dca77e31a771b65550ebc5bb7deff"><span class="std std-ref">implicit_value</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">polyhedron_id</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1a8de86437d9872d3d492b4a2d9ea745b5"><span class="std std-ref">containing_polyhedron</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">const</span> <span class="n">StratigraphicUnitsStack3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a8b3174d3828ea67ff863b7a6f2a7a751"><span></span><span class="n">stratigraphic_units_stack</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1abd6319c12a3a6e2f4909ba59097eedda"><span></span><span class="n">horizon_implicit_value</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon3D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a8e88861949ffca6ac1477a5e3ef54b31"><span></span><span class="n">instantiate_implicit_attribute_on_blocks</span></span><span></span><span class="p">(</span><span class="n">ImplicitStructuralModelBuilderKey</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a496dc79c00c843dd60d5a65dc5bb4fdc"><span></span><span class="n">set_implicit_value</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+        <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span>
+        <a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1af8fa3507f1b90e0c89056d0a1e9124c5"><span class="std std-ref">implicit_attribute_type</span></a><span></span> <span class="n">value</span><span class="p">,</span>
+        <span class="n">ImplicitStructuralModelBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1a2cbc93a187ed8398d4ca44a4556f30a1"><span></span><span class="n">set_stratigraphic_units_stack</span></span><span></span><span class="p">(</span>
+        <span class="n">StratigraphicUnitsStack3D</span><span class="o">&amp;&amp;</span> <span class="n">stack</span><span class="p">,</span>
+        <span class="n">ImplicitStructuralModelBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1aa8b473730aef2a1f4d5f23409a069e17"><span></span><span class="n">set_horizon_isovalue</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Horizon3D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">isovalue</span><span class="p">,</span>
+        <span class="n">ImplicitStructuralModelBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-structural-model-1aa69265945e3e076b61a3cf1367dc8325"><span></span><span class="n">native_extension_static</span></span><span></span><span class="p">();</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicModel.html#doxid-classgeode-1-1-stratigraphic-model"><span class="std std-ref">StratigraphicModel</span></a><span></span><span class="p">;</span></pre>
+<section id="inherited-members">
+<h3>Inherited Members</h3>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_StructuralModelBuilder.html#doxid-classgeode-1-1-structural-model-builder"><span class="std std-ref">StructuralModelBuilder</span></a><span></span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model-1adaac593ede6ae4e20d3ddd89a64e531d"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// classes</span>
+
+    <span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModel_FaultBlockItemRange.html#doxid-classgeode-1-1-structural-model-1-1-fault-block-item-range"><span class="std std-ref">FaultBlockItemRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModel_FaultItemRange.html#doxid-classgeode-1-1-structural-model-1-1-fault-item-range"><span class="std std-ref">FaultItemRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModel_HorizonItemRange.html#doxid-classgeode-1-1-structural-model-1-1-horizon-item-range"><span class="std std-ref">HorizonItemRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_StructuralModel_StratigraphicUnitItemRange.html#doxid-classgeode-1-1-structural-model-1-1-stratigraphic-unit-item-range"><span class="std std-ref">StratigraphicUnitItemRange</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">index_t</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model-1aa2db0a73ff5298cdd4092eff07138711"><span class="std std-ref">dim</span></a><span></span> <span class="p">{</span> <span class="mi">3</span> <span class="p">};</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model-1a5edd32082ab7608f3c9e7782e5980a95"><span class="std std-ref">native_extension</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_StructuralModel_HorizonItemRange.html#doxid-classgeode-1-1-structural-model-1-1-horizon-item-range"><span class="std std-ref">HorizonItemRange</span></a><span></span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model-1a27bd1e7936f014e4a8098216daa2adcb"><span class="std std-ref">horizon_items</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon3D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_StructuralModel_FaultItemRange.html#doxid-classgeode-1-1-structural-model-1-1-fault-item-range"><span class="std std-ref">FaultItemRange</span></a><span></span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model-1accd329626e1d6533072231b01854f97e"><span class="std std-ref">fault_items</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Fault3D</span><span class="o">&amp;</span> <span class="n">fault</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_StructuralModel_FaultBlockItemRange.html#doxid-classgeode-1-1-structural-model-1-1-fault-block-item-range"><span class="std std-ref">FaultBlockItemRange</span></a><span></span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model-1a92090ef7a1247a6eff61797c51af8112"><span class="std std-ref">fault_block_items</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">FaultBlock3D</span><span class="o">&amp;</span> <span class="n">fault_block</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_StructuralModel_StratigraphicUnitItemRange.html#doxid-classgeode-1-1-structural-model-1-1-stratigraphic-unit-item-range"><span class="std std-ref">StratigraphicUnitItemRange</span></a><span></span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model-1a5ce7e138030d6427fb9fed07402f8fa6"><span class="std std-ref">stratigraphic_unit_items</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">StratigraphicUnit3D</span><span class="o">&amp;</span> <span class="n">stratigraphic_unit</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model-1aa77725f25f214c8c90293ee9908d18a8"><span class="std std-ref">native_extension_static</span></a><span></span><span class="p">();</span></pre>
+</section>
+</section>
+<section id="detailed-documentation">
+<span id="details-classgeode-1-1-implicit-structural-model"></span><h2>Detailed Documentation</h2>
+<p>An Implicit Model is a Structural model where each block has a specific attribute to store the implicit value on its vertices.</p>
+<section id="methods">
+<h3>Methods</h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1a7139a76c808b9cfe34ea541bfa3b9cbe"><span id="index-1"></span><a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1af8fa3507f1b90e0c89056d0a1e9124c5"><span class="std std-ref">implicit_attribute_type</span></a><span></span> <span class="n">implicit_value</span><span class="p">(</span><span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the implicit value at the given vertex of the given block.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1a6bec3ca80954768dd5c52eefd5bee85f"><span id="index-2"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1af8fa3507f1b90e0c89056d0a1e9124c5"><span class="std std-ref">implicit_attribute_type</span></a><span></span><span class="o">&gt;</span> <span class="n">implicit_value</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the implicit value on the point, computed in the polyhedron containing the given point in the given block, if there is any.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1a328dca77e31a771b65550ebc5bb7deff"><span id="index-3"></span><a class="reference internal" href="#doxid-classgeode-1-1-implicit-structural-model-1af8fa3507f1b90e0c89056d0a1e9124c5"><span class="std std-ref">implicit_attribute_type</span></a><span></span> <span class="n">implicit_value</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">polyhedron_id</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the implicit value on the point, computed in the given polyhedron of the given block.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-implicit-structural-model-1a8de86437d9872d3d492b4a2d9ea745b5"><span id="index-4"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">containing_polyhedron</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Returns the block polyhedron containing the given point, if there is any.</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/class_geode_ImplicitStructuralModel.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

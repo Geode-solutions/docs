@@ -45,3 +45,8 @@ template class geode::Horizons
 		:ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>` :target:`horizons<doxid-classgeode_1_1_horizons_1a6519a0977dc913d8f512316718ad90b8>`() const;
 		void :target:`save_horizons<doxid-classgeode_1_1_horizons_1a45c8c9ea998662c670380632588ff79f>`(absl::string_view directory) const;
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`;

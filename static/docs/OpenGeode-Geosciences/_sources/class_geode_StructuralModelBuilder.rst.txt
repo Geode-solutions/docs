@@ -66,3 +66,7 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 	
 		void :target:`remove_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1a2dbd86d61d696d9dd901a7c9af084687>`(const StratigraphicUnit3D& stratigraphic_unit);
 	};
+
+	// direct descendants
+
+	class :ref:`ImplicitStructuralModelBuilder<doxid-classgeode_1_1_implicit_structural_model_builder>`;

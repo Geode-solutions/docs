@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::OpenGeodeStratigraphicUnitsStackOutput
+.. _doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_output:
+
+template class geode::OpenGeodeStratigraphicUnitsStackOutput
+============================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geode_stratigraphic_units_stack_output.h>
+	
+	template <index_t dimension>
+	class OpenGeodeStratigraphicUnitsStackOutput: public :ref:`geode::StratigraphicUnitsStackOutput<doxid-classgeode_1_1_stratigraphic_units_stack_output>`
+	{
+	public:
+		// construction
+	
+		:target:`OpenGeodeStratigraphicUnitsStackOutput<doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_output_1a5884c26be95f13525c557d1859a6968b>`(absl::string_view filename);
+
+		// methods
+	
+		void :target:`archive_stratigraphic_units_stack_files<doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_output_1acc8cfefeeb45afc576322344b40aa670>`(const ZipFile& zip_writer) const;
+	
+		void :target:`save_stratigraphic_units_stack_files<doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_output_1aa9a1c153da5393a498390adeea8f7e4e>`(
+			const :ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`<dimension>& stratigraphic_units_stack,
+			absl::string_view directory
+			) const;
+	
+		void :target:`write<doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_output_1a57c22053a39ff2726cebd97f8bd0ef7a>`(const :ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`<dimension>& stratigraphic_units_stack) const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_output_1ad7e4da8aa9023c717f4ef7f1ee2b1ccd>`();
+	};

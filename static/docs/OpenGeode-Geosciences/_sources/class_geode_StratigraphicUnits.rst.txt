@@ -45,3 +45,8 @@ template class geode::StratigraphicUnits
 		:ref:`StratigraphicUnitRange<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range>` :target:`stratigraphic_units<doxid-classgeode_1_1_stratigraphic_units_1ae172751baf5e452e00f3c170423d5a1d>`() const;
 		void :target:`save_stratigraphic_units<doxid-classgeode_1_1_stratigraphic_units_1a27613c8c099f15913637dcd9012e2d1f>`(absl::string_view directory) const;
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`;

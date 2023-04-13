@@ -58,3 +58,7 @@ A Structural Model is a Boundary Representation composed of :ref:`Faults <doxid-
 		:ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_structural_model_1_1_stratigraphic_unit_item_range>` :target:`stratigraphic_unit_items<doxid-classgeode_1_1_structural_model_1a5ce7e138030d6427fb9fed07402f8fa6>`(const StratigraphicUnit3D& stratigraphic_unit) const;
 		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_structural_model_1aa77725f25f214c8c90293ee9908d18a8>`();
 	};
+
+	// direct descendants
+
+	class :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`;

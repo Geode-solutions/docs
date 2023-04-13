@@ -22,13 +22,38 @@ namespace geode
 	class_geode_Horizon.rst
 	class_geode_Horizons.rst
 	class_geode_HorizonsBuilder.rst
+	class_geode_ImplicitCrossSection.rst
+	class_geode_ImplicitCrossSectionBuilder.rst
+	class_geode_ImplicitCrossSectionInput.rst
+	class_geode_ImplicitCrossSectionOutput.rst
+	class_geode_ImplicitStructuralModel.rst
+	class_geode_ImplicitStructuralModelBuilder.rst
+	class_geode_ImplicitStructuralModelInput.rst
+	class_geode_ImplicitStructuralModelOutput.rst
 	class_geode_OpenGeodeCrossSectionInput.rst
 	class_geode_OpenGeodeCrossSectionOutput.rst
+	class_geode_OpenGeodeStratigraphicUnitsStackInput.rst
+	class_geode_OpenGeodeStratigraphicUnitsStackOutput.rst
 	class_geode_OpenGeodeStructuralModelInput.rst
 	class_geode_OpenGeodeStructuralModelOutput.rst
+	class_geode_StratigraphicModel.rst
+	class_geode_StratigraphicModelBuilder.rst
+	class_geode_StratigraphicModelInput.rst
+	class_geode_StratigraphicModelOutput.rst
+	class_geode_StratigraphicPoint.rst
+	class_geode_StratigraphicRelationships.rst
+	class_geode_StratigraphicRelationshipsBuilder.rst
+	class_geode_StratigraphicSection.rst
+	class_geode_StratigraphicSectionBuilder.rst
+	class_geode_StratigraphicSectionInput.rst
+	class_geode_StratigraphicSectionOutput.rst
 	class_geode_StratigraphicUnit.rst
 	class_geode_StratigraphicUnits.rst
 	class_geode_StratigraphicUnitsBuilder.rst
+	class_geode_StratigraphicUnitsStack.rst
+	class_geode_StratigraphicUnitsStackBuilder.rst
+	class_geode_StratigraphicUnitsStackInput.rst
+	class_geode_StratigraphicUnitsStackOutput.rst
 	class_geode_StructuralModel.rst
 	class_geode_StructuralModelBuilder.rst
 	class_geode_StructuralModelInput.rst
@@ -56,6 +81,16 @@ Overview
 	typedef Factory<std::string, :ref:`CrossSectionOutput<doxid-classgeode_1_1_cross_section_output>`, absl::string_view> :target:`CrossSectionOutputFactory<doxid-namespacegeode_1ae82607c018d576d200be2f4cdb3b9c1f>`;
 	typedef Factory<std::string, :ref:`StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`, absl::string_view> :target:`StructuralModelInputFactory<doxid-namespacegeode_1a6a6d67a3fd51f78f66fb38c7b46d30a5>`;
 	typedef Factory<std::string, :ref:`StructuralModelOutput<doxid-classgeode_1_1_structural_model_output>`, absl::string_view> :target:`StructuralModelOutputFactory<doxid-namespacegeode_1af2aaa676eaf7667c1ca7e2d629ff47a6>`;
+	typedef Factory<std::string, :ref:`ImplicitCrossSectionInput<doxid-classgeode_1_1_implicit_cross_section_input>`, absl::string_view> :target:`ImplicitCrossSectionInputFactory<doxid-namespacegeode_1a1bef0ef0cbfc9e11e41584046f0bcdea>`;
+	typedef Factory<std::string, :ref:`ImplicitCrossSectionOutput<doxid-classgeode_1_1_implicit_cross_section_output>`, absl::string_view> :target:`ImplicitCrossSectionOutputFactory<doxid-namespacegeode_1a781be7141886b86a1a073566c1b21f97>`;
+	typedef Factory<std::string, :ref:`ImplicitStructuralModelInput<doxid-classgeode_1_1_implicit_structural_model_input>`, absl::string_view> :target:`ImplicitStructuralModelInputFactory<doxid-namespacegeode_1af5f57250e7d05e0a4f1ab9141ff324c3>`;
+	typedef Factory<std::string, :ref:`ImplicitStructuralModelOutput<doxid-classgeode_1_1_implicit_structural_model_output>`, absl::string_view> :target:`ImplicitStructuralModelOutputFactory<doxid-namespacegeode_1aaba818855148afe7c23129b7fa2538fd>`;
+	typedef Factory<std::string, :ref:`StratigraphicModelInput<doxid-classgeode_1_1_stratigraphic_model_input>`, absl::string_view> :target:`StratigraphicModelInputFactory<doxid-namespacegeode_1aae421a08185b1a9142ee3937f453cc59>`;
+	typedef Factory<std::string, :ref:`StratigraphicModelOutput<doxid-classgeode_1_1_stratigraphic_model_output>`, absl::string_view> :target:`StratigraphicModelOutputFactory<doxid-namespacegeode_1a2d2f4b95f8cadbe5c33311b403041110>`;
+	typedef Factory<std::string, :ref:`StratigraphicSectionInput<doxid-classgeode_1_1_stratigraphic_section_input>`, absl::string_view> :target:`StratigraphicSectionInputFactory<doxid-namespacegeode_1a33ee2dda62f8a029c31318d5fea9dd45>`;
+	typedef Factory<std::string, :ref:`StratigraphicSectionOutput<doxid-classgeode_1_1_stratigraphic_section_output>`, absl::string_view> :target:`StratigraphicSectionOutputFactory<doxid-namespacegeode_1ae37238c90052ceb891db28dbd5f63177>`;
+	typedef Factory<std::string, :ref:`StratigraphicUnitsStackInput<doxid-classgeode_1_1_stratigraphic_units_stack_input>`<dimension>, absl::string_view> :target:`StratigraphicUnitsStackInputFactory<doxid-namespacegeode_1a9c2998ba712711c92a383b1467a9625f>`;
+	typedef Factory<std::string, :ref:`StratigraphicUnitsStackOutput<doxid-classgeode_1_1_stratigraphic_units_stack_output>`<dimension>, absl::string_view> :target:`StratigraphicUnitsStackOutputFactory<doxid-namespacegeode_1af0e2d7113a8f6a898361f84154b9b453>`;
 
 	// classes
 
@@ -94,10 +129,39 @@ Overview
 	template <index_t dimension>
 	class :ref:`HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`;
 
+	class :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`;
+	class :ref:`ImplicitCrossSectionBuilder<doxid-classgeode_1_1_implicit_cross_section_builder>`;
+	class :ref:`ImplicitCrossSectionInput<doxid-classgeode_1_1_implicit_cross_section_input>`;
+	class :ref:`ImplicitCrossSectionOutput<doxid-classgeode_1_1_implicit_cross_section_output>`;
+	class :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`;
+	class :ref:`ImplicitStructuralModelBuilder<doxid-classgeode_1_1_implicit_structural_model_builder>`;
+	class :ref:`ImplicitStructuralModelInput<doxid-classgeode_1_1_implicit_structural_model_input>`;
+	class :ref:`ImplicitStructuralModelOutput<doxid-classgeode_1_1_implicit_structural_model_output>`;
 	class :ref:`OpenGeodeCrossSectionInput<doxid-classgeode_1_1_open_geode_cross_section_input>`;
 	class :ref:`OpenGeodeCrossSectionOutput<doxid-classgeode_1_1_open_geode_cross_section_output>`;
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeStratigraphicUnitsStackInput<doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_input>`;
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeStratigraphicUnitsStackOutput<doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_output>`;
+
 	class :ref:`OpenGeodeStructuralModelInput<doxid-classgeode_1_1_open_geode_structural_model_input>`;
 	class :ref:`OpenGeodeStructuralModelOutput<doxid-classgeode_1_1_open_geode_structural_model_output>`;
+	class :ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`;
+	class :ref:`StratigraphicModelBuilder<doxid-classgeode_1_1_stratigraphic_model_builder>`;
+	class :ref:`StratigraphicModelInput<doxid-classgeode_1_1_stratigraphic_model_input>`;
+	class :ref:`StratigraphicModelOutput<doxid-classgeode_1_1_stratigraphic_model_output>`;
+
+	template <index_t dimension>
+	class :ref:`StratigraphicPoint<doxid-classgeode_1_1_stratigraphic_point>`;
+
+	class :ref:`StratigraphicRelationships<doxid-classgeode_1_1_stratigraphic_relationships>`;
+	class :ref:`StratigraphicRelationshipsBuilder<doxid-classgeode_1_1_stratigraphic_relationships_builder>`;
+	class :ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>`;
+	class :ref:`StratigraphicSectionBuilder<doxid-classgeode_1_1_stratigraphic_section_builder>`;
+	class :ref:`StratigraphicSectionInput<doxid-classgeode_1_1_stratigraphic_section_input>`;
+	class :ref:`StratigraphicSectionOutput<doxid-classgeode_1_1_stratigraphic_section_output>`;
 
 	template <index_t dimension>
 	class :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`;
@@ -108,6 +172,18 @@ Overview
 	template <index_t dimension>
 	class :ref:`StratigraphicUnitsBuilder<doxid-classgeode_1_1_stratigraphic_units_builder>`;
 
+	template <index_t dimension>
+	class :ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`;
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnitsStackBuilder<doxid-classgeode_1_1_stratigraphic_units_stack_builder>`;
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnitsStackInput<doxid-classgeode_1_1_stratigraphic_units_stack_input>`;
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnitsStackOutput<doxid-classgeode_1_1_stratigraphic_units_stack_output>`;
+
 	class :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`;
 	class :ref:`StructuralModelBuilder<doxid-classgeode_1_1_structural_model_builder>`;
 	class :ref:`StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`;
@@ -115,11 +191,7 @@ Overview
 
 	// global functions
 
-	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ab82bf49dec35bfcf1fab0c43b154a330>`(
-		opengeode_geosciences_geosciences_api,
-		OpenGeodeGeosciencesGeosciences
-		);
-
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a11c15e428a6b267ab9acd75e8395405e>`(opengeode_geosciences_explicit_api, GeosciencesExplicit);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a398d62ea5e60d2fb6466f00ad11562a8>`(:ref:`GeographicCoordinateSystem<doxid-classgeode_1_1_geographic_coordinate_system>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a904e02c945f45dd8ec5315353974fbdd>`(CoordinateReferenceSystemManager);
 
@@ -144,8 +216,8 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aea57c093c88c72fca305a68ab581c977>`(:ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a034776a1edf03eb2a0e8f718243b1202>`(:ref:`StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a0e705bf508ac7c037fae49ac3cc7344b>`(:ref:`StratigraphicUnitsBuilder<doxid-classgeode_1_1_stratigraphic_units_builder>`);
-	void opengeode_geosciences_geosciences_api :ref:`register_geosciences_serialize_pcontext<doxid-namespacegeode_1ae3663b1c1416d9b40e81a48eaa4b9441>`(PContext& context);
-	void opengeode_geosciences_geosciences_api :ref:`register_geosciences_deserialize_pcontext<doxid-namespacegeode_1a1ac997fa60ed4bd714610bcaa1403571>`(PContext& context);
+	void opengeode_geosciences_explicit_api :ref:`register_explicit_serialize_pcontext<doxid-namespacegeode_1adf6e10ee97ed224017d299a94f54579a>`(PContext& context);
+	void opengeode_geosciences_explicit_api :ref:`register_explicit_deserialize_pcontext<doxid-namespacegeode_1a67aee0d9031c8106c3b939f63540bca7>`(PContext& context);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9c94113eab86ec12cd09b83a2a9faf4b>`(:ref:`FaultsBuilder<doxid-classgeode_1_1_faults_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aa8a835e22495dda587443407042be92b>`(:ref:`Fault<doxid-classgeode_1_1_fault>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55699ccfbe48a2be2bb3cf8a1eca317d>`(:ref:`FaultBlocksBuilder<doxid-classgeode_1_1_fault_blocks_builder>`);
@@ -158,19 +230,83 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af10b9fea3efb1a501b0a13ea9cf8240f>`(:ref:`StratigraphicUnitsBuilder<doxid-classgeode_1_1_stratigraphic_units_builder>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a25ef31899ff6065c94d0d77f4c167215>`(:ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a068944b4aa3095a51776291dbc52dde4>`(:ref:`StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`);
-	:ref:`CrossSection<doxid-classgeode_1_1_cross_section>` opengeode_geosciences_geosciences_api :ref:`load_cross_section<doxid-namespacegeode_1a56ce531cf7190565fd429b603c835bbf>`(absl::string_view filename);
+	:ref:`CrossSection<doxid-classgeode_1_1_cross_section>` opengeode_geosciences_explicit_api :ref:`load_cross_section<doxid-namespacegeode_1a0f0b503e286957db537b13c65c6abc74>`(absl::string_view filename);
 
-	void opengeode_geosciences_geosciences_api :ref:`save_cross_section<doxid-namespacegeode_1a686db0f6979efe582e3ab9b27e03a136>`(
+	void opengeode_geosciences_explicit_api :ref:`save_cross_section<doxid-namespacegeode_1aa45a12bc76c420b87359a0113bd51e23>`(
 		const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
 		absl::string_view filename
 		);
 
-	:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` opengeode_geosciences_geosciences_api :ref:`load_structural_model<doxid-namespacegeode_1a163a868e3b17affba29b446707f6a874>`(absl::string_view filename);
+	:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` opengeode_geosciences_explicit_api :ref:`load_structural_model<doxid-namespacegeode_1a97cf55105e7f5eb56f411bf5ace110d0>`(absl::string_view filename);
 
-	void opengeode_geosciences_geosciences_api :ref:`save_structural_model<doxid-namespacegeode_1aedf25fba2a5257c41fe72e361cbe9d17>`(
+	void opengeode_geosciences_explicit_api :ref:`save_structural_model<doxid-namespacegeode_1ad90986608405ebe1927e06b7bd94862b>`(
 		const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
 		absl::string_view filename
 		);
+
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ab2f0a5c633a07ea2da0f4c7f03eaba32>`(opengeode_geosciences_implicit_api, GeosciencesImplicit);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6e9570cdaaa15581446649877e605e6b>`(:ref:`StratigraphicPoint<doxid-classgeode_1_1_stratigraphic_point>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a7d56e38137e3b2cb915a262374174447>`(:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1aaf532d3b9b08fcf7130e72783d150337>`(:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ab7a85cf8b553f1afaa29658dae8201d0>`(:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a52aeddfd54127f18770524e573fb5c24>`(:ref:`StratigraphicPoint<doxid-classgeode_1_1_stratigraphic_point>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`ALIAS_3D<doxid-namespacegeode_1aaa75b88ee6eae57f907ac1e9769d3154>`(:ref:`StratigraphicPoint<doxid-classgeode_1_1_stratigraphic_point>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a623a1df1ffc308aff611834cda600919>`(:ref:`StratigraphicPoint<doxid-classgeode_1_1_stratigraphic_point>`);
+	:target:`ALIAS_1D<doxid-namespacegeode_1a8ddf51938fbf36783c6672e59751aff2>`(Point);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a5111a9d6455a1bd0910db6dc4399cdb7>`(:ref:`StratigraphicUnitsStackBuilder<doxid-classgeode_1_1_stratigraphic_units_stack_builder>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(Point);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(Point);
+	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a57881c042a92cf4aac33a896fce54523>`(:ref:`StratigraphicUnitsStackBuilder<doxid-classgeode_1_1_stratigraphic_units_stack_builder>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac1280113e4d0610339b3891240c11cc8>`(:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a45b9d1cc850529d5db9b5fd7b6c4e71b>`(:ref:`OpenGeodeStratigraphicUnitsStackInput<doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_input>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1afc3b96fba8ea45fa95a9cfb0d48bae89>`(:ref:`OpenGeodeStratigraphicUnitsStackOutput<doxid-classgeode_1_1_open_geode_stratigraphic_units_stack_output>`);
+	:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` opengeode_geosciences_implicit_api :ref:`load_implicit_cross_section<doxid-namespacegeode_1a95f3ca90219573e413a5a037733b7cd7>`(absl::string_view filename);
+
+	void opengeode_geosciences_implicit_api :ref:`save_implicit_cross_section<doxid-namespacegeode_1ad021f73cc320d11b879c0a07da71baba>`(
+		const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model,
+		absl::string_view filename
+		);
+
+	:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>` opengeode_geosciences_implicit_api :ref:`load_implicit_structural_model<doxid-namespacegeode_1a8bba1ebdd0aa29057a593a6281e52649>`(absl::string_view filename);
+
+	void opengeode_geosciences_implicit_api :ref:`save_implicit_structural_model<doxid-namespacegeode_1af33e5f5c005948afeb32c1310073e48f>`(
+		const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model,
+		absl::string_view filename
+		);
+
+	:ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>` opengeode_geosciences_implicit_api :ref:`load_stratigraphic_model<doxid-namespacegeode_1a1167b1f8e9084afbaee7d2c268f7854e>`(absl::string_view filename);
+
+	void opengeode_geosciences_implicit_api :ref:`save_stratigraphic_model<doxid-namespacegeode_1a26b17c642284969210cbd4552443b275>`(
+		const :ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`& stratigraphic_model,
+		absl::string_view filename
+		);
+
+	:ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>` opengeode_geosciences_implicit_api :ref:`load_stratigraphic_section<doxid-namespacegeode_1a59203e72974abb3bec1de2d8e1fb7bb4>`(absl::string_view filename);
+
+	void opengeode_geosciences_implicit_api :ref:`save_stratigraphic_section<doxid-namespacegeode_1a41b6a009c51a5f766250b805844718a4>`(
+		const :ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>`& stratigraphic_section,
+		absl::string_view filename
+		);
+
+	template <index_t dimension>
+	:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`<dimension> :ref:`load_stratigraphic_units_stack<doxid-namespacegeode_1ae5016add03b4f6b9d173a8952509aa0e>`(absl::string_view filename);
+
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a23b608deddd8189328c9ed674213f832>`(:ref:`StratigraphicUnitsStackInputFactory<doxid-namespacegeode_1a9c2998ba712711c92a383b1467a9625f>`);
+
+	template <index_t dimension>
+	void :ref:`save_stratigraphic_units_stack<doxid-namespacegeode_1a876e0d8d3d26b251ae2c8d29614389ac>`(
+		const :ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`<dimension>& stratigraphic_units_stack,
+		absl::string_view filename
+		);
+
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac6420f8fc7c96d1b7e3c03e9d9a584ac>`(:ref:`StratigraphicUnitsStackOutput<doxid-classgeode_1_1_stratigraphic_units_stack_output>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7cff5854fd8e5ad05d236c4bb182f8ab>`(:ref:`StratigraphicUnitsStackOutputFactory<doxid-namespacegeode_1af0e2d7113a8f6a898361f84154b9b453>`);
 
 	} // namespace geode
 .. _details-namespacegeode:
@@ -183,15 +319,15 @@ Detailed Documentation
 Global Functions
 ----------------
 
-.. index:: pair: function; register_geosciences_serialize_pcontext
-.. _doxid-namespacegeode_1ae3663b1c1416d9b40e81a48eaa4b9441:
+.. index:: pair: function; register_explicit_serialize_pcontext
+.. _doxid-namespacegeode_1adf6e10ee97ed224017d299a94f54579a:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void opengeode_geosciences_geosciences_api register_geosciences_serialize_pcontext(PContext& context)
+	void opengeode_geosciences_explicit_api register_explicit_serialize_pcontext(PContext& context)
 
-Register all the information needed by Bitsery to serialize the objects in the geosciences library. The context can be used only once per archive.
+Register all the information needed by Bitsery to serialize the objects in the explicit library. The context can be used only once per archive.
 
 
 
@@ -205,15 +341,15 @@ Register all the information needed by Bitsery to serialize the objects in the g
 
 		- The context where to register this information.
 
-.. index:: pair: function; register_geosciences_deserialize_pcontext
-.. _doxid-namespacegeode_1a1ac997fa60ed4bd714610bcaa1403571:
+.. index:: pair: function; register_explicit_deserialize_pcontext
+.. _doxid-namespacegeode_1a67aee0d9031c8106c3b939f63540bca7:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void opengeode_geosciences_geosciences_api register_geosciences_deserialize_pcontext(PContext& context)
+	void opengeode_geosciences_explicit_api register_explicit_deserialize_pcontext(PContext& context)
 
-Register all the information needed by Bitsery to deserialize the objects in the geosciences library. The context can be used only once per archive.
+Register all the information needed by Bitsery to deserialize the objects in the explicit library. The context can be used only once per archive.
 
 
 
@@ -228,12 +364,12 @@ Register all the information needed by Bitsery to deserialize the objects in the
 		- The context where to register this information.
 
 .. index:: pair: function; load_cross_section
-.. _doxid-namespacegeode_1a56ce531cf7190565fd429b603c835bbf:
+.. _doxid-namespacegeode_1a0f0b503e286957db537b13c65c6abc74:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`CrossSection<doxid-classgeode_1_1_cross_section>` opengeode_geosciences_geosciences_api load_cross_section(absl::string_view filename)
+	:ref:`CrossSection<doxid-classgeode_1_1_cross_section>` opengeode_geosciences_explicit_api load_cross_section(absl::string_view filename)
 
 API function for loading a :ref:`CrossSection <doxid-classgeode_1_1_cross_section>`. The adequate loader is called depending on the filename extension.
 
@@ -250,12 +386,12 @@ API function for loading a :ref:`CrossSection <doxid-classgeode_1_1_cross_sectio
 		- Path to the file to load.
 
 .. index:: pair: function; save_cross_section
-.. _doxid-namespacegeode_1a686db0f6979efe582e3ab9b27e03a136:
+.. _doxid-namespacegeode_1aa45a12bc76c420b87359a0113bd51e23:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void opengeode_geosciences_geosciences_api save_cross_section(
+	void opengeode_geosciences_explicit_api save_cross_section(
 		const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
 		absl::string_view filename
 		)
@@ -280,12 +416,12 @@ API function for saving a :ref:`CrossSection <doxid-classgeode_1_1_cross_section
 		- Path to the file where save the :ref:`CrossSection <doxid-classgeode_1_1_cross_section>`.
 
 .. index:: pair: function; load_structural_model
-.. _doxid-namespacegeode_1a163a868e3b17affba29b446707f6a874:
+.. _doxid-namespacegeode_1a97cf55105e7f5eb56f411bf5ace110d0:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` opengeode_geosciences_geosciences_api load_structural_model(absl::string_view filename)
+	:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` opengeode_geosciences_explicit_api load_structural_model(absl::string_view filename)
 
 API function for loading a :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`. The adequate loader is called depending on the filename extension.
 
@@ -302,12 +438,12 @@ API function for loading a :ref:`StructuralModel <doxid-classgeode_1_1_structura
 		- Path to the file to load.
 
 .. index:: pair: function; save_structural_model
-.. _doxid-namespacegeode_1aedf25fba2a5257c41fe72e361cbe9d17:
+.. _doxid-namespacegeode_1ad90986608405ebe1927e06b7bd94862b:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void opengeode_geosciences_geosciences_api save_structural_model(
+	void opengeode_geosciences_explicit_api save_structural_model(
 		const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
 		absl::string_view filename
 		)
@@ -330,4 +466,272 @@ API function for saving a :ref:`StructuralModel <doxid-classgeode_1_1_structural
 		- filename
 
 		- Path to the file where save the :ref:`StructuralModel <doxid-classgeode_1_1_structural_model>`.
+
+.. index:: pair: function; load_implicit_cross_section
+.. _doxid-namespacegeode_1a95f3ca90219573e413a5a037733b7cd7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` opengeode_geosciences_implicit_api load_implicit_cross_section(absl::string_view filename)
+
+API function for loading an :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_implicit_cross_section
+.. _doxid-namespacegeode_1ad021f73cc320d11b879c0a07da71baba:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geosciences_implicit_api save_implicit_cross_section(
+		const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model,
+		absl::string_view filename
+		)
+
+API function for saving an :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- implicit_model
+
+		- :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>`.
+
+.. index:: pair: function; load_implicit_structural_model
+.. _doxid-namespacegeode_1a8bba1ebdd0aa29057a593a6281e52649:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>` opengeode_geosciences_implicit_api load_implicit_structural_model(absl::string_view filename)
+
+API function for loading an :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_implicit_structural_model
+.. _doxid-namespacegeode_1af33e5f5c005948afeb32c1310073e48f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geosciences_implicit_api save_implicit_structural_model(
+		const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model,
+		absl::string_view filename
+		)
+
+API function for saving an :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- implicit_model
+
+		- :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_implicit_structural_model>`.
+
+.. index:: pair: function; load_stratigraphic_model
+.. _doxid-namespacegeode_1a1167b1f8e9084afbaee7d2c268f7854e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>` opengeode_geosciences_implicit_api load_stratigraphic_model(absl::string_view filename)
+
+API function for loading a :ref:`StratigraphicModel <doxid-classgeode_1_1_stratigraphic_model>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_stratigraphic_model
+.. _doxid-namespacegeode_1a26b17c642284969210cbd4552443b275:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geosciences_implicit_api save_stratigraphic_model(
+		const :ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`& stratigraphic_model,
+		absl::string_view filename
+		)
+
+API function for saving a :ref:`StratigraphicModel <doxid-classgeode_1_1_stratigraphic_model>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- stratigraphic_model
+
+		- :ref:`StratigraphicModel <doxid-classgeode_1_1_stratigraphic_model>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`StratigraphicModel <doxid-classgeode_1_1_stratigraphic_model>`.
+
+.. index:: pair: function; load_stratigraphic_section
+.. _doxid-namespacegeode_1a59203e72974abb3bec1de2d8e1fb7bb4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>` opengeode_geosciences_implicit_api load_stratigraphic_section(absl::string_view filename)
+
+API function for loading a :ref:`StratigraphicSection <doxid-classgeode_1_1_stratigraphic_section>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+.. index:: pair: function; save_stratigraphic_section
+.. _doxid-namespacegeode_1a41b6a009c51a5f766250b805844718a4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void opengeode_geosciences_implicit_api save_stratigraphic_section(
+		const :ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>`& stratigraphic_section,
+		absl::string_view filename
+		)
+
+API function for saving a :ref:`StratigraphicSection <doxid-classgeode_1_1_stratigraphic_section>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- stratigraphic_section
+
+		- :ref:`StratigraphicSection <doxid-classgeode_1_1_stratigraphic_section>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the :ref:`StratigraphicSection <doxid-classgeode_1_1_stratigraphic_section>`.
+
+.. index:: pair: function; load_stratigraphic_units_stack
+.. _doxid-namespacegeode_1ae5016add03b4f6b9d173a8952509aa0e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	:ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`<dimension> load_stratigraphic_units_stack(absl::string_view filename)
+
+API function for loading a :ref:`StratigraphicUnitsStack <doxid-classgeode_1_1_stratigraphic_units_stack>`. The adequate loader is called depending on the filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- filename
+
+		- Path to the file to load.
+
+
+
+.. rubric:: Returns:
+
+Loaded :ref:`StratigraphicUnitsStack <doxid-classgeode_1_1_stratigraphic_units_stack>`.
+
+.. index:: pair: function; save_stratigraphic_units_stack
+.. _doxid-namespacegeode_1a876e0d8d3d26b251ae2c8d29614389ac:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	void save_stratigraphic_units_stack(
+		const :ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`<dimension>& stratigraphic_units_stack,
+		absl::string_view filename
+		)
+
+API function for saving a :ref:`StratigraphicUnitsStack <doxid-classgeode_1_1_stratigraphic_units_stack>`. The adequate saver is called depending on the given filename extension.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- stratigraphic_units_stack
+
+		- :ref:`StratigraphicUnitsStack <doxid-classgeode_1_1_stratigraphic_units_stack>` to save.
+
+	*
+		- filename
+
+		- Path to the file where save the brep.
 

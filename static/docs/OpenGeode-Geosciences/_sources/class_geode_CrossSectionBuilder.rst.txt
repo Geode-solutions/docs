@@ -61,3 +61,7 @@ Class managing modifications of a :ref:`CrossSection <doxid-classgeode_1_1_cross
 	
 		void :target:`remove_stratigraphic_unit<doxid-classgeode_1_1_cross_section_builder_1a5bd7ab37d57205c89107dd81bb35b8fd>`(const StratigraphicUnit2D& stratigraphic_unit);
 	};
+
+	// direct descendants
+
+	class :ref:`ImplicitCrossSectionBuilder<doxid-classgeode_1_1_implicit_cross_section_builder>`;

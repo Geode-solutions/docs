@@ -1,0 +1,178 @@
+.. index:: pair: class; geode::ImplicitStructuralModel
+.. _doxid-classgeode_1_1_implicit_structural_model:
+
+class geode::ImplicitStructuralModel
+====================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+An Implicit Model is a Structural model where each block has a specific attribute to store the implicit value on its vertices. :ref:`More...<details-classgeode_1_1_implicit_structural_model>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <implicit_structural_model.h>
+	
+	class ImplicitStructuralModel: public :ref:`geode::StructuralModel<doxid-classgeode_1_1_structural_model>`
+	{
+	public:
+		// typedefs
+	
+		typedef double :target:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>`;
+
+		// fields
+	
+		static constexpr auto :target:`implicit_attribute_name<doxid-classgeode_1_1_implicit_structural_model_1a594c3769161690e5e8967c1177ed208b>` =             "geode_implicit_attribute";
+
+		// construction
+	
+		:target:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model_1a6dacbb4ba9255849c369681715c8b915>`();
+		:target:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model_1a7462e1ab30875d83465887190762c3ee>`(ImplicitStructuralModel&& implicit_model);
+		:target:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model_1a139614a05ed9586ececd5c34403e2f1b>`(:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`&& structural_model);
+
+		// methods
+	
+		absl::string_view :target:`native_extension<doxid-classgeode_1_1_implicit_structural_model_1a7db14da19101e19fe01bd10d345341f8>`() const;
+		:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` :ref:`implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a7139a76c808b9cfe34ea541bfa3b9cbe>`(const Block3D& block, index_t vertex_id) const;
+	
+		absl::optional<:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>`> :ref:`implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a6bec3ca80954768dd5c52eefd5bee85f>`(
+			const Block3D& block,
+			const Point3D& point
+			) const;
+	
+		:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` :ref:`implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a328dca77e31a771b65550ebc5bb7deff>`(
+			const Block3D& block,
+			const Point3D& point,
+			index_t polyhedron_id
+			) const;
+	
+		absl::optional<index_t> :ref:`containing_polyhedron<doxid-classgeode_1_1_implicit_structural_model_1a8de86437d9872d3d492b4a2d9ea745b5>`(
+			const Block3D& block,
+			const Point3D& point
+			) const;
+	
+		const StratigraphicUnitsStack3D& :target:`stratigraphic_units_stack<doxid-classgeode_1_1_implicit_structural_model_1a8b3174d3828ea67ff863b7a6f2a7a751>`() const;
+		double :target:`horizon_implicit_value<doxid-classgeode_1_1_implicit_structural_model_1abd6319c12a3a6e2f4909ba59097eedda>`(const Horizon3D& horizon) const;
+		void :target:`instantiate_implicit_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_1a8e88861949ffca6ac1477a5e3ef54b31>`(ImplicitStructuralModelBuilderKey);
+	
+		void :target:`set_implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a496dc79c00c843dd60d5a65dc5bb4fdc>`(
+			const Block3D& block,
+			index_t vertex_id,
+			:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` value,
+			ImplicitStructuralModelBuilderKey
+			);
+	
+		void :target:`set_stratigraphic_units_stack<doxid-classgeode_1_1_implicit_structural_model_1a2cbc93a187ed8398d4ca44a4556f30a1>`(
+			StratigraphicUnitsStack3D&& stack,
+			ImplicitStructuralModelBuilderKey
+			);
+	
+		void :target:`set_horizon_isovalue<doxid-classgeode_1_1_implicit_structural_model_1aa8b473730aef2a1f4d5f23409a069e17>`(
+			const Horizon3D& horizon,
+			double isovalue,
+			ImplicitStructuralModelBuilderKey
+			);
+	
+		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_implicit_structural_model_1aa69265945e3e076b61a3cf1367dc8325>`();
+	};
+
+	// direct descendants
+
+	class :ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef :ref:`StructuralModelBuilder<doxid-classgeode_1_1_structural_model_builder>` :ref:`Builder<doxid-classgeode_1_1_structural_model_1adaac593ede6ae4e20d3ddd89a64e531d>`;
+
+		// classes
+	
+		class :ref:`FaultBlockItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_block_item_range>`;
+		class :ref:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range>`;
+		class :ref:`HorizonItemRange<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range>`;
+		class :ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_structural_model_1_1_stratigraphic_unit_item_range>`;
+
+		// fields
+	
+		static constexpr index_t :ref:`dim<doxid-classgeode_1_1_structural_model_1aa2db0a73ff5298cdd4092eff07138711>` { 3 };
+
+		// methods
+	
+		absl::string_view :ref:`native_extension<doxid-classgeode_1_1_structural_model_1a5edd32082ab7608f3c9e7782e5980a95>`() const;
+		:ref:`HorizonItemRange<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range>` :ref:`horizon_items<doxid-classgeode_1_1_structural_model_1a27bd1e7936f014e4a8098216daa2adcb>`(const Horizon3D& horizon) const;
+		:ref:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range>` :ref:`fault_items<doxid-classgeode_1_1_structural_model_1accd329626e1d6533072231b01854f97e>`(const Fault3D& fault) const;
+		:ref:`FaultBlockItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_block_item_range>` :ref:`fault_block_items<doxid-classgeode_1_1_structural_model_1a92090ef7a1247a6eff61797c51af8112>`(const FaultBlock3D& fault_block) const;
+		:ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_structural_model_1_1_stratigraphic_unit_item_range>` :ref:`stratigraphic_unit_items<doxid-classgeode_1_1_structural_model_1a5ce7e138030d6427fb9fed07402f8fa6>`(const StratigraphicUnit3D& stratigraphic_unit) const;
+		static constexpr absl::string_view :ref:`native_extension_static<doxid-classgeode_1_1_structural_model_1aa77725f25f214c8c90293ee9908d18a8>`();
+
+.. _details-classgeode_1_1_implicit_structural_model:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+An Implicit Model is a Structural model where each block has a specific attribute to store the implicit value on its vertices.
+
+Methods
+-------
+
+.. index:: pair: function; implicit_value
+.. _doxid-classgeode_1_1_implicit_structural_model_1a7139a76c808b9cfe34ea541bfa3b9cbe:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` implicit_value(const Block3D& block, index_t vertex_id) const
+
+Return the implicit value at the given vertex of the given block.
+
+.. index:: pair: function; implicit_value
+.. _doxid-classgeode_1_1_implicit_structural_model_1a6bec3ca80954768dd5c52eefd5bee85f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>`> implicit_value(
+		const Block3D& block,
+		const Point3D& point
+		) const
+
+Return the implicit value on the point, computed in the polyhedron containing the given point in the given block, if there is any.
+
+.. index:: pair: function; implicit_value
+.. _doxid-classgeode_1_1_implicit_structural_model_1a328dca77e31a771b65550ebc5bb7deff:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` implicit_value(
+		const Block3D& block,
+		const Point3D& point,
+		index_t polyhedron_id
+		) const
+
+Return the implicit value on the point, computed in the given polyhedron of the given block.
+
+.. index:: pair: function; containing_polyhedron
+.. _doxid-classgeode_1_1_implicit_structural_model_1a8de86437d9872d3d492b4a2d9ea745b5:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<index_t> containing_polyhedron(
+		const Block3D& block,
+		const Point3D& point
+		) const
+
+Returns the block polyhedron containing the given point, if there is any.
+

@@ -30,3 +30,8 @@ template class geode::HorizonsBuilder
 	
 		void :target:`set_horizon_name<doxid-classgeode_1_1_horizons_builder_1ab325b7648f7f80303ab0322e54f23db3>`(const uuid& id, absl::string_view name);
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`StratigraphicUnitsStackBuilder<doxid-classgeode_1_1_stratigraphic_units_stack_builder>`;

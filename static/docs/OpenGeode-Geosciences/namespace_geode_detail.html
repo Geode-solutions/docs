@@ -86,6 +86,47 @@
     <span class="n">BuilderTo</span><span class="o">&amp;</span> <span class="n">builder_to</span>
     <span class="p">);</span>
 
+<span class="kt">void</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a10f2384cc54ad9030a172205e83a7a54"><span></span><span class="n">rescale_implicit_value</span></span><span></span><span class="p">(</span>
+    <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">scaling_factor</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ae1d37d7b7365e9dde9d7a79bce0f0223"><span></span><span class="n">rescale_implicit_value_to_bbox_scale</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicSection.html#doxid-classgeode-1-1-stratigraphic-section"><span class="std std-ref">StratigraphicSection</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a05db9e0263d157b7d7989fe387feb321"><span></span><span class="n">rescale_implicit_value</span></span><span></span><span class="p">(</span>
+    <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">scaling_factor</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1af21c16a5d6e9e447086947ff318104de"><span></span><span class="n">rescale_implicit_value_to_bbox_scale</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicModel.html#doxid-classgeode-1-1-stratigraphic-model"><span class="std std-ref">StratigraphicModel</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a1e901be89fd01f9b0cec42682b88d3c5"><span></span><span class="n">save_stratigraphic_surfaces</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicSection.html#doxid-classgeode-1-1-stratigraphic-section"><span class="std std-ref">StratigraphicSection</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">prefix</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a57bc11b0c8be0ce731bc248f44d4c058"><span></span><span class="n">save_stratigraphic_blocks</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicModel.html#doxid-classgeode-1-1-stratigraphic-model"><span class="std std-ref">StratigraphicModel</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">prefix</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a44df6754387bda9d55a4abe10d598565"><span></span><span class="n">implicit_section_from_cross_section_scalar_field</span></span><span></span><span class="p">(</span>
+    <a class="reference internal" href="class_geode_CrossSection.html#doxid-classgeode-1-1-cross-section"><span class="std std-ref">CrossSection</span></a><span></span><span class="o">&amp;&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">scalar_attribute_name</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1aa3c38ca359282fc61780871779e3aad3"><span></span><span class="n">implicit_model_from_structural_model_scalar_field</span></span><span></span><span class="p">(</span>
+    <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">scalar_attribute_name</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="class_geode_StratigraphicModel.html#doxid-classgeode-1-1-stratigraphic-model"><span class="std std-ref">StratigraphicModel</span></a><span></span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ae86a28ffd89d06208db27bc5a3ce41d1"><span></span><span class="n">stratigraphic_model_from_implicit_model_and_coords</span></span><span></span><span class="p">(</span>
+    <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
+    <span class="n">local_index_t</span> <span class="n">implicit_axis</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MeshElement</span><span class="o">&gt;</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a9a9e13a3a9a50dda09472e52dfbb0246"><span></span><span class="n">invalid_stratigraphic_tetrahedra</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicModel.html#doxid-classgeode-1-1-stratigraphic-model"><span class="std std-ref">StratigraphicModel</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">);</span>
+
 <span class="p">}</span> <span class="c1">// namespace detail</span></pre>
 </section>
 
