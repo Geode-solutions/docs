@@ -18,6 +18,7 @@ namespace geode
 	class_geode_FaultBlocksBuilder.rst
 	class_geode_Faults.rst
 	class_geode_FaultsBuilder.rst
+	class_geode_GeographicCoordinateSystem.rst
 	class_geode_Horizon.rst
 	class_geode_Horizons.rst
 	class_geode_HorizonsBuilder.rst
@@ -82,6 +83,9 @@ Overview
 	class :ref:`FaultsBuilder<doxid-classgeode_1_1_faults_builder>`;
 
 	template <index_t dimension>
+	class :ref:`GeographicCoordinateSystem<doxid-classgeode_1_1_geographic_coordinate_system>`;
+
+	template <index_t dimension>
 	class :ref:`Horizon<doxid-classgeode_1_1_horizon>`;
 
 	template <index_t dimension>
@@ -114,6 +118,18 @@ Overview
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ab82bf49dec35bfcf1fab0c43b154a330>`(
 		opengeode_geosciences_geosciences_api,
 		OpenGeodeGeosciencesGeosciences
+		);
+
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a398d62ea5e60d2fb6466f00ad11562a8>`(:ref:`GeographicCoordinateSystem<doxid-classgeode_1_1_geographic_coordinate_system>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a904e02c945f45dd8ec5315353974fbdd>`(CoordinateReferenceSystemManager);
+
+	template <index_t dimension>
+	void :target:`convert_attribute_to_geographic_coordinate_reference_system<doxid-namespacegeode_1ad116d4e1f20aa64ae226a4b67eabd33d>`(
+		CoordinateReferenceSystemManager<dimension>& crs_manager,
+		AttributeManager& attribute_manager,
+		absl::string_view attribute_crs_name,
+		absl::string_view geographic_crs_name,
+		typename :ref:`GeographicCoordinateSystem<doxid-classgeode_1_1_geographic_coordinate_system>`<dimension>::Info info
 		);
 
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa1b34122cda2b0187ae32fc8009ca448>`(:ref:`FaultBlock<doxid-classgeode_1_1_fault_block>`);

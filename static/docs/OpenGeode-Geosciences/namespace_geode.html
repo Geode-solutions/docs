@@ -81,6 +81,9 @@
 <span class="k">class</span> <a class="reference internal" href="class_geode_FaultsBuilder.html#doxid-classgeode-1-1-faults-builder"><span class="std std-ref">FaultsBuilder</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_Horizon.html#doxid-classgeode-1-1-horizon"><span class="std std-ref">Horizon</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -113,6 +116,18 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab82bf49dec35bfcf1fab0c43b154a330"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
     <span class="n">opengeode_geosciences_geosciences_api</span><span class="p">,</span>
     <span class="n">OpenGeodeGeosciencesGeosciences</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a398d62ea5e60d2fb6466f00ad11562a8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a904e02c945f45dd8ec5315353974fbdd"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">CoordinateReferenceSystemManager</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad116d4e1f20aa64ae226a4b67eabd33d"><span></span><span class="n">convert_attribute_to_geographic_coordinate_reference_system</span></span><span></span><span class="p">(</span>
+    <span class="n">CoordinateReferenceSystemManager</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">crs_manager</span><span class="p">,</span>
+    <span class="n">AttributeManager</span><span class="o">&amp;</span> <span class="n">attribute_manager</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_crs_name</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geographic_crs_name</span><span class="p">,</span>
+    <span class="k">typename</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Info</span> <span class="n">info</span>
     <span class="p">);</span>
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa1b34122cda2b0187ae32fc8009ca448"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_FaultBlock.html#doxid-classgeode-1-1-fault-block"><span class="std std-ref">FaultBlock</span></a><span></span><span class="p">);</span>

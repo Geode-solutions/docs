@@ -25,6 +25,6 @@ template class geode::detail::GeologicalComponentsStorage
 
 		// methods
 	
-		void :target:`register_librairies_in_serialize_pcontext<doxid-classgeode_1_1detail_1_1_geological_components_storage_1a879864f71af5f74065a68f665740ff13>`(TContext& context) const;
-		void :target:`register_librairies_in_deserialize_pcontext<doxid-classgeode_1_1detail_1_1_geological_components_storage_1a8bc35faf751dd1516811ff277e778294>`(TContext& context) const;
+		void :target:`register_libraries_in_serialize_pcontext<doxid-classgeode_1_1detail_1_1_geological_components_storage_1a3670466c1dd776df45dd917d3467f87e>`(TContext& context) const;
+		void :target:`register_libraries_in_deserialize_pcontext<doxid-classgeode_1_1detail_1_1_geological_components_storage_1aecb19bc3e53fc9bf908549f595298350>`(TContext& context) const;
 	};
