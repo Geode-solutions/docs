@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>namespace geode &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="namespace geode::detail" href="namespace_geode_detail.html" />
+    <link rel="prev" title="Global Namespace" href="global.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="namespace-geode">
+<span id="doxid-namespacegeode"></span><span id="index-0"></span><h1>namespace geode</h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">geode</span> <span class="p">{</span>
+
+<span class="c1">// namespaces</span>
+
+<span class="k">namespace</span> <a class="reference internal" href="namespace_geode_detail.html#doxid-namespacegeode-1-1detail"><span class="std std-ref">geode::detail</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="n">ModuleLicenseChecker</span><span class="o">&lt;</span><span class="n">Implicit</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af2d816982254e4b6eb09e887321ddf0a"><span></span><span class="n">ImplicitLicenseChecker</span></span><span></span><span class="p">;</span>
+
+<span class="c1">// classes</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridScalarFunctionComputer.html#doxid-classgeode-1-1-regular-grid-scalar-function-computer"><span class="std std-ref">RegularGridScalarFunctionComputer</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridScalarFunctionExpliciter2D.html#doxid-classgeode-1-1-regular-grid-scalar-function-expliciter2-d"><span class="std std-ref">RegularGridScalarFunctionExpliciter2D</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_RegularGridScalarFunctionExpliciter3D.html#doxid-classgeode-1-1-regular-grid-scalar-function-expliciter3-d"><span class="std std-ref">RegularGridScalarFunctionExpliciter3D</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SolidMeshScalarFunctionExpliciter.html#doxid-classgeode-1-1-solid-mesh-scalar-function-expliciter"><span class="std std-ref">SolidMeshScalarFunctionExpliciter</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicModelInserter.html#doxid-classgeode-1-1-stratigraphic-model-inserter"><span class="std std-ref">StratigraphicModelInserter</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicSectionInserter.html#doxid-classgeode-1-1-stratigraphic-section-inserter"><span class="std std-ref">StratigraphicSectionInserter</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// global variables</span>
+
+<span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3a122de16a91abf72199f1c757746ba9"><span></span><span class="n">imported_3d_stratigraphic_attribute_name</span></span><span></span> <span class="o">=</span>         <span class="s">&quot;geode_3d_stratigraphic_location&quot;</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a77dca4d07c178e71e31a99158e732c9a"><span></span><span class="n">Implicit</span></span><span></span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;Implicit&quot;</span><span class="p">;</span>
+
+<span class="c1">// global functions</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1addb2cc9478247a5efa4486ca94ff370a"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_implicit_explicitation_api</span><span class="p">,</span> <span class="n">ImplicitExplicitation</span><span class="p">);</span>
+
+<span class="n">ImplicitCrossSection</span> <span class="n">geode_implicit_explicitation_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7392de66afff723052af19ac9b692506"><span></span><span class="n">extract_implicit_cross_section_from_axis</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">ImplicitStructuralModel</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <span class="n">local_index_t</span> <span class="n">axis_direction</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">axis_coordinate</span>
+    <span class="p">);</span>
+
+<span class="n">StratigraphicSection</span> <span class="n">geode_implicit_explicitation_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac9bdac50825997c1e374284a102584a7"><span></span><span class="n">extract_stratigraphic_section_from_axis</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">StratigraphicModel</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <span class="n">local_index_t</span> <span class="n">axis_direction</span><span class="p">,</span>
+    <span class="kt">double</span> <span class="n">axis_coordinate</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8ac5cec34b9c5986e0c83548aeb19f2d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b78e29335d938bae6153ff18f271541"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca4385eb3d676a070003e6270f6472ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1adaf39f90e9bc108a983f1600fb5f37d1"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a701f6897a4e87db11377f9081ccaa3cf"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">RegularGrid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b691d4711522d638d7d8f1b087e597a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a80b5a064401aa01835668d57032444e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a50b76b8860927ac1645b6e89e247216d"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_implicit_implicitation_api</span><span class="p">,</span> <span class="n">ImplicitImplicitation</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a48dc7dc04a72af2e68092c3d4b4696ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">BoundingBox</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a88e7373e2780b9968a6fddc59703bcf9"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">DataConstraintManager</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa40ec52a1aa919899a089ac5e5a8640c"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_RegularGridScalarFunctionComputer.html#doxid-classgeode-1-1-regular-grid-scalar-function-computer"><span class="std std-ref">RegularGridScalarFunctionComputer</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0526438cd2829ea7b2bd775ac20e0026"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_implicit_insertion_api</span><span class="p">,</span> <span class="n">ImplicitInsertion</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1af40a127c86216f0ba2c8d1276fe61644"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aae4bea6f137a47558d5d46c1f90525b8"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0f80bdfb4040f00dca8528bfcaa32eee"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_implicit_io_api</span><span class="p">,</span> <span class="n">ImplicitIO</span><span class="p">);</span>
+
+<span class="p">}</span> <span class="c1">// namespace geode</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/namespace_geode.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
