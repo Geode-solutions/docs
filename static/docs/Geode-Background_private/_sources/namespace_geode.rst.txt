@@ -1,0 +1,34 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// typedefs
+
+	typedef absl::InlinedVector<index_t, 10> :target:`MeshElements<doxid-namespacegeode_1a484cebea94c5af40bcb1b704f8720d00>`;
+	typedef ModuleLicenseChecker<Background> :target:`BackgroundLicenseChecker<doxid-namespacegeode_1a30d3b5bbc64b5a4a13c3f9dd51aa01bc>`;
+
+	// global variables
+
+	static constexpr char :target:`Background<doxid-namespacegeode_1ab773e3e27da0a5ff8dd01e3ea6c7ec9f>`[] = "Background";
+
+	// global functions
+
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a80caf1a0e3d661919921cfd9b18a417e>`(geode_background_common_api, BackgroundCommon);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a4144c56d1b7ed08d2d74de0c7e2cab7d>`(geode_background_solid_api, BackgroundSolid);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1abd0f6e0f5576382aa7257d2d0253918f>`(geode_background_surface_api, BackgroundSurface);
+
+	} // namespace geode
