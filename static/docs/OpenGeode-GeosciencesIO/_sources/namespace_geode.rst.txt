@@ -18,9 +18,7 @@ namespace geode
 
 	// global functions
 
-	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a5242e3b349b31d91db43e66a71b16551>`(
-		opengeode_geosciencesio_geosciences_api,
-		OpenGeodeGeosciencesIOGeosciences
-		);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a3e20a1b3cee8ee1c356e90816d3be0c5>`(opengeode_geosciencesio_mesh_api, GeosciencesIOMesh);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a678bdb01fccaf2aacbba287a553ed82c>`(opengeode_geosciencesio_model_api, GeosciencesIOModel);
 
 	} // namespace geode
