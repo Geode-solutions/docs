@@ -72,9 +72,12 @@ export default {
         { title: 'Geode-Common', to: '/geode-common' },
         { title: 'Geode-Conversion', to: '/geode-conversion' },
         { title: 'Geode-Numerics', to: '/geode-numerics' },
-        { title: 'Geode-SimplexRemesh', to: '/geode-simplexremesh' },
-        { title: 'Geode-SimplexRemeshGeosciences', to: '/geode-simplexremeshgeosciences' },
-        { title: 'Geode-ExplicitModeling', to: '/geode-explicitmodeling' }
+        { title: 'Geode-Simplex', to: '/geode-simplex' },
+        { title: 'Geode-SimplexGeosciences', to: '/geode-simplexgeosciences' },
+        { title: 'Geode-Hybrid', to: '/geode-hybrid' },
+        { title: 'Geode-Explicit', to: '/geode-explicit' },
+        { title: 'Geode-Implicit', to: '/geode-implicit' },
+        { title: 'Geode-Viewables', to: '/geode-viewables' }
       ]
     }
   }
