@@ -1,0 +1,25 @@
+.. index:: pair: struct; geode::ExplicitModelerMappings
+.. _doxid-structgeode_1_1_explicit_modeler_mappings:
+
+struct geode::ExplicitModelerMappings
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <types.h>
+	
+	struct ExplicitModelerMappings
+	{
+		// fields
+	
+		ModelGenericMapping :target:`component_mapping<doxid-structgeode_1_1_explicit_modeler_mappings_1a61bc24168615e944ce3923a18e1a6e12>`;
+		ModelMeshesElementMapping :target:`mesh_element_mapping<doxid-structgeode_1_1_explicit_modeler_mappings_1a4d4cca186b440a219f7680f237051a4a>`;
+		ModelMeshesVertexMapping :target:`mesh_vertices_mapping<doxid-structgeode_1_1_explicit_modeler_mappings_1a063dc89a286c3895ccd126d2b09dfe75>`;
+	};

@@ -1,0 +1,52 @@
+.. index:: pair: class; geode::ExplicitModelerSection
+.. _doxid-classgeode_1_1_explicit_modeler_section:
+
+class geode::ExplicitModelerSection
+===================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <explicit_modeler_section.h>
+	
+	class ExplicitModelerSection
+	{
+	public:
+		// construction
+	
+		:target:`ExplicitModelerSection<doxid-classgeode_1_1_explicit_modeler_section_1a3880f483e9411eb0387857cf36d4eb8c>`(BoundingBox2D bbox);
+
+		// methods
+	
+		void :target:`select_curve_to_insert<doxid-classgeode_1_1_explicit_modeler_section_1ab3ee5fc18588370f74098704593b73a8>`(const EdgedCurve2D& mesh);
+		std::tuple<Section, ModelGenericMapping> :ref:`insert_and_build<doxid-classgeode_1_1_explicit_modeler_section_1a94ff5f53b06d8272991215ee38276d57>`();
+	};
+.. _details-classgeode_1_1_explicit_modeler_section:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; insert_and_build
+.. _doxid-classgeode_1_1_explicit_modeler_section_1a94ff5f53b06d8272991215ee38276d57:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<Section, ModelGenericMapping> insert_and_build()
+
+Returns the Merged Section including all the added curves and gives the "input to output" and "output to input" mappings between Lines
+

@@ -1,0 +1,89 @@
+.. index:: pair: class; geode::ExplicitModelerBRep
+.. _doxid-classgeode_1_1_explicit_modeler_b_rep:
+
+class geode::ExplicitModelerBRep
+================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <explicit_modeler_brep.h>
+	
+	class ExplicitModelerBRep
+	{
+	public:
+		// construction
+	
+		:target:`ExplicitModelerBRep<doxid-classgeode_1_1_explicit_modeler_b_rep_1ac678f72ea1084afe9bef071239387958>`(BoundingBox3D bbox);
+
+		// methods
+	
+		void :target:`add_point_set<doxid-classgeode_1_1_explicit_modeler_b_rep_1a2e7cfde49b3d103bb5fe796e67cac625>`(const PointSet3D& mesh);
+		void :target:`add_curve<doxid-classgeode_1_1_explicit_modeler_b_rep_1a279749d5207c1e45172df1df81b68b57>`(const EdgedCurve3D& mesh);
+		void :target:`add_triangulated_surface<doxid-classgeode_1_1_explicit_modeler_b_rep_1aba9cb6ba3147e78f84a6a820ee2fdfde>`(const TriangulatedSurface3D& mesh);
+		void :target:`add_corner<doxid-classgeode_1_1_explicit_modeler_b_rep_1a99d5a5c762fb739b8bc65a959adb1dc5>`(const Corner3D& corner);
+		void :target:`add_line<doxid-classgeode_1_1_explicit_modeler_b_rep_1a2d6def17f5bbf471d0569352f4acb4a9>`(const Line3D& line);
+		void :target:`add_surface<doxid-classgeode_1_1_explicit_modeler_b_rep_1a67484cba39291c6eb2e7a2b0df3530a1>`(const Surface3D& surface);
+		void :target:`add_block<doxid-classgeode_1_1_explicit_modeler_b_rep_1a04e64ef67114e3099ee510ea7b1fe024>`(const BRep& brep, const Block3D& block);
+		void :target:`add_brep<doxid-classgeode_1_1_explicit_modeler_b_rep_1a957295877b7b5b3cff5fc4da7073a843>`(const BRep& brep);
+	
+		void :ref:`paint_volume<doxid-classgeode_1_1_explicit_modeler_b_rep_1a768733b3b9d71b382078a5457a086208>`(
+			const uuid& volume_uuid,
+			absl::Span<const uuid> bounding_surface_uuids
+			);
+	
+		std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> :ref:`build<doxid-classgeode_1_1_explicit_modeler_b_rep_1a4d5126bfad1b881e4ac484c885f38370>`();
+		std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> :ref:`build_painted_volumes<doxid-classgeode_1_1_explicit_modeler_b_rep_1a9e5c748146a4ee3712625f47a09b5b44>`();
+	};
+.. _details-classgeode_1_1_explicit_modeler_b_rep:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; paint_volume
+.. _doxid-classgeode_1_1_explicit_modeler_b_rep_1a768733b3b9d71b382078a5457a086208:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void paint_volume(
+		const uuid& volume_uuid,
+		absl::Span<const uuid> bounding_surface_uuids
+		)
+
+Paints the given uuid on the tetrahedra inside the given surfaces. These surfaces should have already been added
+
+.. index:: pair: function; build
+.. _doxid-classgeode_1_1_explicit_modeler_b_rep_1a4d5126bfad1b881e4ac484c885f38370:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> build()
+
+Returns the Merged BRep including all the added surfaces and curves and gives the "input to output" and "output to input" mappings between Surfaces and Lines
+
+.. index:: pair: function; build_painted_volumes
+.. _doxid-classgeode_1_1_explicit_modeler_b_rep_1a9e5c748146a4ee3712625f47a09b5b44:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> build_painted_volumes()
+
+Returns the Merged BRep including the added surfaces and curves around painted volumes only and gives the "input to output" and "output to input" mappings between Surfaces and Lines
+
