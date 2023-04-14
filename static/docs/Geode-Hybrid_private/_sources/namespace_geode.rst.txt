@@ -1,0 +1,38 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// typedefs
+
+	typedef ModuleLicenseChecker<Hybrid> :target:`HybridLicenseChecker<doxid-namespacegeode_1a7acc3d0c6cc7173daf7787e8f8b33a42>`;
+
+	// global variables
+
+	static constexpr char :target:`Hybrid<doxid-namespacegeode_1a3bb227ac08a1af8dba657e713cee4e18>`[] = "Hybrid";
+
+	// global functions
+
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ab799f7e27e7e72bae88496620da785a5>`(geode_hybrid_brep_api, HybridBRep);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a65b92e04719b22bc521e1f2e664d44e4>`(Metric);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ac93b93bd0a1e54b0ffb54f588b46dce9>`(Metric);
+
+	std::tuple<BRep, ModelCopyMapping> geode_hybrid_brep_api :target:`hex_dominant_remesh<doxid-namespacegeode_1a1f9ee5c76dfd7307527592fd974df0a4>`(
+		BRep& brep,
+		const Metric3D& metric
+		);
+
+	} // namespace geode
