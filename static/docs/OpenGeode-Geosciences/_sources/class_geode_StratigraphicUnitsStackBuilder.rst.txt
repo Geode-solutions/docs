@@ -45,6 +45,16 @@ Class managing modifications of a :ref:`StratigraphicUnitsStack <doxid-classgeod
 			const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& strati_unit_above
 			);
 	
+		void :target:`add_erosion_above<doxid-classgeode_1_1_stratigraphic_units_stack_builder_1a6d527053b8f728951675ddc3628f9434>`(
+			const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& erosion_horizon,
+			const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& eroded_unit
+			);
+	
+		void :target:`add_baselap_under<doxid-classgeode_1_1_stratigraphic_units_stack_builder_1a31fa1056fb3673c9e9164986efac97b5>`(
+			const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& baselap_horizon,
+			const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& baselaping_unit
+			);
+	
 		void :target:`remove_horizon<doxid-classgeode_1_1_stratigraphic_units_stack_builder_1a0092dca895804d09352a994b4f658075>`(const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& horizon);
 		void :target:`remove_stratigraphic_unit<doxid-classgeode_1_1_stratigraphic_units_stack_builder_1a8c180cf3591435bdb46109a56839a115>`(const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& stratigraphic_unit);
 	};
@@ -70,6 +80,8 @@ Inherited Members
 		void :ref:`set_stratigraphic_unit_name<doxid-classgeode_1_1_stratigraphic_units_builder_1a60a007857db052cbc30d9b0314f0fc32>`(const uuid& id, absl::string_view name);
 		void :ref:`unregister_component<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a9a310c48cb4855cfb6def000b051a2f4>`(const uuid& id);
 		void :ref:`remove_relation<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a66c08fca5b07980c50f67ade884397f8>`(const uuid& id1, const uuid& id2);
+		void :ref:`remove_above_relation<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a4afbb02ab2cb6f0cafaf88a7a8a8d22a>`(const uuid& id1, const uuid& id2);
+		void :ref:`remove_unconformity_relation<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a27634257bf938abc168924493ab55919>`(const uuid& id1, const uuid& id2);
 	
 		void :ref:`copy_stratigraphic_relationships<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a579851b2174d129e0a4d9e64f7d4bafe>`(
 			const ModelCopyMapping& mapping,

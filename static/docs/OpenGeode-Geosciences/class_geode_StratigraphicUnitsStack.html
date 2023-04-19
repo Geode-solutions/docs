@@ -87,6 +87,8 @@
     <span class="c1">// methods</span>
 
     <span class="kt">bool</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a3a77fc907eb4ba168bd7122d9bf7fee8"><span class="std std-ref">is_above</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">above</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">under</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a2bb219597c2ca2b5e9f71b103cf049d1"><span class="std std-ref">is_eroded_by</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">eroded</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">erosion</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1aea624b6e0511b861f4868c75a529bbdb"><span class="std std-ref">is_baselap_of</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">baselap</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">baselap_top</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a467a9f38bf47ab5ce0d1bf9b04d68f3b"><span class="std std-ref">above</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a6efbcbeadca633d826db8fae5de1052c"><span class="std std-ref">under</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a258d1f09004383b9849fc6faca9c45bd"><span class="std std-ref">save_stratigraphic_relationships</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
@@ -98,7 +100,31 @@
         <span class="n">StratigraphicRelationshipsBuilderKey</span>
         <span class="p">);</span>
 
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a409904cb4a29affdaa603f23243967d2"><span class="std std-ref">add_erosion_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">erosion</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">eroded</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a2dfa695bb779ab2fb71ae50acead2b1e"><span class="std std-ref">add_baselap_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">baselap_top</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">baselap</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
     <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1ae30c9ee135aadfd1bc84da6b0010c85a"><span class="std std-ref">remove_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a62f93a44b8b0a07522925ab18866af06"><span class="std std-ref">remove_above_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a3e52024f1782c3679434e876a0e3de5a"><span class="std std-ref">remove_unconformity_relation</span></a><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
         <span class="n">StratigraphicRelationshipsBuilderKey</span>

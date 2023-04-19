@@ -51,6 +51,8 @@
     <span class="c1">// methods</span>
 
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-relationships-1a3a77fc907eb4ba168bd7122d9bf7fee8"><span></span><span class="n">is_above</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">above</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">under</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-relationships-1a2bb219597c2ca2b5e9f71b103cf049d1"><span></span><span class="n">is_eroded_by</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">eroded</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">erosion</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-relationships-1aea624b6e0511b861f4868c75a529bbdb"><span></span><span class="n">is_baselap_of</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">baselap</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">baselap_top</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-relationships-1a467a9f38bf47ab5ce0d1bf9b04d68f3b"><span></span><span class="n">above</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-relationships-1a6efbcbeadca633d826db8fae5de1052c"><span></span><span class="n">under</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-relationships-1a258d1f09004383b9849fc6faca9c45bd"><span></span><span class="n">save_stratigraphic_relationships</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
@@ -62,7 +64,31 @@
         <span class="n">StratigraphicRelationshipsBuilderKey</span>
         <span class="p">);</span>
 
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-relationships-1a409904cb4a29affdaa603f23243967d2"><span></span><span class="n">add_erosion_relation</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">erosion</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">eroded</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-relationships-1a2dfa695bb779ab2fb71ae50acead2b1e"><span></span><span class="n">add_baselap_relation</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">baselap_top</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">baselap</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
     <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-stratigraphic-relationships-1ae30c9ee135aadfd1bc84da6b0010c85a"><span class="std std-ref">remove_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-stratigraphic-relationships-1a62f93a44b8b0a07522925ab18866af06"><span class="std std-ref">remove_above_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-stratigraphic-relationships-1a3e52024f1782c3679434e876a0e3de5a"><span class="std std-ref">remove_unconformity_relation</span></a><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
         <span class="n">StratigraphicRelationshipsBuilderKey</span>
@@ -115,7 +141,19 @@
     <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
     <span class="n">StratigraphicRelationshipsBuilderKey</span>
     <span class="p">)</span></pre>
-<p>Remove the relation between two components</p>
+<p>Remove all relations between two components</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-stratigraphic-relationships-1a62f93a44b8b0a07522925ab18866af06"><span id="index-4"></span><span></span><span class="kt">void</span> <span class="n">remove_above_relation</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
+    <span class="n">StratigraphicRelationshipsBuilderKey</span>
+    <span class="p">)</span></pre>
+<p>Removes any above/under relationship between two components</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-stratigraphic-relationships-1a3e52024f1782c3679434e876a0e3de5a"><span id="index-5"></span><span></span><span class="kt">void</span> <span class="n">remove_unconformity_relation</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
+    <span class="n">StratigraphicRelationshipsBuilderKey</span>
+    <span class="p">)</span></pre>
+<p>Removes any unconformity relationship between two components</p>
 </section>
 </section>
 </section>
