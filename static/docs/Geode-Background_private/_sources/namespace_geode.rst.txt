@@ -27,6 +27,7 @@ namespace geode
 
 	// global functions
 
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a0ca5a699599ecc4f05f8c3bf26d503ce>`(geode_background_brep_api, BackgroundBRep);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a80caf1a0e3d661919921cfd9b18a417e>`(geode_background_common_api, BackgroundCommon);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a4144c56d1b7ed08d2d74de0c7e2cab7d>`(geode_background_solid_api, BackgroundSolid);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1abd0f6e0f5576382aa7257d2d0253918f>`(geode_background_surface_api, BackgroundSurface);
