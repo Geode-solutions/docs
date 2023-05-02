@@ -15,14 +15,13 @@ class geode::Section::BoundaryLineRange
 
 	#include <section.h>
 	
-	class BoundaryLineRange:
-	    public :ref:`geode::Relationships::BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`,
-	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	class BoundaryLineRange: public :ref:`geode::Relationships::BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`
 	{
 	public:
 		// construction
 	
 		:target:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a4b7c01e6ebf9fc9b82d8b6c43a14adb7>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const Surface2D& surface);
+		:target:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a9604a2eaad81b294a1da11cc4aa4137b>`(const BoundaryLineRange& range);
 
 		// methods
 	
@@ -41,6 +40,4 @@ Inherited Members
 		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a38a05e2d55cda5f7789faf1b0dd0d53b>` (const :ref:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1ad48bf5ca79534feea81482e831a47e15>` ();
 		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a490c05e8b656295797dc711a83e85f23>` () const;
-		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
-		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
 

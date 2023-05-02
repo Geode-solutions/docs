@@ -37,14 +37,13 @@
 <span id="doxid-classgeode-1-1-blocks-1-1-modifiable-block-range"></span><span id="index-0"></span><h1>class geode::Blocks::ModifiableBlockRange<a class="headerlink" href="#class-geode-blocks-modifiableblockrange" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">class</span> <span class="nl">ModifiableBlockRange</span><span class="p">:</span>
-    <span class="k">public</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base"><span class="std std-ref">geode::Blocks::BlockRangeBase</span></a><span></span><span class="p">,</span>
-    <span class="k">public</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end"><span class="std std-ref">geode::BeginEnd</span></a><span></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">class</span> <span class="nl">ModifiableBlockRange</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base"><span class="std std-ref">geode::Blocks::BlockRangeBase</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-blocks-1-1-modifiable-block-range-1ac9647e8ad5a083966e5e9099db0a8223"><span></span><span class="n">ModifiableBlockRange</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Blocks.html#doxid-classgeode-1-1-blocks"><span class="std std-ref">Blocks</span></a><span></span><span class="o">&amp;</span> <span class="n">blocks</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-blocks-1-1-modifiable-block-range-1a0216b30ce8155b15fa2672f266045a84"><span></span><span class="n">ModifiableBlockRange</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">ModifiableBlockRange</span><span class="o">&amp;</span> <span class="n">range</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
@@ -56,9 +55,7 @@
     <span class="c1">// methods</span>
 
     <span class="kt">bool</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base-1af88340cfc6894af77dba26e9631435df"><span class="std std-ref">operator !=</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base"><span class="std std-ref">BlockRangeBase</span></a><span></span><span class="o">&amp;</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base-1a338c1a4a2671ab68c4ab3d8ed05ca213"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span>
-    <span class="k">const</span> <span class="n">Type</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end-1a75c49da0041050a3fef241e05eacbeba"><span class="std std-ref">begin</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="k">const</span> <span class="n">Type</span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_BeginEnd.html#doxid-classgeode-1-1-begin-end-1a2a998c5a4b898428a69aa420df0d63a9"><span class="std std-ref">end</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Blocks_BlockRangeBase.html#doxid-classgeode-1-1-blocks-1-1-block-range-base-1a338c1a4a2671ab68c4ab3d8ed05ca213"><span class="std std-ref">operator ++</span></a><span></span> <span class="p">();</span></pre>
 </section>
 </section>
 

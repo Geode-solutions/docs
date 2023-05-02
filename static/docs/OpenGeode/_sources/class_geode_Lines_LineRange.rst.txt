@@ -15,14 +15,13 @@ class geode::Lines::LineRange
 
 	#include <lines.h>
 	
-	class LineRange:
-	    public :ref:`geode::Lines::LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`,
-	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	class LineRange: public :ref:`geode::Lines::LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`
 	{
 	public:
 		// construction
 	
 		:target:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range_1a79705347cbc7f9925c32e35ca0e18757>`(const :ref:`Lines<doxid-classgeode_1_1_lines>`& lines);
+		:target:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range_1aea1e2bf25b1362b69e9e5189cd16206d>`(const LineRange& range);
 
 		// methods
 	
@@ -40,6 +39,4 @@ Inherited Members
 	
 		bool :ref:`operator !=<doxid-classgeode_1_1_lines_1_1_line_range_base_1ae20e0c2e193ec1ad8a6c9ff9a6d61656>` (const :ref:`LineRangeBase<doxid-classgeode_1_1_lines_1_1_line_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_lines_1_1_line_range_base_1a5e87d07af3f242a4c5255283de83172b>` ();
-		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
-		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
 

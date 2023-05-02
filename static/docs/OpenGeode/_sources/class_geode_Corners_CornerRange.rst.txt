@@ -15,14 +15,13 @@ Class for range-based iteration on unmodifiable :ref:`Corners <doxid-classgeode_
 
 	#include <corners.h>
 	
-	class CornerRange:
-	    public :ref:`geode::Corners::CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`,
-	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	class CornerRange: public :ref:`geode::Corners::CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`
 	{
 	public:
 		// construction
 	
 		:target:`CornerRange<doxid-classgeode_1_1_corners_1_1_corner_range_1a362212b61370610f891749ff2181fb38>`(const :ref:`Corners<doxid-classgeode_1_1_corners>`& corners);
+		:target:`CornerRange<doxid-classgeode_1_1_corners_1_1_corner_range_1a2317937bc04d05ce8ef2b28a4ac9208f>`(const CornerRange& range);
 
 		// methods
 	
@@ -40,6 +39,4 @@ Inherited Members
 	
 		bool :ref:`operator !=<doxid-classgeode_1_1_corners_1_1_corner_range_base_1aa127256b3e478299eadee155dc5769d1>` (const :ref:`CornerRangeBase<doxid-classgeode_1_1_corners_1_1_corner_range_base>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_corners_1_1_corner_range_base_1a68263571974d8287c65870eebb337710>` ();
-		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
-		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
 

@@ -15,15 +15,14 @@ class geode::BRep::InternalCornerRange
 
 	#include <brep.h>
 	
-	class InternalCornerRange:
-	    public :ref:`geode::Relationships::InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`,
-	    public :ref:`geode::BeginEnd<doxid-classgeode_1_1_begin_end>`
+	class InternalCornerRange: public :ref:`geode::Relationships::InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`
 	{
 	public:
 		// construction
 	
 		:target:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1abfa4b1416ab1b92ce600a2b78bb9858a>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Surface3D& surface);
 		:target:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1a0ef39bb5437b20fe6e80594cee9b4e05>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Block3D& block);
+		:target:`InternalCornerRange<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1a91e40b08890fda666f1a3782fbf5083e>`(const InternalCornerRange& range);
 
 		// methods
 	
@@ -43,6 +42,4 @@ Inherited Members
 		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a4ec071994352d9003b056190a43a3d3b>` (const :ref:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1ad9eef320c41a11ea8882af92030d95ae>` ();
 		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a5561d5ab9cc43df4bd56d0722cc92ed2>` () const;
-		const Type& :ref:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
-		const Type& :ref:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
 
