@@ -21,6 +21,11 @@ class geode::Relationships::EmbeddingRange
 		// construction
 	
 		:target:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range_1a9206fb35a0a48cba6795c536cc5b16af>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+
+		// methods
+	
+		const EmbeddingRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_embedding_range_1a06dce56a9abd45517ffae292ed352203>`() const;
+		const EmbeddingRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_embedding_range_1aa8f9c2ed4c64d6cebe4a5ab960ccf695>`() const;
 	};
 
 Inherited Members

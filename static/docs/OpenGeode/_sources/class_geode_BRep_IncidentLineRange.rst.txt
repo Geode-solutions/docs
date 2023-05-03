@@ -25,6 +25,8 @@ class geode::BRep::IncidentLineRange
 
 		// methods
 	
+		const IncidentLineRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_incident_line_range_1a5104c7a9b447ccc359af3baa3c41399b>`() const;
+		const IncidentLineRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_incident_line_range_1a273b85062f5bc9b3f58f1562e895e717>`() const;
 		const Line3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_incident_line_range_1a23134afe1d15d656ddfd879140bbbb79>` () const;
 	};
 

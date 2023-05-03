@@ -27,6 +27,8 @@ class geode::BRep::EmbeddingBlockRange
 
 		// methods
 	
+		const EmbeddingBlockRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1a8b6be8a266dc61e93fa85edd32d538b8>`() const;
+		const EmbeddingBlockRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1a70b0dfdf0740830cc5ff9385c757ee10>`() const;
 		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1a646258ba4f63d61afbd17836a3e8a2bc>` ();
 		const Block3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range_1ac6bcdbc4bad0e0a2e47c7e0ca2132b37>` () const;
 	};

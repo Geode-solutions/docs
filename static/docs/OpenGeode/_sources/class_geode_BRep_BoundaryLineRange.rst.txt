@@ -25,6 +25,8 @@ class geode::BRep::BoundaryLineRange
 
 		// methods
 	
+		const BoundaryLineRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range_1a3a347880377a35545bceb5df8f265b73>`() const;
+		const BoundaryLineRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range_1ae15e76d8595921c894765f56da9de149>`() const;
 		const Line3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range_1a52ba87c2f2741b4b6ff710e6b350a47e>` () const;
 	};
 

@@ -24,6 +24,8 @@ class geode::Blocks::ModifiableBlockRange
 
 		// methods
 	
+		const ModifiableBlockRange& :target:`begin<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1a27500d71ba74b050178190714e9192c3>`() const;
+		const ModifiableBlockRange& :target:`end<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1a550b22fad4ec8e4b986320cd9ca0f9d9>`() const;
 		:ref:`Block<doxid-classgeode_1_1_block>`<dimension>& :target:`operator *<doxid-classgeode_1_1_blocks_1_1_modifiable_block_range_1aabd698a8f520dea8a9d8477cefc91a80>` () const;
 	};
 

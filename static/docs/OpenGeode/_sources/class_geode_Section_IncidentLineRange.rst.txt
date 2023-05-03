@@ -25,6 +25,8 @@ class geode::Section::IncidentLineRange
 
 		// methods
 	
+		const IncidentLineRange& :target:`begin<doxid-classgeode_1_1_section_1_1_incident_line_range_1a9764239b4e0351ee348d1a4f91d8ceb9>`() const;
+		const IncidentLineRange& :target:`end<doxid-classgeode_1_1_section_1_1_incident_line_range_1a327074496dd2254be556a92b3e7d7d38>`() const;
 		const Line2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_incident_line_range_1a9e8a974a1c8530185d1ee14b5037aaa7>` () const;
 	};
 

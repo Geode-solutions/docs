@@ -26,6 +26,8 @@ class geode::BRep::EmbeddingSurfaceRange
 
 		// methods
 	
+		const EmbeddingSurfaceRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a0d3868a01407fdc588182d0f5d588fa6>`() const;
+		const EmbeddingSurfaceRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1ab4356cec295f661971c18866426d0b9c>`() const;
 		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a8c740586b77321890368a889db84f9bd>` ();
 		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a40feb375724f2e502f69730f51d6272d>` () const;
 	};

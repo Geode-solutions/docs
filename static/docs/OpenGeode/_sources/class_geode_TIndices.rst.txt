@@ -26,6 +26,8 @@ template class geode::TIndices
 
 		// methods
 	
+		const TIndices<Type>& :target:`begin<doxid-classgeode_1_1_t_indices_1a9eea6a83527fd0440a946189d5ce2e34>`() const;
+		const TIndices<Type>& :target:`end<doxid-classgeode_1_1_t_indices_1a3d0481267e3e1d55775358581163661c>`() const;
 		Type :target:`operator *<doxid-classgeode_1_1_t_indices_1a40954a6f0513574820ce32a720252b40>` () const;
 	};
 

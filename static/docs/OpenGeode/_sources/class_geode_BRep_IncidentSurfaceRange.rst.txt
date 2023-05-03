@@ -25,6 +25,8 @@ class geode::BRep::IncidentSurfaceRange
 
 		// methods
 	
+		const IncidentSurfaceRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_incident_surface_range_1a8bb255b00da8bf2c38f190afb8927a16>`() const;
+		const IncidentSurfaceRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_incident_surface_range_1a55c4d19a9af82f418508187721e3ad33>`() const;
 		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_incident_surface_range_1a1d7cf9ae71819aaa3ba40de5b9b26e99>` () const;
 	};
 

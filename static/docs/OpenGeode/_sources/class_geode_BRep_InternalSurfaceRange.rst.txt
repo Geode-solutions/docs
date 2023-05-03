@@ -25,6 +25,8 @@ class geode::BRep::InternalSurfaceRange
 
 		// methods
 	
+		const InternalSurfaceRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a7b41df0ddd4d5349b1a3c26b2c367fe6>`() const;
+		const InternalSurfaceRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a5f130ce91a08bace75af4ff5457bc8a6>`() const;
 		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a58dcf818dc4fc2b2f483002650e8d9f8>` ();
 		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a6ce2983ce402ce522a91525071db06e4>` () const;
 	};

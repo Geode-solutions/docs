@@ -26,6 +26,8 @@ class geode::BRep::InternalLineRange
 
 		// methods
 	
+		const InternalLineRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_internal_line_range_1a6e57abbc8d3a45d904eda8c2d246ad72>`() const;
+		const InternalLineRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_internal_line_range_1a920047eb13cc470a30a0ebd3f577cc3b>`() const;
 		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_internal_line_range_1a12a8175f62ec063f4c74fe592c5acc63>` ();
 		const Line3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_internal_line_range_1a577c6f98673e0c925140f31a60224144>` () const;
 	};

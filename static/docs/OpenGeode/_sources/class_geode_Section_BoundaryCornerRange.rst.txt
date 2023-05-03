@@ -25,6 +25,8 @@ class geode::Section::BoundaryCornerRange
 
 		// methods
 	
+		const BoundaryCornerRange& :target:`begin<doxid-classgeode_1_1_section_1_1_boundary_corner_range_1aefbee209dc711d901769fc8e9ce60a07>`() const;
+		const BoundaryCornerRange& :target:`end<doxid-classgeode_1_1_section_1_1_boundary_corner_range_1a1c0889a62d471fdcf36cb0fc71d2436a>`() const;
 		const Corner2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_boundary_corner_range_1ac6c0d38cc3ec6d8f3beda03cdb45757d>` () const;
 	};
 

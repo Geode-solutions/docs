@@ -25,6 +25,8 @@ template class geode::EraserRange
 
 		// methods
 	
+		const EraserRange<Type>& :target:`begin<doxid-classgeode_1_1_eraser_range_1ab33322494a7f9ac4003d50d6693cac06>`() const;
+		const EraserRange<Type>& :target:`end<doxid-classgeode_1_1_eraser_range_1ada945d480d984ccec42522bdc0ea4184>`() const;
 		Type&& :target:`operator *<doxid-classgeode_1_1_eraser_range_1a5ab88c87f239338356863f67f549485f>` ();
 	};
 

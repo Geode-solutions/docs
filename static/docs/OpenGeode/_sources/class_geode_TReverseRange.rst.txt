@@ -29,6 +29,8 @@ template class geode::TReverseRange
 
 		// methods
 	
+		const TReverseRange<Type>& :target:`begin<doxid-classgeode_1_1_t_reverse_range_1abee9fb6a35bff232b95105b4950adbe2>`() const;
+		const TReverseRange<Type>& :target:`end<doxid-classgeode_1_1_t_reverse_range_1ae4f765f97570ae8b0e447635b9efb115>`() const;
 		Type :target:`operator *<doxid-classgeode_1_1_t_reverse_range_1ae3d5a84a4bb08d0c8206392d8d35de22>` () const;
 	};
 

@@ -63,7 +63,6 @@ Overview
 	#define :target:`OPENGEODE_EXCEPTION<doxid-assert_8h_1a7cb606fee329d2bcd1f7e37a508ff63b>`(condition, ...)
 	#define :ref:`OPENGEODE_LIBRARY<doxid-library_8h_1a696a3a37a69e36d278e3da6d15f99794>`(export_api, library_name)
 	#define :ref:`OPENGEODE_LIBRARY_IMPLEMENTATION<doxid-library_8h_1a51b67601a35f38c83cbfb7e8c7016f7a>`(library_name)
-	#define :target:`OPENGEODE_RANGE_LOOP<doxid-range_8h_1a87a8aac3d38da36b5639c95bb7b42b77>`(Type)
 	#define :target:`OPENGEODE_RESEARCH<doxid-assert_8h_1ad41e03aeb11a6b5a19f5fa4c4ff752f6>`(condition, ...)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_2D_OR_3D<doxid-basic_2common_8h_1a1fe9b7e669f40054b322ec0969b00812>`(type)
 	#define :target:`OPENGEODE_TEMPLATE_ASSERT_3D<doxid-basic_2common_8h_1a37f476a50bc1a84e160210b7c02bf10c>`(type)

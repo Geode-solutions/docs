@@ -35,6 +35,8 @@ for( const auto i : Range{ n } ) { // do something }
 
 		// methods
 	
+		const TRange<Type>& :target:`begin<doxid-classgeode_1_1_t_range_1abd52d2c95bbd31248791d930bf9f4bde>`() const;
+		const TRange<Type>& :target:`end<doxid-classgeode_1_1_t_range_1ab3ec2631d3399e967a0fc45e4241bc5d>`() const;
 		Type :target:`operator *<doxid-classgeode_1_1_t_range_1aadf6983950805c77946e6a3a60c579cb>` () const;
 	};
 

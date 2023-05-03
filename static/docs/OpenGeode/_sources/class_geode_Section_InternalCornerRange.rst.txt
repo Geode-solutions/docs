@@ -25,6 +25,8 @@ class geode::Section::InternalCornerRange
 
 		// methods
 	
+		const InternalCornerRange& :target:`begin<doxid-classgeode_1_1_section_1_1_internal_corner_range_1a76f3458520fd66c8226a807e126ca199>`() const;
+		const InternalCornerRange& :target:`end<doxid-classgeode_1_1_section_1_1_internal_corner_range_1ac7e8019180e17911efd616c1ca854b06>`() const;
 		void :target:`operator ++<doxid-classgeode_1_1_section_1_1_internal_corner_range_1a67449db99a063f693cc302124599c4d6>` ();
 		const Corner2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_internal_corner_range_1aa5bf1a5e69086bab9ad84b90b99a024c>` () const;
 	};

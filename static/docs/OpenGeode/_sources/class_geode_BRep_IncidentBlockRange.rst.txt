@@ -25,6 +25,8 @@ class geode::BRep::IncidentBlockRange
 
 		// methods
 	
+		const IncidentBlockRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_incident_block_range_1a798f8986353c2365da7a5307a12f5b0a>`() const;
+		const IncidentBlockRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_incident_block_range_1a70720eb7770231aefbaa52b9fc072729>`() const;
 		const Block3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_incident_block_range_1a9f6aa6acdcc98c9220e8c744f6c2c5a3>` () const;
 	};
 

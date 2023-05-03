@@ -21,6 +21,11 @@ class geode::Relationships::IncidenceRange
 		// construction
 	
 		:target:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a1a5c7fd00c47282f7007627359c61e58>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+
+		// methods
+	
+		const IncidenceRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a67eae319370c6af4923d0f1818b718fa>`() const;
+		const IncidenceRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a7ab84584490f95f61fa466445384832c>`() const;
 	};
 
 Inherited Members

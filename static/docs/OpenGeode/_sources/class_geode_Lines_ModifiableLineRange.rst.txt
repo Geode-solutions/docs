@@ -24,6 +24,8 @@ class geode::Lines::ModifiableLineRange
 
 		// methods
 	
+		const ModifiableLineRange& :target:`begin<doxid-classgeode_1_1_lines_1_1_modifiable_line_range_1ad22bad7fb1406d7905c5c40b91a7c274>`() const;
+		const ModifiableLineRange& :target:`end<doxid-classgeode_1_1_lines_1_1_modifiable_line_range_1a907054f9a623bac491de41bdf67d78d4>`() const;
 		:ref:`Line<doxid-classgeode_1_1_line>`<dimension>& :target:`operator *<doxid-classgeode_1_1_lines_1_1_modifiable_line_range_1ab54397401fb18e6a310196aadd74f177>` () const;
 	};
 

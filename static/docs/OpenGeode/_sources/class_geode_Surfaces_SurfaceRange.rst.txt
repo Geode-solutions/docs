@@ -25,6 +25,8 @@ class geode::Surfaces::SurfaceRange
 
 		// methods
 	
+		const SurfaceRange& :target:`begin<doxid-classgeode_1_1_surfaces_1_1_surface_range_1afe82d2176be503d55e8434d8ddc83713>`() const;
+		const SurfaceRange& :target:`end<doxid-classgeode_1_1_surfaces_1_1_surface_range_1acb4ed0afe70678bc440431496541a70a>`() const;
 		const :ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& :target:`operator *<doxid-classgeode_1_1_surfaces_1_1_surface_range_1a0debe17e6188bb22bf397a33287c8362>` () const;
 	};
 

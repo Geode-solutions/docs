@@ -26,6 +26,8 @@ class geode::BRep::InternalCornerRange
 
 		// methods
 	
+		const InternalCornerRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1a0bafc1b61d36a879e3969e46de18fe9a>`() const;
+		const InternalCornerRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1a3f41f0f80087353e62c65d06c43d2008>`() const;
 		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1a2de67aa711b551ac980d139062a69332>` ();
 		const Corner3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_internal_corner_range_1a8c1ae98f48e32d13e6dc7c7dc0b5e007>` () const;
 	};

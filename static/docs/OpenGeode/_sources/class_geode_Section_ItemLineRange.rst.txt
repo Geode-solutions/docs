@@ -25,6 +25,8 @@ class geode::Section::ItemLineRange
 
 		// methods
 	
+		const ItemLineRange& :target:`begin<doxid-classgeode_1_1_section_1_1_item_line_range_1aaaa871eb143f6d9139d171232b488239>`() const;
+		const ItemLineRange& :target:`end<doxid-classgeode_1_1_section_1_1_item_line_range_1a92d5e897bdb45818a6e8b277eaae99e7>`() const;
 		const Line2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_item_line_range_1a5eeb092a657e5c945aa80ae03d7fae82>` () const;
 	};
 

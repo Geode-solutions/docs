@@ -25,6 +25,8 @@ class geode::Section::BoundaryLineRange
 
 		// methods
 	
+		const BoundaryLineRange& :target:`begin<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a9f603c2a4078754ac982fda6b884717e>`() const;
+		const BoundaryLineRange& :target:`end<doxid-classgeode_1_1_section_1_1_boundary_line_range_1af2f54a8ab96fe84d58f345dc363c946b>`() const;
 		const Line2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a0f49d27332678be94bd75e90e9c2f254>` () const;
 	};
 

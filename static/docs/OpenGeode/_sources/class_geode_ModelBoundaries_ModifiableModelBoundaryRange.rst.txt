@@ -24,6 +24,8 @@ class geode::ModelBoundaries::ModifiableModelBoundaryRange
 
 		// methods
 	
+		const ModifiableModelBoundaryRange& :target:`begin<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range_1a29c0c4986284e191af13aff89e43cd94>`() const;
+		const ModifiableModelBoundaryRange& :target:`end<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range_1aed85ac9455513a6d596bd5577fa95927>`() const;
 		:ref:`ModelBoundary<doxid-classgeode_1_1_model_boundary>`<dimension>& :target:`operator *<doxid-classgeode_1_1_model_boundaries_1_1_modifiable_model_boundary_range_1ac09b861f3ce0eed647fc9a432f5ba8b3>` () const;
 	};
 

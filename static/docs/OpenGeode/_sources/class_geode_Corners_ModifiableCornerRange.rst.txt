@@ -24,6 +24,8 @@ class geode::Corners::ModifiableCornerRange
 
 		// methods
 	
+		const ModifiableCornerRange& :target:`begin<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range_1a0325b5244d0094cd64eb8051e35a967d>`() const;
+		const ModifiableCornerRange& :target:`end<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range_1a40c21d08f183c50159f38ad6cf0c0326>`() const;
 		:ref:`Corner<doxid-classgeode_1_1_corner>`<dimension>& :target:`operator *<doxid-classgeode_1_1_corners_1_1_modifiable_corner_range_1a9798cabe61a5183d5251964c0c1f0da6>` () const;
 	};
 

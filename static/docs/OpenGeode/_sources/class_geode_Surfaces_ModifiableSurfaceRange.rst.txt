@@ -24,6 +24,8 @@ class geode::Surfaces::ModifiableSurfaceRange
 
 		// methods
 	
+		const ModifiableSurfaceRange& :target:`begin<doxid-classgeode_1_1_surfaces_1_1_modifiable_surface_range_1aa1ff96537e1904c9256021cfbb4541a9>`() const;
+		const ModifiableSurfaceRange& :target:`end<doxid-classgeode_1_1_surfaces_1_1_modifiable_surface_range_1a70c53638e0ed41851e77c57c33b5598a>`() const;
 		:ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& :target:`operator *<doxid-classgeode_1_1_surfaces_1_1_modifiable_surface_range_1af529e9fe4f632f1b6b4e1253ea3c8903>` () const;
 	};
 
