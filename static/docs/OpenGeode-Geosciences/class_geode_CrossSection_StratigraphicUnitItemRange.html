@@ -39,9 +39,7 @@
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;cross_section.h&gt;</span>
 
-<span class="k">class</span> <span class="nl">StratigraphicUnitItemRange</span><span class="p">:</span>
-    <span class="k">public</span> <span class="n">ItemRangeIterator</span><span class="p">,</span>
-    <span class="k">public</span> <span class="n">BeginEnd</span><span class="o">&lt;</span> <span class="n">StratigraphicUnitItemRange</span> <span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">StratigraphicUnitItemRange</span><span class="p">:</span> <span class="k">public</span> <span class="n">ItemRangeIterator</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
@@ -51,8 +49,12 @@
         <span class="k">const</span> <span class="n">StratigraphicUnit2D</span><span class="o">&amp;</span> <span class="n">stratigraphic_unit</span>
         <span class="p">);</span>
 
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1-1-stratigraphic-unit-item-range-1accad7d8a86db5f1b99850c5f4d7490a6"><span></span><span class="n">StratigraphicUnitItemRange</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">StratigraphicUnitItemRange</span><span class="o">&amp;</span> <span class="n">range</span><span class="p">);</span>
+
     <span class="c1">// methods</span>
 
+    <span class="k">const</span> <span class="n">StratigraphicUnitItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1-1-stratigraphic-unit-item-range-1a925cd29d20e853d8792d49e445aec472"><span></span><span class="n">begin</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">StratigraphicUnitItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1-1-stratigraphic-unit-item-range-1ab636efab40daa3e8d29e567ca4cf7c60"><span></span><span class="n">end</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-cross-section-1-1-stratigraphic-unit-item-range-1a65fbcc8d0d588c14e2c6957561d48bed"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </section>

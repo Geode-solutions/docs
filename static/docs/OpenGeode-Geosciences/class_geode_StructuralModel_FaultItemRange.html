@@ -39,17 +39,18 @@
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;structural_model.h&gt;</span>
 
-<span class="k">class</span> <span class="nl">FaultItemRange</span><span class="p">:</span>
-    <span class="k">public</span> <span class="n">ItemRangeIterator</span><span class="p">,</span>
-    <span class="k">public</span> <span class="n">BeginEnd</span><span class="o">&lt;</span> <span class="n">FaultItemRange</span> <span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">FaultItemRange</span><span class="p">:</span> <span class="k">public</span> <span class="n">ItemRangeIterator</span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-fault-item-range-1a7a9ac9acf1d3d844d94a983417ea0dcc"><span></span><span class="n">FaultItemRange</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span> <span class="k">const</span> <span class="n">Fault3D</span><span class="o">&amp;</span> <span class="n">fault</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-fault-item-range-1a4ff8369d992ee9f6d80df1dd520d420e"><span></span><span class="n">FaultItemRange</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">FaultItemRange</span><span class="o">&amp;</span> <span class="n">range</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
+    <span class="k">const</span> <span class="n">FaultItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-fault-item-range-1a8b29a17baf0a3d52fb2d72c92b13b346"><span></span><span class="n">begin</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">FaultItemRange</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-fault-item-range-1a6102cc024b881c19531588060d7a75ad"><span></span><span class="n">end</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-structural-model-1-1-fault-item-range-1adbc2e12bf87dd4ad302be2b867e541ca"><span></span><span class="k">operator</span> <span class="o">*</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </section>

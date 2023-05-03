@@ -15,9 +15,7 @@ class geode::StructuralModel::HorizonItemRange
 
 	#include <structural_model.h>
 	
-	class HorizonItemRange:
-	    public ItemRangeIterator,
-	    public BeginEnd< HorizonItemRange >
+	class HorizonItemRange: public ItemRangeIterator
 	{
 	public:
 		// construction
@@ -26,8 +24,12 @@ class geode::StructuralModel::HorizonItemRange
 			const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
 			const Horizon3D& horizon
 			);
+	
+		:target:`HorizonItemRange<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range_1a9fe344b5938dc934a13925dba0649256>`(const HorizonItemRange& range);
 
 		// methods
 	
+		const HorizonItemRange& :target:`begin<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range_1a29565450bea03a6eea2ef07c4b643894>`() const;
+		const HorizonItemRange& :target:`end<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range_1ad24bd00a19a1e01bad356a1992d7858e>`() const;
 		const Surface3D& :target:`operator *<doxid-classgeode_1_1_structural_model_1_1_horizon_item_range_1aaa86413e2b851f9233838229678e80ff>` () const;
 	};

@@ -15,16 +15,17 @@ class geode::StructuralModel::FaultItemRange
 
 	#include <structural_model.h>
 	
-	class FaultItemRange:
-	    public ItemRangeIterator,
-	    public BeginEnd< FaultItemRange >
+	class FaultItemRange: public ItemRangeIterator
 	{
 	public:
 		// construction
 	
 		:target:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range_1a7a9ac9acf1d3d844d94a983417ea0dcc>`(const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model, const Fault3D& fault);
+		:target:`FaultItemRange<doxid-classgeode_1_1_structural_model_1_1_fault_item_range_1a4ff8369d992ee9f6d80df1dd520d420e>`(const FaultItemRange& range);
 
 		// methods
 	
+		const FaultItemRange& :target:`begin<doxid-classgeode_1_1_structural_model_1_1_fault_item_range_1a8b29a17baf0a3d52fb2d72c92b13b346>`() const;
+		const FaultItemRange& :target:`end<doxid-classgeode_1_1_structural_model_1_1_fault_item_range_1a6102cc024b881c19531588060d7a75ad>`() const;
 		const Surface3D& :target:`operator *<doxid-classgeode_1_1_structural_model_1_1_fault_item_range_1adbc2e12bf87dd4ad302be2b867e541ca>` () const;
 	};
