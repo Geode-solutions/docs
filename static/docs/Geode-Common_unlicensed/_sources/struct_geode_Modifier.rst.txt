@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::Modifier<TetrahedralSolid3D>
+.. _doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4:
+
+template struct geode::Modifier<TetrahedralSolid3D>
+===================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier.h>
+	
+	template <>
+	struct Modifier<TetrahedralSolid3D>
+	{
+		// typedefs
+	
+		typedef :ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>` :target:`type<doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4_1a2a1a02a8367af4ef4d3bee86151ae2e9>`;
+	};
