@@ -22,4 +22,9 @@ template struct geode::CorrectnessInfo
 	
 		std::pair<bool, Intersection> :target:`first<doxid-structgeode_1_1_correctness_info_1a62860e00dcfbbc0455f120590665266e>` { false, {} };
 		std::pair<bool, Intersection> :target:`second<doxid-structgeode_1_1_correctness_info_1a09bd8248fc839af5b9f76b9ff5823aed>` { false, {} };
+
+		// construction
+	
+		:target:`CorrectnessInfo<doxid-structgeode_1_1_correctness_info_1aaac220758feccd7c5153182445819e12>`();
+		:target:`CorrectnessInfo<doxid-structgeode_1_1_correctness_info_1ab37f196102dd8e06fa567c0562f8c3eb>`(const Intersection& intersection);
 	};

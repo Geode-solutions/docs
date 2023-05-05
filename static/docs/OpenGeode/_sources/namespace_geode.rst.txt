@@ -591,7 +591,7 @@ Overview
 	template <typename Key, typename BaseClass, typename... Args>
 	class :ref:`Factory<doxid-classgeode_1_1_factory>`;
 
-	template <typename PointType>
+	template <typename PlaneType>
 	class :ref:`GenericCircle<doxid-classgeode_1_1_generic_circle>`;
 
 	template <typename PointType, index_t dimension>
@@ -1322,6 +1322,21 @@ Overview
 	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point3D, 2>> opengeode_geometry_api :ref:`line_cylinder_intersection<doxid-namespacegeode_1a267b0006b4fd1e9de0c365fe791e7562>`(
 		const InfiniteLine3D& line,
 		const :ref:`Cylinder<doxid-classgeode_1_1_cylinder>`& cylinder
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point3D, 2>> opengeode_geometry_api :ref:`triangle_circle_intersection<doxid-namespacegeode_1af3ea71a4ad6a4b1ac66bc1894a74ecc3>`(
+		const Triangle3D& triangle,
+		const :ref:`Circle<doxid-classgeode_1_1_circle>`& circle
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point3D, 2>> opengeode_geometry_api :ref:`plane_circle_intersection<doxid-namespacegeode_1a0cca03d1dc323d5085c396c929420c16>`(
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane,
+		const :ref:`Circle<doxid-classgeode_1_1_circle>`& circle
+		);
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<InfiniteLine3D> opengeode_geometry_api :ref:`plane_plane_intersection<doxid-namespacegeode_1acc7a7d78a881f7097bc94c964bae241a>`(
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane0,
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane1
 		);
 
 	:ref:`SegmentSegmentIntersection<doxid-namespacegeode_1ad08f71e1c9db568dd62df0bf066813b1>` opengeode_geometry_api :ref:`segment_segment_intersection_detection<doxid-namespacegeode_1a460dcb7ba62a6607f4d51a9619d0ba2a>`(
@@ -3122,6 +3137,63 @@ Compute the intersection between a line and a cylinder
 .. rubric:: Returns:
 
 an optional of the intersection points.
+
+.. index:: pair: function; triangle_circle_intersection
+.. _doxid-namespacegeode_1af3ea71a4ad6a4b1ac66bc1894a74ecc3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point3D, 2>> opengeode_geometry_api triangle_circle_intersection(
+		const Triangle3D& triangle,
+		const :ref:`Circle<doxid-classgeode_1_1_circle>`& circle
+		)
+
+Compute the intersection between a triangle and a circle
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection points.
+
+.. index:: pair: function; plane_circle_intersection
+.. _doxid-namespacegeode_1a0cca03d1dc323d5085c396c929420c16:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<absl::InlinedVector<Point3D, 2>> opengeode_geometry_api plane_circle_intersection(
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane,
+		const :ref:`Circle<doxid-classgeode_1_1_circle>`& circle
+		)
+
+Compute the intersection between a plane and a circle
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection points.
+
+.. index:: pair: function; plane_plane_intersection
+.. _doxid-namespacegeode_1acc7a7d78a881f7097bc94c964bae241a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<InfiniteLine3D> opengeode_geometry_api plane_plane_intersection(
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane0,
+		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane1
+		)
+
+Compute the intersection between two planes
+
+
+
+.. rubric:: Returns:
+
+an optional of the intersection line.
 
 .. index:: pair: function; segment_segment_intersection_detection
 .. _doxid-namespacegeode_1a460dcb7ba62a6607f4d51a9619d0ba2a:
