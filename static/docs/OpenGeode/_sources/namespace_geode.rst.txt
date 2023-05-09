@@ -1264,6 +1264,7 @@ Overview
 		const :ref:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`& disk
 		);
 
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a8c421780195fd0e88f7ff86f6d9970a2>`(:ref:`OwnerInfiniteLine<doxid-classgeode_1_1_owner_infinite_line>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad391ccfd3ec3b37beae6bcc7c210f915>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1aaf755b9136ab518d12e2fa75dd8bdd12>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
 
@@ -1334,7 +1335,7 @@ Overview
 		const :ref:`Circle<doxid-classgeode_1_1_circle>`& circle
 		);
 
-	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<InfiniteLine3D> opengeode_geometry_api :ref:`plane_plane_intersection<doxid-namespacegeode_1acc7a7d78a881f7097bc94c964bae241a>`(
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<OwnerInfiniteLine3D> opengeode_geometry_api :ref:`plane_plane_intersection<doxid-namespacegeode_1adee4575310f09a63a7a19f964936f36e>`(
 		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane0,
 		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane1
 		);
@@ -3177,12 +3178,12 @@ Compute the intersection between a plane and a circle
 an optional of the intersection points.
 
 .. index:: pair: function; plane_plane_intersection
-.. _doxid-namespacegeode_1acc7a7d78a881f7097bc94c964bae241a:
+.. _doxid-namespacegeode_1adee4575310f09a63a7a19f964936f36e:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<InfiniteLine3D> opengeode_geometry_api plane_plane_intersection(
+	:ref:`IntersectionResult<doxid-structgeode_1_1_intersection_result>`<OwnerInfiniteLine3D> opengeode_geometry_api plane_plane_intersection(
 		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane0,
 		const :ref:`Plane<doxid-classgeode_1_1_plane>`& plane1
 		)
