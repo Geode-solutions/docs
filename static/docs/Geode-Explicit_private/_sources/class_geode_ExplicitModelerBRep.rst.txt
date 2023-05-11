@@ -75,7 +75,8 @@ Paints the given uuid on the tetrahedra inside the given surfaces. These surface
 
 	std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> build()
 
-Returns the Merged BRep including all the added surfaces and curves and gives the "input to output" and "output to input" mappings between Surfaces and Lines
+Returns the merged BRep (no mesh in Blocks) including all the added curves and surfaces and gives the "input to output" and "output to
+input" mappings between Surfaces and Lines
 
 .. index:: pair: function; build_painted_volumes
 .. _doxid-classgeode_1_1_explicit_modeler_b_rep_1a9e5c748146a4ee3712625f47a09b5b44:
@@ -85,5 +86,5 @@ Returns the Merged BRep including all the added surfaces and curves and gives th
 
 	std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> build_painted_volumes()
 
-Returns the Merged BRep including the added surfaces and curves around painted volumes only and gives the "input to output" and "output to input" mappings between Surfaces and Lines
+Returns the Merged BRep including the added surfaces and curves around painted volumes only and gives the "input to output" and "output to input" mappings between Surfaces and Lines. Generated BRep does not include added Blocks nor PointSets/Corners
 
