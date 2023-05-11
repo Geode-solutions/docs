@@ -77,6 +77,11 @@ namespace geode
 		const Metric3D& metric
 		);
 
+	void geode_simplex_brep_api :target:`new_simplex_remesh<doxid-namespacegeode_1ad7dc6ea529fc69d50b06b527d1e5d415>`(
+		BRep& brep,
+		const Metric3D& metric
+		);
+
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aec45feff83bfe89a3608ad215c769920>`(Grid);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a1ddeb21714a09b8da27ca40858681e57>`(Grid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8df2fe4dbae5eba91b79d7ae631ec4d4>`(Corner);
