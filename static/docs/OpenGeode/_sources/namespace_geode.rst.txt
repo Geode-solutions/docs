@@ -1130,6 +1130,8 @@ Overview
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
 		);
 
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1aacfc981f6de337f0559278ccad9101e0>`(:ref:`RefPoint<doxid-namespacegeode_1a223a5ea637f84c9b765dcbe24e70b5d6>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aeca72f8ebd4bcdafdbbf6d2192939fb1>`(:ref:`OwnerInfiniteLine<doxid-classgeode_1_1_owner_infinite_line>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0c81b502499daf858dd5c984af4dbd56>`(:ref:`OwnerRay<doxid-classgeode_1_1_owner_ray>`);
@@ -1138,13 +1140,11 @@ Overview
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1ac76f96b22af4f11192d59d689a5b9fd5>`(:ref:`OwnerRay<doxid-classgeode_1_1_owner_ray>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1adee3f5b6404028f81f0c5a3d20d83a10>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a2f7b6283f967b361d2b98479549e0d58>`(:ref:`Ray<doxid-classgeode_1_1_ray>`);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1ab55f25b88963e8ab70b35e318cb30b28>`(:ref:`OwnerSegment<doxid-classgeode_1_1_owner_segment>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a0796c77a7e943e3ad0e1848dafc42814>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afd24b32e35c77b2b7d28e6e402681ff3>`(:ref:`OwnerSphere<doxid-classgeode_1_1_owner_sphere>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abea6b522f3e44b741b8107092efcbd0b>`(:ref:`OwnerSphere<doxid-classgeode_1_1_owner_sphere>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a2ef1614f38ff6bbfa27ffe769235c4ee>`(:ref:`Sphere<doxid-classgeode_1_1_sphere>`);
-	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a39927e08ed2d6703a8dbfd17781e7a19>`(:ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abb453314061448e9d6ed044da60d6cb6>`(:ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a6bd5b8618c1a9a6ff0f6c60bb98fe807>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
