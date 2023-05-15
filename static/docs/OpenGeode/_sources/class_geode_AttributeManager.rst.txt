@@ -74,6 +74,11 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new
 			);
 	
+		void :target:`import<doxid-classgeode_1_1_attribute_manager_1a30c83973a7f18f1b15044cbb6a8d793e>`(
+			const AttributeManager& attribute_manager,
+			const :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new_mapping
+			);
+	
 		template <typename Type, typename Serializer>
 		static void :target:`register_attribute_type<doxid-classgeode_1_1_attribute_manager_1aa15bc2ff9c86c39afcd1e064add32226>`(
 			:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context,

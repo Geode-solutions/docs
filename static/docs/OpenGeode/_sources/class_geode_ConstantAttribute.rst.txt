@@ -57,6 +57,12 @@ Read and write interface for constant attribute storage
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`,
 			AttributeBase::AttributeKey
 			) const;
+	
+		std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :target:`extract<doxid-classgeode_1_1_constant_attribute_1ad5112f3e94dce0690331b36e14c84b57>`(
+			const :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>&,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`,
+			AttributeBase::AttributeKey
+			) const;
 	};
 
 Inherited Members
@@ -88,6 +94,12 @@ Inherited Members
 	
 		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`extract<doxid-classgeode_1_1_attribute_base_1a7496e8dd4e5e93b1cc0bd7951701add7>`(
 			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements,
+			AttributeKey
+			) const = 0;
+	
+		virtual std::shared_ptr<:ref:`AttributeBase<doxid-classgeode_1_1_attribute_base>`> :ref:`extract<doxid-classgeode_1_1_attribute_base_1a9dc09762b6eec9dfa0fed034fedf8153>`(
+			const :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>& old2new_mapping,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_elements,
 			AttributeKey
 			) const = 0;

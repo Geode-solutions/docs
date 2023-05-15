@@ -82,6 +82,12 @@
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span>
         <span class="n">AttributeBase</span><span class="o">::</span><span class="n">AttributeKey</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base"><span class="std std-ref">AttributeBase</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-constant-attribute-1ad5112f3e94dce0690331b36e14c84b57"><span></span><span class="n">extract</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_GenericMapping.html#doxid-classgeode-1-1-generic-mapping"><span class="std std-ref">GenericMapping</span></a><span></span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;&amp;</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span>
+        <span class="n">AttributeBase</span><span class="o">::</span><span class="n">AttributeKey</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 <section id="inherited-members">
 <h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h2>
@@ -108,6 +114,12 @@
 
     <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base"><span class="std std-ref">AttributeBase</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base-1a7496e8dd4e5e93b1cc0bd7951701add7"><span class="std std-ref">extract</span></a><span></span><span class="p">(</span>
         <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">old2new</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_elements</span><span class="p">,</span>
+        <span class="n">AttributeKey</span>
+        <span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">virtual</span> <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base"><span class="std std-ref">AttributeBase</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_AttributeBase.html#doxid-classgeode-1-1-attribute-base-1a9dc09762b6eec9dfa0fed034fedf8153"><span class="std std-ref">extract</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_GenericMapping.html#doxid-classgeode-1-1-generic-mapping"><span class="std std-ref">GenericMapping</span></a><span></span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;&amp;</span> <span class="n">old2new_mapping</span><span class="p">,</span>
         <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_elements</span><span class="p">,</span>
         <span class="n">AttributeKey</span>
         <span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
