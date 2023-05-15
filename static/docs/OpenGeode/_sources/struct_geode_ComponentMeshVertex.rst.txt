@@ -28,6 +28,7 @@ Identify a vertex in a geometric component
 
 		// methods
 	
+		:ref:`MeshVertex<doxid-structgeode_1_1_mesh_vertex>` :target:`mesh_vertex<doxid-structgeode_1_1_component_mesh_vertex_1a0e4329ace86cce7edb375eb0c9151169>`() const;
 		bool :target:`operator ==<doxid-structgeode_1_1_component_mesh_vertex_1ab7a5e9edb836ca3a5e74f5ef9c8c174e>` (const ComponentMeshVertex& other) const;
 	
 		template <typename Archive>

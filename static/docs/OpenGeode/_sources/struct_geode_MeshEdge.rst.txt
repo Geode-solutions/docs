@@ -41,4 +41,6 @@ Inherited Members
 	
 		template <typename Archive>
 		void :ref:`serialize<doxid-structgeode_1_1_mesh_element_1a593f6d235aa60498a2292ce788542e72>`(Archive& archive);
+	
+		std::string :ref:`string<doxid-structgeode_1_1_mesh_element_1ae84c674fab4fd9b7147b0d90c4df99a4>`() const;
 

@@ -28,6 +28,7 @@ Identify an element in a model component
 
 		// methods
 	
+		:ref:`MeshElement<doxid-structgeode_1_1_mesh_element>` :target:`mesh_element<doxid-structgeode_1_1_component_mesh_element_1a0afea4b425becba90a62cf3b40c12b35>`() const;
 		bool :target:`operator ==<doxid-structgeode_1_1_component_mesh_element_1a236b63c17f36ee9cc90366944e936f3d>` (const ComponentMeshElement& other) const;
 	
 		template <typename Archive>
