@@ -1,8 +1,8 @@
-.. index:: pair: class; geode::GenericMeshAccessor<TetrahedralSolid<dimension>>
-.. _doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4:
+.. index:: pair: class; geode::GenericMeshAccessor<TriangulatedSurface<dimension>>
+.. _doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4:
 
-template class geode::GenericMeshAccessor<TetrahedralSolid<dimension>>
-======================================================================
+template class geode::GenericMeshAccessor<TriangulatedSurface<dimension>>
+=========================================================================
 
 .. toctree::
 	:hidden:
@@ -13,28 +13,28 @@ template class geode::GenericMeshAccessor<TetrahedralSolid<dimension>>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <generic_solid_accessor.h>
+	#include <generic_surface_accessor.h>
 	
 	template <index_t dimension>
-	class GenericMeshAccessor<TetrahedralSolid<dimension>>: public :ref:`geode::GenericMeshAccessor<SolidMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4>`
+	class GenericMeshAccessor<TriangulatedSurface<dimension>>: public :ref:`geode::GenericMeshAccessor<SurfaceMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4>`
 	{
 	public:
 		// typedefs
 	
-		typedef :ref:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor>`<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> :target:`Base<doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4_1a68bf76ee3950a1749c61053709909366>`;
-		typedef :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>` :target:`Element<doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4_1ac89d0835dbd753713ec9ee2d7e2afba5>`;
-		typedef typename :ref:`Base::ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a675d615bfea727606b3adc5a91cafd62>` :target:`ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4_1a8da117a06940149e3b9d26b99b043477>`;
-		typedef typename :ref:`Base::ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a77943ca8b03f469f847353bd78a078ed>` :target:`ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4_1a0b35d57f4380c521461f9d1a442241ab>`;
-		typedef typename :ref:`Base::ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a0cf2753d36830ffef55f9d4b4bd51af8>` :target:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4_1ad3930cdb88951332c43d1577cc0aeb82>`;
-		typedef typename :ref:`Base::ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1aa2ea60b0a892bfcf8026de4f86fcdb2b>` :target:`ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4_1ae7834df22149fa950a87d2e39305b02f>`;
+		typedef :ref:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor>`<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :target:`Base<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1ab744850b5d61e86b3d80207646db778d>`;
+		typedef :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension> :target:`Element<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a627290c73aac1f09129c38972c9ae5d2>`;
+		typedef typename :ref:`Base::ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1ac08168f52bdfb28039393ba40e00e227>` :target:`ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1aa9e05dc98c1d46cd97d53e52deb9d391>`;
+		typedef typename :ref:`Base::ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a198548ab922dc529a7ece3708db81d17>` :target:`ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a0372d34465e50179cda6aefb377abf81>`;
+		typedef typename :ref:`Base::ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>` :target:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1ad3f91ee2d1ab4ccf4b1681aa6cd57fbf>`;
+		typedef typename :ref:`Base::ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1aed43baa58c492d960a7c69bc0c476141>` :target:`ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a29eaf3fb40e18d3b382757118eb92deb>`;
 
 		// construction
 	
-		:target:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4_1ace893bbc7faa1f3089160205fda97e03>`(const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& mesh);
+		:target:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a87ffe1f6b23192cd3211c8dc670779b3>`(const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& mesh);
 
 		// methods
 	
-		:ref:`Element<doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4_1ac89d0835dbd753713ec9ee2d7e2afba5>` :target:`element<doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4_1aa32d2dcf7b37d63c7cb007d2ec45d9c9>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const;
+		:ref:`Element<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a627290c73aac1f09129c38972c9ae5d2>` :target:`element<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1afd8c57db0dcf093d482f3ec16de9463e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` triangle_id) const;
 	};
 
 Inherited Members
@@ -46,19 +46,20 @@ Inherited Members
 	public:
 		// typedefs
 	
-		typedef :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>` :ref:`ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a675d615bfea727606b3adc5a91cafd62>`;
-		typedef :ref:`PolyhedronVertices<doxid-namespacegeode_1a6af0e9097515c9070ccb0168e4f77dec>` :ref:`ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a77943ca8b03f469f847353bd78a078ed>`;
-		typedef :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>` :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a0cf2753d36830ffef55f9d4b4bd51af8>`;
-		typedef :ref:`PolyhedronFacetVertices<doxid-namespacegeode_1a8ff824f11177dd1e2808b7d9e0a44291>` :ref:`ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1aa2ea60b0a892bfcf8026de4f86fcdb2b>`;
+		typedef :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>` :ref:`ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1ac08168f52bdfb28039393ba40e00e227>`;
+		typedef :ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>` :ref:`ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a198548ab922dc529a7ece3708db81d17>`;
+		typedef :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`;
+		typedef std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :ref:`ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1aed43baa58c492d960a7c69bc0c476141>`;
 
 		// methods
 	
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_elements<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1ada3fbe19d6f1802df6425cd87f393606>`() const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_element_vertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1ab4ab2fed9b8ba96dcaeab8319be20e33>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_element_facets<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a27223e0f5a6a3f728a703595c8a5ef1c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`element_vertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1ab04d54a0d36ae8fa9236fd4662548126>`(const :ref:`ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a675d615bfea727606b3adc5a91cafd62>`& polyhedron_vertex) const;
-		:ref:`ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a77943ca8b03f469f847353bd78a078ed>` :ref:`element_vertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1ad9018bd3762a5ad4dc374b0c400fd086>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron_id) const;
-		:ref:`ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1aa2ea60b0a892bfcf8026de4f86fcdb2b>` :ref:`element_facet_vertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a54adca07ce1ae9190271c7e05b76e593>`(const :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a0cf2753d36830ffef55f9d4b4bd51af8>`& polyhedron_facet) const;
-		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`element_adjacent<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a4967b916ef80104a13752bd5008f7665>`(const :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a0cf2753d36830ffef55f9d4b4bd51af8>`& polyhedron_facet) const;
-		absl::optional<:ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a0cf2753d36830ffef55f9d4b4bd51af8>`> :ref:`element_adjacent_facet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a8969c49a9429d07848881b496a398a91>`(const :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4_1a0cf2753d36830ffef55f9d4b4bd51af8>`& polyhedron_facet) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_elements<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a63441ae67d8717b689a4195f7870a650>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_element_vertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1ac518617d31e4cde559b6208fb3f750c5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_element_facets<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a338611a0d719450ef8b8fd0c2c6671ac>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`element_vertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a43598389df34f1a0aa5a9e36e3d3c6be>`(const :ref:`ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1ac08168f52bdfb28039393ba40e00e227>`& polygon_vertex) const;
+		:ref:`ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a198548ab922dc529a7ece3708db81d17>` :ref:`element_vertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a9ff4af6c7af41890fc6d556983733bed>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		:ref:`ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1aed43baa58c492d960a7c69bc0c476141>` :ref:`element_facet_vertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1abaeddd7c69d596a384742849a7a96a27>`(const :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`& polygon_edge) const;
+		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`element_adjacent<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a15d1fb3b26c7d0b85396682ccf678d11>`(const :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`& polygon_edge) const;
+		absl::optional<:ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`> :ref:`element_adjacent_facet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a9e57aeda94d16df4f7cb75999980d6b4>`(const :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`& polygon_edge) const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`element_attribute_manager<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a6158472acb677260b654aa27e06a56c5>`() const;
 
