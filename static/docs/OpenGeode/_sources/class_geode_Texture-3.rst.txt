@@ -1,7 +1,7 @@
-.. index:: pair: class; geode::Texture<1>
-.. _doxid-classgeode_1_1_texture_3_011_01_4:
+.. index:: pair: class; geode::Texture<3>
+.. _doxid-classgeode_1_1_texture_3_013_01_4:
 
-template class geode::Texture<1>
+template class geode::Texture<3>
 ================================
 
 .. toctree::
@@ -13,25 +13,25 @@ template class geode::Texture<1>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <texture1d.h>
+	#include <texture3d.h>
 	
 	template <>
-	class Texture<1>
+	class Texture<3>
 	{
 	public:
 		// construction
 	
-		:target:`Texture<doxid-classgeode_1_1_texture_3_011_01_4_1a5ace9092b217d3c5b203d9f9ae1e5360>`(:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& manager, absl::string_view name);
-		:target:`Texture<doxid-classgeode_1_1_texture_3_011_01_4_1a323a5a06514fe4e6489b349b16fa1b1d>`(Texture&&);
+		:target:`Texture<doxid-classgeode_1_1_texture_3_013_01_4_1aa81e21f728e4f38edc1de930a7c10a25>`(:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& manager, absl::string_view name);
+		:target:`Texture<doxid-classgeode_1_1_texture_3_013_01_4_1a0dffc6bf04aa0fb22d570b4a42bd1128>`(Texture&&);
 
 		// methods
 	
-		const RasterImage1D& :target:`image<doxid-classgeode_1_1_texture_3_011_01_4_1a7db663dff4aa3173e4fb558b5907c167>`() const;
-		void :target:`set_image<doxid-classgeode_1_1_texture_3_011_01_4_1a744419646dd3aec2620876ce5b680ebe>`(RasterImage1D&& image);
-		const Point1D& :target:`texture_coordinates<doxid-classgeode_1_1_texture_3_011_01_4_1acc9ed002c8d11cb090c9fc52ff9341e9>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& vertex) const;
+		const RasterImage3D& :target:`image<doxid-classgeode_1_1_texture_3_013_01_4_1a720dd3c01cd0e071936e2c9604da0623>`() const;
+		void :target:`set_image<doxid-classgeode_1_1_texture_3_013_01_4_1ad58e74342b41b1d3c208978cbb03795f>`(RasterImage3D&& image);
+		const Point3D& :target:`texture_coordinates<doxid-classgeode_1_1_texture_3_013_01_4_1ab0ed6a756262f178ff862e5009e99984>`(const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& vertex) const;
 	
-		void :target:`set_texture_coordinates<doxid-classgeode_1_1_texture_3_011_01_4_1a4dec909503870197e85cc8eac853cad3>`(
-			const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& vertex,
-			const Point1D& coordinates
+		void :target:`set_texture_coordinates<doxid-classgeode_1_1_texture_3_013_01_4_1a020012d2c03bd68bfc48a9fa9f3e1855>`(
+			const :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`& vertex,
+			const Point3D& coordinates
 			) const;
 	};

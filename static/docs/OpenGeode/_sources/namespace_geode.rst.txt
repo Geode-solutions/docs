@@ -110,6 +110,13 @@ namespace geode
 	class_geode_GenericCircle.rst
 	class_geode_GenericLine.rst
 	class_geode_GenericMapping.rst
+	class_geode_GenericMeshAccessor.rst
+	class_geode_GenericMeshAccessor-2.rst
+	class_geode_GenericMeshAccessor-3.rst
+	class_geode_GenericMeshAccessor-4.rst
+	class_geode_GenericMeshAccessor-5.rst
+	class_geode_GenericMeshAccessor-6.rst
+	class_geode_GenericMeshAccessor-7.rst
 	class_geode_GenericPlane.rst
 	class_geode_GenericSegment.rst
 	class_geode_GenericSphere.rst
@@ -600,6 +607,27 @@ Overview
 	template <typename T1, typename T2 = T1>
 	class :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`;
 
+	template <index_t dimension>
+	class :ref:`GenericMeshAccessor<TriangulatedSurface<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
+
+	template <index_t dimension>
+	class :ref:`GenericMeshAccessor<TetrahedralSolid<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4>`;
+
+	template <index_t dimension>
+	class :ref:`GenericMeshAccessor<SurfaceMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4>`;
+
+	template <index_t dimension>
+	class :ref:`GenericMeshAccessor<SolidMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4>`;
+
+	template <index_t dimension>
+	class :ref:`GenericMeshAccessor<PolyhedralSolid<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_polyhedral_solid_3_01dimension_01_4_01_4>`;
+
+	template <index_t dimension>
+	class :ref:`GenericMeshAccessor<PolygonalSurface<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_polygonal_surface_3_01dimension_01_4_01_4>`;
+
+	template <typename T>
+	class :ref:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor>`;
+
 	template <typename PointType>
 	class :ref:`GenericPlane<doxid-classgeode_1_1_generic_plane>`;
 
@@ -751,10 +779,10 @@ Overview
 	class :ref:`OpenGeodeRegularGrid<3><doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGridBuilder<2><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4>`;
+	class :ref:`OpenGeodeRegularGridBuilder<3><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_013_01_4>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGridBuilder<3><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_013_01_4>`;
+	class :ref:`OpenGeodeRegularGridBuilder<2><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4>`;
 
 	class :ref:`OpenGeodeSectionInput<doxid-classgeode_1_1_open_geode_section_input>`;
 	class :ref:`OpenGeodeSectionOutput<doxid-classgeode_1_1_open_geode_section_output>`;
@@ -980,13 +1008,13 @@ Overview
 	class :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`;
 
 	template <>
+	class :ref:`Texture<1><doxid-classgeode_1_1_texture_3_011_01_4>`;
+
+	template <>
 	class :ref:`Texture<2><doxid-classgeode_1_1_texture_3_012_01_4>`;
 
 	template <>
 	class :ref:`Texture<3><doxid-classgeode_1_1_texture_3_013_01_4>`;
-
-	template <>
-	class :ref:`Texture<1><doxid-classgeode_1_1_texture_3_011_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`TextureManager<doxid-classgeode_1_1_texture_manager>`;
@@ -1113,9 +1141,14 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3fbc1fb49f0ca7c4ea4744e735440007>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 
-	std::array<double, 4> opengeode_geometry_api :ref:`tetrahedron_barycentric_coordinates<doxid-namespacegeode_1aaf9ea7d9541c84295cd5035b215d03d0>`(
+	std::array<double, 4> opengeode_geometry_api :ref:`tetrahedron_barycentric_coordinates<doxid-namespacegeode_1a73bfac60c5dee3cc04337761e13cb0d3>`(
 		const Point3D& point,
-		const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetra
+		const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetrahedron
+		);
+
+	std::array<double, 4> opengeode_geometry_api :ref:`safe_tetrahedron_barycentric_coordinates<doxid-namespacegeode_1af4af83678867c9ef41f0cb027e935eff>`(
+		const Point3D& point,
+		const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetrahedron
 		);
 
 	template <index_t dimension>
@@ -1125,7 +1158,19 @@ Overview
 		);
 
 	template <index_t dimension>
+	std::array<double, 3> :ref:`safe_triangle_barycentric_coordinates<doxid-namespacegeode_1a0b59757901d3faf82c9eab3436426d1d>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
+		);
+
+	template <index_t dimension>
 	std::array<double, 2> :ref:`segment_barycentric_coordinates<doxid-namespacegeode_1a31a7b32940d4db933c477fecec72d7c3>`(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
+		);
+
+	template <index_t dimension>
+	std::array<double, 2> :ref:`safe_segment_barycentric_coordinates<doxid-namespacegeode_1adf8506e32f79eebf78a676c3dd106b53>`(
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
 		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
 		);
@@ -2413,17 +2458,17 @@ Register all the information needed by Bitsery to deserialize the objects in the
 		- The context where to register this information.
 
 .. index:: pair: function; tetrahedron_barycentric_coordinates
-.. _doxid-namespacegeode_1aaf9ea7d9541c84295cd5035b215d03d0:
+.. _doxid-namespacegeode_1a73bfac60c5dee3cc04337761e13cb0d3:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	std::array<double, 4> opengeode_geometry_api tetrahedron_barycentric_coordinates(
 		const Point3D& point,
-		const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetra
+		const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetrahedron
 		)
 
-Compute the barycentric coordinates of a point with regards to a tetra.
+Compute the barycentric coordinates of a point with regards to a tetrahedron.
 
 
 
@@ -2433,20 +2478,34 @@ Compute the barycentric coordinates of a point with regards to a tetra.
 	:widths: 20 80
 
 	*
-		- point
+		- throws
 
-		- the query point.
-
-	*
-		- tetra
-
-		- the tetra.
+		- if the tetrahedron is degenerated
 
 
 
 .. rubric:: Returns:
 
-an array containing the parametric coordinates corresponding to the tetra vertices.
+an array containing the parametric coordinates corresponding to the tetrahedron vertices.
+
+.. index:: pair: function; safe_tetrahedron_barycentric_coordinates
+.. _doxid-namespacegeode_1af4af83678867c9ef41f0cb027e935eff:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::array<double, 4> opengeode_geometry_api safe_tetrahedron_barycentric_coordinates(
+		const Point3D& point,
+		const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetrahedron
+		)
+
+Compute the barycentric coordinates of a point with regards to a tetrahedron. If tetrahedron is degenerated, computation fallbacks onto its largest facet.
+
+
+
+.. rubric:: Returns:
+
+an array containing the parametric coordinates corresponding to the tetrahedron vertices.
 
 .. index:: pair: function; triangle_barycentric_coordinates
 .. _doxid-namespacegeode_1ac777b102ddf86dd83a97f0df569aa315:
@@ -2470,14 +2529,29 @@ Compute barycentric coordinates of a point with regards to a triangle.
 	:widths: 20 80
 
 	*
-		- point
+		- throws
 
-		- the query point.
+		- if the triangle is degenerated
 
-	*
-		- triangle
 
-		- the triangle.
+
+.. rubric:: Returns:
+
+an array containing the parametric coordinates corresponding to the triangle vertices.
+
+.. index:: pair: function; safe_triangle_barycentric_coordinates
+.. _doxid-namespacegeode_1a0b59757901d3faf82c9eab3436426d1d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::array<double, 3> safe_triangle_barycentric_coordinates(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
+		)
+
+Compute barycentric coordinates of a point with regards to a triangle. If triangle is degenerated, computation fallbacks onto its longest segment.
 
 
 
@@ -2507,14 +2581,29 @@ Compute barycentric coordinates of a point with regards to a segment.
 	:widths: 20 80
 
 	*
-		- point
+		- throws
 
-		- the query point.
+		- if the segment is degenerated
 
-	*
-		- segment
 
-		- the segment.
+
+.. rubric:: Returns:
+
+an array containing the parametric coordinates corresponding to the segment vertices.
+
+.. index:: pair: function; safe_segment_barycentric_coordinates
+.. _doxid-namespacegeode_1adf8506e32f79eebf78a676c3dd106b53:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::array<double, 2> safe_segment_barycentric_coordinates(
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point,
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment
+		)
+
+Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
 
 
 
