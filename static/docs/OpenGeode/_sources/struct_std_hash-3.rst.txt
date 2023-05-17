@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::PolygonEdge>
-.. _doxid-structstd_1_1hash_3_01geode_1_1_polygon_edge_01_4:
+.. index:: pair: struct; std::hash<geode::PolygonVertex>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_polygon_vertex_01_4:
 
-template struct std::hash<geode::PolygonEdge>
-=============================================
+template struct std::hash<geode::PolygonVertex>
+===============================================
 
 .. toctree::
 	:hidden:
@@ -16,9 +16,9 @@ template struct std::hash<geode::PolygonEdge>
 	#include <surface_mesh.h>
 	
 	template <>
-	struct hash<geode::PolygonEdge>
+	struct hash<geode::PolygonVertex>
 	{
 		// methods
 	
-		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_polygon_edge_01_4_1a032f384131a827af3b12a7f810af356b>` (const :ref:`geode::PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_polygon_vertex_01_4_1aca60e12f51bfb3c7c3a541606dd2d0fe>` (const :ref:`geode::PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex) const;
 	};

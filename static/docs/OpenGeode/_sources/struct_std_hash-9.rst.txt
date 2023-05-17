@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::RGBColor>
-.. _doxid-structstd_1_1hash_3_01geode_1_1_r_g_b_color_01_4:
+.. index:: pair: struct; std::hash<geode::PolyhedronFacetEdge>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_polyhedron_facet_edge_01_4:
 
-template struct std::hash<geode::RGBColor>
-==========================================
+template struct std::hash<geode::PolyhedronFacetEdge>
+=====================================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct std::hash<geode::RGBColor>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <rgb_color.h>
+	#include <solid_mesh.h>
 	
 	template <>
-	struct hash<geode::RGBColor>
+	struct hash<geode::PolyhedronFacetEdge>
 	{
 		// methods
 	
-		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_r_g_b_color_01_4_1a5cb0bb7413df956218883c114cab3abf>` (const :ref:`geode::RGBColor<doxid-classgeode_1_1_r_g_b_color>`& color) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_polyhedron_facet_edge_01_4_1ab3502a333f94e61d6ecd138f2d2a331c>` (const :ref:`geode::PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& polyhedron_facet_edge) const;
 	};
