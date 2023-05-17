@@ -204,6 +204,20 @@ Overview
 		typename :ref:`GeographicCoordinateSystem<doxid-classgeode_1_1_geographic_coordinate_system>`<dimension>::Info info
 		);
 
+	void opengeode_geosciences_explicit_api :target:`convert_brep_coordinate_reference_system<doxid-namespacegeode_1a1f2c7633820de45325d84c3b929e8b0e>`(
+		const BRep& brep,
+		BRepBuilder& builder,
+		const GeographicCoordinateSystem3D::Info& info,
+		absl::string_view crs_name
+		);
+
+	void opengeode_geosciences_explicit_api :target:`convert_section_coordinate_reference_system<doxid-namespacegeode_1a9ee31bf11a5bcbf65351f82d62183466>`(
+		const Section& section,
+		SectionBuilder& builder,
+		const GeographicCoordinateSystem2D::Info& info,
+		absl::string_view crs_name
+		);
+
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa1b34122cda2b0187ae32fc8009ca448>`(:ref:`FaultBlock<doxid-classgeode_1_1_fault_block>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a5684061c0d55912a4bcf9649dbb224db>`(:ref:`FaultBlocks<doxid-classgeode_1_1_fault_blocks>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a280a21f5fe532b72c465f504fb1b0152>`(:ref:`FaultBlocksBuilder<doxid-classgeode_1_1_fault_blocks_builder>`);
