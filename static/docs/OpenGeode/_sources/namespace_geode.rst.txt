@@ -1073,6 +1073,7 @@ Overview
 	// global variables
 
 	static constexpr double :target:`global_epsilon<doxid-namespacegeode_1ad0b6fd0e0919965c35e9ddfa40a1f348>` { 1E-6 };
+	static constexpr double :target:`global_angular_epsilon<doxid-namespacegeode_1a894f12b6f1629b3dff947fac62638d68>` { 1E-3 };
 	static constexpr :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`NO_ID<doxid-namespacegeode_1a454319bfde41726e71f499e4e16322b3>` = :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`(-1);
 	static constexpr :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`NO_LID<doxid-namespacegeode_1a0bb1a49fb70c62b71374aeff91a8fb11>` = :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`(-1);
 	static constexpr auto :target:`uuid_from_conversion_attribute_name<doxid-namespacegeode_1a904052a9ccedabc1fb657c3b811cdb75>` =         "uuid_from_conversion";
