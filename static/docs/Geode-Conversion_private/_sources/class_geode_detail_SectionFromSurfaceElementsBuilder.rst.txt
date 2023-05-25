@@ -7,7 +7,10 @@ class geode::detail::SectionFromSurfaceElementsBuilder
 .. toctree::
 	:hidden:
 
+Overview
+~~~~~~~~
 
+Class to convert a SurfaceMesh2D into a Section. :ref:`More...<details-classgeode_1_1detail_1_1_section_from_surface_elements_builder>`
 
 
 .. ref-code-block:: cpp
@@ -20,17 +23,16 @@ class geode::detail::SectionFromSurfaceElementsBuilder
 	public:
 		// construction
 	
-		:target:`SectionFromSurfaceElementsBuilder<doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder_1a01646160e8aa5ce55abdcd930bc114f4>`(
+		:target:`SectionFromSurfaceElementsBuilder<doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder_1a47043374d41decd9fa93db9e29fefcd5>`(
 			Section& model,
-			const SurfaceMesh2D& surface,
+			SurfaceMesh2D& surface,
 			absl::Span<const index_t> corner_vertices,
-			absl::Span<const index_t> line_edges,
-			absl::Span<const index_t> surface_polygons
+			absl::Span<const index_t> line_edges
 			);
 
 		// methods
 	
-		std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`> :target:`build_section<doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder_1aae069536638245d6897137c23f85f3b5>`();
+		std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`> :ref:`build_section_with_surface_mesh<doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder_1a68e48169df6056593fdc007d4409a73c>`();
 	};
 
 Inherited Members
@@ -62,4 +64,24 @@ Inherited Members
 		virtual void :ref:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a2b5bfdacb183ce2b970d90094a47e195>`();
 		virtual bool :ref:`is_corner<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a7594332e4df1f128e5457d499a40f8bc>`(index_t vertex) const;
 		:ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>` :ref:`mappings<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a31f6f07f10d4c00f28aa133046bd2722>`();
+
+.. _details-classgeode_1_1detail_1_1_section_from_surface_elements_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Class to convert a SurfaceMesh2D into a Section.
+
+Methods
+-------
+
+.. index:: pair: function; build_section_with_surface_mesh
+.. _doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder_1a68e48169df6056593fdc007d4409a73c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`> build_section_with_surface_mesh()
+
+Builds a Section with meshed Surfaces. This build uses both the surface adjacencies and the given elements to determine the topological components of the resulting Section.
 

@@ -23,15 +23,6 @@ template class geode::detail::WireframeBuilderFromOneMesh
 	
 		static constexpr auto :target:`dimension<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a818a740d01db3e8ae3152ccb9e33e509>` = Model::dim;
 
-		// construction
-	
-		:target:`WireframeBuilderFromOneMesh<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a42a56d209e82e17dff6ac648a589690f>`(
-			Model& model,
-			const Mesh& one_mesh,
-			absl::Span<const index_t> corner_vertices,
-			absl::Span<const index_t> line_edges
-			);
-
 		// methods
 	
 		virtual void :target:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a2b5bfdacb183ce2b970d90094a47e195>`();

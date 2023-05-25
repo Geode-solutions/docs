@@ -8,14 +8,12 @@ namespace geode::detail
 	:hidden:
 
 	class_geode_detail_BRepFromMeshesBuilder.rst
-	class_geode_detail_BRepFromSolidAdjacenciesBuilder.rst
 	class_geode_detail_BRepFromSolidElementsBuilder.rst
 	class_geode_detail_CornersLinesBuilder.rst
 	class_geode_detail_ModelBuilderFromMeshes.rst
 	class_geode_detail_SectionFromMeshesBuilder.rst
 	class_geode_detail_SectionFromSurfaceElementsBuilder.rst
 	class_geode_detail_SolidIdentifier.rst
-	class_geode_detail_SurfaceFromSolidAdjacencies.rst
 	class_geode_detail_SurfaceIdentifier.rst
 	class_geode_detail_WireframeBuilderFromOneMesh.rst
 
@@ -31,7 +29,6 @@ namespace geode::detail
 	// classes
 
 	class :ref:`BRepFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder>`;
-	class :ref:`BRepFromSolidAdjacenciesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_adjacencies_builder>`;
 	class :ref:`BRepFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder>`;
 
 	template <typename Model>
@@ -43,7 +40,6 @@ namespace geode::detail
 	class :ref:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder>`;
 	class :ref:`SectionFromSurfaceElementsBuilder<doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder>`;
 	class :ref:`SolidIdentifier<doxid-classgeode_1_1detail_1_1_solid_identifier>`;
-	class :ref:`SurfaceFromSolidAdjacencies<doxid-classgeode_1_1detail_1_1_surface_from_solid_adjacencies>`;
 
 	template <index_t dimension>
 	class :ref:`SurfaceIdentifier<doxid-classgeode_1_1detail_1_1_surface_identifier>`;

@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::BRepTopologyRebuilder
+.. _doxid-classgeode_1_1_b_rep_topology_rebuilder:
+
+class geode::BRepTopologyRebuilder
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_topology_rebuilder.h>
+	
+	class BRepTopologyRebuilder
+	{
+	public:
+		// construction
+	
+		:target:`BRepTopologyRebuilder<doxid-classgeode_1_1_b_rep_topology_rebuilder_1a665f4285f933b39804fef2f714eb58bb>`(const BRep& brep);
+
+		// methods
+	
+		void :target:`add_block_facets_to_topology<doxid-classgeode_1_1_b_rep_topology_rebuilder_1a47727509237d04fc97322a0e43698bd6>`(
+			const Block3D& block,
+			std::vector<PolyhedronFacet> facet_ids
+			);
+	
+		std::tuple<BRep, BRepMeshesVertexMapping, BRepMeshesElementMapping> :target:`rebuild<doxid-classgeode_1_1_b_rep_topology_rebuilder_1ac4322485278f6f837951f9328e496544>`() const;
+	};

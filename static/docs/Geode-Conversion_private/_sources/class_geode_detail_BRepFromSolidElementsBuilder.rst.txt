@@ -7,7 +7,10 @@ class geode::detail::BRepFromSolidElementsBuilder
 .. toctree::
 	:hidden:
 
+Overview
+~~~~~~~~
 
+Class that converts a SolidMesh3D into a BRep. :ref:`More...<details-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder>`
 
 
 .. ref-code-block:: cpp
@@ -20,9 +23,9 @@ class geode::detail::BRepFromSolidElementsBuilder
 	public:
 		// construction
 	
-		:target:`BRepFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1ac7e67b2076856809e44a8c36b7b135ca>`(
+		:target:`BRepFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a153124296ebeba3878088cdcde50a4b1>`(
 			BRep& model,
-			const SolidMesh3D& solid,
+			SolidMesh3D& solid,
 			absl::Span<const index_t> corner_vertices,
 			absl::Span<const index_t> line_edges,
 			absl::Span<const index_t> surface_facets
@@ -30,8 +33,8 @@ class geode::detail::BRepFromSolidElementsBuilder
 
 		// methods
 	
-		std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`> :target:`build_brep_without_block_mesh<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a3f909bd1db1c15f6ae53fc85291eb2cb>`();
-		std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToBRepMeshElementsMapping<doxid-structgeode_1_1_index_to_b_rep_mesh_elements_mapping>`> :target:`build_brep_with_block_mesh<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a44e6848d8de8c388bdd0bcbab541ce02>`();
+		std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`> :ref:`build_brep_without_block_mesh<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a3f909bd1db1c15f6ae53fc85291eb2cb>`();
+		std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToBRepMeshElementsMapping<doxid-structgeode_1_1_index_to_b_rep_mesh_elements_mapping>`> :ref:`build_brep_with_block_mesh<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a44e6848d8de8c388bdd0bcbab541ce02>`();
 		virtual bool :target:`is_corner<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a6319b1f06d019a7c41e48656d396cb6b>`(index_t vertex) const;
 	};
 
@@ -64,4 +67,34 @@ Inherited Members
 		virtual void :ref:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a2b5bfdacb183ce2b970d90094a47e195>`();
 		virtual bool :ref:`is_corner<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a7594332e4df1f128e5457d499a40f8bc>`(index_t vertex) const;
 		:ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>` :ref:`mappings<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh_1a31f6f07f10d4c00f28aa133046bd2722>`();
+
+.. _details-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Class that converts a SolidMesh3D into a BRep.
+
+Methods
+-------
+
+.. index:: pair: function; build_brep_without_block_mesh
+.. _doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a3f909bd1db1c15f6ae53fc85291eb2cb:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`> build_brep_without_block_mesh()
+
+Builds a BRep with no mesh in the Blocks. This build uses only the given elements to determine the topological components of the resulting BRep.
+
+.. index:: pair: function; build_brep_with_block_mesh
+.. _doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder_1a44e6848d8de8c388bdd0bcbab541ce02:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::pair<:ref:`VertexIndexMapping<doxid-namespacegeode_1af48507cffa74147271166d3c2e206f90>`, :ref:`IndexToBRepMeshElementsMapping<doxid-structgeode_1_1_index_to_b_rep_mesh_elements_mapping>`> build_brep_with_block_mesh()
+
+Builds a BRep with meshed Blocks. This build uses both the solid adjacencies and the given elements to determine the topological components of the resulting BRep.
 
