@@ -16,7 +16,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct geode::ExplicitModelerMappings" href="struct_geode_ExplicitModelerMappings.html" />
+    <link rel="next" title="struct geode::BRepExplicitModelerMappings" href="struct_geode_BRepExplicitModelerMappings.html" />
     <link rel="prev" title="Global Namespace" href="global.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -46,12 +46,14 @@
 
 <span class="c1">// structs</span>
 
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepExplicitModelerMappings.html#doxid-structgeode-1-1-b-rep-explicit-modeler-mappings"><span class="std std-ref">BRepExplicitModelerMappings</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_ExplicitModelerMappings.html#doxid-structgeode-1-1-explicit-modeler-mappings"><span class="std std-ref">ExplicitModelerMappings</span></a><span></span><span class="p">;</span>
 
 <span class="c1">// classes</span>
 
-<span class="k">class</span> <a class="reference internal" href="class_geode_ExplicitModelerBRep.html#doxid-classgeode-1-1-explicit-modeler-b-rep"><span class="std std-ref">ExplicitModelerBRep</span></a><span></span><span class="p">;</span>
-<span class="k">class</span> <a class="reference internal" href="class_geode_ExplicitModelerSection.html#doxid-classgeode-1-1-explicit-modeler-section"><span class="std std-ref">ExplicitModelerSection</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRepExplicitModeler.html#doxid-classgeode-1-1-b-rep-explicit-modeler"><span class="std std-ref">BRepExplicitModeler</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRepVolumicInserter.html#doxid-classgeode-1-1-b-rep-volumic-inserter"><span class="std std-ref">BRepVolumicInserter</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SectionExplicitModeler.html#doxid-classgeode-1-1-section-explicit-modeler"><span class="std std-ref">SectionExplicitModeler</span></a><span></span><span class="p">;</span>
 
 <span class="c1">// global variables</span>
 
@@ -59,13 +61,6 @@
 
 <span class="c1">// global functions</span>
 
-<span class="kt">void</span> <span class="n">geode_explicit_brep_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad948c42e32eca2a4f6b9a3c035ed07b2"><span></span><span class="n">simplify_brep_from_macro_information</span></span><span></span><span class="p">(</span>
-    <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
-    <span class="n">ModelMeshesElementMapping</span><span class="o">&amp;</span> <span class="n">mesh_element_mappings</span><span class="p">,</span>
-    <span class="n">ModelMeshesVertexMapping</span><span class="o">&amp;</span> <span class="n">mesh_vertices_mappings</span>
-    <span class="p">);</span>
-
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7a70f4c6c40887b65560b572b844bbd7"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_explicit_brep_api</span><span class="p">,</span> <span class="n">ExplicitBRep</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a48dc7dc04a72af2e68092c3d4b4696ab"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">BoundingBox</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
@@ -82,7 +77,27 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4efa1c27af37ca80b792b5290f406968"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f0825f02564723bd52f856a1ae100c9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0418407296b015103c7578c9c9c9a737"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Block</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_explicit_brep_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad948c42e32eca2a4f6b9a3c035ed07b2"><span></span><span class="n">simplify_brep_from_macro_information</span></span><span></span><span class="p">(</span>
+    <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="n">ModelMeshesElementMapping</span><span class="o">&amp;</span> <span class="n">mesh_element_mappings</span><span class="p">,</span>
+    <span class="n">ModelMeshesVertexMapping</span><span class="o">&amp;</span> <span class="n">mesh_vertices_mappings</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7a70f4c6c40887b65560b572b844bbd7"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_explicit_brep_api</span><span class="p">,</span> <span class="n">ExplicitBRep</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9e37aa9dbd7189e5ddaede049f39d1fa"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_explicit_common_api</span><span class="p">,</span> <span class="n">ExplicitCommon</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
+<span class="n">ModelGenericMapping</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1adefa7af03a3fd14173ba1d1af6083842"><span></span><span class="n">build_model_component_mapping</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">out_model</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">ModelMeshesElementMapping</span><span class="o">&amp;</span> <span class="n">mesh_element_mappings</span>
+    <span class="p">);</span>
+
+<span class="n">ModelGenericMapping</span> <span class="n">geode_explicit_common_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9bb8045f169d0df3b468b5e4a40b074e"><span></span><span class="n">build_brep_component_mapping</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">out_brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">BRepMeshesElementMapping</span><span class="o">&amp;</span> <span class="n">mesh_element_mappings</span>
+    <span class="p">);</span>
+
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8a801604c074bfdea31dc5852d60e711"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_explicit_section_api</span><span class="p">,</span> <span class="n">ExplicitSection</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a138f53359f6b0ed97828265b627ab688"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">BoundingBox</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aae4bea6f137a47558d5d46c1f90525b8"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
