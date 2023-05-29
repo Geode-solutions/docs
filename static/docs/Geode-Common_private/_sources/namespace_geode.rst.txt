@@ -217,53 +217,49 @@ Overview
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ad1dda6606b61207b70696cadfc1e8c98>`(geode_common_core_api, CommonCore);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a7e20432e19e00a3bd1850eee20d236c3>`(geode_common_cutter_solid_api, CommonCutterSolid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ae9dc6097b7f8cfa25fc265176e3c5aa9>`(TetrahedralSolidBuilder);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3fbc1fb49f0ca7c4ea4744e735440007>`(Triangle);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(TetrahedralSolid);
-	:target:`ALIAS_3D<doxid-namespacegeode_1af14e4907bb3d08e5cc6822c283db8b65>`(TetrahedralSolidBuilder);
-	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1aaf755b9136ab518d12e2fa75dd8bdd12>`(Triangle);
 
-	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api :ref:`cut_along_patch<doxid-namespacegeode_1a6ede9860c6f3ee584c3027d348c51acf>`(
+	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api :ref:`cut_along_patch<doxid-namespacegeode_1a46b49bd2622515911e800365ae5dec27>`(
 		const TetrahedralSolid3D& solid,
-		TetrahedralSolidBuilder3D& builder,
+		:ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`& modifier,
 		absl::Span<const PatchFrontEdge> boundary_edges,
 		const Triangle3D& triangle
 		);
 
-	:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` geode_common_cutter_solid_api :ref:`cut_along_path<doxid-namespacegeode_1a0ead8515ad1babd6030021fc91093a81>`(
+	:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` geode_common_cutter_solid_api :ref:`cut_along_path<doxid-namespacegeode_1acea856865b9a01ea04c1f879b996e70a>`(
 		const TetrahedralSolid3D& solid,
-		TetrahedralSolidBuilder3D& builder,
+		:ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`& modifier,
 		index_t begin,
 		index_t end,
 		absl::Span<const :ref:`SolidPath<doxid-structgeode_1_1_solid_path>`> path_splits
 		);
 
-	:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` geode_common_cutter_solid_api :target:`cut_along_path<doxid-namespacegeode_1a8d1965d343d128794d9cd2aac35db44a>`(
+	:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` geode_common_cutter_solid_api :target:`cut_along_path<doxid-namespacegeode_1aedbecdec51423415b76d81966d6edacf>`(
 		const TetrahedralSolid3D& solid,
-		TetrahedralSolidBuilder3D& builder,
+		:ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`& modifier,
 		index_t begin,
 		index_t end
 		);
 
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a5e137475587bb980db47ebc1c85430b1>`(geode_common_cutter_surface_api, CommonCutterSurface);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ac5ecef06abef60896357a8eb77586520>`(TriangulatedSurface);
-	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a5f77df444726f93a1df8e868ba125aa3>`(TriangulatedSurfaceBuilder);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad2a6b2e5e7f3cabdaf703bb6c52c9eed>`(:ref:`SurfaceCutPathInfo<doxid-structgeode_1_1_surface_cut_path_info>`);
 
 	template <index_t dimension>
-	:ref:`SurfaceCutPathInfo<doxid-structgeode_1_1_surface_cut_path_info>`<dimension> :target:`cut_along_path<doxid-namespacegeode_1a2ca3f1e7cb1ec445559b373d4bdd95da>`(
+	:ref:`SurfaceCutPathInfo<doxid-structgeode_1_1_surface_cut_path_info>`<dimension> :target:`cut_along_path<doxid-namespacegeode_1ab5a4f371a4336d06b5c0b3f509de07fb>`(
 		const TriangulatedSurface<dimension>& surface,
-		TriangulatedSurfaceBuilder<dimension>& builder,
+		:ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`<dimension>& modifier,
 		index_t begin,
 		index_t end,
 		absl::Span<const :ref:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path>`<dimension>> path_splits
 		);
 
-	:ref:`SurfaceCutPathInfo<doxid-structgeode_1_1_surface_cut_path_info>`<2> geode_common_cutter_surface_api :target:`cut_along_path<doxid-namespacegeode_1a02040242d3ac3052d6d1d9acfe406304>`(
+	:ref:`SurfaceCutPathInfo<doxid-structgeode_1_1_surface_cut_path_info>`<2> geode_common_cutter_surface_api :target:`cut_along_path<doxid-namespacegeode_1a86891ed8c2695f074dabfe34bf663b43>`(
 		const TriangulatedSurface2D& surface,
-		TriangulatedSurfaceBuilder2D& builder,
+		TriangulatedSurfaceModifier2D& modifier,
 		index_t begin,
 		index_t end
 		);
@@ -286,6 +282,7 @@ Overview
 		);
 
 	:target:`ALIAS_2D<doxid-namespacegeode_1a504bb34b6ea51d563984b00589d5001d>`(TriangulatedSurface);
+	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1aef14991cbf3e087f0360c30d1ea9194b>`(geode_common_modifier_common_api, CommonModifierCommon);
 	absl::FixedArray<:ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t>> geode_common_modifier_common_api :target:`extract_mappings_from_split_info<doxid-namespacegeode_1af2e70f64eee004f3002873a2f84d9220>`(absl::Span<const :ref:`SplitInfo<doxid-structgeode_1_1_split_info>`> split_info);
 
@@ -482,6 +479,8 @@ Overview
 
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ac5452e2e9a1ad6be6347cc95471815a8>`(geode_common_modifier_solid_api, CommonModifierSolid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ae9dc6097b7f8cfa25fc265176e3c5aa9>`(TetrahedralSolidBuilder);
+	:target:`ALIAS_3D<doxid-namespacegeode_1af14e4907bb3d08e5cc6822c283db8b65>`(TetrahedralSolidBuilder);
 
 	bool geode_common_modifier_solid_api :ref:`is_split_tetrahedron_valid<doxid-namespacegeode_1afc0b8a8e317fbc02d3c18de4c2486d41>`(
 		const TetrahedralSolid3D& mesh,
@@ -728,14 +727,14 @@ Global Functions
 ----------------
 
 .. index:: pair: function; cut_along_patch
-.. _doxid-namespacegeode_1a6ede9860c6f3ee584c3027d348c51acf:
+.. _doxid-namespacegeode_1a46b49bd2622515911e800365ae5dec27:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` geode_common_cutter_solid_api cut_along_patch(
 		const TetrahedralSolid3D& solid,
-		TetrahedralSolidBuilder3D& builder,
+		:ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`& modifier,
 		absl::Span<const PatchFrontEdge> boundary_edges,
 		const Triangle3D& triangle
 		)
@@ -770,14 +769,14 @@ Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edge
 		- The triangle corresponding to the patch to insert in solid @warn Cut tetrahedra are set as inactive but not deleted.
 
 .. index:: pair: function; cut_along_path
-.. _doxid-namespacegeode_1a0ead8515ad1babd6030021fc91093a81:
+.. _doxid-namespacegeode_1acea856865b9a01ea04c1f879b996e70a:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` geode_common_cutter_solid_api cut_along_path(
 		const TetrahedralSolid3D& solid,
-		TetrahedralSolidBuilder3D& builder,
+		:ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`& modifier,
 		index_t begin,
 		index_t end,
 		absl::Span<const :ref:`SolidPath<doxid-structgeode_1_1_solid_path>`> path_splits
