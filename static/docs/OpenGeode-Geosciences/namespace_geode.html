@@ -163,14 +163,90 @@
 
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a11c15e428a6b267ab9acd75e8395405e"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">opengeode_geosciences_explicit_api</span><span class="p">,</span> <span class="n">GeosciencesExplicit</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a398d62ea5e60d2fb6466f00ad11562a8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a904e02c945f45dd8ec5315353974fbdd"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">CoordinateReferenceSystemManager</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1abca05657b8eb6a446c79a4e841068fcf"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurveBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a55897b30a3ff5e25684f4268a974caad"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PointSet</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1afe2cb7fe1eafd07074f05210001c506e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PointSetBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8ac5cec34b9c5986e0c83548aeb19f2d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8a7d3b56ede8584b86aacd34f9406b10"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SolidMeshBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa9eca13715aca2567523b81021cda51a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8d32d54426edeaad7cfe32bbf73441b4"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SurfaceMeshBuilder</span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad116d4e1f20aa64ae226a4b67eabd33d"><span></span><span class="n">convert_attribute_to_geographic_coordinate_reference_system</span></span><span></span><span class="p">(</span>
-    <span class="n">CoordinateReferenceSystemManager</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">crs_manager</span><span class="p">,</span>
-    <span class="n">AttributeManager</span><span class="o">&amp;</span> <span class="n">attribute_manager</span><span class="p">,</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_crs_name</span><span class="p">,</span>
-    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">geographic_crs_name</span><span class="p">,</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abac1f5089e23502c160cf0266e0d77e4"><span></span><span class="n">assign_edged_curve_geographic_coordinate_system_info</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">EdgedCurveBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
+    <span class="k">typename</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Info</span> <span class="n">info</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1adcd22de0954c24abf185f3fb8e1f6d74"><span></span><span class="n">assign_point_set_geographic_coordinate_system_info</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">PointSetBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
+    <span class="k">typename</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Info</span> <span class="n">info</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1878f35800feb48e35c0e877c3c93942"><span></span><span class="n">assign_solid_mesh_geographic_coordinate_system_info</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">SolidMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">SolidMeshBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
+    <span class="k">typename</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Info</span> <span class="n">info</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa85bf6dccdcee2abc24aa780c18ad88b"><span></span><span class="n">assign_surface_mesh_geographic_coordinate_system_info</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">SurfaceMeshBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
+    <span class="k">typename</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Info</span> <span class="n">info</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_geosciences_explicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aea055ddaa1d81bc1ce06e80b7816a138"><span></span><span class="n">assign_brep_geographic_coordinate_system_info</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="n">BRepBuilder</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">GeographicCoordinateSystem3D</span><span class="o">::</span><span class="n">Info</span><span class="o">&amp;</span> <span class="n">info</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_geosciences_explicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1871df1129558bc34743136b9d200bbc"><span></span><span class="n">assign_section_geographic_coordinate_system_info</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="n">SectionBuilder</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">GeographicCoordinateSystem2D</span><span class="o">::</span><span class="n">Info</span><span class="o">&amp;</span> <span class="n">info</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acc9917c047c6de85135ac50ab1b4320f"><span></span><span class="n">convert_edged_curve_coordinate_reference_system</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">EdgedCurveBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
+    <span class="k">typename</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Info</span> <span class="n">info</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2291bcf64404460a67ca42676df4f14f"><span></span><span class="n">convert_point_set_coordinate_reference_system</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">PointSet</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">PointSetBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
+    <span class="k">typename</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Info</span> <span class="n">info</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a982410f519b83b767b3a83620694ea0c"><span></span><span class="n">convert_solid_mesh_coordinate_reference_system</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">SolidMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">SolidMeshBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
+    <span class="k">typename</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Info</span> <span class="n">info</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af6916188ac49b0af4753a1afa1c52f87"><span></span><span class="n">convert_surface_mesh_coordinate_reference_system</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">SurfaceMeshBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">crs_name</span><span class="p">,</span>
     <span class="k">typename</span> <a class="reference internal" href="class_geode_GeographicCoordinateSystem.html#doxid-classgeode-1-1-geographic-coordinate-system"><span class="std std-ref">GeographicCoordinateSystem</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><span class="n">Info</span> <span class="n">info</span>
     <span class="p">);</span>
 
@@ -244,7 +320,6 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab9498c535a0152c93f4aad66e9e8a67c"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af40a127c86216f0ba2c8d1276fe61644"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
-<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aae4bea6f137a47558d5d46c1f90525b8"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a57881c042a92cf4aac33a896fce54523"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicUnitsStackBuilder.html#doxid-classgeode-1-1-stratigraphic-units-stack-builder"><span class="std std-ref">StratigraphicUnitsStackBuilder</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac1280113e4d0610339b3891240c11cc8"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicUnitsStack.html#doxid-classgeode-1-1-stratigraphic-units-stack"><span class="std std-ref">StratigraphicUnitsStack</span></a><span></span><span class="p">);</span>
