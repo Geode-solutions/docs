@@ -93,6 +93,7 @@ namespace geode
 	class_geode_CoordinateReferenceSystemManagerBuilder.rst
 	class_geode_CoordinateReferenceSystemManagers.rst
 	class_geode_CoordinateReferenceSystemManagersBuilder.rst
+	class_geode_CoordinateSystem.rst
 	class_geode_Corner.rst
 	class_geode_Corners.rst
 	class_geode_CornersBuilder.rst
@@ -107,6 +108,7 @@ namespace geode
 	class_geode_EdgedCurveOutput.rst
 	class_geode_EraserRange.rst
 	class_geode_Factory.rst
+	class_geode_Frame.rst
 	class_geode_GenericCircle.rst
 	class_geode_GenericLine.rst
 	class_geode_GenericMapping.rst
@@ -559,6 +561,9 @@ Overview
 	class :ref:`CoordinateReferenceSystemManagersBuilder<doxid-classgeode_1_1_coordinate_reference_system_managers_builder>`;
 
 	template <index_t dimension>
+	class :ref:`CoordinateSystem<doxid-classgeode_1_1_coordinate_system>`;
+
+	template <index_t dimension>
 	class :ref:`Corner<doxid-classgeode_1_1_corner>`;
 
 	template <index_t dimension>
@@ -599,6 +604,9 @@ Overview
 	template <typename Key, typename BaseClass, typename... Args>
 	class :ref:`Factory<doxid-classgeode_1_1_factory>`;
 
+	template <index_t dimension>
+	class :ref:`Frame<doxid-classgeode_1_1_frame>`;
+
 	template <typename PlaneType>
 	class :ref:`GenericCircle<doxid-classgeode_1_1_generic_circle>`;
 
@@ -609,28 +617,28 @@ Overview
 	class :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`;
 
 	template <index_t dimension>
-	class :ref:`GenericMeshAccessor<TetrahedralSolid<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4>`;
-
-	template <index_t dimension>
 	class :ref:`GenericMeshAccessor<TriangulatedSurface<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`GenericMeshAccessor<SurfaceMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4>`;
 
 	template <index_t dimension>
-	class :ref:`GenericMeshAccessor<SolidMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4>`;
+	class :ref:`GenericMeshAccessor<TetrahedralSolid<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4>`;
 
 	template <index_t dimension>
-	class :ref:`GenericMeshAccessor<PolyhedralSolid<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_polyhedral_solid_3_01dimension_01_4_01_4>`;
+	class :ref:`GenericMeshAccessor<SolidMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`GenericMeshAccessor<PolygonalSurface<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_polygonal_surface_3_01dimension_01_4_01_4>`;
 
+	template <typename T>
+	class :ref:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor>`;
+
 	template <index_t dimension>
 	class :ref:`GenericMeshAccessor<EdgedCurve<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_edged_curve_3_01dimension_01_4_01_4>`;
 
-	template <typename T>
-	class :ref:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor>`;
+	template <index_t dimension>
+	class :ref:`GenericMeshAccessor<PolyhedralSolid<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_polyhedral_solid_3_01dimension_01_4_01_4>`;
 
 	template <typename PointType>
 	class :ref:`GenericPlane<doxid-classgeode_1_1_generic_plane>`;
@@ -777,10 +785,10 @@ Overview
 	class :ref:`OpenGeodeRasterImageOutput<doxid-classgeode_1_1_open_geode_raster_image_output>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGrid<2><doxid-classgeode_1_1_open_geode_regular_grid_3_012_01_4>`;
+	class :ref:`OpenGeodeRegularGrid<3><doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4>`;
 
 	template <>
-	class :ref:`OpenGeodeRegularGrid<3><doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4>`;
+	class :ref:`OpenGeodeRegularGrid<2><doxid-classgeode_1_1_open_geode_regular_grid_3_012_01_4>`;
 
 	template <>
 	class :ref:`OpenGeodeRegularGridBuilder<2><doxid-classgeode_1_1_open_geode_regular_grid_builder_3_012_01_4>`;
@@ -1205,6 +1213,7 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8aa2b23c4d6223ad5baa9bd94971837a>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a2a3a96558ff0144c829168764fb2264a>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a246f0bb471c47f488831765149625f85>`(opengeode_geometry_api, OpenGeodeGeometry);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a4afb76d9bab9af73b5f03e7deeacdbab>`(:ref:`CoordinateSystem<doxid-classgeode_1_1_coordinate_system>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a73b98a5519467f090fd3b8dd6a9eb008>`(:ref:`Sphere<doxid-classgeode_1_1_sphere>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a46c93d7de8cb42c63334569e28c385bd>`(:ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`);
@@ -1314,6 +1323,7 @@ Overview
 		const :ref:`Disk<doxid-namespacegeode_1adc63fa26776ccf0a89a29753d625d51a>`& disk
 		);
 
+	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a44170ce276302d65a3fc91b764140680>`(:ref:`Frame<doxid-classgeode_1_1_frame>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a8c421780195fd0e88f7ff86f6d9970a2>`(:ref:`OwnerInfiniteLine<doxid-classgeode_1_1_owner_infinite_line>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad391ccfd3ec3b37beae6bcc7c210f915>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1aaf755b9136ab518d12e2fa75dd8bdd12>`(:ref:`Triangle<doxid-classgeode_1_1_triangle>`);
@@ -1768,6 +1778,45 @@ Overview
 
 	template <index_t dimension>
 	std::unique_ptr<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :target:`merge_surface_meshes<doxid-namespacegeode_1aedc8b3a2039223306e3633e948791415>`(absl::Span<const std::reference_wrapper<const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>>> surfaces);
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af12bda263dfe19062741ed2687417b80>`(:ref:`CoordinateSystem<doxid-classgeode_1_1_coordinate_system>`);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a7e783bef800cf1928c6bb93249ac3517>`(:ref:`CoordinateSystem<doxid-classgeode_1_1_coordinate_system>`);
+
+	template <index_t dimension>
+	void :target:`create_edged_curve_coordinate_system<doxid-namespacegeode_1a05b4b80930cc18ac85e40e4db57f6188>`(
+		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh,
+		:ref:`EdgedCurveBuilder<doxid-classgeode_1_1_edged_curve_builder>`<dimension>& builder,
+		absl::string_view new_coordinate_system_name,
+		const CoordinateSystem2D& input,
+		const CoordinateSystem2D& output
+		);
+
+	template <index_t dimension>
+	void :target:`create_point_set_coordinate_system<doxid-namespacegeode_1ad2c4c1629717915997f9a33a88614de3>`(
+		const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& mesh,
+		:ref:`PointSetBuilder<doxid-classgeode_1_1_point_set_builder>`<dimension>& builder,
+		absl::string_view new_coordinate_system_name,
+		const CoordinateSystem2D& input,
+		const CoordinateSystem2D& output
+		);
+
+	template <index_t dimension>
+	void :target:`create_surface_mesh_coordinate_system<doxid-namespacegeode_1aa29dc60ba6f51d36e01d82ab51f4b825>`(
+		const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh,
+		:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension>& builder,
+		absl::string_view new_coordinate_system_name,
+		const CoordinateSystem2D& input,
+		const CoordinateSystem2D& output
+		);
+
+	template <index_t dimension>
+	void :target:`create_solid_mesh_coordinate_system<doxid-namespacegeode_1a763b5b6994f8dd31aadac995f31535f4>`(
+		const :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>& mesh,
+		:ref:`SolidMeshBuilder<doxid-classgeode_1_1_solid_mesh_builder>`<dimension>& builder,
+		absl::string_view new_coordinate_system_name,
+		const CoordinateSystem2D& input,
+		const CoordinateSystem2D& output
+		);
 
 	template <index_t dimension>
 	std::shared_ptr<:ref:`VariableAttribute<doxid-classgeode_1_1_variable_attribute>`<double>> :ref:`euclidean_distance_transform<doxid-namespacegeode_1ac4de379f6ffeadc6d509477bd3a176db>`(
@@ -2294,6 +2343,22 @@ Overview
 
 	template <typename SurfaceType = SurfaceMesh3D, typename SolidType = SolidMesh3D>
 	std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType>, std::unique_ptr<SolidType>> :target:`convert_brep_into_curve_and_surface_and_solid<doxid-namespacegeode_1a8770ad336e271b27011b7d3a2e48a052>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
+
+	void opengeode_model_api :target:`create_brep_coordinate_system<doxid-namespacegeode_1af1c1f0434fae03c8079182c56ecf01ef>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`& builder,
+		absl::string_view new_coordinate_system_name,
+		const CoordinateSystem2D& input,
+		const CoordinateSystem2D& output
+		);
+
+	void opengeode_model_api :target:`create_section_coordinate_system<doxid-namespacegeode_1ac88c635ed416b8111467e305949333e7>`(
+		const :ref:`Section<doxid-classgeode_1_1_section>`& model,
+		:ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`& builder,
+		absl::string_view new_coordinate_system_name,
+		const CoordinateSystem2D& input,
+		const CoordinateSystem2D& output
+		);
 
 	std::vector<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`> opengeode_model_api :target:`filter_brep_components_with_regards_to_blocks<doxid-namespacegeode_1a43f80ad46dbb6c082f1ad06c0e08862f>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 	std::vector<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`> opengeode_model_api :target:`filter_section_components_with_regards_to_surfaces<doxid-namespacegeode_1a889febd90df1600a45e741d08596dff4>`(:ref:`Section<doxid-classgeode_1_1_section>`& section);
