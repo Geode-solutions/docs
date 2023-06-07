@@ -29,4 +29,5 @@ template class geode::ModelMapping
 		const MappingType& :target:`at<doxid-classgeode_1_1_model_mapping_1acf5aa2a90941ca8e471604d73de4af87>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
 		bool :target:`has_mapping_type<doxid-classgeode_1_1_model_mapping_1af0d8af949de36b1a79bd8ab57deaea4f>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
 		void :target:`emplace<doxid-classgeode_1_1_model_mapping_1a057b0509fa14b8f13625138dda244119>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type, MappingType mapping);
+		void :target:`remove<doxid-classgeode_1_1_model_mapping_1a8194a99639b6338b5463129020cf1ec4>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type);
 	};
