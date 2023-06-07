@@ -1,11 +1,65 @@
-.. index:: pair: class; geode::GenericMeshAccessor
-.. _doxid-classgeode_1_1_generic_mesh_accessor:
+.. index:: pair: class; geode::GenericMeshAccessor<TriangulatedSurface<dimension>>
+.. _doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4:
 
-template class geode::GenericMeshAccessor
-=========================================
+template class geode::GenericMeshAccessor<TriangulatedSurface<dimension>>
+=========================================================================
 
 .. toctree::
 	:hidden:
 
 
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <generic_surface_accessor.h>
+	
+	template <index_t dimension>
+	class GenericMeshAccessor<TriangulatedSurface<dimension>>: public :ref:`geode::GenericMeshAccessor<SurfaceMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4>`
+	{
+	public:
+		// typedefs
+	
+		typedef :ref:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor>`<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :target:`Base<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1ab744850b5d61e86b3d80207646db778d>`;
+		typedef :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension> :target:`Element<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a627290c73aac1f09129c38972c9ae5d2>`;
+		typedef typename :ref:`Base::ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1ac08168f52bdfb28039393ba40e00e227>` :target:`ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1aa9e05dc98c1d46cd97d53e52deb9d391>`;
+		typedef typename :ref:`Base::ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a198548ab922dc529a7ece3708db81d17>` :target:`ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a0372d34465e50179cda6aefb377abf81>`;
+		typedef typename :ref:`Base::ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>` :target:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1ad3f91ee2d1ab4ccf4b1681aa6cd57fbf>`;
+		typedef typename :ref:`Base::ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1aed43baa58c492d960a7c69bc0c476141>` :target:`ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a29eaf3fb40e18d3b382757118eb92deb>`;
+
+		// construction
+	
+		:target:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a87ffe1f6b23192cd3211c8dc670779b3>`(const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& mesh);
+
+		// methods
+	
+		:ref:`Element<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a627290c73aac1f09129c38972c9ae5d2>` :target:`element<doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4_1afd8c57db0dcf093d482f3ec16de9463e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` triangle_id) const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>` :ref:`ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1ac08168f52bdfb28039393ba40e00e227>`;
+		typedef :ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>` :ref:`ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a198548ab922dc529a7ece3708db81d17>`;
+		typedef :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`;
+		typedef std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :ref:`ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1aed43baa58c492d960a7c69bc0c476141>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_elements<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a63441ae67d8717b689a4195f7870a650>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_element_vertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1ac518617d31e4cde559b6208fb3f750c5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`nb_element_facets<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a338611a0d719450ef8b8fd0c2c6671ac>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`element_vertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a43598389df34f1a0aa5a9e36e3d3c6be>`(const :ref:`ElementVertex<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1ac08168f52bdfb28039393ba40e00e227>`& polygon_vertex) const;
+		:ref:`ElementVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a198548ab922dc529a7ece3708db81d17>` :ref:`element_vertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a9ff4af6c7af41890fc6d556983733bed>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
+		:ref:`ElementFacetVertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1aed43baa58c492d960a7c69bc0c476141>` :ref:`element_facet_vertices<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1abaeddd7c69d596a384742849a7a96a27>`(const :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`& polygon_edge) const;
+		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`element_adjacent<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a15d1fb3b26c7d0b85396682ccf678d11>`(const :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`& polygon_edge) const;
+		absl::optional<:ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`> :ref:`element_adjacent_facet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a9e57aeda94d16df4f7cb75999980d6b4>`(const :ref:`ElementFacet<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a1062c87ac9e842dfd1dad53a80ecfa2c>`& polygon_edge) const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`element_attribute_manager<doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4_1a6158472acb677260b654aa27e06a56c5>`() const;
 
