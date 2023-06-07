@@ -7,8 +7,6 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
-	class_geode_detail_GeologicalComponentsStorage.rst
-
 
 
 
@@ -21,11 +19,6 @@ namespace geode::detail
 	// typedefs
 
 	typedef BijectiveMapping<uuid> :target:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>`;
-
-	// classes
-
-	template <typename Component>
-	class :ref:`GeologicalComponentsStorage<doxid-classgeode_1_1detail_1_1_geological_components_storage>`;
 
 	// global functions
 
