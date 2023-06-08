@@ -1691,6 +1691,7 @@ Overview
 	template <index_t dimension>
 	:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`create_aabb_tree<doxid-namespacegeode_1a0d28522356eb132aec3133d2b376f40a>`(const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& mesh);
 
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab0e0b6f2491e7131ec0a2d37f3c34ac2>`(:ref:`DistanceToEdge<doxid-classgeode_1_1_distance_to_edge>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`);
 
 	template <index_t dimension>

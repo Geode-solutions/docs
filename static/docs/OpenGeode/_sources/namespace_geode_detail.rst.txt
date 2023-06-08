@@ -169,6 +169,8 @@ namespace geode::detail
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1_1detail_1af5b3b4f7e07cb11bd8a472ed5ce099fa>`(:ref:`EdgedCurveMerger<doxid-classgeode_1_1detail_1_1_edged_curve_merger>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1_1detail_1adc7ebe872359976115ab0f6b1a3246ce>`(:ref:`SolidMeshMerger<doxid-classgeode_1_1detail_1_1_solid_mesh_merger>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1_1detail_1a8d6a6047214e15c4e8de8104fc71d5de>`(:ref:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger>`);
+	void :target:`build_model_boundaries<doxid-namespacegeode_1_1detail_1ac8ab95a04179f9d385f9acf586ec013c>`(const :ref:`Section<doxid-classgeode_1_1_section>`& model, :ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`& builder);
+	void :target:`build_model_boundaries<doxid-namespacegeode_1_1detail_1a66777cbe2781994468edd57e59e4595c>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model, :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`& builder);
 
 	template <typename Serializer>
 	void :target:`register_model_pcontext<doxid-namespacegeode_1_1detail_1aabe609223c623a9e6fbad122d1949d3f>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
