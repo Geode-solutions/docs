@@ -37,7 +37,7 @@ Class managing modification of a :ref:`BRep <doxid-classgeode_1_1_b_rep>`
 		// construction
 	
 		:target:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder_1accf768a7c4e92a10892ce0acc07a8b39>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
-		:target:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder_1a0f389affa276b940c40287ce00cb0fd9>`(BRepBuilder&&);
+		:target:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder_1aec2d7be3b676f066d8c447a877296d8b>`(BRepBuilder&& other);
 
 		// methods
 	

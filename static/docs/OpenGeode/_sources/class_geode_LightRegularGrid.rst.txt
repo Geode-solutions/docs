@@ -36,7 +36,7 @@ template class geode::LightRegularGrid
 			std::array<double, dimension> cells_length
 			);
 	
-		:target:`LightRegularGrid<doxid-classgeode_1_1_light_regular_grid_1a9b11d634d52e720a67153ed1876808ce>`(LightRegularGrid&&);
+		:target:`LightRegularGrid<doxid-classgeode_1_1_light_regular_grid_1aff24cf0a5847721e077d29000dc22ac0>`(LightRegularGrid&& other);
 
 		// methods
 	

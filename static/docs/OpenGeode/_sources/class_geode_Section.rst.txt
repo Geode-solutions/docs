@@ -66,6 +66,7 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`
 
 		// methods
 	
+		Section& :target:`operator =<doxid-classgeode_1_1_section_1ab7d37f7f166844540cee2255760b5b11>` (Section&& section);
 		:ref:`BoundaryCornerRange<doxid-classgeode_1_1_section_1_1_boundary_corner_range>` :target:`boundaries<doxid-classgeode_1_1_section_1aa000271c212d75ec25f009fdb24e5a82>`(const Line2D& line) const;
 		:ref:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range>` :target:`boundaries<doxid-classgeode_1_1_section_1a1e7d15848dac0b2d73a57fc528e6e593>`(const Surface2D& surface) const;
 		:ref:`IncidentLineRange<doxid-classgeode_1_1_section_1_1_incident_line_range>` :target:`incidences<doxid-classgeode_1_1_section_1a6c67e8a5a6bde877102e8f5bce7a9442>`(const Corner2D& corner) const;

@@ -22,7 +22,7 @@ template class geode::CoordinateReferenceSystemManager
 		// construction
 	
 		:target:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager_1a5656c815482f5dfc5a2a08b5feca8a2b>`();
-		:target:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager_1a708d3a19a6ef218108d2d65510a4bd3c>`(CoordinateReferenceSystemManager&&);
+		:target:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager_1a3da41d63e319a58c07825ff367abd51a>`(CoordinateReferenceSystemManager&& other);
 
 		// methods
 	

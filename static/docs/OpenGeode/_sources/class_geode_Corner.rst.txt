@@ -21,7 +21,7 @@ Geometric component describing a :ref:`Point <doxid-classgeode_1_1_point>`. This
 	public:
 		// construction
 	
-		:target:`Corner<doxid-classgeode_1_1_corner_1ab44c11d5a3c94d0fcd3d0958187e6f5f>`(Corner&&);
+		:target:`Corner<doxid-classgeode_1_1_corner_1ab74f011220da5a5dbf8df983d22b77c4>`(Corner&& other);
 		:target:`Corner<doxid-classgeode_1_1_corner_1a52dc4765ed08665987a89df771b818c9>`(CornersKey);
 		:target:`Corner<doxid-classgeode_1_1_corner_1a96f820fc37b1105620e71f779a81ba8f>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl, CornersKey);
 

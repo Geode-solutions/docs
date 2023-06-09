@@ -21,7 +21,7 @@ This abstract class represents a component that can be used in assembly.
 	public:
 		// construction
 	
-		:target:`Component<doxid-classgeode_1_1_component_1a8fdd0fc8c352de0c16398030e92dbf7a>`(Component&&);
+		:target:`Component<doxid-classgeode_1_1_component_1a9105c7621afbd66c17b46a307ce03ce9>`(Component&& other);
 
 		// methods
 	

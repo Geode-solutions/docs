@@ -24,7 +24,7 @@ This class manages all its associated Attributes. :ref:`More...<details-classgeo
 		// construction
 	
 		:target:`AttributeManager<doxid-classgeode_1_1_attribute_manager_1afb9660d8dbda6ff26534c8aea7893413>`();
-		:target:`AttributeManager<doxid-classgeode_1_1_attribute_manager_1aac27991677d8fb18bf9adda99c530197>`(AttributeManager&&);
+		:target:`AttributeManager<doxid-classgeode_1_1_attribute_manager_1a8974d9d3c6951907ae20eead3cd49bdf>`(AttributeManager&& other);
 
 		// methods
 	

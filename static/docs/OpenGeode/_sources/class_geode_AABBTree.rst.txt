@@ -32,7 +32,7 @@ Overview
 	
 		:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1a15a30ecc86d4ba1cd504ad6eeeb38c2e>`();
 		:target:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1a5946d01f19301b57c2040e76dcf271d3>`(absl::Span<const :ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension>> bboxes);
-		:target:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1aa46b589d373f758717e8388254ee29db>`(AABBTree&&);
+		:target:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree_1a419c0288d4813e132749cdba1400007f>`(AABBTree&& other);
 
 		// methods
 	

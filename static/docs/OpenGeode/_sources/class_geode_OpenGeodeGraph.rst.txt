@@ -25,10 +25,11 @@ class geode::OpenGeodeGraph
 		// construction
 	
 		:target:`OpenGeodeGraph<doxid-classgeode_1_1_open_geode_graph_1ab2052b11ab1cbe5ab50f2efd2c6528b9>`();
-		:target:`OpenGeodeGraph<doxid-classgeode_1_1_open_geode_graph_1a59ed65787b4f4cd3d7325c2d97762dad>`(OpenGeodeGraph&&);
+		:target:`OpenGeodeGraph<doxid-classgeode_1_1_open_geode_graph_1adaa6878af9c11e63aebbc2693692b848>`(OpenGeodeGraph&& other);
 
 		// methods
 	
+		OpenGeodeGraph& :target:`operator =<doxid-classgeode_1_1_open_geode_graph_1a42d2b52c43ded6f9bdd7316af4f08ddd>` (OpenGeodeGraph&& other);
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_graph_1a18ec1ea543bf4aab92094e690fb97b6e>`() const;
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_graph_1acf21de8e58dfbe6a26b003ef69463b3b>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_graph_1a190f8631b48f02e9042ca9ebfde9d3b4>`() const;

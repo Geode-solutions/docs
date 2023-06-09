@@ -24,14 +24,14 @@ template class geode::PImpl
 		template <typename... Args>
 		:target:`PImpl<doxid-classgeode_1_1_p_impl_1a05b55d893b13dde8df4e46c66f9e09c5>`(Args&& ...);
 	
-		:target:`PImpl<doxid-classgeode_1_1_p_impl_1aa10ca04a3c9ee4324e3e650dc71c8ca5>`(PImpl<T>&& other);
+		:target:`PImpl<doxid-classgeode_1_1_p_impl_1ac291d4eafc51ac65a91ac80c210a860b>`(PImpl<T>&& other);
 	
 		template <typename... Args>
 		:target:`PImpl<doxid-classgeode_1_1_p_impl_1adb28eaff61081aee2a49a77e5c4d3ca0>`(Args&&... args);
 
 		// methods
 	
-		PImpl<T>& :target:`operator =<doxid-classgeode_1_1_p_impl_1ae49a6130ccd3b8bb3a32871331af99cb>` (PImpl<T>&& other);
+		PImpl<T>& :target:`operator =<doxid-classgeode_1_1_p_impl_1a9846f07250bcebfd266780a7f0160460>` (PImpl<T>&& other);
 		void :target:`reset<doxid-classgeode_1_1_p_impl_1a9f7ecd7540719e7ef768843113e7568b>`();
 		T* :target:`operator -><doxid-classgeode_1_1_p_impl_1a14cf245237ee117197f3ed4a2c662432>` ();
 		const T* :target:`operator -><doxid-classgeode_1_1_p_impl_1aabd8fbae736a99b34ab7971529d9277d>` () const;

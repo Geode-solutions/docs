@@ -34,6 +34,7 @@ template class geode::OpenGeodePolygonalSurface
 
 		// methods
 	
+		OpenGeodePolygonalSurface& :target:`operator =<doxid-classgeode_1_1_open_geode_polygonal_surface_1a7b4077076ddfc2194b28a63a43b3d01f>` (OpenGeodePolygonalSurface&& other);
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_polygonal_surface_1a2b4eb083bccaa5fcc04c0c6d781426ef>`() const;
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_polygonal_surface_1ad44f4d5713baeb5c655f1132ff087072>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_polygonal_surface_1ae4f2118af958faaf51f1485f6bb782ce>`() const;

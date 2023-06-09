@@ -33,11 +33,11 @@ template class geode::RasterImage
 	
 		:target:`RasterImage<doxid-classgeode_1_1_raster_image_1a588a2c833f4099a502c1ae079dd77563>`();
 		:target:`RasterImage<doxid-classgeode_1_1_raster_image_1a42a3697fc84933bbdb0d6ad0adbba45c>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> cells_number);
-		:target:`RasterImage<doxid-classgeode_1_1_raster_image_1ac3cc8bbec9af605ff91009512da101dd>`(RasterImage&&);
+		:target:`RasterImage<doxid-classgeode_1_1_raster_image_1a0ab0f814f8c181549046c6874605501e>`(RasterImage&& other);
 
 		// methods
 	
-		RasterImage& :target:`operator =<doxid-classgeode_1_1_raster_image_1a81455e7b986952e2387bc5d698dfbb72>` (RasterImage&&);
+		RasterImage& :target:`operator =<doxid-classgeode_1_1_raster_image_1a84c2e9cb7e58a0eeb3f88bbd67cc427c>` (RasterImage&& other);
 		std::string :target:`native_extension<doxid-classgeode_1_1_raster_image_1a3234127da68da1bdc5ad2c38a4196627>`() const;
 		virtual :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`cell_index<doxid-classgeode_1_1_raster_image_1a5e5fe78c5077cb68c9895c70483f99f9>`(const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& index) const;
 		virtual :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>` :target:`cell_indices<doxid-classgeode_1_1_raster_image_1a09ef20a67fdf53e8b73123a6528bde68>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;

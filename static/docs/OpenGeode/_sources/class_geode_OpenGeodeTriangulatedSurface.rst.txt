@@ -34,6 +34,7 @@ template class geode::OpenGeodeTriangulatedSurface
 
 		// methods
 	
+		OpenGeodeTriangulatedSurface& :target:`operator =<doxid-classgeode_1_1_open_geode_triangulated_surface_1a7cf073c3b8a73c9b2198566d3c2937e2>` (OpenGeodeTriangulatedSurface&& other);
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_triangulated_surface_1a4eee3e4f881e1512dc72546c76d17540>`() const;
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_triangulated_surface_1a7eff2ac25dc3347f6ac31e24986ec7d6>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_triangulated_surface_1afd42744a1465b9d1ffb097565d331ea4>`() const;

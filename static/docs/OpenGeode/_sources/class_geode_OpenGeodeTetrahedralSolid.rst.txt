@@ -34,6 +34,7 @@ template class geode::OpenGeodeTetrahedralSolid
 
 		// methods
 	
+		OpenGeodeTetrahedralSolid& :target:`operator =<doxid-classgeode_1_1_open_geode_tetrahedral_solid_1a421b29d90b98b00b2a1add9be86588c2>` (OpenGeodeTetrahedralSolid&& other);
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_tetrahedral_solid_1a3447e84e5deed3cc48811838336b15f4>`() const;
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_tetrahedral_solid_1a103ed827f6acafa0b8554bc57a8bf45e>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_tetrahedral_solid_1aa12e72a894de1ee6040b03a34b90a93a>`() const;

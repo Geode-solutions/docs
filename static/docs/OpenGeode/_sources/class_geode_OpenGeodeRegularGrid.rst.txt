@@ -34,6 +34,7 @@ template class geode::OpenGeodeRegularGrid<3>
 
 		// methods
 	
+		:ref:`OpenGeodeRegularGrid<doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4_1a7b0dd9c771bf118ea809c66a50870bd1>`& :target:`operator =<doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4_1a1370671daad37d56dc40758d31ccd503>` (:ref:`OpenGeodeRegularGrid<doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4_1a7b0dd9c771bf118ea809c66a50870bd1>`&& other);
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4_1ae614edf0436d7feac53e817bb905b3c7>`() const;
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4_1ad67de33eba347515bc47ed266c4dc5e7>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_regular_grid_3_013_01_4_1aaae54092f7be773ec404dc7aff648d6a>`() const;

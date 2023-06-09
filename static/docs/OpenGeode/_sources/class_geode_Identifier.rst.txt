@@ -24,7 +24,7 @@ class geode::Identifier
 
 		// construction
 	
-		:target:`Identifier<doxid-classgeode_1_1_identifier_1aa3027c8debdcd006bcbac4f67ad43900>`(Identifier&&);
+		:target:`Identifier<doxid-classgeode_1_1_identifier_1a068c7138b4481c48a08f55efff58a23f>`(Identifier&& other);
 
 		// methods
 	

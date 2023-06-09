@@ -22,7 +22,7 @@ template class geode::TextureStorage
 		// construction
 	
 		:target:`TextureStorage<doxid-classgeode_1_1_texture_storage_1a91cdf831d2966a943a893966b3899a1a>`();
-		:target:`TextureStorage<doxid-classgeode_1_1_texture_storage_1a4981d8b74df696cfed67b1f2e6b90a67>`(TextureStorage&&);
+		:target:`TextureStorage<doxid-classgeode_1_1_texture_storage_1ab2e5f0782d54c0642783009bda83896b>`(TextureStorage&& other);
 
 		// methods
 	

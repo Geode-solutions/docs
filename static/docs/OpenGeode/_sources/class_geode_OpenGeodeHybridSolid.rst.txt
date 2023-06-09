@@ -34,6 +34,7 @@ template class geode::OpenGeodeHybridSolid
 
 		// methods
 	
+		OpenGeodeHybridSolid& :target:`operator =<doxid-classgeode_1_1_open_geode_hybrid_solid_1a73c1f60ceabf3bce481880331018d629>` (OpenGeodeHybridSolid&& other);
 		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_open_geode_hybrid_solid_1a1c6cd35e15220611d855b32f714a52ad>`() const;
 		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_open_geode_hybrid_solid_1a881f9633581017bf84a9e970b21ce473>`() const;
 		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_open_geode_hybrid_solid_1a59e107b475e1b60fcf69f6c4415db702>`() const;

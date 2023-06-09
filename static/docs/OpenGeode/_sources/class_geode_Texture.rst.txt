@@ -22,7 +22,7 @@ template class geode::Texture<1>
 		// construction
 	
 		:target:`Texture<doxid-classgeode_1_1_texture_3_011_01_4_1a5ace9092b217d3c5b203d9f9ae1e5360>`(:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& manager, absl::string_view name);
-		:target:`Texture<doxid-classgeode_1_1_texture_3_011_01_4_1a323a5a06514fe4e6489b349b16fa1b1d>`(Texture&&);
+		:target:`Texture<doxid-classgeode_1_1_texture_3_011_01_4_1a02461c8aaefb0e8f2b19baadfb72e315>`(Texture&& other);
 
 		// methods
 	

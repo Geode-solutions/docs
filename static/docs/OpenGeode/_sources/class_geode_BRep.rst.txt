@@ -76,6 +76,7 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 
 		// methods
 	
+		BRep& :target:`operator =<doxid-classgeode_1_1_b_rep_1a99b73bb0376212089839df9fa3749ce8>` (BRep&& brep);
 		:ref:`BoundaryCornerRange<doxid-classgeode_1_1_b_rep_1_1_boundary_corner_range>` :target:`boundaries<doxid-classgeode_1_1_b_rep_1ad9717c1b4130cebb0805539ccdbe6d7b>`(const Line3D& line) const;
 		:ref:`BoundaryLineRange<doxid-classgeode_1_1_b_rep_1_1_boundary_line_range>` :target:`boundaries<doxid-classgeode_1_1_b_rep_1a226d829b80f1b160063b3d1426195cd0>`(const Surface3D& surface) const;
 		:ref:`BoundarySurfaceRange<doxid-classgeode_1_1_b_rep_1_1_boundary_surface_range>` :target:`boundaries<doxid-classgeode_1_1_b_rep_1aaea3e92d8481d193ec09db644e5cca2f>`(const Block3D& block) const;
