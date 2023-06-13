@@ -1462,6 +1462,7 @@
     <span class="p">);</span>
 
 <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TetrahedralSolid3D</span><span class="o">&gt;&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad88abdc0180700dd94d4dc05d56f4149"><span></span><span class="n">convert_solid_mesh_into_tetrahedral_solid</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">);</span>
+<span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">HybridSolid3D</span><span class="o">&gt;&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aee780b546697560d17bbab12c00af658"><span></span><span class="n">convert_solid_mesh_into_hybrid_solid</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">);</span>
 <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SolidMesh3D</span><span class="o">&gt;</span> <span class="n">opengeode_mesh_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a07d4f079e9d7b110ac110ae09f301844"><span></span><span class="n">merge_solid_meshes</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SolidMesh3D</span><span class="o">&gt;&gt;</span> <span class="n">solids</span><span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
@@ -2020,6 +2021,20 @@
     <span class="kt">double</span> <span class="n">max_coordinate</span>
     <span class="p">);</span>
 
+<span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a79fd18938158c66dfb6c5ccae8bc70b7"><span></span><span class="n">convert_surface_mesh</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_SectionBuilder.html#doxid-classgeode-1-1-section-builder"><span class="std std-ref">SectionBuilder</span></a><span></span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">geode</span><span class="o">::</span><span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4a0dbbac82ed73238f90bb9b2e51db53"><span class="std std-ref">geode::MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh_type</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9e9554ef03dfce1c8c818726d82bf7b2"><span></span><span class="n">convert_surface_mesh</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_BRepBuilder.html#doxid-classgeode-1-1-b-rep-builder"><span class="std std-ref">BRepBuilder</span></a><span></span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">geode</span><span class="o">::</span><span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4a0dbbac82ed73238f90bb9b2e51db53"><span class="std std-ref">geode::MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">mesh_type</span>
+    <span class="p">);</span>
+
 <span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a36c5dede7d04df0ccda26ff36e23ddab"><span></span><span class="n">convert_surface_meshes_into_triangulated_surfaces</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad2aec6aea84ff200432d79406f203f3c"><span></span><span class="n">convert_surface_meshes_into_triangulated_surfaces</span></span><span></span><span class="p">(</span>
@@ -2032,6 +2047,13 @@
 <span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a25f5d0ef69a5656d256682538cc195ea"><span></span><span class="n">convert_surface_meshes_into_triangulated_surfaces</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
     <a class="reference internal" href="class_geode_SectionBuilder.html#doxid-classgeode-1-1-section-builder"><span class="std std-ref">SectionBuilder</span></a><span></span><span class="o">&amp;</span> <span class="n">builder</span>
+    <span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac85e0555914003669918d8e1f0d2179a"><span></span><span class="n">convert_block_mesh</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_BRepBuilder.html#doxid-classgeode-1-1-b-rep-builder"><span class="std std-ref">BRepBuilder</span></a><span></span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a4a0dbbac82ed73238f90bb9b2e51db53"><span class="std std-ref">MeshType</span></a><span></span><span class="o">&amp;</span> <span class="n">new_mesh_type</span>
     <span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a50185e6f94e236ed316b6c14fc5f8688"><span></span><span class="n">convert_block_meshes_into_tetrahedral_solids</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">);</span>

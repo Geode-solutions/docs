@@ -1730,6 +1730,7 @@ Overview
 		);
 
 	absl::optional<std::unique_ptr<TetrahedralSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_tetrahedral_solid<doxid-namespacegeode_1ad88abdc0180700dd94d4dc05d56f4149>`(const SolidMesh3D& solid);
+	absl::optional<std::unique_ptr<HybridSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_hybrid_solid<doxid-namespacegeode_1aee780b546697560d17bbab12c00af658>`(const SolidMesh3D& solid);
 	std::unique_ptr<SolidMesh3D> opengeode_mesh_api :target:`merge_solid_meshes<doxid-namespacegeode_1a07d4f079e9d7b110ac110ae09f301844>`(absl::Span<const std::reference_wrapper<const SolidMesh3D>> solids);
 
 	template <index_t dimension>
@@ -2288,6 +2289,20 @@ Overview
 		double max_coordinate
 		);
 
+	void opengeode_model_api :target:`convert_surface_mesh<doxid-namespacegeode_1a79fd18938158c66dfb6c5ccae8bc70b7>`(
+		const :ref:`Section<doxid-classgeode_1_1_section>`& model,
+		:ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`& builder,
+		const geode::Surface2D& surface,
+		const :ref:`geode::MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`& mesh_type
+		);
+
+	void opengeode_model_api :target:`convert_surface_mesh<doxid-namespacegeode_1a9e9554ef03dfce1c8c818726d82bf7b2>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`& builder,
+		const geode::Surface3D& surface,
+		const :ref:`geode::MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`& mesh_type
+		);
+
 	void opengeode_model_api :target:`convert_surface_meshes_into_triangulated_surfaces<doxid-namespacegeode_1a36c5dede7d04df0ccda26ff36e23ddab>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
 
 	void opengeode_model_api :target:`convert_surface_meshes_into_triangulated_surfaces<doxid-namespacegeode_1ad2aec6aea84ff200432d79406f203f3c>`(
@@ -2300,6 +2315,13 @@ Overview
 	void opengeode_model_api :target:`convert_surface_meshes_into_triangulated_surfaces<doxid-namespacegeode_1a25f5d0ef69a5656d256682538cc195ea>`(
 		const :ref:`Section<doxid-classgeode_1_1_section>`& section,
 		:ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`& builder
+		);
+
+	void opengeode_model_api :target:`convert_block_mesh<doxid-namespacegeode_1ac85e0555914003669918d8e1f0d2179a>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
+		:ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`& builder,
+		const Block3D& block,
+		const :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`& new_mesh_type
 		);
 
 	void opengeode_model_api :target:`convert_block_meshes_into_tetrahedral_solids<doxid-namespacegeode_1a50185e6f94e236ed316b6c14fc5f8688>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep);
