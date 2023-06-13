@@ -29,5 +29,5 @@ Class for rebuilding all the brep components topology after adding some componen
 			std::vector<PolyhedronFacet> facet_ids
 			);
 	
-		std::tuple<BRep, BRepMeshesVertexMapping, BRepMeshesElementMapping> :target:`rebuild<doxid-classgeode_1_1_b_rep_topology_rebuilder_1ac4322485278f6f837951f9328e496544>`() const;
+		std::tuple<BRep, :ref:`BRepMappings<doxid-structgeode_1_1_b_rep_mappings>`> :target:`rebuild<doxid-classgeode_1_1_b_rep_topology_rebuilder_1ad0f04bcbf5a7179b88828afabd6bbfa4>`() const;
 	};

@@ -8,9 +8,11 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
+	struct_geode_BRepMappings.rst
 	struct_geode_IndexToBRepMeshElementsMapping.rst
 	struct_geode_IndexToModelMeshElementsMapping.rst
 	struct_geode_IndexToSectionMeshElementsMapping.rst
+	struct_geode_ModelMappings.rst
 	class_geode_BRepTopologyRebuilder.rst
 
 Overview
@@ -38,9 +40,11 @@ Overview
 
 	// structs
 
+	struct :ref:`BRepMappings<doxid-structgeode_1_1_b_rep_mappings>`;
 	struct :ref:`IndexToBRepMeshElementsMapping<doxid-structgeode_1_1_index_to_b_rep_mesh_elements_mapping>`;
 	struct :ref:`IndexToModelMeshElementsMapping<doxid-structgeode_1_1_index_to_model_mesh_elements_mapping>`;
 	struct :ref:`IndexToSectionMeshElementsMapping<doxid-structgeode_1_1_index_to_section_mesh_elements_mapping>`;
+	struct :ref:`ModelMappings<doxid-structgeode_1_1_model_mappings>`;
 
 	// classes
 
@@ -70,7 +74,7 @@ Overview
 	:target:`ALIAS_2D<doxid-namespacegeode_1a775f43c93e557302fbaa359aa0af2f19>`(SurfaceMesh);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7986437714612066a303580285ecf217>`(SurfaceMesh);
 
-	std::tuple<BRep, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`convert_meshes_into_brep<doxid-namespacegeode_1aff6017692c1ec62492f4d3d881836e26>`(
+	std::tuple<BRep, :ref:`ModelMappings<doxid-structgeode_1_1_model_mappings>`> geode_conversion_model_api :ref:`convert_meshes_into_brep<doxid-namespacegeode_1a3085d2f687ae53f82d7a02e0f9aba741>`(
 		absl::Span<const std::reference_wrapper<const PointSet3D>> corners,
 		absl::Span<const std::reference_wrapper<const EdgedCurve3D>> curves,
 		absl::Span<const std::reference_wrapper<const SurfaceMesh3D>> surfaces
@@ -90,7 +94,7 @@ Overview
 		absl::string_view attribute_name
 		);
 
-	std::tuple<BRep, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`add_sharp_features<doxid-namespacegeode_1a49cb67a8b0b0b2e1fab8dfe0d8c4b783>`(
+	std::tuple<BRep, :ref:`ModelMappings<doxid-structgeode_1_1_model_mappings>`> geode_conversion_model_api :ref:`add_sharp_features<doxid-namespacegeode_1a56e79a47dca0122fc833135962fd5615>`(
 		const BRep& model,
 		double max_angle
 		);
@@ -101,7 +105,7 @@ Overview
 		absl::Span<const index_t> line_edges
 		);
 
-	std::tuple<Section, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :target:`convert_meshes_into_section<doxid-namespacegeode_1a6835edf43c6cb86909b5fd0db7dfff76>`(
+	std::tuple<Section, :ref:`ModelMappings<doxid-structgeode_1_1_model_mappings>`> geode_conversion_model_api :target:`convert_meshes_into_section<doxid-namespacegeode_1a66974f86fa0c20acd319c2148b4688ea>`(
 		absl::Span<const std::reference_wrapper<const PointSet2D>> corners,
 		absl::Span<const std::reference_wrapper<const EdgedCurve2D>> curves,
 		absl::Span<const std::reference_wrapper<const SurfaceMesh2D>> surfaces
@@ -110,6 +114,17 @@ Overview
 	std::tuple<Section, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api :ref:`convert_surface_into_section_from_attribute<doxid-namespacegeode_1a6280b0a690369c7371a17214118bf057>`(
 		SurfaceMesh2D& surface,
 		absl::string_view attribute_name
+		);
+
+	template <typename Model>
+	ModelGenericMapping :target:`build_model_component_mapping<doxid-namespacegeode_1adefa7af03a3fd14173ba1d1af6083842>`(
+		const Model& out_model,
+		const ModelMeshesElementMapping& mesh_element_mappings
+		);
+
+	ModelGenericMapping geode_conversion_model_api :target:`build_brep_component_mapping<doxid-namespacegeode_1a48a7b3671242e04f62c0c67595dc2a49>`(
+		const BRep& out_brep,
+		const BRepMeshesElementMapping& mesh_element_mappings
 		);
 
 	} // namespace geode
@@ -124,12 +139,12 @@ Global Functions
 ----------------
 
 .. index:: pair: function; convert_meshes_into_brep
-.. _doxid-namespacegeode_1aff6017692c1ec62492f4d3d881836e26:
+.. _doxid-namespacegeode_1a3085d2f687ae53f82d7a02e0f9aba741:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<BRep, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api convert_meshes_into_brep(
+	std::tuple<BRep, :ref:`ModelMappings<doxid-structgeode_1_1_model_mappings>`> geode_conversion_model_api convert_meshes_into_brep(
 		absl::Span<const std::reference_wrapper<const PointSet3D>> corners,
 		absl::Span<const std::reference_wrapper<const EdgedCurve3D>> curves,
 		absl::Span<const std::reference_wrapper<const SurfaceMesh3D>> surfaces
@@ -245,12 +260,12 @@ Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribu
 		- Name of attribute stored on solid polyhedra @warn Attribute should be convertible to float.
 
 .. index:: pair: function; add_sharp_features
-.. _doxid-namespacegeode_1a49cb67a8b0b0b2e1fab8dfe0d8c4b783:
+.. _doxid-namespacegeode_1a56e79a47dca0122fc833135962fd5615:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<BRep, ModelMeshesVertexMapping, ModelMeshesElementMapping> geode_conversion_model_api add_sharp_features(
+	std::tuple<BRep, :ref:`ModelMappings<doxid-structgeode_1_1_model_mappings>`> geode_conversion_model_api add_sharp_features(
 		const BRep& model,
 		double max_angle
 		)

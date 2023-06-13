@@ -54,9 +54,11 @@
 
 <span class="c1">// structs</span>
 
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepMappings.html#doxid-structgeode-1-1-b-rep-mappings"><span class="std std-ref">BRepMappings</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_IndexToBRepMeshElementsMapping.html#doxid-structgeode-1-1-index-to-b-rep-mesh-elements-mapping"><span class="std std-ref">IndexToBRepMeshElementsMapping</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_IndexToModelMeshElementsMapping.html#doxid-structgeode-1-1-index-to-model-mesh-elements-mapping"><span class="std std-ref">IndexToModelMeshElementsMapping</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_IndexToSectionMeshElementsMapping.html#doxid-structgeode-1-1-index-to-section-mesh-elements-mapping"><span class="std std-ref">IndexToSectionMeshElementsMapping</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelMappings.html#doxid-structgeode-1-1-model-mappings"><span class="std std-ref">ModelMappings</span></a><span></span><span class="p">;</span>
 
 <span class="c1">// classes</span>
 
@@ -86,7 +88,7 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a775f43c93e557302fbaa359aa0af2f19"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7986437714612066a303580285ecf217"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelMeshesVertexMapping</span><span class="p">,</span> <span class="n">ModelMeshesElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1aff6017692c1ec62492f4d3d881836e26"><span class="std std-ref">convert_meshes_into_brep</span></a><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_ModelMappings.html#doxid-structgeode-1-1-model-mappings"><span class="std std-ref">ModelMappings</span></a><span></span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a3085d2f687ae53f82d7a02e0f9aba741"><span class="std std-ref">convert_meshes_into_brep</span></a><span></span><span class="p">(</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">PointSet3D</span><span class="o">&gt;&gt;</span> <span class="n">corners</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">EdgedCurve3D</span><span class="o">&gt;&gt;</span> <span class="n">curves</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;</span> <span class="n">surfaces</span>
@@ -106,7 +108,7 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelMeshesVertexMapping</span><span class="p">,</span> <span class="n">ModelMeshesElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a49cb67a8b0b0b2e1fab8dfe0d8c4b783"><span class="std std-ref">add_sharp_features</span></a><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_ModelMappings.html#doxid-structgeode-1-1-model-mappings"><span class="std std-ref">ModelMappings</span></a><span></span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a56e79a47dca0122fc833135962fd5615"><span class="std std-ref">add_sharp_features</span></a><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
     <span class="kt">double</span> <span class="n">max_angle</span>
     <span class="p">);</span>
@@ -117,7 +119,7 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">index_t</span><span class="o">&gt;</span> <span class="n">line_edges</span>
     <span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">Section</span><span class="p">,</span> <span class="n">ModelMeshesVertexMapping</span><span class="p">,</span> <span class="n">ModelMeshesElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6835edf43c6cb86909b5fd0db7dfff76"><span></span><span class="n">convert_meshes_into_section</span></span><span></span><span class="p">(</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">Section</span><span class="p">,</span> <a class="reference internal" href="struct_geode_ModelMappings.html#doxid-structgeode-1-1-model-mappings"><span class="std std-ref">ModelMappings</span></a><span></span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a66974f86fa0c20acd319c2148b4688ea"><span></span><span class="n">convert_meshes_into_section</span></span><span></span><span class="p">(</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">PointSet2D</span><span class="o">&gt;&gt;</span> <span class="n">corners</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">EdgedCurve2D</span><span class="o">&gt;&gt;</span> <span class="n">curves</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh2D</span><span class="o">&gt;&gt;</span> <span class="n">surfaces</span>
@@ -128,13 +130,24 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">);</span>
 
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
+<span class="n">ModelGenericMapping</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1adefa7af03a3fd14173ba1d1af6083842"><span></span><span class="n">build_model_component_mapping</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">out_model</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">ModelMeshesElementMapping</span><span class="o">&amp;</span> <span class="n">mesh_element_mappings</span>
+    <span class="p">);</span>
+
+<span class="n">ModelGenericMapping</span> <span class="n">geode_conversion_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a48a7b3671242e04f62c0c67595dc2a49"><span></span><span class="n">build_brep_component_mapping</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">out_brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">BRepMeshesElementMapping</span><span class="o">&amp;</span> <span class="n">mesh_element_mappings</span>
+    <span class="p">);</span>
+
 <span class="p">}</span> <span class="c1">// namespace geode</span></pre>
 </section>
 <section id="detailed-documentation">
 <span id="details-namespacegeode"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this heading">¶</a></h2>
 <section id="global-functions">
 <h3>Global Functions<a class="headerlink" href="#global-functions" title="Permalink to this heading">¶</a></h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aff6017692c1ec62492f4d3d881836e26"><span id="index-1"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelMeshesVertexMapping</span><span class="p">,</span> <span class="n">ModelMeshesElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_meshes_into_brep</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a3085d2f687ae53f82d7a02e0f9aba741"><span id="index-1"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_ModelMappings.html#doxid-structgeode-1-1-model-mappings"><span class="std std-ref">ModelMappings</span></a><span></span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">convert_meshes_into_brep</span><span class="p">(</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">PointSet3D</span><span class="o">&gt;&gt;</span> <span class="n">corners</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">EdgedCurve3D</span><span class="o">&gt;&gt;</span> <span class="n">curves</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">SurfaceMesh3D</span><span class="o">&gt;&gt;</span> <span class="n">surfaces</span>
@@ -213,7 +226,7 @@
 </tr>
 </tbody>
 </table>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a49cb67a8b0b0b2e1fab8dfe0d8c4b783"><span id="index-5"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelMeshesVertexMapping</span><span class="p">,</span> <span class="n">ModelMeshesElementMapping</span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">add_sharp_features</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a56e79a47dca0122fc833135962fd5615"><span id="index-5"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_ModelMappings.html#doxid-structgeode-1-1-model-mappings"><span class="std std-ref">ModelMappings</span></a><span></span><span class="o">&gt;</span> <span class="n">geode_conversion_model_api</span> <span class="n">add_sharp_features</span><span class="p">(</span>
     <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
     <span class="kt">double</span> <span class="n">max_angle</span>
     <span class="p">)</span></pre>

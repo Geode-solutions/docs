@@ -27,7 +27,7 @@ template class geode::detail::ModelBuilderFromMeshes
 	
 		virtual void :target:`build_wireframe_step<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a823729208184f7dd85afc4a7f5a03474>`();
 		void :target:`build_surfaces<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a351381be7bdb41b99de192d8de34e3b9>`();
-		std::pair<ModelMeshesVertexMapping, ModelMeshesElementMapping> :target:`mappings<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1ab15f9b471379d5327c4c98941770c69d>`();
+		:ref:`ModelMappings<doxid-structgeode_1_1_model_mappings>` :target:`mappings<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a78797f62d4f071edb08de113a457dc64>`();
 		virtual bool :target:`is_corner<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes_1a8a7be15f0a8eb5b6ccadf6376c800670>`(index_t vertex) const;
 	};
 
