@@ -49,4 +49,4 @@ template class geode::Horizons
 	// direct descendants
 
 	template <index_t dimension>
-	class :ref:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack>`;
+	class :ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`;

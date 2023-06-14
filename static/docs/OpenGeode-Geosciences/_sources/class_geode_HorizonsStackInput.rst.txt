@@ -1,0 +1,26 @@
+.. index:: pair: class; geode::HorizonsStackInput
+.. _doxid-classgeode_1_1_horizons_stack_input:
+
+template class geode::HorizonsStackInput
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <horizons_stack_input.h>
+	
+	template <index_t dimension>
+	class HorizonsStackInput: public Input< HorizonsStack< dimension > >
+	{
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeHorizonsStackInput<doxid-classgeode_1_1_open_geode_horizons_stack_input>`;

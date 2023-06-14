@@ -28,4 +28,4 @@ template class geode::StratigraphicUnitsBuilder
 	// direct descendants
 
 	template <index_t dimension>
-	class :ref:`StratigraphicUnitsStackBuilder<doxid-classgeode_1_1_stratigraphic_units_stack_builder>`;
+	class :ref:`HorizonsStackBuilder<doxid-classgeode_1_1_horizons_stack_builder>`;

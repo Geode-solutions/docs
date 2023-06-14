@@ -49,7 +49,14 @@
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1a92f67c5f749f0347fd780e11d7e1c830"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_section</span><span class="p">);</span>
+    <span class="n">ModelCopyMapping</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1a31314c094e6ee023f4a34cd19e40bc6a"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1ad925cb3bec267b2e560911a052a3ab4f"><span></span><span class="n">copy_implicit_information</span></span><span></span><span class="p">(</span>
+        <span class="n">ModelCopyMapping</span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">other_model</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1a3bf2b7c8ae4f0141abd1db4e83bdb524"><span></span><span class="n">reinitialize_implicit_query_trees</span></span><span></span><span class="p">();</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1a8c6040867043eb61d0a1f1df286ec297"><span></span><span class="n">instantiate_implicit_attribute_on_surfaces</span></span><span></span><span class="p">();</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1a585a4b3d90de46ccee0f21169e0be203"><span></span><span class="n">set_implicit_value</span></span><span></span><span class="p">(</span>
@@ -58,8 +65,9 @@
         <span class="kt">double</span> <span class="n">value</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1aa73a13c74b3ae88f66fd5434535a95a6"><span></span><span class="n">set_stratigraphic_units_stack</span></span><span></span><span class="p">(</span><span class="n">StratigraphicUnitsStack2D</span><span class="o">&amp;&amp;</span> <span class="n">stack</span><span class="p">);</span>
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1a8ff2e6571a9fe3e7d9817a532af4055a"><span></span><span class="n">set_horizon_isovalue</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon2D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">,</span> <span class="kt">double</span> <span class="n">isovalue</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1ac843c698e09594d3c5154fc25fdc490f"><span></span><span class="n">set_horizons_stack</span></span><span></span><span class="p">(</span><span class="n">HorizonsStack2D</span><span class="o">&amp;&amp;</span> <span class="n">stack</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1a28cd849f31daefc970ff86e2b7dfe78b"><span></span><span class="n">set_horizon_implicit_value</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon2D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">,</span> <span class="kt">double</span> <span class="n">isovalue</span><span class="p">);</span>
+    <span class="n">HorizonsStackBuilder2D</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-builder-1a69e070f0c5436fc104c6b1e5b766b396"><span></span><span class="n">horizons_stack_builder</span></span><span></span><span class="p">();</span>
 <span class="p">};</span>
 
 <span class="c1">// direct descendants</span>
@@ -70,7 +78,7 @@
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <a class="reference internal" href="class_geode_CrossSectionBuilder.html#doxid-classgeode-1-1-cross-section-builder-1ad8b45913f5889c375bd49edc23475630"><span class="std std-ref">copy</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_CrossSection.html#doxid-classgeode-1-1-cross-section"><span class="std std-ref">CrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">cross_section</span><span class="p">);</span>
+    <span class="n">ModelCopyMapping</span> <a class="reference internal" href="class_geode_CrossSectionBuilder.html#doxid-classgeode-1-1-cross-section-builder-1aaff90db51f7abbb4cfd94087717c1765"><span class="std std-ref">copy</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_CrossSection.html#doxid-classgeode-1-1-cross-section"><span class="std std-ref">CrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">cross_section</span><span class="p">);</span>
 
     <span class="kt">void</span> <a class="reference internal" href="class_geode_CrossSectionBuilder.html#doxid-classgeode-1-1-cross-section-builder-1a058119ffba6e5c4fea44a990d289f227"><span class="std std-ref">copy_geological_components</span></a><span></span><span class="p">(</span>
         <span class="n">ModelCopyMapping</span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>

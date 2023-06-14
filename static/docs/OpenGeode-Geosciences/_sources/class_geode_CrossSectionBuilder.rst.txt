@@ -29,7 +29,7 @@ Class managing modifications of a :ref:`CrossSection <doxid-classgeode_1_1_cross
 
 		// methods
 	
-		void :target:`copy<doxid-classgeode_1_1_cross_section_builder_1ad8b45913f5889c375bd49edc23475630>`(const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section);
+		ModelCopyMapping :target:`copy<doxid-classgeode_1_1_cross_section_builder_1aaff90db51f7abbb4cfd94087717c1765>`(const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section);
 	
 		void :target:`copy_geological_components<doxid-classgeode_1_1_cross_section_builder_1a058119ffba6e5c4fea44a990d289f227>`(
 			ModelCopyMapping& mapping,

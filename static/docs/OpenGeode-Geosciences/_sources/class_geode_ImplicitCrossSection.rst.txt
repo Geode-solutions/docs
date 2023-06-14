@@ -56,8 +56,16 @@ An :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` is 
 			const Point2D& point
 			) const;
 	
-		const StratigraphicUnitsStack2D& :target:`stratigraphic_units_stack<doxid-classgeode_1_1_implicit_cross_section_1a79d4bb2c42dcd6d43e6451bb459e8386>`() const;
-		double :target:`horizon_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a4339327029ffa56418df24a9bcc523c6>`(const Horizon2D& horizon) const;
+		const HorizonsStack2D& :target:`horizons_stack<doxid-classgeode_1_1_implicit_cross_section_1aee24e9a3ac537d61f92bdc0bf80345ae>`() const;
+		absl::optional<:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1adf6f904c13dfb12c6a6d17c418b958bc>`> :target:`horizon_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a1a8a1dc95c52fa9238edae8bc6283107>`(const Horizon2D& horizon) const;
+	
+		bool :target:`implicit_value_is_above_horizon<doxid-classgeode_1_1_implicit_cross_section_1aebb1bed3892703dd5845657c81a82ccb>`(
+			double implicit_function_value,
+			const Horizon2D& horizon
+			) const;
+	
+		absl::optional<uuid> :target:`containing_stratigraphic_unit<doxid-classgeode_1_1_implicit_cross_section_1a47a7245c50320b1a9d996c2439114df2>`(:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1adf6f904c13dfb12c6a6d17c418b958bc>` implicit_function_value) const;
+		void :target:`initialize_implicit_query_trees<doxid-classgeode_1_1_implicit_cross_section_1acab207d121ab9cd2210e7d89459beb19>`(ImplicitCrossSectionBuilderKey);
 		void :target:`instantiate_implicit_attribute_on_surfaces<doxid-classgeode_1_1_implicit_cross_section_1a5e8f58be8c5b25119952b7da457adf05>`(ImplicitCrossSectionBuilderKey);
 	
 		void :target:`set_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a4990eab8037dc7ac85447dfba7361f19>`(
@@ -67,17 +75,15 @@ An :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` is 
 			ImplicitCrossSectionBuilderKey
 			);
 	
-		void :target:`set_stratigraphic_units_stack<doxid-classgeode_1_1_implicit_cross_section_1a1a99c2b9556e841eb00a2c36b28967d9>`(
-			StratigraphicUnitsStack2D&& stack,
-			ImplicitCrossSectionBuilderKey
-			);
+		void :target:`set_horizons_stack<doxid-classgeode_1_1_implicit_cross_section_1aeb84cf0effb9e2831d630362cad2a099>`(HorizonsStack2D&& stack, ImplicitCrossSectionBuilderKey);
 	
-		void :target:`set_horizon_isovalue<doxid-classgeode_1_1_implicit_cross_section_1a50a0deef756cf4add0583588f207baf1>`(
+		void :target:`set_horizon_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a688f97457ee5993feba66c59ddebeeab>`(
 			const Horizon2D& horizon,
-			double isovalue,
+			:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1adf6f904c13dfb12c6a6d17c418b958bc>` isovalue,
 			ImplicitCrossSectionBuilderKey
 			);
 	
+		HorizonsStack2D& :target:`modifiable_horizons_stack<doxid-classgeode_1_1_implicit_cross_section_1a1d826ae3def274612c08638b67c82a4d>`(ImplicitCrossSectionBuilderKey);
 		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_implicit_cross_section_1aa4038091dd25b0571305315e0a7661b6>`();
 	};
 

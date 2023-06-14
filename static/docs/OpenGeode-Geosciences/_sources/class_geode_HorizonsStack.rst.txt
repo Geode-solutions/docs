@@ -1,22 +1,22 @@
-.. index:: pair: class; geode::StratigraphicUnitsStack
-.. _doxid-classgeode_1_1_stratigraphic_units_stack:
+.. index:: pair: class; geode::HorizonsStack
+.. _doxid-classgeode_1_1_horizons_stack:
 
-template class geode::StratigraphicUnitsStack
-=============================================
+template class geode::HorizonsStack
+===================================
 
 .. toctree::
 	:hidden:
 
-A :ref:`StratigraphicUnitsStack <doxid-classgeode_1_1_stratigraphic_units_stack>` is a set of :ref:`Horizons <doxid-classgeode_1_1_horizons>` and :ref:`StratigraphicUnits <doxid-classgeode_1_1_stratigraphic_units>`, linked by relations defining how they are stacked (which unit is above and under which horizon, and inversely).
+A :ref:`HorizonsStack <doxid-classgeode_1_1_horizons_stack>` is a set of :ref:`Horizons <doxid-classgeode_1_1_horizons>` and :ref:`StratigraphicUnits <doxid-classgeode_1_1_stratigraphic_units>`, linked by relations defining how they are stacked (which unit is above and under which horizon, and inversely).
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <stratigraphic_units_stack.h>
+	#include <horizons_stack.h>
 	
 	template <index_t dimension>
-	class StratigraphicUnitsStack:
+	class HorizonsStack:
 	    public :ref:`geode::StratigraphicRelationships<doxid-classgeode_1_1_stratigraphic_relationships>`,
 	    public :ref:`geode::Horizons<doxid-classgeode_1_1_horizons>`,
 	    public :ref:`geode::StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`,
@@ -25,14 +25,14 @@ A :ref:`StratigraphicUnitsStack <doxid-classgeode_1_1_stratigraphic_units_stack>
 	public:
 		// construction
 	
-		:target:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack_1a38c17fc4011c543634d35cc90bbbe83e>`();
-		:target:`StratigraphicUnitsStack<doxid-classgeode_1_1_stratigraphic_units_stack_1a89edc197736aa4dba62f80c937733a6e>`(StratigraphicUnitsStack<dimension>&& su_stack);
+		:target:`HorizonsStack<doxid-classgeode_1_1_horizons_stack_1a78b9942403dc6b352d83f989b9f61465>`();
+		:target:`HorizonsStack<doxid-classgeode_1_1_horizons_stack_1a8361f439fe352a2b99bfe76a984668ac>`(HorizonsStack<dimension>&& horizons_stack);
 
 		// methods
 	
-		StratigraphicUnitsStack<dimension>& :target:`operator =<doxid-classgeode_1_1_stratigraphic_units_stack_1a74a9d51544b1b5fa13ec2b72767b4e1e>` (StratigraphicUnitsStack<dimension>&& other);
-		absl::string_view :target:`native_extension<doxid-classgeode_1_1_stratigraphic_units_stack_1af46cd17b62bb8bd47d79f34d5453c3f2>`() const;
-		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_stratigraphic_units_stack_1a08bf8b7b4e01e1800eb36fbc583064ca>`();
+		HorizonsStack<dimension>& :target:`operator =<doxid-classgeode_1_1_horizons_stack_1a13a77dbd57e84b876f75180cc041cd2c>` (HorizonsStack<dimension>&& other);
+		absl::string_view :target:`native_extension<doxid-classgeode_1_1_horizons_stack_1aa6f8dfb76a91eb74778cf6f00c909e29>`() const;
+		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_horizons_stack_1a3f2c3197d475d57a813b9e49e9f58505>`();
 	};
 
 Inherited Members

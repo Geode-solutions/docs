@@ -29,7 +29,7 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 
 		// methods
 	
-		void :target:`copy<doxid-classgeode_1_1_structural_model_builder_1af95e5991be9b7072e6505790a2360c9d>`(const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model);
+		ModelCopyMapping :target:`copy<doxid-classgeode_1_1_structural_model_builder_1ac236e47a009f3706c46ba18cca8bcf68>`(const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model);
 	
 		void :target:`copy_geological_components<doxid-classgeode_1_1_structural_model_builder_1acd847988747f65bdf0be9172c2ce3a4f>`(
 			ModelCopyMapping& mapping,
@@ -42,6 +42,8 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 		void :target:`remove_fault<doxid-classgeode_1_1_structural_model_builder_1a50eecd5acdcea94ce012b6ef5be8f570>`(const Fault3D& fault);
 		const uuid& :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a59d799086e367948498737af391802aa>`();
 		const uuid& :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a3fa06395f298cf9a5fefb73eb2466b7e>`(typename Horizon3D::HORIZON_TYPE type);
+		void :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a36ff8a5de0376f3474cceaba8f4f7005>`(uuid horizon_id);
+		void :target:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1ae248eff077b04ef22129fb526b7a5280>`(uuid horizon_id, typename Horizon3D::HORIZON_TYPE type);
 	
 		index_t :target:`add_surface_in_horizon<doxid-classgeode_1_1_structural_model_builder_1a24a3d2029666927f9aa5affa75beaacf>`(
 			const Surface3D& surface,
@@ -58,6 +60,7 @@ Class managing modifications of a :ref:`StructuralModel <doxid-classgeode_1_1_st
 	
 		void :target:`remove_fault_block<doxid-classgeode_1_1_structural_model_builder_1adb970268a91a7a8b330eaf9e5d2430fc>`(const FaultBlock3D& fault_block);
 		const uuid& :target:`add_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1adecbb31da72ad01624123ff31baadd62>`();
+		void :target:`add_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1a297118880fc34a469036d782155f30cb>`(uuid stratigraphic_unit_id);
 	
 		index_t :target:`add_block_in_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1adaf88250bb9f24f92c03e25bab94f93c>`(
 			const Block3D& block,

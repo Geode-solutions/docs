@@ -24,7 +24,8 @@ Class managing modifications of a :ref:`StratigraphicSection <doxid-classgeode_1
 
 		// methods
 	
-		void :target:`copy<doxid-classgeode_1_1_stratigraphic_section_builder_1a70e4751a1dbd253d8c22cffb8fc30ba0>`(const :ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>`& stratigraphic_section);
+		ModelCopyMapping :target:`copy<doxid-classgeode_1_1_stratigraphic_section_builder_1a83d4eaf3ab1cf217fd4bebda37fcca8f>`(const :ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>`& stratigraphic_section);
+		void :target:`reinitialize_stratigraphic_query_trees<doxid-classgeode_1_1_stratigraphic_section_builder_1a4447c7ed8c730d8fecd204bb9eb6377e>`();
 		void :target:`instantiate_stratigraphic_attribute_on_surfaces<doxid-classgeode_1_1_stratigraphic_section_builder_1ad7a5afd5a765038d33afd2dd4bd3efe3>`();
 	
 		void :target:`set_stratigraphic_location<doxid-classgeode_1_1_stratigraphic_section_builder_1adeedfc62dc8d4ff0a71ecb396e1f666a>`(
@@ -49,7 +50,7 @@ Inherited Members
 	public:
 		// methods
 	
-		void :ref:`copy<doxid-classgeode_1_1_cross_section_builder_1ad8b45913f5889c375bd49edc23475630>`(const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section);
+		ModelCopyMapping :ref:`copy<doxid-classgeode_1_1_cross_section_builder_1aaff90db51f7abbb4cfd94087717c1765>`(const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section);
 	
 		void :ref:`copy_geological_components<doxid-classgeode_1_1_cross_section_builder_1a058119ffba6e5c4fea44a990d289f227>`(
 			ModelCopyMapping& mapping,
@@ -80,7 +81,14 @@ Inherited Members
 			);
 	
 		void :ref:`remove_stratigraphic_unit<doxid-classgeode_1_1_cross_section_builder_1a5bd7ab37d57205c89107dd81bb35b8fd>`(const StratigraphicUnit2D& stratigraphic_unit);
-		void :ref:`copy<doxid-classgeode_1_1_implicit_cross_section_builder_1a92f67c5f749f0347fd780e11d7e1c830>`(const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_section);
+		ModelCopyMapping :ref:`copy<doxid-classgeode_1_1_implicit_cross_section_builder_1a31314c094e6ee023f4a34cd19e40bc6a>`(const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model);
+	
+		void :ref:`copy_implicit_information<doxid-classgeode_1_1_implicit_cross_section_builder_1ad925cb3bec267b2e560911a052a3ab4f>`(
+			ModelCopyMapping& mapping,
+			const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& other_model
+			);
+	
+		void :ref:`reinitialize_implicit_query_trees<doxid-classgeode_1_1_implicit_cross_section_builder_1a3bf2b7c8ae4f0141abd1db4e83bdb524>`();
 		void :ref:`instantiate_implicit_attribute_on_surfaces<doxid-classgeode_1_1_implicit_cross_section_builder_1a8c6040867043eb61d0a1f1df286ec297>`();
 	
 		void :ref:`set_implicit_value<doxid-classgeode_1_1_implicit_cross_section_builder_1a585a4b3d90de46ccee0f21169e0be203>`(
@@ -89,6 +97,7 @@ Inherited Members
 			double value
 			);
 	
-		void :ref:`set_stratigraphic_units_stack<doxid-classgeode_1_1_implicit_cross_section_builder_1aa73a13c74b3ae88f66fd5434535a95a6>`(StratigraphicUnitsStack2D&& stack);
-		void :ref:`set_horizon_isovalue<doxid-classgeode_1_1_implicit_cross_section_builder_1a8ff2e6571a9fe3e7d9817a532af4055a>`(const Horizon2D& horizon, double isovalue);
+		void :ref:`set_horizons_stack<doxid-classgeode_1_1_implicit_cross_section_builder_1ac843c698e09594d3c5154fc25fdc490f>`(HorizonsStack2D&& stack);
+		void :ref:`set_horizon_implicit_value<doxid-classgeode_1_1_implicit_cross_section_builder_1a28cd849f31daefc970ff86e2b7dfe78b>`(const Horizon2D& horizon, double isovalue);
+		HorizonsStackBuilder2D :ref:`horizons_stack_builder<doxid-classgeode_1_1_implicit_cross_section_builder_1a69e070f0c5436fc104c6b1e5b766b396>`();
 

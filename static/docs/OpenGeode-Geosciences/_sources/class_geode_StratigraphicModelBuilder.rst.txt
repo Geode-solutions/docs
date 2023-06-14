@@ -24,7 +24,8 @@ Class managing modifications of a :ref:`StratigraphicModel <doxid-classgeode_1_1
 
 		// methods
 	
-		void :target:`copy<doxid-classgeode_1_1_stratigraphic_model_builder_1ae8adca657a480a48da2f8164ffb28195>`(const :ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`& stratigraphic_model_);
+		ModelCopyMapping :target:`copy<doxid-classgeode_1_1_stratigraphic_model_builder_1a5f42e91b4c2fe5638c50584f817b60a5>`(const :ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`& implicit_model);
+		void :target:`reinitialize_stratigraphic_query_trees<doxid-classgeode_1_1_stratigraphic_model_builder_1a6e45c04f38903a27e4d837b6cced4bd1>`();
 		void :target:`instantiate_stratigraphic_attribute_on_blocks<doxid-classgeode_1_1_stratigraphic_model_builder_1a942479792689409c0c571a0903918fc2>`();
 	
 		void :target:`set_stratigraphic_location<doxid-classgeode_1_1_stratigraphic_model_builder_1a985d545decf9308bcbdc24f8aad65fd2>`(
@@ -49,7 +50,7 @@ Inherited Members
 	public:
 		// methods
 	
-		void :ref:`copy<doxid-classgeode_1_1_structural_model_builder_1af95e5991be9b7072e6505790a2360c9d>`(const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model);
+		ModelCopyMapping :ref:`copy<doxid-classgeode_1_1_structural_model_builder_1ac236e47a009f3706c46ba18cca8bcf68>`(const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model);
 	
 		void :ref:`copy_geological_components<doxid-classgeode_1_1_structural_model_builder_1acd847988747f65bdf0be9172c2ce3a4f>`(
 			ModelCopyMapping& mapping,
@@ -62,6 +63,8 @@ Inherited Members
 		void :ref:`remove_fault<doxid-classgeode_1_1_structural_model_builder_1a50eecd5acdcea94ce012b6ef5be8f570>`(const Fault3D& fault);
 		const uuid& :ref:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a59d799086e367948498737af391802aa>`();
 		const uuid& :ref:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a3fa06395f298cf9a5fefb73eb2466b7e>`(typename Horizon3D::HORIZON_TYPE type);
+		void :ref:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a36ff8a5de0376f3474cceaba8f4f7005>`(uuid horizon_id);
+		void :ref:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1ae248eff077b04ef22129fb526b7a5280>`(uuid horizon_id, typename Horizon3D::HORIZON_TYPE type);
 	
 		index_t :ref:`add_surface_in_horizon<doxid-classgeode_1_1_structural_model_builder_1a24a3d2029666927f9aa5affa75beaacf>`(
 			const Surface3D& surface,
@@ -78,6 +81,7 @@ Inherited Members
 	
 		void :ref:`remove_fault_block<doxid-classgeode_1_1_structural_model_builder_1adb970268a91a7a8b330eaf9e5d2430fc>`(const FaultBlock3D& fault_block);
 		const uuid& :ref:`add_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1adecbb31da72ad01624123ff31baadd62>`();
+		void :ref:`add_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1a297118880fc34a469036d782155f30cb>`(uuid stratigraphic_unit_id);
 	
 		index_t :ref:`add_block_in_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1adaf88250bb9f24f92c03e25bab94f93c>`(
 			const Block3D& block,
@@ -85,9 +89,17 @@ Inherited Members
 			);
 	
 		void :ref:`remove_stratigraphic_unit<doxid-classgeode_1_1_structural_model_builder_1a2dbd86d61d696d9dd901a7c9af084687>`(const StratigraphicUnit3D& stratigraphic_unit);
-		void :ref:`copy<doxid-classgeode_1_1_implicit_structural_model_builder_1a0416e37c3b401b46a5998bf0659cb004>`(const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model);
+		ModelCopyMapping :ref:`copy<doxid-classgeode_1_1_implicit_structural_model_builder_1a3b344c3184b7c40cbc3d6e91e324c256>`(const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model);
+	
+		void :ref:`copy_implicit_information<doxid-classgeode_1_1_implicit_structural_model_builder_1a698515dafc6866743a145a3f2d36942a>`(
+			ModelCopyMapping& mapping,
+			const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& other_model
+			);
+	
+		void :ref:`reinitialize_implicit_query_trees<doxid-classgeode_1_1_implicit_structural_model_builder_1ab5d2cb139b60899cdca25b8b2ebd3a49>`();
 		void :ref:`instantiate_implicit_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_builder_1aa6b714c05a50f268228993c14b4d0fb7>`();
 		void :ref:`set_implicit_value<doxid-classgeode_1_1_implicit_structural_model_builder_1ac25938e374344a2ab117d0731cb488b1>`(const Block3D& block, index_t vertex_id, double value);
-		void :ref:`set_stratigraphic_units_stack<doxid-classgeode_1_1_implicit_structural_model_builder_1a05c4c789257ce8b7c52ea56df01d407c>`(StratigraphicUnitsStack3D&& stack);
-		void :ref:`set_horizon_isovalue<doxid-classgeode_1_1_implicit_structural_model_builder_1abf7ad9997631e997071a609ff5f6a218>`(const Horizon3D& horizon, double isovalue);
+		void :ref:`set_horizons_stack<doxid-classgeode_1_1_implicit_structural_model_builder_1a9d84b2ef74a61530dc82a42464e616d9>`(HorizonsStack3D&& stack);
+		void :ref:`set_horizon_implicit_value<doxid-classgeode_1_1_implicit_structural_model_builder_1af00cea291d526f51410f7f9e87580a93>`(const Horizon3D& horizon, double isovalue);
+		HorizonsStackBuilder3D :ref:`horizons_stack_builder<doxid-classgeode_1_1_implicit_structural_model_builder_1abc546a86638967b219d967cc2081f68a>`();
 

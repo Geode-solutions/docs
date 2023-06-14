@@ -79,6 +79,7 @@ A Stratigraphic Model is an :ref:`ImplicitStructuralModel <doxid-classgeode_1_1_
 			) const;
 	
 		BoundingBox3D :target:`stratigraphic_bounding_box<doxid-classgeode_1_1_stratigraphic_model_1ab72bd11fb9956825848e6d1375f8e805>`() const;
+		void :target:`initialize_stratigraphic_query_trees<doxid-classgeode_1_1_stratigraphic_model_1adacf6f24e048eb82968239654db77033>`(StratigraphicModelBuilderKey);
 		void :target:`instantiate_stratigraphic_location_on_blocks<doxid-classgeode_1_1_stratigraphic_model_1a5e1583533852bb877b70276637097f10>`(StratigraphicModelBuilderKey);
 	
 		void :target:`set_stratigraphic_location<doxid-classgeode_1_1_stratigraphic_model_1a13094305f1da4714e0a37d6dd35510c5>`(
@@ -142,8 +143,16 @@ Inherited Members
 			const Point3D& point
 			) const;
 	
-		const StratigraphicUnitsStack3D& :ref:`stratigraphic_units_stack<doxid-classgeode_1_1_implicit_structural_model_1a8b3174d3828ea67ff863b7a6f2a7a751>`() const;
-		double :ref:`horizon_implicit_value<doxid-classgeode_1_1_implicit_structural_model_1abd6319c12a3a6e2f4909ba59097eedda>`(const Horizon3D& horizon) const;
+		const HorizonsStack3D& :ref:`horizons_stack<doxid-classgeode_1_1_implicit_structural_model_1a33b7c73582dcca338e80ab12d4dca30a>`() const;
+		absl::optional<:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>`> :ref:`horizon_implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a16441f2fff56befad3dc7ac7dc15beab>`(const Horizon3D& horizon) const;
+	
+		bool :ref:`implicit_value_is_above_horizon<doxid-classgeode_1_1_implicit_structural_model_1a51747c590fcc0b27790fcb210eed9068>`(
+			double implicit_function_value,
+			const Horizon3D& horizon
+			) const;
+	
+		absl::optional<uuid> :ref:`containing_stratigraphic_unit<doxid-classgeode_1_1_implicit_structural_model_1aa341b9df35f60fa768419808727c6dce>`(:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` implicit_function_value) const;
+		void :ref:`initialize_implicit_query_trees<doxid-classgeode_1_1_implicit_structural_model_1adeed73ec31f4fe10085a7704934c3927>`(ImplicitStructuralModelBuilderKey);
 		void :ref:`instantiate_implicit_attribute_on_blocks<doxid-classgeode_1_1_implicit_structural_model_1a8e88861949ffca6ac1477a5e3ef54b31>`(ImplicitStructuralModelBuilderKey);
 	
 		void :ref:`set_implicit_value<doxid-classgeode_1_1_implicit_structural_model_1a496dc79c00c843dd60d5a65dc5bb4fdc>`(
@@ -153,17 +162,18 @@ Inherited Members
 			ImplicitStructuralModelBuilderKey
 			);
 	
-		void :ref:`set_stratigraphic_units_stack<doxid-classgeode_1_1_implicit_structural_model_1a2cbc93a187ed8398d4ca44a4556f30a1>`(
-			StratigraphicUnitsStack3D&& stack,
+		void :ref:`set_horizons_stack<doxid-classgeode_1_1_implicit_structural_model_1a81ff7db2e0d9d467d04b9a95d997ae96>`(
+			HorizonsStack3D&& stack,
 			ImplicitStructuralModelBuilderKey
 			);
 	
-		void :ref:`set_horizon_isovalue<doxid-classgeode_1_1_implicit_structural_model_1aa8b473730aef2a1f4d5f23409a069e17>`(
+		void :ref:`set_horizon_implicit_value<doxid-classgeode_1_1_implicit_structural_model_1ae5a57e2bdd773d2e0ad37af6b7c51ccd>`(
 			const Horizon3D& horizon,
-			double isovalue,
+			:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>` isovalue,
 			ImplicitStructuralModelBuilderKey
 			);
 	
+		HorizonsStack3D& :ref:`modifiable_horizons_stack<doxid-classgeode_1_1_implicit_structural_model_1a6d908cefae564eded1a8a02ffafccfef>`(ImplicitStructuralModelBuilderKey);
 		static constexpr absl::string_view :ref:`native_extension_static<doxid-classgeode_1_1_implicit_structural_model_1aa69265945e3e076b61a3cf1367dc8325>`();
 
 .. _details-classgeode_1_1_stratigraphic_model:

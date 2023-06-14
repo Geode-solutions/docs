@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::ImplicitCrossSectionBuilder" href="class_geode_ImplicitCrossSectionBuilder.html" />
-    <link rel="prev" title="template class geode::HorizonsBuilder" href="class_geode_HorizonsBuilder.html" />
+    <link rel="prev" title="template class geode::HorizonsStackOutput" href="class_geode_HorizonsStackOutput.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -80,8 +80,16 @@
         <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 
-    <span class="k">const</span> <span class="n">StratigraphicUnitsStack2D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a79d4bb2c42dcd6d43e6451bb459e8386"><span></span><span class="n">stratigraphic_units_stack</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a4339327029ffa56418df24a9bcc523c6"><span></span><span class="n">horizon_implicit_value</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon2D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">HorizonsStack2D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1aee24e9a3ac537d61f92bdc0bf80345ae"><span></span><span class="n">horizons_stack</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section-1adf6f904c13dfb12c6a6d17c418b958bc"><span class="std std-ref">implicit_attribute_type</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a1a8a1dc95c52fa9238edae8bc6283107"><span></span><span class="n">horizon_implicit_value</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon2D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1aebb1bed3892703dd5845657c81a82ccb"><span></span><span class="n">implicit_value_is_above_horizon</span></span><span></span><span class="p">(</span>
+        <span class="kt">double</span> <span class="n">implicit_function_value</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Horizon2D</span><span class="o">&amp;</span> <span class="n">horizon</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a47a7245c50320b1a9d996c2439114df2"><span></span><span class="n">containing_stratigraphic_unit</span></span><span></span><span class="p">(</span><a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section-1adf6f904c13dfb12c6a6d17c418b958bc"><span class="std std-ref">implicit_attribute_type</span></a><span></span> <span class="n">implicit_function_value</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1acab207d121ab9cd2210e7d89459beb19"><span></span><span class="n">initialize_implicit_query_trees</span></span><span></span><span class="p">(</span><span class="n">ImplicitCrossSectionBuilderKey</span><span class="p">);</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a5e8f58be8c5b25119952b7da457adf05"><span></span><span class="n">instantiate_implicit_attribute_on_surfaces</span></span><span></span><span class="p">(</span><span class="n">ImplicitCrossSectionBuilderKey</span><span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a4990eab8037dc7ac85447dfba7361f19"><span></span><span class="n">set_implicit_value</span></span><span></span><span class="p">(</span>
@@ -91,17 +99,15 @@
         <span class="n">ImplicitCrossSectionBuilderKey</span>
         <span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a1a99c2b9556e841eb00a2c36b28967d9"><span></span><span class="n">set_stratigraphic_units_stack</span></span><span></span><span class="p">(</span>
-        <span class="n">StratigraphicUnitsStack2D</span><span class="o">&amp;&amp;</span> <span class="n">stack</span><span class="p">,</span>
-        <span class="n">ImplicitCrossSectionBuilderKey</span>
-        <span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1aeb84cf0effb9e2831d630362cad2a099"><span></span><span class="n">set_horizons_stack</span></span><span></span><span class="p">(</span><span class="n">HorizonsStack2D</span><span class="o">&amp;&amp;</span> <span class="n">stack</span><span class="p">,</span> <span class="n">ImplicitCrossSectionBuilderKey</span><span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a50a0deef756cf4add0583588f207baf1"><span></span><span class="n">set_horizon_isovalue</span></span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a688f97457ee5993feba66c59ddebeeab"><span></span><span class="n">set_horizon_implicit_value</span></span><span></span><span class="p">(</span>
         <span class="k">const</span> <span class="n">Horizon2D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">,</span>
-        <span class="kt">double</span> <span class="n">isovalue</span><span class="p">,</span>
+        <a class="reference internal" href="#doxid-classgeode-1-1-implicit-cross-section-1adf6f904c13dfb12c6a6d17c418b958bc"><span class="std std-ref">implicit_attribute_type</span></a><span></span> <span class="n">isovalue</span><span class="p">,</span>
         <span class="n">ImplicitCrossSectionBuilderKey</span>
         <span class="p">);</span>
 
+    <span class="n">HorizonsStack2D</span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1a1d826ae3def274612c08638b67c82a4d"><span></span><span class="n">modifiable_horizons_stack</span></span><span></span><span class="p">(</span><span class="n">ImplicitCrossSectionBuilderKey</span><span class="p">);</span>
     <span class="k">static</span> <span class="k">constexpr</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-cross-section-1aa4038091dd25b0571305315e0a7661b6"><span></span><span class="n">native_extension_static</span></span><span></span><span class="p">();</span>
 <span class="p">};</span>
 
