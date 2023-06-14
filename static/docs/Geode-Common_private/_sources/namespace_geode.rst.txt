@@ -45,8 +45,13 @@ namespace geode
 	struct_geode_SurfacePath.rst
 	struct_geode_SurfacePathFinderException.rst
 	class_geode_BRepGeometricModifier.rst
+	class_geode_BRepGridMetric.rst
+	class_geode_ConstantMetric.rst
+	class_geode_CustomGridMetric.rst
 	class_geode_EdgedCurveModifier.rst
 	class_geode_FileLicenseChecker.rst
+	class_geode_GridMetric.rst
+	class_geode_Metric.rst
 	class_geode_ModuleLicenseChecker.rst
 	class_geode_SectionGeometricModifier.rst
 	class_geode_SolidPathFinder.rst
@@ -177,11 +182,24 @@ Overview
 	// classes
 
 	class :ref:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier>`;
+	class :ref:`BRepGridMetric<doxid-classgeode_1_1_b_rep_grid_metric>`;
+
+	template <index_t dimension>
+	class :ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`;
+
+	template <index_t dimension>
+	class :ref:`CustomGridMetric<doxid-classgeode_1_1_custom_grid_metric>`;
 
 	template <index_t dimension>
 	class :ref:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier>`;
 
 	class :ref:`FileLicenseChecker<doxid-classgeode_1_1_file_license_checker>`;
+
+	template <index_t dimension>
+	class :ref:`GridMetric<doxid-classgeode_1_1_grid_metric>`;
+
+	template <index_t dimension>
+	class :ref:`Metric<doxid-classgeode_1_1_metric>`;
 
 	template <const char* name>
 	class :ref:`ModuleLicenseChecker<doxid-classgeode_1_1_module_license_checker>`;
@@ -283,6 +301,19 @@ Overview
 
 	:target:`ALIAS_2D<doxid-namespacegeode_1a504bb34b6ea51d563984b00589d5001d>`(TriangulatedSurface);
 	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(Block);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aec45feff83bfe89a3608ad215c769920>`(Grid);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(Block);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a1ddeb21714a09b8da27ca40858681e57>`(Grid);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a92ea6140d3ffdcf28cfbb0468402c3a3>`(geode_common_metric_api, CommonMetric);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae6e689ab449ad55fffa309d356c002a0>`(:ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad52827c3ed9c1440ecaf3d17e40d432c>`(:ref:`CustomGridMetric<doxid-classgeode_1_1_custom_grid_metric>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a713615f1e1f632a857fbbda376b9b832>`(Segment);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae5a407c359cdfed3035da2857149c7c4>`(:ref:`GridMetric<doxid-classgeode_1_1_grid_metric>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1acccc96aede5f0687fbbeb3c7a80dde02>`(:ref:`Metric<doxid-classgeode_1_1_metric>`);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1aef14991cbf3e087f0360c30d1ea9194b>`(geode_common_modifier_common_api, CommonModifierCommon);
 	absl::FixedArray<:ref:`Mapping<doxid-structgeode_1_1_mapping>`<index_t>> geode_common_modifier_common_api :target:`extract_mappings_from_split_info<doxid-namespacegeode_1af2e70f64eee004f3002873a2f84d9220>`(absl::Span<const :ref:`SplitInfo<doxid-structgeode_1_1_split_info>`> split_info);
 
@@ -337,14 +368,10 @@ Overview
 		CommonModifierEdgedCurve
 		);
 
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abca05657b8eb6a446c79a4e841068fcf>`(EdgedCurveBuilder);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab753a4c9c96a0711fc42d95d03de3555>`(:ref:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier>`);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(Block);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9dd3655e0b4d0e1d23b6d3a8fd68c87b>`(Line);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(Surface);
-	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(Block);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a3dfa90e12c4f46df6d4d4c73cc499ab6>`(Point);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(Surface);

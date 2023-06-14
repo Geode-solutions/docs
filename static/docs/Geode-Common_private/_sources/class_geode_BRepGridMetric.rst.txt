@@ -1,0 +1,50 @@
+.. index:: pair: class; geode::BRepGridMetric
+.. _doxid-classgeode_1_1_b_rep_grid_metric:
+
+class geode::BRepGridMetric
+===========================
+
+.. toctree::
+	:hidden:
+
+BRep grid metric implementation
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_grid_metric.h>
+	
+	class BRepGridMetric: public :ref:`geode::GridMetric<doxid-classgeode_1_1_grid_metric>`
+	{
+	public:
+		// construction
+	
+		:target:`BRepGridMetric<doxid-classgeode_1_1_b_rep_grid_metric_1aed5b076b2caa28d9f8bb7525643c7499>`(const BRep& brep, const Grid3D& grid, double default_metric);
+
+		// methods
+	
+		void :target:`paint_block<doxid-classgeode_1_1_b_rep_grid_metric_1a746838c46aad5d78a9be0b2c1cbe42b8>`(const Block3D& block, double metric);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		virtual double :ref:`metric<doxid-classgeode_1_1_metric_1ae7772ff36e4ab8e23abc1fca5f81e21b>`(const Point<dimension>& point) const = 0;
+		virtual double :ref:`average_metric<doxid-classgeode_1_1_metric_1a1ac98e57f631f4b5207a0223cfff6768>`() const = 0;
+		virtual double :ref:`metric<doxid-classgeode_1_1_grid_metric_1a146ca0b3c59de88c6ec23f02ee51c409>`(const Point<dimension>& point) const;
+		virtual double :ref:`average_metric<doxid-classgeode_1_1_grid_metric_1a148e8f2a7343f5d0894f22d54b1fbf62>`() const;
+		void :ref:`paint_point<doxid-classgeode_1_1_grid_metric_1ab2987a215a502cdfcbf4fe88e890a934>`(const Point<dimension>& point, double metric);
+		void :ref:`paint_segment<doxid-classgeode_1_1_grid_metric_1acae75fe2e0c36df6cc5491283deede74>`(const Segment<dimension>& segment, double metric);
+		void :ref:`paint_triangle<doxid-classgeode_1_1_grid_metric_1a38e13ff659e61b418a0d9f2c0b483180>`(const Triangle<dimension>& triangle, double metric);
+		void :ref:`paint_mesh<doxid-classgeode_1_1_grid_metric_1ac5456fb0d8c04abe6b1ffea1a357cebb>`(const PointSet<dimension>& mesh, double metric);
+		void :ref:`paint_mesh<doxid-classgeode_1_1_grid_metric_1a3d859b89fd5721278adbf6fe73abc1eb>`(const EdgedCurve<dimension>& mesh, double metric);
+		void :ref:`paint_mesh<doxid-classgeode_1_1_grid_metric_1a94563bab03599f03c57bf4e91c582597>`(const TriangulatedSurface<dimension>& mesh, double metric);
+		void :ref:`optimize<doxid-classgeode_1_1_grid_metric_1a2e294edadd90e50c7919402a0837f34a>`(double gradation);
+
