@@ -56,14 +56,14 @@
         <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="n">scalar_function_values</span>
         <span class="p">);</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_BRepExplicitModelerMappings.html#doxid-structgeode-1-1-b-rep-explicit-modeler-mappings"><span class="std std-ref">BRepExplicitModelerMappings</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-b-rep-volumic-inserter-1ac34da06225ce3db20cbfe7f270eb18a9"><span class="std std-ref">build</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">BRepMappings</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-b-rep-volumic-inserter-1a9b723b27778f0763bef6c223b72dd063"><span class="std std-ref">build</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </section>
 <section id="detailed-documentation">
 <span id="details-classgeode-1-1-b-rep-volumic-inserter"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this heading">¶</a></h2>
 <section id="methods">
 <h3>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">¶</a></h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-b-rep-volumic-inserter-1ac34da06225ce3db20cbfe7f270eb18a9"><span id="index-1"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_BRepExplicitModelerMappings.html#doxid-structgeode-1-1-b-rep-explicit-modeler-mappings"><span class="std std-ref">BRepExplicitModelerMappings</span></a><span></span><span class="o">&gt;</span> <span class="n">build</span><span class="p">()</span> <span class="k">const</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-b-rep-volumic-inserter-1a9b723b27778f0763bef6c223b72dd063"><span id="index-1"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">BRepMappings</span><span class="o">&gt;</span> <span class="n">build</span><span class="p">()</span> <span class="k">const</span></pre>
 <p>Returns a new BRep with all the isovalues inserted as surfaces and the topology rebuilt. Also gives the “input to output” and “output to
 input” mappings between given and new BRep. Only the attributes marked as interpolable will be interpolated along the inserted surfaces.</p>
 </section>

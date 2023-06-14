@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::BRepVolumicInserter" href="class_geode_BRepVolumicInserter.html" />
-    <link rel="prev" title="struct geode::ExplicitModelerMappings" href="struct_geode_ExplicitModelerMappings.html" />
+    <link rel="prev" title="namespace geode" href="namespace_geode.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -64,8 +64,8 @@
         <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&gt;</span> <span class="n">bounding_surface_uuids</span>
         <span class="p">);</span>
 
-    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_ExplicitModelerMappings.html#doxid-structgeode-1-1-explicit-modeler-mappings"><span class="std std-ref">ExplicitModelerMappings</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-b-rep-explicit-modeler-1adac54e805222bba29ea6345089152070"><span class="std std-ref">build</span></a><span></span><span class="p">();</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_ExplicitModelerMappings.html#doxid-structgeode-1-1-explicit-modeler-mappings"><span class="std std-ref">ExplicitModelerMappings</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-b-rep-explicit-modeler-1a1786d3142724089f7a9c0e4c900d8f9c"><span class="std std-ref">build_painted_volumes</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelMappings</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-b-rep-explicit-modeler-1ad5a5b0e9cedae47cf29aaa3a81033014"><span class="std std-ref">build</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelMappings</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-b-rep-explicit-modeler-1ada55f9d44c12d841c2505ddcb0f152ce"><span class="std std-ref">build_painted_volumes</span></a><span></span><span class="p">();</span>
 <span class="p">};</span></pre>
 </section>
 <section id="detailed-documentation">
@@ -77,10 +77,10 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&gt;</span> <span class="n">bounding_surface_uuids</span>
     <span class="p">)</span></pre>
 <p>Paints the given uuid on the tetrahedra inside the given surfaces. These surfaces should have already been added</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-b-rep-explicit-modeler-1adac54e805222bba29ea6345089152070"><span id="index-2"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_ExplicitModelerMappings.html#doxid-structgeode-1-1-explicit-modeler-mappings"><span class="std std-ref">ExplicitModelerMappings</span></a><span></span><span class="o">&gt;</span> <span class="n">build</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-b-rep-explicit-modeler-1ad5a5b0e9cedae47cf29aaa3a81033014"><span id="index-2"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelMappings</span><span class="o">&gt;</span> <span class="n">build</span><span class="p">()</span></pre>
 <p>Returns the merged BRep (no mesh in Blocks) including all the added curves and surfaces and gives the “input to output” and “output to
 input” mappings between Surfaces and Lines</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-b-rep-explicit-modeler-1a1786d3142724089f7a9c0e4c900d8f9c"><span id="index-3"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <a class="reference internal" href="struct_geode_ExplicitModelerMappings.html#doxid-structgeode-1-1-explicit-modeler-mappings"><span class="std std-ref">ExplicitModelerMappings</span></a><span></span><span class="o">&gt;</span> <span class="n">build_painted_volumes</span><span class="p">()</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-b-rep-explicit-modeler-1ada55f9d44c12d841c2505ddcb0f152ce"><span id="index-3"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelMappings</span><span class="o">&gt;</span> <span class="n">build_painted_volumes</span><span class="p">()</span></pre>
 <p>Returns the Merged BRep including the added surfaces and curves around painted volumes only and gives the “input to output” and “output to input” mappings between Surfaces and Lines. Generated BRep does not include added Blocks nor PointSets/Corners</p>
 </section>
 </section>

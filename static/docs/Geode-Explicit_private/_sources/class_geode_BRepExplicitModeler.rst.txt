@@ -41,8 +41,8 @@ Overview
 			absl::Span<const uuid> bounding_surface_uuids
 			);
 	
-		std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> :ref:`build<doxid-classgeode_1_1_b_rep_explicit_modeler_1adac54e805222bba29ea6345089152070>`();
-		std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> :ref:`build_painted_volumes<doxid-classgeode_1_1_b_rep_explicit_modeler_1a1786d3142724089f7a9c0e4c900d8f9c>`();
+		std::tuple<BRep, ModelMappings> :ref:`build<doxid-classgeode_1_1_b_rep_explicit_modeler_1ad5a5b0e9cedae47cf29aaa3a81033014>`();
+		std::tuple<BRep, ModelMappings> :ref:`build_painted_volumes<doxid-classgeode_1_1_b_rep_explicit_modeler_1ada55f9d44c12d841c2505ddcb0f152ce>`();
 	};
 .. _details-classgeode_1_1_b_rep_explicit_modeler:
 
@@ -68,23 +68,23 @@ Methods
 Paints the given uuid on the tetrahedra inside the given surfaces. These surfaces should have already been added
 
 .. index:: pair: function; build
-.. _doxid-classgeode_1_1_b_rep_explicit_modeler_1adac54e805222bba29ea6345089152070:
+.. _doxid-classgeode_1_1_b_rep_explicit_modeler_1ad5a5b0e9cedae47cf29aaa3a81033014:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> build()
+	std::tuple<BRep, ModelMappings> build()
 
 Returns the merged BRep (no mesh in Blocks) including all the added curves and surfaces and gives the "input to output" and "output to
 input" mappings between Surfaces and Lines
 
 .. index:: pair: function; build_painted_volumes
-.. _doxid-classgeode_1_1_b_rep_explicit_modeler_1a1786d3142724089f7a9c0e4c900d8f9c:
+.. _doxid-classgeode_1_1_b_rep_explicit_modeler_1ada55f9d44c12d841c2505ddcb0f152ce:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<BRep, :ref:`ExplicitModelerMappings<doxid-structgeode_1_1_explicit_modeler_mappings>`> build_painted_volumes()
+	std::tuple<BRep, ModelMappings> build_painted_volumes()
 
 Returns the Merged BRep including the added surfaces and curves around painted volumes only and gives the "input to output" and "output to input" mappings between Surfaces and Lines. Generated BRep does not include added Blocks nor PointSets/Corners
 

@@ -33,7 +33,7 @@ Overview
 			absl::Span<const double> scalar_function_values
 			);
 	
-		std::tuple<BRep, :ref:`BRepExplicitModelerMappings<doxid-structgeode_1_1_b_rep_explicit_modeler_mappings>`> :ref:`build<doxid-classgeode_1_1_b_rep_volumic_inserter_1ac34da06225ce3db20cbfe7f270eb18a9>`() const;
+		std::tuple<BRep, BRepMappings> :ref:`build<doxid-classgeode_1_1_b_rep_volumic_inserter_1a9b723b27778f0763bef6c223b72dd063>`() const;
 	};
 .. _details-classgeode_1_1_b_rep_volumic_inserter:
 
@@ -46,12 +46,12 @@ Methods
 -------
 
 .. index:: pair: function; build
-.. _doxid-classgeode_1_1_b_rep_volumic_inserter_1ac34da06225ce3db20cbfe7f270eb18a9:
+.. _doxid-classgeode_1_1_b_rep_volumic_inserter_1a9b723b27778f0763bef6c223b72dd063:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	std::tuple<BRep, :ref:`BRepExplicitModelerMappings<doxid-structgeode_1_1_b_rep_explicit_modeler_mappings>`> build() const
+	std::tuple<BRep, BRepMappings> build() const
 
 Returns a new BRep with all the isovalues inserted as surfaces and the topology rebuilt. Also gives the "input to output" and "output to
 input" mappings between given and new BRep. Only the attributes marked as interpolable will be interpolated along the inserted surfaces.
