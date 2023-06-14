@@ -8,6 +8,7 @@ namespace geode
 	:hidden:
 
 	namespace_geode_detail.rst
+	class_geode_ImplicitStructuralModelHorizonExpliciter.rst
 	class_geode_RegularGridScalarFunctionComputer.rst
 	class_geode_RegularGridScalarFunctionExpliciter2D.rst
 	class_geode_RegularGridScalarFunctionExpliciter3D.rst
@@ -34,6 +35,8 @@ namespace geode
 
 	// classes
 
+	class :ref:`ImplicitStructuralModelHorizonExpliciter<doxid-classgeode_1_1_implicit_structural_model_horizon_expliciter>`;
+
 	template <index_t dimension>
 	class :ref:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer>`;
 
@@ -51,6 +54,8 @@ namespace geode
 	// global functions
 
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1addb2cc9478247a5efa4486ca94ff370a>`(geode_implicit_explicitation_api, ImplicitExplicitation);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ad3992ab412f660265280d8e3d236c5ca>`(Horizon);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a821ea1d585a9128515de37f6c393d55b>`(Horizon);
 
 	ImplicitCrossSection geode_implicit_explicitation_api :target:`extract_implicit_cross_section_from_axis<doxid-namespacegeode_1a7392de66afff723052af19ac9b692506>`(
 		const ImplicitStructuralModel& model,

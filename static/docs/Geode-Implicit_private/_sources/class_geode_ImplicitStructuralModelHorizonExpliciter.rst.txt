@@ -1,0 +1,54 @@
+.. index:: pair: class; geode::ImplicitStructuralModelHorizonExpliciter
+.. _doxid-classgeode_1_1_implicit_structural_model_horizon_expliciter:
+
+class geode::ImplicitStructuralModelHorizonExpliciter
+=====================================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <implicit_model_horizon_expliciter.h>
+	
+	class ImplicitStructuralModelHorizonExpliciter
+	{
+	public:
+		// construction
+	
+		:target:`ImplicitStructuralModelHorizonExpliciter<doxid-classgeode_1_1_implicit_structural_model_horizon_expliciter_1af93a6e7d39643f347edd8e64dee65040>`(const ImplicitStructuralModel& model);
+
+		// methods
+	
+		void :target:`explicit_horizon<doxid-classgeode_1_1_implicit_structural_model_horizon_expliciter_1a2534c1652d5f4acc45c0db0d562bbdb6>`(const Horizon3D& horizon);
+		void :target:`explicit_all_horizons<doxid-classgeode_1_1_implicit_structural_model_horizon_expliciter_1a2bbc348626ed05c0b9e5a0d2841915fb>`();
+		std::tuple<ImplicitStructuralModel, BRepMappings> :ref:`build<doxid-classgeode_1_1_implicit_structural_model_horizon_expliciter_1a7d96514517ce15ac03456ace50f7ea58>`();
+	};
+.. _details-classgeode_1_1_implicit_structural_model_horizon_expliciter:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; build
+.. _doxid-classgeode_1_1_implicit_structural_model_horizon_expliciter_1a7d96514517ce15ac03456ace50f7ea58:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<ImplicitStructuralModel, BRepMappings> build()
+
+Returns a new ImplicitStructuralModel with all the given horizons inserted as surfaces and the topology rebuilt. Also gives the "input
+to output" and "output to input" mappings between given and new implicit model. Only the attributes marked as interpolable will be interpolated along the inserted surfaces.
+
