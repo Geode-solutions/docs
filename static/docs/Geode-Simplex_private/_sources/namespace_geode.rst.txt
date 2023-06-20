@@ -58,8 +58,8 @@ namespace geode
 		const Metric3D& metric
 		);
 
-	BRep geode_simplex_brep_api :target:`new_simplex_remesh<doxid-namespacegeode_1af8a47c45485fdb26797474e74864cdd8>`(
-		BRep&& brep,
+	void geode_simplex_brep_api :target:`new_simplex_remesh<doxid-namespacegeode_1ad7dc6ea529fc69d50b06b527d1e5d415>`(
+		BRep& brep,
 		const Metric3D& metric
 		);
 
