@@ -37,6 +37,7 @@ template class geode::CoordinateSystem
 	
 		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`origin<doxid-classgeode_1_1_coordinate_system_1a360ac967504b682f56974ed70ea01045>`() const;
 		void :target:`set_origin<doxid-classgeode_1_1_coordinate_system_1a596ee8b9cfd2130b8caeee17c677a4e2>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> origin);
+		void :target:`set_directions<doxid-classgeode_1_1_coordinate_system_1ad71cb87254aa19ef4bff71b48ca548f4>`(std::array<:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>, dimension> directions);
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`coordinates<doxid-classgeode_1_1_coordinate_system_1a8a0d744a7b6b9e58c5413a6b89f0c91a>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& global_coordinates) const;
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`global_coordinates<doxid-classgeode_1_1_coordinate_system_1a9d71019f43d76e4da2c13b595e74c3ec>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& coordinates) const;
 		std::string :target:`string<doxid-classgeode_1_1_coordinate_system_1a67238ad2143c7082d9b8ac3437edef92>`() const;

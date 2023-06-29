@@ -253,6 +253,7 @@ namespace geode
 	class_geode_SolidMeshBuilder.rst
 	class_geode_SparseAttribute.rst
 	class_geode_Sphere.rst
+	class_geode_SquareMatrix.rst
 	class_geode_Surface.rst
 	class_geode_SurfaceEdges.rst
 	class_geode_SurfaceEdgesBuilder.rst
@@ -973,6 +974,9 @@ Overview
 	class :ref:`Sphere<doxid-classgeode_1_1_sphere>`;
 
 	template <index_t dimension>
+	class :ref:`SquareMatrix<doxid-classgeode_1_1_square_matrix>`;
+
+	template <index_t dimension>
 	class :ref:`Surface<doxid-classgeode_1_1_surface>`;
 
 	template <index_t dimension>
@@ -1545,6 +1549,7 @@ Overview
 		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` axis
 		);
 
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a3beedcc21c1b48ab5a9a0c68c7c8d26f>`(:ref:`SquareMatrix<doxid-classgeode_1_1_square_matrix>`);
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a4cfe0d1d3550fe989f11f72256d754ce>`(:ref:`Vector<doxid-classgeode_1_1_vector>`);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a7221b07d7845e0fa8ab92e3b9e453cf9>`(opengeode_image_api, OpenGeodeImage);
 	void opengeode_image_api :ref:`register_image_serialize_pcontext<doxid-namespacegeode_1a367deb7cdb7cc2551c438aa9b59b4aa9>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
@@ -1653,6 +1658,7 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1afeb3d280ffcd275ef0148dceffda7eb8>`(:ref:`OpenGeodeTriangulatedSurface<doxid-classgeode_1_1_open_geode_triangulated_surface>`);
 	void opengeode_mesh_api :target:`register_geode_mesh<doxid-namespacegeode_1adce51211caa99c2211735c26faf6323e>`();
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a66de9cc465de1ecbe09f56cc26820b8f>`(:ref:`GridBuilder<doxid-classgeode_1_1_grid_builder>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af12bda263dfe19062741ed2687417b80>`(:ref:`CoordinateSystem<doxid-classgeode_1_1_coordinate_system>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7811fa3e946852b9ee881b44a272de81>`(:ref:`Grid<doxid-classgeode_1_1_grid>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af4f182876ad2706cfd67cfa0a7ff23b4>`(:ref:`HybridSolidBuilder<doxid-classgeode_1_1_hybrid_solid_builder>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1ad1e677b7ca1b4a9e3461a5ab070e8b42>`(:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`);
@@ -1784,7 +1790,6 @@ Overview
 	template <index_t dimension>
 	std::unique_ptr<:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>> :target:`merge_surface_meshes<doxid-namespacegeode_1aedc8b3a2039223306e3633e948791415>`(absl::Span<const std::reference_wrapper<const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>>> surfaces);
 
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1af12bda263dfe19062741ed2687417b80>`(:ref:`CoordinateSystem<doxid-classgeode_1_1_coordinate_system>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a7e783bef800cf1928c6bb93249ac3517>`(:ref:`CoordinateSystem<doxid-classgeode_1_1_coordinate_system>`);
 
 	template <index_t dimension>
@@ -4081,7 +4086,7 @@ Register all the information needed by Bitsery to deserialize the objects in the
 		absl::string_view distance_map_name
 		)
 
-API function for creating and computing the euclidean distance map from raterized objects. It computes the exact euclidean distance map.
+API function for creating and computing the euclidean distance map from rasterized objects. It computes the exact euclidean distance map.
 
 
 

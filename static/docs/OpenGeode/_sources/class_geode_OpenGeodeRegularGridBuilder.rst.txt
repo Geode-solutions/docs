@@ -79,12 +79,14 @@ Inherited Members
 		void :ref:`reset_polygons_around_vertex<doxid-classgeode_1_1_surface_mesh_builder_1ad52fe61b9385757f1aac4a6fc870a0b4>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id);
 		void :ref:`copy<doxid-classgeode_1_1_surface_mesh_builder_1a2a38ff323d7996e3f61a5801653cb8fa>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface_mesh);
 		static std::unique_ptr<:ref:`SurfaceMeshBuilder<doxid-classgeode_1_1_surface_mesh_builder>`<dimension>> :ref:`create<doxid-classgeode_1_1_surface_mesh_builder_1a3dd05fba0da3a5d38f4454d8f1a30313>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& mesh);
+		void :ref:`set_grid_origin<doxid-classgeode_1_1_grid_builder_1a128ee2e35adbb3f14f7b082e3bbdcc5f>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> origin);
 	
 		void :ref:`set_grid_dimensions<doxid-classgeode_1_1_grid_builder_1a01c5a8eca8238d5840587710e03e0394>`(
 			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> cells_number,
 			std::array<double, dimension> cells_length
 			);
 	
+		void :ref:`set_grid_directions<doxid-classgeode_1_1_grid_builder_1af7699c500655cd7414df5ca2b902daf4>`(std::array<:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>, dimension> directions);
 		void :ref:`copy<doxid-classgeode_1_1_grid_builder_1ae1e481a0d6cb56294e13dd0250cdf2bd>`(const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid);
 		static std::unique_ptr<:ref:`RegularGridBuilder<doxid-classgeode_1_1_regular_grid_builder_3_012_01_4_1a338445cde3fdf48f64c53a581f31f974>`<2>> :ref:`create<doxid-classgeode_1_1_regular_grid_builder_3_012_01_4_1ae924308ff34d70f7e5d5bedce5cbf29c>`(RegularGrid2D& grid);
 	
@@ -100,6 +102,18 @@ Inherited Members
 			double cells_length
 			);
 	
+		void :ref:`initialize_grid<doxid-classgeode_1_1_regular_grid_builder_3_012_01_4_1a45ee916d64540f49c53ec53649e734a5>`(
+			Point2D origin,
+			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> cells_number,
+			std::array<Vector2D, 2> cell_directions
+			);
+	
 		virtual void :ref:`update_origin<doxid-classgeode_1_1_regular_grid_builder_3_012_01_4_1a0532ae048340720a729e057f7416dd16>`(const Point2D& origin) = 0;
+	
+		virtual void :ref:`update_origin_and_directions<doxid-classgeode_1_1_regular_grid_builder_3_012_01_4_1aa02e37ad40718bcab5acec6cedcd7fb6>`(
+			Point2D origin,
+			std::array<Vector2D, 2> cell_directions
+			) = 0;
+	
 		void :ref:`copy<doxid-classgeode_1_1_regular_grid_builder_3_012_01_4_1a38f8f5f579618276b0231a2acfd9375b>`(const RegularGrid2D& grid);
 

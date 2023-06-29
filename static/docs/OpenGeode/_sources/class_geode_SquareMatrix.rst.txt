@@ -1,0 +1,34 @@
+.. index:: pair: class; geode::SquareMatrix
+.. _doxid-classgeode_1_1_square_matrix:
+
+template class geode::SquareMatrix
+==================================
+
+.. toctree::
+	:hidden:
+
+Description of a vector in the given dimension with double coordinates
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <square_matrix.h>
+	
+	template <index_t dimension>
+	class SquareMatrix
+	{
+	public:
+		// construction
+	
+		:target:`SquareMatrix<doxid-classgeode_1_1_square_matrix_1a76cc5262a56da9fbab3dc08a4c3d4345>`();
+		:target:`SquareMatrix<doxid-classgeode_1_1_square_matrix_1aac00e7012ab89f7de5ba2894db6f7215>`(std::array<:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>, dimension> matrix_rows);
+
+		// methods
+	
+		double :target:`value<doxid-classgeode_1_1_square_matrix_1aac0226437a98092f9d6448371b960c2e>`(:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` row, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` column) const;
+		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`operator *<doxid-classgeode_1_1_square_matrix_1a53fb7a46c4c6d36183558f3487443a6a>` (const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> vector) const;
+		double :target:`determinant<doxid-classgeode_1_1_square_matrix_1a932893150ca33da68395036301d49a62>`() const;
+		SquareMatrix<dimension> :target:`transpose<doxid-classgeode_1_1_square_matrix_1ab27ecbd54d5bfee6cf7aed25e40d1bc1>`() const;
+		SquareMatrix<dimension> :target:`inverse<doxid-classgeode_1_1_square_matrix_1a475e101fa94bee88a0f0faec51cd42e5>`() const;
+	};

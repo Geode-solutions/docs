@@ -217,7 +217,8 @@ Inherited Members
 	
 		bool :ref:`is_cell_on_border<doxid-classgeode_1_1_cell_array_1ac7901ecf129e84f87a0be7b18f2b3dbd>`(const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& cell_indices) const;
 		static constexpr :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_neighbors_static<doxid-classgeode_1_1_cell_array_1afdd120604539a139478011b4c25b92fe>`();
-		virtual const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`origin<doxid-classgeode_1_1_grid_1ae18c0135c9066914c76566524840651f>`() const = 0;
+		const OPENGEODE_MESH_DEPRECATED :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`origin<doxid-classgeode_1_1_grid_1a6300a6155371487d54699ee11d58b559>`() const;
+		const :ref:`CoordinateSystem<doxid-classgeode_1_1_coordinate_system>`<dimension>& :ref:`grid_coordinate_system<doxid-classgeode_1_1_grid_1a734dbe868afe23fc387d7ca114f562c8>`() const;
 		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_vertices<doxid-classgeode_1_1_grid_1a0002bbcca35721156935ac671d7e3ee6>`() const;
 		double :ref:`cell_length_in_direction<doxid-classgeode_1_1_grid_1a026997ee7c2efcc4f910bc4bf8474a3c>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction) const;
 		double :ref:`cell_size<doxid-classgeode_1_1_grid_1ab798fa361e5dc94726c1f9477f68e570>`() const;
@@ -251,10 +252,16 @@ Inherited Members
 		:ref:`CellsAroundVertex<doxid-classgeode_1_1_grid_1aef9092356509be9512cc08f610f3cc67>` :ref:`cells<doxid-classgeode_1_1_grid_1aa2715e6c5fceda7836ac3b775af7d4b6>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		virtual :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`cell_attribute_manager<doxid-classgeode_1_1_grid_1ac1700582e458b4f7de05a37f12811497>`() const = 0;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`grid_bounding_box<doxid-classgeode_1_1_grid_1aa8e929bb5853b175ee9652ceec4a7464>`() const;
+		void :ref:`set_grid_origin<doxid-classgeode_1_1_grid_1aa091e8cad2e14ef3e04039899c41e2d8>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> origin, GridKey);
 	
 		void :ref:`set_grid_dimensions<doxid-classgeode_1_1_grid_1ac89b3677c5413aaa60a98ecd84443c21>`(
 			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> cells_number,
 			std::array<double, dimension> cells_length,
+			GridKey
+			);
+	
+		void :ref:`set_grid_directions<doxid-classgeode_1_1_grid_1a65f99a13c5be37d4d7879ac779d645b3>`(
+			std::array<:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>, dimension> directions,
 			GridKey
 			);
 	
