@@ -19,3 +19,7 @@ class geode::ImplicitCrossSectionInput
 	{
 	public:
 	};
+
+	// direct descendants
+
+	class :ref:`OpenGeodeImplicitCrossSectionInput<doxid-classgeode_1_1_open_geode_implicit_cross_section_input>`;

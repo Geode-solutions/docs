@@ -38,6 +38,10 @@ namespace geode
 	class_geode_OpenGeodeCrossSectionOutput.rst
 	class_geode_OpenGeodeHorizonsStackInput.rst
 	class_geode_OpenGeodeHorizonsStackOutput.rst
+	class_geode_OpenGeodeImplicitCrossSectionInput.rst
+	class_geode_OpenGeodeImplicitCrossSectionOutput.rst
+	class_geode_OpenGeodeImplicitStructuralModelInput.rst
+	class_geode_OpenGeodeImplicitStructuralModelOutput.rst
 	class_geode_OpenGeodeStructuralModelInput.rst
 	class_geode_OpenGeodeStructuralModelOutput.rst
 	class_geode_StratigraphicModel.rst
@@ -158,6 +162,10 @@ Overview
 	template <index_t dimension>
 	class :ref:`OpenGeodeHorizonsStackOutput<doxid-classgeode_1_1_open_geode_horizons_stack_output>`;
 
+	class :ref:`OpenGeodeImplicitCrossSectionInput<doxid-classgeode_1_1_open_geode_implicit_cross_section_input>`;
+	class :ref:`OpenGeodeImplicitCrossSectionOutput<doxid-classgeode_1_1_open_geode_implicit_cross_section_output>`;
+	class :ref:`OpenGeodeImplicitStructuralModelInput<doxid-classgeode_1_1_open_geode_implicit_structural_model_input>`;
+	class :ref:`OpenGeodeImplicitStructuralModelOutput<doxid-classgeode_1_1_open_geode_implicit_structural_model_output>`;
 	class :ref:`OpenGeodeStructuralModelInput<doxid-classgeode_1_1_open_geode_structural_model_input>`;
 	class :ref:`OpenGeodeStructuralModelOutput<doxid-classgeode_1_1_open_geode_structural_model_output>`;
 	class :ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`;
