@@ -19,6 +19,7 @@ namespace geode::detail
 	class_geode_detail_SurfaceMeshMerger.rst
 	class_geode_detail_UuidToIndex.rst
 	class_geode_detail_VertexCycle.rst
+	class_geode_detail_VertexMerger.rst
 
 
 
@@ -67,6 +68,9 @@ namespace geode::detail
 
 	template <typename Container>
 	class :ref:`VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle>`;
+
+	template <typename Mesh>
+	class :ref:`VertexMerger<doxid-classgeode_1_1detail_1_1_vertex_merger>`;
 
 	// global variables
 

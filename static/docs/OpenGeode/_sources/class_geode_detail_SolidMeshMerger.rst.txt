@@ -18,7 +18,7 @@ template class geode::detail::SolidMeshMerger
 	#include <solid_merger.h>
 	
 	template <index_t dimension>
-	class SolidMeshMerger
+	class SolidMeshMerger: public :ref:`geode::detail::VertexMerger<doxid-classgeode_1_1detail_1_1_vertex_merger>`
 	{
 	public:
 		// typedefs
@@ -39,7 +39,28 @@ template class geode::detail::SolidMeshMerger
 		// methods
 	
 		std::unique_ptr<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> :target:`merge<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1a6e672b0884afa3e5ffe441304e951838>`();
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_in_merged<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1ae89d968e4e6a025e0069b936288a64fa>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` solid, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex) const;
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polyhedron_in_merged<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1a59ec13d97200924042417761145ea3b5>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` solid, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron) const;
 		const :ref:`PolyhedronOrigins<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1ad48382831238101ed2f738c48f76a9cb>`& :target:`polyhedron_origins<doxid-classgeode_1_1detail_1_1_solid_mesh_merger_1a0ca75b54478f38a1955c2c19573a0768>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polyhedron) const;
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef typename Mesh::Builder :ref:`Builder<doxid-classgeode_1_1detail_1_1_vertex_merger_1a3e2d5b82af2ed6ab4cefb8eff34d8d39>`;
+		typedef absl::InlinedVector<:ref:`VertexOrigin<doxid-structgeode_1_1detail_1_1_vertex_merger_1_1_vertex_origin>`, 1> :ref:`VertexOrigins<doxid-classgeode_1_1detail_1_1_vertex_merger_1a179ae70fdd0395604ab2901bf1ffb4b7>`;
+
+		// structs
+	
+		struct :ref:`VertexOrigin<doxid-structgeode_1_1detail_1_1_vertex_merger_1_1_vertex_origin>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`vertex_in_merged<doxid-classgeode_1_1detail_1_1_vertex_merger_1af40ab4dc9c45f055786e4e37c923a566>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` mesh, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex) const;
+		const :ref:`VertexOrigins<doxid-classgeode_1_1detail_1_1_vertex_merger_1a179ae70fdd0395604ab2901bf1ffb4b7>`& :ref:`vertex_origins<doxid-classgeode_1_1detail_1_1_vertex_merger_1a4b4e0a77f96952d6c947a4f8eeda3105>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex) const;
+
