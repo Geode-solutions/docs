@@ -56,6 +56,9 @@ Inherited Members
 		template <index_t T = dimension>
 		std::enable_if<T==3, absl::optional<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`>>::type :ref:`pivot<doxid-classgeode_1_1_generic_triangle_1a4f64457d591db43da2b0c1a0a57ed223>`() const;
 	
+		template <index_t T = dimension>
+		std::enable_if<T==3, absl::optional<std::pair<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, Vector3D>>>::type :ref:`pivot_and_normal<doxid-classgeode_1_1_generic_triangle_1a42bbe33c540e866cb42545d356604f1a>`() const;
+	
 		void :ref:`set_point<doxid-classgeode_1_1_generic_triangle_1a2be2ab311cfd6a7cd28da74f0addecf3>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, PointType point);
 		const std::array<PointType, 3>& :ref:`vertices<doxid-classgeode_1_1_generic_triangle_1ad9281b6fcbd2c41d0a4dd89e4208e43c>`() const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_generic_triangle_1a8758562d665daaffc5cd431da00ea29d>`() const;
