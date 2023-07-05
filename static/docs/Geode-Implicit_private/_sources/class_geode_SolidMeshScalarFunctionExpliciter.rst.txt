@@ -20,10 +20,12 @@ class geode::SolidMeshScalarFunctionExpliciter
 	public:
 		// construction
 	
-		:target:`SolidMeshScalarFunctionExpliciter<doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter_1ac4c75df07e1195460cd661731af92682>`(
-			const TetrahedralSolid3D& grid,
+		:target:`SolidMeshScalarFunctionExpliciter<doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter_1ac18f387fb396501900b73883ac854d11>`(
+			TetrahedralSolid3D&& solid,
 			absl::string_view scalar_function_name
 			);
+	
+		:target:`SolidMeshScalarFunctionExpliciter<doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter_1a1932a6de759da5fd1542fc40e5fce3d8>`(SolidMeshScalarFunctionExpliciter&& expliciter);
 
 		// methods
 	
