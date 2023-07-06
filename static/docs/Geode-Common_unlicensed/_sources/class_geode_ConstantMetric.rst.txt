@@ -28,6 +28,7 @@ Constant metric implementation
 		virtual double :target:`metric<doxid-classgeode_1_1_constant_metric_1a6ea8dd6170278abfaa106df37e05c896>`(const Point<dimension>&) const;
 		double :target:`constant_metric<doxid-classgeode_1_1_constant_metric_1af5714533c573f1053ac8ad6ed0652196>`() const;
 		virtual double :target:`average_metric<doxid-classgeode_1_1_constant_metric_1a617c2145146ef5db78fcb9ea8e73eb13>`() const;
+		virtual double :target:`median_metric<doxid-classgeode_1_1_constant_metric_1a3e664b0b9f40c3a95e4d8c8694bde3a0>`() const;
 	};
 
 Inherited Members
@@ -41,4 +42,5 @@ Inherited Members
 	
 		virtual double :ref:`metric<doxid-classgeode_1_1_metric_1ae7772ff36e4ab8e23abc1fca5f81e21b>`(const Point<dimension>& point) const = 0;
 		virtual double :ref:`average_metric<doxid-classgeode_1_1_metric_1a1ac98e57f631f4b5207a0223cfff6768>`() const = 0;
+		virtual double :ref:`median_metric<doxid-classgeode_1_1_metric_1a45de89ade406ffff073d9d32189d6902>`() const = 0;
 
