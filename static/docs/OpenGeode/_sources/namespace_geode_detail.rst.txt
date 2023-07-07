@@ -174,6 +174,23 @@ namespace geode::detail
 	:target:`ALIAS_3D<doxid-namespacegeode_1_1detail_1adc7ebe872359976115ab0f6b1a3246ce>`(:ref:`SolidMeshMerger<doxid-classgeode_1_1detail_1_1_solid_mesh_merger>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1_1detail_1a8d6a6047214e15c4e8de8104fc71d5de>`(:ref:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger>`);
 
+	template <typename Model>
+	:ref:`ModelComponentMeshEdges::LineEdges<doxid-structgeode_1_1_model_component_mesh_edges_1ad1fbb08e72fd8ec7f032668cb8a2e2ff>` :target:`line_component_mesh_edges<doxid-namespacegeode_1_1detail_1ab6a3a3fff360ef8a61701629d4b33f38>`(
+		const Model& model,
+		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_unique_vertices
+		);
+
+	template <typename Model>
+	:ref:`ModelComponentMeshEdges::SurfaceEdges<doxid-structgeode_1_1_model_component_mesh_edges_1a4f52d758e4bec35f440fec14483d676c>` :target:`surface_component_mesh_edges<doxid-namespacegeode_1_1detail_1a7d32ad0e709e2e0d5f9b5a06da03665f>`(
+		const Model& model,
+		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_unique_vertices
+		);
+
+	:ref:`BRepComponentMeshEdges::BlockEdges<doxid-structgeode_1_1_b_rep_component_mesh_edges_1a64ebf3b405f0149337b51a7c3e27430b>` opengeode_model_api :target:`block_component_mesh_edges<doxid-namespacegeode_1_1detail_1ac81032879f9391f857f03e728e026610>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_unique_vertices
+		);
+
 	void opengeode_model_api :target:`build_model_boundaries<doxid-namespacegeode_1_1detail_1af79925c6184671497d3f382924a4643d>`(
 		const :ref:`Section<doxid-classgeode_1_1_section>`& model,
 		:ref:`SectionBuilder<doxid-classgeode_1_1_section_builder>`& builder
