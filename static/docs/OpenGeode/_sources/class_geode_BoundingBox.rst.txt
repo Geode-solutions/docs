@@ -25,6 +25,7 @@ Bounding box implemented for 2D and 3D points. :ref:`More...<details-classgeode_
 		// construction
 	
 		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1aa21de0de5e303073891e631d1d13d8d6>`();
+		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1a3724b2b94654478f2418350d055b2628>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> min, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> max);
 		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1a7d78edf02cd77cc5b959223cd5ed5a74>`(const BoundingBox& other);
 		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1ab4a7ae0d283da73b7642aba161b7cc27>`(BoundingBox&& other);
 
