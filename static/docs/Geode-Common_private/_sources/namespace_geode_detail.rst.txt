@@ -25,6 +25,24 @@ namespace geode::detail
 		const Point<dimension>& point
 		);
 
+	BRepElementsAfterOperation::SurfaceTriangles geode_common_modifier_model_api :target:`triangles_after_collapse_edge<doxid-namespacegeode_1_1detail_1aa8f0d90fba659b36317b471a90c8ec0e>`(
+		const BRep& brep,
+		const BRepComponentMeshEdges::SurfaceEdges& surface_edges,
+		const Point3D& point
+		);
+
+	:ref:`BRepElementsAfterOperation::BlockTetrahedra<doxid-structgeode_1_1_b_rep_elements_after_operation_1ad5e44c7fd95f727f4ea665cb703334d7>` geode_common_modifier_model_api :target:`tetrahedra_after_collapse_edge<doxid-namespacegeode_1_1detail_1a8405e0f1e26bd30bd0ec8ddf2114f098>`(
+		const BRep& brep,
+		const BRepComponentMeshEdges::BlockEdges& block_edges,
+		const Point3D& point
+		);
+
+	SectionElementsAfterOperation::SurfaceTriangles geode_common_modifier_model_api :target:`triangles_after_collapse_edge<doxid-namespacegeode_1_1detail_1a5ac6b4d44f14441de6ca4acf3bdcae9a>`(
+		const Section& section,
+		const SectionComponentMeshEdges::SurfaceEdges& surface_edges,
+		const Point2D& point
+		);
+
 	template <index_t dimension>
 	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a2e98db8963586adc8bd80aa6573c1bd0>`(
 		const SolidMesh<dimension>& solid,

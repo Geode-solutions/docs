@@ -1,0 +1,27 @@
+.. index:: pair: struct; geode::BRepElementsAfterOperation
+.. _doxid-structgeode_1_1_b_rep_elements_after_operation:
+
+struct geode::BRepElementsAfterOperation
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BRepElementsAfterOperation: public ModelElementsAfterOperation3D
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, std::vector<Tetrahedron>> :target:`BlockTetrahedra<doxid-structgeode_1_1_b_rep_elements_after_operation_1ad5e44c7fd95f727f4ea665cb703334d7>`;
+
+		// fields
+	
+		:ref:`BlockTetrahedra<doxid-structgeode_1_1_b_rep_elements_after_operation_1ad5e44c7fd95f727f4ea665cb703334d7>` :target:`block_tetrahedra<doxid-structgeode_1_1_b_rep_elements_after_operation_1ac6c9bc0314aa9b613d9447497668fe93>`;
+	};

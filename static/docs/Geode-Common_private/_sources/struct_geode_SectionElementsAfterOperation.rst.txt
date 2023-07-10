@@ -1,0 +1,20 @@
+.. index:: pair: struct; geode::SectionElementsAfterOperation
+.. _doxid-structgeode_1_1_section_elements_after_operation:
+
+struct geode::SectionElementsAfterOperation
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_geometric_modifier_simulation.h>
+	
+	struct SectionElementsAfterOperation: public ModelElementsAfterOperation2D
+	{
+	};

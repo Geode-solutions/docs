@@ -10,6 +10,7 @@ namespace geode
 	namespace_geode_detail.rst
 	enum_geode_SplitSide.rst
 	struct_geode_BRepCollapseEdgeValidity.rst
+	struct_geode_BRepElementsAfterOperation.rst
 	struct_geode_BRepSimulationResult.rst
 	struct_geode_CutPatchException.rst
 	struct_geode_CutPathException.rst
@@ -20,6 +21,7 @@ namespace geode
 	struct_geode_Mapping-2.rst
 	struct_geode_ModelCollapseEdgeValidity.rst
 	struct_geode_ModelCollapsePolygonEdgeInfo.rst
+	struct_geode_ModelElementsAfterOperation.rst
 	struct_geode_ModelSimulationResult.rst
 	struct_geode_ModelSplitPolygonEdgeInfo.rst
 	struct_geode_ModelSplitTriangleInfo.rst
@@ -33,6 +35,7 @@ namespace geode
 	struct_geode_MultiMapping-2.rst
 	struct_geode_PolygonData.rst
 	struct_geode_PolygonEdgeData.rst
+	struct_geode_SectionElementsAfterOperation.rst
 	struct_geode_SectionSimulationResult.rst
 	struct_geode_SolidCollapseEdgeValidity.rst
 	struct_geode_SolidCutPatchInfo.rst
@@ -103,6 +106,7 @@ Overview
 	// structs
 
 	struct :ref:`BRepCollapseEdgeValidity<doxid-structgeode_1_1_b_rep_collapse_edge_validity>`;
+	struct :ref:`BRepElementsAfterOperation<doxid-structgeode_1_1_b_rep_elements_after_operation>`;
 	struct :ref:`BRepSimulationResult<doxid-structgeode_1_1_b_rep_simulation_result>`;
 	struct :ref:`CutPatchException<doxid-structgeode_1_1_cut_patch_exception>`;
 	struct :ref:`CutPathException<doxid-structgeode_1_1_cut_path_exception>`;
@@ -124,6 +128,9 @@ Overview
 	template <index_t dimension>
 	struct :ref:`ModelCollapsePolygonEdgeInfo<doxid-structgeode_1_1_model_collapse_polygon_edge_info>`;
 
+	template <index_t dimension>
+	struct :ref:`ModelElementsAfterOperation<doxid-structgeode_1_1_model_elements_after_operation>`;
+
 	struct :ref:`ModelSimulationResult<doxid-structgeode_1_1_model_simulation_result>`;
 
 	template <index_t dimension>
@@ -138,11 +145,11 @@ Overview
 	template <index_t dimension>
 	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
 
-	template <index_t dimension>
-	struct :ref:`Modifier<EdgedCurve<dimension>><doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4>`;
-
 	template <>
 	struct :ref:`Modifier<Section><doxid-structgeode_1_1_modifier_3_01_section_01_4>`;
+
+	template <index_t dimension>
+	struct :ref:`Modifier<EdgedCurve<dimension>><doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4>`;
 
 	template <>
 	struct :ref:`Modifier<BRep><doxid-structgeode_1_1_modifier_3_01_b_rep_01_4>`;
@@ -162,6 +169,7 @@ Overview
 	template <index_t dimension>
 	struct :ref:`PolygonEdgeData<doxid-structgeode_1_1_polygon_edge_data>`;
 
+	struct :ref:`SectionElementsAfterOperation<doxid-structgeode_1_1_section_elements_after_operation>`;
 	struct :ref:`SectionSimulationResult<doxid-structgeode_1_1_section_simulation_result>`;
 	struct :ref:`SolidCollapseEdgeValidity<doxid-structgeode_1_1_solid_collapse_edge_validity>`;
 	struct :ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>`;
@@ -451,15 +459,30 @@ Overview
 		const Point3D& point
 		);
 
-	absl::flat_hash_map<uuid, std::vector<Triangle3D>> geode_common_modifier_model_api :target:`triangles_after_collapse_edge<doxid-namespacegeode_1a73668253cb5a0c4e7f670d479f644f59>`(
+	:ref:`BRepElementsAfterOperation<doxid-structgeode_1_1_b_rep_elements_after_operation>` geode_common_modifier_model_api :target:`elements_after_collapse_edge<doxid-namespacegeode_1ab515e37e6fca002b64b99fe96a1f47e7>`(
+		const BRep& brep,
+		const Line3D& line,
+		index_t edge,
+		const Point3D& point
+		);
+
+	:ref:`BRepElementsAfterOperation<doxid-structgeode_1_1_b_rep_elements_after_operation>` geode_common_modifier_model_api :target:`elements_after_collapse_edge<doxid-namespacegeode_1a27320d449e7c3c1c0ea15fa399971fa2>`(
 		const BRep& brep,
 		const Surface3D& surface,
 		const PolygonEdge& edge,
 		const Point3D& point
 		);
 
+	:ref:`BRepElementsAfterOperation<doxid-structgeode_1_1_b_rep_elements_after_operation>` geode_common_modifier_model_api :target:`elements_after_collapse_edge<doxid-namespacegeode_1a153104379a048883de1852223e825168>`(
+		const BRep& brep,
+		const Block3D& block,
+		const PolyhedronFacetEdge& edge,
+		const Point3D& point
+		);
+
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a60bc4102ba1f8bc955e2d5c99bb03828>`(geode_common_modifier_model_api, CommonModifierModel);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a636fdae551e960ca99cdb76f55f4b1c2>`(:ref:`ModelCollapseEdgeValidity<doxid-structgeode_1_1_model_collapse_edge_validity>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a004407dacf09a531aaa6c5d2a6f078ab>`(:ref:`ModelElementsAfterOperation<doxid-structgeode_1_1_model_elements_after_operation>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(Line);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(Surface);
@@ -501,6 +524,20 @@ Overview
 	bool geode_common_modifier_model_api :target:`is_move_point_valid<doxid-namespacegeode_1a1e444ca717fdce3694b325c62413851e>`(
 		const Section& section,
 		index_t unique_vertex,
+		const Point2D& point
+		);
+
+	:ref:`SectionElementsAfterOperation<doxid-structgeode_1_1_section_elements_after_operation>` geode_common_modifier_model_api :target:`elements_after_collapse_edge<doxid-namespacegeode_1abeca54242950ab2beebc7ea0443ce6d9>`(
+		const Section& section,
+		const Line2D& line,
+		index_t edge,
+		const Point2D& point
+		);
+
+	:ref:`SectionElementsAfterOperation<doxid-structgeode_1_1_section_elements_after_operation>` geode_common_modifier_model_api :target:`elements_after_collapse_edge<doxid-namespacegeode_1ad6581dd0f7f8ad01a588f05f39130ed4>`(
+		const Section& section,
+		const Surface2D& surface,
+		const PolygonEdge& edge,
 		const Point2D& point
 		);
 
