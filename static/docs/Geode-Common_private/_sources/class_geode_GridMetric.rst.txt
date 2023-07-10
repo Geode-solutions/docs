@@ -25,7 +25,9 @@ Grid metric implementation
 
 		// methods
 	
+		const Grid<dimension>& :target:`grid<doxid-classgeode_1_1_grid_metric_1a62678f3266e0eb81c4010aa716a80d0d>`() const;
 		virtual double :target:`metric<doxid-classgeode_1_1_grid_metric_1a146ca0b3c59de88c6ec23f02ee51c409>`(const Point<dimension>& point) const;
+		double :target:`metric<doxid-classgeode_1_1_grid_metric_1a2d8f237a18d75c7bdd29bd39e75821a6>`(index_t cell_index) const;
 		virtual double :target:`average_metric<doxid-classgeode_1_1_grid_metric_1a148e8f2a7343f5d0894f22d54b1fbf62>`() const;
 		virtual double :target:`median_metric<doxid-classgeode_1_1_grid_metric_1aa7cbb131d81d24aa016ca7a490309758>`() const;
 		void :target:`paint_point<doxid-classgeode_1_1_grid_metric_1ab2987a215a502cdfcbf4fe88e890a934>`(const Point<dimension>& point, double metric);
