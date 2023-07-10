@@ -1867,6 +1867,8 @@ Overview
 	template <template<index_t> class Mesh, index_t dimension>
 	:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`<dimension> :target:`create_nn_search<doxid-namespacegeode_1abeee5ff5c5a7319611e59fe60ff6f740>`(const Mesh<dimension>& mesh);
 
+	:target:`ALIAS_3D<doxid-namespacegeode_1a1ddeb21714a09b8da27ca40858681e57>`(:ref:`Grid<doxid-classgeode_1_1_grid>`);
+
 	template <index_t dimension>
 	std::vector<typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> :target:`rasterize_segment<doxid-namespacegeode_1a57b98dcfdf03f85bc30d00e97504fc7f>`(
 		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
@@ -1883,6 +1885,11 @@ Overview
 	std::vector<typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> :target:`rasterize_triangle<doxid-namespacegeode_1a1039948d950876b311030abbae1ccf67>`(
 		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
+		);
+
+	std::vector<Grid3D::CellIndices> opengeode_mesh_api :target:`rasterize_closed_surface<doxid-namespacegeode_1a71888c7653f27ed501198ea42f25b005>`(
+		const Grid3D& grid,
+		const TriangulatedSurface3D& closed_surface
 		);
 
 	:target:`ALIAS_3D<doxid-namespacegeode_1a8494fd593c0c13b77aa7c916bb8662e2>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`);
