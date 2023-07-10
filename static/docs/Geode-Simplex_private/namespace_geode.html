@@ -89,6 +89,28 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4efa1c27af37ca80b792b5290f406968"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f0825f02564723bd52f856a1ae100c9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9f332d4b751380fbeae92ba04ba2601f"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_simplex_metric_api</span><span class="p">,</span> <span class="n">SimplexMetric</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a241c0639776a8fe28435273c861a89e1"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">ConstantMetric</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2f05b7580b7a85b3c2b4e4922291e704"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">GridMetric</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0e9305577914c9336afeeeb714cae321"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">CustomGridMetric</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
+<span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a85b49dd28f1c5f8251c4664c39d906bb"><span></span><span class="n">nb_minimum_apriori_simplex_elements</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">ConstantMetric</span><span class="o">&lt;</span><span class="n">Model</span><span class="o">::</span><span class="n">dim</span><span class="o">&gt;&amp;</span> <span class="n">metric</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">model</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
+<span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ace8fab5057bf2b609a2cf3ca76ba9438"><span></span><span class="n">nb_minimum_apriori_simplex_elements</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">GridMetric</span><span class="o">&lt;</span><span class="n">Model</span><span class="o">::</span><span class="n">dim</span><span class="o">&gt;&amp;</span> <span class="n">metric</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">model</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
+<span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2d90e53805e9717e6b9f53f41b9b814b"><span></span><span class="n">nb_minimum_apriori_simplex_elements</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">CustomGridMetric</span><span class="o">&lt;</span><span class="n">Model</span><span class="o">::</span><span class="n">dim</span><span class="o">&gt;&amp;</span> <span class="n">metric</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Model</span><span class="o">&amp;</span> <span class="n">model</span>
+    <span class="p">);</span>
+
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5cfa2b7765eb0c1e52445038d29a7317"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Corner</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a85b04296d2e759083127ceaf2a792264"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7da074eb0c591f0688ceeb11edd1fc9b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Metric</span><span class="p">);</span>

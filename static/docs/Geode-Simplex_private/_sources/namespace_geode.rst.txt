@@ -70,6 +70,28 @@ namespace geode
 	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(Surface);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a9f332d4b751380fbeae92ba04ba2601f>`(geode_simplex_metric_api, SimplexMetric);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a241c0639776a8fe28435273c861a89e1>`(ConstantMetric);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a2f05b7580b7a85b3c2b4e4922291e704>`(GridMetric);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0e9305577914c9336afeeeb714cae321>`(CustomGridMetric);
+
+	template <typename Model>
+	index_t :target:`nb_minimum_apriori_simplex_elements<doxid-namespacegeode_1a85b49dd28f1c5f8251c4664c39d906bb>`(
+		const ConstantMetric<Model::dim>& metric,
+		const Model& model
+		);
+
+	template <typename Model>
+	index_t :target:`nb_minimum_apriori_simplex_elements<doxid-namespacegeode_1ace8fab5057bf2b609a2cf3ca76ba9438>`(
+		const GridMetric<Model::dim>& metric,
+		const Model& model
+		);
+
+	template <typename Model>
+	index_t :target:`nb_minimum_apriori_simplex_elements<doxid-namespacegeode_1a2d90e53805e9717e6b9f53f41b9b814b>`(
+		const CustomGridMetric<Model::dim>& metric,
+		const Model& model
+		);
+
 	:target:`ALIAS_2D<doxid-namespacegeode_1a5cfa2b7765eb0c1e52445038d29a7317>`(Corner);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(Line);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a7da074eb0c591f0688ceeb11edd1fc9b>`(Metric);
