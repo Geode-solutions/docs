@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="class geode::RegularGridScalarFunctionExpliciter2D" href="class_geode_RegularGridScalarFunctionExpliciter2D.html" />
-    <link rel="prev" title="class geode::ImplicitStructuralModelHorizonExpliciter" href="class_geode_ImplicitStructuralModelHorizonExpliciter.html" />
+    <link rel="prev" title="class geode::ImplicitStructuralModeler" href="class_geode_ImplicitStructuralModeler.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -45,16 +45,16 @@
 <span class="k">public</span><span class="o">:</span>
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-scalar-function-computer-1ac9c7cdb4779e564d5334a15cb9600d50"><span></span><span class="n">RegularGridScalarFunctionComputer</span></span><span></span><span class="p">(</span>
-        <span class="k">const</span> <span class="n">DataConstraintManager</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">constraints_manager</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-scalar-function-computer-1ab3a62f3f3de7264b4ffae47941ec7087"><span></span><span class="n">RegularGridScalarFunctionComputer</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">DataConstraintsManager</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">constraints_manager</span><span class="p">,</span>
         <span class="k">const</span> <span class="n">BoundingBox</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">computation_bbox</span><span class="p">,</span>
         <span class="kt">double</span> <span class="n">max_cell_length</span><span class="p">,</span>
-        <span class="n">RegularGridScalarFunctionComputerType</span> <span class="n">computer_type</span>
+        <span class="n">GridScalarFunctionComputerType</span> <span class="n">computer_type</span>
         <span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-scalar-function-computer-1a5f054a28a7c02151c071dc7b7937e0be"><span></span><span class="n">set_function_computer_type</span></span><span></span><span class="p">(</span><span class="n">RegularGridScalarFunctionComputerType</span> <span class="n">new_computer_type</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-scalar-function-computer-1ab9baf4e7227b507032afab9d9662deb8"><span></span><span class="n">set_function_computer_type</span></span><span></span><span class="p">(</span><span class="n">GridScalarFunctionComputerType</span> <span class="n">new_computer_type</span><span class="p">);</span>
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-scalar-function-computer-1a8a73e5e4eeb68fb8487f36e972fac331"><span></span><span class="n">compute_scalar_function</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">scalar_function_name</span><span class="p">);</span>
 
     <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-regular-grid-scalar-function-computer-1a5120d92b2f7758286cdecaa9b3dfa5cd"><span></span><span class="n">compute_scalar_function_with_value_preconditioning</span></span><span></span><span class="p">(</span>

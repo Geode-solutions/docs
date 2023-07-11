@@ -21,16 +21,16 @@ template class geode::RegularGridScalarFunctionComputer
 	public:
 		// construction
 	
-		:target:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer_1ac9c7cdb4779e564d5334a15cb9600d50>`(
-			const DataConstraintManager<dimension>& constraints_manager,
+		:target:`RegularGridScalarFunctionComputer<doxid-classgeode_1_1_regular_grid_scalar_function_computer_1ab3a62f3f3de7264b4ffae47941ec7087>`(
+			const DataConstraintsManager<dimension>& constraints_manager,
 			const BoundingBox<dimension>& computation_bbox,
 			double max_cell_length,
-			RegularGridScalarFunctionComputerType computer_type
+			GridScalarFunctionComputerType computer_type
 			);
 
 		// methods
 	
-		void :target:`set_function_computer_type<doxid-classgeode_1_1_regular_grid_scalar_function_computer_1a5f054a28a7c02151c071dc7b7937e0be>`(RegularGridScalarFunctionComputerType new_computer_type);
+		void :target:`set_function_computer_type<doxid-classgeode_1_1_regular_grid_scalar_function_computer_1ab9baf4e7227b507032afab9d9662deb8>`(GridScalarFunctionComputerType new_computer_type);
 		void :target:`compute_scalar_function<doxid-classgeode_1_1_regular_grid_scalar_function_computer_1a8a73e5e4eeb68fb8487f36e972fac331>`(absl::string_view scalar_function_name);
 	
 		void :target:`compute_scalar_function_with_value_preconditioning<doxid-classgeode_1_1_regular_grid_scalar_function_computer_1a5120d92b2f7758286cdecaa9b3dfa5cd>`(
