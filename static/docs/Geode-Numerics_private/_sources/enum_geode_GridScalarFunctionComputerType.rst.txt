@@ -1,0 +1,23 @@
+.. index:: pair: enum; GridScalarFunctionComputerType
+.. _doxid-namespacegeode_1a61669d05cb261d9fdd6dcd53dd807dfc:
+
+enum geode::GridScalarFunctionComputerType
+==========================================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <grid_FDM_derivatives_minimization.h>
+
+	enum GridScalarFunctionComputerType
+	{
+	    :target:`FDM_laplacian_minimization<doxid-namespacegeode_1a61669d05cb261d9fdd6dcd53dd807dfca442f00d31ac3428cd8b489ab0dfbcedc>`,
+	    :target:`FDM_hessian_minimization<doxid-namespacegeode_1a61669d05cb261d9fdd6dcd53dd807dfcaf976b259620a80f1c6d9aa8d7c0718df>`,
+	    :target:`FDM_curvature_minimization<doxid-namespacegeode_1a61669d05cb261d9fdd6dcd53dd807dfcafead0486df63bd5dd6b7c6b91a46486a>`,
+	    :target:`FDM_boundaryfree_laplacian_minimization<doxid-namespacegeode_1a61669d05cb261d9fdd6dcd53dd807dfcacc4950210845aaff7fde534857c3f740>`,
+	    :target:`FDM_boundaryfree_hessian_minimization<doxid-namespacegeode_1a61669d05cb261d9fdd6dcd53dd807dfca216423bb605082966c94dab5977a1f03>`,
+	    :target:`FDM_boundaryfree_curvature_minimization<doxid-namespacegeode_1a61669d05cb261d9fdd6dcd53dd807dfcabfcaed3798a49a1e3d6827b0c2751c0f>`,
+	};
+

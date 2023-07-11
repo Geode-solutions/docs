@@ -1,0 +1,49 @@
+.. index:: pair: class; geode::GridFDMBoundaryFreeHessianMinimization
+.. _doxid-classgeode_1_1_grid_f_d_m_boundary_free_hessian_minimization:
+
+template class geode::GridFDMBoundaryFreeHessianMinimization
+============================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <grid_FDM_boundaryfree_hessian_minimization.h>
+	
+	template <index_t dimension>
+	class GridFDMBoundaryFreeHessianMinimization: public :ref:`geode::GridDerivativesMinimization<doxid-classgeode_1_1_grid_derivatives_minimization>`
+	{
+	public:
+		// construction
+	
+		:target:`GridFDMBoundaryFreeHessianMinimization<doxid-classgeode_1_1_grid_f_d_m_boundary_free_hessian_minimization_1a0c52ed2bb948505981c5d363556c8c52>`(
+			const Grid<dimension>& grid,
+			const :ref:`DataConstraintsManager<doxid-classgeode_1_1_data_constraints_manager>`<dimension>& data_constraints
+			);
+
+		// methods
+	
+		virtual void :target:`use_constraint_value_preconditioning<doxid-classgeode_1_1_grid_f_d_m_boundary_free_hessian_minimization_1a5858b26a27d1e9857320a4e5923a8800>`();
+		virtual void :target:`use_scalar_function_preconditioning<doxid-classgeode_1_1_grid_f_d_m_boundary_free_hessian_minimization_1a447160569edd615420a2c98e210eade7>`(absl::string_view function_name);
+		virtual RegularGridScalarFunction<dimension> :target:`compute_scalar_function<doxid-classgeode_1_1_grid_f_d_m_boundary_free_hessian_minimization_1a2d217a8fc1a8c048dc9fff7d47f4b334>`(absl::string_view scalar_function_name);
+		static :ref:`GridScalarFunctionComputerType<doxid-namespacegeode_1a61669d05cb261d9fdd6dcd53dd807dfc>` :target:`impl_type_static<doxid-classgeode_1_1_grid_f_d_m_boundary_free_hessian_minimization_1a6bca34feb89e26cef8de4daf10667eb8>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		virtual void :ref:`use_constraint_value_preconditioning<doxid-classgeode_1_1_grid_derivatives_minimization_1aed9e9352fb8cb8b60c129e2cb28bcb50>`() = 0;
+		virtual void :ref:`use_scalar_function_preconditioning<doxid-classgeode_1_1_grid_derivatives_minimization_1a0b1259a3a7c16f6784cfc26b2b5c8da1>`(absl::string_view function_name) = 0;
+		virtual RegularGridScalarFunction<dimension> :ref:`compute_scalar_function<doxid-classgeode_1_1_grid_derivatives_minimization_1acb9516e786c649e215a4ed255c7a5d56>`(absl::string_view scalar_function_name) = 0;
+
