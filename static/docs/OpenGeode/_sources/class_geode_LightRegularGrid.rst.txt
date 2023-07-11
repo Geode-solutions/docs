@@ -16,7 +16,9 @@ template class geode::LightRegularGrid
 	#include <light_regular_grid.h>
 	
 	template <index_t dimension>
-	class LightRegularGrid: public :ref:`geode::Grid<doxid-classgeode_1_1_grid>`
+	class LightRegularGrid:
+	    public :ref:`geode::Grid<doxid-classgeode_1_1_grid>`,
+	    private :ref:`geode::Identifier<doxid-classgeode_1_1_identifier>`
 	{
 	public:
 		// typedefs
@@ -45,6 +47,7 @@ template class geode::LightRegularGrid
 		virtual :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`cell_index<doxid-classgeode_1_1_light_regular_grid_1a5679c5c8dc401a8593888bc08487265d>`(const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& index) const;
 		virtual :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>` :target:`cell_indices<doxid-classgeode_1_1_light_regular_grid_1a811fe27121feb4e5521a529d63acd48f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` index) const;
 		virtual :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`cell_attribute_manager<doxid-classgeode_1_1_light_regular_grid_1ae8fc6ddfaa5b3133d3b6998362d70619>`() const;
+		virtual :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`grid_vertex_attribute_manager<doxid-classgeode_1_1_light_regular_grid_1ab1951c5ddbf31c0d7df6f9429e9d2d6d>`() const;
 	};
 
 Inherited Members
@@ -67,6 +70,7 @@ Inherited Members
 	
 		static constexpr auto :ref:`dim<doxid-classgeode_1_1_cell_array_1a80ff42693e2de717be9b1539a311cfd1>` = dimension;
 		static constexpr auto :ref:`dim<doxid-classgeode_1_1_grid_1a02019d81dfd0d6e6ebd5a34db2a2852b>` = dimension;
+		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
 
 		// methods
 	
@@ -122,6 +126,7 @@ Inherited Members
 		:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>` :ref:`closest_vertex<doxid-classgeode_1_1_grid_1afb70a567aabc60b134739e392c6819eb>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`CellsAroundVertex<doxid-classgeode_1_1_grid_1aef9092356509be9512cc08f610f3cc67>` :ref:`cells<doxid-classgeode_1_1_grid_1aa2715e6c5fceda7836ac3b775af7d4b6>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		virtual :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`cell_attribute_manager<doxid-classgeode_1_1_grid_1ac1700582e458b4f7de05a37f12811497>`() const = 0;
+		virtual :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`grid_vertex_attribute_manager<doxid-classgeode_1_1_grid_1a0e1c6cedd4994c1099b588836760cfa1>`() const = 0;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`grid_bounding_box<doxid-classgeode_1_1_grid_1aa8e929bb5853b175ee9652ceec4a7464>`() const;
 		void :ref:`set_grid_origin<doxid-classgeode_1_1_grid_1aa091e8cad2e14ef3e04039899c41e2d8>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> origin, GridKey);
 	
@@ -138,4 +143,10 @@ Inherited Members
 	
 		void :ref:`copy<doxid-classgeode_1_1_grid_1ac369b76350f09c78e270e9bf7ecba75e>`(const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid, GridKey);
 		static constexpr :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`nb_cell_vertices_static<doxid-classgeode_1_1_grid_1a34bf84c36e2e35720ffb6a6b502b550d>`();
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`id<doxid-classgeode_1_1_identifier_1a32f0ba602aaca6856fc6858092326ab1>`() const;
+		absl::string_view :ref:`name<doxid-classgeode_1_1_identifier_1a7be1aea6e7c78e4844040a6d972614a8>`() const;
+		void :ref:`save_identifier<doxid-classgeode_1_1_identifier_1a32e167673aab3d16cdd19da604293288>`(absl::string_view directory) const;
+		void :ref:`set_id<doxid-classgeode_1_1_identifier_1a8d2b8d1a63e26a5766ae89ed83e1a539>`(:ref:`uuid<doxid-structgeode_1_1uuid>` id, IdentifierKey);
+		void :ref:`set_name<doxid-classgeode_1_1_identifier_1a99869829b2e1db630aee0a8a25d7fe33>`(absl::string_view name, IdentifierKey);
+		void :ref:`load_identifier<doxid-classgeode_1_1_identifier_1a52e5c81028516f44a47b3fd6ca7211b7>`(absl::string_view directory, IdentifierKey);
 

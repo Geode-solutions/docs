@@ -1736,6 +1736,10 @@ Overview
 		);
 
 	absl::optional<std::unique_ptr<TetrahedralSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_tetrahedral_solid<doxid-namespacegeode_1ad88abdc0180700dd94d4dc05d56f4149>`(const SolidMesh3D& solid);
+
+	template <class GridType>
+	std::unique_ptr<TetrahedralSolid3D> :target:`convert_grid_into_tetrahedral_solid<doxid-namespacegeode_1a32bd2fba815b9994b4d57195861490ef>`(const GridType& grid);
+
 	absl::optional<std::unique_ptr<HybridSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_hybrid_solid<doxid-namespacegeode_1aee780b546697560d17bbab12c00af658>`(const SolidMesh3D& solid);
 	std::unique_ptr<SolidMesh3D> opengeode_mesh_api :target:`merge_solid_meshes<doxid-namespacegeode_1a07d4f079e9d7b110ac110ae09f301844>`(absl::Span<const std::reference_wrapper<const SolidMesh3D>> solids);
 

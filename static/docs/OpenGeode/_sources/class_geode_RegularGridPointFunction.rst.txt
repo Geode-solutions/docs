@@ -42,14 +42,14 @@ Overview
 			const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices& grid_cell_indices
 			) const;
 	
-		static RegularGridPointFunction<dimension, point_dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_point_function_1aedb30b88c8d1648a73c68c223991ffb9>`(
-			const RegularGrid<dimension>& grid,
+		static RegularGridPointFunction<dimension, point_dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_point_function_1a233335248e16356ade1b5f2404312ed1>`(
+			const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 			absl::string_view function_name,
 			:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value
 			);
 	
-		static RegularGridPointFunction<dimension, point_dimension> :ref:`find<doxid-classgeode_1_1_regular_grid_point_function_1a6aaa78c6d4906969e43af1fee10a9dfc>`(
-			const RegularGrid<dimension>& grid,
+		static RegularGridPointFunction<dimension, point_dimension> :ref:`find<doxid-classgeode_1_1_regular_grid_point_function_1a19b43fc0cece6810507b973aadf652c1>`(
+			const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 			absl::string_view function_name
 			);
 	};
@@ -64,13 +64,13 @@ Methods
 -------
 
 .. index:: pair: function; create
-.. _doxid-classgeode_1_1_regular_grid_point_function_1aedb30b88c8d1648a73c68c223991ffb9:
+.. _doxid-classgeode_1_1_regular_grid_point_function_1a233335248e16356ade1b5f2404312ed1:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	static RegularGridPointFunction<dimension, point_dimension> create(
-		const RegularGrid<dimension>& grid,
+		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		absl::string_view function_name,
 		:ref:`Point<doxid-classgeode_1_1_point>`<point_dimension> value
 		)
@@ -78,13 +78,13 @@ Methods
 Create a new object function from a RegularGrid, a name, and a value. Throws an exception if an attribute with the same name exists.
 
 .. index:: pair: function; find
-.. _doxid-classgeode_1_1_regular_grid_point_function_1a6aaa78c6d4906969e43af1fee10a9dfc:
+.. _doxid-classgeode_1_1_regular_grid_point_function_1a19b43fc0cece6810507b973aadf652c1:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	static RegularGridPointFunction<dimension, point_dimension> find(
-		const RegularGrid<dimension>& grid,
+		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		absl::string_view function_name
 		)
 

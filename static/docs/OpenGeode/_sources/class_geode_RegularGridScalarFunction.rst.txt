@@ -42,14 +42,14 @@ Overview
 			const typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices& grid_cell_indices
 			) const;
 	
-		static RegularGridScalarFunction<dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_scalar_function_1ad9dd9d9d1101e677d9972fcae411090c>`(
-			const RegularGrid<dimension>& grid,
+		static RegularGridScalarFunction<dimension> :ref:`create<doxid-classgeode_1_1_regular_grid_scalar_function_1a0f9fbadc3eecb207f1e726ab31fa6e13>`(
+			const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 			absl::string_view function_name,
 			double value
 			);
 	
-		static RegularGridScalarFunction<dimension> :ref:`find<doxid-classgeode_1_1_regular_grid_scalar_function_1af815f36f6a26ff0af396472f2e51d69a>`(
-			const RegularGrid<dimension>& grid,
+		static RegularGridScalarFunction<dimension> :ref:`find<doxid-classgeode_1_1_regular_grid_scalar_function_1a2f369376a51c9709a89b8a6923a45a57>`(
+			const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 			absl::string_view function_name
 			);
 	};
@@ -64,13 +64,13 @@ Methods
 -------
 
 .. index:: pair: function; create
-.. _doxid-classgeode_1_1_regular_grid_scalar_function_1ad9dd9d9d1101e677d9972fcae411090c:
+.. _doxid-classgeode_1_1_regular_grid_scalar_function_1a0f9fbadc3eecb207f1e726ab31fa6e13:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	static RegularGridScalarFunction<dimension> create(
-		const RegularGrid<dimension>& grid,
+		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		absl::string_view function_name,
 		double value
 		)
@@ -78,13 +78,13 @@ Methods
 Create a new object function from a RegularGrid, a name, and a value. Throws an exception if an attribute with the same name exists.
 
 .. index:: pair: function; find
-.. _doxid-classgeode_1_1_regular_grid_scalar_function_1af815f36f6a26ff0af396472f2e51d69a:
+.. _doxid-classgeode_1_1_regular_grid_scalar_function_1a2f369376a51c9709a89b8a6923a45a57:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	static RegularGridScalarFunction<dimension> find(
-		const RegularGrid<dimension>& grid,
+		const :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>& grid,
 		absl::string_view function_name
 		)
 
