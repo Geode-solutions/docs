@@ -25,7 +25,9 @@ template class geode::CustomGridMetric
 
 		// methods
 	
+		const Grid<dimension>& :target:`grid<doxid-classgeode_1_1_custom_grid_metric_1a4dc995cb377cb4e4378b988f84d154f3>`() const;
 		virtual double :target:`metric<doxid-classgeode_1_1_custom_grid_metric_1a8042ae03c6756ab6d4840f064bab2b04>`(const Point<dimension>& point) const;
+		double :target:`metric<doxid-classgeode_1_1_custom_grid_metric_1a9344f6acc48ce9fefc8c173cee166790>`(index_t cell_index) const;
 		virtual double :target:`average_metric<doxid-classgeode_1_1_custom_grid_metric_1a3398a3cc88ec1e33cae5c789c5357dfa>`() const;
 		virtual double :target:`median_metric<doxid-classgeode_1_1_custom_grid_metric_1a5ba46e1c1853374b04870237a3e29334>`() const;
 	};

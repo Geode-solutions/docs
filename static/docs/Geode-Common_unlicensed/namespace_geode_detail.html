@@ -48,6 +48,24 @@
     <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
     <span class="p">);</span>
 
+<span class="n">BRepElementsAfterOperation</span><span class="o">::</span><span class="n">SurfaceTriangles</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1aa8f0d90fba659b36317b471a90c8ec0e"><span></span><span class="n">triangles_after_collapse_edge</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">BRepComponentMeshEdges</span><span class="o">::</span><span class="n">SurfaceEdges</span><span class="o">&amp;</span> <span class="n">surface_edges</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepElementsAfterOperation.html#doxid-structgeode-1-1-b-rep-elements-after-operation-1ad5e44c7fd95f727f4ea665cb703334d7"><span class="std std-ref">BRepElementsAfterOperation::BlockTetrahedra</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a8405e0f1e26bd30bd0ec8ddf2114f098"><span></span><span class="n">tetrahedra_after_collapse_edge</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">BRepComponentMeshEdges</span><span class="o">::</span><span class="n">BlockEdges</span><span class="o">&amp;</span> <span class="n">block_edges</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">SectionElementsAfterOperation</span><span class="o">::</span><span class="n">SurfaceTriangles</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a5ac6b4d44f14441de6ca4acf3bdcae9a"><span></span><span class="n">triangles_after_collapse_edge</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">SectionComponentMeshEdges</span><span class="o">::</span><span class="n">SurfaceEdges</span><span class="o">&amp;</span> <span class="n">surface_edges</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">local_index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a2e98db8963586adc8bd80aa6573c1bd0"><span></span><span class="n">snapping_detection</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">SolidMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">solid</span><span class="p">,</span>
