@@ -102,6 +102,22 @@ export default {
         extension: '.og_strm',
         cpp: "<a href='/opengeode?page=class_geode_StructuralModel.html'><code>StructuralModel</code></a>",
       },
+      {
+        extension: '.og_hst2d',
+        cpp: "<a href='/opengeode?page=class_geode_HorizonsStack.html'><code>HorizonsStack2D</code></a>",
+      },
+      {
+        extension: '.og_hst3d',
+        cpp: "<a href='/opengeode?page=class_geode_HorizonsStack.html'><code>HorizonsStack3D</code></a>",
+      },
+      {
+        extension: '.og_ixsctn',
+        cpp: "<a href='/opengeode?page=class_geode_ImplicitCrossSection.html'><code>ImplicitCrossSection</code></a>",
+      },
+      {
+        extension: '.og_istrm',
+        cpp: "<a href='/opengeode?page=class_geode_ImplicitStructuralModel.html'><code>ImplicitStructuralModel</code></a>",
+      },
     ],
     formats_io: [
       {
