@@ -2100,7 +2100,13 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(:ref:`Surface<doxid-classgeode_1_1_surface>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(:ref:`Block<doxid-classgeode_1_1_block>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(:ref:`Block<doxid-classgeode_1_1_block>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9ef1e2fd6ef5020023fd9aac662f20c3>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	double opengeode_model_api :target:`block_volume<doxid-namespacegeode_1a25042a7a61ec678e3050493b35251684>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Block3D& block);
+
+	BoundingBox3D opengeode_model_api :target:`block_bounding_box<doxid-namespacegeode_1ad9acc70e8d6dccc8d305091f1616ee06>`(
+		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep,
+		const Block3D& block
+		);
 
 	template <index_t dimension>
 	double :target:`surface_area<doxid-namespacegeode_1aa0f9ee6c7b7be37ff8f4fe246aa55aa3>`(const :ref:`Surface<doxid-classgeode_1_1_surface>`<dimension>& surface);
