@@ -64,7 +64,7 @@
     <span class="n">ModelCopyMapping</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-horizons-stack-builder-1a4ce1d248f4872a2d3bf228ccb4b1d528"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_HorizonsStack.html#doxid-classgeode-1-1-horizons-stack"><span class="std std-ref">HorizonsStack</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">horizons_stack</span><span class="p">);</span>
     <span class="n">ModelCopyMapping</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-horizons-stack-builder-1a952f51b82450a9e36995976f60a45b3f"><span></span><span class="n">copy_components</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_HorizonsStack.html#doxid-classgeode-1-1-horizons-stack"><span class="std std-ref">HorizonsStack</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">horizons_stack</span><span class="p">);</span>
 
-    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-horizons-stack-builder-1a93781776ba1115d62d19a39ddd09d71a"><span></span><span class="n">copy</span></span><span></span><span class="p">(</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-horizons-stack-builder-1a93781776ba1115d62d19a39ddd09d71a"><span class="std std-ref">copy</span></a><span></span><span class="p">(</span>
         <span class="n">ModelCopyMapping</span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
         <span class="k">const</span> <a class="reference internal" href="class_geode_HorizonsStack.html#doxid-classgeode-1-1-horizons-stack"><span class="std std-ref">HorizonsStack</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">horizons_stack</span>
         <span class="p">);</span>
@@ -136,7 +136,12 @@
 <p>Class managing modifications of a <a class="reference internal" href="class_geode_HorizonsStack.html#doxid-classgeode-1-1-horizons-stack"><span class="std std-ref">HorizonsStack</span></a></p>
 <section id="methods">
 <h3>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">¶</a></h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-horizons-stack-builder-1ac0b2564d41c19930b12683ee34e335a4"><span id="index-1"></span><span></span><span class="kt">void</span> <span class="n">copy_components</span><span class="p">(</span>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-horizons-stack-builder-1a93781776ba1115d62d19a39ddd09d71a"><span id="index-1"></span><span></span><span class="kt">void</span> <span class="n">copy</span><span class="p">(</span>
+    <span class="n">ModelCopyMapping</span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_HorizonsStack.html#doxid-classgeode-1-1-horizons-stack"><span class="std std-ref">HorizonsStack</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">horizons_stack</span>
+    <span class="p">)</span></pre>
+<p>Copies the stack with the component uuids given by the mapping. Components for which the mapping does not exist are created with a new uuid and added to the mapping.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-horizons-stack-builder-1ac0b2564d41c19930b12683ee34e335a4"><span id="index-2"></span><span></span><span class="kt">void</span> <span class="n">copy_components</span><span class="p">(</span>
     <span class="n">ModelCopyMapping</span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_HorizonsStack.html#doxid-classgeode-1-1-horizons-stack"><span class="std std-ref">HorizonsStack</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">horizons_stack</span>
     <span class="p">)</span></pre>

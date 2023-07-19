@@ -61,6 +61,8 @@ Inherited Members
 	
 		const uuid& :ref:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a69e6317754624bf944beb6d2c25172af>`();
 		const uuid& :ref:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a217c78dec273295715bcf273df22a1ce>`(typename Fault3D::FAULT_TYPE type);
+		void :ref:`add_fault<doxid-classgeode_1_1_structural_model_builder_1a6b2d4503433a94fda79d88902496cb87>`(uuid fault_id);
+		void :ref:`add_fault<doxid-classgeode_1_1_structural_model_builder_1ad51617ac884cb60168235aff737bc01f>`(uuid fault_id, typename Fault3D::FAULT_TYPE type);
 		index_t :ref:`add_surface_in_fault<doxid-classgeode_1_1_structural_model_builder_1a8165157896d097edaac0347bfcc0d77c>`(const Surface3D& surface, const Fault3D& fault);
 		void :ref:`remove_fault<doxid-classgeode_1_1_structural_model_builder_1a50eecd5acdcea94ce012b6ef5be8f570>`(const Fault3D& fault);
 		const uuid& :ref:`add_horizon<doxid-classgeode_1_1_structural_model_builder_1a59d799086e367948498737af391802aa>`();
@@ -75,6 +77,7 @@ Inherited Members
 	
 		void :ref:`remove_horizon<doxid-classgeode_1_1_structural_model_builder_1aae160d2bc57bcbee1fbdd46cf30945b4>`(const Horizon3D& horizon);
 		const uuid& :ref:`add_fault_block<doxid-classgeode_1_1_structural_model_builder_1aa5569e237610918d10bdc622f44098da>`();
+		void :ref:`add_fault_block<doxid-classgeode_1_1_structural_model_builder_1a2ab9ae49feaec544dd2092948dbd3dd4>`(uuid fault_block_id);
 	
 		index_t :ref:`add_block_in_fault_block<doxid-classgeode_1_1_structural_model_builder_1ad3ea04f156bb10e69a6128a0f0fa13cc>`(
 			const Block3D& block,

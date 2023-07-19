@@ -29,6 +29,13 @@ namespace geode::detail
 		);
 
 	template <typename ModelFrom, typename BuilderTo>
+	void :target:`copy_faults<doxid-namespacegeode_1_1detail_1a41bf166b27ba6d0f6ae26db00beceed5>`(
+		const ModelFrom& from,
+		BuilderTo& builder_to,
+		:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>`& mapping
+		);
+
+	template <typename ModelFrom, typename BuilderTo>
 	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_horizons<doxid-namespacegeode_1_1detail_1a07eeb1a38b9f72b9c88329bc4bfde068>`(
 		const ModelFrom& from,
 		BuilderTo& builder_to
@@ -45,6 +52,13 @@ namespace geode::detail
 	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>` :target:`copy_fault_blocks<doxid-namespacegeode_1_1detail_1aada558aceae46cf00917fa021b403261>`(
 		const ModelFrom& from,
 		BuilderTo& builder_to
+		);
+
+	template <typename ModelFrom, typename BuilderTo>
+	void :target:`copy_fault_blocks<doxid-namespacegeode_1_1detail_1a652c73d05b0e78b55879156c28ff3c9a>`(
+		const ModelFrom& from,
+		BuilderTo& builder_to,
+		:ref:`Mapping<doxid-namespacegeode_1_1detail_1a1211d6d4d0e64d30fd7b4beeebc85a78>`& mapping
 		);
 
 	template <typename ModelFrom, typename BuilderTo>
