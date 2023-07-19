@@ -41,6 +41,7 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 	
 		:ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>` :target:`copy<doxid-classgeode_1_1_section_builder_1a1da8af591ab009826b890bad989bbdc7>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
 		:ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>` :target:`copy_components<doxid-classgeode_1_1_section_builder_1a205c7c581ae0e2fa36a0b6fe98570dde>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section);
+		void :target:`copy_components<doxid-classgeode_1_1_section_builder_1a95562b7669f489e89e44990446a9b56c>`(:ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping, const :ref:`Section<doxid-classgeode_1_1_section>`& section);
 	
 		void :target:`copy_component_geometry<doxid-classgeode_1_1_section_builder_1ab49fb28a66798d580fb3a2e525df4ca0>`(
 			const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping,
@@ -54,6 +55,13 @@ Class managing modification of a :ref:`Section <doxid-classgeode_1_1_section>`
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_surface<doxid-classgeode_1_1_section_builder_1a40d5be580b4d063e6b63b87bf009860b>`();
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_surface<doxid-classgeode_1_1_section_builder_1a16c66567ade789944c94d4954802a4e6>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
 		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :target:`add_model_boundary<doxid-classgeode_1_1_section_builder_1a305233732e71f2e2a3fb375bc5935912>`();
+		void :target:`add_corner<doxid-classgeode_1_1_section_builder_1afeb0173ead363c09a53faa6aee9234c4>`(:ref:`uuid<doxid-structgeode_1_1uuid>` corner_id);
+		void :target:`add_corner<doxid-classgeode_1_1_section_builder_1af477c2478a5e500af778d211b9a15bf3>`(:ref:`uuid<doxid-structgeode_1_1uuid>` corner_id, const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
+		void :target:`add_line<doxid-classgeode_1_1_section_builder_1a66f04a76515ea300dd28072adcce666c>`(:ref:`uuid<doxid-structgeode_1_1uuid>` line_id);
+		void :target:`add_line<doxid-classgeode_1_1_section_builder_1ad9975310450d2dd8ae761e87f8ba9bcd>`(:ref:`uuid<doxid-structgeode_1_1uuid>` line_id, const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
+		void :target:`add_surface<doxid-classgeode_1_1_section_builder_1ae0d76b6775260af5ebb0607b2a37bc98>`(:ref:`uuid<doxid-structgeode_1_1uuid>` surface_id);
+		void :target:`add_surface<doxid-classgeode_1_1_section_builder_1ace9463ee9eb08422790270dcb570e4cd>`(:ref:`uuid<doxid-structgeode_1_1uuid>` surface_id, const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
+		void :target:`add_model_boundary<doxid-classgeode_1_1_section_builder_1a1ce02571d5e3fbaf05baf85de02bb3fd>`(:ref:`uuid<doxid-structgeode_1_1uuid>` model_boundary_id);
 	
 		void :target:`update_corner_mesh<doxid-classgeode_1_1_section_builder_1a3b2d1a148751f7b3b2f1c3d1d1cc4432>`(
 			const Corner2D& corner,
