@@ -635,6 +635,13 @@ Overview
 		const Point3D& point
 		);
 
+	absl::FixedArray<Tetrahedron> geode_common_modifier_solid_api :ref:`tetrahedra_after_split_collapse_facet<doxid-namespacegeode_1abd763a6963f8ee3e5b6b36fdda2e13e4>`(
+		const TetrahedralSolid3D& mesh,
+		index_t facet_id,
+		index_t vertex_id,
+		const Point3D& point
+		);
+
 	absl::FixedArray<Tetrahedron> geode_common_modifier_solid_api :ref:`tetrahedra_after_split_edge<doxid-namespacegeode_1a4e480e8866b4619ab3ef224b09fef91d>`(
 		const TetrahedralSolid3D& mesh,
 		const PolyhedronFacetEdge& edge,
@@ -645,6 +652,12 @@ Overview
 		const TetrahedralSolid3D& mesh,
 		index_t edge_id,
 		const Point3D& point
+		);
+
+	absl::FixedArray<Tetrahedron> geode_common_modifier_solid_api :ref:`tetrahedra_after_split_collapse_edge<doxid-namespacegeode_1a37a6a58ed73cfc67e32f2c68ee21acb4>`(
+		const TetrahedralSolid3D& mesh,
+		const PolyhedronFacetEdge& edge,
+		index_t vertex
 		);
 
 	std::tuple<absl::FixedArray<geode::Tetrahedron>, absl::FixedArray<geode::index_t>> geode_common_modifier_solid_api :ref:`tetrahedra_after_collapse_edge<doxid-namespacegeode_1a1cad0cc5d18c91dab8668e653c520ce1>`(
@@ -1476,6 +1489,48 @@ Return all the tetrahedra resulting from a facet split. The split is not applied
 
 		- Coordinates of the split point.
 
+.. index:: pair: function; tetrahedra_after_split_collapse_facet
+.. _doxid-namespacegeode_1abd763a6963f8ee3e5b6b36fdda2e13e4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::FixedArray<Tetrahedron> geode_common_modifier_solid_api tetrahedra_after_split_collapse_facet(
+		const TetrahedralSolid3D& mesh,
+		index_t facet_id,
+		index_t vertex_id,
+		const Point3D& point
+		)
+
+Return all the tetrahedra resulting from a facet split then collapsed. The split and the collapse are not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Tetrahedral mesh on which simulate operation.
+
+	*
+		- facet_id
+
+		- Unique index of the facet on which simulate split.
+
+	*
+		- vertex_id
+
+		- Index of the vertex used to proceed collapse.
+
+	*
+		- point
+
+		- Destimation of the collapse point.
+
 .. index:: pair: function; tetrahedra_after_split_edge
 .. _doxid-namespacegeode_1a4e480e8866b4619ab3ef224b09fef91d:
 
@@ -1547,6 +1602,42 @@ Return all the tetrahedra resulting from an edge split. The split is not applied
 		- point
 
 		- Coordinates of the split point.
+
+.. index:: pair: function; tetrahedra_after_split_collapse_edge
+.. _doxid-namespacegeode_1a37a6a58ed73cfc67e32f2c68ee21acb4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::FixedArray<Tetrahedron> geode_common_modifier_solid_api tetrahedra_after_split_collapse_edge(
+		const TetrahedralSolid3D& mesh,
+		const PolyhedronFacetEdge& edge,
+		index_t vertex
+		)
+
+Return all the tetrahedra resulting from an edge split and edge collapse. The split-collapse operations are not applied.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- mesh
+
+		- Tetrahedral mesh on which simulate operation.
+
+	*
+		- edge
+
+		- Index of the PolyhedronFacetEdge on which simulate split.
+
+	*
+		- vertex
+
+		- Index towards which the split vertex is collapse on.
 
 .. index:: pair: function; tetrahedra_after_collapse_edge
 .. _doxid-namespacegeode_1a1cad0cc5d18c91dab8668e653c520ce1:
