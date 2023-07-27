@@ -94,6 +94,12 @@
         <span class="k">const</span> <a class="reference internal" href="class_geode_InfiniteLine.html#doxid-classgeode-1-1-infinite-line"><span class="std std-ref">InfiniteLine</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">line</span><span class="p">,</span>
         <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
         <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-a-a-b-b-tree-1afb3327874d9944e779dd35d4abe85721"><span class="std std-ref">compute_segment_element_bbox_intersections</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_Segment.html#doxid-classgeode-1-1-segment"><span class="std std-ref">Segment</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span><span class="p">,</span>
+        <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </section>
 <section id="detailed-documentation">
@@ -287,6 +293,32 @@
 </tr>
 <tr class="row-even"><td><p>action</p></td>
 <td><p>The functor to run when a box is intersected by the line.</p></td>
+</tr>
+<tr class="row-odd"><td><p>EvalIntersection</p></td>
+<td><p>this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-a-a-b-b-tree-1afb3327874d9944e779dd35d4abe85721"><span id="index-10"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="k">class</span> <span class="n">EvalIntersection</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="n">compute_segment_element_bbox_intersections</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Segment.html#doxid-classgeode-1-1-segment"><span class="std std-ref">Segment</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">segment</span><span class="p">,</span>
+    <span class="n">EvalIntersection</span><span class="o">&amp;</span> <span class="n">action</span>
+    <span class="p">)</span> <span class="k">const</span></pre>
+<p>Computes the intersections between a given <a class="reference internal" href="class_geode_Segment.html#doxid-classgeode-1-1-segment"><span class="std std-ref">Segment</span></a> and all element boxes.</p>
+<p>the operator define what to do with the box <code class="docutils literal notranslate"><span class="pre">cur_element_box</span></code> if it is intersected by the <code class="docutils literal notranslate"><span class="pre">segment</span></code>.</p>
+<p>The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>segment</p></td>
+<td><p>The segment to test.</p></td>
+</tr>
+<tr class="row-even"><td><p>action</p></td>
+<td><p>The functor to run when a box is intersected by the segment.</p></td>
 </tr>
 <tr class="row-odd"><td><p>EvalIntersection</p></td>
 <td><p>this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;</p></td>

@@ -73,6 +73,12 @@ Overview
 			const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line,
 			EvalIntersection& action
 			) const;
+	
+		template <class EvalIntersection>
+		void :ref:`compute_segment_element_bbox_intersections<doxid-classgeode_1_1_a_a_b_b_tree_1afb3327874d9944e779dd35d4abe85721>`(
+			const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment,
+			EvalIntersection& action
+			) const;
 	};
 .. _details-classgeode_1_1_a_a_b_b_tree:
 
@@ -381,6 +387,46 @@ The returned boolean indicates if the search should stop or continue. Return tru
 		- action
 
 		- The functor to run when a box is intersected by the line.
+
+	*
+		- EvalIntersection
+
+		- this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;
+
+.. index:: pair: function; compute_segment_element_bbox_intersections
+.. _doxid-classgeode_1_1_a_a_b_b_tree_1afb3327874d9944e779dd35d4abe85721:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <class EvalIntersection>
+	void compute_segment_element_bbox_intersections(
+		const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment,
+		EvalIntersection& action
+		) const
+
+Computes the intersections between a given :ref:`Segment <doxid-classgeode_1_1_segment>` and all element boxes.
+
+the operator define what to do with the box ``cur_element_box`` if it is intersected by the ``segment``.
+
+The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- segment
+
+		- The segment to test.
+
+	*
+		- action
+
+		- The functor to run when a box is intersected by the segment.
 
 	*
 		- EvalIntersection
