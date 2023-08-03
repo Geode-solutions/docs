@@ -42,6 +42,11 @@ This class represents a :ref:`Surface <doxid-classgeode_1_1_surface>` made up wi
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polygon_vertex<doxid-classgeode_1_1_surface_mesh_1a13851a5227aa6b579b20d320debf230f>`(const :ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>`& polygon_vertex) const;
 		:ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>` :ref:`polygon_vertices<doxid-classgeode_1_1_surface_mesh_1a4b6a50071aa670c4b5565dad123f1368>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id) const;
 	
+		absl::optional<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`> :ref:`vertex_in_polygon<doxid-classgeode_1_1_surface_mesh_1a5b524fa680de812235ad11082a509ebe>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
+			) const;
+	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`polygon_edge_vertex<doxid-classgeode_1_1_surface_mesh_1a5708356f7feefe15fb153c42ffbe2216>`(
 			const :ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`& polygon_edge,
 			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id
@@ -228,6 +233,42 @@ Return all the indices in the mesh of polygon vertices.
 		- polygon_id
 
 		- Index of polygon.
+
+.. index:: pair: function; vertex_in_polygon
+.. _doxid-classgeode_1_1_surface_mesh_1a5b524fa680de812235ad11082a509ebe:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`> vertex_in_polygon(
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id
+		) const
+
+Return the local index in the polygon of a vertex in the mesh.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- polygon_id
+
+		- Index of polygon.
+
+	*
+		- vertex_id
+
+		- Index of a vertex in the mesh.
+
+
+
+.. rubric:: Returns:
+
+Index in [0, :ref:`nb_polygon_vertices() <doxid-classgeode_1_1_surface_mesh_1a4ffe712847daf083a77b782af9ca5cdb>` [ if polygon is around the given vertex
 
 .. index:: pair: function; polygon_edge_vertex
 .. _doxid-classgeode_1_1_surface_mesh_1a5708356f7feefe15fb153c42ffbe2216:
