@@ -1891,6 +1891,11 @@ Overview
 		const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<dimension>& triangle
 		);
 
+	std::vector<typename Grid3D::CellIndices> opengeode_mesh_api :target:`rasterize_tetrahedron<doxid-namespacegeode_1af24748497c50176d5db9ad478b7b3e87>`(
+		const Grid3D& grid,
+		const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetrahedron
+		);
+
 	std::vector<Grid3D::CellIndices> opengeode_mesh_api :target:`rasterize_closed_surface<doxid-namespacegeode_1a71888c7653f27ed501198ea42f25b005>`(
 		const Grid3D& grid,
 		const TriangulatedSurface3D& closed_surface
