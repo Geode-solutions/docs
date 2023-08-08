@@ -28,6 +28,8 @@ template class geode::CustomGridMetric
 		const Grid<dimension>& :target:`grid<doxid-classgeode_1_1_custom_grid_metric_1a4dc995cb377cb4e4378b988f84d154f3>`() const;
 		virtual double :target:`metric<doxid-classgeode_1_1_custom_grid_metric_1a8042ae03c6756ab6d4840f064bab2b04>`(const Point<dimension>& point) const;
 		double :target:`metric<doxid-classgeode_1_1_custom_grid_metric_1a9344f6acc48ce9fefc8c173cee166790>`(index_t cell_index) const;
+		virtual double :target:`minimal_metric<doxid-classgeode_1_1_custom_grid_metric_1af3ae6190e84b4bbcec32f6192015ec11>`(const Segment<dimension>& segment) const;
+		virtual double :target:`minimal_metric<doxid-classgeode_1_1_custom_grid_metric_1aa74daa679be86f0a58ca1eb6c20fd880>`(const Triangle<dimension>& triangle) const;
 		virtual double :target:`average_metric<doxid-classgeode_1_1_custom_grid_metric_1a3398a3cc88ec1e33cae5c789c5357dfa>`() const;
 		virtual double :target:`median_metric<doxid-classgeode_1_1_custom_grid_metric_1a5ba46e1c1853374b04870237a3e29334>`() const;
 	};
@@ -42,6 +44,12 @@ Inherited Members
 		// methods
 	
 		virtual double :ref:`metric<doxid-classgeode_1_1_metric_1ae7772ff36e4ab8e23abc1fca5f81e21b>`(const Point<dimension>& point) const = 0;
+		virtual double :ref:`minimal_metric<doxid-classgeode_1_1_metric_1a5c9990feed99bc187841f83324d3c502>`(const Segment<dimension>& segment) const = 0;
+		virtual double :ref:`minimal_metric<doxid-classgeode_1_1_metric_1a0baf30abc5e282d0217d6ede00d538c3>`(const Triangle<dimension>& triangle) const = 0;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, double>::type :ref:`minimal_metric<doxid-classgeode_1_1_metric_1ac6ec755d0c368c84391b558722f604ed>`(const Tetrahedron& tetrahedron) const;
+	
 		virtual double :ref:`average_metric<doxid-classgeode_1_1_metric_1a1ac98e57f631f4b5207a0223cfff6768>`() const = 0;
 		virtual double :ref:`median_metric<doxid-classgeode_1_1_metric_1a45de89ade406ffff073d9d32189d6902>`() const = 0;
 

@@ -26,6 +26,8 @@ Constant metric implementation
 		// methods
 	
 		virtual double :target:`metric<doxid-classgeode_1_1_constant_metric_1a6ea8dd6170278abfaa106df37e05c896>`(const Point<dimension>&) const;
+		virtual double :target:`minimal_metric<doxid-classgeode_1_1_constant_metric_1afbb3e40345725f082a665b8dfa8744a9>`(const Segment<dimension>& segment) const;
+		virtual double :target:`minimal_metric<doxid-classgeode_1_1_constant_metric_1a833ef6635f5aeed5b68e57f2ee9435ef>`(const Triangle<dimension>& triangle) const;
 		double :target:`constant_metric<doxid-classgeode_1_1_constant_metric_1af5714533c573f1053ac8ad6ed0652196>`() const;
 		virtual double :target:`average_metric<doxid-classgeode_1_1_constant_metric_1a617c2145146ef5db78fcb9ea8e73eb13>`() const;
 		virtual double :target:`median_metric<doxid-classgeode_1_1_constant_metric_1a3e664b0b9f40c3a95e4d8c8694bde3a0>`() const;
@@ -41,6 +43,12 @@ Inherited Members
 		// methods
 	
 		virtual double :ref:`metric<doxid-classgeode_1_1_metric_1ae7772ff36e4ab8e23abc1fca5f81e21b>`(const Point<dimension>& point) const = 0;
+		virtual double :ref:`minimal_metric<doxid-classgeode_1_1_metric_1a5c9990feed99bc187841f83324d3c502>`(const Segment<dimension>& segment) const = 0;
+		virtual double :ref:`minimal_metric<doxid-classgeode_1_1_metric_1a0baf30abc5e282d0217d6ede00d538c3>`(const Triangle<dimension>& triangle) const = 0;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, double>::type :ref:`minimal_metric<doxid-classgeode_1_1_metric_1ac6ec755d0c368c84391b558722f604ed>`(const Tetrahedron& tetrahedron) const;
+	
 		virtual double :ref:`average_metric<doxid-classgeode_1_1_metric_1a1ac98e57f631f4b5207a0223cfff6768>`() const = 0;
 		virtual double :ref:`median_metric<doxid-classgeode_1_1_metric_1a45de89ade406ffff073d9d32189d6902>`() const = 0;
 
