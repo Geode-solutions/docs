@@ -210,6 +210,11 @@ Inherited Members
 			:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id
 			) const;
 	
+		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`cell_local_vertex<doxid-classgeode_1_1_grid_1a99275c0a853cff22941524925b3349f7>`(
+			const :ref:`CellIndices<doxid-classgeode_1_1_cell_array_1a99b7c4a289dd7041d4142ca6823bdb2b>`& cell_id,
+			const :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`& vertex_id
+			) const;
+	
 		absl::optional<:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`> :ref:`next_vertex<doxid-classgeode_1_1_grid_1a899a9d338921b9abd03521168ca249e5>`(
 			const :ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>`& index,
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` direction
