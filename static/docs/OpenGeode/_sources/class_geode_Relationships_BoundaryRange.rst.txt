@@ -20,7 +20,7 @@ class geode::Relationships::BoundaryRange
 	public:
 		// construction
 	
-		:target:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range_1a99a6a2fc4e0477aff7a7b2425e4fcf3c>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		:target:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range_1a12c582dec856391cec14cd57edd01cf7>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id);
 
 		// methods
 	

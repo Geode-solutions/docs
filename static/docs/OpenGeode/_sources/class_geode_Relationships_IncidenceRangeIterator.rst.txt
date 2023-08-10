@@ -20,7 +20,11 @@ Range to iterate on all incidences of one component
 	public:
 		// construction
 	
-		:target:`IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1a26da806205f8c941688b17774555988c>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		:target:`IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1aa3765601f496e453b9ac88413f0dea97>`(
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
+			);
+	
 		:target:`IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1a1b016ac57910c7f99b93b8e75d275a9e>`(IncidenceRangeIterator&& other);
 		:target:`IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1ad58b83d730bacd51cb246d1ced7f8c8a>`(const IncidenceRangeIterator& other);
 

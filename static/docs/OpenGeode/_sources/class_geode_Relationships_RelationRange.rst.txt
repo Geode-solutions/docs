@@ -20,7 +20,7 @@ class geode::Relationships::RelationRange
 	public:
 		// construction
 	
-		:target:`RelationRange<doxid-classgeode_1_1_relationships_1_1_relation_range_1a55e6e3cbd7b9536fa271113a795dac78>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		:target:`RelationRange<doxid-classgeode_1_1_relationships_1_1_relation_range_1a795357343ec4faa174a2d7176589d44e>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id);
 
 		// methods
 	

@@ -27,7 +27,7 @@ Class managing modification of :ref:`Relationships <doxid-classgeode_1_1_relatio
 
 		// methods
 	
-		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_builder_1aee190cedcd627f2e9bdc5e3815afcdfd>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		void :ref:`unregister_component<doxid-classgeode_1_1_relationships_builder_1ab076e7f665be857d385429ca0b6dc695>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id);
 	
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_builder_1a4fcac933fa86e10ea81099fcf81e8b26>`(
 			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& boundary,
@@ -44,7 +44,7 @@ Class managing modification of :ref:`Relationships <doxid-classgeode_1_1_relatio
 			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& collection
 			);
 	
-		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2);
+		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_builder_1a1f51ec5d91cead948f6d1073d0f81651>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id2);
 	
 		void :target:`copy_relationships<doxid-classgeode_1_1_relationships_builder_1ab133e625630e072bf117df311c2961c9>`(
 			const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping,
@@ -68,12 +68,12 @@ Methods
 -------
 
 .. index:: pair: function; unregister_component
-.. _doxid-classgeode_1_1_relationships_builder_1aee190cedcd627f2e9bdc5e3815afcdfd:
+.. _doxid-classgeode_1_1_relationships_builder_1ab076e7f665be857d385429ca0b6dc695:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void unregister_component(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id)
+	void unregister_component(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id)
 
 Remove a component from the set of components registered by the :ref:`Relationships <doxid-classgeode_1_1_relationships>` and all its associated relationships
 
@@ -129,12 +129,12 @@ Add a new relationship of type internal-embedding between two components
 Add a new relationship of type item-collection between two components
 
 .. index:: pair: function; remove_relation
-.. _doxid-classgeode_1_1_relationships_builder_1a2e08afead2c135549cafba3f72bee392:
+.. _doxid-classgeode_1_1_relationships_builder_1a1f51ec5d91cead948f6d1073d0f81651:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void remove_relation(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id2)
+	void remove_relation(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id1, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id2)
 
 Remove a relationship between two components
 

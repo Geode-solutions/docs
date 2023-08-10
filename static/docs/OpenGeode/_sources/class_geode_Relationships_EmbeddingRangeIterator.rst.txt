@@ -20,7 +20,11 @@ Range to iterate on all embeddings of one component
 	public:
 		// construction
 	
-		:target:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1aadba24e6d791fcc0287fa244542e8a95>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		:target:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1ae4aeaf0f476e50f185f4a81db0045829>`(
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
+			);
+	
 		:target:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1adb24dc98596fad808f886b84046cde02>`(EmbeddingRangeIterator&& other);
 		:target:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1adcc4db7df19d08933796e5684cb673cf>`(const EmbeddingRangeIterator& other);
 

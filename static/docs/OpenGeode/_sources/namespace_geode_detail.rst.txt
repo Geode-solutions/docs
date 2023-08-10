@@ -7,6 +7,8 @@ namespace geode::detail
 .. toctree::
 	:hidden:
 
+	struct_geode_detail_ComponentsTypesChecker.rst
+	struct_geode_detail_ComponentsTypesChecker-2.rst
 	class_geode_detail_ComponentsStorage.rst
 	class_geode_detail_CutAlongInternalLines.rst
 	class_geode_detail_CutAlongInternalSurfaces.rst
@@ -33,6 +35,14 @@ namespace geode::detail
 	// typedefs
 
 	typedef :ref:`ModelCopyMapping::Mapping<doxid-classgeode_1_1_model_mapping_1a0b85325c36f11f4cba9d77f207abf9f8>` :target:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>`;
+
+	// structs
+
+	template <typename>
+	struct :ref:`ComponentsTypesChecker<doxid-structgeode_1_1detail_1_1_components_types_checker>`;
+
+	template <typename... Components>
+	struct :ref:`ComponentsTypesChecker<std::tuple<Components...>><doxid-structgeode_1_1detail_1_1_components_types_checker_3_01std_1_1tuple_3_01_components_8_8_8_01_4_01_4>`;
 
 	// classes
 
@@ -317,5 +327,14 @@ namespace geode::detail
 		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` first_new_unique_vertex_id,
 		const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping
 		);
+
+	template <typename Last>
+	bool :target:`is_component_supported<doxid-namespacegeode_1_1detail_1abbc4ba64d31ddb9569ca6f3619685420>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& component_type);
+
+	template <typename First, typename Second, typename... Components>
+	bool :target:`is_component_supported<doxid-namespacegeode_1_1detail_1a4df0121dce4562c7be4b8333a6a34b25>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& component_type);
+
+	template <typename Model>
+	void :target:`filter_unsupported_components<doxid-namespacegeode_1_1detail_1a266bcc058041204bcc95d3cb4b2685ec>`(Model& model);
 
 	} // namespace detail

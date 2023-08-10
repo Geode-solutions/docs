@@ -16,7 +16,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="template class geode::detail::ComponentsStorage" href="class_geode_detail_ComponentsStorage.html" />
+    <link rel="next" title="template struct geode::detail::ComponentsTypesChecker" href="struct_geode_detail_ComponentsTypesChecker.html" />
     <link rel="prev" title="namespace geode" href="namespace_geode.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -42,6 +42,14 @@
 <span class="c1">// typedefs</span>
 
 <span class="k">typedef</span> <a class="reference internal" href="class_geode_ModelMapping.html#doxid-classgeode-1-1-model-mapping-1a0b85325c36f11f4cba9d77f207abf9f8"><span class="std std-ref">ModelCopyMapping::Mapping</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a6d2355911e396d6c746fdf0843caf3a0"><span></span><span class="n">Mapping</span></span><span></span><span class="p">;</span>
+
+<span class="c1">// structs</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_ComponentsTypesChecker.html#doxid-structgeode-1-1detail-1-1-components-types-checker"><span class="std std-ref">ComponentsTypesChecker</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span><span class="p">...</span> <span class="n">Components</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_ComponentsTypesChecker-2.html#doxid-structgeode-1-1detail-1-1-components-types-checker-3-01std-1-1tuple-3-01-components-8-8-8-01-4-01-4"><span class="std std-ref">ComponentsTypesChecker&lt;std::tuple&lt;Components...&gt;&gt;</span></a><span></span><span class="p">;</span>
 
 <span class="c1">// classes</span>
 
@@ -326,6 +334,15 @@
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">first_new_unique_vertex_id</span><span class="p">,</span>
     <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1afc1226ecaedc88b75713a97ea1b34ce5"><span class="std std-ref">ModelCopyMapping</span></a><span></span><span class="o">&amp;</span> <span class="n">mapping</span>
     <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Last</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1abbc4ba64d31ddb9569ca6f3619685420"><span></span><span class="n">is_component_supported</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">component_type</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">First</span><span class="p">,</span> <span class="k">typename</span> <span class="n">Second</span><span class="p">,</span> <span class="k">typename</span><span class="p">...</span> <span class="n">Components</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a4df0121dce4562c7be4b8333a6a34b25"><span></span><span class="n">is_component_supported</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span><span class="o">&amp;</span> <span class="n">component_type</span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Model</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a266bcc058041204bcc95d3cb4b2685ec"><span></span><span class="n">filter_unsupported_components</span></span><span></span><span class="p">(</span><span class="n">Model</span><span class="o">&amp;</span> <span class="n">model</span><span class="p">);</span>
 
 <span class="p">}</span> <span class="c1">// namespace detail</span></pre>
 </section>

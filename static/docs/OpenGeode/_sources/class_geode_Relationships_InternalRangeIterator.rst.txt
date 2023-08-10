@@ -20,7 +20,11 @@ Range to iterate on all internal components of one component
 	public:
 		// construction
 	
-		:target:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a9a08d1fc06151201084a1eb194755bcf>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+		:target:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a42f6bcc195d81519d2721e6fad86da03>`(
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
+			);
+	
 		:target:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a361b04c65d4dd66a9298497cb5f58f4b>`(InternalRangeIterator&& other);
 		:target:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1aaf2006f169829469bda59dee8cf9b7fb>`(const InternalRangeIterator& other);
 

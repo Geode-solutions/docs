@@ -316,6 +316,7 @@ Overview
 
 	// typedefs
 
+	typedef decltype(std::tuple_cat(std::declval<tuples>()...)) :ref:`tuple_cat<doxid-namespacegeode_1abc99364ac58dd28fb36e59ca0b84827e>`;
 	typedef bitsery::ext::PolymorphicContext<bitsery::ext::StandardRTTI> :target:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`;
 	typedef std::tuple<:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`, bitsery::ext::PointerLinkingContext, bitsery::ext::InheritanceContext> :target:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`;
 	typedef bitsery::Serializer<bitsery::OutputBufferedStreamAdapter, :ref:`TContext<doxid-namespacegeode_1ada1622a88b7254dc30cc9ed94fc94814>`> :target:`Serializer<doxid-namespacegeode_1acde102fc3576cee8a5531f85902413bb>`;
@@ -1097,19 +1098,19 @@ Overview
 	// global functions
 
 	template <typename T>
-	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`delete_vector_elements<doxid-namespacegeode_1a3b4f2a586d91f0691c6e640a0abd1a8a>`(
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`delete_vector_elements<doxid-namespacegeode_1a3b4f2a586d91f0691c6e640a0abd1a8a>`(
 		const std::vector<bool>& to_delete,
 		std::vector<T>& values
 		);
 
 	template <typename T>
-	std::vector<T> :target:`extract_vector_elements<doxid-namespacegeode_1ab68ae84b2adb41524da91dd5daa553cc>`(
+	std::vector<T> :ref:`extract_vector_elements<doxid-namespacegeode_1ab68ae84b2adb41524da91dd5daa553cc>`(
 		const std::vector<bool>& to_keep,
 		const std::vector<T>& in_values
 		);
 
 	template <typename Container>
-	void :target:`sort_unique<doxid-namespacegeode_1a04f4dfe13f837a543eb430e7e3b737ae>`(Container& in);
+	void :ref:`sort_unique<doxid-namespacegeode_1a04f4dfe13f837a543eb430e7e3b737ae>`(Container& in);
 
 	void opengeode_basic_api :target:`geode_assertion_failed<doxid-namespacegeode_1aa4b4c6702e24e006b51f727d6c309c30>`(
 		absl::string_view condition,
@@ -2500,6 +2501,16 @@ Detailed Documentation
 Typedefs
 --------
 
+.. index:: pair: typedef; tuple_cat
+.. _doxid-namespacegeode_1abc99364ac58dd28fb36e59ca0b84827e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef decltype(std::tuple_cat(std::declval<tuples>()...)) tuple_cat
+
+Concatenate tuples into a single tuple.
+
 .. index:: pair: typedef; MeshImpl
 .. _doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10:
 
@@ -2535,6 +2546,118 @@ Value used for a invalid index.
 
 Global Functions
 ----------------
+
+.. index:: pair: function; delete_vector_elements
+.. _doxid-namespacegeode_1a3b4f2a586d91f0691c6e640a0abd1a8a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <typename T>
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` delete_vector_elements(
+		const std::vector<bool>& to_delete,
+		std::vector<T>& values
+		)
+
+Delete some elements from a given vector. T should have default constructor (needed for call resize method on vector).
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- T
+
+		- Type of the vector elements.
+
+	*
+		- to_delete
+
+		- :ref:`Vector <doxid-classgeode_1_1_vector>` of the same size than values. If to_delete[i] is true the i-th element is deleted, else the element is kept.
+
+	*
+		- [in/out]
+
+		- values :ref:`Vector <doxid-classgeode_1_1_vector>` in which perform deletions.
+
+
+
+.. rubric:: Returns:
+
+The number of deleted elements
+
+.. index:: pair: function; extract_vector_elements
+.. _doxid-namespacegeode_1ab68ae84b2adb41524da91dd5daa553cc:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <typename T>
+	std::vector<T> extract_vector_elements(
+		const std::vector<bool>& to_keep,
+		const std::vector<T>& in_values
+		)
+
+Create a new vector containing only some elements from a given vector.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- T
+
+		- Type of the vector elements.
+
+	*
+		- to_keep
+
+		- :ref:`Vector <doxid-classgeode_1_1_vector>` of the same size than in_values. If to_keep[i] is true the i-th element is kept.
+
+	*
+		- in_values
+
+		- :ref:`Vector <doxid-classgeode_1_1_vector>` in which perform deletions.
+
+
+
+.. rubric:: Returns:
+
+A vector containing only kept elements of in_values
+
+.. index:: pair: function; sort_unique
+.. _doxid-namespacegeode_1a04f4dfe13f837a543eb430e7e3b737ae:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <typename Container>
+	void sort_unique(Container& in)
+
+Modify the container by removing every duplicated values inside
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- Container
+
+		- Type of container.
+
+	*
+		- in
+
+		- container in which perform the search.
 
 .. index:: pair: function; geode_lippincott
 .. _doxid-namespacegeode_1a0d6f934054bb20a7b43ff330dca7d363:
