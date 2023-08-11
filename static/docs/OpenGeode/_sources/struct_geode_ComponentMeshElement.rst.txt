@@ -24,6 +24,7 @@ Identify an element in a model component
 
 		// construction
 	
+		:target:`ComponentMeshElement<doxid-structgeode_1_1_component_mesh_element_1aae91fca731e23842ee0a4cafa5e31a4f>`();
 		:target:`ComponentMeshElement<doxid-structgeode_1_1_component_mesh_element_1a3cb9eb89903ef44d30e31a38bfe9f8c7>`(:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` component_id_in, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element_id_in);
 
 		// methods
