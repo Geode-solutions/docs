@@ -102,6 +102,7 @@ Inherited Members
 		// typedefs
 	
 		typedef :ref:`StructuralModelBuilder<doxid-classgeode_1_1_structural_model_builder>` :ref:`Builder<doxid-classgeode_1_1_structural_model_1adaac593ede6ae4e20d3ddd89a64e531d>`;
+		typedef tuple_cat<BRep::Components, std::tuple<Fault3D, Horizon3D, FaultBlock3D, StratigraphicUnit3D>> :ref:`Components<doxid-classgeode_1_1_structural_model_1aa5fb4a1771cd7346bb87e6bb07701984>`;
 		typedef double :ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_structural_model_1af8fa3507f1b90e0c89056d0a1e9124c5>`;
 
 		// classes

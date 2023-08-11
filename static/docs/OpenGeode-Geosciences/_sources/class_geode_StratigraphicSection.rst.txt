@@ -102,6 +102,7 @@ Inherited Members
 		// typedefs
 	
 		typedef :ref:`CrossSectionBuilder<doxid-classgeode_1_1_cross_section_builder>` :ref:`Builder<doxid-classgeode_1_1_cross_section_1abd610a7ce721476d308b113ce4bce646>`;
+		typedef tuple_cat<Section::Components, std::tuple<Fault2D, Horizon2D, FaultBlock2D, StratigraphicUnit2D>> :ref:`Components<doxid-classgeode_1_1_cross_section_1a7ccacc23cef88ee2bed3095e1ff297de>`;
 		typedef double :ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1adf6f904c13dfb12c6a6d17c418b958bc>`;
 
 		// classes

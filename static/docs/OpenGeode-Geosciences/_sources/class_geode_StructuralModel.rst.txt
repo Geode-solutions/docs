@@ -31,6 +31,7 @@ A Structural Model is a Boundary Representation composed of :ref:`Faults <doxid-
 		// typedefs
 	
 		typedef :ref:`StructuralModelBuilder<doxid-classgeode_1_1_structural_model_builder>` :target:`Builder<doxid-classgeode_1_1_structural_model_1adaac593ede6ae4e20d3ddd89a64e531d>`;
+		typedef tuple_cat<BRep::Components, std::tuple<Fault3D, Horizon3D, FaultBlock3D, StratigraphicUnit3D>> :target:`Components<doxid-classgeode_1_1_structural_model_1aa5fb4a1771cd7346bb87e6bb07701984>`;
 
 		// classes
 	
