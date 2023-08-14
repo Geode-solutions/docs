@@ -26,7 +26,7 @@ A :ref:`HorizonsStack <doxid-classgeode_1_1_horizons_stack>` is a set of :ref:`H
 		// construction
 	
 		:target:`HorizonsStack<doxid-classgeode_1_1_horizons_stack_1a78b9942403dc6b352d83f989b9f61465>`();
-		:target:`HorizonsStack<doxid-classgeode_1_1_horizons_stack_1a8361f439fe352a2b99bfe76a984668ac>`(HorizonsStack<dimension>&& horizons_stack);
+		:target:`HorizonsStack<doxid-classgeode_1_1_horizons_stack_1ae326a31bb12714509687a44382e83ca9>`(HorizonsStack&& horizons_stack);
 
 		// methods
 	
