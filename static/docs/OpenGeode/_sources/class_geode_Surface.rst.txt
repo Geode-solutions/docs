@@ -21,7 +21,7 @@ Geometric component describing a :ref:`Surface <doxid-classgeode_1_1_surface>`. 
 	public:
 		// construction
 	
-		:target:`Surface<doxid-classgeode_1_1_surface_1a553e54d81b9d6ccaa050b4e0e6ced1a3>`(Surface&& other);
+		:target:`Surface<doxid-classgeode_1_1_surface_1a3eb8403eddab5ae4bd663e880ae9e9e1>`(Surface&& other);
 		:target:`Surface<doxid-classgeode_1_1_surface_1aa3771c8ad77407b05e054f934436d41e>`(SurfacesKey);
 		:target:`Surface<doxid-classgeode_1_1_surface_1ad23aee03b8367b4e6c5a8a73ad249bca>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl, SurfacesKey);
 

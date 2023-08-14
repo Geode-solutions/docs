@@ -63,7 +63,7 @@ A :ref:`Section <doxid-classgeode_1_1_section>` is a 2D model composed of :ref:`
 		// construction
 	
 		:target:`Section<doxid-classgeode_1_1_section_1ae287bc9e7dea7665d67ba32c0d8c6781>`();
-		:target:`Section<doxid-classgeode_1_1_section_1a6a852a5d3ba341afd06dda1466c8eba8>`(Section&& section);
+		:target:`Section<doxid-classgeode_1_1_section_1ab2f028a70a72e208be43706b16a98232>`(Section&& section);
 
 		// methods
 	

@@ -33,7 +33,7 @@ template class geode::RasterImage
 	
 		:target:`RasterImage<doxid-classgeode_1_1_raster_image_1a588a2c833f4099a502c1ae079dd77563>`();
 		:target:`RasterImage<doxid-classgeode_1_1_raster_image_1a42a3697fc84933bbdb0d6ad0adbba45c>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, dimension> cells_number);
-		:target:`RasterImage<doxid-classgeode_1_1_raster_image_1a0ab0f814f8c181549046c6874605501e>`(RasterImage&& other);
+		:target:`RasterImage<doxid-classgeode_1_1_raster_image_1aefabdd3bb833e8d60d90821f1fc977d7>`(RasterImage&& other);
 
 		// methods
 	

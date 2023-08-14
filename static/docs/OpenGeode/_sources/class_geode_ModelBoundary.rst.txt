@@ -21,6 +21,7 @@ Collection component describing a Boundary.
 	public:
 		// construction
 	
+		:target:`ModelBoundary<doxid-classgeode_1_1_model_boundary_1a32c7ba0fce15f3a58409c9197529a169>`(ModelBoundary&& other);
 		:target:`ModelBoundary<doxid-classgeode_1_1_model_boundary_1ac56b7bbc0c4ea713864a6f742688905c>`(ModelBoundariesKey);
 
 		// methods

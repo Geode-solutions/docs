@@ -73,7 +73,7 @@ A :ref:`BRep <doxid-classgeode_1_1_b_rep>` (for Boundary Representation) is a 3D
 		// construction
 	
 		:target:`BRep<doxid-classgeode_1_1_b_rep_1a384f789258676b3d556913741cc3181c>`();
-		:target:`BRep<doxid-classgeode_1_1_b_rep_1a14519239ca9e5f4e6dcda2e8be960773>`(BRep&& brep);
+		:target:`BRep<doxid-classgeode_1_1_b_rep_1a11b642b5a2ce0f65ebac8c4964b73ff5>`(BRep&& brep);
 
 		// methods
 	
