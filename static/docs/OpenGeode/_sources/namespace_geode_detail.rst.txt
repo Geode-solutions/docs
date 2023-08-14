@@ -12,12 +12,16 @@ namespace geode::detail
 	class_geode_detail_ComponentsStorage.rst
 	class_geode_detail_CutAlongInternalLines.rst
 	class_geode_detail_CutAlongInternalSurfaces.rst
+	class_geode_detail_EdgedCurveIdentifier.rst
 	class_geode_detail_EdgedCurveMerger.rst
 	class_geode_detail_FacetStorage.rst
+	class_geode_detail_GraphIdentifier.rst
 	class_geode_detail_MeshStorage.rst
 	class_geode_detail_OrientedVertexCycle.rst
 	class_geode_detail_RelationshipsImpl.rst
+	class_geode_detail_SolidIdentifier.rst
 	class_geode_detail_SolidMeshMerger.rst
+	class_geode_detail_SurfaceIdentifier.rst
 	class_geode_detail_SurfaceMeshMerger.rst
 	class_geode_detail_UuidToIndex.rst
 	class_geode_detail_VertexCycle.rst
@@ -55,10 +59,15 @@ namespace geode::detail
 	class :ref:`CutAlongInternalSurfaces<doxid-classgeode_1_1detail_1_1_cut_along_internal_surfaces>`;
 
 	template <index_t dimension>
+	class :ref:`EdgedCurveIdentifier<doxid-classgeode_1_1detail_1_1_edged_curve_identifier>`;
+
+	template <index_t dimension>
 	class :ref:`EdgedCurveMerger<doxid-classgeode_1_1detail_1_1_edged_curve_merger>`;
 
 	template <typename VertexContainer>
 	class :ref:`FacetStorage<doxid-classgeode_1_1detail_1_1_facet_storage>`;
+
+	class :ref:`GraphIdentifier<doxid-classgeode_1_1detail_1_1_graph_identifier>`;
 
 	template <typename Mesh>
 	class :ref:`MeshStorage<doxid-classgeode_1_1detail_1_1_mesh_storage>`;
@@ -67,9 +76,13 @@ namespace geode::detail
 	class :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`;
 
 	class :ref:`RelationshipsImpl<doxid-classgeode_1_1detail_1_1_relationships_impl>`;
+	class :ref:`SolidIdentifier<doxid-classgeode_1_1detail_1_1_solid_identifier>`;
 
 	template <index_t dimension>
 	class :ref:`SolidMeshMerger<doxid-classgeode_1_1detail_1_1_solid_mesh_merger>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceIdentifier<doxid-classgeode_1_1detail_1_1_surface_identifier>`;
 
 	template <index_t dimension>
 	class :ref:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger>`;
@@ -180,6 +193,8 @@ namespace geode::detail
 		const :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`<Container>& m
 		);
 
+	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1_1detail_1ab8afc8925a57124ff93c79a7bbf43a74>`(:ref:`EdgedCurveIdentifier<doxid-classgeode_1_1detail_1_1_edged_curve_identifier>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1_1detail_1ae0a99fcb13877e208a070d8a56ce9640>`(:ref:`SurfaceIdentifier<doxid-classgeode_1_1detail_1_1_surface_identifier>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1_1detail_1af5b3b4f7e07cb11bd8a472ed5ce099fa>`(:ref:`EdgedCurveMerger<doxid-classgeode_1_1detail_1_1_edged_curve_merger>`);
 	:target:`ALIAS_3D<doxid-namespacegeode_1_1detail_1adc7ebe872359976115ab0f6b1a3246ce>`(:ref:`SolidMeshMerger<doxid-classgeode_1_1detail_1_1_solid_mesh_merger>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1_1detail_1a8d6a6047214e15c4e8de8104fc71d5de>`(:ref:`SurfaceMeshMerger<doxid-classgeode_1_1detail_1_1_surface_mesh_merger>`);

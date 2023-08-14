@@ -1,0 +1,31 @@
+.. index:: pair: class; geode::detail::SurfaceIdentifier
+.. _doxid-classgeode_1_1detail_1_1_surface_identifier:
+
+template class geode::detail::SurfaceIdentifier
+===============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_identifier.h>
+	
+	template <index_t dimension>
+	class SurfaceIdentifier
+	{
+	public:
+		// construction
+	
+		:target:`SurfaceIdentifier<doxid-classgeode_1_1detail_1_1_surface_identifier_1a821ce5cb70818df0609532e04198352e>`(const :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`<dimension>& surface);
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`identify_polygons<doxid-classgeode_1_1detail_1_1_surface_identifier_1abc57110024851bdf4f27f35ba7eda0da>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polygon_identifier<doxid-classgeode_1_1detail_1_1_surface_identifier_1a441840f8749a02e2564da7a352204acf>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon) const;
+		absl::FixedArray<std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>> :target:`identified_connected_polygons<doxid-classgeode_1_1detail_1_1_surface_identifier_1a53c2740faa7786fca3cb1db1ff4c5b67>`() const;
+	};
