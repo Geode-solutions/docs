@@ -187,6 +187,12 @@ export default {
         out: true,
       },
       {
+        extension: '.vti (ascii, binary and encoded appendedData supported)',
+        cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a><br/><a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a>",
+        in: true,
+        out: false,
+      },
+      {
         extension: '.vti (ascii only)',
         cpp: "<a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid2D</code></a><br/><a href='/opengeode?page=class_geode_RegularGrid.html'><code>RegularGrid3D</code></a><br/><a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage2D</code></a><br/><a href='/opengeode?page=class_geode_RasterImage.html'><code>RasterImage3D</code></a>",
         in: false,
