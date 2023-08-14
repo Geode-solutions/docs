@@ -19,7 +19,8 @@ struct geode::BRepSimulationResult
 	{
 		// fields
 	
-		BRepComponentMeshEdges::BlockEdges :target:`invalid_blocks<doxid-structgeode_1_1_b_rep_simulation_result_1a38faaec1d47accba5e5c01ee37711bd0>`;
+		BRepComponentMeshEdges::BlockEdges :target:`invalid_block_edges<doxid-structgeode_1_1_b_rep_simulation_result_1a89dc20f016bbe25c3adf55a5b8c9f014>`;
+		std::vector<uuid> :target:`invalid_blocks<doxid-structgeode_1_1_b_rep_simulation_result_1a2adfbc1af1314c4ff7e98cb4fb2d655c>`;
 
 		// methods
 	
@@ -36,7 +37,9 @@ Inherited Members
 	public:
 		// fields
 	
-		ModelComponentMeshEdges::SurfaceEdges :ref:`invalid_surfaces<doxid-structgeode_1_1_model_simulation_result_1adc4d8eb5d466c8ace652e2f297a9ed48>`;
+		std::vector<uuid> :ref:`invalid_lines<doxid-structgeode_1_1_model_simulation_result_1a61c23c24cbc5fc242d07e61ba7b15832>`;
+		ModelComponentMeshEdges::SurfaceEdges :ref:`invalid_surface_edges<doxid-structgeode_1_1_model_simulation_result_1aa9c75062b6cd258fc071686ff2ecab4e>`;
+		std::vector<uuid> :ref:`invalid_surfaces<doxid-structgeode_1_1_model_simulation_result_1a9c7465676e09d70fe6ae0af0a2912b40>`;
 
 		// methods
 	

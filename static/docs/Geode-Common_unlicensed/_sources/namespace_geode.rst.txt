@@ -316,6 +316,12 @@ Overview
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a92ea6140d3ffdcf28cfbb0468402c3a3>`(geode_common_metric_api, CommonMetric);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ae6e689ab449ad55fffa309d356c002a0>`(:ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad52827c3ed9c1440ecaf3d17e40d432c>`(:ref:`CustomGridMetric<doxid-classgeode_1_1_custom_grid_metric>`);
+
+	double geode_common_metric_api :target:`minimal_metric<doxid-namespacegeode_1a5fd1f7bec57d99b5b7fec2e81ecfa2a3>`(
+		const CustomGridMetric3D& metric,
+		const Tetrahedron& tetrahedron
+		);
+
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a713615f1e1f632a857fbbda376b9b832>`(Segment);

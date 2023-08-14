@@ -28,6 +28,8 @@ Grid metric implementation
 		const Grid<dimension>& :target:`grid<doxid-classgeode_1_1_grid_metric_1a62678f3266e0eb81c4010aa716a80d0d>`() const;
 		virtual double :target:`metric<doxid-classgeode_1_1_grid_metric_1a146ca0b3c59de88c6ec23f02ee51c409>`(const Point<dimension>& point) const;
 		double :target:`metric<doxid-classgeode_1_1_grid_metric_1a2d8f237a18d75c7bdd29bd39e75821a6>`(index_t cell_index) const;
+		virtual double :target:`minimal_metric<doxid-classgeode_1_1_grid_metric_1aa01166e48cc0dd05be6e5efa187dd33c>`(const Segment<dimension>& segment) const;
+		virtual double :target:`minimal_metric<doxid-classgeode_1_1_grid_metric_1abd9a44c2b6775bb851ae1c96b9a090ac>`(const Triangle<dimension>& triangle) const;
 		virtual double :target:`average_metric<doxid-classgeode_1_1_grid_metric_1a148e8f2a7343f5d0894f22d54b1fbf62>`() const;
 		virtual double :target:`median_metric<doxid-classgeode_1_1_grid_metric_1aa7cbb131d81d24aa016ca7a490309758>`() const;
 		void :target:`paint_point<doxid-classgeode_1_1_grid_metric_1ab2987a215a502cdfcbf4fe88e890a934>`(const Point<dimension>& point, double metric);
@@ -53,6 +55,12 @@ Inherited Members
 		// methods
 	
 		virtual double :ref:`metric<doxid-classgeode_1_1_metric_1ae7772ff36e4ab8e23abc1fca5f81e21b>`(const Point<dimension>& point) const = 0;
+		virtual double :ref:`minimal_metric<doxid-classgeode_1_1_metric_1a5c9990feed99bc187841f83324d3c502>`(const Segment<dimension>& segment) const = 0;
+		virtual double :ref:`minimal_metric<doxid-classgeode_1_1_metric_1a0baf30abc5e282d0217d6ede00d538c3>`(const Triangle<dimension>& triangle) const = 0;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, double>::type :ref:`minimal_metric<doxid-classgeode_1_1_metric_1ac6ec755d0c368c84391b558722f604ed>`(const Tetrahedron& tetrahedron) const;
+	
 		virtual double :ref:`average_metric<doxid-classgeode_1_1_metric_1a1ac98e57f631f4b5207a0223cfff6768>`() const = 0;
 		virtual double :ref:`median_metric<doxid-classgeode_1_1_metric_1a45de89ade406ffff073d9d32189d6902>`() const = 0;
 
