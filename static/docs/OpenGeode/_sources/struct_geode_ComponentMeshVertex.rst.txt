@@ -33,4 +33,6 @@ Identify a vertex in a geometric component
 	
 		template <typename Archive>
 		void :target:`serialize<doxid-structgeode_1_1_component_mesh_vertex_1acf5a43ef6336599ca836e224ca999472>`(Archive& archive);
+	
+		std::string :target:`string<doxid-structgeode_1_1_component_mesh_vertex_1a8bb5f5937e525c57bfbdb3ee2a50da0d>`() const;
 	};
