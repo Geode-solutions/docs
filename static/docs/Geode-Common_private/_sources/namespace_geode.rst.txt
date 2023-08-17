@@ -453,6 +453,13 @@ Overview
 		const Point3D& point
 		);
 
+	:ref:`BRepSimulationResult<doxid-structgeode_1_1_b_rep_simulation_result>` geode_common_modifier_model_api :target:`is_swap_edge_valid<doxid-namespacegeode_1acd9978e04d71de61704daa45007ff098>`(
+		const BRep& brep,
+		const Block3D& block,
+		const PolyhedronFacetEdge& edge,
+		index_t apex
+		);
+
 	:ref:`BRepSimulationResult<doxid-structgeode_1_1_b_rep_simulation_result>` geode_common_modifier_model_api :target:`is_swap_edge_valid<doxid-namespacegeode_1a786639763b2f5179ea84ba511f1b2c53>`(
 		const BRep& brep,
 		const Surface3D& surface,
