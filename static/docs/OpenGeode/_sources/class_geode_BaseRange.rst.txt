@@ -24,9 +24,9 @@ Base class for range-based iteration on custom range. See derived classes for us
 	public:
 		// methods
 	
-		bool :target:`operator !=<doxid-classgeode_1_1_base_range_1a3c8892964239c42e1e914ad91c1849cc>` (const BaseRange&) const;
+		constexpr bool :target:`operator !=<doxid-classgeode_1_1_base_range_1a69556080208d11a4b31531cae37b4720>` (const BaseRange&) const;
 		void :target:`operator ++<doxid-classgeode_1_1_base_range_1afe90da29578e4e5022ffc71598163bfe>` ();
-		Type :target:`current<doxid-classgeode_1_1_base_range_1a62c35fce8f88bcff37fedb47da9f9240>`() const;
+		constexpr Type :target:`current<doxid-classgeode_1_1_base_range_1a940f5c94e6bc7bfab7ee89cf01e1570c>`() const;
 	};
 
 	// direct descendants

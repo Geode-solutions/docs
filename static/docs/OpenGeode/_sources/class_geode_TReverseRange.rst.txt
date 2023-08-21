@@ -22,16 +22,16 @@ template class geode::TReverseRange
 		// construction
 	
 		template <typename T1, typename T2>
-		:target:`TReverseRange<doxid-classgeode_1_1_t_reverse_range_1a2981f631c909bcd95a7f9aecd8726245>`(T1 begin, T2 end);
+		:target:`TReverseRange<doxid-classgeode_1_1_t_reverse_range_1a0647412c24f6c6af44a6a31e988a0344>`(T1 begin, T2 end);
 	
 		template <typename T>
-		:target:`TReverseRange<doxid-classgeode_1_1_t_reverse_range_1aa53da9660565df2d3fbc81691a3a12cc>`(T begin);
+		:target:`TReverseRange<doxid-classgeode_1_1_t_reverse_range_1ade4720d68232027d94b9ba88ed195a60>`(T begin);
 
 		// methods
 	
-		const TReverseRange<Type>& :target:`begin<doxid-classgeode_1_1_t_reverse_range_1abee9fb6a35bff232b95105b4950adbe2>`() const;
-		const TReverseRange<Type>& :target:`end<doxid-classgeode_1_1_t_reverse_range_1ae4f765f97570ae8b0e447635b9efb115>`() const;
-		Type :target:`operator *<doxid-classgeode_1_1_t_reverse_range_1ae3d5a84a4bb08d0c8206392d8d35de22>` () const;
+		constexpr const TReverseRange<Type>& :target:`begin<doxid-classgeode_1_1_t_reverse_range_1a13468c3205892f93c66f126ecb5e2f48>`() const;
+		constexpr const TReverseRange<Type>& :target:`end<doxid-classgeode_1_1_t_reverse_range_1af365fd9f8e3e918938454d59a07c065a>`() const;
+		constexpr Type :target:`operator *<doxid-classgeode_1_1_t_reverse_range_1a79ffe79b5679c0cebb8f03d35d6c27da>` () const;
 	};
 
 Inherited Members
@@ -43,7 +43,7 @@ Inherited Members
 	public:
 		// methods
 	
-		bool :ref:`operator !=<doxid-classgeode_1_1_base_range_1a3c8892964239c42e1e914ad91c1849cc>` (const :ref:`BaseRange<doxid-classgeode_1_1_base_range>`&) const;
+		constexpr bool :ref:`operator !=<doxid-classgeode_1_1_base_range_1a69556080208d11a4b31531cae37b4720>` (const :ref:`BaseRange<doxid-classgeode_1_1_base_range>`&) const;
 		void :ref:`operator ++<doxid-classgeode_1_1_base_range_1afe90da29578e4e5022ffc71598163bfe>` ();
-		Type :ref:`current<doxid-classgeode_1_1_base_range_1a62c35fce8f88bcff37fedb47da9f9240>`() const;
+		constexpr Type :ref:`current<doxid-classgeode_1_1_base_range_1a940f5c94e6bc7bfab7ee89cf01e1570c>`() const;
 

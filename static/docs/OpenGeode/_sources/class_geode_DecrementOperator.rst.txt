@@ -21,5 +21,5 @@ template class geode::DecrementOperator
 	public:
 		// methods
 	
-		void :target:`operator ()<doxid-classgeode_1_1_decrement_operator_1ab1c6e0e5c22139759b33e9e53089f694>` (Type& value) const;
+		constexpr void :target:`operator ()<doxid-classgeode_1_1_decrement_operator_1a40f96f2377bf78032d22be41cacd3a78>` (Type& value) const;
 	};

@@ -21,10 +21,10 @@ Begin and end methods for range-based iteration on custom range. See derived cla
 	public:
 		// construction
 	
-		:target:`BeginEnd<doxid-classgeode_1_1_begin_end_1a89f44afa729fbb58d55ed024c1a9ddbc>`(const Type& type);
+		:target:`BeginEnd<doxid-classgeode_1_1_begin_end_1a2374f7a9576a7f89ef93161c5f1eecb2>`(const Type& type);
 
 		// methods
 	
-		const Type& :target:`begin<doxid-classgeode_1_1_begin_end_1a75c49da0041050a3fef241e05eacbeba>`() const;
-		const Type& :target:`end<doxid-classgeode_1_1_begin_end_1a2a998c5a4b898428a69aa420df0d63a9>`() const;
+		constexpr const Type& :target:`begin<doxid-classgeode_1_1_begin_end_1a1790543f914e3dad60b208d2490e106d>`() const;
+		constexpr const Type& :target:`end<doxid-classgeode_1_1_begin_end_1aa1246096b4c557291eb800542324a701>`() const;
 	};
