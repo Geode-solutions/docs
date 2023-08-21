@@ -22,7 +22,7 @@ class geode::SectionGeometricModifier
 
 	#include <section_geometric_modifier.h>
 	
-	class SectionGeometricModifier
+	class SectionGeometricModifier: public :ref:`geode::VerticesModifier<doxid-classgeode_1_1_vertices_modifier>`
 	{
 	public:
 		// typedefs
@@ -41,7 +41,7 @@ class geode::SectionGeometricModifier
 		// construction
 	
 		:target:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier_1ab20dbca919d4736fe3bd3995d7c177a6>`(Section& section);
-		:target:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier_1a05af2a56fa7c769281d17390d23e2f64>`(SectionGeometricModifier&& other);
+		:target:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier_1a7bd71802ccacbb97f6738b83f4ad7767>`(SectionGeometricModifier&& other);
 
 		// methods
 	
@@ -93,3 +93,15 @@ class geode::SectionGeometricModifier
 		:ref:`OldToNews<doxid-classgeode_1_1_section_geometric_modifier_1a1fbd707c4cd3306bce692cbc8792be5f>` :target:`clean_vertices_lines<doxid-classgeode_1_1_section_geometric_modifier_1acb8c12857b41be07a98496e3dcf44e48>`();
 		std::vector<index_t> :target:`clean_unique_vertices<doxid-classgeode_1_1_section_geometric_modifier_1a89baf10b6d5a254143af1e5216b7a804>`();
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertices_modifier_1a880253238520a1b94353746206b81fa6>`(index_t vertex_id) const;
+

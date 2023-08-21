@@ -24,7 +24,7 @@ class geode::BRepGeometricModifier
 
 	#include <brep_geometric_modifier.h>
 	
-	class BRepGeometricModifier
+	class BRepGeometricModifier: public :ref:`geode::VerticesModifier<doxid-classgeode_1_1_vertices_modifier>`
 	{
 	public:
 		// typedefs
@@ -45,7 +45,7 @@ class geode::BRepGeometricModifier
 		// construction
 	
 		:target:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier_1a8697097b86dd8a811b4566a8a46724bd>`(BRep& brep);
-		:target:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier_1abf50d521b19024dda8e47e8a92581a5e>`(BRepGeometricModifier&& other);
+		:target:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier_1afa372cd58da13db1521667116bc0b577>`(BRepGeometricModifier&& other);
 
 		// methods
 	
@@ -132,3 +132,15 @@ class geode::BRepGeometricModifier
 		:ref:`OldToNews<doxid-classgeode_1_1_b_rep_geometric_modifier_1ad75ddcbfce2b334e5e966f4c0c9d829f>` :target:`clean_vertices_blocks<doxid-classgeode_1_1_b_rep_geometric_modifier_1a938e3e4df005821ae240b5b381594d88>`();
 		std::vector<index_t> :target:`clean_unique_vertices<doxid-classgeode_1_1_b_rep_geometric_modifier_1a85c7731c0e49e17a32df9e3b16e33b94>`();
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertices_modifier_1a880253238520a1b94353746206b81fa6>`(index_t vertex_id) const;
+

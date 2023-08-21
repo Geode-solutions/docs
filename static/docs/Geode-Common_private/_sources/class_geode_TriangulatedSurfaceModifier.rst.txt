@@ -26,7 +26,7 @@ Overview
 	#include <triangulated_surface_modifier.h>
 	
 	template <index_t dimension>
-	class TriangulatedSurfaceModifier: public :ref:`geode::VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`
+	class TriangulatedSurfaceModifier: public :ref:`geode::VerticesModifier<doxid-classgeode_1_1_vertices_modifier>`
 	{
 	public:
 		// typedefs
@@ -51,7 +51,7 @@ Overview
 			TriangulatedSurfaceBuilder<dimension>& builder
 			);
 	
-		:target:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier_1a7321eca487a44f27eafbc00849d94016>`(TriangulatedSurfaceModifier&& other);
+		:target:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier_1af35ee025a73d1c541237db8e2c695bee>`(TriangulatedSurfaceModifier&& other);
 
 		// methods
 	
@@ -96,7 +96,7 @@ Inherited Members
 	public:
 		// methods
 	
-		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertices_modifier_1a880253238520a1b94353746206b81fa6>`(index_t vertex_id) const;
 
 .. _details-classgeode_1_1_triangulated_surface_modifier:
 
