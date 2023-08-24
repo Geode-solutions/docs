@@ -31,6 +31,7 @@ Description of a point in the given dimension with double coordinates
 		bool :target:`operator ==<doxid-classgeode_1_1_point_1a2ff562e9f09e3b20d292080add63d7c2>` (const Point& other) const;
 		bool :target:`operator !=<doxid-classgeode_1_1_point_1abd314dfc91d0b07692224138294df68c>` (const Point& other) const;
 		bool :target:`operator <<doxid-classgeode_1_1_point_1a643d118977c9e02d1bb93d4a4dec959d>` (const Point& other) const;
+		bool :target:`operator <=<doxid-classgeode_1_1_point_1a53096cdedb46e77af64acd6eaf16d928>` (const Point& other) const;
 		Point :target:`operator *<doxid-classgeode_1_1_point_1a0c04a7f5b698a12dcec319f8cff44244>` (double multiplier) const;
 		Point :target:`operator/<doxid-classgeode_1_1_point_1af21d13fe05e29749aa399fd7ee013bb9>` (double divider) const;
 		Point :target:`operator +<doxid-classgeode_1_1_point_1a22151aab6c4e1c94578f7a7e93eef87a>` (const Point& other) const;
