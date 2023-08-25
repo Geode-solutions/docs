@@ -117,6 +117,7 @@ class geode::BRepGeometricModifier
 		index_t :target:`updated_vertex<doxid-classgeode_1_1_b_rep_geometric_modifier_1a7230dfe2ace705b98fadd367c715e0d1>`(const Line3D& line, index_t vertex) const;
 		index_t :target:`updated_vertex<doxid-classgeode_1_1_b_rep_geometric_modifier_1a733382ed6589fc6ef48ae5bf88bfcff5>`(const Surface3D& surface, index_t vertex) const;
 		index_t :target:`updated_vertex<doxid-classgeode_1_1_b_rep_geometric_modifier_1a962511a48e12c36df8dabe65633cfe64>`(const Block3D& block, index_t vertex) const;
+		index_t :target:`updated_unique_vertex<doxid-classgeode_1_1_b_rep_geometric_modifier_1a483ebf7b2683070280f2b1309cd41d33>`(index_t unique_vertex) const;
 		bool :target:`is_edge_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a2d4da300ac10675fb9365e82711235d2>`(const Line3D& line, index_t edge) const;
 		bool :target:`is_edge_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1aef55dbe1d8719ff85e8a6d79985764f3>`(const Surface3D& surface, index_t edge) const;
 		bool :target:`is_triangle_active<doxid-classgeode_1_1_b_rep_geometric_modifier_1a10b28d8df305de1e7bdf80900feff46c>`(const Surface3D& surface, index_t triangle) const;
