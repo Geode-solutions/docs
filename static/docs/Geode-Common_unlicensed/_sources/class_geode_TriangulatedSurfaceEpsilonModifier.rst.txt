@@ -71,7 +71,7 @@ Inherited Members
 
 		// methods
 	
-		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertices_modifier_1a880253238520a1b94353746206b81fa6>`(index_t vertex_id) const;
 		bool :ref:`is_triangle_active<doxid-classgeode_1_1_triangulated_surface_modifier_1a6a0003eaa0337099e027bb9418ea373f>`(index_t triangle_id) const;
 		bool :ref:`is_edge_active<doxid-classgeode_1_1_triangulated_surface_modifier_1a5e73c85b316662435978b88096bd34d5>`(index_t edge_id) const;
 		bool :ref:`is_edge_active<doxid-classgeode_1_1_triangulated_surface_modifier_1af33792af1c0062e08d5392631a723f1d>`(const PolygonEdge& edge) const;

@@ -74,7 +74,7 @@ Inherited Members
 
 		// methods
 	
-		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertices_modifier_1a880253238520a1b94353746206b81fa6>`(index_t vertex_id) const;
 		bool :ref:`is_tetrahedron_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1af187b78931d693da120ab9da5c5b4549>`(index_t tetrahedron_id) const;
 		bool :ref:`is_facet_active<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a49fdcfaf239bff7e181f1aaa5c7bb932>`(index_t facet_id) const;
 		:ref:`SolidSplitInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_info>` :ref:`split_tetrahedron<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a1645e8ce599bf3ab1036071f1af3a939>`(index_t tetrahedron_id, const Point3D& point);

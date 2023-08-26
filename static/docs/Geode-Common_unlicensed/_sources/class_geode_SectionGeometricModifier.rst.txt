@@ -22,7 +22,7 @@ class geode::SectionGeometricModifier
 
 	#include <section_geometric_modifier.h>
 	
-	class SectionGeometricModifier
+	class SectionGeometricModifier: public :ref:`geode::VerticesModifier<doxid-classgeode_1_1_vertices_modifier>`
 	{
 	public:
 		// typedefs
@@ -41,7 +41,7 @@ class geode::SectionGeometricModifier
 		// construction
 	
 		:target:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier_1ab20dbca919d4736fe3bd3995d7c177a6>`(Section& section);
-		:target:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier_1a05af2a56fa7c769281d17390d23e2f64>`(SectionGeometricModifier&& other);
+		:target:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier_1a7bd71802ccacbb97f6738b83f4ad7767>`(SectionGeometricModifier&& other);
 
 		// methods
 	
@@ -82,6 +82,7 @@ class geode::SectionGeometricModifier
 		void :target:`rescale_point<doxid-classgeode_1_1_section_geometric_modifier_1a41415c5efa3a7b7722f5d14b85229157>`(index_t unique_vertex, const std::array<double, 2>& scale);
 		index_t :target:`updated_vertex<doxid-classgeode_1_1_section_geometric_modifier_1a738d21a4c558a3947dd410f2af0a2e86>`(const Line2D& line, index_t vertex) const;
 		index_t :target:`updated_vertex<doxid-classgeode_1_1_section_geometric_modifier_1a458b46f74d1c4650173b71e39b2a72bf>`(const Surface2D& surface, index_t vertex) const;
+		index_t :target:`updated_unique_vertex<doxid-classgeode_1_1_section_geometric_modifier_1ac6dc5501bda3109cfe1ef4bfa3f9f532>`(index_t unique_vertex) const;
 		bool :target:`is_edge_active<doxid-classgeode_1_1_section_geometric_modifier_1aae881e9c3cc8d5b33fdca112dbbf7d9a>`(const Line2D& line, index_t edge) const;
 		bool :target:`is_triangle_active<doxid-classgeode_1_1_section_geometric_modifier_1a59c12cd25a28a2ede0ac551b972061ac>`(const Surface2D& surface, index_t triangle) const;
 		:ref:`CleanMappings<doxid-structgeode_1_1_section_geometric_modifier_1_1_clean_mappings>` :target:`clean<doxid-classgeode_1_1_section_geometric_modifier_1a8f03c5a8cc578fcf3d9f789a30cd3e5e>`();
@@ -93,3 +94,15 @@ class geode::SectionGeometricModifier
 		:ref:`OldToNews<doxid-classgeode_1_1_section_geometric_modifier_1a1fbd707c4cd3306bce692cbc8792be5f>` :target:`clean_vertices_lines<doxid-classgeode_1_1_section_geometric_modifier_1acb8c12857b41be07a98496e3dcf44e48>`();
 		std::vector<index_t> :target:`clean_unique_vertices<doxid-classgeode_1_1_section_geometric_modifier_1a89baf10b6d5a254143af1e5216b7a804>`();
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertices_modifier_1a880253238520a1b94353746206b81fa6>`(index_t vertex_id) const;
+

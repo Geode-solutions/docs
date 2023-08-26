@@ -66,7 +66,7 @@ namespace geode
 	class_geode_TetrahedralSolidModifier.rst
 	class_geode_TriangulatedSurfaceEpsilonModifier.rst
 	class_geode_TriangulatedSurfaceModifier.rst
-	class_geode_VertexSetModifier.rst
+	class_geode_VerticesModifier.rst
 
 Overview
 ~~~~~~~~
@@ -232,7 +232,7 @@ Overview
 	template <index_t dimension>
 	class :ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`;
 
-	class :ref:`VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`;
+	class :ref:`VerticesModifier<doxid-classgeode_1_1_vertices_modifier>`;
 
 	// global variables
 
@@ -451,6 +451,13 @@ Overview
 		const Line3D& line,
 		index_t edge,
 		const Point3D& point
+		);
+
+	:ref:`BRepSimulationResult<doxid-structgeode_1_1_b_rep_simulation_result>` geode_common_modifier_model_api :target:`is_swap_edge_valid<doxid-namespacegeode_1acd9978e04d71de61704daa45007ff098>`(
+		const BRep& brep,
+		const Block3D& block,
+		const PolyhedronFacetEdge& edge,
+		index_t apex
 		);
 
 	:ref:`BRepSimulationResult<doxid-structgeode_1_1_b_rep_simulation_result>` geode_common_modifier_model_api :target:`is_swap_edge_valid<doxid-namespacegeode_1a786639763b2f5179ea84ba511f1b2c53>`(

@@ -19,7 +19,7 @@ Overview
 	#include <edged_curve_modifier.h>
 	
 	template <index_t dimension>
-	class EdgedCurveModifier: public :ref:`geode::VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`
+	class EdgedCurveModifier: public :ref:`geode::VerticesModifier<doxid-classgeode_1_1_vertices_modifier>`
 	{
 	public:
 		// construction
@@ -29,7 +29,7 @@ Overview
 			EdgedCurveBuilder<dimension>& builder
 			);
 	
-		:target:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier_1af5381bfdbd0c23a6cc5e737d42ffae28>`(EdgedCurveModifier&& other);
+		:target:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier_1ad9a61cd95f831b3e77595c512e6d1b6b>`(EdgedCurveModifier&& other);
 
 		// methods
 	
@@ -50,7 +50,7 @@ Inherited Members
 	public:
 		// methods
 	
-		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertices_modifier_1a880253238520a1b94353746206b81fa6>`(index_t vertex_id) const;
 
 .. _details-classgeode_1_1_edged_curve_modifier:
 

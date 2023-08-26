@@ -193,7 +193,7 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <a class="reference internal" href="class_geode_TriangulatedSurfaceModifier.html#doxid-classgeode-1-1-triangulated-surface-modifier"><span class="std std-ref">TriangulatedSurfaceModifier</span></a><span></span><span class="p">;</span>
 
-<span class="k">class</span> <a class="reference internal" href="class_geode_VertexSetModifier.html#doxid-classgeode-1-1-vertex-set-modifier"><span class="std std-ref">VertexSetModifier</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_VerticesModifier.html#doxid-classgeode-1-1-vertices-modifier"><span class="std std-ref">VerticesModifier</span></a><span></span><span class="p">;</span>
 
 <span class="c1">// global variables</span>
 
@@ -412,6 +412,13 @@
     <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acd9978e04d71de61704daa45007ff098"><span></span><span class="n">is_swap_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">apex</span>
     <span class="p">);</span>
 
 <a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a786639763b2f5179ea84ba511f1b2c53"><span></span><span class="n">is_swap_edge_valid</span></span><span></span><span class="p">(</span>

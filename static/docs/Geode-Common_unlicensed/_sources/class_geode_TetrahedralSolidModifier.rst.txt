@@ -27,7 +27,7 @@ Overview
 
 	#include <tetrahedral_solid_modifier.h>
 	
-	class TetrahedralSolidModifier: public :ref:`geode::VertexSetModifier<doxid-classgeode_1_1_vertex_set_modifier>`
+	class TetrahedralSolidModifier: public :ref:`geode::VerticesModifier<doxid-classgeode_1_1_vertices_modifier>`
 	{
 	public:
 		// typedefs
@@ -54,7 +54,7 @@ Overview
 			TetrahedralSolidBuilder3D& builder
 			);
 	
-		:target:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a772073a33cc520c56b1f5fea8f01f38f>`(TetrahedralSolidModifier&& other);
+		:target:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ae09d46a20c3649518e66c31a280dca29>`(TetrahedralSolidModifier&& other);
 
 		// methods
 	
@@ -100,7 +100,7 @@ Inherited Members
 	public:
 		// methods
 	
-		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertex_set_modifier_1a4766fb064f0d9232973c1f24d8726759>`(index_t vertex_id) const;
+		index_t :ref:`updated_vertex<doxid-classgeode_1_1_vertices_modifier_1a880253238520a1b94353746206b81fa6>`(index_t vertex_id) const;
 
 .. _details-classgeode_1_1_tetrahedral_solid_modifier:
 
