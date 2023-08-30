@@ -270,7 +270,7 @@ export default {
         extension: '.ts',
         cpp: "<a href='/opengeode?page=class_geode_TriangulatedSurface.html'><code>TriangulatedSurface3D</code></a>",
         in: true,
-        out: false,
+        out: true,
       },
       {
         extension: '.wl',
