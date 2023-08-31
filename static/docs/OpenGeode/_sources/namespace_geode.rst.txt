@@ -57,6 +57,7 @@ namespace geode
 	struct_geode_PolyhedronFacetVertex.rst
 	struct_geode_PolyhedronVertex.rst
 	struct_geode_SectionComponentMeshEdges.rst
+	struct_geode_SectionExtruderOptions.rst
 	struct_geode_SectionMeshesElementMapping.rst
 	struct_geode_SectionMeshesVertexMapping.rst
 	struct_geode_SidedSurface.rst
@@ -406,14 +407,14 @@ Overview
 
 	struct :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`;
 
-	template <>
-	struct :ref:`AttributeLinearInterpolationImpl<RGBColor><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_r_g_b_color_01_4>`;
+	template <index_t dimension>
+	struct :ref:`AttributeLinearInterpolationImpl<Point<dimension>><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_point_3_01dimension_01_4_01_4>`;
 
 	template <>
 	struct :ref:`AttributeLinearInterpolationImpl<GreyscaleColor><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_greyscale_color_01_4>`;
 
-	template <index_t dimension>
-	struct :ref:`AttributeLinearInterpolationImpl<Point<dimension>><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_point_3_01dimension_01_4_01_4>`;
+	template <>
+	struct :ref:`AttributeLinearInterpolationImpl<RGBColor><doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_r_g_b_color_01_4>`;
 
 	template <typename AttributeType>
 	struct :ref:`AttributeLinearInterpolationImpl<doxid-structgeode_1_1_attribute_linear_interpolation_impl>`;
@@ -438,14 +439,14 @@ Overview
 
 	struct :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`;
 
-	template <index_t dimension>
-	struct :ref:`GenericAttributeConversion<Point<dimension>><doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4>`;
-
 	template <>
 	struct :ref:`GenericAttributeConversion<RGBColor><doxid-structgeode_1_1_generic_attribute_conversion_3_01_r_g_b_color_01_4>`;
 
 	template <>
 	struct :ref:`GenericAttributeConversion<GreyscaleColor><doxid-structgeode_1_1_generic_attribute_conversion_3_01_greyscale_color_01_4>`;
+
+	template <index_t dimension>
+	struct :ref:`GenericAttributeConversion<Point<dimension>><doxid-structgeode_1_1_generic_attribute_conversion_3_01_point_3_01dimension_01_4_01_4>`;
 
 	template <typename AttributeType>
 	struct :ref:`GenericAttributeConversion<doxid-structgeode_1_1_generic_attribute_conversion>`;
@@ -481,6 +482,7 @@ Overview
 	struct :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`;
 	struct :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`;
 	struct :ref:`SectionComponentMeshEdges<doxid-structgeode_1_1_section_component_mesh_edges>`;
+	struct :ref:`SectionExtruderOptions<doxid-structgeode_1_1_section_extruder_options>`;
 	struct :ref:`SectionMeshesElementMapping<doxid-structgeode_1_1_section_meshes_element_mapping>`;
 	struct :ref:`SectionMeshesVertexMapping<doxid-structgeode_1_1_section_meshes_vertex_mapping>`;
 	struct :ref:`SidedSurface<doxid-structgeode_1_1_sided_surface>`;
@@ -2318,11 +2320,9 @@ Overview
 		double axis_coordinate
 		);
 
-	:ref:`BRep<doxid-classgeode_1_1_b_rep>` opengeode_model_api :target:`extrude_section_to_brep<doxid-namespacegeode_1ad6e220c34ea1877d673005a95df8014a>`(
+	:ref:`BRep<doxid-classgeode_1_1_b_rep>` opengeode_model_api :target:`extrude_section_to_brep<doxid-namespacegeode_1a8138297bfdcc5490b553a2631e241aa1>`(
 		const :ref:`Section<doxid-classgeode_1_1_section>`& section,
-		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` axis_to_add,
-		double min_coordinate,
-		double max_coordinate
+		const :ref:`SectionExtruderOptions<doxid-structgeode_1_1_section_extruder_options>`& options
 		);
 
 	void opengeode_model_api :target:`convert_surface_mesh<doxid-namespacegeode_1a79fd18938158c66dfb6c5ccae8bc70b7>`(
