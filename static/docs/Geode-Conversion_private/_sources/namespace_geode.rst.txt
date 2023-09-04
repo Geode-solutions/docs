@@ -116,6 +116,11 @@ Overview
 		absl::string_view attribute_name
 		);
 
+	std::tuple<Section, :ref:`ModelMappings<doxid-structgeode_1_1_model_mappings>`> geode_conversion_model_api :ref:`add_sharp_features<doxid-namespacegeode_1a20e7c00979bd3e166da3bb8a723ff895>`(
+		const Section& model,
+		double max_angle
+		);
+
 	template <typename Model>
 	ModelGenericMapping :target:`build_model_component_mapping<doxid-namespacegeode_1adefa7af03a3fd14173ba1d1af6083842>`(
 		const Model& out_model,
@@ -318,4 +323,34 @@ Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses 
 		- attribute_name
 
 		- Name of attribute stored on solid polygons @warn Attribute should be convertible to float.
+
+.. index:: pair: function; add_sharp_features
+.. _doxid-namespacegeode_1a20e7c00979bd3e166da3bb8a723ff895:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<Section, :ref:`ModelMappings<doxid-structgeode_1_1_model_mappings>`> geode_conversion_model_api add_sharp_features(
+		const Section& model,
+		double max_angle
+		)
+
+Creates a new Section from the given one, with new corners on the sharp features of the lines (points where the angle between the edges is higher than the given max_angle).
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- model
+
+		- Input section
+
+	*
+		- max_angle
+
+		- Angle between the edges under which their common vertex is considered a sharp feature.
 
