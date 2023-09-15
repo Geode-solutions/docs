@@ -24,7 +24,7 @@ To use this class, inherit from it and use the protected method :ref:`Singleton:
 
 	// direct descendants
 
-	template <typename Key, typename BaseClass, typename... Args>
+	template <typename Key, typename BaseClassType, typename... Args>
 	class :ref:`Factory<doxid-classgeode_1_1_factory>`;
 
 	class :ref:`Library<doxid-classgeode_1_1_library>`;

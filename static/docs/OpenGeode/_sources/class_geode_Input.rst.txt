@@ -7,6 +7,8 @@ template class geode::Input
 .. toctree::
 	:hidden:
 
+	struct_geode_Input_MissingFiles.rst
+
 
 
 
@@ -19,8 +21,17 @@ template class geode::Input
 	class Input: public :ref:`geode::IOFile<doxid-classgeode_1_1_i_o_file>`
 	{
 	public:
+		// typedefs
+	
+		typedef Object :target:`InputData<doxid-classgeode_1_1_input_1a3825d3a2f87bc1958617c6c6b6655a1f>`;
+
+		// structs
+	
+		struct :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>`;
+
 		// methods
 	
+		virtual :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>` :target:`check_missing_files<doxid-classgeode_1_1_input_1a2ffd68839c1e64431c5b38cc70ac869f>`() const;
 		virtual Object :target:`read<doxid-classgeode_1_1_input_1a6caf553bf75b99577a4117d4780199e1>`(const Args&... args) = 0;
 	};
 

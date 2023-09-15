@@ -42,13 +42,26 @@
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="nl">TetrahedralSolidInput</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input"><span class="std std-ref">geode::Input</span></a><span></span>
 <span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input"><span class="std std-ref">Input</span></a><span></span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TetrahedralSolid.html#doxid-classgeode-1-1-tetrahedral-solid"><span class="std std-ref">TetrahedralSolid</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-tetrahedral-solid-input-1a4149046e6cbffc0f18654aa7faee8423"><span></span><span class="n">Base</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 <section id="inherited-members">
 <h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h2>
 <pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="n">Object</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input-1a3825d3a2f87bc1958617c6c6b6655a1f"><span class="std std-ref">InputData</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// structs</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_Input_MissingFiles.html#doxid-structgeode-1-1-input-1-1-missing-files"><span class="std std-ref">MissingFiles</span></a><span></span><span class="p">;</span>
+
     <span class="c1">// methods</span>
 
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_IOFile.html#doxid-classgeode-1-1-i-o-file-1a252a3f70be21314b482cfc576824b9db"><span class="std std-ref">filename</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <a class="reference internal" href="struct_geode_Input_MissingFiles.html#doxid-structgeode-1-1-input-1-1-missing-files"><span class="std std-ref">MissingFiles</span></a><span></span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input-1a2ffd68839c1e64431c5b38cc70ac869f"><span class="std std-ref">check_missing_files</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
     <span class="k">virtual</span> <span class="n">Object</span> <a class="reference internal" href="class_geode_Input.html#doxid-classgeode-1-1-input-1a6caf553bf75b99577a4117d4780199e1"><span class="std std-ref">read</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Args</span><span class="o">&amp;</span><span class="p">...</span> <span class="n">args</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
 </section>
 </section>

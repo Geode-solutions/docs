@@ -36,8 +36,18 @@ Inherited Members
 	:class: doxyrest-overview-inherited-code-block
 
 	public:
+		// typedefs
+	
+		typedef Object :ref:`InputData<doxid-classgeode_1_1_input_1a3825d3a2f87bc1958617c6c6b6655a1f>`;
+		typedef :ref:`Input<doxid-classgeode_1_1_input>`<:ref:`BRep<doxid-classgeode_1_1_b_rep>`> :ref:`Base<doxid-classgeode_1_1_b_rep_input_1ac1eacd5355ccb87818d50de9ce72513a>`;
+
+		// structs
+	
+		struct :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>`;
+
 		// methods
 	
 		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
+		virtual :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>` :ref:`check_missing_files<doxid-classgeode_1_1_input_1a2ffd68839c1e64431c5b38cc70ac869f>`() const;
 		virtual Object :ref:`read<doxid-classgeode_1_1_input_1a6caf553bf75b99577a4117d4780199e1>`(const Args&... args) = 0;
 

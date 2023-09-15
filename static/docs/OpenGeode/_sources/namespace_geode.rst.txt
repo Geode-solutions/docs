@@ -610,7 +610,7 @@ Overview
 	template <typename Type>
 	class :ref:`EraserRange<doxid-classgeode_1_1_eraser_range>`;
 
-	template <typename Key, typename BaseClass, typename... Args>
+	template <typename Key, typename BaseClassType, typename... Args>
 	class :ref:`Factory<doxid-classgeode_1_1_factory>`;
 
 	template <index_t dimension>
@@ -1571,6 +1571,9 @@ Overview
 	template <index_t dimension>
 	:ref:`RasterImage<doxid-classgeode_1_1_raster_image>`<dimension> :ref:`load_raster_image<doxid-namespacegeode_1a4a39f846fc8600f31607f47feec37a60>`(absl::string_view filename);
 
+	template <index_t dimension>
+	:ref:`RasterImageInput<doxid-classgeode_1_1_raster_image_input>`<dimension>::MissingFiles :target:`check_raster_image_missing_files<doxid-namespacegeode_1a0e3332ad73722a7c665c0344fb0f316e>`(absl::string_view filename);
+
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a51eb99ef6c8ca6695fa7749501893dfd>`(:ref:`RasterImageInputFactory<doxid-namespacegeode_1a58c047148fb27d8472554cabf0a2c155>`);
 
 	template <index_t dimension>
@@ -1941,6 +1944,9 @@ Overview
 	std::unique_ptr<:ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>> :ref:`load_edged_curve<doxid-namespacegeode_1ae0ac6f74f5a4eca322a13409eed48561>`(absl::string_view filename);
 
 	template <index_t dimension>
+	:ref:`EdgedCurveInput<doxid-classgeode_1_1_edged_curve_input>`<dimension>::MissingFiles :target:`check_edged_curve_missing_files<doxid-namespacegeode_1a2d656edb2b14767eb050d7a0fea1df3a>`(absl::string_view filename);
+
+	template <index_t dimension>
 	void :ref:`save_edged_curve<doxid-namespacegeode_1aba7ac11907d0a58ea7fc245965cd8b63>`(
 		const :ref:`EdgedCurve<doxid-classgeode_1_1_edged_curve>`<dimension>& edged_curve,
 		absl::string_view filename
@@ -1975,6 +1981,7 @@ Overview
 		);
 
 	std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`> opengeode_mesh_api :ref:`load_graph<doxid-namespacegeode_1a90ea541741fdf3169e5e67c31b51648f>`(absl::string_view filename);
+	GraphInput::MissingFiles opengeode_mesh_api :target:`check_graph_missing_files<doxid-namespacegeode_1ab8e7e9d9d5c98207b639910bbeb77712>`(absl::string_view filename);
 
 	void opengeode_mesh_api :ref:`save_graph<doxid-namespacegeode_1a7bfdf4be37e5f3d64db9c16d8a4c5a23>`(
 		const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph,
@@ -1989,6 +1996,9 @@ Overview
 
 	template <index_t dimension>
 	std::unique_ptr<:ref:`HybridSolid<doxid-classgeode_1_1_hybrid_solid>`<dimension>> :ref:`load_hybrid_solid<doxid-namespacegeode_1a6be4f5843d0a729a7385d523471ed6b9>`(absl::string_view filename);
+
+	template <index_t dimension>
+	:ref:`HybridSolidInput<doxid-classgeode_1_1_hybrid_solid_input>`<dimension>::MissingFiles :target:`check_hybrid_solid_missing_files<doxid-namespacegeode_1aebc72f14da5a037ec78acd41cac885e3>`(absl::string_view filename);
 
 	:target:`ALIAS_3D<doxid-namespacegeode_1a538bb1f70017d299f05fb5e294cb4fd5>`(:ref:`HybridSolidInputFactory<doxid-namespacegeode_1a2121e66228c18390466b68c307b50a31>`);
 
@@ -2008,6 +2018,9 @@ Overview
 	std::unique_ptr<:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> :ref:`load_point_set<doxid-namespacegeode_1a896fe5023e9476ab90920a265bd9ad23>`(absl::string_view filename);
 
 	template <index_t dimension>
+	:ref:`PointSetInput<doxid-classgeode_1_1_point_set_input>`<dimension>::MissingFiles :target:`check_point_set_missing_files<doxid-namespacegeode_1ad71b6364edaca3f336b5311b40da9bbb>`(absl::string_view filename);
+
+	template <index_t dimension>
 	void :ref:`save_point_set<doxid-namespacegeode_1abfd3fc09c7d0b0ad37241beac4fe7eb5>`(
 		const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& point_set,
 		absl::string_view filename
@@ -2021,6 +2034,9 @@ Overview
 
 	template <index_t dimension>
 	std::unique_ptr<:ref:`PolygonalSurface<doxid-classgeode_1_1_polygonal_surface>`<dimension>> :ref:`load_polygonal_surface<doxid-namespacegeode_1ad9542d68d1e1ad3db59aad9b478b1e06>`(absl::string_view filename);
+
+	template <index_t dimension>
+	:ref:`PolygonalSurfaceInput<doxid-classgeode_1_1_polygonal_surface_input>`<dimension>::MissingFiles :target:`check_polygonal_surface_missing_files<doxid-namespacegeode_1a5a214233916ca3e356b47657456eaa6d>`(absl::string_view filename);
 
 	template <index_t dimension>
 	void :ref:`save_polygonal_surface<doxid-namespacegeode_1af4ba3331fa0355d15f855fc1fd77b737>`(
@@ -2040,6 +2056,9 @@ Overview
 	std::unique_ptr<:ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>> :ref:`load_polyhedral_solid<doxid-namespacegeode_1a82056bc821eca46dfd66810f500eebdb>`(absl::string_view filename);
 
 	template <index_t dimension>
+	:ref:`PolyhedralSolidInput<doxid-classgeode_1_1_polyhedral_solid_input>`<dimension>::MissingFiles :target:`check_polyhedral_solid_missing_files<doxid-namespacegeode_1a312692d77f645dfc78468a52e4b7add6>`(absl::string_view filename);
+
+	template <index_t dimension>
 	void :ref:`save_polyhedral_solid<doxid-namespacegeode_1a21ca1aff84553e8332fd172dc651a521>`(
 		const :ref:`PolyhedralSolid<doxid-classgeode_1_1_polyhedral_solid>`<dimension>& polyhedral_solid,
 		absl::string_view filename
@@ -2053,6 +2072,9 @@ Overview
 
 	template <index_t dimension>
 	std::unique_ptr<RegularGrid<dimension>> :ref:`load_regular_grid<doxid-namespacegeode_1afcf1d96c3b37241ad459bc855980cc4a>`(absl::string_view filename);
+
+	template <index_t dimension>
+	:ref:`RegularGridInput<doxid-classgeode_1_1_regular_grid_input>`<dimension>::MissingFiles :target:`check_regular_grid_missing_files<doxid-namespacegeode_1a70c470c3480c94b91cb6de7fcd26072c>`(absl::string_view filename);
 
 	template <index_t dimension>
 	void :ref:`save_regular_grid<doxid-namespacegeode_1ad51a801008d7bedde89b06be6cfaa992>`(
@@ -2070,6 +2092,9 @@ Overview
 	std::unique_ptr<:ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>> :ref:`load_tetrahedral_solid<doxid-namespacegeode_1a2e8813a261d4d7884f67f6e3e1497986>`(absl::string_view filename);
 
 	template <index_t dimension>
+	:ref:`TetrahedralSolidInput<doxid-classgeode_1_1_tetrahedral_solid_input>`<dimension>::MissingFiles :target:`check_tetrahedral_solid_missing_files<doxid-namespacegeode_1afbe9a51f9da212b1f3912d4e74d645e6>`(absl::string_view filename);
+
+	template <index_t dimension>
 	void :ref:`save_tetrahedral_solid<doxid-namespacegeode_1a46ada7c17eacb9951ed8577a12f3a852>`(
 		const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& tetrahedral_solid,
 		absl::string_view filename
@@ -2085,6 +2110,9 @@ Overview
 	std::unique_ptr<:ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>> :ref:`load_triangulated_surface<doxid-namespacegeode_1a0aa2012312b150d9250b853482f223ef>`(absl::string_view filename);
 
 	template <index_t dimension>
+	:ref:`TriangulatedSurfaceInput<doxid-classgeode_1_1_triangulated_surface_input>`<dimension>::MissingFiles :target:`check_triangulated_surface_missing_files<doxid-namespacegeode_1a40996465405dfc3327d33c9039b03131>`(absl::string_view filename);
+
+	template <index_t dimension>
 	void :ref:`save_triangulated_surface<doxid-namespacegeode_1aa80f5521075381d4ead39f194ac373e4>`(
 		const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& triangulated_surface,
 		absl::string_view filename
@@ -2096,6 +2124,7 @@ Overview
 		);
 
 	std::unique_ptr<:ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`> opengeode_mesh_api :ref:`load_vertex_set<doxid-namespacegeode_1a7e0090ed0a8517172d5ec8f1f9cf83b7>`(absl::string_view filename);
+	VertexSetInput::MissingFiles opengeode_mesh_api :target:`check_vertex_set_missing_files<doxid-namespacegeode_1ad8cda0fe09a6826048b4bdef1bf97924>`(absl::string_view filename);
 
 	void opengeode_mesh_api :ref:`save_vertex_set<doxid-namespacegeode_1a94cc8bcb32cd71b66c2d6cb320e40921>`(
 		const :ref:`VertexSet<doxid-classgeode_1_1_vertex_set>`& vertex_set,
@@ -2506,8 +2535,10 @@ Overview
 	:target:`ALIAS_2D<doxid-namespacegeode_1a775f43c93e557302fbaa359aa0af2f19>`(:ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a138f53359f6b0ed97828265b627ab688>`(:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`);
 	:ref:`BRep<doxid-classgeode_1_1_b_rep>` opengeode_model_api :ref:`load_brep<doxid-namespacegeode_1aa6aae08635ec147db4348b2aa375b46d>`(absl::string_view filename);
+	BRepInput::MissingFiles opengeode_model_api :target:`check_brep_missing_files<doxid-namespacegeode_1a141c50e3cfbf2e6ffca85d8ed40aa189>`(absl::string_view filename);
 	void opengeode_model_api :ref:`save_brep<doxid-namespacegeode_1a5740f1154ca1ae97b38be95bdf0caa3c>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, absl::string_view filename);
 	:ref:`Section<doxid-classgeode_1_1_section>` opengeode_model_api :ref:`load_section<doxid-namespacegeode_1a14fe29f519ee8cf81b5b9e7f651c203e>`(absl::string_view filename);
+	SectionInput::MissingFiles opengeode_model_api :target:`check_section_missing_files<doxid-namespacegeode_1aee35767a36c69bfabb6f9ebef06c9c07>`(absl::string_view filename);
 
 	void opengeode_model_api :ref:`save_section<doxid-namespacegeode_1ae92f24302459ce1748811758a5f24f96>`(
 		const :ref:`Section<doxid-classgeode_1_1_section>`& section,
