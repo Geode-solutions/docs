@@ -1139,6 +1139,38 @@ Overview
 	void opengeode_basic_api :ref:`register_basic_serialize_pcontext<doxid-namespacegeode_1abf3517d752f9c05bbb40e02825f61243>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	void opengeode_basic_api :ref:`register_basic_deserialize_pcontext<doxid-namespacegeode_1a4971b040e31d95abe4053f71d315b4d7>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1835a571f06931f017e86baacfa25bb8>`(:ref:`CellArray<doxid-classgeode_1_1_cell_array>`);
+	bool opengeode_basic_api :target:`file_exists<doxid-namespacegeode_1ac492dcc18b564bce0753982a27d5ea06>`(absl::string_view file_path);
+
+	void opengeode_basic_api :target:`check_keyword<doxid-namespacegeode_1a8408d5f60bfa2fb759d012ac6e496332>`(
+		std::ifstream& file,
+		absl::string_view keyword
+		);
+
+	bool opengeode_basic_api :target:`line_starts_with<doxid-namespacegeode_1a6b36cf403d68a4ff38b37d695e6fac3e>`(
+		std::ifstream& file,
+		absl::string_view check
+		);
+
+	std::string opengeode_basic_api :target:`goto_keyword<doxid-namespacegeode_1ad130f2bff91f1456adf858a112fa4f9d>`(
+		std::ifstream& file,
+		absl::string_view word
+		);
+
+	std::string opengeode_basic_api :target:`goto_keywords<doxid-namespacegeode_1aac5b1b1856314b2bb2c7680a52889557>`(
+		std::ifstream& file,
+		absl::Span<const absl::string_view> words
+		);
+
+	absl::optional<std::string> opengeode_basic_api :target:`goto_keyword_if_it_exists<doxid-namespacegeode_1a45092636b1efc0f36777389647f91d9b>`(
+		std::ifstream& file,
+		absl::string_view word
+		);
+
+	absl::optional<std::string> opengeode_basic_api :target:`next_keyword_if_it_exists<doxid-namespacegeode_1ad0fa321f26354d3786ad8ee992696bb7>`(
+		std::ifstream& file,
+		absl::string_view word
+		);
+
 	std::string opengeode_basic_api :target:`filename_with_extension<doxid-namespacegeode_1a00deaeb8544d7b897c2eeb80260c6bc6>`(absl::string_view path);
 	std::string opengeode_basic_api :target:`filename_without_extension<doxid-namespacegeode_1a9368b64fa9978d1188bab4c3ce416fde>`(absl::string_view path);
 	std::string opengeode_basic_api :target:`filepath_without_extension<doxid-namespacegeode_1aedd97cf95ccd0818defedbd18b3bc1cb>`(absl::string_view path);
@@ -1154,6 +1186,12 @@ Overview
 
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> opengeode_basic_api :target:`old2new_permutation<doxid-namespacegeode_1ab1356e215313d6b14a021c9a6b1c01cd>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> permutation);
 	std::vector<absl::string_view> opengeode_basic_api :target:`string_split<doxid-namespacegeode_1a91e63f7358ed38f8a5248922fbf8fdad>`(absl::string_view string);
+
+	bool opengeode_basic_api :target:`string_starts_with<doxid-namespacegeode_1a83e8b0d69a70b2b9fcb314b0ce396a32>`(
+		absl::string_view string,
+		absl::string_view check
+		);
+
 	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` opengeode_basic_api :target:`string_to_index<doxid-namespacegeode_1a44d4220b8fc40e0248339f379efe6de6>`(absl::string_view string);
 	int opengeode_basic_api :target:`string_to_int<doxid-namespacegeode_1af1e95803c9c42a9078f520ab4945324c>`(absl::string_view string);
 	float opengeode_basic_api :target:`string_to_float<doxid-namespacegeode_1a93bdf495a836f82f4fee0eea8bfd9ae2>`(absl::string_view string);
