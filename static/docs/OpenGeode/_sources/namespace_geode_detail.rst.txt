@@ -111,6 +111,41 @@ namespace geode::detail
 	template <typename Serializer>
 	void :target:`register_basic_pcontext<doxid-namespacegeode_1_1detail_1a8648101a87baa0975d8f9ccf34abb183>`(:ref:`PContext<doxid-namespacegeode_1a79da04720a9926e6212751b7e0d5b6c7>`& context);
 
+	template <typename Object>
+	void :target:`update_default_name<doxid-namespacegeode_1_1detail_1a90124c11db648058dfe3e67b5d7b0ccb>`(
+		Object& object,
+		absl::string_view filename
+		);
+
+	template <typename Object>
+	void :target:`update_default_name<doxid-namespacegeode_1_1detail_1a673950c9c47bbf5896082f037f200cf3>`(
+		std::unique_ptr<Object>& object,
+		absl::string_view filename
+		);
+
+	template <typename Factory>
+	std::unique_ptr<typename :ref:`Factory::BaseClass<doxid-classgeode_1_1_factory_1afdad9612175477b9840a761f44046243>`> :target:`geode_object_input_reader<doxid-namespacegeode_1_1detail_1af342548ba1adbb8001e4b37bc4af3dce>`(absl::string_view& filename);
+
+	template <typename Factory, typename... Args>
+	Factory::BaseClass::InputData :target:`geode_object_input_impl<doxid-namespacegeode_1_1detail_1a0bfa238dd4734eb9bbc6864f9ca9b7e6>`(
+		absl::string_view type,
+		absl::string_view filename,
+		Args... args
+		);
+
+	void :target:`add_to_message<doxid-namespacegeode_1_1detail_1a00a9448df1f5759506b7022a3fb6dcf8>`(
+		std::string& message,
+		:ref:`geode::index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_components,
+		absl::string_view component_text
+		);
+
+	template <typename Factory, typename Object>
+	void :target:`geode_object_output_impl<doxid-namespacegeode_1_1detail_1a945d5042fa9b7ce0015ef250560fc557>`(
+		absl::string_view type,
+		const Object& object,
+		absl::string_view filename
+		);
+
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`mapping_after_deletion<doxid-namespacegeode_1_1detail_1a90890e796e3fc5c2e28539ac82272d6c>`(const std::vector<bool>& to_delete);
 
 	template <typename Type, typename Serializer>
