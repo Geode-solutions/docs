@@ -18,6 +18,9 @@ class geode::ImplicitCrossSectionInput
 	class ImplicitCrossSectionInput: public Input< ImplicitCrossSection >
 	{
 	public:
+		// typedefs
+	
+		typedef Input<:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`> :target:`Base<doxid-classgeode_1_1_implicit_cross_section_input_1a3eeba595254ef36f92ff084e812d1f2e>`;
 	};
 
 	// direct descendants

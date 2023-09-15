@@ -329,6 +329,7 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a25ef31899ff6065c94d0d77f4c167215>`(:ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a068944b4aa3095a51776291dbc52dde4>`(:ref:`StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`);
 	:ref:`CrossSection<doxid-classgeode_1_1_cross_section>` opengeode_geosciences_explicit_api :ref:`load_cross_section<doxid-namespacegeode_1a0f0b503e286957db537b13c65c6abc74>`(absl::string_view filename);
+	CrossSectionInput::MissingFiles opengeode_geosciences_explicit_api :target:`check_cross_section_missing_files<doxid-namespacegeode_1aa6f076009b859849a000273c03df4fb8>`(absl::string_view filename);
 
 	void opengeode_geosciences_explicit_api :ref:`save_cross_section<doxid-namespacegeode_1aa45a12bc76c420b87359a0113bd51e23>`(
 		const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
@@ -336,6 +337,7 @@ Overview
 		);
 
 	:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` opengeode_geosciences_explicit_api :ref:`load_structural_model<doxid-namespacegeode_1a97cf55105e7f5eb56f411bf5ace110d0>`(absl::string_view filename);
+	StructuralModelInput::MissingFiles opengeode_geosciences_explicit_api :target:`check_structural_model_missing_files<doxid-namespacegeode_1ab0f72968bc95e0fbc045871ea195e15b>`(absl::string_view filename);
 
 	void opengeode_geosciences_explicit_api :ref:`save_structural_model<doxid-namespacegeode_1ad90986608405ebe1927e06b7bd94862b>`(
 		const :ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
@@ -369,6 +371,9 @@ Overview
 	template <index_t dimension>
 	:ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension> :ref:`load_horizons_stack<doxid-namespacegeode_1a685f416d247afcd582c6c3e9b2d67419>`(absl::string_view filename);
 
+	template <index_t dimension>
+	:ref:`HorizonsStackInput<doxid-classgeode_1_1_horizons_stack_input>`<dimension>::MissingFiles :target:`check_horizon_stack_missing_files<doxid-namespacegeode_1a4ee2a03c7affd0d51f607285187f2339>`(absl::string_view filename);
+
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9c9bb164f243bb842e6e999f3c9b59a3>`(:ref:`HorizonsStackInputFactory<doxid-namespacegeode_1a0d778e40d248e7cc4850b574ff2c610d>`);
 
 	template <index_t dimension>
@@ -380,6 +385,7 @@ Overview
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a4fd6b75563b73a03e1ea10b3c6258e99>`(:ref:`HorizonsStackOutput<doxid-classgeode_1_1_horizons_stack_output>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad7391274f1d9728f821767cbf86cbde4>`(:ref:`HorizonsStackOutputFactory<doxid-namespacegeode_1a5c51210c10b5d3297e28bc039a673c18>`);
 	:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` opengeode_geosciences_implicit_api :ref:`load_implicit_cross_section<doxid-namespacegeode_1a95f3ca90219573e413a5a037733b7cd7>`(absl::string_view filename);
+	ImplicitCrossSectionInput::MissingFiles opengeode_geosciences_implicit_api :target:`check_implicit_cross_section_missing_files<doxid-namespacegeode_1ae36da06fb8c67c1b219e5bafd9670f32>`(absl::string_view filename);
 
 	void opengeode_geosciences_implicit_api :ref:`save_implicit_cross_section<doxid-namespacegeode_1ad021f73cc320d11b879c0a07da71baba>`(
 		const :ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`& implicit_model,
@@ -387,6 +393,7 @@ Overview
 		);
 
 	:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>` opengeode_geosciences_implicit_api :ref:`load_implicit_structural_model<doxid-namespacegeode_1a8bba1ebdd0aa29057a593a6281e52649>`(absl::string_view filename);
+	ImplicitStructuralModelInput::MissingFiles opengeode_geosciences_implicit_api :target:`check_implicit_structural_model_missing_files<doxid-namespacegeode_1aeb0b1296897d3f491a8cd9e9c34fcfcd>`(absl::string_view filename);
 
 	void opengeode_geosciences_implicit_api :ref:`save_implicit_structural_model<doxid-namespacegeode_1af33e5f5c005948afeb32c1310073e48f>`(
 		const :ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`& implicit_model,
@@ -394,6 +401,7 @@ Overview
 		);
 
 	:ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>` opengeode_geosciences_implicit_api :ref:`load_stratigraphic_model<doxid-namespacegeode_1a1167b1f8e9084afbaee7d2c268f7854e>`(absl::string_view filename);
+	StratigraphicModelInput::MissingFiles opengeode_geosciences_implicit_api :target:`check_stratigraphic_model_missing_files<doxid-namespacegeode_1a17446abb9bdc2a68c36cf81000e0561f>`(absl::string_view filename);
 
 	void opengeode_geosciences_implicit_api :ref:`save_stratigraphic_model<doxid-namespacegeode_1a26b17c642284969210cbd4552443b275>`(
 		const :ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`& stratigraphic_model,
@@ -401,6 +409,7 @@ Overview
 		);
 
 	:ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>` opengeode_geosciences_implicit_api :ref:`load_stratigraphic_section<doxid-namespacegeode_1a59203e72974abb3bec1de2d8e1fb7bb4>`(absl::string_view filename);
+	StratigraphicSectionInput::MissingFiles opengeode_geosciences_implicit_api :target:`check_stratigraphic_section_missing_files<doxid-namespacegeode_1ae456c16894248fca67b4c692229980fd>`(absl::string_view filename);
 
 	void opengeode_geosciences_implicit_api :ref:`save_stratigraphic_section<doxid-namespacegeode_1a41b6a009c51a5f766250b805844718a4>`(
 		const :ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>`& stratigraphic_section,

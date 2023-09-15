@@ -18,6 +18,9 @@ class geode::ImplicitStructuralModelInput
 	class ImplicitStructuralModelInput: public Input< ImplicitStructuralModel >
 	{
 	public:
+		// typedefs
+	
+		typedef Input<:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`> :target:`Base<doxid-classgeode_1_1_implicit_structural_model_input_1a3024afa2af1b447340376480d092c840>`;
 	};
 
 	// direct descendants

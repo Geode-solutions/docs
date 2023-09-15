@@ -33,3 +33,15 @@ template class geode::OpenGeodeHorizonsStackInput
 		:ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension> :target:`read<doxid-classgeode_1_1_open_geode_horizons_stack_input_1a4c488adcf38a476548898dc07a83d7af>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_horizons_stack_input_1a88be2153b07c6929895780cf97d7b680>`();
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Input<:ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension>> :ref:`Base<doxid-classgeode_1_1_horizons_stack_input_1abf2b2fefe274e5d9fc813c7df23908e9>`;
+

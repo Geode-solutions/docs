@@ -18,4 +18,7 @@ class geode::StratigraphicModelInput
 	class StratigraphicModelInput: public Input< StratigraphicModel >
 	{
 	public:
+		// typedefs
+	
+		typedef Input<:ref:`StratigraphicModel<doxid-classgeode_1_1_stratigraphic_model>`> :target:`Base<doxid-classgeode_1_1_stratigraphic_model_input_1aa22c38140c9894136b85a948e25ebb4a>`;
 	};

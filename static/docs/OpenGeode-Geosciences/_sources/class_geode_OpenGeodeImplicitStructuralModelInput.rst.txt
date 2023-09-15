@@ -32,3 +32,15 @@ class geode::OpenGeodeImplicitStructuralModelInput
 		:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>` :target:`read<doxid-classgeode_1_1_open_geode_implicit_structural_model_input_1aa4357780aa2072fa36f91169c3b31310>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_implicit_structural_model_input_1a1d8cd0ac017b2374eef594782ac9460d>`();
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Input<:ref:`ImplicitStructuralModel<doxid-classgeode_1_1_implicit_structural_model>`> :ref:`Base<doxid-classgeode_1_1_implicit_structural_model_input_1a3024afa2af1b447340376480d092c840>`;
+

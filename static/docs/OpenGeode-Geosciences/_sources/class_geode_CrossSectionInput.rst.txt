@@ -18,6 +18,9 @@ class geode::CrossSectionInput
 	class CrossSectionInput: public Input< CrossSection >
 	{
 	public:
+		// typedefs
+	
+		typedef Input<:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`> :target:`Base<doxid-classgeode_1_1_cross_section_input_1a2a566b37ca3b81601c7f2bf099ccc146>`;
 	};
 
 	// direct descendants

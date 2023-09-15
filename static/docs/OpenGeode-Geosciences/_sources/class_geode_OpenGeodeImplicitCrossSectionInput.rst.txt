@@ -32,3 +32,15 @@ class geode::OpenGeodeImplicitCrossSectionInput
 		:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>` :target:`read<doxid-classgeode_1_1_open_geode_implicit_cross_section_input_1a369ef220cf597dfa22e84a5c2f21ee05>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_implicit_cross_section_input_1a990253799dcb3c770bc43350df81d4f2>`();
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Input<:ref:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section>`> :ref:`Base<doxid-classgeode_1_1_implicit_cross_section_input_1a3eeba595254ef36f92ff084e812d1f2e>`;
+

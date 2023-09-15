@@ -32,3 +32,15 @@ class geode::OpenGeodeStructuralModelInput
 		:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` :target:`read<doxid-classgeode_1_1_open_geode_structural_model_input_1a635b5974e16e47633c4504768727cac0>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_structural_model_input_1a8ef512ea37ce2b93f77a9d37c58f1b80>`();
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Input<:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`> :ref:`Base<doxid-classgeode_1_1_structural_model_input_1a18cabe9ed9740b9774ab9dc1efd0c1b5>`;
+

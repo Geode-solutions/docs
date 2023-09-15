@@ -18,6 +18,10 @@ template class geode::HorizonsStackInput
 	template <index_t dimension>
 	class HorizonsStackInput: public Input< HorizonsStack< dimension > >
 	{
+	public:
+		// typedefs
+	
+		typedef Input<:ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension>> :target:`Base<doxid-classgeode_1_1_horizons_stack_input_1abf2b2fefe274e5d9fc813c7df23908e9>`;
 	};
 
 	// direct descendants

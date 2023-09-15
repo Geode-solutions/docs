@@ -18,4 +18,7 @@ class geode::StratigraphicSectionInput
 	class StratigraphicSectionInput: public Input< StratigraphicSection >
 	{
 	public:
+		// typedefs
+	
+		typedef Input<:ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>`> :target:`Base<doxid-classgeode_1_1_stratigraphic_section_input_1a92c6e60687b996defdf71e95242f8675>`;
 	};

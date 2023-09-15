@@ -32,3 +32,15 @@ class geode::OpenGeodeCrossSectionInput
 		:ref:`CrossSection<doxid-classgeode_1_1_cross_section>` :target:`read<doxid-classgeode_1_1_open_geode_cross_section_input_1a95a98f91d79230aab8098213339b5960>`();
 		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_cross_section_input_1aaef8b5e1e50cee2a6b2074ef091ecc66>`();
 	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Input<:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`> :ref:`Base<doxid-classgeode_1_1_cross_section_input_1a2a566b37ca3b81601c7f2bf099ccc146>`;
+
