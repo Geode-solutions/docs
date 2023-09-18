@@ -1,0 +1,1072 @@
+# namespace geode
+
+
+
+## Namespaces
+
+* [detail](detail/index.md)
+
+
+## Records
+
+* [BRepCollapseEdgeValidity](BRepCollapseEdgeValidity.md)
+* [BRepElementsAfterOperation](BRepElementsAfterOperation.md)
+* [BRepGeometricModifier](BRepGeometricModifier.md)
+* [BRepGridMetric](BRepGridMetric.md)
+* [BRepSimulationResult](BRepSimulationResult.md)
+* [CommonCoreLibrary](CommonCoreLibrary.md)
+* [CommonCutterSolidLibrary](CommonCutterSolidLibrary.md)
+* [CommonCutterSurfaceLibrary](CommonCutterSurfaceLibrary.md)
+* [CommonMetricLibrary](CommonMetricLibrary.md)
+* [CommonModifierCommonLibrary](CommonModifierCommonLibrary.md)
+* [CommonModifierEdgedCurveLibrary](CommonModifierEdgedCurveLibrary.md)
+* [CommonModifierModelLibrary](CommonModifierModelLibrary.md)
+* [CommonModifierSolidLibrary](CommonModifierSolidLibrary.md)
+* [CommonModifierSurfaceLibrary](CommonModifierSurfaceLibrary.md)
+* [CustomGridMetric](CustomGridMetric.md)
+* [CutPatchException](CutPatchException.md)
+* [CutPathException](CutPathException.md)
+* [EdgeSplit](EdgeSplit.md)
+* [EdgedCurveModifier](EdgedCurveModifier.md)
+* [FacetSplit](FacetSplit.md)
+* [FileLicenseChecker](FileLicenseChecker.md)
+* [FrontCycle](FrontCycle.md)
+* [FrontEdge](FrontEdge.md)
+* [GeometricSurfacePath](GeometricSurfacePath.md)
+* [GridMetric](GridMetric.md)
+* [Mapping](Mapping.md)
+* [Metric](Metric.md)
+* [ModelCollapseEdgeValidity](ModelCollapseEdgeValidity.md)
+* [ModelCollapsePolygonEdgeInfo](ModelCollapsePolygonEdgeInfo.md)
+* [ModelElementsAfterOperation](ModelElementsAfterOperation.md)
+* [ModelSimulationResult](ModelSimulationResult.md)
+* [ModelSplitPolygonEdgeInfo](ModelSplitPolygonEdgeInfo.md)
+* [ModelSplitTriangleInfo](ModelSplitTriangleInfo.md)
+* [Modifier](Modifier.md)
+* [ModuleLicenseChecker](ModuleLicenseChecker.md)
+* [MultiMapping](MultiMapping.md)
+* [PatchFrontEdge](PatchFrontEdge.md)
+* [PolygonData](PolygonData.md)
+* [PolygonEdgeData](PolygonEdgeData.md)
+* [PolygonEdge](PolygonEdge.md)
+* [PolyhedronFacetEdge](PolyhedronFacetEdge.md)
+* [PolyhedronFacet](PolyhedronFacet.md)
+* [SectionElementsAfterOperation](SectionElementsAfterOperation.md)
+* [SectionGeometricModifier](SectionGeometricModifier.md)
+* [SectionSimulationResult](SectionSimulationResult.md)
+* [SolidCollapseEdgeValidity](SolidCollapseEdgeValidity.md)
+* [SolidCutPatchInfo](SolidCutPatchInfo.md)
+* [SolidCutPathInfo](SolidCutPathInfo.md)
+* [SolidPatch](SolidPatch.md)
+* [SolidPatcher](SolidPatcher.md)
+* [SolidPathFinder](SolidPathFinder.md)
+* [SolidPath](SolidPath.md)
+* [SplitInfo](SplitInfo.md)
+* [SurfaceCollapseEdgeValidity](SurfaceCollapseEdgeValidity.md)
+* [SurfaceCutPathInfo](SurfaceCutPathInfo.md)
+* [SurfacePathFinderException](SurfacePathFinderException.md)
+* [SurfacePathFinder](SurfacePathFinder.md)
+* [SurfacePath](SurfacePath.md)
+* [SurfaceSegmentFinder2D](SurfaceSegmentFinder2D.md)
+* [SurfaceSegmentFinder3D](SurfaceSegmentFinder3D.md)
+* [SurfaceSegmentFinder](SurfaceSegmentFinder.md)
+* [Surface](Surface.md)
+* [TetrahedralSolidEpsilonModifier](TetrahedralSolidEpsilonModifier.md)
+* [TetrahedralSolidModifier](TetrahedralSolidModifier.md)
+* [TriangulatedSurfaceEpsilonModifier](TriangulatedSurfaceEpsilonModifier.md)
+* [TriangulatedSurfaceModifier](TriangulatedSurfaceModifier.md)
+* [VerticesModifier](VerticesModifier.md)
+
+
+## Functions
+
+### extract_mappings_from_split_info
+
+```cpp
+absl::FixedArray<Mapping<index_t> > extract_mappings_from_split_info(absl::Span<const SplitInfo> split_info)
+```
+
+
+### update_vertex_mappings
+
+```cpp
+void update_vertex_mappings(std::vector<geode::VertexMultiMapping> & vertex_multi_mappings, const geode::VertexMultiMapping & collapse_mapping)
+```
+
+
+### add_mappings_in_multi_mappings
+
+```cpp
+void add_mappings_in_multi_mappings(std::vector<MultiMapping<T> > & multi_mappings, absl::Span<const Mapping<T> > new_mappings)
+```
+
+
+### process_mapping_element
+
+```cpp
+void process_mapping_element(const geode::Mapping<T> & element, absl::flat_hash_set<T> & to_remove, absl::flat_hash_map<T, T> & new_to_old, const T & )
+```
+
+
+### process_mapping_element
+
+```cpp
+void process_mapping_element(geode::MultiMapping<T> & element, absl::flat_hash_set<T> & to_remove, absl::flat_hash_map<T, absl::InlinedVector<T, 1> > & new_to_olds, const T & no_value)
+```
+
+
+### update_mappings
+
+```cpp
+void update_mappings(std::vector<MappingType> & mappings, NewToOldMap & new_to_old, const T & no_value)
+```
+
+
+### update_mappings
+
+```cpp
+void update_mappings(std::vector<geode::Mapping<T> > & mappings, const T & no_value)
+```
+
+
+### update_multi_mappings
+
+```cpp
+void update_multi_mappings(std::vector<geode::MultiMapping<T> > & multi_mappings, const T & no_value)
+```
+
+
+### determine_cuts
+
+```cpp
+std::vector<GeometricSurfacePath2D> determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, absl::Span<const geode::SurfacePath> path_splits)
+```
+
+
+### determine_cuts
+
+```cpp
+std::vector<GeometricSurfacePath3D> determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, absl::Span<const geode::SurfacePath> path_splits)
+```
+
+
+### cut_along_path
+
+```cpp
+SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
+```
+
+
+### cut_along_path
+
+```cpp
+SurfaceCutPathInfo<2> cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
+```
+
+
+### update_vertex_mappings
+
+```cpp
+void update_vertex_mappings(int & vertex_multi_mappings, const geode::VertexMultiMapping & collapse_mapping)
+```
+
+### add_mappings_in_multi_mappings
+
+```cpp
+void add_mappings_in_multi_mappings(int & multi_mappings, absl::Span<const Mapping<T> > new_mappings)
+```
+
+
+### process_mapping_element
+
+```cpp
+void process_mapping_element(const geode::Mapping<T> & element, int & to_remove, int & new_to_old, const T & )
+```
+
+
+### process_mapping_element
+
+```cpp
+void process_mapping_element(geode::MultiMapping<T> & element, int & to_remove, int & new_to_olds, const T & no_value)
+```
+
+
+### update_mappings
+
+```cpp
+void update_mappings(int & mappings, NewToOldMap & new_to_old, const T & no_value)
+```
+
+
+### update_mappings
+
+```cpp
+void update_mappings(int & mappings, const T & no_value)
+```
+
+
+### update_multi_mappings
+
+```cpp
+void update_multi_mappings(int & multi_mappings, const T & no_value)
+```
+
+
+### cut_along_patch
+
+```cpp
+SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const PatchFrontEdge> boundary_edges, const Triangle3D & triangle)
+```
+
+
+ Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
+
+**solid** [in] TetrahedralSolid to cut
+
+**builder** [in] Builder of the Solid
+
+**boundary_edges** [in] List of oriented Patch boundary as solid edges
+
+**triangle** [in] The triangle corresponding to the patch to insert in solid**<not a builtin command>**  Cut tetrahedra are set as inactive but not deleted.
+
+### is_split_tetrahedron_valid
+
+```cpp
+_Bool is_split_tetrahedron_valid(const TetrahedralSolid3D & mesh, index_t tetrahedron_id, const Point3D & point)
+```
+
+
+ Check if a tetrahedron split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**tetrahedron_id** [in] Index of the tetrahedron to split.
+
+**point** [in] Coordinates of the split point.
+
+**return** true if split will keep mesh valid.
+
+### is_split_facet_valid
+
+```cpp
+_Bool is_split_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
+```
+
+
+ Check if a facet split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**facet** [in] Index of the PolyhedronFacet to split.
+
+**point** [in] Coordinates of the split point.
+
+**return** true if split will keep mesh valid.
+
+### is_split_facet_valid
+
+```cpp
+_Bool is_split_facet_valid(const TetrahedralSolid3D & mesh, index_t facet_id, const Point3D & point)
+```
+
+
+ Check if a facet split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**facet_id** [in] Unique index of the facet to split.
+
+**point** [in] Coordinates of the split point.
+
+**return** true if split will keep mesh valid.
+
+### is_split_edge_valid
+
+```cpp
+_Bool is_split_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+ Check if an edge split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge** [in] Index of the PolyhedronFacetEdge to split.
+
+**point** [in] Coordinates of the split point.
+
+**return** true if split will keep mesh valid.
+
+### is_split_edge_valid
+
+```cpp
+_Bool is_split_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
+```
+
+
+ Check if an edge split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge to split.
+
+**point** [in] Coordinates of the split point.
+
+**return** true if split will keep mesh valid.
+
+### is_collapse_edge_valid
+
+```cpp
+_Bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge** [in] Index of the PolyhedronFacetEdge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** true if collapse will keep mesh valid.
+
+### is_collapse_edge_valid
+
+```cpp
+_Bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** true if collapse will keep mesh valid.
+
+### is_swap_facet_valid
+
+```cpp
+_Bool is_swap_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet)
+```
+
+
+ Check if a facet swap will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The swap is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**facet** [in] Index of the PolyhedronFacet to swap.
+
+**return** true if swap facet will keep mesh valid.
+
+### is_swap_edge_valid
+
+```cpp
+_Bool is_swap_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex)
+```
+
+
+ Check if an edge swap will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The swap is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge** [in] Index of the PolyhedronFacetEdge to swap.
+
+**apex** [in] Index of the vertex used as the new facets fan common vertex.
+
+**return** true if swap edge will keep mesh valid.
+
+### is_move_point_valid
+
+```cpp
+_Bool is_move_point_valid(const TetrahedralSolid3D & mesh, index_t vertex, const Point3D & point)
+```
+
+
+ Check if a vertex relocation will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The vertex relocation is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**vertex** [in] Index of the vertex to relocate.
+
+**point** [in] Coordinates of the destination point.
+
+**return** true if vertex relocation will keep mesh valid.
+
+### collapse_edge_validity
+
+```cpp
+SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge** [in] Index of the PolyhedronFacetEdge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** all the information about validity issues this collapse would generate.
+
+### collapse_edge_validity
+
+```cpp
+SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** all the information about validity issues this collapse would generate.
+
+### tetrahedra_after_split_tetrahedron
+
+```cpp
+std::array<Tetrahedron, 4> tetrahedra_after_split_tetrahedron(const TetrahedralSolid3D & mesh, index_t tetrahedron_id, const Point3D & point)
+```
+
+
+ Return the four tetrahedra resulting from a tetrahedron split. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**tetrahedron_id** [in] Index of the tetrahedron on which simulate split.
+
+**point** [in] Coordinates of the split point.
+
+### tetrahedra_after_split_facet
+
+```cpp
+FixedArray tetrahedra_after_split_facet(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
+```
+
+
+ Return all the tetrahedra resulting from a facet split. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**facet** [in] Index of the PolyhedronFacet on which simulate split.
+
+**point** [in] Coordinates of the split point.
+
+### tetrahedra_after_split_facet
+
+```cpp
+FixedArray tetrahedra_after_split_facet(const TetrahedralSolid3D & mesh, index_t facet_id, const Point3D & point)
+```
+
+
+ Return all the tetrahedra resulting from a facet split. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**facet_id** [in] Unique index of the facet on which simulate split.
+
+**point** [in] Coordinates of the split point.
+
+### tetrahedra_after_split_collapse_facet
+
+```cpp
+FixedArray tetrahedra_after_split_collapse_facet(const TetrahedralSolid3D & mesh, index_t facet_id, index_t vertex_id, const Point3D & point)
+```
+
+ Return all the tetrahedra resulting from a facet split then collapsed. The split and the collapse are not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**facet_id** [in] Unique index of the facet on which simulate split.
+
+**vertex_id** [in] Index of the vertex used to proceed collapse.
+
+**point** [in] Destimation of the collapse point.
+
+### tetrahedra_after_split_edge
+
+```cpp
+FixedArray tetrahedra_after_split_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+ Return all the tetrahedra resulting from an edge split. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge** [in] Index of the PolyhedronFacetEdge on which simulate split.
+
+**point** [in] Coordinates of the split point.
+
+### tetrahedra_after_split_edge
+
+```cpp
+FixedArray tetrahedra_after_split_edge(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
+```
+
+
+ Return all the tetrahedra resulting from an edge split. The split is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge on which simulate split.
+
+**point** [in] Coordinates of the split point.
+
+### tetrahedra_after_split_collapse_edge
+
+```cpp
+FixedArray tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex)
+```
+
+
+ Return all the tetrahedra resulting from an edge split and edge collapse. The split-collapse operations are not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge** [in] Index of the PolyhedronFacetEdge on which simulate split.
+
+**vertex** [in] Index towards which the split vertex is collapse on.
+
+### tetrahedra_after_collapse_edge
+
+```cpp
+tuple tetrahedra_after_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+ Return all the tetrahedra resulting from an edge collapse. The collapse is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge** [in] Index of the PolyhedronFacetEdge on which simulate collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+### tetrahedra_after_collapse_edge
+
+```cpp
+tuple tetrahedra_after_collapse_edge(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
+```
+
+ Return all the tetrahedra resulting from an edge collapse. The collapse is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge on which simulate collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+### tetrahedra_after_swap_facet
+
+```cpp
+std::array<Tetrahedron, 3> tetrahedra_after_swap_facet(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet)
+```
+
+
+ Return the three tetrahedra resulting from a facet swap. The swap is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**facet** [in] Index of the PolyhedronFacet on which simulate swap.
+
+**point** [in] Coordinates of the swap point.
+
+### tetrahedra_after_swap_edge
+
+```cpp
+FixedArray tetrahedra_after_swap_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex)
+```
+
+
+ Return all the tetrahedra resulting from an edge swap. The swap is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge** [in] Index of the PolyhedronFacetEdge on which simulate swap.
+
+**apex** [in] Index of the vertex used as the new facets fan common vertex.
+
+### tetrahedra_after_move_point
+
+```cpp
+FixedArray tetrahedra_after_move_point(const TetrahedralSolid3D & mesh, index_t vertex, const Point3D & point)
+```
+
+
+ Return all the tetrahedra resulting from a vertex relocation. The vertex relocation is not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**vertex** [in] Index of the vertex to relocate.
+
+**point** [in] Coordinates of the destination point.
+
+### is_split_triangle_valid
+
+```cpp
+_Bool is_split_triangle_valid(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
+```
+
+
+ Check if a triangle split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**triangle_id** [in] Index of the triangle to split.
+
+**point** [in] Coordinates of the split point.
+
+**return** true if split will keep mesh valid.
+
+### is_split_edge_valid
+
+```cpp
+_Bool is_split_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+ Check if an edge split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to split.
+
+**point** [in] Coordinates of the split point.
+
+**return** true if split will keep mesh valid.
+
+### is_collapse_edge_valid
+
+```cpp
+_Bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** true if collapse will keep mesh valid.
+
+### is_collapse_edge_valid
+
+```cpp
+_Bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** true if collapse will keep mesh valid.
+
+### is_swap_edge_valid
+
+```cpp
+_Bool is_swap_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
+```
+
+
+ Check if an edge swap will keep the mesh valid, meaning the sign of the triangle areas are positive. The swap is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to swap.
+
+**return** true if swap edge will keep mesh valid.
+
+### is_move_point_valid
+
+```cpp
+_Bool is_move_point_valid(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
+```
+
+
+ Check if a vertex relocation will keep the mesh valid, meaning the sign of the triangle areas are positive. The relocation is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**vertex** [in] Index of the vertex to relocate.
+
+**point** [in] Coordinates of the destination point.
+
+**return** true if vertex relocation will keep mesh valid.
+
+### collapse_edge_validity
+
+```cpp
+SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** all the information about validity issues this collapse would generate.
+
+### collapse_edge_validity
+
+```cpp
+SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** all the information about validity issues this collapse would generate.
+
+### triangles_after_split_triangle
+
+```cpp
+std::array<Triangle<dimension>, 3> triangles_after_split_triangle(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
+```
+
+
+ Return the three triangles resulting from a triangle split. The split is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**triangle_id** [in] Index of the triangle on which simulate split.
+
+**point** [in] Coordinates of the split point.
+
+### triangles_after_split_edge
+
+```cpp
+std::tuple<absl::FixedArray<Triangle<dimension> >, absl::FixedArray<index_t> > triangles_after_split_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+ Return all the triangles resulting from a triangle edge split. The split is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to split.
+
+**point** [in] Coordinates of the split point.
+
+### triangles_after_collapse_edge
+
+```cpp
+std::tuple<absl::FixedArray<Triangle<dimension> >, absl::FixedArray<index_t> > triangles_after_collapse_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+ Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+### triangles_after_collapse_edge
+
+```cpp
+std::tuple<absl::FixedArray<Triangle<dimension> >, absl::FixedArray<index_t> > triangles_after_collapse_edge(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
+ Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+### triangles_after_swap_edge
+
+```cpp
+absl::FixedArray<Triangle<dimension> > triangles_after_swap_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
+```
+
+ Return all the triangles resulting from an edge swap. The swap is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to swap.
+
+### triangles_after_move_point
+
+```cpp
+std::tuple<absl::FixedArray<Triangle<dimension> >, absl::FixedArray<index_t> > triangles_after_move_point(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
+```
+
+ Return all the triangles resulting from a vertex relocation. The vertex relocation is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**vertex** [in] Index of the vertex to relocate.
+
+**point** [in] Coordinates of the destination point.
+
+### triangles_after_swap_edge
+
+```cpp
+int triangles_after_swap_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
+```
+
+
+ Return all the triangles resulting from an edge swap. The swap is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to swap.
+
+### is_collapse_edge_valid
+
+```cpp
+BRepSimulationResult is_collapse_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
+BRepSimulationResult is_collapse_edge_valid(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
+BRepSimulationResult is_collapse_edge_valid(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
+```
+
+
+### collapse_edge_validity
+
+```cpp
+BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+### collapse_edge_validity
+
+```cpp
+BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
+```
+
+
+### collapse_edge_validity
+
+```cpp
+BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
+```
+
+
+### is_split_edge_valid
+
+```cpp
+BRepSimulationResult is_split_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+### is_split_edge_valid
+
+```cpp
+BRepSimulationResult is_split_edge_valid(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
+```
+
+
+### is_split_edge_valid
+
+```cpp
+BRepSimulationResult is_split_edge_valid(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
+```
+
+
+### is_swap_edge_valid
+
+```cpp
+BRepSimulationResult is_swap_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex)
+```
+
+
+### is_swap_edge_valid
+
+```cpp
+BRepSimulationResult is_swap_edge_valid(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge)
+```
+
+
+### is_move_point_valid
+
+```cpp
+_Bool is_move_point_valid(const BRep & brep, index_t unique_vertex, const Point3D & point)
+```
+
+
+### elements_after_collapse_edge
+
+```cpp
+BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
+```
+
+
+### elements_after_collapse_edge
+
+```cpp
+BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
+```
+
+
+### elements_after_collapse_edge
+
+```cpp
+BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+### cut_along_path
+
+```cpp
+SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end, absl::Span<const SolidPath> path_splits)
+```
+
+
+ Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
+
+**begin** [in] Index of the cut starting vertex
+
+**end** [in] Index of the cut ending vertex
+
+**path_splits** [in] Ordered list of Path splits**<not a builtin command>**  Cut tetrahedra are set as inactive but not deleted.
+
+### cut_along_path
+
+```cpp
+SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
+SectionSimulationResult is_collapse_edge_valid(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
+SectionSimulationResult is_collapse_edge_valid(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
+```
+
+
+### is_split_edge_valid
+
+```cpp
+SectionSimulationResult is_split_edge_valid(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
+```
+
+
+### is_split_edge_valid
+
+```cpp
+SectionSimulationResult is_split_edge_valid(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
+```
+
+
+### is_swap_edge_valid
+
+```cpp
+SectionSimulationResult is_swap_edge_valid(const Section & section, const Surface2D & surface, const PolygonEdge & edge)
+```
+
+
+### is_move_point_valid
+
+```cpp
+_Bool is_move_point_valid(const Section & section, index_t unique_vertex, const Point2D & point)
+```
+
+
+### elements_after_collapse_edge
+
+```cpp
+SectionElementsAfterOperation elements_after_collapse_edge(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
+```
+
+
+### elements_after_collapse_edge
+
+```cpp
+SectionElementsAfterOperation elements_after_collapse_edge(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
+```
+
+
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
+
+
+
+## Enums
+
+| enum class SplitSide |
+
+--
+
+| left |
+| right |
+
+
+
+| enum class Position |
+
+--
+
+| outside |
+| inside |
+| vertex0 |
+| vertex1 |
+| vertex2 |
+| vertex3 |
+| edge0 |
+| edge1 |
+| edge2 |
+| edge01 |
+| edge02 |
+| edge03 |
+| edge12 |
+| edge13 |
+| edge23 |
+| facet0 |
+| facet1 |
+| facet2 |
+| facet3 |
+| parallel |
+
+
+
+
