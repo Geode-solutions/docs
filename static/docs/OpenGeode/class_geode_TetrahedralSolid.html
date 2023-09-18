@@ -318,7 +318,7 @@
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">tetrahedron_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">edge_vertices</span>
     <span class="p">)</span> <span class="k">const</span></pre>
-<p>Return the local indices of the two facets incident to the edge in tetrahedron.</p>
+<p>Return the local indices of the two facets incident to the edge in tetrahedron. throw an exception if edge_vertices are not tetrahedron vertices.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -330,7 +330,7 @@
 <td><p>Index of tetrahedron.</p></td>
 </tr>
 <tr class="row-even"><td><p>edge_vertices</p></td>
-<td><p>Indices of the two vertices of an edge. &#64;warn throw an exception if edge_vertices are not tetrahedron vertices.</p></td>
+<td><p>Indices of the two vertices of an edge.</p></td>
 </tr>
 </tbody>
 </table>
@@ -338,7 +338,7 @@
     <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">tetrahedron_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&amp;</span> <span class="n">edge_vertices</span>
     <span class="p">)</span> <span class="k">const</span></pre>
-<p>Return the local indices of the two facets incident to the opposite edge in tetrahedron.</p>
+<p>Return the local indices of the two facets incident to the opposite edge in tetrahedron. throw an exception if edge_vertices are not tetrahedron vertices.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -350,7 +350,7 @@
 <td><p>Index of tetrahedron.</p></td>
 </tr>
 <tr class="row-even"><td><p>edge_vertices</p></td>
-<td><p>Indices of the two vertices of an edge. &#64;warn throw an exception if edge_vertices are not tetrahedron vertices.</p></td>
+<td><p>Indices of the two vertices of an edge.</p></td>
 </tr>
 </tbody>
 </table>

@@ -366,7 +366,7 @@ the index of the adjacent polyhedron facet if it exists.
 		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
 		) const
 
-Return the local indices of the two facets incident to the edge in tetrahedron.
+Return the local indices of the two facets incident to the edge in tetrahedron. throw an exception if edge_vertices are not tetrahedron vertices.
 
 
 
@@ -383,7 +383,7 @@ Return the local indices of the two facets incident to the edge in tetrahedron.
 	*
 		- edge_vertices
 
-		- Indices of the two vertices of an edge. @warn throw an exception if edge_vertices are not tetrahedron vertices.
+		- Indices of the two vertices of an edge.
 
 .. index:: pair: function; opposite_edge_incident_facets
 .. _doxid-classgeode_1_1_tetrahedral_solid_1afda064aae91c9f4ecdb0a6b527468b14:
@@ -396,7 +396,7 @@ Return the local indices of the two facets incident to the edge in tetrahedron.
 		const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
 		) const
 
-Return the local indices of the two facets incident to the opposite edge in tetrahedron.
+Return the local indices of the two facets incident to the opposite edge in tetrahedron. throw an exception if edge_vertices are not tetrahedron vertices.
 
 
 
@@ -413,7 +413,7 @@ Return the local indices of the two facets incident to the opposite edge in tetr
 	*
 		- edge_vertices
 
-		- Indices of the two vertices of an edge. @warn throw an exception if edge_vertices are not tetrahedron vertices.
+		- Indices of the two vertices of an edge.
 
 .. index:: pair: function; tetrahedron
 .. _doxid-classgeode_1_1_tetrahedral_solid_1a30dc2696bac1899f5de5acc617eb78bd:
