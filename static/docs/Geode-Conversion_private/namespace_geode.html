@@ -215,7 +215,7 @@
     <span class="n">SolidMesh3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">)</span></pre>
-<p>Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribute values on each solid polyhedron to determine BRep Block. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra with different attribute values.</p>
+<p>Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribute values on each solid polyhedron to determine BRep Block. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra with different attribute values. Attribute should be convertible to float.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -227,7 +227,7 @@
 <td><p>Input solid</p></td>
 </tr>
 <tr class="row-even"><td><p>attribute_name</p></td>
-<td><p>Name of attribute stored on solid polyhedra &#64;warn Attribute should be convertible to float.</p></td>
+<td><p>Name of attribute stored on solid polyhedra</p></td>
 </tr>
 </tbody>
 </table>
@@ -255,7 +255,7 @@
     <span class="n">SurfaceMesh2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">attribute_name</span>
     <span class="p">)</span></pre>
-<p>Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values.</p>
+<p>Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values. Attribute should be convertible to float.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -267,7 +267,7 @@
 <td><p>Input solid</p></td>
 </tr>
 <tr class="row-even"><td><p>attribute_name</p></td>
-<td><p>Name of attribute stored on solid polygons &#64;warn Attribute should be convertible to float.</p></td>
+<td><p>Name of attribute stored on solid polygons</p></td>
 </tr>
 </tbody>
 </table>

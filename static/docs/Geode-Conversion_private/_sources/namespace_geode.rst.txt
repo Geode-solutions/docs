@@ -245,7 +245,7 @@ Convert a SolidMesh3D into a BRep without meshed Blocks. This function uses the 
 		absl::string_view attribute_name
 		)
 
-Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribute values on each solid polyhedron to determine BRep Block. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra with different attribute values.
+Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribute values on each solid polyhedron to determine BRep Block. BRep Surfaces will correspond to SolidMesh3D facets shared by only 1 polyhedron, or by 2 polyhedra with different attribute values. Attribute should be convertible to float.
 
 
 
@@ -262,7 +262,7 @@ Convert a SolidMesh3D into a BRep with meshed Blocks. This function uses Attribu
 	*
 		- attribute_name
 
-		- Name of attribute stored on solid polyhedra @warn Attribute should be convertible to float.
+		- Name of attribute stored on solid polyhedra
 
 .. index:: pair: function; add_sharp_features
 .. _doxid-namespacegeode_1a56e79a47dca0122fc833135962fd5615:
@@ -305,7 +305,7 @@ Creates a new BRep from the given one, with new lines on the sharp features of t
 		absl::string_view attribute_name
 		)
 
-Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values.
+Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values. Attribute should be convertible to float.
 
 
 
@@ -322,7 +322,7 @@ Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses 
 	*
 		- attribute_name
 
-		- Name of attribute stored on solid polygons @warn Attribute should be convertible to float.
+		- Name of attribute stored on solid polygons
 
 .. index:: pair: function; add_sharp_features
 .. _doxid-namespacegeode_1a20e7c00979bd3e166da3bb8a723ff895:
