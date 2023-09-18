@@ -119,7 +119,7 @@ Methods
 		const Point<dimension>& point
 		)
 
-Insert a point in a triangle either by spliting the triangle into three new ones, or by snapping the point on an edge (two new triangles) or a vertex (no new triangles).
+Insert a point in a triangle either by spliting the triangle into three new ones, or by snapping the point on an edge (two new triangles) or a vertex (no new triangles). Split triangle is set as inactive but not deleted.
 
 
 
@@ -136,7 +136,7 @@ Insert a point in a triangle either by spliting the triangle into three new ones
 	*
 		- point
 
-		- Coordinates of the split point. @warn Split triangle is set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 
@@ -155,7 +155,7 @@ in the following order: the position of the split vertex, the information regard
 		const Point<dimension>& point
 		)
 
-Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex (no new edges).
+Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex (no new edges). Potential split triangles are set as inactive but not deleted.
 
 
 
@@ -172,7 +172,7 @@ Insert a point on an edge either by spliting the edge into two new ones, or by s
 	*
 		- point
 
-		- Coordinates of the split point. @warn Potential split triangles are set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 

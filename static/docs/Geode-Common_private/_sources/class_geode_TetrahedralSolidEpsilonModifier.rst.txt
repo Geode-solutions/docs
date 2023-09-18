@@ -124,7 +124,7 @@ Methods
 		const Point3D& point
 		)
 
-Insert a point in a tetrahedron either by spliting the tetrahedron into four new ones, or by snapping the point on a facet (three new tetrahedra for each side), an edge (each incident tetrahedra is split into two new tetrahedra) or a vertex (no new tetrahedron).
+Insert a point in a tetrahedron either by spliting the tetrahedron into four new ones, or by snapping the point on a facet (three new tetrahedra for each side), an edge (each incident tetrahedra is split into two new tetrahedra) or a vertex (no new tetrahedron). Split tetrahedron is set as inactive but not deleted.
 
 
 
@@ -141,7 +141,7 @@ Insert a point in a tetrahedron either by spliting the tetrahedron into four new
 	*
 		- point
 
-		- Coordinates of the split point. @warn Split tetrahedron is set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 
@@ -160,7 +160,7 @@ new vertex index and mappings between old and new mesh.
 		const Point3D& point
 		)
 
-Insert a point on a facet either by spliting the facet into three new ones, or by snapping the point on an edge or a vertex.
+Insert a point on a facet either by spliting the facet into three new ones, or by snapping the point on an edge or a vertex. Potential split tetrahedra are set as inactive but not deleted.
 
 
 
@@ -177,7 +177,7 @@ Insert a point on a facet either by spliting the facet into three new ones, or b
 	*
 		- point
 
-		- Coordinates of the split point. @warn Potential split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 
@@ -196,7 +196,7 @@ new vertex index and mappings between old and new mesh.
 		const Point3D& point
 		)
 
-Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex.
+Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex. Potential split tetrahedra are set as inactive but not deleted.
 
 
 
@@ -213,7 +213,7 @@ Insert a point on an edge either by spliting the edge into two new ones, or by s
 	*
 		- point
 
-		- Coordinates of the split point. @warn Potential split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 
@@ -229,7 +229,7 @@ new vertex index and mappings between old and new mesh.
 
 	:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_edge_info>` insert_point_on_edge(index_t edge_id, const Point3D& point)
 
-Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex.
+Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex. Potential split tetrahedra are set as inactive but not deleted.
 
 
 
@@ -246,7 +246,7 @@ Insert a point on an edge either by spliting the edge into two new ones, or by s
 	*
 		- point
 
-		- Coordinates of the split point. @warn Potential split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 

@@ -778,7 +778,7 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">PatchFrontEdge</span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
     <span class="p">)</span></pre>
-<p>Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.</p>
+<p>Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges. Cut tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -796,7 +796,7 @@
 <td><p>List of oriented Patch boundary as solid edges</p></td>
 </tr>
 <tr class="row-even"><td><p>triangle</p></td>
-<td><p>The triangle corresponding to the patch to insert in solid &#64;warn Cut tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>The triangle corresponding to the patch to insert in solid</p></td>
 </tr>
 </tbody>
 </table>
@@ -807,7 +807,7 @@
     <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SolidPath.html#doxid-structgeode-1-1-solid-path"><span class="std std-ref">SolidPath</span></a><span></span><span class="o">&gt;</span> <span class="n">path_splits</span>
     <span class="p">)</span></pre>
-<p>Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.</p>
+<p>Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra. Cut tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -822,7 +822,7 @@
 <td><p>Index of the cut ending vertex</p></td>
 </tr>
 <tr class="row-odd"><td><p>path_splits</p></td>
-<td><p>Ordered list of Path splits &#64;warn Cut tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Ordered list of Path splits</p></td>
 </tr>
 </tbody>
 </table>
