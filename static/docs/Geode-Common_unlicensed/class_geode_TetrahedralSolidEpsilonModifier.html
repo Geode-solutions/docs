@@ -130,7 +130,7 @@
     <span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
-<p>Insert a point in a tetrahedron either by spliting the tetrahedron into four new ones, or by snapping the point on a facet (three new tetrahedra for each side), an edge (each incident tetrahedra is split into two new tetrahedra) or a vertex (no new tetrahedron).</p>
+<p>Insert a point in a tetrahedron either by spliting the tetrahedron into four new ones, or by snapping the point on a facet (three new tetrahedra for each side), an edge (each incident tetrahedra is split into two new tetrahedra) or a vertex (no new tetrahedron). Split tetrahedron is set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -142,7 +142,7 @@
 <td><p>Index of the tetrahedron to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Split tetrahedron is set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>
@@ -152,7 +152,7 @@
     <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
-<p>Insert a point on a facet either by spliting the facet into three new ones, or by snapping the point on an edge or a vertex.</p>
+<p>Insert a point on a facet either by spliting the facet into three new ones, or by snapping the point on an edge or a vertex. Potential split tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -164,7 +164,7 @@
 <td><p>Index of the PolyhedronFacet to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Potential split tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>
@@ -174,7 +174,7 @@
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
-<p>Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex.</p>
+<p>Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex. Potential split tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -186,14 +186,14 @@
 <td><p>Index of the PolyhedronFacetEdge to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Potential split tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Returns:</p>
 <p>new vertex index and mappings between old and new mesh.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-epsilon-modifier-1a0e756b4dc67efcda62210add80a1e5c3"><span id="index-4"></span><a class="reference internal" href="struct_geode_TetrahedralSolidModifier_SolidSplitEdgeInfo.html#doxid-structgeode-1-1-tetrahedral-solid-modifier-1-1-solid-split-edge-info"><span class="std std-ref">SolidSplitEdgeInfo</span></a><span></span> <span class="n">insert_point_on_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
-<p>Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex.</p>
+<p>Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex. Potential split tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -205,7 +205,7 @@
 <td><p>Unique index of the edge to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Potential split tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>

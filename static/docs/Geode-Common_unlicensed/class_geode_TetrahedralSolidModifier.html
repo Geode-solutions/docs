@@ -117,7 +117,7 @@
 <section id="methods">
 <h3>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">¶</a></h3>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a1645e8ce599bf3ab1036071f1af3a939"><span id="index-1"></span><a class="reference internal" href="struct_geode_TetrahedralSolidModifier_SolidSplitInfo.html#doxid-structgeode-1-1-tetrahedral-solid-modifier-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <span class="n">split_tetrahedron</span><span class="p">(</span><span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
-<p>Split a tetrahedron into four new tetrahedra.</p>
+<p>Split a tetrahedron into four new tetrahedra. Given tetrahedron is set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -129,14 +129,14 @@
 <td><p>Index of the tetrahedron to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Given tetrahedron is set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Returns:</p>
 <p>new vertex index and mappings between old and new mesh.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1abfd8444fde310d0e8229cb353f718451"><span id="index-2"></span><a class="reference internal" href="struct_geode_TetrahedralSolidModifier_SolidSplitInfo.html#doxid-structgeode-1-1-tetrahedral-solid-modifier-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <span class="n">split_facet</span><span class="p">(</span><span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
-<p>Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra.</p>
+<p>Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra. Split tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -148,14 +148,15 @@
 <td><p>Unique index of the facet to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Split tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Returns:</p>
 <p>new vertex index and mappings between old and new mesh.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a5de1767b5b8ae9b7ae522c5434930f5b"><span id="index-3"></span><a class="reference internal" href="struct_geode_TetrahedralSolidModifier_SolidSplitInfo.html#doxid-structgeode-1-1-tetrahedral-solid-modifier-1-1-solid-split-info"><span class="std std-ref">SolidSplitInfo</span></a><span></span> <span class="n">split_facet</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
-<p>Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra. Edge unique index is found and then the above function is called.</p>
+<p>Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra. Split tetrahedra are set as inactive but not deleted.</p>
+<p>Edge unique index is found and then the above function is called.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -167,14 +168,14 @@
 <td><p>Index of the PolyhedronFacet to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Split tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Returns:</p>
 <p>new vertex index and mappings between old and new mesh.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a954f2875b98f31ae3ce7e255d1c008c3"><span id="index-4"></span><a class="reference internal" href="struct_geode_TetrahedralSolidModifier_SolidSplitEdgeInfo.html#doxid-structgeode-1-1-tetrahedral-solid-modifier-1-1-solid-split-edge-info"><span class="std std-ref">SolidSplitEdgeInfo</span></a><span></span> <span class="n">split_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
-<p>Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.</p>
+<p>Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra. Split tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -186,7 +187,7 @@
 <td><p>Unique index of the edge to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Split tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>
@@ -196,7 +197,7 @@
     <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
-<p>Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.</p>
+<p>Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra. Split tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -208,7 +209,7 @@
 <td><p>Index of the PolyhedronFacetEdge to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Split tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>
@@ -256,7 +257,7 @@
 <p class="rubric">Returns:</p>
 <p>new vertex index and mappings between old and new mesh.</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a4ccb9f6c1ee88360c458a6aafaab2437"><span id="index-8"></span><a class="reference internal" href="struct_geode_TetrahedralSolidModifier_SolidSwapFacetInfo.html#doxid-structgeode-1-1-tetrahedral-solid-modifier-1-1-solid-swap-facet-info"><span class="std std-ref">SolidSwapFacetInfo</span></a><span></span> <span class="n">swap_facet</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">)</span></pre>
-<p>Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahedra are set as inactive and three new tetrahedra are created.</p>
+<p>Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahedra are set as inactive and three new tetrahedra are created. Old tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -265,12 +266,12 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>facet</p></td>
-<td><p>Index of the PolyhedronFacet to swap. &#64;warn Old tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Index of the PolyhedronFacet to swap.</p></td>
 </tr>
 </tbody>
 </table>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a18e72cc7f103c5a218a432b6daf3bbed"><span id="index-9"></span><a class="reference internal" href="struct_geode_TetrahedralSolidModifier_SolidSwapEdgeInfo.html#doxid-structgeode-1-1-tetrahedral-solid-modifier-1-1-solid-swap-edge-info"><span class="std std-ref">SolidSwapEdgeInfo</span></a><span></span> <span class="n">swap_edge</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">apex</span><span class="p">)</span></pre>
-<p>Swap an edge. The edge can be on border. The tetrahedra around given edge are set as inactive and new tetrahedra are created.</p>
+<p>Swap an edge. The edge can be on border. The tetrahedra around given edge are set as inactive and new tetrahedra are created. Old tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -282,12 +283,12 @@
 <td><p>Index of the PolyhedronFacetEdge to swap.</p></td>
 </tr>
 <tr class="row-even"><td><p>apex</p></td>
-<td><p>Index of the vertex used as the new facets fan common vertex. &#64;warn Old tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Index of the vertex used as the new facets fan common vertex.</p></td>
 </tr>
 </tbody>
 </table>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1a946344fe97b501ab2a749bd744eb7b53"><span id="index-10"></span><a class="reference internal" href="struct_geode_TetrahedralSolidModifier_SolidRemoveMultipleAdjacencyInfo.html#doxid-structgeode-1-1-tetrahedral-solid-modifier-1-1-solid-remove-multiple-adjacency-info"><span class="std std-ref">SolidRemoveMultipleAdjacencyInfo</span></a><span></span> <span class="n">remove_double_adjacency</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">)</span></pre>
-<p>Remove an edge bearing a double adjacency. The two tetrahedra around given edge are set as inactive.</p>
+<p>Remove an edge bearing a double adjacency. The two tetrahedra around given edge are set as inactive. Old tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -296,12 +297,12 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>edge</p></td>
-<td><p>Index of the PolyhedronFacetEdge shared by the two PolyhedronFacet adjacent to the same tetrahedron. &#64;warn Old tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Index of the PolyhedronFacetEdge shared by the two PolyhedronFacet adjacent to the same tetrahedron.</p></td>
 </tr>
 </tbody>
 </table>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-tetrahedral-solid-modifier-1ad948040f1b0ccd271f2191fe840c79c6"><span id="index-11"></span><a class="reference internal" href="struct_geode_TetrahedralSolidModifier_SolidRemoveMultipleAdjacencyInfo.html#doxid-structgeode-1-1-tetrahedral-solid-modifier-1-1-solid-remove-multiple-adjacency-info"><span class="std std-ref">SolidRemoveMultipleAdjacencyInfo</span></a><span></span> <span class="n">remove_triple_adjacency</span><span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronVertex</span><span class="o">&amp;</span> <span class="n">vertex</span><span class="p">)</span></pre>
-<p>Remove a vertex bearing a triple adjacency. The two tetrahedra around given vertex are set as inactive.</p>
+<p>Remove a vertex bearing a triple adjacency. The two tetrahedra around given vertex are set as inactive. Old tetrahedra are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -310,7 +311,7 @@
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>vertex</p></td>
-<td><p>Index of the PolyhedronVertex shared by the three PolyhedronFacet adjacent to the same tetrahedron. &#64;warn Old tetrahedra are set as inactive but not deleted.</p></td>
+<td><p>Index of the PolyhedronVertex shared by the three PolyhedronFacet adjacent to the same tetrahedron.</p></td>
 </tr>
 </tbody>
 </table>

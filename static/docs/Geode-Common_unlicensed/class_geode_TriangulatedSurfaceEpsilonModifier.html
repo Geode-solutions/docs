@@ -125,7 +125,7 @@
     <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
-<p>Insert a point in a triangle either by spliting the triangle into three new ones, or by snapping the point on an edge (two new triangles) or a vertex (no new triangles).</p>
+<p>Insert a point in a triangle either by spliting the triangle into three new ones, or by snapping the point on an edge (two new triangles) or a vertex (no new triangles). Split triangle is set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -137,7 +137,7 @@
 <td><p>Index of the triangle to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Split triangle is set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>
@@ -147,7 +147,7 @@
     <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
     <span class="p">)</span></pre>
-<p>Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex (no new edges).</p>
+<p>Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex (no new edges). Potential split triangles are set as inactive but not deleted.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -159,7 +159,7 @@
 <td><p>Index of the PolygonEdge to split.</p></td>
 </tr>
 <tr class="row-even"><td><p>point</p></td>
-<td><p>Coordinates of the split point. &#64;warn Potential split triangles are set as inactive but not deleted.</p></td>
+<td><p>Coordinates of the split point.</p></td>
 </tr>
 </tbody>
 </table>

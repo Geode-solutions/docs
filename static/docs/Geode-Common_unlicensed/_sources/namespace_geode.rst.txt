@@ -829,7 +829,7 @@ Global Functions
 		const Triangle3D& triangle
 		)
 
-Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
+Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges. Cut tetrahedra are set as inactive but not deleted.
 
 
 
@@ -856,7 +856,7 @@ Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edge
 	*
 		- triangle
 
-		- The triangle corresponding to the patch to insert in solid @warn Cut tetrahedra are set as inactive but not deleted.
+		- The triangle corresponding to the patch to insert in solid
 
 .. index:: pair: function; cut_along_path
 .. _doxid-namespacegeode_1acea856865b9a01ea04c1f879b996e70a:
@@ -872,7 +872,7 @@ Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edge
 		absl::Span<const :ref:`SolidPath<doxid-structgeode_1_1_solid_path>`> path_splits
 		)
 
-Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
+Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra. Cut tetrahedra are set as inactive but not deleted.
 
 
 
@@ -894,7 +894,7 @@ Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to
 	*
 		- path_splits
 
-		- Ordered list of Path splits @warn Cut tetrahedra are set as inactive but not deleted.
+		- Ordered list of Path splits
 
 .. index:: pair: function; is_split_tetrahedron_valid
 .. _doxid-namespacegeode_1afc0b8a8e317fbc02d3c18de4c2486d41:

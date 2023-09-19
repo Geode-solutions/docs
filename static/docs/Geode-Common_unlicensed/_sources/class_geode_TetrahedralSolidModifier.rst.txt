@@ -120,7 +120,7 @@ Methods
 
 	:ref:`SolidSplitInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_info>` split_tetrahedron(index_t tetrahedron_id, const Point3D& point)
 
-Split a tetrahedron into four new tetrahedra.
+Split a tetrahedron into four new tetrahedra. Given tetrahedron is set as inactive but not deleted.
 
 
 
@@ -137,7 +137,7 @@ Split a tetrahedron into four new tetrahedra.
 	*
 		- point
 
-		- Coordinates of the split point. @warn Given tetrahedron is set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 
@@ -153,7 +153,7 @@ new vertex index and mappings between old and new mesh.
 
 	:ref:`SolidSplitInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_info>` split_facet(index_t facet_id, const Point3D& point)
 
-Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra.
+Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra. Split tetrahedra are set as inactive but not deleted.
 
 
 
@@ -170,7 +170,7 @@ Split a facet into three new ones. The tetrahedra incident to this facet are als
 	*
 		- point
 
-		- Coordinates of the split point. @warn Split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 
@@ -186,7 +186,9 @@ new vertex index and mappings between old and new mesh.
 
 	:ref:`SolidSplitInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_info>` split_facet(const PolyhedronFacet& facet, const Point3D& point)
 
-Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra. Edge unique index is found and then the above function is called.
+Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra. Split tetrahedra are set as inactive but not deleted.
+
+Edge unique index is found and then the above function is called.
 
 
 
@@ -203,7 +205,7 @@ Split a facet into three new ones. The tetrahedra incident to this facet are als
 	*
 		- point
 
-		- Coordinates of the split point. @warn Split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 
@@ -219,7 +221,7 @@ new vertex index and mappings between old and new mesh.
 
 	:ref:`SolidSplitEdgeInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_split_edge_info>` split_edge(index_t edge_id, const Point3D& point)
 
-Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.
+Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra. Split tetrahedra are set as inactive but not deleted.
 
 
 
@@ -236,7 +238,7 @@ Split an edge into two new ones. Each tetrahedron incident to this edge is also 
 	*
 		- point
 
-		- Coordinates of the split point. @warn Split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 
@@ -255,7 +257,7 @@ new vertex index and mappings between old and new mesh.
 		const Point3D& point
 		)
 
-Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.
+Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra. Split tetrahedra are set as inactive but not deleted.
 
 
 
@@ -272,7 +274,7 @@ Split an edge into two new ones. Each tetrahedron incident to this edge is also 
 	*
 		- point
 
-		- Coordinates of the split point. @warn Split tetrahedra are set as inactive but not deleted.
+		- Coordinates of the split point.
 
 
 
@@ -357,7 +359,7 @@ new vertex index and mappings between old and new mesh.
 
 	:ref:`SolidSwapFacetInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_swap_facet_info>` swap_facet(const PolyhedronFacet& facet)
 
-Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahedra are set as inactive and three new tetrahedra are created.
+Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahedra are set as inactive and three new tetrahedra are created. Old tetrahedra are set as inactive but not deleted.
 
 
 
@@ -369,7 +371,7 @@ Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahe
 	*
 		- facet
 
-		- Index of the PolyhedronFacet to swap. @warn Old tetrahedra are set as inactive but not deleted.
+		- Index of the PolyhedronFacet to swap.
 
 .. index:: pair: function; swap_edge
 .. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a18e72cc7f103c5a218a432b6daf3bbed:
@@ -379,7 +381,7 @@ Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahe
 
 	:ref:`SolidSwapEdgeInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_swap_edge_info>` swap_edge(const PolyhedronFacetEdge& edge, index_t apex)
 
-Swap an edge. The edge can be on border. The tetrahedra around given edge are set as inactive and new tetrahedra are created.
+Swap an edge. The edge can be on border. The tetrahedra around given edge are set as inactive and new tetrahedra are created. Old tetrahedra are set as inactive but not deleted.
 
 
 
@@ -396,7 +398,7 @@ Swap an edge. The edge can be on border. The tetrahedra around given edge are se
 	*
 		- apex
 
-		- Index of the vertex used as the new facets fan common vertex. @warn Old tetrahedra are set as inactive but not deleted.
+		- Index of the vertex used as the new facets fan common vertex.
 
 .. index:: pair: function; remove_double_adjacency
 .. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a946344fe97b501ab2a749bd744eb7b53:
@@ -406,7 +408,7 @@ Swap an edge. The edge can be on border. The tetrahedra around given edge are se
 
 	:ref:`SolidRemoveMultipleAdjacencyInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_remove_multiple_adjacency_info>` remove_double_adjacency(const PolyhedronFacetEdge& edge)
 
-Remove an edge bearing a double adjacency. The two tetrahedra around given edge are set as inactive.
+Remove an edge bearing a double adjacency. The two tetrahedra around given edge are set as inactive. Old tetrahedra are set as inactive but not deleted.
 
 
 
@@ -418,7 +420,7 @@ Remove an edge bearing a double adjacency. The two tetrahedra around given edge 
 	*
 		- edge
 
-		- Index of the PolyhedronFacetEdge shared by the two PolyhedronFacet adjacent to the same tetrahedron. @warn Old tetrahedra are set as inactive but not deleted.
+		- Index of the PolyhedronFacetEdge shared by the two PolyhedronFacet adjacent to the same tetrahedron.
 
 .. index:: pair: function; remove_triple_adjacency
 .. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad948040f1b0ccd271f2191fe840c79c6:
@@ -428,7 +430,7 @@ Remove an edge bearing a double adjacency. The two tetrahedra around given edge 
 
 	:ref:`SolidRemoveMultipleAdjacencyInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_remove_multiple_adjacency_info>` remove_triple_adjacency(const PolyhedronVertex& vertex)
 
-Remove a vertex bearing a triple adjacency. The two tetrahedra around given vertex are set as inactive.
+Remove a vertex bearing a triple adjacency. The two tetrahedra around given vertex are set as inactive. Old tetrahedra are set as inactive but not deleted.
 
 
 
@@ -440,7 +442,7 @@ Remove a vertex bearing a triple adjacency. The two tetrahedra around given vert
 	*
 		- vertex
 
-		- Index of the PolyhedronVertex shared by the three PolyhedronFacet adjacent to the same tetrahedron. @warn Old tetrahedra are set as inactive but not deleted.
+		- Index of the PolyhedronVertex shared by the three PolyhedronFacet adjacent to the same tetrahedron.
 
 .. index:: pair: function; clean_tetrahedra
 .. _doxid-classgeode_1_1_tetrahedral_solid_modifier_1a65cbaba9d81ea253ef1cfe6b8e4e71ac:
