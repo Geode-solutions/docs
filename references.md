@@ -1,0 +1,2 @@
+# References
+In addition to user and developer guides, our API Reference section serves as a resource for integrating Geode-solutions software into your projects seamlessly. Here, you will find comprehensive documentation on the APIs, libraries, and tools that empower you to leverage our software's functionality programmatically.

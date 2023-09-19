@@ -3,11 +3,17 @@
 
 ## Members
 
+```cpp
 public Position position
+```
 
+```cpp
 public PolyhedronFacet facet
+```
 
+```cpp
 public index_t vertex_id
+```
 
 
 

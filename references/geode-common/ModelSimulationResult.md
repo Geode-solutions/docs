@@ -3,11 +3,17 @@
 
 ## Members
 
+```cpp
 public vector invalid_lines
+```
 
+```cpp
 public flat_hash_map invalid_surface_edges
+```
 
+```cpp
 public vector invalid_surfaces
+```
 
 
 

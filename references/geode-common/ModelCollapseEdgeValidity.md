@@ -3,7 +3,9 @@
 
 ## Members
 
+```cpp
 public SurfaceCollapseEdgeValidities surface_validities
+```
 
 
 

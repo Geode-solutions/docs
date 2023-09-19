@@ -3,9 +3,13 @@
 
 ## Members
 
+```cpp
 public index_t new_id
+```
 
+```cpp
 public index_t old_id
+```
 
 
 
@@ -53,22 +57,26 @@ public basic_string string()
 
 ## Members
 
+```cpp
 public Type new_id
+```
 
+```cpp
 public Type old_id
+```
 
 
 
 ## Functions
 
-### Mapping<Type>
+### Mapping
 
 ```cpp
 public void Mapping<Type>()
 ```
 
 
-### Mapping<Type>
+### Mapping
 
 ```cpp
 public void Mapping<Type>(Type new_id_in, Type old_id_in)

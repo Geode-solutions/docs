@@ -3,15 +3,35 @@
 
 ## Members
 
-public int inactive_tetrahedra
+```cpp
+```cpp
+public vector inactive_tetrahedra
+```
+```
 
-public int new_tetrahedra
+```cpp
+```cpp
+public vector new_tetrahedra
+```
+```
 
-public int modified
+```cpp
+```cpp
+public vector modified
+```
+```
 
-public int added
+```cpp
+```cpp
+public vector added
+```
+```
 
-public int removed
+```cpp
+```cpp
+public vector removed
+```
+```
 
 
 

@@ -34,7 +34,9 @@ public SolidSplitInfo insert_point_in_tetrahedron(index_t tetrahedron_id, const 
 
 **tetrahedron_id** [in] Index of the tetrahedron to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Split tetrahedron is set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Split tetrahedron is set as inactive but not deleted.
 
 **return** new vertex index and mappings between old and new mesh.
 
@@ -49,7 +51,9 @@ public SolidSplitInfo insert_point_on_facet(const PolyhedronFacet & facet, const
 
 **facet** [in] Index of the PolyhedronFacet to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Potential split tetrahedra are set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Potential split tetrahedra are set as inactive but not deleted.
 
 **return** new vertex index and mappings between old and new mesh.
 
@@ -64,7 +68,9 @@ public SolidSplitEdgeInfo insert_point_on_edge(const PolyhedronFacetEdge & edge,
 
 **edge** [in] Index of the PolyhedronFacetEdge to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Potential split tetrahedra are set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Potential split tetrahedra are set as inactive but not deleted.
 
 **return** new vertex index and mappings between old and new mesh.
 
@@ -78,7 +84,9 @@ public SolidSplitEdgeInfo insert_point_on_edge(index_t edge_id, const Point3D & 
 
 **edge_id** [in] Unique index of the edge to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Potential split tetrahedra are set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Potential split tetrahedra are set as inactive but not deleted.
 
 **return** new vertex index and mappings between old and new mesh.
 

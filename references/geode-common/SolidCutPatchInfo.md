@@ -3,17 +3,29 @@
 
 ## Members
 
-public int vertices
+```cpp
+public vector vertices
+```
 
-public int facets_along
+```cpp
+public vector facets_along
+```
 
-public int facets_across
+```cpp
+public vector facets_across
+```
 
-public int edges
+```cpp
+public vector edges
+```
 
-public int tetrahedra
+```cpp
+public vector tetrahedra
+```
 
-public int small_edges
+```cpp
+public vector small_edges
+```
 
 
 

@@ -1,0 +1,79 @@
+# struct PolygonVertex
+
+
+ This struct represents a local vertex in a polygon
+
+
+
+## Members
+
+```cpp
+public index_t polygon_id
+```
+
+```cpp
+public local_index_t vertex_id
+```
+
+
+
+## Functions
+
+### PolygonVertex
+
+```cpp
+public void PolygonVertex()
+```
+
+
+### PolygonVertex
+
+```cpp
+public void PolygonVertex(index_t polygon_id_in, local_index_t vertex_id_in)
+```
+
+
+### PolygonVertex
+
+```cpp
+public void PolygonVertex(PolygonEdge polygon_edge)
+```
+
+
+### operator==
+
+```cpp
+public _Bool operator==(const PolygonVertex & other)
+```
+
+
+### operator!=
+
+```cpp
+public _Bool operator!=(const PolygonVertex & other)
+```
+
+
+### operator<
+
+```cpp
+public _Bool operator<(const PolygonVertex & other)
+```
+
+
+### string
+
+```cpp
+public basic_string string()
+```
+
+
+### serialize
+
+```cpp
+public void serialize(Archive & archive)
+```
+
+
+
+

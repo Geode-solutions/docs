@@ -3,9 +3,13 @@
 
 ## Members
 
+```cpp
 public Mapping mapping
+```
 
+```cpp
 public SplitSide side
+```
 
 
 

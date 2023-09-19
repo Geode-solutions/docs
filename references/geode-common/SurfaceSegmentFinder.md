@@ -15,14 +15,14 @@ Inherits from SurfacePathFinder<dimension>
 
 ## Functions
 
-### SurfaceSegmentFinder<dimension>
+### SurfaceSegmentFinder
 
 ```cpp
 public void SurfaceSegmentFinder<dimension>(const TriangulatedSurface<dimension> & surface, index_t begin, index_t end)
 ```
 
 
-### ~SurfaceSegmentFinder<dimension>
+### ~SurfaceSegmentFinder
 
 ```cpp
 public void ~SurfaceSegmentFinder<dimension>()

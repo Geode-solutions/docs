@@ -3,9 +3,17 @@
 
 ## Members
 
-public int facets
+```cpp
+```cpp
+public InlinedVector facets
+```
+```
 
-public int edges
+```cpp
+```cpp
+public InlinedVector edges
+```
+```
 
 
 

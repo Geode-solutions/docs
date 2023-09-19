@@ -9,7 +9,7 @@ Inherits from FileLicenseChecker, Singleton
 
 ## Functions
 
-### ModuleLicenseChecker<name>
+### ModuleLicenseChecker
 
 ```cpp
 public void ModuleLicenseChecker<name>()

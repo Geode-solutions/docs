@@ -7,7 +7,7 @@
 
 ## Functions
 
-### SurfacePathFinder<dimension>
+### SurfacePathFinder
 
 ```cpp
 public void SurfacePathFinder<dimension>(const SurfacePathFinder<dimension> & )
@@ -21,7 +21,7 @@ public SurfacePathFinder<dimension> & operator=(const SurfacePathFinder<dimensio
 ```
 
 
-### SurfacePathFinder<dimension>
+### SurfacePathFinder
 
 ```cpp
 public void SurfacePathFinder<dimension>(SurfacePathFinder<dimension> && )
@@ -35,14 +35,14 @@ public SurfacePathFinder<dimension> & operator=(SurfacePathFinder<dimension> && 
 ```
 
 
-### ~SurfacePathFinder<dimension>
+### ~SurfacePathFinder
 
 ```cpp
 public void ~SurfacePathFinder<dimension>()
 ```
 
 
-### SurfacePathFinder<dimension>
+### SurfacePathFinder
 
 ```cpp
 protected void SurfacePathFinder<dimension>(const TriangulatedSurface<dimension> & surface)

@@ -3,11 +3,23 @@
 
 ## Members
 
-public int tetrahedra
+```cpp
+```cpp
+public InlinedVector tetrahedra
+```
+```
 
-public int facets
+```cpp
+```cpp
+public InlinedVector facets
+```
+```
 
-public int edges
+```cpp
+```cpp
+public InlinedVector edges
+```
+```
 
 
 

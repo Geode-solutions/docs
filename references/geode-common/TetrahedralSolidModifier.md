@@ -77,7 +77,9 @@ public SolidSplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & 
 
 **tetrahedron_id** [in] Index of the tetrahedron to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Given tetrahedron is set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Given tetrahedron is set as inactive but not deleted.
 
 **return** new vertex index and mappings between old and new mesh.
 
@@ -92,7 +94,9 @@ public SolidSplitInfo split_facet(index_t facet_id, const Point3D & point)
 
 **facet_id** [in] Unique index of the facet to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Split tetrahedra are set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Split tetrahedra are set as inactive but not deleted.
 
 **return** new vertex index and mappings between old and new mesh.
 
@@ -107,7 +111,9 @@ public SolidSplitInfo split_facet(const PolyhedronFacet & facet, const Point3D &
 
 **facet** [in] Index of the PolyhedronFacet to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Split tetrahedra are set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Split tetrahedra are set as inactive but not deleted.
 
 **details** Edge unique index is found and then the above function is called.
 
@@ -124,7 +130,9 @@ public SolidSplitEdgeInfo split_edge(index_t edge_id, const Point3D & point)
 
 **edge_id** [in] Unique index of the edge to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Split tetrahedra are set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Split tetrahedra are set as inactive but not deleted.
 
 **return** new vertex index and mappings between old and new mesh.
 
@@ -139,7 +147,9 @@ public SolidSplitEdgeInfo split_edge(const PolyhedronFacetEdge & edge, const Poi
 
 **edge** [in] Index of the PolyhedronFacetEdge to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Split tetrahedra are set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Split tetrahedra are set as inactive but not deleted.
 
 **return** new vertex index and mappings between old and new mesh.
 
@@ -182,7 +192,9 @@ public SolidSwapFacetInfo swap_facet(const PolyhedronFacet & facet)
 
  Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahedra are set as inactive and three new tetrahedra are created.
 
-**facet** [in] Index of the PolyhedronFacet to swap.**<not a builtin command>**  Old tetrahedra are set as inactive but not deleted.
+**facet** [in] Index of the PolyhedronFacet to swap.
+
+**warning** Old tetrahedra are set as inactive but not deleted.
 
 ### swap_edge
 
@@ -195,7 +207,9 @@ public SolidSwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t ape
 
 **edge** [in] Index of the PolyhedronFacetEdge to swap.
 
-**apex** [in] Index of the vertex used as the new facets fan common vertex.**<not a builtin command>**  Old tetrahedra are set as inactive but not deleted.
+**apex** [in] Index of the vertex used as the new facets fan common vertex.
+
+**warning** Old tetrahedra are set as inactive but not deleted.
 
 ### remove_double_adjacency
 
@@ -206,7 +220,9 @@ public SolidRemoveMultipleAdjacencyInfo remove_double_adjacency(const Polyhedron
 
  Remove an edge bearing a double adjacency. The two tetrahedra around given edge are set as inactive.
 
-**edge** [in] Index of the PolyhedronFacetEdge shared by the two PolyhedronFacet adjacent to the same tetrahedron.**<not a builtin command>**  Old tetrahedra are set as inactive but not deleted.
+**edge** [in] Index of the PolyhedronFacetEdge shared by the two PolyhedronFacet adjacent to the same tetrahedron.
+
+**warning** Old tetrahedra are set as inactive but not deleted.
 
 ### remove_triple_adjacency
 
@@ -217,12 +233,14 @@ public SolidRemoveMultipleAdjacencyInfo remove_triple_adjacency(const Polyhedron
 
  Remove a vertex bearing a triple adjacency. The two tetrahedra around given vertex are set as inactive.
 
-**vertex** [in] Index of the PolyhedronVertex shared by the three PolyhedronFacet adjacent to the same tetrahedron.**<not a builtin command>**  Old tetrahedra are set as inactive but not deleted.
+**vertex** [in] Index of the PolyhedronVertex shared by the three PolyhedronFacet adjacent to the same tetrahedron.
+
+**warning** Old tetrahedra are set as inactive but not deleted.
 
 ### clean_tetrahedra
 
 ```cpp
-public int clean_tetrahedra()
+public vector clean_tetrahedra()
 ```
 
 
@@ -233,7 +251,7 @@ public int clean_tetrahedra()
 ### clean_vertices
 
 ```cpp
-public int clean_vertices()
+public vector clean_vertices()
 ```
 
 
@@ -246,7 +264,7 @@ public int clean_vertices()
 ### clean_edges
 
 ```cpp
-public int clean_edges()
+public vector clean_edges()
 ```
 
 
@@ -259,7 +277,7 @@ public int clean_edges()
 ### clean_facets
 
 ```cpp
-public int clean_facets()
+public vector clean_facets()
 ```
 
 
@@ -268,13 +286,6 @@ public int clean_facets()
 **return** old2new mappings for facets
 
 **warning** This method should be called after clean_tetrahedra()
-
-### solid
-
-```cpp
-protected const TetrahedralSolid3D & solid()
-```
-
 
 ### clean
 
@@ -285,6 +296,13 @@ public std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_
  Clean up the mesh removing inactive tetrahedra, isolated vertices, edges and facets.
 
 **return** old2new mappings for tetrahedra, vertices, edges and facets.
+
+### solid
+
+```cpp
+protected const TetrahedralSolid3D & solid()
+```
+
 
 
 

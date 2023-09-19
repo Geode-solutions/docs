@@ -70,7 +70,6 @@
 * [SurfaceSegmentFinder2D](SurfaceSegmentFinder2D.md)
 * [SurfaceSegmentFinder3D](SurfaceSegmentFinder3D.md)
 * [SurfaceSegmentFinder](SurfaceSegmentFinder.md)
-* [Surface](Surface.md)
 * [TetrahedralSolidEpsilonModifier](TetrahedralSolidEpsilonModifier.md)
 * [TetrahedralSolidModifier](TetrahedralSolidModifier.md)
 * [TriangulatedSurfaceEpsilonModifier](TriangulatedSurfaceEpsilonModifier.md)
@@ -163,71 +162,6 @@ SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension
 SurfaceCutPathInfo<2> cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
 ```
 
-
-### update_vertex_mappings
-
-```cpp
-void update_vertex_mappings(int & vertex_multi_mappings, const geode::VertexMultiMapping & collapse_mapping)
-```
-
-### add_mappings_in_multi_mappings
-
-```cpp
-void add_mappings_in_multi_mappings(int & multi_mappings, absl::Span<const Mapping<T> > new_mappings)
-```
-
-
-### process_mapping_element
-
-```cpp
-void process_mapping_element(const geode::Mapping<T> & element, int & to_remove, int & new_to_old, const T & )
-```
-
-
-### process_mapping_element
-
-```cpp
-void process_mapping_element(geode::MultiMapping<T> & element, int & to_remove, int & new_to_olds, const T & no_value)
-```
-
-
-### update_mappings
-
-```cpp
-void update_mappings(int & mappings, NewToOldMap & new_to_old, const T & no_value)
-```
-
-
-### update_mappings
-
-```cpp
-void update_mappings(int & mappings, const T & no_value)
-```
-
-
-### update_multi_mappings
-
-```cpp
-void update_multi_mappings(int & multi_mappings, const T & no_value)
-```
-
-
-### cut_along_patch
-
-```cpp
-SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const PatchFrontEdge> boundary_edges, const Triangle3D & triangle)
-```
-
-
- Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
-
-**solid** [in] TetrahedralSolid to cut
-
-**builder** [in] Builder of the Solid
-
-**boundary_edges** [in] List of oriented Patch boundary as solid edges
-
-**triangle** [in] The triangle corresponding to the patch to insert in solid**<not a builtin command>**  Cut tetrahedra are set as inactive but not deleted.
 
 ### is_split_tetrahedron_valid
 
@@ -827,19 +761,6 @@ std::tuple<absl::FixedArray<Triangle<dimension> >, absl::FixedArray<index_t> > t
 
 **point** [in] Coordinates of the destination point.
 
-### triangles_after_swap_edge
-
-```cpp
-int triangles_after_swap_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
-```
-
-
- Return all the triangles resulting from an edge swap. The swap is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge** [in] Index of the PolygonEdge to swap.
-
 ### is_collapse_edge_valid
 
 ```cpp
@@ -945,6 +866,25 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 ```
 
 
+### cut_along_patch
+
+```cpp
+SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const PatchFrontEdge> boundary_edges, const Triangle3D & triangle)
+```
+
+
+ Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
+
+**solid** [in] TetrahedralSolid to cut
+
+**builder** [in] Builder of the Solid
+
+**boundary_edges** [in] List of oriented Patch boundary as solid edges
+
+**triangle** [in] The triangle corresponding to the patch to insert in solid
+
+**warning** Cut tetrahedra are set as inactive but not deleted.
+
 ### cut_along_path
 
 ```cpp
@@ -958,7 +898,9 @@ SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSol
 
 **end** [in] Index of the cut ending vertex
 
-**path_splits** [in] Ordered list of Path splits**<not a builtin command>**  Cut tetrahedra are set as inactive but not deleted.
+**path_splits** [in] Ordered list of Path splits
+
+**warning** Cut tetrahedra are set as inactive but not deleted.
 
 ### cut_along_path
 
@@ -966,6 +908,19 @@ SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSol
 SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
 ```
 
+
+### triangles_after_swap_edge
+
+```cpp
+int triangles_after_swap_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
+```
+
+
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
 
 ### is_collapse_edge_valid
 
@@ -1022,12 +977,6 @@ SectionElementsAfterOperation elements_after_collapse_edge(const Section & secti
 SectionElementsAfterOperation elements_after_collapse_edge(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
 ```
 
-
-### minimal_metric
-
-```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
-```
 
 
 

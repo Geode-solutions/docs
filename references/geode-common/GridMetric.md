@@ -17,14 +17,14 @@ Inherits from Metric<dimension>
 
 ## Functions
 
-### GridMetric<dimension>
+### GridMetric
 
 ```cpp
 public void GridMetric<dimension>(const Grid<dimension> & grid, double default_metric)
 ```
 
 
-### ~GridMetric<dimension>
+### ~GridMetric
 
 ```cpp
 public void ~GridMetric<dimension>()

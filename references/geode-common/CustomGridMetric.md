@@ -13,14 +13,14 @@ Inherits from Metric<dimension>
 
 ## Functions
 
-### CustomGridMetric<dimension>
+### CustomGridMetric
 
 ```cpp
 public void CustomGridMetric<dimension>(const Grid<dimension> & grid, string_view attribute_name)
 ```
 
 
-### ~CustomGridMetric<dimension>
+### ~CustomGridMetric
 
 ```cpp
 public void ~CustomGridMetric<dimension>()

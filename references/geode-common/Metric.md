@@ -7,7 +7,7 @@
 
 ## Functions
 
-### ~Metric<dimension>
+### ~Metric
 
 ```cpp
 public void ~Metric<dimension>()

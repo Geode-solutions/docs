@@ -3,15 +3,35 @@
 
 ## Members
 
+```cpp
+```cpp
 public MultiMapping vertex
+```
+```
 
-public int inactive_tetrahedra
+```cpp
+```cpp
+public vector inactive_tetrahedra
+```
+```
 
-public int modified_tetrahedra
+```cpp
+```cpp
+public vector modified_tetrahedra
+```
+```
 
-public int facets
+```cpp
+```cpp
+public vector facets
+```
+```
 
-public int edges
+```cpp
+```cpp
+public vector edges
+```
+```
 
 
 

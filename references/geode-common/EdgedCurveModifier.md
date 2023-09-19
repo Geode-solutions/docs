@@ -11,21 +11,21 @@ Inherits from VerticesModifier
 
 ## Functions
 
-### EdgedCurveModifier<dimension>
+### EdgedCurveModifier
 
 ```cpp
 public void EdgedCurveModifier<dimension>(const EdgedCurve<dimension> & curve, EdgedCurveBuilder<dimension> & builder)
 ```
 
 
-### EdgedCurveModifier<dimension>
+### EdgedCurveModifier
 
 ```cpp
 public void EdgedCurveModifier<dimension>(EdgedCurveModifier<dimension> && other)
 ```
 
 
-### ~EdgedCurveModifier<dimension>
+### ~EdgedCurveModifier
 
 ```cpp
 public void ~EdgedCurveModifier<dimension>()

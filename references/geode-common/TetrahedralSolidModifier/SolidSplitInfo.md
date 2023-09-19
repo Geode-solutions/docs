@@ -3,13 +3,29 @@
 
 ## Members
 
+```cpp
+```cpp
 public index_t vertex
+```
+```
 
-public int tetrahedra
+```cpp
+```cpp
+public InlinedVector tetrahedra
+```
+```
 
-public int facets
+```cpp
+```cpp
+public InlinedVector facets
+```
+```
 
-public int edges
+```cpp
+```cpp
+public InlinedVector edges
+```
+```
 
 
 
@@ -18,14 +34,18 @@ public int edges
 ### SolidSplitInfo
 
 ```cpp
+```cpp
 public void SolidSplitInfo()
+```
 ```
 
 
 ### SolidSplitInfo
 
 ```cpp
+```cpp
 public void SolidSplitInfo(SolidSplitEdgeInfo && split_edge_info)
+```
 ```
 
 

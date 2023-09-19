@@ -3,13 +3,21 @@
 
 ## Members
 
+```cpp
 public PolygonEdge edge
+```
 
+```cpp
 public Position position
+```
 
+```cpp
 public index_t vertex_id
+```
 
+```cpp
 public _Bool opposite_side
+```
 
 
 

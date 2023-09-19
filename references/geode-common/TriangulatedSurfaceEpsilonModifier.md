@@ -13,14 +13,14 @@ Inherits from TriangulatedSurfaceModifier<dimension>
 
 ## Functions
 
-### TriangulatedSurfaceEpsilonModifier<dimension>
+### TriangulatedSurfaceEpsilonModifier
 
 ```cpp
 public void TriangulatedSurfaceEpsilonModifier<dimension>(const SurfaceMesh<dimension> & surface, TriangulatedSurfaceBuilder<dimension> & builder)
 ```
 
 
-### ~TriangulatedSurfaceEpsilonModifier<dimension>
+### ~TriangulatedSurfaceEpsilonModifier
 
 ```cpp
 public void ~TriangulatedSurfaceEpsilonModifier<dimension>()
@@ -38,7 +38,9 @@ public std::tuple<Position, SplitTriangleInfo> insert_point_in_triangle(index_t 
 
 **triangle_id** [in] Index of the triangle to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Split triangle is set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Split triangle is set as inactive but not deleted.
 
 **return** in the following order: the position of the split vertex, the information regarding the modifications.
 
@@ -53,7 +55,9 @@ public std::tuple<Position, SplitPolygonEdgeInfo> insert_point_on_edge(const Pol
 
 **edge** [in] Index of the PolygonEdge to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Potential split triangles are set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Potential split triangles are set as inactive but not deleted.
 
 **return** in the following order: the position of the split vertex, the information regarding the modifications.
 

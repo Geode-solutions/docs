@@ -1,0 +1,71 @@
+# class RayTracing3D
+
+
+## Records
+
+PolygonDistance
+
+Impl
+
+
+
+## Functions
+
+### RayTracing3D
+
+```cpp
+public void RayTracing3D(const SurfaceMesh3D & mesh, const Ray3D & ray)
+```
+
+
+### RayTracing3D
+
+```cpp
+public void RayTracing3D(const SurfaceMesh3D & mesh, const InfiniteLine3D & infinite_line)
+```
+
+
+### RayTracing3D
+
+```cpp
+public void RayTracing3D(RayTracing3D && other)
+```
+
+
+### ~RayTracing3D
+
+```cpp
+public void ~RayTracing3D()
+```
+
+
+### closest_polygon
+
+```cpp
+public absl::optional<PolygonDistance> closest_polygon()
+```
+
+
+### closest_polygons
+
+```cpp
+public absl::optional<absl::FixedArray<PolygonDistance> > closest_polygons(index_t size)
+```
+
+
+### all_intersections
+
+```cpp
+public vector all_intersections()
+```
+
+
+### operator()
+
+```cpp
+public _Bool operator()(index_t polygon_id)
+```
+
+
+
+

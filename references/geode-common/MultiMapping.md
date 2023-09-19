@@ -3,9 +3,13 @@
 
 ## Members
 
+```cpp
 public index_t new_id
+```
 
+```cpp
 public InlinedVector old_id
+```
 
 
 
@@ -46,13 +50,6 @@ public basic_string string()
 ```
 
 
-### MultiMapping
-
-```cpp
-public void MultiMapping(index_t new_id_in, int old_id_in)
-```
-
-
 
 
 # struct MultiMapping
@@ -60,29 +57,33 @@ public void MultiMapping(index_t new_id_in, int old_id_in)
 
 ## Members
 
+```cpp
 public Type new_id
+```
 
+```cpp
 public absl::InlinedVector<Type, 1> old_id
+```
 
 
 
 ## Functions
 
-### MultiMapping<Type>
+### MultiMapping
 
 ```cpp
 public void MultiMapping<Type>()
 ```
 
 
-### MultiMapping<Type>
+### MultiMapping
 
 ```cpp
 public void MultiMapping<Type>(Type new_id_in, absl::InlinedVector<Type, 1> old_id_in)
 ```
 
 
-### MultiMapping<Type>
+### MultiMapping
 
 ```cpp
 public void MultiMapping<Type>(Mapping<Type> mapping)
@@ -93,13 +94,6 @@ public void MultiMapping<Type>(Mapping<Type> mapping)
 
 ```cpp
 public _Bool operator==(const MultiMapping<Type> & other)
-```
-
-
-### MultiMapping<Type>
-
-```cpp
-public void MultiMapping<Type>(Type new_id_in, int old_id_in)
 ```
 
 

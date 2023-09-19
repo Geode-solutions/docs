@@ -9,13 +9,21 @@ Inherits from OpenGeodeException
 
 ## Members
 
+```cpp
 public _Bool blocked
+```
 
+```cpp
 public int edge_splits
+```
 
+```cpp
 public int immuable_vertices
+```
 
+```cpp
 public SolidCutPatchInfo cut_info
+```
 
 
 

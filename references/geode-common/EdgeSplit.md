@@ -3,9 +3,13 @@
 
 ## Members
 
+```cpp
 public Point3D location
+```
 
+```cpp
 public PolyhedronFacetEdge edge
+```
 
 
 

@@ -1,29 +1,18 @@
 {
-  "name": "docs",
-  "version": "1.0.0",
-  "description": "Documentation website of Geode-solutions projects",
-  "author": "Geode-solutions",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore --ignore-pattern 'static/docs/**' ."
-  },
-  "dependencies": {
-    "@nuxtjs/vuetify": "^1.12.1",
-    "nuxt": "^2.15.8"
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "@aceforth/nuxt-netlify": "^1.1.0",
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-prettier": "^3.4.1",
-    "eslint-plugin-vue": "^7.18.0",
-    "eslint-plugin-vuetify": "^1.0.1",
-    "prettier": "^2.4.1"
+    "vitepress": "^1.0.0-rc.12",
+    "vuepress-vite": "^2.0.0-beta.45"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.2.96",
+    "highlight.js": "^11.8.0",
+    "markdown-it": "^13.0.1",
+    "prismjs": "^1.29.0",
+    "vuetify": "^3.3.16"
   }
 }

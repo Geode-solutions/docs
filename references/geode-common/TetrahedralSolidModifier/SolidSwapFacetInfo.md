@@ -3,17 +3,41 @@
 
 ## Members
 
+```cpp
+```cpp
 public array inactive_tetrahedra
+```
+```
 
+```cpp
+```cpp
 public array new_tetrahedra
+```
+```
 
-public std::array<PolyhedronFacetMapping, 6> modified
+```cpp
+```cpp
+public array modified
+```
+```
 
-public std::array<PolyhedronFacet, 6> added
+```cpp
+```cpp
+public array added
+```
+```
 
-public std::array<PolyhedronFacet, 2> removed
+```cpp
+```cpp
+public array removed
+```
+```
 
+```cpp
+```cpp
 public array edge_vertices
+```
+```
 
 
 

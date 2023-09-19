@@ -12,28 +12,52 @@ PolygonEdgeGroup
 ### DoCollapseEdge
 
 ```cpp
+```cpp
+```cpp
+```cpp
 public void DoCollapseEdge(TriangulatedSurfaceModifier<dimension> & modifier, index_t edge_id)
+```
+```
+```
 ```
 
 
 ### DoCollapseEdge
 
 ```cpp
+```cpp
+```cpp
+```cpp
 public void DoCollapseEdge(TriangulatedSurfaceModifier<dimension> & modifier, const PolygonEdge & edge)
+```
+```
+```
 ```
 
 
 ### polygon_edge_collapse
 
 ```cpp
+```cpp
+```cpp
+```cpp
 public CollapsePolygonEdgeInfo polygon_edge_collapse(index_t collapse_vertex)
+```
+```
+```
 ```
 
 
 ### edge_collapse
 
 ```cpp
+```cpp
+```cpp
+```cpp
 public CollapseEdgeInfo edge_collapse(index_t collapse_vertex)
+```
+```
+```
 ```
 
 

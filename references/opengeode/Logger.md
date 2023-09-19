@@ -1,0 +1,85 @@
+# class Logger
+
+
+ Custom OpenGeode logger. Can be used with several levels:    Logger::info( "My information is ", 42 );    Logger::warn( "My warning is ", 42, " or more" );
+
+
+
+## Functions
+
+### level
+
+```cpp
+public Level level()
+```
+
+
+### set_level
+
+```cpp
+public void set_level(Level level)
+```
+
+
+### trace
+
+```cpp
+public void trace(const Args &... args)
+```
+
+
+### debug
+
+```cpp
+public void debug(const Args &... args)
+```
+
+
+### info
+
+```cpp
+public void info(const Args &... args)
+```
+
+
+### warn
+
+```cpp
+public void warn(const Args &... args)
+```
+
+
+### error
+
+```cpp
+public void error(const Args &... args)
+```
+
+
+### critical
+
+```cpp
+public void critical(const Args &... args)
+```
+
+
+
+
+## Enums
+
+| enum class Level |
+
+--
+
+| trace |
+| debug |
+| info |
+| warn |
+| err |
+| critical |
+| off |
+
+
+
+
+

@@ -29,21 +29,21 @@ CollapseEdgeInfo
 
 ## Functions
 
-### TriangulatedSurfaceModifier<dimension>
+### TriangulatedSurfaceModifier
 
 ```cpp
 public void TriangulatedSurfaceModifier<dimension>(const SurfaceMesh<dimension> & surface, TriangulatedSurfaceBuilder<dimension> & builder)
 ```
 
 
-### TriangulatedSurfaceModifier<dimension>
+### TriangulatedSurfaceModifier
 
 ```cpp
 public void TriangulatedSurfaceModifier<dimension>(TriangulatedSurfaceModifier<dimension> && other)
 ```
 
 
-### ~TriangulatedSurfaceModifier<dimension>
+### ~TriangulatedSurfaceModifier
 
 ```cpp
 public void ~TriangulatedSurfaceModifier<dimension>()
@@ -82,7 +82,9 @@ public SplitTriangleInfo split_triangle(index_t triangle_id, const Point<dimensi
 
 **triangle_id** [in] Index of the triangle to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Given triangle is set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Given triangle is set as inactive but not deleted.
 
 ### split_edge
 
@@ -95,7 +97,9 @@ public SplitPolygonEdgeInfo split_edge(const PolygonEdge & edge, const Point<dim
 
 **edge** [in] Index of the PolygonEdge to split.
 
-**point** [in] Coordinates of the split point.**<not a builtin command>**  Split triangles are set as inactive but not deleted.
+**point** [in] Coordinates of the split point.
+
+**warning** Split triangles are set as inactive but not deleted.
 
 ### collapse_edge
 

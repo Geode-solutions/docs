@@ -9,9 +9,13 @@ Inherits from ModelSimulationResult
 
 ## Members
 
+```cpp
 public flat_hash_map invalid_block_edges
+```
 
+```cpp
 public int invalid_blocks
+```
 
 
 

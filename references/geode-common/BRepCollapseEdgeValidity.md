@@ -3,7 +3,9 @@
 
 ## Members
 
+```cpp
 public int solid_validities
+```
 
 
 

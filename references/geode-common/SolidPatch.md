@@ -3,11 +3,17 @@
 
 ## Members
 
+```cpp
 public Position position
+```
 
+```cpp
 public index_t edge_id
+```
 
+```cpp
 public index_t vertex_id
+```
 
 
 
