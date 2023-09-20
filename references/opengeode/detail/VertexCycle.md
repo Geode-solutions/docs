@@ -2,9 +2,7 @@
 
 
 ```cpp
-```cpp
 Inherits from OrientedVertexCycle<Container>
-```
 ```
 
 
@@ -14,9 +12,7 @@ Inherits from OrientedVertexCycle<Container>
 ### VertexCycle
 
 ```cpp
-```cpp
 public void VertexCycle<Container>(Container vertices)
-```
 ```
 
 

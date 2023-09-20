@@ -8,9 +8,7 @@
 ## Members
 
 ```cpp
-```cpp
 protected geode::PImpl<Impl> impl_
-```
 ```
 
 
@@ -26,54 +24,42 @@ Impl
 ### ~BlockRangeBase
 
 ```cpp
-```cpp
 public void ~BlockRangeBase()
-```
 ```
 
 
 ### operator!=
 
 ```cpp
-```cpp
 public _Bool operator!=(const BlockRangeBase & )
-```
 ```
 
 
 ### operator++
 
 ```cpp
-```cpp
 public void operator++()
-```
 ```
 
 
 ### BlockRangeBase
 
-```cpp
 ```cpp
 protected void BlockRangeBase(const Blocks<dimension> & blocks)
 ```
-```
 
 
 ### BlockRangeBase
 
-```cpp
 ```cpp
 protected void BlockRangeBase(BlockRangeBase && other)
 ```
-```
 
 
 ### BlockRangeBase
 
 ```cpp
-```cpp
 protected void BlockRangeBase(const BlockRangeBase & other)
-```
 ```
 
 

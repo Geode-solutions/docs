@@ -2,9 +2,7 @@
 
 
 ```cpp
-```cpp
 Inherits from EmbeddingRangeIterator
-```
 ```
 
 
@@ -14,27 +12,21 @@ Inherits from EmbeddingRangeIterator
 ### EmbeddingRange
 
 ```cpp
-```cpp
 public void EmbeddingRange(const Relationships & relationships, const uuid & component_id)
-```
 ```
 
 
 ### begin
 
 ```cpp
-```cpp
 public const EmbeddingRange & begin()
-```
 ```
 
 
 ### end
 
 ```cpp
-```cpp
 public const EmbeddingRange & end()
-```
 ```
 
 

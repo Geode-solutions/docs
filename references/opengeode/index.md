@@ -1280,27 +1280,6 @@ std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(co
 std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
 ```
 
-### convert_surface_mesh_into_polygonal_surface
-
-```cpp
-int convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & surface)
-```
-
-
-### convert_surface_mesh_into_triangulated_surface
-
-```cpp
-int convert_surface_mesh_into_triangulated_surface(const SurfaceMesh<dimension> & surface)
-```
-
-
-### merge_surface_meshes
-
-```cpp
-int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
-```
-
-
 ### register_image_serialize_pcontext
 
 ```cpp
@@ -1326,6 +1305,27 @@ void register_image_deserialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
+
+### convert_surface_mesh_into_polygonal_surface
+
+```cpp
+int convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & surface)
+```
+
+
+### convert_surface_mesh_into_triangulated_surface
+
+```cpp
+int convert_surface_mesh_into_triangulated_surface(const SurfaceMesh<dimension> & surface)
+```
+
+
+### merge_surface_meshes
+
+```cpp
+int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
+```
+
 
 ### create_aabb_tree
 

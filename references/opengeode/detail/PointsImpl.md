@@ -10,81 +10,63 @@
 ### get_point
 
 ```cpp
-```cpp
 public const Point<dimension> & get_point(index_t vertex_id)
-```
 ```
 
 
 ### set_point
 
 ```cpp
-```cpp
 public void set_point(index_t vertex_id, Point<dimension> point)
-```
 ```
 
 
 ### nb_points
 
 ```cpp
-```cpp
 public index_t nb_points()
-```
 ```
 
 
 ### attribute_name
 
 ```cpp
-```cpp
 public string_view attribute_name()
-```
 ```
 
 
 ### initialize_crs
 
 ```cpp
-```cpp
 public void initialize_crs(Mesh & mesh)
-```
 ```
 
 
 ### PointsImpl
 
-```cpp
 ```cpp
 protected void PointsImpl<dimension>()
 ```
-```
 
 
 ### PointsImpl
 
-```cpp
 ```cpp
 protected void PointsImpl<dimension>(Mesh & mesh)
 ```
-```
 
 
 ### PointsImpl
 
-```cpp
 ```cpp
 protected void PointsImpl<dimension>(AttributeManager & manager)
 ```
-```
 
 
 ### PointsImpl
 
 ```cpp
-```cpp
 protected void PointsImpl<dimension>(AttributeManager & manager, string_view attribute_name)
-```
 ```
 
 

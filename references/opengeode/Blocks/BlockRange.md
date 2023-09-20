@@ -6,9 +6,7 @@
 
 
 ```cpp
-```cpp
 Inherits from BlockRangeBase
-```
 ```
 
 
@@ -18,54 +16,42 @@ Inherits from BlockRangeBase
 ### BlockRange
 
 ```cpp
-```cpp
 public void BlockRange(const Blocks<dimension> & blocks)
-```
 ```
 
 
 ### BlockRange
 
 ```cpp
-```cpp
 public void BlockRange(const BlockRange & range)
-```
 ```
 
 
 ### ~BlockRange
 
 ```cpp
-```cpp
 public void ~BlockRange()
-```
 ```
 
 
 ### begin
 
 ```cpp
-```cpp
 public const BlockRange & begin()
-```
 ```
 
 
 ### end
 
 ```cpp
-```cpp
 public const BlockRange & end()
-```
 ```
 
 
 ### operator*
 
 ```cpp
-```cpp
 public const Block<dimension> & operator*()
-```
 ```
 
 
