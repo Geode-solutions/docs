@@ -4,7 +4,6 @@
 
 ## Records
 
-* [GridFDMBoundaryFreeDerivativeMinimizationImpl](GridFDMBoundaryFreeDerivativeMinimizationImpl.md)
-* [GridFDMDerivativeMinimizationImpl](GridFDMDerivativeMinimizationImpl.md)
+* [FDMCurvatureMinimizationImpl](FDMCurvatureMinimizationImpl.md)
 
 

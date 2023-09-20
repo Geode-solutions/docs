@@ -9,20 +9,17 @@
 
 ## Records
 
+* [ComputationGrid](ComputationGrid.md)
+* [CutGridFDMCurvatureMinimization](CutGridFDMCurvatureMinimization.md)
+* [CutGrid](CutGrid.md)
 * [DataConstraintsManager](DataConstraintsManager.md)
 * [DataPointsManager](DataPointsManager.md)
+* [FDMCurvatureMinimization](FDMCurvatureMinimization.md)
 * [FieldLines](FieldLines.md)
 * [FrameFieldParameterization](FrameFieldParameterization.md)
 * [FrameFieldSmoother](FrameFieldSmoother.md)
 * [FrameField](FrameField.md)
 * [FrameTransform](FrameTransform.md)
-* [GridDerivativesMinimization](GridDerivativesMinimization.md)
-* [GridFDMBoundaryFreeCurvatureMinimization](GridFDMBoundaryFreeCurvatureMinimization.md)
-* [GridFDMBoundaryFreeHessianMinimization](GridFDMBoundaryFreeHessianMinimization.md)
-* [GridFDMBoundaryFreeLaplacianMinimization](GridFDMBoundaryFreeLaplacianMinimization.md)
-* [GridFDMCurvatureMinimization](GridFDMCurvatureMinimization.md)
-* [GridFDMHessianMinimization](GridFDMHessianMinimization.md)
-* [GridFDMLaplacianMinimization](GridFDMLaplacianMinimization.md)
 * [NumericsFrameFieldLibrary](NumericsFrameFieldLibrary.md)
 * [NumericsScalarFunctionLibrary](NumericsScalarFunctionLibrary.md)
 * [NumericsSurfaceLibrary](NumericsSurfaceLibrary.md)
@@ -44,13 +41,6 @@ void compute_LSCM_parameterization(const TriangulatedSurface3D & mesh, string_vi
 
 **attribute_name** [in] The VariableAttribute< Point2D > name which holds the parametric values. Values are stored on the vertices.
 
-### create_scalar_function_computer
-
-```cpp
-std::unique_ptr<GridDerivativesMinimization<dimension> > create_scalar_function_computer(GridScalarFunctionComputerType , const Grid<dimension> & grid, const DataConstraintsManager<dimension> & data_constraints)
-```
-
-
 ### convert_surface3d_into_2d
 
 ```cpp
@@ -63,23 +53,6 @@ std::unique_ptr<TriangulatedSurface2D> convert_surface3d_into_2d(const Triangula
 **mesh** [in] Input triangulated mesh
 
 **attribute_name** [in] The VariableAttribute< Point2D > name which holds the parametric values. Values are stored on the vertices.
-
-
-
-## Enums
-
-| enum class GridScalarFunctionComputerType |
-
---
-
-| FDM_laplacian_minimization |
-| FDM_hessian_minimization |
-| FDM_curvature_minimization |
-| FDM_boundaryfree_laplacian_minimization |
-| FDM_boundaryfree_hessian_minimization |
-| FDM_boundaryfree_curvature_minimization |
-
-
 
 
 
