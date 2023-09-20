@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::Corner &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::Corners" href="class_geode_Corners.html" />
+    <link rel="prev" title="template class geode::CoordinateSystem" href="class_geode_CoordinateSystem.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-corner">
+<span id="doxid-classgeode-1-1-corner"></span><span id="index-0"></span><h1>template class geode::Corner<a class="headerlink" href="#template-class-geode-corner" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Geometric component describing a <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a>. This component is described by a mesh.</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;corner.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">Corner</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component"><span class="std std-ref">geode::Component</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a9f833b20a91a3825e3f978448678f6fa"><span></span><span class="n">Corner</span></span><span></span><span class="p">(</span><span class="n">Corner</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a52dc4765ed08665987a89df771b818c9"><span></span><span class="n">Corner</span></span><span></span><span class="p">(</span><span class="n">CornersKey</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a96f820fc37b1105620e71f779a81ba8f"><span></span><span class="n">Corner</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">,</span> <span class="n">CornersKey</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1aac623e25b471564400e54115a0a463e4"><span></span><span class="n">component_type</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a340e953e76f408576deb357224752562"><span></span><span class="n">component_id</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a74e2375207559323768798211f0fe1db"><span></span><span class="n">mesh</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a2891007a30c223542874ba5e60d28bad"><span></span><span class="n">modifiable_mesh</span></span><span></span><span class="p">(</span><span class="n">CornersKey</span><span class="p">);</span>
+    <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1af04ded2331d5035d7c2a6af7744ad1f5"><span></span><span class="n">mesh_type</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a4abe7991125fab80711e9d6b928f898d"><span></span><span class="n">set_mesh</span></span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">mesh</span><span class="p">,</span> <span class="n">CornersKey</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a3b0941bb9272987f532c1158a9633402"><span></span><span class="n">set_mesh</span></span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">mesh</span><span class="p">,</span> <span class="n">CornersBuilderKey</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a62e4199049a65ea7b203526a83ecce55"><span></span><span class="n">set_corner_name</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">,</span> <span class="n">CornersBuilderKey</span><span class="p">);</span>
+    <a class="reference internal" href="class_geode_PointSet.html#doxid-classgeode-1-1-point-set"><span class="std std-ref">PointSet</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a5a8d449b08b45c647ce11f879e5b982e"><span></span><span class="n">modifiable_mesh</span></span><span></span><span class="p">(</span><span class="n">CornersBuilderKey</span><span class="p">);</span>
+    <span class="k">static</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-corner-1a6c6790536b7ea661cc9a096d1ab8217f"><span></span><span class="n">component_type_static</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+<section id="inherited-members">
+<h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1ac97e8180509443914dde94fb59b338fa"><span class="std std-ref">DEFAULT_NAME</span></a><span></span> <span class="o">=</span> <span class="s">&quot;default_name&quot;</span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a32f0ba602aaca6856fc6858092326ab1"><span class="std std-ref">id</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a7be1aea6e7c78e4844040a6d972614a8"><span class="std std-ref">name</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a32e167673aab3d16cdd19da604293288"><span class="std std-ref">save_identifier</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a2d879fc9cc8e7a3c426191c20d801080"><span class="std std-ref">set_id</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">unique_id</span><span class="p">,</span> <span class="n">IdentifierKey</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a99869829b2e1db630aee0a8a25d7fe33"><span class="std std-ref">set_name</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">,</span> <span class="n">IdentifierKey</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a52e5c81028516f44a47b3fd6ca7211b7"><span class="std std-ref">load_identifier</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">,</span> <span class="n">IdentifierKey</span><span class="p">);</span>
+    <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a21470130d8cd560c7be98c9e4207e526"><span class="std std-ref">ComponentType</span></a><span></span> <a class="reference internal" href="class_geode_Component.html#doxid-classgeode-1-1-component-1a4468b6088e9bbc94ef9b59104488bf7d"><span class="std std-ref">component_type</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_Corner.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

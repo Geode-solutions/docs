@@ -1,0 +1,38 @@
+.. index:: pair: class; geode::CachedValue
+.. _doxid-classgeode_1_1_cached_value:
+
+template class geode::CachedValue
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cached_value.h>
+	
+	template <typename ReturnType>
+	class CachedValue
+	{
+	public:
+		// typedefs
+	
+		typedef typename std::add_pointer<ReturnType(Args...)>::type :target:`CachedFunction<doxid-classgeode_1_1_cached_value_1a7faa30292e854f9ac327612742a3325d>`;
+
+		// methods
+	
+		template <typename... Args>
+		const ReturnType& :target:`operator ()<doxid-classgeode_1_1_cached_value_1a78e4f47305564a49fec531245d7b41e6>` (
+			:ref:`CachedFunction<doxid-classgeode_1_1_cached_value_1a7faa30292e854f9ac327612742a3325d>`<Args...> computer,
+			Args&&... args
+			) const;
+	
+		bool :target:`operator !=<doxid-classgeode_1_1_cached_value_1ab783d7c3ec54f9f1a9316557a560ff34>` (const CachedValue& other) const;
+		void :target:`reset<doxid-classgeode_1_1_cached_value_1a110ef154db47345bb38901b828246f4b>`();
+		bool :target:`computed<doxid-classgeode_1_1_cached_value_1aebda7e18b96251194c6cddc10946d70f>`() const;
+		const ReturnType& :target:`value<doxid-classgeode_1_1_cached_value_1aa7d1f7a02d96813c6ca27ab29dabb3db>`() const;
+	};

@@ -1,0 +1,211 @@
+.. index:: pair: class; geode::Relationships
+.. _doxid-classgeode_1_1_relationships:
+
+class geode::Relationships
+==========================
+
+.. toctree::
+	:hidden:
+
+	class_geode_Relationships_BoundaryRange.rst
+	class_geode_Relationships_BoundaryRangeIterator.rst
+	class_geode_Relationships_CollectionRange.rst
+	class_geode_Relationships_CollectionRangeIterator.rst
+	class_geode_Relationships_EmbeddingRange.rst
+	class_geode_Relationships_EmbeddingRangeIterator.rst
+	class_geode_Relationships_IncidenceRange.rst
+	class_geode_Relationships_IncidenceRangeIterator.rst
+	class_geode_Relationships_InternalRange.rst
+	class_geode_Relationships_InternalRangeIterator.rst
+	class_geode_Relationships_ItemRange.rst
+	class_geode_Relationships_ItemRangeIterator.rst
+	class_geode_Relationships_RelationRange.rst
+	class_geode_Relationships_RelationRangeIterator.rst
+
+Overview
+~~~~~~~~
+
+This class stores all the relations between a set of components. :ref:`More...<details-classgeode_1_1_relationships>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class Relationships
+	{
+	public:
+		// classes
+	
+		class :ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>`;
+		class :ref:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`;
+		class :ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>`;
+		class :ref:`CollectionRangeIterator<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator>`;
+		class :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`;
+		class :ref:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`;
+		class :ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>`;
+		class :ref:`IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator>`;
+		class :ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>`;
+		class :ref:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`;
+		class :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`;
+		class :ref:`ItemRangeIterator<doxid-classgeode_1_1_relationships_1_1_item_range_iterator>`;
+		class :ref:`RelationRange<doxid-classgeode_1_1_relationships_1_1_relation_range>`;
+		class :ref:`RelationRangeIterator<doxid-classgeode_1_1_relationships_1_1_relation_range_iterator>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_components_with_relations<doxid-classgeode_1_1_relationships_1a0107dda6bbfb0071d6329d20205b3905>`() const;
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :target:`component_with_relation<doxid-classgeode_1_1_relationships_1a4842de4f1cd8f1bb4137b1b5e8cd8897>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` relation_component_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_relations<doxid-classgeode_1_1_relationships_1a099bb598985acdfb1bb2af8749c08378>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`RelationRange<doxid-classgeode_1_1_relationships_1_1_relation_range>` :target:`relations<doxid-classgeode_1_1_relationships_1a22d12c66d2c27b559626f5e9a32c6a08>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_boundaries<doxid-classgeode_1_1_relationships_1a86e7e04468eff2fd01df516b5543b3c0>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`BoundaryRange<doxid-classgeode_1_1_relationships_1_1_boundary_range>` :target:`boundaries<doxid-classgeode_1_1_relationships_1a852350e5c01fff40efe09d9f4f47e649>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_incidences<doxid-classgeode_1_1_relationships_1a4de90840fa295f20551023864245fd50>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range>` :target:`incidences<doxid-classgeode_1_1_relationships_1a2405f675bbf424d24a23c4ef437b3763>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_internals<doxid-classgeode_1_1_relationships_1a1c65ba1be8ae7d933f04839c03646a41>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`InternalRange<doxid-classgeode_1_1_relationships_1_1_internal_range>` :target:`internals<doxid-classgeode_1_1_relationships_1acbae9a8a78a2f81b2efeefd4174c9e1a>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_embeddings<doxid-classgeode_1_1_relationships_1a6ac12a45837cf73be9e435da448fc421>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>` :target:`embeddings<doxid-classgeode_1_1_relationships_1aa6eca48c2cd5508bfd6d9ff0e81759ce>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_items<doxid-classgeode_1_1_relationships_1a9ad4136a46eaaa74bc8fc88ce909c722>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>` :target:`items<doxid-classgeode_1_1_relationships_1ac10212aedd5b82e372d3ff96b5f91471>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_collections<doxid-classgeode_1_1_relationships_1a3ae5359f185c221cfa4cfd2e52677d26>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		:ref:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range>` :target:`collections<doxid-classgeode_1_1_relationships_1a438b139a541ff30ff47406651ad96b9e>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id) const;
+		bool :target:`is_boundary<doxid-classgeode_1_1_relationships_1a82cd221591f5fdff4799c209c364b549>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& boundary, const :ref:`uuid<doxid-structgeode_1_1uuid>`& incidence) const;
+		bool :target:`is_internal<doxid-classgeode_1_1_relationships_1a6138acef8b9971b5f40d4925bc35ac71>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& internal, const :ref:`uuid<doxid-structgeode_1_1uuid>`& embedding) const;
+		bool :target:`is_item<doxid-classgeode_1_1_relationships_1a57d4e54f764e3053bd29dff88be2b1ac>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& item, const :ref:`uuid<doxid-structgeode_1_1uuid>`& collection) const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :target:`relation_attribute_manager<doxid-classgeode_1_1_relationships_1a20eb06d7900f5dc8eb4c913edff21a36>`() const;
+	
+		absl::optional<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`relation_index<doxid-classgeode_1_1_relationships_1ab47827593ea1a541e1a0e29732df135f>`(
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id1,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id2
+			) const;
+	
+		std::tuple<:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`, :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`> :target:`relation_from_index<doxid-classgeode_1_1_relationships_1a2abb7b7a95d618807da8156c033f5d9e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` component_id) const;
+		void :target:`save_relationships<doxid-classgeode_1_1_relationships_1a0dab2f54985d3932dbff14c1ede028e6>`(absl::string_view directory) const;
+		void :ref:`remove_component<doxid-classgeode_1_1_relationships_1a7f8a3250794013acebcbf718acdcbd42>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id, RelationshipsBuilderKey);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_boundary_relation<doxid-classgeode_1_1_relationships_1ab8392df0e2b9c1a939aad02361928a11>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& boundary,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& incidence,
+			RelationshipsBuilderKey
+			);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_internal_relation<doxid-classgeode_1_1_relationships_1a57de7479e9fea1343feaf9c3475559f5>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& internal,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& embedding,
+			RelationshipsBuilderKey
+			);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`add_item_in_collection<doxid-classgeode_1_1_relationships_1a4cb50331febc11479034352fc8a547a0>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& item,
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& collection,
+			RelationshipsBuilderKey
+			);
+	
+		void :ref:`remove_relation<doxid-classgeode_1_1_relationships_1af521dbc5e36ad61baa0b5c35958c84d8>`(
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id1,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id2,
+			RelationshipsBuilderKey
+			);
+	
+		void :target:`copy_relationships<doxid-classgeode_1_1_relationships_1ab9d7bcc02926109fe74b6d6dc1db9631>`(
+			const :ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>`& mapping,
+			const Relationships& relationships,
+			RelationshipsBuilderKey
+			);
+	
+		void :target:`load_relationships<doxid-classgeode_1_1_relationships_1aa702a19e6aa4adbf78a60f0574525344>`(absl::string_view directory, RelationshipsBuilderKey);
+	};
+
+	// direct descendants
+
+	class :ref:`Topology<doxid-classgeode_1_1_topology>`;
+.. _details-classgeode_1_1_relationships:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This class stores all the relations between a set of components. Each relationship links two components. Relationship types are boundary and its dual incidence, and item and its dual collection. Components should be added through their uuids.
+
+Methods
+-------
+
+.. index:: pair: function; remove_component
+.. _doxid-classgeode_1_1_relationships_1a7f8a3250794013acebcbf718acdcbd42:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void remove_component(const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id, RelationshipsBuilderKey)
+
+Remove a component from the set of components registered by the :ref:`Relationships <doxid-classgeode_1_1_relationships>` and all its associated relationships
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- component_id
+
+		- Unique index of the component to remove
+
+.. index:: pair: function; add_boundary_relation
+.. _doxid-classgeode_1_1_relationships_1ab8392df0e2b9c1a939aad02361928a11:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_boundary_relation(
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& boundary,
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& incidence,
+		RelationshipsBuilderKey
+		)
+
+Add a new relationship of type boundary-incidence between two components
+
+.. index:: pair: function; add_internal_relation
+.. _doxid-classgeode_1_1_relationships_1a57de7479e9fea1343feaf9c3475559f5:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_internal_relation(
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& internal,
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& embedding,
+		RelationshipsBuilderKey
+		)
+
+Add a new relationship of type internal-embedding between two components
+
+.. index:: pair: function; add_item_in_collection
+.. _doxid-classgeode_1_1_relationships_1a4cb50331febc11479034352fc8a547a0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` add_item_in_collection(
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& item,
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& collection,
+		RelationshipsBuilderKey
+		)
+
+Add a new relationship of type item-collection between two components
+
+.. index:: pair: function; remove_relation
+.. _doxid-classgeode_1_1_relationships_1af521dbc5e36ad61baa0b5c35958c84d8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void remove_relation(
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id1,
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id2,
+		RelationshipsBuilderKey
+		)
+
+Remove a relationship between two components
+

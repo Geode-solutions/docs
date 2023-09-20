@@ -1,0 +1,21 @@
+.. index:: pair: enum; IntersectionType
+.. _doxid-namespacegeode_1a9f15c2c020c07607391e3dd6a6ce8075:
+
+enum geode::IntersectionType
+============================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <intersection.h>
+
+	enum IntersectionType
+	{
+	    :target:`NONE<doxid-namespacegeode_1a9f15c2c020c07607391e3dd6a6ce8075ab50339a10e1de285ac99d4c3990b8693>`,
+	    :target:`INTERSECT<doxid-namespacegeode_1a9f15c2c020c07607391e3dd6a6ce8075a24bdbe2bcaf533b7b3f0bd58bfa7f291>`,
+	    :target:`PARALLEL<doxid-namespacegeode_1a9f15c2c020c07607391e3dd6a6ce8075adf13a99b035d6f0bce4f44ab18eec8eb>`,
+	    :target:`INCORRECT<doxid-namespacegeode_1a9f15c2c020c07607391e3dd6a6ce8075abefd188c4e4002048a9534a82d38c5ea>`,
+	};
+

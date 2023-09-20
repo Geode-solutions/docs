@@ -1,0 +1,30 @@
+.. index:: pair: struct; geode::ModelMeshesElementMapping
+.. _doxid-structgeode_1_1_model_meshes_element_mapping:
+
+struct geode::ModelMeshesElementMapping
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <mapping.h>
+	
+	struct ModelMeshesElementMapping
+	{
+		// fields
+	
+		:ref:`MeshElementMapping<doxid-namespacegeode_1aea423c63cd77225c4bafe32d82bce7f6>` :target:`corners<doxid-structgeode_1_1_model_meshes_element_mapping_1a669fe952e7e3c4f1022724f2c7281f1b>`;
+		:ref:`MeshElementMapping<doxid-namespacegeode_1aea423c63cd77225c4bafe32d82bce7f6>` :target:`lines<doxid-structgeode_1_1_model_meshes_element_mapping_1a0bdfe1f74f67578fb608c5ca1f5f494f>`;
+		:ref:`MeshElementMapping<doxid-namespacegeode_1aea423c63cd77225c4bafe32d82bce7f6>` :target:`surfaces<doxid-structgeode_1_1_model_meshes_element_mapping_1a9f6945498ff8cb74988bc9e837e49094>`;
+	};
+
+	// direct descendants
+
+	struct :ref:`BRepMeshesElementMapping<doxid-structgeode_1_1_b_rep_meshes_element_mapping>`;
+	struct :ref:`SectionMeshesElementMapping<doxid-structgeode_1_1_section_meshes_element_mapping>`;

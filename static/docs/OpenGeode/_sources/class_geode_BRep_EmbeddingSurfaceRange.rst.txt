@@ -1,0 +1,47 @@
+.. index:: pair: class; geode::BRep::EmbeddingSurfaceRange
+.. _doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range:
+
+class geode::BRep::EmbeddingSurfaceRange
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep.h>
+	
+	class EmbeddingSurfaceRange: public :ref:`geode::Relationships::EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`
+	{
+	public:
+		// construction
+	
+		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a74b0db679b7db548b309b60805968739>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Corner3D& corner);
+		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1aaf886ec1f97ed4131b4857e4f18dedca>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Line3D& line);
+		:target:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a6481bd4e6e43d88e7f0aca0ef5b1fb1f>`(const EmbeddingSurfaceRange& range);
+
+		// methods
+	
+		const EmbeddingSurfaceRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a0d3868a01407fdc588182d0f5d588fa6>`() const;
+		const EmbeddingSurfaceRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1ab4356cec295f661971c18866426d0b9c>`() const;
+		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a8c740586b77321890368a889db84f9bd>` ();
+		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range_1a40feb375724f2e502f69730f51d6272d>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1aa065cd1dfaffb9262c4f17dc36edc1aa>` (const :ref:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1aacf0b2e07b3aeca1a5c309d4451f9993>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1a79b742b5617680cb6d31ec15e6aba5b8>` () const;
+

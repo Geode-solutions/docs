@@ -1,0 +1,24 @@
+.. index:: pair: struct; std::hash<geode::GreyscaleColor>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_greyscale_color_01_4:
+
+template struct std::hash<geode::GreyscaleColor>
+================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <greyscale_color.h>
+	
+	template <>
+	struct hash<geode::GreyscaleColor>
+	{
+		// methods
+	
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_greyscale_color_01_4_1a5ca41a81884058fcbbe652a17b4ae115>` (const :ref:`geode::GreyscaleColor<doxid-classgeode_1_1_greyscale_color>`& color) const;
+	};

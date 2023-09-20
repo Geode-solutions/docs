@@ -1,0 +1,48 @@
+.. index:: pair: class; geode::Circle
+.. _doxid-classgeode_1_1_circle:
+
+class geode::Circle
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <circle.h>
+	
+	class Circle: public :ref:`geode::GenericCircle<doxid-classgeode_1_1_generic_circle>`
+	{
+	public:
+		// construction
+	
+		:target:`Circle<doxid-classgeode_1_1_circle_1ae77c9e5391db0ceb913e5a2dd4692b3a>`(:ref:`Plane<doxid-classgeode_1_1_plane>` plane, double radius);
+		:target:`Circle<doxid-classgeode_1_1_circle_1a770c7123f1b800c34c29bfed4a9c74dd>`(const Circle& other);
+		:target:`Circle<doxid-classgeode_1_1_circle_1ab8ff6357406154362b7761cf8d5196a3>`(const :ref:`OwnerCircle<doxid-classgeode_1_1_owner_circle>`& other);
+		:target:`Circle<doxid-classgeode_1_1_circle_1a0a5bd2a756f18dbd9e18764ff106eeb6>`(Circle&& other);
+
+		// methods
+	
+		Circle& :target:`operator =<doxid-classgeode_1_1_circle_1a9182710372bb812a1717eb77f5eaad77>` (const Circle& other);
+		Circle& :target:`operator =<doxid-classgeode_1_1_circle_1a6be5e089932375513d81a1264bfbf99b>` (Circle&& other);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		:ref:`GenericCircle<doxid-classgeode_1_1_generic_circle>`& :ref:`operator =<doxid-classgeode_1_1_generic_circle_1a1e7f2371423a09819400eb4e5da2de56>` (const :ref:`GenericCircle<doxid-classgeode_1_1_generic_circle>`& other);
+		:ref:`GenericCircle<doxid-classgeode_1_1_generic_circle>`& :ref:`operator =<doxid-classgeode_1_1_generic_circle_1a4337cb5a75ab9bf85453947f024facbb>` (:ref:`GenericCircle<doxid-classgeode_1_1_generic_circle>`&& other);
+		const PlaneType& :ref:`plane<doxid-classgeode_1_1_generic_circle_1a34235618adb53e5c84a1db9c31e109d8>`() const;
+		double :ref:`radius<doxid-classgeode_1_1_generic_circle_1aa1f2e5ff05cf23b1d33bc80e071fe3a0>`() const;
+		BoundingBox3D :ref:`bounding_box<doxid-classgeode_1_1_generic_circle_1a9be6701214e80f6581826b715c25b12c>`() const;
+

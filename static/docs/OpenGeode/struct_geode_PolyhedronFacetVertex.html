@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>struct geode::PolyhedronFacetVertex &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::PolyhedronVertex" href="struct_geode_PolyhedronVertex.html" />
+    <link rel="prev" title="struct geode::PolyhedronFacetEdge" href="struct_geode_PolyhedronFacetEdge.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="struct-geode-polyhedronfacetvertex">
+<span id="doxid-structgeode-1-1-polyhedron-facet-vertex"></span><span id="index-0"></span><h1>struct geode::PolyhedronFacetVertex<a class="headerlink" href="#struct-geode-polyhedronfacetvertex" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;solid_mesh.h&gt;</span>
+
+<span class="k">struct</span> <span class="n">PolyhedronFacetVertex</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polyhedron-facet-vertex-1a77c0d5d9271c5ca307867f6096644e47"><span></span><span class="n">polyhedron_facet</span></span><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polyhedron-facet-vertex-1a384cf8a92559de42823466e2898a8565"><span></span><span class="n">vertex_id</span></span><span></span> <span class="p">{</span> <span class="n">NO_LID</span> <span class="p">};</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polyhedron-facet-vertex-1a5e3a8e5f8f49fbed1afb0b2560cf6252"><span></span><span class="n">PolyhedronFacetVertex</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polyhedron-facet-vertex-1aaf86c50345bdfdd451eccea63d1bb611"><span></span><span class="n">PolyhedronFacetVertex</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span> <span class="n">facet</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="n">vertex_id_in</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polyhedron-facet-vertex-1acbf550fc138ba5f085e53aebb26cd9cd"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetVertex</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polyhedron-facet-vertex-1acc8d6f349ab045161a099009532384b6"><span></span><span class="k">operator</span> <span class="o">!=</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetVertex</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polyhedron-facet-vertex-1a19500e1b3b1e04957e3d52175960d89f"><span></span><span class="k">operator</span> <span class="o">&lt;</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">PolyhedronFacetVertex</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polyhedron-facet-vertex-1a3e95be07055a43513f52295f58dab748"><span></span><span class="n">string</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Archive</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polyhedron-facet-vertex-1a32dba075eb7b8c67585a0d7b1972b163"><span></span><span class="n">serialize</span></span><span></span><span class="p">(</span><span class="n">Archive</span><span class="o">&amp;</span> <span class="n">archive</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/struct_geode_PolyhedronFacetVertex.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

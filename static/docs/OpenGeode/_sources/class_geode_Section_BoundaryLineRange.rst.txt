@@ -1,0 +1,45 @@
+.. index:: pair: class; geode::Section::BoundaryLineRange
+.. _doxid-classgeode_1_1_section_1_1_boundary_line_range:
+
+class geode::Section::BoundaryLineRange
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section.h>
+	
+	class BoundaryLineRange: public :ref:`geode::Relationships::BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`
+	{
+	public:
+		// construction
+	
+		:target:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a4b7c01e6ebf9fc9b82d8b6c43a14adb7>`(const :ref:`Section<doxid-classgeode_1_1_section>`& section, const Surface2D& surface);
+		:target:`BoundaryLineRange<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a9604a2eaad81b294a1da11cc4aa4137b>`(const BoundaryLineRange& range);
+
+		// methods
+	
+		const BoundaryLineRange& :target:`begin<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a9f603c2a4078754ac982fda6b884717e>`() const;
+		const BoundaryLineRange& :target:`end<doxid-classgeode_1_1_section_1_1_boundary_line_range_1af2f54a8ab96fe84d58f345dc363c946b>`() const;
+		const Line2D& :target:`operator *<doxid-classgeode_1_1_section_1_1_boundary_line_range_1a0f49d27332678be94bd75e90e9c2f254>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a38a05e2d55cda5f7789faf1b0dd0d53b>` (const :ref:`BoundaryRangeIterator<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1ad48bf5ca79534feea81482e831a47e15>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_boundary_range_iterator_1a490c05e8b656295797dc711a83e85f23>` () const;
+

@@ -1,0 +1,107 @@
+.. index:: pair: class; geode::BoundingBox
+.. _doxid-classgeode_1_1_bounding_box:
+
+template class geode::BoundingBox
+=================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Bounding box implemented for 2D and 3D points. :ref:`More...<details-classgeode_1_1_bounding_box>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bounding_box.h>
+	
+	template <index_t dimension>
+	class BoundingBox
+	{
+	public:
+		// construction
+	
+		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1aa21de0de5e303073891e631d1d13d8d6>`();
+		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1a3724b2b94654478f2418350d055b2628>`(:ref:`Point<doxid-classgeode_1_1_point>`<dimension> min, :ref:`Point<doxid-classgeode_1_1_point>`<dimension> max);
+		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1a7d78edf02cd77cc5b959223cd5ed5a74>`(const BoundingBox& other);
+		:target:`BoundingBox<doxid-classgeode_1_1_bounding_box_1ab4a7ae0d283da73b7642aba161b7cc27>`(BoundingBox&& other);
+
+		// methods
+	
+		BoundingBox& :target:`operator =<doxid-classgeode_1_1_bounding_box_1a62af8bd08c52ca2016915f1bf82ce817>` (const BoundingBox& other);
+		BoundingBox& :target:`operator =<doxid-classgeode_1_1_bounding_box_1a0fabc63a1a18e5ec431315e6ffabc87f>` (BoundingBox&& other);
+		void :target:`add_box<doxid-classgeode_1_1_bounding_box_1aa01ebddaebe0cb00ee4ce9af103910b1>`(const BoundingBox<dimension>& box);
+		void :target:`add_point<doxid-classgeode_1_1_bounding_box_1ad2e23377b88d730ec18711bff7ea9229>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point);
+		bool :target:`contains<doxid-classgeode_1_1_bounding_box_1a06067c1ab22b26d7508f84e3be00f672>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
+		bool :target:`intersects<doxid-classgeode_1_1_bounding_box_1a73fe42124b81e1daafedc5fc648efb75>`(const BoundingBox<dimension>& bbox) const;
+		bool :target:`intersects<doxid-classgeode_1_1_bounding_box_1a360fec7a076b444ed514e252847c262f>`(const :ref:`Ray<doxid-classgeode_1_1_ray>`<dimension>& ray) const;
+		bool :target:`intersects<doxid-classgeode_1_1_bounding_box_1a791a8abb00dde376003dab5340f23a02>`(const :ref:`InfiniteLine<doxid-classgeode_1_1_infinite_line>`<dimension>& line) const;
+		bool :ref:`intersects<doxid-classgeode_1_1_bounding_box_1a5fb26aa80a5dc096aa73b7bf4ea68f77>`(const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment) const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==2||T==3, bool>::type :ref:`intersects<doxid-classgeode_1_1_bounding_box_1a9b6c6b55b94e00f72526a91ad108ddd7>`(const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<T>& triangle) const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, bool>::type :ref:`intersects<doxid-classgeode_1_1_bounding_box_1a2b31c9a1fb84b58df5e0239a7a2dc93f>`(const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetra) const;
+	
+		double :ref:`signed_distance<doxid-classgeode_1_1_bounding_box_1aa8eeef680e1ce12041a863bf0b04eb67>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`min<doxid-classgeode_1_1_bounding_box_1a4989e863012fb87f1c94067f4a21b85a>`() const;
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :target:`max<doxid-classgeode_1_1_bounding_box_1aa41b83189438c79f27a616322904542c>`() const;
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`center<doxid-classgeode_1_1_bounding_box_1ad04a5b1251acb4b743ef6129ab39578c>`() const;
+		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`diagonal<doxid-classgeode_1_1_bounding_box_1a8fb83a7908f25344ad57e6c5af3e01e6>`() const;
+	};
+.. _details-classgeode_1_1_bounding_box:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Bounding box implemented for 2D and 3D points.
+
+Methods
+-------
+
+.. index:: pair: function; intersects
+.. _doxid-classgeode_1_1_bounding_box_1a5fb26aa80a5dc096aa73b7bf4ea68f77:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool intersects(const :ref:`Segment<doxid-classgeode_1_1_segment>`<dimension>& segment) const
+
+Returns true if the element is crossing, is inside, or is containing the bbox
+
+.. index:: pair: function; intersects
+.. _doxid-classgeode_1_1_bounding_box_1a9b6c6b55b94e00f72526a91ad108ddd7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t T = dimension>
+	std::enable_if<T==2||T==3, bool>::type intersects(const :ref:`Triangle<doxid-classgeode_1_1_triangle>`<T>& triangle) const
+
+Returns true if the element is crossing, is inside (or is containing the bbox in 2D)
+
+.. index:: pair: function; intersects
+.. _doxid-classgeode_1_1_bounding_box_1a2b31c9a1fb84b58df5e0239a7a2dc93f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t T = dimension>
+	std::enable_if<T==3, bool>::type intersects(const :ref:`Tetrahedron<doxid-classgeode_1_1_tetrahedron>`& tetra) const
+
+Returns true if the element is crossing, is inside, or is containing the bbox
+
+.. index:: pair: function; signed_distance
+.. _doxid-classgeode_1_1_bounding_box_1aa8eeef680e1ce12041a863bf0b04eb67:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	double signed_distance(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point) const
+
+Returns the distance between the point and the box. If the point is inside the box, the distance is negative.
+

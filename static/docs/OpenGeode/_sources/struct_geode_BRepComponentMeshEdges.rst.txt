@@ -1,0 +1,46 @@
+.. index:: pair: struct; geode::BRepComponentMeshEdges
+.. _doxid-structgeode_1_1_b_rep_component_mesh_edges:
+
+struct geode::BRepComponentMeshEdges
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_mesh_edges.h>
+	
+	struct BRepComponentMeshEdges: public :ref:`geode::ModelComponentMeshEdges<doxid-structgeode_1_1_model_component_mesh_edges>`
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<:ref:`uuid<doxid-structgeode_1_1uuid>`, std::vector<:ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`>> :target:`BlockEdges<doxid-structgeode_1_1_b_rep_component_mesh_edges_1a64ebf3b405f0149337b51a7c3e27430b>`;
+
+		// fields
+	
+		:ref:`BlockEdges<doxid-structgeode_1_1_b_rep_component_mesh_edges_1a64ebf3b405f0149337b51a7c3e27430b>` :target:`block_edges<doxid-structgeode_1_1_b_rep_component_mesh_edges_1a6c0dfcbb3f55490a0f4d1429483296f8>`;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef absl::flat_hash_map<:ref:`uuid<doxid-structgeode_1_1uuid>`, std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>> :ref:`LineEdges<doxid-structgeode_1_1_model_component_mesh_edges_1ad1fbb08e72fd8ec7f032668cb8a2e2ff>`;
+		typedef absl::flat_hash_map<:ref:`uuid<doxid-structgeode_1_1uuid>`, std::vector<:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>`>> :ref:`SurfaceEdges<doxid-structgeode_1_1_model_component_mesh_edges_1a4f52d758e4bec35f440fec14483d676c>`;
+
+		// fields
+	
+		std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :ref:`edge_unique_vertices<doxid-structgeode_1_1_model_component_mesh_edges_1a4f52efc78758e3b759401896030ae577>`;
+		:ref:`LineEdges<doxid-structgeode_1_1_model_component_mesh_edges_1ad1fbb08e72fd8ec7f032668cb8a2e2ff>` :ref:`line_edges<doxid-structgeode_1_1_model_component_mesh_edges_1ae1df237e110428611eac1eee5d28c2f2>`;
+		:ref:`SurfaceEdges<doxid-structgeode_1_1_model_component_mesh_edges_1a4f52d758e4bec35f440fec14483d676c>` :ref:`surface_edges<doxid-structgeode_1_1_model_component_mesh_edges_1a267f91e0d7afc1185e0a45a496887bd8>`;
+

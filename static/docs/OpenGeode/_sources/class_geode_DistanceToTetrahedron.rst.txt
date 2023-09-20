@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::DistanceToTetrahedron
+.. _doxid-classgeode_1_1_distance_to_tetrahedron:
+
+template class geode::DistanceToTetrahedron
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <aabb_solid_helpers.h>
+	
+	template <index_t dimension>
+	class DistanceToTetrahedron
+	{
+	public:
+		// construction
+	
+		:target:`DistanceToTetrahedron<doxid-classgeode_1_1_distance_to_tetrahedron_1a4dbc44b37aa419872227a9cd6f54f396>`(const :ref:`TetrahedralSolid<doxid-classgeode_1_1_tetrahedral_solid>`<dimension>& mesh);
+
+		// methods
+	
+		std::tuple<double, :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :target:`operator ()<doxid-classgeode_1_1_distance_to_tetrahedron_1ace4b00d181d7046cfe46091347d1e225>` (
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` cur_box
+			) const;
+	};

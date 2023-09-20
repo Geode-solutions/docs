@@ -1,0 +1,90 @@
+.. index:: pair: struct; geode::SurfaceDefinition
+.. _doxid-structgeode_1_1_surface_definition:
+
+struct geode::SurfaceDefinition
+===============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <simplicial_creator_definitions.h>
+	
+	struct SurfaceDefinition
+	{
+		// fields
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`vertices<doxid-structgeode_1_1_surface_definition_1a1a8c8c07ef6c8d460e5bb83030e9be92>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`triangles<doxid-structgeode_1_1_surface_definition_1ad9c5a7f1b76ca0bfe78d774dd8e96d49>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`boundaries<doxid-structgeode_1_1_surface_definition_1aa7f38565328817b7fff2108b94154168>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`internals<doxid-structgeode_1_1_surface_definition_1a584c9aa5f29796c37d8a6a2c61cc71e5>`;
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`internal_corners<doxid-structgeode_1_1_surface_definition_1ab0794eb59a7b6776706efd351a487ce8>`;
+	};
+.. _details-structgeode_1_1_surface_definition:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; vertices
+.. _doxid-structgeode_1_1_surface_definition_1a1a8c8c07ef6c8d460e5bb83030e9be92:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> vertices
+
+List of the unique points, duplicate points along internal :ref:`Lines <doxid-classgeode_1_1_lines>`.
+
+.. index:: pair: variable; triangles
+.. _doxid-structgeode_1_1_surface_definition_1ad9c5a7f1b76ca0bfe78d774dd8e96d49:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> triangles
+
+List of vertices: every three vertices = one triangle.
+
+.. index:: pair: variable; boundaries
+.. _doxid-structgeode_1_1_surface_definition_1aa7f38565328817b7fff2108b94154168:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> boundaries
+
+List of boundaries: index i correspond to the i-th created :ref:`Line <doxid-classgeode_1_1_line>`.
+
+.. index:: pair: variable; internals
+.. _doxid-structgeode_1_1_surface_definition_1a584c9aa5f29796c37d8a6a2c61cc71e5:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> internals
+
+List of internal lines: index i correspond to the i-th created :ref:`Line <doxid-classgeode_1_1_line>`.
+
+.. index:: pair: variable; internal_corners
+.. _doxid-structgeode_1_1_surface_definition_1ab0794eb59a7b6776706efd351a487ce8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> internal_corners
+
+List of internal corners: index i correspond to the i-th created :ref:`Corner <doxid-classgeode_1_1_corner>`
+

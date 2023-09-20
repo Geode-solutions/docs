@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template struct geode::ModelMeshesAABBTree &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::ModelMeshesElementMapping" href="struct_geode_ModelMeshesElementMapping.html" />
+    <link rel="prev" title="struct geode::ModelComponentMeshEdges" href="struct_geode_ModelComponentMeshEdges.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-struct-geode-modelmeshesaabbtree">
+<span id="doxid-structgeode-1-1-model-meshes-a-a-b-b-tree"></span><span id="index-0"></span><h1>template struct geode::ModelMeshesAABBTree<a class="headerlink" href="#template-struct-geode-modelmeshesaabbtree" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;aabb_model_helpers.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">ModelMeshesAABBTree</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <a class="reference internal" href="class_geode_AABBTree.html#doxid-classgeode-1-1-a-a-b-b-tree"><span class="std std-ref">AABBTree</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-model-meshes-a-a-b-b-tree-1ac8c7a13d52aaaf61ccd2f0a75ff08170"><span></span><span class="n">components_tree_</span></span><span></span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_AABBTree.html#doxid-classgeode-1-1-a-a-b-b-tree"><span class="std std-ref">AABBTree</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-model-meshes-a-a-b-b-tree-1afd8cd1482892fb8b1d9bb4620a65e9ad"><span></span><span class="n">mesh_trees_</span></span><span></span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-model-meshes-a-a-b-b-tree-1a6658fdcbbf468a36310946a2d2666e8c"><span></span><span class="n">uuids_</span></span><span></span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-model-meshes-a-a-b-b-tree-1a0f370170fe8ecc7ad33768f5b1596ea1"><span></span><span class="n">mesh_tree_ids_</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-model-meshes-a-a-b-b-tree-1ad631d060ad77837a3774f462a99b2844"><span></span><span class="n">ModelMeshesAABBTree</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">nb_components</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/struct_geode_ModelMeshesAABBTree.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

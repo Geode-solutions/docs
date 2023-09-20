@@ -1,0 +1,28 @@
+.. index:: pair: struct; geode::SurfacePolygonsEdgeVertices
+.. _doxid-structgeode_1_1_surface_polygons_edge_vertices:
+
+struct geode::SurfacePolygonsEdgeVertices
+=========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_mesh_polygons.h>
+	
+	struct SurfacePolygonsEdgeVertices
+	{
+		// fields
+	
+		absl::optional<:ref:`SurfacePolygonEdge<doxid-structgeode_1_1_surface_polygon_edge>`> :target:`oriented_edge<doxid-structgeode_1_1_surface_polygons_edge_vertices_1a29024462f55b4d7eb6efb5da5115f5f5>`;
+		absl::optional<:ref:`SurfacePolygonEdge<doxid-structgeode_1_1_surface_polygon_edge>`> :target:`opposite_edge<doxid-structgeode_1_1_surface_polygons_edge_vertices_1a70bf03b02c23a5743fd82c1049912506>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_edges<doxid-structgeode_1_1_surface_polygons_edge_vertices_1aa59547ee981a7cae533bbe212baa967c>`() const;
+	};

@@ -1,0 +1,28 @@
+.. index:: pair: struct; geode::AttributeLinearInterpolationImpl<GreyscaleColor>
+.. _doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_greyscale_color_01_4:
+
+template struct geode::AttributeLinearInterpolationImpl<GreyscaleColor>
+=======================================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <greyscale_color.h>
+	
+	template <>
+	struct AttributeLinearInterpolationImpl<GreyscaleColor>
+	{
+		// methods
+	
+		template <template<typename> class Attribute>
+		static :ref:`GreyscaleColor<doxid-classgeode_1_1_greyscale_color>` :target:`compute<doxid-structgeode_1_1_attribute_linear_interpolation_impl_3_01_greyscale_color_01_4_1a4c47cc7fa076c86cd7501e40035cdf8f>`(
+			const :ref:`AttributeLinearInterpolation<doxid-structgeode_1_1_attribute_linear_interpolation>`& interpolator,
+			const Attribute<:ref:`GreyscaleColor<doxid-classgeode_1_1_greyscale_color>`>& attribute
+			);
+	};

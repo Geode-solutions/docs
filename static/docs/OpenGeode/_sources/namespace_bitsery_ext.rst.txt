@@ -1,0 +1,44 @@
+.. index:: pair: namespace; bitsery::ext
+.. _doxid-namespacebitsery_1_1ext:
+
+namespace bitsery::ext
+======================
+
+.. toctree::
+	:hidden:
+
+	struct_bitsery_ext_PolymorphicBaseClass.rst
+	struct_bitsery_ext_PolymorphicBaseClass-2.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace ext {
+
+	// structs
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::Component2D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_component2_d_01_4>`;
+
+	template <>
+	struct :ref:`PolymorphicBaseClass<geode::Component3D><doxid-structbitsery_1_1ext_1_1_polymorphic_base_class_3_01geode_1_1_component3_d_01_4>`;
+
+	// global functions
+
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1a2f3f6e3031ada63ba58ce04f80856fe4>`(geode::Component2D, "Component2D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1a983dc06b1ff7bfe148e5eba738ad749e>`(geode::Corner2D, "Corner2D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1ac1a88554a668efafb820c1eb8ef1ce91>`(geode::Line2D, "Line2D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1a5be4d426f26702f4f637a0c667aa0d1d>`(geode::Surface2D, "Surface2D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1a89fa64685d76f0ccc3eddf49c3c97484>`(geode::ModelBoundary2D, "ModelBoundary2D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1aaf77f93c04b024ad1dc65b8e73522489>`(geode::Component3D, "Component3D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1aa69615a1f793de2276b65faa1bf4804c>`(geode::Corner3D, "Corner3D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1ae14df7ab6a3374f454c61ae6696cc44f>`(geode::Line3D, "Line3D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1adcaf1b29af8710a57c5fdde114be1a1d>`(geode::Surface3D, "Surface3D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1a717a65dd887de3cf0623e017feda9557>`(geode::ModelBoundary3D, "ModelBoundary3D");
+	:target:`BITSERY_CLASS_NAME<doxid-namespacebitsery_1_1ext_1ab5197e725a29f5fd5e9070dfa0fa7ec4>`(geode::Block3D, "Block3D");
+
+	} // namespace ext

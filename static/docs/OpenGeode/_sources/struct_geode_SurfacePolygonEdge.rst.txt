@@ -1,0 +1,29 @@
+.. index:: pair: struct; geode::SurfacePolygonEdge
+.. _doxid-structgeode_1_1_surface_polygon_edge:
+
+struct geode::SurfacePolygonEdge
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_mesh_polygons.h>
+	
+	struct SurfacePolygonEdge
+	{
+		// fields
+	
+		:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` :target:`edge<doxid-structgeode_1_1_surface_polygon_edge_1aebff8af91d3ffb33ee6dea60f6751ff3>`;
+		std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :target:`vertices<doxid-structgeode_1_1_surface_polygon_edge_1a5d76e3fb0d23e42c0934fa8a78995687>`;
+
+		// construction
+	
+		:target:`SurfacePolygonEdge<doxid-structgeode_1_1_surface_polygon_edge_1a3ef9024d9ef2eebbfad7813c8bed4931>`();
+		:target:`SurfacePolygonEdge<doxid-structgeode_1_1_surface_polygon_edge_1acf06a51aa1643639b0ee6b5febe17236>`(:ref:`PolygonEdge<doxid-structgeode_1_1_polygon_edge>` edge_in);
+	};

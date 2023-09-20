@@ -1,0 +1,40 @@
+.. index:: pair: class; geode::GenericCircle
+.. _doxid-classgeode_1_1_generic_circle:
+
+template class geode::GenericCircle
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <circle.h>
+	
+	template <typename PlaneType>
+	class GenericCircle
+	{
+	public:
+		// construction
+	
+		:target:`GenericCircle<doxid-classgeode_1_1_generic_circle_1a74f7eae39ce5542d2783ee115aac2a03>`(PlaneType plane, double radius);
+		:target:`GenericCircle<doxid-classgeode_1_1_generic_circle_1a40cae433e06b7c5d10b0176c9ec70402>`(const GenericCircle& other);
+		:target:`GenericCircle<doxid-classgeode_1_1_generic_circle_1aeeab2558e9eb6972a19c1632c722bbb8>`(GenericCircle&& other);
+
+		// methods
+	
+		GenericCircle& :target:`operator =<doxid-classgeode_1_1_generic_circle_1a1e7f2371423a09819400eb4e5da2de56>` (const GenericCircle& other);
+		GenericCircle& :target:`operator =<doxid-classgeode_1_1_generic_circle_1a4337cb5a75ab9bf85453947f024facbb>` (GenericCircle&& other);
+		const PlaneType& :target:`plane<doxid-classgeode_1_1_generic_circle_1a34235618adb53e5c84a1db9c31e109d8>`() const;
+		double :target:`radius<doxid-classgeode_1_1_generic_circle_1aa1f2e5ff05cf23b1d33bc80e071fe3a0>`() const;
+		BoundingBox3D :target:`bounding_box<doxid-classgeode_1_1_generic_circle_1a9be6701214e80f6581826b715c25b12c>`() const;
+	};
+
+	// direct descendants
+
+	class :ref:`Circle<doxid-classgeode_1_1_circle>`;
+	class :ref:`OwnerCircle<doxid-classgeode_1_1_owner_circle>`;

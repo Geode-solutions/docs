@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>class geode::Graph &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::GraphBuilder" href="class_geode_GraphBuilder.html" />
+    <link rel="prev" title="template class geode::GenericTriangle" href="class_geode_GenericTriangle.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-geode-graph">
+<span id="doxid-classgeode-1-1-graph"></span><span id="index-0"></span><h1>class geode::Graph<a class="headerlink" href="#class-geode-graph" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>Interface class to represent a <a class="reference internal" href="#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a>. <a class="reference internal" href="#details-classgeode-1-1-graph"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;graph.h&gt;</span>
+
+<span class="k">class</span> <span class="nl">Graph</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">geode::VertexSet</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_GraphBuilder.html#doxid-classgeode-1-1-graph-builder"><span class="std std-ref">GraphBuilder</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-graph-1a46b2113fc3a895abbda17723e432edc4"><span></span><span class="n">Builder</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">Graph</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-graph-1a705c0e3c8069e5d3a841a74debaa22bb"><span class="std std-ref">create</span></a><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">Graph</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-graph-1abb121b6db46af37819b230a803ba65da"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">);</span>
+    <span class="k">static</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a0dbbac82ed73238f90bb9b2e51db53"><span class="std std-ref">MeshType</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-graph-1a5d19443288366fe083b601a044459ada"><span></span><span class="n">type_name_static</span></span><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">Graph</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-graph-1ae0c3c2f45fc478d3f8d187a93dbf3c34"><span></span><span class="n">clone</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-graph-1ad59eacb78c03b6f5d8858eb7f597f74d"><span class="std std-ref">edge_vertex</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_EdgeVertex.html#doxid-structgeode-1-1-edge-vertex"><span class="std std-ref">EdgeVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">edge_vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-graph-1a0fa4addccbedf6647585e0b0501d1563"><span class="std std-ref">edge_vertices</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-graph-1a7ae6a6d4f1f52849125f55f8012d9819"><span></span><span class="n">nb_edges</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-graph-1a4958092d4cc40efc7f1ed612c2a8727e"><span class="std std-ref">edge_attribute_manager</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aab3c9dc52d762219dcc9137475590210"><span class="std std-ref">EdgesAroundVertex</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="#doxid-classgeode-1-1-graph-1ac1d310bffb226e03046ab4227809c422"><span class="std std-ref">edges_around_vertex</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-graph-1a73d5a03eeebead3c838fc0c99dbe3d4b"><span></span><span class="n">is_vertex_isolated</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-graph-1a5fead72c70819bba680d16eb20ff7083"><span></span><span class="n">edge_from_vertices</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">v0</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">v1</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-graph-1a4827d4b56513384589255ae923181cc8"><span></span><span class="n">set_edges_around_vertex</span></span><span></span><span class="p">(</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aab3c9dc52d762219dcc9137475590210"><span class="std std-ref">EdgesAroundVertex</span></a><span></span> <span class="n">edges</span><span class="p">,</span>
+        <span class="n">GraphKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-graph-1a280b46a8d11b536006fe9dc8e08cc26c"><span></span><span class="n">associate_edge_vertex_to_vertex</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_EdgeVertex.html#doxid-structgeode-1-1-edge-vertex"><span class="std std-ref">EdgeVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">edge_vertex</span><span class="p">,</span>
+        <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">,</span>
+        <span class="n">GraphKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-graph-1a6679cff1df6465b3966da99546c7308f"><span></span><span class="n">disassociate_edge_vertex_to_vertex</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_EdgeVertex.html#doxid-structgeode-1-1-edge-vertex"><span class="std std-ref">EdgeVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">edge_vertex</span><span class="p">,</span> <span class="n">GraphKey</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_OpenGeodeGraph.html#doxid-classgeode-1-1-open-geode-graph"><span class="std std-ref">OpenGeodeGraph</span></a><span></span><span class="p">;</span></pre>
+<section id="inherited-members">
+<h3>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h3>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_VertexSetBuilder.html#doxid-classgeode-1-1-vertex-set-builder"><span class="std std-ref">VertexSetBuilder</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1ad63688e2a30d4c7cb5865df73012f9b4"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1ac97e8180509443914dde94fb59b338fa"><span class="std std-ref">DEFAULT_NAME</span></a><span></span> <span class="o">=</span> <span class="s">&quot;default_name&quot;</span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a32f0ba602aaca6856fc6858092326ab1"><span class="std std-ref">id</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a7be1aea6e7c78e4844040a6d972614a8"><span class="std std-ref">name</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a32e167673aab3d16cdd19da604293288"><span class="std std-ref">save_identifier</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a2d879fc9cc8e7a3c426191c20d801080"><span class="std std-ref">set_id</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">unique_id</span><span class="p">,</span> <span class="n">IdentifierKey</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a99869829b2e1db630aee0a8a25d7fe33"><span class="std std-ref">set_name</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">,</span> <span class="n">IdentifierKey</span><span class="p">);</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Identifier.html#doxid-classgeode-1-1-identifier-1a52e5c81028516f44a47b3fd6ca7211b7"><span class="std std-ref">load_identifier</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">,</span> <span class="n">IdentifierKey</span><span class="p">);</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1a290e8167ed522d6c5cb70bae169cabcc"><span class="std std-ref">create</span></a><span></span><span class="p">();</span>
+    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1a4cedcfab9f71d2cbcde7d049d0556d21"><span class="std std-ref">create</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">);</span>
+    <span class="k">static</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a0dbbac82ed73238f90bb9b2e51db53"><span class="std std-ref">MeshType</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1adde63eb22b6564fd2ffd20bb374c3996"><span class="std std-ref">type_name_static</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set"><span class="std std-ref">VertexSet</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1a59f8cdf17a798e4746e3b90baa8be080"><span class="std std-ref">clone</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1adee799d7c11a4401041b9da48fcbd86a"><span class="std std-ref">native_extension</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1a54faa6fb3f4a9086c44452058dc3919e"><span class="std std-ref">nb_vertices</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1aee0082194a8fb2660fb187687de79b2d"><span class="std std-ref">vertex_attribute_manager</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1a27db2667d140cc8f6645531788765815"><span class="std std-ref">impl_name</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">virtual</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4a0dbbac82ed73238f90bb9b2e51db53"><span class="std std-ref">MeshType</span></a><span></span> <a class="reference internal" href="class_geode_VertexSet.html#doxid-classgeode-1-1-vertex-set-1ae19dce429c1353a4616424fa9c1076e1"><span class="std std-ref">type_name</span></a><span></span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></pre>
+</section>
+</section>
+<section id="detailed-documentation">
+<span id="details-classgeode-1-1-graph"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this heading">¶</a></h2>
+<p>Interface class to represent a <a class="reference internal" href="#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a>. A graph is a set of vertices linked by edges</p>
+<section id="methods">
+<h3>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-1a705c0e3c8069e5d3a841a74debaa22bb"><span id="index-1"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">Graph</span><span class="o">&gt;</span> <span class="n">create</span><span class="p">()</span></pre>
+<p>Create a new <a class="reference internal" href="#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a> using default data structure.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-1abb121b6db46af37819b230a803ba65da"><span id="index-2"></span><span></span><span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">Graph</span><span class="o">&gt;</span> <span class="n">create</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a4acdb225332b912b395b0d238a21eb10"><span class="std std-ref">MeshImpl</span></a><span></span><span class="o">&amp;</span> <span class="n">impl</span><span class="p">)</span></pre>
+<p>Create a new <a class="reference internal" href="#doxid-classgeode-1-1-graph"><span class="std std-ref">Graph</span></a> using a specified data structure.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>impl</p></td>
+<td><p>Data structure implementation</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-1ad59eacb78c03b6f5d8858eb7f597f74d"><span id="index-3"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_vertex</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_EdgeVertex.html#doxid-structgeode-1-1-edge-vertex"><span class="std std-ref">EdgeVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">edge_vertex</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the vertex index corresponding to an edge endpoint</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge_vertex</p></td>
+<td><p>Edge endpoint</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-1a0fa4addccbedf6647585e0b0501d1563"><span id="index-4"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="n">edge_vertices</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_id</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Return the indices of the two edge vertices</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge_id</p></td>
+<td><p>Index of the edge</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-1a4958092d4cc40efc7f1ed612c2a8727e"><span id="index-5"></span><a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <span class="n">edge_attribute_manager</span><span class="p">()</span> <span class="k">const</span></pre>
+<p>Access to the manager of attributes associated with edges.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-graph-1ac1d310bffb226e03046ab4227809c422"><span id="index-6"></span><span></span><span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aab3c9dc52d762219dcc9137475590210"><span class="std std-ref">EdgesAroundVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">edges_around_vertex</span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span></pre>
+<p>Get all edge endpoints corresponding to a given vertex</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>vertex_id</p></td>
+<td><p>Index of the vertex</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_Graph.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

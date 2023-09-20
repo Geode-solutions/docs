@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::CornerDefinition
+.. _doxid-structgeode_1_1_corner_definition:
+
+struct geode::CornerDefinition
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <simplicial_creator_definitions.h>
+	
+	struct CornerDefinition
+	{
+		// fields
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex<doxid-structgeode_1_1_corner_definition_1a71df1ed4226537c763a714f8aa353b9c>`;
+	};

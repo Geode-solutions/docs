@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::CoordinateSystem &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::Corner" href="class_geode_Corner.html" />
+    <link rel="prev" title="template class geode::CoordinateReferenceSystemManagersBuilder" href="class_geode_CoordinateReferenceSystemManagersBuilder.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-coordinatesystem">
+<span id="doxid-classgeode-1-1-coordinate-system"></span><span id="index-0"></span><h1>template class geode::CoordinateSystem<a class="headerlink" href="#template-class-geode-coordinatesystem" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;coordinate_system.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">CoordinateSystem</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame"><span class="std std-ref">geode::Frame</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-coordinate-system-1a30b29a7e2eec50b830d4ae924b0ffc3f"><span></span><span class="n">CoordinateSystem</span></span><span></span><span class="p">();</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-coordinate-system-1a6183caf102db7286c959a9d70f986743"><span></span><span class="n">CoordinateSystem</span></span><span></span><span class="p">(</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="n">directions</span><span class="p">,</span>
+        <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">origin</span>
+        <span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-coordinate-system-1a55a8720cf4a10b85f0cdee528e0a7dbd"><span></span><span class="n">CoordinateSystem</span></span><span></span><span class="p">(</span>
+        <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">origin</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">other_points</span>
+        <span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-coordinate-system-1a360ac967504b682f56974ed70ea01045"><span></span><span class="n">origin</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-coordinate-system-1a596ee8b9cfd2130b8caeee17c677a4e2"><span></span><span class="n">set_origin</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">origin</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-coordinate-system-1ad71cb87254aa19ef4bff71b48ca548f4"><span></span><span class="n">set_directions</span></span><span></span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="n">directions</span><span class="p">);</span>
+    <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-coordinate-system-1a8a0d744a7b6b9e58c5413a6b89f0c91a"><span></span><span class="n">coordinates</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">global_coordinates</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-coordinate-system-1a9d71019f43d76e4da2c13b595e74c3ec"><span></span><span class="n">global_coordinates</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">coordinates</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-coordinate-system-1a67238ad2143c7082d9b8ac3437edef92"><span></span><span class="n">string</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+<section id="inherited-members">
+<h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame-1ae114972a5ea2e61af2a0796ce9328ad3"><span class="std std-ref">direction</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="n">index</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame-1aa94cd676580e0264f8cdbe00a935a0cd"><span class="std std-ref">set_direction</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="n">index</span><span class="p">,</span> <a class="reference internal" href="class_geode_Vector.html#doxid-classgeode-1-1-vector"><span class="std std-ref">Vector</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">direction</span><span class="p">);</span>
+    <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame"><span class="std std-ref">Frame</span></a><span></span> <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame-1a96ced5cc37adade03710b8e6e5cb08d9"><span class="std std-ref">inverse</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame"><span class="std std-ref">Frame</span></a><span></span> <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame-1add4ed0c967c4f2cd835b36c4c3caaeaa"><span class="std std-ref">operator +</span></a><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame"><span class="std std-ref">Frame</span></a><span></span><span class="o">&amp;</span> <span class="n">rhs</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame"><span class="std std-ref">Frame</span></a><span></span> <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame-1a68c065ab3a06197174035fd7c80bd601"><span class="std std-ref">rescale</span></a><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">length</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <a class="reference internal" href="class_geode_Frame.html#doxid-classgeode-1-1-frame-1adab98782410b85effab33ead8fb5ee6c"><span class="std std-ref">string</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_CoordinateSystem.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

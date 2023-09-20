@@ -1,0 +1,45 @@
+.. index:: pair: class; geode::TextureStorage
+.. _doxid-classgeode_1_1_texture_storage:
+
+template class geode::TextureStorage
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <texture_storage.h>
+	
+	template <index_t dimension>
+	class TextureStorage
+	{
+	public:
+		// construction
+	
+		:target:`TextureStorage<doxid-classgeode_1_1_texture_storage_1a91cdf831d2966a943a893966b3899a1a>`();
+		:target:`TextureStorage<doxid-classgeode_1_1_texture_storage_1ab2e5f0782d54c0642783009bda83896b>`(TextureStorage&& other);
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_textures<doxid-classgeode_1_1_texture_storage_1aeff259aed37430395d74ee762002e8ca>`(TextureManagerKey) const;
+	
+		Texture<dimension>& :target:`find_or_create_texture<doxid-classgeode_1_1_texture_storage_1a6979af7a148b47e651935e0f48cd97e7>`(
+			:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& manager,
+			absl::string_view name,
+			TextureManagerKey
+			);
+	
+		const Texture<dimension>& :target:`find_texture<doxid-classgeode_1_1_texture_storage_1a8abce212b78afdb8f174559eabc53f71>`(
+			absl::string_view name,
+			TextureManagerKey
+			) const;
+	
+		absl::FixedArray<absl::string_view> :target:`texture_names<doxid-classgeode_1_1_texture_storage_1a50004b0f1983875e9afbae1169b29e3b>`(TextureManagerKey) const;
+		bool :target:`texture_exists<doxid-classgeode_1_1_texture_storage_1a115c33b8955c61a4c8dc64ca5e61cb30>`(absl::string_view name, TextureManagerKey) const;
+		void :target:`delete_texture<doxid-classgeode_1_1_texture_storage_1ad91b72c1f664f7a583e5e12dab724bd6>`(absl::string_view name, TextureManagerKey);
+	};

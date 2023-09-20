@@ -1,0 +1,28 @@
+.. index:: pair: struct; geode::BlockPolyhedraFacetVertices
+.. _doxid-structgeode_1_1_block_polyhedra_facet_vertices:
+
+struct geode::BlockPolyhedraFacetVertices
+=========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_mesh_polygons.h>
+	
+	struct BlockPolyhedraFacetVertices
+	{
+		// fields
+	
+		absl::optional<:ref:`BlockPolyhedronFacet<doxid-structgeode_1_1_block_polyhedron_facet>`> :target:`oriented_polyhedron_facet<doxid-structgeode_1_1_block_polyhedra_facet_vertices_1afb850cb2c5c85d4748e9a99b82a25eba>`;
+		absl::optional<:ref:`BlockPolyhedronFacet<doxid-structgeode_1_1_block_polyhedron_facet>`> :target:`opposite_polyhedron_facet<doxid-structgeode_1_1_block_polyhedra_facet_vertices_1a12d1a829899639eee00cbea845ee4ffe>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_facets<doxid-structgeode_1_1_block_polyhedra_facet_vertices_1ac15c2f296e6173b605e42cb72b8cff31>`() const;
+	};

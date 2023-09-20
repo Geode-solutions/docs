@@ -1,0 +1,49 @@
+.. index:: pair: class; geode::TReverseRange
+.. _doxid-classgeode_1_1_t_reverse_range:
+
+template class geode::TReverseRange
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <range.h>
+	
+	template <typename Type>
+	class TReverseRange: public :ref:`geode::BaseRange<doxid-classgeode_1_1_base_range>`
+	{
+	public:
+		// construction
+	
+		template <typename T1, typename T2>
+		:target:`TReverseRange<doxid-classgeode_1_1_t_reverse_range_1a0647412c24f6c6af44a6a31e988a0344>`(T1 begin, T2 end);
+	
+		template <typename T>
+		:target:`TReverseRange<doxid-classgeode_1_1_t_reverse_range_1ade4720d68232027d94b9ba88ed195a60>`(T begin);
+
+		// methods
+	
+		constexpr const TReverseRange<Type>& :target:`begin<doxid-classgeode_1_1_t_reverse_range_1a13468c3205892f93c66f126ecb5e2f48>`() const;
+		constexpr const TReverseRange<Type>& :target:`end<doxid-classgeode_1_1_t_reverse_range_1af365fd9f8e3e918938454d59a07c065a>`() const;
+		constexpr Type :target:`operator *<doxid-classgeode_1_1_t_reverse_range_1a79ffe79b5679c0cebb8f03d35d6c27da>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		constexpr bool :ref:`operator !=<doxid-classgeode_1_1_base_range_1a69556080208d11a4b31531cae37b4720>` (const :ref:`BaseRange<doxid-classgeode_1_1_base_range>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_base_range_1afe90da29578e4e5022ffc71598163bfe>` ();
+		constexpr Type :ref:`current<doxid-classgeode_1_1_base_range_1a940f5c94e6bc7bfab7ee89cf01e1570c>`() const;
+

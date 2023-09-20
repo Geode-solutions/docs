@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::detail::ComponentsTypesChecker<std::tuple<Components...>>
+.. _doxid-structgeode_1_1detail_1_1_components_types_checker_3_01std_1_1tuple_3_01_components_8_8_8_01_4_01_4:
+
+template struct geode::detail::ComponentsTypesChecker<std::tuple<Components...>>
+================================================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <filter.h>
+	
+	template <typename... Components>
+	struct ComponentsTypesChecker<std::tuple<Components...>>
+	{
+		// methods
+	
+		bool :target:`apply<doxid-structgeode_1_1detail_1_1_components_types_checker_3_01std_1_1tuple_3_01_components_8_8_8_01_4_01_4_1a753e6aa282fc578c434bccefc5c2b939>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& component_type) const;
+	};

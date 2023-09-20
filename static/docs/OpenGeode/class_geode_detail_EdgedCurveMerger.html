@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::detail::EdgedCurveMerger &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::detail::EdgedCurveMerger::EdgeOrigin" href="struct_geode_detail_EdgedCurveMerger_EdgeOrigin.html" />
+    <link rel="prev" title="template class geode::detail::EdgedCurveIdentifier" href="class_geode_detail_EdgedCurveIdentifier.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-detail-edgedcurvemerger">
+<span id="doxid-classgeode-1-1detail-1-1-edged-curve-merger"></span><span id="index-0"></span><h1>template class geode::detail::EdgedCurveMerger<a class="headerlink" href="#template-class-geode-detail-edgedcurvemerger" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;curve_merger.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">EdgedCurveMerger</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_detail_VertexMerger.html#doxid-classgeode-1-1detail-1-1-vertex-merger"><span class="std std-ref">geode::detail::VertexMerger</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_detail_EdgedCurveMerger_EdgeOrigin.html#doxid-structgeode-1-1detail-1-1-edged-curve-merger-1-1-edge-origin"><span class="std std-ref">EdgeOrigin</span></a><span></span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-edged-curve-merger-1a73cb19d5913366ff94afd3f59a2b1c16"><span></span><span class="n">EdgeOrigins</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// structs</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_EdgedCurveMerger_EdgeOrigin.html#doxid-structgeode-1-1detail-1-1-edged-curve-merger-1-1-edge-origin"><span class="std std-ref">EdgeOrigin</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-edged-curve-merger-1a358b46892e5397725174685957f2a9aa"><span></span><span class="n">EdgedCurveMerger</span></span><span></span><span class="p">(</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;&gt;</span> <span class="n">curves</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">epsilon</span>
+        <span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-edged-curve-merger-1a9a617091f03aae1716aa240cbf70ab7c"><span></span><span class="n">merge</span></span><span></span><span class="p">();</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-edged-curve-merger-1a37f970c98a8871a1ce3196c68d7a0ac0"><span></span><span class="n">edge_in_merged</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">curve</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-classgeode-1-1detail-1-1-edged-curve-merger-1a73cb19d5913366ff94afd3f59a2b1c16"><span class="std std-ref">EdgeOrigins</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1detail-1-1-edged-curve-merger-1a1bc45b841af85784d6a9c2b343e061ca"><span></span><span class="n">edge_origins</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+<section id="inherited-members">
+<h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="k">typename</span> <span class="n">Mesh</span><span class="o">::</span><span class="n">Builder</span> <a class="reference internal" href="class_geode_detail_VertexMerger.html#doxid-classgeode-1-1detail-1-1-vertex-merger-1a3e2d5b82af2ed6ab4cefb8eff34d8d39"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_detail_VertexMerger_VertexOrigin.html#doxid-structgeode-1-1detail-1-1-vertex-merger-1-1-vertex-origin"><span class="std std-ref">VertexOrigin</span></a><span></span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_detail_VertexMerger.html#doxid-classgeode-1-1detail-1-1-vertex-merger-1a179ae70fdd0395604ab2901bf1ffb4b7"><span class="std std-ref">VertexOrigins</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// structs</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_detail_VertexMerger_VertexOrigin.html#doxid-structgeode-1-1detail-1-1-vertex-merger-1-1-vertex-origin"><span class="std std-ref">VertexOrigin</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="class_geode_detail_VertexMerger.html#doxid-classgeode-1-1detail-1-1-vertex-merger-1af40ab4dc9c45f055786e4e37c923a566"><span class="std std-ref">vertex_in_merged</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">mesh</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_detail_VertexMerger.html#doxid-classgeode-1-1detail-1-1-vertex-merger-1a179ae70fdd0395604ab2901bf1ffb4b7"><span class="std std-ref">VertexOrigins</span></a><span></span><span class="o">&amp;</span> <a class="reference internal" href="class_geode_detail_VertexMerger.html#doxid-classgeode-1-1detail-1-1-vertex-merger-1a4b4e0a77f96952d6c947a4f8eeda3105"><span class="std std-ref">vertex_origins</span></a><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span></pre>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_detail_EdgedCurveMerger.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

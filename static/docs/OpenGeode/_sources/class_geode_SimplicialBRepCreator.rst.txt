@@ -1,0 +1,61 @@
+.. index:: pair: class; geode::SimplicialBRepCreator
+.. _doxid-classgeode_1_1_simplicial_b_rep_creator:
+
+class geode::SimplicialBRepCreator
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <simplicial_brep_creator.h>
+	
+	class SimplicialBRepCreator
+	{
+	public:
+		// construction
+	
+		:target:`SimplicialBRepCreator<doxid-classgeode_1_1_simplicial_b_rep_creator_1af5d073f772310bcbba596723a59bdd12>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, std::vector<Point3D> unique_points);
+
+		// methods
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_corners<doxid-classgeode_1_1_simplicial_b_rep_creator_1a5f27edf1ef826c803d8b3ff2f0fea302>`(absl::Span<const :ref:`CornerDefinition<doxid-structgeode_1_1_corner_definition>`> definitions);
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_lines<doxid-classgeode_1_1_simplicial_b_rep_creator_1a6b512cd085f35523d6781a77f7fe7af8>`(
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> corners,
+			absl::Span<const :ref:`LineDefinition<doxid-structgeode_1_1_line_definition>`> definitions
+			);
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_surfaces<doxid-classgeode_1_1_simplicial_b_rep_creator_1aa2f18cb54d0d156ef220bfa9e7327299>`(
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> lines,
+			absl::Span<const :ref:`SurfaceDefinition<doxid-structgeode_1_1_surface_definition>`> definitions
+			);
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_surfaces<doxid-classgeode_1_1_simplicial_b_rep_creator_1afbe447ed0dd7179e0a27dcb7a86fe4e9>`(
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> corners,
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> lines,
+			absl::Span<const :ref:`SurfaceDefinition<doxid-structgeode_1_1_surface_definition>`> definitions
+			);
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_blocks<doxid-classgeode_1_1_simplicial_b_rep_creator_1a90400c92d2e2c0d1f928116653f94893>`(
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> surfaces,
+			absl::Span<const :ref:`BlockDefinition<doxid-structgeode_1_1_block_definition>`> definitions
+			);
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_blocks<doxid-classgeode_1_1_simplicial_b_rep_creator_1aac5f3a74b21d4c44eb1e857d66d60d12>`(
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> corners,
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> lines,
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> surfaces,
+			absl::Span<const :ref:`BlockDefinition<doxid-structgeode_1_1_block_definition>`> definitions
+			);
+	
+		std::vector<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`create_model_boundaries<doxid-classgeode_1_1_simplicial_b_rep_creator_1ac1afc0efea1d6ba47aa3b5dec7af53fe>`(
+			absl::Span<const :ref:`uuid<doxid-structgeode_1_1uuid>`> surfaces,
+			absl::Span<const :ref:`BoundaryDefinition<doxid-structgeode_1_1_boundary_definition>`> definitions
+			);
+	};

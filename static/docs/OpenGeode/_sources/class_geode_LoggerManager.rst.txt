@@ -1,0 +1,30 @@
+.. index:: pair: class; geode::LoggerManager
+.. _doxid-classgeode_1_1_logger_manager:
+
+class geode::LoggerManager
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <logger_manager.h>
+	
+	class LoggerManager
+	{
+	public:
+		// methods
+	
+		static void :target:`register_client<doxid-classgeode_1_1_logger_manager_1adaacbc39cd6fa2717308ba6b6154c00d>`(std::unique_ptr<:ref:`LoggerClient<doxid-classgeode_1_1_logger_client>`>&& client);
+		static void :target:`trace<doxid-classgeode_1_1_logger_manager_1adcc53898e7c4ea006a6e249d39c0652a>`(const std::string& message);
+		static void :target:`debug<doxid-classgeode_1_1_logger_manager_1a33a4df5b1ec26bc50374af05d7292aa6>`(const std::string& message);
+		static void :target:`info<doxid-classgeode_1_1_logger_manager_1a24b49076b1425ccbb07b369a84e12055>`(const std::string& message);
+		static void :target:`warn<doxid-classgeode_1_1_logger_manager_1afd098d4aea19782cbc60582d683566a5>`(const std::string& message);
+		static void :target:`error<doxid-classgeode_1_1_logger_manager_1a4b33e1c3bfbfe2c53e254f0f3a286625>`(const std::string& message);
+		static void :target:`critical<doxid-classgeode_1_1_logger_manager_1ae496cf4bdc023ca3c4ba835ce7b8d641>`(const std::string& message);
+	};

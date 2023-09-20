@@ -1,0 +1,38 @@
+.. index:: pair: class; geode::Relationships::ItemRangeIterator
+.. _doxid-classgeode_1_1_relationships_1_1_item_range_iterator:
+
+class geode::Relationships::ItemRangeIterator
+=============================================
+
+.. toctree::
+	:hidden:
+
+Range to iterate on all items of one component
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class ItemRangeIterator
+	{
+	public:
+		// construction
+	
+		:target:`ItemRangeIterator<doxid-classgeode_1_1_relationships_1_1_item_range_iterator_1ad08237474e352a2fc2c2be932b3c627f>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id);
+		:target:`ItemRangeIterator<doxid-classgeode_1_1_relationships_1_1_item_range_iterator_1a4ea8c565d829f50328ee59424ddb1fcd>`(ItemRangeIterator&& other);
+		:target:`ItemRangeIterator<doxid-classgeode_1_1_relationships_1_1_item_range_iterator_1a56c6b82c9f355692fb9423e73a218667>`(const ItemRangeIterator& other);
+
+		// methods
+	
+		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_item_range_iterator_1ad98ab0e8e52b173b9e81c6391a76a456>` (const ItemRangeIterator&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_relationships_1_1_item_range_iterator_1a3466e49ea9ab5b56550e9147aa309289>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_item_range_iterator_1a09a69715e68f0ee5b880d66ee3a63e16>` () const;
+	};
+
+	// direct descendants
+
+	class :ref:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range>`;
+	class :ref:`ItemRange<doxid-classgeode_1_1_relationships_1_1_item_range>`;
+	class :ref:`ItemLineRange<doxid-classgeode_1_1_section_1_1_item_line_range>`;

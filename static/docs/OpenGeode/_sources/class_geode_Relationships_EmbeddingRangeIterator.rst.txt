@@ -1,0 +1,43 @@
+.. index:: pair: class; geode::Relationships::EmbeddingRangeIterator
+.. _doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator:
+
+class geode::Relationships::EmbeddingRangeIterator
+==================================================
+
+.. toctree::
+	:hidden:
+
+Range to iterate on all embeddings of one component
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class EmbeddingRangeIterator
+	{
+	public:
+		// construction
+	
+		:target:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1ae4aeaf0f476e50f185f4a81db0045829>`(
+			const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships,
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
+			);
+	
+		:target:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1adb24dc98596fad808f886b84046cde02>`(EmbeddingRangeIterator&& other);
+		:target:`EmbeddingRangeIterator<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1adcc4db7df19d08933796e5684cb673cf>`(const EmbeddingRangeIterator& other);
+
+		// methods
+	
+		bool :target:`operator !=<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1aa065cd1dfaffb9262c4f17dc36edc1aa>` (const EmbeddingRangeIterator&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1aacf0b2e07b3aeca1a5c309d4451f9993>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :target:`operator *<doxid-classgeode_1_1_relationships_1_1_embedding_range_iterator_1a79b742b5617680cb6d31ec15e6aba5b8>` () const;
+	};
+
+	// direct descendants
+
+	class :ref:`EmbeddingBlockRange<doxid-classgeode_1_1_b_rep_1_1_embedding_block_range>`;
+	class :ref:`EmbeddingSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_embedding_surface_range>`;
+	class :ref:`EmbeddingRange<doxid-classgeode_1_1_relationships_1_1_embedding_range>`;
+	class :ref:`EmbeddingSurfaceRange<doxid-classgeode_1_1_section_1_1_embedding_surface_range>`;

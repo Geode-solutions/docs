@@ -1,0 +1,52 @@
+.. index:: pair: struct; geode::NNSearch::ColocatedInfo
+.. _doxid-structgeode_1_1_n_n_search_1_1_colocated_info:
+
+struct geode::NNSearch::ColocatedInfo
+=====================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <nn_search.h>
+	
+	struct ColocatedInfo
+	{
+		// fields
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`colocated_mapping<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad691f2a50681a331119fcb95b99b2709>`;
+		std::vector<:ref:`Point<doxid-classgeode_1_1_point>`<dimension>> :target:`unique_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1adcff181d86aff052f378e4c9f111afce>`;
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_unique_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a37c3af9afc03d1a1a49a28a7a6aeb1f5>`() const;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_colocated_points<doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1a2b80bd8ef464f4f5af3272e5fde117c1>`() const;
+	};
+.. _details-structgeode_1_1_n_n_search_1_1_colocated_info:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; colocated_mapping
+.. _doxid-structgeode_1_1_n_n_search_1_1_colocated_info_1ad691f2a50681a331119fcb95b99b2709:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> colocated_mapping
+
+This list has the size of the number of points in the tree. Each index is pointing to its new unique point stored in the unique_points vector.
+

@@ -1,0 +1,11 @@
+.. index:: pair: struct; geode::CRSTag
+.. _doxid-structgeode_1_1_c_r_s_tag:
+
+struct geode::CRSTag
+====================
+
+.. toctree::
+	:hidden:
+
+
+

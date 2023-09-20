@@ -1,0 +1,41 @@
+.. index:: pair: class; geode::detail::VertexCycle
+.. _doxid-classgeode_1_1detail_1_1_vertex_cycle:
+
+template class geode::detail::VertexCycle
+=========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vertex_cycle.h>
+	
+	template <typename Container>
+	class VertexCycle: public :ref:`geode::detail::OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`
+	{
+	public:
+		// construction
+	
+		:target:`VertexCycle<doxid-classgeode_1_1detail_1_1_vertex_cycle_1a6b16979a3ca88dd18c8f8876b7ee412c>`(Container vertices);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		const Container& :ref:`vertices<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle_1ae04bbe9cf42d9c8870ca2ad822312a10>`() const;
+		bool :ref:`is_opposite<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle_1aaf96ef67c25d54d96fcb460aeb7a87b9>`(const :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`& other) const;
+		bool :ref:`operator ==<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle_1a80e72ca7d68c32715ea69a8d68c49182>` (const :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`& other) const;
+		bool :ref:`operator !=<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle_1a96f1325491f61f0e1449b3622c81e209>` (const :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`& other) const;
+		bool :ref:`operator <<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle_1afad35ee28ab15883cde35d03051e35aa>` (const :ref:`OrientedVertexCycle<doxid-classgeode_1_1detail_1_1_oriented_vertex_cycle>`& other) const;
+

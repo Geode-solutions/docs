@@ -1,0 +1,246 @@
+.. index:: pair: class; geode::VertexIdentifierBuilder
+.. _doxid-classgeode_1_1_vertex_identifier_builder:
+
+class geode::VertexIdentifierBuilder
+====================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Class managing modification of :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` :ref:`More...<details-classgeode_1_1_vertex_identifier_builder>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vertex_identifier_builder.h>
+	
+	class VertexIdentifierBuilder
+	{
+	public:
+		// construction
+	
+		:target:`VertexIdentifierBuilder<doxid-classgeode_1_1_vertex_identifier_builder_1a60aec415668cdbcb974013185581a2ad>`(:ref:`VertexIdentifier<doxid-classgeode_1_1_vertex_identifier>`& vertex_identifier);
+
+		// methods
+	
+		template <typename MeshComponent>
+		void :ref:`register_mesh_component<doxid-classgeode_1_1_vertex_identifier_builder_1a8b4ab10edefe09a84fe1ebb36b533acc>`(const MeshComponent& component);
+	
+		template <typename MeshComponent>
+		void :ref:`unregister_mesh_component<doxid-classgeode_1_1_vertex_identifier_builder_1a80df0aaaa456029f413cf70374f9dacb>`(const MeshComponent& component);
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a4ef2cfb59a9670ebf8e781ebde233196>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`create_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a61b9f5f69cb29c6a070f377ef7669a36>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb);
+	
+		void :ref:`set_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a4fd3b6d5fcc4d76232a1a9571526f144>`(
+			:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>` component_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id
+			);
+	
+		void :ref:`unset_unique_vertex<doxid-classgeode_1_1_vertex_identifier_builder_1a8c5a85debfeb4a68ed7da8a4be73d4ba>`(
+			const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`& component_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id
+			);
+	
+		void :ref:`update_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1ac1b5b74dbb4a5168e694d3666fce69b7>`(
+			const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id,
+			absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new
+			);
+	
+		void :ref:`load_unique_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a666c161b0204f41f666cb8c61abd8221>`(absl::string_view directory);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_vertices<doxid-classgeode_1_1_vertex_identifier_builder_1a81453d117dc87b4f461021683ee42c61>`();
+	};
+
+	// direct descendants
+
+	class :ref:`TopologyBuilder<doxid-classgeode_1_1_topology_builder>`;
+.. _details-classgeode_1_1_vertex_identifier_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Class managing modification of :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>`
+
+Methods
+-------
+
+.. index:: pair: function; register_mesh_component
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a8b4ab10edefe09a84fe1ebb36b533acc:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <typename MeshComponent>
+	void register_mesh_component(const MeshComponent& component)
+
+Add a component in the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>`
+
+.. index:: pair: function; unregister_mesh_component
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a80df0aaaa456029f413cf70374f9dacb:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <typename MeshComponent>
+	void unregister_mesh_component(const MeshComponent& component)
+
+Remove a component from the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` and delete corresponding information (i.e. the attribute on component mesh).
+
+.. index:: pair: function; create_unique_vertex
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a4ef2cfb59a9670ebf8e781ebde233196:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_unique_vertex()
+
+Create an empty unique vertex.
+
+
+
+.. rubric:: Returns:
+
+Index of the created unique vertex.
+
+.. index:: pair: function; create_unique_vertices
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a61b9f5f69cb29c6a070f377ef7669a36:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` create_unique_vertices(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb)
+
+Create several empty unique vertices
+
+
+
+.. rubric:: Returns:
+
+Index of the first created unique vertex
+
+.. index:: pair: function; set_unique_vertex
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a4fd3b6d5fcc4d76232a1a9571526f144:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void set_unique_vertex(
+		:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>` component_vertex_id,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id
+		)
+
+Identify a component vertex to an existing unique vertex index.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- component_vertex_id
+
+		- Index of the vertex in the component.
+
+	*
+		- unique_vertex_id
+
+		- Unique vertex index.
+
+.. index:: pair: function; unset_unique_vertex
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a8c5a85debfeb4a68ed7da8a4be73d4ba:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void unset_unique_vertex(
+		const :ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`& component_vertex_id,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id
+		)
+
+Remove a component vertex to its unique vertex index.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- component_vertex_id
+
+		- Index of the vertex in the component.
+
+	*
+		- unique_vertex_id
+
+		- Unique vertex index.
+
+.. index:: pair: function; update_unique_vertices
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1ac1b5b74dbb4a5168e694d3666fce69b7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void update_unique_vertices(
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& component_id,
+		absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new
+		)
+
+Remove a component vertex to its unique vertex index.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- component_id
+
+		- :ref:`Component <doxid-classgeode_1_1_component>` unique index used to filter returned vertices.
+
+	*
+		- old2new
+
+		- Mapping between mesh component old vertex indices to new ones. Deleted vertices new index is NO_ID.
+
+.. index:: pair: function; load_unique_vertices
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a666c161b0204f41f666cb8c61abd8221:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void load_unique_vertices(absl::string_view directory)
+
+Load the :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` from a file.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- directory
+
+		- Folder containing the file that stores :ref:`VertexIdentifier <doxid-classgeode_1_1_vertex_identifier>` information.
+
+.. index:: pair: function; delete_isolated_vertices
+.. _doxid-classgeode_1_1_vertex_identifier_builder_1a81453d117dc87b4f461021683ee42c61:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> delete_isolated_vertices()
+
+Delete all unique vertices not associated with any component
+

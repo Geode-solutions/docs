@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::GraphInput
+.. _doxid-classgeode_1_1_graph_input:
+
+class geode::GraphInput
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <graph_input.h>
+	
+	class GraphInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`
+	{
+	public:
+		// typedefs
+	
+		typedef :ref:`Input<doxid-classgeode_1_1_input>`<std::unique_ptr<:ref:`Graph<doxid-classgeode_1_1_graph>`>, :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`> :target:`Base<doxid-classgeode_1_1_graph_input_1a390a81b510ead78bddf34c42f6e48600>`;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Object :ref:`InputData<doxid-classgeode_1_1_input_1a3825d3a2f87bc1958617c6c6b6655a1f>`;
+
+		// structs
+	
+		struct :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>`;
+
+		// methods
+	
+		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
+		virtual :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>` :ref:`check_missing_files<doxid-classgeode_1_1_input_1a2ffd68839c1e64431c5b38cc70ac869f>`() const;
+		virtual Object :ref:`read<doxid-classgeode_1_1_input_1a6caf553bf75b99577a4117d4780199e1>`(const Args&... args) = 0;
+

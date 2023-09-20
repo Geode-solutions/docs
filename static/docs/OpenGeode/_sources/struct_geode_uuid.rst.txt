@@ -1,0 +1,36 @@
+.. index:: pair: struct; geode::uuid
+.. _doxid-structgeode_1_1uuid:
+
+struct geode::uuid
+==================
+
+.. toctree::
+	:hidden:
+
+128-bit basic UUID type that allows comparison and sorting.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <uuid.h>
+	
+	struct uuid
+	{
+		// fields
+	
+		uint64_t :target:`ab<doxid-structgeode_1_1uuid_1a898cf3d7f428f461c1fa1352a2d25b11>`;
+		uint64_t :target:`cd<doxid-structgeode_1_1uuid_1a7c1895ea4fcae0ce2224f5cbdd0c7ed4>`;
+
+		// construction
+	
+		:target:`uuid<doxid-structgeode_1_1uuid_1a3ffeeb8abba14abbc05dba2c12932dae>`();
+		:target:`uuid<doxid-structgeode_1_1uuid_1a2bea17e8b1989819807fe630a97ed3cf>`(absl::string_view string);
+
+		// methods
+	
+		bool :target:`operator ==<doxid-structgeode_1_1uuid_1a25e7f7923b86d68997f4165049b3994d>` (const uuid& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1uuid_1a59231b9fdda45db08a33fd6b7bbcbadd>` (const uuid& other) const;
+		bool :target:`operator <<doxid-structgeode_1_1uuid_1aaeccc4fae72d607e742c53f0dee40754>` (const uuid& other) const;
+		std::string :target:`string<doxid-structgeode_1_1uuid_1a8774b767ecb2c423237c6e7b75baa0d9>`() const;
+	};

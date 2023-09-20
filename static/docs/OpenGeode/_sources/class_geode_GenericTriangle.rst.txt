@@ -1,0 +1,60 @@
+.. index:: pair: class; geode::GenericTriangle
+.. _doxid-classgeode_1_1_generic_triangle:
+
+template class geode::GenericTriangle
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangle.h>
+	
+	template <typename PointType, index_t dimension>
+	class GenericTriangle
+	{
+	public:
+		// construction
+	
+		:target:`GenericTriangle<doxid-classgeode_1_1_generic_triangle_1a46c2fbe81e88b7149cfe4213c63fe776>`(PointType p0, PointType p1, PointType p2);
+		:target:`GenericTriangle<doxid-classgeode_1_1_generic_triangle_1aa76bbc017d0b9db51e3cd8ed31eb47e7>`(const GenericTriangle<PointType, dimension>& other);
+		:target:`GenericTriangle<doxid-classgeode_1_1_generic_triangle_1ac5c1d08d471330ef791b758d8f2b26b2>`(GenericTriangle<PointType, dimension>&& other);
+
+		// methods
+	
+		GenericTriangle<PointType, dimension>& :target:`operator =<doxid-classgeode_1_1_generic_triangle_1ab19ce8ee65eaaa6065f9a605c7277e87>` (const GenericTriangle<PointType, dimension>& other);
+		GenericTriangle<PointType, dimension>& :target:`operator =<doxid-classgeode_1_1_generic_triangle_1a797cf52d6d460e82dcaa256ba390c9bf>` (GenericTriangle<PointType, dimension>&& other);
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`barycenter<doxid-classgeode_1_1_generic_triangle_1a44a95a7325aac0dc67f25a6ca9e9cae0>`() const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, absl::optional<Vector3D>>::type :target:`normal<doxid-classgeode_1_1_generic_triangle_1a2dc5e608900dcec7e8f33a17ca237197>`() const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, absl::optional<:ref:`Plane<doxid-classgeode_1_1_plane>`>>::type :target:`plane<doxid-classgeode_1_1_generic_triangle_1a72aaa9f875b362c0098b545b83e5400e>`() const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, absl::optional<:ref:`OwnerPlane<doxid-classgeode_1_1_owner_plane>`>>::type :target:`owner_plane<doxid-classgeode_1_1_generic_triangle_1a2267de086edff6ebff782145f595facc>`() const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, absl::optional<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`>>::type :target:`pivot<doxid-classgeode_1_1_generic_triangle_1a4f64457d591db43da2b0c1a0a57ed223>`() const;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, absl::optional<std::pair<:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, Vector3D>>>::type :target:`pivot_and_normal<doxid-classgeode_1_1_generic_triangle_1a42bbe33c540e866cb42545d356604f1a>`() const;
+	
+		void :target:`set_point<doxid-classgeode_1_1_generic_triangle_1a2be2ab311cfd6a7cd28da74f0addecf3>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, PointType point);
+		const std::array<PointType, 3>& :target:`vertices<doxid-classgeode_1_1_generic_triangle_1ad9281b6fcbd2c41d0a4dd89e4208e43c>`() const;
+		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :target:`bounding_box<doxid-classgeode_1_1_generic_triangle_1a8758562d665daaffc5cd431da00ea29d>`() const;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`;
+
+	template <index_t dimension>
+	class :ref:`Triangle<doxid-classgeode_1_1_triangle>`;

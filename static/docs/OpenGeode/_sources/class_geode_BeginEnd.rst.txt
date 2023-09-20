@@ -1,0 +1,30 @@
+.. index:: pair: class; geode::BeginEnd
+.. _doxid-classgeode_1_1_begin_end:
+
+template class geode::BeginEnd
+==============================
+
+.. toctree::
+	:hidden:
+
+Begin and end methods for range-based iteration on custom range. See derived classes for usage.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <range.h>
+	
+	template <typename Type>
+	class BeginEnd
+	{
+	public:
+		// construction
+	
+		:target:`BeginEnd<doxid-classgeode_1_1_begin_end_1a2374f7a9576a7f89ef93161c5f1eecb2>`(const Type& type);
+
+		// methods
+	
+		constexpr const Type& :target:`begin<doxid-classgeode_1_1_begin_end_1a1790543f914e3dad60b208d2490e106d>`() const;
+		constexpr const Type& :target:`end<doxid-classgeode_1_1_begin_end_1aa1246096b4c557291eb800542324a701>`() const;
+	};

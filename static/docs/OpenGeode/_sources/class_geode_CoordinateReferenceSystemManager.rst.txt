@@ -1,0 +1,55 @@
+.. index:: pair: class; geode::CoordinateReferenceSystemManager
+.. _doxid-classgeode_1_1_coordinate_reference_system_manager:
+
+template class geode::CoordinateReferenceSystemManager
+======================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <coordinate_reference_system_manager.h>
+	
+	template <index_t dimension>
+	class CoordinateReferenceSystemManager
+	{
+	public:
+		// construction
+	
+		:target:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager_1a5656c815482f5dfc5a2a08b5feca8a2b>`();
+		:target:`CoordinateReferenceSystemManager<doxid-classgeode_1_1_coordinate_reference_system_manager_1a3da41d63e319a58c07825ff367abd51a>`(CoordinateReferenceSystemManager&& other);
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_coordinate_reference_systems<doxid-classgeode_1_1_coordinate_reference_system_manager_1a402986e7d377d98b658da3895185baca>`() const;
+		const :ref:`CoordinateReferenceSystem<doxid-classgeode_1_1_coordinate_reference_system>`<dimension>& :target:`find_coordinate_reference_system<doxid-classgeode_1_1_coordinate_reference_system_manager_1a755759386798bdf6183891a82612b2d9>`(absl::string_view name) const;
+		const :ref:`CoordinateReferenceSystem<doxid-classgeode_1_1_coordinate_reference_system>`<dimension>& :target:`active_coordinate_reference_system<doxid-classgeode_1_1_coordinate_reference_system_manager_1a45f3dfee11b089b41b5791c4f30d5d6c>`() const;
+		absl::string_view :target:`active_coordinate_reference_system_name<doxid-classgeode_1_1_coordinate_reference_system_manager_1a9e111bf8c61b41a9312ade7f1c0529c4>`() const;
+		absl::FixedArray<absl::string_view> :target:`coordinate_reference_system_names<doxid-classgeode_1_1_coordinate_reference_system_manager_1aed8a145e203ca78d2cf6b91c1cc6827b>`() const;
+		bool :target:`coordinate_reference_system_exists<doxid-classgeode_1_1_coordinate_reference_system_manager_1ae51b318cdcfba0b606dbe6a002411ab7>`(absl::string_view name) const;
+	
+		void :target:`register_coordinate_reference_system<doxid-classgeode_1_1_coordinate_reference_system_manager_1a5a94425a2283b7c7da99d6527462d591>`(
+			absl::string_view name,
+			std::shared_ptr<:ref:`CoordinateReferenceSystem<doxid-classgeode_1_1_coordinate_reference_system>`<dimension>>&& crs,
+			CRSManagerKey
+			);
+	
+		void :target:`delete_coordinate_reference_system<doxid-classgeode_1_1_coordinate_reference_system_manager_1ad09698c15441f390883eeed5c1d786b9>`(absl::string_view name, CRSManagerKey);
+	
+		void :target:`set_active_coordinate_reference_system<doxid-classgeode_1_1_coordinate_reference_system_manager_1a496bf075e75a2a674a0936b7a6a483c5>`(
+			absl::string_view name,
+			CRSManagerKey
+			);
+	
+		:ref:`CoordinateReferenceSystem<doxid-classgeode_1_1_coordinate_reference_system>`<dimension>& :target:`modifiable_active_coordinate_reference_system<doxid-classgeode_1_1_coordinate_reference_system_manager_1a72aa96bc654e00c5ece4e920e484bf04>`(CRSManagerKey);
+	
+		:ref:`CoordinateReferenceSystem<doxid-classgeode_1_1_coordinate_reference_system>`<dimension>& :target:`modifiable_coordinate_reference_system<doxid-classgeode_1_1_coordinate_reference_system_manager_1acd651a5e0d6579c07051a0090e8cfdcc>`(
+			absl::string_view name,
+			CRSManagerKey
+			);
+	};

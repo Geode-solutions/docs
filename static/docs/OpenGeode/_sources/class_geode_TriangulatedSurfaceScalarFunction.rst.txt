@@ -1,0 +1,82 @@
+.. index:: pair: class; geode::TriangulatedSurfaceScalarFunction
+.. _doxid-classgeode_1_1_triangulated_surface_scalar_function:
+
+template class geode::TriangulatedSurfaceScalarFunction
+=======================================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_scalar_function.h>
+	
+	template <index_t dimension>
+	class TriangulatedSurfaceScalarFunction
+	{
+	public:
+		// construction
+	
+		:target:`TriangulatedSurfaceScalarFunction<doxid-classgeode_1_1_triangulated_surface_scalar_function_1a033880b2d4321912d7d78ec72d452955>`(TriangulatedSurfaceScalarFunction<dimension>&& other);
+
+		// methods
+	
+		void :target:`set_value<doxid-classgeode_1_1_triangulated_surface_scalar_function_1a1757823a583eef49af8dc6fafba16da3>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index, double value);
+		double :target:`value<doxid-classgeode_1_1_triangulated_surface_scalar_function_1acdac7c279993c0f71ced09ebe2efa98f>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_index) const;
+		double :target:`value<doxid-classgeode_1_1_triangulated_surface_scalar_function_1ab49ad8160206b92654be8ef9af0fa46b>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id) const;
+	
+		static TriangulatedSurfaceScalarFunction<dimension> :ref:`create<doxid-classgeode_1_1_triangulated_surface_scalar_function_1ab8229297fd562c3d966683f5f9e47794>`(
+			const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& solid,
+			absl::string_view function_name,
+			double value
+			);
+	
+		static TriangulatedSurfaceScalarFunction<dimension> :ref:`find<doxid-classgeode_1_1_triangulated_surface_scalar_function_1a993d9b60277fa53eeea85f76aace540d>`(
+			const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& solid,
+			absl::string_view function_name
+			);
+	};
+.. _details-classgeode_1_1_triangulated_surface_scalar_function:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_triangulated_surface_scalar_function_1ab8229297fd562c3d966683f5f9e47794:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static TriangulatedSurfaceScalarFunction<dimension> create(
+		const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& solid,
+		absl::string_view function_name,
+		double value
+		)
+
+Create a new object function from a :ref:`TriangulatedSurface <doxid-classgeode_1_1_triangulated_surface>`, a name, and a value. Throws an exception if an attribute with the same name exists.
+
+.. index:: pair: function; find
+.. _doxid-classgeode_1_1_triangulated_surface_scalar_function_1a993d9b60277fa53eeea85f76aace540d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static TriangulatedSurfaceScalarFunction<dimension> find(
+		const :ref:`TriangulatedSurface<doxid-classgeode_1_1_triangulated_surface>`<dimension>& solid,
+		absl::string_view function_name
+		)
+
+Finds an object function that already exists in the given :ref:`TriangulatedSurface <doxid-classgeode_1_1_triangulated_surface>`, from its given name. Throws an exception if no attribute with the same name exists.
+

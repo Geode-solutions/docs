@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::UnzipFile
+.. _doxid-classgeode_1_1_unzip_file:
+
+class geode::UnzipFile
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <zip_file.h>
+	
+	class UnzipFile
+	{
+	public:
+		// construction
+	
+		:target:`UnzipFile<doxid-classgeode_1_1_unzip_file_1a6a12099568d585ac72e6405adcc8776d>`(absl::string_view file, absl::string_view unarchive_temp_filename);
+
+		// methods
+	
+		void :target:`extract_all<doxid-classgeode_1_1_unzip_file_1ab498d1cf332e9533c2d15579251c33b6>`() const;
+		std::string :target:`directory<doxid-classgeode_1_1_unzip_file_1ac550ecc262a8cbe03a5ad164a0fd507e>`() const;
+	};

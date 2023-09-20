@@ -1,0 +1,53 @@
+.. index:: pair: class; geode::OpenGeodeBRepInput
+.. _doxid-classgeode_1_1_open_geode_b_rep_input:
+
+class geode::OpenGeodeBRepInput
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geode_brep_input.h>
+	
+	class OpenGeodeBRepInput: public :ref:`geode::BRepInput<doxid-classgeode_1_1_b_rep_input>`
+	{
+	public:
+		// construction
+	
+		:target:`OpenGeodeBRepInput<doxid-classgeode_1_1_open_geode_b_rep_input_1a557601d9497b6e69967891bcc4c3bb8a>`(absl::string_view filename);
+
+		// methods
+	
+		void :target:`load_brep_files<doxid-classgeode_1_1_open_geode_b_rep_input_1a9795ea50a744db240778d86c1d3105bb>`(:ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, absl::string_view directory);
+		:ref:`BRep<doxid-classgeode_1_1_b_rep>` :target:`read<doxid-classgeode_1_1_open_geode_b_rep_input_1adf55c958f9c636ec8877ad606f2a142d>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_b_rep_input_1a65ddd1db71f2697552868c84e22cef16>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Object :ref:`InputData<doxid-classgeode_1_1_input_1a3825d3a2f87bc1958617c6c6b6655a1f>`;
+		typedef :ref:`Input<doxid-classgeode_1_1_input>`<:ref:`BRep<doxid-classgeode_1_1_b_rep>`> :ref:`Base<doxid-classgeode_1_1_b_rep_input_1ac1eacd5355ccb87818d50de9ce72513a>`;
+
+		// structs
+	
+		struct :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>`;
+
+		// methods
+	
+		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
+		virtual :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>` :ref:`check_missing_files<doxid-classgeode_1_1_input_1a2ffd68839c1e64431c5b38cc70ac869f>`() const;
+		virtual Object :ref:`read<doxid-classgeode_1_1_input_1a6caf553bf75b99577a4117d4780199e1>`(const Args&... args) = 0;
+

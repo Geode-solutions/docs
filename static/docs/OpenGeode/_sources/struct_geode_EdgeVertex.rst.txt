@@ -1,0 +1,73 @@
+.. index:: pair: struct; geode::EdgeVertex
+.. _doxid-structgeode_1_1_edge_vertex:
+
+struct geode::EdgeVertex
+========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+This struct represents a graph edge endpoint :ref:`More...<details-structgeode_1_1_edge_vertex>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <graph.h>
+	
+	struct EdgeVertex
+	{
+		// fields
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :ref:`edge_id<doxid-structgeode_1_1_edge_vertex_1a4c65692bb29333ba1aa7b1da7848b40e>` { NO_ID };
+		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :ref:`vertex_id<doxid-structgeode_1_1_edge_vertex_1a046d5bed7867842cbd1ebf451b1ef171>` { NO_LID };
+
+		// construction
+	
+		:target:`EdgeVertex<doxid-structgeode_1_1_edge_vertex_1a9070623605e1d3b154a866fdc1673195>`();
+		:target:`EdgeVertex<doxid-structgeode_1_1_edge_vertex_1a4f5a8587d9267c3a4070e43a2d31da14>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id_in, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id_in);
+
+		// methods
+	
+		bool :target:`operator ==<doxid-structgeode_1_1_edge_vertex_1a7d4290000ba81123b0294227fcc71414>` (const EdgeVertex& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1_edge_vertex_1a8ef03c3a07a86be41c625f141b678473>` (const EdgeVertex& other) const;
+		bool :target:`operator <<doxid-structgeode_1_1_edge_vertex_1a1566d93a926b26840ee804db9439c5dc>` (const EdgeVertex& other) const;
+		EdgeVertex :target:`opposite<doxid-structgeode_1_1_edge_vertex_1a7ce2d0837039c795024f11f4db861114>`() const;
+		std::string :target:`string<doxid-structgeode_1_1_edge_vertex_1a272d68d04c2e20bbeb92a44236a80f6d>`() const;
+	
+		template <typename Archive>
+		void :target:`serialize<doxid-structgeode_1_1_edge_vertex_1abe11699079e85d7e3a821897fd2e2fc2>`(Archive& archive);
+	};
+.. _details-structgeode_1_1_edge_vertex:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This struct represents a graph edge endpoint
+
+Fields
+------
+
+.. index:: pair: variable; edge_id
+.. _doxid-structgeode_1_1_edge_vertex_1a4c65692bb29333ba1aa7b1da7848b40e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_id { NO_ID }
+
+Index of the edge
+
+.. index:: pair: variable; vertex_id
+.. _doxid-structgeode_1_1_edge_vertex_1a046d5bed7867842cbd1ebf451b1ef171:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` vertex_id { NO_LID }
+
+Identification of the edge endpoint (0 or 1)
+

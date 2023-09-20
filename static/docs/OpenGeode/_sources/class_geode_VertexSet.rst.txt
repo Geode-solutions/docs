@@ -1,0 +1,126 @@
+.. index:: pair: class; geode::VertexSet
+.. _doxid-classgeode_1_1_vertex_set:
+
+class geode::VertexSet
+======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Interface class to represent set of vertices. :ref:`More...<details-classgeode_1_1_vertex_set>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vertex_set.h>
+	
+	class VertexSet: public :ref:`geode::Identifier<doxid-classgeode_1_1_identifier>`
+	{
+	public:
+		// typedefs
+	
+		typedef :ref:`VertexSetBuilder<doxid-classgeode_1_1_vertex_set_builder>` :target:`Builder<doxid-classgeode_1_1_vertex_set_1ad63688e2a30d4c7cb5865df73012f9b4>`;
+
+		// methods
+	
+		static std::unique_ptr<VertexSet> :ref:`create<doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc>`();
+		static std::unique_ptr<VertexSet> :ref:`create<doxid-classgeode_1_1_vertex_set_1a4cedcfab9f71d2cbcde7d049d0556d21>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl);
+		static :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name_static<doxid-classgeode_1_1_vertex_set_1adde63eb22b6564fd2ffd20bb374c3996>`();
+		std::unique_ptr<VertexSet> :target:`clone<doxid-classgeode_1_1_vertex_set_1a59f8cdf17a798e4746e3b90baa8be080>`() const;
+		virtual absl::string_view :target:`native_extension<doxid-classgeode_1_1_vertex_set_1adee799d7c11a4401041b9da48fcbd86a>`() const = 0;
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`nb_vertices<doxid-classgeode_1_1_vertex_set_1a54faa6fb3f4a9086c44452058dc3919e>`() const;
+		:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`vertex_attribute_manager<doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d>`() const;
+		virtual :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` :target:`impl_name<doxid-classgeode_1_1_vertex_set_1a27db2667d140cc8f6645531788765815>`() const = 0;
+		virtual :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` :target:`type_name<doxid-classgeode_1_1_vertex_set_1ae19dce429c1353a4616424fa9c1076e1>`() const = 0;
+	};
+
+	// direct descendants
+
+	class :ref:`Graph<doxid-classgeode_1_1_graph>`;
+	class :ref:`OpenGeodeVertexSet<doxid-classgeode_1_1_open_geode_vertex_set>`;
+
+	template <index_t dimension>
+	class :ref:`PointSet<doxid-classgeode_1_1_point_set>`;
+
+	template <index_t dimension>
+	class :ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceMesh<doxid-classgeode_1_1_surface_mesh>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
+
+		// methods
+	
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`id<doxid-classgeode_1_1_identifier_1a32f0ba602aaca6856fc6858092326ab1>`() const;
+		absl::string_view :ref:`name<doxid-classgeode_1_1_identifier_1a7be1aea6e7c78e4844040a6d972614a8>`() const;
+		void :ref:`save_identifier<doxid-classgeode_1_1_identifier_1a32e167673aab3d16cdd19da604293288>`(absl::string_view directory) const;
+		void :ref:`set_id<doxid-classgeode_1_1_identifier_1a2d879fc9cc8e7a3c426191c20d801080>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& unique_id, IdentifierKey);
+		void :ref:`set_name<doxid-classgeode_1_1_identifier_1a99869829b2e1db630aee0a8a25d7fe33>`(absl::string_view name, IdentifierKey);
+		void :ref:`load_identifier<doxid-classgeode_1_1_identifier_1a52e5c81028516f44a47b3fd6ca7211b7>`(absl::string_view directory, IdentifierKey);
+
+.. _details-classgeode_1_1_vertex_set:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Interface class to represent set of vertices.
+
+Methods
+-------
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_vertex_set_1a290e8167ed522d6c5cb70bae169cabcc:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static std::unique_ptr<VertexSet> create()
+
+Create a new :ref:`VertexSet <doxid-classgeode_1_1_vertex_set>`
+
+.. index:: pair: function; create
+.. _doxid-classgeode_1_1_vertex_set_1a4cedcfab9f71d2cbcde7d049d0556d21:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	static std::unique_ptr<VertexSet> create(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl)
+
+Create a new :ref:`VertexSet <doxid-classgeode_1_1_vertex_set>` using a specified data structure.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- impl
+
+		- Data structure implementation
+
+.. index:: pair: function; vertex_attribute_manager
+.. _doxid-classgeode_1_1_vertex_set_1aee0082194a8fb2660fb187687de79b2d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& vertex_attribute_manager() const
+
+Access to the attribute manager. Attributes are associated with vertices.
+

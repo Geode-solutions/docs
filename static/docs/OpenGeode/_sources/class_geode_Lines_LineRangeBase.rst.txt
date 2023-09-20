@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::Lines::LineRangeBase
+.. _doxid-classgeode_1_1_lines_1_1_line_range_base:
+
+class geode::Lines::LineRangeBase
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <lines.h>
+	
+	class LineRangeBase
+	{
+	public:
+		// methods
+	
+		bool :target:`operator !=<doxid-classgeode_1_1_lines_1_1_line_range_base_1ae20e0c2e193ec1ad8a6c9ff9a6d61656>` (const LineRangeBase&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_lines_1_1_line_range_base_1a5e87d07af3f242a4c5255283de83172b>` ();
+	};
+
+	// direct descendants
+
+	class :ref:`LineRange<doxid-classgeode_1_1_lines_1_1_line_range>`;

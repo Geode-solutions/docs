@@ -1,0 +1,45 @@
+.. index:: pair: class; geode::BRep::ItemSurfaceRange
+.. _doxid-classgeode_1_1_b_rep_1_1_item_surface_range:
+
+class geode::BRep::ItemSurfaceRange
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep.h>
+	
+	class ItemSurfaceRange: public :ref:`geode::Relationships::ItemRangeIterator<doxid-classgeode_1_1_relationships_1_1_item_range_iterator>`
+	{
+	public:
+		// construction
+	
+		:target:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range_1afc44ab59a86acd94a93922bb66b1f193>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const ModelBoundary3D& boundary);
+		:target:`ItemSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_item_surface_range_1a111d74b3fb430336711e95699cc2ca67>`(const ItemSurfaceRange& range);
+
+		// methods
+	
+		const ItemSurfaceRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_item_surface_range_1a1d6f88f1b7e1c0088ed7236bb07fdc1b>`() const;
+		const ItemSurfaceRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_item_surface_range_1a3364aa683208e2a161c48995debf0140>`() const;
+		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_item_surface_range_1a928e4a0f84cec2b57354ab4d445b3825>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_item_range_iterator_1ad98ab0e8e52b173b9e81c6391a76a456>` (const :ref:`ItemRangeIterator<doxid-classgeode_1_1_relationships_1_1_item_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_item_range_iterator_1a3466e49ea9ab5b56550e9147aa309289>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_item_range_iterator_1a09a69715e68f0ee5b880d66ee3a63e16>` () const;
+

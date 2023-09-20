@@ -1,0 +1,51 @@
+.. index:: pair: class; geode::MeshBuilderFactory
+.. _doxid-classgeode_1_1_mesh_builder_factory:
+
+class geode::MeshBuilderFactory
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <mesh_builder_factory.h>
+	
+	class MeshBuilderFactory: public :ref:`geode::Factory<doxid-classgeode_1_1_factory>`
+	{
+	public:
+		// methods
+	
+		template <typename MeshBuilder>
+		static void :target:`register_mesh_builder<doxid-classgeode_1_1_mesh_builder_factory_1abd93916ef7617388e837a7b9c6555d1e>`(:ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key);
+	
+		template <typename MeshBuilder, typename Mesh>
+		static std::unique_ptr<MeshBuilder> :target:`create_mesh_builder<doxid-classgeode_1_1_mesh_builder_factory_1a841b8c316a8676fce036495d575a925f>`(Mesh& mesh);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef BaseClassType :ref:`BaseClass<doxid-classgeode_1_1_factory_1afdad9612175477b9840a761f44046243>`;
+		typedef typename std::add_pointer<std::unique_ptr<:ref:`BaseClass<doxid-classgeode_1_1_factory_1afdad9612175477b9840a761f44046243>`>(Args...)>::type :ref:`Creator<doxid-classgeode_1_1_factory_1ae9159f1b5e4d0074da0b8a1abd831474>`;
+		typedef absl::flat_hash_map<Key, :ref:`Creator<doxid-classgeode_1_1_factory_1ae9159f1b5e4d0074da0b8a1abd831474>`> :ref:`FactoryStore<doxid-classgeode_1_1_factory_1a81e116a58348ee266505578535e60689>`;
+
+		// methods
+	
+		template <typename DerivedClass>
+		static void :ref:`register_creator<doxid-classgeode_1_1_factory_1a87b0b83b44b8955a61ec99c3eb829276>`(Key key);
+	
+		static std::unique_ptr<:ref:`BaseClass<doxid-classgeode_1_1_factory_1afdad9612175477b9840a761f44046243>`> :ref:`create<doxid-classgeode_1_1_factory_1a7308574f48f3c259f0c7cbbb843fb145>`(const Key& key, Args... args);
+		static absl::FixedArray<Key> :ref:`list_creators<doxid-classgeode_1_1_factory_1a691f42d43cac97473a02fdd9ae6f80ed>`();
+		static bool :ref:`has_creator<doxid-classgeode_1_1_factory_1aabb2b94d68778db67586c69ebed3735b>`(const Key& key);
+

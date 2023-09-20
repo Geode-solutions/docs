@@ -1,0 +1,30 @@
+.. index:: pair: class; geode::detail::GraphIdentifier
+.. _doxid-classgeode_1_1detail_1_1_graph_identifier:
+
+class geode::detail::GraphIdentifier
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_identifier.h>
+	
+	class GraphIdentifier
+	{
+	public:
+		// construction
+	
+		:target:`GraphIdentifier<doxid-classgeode_1_1detail_1_1_graph_identifier_1a6a375f94ee9cf5b38fb36bcf76315c66>`(const :ref:`Graph<doxid-classgeode_1_1_graph>`& graph);
+
+		// methods
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`identify_vertices<doxid-classgeode_1_1detail_1_1_graph_identifier_1ac368ae0f206c6faa06ad172db6bc11c8>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`vertex_identifier<doxid-classgeode_1_1detail_1_1_graph_identifier_1afb427762c415788b5d235a2f60b8057e>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex_id) const;
+		absl::FixedArray<std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`>> :target:`identified_connected_vertices<doxid-classgeode_1_1detail_1_1_graph_identifier_1a0386e6718a51555e2f7bd268be1aab39>`() const;
+	};

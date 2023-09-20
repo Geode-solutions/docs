@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::TIndices
+.. _doxid-classgeode_1_1_t_indices:
+
+template class geode::TIndices
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <range.h>
+	
+	template <typename Type>
+	class TIndices: public :ref:`geode::BaseRange<doxid-classgeode_1_1_base_range>`
+	{
+	public:
+		// construction
+	
+		template <typename Container>
+		:target:`TIndices<doxid-classgeode_1_1_t_indices_1a0ce1c01b3bff9eb6d021b7667bc7a063>`(const Container& container);
+
+		// methods
+	
+		constexpr const TIndices<Type>& :target:`begin<doxid-classgeode_1_1_t_indices_1aeb1eef157a9adbae1369d52e4968d657>`() const;
+		constexpr const TIndices<Type>& :target:`end<doxid-classgeode_1_1_t_indices_1a624c61c0bc10e97017e8979b225ad18c>`() const;
+		constexpr Type :target:`operator *<doxid-classgeode_1_1_t_indices_1ae6e242e9146b1ea74afd7bac664e1f68>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		constexpr bool :ref:`operator !=<doxid-classgeode_1_1_base_range_1a69556080208d11a4b31531cae37b4720>` (const :ref:`BaseRange<doxid-classgeode_1_1_base_range>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_base_range_1afe90da29578e4e5022ffc71598163bfe>` ();
+		constexpr Type :ref:`current<doxid-classgeode_1_1_base_range_1a940f5c94e6bc7bfab7ee89cf01e1570c>`() const;
+

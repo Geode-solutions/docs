@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::BRep::InternalSurfaceRange
+.. _doxid-classgeode_1_1_b_rep_1_1_internal_surface_range:
+
+class geode::BRep::InternalSurfaceRange
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep.h>
+	
+	class InternalSurfaceRange: public :ref:`geode::Relationships::InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`
+	{
+	public:
+		// construction
+	
+		:target:`InternalSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a46d8f9f49c39e38ac748f7c13afcda6d>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Block3D& block);
+		:target:`InternalSurfaceRange<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a2317ea0bebf3f2c361113ce2d6e5be34>`(const InternalSurfaceRange& range);
+
+		// methods
+	
+		const InternalSurfaceRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a7b41df0ddd4d5349b1a3c26b2c367fe6>`() const;
+		const InternalSurfaceRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a5f130ce91a08bace75af4ff5457bc8a6>`() const;
+		void :target:`operator ++<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a58dcf818dc4fc2b2f483002650e8d9f8>` ();
+		const Surface3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_internal_surface_range_1a6ce2983ce402ce522a91525071db06e4>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a4ec071994352d9003b056190a43a3d3b>` (const :ref:`InternalRangeIterator<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1ad9eef320c41a11ea8882af92030d95ae>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_internal_range_iterator_1a5561d5ab9cc43df4bd56d0722cc92ed2>` () const;
+

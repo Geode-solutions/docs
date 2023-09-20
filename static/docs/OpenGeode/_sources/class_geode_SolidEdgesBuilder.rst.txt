@@ -1,0 +1,70 @@
+.. index:: pair: class; geode::SolidEdgesBuilder
+.. _doxid-classgeode_1_1_solid_edges_builder:
+
+template class geode::SolidEdgesBuilder
+=======================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Interface class to represent the builder of a :ref:`SolidEdges <doxid-classgeode_1_1_solid_edges>` :ref:`More...<details-classgeode_1_1_solid_edges_builder>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <solid_edges_builder.h>
+	
+	template <index_t dimension>
+	class SolidEdgesBuilder
+	{
+	public:
+		// construction
+	
+		:target:`SolidEdgesBuilder<doxid-classgeode_1_1_solid_edges_builder_1a54f1f8ed28999af88233c4c602ebfb06>`(:ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`<dimension>& edges);
+
+		// methods
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`delete_isolated_edges<doxid-classgeode_1_1_solid_edges_builder_1a6606680f5858772118706ab994509fea>`();
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`find_or_create_edge<doxid-classgeode_1_1_solid_edges_builder_1a23b9f469bfc7e5521f7a47e3cdef8fe5>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices);
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`delete_edges<doxid-classgeode_1_1_solid_edges_builder_1a8b5c53ecaf9b474f07a82ce6ae323efd>`(const std::vector<bool>& to_delete);
+		void :target:`remove_edge<doxid-classgeode_1_1_solid_edges_builder_1ac31f58cfe7730d942aadd5e4ce182e6f>`(std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices);
+	
+		void :target:`update_edge_vertex<doxid-classgeode_1_1_solid_edges_builder_1acd12b544e54752b81bda4663572d1082>`(
+			std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> edge_vertices,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` edge_vertex_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` new_vertex_id
+			);
+	
+		void :target:`update_edge_vertices<doxid-classgeode_1_1_solid_edges_builder_1a9db9b56141685336cba70199ca8c1911>`(absl::Span<const :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> old2new);
+		void :target:`copy<doxid-classgeode_1_1_solid_edges_builder_1abe03eac58868ec826de1b04e2441367f>`(const :ref:`SolidEdges<doxid-classgeode_1_1_solid_edges>`<dimension>& edges);
+	};
+.. _details-classgeode_1_1_solid_edges_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Interface class to represent the builder of a :ref:`SolidEdges <doxid-classgeode_1_1_solid_edges>`
+
+Methods
+-------
+
+.. index:: pair: function; delete_isolated_edges
+.. _doxid-classgeode_1_1_solid_edges_builder_1a6606680f5858772118706ab994509fea:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> delete_isolated_edges()
+
+Delete all the isolated edges (not used as polyhedron edges)
+
+
+
+.. rubric:: Returns:
+
+the mapping between old edge indices to new ones. Deleted edges new index is NO_ID
+

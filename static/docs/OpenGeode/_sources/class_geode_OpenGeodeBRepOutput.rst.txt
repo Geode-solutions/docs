@@ -1,0 +1,44 @@
+.. index:: pair: class; geode::OpenGeodeBRepOutput
+.. _doxid-classgeode_1_1_open_geode_b_rep_output:
+
+class geode::OpenGeodeBRepOutput
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geode_brep_output.h>
+	
+	class OpenGeodeBRepOutput: public :ref:`geode::BRepOutput<doxid-classgeode_1_1_b_rep_output>`
+	{
+	public:
+		// construction
+	
+		:target:`OpenGeodeBRepOutput<doxid-classgeode_1_1_open_geode_b_rep_output_1a322188c22cf7b93122464d8bcf2d08dc>`(absl::string_view filename);
+
+		// methods
+	
+		void :target:`archive_brep_files<doxid-classgeode_1_1_open_geode_b_rep_output_1a2f5a2da4bd31fea6d528587d802f7fcf>`(const :ref:`ZipFile<doxid-classgeode_1_1_zip_file>`& zip_writer) const;
+		void :target:`save_brep_files<doxid-classgeode_1_1_open_geode_b_rep_output_1ae291a18858b0bafb451f676ec5b78fef>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, absl::string_view directory) const;
+		virtual void :target:`write<doxid-classgeode_1_1_open_geode_b_rep_output_1a715af6795eafe1fe6421aee0ac7bd876>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep) const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_b_rep_output_1a66279fd109bad62575e450efad83c12b>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
+		virtual void :ref:`write<doxid-classgeode_1_1_output_1accd2a5608104c26f189e83840d9f50a5>`(const Object& object) const = 0;
+

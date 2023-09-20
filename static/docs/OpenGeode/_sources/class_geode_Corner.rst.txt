@@ -1,0 +1,62 @@
+.. index:: pair: class; geode::Corner
+.. _doxid-classgeode_1_1_corner:
+
+template class geode::Corner
+============================
+
+.. toctree::
+	:hidden:
+
+Geometric component describing a :ref:`Point <doxid-classgeode_1_1_point>`. This component is described by a mesh.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <corner.h>
+	
+	template <index_t dimension>
+	class Corner: public :ref:`geode::Component<doxid-classgeode_1_1_component>`
+	{
+	public:
+		// construction
+	
+		:target:`Corner<doxid-classgeode_1_1_corner_1a9f833b20a91a3825e3f978448678f6fa>`(Corner&& other);
+		:target:`Corner<doxid-classgeode_1_1_corner_1a52dc4765ed08665987a89df771b818c9>`(CornersKey);
+		:target:`Corner<doxid-classgeode_1_1_corner_1a96f820fc37b1105620e71f779a81ba8f>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl, CornersKey);
+
+		// methods
+	
+		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_corner_1aac623e25b471564400e54115a0a463e4>`() const;
+		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_corner_1a340e953e76f408576deb357224752562>`() const;
+		const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& :target:`mesh<doxid-classgeode_1_1_corner_1a74e2375207559323768798211f0fe1db>`() const;
+		:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_corner_1a2891007a30c223542874ba5e60d28bad>`(CornersKey);
+		const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& :target:`mesh_type<doxid-classgeode_1_1_corner_1af04ded2331d5035d7c2a6af7744ad1f5>`() const;
+		void :target:`set_mesh<doxid-classgeode_1_1_corner_1a4abe7991125fab80711e9d6b928f898d>`(std::unique_ptr<:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> mesh, CornersKey);
+		void :target:`set_mesh<doxid-classgeode_1_1_corner_1a3b0941bb9272987f532c1158a9633402>`(std::unique_ptr<:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> mesh, CornersBuilderKey);
+		void :target:`set_corner_name<doxid-classgeode_1_1_corner_1a62e4199049a65ea7b203526a83ecce55>`(absl::string_view name, CornersBuilderKey);
+		:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_corner_1a5a8d449b08b45c647ce11f879e5b982e>`(CornersBuilderKey);
+		static :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type_static<doxid-classgeode_1_1_corner_1a6c6790536b7ea661cc9a096d1ab8217f>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
+
+		// methods
+	
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`id<doxid-classgeode_1_1_identifier_1a32f0ba602aaca6856fc6858092326ab1>`() const;
+		absl::string_view :ref:`name<doxid-classgeode_1_1_identifier_1a7be1aea6e7c78e4844040a6d972614a8>`() const;
+		void :ref:`save_identifier<doxid-classgeode_1_1_identifier_1a32e167673aab3d16cdd19da604293288>`(absl::string_view directory) const;
+		void :ref:`set_id<doxid-classgeode_1_1_identifier_1a2d879fc9cc8e7a3c426191c20d801080>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& unique_id, IdentifierKey);
+		void :ref:`set_name<doxid-classgeode_1_1_identifier_1a99869829b2e1db630aee0a8a25d7fe33>`(absl::string_view name, IdentifierKey);
+		void :ref:`load_identifier<doxid-classgeode_1_1_identifier_1a52e5c81028516f44a47b3fd6ca7211b7>`(absl::string_view directory, IdentifierKey);
+		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :ref:`component_type<doxid-classgeode_1_1_component_1a4468b6088e9bbc94ef9b59104488bf7d>`() const = 0;
+

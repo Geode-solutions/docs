@@ -1,0 +1,31 @@
+.. index:: pair: struct; geode::ModelMeshesAABBTree
+.. _doxid-structgeode_1_1_model_meshes_a_a_b_b_tree:
+
+template struct geode::ModelMeshesAABBTree
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <aabb_model_helpers.h>
+	
+	template <index_t dimension>
+	struct ModelMeshesAABBTree
+	{
+		// fields
+	
+		:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension> :target:`components_tree_<doxid-structgeode_1_1_model_meshes_a_a_b_b_tree_1ac8c7a13d52aaaf61ccd2f0a75ff08170>`;
+		absl::FixedArray<:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`<dimension>> :target:`mesh_trees_<doxid-structgeode_1_1_model_meshes_a_a_b_b_tree_1afd8cd1482892fb8b1d9bb4620a65e9ad>`;
+		absl::FixedArray<:ref:`uuid<doxid-structgeode_1_1uuid>`> :target:`uuids_<doxid-structgeode_1_1_model_meshes_a_a_b_b_tree_1a6658fdcbbf468a36310946a2d2666e8c>`;
+		absl::flat_hash_map<:ref:`uuid<doxid-structgeode_1_1uuid>`, :ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`mesh_tree_ids_<doxid-structgeode_1_1_model_meshes_a_a_b_b_tree_1a0f370170fe8ecc7ad33768f5b1596ea1>`;
+
+		// construction
+	
+		:target:`ModelMeshesAABBTree<doxid-structgeode_1_1_model_meshes_a_a_b_b_tree_1ad631d060ad77837a3774f462a99b2844>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_components);
+	};

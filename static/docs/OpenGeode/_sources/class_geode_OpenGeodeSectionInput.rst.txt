@@ -1,0 +1,53 @@
+.. index:: pair: class; geode::OpenGeodeSectionInput
+.. _doxid-classgeode_1_1_open_geode_section_input:
+
+class geode::OpenGeodeSectionInput
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geode_section_input.h>
+	
+	class OpenGeodeSectionInput: public :ref:`geode::SectionInput<doxid-classgeode_1_1_section_input>`
+	{
+	public:
+		// construction
+	
+		:target:`OpenGeodeSectionInput<doxid-classgeode_1_1_open_geode_section_input_1a6d7f5244c3a353a26ad04c3fb47ffa57>`(absl::string_view filename);
+
+		// methods
+	
+		void :target:`load_section_files<doxid-classgeode_1_1_open_geode_section_input_1aa84e51c2a8ab16429a95a56ff613c834>`(:ref:`Section<doxid-classgeode_1_1_section>`& section, absl::string_view directory);
+		:ref:`Section<doxid-classgeode_1_1_section>` :target:`read<doxid-classgeode_1_1_open_geode_section_input_1a78819adcd75b76abd32b3a0281facfb2>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_section_input_1acce0e454f9eff7b2992f459dfa49e9b6>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Object :ref:`InputData<doxid-classgeode_1_1_input_1a3825d3a2f87bc1958617c6c6b6655a1f>`;
+		typedef :ref:`Input<doxid-classgeode_1_1_input>`<:ref:`Section<doxid-classgeode_1_1_section>`> :ref:`Base<doxid-classgeode_1_1_section_input_1a55a9f062b1a49bf2b33da02768563c21>`;
+
+		// structs
+	
+		struct :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>`;
+
+		// methods
+	
+		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
+		virtual :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>` :ref:`check_missing_files<doxid-classgeode_1_1_input_1a2ffd68839c1e64431c5b38cc70ac869f>`() const;
+		virtual Object :ref:`read<doxid-classgeode_1_1_input_1a6caf553bf75b99577a4117d4780199e1>`(const Args&... args) = 0;
+

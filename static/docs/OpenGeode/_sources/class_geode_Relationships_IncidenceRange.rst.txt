@@ -1,0 +1,43 @@
+.. index:: pair: class; geode::Relationships::IncidenceRange
+.. _doxid-classgeode_1_1_relationships_1_1_incidence_range:
+
+class geode::Relationships::IncidenceRange
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class IncidenceRange: public :ref:`geode::Relationships::IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator>`
+	{
+	public:
+		// construction
+	
+		:target:`IncidenceRange<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a6f64b0d61aaaa4c15356e7e341a2df71>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id);
+
+		// methods
+	
+		const IncidenceRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a67eae319370c6af4923d0f1818b718fa>`() const;
+		const IncidenceRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_incidence_range_1a7ab84584490f95f61fa466445384832c>`() const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1a4da2dbbdc4196686cb51616a83e04337>` (const :ref:`IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1ab3c89a8b3d09212de5b89707473435ab>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1a195e53879f3b211dd104d4a8c1f26b2f>` () const;
+

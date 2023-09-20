@@ -1,0 +1,41 @@
+.. index:: pair: namespace; bitsery
+.. _doxid-namespacebitsery:
+
+namespace bitsery
+=================
+
+.. toctree::
+	:hidden:
+
+	namespace_bitsery_ext.rst
+	namespace_bitsery_traits.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace bitsery {
+
+	// namespaces
+
+	namespace :ref:`bitsery::ext<doxid-namespacebitsery_1_1ext>`;
+	namespace :ref:`bitsery::traits<doxid-namespacebitsery_1_1traits>`;
+
+	// global functions
+
+	template <typename Serializer, typename T, size_t N>
+	void :target:`serialize<doxid-namespacebitsery_1a30ce491c3beb8eb32f41328da95ed658>`(
+		Serializer& s,
+		absl::InlinedVector<T, N>& obj
+		);
+
+	template <typename Serializer, typename T, size_t N>
+	void :target:`serialize<doxid-namespacebitsery_1a5afe29a444c0b279f93be23c5b35cb65>`(
+		Serializer& s,
+		absl::FixedArray<T, N>& obj
+		);
+
+	} // namespace bitsery

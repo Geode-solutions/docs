@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>struct geode::ComponentMeshVertex &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::ComponentTag" href="struct_geode_ComponentTag.html" />
+    <link rel="prev" title="struct geode::ComponentMeshElement" href="struct_geode_ComponentMeshElement.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="struct-geode-componentmeshvertex">
+<span id="doxid-structgeode-1-1-component-mesh-vertex"></span><span id="index-0"></span><h1>struct geode::ComponentMeshVertex<a class="headerlink" href="#struct-geode-componentmeshvertex" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Identify a vertex in a geometric component</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;vertex_identifier.h&gt;</span>
+
+<span class="k">struct</span> <span class="n">ComponentMeshVertex</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-component-mesh-vertex-1aa34a23bde0f218b2128556ca088d4e96"><span></span><span class="n">component_id</span></span><span></span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-component-mesh-vertex-1a77cdcc656aace81c5c4f3ac68f47e728"><span></span><span class="n">vertex</span></span><span></span> <span class="p">{</span> <span class="n">NO_ID</span> <span class="p">};</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-component-mesh-vertex-1a50458d9421196dd107070e0929db959a"><span></span><span class="n">ComponentMeshVertex</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span> <span class="n">component_id_in</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id_in</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <a class="reference internal" href="struct_geode_MeshVertex.html#doxid-structgeode-1-1-mesh-vertex"><span class="std std-ref">MeshVertex</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-component-mesh-vertex-1a0e4329ace86cce7edb375eb0c9151169"><span></span><span class="n">mesh_vertex</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-component-mesh-vertex-1ab7a5e9edb836ca3a5e74f5ef9c8c174e"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">ComponentMeshVertex</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Archive</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-component-mesh-vertex-1acf5a43ef6336599ca836e224ca999472"><span></span><span class="n">serialize</span></span><span></span><span class="p">(</span><span class="n">Archive</span><span class="o">&amp;</span> <span class="n">archive</span><span class="p">);</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-component-mesh-vertex-1a8bb5f5937e525c57bfbdb3ee2a50da0d"><span></span><span class="n">string</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/struct_geode_ComponentMeshVertex.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>struct geode::BlockDefinition &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::BlockPolyhedraFacetVertices" href="struct_geode_BlockPolyhedraFacetVertices.html" />
+    <link rel="prev" title="struct geode::BRepMeshesVertexMapping" href="struct_geode_BRepMeshesVertexMapping.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="struct-geode-blockdefinition">
+<span id="doxid-structgeode-1-1-block-definition"></span><span id="index-0"></span><h1>struct geode::BlockDefinition<a class="headerlink" href="#struct-geode-blockdefinition" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;simplicial_creator_definitions.h&gt;</span>
+
+<span class="k">struct</span> <span class="n">BlockDefinition</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-block-definition-1a48cb382de0ce3777148b7c30c4ccc9e9"><span></span><span class="n">vertices</span></span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-block-definition-1a31c11ffb11937cdef20fbcfdc8adc269"><span></span><span class="n">tetrahedra</span></span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-structgeode-1-1-block-definition-1ad711a0cf86ad8ec339b6180803a01bec"><span class="std std-ref">boundaries</span></a><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-structgeode-1-1-block-definition-1acd7224a71cde3add18b671fd03f9808b"><span class="std std-ref">internals</span></a><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-structgeode-1-1-block-definition-1a833e770431f9bd9ef633f2a70ec2e9c5"><span class="std std-ref">internal_lines</span></a><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-structgeode-1-1-block-definition-1a9e25d3bca053ef3d7dec0c460e113776"><span class="std std-ref">internal_corners</span></a><span></span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+<section id="detailed-documentation">
+<span id="details-structgeode-1-1-block-definition"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this heading">¶</a></h2>
+<section id="fields">
+<h3>Fields<a class="headerlink" href="#fields" title="Permalink to this heading">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-structgeode-1-1-block-definition-1ad711a0cf86ad8ec339b6180803a01bec"><span id="index-1"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">boundaries</span></pre>
+<p>List of boundaries: index i correspond to the i-th created <a class="reference internal" href="class_geode_Surface.html#doxid-classgeode-1-1-surface"><span class="std std-ref">Surface</span></a>.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-structgeode-1-1-block-definition-1acd7224a71cde3add18b671fd03f9808b"><span id="index-2"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">internals</span></pre>
+<p>List of internal surfaces: index i correspond to the i-th created <a class="reference internal" href="class_geode_Surface.html#doxid-classgeode-1-1-surface"><span class="std std-ref">Surface</span></a></p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-structgeode-1-1-block-definition-1a833e770431f9bd9ef633f2a70ec2e9c5"><span id="index-3"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">internal_lines</span></pre>
+<p>List of internal lines: index i correspond to the i-th created <a class="reference internal" href="class_geode_Line.html#doxid-classgeode-1-1-line"><span class="std std-ref">Line</span></a>.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-structgeode-1-1-block-definition-1a9e25d3bca053ef3d7dec0c460e113776"><span id="index-4"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="n">internal_corners</span></pre>
+<p>List of internal corners: index i correspond to the i-th created <a class="reference internal" href="class_geode_Corner.html#doxid-classgeode-1-1-corner"><span class="std std-ref">Corner</span></a></p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/struct_geode_BlockDefinition.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

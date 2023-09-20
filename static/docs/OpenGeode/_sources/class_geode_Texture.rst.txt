@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::Texture<1>
+.. _doxid-classgeode_1_1_texture_3_011_01_4:
+
+template class geode::Texture<1>
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <texture1d.h>
+	
+	template <>
+	class Texture<1>
+	{
+	public:
+		// construction
+	
+		:target:`Texture<doxid-classgeode_1_1_texture_3_011_01_4_1a5ace9092b217d3c5b203d9f9ae1e5360>`(:ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& manager, absl::string_view name);
+		:target:`Texture<doxid-classgeode_1_1_texture_3_011_01_4_1a02461c8aaefb0e8f2b19baadfb72e315>`(Texture&& other);
+
+		// methods
+	
+		const RasterImage1D& :target:`image<doxid-classgeode_1_1_texture_3_011_01_4_1a7db663dff4aa3173e4fb558b5907c167>`() const;
+		void :target:`set_image<doxid-classgeode_1_1_texture_3_011_01_4_1a744419646dd3aec2620876ce5b680ebe>`(RasterImage1D&& image);
+		const Point1D& :target:`texture_coordinates<doxid-classgeode_1_1_texture_3_011_01_4_1acc9ed002c8d11cb090c9fc52ff9341e9>`(const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& vertex) const;
+	
+		void :target:`set_texture_coordinates<doxid-classgeode_1_1_texture_3_011_01_4_1a4dec909503870197e85cc8eac853cad3>`(
+			const :ref:`EdgeVertex<doxid-structgeode_1_1_edge_vertex>`& vertex,
+			const Point1D& coordinates
+			) const;
+	};

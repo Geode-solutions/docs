@@ -1,0 +1,103 @@
+.. index:: pair: class; geode::MeshFactory
+.. _doxid-classgeode_1_1_mesh_factory:
+
+class geode::MeshFactory
+========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <mesh_factory.h>
+	
+	class MeshFactory: public :ref:`geode::Factory<doxid-classgeode_1_1_factory>`
+	{
+	public:
+		// methods
+	
+		template <typename Mesh>
+		static void :ref:`register_mesh<doxid-classgeode_1_1_mesh_factory_1a82b58157ffab9dc6ec504857a731c934>`(:ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` type, :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key);
+	
+		template <typename Mesh>
+		static void :ref:`register_default_mesh<doxid-classgeode_1_1_mesh_factory_1a3de894f15d04d11a33a9d0dd4f8a6150>`(
+			:ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` type,
+			:ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key
+			);
+	
+		static const :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`& :target:`type<doxid-classgeode_1_1_mesh_factory_1aeb824cd78211b595c9f831d329ce0e3b>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& key);
+		static const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& :target:`default_impl<doxid-classgeode_1_1_mesh_factory_1a9ff6499790e9d5c4e4cc0700d1960214>`(const :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`& type);
+	
+		template <typename Mesh>
+		static std::unique_ptr<Mesh> :target:`create_mesh<doxid-classgeode_1_1_mesh_factory_1a0470e159e1bf8202f8799d7cc14e10e9>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& key);
+	
+		template <typename Mesh>
+		static std::unique_ptr<Mesh> :target:`create_default_mesh<doxid-classgeode_1_1_mesh_factory_1a9d31b12690e43618abcd5f693972745a>`(const :ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>`& type);
+
+	private:
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef BaseClassType :ref:`BaseClass<doxid-classgeode_1_1_factory_1afdad9612175477b9840a761f44046243>`;
+		typedef typename std::add_pointer<std::unique_ptr<:ref:`BaseClass<doxid-classgeode_1_1_factory_1afdad9612175477b9840a761f44046243>`>(Args...)>::type :ref:`Creator<doxid-classgeode_1_1_factory_1ae9159f1b5e4d0074da0b8a1abd831474>`;
+		typedef absl::flat_hash_map<Key, :ref:`Creator<doxid-classgeode_1_1_factory_1ae9159f1b5e4d0074da0b8a1abd831474>`> :ref:`FactoryStore<doxid-classgeode_1_1_factory_1a81e116a58348ee266505578535e60689>`;
+
+		// methods
+	
+		template <typename DerivedClass>
+		static void :ref:`register_creator<doxid-classgeode_1_1_factory_1a87b0b83b44b8955a61ec99c3eb829276>`(Key key);
+	
+		static std::unique_ptr<:ref:`BaseClass<doxid-classgeode_1_1_factory_1afdad9612175477b9840a761f44046243>`> :ref:`create<doxid-classgeode_1_1_factory_1a7308574f48f3c259f0c7cbbb843fb145>`(const Key& key, Args... args);
+		static absl::FixedArray<Key> :ref:`list_creators<doxid-classgeode_1_1_factory_1a691f42d43cac97473a02fdd9ae6f80ed>`();
+		static bool :ref:`has_creator<doxid-classgeode_1_1_factory_1aabb2b94d68778db67586c69ebed3735b>`(const Key& key);
+
+.. _details-classgeode_1_1_mesh_factory:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; register_mesh
+.. _doxid-classgeode_1_1_mesh_factory_1a82b58157ffab9dc6ec504857a731c934:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <typename Mesh>
+	static void register_mesh(:ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` type, :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key)
+
+Register a mesh implementation to a given mesh type
+
+.. index:: pair: function; register_default_mesh
+.. _doxid-classgeode_1_1_mesh_factory_1a3de894f15d04d11a33a9d0dd4f8a6150:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <typename Mesh>
+	static void register_default_mesh(
+		:ref:`MeshType<doxid-namespacegeode_1a4a0dbbac82ed73238f90bb9b2e51db53>` type,
+		:ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>` key
+		)
+
+Register the default mesh implementation to a given mesh type. This implementation will be used when no specific implementation is required.
+

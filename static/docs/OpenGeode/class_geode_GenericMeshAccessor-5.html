@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::GenericMeshAccessor&lt;EdgedCurve&lt;dimension&gt;&gt; &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::GenericMeshAccessor&lt;TriangulatedSurface&lt;dimension&gt;&gt;" href="class_geode_GenericMeshAccessor-6.html" />
+    <link rel="prev" title="template class geode::GenericMeshAccessor&lt;PolyhedralSolid&lt;dimension&gt;&gt;" href="class_geode_GenericMeshAccessor-4.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-genericmeshaccessor-edgedcurve-dimension">
+<span id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4"></span><span id="index-0"></span><h1>template class geode::GenericMeshAccessor&lt;EdgedCurve&lt;dimension&gt;&gt;<a class="headerlink" href="#template-class-geode-genericmeshaccessor-edgedcurve-dimension" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;generic_edged_curve_accessor.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">GenericMeshAccessor</span><span class="o">&lt;</span><span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="struct_geode_EdgeVertex.html#doxid-structgeode-1-1-edge-vertex"><span class="std std-ref">EdgeVertex</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1a2a0c4262946764ce146b5b69b1fedcc5"><span></span><span class="n">ElementVertex</span></span><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1aef01fb3c1ee8e687e49ee773302d9014"><span></span><span class="n">ElementVertices</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1a536b65a84cf058e3e9387037537c99e9"><span></span><span class="n">GenericMeshAccessor</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="class_geode_EdgedCurve.html#doxid-classgeode-1-1-edged-curve"><span class="std std-ref">EdgedCurve</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1a3610b0b5ddabf39de21dd3068a17dda0"><span></span><span class="n">nb_elements</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1aa82a3a9b426ef20994fa2cbcc29c498b"><span></span><span class="n">nb_element_vertices</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1ae7b3bf9c4b90ae4011f56351283dc0bc"><span></span><span class="n">nb_element_facets</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1ad767b7bf20a18626e7d80b29eafecd31"><span></span><span class="n">element_vertex</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="#doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1a2a0c4262946764ce146b5b69b1fedcc5"><span class="std std-ref">ElementVertex</span></a><span></span><span class="o">&amp;</span> <span class="n">edge_vertex</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="#doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1aef01fb3c1ee8e687e49ee773302d9014"><span class="std std-ref">ElementVertices</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1aac06d6a9bde2168ddc4322ae767a9cb6"><span></span><span class="n">element_vertices</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1a1840c6bdbad437c7c32c2a2aaee79fae"><span></span><span class="n">element_barycenter</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">edge_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1ab1662d981a144cde11d110d94963a416"><span></span><span class="n">id</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Point.html#doxid-classgeode-1-1-point"><span class="std std-ref">Point</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1a85956e8b56cc18b05ead490255589e76"><span></span><span class="n">point</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-generic-mesh-accessor-3-01-edged-curve-3-01dimension-01-4-01-4-1a8a6876e911148eb13a4ed65df3b4f0fb"><span></span><span class="n">element_attribute_manager</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_GenericMeshAccessor-5.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

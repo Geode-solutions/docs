@@ -1,0 +1,43 @@
+.. index:: pair: class; geode::Relationships::CollectionRange
+.. _doxid-classgeode_1_1_relationships_1_1_collection_range:
+
+class geode::Relationships::CollectionRange
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <relationships.h>
+	
+	class CollectionRange: public :ref:`geode::Relationships::CollectionRangeIterator<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator>`
+	{
+	public:
+		// construction
+	
+		:target:`CollectionRange<doxid-classgeode_1_1_relationships_1_1_collection_range_1a3498ecc6dcc3ad125d8fe70bba7416e2>`(const :ref:`Relationships<doxid-classgeode_1_1_relationships>`& relationships, const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id);
+
+		// methods
+	
+		const CollectionRange& :target:`begin<doxid-classgeode_1_1_relationships_1_1_collection_range_1a019e02870c0d39933b92a988c5a6dbfd>`() const;
+		const CollectionRange& :target:`end<doxid-classgeode_1_1_relationships_1_1_collection_range_1a4838c667185133c4105309e537f50b4d>`() const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator_1acf4021383e1c9b8175b4a6072cd32b0c>` (const :ref:`CollectionRangeIterator<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator_1a5c2ce0acd5b7531c8cc927a9e2a377aa>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_collection_range_iterator_1ae425e5f4d83fb2180b81f8985aaf8720>` () const;
+

@@ -1,0 +1,52 @@
+.. index:: pair: class; geode::RasterImageInput
+.. _doxid-classgeode_1_1_raster_image_input:
+
+template class geode::RasterImageInput
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <raster_image_input.h>
+	
+	template <index_t dimension>
+	class RasterImageInput: public :ref:`geode::Input<doxid-classgeode_1_1_input>`
+	{
+	public:
+		// typedefs
+	
+		typedef :ref:`Input<doxid-classgeode_1_1_input>`<:ref:`RasterImage<doxid-classgeode_1_1_raster_image>`<dimension>> :target:`Base<doxid-classgeode_1_1_raster_image_input_1a671aae8275fe44623e85d3c9302a23e5>`;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OpenGeodeRasterImageInput<doxid-classgeode_1_1_open_geode_raster_image_input>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Object :ref:`InputData<doxid-classgeode_1_1_input_1a3825d3a2f87bc1958617c6c6b6655a1f>`;
+
+		// structs
+	
+		struct :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>`;
+
+		// methods
+	
+		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
+		virtual :ref:`MissingFiles<doxid-structgeode_1_1_input_1_1_missing_files>` :ref:`check_missing_files<doxid-classgeode_1_1_input_1a2ffd68839c1e64431c5b38cc70ac869f>`() const;
+		virtual Object :ref:`read<doxid-classgeode_1_1_input_1a6caf553bf75b99577a4117d4780199e1>`(const Args&... args) = 0;
+

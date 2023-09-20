@@ -1,0 +1,39 @@
+.. index:: pair: class; geode::ProgressLoggerManager
+.. _doxid-classgeode_1_1_progress_logger_manager:
+
+class geode::ProgressLoggerManager
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <progress_logger_manager.h>
+	
+	class ProgressLoggerManager
+	{
+	public:
+		// methods
+	
+		static void :target:`register_client<doxid-classgeode_1_1_progress_logger_manager_1ae0acdf4ca1cc748e3bf5c608bb1c489a>`(std::unique_ptr<:ref:`ProgressLoggerClient<doxid-classgeode_1_1_progress_logger_client>`>&& client);
+	
+		static void :target:`start<doxid-classgeode_1_1_progress_logger_manager_1a3bdda88ca026aec9fdbbf3e83cd7d77c>`(
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& progress_logger_id,
+			const std::string& message,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_steps
+			);
+	
+		static void :target:`update<doxid-classgeode_1_1_progress_logger_manager_1af09c6a27d1115dd889753450b3b6fa24>`(
+			const :ref:`uuid<doxid-structgeode_1_1uuid>`& progress_logger_id,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` current_step,
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` nb_steps
+			);
+	
+		static void :target:`completed<doxid-classgeode_1_1_progress_logger_manager_1aa49d4cebe28aceb206cce4fc832623bc>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& progress_logger_id);
+		static void :target:`failed<doxid-classgeode_1_1_progress_logger_manager_1afff2a93a57c7c514e430ea2d260e7f8f>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& progress_logger_id);
+	};

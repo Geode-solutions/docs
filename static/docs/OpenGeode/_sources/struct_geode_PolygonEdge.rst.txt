@@ -1,0 +1,40 @@
+.. index:: pair: struct; geode::PolygonEdge
+.. _doxid-structgeode_1_1_polygon_edge:
+
+struct geode::PolygonEdge
+=========================
+
+.. toctree::
+	:hidden:
+
+This struct represents an edge in a polygon
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_mesh.h>
+	
+	struct PolygonEdge
+	{
+		// fields
+	
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`polygon_id<doxid-structgeode_1_1_polygon_edge_1a89813d977355b1f203e3e0fdd73122c4>` { NO_ID };
+		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`edge_id<doxid-structgeode_1_1_polygon_edge_1a38b852545f6f8f2faa71068dc1748b6e>` { NO_LID };
+
+		// construction
+	
+		:target:`PolygonEdge<doxid-structgeode_1_1_polygon_edge_1a55d0f0eb2c477561750d72b821ab6747>`();
+		:target:`PolygonEdge<doxid-structgeode_1_1_polygon_edge_1a1fa7e96e1b4b3e43f4c9effe6054a813>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id_in, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` edge_id_in);
+		:target:`PolygonEdge<doxid-structgeode_1_1_polygon_edge_1a7810f60c7caf4ee1af13da161a2e3309>`(:ref:`PolygonVertex<doxid-structgeode_1_1_polygon_vertex>` polygon_vertex);
+
+		// methods
+	
+		bool :target:`operator ==<doxid-structgeode_1_1_polygon_edge_1a4b88836272b1a519e8d599eaeec20bff>` (const PolygonEdge& other) const;
+		bool :target:`operator !=<doxid-structgeode_1_1_polygon_edge_1a5c89d77e3cc9bcec1556d20852b8129a>` (const PolygonEdge& other) const;
+		bool :target:`operator <<doxid-structgeode_1_1_polygon_edge_1a361e0146c1e61c30591da025650cb5e0>` (const PolygonEdge& other) const;
+		std::string :target:`string<doxid-structgeode_1_1_polygon_edge_1acfde92fc0286835d47beb34b79cd6885>`() const;
+	
+		template <typename Archive>
+		void :target:`serialize<doxid-structgeode_1_1_polygon_edge_1a6a3490f34466b67e50882b26c9b9fabb>`(Archive& archive);
+	};

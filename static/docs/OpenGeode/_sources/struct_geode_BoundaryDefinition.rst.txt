@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::BoundaryDefinition
+.. _doxid-structgeode_1_1_boundary_definition:
+
+struct geode::BoundaryDefinition
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <simplicial_creator_definitions.h>
+	
+	struct BoundaryDefinition
+	{
+		// fields
+	
+		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`boundaries<doxid-structgeode_1_1_boundary_definition_1a4813f936a425f1967d12b4ee6c64f535>`;
+	};

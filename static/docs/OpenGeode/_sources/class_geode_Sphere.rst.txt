@@ -1,0 +1,49 @@
+.. index:: pair: class; geode::Sphere
+.. _doxid-classgeode_1_1_sphere:
+
+template class geode::Sphere
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <sphere.h>
+	
+	template <index_t dimension>
+	class Sphere: public :ref:`geode::GenericSphere<doxid-classgeode_1_1_generic_sphere>`
+	{
+	public:
+		// construction
+	
+		:target:`Sphere<doxid-classgeode_1_1_sphere_1aa4fc5d19450208df645ee7527b3328cd>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& origin, double radius);
+		:target:`Sphere<doxid-classgeode_1_1_sphere_1a9dc7ef2df42628055c1dc8138020e103>`(const Sphere<dimension>& other);
+		:target:`Sphere<doxid-classgeode_1_1_sphere_1a54cb9245d03cc1af4167a4c486d5be81>`(const :ref:`OwnerSphere<doxid-classgeode_1_1_owner_sphere>`<dimension>& other);
+		:target:`Sphere<doxid-classgeode_1_1_sphere_1a66b916f15aa95f73fe68ca682d1bcc01>`(Sphere<dimension>&& other);
+
+		// methods
+	
+		Sphere<dimension>& :target:`operator =<doxid-classgeode_1_1_sphere_1a014074e62b899016e1c6937564c2db43>` (const Sphere<dimension>& other);
+		Sphere<dimension>& :target:`operator =<doxid-classgeode_1_1_sphere_1aef96dc323b7e7cdc1169cb40334d05cb>` (Sphere<dimension>&& other);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		:ref:`GenericSphere<doxid-classgeode_1_1_generic_sphere>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_sphere_1a0c2c0ea149738c4038057c0e45886804>` (const :ref:`GenericSphere<doxid-classgeode_1_1_generic_sphere>`<PointType, dimension>& other);
+		:ref:`GenericSphere<doxid-classgeode_1_1_generic_sphere>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_sphere_1aa253040710aad8246d0189616314d8bc>` (:ref:`GenericSphere<doxid-classgeode_1_1_generic_sphere>`<PointType, dimension>&& other);
+		const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& :ref:`origin<doxid-classgeode_1_1_generic_sphere_1a6f0f92dde75767598d957ebe92b2974f>`() const;
+		double :ref:`radius<doxid-classgeode_1_1_generic_sphere_1a834a8f38e94822f8037fb05c49b0c9d7>`() const;
+		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`bounding_box<doxid-classgeode_1_1_generic_sphere_1a452d00a41f3534bf0a8ffe0f3157729c>`() const;
+

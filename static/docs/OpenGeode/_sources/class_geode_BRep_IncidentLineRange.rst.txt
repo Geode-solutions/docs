@@ -1,0 +1,45 @@
+.. index:: pair: class; geode::BRep::IncidentLineRange
+.. _doxid-classgeode_1_1_b_rep_1_1_incident_line_range:
+
+class geode::BRep::IncidentLineRange
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep.h>
+	
+	class IncidentLineRange: public :ref:`geode::Relationships::IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator>`
+	{
+	public:
+		// construction
+	
+		:target:`IncidentLineRange<doxid-classgeode_1_1_b_rep_1_1_incident_line_range_1a249467385f93a9c01383cda7a742294a>`(const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& brep, const Corner3D& corner);
+		:target:`IncidentLineRange<doxid-classgeode_1_1_b_rep_1_1_incident_line_range_1a402edf862e185e24bb2f010461dcec49>`(const IncidentLineRange& range);
+
+		// methods
+	
+		const IncidentLineRange& :target:`begin<doxid-classgeode_1_1_b_rep_1_1_incident_line_range_1a5104c7a9b447ccc359af3baa3c41399b>`() const;
+		const IncidentLineRange& :target:`end<doxid-classgeode_1_1_b_rep_1_1_incident_line_range_1a273b85062f5bc9b3f58f1562e895e717>`() const;
+		const Line3D& :target:`operator *<doxid-classgeode_1_1_b_rep_1_1_incident_line_range_1a23134afe1d15d656ddfd879140bbbb79>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1a4da2dbbdc4196686cb51616a83e04337>` (const :ref:`IncidenceRangeIterator<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1ab3c89a8b3d09212de5b89707473435ab>` ();
+		const :ref:`ComponentID<doxid-classgeode_1_1_component_i_d>`& :ref:`operator *<doxid-classgeode_1_1_relationships_1_1_incidence_range_iterator_1a195e53879f3b211dd104d4a8c1f26b2f>` () const;
+

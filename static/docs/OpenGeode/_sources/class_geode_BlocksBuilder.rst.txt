@@ -1,0 +1,70 @@
+.. index:: pair: class; geode::BlocksBuilder
+.. _doxid-classgeode_1_1_blocks_builder:
+
+template class geode::BlocksBuilder
+===================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <blocks_builder.h>
+	
+	template <index_t dimension>
+	class BlocksBuilder
+	{
+	public:
+		// methods
+	
+		void :target:`load_blocks<doxid-classgeode_1_1_blocks_builder_1a07055febb98f04a79bf3a6f22d3ec6dd>`(absl::string_view directory);
+	
+		template <typename Mesh = SolidMesh<dimension>>
+		std::unique_ptr<typename Mesh::Builder> :ref:`block_mesh_builder<doxid-classgeode_1_1_blocks_builder_1a0f7658977d971d712fb8976345487537>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id);
+	
+		void :target:`set_block_name<doxid-classgeode_1_1_blocks_builder_1a8b748c7a5bf428c3609326d965fe185b>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id, absl::string_view name);
+	};
+
+	// direct descendants
+
+	class :ref:`BRepBuilder<doxid-classgeode_1_1_b_rep_builder>`;
+.. _details-classgeode_1_1_blocks_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; block_mesh_builder
+.. _doxid-classgeode_1_1_blocks_builder_1a0f7658977d971d712fb8976345487537:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <typename Mesh = SolidMesh<dimension>>
+	std::unique_ptr<typename Mesh::Builder> block_mesh_builder(const :ref:`uuid<doxid-structgeode_1_1uuid>`& id)
+
+Get a pointer to the builder of a :ref:`Block <doxid-classgeode_1_1_block>` mesh
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- id
+
+		- Unique index of the :ref:`Block <doxid-classgeode_1_1_block>`
+

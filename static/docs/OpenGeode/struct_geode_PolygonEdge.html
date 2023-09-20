@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>struct geode::PolygonEdge &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::PolygonVertex" href="struct_geode_PolygonVertex.html" />
+    <link rel="prev" title="template struct geode::OneValueStorage" href="struct_geode_OneValueStorage.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="struct-geode-polygonedge">
+<span id="doxid-structgeode-1-1-polygon-edge"></span><span id="index-0"></span><h1>struct geode::PolygonEdge<a class="headerlink" href="#struct-geode-polygonedge" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>This struct represents an edge in a polygon</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surface_mesh.h&gt;</span>
+
+<span class="k">struct</span> <span class="n">PolygonEdge</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a89813d977355b1f203e3e0fdd73122c4"><span></span><span class="n">polygon_id</span></span><span></span> <span class="p">{</span> <span class="n">NO_ID</span> <span class="p">};</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a38b852545f6f8f2faa71068dc1748b6e"><span></span><span class="n">edge_id</span></span><span></span> <span class="p">{</span> <span class="n">NO_LID</span> <span class="p">};</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a55d0f0eb2c477561750d72b821ab6747"><span></span><span class="n">PolygonEdge</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a1fa7e96e1b4b3e43f4c9effe6054a813"><span></span><span class="n">PolygonEdge</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon_id_in</span><span class="p">,</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1aa4af2b9c3c63eb304286e812ba69a9a9"><span class="std std-ref">local_index_t</span></a><span></span> <span class="n">edge_id_in</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a7810f60c7caf4ee1af13da161a2e3309"><span></span><span class="n">PolygonEdge</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_PolygonVertex.html#doxid-structgeode-1-1-polygon-vertex"><span class="std std-ref">PolygonVertex</span></a><span></span> <span class="n">polygon_vertex</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a4b88836272b1a519e8d599eaeec20bff"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a5c89d77e3cc9bcec1556d20852b8129a"><span></span><span class="k">operator</span> <span class="o">!=</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a361e0146c1e61c30591da025650cb5e0"><span></span><span class="k">operator</span> <span class="o">&lt;</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1acfde92fc0286835d47beb34b79cd6885"><span></span><span class="n">string</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Archive</span><span class="o">&gt;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-polygon-edge-1a6a3490f34466b67e50882b26c9b9fabb"><span></span><span class="n">serialize</span></span><span></span><span class="p">(</span><span class="n">Archive</span><span class="o">&amp;</span> <span class="n">archive</span><span class="p">);</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/struct_geode_PolygonEdge.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

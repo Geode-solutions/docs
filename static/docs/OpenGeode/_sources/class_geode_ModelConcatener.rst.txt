@@ -1,0 +1,29 @@
+.. index:: pair: class; geode::ModelConcatener
+.. _doxid-classgeode_1_1_model_concatener:
+
+template class geode::ModelConcatener
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <model_concatener.h>
+	
+	template <typename Model>
+	class ModelConcatener
+	{
+	public:
+		// construction
+	
+		:target:`ModelConcatener<doxid-classgeode_1_1_model_concatener_1afd18529087133142353098647d239677>`(Model& model);
+
+		// methods
+	
+		:ref:`ModelCopyMapping<doxid-namespacegeode_1afc1226ecaedc88b75713a97ea1b34ce5>` :target:`concatenate<doxid-classgeode_1_1_model_concatener_1ab1125e6b7fceac406cdcd6d655206355>`(const Model& other_model);
+	};

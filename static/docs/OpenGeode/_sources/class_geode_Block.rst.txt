@@ -1,0 +1,71 @@
+.. index:: pair: class; geode::Block
+.. _doxid-classgeode_1_1_block:
+
+template class geode::Block
+===========================
+
+.. toctree::
+	:hidden:
+
+Geometric component describing a 3D volume This component is described by a mesh.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <block.h>
+	
+	template <index_t dimension>
+	class Block: public :ref:`geode::Component<doxid-classgeode_1_1_component>`
+	{
+	public:
+		// construction
+	
+		:target:`Block<doxid-classgeode_1_1_block_1a458a036c0cc3c408b66429ce212b80f0>`(Block&& other);
+		:target:`Block<doxid-classgeode_1_1_block_1a18f1fa9eafdce67c86e813eca1e27c33>`(BlocksKey);
+		:target:`Block<doxid-classgeode_1_1_block_1a320472d69fef6dbf7c75dcf93e566a7f>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl, BlocksKey);
+
+		// methods
+	
+		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_block_1a478d8946a6d5a83e268b184c105537be>`() const;
+		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_block_1a9564b4b1e94aed521790de6c89d993f8>`() const;
+	
+		template <typename Mesh = SolidMesh<dimension>>
+		const Mesh& :target:`mesh<doxid-classgeode_1_1_block_1a9336e13cf672a3247b0835164eef3445>`() const;
+	
+		const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& :target:`mesh_type<doxid-classgeode_1_1_block_1a8fdd05a8a9fb25b8f918dc44f13808f5>`() const;
+	
+		template <typename Mesh = SolidMesh<dimension>>
+		Mesh& :target:`modifiable_mesh<doxid-classgeode_1_1_block_1a1b50e76c0aa1596a5446c35996216d92>`(BlocksKey);
+	
+		void :target:`set_mesh<doxid-classgeode_1_1_block_1a302738975c62d2a0c177469b0e9ab6db>`(std::unique_ptr<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> mesh, BlocksKey);
+		void :target:`set_mesh<doxid-classgeode_1_1_block_1aad9bc6089a9147b215d8d7226772041d>`(std::unique_ptr<:ref:`SolidMesh<doxid-classgeode_1_1_solid_mesh>`<dimension>> mesh, BlocksBuilderKey);
+	
+		template <typename Mesh = SolidMesh<dimension>>
+		Mesh& :target:`modifiable_mesh<doxid-classgeode_1_1_block_1afc1199709e7906c2f0c7d7a8da9005c8>`(BlocksBuilderKey);
+	
+		void :target:`set_block_name<doxid-classgeode_1_1_block_1a4fd3c3a7b3707cc3f3490707ad62035c>`(absl::string_view name, BlocksBuilderKey);
+		static :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type_static<doxid-classgeode_1_1_block_1aa48ae4ed7dacfd18f11a017335655188>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		static constexpr auto :ref:`DEFAULT_NAME<doxid-classgeode_1_1_identifier_1ac97e8180509443914dde94fb59b338fa>` = "default_name";
+
+		// methods
+	
+		const :ref:`uuid<doxid-structgeode_1_1uuid>`& :ref:`id<doxid-classgeode_1_1_identifier_1a32f0ba602aaca6856fc6858092326ab1>`() const;
+		absl::string_view :ref:`name<doxid-classgeode_1_1_identifier_1a7be1aea6e7c78e4844040a6d972614a8>`() const;
+		void :ref:`save_identifier<doxid-classgeode_1_1_identifier_1a32e167673aab3d16cdd19da604293288>`(absl::string_view directory) const;
+		void :ref:`set_id<doxid-classgeode_1_1_identifier_1a2d879fc9cc8e7a3c426191c20d801080>`(const :ref:`uuid<doxid-structgeode_1_1uuid>`& unique_id, IdentifierKey);
+		void :ref:`set_name<doxid-classgeode_1_1_identifier_1a99869829b2e1db630aee0a8a25d7fe33>`(absl::string_view name, IdentifierKey);
+		void :ref:`load_identifier<doxid-classgeode_1_1_identifier_1a52e5c81028516f44a47b3fd6ca7211b7>`(absl::string_view directory, IdentifierKey);
+		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :ref:`component_type<doxid-classgeode_1_1_component_1a4468b6088e9bbc94ef9b59104488bf7d>`() const = 0;
+

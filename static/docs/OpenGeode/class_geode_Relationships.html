@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>class geode::Relationships &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::Relationships::BoundaryRange" href="class_geode_Relationships_BoundaryRange.html" />
+    <link rel="prev" title="template class geode::RegularGridScalarFunction" href="class_geode_RegularGridScalarFunction.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-geode-relationships">
+<span id="doxid-classgeode-1-1-relationships"></span><span id="index-0"></span><h1>class geode::Relationships<a class="headerlink" href="#class-geode-relationships" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>This class stores all the relations between a set of components. <a class="reference internal" href="#details-classgeode-1-1-relationships"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;relationships.h&gt;</span>
+
+<span class="k">class</span> <span class="n">Relationships</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// classes</span>
+
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_BoundaryRange.html#doxid-classgeode-1-1-relationships-1-1-boundary-range"><span class="std std-ref">BoundaryRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_BoundaryRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-boundary-range-iterator"><span class="std std-ref">BoundaryRangeIterator</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_CollectionRange.html#doxid-classgeode-1-1-relationships-1-1-collection-range"><span class="std std-ref">CollectionRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_CollectionRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-collection-range-iterator"><span class="std std-ref">CollectionRangeIterator</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range"><span class="std std-ref">EmbeddingRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_EmbeddingRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-embedding-range-iterator"><span class="std std-ref">EmbeddingRangeIterator</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_IncidenceRange.html#doxid-classgeode-1-1-relationships-1-1-incidence-range"><span class="std std-ref">IncidenceRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_IncidenceRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-incidence-range-iterator"><span class="std std-ref">IncidenceRangeIterator</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_InternalRange.html#doxid-classgeode-1-1-relationships-1-1-internal-range"><span class="std std-ref">InternalRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_InternalRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-internal-range-iterator"><span class="std std-ref">InternalRangeIterator</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range"><span class="std std-ref">ItemRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_ItemRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-item-range-iterator"><span class="std std-ref">ItemRangeIterator</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_RelationRange.html#doxid-classgeode-1-1-relationships-1-1-relation-range"><span class="std std-ref">RelationRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Relationships_RelationRangeIterator.html#doxid-classgeode-1-1-relationships-1-1-relation-range-iterator"><span class="std std-ref">RelationRangeIterator</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a0107dda6bbfb0071d6329d20205b3905"><span></span><span class="n">nb_components_with_relations</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a4842de4f1cd8f1bb4137b1b5e8cd8897"><span></span><span class="n">component_with_relation</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">relation_component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a099bb598985acdfb1bb2af8749c08378"><span></span><span class="n">nb_relations</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Relationships_RelationRange.html#doxid-classgeode-1-1-relationships-1-1-relation-range"><span class="std std-ref">RelationRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a22d12c66d2c27b559626f5e9a32c6a08"><span></span><span class="n">relations</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a86e7e04468eff2fd01df516b5543b3c0"><span></span><span class="n">nb_boundaries</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Relationships_BoundaryRange.html#doxid-classgeode-1-1-relationships-1-1-boundary-range"><span class="std std-ref">BoundaryRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a852350e5c01fff40efe09d9f4f47e649"><span></span><span class="n">boundaries</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a4de90840fa295f20551023864245fd50"><span></span><span class="n">nb_incidences</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Relationships_IncidenceRange.html#doxid-classgeode-1-1-relationships-1-1-incidence-range"><span class="std std-ref">IncidenceRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a2405f675bbf424d24a23c4ef437b3763"><span></span><span class="n">incidences</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a1c65ba1be8ae7d933f04839c03646a41"><span></span><span class="n">nb_internals</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Relationships_InternalRange.html#doxid-classgeode-1-1-relationships-1-1-internal-range"><span class="std std-ref">InternalRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1acbae9a8a78a2f81b2efeefd4174c9e1a"><span></span><span class="n">internals</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a6ac12a45837cf73be9e435da448fc421"><span></span><span class="n">nb_embeddings</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Relationships_EmbeddingRange.html#doxid-classgeode-1-1-relationships-1-1-embedding-range"><span class="std std-ref">EmbeddingRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1aa6eca48c2cd5508bfd6d9ff0e81759ce"><span></span><span class="n">embeddings</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a9ad4136a46eaaa74bc8fc88ce909c722"><span></span><span class="n">nb_items</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Relationships_ItemRange.html#doxid-classgeode-1-1-relationships-1-1-item-range"><span class="std std-ref">ItemRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1ac10212aedd5b82e372d3ff96b5f91471"><span></span><span class="n">items</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a3ae5359f185c221cfa4cfd2e52677d26"><span></span><span class="n">nb_collections</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Relationships_CollectionRange.html#doxid-classgeode-1-1-relationships-1-1-collection-range"><span class="std std-ref">CollectionRange</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a438b139a541ff30ff47406651ad96b9e"><span></span><span class="n">collections</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a82cd221591f5fdff4799c209c364b549"><span></span><span class="n">is_boundary</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">boundary</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">incidence</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a6138acef8b9971b5f40d4925bc35ac71"><span></span><span class="n">is_internal</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">internal</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">embedding</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a57d4e54f764e3053bd29dff88be2b1ac"><span></span><span class="n">is_item</span></span><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">item</span><span class="p">,</span> <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">collection</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_AttributeManager.html#doxid-classgeode-1-1-attribute-manager"><span class="std std-ref">AttributeManager</span></a><span></span><span class="o">&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a20eb06d7900f5dc8eb4c913edff21a36"><span></span><span class="n">relation_attribute_manager</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1ab47827593ea1a541e1a0e29732df135f"><span></span><span class="n">relation_index</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id1</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id2</span>
+        <span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="p">,</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a2abb7b7a95d618807da8156c033f5d9e"><span></span><span class="n">relation_from_index</span></span><span></span><span class="p">(</span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">component_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1a0dab2f54985d3932dbff14c1ede028e6"><span></span><span class="n">save_relationships</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-relationships-1a7f8a3250794013acebcbf718acdcbd42"><span class="std std-ref">remove_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">,</span> <span class="n">RelationshipsBuilderKey</span><span class="p">);</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-relationships-1ab8392df0e2b9c1a939aad02361928a11"><span class="std std-ref">add_boundary_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">boundary</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">incidence</span><span class="p">,</span>
+        <span class="n">RelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-relationships-1a57de7479e9fea1343feaf9c3475559f5"><span class="std std-ref">add_internal_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">internal</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">embedding</span><span class="p">,</span>
+        <span class="n">RelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-relationships-1a4cb50331febc11479034352fc8a547a0"><span class="std std-ref">add_item_in_collection</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">item</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">collection</span><span class="p">,</span>
+        <span class="n">RelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="#doxid-classgeode-1-1-relationships-1af521dbc5e36ad61baa0b5c35958c84d8"><span class="std std-ref">remove_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id1</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id2</span><span class="p">,</span>
+        <span class="n">RelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1ab9d7bcc02926109fe74b6d6dc1db9631"><span></span><span class="n">copy_relationships</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1afc1226ecaedc88b75713a97ea1b34ce5"><span class="std std-ref">ModelCopyMapping</span></a><span></span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">Relationships</span><span class="o">&amp;</span> <span class="n">relationships</span><span class="p">,</span>
+        <span class="n">RelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-relationships-1aa702a19e6aa4adbf78a60f0574525344"><span></span><span class="n">load_relationships</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">,</span> <span class="n">RelationshipsBuilderKey</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_Topology.html#doxid-classgeode-1-1-topology"><span class="std std-ref">Topology</span></a><span></span><span class="p">;</span></pre>
+</section>
+<section id="detailed-documentation">
+<span id="details-classgeode-1-1-relationships"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this heading">¶</a></h2>
+<p>This class stores all the relations between a set of components. Each relationship links two components. Relationship types are boundary and its dual incidence, and item and its dual collection. Components should be added through their uuids.</p>
+<section id="methods">
+<h3>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-relationships-1a7f8a3250794013acebcbf718acdcbd42"><span id="index-1"></span><span></span><span class="kt">void</span> <span class="n">remove_component</span><span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id</span><span class="p">,</span> <span class="n">RelationshipsBuilderKey</span><span class="p">)</span></pre>
+<p>Remove a component from the set of components registered by the <a class="reference internal" href="#doxid-classgeode-1-1-relationships"><span class="std std-ref">Relationships</span></a> and all its associated relationships</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>component_id</p></td>
+<td><p>Unique index of the component to remove</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-relationships-1ab8392df0e2b9c1a939aad02361928a11"><span id="index-2"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">add_boundary_relation</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">boundary</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">incidence</span><span class="p">,</span>
+    <span class="n">RelationshipsBuilderKey</span>
+    <span class="p">)</span></pre>
+<p>Add a new relationship of type boundary-incidence between two components</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-relationships-1a57de7479e9fea1343feaf9c3475559f5"><span id="index-3"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">add_internal_relation</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">internal</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">embedding</span><span class="p">,</span>
+    <span class="n">RelationshipsBuilderKey</span>
+    <span class="p">)</span></pre>
+<p>Add a new relationship of type internal-embedding between two components</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-relationships-1a4cb50331febc11479034352fc8a547a0"><span id="index-4"></span><a class="reference internal" href="namespace_geode.html#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">add_item_in_collection</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">item</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ComponentID.html#doxid-classgeode-1-1-component-i-d"><span class="std std-ref">ComponentID</span></a><span></span><span class="o">&amp;</span> <span class="n">collection</span><span class="p">,</span>
+    <span class="n">RelationshipsBuilderKey</span>
+    <span class="p">)</span></pre>
+<p>Add a new relationship of type item-collection between two components</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-relationships-1af521dbc5e36ad61baa0b5c35958c84d8"><span id="index-5"></span><span></span><span class="kt">void</span> <span class="n">remove_relation</span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id1</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_uuid.html#doxid-structgeode-1-1uuid"><span class="std std-ref">uuid</span></a><span></span><span class="o">&amp;</span> <span class="n">component_id2</span><span class="p">,</span>
+    <span class="n">RelationshipsBuilderKey</span>
+    <span class="p">)</span></pre>
+<p>Remove a relationship between two components</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_Relationships.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

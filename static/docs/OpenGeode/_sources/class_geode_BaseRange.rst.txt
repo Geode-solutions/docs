@@ -1,0 +1,44 @@
+.. index:: pair: class; geode::BaseRange
+.. _doxid-classgeode_1_1_base_range:
+
+template class geode::BaseRange
+===============================
+
+.. toctree::
+	:hidden:
+
+Base class for range-based iteration on custom range. See derived classes for usage.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <range.h>
+	
+	template <
+		typename Type,
+		template<typename> class NextOperator = IncrementOperator
+		>
+	class BaseRange
+	{
+	public:
+		// methods
+	
+		constexpr bool :target:`operator !=<doxid-classgeode_1_1_base_range_1a69556080208d11a4b31531cae37b4720>` (const BaseRange&) const;
+		void :target:`operator ++<doxid-classgeode_1_1_base_range_1afe90da29578e4e5022ffc71598163bfe>` ();
+		constexpr Type :target:`current<doxid-classgeode_1_1_base_range_1a940f5c94e6bc7bfab7ee89cf01e1570c>`() const;
+	};
+
+	// direct descendants
+
+	template <typename Type>
+	class :ref:`EraserRange<doxid-classgeode_1_1_eraser_range>`;
+
+	template <typename Type>
+	class :ref:`TIndices<doxid-classgeode_1_1_t_indices>`;
+
+	template <typename Type>
+	class :ref:`TRange<doxid-classgeode_1_1_t_range>`;
+
+	template <typename Type>
+	class :ref:`TReverseRange<doxid-classgeode_1_1_t_reverse_range>`;
