@@ -1,0 +1,28 @@
+.. index:: pair: class; geode::FrameFieldSmoother
+.. _doxid-classgeode_1_1_frame_field_smoother:
+
+class geode::FrameFieldSmoother
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <frame_field_smoother.h>
+	
+	class FrameFieldSmoother
+	{
+	public:
+		// construction
+	
+		:target:`FrameFieldSmoother<doxid-classgeode_1_1_frame_field_smoother_1a14426e78f0b6c6d9206e55e0d4c78cbe>`(:ref:`FrameField<doxid-classgeode_1_1_frame_field>`& frame_field);
+
+		// methods
+	
+		void :target:`initialize_frame_field<doxid-classgeode_1_1_frame_field_smoother_1a437eb3b59acdef7e7b2aa71f4f51f66b>`();
+	};

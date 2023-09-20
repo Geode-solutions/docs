@@ -1,0 +1,28 @@
+.. index:: pair: class; geode::FieldLines
+.. _doxid-classgeode_1_1_field_lines:
+
+class geode::FieldLines
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <field_lines.h>
+	
+	class FieldLines
+	{
+	public:
+		// construction
+	
+		:target:`FieldLines<doxid-classgeode_1_1_field_lines_1a2e530427090314a593f2303cb9e387fb>`(const :ref:`FrameField<doxid-classgeode_1_1_frame_field>`& frame_field);
+
+		// methods
+	
+		std::unique_ptr<EdgedCurve3D> :target:`compute_lines<doxid-classgeode_1_1_field_lines_1adffebace968e69a66a147faab103d04c>`();
+	};

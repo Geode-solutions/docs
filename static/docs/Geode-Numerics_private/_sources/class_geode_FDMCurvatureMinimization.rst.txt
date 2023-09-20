@@ -1,0 +1,34 @@
+.. index:: pair: class; geode::FDMCurvatureMinimization
+.. _doxid-classgeode_1_1_f_d_m_curvature_minimization:
+
+template class geode::FDMCurvatureMinimization
+==============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <FDM_curvature_minimization.h>
+	
+	template <index_t dimension>
+	class FDMCurvatureMinimization
+	{
+	public:
+		// construction
+	
+		:target:`FDMCurvatureMinimization<doxid-classgeode_1_1_f_d_m_curvature_minimization_1a698929338d97d6153afc2805e40f0ea0>`(
+			:ref:`ComputationGrid<doxid-classgeode_1_1_computation_grid>`<dimension>& grid,
+			const :ref:`DataConstraintsManager<doxid-classgeode_1_1_data_constraints_manager>`<dimension>& data_constraints
+			);
+
+		// methods
+	
+		void :target:`use_constraint_value_preconditioning<doxid-classgeode_1_1_f_d_m_curvature_minimization_1a3dcdadd2df7c9c1c861891e70cdc2811>`();
+		void :target:`use_scalar_function_preconditioning<doxid-classgeode_1_1_f_d_m_curvature_minimization_1a90bb34d9386e830138f4abf86190f566>`(absl::string_view function_name);
+		void :target:`compute_scalar_function<doxid-classgeode_1_1_f_d_m_curvature_minimization_1aae3f84690c7a8e111a896c1dff29293b>`(absl::string_view scalar_function_name);
+	};

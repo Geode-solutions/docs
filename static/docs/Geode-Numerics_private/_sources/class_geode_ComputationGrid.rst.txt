@@ -1,0 +1,55 @@
+.. index:: pair: class; geode::ComputationGrid
+.. _doxid-classgeode_1_1_computation_grid:
+
+template class geode::ComputationGrid
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <computation_grid.h>
+	
+	template <index_t dimension>
+	class ComputationGrid: public LightRegularGrid< dimension >
+	{
+	public:
+		// typedefs
+	
+		typedef typename Grid<dimension>:::ref:`CellIndices<doxid-classgeode_1_1_computation_grid_1a19daa708ee5ee480eb194304c1aee09f>` :target:`CellIndices<doxid-classgeode_1_1_computation_grid_1a19daa708ee5ee480eb194304c1aee09f>`;
+		typedef typename Grid<dimension>:::ref:`VertexIndices<doxid-classgeode_1_1_computation_grid_1a369be8694e16a713b69fee59388dd243>` :target:`VertexIndices<doxid-classgeode_1_1_computation_grid_1a369be8694e16a713b69fee59388dd243>`;
+
+		// fields
+	
+		static constexpr auto :target:`dim<doxid-classgeode_1_1_computation_grid_1a153091cd50b675004c04eb0edb279b82>` = dimension;
+
+		// construction
+	
+		:target:`ComputationGrid<doxid-classgeode_1_1_computation_grid_1a1d6fbc9eece62602afac15b684991c97>`(
+			Point<dimension> origin,
+			std::array<index_t, dimension> cells_number,
+			std::array<double, dimension> cells_length
+			);
+	
+		:target:`ComputationGrid<doxid-classgeode_1_1_computation_grid_1a8b0ffa2aecece9ba11f3c42a46097589>`(ComputationGrid<dimension>&& other);
+		:target:`ComputationGrid<doxid-classgeode_1_1_computation_grid_1ad4cdd9ca0c4e297344db98ff79a77b42>`(LightRegularGrid<dimension>&& other);
+
+		// methods
+	
+		index_t :target:`nb_computation_nodes<doxid-classgeode_1_1_computation_grid_1a52b4ed018a91d09b2ef811af82bbd1e6>`() const;
+		index_t :target:`grid_vertex_from_computation_node<doxid-classgeode_1_1_computation_grid_1a27cf81af792568a2f2240302fd1ef35f>`(index_t computation_node) const;
+		void :target:`set_node_values_attribute_name<doxid-classgeode_1_1_computation_grid_1a6ed7b8a9a574aa8620fab602a0896b0d>`(absl::string_view name);
+		virtual index_t :target:`nb_value_nodes<doxid-classgeode_1_1_computation_grid_1a0a38c4343759e122a20ce61de49c7c3c>`() const;
+		virtual void :target:`set_node_value<doxid-classgeode_1_1_computation_grid_1ab8eab643678b7307301ca6bc7d17554c>`(index_t value_node_id, double value);
+		virtual double :target:`get_node_value<doxid-classgeode_1_1_computation_grid_1a427cde1a2d6eb3b8fb09df8696f8ebb3>`(index_t value_node_id) const;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`CutGrid<doxid-classgeode_1_1_cut_grid>`;

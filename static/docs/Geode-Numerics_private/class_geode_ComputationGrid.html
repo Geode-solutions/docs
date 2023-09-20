@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::ComputationGrid &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::CutGrid" href="class_geode_CutGrid.html" />
+    <link rel="prev" title="namespace geode" href="namespace_geode.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-computationgrid">
+<span id="doxid-classgeode-1-1-computation-grid"></span><span id="index-0"></span><h1>template class geode::ComputationGrid<a class="headerlink" href="#template-class-geode-computationgrid" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;computation_grid.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">ComputationGrid</span><span class="p">:</span> <span class="k">public</span> <span class="n">LightRegularGrid</span><span class="o">&lt;</span> <span class="n">dimension</span> <span class="o">&gt;</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <span class="k">typename</span> <span class="n">Grid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><a class="reference internal" href="#doxid-classgeode-1-1-computation-grid-1a19daa708ee5ee480eb194304c1aee09f"><span class="std std-ref">CellIndices</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a19daa708ee5ee480eb194304c1aee09f"><span></span><span class="n">CellIndices</span></span><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <span class="k">typename</span> <span class="n">Grid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;::</span><a class="reference internal" href="#doxid-classgeode-1-1-computation-grid-1a369be8694e16a713b69fee59388dd243"><span class="std std-ref">VertexIndices</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a369be8694e16a713b69fee59388dd243"><span></span><span class="n">VertexIndices</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a153091cd50b675004c04eb0edb279b82"><span></span><span class="n">dim</span></span><span></span> <span class="o">=</span> <span class="n">dimension</span><span class="p">;</span>
+
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a1d6fbc9eece62602afac15b684991c97"><span></span><span class="n">ComputationGrid</span></span><span></span><span class="p">(</span>
+        <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">origin</span><span class="p">,</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="n">cells_number</span><span class="p">,</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;</span> <span class="n">cells_length</span>
+        <span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a8b0ffa2aecece9ba11f3c42a46097589"><span></span><span class="n">ComputationGrid</span></span><span></span><span class="p">(</span><span class="n">ComputationGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1ad4cdd9ca0c4e297344db98ff79a77b42"><span></span><span class="n">ComputationGrid</span></span><span></span><span class="p">(</span><span class="n">LightRegularGrid</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a52b4ed018a91d09b2ef811af82bbd1e6"><span></span><span class="n">nb_computation_nodes</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a27cf81af792568a2f2240302fd1ef35f"><span></span><span class="n">grid_vertex_from_computation_node</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">computation_node</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a6ed7b8a9a574aa8620fab602a0896b0d"><span></span><span class="n">set_node_values_attribute_name</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">name</span><span class="p">);</span>
+    <span class="k">virtual</span> <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a0a38c4343759e122a20ce61de49c7c3c"><span></span><span class="n">nb_value_nodes</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1ab8eab643678b7307301ca6bc7d17554c"><span></span><span class="n">set_node_value</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">value_node_id</span><span class="p">,</span> <span class="kt">double</span> <span class="n">value</span><span class="p">);</span>
+    <span class="k">virtual</span> <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-computation-grid-1a427cde1a2d6eb3b8fb09df8696f8ebb3"><span></span><span class="n">get_node_value</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">value_node_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_CutGrid.html#doxid-classgeode-1-1-cut-grid"><span class="std std-ref">CutGrid</span></a><span></span><span class="p">;</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_ComputationGrid.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,34 @@
+.. index:: pair: class; geode::CutGridFDMCurvatureMinimization
+.. _doxid-classgeode_1_1_cut_grid_f_d_m_curvature_minimization:
+
+template class geode::CutGridFDMCurvatureMinimization
+=====================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cut_grid_FDM_curvature_minimization.h>
+	
+	template <index_t dimension>
+	class CutGridFDMCurvatureMinimization
+	{
+	public:
+		// construction
+	
+		:target:`CutGridFDMCurvatureMinimization<doxid-classgeode_1_1_cut_grid_f_d_m_curvature_minimization_1a984d828fc74d92172ff27ec53328c50a>`(
+			:ref:`CutGrid<doxid-classgeode_1_1_cut_grid>`<dimension>& grid,
+			const :ref:`DataConstraintsManager<doxid-classgeode_1_1_data_constraints_manager>`<dimension>& data_constraints
+			);
+
+		// methods
+	
+		void :target:`use_constraint_value_preconditioning<doxid-classgeode_1_1_cut_grid_f_d_m_curvature_minimization_1ac57bc3d44af7563bec94051a0e781b7e>`();
+		void :target:`use_scalar_function_preconditioning<doxid-classgeode_1_1_cut_grid_f_d_m_curvature_minimization_1a7a7c556c0f401f063cd98cd9a77643a9>`(absl::string_view function_name);
+		void :target:`compute_scalar_function<doxid-classgeode_1_1_cut_grid_f_d_m_curvature_minimization_1aa69cc97b0d77cef52d0c9deda0aea44b>`(absl::string_view scalar_function_name);
+	};

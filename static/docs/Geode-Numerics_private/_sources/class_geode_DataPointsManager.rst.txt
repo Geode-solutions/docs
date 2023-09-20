@@ -1,0 +1,56 @@
+.. index:: pair: class; geode::DataPointsManager
+.. _doxid-classgeode_1_1_data_points_manager:
+
+template class geode::DataPointsManager
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <data_points_manager.h>
+	
+	template <index_t dimension>
+	class DataPointsManager: public :ref:`geode::DataConstraintsManager<doxid-classgeode_1_1_data_constraints_manager>`
+	{
+	public:
+		// construction
+	
+		:target:`DataPointsManager<doxid-classgeode_1_1_data_points_manager_1abae7e4d8f6377316fd27dadd6e3ff439>`();
+		:target:`DataPointsManager<doxid-classgeode_1_1_data_points_manager_1a0d14def7e2f572502eda8e040a3eb9c8>`(DataPointsManager<dimension>&& other);
+
+		// methods
+	
+		void :target:`load_data_points<doxid-classgeode_1_1_data_points_manager_1a9624534bbbaa7bbfe708bcc43e1dc1af>`(absl::string_view filename);
+		index_t :target:`add_data_point<doxid-classgeode_1_1_data_points_manager_1a9a20faa2a41fdf00b60133f90e088aeb>`(Point<dimension> position, double value, double weight);
+		void :target:`remove_data_point<doxid-classgeode_1_1_data_points_manager_1a77d1223a1ae721eb46127158332d09cf>`(index_t data_point_index);
+		void :target:`change_data_point_value<doxid-classgeode_1_1_data_points_manager_1aa1ac8b6674859d012b1b8c7af6af8b38>`(index_t data_point_index, double new_value);
+		void :target:`change_data_point_weight<doxid-classgeode_1_1_data_points_manager_1a67b23eb7491dc4401ca386ee8a3f4e98>`(index_t data_point_index, double new_weight);
+		virtual index_t :target:`nb_data_points<doxid-classgeode_1_1_data_points_manager_1a8fd6a1fe52fb1370efb05768e1d10b14>`() const;
+		virtual double :target:`data_points_mean_value<doxid-classgeode_1_1_data_points_manager_1aed4de1d3aecb6dd59944fc0592876825>`() const;
+		virtual const Point<dimension>& :target:`data_point_position<doxid-classgeode_1_1_data_points_manager_1a454b531925f0b47521b5ce3f5a7f048b>`(index_t data_point_index) const;
+		virtual double :target:`data_point_value<doxid-classgeode_1_1_data_points_manager_1a7d7935e1be1926cf108af1ac7c97ef8f>`(index_t data_point_index) const;
+		virtual double :target:`data_point_weight<doxid-classgeode_1_1_data_points_manager_1a14318e680506b6983421944bc4303aa6>`(index_t data_point_index) const;
+		void :target:`save_data_points_manager<doxid-classgeode_1_1_data_points_manager_1a3222db3e63c6cd0b84ceead4de825f0e>`(absl::string_view filename) const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		virtual index_t :ref:`nb_data_points<doxid-classgeode_1_1_data_constraints_manager_1a08b94106bf1a13cccd9237daf5dfc148>`() const = 0;
+		virtual double :ref:`data_points_mean_value<doxid-classgeode_1_1_data_constraints_manager_1af85ba6445e266f2dcf03dd344cad1fa8>`() const;
+		virtual const Point<dimension>& :ref:`data_point_position<doxid-classgeode_1_1_data_constraints_manager_1ade8b1933cc43fa78b3913320b0bfbcda>`(index_t data_point_index) const = 0;
+		virtual double :ref:`data_point_value<doxid-classgeode_1_1_data_constraints_manager_1a1e089859cad00d21220038daf1fa185e>`(index_t data_point_index) const = 0;
+		virtual double :ref:`data_point_weight<doxid-classgeode_1_1_data_constraints_manager_1a59fad37eecef76b92d22009922bd1598>`(index_t data_point_index) const = 0;
+

@@ -1,0 +1,75 @@
+.. index:: pair: class; geode::CutGrid
+.. _doxid-classgeode_1_1_cut_grid:
+
+template class geode::CutGrid
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cut_grid.h>
+	
+	template <index_t dimension>
+	class CutGrid: public :ref:`geode::ComputationGrid<doxid-classgeode_1_1_computation_grid>`
+	{
+	public:
+		// typedefs
+	
+		typedef typename Grid<dimension>:::ref:`CellIndices<doxid-classgeode_1_1_computation_grid_1a19daa708ee5ee480eb194304c1aee09f>` :target:`CellIndices<doxid-classgeode_1_1_cut_grid_1ab5ba44901c43d7c5851706347872a99f>`;
+		typedef typename Grid<dimension>:::ref:`VertexIndices<doxid-classgeode_1_1_computation_grid_1a369be8694e16a713b69fee59388dd243>` :target:`VertexIndices<doxid-classgeode_1_1_cut_grid_1aefc282868a0aa1c3ef3bfa34b0a54948>`;
+
+		// methods
+	
+		virtual index_t :target:`nb_value_nodes<doxid-classgeode_1_1_cut_grid_1adb999219ff815b894aeea3bdb885c12f>`() const;
+		void :target:`set_nb_value_nodes<doxid-classgeode_1_1_cut_grid_1a1059fcabcf1d74108f3ce84d057f6e6c>`(index_t new_nb_value_nodes);
+		virtual void :target:`set_node_value<doxid-classgeode_1_1_cut_grid_1a38ae1d0bc2d2969fc1fa2a6fb1615239>`(index_t value_node_id, double value);
+		virtual double :target:`get_node_value<doxid-classgeode_1_1_cut_grid_1a2ee4dbfca2d8e0b167d1ccd91c58836b>`(index_t value_node_id) const;
+	
+		virtual index_t :target:`node_index<doxid-classgeode_1_1_cut_grid_1ab1ee43a0a6fe81bb58ace4c0efaec0af>`(
+			const :ref:`CellIndices<doxid-classgeode_1_1_computation_grid_1a19daa708ee5ee480eb194304c1aee09f>`& cell_indices,
+			const :ref:`VertexIndices<doxid-classgeode_1_1_computation_grid_1a369be8694e16a713b69fee59388dd243>`& vertex_indices,
+			index_t cell_duplicate_index
+			) const = 0;
+	
+		virtual index_t :target:`cell_duplicate_index<doxid-classgeode_1_1_cut_grid_1a6a6abeaf8753b854580a5a6a22279ce2>`(
+			const :ref:`CellIndices<doxid-classgeode_1_1_computation_grid_1a19daa708ee5ee480eb194304c1aee09f>`& index,
+			local_index_t cell_node_id
+			) const = 0;
+	
+		virtual index_t :target:`cell_duplicate_index<doxid-classgeode_1_1_cut_grid_1a4326235bf9682a793b1496cc0eb73111>`(
+			const :ref:`CellIndices<doxid-classgeode_1_1_computation_grid_1a19daa708ee5ee480eb194304c1aee09f>`& index,
+			const Point<dimension>& position
+			) const = 0;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef typename Grid<dimension>:::ref:`CellIndices<doxid-classgeode_1_1_computation_grid_1a19daa708ee5ee480eb194304c1aee09f>` :ref:`CellIndices<doxid-classgeode_1_1_computation_grid_1a19daa708ee5ee480eb194304c1aee09f>`;
+		typedef typename Grid<dimension>:::ref:`VertexIndices<doxid-classgeode_1_1_computation_grid_1a369be8694e16a713b69fee59388dd243>` :ref:`VertexIndices<doxid-classgeode_1_1_computation_grid_1a369be8694e16a713b69fee59388dd243>`;
+
+		// fields
+	
+		static constexpr auto :ref:`dim<doxid-classgeode_1_1_computation_grid_1a153091cd50b675004c04eb0edb279b82>` = dimension;
+
+		// methods
+	
+		index_t :ref:`nb_computation_nodes<doxid-classgeode_1_1_computation_grid_1a52b4ed018a91d09b2ef811af82bbd1e6>`() const;
+		index_t :ref:`grid_vertex_from_computation_node<doxid-classgeode_1_1_computation_grid_1a27cf81af792568a2f2240302fd1ef35f>`(index_t computation_node) const;
+		void :ref:`set_node_values_attribute_name<doxid-classgeode_1_1_computation_grid_1a6ed7b8a9a574aa8620fab602a0896b0d>`(absl::string_view name);
+		virtual index_t :ref:`nb_value_nodes<doxid-classgeode_1_1_computation_grid_1a0a38c4343759e122a20ce61de49c7c3c>`() const;
+		virtual void :ref:`set_node_value<doxid-classgeode_1_1_computation_grid_1ab8eab643678b7307301ca6bc7d17554c>`(index_t value_node_id, double value);
+		virtual double :ref:`get_node_value<doxid-classgeode_1_1_computation_grid_1a427cde1a2d6eb3b8fb09df8696f8ebb3>`(index_t value_node_id) const;
+
