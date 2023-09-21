@@ -1,0 +1,58 @@
+.. index:: pair: class; geode::BRepVolumicInserter
+.. _doxid-classgeode_1_1_b_rep_volumic_inserter:
+
+class geode::BRepVolumicInserter
+================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_volumic_inserter.h>
+	
+	class BRepVolumicInserter
+	{
+	public:
+		// construction
+	
+		:target:`BRepVolumicInserter<doxid-classgeode_1_1_b_rep_volumic_inserter_1af6d56b998560597c4d24f3eb3ef37857>`(BRep&& brep);
+		:target:`BRepVolumicInserter<doxid-classgeode_1_1_b_rep_volumic_inserter_1a6e7ec421407f0dd6cb2b854a0a3ac893>`(BRepVolumicInserter&& inserter);
+
+		// methods
+	
+		void :target:`add_scalar_isovalues<doxid-classgeode_1_1_b_rep_volumic_inserter_1a2028da83a49799d02c841ce0290304b8>`(
+			absl::string_view scalar_function_name,
+			absl::Span<const double> scalar_function_values
+			);
+	
+		std::tuple<BRep, BRepMappings> :ref:`build<doxid-classgeode_1_1_b_rep_volumic_inserter_1a9b723b27778f0763bef6c223b72dd063>`() const;
+	};
+.. _details-classgeode_1_1_b_rep_volumic_inserter:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Methods
+-------
+
+.. index:: pair: function; build
+.. _doxid-classgeode_1_1_b_rep_volumic_inserter_1a9b723b27778f0763bef6c223b72dd063:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::tuple<BRep, BRepMappings> build() const
+
+Returns a new BRep with all the isovalues inserted as surfaces and the topology rebuilt. Also gives the "input to output" and "output to
+input" mappings between given and new BRep. Only the attributes marked as interpolable will be interpolated along the inserted surfaces.
+
