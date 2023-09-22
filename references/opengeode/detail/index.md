@@ -385,6 +385,13 @@ void copy_vertex_identifier_components(const Model & from, BuilderTo & builder_t
 ```
 
 
+### register_basic_pcontext
+
+```cpp
+void register_basic_pcontext(PContext & context)
+```
+
+
 ### build_model_boundaries
 
 ```cpp
@@ -396,13 +403,6 @@ void build_model_boundaries(const Section & model, SectionBuilder & builder)
 
 ```cpp
 void build_model_boundaries(const BRep & model, BRepBuilder & builder)
-```
-
-
-### register_basic_pcontext
-
-```cpp
-void register_basic_pcontext(PContext & context)
 ```
 
 

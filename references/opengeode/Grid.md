@@ -14,21 +14,21 @@ Inherits from CellArray<dimension>
 ### Grid
 
 ```cpp
-public void Grid<dimension>(const Grid<dimension> & )
+public void Grid<>(const Grid<> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Grid<dimension> & operator=(const Grid<dimension> & )
+public Grid<> & operator=(const Grid<> & )
 ```
 
 
 ### ~Grid
 
 ```cpp
-public void ~Grid<dimension>()
+public void ~Grid<>()
 ```
 
 
@@ -246,21 +246,21 @@ public void copy(const Grid<dimension> & grid, GridKey )
 ### Grid
 
 ```cpp
-protected void Grid<dimension>()
+protected void Grid<>()
 ```
 
 
 ### Grid
 
 ```cpp
-protected void Grid<dimension>(Grid<dimension> && other)
+protected void Grid<>(Grid<> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected Grid<dimension> & operator=(Grid<dimension> && other)
+protected Grid<> & operator=(Grid<> && other)
 ```
 
 

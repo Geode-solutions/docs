@@ -42,7 +42,6 @@ public void ~LightRegularGrid<dimension>()
 public index_t vertex_index(const VertexIndices & index)
 ```
 
-
 ### vertex_indices
 
 ```cpp
@@ -55,7 +54,6 @@ public VertexIndices vertex_indices(index_t index)
 ```cpp
 public index_t cell_index(const CellIndices & index)
 ```
-
 
 ### cell_indices
 
@@ -84,11 +82,13 @@ public AttributeManager & grid_vertex_attribute_manager()
 public index_t vertex_index(const VertexIndices & index)
 ```
 
+
 ### cell_index
 
 ```cpp
 public index_t cell_index(const CellIndices & index)
 ```
+
 
 
 

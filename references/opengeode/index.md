@@ -1161,8 +1161,9 @@ absl::optional<std::unique_ptr<TetrahedralSolid3D> > convert_solid_mesh_into_tet
 ### convert_grid_into_tetrahedral_solid
 
 ```cpp
-std::unique_ptr<TetrahedralSolid3D> convert_grid_into_tetrahedral_solid(const GridType & grid)
+std::unique_ptr<TetrahedralSolid3D> convert_grid_into_tetrahedral_solid(const Grid3D & grid)
 ```
+
 
 ### convert_solid_mesh_into_hybrid_solid
 
@@ -1175,13 +1176,6 @@ absl::optional<std::unique_ptr<HybridSolid3D> > convert_solid_mesh_into_hybrid_s
 
 ```cpp
 std::unique_ptr<SolidMesh3D> merge_solid_meshes(absl::Span<const std::reference_wrapper<const SolidMesh3D> > solids)
-```
-
-
-### convert_grid_into_tetrahedral_solid
-
-```cpp
-int convert_grid_into_tetrahedral_solid(const GridType & grid)
 ```
 
 
@@ -1198,6 +1192,32 @@ FixedArray brep_coordinate_reference_systems(const BRep & brep)
 FixedArray section_coordinate_reference_systems(const Section & section)
 ```
 
+
+### register_image_serialize_pcontext
+
+```cpp
+void register_image_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### register_image_deserialize_pcontext
+
+```cpp
+void register_image_deserialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to deserialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
 
 ### convert_surface_mesh_into_polygonal_surface
 
@@ -1279,32 +1299,6 @@ std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(co
 ```cpp
 std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
 ```
-
-### register_image_serialize_pcontext
-
-```cpp
-void register_image_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### register_image_deserialize_pcontext
-
-```cpp
-void register_image_deserialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to deserialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
 
 ### convert_surface_mesh_into_polygonal_surface
 
