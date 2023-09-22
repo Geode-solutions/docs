@@ -173,6 +173,7 @@ namespace geode
 	class_geode_OpenGeodeGraphBuilder.rst
 	class_geode_OpenGeodeHybridSolid.rst
 	class_geode_OpenGeodeHybridSolidBuilder.rst
+	class_geode_OpenGeodePointException.rst
 	class_geode_OpenGeodePointSet.rst
 	class_geode_OpenGeodePointSetBuilder.rst
 	class_geode_OpenGeodePolygonalSurface.rst
@@ -626,28 +627,28 @@ Overview
 	class :ref:`GenericMapping<doxid-classgeode_1_1_generic_mapping>`;
 
 	template <index_t dimension>
+	class :ref:`GenericMeshAccessor<TriangulatedSurface<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
+
+	template <index_t dimension>
+	class :ref:`GenericMeshAccessor<SurfaceMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4>`;
+
+	template <index_t dimension>
 	class :ref:`GenericMeshAccessor<TetrahedralSolid<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_tetrahedral_solid_3_01dimension_01_4_01_4>`;
 
 	template <index_t dimension>
 	class :ref:`GenericMeshAccessor<SolidMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_solid_mesh_3_01dimension_01_4_01_4>`;
 
 	template <index_t dimension>
-	class :ref:`GenericMeshAccessor<SurfaceMesh<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_surface_mesh_3_01dimension_01_4_01_4>`;
+	class :ref:`GenericMeshAccessor<PolygonalSurface<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_polygonal_surface_3_01dimension_01_4_01_4>`;
 
-	template <index_t dimension>
-	class :ref:`GenericMeshAccessor<PolyhedralSolid<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_polyhedral_solid_3_01dimension_01_4_01_4>`;
+	template <typename T>
+	class :ref:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor>`;
 
 	template <index_t dimension>
 	class :ref:`GenericMeshAccessor<EdgedCurve<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_edged_curve_3_01dimension_01_4_01_4>`;
 
 	template <index_t dimension>
-	class :ref:`GenericMeshAccessor<TriangulatedSurface<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
-
-	template <index_t dimension>
-	class :ref:`GenericMeshAccessor<PolygonalSurface<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_polygonal_surface_3_01dimension_01_4_01_4>`;
-
-	template <typename T>
-	class :ref:`GenericMeshAccessor<doxid-classgeode_1_1_generic_mesh_accessor>`;
+	class :ref:`GenericMeshAccessor<PolyhedralSolid<dimension>><doxid-classgeode_1_1_generic_mesh_accessor_3_01_polyhedral_solid_3_01dimension_01_4_01_4>`;
 
 	template <typename PointType>
 	class :ref:`GenericPlane<doxid-classgeode_1_1_generic_plane>`;
@@ -768,6 +769,9 @@ Overview
 
 	template <index_t dimension>
 	class :ref:`OpenGeodeHybridSolidBuilder<doxid-classgeode_1_1_open_geode_hybrid_solid_builder>`;
+
+	template <index_t dimension>
+	class :ref:`OpenGeodePointException<doxid-classgeode_1_1_open_geode_point_exception>`;
 
 	template <index_t dimension>
 	class :ref:`OpenGeodePointSet<doxid-classgeode_1_1_open_geode_point_set>`;
@@ -1508,6 +1512,7 @@ Overview
 		);
 
 	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1acb6e366b7d5e98cec7512044374355dd>`(:ref:`Point<doxid-classgeode_1_1_point>`);
+	:target:`ALIAS_1D_AND_2D_AND_3D<doxid-namespacegeode_1a93c9b438e9aa9e46da5fec8e287916a3>`(:ref:`OpenGeodePointException<doxid-classgeode_1_1_open_geode_point_exception>`);
 
 	template <index_t dimension>
 	std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :target:`lexicographic_mapping<doxid-namespacegeode_1a101892b33abd3a845f795edaeb9dd6a6>`(absl::Span<const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>> points);

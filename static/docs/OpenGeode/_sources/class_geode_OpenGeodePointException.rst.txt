@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::OpenGeodePointException
+.. _doxid-classgeode_1_1_open_geode_point_exception:
+
+template class geode::OpenGeodePointException
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <point.h>
+	
+	template <index_t dimension>
+	class OpenGeodePointException: public :ref:`geode::OpenGeodeException<doxid-classgeode_1_1_open_geode_exception>`
+	{
+	public:
+		// fields
+	
+		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`point<doxid-classgeode_1_1_open_geode_point_exception_1ad495acd47e5d31cbab4aa237b4f38ee5>`;
+
+		// construction
+	
+		template <typename... Args>
+		:target:`OpenGeodePointException<doxid-classgeode_1_1_open_geode_point_exception_1a190d460a9a306db68e54d7338628cc8c>`(
+			:ref:`Point<doxid-classgeode_1_1_point>`<dimension> point_in,
+			const Args&... message
+			);
+	};

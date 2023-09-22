@@ -25,3 +25,8 @@ try { ... } catch( ... ) { return :ref:`geode_lippincott() <doxid-namespacegeode
 		template <typename... Args>
 		:target:`OpenGeodeException<doxid-classgeode_1_1_open_geode_exception_1a0b89c86022db991fed656d1e35439ecc>`(const Args&... message);
 	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`OpenGeodePointException<doxid-classgeode_1_1_open_geode_point_exception>`;
