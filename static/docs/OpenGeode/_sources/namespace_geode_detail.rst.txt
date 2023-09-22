@@ -97,6 +97,7 @@ namespace geode::detail
 
 	// global variables
 
+	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 2>, 4> :target:`quadrangle_edge_vertices<doxid-namespacegeode_1_1detail_1adcf1d91997bbef9142515ea7f592539f>` { { { 0, 1 }, { 0, 2 }, { 2, 3 },                 { 1, 3 } } };
 	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 3>, 4> :target:`tetrahedron_facet_vertices<doxid-namespacegeode_1_1detail_1aacb41daae58ca0fa195c1853f1b09b5d>` { { { 1, 3, 2 }, { 0, 2, 3 }, { 3, 1, 0 },                 { 0, 1, 2 } } };
 	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 2>, 6> :target:`tetrahedron_edge_vertices<doxid-namespacegeode_1_1detail_1add7598fd43e5034e6e77f674d9549ad4>` { { { 0, 1 }, { 0, 2 }, { 0, 3 }, { 1, 2 },                 { 1, 3 }, { 2, 3 } } };
 	static constexpr std::array<std::array<:ref:`geode::local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>`, 4>, 6> :target:`hexahedron_facet_vertices<doxid-namespacegeode_1_1detail_1abf12ff103c7582b56934c84a2a20ff74>` { { { 0, 4, 5, 1 }, { 2, 6, 7, 3 },                 { 0, 3, 7, 4 }, { 1, 5, 6, 2 }, { 0, 1, 2, 3 },                 { 4, 7, 6, 5 } } };

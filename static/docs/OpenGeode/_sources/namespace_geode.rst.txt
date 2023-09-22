@@ -1785,11 +1785,9 @@ Overview
 		double axis_coordinate
 		);
 
+	:target:`ALIAS_3D<doxid-namespacegeode_1a1ddeb21714a09b8da27ca40858681e57>`(:ref:`Grid<doxid-classgeode_1_1_grid>`);
 	absl::optional<std::unique_ptr<TetrahedralSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_tetrahedral_solid<doxid-namespacegeode_1ad88abdc0180700dd94d4dc05d56f4149>`(const SolidMesh3D& solid);
-
-	template <class GridType>
-	std::unique_ptr<TetrahedralSolid3D> :target:`convert_grid_into_tetrahedral_solid<doxid-namespacegeode_1a32bd2fba815b9994b4d57195861490ef>`(const GridType& grid);
-
+	std::unique_ptr<TetrahedralSolid3D> opengeode_mesh_api :target:`convert_grid_into_tetrahedral_solid<doxid-namespacegeode_1ac18bf24558cfa2ba98f8a957193f1b5f>`(const Grid3D& grid);
 	absl::optional<std::unique_ptr<HybridSolid3D>> opengeode_mesh_api :target:`convert_solid_mesh_into_hybrid_solid<doxid-namespacegeode_1aee780b546697560d17bbab12c00af658>`(const SolidMesh3D& solid);
 	std::unique_ptr<SolidMesh3D> opengeode_mesh_api :target:`merge_solid_meshes<doxid-namespacegeode_1a07d4f079e9d7b110ac110ae09f301844>`(absl::Span<const std::reference_wrapper<const SolidMesh3D>> solids);
 
@@ -1922,8 +1920,6 @@ Overview
 
 	template <template<index_t> class Mesh, index_t dimension>
 	:ref:`NNSearch<doxid-classgeode_1_1_n_n_search>`<dimension> :target:`create_nn_search<doxid-namespacegeode_1abeee5ff5c5a7319611e59fe60ff6f740>`(const Mesh<dimension>& mesh);
-
-	:target:`ALIAS_3D<doxid-namespacegeode_1a1ddeb21714a09b8da27ca40858681e57>`(:ref:`Grid<doxid-classgeode_1_1_grid>`);
 
 	template <index_t dimension>
 	std::vector<typename :ref:`Grid<doxid-classgeode_1_1_grid>`<dimension>::CellIndices> :target:`rasterize_segment<doxid-namespacegeode_1a57b98dcfdf03f85bc30d00e97504fc7f>`(
