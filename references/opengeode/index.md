@@ -154,6 +154,7 @@
 * [OpenGeodeImageLibrary](OpenGeodeImageLibrary.md)
 * [OpenGeodeMeshLibrary](OpenGeodeMeshLibrary.md)
 * [OpenGeodeModelLibrary](OpenGeodeModelLibrary.md)
+* [OpenGeodePointException](OpenGeodePointException.md)
 * [OpenGeodePointSetBuilder](OpenGeodePointSetBuilder.md)
 * [OpenGeodePointSetInput](OpenGeodePointSetInput.md)
 * [OpenGeodePointSetOutput](OpenGeodePointSetOutput.md)
