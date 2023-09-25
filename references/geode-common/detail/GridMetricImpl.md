@@ -6,99 +6,77 @@
 ### GridMetricImpl
 
 ```cpp
-```cpp
 public void GridMetricImpl<dimension>(const Grid<dimension> & grid, string_view attribute_name)
-```
 ```
 
 
 ### GridMetricImpl
 
 ```cpp
-```cpp
 protected void GridMetricImpl<dimension>(const Grid<dimension> & grid)
-```
 ```
 
 
 ### grid
 
 ```cpp
-```cpp
 protected const Grid<dimension> & grid()
-```
 ```
 
 
 ### index_metric
 
-```cpp
 ```cpp
 protected double index_metric(const Index & index)
 ```
-```
 
 
 ### index_metric
 
 ```cpp
-```cpp
 protected double index_metric(index_t index)
-```
 ```
 
 
 ### paint_cell
 
 ```cpp
-```cpp
 protected void paint_cell(const Index & index, double metric)
-```
 ```
 
 
 ### replace_default
 
 ```cpp
-```cpp
 protected void replace_default(double default_metric)
-```
 ```
 
 
 ### average_metric
 
 ```cpp
-```cpp
 public double average_metric()
-```
 ```
 
 
 ### median_metric
 
 ```cpp
-```cpp
 public double median_metric()
-```
 ```
 
 
 ### minimal_metric
 
-```cpp
 ```cpp
 public double minimal_metric(const Segment<dimension> & segment)
 ```
-```
 
 
 ### minimal_metric
 
 ```cpp
-```cpp
 public double minimal_metric(const Triangle<dimension> & triangle)
-```
 ```
 
 

@@ -2,9 +2,7 @@
 
 
 ```cpp
-```cpp
 Inherits from SurfaceCollapseInfo
-```
 ```
 
 
@@ -12,9 +10,7 @@ Inherits from SurfaceCollapseInfo
 ## Members
 
 ```cpp
-```cpp
 public vector modified
-```
 ```
 
 

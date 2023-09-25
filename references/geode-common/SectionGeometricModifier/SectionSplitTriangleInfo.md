@@ -2,9 +2,7 @@
 
 
 ```cpp
-```cpp
 Inherits from ModelSplitTriangleInfo<2>
-```
 ```
 
 

@@ -2,9 +2,7 @@
 
 
 ```cpp
-```cpp
 Inherits from ModelCollapsePolygonEdgeInfo<2>
-```
 ```
 
 
