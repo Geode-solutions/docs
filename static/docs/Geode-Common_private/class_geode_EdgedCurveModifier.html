@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::EdgedCurveModifier &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::FileLicenseChecker" href="class_geode_FileLicenseChecker.html" />
+    <link rel="prev" title="template class geode::CustomGridMetric" href="class_geode_CustomGridMetric.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-edgedcurvemodifier">
+<span id="doxid-classgeode-1-1-edged-curve-modifier"></span><span id="index-0"></span><h1>template class geode::EdgedCurveModifier<a class="headerlink" href="#template-class-geode-edgedcurvemodifier" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;edged_curve_modifier.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">EdgedCurveModifier</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_VerticesModifier.html#doxid-classgeode-1-1-vertices-modifier"><span class="std std-ref">geode::VerticesModifier</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-edged-curve-modifier-1adbed168275a611b1d8089b270dc864ed"><span></span><span class="n">EdgedCurveModifier</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">EdgedCurve</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">curve</span><span class="p">,</span>
+        <span class="n">EdgedCurveBuilder</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">builder</span>
+        <span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-edged-curve-modifier-1ad9a61cd95f831b3e77595c512e6d1b6b"><span></span><span class="n">EdgedCurveModifier</span></span><span></span><span class="p">(</span><span class="n">EdgedCurveModifier</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-edged-curve-modifier-1a553dbffd4b277e8ae7a099ada35b8aab"><span></span><span class="n">is_edge_active</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1a7285707c860415a2dc3ead5c097bb8c5"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="n">index_t</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1a89a83b95c825a8866a56e9e0ecc902d4"><span class="std std-ref">split_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1aded8d8cd0bf12d83b9a078487fbffa1c"><span class="std std-ref">clean_edges</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1a15627e5266d1fc7b5c953011f7b7cde9"><span class="std std-ref">clean_vertices</span></a><span></span><span class="p">();</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1a6e42da248f85fb030f34ffee19330d64"><span class="std std-ref">clean</span></a><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+<section id="inherited-members">
+<h3>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h3>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_VerticesModifier.html#doxid-classgeode-1-1-vertices-modifier-1a880253238520a1b94353746206b81fa6"><span class="std std-ref">updated_vertex</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span></pre>
+</section>
+</section>
+<section id="detailed-documentation">
+<span id="details-classgeode-1-1-edged-curve-modifier"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this heading">¶</a></h2>
+<section id="methods">
+<h3>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-edged-curve-modifier-1a7285707c860415a2dc3ead5c097bb8c5"><span id="index-1"></span><span></span><span class="n">index_t</span> <span class="n">collapse_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Collapse an edge.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge_id</p></td>
+<td><p>Index of the edge to collapse.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the index of the collapse vertex.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-edged-curve-modifier-1a89a83b95c825a8866a56e9e0ecc902d4"><span id="index-2"></span><span></span><span class="n">index_t</span> <span class="n">split_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<p>Split an edge.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>edge_id</p></td>
+<td><p>Index of the edge to split.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Coordinates of the new point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>the index of the new vertex.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-edged-curve-modifier-1aded8d8cd0bf12d83b9a078487fbffa1c"><span id="index-3"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_edges</span><span class="p">()</span></pre>
+<p>Clean up the mesh removing inactive edges</p>
+<p class="rubric">Returns:</p>
+<p>old2new mappings for edges</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-edged-curve-modifier-1a15627e5266d1fc7b5c953011f7b7cde9"><span id="index-4"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="n">clean_vertices</span><span class="p">()</span></pre>
+<p>Clean up the mesh removing isolated vertices</p>
+<p class="rubric">Returns:</p>
+<p>old2new mappings for vertices</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-edged-curve-modifier-1a6e42da248f85fb030f34ffee19330d64"><span id="index-5"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">clean</span><span class="p">()</span></pre>
+<p>Clean up the mesh removing inactive edges, isolated vertices.</p>
+<p class="rubric">Returns:</p>
+<p>old2new mappings for edges and vertices.</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_EdgedCurveModifier.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

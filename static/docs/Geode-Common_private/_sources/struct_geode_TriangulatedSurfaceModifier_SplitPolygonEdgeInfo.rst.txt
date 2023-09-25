@@ -1,0 +1,25 @@
+.. index:: pair: struct; geode::TriangulatedSurfaceModifier::SplitPolygonEdgeInfo
+.. _doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_polygon_edge_info:
+
+struct geode::TriangulatedSurfaceModifier::SplitPolygonEdgeInfo
+===============================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier.h>
+	
+	struct SplitPolygonEdgeInfo
+	{
+		// fields
+	
+		index_t :target:`vertex<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_polygon_edge_info_1ae789e9abba4e172a7f34cbb95b18f078>` { NO_ID };
+		:ref:`PolygonEdgeInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_polygon_edge_info>` :target:`left<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_polygon_edge_info_1af46d8039d620475b6f94030f69c9a6a6>`;
+		:ref:`PolygonEdgeInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_polygon_edge_info>` :target:`right<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_polygon_edge_info_1a6f44c128f7a7979b12e73329a496e67f>`;
+	};

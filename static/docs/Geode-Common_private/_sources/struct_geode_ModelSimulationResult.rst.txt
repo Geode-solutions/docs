@@ -1,0 +1,35 @@
+.. index:: pair: struct; geode::ModelSimulationResult
+.. _doxid-structgeode_1_1_model_simulation_result:
+
+struct geode::ModelSimulationResult
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	struct ModelSimulationResult
+	{
+		// fields
+	
+		std::vector<uuid> :target:`invalid_lines<doxid-structgeode_1_1_model_simulation_result_1a61c23c24cbc5fc242d07e61ba7b15832>`;
+		ModelComponentMeshEdges::SurfaceEdges :target:`invalid_surface_edges<doxid-structgeode_1_1_model_simulation_result_1aa9c75062b6cd258fc071686ff2ecab4e>`;
+		std::vector<uuid> :target:`invalid_surfaces<doxid-structgeode_1_1_model_simulation_result_1a9c7465676e09d70fe6ae0af0a2912b40>`;
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_model_simulation_result_1ae27281cb60ed99e8f2dd312670f0fcfa>` () const;
+		bool :target:`is_valid<doxid-structgeode_1_1_model_simulation_result_1a5ead0470e9328963fe4154d485123194>`() const;
+	};
+
+	// direct descendants
+
+	struct :ref:`BRepSimulationResult<doxid-structgeode_1_1_b_rep_simulation_result>`;
+	struct :ref:`SectionSimulationResult<doxid-structgeode_1_1_section_simulation_result>`;

@@ -1,0 +1,68 @@
+.. index:: pair: class; geode::SolidPathFinder
+.. _doxid-classgeode_1_1_solid_path_finder:
+
+class geode::SolidPathFinder
+============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+The objective of this class is to find paths inside TetrahedralSolid3D. :ref:`More...<details-classgeode_1_1_solid_path_finder>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <path_finder.h>
+	
+	class SolidPathFinder
+	{
+	public:
+		// construction
+	
+		:ref:`SolidPathFinder<doxid-classgeode_1_1_solid_path_finder_1a4c3b84a202eadd603d163839912df22c>`(const TetrahedralSolid3D& solid, index_t begin, index_t end);
+
+		// methods
+	
+		std::vector<:ref:`SolidPath<doxid-structgeode_1_1_solid_path>`> :target:`find_path<doxid-classgeode_1_1_solid_path_finder_1aa044d06e1ec4c568bb5acfc7f8448b15>`() const;
+	};
+.. _details-classgeode_1_1_solid_path_finder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+The objective of this class is to find paths inside TetrahedralSolid3D. As an example, this class is able to find a rectilinear path between two vertices. This class may be derived for custom path findings.
+
+Construction
+------------
+
+.. index:: pair: function; SolidPathFinder
+.. _doxid-classgeode_1_1_solid_path_finder_1a4c3b84a202eadd603d163839912df22c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	SolidPathFinder(const TetrahedralSolid3D& solid, index_t begin, index_t end)
+
+Find a rectilinear path between two vertices.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+	:widths: 20 80
+
+	*
+		- begin
+
+		- Index of the cut starting vertex
+
+	*
+		- end
+
+		- Index of the cut ending vertex.
+

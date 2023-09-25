@@ -1,0 +1,48 @@
+.. index:: pair: struct; geode::BRepSimulationResult
+.. _doxid-structgeode_1_1_b_rep_simulation_result:
+
+struct geode::BRepSimulationResult
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BRepSimulationResult: public :ref:`geode::ModelSimulationResult<doxid-structgeode_1_1_model_simulation_result>`
+	{
+		// fields
+	
+		BRepComponentMeshEdges::BlockEdges :target:`invalid_block_edges<doxid-structgeode_1_1_b_rep_simulation_result_1a89dc20f016bbe25c3adf55a5b8c9f014>`;
+		std::vector<uuid> :target:`invalid_blocks<doxid-structgeode_1_1_b_rep_simulation_result_1a2adfbc1af1314c4ff7e98cb4fb2d655c>`;
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_b_rep_simulation_result_1a3373c890b58d625b7cc36c1ec78bf652>` () const;
+		bool :target:`is_valid<doxid-structgeode_1_1_b_rep_simulation_result_1aac620983ce35ef773ba098a77488e6e8>`() const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		std::vector<uuid> :ref:`invalid_lines<doxid-structgeode_1_1_model_simulation_result_1a61c23c24cbc5fc242d07e61ba7b15832>`;
+		ModelComponentMeshEdges::SurfaceEdges :ref:`invalid_surface_edges<doxid-structgeode_1_1_model_simulation_result_1aa9c75062b6cd258fc071686ff2ecab4e>`;
+		std::vector<uuid> :ref:`invalid_surfaces<doxid-structgeode_1_1_model_simulation_result_1a9c7465676e09d70fe6ae0af0a2912b40>`;
+
+		// methods
+	
+		:ref:`operator bool<doxid-structgeode_1_1_model_simulation_result_1ae27281cb60ed99e8f2dd312670f0fcfa>` () const;
+		bool :ref:`is_valid<doxid-structgeode_1_1_model_simulation_result_1a5ead0470e9328963fe4154d485123194>`() const;
+

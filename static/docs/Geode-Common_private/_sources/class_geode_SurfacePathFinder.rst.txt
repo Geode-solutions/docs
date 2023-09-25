@@ -1,0 +1,27 @@
+.. index:: pair: class; geode::SurfacePathFinder
+.. _doxid-classgeode_1_1_surface_path_finder:
+
+template class geode::SurfacePathFinder
+=======================================
+
+.. toctree::
+	:hidden:
+
+The objective of this class is to find paths inside TrianguledSurface< dimension >. This class may be derived for custom path findings.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_path_finder.h>
+	
+	template <index_t dimension>
+	class SurfacePathFinder
+	{
+	public:
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`SurfaceSegmentFinder<doxid-classgeode_1_1_surface_segment_finder>`;

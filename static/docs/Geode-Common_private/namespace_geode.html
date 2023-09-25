@@ -1,0 +1,1812 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>namespace geode &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="namespace geode::detail" href="namespace_geode_detail.html" />
+    <link rel="prev" title="Global Namespace" href="global.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="namespace-geode">
+<span id="doxid-namespacegeode"></span><span id="index-0"></span><h1>namespace geode<a class="headerlink" href="#namespace-geode" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="k">namespace</span> <span class="n">geode</span> <span class="p">{</span>
+
+<span class="c1">// namespaces</span>
+
+<span class="k">namespace</span> <a class="reference internal" href="namespace_geode_detail.html#doxid-namespacegeode-1-1detail"><span class="std std-ref">geode::detail</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// typedefs</span>
+
+<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1ae9864a98f4db0737bb05ca34835a671f"><span class="std std-ref">EdgeMapping</span></a><span></span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a54b0871837c233adb2d5b88a496cdd7a"><span></span><span class="n">OrientedEdgeMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1a940546afc1c9ff9d7a0285a1377285c5"><span class="std std-ref">EdgeMultiMapping</span></a><span></span><span class="p">,</span> <span class="kt">bool</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1bab4ec7e9ccefea836c5553826d6d3b"><span></span><span class="n">OrientedEdgeMultiMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="class_geode_ModuleLicenseChecker.html#doxid-classgeode-1-1-module-license-checker"><span class="std std-ref">ModuleLicenseChecker</span></a><span></span><span class="o">&lt;</span><span class="n">Common</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afae082621c1328dae00d84e99da7e9ed"><span></span><span class="n">CommonLicenseChecker</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3df0f1612915133946450acb704655b8"><span></span><span class="n">VertexMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae9864a98f4db0737bb05ca34835a671f"><span></span><span class="n">EdgeMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0fe3791ddb7ee08d858458346d5f1367"><span></span><span class="n">FacetMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af3ede97a06831da5d71e5a7212f089cc"><span></span><span class="n">TriangleMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a06665a8e2f6484c2bcaa061ae3b04ca5"><span></span><span class="n">TetrahedronMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a981fe588540e18c37bf329ddf946ecff"><span></span><span class="n">VertexMultiMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a940546afc1c9ff9d7a0285a1377285c5"><span></span><span class="n">EdgeMultiMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9f8b3d4c75c6f9208940640c573c9e5a"><span></span><span class="n">FacetMultiMapping</span></span><span></span><span class="p">;</span>
+<span class="k">typedef</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a655dcda7e13504c6dfa582021f76a42c"><span></span><span class="n">TetrahedronMultiMapping</span></span><span></span><span class="p">;</span>
+
+<span class="c1">// enums</span>
+
+<span class="k">enum</span> <a class="reference internal" href="enum_geode_SplitSide.html#doxid-namespacegeode-1a379962424c8a834ac6bc5800259a57de"><span class="std std-ref">SplitSide</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// structs</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepCollapseEdgeValidity.html#doxid-structgeode-1-1-b-rep-collapse-edge-validity"><span class="std std-ref">BRepCollapseEdgeValidity</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepElementsAfterOperation.html#doxid-structgeode-1-1-b-rep-elements-after-operation"><span class="std std-ref">BRepElementsAfterOperation</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_CutPatchException.html#doxid-structgeode-1-1-cut-patch-exception"><span class="std std-ref">CutPatchException</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_CutPathException.html#doxid-structgeode-1-1-cut-path-exception"><span class="std std-ref">CutPathException</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_EdgeSplit.html#doxid-structgeode-1-1-edge-split"><span class="std std-ref">EdgeSplit</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_FacetSplit.html#doxid-structgeode-1-1-facet-split"><span class="std std-ref">FacetSplit</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_GeometricSurfacePath.html#doxid-structgeode-1-1-geometric-surface-path"><span class="std std-ref">GeometricSurfacePath</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_Mapping-2.html#doxid-structgeode-1-1-mapping-3-01index-t-01-4"><span class="std std-ref">Mapping&lt;index_t&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelCollapseEdgeValidity.html#doxid-structgeode-1-1-model-collapse-edge-validity"><span class="std std-ref">ModelCollapseEdgeValidity</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelCollapsePolygonEdgeInfo.html#doxid-structgeode-1-1-model-collapse-polygon-edge-info"><span class="std std-ref">ModelCollapsePolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelElementsAfterOperation.html#doxid-structgeode-1-1-model-elements-after-operation"><span class="std std-ref">ModelElementsAfterOperation</span></a><span></span><span class="p">;</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelSimulationResult.html#doxid-structgeode-1-1-model-simulation-result"><span class="std std-ref">ModelSimulationResult</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelSplitPolygonEdgeInfo.html#doxid-structgeode-1-1-model-split-polygon-edge-info"><span class="std std-ref">ModelSplitPolygonEdgeInfo</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelSplitTriangleInfo.html#doxid-structgeode-1-1-model-split-triangle-info"><span class="std std-ref">ModelSplitTriangleInfo</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_Modifier.html#doxid-structgeode-1-1-modifier-3-01-tetrahedral-solid3-d-01-4"><span class="std std-ref">Modifier&lt;TetrahedralSolid3D&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_Modifier-2.html#doxid-structgeode-1-1-modifier-3-01-triangulated-surface-3-01dimension-01-4-01-4"><span class="std std-ref">Modifier&lt;TriangulatedSurface&lt;dimension&gt;&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_Modifier-3.html#doxid-structgeode-1-1-modifier-3-01-section-01-4"><span class="std std-ref">Modifier&lt;Section&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_Modifier-4.html#doxid-structgeode-1-1-modifier-3-01-edged-curve-3-01dimension-01-4-01-4"><span class="std std-ref">Modifier&lt;EdgedCurve&lt;dimension&gt;&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_Modifier-5.html#doxid-structgeode-1-1-modifier-3-01-b-rep-01-4"><span class="std std-ref">Modifier&lt;BRep&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Data</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_Modifier-6.html#doxid-structgeode-1-1-modifier"><span class="std std-ref">Modifier</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_MultiMapping-2.html#doxid-structgeode-1-1-multi-mapping-3-01index-t-01-4"><span class="std std-ref">MultiMapping&lt;index_t&gt;</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_PolygonData.html#doxid-structgeode-1-1-polygon-data"><span class="std std-ref">PolygonData</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_PolygonEdgeData.html#doxid-structgeode-1-1-polygon-edge-data"><span class="std std-ref">PolygonEdgeData</span></a><span></span><span class="p">;</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionElementsAfterOperation.html#doxid-structgeode-1-1-section-elements-after-operation"><span class="std std-ref">SectionElementsAfterOperation</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidCollapseEdgeValidity.html#doxid-structgeode-1-1-solid-collapse-edge-validity"><span class="std std-ref">SolidCollapseEdgeValidity</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidPatch.html#doxid-structgeode-1-1-solid-patch"><span class="std std-ref">SolidPatch</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SolidPath.html#doxid-structgeode-1-1-solid-path"><span class="std std-ref">SolidPath</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SplitInfo.html#doxid-structgeode-1-1-split-info"><span class="std std-ref">SplitInfo</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SurfaceCollapseEdgeValidity.html#doxid-structgeode-1-1-surface-collapse-edge-validity"><span class="std std-ref">SurfaceCollapseEdgeValidity</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SurfaceCutPathInfo.html#doxid-structgeode-1-1-surface-cut-path-info"><span class="std std-ref">SurfaceCutPathInfo</span></a><span></span><span class="p">;</span>
+
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SurfacePath.html#doxid-structgeode-1-1-surface-path"><span class="std std-ref">SurfacePath</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SurfacePathFinderException.html#doxid-structgeode-1-1-surface-path-finder-exception"><span class="std std-ref">SurfacePathFinderException</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// classes</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRepGeometricModifier.html#doxid-classgeode-1-1-b-rep-geometric-modifier"><span class="std std-ref">BRepGeometricModifier</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_BRepGridMetric.html#doxid-classgeode-1-1-b-rep-grid-metric"><span class="std std-ref">BRepGridMetric</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_ConstantMetric.html#doxid-classgeode-1-1-constant-metric"><span class="std std-ref">ConstantMetric</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_CustomGridMetric.html#doxid-classgeode-1-1-custom-grid-metric"><span class="std std-ref">CustomGridMetric</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_EdgedCurveModifier.html#doxid-classgeode-1-1-edged-curve-modifier"><span class="std std-ref">EdgedCurveModifier</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_FileLicenseChecker.html#doxid-classgeode-1-1-file-license-checker"><span class="std std-ref">FileLicenseChecker</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_GridMetric.html#doxid-classgeode-1-1-grid-metric"><span class="std std-ref">GridMetric</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_Metric.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_ModuleLicenseChecker.html#doxid-classgeode-1-1-module-license-checker"><span class="std std-ref">ModuleLicenseChecker</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_SectionGeometricModifier.html#doxid-classgeode-1-1-section-geometric-modifier"><span class="std std-ref">SectionGeometricModifier</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SolidPathFinder.html#doxid-classgeode-1-1-solid-path-finder"><span class="std std-ref">SolidPathFinder</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SurfacePathFinder.html#doxid-classgeode-1-1-surface-path-finder"><span class="std std-ref">SurfacePathFinder</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SurfaceSegmentFinder.html#doxid-classgeode-1-1-surface-segment-finder"><span class="std std-ref">SurfaceSegmentFinder</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_SurfaceSegmentFinder2D.html#doxid-classgeode-1-1-surface-segment-finder2-d"><span class="std std-ref">SurfaceSegmentFinder2D</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_SurfaceSegmentFinder3D.html#doxid-classgeode-1-1-surface-segment-finder3-d"><span class="std std-ref">SurfaceSegmentFinder3D</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TetrahedralSolidEpsilonModifier.html#doxid-classgeode-1-1-tetrahedral-solid-epsilon-modifier"><span class="std std-ref">TetrahedralSolidEpsilonModifier</span></a><span></span><span class="p">;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier"><span class="std std-ref">TetrahedralSolidModifier</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TriangulatedSurfaceEpsilonModifier.html#doxid-classgeode-1-1-triangulated-surface-epsilon-modifier"><span class="std std-ref">TriangulatedSurfaceEpsilonModifier</span></a><span></span><span class="p">;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TriangulatedSurfaceModifier.html#doxid-classgeode-1-1-triangulated-surface-modifier"><span class="std std-ref">TriangulatedSurfaceModifier</span></a><span></span><span class="p">;</span>
+
+<span class="k">class</span> <a class="reference internal" href="class_geode_VerticesModifier.html#doxid-classgeode-1-1-vertices-modifier"><span class="std std-ref">VerticesModifier</span></a><span></span><span class="p">;</span>
+
+<span class="c1">// global variables</span>
+
+<span class="k">static</span> <span class="k">constexpr</span> <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abd624419c33a1b81e85404ea231a0406"><span></span><span class="n">Common</span></span><span></span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;Common&quot;</span><span class="p">;</span>
+
+<span class="c1">// global functions</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad1dda6606b61207b70696cadfc1e8c98"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_common_core_api</span><span class="p">,</span> <span class="n">CommonCore</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7e20432e19e00a3bd1850eee20d236c3"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_common_cutter_solid_api</span><span class="p">,</span> <span class="n">CommonCutterSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3b691d4711522d638d7d8f1b087e597a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aca0fde735cff4e277ede564650324fd0"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3fbc1fb49f0ca7c4ea4744e735440007"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a80b5a064401aa01835668d57032444e2"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aaf755b9136ab518d12e2fa75dd8bdd12"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Triangle</span><span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a46b49bd2622515911e800365ae5dec27"><span class="std std-ref">cut_along_patch</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier"><span class="std std-ref">TetrahedralSolidModifier</span></a><span></span><span class="o">&amp;</span> <span class="n">modifier</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">PatchFrontEdge</span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1acea856865b9a01ea04c1f879b996e70a"><span class="std std-ref">cut_along_path</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier"><span class="std std-ref">TetrahedralSolidModifier</span></a><span></span><span class="o">&amp;</span> <span class="n">modifier</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SolidPath.html#doxid-structgeode-1-1-solid-path"><span class="std std-ref">SolidPath</span></a><span></span><span class="o">&gt;</span> <span class="n">path_splits</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aedbecdec51423415b76d81966d6edacf"><span></span><span class="n">cut_along_path</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier"><span class="std std-ref">TetrahedralSolidModifier</span></a><span></span><span class="o">&amp;</span> <span class="n">modifier</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5e137475587bb980db47ebc1c85430b1"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_common_cutter_surface_api</span><span class="p">,</span> <span class="n">CommonCutterSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac5ecef06abef60896357a8eb77586520"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad2a6b2e5e7f3cabdaf703bb6c52c9eed"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_SurfaceCutPathInfo.html#doxid-structgeode-1-1-surface-cut-path-info"><span class="std std-ref">SurfaceCutPathInfo</span></a><span></span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_SurfaceCutPathInfo.html#doxid-structgeode-1-1-surface-cut-path-info"><span class="std std-ref">SurfaceCutPathInfo</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab5a4f371a4336d06b5c0b3f509de07fb"><span></span><span class="n">cut_along_path</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_TriangulatedSurfaceModifier.html#doxid-classgeode-1-1-triangulated-surface-modifier"><span class="std std-ref">TriangulatedSurfaceModifier</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">modifier</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_GeometricSurfacePath.html#doxid-structgeode-1-1-geometric-surface-path"><span class="std std-ref">GeometricSurfacePath</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">path_splits</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SurfaceCutPathInfo.html#doxid-structgeode-1-1-surface-cut-path-info"><span class="std std-ref">SurfaceCutPathInfo</span></a><span></span><span class="o">&lt;</span><span class="mi">2</span><span class="o">&gt;</span> <span class="n">geode_common_cutter_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a86891ed8c2695f074dabfe34bf663b43"><span></span><span class="n">cut_along_path</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">TriangulatedSurfaceModifier2D</span><span class="o">&amp;</span> <span class="n">modifier</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9fc374c0a89e96e09ba3f518abe2341d"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_GeometricSurfacePath.html#doxid-structgeode-1-1-geometric-surface-path"><span class="std std-ref">GeometricSurfacePath</span></a><span></span><span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">GeometricSurfacePath2D</span><span class="o">&gt;</span> <span class="n">geode_common_cutter_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa01a2e2353edd1a8fb5b271d31b4dca5"><span></span><span class="n">determine_cuts</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SurfacePath.html#doxid-structgeode-1-1-surface-path"><span class="std std-ref">geode::SurfacePath</span></a><span></span><span class="o">&gt;</span> <span class="n">path_splits</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">GeometricSurfacePath3D</span><span class="o">&gt;</span> <span class="n">geode_common_cutter_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a560e11ef71319023220ec1bfe13197b8"><span></span><span class="n">determine_cuts</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Plane</span><span class="o">&amp;</span> <span class="n">plane</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SurfacePath.html#doxid-structgeode-1-1-surface-path"><span class="std std-ref">geode::SurfacePath</span></a><span></span><span class="o">&gt;</span> <span class="n">path_splits</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a504bb34b6ea51d563984b00589d5001d"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1af40a127c86216f0ba2c8d1276fe61644"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a995b8f5f0b0ac39cbe7af64fd0506205"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Block</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aec45feff83bfe89a3608ad215c769920"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Grid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0418407296b015103c7578c9c9c9a737"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Block</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1ddeb21714a09b8da27ca40858681e57"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Grid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a92ea6140d3ffdcf28cfbb0468402c3a3"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_common_metric_api</span><span class="p">,</span> <span class="n">CommonMetric</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae6e689ab449ad55fffa309d356c002a0"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_ConstantMetric.html#doxid-classgeode-1-1-constant-metric"><span class="std std-ref">ConstantMetric</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad52827c3ed9c1440ecaf3d17e40d432c"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_CustomGridMetric.html#doxid-classgeode-1-1-custom-grid-metric"><span class="std std-ref">CustomGridMetric</span></a><span></span><span class="p">);</span>
+
+<span class="kt">double</span> <span class="n">geode_common_metric_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5fd1f7bec57d99b5b7fec2e81ecfa2a3"><span></span><span class="n">minimal_metric</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">CustomGridMetric3D</span><span class="o">&amp;</span> <span class="n">metric</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Tetrahedron</span><span class="o">&amp;</span> <span class="n">tetrahedron</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab37389a784cc08889088d057d6745c8e"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurve</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a55897b30a3ff5e25684f4268a974caad"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">PointSet</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a713615f1e1f632a857fbbda376b9b832"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Segment</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae5a407c359cdfed3035da2857149c7c4"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_GridMetric.html#doxid-classgeode-1-1-grid-metric"><span class="std std-ref">GridMetric</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1afb6e6b42596c062c9d8764d858209433"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1acccc96aede5f0687fbbeb3c7a80dde02"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_Metric.html#doxid-classgeode-1-1-metric"><span class="std std-ref">Metric</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aef14991cbf3e087f0360c30d1ea9194b"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_common_modifier_common_api</span><span class="p">,</span> <span class="n">CommonModifierCommon</span><span class="p">);</span>
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">geode_common_modifier_common_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1af2e70f64eee004f3002873a2f84d9220"><span></span><span class="n">extract_mappings_from_split_info</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SplitInfo.html#doxid-structgeode-1-1-split-info"><span class="std std-ref">SplitInfo</span></a><span></span><span class="o">&gt;</span> <span class="n">split_info</span><span class="p">);</span>
+
+<span class="kt">void</span> <span class="n">geode_common_modifier_common_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abfbfa86c7bc2c9742c4c95e2e1e1b1bd"><span></span><span class="n">update_vertex_mappings</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="#doxid-namespacegeode-1a981fe588540e18c37bf329ddf946ecff"><span class="std std-ref">geode::VertexMultiMapping</span></a><span></span><span class="o">&gt;&amp;</span> <span class="n">vertex_multi_mappings</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a981fe588540e18c37bf329ddf946ecff"><span class="std std-ref">geode::VertexMultiMapping</span></a><span></span><span class="o">&amp;</span> <span class="n">collapse_mapping</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a03f85f290c26e7f47af72ee7e6376e84"><span></span><span class="n">add_mappings_in_multi_mappings</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;&amp;</span> <span class="n">multi_mappings</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <span class="n">new_mappings</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a51420c6569ed676b3aea3662b8916ffb"><span></span><span class="n">process_mapping_element</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">geode::Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">element</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_set</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">to_remove</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">new_to_old</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a677d786d9de7ae023085808c24b03000"><span></span><span class="n">process_mapping_element</span></span><span></span><span class="p">(</span>
+    <a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">geode::MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">element</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_set</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span> <span class="n">to_remove</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">flat_hash_map</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">InlinedVector</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="mi">1</span><span class="o">&gt;&gt;&amp;</span> <span class="n">new_to_olds</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">no_value</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="p">,</span> <span class="k">typename</span> <span class="n">MappingType</span><span class="p">,</span> <span class="k">typename</span> <span class="n">NewToOldMap</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab8a5fed1171cccd934981effd0b9298d"><span></span><span class="n">update_mappings</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">MappingType</span><span class="o">&gt;&amp;</span> <span class="n">mappings</span><span class="p">,</span>
+    <span class="n">NewToOldMap</span><span class="o">&amp;</span> <span class="n">new_to_old</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">no_value</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab111240fe8fa96fc5b1005232f8c9209"><span></span><span class="n">update_mappings</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">geode::Mapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;&amp;</span> <span class="n">mappings</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">no_value</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aed78bf3f2539f5f3dc9f4780b85598de"><span></span><span class="n">update_multi_mappings</span></span><span></span><span class="p">(</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="struct_geode_MultiMapping.html#doxid-structgeode-1-1-multi-mapping"><span class="std std-ref">geode::MultiMapping</span></a><span></span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;&amp;</span> <span class="n">multi_mappings</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">no_value</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1abfd9c8984c1574e300deb8e5ca3ddcf4"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span>
+    <span class="n">geode_common_modifier_edged_curve_api</span><span class="p">,</span>
+    <span class="n">CommonModifierEdgedCurve</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1abca05657b8eb6a446c79a4e841068fcf"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">EdgedCurveBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab753a4c9c96a0711fc42d95d03de3555"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_EdgedCurveModifier.html#doxid-classgeode-1-1-edged-curve-modifier"><span class="std std-ref">EdgedCurveModifier</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9dd3655e0b4d0e1d23b6d3a8fd68c87b"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a74a13005266ccc48f0d9545d28c09dcb"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4efa1c27af37ca80b792b5290f406968"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a3dfa90e12c4f46df6d4d4c73cc499ab6"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a5f0825f02564723bd52f856a1ae100c9"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a188a9a17dbf6c0fd00b76b93bb3f20b1"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7e61ded745250794b3a32b9eea639909"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1afd25c1e13f7fbf9f19383091b3d96e2c"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepCollapseEdgeValidity.html#doxid-structgeode-1-1-b-rep-collapse-edge-validity"><span class="std std-ref">BRepCollapseEdgeValidity</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1ffd1d507d1c38870422c6bb577b5e12"><span></span><span class="n">collapse_edge_validity</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepCollapseEdgeValidity.html#doxid-structgeode-1-1-b-rep-collapse-edge-validity"><span class="std std-ref">BRepCollapseEdgeValidity</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac2b4c6b91a024d7dd65499eadebdd4ee"><span></span><span class="n">collapse_edge_validity</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepCollapseEdgeValidity.html#doxid-structgeode-1-1-b-rep-collapse-edge-validity"><span class="std std-ref">BRepCollapseEdgeValidity</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6d6532424d2878110dc8c311ced4df3c"><span></span><span class="n">collapse_edge_validity</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad072451de30cc32ff654e9628079c3ae"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2371f5d2ab9631795bdf238645d9d765"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad4dd5d424d8becdc2fefbbf8cef187c3"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acd9978e04d71de61704daa45007ff098"><span></span><span class="n">is_swap_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">apex</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepSimulationResult.html#doxid-structgeode-1-1-b-rep-simulation-result"><span class="std std-ref">BRepSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a786639763b2f5179ea84ba511f1b2c53"><span></span><span class="n">is_swap_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4034a1f74a10d1d8dc0505403fbe2b19"><span></span><span class="n">is_move_point_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">unique_vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepElementsAfterOperation.html#doxid-structgeode-1-1-b-rep-elements-after-operation"><span class="std std-ref">BRepElementsAfterOperation</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab515e37e6fca002b64b99fe96a1f47e7"><span></span><span class="n">elements_after_collapse_edge</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Line3D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepElementsAfterOperation.html#doxid-structgeode-1-1-b-rep-elements-after-operation"><span class="std std-ref">BRepElementsAfterOperation</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a27320d449e7c3c1c0ea15fa399971fa2"><span></span><span class="n">elements_after_collapse_edge</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_BRepElementsAfterOperation.html#doxid-structgeode-1-1-b-rep-elements-after-operation"><span class="std std-ref">BRepElementsAfterOperation</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a153104379a048883de1852223e825168"><span></span><span class="n">elements_after_collapse_edge</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a60bc4102ba1f8bc955e2d5c99bb03828"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_common_modifier_model_api</span><span class="p">,</span> <span class="n">CommonModifierModel</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a636fdae551e960ca99cdb76f55f4b1c2"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_ModelCollapseEdgeValidity.html#doxid-structgeode-1-1-model-collapse-edge-validity"><span class="std std-ref">ModelCollapseEdgeValidity</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a004407dacf09a531aaa6c5d2a6f078ab"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_ModelElementsAfterOperation.html#doxid-structgeode-1-1-model-elements-after-operation"><span class="std std-ref">ModelElementsAfterOperation</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a85b04296d2e759083127ceaf2a792264"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Line</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4bd02aabaf2cf4d25e7f1471d6f5f682"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a96755a4b4b643ca905a8a29e0a07543b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7164721ca8163f4d72d31854af522fbd"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a280d9f7fbe6535fca5f41ed653af09a2"><span></span><span class="n">is_collapse_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac8fc628258c784a78466a7426d9eba9b"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1069bc2e8a715ba23352a89469c72316"><span></span><span class="n">is_split_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SectionSimulationResult.html#doxid-structgeode-1-1-section-simulation-result"><span class="std std-ref">SectionSimulationResult</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6523e663c00002a8ce9873333be26261"><span></span><span class="n">is_swap_edge_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1e444ca717fdce3694b325c62413851e"><span></span><span class="n">is_move_point_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">unique_vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SectionElementsAfterOperation.html#doxid-structgeode-1-1-section-elements-after-operation"><span class="std std-ref">SectionElementsAfterOperation</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1abeca54242950ab2beebc7ea0443ce6d9"><span></span><span class="n">elements_after_collapse_edge</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Line2D</span><span class="o">&amp;</span> <span class="n">line</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SectionElementsAfterOperation.html#doxid-structgeode-1-1-section-elements-after-operation"><span class="std std-ref">SectionElementsAfterOperation</span></a><span></span> <span class="n">geode_common_modifier_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ad6581dd0f7f8ad01a588f05f39130ed4"><span></span><span class="n">elements_after_collapse_edge</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point2D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac5452e2e9a1ad6be6347cc95471815a8"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_common_modifier_solid_api</span><span class="p">,</span> <span class="n">CommonModifierSolid</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8ac5cec34b9c5986e0c83548aeb19f2d"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SolidMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae9dc6097b7f8cfa25fc265176e3c5aa9"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolidBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1af14e4907bb3d08e5cc6822c283db8b65"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">TetrahedralSolidBuilder</span><span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1afc0b8a8e317fbc02d3c18de4c2486d41"><span class="std std-ref">is_split_tetrahedron_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a97acc33da20c851fdc46d60772408242"><span class="std std-ref">is_split_facet_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a2c3c4b981719e5d75e8c34e800171357"><span class="std std-ref">is_split_facet_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a096165e6f54f3a665f7464eeefa71ff2"><span class="std std-ref">is_split_edge_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a5a4fb7995d3b14826afe95a2c3b5da72"><span class="std std-ref">is_split_edge_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1af5a94c02dd07a63d0cb5ab5bd68ed7d7"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ae74efa8e93eea46fbccc7c34c0955562"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1aed4b501b78fd82d3c2cab6272381d223"><span class="std std-ref">is_swap_facet_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a79c4347d68c4e0c99b5e69ca7e5eb825"><span class="std std-ref">is_swap_edge_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">apex</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1aa61511c32d947c0e24e9a0558b587d4e"><span class="std std-ref">is_move_point_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SolidCollapseEdgeValidity.html#doxid-structgeode-1-1-solid-collapse-edge-validity"><span class="std std-ref">SolidCollapseEdgeValidity</span></a><span></span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1af6cfa73ee1be133f95bd1b352d1ac4b2"><span class="std std-ref">collapse_edge_validity</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SolidCollapseEdgeValidity.html#doxid-structgeode-1-1-solid-collapse-edge-validity"><span class="std std-ref">SolidCollapseEdgeValidity</span></a><span></span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1ae6f5d2cde28817df002d2f49c06176f0"><span class="std std-ref">collapse_edge_validity</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1abd85b67704e77c042031ab82876bf2f1"><span class="std std-ref">tetrahedra_after_split_tetrahedron</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a1ce65cd1c3cec12cdb1f1b6ae08c68c8"><span class="std std-ref">tetrahedra_after_split_facet</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a782b92e44eba646be3ed350a618d35b0"><span class="std std-ref">tetrahedra_after_split_facet</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1abd763a6963f8ee3e5b6b36fdda2e13e4"><span class="std std-ref">tetrahedra_after_split_collapse_facet</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a4e480e8866b4619ab3ef224b09fef91d"><span class="std std-ref">tetrahedra_after_split_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a737fae3708b1c93277ab3ffae315e483"><span class="std std-ref">tetrahedra_after_split_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a37a6a58ed73cfc67e32f2c68ee21acb4"><span class="std std-ref">tetrahedra_after_split_collapse_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">geode</span><span class="o">::</span><span class="n">Tetrahedron</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">geode</span><span class="o">::</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a1cad0cc5d18c91dab8668e653c520ce1"><span class="std std-ref">tetrahedra_after_collapse_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">geode</span><span class="o">::</span><span class="n">Tetrahedron</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">geode</span><span class="o">::</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a4f7ac7b892170fd8e45d27218e307df3"><span class="std std-ref">tetrahedra_after_collapse_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a187dee7315c9d67797faa4248372a943"><span class="std std-ref">tetrahedra_after_swap_facet</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a441d9f68d977b6035497ea52e73b10e8"><span class="std std-ref">tetrahedra_after_swap_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">apex</span>
+    <span class="p">);</span>
+
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a2cf90096eea87b7c53ac0693200801c8"><span class="std std-ref">tetrahedra_after_move_point</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a689e425aa333c1a0dc9feac747284915"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_common_modifier_surface_api</span><span class="p">,</span> <span class="n">CommonModifierSurface</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa9eca13715aca2567523b81021cda51a"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">SurfaceMesh</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4b6e0eef43419c522c8afdef30e0c045"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">TriangulatedSurfaceBuilder</span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1a1cd4849bc62b1ce5604ec265c2a12ce4"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TriangulatedSurfaceEpsilonModifier.html#doxid-classgeode-1-1-triangulated-surface-epsilon-modifier"><span class="std std-ref">TriangulatedSurfaceEpsilonModifier</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1abf44db269e53cff0346ca0ff7a67be5a"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_TriangulatedSurfaceModifier.html#doxid-classgeode-1-1-triangulated-surface-modifier"><span class="std std-ref">TriangulatedSurfaceModifier</span></a><span></span><span class="p">);</span>
+<span class="doxyrest-code-target target" id="doxid-namespacegeode-1acfd09706545bc6923f2420d484a48c08"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="struct_geode_SurfaceCollapseEdgeValidity.html#doxid-structgeode-1-1-surface-collapse-edge-validity"><span class="std std-ref">SurfaceCollapseEdgeValidity</span></a><span></span><span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <a class="reference internal" href="#doxid-namespacegeode-1adf7d901f6e5bd81513781732d5780b96"><span class="std std-ref">is_split_triangle_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <a class="reference internal" href="#doxid-namespacegeode-1a892c0863555c3da84f80ae66543e23c3"><span class="std std-ref">is_split_edge_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <a class="reference internal" href="#doxid-namespacegeode-1a8ca976ae932a79bf0006a638ead4e599"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <a class="reference internal" href="#doxid-namespacegeode-1a9e4e1df9da006fdc32923b7461d69902"><span class="std std-ref">is_collapse_edge_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <a class="reference internal" href="#doxid-namespacegeode-1addc95a23afc2f3867f288a549fa3fbf7"><span class="std std-ref">is_swap_edge_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <a class="reference internal" href="#doxid-namespacegeode-1a20611982454e1f7dbc86eb9cd6fd6d9e"><span class="std std-ref">is_move_point_valid</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_SurfaceCollapseEdgeValidity.html#doxid-structgeode-1-1-surface-collapse-edge-validity"><span class="std std-ref">SurfaceCollapseEdgeValidity</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a17b92d38d0f0118dc1d595ab8ee67704"><span class="std std-ref">collapse_edge_validity</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_SurfaceCollapseEdgeValidity.html#doxid-structgeode-1-1-surface-collapse-edge-validity"><span class="std std-ref">SurfaceCollapseEdgeValidity</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1ad5a77ea5b9beca7bd49ec85206b0faa5"><span class="std std-ref">collapse_edge_validity</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a46de1238fbbcaadb42345226395d286a"><span class="std std-ref">triangles_after_split_triangle</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a9d5c9f0114cb20f6c7e2718ee9cc17b4"><span class="std std-ref">triangles_after_split_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a9f7e1bed0d93d51af520870979b00a1b"><span class="std std-ref">triangles_after_collapse_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1a3b835115e61f46ade9a28032adb3fbae"><span class="std std-ref">triangles_after_collapse_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1af7bfff60df9c5fbe4d2e71bc947745c8"><span class="std std-ref">triangles_after_swap_edge</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="#doxid-namespacegeode-1acf8d771c3b155f973c0fda2fe3ecb969"><span class="std std-ref">triangles_after_move_point</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">);</span>
+
+<span class="p">}</span> <span class="c1">// namespace geode</span></pre>
+</section>
+<section id="detailed-documentation">
+<span id="details-namespacegeode"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this heading">¶</a></h2>
+<section id="global-functions">
+<h3>Global Functions<a class="headerlink" href="#global-functions" title="Permalink to this heading">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a46b49bd2622515911e800365ae5dec27"><span id="index-1"></span><a class="reference internal" href="struct_geode_SolidCutPatchInfo.html#doxid-structgeode-1-1-solid-cut-patch-info"><span class="std std-ref">SolidCutPatchInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_patch</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier"><span class="std std-ref">TetrahedralSolidModifier</span></a><span></span><span class="o">&amp;</span> <span class="n">modifier</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">PatchFrontEdge</span><span class="o">&gt;</span> <span class="n">boundary_edges</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">triangle</span>
+    <span class="p">)</span></pre>
+<p>Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges. Cut tetrahedra are set as inactive but not deleted.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>solid</p></td>
+<td><p>TetrahedralSolid to cut</p></td>
+</tr>
+<tr class="row-even"><td><p>builder</p></td>
+<td><p>Builder of the Solid</p></td>
+</tr>
+<tr class="row-odd"><td><p>boundary_edges</p></td>
+<td><p>List of oriented Patch boundary as solid edges</p></td>
+</tr>
+<tr class="row-even"><td><p>triangle</p></td>
+<td><p>The triangle corresponding to the patch to insert in solid</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1acea856865b9a01ea04c1f879b996e70a"><span id="index-2"></span><a class="reference internal" href="struct_geode_SolidCutPathInfo.html#doxid-structgeode-1-1-solid-cut-path-info"><span class="std std-ref">SolidCutPathInfo</span></a><span></span> <span class="n">geode_common_cutter_solid_api</span> <span class="n">cut_along_path</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">solid</span><span class="p">,</span>
+    <a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier"><span class="std std-ref">TetrahedralSolidModifier</span></a><span></span><span class="o">&amp;</span> <span class="n">modifier</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">begin</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">end</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">Span</span><span class="o">&lt;</span><span class="k">const</span> <a class="reference internal" href="struct_geode_SolidPath.html#doxid-structgeode-1-1-solid-path"><span class="std std-ref">SolidPath</span></a><span></span><span class="o">&gt;</span> <span class="n">path_splits</span>
+    <span class="p">)</span></pre>
+<p>Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra. Cut tetrahedra are set as inactive but not deleted.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>begin</p></td>
+<td><p>Index of the cut starting vertex</p></td>
+</tr>
+<tr class="row-even"><td><p>end</p></td>
+<td><p>Index of the cut ending vertex</p></td>
+</tr>
+<tr class="row-odd"><td><p>path_splits</p></td>
+<td><p>Ordered list of Path splits</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1afc0b8a8e317fbc02d3c18de4c2486d41"><span id="index-3"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_tetrahedron_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if a tetrahedron split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>tetrahedron_id</p></td>
+<td><p>Index of the tetrahedron to split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a97acc33da20c851fdc46d60772408242"><span id="index-4"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_facet_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if a facet split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>facet</p></td>
+<td><p>Index of the PolyhedronFacet to split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2c3c4b981719e5d75e8c34e800171357"><span id="index-5"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_facet_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if a facet split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>facet_id</p></td>
+<td><p>Unique index of the facet to split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a096165e6f54f3a665f7464eeefa71ff2"><span id="index-6"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge to split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a5a4fb7995d3b14826afe95a2c3b5da72"><span id="index-7"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_split_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af5a94c02dd07a63d0cb5ab5bd68ed7d7"><span id="index-8"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if collapse will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae74efa8e93eea46fbccc7c34c0955562"><span id="index-9"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if collapse will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aed4b501b78fd82d3c2cab6272381d223"><span id="index-10"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_swap_facet_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span>
+    <span class="p">)</span></pre>
+<p>Check if a facet swap will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The swap is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>facet</p></td>
+<td><p>Index of the PolyhedronFacet to swap.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if swap facet will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a79c4347d68c4e0c99b5e69ca7e5eb825"><span id="index-11"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_swap_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">apex</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge swap will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The swap is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge to swap.</p></td>
+</tr>
+<tr class="row-odd"><td><p>apex</p></td>
+<td><p>Index of the vertex used as the new facets fan common vertex.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if swap edge will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1aa61511c32d947c0e24e9a0558b587d4e"><span id="index-12"></span><span></span><span class="kt">bool</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">is_move_point_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if a vertex relocation will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The vertex relocation is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>vertex</p></td>
+<td><p>Index of the vertex to relocate.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the destination point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if vertex relocation will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af6cfa73ee1be133f95bd1b352d1ac4b2"><span id="index-13"></span><a class="reference internal" href="struct_geode_SolidCollapseEdgeValidity.html#doxid-structgeode-1-1-solid-collapse-edge-validity"><span class="std std-ref">SolidCollapseEdgeValidity</span></a><span></span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">collapse_edge_validity</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>all the information about validity issues this collapse would generate.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ae6f5d2cde28817df002d2f49c06176f0"><span id="index-14"></span><a class="reference internal" href="struct_geode_SolidCollapseEdgeValidity.html#doxid-structgeode-1-1-solid-collapse-edge-validity"><span class="std std-ref">SolidCollapseEdgeValidity</span></a><span></span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">collapse_edge_validity</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>all the information about validity issues this collapse would generate.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1abd85b67704e77c042031ab82876bf2f1"><span id="index-15"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="p">,</span> <span class="mi">4</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_tetrahedron</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">tetrahedron_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return the four tetrahedra resulting from a tetrahedron split. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>tetrahedron_id</p></td>
+<td><p>Index of the tetrahedron on which simulate split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a1ce65cd1c3cec12cdb1f1b6ae08c68c8"><span id="index-16"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_facet</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from a facet split. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>facet</p></td>
+<td><p>Index of the PolyhedronFacet on which simulate split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a782b92e44eba646be3ed350a618d35b0"><span id="index-17"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_facet</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from a facet split. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>facet_id</p></td>
+<td><p>Unique index of the facet on which simulate split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1abd763a6963f8ee3e5b6b36fdda2e13e4"><span id="index-18"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_collapse_facet</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">facet_id</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from a facet split then collapsed. The split and the collapse are not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>facet_id</p></td>
+<td><p>Unique index of the facet on which simulate split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>vertex_id</p></td>
+<td><p>Index of the vertex used to proceed collapse.</p></td>
+</tr>
+<tr class="row-even"><td><p>point</p></td>
+<td><p>Destimation of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4e480e8866b4619ab3ef224b09fef91d"><span id="index-19"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from an edge split. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge on which simulate split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a737fae3708b1c93277ab3ffae315e483"><span id="index-20"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from an edge split. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge on which simulate split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a37a6a58ed73cfc67e32f2c68ee21acb4"><span id="index-21"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_split_collapse_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from an edge split and edge collapse. The split-collapse operations are not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge on which simulate split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>vertex</p></td>
+<td><p>Index towards which the split vertex is collapse on.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a1cad0cc5d18c91dab8668e653c520ce1"><span id="index-22"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">geode</span><span class="o">::</span><span class="n">Tetrahedron</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">geode</span><span class="o">::</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_collapse_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from an edge collapse. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge on which simulate collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a4f7ac7b892170fd8e45d27218e307df3"><span id="index-23"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">geode</span><span class="o">::</span><span class="n">Tetrahedron</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">geode</span><span class="o">::</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_collapse_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from an edge collapse. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge on which simulate collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a187dee7315c9d67797faa4248372a943"><span id="index-24"></span><span></span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_swap_facet</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacet</span><span class="o">&amp;</span> <span class="n">facet</span>
+    <span class="p">)</span></pre>
+<p>Return the three tetrahedra resulting from a facet swap. The swap is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>facet</p></td>
+<td><p>Index of the PolyhedronFacet on which simulate swap.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the swap point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a441d9f68d977b6035497ea52e73b10e8"><span id="index-25"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_swap_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolyhedronFacetEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">apex</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from an edge swap. The swap is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolyhedronFacetEdge on which simulate swap.</p></td>
+</tr>
+<tr class="row-odd"><td><p>apex</p></td>
+<td><p>Index of the vertex used as the new facets fan common vertex.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a2cf90096eea87b7c53ac0693200801c8"><span id="index-26"></span><span></span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="n">geode_common_modifier_solid_api</span> <span class="n">tetrahedra_after_move_point</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TetrahedralSolid3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point3D</span><span class="o">&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the tetrahedra resulting from a vertex relocation. The vertex relocation is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Tetrahedral mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>vertex</p></td>
+<td><p>Index of the vertex to relocate.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the destination point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1adf7d901f6e5bd81513781732d5780b96"><span id="index-27"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="n">is_split_triangle_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if a triangle split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>triangle_id</p></td>
+<td><p>Index of the triangle to split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a892c0863555c3da84f80ae66543e23c3"><span id="index-28"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="n">is_split_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolygonEdge to split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if split will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a8ca976ae932a79bf0006a638ead4e599"><span id="index-29"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolygonEdge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if collapse will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a9e4e1df9da006fdc32923b7461d69902"><span id="index-30"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="n">is_collapse_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if collapse will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1addc95a23afc2f3867f288a549fa3fbf7"><span id="index-31"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="n">is_swap_edge_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge swap will keep the mesh valid, meaning the sign of the triangle areas are positive. The swap is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolygonEdge to swap.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if swap edge will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a20611982454e1f7dbc86eb9cd6fd6d9e"><span id="index-32"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="n">is_move_point_valid</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if a vertex relocation will keep the mesh valid, meaning the sign of the triangle areas are positive. The relocation is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>vertex</p></td>
+<td><p>Index of the vertex to relocate.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the destination point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>true if vertex relocation will keep mesh valid.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a17b92d38d0f0118dc1d595ab8ee67704"><span id="index-33"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_SurfaceCollapseEdgeValidity.html#doxid-structgeode-1-1-surface-collapse-edge-validity"><span class="std std-ref">SurfaceCollapseEdgeValidity</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">collapse_edge_validity</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolygonEdge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>all the information about validity issues this collapse would generate.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1ad5a77ea5b9beca7bd49ec85206b0faa5"><span id="index-34"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<a class="reference internal" href="struct_geode_SurfaceCollapseEdgeValidity.html#doxid-structgeode-1-1-surface-collapse-edge-validity"><span class="std std-ref">SurfaceCollapseEdgeValidity</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="n">collapse_edge_validity</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Returns:</p>
+<p>all the information about validity issues this collapse would generate.</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a46de1238fbbcaadb42345226395d286a"><span id="index-35"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span><span class="p">,</span> <span class="mi">3</span><span class="o">&gt;</span> <span class="n">triangles_after_split_triangle</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">triangle_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return the three triangles resulting from a triangle split. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>triangle_id</p></td>
+<td><p>Index of the triangle on which simulate split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a9d5c9f0114cb20f6c7e2718ee9cc17b4"><span id="index-36"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_split_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the triangles resulting from a triangle edge split. The split is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolygonEdge to split.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the split point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a9f7e1bed0d93d51af520870979b00a1b"><span id="index-37"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_collapse_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolygonEdge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1a3b835115e61f46ade9a28032adb3fbae"><span id="index-38"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_collapse_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge_id</p></td>
+<td><p>Unique index of the edge to collapse.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the collapse point.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1af7bfff60df9c5fbe4d2e71bc947745c8"><span id="index-39"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_swap_edge</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">edge</span>
+    <span class="p">)</span></pre>
+<p>Return all the triangles resulting from an edge swap. The swap is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>edge</p></td>
+<td><p>Index of the PolygonEdge to swap.</p></td>
+</tr>
+</tbody>
+</table>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-namespacegeode-1acf8d771c3b155f973c0fda2fe3ecb969"><span id="index-40"></span><span></span><span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span><span class="p">,</span> <span class="n">absl</span><span class="o">::</span><span class="n">FixedArray</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <span class="n">triangles_after_move_point</span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">vertex</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span>
+    <span class="p">)</span></pre>
+<p>Return all the triangles resulting from a vertex relocation. The vertex relocation is not applied.</p>
+<p class="rubric">Parameters:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>Triangulated mesh on which simulate operation.</p></td>
+</tr>
+<tr class="row-even"><td><p>vertex</p></td>
+<td><p>Index of the vertex to relocate.</p></td>
+</tr>
+<tr class="row-odd"><td><p>point</p></td>
+<td><p>Coordinates of the destination point.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/namespace_geode.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

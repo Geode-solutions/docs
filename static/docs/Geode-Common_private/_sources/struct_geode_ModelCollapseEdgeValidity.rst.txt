@@ -1,0 +1,28 @@
+.. index:: pair: struct; geode::ModelCollapseEdgeValidity
+.. _doxid-structgeode_1_1_model_collapse_edge_validity:
+
+template struct geode::ModelCollapseEdgeValidity
+================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <index_t dimension>
+	struct ModelCollapseEdgeValidity
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, absl::FixedArray<:ref:`SurfaceCollapseEdgeValidity<doxid-structgeode_1_1_surface_collapse_edge_validity>`<dimension>>> :target:`SurfaceCollapseEdgeValidities<doxid-structgeode_1_1_model_collapse_edge_validity_1a18b1356bad6e7aeff94bd2b8c7943ed6>`;
+
+		// fields
+	
+		:ref:`SurfaceCollapseEdgeValidities<doxid-structgeode_1_1_model_collapse_edge_validity_1a18b1356bad6e7aeff94bd2b8c7943ed6>` :target:`surface_validities<doxid-structgeode_1_1_model_collapse_edge_validity_1afe79b927bbc83130ae14f4d419937255>`;
+	};

@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::TetrahedralSolidModifier::SolidRemoveMultipleAdjacencyInfo
+.. _doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_remove_multiple_adjacency_info:
+
+struct geode::TetrahedralSolidModifier::SolidRemoveMultipleAdjacencyInfo
+========================================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier.h>
+	
+	struct SolidRemoveMultipleAdjacencyInfo
+	{
+		// fields
+	
+		std::array<index_t, 2> :target:`inactive_tetrahedra<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_remove_multiple_adjacency_info_1a51b0434055fbb894786cadc154c75ff8>`;
+	};
