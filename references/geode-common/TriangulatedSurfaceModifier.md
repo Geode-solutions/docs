@@ -25,6 +25,8 @@ CollapsePolygonEdgeInfo
 
 CollapseEdgeInfo
 
+SwapEdgeInfo
+
 
 
 ## Functions
@@ -130,7 +132,7 @@ public CollapseEdgeInfo collapse_edge(index_t edge_id, const Point<dimension> & 
 ### swap_edge
 
 ```cpp
-public void swap_edge(const PolygonEdge & edge)
+public SwapEdgeInfo swap_edge(const PolygonEdge & edge)
 ```
 
 

@@ -46,8 +46,6 @@
 * [ModuleLicenseChecker](ModuleLicenseChecker.md)
 * [MultiMapping](MultiMapping.md)
 * [PatchFrontEdge](PatchFrontEdge.md)
-* [PolygonData](PolygonData.md)
-* [PolygonEdgeData](PolygonEdgeData.md)
 * [PolygonEdge](PolygonEdge.md)
 * [PolyhedronFacetEdge](PolyhedronFacetEdge.md)
 * [PolyhedronFacet](PolyhedronFacet.md)
