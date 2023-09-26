@@ -2,9 +2,7 @@
 
 
 ```cpp
-```cpp
 Inherits from MacroInfoBuilder3D
-```
 ```
 
 
@@ -14,36 +12,28 @@ Inherits from MacroInfoBuilder3D
 ### BackgroundSolidBuilder
 
 ```cpp
-```cpp
 public void BackgroundSolidBuilder(VertexSet & vertex_set, MeshBuilderFactoryKey )
-```
 ```
 
 
 ### BackgroundSolidBuilder
 
 ```cpp
-```cpp
 public void BackgroundSolidBuilder(BackgroundSolid & background)
-```
 ```
 
 
 ### ~BackgroundSolidBuilder
 
 ```cpp
-```cpp
 public void ~BackgroundSolidBuilder()
-```
 ```
 
 
 ### copy
 
 ```cpp
-```cpp
 public void copy(const BackgroundSolid & source)
-```
 ```
 
 

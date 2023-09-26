@@ -4,39 +4,11 @@
 ## Members
 
 ```cpp
-```cpp
-```cpp
-```cpp
-```cpp
-```cpp
-```cpp
-```cpp
 public geode::index_t element
-```
-```
-```
-```
-```
-```
-```
 ```
 
 ```cpp
-```cpp
-```cpp
-```cpp
-```cpp
-```cpp
-```cpp
-```cpp
 public geode::index_t stamp
-```
-```
-```
-```
-```
-```
-```
 ```
 
 
@@ -46,21 +18,7 @@ public geode::index_t stamp
 ### ElementStamp
 
 ```cpp
-```cpp
-```cpp
-```cpp
-```cpp
-```cpp
-```cpp
-```cpp
 public void ElementStamp(geode::index_t element_in, geode::index_t stamp_in)
-```
-```
-```
-```
-```
-```
-```
 ```
 
 

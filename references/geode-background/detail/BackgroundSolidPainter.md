@@ -6,27 +6,21 @@
 ### BackgroundSolidPainter
 
 ```cpp
-```cpp
 public void BackgroundSolidPainter(BackgroundSolid & background)
-```
 ```
 
 
 ### ~BackgroundSolidPainter
 
 ```cpp
-```cpp
 public void ~BackgroundSolidPainter()
-```
 ```
 
 
 ### paint_volume
 
 ```cpp
-```cpp
 public void paint_volume(const uuid & volume_uuid, absl::Span<const uuid> bounding_surface_uuids, absl::Span<const std::pair<std::reference_wrapper<const TriangulatedSurface3D>, _Bool> > oriented_surfaces)
-```
 ```
 
 
