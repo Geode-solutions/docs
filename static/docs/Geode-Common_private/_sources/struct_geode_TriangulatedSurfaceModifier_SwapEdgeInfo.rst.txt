@@ -1,0 +1,27 @@
+.. index:: pair: struct; geode::TriangulatedSurfaceModifier::SwapEdgeInfo
+.. _doxid-structgeode_1_1_triangulated_surface_modifier_1_1_swap_edge_info:
+
+struct geode::TriangulatedSurfaceModifier::SwapEdgeInfo
+=======================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier.h>
+	
+	struct SwapEdgeInfo
+	{
+		// fields
+	
+		std::array<index_t, 2> :target:`inactive_polygons<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_swap_edge_info_1abad0c6cb59af340d8e45f326c157af16>`;
+		std::array<index_t, 2> :target:`new_polygons<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_swap_edge_info_1a65f8ad2412c518efd49dfe7b89ddcfcb>`;
+		std::array<:ref:`PolygonEdgeMapping<doxid-classgeode_1_1_triangulated_surface_modifier_1aa104b4f8cc68b98442e642c76bbd3873>`, 4> :target:`modified<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_swap_edge_info_1a103a1174d513b2808eb4c136c8615444>`;
+		std::array<PolygonEdge, 2> :target:`added<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_swap_edge_info_1a8f67312b1e51029e235b5214dab266c4>`;
+		std::array<PolygonEdge, 2> :target:`removed<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_swap_edge_info_1affc840a5f361f2b91797900bc4d2da72>`;
+	};

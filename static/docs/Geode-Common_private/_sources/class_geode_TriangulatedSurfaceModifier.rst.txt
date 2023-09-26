@@ -13,6 +13,7 @@ template class geode::TriangulatedSurfaceModifier
 	struct_geode_TriangulatedSurfaceModifier_SplitPolygonEdgeInfo.rst
 	struct_geode_TriangulatedSurfaceModifier_SplitTriangleInfo.rst
 	struct_geode_TriangulatedSurfaceModifier_SurfaceCollapseInfo.rst
+	struct_geode_TriangulatedSurfaceModifier_SwapEdgeInfo.rst
 
 Overview
 ~~~~~~~~
@@ -43,6 +44,7 @@ Overview
 		struct :ref:`SplitPolygonEdgeInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_polygon_edge_info>`;
 		struct :ref:`SplitTriangleInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_split_triangle_info>`;
 		struct :ref:`SurfaceCollapseInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_surface_collapse_info>`;
+		struct :ref:`SwapEdgeInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_swap_edge_info>`;
 
 		// construction
 	
@@ -75,7 +77,7 @@ Overview
 			);
 	
 		:ref:`CollapseEdgeInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1ad36af2def7e5726fc60b920c3d23b017>`(index_t edge_id, const Point<dimension>& point);
-		void :ref:`swap_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1aabc8f7b290f31d56b3a2ef014d772008>`(const PolygonEdge& edge);
+		:ref:`SwapEdgeInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_swap_edge_info>` :ref:`swap_edge<doxid-classgeode_1_1_triangulated_surface_modifier_1aa4ff6f62e6c398f451f2d86ec7dd4a78>`(const PolygonEdge& edge);
 		std::vector<index_t> :ref:`clean_triangles<doxid-classgeode_1_1_triangulated_surface_modifier_1af8b435ff949b373922c3130aec0ee212>`();
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_triangulated_surface_modifier_1a932099dbcd5b09588f24897cc315bedd>`();
 		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_triangulated_surface_modifier_1af2557ffb518f9d3188949f8db39c2956>`();
@@ -226,12 +228,12 @@ Collapse an edge. The triangles incident to this edge are set as inactive but no
 		- Coordinates of the collapse point.
 
 .. index:: pair: function; swap_edge
-.. _doxid-classgeode_1_1_triangulated_surface_modifier_1aabc8f7b290f31d56b3a2ef014d772008:
+.. _doxid-classgeode_1_1_triangulated_surface_modifier_1aa4ff6f62e6c398f451f2d86ec7dd4a78:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void swap_edge(const PolygonEdge& edge)
+	:ref:`SwapEdgeInfo<doxid-structgeode_1_1_triangulated_surface_modifier_1_1_swap_edge_info>` swap_edge(const PolygonEdge& edge)
 
 Swap an edge.
 
