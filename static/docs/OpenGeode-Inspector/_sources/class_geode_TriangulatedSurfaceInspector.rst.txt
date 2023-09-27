@@ -1,0 +1,64 @@
+.. index:: pair: class; geode::TriangulatedSurfaceInspector
+.. _doxid-classgeode_1_1_triangulated_surface_inspector:
+
+template class geode::TriangulatedSurfaceInspector
+==================================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting a TriangulatedSurface
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_inspector.h>
+	
+	template <index_t dimension>
+	class TriangulatedSurfaceInspector:
+	    public :ref:`geode::SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`,
+	    public :ref:`geode::TriangulatedSurfaceIntersections<doxid-classgeode_1_1_triangulated_surface_intersections>`,
+	    public :ref:`geode::AddInspectors<doxid-classgeode_1_1_add_inspectors>`
+	{
+	public:
+		// construction
+	
+		:target:`TriangulatedSurfaceInspector<doxid-classgeode_1_1_triangulated_surface_inspector_1abcfbfb71c304a2cfe5eb80a74583e047>`(const TriangulatedSurface<dimension>& mesh);
+	
+		:target:`TriangulatedSurfaceInspector<doxid-classgeode_1_1_triangulated_surface_inspector_1a1b0b3fd2f21d52b4f0e0b47634452f4b>`(
+			const TriangulatedSurface<dimension>& mesh,
+			bool verbose
+			);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`mesh_has_wrong_adjacencies<doxid-classgeode_1_1_surface_mesh_adjacency_1a5a83254e11ba79da9ce0fe24ce1df78d>`() const;
+		index_t :ref:`nb_edges_with_wrong_adjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1a30277596e668fb902bf205e7cf567b4a>`() const;
+		std::vector<PolygonEdge> :ref:`polygon_edges_with_wrong_adjacency<doxid-classgeode_1_1_surface_mesh_adjacency_1aff82d9e182ab2115a2197452e4642598>`() const;
+		bool :ref:`mesh_has_colocated_points<doxid-classgeode_1_1_surface_mesh_colocation_1a42689ab5b3ab9f77728534aa6775a915>`() const;
+		index_t :ref:`nb_colocated_points<doxid-classgeode_1_1_surface_mesh_colocation_1afa6b9f940e609757d3de198f53a119bb>`() const;
+		std::vector<std::vector<index_t>> :ref:`colocated_points_groups<doxid-classgeode_1_1_surface_mesh_colocation_1a184d12ddc78e6d0a5d361637843eba5d>`() const;
+		bool :ref:`is_mesh_degenerated<doxid-classgeode_1_1_surface_mesh_degeneration_1a26880ccbf318a8f901fd332f7e5236e3>`() const;
+		index_t :ref:`nb_degenerated_edges<doxid-classgeode_1_1_surface_mesh_degeneration_1abe1502822aafe296bb4bd2fb05a2326b>`() const;
+		index_t :ref:`nb_degenerated_polygons<doxid-classgeode_1_1_surface_mesh_degeneration_1ae96987389c8758d1910635e2510e8623>`() const;
+		std::vector<index_t> :ref:`degenerated_edges<doxid-classgeode_1_1_surface_mesh_degeneration_1a56672a74b5e9c738f019e117f5091215>`() const;
+		std::vector<index_t> :ref:`degenerated_polygons<doxid-classgeode_1_1_surface_mesh_degeneration_1a47cb9eacadeb8240edb591df0d496ed1>`() const;
+		bool :ref:`mesh_edges_are_manifold<doxid-classgeode_1_1_surface_mesh_edge_manifold_1abf40bdd7fb8cab174eec84bfbd5cdbaf>`() const;
+		index_t :ref:`nb_non_manifold_edges<doxid-classgeode_1_1_surface_mesh_edge_manifold_1a22bdf6228defddb4d194e78d4f044995>`() const;
+		std::vector<std::array<index_t, 2>> :ref:`non_manifold_edges<doxid-classgeode_1_1_surface_mesh_edge_manifold_1a5af3a2f9dea2ad46f49fdedebed2d3b6>`() const;
+		bool :ref:`mesh_vertices_are_manifold<doxid-classgeode_1_1_surface_mesh_vertex_manifold_1a3fb919c515f7bc5d3da77ff93978dc17>`() const;
+		index_t :ref:`nb_non_manifold_vertices<doxid-classgeode_1_1_surface_mesh_vertex_manifold_1ab42e0f2173c9840ed688920b55b3b5cd>`() const;
+		std::vector<index_t> :ref:`non_manifold_vertices<doxid-classgeode_1_1_surface_mesh_vertex_manifold_1a1a2520e5a8747636aadb0bfd1f8b4de3>`() const;
+		bool :ref:`mesh_has_self_intersections<doxid-classgeode_1_1_triangulated_surface_intersections_1a79454b87502fced9190ae9abf08f632e>`() const;
+		index_t :ref:`nb_intersecting_elements_pair<doxid-classgeode_1_1_triangulated_surface_intersections_1a220b10c46026c47607cd49c80824ab28>`() const;
+		std::vector<std::pair<index_t, index_t>> :ref:`intersecting_elements<doxid-classgeode_1_1_triangulated_surface_intersections_1ad4a8bd598f41aed3d9483532debe208d>`() const;
+

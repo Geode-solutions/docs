@@ -1,0 +1,42 @@
+.. index:: pair: class; geode::AddInspectors
+.. _doxid-classgeode_1_1_add_inspectors:
+
+template class geode::AddInspectors
+===================================
+
+.. toctree::
+	:hidden:
+
+This mixin represents an assembly of inspectors. Syntax to create a derivated class is class DerivateClass : public :ref:`AddInspectors <doxid-classgeode_1_1_add_inspectors>` < dimension, Mesh, InspectorClassA, InspectorClassB, InspectorClassC >, public OtherOptionalMixins
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <add_inspectors.h>
+	
+	template <class Mesh, class... Inspectors>
+	class AddInspectors: public Inspectors
+	{
+	};
+
+	// direct descendants
+
+	class :ref:`BRepInspector<doxid-classgeode_1_1_b_rep_inspector>`;
+
+	template <index_t dimension>
+	class :ref:`EdgedCurveInspector<doxid-classgeode_1_1_edged_curve_inspector>`;
+
+	template <index_t dimension>
+	class :ref:`PointSetInspector<doxid-classgeode_1_1_point_set_inspector>`;
+
+	class :ref:`SectionInspector<doxid-classgeode_1_1_section_inspector>`;
+
+	template <index_t dimension>
+	class :ref:`SolidMeshInspector<doxid-classgeode_1_1_solid_mesh_inspector>`;
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`;
+
+	template <index_t dimension>
+	class :ref:`TriangulatedSurfaceInspector<doxid-classgeode_1_1_triangulated_surface_inspector>`;

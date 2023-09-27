@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::EdgedCurveDegeneration
+.. _doxid-classgeode_1_1_edged_curve_degeneration:
+
+template class geode::EdgedCurveDegeneration
+============================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the degeneration of an EdgedCurve
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <edgedcurve_degeneration.h>
+	
+	template <index_t dimension>
+	class EdgedCurveDegeneration
+	{
+	public:
+		// construction
+	
+		:target:`EdgedCurveDegeneration<doxid-classgeode_1_1_edged_curve_degeneration_1a1ec6c807d24b6c8dcc10f20ae20c45b0>`(const EdgedCurve<dimension>& mesh);
+		:target:`EdgedCurveDegeneration<doxid-classgeode_1_1_edged_curve_degeneration_1a1611cfe921bc2b653d6ea4c1e3e5105a>`(const EdgedCurve<dimension>& mesh, bool verbose);
+
+		// methods
+	
+		bool :target:`is_mesh_degenerated<doxid-classgeode_1_1_edged_curve_degeneration_1a96b3725570ef4e970c111ccce19ac239>`() const;
+		index_t :target:`nb_degenerated_edges<doxid-classgeode_1_1_edged_curve_degeneration_1a2a788ebb7413a42e32e447b7b97b01a4>`() const;
+		std::vector<index_t> :target:`degenerated_edges<doxid-classgeode_1_1_edged_curve_degeneration_1a19c7bbe1cdafec9e48a0225000e17db4>`() const;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`EdgedCurveInspector<doxid-classgeode_1_1_edged_curve_inspector>`;

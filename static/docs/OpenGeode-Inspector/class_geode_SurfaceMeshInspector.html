@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::SurfaceMeshInspector &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::SurfaceMeshVertexManifold" href="class_geode_SurfaceMeshVertexManifold.html" />
+    <link rel="prev" title="template class geode::SurfaceMeshEdgeManifold" href="class_geode_SurfaceMeshEdgeManifold.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-surfacemeshinspector">
+<span id="doxid-classgeode-1-1-surface-mesh-inspector"></span><span id="index-0"></span><h1>template class geode::SurfaceMeshInspector<a class="headerlink" href="#template-class-geode-surfacemeshinspector" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>Class for inspecting a SurfaceMesh</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;surface_inspector.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">SurfaceMeshInspector</span><span class="p">:</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_SurfaceMeshAdjacency.html#doxid-classgeode-1-1-surface-mesh-adjacency"><span class="std std-ref">geode::SurfaceMeshAdjacency</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_SurfaceMeshColocation.html#doxid-classgeode-1-1-surface-mesh-colocation"><span class="std std-ref">geode::SurfaceMeshColocation</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_SurfaceMeshDegeneration.html#doxid-classgeode-1-1-surface-mesh-degeneration"><span class="std std-ref">geode::SurfaceMeshDegeneration</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_SurfaceMeshEdgeManifold.html#doxid-classgeode-1-1-surface-mesh-edge-manifold"><span class="std std-ref">geode::SurfaceMeshEdgeManifold</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_SurfaceMeshVertexManifold.html#doxid-classgeode-1-1-surface-mesh-vertex-manifold"><span class="std std-ref">geode::SurfaceMeshVertexManifold</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_AddInspectors.html#doxid-classgeode-1-1-add-inspectors"><span class="std std-ref">geode::AddInspectors</span></a><span></span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-mesh-inspector-1ac4532cbf61724059707b8041a137be4b"><span></span><span class="n">SurfaceMeshInspector</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-surface-mesh-inspector-1a8ee0e01f1e7c9cb6b498d19b65fc2ebe"><span></span><span class="n">SurfaceMeshInspector</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">verbose</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">// direct descendants</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <a class="reference internal" href="class_geode_TriangulatedSurfaceInspector.html#doxid-classgeode-1-1-triangulated-surface-inspector"><span class="std std-ref">TriangulatedSurfaceInspector</span></a><span></span><span class="p">;</span></pre>
+<section id="inherited-members">
+<h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_SurfaceMeshAdjacency.html#doxid-classgeode-1-1-surface-mesh-adjacency-1a5a83254e11ba79da9ce0fe24ce1df78d"><span class="std std-ref">mesh_has_wrong_adjacencies</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_SurfaceMeshAdjacency.html#doxid-classgeode-1-1-surface-mesh-adjacency-1a30277596e668fb902bf205e7cf567b4a"><span class="std std-ref">nb_edges_with_wrong_adjacency</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">PolygonEdge</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshAdjacency.html#doxid-classgeode-1-1-surface-mesh-adjacency-1aff82d9e182ab2115a2197452e4642598"><span class="std std-ref">polygon_edges_with_wrong_adjacency</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_SurfaceMeshColocation.html#doxid-classgeode-1-1-surface-mesh-colocation-1a42689ab5b3ab9f77728534aa6775a915"><span class="std std-ref">mesh_has_colocated_points</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_SurfaceMeshColocation.html#doxid-classgeode-1-1-surface-mesh-colocation-1afa6b9f940e609757d3de198f53a119bb"><span class="std std-ref">nb_colocated_points</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshColocation.html#doxid-classgeode-1-1-surface-mesh-colocation-1a184d12ddc78e6d0a5d361637843eba5d"><span class="std std-ref">colocated_points_groups</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_SurfaceMeshDegeneration.html#doxid-classgeode-1-1-surface-mesh-degeneration-1a26880ccbf318a8f901fd332f7e5236e3"><span class="std std-ref">is_mesh_degenerated</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_SurfaceMeshDegeneration.html#doxid-classgeode-1-1-surface-mesh-degeneration-1abe1502822aafe296bb4bd2fb05a2326b"><span class="std std-ref">nb_degenerated_edges</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_SurfaceMeshDegeneration.html#doxid-classgeode-1-1-surface-mesh-degeneration-1ae96987389c8758d1910635e2510e8623"><span class="std std-ref">nb_degenerated_polygons</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshDegeneration.html#doxid-classgeode-1-1-surface-mesh-degeneration-1a56672a74b5e9c738f019e117f5091215"><span class="std std-ref">degenerated_edges</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshDegeneration.html#doxid-classgeode-1-1-surface-mesh-degeneration-1a47cb9eacadeb8240edb591df0d496ed1"><span class="std std-ref">degenerated_polygons</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_SurfaceMeshEdgeManifold.html#doxid-classgeode-1-1-surface-mesh-edge-manifold-1abf40bdd7fb8cab174eec84bfbd5cdbaf"><span class="std std-ref">mesh_edges_are_manifold</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_SurfaceMeshEdgeManifold.html#doxid-classgeode-1-1-surface-mesh-edge-manifold-1a22bdf6228defddb4d194e78d4f044995"><span class="std std-ref">nb_non_manifold_edges</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">index_t</span><span class="p">,</span> <span class="mi">2</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshEdgeManifold.html#doxid-classgeode-1-1-surface-mesh-edge-manifold-1a5af3a2f9dea2ad46f49fdedebed2d3b6"><span class="std std-ref">non_manifold_edges</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_SurfaceMeshVertexManifold.html#doxid-classgeode-1-1-surface-mesh-vertex-manifold-1a3fb919c515f7bc5d3da77ff93978dc17"><span class="std std-ref">mesh_vertices_are_manifold</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_SurfaceMeshVertexManifold.html#doxid-classgeode-1-1-surface-mesh-vertex-manifold-1ab42e0f2173c9840ed688920b55b3b5cd"><span class="std std-ref">nb_non_manifold_vertices</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_SurfaceMeshVertexManifold.html#doxid-classgeode-1-1-surface-mesh-vertex-manifold-1a1a2520e5a8747636aadb0bfd1f8b4de3"><span class="std std-ref">non_manifold_vertices</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_SurfaceMeshInspector.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

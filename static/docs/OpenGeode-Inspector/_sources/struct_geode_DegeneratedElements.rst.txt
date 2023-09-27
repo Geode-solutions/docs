@@ -1,0 +1,25 @@
+.. index:: pair: struct; geode::DegeneratedElements
+.. _doxid-structgeode_1_1_degenerated_elements:
+
+struct geode::DegeneratedElements
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <component_meshes_degeneration.h>
+	
+	struct DegeneratedElements
+	{
+		// fields
+	
+		std::vector<index_t> :target:`degenerated_edges<doxid-structgeode_1_1_degenerated_elements_1ab5d99f889596956483c6dc0e7ad2d379>`;
+		std::vector<index_t> :target:`degenerated_polygons<doxid-structgeode_1_1_degenerated_elements_1a4258db68a875ec7b778c02a3966abc78>`;
+		std::vector<index_t> :target:`degenerated_polyhedra<doxid-structgeode_1_1_degenerated_elements_1a977b9b85283e328c10aa385235739946>`;
+	};

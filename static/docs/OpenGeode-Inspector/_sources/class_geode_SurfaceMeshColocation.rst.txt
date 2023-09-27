@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::SurfaceMeshColocation
+.. _doxid-classgeode_1_1_surface_mesh_colocation:
+
+template class geode::SurfaceMeshColocation
+===========================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the colocation of points in a SurfaceMesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_colocation.h>
+	
+	template <index_t dimension>
+	class SurfaceMeshColocation
+	{
+	public:
+		// construction
+	
+		:target:`SurfaceMeshColocation<doxid-classgeode_1_1_surface_mesh_colocation_1a6be17af407def2652e1df3f40e65bfad>`(const SurfaceMesh<dimension>& mesh);
+		:target:`SurfaceMeshColocation<doxid-classgeode_1_1_surface_mesh_colocation_1acf2b48cb0938b5d4063cb08fd7fca47f>`(const SurfaceMesh<dimension>& mesh, bool verbose);
+
+		// methods
+	
+		bool :target:`mesh_has_colocated_points<doxid-classgeode_1_1_surface_mesh_colocation_1a42689ab5b3ab9f77728534aa6775a915>`() const;
+		index_t :target:`nb_colocated_points<doxid-classgeode_1_1_surface_mesh_colocation_1afa6b9f940e609757d3de198f53a119bb>`() const;
+		std::vector<std::vector<index_t>> :target:`colocated_points_groups<doxid-classgeode_1_1_surface_mesh_colocation_1a184d12ddc78e6d0a5d361637843eba5d>`() const;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`;

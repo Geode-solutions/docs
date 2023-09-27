@@ -1,0 +1,32 @@
+.. index:: pair: class; geode::SolidMeshEdgeManifold
+.. _doxid-classgeode_1_1_solid_mesh_edge_manifold:
+
+template class geode::SolidMeshEdgeManifold
+===========================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the manifold property of a SolidMesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <solid_edge_manifold.h>
+	
+	template <index_t dimension>
+	class SolidMeshEdgeManifold
+	{
+	public:
+		// construction
+	
+		:target:`SolidMeshEdgeManifold<doxid-classgeode_1_1_solid_mesh_edge_manifold_1ad9f0e3857b6ba833c55475008e6c5766>`(const SolidMesh<dimension>& mesh);
+		:target:`SolidMeshEdgeManifold<doxid-classgeode_1_1_solid_mesh_edge_manifold_1af9adea3d1d9ac3a5d976208ea74889d3>`(const SolidMesh<dimension>& mesh, bool verbose);
+
+		// methods
+	
+		bool :target:`mesh_edges_are_manifold<doxid-classgeode_1_1_solid_mesh_edge_manifold_1aac3f069e79e081ee022eb0a51dbdb7da>`() const;
+		index_t :target:`nb_non_manifold_edges<doxid-classgeode_1_1_solid_mesh_edge_manifold_1ae526a8e00bc5e4cfb7ee45147da12a61>`() const;
+		std::vector<std::array<index_t, 2>> :target:`non_manifold_edges<doxid-classgeode_1_1_solid_mesh_edge_manifold_1a6f393a5eee1649c41b94a62658c4650c>`() const;
+	};

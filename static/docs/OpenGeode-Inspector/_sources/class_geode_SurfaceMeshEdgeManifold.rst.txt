@@ -1,0 +1,37 @@
+.. index:: pair: class; geode::SurfaceMeshEdgeManifold
+.. _doxid-classgeode_1_1_surface_mesh_edge_manifold:
+
+template class geode::SurfaceMeshEdgeManifold
+=============================================
+
+.. toctree::
+	:hidden:
+
+Class for inspecting the manifold property of a SurfaceMesh
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface_edge_manifold.h>
+	
+	template <index_t dimension>
+	class SurfaceMeshEdgeManifold
+	{
+	public:
+		// construction
+	
+		:target:`SurfaceMeshEdgeManifold<doxid-classgeode_1_1_surface_mesh_edge_manifold_1a71186818af17a39b1bc6465afacbe06e>`(const SurfaceMesh<dimension>& mesh);
+		:target:`SurfaceMeshEdgeManifold<doxid-classgeode_1_1_surface_mesh_edge_manifold_1aff9e4b4afe7002bbf50757bed92bc712>`(const SurfaceMesh<dimension>& mesh, bool verbose);
+
+		// methods
+	
+		bool :target:`mesh_edges_are_manifold<doxid-classgeode_1_1_surface_mesh_edge_manifold_1abf40bdd7fb8cab174eec84bfbd5cdbaf>`() const;
+		index_t :target:`nb_non_manifold_edges<doxid-classgeode_1_1_surface_mesh_edge_manifold_1a22bdf6228defddb4d194e78d4f044995>`() const;
+		std::vector<std::array<index_t, 2>> :target:`non_manifold_edges<doxid-classgeode_1_1_surface_mesh_edge_manifold_1a5af3a2f9dea2ad46f49fdedebed2d3b6>`() const;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`SurfaceMeshInspector<doxid-classgeode_1_1_surface_mesh_inspector>`;
