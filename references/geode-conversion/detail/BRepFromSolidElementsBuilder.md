@@ -6,9 +6,7 @@
 
 
 ```cpp
-```cpp
 Inherits from WireframeBuilderFromOneMesh<BRep, SolidMesh3D>
-```
 ```
 
 
@@ -24,27 +22,21 @@ Impl
 ### BRepFromSolidElementsBuilder
 
 ```cpp
-```cpp
 public void BRepFromSolidElementsBuilder(BRep & model, SolidMesh3D & solid, Span corner_vertices, Span line_edges, Span surface_facets)
-```
 ```
 
 
 ### ~BRepFromSolidElementsBuilder
 
 ```cpp
-```cpp
 public void ~BRepFromSolidElementsBuilder()
-```
 ```
 
 
 ### build_brep_without_block_mesh
 
 ```cpp
-```cpp
 public std::pair<VertexIndexMapping, IndexToModelMeshElementsMapping> build_brep_without_block_mesh()
-```
 ```
 
 
@@ -53,9 +45,7 @@ public std::pair<VertexIndexMapping, IndexToModelMeshElementsMapping> build_brep
 ### build_brep_with_block_mesh
 
 ```cpp
-```cpp
 public std::pair<VertexIndexMapping, IndexToBRepMeshElementsMapping> build_brep_with_block_mesh()
-```
 ```
 
 
@@ -64,9 +54,7 @@ public std::pair<VertexIndexMapping, IndexToBRepMeshElementsMapping> build_brep_
 ### is_corner
 
 ```cpp
-```cpp
 public _Bool is_corner(index_t vertex)
-```
 ```
 
 

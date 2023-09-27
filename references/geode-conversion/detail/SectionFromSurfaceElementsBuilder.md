@@ -6,9 +6,7 @@
 
 
 ```cpp
-```cpp
 Inherits from WireframeBuilderFromOneMesh<Section, SurfaceMesh2D>
-```
 ```
 
 
@@ -18,27 +16,21 @@ Inherits from WireframeBuilderFromOneMesh<Section, SurfaceMesh2D>
 ### SectionFromSurfaceElementsBuilder
 
 ```cpp
-```cpp
 public void SectionFromSurfaceElementsBuilder(Section & model, SurfaceMesh2D & surface, Span corner_vertices, Span line_edges)
-```
 ```
 
 
 ### ~SectionFromSurfaceElementsBuilder
 
 ```cpp
-```cpp
 public void ~SectionFromSurfaceElementsBuilder()
-```
 ```
 
 
 ### build_section_with_surface_mesh
 
 ```cpp
-```cpp
 public pair build_section_with_surface_mesh()
-```
 ```
 
 
