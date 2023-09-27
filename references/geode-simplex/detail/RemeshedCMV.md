@@ -4,15 +4,11 @@
 ## Members
 
 ```cpp
-```cpp
 public ComponentID id
-```
 ```
 
 ```cpp
-```cpp
 public vector unique_vertices
-```
 ```
 
 
@@ -22,9 +18,7 @@ public vector unique_vertices
 ### RemeshedCMV
 
 ```cpp
-```cpp
 public void RemeshedCMV(ComponentID id_in)
-```
 ```
 
 

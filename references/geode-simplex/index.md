@@ -90,6 +90,20 @@ flat_hash_map sample_lines(BRepSamplingData & data)
 ```
 
 
+### relax_blocks
+
+```cpp
+void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier)
+```
+
+
+### relax_blocks
+
+```cpp
+void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier, const Metric3D & metric)
+```
+
+
 ### sample_blocks
 
 ```cpp
@@ -129,20 +143,6 @@ flat_hash_map sample_surfaces(BRepSamplingData & data)
 
 ```cpp
 flat_hash_map sample_surfaces(BRepSamplingData & data, BRepSamplingData::Tasks & line_tasks)
-```
-
-
-### relax_blocks
-
-```cpp
-void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier)
-```
-
-
-### relax_blocks
-
-```cpp
-void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier, const Metric3D & metric)
 ```
 
 
