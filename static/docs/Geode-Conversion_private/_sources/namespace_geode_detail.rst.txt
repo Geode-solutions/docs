@@ -1,0 +1,44 @@
+.. index:: pair: namespace; geode::detail
+.. _doxid-namespacegeode_1_1detail:
+
+namespace geode::detail
+=======================
+
+.. toctree::
+	:hidden:
+
+	class_geode_detail_BRepFromMeshesBuilder.rst
+	class_geode_detail_BRepFromSolidElementsBuilder.rst
+	class_geode_detail_CornersLinesBuilder.rst
+	class_geode_detail_ModelBuilderFromMeshes.rst
+	class_geode_detail_SectionFromMeshesBuilder.rst
+	class_geode_detail_SectionFromSurfaceElementsBuilder.rst
+	class_geode_detail_WireframeBuilderFromOneMesh.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace detail {
+
+	// classes
+
+	class :ref:`BRepFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_meshes_builder>`;
+	class :ref:`BRepFromSolidElementsBuilder<doxid-classgeode_1_1detail_1_1_b_rep_from_solid_elements_builder>`;
+
+	template <typename Model>
+	class :ref:`CornersLinesBuilder<doxid-classgeode_1_1detail_1_1_corners_lines_builder>`;
+
+	template <typename Model>
+	class :ref:`ModelBuilderFromMeshes<doxid-classgeode_1_1detail_1_1_model_builder_from_meshes>`;
+
+	class :ref:`SectionFromMeshesBuilder<doxid-classgeode_1_1detail_1_1_section_from_meshes_builder>`;
+	class :ref:`SectionFromSurfaceElementsBuilder<doxid-classgeode_1_1detail_1_1_section_from_surface_elements_builder>`;
+
+	template <typename Model, typename Mesh>
+	class :ref:`WireframeBuilderFromOneMesh<doxid-classgeode_1_1detail_1_1_wireframe_builder_from_one_mesh>`;
+
+	} // namespace detail
