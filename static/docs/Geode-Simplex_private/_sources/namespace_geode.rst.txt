@@ -1,0 +1,106 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+	namespace_geode_detail.rst
+	class_geode_BRepMetricConstraints.rst
+	class_geode_SectionMetricConstraints.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// namespaces
+
+	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
+
+	// typedefs
+
+	typedef ModuleLicenseChecker<Simplex> :target:`SimplexLicenseChecker<doxid-namespacegeode_1a56bc318b83134f6a8e2a224247deb22f>`;
+
+	// classes
+
+	class :ref:`BRepMetricConstraints<doxid-classgeode_1_1_b_rep_metric_constraints>`;
+	class :ref:`SectionMetricConstraints<doxid-classgeode_1_1_section_metric_constraints>`;
+
+	// global variables
+
+	static constexpr char :target:`Simplex<doxid-namespacegeode_1adc5e365a706d6f0cedeec3ff39849dad>`[] = "Simplex";
+
+	// global functions
+
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ab55066c79293e5f8a8bd58cc59f89a20>`(geode_simplex_brep_api, SimplexBRep);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a65b92e04719b22bc521e1f2e664d44e4>`(Metric);
+	:target:`ALIAS_3D<doxid-namespacegeode_1ac93b93bd0a1e54b0ffb54f588b46dce9>`(Metric);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(Block);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(Block);
+
+	std::tuple<BRep, ModelCopyMapping> geode_simplex_brep_api :target:`local_simplex_remesh<doxid-namespacegeode_1a2a5faec16e54d7aacdd2bd585c47d173>`(
+		BRep& brep,
+		const Metric3D& metric,
+		std::vector<std::reference_wrapper<const Block3D>> blocks
+		);
+
+	void geode_simplex_brep_api :target:`simplex_mesh<doxid-namespacegeode_1a44f7d8b0f2ca4d5c49ac8e0b5093c10e>`(BRep& brep, const Metric3D& metric);
+
+	std::tuple<BRep, ModelCopyMapping> geode_simplex_brep_api :target:`simplex_remesh<doxid-namespacegeode_1a0c8a53f8ec4ba585042460bc3ecc8875>`(
+		BRep& brep,
+		const Metric3D& metric
+		);
+
+	void geode_simplex_brep_api :target:`new_simplex_remesh<doxid-namespacegeode_1ad7dc6ea529fc69d50b06b527d1e5d415>`(
+		BRep& brep,
+		const Metric3D& metric
+		);
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8df2fe4dbae5eba91b79d7ae631ec4d4>`(Corner);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9dd3655e0b4d0e1d23b6d3a8fd68c87b>`(Line);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a74a13005266ccc48f0d9545d28c09dcb>`(Surface);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a00d59edb267adf404ca6e1ee957187be>`(Corner);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a4efa1c27af37ca80b792b5290f406968>`(Line);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a5f0825f02564723bd52f856a1ae100c9>`(Surface);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a9f332d4b751380fbeae92ba04ba2601f>`(geode_simplex_metric_api, SimplexMetric);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a241c0639776a8fe28435273c861a89e1>`(ConstantMetric);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a2f05b7580b7a85b3c2b4e4922291e704>`(GridMetric);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a0e9305577914c9336afeeeb714cae321>`(CustomGridMetric);
+
+	template <typename Model>
+	index_t :target:`nb_minimum_apriori_simplex_elements<doxid-namespacegeode_1a85b49dd28f1c5f8251c4664c39d906bb>`(
+		const ConstantMetric<Model::dim>& metric,
+		const Model& model
+		);
+
+	template <typename Model>
+	index_t :target:`nb_minimum_apriori_simplex_elements<doxid-namespacegeode_1ace8fab5057bf2b609a2cf3ca76ba9438>`(
+		const GridMetric<Model::dim>& metric,
+		const Model& model
+		);
+
+	template <typename Model>
+	index_t :target:`nb_minimum_apriori_simplex_elements<doxid-namespacegeode_1a2d90e53805e9717e6b9f53f41b9b814b>`(
+		const CustomGridMetric<Model::dim>& metric,
+		const Model& model
+		);
+
+	:target:`ALIAS_2D<doxid-namespacegeode_1a5cfa2b7765eb0c1e52445038d29a7317>`(Corner);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a85b04296d2e759083127ceaf2a792264>`(Line);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a7da074eb0c591f0688ceeb11edd1fc9b>`(Metric);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a96755a4b4b643ca905a8a29e0a07543b>`(Surface);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ac8802e946c9edf4aa6404f175a05f9b5>`(geode_simplex_section_api, SimplexSection);
+
+	std::tuple<Section, ModelCopyMapping> geode_simplex_section_api :target:`simplex_remesh<doxid-namespacegeode_1ac43ebc5b42b2548b7f867a63fce85b03>`(
+		Section& section,
+		const Metric2D& metric
+		);
+
+	} // namespace geode
