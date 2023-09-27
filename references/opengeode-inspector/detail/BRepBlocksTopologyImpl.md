@@ -10,27 +10,21 @@
 ### BRepBlocksTopologyImpl
 
 ```cpp
-```cpp
 public void BRepBlocksTopologyImpl(const BRep & brep)
-```
 ```
 
 
 ### BRepBlocksTopologyImpl
 
 ```cpp
-```cpp
 public void BRepBlocksTopologyImpl(const BRep & brep, _Bool verbose)
-```
 ```
 
 
 ### brep_vertex_blocks_topology_is_valid
 
 ```cpp
-```cpp
 public _Bool brep_vertex_blocks_topology_is_valid(index_t unique_vertex_index)
-```
 ```
 
 

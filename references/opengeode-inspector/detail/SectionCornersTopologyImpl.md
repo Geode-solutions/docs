@@ -6,27 +6,21 @@
 ### SectionCornersTopologyImpl
 
 ```cpp
-```cpp
 public void SectionCornersTopologyImpl(const Section & section)
-```
 ```
 
 
 ### SectionCornersTopologyImpl
 
 ```cpp
-```cpp
 public void SectionCornersTopologyImpl(const Section & section, _Bool verbose)
-```
 ```
 
 
 ### section_corner_topology_is_valid
 
 ```cpp
-```cpp
 public _Bool section_corner_topology_is_valid(index_t unique_vertex_index)
-```
 ```
 
 
@@ -35,36 +29,28 @@ public _Bool section_corner_topology_is_valid(index_t unique_vertex_index)
 ### unique_vertex_has_multiple_corners
 
 ```cpp
-```cpp
 public _Bool unique_vertex_has_multiple_corners(index_t unique_vertex_index)
-```
 ```
 
 
 ### corner_has_multiple_embeddings
 
 ```cpp
-```cpp
 public _Bool corner_has_multiple_embeddings(index_t unique_vertex_index)
-```
 ```
 
 
 ### corner_is_not_internal_nor_boundary
 
 ```cpp
-```cpp
 public _Bool corner_is_not_internal_nor_boundary(index_t unique_vertex_index)
-```
 ```
 
 
 ### corner_is_part_of_line_but_not_boundary
 
 ```cpp
-```cpp
 public _Bool corner_is_part_of_line_but_not_boundary(index_t unique_vertex_index)
-```
 ```
 
 

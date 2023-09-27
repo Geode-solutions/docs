@@ -10,27 +10,21 @@
 ### SectionSurfacesTopologyImpl
 
 ```cpp
-```cpp
 public void SectionSurfacesTopologyImpl(const Section & section)
-```
 ```
 
 
 ### SectionSurfacesTopologyImpl
 
 ```cpp
-```cpp
 public void SectionSurfacesTopologyImpl(const Section & section, _Bool verbose)
-```
 ```
 
 
 ### section_vertex_surfaces_topology_is_valid
 
 ```cpp
-```cpp
 public _Bool section_vertex_surfaces_topology_is_valid(index_t unique_vertex_index)
-```
 ```
 
 
@@ -39,18 +33,14 @@ public _Bool section_vertex_surfaces_topology_is_valid(index_t unique_vertex_ind
 ### vertex_is_part_of_invalid_surfaces_topology
 
 ```cpp
-```cpp
 public _Bool vertex_is_part_of_invalid_surfaces_topology(index_t unique_vertex_index)
-```
 ```
 
 
 ### vertex_is_part_of_line_and_not_on_surface_border
 
 ```cpp
-```cpp
 public _Bool vertex_is_part_of_line_and_not_on_surface_border(index_t unique_vertex_index)
-```
 ```
 
 

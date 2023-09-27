@@ -52,7 +52,7 @@ public std::vector<uuid> components_with_wrong_adjacencies()
 ### surfaces_nb_edges_with_wrong_adjacencies
 
 ```cpp
-public absl::flat_hash_map<uuid, index_t> surfaces_nb_edges_with_wrong_adjacencies()
+public flat_hash_map surfaces_nb_edges_with_wrong_adjacencies()
 ```
 
 

@@ -10,27 +10,21 @@
 ### BRepSurfacesTopologyImpl
 
 ```cpp
-```cpp
 public void BRepSurfacesTopologyImpl(const BRep & brep)
-```
 ```
 
 
 ### BRepSurfacesTopologyImpl
 
 ```cpp
-```cpp
 public void BRepSurfacesTopologyImpl(const BRep & brep, _Bool verbose)
-```
 ```
 
 
 ### brep_vertex_surfaces_topology_is_valid
 
 ```cpp
-```cpp
 public _Bool brep_vertex_surfaces_topology_is_valid(index_t unique_vertex_index)
-```
 ```
 
 
@@ -39,45 +33,35 @@ public _Bool brep_vertex_surfaces_topology_is_valid(index_t unique_vertex_index)
 ### vertex_is_part_of_not_boundary_nor_internal_surface
 
 ```cpp
-```cpp
 public _Bool vertex_is_part_of_not_boundary_nor_internal_surface(const index_t unique_vertex_index)
-```
 ```
 
 
 ### vertex_is_part_of_surface_with_invalid_internal_topology
 
 ```cpp
-```cpp
 public _Bool vertex_is_part_of_surface_with_invalid_internal_topology(const index_t unique_vertex_index)
-```
 ```
 
 
 ### vertex_is_part_of_invalid_unique_surface
 
 ```cpp
-```cpp
 public _Bool vertex_is_part_of_invalid_unique_surface(index_t unique_vertex_index)
-```
 ```
 
 
 ### vertex_is_part_of_invalid_multiple_surfaces
 
 ```cpp
-```cpp
 public _Bool vertex_is_part_of_invalid_multiple_surfaces(index_t unique_vertex_index)
-```
 ```
 
 
 ### vertex_is_part_of_line_and_not_on_surface_border
 
 ```cpp
-```cpp
 public _Bool vertex_is_part_of_line_and_not_on_surface_border(index_t unique_vertex_index)
-```
 ```
 
 

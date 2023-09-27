@@ -51,10 +51,10 @@ public _Bool brep_topology_is_valid()
 
  Checks if the brep is topologically valid through the unique vertices.
 
-### brep_meshed_components_are_linked_to_a_unique_vertex
+### brep_meshed_components_are_linked_to_unique_vertices
 
 ```cpp
-public _Bool brep_meshed_components_are_linked_to_a_unique_vertex()
+public _Bool brep_meshed_components_are_linked_to_unique_vertices()
 ```
 
 
@@ -72,24 +72,24 @@ public index_t nb_corners_not_linked_to_a_unique_vertex()
 ```
 
 
-### nb_lines_meshed_but_not_linked_to_a_unique_vertex
+### nb_lines_meshed_but_not_linked_to_unique_vertices
 
 ```cpp
-public index_t nb_lines_meshed_but_not_linked_to_a_unique_vertex()
+public index_t nb_lines_meshed_but_not_linked_to_unique_vertices()
 ```
 
 
-### nb_surfaces_meshed_but_not_linked_to_a_unique_vertex
+### nb_surfaces_meshed_but_not_linked_to_unique_vertices
 
 ```cpp
-public index_t nb_surfaces_meshed_but_not_linked_to_a_unique_vertex()
+public index_t nb_surfaces_meshed_but_not_linked_to_unique_vertices()
 ```
 
 
-### nb_blocks_meshed_but_not_linked_to_a_unique_vertex
+### nb_blocks_meshed_but_not_linked_to_unique_vertices
 
 ```cpp
-public index_t nb_blocks_meshed_but_not_linked_to_a_unique_vertex()
+public index_t nb_blocks_meshed_but_not_linked_to_unique_vertices()
 ```
 
 
@@ -97,6 +97,13 @@ public index_t nb_blocks_meshed_but_not_linked_to_a_unique_vertex()
 
 ```cpp
 public index_t nb_unique_vertices_not_linked_to_a_component_vertex()
+```
+
+
+### component_vertices_not_linked_to_a_unique_vertex
+
+```cpp
+public vector component_vertices_not_linked_to_a_unique_vertex()
 ```
 
 

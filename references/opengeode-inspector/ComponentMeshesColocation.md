@@ -55,7 +55,7 @@ public std::vector<uuid> components_with_colocated_points()
 ### components_nb_colocated_points
 
 ```cpp
-public absl::flat_hash_map<uuid, index_t> components_nb_colocated_points()
+public flat_hash_map components_nb_colocated_points()
 ```
 
 

@@ -52,14 +52,14 @@ public std::vector<uuid> components_non_manifold_meshes()
 ### component_meshes_nb_non_manifold_vertices
 
 ```cpp
-public absl::flat_hash_map<uuid, index_t> component_meshes_nb_non_manifold_vertices()
+public flat_hash_map component_meshes_nb_non_manifold_vertices()
 ```
 
 
 ### component_meshes_nb_non_manifold_edges
 
 ```cpp
-public absl::flat_hash_map<uuid, index_t> component_meshes_nb_non_manifold_edges()
+public flat_hash_map component_meshes_nb_non_manifold_edges()
 ```
 
 
@@ -73,7 +73,7 @@ public absl::flat_hash_map<uuid, std::vector<index_t> > component_meshes_non_man
 ### component_meshes_non_manifold_edges
 
 ```cpp
-public absl::flat_hash_map<uuid, std::vector<std::array<index_t, 2> > > component_meshes_non_manifold_edges()
+public flat_hash_map component_meshes_non_manifold_edges()
 ```
 
 
