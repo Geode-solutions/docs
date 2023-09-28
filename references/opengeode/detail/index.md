@@ -555,16 +555,6 @@ flat_hash_map block_component_mesh_polygons(const BRep & brep, const PolygonVert
 Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#595
 ```
 
-### register_basic_pcontext
-
-```cpp
-void register_basic_pcontext(PContext & context)
-```
-
-```cpp
-Defined at ../../include/geode/basic/detail/bitsery_archive.h#74
-```
-
 ### build_model_boundaries
 
 ```cpp
@@ -583,6 +573,16 @@ void build_model_boundaries(const BRep & model, BRepBuilder & builder)
 
 ```cpp
 Defined at /github/workspace/src/geode/model/helpers/detail/build_model_boundaries.cpp#91
+```
+
+### register_basic_pcontext
+
+```cpp
+void register_basic_pcontext(PContext & context)
+```
+
+```cpp
+Defined at ../../include/geode/basic/detail/bitsery_archive.h#74
 ```
 
 ### count_relationships

@@ -1455,6 +1455,38 @@ FixedArray section_coordinate_reference_systems(const Section & section)
 Defined at /github/workspace/src/geode/model/helpers/model_coordinate_reference_system.cpp#91
 ```
 
+### register_image_serialize_pcontext
+
+```cpp
+void register_image_serialize_pcontext(PContext & context)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/image/core/bitsery_archive.cpp#45
+```
+
+ Register all the information needed by Bitsery to serialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### register_image_deserialize_pcontext
+
+```cpp
+void register_image_deserialize_pcontext(PContext & context)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/image/core/bitsery_archive.cpp#50
+```
+
+ Register all the information needed by Bitsery to deserialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
 ### convert_surface_mesh_into_polygonal_surface
 
 ```cpp
@@ -1592,38 +1624,6 @@ int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMe
 ```cpp
 Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#354
 ```
-
-### register_image_serialize_pcontext
-
-```cpp
-void register_image_serialize_pcontext(PContext & context)
-```
-
-```cpp
-Defined at /github/workspace/src/geode/image/core/bitsery_archive.cpp#45
-```
-
- Register all the information needed by Bitsery to serialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### register_image_deserialize_pcontext
-
-```cpp
-void register_image_deserialize_pcontext(PContext & context)
-```
-
-```cpp
-Defined at /github/workspace/src/geode/image/core/bitsery_archive.cpp#50
-```
-
- Register all the information needed by Bitsery to deserialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
 
 ### create_aabb_tree
 
