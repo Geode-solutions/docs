@@ -1,5 +1,8 @@
 # class PassKey
 
+```cpp
+Defined at ../../include/geode/basic/passkey.h#55
+```
 
  This can be used to restrict which class can call methods Example:     class A     {         // Add a key only B can create         PASSKEY( B, KeyForB );
 

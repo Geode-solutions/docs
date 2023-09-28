@@ -1,5 +1,8 @@
 # class InternalLineRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/section.h#145
+```
 
 ```cpp
 Inherits from InternalRangeIterator
@@ -15,6 +18,9 @@ Inherits from InternalRangeIterator
 public void InternalLineRange(const Section & section, const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#241
+```
 
 ### InternalLineRange
 
@@ -22,6 +28,9 @@ public void InternalLineRange(const Section & section, const Surface2D & surface
 public void InternalLineRange(const InternalLineRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#249
+```
 
 ### ~InternalLineRange
 
@@ -29,6 +38,9 @@ public void InternalLineRange(const InternalLineRange & range)
 public void ~InternalLineRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#256
+```
 
 ### begin
 
@@ -36,6 +48,9 @@ public void ~InternalLineRange()
 public const InternalLineRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#258
+```
 
 ### end
 
@@ -43,6 +58,9 @@ public const InternalLineRange & begin()
 public const InternalLineRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#263
+```
 
 ### operator++
 
@@ -50,6 +68,9 @@ public const InternalLineRange & end()
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#268
+```
 
 ### operator*
 
@@ -57,6 +78,9 @@ public void operator++()
 public const Line2D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#274
+```
 
 
 

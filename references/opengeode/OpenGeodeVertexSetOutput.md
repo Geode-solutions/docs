@@ -1,5 +1,8 @@
 # class OpenGeodeVertexSetOutput
 
+```cpp
+Defined at ../../include/geode/mesh/io/geode/geode_vertex_set_output.h#32
+```
 
 ```cpp
 Inherits from VertexSetOutput
@@ -15,6 +18,9 @@ Inherits from VertexSetOutput
 public void OpenGeodeVertexSetOutput(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/geode/geode_vertex_set_output.h#32
+```
 
 ### write
 
@@ -22,6 +28,9 @@ public void OpenGeodeVertexSetOutput(string_view filename)
 public void write(const VertexSet & mesh)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/geode/geode_vertex_set_output.h#32
+```
 
 
 

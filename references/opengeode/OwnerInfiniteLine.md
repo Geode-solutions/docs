@@ -1,5 +1,8 @@
 # class OwnerInfiniteLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#251
+```
 
 ```cpp
 Inherits from GenericLine<Point<2U>, 2U>
@@ -9,6 +12,9 @@ Inherits from GenericLine<Point<2U>, 2U>
 
 # class OwnerInfiniteLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#252
+```
 
 ```cpp
 Inherits from GenericLine<Point<3U>, 3U>
@@ -18,6 +24,9 @@ Inherits from GenericLine<Point<3U>, 3U>
 
 # class OwnerInfiniteLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#250
+```
 
 ```cpp
 Inherits from GenericLine<Point<1U>, 1U>
@@ -27,6 +36,9 @@ Inherits from GenericLine<Point<1U>, 1U>
 
 # class OwnerInfiniteLine
 
+```cpp
+Defined at ../../include/geode/geometry/basic_objects/infinite_line.h#68
+```
 
 ```cpp
 Inherits from GenericLine<Point<dimension>, dimension>
@@ -42,6 +54,9 @@ Inherits from GenericLine<Point<dimension>, dimension>
 public void OwnerInfiniteLine<>(const Vector<dimension> & direction, Point<dimension> origin)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#86
+```
 
 ### OwnerInfiniteLine
 
@@ -49,6 +64,9 @@ public void OwnerInfiniteLine<>(const Vector<dimension> & direction, Point<dimen
 public void OwnerInfiniteLine<>(const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#92
+```
 
 ### OwnerInfiniteLine
 
@@ -56,6 +74,9 @@ public void OwnerInfiniteLine<>(const Segment<dimension> & segment)
 public void OwnerInfiniteLine<>(const OwnerInfiniteLine<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#99
+```
 
 ### operator=
 
@@ -63,6 +84,9 @@ public void OwnerInfiniteLine<>(const OwnerInfiniteLine<dimension> & other)
 public OwnerInfiniteLine<dimension> & operator=(const OwnerInfiniteLine<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#105
+```
 
 ### OwnerInfiniteLine
 
@@ -70,6 +94,9 @@ public OwnerInfiniteLine<dimension> & operator=(const OwnerInfiniteLine<dimensio
 public void OwnerInfiniteLine<>(OwnerInfiniteLine<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#112
+```
 
 ### operator=
 
@@ -77,6 +104,9 @@ public void OwnerInfiniteLine<>(OwnerInfiniteLine<dimension> && other)
 public OwnerInfiniteLine<dimension> & operator=(OwnerInfiniteLine<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#118
+```
 
 
 

@@ -1,14 +1,19 @@
 # struct SurfacePolygonEdge
 
+```cpp
+Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#107
+```
 
 ## Members
 
 ```cpp
 public PolygonEdge edge
+
 ```
 
 ```cpp
 public array vertices
+
 ```
 
 
@@ -21,6 +26,9 @@ public array vertices
 public void SurfacePolygonEdge()
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#109
+```
 
 ### SurfacePolygonEdge
 
@@ -28,6 +36,9 @@ public void SurfacePolygonEdge()
 public void SurfacePolygonEdge(PolygonEdge edge_in)
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#110
+```
 
 
 

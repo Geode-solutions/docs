@@ -1,5 +1,8 @@
 # class ItemRangeIterator
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#267
+```
 
  Range to iterate on all items of one component
 
@@ -13,6 +16,9 @@
 public void ItemRangeIterator(const Relationships & relationships, const uuid & component_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#920
+```
 
 ### ItemRangeIterator
 
@@ -20,6 +26,9 @@ public void ItemRangeIterator(const Relationships & relationships, const uuid & 
 public void ItemRangeIterator(ItemRangeIterator && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#928
+```
 
 ### ItemRangeIterator
 
@@ -27,6 +36,9 @@ public void ItemRangeIterator(ItemRangeIterator && other)
 public void ItemRangeIterator(const ItemRangeIterator & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#934
+```
 
 ### ~ItemRangeIterator
 
@@ -34,13 +46,19 @@ public void ItemRangeIterator(const ItemRangeIterator & other)
 public void ~ItemRangeIterator()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#940
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const ItemRangeIterator & )
+public bool operator!=(const ItemRangeIterator & )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#942
+```
 
 ### operator++
 
@@ -48,6 +66,9 @@ public _Bool operator!=(const ItemRangeIterator & )
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#948
+```
 
 ### operator*
 
@@ -55,6 +76,9 @@ public void operator++()
 public const ComponentID & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#953
+```
 
 
 

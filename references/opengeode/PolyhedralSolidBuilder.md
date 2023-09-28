@@ -1,5 +1,8 @@
 # class PolyhedralSolidBuilder
 
+```cpp
+Defined at ../../include/geode/mesh/builder/polyhedral_solid_builder.h#45
+```
 
  Interface class to represent the builder of a PolyhedralSolid
 
@@ -19,6 +22,9 @@ Inherits from SolidMeshBuilder<dimension>
 public std::unique_ptr<PolyhedralSolidBuilder<dimension> > create(PolyhedralSolid<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/polyhedral_solid_builder.cpp#43
+```
 
  Create the builder associated with a PolyhedralSolid.
 
@@ -30,6 +36,9 @@ public std::unique_ptr<PolyhedralSolidBuilder<dimension> > create(PolyhedralSoli
 public void copy(const PolyhedralSolid<dimension> & polyhedral_solid)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/polyhedral_solid_builder.cpp#52
+```
 
 ### PolyhedralSolidBuilder
 
@@ -37,11 +46,17 @@ public void copy(const PolyhedralSolid<dimension> & polyhedral_solid)
 protected void PolyhedralSolidBuilder<>(PolyhedralSolid<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/polyhedral_solid_builder.cpp#36
+```
 
 
 
 # class PolyhedralSolidBuilder
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/polyhedral_solid_builder.cpp#63
+```
 
 ```cpp
 Inherits from SolidMeshBuilder<3U>

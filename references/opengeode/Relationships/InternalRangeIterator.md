@@ -1,5 +1,8 @@
 # class InternalRangeIterator
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#183
+```
 
  Range to iterate on all internal components of one component
 
@@ -13,6 +16,9 @@
 public void InternalRangeIterator(const Relationships & relationships, const uuid & component_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#745
+```
 
 ### InternalRangeIterator
 
@@ -20,6 +26,9 @@ public void InternalRangeIterator(const Relationships & relationships, const uui
 public void InternalRangeIterator(InternalRangeIterator && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#753
+```
 
 ### InternalRangeIterator
 
@@ -27,6 +36,9 @@ public void InternalRangeIterator(InternalRangeIterator && other)
 public void InternalRangeIterator(const InternalRangeIterator & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#759
+```
 
 ### ~InternalRangeIterator
 
@@ -34,13 +46,19 @@ public void InternalRangeIterator(const InternalRangeIterator & other)
 public void ~InternalRangeIterator()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#765
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const InternalRangeIterator & )
+public bool operator!=(const InternalRangeIterator & )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#767
+```
 
 ### operator++
 
@@ -48,6 +66,9 @@ public _Bool operator!=(const InternalRangeIterator & )
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#773
+```
 
 ### operator*
 
@@ -55,6 +76,9 @@ public void operator++()
 public const ComponentID & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#778
+```
 
 
 

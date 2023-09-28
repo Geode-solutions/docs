@@ -1,5 +1,8 @@
 # class Point
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#47
+```
 
  Description of a point in the given dimension with double coordinates
 
@@ -13,6 +16,9 @@
 public void Point<>()
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#50
+```
 
 ### Point
 
@@ -20,6 +26,9 @@ public void Point<>()
 public void Point<>(std::array<double, dimension> values)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#55
+```
 
 ### value
 
@@ -27,6 +36,9 @@ public void Point<>(std::array<double, dimension> values)
 public double value(local_index_t index)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#60
+```
 
 ### set_value
 
@@ -34,34 +46,49 @@ public double value(local_index_t index)
 public void set_value(local_index_t index, double coordinate)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#65
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const Point<> & other)
+public bool operator==(const Point<> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#70
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const Point<> & other)
+public bool operator!=(const Point<> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#82
+```
 
 ### operator<
 
 ```cpp
-public _Bool operator<(const Point<> & other)
+public bool operator<(const Point<> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#87
+```
 
 ### operator<=
 
 ```cpp
-public _Bool operator<=(const Point<> & other)
+public bool operator<=(const Point<> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#103
+```
 
 ### operator*
 
@@ -69,6 +96,9 @@ public _Bool operator<=(const Point<> & other)
 public Point operator*(double multiplier)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#108
+```
 
 ### operator/
 
@@ -76,6 +106,9 @@ public Point operator*(double multiplier)
 public Point operator/(double divider)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#113
+```
 
 ### operator+
 
@@ -83,6 +116,9 @@ public Point operator/(double divider)
 public Point operator+(const Point<> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#118
+```
 
 ### operator-
 
@@ -90,6 +126,9 @@ public Point operator+(const Point<> & other)
 public Point operator-(const Point<> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#123
+```
 
 ### operator*=
 
@@ -97,6 +136,9 @@ public Point operator-(const Point<> & other)
 public void operator*=(double multiplier)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#128
+```
 
 ### operator/=
 
@@ -104,6 +146,9 @@ public void operator*=(double multiplier)
 public void operator/=(double divider)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#133
+```
 
 ### operator+=
 
@@ -111,6 +156,9 @@ public void operator/=(double divider)
 public void operator+=(const Point<> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#138
+```
 
 ### operator-=
 
@@ -118,13 +166,19 @@ public void operator+=(const Point<> & other)
 public void operator-=(const Point<> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#143
+```
 
 ### inexact_equal
 
 ```cpp
-public _Bool inexact_equal(const Point<> & other)
+public bool inexact_equal(const Point<> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#148
+```
 
 ### string
 
@@ -132,6 +186,9 @@ public _Bool inexact_equal(const Point<> & other)
 public basic_string string()
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#164
+```
 
 
 

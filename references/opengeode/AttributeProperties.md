@@ -1,5 +1,8 @@
 # struct AttributeProperties
 
+```cpp
+Defined at ../../include/geode/basic/attribute_utils.h#40
+```
 
  Struct holding Attribute flags used by the AttributeManager for updating/computing attribute values
 
@@ -8,11 +11,13 @@
 ## Members
 
 ```cpp
-public _Bool assignable
+public bool assignable
+
 ```
 
 ```cpp
-public _Bool interpolable
+public bool interpolable
+
 ```
 
 
@@ -25,13 +30,19 @@ public _Bool interpolable
 public void AttributeProperties()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute_utils.h#42
+```
 
 ### AttributeProperties
 
 ```cpp
-public void AttributeProperties(_Bool is_assignable, _Bool is_interpolable)
+public void AttributeProperties(bool is_assignable, bool is_interpolable)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute_utils.h#44
+```
 
 ### serialize
 
@@ -39,6 +50,9 @@ public void AttributeProperties(_Bool is_assignable, _Bool is_interpolable)
 public void serialize(Archive & archive)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute_utils.h#50
+```
 
 
 

@@ -1,5 +1,8 @@
 # class PointSet
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/point_set.cpp#96
+```
 
 ```cpp
 Inherits from VertexSet, CoordinateReferenceSystemManagers<2U>
@@ -9,6 +12,9 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<2U>
 
 # class PointSet
 
+```cpp
+Defined at ../../include/geode/mesh/core/point_set.h#46
+```
 
  Interface class to represent a set of 2D or 3D points. A point is a vertex associated to spatial coordinates
 
@@ -28,6 +34,9 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<dimension>
 public std::unique_ptr<PointSet<dimension> > create()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/point_set.cpp#37
+```
 
  Create a new PointSet using default data structure.
 
@@ -37,6 +46,9 @@ public std::unique_ptr<PointSet<dimension> > create()
 public std::unique_ptr<PointSet<dimension> > create(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/point_set.cpp#44
+```
 
  Create a new PointSet using a specified data structure.
 
@@ -48,6 +60,9 @@ public std::unique_ptr<PointSet<dimension> > create(const MeshImpl & impl)
 public NamedType type_name_static()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/point_set.cpp#51
+```
 
 ### clone
 
@@ -55,6 +70,9 @@ public NamedType type_name_static()
 public std::unique_ptr<PointSet<dimension> > clone()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/point_set.cpp#75
+```
 
 ### bounding_box
 
@@ -62,6 +80,9 @@ public std::unique_ptr<PointSet<dimension> > clone()
 public BoundingBox<dimension> bounding_box()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/point_set.cpp#85
+```
 
  Compute the bounding box from mesh vertices
 
@@ -71,6 +92,9 @@ public BoundingBox<dimension> bounding_box()
 protected void PointSet<dimension>()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/point_set.h#77
+```
 
 ### PointSet
 
@@ -78,6 +102,9 @@ protected void PointSet<dimension>()
 protected void PointSet<dimension>(PointSet<dimension> && other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/point_set.h#78
+```
 
 ### operator=
 
@@ -85,11 +112,17 @@ protected void PointSet<dimension>(PointSet<dimension> && other)
 protected PointSet<dimension> & operator=(PointSet<dimension> && other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/point_set.h#79
+```
 
 
 
 # class PointSet
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/point_set.cpp#97
+```
 
 ```cpp
 Inherits from VertexSet, CoordinateReferenceSystemManagers<3U>

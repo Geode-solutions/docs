@@ -1,5 +1,8 @@
 # class VertexSetOutput
 
+```cpp
+Defined at ../../include/geode/mesh/io/vertex_set_output.h#47
+```
 
 ```cpp
 Inherits from Output<VertexSet>
@@ -15,6 +18,9 @@ Inherits from Output<VertexSet>
 protected void VertexSetOutput(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/vertex_set_output.h#50
+```
 
 
 

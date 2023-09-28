@@ -1,5 +1,8 @@
 # class Section
 
+```cpp
+Defined at ../../include/geode/model/representation/core/section.h#59
+```
 
  A Section is a 2D model composed of Corners, Lines, and Surfaces. This class provides classes for range-based iteration on Component boundaries and incidences.**extends** **extends** **extends** **extends** 
 
@@ -39,6 +42,9 @@ ItemLineRange
 public void Section()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#417
+```
 
 ### Section
 
@@ -46,6 +52,9 @@ public void Section()
 public void Section(Section && section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#419
+```
 
 ### operator=
 
@@ -53,6 +62,9 @@ public void Section(Section && section)
 public Section & operator=(Section && section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#429
+```
 
 ### ~Section
 
@@ -60,6 +72,9 @@ public Section & operator=(Section && section)
 public void ~Section()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#440
+```
 
 ### boundaries
 
@@ -67,6 +82,9 @@ public void ~Section()
 public BoundaryCornerRange boundaries(const Line2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#81
+```
 
 ### boundaries
 
@@ -74,6 +92,9 @@ public BoundaryCornerRange boundaries(const Line2D & line)
 public BoundaryLineRange boundaries(const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#119
+```
 
 ### incidences
 
@@ -81,6 +102,9 @@ public BoundaryLineRange boundaries(const Surface2D & surface)
 public IncidentLineRange incidences(const Corner2D & corner)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#157
+```
 
 ### incidences
 
@@ -88,6 +112,9 @@ public IncidentLineRange incidences(const Corner2D & corner)
 public IncidentSurfaceRange incidences(const Line2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#195
+```
 
 ### nb_internal_corners
 
@@ -95,6 +122,9 @@ public IncidentSurfaceRange incidences(const Line2D & line)
 public index_t nb_internal_corners(const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#448
+```
 
 ### internal_corners
 
@@ -102,6 +132,9 @@ public index_t nb_internal_corners(const Surface2D & surface)
 public InternalCornerRange internal_corners(const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#280
+```
 
 ### nb_internal_lines
 
@@ -109,6 +142,9 @@ public InternalCornerRange internal_corners(const Surface2D & surface)
 public index_t nb_internal_lines(const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#453
+```
 
 ### internal_lines
 
@@ -116,6 +152,9 @@ public index_t nb_internal_lines(const Surface2D & surface)
 public InternalLineRange internal_lines(const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#235
+```
 
 ### nb_embedding_surfaces
 
@@ -123,6 +162,9 @@ public InternalLineRange internal_lines(const Surface2D & surface)
 public index_t nb_embedding_surfaces(const Corner2D & corner)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#458
+```
 
 ### embedding_surfaces
 
@@ -130,6 +172,9 @@ public index_t nb_embedding_surfaces(const Corner2D & corner)
 public EmbeddingSurfaceRange embedding_surfaces(const Corner2D & corner)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#326
+```
 
 ### nb_embedding_surfaces
 
@@ -137,6 +182,9 @@ public EmbeddingSurfaceRange embedding_surfaces(const Corner2D & corner)
 public index_t nb_embedding_surfaces(const Line2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#463
+```
 
 ### embedding_surfaces
 
@@ -144,6 +192,9 @@ public index_t nb_embedding_surfaces(const Line2D & line)
 public EmbeddingSurfaceRange embedding_surfaces(const Line2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#332
+```
 
 ### model_boundary_items
 
@@ -151,48 +202,69 @@ public EmbeddingSurfaceRange embedding_surfaces(const Line2D & line)
 public ItemLineRange model_boundary_items(const ModelBoundary2D & boundary)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#442
+```
 
 ### is_closed
 
 ```cpp
-public _Bool is_closed(const Line2D & line)
+public bool is_closed(const Line2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#468
+```
 
 ### is_boundary
 
 ```cpp
-public _Bool is_boundary(const Corner2D & corner, const Line2D & line)
+public bool is_boundary(const Corner2D & corner, const Line2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#473
+```
 
 ### is_boundary
 
 ```cpp
-public _Bool is_boundary(const Line2D & line, const Surface2D & surface)
+public bool is_boundary(const Line2D & line, const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#479
+```
 
 ### is_internal
 
 ```cpp
-public _Bool is_internal(const Corner2D & corner, const Surface2D & surface)
+public bool is_internal(const Corner2D & corner, const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#485
+```
 
 ### is_internal
 
 ```cpp
-public _Bool is_internal(const Line2D & line, const Surface2D & surface)
+public bool is_internal(const Line2D & line, const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#491
+```
 
 ### is_model_boundary_item
 
 ```cpp
-public _Bool is_model_boundary_item(const Line2D & line, const ModelBoundary2D & boundary)
+public bool is_model_boundary_item(const Line2D & line, const ModelBoundary2D & boundary)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#497
+```
 
 ### bounding_box
 
@@ -200,6 +272,9 @@ public _Bool is_model_boundary_item(const Line2D & line, const ModelBoundary2D &
 public BoundingBox2D bounding_box()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#503
+```
 
  Compute the bounding box from component meshes
 
@@ -209,6 +284,9 @@ public BoundingBox2D bounding_box()
 public string_view native_extension_static()
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/core/section.h#281
+```
 
 ### native_extension
 
@@ -216,6 +294,9 @@ public string_view native_extension_static()
 public string_view native_extension()
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/core/section.h#287
+```
 
 
 

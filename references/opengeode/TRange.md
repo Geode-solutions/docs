@@ -1,5 +1,8 @@
 # class TRange
 
+```cpp
+Defined at ../../include/geode/basic/range.h#133
+```
 
  This class can be used to iterate over integer loop. Example:              = C++98 loop =    for( index_t i = 0; i < n; i++ )    {      // do something    }
 
@@ -21,6 +24,9 @@ Inherits from BaseRange<Type, geode::IncrementOperator>
 public void TRange<Type>(T1 begin, T2 end)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/range.h#137
+```
 
 ### TRange
 
@@ -28,6 +34,9 @@ public void TRange<Type>(T1 begin, T2 end)
 public void TRange<Type>(T end)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/range.h#143
+```
 
 ### begin
 
@@ -35,6 +44,9 @@ public void TRange<Type>(T end)
 public const TRange<Type> & begin()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/range.h#147
+```
 
 ### end
 
@@ -42,6 +54,9 @@ public const TRange<Type> & begin()
 public const TRange<Type> & end()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/range.h#152
+```
 
 ### operator*
 
@@ -49,6 +64,9 @@ public const TRange<Type> & end()
 public Type operator*()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/range.h#157
+```
 
 
 

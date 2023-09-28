@@ -1,5 +1,8 @@
 # class AttributeBase
 
+```cpp
+Defined at ../../include/geode/basic/attribute.h#57
+```
 
  Base class defining the virtual API used by the AttributeManager.
 
@@ -13,6 +16,9 @@
 public void AttributeBase(const AttributeBase & )
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute.h#59
+```
 
 ### operator=
 
@@ -20,6 +26,9 @@ public void AttributeBase(const AttributeBase & )
 public AttributeBase & operator=(const AttributeBase & )
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute.h#59
+```
 
 ### ~AttributeBase
 
@@ -27,6 +36,9 @@ public AttributeBase & operator=(const AttributeBase & )
 public void ~AttributeBase()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute.h#65
+```
 
 ### generic_value
 
@@ -43,7 +55,7 @@ public float generic_item_value(index_t element, local_index_t item)
 ### is_genericable
 
 ```cpp
-public _Bool is_genericable()
+public bool is_genericable()
 ```
 
 ### nb_items
@@ -64,6 +76,9 @@ public string_view type()
 public string_view name()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute.h#78
+```
 
 ### properties
 
@@ -71,6 +86,9 @@ public string_view name()
 public const AttributeProperties & properties()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute.h#83
+```
 
 ### set_properties
 
@@ -78,6 +96,9 @@ public const AttributeProperties & properties()
 public void set_properties(AttributeProperties new_properties)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute.h#88
+```
 
 ### set_name
 
@@ -85,6 +106,9 @@ public void set_properties(AttributeProperties new_properties)
 public void set_name(string_view name, PassKey )
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute.h#94
+```
 
 ### clone
 
@@ -125,7 +149,7 @@ public void reserve(index_t capacity, PassKey )
 ### delete_elements
 
 ```cpp
-public void delete_elements(const std::vector<_Bool> & to_delete, PassKey )
+public void delete_elements(const std::vector<bool> & to_delete, PassKey )
 ```
 
 ### permute_elements
@@ -152,6 +176,9 @@ public void compute_value(const AttributeLinearInterpolation & interpolation, in
 protected void AttributeBase(AttributeProperties properties)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/attribute.h#153
+```
 
 ### extract
 

@@ -4,6 +4,9 @@
 
 # class SurfaceEdges
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_edges.h#45
+```
 
 ## Functions
 
@@ -13,6 +16,9 @@
 public void SurfaceEdges<>(const SurfaceEdges<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_edges.h#47
+```
 
 ### operator=
 
@@ -20,6 +26,9 @@ public void SurfaceEdges<>(const SurfaceEdges<> & )
 public SurfaceEdges<> & operator=(const SurfaceEdges<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_edges.h#47
+```
 
 ### SurfaceEdges
 
@@ -27,6 +36,9 @@ public SurfaceEdges<> & operator=(const SurfaceEdges<> & )
 public void SurfaceEdges<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#91
+```
 
 ### SurfaceEdges
 
@@ -34,6 +46,9 @@ public void SurfaceEdges<>()
 public void SurfaceEdges<>(const SurfaceMesh<dimension> & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#96
+```
 
 ### ~SurfaceEdges
 
@@ -41,6 +56,9 @@ public void SurfaceEdges<>(const SurfaceMesh<dimension> & surface)
 public void ~SurfaceEdges<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#103
+```
 
 ### nb_edges
 
@@ -48,13 +66,19 @@ public void ~SurfaceEdges<>()
 public index_t nb_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#169
+```
 
 ### is_edge_isolated
 
 ```cpp
-public _Bool is_edge_isolated(index_t edge_id)
+public bool is_edge_isolated(index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#175
+```
 
 ### edge_vertices
 
@@ -62,6 +86,9 @@ public _Bool is_edge_isolated(index_t edge_id)
 public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#115
+```
 
  Return the indices of edge vertices.
 
@@ -73,6 +100,9 @@ public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 public absl::optional<index_t> edge_from_vertices(const std::array<index_t, 2> & vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#182
+```
 
  Get the index of edge corresponding to given vertices
 
@@ -84,6 +114,9 @@ public absl::optional<index_t> edge_from_vertices(const std::array<index_t, 2> &
 public AttributeManager & edge_attribute_manager()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#189
+```
 
  Access to the manager of attributes associated with edges.
 
@@ -93,6 +126,9 @@ public AttributeManager & edge_attribute_manager()
 public void update_edge_vertices(Span old2new, SurfaceEdgesKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#123
+```
 
 ### update_edge_vertex
 
@@ -100,6 +136,9 @@ public void update_edge_vertices(Span old2new, SurfaceEdgesKey )
 public void update_edge_vertex(std::array<index_t, 2> edge_vertices, index_t edge_vertex_id, index_t new_vertex_id, SurfaceEdgesKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#130
+```
 
 ### remove_edge
 
@@ -107,6 +146,9 @@ public void update_edge_vertex(std::array<index_t, 2> edge_vertices, index_t edg
 public void remove_edge(std::array<index_t, 2> edge_vertices, SurfaceEdgesKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#141
+```
 
 ### delete_edges
 
@@ -114,6 +156,9 @@ public void remove_edge(std::array<index_t, 2> edge_vertices, SurfaceEdgesKey )
 public int delete_edges(const int & to_delete, SurfaceEdgesKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#148
+```
 
 ### remove_isolated_edges
 
@@ -121,6 +166,9 @@ public int delete_edges(const int & to_delete, SurfaceEdgesKey )
 public int remove_isolated_edges(SurfaceEdgesKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#155
+```
 
 ### find_or_create_edge
 
@@ -128,6 +176,9 @@ public int remove_isolated_edges(SurfaceEdgesKey )
 public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices, SurfaceEdgesKey )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_edges.h#97
+```
 
 ### overwrite_edges
 
@@ -135,11 +186,14 @@ public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices, Surface
 public void overwrite_edges(const SurfaceEdges<dimension> & from, SurfaceEdgesKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_edges.cpp#162
+```
 
 ### delete_edges
 
 ```cpp
-public vector delete_edges(const std::vector<_Bool> & to_delete, SurfaceEdgesKey )
+public vector delete_edges(const std::vector<bool> & to_delete, SurfaceEdgesKey )
 ```
 
 

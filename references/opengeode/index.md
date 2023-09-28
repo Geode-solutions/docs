@@ -313,6 +313,9 @@
 void geode_assertion_failed(string_view condition, string_view message, string_view file, int line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/assert.cpp#32
+```
 
 ### geode_lippincott
 
@@ -320,6 +323,9 @@ void geode_assertion_failed(string_view condition, string_view message, string_v
 int geode_lippincott()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/assert.cpp#43
+```
 
  Try to catch several exception types. Always return 1.
 
@@ -329,6 +335,9 @@ int geode_lippincott()
 unsigned char operator""_uc(unsigned long long arg)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/types.h#47
+```
 
 ### to_string
 
@@ -336,6 +345,9 @@ unsigned char operator""_uc(unsigned long long arg)
 basic_string to_string(string_view view)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/types.h#53
+```
 
 ### to_array
 
@@ -343,6 +355,9 @@ basic_string to_string(string_view view)
 std::array<T, sizeof...(Args)> to_array(Args &&... args)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/types.h#59
+```
 
 ### register_basic_serialize_pcontext
 
@@ -350,6 +365,9 @@ std::array<T, sizeof...(Args)> to_array(Args &&... args)
 void register_basic_serialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/bitsery_output.cpp#30
+```
 
  Register all the information needed by Bitsery to serialize the objects in the basic library.
 
@@ -363,6 +381,9 @@ void register_basic_serialize_pcontext(PContext & context)
 void register_basic_deserialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/bitsery_input.cpp#30
+```
 
  Register all the information needed by Bitsery to deserialize the objects in the basic library.
 
@@ -373,9 +394,12 @@ void register_basic_deserialize_pcontext(PContext & context)
 ### delete_vector_elements
 
 ```cpp
-index_t delete_vector_elements(const std::vector<_Bool> & to_delete, std::vector<T> & values)
+index_t delete_vector_elements(const std::vector<bool> & to_delete, std::vector<T> & values)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/algorithm.h#47
+```
 
  Delete some elements from a given vector.
 
@@ -392,9 +416,12 @@ index_t delete_vector_elements(const std::vector<_Bool> & to_delete, std::vector
 ### extract_vector_elements
 
 ```cpp
-std::vector<T> extract_vector_elements(const std::vector<_Bool> & to_keep, const std::vector<T> & in_values)
+std::vector<T> extract_vector_elements(const std::vector<bool> & to_keep, const std::vector<T> & in_values)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/algorithm.h#83
+```
 
  Create a new vector containing only some elements from a given vector.
 
@@ -412,6 +439,9 @@ std::vector<T> extract_vector_elements(const std::vector<_Bool> & to_keep, const
 void sort_unique(Container & in)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/algorithm.h#113
+```
 
  Modify the container by removing every duplicated values inside
 
@@ -425,6 +455,9 @@ void sort_unique(Container & in)
 void permute(Container & data, Span permutation)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/permutation.h#41
+```
 
 ### old2new_permutation
 
@@ -432,6 +465,9 @@ void permute(Container & data, Span permutation)
 vector old2new_permutation(Span permutation)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/permutation.cpp#36
+```
 
 ### register_geometry_serialize_pcontext
 
@@ -439,6 +475,9 @@ vector old2new_permutation(Span permutation)
 void register_geometry_serialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bitsery_output.cpp#30
+```
 
  Register all the information needed by Bitsery to serialize the objects in the geometry library.
 
@@ -452,6 +491,9 @@ void register_geometry_serialize_pcontext(PContext & context)
 void register_geometry_deserialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bitsery_input.cpp#30
+```
 
  Register all the information needed by Bitsery to deserialize the objects in the geometry library.
 
@@ -465,6 +507,9 @@ void register_geometry_deserialize_pcontext(PContext & context)
 void save_graph(const Graph & graph, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/graph_output.cpp#32
+```
 
  API function for saving a Graph. The adequate saver is called depending on the given filename extension.
 
@@ -478,6 +523,9 @@ void save_graph(const Graph & graph, string_view filename)
 basic_string filename_with_extension(string_view path)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/filename.cpp#30
+```
 
 ### filename_without_extension
 
@@ -485,6 +533,9 @@ basic_string filename_with_extension(string_view path)
 basic_string filename_without_extension(string_view path)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/filename.cpp#36
+```
 
 ### filepath_without_extension
 
@@ -492,6 +543,9 @@ basic_string filename_without_extension(string_view path)
 basic_string filepath_without_extension(string_view path)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/filename.cpp#42
+```
 
 ### filepath_without_filename
 
@@ -499,6 +553,9 @@ basic_string filepath_without_extension(string_view path)
 basic_string filepath_without_filename(string_view path)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/filename.cpp#48
+```
 
 ### extension_from_filename
 
@@ -506,6 +563,9 @@ basic_string filepath_without_filename(string_view path)
 string_view extension_from_filename(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/filename.cpp#54
+```
 
 ### load_section
 
@@ -513,6 +573,9 @@ string_view extension_from_filename(string_view filename)
 Section load_section(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/section_input.cpp#33
+```
 
  API function for loading a Section. The adequate loader is called depending on the filename extension.
 
@@ -526,6 +589,9 @@ Section load_section(string_view filename)
 MissingFiles check_section_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/section_input.cpp#60
+```
 
 ### load_polyhedral_solid
 
@@ -533,6 +599,9 @@ MissingFiles check_section_missing_files(string_view filename)
 std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_input.cpp#34
+```
 
  API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
 
@@ -546,6 +615,9 @@ std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImp
 std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_input.cpp#56
+```
 
  API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -557,6 +629,9 @@ std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(string_view f
 typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_input.cpp#66
+```
 
 ### radial_sort
 
@@ -564,6 +639,9 @@ typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_mi
 FixedArray radial_sort(const Segment3D & segment, Span points)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/radial_sort.cpp#139
+```
 
 ### point_side_to_segment
 
@@ -571,6 +649,9 @@ FixedArray radial_sort(const Segment3D & segment, Span points)
 Side point_side_to_segment(const Point2D & point, const Segment2D & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#251
+```
 
  Return the point side to a segment.
 
@@ -580,6 +661,9 @@ Side point_side_to_segment(const Point2D & point, const Segment2D & segment)
 Side point_side_to_line(const Point2D & point, const InfiniteLine2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#258
+```
 
  Return the point side to a line.
 
@@ -589,6 +673,9 @@ Side point_side_to_line(const Point2D & point, const InfiniteLine2D & line)
 Side point_side_to_plane(const Point3D & point, const Plane & plane)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#264
+```
 
  Return the point side to a plane.
 
@@ -598,6 +685,9 @@ Side point_side_to_plane(const Point3D & point, const Plane & plane)
 Side point_side_to_triangle(const Point3D & point, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#281
+```
 
  Return the point side to a 3D triangle.
 
@@ -607,6 +697,9 @@ Side point_side_to_triangle(const Point3D & point, const Triangle3D & triangle)
 Position point_segment_position(const Point<dimension> & point, const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#241
+```
 
  Return the position of a point on a segment: inside, outside or on segment vertex.
 
@@ -624,6 +717,9 @@ Position point_triangle_position(const Point<dimension> & point, const Triangle<
 Position point_tetrahedron_position(const Point3D & point, const Tetrahedron & tetra)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#170
+```
 
  Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
 
@@ -633,6 +729,9 @@ Position point_tetrahedron_position(const Point3D & point, const Tetrahedron & t
 Point<dimension> point_segment_projection(const Point<dimension> & point, const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/projection.cpp#35
+```
 
  Return the projection of a point on a segment
 
@@ -646,6 +745,9 @@ Point<dimension> point_segment_projection(const Point<dimension> & point, const 
 Point<dimension> point_line_projection(const Point<dimension> & point, const InfiniteLine<dimension> & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/projection.cpp#54
+```
 
  Return the projection of a point on a line
 
@@ -659,6 +761,9 @@ Point<dimension> point_line_projection(const Point<dimension> & point, const Inf
 Point<dimension> point_triangle_projection(const Point<dimension> & point, const Triangle<dimension> & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/projection.cpp#62
+```
 
  Return the projection of a point on a triangle
 
@@ -672,6 +777,9 @@ Point<dimension> point_triangle_projection(const Point<dimension> & point, const
 Point point_plane_projection(const Point3D & point, const Plane & plane)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/projection.cpp#68
+```
 
  Return the projection of a point on a plane
 
@@ -685,6 +793,9 @@ Point point_plane_projection(const Point3D & point, const Plane & plane)
 void save_section(const Section & section, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/section_output.cpp#32
+```
 
  API function for saving a Section. The adequate saver is called depending on the given filename extension.
 
@@ -698,6 +809,9 @@ void save_section(const Section & section, string_view filename)
 double point_point_distance(const Point<dimension> & point0, const Point<dimension> & point1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#344
+```
 
  Compute the Euclidean distance between a two points
 
@@ -707,6 +821,9 @@ double point_point_distance(const Point<dimension> & point0, const Point<dimensi
 double point_segment_distance(const Point<dimension> & point, const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#357
+```
 
  Compute the smallest distance between a point and a segment
 
@@ -716,6 +833,9 @@ double point_segment_distance(const Point<dimension> & point, const Segment<dime
 std::tuple<double, Point<dimension>, Point<dimension> > segment_segment_distance(const Segment<dimension> & segment0, const Segment<dimension> & segment1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#393
+```
 
  Compute the smallest distance between two segments
 
@@ -727,6 +847,9 @@ std::tuple<double, Point<dimension>, Point<dimension> > segment_segment_distance
 std::tuple<double, Point<dimension>, Point<dimension> > segment_line_distance(const Segment<dimension> & segment, const InfiniteLine<dimension> & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#671
+```
 
 ### point_line_distance
 
@@ -734,6 +857,9 @@ std::tuple<double, Point<dimension>, Point<dimension> > segment_line_distance(co
 double point_line_distance(const Point<dimension> & point, const InfiniteLine<dimension> & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#733
+```
 
  Compute the smallest distance between a point and an infinite line
 
@@ -743,6 +869,9 @@ double point_line_distance(const Point<dimension> & point, const InfiniteLine<di
 double point_line_signed_distance(const Point2D & point, const InfiniteLine2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#748
+```
 
  Compute the smallest signed distance between a point and an infinite line in 2D
 
@@ -762,6 +891,9 @@ std::tuple<double, Point<dimension> > point_triangle_distance(const Point<dimens
 tuple point_triangle_signed_distance(const Point3D & point, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#949
+```
 
  Compute the signed distance between a point and a triangle
 
@@ -775,6 +907,9 @@ tuple point_triangle_signed_distance(const Point3D & point, const Triangle3D & t
 std::tuple<double, Point3D, Point3D> line_triangle_distance(const InfiniteLine3D & line, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#821
+```
 
  Compute the smallest distance between an infinite line and a triangle
 
@@ -786,6 +921,9 @@ std::tuple<double, Point3D, Point3D> line_triangle_distance(const InfiniteLine3D
 std::tuple<double, Point3D, Point3D> segment_triangle_distance(const Segment3D & segment, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#908
+```
 
  Compute the smallest distance between an segment and a triangle
 
@@ -797,6 +935,9 @@ std::tuple<double, Point3D, Point3D> segment_triangle_distance(const Segment3D &
 tuple point_tetrahedron_distance(const Point3D & point, const Tetrahedron & tetra)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#923
+```
 
  Compute the distance between a point and a tetrahedron
 
@@ -808,6 +949,9 @@ tuple point_tetrahedron_distance(const Point3D & point, const Tetrahedron & tetr
 tuple point_plane_distance(const Point3D & point, const Plane & plane)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#976
+```
 
  Compute the distance between a point and a plane
 
@@ -819,6 +963,9 @@ tuple point_plane_distance(const Point3D & point, const Plane & plane)
 tuple point_plane_signed_distance(const Point3D & point, const Plane & plane)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#967
+```
 
  Compute the signed distance between a point and a plane
 
@@ -830,6 +977,9 @@ tuple point_plane_signed_distance(const Point3D & point, const Plane & plane)
 std::tuple<double, Point<dimension> > point_sphere_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#987
+```
 
  Compute the smallest distance between a point and a sphere
 
@@ -841,6 +991,9 @@ std::tuple<double, Point<dimension> > point_sphere_distance(const Point<dimensio
 std::tuple<double, Point<dimension> > point_sphere_signed_distance(const Point<dimension> & point, const Sphere<dimension> & sphere)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#1004
+```
 
  Compute the smallest signed distance between a point and a sphere
 
@@ -866,6 +1019,9 @@ std::tuple<double, Point<dimension> > point_ball_distance(const Point<dimension>
 tuple point_circle_distance(const Point3D & point, const Circle & circle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#1032
+```
 
  Compute the smallest distance between a point and a circle
 
@@ -877,6 +1033,9 @@ tuple point_circle_distance(const Point3D & point, const Circle & circle)
 tuple point_circle_signed_distance(const Point3D & point, const Circle & circle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#1073
+```
 
  Compute the smallest signed distance between a point and a circle
 
@@ -890,6 +1049,9 @@ tuple point_circle_signed_distance(const Point3D & point, const Circle & circle)
 tuple point_disk_distance(const Point3D & point, const Disk & disk)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#1087
+```
 
  Compute the smallest distance between a point and a disk
 
@@ -903,6 +1065,9 @@ tuple point_disk_distance(const Point3D & point, const Disk & disk)
 void save_brep(const BRep & brep, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/brep_output.cpp#32
+```
 
  API function for saving a BoundaryRepresentation. The adequate saver is called depending on the given filename extension.
 
@@ -916,6 +1081,9 @@ void save_brep(const BRep & brep, string_view filename)
 Vector perpendicular(const Vector2D & v)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/perpendicular.cpp#30
+```
 
  Return a 2D vector perpendicular to the given one
 
@@ -925,6 +1093,9 @@ Vector perpendicular(const Vector2D & v)
 double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/perpendicular.cpp#35
+```
 
  Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
 
@@ -934,6 +1105,9 @@ double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
 std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_input.cpp#34
+```
 
  API function for loading an TetrahedralSolid. The adequate loader is called depending on the filename extension.
 
@@ -947,6 +1121,9 @@ std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(const MeshI
 std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_input.cpp#59
+```
 
  API function for loading an TetrahedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -958,6 +1135,9 @@ std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(string_view
 typename TetrahedralSolidInput<dimension>::MissingFiles check_tetrahedral_solid_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_input.cpp#69
+```
 
 ### load_triangulated_surface
 
@@ -965,6 +1145,9 @@ typename TetrahedralSolidInput<dimension>::MissingFiles check_tetrahedral_solid_
 std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_input.cpp#34
+```
 
  API function for loading an TriangulatedSurface. The adequate loader is called depending on the filename extension.
 
@@ -978,6 +1161,9 @@ std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(const
 std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_input.cpp#60
+```
 
  API function for loading an TriangulatedSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -989,6 +1175,9 @@ std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(strin
 typename TriangulatedSurfaceInput<dimension>::MissingFiles check_triangulated_surface_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_input.cpp#70
+```
 
 ### triangle_area
 
@@ -996,6 +1185,9 @@ typename TriangulatedSurfaceInput<dimension>::MissingFiles check_triangulated_su
 double triangle_area(const Triangle<dimension> & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/mensuration.cpp#38
+```
 
  Compute the (positive) area of a triangle
 
@@ -1007,6 +1199,9 @@ double triangle_area(const Triangle<dimension> & triangle)
 double triangle_signed_area(const Triangle2D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/mensuration.cpp#73
+```
 
  Compute the signed area of a triangle
 
@@ -1018,6 +1213,9 @@ double triangle_signed_area(const Triangle2D & triangle)
 double triangle_signed_area(const Triangle3D & triangle, const Vector3D & direction)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/mensuration.cpp#62
+```
 
  Compute the signed area of a 3D triangle
 
@@ -1031,6 +1229,9 @@ double triangle_signed_area(const Triangle3D & triangle, const Vector3D & direct
 double tetrahedron_signed_volume(const Tetrahedron & tetra)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/mensuration.cpp#81
+```
 
  Compute the signed volume of a tetrahedron
 
@@ -1040,6 +1241,9 @@ double tetrahedron_signed_volume(const Tetrahedron & tetra)
 double tetrahedron_volume(const Tetrahedron & tetra)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/mensuration.cpp#115
+```
 
  Compute the (positive) volume of a tetrahedron
 
@@ -1049,6 +1253,9 @@ double tetrahedron_volume(const Tetrahedron & tetra)
 void register_mesh_serialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/bitsery_archive.cpp#291
+```
 
  Register all the information needed by Bitsery to serialize the objects in the mesh library.
 
@@ -1062,6 +1269,9 @@ void register_mesh_serialize_pcontext(PContext & context)
 void register_mesh_deserialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/bitsery_archive.cpp#286
+```
 
  Register all the information needed by Bitsery to deserialize the objects in the mesh library.
 
@@ -1075,6 +1285,9 @@ void register_mesh_deserialize_pcontext(PContext & context)
 void save_triangulated_surface(const TriangulatedSurface<dimension> & triangulated_surface, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_output.cpp#33
+```
 
  API function for saving a TriangulatedSurface. The adequate saver is called depending on the given filename extension.
 
@@ -1088,6 +1301,9 @@ void save_triangulated_surface(const TriangulatedSurface<dimension> & triangulat
 InlinedVector polyhedron_unique_vertices(const BRep & model, const Block3D & block, index_t polyhedron_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polyhedra.cpp#140
+```
 
 ### component_mesh_polyhedra
 
@@ -1095,6 +1311,9 @@ InlinedVector polyhedron_unique_vertices(const BRep & model, const Block3D & blo
 vector component_mesh_polyhedra(const BRep & brep, const PolyhedronVertices & polyhedron_unique_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polyhedra.cpp#156
+```
 
 ### component_mesh_vertex_generic
 
@@ -1102,6 +1321,9 @@ vector component_mesh_polyhedra(const BRep & brep, const PolyhedronVertices & po
 ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex> > unique_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_vertices.cpp#154
+```
 
 ### component_mesh_vertex_generic
 
@@ -1109,6 +1331,9 @@ ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<c
 ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<const absl::Span<const ComponentMeshVertex> > unique_vertices, const ComponentType & type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_vertices.cpp#167
+```
 
 ### component_mesh_vertex_pairs
 
@@ -1116,6 +1341,9 @@ ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(absl::Span<c
 ComponentMeshVertexPairs component_mesh_vertex_pairs(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_vertices.cpp#95
+```
 
 ### component_mesh_vertex_pairs
 
@@ -1123,6 +1351,9 @@ ComponentMeshVertexPairs component_mesh_vertex_pairs(absl::Span<const ComponentM
 ComponentMeshVertexPairs component_mesh_vertex_pairs(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, const ComponentType & type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_vertices.cpp#108
+```
 
 ### component_mesh_vertex_triplets
 
@@ -1130,6 +1361,9 @@ ComponentMeshVertexPairs component_mesh_vertex_pairs(absl::Span<const ComponentM
 ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_vertices.cpp#123
+```
 
 ### component_mesh_vertex_triplets
 
@@ -1137,6 +1371,9 @@ ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const Comp
 ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const ComponentMeshVertex> unique_vertices0, absl::Span<const ComponentMeshVertex> unique_vertices1, absl::Span<const ComponentMeshVertex> unique_vertices2, const ComponentType & type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_vertices.cpp#137
+```
 
 ### component_mesh_vertex_tuple
 
@@ -1144,6 +1381,9 @@ ComponentMeshVertexTriplets component_mesh_vertex_triplets(absl::Span<const Comp
 ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices)
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/component_mesh_vertices.h#81
+```
 
 ### component_mesh_vertex_tuple
 
@@ -1151,6 +1391,9 @@ ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices
 ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices... unique_vertices, const ComponentType & type)
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/component_mesh_vertices.h#89
+```
 
 ### convert_solid_mesh_into_tetrahedral_solid
 
@@ -1158,6 +1401,9 @@ ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices
 absl::optional<std::unique_ptr<TetrahedralSolid3D> > convert_solid_mesh_into_tetrahedral_solid(const SolidMesh3D & solid)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#198
+```
 
 ### convert_grid_into_tetrahedral_solid
 
@@ -1165,6 +1411,9 @@ absl::optional<std::unique_ptr<TetrahedralSolid3D> > convert_solid_mesh_into_tet
 std::unique_ptr<TetrahedralSolid3D> convert_grid_into_tetrahedral_solid(const Grid3D & grid)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#254
+```
 
 ### convert_solid_mesh_into_hybrid_solid
 
@@ -1172,6 +1421,9 @@ std::unique_ptr<TetrahedralSolid3D> convert_grid_into_tetrahedral_solid(const Gr
 absl::optional<std::unique_ptr<HybridSolid3D> > convert_solid_mesh_into_hybrid_solid(const SolidMesh3D & solid)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#260
+```
 
 ### merge_solid_meshes
 
@@ -1179,6 +1431,9 @@ absl::optional<std::unique_ptr<HybridSolid3D> > convert_solid_mesh_into_hybrid_s
 std::unique_ptr<SolidMesh3D> merge_solid_meshes(absl::Span<const std::reference_wrapper<const SolidMesh3D> > solids)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#317
+```
 
 ### brep_coordinate_reference_systems
 
@@ -1186,6 +1441,9 @@ std::unique_ptr<SolidMesh3D> merge_solid_meshes(absl::Span<const std::reference_
 FixedArray brep_coordinate_reference_systems(const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/model_coordinate_reference_system.cpp#80
+```
 
 ### section_coordinate_reference_systems
 
@@ -1193,32 +1451,9 @@ FixedArray brep_coordinate_reference_systems(const BRep & brep)
 FixedArray section_coordinate_reference_systems(const Section & section)
 ```
 
-
-### register_image_serialize_pcontext
-
 ```cpp
-void register_image_serialize_pcontext(PContext & context)
+Defined at /github/workspace/src/geode/model/helpers/model_coordinate_reference_system.cpp#91
 ```
-
-
- Register all the information needed by Bitsery to serialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### register_image_deserialize_pcontext
-
-```cpp
-void register_image_deserialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to deserialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
 
 ### convert_surface_mesh_into_polygonal_surface
 
@@ -1238,6 +1473,9 @@ absl::optional<std::unique_ptr<TriangulatedSurface<dimension> > > convert_surfac
 std::unique_ptr<TriangulatedSurface2D> convert_grid_into_triangulated_surface(const Grid2D & grid)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#232
+```
 
 ### triangulate_surface_mesh
 
@@ -1245,6 +1483,9 @@ std::unique_ptr<TriangulatedSurface2D> convert_grid_into_triangulated_surface(co
 void triangulate_surface_mesh(SurfaceMesh<dimension> & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#239
+```
 
 ### triangulate_surface_mesh
 
@@ -1252,6 +1493,9 @@ void triangulate_surface_mesh(SurfaceMesh<dimension> & surface)
 void triangulate_surface_mesh(const SurfaceMesh<dimension> & surface, SurfaceMeshBuilder<dimension> & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#246
+```
 
 ### convert_surface_mesh2d_into_3d
 
@@ -1259,6 +1503,9 @@ void triangulate_surface_mesh(const SurfaceMesh<dimension> & surface, SurfaceMes
 std::unique_ptr<SurfaceMesh3D> convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, index_t axis_to_add, double axis_coordinate)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#269
+```
 
 ### convert_surface_mesh3d_into_2d
 
@@ -1266,6 +1513,9 @@ std::unique_ptr<SurfaceMesh3D> convert_surface_mesh2d_into_3d(const SurfaceMesh2
 std::unique_ptr<SurfaceMesh2D> convert_surface_mesh3d_into_2d(const SurfaceMesh3D & surface3d, index_t axis_to_remove)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#284
+```
 
 ### convert_polygonal_surface2d_into_3d
 
@@ -1273,6 +1523,9 @@ std::unique_ptr<SurfaceMesh2D> convert_surface_mesh3d_into_2d(const SurfaceMesh3
 std::unique_ptr<PolygonalSurface3D> convert_polygonal_surface2d_into_3d(const PolygonalSurface2D & surface2d, index_t axis_to_add, double axis_coordinate)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#296
+```
 
 ### convert_polygonal_surface3d_into_2d
 
@@ -1280,6 +1533,9 @@ std::unique_ptr<PolygonalSurface3D> convert_polygonal_surface2d_into_3d(const Po
 std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const PolygonalSurface3D & surface3d, index_t axis_to_remove)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#311
+```
 
 ### convert_triangulated_surface2d_into_3d
 
@@ -1287,6 +1543,9 @@ std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const Po
 std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(const TriangulatedSurface2D & surface2d, index_t axis_to_add, double axis_coordinate)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#323
+```
 
 ### convert_triangulated_surface3d_into_2d
 
@@ -1294,6 +1553,9 @@ std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(co
 std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, index_t axis_to_remove)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#339
+```
 
 ### merge_surface_meshes
 
@@ -1307,6 +1569,9 @@ std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const s
 int convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#187
+```
 
 ### convert_surface_mesh_into_triangulated_surface
 
@@ -1314,6 +1579,9 @@ int convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & s
 int convert_surface_mesh_into_triangulated_surface(const SurfaceMesh<dimension> & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#197
+```
 
 ### merge_surface_meshes
 
@@ -1321,6 +1589,41 @@ int convert_surface_mesh_into_triangulated_surface(const SurfaceMesh<dimension> 
 int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#354
+```
+
+### register_image_serialize_pcontext
+
+```cpp
+void register_image_serialize_pcontext(PContext & context)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/image/core/bitsery_archive.cpp#45
+```
+
+ Register all the information needed by Bitsery to serialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### register_image_deserialize_pcontext
+
+```cpp
+void register_image_deserialize_pcontext(PContext & context)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/image/core/bitsery_archive.cpp#50
+```
+
+ Register all the information needed by Bitsery to deserialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
 
 ### create_aabb_tree
 
@@ -1328,6 +1631,9 @@ int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMe
 AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/aabb_surface_helpers.cpp#44
+```
 
 ### register_geode_builder
 
@@ -1335,6 +1641,9 @@ AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
 void register_geode_builder()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/register_builder.cpp#52
+```
 
 ### load_point_set
 
@@ -1342,6 +1651,9 @@ void register_geode_builder()
 std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/point_set_input.cpp#34
+```
 
  API function for loading an PointSet. The adequate loader is called depending on the filename extension.
 
@@ -1355,6 +1667,9 @@ std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, stri
 std::unique_ptr<PointSet<dimension> > load_point_set(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/point_set_input.cpp#55
+```
 
  API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -1366,6 +1681,9 @@ std::unique_ptr<PointSet<dimension> > load_point_set(string_view filename)
 typename PointSetInput<dimension>::MissingFiles check_point_set_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/point_set_input.cpp#65
+```
 
 ### load_graph
 
@@ -1373,6 +1691,9 @@ typename PointSetInput<dimension>::MissingFiles check_point_set_missing_files(st
 unique_ptr load_graph(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/graph_input.cpp#33
+```
 
  API function for loading an Graph. The adequate loader is called depending on the filename extension.
 
@@ -1386,6 +1707,9 @@ unique_ptr load_graph(const MeshImpl & impl, string_view filename)
 unique_ptr load_graph(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/graph_input.cpp#53
+```
 
  API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -1397,6 +1721,9 @@ unique_ptr load_graph(string_view filename)
 MissingFiles check_graph_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/graph_input.cpp#59
+```
 
 ### register_model_serialize_pcontext
 
@@ -1404,6 +1731,9 @@ MissingFiles check_graph_missing_files(string_view filename)
 void register_model_serialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/bitsery_archive.cpp#85
+```
 
  Register all the information needed by Bitsery to serialize the objects in the model library.
 
@@ -1417,6 +1747,9 @@ void register_model_serialize_pcontext(PContext & context)
 void register_model_deserialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/bitsery_archive.cpp#80
+```
 
  Register all the information needed by Bitsery to deserialize the objects in the model library.
 
@@ -1430,6 +1763,9 @@ void register_model_deserialize_pcontext(PContext & context)
 BRep load_brep(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/brep_input.cpp#33
+```
 
  API function for loading a BoundaryRepresentation. The adequate loader is called depending on the filename extension.
 
@@ -1443,6 +1779,9 @@ BRep load_brep(string_view filename)
 MissingFiles check_brep_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/brep_input.cpp#59
+```
 
 ### convert_surface_mesh
 
@@ -1450,6 +1789,9 @@ MissingFiles check_brep_missing_files(string_view filename)
 void convert_surface_mesh(const Section & model, SectionBuilder & builder, const geode::Surface2D & surface, const geode::MeshType & mesh_type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#172
+```
 
 ### convert_surface_mesh
 
@@ -1457,6 +1799,9 @@ void convert_surface_mesh(const Section & model, SectionBuilder & builder, const
 void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode::Surface3D & surface, const geode::MeshType & mesh_type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#180
+```
 
 ### convert_surface_meshes_into_triangulated_surfaces
 
@@ -1464,6 +1809,9 @@ void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode
 void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#188
+```
 
 ### convert_surface_meshes_into_triangulated_surfaces
 
@@ -1471,6 +1819,9 @@ void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
 void convert_surface_meshes_into_triangulated_surfaces(const BRep & brep, BRepBuilder & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#194
+```
 
 ### convert_surface_meshes_into_triangulated_surfaces
 
@@ -1478,6 +1829,9 @@ void convert_surface_meshes_into_triangulated_surfaces(const BRep & brep, BRepBu
 void convert_surface_meshes_into_triangulated_surfaces(Section & section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#200
+```
 
 ### convert_surface_meshes_into_triangulated_surfaces
 
@@ -1485,6 +1839,9 @@ void convert_surface_meshes_into_triangulated_surfaces(Section & section)
 void convert_surface_meshes_into_triangulated_surfaces(const Section & section, SectionBuilder & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#206
+```
 
 ### convert_block_mesh
 
@@ -1492,6 +1849,9 @@ void convert_surface_meshes_into_triangulated_surfaces(const Section & section, 
 void convert_block_mesh(const BRep & model, BRepBuilder & builder, const Block3D & block, const MeshType & new_mesh_type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#212
+```
 
 ### convert_block_meshes_into_tetrahedral_solids
 
@@ -1499,6 +1859,9 @@ void convert_block_mesh(const BRep & model, BRepBuilder & builder, const Block3D
 void convert_block_meshes_into_tetrahedral_solids(BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#220
+```
 
 ### convert_block_meshes_into_tetrahedral_solids
 
@@ -1506,6 +1869,9 @@ void convert_block_meshes_into_tetrahedral_solids(BRep & brep)
 void convert_block_meshes_into_tetrahedral_solids(const BRep & brep, BRepBuilder & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#226
+```
 
 ### triangulate_surface_meshes
 
@@ -1513,6 +1879,9 @@ void convert_block_meshes_into_tetrahedral_solids(const BRep & brep, BRepBuilder
 void triangulate_surface_meshes(BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#236
+```
 
 ### triangulate_surface_meshes
 
@@ -1520,6 +1889,9 @@ void triangulate_surface_meshes(BRep & brep)
 void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#242
+```
 
 ### triangulate_surface_meshes
 
@@ -1527,6 +1899,9 @@ void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
 void triangulate_surface_meshes(Section & section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#247
+```
 
 ### triangulate_surface_meshes
 
@@ -1534,6 +1909,9 @@ void triangulate_surface_meshes(Section & section)
 void triangulate_surface_meshes(const Section & section, SectionBuilder & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_model_meshes.cpp#253
+```
 
 ### tetrahedron_barycentric_coordinates
 
@@ -1541,6 +1919,9 @@ void triangulate_surface_meshes(const Section & section, SectionBuilder & builde
 std::array<double, 4> tetrahedron_barycentric_coordinates(const Point3D & point, const Tetrahedron & tetrahedron)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/barycentric_coordinates.cpp#34
+```
 
  Compute the barycentric coordinates of a point with regards to a tetrahedron.
 
@@ -1554,6 +1935,9 @@ std::array<double, 4> tetrahedron_barycentric_coordinates(const Point3D & point,
 std::array<double, 4> safe_tetrahedron_barycentric_coordinates(const Point3D & point, const Tetrahedron & tetrahedron)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/barycentric_coordinates.cpp#68
+```
 
  Compute the barycentric coordinates of a point with regards to a tetrahedron. If tetrahedron is degenerated, computation fallbacks onto its largest facet.
 
@@ -1565,6 +1949,9 @@ std::array<double, 4> safe_tetrahedron_barycentric_coordinates(const Point3D & p
 array triangle_barycentric_coordinates(const Point<dimension> & point, const Triangle<dimension> & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/barycentric_coordinates.cpp#110
+```
 
  Compute barycentric coordinates of a point with regards to a triangle.
 
@@ -1578,6 +1965,9 @@ array triangle_barycentric_coordinates(const Point<dimension> & point, const Tri
 array safe_triangle_barycentric_coordinates(const Point<dimension> & point, const Triangle<dimension> & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/barycentric_coordinates.cpp#132
+```
 
  Compute barycentric coordinates of a point with regards to a triangle. If triangle is degenerated, computation fallbacks onto its longest segment.
 
@@ -1589,6 +1979,9 @@ array safe_triangle_barycentric_coordinates(const Point<dimension> & point, cons
 array segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/barycentric_coordinates.cpp#169
+```
 
  Compute barycentric coordinates of a point with regards to a segment.
 
@@ -1602,6 +1995,9 @@ array segment_barycentric_coordinates(const Point<dimension> & point, const Segm
 array safe_segment_barycentric_coordinates(const Point<dimension> & point, const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/barycentric_coordinates.cpp#189
+```
 
  Compute barycentric coordinates of a point with regards to a segment. If segment is degenerated, computation fallbacks onto its vertices.
 
@@ -1613,6 +2009,9 @@ array safe_segment_barycentric_coordinates(const Point<dimension> & point, const
 Side tetrahedron_volume_sign(const Tetrahedron & tetra)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/sign.cpp#42
+```
 
  Return the sign of a tetrahedron volume.
 
@@ -1622,6 +2021,9 @@ Side tetrahedron_volume_sign(const Tetrahedron & tetra)
 Side triangle_area_sign(const Triangle2D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/sign.cpp#49
+```
 
  Return the sign of a 2D triangle area.
 
@@ -1631,6 +2033,9 @@ Side triangle_area_sign(const Triangle2D & triangle)
 Side triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/sign.cpp#56
+```
 
  Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
 
@@ -1640,6 +2045,9 @@ Side triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
 tuple point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#758
+```
 
 ### point_triangle_distance
 
@@ -1647,6 +2055,9 @@ tuple point_triangle_distance(const Point3D & point, const Triangle3D & triangle
 std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#770
+```
 
 ### point_ball_distance
 
@@ -1654,6 +2065,9 @@ std::tuple<double, Point2D> point_triangle_distance(const Point2D & point, const
 std::tuple<double, Point<dimension> > point_ball_distance(const Point<dimension> & point, const int & ball)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/distance.cpp#1020
+```
 
  Compute the smallest distance between a point and a ball
 
@@ -1667,6 +2081,9 @@ std::tuple<double, Point<dimension> > point_ball_distance(const Point<dimension>
 InlinedVector polygon_unique_vertices(const BRep & model, const Surface3D & surface, index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#647
+```
 
 ### polygon_unique_vertices
 
@@ -1674,6 +2091,9 @@ InlinedVector polygon_unique_vertices(const BRep & model, const Surface3D & surf
 InlinedVector polygon_unique_vertices(const BRep & model, const Block3D & block, const PolyhedronFacet & facet)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#631
+```
 
 ### component_mesh_polygons
 
@@ -1681,6 +2101,9 @@ InlinedVector polygon_unique_vertices(const BRep & model, const Block3D & block,
 BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const PolygonVertices & polygon_unique_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#663
+```
 
 ### component_mesh_polygons
 
@@ -1688,6 +2111,9 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Polyg
 BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Surface3D & surface, index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#669
+```
 
 ### component_mesh_polygons
 
@@ -1695,6 +2121,9 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Surfa
 BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#676
+```
 
 ### block_mesh_polyhedra_from_surface_polygon
 
@@ -1702,6 +2131,9 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Block
 PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#683
+```
 
 ### block_vertices_from_surface_polygon
 
@@ -1709,6 +2141,9 @@ PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & mode
 absl::InlinedVector<BlockPolyhedronFacet, 2> block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#698
+```
 
 ### oriented_block_vertices_from_surface_polygon
 
@@ -1716,6 +2151,9 @@ absl::InlinedVector<BlockPolyhedronFacet, 2> block_vertices_from_surface_polygon
 BlockPolyhedraFacetVertices oriented_block_vertices_from_surface_polygon(const BRep & model, const Block3D & block, const Surface3D & surface, index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#719
+```
 
 ### surface_vertices_from_line_edge
 
@@ -1723,6 +2161,9 @@ BlockPolyhedraFacetVertices oriented_block_vertices_from_surface_polygon(const B
 absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const BRep & model, const Surface3D & surface, const Line3D & line, index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#767
+```
 
 ### oriented_surface_vertices_from_line_edge
 
@@ -1730,6 +2171,9 @@ absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const
 SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const BRep & model, const Surface3D & surface, const Line3D & line, index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#777
+```
 
 ### surface_vertices_from_line_edge
 
@@ -1737,6 +2181,9 @@ SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const BRep 
 absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const Section & model, const Surface2D & surface, const Line2D & line, index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#787
+```
 
 ### oriented_surface_vertices_from_line_edge
 
@@ -1744,6 +2191,9 @@ absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const
 SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const Section & model, const Surface2D & surface, const Line2D & line, index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#797
+```
 
 ### find_intersections_with_boundaries
 
@@ -1751,6 +2201,9 @@ SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const Secti
 flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/ray_tracing.cpp#37
+```
 
 ### lexicographic_mapping
 
@@ -1758,6 +2211,9 @@ flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite
 vector lexicographic_mapping(absl::Span<const Point<dimension> > points)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/points_sort.cpp#201
+```
 
 ### morton_mapping
 
@@ -1765,6 +2221,9 @@ vector lexicographic_mapping(absl::Span<const Point<dimension> > points)
 vector morton_mapping(absl::Span<const Point<dimension> > points)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/points_sort.cpp#216
+```
 
 ### filter_brep_components_with_regards_to_blocks
 
@@ -1772,6 +2231,9 @@ vector morton_mapping(absl::Span<const Point<dimension> > points)
 vector filter_brep_components_with_regards_to_blocks(BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/model_component_filter.cpp#99
+```
 
 ### filter_section_components_with_regards_to_surfaces
 
@@ -1779,6 +2241,9 @@ vector filter_brep_components_with_regards_to_blocks(BRep & brep)
 vector filter_section_components_with_regards_to_surfaces(Section & section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/model_component_filter.cpp#111
+```
 
 ### save_polyhedral_solid
 
@@ -1786,6 +2251,9 @@ vector filter_section_components_with_regards_to_surfaces(Section & section)
 void save_polyhedral_solid(const PolyhedralSolid<dimension> & polyhedral_solid, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_output.cpp#33
+```
 
  API function for saving a PolyhedralSolid. The adequate saver is called depending on the given filename extension.
 
@@ -1799,6 +2267,9 @@ void save_polyhedral_solid(const PolyhedralSolid<dimension> & polyhedral_solid, 
 void save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_output.cpp#33
+```
 
  API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
 
@@ -1812,6 +2283,9 @@ void save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surfac
 std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/edged_curve_input.cpp#34
+```
 
  API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
 
@@ -1825,6 +2299,9 @@ std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, 
 std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/edged_curve_input.cpp#55
+```
 
  API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -1836,6 +2313,9 @@ std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(string_view filename)
 typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/edged_curve_input.cpp#65
+```
 
 ### save_edged_curve
 
@@ -1843,6 +2323,9 @@ typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_file
 void save_edged_curve(const EdgedCurve<dimension> & edged_curve, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/edged_curve_output.cpp#33
+```
 
  API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
 
@@ -1856,6 +2339,9 @@ void save_edged_curve(const EdgedCurve<dimension> & edged_curve, string_view fil
 shared_ptr euclidean_distance_transform(const Grid<dimension> & grid, absl::Span<const typename Grid<dimension>::CellIndices> grid_cell_ids, string_view distance_map_name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/euclidean_distance_transform.cpp#386
+```
 
  API function for creating and computing the euclidean distance map from rasterized objects. It computes the exact euclidean distance map.
 
@@ -1883,6 +2369,9 @@ shared_ptr euclidean_distance_transform(const Grid<dimension> & grid, absl::Span
 array edge_unique_vertices(const Section & section, const Line2D & line, index_t edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#212
+```
 
 ### edge_unique_vertices
 
@@ -1890,6 +2379,9 @@ array edge_unique_vertices(const Section & section, const Line2D & line, index_t
 array edge_unique_vertices(const Section & section, const Surface2D & surface, const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#226
+```
 
 ### edge_unique_vertices
 
@@ -1897,6 +2389,9 @@ array edge_unique_vertices(const Section & section, const Surface2D & surface, c
 array edge_unique_vertices(const BRep & brep, const Line3D & line, index_t edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#219
+```
 
 ### edge_unique_vertices
 
@@ -1904,6 +2399,9 @@ array edge_unique_vertices(const BRep & brep, const Line3D & line, index_t edge)
 array edge_unique_vertices(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#234
+```
 
 ### edge_unique_vertices
 
@@ -1911,6 +2409,9 @@ array edge_unique_vertices(const BRep & brep, const Surface3D & surface, const P
 array edge_unique_vertices(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#241
+```
 
 ### component_mesh_edges
 
@@ -1918,6 +2419,9 @@ array edge_unique_vertices(const BRep & brep, const Block3D & block, const Polyh
 SectionComponentMeshEdges component_mesh_edges(const Section & section, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#249
+```
 
 ### component_mesh_edges
 
@@ -1925,6 +2429,9 @@ SectionComponentMeshEdges component_mesh_edges(const Section & section, const st
 SectionComponentMeshEdges component_mesh_edges(const Section & section, const Line2D & line, index_t edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#255
+```
 
 ### component_mesh_edges
 
@@ -1932,6 +2439,9 @@ SectionComponentMeshEdges component_mesh_edges(const Section & section, const Li
 SectionComponentMeshEdges component_mesh_edges(const Section & section, const Surface2D & surface, const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#262
+```
 
 ### component_mesh_edges
 
@@ -1939,6 +2449,9 @@ SectionComponentMeshEdges component_mesh_edges(const Section & section, const Su
 BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#270
+```
 
 ### component_mesh_edges
 
@@ -1946,6 +2459,9 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const std::array<
 BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Line3D & line, index_t edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#276
+```
 
 ### component_mesh_edges
 
@@ -1953,6 +2469,9 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Line3D & li
 BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#283
+```
 
 ### component_mesh_edges
 
@@ -1960,6 +2479,9 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Surface3D &
 BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_edges.cpp#290
+```
 
 ### convert_section_into_curve
 
@@ -1967,6 +2489,9 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & b
 std::unique_ptr<EdgedCurve2D> convert_section_into_curve(const Section & section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_to_mesh.cpp#529
+```
 
 ### convert_section_into_surface
 
@@ -1986,6 +2511,9 @@ std::tuple<std::unique_ptr<EdgedCurve2D>, std::unique_ptr<SurfaceType> > convert
 std::unique_ptr<EdgedCurve3D> convert_brep_into_curve(const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_to_mesh.cpp#536
+```
 
 ### convert_brep_into_surface
 
@@ -2023,6 +2551,9 @@ std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType>, std::uni
 int convert_brep_into_solid(const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_to_mesh.cpp#506
+```
 
 ### convert_brep_into_surface
 
@@ -2030,6 +2561,9 @@ int convert_brep_into_solid(const BRep & brep)
 int convert_brep_into_surface(const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_to_mesh.cpp#513
+```
 
 ### convert_section_into_surface
 
@@ -2037,61 +2571,9 @@ int convert_brep_into_surface(const BRep & brep)
 int convert_section_into_surface(const Section & section)
 ```
 
-
-### convert_brep_into_section
-
 ```cpp
-std::tuple<Section, ModelCopyMapping> convert_brep_into_section(const BRep & brep, index_t axis_to_remove)
+Defined at /github/workspace/src/geode/model/helpers/convert_to_mesh.cpp#521
 ```
-
-
-### convert_section_into_brep
-
-```cpp
-tuple convert_section_into_brep(const Section & section, index_t axis_to_add, double axis_coordinate)
-```
-
-
-### extrude_section_to_brep
-
-```cpp
-BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptions & options)
-```
-
-
-### convert_edged_curve3d_into_2d
-
-```cpp
-std::unique_ptr<EdgedCurve2D> convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, index_t axis_to_remove)
-```
-
-
-### convert_edged_curve2d_into_3d
-
-```cpp
-std::unique_ptr<EdgedCurve3D> convert_edged_curve2d_into_3d(const EdgedCurve2D & curve2d, index_t axis_to_add, double axis_coordinate)
-```
-
-
-### merge_edged_curves
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > merge_edged_curves(absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves)
-```
-
-### convert_point_set3d_into_2d
-
-```cpp
-std::unique_ptr<PointSet2D> convert_point_set3d_into_2d(const PointSet3D & point_set3d, index_t axis_to_remove)
-```
-
-
-### convert_point_set2d_into_3d
-
-```cpp
-std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point_set2d, index_t axis_to_add, double axis_coordinate)
-```
-
 
 ### load_polygonal_surface
 
@@ -2099,6 +2581,9 @@ std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point
 std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#34
+```
 
  API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
 
@@ -2112,6 +2597,9 @@ std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshI
 std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#58
+```
 
  API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -2123,6 +2611,85 @@ std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view
 typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#68
+```
+
+### convert_brep_into_section
+
+```cpp
+std::tuple<Section, ModelCopyMapping> convert_brep_into_section(const BRep & brep, index_t axis_to_remove)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_brep_section.cpp#426
+```
+
+### convert_section_into_brep
+
+```cpp
+tuple convert_section_into_brep(const Section & section, index_t axis_to_add, double axis_coordinate)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_brep_section.cpp#460
+```
+
+### extrude_section_to_brep
+
+```cpp
+BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptions & options)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/convert_brep_section.cpp#495
+```
+
+### convert_edged_curve3d_into_2d
+
+```cpp
+std::unique_ptr<EdgedCurve2D> convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, index_t axis_to_remove)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_edged_curve.cpp#50
+```
+
+### convert_edged_curve2d_into_3d
+
+```cpp
+std::unique_ptr<EdgedCurve3D> convert_edged_curve2d_into_3d(const EdgedCurve2D & curve2d, index_t axis_to_add, double axis_coordinate)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_edged_curve.cpp#65
+```
+
+### merge_edged_curves
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > merge_edged_curves(absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves)
+```
+
+### convert_point_set3d_into_2d
+
+```cpp
+std::unique_ptr<PointSet2D> convert_point_set3d_into_2d(const PointSet3D & point_set3d, index_t axis_to_remove)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_point_set.cpp#36
+```
+
+### convert_point_set2d_into_3d
+
+```cpp
+std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point_set2d, index_t axis_to_add, double axis_coordinate)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_point_set.cpp#49
+```
 
 ### save_hybrid_solid
 
@@ -2130,6 +2697,9 @@ typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_
 void save_hybrid_solid(const HybridSolid<dimension> & hybrid_solid, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_output.cpp#33
+```
 
  API function for saving a HybridSolid. The adequate saver is called depending on the given filename extension.
 
@@ -2143,6 +2713,9 @@ void save_hybrid_solid(const HybridSolid<dimension> & hybrid_solid, string_view 
 void create_brep_coordinate_system(const BRep & model, BRepBuilder & builder, string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/create_coordinate_system.cpp#80
+```
 
 ### create_section_coordinate_system
 
@@ -2150,6 +2723,9 @@ void create_brep_coordinate_system(const BRep & model, BRepBuilder & builder, st
 void create_section_coordinate_system(const Section & model, SectionBuilder & builder, string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/create_coordinate_system.cpp#97
+```
 
 ### create_edged_curve_coordinate_system
 
@@ -2157,6 +2733,9 @@ void create_section_coordinate_system(const Section & model, SectionBuilder & bu
 void create_edged_curve_coordinate_system(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/create_coordinate_system.cpp#77
+```
 
 ### create_point_set_coordinate_system
 
@@ -2164,6 +2743,9 @@ void create_edged_curve_coordinate_system(const EdgedCurve<dimension> & mesh, Ed
 void create_point_set_coordinate_system(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/create_coordinate_system.cpp#89
+```
 
 ### create_surface_mesh_coordinate_system
 
@@ -2171,6 +2753,9 @@ void create_point_set_coordinate_system(const PointSet<dimension> & mesh, PointS
 void create_surface_mesh_coordinate_system(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/create_coordinate_system.cpp#100
+```
 
 ### create_solid_mesh_coordinate_system
 
@@ -2178,6 +2763,9 @@ void create_surface_mesh_coordinate_system(const SurfaceMesh<dimension> & mesh, 
 void create_solid_mesh_coordinate_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/create_coordinate_system.cpp#112
+```
 
 ### line_plane_intersection
 
@@ -2185,6 +2773,9 @@ void create_solid_mesh_coordinate_system(const SolidMesh<dimension> & mesh, Soli
 IntersectionResult<Point3D> line_plane_intersection(const InfiniteLine3D & line, const Plane & plane)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#98
+```
 
  Compute the intersection between a plane and an infinite line
 
@@ -2196,6 +2787,9 @@ IntersectionResult<Point3D> line_plane_intersection(const InfiniteLine3D & line,
 int line_sphere_intersection(const InfiniteLine<dimension> & line, const Sphere<dimension> & sphere)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#123
+```
 
  Compute the intersection(s) between a sphere and an infinite line
 
@@ -2207,6 +2801,9 @@ int line_sphere_intersection(const InfiniteLine<dimension> & line, const Sphere<
 int segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#192
+```
 
  Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
 
@@ -2218,6 +2815,9 @@ int segment_sphere_intersection(const Segment<dimension> & segment, const Sphere
 IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#220
+```
 
  Compute the intersection between a plane and a segment
 
@@ -2231,6 +2831,9 @@ IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment
 IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#243
+```
 
  Compute the intersection of a segment and a triangle
 
@@ -2244,6 +2847,9 @@ IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segm
 IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & line, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#326
+```
 
  Compute the intersection of a line and a triangle
 
@@ -2257,6 +2863,9 @@ IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & li
 IntersectionResult<Point2D> line_line_intersection(const InfiniteLine2D & line0, const InfiniteLine2D & line1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#395
+```
 
  Compute the intersection between two infinite lines
 
@@ -2268,6 +2877,9 @@ IntersectionResult<Point2D> line_line_intersection(const InfiniteLine2D & line0,
 IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segment0, const Segment2D & segment1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#432
+```
 
  Compute the intersection between two segments
 
@@ -2279,6 +2891,9 @@ IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segme
 IntersectionResult<Point2D> segment_line_intersection(const Segment2D & segment, const InfiniteLine2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#483
+```
 
  Compute the intersection between a segment and an infinite line
 
@@ -2290,6 +2905,9 @@ IntersectionResult<Point2D> segment_line_intersection(const Segment2D & segment,
 int segment_cylinder_intersection(const Segment3D & segment, const Cylinder & cylinder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#798
+```
 
  Compute the intersection between a segment and a cylinder
 
@@ -2301,6 +2919,9 @@ int segment_cylinder_intersection(const Segment3D & segment, const Cylinder & cy
 int line_cylinder_intersection(const InfiniteLine3D & line, const Cylinder & cylinder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#507
+```
 
  Compute the intersection between a line and a cylinder
 
@@ -2312,6 +2933,9 @@ int line_cylinder_intersection(const InfiniteLine3D & line, const Cylinder & cyl
 int triangle_circle_intersection(const Triangle3D & triangle, const Circle & circle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#826
+```
 
  Compute the intersection between a triangle and a circle
 
@@ -2323,6 +2947,9 @@ int triangle_circle_intersection(const Triangle3D & triangle, const Circle & cir
 int plane_circle_intersection(const Plane & plane, const Circle & circle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#868
+```
 
  Compute the intersection between a plane and a circle
 
@@ -2334,6 +2961,9 @@ int plane_circle_intersection(const Plane & plane, const Circle & circle)
 IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection.cpp#933
+```
 
  Compute the intersection between two planes
 
@@ -2345,6 +2975,9 @@ IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & p
 SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection_detection.cpp#158
+```
 
  Detect if there is an intersection between two 2D segments
 
@@ -2356,6 +2989,9 @@ SegmentSegmentIntersection segment_segment_intersection_detection(const Segment2
 SegmentSegmentIntersection colinear_segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection_detection.cpp#212
+```
 
  Detect the configuration between two 2D colinear segments
 
@@ -2367,6 +3003,9 @@ SegmentSegmentIntersection colinear_segment_segment_intersection_detection(const
 Position segment_line_intersection_detection(const Segment2D & segment, const InfiniteLine2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection_detection.cpp#286
+```
 
  Detect if there is an intersection between a line and a segment
 
@@ -2378,6 +3017,9 @@ Position segment_line_intersection_detection(const Segment2D & segment, const In
 Position line_triangle_intersection_detection(const InfiniteLine3D & line, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection_detection.cpp#310
+```
 
  Detect if there is an intersection between a line and a triangle
 
@@ -2389,6 +3031,9 @@ Position line_triangle_intersection_detection(const InfiniteLine3D & line, const
 SegmentTriangleIntersection segment_triangle_intersection_detection(const Segment3D & segment, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection_detection.cpp#341
+```
 
  Detect if there is an intersection between a segment and a triangle
 
@@ -2400,6 +3045,9 @@ SegmentTriangleIntersection segment_triangle_intersection_detection(const Segmen
 Position segment_plane_intersection_detection(const Segment3D & segment, const Plane & plane)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/intersection_detection.cpp#382
+```
 
  Detect if there is an intersection between a segment and a plane
 
@@ -2411,6 +3059,9 @@ Position segment_plane_intersection_detection(const Segment3D & segment, const P
 void register_geode_mesh()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/register_mesh.cpp#41
+```
 
 ### hausdorff_distance
 
@@ -2418,6 +3069,9 @@ void register_geode_mesh()
 double hausdorff_distance(const TriangulatedSurface3D & mesh_A, const TriangulatedSurface3D & mesh_B)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/hausdorff_distance.cpp#64
+```
 
 ### rotate
 
@@ -2425,6 +3079,9 @@ double hausdorff_distance(const TriangulatedSurface3D & mesh_A, const Triangulat
 Point rotate(const Point3D & point, const Vector3D & axis, double angle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/rotation.cpp#88
+```
 
  Rotate a Point3D by an angle around an axis
 
@@ -2440,6 +3097,9 @@ Point rotate(const Point3D & point, const Vector3D & axis, double angle)
 void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/repair_polygon_orientations.cpp#315
+```
 
 ### repair_polygon_orientations
 
@@ -2447,6 +3107,9 @@ void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
 void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/repair_polygon_orientations.cpp#322
+```
 
 ### save_regular_grid
 
@@ -2454,6 +3117,9 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 void save_regular_grid(const RegularGrid<dimension> & regular_grid, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/regular_grid_output.cpp#34
+```
 
  API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
 
@@ -2467,6 +3133,9 @@ void save_regular_grid(const RegularGrid<dimension> & regular_grid, string_view 
 Position point_segment_position_exact(const Point3D & point, const Segment3D & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#41
+```
 
 ### point_segment_position_exact
 
@@ -2474,6 +3143,9 @@ Position point_segment_position_exact(const Point3D & point, const Segment3D & s
 Position point_segment_position_exact(const Point2D & point, const Segment2D & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#55
+```
 
 ### point_triangle_position_all_zero
 
@@ -2481,6 +3153,9 @@ Position point_segment_position_exact(const Point2D & point, const Segment2D & s
 Position point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#71
+```
 
 ### point_triangle_position_exact
 
@@ -2488,6 +3163,9 @@ Position point_triangle_position_all_zero(const Point<dimension> & point, const 
 Position point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#100
+```
 
 ### compute_determinants
 
@@ -2495,6 +3173,9 @@ Position point_triangle_position_exact(const Point2D & point, const Triangle2D &
 Position compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#117
+```
 
 ### point_triangle_position_exact
 
@@ -2502,6 +3183,9 @@ Position compute_determinants(const Point3D & point, const Triangle3D & triangle
 Position point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#137
+```
 
 ### point_tetrahedron_position_exact
 
@@ -2509,6 +3193,9 @@ Position point_triangle_position_exact(const Point3D & point, const Triangle3D &
 Position point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#150
+```
 
 ### point_triangle_position
 
@@ -2516,6 +3203,9 @@ Position point_tetrahedron_position_exact(const Point3D & point, const Tetrahedr
 Position point_triangle_position(const Point2D & point, const Triangle2D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#193
+```
 
 ### point_triangle_position
 
@@ -2523,6 +3213,9 @@ Position point_triangle_position(const Point2D & point, const Triangle2D & trian
 Position point_triangle_position(const Point3D & point, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/position.cpp#226
+```
 
 ### register_geode_mesh_input
 
@@ -2530,6 +3223,9 @@ Position point_triangle_position(const Point3D & point, const Triangle3D & trian
 void register_geode_mesh_input()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/register_input.cpp#64
+```
 
 ### load_hybrid_solid
 
@@ -2537,6 +3233,9 @@ void register_geode_mesh_input()
 std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_input.cpp#34
+```
 
  API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
 
@@ -2550,6 +3249,9 @@ std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl
 std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_input.cpp#55
+```
 
  API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -2561,6 +3263,9 @@ std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(string_view filename)
 typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_input.cpp#65
+```
 
 ### load_regular_grid
 
@@ -2568,6 +3273,9 @@ typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_fi
 std::unique_ptr<RegularGrid<dimension> > load_regular_grid(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/regular_grid_input.cpp#35
+```
 
  API function for loading an RegularGrid. The adequate loader is called depending on the filename extension.
 
@@ -2581,6 +3289,9 @@ std::unique_ptr<RegularGrid<dimension> > load_regular_grid(const MeshImpl & impl
 std::unique_ptr<RegularGrid<dimension> > load_regular_grid(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/regular_grid_input.cpp#55
+```
 
  API function for loading a RegularGrid. The adequate loader is called depending on the filename extension.
 
@@ -2592,6 +3303,9 @@ std::unique_ptr<RegularGrid<dimension> > load_regular_grid(string_view filename)
 typename RegularGridInput<dimension>::MissingFiles check_regular_grid_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/regular_grid_input.cpp#65
+```
 
 ### load_vertex_set
 
@@ -2599,6 +3313,9 @@ typename RegularGridInput<dimension>::MissingFiles check_regular_grid_missing_fi
 unique_ptr load_vertex_set(const MeshImpl & impl, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/vertex_set_input.cpp#40
+```
 
  API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
 
@@ -2612,6 +3329,9 @@ unique_ptr load_vertex_set(const MeshImpl & impl, string_view filename)
 unique_ptr load_vertex_set(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/vertex_set_input.cpp#33
+```
 
  API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -2623,6 +3343,9 @@ unique_ptr load_vertex_set(string_view filename)
 typename class VertexSetInput::MissingFiles check_vertex_set_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/vertex_set_input.cpp#61
+```
 
 ### save_point_set
 
@@ -2630,6 +3353,9 @@ typename class VertexSetInput::MissingFiles check_vertex_set_missing_files(strin
 void save_point_set(const PointSet<dimension> & point_set, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/point_set_output.cpp#34
+```
 
  API function for saving a PointSet. The adequate saver is called depending on the given filename extension.
 
@@ -2643,6 +3369,9 @@ void save_point_set(const PointSet<dimension> & point_set, string_view filename)
 void save_vertex_set(const VertexSet & vertex_set, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/vertex_set_output.cpp#32
+```
 
  API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
 
@@ -2656,6 +3385,9 @@ void save_vertex_set(const VertexSet & vertex_set, string_view filename)
 AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/aabb_edged_curve_helpers.cpp#45
+```
 
 ### line_sphere_intersection
 
@@ -2683,6 +3415,9 @@ IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > segment_sphere_int
 AABBTree<dimension> create_aabb_tree(const SolidMesh<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/aabb_solid_helpers.cpp#38
+```
 
 ### rasterize_segment
 
@@ -2708,6 +3443,9 @@ std::vector<typename Grid<dimension>::CellIndices> rasterize_triangle(const Grid
 std::vector<typename Grid3D::CellIndices> rasterize_tetrahedron(const Grid3D & grid, const Tetrahedron & tetrahedron)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/rasterize.cpp#1039
+```
 
 ### rasterize_closed_surface
 
@@ -2715,6 +3453,9 @@ std::vector<typename Grid3D::CellIndices> rasterize_tetrahedron(const Grid3D & g
 std::vector<Grid3D::CellIndices> rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D & closed_surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/rasterize.cpp#1046
+```
 
 ### rasterize_segment
 
@@ -2722,6 +3463,9 @@ std::vector<Grid3D::CellIndices> rasterize_closed_surface(const Grid3D & grid, c
 int rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/rasterize.cpp#967
+```
 
 ### conservative_rasterize_segment
 
@@ -2729,6 +3473,9 @@ int rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & s
 int conservative_rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/rasterize.cpp#996
+```
 
 ### rasterize_triangle
 
@@ -2736,6 +3483,9 @@ int conservative_rasterize_segment(const Grid<dimension> & grid, const Segment<d
 int rasterize_triangle(const Grid<dimension> & grid, const Triangle<dimension> & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/rasterize.cpp#1017
+```
 
 ### surface_radial_sort
 
@@ -2743,6 +3493,9 @@ int rasterize_triangle(const Grid<dimension> & grid, const Triangle<dimension> &
 SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/surface_radial_sort.cpp#215
+```
 
 ### block_volume
 
@@ -2750,6 +3503,9 @@ SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
 double block_volume(const BRep & brep, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mensurations.cpp#147
+```
 
 ### block_bounding_box
 
@@ -2757,6 +3513,9 @@ double block_volume(const BRep & brep, const Block3D & block)
 BoundingBox block_bounding_box(const BRep & brep, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mensurations.cpp#173
+```
 
 ### surface_area
 
@@ -2764,6 +3523,9 @@ BoundingBox block_bounding_box(const BRep & brep, const Block3D & block)
 double surface_area(const Surface<dimension> & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mensurations.cpp#184
+```
 
 ### register_geode_mesh_output
 
@@ -2771,6 +3533,9 @@ double surface_area(const Surface<dimension> & surface)
 void register_geode_mesh_output()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/register_output.cpp#64
+```
 
 ### save_tetrahedral_solid
 
@@ -2778,6 +3543,9 @@ void register_geode_mesh_output()
 void save_tetrahedral_solid(const TetrahedralSolid<dimension> & tetrahedral_solid, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_output.cpp#33
+```
 
  API function for saving a TetrahedralSolid. The adequate saver is called depending on the given filename extension.
 
@@ -2791,6 +3559,9 @@ void save_tetrahedral_solid(const TetrahedralSolid<dimension> & tetrahedral_soli
 tuple create_lines_aabb_tree(const BRep & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#106
+```
 
 ### create_surfaces_aabb_tree
 
@@ -2798,6 +3569,9 @@ tuple create_lines_aabb_tree(const BRep & model)
 tuple create_surfaces_aabb_tree(const BRep & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#112
+```
 
 ### create_blocks_aabb_tree
 
@@ -2805,6 +3579,9 @@ tuple create_surfaces_aabb_tree(const BRep & model)
 tuple create_blocks_aabb_tree(const BRep & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#118
+```
 
 ### create_lines_aabb_tree
 
@@ -2812,6 +3589,9 @@ tuple create_blocks_aabb_tree(const BRep & model)
 tuple create_lines_aabb_tree(const Section & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#124
+```
 
 ### create_surfaces_aabb_tree
 
@@ -2819,6 +3599,9 @@ tuple create_lines_aabb_tree(const Section & model)
 tuple create_surfaces_aabb_tree(const Section & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#130
+```
 
 ### create_line_meshes_aabb_trees
 
@@ -2826,6 +3609,9 @@ tuple create_surfaces_aabb_tree(const Section & model)
 ModelMeshesAABBTree create_line_meshes_aabb_trees(const BRep & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#136
+```
 
 ### create_surface_meshes_aabb_trees
 
@@ -2833,6 +3619,9 @@ ModelMeshesAABBTree create_line_meshes_aabb_trees(const BRep & model)
 ModelMeshesAABBTree create_surface_meshes_aabb_trees(const BRep & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#141
+```
 
 ### create_block_meshes_aabb_trees
 
@@ -2840,6 +3629,9 @@ ModelMeshesAABBTree create_surface_meshes_aabb_trees(const BRep & model)
 ModelMeshesAABBTree create_block_meshes_aabb_trees(const BRep & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#146
+```
 
 ### create_line_meshes_aabb_trees
 
@@ -2847,6 +3639,9 @@ ModelMeshesAABBTree create_block_meshes_aabb_trees(const BRep & model)
 ModelMeshesAABBTree create_line_meshes_aabb_trees(const Section & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#151
+```
 
 ### create_surface_meshes_aabb_trees
 
@@ -2854,6 +3649,9 @@ ModelMeshesAABBTree create_line_meshes_aabb_trees(const Section & model)
 ModelMeshesAABBTree create_surface_meshes_aabb_trees(const Section & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/aabb_model_helpers.cpp#156
+```
 
 ### save_raster_image
 
@@ -2861,6 +3659,9 @@ ModelMeshesAABBTree create_surface_meshes_aabb_trees(const Section & model)
 void save_raster_image(const RasterImage<dimension> & raster, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/io/raster_image_output.cpp#33
+```
 
  API function for saving a RasterImage. The adequate saver is called depending on the given filename extension.
 
@@ -2874,6 +3675,9 @@ void save_raster_image(const RasterImage<dimension> & raster, string_view filena
 int merge_edged_curves(absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/convert_edged_curve.cpp#84
+```
 
 ### load_raster_image
 
@@ -2881,6 +3685,9 @@ int merge_edged_curves(absl::Span<const std::reference_wrapper<const EdgedCurve<
 RasterImage<dimension> load_raster_image(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/io/raster_image_input.cpp#33
+```
 
  API function for loading an RasterImage. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
@@ -2892,6 +3699,9 @@ RasterImage<dimension> load_raster_image(string_view filename)
 typename RasterImageInput<dimension>::MissingFiles check_raster_image_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/io/raster_image_input.cpp#52
+```
 
 ### string_split
 
@@ -2899,13 +3709,19 @@ typename RasterImageInput<dimension>::MissingFiles check_raster_image_missing_fi
 vector string_split(string_view string)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/string.cpp#30
+```
 
 ### string_starts_with
 
 ```cpp
-_Bool string_starts_with(string_view string, string_view check)
+bool string_starts_with(string_view string, string_view check)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/string.cpp#36
+```
 
 ### string_to_index
 
@@ -2913,6 +3729,9 @@ _Bool string_starts_with(string_view string, string_view check)
 index_t string_to_index(string_view string)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/string.cpp#41
+```
 
 ### string_to_int
 
@@ -2920,6 +3739,9 @@ index_t string_to_index(string_view string)
 int string_to_int(string_view string)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/string.cpp#51
+```
 
 ### string_to_float
 
@@ -2927,6 +3749,9 @@ int string_to_int(string_view string)
 float string_to_float(string_view string)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/string.cpp#60
+```
 
 ### string_to_double
 
@@ -2934,13 +3759,19 @@ float string_to_float(string_view string)
 double string_to_double(string_view string)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/string.cpp#70
+```
 
 ### file_exists
 
 ```cpp
-_Bool file_exists(string_view file_path)
+bool file_exists(string_view file_path)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/file.cpp#37
+```
 
 ### check_keyword
 
@@ -2948,13 +3779,19 @@ _Bool file_exists(string_view file_path)
 void check_keyword(std::ifstream & file, string_view keyword)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/file.cpp#49
+```
 
 ### line_starts_with
 
 ```cpp
-_Bool line_starts_with(std::ifstream & file, string_view check)
+bool line_starts_with(std::ifstream & file, string_view check)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/file.cpp#42
+```
 
 ### goto_keyword
 
@@ -2962,6 +3799,9 @@ _Bool line_starts_with(std::ifstream & file, string_view check)
 basic_string goto_keyword(std::ifstream & file, string_view word)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/file.cpp#55
+```
 
 ### goto_keywords
 
@@ -2969,6 +3809,9 @@ basic_string goto_keyword(std::ifstream & file, string_view word)
 basic_string goto_keywords(std::ifstream & file, Span words)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/file.cpp#71
+```
 
 ### goto_keyword_if_it_exists
 
@@ -2976,6 +3819,9 @@ basic_string goto_keywords(std::ifstream & file, Span words)
 optional goto_keyword_if_it_exists(std::ifstream & file, string_view word)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/file.cpp#91
+```
 
 ### next_keyword_if_it_exists
 
@@ -2983,6 +3829,9 @@ optional goto_keyword_if_it_exists(std::ifstream & file, string_view word)
 optional next_keyword_if_it_exists(std::ifstream & file, string_view word)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/file.cpp#109
+```
 
 
 
@@ -3014,6 +3863,9 @@ optional next_keyword_if_it_exists(std::ifstream & file, string_view word)
 | parallel |
 
 
+```cpp
+Defined at ../../include/geode/geometry/information.h#37
+```
 
 | enum class Side |
 
@@ -3024,6 +3876,9 @@ optional next_keyword_if_it_exists(std::ifstream & file, string_view word)
 | zero |
 
 
+```cpp
+Defined at ../../include/geode/geometry/information.h#28
+```
 
 | enum class IntersectionType |
 
@@ -3035,6 +3890,9 @@ optional next_keyword_if_it_exists(std::ifstream & file, string_view word)
 | INCORRECT |
 
 
+```cpp
+Defined at ../../include/geode/geometry/intersection.h#51
+```
 
 
 

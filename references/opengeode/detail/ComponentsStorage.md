@@ -1,5 +1,8 @@
 # class ComponentsStorage
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#51
+```
 
 ## Functions
 
@@ -9,13 +12,19 @@
 public index_t nb_components()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#58
+```
 
 ### has_component
 
 ```cpp
-public _Bool has_component(const uuid & id)
+public bool has_component(const uuid & id)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#63
+```
 
 ### component
 
@@ -23,6 +32,9 @@ public _Bool has_component(const uuid & id)
 public const Component & component(const uuid & id)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#68
+```
 
 ### component
 
@@ -30,6 +42,9 @@ public const Component & component(const uuid & id)
 public Component & component(const uuid & id)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#73
+```
 
 ### begin
 
@@ -37,6 +52,9 @@ public Component & component(const uuid & id)
 public Iterator begin()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#78
+```
 
 ### end
 
@@ -44,6 +62,9 @@ public Iterator begin()
 public Iterator end()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#83
+```
 
 ### add_component
 
@@ -51,6 +72,9 @@ public Iterator end()
 public void add_component(ComponentPtr component)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#88
+```
 
 ### save_components
 
@@ -58,6 +82,9 @@ public void add_component(ComponentPtr component)
 public void save_components(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#93
+```
 
 ### delete_component
 
@@ -65,6 +92,9 @@ public void save_components(string_view filename)
 public void delete_component(const uuid & id)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#109
+```
 
 ### load_components
 
@@ -72,6 +102,9 @@ public void delete_component(const uuid & id)
 public void load_components(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#114
+```
 
 ### file_mapping
 
@@ -79,6 +112,9 @@ public void load_components(string_view filename)
 public flat_hash_map file_mapping(string_view directory)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/components_storage.h#137
+```
 
 
 

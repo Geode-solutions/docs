@@ -1,5 +1,8 @@
 # class EmbeddingRange
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#244
+```
 
 ```cpp
 Inherits from EmbeddingRangeIterator
@@ -15,6 +18,9 @@ Inherits from EmbeddingRangeIterator
 public void EmbeddingRange(const Relationships & relationships, const uuid & component_id)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#247
+```
 
 ### begin
 
@@ -22,6 +28,9 @@ public void EmbeddingRange(const Relationships & relationships, const uuid & com
 public const EmbeddingRange & begin()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#253
+```
 
 ### end
 
@@ -29,6 +38,9 @@ public const EmbeddingRange & begin()
 public const EmbeddingRange & end()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#258
+```
 
 
 

@@ -1,5 +1,8 @@
 # class EdgedCurve
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#192
+```
 
 ```cpp
 Inherits from Graph, CoordinateReferenceSystemManagers<2U>
@@ -9,6 +12,9 @@ Inherits from Graph, CoordinateReferenceSystemManagers<2U>
 
 # class EdgedCurve
 
+```cpp
+Defined at ../../include/geode/mesh/core/edged_curve.h#44
+```
 
 ```cpp
 Inherits from Graph, CoordinateReferenceSystemManagers<dimension>
@@ -24,6 +30,9 @@ Inherits from Graph, CoordinateReferenceSystemManagers<dimension>
 public void ~EdgedCurve<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#90
+```
 
 ### create
 
@@ -31,6 +40,9 @@ public void ~EdgedCurve<dimension>()
 public std::unique_ptr<EdgedCurve<dimension> > create()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#95
+```
 
 ### create
 
@@ -38,6 +50,9 @@ public std::unique_ptr<EdgedCurve<dimension> > create()
 public std::unique_ptr<EdgedCurve<dimension> > create(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#102
+```
 
 ### type_name_static
 
@@ -45,6 +60,9 @@ public std::unique_ptr<EdgedCurve<dimension> > create(const MeshImpl & impl)
 public NamedType type_name_static()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#109
+```
 
 ### clone
 
@@ -52,6 +70,9 @@ public NamedType type_name_static()
 public std::unique_ptr<EdgedCurve<dimension> > clone()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#157
+```
 
 ### edge_length
 
@@ -59,6 +80,9 @@ public std::unique_ptr<EdgedCurve<dimension> > clone()
 public double edge_length(index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#115
+```
 
 ### edge_barycenter
 
@@ -66,6 +90,9 @@ public double edge_length(index_t edge_id)
 public Point<dimension> edge_barycenter(index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#123
+```
 
 ### segment
 
@@ -73,6 +100,9 @@ public Point<dimension> edge_barycenter(index_t edge_id)
 public Segment<dimension> segment(index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#178
+```
 
 ### texture_manager
 
@@ -80,6 +110,9 @@ public Segment<dimension> segment(index_t edge_id)
 public TextureManager1D texture_manager()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#186
+```
 
 ### bounding_box
 
@@ -87,6 +120,9 @@ public TextureManager1D texture_manager()
 public BoundingBox<dimension> bounding_box()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#167
+```
 
  Compute the bounding box from mesh vertices
 
@@ -96,6 +132,9 @@ public BoundingBox<dimension> bounding_box()
 protected void EdgedCurve<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#66
+```
 
 ### EdgedCurve
 
@@ -103,6 +142,9 @@ protected void EdgedCurve<dimension>()
 protected void EdgedCurve<dimension>(EdgedCurve<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#71
+```
 
 ### operator=
 
@@ -110,11 +152,17 @@ protected void EdgedCurve<dimension>(EdgedCurve<dimension> && other)
 protected EdgedCurve<dimension> & operator=(EdgedCurve<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#79
+```
 
 
 
 # class EdgedCurve
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/edged_curve.cpp#193
+```
 
 ```cpp
 Inherits from Graph, CoordinateReferenceSystemManagers<3U>

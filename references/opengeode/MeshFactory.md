@@ -1,5 +1,8 @@
 # class MeshFactory
 
+```cpp
+Defined at ../../include/geode/mesh/core/mesh_factory.h#35
+```
 
 ```cpp
 Inherits from Factory<MeshImpl, VertexSet>
@@ -15,6 +18,9 @@ Inherits from Factory<MeshImpl, VertexSet>
 public void register_mesh(NamedType type, NamedType key)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/mesh_factory.h#42
+```
 
  Register a mesh implementation to a given mesh type
 
@@ -24,6 +30,9 @@ public void register_mesh(NamedType type, NamedType key)
 public void register_default_mesh(NamedType type, NamedType key)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/mesh_factory.h#54
+```
 
  Register the default mesh implementation to a given mesh type. This implementation will be used when no specific implementation is required.
 
@@ -33,6 +42,9 @@ public void register_default_mesh(NamedType type, NamedType key)
 public const MeshType & type(const MeshImpl & key)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/mesh_factory.cpp#73
+```
 
 ### default_impl
 
@@ -40,6 +52,9 @@ public const MeshType & type(const MeshImpl & key)
 public const MeshImpl & default_impl(const MeshType & type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/mesh_factory.cpp#78
+```
 
 ### create_mesh
 
@@ -47,6 +62,9 @@ public const MeshImpl & default_impl(const MeshType & type)
 public std::unique_ptr<Mesh> create_mesh(const MeshImpl & key)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/mesh_factory.h#65
+```
 
 ### create_default_mesh
 
@@ -54,6 +72,9 @@ public std::unique_ptr<Mesh> create_mesh(const MeshImpl & key)
 public std::unique_ptr<Mesh> create_default_mesh(const MeshType & type)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/mesh_factory.h#74
+```
 
 ### create_mesh
 
@@ -61,6 +82,9 @@ public std::unique_ptr<Mesh> create_default_mesh(const MeshType & type)
 public int create_mesh(const MeshImpl & key)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/mesh_factory.h#65
+```
 
 ### create_default_mesh
 
@@ -68,6 +92,9 @@ public int create_mesh(const MeshImpl & key)
 public int create_default_mesh(const MeshType & type)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/mesh_factory.h#74
+```
 
 
 

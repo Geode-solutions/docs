@@ -1,5 +1,8 @@
 # class BoundarySurfaceRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/brep.h#111
+```
 
 ```cpp
 Inherits from BoundaryRangeIterator
@@ -15,6 +18,9 @@ Inherits from BoundaryRangeIterator
 public void BoundarySurfaceRange(const BRep & brep, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#158
+```
 
 ### BoundarySurfaceRange
 
@@ -22,6 +28,9 @@ public void BoundarySurfaceRange(const BRep & brep, const Block3D & block)
 public void BoundarySurfaceRange(const BoundarySurfaceRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#165
+```
 
 ### ~BoundarySurfaceRange
 
@@ -29,6 +38,9 @@ public void BoundarySurfaceRange(const BoundarySurfaceRange & range)
 public void ~BoundarySurfaceRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#171
+```
 
 ### begin
 
@@ -36,6 +48,9 @@ public void ~BoundarySurfaceRange()
 public const BoundarySurfaceRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#173
+```
 
 ### end
 
@@ -43,6 +58,9 @@ public const BoundarySurfaceRange & begin()
 public const BoundarySurfaceRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#179
+```
 
 ### operator*
 
@@ -50,6 +68,9 @@ public const BoundarySurfaceRange & end()
 public const Surface3D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#184
+```
 
 
 

@@ -1,5 +1,8 @@
 # class OpenGeodePointException
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#241
+```
 
 ```cpp
 Inherits from OpenGeodeException
@@ -11,6 +14,7 @@ Inherits from OpenGeodeException
 
 ```cpp
 public Point<dimension> point
+
 ```
 
 
@@ -23,6 +27,9 @@ public Point<dimension> point
 public void OpenGeodePointException<dimension>(Point<dimension> point_in, const Args &... message)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/point.h#245
+```
 
 
 

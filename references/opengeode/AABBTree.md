@@ -1,10 +1,16 @@
 # class AABBTree
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/aabb.cpp#287
+```
 
 # class AABBTree
 
 # class AABBTree
 
+```cpp
+Defined at ../../include/geode/geometry/aabb.h#43
+```
 
 ## Functions
 
@@ -14,6 +20,9 @@
 public void AABBTree<>(const AABBTree<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/aabb.h#45
+```
 
 ### operator=
 
@@ -21,6 +30,9 @@ public void AABBTree<>(const AABBTree<> & )
 public AABBTree<> & operator=(const AABBTree<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/aabb.h#45
+```
 
 ### AABBTree
 
@@ -28,6 +40,9 @@ public AABBTree<> & operator=(const AABBTree<> & )
 public void AABBTree<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/aabb.cpp#131
+```
 
 
 
@@ -41,6 +56,9 @@ public void AABBTree<>()
 public void AABBTree<>(absl::Span<const BoundingBox<dimension> > bboxes)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/aabb.cpp#136
+```
 
 ### AABBTree
 
@@ -48,6 +66,9 @@ public void AABBTree<>(absl::Span<const BoundingBox<dimension> > bboxes)
 public void AABBTree<>(AABBTree<> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/aabb.cpp#143
+```
 
 ### ~AABBTree
 
@@ -55,6 +76,9 @@ public void AABBTree<>(AABBTree<> && other)
 public void ~AABBTree<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/aabb.cpp#149
+```
 
 ### operator=
 
@@ -62,6 +86,9 @@ public void ~AABBTree<>()
 public AABBTree<> & operator=(AABBTree<> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/aabb.cpp#154
+```
 
 ### nb_bboxes
 
@@ -69,6 +96,9 @@ public AABBTree<> & operator=(AABBTree<> && other)
 public index_t nb_bboxes()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/aabb.cpp#161
+```
 
 
 
@@ -82,6 +112,9 @@ public index_t nb_bboxes()
 public const BoundingBox<dimension> & bounding_box()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/aabb.cpp#167
+```
 
 ### containing_boxes
 
@@ -89,6 +122,9 @@ public const BoundingBox<dimension> & bounding_box()
 public vector containing_boxes(const Point<dimension> & query)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/aabb.cpp#176
+```
 
 
 
@@ -102,6 +138,9 @@ public vector containing_boxes(const Point<dimension> & query)
 public std::tuple<index_t, Point<dimension>, double> closest_element_box(const Point<dimension> & query, const EvalDistance & action)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/detail/aabb_impl.h#148
+```
 
 
 
@@ -127,6 +166,9 @@ public std::tuple<index_t, Point<dimension>, double> closest_element_box(const P
 public void compute_bbox_element_bbox_intersections(const BoundingBox<dimension> & box, EvalIntersection & action)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/detail/aabb_impl.h#169
+```
 
 
 
@@ -150,6 +192,9 @@ public void compute_bbox_element_bbox_intersections(const BoundingBox<dimension>
 public void compute_self_element_bbox_intersections(EvalIntersection & action)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/detail/aabb_impl.h#182
+```
 
 
 
@@ -171,6 +216,9 @@ public void compute_self_element_bbox_intersections(EvalIntersection & action)
 public void compute_other_element_bbox_intersections(const AABBTree<dimension> & other_tree, EvalIntersection & action)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/detail/aabb_impl.h#195
+```
 
 
 
@@ -190,6 +238,9 @@ public void compute_other_element_bbox_intersections(const AABBTree<dimension> &
 public void compute_ray_element_bbox_intersections(const Ray<dimension> & ray, EvalIntersection & action)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/detail/aabb_impl.h#209
+```
 
 
 
@@ -211,6 +262,9 @@ public void compute_ray_element_bbox_intersections(const Ray<dimension> & ray, E
 public void compute_line_element_bbox_intersections(const InfiniteLine<dimension> & line, EvalIntersection & action)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/detail/aabb_impl.h#222
+```
 
 
 
@@ -232,6 +286,9 @@ public void compute_line_element_bbox_intersections(const InfiniteLine<dimension
 public void compute_segment_element_bbox_intersections(const Segment<dimension> & segment, EvalIntersection & action)
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/detail/aabb_impl.h#235
+```
 
 
 

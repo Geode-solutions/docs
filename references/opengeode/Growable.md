@@ -1,5 +1,8 @@
 # class Growable
 
+```cpp
+Defined at ../../include/geode/basic/bitsery_archive.h#84
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void Growable<Archive, T>(absl::FixedArray<std::function<void (Archive &, T &)> > serializers)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/bitsery_archive.h#87
+```
 
 ### serialize
 
@@ -16,6 +22,9 @@ public void Growable<Archive, T>(absl::FixedArray<std::function<void (Archive &,
 public void serialize(Archive & ser, const T & obj, Fnc && fnc)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/bitsery_archive.h#95
+```
 
 ### deserialize
 
@@ -23,6 +32,9 @@ public void serialize(Archive & ser, const T & obj, Fnc && fnc)
 public void deserialize(Archive & des, T & obj, Fnc && fnc)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/bitsery_archive.h#103
+```
 
 
 

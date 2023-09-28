@@ -1,5 +1,8 @@
 # class EmbeddingRangeIterator
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#225
+```
 
  Range to iterate on all embeddings of one component
 
@@ -13,6 +16,9 @@
 public void EmbeddingRangeIterator(const Relationships & relationships, const uuid & component_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#832
+```
 
 ### EmbeddingRangeIterator
 
@@ -20,6 +26,9 @@ public void EmbeddingRangeIterator(const Relationships & relationships, const uu
 public void EmbeddingRangeIterator(EmbeddingRangeIterator && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#840
+```
 
 ### EmbeddingRangeIterator
 
@@ -27,6 +36,9 @@ public void EmbeddingRangeIterator(EmbeddingRangeIterator && other)
 public void EmbeddingRangeIterator(const EmbeddingRangeIterator & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#846
+```
 
 ### ~EmbeddingRangeIterator
 
@@ -34,13 +46,19 @@ public void EmbeddingRangeIterator(const EmbeddingRangeIterator & other)
 public void ~EmbeddingRangeIterator()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#852
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const EmbeddingRangeIterator & )
+public bool operator!=(const EmbeddingRangeIterator & )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#855
+```
 
 ### operator++
 
@@ -48,6 +66,9 @@ public _Bool operator!=(const EmbeddingRangeIterator & )
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#861
+```
 
 ### operator*
 
@@ -55,6 +76,9 @@ public void operator++()
 public const ComponentID & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#866
+```
 
 
 

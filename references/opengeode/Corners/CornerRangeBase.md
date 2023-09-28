@@ -1,5 +1,8 @@
 # class CornerRangeBase
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corners.h#57
+```
 
  Base class for range-based iteration on Corners
 
@@ -9,6 +12,7 @@
 
 ```cpp
 protected geode::PImpl<Impl> impl_
+
 ```
 
 
@@ -27,13 +31,19 @@ Impl
 public void ~CornerRangeBase()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#258
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const CornerRangeBase & )
+public bool operator!=(const CornerRangeBase & )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#263
+```
 
 ### operator++
 
@@ -41,6 +51,9 @@ public _Bool operator!=(const CornerRangeBase & )
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#270
+```
 
 ### CornerRangeBase
 
@@ -48,6 +61,9 @@ public void operator++()
 protected void CornerRangeBase(const Corners<> & corners)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#237
+```
 
 ### CornerRangeBase
 
@@ -55,6 +71,9 @@ protected void CornerRangeBase(const Corners<> & corners)
 protected void CornerRangeBase(CornerRangeBase && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#244
+```
 
 ### CornerRangeBase
 
@@ -62,6 +81,9 @@ protected void CornerRangeBase(CornerRangeBase && other)
 protected void CornerRangeBase(const CornerRangeBase & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#251
+```
 
 
 

@@ -1,5 +1,8 @@
 # class ComponentID
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#45
+```
 
  Identify a component by its type and a unique index
 
@@ -13,6 +16,9 @@
 public void ComponentID()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#48
+```
 
 ### ComponentID
 
@@ -20,6 +26,9 @@ public void ComponentID()
 public void ComponentID(NamedType component_type, uuid id)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#50
+```
 
 ### id
 
@@ -27,6 +36,9 @@ public void ComponentID(NamedType component_type, uuid id)
 public const uuid & id()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#55
+```
 
 ### id
 
@@ -34,6 +46,9 @@ public const uuid & id()
 public uuid && id()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#60
+```
 
 ### type
 
@@ -41,6 +56,9 @@ public uuid && id()
 public const ComponentType & type()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#65
+```
 
 ### type
 
@@ -48,20 +66,29 @@ public const ComponentType & type()
 public ComponentType && type()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#70
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const ComponentID & other)
+public bool operator!=(const ComponentID & other)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#75
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const ComponentID & other)
+public bool operator==(const ComponentID & other)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#80
+```
 
 ### string
 
@@ -69,6 +96,9 @@ public _Bool operator==(const ComponentID & other)
 public basic_string string()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component_type.h#85
+```
 
 
 

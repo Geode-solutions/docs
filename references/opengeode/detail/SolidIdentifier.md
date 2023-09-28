@@ -1,5 +1,8 @@
 # class SolidIdentifier
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#109
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void SolidIdentifier(const SolidIdentifier & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#111
+```
 
 ### operator=
 
@@ -22,6 +28,9 @@ public void SolidIdentifier(const SolidIdentifier & )
 public SolidIdentifier & operator=(const SolidIdentifier & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#111
+```
 
 ### SolidIdentifier
 
@@ -29,6 +38,9 @@ public SolidIdentifier & operator=(const SolidIdentifier & )
 public void SolidIdentifier(SolidIdentifier && )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#111
+```
 
 ### operator=
 
@@ -36,6 +48,9 @@ public void SolidIdentifier(SolidIdentifier && )
 public SolidIdentifier & operator=(SolidIdentifier && )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#111
+```
 
 ### SolidIdentifier
 
@@ -43,6 +58,9 @@ public SolidIdentifier & operator=(SolidIdentifier && )
 public void SolidIdentifier(const SolidMesh3D & solid)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#328
+```
 
 ### ~SolidIdentifier
 
@@ -50,6 +68,9 @@ public void SolidIdentifier(const SolidMesh3D & solid)
 public void ~SolidIdentifier()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#333
+```
 
 ### identify_polyhedra
 
@@ -57,6 +78,9 @@ public void ~SolidIdentifier()
 public index_t identify_polyhedra()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#337
+```
 
 ### polyhedron_identifier
 
@@ -64,6 +88,9 @@ public index_t identify_polyhedra()
 public index_t polyhedron_identifier(index_t polyhedron)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#342
+```
 
 ### identified_connected_polyhedra
 
@@ -71,6 +98,9 @@ public index_t polyhedron_identifier(index_t polyhedron)
 public absl::FixedArray<std::vector<index_t> > identified_connected_polyhedra()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#348
+```
 
 
 

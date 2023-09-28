@@ -1,5 +1,8 @@
 # class SimplicialModelCreator
 
+```cpp
+Defined at ../../include/geode/model/helpers/private/simplicial_model_creator.h#47
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void SimplicialModelCreator<Model>(Model & model, std::vector<Point<dimension> > unique_points)
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/private/simplicial_model_creator.h#53
+```
 
 ### create_corners
 
@@ -16,6 +22,9 @@ public void SimplicialModelCreator<Model>(Model & model, std::vector<Point<dimen
 public vector create_corners(Span definitions)
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/private/simplicial_model_creator.h#62
+```
 
 ### create_lines
 
@@ -23,6 +32,9 @@ public vector create_corners(Span definitions)
 public vector create_lines(Span corners, Span definitions)
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/private/simplicial_model_creator.h#79
+```
 
 ### create_surfaces
 
@@ -30,6 +42,9 @@ public vector create_lines(Span corners, Span definitions)
 public vector create_surfaces(Span lines, Span definitions)
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/private/simplicial_model_creator.h#110
+```
 
 ### create_surfaces
 
@@ -37,6 +52,9 @@ public vector create_surfaces(Span lines, Span definitions)
 public vector create_surfaces(Span corners, Span lines, Span definitions)
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/private/simplicial_model_creator.h#150
+```
 
 ### create_point
 
@@ -44,6 +62,9 @@ public vector create_surfaces(Span corners, Span lines, Span definitions)
 protected void create_point(MeshBuilder & mesh_builder, const Component & component, index_t vertex)
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/private/simplicial_model_creator.h#171
+```
 
 ### model
 
@@ -51,6 +72,9 @@ protected void create_point(MeshBuilder & mesh_builder, const Component & compon
 protected const Model & model()
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/private/simplicial_model_creator.h#181
+```
 
 ### builder
 
@@ -58,6 +82,9 @@ protected const Model & model()
 protected ModelBuilder & builder()
 ```
 
+```cpp
+Defined at ../../include/geode/model/helpers/private/simplicial_model_creator.h#186
+```
 
 
 

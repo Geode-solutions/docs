@@ -1,5 +1,8 @@
 # class HybridSolidOutput
 
+```cpp
+Defined at ../../include/geode/mesh/io/hybrid_solid_output.h#49
+```
 
 ```cpp
 Inherits from Output<HybridSolid<dimension> >
@@ -15,6 +18,9 @@ Inherits from Output<HybridSolid<dimension> >
 protected void HybridSolidOutput<dimension>(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/hybrid_solid_output.h#54
+```
 
 
 

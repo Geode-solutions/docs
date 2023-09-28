@@ -1,5 +1,8 @@
 # class BijectiveMapping
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#114
+```
 
 ```cpp
 Inherits from MappingBase<T1, T2, geode::OneValueStorage>
@@ -15,6 +18,9 @@ Inherits from MappingBase<T1, T2, geode::OneValueStorage>
 public void map(const T1 & in, const T2 & out)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#117
+```
 
 ### erase_in
 
@@ -22,6 +28,9 @@ public void map(const T1 & in, const T2 & out)
 public void erase_in(const T1 & in)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#130
+```
 
 ### erase_out
 
@@ -29,6 +38,9 @@ public void erase_in(const T1 & in)
 public void erase_out(const T2 & out)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#141
+```
 
 ### size
 
@@ -36,6 +48,9 @@ public void erase_out(const T2 & out)
 public index_t size()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#152
+```
 
 
 

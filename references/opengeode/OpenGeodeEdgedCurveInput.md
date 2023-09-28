@@ -1,5 +1,8 @@
 # class OpenGeodeEdgedCurveInput
 
+```cpp
+Defined at ../../include/geode/mesh/io/geode/geode_edged_curve_input.h#32
+```
 
 ```cpp
 Inherits from EdgedCurveInput<dimension>
@@ -15,6 +18,9 @@ Inherits from EdgedCurveInput<dimension>
 public void OpenGeodeEdgedCurveInput<dimension>(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/geode/geode_edged_curve_input.h#32
+```
 
 ### read
 
@@ -22,6 +28,9 @@ public void OpenGeodeEdgedCurveInput<dimension>(string_view filename)
 public std::unique_ptr<EdgedCurve<dimension> > read(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/geode/geode_edged_curve_input.h#32
+```
 
 
 

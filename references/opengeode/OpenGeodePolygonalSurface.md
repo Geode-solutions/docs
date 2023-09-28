@@ -4,6 +4,9 @@
 
 # class OpenGeodePolygonalSurface
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_polygonal_surface.h#41
+```
 
 ```cpp
 Inherits from PolygonalSurface<dimension>
@@ -25,6 +28,9 @@ Impl
 public void OpenGeodePolygonalSurface<dimension>(const OpenGeodePolygonalSurface<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_polygonal_surface.h#43
+```
 
 ### operator=
 
@@ -32,6 +38,9 @@ public void OpenGeodePolygonalSurface<dimension>(const OpenGeodePolygonalSurface
 public OpenGeodePolygonalSurface<dimension> & operator=(const OpenGeodePolygonalSurface<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_polygonal_surface.h#43
+```
 
 ### OpenGeodePolygonalSurface
 
@@ -39,6 +48,9 @@ public OpenGeodePolygonalSurface<dimension> & operator=(const OpenGeodePolygonal
 public void OpenGeodePolygonalSurface<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#218
+```
 
 ### OpenGeodePolygonalSurface
 
@@ -46,6 +58,9 @@ public void OpenGeodePolygonalSurface<dimension>()
 public void OpenGeodePolygonalSurface<dimension>(OpenGeodePolygonalSurface<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#224
+```
 
 ### operator=
 
@@ -53,6 +68,9 @@ public void OpenGeodePolygonalSurface<dimension>(OpenGeodePolygonalSurface<dimen
 public OpenGeodePolygonalSurface<dimension> & operator=(OpenGeodePolygonalSurface<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#232
+```
 
 ### ~OpenGeodePolygonalSurface
 
@@ -60,6 +78,9 @@ public OpenGeodePolygonalSurface<dimension> & operator=(OpenGeodePolygonalSurfac
 public void ~OpenGeodePolygonalSurface<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#242
+```
 
 ### impl_name_static
 
@@ -67,6 +88,9 @@ public void ~OpenGeodePolygonalSurface<dimension>()
 public NamedType impl_name_static()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_polygonal_surface.h#57
+```
 
 ### impl_name
 
@@ -74,6 +98,9 @@ public NamedType impl_name_static()
 public NamedType impl_name()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_polygonal_surface.h#63
+```
 
 ### type_name
 
@@ -81,6 +108,9 @@ public NamedType impl_name()
 public NamedType type_name()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_polygonal_surface.h#68
+```
 
 ### native_extension_static
 
@@ -88,6 +118,9 @@ public NamedType type_name()
 public string_view native_extension_static()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_polygonal_surface.h#73
+```
 
 ### native_extension
 
@@ -95,6 +128,9 @@ public string_view native_extension_static()
 public string_view native_extension()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_polygonal_surface.h#80
+```
 
 ### set_vertex
 
@@ -102,6 +138,9 @@ public string_view native_extension()
 public void set_vertex(index_t vertex_id, Point<dimension> point, OGPolygonalSurfaceKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#248
+```
 
 ### set_polygon_vertex
 
@@ -109,6 +148,9 @@ public void set_vertex(index_t vertex_id, Point<dimension> point, OGPolygonalSur
 public void set_polygon_vertex(const PolygonVertex & polygon_vertex, index_t vertex_id, OGPolygonalSurfaceKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#297
+```
 
 ### set_polygon_adjacent
 
@@ -116,6 +158,9 @@ public void set_polygon_vertex(const PolygonVertex & polygon_vertex, index_t ver
 public void set_polygon_adjacent(const PolygonEdge & polygon_edge, index_t adjacent_id, OGPolygonalSurfaceKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#327
+```
 
 ### add_polygon
 
@@ -123,11 +168,14 @@ public void set_polygon_adjacent(const PolygonEdge & polygon_edge, index_t adjac
 public void add_polygon(Span vertices, OGPolygonalSurfaceKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#306
+```
 
 ### remove_polygons
 
 ```cpp
-public void remove_polygons(const std::vector<_Bool> & to_delete, OGPolygonalSurfaceKey )
+public void remove_polygons(const std::vector<bool> & to_delete, OGPolygonalSurfaceKey )
 ```
 
 ### permute_polygons
@@ -136,6 +184,9 @@ public void remove_polygons(const std::vector<_Bool> & to_delete, OGPolygonalSur
 public void permute_polygons(Span permutation, OGPolygonalSurfaceKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#320
+```
 
 ### copy_polygons
 
@@ -143,6 +194,9 @@ public void permute_polygons(Span permutation, OGPolygonalSurfaceKey )
 public void copy_polygons(const OpenGeodePolygonalSurface<dimension> & surface_mesh, OGPolygonalSurfaceKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#336
+```
 
 ### get_polygon_adjacent
 
@@ -150,6 +204,9 @@ public void copy_polygons(const OpenGeodePolygonalSurface<dimension> & surface_m
 public absl::optional<index_t> get_polygon_adjacent(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#270
+```
 
 ### remove_polygons
 
@@ -157,6 +214,9 @@ public absl::optional<index_t> get_polygon_adjacent(const PolygonEdge & polygon_
 public void remove_polygons(const int & to_delete, OGPolygonalSurfaceKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_polygonal_surface.cpp#313
+```
 
 
 

@@ -1,8 +1,14 @@
 # class BlocksBuilder
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#96
+```
 
 # class BlocksBuilder
 
+```cpp
+Defined at ../../include/geode/model/mixin/builder/blocks_builder.h#46
+```
 
 ## Functions
 
@@ -12,6 +18,9 @@
 public void load_blocks(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#66
+```
 
 ### block_mesh_builder
 
@@ -19,6 +28,9 @@ public void load_blocks(string_view directory)
 public std::unique_ptr<typename Mesh::Builder> block_mesh_builder(const uuid & id)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/builder/blocks_builder.h#56
+```
 
  Get a pointer to the builder of a Block mesh
 
@@ -30,6 +42,9 @@ public std::unique_ptr<typename Mesh::Builder> block_mesh_builder(const uuid & i
 public void set_block_name(const uuid & id, string_view name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#72
+```
 
 ### BlocksBuilder
 
@@ -37,6 +52,9 @@ public void set_block_name(const uuid & id, string_view name)
 protected void BlocksBuilder<>(Blocks<dimension> & blocks)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/builder/blocks_builder.h#68
+```
 
 ### create_block
 
@@ -44,6 +62,9 @@ protected void BlocksBuilder<>(Blocks<dimension> & blocks)
 protected const uuid & create_block()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#34
+```
 
 ### create_block
 
@@ -51,6 +72,9 @@ protected const uuid & create_block()
 protected const uuid & create_block(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#40
+```
 
 ### create_block
 
@@ -58,6 +82,9 @@ protected const uuid & create_block(const MeshImpl & impl)
 protected void create_block(uuid block_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#46
+```
 
 ### create_block
 
@@ -65,6 +92,9 @@ protected void create_block(uuid block_id)
 protected void create_block(uuid block_id, const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#52
+```
 
 ### delete_block
 
@@ -72,6 +102,9 @@ protected void create_block(uuid block_id, const MeshImpl & impl)
 protected void delete_block(const Block<dimension> & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#59
+```
 
 ### set_block_mesh
 
@@ -79,6 +112,9 @@ protected void delete_block(const Block<dimension> & block)
 protected void set_block_mesh(const uuid & id, std::unique_ptr<SolidMesh<dimension> > mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#80
+```
 
 ### modifiable_block_mesh
 
@@ -86,6 +122,9 @@ protected void set_block_mesh(const uuid & id, std::unique_ptr<SolidMesh<dimensi
 protected SolidMesh<dimension> & modifiable_block_mesh(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/blocks_builder.cpp#88
+```
 
 
 

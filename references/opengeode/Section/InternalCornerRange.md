@@ -1,5 +1,8 @@
 # class InternalCornerRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/section.h#166
+```
 
 ```cpp
 Inherits from InternalRangeIterator
@@ -15,6 +18,9 @@ Inherits from InternalRangeIterator
 public void InternalCornerRange(const Section & section, const Surface2D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#286
+```
 
 ### InternalCornerRange
 
@@ -22,6 +28,9 @@ public void InternalCornerRange(const Section & section, const Surface2D & surfa
 public void InternalCornerRange(const InternalCornerRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#294
+```
 
 ### ~InternalCornerRange
 
@@ -29,6 +38,9 @@ public void InternalCornerRange(const InternalCornerRange & range)
 public void ~InternalCornerRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#301
+```
 
 ### begin
 
@@ -36,6 +48,9 @@ public void ~InternalCornerRange()
 public const InternalCornerRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#303
+```
 
 ### end
 
@@ -43,6 +58,9 @@ public const InternalCornerRange & begin()
 public const InternalCornerRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#309
+```
 
 ### operator++
 
@@ -50,6 +68,9 @@ public const InternalCornerRange & end()
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#314
+```
 
 ### operator*
 
@@ -57,6 +78,9 @@ public void operator++()
 public const Corner2D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#320
+```
 
 
 

@@ -1,5 +1,8 @@
 # class ModelBoundary
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/model_boundary.cpp#44
+```
 
 ```cpp
 Inherits from Component<3U>
@@ -9,6 +12,9 @@ Inherits from Component<3U>
 
 # class ModelBoundary
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/model_boundary.cpp#43
+```
 
 ```cpp
 Inherits from Component<2U>
@@ -18,6 +24,9 @@ Inherits from Component<2U>
 
 # class ModelBoundary
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#44
+```
 
  Collection component describing a Boundary.
 
@@ -37,6 +46,9 @@ Inherits from Component<dimension>
 public void ModelBoundary<>(const ModelBoundary<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#46
+```
 
 ### operator=
 
@@ -44,6 +56,9 @@ public void ModelBoundary<>(const ModelBoundary<> & )
 public ModelBoundary<> & operator=(const ModelBoundary<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#46
+```
 
 ### ModelBoundary
 
@@ -51,6 +66,9 @@ public ModelBoundary<> & operator=(const ModelBoundary<> & )
 public void ModelBoundary<>(ModelBoundary<> && other)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#53
+```
 
 ### ~ModelBoundary
 
@@ -58,6 +76,9 @@ public void ModelBoundary<>(ModelBoundary<> && other)
 public void ~ModelBoundary<>()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#54
+```
 
 ### component_type_static
 
@@ -65,6 +86,9 @@ public void ~ModelBoundary<>()
 public NamedType component_type_static()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#56
+```
 
 ### component_type
 
@@ -72,6 +96,9 @@ public NamedType component_type_static()
 public NamedType component_type()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#61
+```
 
 ### component_id
 
@@ -79,6 +106,9 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#66
+```
 
 ### ModelBoundary
 
@@ -86,6 +116,9 @@ public ComponentID component_id()
 public void ModelBoundary<>(ModelBoundariesKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#72
+```
 
 ### set_model_boundary_name
 
@@ -93,6 +126,9 @@ public void ModelBoundary<>(ModelBoundariesKey )
 public void set_model_boundary_name(string_view name, ModelBoundariesBuilderKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/model_boundary.h#74
+```
 
 
 

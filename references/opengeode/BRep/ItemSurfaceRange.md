@@ -1,5 +1,8 @@
 # class ItemSurfaceRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/brep.h#288
+```
 
 ```cpp
 Inherits from ItemRangeIterator
@@ -15,6 +18,9 @@ Inherits from ItemRangeIterator
 public void ItemSurfaceRange(const BRep & brep, const ModelBoundary3D & boundary)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#588
+```
 
 ### ItemSurfaceRange
 
@@ -22,6 +28,9 @@ public void ItemSurfaceRange(const BRep & brep, const ModelBoundary3D & boundary
 public void ItemSurfaceRange(const ItemSurfaceRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#594
+```
 
 ### ~ItemSurfaceRange
 
@@ -29,6 +38,9 @@ public void ItemSurfaceRange(const ItemSurfaceRange & range)
 public void ~ItemSurfaceRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#599
+```
 
 ### begin
 
@@ -36,6 +48,9 @@ public void ~ItemSurfaceRange()
 public const ItemSurfaceRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#601
+```
 
 ### end
 
@@ -43,6 +58,9 @@ public const ItemSurfaceRange & begin()
 public const ItemSurfaceRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#606
+```
 
 ### operator*
 
@@ -50,6 +68,9 @@ public const ItemSurfaceRange & end()
 public const Surface3D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#611
+```
 
 
 

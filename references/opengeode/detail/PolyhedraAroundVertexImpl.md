@@ -1,14 +1,19 @@
 # struct PolyhedraAroundVertexImpl
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/solid_mesh_impl.h#34
+```
 
 ## Members
 
 ```cpp
 public PolyhedraAroundVertex polyhedra
+
 ```
 
 ```cpp
-public _Bool vertex_is_on_border
+public bool vertex_is_on_border
+
 ```
 
 
@@ -21,20 +26,29 @@ public _Bool vertex_is_on_border
 public void PolyhedraAroundVertexImpl()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/solid_mesh_impl.h#36
+```
 
 ### PolyhedraAroundVertexImpl
 
 ```cpp
-public void PolyhedraAroundVertexImpl(PolyhedraAroundVertex polyhedra_in, _Bool vertex_is_on_border_in)
+public void PolyhedraAroundVertexImpl(PolyhedraAroundVertex polyhedra_in, bool vertex_is_on_border_in)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/solid_mesh_impl.h#37
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const PolyhedraAroundVertexImpl & other)
+public bool operator!=(const PolyhedraAroundVertexImpl & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/solid_mesh_impl.h#44
+```
 
 ### serialize
 
@@ -42,6 +56,9 @@ public _Bool operator!=(const PolyhedraAroundVertexImpl & other)
 public void serialize(Archive & archive)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/solid_mesh_impl.h#55
+```
 
 
 

@@ -1,8 +1,14 @@
 # class GenericLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#244
+```
 
 # class GenericLine
 
+```cpp
+Defined at ../../include/geode/geometry/basic_objects/infinite_line.h#46
+```
 
 ## Functions
 
@@ -12,6 +18,9 @@
 public void GenericLine<PointType, dimension>(const Vector<dimension> & direction, PointType origin)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#30
+```
 
 ### GenericLine
 
@@ -19,6 +28,9 @@ public void GenericLine<PointType, dimension>(const Vector<dimension> & directio
 public void GenericLine<PointType, dimension>(const GenericSegment<PointType, dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#36
+```
 
 ### GenericLine
 
@@ -26,6 +38,9 @@ public void GenericLine<PointType, dimension>(const GenericSegment<PointType, di
 public void GenericLine<PointType, dimension>(const GenericLine<PointType, dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#42
+```
 
 ### operator=
 
@@ -33,6 +48,9 @@ public void GenericLine<PointType, dimension>(const GenericLine<PointType, dimen
 public GenericLine<PointType, dimension> & operator=(const GenericLine<PointType, dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#48
+```
 
 ### GenericLine
 
@@ -40,6 +58,9 @@ public GenericLine<PointType, dimension> & operator=(const GenericLine<PointType
 public void GenericLine<PointType, dimension>(GenericLine<PointType, dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#57
+```
 
 ### operator=
 
@@ -47,6 +68,9 @@ public void GenericLine<PointType, dimension>(GenericLine<PointType, dimension> 
 public GenericLine<PointType, dimension> & operator=(GenericLine<PointType, dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#64
+```
 
 ### origin
 
@@ -54,6 +78,9 @@ public GenericLine<PointType, dimension> & operator=(GenericLine<PointType, dime
 public const Point<dimension> & origin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#73
+```
 
 ### direction
 
@@ -61,21 +88,39 @@ public const Point<dimension> & origin()
 public const Vector<dimension> & direction()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#79
+```
 
 
 
 # class GenericLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#248
+```
 
 # class GenericLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#245
+```
 
 # class GenericLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#249
+```
 
 # class GenericLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#246
+```
 
 # class GenericLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#247
+```
 

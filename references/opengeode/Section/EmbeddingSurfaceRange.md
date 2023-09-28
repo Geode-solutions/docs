@@ -1,5 +1,8 @@
 # class EmbeddingSurfaceRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/section.h#187
+```
 
 ```cpp
 Inherits from EmbeddingRangeIterator
@@ -15,6 +18,9 @@ Inherits from EmbeddingRangeIterator
 public void EmbeddingSurfaceRange(const Section & section, const Line2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#338
+```
 
 ### EmbeddingSurfaceRange
 
@@ -22,6 +28,9 @@ public void EmbeddingSurfaceRange(const Section & section, const Line2D & line)
 public void EmbeddingSurfaceRange(const Section & section, const Corner2D & corner)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#346
+```
 
 ### EmbeddingSurfaceRange
 
@@ -29,6 +38,9 @@ public void EmbeddingSurfaceRange(const Section & section, const Corner2D & corn
 public void EmbeddingSurfaceRange(const EmbeddingSurfaceRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#354
+```
 
 ### ~EmbeddingSurfaceRange
 
@@ -36,6 +48,9 @@ public void EmbeddingSurfaceRange(const EmbeddingSurfaceRange & range)
 public void ~EmbeddingSurfaceRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#361
+```
 
 ### begin
 
@@ -43,6 +58,9 @@ public void ~EmbeddingSurfaceRange()
 public const EmbeddingSurfaceRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#363
+```
 
 ### end
 
@@ -50,6 +68,9 @@ public const EmbeddingSurfaceRange & begin()
 public const EmbeddingSurfaceRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#369
+```
 
 ### operator++
 
@@ -57,6 +78,9 @@ public const EmbeddingSurfaceRange & end()
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#375
+```
 
 ### operator*
 
@@ -64,6 +88,9 @@ public void operator++()
 public const Surface2D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#381
+```
 
 
 

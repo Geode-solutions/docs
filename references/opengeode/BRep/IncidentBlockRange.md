@@ -1,5 +1,8 @@
 # class IncidentBlockRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/brep.h#165
+```
 
 ```cpp
 Inherits from IncidenceRangeIterator
@@ -15,6 +18,9 @@ Inherits from IncidenceRangeIterator
 public void IncidentBlockRange(const BRep & brep, const Surface3D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#267
+```
 
 ### IncidentBlockRange
 
@@ -22,6 +28,9 @@ public void IncidentBlockRange(const BRep & brep, const Surface3D & surface)
 public void IncidentBlockRange(const IncidentBlockRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#274
+```
 
 ### ~IncidentBlockRange
 
@@ -29,6 +38,9 @@ public void IncidentBlockRange(const IncidentBlockRange & range)
 public void ~IncidentBlockRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#280
+```
 
 ### begin
 
@@ -36,6 +48,9 @@ public void ~IncidentBlockRange()
 public const IncidentBlockRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#282
+```
 
 ### end
 
@@ -43,6 +58,9 @@ public const IncidentBlockRange & begin()
 public const IncidentBlockRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#287
+```
 
 ### operator*
 
@@ -50,6 +68,9 @@ public const IncidentBlockRange & end()
 public const Block3D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#292
+```
 
 
 

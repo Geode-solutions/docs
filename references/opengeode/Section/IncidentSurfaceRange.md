@@ -1,5 +1,8 @@
 # class IncidentSurfaceRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/section.h#127
+```
 
 ```cpp
 Inherits from IncidenceRangeIterator
@@ -15,6 +18,9 @@ Inherits from IncidenceRangeIterator
 public void IncidentSurfaceRange(const Section & section, const Line2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#201
+```
 
 ### IncidentSurfaceRange
 
@@ -22,6 +28,9 @@ public void IncidentSurfaceRange(const Section & section, const Line2D & line)
 public void IncidentSurfaceRange(const IncidentSurfaceRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#208
+```
 
 ### ~IncidentSurfaceRange
 
@@ -29,6 +38,9 @@ public void IncidentSurfaceRange(const IncidentSurfaceRange & range)
 public void ~IncidentSurfaceRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#215
+```
 
 ### begin
 
@@ -36,6 +48,9 @@ public void ~IncidentSurfaceRange()
 public const IncidentSurfaceRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#217
+```
 
 ### end
 
@@ -43,6 +58,9 @@ public const IncidentSurfaceRange & begin()
 public const IncidentSurfaceRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#223
+```
 
 ### operator*
 
@@ -50,6 +68,9 @@ public const IncidentSurfaceRange & end()
 public const Surface2D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#229
+```
 
 
 

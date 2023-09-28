@@ -1,5 +1,8 @@
 # class CoordinateReferenceSystem
 
+```cpp
+Defined at ../../include/geode/mesh/core/coordinate_reference_system.h#46
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void ~CoordinateReferenceSystem<>()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/coordinate_reference_system.h#51
+```
 
 ### type_name
 
@@ -34,6 +40,9 @@ public void set_point(index_t point_id, Point<dimension> point)
 public void register_coordinate_reference_system_type(PContext & context, string_view name)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/coordinate_reference_system.h#61
+```
 
 ### CoordinateReferenceSystem
 
@@ -41,6 +50,9 @@ public void register_coordinate_reference_system_type(PContext & context, string
 protected void CoordinateReferenceSystem<>()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/coordinate_reference_system.h#69
+```
 
 
 

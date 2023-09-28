@@ -1,5 +1,8 @@
 # class PointSetInput
 
+```cpp
+Defined at ../../include/geode/mesh/io/point_set_input.h#60
+```
 
 ```cpp
 Inherits from Input<std::unique_ptr<PointSet<dimension> >, MeshImpl>
@@ -15,6 +18,9 @@ Inherits from Input<std::unique_ptr<PointSet<dimension> >, MeshImpl>
 protected void PointSetInput<dimension>(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/point_set_input.h#70
+```
 
 
 

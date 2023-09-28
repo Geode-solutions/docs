@@ -1,5 +1,8 @@
 # class IncidentLineRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/brep.h#129
+```
 
 ```cpp
 Inherits from IncidenceRangeIterator
@@ -15,6 +18,9 @@ Inherits from IncidenceRangeIterator
 public void IncidentLineRange(const BRep & brep, const Corner3D & corner)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#195
+```
 
 ### IncidentLineRange
 
@@ -22,6 +28,9 @@ public void IncidentLineRange(const BRep & brep, const Corner3D & corner)
 public void IncidentLineRange(const IncidentLineRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#202
+```
 
 ### ~IncidentLineRange
 
@@ -29,6 +38,9 @@ public void IncidentLineRange(const IncidentLineRange & range)
 public void ~IncidentLineRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#207
+```
 
 ### begin
 
@@ -36,6 +48,9 @@ public void ~IncidentLineRange()
 public const IncidentLineRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#209
+```
 
 ### end
 
@@ -43,6 +58,9 @@ public const IncidentLineRange & begin()
 public const IncidentLineRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#214
+```
 
 ### operator*
 
@@ -50,6 +68,9 @@ public const IncidentLineRange & end()
 public const Line3D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#219
+```
 
 
 

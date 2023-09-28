@@ -6,6 +6,9 @@
 
 # class RasterImage
 
+```cpp
+Defined at ../../include/geode/image/core/raster_image.h#40
+```
 
 ```cpp
 Inherits from CellArray<dimension>, Identifier
@@ -27,6 +30,9 @@ Impl
 public void RasterImage<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#82
+```
 
 ### RasterImage
 
@@ -34,6 +40,9 @@ public void RasterImage<dimension>()
 public void RasterImage<dimension>(std::array<index_t, dimension> cells_number)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#92
+```
 
 ### RasterImage
 
@@ -41,6 +50,9 @@ public void RasterImage<dimension>(std::array<index_t, dimension> cells_number)
 public void RasterImage<dimension>(RasterImage<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#100
+```
 
 ### operator=
 
@@ -48,6 +60,9 @@ public void RasterImage<dimension>(RasterImage<dimension> && other)
 public RasterImage<dimension> & operator=(RasterImage<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#108
+```
 
 ### ~RasterImage
 
@@ -55,6 +70,9 @@ public RasterImage<dimension> & operator=(RasterImage<dimension> && other)
 public void ~RasterImage<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#87
+```
 
 ### native_extension_static
 
@@ -62,6 +80,9 @@ public void ~RasterImage<dimension>()
 public basic_string native_extension_static()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/raster_image.h#54
+```
 
 ### native_extension
 
@@ -69,6 +90,9 @@ public basic_string native_extension_static()
 public basic_string native_extension()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/raster_image.h#61
+```
 
 ### cell_index
 
@@ -76,6 +100,9 @@ public basic_string native_extension()
 public index_t cell_index(const CellIndices & index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#117
+```
 
 ### cell_indices
 
@@ -83,6 +110,9 @@ public index_t cell_index(const CellIndices & index)
 public CellIndices cell_indices(index_t index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#124
+```
 
 ### color
 
@@ -90,6 +120,9 @@ public CellIndices cell_indices(index_t index)
 public const RGBColor & color(index_t index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#131
+```
 
 ### set_color
 
@@ -97,6 +130,9 @@ public const RGBColor & color(index_t index)
 public void set_color(index_t index, RGBColor color)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#137
+```
 
 ### clone
 
@@ -104,6 +140,9 @@ public void set_color(index_t index, RGBColor color)
 public RasterImage clone()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/image/core/raster_image.cpp#143
+```
 
 
 

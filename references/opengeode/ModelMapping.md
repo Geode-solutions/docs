@@ -1,5 +1,8 @@
 # class ModelMapping
 
+```cpp
+Defined at ../../include/geode/model/representation/core/mapping.h#40
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public MappingType & at(const ComponentType & type)
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/core/mapping.h#45
+```
 
 ### at
 
@@ -16,13 +22,19 @@ public MappingType & at(const ComponentType & type)
 public const MappingType & at(const ComponentType & type)
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/core/mapping.h#50
+```
 
 ### has_mapping_type
 
 ```cpp
-public _Bool has_mapping_type(const ComponentType & type)
+public bool has_mapping_type(const ComponentType & type)
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/core/mapping.h#55
+```
 
 ### emplace
 
@@ -30,6 +42,9 @@ public _Bool has_mapping_type(const ComponentType & type)
 public void emplace(const ComponentType & type, MappingType mapping)
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/core/mapping.h#60
+```
 
 ### remove
 
@@ -37,6 +52,9 @@ public void emplace(const ComponentType & type, MappingType mapping)
 public void remove(const ComponentType & type)
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/core/mapping.h#69
+```
 
 ### operator[]
 
@@ -44,6 +62,9 @@ public void remove(const ComponentType & type)
 public MappingType & operator[](const ComponentType & type)
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/core/mapping.h#74
+```
 
 
 

@@ -1,5 +1,8 @@
 # class Texture
 
+```cpp
+Defined at ../../include/geode/mesh/core/texture2d.h#43
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void Texture(const Texture<2> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/texture2d.h#46
+```
 
 ### operator=
 
@@ -22,6 +28,9 @@ public void Texture(const Texture<2> & )
 public Texture<2> & operator=(const Texture<2> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/texture2d.h#46
+```
 
 ### Texture
 
@@ -29,6 +38,9 @@ public Texture<2> & operator=(const Texture<2> & )
 public void Texture(AttributeManager & manager, string_view name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture2d.cpp#73
+```
 
 ### Texture
 
@@ -36,6 +48,9 @@ public void Texture(AttributeManager & manager, string_view name)
 public void Texture(Texture<2> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture2d.cpp#78
+```
 
 ### ~Texture
 
@@ -43,6 +58,9 @@ public void Texture(Texture<2> && other)
 public void ~Texture()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture2d.cpp#84
+```
 
 ### image
 
@@ -50,6 +68,9 @@ public void ~Texture()
 public const RasterImage2D & image()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture2d.cpp#86
+```
 
 ### set_image
 
@@ -57,6 +78,9 @@ public const RasterImage2D & image()
 public void set_image(RasterImage2D && image)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture2d.cpp#91
+```
 
 ### texture_coordinates
 
@@ -64,6 +88,9 @@ public void set_image(RasterImage2D && image)
 public const Point2D & texture_coordinates(const PolygonVertex & vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture2d.cpp#96
+```
 
 ### set_texture_coordinates
 
@@ -71,6 +98,9 @@ public const Point2D & texture_coordinates(const PolygonVertex & vertex)
 public void set_texture_coordinates(const PolygonVertex & vertex, const Point2D & coordinates)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture2d.cpp#102
+```
 
 
 
@@ -78,6 +108,9 @@ public void set_texture_coordinates(const PolygonVertex & vertex, const Point2D 
 
 # class Texture
 
+```cpp
+Defined at ../../include/geode/mesh/core/texture3d.h#43
+```
 
 ## Records
 
@@ -93,6 +126,9 @@ Impl
 public void Texture(const Texture<3> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/texture3d.h#46
+```
 
 ### operator=
 
@@ -100,6 +136,9 @@ public void Texture(const Texture<3> & )
 public Texture<3> & operator=(const Texture<3> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/texture3d.h#46
+```
 
 ### Texture
 
@@ -107,6 +146,9 @@ public Texture<3> & operator=(const Texture<3> & )
 public void Texture(AttributeManager & manager, string_view name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture3d.cpp#74
+```
 
 ### Texture
 
@@ -114,6 +156,9 @@ public void Texture(AttributeManager & manager, string_view name)
 public void Texture(Texture<3> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture3d.cpp#79
+```
 
 ### ~Texture
 
@@ -121,6 +166,9 @@ public void Texture(Texture<3> && other)
 public void ~Texture()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture3d.cpp#85
+```
 
 ### image
 
@@ -128,6 +176,9 @@ public void ~Texture()
 public const RasterImage3D & image()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture3d.cpp#87
+```
 
 ### set_image
 
@@ -135,6 +186,9 @@ public const RasterImage3D & image()
 public void set_image(RasterImage3D && image)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture3d.cpp#92
+```
 
 ### texture_coordinates
 
@@ -142,6 +196,9 @@ public void set_image(RasterImage3D && image)
 public const Point3D & texture_coordinates(const PolyhedronVertex & vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture3d.cpp#97
+```
 
 ### set_texture_coordinates
 
@@ -149,11 +206,17 @@ public const Point3D & texture_coordinates(const PolyhedronVertex & vertex)
 public void set_texture_coordinates(const PolyhedronVertex & vertex, const Point3D & coordinates)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture3d.cpp#103
+```
 
 
 
 # class Texture
 
+```cpp
+Defined at ../../include/geode/mesh/core/texture1d.h#43
+```
 
 ## Records
 
@@ -169,6 +232,9 @@ Impl
 public void Texture(const Texture<1> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/texture1d.h#46
+```
 
 ### operator=
 
@@ -176,6 +242,9 @@ public void Texture(const Texture<1> & )
 public Texture<1> & operator=(const Texture<1> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/texture1d.h#46
+```
 
 ### Texture
 
@@ -183,6 +252,9 @@ public Texture<1> & operator=(const Texture<1> & )
 public void Texture(AttributeManager & manager, string_view name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture1d.cpp#72
+```
 
 ### Texture
 
@@ -190,6 +262,9 @@ public void Texture(AttributeManager & manager, string_view name)
 public void Texture(Texture<1> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture1d.cpp#77
+```
 
 ### ~Texture
 
@@ -197,6 +272,9 @@ public void Texture(Texture<1> && other)
 public void ~Texture()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture1d.cpp#83
+```
 
 ### image
 
@@ -204,6 +282,9 @@ public void ~Texture()
 public const RasterImage1D & image()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture1d.cpp#85
+```
 
 ### set_image
 
@@ -211,6 +292,9 @@ public const RasterImage1D & image()
 public void set_image(RasterImage1D && image)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture1d.cpp#90
+```
 
 ### texture_coordinates
 
@@ -218,6 +302,9 @@ public void set_image(RasterImage1D && image)
 public const Point1D & texture_coordinates(const EdgeVertex & vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture1d.cpp#95
+```
 
 ### set_texture_coordinates
 
@@ -225,6 +312,9 @@ public const Point1D & texture_coordinates(const EdgeVertex & vertex)
 public void set_texture_coordinates(const EdgeVertex & vertex, const Point1D & coordinates)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/texture1d.cpp#101
+```
 
 
 

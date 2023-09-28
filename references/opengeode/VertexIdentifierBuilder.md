@@ -1,5 +1,8 @@
 # class VertexIdentifierBuilder
 
+```cpp
+Defined at ../../include/geode/model/mixin/builder/vertex_identifier_builder.h#36
+```
 
  Class managing modification of VertexIdentifier
 
@@ -13,6 +16,9 @@
 public void VertexIdentifierBuilder(VertexIdentifier & vertex_identifier)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/vertex_identifier_builder.cpp#28
+```
 
 ### register_mesh_component
 
@@ -20,6 +26,9 @@ public void VertexIdentifierBuilder(VertexIdentifier & vertex_identifier)
 public void register_mesh_component(const MeshComponent & component)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/builder/vertex_identifier_builder.h#45
+```
 
  Add a component in the VertexIdentifier
 
@@ -29,6 +38,9 @@ public void register_mesh_component(const MeshComponent & component)
 public void unregister_mesh_component(const MeshComponent & component)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/builder/vertex_identifier_builder.h#55
+```
 
  Remove a component from the VertexIdentifier and delete corresponding information (i.e. the attribute on component mesh).
 
@@ -38,6 +50,9 @@ public void unregister_mesh_component(const MeshComponent & component)
 public index_t create_unique_vertex()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/vertex_identifier_builder.cpp#34
+```
 
  Create an empty unique vertex.
 
@@ -49,6 +64,9 @@ public index_t create_unique_vertex()
 public index_t create_unique_vertices(index_t nb)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/vertex_identifier_builder.cpp#39
+```
 
  Create several empty unique vertices
 
@@ -60,6 +78,9 @@ public index_t create_unique_vertices(index_t nb)
 public void set_unique_vertex(ComponentMeshVertex component_vertex_id, index_t unique_vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/vertex_identifier_builder.cpp#44
+```
 
  Identify a component vertex to an existing unique vertex index.
 
@@ -73,6 +94,9 @@ public void set_unique_vertex(ComponentMeshVertex component_vertex_id, index_t u
 public void unset_unique_vertex(const ComponentMeshVertex & component_vertex_id, index_t unique_vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/vertex_identifier_builder.cpp#51
+```
 
  Remove a component vertex to its unique vertex index.
 
@@ -86,6 +110,9 @@ public void unset_unique_vertex(const ComponentMeshVertex & component_vertex_id,
 public void update_unique_vertices(const ComponentID & component_id, absl::Span<const index_t> old2new)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/vertex_identifier_builder.cpp#59
+```
 
  Remove a component vertex to its unique vertex index.
 
@@ -99,6 +126,9 @@ public void update_unique_vertices(const ComponentID & component_id, absl::Span<
 public void load_unique_vertices(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/vertex_identifier_builder.cpp#65
+```
 
  Load the VertexIdentifier from a file.
 
@@ -110,6 +140,9 @@ public void load_unique_vertices(string_view directory)
 public std::vector<index_t> delete_isolated_vertices()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/vertex_identifier_builder.cpp#71
+```
 
  Delete all unique vertices not associated with any component
 

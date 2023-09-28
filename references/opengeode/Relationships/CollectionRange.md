@@ -1,5 +1,8 @@
 # class CollectionRange
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#328
+```
 
 ```cpp
 Inherits from CollectionRangeIterator
@@ -15,6 +18,9 @@ Inherits from CollectionRangeIterator
 public void CollectionRange(const Relationships & relationships, const uuid & component_id)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#332
+```
 
 ### begin
 
@@ -22,6 +28,9 @@ public void CollectionRange(const Relationships & relationships, const uuid & co
 public const CollectionRange & begin()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#338
+```
 
 ### end
 
@@ -29,6 +38,9 @@ public const CollectionRange & begin()
 public const CollectionRange & end()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#343
+```
 
 
 

@@ -1,5 +1,8 @@
 # class GridImpl
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/grid_impl.h#43
+```
 
 ```cpp
 Inherits from ArrayImpl<dimension>
@@ -15,6 +18,9 @@ Inherits from ArrayImpl<dimension>
 public index_t vertex_index(const Grid<dimension> & grid, const VertexIndices & index)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/grid_impl.h#49
+```
 
 ### vertex_indices
 
@@ -22,6 +28,9 @@ public index_t vertex_index(const Grid<dimension> & grid, const VertexIndices & 
 public VertexIndices vertex_indices(const Grid<dimension> & grid, index_t index)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/grid_impl.h#69
+```
 
 ### do_update_origin
 

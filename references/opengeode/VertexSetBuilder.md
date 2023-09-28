@@ -1,5 +1,8 @@
 # class VertexSetBuilder
 
+```cpp
+Defined at ../../include/geode/mesh/builder/vertex_set_builder.h#46
+```
 
  Interface class to represent the builder of a VertexSet
 
@@ -19,6 +22,9 @@ Inherits from IdentifierBuilder
 public void VertexSetBuilder(const VertexSetBuilder & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/builder/vertex_set_builder.h#48
+```
 
 ### operator=
 
@@ -26,6 +32,9 @@ public void VertexSetBuilder(const VertexSetBuilder & )
 public VertexSetBuilder & operator=(const VertexSetBuilder & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/builder/vertex_set_builder.h#48
+```
 
 ### VertexSetBuilder
 
@@ -33,6 +42,9 @@ public VertexSetBuilder & operator=(const VertexSetBuilder & )
 public void VertexSetBuilder(VertexSetBuilder && )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/builder/vertex_set_builder.h#48
+```
 
 ### operator=
 
@@ -40,6 +52,9 @@ public void VertexSetBuilder(VertexSetBuilder && )
 public VertexSetBuilder & operator=(VertexSetBuilder && )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/builder/vertex_set_builder.h#48
+```
 
 ### ~VertexSetBuilder
 
@@ -47,6 +62,9 @@ public VertexSetBuilder & operator=(VertexSetBuilder && )
 public void ~VertexSetBuilder()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/builder/vertex_set_builder.h#51
+```
 
 ### create
 
@@ -54,6 +72,9 @@ public void ~VertexSetBuilder()
 public std::unique_ptr<VertexSetBuilder> create(VertexSet & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/vertex_set_builder.cpp#38
+```
 
  Create the builder associated with a VertexSet.
 
@@ -65,6 +86,9 @@ public std::unique_ptr<VertexSetBuilder> create(VertexSet & mesh)
 public index_t create_vertex()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/vertex_set_builder.cpp#56
+```
 
  Create a new vertex.
 
@@ -76,6 +100,9 @@ public index_t create_vertex()
 public index_t create_vertices(index_t nb)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/vertex_set_builder.cpp#64
+```
 
  Create a set of vertices.
 
@@ -86,9 +113,12 @@ public index_t create_vertices(index_t nb)
 ### delete_vertices
 
 ```cpp
-public std::vector<index_t> delete_vertices(const std::vector<_Bool> & to_delete)
+public std::vector<index_t> delete_vertices(const std::vector<bool> & to_delete)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/vertex_set_builder.cpp#73
+```
 
  Delete a set of vertices.
 
@@ -102,6 +132,9 @@ public std::vector<index_t> delete_vertices(const std::vector<_Bool> & to_delete
 public std::vector<index_t> permute_vertices(absl::Span<const index_t> permutation)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/vertex_set_builder.cpp#86
+```
 
  Permute vertices to match the given order.
 
@@ -115,6 +148,9 @@ public std::vector<index_t> permute_vertices(absl::Span<const index_t> permutati
 protected void VertexSetBuilder(VertexSet & vertex_set)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/vertex_set_builder.cpp#33
+```
 
 ### copy
 
@@ -122,6 +158,9 @@ protected void VertexSetBuilder(VertexSet & vertex_set)
 protected void copy(const VertexSet & vertex_set)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/vertex_set_builder.cpp#45
+```
 
 ### do_create_vertex
 

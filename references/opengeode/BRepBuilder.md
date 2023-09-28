@@ -1,5 +1,8 @@
 # class BRepBuilder
 
+```cpp
+Defined at ../../include/geode/model/representation/builder/brep_builder.h#73
+```
 
  Class managing modification of a BRep**extends** **extends** **extends** **extends** **extends** 
 
@@ -19,6 +22,9 @@ Inherits from TopologyBuilder, CornersBuilder3D, LinesBuilder3D, SurfacesBuilder
 public void BRepBuilder(const BRepBuilder & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/builder/brep_builder.h#81
+```
 
 ### operator=
 
@@ -26,6 +32,9 @@ public void BRepBuilder(const BRepBuilder & )
 public BRepBuilder & operator=(const BRepBuilder & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/builder/brep_builder.h#81
+```
 
 ### BRepBuilder
 
@@ -33,6 +42,9 @@ public BRepBuilder & operator=(const BRepBuilder & )
 public void BRepBuilder(BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#42
+```
 
 ### BRepBuilder
 
@@ -40,6 +52,9 @@ public void BRepBuilder(BRep & brep)
 public void BRepBuilder(BRepBuilder && other)
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/builder/brep_builder.h#87
+```
 
 ### copy
 
@@ -47,6 +62,9 @@ public void BRepBuilder(BRepBuilder && other)
 public ModelCopyMapping copy(const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#54
+```
 
 ### copy_components
 
@@ -54,6 +72,9 @@ public ModelCopyMapping copy(const BRep & brep)
 public ModelCopyMapping copy_components(const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#70
+```
 
 ### copy_components
 
@@ -61,6 +82,9 @@ public ModelCopyMapping copy_components(const BRep & brep)
 public void copy_components(ModelCopyMapping & mapping, const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#86
+```
 
 ### copy_component_geometry
 
@@ -68,6 +92,9 @@ public void copy_components(ModelCopyMapping & mapping, const BRep & brep)
 public void copy_component_geometry(const ModelCopyMapping & mapping, const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#101
+```
 
 ### add_corner
 
@@ -75,6 +102,9 @@ public void copy_component_geometry(const ModelCopyMapping & mapping, const BRep
 public const uuid & add_corner()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#118
+```
 
 ### add_corner
 
@@ -82,6 +112,9 @@ public const uuid & add_corner()
 public const uuid & add_corner(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#125
+```
 
 ### add_line
 
@@ -89,6 +122,9 @@ public const uuid & add_corner(const MeshImpl & impl)
 public const uuid & add_line()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#132
+```
 
 ### add_line
 
@@ -96,6 +132,9 @@ public const uuid & add_line()
 public const uuid & add_line(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#139
+```
 
 ### add_surface
 
@@ -103,6 +142,9 @@ public const uuid & add_line(const MeshImpl & impl)
 public const uuid & add_surface()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#146
+```
 
 ### add_surface
 
@@ -110,6 +152,9 @@ public const uuid & add_surface()
 public const uuid & add_surface(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#153
+```
 
 ### add_block
 
@@ -117,6 +162,9 @@ public const uuid & add_surface(const MeshImpl & impl)
 public const uuid & add_block()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#160
+```
 
 ### add_block
 
@@ -124,6 +172,9 @@ public const uuid & add_block()
 public const uuid & add_block(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#167
+```
 
 ### add_model_boundary
 
@@ -131,6 +182,9 @@ public const uuid & add_block(const MeshImpl & impl)
 public const uuid & add_model_boundary()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#174
+```
 
 ### add_corner
 
@@ -138,6 +192,9 @@ public const uuid & add_model_boundary()
 public void add_corner(uuid corner_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#180
+```
 
 ### add_corner
 
@@ -145,6 +202,9 @@ public void add_corner(uuid corner_id)
 public void add_corner(uuid corner_id, const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#185
+```
 
 ### add_line
 
@@ -152,6 +212,9 @@ public void add_corner(uuid corner_id, const MeshImpl & impl)
 public void add_line(uuid line_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#190
+```
 
 ### add_line
 
@@ -159,6 +222,9 @@ public void add_line(uuid line_id)
 public void add_line(uuid line_id, const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#195
+```
 
 ### add_surface
 
@@ -166,6 +232,9 @@ public void add_line(uuid line_id, const MeshImpl & impl)
 public void add_surface(uuid surface_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#200
+```
 
 ### add_surface
 
@@ -173,6 +242,9 @@ public void add_surface(uuid surface_id)
 public void add_surface(uuid surface_id, const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#205
+```
 
 ### add_block
 
@@ -180,6 +252,9 @@ public void add_surface(uuid surface_id, const MeshImpl & impl)
 public void add_block(uuid block_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#210
+```
 
 ### add_block
 
@@ -187,6 +262,9 @@ public void add_block(uuid block_id)
 public void add_block(uuid block_id, const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#215
+```
 
 ### add_model_boundary
 
@@ -194,6 +272,9 @@ public void add_block(uuid block_id, const MeshImpl & impl)
 public void add_model_boundary(uuid model_boundary_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#220
+```
 
 ### update_corner_mesh
 
@@ -201,6 +282,9 @@ public void add_model_boundary(uuid model_boundary_id)
 public void update_corner_mesh(const Corner3D & corner, std::unique_ptr<PointSet3D> mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#225
+```
 
 ### update_line_mesh
 
@@ -208,6 +292,9 @@ public void update_corner_mesh(const Corner3D & corner, std::unique_ptr<PointSet
 public void update_line_mesh(const Line3D & line, std::unique_ptr<EdgedCurve3D> mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#233
+```
 
 ### update_surface_mesh
 
@@ -215,6 +302,9 @@ public void update_line_mesh(const Line3D & line, std::unique_ptr<EdgedCurve3D> 
 public void update_surface_mesh(const Surface3D & surface, unique_ptr mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#241
+```
 
 ### update_block_mesh
 
@@ -222,6 +312,9 @@ public void update_surface_mesh(const Surface3D & surface, unique_ptr mesh)
 public void update_block_mesh(const Block3D & block, unique_ptr mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#249
+```
 
 ### remove_corner
 
@@ -229,6 +322,9 @@ public void update_block_mesh(const Block3D & block, unique_ptr mesh)
 public void remove_corner(const Corner3D & corner)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#257
+```
 
 ### remove_line
 
@@ -236,6 +332,9 @@ public void remove_corner(const Corner3D & corner)
 public void remove_line(const Line3D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#264
+```
 
 ### remove_surface
 
@@ -243,6 +342,9 @@ public void remove_line(const Line3D & line)
 public void remove_surface(const Surface3D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#271
+```
 
 ### remove_block
 
@@ -250,6 +352,9 @@ public void remove_surface(const Surface3D & surface)
 public void remove_block(const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#278
+```
 
 ### remove_model_boundary
 
@@ -257,6 +362,9 @@ public void remove_block(const Block3D & block)
 public void remove_model_boundary(const ModelBoundary3D & boundary)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#285
+```
 
 ### add_corner_line_boundary_relationship
 
@@ -264,6 +372,9 @@ public void remove_model_boundary(const ModelBoundary3D & boundary)
 public void add_corner_line_boundary_relationship(const Corner3D & corner, const Line3D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#291
+```
 
 ### add_line_surface_boundary_relationship
 
@@ -271,6 +382,9 @@ public void add_corner_line_boundary_relationship(const Corner3D & corner, const
 public void add_line_surface_boundary_relationship(const Line3D & line, const Surface3D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#297
+```
 
 ### add_surface_block_boundary_relationship
 
@@ -278,6 +392,9 @@ public void add_line_surface_boundary_relationship(const Line3D & line, const Su
 public void add_surface_block_boundary_relationship(const Surface3D & surface, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#303
+```
 
 ### add_corner_surface_internal_relationship
 
@@ -285,6 +402,9 @@ public void add_surface_block_boundary_relationship(const Surface3D & surface, c
 public void add_corner_surface_internal_relationship(const Corner3D & corner, const Surface3D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#315
+```
 
 ### add_line_surface_internal_relationship
 
@@ -292,6 +412,9 @@ public void add_corner_surface_internal_relationship(const Corner3D & corner, co
 public void add_line_surface_internal_relationship(const Line3D & line, const Surface3D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#309
+```
 
 ### add_corner_block_internal_relationship
 
@@ -299,6 +422,9 @@ public void add_line_surface_internal_relationship(const Line3D & line, const Su
 public void add_corner_block_internal_relationship(const Corner3D & corner, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#321
+```
 
 ### add_line_block_internal_relationship
 
@@ -306,6 +432,9 @@ public void add_corner_block_internal_relationship(const Corner3D & corner, cons
 public void add_line_block_internal_relationship(const Line3D & line, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#327
+```
 
 ### add_surface_block_internal_relationship
 
@@ -313,6 +442,9 @@ public void add_line_block_internal_relationship(const Line3D & line, const Bloc
 public void add_surface_block_internal_relationship(const Surface3D & surface, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#333
+```
 
 ### add_surface_in_model_boundary
 
@@ -320,6 +452,9 @@ public void add_surface_block_internal_relationship(const Surface3D & surface, c
 public void add_surface_in_model_boundary(const Surface3D & surface, const ModelBoundary3D & boundary)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/builder/brep_builder.cpp#339
+```
 
 
 

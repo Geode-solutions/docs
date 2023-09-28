@@ -1,5 +1,8 @@
 # class Plane
 
+```cpp
+Defined at ../../include/geode/geometry/basic_objects/plane.h#73
+```
 
 ```cpp
 Inherits from GenericPlane<RefPoint3D>
@@ -15,6 +18,9 @@ Inherits from GenericPlane<RefPoint3D>
 public void Plane(const Vector3D & normal, const Point3D & origin)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#99
+```
 
 ### Plane
 
@@ -22,6 +28,9 @@ public void Plane(const Vector3D & normal, const Point3D & origin)
 public void Plane(const Plane & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#103
+```
 
 ### Plane
 
@@ -29,6 +38,9 @@ public void Plane(const Plane & other)
 public void Plane(const OwnerPlane & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#104
+```
 
 ### operator=
 
@@ -36,6 +48,9 @@ public void Plane(const OwnerPlane & other)
 public Plane & operator=(const Plane & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#108
+```
 
 ### Plane
 
@@ -43,6 +58,9 @@ public Plane & operator=(const Plane & other)
 public void Plane(Plane && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#113
+```
 
 ### operator=
 
@@ -50,6 +68,9 @@ public void Plane(Plane && other)
 public Plane & operator=(Plane && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#114
+```
 
 
 

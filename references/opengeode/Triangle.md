@@ -4,6 +4,9 @@
 
 # class Triangle
 
+```cpp
+Defined at ../../include/geode/geometry/basic_objects/triangle.h#102
+```
 
 ```cpp
 Inherits from GenericTriangle<RefPoint<dimension>, dimension>
@@ -19,6 +22,9 @@ Inherits from GenericTriangle<RefPoint<dimension>, dimension>
 public void Triangle<dimension>(const Point<dimension> & p0, const Point<dimension> & p1, const Point<dimension> & p2)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#297
+```
 
 ### Triangle
 
@@ -26,6 +32,9 @@ public void Triangle<dimension>(const Point<dimension> & p0, const Point<dimensi
 public void Triangle<dimension>(const Triangle<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#304
+```
 
 ### Triangle
 
@@ -33,6 +42,9 @@ public void Triangle<dimension>(const Triangle<dimension> & other)
 public void Triangle<dimension>(const OwnerTriangle<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#309
+```
 
 ### operator=
 
@@ -40,6 +52,9 @@ public void Triangle<dimension>(const OwnerTriangle<dimension> & other)
 public Triangle<dimension> & operator=(const Triangle<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#314
+```
 
 ### Triangle
 
@@ -47,6 +62,9 @@ public Triangle<dimension> & operator=(const Triangle<dimension> & other)
 public void Triangle<dimension>(Triangle<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#321
+```
 
 ### operator=
 
@@ -54,6 +72,9 @@ public void Triangle<dimension>(Triangle<dimension> && other)
 public Triangle<dimension> & operator=(Triangle<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#326
+```
 
 
 

@@ -1,5 +1,8 @@
 # class EdgesImpl
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/edges_impl.h#37
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void EdgesImpl(Graph & graph)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/edges_impl.h#40
+```
 
 ### get_edge_vertex
 
@@ -16,6 +22,9 @@ public void EdgesImpl(Graph & graph)
 public index_t get_edge_vertex(const EdgeVertex & edge_vertex)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/edges_impl.h#50
+```
 
 ### set_edge_vertex
 
@@ -23,6 +32,9 @@ public index_t get_edge_vertex(const EdgeVertex & edge_vertex)
 public void set_edge_vertex(const EdgeVertex & edge_vertex, const index_t vertex_id)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/edges_impl.h#56
+```
 
 ### register_attributes
 
@@ -30,6 +42,9 @@ public void set_edge_vertex(const EdgeVertex & edge_vertex, const index_t vertex
 public void register_attributes(Graph & graph)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/edges_impl.h#66
+```
 
 ### EdgesImpl
 
@@ -37,6 +52,9 @@ public void register_attributes(Graph & graph)
 protected void EdgesImpl()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/edges_impl.h#76
+```
 
 
 

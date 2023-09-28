@@ -1,5 +1,8 @@
 # class Lines
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/lines.h#43
+```
 
 ## Records
 
@@ -17,6 +20,9 @@ LineRange
 public void Lines<>(const Lines<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/lines.h#45
+```
 
 ### operator=
 
@@ -24,6 +30,9 @@ public void Lines<>(const Lines<> & )
 public Lines<> & operator=(const Lines<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/lines.h#45
+```
 
 ### ~Lines
 
@@ -31,6 +40,9 @@ public Lines<> & operator=(const Lines<> & )
 public void ~Lines<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#58
+```
 
 ### nb_lines
 
@@ -38,13 +50,19 @@ public void ~Lines<>()
 public index_t nb_lines()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#71
+```
 
 ### has_line
 
 ```cpp
-public _Bool has_line(const uuid & id)
+public bool has_line(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#77
+```
 
 ### line
 
@@ -52,6 +70,9 @@ public _Bool has_line(const uuid & id)
 public const Line<dimension> & line(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#83
+```
 
 ### lines
 
@@ -59,6 +80,9 @@ public const Line<dimension> & line(const uuid & id)
 public LineRange lines()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#150
+```
 
 ### save_lines
 
@@ -66,6 +90,9 @@ public LineRange lines()
 public void save_lines(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#95
+```
 
 ### Lines
 
@@ -73,6 +100,9 @@ public void save_lines(string_view directory)
 protected void Lines<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#47
+```
 
 ### Lines
 
@@ -80,6 +110,9 @@ protected void Lines<>()
 protected void Lines<>(Lines<> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#52
+```
 
 ### operator=
 
@@ -87,12 +120,21 @@ protected void Lines<>(Lines<> && other)
 protected Lines<> & operator=(Lines<> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#63
+```
 
 
 
 # class Lines
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#344
+```
 
 # class Lines
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#343
+```
 

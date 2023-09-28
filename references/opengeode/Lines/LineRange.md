@@ -1,5 +1,8 @@
 # class LineRange
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/lines.h#69
+```
 
 ```cpp
 Inherits from LineRangeBase
@@ -15,6 +18,9 @@ Inherits from LineRangeBase
 public void LineRange(const Lines<> & lines)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#268
+```
 
 ### LineRange
 
@@ -22,6 +28,9 @@ public void LineRange(const Lines<> & lines)
 public void LineRange(const LineRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#274
+```
 
 ### ~LineRange
 
@@ -29,6 +38,9 @@ public void LineRange(const LineRange & range)
 public void ~LineRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#280
+```
 
 ### begin
 
@@ -36,6 +48,9 @@ public void ~LineRange()
 public const LineRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#285
+```
 
 ### end
 
@@ -43,6 +58,9 @@ public const LineRange & begin()
 public const LineRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#291
+```
 
 ### operator*
 
@@ -50,6 +68,9 @@ public const LineRange & end()
 public const Line<dimension> & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#297
+```
 
 
 

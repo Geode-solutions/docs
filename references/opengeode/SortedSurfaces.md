@@ -1,10 +1,14 @@
 # struct SortedSurfaces
 
+```cpp
+Defined at ../../include/geode/model/helpers/surface_radial_sort.h#76
+```
 
 ## Members
 
 ```cpp
 public FixedArray surfaces
+
 ```
 
 
@@ -17,6 +21,9 @@ public FixedArray surfaces
 public void SortedSurfaces(index_t nb_surfaces)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/surface_radial_sort.cpp#174
+```
 
 ### find
 
@@ -24,6 +31,9 @@ public void SortedSurfaces(index_t nb_surfaces)
 public InlinedVector find(const SidedSurface & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/surface_radial_sort.cpp#199
+```
 
 ### opposite
 
@@ -31,6 +41,9 @@ public InlinedVector find(const SidedSurface & surface)
 public index_t opposite(index_t position)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/surface_radial_sort.cpp#179
+```
 
 ### next
 
@@ -38,6 +51,9 @@ public index_t opposite(index_t position)
 public index_t next(index_t position)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/surface_radial_sort.cpp#189
+```
 
 
 

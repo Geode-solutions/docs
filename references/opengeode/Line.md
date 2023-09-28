@@ -1,5 +1,8 @@
 # class Line
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#132
+```
 
 ```cpp
 Inherits from Component<3U>
@@ -9,6 +12,9 @@ Inherits from Component<3U>
 
 # class Line
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#48
+```
 
  Geometric component describing a Line. This component is described by a mesh.
 
@@ -28,6 +34,9 @@ Inherits from Component<dimension>
 public void Line<dimension>(const Line<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#50
+```
 
 ### operator=
 
@@ -35,6 +44,9 @@ public void Line<dimension>(const Line<dimension> & )
 public Line<dimension> & operator=(const Line<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#50
+```
 
 ### Line
 
@@ -42,6 +54,9 @@ public Line<dimension> & operator=(const Line<dimension> & )
 public void Line<dimension>(Line<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#66
+```
 
 ### ~Line
 
@@ -49,6 +64,9 @@ public void Line<dimension>(Line<dimension> && other)
 public void ~Line<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#54
+```
 
 ### component_type_static
 
@@ -56,6 +74,9 @@ public void ~Line<dimension>()
 public NamedType component_type_static()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#59
+```
 
 ### component_type
 
@@ -63,6 +84,9 @@ public NamedType component_type_static()
 public NamedType component_type()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#64
+```
 
 ### component_id
 
@@ -70,6 +94,9 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#69
+```
 
 ### mesh
 
@@ -77,6 +104,9 @@ public ComponentID component_id()
 public const EdgedCurve<dimension> & mesh()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#79
+```
 
 ### mesh_type
 
@@ -84,6 +114,9 @@ public const EdgedCurve<dimension> & mesh()
 public const MeshImpl & mesh_type()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#91
+```
 
 ### modifiable_mesh
 
@@ -91,6 +124,9 @@ public const MeshImpl & mesh_type()
 public EdgedCurve<dimension> & modifiable_mesh(LinesKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#78
+```
 
 ### Line
 
@@ -98,6 +134,9 @@ public EdgedCurve<dimension> & modifiable_mesh(LinesKey )
 public void Line<dimension>(LinesKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#84
+```
 
 ### Line
 
@@ -105,6 +144,9 @@ public void Line<dimension>(LinesKey )
 public void Line<dimension>(const MeshImpl & impl, LinesKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#86
+```
 
 ### set_mesh
 
@@ -112,6 +154,9 @@ public void Line<dimension>(const MeshImpl & impl, LinesKey )
 public void set_mesh(std::unique_ptr<EdgedCurve<dimension> > mesh, LinesKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#117
+```
 
 ### set_mesh
 
@@ -119,6 +164,9 @@ public void set_mesh(std::unique_ptr<EdgedCurve<dimension> > mesh, LinesKey )
 public void set_mesh(std::unique_ptr<EdgedCurve<dimension> > mesh, LinesBuilderKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#124
+```
 
 ### set_line_name
 
@@ -126,6 +174,9 @@ public void set_mesh(std::unique_ptr<EdgedCurve<dimension> > mesh, LinesBuilderK
 public void set_line_name(string_view name, LinesBuilderKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#94
+```
 
 ### modifiable_mesh
 
@@ -133,6 +184,9 @@ public void set_line_name(string_view name, LinesBuilderKey )
 public EdgedCurve<dimension> & modifiable_mesh(LinesBuilderKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/line.h#99
+```
 
 ### set_mesh
 
@@ -150,6 +204,9 @@ public void set_mesh(int mesh, LinesBuilderKey )
 
 # class Line
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#131
+```
 
 ```cpp
 Inherits from Component<2U>

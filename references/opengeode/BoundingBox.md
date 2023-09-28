@@ -2,20 +2,29 @@
 
 # class BoundingBox
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#459
+```
 
 ## Functions
 
 ### intersects
 
 ```cpp
-public _Bool intersects(const Triangle<3> & triangle)
+public bool intersects(const Triangle<3> & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#277
+```
 
 
 
 # class BoundingBox
 
+```cpp
+Defined at ../../include/geode/geometry/bounding_box.h#45
+```
 
  Bounding box implemented for 2D and 3D points.
 
@@ -29,6 +38,9 @@ public _Bool intersects(const Triangle<3> & triangle)
 public void BoundingBox<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#103
+```
 
 ### BoundingBox
 
@@ -36,6 +48,9 @@ public void BoundingBox<>()
 public void BoundingBox<>(Point<dimension> min, Point<dimension> max)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#113
+```
 
 ### BoundingBox
 
@@ -43,6 +58,9 @@ public void BoundingBox<>(Point<dimension> min, Point<dimension> max)
 public void BoundingBox<>(const BoundingBox<> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#125
+```
 
 ### operator=
 
@@ -50,6 +68,9 @@ public void BoundingBox<>(const BoundingBox<> & other)
 public BoundingBox<> & operator=(const BoundingBox<> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#131
+```
 
 ### BoundingBox
 
@@ -57,6 +78,9 @@ public BoundingBox<> & operator=(const BoundingBox<> & other)
 public void BoundingBox<>(BoundingBox<> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#140
+```
 
 ### operator=
 
@@ -64,6 +88,9 @@ public void BoundingBox<>(BoundingBox<> && other)
 public BoundingBox<> & operator=(BoundingBox<> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#146
+```
 
 ### ~BoundingBox
 
@@ -71,6 +98,9 @@ public BoundingBox<> & operator=(BoundingBox<> && other)
 public void ~BoundingBox<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#120
+```
 
 ### add_box
 
@@ -78,6 +108,9 @@ public void ~BoundingBox<>()
 public void add_box(const BoundingBox<dimension> & box)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#177
+```
 
 ### add_point
 
@@ -85,48 +118,66 @@ public void add_box(const BoundingBox<dimension> & box)
 public void add_point(const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#167
+```
 
 ### contains
 
 ```cpp
-public _Bool contains(const Point<dimension> & point)
+public bool contains(const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#185
+```
 
 ### intersects
 
 ```cpp
-public _Bool intersects(const BoundingBox<dimension> & bbox)
+public bool intersects(const BoundingBox<dimension> & bbox)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#200
+```
 
 ### intersects
 
 ```cpp
-public _Bool intersects(const Ray<dimension> & ray)
+public bool intersects(const Ray<dimension> & ray)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#215
+```
 
 ### intersects
 
 ```cpp
-public _Bool intersects(const InfiniteLine<dimension> & line)
+public bool intersects(const InfiniteLine<dimension> & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#235
+```
 
 ### intersects
 
 ```cpp
-public _Bool intersects(const Segment<dimension> & segment)
+public bool intersects(const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#242
+```
 
  Returns true if the element is crossing, is inside, or is containing the bbox
 
 ### intersects
 
 ```cpp
-public typename std::enable_if<T == 2 || T == 3, _Bool>::type intersects(const Triangle<T> & triangle)
+public typename std::enable_if<T == 2 || T == 3, bool>::type intersects(const Triangle<T> & triangle)
 ```
 
  Returns true if the element is crossing, is inside (or is containing the bbox in 2D)
@@ -134,9 +185,12 @@ public typename std::enable_if<T == 2 || T == 3, _Bool>::type intersects(const T
 ### intersects
 
 ```cpp
-public typename std::enable_if<T == 3, _Bool>::type intersects(const Tetrahedron & tetra)
+public typename std::enable_if<T == 3, bool>::type intersects(const Tetrahedron & tetra)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#382
+```
 
  Returns true if the element is crossing, is inside, or is containing the bbox
 
@@ -146,6 +200,9 @@ public typename std::enable_if<T == 3, _Bool>::type intersects(const Tetrahedron
 public double signed_distance(const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#421
+```
 
  Returns the distance between the point and the box. If the point is inside the box, the distance is negative.
 
@@ -155,6 +212,9 @@ public double signed_distance(const Point<dimension> & point)
 public const Point<dimension> & min()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#155
+```
 
 ### max
 
@@ -162,6 +222,9 @@ public const Point<dimension> & min()
 public const Point<dimension> & max()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#161
+```
 
 ### center
 
@@ -169,6 +232,9 @@ public const Point<dimension> & max()
 public Point<dimension> center()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#409
+```
 
 ### diagonal
 
@@ -176,6 +242,9 @@ public Point<dimension> center()
 public Vector<dimension> diagonal()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/bounding_box.cpp#415
+```
 
 
 

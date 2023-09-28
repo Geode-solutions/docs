@@ -1,5 +1,8 @@
 # class MappingBase
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#37
+```
 
 ## Functions
 
@@ -9,20 +12,29 @@
 public void reserve(index_t capacity)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#43
+```
 
 ### has_mapping_input
 
 ```cpp
-public _Bool has_mapping_input(const T1 & value)
+public bool has_mapping_input(const T1 & value)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#49
+```
 
 ### has_mapping_output
 
 ```cpp
-public _Bool has_mapping_output(const T2 & value)
+public bool has_mapping_output(const T2 & value)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#54
+```
 
 ### in2out
 
@@ -30,6 +42,9 @@ public _Bool has_mapping_output(const T2 & value)
 public const Storage<T2> & in2out(const T1 & in)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#59
+```
 
 ### out2in
 
@@ -37,6 +52,9 @@ public const Storage<T2> & in2out(const T1 & in)
 public const Storage<T1> & out2in(const T2 & out)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#64
+```
 
 ### in2out_map
 
@@ -44,6 +62,9 @@ public const Storage<T1> & out2in(const T2 & out)
 public const absl::flat_hash_map<T1, Storage<T2> > & in2out_map()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#69
+```
 
 ### out2in_map
 
@@ -51,6 +72,9 @@ public const absl::flat_hash_map<T1, Storage<T2> > & in2out_map()
 public const absl::flat_hash_map<T2, Storage<T1> > & out2in_map()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#74
+```
 
 ### MappingBase
 
@@ -58,6 +82,9 @@ public const absl::flat_hash_map<T2, Storage<T1> > & out2in_map()
 protected void MappingBase<T1, T2, StorageType>()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#80
+```
 
 ### size_input
 
@@ -65,6 +92,9 @@ protected void MappingBase<T1, T2, StorageType>()
 protected index_t size_input()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#82
+```
 
 ### size_output
 
@@ -72,6 +102,9 @@ protected index_t size_input()
 protected index_t size_output()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#87
+```
 
 ### in2out_mapping
 
@@ -79,6 +112,9 @@ protected index_t size_output()
 protected absl::flat_hash_map<T1, Storage<T2> > & in2out_mapping()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#92
+```
 
 ### out2in_mapping
 
@@ -86,6 +122,9 @@ protected absl::flat_hash_map<T1, Storage<T2> > & in2out_mapping()
 protected absl::flat_hash_map<T2, Storage<T1> > & out2in_mapping()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/mapping.h#97
+```
 
 
 

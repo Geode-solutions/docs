@@ -1,5 +1,8 @@
 # class LightRegularGrid
 
+```cpp
+Defined at ../../include/geode/mesh/core/light_regular_grid.h#41
+```
 
 ```cpp
 Inherits from Grid<dimension>, Identifier
@@ -21,6 +24,9 @@ Impl
 public void LightRegularGrid<dimension>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/light_regular_grid.cpp#75
+```
 
 ### LightRegularGrid
 
@@ -28,6 +34,9 @@ public void LightRegularGrid<dimension>(Point<dimension> origin, std::array<inde
 public void LightRegularGrid<dimension>(LightRegularGrid<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/light_regular_grid.cpp#88
+```
 
 ### ~LightRegularGrid
 
@@ -35,6 +44,9 @@ public void LightRegularGrid<dimension>(LightRegularGrid<dimension> && other)
 public void ~LightRegularGrid<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/light_regular_grid.cpp#96
+```
 
 ### vertex_index
 
@@ -48,6 +60,9 @@ public index_t vertex_index(const VertexIndices & index)
 public VertexIndices vertex_indices(index_t index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/light_regular_grid.cpp#108
+```
 
 ### cell_index
 
@@ -61,6 +76,9 @@ public index_t cell_index(const CellIndices & index)
 public CellIndices cell_indices(index_t index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/light_regular_grid.cpp#122
+```
 
 ### cell_attribute_manager
 
@@ -68,6 +86,9 @@ public CellIndices cell_indices(index_t index)
 public AttributeManager & cell_attribute_manager()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/light_regular_grid.cpp#129
+```
 
 ### grid_vertex_attribute_manager
 
@@ -75,6 +96,9 @@ public AttributeManager & cell_attribute_manager()
 public AttributeManager & grid_vertex_attribute_manager()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/light_regular_grid.cpp#136
+```
 
 ### vertex_index
 
@@ -82,6 +106,9 @@ public AttributeManager & grid_vertex_attribute_manager()
 public index_t vertex_index(const VertexIndices & index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/light_regular_grid.cpp#101
+```
 
 ### cell_index
 
@@ -89,6 +116,9 @@ public index_t vertex_index(const VertexIndices & index)
 public index_t cell_index(const CellIndices & index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/light_regular_grid.cpp#115
+```
 
 
 

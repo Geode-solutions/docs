@@ -1,5 +1,8 @@
 # class InfiniteLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#253
+```
 
 ```cpp
 Inherits from GenericLine<RefPoint<1U>, 1U>
@@ -9,6 +12,9 @@ Inherits from GenericLine<RefPoint<1U>, 1U>
 
 # class InfiniteLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#254
+```
 
 ```cpp
 Inherits from GenericLine<RefPoint<2U>, 2U>
@@ -18,6 +24,9 @@ Inherits from GenericLine<RefPoint<2U>, 2U>
 
 # class InfiniteLine
 
+```cpp
+Defined at ../../include/geode/geometry/basic_objects/infinite_line.h#105
+```
 
 ```cpp
 Inherits from GenericLine<RefPoint<dimension>, dimension>
@@ -33,6 +42,9 @@ Inherits from GenericLine<RefPoint<dimension>, dimension>
 public void InfiniteLine<>(const Vector<dimension> & direction, const Point<dimension> & origin)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#126
+```
 
 ### InfiniteLine
 
@@ -40,6 +52,9 @@ public void InfiniteLine<>(const Vector<dimension> & direction, const Point<dime
 public void InfiniteLine<>(const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#132
+```
 
 ### InfiniteLine
 
@@ -47,6 +62,9 @@ public void InfiniteLine<>(const Segment<dimension> & segment)
 public void InfiniteLine<>(const InfiniteLine<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#138
+```
 
 ### InfiniteLine
 
@@ -54,6 +72,9 @@ public void InfiniteLine<>(const InfiniteLine<dimension> & other)
 public void InfiniteLine<>(const OwnerInfiniteLine<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#144
+```
 
 ### operator=
 
@@ -61,6 +82,9 @@ public void InfiniteLine<>(const OwnerInfiniteLine<dimension> & other)
 public InfiniteLine<dimension> & operator=(const InfiniteLine<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#150
+```
 
 ### InfiniteLine
 
@@ -68,6 +92,9 @@ public InfiniteLine<dimension> & operator=(const InfiniteLine<dimension> & other
 public void InfiniteLine<>(InfiniteLine<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#157
+```
 
 ### operator=
 
@@ -75,11 +102,17 @@ public void InfiniteLine<>(InfiniteLine<dimension> && other)
 public InfiniteLine<dimension> & operator=(InfiniteLine<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#162
+```
 
 
 
 # class InfiniteLine
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#255
+```
 
 ```cpp
 Inherits from GenericLine<RefPoint<3U>, 3U>

@@ -1,5 +1,8 @@
 # class SquareMatrix
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#146
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public double determinant()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#79
+```
 
 ### inverse
 
@@ -16,11 +22,17 @@ public double determinant()
 public SquareMatrix inverse()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#123
+```
 
 
 
 # class SquareMatrix
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#145
+```
 
 ## Functions
 
@@ -30,6 +42,9 @@ public SquareMatrix inverse()
 public double determinant()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#73
+```
 
 ### inverse
 
@@ -37,11 +52,17 @@ public double determinant()
 public SquareMatrix inverse()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#107
+```
 
 
 
 # class SquareMatrix
 
+```cpp
+Defined at ../../include/geode/geometry/square_matrix.h#41
+```
 
  Description of a vector in the given dimension with double coordinates
 
@@ -55,6 +76,9 @@ public SquareMatrix inverse()
 public void SquareMatrix<dimension>()
 ```
 
+```cpp
+Defined at ../../include/geode/geometry/square_matrix.h#44
+```
 
 ### SquareMatrix
 
@@ -62,6 +86,9 @@ public void SquareMatrix<dimension>()
 public void SquareMatrix<dimension>(std::array<Vector<dimension>, dimension> matrix_rows)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#47
+```
 
 ### value
 
@@ -69,6 +96,9 @@ public void SquareMatrix<dimension>(std::array<Vector<dimension>, dimension> mat
 public double value(local_index_t row, local_index_t column)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#54
+```
 
 ### operator*
 
@@ -76,6 +106,9 @@ public double value(local_index_t row, local_index_t column)
 public Vector<dimension> operator*(const Vector<dimension> vector)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#61
+```
 
 ### determinant
 
@@ -89,6 +122,9 @@ public double determinant()
 public SquareMatrix transpose()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/square_matrix.cpp#93
+```
 
 ### inverse
 

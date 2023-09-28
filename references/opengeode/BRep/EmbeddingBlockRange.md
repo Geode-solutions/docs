@@ -1,5 +1,8 @@
 # class EmbeddingBlockRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/brep.h#266
+```
 
 ```cpp
 Inherits from EmbeddingRangeIterator
@@ -15,6 +18,9 @@ Inherits from EmbeddingRangeIterator
 public void EmbeddingBlockRange(const BRep & brep, const Corner3D & corner)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#523
+```
 
 ### EmbeddingBlockRange
 
@@ -22,6 +28,9 @@ public void EmbeddingBlockRange(const BRep & brep, const Corner3D & corner)
 public void EmbeddingBlockRange(const BRep & brep, const Line3D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#536
+```
 
 ### EmbeddingBlockRange
 
@@ -29,6 +38,9 @@ public void EmbeddingBlockRange(const BRep & brep, const Line3D & line)
 public void EmbeddingBlockRange(const BRep & brep, const Surface3D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#568
+```
 
 ### EmbeddingBlockRange
 
@@ -36,6 +48,9 @@ public void EmbeddingBlockRange(const BRep & brep, const Surface3D & surface)
 public void EmbeddingBlockRange(const EmbeddingBlockRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#544
+```
 
 ### ~EmbeddingBlockRange
 
@@ -43,6 +58,9 @@ public void EmbeddingBlockRange(const EmbeddingBlockRange & range)
 public void ~EmbeddingBlockRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#550
+```
 
 ### begin
 
@@ -50,6 +68,9 @@ public void ~EmbeddingBlockRange()
 public const EmbeddingBlockRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#552
+```
 
 ### end
 
@@ -57,6 +78,9 @@ public const EmbeddingBlockRange & begin()
 public const EmbeddingBlockRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#557
+```
 
 ### operator++
 
@@ -64,6 +88,9 @@ public const EmbeddingBlockRange & end()
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#576
+```
 
 ### operator*
 
@@ -71,6 +98,9 @@ public void operator++()
 public const Block3D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#582
+```
 
 
 

@@ -1,5 +1,8 @@
 # class LoggerClient
 
+```cpp
+Defined at ../../include/geode/basic/logger_client.h#30
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void ~LoggerClient()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/logger_client.h#33
+```
 
 ### trace
 
@@ -52,6 +58,9 @@ public void critical(const std::string & message)
 protected void LoggerClient()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/logger_client.h#48
+```
 
 
 

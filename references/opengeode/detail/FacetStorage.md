@@ -1,5 +1,8 @@
 # class FacetStorage
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#40
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void FacetStorage<VertexContainer>()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#47
+```
 
 ### facet_attribute_manager
 
@@ -16,6 +22,9 @@ public void FacetStorage<VertexContainer>()
 protected AttributeManager & facet_attribute_manager()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#61
+```
 
 ### find_facet
 
@@ -23,6 +32,9 @@ protected AttributeManager & facet_attribute_manager()
 public absl::optional<index_t> find_facet(TypedVertexCycle vertices)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#66
+```
 
 ### add_facet
 
@@ -30,6 +42,9 @@ public absl::optional<index_t> find_facet(TypedVertexCycle vertices)
 protected index_t add_facet(TypedVertexCycle vertices)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#77
+```
 
 ### remove_facet
 
@@ -37,6 +52,9 @@ protected index_t add_facet(TypedVertexCycle vertices)
 protected void remove_facet(TypedVertexCycle vertices)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#95
+```
 
 ### clean_facets
 
@@ -44,6 +62,9 @@ protected void remove_facet(TypedVertexCycle vertices)
 protected int clean_facets()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#111
+```
 
 ### delete_facets
 
@@ -51,6 +72,9 @@ protected int clean_facets()
 protected int delete_facets(const int & to_delete)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#123
+```
 
 ### update_facet_vertex
 
@@ -58,6 +82,9 @@ protected int delete_facets(const int & to_delete)
 protected void update_facet_vertex(VertexContainer facet_vertices, const index_t facet_vertex_id, const index_t new_vertex_id)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#146
+```
 
 ### update_facet_vertices
 
@@ -65,6 +92,9 @@ protected void update_facet_vertex(VertexContainer facet_vertices, const index_t
 protected int update_facet_vertices(Span old2new)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#156
+```
 
 ### get_facet_vertices
 
@@ -72,6 +102,9 @@ protected int update_facet_vertices(Span old2new)
 protected const VertexContainer & get_facet_vertices(index_t facet_id)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#195
+```
 
 ### attribute_name
 
@@ -79,6 +112,9 @@ protected const VertexContainer & get_facet_vertices(index_t facet_id)
 protected string_view attribute_name()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#201
+```
 
 ### update_attribute
 
@@ -86,6 +122,9 @@ protected string_view attribute_name()
 protected void update_attribute()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#206
+```
 
 ### get_counter
 
@@ -93,6 +132,9 @@ protected void update_attribute()
 protected index_t get_counter(index_t facet_id)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#214
+```
 
 ### overwrite
 
@@ -100,6 +142,9 @@ protected index_t get_counter(index_t facet_id)
 protected void overwrite(const FacetStorage<VertexContainer> & from)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/facet_storage.h#219
+```
 
 
 

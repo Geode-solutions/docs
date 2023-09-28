@@ -1,5 +1,8 @@
 # class Component
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/component.cpp#107
+```
 
 ```cpp
 Inherits from Identifier
@@ -9,6 +12,9 @@ Inherits from Identifier
 
 # class Component
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/component.cpp#106
+```
 
 ```cpp
 Inherits from Identifier
@@ -18,6 +24,9 @@ Inherits from Identifier
 
 # class Component
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component.h#43
+```
 
  This abstract class represents a component that can be used in assembly.
 
@@ -37,6 +46,9 @@ Inherits from Identifier
 public void Component<dimension>(const Component<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component.h#45
+```
 
 ### operator=
 
@@ -44,6 +56,9 @@ public void Component<dimension>(const Component<dimension> & )
 public Component<dimension> & operator=(const Component<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/component.h#45
+```
 
 ### Component
 
@@ -51,6 +66,9 @@ public Component<dimension> & operator=(const Component<dimension> & )
 public void Component<dimension>(Component<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/component.cpp#82
+```
 
 ### ~Component
 
@@ -58,6 +76,9 @@ public void Component<dimension>(Component<dimension> && other)
 public void ~Component<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/component.cpp#72
+```
 
 ### component_type
 
@@ -71,6 +92,9 @@ public NamedType component_type()
 protected void Component<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/component.cpp#77
+```
 
 
 

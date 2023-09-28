@@ -1,5 +1,8 @@
 # class OpenGeodeBRepOutput
 
+```cpp
+Defined at ../../include/geode/model/representation/io/geode/geode_brep_output.h#36
+```
 
 ```cpp
 Inherits from BRepOutput
@@ -15,6 +18,9 @@ Inherits from BRepOutput
 public void OpenGeodeBRepOutput(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/io/geode/geode_brep_output.h#39
+```
 
 ### extension
 
@@ -22,6 +28,9 @@ public void OpenGeodeBRepOutput(string_view filename)
 public string_view extension()
 ```
 
+```cpp
+Defined at ../../include/geode/model/representation/io/geode/geode_brep_output.h#44
+```
 
 ### archive_brep_files
 
@@ -29,6 +38,9 @@ public string_view extension()
 public void archive_brep_files(const ZipFile & zip_writer)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/geode/geode_brep_output.cpp#35
+```
 
 ### save_brep_files
 
@@ -36,6 +48,9 @@ public void archive_brep_files(const ZipFile & zip_writer)
 public void save_brep_files(const BRep & brep, string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/geode/geode_brep_output.cpp#45
+```
 
 ### write
 
@@ -43,6 +58,9 @@ public void save_brep_files(const BRep & brep, string_view directory)
 public void write(const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/geode/geode_brep_output.cpp#69
+```
 
 
 

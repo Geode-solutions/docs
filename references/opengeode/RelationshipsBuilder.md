@@ -1,5 +1,8 @@
 # class RelationshipsBuilder
 
+```cpp
+Defined at ../../include/geode/model/mixin/builder/relationships_builder.h#34
+```
 
  Class managing modification of Relationships
 
@@ -13,6 +16,9 @@
 public void RelationshipsBuilder(Relationships & relationships)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/relationships_builder.cpp#28
+```
 
 ### unregister_component
 
@@ -20,6 +26,9 @@ public void RelationshipsBuilder(Relationships & relationships)
 public void unregister_component(const uuid & component_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/relationships_builder.cpp#33
+```
 
  Remove a component from the set of components registered by the Relationships and all its associated relationships
 
@@ -31,6 +40,9 @@ public void unregister_component(const uuid & component_id)
 public index_t add_boundary_relation(const ComponentID & boundary, const ComponentID & incidence)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/relationships_builder.cpp#38
+```
 
  Add a new relationship of type boundary-incidence between two components
 
@@ -40,6 +52,9 @@ public index_t add_boundary_relation(const ComponentID & boundary, const Compone
 public index_t add_internal_relation(const ComponentID & internal, const ComponentID & embedding)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/relationships_builder.cpp#44
+```
 
  Add a new relationship of type internal-embedding between two components
 
@@ -49,6 +64,9 @@ public index_t add_internal_relation(const ComponentID & internal, const Compone
 public index_t add_item_in_collection(const ComponentID & item, const ComponentID & collection)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/relationships_builder.cpp#50
+```
 
  Add a new relationship of type item-collection between two components
 
@@ -58,6 +76,9 @@ public index_t add_item_in_collection(const ComponentID & item, const ComponentI
 public void remove_relation(const uuid & component_id1, const uuid & component_id2)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/relationships_builder.cpp#56
+```
 
  Remove a relationship between two components
 
@@ -67,6 +88,9 @@ public void remove_relation(const uuid & component_id1, const uuid & component_i
 public void copy_relationships(const ModelCopyMapping & mapping, const Relationships & relationships)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/relationships_builder.cpp#63
+```
 
 ### load_relationships
 
@@ -74,6 +98,9 @@ public void copy_relationships(const ModelCopyMapping & mapping, const Relations
 public void load_relationships(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/builder/relationships_builder.cpp#69
+```
 
 
 

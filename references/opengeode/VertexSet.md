@@ -1,5 +1,8 @@
 # class VertexSet
 
+```cpp
+Defined at ../../include/geode/mesh/core/vertex_set.h#43
+```
 
  Interface class to represent set of vertices.
 
@@ -19,6 +22,9 @@ Inherits from Identifier
 public void VertexSet(const VertexSet & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/vertex_set.h#45
+```
 
 ### operator=
 
@@ -26,6 +32,9 @@ public void VertexSet(const VertexSet & )
 public VertexSet & operator=(const VertexSet & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/vertex_set.h#45
+```
 
 ### create
 
@@ -33,6 +42,9 @@ public VertexSet & operator=(const VertexSet & )
 public std::unique_ptr<VertexSet> create()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#74
+```
 
  Create a new VertexSet
 
@@ -42,6 +54,9 @@ public std::unique_ptr<VertexSet> create()
 public std::unique_ptr<VertexSet> create(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#80
+```
 
  Create a new VertexSet using a specified data structure.
 
@@ -53,6 +68,9 @@ public std::unique_ptr<VertexSet> create(const MeshImpl & impl)
 public NamedType type_name_static()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#85
+```
 
 ### clone
 
@@ -60,6 +78,9 @@ public NamedType type_name_static()
 public std::unique_ptr<VertexSet> clone()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#115
+```
 
 ### ~VertexSet
 
@@ -67,6 +88,9 @@ public std::unique_ptr<VertexSet> clone()
 public void ~VertexSet()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#72
+```
 
 ### native_extension
 
@@ -80,6 +104,9 @@ public string_view native_extension()
 public index_t nb_vertices()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#90
+```
 
 ### vertex_attribute_manager
 
@@ -87,6 +114,9 @@ public index_t nb_vertices()
 public AttributeManager & vertex_attribute_manager()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#95
+```
 
  Access to the attribute manager. Attributes are associated with vertices.
 
@@ -108,6 +138,9 @@ public NamedType type_name()
 protected void VertexSet()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#58
+```
 
 ### VertexSet
 
@@ -115,6 +148,9 @@ protected void VertexSet()
 protected void VertexSet(VertexSet && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#60
+```
 
 ### operator=
 
@@ -122,6 +158,9 @@ protected void VertexSet(VertexSet && other)
 protected VertexSet & operator=(VertexSet && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/vertex_set.cpp#65
+```
 
 
 

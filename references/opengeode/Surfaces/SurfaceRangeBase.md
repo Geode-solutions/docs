@@ -1,10 +1,14 @@
 # class SurfaceRangeBase
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surfaces.h#51
+```
 
 ## Members
 
 ```cpp
 protected geode::PImpl<Impl> impl_
+
 ```
 
 
@@ -23,13 +27,19 @@ Impl
 public void ~SurfaceRangeBase()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#292
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const SurfaceRangeBase & )
+public bool operator!=(const SurfaceRangeBase & )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#297
+```
 
 ### operator++
 
@@ -37,6 +47,9 @@ public _Bool operator!=(const SurfaceRangeBase & )
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#304
+```
 
 ### SurfaceRangeBase
 
@@ -44,6 +57,9 @@ public void operator++()
 protected void SurfaceRangeBase(const Surfaces<> & surfaces)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#271
+```
 
 ### SurfaceRangeBase
 
@@ -51,6 +67,9 @@ protected void SurfaceRangeBase(const Surfaces<> & surfaces)
 protected void SurfaceRangeBase(SurfaceRangeBase && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#278
+```
 
 ### SurfaceRangeBase
 
@@ -58,6 +77,9 @@ protected void SurfaceRangeBase(SurfaceRangeBase && other)
 protected void SurfaceRangeBase(const SurfaceRangeBase & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#285
+```
 
 
 

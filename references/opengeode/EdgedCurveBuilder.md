@@ -1,5 +1,8 @@
 # class EdgedCurveBuilder
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/edged_curve_builder.cpp#82
+```
 
 ```cpp
 Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<2U>
@@ -9,6 +12,9 @@ Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<2U>
 
 # class EdgedCurveBuilder
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/edged_curve_builder.cpp#83
+```
 
 ```cpp
 Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<3U>
@@ -18,6 +24,9 @@ Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<3U>
 
 # class EdgedCurveBuilder
 
+```cpp
+Defined at ../../include/geode/mesh/builder/edged_curve_builder.h#42
+```
 
  Interface class to represent the builder of a EdgedCurve
 
@@ -37,6 +46,9 @@ Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<dimension>
 public std::unique_ptr<EdgedCurveBuilder<dimension> > create(EdgedCurve<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/edged_curve_builder.cpp#42
+```
 
  Create the builder associated with an EdgedCurve.
 
@@ -48,6 +60,9 @@ public std::unique_ptr<EdgedCurveBuilder<dimension> > create(EdgedCurve<dimensio
 public index_t create_point(Point<dimension> point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/edged_curve_builder.cpp#50
+```
 
  Create a new point with associated coordinates.
 
@@ -61,6 +76,9 @@ public index_t create_point(Point<dimension> point)
 public void copy(const EdgedCurve<dimension> & edged_curve)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/edged_curve_builder.cpp#60
+```
 
 ### EdgedCurveBuilder
 
@@ -68,6 +86,9 @@ public void copy(const EdgedCurve<dimension> & edged_curve)
 protected void EdgedCurveBuilder<dimension>(EdgedCurve<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/builder/edged_curve_builder.cpp#33
+```
 
 
 

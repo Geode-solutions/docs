@@ -1,5 +1,8 @@
 # class Surface
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surface.cpp#134
+```
 
 ```cpp
 Inherits from Component<3U>
@@ -9,6 +12,9 @@ Inherits from Component<3U>
 
 # class Surface
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surface.cpp#133
+```
 
 ```cpp
 Inherits from Component<2U>
@@ -18,6 +24,9 @@ Inherits from Component<2U>
 
 # class Surface
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#48
+```
 
  Geometric component describing a Surface. This component is described by a mesh.
 
@@ -37,6 +46,9 @@ Inherits from Component<dimension>
 public void Surface<dimension>(const Surface<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#50
+```
 
 ### operator=
 
@@ -44,6 +56,9 @@ public void Surface<dimension>(const Surface<dimension> & )
 public Surface<dimension> & operator=(const Surface<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#50
+```
 
 ### Surface
 
@@ -51,6 +66,9 @@ public Surface<dimension> & operator=(const Surface<dimension> & )
 public void Surface<dimension>(Surface<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surface.cpp#60
+```
 
 ### ~Surface
 
@@ -58,6 +76,9 @@ public void Surface<dimension>(Surface<dimension> && other)
 public void ~Surface<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surface.cpp#55
+```
 
 ### component_type_static
 
@@ -65,6 +86,9 @@ public void ~Surface<dimension>()
 public NamedType component_type_static()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#59
+```
 
 ### component_type
 
@@ -72,6 +96,9 @@ public NamedType component_type_static()
 public NamedType component_type()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#64
+```
 
 ### component_id
 
@@ -79,6 +106,9 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#69
+```
 
 ### mesh
 
@@ -86,6 +116,9 @@ public ComponentID component_id()
 public const Mesh & mesh()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#75
+```
 
 ### Surface
 
@@ -93,6 +126,9 @@ public const Mesh & mesh()
 public void Surface<dimension>(SurfacesKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#81
+```
 
 ### Surface
 
@@ -100,6 +136,9 @@ public void Surface<dimension>(SurfacesKey )
 public void Surface<dimension>(const MeshImpl & impl, SurfacesKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#83
+```
 
 ### modifiable_mesh
 
@@ -107,6 +146,9 @@ public void Surface<dimension>(const MeshImpl & impl, SurfacesKey )
 public Mesh & modifiable_mesh(SurfacesKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#86
+```
 
 ### mesh_type
 
@@ -114,6 +156,9 @@ public Mesh & modifiable_mesh(SurfacesKey )
 public const MeshImpl & mesh_type()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surface.cpp#91
+```
 
 ### set_mesh
 
@@ -121,6 +166,9 @@ public const MeshImpl & mesh_type()
 public void set_mesh(std::unique_ptr<SurfaceMesh<dimension> > mesh, SurfacesKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surface.cpp#119
+```
 
 ### set_mesh
 
@@ -128,6 +176,9 @@ public void set_mesh(std::unique_ptr<SurfaceMesh<dimension> > mesh, SurfacesKey 
 public void set_mesh(std::unique_ptr<SurfaceMesh<dimension> > mesh, SurfacesBuilderKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/surface.cpp#126
+```
 
 ### set_surface_name
 
@@ -135,6 +186,9 @@ public void set_mesh(std::unique_ptr<SurfaceMesh<dimension> > mesh, SurfacesBuil
 public void set_surface_name(string_view name, SurfacesBuilderKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#99
+```
 
 ### modifiable_mesh
 
@@ -142,6 +196,9 @@ public void set_surface_name(string_view name, SurfacesBuilderKey )
 public Mesh & modifiable_mesh(SurfacesBuilderKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/surface.h#105
+```
 
 ### set_mesh
 

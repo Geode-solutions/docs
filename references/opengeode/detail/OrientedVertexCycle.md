@@ -1,5 +1,8 @@
 # class OrientedVertexCycle
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#83
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void OrientedVertexCycle<Container>(Container vertices)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#88
+```
 
 ### vertices
 
@@ -16,34 +22,49 @@ public void OrientedVertexCycle<Container>(Container vertices)
 public const Container & vertices()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#94
+```
 
 ### is_opposite
 
 ```cpp
-public _Bool is_opposite(const OrientedVertexCycle<Container> & other)
+public bool is_opposite(const OrientedVertexCycle<Container> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#99
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const OrientedVertexCycle<Container> & other)
+public bool operator==(const OrientedVertexCycle<Container> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#119
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const OrientedVertexCycle<Container> & other)
+public bool operator!=(const OrientedVertexCycle<Container> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#124
+```
 
 ### operator<
 
 ```cpp
-public _Bool operator<(const OrientedVertexCycle<Container> & other)
+public bool operator<(const OrientedVertexCycle<Container> & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#129
+```
 
 ### OrientedVertexCycle
 
@@ -51,6 +72,9 @@ public _Bool operator<(const OrientedVertexCycle<Container> & other)
 protected void OrientedVertexCycle<Container>()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#135
+```
 
 ### modifiable_vertices
 
@@ -58,6 +82,9 @@ protected void OrientedVertexCycle<Container>()
 protected Container & modifiable_vertices()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#137
+```
 
 
 

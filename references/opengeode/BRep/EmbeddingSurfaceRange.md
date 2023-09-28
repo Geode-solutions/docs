@@ -1,5 +1,8 @@
 # class EmbeddingSurfaceRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/brep.h#245
+```
 
 ```cpp
 Inherits from EmbeddingRangeIterator
@@ -15,6 +18,9 @@ Inherits from EmbeddingRangeIterator
 public void EmbeddingSurfaceRange(const BRep & brep, const Corner3D & corner)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#463
+```
 
 ### EmbeddingSurfaceRange
 
@@ -22,6 +28,9 @@ public void EmbeddingSurfaceRange(const BRep & brep, const Corner3D & corner)
 public void EmbeddingSurfaceRange(const BRep & brep, const Line3D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#497
+```
 
 ### EmbeddingSurfaceRange
 
@@ -29,6 +38,9 @@ public void EmbeddingSurfaceRange(const BRep & brep, const Line3D & line)
 public void EmbeddingSurfaceRange(const EmbeddingSurfaceRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#471
+```
 
 ### ~EmbeddingSurfaceRange
 
@@ -36,6 +48,9 @@ public void EmbeddingSurfaceRange(const EmbeddingSurfaceRange & range)
 public void ~EmbeddingSurfaceRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#477
+```
 
 ### begin
 
@@ -43,6 +58,9 @@ public void ~EmbeddingSurfaceRange()
 public const EmbeddingSurfaceRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#479
+```
 
 ### end
 
@@ -50,6 +68,9 @@ public const EmbeddingSurfaceRange & begin()
 public const EmbeddingSurfaceRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#485
+```
 
 ### operator++
 
@@ -57,6 +78,9 @@ public const EmbeddingSurfaceRange & end()
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#505
+```
 
 ### operator*
 
@@ -64,6 +88,9 @@ public void operator++()
 public const Surface3D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#511
+```
 
 
 

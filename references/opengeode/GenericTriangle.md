@@ -2,6 +2,9 @@
 
 # class GenericTriangle
 
+```cpp
+Defined at ../../include/geode/geometry/basic_objects/triangle.h#45
+```
 
 ## Functions
 
@@ -11,6 +14,9 @@
 public void GenericTriangle<PointType, dimension>(PointType p0, PointType p1, PointType p2)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#96
+```
 
 ### GenericTriangle
 
@@ -18,6 +24,9 @@ public void GenericTriangle<PointType, dimension>(PointType p0, PointType p1, Po
 public void GenericTriangle<PointType, dimension>(const GenericTriangle<PointType, dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#103
+```
 
 ### operator=
 
@@ -25,6 +34,9 @@ public void GenericTriangle<PointType, dimension>(const GenericTriangle<PointTyp
 public GenericTriangle<PointType, dimension> & operator=(const GenericTriangle<PointType, dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#110
+```
 
 ### GenericTriangle
 
@@ -32,6 +44,9 @@ public GenericTriangle<PointType, dimension> & operator=(const GenericTriangle<P
 public void GenericTriangle<PointType, dimension>(GenericTriangle<PointType, dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#119
+```
 
 ### operator=
 
@@ -39,6 +54,9 @@ public void GenericTriangle<PointType, dimension>(GenericTriangle<PointType, dim
 public GenericTriangle<PointType, dimension> & operator=(GenericTriangle<PointType, dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#126
+```
 
 ### barycenter
 
@@ -46,6 +64,9 @@ public GenericTriangle<PointType, dimension> & operator=(GenericTriangle<PointTy
 public Point<dimension> barycenter()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#135
+```
 
 ### normal
 
@@ -53,6 +74,9 @@ public Point<dimension> barycenter()
 public typename std::enable_if<T == 3, absl::optional<Vector3D> >::type normal()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#145
+```
 
 ### plane
 
@@ -60,6 +84,9 @@ public typename std::enable_if<T == 3, absl::optional<Vector3D> >::type normal()
 public typename std::enable_if<T == 3, absl::optional<Plane> >::type plane()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#157
+```
 
 ### owner_plane
 
@@ -67,6 +94,9 @@ public typename std::enable_if<T == 3, absl::optional<Plane> >::type plane()
 public typename std::enable_if<T == 3, absl::optional<OwnerPlane> >::type owner_plane()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#170
+```
 
 ### pivot
 
@@ -74,6 +104,9 @@ public typename std::enable_if<T == 3, absl::optional<OwnerPlane> >::type owner_
 public typename std::enable_if<T == 3, absl::optional<local_index_t> >::type pivot()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#183
+```
 
 ### pivot_and_normal
 
@@ -81,6 +114,9 @@ public typename std::enable_if<T == 3, absl::optional<local_index_t> >::type piv
 public typename std::enable_if<T == 3, absl::optional<std::pair<local_index_t, Vector3D> > >::type pivot_and_normal()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#195
+```
 
 ### set_point
 
@@ -88,6 +124,9 @@ public typename std::enable_if<T == 3, absl::optional<std::pair<local_index_t, V
 public void set_point(index_t vertex, PointType point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#238
+```
 
 ### vertices
 
@@ -95,6 +134,9 @@ public void set_point(index_t vertex, PointType point)
 public const std::array<PointType, 3> & vertices()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#245
+```
 
 ### bounding_box
 
@@ -102,6 +144,9 @@ public const std::array<PointType, 3> & vertices()
 public BoundingBox<dimension> bounding_box()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#252
+```
 
 
 

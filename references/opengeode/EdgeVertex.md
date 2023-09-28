@@ -1,5 +1,8 @@
 # struct EdgeVertex
 
+```cpp
+Defined at ../../include/geode/mesh/core/graph.h#46
+```
 
  This struct represents a graph edge endpoint
 
@@ -9,10 +12,12 @@
 
 ```cpp
 public index_t edge_id
+
 ```
 
 ```cpp
 public local_index_t vertex_id
+
 ```
 
 
@@ -25,6 +30,9 @@ public local_index_t vertex_id
 public void EdgeVertex()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/graph.h#48
+```
 
 ### EdgeVertex
 
@@ -32,27 +40,39 @@ public void EdgeVertex()
 public void EdgeVertex(index_t edge_id_in, local_index_t vertex_id_in)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/graph.h#49
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const EdgeVertex & other)
+public bool operator==(const EdgeVertex & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/graph.h#53
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const EdgeVertex & other)
+public bool operator!=(const EdgeVertex & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/graph.h#57
+```
 
 ### operator<
 
 ```cpp
-public _Bool operator<(const EdgeVertex & other)
+public bool operator<(const EdgeVertex & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/graph.h#61
+```
 
 ### opposite
 
@@ -60,6 +80,9 @@ public _Bool operator<(const EdgeVertex & other)
 public EdgeVertex opposite()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/graph.h#69
+```
 
 ### string
 
@@ -67,6 +90,9 @@ public EdgeVertex opposite()
 public basic_string string()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/graph.h#74
+```
 
 ### serialize
 
@@ -74,6 +100,9 @@ public basic_string string()
 public void serialize(Archive & archive)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/graph.cpp#130
+```
 
 
 

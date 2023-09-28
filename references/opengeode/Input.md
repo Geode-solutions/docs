@@ -1,5 +1,8 @@
 # class Input
 
+```cpp
+Defined at ../../include/geode/basic/input.h#33
+```
 
 ```cpp
 Inherits from IOFile
@@ -21,6 +24,9 @@ MissingFiles
 public MissingFiles check_missing_files()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/input.h#54
+```
 
 ### read
 
@@ -34,6 +40,9 @@ public Object read(const Args &... args)
 public void ~Input<Object, Args...>()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/input.h#61
+```
 
 ### Input
 
@@ -41,6 +50,9 @@ public void ~Input<Object, Args...>()
 protected void Input<Object, Args...>(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/input.h#79
+```
 
 ### need_to_inspect_result
 
@@ -48,6 +60,9 @@ protected void Input<Object, Args...>(string_view filename)
 protected void need_to_inspect_result()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/input.h#81
+```
 
 
 

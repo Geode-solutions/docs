@@ -1,5 +1,8 @@
 # class RGBColor
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#41
+```
 
  Description of a color in RGB
 
@@ -13,6 +16,9 @@
 public void RGBColor()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#44
+```
 
 ### RGBColor
 
@@ -20,6 +26,9 @@ public void RGBColor()
 public void RGBColor(local_index_t red, local_index_t green, local_index_t blue)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#49
+```
 
 ### red
 
@@ -27,6 +36,9 @@ public void RGBColor(local_index_t red, local_index_t green, local_index_t blue)
 public local_index_t red()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#54
+```
 
 ### green
 
@@ -34,6 +46,9 @@ public local_index_t red()
 public local_index_t green()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#59
+```
 
 ### blue
 
@@ -41,6 +56,9 @@ public local_index_t green()
 public local_index_t blue()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#64
+```
 
 ### set_red
 
@@ -48,6 +66,9 @@ public local_index_t blue()
 public void set_red(local_index_t red_scale)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#69
+```
 
 ### set_green
 
@@ -55,6 +76,9 @@ public void set_red(local_index_t red_scale)
 public void set_green(local_index_t green_scale)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#74
+```
 
 ### set_blue
 
@@ -62,20 +86,29 @@ public void set_green(local_index_t green_scale)
 public void set_blue(local_index_t blue_scale)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#79
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const RGBColor & other)
+public bool operator==(const RGBColor & other)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#84
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const RGBColor & other)
+public bool operator!=(const RGBColor & other)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#101
+```
 
 ### operator+
 
@@ -83,6 +116,9 @@ public _Bool operator!=(const RGBColor & other)
 public RGBColor operator+(const RGBColor & other)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#106
+```
 
 ### operator+=
 
@@ -90,6 +126,9 @@ public RGBColor operator+(const RGBColor & other)
 public void operator+=(const RGBColor & other)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#115
+```
 
 ### string
 
@@ -97,6 +136,9 @@ public void operator+=(const RGBColor & other)
 public basic_string string()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/rgb_color.h#122
+```
 
 
 

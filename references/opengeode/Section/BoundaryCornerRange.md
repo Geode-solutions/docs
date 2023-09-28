@@ -1,5 +1,8 @@
 # class BoundaryCornerRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/section.h#72
+```
 
 ```cpp
 Inherits from BoundaryRangeIterator
@@ -15,6 +18,9 @@ Inherits from BoundaryRangeIterator
 public void BoundaryCornerRange(const Section & section, const Line2D & line)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#86
+```
 
 ### BoundaryCornerRange
 
@@ -22,6 +28,9 @@ public void BoundaryCornerRange(const Section & section, const Line2D & line)
 public void BoundaryCornerRange(const BoundaryCornerRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#93
+```
 
 ### ~BoundaryCornerRange
 
@@ -29,6 +38,9 @@ public void BoundaryCornerRange(const BoundaryCornerRange & range)
 public void ~BoundaryCornerRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#100
+```
 
 ### begin
 
@@ -36,6 +48,9 @@ public void ~BoundaryCornerRange()
 public const BoundaryCornerRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#102
+```
 
 ### end
 
@@ -43,6 +58,9 @@ public const BoundaryCornerRange & begin()
 public const BoundaryCornerRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#108
+```
 
 ### operator*
 
@@ -50,6 +68,9 @@ public const BoundaryCornerRange & end()
 public const Corner2D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/section.cpp#113
+```
 
 
 

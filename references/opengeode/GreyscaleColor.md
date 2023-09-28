@@ -1,5 +1,8 @@
 # class GreyscaleColor
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#39
+```
 
  Description of a color in grey scale
 
@@ -13,6 +16,9 @@
 public void GreyscaleColor()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#42
+```
 
 ### GreyscaleColor
 
@@ -20,6 +26,9 @@ public void GreyscaleColor()
 public void GreyscaleColor(local_index_t value)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#47
+```
 
 ### value
 
@@ -27,6 +36,9 @@ public void GreyscaleColor(local_index_t value)
 public local_index_t value()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#49
+```
 
 ### set_value
 
@@ -34,20 +46,29 @@ public local_index_t value()
 public void set_value(local_index_t greyscale)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#54
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const GreyscaleColor & other)
+public bool operator==(const GreyscaleColor & other)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#59
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const GreyscaleColor & other)
+public bool operator!=(const GreyscaleColor & other)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#64
+```
 
 ### operator+
 
@@ -55,6 +76,9 @@ public _Bool operator!=(const GreyscaleColor & other)
 public GreyscaleColor operator+(const GreyscaleColor & other)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#69
+```
 
 ### operator+=
 
@@ -62,6 +86,9 @@ public GreyscaleColor operator+(const GreyscaleColor & other)
 public void operator+=(const GreyscaleColor & other)
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#75
+```
 
 ### string
 
@@ -69,6 +96,9 @@ public void operator+=(const GreyscaleColor & other)
 public basic_string string()
 ```
 
+```cpp
+Defined at ../../include/geode/image/core/greyscale_color.h#80
+```
 
 
 

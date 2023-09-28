@@ -1,5 +1,8 @@
 # class InternalLineRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/brep.h#204
+```
 
 ```cpp
 Inherits from InternalRangeIterator
@@ -15,6 +18,9 @@ Inherits from InternalRangeIterator
 public void InternalLineRange(const BRep & brep, const Surface3D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#304
+```
 
 ### InternalLineRange
 
@@ -22,6 +28,9 @@ public void InternalLineRange(const BRep & brep, const Surface3D & surface)
 public void InternalLineRange(const BRep & brep, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#334
+```
 
 ### InternalLineRange
 
@@ -29,6 +38,9 @@ public void InternalLineRange(const BRep & brep, const Block3D & block)
 public void InternalLineRange(const InternalLineRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#312
+```
 
 ### ~InternalLineRange
 
@@ -36,6 +48,9 @@ public void InternalLineRange(const InternalLineRange & range)
 public void ~InternalLineRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#322
+```
 
 ### begin
 
@@ -43,6 +58,9 @@ public void ~InternalLineRange()
 public const InternalLineRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#324
+```
 
 ### end
 
@@ -50,6 +68,9 @@ public const InternalLineRange & begin()
 public const InternalLineRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#329
+```
 
 ### operator++
 
@@ -57,6 +78,9 @@ public const InternalLineRange & end()
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#342
+```
 
 ### operator*
 
@@ -64,6 +88,9 @@ public void operator++()
 public const Line3D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#348
+```
 
 
 

@@ -1,5 +1,8 @@
 # class Block
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/block.cpp#134
+```
 
 ```cpp
 Inherits from Component<3U>
@@ -9,6 +12,9 @@ Inherits from Component<3U>
 
 # class Block
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#48
+```
 
  Geometric component describing a 3D volume This component is described by a mesh.
 
@@ -28,6 +34,9 @@ Inherits from Component<dimension>
 public void Block<>(const Block<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#50
+```
 
 ### operator=
 
@@ -35,6 +44,9 @@ public void Block<>(const Block<> & )
 public Block<> & operator=(const Block<> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#50
+```
 
 ### Block
 
@@ -42,6 +54,9 @@ public Block<> & operator=(const Block<> & )
 public void Block<>(Block<> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/block.cpp#62
+```
 
 ### ~Block
 
@@ -49,6 +64,9 @@ public void Block<>(Block<> && other)
 public void ~Block<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/block.cpp#75
+```
 
 ### component_type_static
 
@@ -56,6 +74,9 @@ public void ~Block<>()
 public NamedType component_type_static()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#60
+```
 
 ### component_type
 
@@ -63,6 +84,9 @@ public NamedType component_type_static()
 public NamedType component_type()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#65
+```
 
 ### component_id
 
@@ -70,6 +94,9 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#70
+```
 
 ### mesh
 
@@ -77,6 +104,9 @@ public ComponentID component_id()
 public const Mesh & mesh()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#76
+```
 
 ### mesh_type
 
@@ -84,6 +114,9 @@ public const Mesh & mesh()
 public const MeshImpl & mesh_type()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/block.cpp#92
+```
 
 ### modifiable_mesh
 
@@ -91,6 +124,9 @@ public const MeshImpl & mesh_type()
 public Mesh & modifiable_mesh(BlocksKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#84
+```
 
 ### Block
 
@@ -98,6 +134,9 @@ public Mesh & modifiable_mesh(BlocksKey )
 public void Block<>(BlocksKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#90
+```
 
 ### Block
 
@@ -105,6 +144,9 @@ public void Block<>(BlocksKey )
 public void Block<>(const MeshImpl & impl, BlocksKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#92
+```
 
 ### set_mesh
 
@@ -112,6 +154,9 @@ public void Block<>(const MeshImpl & impl, BlocksKey )
 public void set_mesh(std::unique_ptr<SolidMesh<dimension> > mesh, BlocksKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/block.cpp#120
+```
 
 ### set_mesh
 
@@ -119,6 +164,9 @@ public void set_mesh(std::unique_ptr<SolidMesh<dimension> > mesh, BlocksKey )
 public void set_mesh(std::unique_ptr<SolidMesh<dimension> > mesh, BlocksBuilderKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/block.cpp#127
+```
 
 ### modifiable_mesh
 
@@ -126,6 +174,9 @@ public void set_mesh(std::unique_ptr<SolidMesh<dimension> > mesh, BlocksBuilderK
 public Mesh & modifiable_mesh(BlocksBuilderKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#101
+```
 
 ### set_block_name
 
@@ -133,6 +184,9 @@ public Mesh & modifiable_mesh(BlocksBuilderKey )
 public void set_block_name(string_view name, BlocksBuilderKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/block.h#106
+```
 
 ### set_mesh
 

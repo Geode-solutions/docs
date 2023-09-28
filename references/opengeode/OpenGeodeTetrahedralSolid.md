@@ -1,5 +1,8 @@
 # class OpenGeodeTetrahedralSolid
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_tetrahedral_solid.h#43
+```
 
 ```cpp
 Inherits from TetrahedralSolid<dimension>
@@ -21,6 +24,9 @@ Impl
 public void OpenGeodeTetrahedralSolid<dimension>(const OpenGeodeTetrahedralSolid<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_tetrahedral_solid.h#45
+```
 
 ### operator=
 
@@ -28,6 +34,9 @@ public void OpenGeodeTetrahedralSolid<dimension>(const OpenGeodeTetrahedralSolid
 public OpenGeodeTetrahedralSolid<dimension> & operator=(const OpenGeodeTetrahedralSolid<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_tetrahedral_solid.h#45
+```
 
 ### OpenGeodeTetrahedralSolid
 
@@ -35,6 +44,9 @@ public OpenGeodeTetrahedralSolid<dimension> & operator=(const OpenGeodeTetrahedr
 public void OpenGeodeTetrahedralSolid<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_tetrahedral_solid.cpp#150
+```
 
 ### OpenGeodeTetrahedralSolid
 
@@ -42,6 +54,9 @@ public void OpenGeodeTetrahedralSolid<dimension>()
 public void OpenGeodeTetrahedralSolid<dimension>(OpenGeodeTetrahedralSolid<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_tetrahedral_solid.cpp#156
+```
 
 ### operator=
 
@@ -49,6 +64,9 @@ public void OpenGeodeTetrahedralSolid<dimension>(OpenGeodeTetrahedralSolid<dimen
 public OpenGeodeTetrahedralSolid<dimension> & operator=(OpenGeodeTetrahedralSolid<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_tetrahedral_solid.cpp#164
+```
 
 ### ~OpenGeodeTetrahedralSolid
 
@@ -56,6 +74,9 @@ public OpenGeodeTetrahedralSolid<dimension> & operator=(OpenGeodeTetrahedralSoli
 public void ~OpenGeodeTetrahedralSolid<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_tetrahedral_solid.cpp#174
+```
 
 ### impl_name_static
 
@@ -63,6 +84,9 @@ public void ~OpenGeodeTetrahedralSolid<dimension>()
 public NamedType impl_name_static()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_tetrahedral_solid.h#59
+```
 
 ### impl_name
 
@@ -70,6 +94,9 @@ public NamedType impl_name_static()
 public NamedType impl_name()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_tetrahedral_solid.h#65
+```
 
 ### type_name
 
@@ -77,6 +104,9 @@ public NamedType impl_name()
 public NamedType type_name()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_tetrahedral_solid.h#70
+```
 
 ### native_extension_static
 
@@ -84,6 +114,9 @@ public NamedType type_name()
 public string_view native_extension_static()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_tetrahedral_solid.h#75
+```
 
 ### native_extension
 
@@ -91,6 +124,9 @@ public string_view native_extension_static()
 public string_view native_extension()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/geode/geode_tetrahedral_solid.h#82
+```
 
 ### set_vertex
 
@@ -98,6 +134,9 @@ public string_view native_extension()
 public void set_vertex(index_t vertex_id, Point<dimension> point, OGTetrahedralSolidKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_tetrahedral_solid.cpp#180
+```
 
 ### set_polyhedron_vertex
 
@@ -105,6 +144,9 @@ public void set_vertex(index_t vertex_id, Point<dimension> point, OGTetrahedralS
 public void set_polyhedron_vertex(const PolyhedronVertex & polyhedron_vertex, index_t vertex_id, OGTetrahedralSolidKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_tetrahedral_solid.cpp#229
+```
 
 ### set_polyhedron_adjacent
 
@@ -112,6 +154,9 @@ public void set_polyhedron_vertex(const PolyhedronVertex & polyhedron_vertex, in
 public void set_polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet, index_t adjacent_id, OGTetrahedralSolidKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_tetrahedral_solid.cpp#245
+```
 
 ### add_tetrahedron
 
@@ -119,6 +164,9 @@ public void set_polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet, in
 public void add_tetrahedron(const std::array<index_t, 4> & vertices, OGTetrahedralSolidKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_tetrahedral_solid.cpp#238
+```
 
 ### get_polyhedron_adjacent
 
@@ -126,6 +174,9 @@ public void add_tetrahedron(const std::array<index_t, 4> & vertices, OGTetrahedr
 public absl::optional<index_t> get_polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/geode/geode_tetrahedral_solid.cpp#202
+```
 
 
 

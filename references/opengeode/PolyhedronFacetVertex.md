@@ -1,14 +1,19 @@
 # struct PolyhedronFacetVertex
 
+```cpp
+Defined at ../../include/geode/mesh/core/solid_mesh.h#129
+```
 
 ## Members
 
 ```cpp
 public PolyhedronFacet polyhedron_facet
+
 ```
 
 ```cpp
 public local_index_t vertex_id
+
 ```
 
 
@@ -21,6 +26,9 @@ public local_index_t vertex_id
 public void PolyhedronFacetVertex()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/solid_mesh.h#131
+```
 
 ### PolyhedronFacetVertex
 
@@ -28,27 +36,39 @@ public void PolyhedronFacetVertex()
 public void PolyhedronFacetVertex(PolyhedronFacet facet, local_index_t vertex_id_in)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/solid_mesh.h#132
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const PolyhedronFacetVertex & other)
+public bool operator==(const PolyhedronFacetVertex & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/solid_mesh.h#137
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const PolyhedronFacetVertex & other)
+public bool operator!=(const PolyhedronFacetVertex & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/solid_mesh.h#142
+```
 
 ### operator<
 
 ```cpp
-public _Bool operator<(const PolyhedronFacetVertex & other)
+public bool operator<(const PolyhedronFacetVertex & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/solid_mesh.h#146
+```
 
 ### string
 
@@ -56,6 +76,9 @@ public _Bool operator<(const PolyhedronFacetVertex & other)
 public basic_string string()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/solid_mesh.h#154
+```
 
 ### serialize
 
@@ -63,6 +86,9 @@ public basic_string string()
 public void serialize(Archive & archive)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#326
+```
 
 
 

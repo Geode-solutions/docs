@@ -1,5 +1,8 @@
 # class SimplicialSectionCreator
 
+```cpp
+Defined at ../../include/geode/model/helpers/simplicial_section_creator.h#43
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void SimplicialSectionCreator(Section & brep, vector unique_points)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/simplicial_section_creator.cpp#65
+```
 
 ### ~SimplicialSectionCreator
 
@@ -16,6 +22,9 @@ public void SimplicialSectionCreator(Section & brep, vector unique_points)
 public void ~SimplicialSectionCreator()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/simplicial_section_creator.cpp#71
+```
 
 ### create_corners
 
@@ -23,6 +32,9 @@ public void ~SimplicialSectionCreator()
 public vector create_corners(Span definitions)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/simplicial_section_creator.cpp#73
+```
 
 ### create_lines
 
@@ -30,6 +42,9 @@ public vector create_corners(Span definitions)
 public vector create_lines(Span corners, Span definitions)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/simplicial_section_creator.cpp#79
+```
 
 ### create_surfaces
 
@@ -37,6 +52,9 @@ public vector create_lines(Span corners, Span definitions)
 public vector create_surfaces(Span lines, Span definitions)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/simplicial_section_creator.cpp#86
+```
 
 ### create_surfaces
 
@@ -44,6 +62,9 @@ public vector create_surfaces(Span lines, Span definitions)
 public vector create_surfaces(Span corners, Span lines, Span definitions)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/simplicial_section_creator.cpp#93
+```
 
 ### create_model_boundaries
 
@@ -51,6 +72,9 @@ public vector create_surfaces(Span corners, Span lines, Span definitions)
 public vector create_model_boundaries(Span lines, Span definitions)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/simplicial_section_creator.cpp#101
+```
 
 
 

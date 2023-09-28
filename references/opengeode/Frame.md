@@ -4,6 +4,9 @@
 
 # class Frame
 
+```cpp
+Defined at ../../include/geode/geometry/frame.h#32
+```
 
 ## Functions
 
@@ -13,6 +16,9 @@
 public void Frame<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/frame.cpp#85
+```
 
 ### Frame
 
@@ -20,6 +26,9 @@ public void Frame<dimension>()
 public void Frame<dimension>(std::array<Vector<dimension>, dimension> directions)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/frame.cpp#96
+```
 
 ### direction
 
@@ -27,6 +36,9 @@ public void Frame<dimension>(std::array<Vector<dimension>, dimension> directions
 public const Vector<dimension> & direction(local_index_t index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/frame.cpp#103
+```
 
 ### set_direction
 
@@ -34,6 +46,9 @@ public const Vector<dimension> & direction(local_index_t index)
 public void set_direction(local_index_t index, Vector<dimension> direction)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/frame.cpp#110
+```
 
 ### inverse
 
@@ -41,6 +56,9 @@ public void set_direction(local_index_t index, Vector<dimension> direction)
 public Frame inverse()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/frame.cpp#117
+```
 
 ### operator+
 
@@ -48,6 +66,9 @@ public Frame inverse()
 public Frame operator+(const Frame<dimension> & rhs)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/frame.cpp#126
+```
 
 ### rescale
 
@@ -55,6 +76,9 @@ public Frame operator+(const Frame<dimension> & rhs)
 public Frame rescale(double length)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/frame.cpp#138
+```
 
 ### string
 
@@ -62,6 +86,9 @@ public Frame rescale(double length)
 public basic_string string()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/frame.cpp#149
+```
 
 
 

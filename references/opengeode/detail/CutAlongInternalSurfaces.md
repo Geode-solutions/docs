@@ -1,5 +1,8 @@
 # class CutAlongInternalSurfaces
 
+```cpp
+Defined at ../../include/geode/model/helpers/detail/cut_along_internal_surfaces.h#43
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void CutAlongInternalSurfaces(BRep & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_surfaces.cpp#262
+```
 
 ### CutAlongInternalSurfaces
 
@@ -16,6 +22,9 @@ public void CutAlongInternalSurfaces(BRep & model)
 public void CutAlongInternalSurfaces(const BRep & model, BRepBuilder & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_surfaces.cpp#267
+```
 
 ### ~CutAlongInternalSurfaces
 
@@ -23,6 +32,9 @@ public void CutAlongInternalSurfaces(const BRep & model, BRepBuilder & builder)
 public void ~CutAlongInternalSurfaces()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_surfaces.cpp#273
+```
 
 ### cut_all_blocks
 
@@ -30,6 +42,9 @@ public void ~CutAlongInternalSurfaces()
 public vector cut_all_blocks()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_surfaces.cpp#275
+```
 
 ### cut_block
 
@@ -37,6 +52,9 @@ public vector cut_all_blocks()
 public vector cut_block(const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_surfaces.cpp#281
+```
 
 
 

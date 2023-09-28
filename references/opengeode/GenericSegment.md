@@ -1,20 +1,38 @@
 # class GenericSegment
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#190
+```
 
 # class GenericSegment
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#191
+```
 
 # class GenericSegment
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#188
+```
 
 # class GenericSegment
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#192
+```
 
 # class GenericSegment
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#187
+```
 
 # class GenericSegment
 
+```cpp
+Defined at ../../include/geode/geometry/basic_objects/segment.h#42
+```
 
 ## Functions
 
@@ -24,6 +42,9 @@
 public void GenericSegment<PointType, dimension>(PointType p0, PointType p1)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#31
+```
 
 ### GenericSegment
 
@@ -31,6 +52,9 @@ public void GenericSegment<PointType, dimension>(PointType p0, PointType p1)
 public void GenericSegment<PointType, dimension>(const GenericSegment<PointType, dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#37
+```
 
 ### operator=
 
@@ -38,6 +62,9 @@ public void GenericSegment<PointType, dimension>(const GenericSegment<PointType,
 public GenericSegment<PointType, dimension> & operator=(const GenericSegment<PointType, dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#43
+```
 
 ### GenericSegment
 
@@ -45,6 +72,9 @@ public GenericSegment<PointType, dimension> & operator=(const GenericSegment<Poi
 public void GenericSegment<PointType, dimension>(GenericSegment<PointType, dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#51
+```
 
 ### operator=
 
@@ -52,6 +82,9 @@ public void GenericSegment<PointType, dimension>(GenericSegment<PointType, dimen
 public GenericSegment<PointType, dimension> & operator=(GenericSegment<PointType, dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#57
+```
 
 ### direction
 
@@ -59,6 +92,9 @@ public GenericSegment<PointType, dimension> & operator=(GenericSegment<PointType
 public Vector<dimension> direction()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#65
+```
 
 ### normalized_direction
 
@@ -66,6 +102,9 @@ public Vector<dimension> direction()
 public Vector<dimension> normalized_direction()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#74
+```
 
 ### barycenter
 
@@ -73,6 +112,9 @@ public Vector<dimension> normalized_direction()
 public Point<dimension> barycenter()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#80
+```
 
 ### length
 
@@ -80,6 +122,9 @@ public Point<dimension> barycenter()
 public double length()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#88
+```
 
 ### set_point
 
@@ -87,6 +132,9 @@ public double length()
 public void set_point(index_t vertex, PointType point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#95
+```
 
 ### vertices
 
@@ -94,6 +142,9 @@ public void set_point(index_t vertex, PointType point)
 public const std::array<PointType, 2> & vertices()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#101
+```
 
 ### bounding_box
 
@@ -101,9 +152,15 @@ public const std::array<PointType, 2> & vertices()
 public BoundingBox<dimension> bounding_box()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#107
+```
 
 
 
 # class GenericSegment
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#189
+```
 

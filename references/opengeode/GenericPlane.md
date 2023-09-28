@@ -1,5 +1,8 @@
 # class GenericPlane
 
+```cpp
+Defined at ../../include/geode/geometry/basic_objects/plane.h#42
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void GenericPlane<PointType>(const Vector3D & normal, PointType origin)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#28
+```
 
 ### GenericPlane
 
@@ -16,6 +22,9 @@ public void GenericPlane<PointType>(const Vector3D & normal, PointType origin)
 public void GenericPlane<PointType>(const GenericPlane<PointType> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#34
+```
 
 ### operator=
 
@@ -23,6 +32,9 @@ public void GenericPlane<PointType>(const GenericPlane<PointType> & other)
 public GenericPlane<PointType> & operator=(const GenericPlane<PointType> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#39
+```
 
 ### GenericPlane
 
@@ -30,6 +42,9 @@ public GenericPlane<PointType> & operator=(const GenericPlane<PointType> & other
 public void GenericPlane<PointType>(GenericPlane<PointType> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#47
+```
 
 ### operator=
 
@@ -37,6 +52,9 @@ public void GenericPlane<PointType>(GenericPlane<PointType> && other)
 public GenericPlane<PointType> & operator=(GenericPlane<PointType> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#53
+```
 
 ### normal
 
@@ -44,6 +62,9 @@ public GenericPlane<PointType> & operator=(GenericPlane<PointType> && other)
 public const Vector3D & normal()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#61
+```
 
 ### origin
 
@@ -51,6 +72,9 @@ public const Vector3D & normal()
 public const Point3D & origin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#66
+```
 
 ### plane_constant
 
@@ -58,9 +82,15 @@ public const Point3D & origin()
 public double plane_constant()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#71
+```
 
 
 
 # class GenericPlane
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/plane.cpp#120
+```
 

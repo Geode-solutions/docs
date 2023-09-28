@@ -1,5 +1,8 @@
 # class TriangulatedSurfaceInput
 
+```cpp
+Defined at ../../include/geode/mesh/io/triangulated_surface_input.h#61
+```
 
 ```cpp
 Inherits from Input<std::unique_ptr<TriangulatedSurface<dimension> >, MeshImpl>
@@ -15,6 +18,9 @@ Inherits from Input<std::unique_ptr<TriangulatedSurface<dimension> >, MeshImpl>
 protected void TriangulatedSurfaceInput<dimension>(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/triangulated_surface_input.h#72
+```
 
 
 

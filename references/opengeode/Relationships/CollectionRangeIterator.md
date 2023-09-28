@@ -1,5 +1,8 @@
 # class CollectionRangeIterator
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#309
+```
 
  Range to iterate on all collections of one component
 
@@ -13,6 +16,9 @@
 public void CollectionRangeIterator(const Relationships & relationships, const uuid & component_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#1007
+```
 
 ### CollectionRangeIterator
 
@@ -20,6 +26,9 @@ public void CollectionRangeIterator(const Relationships & relationships, const u
 public void CollectionRangeIterator(CollectionRangeIterator && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#1015
+```
 
 ### CollectionRangeIterator
 
@@ -27,6 +36,9 @@ public void CollectionRangeIterator(CollectionRangeIterator && other)
 public void CollectionRangeIterator(const CollectionRangeIterator & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#1021
+```
 
 ### ~CollectionRangeIterator
 
@@ -34,13 +46,19 @@ public void CollectionRangeIterator(const CollectionRangeIterator & other)
 public void ~CollectionRangeIterator()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#1027
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const CollectionRangeIterator & )
+public bool operator!=(const CollectionRangeIterator & )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#1030
+```
 
 ### operator++
 
@@ -48,6 +66,9 @@ public _Bool operator!=(const CollectionRangeIterator & )
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#1036
+```
 
 ### operator*
 
@@ -55,6 +76,9 @@ public void operator++()
 public const ComponentID & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#1041
+```
 
 
 

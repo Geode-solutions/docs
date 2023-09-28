@@ -1,5 +1,8 @@
 # class EdgedCurveIdentifier
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#64
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void EdgedCurveIdentifier<dimension>(const EdgedCurveIdentifier<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#66
+```
 
 ### operator=
 
@@ -16,6 +22,9 @@ public void EdgedCurveIdentifier<dimension>(const EdgedCurveIdentifier<dimension
 public EdgedCurveIdentifier<dimension> & operator=(const EdgedCurveIdentifier<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#66
+```
 
 ### EdgedCurveIdentifier
 
@@ -23,6 +32,9 @@ public EdgedCurveIdentifier<dimension> & operator=(const EdgedCurveIdentifier<di
 public void EdgedCurveIdentifier<dimension>(EdgedCurveIdentifier<dimension> && )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#66
+```
 
 ### operator=
 
@@ -30,6 +42,9 @@ public void EdgedCurveIdentifier<dimension>(EdgedCurveIdentifier<dimension> && )
 public EdgedCurveIdentifier<dimension> & operator=(EdgedCurveIdentifier<dimension> && )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#66
+```
 
 ### EdgedCurveIdentifier
 
@@ -37,6 +52,9 @@ public EdgedCurveIdentifier<dimension> & operator=(EdgedCurveIdentifier<dimensio
 public void EdgedCurveIdentifier<dimension>(const EdgedCurve<dimension> & curve)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#222
+```
 
 ### ~EdgedCurveIdentifier
 
@@ -44,6 +62,9 @@ public void EdgedCurveIdentifier<dimension>(const EdgedCurve<dimension> & curve)
 public void ~EdgedCurveIdentifier<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#229
+```
 
 ### identify_edges
 
@@ -51,6 +72,9 @@ public void ~EdgedCurveIdentifier<dimension>()
 public index_t identify_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#234
+```
 
 ### edge_identifier
 
@@ -58,6 +82,9 @@ public index_t identify_edges()
 public index_t edge_identifier(index_t edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#240
+```
 
 ### identified_connected_edges
 
@@ -65,6 +92,9 @@ public index_t edge_identifier(index_t edge_id)
 public absl::FixedArray<std::vector<index_t> > identified_connected_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#247
+```
 
 
 

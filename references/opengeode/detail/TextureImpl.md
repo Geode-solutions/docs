@@ -1,5 +1,8 @@
 # class TextureImpl
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/texture_impl.h#40
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public const RasterImage<dimension> & image()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/texture_impl.h#49
+```
 
 ### set_image
 
@@ -16,6 +22,9 @@ public const RasterImage<dimension> & image()
 public void set_image(RasterImage<dimension> && image)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/texture_impl.h#54
+```
 
 ### texture_coordinates_impl
 
@@ -23,6 +32,9 @@ public void set_image(RasterImage<dimension> && image)
 protected const Point<dimension> & texture_coordinates_impl(index_t element, local_index_t vertex)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/texture_impl.h#60
+```
 
 ### set_texture_coordinates_impl
 
@@ -30,6 +42,9 @@ protected const Point<dimension> & texture_coordinates_impl(index_t element, loc
 protected void set_texture_coordinates_impl(index_t element, local_index_t vertex, const Point<dimension> & coordinates)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/texture_impl.h#72
+```
 
 ### TextureImpl
 
@@ -37,6 +52,9 @@ protected void set_texture_coordinates_impl(index_t element, local_index_t verte
 public void TextureImpl<dimension>(AttributeManager & manager, string_view name)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/texture_impl.h#87
+```
 
 ### TextureImpl
 
@@ -44,6 +62,9 @@ public void TextureImpl<dimension>(AttributeManager & manager, string_view name)
 protected void TextureImpl<dimension>()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/private/texture_impl.h#95
+```
 
 
 

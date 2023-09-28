@@ -1,5 +1,8 @@
 # class InternalCornerRange
 
+```cpp
+Defined at ../../include/geode/model/representation/core/brep.h#183
+```
 
 ```cpp
 Inherits from InternalRangeIterator
@@ -15,6 +18,9 @@ Inherits from InternalRangeIterator
 public void InternalCornerRange(const BRep & brep, const Surface3D & surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#360
+```
 
 ### InternalCornerRange
 
@@ -22,6 +28,9 @@ public void InternalCornerRange(const BRep & brep, const Surface3D & surface)
 public void InternalCornerRange(const BRep & brep, const Block3D & block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#392
+```
 
 ### InternalCornerRange
 
@@ -29,6 +38,9 @@ public void InternalCornerRange(const BRep & brep, const Block3D & block)
 public void InternalCornerRange(const InternalCornerRange & range)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#368
+```
 
 ### ~InternalCornerRange
 
@@ -36,6 +48,9 @@ public void InternalCornerRange(const InternalCornerRange & range)
 public void ~InternalCornerRange()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#374
+```
 
 ### begin
 
@@ -43,6 +58,9 @@ public void ~InternalCornerRange()
 public const InternalCornerRange & begin()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#376
+```
 
 ### end
 
@@ -50,6 +68,9 @@ public const InternalCornerRange & begin()
 public const InternalCornerRange & end()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#381
+```
 
 ### operator++
 
@@ -57,6 +78,9 @@ public const InternalCornerRange & end()
 public void operator++()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#400
+```
 
 ### operator*
 
@@ -64,6 +88,9 @@ public void operator++()
 public const Corner3D & operator*()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#406
+```
 
 
 

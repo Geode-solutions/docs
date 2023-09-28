@@ -1,5 +1,8 @@
 # class IOFile
 
+```cpp
+Defined at ../../include/geode/basic/io.h#30
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void ~IOFile()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/io.h#33
+```
 
 ### filename
 
@@ -16,6 +22,9 @@ public void ~IOFile()
 public string_view filename()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/io.h#35
+```
 
 ### IOFile
 
@@ -23,6 +32,9 @@ public string_view filename()
 protected void IOFile(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/io.h#41
+```
 
 
 

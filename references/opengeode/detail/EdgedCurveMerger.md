@@ -1,5 +1,8 @@
 # class EdgedCurveMerger
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/curve_merger.cpp#214
+```
 
 ```cpp
 Inherits from VertexMerger<EdgedCurve<3U> >
@@ -9,6 +12,9 @@ Inherits from VertexMerger<EdgedCurve<3U> >
 
 # class EdgedCurveMerger
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/curve_merger.cpp#213
+```
 
 ```cpp
 Inherits from VertexMerger<EdgedCurve<2U> >
@@ -18,6 +24,9 @@ Inherits from VertexMerger<EdgedCurve<2U> >
 
 # class EdgedCurveMerger
 
+```cpp
+Defined at ../../include/geode/mesh/helpers/detail/curve_merger.h#44
+```
 
 ```cpp
 Inherits from VertexMerger<EdgedCurve<dimension> >
@@ -39,6 +48,9 @@ EdgeOrigin
 public void EdgedCurveMerger<dimension>(absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves, double epsilon)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/curve_merger.cpp#177
+```
 
 ### ~EdgedCurveMerger
 
@@ -46,6 +58,9 @@ public void EdgedCurveMerger<dimension>(absl::Span<const std::reference_wrapper<
 public void ~EdgedCurveMerger<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/curve_merger.cpp#187
+```
 
 ### merge
 
@@ -53,6 +68,9 @@ public void ~EdgedCurveMerger<dimension>()
 public std::unique_ptr<EdgedCurve<dimension> > merge()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/curve_merger.cpp#192
+```
 
 ### edge_in_merged
 
@@ -60,6 +78,9 @@ public std::unique_ptr<EdgedCurve<dimension> > merge()
 public index_t edge_in_merged(index_t curve, index_t edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/curve_merger.cpp#199
+```
 
 ### edge_origins
 
@@ -67,6 +88,9 @@ public index_t edge_in_merged(index_t curve, index_t edge)
 public const EdgeOrigins & edge_origins(index_t edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/detail/curve_merger.cpp#206
+```
 
 
 

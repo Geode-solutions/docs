@@ -1,5 +1,8 @@
 # class RelationRange
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#76
+```
 
 ```cpp
 Inherits from RelationRangeIterator
@@ -15,6 +18,9 @@ Inherits from RelationRangeIterator
 public void RelationRange(const Relationships & relationships, const uuid & component_id)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#79
+```
 
 ### begin
 
@@ -22,6 +28,9 @@ public void RelationRange(const Relationships & relationships, const uuid & comp
 public const RelationRange & begin()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#85
+```
 
 ### end
 
@@ -29,6 +38,9 @@ public const RelationRange & begin()
 public const RelationRange & end()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/relationships.h#90
+```
 
 
 

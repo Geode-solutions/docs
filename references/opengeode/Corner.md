@@ -1,5 +1,8 @@
 # class Corner
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corner.cpp#133
+```
 
 ```cpp
 Inherits from Component<3U>
@@ -9,6 +12,9 @@ Inherits from Component<3U>
 
 # class Corner
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corner.cpp#132
+```
 
 ```cpp
 Inherits from Component<2U>
@@ -18,6 +24,9 @@ Inherits from Component<2U>
 
 # class Corner
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#48
+```
 
  Geometric component describing a Point. This component is described by a mesh.
 
@@ -37,6 +46,9 @@ Inherits from Component<dimension>
 public void Corner<dimension>(const Corner<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#50
+```
 
 ### operator=
 
@@ -44,6 +56,9 @@ public void Corner<dimension>(const Corner<dimension> & )
 public Corner<dimension> & operator=(const Corner<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#50
+```
 
 ### Corner
 
@@ -51,6 +66,9 @@ public Corner<dimension> & operator=(const Corner<dimension> & )
 public void Corner<dimension>(Corner<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corner.cpp#67
+```
 
 ### ~Corner
 
@@ -58,6 +76,9 @@ public void Corner<dimension>(Corner<dimension> && other)
 public void ~Corner<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corner.cpp#55
+```
 
 ### component_type_static
 
@@ -65,6 +86,9 @@ public void ~Corner<dimension>()
 public NamedType component_type_static()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#59
+```
 
 ### component_type
 
@@ -72,6 +96,9 @@ public NamedType component_type_static()
 public NamedType component_type()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#64
+```
 
 ### component_id
 
@@ -79,6 +106,9 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#69
+```
 
 ### mesh
 
@@ -86,6 +116,9 @@ public ComponentID component_id()
 public const PointSet<dimension> & mesh()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corner.cpp#80
+```
 
 ### modifiable_mesh
 
@@ -93,6 +126,9 @@ public const PointSet<dimension> & mesh()
 public PointSet<dimension> & modifiable_mesh(CornersKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#76
+```
 
 ### mesh_type
 
@@ -100,6 +136,9 @@ public PointSet<dimension> & modifiable_mesh(CornersKey )
 public const MeshImpl & mesh_type()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corner.cpp#92
+```
 
 ### Corner
 
@@ -107,6 +146,9 @@ public const MeshImpl & mesh_type()
 public void Corner<dimension>(CornersKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#84
+```
 
 ### Corner
 
@@ -114,6 +156,9 @@ public void Corner<dimension>(CornersKey )
 public void Corner<dimension>(const MeshImpl & impl, CornersKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#86
+```
 
 ### set_mesh
 
@@ -121,6 +166,9 @@ public void Corner<dimension>(const MeshImpl & impl, CornersKey )
 public void set_mesh(std::unique_ptr<PointSet<dimension> > mesh, CornersKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corner.cpp#118
+```
 
 ### set_mesh
 
@@ -128,6 +176,9 @@ public void set_mesh(std::unique_ptr<PointSet<dimension> > mesh, CornersKey )
 public void set_mesh(std::unique_ptr<PointSet<dimension> > mesh, CornersBuilderKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/corner.cpp#125
+```
 
 ### set_corner_name
 
@@ -135,6 +186,9 @@ public void set_mesh(std::unique_ptr<PointSet<dimension> > mesh, CornersBuilderK
 public void set_corner_name(string_view name, CornersBuilderKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#94
+```
 
 ### modifiable_mesh
 
@@ -142,6 +196,9 @@ public void set_corner_name(string_view name, CornersBuilderKey )
 public PointSet<dimension> & modifiable_mesh(CornersBuilderKey )
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/corner.h#99
+```
 
 
 

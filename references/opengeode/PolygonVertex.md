@@ -1,5 +1,8 @@
 # struct PolygonVertex
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#56
+```
 
  This struct represents a local vertex in a polygon
 
@@ -9,10 +12,12 @@
 
 ```cpp
 public index_t polygon_id
+
 ```
 
 ```cpp
 public local_index_t vertex_id
+
 ```
 
 
@@ -25,6 +30,9 @@ public local_index_t vertex_id
 public void PolygonVertex()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#58
+```
 
 ### PolygonVertex
 
@@ -32,6 +40,9 @@ public void PolygonVertex()
 public void PolygonVertex(index_t polygon_id_in, local_index_t vertex_id_in)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#59
+```
 
 ### PolygonVertex
 
@@ -39,27 +50,39 @@ public void PolygonVertex(index_t polygon_id_in, local_index_t vertex_id_in)
 public void PolygonVertex(PolygonEdge polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#162
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const PolygonVertex & other)
+public bool operator==(const PolygonVertex & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#64
+```
 
 ### operator!=
 
 ```cpp
-public _Bool operator!=(const PolygonVertex & other)
+public bool operator!=(const PolygonVertex & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#69
+```
 
 ### operator<
 
 ```cpp
-public _Bool operator<(const PolygonVertex & other)
+public bool operator<(const PolygonVertex & other)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#73
+```
 
 ### string
 
@@ -67,6 +90,9 @@ public _Bool operator<(const PolygonVertex & other)
 public basic_string string()
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#81
+```
 
 ### serialize
 
@@ -74,6 +100,9 @@ public basic_string string()
 public void serialize(Archive & archive)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#175
+```
 
 
 

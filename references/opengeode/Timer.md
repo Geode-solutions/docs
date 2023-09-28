@@ -1,5 +1,8 @@
 # class Timer
 
+```cpp
+Defined at ../../include/geode/basic/timer.h#31
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void Timer()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/timer.cpp#54
+```
 
 ### Timer
 
@@ -16,6 +22,9 @@ public void Timer()
 public void Timer(Timer && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/timer.cpp#56
+```
 
 ### ~Timer
 
@@ -23,6 +32,9 @@ public void Timer(Timer && other)
 public void ~Timer()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/timer.cpp#60
+```
 
 ### duration
 
@@ -30,6 +42,9 @@ public void ~Timer()
 public basic_string duration()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/timer.cpp#62
+```
 
 ### reset
 
@@ -37,6 +52,9 @@ public basic_string duration()
 public void reset()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/basic/timer.cpp#67
+```
 
 
 

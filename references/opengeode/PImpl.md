@@ -1,5 +1,8 @@
 # class PImpl
 
+```cpp
+Defined at ../../include/geode/basic/pimpl.h#36
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void PImpl<T>(const PImpl<T> & )
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl.h#38
+```
 
 ### operator=
 
@@ -16,6 +22,9 @@ public void PImpl<T>(const PImpl<T> & )
 public PImpl<T> & operator=(const PImpl<T> & )
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl.h#38
+```
 
 ### PImpl
 
@@ -23,6 +32,9 @@ public PImpl<T> & operator=(const PImpl<T> & )
 public void PImpl<T>(Args &&... )
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#30
+```
 
 ### PImpl
 
@@ -30,6 +42,9 @@ public void PImpl<T>(Args &&... )
 public void PImpl<T>(PImpl<T> && other)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#37
+```
 
 ### ~PImpl
 
@@ -37,6 +52,9 @@ public void PImpl<T>(PImpl<T> && other)
 public void ~PImpl<T>()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#43
+```
 
 ### operator=
 
@@ -44,6 +62,9 @@ public void ~PImpl<T>()
 public PImpl<T> & operator=(PImpl<T> && other)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#48
+```
 
 ### reset
 
@@ -51,6 +72,9 @@ public PImpl<T> & operator=(PImpl<T> && other)
 public void reset()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#55
+```
 
 ### operator->
 
@@ -58,6 +82,9 @@ public void reset()
 public T * operator->()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#67
+```
 
 ### operator->
 
@@ -65,6 +92,9 @@ public T * operator->()
 public const T * operator->()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#61
+```
 
 ### operator*
 
@@ -72,6 +102,9 @@ public const T * operator->()
 public T & operator*()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#73
+```
 
 ### operator*
 
@@ -79,6 +112,9 @@ public T & operator*()
 public const T & operator*()
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#79
+```
 
 ### serialize
 
@@ -86,6 +122,9 @@ public const T & operator*()
 public void serialize(Archive & archive)
 ```
 
+```cpp
+Defined at ../../include/geode/basic/pimpl_impl.h#85
+```
 
 
 

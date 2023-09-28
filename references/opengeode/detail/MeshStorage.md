@@ -1,5 +1,8 @@
 # class MeshStorage
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/mesh_storage.h#39
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void MeshStorage<Mesh>()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/mesh_storage.h#42
+```
 
 ### set_mesh
 
@@ -16,6 +22,9 @@ public void MeshStorage<Mesh>()
 public void set_mesh(uuid new_mesh_uuid, std::unique_ptr<Mesh> mesh)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/mesh_storage.h#44
+```
 
 ### mesh
 
@@ -23,6 +32,9 @@ public void set_mesh(uuid new_mesh_uuid, std::unique_ptr<Mesh> mesh)
 public const Mesh & mesh()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/mesh_storage.h#52
+```
 
 ### modifiable_mesh
 
@@ -30,6 +42,9 @@ public const Mesh & mesh()
 public Mesh & modifiable_mesh()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/mesh_storage.h#57
+```
 
 ### mesh_type
 
@@ -37,6 +52,9 @@ public Mesh & modifiable_mesh()
 public const MeshImpl & mesh_type()
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/mesh_storage.h#62
+```
 
 ### serialize
 
@@ -44,6 +62,9 @@ public const MeshImpl & mesh_type()
 public void serialize(Archive & archive)
 ```
 
+```cpp
+Defined at ../../include/geode/model/mixin/core/detail/mesh_storage.h#68
+```
 
 
 

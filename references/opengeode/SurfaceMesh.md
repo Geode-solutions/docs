@@ -2,6 +2,9 @@
 
 # class SurfaceMesh
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#143
+```
 
  This class represents a Surface made up with polygons (triangles, quads, ...) of arbitrary dimension and provides mesh functionnalities.
 
@@ -27,6 +30,9 @@ Impl
 public void SurfaceMesh<dimension>(const SurfaceMesh<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#147
+```
 
 ### operator=
 
@@ -34,6 +40,9 @@ public void SurfaceMesh<dimension>(const SurfaceMesh<dimension> & )
 public SurfaceMesh<dimension> & operator=(const SurfaceMesh<dimension> & )
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/core/surface_mesh.h#147
+```
 
 ### ~SurfaceMesh
 
@@ -41,6 +50,9 @@ public SurfaceMesh<dimension> & operator=(const SurfaceMesh<dimension> & )
 public void ~SurfaceMesh<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#424
+```
 
 ### create
 
@@ -66,6 +78,9 @@ public std::unique_ptr<SurfaceMesh<dimension> > create(const MeshImpl & impl)
 public std::unique_ptr<SurfaceMesh<dimension> > clone()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#1038
+```
 
 ### nb_polygons
 
@@ -73,13 +88,19 @@ public std::unique_ptr<SurfaceMesh<dimension> > clone()
 public index_t nb_polygons()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#506
+```
 
 ### is_vertex_isolated
 
 ```cpp
-public _Bool is_vertex_isolated(index_t vertex_id)
+public bool is_vertex_isolated(index_t vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#512
+```
 
 ### nb_polygon_vertices
 
@@ -87,6 +108,9 @@ public _Bool is_vertex_isolated(index_t vertex_id)
 public local_index_t nb_polygon_vertices(index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#519
+```
 
  Return the number of vertices in a polygon
 
@@ -96,6 +120,9 @@ public local_index_t nb_polygon_vertices(index_t polygon_id)
 public local_index_t nb_polygon_edges(index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#527
+```
 
  Return the number of edges in a polygon
 
@@ -105,6 +132,9 @@ public local_index_t nb_polygon_edges(index_t polygon_id)
 public index_t polygon_vertex(const PolygonVertex & polygon_vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#444
+```
 
  Return the index in the mesh of a local vertex in a polygon
 
@@ -116,6 +146,9 @@ public index_t polygon_vertex(const PolygonVertex & polygon_vertex)
 public PolygonVertices polygon_vertices(index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#454
+```
 
  Return all the indices in the mesh of polygon vertices.
 
@@ -127,6 +160,9 @@ public PolygonVertices polygon_vertices(index_t polygon_id)
 public absl::optional<local_index_t> vertex_in_polygon(index_t polygon_id, index_t vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#467
+```
 
  Return the local index in the polygon of a vertex in the mesh.
 
@@ -142,6 +178,9 @@ public absl::optional<local_index_t> vertex_in_polygon(index_t polygon_id, index
 public index_t polygon_edge_vertex(const PolygonEdge & polygon_edge, local_index_t vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#749
+```
 
  Return the index in the mesh of a given polygon edge vertex.
 
@@ -155,6 +194,9 @@ public index_t polygon_edge_vertex(const PolygonEdge & polygon_edge, local_index
 public std::array<index_t, 2> polygon_edge_vertices(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#764
+```
 
  Return the indices in the mesh of the two polygon edge vertices.
 
@@ -166,6 +208,9 @@ public std::array<index_t, 2> polygon_edge_vertices(const PolygonEdge & polygon_
 public PolygonVertex next_polygon_vertex(const PolygonVertex & polygon_vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#534
+```
 
  Return the next vertex in a polygon (local indexation)
 
@@ -177,6 +222,9 @@ public PolygonVertex next_polygon_vertex(const PolygonVertex & polygon_vertex)
 public PolygonVertex previous_polygon_vertex(const PolygonVertex & polygon_vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#545
+```
 
  Return the previous vertex in a polygon (local indexation)
 
@@ -188,6 +236,9 @@ public PolygonVertex previous_polygon_vertex(const PolygonVertex & polygon_verte
 public PolygonEdge next_polygon_edge(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#556
+```
 
  Return the next edge in a polygon (local indexation)
 
@@ -199,6 +250,9 @@ public PolygonEdge next_polygon_edge(const PolygonEdge & polygon_edge)
 public PolygonEdge previous_polygon_edge(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#567
+```
 
  Return the previous edge in a polygon (local indexation)
 
@@ -210,6 +264,9 @@ public PolygonEdge previous_polygon_edge(const PolygonEdge & polygon_edge)
 public absl::optional<index_t> polygon_adjacent(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#578
+```
 
  Return the index of the polygon adjacent through an edge.
 
@@ -223,6 +280,9 @@ public absl::optional<index_t> polygon_adjacent(const PolygonEdge & polygon_edge
 public absl::optional<PolygonEdge> polygon_adjacent_edge(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#588
+```
 
  Return the index of the edge of the adjacent polygon through which polygons are adjacent.
 
@@ -233,9 +293,12 @@ public absl::optional<PolygonEdge> polygon_adjacent_edge(const PolygonEdge & pol
 ### is_vertex_on_border
 
 ```cpp
-public _Bool is_vertex_on_border(index_t vertex_id)
+public bool is_vertex_on_border(index_t vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#806
+```
 
  Return true if the vertex is on border, i.e. if there are polygons around this vertex and on the border.
 
@@ -244,9 +307,12 @@ public _Bool is_vertex_on_border(index_t vertex_id)
 ### is_edge_on_border
 
 ```cpp
-public _Bool is_edge_on_border(const PolygonEdge & polygon_edge)
+public bool is_edge_on_border(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#656
+```
 
  Return true if the edge is on border, i.e. if the polygon has no adjacent through the specified edge.
 
@@ -255,9 +321,12 @@ public _Bool is_edge_on_border(const PolygonEdge & polygon_edge)
 ### is_polygon_on_border
 
 ```cpp
-public _Bool is_polygon_on_border(index_t polygon_id)
+public bool is_polygon_on_border(index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#663
+```
 
  Return true if at least one of the polygon edges is on border
 
@@ -269,6 +338,9 @@ public _Bool is_polygon_on_border(index_t polygon_id)
 public PolygonEdgesOnBorder polygon_edges_on_border(index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#670
+```
 
  Return all the edges of a polygon that are on border
 
@@ -280,6 +352,9 @@ public PolygonEdgesOnBorder polygon_edges_on_border(index_t polygon_id)
 public PolygonEdge next_on_border(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#686
+```
 
  Return the next edge on the border (local indexation).
 
@@ -293,6 +368,9 @@ public PolygonEdge next_on_border(const PolygonEdge & polygon_edge)
 public PolygonEdge previous_on_border(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#702
+```
 
  Return the previous edge on the border (local indexation).
 
@@ -306,6 +384,9 @@ public PolygonEdge previous_on_border(const PolygonEdge & polygon_edge)
 public double edge_length(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#718
+```
 
  Return the length of a given edge.
 
@@ -317,6 +398,9 @@ public double edge_length(const PolygonEdge & polygon_edge)
 public double edge_length(const std::array<index_t, 2> & polygon_edge_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#725
+```
 
 ### edge_barycenter
 
@@ -324,6 +408,9 @@ public double edge_length(const std::array<index_t, 2> & polygon_edge_vertices)
 public Point<dimension> edge_barycenter(const PolygonEdge & polygon_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#733
+```
 
  Return the coordinates of the barycenter of a given edge.
 
@@ -335,6 +422,9 @@ public Point<dimension> edge_barycenter(const PolygonEdge & polygon_edge)
 public Point<dimension> edge_barycenter(const std::array<index_t, 2> & polygon_edge_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#740
+```
 
 ### polygon_barycenter
 
@@ -342,6 +432,9 @@ public Point<dimension> edge_barycenter(const std::array<index_t, 2> & polygon_e
 public Point<dimension> polygon_barycenter(index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#772
+```
 
  Return the barycenter of a polygon
 
@@ -365,6 +458,9 @@ public double polygon_area(index_t polygon_id)
 public typename std::enable_if<T == 3, absl::optional<Vector3D> >::type polygon_normal(index_t polygon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#985
+```
 
  Return the normal of a polygon
 
@@ -374,6 +470,9 @@ public typename std::enable_if<T == 3, absl::optional<Vector3D> >::type polygon_
 public typename std::enable_if<T == 3, absl::optional<Vector3D> >::type polygon_vertex_normal(index_t vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#1014
+```
 
  Return the normal at a polygon vertex
 
@@ -383,6 +482,9 @@ public typename std::enable_if<T == 3, absl::optional<Vector3D> >::type polygon_
 public const PolygonsAroundVertex & polygons_around_vertex(index_t vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#785
+```
 
  Get all the polygons with one of the vertices matching given vertex.
 
@@ -396,6 +498,9 @@ public const PolygonsAroundVertex & polygons_around_vertex(index_t vertex_id)
 public const PolygonsAroundVertex & polygons_around_vertex(const PolygonVertex & vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#795
+```
 
  Get all the polygons with one of the vertices matching given vertex.
 
@@ -409,6 +514,9 @@ public const PolygonsAroundVertex & polygons_around_vertex(const PolygonVertex &
 public absl::optional<PolygonEdge> polygon_edge_from_vertices(index_t from_vertex_id, index_t to_vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#815
+```
 
  Find the polygon edge corresponding to an ordered pair of vertex indices.
 
@@ -424,6 +532,9 @@ public absl::optional<PolygonEdge> polygon_edge_from_vertices(index_t from_verte
 public PolygonsAroundEdge polygons_from_edge_vertices(Span edge_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#831
+```
 
  Find the polygon edges corresponding to a pair of vertex indices.
 
@@ -432,9 +543,12 @@ public PolygonsAroundEdge polygons_from_edge_vertices(Span edge_vertices)
 ### are_edges_enabled
 
 ```cpp
-public _Bool are_edges_enabled()
+public bool are_edges_enabled()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#856
+```
 
 ### enable_edges
 
@@ -442,6 +556,9 @@ public _Bool are_edges_enabled()
 public void enable_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#862
+```
 
 ### disable_edges
 
@@ -449,6 +566,9 @@ public void enable_edges()
 public void disable_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#868
+```
 
 ### edges
 
@@ -456,6 +576,9 @@ public void disable_edges()
 public const SurfaceEdges<dimension> & edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#874
+```
 
 ### polygon_attribute_manager
 
@@ -463,6 +586,9 @@ public const SurfaceEdges<dimension> & edges()
 public AttributeManager & polygon_attribute_manager()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#893
+```
 
  Access to the manager of attributes associated with polygons.
 
@@ -472,6 +598,9 @@ public AttributeManager & polygon_attribute_manager()
 public TextureManager2D texture_manager()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#1048
+```
 
 ### bounding_box
 
@@ -479,6 +608,9 @@ public TextureManager2D texture_manager()
 public BoundingBox<dimension> bounding_box()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#927
+```
 
  Compute the bounding box from mesh vertices
 
@@ -488,6 +620,9 @@ public BoundingBox<dimension> bounding_box()
 public absl::optional<PolygonVertex> polygon_around_vertex(index_t vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#482
+```
 
  Return one polygon with one of the vertices matching given vertex.
 
@@ -499,6 +634,9 @@ public absl::optional<PolygonVertex> polygon_around_vertex(index_t vertex_id)
 public void associate_polygon_vertex_to_vertex(const PolygonVertex & polygon_vertex, index_t vertex_id, SurfaceMeshKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#499
+```
 
 ### reset_polygons_around_vertex
 
@@ -506,6 +644,9 @@ public void associate_polygon_vertex_to_vertex(const PolygonVertex & polygon_ver
 public void reset_polygons_around_vertex(index_t vertex_id, SurfaceMeshKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#938
+```
 
 ### edges
 
@@ -513,6 +654,9 @@ public void reset_polygons_around_vertex(index_t vertex_id, SurfaceMeshKey )
 public SurfaceEdges<dimension> & edges(SurfaceMeshKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#880
+```
 
 ### copy_edges
 
@@ -520,6 +664,9 @@ public SurfaceEdges<dimension> & edges(SurfaceMeshKey )
 public void copy_edges(const SurfaceMesh<dimension> & surface_mesh, SurfaceMeshKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#886
+```
 
 ### SurfaceMesh
 
@@ -527,6 +674,9 @@ public void copy_edges(const SurfaceMesh<dimension> & surface_mesh, SurfaceMeshK
 protected void SurfaceMesh<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#400
+```
 
 ### SurfaceMesh
 
@@ -534,6 +684,9 @@ protected void SurfaceMesh<dimension>()
 protected void SurfaceMesh<dimension>(SurfaceMesh<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#405
+```
 
 ### operator=
 
@@ -541,6 +694,9 @@ protected void SurfaceMesh<dimension>(SurfaceMesh<dimension> && other)
 protected SurfaceMesh<dimension> & operator=(SurfaceMesh<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#413
+```
 
 ### create
 
@@ -548,6 +704,9 @@ protected SurfaceMesh<dimension> & operator=(SurfaceMesh<dimension> && other)
 public int create()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#429
+```
 
 ### create
 
@@ -555,6 +714,9 @@ public int create()
 public int create(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#437
+```
 
 ### get_polygon_around_vertex
 
@@ -562,6 +724,9 @@ public int create(const MeshImpl & impl)
 public absl::optional<PolygonVertex> get_polygon_around_vertex(index_t vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#491
+```
 
 
 

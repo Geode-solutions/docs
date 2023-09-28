@@ -1,5 +1,8 @@
 # class OpenGeodeTriangulatedSurfaceInput
 
+```cpp
+Defined at ../../include/geode/mesh/io/geode/geode_triangulated_surface_input.h#32
+```
 
 ```cpp
 Inherits from TriangulatedSurfaceInput<dimension>
@@ -15,6 +18,9 @@ Inherits from TriangulatedSurfaceInput<dimension>
 public void OpenGeodeTriangulatedSurfaceInput<dimension>(string_view filename)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/geode/geode_triangulated_surface_input.h#32
+```
 
 ### read
 
@@ -22,6 +28,9 @@ public void OpenGeodeTriangulatedSurfaceInput<dimension>(string_view filename)
 public std::unique_ptr<TriangulatedSurface<dimension> > read(const MeshImpl & impl)
 ```
 
+```cpp
+Defined at ../../include/geode/mesh/io/geode/geode_triangulated_surface_input.h#32
+```
 
 
 

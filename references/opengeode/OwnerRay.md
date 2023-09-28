@@ -1,5 +1,8 @@
 # class OwnerRay
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#258
+```
 
 ```cpp
 Inherits from GenericLine<Point<3U>, 3U>
@@ -9,6 +12,9 @@ Inherits from GenericLine<Point<3U>, 3U>
 
 # class OwnerRay
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#256
+```
 
 ```cpp
 Inherits from GenericLine<Point<1U>, 1U>
@@ -18,6 +24,9 @@ Inherits from GenericLine<Point<1U>, 1U>
 
 # class OwnerRay
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#257
+```
 
 ```cpp
 Inherits from GenericLine<Point<2U>, 2U>
@@ -27,6 +36,9 @@ Inherits from GenericLine<Point<2U>, 2U>
 
 # class OwnerRay
 
+```cpp
+Defined at ../../include/geode/geometry/basic_objects/infinite_line.h#88
+```
 
 ```cpp
 Inherits from GenericLine<Point<dimension>, dimension>
@@ -42,6 +54,9 @@ Inherits from GenericLine<Point<dimension>, dimension>
 public void OwnerRay<>(const Vector<dimension> & direction, Point<dimension> origin)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#170
+```
 
 ### OwnerRay
 
@@ -49,6 +64,9 @@ public void OwnerRay<>(const Vector<dimension> & direction, Point<dimension> ori
 public void OwnerRay<>(const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#176
+```
 
 ### OwnerRay
 
@@ -56,6 +74,9 @@ public void OwnerRay<>(const Segment<dimension> & segment)
 public void OwnerRay<>(const OwnerRay<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#181
+```
 
 ### operator=
 
@@ -63,6 +84,9 @@ public void OwnerRay<>(const OwnerRay<dimension> & other)
 public OwnerRay<dimension> & operator=(const OwnerRay<dimension> & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#186
+```
 
 ### OwnerRay
 
@@ -70,6 +94,9 @@ public OwnerRay<dimension> & operator=(const OwnerRay<dimension> & other)
 public void OwnerRay<>(OwnerRay<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#193
+```
 
 ### operator=
 
@@ -77,6 +104,9 @@ public void OwnerRay<>(OwnerRay<dimension> && other)
 public OwnerRay<dimension> & operator=(OwnerRay<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/infinite_line.cpp#198
+```
 
 
 
