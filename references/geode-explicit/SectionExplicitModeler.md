@@ -1,5 +1,8 @@
 # class SectionExplicitModeler
 
+```cpp
+Defined at ../include/geode/explicit/section/section_explicit_modeler.h#24
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void SectionExplicitModeler(const SectionExplicitModeler & )
 ```
 
+```cpp
+Defined at ../include/geode/explicit/section/section_explicit_modeler.h#26
+```
 
 ### operator=
 
@@ -22,6 +28,9 @@ public void SectionExplicitModeler(const SectionExplicitModeler & )
 public SectionExplicitModeler & operator=(const SectionExplicitModeler & )
 ```
 
+```cpp
+Defined at ../include/geode/explicit/section/section_explicit_modeler.h#26
+```
 
 ### SectionExplicitModeler
 
@@ -29,6 +38,9 @@ public SectionExplicitModeler & operator=(const SectionExplicitModeler & )
 public void SectionExplicitModeler(BoundingBox2D bbox)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/explicit/section/section_explicit_modeler.cpp#249
+```
 
 ### ~SectionExplicitModeler
 
@@ -36,6 +48,9 @@ public void SectionExplicitModeler(BoundingBox2D bbox)
 public void ~SectionExplicitModeler()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/explicit/section/section_explicit_modeler.cpp#254
+```
 
 ### select_curve_to_insert
 
@@ -43,6 +58,9 @@ public void ~SectionExplicitModeler()
 public void select_curve_to_insert(const EdgedCurve2D & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/explicit/section/section_explicit_modeler.cpp#258
+```
 
 ### insert_and_build
 
@@ -50,6 +68,9 @@ public void select_curve_to_insert(const EdgedCurve2D & mesh)
 public std::tuple<Section, ModelGenericMapping> insert_and_build()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/explicit/section/section_explicit_modeler.cpp#264
+```
 
  Returns the Merged Section including all the added curves and gives the "input to output" and "output to input" mappings between Lines
 

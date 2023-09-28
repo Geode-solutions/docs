@@ -1,5 +1,8 @@
 # class ExplicitCommonLibrary
 
+```cpp
+Defined at ../include/geode/explicit/common/common.h#14
+```
 
 ```cpp
 Inherits from Library
@@ -15,6 +18,9 @@ Inherits from Library
 public void initialize()
 ```
 
+```cpp
+Defined at ../include/geode/explicit/common/common.h#14
+```
 
 
 

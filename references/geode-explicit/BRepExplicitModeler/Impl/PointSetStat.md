@@ -1,18 +1,24 @@
 # struct PointSetStat
 
+```cpp
+Defined at /github/workspace/src/geode/explicit/brep/brep_explicit_modeler.cpp#3137
+```
 
 ## Members
 
 ```cpp
 public index_t ref_position
+
 ```
 
 ```cpp
 public index_t nb_points
+
 ```
 
 ```cpp
 public Point3D bbox_min
+
 ```
 
 
@@ -22,9 +28,12 @@ public Point3D bbox_min
 ### operator<
 
 ```cpp
-public _Bool operator<(const PointSetStat & other)
+public bool operator<(const PointSetStat & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/explicit/brep/brep_explicit_modeler.cpp#3139
+```
 
 
 
