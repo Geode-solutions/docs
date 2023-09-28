@@ -1,5 +1,8 @@
 # class BackgroundSolidDecimator
 
+```cpp
+Defined at ../include/geode/background/solid/private/background_solid_decimator.h#23
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void BackgroundSolidDecimator(BackgroundSolid & background)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/solid/background_solid_decimator.cpp#435
+```
 
 ### ~BackgroundSolidDecimator
 
@@ -22,13 +28,19 @@ public void BackgroundSolidDecimator(BackgroundSolid & background)
 public void ~BackgroundSolidDecimator()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/solid/background_solid_decimator.cpp#441
+```
 
 ### decimate
 
 ```cpp
-public _Bool decimate()
+public bool decimate()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/solid/background_solid_decimator.cpp#445
+```
 
 
 

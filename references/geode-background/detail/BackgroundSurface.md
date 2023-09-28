@@ -1,5 +1,8 @@
 # class BackgroundSurface
 
+```cpp
+Defined at ../include/geode/background/surface/private/background_surface.h#28
+```
 
 ```cpp
 Inherits from MacroInfo2D
@@ -21,6 +24,9 @@ Impl
 public void BackgroundSurface(TriangulatedSurface2D && surface)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface.cpp#48
+```
 
 ### BackgroundSurface
 
@@ -28,6 +34,9 @@ public void BackgroundSurface(TriangulatedSurface2D && surface)
 public void BackgroundSurface(BackgroundSurface && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface.cpp#40
+```
 
 ### ~BackgroundSurface
 
@@ -35,6 +44,9 @@ public void BackgroundSurface(BackgroundSurface && other)
 public void ~BackgroundSurface()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface.cpp#71
+```
 
 ### impl_name_static
 
@@ -42,6 +54,9 @@ public void ~BackgroundSurface()
 public NamedType impl_name_static()
 ```
 
+```cpp
+Defined at ../include/geode/background/surface/private/background_surface.h#40
+```
 
 ### impl_name
 
@@ -49,6 +64,9 @@ public NamedType impl_name_static()
 public NamedType impl_name()
 ```
 
+```cpp
+Defined at ../include/geode/background/surface/private/background_surface.h#45
+```
 
 ### clone
 
@@ -56,6 +74,9 @@ public NamedType impl_name()
 public BackgroundSurface clone()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface.cpp#73
+```
 
 ### clone_surface
 
@@ -63,6 +84,9 @@ public BackgroundSurface clone()
 public int clone_surface()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface.cpp#81
+```
 
 ### release_surface
 
@@ -70,6 +94,9 @@ public int clone_surface()
 public OpenGeodeTriangulatedSurface2D release_surface()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface.cpp#94
+```
 
 ### one_border_polygon_edge
 
@@ -77,6 +104,9 @@ public OpenGeodeTriangulatedSurface2D release_surface()
 public PolygonEdge one_border_polygon_edge()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface.cpp#103
+```
 
 ### triangle_target_length
 
@@ -84,6 +114,9 @@ public PolygonEdge one_border_polygon_edge()
 public double triangle_target_length(index_t triangle_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface.cpp#127
+```
 
 
 

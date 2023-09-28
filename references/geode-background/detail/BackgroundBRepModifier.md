@@ -1,5 +1,8 @@
 # class BackgroundBRepModifier
 
+```cpp
+Defined at ../include/geode/background/brep/private/background_brep_modifier.h#24
+```
 
 ```cpp
 Inherits from BackgroundBRepBuilder, BRepGeometricModifier
@@ -15,6 +18,9 @@ Inherits from BackgroundBRepBuilder, BRepGeometricModifier
 public void BackgroundBRepModifier(BackgroundBRep & background_brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#180
+```
 
 ### ~BackgroundBRepModifier
 
@@ -22,6 +28,9 @@ public void BackgroundBRepModifier(BackgroundBRep & background_brep)
 public void ~BackgroundBRepModifier()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#188
+```
 
 ### split_tetrahedron
 
@@ -29,6 +38,9 @@ public void ~BackgroundBRepModifier()
 public BRepSplitTetrahedronInfo split_tetrahedron(const Block3D & block, index_t tetrahedron, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#192
+```
 
 ### split_triangle
 
@@ -36,6 +48,9 @@ public BRepSplitTetrahedronInfo split_tetrahedron(const Block3D & block, index_t
 public BRepSplitTriangleInfo split_triangle(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#199
+```
 
 ### split_triangle
 
@@ -43,6 +58,9 @@ public BRepSplitTriangleInfo split_triangle(const Block3D & block, const Polyhed
 public BRepSplitTriangleInfo split_triangle(const Surface3D & surface, index_t triangle, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#206
+```
 
 ### split_edge
 
@@ -50,6 +68,9 @@ public BRepSplitTriangleInfo split_triangle(const Surface3D & surface, index_t t
 public BRepSplitPolygonEdgeInfo split_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#213
+```
 
 ### split_edge
 
@@ -57,6 +78,9 @@ public BRepSplitPolygonEdgeInfo split_edge(const Block3D & block, const Polyhedr
 public BRepSplitPolygonEdgeInfo split_edge(const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#220
+```
 
 ### split_edge
 
@@ -64,6 +88,9 @@ public BRepSplitPolygonEdgeInfo split_edge(const Surface3D & surface, const Poly
 public BRepSplitPolygonEdgeInfo split_edge(const Line3D & line, index_t edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#227
+```
 
 ### collapse_edge
 
@@ -71,6 +98,9 @@ public BRepSplitPolygonEdgeInfo split_edge(const Line3D & line, index_t edge, co
 public BRepCollapsePolygonEdgeInfo collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#234
+```
 
 ### collapse_edge
 
@@ -78,6 +108,9 @@ public BRepCollapsePolygonEdgeInfo collapse_edge(const Block3D & block, const Po
 public BRepCollapsePolygonEdgeInfo collapse_edge(const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#241
+```
 
 ### collapse_edge
 
@@ -85,6 +118,9 @@ public BRepCollapsePolygonEdgeInfo collapse_edge(const Surface3D & surface, cons
 public BRepCollapsePolygonEdgeInfo collapse_edge(const Line3D & line, index_t edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#248
+```
 
 ### clean_background_brep
 
@@ -92,6 +128,9 @@ public BRepCollapsePolygonEdgeInfo collapse_edge(const Line3D & line, index_t ed
 public CleanMappings clean_background_brep()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#255
+```
 
 
 

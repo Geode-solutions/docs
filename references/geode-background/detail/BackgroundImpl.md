@@ -1,5 +1,8 @@
 # class BackgroundImpl
 
+```cpp
+Defined at ../include/geode/background/common/private/background_impl.h#19
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void BackgroundImpl(const Mesh & mesh)
 ```
 
+```cpp
+Defined at ../include/geode/background/common/private/background_impl.h#23
+```
 
 ### target_length
 
@@ -16,6 +22,9 @@ public void BackgroundImpl(const Mesh & mesh)
 public double target_length(index_t element)
 ```
 
+```cpp
+Defined at ../include/geode/background/common/private/background_impl.h#42
+```
 
 
 

@@ -1,5 +1,8 @@
 # class BackgroundSurfaceOptimizer
 
+```cpp
+Defined at ../include/geode/background/surface/private/background_surface_optimizer.h#26
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void BackgroundSurfaceOptimizer(const BackgroundSurface & background, BackgroundSurfaceModifier & modifier)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#996
+```
 
 ### ~BackgroundSurfaceOptimizer
 
@@ -22,6 +28,9 @@ public void BackgroundSurfaceOptimizer(const BackgroundSurface & background, Bac
 public void ~BackgroundSurfaceOptimizer()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1003
+```
 
 ### optimize_background_elements
 
@@ -29,6 +38,9 @@ public void ~BackgroundSurfaceOptimizer()
 public void optimize_background_elements()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1007
+```
 
 ### optimize_background_elements
 
@@ -36,6 +48,9 @@ public void optimize_background_elements()
 public void optimize_background_elements(index_t first_element)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1013
+```
 
 ### optimize_background_elements
 
@@ -43,6 +58,9 @@ public void optimize_background_elements(index_t first_element)
 public void optimize_background_elements(index_t first_element, Span immuable_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1020
+```
 
 
 

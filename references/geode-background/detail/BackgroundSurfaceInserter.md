@@ -1,5 +1,8 @@
 # class BackgroundSurfaceInserter
 
+```cpp
+Defined at ../include/geode/background/surface/private/background_surface_inserter.h#28
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void BackgroundSurfaceInserter(BackgroundSurface & background)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_inserter.cpp#661
+```
 
 ### ~BackgroundSurfaceInserter
 
@@ -22,6 +28,9 @@ public void BackgroundSurfaceInserter(BackgroundSurface & background)
 public void ~BackgroundSurfaceInserter()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_inserter.cpp#667
+```
 
 ### insert_curve
 
@@ -29,6 +38,9 @@ public void ~BackgroundSurfaceInserter()
 public void insert_curve(const EdgedCurve2D & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_inserter.cpp#671
+```
 
 ### insert_curve_edges
 
@@ -36,6 +48,9 @@ public void insert_curve(const EdgedCurve2D & mesh)
 public void insert_curve_edges(const EdgedCurve2D & mesh, Span edges_ids)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_inserter.cpp#686
+```
 
 ### insert_point_set
 
@@ -43,6 +58,9 @@ public void insert_curve_edges(const EdgedCurve2D & mesh, Span edges_ids)
 public void insert_point_set(const PointSet2D & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_inserter.cpp#678
+```
 
 ### insert_point_set_points
 
@@ -50,6 +68,9 @@ public void insert_point_set(const PointSet2D & mesh)
 public void insert_point_set_points(const PointSet2D & mesh, Span vertex_ids)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_inserter.cpp#692
+```
 
 ### insert_scalar_function_isovalues
 
@@ -57,6 +78,9 @@ public void insert_point_set_points(const PointSet2D & mesh, Span vertex_ids)
 public void insert_scalar_function_isovalues(string_view function_name, absl::Span<const double> isovalues)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/surface/background_surface_inserter.cpp#698
+```
 
 
 

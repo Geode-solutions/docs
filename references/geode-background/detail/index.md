@@ -23,7 +23,8 @@
 * [BackgroundSurface](BackgroundSurface.md)
 * [Background](Background.md)
 * [EdgeMacroInfoConfig](EdgeMacroInfoConfig.md)
-* [ForbiddenElements](ForbiddenElements.md)
+* [ForbiddenSolidElements](ForbiddenSolidElements.md)
+* [ForbiddenSurfaceElements](ForbiddenSurfaceElements.md)
 * [MacroEdgeSolidPathFinder](MacroEdgeSolidPathFinder.md)
 * [MacroInfo2D](MacroInfo2D.md)
 * [MacroInfo3D](MacroInfo3D.md)
@@ -37,19 +38,25 @@
 
 ## Functions
 
-### repair_background_elements
+### repair_background_surface_elements
 
 ```cpp
-void repair_background_elements(const BackgroundSurface & background, BackgroundSurfaceModifier & modifier, absl::Span<const index_t> triangles, const ForbiddenElements & forbidden_elements, absl::Span<const index_t> immuable_vertices)
+void repair_background_surface_elements(const BackgroundSurface & background, BackgroundSurfaceModifier & modifier, absl::Span<const index_t> triangles, const ForbiddenSurfaceElements & forbidden_elements, absl::Span<const index_t> immuable_vertices)
 ```
-
-
-### repair_background_elements
 
 ```cpp
-void repair_background_elements(const BackgroundSolid & background, BackgroundSolidModifier & modifier, Span tetrahedra, const ForbiddenElements & forbidden_elements, Span immuable_vertices)
+Defined at /github/workspace/src/geode/background/surface/background_surface_repairer.cpp#867
 ```
 
+### repair_background_solid_elements
+
+```cpp
+void repair_background_solid_elements(const BackgroundSolid & background, BackgroundSolidModifier & modifier, Span tetrahedra, const ForbiddenSolidElements & forbidden_elements, Span immuable_vertices)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/background/solid/background_solid_repairer.cpp#3389
+```
 
 ### decimate_brep
 
@@ -57,6 +64,9 @@ void repair_background_elements(const BackgroundSolid & background, BackgroundSo
 void decimate_brep(const BRep & brep, BRepGeometricModifier & modifier, string_view vertex_tag_attribute_name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_decimator.cpp#691
+```
 
 ### decimate_background_brep
 
@@ -64,6 +74,9 @@ void decimate_brep(const BRep & brep, BRepGeometricModifier & modifier, string_v
 void decimate_background_brep(const BackgroundBRep & brep, BackgroundBRepModifier & modifier)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/background/brep/background_brep_decimator.cpp#700
+```
 
 
 
@@ -80,6 +93,9 @@ void decimate_background_brep(const BackgroundBRep & brep, BackgroundBRepModifie
 | other |
 
 
+```cpp
+Defined at ../include/geode/background/common/private/macro_info.h#30
+```
 
 
 
