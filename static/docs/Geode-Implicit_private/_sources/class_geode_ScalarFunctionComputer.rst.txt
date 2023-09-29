@@ -1,0 +1,40 @@
+.. index:: pair: class; geode::ScalarFunctionComputer
+.. _doxid-classgeode_1_1_scalar_function_computer:
+
+template class geode::ScalarFunctionComputer
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <scalar_function_computation.h>
+	
+	template <index_t dimension>
+	class ScalarFunctionComputer
+	{
+	public:
+		// construction
+	
+		:target:`ScalarFunctionComputer<doxid-classgeode_1_1_scalar_function_computer_1ad632cf8fcb64d2a09a02a57325e00eab>`(
+			const DataConstraintsManager<dimension>& constraints_manager,
+			const BoundingBox<dimension>& computation_bbox,
+			double min_cell_length
+			);
+
+		// methods
+	
+		void :target:`compute_scalar_function<doxid-classgeode_1_1_scalar_function_computer_1a272a9257d85abbdfdca8df9945d5f6e2>`(absl::string_view scalar_function_name);
+	
+		void :target:`compute_scalar_function_with_value_preconditioning<doxid-classgeode_1_1_scalar_function_computer_1a576293013547e141f47693efdc4d0578>`(
+			absl::string_view scalar_function_name,
+			absl::string_view existing_scalar_function_name
+			);
+	
+		const LightRegularGrid<dimension>& :target:`grid_with_results<doxid-classgeode_1_1_scalar_function_computer_1a13f4bb96bb9bf800fc65d9afa669272d>`() const;
+	};

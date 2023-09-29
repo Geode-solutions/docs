@@ -1,0 +1,52 @@
+.. index:: pair: class; geode::CutSurfaceGrid
+.. _doxid-classgeode_1_1_cut_surface_grid:
+
+class geode::CutSurfaceGrid
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cut_surface_grid.h>
+	
+	class CutSurfaceGrid: public CutGrid2D
+	{
+	public:
+		// typedefs
+	
+		typedef typename Grid2D::CellIndices :target:`CellIndices<doxid-classgeode_1_1_cut_surface_grid_1a5c4d1261741034453ed2777ae37cb1e5>`;
+		typedef typename Grid2D::VertexIndices :target:`VertexIndices<doxid-classgeode_1_1_cut_surface_grid_1aa68cd35905bc3de624fd0235f7c8559c>`;
+
+		// construction
+	
+		:target:`CutSurfaceGrid<doxid-classgeode_1_1_cut_surface_grid_1a1bc26dd8b0dd4147661db1f690c5935b>`(
+			Point2D origin,
+			std::array<index_t, 2> cells_number,
+			std::array<double, 2> cells_length
+			);
+	
+		:target:`CutSurfaceGrid<doxid-classgeode_1_1_cut_surface_grid_1a9ae28d10139b98bc1409618943c0e6f6>`(CutSurfaceGrid&& other);
+
+		// methods
+	
+		void :target:`add_discontinuity<doxid-classgeode_1_1_cut_surface_grid_1a76ec5d06bab596e7e928c612c49ccfbc>`(const EdgedCurve2D& curve);
+	
+		index_t :target:`node_index<doxid-classgeode_1_1_cut_surface_grid_1a9a055e775b83290eefece1d8b4dd636b>`(
+			const :ref:`CellIndices<doxid-classgeode_1_1_cut_surface_grid_1a5c4d1261741034453ed2777ae37cb1e5>`& cell_id,
+			const :ref:`VertexIndices<doxid-classgeode_1_1_cut_surface_grid_1aa68cd35905bc3de624fd0235f7c8559c>`& vertex_id,
+			index_t cell_duplicate_id
+			) const;
+	
+		index_t :target:`cell_duplicate_index<doxid-classgeode_1_1_cut_surface_grid_1a52e4eeb603b89c345aaf245757bb3891>`(
+			const :ref:`CellIndices<doxid-classgeode_1_1_cut_surface_grid_1a5c4d1261741034453ed2777ae37cb1e5>`& index,
+			local_index_t cell_node_id
+			) const;
+	
+		index_t :target:`cell_duplicate_index<doxid-classgeode_1_1_cut_surface_grid_1aa17a17e06b9cfa9fa14a409a4bd1140a>`(const :ref:`CellIndices<doxid-classgeode_1_1_cut_surface_grid_1a5c4d1261741034453ed2777ae37cb1e5>`& index, const Point2D& position) const;
+	};

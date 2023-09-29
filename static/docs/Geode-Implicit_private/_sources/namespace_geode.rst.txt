@@ -1,0 +1,119 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+	namespace_geode_detail.rst
+	class_geode_CutSurfaceGrid.rst
+	class_geode_GridScalarFunctionExpliciter2D.rst
+	class_geode_GridScalarFunctionExpliciter3D.rst
+	class_geode_ImplicitBlockModeler.rst
+	class_geode_ImplicitDataManager.rst
+	class_geode_ImplicitStructuralModelHorizonExpliciter.rst
+	class_geode_ImplicitStructuralModeler.rst
+	class_geode_ScalarFunctionComputer.rst
+	class_geode_SolidMeshScalarFunctionExpliciter.rst
+	class_geode_StratigraphicModelInserter.rst
+	class_geode_StratigraphicSectionInserter.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// namespaces
+
+	namespace :ref:`geode::detail<doxid-namespacegeode_1_1detail>`;
+
+	// typedefs
+
+	typedef ModuleLicenseChecker<Implicit> :target:`ImplicitLicenseChecker<doxid-namespacegeode_1af2d816982254e4b6eb09e887321ddf0a>`;
+
+	// classes
+
+	class :ref:`CutSurfaceGrid<doxid-classgeode_1_1_cut_surface_grid>`;
+	class :ref:`GridScalarFunctionExpliciter2D<doxid-classgeode_1_1_grid_scalar_function_expliciter2_d>`;
+	class :ref:`GridScalarFunctionExpliciter3D<doxid-classgeode_1_1_grid_scalar_function_expliciter3_d>`;
+	class :ref:`ImplicitBlockModeler<doxid-classgeode_1_1_implicit_block_modeler>`;
+
+	template <index_t dimension>
+	class :ref:`ImplicitDataManager<doxid-classgeode_1_1_implicit_data_manager>`;
+
+	class :ref:`ImplicitStructuralModelHorizonExpliciter<doxid-classgeode_1_1_implicit_structural_model_horizon_expliciter>`;
+	class :ref:`ImplicitStructuralModeler<doxid-classgeode_1_1_implicit_structural_modeler>`;
+
+	template <index_t dimension>
+	class :ref:`ScalarFunctionComputer<doxid-classgeode_1_1_scalar_function_computer>`;
+
+	class :ref:`SolidMeshScalarFunctionExpliciter<doxid-classgeode_1_1_solid_mesh_scalar_function_expliciter>`;
+	class :ref:`StratigraphicModelInserter<doxid-classgeode_1_1_stratigraphic_model_inserter>`;
+	class :ref:`StratigraphicSectionInserter<doxid-classgeode_1_1_stratigraphic_section_inserter>`;
+
+	// global variables
+
+	static constexpr auto :target:`imported_3d_stratigraphic_attribute_name<doxid-namespacegeode_1a3a122de16a91abf72199f1c757746ba9>` =         "geode_3d_stratigraphic_location";
+	static constexpr char :target:`Implicit<doxid-namespacegeode_1a77dca4d07c178e71e31a99158e732c9a>`[] = "Implicit";
+
+	// global functions
+
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1addb2cc9478247a5efa4486ca94ff370a>`(geode_implicit_explicitation_api, ImplicitExplicitation);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aec45feff83bfe89a3608ad215c769920>`(Grid);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a7d67c14dd43bacc363bd24500f5b531f>`(Grid);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a1ddeb21714a09b8da27ca40858681e57>`(Grid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ad3992ab412f660265280d8e3d236c5ca>`(Horizon);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a821ea1d585a9128515de37f6c393d55b>`(Horizon);
+
+	ImplicitCrossSection geode_implicit_explicitation_api :target:`extract_implicit_cross_section_from_axis<doxid-namespacegeode_1a7392de66afff723052af19ac9b692506>`(
+		const ImplicitStructuralModel& model,
+		local_index_t axis_direction,
+		double axis_coordinate
+		);
+
+	StratigraphicSection geode_implicit_explicitation_api :target:`extract_stratigraphic_section_from_axis<doxid-namespacegeode_1ac9bdac50825997c1e374284a102584a7>`(
+		const StratigraphicModel& model,
+		local_index_t axis_direction,
+		double axis_coordinate
+		);
+
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8ac5cec34b9c5986e0c83548aeb19f2d>`(SolidMesh);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3b78e29335d938bae6153ff18f271541>`(SolidMesh);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(TetrahedralSolid);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a50b76b8860927ac1645b6e89e247216d>`(geode_implicit_implicitation_api, ImplicitImplicitation);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
+	:target:`ALIAS_2D<doxid-namespacegeode_1aae4bea6f137a47558d5d46c1f90525b8>`(EdgedCurve);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a48dc7dc04a72af2e68092c3d4b4696ab>`(BoundingBox);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8226455f1ae2fc82097592d31df16ed6>`(LightRegularGrid);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a9840247c5cb7eefc58fabfdf1046dfc8>`(DataConstraintsManager);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a329c615ac9ed2912f190957a56a79a8d>`(:ref:`ScalarFunctionComputer<doxid-classgeode_1_1_scalar_function_computer>`);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a0526438cd2829ea7b2bd775ac20e0026>`(geode_implicit_insertion_api, ImplicitInsertion);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
+	:target:`ALIAS_3D<doxid-namespacegeode_1af40a127c86216f0ba2c8d1276fe61644>`(TriangulatedSurface);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a0f80bdfb4040f00dca8528bfcaa32eee>`(geode_implicit_io_api, ImplicitIO);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1aa6be40dcd3c97c17d3895c6e702f8bd4>`(geode_implicit_modeler_api, ImplicitModeler);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a18035d3eb6b3f6acdee811f711c57196>`(HorizonsStack);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a3f3c5cdeee9a9389ffd9f740f987e982>`(PointSet);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a8a382e1e4248b0928d1850b52116b05c>`(BoundingBox);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a61f700cecf8c21730642bebe2ebf5ca1>`(HorizonsStack);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ab9498c535a0152c93f4aad66e9e8a67c>`(Point);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a11058d89bacb297358eb8a8a8a29490c>`(PointSet);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a17995db4fd0e320cb56e588732c82b60>`(:ref:`ImplicitDataManager<doxid-classgeode_1_1_implicit_data_manager>`);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aea57c093c88c72fca305a68ab581c977>`(StratigraphicUnit);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a2f5493c5c54c4c6785075fb5d8d97c2d>`(HorizonsStackBuilder);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a995b8f5f0b0ac39cbe7af64fd0506205>`(Block);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a734b1878924cdc7a36b2cc2e23755969>`(StratigraphicUnit);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a531a44f0d71e7402273d9ff93f994378>`(HorizonsStackBuilder);
+	:target:`ALIAS_3D<doxid-namespacegeode_1a0418407296b015103c7578c9c9c9a737>`(Block);
+
+	} // namespace geode

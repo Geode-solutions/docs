@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>class geode::ImplicitBlockModeler &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::ImplicitDataManager" href="class_geode_ImplicitDataManager.html" />
+    <link rel="prev" title="class geode::GridScalarFunctionExpliciter3D" href="class_geode_GridScalarFunctionExpliciter3D.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="class-geode-implicitblockmodeler">
+<span id="doxid-classgeode-1-1-implicit-block-modeler"></span><span id="index-0"></span><h1>class geode::ImplicitBlockModeler<a class="headerlink" href="#class-geode-implicitblockmodeler" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;implicit_block_modeler.h&gt;</span>
+
+<span class="k">class</span> <span class="n">ImplicitBlockModeler</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-block-modeler-1a5e979b3e5a55b78f5996804a16e9bed7"><span></span><span class="n">ImplicitBlockModeler</span></span><span></span><span class="p">(</span><span class="n">BoundingBox3D</span> <span class="n">bbox</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-block-modeler-1a12a09d15d12e314b63ef2f49592c946e"><span></span><span class="n">ImplicitBlockModeler</span></span><span></span><span class="p">(</span><span class="n">ImplicitBlockModeler</span><span class="o">&amp;&amp;</span> <span class="n">block_modeler</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-block-modeler-1aaecafa55229498f1f830cb3060923d66"><span></span><span class="n">native_extension</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-block-modeler-1adb4a70fc3ece6fec0826e78c070ce426"><span></span><span class="n">set_horizon_implicit_value</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Horizon3D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">,</span> <span class="kt">double</span> <span class="n">implicit_value</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-block-modeler-1a2185f0bff8bf1b337782cf4feccfaabb"><span></span><span class="n">add_horizon_data_pointset</span></span><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">Horizon3D</span><span class="o">&amp;</span> <span class="n">horizon</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">PointSet3D</span><span class="o">&amp;</span> <span class="n">pointset</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">weight</span>
+        <span class="p">);</span>
+
+    <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">TetrahedralSolid3D</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-block-modeler-1a776726d0b87ebc5f7adf1d1685705f05"><span></span><span class="n">build_block_mesh</span></span><span></span><span class="p">();</span>
+    <span class="n">ImplicitStructuralModel</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-block-modeler-1a176220d8bf1407d1fccdf3443d5efa5c"><span></span><span class="n">build_implicit_model</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">HorizonsStack3D</span><span class="o">&amp;</span> <span class="n">horizons_stack</span><span class="p">);</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-implicit-block-modeler-1a727804658cab8ce7928d865e6d3e87cb"><span></span><span class="n">native_extension_static</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_ImplicitBlockModeler.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

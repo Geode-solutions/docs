@@ -1,0 +1,40 @@
+.. index:: pair: class; geode::ImplicitBlockModeler
+.. _doxid-classgeode_1_1_implicit_block_modeler:
+
+class geode::ImplicitBlockModeler
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <implicit_block_modeler.h>
+	
+	class ImplicitBlockModeler
+	{
+	public:
+		// construction
+	
+		:target:`ImplicitBlockModeler<doxid-classgeode_1_1_implicit_block_modeler_1a5e979b3e5a55b78f5996804a16e9bed7>`(BoundingBox3D bbox);
+		:target:`ImplicitBlockModeler<doxid-classgeode_1_1_implicit_block_modeler_1a12a09d15d12e314b63ef2f49592c946e>`(ImplicitBlockModeler&& block_modeler);
+
+		// methods
+	
+		absl::string_view :target:`native_extension<doxid-classgeode_1_1_implicit_block_modeler_1aaecafa55229498f1f830cb3060923d66>`() const;
+		void :target:`set_horizon_implicit_value<doxid-classgeode_1_1_implicit_block_modeler_1adb4a70fc3ece6fec0826e78c070ce426>`(const Horizon3D& horizon, double implicit_value);
+	
+		void :target:`add_horizon_data_pointset<doxid-classgeode_1_1_implicit_block_modeler_1a2185f0bff8bf1b337782cf4feccfaabb>`(
+			const Horizon3D& horizon,
+			const PointSet3D& pointset,
+			double weight
+			);
+	
+		std::unique_ptr<TetrahedralSolid3D> :target:`build_block_mesh<doxid-classgeode_1_1_implicit_block_modeler_1a776726d0b87ebc5f7adf1d1685705f05>`();
+		ImplicitStructuralModel :target:`build_implicit_model<doxid-classgeode_1_1_implicit_block_modeler_1a176220d8bf1407d1fccdf3443d5efa5c>`(const HorizonsStack3D& horizons_stack);
+		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_implicit_block_modeler_1a727804658cab8ce7928d865e6d3e87cb>`();
+	};

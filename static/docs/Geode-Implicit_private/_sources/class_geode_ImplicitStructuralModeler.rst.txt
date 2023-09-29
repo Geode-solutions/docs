@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::ImplicitStructuralModeler
+.. _doxid-classgeode_1_1_implicit_structural_modeler:
+
+class geode::ImplicitStructuralModeler
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <implicit_structural_modeler.h>
+	
+	class ImplicitStructuralModeler
+	{
+	public:
+		// construction
+	
+		:target:`ImplicitStructuralModeler<doxid-classgeode_1_1_implicit_structural_modeler_1a14357402b0ecd013b70c74c8413854fb>`(StructuralModel&& structural_model);
+
+		// methods
+	
+		absl::string_view :target:`native_extension<doxid-classgeode_1_1_implicit_structural_modeler_1a7ba2694668da8cbc508843c36ad81966>`() const;
+		const StructuralModel& :target:`structural_model<doxid-classgeode_1_1_implicit_structural_modeler_1aa76ae0cbd21e7602070d36da5f69a29a>`() const;
+		const HorizonsStack3D& :target:`horizons_stack<doxid-classgeode_1_1_implicit_structural_modeler_1ad627f87361fe803966b0485eb373ed1b>`() const;
+		HorizonsStackBuilder3D :target:`horizons_stack_builder<doxid-classgeode_1_1_implicit_structural_modeler_1afca4e9577cd400e9d89a8a7b74c070ba>`();
+	
+		void :target:`set_stratigraphic_unit_thickness<doxid-classgeode_1_1_implicit_structural_modeler_1ae19ddff9583f17e3acbedf76826b7885>`(
+			const StratigraphicUnit3D& strati_unit,
+			double thickness
+			);
+	
+		void :target:`add_horizon_data_pointset_in_block<doxid-classgeode_1_1_implicit_structural_modeler_1af1e69569c11d8f0355b71937cf98e97b>`(
+			const Block3D& block,
+			const Horizon3D& horizon,
+			const PointSet3D& pointset,
+			double weight
+			);
+	
+		ImplicitStructuralModel :target:`build<doxid-classgeode_1_1_implicit_structural_modeler_1afe0c4e24c1d3dfcbdcaab0251afce751>`();
+		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_implicit_structural_modeler_1a49fbab6ff94b4eefdee76823b991fd05>`();
+	};
