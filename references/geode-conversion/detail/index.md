@@ -21,6 +21,9 @@
 int point_set_on_lines_sharp_vertices(int lines, double max_angle)
 ```
 
+```cpp
+Defined at ../include/geode/conversion/model/private/add_sharp_features.h#24
+```
 
 ### model_component_meshes_with_updated_id
 
@@ -28,6 +31,9 @@ int point_set_on_lines_sharp_vertices(int lines, double max_angle)
 int model_component_meshes_with_updated_id(const ComponentRange & range)
 ```
 
+```cpp
+Defined at ../include/geode/conversion/model/private/add_sharp_features.h#63
+```
 
 ### ref_meshes
 
@@ -35,6 +41,9 @@ int model_component_meshes_with_updated_id(const ComponentRange & range)
 int ref_meshes(int meshes)
 ```
 
+```cpp
+Defined at ../include/geode/conversion/model/private/add_sharp_features.h#77
+```
 
 
 

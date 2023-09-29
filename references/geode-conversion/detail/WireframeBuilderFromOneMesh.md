@@ -1,5 +1,8 @@
 # class WireframeBuilderFromOneMesh
 
+```cpp
+Defined at ../include/geode/conversion/model/detail/wireframe_builder_from_one_mesh.h#26
+```
 
 ```cpp
 Inherits from CornersLinesBuilder<Model>
@@ -15,6 +18,9 @@ Inherits from CornersLinesBuilder<Model>
 public void ~WireframeBuilderFromOneMesh<Model, Mesh>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#440
+```
 
 ### build_wireframe_step
 
@@ -22,13 +28,19 @@ public void ~WireframeBuilderFromOneMesh<Model, Mesh>()
 public void build_wireframe_step()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#474
+```
 
 ### is_corner
 
 ```cpp
-public _Bool is_corner(index_t vertex)
+public bool is_corner(index_t vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#480
+```
 
 ### mappings
 
@@ -36,6 +48,9 @@ public _Bool is_corner(index_t vertex)
 public IndexToModelMeshElementsMapping mappings()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#506
+```
 
 ### WireframeBuilderFromOneMesh
 
@@ -43,6 +58,9 @@ public IndexToModelMeshElementsMapping mappings()
 protected void WireframeBuilderFromOneMesh<Model, Mesh>(Model & model, const Mesh & one_mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#433
+```
 
 ### add_corner_vertices
 
@@ -50,6 +68,9 @@ protected void WireframeBuilderFromOneMesh<Model, Mesh>(Model & model, const Mes
 protected void add_corner_vertices(Span additional_corner_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#446
+```
 
 ### corner_vertices
 
@@ -57,6 +78,9 @@ protected void add_corner_vertices(Span additional_corner_vertices)
 protected const std::vector<index_t> & corner_vertices()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#453
+```
 
 ### add_line_edges
 
@@ -64,6 +88,9 @@ protected const std::vector<index_t> & corner_vertices()
 protected void add_line_edges(Span additional_line_edges)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#460
+```
 
 ### line_edges
 
@@ -71,6 +98,9 @@ protected void add_line_edges(Span additional_line_edges)
 protected const std::vector<index_t> & line_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#467
+```
 
 ### update_corner_line_mappings
 
@@ -78,6 +108,9 @@ protected const std::vector<index_t> & line_edges()
 protected void update_corner_line_mappings()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#487
+```
 
 ### build_surfaces
 
@@ -91,6 +124,9 @@ protected void build_surfaces(const SurfaceMesh<dimension> & whole_surface, cons
 protected void build_surfaces(const SurfaceMesh<dimension> & whole_surface, const int & whole_surface_to_one_mesh_vertices, Span whole_surface_to_one_mesh_polygons)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/wireframe_builder_from_one_mesh.cpp#494
+```
 
 
 

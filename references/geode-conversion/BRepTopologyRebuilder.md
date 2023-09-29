@@ -1,5 +1,8 @@
 # class BRepTopologyRebuilder
 
+```cpp
+Defined at ../include/geode/conversion/model/detail/brep_topology_rebuilder.h#29
+```
 
  Class for rebuilding all the brep components topology after adding some component mesh elements to the model topology.
 
@@ -13,6 +16,9 @@
 public void BRepTopologyRebuilder(const BRepTopologyRebuilder & )
 ```
 
+```cpp
+Defined at ../include/geode/conversion/model/detail/brep_topology_rebuilder.h#31
+```
 
 ### operator=
 
@@ -20,6 +26,9 @@ public void BRepTopologyRebuilder(const BRepTopologyRebuilder & )
 public BRepTopologyRebuilder & operator=(const BRepTopologyRebuilder & )
 ```
 
+```cpp
+Defined at ../include/geode/conversion/model/detail/brep_topology_rebuilder.h#31
+```
 
 ### BRepTopologyRebuilder
 
@@ -27,6 +36,9 @@ public BRepTopologyRebuilder & operator=(const BRepTopologyRebuilder & )
 public void BRepTopologyRebuilder(const BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/brep_topology_rebuilder.cpp#681
+```
 
 ### ~BRepTopologyRebuilder
 
@@ -34,6 +46,9 @@ public void BRepTopologyRebuilder(const BRep & brep)
 public void ~BRepTopologyRebuilder()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/brep_topology_rebuilder.cpp#686
+```
 
 ### add_block_facets_to_topology
 
@@ -47,6 +62,9 @@ public void add_block_facets_to_topology(const Block3D & block, vector facet_ids
 public tuple rebuild()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/brep_topology_rebuilder.cpp#694
+```
 
 ### add_block_facets_to_topology
 
@@ -54,6 +72,9 @@ public tuple rebuild()
 public void add_block_facets_to_topology(const Block3D & block, int facet_ids)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/brep_topology_rebuilder.cpp#688
+```
 
 
 

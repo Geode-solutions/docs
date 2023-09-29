@@ -1,5 +1,8 @@
 # class ModelBuilderFromMeshes
 
+```cpp
+Defined at ../include/geode/conversion/model/detail/model_builder_from_meshes.h#27
+```
 
 ```cpp
 Inherits from CornersLinesBuilder<Model>
@@ -21,6 +24,9 @@ Impl
 public void ~ModelBuilderFromMeshes<Model>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/model_builder_from_meshes.cpp#836
+```
 
 ### build_wireframe_step
 
@@ -28,6 +34,9 @@ public void ~ModelBuilderFromMeshes<Model>()
 public void build_wireframe_step()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/model_builder_from_meshes.cpp#841
+```
 
 ### build_surfaces
 
@@ -35,6 +44,9 @@ public void build_wireframe_step()
 public void build_surfaces()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/model_builder_from_meshes.cpp#847
+```
 
 ### mappings
 
@@ -42,13 +54,19 @@ public void build_surfaces()
 public ModelMappings mappings()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/model_builder_from_meshes.cpp#853
+```
 
 ### is_corner
 
 ```cpp
-public _Bool is_corner(index_t vertex)
+public bool is_corner(index_t vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/model_builder_from_meshes.cpp#859
+```
 
 ### ModelBuilderFromMeshes
 
@@ -56,6 +74,9 @@ public _Bool is_corner(index_t vertex)
 protected void ModelBuilderFromMeshes<Model>(Model & model, absl::Span<const std::reference_wrapper<const PointSet<dimension> > > corners, absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves, absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/model_builder_from_meshes.cpp#820
+```
 
 
 

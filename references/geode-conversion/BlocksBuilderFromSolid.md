@@ -1,5 +1,8 @@
 # class BlocksBuilderFromSolid
 
+```cpp
+Defined at ../include/geode/conversion/model/private/block_mesh_builder_from_solid.h#20
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void BlocksBuilderFromSolid(BRep & brep, const SolidMesh3D & solid)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/block_mesh_builder_from_solid.cpp#231
+```
 
 ### ~BlocksBuilderFromSolid
 
@@ -22,6 +28,9 @@ public void BlocksBuilderFromSolid(BRep & brep, const SolidMesh3D & solid)
 public void ~BlocksBuilderFromSolid()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/block_mesh_builder_from_solid.cpp#237
+```
 
 ### build_blocks_step
 
@@ -29,6 +38,9 @@ public void ~BlocksBuilderFromSolid()
 public std::pair<IndexToMeshVertexMapping, IndexToMeshElementMapping> build_blocks_step()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/conversion/model/block_mesh_builder_from_solid.cpp#239
+```
 
 
 

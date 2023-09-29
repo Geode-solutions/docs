@@ -1,5 +1,8 @@
 # struct IndexToBRepMeshElementsMapping
 
+```cpp
+Defined at ../include/geode/conversion/model/types.h#35
+```
 
 ```cpp
 Inherits from IndexToModelMeshElementsMapping
@@ -11,6 +14,7 @@ Inherits from IndexToModelMeshElementsMapping
 
 ```cpp
 public GenericMapping blocks
+
 ```
 
 
@@ -23,6 +27,9 @@ public GenericMapping blocks
 public void IndexToBRepMeshElementsMapping()
 ```
 
+```cpp
+Defined at ../include/geode/conversion/model/types.h#38
+```
 
 ### IndexToBRepMeshElementsMapping
 
@@ -30,6 +37,9 @@ public void IndexToBRepMeshElementsMapping()
 public void IndexToBRepMeshElementsMapping(IndexToModelMeshElementsMapping model_mappings, GenericMapping block_mappings)
 ```
 
+```cpp
+Defined at ../include/geode/conversion/model/types.h#40
+```
 
 
 
