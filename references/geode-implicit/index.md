@@ -10,6 +10,10 @@
 ## Records
 
 * [BRepMappings](BRepMappings.md)
+* [CutSurfaceGrid](CutSurfaceGrid.md)
+* [GridScalarFunctionExpliciter2D](GridScalarFunctionExpliciter2D.md)
+* [GridScalarFunctionExpliciter3D](GridScalarFunctionExpliciter3D.md)
+* [ImplicitBlockModeler](ImplicitBlockModeler.md)
 * [ImplicitDataManager](ImplicitDataManager.md)
 * [ImplicitExplicitationLibrary](ImplicitExplicitationLibrary.md)
 * [ImplicitIOLibrary](ImplicitIOLibrary.md)
@@ -19,9 +23,7 @@
 * [ImplicitStructuralModelHorizonExpliciter](ImplicitStructuralModelHorizonExpliciter.md)
 * [ImplicitStructuralModeler](ImplicitStructuralModeler.md)
 * [ModelMappings](ModelMappings.md)
-* [RegularGridScalarFunctionComputer](RegularGridScalarFunctionComputer.md)
-* [RegularGridScalarFunctionExpliciter2D](RegularGridScalarFunctionExpliciter2D.md)
-* [RegularGridScalarFunctionExpliciter3D](RegularGridScalarFunctionExpliciter3D.md)
+* [ScalarFunctionComputer](ScalarFunctionComputer.md)
 * [SolidMeshScalarFunctionExpliciter](SolidMeshScalarFunctionExpliciter.md)
 * [StratigraphicModelInserter](StratigraphicModelInserter.md)
 * [StratigraphicSectionInserter](StratigraphicSectionInserter.md)
@@ -36,6 +38,9 @@
 ImplicitCrossSection extract_implicit_cross_section_from_axis(const ImplicitStructuralModel & model, local_index_t axis_direction, double axis_coordinate)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/explicitation/implicit_model_part.cpp#216
+```
 
 ### extract_stratigraphic_section_from_axis
 
@@ -43,6 +48,9 @@ ImplicitCrossSection extract_implicit_cross_section_from_axis(const ImplicitStru
 StratigraphicSection extract_stratigraphic_section_from_axis(const StratigraphicModel & model, local_index_t axis_direction, double axis_coordinate)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/explicitation/implicit_model_part.cpp#256
+```
 
 
 
@@ -52,12 +60,6 @@ StratigraphicSection extract_stratigraphic_section_from_axis(const Stratigraphic
 
 --
 
-| FDM_laplacian_minimization |
-| FDM_hessian_minimization |
-| FDM_curvature_minimization |
-| FDM_boundaryfree_laplacian_minimization |
-| FDM_boundaryfree_hessian_minimization |
-| FDM_boundaryfree_curvature_minimization |
 
 
 

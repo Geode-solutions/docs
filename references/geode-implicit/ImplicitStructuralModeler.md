@@ -1,5 +1,8 @@
 # class ImplicitStructuralModeler
 
+```cpp
+Defined at ../include/geode/implicit/modeler/implicit_structural_modeler.h#31
+```
 
 ## Records
 
@@ -12,9 +15,12 @@ Impl
 ### ImplicitStructuralModeler
 
 ```cpp
-public void ImplicitStructuralModeler(BoundingBox3D bbox)
+public void ImplicitStructuralModeler(StructuralModel && structural_model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/modeler/implicit_structural_modeler.cpp#363
+```
 
 ### ~ImplicitStructuralModeler
 
@@ -22,6 +28,9 @@ public void ImplicitStructuralModeler(BoundingBox3D bbox)
 public void ~ImplicitStructuralModeler()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/modeler/implicit_structural_modeler.cpp#369
+```
 
 ### native_extension_static
 
@@ -29,6 +38,9 @@ public void ~ImplicitStructuralModeler()
 public string_view native_extension_static()
 ```
 
+```cpp
+Defined at ../include/geode/implicit/modeler/implicit_structural_modeler.h#37
+```
 
 ### native_extension
 
@@ -36,6 +48,19 @@ public string_view native_extension_static()
 public string_view native_extension()
 ```
 
+```cpp
+Defined at ../include/geode/implicit/modeler/implicit_structural_modeler.h#43
+```
+
+### structural_model
+
+```cpp
+public const StructuralModel & structural_model()
+```
+
+```cpp
+Defined at /github/workspace/src/geode/implicit/modeler/implicit_structural_modeler.cpp#371
+```
 
 ### horizons_stack
 
@@ -43,6 +68,9 @@ public string_view native_extension()
 public const HorizonsStack3D & horizons_stack()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/modeler/implicit_structural_modeler.cpp#376
+```
 
 ### horizons_stack_builder
 
@@ -50,6 +78,9 @@ public const HorizonsStack3D & horizons_stack()
 public HorizonsStackBuilder3D horizons_stack_builder()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/modeler/implicit_structural_modeler.cpp#381
+```
 
 ### set_stratigraphic_unit_thickness
 
@@ -57,13 +88,19 @@ public HorizonsStackBuilder3D horizons_stack_builder()
 public void set_stratigraphic_unit_thickness(const StratigraphicUnit3D & strati_unit, double thickness)
 ```
 
-
-### add_horizon_data_pointset
-
 ```cpp
-public void add_horizon_data_pointset(const Horizon3D & horizon, const PointSet3D & pointset, double weight)
+Defined at /github/workspace/src/geode/implicit/modeler/implicit_structural_modeler.cpp#386
 ```
 
+### add_horizon_data_pointset_in_block
+
+```cpp
+public void add_horizon_data_pointset_in_block(const Block3D & block, const Horizon3D & horizon, const PointSet3D & pointset, double weight)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/implicit/modeler/implicit_structural_modeler.cpp#392
+```
 
 ### build
 
@@ -71,6 +108,9 @@ public void add_horizon_data_pointset(const Horizon3D & horizon, const PointSet3
 public ImplicitStructuralModel build()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/modeler/implicit_structural_modeler.cpp#402
+```
 
 
 

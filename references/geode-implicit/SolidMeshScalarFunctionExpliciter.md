@@ -1,5 +1,8 @@
 # class SolidMeshScalarFunctionExpliciter
 
+```cpp
+Defined at ../include/geode/implicit/explicitation/tetrahedral_solid_scalar_function.h#22
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void SolidMeshScalarFunctionExpliciter(TetrahedralSolid3D && solid, string_view scalar_function_name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/explicitation/tetrahedral_solid_scalar_function.cpp#56
+```
 
 ### SolidMeshScalarFunctionExpliciter
 
@@ -22,6 +28,9 @@ public void SolidMeshScalarFunctionExpliciter(TetrahedralSolid3D && solid, strin
 public void SolidMeshScalarFunctionExpliciter(SolidMeshScalarFunctionExpliciter && expliciter)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/explicitation/tetrahedral_solid_scalar_function.cpp#62
+```
 
 ### ~SolidMeshScalarFunctionExpliciter
 
@@ -29,6 +38,9 @@ public void SolidMeshScalarFunctionExpliciter(SolidMeshScalarFunctionExpliciter 
 public void ~SolidMeshScalarFunctionExpliciter()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/explicitation/tetrahedral_solid_scalar_function.cpp#68
+```
 
 ### add_scalar_isovalues
 
@@ -36,6 +48,9 @@ public void ~SolidMeshScalarFunctionExpliciter()
 public void add_scalar_isovalues(absl::Span<const double> scalar_function_values)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/explicitation/tetrahedral_solid_scalar_function.cpp#70
+```
 
 ### add_one_scalar_isovalue
 
@@ -43,6 +58,9 @@ public void add_scalar_isovalues(absl::Span<const double> scalar_function_values
 public void add_one_scalar_isovalue(double isovalue)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/explicitation/tetrahedral_solid_scalar_function.cpp#76
+```
 
 ### build_brep
 
@@ -50,6 +68,9 @@ public void add_one_scalar_isovalue(double isovalue)
 public BRep build_brep()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/implicit/explicitation/tetrahedral_solid_scalar_function.cpp#82
+```
 
 
 
