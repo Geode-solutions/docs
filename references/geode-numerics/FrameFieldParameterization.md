@@ -1,5 +1,8 @@
 # class FrameFieldParameterization
 
+```cpp
+Defined at ../../include/geode/numerics/frame_field/frame_field_parameterization.h#29
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void FrameFieldParameterization(const FrameField & frame_field)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1161
+```
 
 ### ~FrameFieldParameterization
 
@@ -22,6 +28,9 @@ public void FrameFieldParameterization(const FrameField & frame_field)
 public void ~FrameFieldParameterization()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1167
+```
 
 ### compute_parameterization
 
@@ -29,6 +38,9 @@ public void ~FrameFieldParameterization()
 public void compute_parameterization(double mesh_size)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1169
+```
 
 ### delete_parameterization_attribute
 
@@ -36,6 +48,9 @@ public void compute_parameterization(double mesh_size)
 public void delete_parameterization_attribute()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1199
+```
 
 ### delete_singularity_attribute
 
@@ -43,6 +58,9 @@ public void delete_parameterization_attribute()
 public void delete_singularity_attribute()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1204
+```
 
 ### delete_attributes
 
@@ -50,6 +68,9 @@ public void delete_singularity_attribute()
 public void delete_attributes()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1209
+```
 
 ### extract_points
 
@@ -57,6 +78,9 @@ public void delete_attributes()
 public absl::flat_hash_map<uuid, std::unique_ptr<PointSet3D> > extract_points()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1175
+```
 
 ### extract_edges
 
@@ -64,6 +88,9 @@ public absl::flat_hash_map<uuid, std::unique_ptr<PointSet3D> > extract_points()
 public absl::flat_hash_map<uuid, std::unique_ptr<EdgedCurve3D> > extract_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1193
+```
 
 ### extract_quadrangles
 
@@ -71,6 +98,9 @@ public absl::flat_hash_map<uuid, std::unique_ptr<EdgedCurve3D> > extract_edges()
 public absl::flat_hash_map<uuid, std::unique_ptr<PolygonalSurface3D> > extract_quadrangles()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1187
+```
 
 ### extract_hexahedra
 
@@ -78,6 +108,9 @@ public absl::flat_hash_map<uuid, std::unique_ptr<PolygonalSurface3D> > extract_q
 public absl::flat_hash_map<uuid, std::unique_ptr<HybridSolid3D> > extract_hexahedra()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#1181
+```
 
 
 

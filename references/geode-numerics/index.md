@@ -34,6 +34,9 @@
 void compute_LSCM_parameterization(const TriangulatedSurface3D & mesh, string_view attribute_name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/surface/lscm.cpp#377
+```
 
  Compute Least Squares Conformal Maps
 
@@ -47,6 +50,9 @@ void compute_LSCM_parameterization(const TriangulatedSurface3D & mesh, string_vi
 std::unique_ptr<TriangulatedSurface2D> convert_surface3d_into_2d(const TriangulatedSurface3D & mesh, string_view attribute_name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/surface/convert.cpp#16
+```
 
  Compute a 2D mesh from a 3D mesh and its parametric coordinates
 

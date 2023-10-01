@@ -1,5 +1,8 @@
 # class FrameTransform
 
+```cpp
+Defined at ../../include/geode/numerics/frame_field/frame_transform.h#20
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void FrameTransform<dimension>(const Frame<dimension> & from, const Frame<dimension> & to)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_transform.cpp#77
+```
 
 ### ~FrameTransform
 
@@ -16,6 +22,9 @@ public void FrameTransform<dimension>(const Frame<dimension> & from, const Frame
 public void ~FrameTransform<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_transform.cpp#84
+```
 
 ### direction
 
@@ -23,6 +32,9 @@ public void ~FrameTransform<dimension>()
 public local_index_t direction(local_index_t index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_transform.cpp#89
+```
 
 ### orientation
 
@@ -30,6 +42,9 @@ public local_index_t direction(local_index_t index)
 public signed_index_t orientation(local_index_t index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_transform.cpp#96
+```
 
 ### apply
 
@@ -37,6 +52,9 @@ public signed_index_t orientation(local_index_t index)
 public Frame<dimension> apply(const Frame<dimension> & frame)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_transform.cpp#103
+```
 
 ### apply
 
@@ -44,6 +62,9 @@ public Frame<dimension> apply(const Frame<dimension> & frame)
 public Point<dimension> apply(const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_transform.cpp#110
+```
 
 
 

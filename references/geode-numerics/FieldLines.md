@@ -1,5 +1,8 @@
 # class FieldLines
 
+```cpp
+Defined at ../../include/geode/numerics/frame_field/field_lines.h#20
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void FieldLines(const FrameField & frame_field)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/field_lines.cpp#261
+```
 
 ### ~FieldLines
 
@@ -22,6 +28,9 @@ public void FieldLines(const FrameField & frame_field)
 public void ~FieldLines()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/field_lines.cpp#266
+```
 
 ### compute_lines
 
@@ -29,6 +38,9 @@ public void ~FieldLines()
 public std::unique_ptr<EdgedCurve3D> compute_lines()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/field_lines.cpp#268
+```
 
 
 

@@ -1,5 +1,8 @@
 # class FDMCurvatureMinimizationImpl
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#95
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void FDMCurvatureMinimizationImpl<dimension>(ComputationGrid<dimension> & grid, const DataConstraintsManager<dimension> & data_constraints)
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#98
+```
 
 ### ~FDMCurvatureMinimizationImpl
 
@@ -16,6 +22,9 @@ public void FDMCurvatureMinimizationImpl<dimension>(ComputationGrid<dimension> &
 protected void ~FDMCurvatureMinimizationImpl<dimension>()
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#141
+```
 
 ### use_constraint_value_preconditioning
 
@@ -23,6 +32,9 @@ protected void ~FDMCurvatureMinimizationImpl<dimension>()
 public void use_constraint_value_preconditioning()
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#144
+```
 
 ### use_scalar_function_preconditioning
 
@@ -30,6 +42,9 @@ public void use_constraint_value_preconditioning()
 public void use_scalar_function_preconditioning(string_view function_name)
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#175
+```
 
 ### compute_scalar_function
 
@@ -37,6 +52,9 @@ public void use_scalar_function_preconditioning(string_view function_name)
 public void compute_scalar_function(string_view scalar_function_name)
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#187
+```
 
 ### node_weight
 
@@ -44,6 +62,9 @@ public void compute_scalar_function(string_view scalar_function_name)
 protected double node_weight()
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#300
+```
 
 ### derivative_axis_direction
 
@@ -51,6 +72,9 @@ protected double node_weight()
 protected std::array<int, dimension> derivative_axis_direction(geode::local_index_t derivative_axis_id)
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#305
+```
 
 ### derivative_contribution
 
@@ -58,6 +82,9 @@ protected std::array<int, dimension> derivative_axis_direction(geode::local_inde
 protected double derivative_contribution(geode::local_index_t derivative_axis_id)
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#312
+```
 
 ### grid
 
@@ -65,6 +92,9 @@ protected double derivative_contribution(geode::local_index_t derivative_axis_id
 protected const ComputationGrid<dimension> & grid()
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#318
+```
 
 ### data_constraints
 
@@ -72,6 +102,9 @@ protected const ComputationGrid<dimension> & grid()
 protected const DataConstraintsManager<dimension> & data_constraints()
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#323
+```
 
 ### add_matrix_coefficient
 
@@ -79,6 +112,9 @@ protected const DataConstraintsManager<dimension> & data_constraints()
 protected void add_matrix_coefficient(index_t row_id, index_t column_id, double value)
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#328
+```
 
 ### set_data_coefficient_value
 
@@ -86,6 +122,9 @@ protected void add_matrix_coefficient(index_t row_id, index_t column_id, double 
 protected void set_data_coefficient_value(index_t data_id, double value)
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#334
+```
 
 ### nb_computation_points
 
@@ -93,6 +132,9 @@ protected void set_data_coefficient_value(index_t data_id, double value)
 protected index_t nb_computation_points()
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#339
+```
 
 ### nb_derivatives
 
@@ -100,6 +142,9 @@ protected index_t nb_computation_points()
 protected local_index_t nb_derivatives()
 ```
 
+```cpp
+Defined at ../../include/geode/numerics/scalar_function/private/FDM_curvature_minimization_impl.h#344
+```
 
 
 

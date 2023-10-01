@@ -1,5 +1,8 @@
 # class FrameField
 
+```cpp
+Defined at ../../include/geode/numerics/frame_field/frame_field.h#22
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ Impl
 public void FrameField(BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#198
+```
 
 ### FrameField
 
@@ -22,6 +28,9 @@ public void FrameField(BRep & brep)
 public void FrameField(FrameField && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#200
+```
 
 ### ~FrameField
 
@@ -29,6 +38,9 @@ public void FrameField(FrameField && other)
 public void ~FrameField()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#205
+```
 
 ### brep
 
@@ -36,6 +48,9 @@ public void ~FrameField()
 public const BRep & brep()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#212
+```
 
 ### solid
 
@@ -43,6 +58,9 @@ public const BRep & brep()
 public const TetrahedralSolid3D & solid()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#207
+```
 
 ### frame
 
@@ -50,6 +68,9 @@ public const TetrahedralSolid3D & solid()
 public const Frame3D & frame(index_t vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#217
+```
 
 ### set_frame
 
@@ -57,6 +78,9 @@ public const Frame3D & frame(index_t vertex)
 public void set_frame(index_t vertex, Frame3D frame)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#222
+```
 
 
 
