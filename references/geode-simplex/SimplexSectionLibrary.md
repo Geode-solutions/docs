@@ -1,5 +1,8 @@
 # class SimplexSectionLibrary
 
+```cpp
+Defined at ../../include/geode/simplex/section/common.h#13
+```
 
 ```cpp
 Inherits from Library
@@ -15,6 +18,9 @@ Inherits from Library
 public void initialize()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/section/common.h#13
+```
 
 
 

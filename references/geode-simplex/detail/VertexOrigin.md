@@ -1,14 +1,19 @@
 # struct VertexOrigin
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/remeshed_info.h#24
+```
 
 ## Members
 
 ```cpp
 public index_t vertex
+
 ```
 
 ```cpp
-public _Bool is_locked
+public bool is_locked
+
 ```
 
 
@@ -21,13 +26,19 @@ public _Bool is_locked
 public void VertexOrigin()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/remeshed_info.h#26
+```
 
 ### VertexOrigin
 
 ```cpp
-public void VertexOrigin(index_t vertex_in, _Bool is_locked_in)
+public void VertexOrigin(index_t vertex_in, bool is_locked_in)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/remeshed_info.h#27
+```
 
 
 

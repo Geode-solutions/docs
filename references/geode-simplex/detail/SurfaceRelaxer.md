@@ -1,5 +1,8 @@
 # class SurfaceRelaxer
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#44
+```
 
 ## Records
 
@@ -21,6 +24,9 @@ SwapingData
 public void SurfaceRelaxer<Model>(const Model & model, ModelModifier & modifier, const Surface<dimension> & surface, const SurfaceRelaxerOptions<dimension> & options)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#115
+```
 
 ### ~SurfaceRelaxer
 
@@ -28,6 +34,9 @@ public void SurfaceRelaxer<Model>(const Model & model, ModelModifier & modifier,
 public void ~SurfaceRelaxer<Model>()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#148
+```
 
 ### relax
 
@@ -35,6 +44,9 @@ public void ~SurfaceRelaxer<Model>()
 public void relax()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#158
+```
 
 ### save
 
@@ -42,13 +54,19 @@ public void relax()
 public void save()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#178
+```
 
 ### is_fixed
 
 ```cpp
-protected _Bool is_fixed(index_t vertex)
+protected bool is_fixed(index_t vertex)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#194
+```
 
 ### model
 
@@ -56,6 +74,9 @@ protected _Bool is_fixed(index_t vertex)
 protected const Model & model()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#199
+```
 
 ### surface
 
@@ -63,6 +84,9 @@ protected const Model & model()
 protected const Surface<dimension> & surface()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#204
+```
 
 ### mesh
 
@@ -70,6 +94,9 @@ protected const Surface<dimension> & surface()
 protected const SurfaceMesh<dimension> & mesh()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#209
+```
 
 ### optimal_point
 
@@ -77,6 +104,9 @@ protected const SurfaceMesh<dimension> & mesh()
 public Point2D optimal_point(const PolygonsAroundVertex & polygons)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#320
+```
 
 ### optimal_point
 
@@ -84,6 +114,9 @@ public Point2D optimal_point(const PolygonsAroundVertex & polygons)
 public Point2D optimal_point(const Point2D & point0, const Point2D & point1)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#341
+```
 
 ### compute_angles
 
@@ -91,6 +124,9 @@ public Point2D optimal_point(const Point2D & point0, const Point2D & point1)
 public std::pair<double, double> compute_angles(const PolygonData & data)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#716
+```
 
 
 

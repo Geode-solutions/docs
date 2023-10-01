@@ -1,11 +1,20 @@
 # class RemeshingData
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#289
+```
 
 # class RemeshingData
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#290
+```
 
 # class RemeshingData
 
+```cpp
+Defined at ../../include/geode/simplex/private/core/remeshing_data.h#30
+```
 
  Structure holding all the data required for the remeshing algorithm Aliases are defined for BRep and Section.
 
@@ -19,6 +28,9 @@
 public void RemeshingData<DataModel>(Model & background, Model & output, const Metric<dimension> & metric)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#204
+```
 
 ### RemeshingData
 
@@ -26,6 +38,9 @@ public void RemeshingData<DataModel>(Model & background, Model & output, const M
 public void RemeshingData<DataModel>(Model & background, Model & output, const Metric<dimension> & metric, const absl::flat_hash_map<ComponentType, std::vector<uuid> > & components_to_remesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#211
+```
 
 ### ~RemeshingData
 
@@ -33,6 +48,9 @@ public void RemeshingData<DataModel>(Model & background, Model & output, const M
 public void ~RemeshingData<DataModel>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#221
+```
 
 ### background
 
@@ -40,6 +58,9 @@ public void ~RemeshingData<DataModel>()
 public const Model & background()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#226
+```
 
 ### background_builder
 
@@ -47,6 +68,9 @@ public const Model & background()
 public Builder & background_builder()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#232
+```
 
 ### background_modifier
 
@@ -54,6 +78,9 @@ public Builder & background_builder()
 public Modifier & background_modifier()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#238
+```
 
 ### output
 
@@ -61,6 +88,9 @@ public Modifier & background_modifier()
 public const Model & output()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#244
+```
 
 ### output_builder
 
@@ -68,6 +98,9 @@ public const Model & output()
 public Builder & output_builder()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#250
+```
 
 ### output_modifier
 
@@ -75,6 +108,9 @@ public Builder & output_builder()
 public Modifier & output_modifier()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#256
+```
 
 ### metric
 
@@ -82,6 +118,9 @@ public Modifier & output_modifier()
 public const Metric<dimension> & metric()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#262
+```
 
 ### output_mapping
 
@@ -89,6 +128,9 @@ public const Metric<dimension> & metric()
 public ModelCopyMapping && output_mapping()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#269
+```
 
 ### output_id
 
@@ -96,6 +138,9 @@ public ModelCopyMapping && output_mapping()
 public const uuid & output_id(const ComponentID & component)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#275
+```
 
 ### from_output_id
 
@@ -103,6 +148,9 @@ public const uuid & output_id(const ComponentID & component)
 public const uuid & from_output_id(const ComponentID & component)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#282
+```
 
 ### RemeshingData
 

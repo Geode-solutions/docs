@@ -4,6 +4,9 @@
 
 # class FillRemaining
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/fill_remaining.h#24
+```
 
 ## Records
 
@@ -19,6 +22,9 @@ Impl
 public void FillRemaining<dimension>(RemainingSurface<dimension> & remaining)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/fill_remaining.cpp#213
+```
 
 ### ~FillRemaining
 
@@ -26,6 +32,9 @@ public void FillRemaining<dimension>(RemainingSurface<dimension> & remaining)
 public void ~FillRemaining<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/fill_remaining.cpp#220
+```
 
 ### fill
 
@@ -33,6 +42,9 @@ public void ~FillRemaining<dimension>()
 public FixedArray fill()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/fill_remaining.cpp#225
+```
 
 
 

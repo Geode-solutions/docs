@@ -1,5 +1,8 @@
 # class PropagateAlongPlane
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/3d/private/propagate_along_plane.h#25
+```
 
 ```cpp
 Inherits from SurfacePathFinder<3>
@@ -15,6 +18,9 @@ Inherits from SurfacePathFinder<3>
 public void PropagateAlongPlane(const FrontalRemesher3D & remesher, const Plane & plane)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/propagate_along_plane.cpp#20
+```
 
 ### along_plane
 
@@ -22,6 +28,9 @@ public void PropagateAlongPlane(const FrontalRemesher3D & remesher, const Plane 
 public optional along_plane(const std::vector<OrientedPolygonEdge> & initial_edges, double target)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/propagate_along_plane.cpp#28
+```
 
 ### find_first_path
 
@@ -29,13 +38,19 @@ public optional along_plane(const std::vector<OrientedPolygonEdge> & initial_edg
 protected vector find_first_path(const std::vector<OrientedPolygonEdge> & initial_edges)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/propagate_along_plane.cpp#112
+```
 
 ### stop_propagation
 
 ```cpp
-protected _Bool stop_propagation(const SurfacePath & path, const Point3D & point, double target)
+protected bool stop_propagation(const SurfacePath & path, const Point3D & point, double target)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/propagate_along_plane.cpp#49
+```
 
 ### next_intersection
 
@@ -43,6 +58,9 @@ protected _Bool stop_propagation(const SurfacePath & path, const Point3D & point
 protected SurfacePath next_intersection(const PolygonEdge & adjacent_edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/propagate_along_plane.cpp#172
+```
 
 ### oriented_edge_segment
 
@@ -50,6 +68,9 @@ protected SurfacePath next_intersection(const PolygonEdge & adjacent_edge)
 protected Segment oriented_edge_segment(const OrientedPolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/propagate_along_plane.cpp#97
+```
 
 ### along_plane
 

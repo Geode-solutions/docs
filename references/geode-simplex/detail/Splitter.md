@@ -2,6 +2,9 @@
 
 # class Splitter
 
+```cpp
+Defined at ../../include/geode/simplex/private/core/private/splitter.h#33
+```
 
 ## Functions
 
@@ -11,6 +14,9 @@
 public void Splitter<Model, ModelModifier>(Model & model, const Metric<dimension> & metric)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/core/private/splitter.h#38
+```
 
 ### Splitter
 
@@ -18,6 +24,9 @@ public void Splitter<Model, ModelModifier>(Model & model, const Metric<dimension
 public void Splitter<Model, ModelModifier>(Model & model, const Metric<dimension> & metric, Span surfaces)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/core/private/splitter.h#52
+```
 
 ### split
 
@@ -25,6 +34,9 @@ public void Splitter<Model, ModelModifier>(Model & model, const Metric<dimension
 public void split()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/core/private/splitter.cpp#51
+```
 
 
 

@@ -1,5 +1,8 @@
 # class FrontalRemesher
 
+```cpp
+Defined at ../../include/geode/simplex/private/surface/common/private/frontal.h#29
+```
 
 ```cpp
 Inherits from RemeshAlgo<dimension>
@@ -25,6 +28,9 @@ Impl
 public void FrontalRemesher<>(const TriangulatedSurface<dimension> & background_mesh, TriangulatedSurfaceBuilder<dimension> & background_builder, TriangulatedSurfaceEpsilonModifier<dimension> & background_modifier, const Metric<dimension> & metric, absl::Span<const index_t> lock_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2302
+```
 
 ### ~FrontalRemesher
 
@@ -32,6 +38,9 @@ public void FrontalRemesher<>(const TriangulatedSurface<dimension> & background_
 public void ~FrontalRemesher<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2316
+```
 
 ### remesh
 
@@ -39,6 +48,9 @@ public void ~FrontalRemesher<>()
 public RemeshedSurface<dimension> remesh()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2321
+```
 
 ### background_mesh
 
@@ -46,27 +58,39 @@ public RemeshedSurface<dimension> remesh()
 public const TriangulatedSurface<dimension> & background_mesh()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2327
+```
 
 ### is_macro_vertex
 
 ```cpp
-public _Bool is_macro_vertex(index_t vertex)
+public bool is_macro_vertex(index_t vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2334
+```
 
 ### is_edge_on_macro_edge
 
 ```cpp
-public _Bool is_edge_on_macro_edge(const PolygonEdge & edge)
+public bool is_edge_on_macro_edge(const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2341
+```
 
 ### is_macro_triangle
 
 ```cpp
-public _Bool is_macro_triangle(index_t triangle)
+public bool is_macro_triangle(index_t triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2348
+```
 
 ### active_macro_edges
 
@@ -74,6 +98,9 @@ public _Bool is_macro_triangle(index_t triangle)
 public std::vector<index_t> active_macro_edges(const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2362
+```
 
 ### all_macro_edges
 
@@ -81,6 +108,9 @@ public std::vector<index_t> active_macro_edges(const PolygonEdge & edge)
 public std::vector<index_t> all_macro_edges(const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2355
+```
 
 ### last_macro_edge_id
 
@@ -88,6 +118,9 @@ public std::vector<index_t> all_macro_edges(const PolygonEdge & edge)
 public index_t last_macro_edge_id(const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2369
+```
 
 ### find_edges_around_vertex_on_macro_edge
 
@@ -95,6 +128,9 @@ public index_t last_macro_edge_id(const PolygonEdge & edge)
 public absl::InlinedVector<OrientedPolygonEdge, 4> find_edges_around_vertex_on_macro_edge(index_t macro_edge_id, index_t vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2376
+```
 
 ### find_next_edge_on_macro_edge
 
@@ -102,6 +138,9 @@ public absl::InlinedVector<OrientedPolygonEdge, 4> find_edges_around_vertex_on_m
 public absl::optional<OrientedPolygonEdge> find_next_edge_on_macro_edge(const OrientedPolygonEdge & edge, index_t macro_edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2386
+```
 
 ### macro_edge_path
 
@@ -109,6 +148,9 @@ public absl::optional<OrientedPolygonEdge> find_next_edge_on_macro_edge(const Or
 public std::vector<OrientedPolygonEdge> macro_edge_path(index_t start, index_t end, index_t macro_edge_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2394
+```
 
 ### last_active_macro_edge_id
 
@@ -116,6 +158,9 @@ public std::vector<OrientedPolygonEdge> macro_edge_path(index_t start, index_t e
 public optional last_active_macro_edge_id(const PolygonEdge & edge, index_t me)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2402
+```
 
 ### target_point
 
@@ -123,6 +168,9 @@ public optional last_active_macro_edge_id(const PolygonEdge & edge, index_t me)
 protected Point<dimension> target_point(const Point<dimension> & prev, const Point<dimension> & last, const Point<dimension> & origin, double target)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2410
+```
 
 ### should_snap_on_macro_edge
 
@@ -130,6 +178,9 @@ protected Point<dimension> target_point(const Point<dimension> & prev, const Poi
 protected absl::optional<std::tuple<Point<dimension>, index_t> > should_snap_on_macro_edge(index_t triangle_id, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2420
+```
 
 
 

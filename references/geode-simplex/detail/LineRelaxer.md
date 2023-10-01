@@ -1,5 +1,8 @@
 # class LineRelaxer
 
+```cpp
+Defined at ../../include/geode/simplex/private/line/common/private/relaxer.h#41
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void LineRelaxer<Model>(const Model & model, ModelModifier & modifier, const Line<dimension> & line)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/line/common/private/relaxer.h#61
+```
 
 ### LineRelaxer
 
@@ -16,6 +22,9 @@ public void LineRelaxer<Model>(const Model & model, ModelModifier & modifier, co
 public void LineRelaxer<Model>(const Model & model, ModelModifier & modifier, const Line<dimension> & line, const Metric<dimension> & metric)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/line/common/private/relaxer.h#68
+```
 
 ### ~LineRelaxer
 
@@ -23,6 +32,9 @@ public void LineRelaxer<Model>(const Model & model, ModelModifier & modifier, co
 public void ~LineRelaxer<Model>()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/line/common/private/relaxer.h#76
+```
 
 ### relax
 
@@ -30,6 +42,9 @@ public void ~LineRelaxer<Model>()
 public void relax()
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/line/common/private/relaxer.h#84
+```
 
 ### LineRelaxer
 
@@ -37,6 +52,9 @@ public void relax()
 public void LineRelaxer<Model>(const Model & model, ModelModifier & modifier, const Line<dimension> & line, const Metric<dimension> * metric)
 ```
 
+```cpp
+Defined at ../../include/geode/simplex/private/line/common/private/relaxer.h#132
+```
 
 
 

@@ -1,26 +1,34 @@
 # struct BRepRemeshOptions
 
+```cpp
+Defined at ../../include/geode/simplex/brep/detail/remesh.h#22
+```
 
 ## Members
 
 ```cpp
-public _Bool repair_lines
+public bool repair_lines
+
 ```
 
 ```cpp
-public _Bool relax_lines
+public bool relax_lines
+
 ```
 
 ```cpp
-public _Bool repair_surfaces
+public bool repair_surfaces
+
 ```
 
 ```cpp
-public _Bool relax_surfaces
+public bool relax_surfaces
+
 ```
 
 ```cpp
-public _Bool mesh
+public bool mesh
+
 ```
 
 
