@@ -1,5 +1,8 @@
 # class VerticesModifier
 
+```cpp
+Defined at ../include/geode/common/modifier/common/vertices_modifier.h#13
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void VerticesModifier(const VerticesModifier & )
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/vertices_modifier.h#15
+```
 
 ### operator=
 
@@ -16,6 +22,9 @@ public void VerticesModifier(const VerticesModifier & )
 public VerticesModifier & operator=(const VerticesModifier & )
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/vertices_modifier.h#15
+```
 
 ### updated_vertex
 
@@ -23,6 +32,9 @@ public VerticesModifier & operator=(const VerticesModifier & )
 public index_t updated_vertex(index_t vertex_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#70
+```
 
 ### VerticesModifier
 
@@ -30,6 +42,9 @@ public index_t updated_vertex(index_t vertex_id)
 protected void VerticesModifier()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#56
+```
 
 ### VerticesModifier
 
@@ -37,6 +52,9 @@ protected void VerticesModifier()
 protected void VerticesModifier(VerticesModifier && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#61
+```
 
 ### ~VerticesModifier
 
@@ -44,6 +62,9 @@ protected void VerticesModifier(VerticesModifier && other)
 protected void ~VerticesModifier()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#66
+```
 
 ### set_updated_vertex
 
@@ -51,6 +72,9 @@ protected void ~VerticesModifier()
 protected void set_updated_vertex(const VertexMultiMapping & mapping)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#75
+```
 
 ### clean_vertices_modifier
 
@@ -58,6 +82,9 @@ protected void set_updated_vertex(const VertexMultiMapping & mapping)
 protected void clean_vertices_modifier()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#81
+```
 
 
 

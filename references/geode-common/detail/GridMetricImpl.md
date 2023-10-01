@@ -1,5 +1,8 @@
 # class GridMetricImpl
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#17
+```
 
 ## Functions
 
@@ -9,6 +12,9 @@
 public void GridMetricImpl<dimension>(const Grid<dimension> & grid, string_view attribute_name)
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#23
+```
 
 ### GridMetricImpl
 
@@ -16,6 +22,9 @@ public void GridMetricImpl<dimension>(const Grid<dimension> & grid, string_view 
 protected void GridMetricImpl<dimension>(const Grid<dimension> & grid)
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#34
+```
 
 ### grid
 
@@ -23,6 +32,9 @@ protected void GridMetricImpl<dimension>(const Grid<dimension> & grid)
 protected const Grid<dimension> & grid()
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#39
+```
 
 ### index_metric
 
@@ -30,6 +42,9 @@ protected const Grid<dimension> & grid()
 protected double index_metric(const Index & index)
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#44
+```
 
 ### index_metric
 
@@ -37,6 +52,9 @@ protected double index_metric(const Index & index)
 protected double index_metric(index_t index)
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#50
+```
 
 ### paint_cell
 
@@ -44,6 +62,9 @@ protected double index_metric(index_t index)
 protected void paint_cell(const Index & index, double metric)
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#55
+```
 
 ### replace_default
 
@@ -51,6 +72,9 @@ protected void paint_cell(const Index & index, double metric)
 protected void replace_default(double default_metric)
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#63
+```
 
 ### average_metric
 
@@ -58,6 +82,9 @@ protected void replace_default(double default_metric)
 public double average_metric()
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#77
+```
 
 ### median_metric
 
@@ -65,6 +92,9 @@ public double average_metric()
 public double median_metric()
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#98
+```
 
 ### minimal_metric
 
@@ -72,6 +102,9 @@ public double median_metric()
 public double minimal_metric(const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#120
+```
 
 ### minimal_metric
 
@@ -79,6 +112,9 @@ public double minimal_metric(const Segment<dimension> & segment)
 public double minimal_metric(const Triangle<dimension> & triangle)
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/private/grid_metric_impl.h#130
+```
 
 
 

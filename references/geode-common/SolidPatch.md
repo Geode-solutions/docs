@@ -1,18 +1,24 @@
 # struct SolidPatch
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/solid_patch.h#26
+```
 
 ## Members
 
 ```cpp
 public Position position
+
 ```
 
 ```cpp
 public index_t edge_id
+
 ```
 
 ```cpp
 public index_t vertex_id
+
 ```
 
 
@@ -25,6 +31,9 @@ public index_t vertex_id
 public void SolidPatch(const TetrahedralSolid3D & solid, index_t edge_in, Position position_in)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#12
+```
 
 ### SolidPatch
 
@@ -32,6 +41,9 @@ public void SolidPatch(const TetrahedralSolid3D & solid, index_t edge_in, Positi
 public void SolidPatch(index_t vertex_in)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#23
+```
 
 ### SolidPatch
 
@@ -39,34 +51,49 @@ public void SolidPatch(index_t vertex_in)
 public void SolidPatch()
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/solid_patch.h#34
+```
 
 ### is_vertex
 
 ```cpp
-public _Bool is_vertex()
+public bool is_vertex()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#25
+```
 
 ### is_edge_vertex
 
 ```cpp
-public _Bool is_edge_vertex()
+public bool is_edge_vertex()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#30
+```
 
 ### is_edge
 
 ```cpp
-public _Bool is_edge()
+public bool is_edge()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#35
+```
 
 ### are_same_paths
 
 ```cpp
-public _Bool are_same_paths(const SolidPatch & other)
+public bool are_same_paths(const SolidPatch & other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#40
+```
 
 ### get_vertex_position
 
@@ -74,6 +101,9 @@ public _Bool are_same_paths(const SolidPatch & other)
 public Position get_vertex_position(geode::index_t vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#53
+```
 
 ### get_vertex_index
 
@@ -81,6 +111,9 @@ public Position get_vertex_position(geode::index_t vertex)
 public geode::index_t get_vertex_index()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#58
+```
 
 
 

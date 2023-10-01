@@ -1,5 +1,8 @@
 # class DoSplitFacet
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#644
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ TetrahedronInfo
 public void DoSplitFacet(class TetrahedralSolidModifier::Impl & modifier, index_t facet_id, const PolyhedronFacetVertices & facet_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#647
+```
 
 ### DoSplitFacet
 
@@ -22,6 +28,9 @@ public void DoSplitFacet(class TetrahedralSolidModifier::Impl & modifier, index_
 public void DoSplitFacet(class TetrahedralSolidModifier::Impl & modifier, const PolyhedronFacet & facet, PolyhedronFacetVertices facet_vertices)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#662
+```
 
 ### split
 
@@ -29,6 +38,9 @@ public void DoSplitFacet(class TetrahedralSolidModifier::Impl & modifier, const 
 public SolidSplitInfo split(index_t split_vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#677
+```
 
 
 

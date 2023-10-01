@@ -1,14 +1,19 @@
 # struct FacetSplit
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/cut_exceptions.h#18
+```
 
 ## Members
 
 ```cpp
 public Point3D location
+
 ```
 
 ```cpp
 public PolyhedronFacet facet
+
 ```
 
 
@@ -21,6 +26,9 @@ public PolyhedronFacet facet
 public void FacetSplit(Point3D location_in, PolyhedronFacet facet_in)
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/cut_exceptions.h#20
+```
 
 ### FacetSplit
 
@@ -28,6 +36,9 @@ public void FacetSplit(Point3D location_in, PolyhedronFacet facet_in)
 public void FacetSplit()
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/cut_exceptions.h#25
+```
 
 
 

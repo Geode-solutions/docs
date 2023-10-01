@@ -83,6 +83,9 @@
 absl::FixedArray<Mapping<index_t> > extract_mappings_from_split_info(absl::Span<const SplitInfo> split_info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/common/information.cpp#39
+```
 
 ### update_vertex_mappings
 
@@ -90,6 +93,9 @@ absl::FixedArray<Mapping<index_t> > extract_mappings_from_split_info(absl::Span<
 void update_vertex_mappings(std::vector<geode::VertexMultiMapping> & vertex_multi_mappings, const geode::VertexMultiMapping & collapse_mapping)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/common/information.cpp#50
+```
 
 ### add_mappings_in_multi_mappings
 
@@ -97,6 +103,9 @@ void update_vertex_mappings(std::vector<geode::VertexMultiMapping> & vertex_mult
 void add_mappings_in_multi_mappings(std::vector<MultiMapping<T> > & multi_mappings, absl::Span<const Mapping<T> > new_mappings)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#178
+```
 
 ### process_mapping_element
 
@@ -104,6 +113,9 @@ void add_mappings_in_multi_mappings(std::vector<MultiMapping<T> > & multi_mappin
 void process_mapping_element(const geode::Mapping<T> & element, absl::flat_hash_set<T> & to_remove, absl::flat_hash_map<T, T> & new_to_old, const T & )
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#202
+```
 
 ### process_mapping_element
 
@@ -111,6 +123,9 @@ void process_mapping_element(const geode::Mapping<T> & element, absl::flat_hash_
 void process_mapping_element(geode::MultiMapping<T> & element, absl::flat_hash_set<T> & to_remove, absl::flat_hash_map<T, absl::InlinedVector<T, 1> > & new_to_olds, const T & no_value)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#217
+```
 
 ### update_mappings
 
@@ -118,6 +133,9 @@ void process_mapping_element(geode::MultiMapping<T> & element, absl::flat_hash_s
 void update_mappings(std::vector<MappingType> & mappings, NewToOldMap & new_to_old, const T & no_value)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#268
+```
 
 ### update_mappings
 
@@ -125,6 +143,9 @@ void update_mappings(std::vector<MappingType> & mappings, NewToOldMap & new_to_o
 void update_mappings(std::vector<geode::Mapping<T> > & mappings, const T & no_value)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#293
+```
 
 ### update_multi_mappings
 
@@ -132,6 +153,9 @@ void update_mappings(std::vector<geode::Mapping<T> > & mappings, const T & no_va
 void update_multi_mappings(std::vector<geode::MultiMapping<T> > & multi_mappings, const T & no_value)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#301
+```
 
 ### determine_cuts
 
@@ -139,6 +163,9 @@ void update_multi_mappings(std::vector<geode::MultiMapping<T> > & multi_mappings
 std::vector<GeometricSurfacePath2D> determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, absl::Span<const geode::SurfacePath> path_splits)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/surface/determine_cuts.cpp#267
+```
 
 ### determine_cuts
 
@@ -146,6 +173,9 @@ std::vector<GeometricSurfacePath2D> determine_cuts(const TriangulatedSurface2D &
 std::vector<GeometricSurfacePath3D> determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, absl::Span<const geode::SurfacePath> path_splits)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/surface/determine_cuts.cpp#277
+```
 
 ### cut_along_path
 
@@ -153,6 +183,9 @@ std::vector<GeometricSurfacePath3D> determine_cuts(const TriangulatedSurface3D &
 SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/surface/cut_along_surface_path.cpp#544
+```
 
 ### cut_along_path
 
@@ -160,13 +193,19 @@ SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension
 SurfaceCutPathInfo<2> cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/surface/cut_along_surface_path.cpp#556
+```
 
 ### is_split_tetrahedron_valid
 
 ```cpp
-_Bool is_split_tetrahedron_valid(const TetrahedralSolid3D & mesh, index_t tetrahedron_id, const Point3D & point)
+bool is_split_tetrahedron_valid(const TetrahedralSolid3D & mesh, index_t tetrahedron_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#552
+```
 
  Check if a tetrahedron split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
 
@@ -181,9 +220,12 @@ _Bool is_split_tetrahedron_valid(const TetrahedralSolid3D & mesh, index_t tetrah
 ### is_split_facet_valid
 
 ```cpp
-_Bool is_split_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
+bool is_split_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#561
+```
 
  Check if a facet split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
 
@@ -198,9 +240,12 @@ _Bool is_split_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFace
 ### is_split_facet_valid
 
 ```cpp
-_Bool is_split_facet_valid(const TetrahedralSolid3D & mesh, index_t facet_id, const Point3D & point)
+bool is_split_facet_valid(const TetrahedralSolid3D & mesh, index_t facet_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#570
+```
 
  Check if a facet split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
 
@@ -215,9 +260,12 @@ _Bool is_split_facet_valid(const TetrahedralSolid3D & mesh, index_t facet_id, co
 ### is_split_edge_valid
 
 ```cpp
-_Bool is_split_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
+bool is_split_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#578
+```
 
  Check if an edge split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
 
@@ -232,9 +280,12 @@ _Bool is_split_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet
 ### is_split_edge_valid
 
 ```cpp
-_Bool is_split_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
+bool is_split_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#586
+```
 
  Check if an edge split will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The split is not applied.
 
@@ -249,9 +300,12 @@ _Bool is_split_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, cons
 ### is_collapse_edge_valid
 
 ```cpp
-_Bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
+bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#594
+```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.
 
@@ -266,9 +320,12 @@ _Bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFa
 ### is_collapse_edge_valid
 
 ```cpp
-_Bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
+bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#608
+```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.
 
@@ -283,9 +340,12 @@ _Bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, c
 ### is_swap_facet_valid
 
 ```cpp
-_Bool is_swap_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet)
+bool is_swap_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#624
+```
 
  Check if a facet swap will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The swap is not applied.
 
@@ -298,9 +358,12 @@ _Bool is_swap_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet
 ### is_swap_edge_valid
 
 ```cpp
-_Bool is_swap_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex)
+bool is_swap_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#635
+```
 
  Check if an edge swap will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The swap is not applied.
 
@@ -315,9 +378,12 @@ _Bool is_swap_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetE
 ### is_move_point_valid
 
 ```cpp
-_Bool is_move_point_valid(const TetrahedralSolid3D & mesh, index_t vertex, const Point3D & point)
+bool is_move_point_valid(const TetrahedralSolid3D & mesh, index_t vertex, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#675
+```
 
  Check if a vertex relocation will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The vertex relocation is not applied.
 
@@ -335,6 +401,9 @@ _Bool is_move_point_valid(const TetrahedralSolid3D & mesh, index_t vertex, const
 SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#683
+```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.
 
@@ -352,6 +421,9 @@ SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh
 SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#692
+```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the tetrahedra volumes are positive. The collapse is not applied.
 
@@ -369,6 +441,9 @@ SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh
 std::array<Tetrahedron, 4> tetrahedra_after_split_tetrahedron(const TetrahedralSolid3D & mesh, index_t tetrahedron_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#699
+```
 
  Return the four tetrahedra resulting from a tetrahedron split. The split is not applied.
 
@@ -384,6 +459,9 @@ std::array<Tetrahedron, 4> tetrahedra_after_split_tetrahedron(const TetrahedralS
 FixedArray tetrahedra_after_split_facet(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#713
+```
 
  Return all the tetrahedra resulting from a facet split. The split is not applied.
 
@@ -399,6 +477,9 @@ FixedArray tetrahedra_after_split_facet(const TetrahedralSolid3D & mesh, const P
 FixedArray tetrahedra_after_split_facet(const TetrahedralSolid3D & mesh, index_t facet_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#739
+```
 
  Return all the tetrahedra resulting from a facet split. The split is not applied.
 
@@ -430,6 +511,9 @@ FixedArray tetrahedra_after_split_collapse_facet(const TetrahedralSolid3D & mesh
 FixedArray tetrahedra_after_split_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#748
+```
 
  Return all the tetrahedra resulting from an edge split. The split is not applied.
 
@@ -445,6 +529,9 @@ FixedArray tetrahedra_after_split_edge(const TetrahedralSolid3D & mesh, const Po
 FixedArray tetrahedra_after_split_edge(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#758
+```
 
  Return all the tetrahedra resulting from an edge split. The split is not applied.
 
@@ -460,6 +547,9 @@ FixedArray tetrahedra_after_split_edge(const TetrahedralSolid3D & mesh, index_t 
 FixedArray tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#765
+```
 
  Return all the tetrahedra resulting from an edge split and edge collapse. The split-collapse operations are not applied.
 
@@ -503,6 +593,9 @@ tuple tetrahedra_after_collapse_edge(const TetrahedralSolid3D & mesh, index_t ed
 std::array<Tetrahedron, 3> tetrahedra_after_swap_facet(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#795
+```
 
  Return the three tetrahedra resulting from a facet swap. The swap is not applied.
 
@@ -518,6 +611,9 @@ std::array<Tetrahedron, 3> tetrahedra_after_swap_facet(const TetrahedralSolid3D 
 FixedArray tetrahedra_after_swap_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#817
+```
 
  Return all the tetrahedra resulting from an edge swap. The swap is not applied.
 
@@ -533,6 +629,9 @@ FixedArray tetrahedra_after_swap_edge(const TetrahedralSolid3D & mesh, const Pol
 FixedArray tetrahedra_after_move_point(const TetrahedralSolid3D & mesh, index_t vertex, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.cpp#826
+```
 
  Return all the tetrahedra resulting from a vertex relocation. The vertex relocation is not applied.
 
@@ -545,9 +644,12 @@ FixedArray tetrahedra_after_move_point(const TetrahedralSolid3D & mesh, index_t 
 ### is_split_triangle_valid
 
 ```cpp
-_Bool is_split_triangle_valid(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
+bool is_split_triangle_valid(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#503
+```
 
  Check if a triangle split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
 
@@ -562,9 +664,12 @@ _Bool is_split_triangle_valid(const TriangulatedSurface<dimension> & mesh, index
 ### is_split_edge_valid
 
 ```cpp
-_Bool is_split_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+bool is_split_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#519
+```
 
  Check if an edge split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
 
@@ -579,9 +684,12 @@ _Bool is_split_edge_valid(const TriangulatedSurface<dimension> & mesh, const Pol
 ### is_collapse_edge_valid
 
 ```cpp
-_Bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#539
+```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
 
@@ -596,9 +704,12 @@ _Bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const 
 ### is_collapse_edge_valid
 
 ```cpp
-_Bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#548
+```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
 
@@ -613,9 +724,12 @@ _Bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_
 ### is_swap_edge_valid
 
 ```cpp
-_Bool is_swap_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
+bool is_swap_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#557
+```
 
  Check if an edge swap will keep the mesh valid, meaning the sign of the triangle areas are positive. The swap is not applied.
 
@@ -628,9 +742,12 @@ _Bool is_swap_edge_valid(const TriangulatedSurface<dimension> & mesh, const Poly
 ### is_move_point_valid
 
 ```cpp
-_Bool is_move_point_valid(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
+bool is_move_point_valid(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#576
+```
 
  Check if a vertex relocation will keep the mesh valid, meaning the sign of the triangle areas are positive. The relocation is not applied.
 
@@ -648,6 +765,9 @@ _Bool is_move_point_valid(const TriangulatedSurface<dimension> & mesh, index_t v
 SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#596
+```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
 
@@ -665,6 +785,9 @@ SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const Triangulated
 SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#606
+```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
 
@@ -682,6 +805,9 @@ SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const Triangulated
 std::array<Triangle<dimension>, 3> triangles_after_split_triangle(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#616
+```
 
  Return the three triangles resulting from a triangle split. The split is not applied.
 
@@ -765,6 +891,9 @@ std::tuple<absl::FixedArray<Triangle<dimension> >, absl::FixedArray<index_t> > t
 BRepSimulationResult is_collapse_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#464
+```
 
 ### is_collapse_edge_valid
 
@@ -772,6 +901,9 @@ BRepSimulationResult is_collapse_edge_valid(const BRep & brep, const Block3D & b
 BRepSimulationResult is_collapse_edge_valid(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#473
+```
 
 ### is_collapse_edge_valid
 
@@ -779,6 +911,9 @@ BRepSimulationResult is_collapse_edge_valid(const BRep & brep, const Surface3D &
 BRepSimulationResult is_collapse_edge_valid(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#482
+```
 
 ### collapse_edge_validity
 
@@ -786,6 +921,9 @@ BRepSimulationResult is_collapse_edge_valid(const BRep & brep, const Line3D & li
 BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#491
+```
 
 ### collapse_edge_validity
 
@@ -793,6 +931,9 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D
 BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#500
+```
 
 ### collapse_edge_validity
 
@@ -800,6 +941,9 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Surface
 BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#509
+```
 
 ### is_split_edge_valid
 
@@ -807,6 +951,9 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Line3D 
 BRepSimulationResult is_split_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#518
+```
 
 ### is_split_edge_valid
 
@@ -814,6 +961,9 @@ BRepSimulationResult is_split_edge_valid(const BRep & brep, const Block3D & bloc
 BRepSimulationResult is_split_edge_valid(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#527
+```
 
 ### is_split_edge_valid
 
@@ -821,6 +971,9 @@ BRepSimulationResult is_split_edge_valid(const BRep & brep, const Surface3D & su
 BRepSimulationResult is_split_edge_valid(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#536
+```
 
 ### is_swap_edge_valid
 
@@ -828,6 +981,9 @@ BRepSimulationResult is_split_edge_valid(const BRep & brep, const Line3D & line,
 BRepSimulationResult is_swap_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#545
+```
 
 ### is_swap_edge_valid
 
@@ -835,13 +991,19 @@ BRepSimulationResult is_swap_edge_valid(const BRep & brep, const Block3D & block
 BRepSimulationResult is_swap_edge_valid(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#575
+```
 
 ### is_move_point_valid
 
 ```cpp
-_Bool is_move_point_valid(const BRep & brep, index_t unique_vertex, const Point3D & point)
+bool is_move_point_valid(const BRep & brep, index_t unique_vertex, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#594
+```
 
 ### elements_after_collapse_edge
 
@@ -849,6 +1011,9 @@ _Bool is_move_point_valid(const BRep & brep, index_t unique_vertex, const Point3
 BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#614
+```
 
 ### elements_after_collapse_edge
 
@@ -856,6 +1021,9 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#623
+```
 
 ### elements_after_collapse_edge
 
@@ -863,6 +1031,9 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#632
+```
 
 ### cut_along_patch
 
@@ -870,6 +1041,9 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const PatchFrontEdge> boundary_edges, const Triangle3D & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/cut_along_patch.cpp#2103
+```
 
  Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
 
@@ -889,6 +1063,9 @@ SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralS
 SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end, absl::Span<const SolidPath> path_splits)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/cut_along_path.cpp#1389
+```
 
  Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
 
@@ -906,6 +1083,9 @@ SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSol
 SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/cutter/solid/cut_along_path.cpp#1399
+```
 
 ### triangles_after_swap_edge
 
@@ -913,6 +1093,9 @@ SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSol
 int triangles_after_swap_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#680
+```
 
 ### minimal_metric
 
@@ -926,6 +1109,9 @@ double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tet
 SectionSimulationResult is_collapse_edge_valid(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/section_geometric_modifier_simulation.cpp#64
+```
 
 ### is_collapse_edge_valid
 
@@ -933,6 +1119,9 @@ SectionSimulationResult is_collapse_edge_valid(const Section & section, const Su
 SectionSimulationResult is_collapse_edge_valid(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/section_geometric_modifier_simulation.cpp#73
+```
 
 ### is_split_edge_valid
 
@@ -940,6 +1129,9 @@ SectionSimulationResult is_collapse_edge_valid(const Section & section, const Li
 SectionSimulationResult is_split_edge_valid(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/section_geometric_modifier_simulation.cpp#82
+```
 
 ### is_split_edge_valid
 
@@ -947,6 +1139,9 @@ SectionSimulationResult is_split_edge_valid(const Section & section, const Surfa
 SectionSimulationResult is_split_edge_valid(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/section_geometric_modifier_simulation.cpp#91
+```
 
 ### is_swap_edge_valid
 
@@ -954,13 +1149,19 @@ SectionSimulationResult is_split_edge_valid(const Section & section, const Line2
 SectionSimulationResult is_swap_edge_valid(const Section & section, const Surface2D & surface, const PolygonEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/section_geometric_modifier_simulation.cpp#100
+```
 
 ### is_move_point_valid
 
 ```cpp
-_Bool is_move_point_valid(const Section & section, index_t unique_vertex, const Point2D & point)
+bool is_move_point_valid(const Section & section, index_t unique_vertex, const Point2D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/section_geometric_modifier_simulation.cpp#108
+```
 
 ### elements_after_collapse_edge
 
@@ -968,6 +1169,9 @@ _Bool is_move_point_valid(const Section & section, index_t unique_vertex, const 
 SectionElementsAfterOperation elements_after_collapse_edge(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/section_geometric_modifier_simulation.cpp#114
+```
 
 ### elements_after_collapse_edge
 
@@ -975,6 +1179,9 @@ SectionElementsAfterOperation elements_after_collapse_edge(const Section & secti
 SectionElementsAfterOperation elements_after_collapse_edge(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/section_geometric_modifier_simulation.cpp#124
+```
 
 
 
@@ -988,6 +1195,9 @@ SectionElementsAfterOperation elements_after_collapse_edge(const Section & secti
 | right |
 
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#22
+```
 
 | enum class Position |
 

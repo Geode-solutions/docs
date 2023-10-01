@@ -1,14 +1,19 @@
 # struct GeometricSurfacePath
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/determine_cuts.h#19
+```
 
 ## Members
 
 ```cpp
 public SurfacePath path
+
 ```
 
 ```cpp
 public Point<dimension> location
+
 ```
 
 
@@ -21,6 +26,9 @@ public Point<dimension> location
 public void GeometricSurfacePath<dimension>()
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/determine_cuts.h#21
+```
 
 ### GeometricSurfacePath
 
@@ -28,6 +36,9 @@ public void GeometricSurfacePath<dimension>()
 public void GeometricSurfacePath<dimension>(SurfacePath path_in, Point<dimension> point)
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/determine_cuts.h#22
+```
 
 
 

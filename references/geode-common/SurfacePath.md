@@ -1,22 +1,29 @@
 # struct SurfacePath
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#16
+```
 
 ## Members
 
 ```cpp
 public PolygonEdge edge
+
 ```
 
 ```cpp
 public Position position
+
 ```
 
 ```cpp
 public index_t vertex_id
+
 ```
 
 ```cpp
-public _Bool opposite_side
+public bool opposite_side
+
 ```
 
 
@@ -29,6 +36,9 @@ public _Bool opposite_side
 public void SurfacePath(const TriangulatedSurface<dimension> & surface, PolygonEdge edge_in, Position position_in)
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#19
+```
 
 ### SurfacePath
 
@@ -36,6 +46,9 @@ public void SurfacePath(const TriangulatedSurface<dimension> & surface, PolygonE
 public void SurfacePath(index_t vertex_in)
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#34
+```
 
 ### SurfacePath
 
@@ -43,27 +56,39 @@ public void SurfacePath(index_t vertex_in)
 public void SurfacePath()
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#36
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const SurfacePath & rhs)
+public bool operator==(const SurfacePath & rhs)
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#38
+```
 
 ### are_same_path
 
 ```cpp
-public _Bool are_same_path(const TriangulatedSurface<dimension> & surface, const SurfacePath & other)
+public bool are_same_path(const TriangulatedSurface<dimension> & surface, const SurfacePath & other)
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#48
+```
 
 ### is_vertex
 
 ```cpp
-public _Bool is_vertex()
+public bool is_vertex()
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#62
+```
 
 
 

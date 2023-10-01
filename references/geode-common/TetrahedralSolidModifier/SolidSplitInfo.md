@@ -1,22 +1,29 @@
 # struct SolidSplitInfo
 
+```cpp
+Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier.h#64
+```
 
 ## Members
 
 ```cpp
 public index_t vertex
+
 ```
 
 ```cpp
 public InlinedVector tetrahedra
+
 ```
 
 ```cpp
 public InlinedVector facets
+
 ```
 
 ```cpp
 public InlinedVector edges
+
 ```
 
 
@@ -29,6 +36,9 @@ public InlinedVector edges
 public void SolidSplitInfo()
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier.h#66
+```
 
 ### SolidSplitInfo
 
@@ -36,6 +46,9 @@ public void SolidSplitInfo()
 public void SolidSplitInfo(SolidSplitEdgeInfo && split_edge_info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#3070
+```
 
 
 

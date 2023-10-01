@@ -4,6 +4,9 @@
 
 # class GridMetric
 
+```cpp
+Defined at ../include/geode/common/metric/grid_metric.h#28
+```
 
  Grid metric implementation
 
@@ -23,6 +26,9 @@ Inherits from Metric<dimension>
 public void GridMetric<dimension>(const Grid<dimension> & grid, double default_metric)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#242
+```
 
 ### ~GridMetric
 
@@ -30,6 +36,9 @@ public void GridMetric<dimension>(const Grid<dimension> & grid, double default_m
 public void ~GridMetric<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#249
+```
 
 ### grid
 
@@ -37,6 +46,9 @@ public void ~GridMetric<dimension>()
 public const Grid<dimension> & grid()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#254
+```
 
 ### metric
 
@@ -44,6 +56,9 @@ public const Grid<dimension> & grid()
 public double metric(const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#260
+```
 
 ### metric
 
@@ -51,6 +66,9 @@ public double metric(const Point<dimension> & point)
 public double metric(index_t cell_index)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#267
+```
 
 ### minimal_metric
 
@@ -58,6 +76,9 @@ public double metric(index_t cell_index)
 public double minimal_metric(const Segment<dimension> & segment)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#273
+```
 
 ### minimal_metric
 
@@ -65,6 +86,9 @@ public double minimal_metric(const Segment<dimension> & segment)
 public double minimal_metric(const Triangle<dimension> & triangle)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#280
+```
 
 ### average_metric
 
@@ -72,6 +96,9 @@ public double minimal_metric(const Triangle<dimension> & triangle)
 public double average_metric()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#287
+```
 
 ### median_metric
 
@@ -79,6 +106,9 @@ public double average_metric()
 public double median_metric()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#293
+```
 
 ### paint_point
 
@@ -86,6 +116,9 @@ public double median_metric()
 public void paint_point(const Point<dimension> & point, double metric)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#306
+```
 
 ### paint_segment
 
@@ -93,6 +126,9 @@ public void paint_point(const Point<dimension> & point, double metric)
 public void paint_segment(const Segment<dimension> & segment, double metric)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#299
+```
 
 ### paint_triangle
 
@@ -100,6 +136,9 @@ public void paint_segment(const Segment<dimension> & segment, double metric)
 public void paint_triangle(const Triangle<dimension> & triangle, double metric)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#313
+```
 
 ### paint_mesh
 
@@ -107,6 +146,9 @@ public void paint_triangle(const Triangle<dimension> & triangle, double metric)
 public void paint_mesh(const PointSet<dimension> & mesh, double metric)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#320
+```
 
 ### paint_mesh
 
@@ -114,6 +156,9 @@ public void paint_mesh(const PointSet<dimension> & mesh, double metric)
 public void paint_mesh(const EdgedCurve<dimension> & mesh, double metric)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#327
+```
 
 ### paint_mesh
 
@@ -121,6 +166,9 @@ public void paint_mesh(const EdgedCurve<dimension> & mesh, double metric)
 public void paint_mesh(const TriangulatedSurface<dimension> & mesh, double metric)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#334
+```
 
 ### optimize
 
@@ -128,6 +176,9 @@ public void paint_mesh(const TriangulatedSurface<dimension> & mesh, double metri
 public void optimize(double gradation)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/metric/grid_metric.cpp#341
+```
 
 
 

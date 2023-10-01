@@ -1,5 +1,8 @@
 # class TetrahedralSolidModifier
 
+```cpp
+Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier.h#30
+```
 
 ```cpp
 Inherits from VerticesModifier
@@ -37,6 +40,9 @@ Impl
 public void TetrahedralSolidModifier(const TetrahedralSolid3D & solid, TetrahedralSolidBuilder3D & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2914
+```
 
 ### TetrahedralSolidModifier
 
@@ -44,6 +50,9 @@ public void TetrahedralSolidModifier(const TetrahedralSolid3D & solid, Tetrahedr
 public void TetrahedralSolidModifier(TetrahedralSolidModifier && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2920
+```
 
 ### ~TetrahedralSolidModifier
 
@@ -51,20 +60,29 @@ public void TetrahedralSolidModifier(TetrahedralSolidModifier && other)
 public void ~TetrahedralSolidModifier()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2927
+```
 
 ### is_tetrahedron_active
 
 ```cpp
-public _Bool is_tetrahedron_active(index_t tetrahedron_id)
+public bool is_tetrahedron_active(index_t tetrahedron_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2936
+```
 
 ### is_facet_active
 
 ```cpp
-public _Bool is_facet_active(index_t facet_id)
+public bool is_facet_active(index_t facet_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2942
+```
 
 ### split_tetrahedron
 
@@ -72,6 +90,9 @@ public _Bool is_facet_active(index_t facet_id)
 public SolidSplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2947
+```
 
  Split a tetrahedron into four new tetrahedra.
 
@@ -89,6 +110,9 @@ public SolidSplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & 
 public SolidSplitInfo split_facet(index_t facet_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2954
+```
 
  Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra.
 
@@ -106,6 +130,9 @@ public SolidSplitInfo split_facet(index_t facet_id, const Point3D & point)
 public SolidSplitInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2961
+```
 
  Split a facet into three new ones. The tetrahedra incident to this facet are also split into three new tetrahedra.
 
@@ -125,6 +152,9 @@ public SolidSplitInfo split_facet(const PolyhedronFacet & facet, const Point3D &
 public SolidSplitEdgeInfo split_edge(index_t edge_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2968
+```
 
  Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.
 
@@ -142,6 +172,9 @@ public SolidSplitEdgeInfo split_edge(index_t edge_id, const Point3D & point)
 public SolidSplitEdgeInfo split_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2975
+```
 
  Split an edge into two new ones. Each tetrahedron incident to this edge is also split into two new tetrahedra.
 
@@ -159,6 +192,9 @@ public SolidSplitEdgeInfo split_edge(const PolyhedronFacetEdge & edge, const Poi
 public SolidCollapseEdgeInfo collapse_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2982
+```
 
  Collapse an edge. The tetrahedra incident to this edge are set as inactive but not deleted.
 
@@ -174,6 +210,9 @@ public SolidCollapseEdgeInfo collapse_edge(const PolyhedronFacetEdge & edge, con
 public SolidCollapseEdgeInfo collapse_edge(index_t edge_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2989
+```
 
  Collapse an edge. The tetrahedra incident to this edge are set as inactive but not deleted.
 
@@ -189,6 +228,9 @@ public SolidCollapseEdgeInfo collapse_edge(index_t edge_id, const Point3D & poin
 public SolidSwapFacetInfo swap_facet(const PolyhedronFacet & facet)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2996
+```
 
  Swap a facet. Two tetrahedra should be incident to this facet. These two tetrahedra are set as inactive and three new tetrahedra are created.
 
@@ -202,6 +244,9 @@ public SolidSwapFacetInfo swap_facet(const PolyhedronFacet & facet)
 public SolidSwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#3002
+```
 
  Swap an edge. The edge can be on border. The tetrahedra around given edge are set as inactive and new tetrahedra are created.
 
@@ -217,6 +262,9 @@ public SolidSwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t ape
 public SolidRemoveMultipleAdjacencyInfo remove_double_adjacency(const PolyhedronFacetEdge & edge)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#3010
+```
 
  Remove an edge bearing a double adjacency. The two tetrahedra around given edge are set as inactive.
 
@@ -230,6 +278,9 @@ public SolidRemoveMultipleAdjacencyInfo remove_double_adjacency(const Polyhedron
 public SolidRemoveMultipleAdjacencyInfo remove_triple_adjacency(const PolyhedronVertex & vertex)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#3017
+```
 
  Remove a vertex bearing a triple adjacency. The two tetrahedra around given vertex are set as inactive.
 
@@ -243,6 +294,9 @@ public SolidRemoveMultipleAdjacencyInfo remove_triple_adjacency(const Polyhedron
 public vector clean_tetrahedra()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#3024
+```
 
  Clean up the mesh removing inactive tetrahedra
 
@@ -254,6 +308,9 @@ public vector clean_tetrahedra()
 public vector clean_vertices()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#3029
+```
 
  Clean up the mesh removing isolated vertices
 
@@ -267,6 +324,9 @@ public vector clean_vertices()
 public vector clean_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#3034
+```
 
  Clean up the mesh removing edges
 
@@ -280,6 +340,9 @@ public vector clean_edges()
 public vector clean_facets()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#3039
+```
 
  Clean up the mesh removing facets
 
@@ -303,6 +366,9 @@ public std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_
 protected const TetrahedralSolid3D & solid()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2931
+```
 
 
 

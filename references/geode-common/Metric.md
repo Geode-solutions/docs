@@ -1,5 +1,8 @@
 # class Metric
 
+```cpp
+Defined at ../include/geode/common/metric/metric.h#23
+```
 
  Interface class for metric computation
 
@@ -13,6 +16,9 @@
 public void ~Metric<dimension>()
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/metric.h#26
+```
 
 ### metric
 
@@ -38,6 +44,9 @@ public double minimal_metric(const Triangle<dimension> & triangle)
 public typename std::enable_if<T == 3, double>::type minimal_metric(const Tetrahedron & tetrahedron)
 ```
 
+```cpp
+Defined at ../include/geode/common/metric/metric.h#37
+```
 
 ### average_metric
 

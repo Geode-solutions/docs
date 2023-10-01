@@ -1,26 +1,34 @@
 # struct FrontEdge
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/private/front_edge.h#24
+```
 
 ## Members
 
 ```cpp
 public geode::index_t solid_edge_id
+
 ```
 
 ```cpp
 public array patch_vertices
+
 ```
 
 ```cpp
 public PolyhedronFacet hint_facet
+
 ```
 
 ```cpp
 public pair hint_edge
+
 ```
 
 ```cpp
 public geode::index_t triangle_info_ptr
+
 ```
 
 
@@ -33,6 +41,9 @@ public geode::index_t triangle_info_ptr
 public void FrontEdge(array patch_vertices_in, PolyhedronFacet hint_facet_in, geode::index_t triangle_info_ptr_in)
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/private/front_edge.h#26
+```
 
 ### FrontEdge
 
@@ -40,6 +51,9 @@ public void FrontEdge(array patch_vertices_in, PolyhedronFacet hint_facet_in, ge
 public void FrontEdge(geode::index_t solid_edge_in, array patch_vertices_in, geode::index_t triangle_info_ptr_in)
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/private/front_edge.h#35
+```
 
 
 

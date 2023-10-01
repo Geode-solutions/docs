@@ -1,14 +1,19 @@
 # struct PatchFrontEdge
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/private/front_edge.h#13
+```
 
 ## Members
 
 ```cpp
 public index_t id
+
 ```
 
 ```cpp
-public _Bool orientation
+public bool orientation
+
 ```
 
 
@@ -18,9 +23,12 @@ public _Bool orientation
 ### PatchFrontEdge
 
 ```cpp
-public void PatchFrontEdge(index_t id_in, _Bool orientation_in)
+public void PatchFrontEdge(index_t id_in, bool orientation_in)
 ```
 
+```cpp
+Defined at ../include/geode/common/cutter/solid/private/front_edge.h#15
+```
 
 
 

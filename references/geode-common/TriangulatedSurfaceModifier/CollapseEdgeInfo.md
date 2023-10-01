@@ -1,5 +1,8 @@
 # struct CollapseEdgeInfo
 
+```cpp
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier.h#69
+```
 
 ```cpp
 Inherits from SurfaceCollapseInfo
@@ -11,6 +14,7 @@ Inherits from SurfaceCollapseInfo
 
 ```cpp
 public vector modified
+
 ```
 
 

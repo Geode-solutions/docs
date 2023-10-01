@@ -1,14 +1,19 @@
 # struct Mapping
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#57
+```
 
 ## Members
 
 ```cpp
 public index_t new_id
+
 ```
 
 ```cpp
 public index_t old_id
+
 ```
 
 
@@ -21,6 +26,9 @@ public index_t old_id
 public void Mapping()
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#60
+```
 
 ### Mapping
 
@@ -28,20 +36,29 @@ public void Mapping()
 public void Mapping(index_t new_id_in, index_t old_id_in)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#61
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const Mapping<index_t> & other)
+public bool operator==(const Mapping<index_t> & other)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#65
+```
 
 ### operator<
 
 ```cpp
-public _Bool operator<(const Mapping<index_t> & other)
+public bool operator<(const Mapping<index_t> & other)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#69
+```
 
 ### string
 
@@ -49,20 +66,28 @@ public _Bool operator<(const Mapping<index_t> & other)
 public basic_string string()
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#77
+```
 
 
 
 # struct Mapping
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#34
+```
 
 ## Members
 
 ```cpp
 public Type new_id
+
 ```
 
 ```cpp
 public Type old_id
+
 ```
 
 
@@ -75,6 +100,9 @@ public Type old_id
 public void Mapping<Type>()
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#36
+```
 
 ### Mapping
 
@@ -82,20 +110,29 @@ public void Mapping<Type>()
 public void Mapping<Type>(Type new_id_in, Type old_id_in)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#37
+```
 
 ### operator==
 
 ```cpp
-public _Bool operator==(const Mapping<Type> & other)
+public bool operator==(const Mapping<Type> & other)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#41
+```
 
 ### operator<
 
 ```cpp
-public _Bool operator<(const Mapping<Type> & other)
+public bool operator<(const Mapping<Type> & other)
 ```
 
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#45
+```
 
 
 

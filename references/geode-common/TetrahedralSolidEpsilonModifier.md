@@ -1,5 +1,8 @@
 # class TetrahedralSolidEpsilonModifier
 
+```cpp
+Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_epsilon_modifier.h#23
+```
 
 ```cpp
 Inherits from TetrahedralSolidModifier
@@ -15,6 +18,9 @@ Inherits from TetrahedralSolidModifier
 public void TetrahedralSolidEpsilonModifier(const TetrahedralSolid3D & solid, TetrahedralSolidBuilder3D & builder)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_epsilon_modifier.cpp#44
+```
 
 ### ~TetrahedralSolidEpsilonModifier
 
@@ -22,6 +28,9 @@ public void TetrahedralSolidEpsilonModifier(const TetrahedralSolid3D & solid, Te
 public void ~TetrahedralSolidEpsilonModifier()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_epsilon_modifier.cpp#50
+```
 
 ### insert_point_in_tetrahedron
 
@@ -29,6 +38,9 @@ public void ~TetrahedralSolidEpsilonModifier()
 public SolidSplitInfo insert_point_in_tetrahedron(index_t tetrahedron_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_epsilon_modifier.cpp#55
+```
 
  Insert a point in a tetrahedron either by spliting the tetrahedron into four new ones, or by snapping the point on a facet (three new tetrahedra for each side), an edge (each incident tetrahedra is split into two new tetrahedra) or a vertex (no new tetrahedron).
 
@@ -46,6 +58,9 @@ public SolidSplitInfo insert_point_in_tetrahedron(index_t tetrahedron_id, const 
 public SolidSplitInfo insert_point_on_facet(const PolyhedronFacet & facet, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_epsilon_modifier.cpp#69
+```
 
  Insert a point on a facet either by spliting the facet into three new ones, or by snapping the point on an edge or a vertex.
 
@@ -63,6 +78,9 @@ public SolidSplitInfo insert_point_on_facet(const PolyhedronFacet & facet, const
 public SolidSplitEdgeInfo insert_point_on_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_epsilon_modifier.cpp#102
+```
 
  Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex.
 
@@ -96,6 +114,9 @@ public SolidSplitEdgeInfo insert_point_on_edge(index_t edge_id, const Point3D & 
 public SolidSplitEdgeInfo insert_point_on_edge(const index_t edge_id, const Point3D & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_epsilon_modifier.cpp#83
+```
 
 
 

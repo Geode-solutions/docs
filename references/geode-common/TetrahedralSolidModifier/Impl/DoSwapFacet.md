@@ -1,5 +1,8 @@
 # class DoSwapFacet
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#1909
+```
 
 ## Records
 
@@ -15,6 +18,9 @@ TetrahedronInfo
 public void DoSwapFacet(class TetrahedralSolidModifier::Impl & modifier, const PolyhedronFacet & facet)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#1912
+```
 
 ### swap
 
@@ -22,6 +28,9 @@ public void DoSwapFacet(class TetrahedralSolidModifier::Impl & modifier, const P
 public SolidSwapFacetInfo swap()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#1926
+```
 
 
 
