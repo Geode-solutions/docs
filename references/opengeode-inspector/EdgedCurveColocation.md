@@ -1,5 +1,8 @@
 # class EdgedCurveColocation
 
+```cpp
+Defined at ../include/geode/inspector/criterion/colocation/edgedcurve_colocation.h#41
+```
 
  Class for inspecting the colocation of points in an EdgedCurve
 
@@ -13,6 +16,9 @@
 public void EdgedCurveColocation<dimension>(const EdgedCurveColocation<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/colocation/edgedcurve_colocation.h#43
+```
 
 ### operator=
 
@@ -20,6 +26,9 @@ public void EdgedCurveColocation<dimension>(const EdgedCurveColocation<dimension
 public EdgedCurveColocation<dimension> & operator=(const EdgedCurveColocation<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/colocation/edgedcurve_colocation.h#43
+```
 
 ### EdgedCurveColocation
 
@@ -27,13 +36,19 @@ public EdgedCurveColocation<dimension> & operator=(const EdgedCurveColocation<di
 public void EdgedCurveColocation<dimension>(const EdgedCurve<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/edgedcurve_colocation.cpp#46
+```
 
 ### EdgedCurveColocation
 
 ```cpp
-public void EdgedCurveColocation<dimension>(const EdgedCurve<dimension> & mesh, _Bool verbose)
+public void EdgedCurveColocation<dimension>(const EdgedCurve<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/edgedcurve_colocation.cpp#53
+```
 
 ### ~EdgedCurveColocation
 
@@ -41,13 +56,19 @@ public void EdgedCurveColocation<dimension>(const EdgedCurve<dimension> & mesh, 
 public void ~EdgedCurveColocation<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/edgedcurve_colocation.cpp#60
+```
 
 ### mesh_has_colocated_points
 
 ```cpp
-public _Bool mesh_has_colocated_points()
+public bool mesh_has_colocated_points()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/edgedcurve_colocation.cpp#65
+```
 
 ### nb_colocated_points
 
@@ -55,6 +76,9 @@ public _Bool mesh_has_colocated_points()
 public index_t nb_colocated_points()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/edgedcurve_colocation.cpp#71
+```
 
 ### colocated_points_groups
 
@@ -62,12 +86,21 @@ public index_t nb_colocated_points()
 public vector colocated_points_groups()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/edgedcurve_colocation.cpp#77
+```
 
 
 
 # class EdgedCurveColocation
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/edgedcurve_colocation.cpp#85
+```
 
 # class EdgedCurveColocation
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/edgedcurve_colocation.cpp#84
+```
 

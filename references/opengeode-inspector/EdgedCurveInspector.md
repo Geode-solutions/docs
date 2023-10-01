@@ -1,5 +1,8 @@
 # class EdgedCurveInspector
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/edgedcurve_inspector.cpp#48
+```
 
 ```cpp
 Inherits from AddInspectors<EdgedCurve<2U>, EdgedCurveColocation<2U>, EdgedCurveDegeneration<2U> >
@@ -9,6 +12,9 @@ Inherits from AddInspectors<EdgedCurve<2U>, EdgedCurveColocation<2U>, EdgedCurve
 
 # class EdgedCurveInspector
 
+```cpp
+Defined at ../include/geode/inspector/edgedcurve_inspector.h#39
+```
 
  Class for inspecting an EdgedCurve**extends** **extends** 
 
@@ -28,6 +34,9 @@ Inherits from AddInspectors<EdgedCurve<dimension>, EdgedCurveColocation<dimensio
 public void EdgedCurveInspector<dimension>(const EdgedCurveInspector<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/edgedcurve_inspector.h#44
+```
 
 ### operator=
 
@@ -35,6 +44,9 @@ public void EdgedCurveInspector<dimension>(const EdgedCurveInspector<dimension> 
 public EdgedCurveInspector<dimension> & operator=(const EdgedCurveInspector<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/edgedcurve_inspector.h#44
+```
 
 ### EdgedCurveInspector
 
@@ -42,18 +54,27 @@ public EdgedCurveInspector<dimension> & operator=(const EdgedCurveInspector<dime
 public void EdgedCurveInspector<dimension>(const EdgedCurve<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/edgedcurve_inspector.cpp#30
+```
 
 ### EdgedCurveInspector
 
 ```cpp
-public void EdgedCurveInspector<dimension>(const EdgedCurve<dimension> & mesh, _Bool verbose)
+public void EdgedCurveInspector<dimension>(const EdgedCurve<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/edgedcurve_inspector.cpp#39
+```
 
 
 
 # class EdgedCurveInspector
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/edgedcurve_inspector.cpp#49
+```
 
 ```cpp
 Inherits from AddInspectors<EdgedCurve<3U>, EdgedCurveColocation<3U>, EdgedCurveDegeneration<3U> >

@@ -1,11 +1,20 @@
 # class EdgedCurveDegeneration
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/edgedcurve_degeneration.cpp#140
+```
 
 # class EdgedCurveDegeneration
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/edgedcurve_degeneration.cpp#142
+```
 
 # class EdgedCurveDegeneration
 
+```cpp
+Defined at ../include/geode/inspector/criterion/degeneration/edgedcurve_degeneration.h#41
+```
 
  Class for inspecting the degeneration of an EdgedCurve
 
@@ -19,6 +28,9 @@
 public void EdgedCurveDegeneration<dimension>(const EdgedCurveDegeneration<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/degeneration/edgedcurve_degeneration.h#43
+```
 
 ### operator=
 
@@ -26,6 +38,9 @@ public void EdgedCurveDegeneration<dimension>(const EdgedCurveDegeneration<dimen
 public EdgedCurveDegeneration<dimension> & operator=(const EdgedCurveDegeneration<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/degeneration/edgedcurve_degeneration.h#43
+```
 
 ### EdgedCurveDegeneration
 
@@ -33,13 +48,19 @@ public EdgedCurveDegeneration<dimension> & operator=(const EdgedCurveDegeneratio
 public void EdgedCurveDegeneration<dimension>(const EdgedCurve<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/edgedcurve_degeneration.cpp#102
+```
 
 ### EdgedCurveDegeneration
 
 ```cpp
-public void EdgedCurveDegeneration<dimension>(const EdgedCurve<dimension> & mesh, _Bool verbose)
+public void EdgedCurveDegeneration<dimension>(const EdgedCurve<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/edgedcurve_degeneration.cpp#109
+```
 
 ### ~EdgedCurveDegeneration
 
@@ -47,13 +68,19 @@ public void EdgedCurveDegeneration<dimension>(const EdgedCurve<dimension> & mesh
 public void ~EdgedCurveDegeneration<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/edgedcurve_degeneration.cpp#116
+```
 
 ### is_mesh_degenerated
 
 ```cpp
-public _Bool is_mesh_degenerated()
+public bool is_mesh_degenerated()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/edgedcurve_degeneration.cpp#121
+```
 
 ### nb_degenerated_edges
 
@@ -61,6 +88,9 @@ public _Bool is_mesh_degenerated()
 public index_t nb_degenerated_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/edgedcurve_degeneration.cpp#127
+```
 
 ### degenerated_edges
 
@@ -68,6 +98,9 @@ public index_t nb_degenerated_edges()
 public vector degenerated_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/edgedcurve_degeneration.cpp#133
+```
 
 
 

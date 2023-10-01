@@ -1,5 +1,8 @@
 # class ModelMeshesIntersections
 
+```cpp
+Defined at ../include/geode/inspector/criterion/intersections/model_intersections.h#43
+```
 
  Class for inspecting the intersections of a Model meshes
 
@@ -13,6 +16,9 @@
 public void ModelMeshesIntersections<dimension, Model>(const ModelMeshesIntersections<dimension, Model> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/intersections/model_intersections.h#45
+```
 
 ### operator=
 
@@ -20,6 +26,9 @@ public void ModelMeshesIntersections<dimension, Model>(const ModelMeshesIntersec
 public ModelMeshesIntersections<dimension, Model> & operator=(const ModelMeshesIntersections<dimension, Model> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/intersections/model_intersections.h#45
+```
 
 ### ModelMeshesIntersections
 
@@ -27,13 +36,19 @@ public ModelMeshesIntersections<dimension, Model> & operator=(const ModelMeshesI
 public void ModelMeshesIntersections<dimension, Model>(const Model & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/model_intersections.cpp#570
+```
 
 ### ModelMeshesIntersections
 
 ```cpp
-public void ModelMeshesIntersections<dimension, Model>(const Model & model, _Bool verbose)
+public void ModelMeshesIntersections<dimension, Model>(const Model & model, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/model_intersections.cpp#577
+```
 
 ### ~ModelMeshesIntersections
 
@@ -41,13 +56,19 @@ public void ModelMeshesIntersections<dimension, Model>(const Model & model, _Boo
 public void ~ModelMeshesIntersections<dimension, Model>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/model_intersections.cpp#584
+```
 
 ### model_has_intersecting_surfaces
 
 ```cpp
-public _Bool model_has_intersecting_surfaces()
+public bool model_has_intersecting_surfaces()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/model_intersections.cpp#589
+```
 
 ### nb_intersecting_surfaces_elements_pair
 
@@ -55,6 +76,9 @@ public _Bool model_has_intersecting_surfaces()
 public index_t nb_intersecting_surfaces_elements_pair()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/model_intersections.cpp#596
+```
 
 ### intersecting_surfaces_elements
 
@@ -62,6 +86,9 @@ public index_t nb_intersecting_surfaces_elements_pair()
 public std::vector<std::pair<ComponentMeshElement, ComponentMeshElement> > intersecting_surfaces_elements()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/model_intersections.cpp#603
+```
 
 
 

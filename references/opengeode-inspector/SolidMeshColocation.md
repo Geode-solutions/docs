@@ -1,8 +1,14 @@
 # class SolidMeshColocation
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/solid_colocation.cpp#84
+```
 
 # class SolidMeshColocation
 
+```cpp
+Defined at ../include/geode/inspector/criterion/colocation/solid_colocation.h#41
+```
 
  Class for inspecting the colocation of points in a SolidMesh
 
@@ -16,6 +22,9 @@
 public void SolidMeshColocation<dimension>(const SolidMeshColocation<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/colocation/solid_colocation.h#43
+```
 
 ### operator=
 
@@ -23,6 +32,9 @@ public void SolidMeshColocation<dimension>(const SolidMeshColocation<dimension> 
 public SolidMeshColocation<dimension> & operator=(const SolidMeshColocation<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/colocation/solid_colocation.h#43
+```
 
 ### SolidMeshColocation
 
@@ -30,13 +42,19 @@ public SolidMeshColocation<dimension> & operator=(const SolidMeshColocation<dime
 public void SolidMeshColocation<dimension>(const SolidMesh<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/solid_colocation.cpp#46
+```
 
 ### SolidMeshColocation
 
 ```cpp
-public void SolidMeshColocation<dimension>(const SolidMesh<dimension> & mesh, _Bool verbose)
+public void SolidMeshColocation<dimension>(const SolidMesh<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/solid_colocation.cpp#53
+```
 
 ### ~SolidMeshColocation
 
@@ -44,13 +62,19 @@ public void SolidMeshColocation<dimension>(const SolidMesh<dimension> & mesh, _B
 public void ~SolidMeshColocation<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/solid_colocation.cpp#60
+```
 
 ### mesh_has_colocated_points
 
 ```cpp
-public _Bool mesh_has_colocated_points()
+public bool mesh_has_colocated_points()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/solid_colocation.cpp#65
+```
 
 ### nb_colocated_points
 
@@ -58,6 +82,9 @@ public _Bool mesh_has_colocated_points()
 public index_t nb_colocated_points()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/solid_colocation.cpp#71
+```
 
 ### colocated_points_groups
 
@@ -65,6 +92,9 @@ public index_t nb_colocated_points()
 public vector colocated_points_groups()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/solid_colocation.cpp#77
+```
 
 
 

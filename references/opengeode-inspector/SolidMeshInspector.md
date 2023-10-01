@@ -1,5 +1,8 @@
 # class SolidMeshInspector
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/solid_inspector.cpp#56
+```
 
 ```cpp
 Inherits from AddInspectors<SolidMesh<3U>, SolidMeshAdjacency<3U>, SolidMeshColocation<3U>, SolidMeshDegeneration<3U>, SolidMeshVertexManifold<3U>, SolidMeshEdgeManifold<3U>, SolidMeshFacetManifold<3U> >
@@ -9,6 +12,9 @@ Inherits from AddInspectors<SolidMesh<3U>, SolidMeshAdjacency<3U>, SolidMeshColo
 
 # class SolidMeshInspector
 
+```cpp
+Defined at ../include/geode/inspector/solid_inspector.h#43
+```
 
  Class for inspecting a SolidMesh**extends** **extends** 
 
@@ -28,6 +34,9 @@ Inherits from AddInspectors<SolidMesh<dimension>, SolidMeshAdjacency<dimension>,
 public void SolidMeshInspector<dimension>(const SolidMeshInspector<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/solid_inspector.h#52
+```
 
 ### operator=
 
@@ -35,6 +44,9 @@ public void SolidMeshInspector<dimension>(const SolidMeshInspector<dimension> & 
 public SolidMeshInspector<dimension> & operator=(const SolidMeshInspector<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/solid_inspector.h#52
+```
 
 ### SolidMeshInspector
 
@@ -42,13 +54,19 @@ public SolidMeshInspector<dimension> & operator=(const SolidMeshInspector<dimens
 public void SolidMeshInspector<dimension>(const SolidMesh<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/solid_inspector.cpp#30
+```
 
 ### SolidMeshInspector
 
 ```cpp
-public void SolidMeshInspector<dimension>(const SolidMesh<dimension> & mesh, _Bool verbose)
+public void SolidMeshInspector<dimension>(const SolidMesh<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/solid_inspector.cpp#43
+```
 
 
 

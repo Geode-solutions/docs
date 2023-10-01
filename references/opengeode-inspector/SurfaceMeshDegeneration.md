@@ -1,5 +1,8 @@
 # class SurfaceMeshDegeneration
 
+```cpp
+Defined at ../include/geode/inspector/criterion/degeneration/surface_degeneration.h#41
+```
 
  Class for inspecting the degeneration of a SurfaceMesh
 
@@ -13,6 +16,9 @@
 public void SurfaceMeshDegeneration<dimension>(const SurfaceMeshDegeneration<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/degeneration/surface_degeneration.h#43
+```
 
 ### operator=
 
@@ -20,6 +26,9 @@ public void SurfaceMeshDegeneration<dimension>(const SurfaceMeshDegeneration<dim
 public SurfaceMeshDegeneration<dimension> & operator=(const SurfaceMeshDegeneration<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/degeneration/surface_degeneration.h#43
+```
 
 ### SurfaceMeshDegeneration
 
@@ -27,13 +36,19 @@ public SurfaceMeshDegeneration<dimension> & operator=(const SurfaceMeshDegenerat
 public void SurfaceMeshDegeneration<dimension>(const SurfaceMesh<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/surface_degeneration.cpp#109
+```
 
 ### SurfaceMeshDegeneration
 
 ```cpp
-public void SurfaceMeshDegeneration<dimension>(const SurfaceMesh<dimension> & mesh, _Bool verbose)
+public void SurfaceMeshDegeneration<dimension>(const SurfaceMesh<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/surface_degeneration.cpp#116
+```
 
 ### ~SurfaceMeshDegeneration
 
@@ -41,13 +56,19 @@ public void SurfaceMeshDegeneration<dimension>(const SurfaceMesh<dimension> & me
 public void ~SurfaceMeshDegeneration<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/surface_degeneration.cpp#123
+```
 
 ### is_mesh_degenerated
 
 ```cpp
-public _Bool is_mesh_degenerated()
+public bool is_mesh_degenerated()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/surface_degeneration.cpp#128
+```
 
 ### nb_degenerated_edges
 
@@ -55,6 +76,9 @@ public _Bool is_mesh_degenerated()
 public index_t nb_degenerated_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/surface_degeneration.cpp#134
+```
 
 ### nb_degenerated_polygons
 
@@ -62,6 +86,9 @@ public index_t nb_degenerated_edges()
 public index_t nb_degenerated_polygons()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/surface_degeneration.cpp#140
+```
 
 ### degenerated_edges
 
@@ -69,6 +96,9 @@ public index_t nb_degenerated_polygons()
 public vector degenerated_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/surface_degeneration.cpp#147
+```
 
 ### degenerated_polygons
 
@@ -76,6 +106,9 @@ public vector degenerated_edges()
 public vector degenerated_polygons()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/surface_degeneration.cpp#154
+```
 
 
 

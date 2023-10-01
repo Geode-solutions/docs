@@ -1,5 +1,8 @@
 # class SectionInspector
 
+```cpp
+Defined at ../include/geode/inspector/section_inspector.h#42
+```
 
  Class for inspecting a Section model**extends** 
 
@@ -19,6 +22,9 @@ Inherits from AddInspectors<Section, SectionTopologyInspector, SectionUniqueVert
 public void SectionInspector(const SectionInspector & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/section_inspector.h#52
+```
 
 ### operator=
 
@@ -26,6 +32,9 @@ public void SectionInspector(const SectionInspector & )
 public SectionInspector & operator=(const SectionInspector & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/section_inspector.h#52
+```
 
 ### SectionInspector
 
@@ -33,13 +42,19 @@ public SectionInspector & operator=(const SectionInspector & )
 public void SectionInspector(const Section & section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/section_inspector.cpp#30
+```
 
 ### SectionInspector
 
 ```cpp
-public void SectionInspector(const Section & section, _Bool verbose)
+public void SectionInspector(const Section & section, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/section_inspector.cpp#42
+```
 
 
 

@@ -1,11 +1,20 @@
 # class PointSetColocation
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/pointset_colocation.cpp#85
+```
 
 # class PointSetColocation
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/pointset_colocation.cpp#84
+```
 
 # class PointSetColocation
 
+```cpp
+Defined at ../include/geode/inspector/criterion/colocation/pointset_colocation.h#41
+```
 
  Class for inspecting the colocation of points in a PointSet
 
@@ -19,6 +28,9 @@
 public void PointSetColocation<dimension>(const PointSetColocation<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/colocation/pointset_colocation.h#43
+```
 
 ### operator=
 
@@ -26,6 +38,9 @@ public void PointSetColocation<dimension>(const PointSetColocation<dimension> & 
 public PointSetColocation<dimension> & operator=(const PointSetColocation<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/colocation/pointset_colocation.h#43
+```
 
 ### PointSetColocation
 
@@ -33,13 +48,19 @@ public PointSetColocation<dimension> & operator=(const PointSetColocation<dimens
 public void PointSetColocation<dimension>(const PointSet<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/pointset_colocation.cpp#46
+```
 
 ### PointSetColocation
 
 ```cpp
-public void PointSetColocation<dimension>(const PointSet<dimension> & mesh, _Bool verbose)
+public void PointSetColocation<dimension>(const PointSet<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/pointset_colocation.cpp#53
+```
 
 ### ~PointSetColocation
 
@@ -47,13 +68,19 @@ public void PointSetColocation<dimension>(const PointSet<dimension> & mesh, _Boo
 public void ~PointSetColocation<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/pointset_colocation.cpp#60
+```
 
 ### mesh_has_colocated_points
 
 ```cpp
-public _Bool mesh_has_colocated_points()
+public bool mesh_has_colocated_points()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/pointset_colocation.cpp#65
+```
 
 ### nb_colocated_points
 
@@ -61,6 +88,9 @@ public _Bool mesh_has_colocated_points()
 public index_t nb_colocated_points()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/pointset_colocation.cpp#71
+```
 
 ### colocated_points_groups
 
@@ -68,6 +98,9 @@ public index_t nb_colocated_points()
 public vector colocated_points_groups()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/colocation/pointset_colocation.cpp#77
+```
 
 
 

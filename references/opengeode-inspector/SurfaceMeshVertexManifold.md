@@ -2,6 +2,9 @@
 
 # class SurfaceMeshVertexManifold
 
+```cpp
+Defined at ../include/geode/inspector/criterion/manifold/surface_vertex_manifold.h#41
+```
 
  Class for inspecting the manifold property of a SurfaceMesh
 
@@ -15,6 +18,9 @@
 public void SurfaceMeshVertexManifold<dimension>(const SurfaceMeshVertexManifold<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/manifold/surface_vertex_manifold.h#43
+```
 
 ### operator=
 
@@ -22,6 +28,9 @@ public void SurfaceMeshVertexManifold<dimension>(const SurfaceMeshVertexManifold
 public SurfaceMeshVertexManifold<dimension> & operator=(const SurfaceMeshVertexManifold<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/manifold/surface_vertex_manifold.h#43
+```
 
 ### SurfaceMeshVertexManifold
 
@@ -29,13 +38,19 @@ public SurfaceMeshVertexManifold<dimension> & operator=(const SurfaceMeshVertexM
 public void SurfaceMeshVertexManifold<dimension>(const SurfaceMesh<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/manifold/surface_vertex_manifold.cpp#153
+```
 
 ### SurfaceMeshVertexManifold
 
 ```cpp
-public void SurfaceMeshVertexManifold<dimension>(const SurfaceMesh<dimension> & mesh, _Bool verbose)
+public void SurfaceMeshVertexManifold<dimension>(const SurfaceMesh<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/manifold/surface_vertex_manifold.cpp#160
+```
 
 ### ~SurfaceMeshVertexManifold
 
@@ -43,13 +58,19 @@ public void SurfaceMeshVertexManifold<dimension>(const SurfaceMesh<dimension> & 
 public void ~SurfaceMeshVertexManifold<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/manifold/surface_vertex_manifold.cpp#167
+```
 
 ### mesh_vertices_are_manifold
 
 ```cpp
-public _Bool mesh_vertices_are_manifold()
+public bool mesh_vertices_are_manifold()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/manifold/surface_vertex_manifold.cpp#172
+```
 
 ### nb_non_manifold_vertices
 
@@ -57,6 +78,9 @@ public _Bool mesh_vertices_are_manifold()
 public index_t nb_non_manifold_vertices()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/manifold/surface_vertex_manifold.cpp#179
+```
 
 ### non_manifold_vertices
 
@@ -64,6 +88,9 @@ public index_t nb_non_manifold_vertices()
 public vector non_manifold_vertices()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/manifold/surface_vertex_manifold.cpp#186
+```
 
 
 

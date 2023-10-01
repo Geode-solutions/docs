@@ -1,5 +1,8 @@
 # class BRepComponentMeshesAdjacency
 
+```cpp
+Defined at ../include/geode/inspector/criterion/adjacency/brep_meshes_adjacency.h#46
+```
 
  Class for inspecting the adjacency of the surface edges and solid facets in the Component Meshes of a BRep.
 
@@ -13,6 +16,9 @@
 public void BRepComponentMeshesAdjacency(const BRepComponentMeshesAdjacency & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/adjacency/brep_meshes_adjacency.h#48
+```
 
 ### operator=
 
@@ -20,6 +26,9 @@ public void BRepComponentMeshesAdjacency(const BRepComponentMeshesAdjacency & )
 public BRepComponentMeshesAdjacency & operator=(const BRepComponentMeshesAdjacency & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/adjacency/brep_meshes_adjacency.h#48
+```
 
 ### BRepComponentMeshesAdjacency
 
@@ -27,13 +36,19 @@ public BRepComponentMeshesAdjacency & operator=(const BRepComponentMeshesAdjacen
 public void BRepComponentMeshesAdjacency(const BRep & model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/adjacency/brep_meshes_adjacency.cpp#106
+```
 
 ### BRepComponentMeshesAdjacency
 
 ```cpp
-public void BRepComponentMeshesAdjacency(const BRep & model, _Bool verbose)
+public void BRepComponentMeshesAdjacency(const BRep & model, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/adjacency/brep_meshes_adjacency.cpp#112
+```
 
 ### ~BRepComponentMeshesAdjacency
 
@@ -41,6 +56,9 @@ public void BRepComponentMeshesAdjacency(const BRep & model, _Bool verbose)
 public void ~BRepComponentMeshesAdjacency()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/adjacency/brep_meshes_adjacency.cpp#118
+```
 
 ### components_with_wrong_adjacencies
 
@@ -48,6 +66,9 @@ public void ~BRepComponentMeshesAdjacency()
 public vector components_with_wrong_adjacencies()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/adjacency/brep_meshes_adjacency.cpp#120
+```
 
 ### surfaces_nb_edges_with_wrong_adjacencies
 
@@ -55,6 +76,9 @@ public vector components_with_wrong_adjacencies()
 public flat_hash_map surfaces_nb_edges_with_wrong_adjacencies()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/adjacency/brep_meshes_adjacency.cpp#126
+```
 
 ### surfaces_edges_with_wrong_adjacencies
 
@@ -62,6 +86,9 @@ public flat_hash_map surfaces_nb_edges_with_wrong_adjacencies()
 public flat_hash_map surfaces_edges_with_wrong_adjacencies()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/adjacency/brep_meshes_adjacency.cpp#133
+```
 
 ### blocks_nb_facets_with_wrong_adjacencies
 
@@ -69,6 +96,9 @@ public flat_hash_map surfaces_edges_with_wrong_adjacencies()
 public flat_hash_map blocks_nb_facets_with_wrong_adjacencies()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/adjacency/brep_meshes_adjacency.cpp#140
+```
 
 ### blocks_facets_with_wrong_adjacencies
 
@@ -76,6 +106,9 @@ public flat_hash_map blocks_nb_facets_with_wrong_adjacencies()
 public flat_hash_map blocks_facets_with_wrong_adjacencies()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/adjacency/brep_meshes_adjacency.cpp#147
+```
 
 
 

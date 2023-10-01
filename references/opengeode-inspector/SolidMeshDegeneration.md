@@ -2,6 +2,9 @@
 
 # class SolidMeshDegeneration
 
+```cpp
+Defined at ../include/geode/inspector/criterion/degeneration/solid_degeneration.h#41
+```
 
  Class for inspecting the degeneration of a SolidMesh
 
@@ -15,6 +18,9 @@
 public void SolidMeshDegeneration<dimension>(const SolidMeshDegeneration<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/degeneration/solid_degeneration.h#43
+```
 
 ### operator=
 
@@ -22,6 +28,9 @@ public void SolidMeshDegeneration<dimension>(const SolidMeshDegeneration<dimensi
 public SolidMeshDegeneration<dimension> & operator=(const SolidMeshDegeneration<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/degeneration/solid_degeneration.h#43
+```
 
 ### SolidMeshDegeneration
 
@@ -29,13 +38,19 @@ public SolidMeshDegeneration<dimension> & operator=(const SolidMeshDegeneration<
 public void SolidMeshDegeneration<dimension>(const SolidMesh<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/solid_degeneration.cpp#112
+```
 
 ### SolidMeshDegeneration
 
 ```cpp
-public void SolidMeshDegeneration<dimension>(const SolidMesh<dimension> & mesh, _Bool verbose)
+public void SolidMeshDegeneration<dimension>(const SolidMesh<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/solid_degeneration.cpp#119
+```
 
 ### ~SolidMeshDegeneration
 
@@ -43,13 +58,19 @@ public void SolidMeshDegeneration<dimension>(const SolidMesh<dimension> & mesh, 
 public void ~SolidMeshDegeneration<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/solid_degeneration.cpp#126
+```
 
 ### is_mesh_degenerated
 
 ```cpp
-public _Bool is_mesh_degenerated()
+public bool is_mesh_degenerated()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/solid_degeneration.cpp#131
+```
 
 ### nb_degenerated_edges
 
@@ -57,6 +78,9 @@ public _Bool is_mesh_degenerated()
 public index_t nb_degenerated_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/solid_degeneration.cpp#137
+```
 
 ### nb_degenerated_polyhedra
 
@@ -64,6 +88,9 @@ public index_t nb_degenerated_edges()
 public index_t nb_degenerated_polyhedra()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/solid_degeneration.cpp#143
+```
 
 ### degenerated_edges
 
@@ -71,6 +98,9 @@ public index_t nb_degenerated_polyhedra()
 public vector degenerated_edges()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/solid_degeneration.cpp#149
+```
 
 ### degenerated_polyhedra
 
@@ -78,6 +108,9 @@ public vector degenerated_edges()
 public vector degenerated_polyhedra()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/degeneration/solid_degeneration.cpp#156
+```
 
 
 

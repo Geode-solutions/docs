@@ -20,16 +20,22 @@
 ### brep_blocks_are_meshed
 
 ```cpp
-_Bool brep_blocks_are_meshed(const geode::BRep & brep)
+bool brep_blocks_are_meshed(const geode::BRep & brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/topology/private/topology_helpers.cpp#40
+```
 
 ### section_surfaces_are_meshed
 
 ```cpp
-_Bool section_surfaces_are_meshed(const geode::Section & section)
+bool section_surfaces_are_meshed(const geode::Section & section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/topology/private/topology_helpers.cpp#52
+```
 
 ### components_uuids
 
@@ -37,6 +43,9 @@ _Bool section_surfaces_are_meshed(const geode::Section & section)
 vector components_uuids(Span components)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/topology/private/topology_helpers.cpp#64
+```
 
 
 

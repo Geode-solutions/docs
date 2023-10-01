@@ -4,6 +4,9 @@
 
 # class TriangulatedSurfaceIntersections
 
+```cpp
+Defined at ../include/geode/inspector/criterion/intersections/surface_intersections.h#43
+```
 
  Class for inspecting the intersections of TriangulatedSurfaces
 
@@ -17,6 +20,9 @@
 public void TriangulatedSurfaceIntersections<dimension>(const TriangulatedSurfaceIntersections<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/intersections/surface_intersections.h#45
+```
 
 ### operator=
 
@@ -24,6 +30,9 @@ public void TriangulatedSurfaceIntersections<dimension>(const TriangulatedSurfac
 public TriangulatedSurfaceIntersections<dimension> & operator=(const TriangulatedSurfaceIntersections<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/inspector/criterion/intersections/surface_intersections.h#45
+```
 
 ### TriangulatedSurfaceIntersections
 
@@ -31,13 +40,19 @@ public TriangulatedSurfaceIntersections<dimension> & operator=(const Triangulate
 public void TriangulatedSurfaceIntersections<dimension>(const TriangulatedSurface<dimension> & mesh)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/surface_intersections.cpp#424
+```
 
 ### TriangulatedSurfaceIntersections
 
 ```cpp
-public void TriangulatedSurfaceIntersections<dimension>(const TriangulatedSurface<dimension> & mesh, _Bool verbose)
+public void TriangulatedSurfaceIntersections<dimension>(const TriangulatedSurface<dimension> & mesh, bool verbose)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/surface_intersections.cpp#432
+```
 
 ### ~TriangulatedSurfaceIntersections
 
@@ -45,13 +60,19 @@ public void TriangulatedSurfaceIntersections<dimension>(const TriangulatedSurfac
 public void ~TriangulatedSurfaceIntersections<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/surface_intersections.cpp#440
+```
 
 ### mesh_has_self_intersections
 
 ```cpp
-public _Bool mesh_has_self_intersections()
+public bool mesh_has_self_intersections()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/surface_intersections.cpp#446
+```
 
 ### nb_intersecting_elements_pair
 
@@ -59,6 +80,9 @@ public _Bool mesh_has_self_intersections()
 public index_t nb_intersecting_elements_pair()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/surface_intersections.cpp#453
+```
 
 ### intersecting_elements
 
@@ -66,6 +90,9 @@ public index_t nb_intersecting_elements_pair()
 public std::vector<std::pair<index_t, index_t> > intersecting_elements()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/inspector/criterion/intersections/surface_intersections.cpp#460
+```
 
 
 
