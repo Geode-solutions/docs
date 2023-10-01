@@ -2575,46 +2575,6 @@ int convert_section_into_surface(const Section & section)
 Defined at /github/workspace/src/geode/model/helpers/convert_to_mesh.cpp#521
 ```
 
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
-```
-
-```cpp
-Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#34
-```
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
-```
-
-```cpp
-Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#58
-```
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polygonal_surface_missing_files
-
-```cpp
-typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
-```
-
-```cpp
-Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#68
-```
-
 ### convert_brep_into_section
 
 ```cpp
@@ -2689,6 +2649,46 @@ std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point
 
 ```cpp
 Defined at /github/workspace/src/geode/mesh/helpers/convert_point_set.cpp#49
+```
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#34
+```
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#58
+```
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polygonal_surface_missing_files
+
+```cpp
+typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#68
 ```
 
 ### save_hybrid_solid
