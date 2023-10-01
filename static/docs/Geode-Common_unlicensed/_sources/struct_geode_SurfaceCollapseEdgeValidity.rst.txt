@@ -1,0 +1,33 @@
+.. index:: pair: struct; geode::SurfaceCollapseEdgeValidity
+.. _doxid-structgeode_1_1_surface_collapse_edge_validity:
+
+template struct geode::SurfaceCollapseEdgeValidity
+==================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier_simulation.h>
+	
+	template <index_t dimension>
+	struct SurfaceCollapseEdgeValidity
+	{
+		// fields
+	
+		bool :target:`is_geometrically_valid<doxid-structgeode_1_1_surface_collapse_edge_validity_1aa63960ce508acc049522308819f64da5>` { true };
+		bool :target:`is_topologically_valid<doxid-structgeode_1_1_surface_collapse_edge_validity_1a15560dc414d74ad7d2bf93ce767ef4c7>` { true };
+		std::vector<Triangle<dimension>> :target:`invalid_new_triangles<doxid-structgeode_1_1_surface_collapse_edge_validity_1ae97f193c4bfedf32111b58e33086824c>`;
+		std::vector<index_t> :target:`invalid_triangle_ids<doxid-structgeode_1_1_surface_collapse_edge_validity_1af72f63b82cb5d2876002058a1a46ada5>`;
+		bool :target:`new_vertex_is_manifold<doxid-structgeode_1_1_surface_collapse_edge_validity_1acdf077b03616a9638c10cc154cab88c7>` { true };
+		std::vector<index_t> :target:`vertices_creating_non_manifold_edges<doxid-structgeode_1_1_surface_collapse_edge_validity_1a556937a3c31904ed7d24b0692a276421>`;
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_surface_collapse_edge_validity_1a6cba928e9bdc9ba6ad504d8f26bde03d>` () const;
+	};

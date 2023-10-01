@@ -1,0 +1,44 @@
+.. index:: pair: class; geode::Metric
+.. _doxid-classgeode_1_1_metric:
+
+template class geode::Metric
+============================
+
+.. toctree::
+	:hidden:
+
+Interface class for metric computation
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <metric.h>
+	
+	template <index_t dimension>
+	class Metric
+	{
+	public:
+		// methods
+	
+		virtual double :target:`metric<doxid-classgeode_1_1_metric_1ae7772ff36e4ab8e23abc1fca5f81e21b>`(const Point<dimension>& point) const = 0;
+		virtual double :target:`minimal_metric<doxid-classgeode_1_1_metric_1a5c9990feed99bc187841f83324d3c502>`(const Segment<dimension>& segment) const = 0;
+		virtual double :target:`minimal_metric<doxid-classgeode_1_1_metric_1a0baf30abc5e282d0217d6ede00d538c3>`(const Triangle<dimension>& triangle) const = 0;
+	
+		template <index_t T = dimension>
+		std::enable_if<T==3, double>::type :target:`minimal_metric<doxid-classgeode_1_1_metric_1ac6ec755d0c368c84391b558722f604ed>`(const Tetrahedron& tetrahedron) const;
+	
+		virtual double :target:`average_metric<doxid-classgeode_1_1_metric_1a1ac98e57f631f4b5207a0223cfff6768>`() const = 0;
+		virtual double :target:`median_metric<doxid-classgeode_1_1_metric_1a45de89ade406ffff073d9d32189d6902>`() const = 0;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	class :ref:`ConstantMetric<doxid-classgeode_1_1_constant_metric>`;
+
+	template <index_t dimension>
+	class :ref:`CustomGridMetric<doxid-classgeode_1_1_custom_grid_metric>`;
+
+	template <index_t dimension>
+	class :ref:`GridMetric<doxid-classgeode_1_1_grid_metric>`;

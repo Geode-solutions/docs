@@ -1,0 +1,30 @@
+.. index:: pair: struct; geode::GeometricSurfacePath
+.. _doxid-structgeode_1_1_geometric_surface_path:
+
+template struct geode::GeometricSurfacePath
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <determine_cuts.h>
+	
+	template <index_t dimension>
+	struct GeometricSurfacePath
+	{
+		// fields
+	
+		:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>` :target:`path<doxid-structgeode_1_1_geometric_surface_path_1aa617510554e797f4ab31ba906f7b727d>`;
+		Point<dimension> :target:`location<doxid-structgeode_1_1_geometric_surface_path_1a75d2dac4b39449855194d4e07d6c8480>`;
+
+		// construction
+	
+		:target:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path_1a8c319cb91ecf4be8f9b9ac0a254cc6fd>`();
+		:target:`GeometricSurfacePath<doxid-structgeode_1_1_geometric_surface_path_1a05d6cc326c83ac66bf01d80e554c682f>`(:ref:`SurfacePath<doxid-structgeode_1_1_surface_path>` path_in, Point<dimension> point);
+	};

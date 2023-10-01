@@ -1,0 +1,11 @@
+.. index:: pair: struct; geode::Modifier
+.. _doxid-structgeode_1_1_modifier:
+
+template struct geode::Modifier
+===============================
+
+.. toctree::
+	:hidden:
+
+
+

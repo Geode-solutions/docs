@@ -1,0 +1,26 @@
+.. index:: pair: struct; geode::CutPatchException
+.. _doxid-structgeode_1_1_cut_patch_exception:
+
+struct geode::CutPatchException
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cut_exceptions.h>
+	
+	struct CutPatchException: public OpenGeodeException
+	{
+		// fields
+	
+		bool :target:`blocked<doxid-structgeode_1_1_cut_patch_exception_1a450122e8b6c5863b01860b1d7986924d>` { false };
+		std::vector<:ref:`EdgeSplit<doxid-structgeode_1_1_edge_split>`> :target:`edge_splits<doxid-structgeode_1_1_cut_patch_exception_1a009a61f898b2cf0063aae363e1049e0e>`;
+		std::vector<index_t> :target:`immuable_vertices<doxid-structgeode_1_1_cut_patch_exception_1add07d6bc35a8c5d317773c9a987212f0>`;
+		:ref:`SolidCutPatchInfo<doxid-structgeode_1_1_solid_cut_patch_info>` :target:`cut_info<doxid-structgeode_1_1_cut_patch_exception_1acecbd6c1bca7e23b9f9f85057c62a4f3>`;
+	};

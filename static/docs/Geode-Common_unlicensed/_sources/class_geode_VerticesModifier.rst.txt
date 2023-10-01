@@ -1,0 +1,39 @@
+.. index:: pair: class; geode::VerticesModifier
+.. _doxid-classgeode_1_1_vertices_modifier:
+
+class geode::VerticesModifier
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vertices_modifier.h>
+	
+	class VerticesModifier
+	{
+	public:
+		// methods
+	
+		index_t :target:`updated_vertex<doxid-classgeode_1_1_vertices_modifier_1a880253238520a1b94353746206b81fa6>`(index_t vertex_id) const;
+
+	protected:
+	};
+
+	// direct descendants
+
+	class :ref:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier>`;
+
+	template <index_t dimension>
+	class :ref:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier>`;
+
+	class :ref:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier>`;
+	class :ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`;
+
+	template <index_t dimension>
+	class :ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`;

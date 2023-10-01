@@ -1,0 +1,35 @@
+.. index:: pair: struct; geode::MultiMapping
+.. _doxid-structgeode_1_1_multi_mapping:
+
+template struct geode::MultiMapping
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <typename Type>
+	struct MultiMapping
+	{
+		// fields
+	
+		Type :target:`new_id<doxid-structgeode_1_1_multi_mapping_1abc9d5b464a724428f6216b3a4f499791>`;
+		absl::InlinedVector<Type, 1> :target:`old_id<doxid-structgeode_1_1_multi_mapping_1a57a485e8baa791acd082e1854ce24032>`;
+
+		// construction
+	
+		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1adc7a0ec0e80779ca7bd0358a579a9b48>`();
+		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1ab9d75eef917302d01c2ae681140b1068>`(Type new_id_in, absl::InlinedVector<Type, 1> old_id_in);
+		:target:`MultiMapping<doxid-structgeode_1_1_multi_mapping_1ad8eaf94e147938ac8e18d975f3daaf28>`(:ref:`Mapping<doxid-structgeode_1_1_mapping>`<Type> mapping);
+
+		// methods
+	
+		bool :target:`operator ==<doxid-structgeode_1_1_multi_mapping_1abd3278e4af799f9be385d4c29b5ddca3>` (const MultiMapping& other) const;
+	};
