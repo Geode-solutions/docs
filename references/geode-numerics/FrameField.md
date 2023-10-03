@@ -1,7 +1,7 @@
 # class FrameField
 
 ```cpp
-Defined at ../../include/geode/numerics/frame_field/frame_field.h#22
+Defined at ../../include/geode/numerics/frame_field/frame_field.h#23
 ```
 
 ## Records
@@ -19,7 +19,7 @@ public void FrameField(BRep & brep)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#198
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#234
 ```
 
 ### FrameField
@@ -29,7 +29,7 @@ public void FrameField(FrameField && other)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#200
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#236
 ```
 
 ### ~FrameField
@@ -39,7 +39,7 @@ public void ~FrameField()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#205
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#241
 ```
 
 ### brep
@@ -49,7 +49,7 @@ public const BRep & brep()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#212
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#248
 ```
 
 ### solid
@@ -59,7 +59,17 @@ public const TetrahedralSolid3D & solid()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#207
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#243
+```
+
+### block_element
+
+```cpp
+public const MeshElement & block_element(index_t tetrahedron)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#252
 ```
 
 ### frame
@@ -69,7 +79,7 @@ public const Frame3D & frame(index_t vertex)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#217
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#257
 ```
 
 ### set_frame
@@ -79,7 +89,7 @@ public void set_frame(index_t vertex, Frame3D frame)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#222
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#262
 ```
 
 

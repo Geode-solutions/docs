@@ -1,7 +1,7 @@
 # struct ParamSolidStorage
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#157
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#689
 ```
 
 ## Members
@@ -27,7 +27,7 @@ public void ParamSolidStorage(const SolidMesh3D & mesh)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#159
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#691
 ```
 
 

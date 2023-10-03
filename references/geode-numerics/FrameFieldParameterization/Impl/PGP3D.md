@@ -29,17 +29,7 @@ public void compute_parameterization()
 ```
 
 ```cpp
-Defined at ../../include/geode/numerics/frame_field/private/pgp3d.h#83
-```
-
-### parametric_coordinates_in_first_basis
-
-```cpp
-public TetrahedronCornerParam parametric_coordinates_in_first_basis(const Block3D & block, const SolidMesh3D & solid, index_t tetrahedron)
-```
-
-```cpp
-Defined at ../../include/geode/numerics/frame_field/private/pgp3d.h#146
+Defined at ../../include/geode/numerics/frame_field/private/pgp3d.h#82
 ```
 
 ### translation
@@ -49,27 +39,7 @@ public Vector3D translation(index_t i, index_t j)
 ```
 
 ```cpp
-Defined at ../../include/geode/numerics/frame_field/private/pgp3d.h#265
-```
-
-### integer_dimension
-
-```cpp
-public absl::optional<local_index_t> integer_dimension(const std::array<Point<dim>, dim> & param3d)
-```
-
-```cpp
-Defined at ../../include/geode/numerics/frame_field/private/pgp3d.h#478
-```
-
-### integer_value
-
-```cpp
-public absl::optional<double> integer_value(double value)
-```
-
-```cpp
-Defined at ../../include/geode/numerics/frame_field/private/pgp3d.h#505
+Defined at ../../include/geode/numerics/frame_field/private/pgp3d.h#160
 ```
 
 ### compute_constant
@@ -79,7 +49,7 @@ public Vector3D compute_constant(index_t vertex_i, index_t vertex_j, const Frame
 ```
 
 ```cpp
-Defined at ../../include/geode/numerics/frame_field/private/pgp3d.h#698
+Defined at ../../include/geode/numerics/frame_field/private/pgp3d.h#370
 ```
 
 
