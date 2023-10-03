@@ -1,0 +1,28 @@
+.. index:: pair: class; geode::StructuralModelInput
+.. _doxid-classgeode_1_1_structural_model_input:
+
+class geode::StructuralModelInput
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <structural_model_input.h>
+	
+	class StructuralModelInput: public Input< StructuralModel >
+	{
+	public:
+		// typedefs
+	
+		typedef Input<:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`> :target:`Base<doxid-classgeode_1_1_structural_model_input_1a18cabe9ed9740b9774ab9dc1efd0c1b5>`;
+	};
+
+	// direct descendants
+
+	class :ref:`OpenGeodeStructuralModelInput<doxid-classgeode_1_1_open_geode_structural_model_input>`;

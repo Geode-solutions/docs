@@ -1,0 +1,46 @@
+.. index:: pair: class; geode::OpenGeodeStructuralModelInput
+.. _doxid-classgeode_1_1_open_geode_structural_model_input:
+
+class geode::OpenGeodeStructuralModelInput
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geode_structural_model_input.h>
+	
+	class OpenGeodeStructuralModelInput: public :ref:`geode::StructuralModelInput<doxid-classgeode_1_1_structural_model_input>`
+	{
+	public:
+		// construction
+	
+		:target:`OpenGeodeStructuralModelInput<doxid-classgeode_1_1_open_geode_structural_model_input_1ae5ef75d2951df6afe17c06ff20b2e106>`(absl::string_view filename);
+
+		// methods
+	
+		void :target:`load_structural_model_files<doxid-classgeode_1_1_open_geode_structural_model_input_1a7dfd2fc7be34b44d46046394ffbf174a>`(
+			:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`& structural_model,
+			absl::string_view directory
+			);
+	
+		:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` :target:`read<doxid-classgeode_1_1_open_geode_structural_model_input_1a635b5974e16e47633c4504768727cac0>`();
+		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_structural_model_input_1a8ef512ea37ce2b93f77a9d37c58f1b80>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef Input<:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>`> :ref:`Base<doxid-classgeode_1_1_structural_model_input_1a18cabe9ed9740b9774ab9dc1efd0c1b5>`;
+

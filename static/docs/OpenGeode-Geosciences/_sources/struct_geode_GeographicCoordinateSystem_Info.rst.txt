@@ -1,0 +1,38 @@
+.. index:: pair: struct; geode::GeographicCoordinateSystem::Info
+.. _doxid-structgeode_1_1_geographic_coordinate_system_1_1_info:
+
+struct geode::GeographicCoordinateSystem::Info
+==============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geographic_coordinate_system.h>
+	
+	struct Info
+	{
+		// fields
+	
+		std::string :target:`authority<doxid-structgeode_1_1_geographic_coordinate_system_1_1_info_1a1d9e55356840dff6df98e7d9087de218>`;
+		std::string :target:`code<doxid-structgeode_1_1_geographic_coordinate_system_1_1_info_1a2cdca8c157f696b94e95f32332eda139>`;
+		std::string :target:`name<doxid-structgeode_1_1_geographic_coordinate_system_1_1_info_1aad83d6e28f7b0b324c691e64ae23469e>`;
+
+		// construction
+	
+		:target:`Info<doxid-structgeode_1_1_geographic_coordinate_system_1_1_info_1abc33d2c87f533576cfbc453f8ff96614>`(std::string authority_in, std::string code_in, std::string name_in);
+		:target:`Info<doxid-structgeode_1_1_geographic_coordinate_system_1_1_info_1ae1707a6999b4596b1823c0a25e0c8a31>`();
+
+		// methods
+	
+		std::string :target:`authority_code<doxid-structgeode_1_1_geographic_coordinate_system_1_1_info_1ac0a7576269c4f2a3e899c35e5a9f135c>`() const;
+		std::string :target:`string<doxid-structgeode_1_1_geographic_coordinate_system_1_1_info_1af3532ea5a1fad43b8ab1823155cda38c>`() const;
+	
+		template <typename Archive>
+		void :target:`serialize<doxid-structgeode_1_1_geographic_coordinate_system_1_1_info_1a0ddb02d7d0d902a3f3c71ff21e3fc08e>`(Archive& archive);
+	};

@@ -1,0 +1,151 @@
+.. index:: pair: class; geode::HorizonsStackBuilder
+.. _doxid-classgeode_1_1_horizons_stack_builder:
+
+template class geode::HorizonsStackBuilder
+==========================================
+
+.. toctree::
+	:hidden:
+
+	struct_geode_HorizonsStackBuilder_InsertedHorizonInfo.rst
+
+Overview
+~~~~~~~~
+
+Class managing modifications of a :ref:`HorizonsStack <doxid-classgeode_1_1_horizons_stack>` :ref:`More...<details-classgeode_1_1_horizons_stack_builder>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <horizons_stack_builder.h>
+	
+	template <index_t dimension>
+	class HorizonsStackBuilder:
+	    public :ref:`geode::HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`,
+	    public :ref:`geode::StratigraphicUnitsBuilder<doxid-classgeode_1_1_stratigraphic_units_builder>`,
+	    public :ref:`geode::StratigraphicRelationshipsBuilder<doxid-classgeode_1_1_stratigraphic_relationships_builder>`,
+	    public IdentifierBuilder
+	{
+	public:
+		// structs
+	
+		struct :ref:`InsertedHorizonInfo<doxid-structgeode_1_1_horizons_stack_builder_1_1_inserted_horizon_info>`;
+
+		// construction
+	
+		:target:`HorizonsStackBuilder<doxid-classgeode_1_1_horizons_stack_builder_1a954817140dbc3a1c2dfaf80acba39ee4>`(:ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension>& horizons_stack);
+		:target:`HorizonsStackBuilder<doxid-classgeode_1_1_horizons_stack_builder_1a997cdb51c8d75a5ceb6205b6eae256ce>`(HorizonsStackBuilder<dimension>&&);
+
+		// methods
+	
+		ModelCopyMapping :target:`copy<doxid-classgeode_1_1_horizons_stack_builder_1a4ce1d248f4872a2d3bf228ccb4b1d528>`(const :ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension>& horizons_stack);
+		ModelCopyMapping :target:`copy_components<doxid-classgeode_1_1_horizons_stack_builder_1a952f51b82450a9e36995976f60a45b3f>`(const :ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension>& horizons_stack);
+	
+		void :ref:`copy<doxid-classgeode_1_1_horizons_stack_builder_1a93781776ba1115d62d19a39ddd09d71a>`(
+			ModelCopyMapping& mapping,
+			const :ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension>& horizons_stack
+			);
+	
+		void :ref:`copy_components<doxid-classgeode_1_1_horizons_stack_builder_1ac0b2564d41c19930b12683ee34e335a4>`(
+			ModelCopyMapping& mapping,
+			const :ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension>& horizons_stack
+			);
+	
+		const uuid& :target:`add_horizon<doxid-classgeode_1_1_horizons_stack_builder_1a8e02a18168b9af8902ab1784086b90ae>`();
+		void :target:`add_horizon<doxid-classgeode_1_1_horizons_stack_builder_1a48fe032838983746a1efc99045aa5fe7>`(uuid horizon_id);
+		const uuid& :target:`add_stratigraphic_unit<doxid-classgeode_1_1_horizons_stack_builder_1ab9a241a795e3a13beecb18e5f74c9e22>`();
+		void :target:`add_stratigraphic_unit<doxid-classgeode_1_1_horizons_stack_builder_1a826861c629cec4bbc7faa99d82f38e0c>`(uuid stratigraphic_unit_id);
+		:ref:`InsertedHorizonInfo<doxid-structgeode_1_1_horizons_stack_builder_1_1_inserted_horizon_info>` :target:`add_horizon_in_stratigraphic_unit<doxid-classgeode_1_1_horizons_stack_builder_1ac4ae9a3aeba343d11f20b1294bcf35a6>`(const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& strati_unit);
+	
+		void :target:`add_horizon_above<doxid-classgeode_1_1_horizons_stack_builder_1ac11d49600b85d33db48a47a236df825e>`(
+			const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& horizon_above,
+			const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& strati_unit_under
+			);
+	
+		void :target:`add_horizon_under<doxid-classgeode_1_1_horizons_stack_builder_1a913a346de62ea124ba8759b5fbe33f3a>`(
+			const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& horizon_under,
+			const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& strati_unit_above
+			);
+	
+		void :target:`add_erosion_above<doxid-classgeode_1_1_horizons_stack_builder_1a0b022c752c527beb3c59aa7a576f0c34>`(
+			const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& erosion_horizon,
+			const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& eroded_unit
+			);
+	
+		void :target:`add_baselap_under<doxid-classgeode_1_1_horizons_stack_builder_1a0d7b44e9aac16797dea75a5997ab560a>`(
+			const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& baselap_horizon,
+			const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& baselaping_unit
+			);
+	
+		void :target:`remove_horizon<doxid-classgeode_1_1_horizons_stack_builder_1aebe637dea2479918f5ed4c02ba2c1a32>`(const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& horizon);
+		void :target:`remove_stratigraphic_unit<doxid-classgeode_1_1_horizons_stack_builder_1a460bd668d79f2305cee77d84414e47d9>`(const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& stratigraphic_unit);
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		void :ref:`load_horizons<doxid-classgeode_1_1_horizons_builder_1a82dd9f3f9a1c033516b5f2e374aceb1f>`(absl::string_view directory);
+	
+		void :ref:`set_horizon_type<doxid-classgeode_1_1_horizons_builder_1aae9569213b2ae67e06c1e77d63f6eeb6>`(
+			const uuid& horizon_id,
+			typename :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>::HORIZON_TYPE type
+			);
+	
+		void :ref:`set_horizon_name<doxid-classgeode_1_1_horizons_builder_1ab325b7648f7f80303ab0322e54f23db3>`(const uuid& id, absl::string_view name);
+		void :ref:`load_stratigraphic_units<doxid-classgeode_1_1_stratigraphic_units_builder_1ad4a61fe15259abab427ac9b6bf241d26>`(absl::string_view directory);
+		void :ref:`set_stratigraphic_unit_name<doxid-classgeode_1_1_stratigraphic_units_builder_1a60a007857db052cbc30d9b0314f0fc32>`(const uuid& id, absl::string_view name);
+		void :ref:`unregister_component<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a9a310c48cb4855cfb6def000b051a2f4>`(const uuid& id);
+		void :ref:`remove_relation<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a66c08fca5b07980c50f67ade884397f8>`(const uuid& id1, const uuid& id2);
+		void :ref:`remove_above_relation<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a4afbb02ab2cb6f0cafaf88a7a8a8d22a>`(const uuid& id1, const uuid& id2);
+		void :ref:`remove_unconformity_relation<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a27634257bf938abc168924493ab55919>`(const uuid& id1, const uuid& id2);
+	
+		void :ref:`copy_stratigraphic_relationships<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a579851b2174d129e0a4d9e64f7d4bafe>`(
+			const ModelCopyMapping& mapping,
+			const :ref:`StratigraphicRelationships<doxid-classgeode_1_1_stratigraphic_relationships>`& relationships
+			);
+	
+		void :ref:`load_stratigraphic_relationships<doxid-classgeode_1_1_stratigraphic_relationships_builder_1a640725b407487aa27b69274d53f50c61>`(absl::string_view directory);
+
+.. _details-classgeode_1_1_horizons_stack_builder:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Class managing modifications of a :ref:`HorizonsStack <doxid-classgeode_1_1_horizons_stack>`
+
+Methods
+-------
+
+.. index:: pair: function; copy
+.. _doxid-classgeode_1_1_horizons_stack_builder_1a93781776ba1115d62d19a39ddd09d71a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void copy(
+		ModelCopyMapping& mapping,
+		const :ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension>& horizons_stack
+		)
+
+Copies the stack with the component uuids given by the mapping. Components for which the mapping does not exist are created with a new uuid and added to the mapping.
+
+.. index:: pair: function; copy_components
+.. _doxid-classgeode_1_1_horizons_stack_builder_1ac0b2564d41c19930b12683ee34e335a4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void copy_components(
+		ModelCopyMapping& mapping,
+		const :ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension>& horizons_stack
+		)
+
+Copies the components with the uuid given by the mapping. If the mapping does not exist, creates a component with a new uuid and adds it to the mapping.
+

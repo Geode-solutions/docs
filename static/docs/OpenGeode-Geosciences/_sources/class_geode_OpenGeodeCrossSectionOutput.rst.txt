@@ -1,0 +1,35 @@
+.. index:: pair: class; geode::OpenGeodeCrossSectionOutput
+.. _doxid-classgeode_1_1_open_geode_cross_section_output:
+
+class geode::OpenGeodeCrossSectionOutput
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <geode_cross_section_output.h>
+	
+	class OpenGeodeCrossSectionOutput: public :ref:`geode::CrossSectionOutput<doxid-classgeode_1_1_cross_section_output>`
+	{
+	public:
+		// construction
+	
+		:target:`OpenGeodeCrossSectionOutput<doxid-classgeode_1_1_open_geode_cross_section_output_1a69ebe83f4b8377d4685c964440d0d2d6>`(absl::string_view filename);
+
+		// methods
+	
+		void :target:`save_cross_section_files<doxid-classgeode_1_1_open_geode_cross_section_output_1a4a611f632abb5aac5d400f014d93703e>`(
+			const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
+			absl::string_view directory
+			) const;
+	
+		void :target:`archive_cross_section_files<doxid-classgeode_1_1_open_geode_cross_section_output_1ae48174816ee4c93248332fb3d656c6d6>`(const ZipFile& zip_writer) const;
+		void :target:`write<doxid-classgeode_1_1_open_geode_cross_section_output_1aac9a3c7552ce32740bfeb10549775fb2>`(const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section) const;
+		static absl::string_view :target:`extension<doxid-classgeode_1_1_open_geode_cross_section_output_1a68fd12ed8c64b7a6d11fc58919b27562>`();
+	};

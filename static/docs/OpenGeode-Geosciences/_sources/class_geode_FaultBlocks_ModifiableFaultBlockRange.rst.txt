@@ -1,0 +1,42 @@
+.. index:: pair: class; geode::FaultBlocks::ModifiableFaultBlockRange
+.. _doxid-classgeode_1_1_fault_blocks_1_1_modifiable_fault_block_range:
+
+class geode::FaultBlocks::ModifiableFaultBlockRange
+===================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	class ModifiableFaultBlockRange: public :ref:`geode::FaultBlocks::FaultBlockRangeBase<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range_base>`
+	{
+	public:
+		// construction
+	
+		:target:`ModifiableFaultBlockRange<doxid-classgeode_1_1_fault_blocks_1_1_modifiable_fault_block_range_1a88d69291af0921c14d23d32e0c43b32f>`(const :ref:`FaultBlocks<doxid-classgeode_1_1_fault_blocks>`& fault_blocks);
+
+		// methods
+	
+		const ModifiableFaultBlockRange& :target:`begin<doxid-classgeode_1_1_fault_blocks_1_1_modifiable_fault_block_range_1a1a15ba9a055fafcc03451e1ef597aa4b>`() const;
+		const ModifiableFaultBlockRange& :target:`end<doxid-classgeode_1_1_fault_blocks_1_1_modifiable_fault_block_range_1a12179f25248868dd94118ba1f61df94c>`() const;
+		:ref:`FaultBlock<doxid-classgeode_1_1_fault_block>`<dimension>& :target:`operator *<doxid-classgeode_1_1_fault_blocks_1_1_modifiable_fault_block_range_1aa4f20c322ab512da9b59381eac5f6f54>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// methods
+	
+		bool :ref:`operator !=<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range_base_1af9d3d9c6657d29749477e06871b132a0>` (const :ref:`FaultBlockRangeBase<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range_base>`&) const;
+		void :ref:`operator ++<doxid-classgeode_1_1_fault_blocks_1_1_fault_block_range_base_1aa4ce5be1ec05f997d82329c4d275debb>` ();
+

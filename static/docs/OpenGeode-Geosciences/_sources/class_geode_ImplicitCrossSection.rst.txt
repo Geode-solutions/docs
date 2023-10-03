@@ -1,0 +1,185 @@
+.. index:: pair: class; geode::ImplicitCrossSection
+.. _doxid-classgeode_1_1_implicit_cross_section:
+
+class geode::ImplicitCrossSection
+=================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+An :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` is a :ref:`CrossSection <doxid-classgeode_1_1_cross_section>` where each surface has a specific attribute to store the stratigraphic coordinates of its vertices. :ref:`More...<details-classgeode_1_1_implicit_cross_section>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <implicit_cross_section.h>
+	
+	class ImplicitCrossSection: public :ref:`geode::CrossSection<doxid-classgeode_1_1_cross_section>`
+	{
+	public:
+		// typedefs
+	
+		typedef double :target:`implicit_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1adf6f904c13dfb12c6a6d17c418b958bc>`;
+
+		// fields
+	
+		static constexpr auto :target:`implicit_attribute_name<doxid-classgeode_1_1_implicit_cross_section_1a081c8f72c7eaf97301ef6e557b9a75b0>` =             "geode_implicit_attribute";
+
+		// construction
+	
+		:target:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section_1ad9f9b4007704e4a7be72e8d21d5e6898>`();
+		:target:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section_1ac1d0e2dbe2ae87f289c4e0748bd39ef2>`(ImplicitCrossSection&& implicit_model);
+		:target:`ImplicitCrossSection<doxid-classgeode_1_1_implicit_cross_section_1a629239be6093a624d5f44616551f9e14>`(:ref:`CrossSection<doxid-classgeode_1_1_cross_section>`&& cross_section);
+
+		// methods
+	
+		absl::string_view :target:`native_extension<doxid-classgeode_1_1_implicit_cross_section_1a4ce3b33a337b77c21f02c85894cfc87b>`() const;
+		double :ref:`implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a30112b09223d1444d0ee06ca20c11b9d>`(const Surface2D& surface, index_t vertex_id) const;
+	
+		absl::optional<double> :ref:`implicit_value<doxid-classgeode_1_1_implicit_cross_section_1ade6a7d8a3a1fbef211a0750f86f83d0b>`(
+			const Surface2D& surface,
+			const Point2D& point
+			) const;
+	
+		double :ref:`implicit_value<doxid-classgeode_1_1_implicit_cross_section_1acc105602542f26489e277f80a7d9dbb0>`(
+			const Surface2D& surface,
+			const Point2D& point,
+			index_t polygon_id
+			) const;
+	
+		absl::optional<index_t> :ref:`containing_polygon<doxid-classgeode_1_1_implicit_cross_section_1adaffb1d66296333f3bc36ad71cfff919>`(
+			const Surface2D& surface,
+			const Point2D& point
+			) const;
+	
+		const HorizonsStack2D& :target:`horizons_stack<doxid-classgeode_1_1_implicit_cross_section_1aee24e9a3ac537d61f92bdc0bf80345ae>`() const;
+		absl::optional<:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1adf6f904c13dfb12c6a6d17c418b958bc>`> :target:`horizon_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a1a8a1dc95c52fa9238edae8bc6283107>`(const Horizon2D& horizon) const;
+	
+		bool :target:`implicit_value_is_above_horizon<doxid-classgeode_1_1_implicit_cross_section_1aebb1bed3892703dd5845657c81a82ccb>`(
+			double implicit_function_value,
+			const Horizon2D& horizon
+			) const;
+	
+		absl::optional<uuid> :target:`containing_stratigraphic_unit<doxid-classgeode_1_1_implicit_cross_section_1a47a7245c50320b1a9d996c2439114df2>`(:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1adf6f904c13dfb12c6a6d17c418b958bc>` implicit_function_value) const;
+		void :target:`initialize_implicit_query_trees<doxid-classgeode_1_1_implicit_cross_section_1acab207d121ab9cd2210e7d89459beb19>`(ImplicitCrossSectionBuilderKey);
+		void :target:`instantiate_implicit_attribute_on_surfaces<doxid-classgeode_1_1_implicit_cross_section_1a5e8f58be8c5b25119952b7da457adf05>`(ImplicitCrossSectionBuilderKey);
+	
+		void :target:`set_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a4990eab8037dc7ac85447dfba7361f19>`(
+			const Surface2D& surface,
+			index_t vertex_id,
+			double value,
+			ImplicitCrossSectionBuilderKey
+			);
+	
+		void :target:`set_horizons_stack<doxid-classgeode_1_1_implicit_cross_section_1aeb84cf0effb9e2831d630362cad2a099>`(HorizonsStack2D&& stack, ImplicitCrossSectionBuilderKey);
+	
+		void :target:`set_horizon_implicit_value<doxid-classgeode_1_1_implicit_cross_section_1a688f97457ee5993feba66c59ddebeeab>`(
+			const Horizon2D& horizon,
+			:ref:`implicit_attribute_type<doxid-classgeode_1_1_implicit_cross_section_1adf6f904c13dfb12c6a6d17c418b958bc>` isovalue,
+			ImplicitCrossSectionBuilderKey
+			);
+	
+		HorizonsStack2D& :target:`modifiable_horizons_stack<doxid-classgeode_1_1_implicit_cross_section_1a1d826ae3def274612c08638b67c82a4d>`(ImplicitCrossSectionBuilderKey);
+		static constexpr absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_implicit_cross_section_1aa4038091dd25b0571305315e0a7661b6>`();
+	};
+
+	// direct descendants
+
+	class :ref:`StratigraphicSection<doxid-classgeode_1_1_stratigraphic_section>`;
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef :ref:`CrossSectionBuilder<doxid-classgeode_1_1_cross_section_builder>` :ref:`Builder<doxid-classgeode_1_1_cross_section_1abd610a7ce721476d308b113ce4bce646>`;
+		typedef tuple_cat<Section::Components, std::tuple<Fault2D, Horizon2D, FaultBlock2D, StratigraphicUnit2D>> :ref:`Components<doxid-classgeode_1_1_cross_section_1a7ccacc23cef88ee2bed3095e1ff297de>`;
+
+		// classes
+	
+		class :ref:`FaultBlockItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_block_item_range>`;
+		class :ref:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range>`;
+		class :ref:`HorizonItemRange<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range>`;
+		class :ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range>`;
+
+		// fields
+	
+		static constexpr index_t :ref:`dim<doxid-classgeode_1_1_cross_section_1a5a022a5900f4506ad2be9caffc40d60d>` { 2 };
+
+		// methods
+	
+		absl::string_view :ref:`native_extension<doxid-classgeode_1_1_cross_section_1aba46451bcac9f3b8a7dcdcbcddffb9ac>`() const;
+		:ref:`HorizonItemRange<doxid-classgeode_1_1_cross_section_1_1_horizon_item_range>` :ref:`horizon_items<doxid-classgeode_1_1_cross_section_1a84b7eca5ee42db6c06a3a320147bf15c>`(const Horizon2D& horizon) const;
+		:ref:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range>` :ref:`fault_items<doxid-classgeode_1_1_cross_section_1a7856154c97bef7e30c6df7707e7f0b91>`(const Fault2D& fault) const;
+		:ref:`FaultBlockItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_block_item_range>` :ref:`fault_block_items<doxid-classgeode_1_1_cross_section_1a93247bfa59536ddfa82d5403a7bbeb26>`(const FaultBlock2D& fault_block) const;
+		:ref:`StratigraphicUnitItemRange<doxid-classgeode_1_1_cross_section_1_1_stratigraphic_unit_item_range>` :ref:`stratigraphic_unit_items<doxid-classgeode_1_1_cross_section_1af2c447d3ca2829de5fa198576f0fa998>`(const StratigraphicUnit2D& stratigraphic_unit) const;
+		static constexpr absl::string_view :ref:`native_extension_static<doxid-classgeode_1_1_cross_section_1a0e50d74bd8a40e67ddbb24e15c9976c4>`();
+
+.. _details-classgeode_1_1_implicit_cross_section:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+An :ref:`ImplicitCrossSection <doxid-classgeode_1_1_implicit_cross_section>` is a :ref:`CrossSection <doxid-classgeode_1_1_cross_section>` where each surface has a specific attribute to store the stratigraphic coordinates of its vertices.
+
+Methods
+-------
+
+.. index:: pair: function; implicit_value
+.. _doxid-classgeode_1_1_implicit_cross_section_1a30112b09223d1444d0ee06ca20c11b9d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	double implicit_value(const Surface2D& surface, index_t vertex_id) const
+
+Return the implicit value of the given vertex of the given surface.
+
+.. index:: pair: function; implicit_value
+.. _doxid-classgeode_1_1_implicit_cross_section_1ade6a7d8a3a1fbef211a0750f86f83d0b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<double> implicit_value(
+		const Surface2D& surface,
+		const Point2D& point
+		) const
+
+Return the implicit value of the point, calculated in the polygon containing the given point in the given surface, if there is any.
+
+.. index:: pair: function; implicit_value
+.. _doxid-classgeode_1_1_implicit_cross_section_1acc105602542f26489e277f80a7d9dbb0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	double implicit_value(
+		const Surface2D& surface,
+		const Point2D& point,
+		index_t polygon_id
+		) const
+
+Return the implicit value of the point, calculated in the given polygon of the given surface.
+
+.. index:: pair: function; containing_polygon
+.. _doxid-classgeode_1_1_implicit_cross_section_1adaffb1d66296333f3bc36ad71cfff919:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::optional<index_t> containing_polygon(
+		const Surface2D& surface,
+		const Point2D& point
+		) const
+
+Returns the surface polygon containing the given point, if there is any.
+

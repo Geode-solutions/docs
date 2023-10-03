@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::StratigraphicPoint &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="class geode::StratigraphicRelationships" href="class_geode_StratigraphicRelationships.html" />
+    <link rel="prev" title="class geode::StratigraphicModelOutput" href="class_geode_StratigraphicModelOutput.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-stratigraphicpoint">
+<span id="doxid-classgeode-1-1-stratigraphic-point"></span><span id="index-0"></span><h1>template class geode::StratigraphicPoint<a class="headerlink" href="#template-class-geode-stratigraphicpoint" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>A Stratigraphic Point represents a point in a stratigraphic space, with an implicit field value and a point of dimension-1 giving its position in the stratigraphic space.</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;stratigraphic_point.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="n">StratigraphicPoint</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1ab126d18051b66bb7c815f7d1298361d2"><span></span><span class="n">StratigraphicPoint</span></span><span></span><span class="p">();</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1a1cc800eec09f0cbd77a29010ab9b74d7"><span></span><span class="n">StratigraphicPoint</span></span><span></span><span class="p">(</span>
+        <span class="n">Point</span><span class="o">&lt;</span><span class="n">location_dim</span><span class="o">&gt;</span> <span class="n">stratigraphic_location</span><span class="p">,</span>
+        <span class="kt">double</span> <span class="n">implicit_value</span>
+        <span class="p">);</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1acd92a4d2178b2f62d763a8ec53663906"><span></span><span class="n">StratigraphicPoint</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">values</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1ac81f427cdcc28ca6a3cb4152474b99a6"><span></span><span class="n">StratigraphicPoint</span></span><span></span><span class="p">(</span><span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">stratigraphic_coordinates</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">location_dim</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1a3c02dffdffdd638eed944ce245f127a1"><span></span><span class="n">stratigraphic_location</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1a45313d3f8d2c0fc2c1558b7683b53ba3"><span></span><span class="n">implicit_value</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1aaeaa993db41180f9df897bf0b79fd932"><span></span><span class="n">stratigraphic_coordinates</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1a7faeed1a724fe1fc802c060d94824059"><span></span><span class="n">set_stratigraphic_location</span></span><span></span><span class="p">(</span><span class="n">Point</span><span class="o">&lt;</span><span class="n">location_dim</span><span class="o">&gt;</span> <span class="n">stratigraphic_location</span><span class="p">);</span>
+    <span class="kt">void</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1a68fbdf4cbb9843eed1b5c078792311e7"><span></span><span class="n">set_implicit_value</span></span><span></span><span class="p">(</span><span class="kt">double</span> <span class="n">implicit_value</span><span class="p">);</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-stratigraphic-point-1a137602d6013ea0be903260639a164105"><span></span><span class="n">string</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_StratigraphicPoint.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

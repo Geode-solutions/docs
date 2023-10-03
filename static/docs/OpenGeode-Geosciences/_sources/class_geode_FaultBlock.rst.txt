@@ -1,0 +1,33 @@
+.. index:: pair: class; geode::FaultBlock
+.. _doxid-classgeode_1_1_fault_block:
+
+template class geode::FaultBlock
+================================
+
+.. toctree::
+	:hidden:
+
+Geological component describing a :ref:`Fault <doxid-classgeode_1_1_fault>` Block.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <fault_block.h>
+	
+	template <index_t dimension>
+	class FaultBlock: public Component< dimension >
+	{
+	public:
+		// construction
+	
+		:target:`FaultBlock<doxid-classgeode_1_1_fault_block_1ad1720ff53f0cb9e30a035208d434c05b>`(FaultBlock&& other);
+		:target:`FaultBlock<doxid-classgeode_1_1_fault_block_1a85c7116e36e8f35bbda8d5cc253a2bd1>`(FaultBlocksKey);
+
+		// methods
+	
+		ComponentType :target:`component_type<doxid-classgeode_1_1_fault_block_1a9d95e0ded9e49bf1d6bb00e22abd8993>`() const;
+		ComponentID :target:`component_id<doxid-classgeode_1_1_fault_block_1ae095644ca1dfb6b731faacd3b36e63dc>`() const;
+		void :target:`set_fault_block_name<doxid-classgeode_1_1_fault_block_1aa5ab805cb023f3bf3d85bbc3976fd3a1>`(absl::string_view name, FaultBlocksBuilderKey);
+		static ComponentType :target:`component_type_static<doxid-classgeode_1_1_fault_block_1ae28dcee8c28f5640e7eb96383fe31074>`();
+	};

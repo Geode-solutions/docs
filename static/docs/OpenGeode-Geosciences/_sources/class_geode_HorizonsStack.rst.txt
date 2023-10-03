@@ -1,0 +1,131 @@
+.. index:: pair: class; geode::HorizonsStack
+.. _doxid-classgeode_1_1_horizons_stack:
+
+template class geode::HorizonsStack
+===================================
+
+.. toctree::
+	:hidden:
+
+A :ref:`HorizonsStack <doxid-classgeode_1_1_horizons_stack>` is a set of :ref:`Horizons <doxid-classgeode_1_1_horizons>` and :ref:`StratigraphicUnits <doxid-classgeode_1_1_stratigraphic_units>`, linked by relations defining how they are stacked (which unit is above and under which horizon, and inversely).
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <horizons_stack.h>
+	
+	template <index_t dimension>
+	class HorizonsStack:
+	    public :ref:`geode::StratigraphicRelationships<doxid-classgeode_1_1_stratigraphic_relationships>`,
+	    public :ref:`geode::Horizons<doxid-classgeode_1_1_horizons>`,
+	    public :ref:`geode::StratigraphicUnits<doxid-classgeode_1_1_stratigraphic_units>`,
+	    public Identifier
+	{
+	public:
+		// construction
+	
+		:target:`HorizonsStack<doxid-classgeode_1_1_horizons_stack_1a78b9942403dc6b352d83f989b9f61465>`();
+		:target:`HorizonsStack<doxid-classgeode_1_1_horizons_stack_1ae326a31bb12714509687a44382e83ca9>`(HorizonsStack&& horizons_stack);
+
+		// methods
+	
+		HorizonsStack<dimension>& :target:`operator =<doxid-classgeode_1_1_horizons_stack_1a13a77dbd57e84b876f75180cc041cd2c>` (HorizonsStack<dimension>&& other);
+		absl::string_view :target:`native_extension<doxid-classgeode_1_1_horizons_stack_1aa6f8dfb76a91eb74778cf6f00c909e29>`() const;
+		static absl::string_view :target:`native_extension_static<doxid-classgeode_1_1_horizons_stack_1a3f2c3197d475d57a813b9e49e9f58505>`();
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// typedefs
+	
+		typedef :ref:`HorizonsBuilder<doxid-classgeode_1_1_horizons_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_horizons_1a4f8e04f5ffe5cf10f0cb8ae3713e5039>`;
+		typedef :ref:`StratigraphicUnitsBuilder<doxid-classgeode_1_1_stratigraphic_units_builder>`<dimension> :ref:`Builder<doxid-classgeode_1_1_stratigraphic_units_1a6803f98f4fb16d93592f41d8a5334777>`;
+
+		// classes
+	
+		class :ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>`;
+		class :ref:`HorizonRangeBase<doxid-classgeode_1_1_horizons_1_1_horizon_range_base>`;
+		class :ref:`ModifiableHorizonRange<doxid-classgeode_1_1_horizons_1_1_modifiable_horizon_range>`;
+		class :ref:`ModifiableStratigraphicUnitRange<doxid-classgeode_1_1_stratigraphic_units_1_1_modifiable_stratigraphic_unit_range>`;
+		class :ref:`StratigraphicUnitRange<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range>`;
+		class :ref:`StratigraphicUnitRangeBase<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range_base>`;
+
+		// fields
+	
+		friend :ref:`Builder<doxid-classgeode_1_1_horizons_1a980f5f49c743e80b423fad956b347b87>`;
+		friend :ref:`Builder<doxid-classgeode_1_1_stratigraphic_units_1aa555420baf3f11da711927f86a6f5a47>`;
+
+		// methods
+	
+		bool :ref:`is_above<doxid-classgeode_1_1_stratigraphic_relationships_1a3a77fc907eb4ba168bd7122d9bf7fee8>`(const uuid& above, const uuid& under) const;
+		bool :ref:`is_eroded_by<doxid-classgeode_1_1_stratigraphic_relationships_1a2bb219597c2ca2b5e9f71b103cf049d1>`(const uuid& eroded, const uuid& erosion) const;
+		bool :ref:`is_baselap_of<doxid-classgeode_1_1_stratigraphic_relationships_1aea624b6e0511b861f4868c75a529bbdb>`(const uuid& baselap, const uuid& baselap_top) const;
+		absl::optional<uuid> :ref:`above<doxid-classgeode_1_1_stratigraphic_relationships_1a467a9f38bf47ab5ce0d1bf9b04d68f3b>`(const uuid& element) const;
+		absl::optional<uuid> :ref:`under<doxid-classgeode_1_1_stratigraphic_relationships_1a6efbcbeadca633d826db8fae5de1052c>`(const uuid& element) const;
+		void :ref:`save_stratigraphic_relationships<doxid-classgeode_1_1_stratigraphic_relationships_1a258d1f09004383b9849fc6faca9c45bd>`(absl::string_view directory) const;
+		void :ref:`remove_component<doxid-classgeode_1_1_stratigraphic_relationships_1a088f12412b97864b4ce68e599b154d92>`(const uuid& id, StratigraphicRelationshipsBuilderKey);
+	
+		index_t :ref:`add_above_relation<doxid-classgeode_1_1_stratigraphic_relationships_1aa57f437c7e20a60f7f5f7782fcbb8c7d>`(
+			const ComponentID& above,
+			const ComponentID& under,
+			StratigraphicRelationshipsBuilderKey
+			);
+	
+		index_t :ref:`add_erosion_relation<doxid-classgeode_1_1_stratigraphic_relationships_1a409904cb4a29affdaa603f23243967d2>`(
+			const ComponentID& erosion,
+			const ComponentID& eroded,
+			StratigraphicRelationshipsBuilderKey
+			);
+	
+		index_t :ref:`add_baselap_relation<doxid-classgeode_1_1_stratigraphic_relationships_1a2dfa695bb779ab2fb71ae50acead2b1e>`(
+			const ComponentID& baselap_top,
+			const ComponentID& baselap,
+			StratigraphicRelationshipsBuilderKey
+			);
+	
+		void :ref:`remove_relation<doxid-classgeode_1_1_stratigraphic_relationships_1ae30c9ee135aadfd1bc84da6b0010c85a>`(
+			const uuid& id1,
+			const uuid& id2,
+			StratigraphicRelationshipsBuilderKey
+			);
+	
+		void :ref:`remove_above_relation<doxid-classgeode_1_1_stratigraphic_relationships_1a62f93a44b8b0a07522925ab18866af06>`(
+			const uuid& id1,
+			const uuid& id2,
+			StratigraphicRelationshipsBuilderKey
+			);
+	
+		void :ref:`remove_unconformity_relation<doxid-classgeode_1_1_stratigraphic_relationships_1a3e52024f1782c3679434e876a0e3de5a>`(
+			const uuid& id1,
+			const uuid& id2,
+			StratigraphicRelationshipsBuilderKey
+			);
+	
+		void :ref:`copy_stratigraphic_relationships<doxid-classgeode_1_1_stratigraphic_relationships_1a87f19c1743b40fe3c8a7d6d054bb0bc1>`(
+			const ModelCopyMapping& mapping,
+			const :ref:`StratigraphicRelationships<doxid-classgeode_1_1_stratigraphic_relationships>`& relationships,
+			StratigraphicRelationshipsBuilderKey
+			);
+	
+		void :ref:`load_stratigraphic_relationships<doxid-classgeode_1_1_stratigraphic_relationships_1a823c774ef703c8d1ec3ea6c6dee12fa7>`(
+			absl::string_view directory,
+			StratigraphicRelationshipsBuilderKey
+			);
+	
+		index_t :ref:`nb_horizons<doxid-classgeode_1_1_horizons_1a80d586cfb1f6a7d4f57ab0977627d9dd>`() const;
+		bool :ref:`has_horizon<doxid-classgeode_1_1_horizons_1aaf3242d16a16df095d2a32bb2d2d950c>`(const uuid& id) const;
+		const :ref:`Horizon<doxid-classgeode_1_1_horizon>`<dimension>& :ref:`horizon<doxid-classgeode_1_1_horizons_1a1630eca3990d0ab21987e12f30b90a33>`(const uuid& id) const;
+		:ref:`HorizonRange<doxid-classgeode_1_1_horizons_1_1_horizon_range>` :ref:`horizons<doxid-classgeode_1_1_horizons_1a6519a0977dc913d8f512316718ad90b8>`() const;
+		void :ref:`save_horizons<doxid-classgeode_1_1_horizons_1a45c8c9ea998662c670380632588ff79f>`(absl::string_view directory) const;
+		index_t :ref:`nb_stratigraphic_units<doxid-classgeode_1_1_stratigraphic_units_1aab22ab92867a0335745e9aed54a1364c>`() const;
+		bool :ref:`has_stratigraphic_unit<doxid-classgeode_1_1_stratigraphic_units_1aa92125bf4ae44498fa97e15bd7fd0e0b>`(const uuid& id) const;
+		const :ref:`StratigraphicUnit<doxid-classgeode_1_1_stratigraphic_unit>`<dimension>& :ref:`stratigraphic_unit<doxid-classgeode_1_1_stratigraphic_units_1aebeb0eb50ebf50e5d5c5e735369ae980>`(const uuid& id) const;
+		:ref:`StratigraphicUnitRange<doxid-classgeode_1_1_stratigraphic_units_1_1_stratigraphic_unit_range>` :ref:`stratigraphic_units<doxid-classgeode_1_1_stratigraphic_units_1ae172751baf5e452e00f3c170423d5a1d>`() const;
+		void :ref:`save_stratigraphic_units<doxid-classgeode_1_1_stratigraphic_units_1a27613c8c099f15913637dcd9012e2d1f>`(absl::string_view directory) const;
+

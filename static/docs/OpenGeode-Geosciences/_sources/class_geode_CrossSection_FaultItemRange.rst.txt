@@ -1,0 +1,31 @@
+.. index:: pair: class; geode::CrossSection::FaultItemRange
+.. _doxid-classgeode_1_1_cross_section_1_1_fault_item_range:
+
+class geode::CrossSection::FaultItemRange
+=========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cross_section.h>
+	
+	class FaultItemRange: public ItemRangeIterator
+	{
+	public:
+		// construction
+	
+		:target:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range_1a3d31b5298c581562dfc000eb86542f0e>`(const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section, const Fault2D& fault);
+		:target:`FaultItemRange<doxid-classgeode_1_1_cross_section_1_1_fault_item_range_1a1ef0818eaec77f7f4d36b49d8ca11096>`(const FaultItemRange& range);
+
+		// methods
+	
+		const FaultItemRange& :target:`begin<doxid-classgeode_1_1_cross_section_1_1_fault_item_range_1a541b30299b542f128dc15e9da51de487>`() const;
+		const FaultItemRange& :target:`end<doxid-classgeode_1_1_cross_section_1_1_fault_item_range_1abb8a04e2a9b24186e987092b032fb8fd>`() const;
+		const Line2D& :target:`operator *<doxid-classgeode_1_1_cross_section_1_1_fault_item_range_1aa070317b9f684fff5998dcc1bb9b19d7>` () const;
+	};

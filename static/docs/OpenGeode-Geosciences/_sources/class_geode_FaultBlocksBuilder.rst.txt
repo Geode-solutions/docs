@@ -1,0 +1,26 @@
+.. index:: pair: class; geode::FaultBlocksBuilder
+.. _doxid-classgeode_1_1_fault_blocks_builder:
+
+template class geode::FaultBlocksBuilder
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <fault_blocks_builder.h>
+	
+	template <index_t dimension>
+	class FaultBlocksBuilder
+	{
+	public:
+		// methods
+	
+		void :target:`load_fault_blocks<doxid-classgeode_1_1_fault_blocks_builder_1a4be74babf0a3b3efb61f46656aec04c1>`(absl::string_view directory);
+		void :target:`set_fault_block_name<doxid-classgeode_1_1_fault_blocks_builder_1a1b4199f3505abd9ed3665f0c27976cfd>`(const uuid& id, absl::string_view name);
+	};

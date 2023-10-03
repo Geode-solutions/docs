@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template class geode::HorizonsStack &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template class geode::HorizonsStackBuilder" href="class_geode_HorizonsStackBuilder.html" />
+    <link rel="prev" title="template class geode::HorizonsBuilder" href="class_geode_HorizonsBuilder.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-class-geode-horizonsstack">
+<span id="doxid-classgeode-1-1-horizons-stack"></span><span id="index-0"></span><h1>template class geode::HorizonsStack<a class="headerlink" href="#template-class-geode-horizonsstack" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>A <a class="reference internal" href="#doxid-classgeode-1-1-horizons-stack"><span class="std std-ref">HorizonsStack</span></a> is a set of <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons"><span class="std std-ref">Horizons</span></a> and <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units"><span class="std std-ref">StratigraphicUnits</span></a>, linked by relations defining how they are stacked (which unit is above and under which horizon, and inversely).</p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;horizons_stack.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nl">HorizonsStack</span><span class="p">:</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships"><span class="std std-ref">geode::StratigraphicRelationships</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons"><span class="std std-ref">geode::Horizons</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units"><span class="std std-ref">geode::StratigraphicUnits</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <span class="n">Identifier</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="c1">// construction</span>
+
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-horizons-stack-1a78b9942403dc6b352d83f989b9f61465"><span></span><span class="n">HorizonsStack</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-horizons-stack-1ae326a31bb12714509687a44382e83ca9"><span></span><span class="n">HorizonsStack</span></span><span></span><span class="p">(</span><span class="n">HorizonsStack</span><span class="o">&amp;&amp;</span> <span class="n">horizons_stack</span><span class="p">);</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="n">HorizonsStack</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-horizons-stack-1a13a77dbd57e84b876f75180cc041cd2c"><span></span><span class="k">operator</span> <span class="o">=</span></span><span></span> <span class="p">(</span><span class="n">HorizonsStack</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;&amp;</span> <span class="n">other</span><span class="p">);</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-horizons-stack-1aa6f8dfb76a91eb74778cf6f00c909e29"><span></span><span class="n">native_extension</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">static</span> <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-horizons-stack-1a3f2c3197d475d57a813b9e49e9f58505"><span></span><span class="n">native_extension_static</span></span><span></span><span class="p">();</span>
+<span class="p">};</span></pre>
+<section id="inherited-members">
+<h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// typedefs</span>
+
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_HorizonsBuilder.html#doxid-classgeode-1-1-horizons-builder"><span class="std std-ref">HorizonsBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1a4f8e04f5ffe5cf10f0cb8ae3713e5039"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
+    <span class="k">typedef</span> <a class="reference internal" href="class_geode_StratigraphicUnitsBuilder.html#doxid-classgeode-1-1-stratigraphic-units-builder"><span class="std std-ref">StratigraphicUnitsBuilder</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units-1a6803f98f4fb16d93592f41d8a5334777"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// classes</span>
+
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Horizons_HorizonRange.html#doxid-classgeode-1-1-horizons-1-1-horizon-range"><span class="std std-ref">HorizonRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Horizons_HorizonRangeBase.html#doxid-classgeode-1-1-horizons-1-1-horizon-range-base"><span class="std std-ref">HorizonRangeBase</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_Horizons_ModifiableHorizonRange.html#doxid-classgeode-1-1-horizons-1-1-modifiable-horizon-range"><span class="std std-ref">ModifiableHorizonRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicUnits_ModifiableStratigraphicUnitRange.html#doxid-classgeode-1-1-stratigraphic-units-1-1-modifiable-stratigraphic-unit-range"><span class="std std-ref">ModifiableStratigraphicUnitRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicUnits_StratigraphicUnitRange.html#doxid-classgeode-1-1-stratigraphic-units-1-1-stratigraphic-unit-range"><span class="std std-ref">StratigraphicUnitRange</span></a><span></span><span class="p">;</span>
+    <span class="k">class</span> <a class="reference internal" href="class_geode_StratigraphicUnits_StratigraphicUnitRangeBase.html#doxid-classgeode-1-1-stratigraphic-units-1-1-stratigraphic-unit-range-base"><span class="std std-ref">StratigraphicUnitRangeBase</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// fields</span>
+
+    <span class="k">friend</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1a980f5f49c743e80b423fad956b347b87"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
+    <span class="k">friend</span> <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units-1aa555420baf3f11da711927f86a6f5a47"><span class="std std-ref">Builder</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a3a77fc907eb4ba168bd7122d9bf7fee8"><span class="std std-ref">is_above</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">above</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">under</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a2bb219597c2ca2b5e9f71b103cf049d1"><span class="std std-ref">is_eroded_by</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">eroded</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">erosion</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1aea624b6e0511b861f4868c75a529bbdb"><span class="std std-ref">is_baselap_of</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">baselap</span><span class="p">,</span> <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">baselap_top</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a467a9f38bf47ab5ce0d1bf9b04d68f3b"><span class="std std-ref">above</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">uuid</span><span class="o">&gt;</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a6efbcbeadca633d826db8fae5de1052c"><span class="std std-ref">under</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">element</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a258d1f09004383b9849fc6faca9c45bd"><span class="std std-ref">save_stratigraphic_relationships</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a088f12412b97864b4ce68e599b154d92"><span class="std std-ref">remove_component</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">,</span> <span class="n">StratigraphicRelationshipsBuilderKey</span><span class="p">);</span>
+
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1aa57f437c7e20a60f7f5f7782fcbb8c7d"><span class="std std-ref">add_above_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">above</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">under</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a409904cb4a29affdaa603f23243967d2"><span class="std std-ref">add_erosion_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">erosion</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">eroded</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a2dfa695bb779ab2fb71ae50acead2b1e"><span class="std std-ref">add_baselap_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">baselap_top</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">ComponentID</span><span class="o">&amp;</span> <span class="n">baselap</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1ae30c9ee135aadfd1bc84da6b0010c85a"><span class="std std-ref">remove_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a62f93a44b8b0a07522925ab18866af06"><span class="std std-ref">remove_above_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a3e52024f1782c3679434e876a0e3de5a"><span class="std std-ref">remove_unconformity_relation</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id1</span><span class="p">,</span>
+        <span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id2</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a87f19c1743b40fe3c8a7d6d054bb0bc1"><span class="std std-ref">copy_stratigraphic_relationships</span></a><span></span><span class="p">(</span>
+        <span class="k">const</span> <span class="n">ModelCopyMapping</span><span class="o">&amp;</span> <span class="n">mapping</span><span class="p">,</span>
+        <span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships"><span class="std std-ref">StratigraphicRelationships</span></a><span></span><span class="o">&amp;</span> <span class="n">relationships</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicRelationships.html#doxid-classgeode-1-1-stratigraphic-relationships-1a823c774ef703c8d1ec3ea6c6dee12fa7"><span class="std std-ref">load_stratigraphic_relationships</span></a><span></span><span class="p">(</span>
+        <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">,</span>
+        <span class="n">StratigraphicRelationshipsBuilderKey</span>
+        <span class="p">);</span>
+
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1a80d586cfb1f6a7d4f57ab0977627d9dd"><span class="std std-ref">nb_horizons</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1aaf3242d16a16df095d2a32bb2d2d950c"><span class="std std-ref">has_horizon</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Horizon.html#doxid-classgeode-1-1-horizon"><span class="std std-ref">Horizon</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1a1630eca3990d0ab21987e12f30b90a33"><span class="std std-ref">horizon</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_Horizons_HorizonRange.html#doxid-classgeode-1-1-horizons-1-1-horizon-range"><span class="std std-ref">HorizonRange</span></a><span></span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1a6519a0977dc913d8f512316718ad90b8"><span class="std std-ref">horizons</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_Horizons.html#doxid-classgeode-1-1-horizons-1a45c8c9ea998662c670380632588ff79f"><span class="std std-ref">save_horizons</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="n">index_t</span> <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units-1aab22ab92867a0335745e9aed54a1364c"><span class="std std-ref">nb_stratigraphic_units</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units-1aa92125bf4ae44498fa97e15bd7fd0e0b"><span class="std std-ref">has_stratigraphic_unit</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicUnit.html#doxid-classgeode-1-1-stratigraphic-unit"><span class="std std-ref">StratigraphicUnit</span></a><span></span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units-1aebeb0eb50ebf50e5d5c5e735369ae980"><span class="std std-ref">stratigraphic_unit</span></a><span></span><span class="p">(</span><span class="k">const</span> <span class="n">uuid</span><span class="o">&amp;</span> <span class="n">id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="class_geode_StratigraphicUnits_StratigraphicUnitRange.html#doxid-classgeode-1-1-stratigraphic-units-1-1-stratigraphic-unit-range"><span class="std std-ref">StratigraphicUnitRange</span></a><span></span> <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units-1ae172751baf5e452e00f3c170423d5a1d"><span class="std std-ref">stratigraphic_units</span></a><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">void</span> <a class="reference internal" href="class_geode_StratigraphicUnits.html#doxid-classgeode-1-1-stratigraphic-units-1a27613c8c099f15913637dcd9012e2d1f"><span class="std std-ref">save_stratigraphic_units</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">directory</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span></pre>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/class_geode_HorizonsStack.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
