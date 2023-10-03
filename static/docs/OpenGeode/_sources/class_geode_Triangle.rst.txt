@@ -21,20 +21,20 @@ template class geode::Triangle
 	public:
 		// construction
 	
-		:target:`Triangle<doxid-classgeode_1_1_triangle_1abae7cc5597c459031bc8299b142e4fd9>`(
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p0,
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p1,
-			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& p2
+		:target:`Triangle<doxid-classgeode_1_1_triangle_1a783a6aef08a809de502a4725d1754c75>`(
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point0,
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point1,
+			const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& point2
 			);
 	
-		:target:`Triangle<doxid-classgeode_1_1_triangle_1ac49727ec5bdb6318a4283d311a9f4949>`(const Triangle<dimension>& other);
-		:target:`Triangle<doxid-classgeode_1_1_triangle_1aae91a50b743c435436551d3dc31ef6c8>`(const :ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`<dimension>& other);
-		:target:`Triangle<doxid-classgeode_1_1_triangle_1aa6e0d27fab4ad3cf0e367929387b90c0>`(Triangle<dimension>&& other);
+		:target:`Triangle<doxid-classgeode_1_1_triangle_1ad1c4a90abb85150b6d5edd3c2a800bfd>`(const Triangle<dimension>& other);
+		:target:`Triangle<doxid-classgeode_1_1_triangle_1a4e245a4aa97fe817ac32fa9235d98cd7>`(const :ref:`OwnerTriangle<doxid-classgeode_1_1_owner_triangle>`<dimension>& other);
+		:target:`Triangle<doxid-classgeode_1_1_triangle_1a67ead7a9dfaedee248889c8d24ebe7be>`(Triangle<dimension>&& other);
 
 		// methods
 	
-		Triangle<dimension>& :target:`operator =<doxid-classgeode_1_1_triangle_1abd70b5e90ce4c1dc7f9b819518015823>` (const Triangle<dimension>& other);
-		Triangle<dimension>& :target:`operator =<doxid-classgeode_1_1_triangle_1aa7848d3f95f27c3b8fce41b5596f9da8>` (Triangle<dimension>&& other);
+		Triangle<dimension>& :target:`operator =<doxid-classgeode_1_1_triangle_1a9f6bf6b6a87525a8cbc41a040351224a>` (const Triangle<dimension>& other);
+		Triangle<dimension>& :target:`operator =<doxid-classgeode_1_1_triangle_1a3e84ba45fc0abb3bc3891354f8f9a91c>` (Triangle<dimension>&& other);
 	};
 
 Inherited Members
@@ -46,8 +46,8 @@ Inherited Members
 	public:
 		// methods
 	
-		:ref:`GenericTriangle<doxid-classgeode_1_1_generic_triangle>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_triangle_1ab19ce8ee65eaaa6065f9a605c7277e87>` (const :ref:`GenericTriangle<doxid-classgeode_1_1_generic_triangle>`<PointType, dimension>& other);
-		:ref:`GenericTriangle<doxid-classgeode_1_1_generic_triangle>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_triangle_1a797cf52d6d460e82dcaa256ba390c9bf>` (:ref:`GenericTriangle<doxid-classgeode_1_1_generic_triangle>`<PointType, dimension>&& other);
+		:ref:`GenericTriangle<doxid-classgeode_1_1_generic_triangle>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_triangle_1a477656294d804c486ebf341da6e180c7>` (const :ref:`GenericTriangle<doxid-classgeode_1_1_generic_triangle>`<PointType, dimension>& other);
+		:ref:`GenericTriangle<doxid-classgeode_1_1_generic_triangle>`<PointType, dimension>& :ref:`operator =<doxid-classgeode_1_1_generic_triangle_1a0703553f0cad4751fc09317dc547c4e3>` (:ref:`GenericTriangle<doxid-classgeode_1_1_generic_triangle>`<PointType, dimension>&& other);
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :ref:`barycenter<doxid-classgeode_1_1_generic_triangle_1a44a95a7325aac0dc67f25a6ca9e9cae0>`() const;
 	
 		template <index_t T = dimension>

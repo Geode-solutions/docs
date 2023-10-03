@@ -21,14 +21,14 @@ template class geode::GenericTriangle
 	public:
 		// construction
 	
-		:target:`GenericTriangle<doxid-classgeode_1_1_generic_triangle_1a46c2fbe81e88b7149cfe4213c63fe776>`(PointType p0, PointType p1, PointType p2);
-		:target:`GenericTriangle<doxid-classgeode_1_1_generic_triangle_1aa76bbc017d0b9db51e3cd8ed31eb47e7>`(const GenericTriangle<PointType, dimension>& other);
-		:target:`GenericTriangle<doxid-classgeode_1_1_generic_triangle_1ac5c1d08d471330ef791b758d8f2b26b2>`(GenericTriangle<PointType, dimension>&& other);
+		:target:`GenericTriangle<doxid-classgeode_1_1_generic_triangle_1a7c62c4f98871bda93b12f12ed1b23555>`(PointType point0, PointType point1, PointType point2);
+		:target:`GenericTriangle<doxid-classgeode_1_1_generic_triangle_1abd42fb59f1aeb96beb171e1d299e0e2d>`(const GenericTriangle<PointType, dimension>& other);
+		:target:`GenericTriangle<doxid-classgeode_1_1_generic_triangle_1aa86caa4624d70d565d370e03d9e3f505>`(GenericTriangle<PointType, dimension>&& other);
 
 		// methods
 	
-		GenericTriangle<PointType, dimension>& :target:`operator =<doxid-classgeode_1_1_generic_triangle_1ab19ce8ee65eaaa6065f9a605c7277e87>` (const GenericTriangle<PointType, dimension>& other);
-		GenericTriangle<PointType, dimension>& :target:`operator =<doxid-classgeode_1_1_generic_triangle_1a797cf52d6d460e82dcaa256ba390c9bf>` (GenericTriangle<PointType, dimension>&& other);
+		GenericTriangle<PointType, dimension>& :target:`operator =<doxid-classgeode_1_1_generic_triangle_1a477656294d804c486ebf341da6e180c7>` (const GenericTriangle<PointType, dimension>& other);
+		GenericTriangle<PointType, dimension>& :target:`operator =<doxid-classgeode_1_1_generic_triangle_1a0703553f0cad4751fc09317dc547c4e3>` (GenericTriangle<PointType, dimension>&& other);
 		:ref:`Point<doxid-classgeode_1_1_point>`<dimension> :target:`barycenter<doxid-classgeode_1_1_generic_triangle_1a44a95a7325aac0dc67f25a6ca9e9cae0>`() const;
 	
 		template <index_t T = dimension>

@@ -20,14 +20,14 @@ class geode::OwnerTetrahedron
 	public:
 		// construction
 	
-		:target:`OwnerTetrahedron<doxid-classgeode_1_1_owner_tetrahedron_1a32a631047d1cdd8b6664a22d0b4199aa>`(Point3D p0, Point3D p1, Point3D p2, Point3D p3);
-		:target:`OwnerTetrahedron<doxid-classgeode_1_1_owner_tetrahedron_1a3880931069fb1dc94253ac5f1d8131aa>`(const OwnerTetrahedron& other);
-		:target:`OwnerTetrahedron<doxid-classgeode_1_1_owner_tetrahedron_1aa8292dbc760a1ae2172fb7755a038688>`(OwnerTetrahedron&& other);
+		:target:`OwnerTetrahedron<doxid-classgeode_1_1_owner_tetrahedron_1abb6930c34bc0a31f3b31da50a598c29d>`(Point3D point0, Point3D point1, Point3D point2, Point3D point3);
+		:target:`OwnerTetrahedron<doxid-classgeode_1_1_owner_tetrahedron_1a876a282b49ae305f90a9824f8aa60a6c>`(const OwnerTetrahedron& other);
+		:target:`OwnerTetrahedron<doxid-classgeode_1_1_owner_tetrahedron_1af14b581c7a310fd58ceaed6469ec822f>`(OwnerTetrahedron&& other);
 
 		// methods
 	
-		OwnerTetrahedron& :target:`operator =<doxid-classgeode_1_1_owner_tetrahedron_1ad4051b00b71aa605c0f006707261d609>` (const OwnerTetrahedron& other);
-		OwnerTetrahedron& :target:`operator =<doxid-classgeode_1_1_owner_tetrahedron_1a4be8bd82ad8d034f3fbb28896625bcc9>` (OwnerTetrahedron&& other);
+		OwnerTetrahedron& :target:`operator =<doxid-classgeode_1_1_owner_tetrahedron_1acbfe23d568d795342debd8de5426c974>` (const OwnerTetrahedron& other);
+		OwnerTetrahedron& :target:`operator =<doxid-classgeode_1_1_owner_tetrahedron_1a5d1f8c951a6004fb1d42493114ae6a2e>` (OwnerTetrahedron&& other);
 	};
 
 Inherited Members
@@ -43,8 +43,8 @@ Inherited Members
 
 		// methods
 	
-		:ref:`GenericTetrahedron<doxid-classgeode_1_1_generic_tetrahedron>`& :ref:`operator =<doxid-classgeode_1_1_generic_tetrahedron_1afe18804ba8db38207ef27dc5ecb352da>` (const :ref:`GenericTetrahedron<doxid-classgeode_1_1_generic_tetrahedron>`& other);
-		:ref:`GenericTetrahedron<doxid-classgeode_1_1_generic_tetrahedron>`& :ref:`operator =<doxid-classgeode_1_1_generic_tetrahedron_1a8b8465c19bf0f10f592be4660fe419d9>` (:ref:`GenericTetrahedron<doxid-classgeode_1_1_generic_tetrahedron>`&& other);
+		:ref:`GenericTetrahedron<doxid-classgeode_1_1_generic_tetrahedron>`& :ref:`operator =<doxid-classgeode_1_1_generic_tetrahedron_1a4ea3357593abf5b435cb3da149f466d5>` (const :ref:`GenericTetrahedron<doxid-classgeode_1_1_generic_tetrahedron>`& other);
+		:ref:`GenericTetrahedron<doxid-classgeode_1_1_generic_tetrahedron>`& :ref:`operator =<doxid-classgeode_1_1_generic_tetrahedron_1a52262f2d7c5f479836ecddfeb7ceea0e>` (:ref:`GenericTetrahedron<doxid-classgeode_1_1_generic_tetrahedron>`&& other);
 		Point3D :ref:`barycenter<doxid-classgeode_1_1_generic_tetrahedron_1a9b40dcb9b842bacbce80cff27d5bd60a>`() const;
 		void :ref:`set_point<doxid-classgeode_1_1_generic_tetrahedron_1a4dfc18b88c4fc5538c7eafff2d4685c1>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, PointType point);
 		const std::array<PointType, 4>& :ref:`vertices<doxid-classgeode_1_1_generic_tetrahedron_1ab24a752999faac87c47b26daee7861f7>`() const;

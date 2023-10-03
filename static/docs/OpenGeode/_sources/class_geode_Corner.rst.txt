@@ -19,23 +19,27 @@ Geometric component describing a :ref:`Point <doxid-classgeode_1_1_point>`. This
 	class Corner: public :ref:`geode::Component<doxid-classgeode_1_1_component>`
 	{
 	public:
+		// typedefs
+	
+		typedef :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension> :target:`Mesh<doxid-classgeode_1_1_corner_1a241bea938010121b1e360ab4210c8b44>`;
+
 		// construction
 	
 		:target:`Corner<doxid-classgeode_1_1_corner_1a9f833b20a91a3825e3f978448678f6fa>`(Corner&& other);
-		:target:`Corner<doxid-classgeode_1_1_corner_1a52dc4765ed08665987a89df771b818c9>`(CornersKey);
-		:target:`Corner<doxid-classgeode_1_1_corner_1a96f820fc37b1105620e71f779a81ba8f>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl, CornersKey);
+		:target:`Corner<doxid-classgeode_1_1_corner_1ac6b52b36fdf0b419a5cf1a13c601dbf3>`(CornersKey key);
+		:target:`Corner<doxid-classgeode_1_1_corner_1abb9e2d1bc81d750aba70da34ee202b03>`(const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& impl, CornersKey key);
 
 		// methods
 	
 		virtual :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type<doxid-classgeode_1_1_corner_1aac623e25b471564400e54115a0a463e4>`() const;
 		:ref:`ComponentID<doxid-classgeode_1_1_component_i_d>` :target:`component_id<doxid-classgeode_1_1_corner_1a340e953e76f408576deb357224752562>`() const;
-		const :ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& :target:`mesh<doxid-classgeode_1_1_corner_1a74e2375207559323768798211f0fe1db>`() const;
-		:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_corner_1a2891007a30c223542874ba5e60d28bad>`(CornersKey);
+		const :ref:`Mesh<doxid-classgeode_1_1_corner_1a241bea938010121b1e360ab4210c8b44>`& :target:`mesh<doxid-classgeode_1_1_corner_1a31cfbd87cead45629c7a7f658a695ae2>`() const;
+		:ref:`Mesh<doxid-classgeode_1_1_corner_1a241bea938010121b1e360ab4210c8b44>`& :target:`modifiable_mesh<doxid-classgeode_1_1_corner_1a19d271fc40a2414a4f58ac1f199e468f>`(CornersKey key);
 		const :ref:`MeshImpl<doxid-namespacegeode_1a4acdb225332b912b395b0d238a21eb10>`& :target:`mesh_type<doxid-classgeode_1_1_corner_1af04ded2331d5035d7c2a6af7744ad1f5>`() const;
-		void :target:`set_mesh<doxid-classgeode_1_1_corner_1a4abe7991125fab80711e9d6b928f898d>`(std::unique_ptr<:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> mesh, CornersKey);
-		void :target:`set_mesh<doxid-classgeode_1_1_corner_1a3b0941bb9272987f532c1158a9633402>`(std::unique_ptr<:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>> mesh, CornersBuilderKey);
-		void :target:`set_corner_name<doxid-classgeode_1_1_corner_1a62e4199049a65ea7b203526a83ecce55>`(absl::string_view name, CornersBuilderKey);
-		:ref:`PointSet<doxid-classgeode_1_1_point_set>`<dimension>& :target:`modifiable_mesh<doxid-classgeode_1_1_corner_1a5a8d449b08b45c647ce11f879e5b982e>`(CornersBuilderKey);
+		void :target:`set_mesh<doxid-classgeode_1_1_corner_1aa079acad6acbca7a9d83b1c4feebad30>`(std::unique_ptr<:ref:`Mesh<doxid-classgeode_1_1_corner_1a241bea938010121b1e360ab4210c8b44>`> mesh, CornersKey key);
+		void :target:`set_mesh<doxid-classgeode_1_1_corner_1a5f9d5c659bd8ae9c6cdb6fc214ad857d>`(std::unique_ptr<:ref:`Mesh<doxid-classgeode_1_1_corner_1a241bea938010121b1e360ab4210c8b44>`> mesh, CornersBuilderKey key);
+		void :target:`set_corner_name<doxid-classgeode_1_1_corner_1a7a299257d6c54fa1c5bb5abb36a38503>`(absl::string_view name, CornersBuilderKey key);
+		:ref:`Mesh<doxid-classgeode_1_1_corner_1a241bea938010121b1e360ab4210c8b44>`& :target:`modifiable_mesh<doxid-classgeode_1_1_corner_1ac3206d30fdc43628e2a7f9eeb02a2ffa>`(CornersBuilderKey key);
 		static :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>` :target:`component_type_static<doxid-classgeode_1_1_corner_1a6c6790536b7ea661cc9a096d1ab8217f>`();
 	};
 
