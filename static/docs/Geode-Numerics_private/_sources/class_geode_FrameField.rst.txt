@@ -27,6 +27,7 @@ class geode::FrameField
 	
 		const BRep& :target:`brep<doxid-classgeode_1_1_frame_field_1a54bd3054fa19fc8f96710df36909bdcf>`() const;
 		const TetrahedralSolid3D& :target:`solid<doxid-classgeode_1_1_frame_field_1a417a43c24497b8a3f1d0b17630007405>`() const;
+		const MeshElement& :target:`block_element<doxid-classgeode_1_1_frame_field_1a15b446be7a64cf480824bb6563adf6e2>`(index_t tetrahedron) const;
 		const Frame3D& :target:`frame<doxid-classgeode_1_1_frame_field_1a289a88a9dec5291b888f8bc44fe4e323>`(index_t vertex) const;
 		void :target:`set_frame<doxid-classgeode_1_1_frame_field_1a6b770b1c857f14aca09d3d5e08147a70>`(index_t vertex, Frame3D frame);
 	};

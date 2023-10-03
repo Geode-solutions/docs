@@ -76,12 +76,6 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a82b6b61fdb928daf4084c93632f90f47>`(Frame);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(TetrahedralSolid);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1da5adee14f91deff17a0b855b2c8e84>`(HybridSolid);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
-	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa326268026b80210a023b9d2edec059d>`(PolygonalSurface);
-	:target:`ALIAS_3D<doxid-namespacegeode_1ad1e677b7ca1b4a9e3461a5ab070e8b42>`(HybridSolid);
-	:target:`ALIAS_3D<doxid-namespacegeode_1a3f3c5cdeee9a9389ffd9f740f987e982>`(PointSet);
-	:target:`ALIAS_3D<doxid-namespacegeode_1a39e77d985d0ff03e0a12e0b0d0106a11>`(PolygonalSurface);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1e631365afa91db8a83b01da36eb4ea8>`(:ref:`FrameTransform<doxid-classgeode_1_1_frame_transform>`);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ac7460483fc781252e3a9b61ecaac8b41>`(geode_numerics_scalar_function_api, NumericsScalarFunction);

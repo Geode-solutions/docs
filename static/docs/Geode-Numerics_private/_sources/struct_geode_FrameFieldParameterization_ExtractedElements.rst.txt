@@ -1,0 +1,31 @@
+.. index:: pair: struct; geode::FrameFieldParameterization::ExtractedElements
+.. _doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements:
+
+struct geode::FrameFieldParameterization::ExtractedElements
+===========================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <frame_field_parameterization.h>
+	
+	struct ExtractedElements
+	{
+		// typedefs
+	
+		typedef GenericMapping<index_t> :target:`Vertex2ElementMapping<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements_1afa8ee852578c8586b1d4a4a2402fa513>`;
+
+		// fields
+	
+		BRep :target:`elements<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements_1ad1cf6d84a56c5687fd47c6d5fd965cee>`;
+		ModelCopyMapping :target:`copy_mapping<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements_1ab760036571a9dd91da9558a702d0f51e>`;
+		absl::flat_hash_map<uuid, :ref:`Vertex2ElementMapping<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements_1afa8ee852578c8586b1d4a4a2402fa513>`> :target:`line_mapping<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements_1ae971b3e253d2766d85cff1f50933c531>`;
+		absl::flat_hash_map<uuid, :ref:`Vertex2ElementMapping<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements_1afa8ee852578c8586b1d4a4a2402fa513>`> :target:`surface_mapping<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements_1a44d88ab554699f669b9f6798977684bf>`;
+		absl::flat_hash_map<uuid, :ref:`Vertex2ElementMapping<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements_1afa8ee852578c8586b1d4a4a2402fa513>`> :target:`block_mapping<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements_1ad99e2b527c4b27fd295abb655cc09e8a>`;
+	};

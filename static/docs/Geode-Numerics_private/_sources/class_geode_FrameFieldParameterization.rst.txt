@@ -7,6 +7,8 @@ class geode::FrameFieldParameterization
 .. toctree::
 	:hidden:
 
+	struct_geode_FrameFieldParameterization_ExtractedElements.rst
+
 
 
 
@@ -18,26 +20,16 @@ class geode::FrameFieldParameterization
 	class FrameFieldParameterization
 	{
 	public:
-		// typedefs
+		// structs
 	
-		typedef index_t :target:`mesh_element_attribute_type<doxid-classgeode_1_1_frame_field_parameterization_1a9922d1485c15b8ab0c8fee1bac13cd97>`;
-
-		// fields
-	
-		static constexpr auto :target:`mesh_element_attribute_name<doxid-classgeode_1_1_frame_field_parameterization_1a1ec466be2a00bf5e2effa7dc210c5f28>` =             "mesh_element_attribute_name";
+		struct :ref:`ExtractedElements<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements>`;
 
 		// construction
 	
-		:target:`FrameFieldParameterization<doxid-classgeode_1_1_frame_field_parameterization_1ae714c0016701c140630ace4c6705d7b9>`(const :ref:`FrameField<doxid-classgeode_1_1_frame_field>`& frame_field);
+		:target:`FrameFieldParameterization<doxid-classgeode_1_1_frame_field_parameterization_1a4b392061750cc46dd32534a1506c5892>`(const :ref:`FrameField<doxid-classgeode_1_1_frame_field>`& frame_field, double mesh_size);
 
 		// methods
 	
-		void :target:`compute_parameterization<doxid-classgeode_1_1_frame_field_parameterization_1a98a83b3e7f879d7d94a04f3538ab9b12>`(double mesh_size);
-		void :target:`delete_parameterization_attribute<doxid-classgeode_1_1_frame_field_parameterization_1abcf1fb6faf56b8b1f5f336cffb98f9d7>`();
-		void :target:`delete_singularity_attribute<doxid-classgeode_1_1_frame_field_parameterization_1a76917dd6d1dde2285cf512a3da510142>`();
-		void :target:`delete_attributes<doxid-classgeode_1_1_frame_field_parameterization_1aa93ff1bcbe7574d0fc3f6616c41640ef>`();
-		absl::flat_hash_map<uuid, std::unique_ptr<PointSet3D>> :target:`extract_points<doxid-classgeode_1_1_frame_field_parameterization_1a503df56ab886b5a62d6dc91ba8b7668e>`() const;
-		absl::flat_hash_map<uuid, std::unique_ptr<EdgedCurve3D>> :target:`extract_edges<doxid-classgeode_1_1_frame_field_parameterization_1a0f7bf5ceb8b84ee4e9dcdbf44ea334c4>`() const;
-		absl::flat_hash_map<uuid, std::unique_ptr<PolygonalSurface3D>> :target:`extract_quadrangles<doxid-classgeode_1_1_frame_field_parameterization_1af1a805423d8c22eda2ec7d20aa436b2b>`() const;
-		absl::flat_hash_map<uuid, std::unique_ptr<HybridSolid3D>> :target:`extract_hexahedra<doxid-classgeode_1_1_frame_field_parameterization_1a4771629eb036cf8858ea95204bb6cda1>`() const;
+		void :target:`compute_parameterization<doxid-classgeode_1_1_frame_field_parameterization_1a3be1866367df7e5ecdb8d3bbeb9b760c>`();
+		:ref:`ExtractedElements<doxid-structgeode_1_1_frame_field_parameterization_1_1_extracted_elements>` :target:`extract_elements<doxid-classgeode_1_1_frame_field_parameterization_1a70d1d65789cb6065f15b2f5b7b961867>`() const;
 	};
