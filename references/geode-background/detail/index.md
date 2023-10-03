@@ -55,7 +55,7 @@ void repair_background_solid_elements(const BackgroundSolid & background, Backgr
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_repairer.cpp#3389
+Defined at /github/workspace/src/geode/background/solid/background_solid_repairer.cpp#3438
 ```
 
 ### decimate_brep

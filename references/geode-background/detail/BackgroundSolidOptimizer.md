@@ -19,7 +19,7 @@ public void BackgroundSolidOptimizer(const BackgroundSolid & background, Backgro
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3440
+Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3441
 ```
 
 ### ~BackgroundSolidOptimizer
@@ -29,7 +29,7 @@ public void ~BackgroundSolidOptimizer()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3447
+Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3448
 ```
 
 ### optimize_background_elements
@@ -39,7 +39,7 @@ public void optimize_background_elements()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3451
+Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3452
 ```
 
 ### optimize_background_elements
@@ -49,7 +49,7 @@ public void optimize_background_elements(index_t first_element)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3456
+Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3457
 ```
 
 ### optimize_background_elements
@@ -59,7 +59,7 @@ public void optimize_background_elements(index_t first_element, Span immuable_ve
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3462
+Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3463
 ```
 
 

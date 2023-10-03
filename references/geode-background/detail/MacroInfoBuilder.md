@@ -1,12 +1,6 @@
 # class MacroInfoBuilder
 
 ```cpp
-Defined at /github/workspace/src/geode/background/common/macro_info_builder.cpp#131
-```
-
-# class MacroInfoBuilder
-
-```cpp
 Defined at ../include/geode/background/common/private/macro_info_builder.h#29
 ```
 
@@ -63,6 +57,12 @@ Defined at /github/workspace/src/geode/background/common/macro_info_builder.cpp#
 ```
 
 
+
+# class MacroInfoBuilder
+
+```cpp
+Defined at /github/workspace/src/geode/background/common/macro_info_builder.cpp#131
+```
 
 # class MacroInfoBuilder
 

@@ -27,7 +27,7 @@ public bool is_edge_forbidden(const EdgeVertices & edge, const VerticesModifier 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_repairer.cpp#3403
+Defined at /github/workspace/src/geode/background/solid/background_solid_repairer.cpp#3452
 ```
 
 ### is_facet_forbidden
@@ -43,7 +43,7 @@ public bool is_facet_forbidden(const FacetVertices & facet, const VerticesModifi
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_repairer.cpp#3426
+Defined at /github/workspace/src/geode/background/solid/background_solid_repairer.cpp#3475
 ```
 
 
