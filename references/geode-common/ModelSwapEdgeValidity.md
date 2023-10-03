@@ -1,7 +1,7 @@
 # struct ModelSwapEdgeValidity
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#156
+Defined at ../include/geode/common/modifier/model/information.h#155
 ```
 
 ## Members
@@ -27,7 +27,7 @@ public bool operator bool()
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#158
+Defined at ../include/geode/common/modifier/model/information.h#157
 ```
 
 
