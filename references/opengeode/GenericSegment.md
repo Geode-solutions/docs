@@ -1,31 +1,31 @@
 # class GenericSegment
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#190
-```
-
-# class GenericSegment
-
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#191
-```
-
-# class GenericSegment
-
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#188
-```
-
-# class GenericSegment
-
-```cpp
 Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#192
 ```
 
 # class GenericSegment
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#187
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#193
+```
+
+# class GenericSegment
+
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#190
+```
+
+# class GenericSegment
+
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#194
+```
+
+# class GenericSegment
+
+```cpp
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#189
 ```
 
 # class GenericSegment
@@ -39,7 +39,7 @@ Defined at ../../include/geode/geometry/basic_objects/segment.h#42
 ### GenericSegment
 
 ```cpp
-public void GenericSegment<PointType, dimension>(PointType p0, PointType p1)
+public void GenericSegment<PointType, dimension>(PointType point0, PointType point1)
 ```
 
 ```cpp
@@ -161,6 +161,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#107
 # class GenericSegment
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#189
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#191
 ```
 

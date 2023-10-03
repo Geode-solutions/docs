@@ -1,7 +1,7 @@
 # class OwnerSegment
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#194
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#196
 ```
 
 ```cpp
@@ -13,7 +13,7 @@ Inherits from GenericSegment<Point<2U>, 2U>
 # class OwnerSegment
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#195
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#197
 ```
 
 ```cpp
@@ -25,7 +25,7 @@ Inherits from GenericSegment<Point<3U>, 3U>
 # class OwnerSegment
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#193
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#195
 ```
 
 ```cpp
@@ -37,7 +37,7 @@ Inherits from GenericSegment<Point<1U>, 1U>
 # class OwnerSegment
 
 ```cpp
-Defined at ../../include/geode/geometry/basic_objects/segment.h#67
+Defined at ../../include/geode/geometry/basic_objects/segment.h#69
 ```
 
 ```cpp
@@ -51,7 +51,7 @@ Inherits from GenericSegment<Point<dimension>, dimension>
 ### OwnerSegment
 
 ```cpp
-public void OwnerSegment<>(Point<dimension> p0, Point<dimension> p1)
+public void OwnerSegment<>(Point<dimension> point0, Point<dimension> point1)
 ```
 
 ```cpp
@@ -95,7 +95,7 @@ public OwnerSegment<dimension> & operator=(OwnerSegment<dimension> && other)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#143
+Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#144
 ```
 
 

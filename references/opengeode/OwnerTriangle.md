@@ -1,7 +1,7 @@
 # class OwnerTriangle
 
 ```cpp
-Defined at ../../include/geode/geometry/basic_objects/triangle.h#83
+Defined at ../../include/geode/geometry/basic_objects/triangle.h#86
 ```
 
 ```cpp
@@ -15,11 +15,11 @@ Inherits from GenericTriangle<Point<dimension>, dimension>
 ### OwnerTriangle
 
 ```cpp
-public void OwnerTriangle<>(Point<dimension> p0, Point<dimension> p1, Point<dimension> p2)
+public void OwnerTriangle<>(Point<dimension> point0, Point<dimension> point1, Point<dimension> point2)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#264
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#265
 ```
 
 ### OwnerTriangle
@@ -29,7 +29,7 @@ public void OwnerTriangle<>(const OwnerTriangle<dimension> & other)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#270
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#272
 ```
 
 ### operator=
@@ -39,7 +39,7 @@ public OwnerTriangle<dimension> & operator=(const OwnerTriangle<dimension> & oth
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#276
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#278
 ```
 
 ### OwnerTriangle
@@ -49,7 +49,7 @@ public void OwnerTriangle<>(OwnerTriangle<dimension> && other)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#283
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#285
 ```
 
 ### operator=
@@ -59,7 +59,7 @@ public OwnerTriangle<dimension> & operator=(OwnerTriangle<dimension> && other)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#289
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#291
 ```
 
 

@@ -1,7 +1,7 @@
 # class GenericTetrahedron
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#159
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#160
 ```
 
 # class GenericTetrahedron
@@ -15,7 +15,7 @@ Defined at ../../include/geode/geometry/basic_objects/tetrahedron.h#45
 ### GenericTetrahedron
 
 ```cpp
-public void GenericTetrahedron<PointType>(PointType p0, PointType p1, PointType p2, PointType p3)
+public void GenericTetrahedron<PointType>(PointType point0, PointType point1, PointType point2, PointType point3)
 ```
 
 ```cpp
@@ -29,7 +29,7 @@ public void GenericTetrahedron<PointType>(const GenericTetrahedron<PointType> & 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#37
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#38
 ```
 
 ### operator=
@@ -39,7 +39,7 @@ public GenericTetrahedron<PointType> & operator=(const GenericTetrahedron<PointT
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#43
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#44
 ```
 
 ### GenericTetrahedron
@@ -49,7 +49,7 @@ public void GenericTetrahedron<PointType>(GenericTetrahedron<PointType> && other
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#50
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#51
 ```
 
 ### operator=
@@ -59,7 +59,7 @@ public GenericTetrahedron<PointType> & operator=(GenericTetrahedron<PointType> &
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#56
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#57
 ```
 
 ### barycenter
@@ -69,7 +69,7 @@ public Point3D barycenter()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#63
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#64
 ```
 
 ### set_point
@@ -79,7 +79,7 @@ public void set_point(index_t vertex, PointType point)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#72
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#73
 ```
 
 ### vertices
@@ -89,7 +89,7 @@ public const std::array<PointType, 4> & vertices()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#78
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#79
 ```
 
 ### bounding_box
@@ -99,7 +99,7 @@ public BoundingBox3D bounding_box()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#84
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#85
 ```
 
 
@@ -107,6 +107,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#84
 # class GenericTetrahedron
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#158
+Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#159
 ```
 

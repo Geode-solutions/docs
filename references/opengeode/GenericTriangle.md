@@ -11,7 +11,7 @@ Defined at ../../include/geode/geometry/basic_objects/triangle.h#45
 ### GenericTriangle
 
 ```cpp
-public void GenericTriangle<PointType, dimension>(PointType p0, PointType p1, PointType p2)
+public void GenericTriangle<PointType, dimension>(PointType point0, PointType point1, PointType point2)
 ```
 
 ```cpp
@@ -125,7 +125,7 @@ public void set_point(index_t vertex, PointType point)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#238
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#239
 ```
 
 ### vertices
@@ -135,7 +135,7 @@ public const std::array<PointType, 3> & vertices()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#245
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#246
 ```
 
 ### bounding_box
@@ -145,7 +145,7 @@ public BoundingBox<dimension> bounding_box()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#252
+Defined at /github/workspace/src/geode/geometry/basic_objects/triangle.cpp#253
 ```
 
 

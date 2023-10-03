@@ -1,7 +1,7 @@
 # class Line
 
 ```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#132
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#169
 ```
 
 ```cpp
@@ -13,7 +13,7 @@ Inherits from Component<3U>
 # class Line
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#48
+Defined at ../../include/geode/model/mixin/core/line.h#52
 ```
 
  Geometric component describing a Line. This component is described by a mesh.
@@ -35,7 +35,7 @@ public void Line<dimension>(const Line<dimension> & )
 ```
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#50
+Defined at ../../include/geode/model/mixin/core/line.h#54
 ```
 
 ### operator=
@@ -45,7 +45,7 @@ public Line<dimension> & operator=(const Line<dimension> & )
 ```
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#50
+Defined at ../../include/geode/model/mixin/core/line.h#54
 ```
 
 ### Line
@@ -55,7 +55,7 @@ public void Line<dimension>(Line<dimension> && other)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#66
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#72
 ```
 
 ### ~Line
@@ -65,7 +65,7 @@ public void ~Line<dimension>()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#54
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#61
 ```
 
 ### component_type_static
@@ -75,7 +75,7 @@ public NamedType component_type_static()
 ```
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#59
+Defined at ../../include/geode/model/mixin/core/line.h#65
 ```
 
 ### component_type
@@ -85,7 +85,7 @@ public NamedType component_type()
 ```
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#64
+Defined at ../../include/geode/model/mixin/core/line.h#70
 ```
 
 ### component_id
@@ -95,17 +95,17 @@ public ComponentID component_id()
 ```
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#69
+Defined at ../../include/geode/model/mixin/core/line.h#75
 ```
 
 ### mesh
 
 ```cpp
-public const EdgedCurve<dimension> & mesh()
+public const Mesh & mesh()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#79
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#96
 ```
 
 ### mesh_type
@@ -115,89 +115,89 @@ public const MeshImpl & mesh_type()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#91
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#114
 ```
 
 ### modifiable_mesh
 
 ```cpp
-public EdgedCurve<dimension> & modifiable_mesh(LinesKey )
+public Mesh & modifiable_mesh(LinesKey key)
 ```
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#78
-```
-
-### Line
-
-```cpp
-public void Line<dimension>(LinesKey )
-```
-
-```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#84
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#102
 ```
 
 ### Line
 
 ```cpp
-public void Line<dimension>(const MeshImpl & impl, LinesKey )
+public void Line<dimension>(LinesKey key)
 ```
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#86
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#79
+```
+
+### Line
+
+```cpp
+public void Line<dimension>(const MeshImpl & impl, LinesKey key)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#84
 ```
 
 ### set_mesh
 
 ```cpp
-public void set_mesh(std::unique_ptr<EdgedCurve<dimension> > mesh, LinesKey )
+public void set_mesh(std::unique_ptr<Mesh> mesh, LinesKey key)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#117
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#140
 ```
 
 ### set_mesh
 
 ```cpp
-public void set_mesh(std::unique_ptr<EdgedCurve<dimension> > mesh, LinesBuilderKey )
+public void set_mesh(std::unique_ptr<Mesh> mesh, LinesBuilderKey key)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#124
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#147
 ```
 
 ### set_line_name
 
 ```cpp
-public void set_line_name(string_view name, LinesBuilderKey )
+public void set_line_name(string_view name, LinesBuilderKey key)
 ```
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#94
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#154
 ```
 
 ### modifiable_mesh
 
 ```cpp
-public EdgedCurve<dimension> & modifiable_mesh(LinesBuilderKey )
+public Mesh & modifiable_mesh(LinesBuilderKey key)
 ```
 
 ```cpp
-Defined at ../../include/geode/model/mixin/core/line.h#99
-```
-
-### set_mesh
-
-```cpp
-public void set_mesh(int mesh, LinesKey )
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#161
 ```
 
 ### set_mesh
 
 ```cpp
-public void set_mesh(int mesh, LinesBuilderKey )
+public void set_mesh(int mesh, LinesKey key)
+```
+
+### set_mesh
+
+```cpp
+public void set_mesh(int mesh, LinesBuilderKey key)
 ```
 
 
@@ -205,7 +205,7 @@ public void set_mesh(int mesh, LinesBuilderKey )
 # class Line
 
 ```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#131
+Defined at /github/workspace/src/geode/model/mixin/core/line.cpp#168
 ```
 
 ```cpp
