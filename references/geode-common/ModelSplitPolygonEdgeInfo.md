@@ -1,7 +1,7 @@
 # struct ModelSplitPolygonEdgeInfo
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#28
+Defined at ../include/geode/common/modifier/model/information.h#33
 ```
 
 ## Members

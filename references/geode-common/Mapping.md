@@ -1,6 +1,70 @@
 # struct Mapping
 
 ```cpp
+Defined at ../include/geode/common/modifier/common/information.h#34
+```
+
+## Members
+
+```cpp
+public Type new_id
+
+```
+
+```cpp
+public Type old_id
+
+```
+
+
+
+## Functions
+
+### Mapping
+
+```cpp
+public void Mapping<Type>()
+```
+
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#36
+```
+
+### Mapping
+
+```cpp
+public void Mapping<Type>(Type new_id_in, Type old_id_in)
+```
+
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#37
+```
+
+### operator==
+
+```cpp
+public bool operator==(const Mapping<Type> & other)
+```
+
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#41
+```
+
+### operator<
+
+```cpp
+public bool operator<(const Mapping<Type> & other)
+```
+
+```cpp
+Defined at ../include/geode/common/modifier/common/information.h#45
+```
+
+
+
+# struct Mapping
+
+```cpp
 Defined at ../include/geode/common/modifier/common/information.h#57
 ```
 
@@ -68,70 +132,6 @@ public basic_string string()
 
 ```cpp
 Defined at ../include/geode/common/modifier/common/information.h#77
-```
-
-
-
-# struct Mapping
-
-```cpp
-Defined at ../include/geode/common/modifier/common/information.h#34
-```
-
-## Members
-
-```cpp
-public Type new_id
-
-```
-
-```cpp
-public Type old_id
-
-```
-
-
-
-## Functions
-
-### Mapping
-
-```cpp
-public void Mapping<Type>()
-```
-
-```cpp
-Defined at ../include/geode/common/modifier/common/information.h#36
-```
-
-### Mapping
-
-```cpp
-public void Mapping<Type>(Type new_id_in, Type old_id_in)
-```
-
-```cpp
-Defined at ../include/geode/common/modifier/common/information.h#37
-```
-
-### operator==
-
-```cpp
-public bool operator==(const Mapping<Type> & other)
-```
-
-```cpp
-Defined at ../include/geode/common/modifier/common/information.h#41
-```
-
-### operator<
-
-```cpp
-public bool operator<(const Mapping<Type> & other)
-```
-
-```cpp
-Defined at ../include/geode/common/modifier/common/information.h#45
 ```
 
 

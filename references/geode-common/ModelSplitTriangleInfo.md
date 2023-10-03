@@ -1,7 +1,7 @@
 # struct ModelSplitTriangleInfo
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#18
+Defined at ../include/geode/common/modifier/model/information.h#23
 ```
 
 ## Members
