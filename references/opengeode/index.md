@@ -1412,7 +1412,7 @@ std::unique_ptr<TetrahedralSolid3D> convert_grid_into_tetrahedral_solid(const Gr
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#254
+Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#256
 ```
 
 ### convert_solid_mesh_into_hybrid_solid
@@ -1422,7 +1422,7 @@ absl::optional<std::unique_ptr<HybridSolid3D> > convert_solid_mesh_into_hybrid_s
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#260
+Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#262
 ```
 
 ### merge_solid_meshes
@@ -1432,7 +1432,7 @@ std::unique_ptr<SolidMesh3D> merge_solid_meshes(absl::Span<const std::reference_
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#317
+Defined at /github/workspace/src/geode/mesh/helpers/convert_solid_mesh.cpp#319
 ```
 
 ### brep_coordinate_reference_systems
@@ -1506,7 +1506,7 @@ std::unique_ptr<TriangulatedSurface2D> convert_grid_into_triangulated_surface(co
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#232
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#235
 ```
 
 ### triangulate_surface_mesh
@@ -1516,7 +1516,7 @@ void triangulate_surface_mesh(SurfaceMesh<dimension> & surface)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#239
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#242
 ```
 
 ### triangulate_surface_mesh
@@ -1526,7 +1526,7 @@ void triangulate_surface_mesh(const SurfaceMesh<dimension> & surface, SurfaceMes
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#246
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#249
 ```
 
 ### convert_surface_mesh2d_into_3d
@@ -1536,7 +1536,7 @@ std::unique_ptr<SurfaceMesh3D> convert_surface_mesh2d_into_3d(const SurfaceMesh2
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#269
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#272
 ```
 
 ### convert_surface_mesh3d_into_2d
@@ -1546,7 +1546,7 @@ std::unique_ptr<SurfaceMesh2D> convert_surface_mesh3d_into_2d(const SurfaceMesh3
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#284
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#287
 ```
 
 ### convert_polygonal_surface2d_into_3d
@@ -1556,7 +1556,7 @@ std::unique_ptr<PolygonalSurface3D> convert_polygonal_surface2d_into_3d(const Po
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#296
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#299
 ```
 
 ### convert_polygonal_surface3d_into_2d
@@ -1566,7 +1566,7 @@ std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const Po
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#311
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#314
 ```
 
 ### convert_triangulated_surface2d_into_3d
@@ -1576,7 +1576,7 @@ std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(co
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#323
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#326
 ```
 
 ### convert_triangulated_surface3d_into_2d
@@ -1586,7 +1586,7 @@ std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(co
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#339
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#342
 ```
 
 ### merge_surface_meshes
@@ -1622,7 +1622,7 @@ int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMe
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#354
+Defined at /github/workspace/src/geode/mesh/helpers/convert_surface_mesh.cpp#357
 ```
 
 ### create_aabb_tree
