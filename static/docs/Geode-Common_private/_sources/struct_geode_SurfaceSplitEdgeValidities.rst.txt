@@ -1,0 +1,51 @@
+.. index:: pair: struct; geode::SurfaceSplitEdgeValidities
+.. _doxid-structgeode_1_1_surface_split_edge_validities:
+
+template struct geode::SurfaceSplitEdgeValidities
+=================================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <index_t dimension>
+	struct SurfaceSplitEdgeValidities
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolygonEdge, :ref:`SurfaceSplitEdgeValidity<doxid-structgeode_1_1_surface_split_edge_validity>`<dimension>>>> :ref:`MeshInvalidities<doxid-structgeode_1_1_surface_split_edge_validities_1af870a27e717e4b51393e5112960dd0e6>`;
+
+		// fields
+	
+		:ref:`MeshInvalidities<doxid-structgeode_1_1_surface_split_edge_validities_1af870a27e717e4b51393e5112960dd0e6>` :target:`mesh_invalidities<doxid-structgeode_1_1_surface_split_edge_validities_1aef962ad668eb9a4839211bfa8f35edc5>` {};
+	};
+.. _details-structgeode_1_1_surface_split_edge_validities:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Typedefs
+--------
+
+.. index:: pair: typedef; MeshInvalidities
+.. _doxid-structgeode_1_1_surface_split_edge_validities_1af870a27e717e4b51393e5112960dd0e6:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolygonEdge, :ref:`SurfaceSplitEdgeValidity<doxid-structgeode_1_1_surface_split_edge_validity>`<dimension>>>> MeshInvalidities
+
+Information on how the meshes become invalid or not.
+

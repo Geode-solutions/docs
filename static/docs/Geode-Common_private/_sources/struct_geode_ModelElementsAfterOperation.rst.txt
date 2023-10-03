@@ -24,5 +24,5 @@ template struct geode::ModelElementsAfterOperation
 
 		// fields
 	
-		:ref:`SurfaceTriangles<doxid-structgeode_1_1_model_elements_after_operation_1a1c8672e2d2eb037676a651da80e0fea8>` :target:`surface_triangles<doxid-structgeode_1_1_model_elements_after_operation_1a3dbf9dbeb06233010476cd77ecd3f349>`;
+		:ref:`SurfaceTriangles<doxid-structgeode_1_1_model_elements_after_operation_1a1c8672e2d2eb037676a651da80e0fea8>` :target:`surface_triangles<doxid-structgeode_1_1_model_elements_after_operation_1a3dbf9dbeb06233010476cd77ecd3f349>` {};
 	};

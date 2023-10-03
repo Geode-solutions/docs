@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::BRepMovePointValidity
+.. _doxid-structgeode_1_1_b_rep_move_point_validity:
+
+struct geode::BRepMovePointValidity
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BRepMovePointValidity: public ModelMovePointValidity3D
+	{
+		// fields
+	
+		:ref:`BlockMovePointValidities<doxid-structgeode_1_1_block_move_point_validities>` :target:`block_validities<doxid-structgeode_1_1_b_rep_move_point_validity_1a37cd21fe51043d646ac0dea6f4a3823e>` {};
+	};

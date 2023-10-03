@@ -1,0 +1,34 @@
+.. index:: pair: struct; geode::SurfaceTopologicalValidity
+.. _doxid-structgeode_1_1_surface_topological_validity:
+
+struct geode::SurfaceTopologicalValidity
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier_simulation.h>
+	
+	struct SurfaceTopologicalValidity
+	{
+		// fields
+	
+		bool :target:`is_topologically_valid<doxid-structgeode_1_1_surface_topological_validity_1a3ddcf244085c0372441fccfcbae81a9b>` { true };
+		bool :target:`new_vertex_is_manifold<doxid-structgeode_1_1_surface_topological_validity_1a7d153951ad27bb236598804afc4ae06c>` { true };
+		std::vector<index_t> :target:`vertices_creating_non_manifold_edges<doxid-structgeode_1_1_surface_topological_validity_1a6c8ea6ac2ee4101f827617e41600d9f3>`;
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_surface_topological_validity_1afd2938b4734a76fdcd19141b1f7d35a9>` () const;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	struct :ref:`SurfaceCollapseEdgeValidity<doxid-structgeode_1_1_surface_collapse_edge_validity>`;

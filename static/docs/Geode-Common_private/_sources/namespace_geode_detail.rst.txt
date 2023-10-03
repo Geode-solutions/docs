@@ -58,6 +58,32 @@ namespace geode::detail
 		);
 
 	template <index_t dimension>
+	bool :target:`is_modified_triangle_valid<doxid-namespacegeode_1_1detail_1a91f6c493ddd91c88cf504815f9f4484f>`(
+		const TriangulatedSurface<dimension>& mesh,
+		const Triangle<dimension>& modified_triangle,
+		index_t old_triangle_id
+		);
+
+	template <index_t dimension>
+	bool :target:`is_modified_triangle_valid<doxid-namespacegeode_1_1detail_1ab03ae7663849f5ec7c783697a84a719e>`(
+		const TriangulatedSurface<dimension>& mesh,
+		const Triangle<dimension>& modified_triangle,
+		const PolygonEdge& old_edge
+		);
+
+	bool geode_common_modifier_surface_api :target:`is_modified_triangle_flipped<doxid-namespacegeode_1_1detail_1aa216f185de5aa0a4569be2e4b9a92c9a>`(
+		const TriangulatedSurface3D& mesh,
+		const Triangle3D& modified_triangle,
+		index_t old_triangle_id
+		);
+
+	bool geode_common_modifier_surface_api :target:`is_modified_triangle_flipped<doxid-namespacegeode_1_1detail_1a8e19ad909692bcd1ae37415ba5f6e5b6>`(
+		const TriangulatedSurface3D& mesh,
+		const Triangle3D& modified_triangle,
+		const PolygonEdge& old_edge
+		);
+
+	template <index_t dimension>
 	absl::optional<local_index_t> :target:`snapping_detection<doxid-namespacegeode_1_1detail_1a7f86008e4f61b3099860fdea17fd0727>`(
 		const SurfaceMesh<dimension>& surface,
 		index_t polygon,

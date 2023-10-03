@@ -1,0 +1,47 @@
+.. index:: pair: struct; geode::SolidSwapEdgeValidity
+.. _doxid-structgeode_1_1_solid_swap_edge_validity:
+
+struct geode::SolidSwapEdgeValidity
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier_simulation.h>
+	
+	struct SolidSwapEdgeValidity: public :ref:`geode::SolidGeometricalValidity<doxid-structgeode_1_1_solid_geometrical_validity>`
+	{
+		// fields
+	
+		bool :target:`is_one_ring_apex<doxid-structgeode_1_1_solid_swap_edge_validity_1ab2b572329bd9168e421e4077236445a8>` { true };
+		bool :target:`is_edge_on_border<doxid-structgeode_1_1_solid_swap_edge_validity_1ad3b97d38224b41bc358f38a075533587>` { false };
+		bool :target:`is_apex_on_border<doxid-structgeode_1_1_solid_swap_edge_validity_1a385e7413bdfd148e64e39b70f79d5db4>` { false };
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_solid_swap_edge_validity_1a2b196503d4a4fc81ab154053c960d161>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		bool :ref:`is_geometrically_valid<doxid-structgeode_1_1_solid_geometrical_validity_1a563d8cb1b8c6da730540faf218280cca>` { true };
+		std::vector<Tetrahedron> :ref:`invalid_new_tetrahedra<doxid-structgeode_1_1_solid_geometrical_validity_1a8e39c6329e92f5977463544af1888c32>`;
+		std::vector<index_t> :ref:`invalid_tetrahedron_ids<doxid-structgeode_1_1_solid_geometrical_validity_1ab879c396064c5af9064674274f165371>`;
+
+		// methods
+	
+		:ref:`operator bool<doxid-structgeode_1_1_solid_geometrical_validity_1a9504c69830f14c6a1b76aa885a5a34cd>` () const;
+

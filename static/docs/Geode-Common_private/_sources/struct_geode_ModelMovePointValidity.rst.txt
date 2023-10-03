@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::ModelMovePointValidity
+.. _doxid-structgeode_1_1_model_move_point_validity:
+
+template struct geode::ModelMovePointValidity
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <index_t dimension>
+	struct ModelMovePointValidity
+	{
+		// fields
+	
+		:ref:`SurfaceMovePointValidities<doxid-structgeode_1_1_surface_move_point_validities>`<dimension> :target:`surface_validities<doxid-structgeode_1_1_model_move_point_validity_1abc23387eb1b4c28822231a1c6cb40f9b>` {};
+	};

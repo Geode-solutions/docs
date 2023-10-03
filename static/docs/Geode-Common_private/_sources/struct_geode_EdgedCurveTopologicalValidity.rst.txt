@@ -1,0 +1,34 @@
+.. index:: pair: struct; geode::EdgedCurveTopologicalValidity
+.. _doxid-structgeode_1_1_edged_curve_topological_validity:
+
+struct geode::EdgedCurveTopologicalValidity
+===========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <edged_curve_modifier_simulation.h>
+	
+	struct EdgedCurveTopologicalValidity
+	{
+		// fields
+	
+		bool :target:`is_topologically_valid<doxid-structgeode_1_1_edged_curve_topological_validity_1a22586a324636c440ecee27ca94663972>` { true };
+		bool :target:`non_manifold_edges<doxid-structgeode_1_1_edged_curve_topological_validity_1a2ba10ecfec4e577a93d304b460b1b9d2>` { false };
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_edged_curve_topological_validity_1ab904303f58fe2fd72fbde55d6c525a86>` () const;
+	};
+
+	// direct descendants
+
+	struct :ref:`EdgedCurveCollapseEdgeValidity<doxid-structgeode_1_1_edged_curve_collapse_edge_validity>`;
+	struct :ref:`EdgedCurveMovePointValidity<doxid-structgeode_1_1_edged_curve_move_point_validity>`;
+	struct :ref:`EdgedCurveSplitEdgeValidity<doxid-structgeode_1_1_edged_curve_split_edge_validity>`;

@@ -1,0 +1,20 @@
+.. index:: pair: struct; geode::SectionSplitEdgeValidity
+.. _doxid-structgeode_1_1_section_split_edge_validity:
+
+struct geode::SectionSplitEdgeValidity
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <section_geometric_modifier_simulation.h>
+	
+	struct SectionSplitEdgeValidity: public ModelSplitEdgeValidity2D
+	{
+	};

@@ -1,0 +1,64 @@
+.. index:: pair: struct; geode::BlockSwapEdgeValidities
+.. _doxid-structgeode_1_1_block_swap_edge_validities:
+
+struct geode::BlockSwapEdgeValidities
+=====================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BlockSwapEdgeValidities
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolyhedronFacetEdge, :ref:`SolidSwapEdgeValidity<doxid-structgeode_1_1_solid_swap_edge_validity>`>>> :ref:`MeshInvalidities<doxid-structgeode_1_1_block_swap_edge_validities_1aed795795f1f80a20d8bc1816c184193a>`;
+
+		// fields
+	
+		:ref:`MeshInvalidities<doxid-structgeode_1_1_block_swap_edge_validities_1aed795795f1f80a20d8bc1816c184193a>` :target:`mesh_invalidities<doxid-structgeode_1_1_block_swap_edge_validities_1a397af4dd139964fce7d078b1b5bae894>` {};
+		std::vector<uuid> :ref:`invalid_blocks<doxid-structgeode_1_1_block_swap_edge_validities_1a62478568aded933de6bc9d6327488354>` {};
+	};
+.. _details-structgeode_1_1_block_swap_edge_validities:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Typedefs
+--------
+
+.. index:: pair: typedef; MeshInvalidities
+.. _doxid-structgeode_1_1_block_swap_edge_validities_1aed795795f1f80a20d8bc1816c184193a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolyhedronFacetEdge, :ref:`SolidSwapEdgeValidity<doxid-structgeode_1_1_solid_swap_edge_validity>`>>> MeshInvalidities
+
+Information on how the meshes become invalid or not.
+
+Fields
+------
+
+.. index:: pair: variable; invalid_blocks
+.. _doxid-structgeode_1_1_block_swap_edge_validities_1a62478568aded933de6bc9d6327488354:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<uuid> invalid_blocks {}
+
+List of surfaces becoming invalid due to topology.
+

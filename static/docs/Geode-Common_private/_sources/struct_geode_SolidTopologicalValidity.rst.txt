@@ -1,0 +1,33 @@
+.. index:: pair: struct; geode::SolidTopologicalValidity
+.. _doxid-structgeode_1_1_solid_topological_validity:
+
+struct geode::SolidTopologicalValidity
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier_simulation.h>
+	
+	struct SolidTopologicalValidity
+	{
+		// fields
+	
+		bool :target:`is_topologically_valid<doxid-structgeode_1_1_solid_topological_validity_1aa797779f0407f89fc58f5a70bfde7dab>` { true };
+		bool :target:`new_vertex_is_manifold<doxid-structgeode_1_1_solid_topological_validity_1a1f0caf301177e79c45fb936cecf5d9da>` { true };
+		bool :target:`all_edges_are_manifold<doxid-structgeode_1_1_solid_topological_validity_1a683e4c47cb5ad8c7640ae02d04fac5fb>` { true };
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_solid_topological_validity_1a335502534f2cb4fc732a8d5b8cded7c8>` () const;
+	};
+
+	// direct descendants
+
+	struct :ref:`SolidCollapseEdgeValidity<doxid-structgeode_1_1_solid_collapse_edge_validity>`;

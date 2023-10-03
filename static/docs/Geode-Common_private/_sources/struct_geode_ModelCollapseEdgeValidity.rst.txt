@@ -18,11 +18,12 @@ template struct geode::ModelCollapseEdgeValidity
 	template <index_t dimension>
 	struct ModelCollapseEdgeValidity
 	{
-		// typedefs
-	
-		typedef absl::flat_hash_map<uuid, absl::FixedArray<:ref:`SurfaceCollapseEdgeValidity<doxid-structgeode_1_1_surface_collapse_edge_validity>`<dimension>>> :target:`SurfaceCollapseEdgeValidities<doxid-structgeode_1_1_model_collapse_edge_validity_1a18b1356bad6e7aeff94bd2b8c7943ed6>`;
-
 		// fields
 	
-		:ref:`SurfaceCollapseEdgeValidities<doxid-structgeode_1_1_model_collapse_edge_validity_1a18b1356bad6e7aeff94bd2b8c7943ed6>` :target:`surface_validities<doxid-structgeode_1_1_model_collapse_edge_validity_1afe79b927bbc83130ae14f4d419937255>`;
+		:ref:`LineCollapseEdgeValidities<doxid-structgeode_1_1_line_collapse_edge_validities>` :target:`line_validities<doxid-structgeode_1_1_model_collapse_edge_validity_1aa7b1b8cba4dcd1a8fcaedf77d7622fd3>` {};
+		:ref:`SurfaceCollapseEdgeValidities<doxid-structgeode_1_1_surface_collapse_edge_validities>`<dimension> :target:`surface_validities<doxid-structgeode_1_1_model_collapse_edge_validity_1ac1f0b1035b1a20587f4df5efb2339269>` {};
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_model_collapse_edge_validity_1a21280498d927fea256be55876728d0b3>` () const;
 	};

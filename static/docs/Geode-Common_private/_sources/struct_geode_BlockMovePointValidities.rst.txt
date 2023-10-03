@@ -1,0 +1,50 @@
+.. index:: pair: struct; geode::BlockMovePointValidities
+.. _doxid-structgeode_1_1_block_move_point_validities:
+
+struct geode::BlockMovePointValidities
+======================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BlockMovePointValidities
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<index_t, :ref:`SolidMovePointValidity<doxid-structgeode_1_1_solid_move_point_validity>`>>> :ref:`MeshInvalidities<doxid-structgeode_1_1_block_move_point_validities_1aff110762f1e5eff839d58b1c9472f7c3>`;
+
+		// fields
+	
+		:ref:`MeshInvalidities<doxid-structgeode_1_1_block_move_point_validities_1aff110762f1e5eff839d58b1c9472f7c3>` :target:`mesh_invalidities<doxid-structgeode_1_1_block_move_point_validities_1aab090084cfae9197552f4d021c24d5e6>` {};
+	};
+.. _details-structgeode_1_1_block_move_point_validities:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Typedefs
+--------
+
+.. index:: pair: typedef; MeshInvalidities
+.. _doxid-structgeode_1_1_block_move_point_validities_1aff110762f1e5eff839d58b1c9472f7c3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<index_t, :ref:`SolidMovePointValidity<doxid-structgeode_1_1_solid_move_point_validity>`>>> MeshInvalidities
+
+Information on how the meshes become invalid or not.
+

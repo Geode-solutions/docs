@@ -1,0 +1,65 @@
+.. index:: pair: struct; geode::SurfaceSwapEdgeValidities
+.. _doxid-structgeode_1_1_surface_swap_edge_validities:
+
+template struct geode::SurfaceSwapEdgeValidities
+================================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <index_t dimension>
+	struct SurfaceSwapEdgeValidities
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolygonEdge, :ref:`SurfaceSwapEdgeValidity<doxid-structgeode_1_1_surface_swap_edge_validity>`<dimension>>>> :ref:`MeshInvalidities<doxid-structgeode_1_1_surface_swap_edge_validities_1a6eee73fb2e8e52b65dec0dcaa8df7ea3>`;
+
+		// fields
+	
+		:ref:`MeshInvalidities<doxid-structgeode_1_1_surface_swap_edge_validities_1a6eee73fb2e8e52b65dec0dcaa8df7ea3>` :target:`mesh_invalidities<doxid-structgeode_1_1_surface_swap_edge_validities_1ab65b5fb74fa99bd7ea3f542bdeda5283>` {};
+		std::vector<uuid> :ref:`invalid_surfaces<doxid-structgeode_1_1_surface_swap_edge_validities_1a6b37ca682716b55630c7c8f1dfa006d4>` {};
+	};
+.. _details-structgeode_1_1_surface_swap_edge_validities:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Typedefs
+--------
+
+.. index:: pair: typedef; MeshInvalidities
+.. _doxid-structgeode_1_1_surface_swap_edge_validities_1a6eee73fb2e8e52b65dec0dcaa8df7ea3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolygonEdge, :ref:`SurfaceSwapEdgeValidity<doxid-structgeode_1_1_surface_swap_edge_validity>`<dimension>>>> MeshInvalidities
+
+Information on how the meshes become invalid or not.
+
+Fields
+------
+
+.. index:: pair: variable; invalid_surfaces
+.. _doxid-structgeode_1_1_surface_swap_edge_validities_1a6b37ca682716b55630c7c8f1dfa006d4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<uuid> invalid_surfaces {}
+
+List of surfaces becoming invalid due to topology.
+

@@ -1,0 +1,45 @@
+.. index:: pair: struct; geode::SolidSwapFacetValidity
+.. _doxid-structgeode_1_1_solid_swap_facet_validity:
+
+struct geode::SolidSwapFacetValidity
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier_simulation.h>
+	
+	struct SolidSwapFacetValidity: public :ref:`geode::SolidGeometricalValidity<doxid-structgeode_1_1_solid_geometrical_validity>`
+	{
+		// fields
+	
+		bool :target:`is_on_border<doxid-structgeode_1_1_solid_swap_facet_validity_1a0c89222ee202b60ef91e7c1f909ac845>` { false };
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_solid_swap_facet_validity_1af22a729290c96141ce68e667baae28d6>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		bool :ref:`is_geometrically_valid<doxid-structgeode_1_1_solid_geometrical_validity_1a563d8cb1b8c6da730540faf218280cca>` { true };
+		std::vector<Tetrahedron> :ref:`invalid_new_tetrahedra<doxid-structgeode_1_1_solid_geometrical_validity_1a8e39c6329e92f5977463544af1888c32>`;
+		std::vector<index_t> :ref:`invalid_tetrahedron_ids<doxid-structgeode_1_1_solid_geometrical_validity_1ab879c396064c5af9064674274f165371>`;
+
+		// methods
+	
+		:ref:`operator bool<doxid-structgeode_1_1_solid_geometrical_validity_1a9504c69830f14c6a1b76aa885a5a34cd>` () const;
+

@@ -17,11 +17,7 @@ struct geode::BRepCollapseEdgeValidity
 	
 	struct BRepCollapseEdgeValidity: public ModelCollapseEdgeValidity3D
 	{
-		// typedefs
-	
-		typedef absl::flat_hash_map<uuid, absl::FixedArray<:ref:`SolidCollapseEdgeValidity<doxid-structgeode_1_1_solid_collapse_edge_validity>`>> :target:`SolidCollapseEdgeValidities<doxid-structgeode_1_1_b_rep_collapse_edge_validity_1a2abfc833a092304c6b2fb2fe74bae6b3>`;
-
 		// fields
 	
-		:ref:`SolidCollapseEdgeValidities<doxid-structgeode_1_1_b_rep_collapse_edge_validity_1a2abfc833a092304c6b2fb2fe74bae6b3>` :target:`solid_validities<doxid-structgeode_1_1_b_rep_collapse_edge_validity_1a34adde30cf0b597b7496af687330a4b6>`;
+		:ref:`BlockCollapseEdgeValidities<doxid-structgeode_1_1_block_collapse_edge_validities>` :target:`block_validities<doxid-structgeode_1_1_b_rep_collapse_edge_validity_1adaca2a45af767339071987384f9c066d>` {};
 	};

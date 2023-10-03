@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="struct geode::SolidCutPatchInfo" href="struct_geode_SolidCutPatchInfo.html" />
-    <link rel="prev" title="struct geode::SectionSimulationResult" href="struct_geode_SectionSimulationResult.html" />
+    <link rel="prev" title="struct geode::SectionSwapEdgeValidity" href="struct_geode_SectionSwapEdgeValidity.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -39,21 +39,31 @@
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;tetrahedral_solid_modifier_simulation.h&gt;</span>
 
-<span class="k">struct</span> <span class="n">SolidCollapseEdgeValidity</span>
+<span class="k">struct</span> <span class="nl">SolidCollapseEdgeValidity</span><span class="p">:</span>
+    <span class="k">public</span> <a class="reference internal" href="struct_geode_SolidGeometricalValidity.html#doxid-structgeode-1-1-solid-geometrical-validity"><span class="std std-ref">geode::SolidGeometricalValidity</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="struct_geode_SolidTopologicalValidity.html#doxid-structgeode-1-1-solid-topological-validity"><span class="std std-ref">geode::SolidTopologicalValidity</span></a><span></span>
 <span class="p">{</span>
-    <span class="c1">// fields</span>
-
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-collapse-edge-validity-1af7bbb49ab308cb0c7ea4760e9d9d2e56"><span></span><span class="n">is_geometrically_valid</span></span><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-collapse-edge-validity-1a9ea3c82eb0448a0a4520767b278c61da"><span></span><span class="n">is_topologically_valid</span></span><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-collapse-edge-validity-1a837ae37e36bc0b8dc727e535c2756bca"><span></span><span class="n">invalid_new_tetrahedra</span></span><span></span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-collapse-edge-validity-1a668f8bd4e263e1e566fbac76f783abd7"><span></span><span class="n">invalid_tetrahedron_ids</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-collapse-edge-validity-1a2d328af3e1f999407ffbbcadd2069c68"><span></span><span class="n">new_vertex_is_manifold</span></span><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-collapse-edge-validity-1a4867925e9e4f2c0d5c1e39e2be239909"><span></span><span class="n">all_edges_are_manifold</span></span><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
-
     <span class="c1">// methods</span>
 
     <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-collapse-edge-validity-1aea987ebbe754fee6063609537273aa04"><span></span><span class="k">operator</span> <span class="kt">bool</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
+<section id="inherited-members">
+<h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// fields</span>
+
+    <span class="kt">bool</span> <a class="reference internal" href="struct_geode_SolidGeometricalValidity.html#doxid-structgeode-1-1-solid-geometrical-validity-1a563d8cb1b8c6da730540faf218280cca"><span class="std std-ref">is_geometrically_valid</span></a><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Tetrahedron</span><span class="o">&gt;</span> <a class="reference internal" href="struct_geode_SolidGeometricalValidity.html#doxid-structgeode-1-1-solid-geometrical-validity-1a8e39c6329e92f5977463544af1888c32"><span class="std std-ref">invalid_new_tetrahedra</span></a><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="struct_geode_SolidGeometricalValidity.html#doxid-structgeode-1-1-solid-geometrical-validity-1ab879c396064c5af9064674274f165371"><span class="std std-ref">invalid_tetrahedron_ids</span></a><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="struct_geode_SolidTopologicalValidity.html#doxid-structgeode-1-1-solid-topological-validity-1aa797779f0407f89fc58f5a70bfde7dab"><span class="std std-ref">is_topologically_valid</span></a><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
+    <span class="kt">bool</span> <a class="reference internal" href="struct_geode_SolidTopologicalValidity.html#doxid-structgeode-1-1-solid-topological-validity-1a1f0caf301177e79c45fb936cecf5d9da"><span class="std std-ref">new_vertex_is_manifold</span></a><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
+    <span class="kt">bool</span> <a class="reference internal" href="struct_geode_SolidTopologicalValidity.html#doxid-structgeode-1-1-solid-topological-validity-1a683e4c47cb5ad8c7640ae02d04fac5fb"><span class="std std-ref">all_edges_are_manifold</span></a><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
+
+    <span class="c1">// methods</span>
+
+    <a class="reference internal" href="struct_geode_SolidGeometricalValidity.html#doxid-structgeode-1-1-solid-geometrical-validity-1a9504c69830f14c6a1b76aa885a5a34cd"><span class="std std-ref">operator bool</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_SolidTopologicalValidity.html#doxid-structgeode-1-1-solid-topological-validity-1a335502534f2cb4fc732a8d5b8cded7c8"><span class="std std-ref">operator bool</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+</section>
 </section>
 
 

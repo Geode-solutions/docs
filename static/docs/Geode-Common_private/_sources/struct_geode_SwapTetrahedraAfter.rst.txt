@@ -1,0 +1,51 @@
+.. index:: pair: struct; geode::SwapTetrahedraAfter
+.. _doxid-structgeode_1_1_swap_tetrahedra_after:
+
+struct geode::SwapTetrahedraAfter
+=================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier_simulation.h>
+	
+	struct SwapTetrahedraAfter
+	{
+		// fields
+	
+		absl::FixedArray<Tetrahedron> :ref:`new_tetrahedra<doxid-structgeode_1_1_swap_tetrahedra_after_1ad0122d9b05e2f0ff81f8c897c2c6b1f3>`;
+		absl::FixedArray<index_t> :target:`old_tetrahedra_ids<doxid-structgeode_1_1_swap_tetrahedra_after_1a7f92e45721cb310e3dcfef9ada218fd6>`;
+
+		// construction
+	
+		:target:`SwapTetrahedraAfter<doxid-structgeode_1_1_swap_tetrahedra_after_1a8eec6214b5a7d8eb18b8efca47e033ef>`(size_t nb_new_tetrahedra, size_t nb_old_tetrahedra);
+	};
+.. _details-structgeode_1_1_swap_tetrahedra_after:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; new_tetrahedra
+.. _doxid-structgeode_1_1_swap_tetrahedra_after_1ad0122d9b05e2f0ff81f8c897c2c6b1f3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::FixedArray<Tetrahedron> new_tetrahedra
+
+These arrays may have different size.
+

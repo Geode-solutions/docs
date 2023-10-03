@@ -1,0 +1,28 @@
+.. index:: pair: struct; geode::ModelSplitEdgeValidity
+.. _doxid-structgeode_1_1_model_split_edge_validity:
+
+template struct geode::ModelSplitEdgeValidity
+=============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <index_t dimension>
+	struct ModelSplitEdgeValidity
+	{
+		// fields
+	
+		:ref:`SurfaceSplitEdgeValidities<doxid-structgeode_1_1_surface_split_edge_validities>`<dimension> :target:`surface_validities<doxid-structgeode_1_1_model_split_edge_validity_1a225f0b325e7af8b75a7ee11040732a7c>` {};
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_model_split_edge_validity_1afe9773c932a63e41a4fcfbd2135e08a4>` () const;
+	};

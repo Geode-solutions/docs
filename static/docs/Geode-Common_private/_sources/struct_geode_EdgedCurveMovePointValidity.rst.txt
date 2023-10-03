@@ -1,0 +1,40 @@
+.. index:: pair: struct; geode::EdgedCurveMovePointValidity
+.. _doxid-structgeode_1_1_edged_curve_move_point_validity:
+
+struct geode::EdgedCurveMovePointValidity
+=========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <edged_curve_modifier_simulation.h>
+	
+	struct EdgedCurveMovePointValidity: public :ref:`geode::EdgedCurveTopologicalValidity<doxid-structgeode_1_1_edged_curve_topological_validity>`
+	{
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_edged_curve_move_point_validity_1af915eac2727b4408ac068d4ffef26576>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		bool :ref:`is_topologically_valid<doxid-structgeode_1_1_edged_curve_topological_validity_1a22586a324636c440ecee27ca94663972>` { true };
+		bool :ref:`non_manifold_edges<doxid-structgeode_1_1_edged_curve_topological_validity_1a2ba10ecfec4e577a93d304b460b1b9d2>` { false };
+
+		// methods
+	
+		:ref:`operator bool<doxid-structgeode_1_1_edged_curve_topological_validity_1ab904303f58fe2fd72fbde55d6c525a86>` () const;
+
