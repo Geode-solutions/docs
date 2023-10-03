@@ -77,6 +77,9 @@
 void save_structural_model(const StructuralModel & structural_model, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_output.cpp#35
+```
 
  API function for saving a StructuralModel. The adequate saver is called depending on the given filename extension.
 
@@ -90,6 +93,9 @@ void save_structural_model(const StructuralModel & structural_model, string_view
 void save_cross_section(const CrossSection & cross_section, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_output.cpp#35
+```
 
  API function for saving a CrossSection. The adequate saver is called depending on the given filename extension.
 
@@ -103,6 +109,9 @@ void save_cross_section(const CrossSection & cross_section, string_view filename
 void save_implicit_structural_model(const ImplicitStructuralModel & implicit_model, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_output.cpp#39
+```
 
  API function for saving an ImplicitStructuralModel. The adequate saver is called depending on the given filename extension.
 
@@ -116,6 +125,9 @@ void save_implicit_structural_model(const ImplicitStructuralModel & implicit_mod
 void save_horizons_stack(const HorizonsStack<dimension> & horizons_stack, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_output.cpp#36
+```
 
  API function for saving a HorizonsStack. The adequate saver is called depending on the given filename extension.
 
@@ -129,6 +141,9 @@ void save_horizons_stack(const HorizonsStack<dimension> & horizons_stack, string
 StructuralModel load_structural_model(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_input.cpp#32
+```
 
  API function for loading a StructuralModel. The adequate loader is called depending on the filename extension.
 
@@ -146,6 +161,9 @@ MissingFiles check_structural_model_missing_files(string_view filename)
 MissingFiles check_strucutral_model_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_input.cpp#71
+```
 
 ### load_implicit_cross_section
 
@@ -153,6 +171,9 @@ MissingFiles check_strucutral_model_missing_files(string_view filename)
 ImplicitCrossSection load_implicit_cross_section(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_input.cpp#32
+```
 
  API function for loading an ImplicitCrossSection. The adequate loader is called depending on the filename extension.
 
@@ -164,6 +185,9 @@ ImplicitCrossSection load_implicit_cross_section(string_view filename)
 MissingFiles check_implicit_cross_section_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_input.cpp#70
+```
 
 ### load_cross_section
 
@@ -171,6 +195,9 @@ MissingFiles check_implicit_cross_section_missing_files(string_view filename)
 CrossSection load_cross_section(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_input.cpp#33
+```
 
  API function for loading a CrossSection. The adequate loader is called depending on the filename extension.
 
@@ -182,6 +209,9 @@ CrossSection load_cross_section(string_view filename)
 MissingFiles check_cross_section_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_input.cpp#69
+```
 
 ### load_horizons_stack
 
@@ -189,6 +219,9 @@ MissingFiles check_cross_section_missing_files(string_view filename)
 HorizonsStack<dimension> load_horizons_stack(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_input.cpp#34
+```
 
  API function for loading a HorizonsStack. The adequate loader is called depending on the filename extension.
 
@@ -202,6 +235,9 @@ HorizonsStack<dimension> load_horizons_stack(string_view filename)
 typename HorizonsStackInput<dimension>::MissingFiles check_horizon_stack_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_input.cpp#59
+```
 
 ### load_implicit_structural_model
 
@@ -209,6 +245,9 @@ typename HorizonsStackInput<dimension>::MissingFiles check_horizon_stack_missing
 ImplicitStructuralModel load_implicit_structural_model(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_input.cpp#34
+```
 
  API function for loading an ImplicitStructuralModel. The adequate loader is called depending on the filename extension.
 
@@ -220,6 +259,9 @@ ImplicitStructuralModel load_implicit_structural_model(string_view filename)
 MissingFiles check_implicit_structural_model_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_input.cpp#74
+```
 
 ### register_explicit_serialize_pcontext
 
@@ -227,6 +269,9 @@ MissingFiles check_implicit_structural_model_missing_files(string_view filename)
 void register_explicit_serialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/bitsery_archive.cpp#97
+```
 
  Register all the information needed by Bitsery to serialize the objects in the explicit library.
 
@@ -240,6 +285,9 @@ void register_explicit_serialize_pcontext(PContext & context)
 void register_explicit_deserialize_pcontext(PContext & context)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/bitsery_archive.cpp#102
+```
 
  Register all the information needed by Bitsery to deserialize the objects in the explicit library.
 
@@ -253,6 +301,9 @@ void register_explicit_deserialize_pcontext(PContext & context)
 void save_implicit_cross_section(const ImplicitCrossSection & implicit_model, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_output.cpp#39
+```
 
  API function for saving an ImplicitCrossSection. The adequate saver is called depending on the given filename extension.
 
@@ -266,6 +317,9 @@ void save_implicit_cross_section(const ImplicitCrossSection & implicit_model, st
 StratigraphicSection load_stratigraphic_section(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_input.cpp#32
+```
 
  API function for loading a StratigraphicSection. The adequate loader is called depending on the filename extension.
 
@@ -277,6 +331,9 @@ StratigraphicSection load_stratigraphic_section(string_view filename)
 MissingFiles check_stratigraphic_section_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_input.cpp#71
+```
 
 ### assign_edged_curve_geographic_coordinate_system_info
 
@@ -284,6 +341,9 @@ MissingFiles check_stratigraphic_section_missing_files(string_view filename)
 void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#151
+```
 
 ### assign_point_set_geographic_coordinate_system_info
 
@@ -291,6 +351,9 @@ void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimen
 void assign_point_set_geographic_coordinate_system_info(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#162
+```
 
 ### assign_solid_mesh_geographic_coordinate_system_info
 
@@ -298,6 +361,9 @@ void assign_point_set_geographic_coordinate_system_info(const PointSet<dimension
 void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#173
+```
 
 ### assign_surface_mesh_geographic_coordinate_system_info
 
@@ -305,6 +371,9 @@ void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimensi
 void assign_surface_mesh_geographic_coordinate_system_info(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#184
+```
 
 ### assign_brep_geographic_coordinate_system_info
 
@@ -312,6 +381,9 @@ void assign_surface_mesh_geographic_coordinate_system_info(const SurfaceMesh<dim
 void assign_brep_geographic_coordinate_system_info(const BRep & brep, BRepBuilder & builder, string_view crs_name, const GeographicCoordinateSystem3D::Info & info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#194
+```
 
 ### assign_section_geographic_coordinate_system_info
 
@@ -319,6 +391,9 @@ void assign_brep_geographic_coordinate_system_info(const BRep & brep, BRepBuilde
 void assign_section_geographic_coordinate_system_info(const Section & section, SectionBuilder & builder, string_view crs_name, const GeographicCoordinateSystem2D::Info & info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#217
+```
 
 ### convert_edged_curve_coordinate_reference_system
 
@@ -326,6 +401,9 @@ void assign_section_geographic_coordinate_system_info(const Section & section, S
 void convert_edged_curve_coordinate_reference_system(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#240
+```
 
 ### convert_point_set_coordinate_reference_system
 
@@ -333,6 +411,9 @@ void convert_edged_curve_coordinate_reference_system(const EdgedCurve<dimension>
 void convert_point_set_coordinate_reference_system(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#251
+```
 
 ### convert_solid_mesh_coordinate_reference_system
 
@@ -340,6 +421,9 @@ void convert_point_set_coordinate_reference_system(const PointSet<dimension> & m
 void convert_solid_mesh_coordinate_reference_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#262
+```
 
 ### convert_surface_mesh_coordinate_reference_system
 
@@ -347,6 +431,9 @@ void convert_solid_mesh_coordinate_reference_system(const SolidMesh<dimension> &
 void convert_surface_mesh_coordinate_reference_system(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#273
+```
 
 ### convert_brep_coordinate_reference_system
 
@@ -354,6 +441,9 @@ void convert_surface_mesh_coordinate_reference_system(const SurfaceMesh<dimensio
 void convert_brep_coordinate_reference_system(const BRep & brep, BRepBuilder & builder, string_view crs_name, const GeographicCoordinateSystem3D::Info & info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#283
+```
 
 ### convert_section_coordinate_reference_system
 
@@ -361,6 +451,9 @@ void convert_brep_coordinate_reference_system(const BRep & brep, BRepBuilder & b
 void convert_section_coordinate_reference_system(const Section & section, SectionBuilder & builder, string_view crs_name, const GeographicCoordinateSystem2D::Info & info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system_helper.cpp#306
+```
 
 ### load_stratigraphic_model
 
@@ -368,6 +461,9 @@ void convert_section_coordinate_reference_system(const Section & section, Sectio
 StratigraphicModel load_stratigraphic_model(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_input.cpp#34
+```
 
  API function for loading a StratigraphicModel. The adequate loader is called depending on the filename extension.
 
@@ -379,6 +475,9 @@ StratigraphicModel load_stratigraphic_model(string_view filename)
 MissingFiles check_stratigraphic_model_missing_files(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_input.cpp#74
+```
 
 ### save_stratigraphic_model
 
@@ -386,6 +485,9 @@ MissingFiles check_stratigraphic_model_missing_files(string_view filename)
 void save_stratigraphic_model(const StratigraphicModel & stratigraphic_model, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_output.cpp#40
+```
 
  API function for saving a StratigraphicModel. The adequate saver is called depending on the given filename extension.
 
@@ -399,6 +501,9 @@ void save_stratigraphic_model(const StratigraphicModel & stratigraphic_model, st
 void save_stratigraphic_section(const StratigraphicSection & stratigraphic_section, string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_output.cpp#40
+```
 
  API function for saving a StratigraphicSection. The adequate saver is called depending on the given filename extension.
 

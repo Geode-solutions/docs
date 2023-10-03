@@ -1,5 +1,8 @@
 # class StratigraphicPoint
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#38
+```
 
  A Stratigraphic Point represents a point in a stratigraphic space, with an implicit field value and a point of dimension-1 giving its position in the stratigraphic space.
 
@@ -13,6 +16,9 @@
 public void StratigraphicPoint<>()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#43
+```
 
 ### StratigraphicPoint
 
@@ -20,6 +26,9 @@ public void StratigraphicPoint<>()
 public void StratigraphicPoint<>(Point<location_dim> stratigraphic_location, double implicit_value)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#48
+```
 
 ### StratigraphicPoint
 
@@ -27,6 +36,9 @@ public void StratigraphicPoint<>(Point<location_dim> stratigraphic_location, dou
 public void StratigraphicPoint<>(const std::array<double, dimension> & values)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#54
+```
 
 ### StratigraphicPoint
 
@@ -34,6 +46,9 @@ public void StratigraphicPoint<>(const std::array<double, dimension> & values)
 public void StratigraphicPoint<>(const Point<dimension> & stratigraphic_coordinates)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#62
+```
 
 ### stratigraphic_location
 
@@ -41,6 +56,9 @@ public void StratigraphicPoint<>(const Point<dimension> & stratigraphic_coordina
 public const Point<location_dim> & stratigraphic_location()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#74
+```
 
 ### implicit_value
 
@@ -48,6 +66,9 @@ public const Point<location_dim> & stratigraphic_location()
 public double implicit_value()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#79
+```
 
 ### stratigraphic_coordinates
 
@@ -55,6 +76,9 @@ public double implicit_value()
 public Point<dimension> stratigraphic_coordinates()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#84
+```
 
 ### set_stratigraphic_location
 
@@ -62,6 +86,9 @@ public Point<dimension> stratigraphic_coordinates()
 public void set_stratigraphic_location(Point<location_dim> stratigraphic_location)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#95
+```
 
 ### set_implicit_value
 
@@ -69,6 +96,9 @@ public void set_stratigraphic_location(Point<location_dim> stratigraphic_locatio
 public void set_implicit_value(double implicit_value)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#101
+```
 
 ### string
 
@@ -76,6 +106,9 @@ public void set_implicit_value(double implicit_value)
 public basic_string string()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/geometry/stratigraphic_point.h#106
+```
 
 
 

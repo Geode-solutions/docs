@@ -1,5 +1,8 @@
 # class FaultBlocks
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault_blocks.h#41
+```
 
 ## Records
 
@@ -17,6 +20,9 @@ FaultBlockRange
 public void FaultBlocks<>(const FaultBlocks<> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault_blocks.h#43
+```
 
 ### operator=
 
@@ -24,6 +30,9 @@ public void FaultBlocks<>(const FaultBlocks<> & )
 public FaultBlocks<> & operator=(const FaultBlocks<> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault_blocks.h#43
+```
 
 ### ~FaultBlocks
 
@@ -31,6 +40,9 @@ public FaultBlocks<> & operator=(const FaultBlocks<> & )
 public void ~FaultBlocks<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#47
+```
 
 ### nb_fault_blocks
 
@@ -38,13 +50,19 @@ public void ~FaultBlocks<>()
 public index_t nb_fault_blocks()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#66
+```
 
 ### has_fault_block
 
 ```cpp
-public _Bool has_fault_block(const uuid & id)
+public bool has_fault_block(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#72
+```
 
 ### fault_block
 
@@ -52,6 +70,9 @@ public _Bool has_fault_block(const uuid & id)
 public const FaultBlock<dimension> & fault_block(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#78
+```
 
 ### fault_blocks
 
@@ -59,6 +80,9 @@ public const FaultBlock<dimension> & fault_block(const uuid & id)
 public FaultBlockRange fault_blocks()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#106
+```
 
 ### save_fault_blocks
 
@@ -66,6 +90,9 @@ public FaultBlockRange fault_blocks()
 public void save_fault_blocks(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#92
+```
 
 ### FaultBlocks
 
@@ -73,6 +100,9 @@ public void save_fault_blocks(string_view directory)
 protected void FaultBlocks<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#42
+```
 
 ### FaultBlocks
 
@@ -80,6 +110,9 @@ protected void FaultBlocks<>()
 protected void FaultBlocks<>(FaultBlocks<> && )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#52
+```
 
 ### operator=
 
@@ -87,12 +120,21 @@ protected void FaultBlocks<>(FaultBlocks<> && )
 protected FaultBlocks<> & operator=(FaultBlocks<> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#58
+```
 
 
 
 # class FaultBlocks
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#236
+```
 
 # class FaultBlocks
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#237
+```
 

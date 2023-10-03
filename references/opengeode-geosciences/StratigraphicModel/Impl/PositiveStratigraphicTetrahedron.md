@@ -1,26 +1,19 @@
 # struct PositiveStratigraphicTetrahedron
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/core/stratigraphic_model.cpp#258
+```
 
 ## Members
 
 ```cpp
-```cpp
-```cpp
-```cpp
 public int indices_
-```
-```
-```
+
 ```
 
 ```cpp
-```cpp
-```cpp
-```cpp
 public OwnerTetrahedron positive_tetra_
-```
-```
-```
+
 ```
 
 
@@ -30,28 +23,22 @@ public OwnerTetrahedron positive_tetra_
 ### PositiveStratigraphicTetrahedron
 
 ```cpp
-```cpp
-```cpp
-```cpp
 public void PositiveStratigraphicTetrahedron()
 ```
-```
-```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/core/stratigraphic_model.cpp#260
+```
 
 ### PositiveStratigraphicTetrahedron
 
 ```cpp
-```cpp
-```cpp
-```cpp
 public void PositiveStratigraphicTetrahedron(const StratigraphicModel & model, const Block3D & block, index_t tetrahedron_id)
 ```
-```
-```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/core/stratigraphic_model.cpp#261
+```
 
 
 

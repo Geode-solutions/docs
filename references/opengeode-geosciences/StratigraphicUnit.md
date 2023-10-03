@@ -1,5 +1,8 @@
 # class StratigraphicUnit
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_unit.h#43
+```
 
  Geological component describing a StratigraphicUnit.
 
@@ -19,6 +22,9 @@ Inherits from Component<dimension>
 public void StratigraphicUnit<dimension>(const StratigraphicUnit<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_unit.h#45
+```
 
 ### operator=
 
@@ -26,6 +32,19 @@ public void StratigraphicUnit<dimension>(const StratigraphicUnit<dimension> & )
 public StratigraphicUnit<dimension> & operator=(const StratigraphicUnit<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_unit.h#45
+```
+
+### StratigraphicUnit
+
+```cpp
+public void StratigraphicUnit<dimension>(StratigraphicUnit<dimension> && other)
+```
+
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_unit.h#51
+```
 
 ### ~StratigraphicUnit
 
@@ -33,6 +52,9 @@ public StratigraphicUnit<dimension> & operator=(const StratigraphicUnit<dimensio
 public void ~StratigraphicUnit<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_unit.cpp#35
+```
 
 ### component_type_static
 
@@ -40,6 +62,9 @@ public void ~StratigraphicUnit<dimension>()
 public NamedType component_type_static()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_unit.h#54
+```
 
 ### component_type
 
@@ -47,6 +72,9 @@ public NamedType component_type_static()
 public NamedType component_type()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_unit.h#59
+```
 
 ### component_id
 
@@ -54,6 +82,9 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_unit.h#64
+```
 
 ### StratigraphicUnit
 
@@ -61,6 +92,9 @@ public ComponentID component_id()
 public void StratigraphicUnit<dimension>(StratigraphicUnitsKey )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_unit.h#70
+```
 
 ### set_stratigraphic_unit_name
 
@@ -68,11 +102,17 @@ public void StratigraphicUnit<dimension>(StratigraphicUnitsKey )
 public void set_stratigraphic_unit_name(string_view name, StratigraphicUnitsBuilderKey )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_unit.h#72
+```
 
 
 
 # class StratigraphicUnit
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_unit.cpp#52
+```
 
 ```cpp
 Inherits from Component<2U>
@@ -82,6 +122,9 @@ Inherits from Component<2U>
 
 # class StratigraphicUnit
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_unit.cpp#53
+```
 
 ```cpp
 Inherits from Component<3U>

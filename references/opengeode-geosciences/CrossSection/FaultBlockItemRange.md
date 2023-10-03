@@ -1,10 +1,11 @@
 # class FaultBlockItemRange
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/core/cross_section.h#96
+```
 
 ```cpp
-```cpp
 Inherits from ItemRangeIterator
-```
 ```
 
 
@@ -14,56 +15,62 @@ Inherits from ItemRangeIterator
 ### FaultBlockItemRange
 
 ```cpp
-```cpp
 public void FaultBlockItemRange(const CrossSection & cross_section, const FaultBlock2D & fault_block)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/cross_section.cpp#103
+```
 
 ### FaultBlockItemRange
 
 ```cpp
-```cpp
 public void FaultBlockItemRange(const FaultBlockItemRange & range)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/cross_section.cpp#110
+```
 
 ### ~FaultBlockItemRange
 
 ```cpp
-```cpp
 public void ~FaultBlockItemRange()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/cross_section.cpp#117
+```
 
 ### begin
 
 ```cpp
-```cpp
 public const FaultBlockItemRange & begin()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/cross_section.cpp#119
+```
 
 ### end
 
 ```cpp
-```cpp
 public const FaultBlockItemRange & end()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/cross_section.cpp#125
+```
 
 ### operator*
 
 ```cpp
-```cpp
 public const Surface2D & operator*()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/cross_section.cpp#131
+```
 
 
 

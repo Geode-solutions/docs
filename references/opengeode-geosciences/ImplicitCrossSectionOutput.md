@@ -1,5 +1,8 @@
 # class ImplicitCrossSectionOutput
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_output.h#49
+```
 
 ```cpp
 Inherits from Output<ImplicitCrossSection>
@@ -15,6 +18,9 @@ Inherits from Output<ImplicitCrossSection>
 public void ~ImplicitCrossSectionOutput()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_output.h#52
+```
 
 ### ImplicitCrossSectionOutput
 
@@ -22,6 +28,9 @@ public void ~ImplicitCrossSectionOutput()
 protected void ImplicitCrossSectionOutput(string_view filename)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_output.h#55
+```
 
 
 

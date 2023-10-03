@@ -1,5 +1,8 @@
 # class ImplicitCrossSectionInput
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_input.h#46
+```
 
 ```cpp
 Inherits from Input<ImplicitCrossSection>
@@ -15,6 +18,9 @@ Inherits from Input<ImplicitCrossSection>
 protected void ImplicitCrossSectionInput(string_view filename)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_input.h#54
+```
 
 
 

@@ -1,5 +1,8 @@
 # class Horizon
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizon.cpp#113
+```
 
 ```cpp
 Inherits from Component<2U>
@@ -9,6 +12,9 @@ Inherits from Component<2U>
 
 # class Horizon
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#46
+```
 
  Geological component describing a Horizon. This component is described by a horizon type.
 
@@ -28,6 +34,9 @@ Inherits from Component<dimension>
 public void Horizon<dimension>(const Horizon<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#48
+```
 
 ### operator=
 
@@ -35,6 +44,19 @@ public void Horizon<dimension>(const Horizon<dimension> & )
 public Horizon<dimension> & operator=(const Horizon<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#48
+```
+
+### Horizon
+
+```cpp
+public void Horizon<dimension>(Horizon<dimension> && other)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizon.cpp#69
+```
 
 ### ~Horizon
 
@@ -42,6 +64,9 @@ public Horizon<dimension> & operator=(const Horizon<dimension> & )
 public void ~Horizon<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizon.cpp#76
+```
 
 ### component_type_static
 
@@ -49,6 +74,9 @@ public void ~Horizon<dimension>()
 public NamedType component_type_static()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#67
+```
 
 ### component_type
 
@@ -56,6 +84,9 @@ public NamedType component_type_static()
 public NamedType component_type()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#72
+```
 
 ### component_id
 
@@ -63,13 +94,19 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#77
+```
 
 ### has_type
 
 ```cpp
-public _Bool has_type()
+public bool has_type()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizon.cpp#81
+```
 
 ### type
 
@@ -77,6 +114,9 @@ public _Bool has_type()
 public HORIZON_TYPE type()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizon.cpp#87
+```
 
 ### Horizon
 
@@ -84,6 +124,9 @@ public HORIZON_TYPE type()
 public void Horizon<dimension>(HorizonsKey )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#86
+```
 
 ### Horizon
 
@@ -91,6 +134,9 @@ public void Horizon<dimension>(HorizonsKey )
 public void Horizon<dimension>(HORIZON_TYPE type, HorizonsKey )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#87
+```
 
 ### set_type
 
@@ -98,6 +144,9 @@ public void Horizon<dimension>(HORIZON_TYPE type, HorizonsKey )
 public void set_type(HORIZON_TYPE type, HorizonsBuilderKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizon.cpp#94
+```
 
 ### set_horizon_name
 
@@ -105,6 +154,9 @@ public void set_type(HORIZON_TYPE type, HorizonsBuilderKey )
 public void set_horizon_name(string_view name, HorizonsBuilderKey )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#91
+```
 
 
 
@@ -121,11 +173,17 @@ public void set_horizon_name(string_view name, HorizonsBuilderKey )
 | INTRUSION |
 
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizon.h#53
+```
 
 
 
 # class Horizon
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizon.cpp#114
+```
 
 ```cpp
 Inherits from Component<3U>

@@ -1,5 +1,8 @@
 # class Fault
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#46
+```
 
  Geological component describing a Fault. This component is described by a fault type.
 
@@ -19,6 +22,9 @@ Inherits from Component<dimension>
 public void Fault<dimension>(const Fault<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#48
+```
 
 ### operator=
 
@@ -26,6 +32,19 @@ public void Fault<dimension>(const Fault<dimension> & )
 public Fault<dimension> & operator=(const Fault<dimension> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#48
+```
+
+### Fault
+
+```cpp
+public void Fault<dimension>(Fault<dimension> && other)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault.cpp#69
+```
 
 ### ~Fault
 
@@ -33,6 +52,9 @@ public Fault<dimension> & operator=(const Fault<dimension> & )
 public void ~Fault<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault.cpp#76
+```
 
 ### component_type_static
 
@@ -40,6 +62,9 @@ public void ~Fault<dimension>()
 public NamedType component_type_static()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#68
+```
 
 ### component_type
 
@@ -47,6 +72,9 @@ public NamedType component_type_static()
 public NamedType component_type()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#73
+```
 
 ### component_id
 
@@ -54,13 +82,19 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#78
+```
 
 ### has_type
 
 ```cpp
-public _Bool has_type()
+public bool has_type()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault.cpp#81
+```
 
 ### type
 
@@ -68,6 +102,9 @@ public _Bool has_type()
 public FAULT_TYPE type()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault.cpp#87
+```
 
 ### Fault
 
@@ -75,6 +112,9 @@ public FAULT_TYPE type()
 public void Fault<dimension>(FaultsKey )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#87
+```
 
 ### Fault
 
@@ -82,6 +122,9 @@ public void Fault<dimension>(FaultsKey )
 public void Fault<dimension>(FAULT_TYPE type, FaultsKey )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#88
+```
 
 ### set_type
 
@@ -89,6 +132,9 @@ public void Fault<dimension>(FAULT_TYPE type, FaultsKey )
 public void set_type(FAULT_TYPE type, FaultsBuilderKey )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault.cpp#93
+```
 
 ### set_fault_name
 
@@ -96,6 +142,9 @@ public void set_type(FAULT_TYPE type, FaultsBuilderKey )
 public void set_fault_name(string_view name, FaultsBuilderKey )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#92
+```
 
 
 
@@ -113,11 +162,17 @@ public void set_fault_name(string_view name, FaultsBuilderKey )
 | DECOLLEMENT |
 
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault.h#53
+```
 
 
 
 # class Fault
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault.cpp#113
+```
 
 ```cpp
 Inherits from Component<3U>
@@ -127,6 +182,9 @@ Inherits from Component<3U>
 
 # class Fault
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault.cpp#112
+```
 
 ```cpp
 Inherits from Component<2U>

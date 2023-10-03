@@ -1,8 +1,14 @@
 # class Faults
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#249
+```
 
 # class Faults
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/faults.h#41
+```
 
 ## Records
 
@@ -20,6 +26,9 @@ FaultRange
 public void Faults<>(const Faults<> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/faults.h#43
+```
 
 ### operator=
 
@@ -27,6 +36,9 @@ public void Faults<>(const Faults<> & )
 public Faults<> & operator=(const Faults<> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/faults.h#43
+```
 
 ### ~Faults
 
@@ -34,6 +46,9 @@ public Faults<> & operator=(const Faults<> & )
 public void ~Faults<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#47
+```
 
 ### nb_faults
 
@@ -41,13 +56,19 @@ public void ~Faults<>()
 public index_t nb_faults()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#66
+```
 
 ### has_fault
 
 ```cpp
-public _Bool has_fault(const uuid & id)
+public bool has_fault(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#72
+```
 
 ### fault
 
@@ -55,6 +76,9 @@ public _Bool has_fault(const uuid & id)
 public const Fault<dimension> & fault(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#78
+```
 
 ### faults
 
@@ -62,6 +86,9 @@ public const Fault<dimension> & fault(const uuid & id)
 public FaultRange faults()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#102
+```
 
 ### save_faults
 
@@ -69,6 +96,9 @@ public FaultRange faults()
 public void save_faults(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#90
+```
 
 ### Faults
 
@@ -76,6 +106,9 @@ public void save_faults(string_view directory)
 protected void Faults<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#42
+```
 
 ### Faults
 
@@ -83,6 +116,9 @@ protected void Faults<>()
 protected void Faults<>(Faults<> && )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#52
+```
 
 ### operator=
 
@@ -90,9 +126,15 @@ protected void Faults<>(Faults<> && )
 protected Faults<> & operator=(Faults<> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#58
+```
 
 
 
 # class Faults
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/faults.cpp#250
+```
 

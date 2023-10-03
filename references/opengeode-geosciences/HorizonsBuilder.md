@@ -1,11 +1,20 @@
 # class HorizonsBuilder
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#88
+```
 
 # class HorizonsBuilder
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#89
+```
 
 # class HorizonsBuilder
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/builder/horizons_builder.h#39
+```
 
 ## Functions
 
@@ -15,6 +24,9 @@
 public void load_horizons(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#64
+```
 
 ### set_horizon_type
 
@@ -22,6 +34,9 @@ public void load_horizons(string_view directory)
 public void set_horizon_type(const uuid & horizon_id, typename Horizon<dimension>::HORIZON_TYPE type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#71
+```
 
 ### set_horizon_name
 
@@ -29,6 +44,9 @@ public void set_horizon_type(const uuid & horizon_id, typename Horizon<dimension
 public void set_horizon_name(const uuid & id, string_view name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#80
+```
 
 ### HorizonsBuilder
 
@@ -36,6 +54,9 @@ public void set_horizon_name(const uuid & id, string_view name)
 protected void HorizonsBuilder<dimension>(Horizons<dimension> & horizons)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/builder/horizons_builder.h#50
+```
 
 ### create_horizon
 
@@ -43,6 +64,9 @@ protected void HorizonsBuilder<dimension>(Horizons<dimension> & horizons)
 protected const uuid & create_horizon()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#31
+```
 
 ### create_horizon
 
@@ -50,6 +74,9 @@ protected const uuid & create_horizon()
 protected const uuid & create_horizon(typename Horizon<dimension>::HORIZON_TYPE type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#37
+```
 
 ### create_horizon
 
@@ -57,6 +84,9 @@ protected const uuid & create_horizon(typename Horizon<dimension>::HORIZON_TYPE 
 protected void create_horizon(uuid horizon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#44
+```
 
 ### create_horizon
 
@@ -64,6 +94,9 @@ protected void create_horizon(uuid horizon_id)
 protected void create_horizon(uuid horizon_id, typename Horizon<dimension>::HORIZON_TYPE type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#50
+```
 
 ### delete_horizon
 
@@ -71,6 +104,9 @@ protected void create_horizon(uuid horizon_id, typename Horizon<dimension>::HORI
 protected void delete_horizon(const Horizon<dimension> & horizon)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/horizons_builder.cpp#57
+```
 
 ### set_horizon_type
 

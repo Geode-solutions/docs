@@ -1,5 +1,8 @@
 # class CrossSectionBuilder
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/builder/cross_section_builder.h#51
+```
 
  Class managing modifications of a CrossSection
 
@@ -19,6 +22,9 @@ Inherits from SectionBuilder, FaultsBuilder2D, HorizonsBuilder2D, FaultBlocksBui
 public void CrossSectionBuilder(const CrossSectionBuilder & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/builder/cross_section_builder.h#58
+```
 
 ### operator=
 
@@ -26,6 +32,9 @@ public void CrossSectionBuilder(const CrossSectionBuilder & )
 public CrossSectionBuilder & operator=(const CrossSectionBuilder & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/builder/cross_section_builder.h#58
+```
 
 ### CrossSectionBuilder
 
@@ -33,6 +42,9 @@ public CrossSectionBuilder & operator=(const CrossSectionBuilder & )
 public void CrossSectionBuilder(CrossSectionBuilder && )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/builder/cross_section_builder.h#58
+```
 
 ### operator=
 
@@ -40,6 +52,9 @@ public void CrossSectionBuilder(CrossSectionBuilder && )
 public CrossSectionBuilder & operator=(CrossSectionBuilder && )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/builder/cross_section_builder.h#58
+```
 
 ### CrossSectionBuilder
 
@@ -47,6 +62,9 @@ public CrossSectionBuilder & operator=(CrossSectionBuilder && )
 public void CrossSectionBuilder(CrossSection & cross_section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#36
+```
 
 ### copy
 
@@ -54,6 +72,9 @@ public void CrossSectionBuilder(CrossSection & cross_section)
 public ModelMapping copy(const CrossSection & cross_section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#46
+```
 
 ### copy_geological_components
 
@@ -61,6 +82,9 @@ public ModelMapping copy(const CrossSection & cross_section)
 public void copy_geological_components(ModelCopyMapping & mapping, const CrossSection & cross_section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#55
+```
 
 ### add_fault
 
@@ -68,6 +92,9 @@ public void copy_geological_components(ModelCopyMapping & mapping, const CrossSe
 public const uuid & add_fault()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#68
+```
 
 ### add_fault
 
@@ -75,6 +102,9 @@ public const uuid & add_fault()
 public const uuid & add_fault(typename Fault2D::FAULT_TYPE type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#74
+```
 
 ### add_fault
 
@@ -82,6 +112,9 @@ public const uuid & add_fault(typename Fault2D::FAULT_TYPE type)
 public void add_fault(uuid fault_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#81
+```
 
 ### add_fault
 
@@ -89,6 +122,9 @@ public void add_fault(uuid fault_id)
 public void add_fault(uuid fault_id, typename Fault2D::FAULT_TYPE type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#86
+```
 
 ### add_line_in_fault
 
@@ -96,6 +132,9 @@ public void add_fault(uuid fault_id, typename Fault2D::FAULT_TYPE type)
 public index_t add_line_in_fault(const Line2D & line, const Fault2D & fault)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#92
+```
 
 ### remove_fault
 
@@ -103,6 +142,9 @@ public index_t add_line_in_fault(const Line2D & line, const Fault2D & fault)
 public void remove_fault(const Fault2D & fault)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#99
+```
 
 ### add_horizon
 
@@ -110,6 +152,9 @@ public void remove_fault(const Fault2D & fault)
 public const uuid & add_horizon()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#105
+```
 
 ### add_horizon
 
@@ -117,6 +162,9 @@ public const uuid & add_horizon()
 public const uuid & add_horizon(typename Horizon2D::HORIZON_TYPE type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#111
+```
 
 ### add_horizon
 
@@ -124,6 +172,9 @@ public const uuid & add_horizon(typename Horizon2D::HORIZON_TYPE type)
 public void add_horizon(uuid horizon_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#118
+```
 
 ### add_horizon
 
@@ -131,6 +182,9 @@ public void add_horizon(uuid horizon_id)
 public void add_horizon(uuid horizon_id, typename Horizon2D::HORIZON_TYPE type)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#123
+```
 
 ### add_line_in_horizon
 
@@ -138,6 +192,9 @@ public void add_horizon(uuid horizon_id, typename Horizon2D::HORIZON_TYPE type)
 public index_t add_line_in_horizon(const Line2D & line, const Horizon2D & horizon)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#129
+```
 
 ### remove_horizon
 
@@ -145,6 +202,9 @@ public index_t add_line_in_horizon(const Line2D & line, const Horizon2D & horizo
 public void remove_horizon(const Horizon2D & horizon)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#136
+```
 
 ### add_fault_block
 
@@ -152,6 +212,9 @@ public void remove_horizon(const Horizon2D & horizon)
 public const uuid & add_fault_block()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#142
+```
 
 ### add_fault_block
 
@@ -159,6 +222,9 @@ public const uuid & add_fault_block()
 public void add_fault_block(uuid fault_block_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#148
+```
 
 ### add_surface_in_fault_block
 
@@ -166,6 +232,9 @@ public void add_fault_block(uuid fault_block_id)
 public index_t add_surface_in_fault_block(const Surface2D & surface, const FaultBlock2D & fault_block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#153
+```
 
 ### remove_fault_block
 
@@ -173,6 +242,9 @@ public index_t add_surface_in_fault_block(const Surface2D & surface, const Fault
 public void remove_fault_block(const FaultBlock2D & fault_block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#160
+```
 
 ### add_stratigraphic_unit
 
@@ -180,6 +252,9 @@ public void remove_fault_block(const FaultBlock2D & fault_block)
 public const uuid & add_stratigraphic_unit()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#167
+```
 
 ### add_stratigraphic_unit
 
@@ -187,6 +262,9 @@ public const uuid & add_stratigraphic_unit()
 public void add_stratigraphic_unit(uuid stratigraphic_unit_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#173
+```
 
 ### add_surface_in_stratigraphic_unit
 
@@ -194,6 +272,9 @@ public void add_stratigraphic_unit(uuid stratigraphic_unit_id)
 public index_t add_surface_in_stratigraphic_unit(const Surface2D & surface, const StratigraphicUnit2D & stratigraphic_unit)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#179
+```
 
 ### remove_stratigraphic_unit
 
@@ -201,6 +282,9 @@ public index_t add_surface_in_stratigraphic_unit(const Surface2D & surface, cons
 public void remove_stratigraphic_unit(const StratigraphicUnit2D & stratigraphic_unit)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/builder/cross_section_builder.cpp#187
+```
 
 ### copy_geological_components
 

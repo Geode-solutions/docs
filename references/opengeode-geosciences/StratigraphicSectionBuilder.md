@@ -1,5 +1,8 @@
 # class StratigraphicSectionBuilder
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/builder/stratigraphic_section_builder.h#43
+```
 
  Class managing modifications of a StratigraphicSection
 
@@ -19,6 +22,9 @@ Inherits from ImplicitCrossSectionBuilder
 public void StratigraphicSectionBuilder(StratigraphicSection & stratigraphic_section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/builder/stratigraphic_section_builder.cpp#35
+```
 
 ### copy
 
@@ -26,6 +32,9 @@ public void StratigraphicSectionBuilder(StratigraphicSection & stratigraphic_sec
 public ModelCopyMapping copy(const StratigraphicSection & stratigraphic_section)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/builder/stratigraphic_section_builder.cpp#42
+```
 
 ### reinitialize_stratigraphic_query_trees
 
@@ -33,6 +42,9 @@ public ModelCopyMapping copy(const StratigraphicSection & stratigraphic_section)
 public void reinitialize_stratigraphic_query_trees()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/builder/stratigraphic_section_builder.cpp#51
+```
 
 ### instantiate_stratigraphic_attribute_on_surfaces
 
@@ -40,6 +52,9 @@ public void reinitialize_stratigraphic_query_trees()
 public void instantiate_stratigraphic_attribute_on_surfaces()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/builder/stratigraphic_section_builder.cpp#57
+```
 
 ### set_stratigraphic_location
 
@@ -47,6 +62,9 @@ public void instantiate_stratigraphic_attribute_on_surfaces()
 public void set_stratigraphic_location(const Surface2D & surface, index_t vertex_id, Point value)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/builder/stratigraphic_section_builder.cpp#65
+```
 
 ### set_stratigraphic_coordinates
 
@@ -54,6 +72,9 @@ public void set_stratigraphic_location(const Surface2D & surface, index_t vertex
 public void set_stratigraphic_coordinates(const Surface2D & surface, index_t vertex_id, const StratigraphicPoint2D & value)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/builder/stratigraphic_section_builder.cpp#72
+```
 
 
 

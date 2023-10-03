@@ -1,11 +1,20 @@
 # class StratigraphicUnits
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#254
+```
 
 # class StratigraphicUnits
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#253
+```
 
 # class StratigraphicUnits
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_units.h#41
+```
 
 ## Records
 
@@ -23,6 +32,9 @@ StratigraphicUnitRange
 public void StratigraphicUnits<>(const StratigraphicUnits<> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_units.h#43
+```
 
 ### operator=
 
@@ -30,6 +42,9 @@ public void StratigraphicUnits<>(const StratigraphicUnits<> & )
 public StratigraphicUnits<> & operator=(const StratigraphicUnits<> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/stratigraphic_units.h#43
+```
 
 ### ~StratigraphicUnits
 
@@ -37,6 +52,9 @@ public StratigraphicUnits<> & operator=(const StratigraphicUnits<> & )
 public void ~StratigraphicUnits<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#47
+```
 
 ### nb_stratigraphic_units
 
@@ -44,13 +62,19 @@ public void ~StratigraphicUnits<>()
 public index_t nb_stratigraphic_units()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#67
+```
 
 ### has_stratigraphic_unit
 
 ```cpp
-public _Bool has_stratigraphic_unit(const uuid & id)
+public bool has_stratigraphic_unit(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#73
+```
 
 ### stratigraphic_unit
 
@@ -58,6 +82,9 @@ public _Bool has_stratigraphic_unit(const uuid & id)
 public const StratigraphicUnit<dimension> & stratigraphic_unit(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#80
+```
 
 ### stratigraphic_units
 
@@ -65,6 +92,9 @@ public const StratigraphicUnit<dimension> & stratigraphic_unit(const uuid & id)
 public StratigraphicUnitRange stratigraphic_units()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#112
+```
 
 ### save_stratigraphic_units
 
@@ -72,6 +102,9 @@ public StratigraphicUnitRange stratigraphic_units()
 public void save_stratigraphic_units(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#96
+```
 
 ### StratigraphicUnits
 
@@ -79,6 +112,9 @@ public void save_stratigraphic_units(string_view directory)
 protected void StratigraphicUnits<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#42
+```
 
 ### StratigraphicUnits
 
@@ -86,6 +122,9 @@ protected void StratigraphicUnits<>()
 protected void StratigraphicUnits<>(StratigraphicUnits<> && )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#52
+```
 
 ### operator=
 
@@ -93,6 +132,9 @@ protected void StratigraphicUnits<>(StratigraphicUnits<> && )
 protected StratigraphicUnits<dimension> & operator=(StratigraphicUnits<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/stratigraphic_units.cpp#59
+```
 
 
 

@@ -1,5 +1,8 @@
 # class StratigraphicSectionOutput
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_section_output.h#49
+```
 
 ```cpp
 Inherits from Output<StratigraphicSection>
@@ -15,6 +18,9 @@ Inherits from Output<StratigraphicSection>
 public void ~StratigraphicSectionOutput()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_section_output.h#52
+```
 
 ### StratigraphicSectionOutput
 
@@ -22,6 +28,9 @@ public void ~StratigraphicSectionOutput()
 protected void StratigraphicSectionOutput(string_view filename)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_section_output.h#55
+```
 
 
 

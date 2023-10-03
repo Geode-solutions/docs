@@ -1,11 +1,20 @@
 # class FaultBlocksBuilder
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/fault_blocks_builder.cpp#66
+```
 
 # class FaultBlocksBuilder
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/fault_blocks_builder.cpp#67
+```
 
 # class FaultBlocksBuilder
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/builder/fault_blocks_builder.h#39
+```
 
 ## Functions
 
@@ -15,6 +24,9 @@
 public void load_fault_blocks(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/fault_blocks_builder.cpp#51
+```
 
 ### set_fault_block_name
 
@@ -22,6 +34,9 @@ public void load_fault_blocks(string_view directory)
 public void set_fault_block_name(const uuid & id, string_view name)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/fault_blocks_builder.cpp#58
+```
 
 ### FaultBlocksBuilder
 
@@ -29,6 +44,9 @@ public void set_fault_block_name(const uuid & id, string_view name)
 protected void FaultBlocksBuilder<dimension>(FaultBlocks<dimension> & fault_blocks)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/builder/fault_blocks_builder.h#47
+```
 
 ### create_fault_block
 
@@ -36,6 +54,9 @@ protected void FaultBlocksBuilder<dimension>(FaultBlocks<dimension> & fault_bloc
 protected const uuid & create_fault_block()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/fault_blocks_builder.cpp#31
+```
 
 ### create_fault_block
 
@@ -43,6 +64,9 @@ protected const uuid & create_fault_block()
 protected void create_fault_block(uuid fault_block_id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/fault_blocks_builder.cpp#37
+```
 
 ### delete_fault_block
 
@@ -50,6 +74,9 @@ protected void create_fault_block(uuid fault_block_id)
 protected void delete_fault_block(const FaultBlock<dimension> & fault_block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/builder/fault_blocks_builder.cpp#44
+```
 
 
 

@@ -1,5 +1,8 @@
 # class StructuralModelOutput
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/io/structural_model_output.h#48
+```
 
 ```cpp
 Inherits from Output<StructuralModel>
@@ -15,6 +18,9 @@ Inherits from Output<StructuralModel>
 public void ~StructuralModelOutput()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/io/structural_model_output.h#51
+```
 
 ### StructuralModelOutput
 
@@ -22,6 +28,9 @@ public void ~StructuralModelOutput()
 protected void StructuralModelOutput(string_view filename)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/io/structural_model_output.h#54
+```
 
 
 

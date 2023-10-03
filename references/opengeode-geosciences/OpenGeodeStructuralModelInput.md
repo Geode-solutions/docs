@@ -1,5 +1,8 @@
 # class OpenGeodeStructuralModelInput
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/io/geode/geode_structural_model_input.h#31
+```
 
 ```cpp
 Inherits from StructuralModelInput
@@ -15,6 +18,9 @@ Inherits from StructuralModelInput
 public void OpenGeodeStructuralModelInput(string_view filename)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/geode/geode_structural_model_input.cpp#45
+```
 
 ### extension
 
@@ -22,6 +28,9 @@ public void OpenGeodeStructuralModelInput(string_view filename)
 public string_view extension()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/io/geode/geode_structural_model_input.h#37
+```
 
 ### load_structural_model_files
 
@@ -29,6 +38,9 @@ public string_view extension()
 public void load_structural_model_files(StructuralModel & structural_model, string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/geode/geode_structural_model_input.cpp#51
+```
 
 ### read
 
@@ -36,6 +48,9 @@ public void load_structural_model_files(StructuralModel & structural_model, stri
 public StructuralModel read()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/geode/geode_structural_model_input.cpp#70
+```
 
 
 

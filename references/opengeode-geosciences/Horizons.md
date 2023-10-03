@@ -1,11 +1,20 @@
 # class Horizons
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#259
+```
 
 # class Horizons
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#260
+```
 
 # class Horizons
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizons.h#41
+```
 
 ## Records
 
@@ -23,6 +32,9 @@ HorizonRange
 public void Horizons<>(const Horizons<> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizons.h#43
+```
 
 ### operator=
 
@@ -30,6 +42,9 @@ public void Horizons<>(const Horizons<> & )
 public Horizons<> & operator=(const Horizons<> & )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizons.h#43
+```
 
 ### ~Horizons
 
@@ -37,6 +52,9 @@ public Horizons<> & operator=(const Horizons<> & )
 public void ~Horizons<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#47
+```
 
 ### nb_horizons
 
@@ -44,13 +62,19 @@ public void ~Horizons<>()
 public index_t nb_horizons()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#66
+```
 
 ### has_horizon
 
 ```cpp
-public _Bool has_horizon(const uuid & id)
+public bool has_horizon(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#72
+```
 
 ### horizon
 
@@ -58,6 +82,9 @@ public _Bool has_horizon(const uuid & id)
 public const Horizon<dimension> & horizon(const uuid & id)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#78
+```
 
 ### horizons
 
@@ -65,6 +92,9 @@ public const Horizon<dimension> & horizon(const uuid & id)
 public HorizonRange horizons()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#105
+```
 
 ### save_horizons
 
@@ -72,6 +102,9 @@ public HorizonRange horizons()
 public void save_horizons(string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#92
+```
 
 ### Horizons
 
@@ -79,6 +112,9 @@ public void save_horizons(string_view directory)
 protected void Horizons<>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#42
+```
 
 ### Horizons
 
@@ -86,6 +122,9 @@ protected void Horizons<>()
 protected void Horizons<>(Horizons<> && )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#52
+```
 
 ### operator=
 
@@ -93,6 +132,9 @@ protected void Horizons<>(Horizons<> && )
 protected Horizons<dimension> & operator=(Horizons<dimension> && other)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#58
+```
 
 
 

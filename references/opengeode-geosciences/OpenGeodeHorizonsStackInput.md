@@ -1,5 +1,8 @@
 # class OpenGeodeHorizonsStackInput
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/geode/geode_horizons_stack_input.cpp#67
+```
 
 ```cpp
 Inherits from HorizonsStackInput<3U>
@@ -9,6 +12,9 @@ Inherits from HorizonsStackInput<3U>
 
 # class OpenGeodeHorizonsStackInput
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/geode/geode_horizons_stack_input.h#32
+```
 
 ```cpp
 Inherits from HorizonsStackInput<dimension>
@@ -24,6 +30,9 @@ Inherits from HorizonsStackInput<dimension>
 public void OpenGeodeHorizonsStackInput<dimension>(string_view filename)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/geode/geode_horizons_stack_input.h#36
+```
 
 ### extension
 
@@ -31,6 +40,9 @@ public void OpenGeodeHorizonsStackInput<dimension>(string_view filename)
 public string_view extension()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/geode/geode_horizons_stack_input.h#41
+```
 
 ### load_horizons_stack_files
 
@@ -38,6 +50,9 @@ public string_view extension()
 public void load_horizons_stack_files(HorizonsStack<dimension> & horizons_stack, string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/geode/geode_horizons_stack_input.cpp#36
+```
 
 ### read
 
@@ -45,11 +60,17 @@ public void load_horizons_stack_files(HorizonsStack<dimension> & horizons_stack,
 public HorizonsStack<dimension> read()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/geode/geode_horizons_stack_input.cpp#55
+```
 
 
 
 # class OpenGeodeHorizonsStackInput
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/geode/geode_horizons_stack_input.cpp#65
+```
 
 ```cpp
 Inherits from HorizonsStackInput<2U>

@@ -1,12 +1,14 @@
 # class FaultBlockRangeBase
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/fault_blocks.h#49
+```
 
 ## Members
 
 ```cpp
-```cpp
 protected geode::PImpl<Impl> impl_
-```
+
 ```
 
 
@@ -22,56 +24,62 @@ Impl
 ### ~FaultBlockRangeBase
 
 ```cpp
-```cpp
 public void ~FaultBlockRangeBase()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#189
+```
 
 ### operator!=
 
 ```cpp
-```cpp
-public _Bool operator!=(const FaultBlockRangeBase & )
-```
+public bool operator!=(const FaultBlockRangeBase & )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#195
+```
 
 ### operator++
 
 ```cpp
-```cpp
 public void operator++()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#202
+```
 
 ### FaultBlockRangeBase
 
-```cpp
 ```cpp
 protected void FaultBlockRangeBase(const FaultBlocks<> & fault_blocks)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#168
+```
 
 ### FaultBlockRangeBase
 
-```cpp
 ```cpp
 protected void FaultBlockRangeBase(FaultBlockRangeBase && other)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#175
+```
 
 ### FaultBlockRangeBase
 
 ```cpp
-```cpp
 protected void FaultBlockRangeBase(const FaultBlockRangeBase & other)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/fault_blocks.cpp#182
+```
 
 
 

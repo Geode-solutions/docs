@@ -1,5 +1,8 @@
 # class StructuralModel
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/core/structural_model.h#52
+```
 
  A Structural Model is a Boundary Representation composed of Faults and Horizons (as Surfaces) and FaultBlocks and StratigraphicUnits (as Blocks).
 
@@ -31,6 +34,9 @@ StratigraphicUnitItemRange
 public void StructuralModel()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/core/structural_model.h#146
+```
 
 ### StructuralModel
 
@@ -38,6 +44,9 @@ public void StructuralModel()
 public void StructuralModel(StructuralModel && )
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/core/structural_model.h#147
+```
 
 ### StructuralModel
 
@@ -45,6 +54,9 @@ public void StructuralModel(StructuralModel && )
 public void StructuralModel(BRep && brep)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/structural_model.cpp#194
+```
 
 ### native_extension_static
 
@@ -52,6 +64,9 @@ public void StructuralModel(BRep && brep)
 public string_view native_extension_static()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/core/structural_model.h#150
+```
 
 ### native_extension
 
@@ -59,6 +74,9 @@ public string_view native_extension_static()
 public string_view native_extension()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/representation/core/structural_model.h#155
+```
 
 ### horizon_items
 
@@ -66,6 +84,9 @@ public string_view native_extension()
 public HorizonItemRange horizon_items(const Horizon3D & horizon)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/structural_model.cpp#62
+```
 
 ### fault_items
 
@@ -73,6 +94,9 @@ public HorizonItemRange horizon_items(const Horizon3D & horizon)
 public FaultItemRange fault_items(const Fault3D & fault)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/structural_model.cpp#100
+```
 
 ### fault_block_items
 
@@ -80,6 +104,9 @@ public FaultItemRange fault_items(const Fault3D & fault)
 public FaultBlockItemRange fault_block_items(const FaultBlock3D & fault_block)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/structural_model.cpp#142
+```
 
 ### stratigraphic_unit_items
 
@@ -87,6 +114,9 @@ public FaultBlockItemRange fault_block_items(const FaultBlock3D & fault_block)
 public StratigraphicUnitItemRange stratigraphic_unit_items(const StratigraphicUnit3D & stratigraphic_unit)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/core/structural_model.cpp#187
+```
 
 
 

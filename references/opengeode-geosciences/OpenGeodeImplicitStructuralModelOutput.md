@@ -1,5 +1,8 @@
 # class OpenGeodeImplicitStructuralModelOutput
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/geode/geode_implicit_structural_model_output.h#36
+```
 
 ```cpp
 Inherits from ImplicitStructuralModelOutput
@@ -15,6 +18,9 @@ Inherits from ImplicitStructuralModelOutput
 public void OpenGeodeImplicitStructuralModelOutput(string_view filename)
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/geode/geode_implicit_structural_model_output.h#41
+```
 
 ### extension
 
@@ -22,6 +28,9 @@ public void OpenGeodeImplicitStructuralModelOutput(string_view filename)
 public string_view extension()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/implicit/representation/io/geode/geode_implicit_structural_model_output.h#46
+```
 
 ### archive_implicit_model_files
 
@@ -29,6 +38,9 @@ public string_view extension()
 public void archive_implicit_model_files(const ZipFile & zip_writer)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/geode/geode_implicit_structural_model_output.cpp#41
+```
 
 ### save_implicit_model_files
 
@@ -36,6 +48,9 @@ public void archive_implicit_model_files(const ZipFile & zip_writer)
 public void save_implicit_model_files(const ImplicitStructuralModel & implicit_model, string_view directory)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/geode/geode_implicit_structural_model_output.cpp#51
+```
 
 ### write
 
@@ -43,6 +58,9 @@ public void save_implicit_model_files(const ImplicitStructuralModel & implicit_m
 public void write(const ImplicitStructuralModel & implicit_model)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/geode/geode_implicit_structural_model_output.cpp#83
+```
 
 
 

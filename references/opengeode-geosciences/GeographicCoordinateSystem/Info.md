@@ -1,24 +1,24 @@
 # struct Info
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/geometry/geographic_coordinate_system.h#46
+```
 
 ## Members
 
 ```cpp
-```cpp
 public basic_string authority
-```
+
 ```
 
-```cpp
 ```cpp
 public basic_string code
-```
+
 ```
 
 ```cpp
-```cpp
 public basic_string name
-```
+
 ```
 
 
@@ -28,47 +28,52 @@ public basic_string name
 ### Info
 
 ```cpp
-```cpp
 public void Info(basic_string authority_in, basic_string code_in, basic_string name_in)
 ```
-```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/geometry/geographic_coordinate_system.h#48
+```
 
 ### Info
 
 ```cpp
-```cpp
 public void Info()
 ```
-```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/geometry/geographic_coordinate_system.h#56
+```
 
 ### authority_code
 
 ```cpp
-```cpp
 public basic_string authority_code()
 ```
-```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/geometry/geographic_coordinate_system.h#58
+```
 
 ### string
 
 ```cpp
-```cpp
 public basic_string string()
 ```
-```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/geometry/geographic_coordinate_system.h#63
+```
 
 ### serialize
 
 ```cpp
-```cpp
 public void serialize(Archive & archive)
 ```
-```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/geometry/geographic_coordinate_system.h#69
+```
 
 
 

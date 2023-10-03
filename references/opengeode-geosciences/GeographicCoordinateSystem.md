@@ -2,6 +2,9 @@
 
 # class GeographicCoordinateSystem
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/geometry/geographic_coordinate_system.h#40
+```
 
 ```cpp
 Inherits from AttributeCoordinateReferenceSystem<dimension>
@@ -23,6 +26,9 @@ Info
 public void GeographicCoordinateSystem<dimension>(AttributeManager & manager, Info info)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system.cpp#102
+```
 
 ### ~GeographicCoordinateSystem
 
@@ -30,6 +36,9 @@ public void GeographicCoordinateSystem<dimension>(AttributeManager & manager, In
 public void ~GeographicCoordinateSystem<dimension>()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system.cpp#110
+```
 
 ### create_from_attribute
 
@@ -43,6 +52,9 @@ public GeographicCoordinateSystem create_from_attribute(const AttributeCoordinat
 public NamedType type_name_static()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/geometry/geographic_coordinate_system.h#93
+```
 
 ### type_name
 
@@ -50,6 +62,9 @@ public NamedType type_name_static()
 public NamedType type_name()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/geometry/geographic_coordinate_system.h#98
+```
 
 ### info
 
@@ -57,6 +72,9 @@ public NamedType type_name()
 public const Info & info()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system.cpp#115
+```
 
 ### geographic_coordinate_systems
 
@@ -70,6 +88,9 @@ public absl::FixedArray<Info> geographic_coordinate_systems()
 public void import_coordinates(const GeographicCoordinateSystem<dimension> & crs)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system.cpp#154
+```
 
 ### geographic_coordinate_systems
 
@@ -77,6 +98,9 @@ public void import_coordinates(const GeographicCoordinateSystem<dimension> & crs
 public int geographic_coordinate_systems()
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/geometry/geographic_coordinate_system.cpp#135
+```
 
 
 

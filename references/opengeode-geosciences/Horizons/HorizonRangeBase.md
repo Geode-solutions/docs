@@ -1,12 +1,14 @@
 # class HorizonRangeBase
 
+```cpp
+Defined at ../include/geode/geosciences/explicit/mixin/core/horizons.h#49
+```
 
 ## Members
 
 ```cpp
-```cpp
 protected geode::PImpl<Impl> impl_
-```
+
 ```
 
 
@@ -22,56 +24,62 @@ Impl
 ### ~HorizonRangeBase
 
 ```cpp
-```cpp
 public void ~HorizonRangeBase()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#213
+```
 
 ### operator!=
 
 ```cpp
-```cpp
-public _Bool operator!=(const HorizonRangeBase & )
-```
+public bool operator!=(const HorizonRangeBase & )
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#218
+```
 
 ### operator++
 
 ```cpp
-```cpp
 public void operator++()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#225
+```
 
 ### HorizonRangeBase
 
-```cpp
 ```cpp
 protected void HorizonRangeBase(const Horizons<> & horizons)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#192
+```
 
 ### HorizonRangeBase
 
-```cpp
 ```cpp
 protected void HorizonRangeBase(HorizonRangeBase && other)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#199
+```
 
 ### HorizonRangeBase
 
 ```cpp
-```cpp
 protected void HorizonRangeBase(const HorizonRangeBase & other)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/mixin/core/horizons.cpp#206
+```
 
 
 
