@@ -64,16 +64,16 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a995b8f5f0b0ac39cbe7af64fd0506205"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><span class="n">Block</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0418407296b015103c7578c9c9c9a737"><span></span><span class="n">ALIAS_3D</span></span><span></span><span class="p">(</span><span class="n">Block</span><span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplex_brep_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a2a5faec16e54d7aacdd2bd585c47d173"><span></span><span class="n">local_simplex_remesh</span></span><span></span><span class="p">(</span>
-    <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplex_brep_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7c9c3509c2f7179f855519a4b7f543f4"><span></span><span class="n">local_simplex_remesh</span></span><span></span><span class="p">(</span>
+    <span class="n">BRep</span><span class="o">&amp;&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Metric3D</span><span class="o">&amp;</span> <span class="n">metric</span><span class="p">,</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">reference_wrapper</span><span class="o">&lt;</span><span class="k">const</span> <span class="n">Block3D</span><span class="o">&gt;&gt;</span> <span class="n">blocks</span>
     <span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">geode_simplex_brep_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a44f7d8b0f2ca4d5c49ac8e0b5093c10e"><span></span><span class="n">simplex_mesh</span></span><span></span><span class="p">(</span><span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span> <span class="k">const</span> <span class="n">Metric3D</span><span class="o">&amp;</span> <span class="n">metric</span><span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplex_brep_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a0c8a53f8ec4ba585042460bc3ecc8875"><span></span><span class="n">simplex_remesh</span></span><span></span><span class="p">(</span>
-    <span class="n">BRep</span><span class="o">&amp;</span> <span class="n">brep</span><span class="p">,</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">BRep</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplex_brep_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a9b46b24cb83948f5dea1084c7d29971b"><span></span><span class="n">simplex_remesh</span></span><span></span><span class="p">(</span>
+    <span class="n">BRep</span><span class="o">&amp;&amp;</span> <span class="n">brep</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Metric3D</span><span class="o">&amp;</span> <span class="n">metric</span>
     <span class="p">);</span>
 
@@ -117,8 +117,8 @@
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a96755a4b4b643ca905a8a29e0a07543b"><span></span><span class="n">ALIAS_2D</span></span><span></span><span class="p">(</span><span class="n">Surface</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac8802e946c9edf4aa6404f175a05f9b5"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">geode_simplex_section_api</span><span class="p">,</span> <span class="n">SimplexSection</span><span class="p">);</span>
 
-<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">Section</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplex_section_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ac43ebc5b42b2548b7f867a63fce85b03"><span></span><span class="n">simplex_remesh</span></span><span></span><span class="p">(</span>
-    <span class="n">Section</span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+<span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="n">Section</span><span class="p">,</span> <span class="n">ModelCopyMapping</span><span class="o">&gt;</span> <span class="n">geode_simplex_section_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a7a43b414051288acd6ed95ae837e64be"><span></span><span class="n">simplex_remesh</span></span><span></span><span class="p">(</span>
+    <span class="n">Section</span><span class="o">&amp;&amp;</span> <span class="n">section</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Metric2D</span><span class="o">&amp;</span> <span class="n">metric</span>
     <span class="p">);</span>
 
