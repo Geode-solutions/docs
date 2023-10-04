@@ -57,7 +57,7 @@ Defined at /github/workspace/src/geode/simplex/private/line/3d/remesh.cpp#16
 ### simplex_remesh
 
 ```cpp
-tuple simplex_remesh(BRep & brep, const Metric3D & metric)
+tuple simplex_remesh(BRep && brep, const Metric3D & metric)
 ```
 
 ```cpp
@@ -121,7 +121,7 @@ void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/simplex/private/solid/relax.cpp#597
+Defined at /github/workspace/src/geode/simplex/private/solid/relax.cpp#598
 ```
 
 ### relax_blocks
@@ -131,7 +131,7 @@ void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier, const Met
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/simplex/private/solid/relax.cpp#610
+Defined at /github/workspace/src/geode/simplex/private/solid/relax.cpp#611
 ```
 
 ### sample_blocks
@@ -297,7 +297,7 @@ Defined at /github/workspace/src/geode/simplex/private/surface/2d/relax.cpp#69
 ### simplex_remesh
 
 ```cpp
-tuple simplex_remesh(Section & section, const Metric2D & metric)
+tuple simplex_remesh(Section && section, const Metric2D & metric)
 ```
 
 ```cpp
@@ -407,17 +407,17 @@ Defined at /github/workspace/src/geode/simplex/metric/helpers/apriori_numbers.cp
 ### local_simplex_remesh
 
 ```cpp
-std::tuple<BRep, ModelCopyMapping> local_simplex_remesh(BRep & brep, const Metric3D & metric, std::vector<std::reference_wrapper<const Block3D> > blocks)
+std::tuple<BRep, ModelCopyMapping> local_simplex_remesh(BRep && brep, const Metric3D & metric, std::vector<std::reference_wrapper<const Block3D> > blocks)
 ```
 
 ### local_simplex_remesh
 
 ```cpp
-std::tuple<BRep, ModelCopyMapping> local_simplex_remesh(BRep & brep, const Metric3D & metric, int blocks)
+std::tuple<BRep, ModelCopyMapping> local_simplex_remesh(BRep && brep, const Metric3D & metric, int blocks)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/simplex/brep/local_remesh.cpp#219
+Defined at /github/workspace/src/geode/simplex/brep/local_remesh.cpp#222
 ```
 
 

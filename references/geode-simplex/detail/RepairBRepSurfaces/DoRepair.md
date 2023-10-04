@@ -103,7 +103,7 @@ protected OwnerPlane intersection_plane(const SurfaceMesh3D & mesh, const Polygo
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#741
+Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#742
 ```
 
 ### line_part
@@ -113,7 +113,7 @@ protected int line_part(const Line3D & line, index_t start, index_t end)
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#754
+Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#755
 ```
 
 ### new_triangle_edge_point
@@ -123,7 +123,7 @@ public Point3D new_triangle_edge_point(RepairSurface & surface, const PolygonEdg
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#801
+Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#802
 ```
 
 ### split_edge
@@ -133,7 +133,7 @@ protected bool split_edge(const PolygonEdge & edge)
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#863
+Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#864
 ```
 
 ### update_edges
@@ -143,7 +143,7 @@ protected void update_edges(absl::Span<const TriangulatedSurfaceModifier3D::Poly
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#894
+Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#895
 ```
 
 ### update_edges
@@ -153,7 +153,7 @@ protected void update_edges(const PolygonEdge & edge, absl::Span<const Triangula
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#904
+Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#905
 ```
 
 

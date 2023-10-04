@@ -1,7 +1,7 @@
 # class DoRepairDuplication
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#924
+Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#925
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public void DoRepairDuplication(RepairBRepSurfaces & repair, const Surface3D & e
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#927
+Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#928
 ```
 
 ### apply
@@ -29,7 +29,7 @@ public int apply()
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#937
+Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#938
 ```
 
 

@@ -120,11 +120,11 @@ Defined at /github/workspace/src/geode/simplex/private/line/common/private/remes
 ### simplex_remesh
 
 ```cpp
-tuple simplex_remesh(BRep & brep, const Metric3D & metric, const BRepRemeshOptions & options)
+tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/simplex/brep/detail/remesh.cpp#132
+Defined at /github/workspace/src/geode/simplex/brep/detail/remesh.cpp#136
 ```
 
 ### lock_vertices
@@ -206,11 +206,11 @@ Defined at /github/workspace/src/geode/simplex/private/core/private/check_degene
 ### simplex_remesh
 
 ```cpp
-tuple simplex_remesh(Section & section, const Metric2D & metric, const SectionRemeshOptions & options)
+tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/simplex/section/detail/remesh.cpp#41
+Defined at /github/workspace/src/geode/simplex/section/detail/remesh.cpp#44
 ```
 
 ### remesh_surface

@@ -99,7 +99,7 @@ Defined at /github/workspace/src/geode/simplex/metric/section_metric_constraints
 ### corner_metric
 
 ```cpp
-public optional corner_metric(const Corner2D & corner)
+public absl::optional<double> corner_metric(const Corner2D & corner)
 ```
 
 ```cpp
@@ -119,7 +119,7 @@ Defined at /github/workspace/src/geode/simplex/metric/section_metric_constraints
 ### line_metric
 
 ```cpp
-public optional line_metric(const Line2D & line)
+public absl::optional<double> line_metric(const Line2D & line)
 ```
 
 ```cpp
@@ -139,7 +139,7 @@ Defined at /github/workspace/src/geode/simplex/metric/section_metric_constraints
 ### surface_metric
 
 ```cpp
-public optional surface_metric(const Surface2D & surface)
+public absl::optional<double> surface_metric(const Surface2D & surface)
 ```
 
 ```cpp

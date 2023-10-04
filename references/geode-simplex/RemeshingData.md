@@ -25,7 +25,7 @@ Defined at ../../include/geode/simplex/private/core/remeshing_data.h#30
 ### RemeshingData
 
 ```cpp
-public void RemeshingData<DataModel>(Model & background, Model & output, const Metric<dimension> & metric)
+public void RemeshingData<DataModel>(Model && background, Model & output, const Metric<dimension> & metric)
 ```
 
 ```cpp
@@ -35,7 +35,7 @@ Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#2
 ### RemeshingData
 
 ```cpp
-public void RemeshingData<DataModel>(Model & background, Model & output, const Metric<dimension> & metric, const absl::flat_hash_map<ComponentType, std::vector<uuid> > & components_to_remesh)
+public void RemeshingData<DataModel>(Model && background, Model & output, const Metric<dimension> & metric, const absl::flat_hash_map<ComponentType, std::vector<uuid> > & components_to_remesh)
 ```
 
 ```cpp
@@ -155,7 +155,7 @@ Defined at /github/workspace/src/geode/simplex/private/core/remeshing_data.cpp#2
 ### RemeshingData
 
 ```cpp
-public void RemeshingData<DataModel>(Model & background, Model & output, const Metric<dimension> & metric, const int & components_to_remesh)
+public void RemeshingData<DataModel>(Model && background, Model & output, const Metric<dimension> & metric, const int & components_to_remesh)
 ```
 
 
