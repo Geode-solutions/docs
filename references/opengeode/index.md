@@ -1442,7 +1442,7 @@ FixedArray brep_coordinate_reference_systems(const BRep & brep)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/model_coordinate_reference_system.cpp#80
+Defined at /github/workspace/src/geode/model/helpers/model_coordinate_reference_system.cpp#188
 ```
 
 ### section_coordinate_reference_systems
@@ -1452,7 +1452,27 @@ FixedArray section_coordinate_reference_systems(const Section & section)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/model_coordinate_reference_system.cpp#91
+Defined at /github/workspace/src/geode/model/helpers/model_coordinate_reference_system.cpp#206
+```
+
+### brep_active_coordinate_reference_systems
+
+```cpp
+FixedArray brep_active_coordinate_reference_systems(const BRep & brep)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/model_coordinate_reference_system.cpp#217
+```
+
+### section_active_coordinate_reference_systems
+
+```cpp
+FixedArray section_active_coordinate_reference_systems(const Section & section)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/model_coordinate_reference_system.cpp#225
 ```
 
 ### register_image_serialize_pcontext
@@ -2714,7 +2734,7 @@ void create_brep_coordinate_system(const BRep & model, BRepBuilder & builder, st
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/create_coordinate_system.cpp#80
+Defined at /github/workspace/src/geode/model/helpers/create_coordinate_system.cpp#116
 ```
 
 ### create_section_coordinate_system
@@ -2724,7 +2744,27 @@ void create_section_coordinate_system(const Section & model, SectionBuilder & bu
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/create_coordinate_system.cpp#97
+Defined at /github/workspace/src/geode/model/helpers/create_coordinate_system.cpp#133
+```
+
+### set_brep_active_coordinate_system
+
+```cpp
+void set_brep_active_coordinate_system(const BRep & model, BRepBuilder & builder, string_view coordinate_system_name)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/create_coordinate_system.cpp#143
+```
+
+### set_section_active_coordinate_system
+
+```cpp
+void set_section_active_coordinate_system(const Section & model, SectionBuilder & builder, string_view coordinate_system_name)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/create_coordinate_system.cpp#157
 ```
 
 ### create_edged_curve_coordinate_system

@@ -79,7 +79,7 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 ### coordinate_reference_system_names
 
 ```cpp
-public absl::FixedArray<absl::string_view> coordinate_reference_system_names()
+public FixedArray coordinate_reference_system_names()
 ```
 
 ```cpp
