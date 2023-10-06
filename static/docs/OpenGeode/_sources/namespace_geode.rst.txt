@@ -45,6 +45,7 @@ namespace geode
 	struct_geode_MeshTypeTag.rst
 	struct_geode_MeshVertex.rst
 	struct_geode_ModelComponentMeshEdges.rst
+	struct_geode_ModelComponentMeshPolygons.rst
 	struct_geode_ModelMeshesAABBTree.rst
 	struct_geode_ModelMeshesElementMapping.rst
 	struct_geode_ModelMeshesVertexMapping.rst
@@ -57,6 +58,7 @@ namespace geode
 	struct_geode_PolyhedronFacetVertex.rst
 	struct_geode_PolyhedronVertex.rst
 	struct_geode_SectionComponentMeshEdges.rst
+	struct_geode_SectionComponentMeshPolygons.rst
 	struct_geode_SectionExtruderOptions.rst
 	struct_geode_SectionMeshesElementMapping.rst
 	struct_geode_SectionMeshesVertexMapping.rst
@@ -465,6 +467,7 @@ Overview
 	struct :ref:`MeshTypeTag<doxid-structgeode_1_1_mesh_type_tag>`;
 	struct :ref:`MeshVertex<doxid-structgeode_1_1_mesh_vertex>`;
 	struct :ref:`ModelComponentMeshEdges<doxid-structgeode_1_1_model_component_mesh_edges>`;
+	struct :ref:`ModelComponentMeshPolygons<doxid-structgeode_1_1_model_component_mesh_polygons>`;
 
 	template <index_t dimension>
 	struct :ref:`ModelMeshesAABBTree<doxid-structgeode_1_1_model_meshes_a_a_b_b_tree>`;
@@ -485,6 +488,7 @@ Overview
 	struct :ref:`PolyhedronFacetVertex<doxid-structgeode_1_1_polyhedron_facet_vertex>`;
 	struct :ref:`PolyhedronVertex<doxid-structgeode_1_1_polyhedron_vertex>`;
 	struct :ref:`SectionComponentMeshEdges<doxid-structgeode_1_1_section_component_mesh_edges>`;
+	struct :ref:`SectionComponentMeshPolygons<doxid-structgeode_1_1_section_component_mesh_polygons>`;
 	struct :ref:`SectionExtruderOptions<doxid-structgeode_1_1_section_extruder_options>`;
 	struct :ref:`SectionMeshesElementMapping<doxid-structgeode_1_1_section_meshes_element_mapping>`;
 	struct :ref:`SectionMeshesVertexMapping<doxid-structgeode_1_1_section_meshes_vertex_mapping>`;
@@ -2269,6 +2273,12 @@ Overview
 		const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& edge
 		);
 
+	:ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>` opengeode_model_api :target:`polygon_unique_vertices<doxid-namespacegeode_1acaa8422334bac674940a01fdb965a9c1>`(
+		const :ref:`Section<doxid-classgeode_1_1_section>`& model,
+		const Surface2D& surface,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id
+		);
+
 	:ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>` opengeode_model_api :target:`polygon_unique_vertices<doxid-namespacegeode_1a92f920078ed865f0dd1ed72498579220>`(
 		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
 		const Surface3D& surface,
@@ -2279,6 +2289,17 @@ Overview
 		const :ref:`BRep<doxid-classgeode_1_1_b_rep>`& model,
 		const Block3D& block,
 		const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& facet
+		);
+
+	:ref:`SectionComponentMeshPolygons<doxid-structgeode_1_1_section_component_mesh_polygons>` opengeode_model_api :target:`component_mesh_polygons<doxid-namespacegeode_1a6a1e6dedc8d0480e79986c1c2490abe6>`(
+		const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+		const :ref:`PolygonVertices<doxid-namespacegeode_1a2296da755f7ef7140e07007e5d56d86d>`& polygon_unique_vertices
+		);
+
+	:ref:`SectionComponentMeshPolygons<doxid-structgeode_1_1_section_component_mesh_polygons>` opengeode_model_api :target:`component_mesh_polygons<doxid-namespacegeode_1a8fece31103b288e2dd81f0f753f61aac>`(
+		const :ref:`Section<doxid-classgeode_1_1_section>`& section,
+		const Surface2D& surface,
+		:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` polygon_id
 		);
 
 	:ref:`BRepComponentMeshPolygons<doxid-structgeode_1_1_b_rep_component_mesh_polygons>` opengeode_model_api :target:`component_mesh_polygons<doxid-namespacegeode_1acff59324e9f8386e889cc79a163c2def>`(

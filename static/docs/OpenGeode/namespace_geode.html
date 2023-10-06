@@ -194,6 +194,7 @@
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_MeshTypeTag.html#doxid-structgeode-1-1-mesh-type-tag"><span class="std std-ref">MeshTypeTag</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_MeshVertex.html#doxid-structgeode-1-1-mesh-vertex"><span class="std std-ref">MeshVertex</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelComponentMeshEdges.html#doxid-structgeode-1-1-model-component-mesh-edges"><span class="std std-ref">ModelComponentMeshEdges</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelComponentMeshPolygons.html#doxid-structgeode-1-1-model-component-mesh-polygons"><span class="std std-ref">ModelComponentMeshPolygons</span></a><span></span><span class="p">;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_ModelMeshesAABBTree.html#doxid-structgeode-1-1-model-meshes-a-a-b-b-tree"><span class="std std-ref">ModelMeshesAABBTree</span></a><span></span><span class="p">;</span>
@@ -214,6 +215,7 @@
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_PolyhedronFacetVertex.html#doxid-structgeode-1-1-polyhedron-facet-vertex"><span class="std std-ref">PolyhedronFacetVertex</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_PolyhedronVertex.html#doxid-structgeode-1-1-polyhedron-vertex"><span class="std std-ref">PolyhedronVertex</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionComponentMeshEdges.html#doxid-structgeode-1-1-section-component-mesh-edges"><span class="std std-ref">SectionComponentMeshEdges</span></a><span></span><span class="p">;</span>
+<span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionComponentMeshPolygons.html#doxid-structgeode-1-1-section-component-mesh-polygons"><span class="std std-ref">SectionComponentMeshPolygons</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionExtruderOptions.html#doxid-structgeode-1-1-section-extruder-options"><span class="std std-ref">SectionExtruderOptions</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionMeshesElementMapping.html#doxid-structgeode-1-1-section-meshes-element-mapping"><span class="std std-ref">SectionMeshesElementMapping</span></a><span></span><span class="p">;</span>
 <span class="k">struct</span> <a class="reference internal" href="struct_geode_SectionMeshesVertexMapping.html#doxid-structgeode-1-1-section-meshes-vertex-mapping"><span class="std std-ref">SectionMeshesVertexMapping</span></a><span></span><span class="p">;</span>
@@ -1998,6 +2000,12 @@
     <span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacetEdge.html#doxid-structgeode-1-1-polyhedron-facet-edge"><span class="std std-ref">PolyhedronFacetEdge</span></a><span></span><span class="o">&amp;</span> <span class="n">edge</span>
     <span class="p">);</span>
 
+<a class="reference internal" href="#doxid-namespacegeode-1a2296da755f7ef7140e07007e5d56d86d"><span class="std std-ref">PolygonVertices</span></a><span></span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acaa8422334bac674940a01fdb965a9c1"><span></span><span class="n">polygon_unique_vertices</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon_id</span>
+    <span class="p">);</span>
+
 <a class="reference internal" href="#doxid-namespacegeode-1a2296da755f7ef7140e07007e5d56d86d"><span class="std std-ref">PolygonVertices</span></a><span></span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a92f920078ed865f0dd1ed72498579220"><span></span><span class="n">polygon_unique_vertices</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Surface3D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
@@ -2008,6 +2016,17 @@
     <span class="k">const</span> <a class="reference internal" href="class_geode_BRep.html#doxid-classgeode-1-1-b-rep"><span class="std std-ref">BRep</span></a><span></span><span class="o">&amp;</span> <span class="n">model</span><span class="p">,</span>
     <span class="k">const</span> <span class="n">Block3D</span><span class="o">&amp;</span> <span class="n">block</span><span class="p">,</span>
     <span class="k">const</span> <a class="reference internal" href="struct_geode_PolyhedronFacet.html#doxid-structgeode-1-1-polyhedron-facet"><span class="std std-ref">PolyhedronFacet</span></a><span></span><span class="o">&amp;</span> <span class="n">facet</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SectionComponentMeshPolygons.html#doxid-structgeode-1-1-section-component-mesh-polygons"><span class="std std-ref">SectionComponentMeshPolygons</span></a><span></span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6a1e6dedc8d0480e79986c1c2490abe6"><span></span><span class="n">component_mesh_polygons</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <a class="reference internal" href="#doxid-namespacegeode-1a2296da755f7ef7140e07007e5d56d86d"><span class="std std-ref">PolygonVertices</span></a><span></span><span class="o">&amp;</span> <span class="n">polygon_unique_vertices</span>
+    <span class="p">);</span>
+
+<a class="reference internal" href="struct_geode_SectionComponentMeshPolygons.html#doxid-structgeode-1-1-section-component-mesh-polygons"><span class="std std-ref">SectionComponentMeshPolygons</span></a><span></span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a8fece31103b288e2dd81f0f753f61aac"><span></span><span class="n">component_mesh_polygons</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_Section.html#doxid-classgeode-1-1-section"><span class="std std-ref">Section</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Surface2D</span><span class="o">&amp;</span> <span class="n">surface</span><span class="p">,</span>
+    <a class="reference internal" href="#doxid-namespacegeode-1a128f6686f72f4c3ef6c04172aacb7f05"><span class="std std-ref">index_t</span></a><span></span> <span class="n">polygon_id</span>
     <span class="p">);</span>
 
 <a class="reference internal" href="struct_geode_BRepComponentMeshPolygons.html#doxid-structgeode-1-1-b-rep-component-mesh-polygons"><span class="std std-ref">BRepComponentMeshPolygons</span></a><span></span> <span class="n">opengeode_model_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1acff59324e9f8386e889cc79a163c2def"><span></span><span class="n">component_mesh_polygons</span></span><span></span><span class="p">(</span>
