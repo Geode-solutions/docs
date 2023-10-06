@@ -1,0 +1,33 @@
+.. index:: pair: struct; geode::TrianglesAfter
+.. _doxid-structgeode_1_1_triangles_after:
+
+template struct geode::TrianglesAfter
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier_simulation.h>
+	
+	template <index_t dimension>
+	struct TrianglesAfter
+	{
+		// fields
+	
+		absl::FixedArray<:ref:`ModifiedTriangle<doxid-structgeode_1_1_modified_triangle>`<dimension>> :target:`modified<doxid-structgeode_1_1_triangles_after_1af42b9d6d201092f68572271f0429df2a>`;
+
+		// construction
+	
+		:target:`TrianglesAfter<doxid-structgeode_1_1_triangles_after_1ab3974c33cca51850172dbde18deed142>`(size_t nb_modified_triangles);
+	
+		:target:`TrianglesAfter<doxid-structgeode_1_1_triangles_after_1a6b78849e6ee9050d589988275b98d8e6>`(
+			size_t nb_modified_triangles,
+			const Triangle<dimension>& base_triangle
+			);
+	};

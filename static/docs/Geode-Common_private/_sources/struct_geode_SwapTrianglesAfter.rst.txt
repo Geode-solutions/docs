@@ -1,0 +1,52 @@
+.. index:: pair: struct; geode::SwapTrianglesAfter
+.. _doxid-structgeode_1_1_swap_triangles_after:
+
+template struct geode::SwapTrianglesAfter
+=========================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier_simulation.h>
+	
+	template <index_t dimension>
+	struct SwapTrianglesAfter
+	{
+		// fields
+	
+		absl::FixedArray<Triangle<dimension>> :ref:`new_triangles<doxid-structgeode_1_1_swap_triangles_after_1a7172b631f6235d85c7dbfbb9750d363a>`;
+		absl::FixedArray<index_t> :target:`old_triangles_ids<doxid-structgeode_1_1_swap_triangles_after_1a4e193e18a4733ec3df13676beac1d61f>`;
+
+		// construction
+	
+		:target:`SwapTrianglesAfter<doxid-structgeode_1_1_swap_triangles_after_1a0c00e76b06e34cf68f5dd03c29b5f618>`(size_t nb_new_triangles, size_t nb_old_triangles);
+	};
+.. _details-structgeode_1_1_swap_triangles_after:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; new_triangles
+.. _doxid-structgeode_1_1_swap_triangles_after_1a7172b631f6235d85c7dbfbb9750d363a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	absl::FixedArray<Triangle<dimension>> new_triangles
+
+These arrays may have different size.
+

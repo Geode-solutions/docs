@@ -40,6 +40,7 @@ namespace geode
 	struct_geode_ModelSplitTriangleInfo.rst
 	struct_geode_ModelSwapEdgeValidity.rst
 	struct_geode_ModifiedTetrahedron.rst
+	struct_geode_ModifiedTriangle.rst
 	struct_geode_Modifier.rst
 	struct_geode_Modifier-2.rst
 	struct_geode_Modifier-3.rst
@@ -82,7 +83,9 @@ namespace geode
 	struct_geode_SurfaceSwapEdgeValidity.rst
 	struct_geode_SurfaceTopologicalValidity.rst
 	struct_geode_SwapTetrahedraAfter.rst
+	struct_geode_SwapTrianglesAfter.rst
 	struct_geode_TetrahedraAfter.rst
+	struct_geode_TrianglesAfter.rst
 	class_geode_BRepGeometricModifier.rst
 	class_geode_BRepGridMetric.rst
 	class_geode_ConstantMetric.rst
@@ -167,11 +170,11 @@ Overview
 
 	struct :ref:`LineCollapseEdgeValidities<doxid-structgeode_1_1_line_collapse_edge_validities>`;
 
-	template <>
-	struct :ref:`Mapping<index_t><doxid-structgeode_1_1_mapping_3_01index__t_01_4>`;
-
 	template <typename Type>
 	struct :ref:`Mapping<doxid-structgeode_1_1_mapping>`;
+
+	template <>
+	struct :ref:`Mapping<index_t><doxid-structgeode_1_1_mapping_3_01index__t_01_4>`;
 
 	template <index_t dimension>
 	struct :ref:`ModelCollapseEdgeValidity<doxid-structgeode_1_1_model_collapse_edge_validity>`;
@@ -199,6 +202,9 @@ Overview
 
 	struct :ref:`ModifiedTetrahedron<doxid-structgeode_1_1_modified_tetrahedron>`;
 
+	template <index_t dimension>
+	struct :ref:`ModifiedTriangle<doxid-structgeode_1_1_modified_triangle>`;
+
 	template <>
 	struct :ref:`Modifier<Section><doxid-structgeode_1_1_modifier_3_01_section_01_4>`;
 
@@ -206,10 +212,10 @@ Overview
 	struct :ref:`Modifier<TetrahedralSolid3D><doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4>`;
 
 	template <index_t dimension>
-	struct :ref:`Modifier<EdgedCurve<dimension>><doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4>`;
+	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
 
 	template <index_t dimension>
-	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
+	struct :ref:`Modifier<EdgedCurve<dimension>><doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4>`;
 
 	template <typename Data>
 	struct :ref:`Modifier<doxid-structgeode_1_1_modifier>`;
@@ -217,11 +223,11 @@ Overview
 	template <>
 	struct :ref:`Modifier<BRep><doxid-structgeode_1_1_modifier_3_01_b_rep_01_4>`;
 
-	template <typename Type>
-	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
-
 	template <>
 	struct :ref:`MultiMapping<index_t><doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4>`;
+
+	template <typename Type>
+	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
 
 	struct :ref:`SectionCollapseEdgeValidity<doxid-structgeode_1_1_section_collapse_edge_validity>`;
 	struct :ref:`SectionElementsAfterOperation<doxid-structgeode_1_1_section_elements_after_operation>`;
@@ -281,7 +287,14 @@ Overview
 
 	struct :ref:`SurfaceTopologicalValidity<doxid-structgeode_1_1_surface_topological_validity>`;
 	struct :ref:`SwapTetrahedraAfter<doxid-structgeode_1_1_swap_tetrahedra_after>`;
+
+	template <index_t dimension>
+	struct :ref:`SwapTrianglesAfter<doxid-structgeode_1_1_swap_triangles_after>`;
+
 	struct :ref:`TetrahedraAfter<doxid-structgeode_1_1_tetrahedra_after>`;
+
+	template <index_t dimension>
+	struct :ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`;
 
 	// classes
 
@@ -977,6 +990,10 @@ Overview
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a4b6e0eef43419c522c8afdef30e0c045>`(TriangulatedSurfaceBuilder);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1cd4849bc62b1ce5604ec265c2a12ce4>`(:ref:`TriangulatedSurfaceEpsilonModifier<doxid-classgeode_1_1_triangulated_surface_epsilon_modifier>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1abf44db269e53cff0346ca0ff7a67be5a>`(:ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`);
+
+	template <index_t dimension>
+	Triangle<dimension> :target:`dummy_triangle<doxid-namespacegeode_1af8f5b3d2ea8faa08eaba08906288aacd>`();
+
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a3ec6ae4bebfc32f384d9ef4e4b5926fa>`(:ref:`SurfaceGeometricalValidity<doxid-structgeode_1_1_surface_geometrical_validity>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1acfd09706545bc6923f2420d484a48c08>`(:ref:`SurfaceCollapseEdgeValidity<doxid-structgeode_1_1_surface_collapse_edge_validity>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1af22b1297dd75942bf3bb8541c6f4e80e>`(:ref:`SurfaceSplitTriangleValidity<doxid-structgeode_1_1_surface_split_triangle_validity>`);
@@ -1073,35 +1090,39 @@ Overview
 		const Point<dimension>& point
 		);
 
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a269510b5b9a14bbd64123e6846850d11>`(:ref:`ModifiedTriangle<doxid-structgeode_1_1_modified_triangle>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1afa700d159b243294a231e8b8b7871aa0>`(:ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1af9a89756b5b24423a292d43fa74b6e99>`(:ref:`SwapTrianglesAfter<doxid-structgeode_1_1_swap_triangles_after>`);
+
 	template <index_t dimension>
-	std::tuple<absl::FixedArray<Triangle<dimension>>, absl::FixedArray<index_t>> :ref:`triangles_after_split_edge<doxid-namespacegeode_1a9d5c9f0114cb20f6c7e2718ee9cc17b4>`(
+	:ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`<dimension> :ref:`triangles_after_split_edge<doxid-namespacegeode_1aadd87c9df3c5004f7c1764dbe8ab8870>`(
 		const TriangulatedSurface<dimension>& mesh,
 		const PolygonEdge& edge,
 		const Point<dimension>& point
 		);
 
 	template <index_t dimension>
-	std::tuple<absl::FixedArray<Triangle<dimension>>, absl::FixedArray<index_t>> :ref:`triangles_after_collapse_edge<doxid-namespacegeode_1a9f7e1bed0d93d51af520870979b00a1b>`(
+	:ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`<dimension> :ref:`triangles_after_collapse_edge<doxid-namespacegeode_1a70d9c793d1505490fc48b05727f64094>`(
 		const TriangulatedSurface<dimension>& mesh,
 		const PolygonEdge& edge,
 		const Point<dimension>& point
 		);
 
 	template <index_t dimension>
-	std::tuple<absl::FixedArray<Triangle<dimension>>, absl::FixedArray<index_t>> :ref:`triangles_after_collapse_edge<doxid-namespacegeode_1a3b835115e61f46ade9a28032adb3fbae>`(
+	:ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`<dimension> :ref:`triangles_after_collapse_edge<doxid-namespacegeode_1a1887bb3027fd166ac2be1d7cf355dc22>`(
 		const TriangulatedSurface<dimension>& mesh,
 		index_t edge_id,
 		const Point<dimension>& point
 		);
 
 	template <index_t dimension>
-	absl::FixedArray<Triangle<dimension>> :ref:`triangles_after_swap_edge<doxid-namespacegeode_1af7bfff60df9c5fbe4d2e71bc947745c8>`(
+	:ref:`SwapTrianglesAfter<doxid-structgeode_1_1_swap_triangles_after>`<dimension> :ref:`triangles_after_swap_edge<doxid-namespacegeode_1aec738c68aa44c5aa50a70c62a01258d6>`(
 		const TriangulatedSurface<dimension>& mesh,
 		const PolygonEdge& edge
 		);
 
 	template <index_t dimension>
-	std::tuple<absl::FixedArray<Triangle<dimension>>, absl::FixedArray<index_t>> :ref:`triangles_after_move_point<doxid-namespacegeode_1acf8d771c3b155f973c0fda2fe3ecb969>`(
+	:ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`<dimension> :ref:`triangles_after_move_point<doxid-namespacegeode_1a2dd81d8292ed385d4a2c1ef3cfdd5c33>`(
 		const TriangulatedSurface<dimension>& mesh,
 		index_t vertex,
 		const Point<dimension>& point
@@ -2453,13 +2474,13 @@ Return the three triangles resulting from a triangle split. The split is not app
 		- Coordinates of the split point.
 
 .. index:: pair: function; triangles_after_split_edge
-.. _doxid-namespacegeode_1a9d5c9f0114cb20f6c7e2718ee9cc17b4:
+.. _doxid-namespacegeode_1aadd87c9df3c5004f7c1764dbe8ab8870:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
-	std::tuple<absl::FixedArray<Triangle<dimension>>, absl::FixedArray<index_t>> triangles_after_split_edge(
+	:ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`<dimension> triangles_after_split_edge(
 		const TriangulatedSurface<dimension>& mesh,
 		const PolygonEdge& edge,
 		const Point<dimension>& point
@@ -2490,13 +2511,13 @@ Return all the triangles resulting from a triangle edge split. The split is not 
 		- Coordinates of the split point.
 
 .. index:: pair: function; triangles_after_collapse_edge
-.. _doxid-namespacegeode_1a9f7e1bed0d93d51af520870979b00a1b:
+.. _doxid-namespacegeode_1a70d9c793d1505490fc48b05727f64094:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
-	std::tuple<absl::FixedArray<Triangle<dimension>>, absl::FixedArray<index_t>> triangles_after_collapse_edge(
+	:ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`<dimension> triangles_after_collapse_edge(
 		const TriangulatedSurface<dimension>& mesh,
 		const PolygonEdge& edge,
 		const Point<dimension>& point
@@ -2527,13 +2548,13 @@ Return all the triangles resulting from a triangle edge collapse. The collapse i
 		- Coordinates of the collapse point.
 
 .. index:: pair: function; triangles_after_collapse_edge
-.. _doxid-namespacegeode_1a3b835115e61f46ade9a28032adb3fbae:
+.. _doxid-namespacegeode_1a1887bb3027fd166ac2be1d7cf355dc22:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
-	std::tuple<absl::FixedArray<Triangle<dimension>>, absl::FixedArray<index_t>> triangles_after_collapse_edge(
+	:ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`<dimension> triangles_after_collapse_edge(
 		const TriangulatedSurface<dimension>& mesh,
 		index_t edge_id,
 		const Point<dimension>& point
@@ -2564,13 +2585,13 @@ Return all the triangles resulting from a triangle edge collapse. The collapse i
 		- Coordinates of the collapse point.
 
 .. index:: pair: function; triangles_after_swap_edge
-.. _doxid-namespacegeode_1af7bfff60df9c5fbe4d2e71bc947745c8:
+.. _doxid-namespacegeode_1aec738c68aa44c5aa50a70c62a01258d6:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
-	absl::FixedArray<Triangle<dimension>> triangles_after_swap_edge(
+	:ref:`SwapTrianglesAfter<doxid-structgeode_1_1_swap_triangles_after>`<dimension> triangles_after_swap_edge(
 		const TriangulatedSurface<dimension>& mesh,
 		const PolygonEdge& edge
 		)
@@ -2595,13 +2616,13 @@ Return all the triangles resulting from an edge swap. The swap is not applied.
 		- Index of the PolygonEdge to swap.
 
 .. index:: pair: function; triangles_after_move_point
-.. _doxid-namespacegeode_1acf8d771c3b155f973c0fda2fe3ecb969:
+.. _doxid-namespacegeode_1a2dd81d8292ed385d4a2c1ef3cfdd5c33:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
 	template <index_t dimension>
-	std::tuple<absl::FixedArray<Triangle<dimension>>, absl::FixedArray<index_t>> triangles_after_move_point(
+	:ref:`TrianglesAfter<doxid-structgeode_1_1_triangles_after>`<dimension> triangles_after_move_point(
 		const TriangulatedSurface<dimension>& mesh,
 		index_t vertex,
 		const Point<dimension>& point
