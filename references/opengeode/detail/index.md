@@ -548,11 +548,11 @@ Defined at ../../include/geode/model/representation/builder/detail/copy.h#347
 ### surface_component_mesh_polygons
 
 ```cpp
-flat_hash_map surface_component_mesh_polygons(const BRep & model, const PolygonVertices & polygon_unique_vertices)
+flat_hash_map surface_component_mesh_polygons(const Model & model, const PolygonVertices & polygon_unique_vertices)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#557
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#597
 ```
 
 ### block_component_mesh_polygons
@@ -562,7 +562,7 @@ flat_hash_map block_component_mesh_polygons(const BRep & brep, const PolygonVert
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#595
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#636
 ```
 
 ### build_model_boundaries

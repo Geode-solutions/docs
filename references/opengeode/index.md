@@ -125,6 +125,7 @@
 * [ModelBoundaries](ModelBoundaries.md)
 * [ModelBoundary](ModelBoundary.md)
 * [ModelComponentMeshEdges](ModelComponentMeshEdges.md)
+* [ModelComponentMeshPolygons](ModelComponentMeshPolygons.md)
 * [ModelConcatener](ModelConcatener.md)
 * [ModelMapping](ModelMapping.md)
 * [ModelMeshesAABBTree](ModelMeshesAABBTree.md)
@@ -238,6 +239,7 @@
 * [Relationships](Relationships.md)
 * [SectionBuilder](SectionBuilder.md)
 * [SectionComponentMeshEdges](SectionComponentMeshEdges.md)
+* [SectionComponentMeshPolygons](SectionComponentMeshPolygons.md)
 * [SectionExtruderOptions](SectionExtruderOptions.md)
 * [SectionInput](SectionInput.md)
 * [SectionMeshesElementMapping](SectionMeshesElementMapping.md)
@@ -2098,11 +2100,21 @@ Defined at /github/workspace/src/geode/geometry/distance.cpp#1020
 ### polygon_unique_vertices
 
 ```cpp
+InlinedVector polygon_unique_vertices(const Section & model, const Surface2D & surface, index_t polygon_id)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#689
+```
+
+### polygon_unique_vertices
+
+```cpp
 InlinedVector polygon_unique_vertices(const BRep & model, const Surface3D & surface, index_t polygon_id)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#647
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#695
 ```
 
 ### polygon_unique_vertices
@@ -2112,7 +2124,27 @@ InlinedVector polygon_unique_vertices(const BRep & model, const Block3D & block,
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#631
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#673
+```
+
+### component_mesh_polygons
+
+```cpp
+SectionComponentMeshPolygons component_mesh_polygons(const Section & section, const PolygonVertices & polygon_unique_vertices)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#701
+```
+
+### component_mesh_polygons
+
+```cpp
+SectionComponentMeshPolygons component_mesh_polygons(const Section & section, const Surface2D & surface, index_t polygon_id)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#708
 ```
 
 ### component_mesh_polygons
@@ -2122,7 +2154,7 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Polyg
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#663
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#715
 ```
 
 ### component_mesh_polygons
@@ -2132,7 +2164,7 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Surfa
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#669
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#721
 ```
 
 ### component_mesh_polygons
@@ -2142,7 +2174,7 @@ BRepComponentMeshPolygons component_mesh_polygons(const BRep & brep, const Block
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#676
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#728
 ```
 
 ### block_mesh_polyhedra_from_surface_polygon
@@ -2152,7 +2184,7 @@ PolyhedraAroundFacet block_mesh_polyhedra_from_surface_polygon(const BRep & mode
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#683
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#735
 ```
 
 ### block_vertices_from_surface_polygon
@@ -2162,7 +2194,7 @@ absl::InlinedVector<BlockPolyhedronFacet, 2> block_vertices_from_surface_polygon
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#698
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#750
 ```
 
 ### oriented_block_vertices_from_surface_polygon
@@ -2172,7 +2204,7 @@ BlockPolyhedraFacetVertices oriented_block_vertices_from_surface_polygon(const B
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#719
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#771
 ```
 
 ### surface_vertices_from_line_edge
@@ -2182,7 +2214,7 @@ absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#767
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#819
 ```
 
 ### oriented_surface_vertices_from_line_edge
@@ -2192,7 +2224,7 @@ SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const BRep 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#777
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#829
 ```
 
 ### surface_vertices_from_line_edge
@@ -2202,7 +2234,7 @@ absl::InlinedVector<SurfacePolygonEdge, 2> surface_vertices_from_line_edge(const
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#787
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#839
 ```
 
 ### oriented_surface_vertices_from_line_edge
@@ -2212,7 +2244,7 @@ SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const Secti
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#797
+Defined at /github/workspace/src/geode/model/helpers/component_mesh_polygons.cpp#849
 ```
 
 ### find_intersections_with_boundaries

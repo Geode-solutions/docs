@@ -1,7 +1,7 @@
 # struct BlockPolyhedronFacet
 
 ```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#75
+Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#92
 ```
 
 ## Members
@@ -27,7 +27,7 @@ public void BlockPolyhedronFacet()
 ```
 
 ```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#77
+Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#94
 ```
 
 ### BlockPolyhedronFacet
@@ -37,7 +37,7 @@ public void BlockPolyhedronFacet(PolyhedronFacet facet_in)
 ```
 
 ```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#78
+Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#95
 ```
 
 

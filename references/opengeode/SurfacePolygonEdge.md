@@ -1,7 +1,7 @@
 # struct SurfacePolygonEdge
 
 ```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#107
+Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#124
 ```
 
 ## Members
@@ -27,7 +27,7 @@ public void SurfacePolygonEdge()
 ```
 
 ```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#109
+Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#126
 ```
 
 ### SurfacePolygonEdge
@@ -37,7 +37,7 @@ public void SurfacePolygonEdge(PolygonEdge edge_in)
 ```
 
 ```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#110
+Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#127
 ```
 
 
