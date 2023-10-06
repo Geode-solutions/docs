@@ -1,7 +1,7 @@
 # struct SurfaceSplitEdgeValidity
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#72
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#81
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public bool operator bool()
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#75
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#84
 ```
 
 

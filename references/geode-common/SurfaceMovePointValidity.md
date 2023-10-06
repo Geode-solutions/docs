@@ -1,7 +1,7 @@
 # struct SurfaceMovePointValidity
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#97
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#106
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public bool operator bool()
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#100
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#109
 ```
 
 

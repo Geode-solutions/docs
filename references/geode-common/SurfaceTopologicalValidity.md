@@ -1,7 +1,7 @@
 # struct SurfaceTopologicalValidity
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#36
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#44
 ```
 
 ## Members
@@ -32,7 +32,7 @@ public bool operator bool()
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#38
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#46
 ```
 
 
