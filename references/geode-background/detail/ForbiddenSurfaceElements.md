@@ -22,7 +22,7 @@ public bool is_edge_forbidden(const EdgeVertices & edge, const VerticesModifier 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/surface/background_surface_repairer.cpp#881
+Defined at /github/workspace/src/geode/background/surface/background_surface_repairer.cpp#905
 ```
 
 

@@ -19,7 +19,7 @@ public void BackgroundSurfaceOptimizer(const BackgroundSurface & background, Bac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#996
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#998
 ```
 
 ### ~BackgroundSurfaceOptimizer
@@ -29,7 +29,7 @@ public void ~BackgroundSurfaceOptimizer()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1003
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1005
 ```
 
 ### optimize_background_elements
@@ -39,7 +39,7 @@ public void optimize_background_elements()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1007
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1009
 ```
 
 ### optimize_background_elements
@@ -49,7 +49,7 @@ public void optimize_background_elements(index_t first_element)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1013
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1015
 ```
 
 ### optimize_background_elements
@@ -59,7 +59,7 @@ public void optimize_background_elements(index_t first_element, Span immuable_ve
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1020
+Defined at /github/workspace/src/geode/background/surface/background_surface_optimizer.cpp#1022
 ```
 
 

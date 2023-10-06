@@ -45,7 +45,7 @@ void repair_background_surface_elements(const BackgroundSurface & background, Ba
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/surface/background_surface_repairer.cpp#867
+Defined at /github/workspace/src/geode/background/surface/background_surface_repairer.cpp#891
 ```
 
 ### repair_background_solid_elements
@@ -65,7 +65,7 @@ void decimate_brep(const BRep & brep, BRepGeometricModifier & modifier, string_v
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_decimator.cpp#691
+Defined at /github/workspace/src/geode/background/brep/background_brep_decimator.cpp#695
 ```
 
 ### decimate_background_brep
@@ -75,7 +75,7 @@ void decimate_background_brep(const BackgroundBRep & brep, BackgroundBRepModifie
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_decimator.cpp#700
+Defined at /github/workspace/src/geode/background/brep/background_brep_decimator.cpp#704
 ```
 
 

@@ -19,7 +19,7 @@ public void BackgroundBRepModifier(BackgroundBRep & background_brep)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#180
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#181
 ```
 
 ### ~BackgroundBRepModifier
@@ -29,7 +29,7 @@ public void ~BackgroundBRepModifier()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#188
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#189
 ```
 
 ### split_tetrahedron
@@ -39,17 +39,17 @@ public BRepSplitTetrahedronInfo split_tetrahedron(const Block3D & block, index_t
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#192
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#193
 ```
 
-### split_triangle
+### split_facet
 
 ```cpp
-public BRepSplitTriangleInfo split_triangle(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
+public BRepSplitTriangleInfo split_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#199
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#200
 ```
 
 ### split_triangle
@@ -59,7 +59,7 @@ public BRepSplitTriangleInfo split_triangle(const Surface3D & surface, index_t t
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#206
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#207
 ```
 
 ### split_edge
@@ -69,7 +69,7 @@ public BRepSplitPolygonEdgeInfo split_edge(const Block3D & block, const Polyhedr
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#213
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#214
 ```
 
 ### split_edge
@@ -79,7 +79,7 @@ public BRepSplitPolygonEdgeInfo split_edge(const Surface3D & surface, const Poly
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#220
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#221
 ```
 
 ### split_edge
@@ -89,7 +89,7 @@ public BRepSplitPolygonEdgeInfo split_edge(const Line3D & line, index_t edge, co
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#227
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#228
 ```
 
 ### collapse_edge
@@ -99,7 +99,7 @@ public BRepCollapsePolygonEdgeInfo collapse_edge(const Block3D & block, const Po
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#234
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#235
 ```
 
 ### collapse_edge
@@ -109,7 +109,7 @@ public BRepCollapsePolygonEdgeInfo collapse_edge(const Surface3D & surface, cons
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#241
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#242
 ```
 
 ### collapse_edge
@@ -119,7 +119,7 @@ public BRepCollapsePolygonEdgeInfo collapse_edge(const Line3D & line, index_t ed
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#248
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#249
 ```
 
 ### clean_background_brep
@@ -129,7 +129,7 @@ public CleanMappings clean_background_brep()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#255
+Defined at /github/workspace/src/geode/background/brep/background_brep_modifier.cpp#256
 ```
 
 
