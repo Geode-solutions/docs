@@ -17,6 +17,7 @@ namespace geode
 	struct_geode_BlockCollapseEdgeValidities.rst
 	struct_geode_BlockMovePointValidities.rst
 	struct_geode_BlockSplitEdgeValidities.rst
+	struct_geode_BlockSplitFacetValidities.rst
 	struct_geode_BlockSwapEdgeValidities.rst
 	struct_geode_CutPatchException.rst
 	struct_geode_CutPathException.rst
@@ -78,6 +79,7 @@ namespace geode
 	struct_geode_SurfacePathFinderException.rst
 	struct_geode_SurfaceSplitEdgeValidities.rst
 	struct_geode_SurfaceSplitEdgeValidity.rst
+	struct_geode_SurfaceSplitTriangleValidities.rst
 	struct_geode_SurfaceSplitTriangleValidity.rst
 	struct_geode_SurfaceSwapEdgeValidities.rst
 	struct_geode_SurfaceSwapEdgeValidity.rst
@@ -152,6 +154,7 @@ Overview
 	struct :ref:`BlockCollapseEdgeValidities<doxid-structgeode_1_1_block_collapse_edge_validities>`;
 	struct :ref:`BlockMovePointValidities<doxid-structgeode_1_1_block_move_point_validities>`;
 	struct :ref:`BlockSplitEdgeValidities<doxid-structgeode_1_1_block_split_edge_validities>`;
+	struct :ref:`BlockSplitFacetValidities<doxid-structgeode_1_1_block_split_facet_validities>`;
 	struct :ref:`BlockSwapEdgeValidities<doxid-structgeode_1_1_block_swap_edge_validities>`;
 	struct :ref:`CutPatchException<doxid-structgeode_1_1_cut_patch_exception>`;
 	struct :ref:`CutPathException<doxid-structgeode_1_1_cut_path_exception>`;
@@ -170,11 +173,11 @@ Overview
 
 	struct :ref:`LineCollapseEdgeValidities<doxid-structgeode_1_1_line_collapse_edge_validities>`;
 
-	template <typename Type>
-	struct :ref:`Mapping<doxid-structgeode_1_1_mapping>`;
-
 	template <>
 	struct :ref:`Mapping<index_t><doxid-structgeode_1_1_mapping_3_01index__t_01_4>`;
+
+	template <typename Type>
+	struct :ref:`Mapping<doxid-structgeode_1_1_mapping>`;
 
 	template <index_t dimension>
 	struct :ref:`ModelCollapseEdgeValidity<doxid-structgeode_1_1_model_collapse_edge_validity>`;
@@ -206,22 +209,22 @@ Overview
 	struct :ref:`ModifiedTriangle<doxid-structgeode_1_1_modified_triangle>`;
 
 	template <>
-	struct :ref:`Modifier<Section><doxid-structgeode_1_1_modifier_3_01_section_01_4>`;
-
-	template <>
 	struct :ref:`Modifier<TetrahedralSolid3D><doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4>`;
 
-	template <index_t dimension>
-	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
+	template <>
+	struct :ref:`Modifier<Section><doxid-structgeode_1_1_modifier_3_01_section_01_4>`;
 
 	template <index_t dimension>
 	struct :ref:`Modifier<EdgedCurve<dimension>><doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4>`;
 
+	template <>
+	struct :ref:`Modifier<BRep><doxid-structgeode_1_1_modifier_3_01_b_rep_01_4>`;
+
 	template <typename Data>
 	struct :ref:`Modifier<doxid-structgeode_1_1_modifier>`;
 
-	template <>
-	struct :ref:`Modifier<BRep><doxid-structgeode_1_1_modifier_3_01_b_rep_01_4>`;
+	template <index_t dimension>
+	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
 
 	template <>
 	struct :ref:`MultiMapping<index_t><doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4>`;
@@ -275,6 +278,9 @@ Overview
 
 	template <index_t dimension>
 	struct :ref:`SurfaceSplitEdgeValidity<doxid-structgeode_1_1_surface_split_edge_validity>`;
+
+	template <index_t dimension>
+	struct :ref:`SurfaceSplitTriangleValidities<doxid-structgeode_1_1_surface_split_triangle_validities>`;
 
 	template <index_t dimension>
 	struct :ref:`SurfaceSplitTriangleValidity<doxid-structgeode_1_1_surface_split_triangle_validity>`;
@@ -632,6 +638,20 @@ Overview
 		const Block3D& block,
 		const PolyhedronFacetEdge& edge,
 		index_t apex
+		);
+
+	bool geode_common_modifier_model_api :target:`is_split_facet_valid<doxid-namespacegeode_1a280c6bffac4861b7c000a86038231c4d>`(
+		const BRep& brep,
+		const Block3D& block,
+		const PolyhedronFacet& facet,
+		const Point3D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_split_triangle_valid<doxid-namespacegeode_1abde7f4c4516b6e2b7a0aca1ed62ee1fc>`(
+		const BRep& brep,
+		const Surface3D& surface,
+		index_t triangle,
+		const Point3D& point
 		);
 
 	bool geode_common_modifier_model_api :ref:`is_swap_edge_valid<doxid-namespacegeode_1a60f35d93374174670d346aaeedee1b1d>`(

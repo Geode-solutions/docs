@@ -55,7 +55,7 @@ class geode::BRepGeometricModifier
 			const Point3D& point
 			);
 	
-		:ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_b_rep_split_triangle_info>` :target:`split_triangle<doxid-classgeode_1_1_b_rep_geometric_modifier_1a34a167161ebb3c02001af93568b4c0d1>`(
+		:ref:`BRepSplitTriangleInfo<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_b_rep_split_triangle_info>` :target:`split_facet<doxid-classgeode_1_1_b_rep_geometric_modifier_1aa8a1186890d4b23534b3e65ad2447081>`(
 			const Block3D& block,
 			const PolyhedronFacet& facet,
 			const Point3D& point
