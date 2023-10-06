@@ -206,6 +206,8 @@ namespace geode::detail
 		const Coords<dimension>& other
 		);
 
+	:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` opengeode_geometry_api :target:`position_to_index<doxid-namespacegeode_1_1detail_1ae6693817838544c5d914b40535ea9b42>`(:ref:`Position<doxid-namespacegeode_1a316ec3486ec794c86021f0fea71f54a7>` position);
+
 	template <typename Container>
 	void :target:`polygon_sort<doxid-namespacegeode_1_1detail_1aa6d785a69b7f3b0704d67b3672f234e1>`(Container& vertices);
 
