@@ -3904,7 +3904,7 @@ Defined at /github/workspace/src/geode/basic/file.cpp#109
 
 
 ```cpp
-Defined at ../../include/geode/geometry/information.h#37
+Defined at ../../include/geode/geometry/information.h#39
 ```
 
 | enum class Side |
@@ -3917,7 +3917,7 @@ Defined at ../../include/geode/geometry/information.h#37
 
 
 ```cpp
-Defined at ../../include/geode/geometry/information.h#28
+Defined at ../../include/geode/geometry/information.h#30
 ```
 
 | enum class IntersectionType |

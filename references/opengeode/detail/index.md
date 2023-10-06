@@ -185,6 +185,16 @@ void add_to_message(std::string & message, geode::index_t nb_components, string_
 Defined at ../../include/geode/basic/detail/geode_input_impl.h#83
 ```
 
+### position_to_index
+
+```cpp
+local_index_t position_to_index(Position position)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geometry/information.cpp#32
+```
+
 ### side
 
 ```cpp
