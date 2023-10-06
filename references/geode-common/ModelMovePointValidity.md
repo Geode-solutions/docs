@@ -1,7 +1,7 @@
 # struct ModelMovePointValidity
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#170
+Defined at ../include/geode/common/modifier/model/information.h#180
 ```
 
 ## Members

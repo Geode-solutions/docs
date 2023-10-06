@@ -19,6 +19,7 @@
 * [BlockCollapseEdgeValidities](BlockCollapseEdgeValidities.md)
 * [BlockMovePointValidities](BlockMovePointValidities.md)
 * [BlockSplitEdgeValidities](BlockSplitEdgeValidities.md)
+* [BlockSplitFacetValidities](BlockSplitFacetValidities.md)
 * [BlockSwapEdgeValidities](BlockSwapEdgeValidities.md)
 * [CommonCoreLibrary](CommonCoreLibrary.md)
 * [CommonCutterSolidLibrary](CommonCutterSolidLibrary.md)
@@ -101,6 +102,7 @@
 * [SurfaceSegmentFinder](SurfaceSegmentFinder.md)
 * [SurfaceSplitEdgeValidities](SurfaceSplitEdgeValidities.md)
 * [SurfaceSplitEdgeValidity](SurfaceSplitEdgeValidity.md)
+* [SurfaceSplitTriangleValidities](SurfaceSplitTriangleValidities.md)
 * [SurfaceSplitTriangleValidity](SurfaceSplitTriangleValidity.md)
 * [SurfaceSwapEdgeValidities](SurfaceSwapEdgeValidities.md)
 * [SurfaceSwapEdgeValidity](SurfaceSwapEdgeValidity.md)
@@ -827,7 +829,7 @@ bool is_split_triangle_valid(const TriangulatedSurface<dimension> & mesh, index_
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#391
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#413
 ```
 
  Check if a triangle split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
@@ -846,6 +848,10 @@ Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surf
 SurfaceSplitTriangleValidity<dimension> split_triangle_validity(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#430
+```
+
 ### is_split_edge_valid
 
 ```cpp
@@ -853,7 +859,7 @@ bool is_split_edge_valid(const TriangulatedSurface<dimension> & mesh, const Poly
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#408
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#439
 ```
 
  Check if an edge split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
@@ -873,7 +879,7 @@ SurfaceSplitEdgeValidity<dimension> split_edge_validity(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#426
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#457
 ```
 
 ### is_collapse_edge_valid
@@ -883,7 +889,7 @@ bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const P
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#435
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#466
 ```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
@@ -903,7 +909,7 @@ bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#444
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#475
 ```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
@@ -923,7 +929,7 @@ SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const Triangulated
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#514
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#545
 ```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
@@ -943,7 +949,7 @@ SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const Triangulated
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#524
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#555
 ```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
@@ -963,7 +969,7 @@ bool is_swap_edge_valid(const TriangulatedSurface<dimension> & mesh, const Polyg
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#453
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#484
 ```
 
  Check if an edge swap will keep the mesh valid, meaning the sign of the triangle areas are positive. The swap is not applied.
@@ -981,7 +987,7 @@ SurfaceSwapEdgeValidity<dimension> swap_edge_validity(const TriangulatedSurface<
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#473
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#504
 ```
 
 ### is_move_point_valid
@@ -991,7 +997,7 @@ bool is_move_point_valid(const TriangulatedSurface<dimension> & mesh, index_t ve
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#486
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#517
 ```
 
  Check if a vertex relocation will keep the mesh valid, meaning the sign of the triangle areas are positive. The relocation is not applied.
@@ -1011,7 +1017,7 @@ SurfaceMovePointValidity<dimension> move_point_validity(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#505
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#536
 ```
 
 ### triangles_after_split_triangle
@@ -1021,7 +1027,7 @@ std::array<Triangle<dimension>, 3> triangles_after_split_triangle(const Triangul
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#534
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#565
 ```
 
  Return the three triangles resulting from a triangle split. The split is not applied.
@@ -1039,7 +1045,7 @@ TrianglesAfter<dimension> triangles_after_split_edge(const TriangulatedSurface<d
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#550
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#581
 ```
 
  Return all the triangles resulting from a triangle edge split. The split is not applied.
@@ -1057,7 +1063,7 @@ TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#569
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#600
 ```
 
  Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
@@ -1075,7 +1081,7 @@ TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#579
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#610
 ```
 
  Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
@@ -1093,7 +1099,7 @@ SwapTrianglesAfter<dimension> triangles_after_swap_edge(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#589
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#620
 ```
 
  Return all the triangles resulting from an edge swap. The swap is not applied.
@@ -1109,7 +1115,7 @@ TrianglesAfter<dimension> triangles_after_move_point(const TriangulatedSurface<d
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#612
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#643
 ```
 
  Return all the triangles resulting from a vertex relocation. The vertex relocation is not applied.
@@ -1127,7 +1133,7 @@ bool is_collapse_edge_valid(const BRep & brep, const Block3D & block, const Poly
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#675
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#718
 ```
 
 ### is_collapse_edge_valid
@@ -1137,7 +1143,7 @@ bool is_collapse_edge_valid(const BRep & brep, const Surface3D & surface, const 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#689
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#732
 ```
 
 ### is_collapse_edge_valid
@@ -1147,7 +1153,7 @@ bool is_collapse_edge_valid(const BRep & brep, const Line3D & line, index_t edge
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#698
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#741
 ```
 
 ### collapse_edge_validity
@@ -1157,7 +1163,7 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#707
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#750
 ```
 
 ### collapse_edge_validity
@@ -1167,7 +1173,7 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Surface
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#716
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#759
 ```
 
 ### collapse_edge_validity
@@ -1177,7 +1183,7 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Line3D 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#725
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#768
 ```
 
 ### is_split_edge_valid
@@ -1187,7 +1193,7 @@ bool is_split_edge_valid(const BRep & brep, const Block3D & block, const Polyhed
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#734
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#777
 ```
 
 ### is_split_edge_valid
@@ -1197,7 +1203,7 @@ bool is_split_edge_valid(const BRep & brep, const Surface3D & surface, const Pol
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#743
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#786
 ```
 
 ### is_split_edge_valid
@@ -1207,7 +1213,7 @@ bool is_split_edge_valid(const BRep & brep, const Line3D & line, index_t edge, c
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#752
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#795
 ```
 
 ### split_edge_validity
@@ -1217,7 +1223,7 @@ BRepSplitEdgeValidity split_edge_validity(const BRep & brep, const Block3D & blo
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#761
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#804
 ```
 
 ### split_edge_validity
@@ -1227,7 +1233,7 @@ BRepSplitEdgeValidity split_edge_validity(const BRep & brep, const Surface3D & s
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#770
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#813
 ```
 
 ### split_edge_validity
@@ -1237,7 +1243,7 @@ BRepSplitEdgeValidity split_edge_validity(const BRep & brep, const Line3D & line
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#779
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#840
 ```
 
 ### is_swap_edge_valid
@@ -1247,7 +1253,27 @@ bool is_swap_edge_valid(const BRep & brep, const Block3D & block, const Polyhedr
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#788
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#849
+```
+
+### is_split_facet_valid
+
+```cpp
+bool is_split_facet_valid(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#822
+```
+
+### is_split_triangle_valid
+
+```cpp
+bool is_split_triangle_valid(const BRep & brep, const Surface3D & surface, index_t triangle, const Point3D & point)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#831
 ```
 
 ### is_swap_edge_valid
@@ -1257,7 +1283,7 @@ bool is_swap_edge_valid(const BRep & brep, const Surface3D & surface, const Poly
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#814
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#875
 ```
 
  The chosen apex is the opposite vertex of the given PolygonEdge
@@ -1269,7 +1295,7 @@ BRepSwapEdgeValidity swap_edge_validity(const BRep & brep, const Block3D & block
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#831
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#892
 ```
 
 ### swap_edge_validity
@@ -1279,7 +1305,7 @@ BRepSwapEdgeValidity swap_edge_validity(const BRep & brep, const Surface3D & sur
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#841
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#902
 ```
 
  The chosen apex is the opposite vertex of the given PolygonEdge
@@ -1291,7 +1317,7 @@ bool is_move_point_valid(const BRep & brep, index_t unique_vertex, const Point3D
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#852
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#913
 ```
 
 ### move_point_validity
@@ -1301,7 +1327,7 @@ BRepMovePointValidity move_point_validity(const BRep & brep, index_t unique_vert
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#872
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#933
 ```
 
 ### elements_after_collapse_edge
@@ -1311,7 +1337,7 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#883
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#944
 ```
 
 ### elements_after_collapse_edge
@@ -1321,7 +1347,7 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#892
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#953
 ```
 
 ### elements_after_collapse_edge
@@ -1331,7 +1357,7 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#901
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#962
 ```
 
 ### cut_along_patch

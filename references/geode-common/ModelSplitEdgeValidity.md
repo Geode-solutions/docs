@@ -1,7 +1,7 @@
 # struct ModelSplitEdgeValidity
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#143
+Defined at ../include/geode/common/modifier/model/information.h#153
 ```
 
 ## Members
@@ -22,7 +22,7 @@ public bool operator bool()
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#145
+Defined at ../include/geode/common/modifier/model/information.h#155
 ```
 
 

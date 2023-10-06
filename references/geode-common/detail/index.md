@@ -63,7 +63,7 @@ int triangles_after_collapse_edge(const BRep & brep, const struct BRepComponentM
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#912
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#973
 ```
 
 ### tetrahedra_after_collapse_edge
@@ -73,7 +73,7 @@ int tetrahedra_after_collapse_edge(const BRep & brep, const struct BRepComponent
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#921
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#982
 ```
 
 ### snapping_detection
@@ -153,7 +153,7 @@ bool is_move_point_valid(const Model & model, index_t unique_vertex, const Point
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#29
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#30
 ```
 
 ### sort_cmvs
@@ -163,7 +163,7 @@ int sort_cmvs(absl::Span<const ComponentMeshVertex> cmvs, const geode::Component
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#53
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#54
 ```
 
 ### move_point_surface_validity
@@ -173,7 +173,7 @@ SurfaceMovePointValidities<Model::dim> move_point_surface_validity(const Model &
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#69
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#70
 ```
 
 ### invalid_lines
@@ -183,7 +183,7 @@ int invalid_lines(const Model & model, const ModelComponentMeshEdges & edges)
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#98
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#99
 ```
 
 ### invalid_surfaces
@@ -193,7 +193,7 @@ int invalid_surfaces(const Model & model, const ModelComponentMeshEdges & edges)
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#132
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#133
 ```
 
 ### invalid_collapse_edges
@@ -203,7 +203,7 @@ typename SurfaceCollapseEdgeValidities<Model::dim>::MeshInvalidities invalid_col
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#303
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#304
 ```
 
 ### invalid_split_edges
@@ -213,7 +213,17 @@ typename SurfaceSplitEdgeValidities<Model::dim>::MeshInvalidities invalid_split_
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#330
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#331
+```
+
+### invalid_split_triangles
+
+```cpp
+typename SurfaceSplitTriangleValidities<Model::dim>::MeshInvalidities invalid_split_triangles(const Model & model, const int & surface_polygons, const Point<Model::dim> & point)
+```
+
+```cpp
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#358
 ```
 
 ### invalid_swap_edges
@@ -223,7 +233,7 @@ flat_hash_map invalid_swap_edges(const Model & model, const struct ModelComponen
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#357
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#387
 ```
 
 ### collapse_edge_validity
@@ -233,7 +243,7 @@ typename ModelCollapseEdgeValidity<Model::dim>::SurfaceCollapseEdgeValidities co
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#380
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#410
 ```
 
 ### model_triangles_after_collapse_edge
@@ -243,7 +253,7 @@ typename ModelElementsAfterOperation<Model::dim>::SurfaceTriangles model_triangl
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#409
+Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier_simulation.h#439
 ```
 
 ### triangles_after_collapse_edge

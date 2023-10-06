@@ -74,10 +74,10 @@ public BRepSplitTetrahedronInfo split_tetrahedron(const Block3D & block, index_t
 Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier.cpp#613
 ```
 
-### split_triangle
+### split_facet
 
 ```cpp
-public BRepSplitTriangleInfo split_triangle(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
+public BRepSplitTriangleInfo split_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 ```cpp

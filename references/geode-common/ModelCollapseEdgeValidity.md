@@ -1,7 +1,7 @@
 # struct ModelCollapseEdgeValidity
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#127
+Defined at ../include/geode/common/modifier/model/information.h#137
 ```
 
 ## Members
@@ -27,7 +27,7 @@ public bool operator bool()
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#129
+Defined at ../include/geode/common/modifier/model/information.h#139
 ```
 
 
