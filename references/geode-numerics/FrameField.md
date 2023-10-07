@@ -19,7 +19,7 @@ public void FrameField(BRep & brep)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#234
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#233
 ```
 
 ### FrameField
@@ -29,7 +29,7 @@ public void FrameField(FrameField && other)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#236
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#235
 ```
 
 ### ~FrameField
@@ -39,7 +39,7 @@ public void ~FrameField()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#241
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#240
 ```
 
 ### brep
@@ -49,7 +49,7 @@ public const BRep & brep()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#248
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#247
 ```
 
 ### solid
@@ -59,7 +59,7 @@ public const TetrahedralSolid3D & solid()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#243
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#242
 ```
 
 ### block_element
@@ -69,7 +69,7 @@ public const MeshElement & block_element(index_t tetrahedron)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#252
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#251
 ```
 
 ### frame
@@ -79,7 +79,7 @@ public const Frame3D & frame(index_t vertex)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#257
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#256
 ```
 
 ### set_frame
@@ -89,7 +89,7 @@ public void set_frame(index_t vertex, Frame3D frame)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#262
+Defined at /github/workspace/src/geode/numerics/frame_field/frame_field.cpp#261
 ```
 
 
