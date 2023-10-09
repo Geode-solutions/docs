@@ -2674,7 +2674,7 @@ std::tuple<Section, ModelCopyMapping> convert_brep_into_section(const BRep & bre
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/convert_brep_section.cpp#426
+Defined at /github/workspace/src/geode/model/helpers/convert_brep_section.cpp#425
 ```
 
 ### convert_section_into_brep
@@ -2684,7 +2684,7 @@ tuple convert_section_into_brep(const Section & section, index_t axis_to_add, do
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/convert_brep_section.cpp#460
+Defined at /github/workspace/src/geode/model/helpers/convert_brep_section.cpp#459
 ```
 
 ### extrude_section_to_brep
@@ -2694,7 +2694,7 @@ BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptio
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/helpers/convert_brep_section.cpp#495
+Defined at /github/workspace/src/geode/model/helpers/convert_brep_section.cpp#494
 ```
 
 ### convert_edged_curve3d_into_2d

@@ -1,7 +1,7 @@
 # class GenericMapping
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#172
+Defined at ../../include/geode/basic/mapping.h#176
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public void map(const T1 & in, const T2 & out)
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#175
+Defined at ../../include/geode/basic/mapping.h#179
 ```
 
 ### erase_in
@@ -29,7 +29,7 @@ public void erase_in(const T1 & in)
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#181
+Defined at ../../include/geode/basic/mapping.h#185
 ```
 
 ### erase_out
@@ -39,7 +39,7 @@ public void erase_out(const T2 & out)
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#200
+Defined at ../../include/geode/basic/mapping.h#204
 ```
 
 ### size_in
@@ -49,7 +49,7 @@ public index_t size_in()
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#219
+Defined at ../../include/geode/basic/mapping.h#223
 ```
 
 ### size_out
@@ -59,7 +59,7 @@ public index_t size_out()
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#224
+Defined at ../../include/geode/basic/mapping.h#228
 ```
 
 

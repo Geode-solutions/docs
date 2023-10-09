@@ -1,7 +1,7 @@
 # struct ModelMeshesVertexMapping
 
 ```cpp
-Defined at ../../include/geode/model/representation/core/mapping.h#113
+Defined at ../../include/geode/model/representation/core/mapping.h#119
 ```
 
 ## Members

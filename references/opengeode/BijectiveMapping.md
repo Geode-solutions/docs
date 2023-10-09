@@ -1,7 +1,7 @@
 # class BijectiveMapping
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#114
+Defined at ../../include/geode/basic/mapping.h#118
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public void map(const T1 & in, const T2 & out)
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#117
+Defined at ../../include/geode/basic/mapping.h#121
 ```
 
 ### erase_in
@@ -29,7 +29,7 @@ public void erase_in(const T1 & in)
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#130
+Defined at ../../include/geode/basic/mapping.h#134
 ```
 
 ### erase_out
@@ -39,7 +39,7 @@ public void erase_out(const T2 & out)
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#141
+Defined at ../../include/geode/basic/mapping.h#145
 ```
 
 ### size
@@ -49,7 +49,7 @@ public index_t size()
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/mapping.h#152
+Defined at ../../include/geode/basic/mapping.h#156
 ```
 
 

@@ -59,7 +59,7 @@ Defined at ../../include/geode/basic/attribute.h#250
 ### default_value
 
 ```cpp
-public T default_value()
+public const T & default_value()
 ```
 
 ```cpp

@@ -1,7 +1,7 @@
 # struct SectionMeshesVertexMapping
 
 ```cpp
-Defined at ../../include/geode/model/representation/core/mapping.h#120
+Defined at ../../include/geode/model/representation/core/mapping.h#126
 ```
 
 ```cpp

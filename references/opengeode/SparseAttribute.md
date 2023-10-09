@@ -49,7 +49,7 @@ Defined at ../../include/geode/basic/attribute.h#778
 ### default_value
 
 ```cpp
-public T default_value()
+public const T & default_value()
 ```
 
 ```cpp
@@ -93,7 +93,7 @@ public std::shared_ptr<AttributeBase> clone(class AttributeBase::AttributeKey )
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/attribute.h#881
+Defined at ../../include/geode/basic/attribute.h#883
 ```
 
 ### extract
@@ -103,7 +103,7 @@ public std::shared_ptr<AttributeBase> extract(absl::Span<const index_t> old2new,
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/attribute.h#910
+Defined at ../../include/geode/basic/attribute.h#912
 ```
 
 

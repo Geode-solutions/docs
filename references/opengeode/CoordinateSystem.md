@@ -1,7 +1,7 @@
 # class CoordinateSystem
 
 ```cpp
-Defined at ../../include/geode/geometry/coordinate_system.h#35
+Defined at ../../include/geode/geometry/coordinate_system.h#36
 ```
 
 ```cpp

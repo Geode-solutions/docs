@@ -44,6 +44,56 @@ public void uuid(string_view string)
 Defined at /github/workspace/src/geode/basic/uuid.cpp#123
 ```
 
+### uuid
+
+```cpp
+public void uuid(const uuid & )
+```
+
+```cpp
+Defined at ../../include/geode/basic/uuid.h#107
+```
+
+### uuid
+
+```cpp
+public void uuid(uuid && )
+```
+
+```cpp
+Defined at ../../include/geode/basic/uuid.h#108
+```
+
+### operator=
+
+```cpp
+public uuid & operator=(uuid && other)
+```
+
+```cpp
+Defined at ../../include/geode/basic/uuid.h#109
+```
+
+### operator=
+
+```cpp
+public uuid & operator=(const uuid & other)
+```
+
+```cpp
+Defined at ../../include/geode/basic/uuid.h#110
+```
+
+### ~uuid
+
+```cpp
+public void ~uuid()
+```
+
+```cpp
+Defined at ../../include/geode/basic/uuid.h#111
+```
+
 ### operator==
 
 ```cpp

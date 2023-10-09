@@ -1,7 +1,7 @@
 # struct BRepMeshesVertexMapping
 
 ```cpp
-Defined at ../../include/geode/model/representation/core/mapping.h#124
+Defined at ../../include/geode/model/representation/core/mapping.h#130
 ```
 
 ```cpp
