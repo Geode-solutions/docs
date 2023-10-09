@@ -125,7 +125,7 @@ public std::pair<double, double> compute_angles(const PolygonData & data)
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#716
+Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#715
 ```
 
 

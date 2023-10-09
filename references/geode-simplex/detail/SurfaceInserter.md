@@ -1,7 +1,7 @@
 # class SurfaceInserter
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/inserter.h#24
+Defined at ../../include/geode/simplex/private/surface/common/private/inserter.h#31
 ```
 
 ## Functions
@@ -13,7 +13,7 @@ public void SurfaceInserter<Data>(Data & data, const Surface<dimension> & surfac
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/inserter.h#29
+Defined at ../../include/geode/simplex/private/surface/common/private/inserter.h#36
 ```
 
 ### split_triangle
@@ -23,7 +23,7 @@ public int split_triangle(int triangles, absl::Span<const Point<dimension> > poi
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/inserter.h#40
+Defined at ../../include/geode/simplex/private/surface/common/private/inserter.h#47
 ```
 
 ### unique_vertices
@@ -33,7 +33,7 @@ public Span unique_vertices()
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/inserter.h#54
+Defined at ../../include/geode/simplex/private/surface/common/private/inserter.h#61
 ```
 
 
