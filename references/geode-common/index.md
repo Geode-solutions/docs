@@ -15,6 +15,7 @@
 * [BRepGridMetric](BRepGridMetric.md)
 * [BRepMovePointValidity](BRepMovePointValidity.md)
 * [BRepSplitEdgeValidity](BRepSplitEdgeValidity.md)
+* [BRepSplitTriangleValidity](BRepSplitTriangleValidity.md)
 * [BRepSwapEdgeValidity](BRepSwapEdgeValidity.md)
 * [BlockCollapseEdgeValidities](BlockCollapseEdgeValidities.md)
 * [BlockMovePointValidities](BlockMovePointValidities.md)
@@ -56,6 +57,7 @@
 * [ModelSplitEdgeValidity](ModelSplitEdgeValidity.md)
 * [ModelSplitPolygonEdgeInfo](ModelSplitPolygonEdgeInfo.md)
 * [ModelSplitTriangleInfo](ModelSplitTriangleInfo.md)
+* [ModelSplitTriangleValidity](ModelSplitTriangleValidity.md)
 * [ModelSwapEdgeValidity](ModelSwapEdgeValidity.md)
 * [ModifiedTetrahedron](ModifiedTetrahedron.md)
 * [ModifiedTriangle](ModifiedTriangle.md)
@@ -1133,7 +1135,7 @@ bool is_collapse_edge_valid(const BRep & brep, const Block3D & block, const Poly
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#718
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#732
 ```
 
 ### is_collapse_edge_valid
@@ -1143,7 +1145,7 @@ bool is_collapse_edge_valid(const BRep & brep, const Surface3D & surface, const 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#732
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#746
 ```
 
 ### is_collapse_edge_valid
@@ -1153,7 +1155,7 @@ bool is_collapse_edge_valid(const BRep & brep, const Line3D & line, index_t edge
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#741
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#755
 ```
 
 ### collapse_edge_validity
@@ -1163,7 +1165,7 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#750
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#764
 ```
 
 ### collapse_edge_validity
@@ -1173,7 +1175,7 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Surface
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#759
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#773
 ```
 
 ### collapse_edge_validity
@@ -1183,7 +1185,7 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Line3D 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#768
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#782
 ```
 
 ### is_split_edge_valid
@@ -1193,7 +1195,7 @@ bool is_split_edge_valid(const BRep & brep, const Block3D & block, const Polyhed
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#777
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#791
 ```
 
 ### is_split_edge_valid
@@ -1203,7 +1205,7 @@ bool is_split_edge_valid(const BRep & brep, const Surface3D & surface, const Pol
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#786
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#800
 ```
 
 ### is_split_edge_valid
@@ -1213,7 +1215,7 @@ bool is_split_edge_valid(const BRep & brep, const Line3D & line, index_t edge, c
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#795
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#809
 ```
 
 ### split_edge_validity
@@ -1223,7 +1225,7 @@ BRepSplitEdgeValidity split_edge_validity(const BRep & brep, const Block3D & blo
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#804
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#818
 ```
 
 ### split_edge_validity
@@ -1233,7 +1235,7 @@ BRepSplitEdgeValidity split_edge_validity(const BRep & brep, const Surface3D & s
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#813
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#827
 ```
 
 ### split_edge_validity
@@ -1243,17 +1245,7 @@ BRepSplitEdgeValidity split_edge_validity(const BRep & brep, const Line3D & line
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#840
-```
-
-### is_swap_edge_valid
-
-```cpp
-bool is_swap_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex)
-```
-
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#849
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#872
 ```
 
 ### is_split_facet_valid
@@ -1263,7 +1255,7 @@ bool is_split_facet_valid(const BRep & brep, const Block3D & block, const Polyhe
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#822
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#836
 ```
 
 ### is_split_triangle_valid
@@ -1273,7 +1265,37 @@ bool is_split_triangle_valid(const BRep & brep, const Surface3D & surface, index
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#831
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#845
+```
+
+### split_facet_validity
+
+```cpp
+BRepSplitTriangleValidity split_facet_validity(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#854
+```
+
+### split_triangle_validity
+
+```cpp
+BRepSplitTriangleValidity split_triangle_validity(const BRep & brep, const Surface3D & surface, index_t triangle, const Point3D & point)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#863
+```
+
+### is_swap_edge_valid
+
+```cpp
+bool is_swap_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#881
 ```
 
 ### is_swap_edge_valid
@@ -1283,7 +1305,7 @@ bool is_swap_edge_valid(const BRep & brep, const Surface3D & surface, const Poly
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#875
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#907
 ```
 
  The chosen apex is the opposite vertex of the given PolygonEdge
@@ -1295,7 +1317,7 @@ BRepSwapEdgeValidity swap_edge_validity(const BRep & brep, const Block3D & block
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#892
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#924
 ```
 
 ### swap_edge_validity
@@ -1305,7 +1327,7 @@ BRepSwapEdgeValidity swap_edge_validity(const BRep & brep, const Surface3D & sur
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#902
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#934
 ```
 
  The chosen apex is the opposite vertex of the given PolygonEdge
@@ -1317,7 +1339,7 @@ bool is_move_point_valid(const BRep & brep, index_t unique_vertex, const Point3D
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#913
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#945
 ```
 
 ### move_point_validity
@@ -1327,7 +1349,7 @@ BRepMovePointValidity move_point_validity(const BRep & brep, index_t unique_vert
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#933
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#965
 ```
 
 ### elements_after_collapse_edge
@@ -1337,7 +1359,7 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#944
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#976
 ```
 
 ### elements_after_collapse_edge
@@ -1347,7 +1369,7 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#953
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#985
 ```
 
 ### elements_after_collapse_edge
@@ -1357,7 +1379,7 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#962
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#994
 ```
 
 ### cut_along_patch

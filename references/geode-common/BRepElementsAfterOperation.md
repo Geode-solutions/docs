@@ -1,7 +1,7 @@
 # struct BRepElementsAfterOperation
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/brep_geometric_modifier_simulation.h#100
+Defined at ../include/geode/common/modifier/model/brep_geometric_modifier_simulation.h#105
 ```
 
 ## Members

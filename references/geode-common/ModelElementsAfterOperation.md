@@ -1,7 +1,7 @@
 # struct ModelElementsAfterOperation
 
 ```cpp
-Defined at ../include/geode/common/modifier/model/information.h#187
+Defined at ../include/geode/common/modifier/model/information.h#199
 ```
 
 ## Members

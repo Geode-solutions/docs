@@ -63,7 +63,7 @@ int triangles_after_collapse_edge(const BRep & brep, const struct BRepComponentM
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#973
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#1005
 ```
 
 ### tetrahedra_after_collapse_edge
@@ -73,7 +73,7 @@ int tetrahedra_after_collapse_edge(const BRep & brep, const struct BRepComponent
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#982
+Defined at /github/workspace/src/geode/common/modifier/model/brep_geometric_modifier_simulation.cpp#1014
 ```
 
 ### snapping_detection
