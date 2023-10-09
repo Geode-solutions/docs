@@ -40,7 +40,9 @@
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;triangulated_surface_modifier_simulation.h&gt;</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
-<span class="k">struct</span> <span class="nl">SurfaceSwapEdgeValidity</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity"><span class="std std-ref">geode::SurfaceGeometricalValidity</span></a><span></span>
+<span class="k">struct</span> <span class="nl">SurfaceSwapEdgeValidity</span><span class="p">:</span>
+    <span class="k">public</span> <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity"><span class="std std-ref">geode::SurfaceGeometricalValidity</span></a><span></span><span class="p">,</span>
+    <span class="k">public</span> <a class="reference internal" href="struct_geode_SurfaceTopologicalValidity.html#doxid-structgeode-1-1-surface-topological-validity"><span class="std std-ref">geode::SurfaceTopologicalValidity</span></a><span></span>
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
@@ -58,10 +60,14 @@
     <span class="kt">bool</span> <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity-1ab8de689f81f0843c1dfdfcf905bbd278"><span class="std std-ref">is_geometrically_valid</span></a><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity-1a09b184e1c5009db9cbfb0c8ca9c149be"><span class="std std-ref">invalid_new_triangles</span></a><span></span><span class="p">;</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity-1abf78c9109a784dd48fbdc342345d4242"><span class="std std-ref">invalid_triangle_ids</span></a><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="struct_geode_SurfaceTopologicalValidity.html#doxid-structgeode-1-1-surface-topological-validity-1a3ddcf244085c0372441fccfcbae81a9b"><span class="std std-ref">is_topologically_valid</span></a><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
+    <span class="kt">bool</span> <a class="reference internal" href="struct_geode_SurfaceTopologicalValidity.html#doxid-structgeode-1-1-surface-topological-validity-1a7d153951ad27bb236598804afc4ae06c"><span class="std std-ref">new_vertex_is_manifold</span></a><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="struct_geode_SurfaceTopologicalValidity.html#doxid-structgeode-1-1-surface-topological-validity-1a6c8ea6ac2ee4101f827617e41600d9f3"><span class="std std-ref">vertices_creating_non_manifold_edges</span></a><span></span><span class="p">;</span>
 
     <span class="c1">// methods</span>
 
-    <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity-1a634f83ac63ed1c75a848b5a31f45c522"><span class="std std-ref">operator bool</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+    <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity-1a634f83ac63ed1c75a848b5a31f45c522"><span class="std std-ref">operator bool</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <a class="reference internal" href="struct_geode_SurfaceTopologicalValidity.html#doxid-structgeode-1-1-surface-topological-validity-1afd2938b4734a76fdcd19141b1f7d35a9"><span class="std std-ref">operator bool</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
 </section>
 </section>
 

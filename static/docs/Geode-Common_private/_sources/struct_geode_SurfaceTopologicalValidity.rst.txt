@@ -32,3 +32,6 @@ struct geode::SurfaceTopologicalValidity
 
 	template <index_t dimension>
 	struct :ref:`SurfaceCollapseEdgeValidity<doxid-structgeode_1_1_surface_collapse_edge_validity>`;
+
+	template <index_t dimension>
+	struct :ref:`SurfaceSwapEdgeValidity<doxid-structgeode_1_1_surface_swap_edge_validity>`;
