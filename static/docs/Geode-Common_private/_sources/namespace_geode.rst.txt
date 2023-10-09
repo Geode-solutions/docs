@@ -13,6 +13,7 @@ namespace geode
 	struct_geode_BRepElementsAfterOperation.rst
 	struct_geode_BRepMovePointValidity.rst
 	struct_geode_BRepSplitEdgeValidity.rst
+	struct_geode_BRepSplitTriangleValidity.rst
 	struct_geode_BRepSwapEdgeValidity.rst
 	struct_geode_BlockCollapseEdgeValidities.rst
 	struct_geode_BlockMovePointValidities.rst
@@ -39,6 +40,7 @@ namespace geode
 	struct_geode_ModelSplitEdgeValidity.rst
 	struct_geode_ModelSplitPolygonEdgeInfo.rst
 	struct_geode_ModelSplitTriangleInfo.rst
+	struct_geode_ModelSplitTriangleValidity.rst
 	struct_geode_ModelSwapEdgeValidity.rst
 	struct_geode_ModifiedTetrahedron.rst
 	struct_geode_ModifiedTriangle.rst
@@ -150,6 +152,7 @@ Overview
 	struct :ref:`BRepElementsAfterOperation<doxid-structgeode_1_1_b_rep_elements_after_operation>`;
 	struct :ref:`BRepMovePointValidity<doxid-structgeode_1_1_b_rep_move_point_validity>`;
 	struct :ref:`BRepSplitEdgeValidity<doxid-structgeode_1_1_b_rep_split_edge_validity>`;
+	struct :ref:`BRepSplitTriangleValidity<doxid-structgeode_1_1_b_rep_split_triangle_validity>`;
 	struct :ref:`BRepSwapEdgeValidity<doxid-structgeode_1_1_b_rep_swap_edge_validity>`;
 	struct :ref:`BlockCollapseEdgeValidities<doxid-structgeode_1_1_block_collapse_edge_validities>`;
 	struct :ref:`BlockMovePointValidities<doxid-structgeode_1_1_block_move_point_validities>`;
@@ -173,11 +176,11 @@ Overview
 
 	struct :ref:`LineCollapseEdgeValidities<doxid-structgeode_1_1_line_collapse_edge_validities>`;
 
-	template <>
-	struct :ref:`Mapping<index_t><doxid-structgeode_1_1_mapping_3_01index__t_01_4>`;
-
 	template <typename Type>
 	struct :ref:`Mapping<doxid-structgeode_1_1_mapping>`;
+
+	template <>
+	struct :ref:`Mapping<index_t><doxid-structgeode_1_1_mapping_3_01index__t_01_4>`;
 
 	template <index_t dimension>
 	struct :ref:`ModelCollapseEdgeValidity<doxid-structgeode_1_1_model_collapse_edge_validity>`;
@@ -201,6 +204,9 @@ Overview
 	struct :ref:`ModelSplitTriangleInfo<doxid-structgeode_1_1_model_split_triangle_info>`;
 
 	template <index_t dimension>
+	struct :ref:`ModelSplitTriangleValidity<doxid-structgeode_1_1_model_split_triangle_validity>`;
+
+	template <index_t dimension>
 	struct :ref:`ModelSwapEdgeValidity<doxid-structgeode_1_1_model_swap_edge_validity>`;
 
 	struct :ref:`ModifiedTetrahedron<doxid-structgeode_1_1_modified_tetrahedron>`;
@@ -209,28 +215,28 @@ Overview
 	struct :ref:`ModifiedTriangle<doxid-structgeode_1_1_modified_triangle>`;
 
 	template <>
-	struct :ref:`Modifier<TetrahedralSolid3D><doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4>`;
+	struct :ref:`Modifier<Section><doxid-structgeode_1_1_modifier_3_01_section_01_4>`;
 
 	template <>
-	struct :ref:`Modifier<Section><doxid-structgeode_1_1_modifier_3_01_section_01_4>`;
+	struct :ref:`Modifier<TetrahedralSolid3D><doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4>`;
 
 	template <index_t dimension>
 	struct :ref:`Modifier<EdgedCurve<dimension>><doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4>`;
 
-	template <>
-	struct :ref:`Modifier<BRep><doxid-structgeode_1_1_modifier_3_01_b_rep_01_4>`;
+	template <index_t dimension>
+	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
 
 	template <typename Data>
 	struct :ref:`Modifier<doxid-structgeode_1_1_modifier>`;
 
-	template <index_t dimension>
-	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
-
 	template <>
-	struct :ref:`MultiMapping<index_t><doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4>`;
+	struct :ref:`Modifier<BRep><doxid-structgeode_1_1_modifier_3_01_b_rep_01_4>`;
 
 	template <typename Type>
 	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
+
+	template <>
+	struct :ref:`MultiMapping<index_t><doxid-structgeode_1_1_multi_mapping_3_01index__t_01_4>`;
 
 	struct :ref:`SectionCollapseEdgeValidity<doxid-structgeode_1_1_section_collapse_edge_validity>`;
 	struct :ref:`SectionElementsAfterOperation<doxid-structgeode_1_1_section_elements_after_operation>`;
@@ -633,13 +639,6 @@ Overview
 		const Point3D& point
 		);
 
-	bool geode_common_modifier_model_api :target:`is_swap_edge_valid<doxid-namespacegeode_1a000ee6400fb8a91685e10ab1663f70bc>`(
-		const BRep& brep,
-		const Block3D& block,
-		const PolyhedronFacetEdge& edge,
-		index_t apex
-		);
-
 	bool geode_common_modifier_model_api :target:`is_split_facet_valid<doxid-namespacegeode_1a280c6bffac4861b7c000a86038231c4d>`(
 		const BRep& brep,
 		const Block3D& block,
@@ -652,6 +651,27 @@ Overview
 		const Surface3D& surface,
 		index_t triangle,
 		const Point3D& point
+		);
+
+	:ref:`BRepSplitTriangleValidity<doxid-structgeode_1_1_b_rep_split_triangle_validity>` geode_common_modifier_model_api :target:`split_facet_validity<doxid-namespacegeode_1ae8a1b41a8be315eaf243a56dc199e684>`(
+		const BRep& brep,
+		const Block3D& block,
+		const PolyhedronFacet& facet,
+		const Point3D& point
+		);
+
+	:ref:`BRepSplitTriangleValidity<doxid-structgeode_1_1_b_rep_split_triangle_validity>` geode_common_modifier_model_api :target:`split_triangle_validity<doxid-namespacegeode_1ab2f309224963cda77aeccdc9d9c39d84>`(
+		const BRep& brep,
+		const Surface3D& surface,
+		index_t triangle,
+		const Point3D& point
+		);
+
+	bool geode_common_modifier_model_api :target:`is_swap_edge_valid<doxid-namespacegeode_1a000ee6400fb8a91685e10ab1663f70bc>`(
+		const BRep& brep,
+		const Block3D& block,
+		const PolyhedronFacetEdge& edge,
+		index_t apex
 		);
 
 	bool geode_common_modifier_model_api :ref:`is_swap_edge_valid<doxid-namespacegeode_1a60f35d93374174670d346aaeedee1b1d>`(
@@ -709,6 +729,7 @@ Overview
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a60bc4102ba1f8bc955e2d5c99bb03828>`(geode_common_modifier_model_api, CommonModifierModel);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a636fdae551e960ca99cdb76f55f4b1c2>`(:ref:`ModelCollapseEdgeValidity<doxid-structgeode_1_1_model_collapse_edge_validity>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a62277b4e60d0c2d98fa870bb3ceb9b82>`(:ref:`ModelSplitEdgeValidity<doxid-structgeode_1_1_model_split_edge_validity>`);
+	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1af0ae393c6faf8e755db975ad3ba0511c>`(:ref:`ModelSplitTriangleValidity<doxid-structgeode_1_1_model_split_triangle_validity>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1ad1b66557a574d27adcba7dd875dc69f5>`(:ref:`ModelSwapEdgeValidity<doxid-structgeode_1_1_model_swap_edge_validity>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a7df1d58179d2c31d3dc93e6640f111c4>`(:ref:`ModelMovePointValidity<doxid-structgeode_1_1_model_move_point_validity>`);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a004407dacf09a531aaa6c5d2a6f078ab>`(:ref:`ModelElementsAfterOperation<doxid-structgeode_1_1_model_elements_after_operation>`);
