@@ -5,7 +5,7 @@ Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifie
 ```
 
 ```cpp
-Inherits from SurfaceGeometricalValidity<dimension>
+Inherits from SurfaceGeometricalValidity<dimension>, SurfaceTopologicalValidity
 ```
 
 
@@ -28,7 +28,7 @@ public bool operator bool()
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#95
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#96
 ```
 
 

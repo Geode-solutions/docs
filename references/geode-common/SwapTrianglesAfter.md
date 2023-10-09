@@ -1,7 +1,7 @@
 # struct SwapTrianglesAfter
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#300
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#302
 ```
 
 ## Members
@@ -27,7 +27,7 @@ public void SwapTrianglesAfter<dimension>(size_t nb_new_triangles, size_t nb_old
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#302
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#304
 ```
 
 

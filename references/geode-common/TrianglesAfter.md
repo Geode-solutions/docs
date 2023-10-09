@@ -1,7 +1,7 @@
 # struct TrianglesAfter
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#283
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#285
 ```
 
 ## Members
@@ -22,7 +22,7 @@ public void TrianglesAfter<dimension>(size_t nb_modified_triangles)
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#285
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#287
 ```
 
 ### TrianglesAfter
@@ -32,7 +32,7 @@ public void TrianglesAfter<dimension>(size_t nb_modified_triangles, const Triang
 ```
 
 ```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#290
+Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#292
 ```
 
 

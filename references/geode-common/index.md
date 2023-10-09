@@ -831,7 +831,7 @@ bool is_split_triangle_valid(const TriangulatedSurface<dimension> & mesh, index_
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#413
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#427
 ```
 
  Check if a triangle split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
@@ -851,7 +851,7 @@ SurfaceSplitTriangleValidity<dimension> split_triangle_validity(const Triangulat
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#430
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#444
 ```
 
 ### is_split_edge_valid
@@ -861,7 +861,7 @@ bool is_split_edge_valid(const TriangulatedSurface<dimension> & mesh, const Poly
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#439
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#453
 ```
 
  Check if an edge split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
@@ -881,7 +881,7 @@ SurfaceSplitEdgeValidity<dimension> split_edge_validity(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#457
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#471
 ```
 
 ### is_collapse_edge_valid
@@ -891,7 +891,7 @@ bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const P
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#466
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#480
 ```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
@@ -911,7 +911,7 @@ bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#475
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#489
 ```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
@@ -931,7 +931,7 @@ SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const Triangulated
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#545
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#567
 ```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
@@ -951,7 +951,7 @@ SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const Triangulated
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#555
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#577
 ```
 
  Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
@@ -971,7 +971,7 @@ bool is_swap_edge_valid(const TriangulatedSurface<dimension> & mesh, const Polyg
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#484
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#498
 ```
 
  Check if an edge swap will keep the mesh valid, meaning the sign of the triangle areas are positive. The swap is not applied.
@@ -989,7 +989,7 @@ SurfaceSwapEdgeValidity<dimension> swap_edge_validity(const TriangulatedSurface<
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#504
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#526
 ```
 
 ### is_move_point_valid
@@ -999,7 +999,7 @@ bool is_move_point_valid(const TriangulatedSurface<dimension> & mesh, index_t ve
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#517
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#539
 ```
 
  Check if a vertex relocation will keep the mesh valid, meaning the sign of the triangle areas are positive. The relocation is not applied.
@@ -1019,7 +1019,7 @@ SurfaceMovePointValidity<dimension> move_point_validity(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#536
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#558
 ```
 
 ### triangles_after_split_triangle
@@ -1029,7 +1029,7 @@ std::array<Triangle<dimension>, 3> triangles_after_split_triangle(const Triangul
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#565
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#587
 ```
 
  Return the three triangles resulting from a triangle split. The split is not applied.
@@ -1047,7 +1047,7 @@ TrianglesAfter<dimension> triangles_after_split_edge(const TriangulatedSurface<d
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#581
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#603
 ```
 
  Return all the triangles resulting from a triangle edge split. The split is not applied.
@@ -1065,7 +1065,7 @@ TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#600
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#622
 ```
 
  Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
@@ -1083,7 +1083,7 @@ TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#610
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#632
 ```
 
  Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
@@ -1101,7 +1101,7 @@ SwapTrianglesAfter<dimension> triangles_after_swap_edge(const TriangulatedSurfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#620
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#642
 ```
 
  Return all the triangles resulting from an edge swap. The swap is not applied.
@@ -1117,7 +1117,7 @@ TrianglesAfter<dimension> triangles_after_move_point(const TriangulatedSurface<d
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#643
+Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier_simulation.cpp#665
 ```
 
  Return all the triangles resulting from a vertex relocation. The vertex relocation is not applied.
