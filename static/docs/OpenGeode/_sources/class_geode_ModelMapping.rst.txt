@@ -23,8 +23,14 @@ template class geode::ModelMapping
 	
 		typedef MappingType :target:`Mapping<doxid-classgeode_1_1_model_mapping_1a0b85325c36f11f4cba9d77f207abf9f8>`;
 
+		// construction
+	
+		:target:`ModelMapping<doxid-classgeode_1_1_model_mapping_1abd167fcb53c59a374d3557f28fcaaa4a>`();
+		:target:`ModelMapping<doxid-classgeode_1_1_model_mapping_1a4fc0de4465a09b7d6651b1357496ef48>`(ModelMapping&& other);
+
 		// methods
 	
+		ModelMapping& :target:`operator =<doxid-classgeode_1_1_model_mapping_1aae5211b595a7c9eb3e28812ed93523ce>` (ModelMapping&& other);
 		MappingType& :target:`at<doxid-classgeode_1_1_model_mapping_1a5f26aaa3784983a5658cb7a66efbf976>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type);
 		const MappingType& :target:`at<doxid-classgeode_1_1_model_mapping_1acf5aa2a90941ca8e471604d73de4af87>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;
 		bool :target:`has_mapping_type<doxid-classgeode_1_1_model_mapping_1af0d8af949de36b1a79bd8ab57deaea4f>`(const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type) const;

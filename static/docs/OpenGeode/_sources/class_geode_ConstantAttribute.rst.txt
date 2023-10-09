@@ -32,7 +32,7 @@ Read and write interface for constant attribute storage
 		virtual const T& :target:`value<doxid-classgeode_1_1_constant_attribute_1ae456f281d3db9616c6fd7dc00fc4d8fd>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`) const;
 		const T& :target:`value<doxid-classgeode_1_1_constant_attribute_1ace3aca22736ec60f761fa0a66d1b61e9>`() const;
 		void :target:`set_value<doxid-classgeode_1_1_constant_attribute_1a364246a7490ba9443cf870129fd29756>`(T value);
-		T :target:`default_value<doxid-classgeode_1_1_constant_attribute_1a566df9542ba015267751a8381d67e995>`() const;
+		const T& :target:`default_value<doxid-classgeode_1_1_constant_attribute_1a63cccb94730286ce9f6f629a3a818b82>`() const;
 	
 		template <typename Modifier>
 		void :target:`modify_value<doxid-classgeode_1_1_constant_attribute_1a1104ffe966fece96387ae6da83827f95>`(Modifier&& modifier);

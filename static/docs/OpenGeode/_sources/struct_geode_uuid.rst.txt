@@ -26,9 +26,13 @@ struct geode::uuid
 	
 		:target:`uuid<doxid-structgeode_1_1uuid_1a3ffeeb8abba14abbc05dba2c12932dae>`();
 		:target:`uuid<doxid-structgeode_1_1uuid_1a2bea17e8b1989819807fe630a97ed3cf>`(absl::string_view string);
+		:target:`uuid<doxid-structgeode_1_1uuid_1a6859b8d01d450afee5589b527741c08f>`(const uuid&);
+		:target:`uuid<doxid-structgeode_1_1uuid_1a4216f44aa0ac75a4e6cedc138e48e6a6>`(uuid&&);
 
 		// methods
 	
+		uuid& :target:`operator =<doxid-structgeode_1_1uuid_1a82ab469e1460f489d1ccf23917a5923f>` (uuid&& other);
+		uuid& :target:`operator =<doxid-structgeode_1_1uuid_1a2571b79f977382db745fcfb5d1ef96f6>` (const uuid& other);
 		bool :target:`operator ==<doxid-structgeode_1_1uuid_1a25e7f7923b86d68997f4165049b3994d>` (const uuid& other) const;
 		bool :target:`operator !=<doxid-structgeode_1_1uuid_1a59231b9fdda45db08a33fd6b7bbcbadd>` (const uuid& other) const;
 		bool :target:`operator <<doxid-structgeode_1_1uuid_1aaeccc4fae72d607e742c53f0dee40754>` (const uuid& other) const;

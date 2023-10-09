@@ -31,7 +31,7 @@ Read and write interface for variable attribute storage
 	
 		virtual const T& :target:`value<doxid-classgeode_1_1_variable_attribute_1a12aee94b6cc66ff639ef3653d0a8ed44>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element) const;
 		void :target:`set_value<doxid-classgeode_1_1_variable_attribute_1af29b490896fca074786cb87791df9c88>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` element, T value);
-		T :target:`default_value<doxid-classgeode_1_1_variable_attribute_1a2cc715560d3c23dc40bef4fbb14c954c>`() const;
+		const T& :target:`default_value<doxid-classgeode_1_1_variable_attribute_1a99e527a4a1ba9915395f7cd77c2c7277>`() const;
 	
 		template <typename Modifier>
 		void :target:`modify_value<doxid-classgeode_1_1_variable_attribute_1aed775cb0e1ebd634020bd17f9d20fc4e>`(
