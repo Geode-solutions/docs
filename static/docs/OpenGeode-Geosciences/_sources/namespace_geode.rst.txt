@@ -372,7 +372,7 @@ Overview
 	:ref:`HorizonsStack<doxid-classgeode_1_1_horizons_stack>`<dimension> :ref:`load_horizons_stack<doxid-namespacegeode_1a685f416d247afcd582c6c3e9b2d67419>`(absl::string_view filename);
 
 	template <index_t dimension>
-	:ref:`HorizonsStackInput<doxid-classgeode_1_1_horizons_stack_input>`<dimension>::MissingFiles :target:`check_horizon_stack_missing_files<doxid-namespacegeode_1a4ee2a03c7affd0d51f607285187f2339>`(absl::string_view filename);
+	:ref:`HorizonsStackInput<doxid-classgeode_1_1_horizons_stack_input>`<dimension>::MissingFiles :target:`check_horizons_stack_missing_files<doxid-namespacegeode_1ac471555f087a9d2f38a0424028d6b738>`(absl::string_view filename);
 
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a9c9bb164f243bb842e6e999f3c9b59a3>`(:ref:`HorizonsStackInputFactory<doxid-namespacegeode_1a0d778e40d248e7cc4850b574ff2c610d>`);
 
