@@ -19,7 +19,7 @@ public void BlocksBuilderFromSolid(BRep & brep, const SolidMesh3D & solid)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/conversion/model/block_mesh_builder_from_solid.cpp#231
+Defined at /github/workspace/src/geode/conversion/model/block_mesh_builder_from_solid.cpp#232
 ```
 
 ### ~BlocksBuilderFromSolid
@@ -29,7 +29,7 @@ public void ~BlocksBuilderFromSolid()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/conversion/model/block_mesh_builder_from_solid.cpp#237
+Defined at /github/workspace/src/geode/conversion/model/block_mesh_builder_from_solid.cpp#238
 ```
 
 ### build_blocks_step
@@ -39,7 +39,7 @@ public std::pair<IndexToMeshVertexMapping, IndexToMeshElementMapping> build_bloc
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/conversion/model/block_mesh_builder_from_solid.cpp#239
+Defined at /github/workspace/src/geode/conversion/model/block_mesh_builder_from_solid.cpp#240
 ```
 
 

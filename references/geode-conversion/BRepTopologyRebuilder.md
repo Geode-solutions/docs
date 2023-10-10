@@ -1,10 +1,10 @@
 # class BRepTopologyRebuilder
 
 ```cpp
-Defined at ../include/geode/conversion/model/detail/brep_topology_rebuilder.h#29
+Defined at ../include/geode/conversion/model/detail/brep_topology_rebuilder.h#30
 ```
 
- Class for rebuilding all the brep components topology after adding some component mesh elements to the model topology.
+ Class for rebuilding all the brep components topology after adding some component mesh elements to the model topology. The block meshes and the unique vertices needs to be defined beforehand.
 
 
 
@@ -17,7 +17,7 @@ public void BRepTopologyRebuilder(const BRepTopologyRebuilder & )
 ```
 
 ```cpp
-Defined at ../include/geode/conversion/model/detail/brep_topology_rebuilder.h#31
+Defined at ../include/geode/conversion/model/detail/brep_topology_rebuilder.h#32
 ```
 
 ### operator=
@@ -27,7 +27,7 @@ public BRepTopologyRebuilder & operator=(const BRepTopologyRebuilder & )
 ```
 
 ```cpp
-Defined at ../include/geode/conversion/model/detail/brep_topology_rebuilder.h#31
+Defined at ../include/geode/conversion/model/detail/brep_topology_rebuilder.h#32
 ```
 
 ### BRepTopologyRebuilder

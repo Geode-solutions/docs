@@ -29,7 +29,7 @@ public void BRepFromSolidElementsBuilder(BRep & model, SolidMesh3D & solid, Span
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#553
+Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#554
 ```
 
 ### ~BRepFromSolidElementsBuilder
@@ -39,7 +39,7 @@ public void ~BRepFromSolidElementsBuilder()
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#565
+Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#566
 ```
 
 ### build_brep_without_block_mesh
@@ -49,7 +49,7 @@ public std::pair<VertexIndexMapping, IndexToModelMeshElementsMapping> build_brep
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#569
+Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#570
 ```
 
  Builds a BRep with no mesh in the Blocks. This build uses only the given elements to determine the topological components of the resulting BRep.
@@ -61,7 +61,7 @@ public std::pair<VertexIndexMapping, IndexToBRepMeshElementsMapping> build_brep_
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#575
+Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#576
 ```
 
  Builds a BRep with meshed Blocks. This build uses both the solid adjacencies and the given elements to determine the topological components of the resulting BRep.
@@ -73,7 +73,7 @@ public bool is_corner(index_t vertex)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#581
+Defined at /github/workspace/src/geode/conversion/model/brep_from_solid_builder.cpp#582
 ```
 
 
