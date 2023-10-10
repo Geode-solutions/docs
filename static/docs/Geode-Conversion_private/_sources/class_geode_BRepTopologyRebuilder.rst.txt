@@ -7,7 +7,7 @@ class geode::BRepTopologyRebuilder
 .. toctree::
 	:hidden:
 
-Class for rebuilding all the brep components topology after adding some component mesh elements to the model topology.
+Class for rebuilding all the brep components topology after adding some component mesh elements to the model topology. The block meshes and the unique vertices needs to be defined beforehand.
 
 
 .. ref-code-block:: cpp
