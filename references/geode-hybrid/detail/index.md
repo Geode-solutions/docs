@@ -4,10 +4,62 @@
 
 ## Records
 
-* [ExtractedElements](ExtractedElements.md)
+* [CombiningData](CombiningData.md)
+* [HybridSamplingData](HybridSamplingData.md)
+* [InsertedVertices](InsertedVertices.md)
 
 
 ## Functions
+
+### sample_lines
+
+```cpp
+void sample_lines(BRepHybridSamplingData & data)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/hybrid/brep/private/lines.cpp#206
+```
+
+### sample_blocks
+
+```cpp
+void sample_blocks(BRepHybridSamplingData & data)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/hybrid/brep/private/blocks.cpp#817
+```
+
+### combining_blocks
+
+```cpp
+void combining_blocks(BRepCombiningData & data)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/hybrid/brep/private/blocks.cpp#826
+```
+
+### build_blocks_hexes
+
+```cpp
+void build_blocks_hexes(BRepCombiningData & data)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/hybrid/brep/private/blocks.cpp#835
+```
+
+### sample_corners
+
+```cpp
+void sample_corners(BRepHybridSamplingData & data)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/hybrid/brep/private/corners.cpp#21
+```
 
 ### compute_elements
 
@@ -15,27 +67,39 @@
 ExtractedElements compute_elements(BRep & brep, const ConstantMetric3D & metric)
 ```
 
-
-### remesh_lines
-
 ```cpp
-void remesh_lines(BRepRemeshingData & data, const struct ExtractedElements::Edges & edges)
+Defined at /github/workspace/src/geode/hybrid/brep/private/elements.cpp#21
 ```
 
-
-### remesh_blocks
-
-```cpp
-void remesh_blocks(BRepRemeshingData & data, const struct ExtractedElements::Hexes & hexes)
-```
-
-
-### remesh_surfaces
+### sample_surfaces
 
 ```cpp
-void remesh_surfaces(BRepRemeshingData & data, const struct ExtractedElements::Quads & quads)
+void sample_surfaces(BRepHybridSamplingData & data)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/hybrid/brep/private/surfaces.cpp#775
+```
+
+### combining_surfaces
+
+```cpp
+void combining_surfaces(BRepCombiningData & data)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/hybrid/brep/private/surfaces.cpp#784
+```
+
+### build_surfaces_quads
+
+```cpp
+void build_surfaces_quads(BRepCombiningData & data)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/hybrid/brep/private/surfaces.cpp#793
+```
 
 
 

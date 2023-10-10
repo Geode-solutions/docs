@@ -17,9 +17,12 @@
 ### hex_dominant_remesh
 
 ```cpp
-tuple hex_dominant_remesh(BRep & brep, const Metric3D & metric)
+void hex_dominant_remesh(BRep & brep, const Metric3D & metric)
 ```
 
+```cpp
+Defined at /github/workspace/src/geode/hybrid/brep/remesh.cpp#59
+```
 
 
 
