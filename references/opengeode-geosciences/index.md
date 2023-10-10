@@ -155,12 +155,6 @@ Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/st
 MissingFiles check_structural_model_missing_files(string_view filename)
 ```
 
-### check_strucutral_model_missing_files
-
-```cpp
-MissingFiles check_strucutral_model_missing_files(string_view filename)
-```
-
 ```cpp
 Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_input.cpp#71
 ```
@@ -229,10 +223,10 @@ Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/ho
 
 **return** Loaded HorizonsStack.
 
-### check_horizon_stack_missing_files
+### check_horizons_stack_missing_files
 
 ```cpp
-typename HorizonsStackInput<dimension>::MissingFiles check_horizon_stack_missing_files(string_view filename)
+typename HorizonsStackInput<dimension>::MissingFiles check_horizons_stack_missing_files(string_view filename)
 ```
 
 ```cpp

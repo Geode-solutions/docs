@@ -13,6 +13,18 @@ Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<3U>, Stratigrap
 # class HorizonsStackBuilder
 
 ```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/builder/horizons_stack_builder.cpp#243
+```
+
+```cpp
+Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
+```
+
+
+
+# class HorizonsStackBuilder
+
+```cpp
 Defined at ../include/geode/geosciences/implicit/representation/builder/horizons_stack_builder.h#52
 ```
 
@@ -226,18 +238,6 @@ public void remove_stratigraphic_unit(const StratigraphicUnit<dimension> & strat
 
 ```cpp
 Defined at /github/workspace/src/geode/geosciences/implicit/representation/builder/horizons_stack_builder.cpp#199
-```
-
-
-
-# class HorizonsStackBuilder
-
-```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/builder/horizons_stack_builder.cpp#243
-```
-
-```cpp
-Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
 ```
 
 
