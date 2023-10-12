@@ -1,30 +1,29 @@
 # struct PropClassHeaderData
 
+```cpp
+Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#99
+```
 
 ## Members
 
 ```cpp
-```cpp
 public basic_string name
-```
+
 ```
 
-```cpp
 ```cpp
 public basic_string kind
-```
+
 ```
 
-```cpp
 ```cpp
 public basic_string unit
-```
+
 ```
 
 ```cpp
-```cpp
-public _Bool is_z
-```
+public bool is_z
+
 ```
 
 

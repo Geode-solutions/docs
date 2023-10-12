@@ -1,10 +1,11 @@
 # class MLOutputStructuralModel
 
+```cpp
+Defined at ../include/geode/geosciences_io/model/private/ml_output_structural_model.h#33
+```
 
 ```cpp
-```cpp
 Inherits from StructuralModelOutput
-```
 ```
 
 
@@ -14,29 +15,32 @@ Inherits from StructuralModelOutput
 ### MLOutputStructuralModel
 
 ```cpp
-```cpp
 public void MLOutputStructuralModel(string_view filename)
 ```
-```
 
+```cpp
+Defined at ../include/geode/geosciences_io/model/private/ml_output_structural_model.h#36
+```
 
 ### extension
 
 ```cpp
-```cpp
 public string_view extension()
 ```
-```
 
+```cpp
+Defined at ../include/geode/geosciences_io/model/private/ml_output_structural_model.h#41
+```
 
 ### write
 
 ```cpp
-```cpp
 public void write(const StructuralModel & structural_model)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences_io/model/ml_output_structural_model.cpp#234
+```
 
 
 

@@ -1,30 +1,29 @@
 # struct CRSData
 
+```cpp
+Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#49
+```
 
 ## Members
 
 ```cpp
-```cpp
 public basic_string name
-```
+
 ```
 
-```cpp
 ```cpp
 public std::array<std::string, 3> axis_names
-```
+
 ```
 
-```cpp
 ```cpp
 public std::array<std::string, 3> axis_units
-```
+
 ```
 
 ```cpp
-```cpp
 public int z_sign
-```
+
 ```
 
 

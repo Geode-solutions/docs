@@ -1,54 +1,49 @@
 # struct PropHeaderData
 
+```cpp
+Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#62
+```
 
 ## Members
 
 ```cpp
-```cpp
 public int names
-```
+
 ```
 
-```cpp
 ```cpp
 public int prop_legal_ranges
-```
+
 ```
 
-```cpp
 ```cpp
 public int no_data_values
-```
+
 ```
 
-```cpp
 ```cpp
 public int property_classes
-```
+
 ```
 
-```cpp
 ```cpp
 public int kinds
-```
+
 ```
 
-```cpp
 ```cpp
 public int property_subclass
-```
+
 ```
 
-```cpp
 ```cpp
 public int esizes
-```
+
 ```
 
 ```cpp
-```cpp
 public int units
-```
+
 ```
 
 
@@ -58,11 +53,12 @@ public int units
 ### empty
 
 ```cpp
-```cpp
-public _Bool empty()
-```
+public bool empty()
 ```
 
+```cpp
+Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#75
+```
 
 
 

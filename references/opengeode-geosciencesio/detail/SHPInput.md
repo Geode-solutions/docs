@@ -1,10 +1,11 @@
 # class SHPInput
 
+```cpp
+Defined at ../include/geode/geosciences_io/model/private/shp_input.h#34
+```
 
 ```cpp
-```cpp
 Inherits from SectionInput
-```
 ```
 
 
@@ -14,38 +15,42 @@ Inherits from SectionInput
 ### SHPInput
 
 ```cpp
-```cpp
 public void SHPInput(string_view filename)
 ```
-```
 
+```cpp
+Defined at ../include/geode/geosciences_io/model/private/shp_input.h#37
+```
 
 ### extensions
 
 ```cpp
-```cpp
 public vector extensions()
 ```
-```
 
+```cpp
+Defined at ../include/geode/geosciences_io/model/private/shp_input.h#39
+```
 
 ### read
 
 ```cpp
-```cpp
 public Section read()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences_io/model/shp_input.cpp#244
+```
 
 ### check_missing_files
 
 ```cpp
-```cpp
 public MissingFiles check_missing_files()
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/geosciences_io/model/shp_input.cpp#252
+```
 
 
 
