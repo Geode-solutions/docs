@@ -30,4 +30,5 @@ Inherited Members
 	
 		absl::string_view :ref:`filename<doxid-classgeode_1_1_i_o_file_1a252a3f70be21314b482cfc576824b9db>`() const;
 		virtual void :ref:`write<doxid-classgeode_1_1_output_1accd2a5608104c26f189e83840d9f50a5>`(const Object& object) const = 0;
+		virtual bool :ref:`is_saveable<doxid-classgeode_1_1_output_1a2cd32cbfaf03325e01be0ac59b531d4b>`(const Object&) const;
 

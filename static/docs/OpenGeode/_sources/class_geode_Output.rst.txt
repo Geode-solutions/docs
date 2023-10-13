@@ -22,6 +22,7 @@ template class geode::Output
 		// methods
 	
 		virtual void :target:`write<doxid-classgeode_1_1_output_1accd2a5608104c26f189e83840d9f50a5>`(const Object& object) const = 0;
+		virtual bool :target:`is_saveable<doxid-classgeode_1_1_output_1a2cd32cbfaf03325e01be0ac59b531d4b>`(const Object&) const;
 	};
 
 	// direct descendants
