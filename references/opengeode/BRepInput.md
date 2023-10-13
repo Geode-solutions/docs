@@ -1,7 +1,7 @@
 # class BRepInput
 
 ```cpp
-Defined at ../../include/geode/model/representation/io/brep_input.h#47
+Defined at ../../include/geode/model/representation/io/brep_input.h#49
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void BRepInput(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/model/representation/io/brep_input.h#55
+Defined at ../../include/geode/model/representation/io/brep_input.h#57
 ```
 
 

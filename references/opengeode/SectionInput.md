@@ -1,7 +1,7 @@
 # class SectionInput
 
 ```cpp
-Defined at ../../include/geode/model/representation/io/section_input.h#47
+Defined at ../../include/geode/model/representation/io/section_input.h#49
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void SectionInput(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/model/representation/io/section_input.h#55
+Defined at ../../include/geode/model/representation/io/section_input.h#57
 ```
 
 

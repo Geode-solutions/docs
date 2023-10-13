@@ -1,7 +1,7 @@
 # class GraphOutput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/graph_output.h#47
+Defined at ../../include/geode/mesh/io/graph_output.h#49
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void GraphOutput(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/graph_output.h#50
+Defined at ../../include/geode/mesh/io/graph_output.h#52
 ```
 
 

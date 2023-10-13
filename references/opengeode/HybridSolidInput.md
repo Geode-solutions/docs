@@ -1,7 +1,7 @@
 # class HybridSolidInput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/hybrid_solid_input.h#60
+Defined at ../../include/geode/mesh/io/hybrid_solid_input.h#62
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void HybridSolidInput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/hybrid_solid_input.h#72
+Defined at ../../include/geode/mesh/io/hybrid_solid_input.h#74
 ```
 
 

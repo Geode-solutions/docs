@@ -18,6 +18,16 @@ Inherits from IOFile
 public void write(const Object & object)
 ```
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const Object & )
+```
+
+```cpp
+Defined at ../../include/geode/basic/output.h#37
+```
+
 ### Output
 
 ```cpp
@@ -25,7 +35,7 @@ protected void Output<Object>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/output.h#38
+Defined at ../../include/geode/basic/output.h#43
 ```
 
 

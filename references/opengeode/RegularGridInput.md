@@ -1,7 +1,7 @@
 # class RegularGridInput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/regular_grid_input.h#59
+Defined at ../../include/geode/mesh/io/regular_grid_input.h#61
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void RegularGridInput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/regular_grid_input.h#69
+Defined at ../../include/geode/mesh/io/regular_grid_input.h#71
 ```
 
 

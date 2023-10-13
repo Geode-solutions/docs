@@ -1,7 +1,7 @@
 # class RasterImageOutput
 
 ```cpp
-Defined at ../../include/geode/image/io/raster_image_output.h#49
+Defined at ../../include/geode/image/io/raster_image_output.h#51
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void RasterImageOutput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/image/io/raster_image_output.h#52
+Defined at ../../include/geode/image/io/raster_image_output.h#54
 ```
 
 

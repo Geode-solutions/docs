@@ -1,7 +1,7 @@
 # class TetrahedralSolidInput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/tetrahedral_solid_input.h#60
+Defined at ../../include/geode/mesh/io/tetrahedral_solid_input.h#62
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void TetrahedralSolidInput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/tetrahedral_solid_input.h#73
+Defined at ../../include/geode/mesh/io/tetrahedral_solid_input.h#75
 ```
 
 

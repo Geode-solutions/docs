@@ -1,7 +1,7 @@
 # class GraphInput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/graph_input.h#57
+Defined at ../../include/geode/mesh/io/graph_input.h#59
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void GraphInput(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/graph_input.h#65
+Defined at ../../include/geode/mesh/io/graph_input.h#67
 ```
 
 

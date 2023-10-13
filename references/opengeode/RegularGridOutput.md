@@ -1,7 +1,7 @@
 # class RegularGridOutput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/regular_grid_output.h#49
+Defined at ../../include/geode/mesh/io/regular_grid_output.h#51
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void RegularGridOutput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/regular_grid_output.h#52
+Defined at ../../include/geode/mesh/io/regular_grid_output.h#54
 ```
 
 

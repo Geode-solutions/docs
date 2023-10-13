@@ -1,7 +1,7 @@
 # class PolyhedralSolidInput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/polyhedral_solid_input.h#60
+Defined at ../../include/geode/mesh/io/polyhedral_solid_input.h#62
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void PolyhedralSolidInput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/polyhedral_solid_input.h#73
+Defined at ../../include/geode/mesh/io/polyhedral_solid_input.h#75
 ```
 
 

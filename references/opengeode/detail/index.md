@@ -125,6 +125,16 @@ void coords_substract_equal(Coords<dimension> & input, const Coords<dimension> &
 Defined at ../../include/geode/geometry/detail/point_operators.h#113
 ```
 
+### geode_object_output_writer
+
+```cpp
+std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(absl::string_view & filename)
+```
+
+```cpp
+Defined at ../../include/geode/basic/detail/geode_output_impl.h#42
+```
+
 ### geode_object_output_impl
 
 ```cpp
@@ -132,7 +142,7 @@ void geode_object_output_impl(string_view type, const Object & object, string_vi
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/detail/geode_output_impl.h#38
+Defined at ../../include/geode/basic/detail/geode_output_impl.h#54
 ```
 
 ### update_default_name
@@ -142,7 +152,7 @@ void update_default_name(Object & object, string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/detail/geode_input_impl.h#38
+Defined at ../../include/geode/basic/detail/geode_input_impl.h#42
 ```
 
 ### update_default_name
@@ -152,7 +162,7 @@ void update_default_name(std::unique_ptr<Object> & object, string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/detail/geode_input_impl.h#48
+Defined at ../../include/geode/basic/detail/geode_input_impl.h#52
 ```
 
 ### geode_object_input_reader
@@ -162,7 +172,7 @@ std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(absl::str
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/detail/geode_input_impl.h#59
+Defined at ../../include/geode/basic/detail/geode_input_impl.h#63
 ```
 
 ### geode_object_input_impl
@@ -172,7 +182,7 @@ typename Factory::BaseClass::InputData geode_object_input_impl(string_view type,
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/detail/geode_input_impl.h#71
+Defined at ../../include/geode/basic/detail/geode_input_impl.h#75
 ```
 
 ### add_to_message
@@ -182,7 +192,7 @@ void add_to_message(std::string & message, geode::index_t nb_components, string_
 ```
 
 ```cpp
-Defined at ../../include/geode/basic/detail/geode_input_impl.h#83
+Defined at ../../include/geode/basic/detail/geode_input_impl.h#87
 ```
 
 ### position_to_index

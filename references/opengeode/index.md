@@ -510,7 +510,7 @@ void save_graph(const Graph & graph, string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/graph_output.cpp#32
+Defined at /github/workspace/src/geode/mesh/io/graph_output.cpp#34
 ```
 
  API function for saving a Graph. The adequate saver is called depending on the given filename extension.
@@ -518,6 +518,16 @@ Defined at /github/workspace/src/geode/mesh/io/graph_output.cpp#32
 **graph** [in] Graph to save.
 
 **filename** [in] Path to the file where save the Graph.
+
+### is_graph_saveable
+
+```cpp
+bool is_graph_saveable(const Graph & graph, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/graph_output.cpp#48
+```
 
 ### filename_with_extension
 
@@ -576,7 +586,7 @@ Section load_section(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/representation/io/section_input.cpp#33
+Defined at /github/workspace/src/geode/model/representation/io/section_input.cpp#35
 ```
 
  API function for loading a Section. The adequate loader is called depending on the filename extension.
@@ -592,7 +602,7 @@ MissingFiles check_section_missing_files(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/representation/io/section_input.cpp#60
+Defined at /github/workspace/src/geode/model/representation/io/section_input.cpp#62
 ```
 
 ### load_polyhedral_solid
@@ -602,7 +612,7 @@ std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImp
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_input.cpp#34
+Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_input.cpp#36
 ```
 
  API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
@@ -618,7 +628,7 @@ std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(string_view f
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_input.cpp#56
+Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_input.cpp#58
 ```
 
  API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -632,7 +642,7 @@ typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_mi
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_input.cpp#66
+Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_input.cpp#68
 ```
 
 ### radial_sort
@@ -796,7 +806,7 @@ void save_section(const Section & section, string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/representation/io/section_output.cpp#32
+Defined at /github/workspace/src/geode/model/representation/io/section_output.cpp#34
 ```
 
  API function for saving a Section. The adequate saver is called depending on the given filename extension.
@@ -804,6 +814,16 @@ Defined at /github/workspace/src/geode/model/representation/io/section_output.cp
 **section** [in] Section to save.
 
 **filename** [in] Path to the file where save the section.
+
+### is_section_saveable
+
+```cpp
+bool is_section_saveable(const Section & section, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/section_output.cpp#49
+```
 
 ### point_point_distance
 
@@ -1068,7 +1088,7 @@ void save_brep(const BRep & brep, string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/representation/io/brep_output.cpp#32
+Defined at /github/workspace/src/geode/model/representation/io/brep_output.cpp#34
 ```
 
  API function for saving a BoundaryRepresentation. The adequate saver is called depending on the given filename extension.
@@ -1076,6 +1096,16 @@ Defined at /github/workspace/src/geode/model/representation/io/brep_output.cpp#3
 **brep** [in] BRep to save.
 
 **filename** [in] Path to the file where save the brep.
+
+### is_brep_saveable
+
+```cpp
+bool is_brep_saveable(const BRep & brep, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/model/representation/io/brep_output.cpp#48
+```
 
 ### perpendicular
 
@@ -1108,7 +1138,7 @@ std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(const MeshI
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_input.cpp#34
+Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_input.cpp#36
 ```
 
  API function for loading an TetrahedralSolid. The adequate loader is called depending on the filename extension.
@@ -1124,7 +1154,7 @@ std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(string_view
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_input.cpp#59
+Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_input.cpp#61
 ```
 
  API function for loading an TetrahedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -1138,7 +1168,7 @@ typename TetrahedralSolidInput<dimension>::MissingFiles check_tetrahedral_solid_
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_input.cpp#69
+Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_input.cpp#71
 ```
 
 ### load_triangulated_surface
@@ -1148,7 +1178,7 @@ std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(const
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_input.cpp#34
+Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_input.cpp#36
 ```
 
  API function for loading an TriangulatedSurface. The adequate loader is called depending on the filename extension.
@@ -1164,7 +1194,7 @@ std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(strin
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_input.cpp#60
+Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_input.cpp#62
 ```
 
  API function for loading an TriangulatedSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -1178,7 +1208,7 @@ typename TriangulatedSurfaceInput<dimension>::MissingFiles check_triangulated_su
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_input.cpp#70
+Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_input.cpp#72
 ```
 
 ### triangle_area
@@ -1288,7 +1318,7 @@ void save_triangulated_surface(const TriangulatedSurface<dimension> & triangulat
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_output.cpp#33
+Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_output.cpp#35
 ```
 
  API function for saving a TriangulatedSurface. The adequate saver is called depending on the given filename extension.
@@ -1296,6 +1326,16 @@ Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_output.cpp#3
 **triangulated_surface** [in] TriangulatedSurface to save.
 
 **filename** [in] Path to the file where save the TriangulatedSurface.
+
+### is_triangulated_surface_saveable
+
+```cpp
+bool is_triangulated_surface_saveable(const TriangulatedSurface<dimension> & triangulated_surface, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/triangulated_surface_output.cpp#56
+```
 
 ### polyhedron_unique_vertices
 
@@ -1674,7 +1714,7 @@ std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, stri
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/point_set_input.cpp#34
+Defined at /github/workspace/src/geode/mesh/io/point_set_input.cpp#36
 ```
 
  API function for loading an PointSet. The adequate loader is called depending on the filename extension.
@@ -1690,7 +1730,7 @@ std::unique_ptr<PointSet<dimension> > load_point_set(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/point_set_input.cpp#55
+Defined at /github/workspace/src/geode/mesh/io/point_set_input.cpp#57
 ```
 
  API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -1704,7 +1744,7 @@ typename PointSetInput<dimension>::MissingFiles check_point_set_missing_files(st
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/point_set_input.cpp#65
+Defined at /github/workspace/src/geode/mesh/io/point_set_input.cpp#67
 ```
 
 ### load_graph
@@ -1714,7 +1754,7 @@ unique_ptr load_graph(const MeshImpl & impl, string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/graph_input.cpp#33
+Defined at /github/workspace/src/geode/mesh/io/graph_input.cpp#35
 ```
 
  API function for loading an Graph. The adequate loader is called depending on the filename extension.
@@ -1730,7 +1770,7 @@ unique_ptr load_graph(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/graph_input.cpp#53
+Defined at /github/workspace/src/geode/mesh/io/graph_input.cpp#55
 ```
 
  API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -1744,7 +1784,7 @@ MissingFiles check_graph_missing_files(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/graph_input.cpp#59
+Defined at /github/workspace/src/geode/mesh/io/graph_input.cpp#61
 ```
 
 ### register_model_serialize_pcontext
@@ -1786,7 +1826,7 @@ BRep load_brep(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/representation/io/brep_input.cpp#33
+Defined at /github/workspace/src/geode/model/representation/io/brep_input.cpp#35
 ```
 
  API function for loading a BoundaryRepresentation. The adequate loader is called depending on the filename extension.
@@ -1802,7 +1842,7 @@ MissingFiles check_brep_missing_files(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/model/representation/io/brep_input.cpp#59
+Defined at /github/workspace/src/geode/model/representation/io/brep_input.cpp#61
 ```
 
 ### convert_surface_mesh
@@ -2304,7 +2344,7 @@ void save_polyhedral_solid(const PolyhedralSolid<dimension> & polyhedral_solid, 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_output.cpp#33
+Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_output.cpp#35
 ```
 
  API function for saving a PolyhedralSolid. The adequate saver is called depending on the given filename extension.
@@ -2313,6 +2353,16 @@ Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_output.cpp#33
 
 **filename** [in] Path to the file where save the PolyhedralSolid.
 
+### is_polyhedral_solid_saveable
+
+```cpp
+bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_solid, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polyhedral_solid_output.cpp#55
+```
+
 ### save_polygonal_surface
 
 ```cpp
@@ -2320,7 +2370,7 @@ void save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surfac
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_output.cpp#33
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_output.cpp#35
 ```
 
  API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
@@ -2329,6 +2379,16 @@ Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_output.cpp#33
 
 **filename** [in] Path to the file where save the PolygonalSurface.
 
+### is_polygonal_surface_saveable
+
+```cpp
+bool is_polygonal_surface_saveable(const PolygonalSurface<dimension> & polygonal_surface, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_output.cpp#55
+```
+
 ### load_edged_curve
 
 ```cpp
@@ -2336,7 +2396,7 @@ std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/edged_curve_input.cpp#34
+Defined at /github/workspace/src/geode/mesh/io/edged_curve_input.cpp#36
 ```
 
  API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
@@ -2352,7 +2412,7 @@ std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/edged_curve_input.cpp#55
+Defined at /github/workspace/src/geode/mesh/io/edged_curve_input.cpp#57
 ```
 
  API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -2366,7 +2426,7 @@ typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_file
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/edged_curve_input.cpp#65
+Defined at /github/workspace/src/geode/mesh/io/edged_curve_input.cpp#67
 ```
 
 ### save_edged_curve
@@ -2376,7 +2436,7 @@ void save_edged_curve(const EdgedCurve<dimension> & edged_curve, string_view fil
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/edged_curve_output.cpp#33
+Defined at /github/workspace/src/geode/mesh/io/edged_curve_output.cpp#35
 ```
 
  API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
@@ -2384,6 +2444,16 @@ Defined at /github/workspace/src/geode/mesh/io/edged_curve_output.cpp#33
 **edged_curve** [in] EdgedCurve to save.
 
 **filename** [in] Path to the file where save the EdgedCurve.
+
+### is_edged_curve_saveable
+
+```cpp
+bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/edged_curve_output.cpp#54
+```
 
 ### euclidean_distance_transform
 
@@ -2710,7 +2780,7 @@ std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshI
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#34
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#36
 ```
 
  API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
@@ -2726,7 +2796,7 @@ std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#58
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#60
 ```
 
  API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -2740,7 +2810,7 @@ typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#68
+Defined at /github/workspace/src/geode/mesh/io/polygonal_surface_input.cpp#70
 ```
 
 ### save_hybrid_solid
@@ -2750,7 +2820,7 @@ void save_hybrid_solid(const HybridSolid<dimension> & hybrid_solid, string_view 
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_output.cpp#33
+Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_output.cpp#35
 ```
 
  API function for saving a HybridSolid. The adequate saver is called depending on the given filename extension.
@@ -2758,6 +2828,16 @@ Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_output.cpp#33
 **hybrid_solid** [in] HybridSolid to save.
 
 **filename** [in] Path to the file where save the HybridSolid.
+
+### is_hybrid_solid_saveable
+
+```cpp
+bool is_hybrid_solid_saveable(const HybridSolid<dimension> & hybrid_solid, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_output.cpp#54
+```
 
 ### create_brep_coordinate_system
 
@@ -3163,6 +3243,32 @@ Defined at /github/workspace/src/geode/geometry/rotation.cpp#88
 
 **angle** [in] Rotation angle expresses in radians.
 
+### save_regular_grid
+
+```cpp
+void save_regular_grid(const RegularGrid<dimension> & regular_grid, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/regular_grid_output.cpp#36
+```
+
+ API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
+
+**regular_grid** [in] RegularGrid to save.
+
+**filename** [in] Path to the file where save the RegularGrid.
+
+### is_regular_grid_saveable
+
+```cpp
+bool is_regular_grid_saveable(const RegularGrid<dimension> & regular_grid, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/regular_grid_output.cpp#55
+```
+
 ### repair_polygon_orientations
 
 ```cpp
@@ -3182,22 +3288,6 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 ```cpp
 Defined at /github/workspace/src/geode/mesh/helpers/repair_polygon_orientations.cpp#322
 ```
-
-### save_regular_grid
-
-```cpp
-void save_regular_grid(const RegularGrid<dimension> & regular_grid, string_view filename)
-```
-
-```cpp
-Defined at /github/workspace/src/geode/mesh/io/regular_grid_output.cpp#34
-```
-
- API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
-
-**regular_grid** [in] RegularGrid to save.
-
-**filename** [in] Path to the file where save the RegularGrid.
 
 ### point_segment_position_exact
 
@@ -3306,7 +3396,7 @@ std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_input.cpp#34
+Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_input.cpp#36
 ```
 
  API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
@@ -3322,7 +3412,7 @@ std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_input.cpp#55
+Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_input.cpp#57
 ```
 
  API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -3336,7 +3426,7 @@ typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_fi
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_input.cpp#65
+Defined at /github/workspace/src/geode/mesh/io/hybrid_solid_input.cpp#67
 ```
 
 ### load_regular_grid
@@ -3346,7 +3436,7 @@ std::unique_ptr<RegularGrid<dimension> > load_regular_grid(const MeshImpl & impl
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/regular_grid_input.cpp#35
+Defined at /github/workspace/src/geode/mesh/io/regular_grid_input.cpp#37
 ```
 
  API function for loading an RegularGrid. The adequate loader is called depending on the filename extension.
@@ -3362,7 +3452,7 @@ std::unique_ptr<RegularGrid<dimension> > load_regular_grid(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/regular_grid_input.cpp#55
+Defined at /github/workspace/src/geode/mesh/io/regular_grid_input.cpp#57
 ```
 
  API function for loading a RegularGrid. The adequate loader is called depending on the filename extension.
@@ -3376,7 +3466,7 @@ typename RegularGridInput<dimension>::MissingFiles check_regular_grid_missing_fi
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/regular_grid_input.cpp#65
+Defined at /github/workspace/src/geode/mesh/io/regular_grid_input.cpp#67
 ```
 
 ### load_vertex_set
@@ -3386,7 +3476,7 @@ unique_ptr load_vertex_set(const MeshImpl & impl, string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/vertex_set_input.cpp#40
+Defined at /github/workspace/src/geode/mesh/io/vertex_set_input.cpp#42
 ```
 
  API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
@@ -3402,7 +3492,7 @@ unique_ptr load_vertex_set(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/vertex_set_input.cpp#33
+Defined at /github/workspace/src/geode/mesh/io/vertex_set_input.cpp#35
 ```
 
  API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -3416,7 +3506,7 @@ typename class VertexSetInput::MissingFiles check_vertex_set_missing_files(strin
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/vertex_set_input.cpp#61
+Defined at /github/workspace/src/geode/mesh/io/vertex_set_input.cpp#63
 ```
 
 ### save_point_set
@@ -3426,7 +3516,7 @@ void save_point_set(const PointSet<dimension> & point_set, string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/point_set_output.cpp#34
+Defined at /github/workspace/src/geode/mesh/io/point_set_output.cpp#36
 ```
 
  API function for saving a PointSet. The adequate saver is called depending on the given filename extension.
@@ -3435,6 +3525,16 @@ Defined at /github/workspace/src/geode/mesh/io/point_set_output.cpp#34
 
 **filename** [in] Path to the file where save the PointSet.
 
+### is_point_set_saveable
+
+```cpp
+bool is_point_set_saveable(const PointSet<dimension> & point_set, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/point_set_output.cpp#55
+```
+
 ### save_vertex_set
 
 ```cpp
@@ -3442,7 +3542,7 @@ void save_vertex_set(const VertexSet & vertex_set, string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/vertex_set_output.cpp#32
+Defined at /github/workspace/src/geode/mesh/io/vertex_set_output.cpp#34
 ```
 
  API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
@@ -3450,6 +3550,16 @@ Defined at /github/workspace/src/geode/mesh/io/vertex_set_output.cpp#32
 **vertex_set** [in] VertexSet to save.
 
 **filename** [in] Path to the file where save the VertexSet.
+
+### is_vertex_set_saveable
+
+```cpp
+bool is_vertex_set_saveable(const VertexSet & vertex_set, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/vertex_set_output.cpp#50
+```
 
 ### create_aabb_tree
 
@@ -3616,7 +3726,7 @@ void save_tetrahedral_solid(const TetrahedralSolid<dimension> & tetrahedral_soli
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_output.cpp#33
+Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_output.cpp#35
 ```
 
  API function for saving a TetrahedralSolid. The adequate saver is called depending on the given filename extension.
@@ -3624,6 +3734,16 @@ Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_output.cpp#33
 **tetrahedral_solid** [in] TetrahedralSolid to save.
 
 **filename** [in] Path to the file where save the TetrahedralSolid.
+
+### is_tetrahedral_solid_saveable
+
+```cpp
+bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedral_solid, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/io/tetrahedral_solid_output.cpp#55
+```
 
 ### create_lines_aabb_tree
 
@@ -3732,7 +3852,7 @@ void save_raster_image(const RasterImage<dimension> & raster, string_view filena
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/image/io/raster_image_output.cpp#33
+Defined at /github/workspace/src/geode/image/io/raster_image_output.cpp#35
 ```
 
  API function for saving a RasterImage. The adequate saver is called depending on the given filename extension.
@@ -3740,6 +3860,16 @@ Defined at /github/workspace/src/geode/image/io/raster_image_output.cpp#33
 **raster** [in] RasterImage to save.
 
 **filename** [in] Path to the file where save the RasterImage.
+
+### is_raster_image_saveable
+
+```cpp
+bool is_raster_image_saveable(const RasterImage<dimension> & raster, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/image/io/raster_image_output.cpp#54
+```
 
 ### merge_edged_curves
 
@@ -3758,7 +3888,7 @@ RasterImage<dimension> load_raster_image(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/image/io/raster_image_input.cpp#33
+Defined at /github/workspace/src/geode/image/io/raster_image_input.cpp#35
 ```
 
  API function for loading an RasterImage. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
@@ -3772,7 +3902,7 @@ typename RasterImageInput<dimension>::MissingFiles check_raster_image_missing_fi
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/image/io/raster_image_input.cpp#52
+Defined at /github/workspace/src/geode/image/io/raster_image_input.cpp#54
 ```
 
 ### string_split

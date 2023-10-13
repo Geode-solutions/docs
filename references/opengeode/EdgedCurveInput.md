@@ -1,7 +1,7 @@
 # class EdgedCurveInput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/edged_curve_input.h#60
+Defined at ../../include/geode/mesh/io/edged_curve_input.h#62
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void EdgedCurveInput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/edged_curve_input.h#70
+Defined at ../../include/geode/mesh/io/edged_curve_input.h#72
 ```
 
 

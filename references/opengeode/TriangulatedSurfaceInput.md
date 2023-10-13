@@ -1,7 +1,7 @@
 # class TriangulatedSurfaceInput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/triangulated_surface_input.h#61
+Defined at ../../include/geode/mesh/io/triangulated_surface_input.h#63
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void TriangulatedSurfaceInput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/triangulated_surface_input.h#72
+Defined at ../../include/geode/mesh/io/triangulated_surface_input.h#74
 ```
 
 

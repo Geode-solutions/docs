@@ -1,7 +1,7 @@
 # class TetrahedralSolidOutput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/tetrahedral_solid_output.h#50
+Defined at ../../include/geode/mesh/io/tetrahedral_solid_output.h#52
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void TetrahedralSolidOutput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/tetrahedral_solid_output.h#56
+Defined at ../../include/geode/mesh/io/tetrahedral_solid_output.h#58
 ```
 
 

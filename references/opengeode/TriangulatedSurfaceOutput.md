@@ -1,7 +1,7 @@
 # class TriangulatedSurfaceOutput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/triangulated_surface_output.h#50
+Defined at ../../include/geode/mesh/io/triangulated_surface_output.h#52
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void TriangulatedSurfaceOutput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/triangulated_surface_output.h#54
+Defined at ../../include/geode/mesh/io/triangulated_surface_output.h#56
 ```
 
 

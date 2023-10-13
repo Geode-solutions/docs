@@ -1,7 +1,7 @@
 # class VertexSetInput
 
 ```cpp
-Defined at ../../include/geode/mesh/io/vertex_set_input.h#57
+Defined at ../../include/geode/mesh/io/vertex_set_input.h#59
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void VertexSetInput(string_view filename)
 ```
 
 ```cpp
-Defined at ../../include/geode/mesh/io/vertex_set_input.h#66
+Defined at ../../include/geode/mesh/io/vertex_set_input.h#68
 ```
 
 
