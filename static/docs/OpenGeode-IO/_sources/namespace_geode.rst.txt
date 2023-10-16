@@ -1,0 +1,25 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// global functions
+
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a2fed3679b41441d5c6f064f7f62fd408>`(opengeode_io_image_api, IOImage);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a448129276e168851b991a9610716dd24>`(opengeode_io_mesh_api, IOMesh);
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1a5447a59d49bc30e11949d68bb8f8483b>`(opengeode_io_model_api, IOModel);
+
+	} // namespace geode
