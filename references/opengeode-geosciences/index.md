@@ -78,7 +78,7 @@ void save_structural_model(const StructuralModel & structural_model, string_view
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_output.cpp#35
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_output.cpp#34
 ```
 
  API function for saving a StructuralModel. The adequate saver is called depending on the given filename extension.
@@ -87,6 +87,16 @@ Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/st
 
 **filename** [in] Path to the file where save the StructuralModel.
 
+### is_structural_model_saveable
+
+```cpp
+bool is_structural_model_saveable(const StructuralModel & structural_model, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_output.cpp#50
+```
+
 ### save_cross_section
 
 ```cpp
@@ -94,7 +104,7 @@ void save_cross_section(const CrossSection & cross_section, string_view filename
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_output.cpp#35
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_output.cpp#34
 ```
 
  API function for saving a CrossSection. The adequate saver is called depending on the given filename extension.
@@ -103,6 +113,16 @@ Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cr
 
 **filename** [in] Path to the file where save the CrossSection.
 
+### is_cross_section_saveable
+
+```cpp
+bool is_cross_section_saveable(const CrossSection & cross_section, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_output.cpp#50
+```
+
 ### save_implicit_structural_model
 
 ```cpp
@@ -110,7 +130,7 @@ void save_implicit_structural_model(const ImplicitStructuralModel & implicit_mod
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_output.cpp#39
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_output.cpp#38
 ```
 
  API function for saving an ImplicitStructuralModel. The adequate saver is called depending on the given filename extension.
@@ -126,7 +146,7 @@ void save_horizons_stack(const HorizonsStack<dimension> & horizons_stack, string
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_output.cpp#36
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_output.cpp#35
 ```
 
  API function for saving a HorizonsStack. The adequate saver is called depending on the given filename extension.
@@ -142,7 +162,7 @@ StructuralModel load_structural_model(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_input.cpp#32
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_input.cpp#34
 ```
 
  API function for loading a StructuralModel. The adequate loader is called depending on the filename extension.
@@ -156,7 +176,7 @@ MissingFiles check_structural_model_missing_files(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_input.cpp#71
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/structural_model_input.cpp#73
 ```
 
 ### load_implicit_cross_section
@@ -166,7 +186,7 @@ ImplicitCrossSection load_implicit_cross_section(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_input.cpp#32
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_input.cpp#34
 ```
 
  API function for loading an ImplicitCrossSection. The adequate loader is called depending on the filename extension.
@@ -180,7 +200,7 @@ MissingFiles check_implicit_cross_section_missing_files(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_input.cpp#70
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_input.cpp#72
 ```
 
 ### load_cross_section
@@ -190,7 +210,7 @@ CrossSection load_cross_section(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_input.cpp#33
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_input.cpp#35
 ```
 
  API function for loading a CrossSection. The adequate loader is called depending on the filename extension.
@@ -204,7 +224,7 @@ MissingFiles check_cross_section_missing_files(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_input.cpp#69
+Defined at /github/workspace/src/geode/geosciences/explicit/representation/io/cross_section_input.cpp#71
 ```
 
 ### load_horizons_stack
@@ -214,7 +234,7 @@ HorizonsStack<dimension> load_horizons_stack(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_input.cpp#34
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_input.cpp#36
 ```
 
  API function for loading a HorizonsStack. The adequate loader is called depending on the filename extension.
@@ -230,7 +250,7 @@ typename HorizonsStackInput<dimension>::MissingFiles check_horizons_stack_missin
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_input.cpp#59
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_input.cpp#61
 ```
 
 ### load_implicit_structural_model
@@ -240,7 +260,7 @@ ImplicitStructuralModel load_implicit_structural_model(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_input.cpp#34
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_input.cpp#36
 ```
 
  API function for loading an ImplicitStructuralModel. The adequate loader is called depending on the filename extension.
@@ -254,7 +274,7 @@ MissingFiles check_implicit_structural_model_missing_files(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_input.cpp#74
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_input.cpp#76
 ```
 
 ### register_explicit_serialize_pcontext
@@ -296,7 +316,7 @@ void save_implicit_cross_section(const ImplicitCrossSection & implicit_model, st
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_output.cpp#39
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_output.cpp#38
 ```
 
  API function for saving an ImplicitCrossSection. The adequate saver is called depending on the given filename extension.
@@ -305,6 +325,16 @@ Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/im
 
 **filename** [in] Path to the file where save the ImplicitCrossSection.
 
+### is_implicit_structural_model_saveable
+
+```cpp
+bool is_implicit_structural_model_saveable(const ImplicitStructuralModel & implicit_model, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_structural_model_output.cpp#57
+```
+
 ### load_stratigraphic_section
 
 ```cpp
@@ -312,7 +342,7 @@ StratigraphicSection load_stratigraphic_section(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_input.cpp#32
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_input.cpp#34
 ```
 
  API function for loading a StratigraphicSection. The adequate loader is called depending on the filename extension.
@@ -326,7 +356,27 @@ MissingFiles check_stratigraphic_section_missing_files(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_input.cpp#71
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_input.cpp#73
+```
+
+### is_horizons_stack_saveable
+
+```cpp
+bool is_horizons_stack_saveable(const HorizonsStack<dimension> & horizons_stack, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/horizons_stack_output.cpp#53
+```
+
+### is_implicit_cross_section_saveable
+
+```cpp
+bool is_implicit_cross_section_saveable(const ImplicitCrossSection & section, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/implicit_cross_section_output.cpp#56
 ```
 
 ### assign_edged_curve_geographic_coordinate_system_info
@@ -456,7 +506,7 @@ StratigraphicModel load_stratigraphic_model(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_input.cpp#34
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_input.cpp#36
 ```
 
  API function for loading a StratigraphicModel. The adequate loader is called depending on the filename extension.
@@ -470,7 +520,7 @@ MissingFiles check_stratigraphic_model_missing_files(string_view filename)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_input.cpp#74
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_input.cpp#76
 ```
 
 ### save_stratigraphic_model
@@ -480,7 +530,7 @@ void save_stratigraphic_model(const StratigraphicModel & stratigraphic_model, st
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_output.cpp#40
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_output.cpp#39
 ```
 
  API function for saving a StratigraphicModel. The adequate saver is called depending on the given filename extension.
@@ -489,6 +539,16 @@ Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/st
 
 **filename** [in] Path to the file where save the StratigraphicModel.
 
+### is_stratigraphic_model_saveable
+
+```cpp
+bool is_stratigraphic_model_saveable(const StratigraphicModel & stratigraphic_model, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_model_output.cpp#57
+```
+
 ### save_stratigraphic_section
 
 ```cpp
@@ -496,7 +556,7 @@ void save_stratigraphic_section(const StratigraphicSection & stratigraphic_secti
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_output.cpp#40
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_output.cpp#39
 ```
 
  API function for saving a StratigraphicSection. The adequate saver is called depending on the given filename extension.
@@ -504,6 +564,16 @@ Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/st
 **stratigraphic_section** [in] StratigraphicSection to save.
 
 **filename** [in] Path to the file where save the StratigraphicSection.
+
+### is_stratigraphic_section_saveable
+
+```cpp
+bool is_stratigraphic_section_saveable(const StratigraphicSection & stratigraphic_section, string_view filename)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/geosciences/implicit/representation/io/stratigraphic_section_output.cpp#58
+```
 
 
 

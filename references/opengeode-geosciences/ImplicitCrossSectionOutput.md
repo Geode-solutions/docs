@@ -1,7 +1,7 @@
 # class ImplicitCrossSectionOutput
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_output.h#49
+Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_output.h#51
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public void ~ImplicitCrossSectionOutput()
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_output.h#52
+Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_output.h#54
 ```
 
 ### ImplicitCrossSectionOutput
@@ -29,7 +29,7 @@ protected void ImplicitCrossSectionOutput(string_view filename)
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_output.h#55
+Defined at ../include/geode/geosciences/implicit/representation/io/implicit_cross_section_output.h#57
 ```
 
 

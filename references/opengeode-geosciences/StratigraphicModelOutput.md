@@ -1,7 +1,7 @@
 # class StratigraphicModelOutput
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_model_output.h#49
+Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_model_output.h#51
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public void ~StratigraphicModelOutput()
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_model_output.h#53
+Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_model_output.h#55
 ```
 
 ### StratigraphicModelOutput
@@ -29,7 +29,7 @@ protected void StratigraphicModelOutput(string_view filename)
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_model_output.h#56
+Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_model_output.h#58
 ```
 
 

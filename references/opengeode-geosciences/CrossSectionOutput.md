@@ -1,7 +1,7 @@
 # class CrossSectionOutput
 
 ```cpp
-Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_output.h#48
+Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_output.h#50
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public void ~CrossSectionOutput()
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_output.h#51
+Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_output.h#53
 ```
 
 ### CrossSectionOutput
@@ -29,7 +29,7 @@ protected void CrossSectionOutput(string_view filename)
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_output.h#54
+Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_output.h#56
 ```
 
 

@@ -1,7 +1,7 @@
 # class StructuralModelOutput
 
 ```cpp
-Defined at ../include/geode/geosciences/explicit/representation/io/structural_model_output.h#48
+Defined at ../include/geode/geosciences/explicit/representation/io/structural_model_output.h#50
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public void ~StructuralModelOutput()
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/explicit/representation/io/structural_model_output.h#51
+Defined at ../include/geode/geosciences/explicit/representation/io/structural_model_output.h#53
 ```
 
 ### StructuralModelOutput
@@ -29,7 +29,7 @@ protected void StructuralModelOutput(string_view filename)
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/explicit/representation/io/structural_model_output.h#54
+Defined at ../include/geode/geosciences/explicit/representation/io/structural_model_output.h#56
 ```
 
 

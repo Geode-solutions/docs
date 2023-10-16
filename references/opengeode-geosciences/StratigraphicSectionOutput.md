@@ -1,7 +1,7 @@
 # class StratigraphicSectionOutput
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_section_output.h#49
+Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_section_output.h#51
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ public void ~StratigraphicSectionOutput()
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_section_output.h#52
+Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_section_output.h#54
 ```
 
 ### StratigraphicSectionOutput
@@ -29,7 +29,7 @@ protected void StratigraphicSectionOutput(string_view filename)
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_section_output.h#55
+Defined at ../include/geode/geosciences/implicit/representation/io/stratigraphic_section_output.h#57
 ```
 
 

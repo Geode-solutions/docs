@@ -1,7 +1,7 @@
 # class CrossSectionInput
 
 ```cpp
-Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_input.h#48
+Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_input.h#50
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void CrossSectionInput(string_view filename)
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_input.h#56
+Defined at ../include/geode/geosciences/explicit/representation/io/cross_section_input.h#58
 ```
 
 

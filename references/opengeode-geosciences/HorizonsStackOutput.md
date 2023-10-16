@@ -1,7 +1,7 @@
 # class HorizonsStackOutput
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/horizons_stack_output.h#50
+Defined at ../include/geode/geosciences/implicit/representation/io/horizons_stack_output.h#52
 ```
 
 ```cpp
@@ -19,7 +19,7 @@ protected void HorizonsStackOutput<dimension>(string_view filename)
 ```
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/representation/io/horizons_stack_output.h#53
+Defined at ../include/geode/geosciences/implicit/representation/io/horizons_stack_output.h#55
 ```
 
 
