@@ -3243,6 +3243,26 @@ Defined at /github/workspace/src/geode/geometry/rotation.cpp#88
 
 **angle** [in] Rotation angle expresses in radians.
 
+### repair_polygon_orientations
+
+```cpp
+void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/repair_polygon_orientations.cpp#315
+```
+
+### repair_polygon_orientations
+
+```cpp
+void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
+```
+
+```cpp
+Defined at /github/workspace/src/geode/mesh/helpers/repair_polygon_orientations.cpp#322
+```
+
 ### save_regular_grid
 
 ```cpp
@@ -3267,26 +3287,6 @@ bool is_regular_grid_saveable(const RegularGrid<dimension> & regular_grid, strin
 
 ```cpp
 Defined at /github/workspace/src/geode/mesh/io/regular_grid_output.cpp#55
-```
-
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
-```
-
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/repair_polygon_orientations.cpp#315
-```
-
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
-```
-
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/repair_polygon_orientations.cpp#322
 ```
 
 ### point_segment_position_exact
