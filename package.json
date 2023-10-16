@@ -5,14 +5,14 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.12",
+    "vitepress": "^1.0.0-rc.22",
     "vuepress-vite": "^2.0.0-beta.45"
   },
   "dependencies": {
-    "@mdi/font": "^7.2.96",
-    "highlight.js": "^11.8.0",
-    "markdown-it": "^13.0.1",
+    "@mdi/font": "^7.3.67",
+    "highlight.js": "^11.9.0",
+    "markdown-it": "^13.0.2",
     "prismjs": "^1.29.0",
-    "vuetify": "^3.3.16"
+    "vuetify": "^3.3.21"
   }
 }

@@ -10,6 +10,10 @@
 [`EdgedCurve2D`]: /references/opengeode/EdgedCurve.md
 [`EdgedCurve3D`]: /references/opengeode/EdgedCurve.md
 [`Graph`]: /references/opengeode/Graph.md
+[`ImplicitCrossSection`]: /references/opengeode-geosciences/ImplicitCrossSection.md
+[`ImplicitStructuralModel`]: /references/opengeode-geosciences/ImplicitStructuralModel.md
+[`HorizonsStack2D`]: /references/opengeode-geosciences/HorizonsStack.md
+[`HorizonsStack3D`]: /references/opengeode-geosciences/HorizonsStack.md
 [`HybridSolid3D`]: /references/opengeode/HybridSolid.md
 [`PointSet2D`]: /references/opengeode/PointSet.md
 [`PointSet3D`]: /references/opengeode/PointSet.md
@@ -28,6 +32,8 @@
 [`RegularGrid3D`]: /references/opengeode/RegularGrid.md
 [`Section`]: /references/opengeode/Section.md
 [`SparseAttribute`]: /references/opengeode/SparseAttribute.md
+[`StratigraphicModel`]: /references/opengeode-geosciences/StratigraphicModel.md
+[`StratigraphicSection`]: /references/opengeode-geosciences/StratigraphicSection.md
 [`StructuralModel`]: /references/opengeode-geosciences/StructuralModel.md
 [`Surface3D`]: /references/opengeode/Surfaces.md
 [`Surfaces3D`]: /references/opengeode/Surfaces.md
