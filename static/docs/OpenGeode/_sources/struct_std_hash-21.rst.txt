@@ -1,8 +1,8 @@
-.. index:: pair: struct; std::hash<geode::GreyscaleColor>
-.. _doxid-structstd_1_1hash_3_01geode_1_1_greyscale_color_01_4:
+.. index:: pair: struct; std::hash<geode::MeshEdge>
+.. _doxid-structstd_1_1hash_3_01geode_1_1_mesh_edge_01_4:
 
-template struct std::hash<geode::GreyscaleColor>
-================================================
+template struct std::hash<geode::MeshEdge>
+==========================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct std::hash<geode::GreyscaleColor>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <greyscale_color.h>
+	#include <mesh_element.h>
 	
 	template <>
-	struct hash<geode::GreyscaleColor>
+	struct hash<geode::MeshEdge>
 	{
 		// methods
 	
-		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_greyscale_color_01_4_1a5ca41a81884058fcbbe652a17b4ae115>` (const :ref:`geode::GreyscaleColor<doxid-classgeode_1_1_greyscale_color>`& color) const;
+		size_t :target:`operator ()<doxid-structstd_1_1hash_3_01geode_1_1_mesh_edge_01_4_1ac6814179e10e797a676a8e1642d6c8a8>` (const :ref:`geode::MeshEdge<doxid-structgeode_1_1_mesh_edge>`& mesh_edge) const;
 	};

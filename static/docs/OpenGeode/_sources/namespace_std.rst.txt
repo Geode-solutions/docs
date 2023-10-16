@@ -31,6 +31,7 @@ namespace std
 	struct_std_hash-22.rst
 	struct_std_hash-23.rst
 	struct_std_hash-24.rst
+	struct_std_hash-25.rst
 
 
 
@@ -89,6 +90,9 @@ namespace std
 	struct :ref:`hash<geode::ComponentType><doxid-structstd_1_1hash_3_01geode_1_1_component_type_01_4>`;
 
 	template <>
+	struct :ref:`hash<geode::CRSType><doxid-structstd_1_1hash_3_01geode_1_1_c_r_s_type_01_4>`;
+
+	template <>
 	struct :ref:`hash<geode::ComponentMeshVertex><doxid-structstd_1_1hash_3_01geode_1_1_component_mesh_vertex_01_4>`;
 
 	template <>
@@ -98,7 +102,7 @@ namespace std
 	struct :ref:`hash<geode::MeshType><doxid-structstd_1_1hash_3_01geode_1_1_mesh_type_01_4>`;
 
 	template <>
-	struct :ref:`hash<geode::CRSType><doxid-structstd_1_1hash_3_01geode_1_1_c_r_s_type_01_4>`;
+	struct :ref:`hash<geode::EdgeVertex><doxid-structstd_1_1hash_3_01geode_1_1_edge_vertex_01_4>`;
 
 	template <>
 	struct :ref:`hash<geode::MeshEdge><doxid-structstd_1_1hash_3_01geode_1_1_mesh_edge_01_4>`;
