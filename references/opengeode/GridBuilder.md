@@ -1,20 +1,11 @@
 # class GridBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#67
-```
 
 # class GridBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#68
-```
 
 # class GridBuilder
 
-```cpp
-Defined at ../../include/geode/mesh/builder/grid_builder.h#40
-```
 
 ## Functions
 
@@ -24,9 +15,6 @@ Defined at ../../include/geode/mesh/builder/grid_builder.h#40
 public void GridBuilder<dimension>(Grid<dimension> & grid)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#33
-```
 
 ### set_grid_origin
 
@@ -34,9 +22,6 @@ Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#33
 public void set_grid_origin(Point<dimension> origin)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#39
-```
 
 ### set_grid_dimensions
 
@@ -44,9 +29,6 @@ Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#39
 public void set_grid_dimensions(std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#45
-```
 
 ### set_grid_directions
 
@@ -54,9 +36,6 @@ Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#45
 public void set_grid_directions(std::array<Vector<dimension>, dimension> directions)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#54
-```
 
 ### copy
 
@@ -64,9 +43,6 @@ Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#54
 public void copy(const Grid<dimension> & grid)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/grid_builder.cpp#61
-```
 
 
 

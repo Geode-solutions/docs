@@ -4,9 +4,6 @@
 
 # class TriangulatedSurfaceScalarFunction
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/triangulated_surface_scalar_function.h#39
-```
 
 ## Records
 
@@ -22,9 +19,6 @@ Impl
 public void TriangulatedSurfaceScalarFunction<dimension>(TriangulatedSurfaceScalarFunction<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_function.cpp#107
-```
 
 ### ~TriangulatedSurfaceScalarFunction
 
@@ -32,9 +26,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_
 public void ~TriangulatedSurfaceScalarFunction<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_function.cpp#134
-```
 
 ### create
 
@@ -42,9 +33,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_
 public TriangulatedSurfaceScalarFunction create(const TriangulatedSurface<dimension> & solid, string_view function_name, double value)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_function.cpp#140
-```
 
  Create a new object function from a TriangulatedSurface, a name, and a value. Throws an exception if an attribute with the same name exists.
 
@@ -54,9 +42,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_
 public TriangulatedSurfaceScalarFunction find(const TriangulatedSurface<dimension> & solid, string_view function_name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_function.cpp#150
-```
 
  Finds an object function that already exists in the given TriangulatedSurface, from its given name. Throws an exception if no attribute with the same name exists.
 
@@ -66,9 +51,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_
 public void set_value(index_t vertex_index, double value)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_function.cpp#159
-```
 
 ### value
 
@@ -76,9 +58,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_
 public double value(index_t vertex_index)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_function.cpp#166
-```
 
 ### value
 
@@ -86,9 +65,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_
 public double value(const Point<dimension> & point, index_t tetrahedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/triangulated_surface_scalar_function.cpp#173
-```
 
 
 

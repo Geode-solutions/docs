@@ -1,38 +1,20 @@
 # class GenericSegment
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#192
-```
 
 # class GenericSegment
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#193
-```
 
 # class GenericSegment
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#190
-```
 
 # class GenericSegment
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#194
-```
 
 # class GenericSegment
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#189
-```
 
 # class GenericSegment
 
-```cpp
-Defined at ../../include/geode/geometry/basic_objects/segment.h#42
-```
 
 ## Functions
 
@@ -42,9 +24,6 @@ Defined at ../../include/geode/geometry/basic_objects/segment.h#42
 public void GenericSegment<PointType, dimension>(PointType point0, PointType point1)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#31
-```
 
 ### GenericSegment
 
@@ -52,9 +31,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#31
 public void GenericSegment<PointType, dimension>(const GenericSegment<PointType, dimension> & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#37
-```
 
 ### operator=
 
@@ -62,9 +38,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#37
 public GenericSegment<PointType, dimension> & operator=(const GenericSegment<PointType, dimension> & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#43
-```
 
 ### GenericSegment
 
@@ -72,9 +45,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#43
 public void GenericSegment<PointType, dimension>(GenericSegment<PointType, dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#51
-```
 
 ### operator=
 
@@ -82,9 +52,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#51
 public GenericSegment<PointType, dimension> & operator=(GenericSegment<PointType, dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#57
-```
 
 ### direction
 
@@ -92,9 +59,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#57
 public Vector<dimension> direction()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#65
-```
 
 ### normalized_direction
 
@@ -102,9 +66,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#65
 public Vector<dimension> normalized_direction()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#74
-```
 
 ### barycenter
 
@@ -112,9 +73,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#74
 public Point<dimension> barycenter()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#80
-```
 
 ### length
 
@@ -122,9 +80,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#80
 public double length()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#88
-```
 
 ### set_point
 
@@ -132,9 +87,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#88
 public void set_point(index_t vertex, PointType point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#95
-```
 
 ### vertices
 
@@ -142,9 +94,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#95
 public const std::array<PointType, 2> & vertices()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#101
-```
 
 ### bounding_box
 
@@ -152,15 +101,9 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#101
 public BoundingBox<dimension> bounding_box()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#107
-```
 
 
 
 # class GenericSegment
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/segment.cpp#191
-```
 

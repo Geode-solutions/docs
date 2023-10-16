@@ -1,8 +1,5 @@
 # struct IntersectionResult
 
-```cpp
-Defined at ../../include/geode/geometry/intersection.h#73
-```
 
 ## Members
 
@@ -31,9 +28,6 @@ public absl::optional<CorrectnessInfo<Intersection> > correctness
 public void IntersectionResult<Intersection>(Intersection intersection, CorrectnessInfo<Intersection> correctness_info)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/intersection.h#75
-```
 
 ### IntersectionResult
 
@@ -41,9 +35,6 @@ Defined at ../../include/geode/geometry/intersection.h#75
 public void IntersectionResult<Intersection>(IntersectionType intersection_type)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/intersection.h#86
-```
 
 ### has_intersection
 
@@ -51,9 +42,6 @@ Defined at ../../include/geode/geometry/intersection.h#86
 public bool has_intersection()
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/intersection.h#91
-```
 
 ### operator bool
 
@@ -61,9 +49,6 @@ Defined at ../../include/geode/geometry/intersection.h#91
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/intersection.h#96
-```
 
 
 

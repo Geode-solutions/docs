@@ -2,9 +2,6 @@
 
 # class OpenGeodePolyhedralSolid
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#41
-```
 
 ```cpp
 Inherits from PolyhedralSolid<dimension>
@@ -26,9 +23,6 @@ Impl
 public void OpenGeodePolyhedralSolid<dimension>(const OpenGeodePolyhedralSolid<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#43
-```
 
 ### operator=
 
@@ -36,9 +30,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#43
 public OpenGeodePolyhedralSolid<dimension> & operator=(const OpenGeodePolyhedralSolid<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#43
-```
 
 ### OpenGeodePolyhedralSolid
 
@@ -46,9 +37,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#43
 public void OpenGeodePolyhedralSolid<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#410
-```
 
 ### OpenGeodePolyhedralSolid
 
@@ -56,9 +44,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public void OpenGeodePolyhedralSolid<dimension>(OpenGeodePolyhedralSolid<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#416
-```
 
 ### operator=
 
@@ -66,9 +51,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public OpenGeodePolyhedralSolid<dimension> & operator=(OpenGeodePolyhedralSolid<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#424
-```
 
 ### ~OpenGeodePolyhedralSolid
 
@@ -76,9 +58,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public void ~OpenGeodePolyhedralSolid<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#434
-```
 
 ### impl_name_static
 
@@ -86,9 +65,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public NamedType impl_name_static()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#56
-```
 
 ### impl_name
 
@@ -96,9 +72,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#56
 public NamedType impl_name()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#62
-```
 
 ### type_name
 
@@ -106,9 +79,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#62
 public NamedType type_name()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#67
-```
 
 ### native_extension_static
 
@@ -116,9 +86,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#67
 public string_view native_extension_static()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#72
-```
 
 ### native_extension
 
@@ -126,9 +93,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#72
 public string_view native_extension()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#79
-```
 
 ### set_vertex
 
@@ -136,9 +100,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_polyhedral_solid.h#79
 public void set_vertex(index_t vertex_id, Point<dimension> point, OGPolyhedralSolidKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#439
-```
 
 ### add_polyhedron
 
@@ -158,9 +119,6 @@ public void remove_polyhedra(const std::vector<bool> & to_delete, OGPolyhedralSo
 public void permute_polyhedra(Span permutation, OGPolyhedralSolidKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#518
-```
 
 ### set_polyhedron_adjacent
 
@@ -168,9 +126,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public void set_polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet, index_t adjacent_id, OGPolyhedralSolidKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#502
-```
 
 ### set_polyhedron_vertex
 
@@ -178,9 +133,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public void set_polyhedron_vertex(const PolyhedronVertex & polyhedron_vertex, index_t vertex_id, OGPolyhedralSolidKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#493
-```
 
 ### copy_polyhedra
 
@@ -188,9 +140,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public void copy_polyhedra(const OpenGeodePolyhedralSolid<dimension> & solid_mesh, OGPolyhedralSolidKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#534
-```
 
 ### get_polyhedron_adjacent
 
@@ -198,9 +147,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public absl::optional<index_t> get_polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#477
-```
 
 ### remove_polyhedra
 
@@ -208,9 +154,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public void remove_polyhedra(const int & to_delete, OGPolyhedralSolidKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#511
-```
 
 ### add_polyhedron
 
@@ -218,9 +161,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cp
 public void add_polyhedron(Span vertices, int facets, OGPolyhedralSolidKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_polyhedral_solid.cpp#525
-```
 
 
 

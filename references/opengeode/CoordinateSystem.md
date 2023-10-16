@@ -1,8 +1,5 @@
 # class CoordinateSystem
 
-```cpp
-Defined at ../../include/geode/geometry/coordinate_system.h#36
-```
 
 ```cpp
 Inherits from Frame<dimension>
@@ -18,9 +15,6 @@ Inherits from Frame<dimension>
 public void CoordinateSystem<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#91
-```
 
 ### CoordinateSystem
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#91
 public void CoordinateSystem<dimension>(std::array<Vector<dimension>, dimension> directions, Point<dimension> origin)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#96
-```
 
 ### CoordinateSystem
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#96
 public void CoordinateSystem<dimension>(Point<dimension> origin, const std::array<Point<dimension>, dimension> & other_points)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#106
-```
 
 ### origin
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#106
 public const Point<dimension> & origin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#121
-```
 
 ### set_origin
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#121
 public void set_origin(Point<dimension> origin)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#127
-```
 
 ### set_directions
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#127
 public void set_directions(std::array<Vector<dimension>, dimension> directions)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#133
-```
 
 ### coordinates
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#133
 public Point<dimension> coordinates(const Point<dimension> & global_coordinates)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#143
-```
 
 ### global_coordinates
 
@@ -88,9 +64,6 @@ Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#143
 public Point<dimension> global_coordinates(const Point<dimension> & coordinates)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#151
-```
 
 ### string
 
@@ -98,9 +71,6 @@ Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#151
 public basic_string string()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/coordinate_system.cpp#163
-```
 
 
 

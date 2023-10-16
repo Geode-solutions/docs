@@ -1,8 +1,5 @@
 # class SolidMeshBuilder
 
-```cpp
-Defined at ../../include/geode/mesh/builder/solid_mesh_builder.h#48
-```
 
  Interface class to represent the builder of a SolidMesh
 
@@ -22,9 +19,6 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<dimensi
 public void ~SolidMeshBuilder<>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#356
-```
 
 ### create
 
@@ -42,9 +36,6 @@ public int create(SolidMesh<dimension> & mesh)
 public SolidEdgesBuilder<dimension> edges_builder()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#677
-```
 
 ### facets_builder
 
@@ -52,9 +43,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#677
 public SolidFacetsBuilder<dimension> facets_builder()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#741
-```
 
 ### create_point
 
@@ -62,9 +50,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#741
 public index_t create_point(Point<dimension> point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#760
-```
 
  Create a new point with associated coordinates.
 
@@ -78,9 +63,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#760
 public index_t create_polyhedron(Span vertices, int facets)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#472
-```
 
  Create a new polyhedron from vertices and facets.
 
@@ -96,9 +78,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#472
 public void set_polyhedron_vertex(const PolyhedronVertex & polyhedron_vertex, index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#393
-```
 
  Modify a polyhedron vertex.
 
@@ -112,9 +91,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#393
 public void replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#369
-```
 
  Replace old polygon vertices from a given vertex to another.
 
@@ -128,9 +104,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#369
 public void set_polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet, index_t adjacent_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#593
-```
 
  Set a polyhedron adgjacent through a facet.
 
@@ -144,9 +117,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#593
 public void unset_polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#608
-```
 
  Unset a polyhedron adjacency through a facet.
 
@@ -160,9 +130,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#608
 public void compute_polyhedron_adjacencies()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#620
-```
 
  Compute all the adjacencies between the solid polyhedra
 
@@ -172,9 +139,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#620
 public void compute_polyhedron_adjacencies(Span polyhedra_to_connect)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#629
-```
 
  Compute the adjacencies between the given solid polyhedra
 
@@ -186,9 +150,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#629
 public int delete_polyhedra(const int & to_delete)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#684
-```
 
  Delete a set of solid polyhedra
 
@@ -202,9 +163,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#684
 public int permute_polyhedra(Span permutation)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#709
-```
 
  Permute polyhedra to match the given order.
 
@@ -218,9 +176,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#709
 public int delete_isolated_vertices()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#748
-```
 
  Delete all the isolated vertices (not used as polyhedron vertices)
 
@@ -232,9 +187,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#748
 public void associate_polyhedron_vertex_to_vertex(const PolyhedronVertex & polyhedron_vertex, index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#536
-```
 
  Set a polyhedron vertex to a given vertex.
 
@@ -248,9 +200,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#536
 public void disassociate_polyhedron_vertex_to_vertex(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#550
-```
 
  Unset polyhedron vertex information to a given vertex.
 
@@ -262,9 +211,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#550
 public void reset_polyhedra_around_vertex(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#529
-```
 
 ### copy
 
@@ -272,9 +218,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#529
 public void copy(const SolidMesh<dimension> & solid_mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#835
-```
 
 ### SolidMeshBuilder
 
@@ -282,9 +225,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#835
 protected void SolidMeshBuilder<>(SolidMesh<dimension> & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#347
-```
 
 ### update_polyhedron_info
 
@@ -292,9 +232,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#347
 protected void update_polyhedron_info(index_t polyhedron_id, Span vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#770
-```
 
 ### create_polyhedron
 
@@ -328,9 +265,6 @@ public vector delete_polyhedra(const std::vector<bool> & to_delete)
 public int create(SolidMesh<dimension> & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#361
-```
 
 ### get_polyhedron_facet_vertices
 
@@ -338,9 +272,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#361
 public int get_polyhedron_facet_vertices(Span vertices, int facets)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#507
-```
 
 ### do_delete_vertices
 
@@ -348,9 +279,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#507
 public void do_delete_vertices(const int & to_delete, Span old2new)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#559
-```
 
 ### remove_polyhedra_edges
 
@@ -358,9 +286,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#559
 public void remove_polyhedra_edges(const int & to_delete)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#659
-```
 
 ### remove_polyhedra_facets
 
@@ -368,9 +293,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#659
 public void remove_polyhedra_facets(const int & to_delete)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_mesh_builder.cpp#723
-```
 
 
 

@@ -1,8 +1,5 @@
 # struct ModelComponentMeshEdges
 
-```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_edges.h#68
-```
 
 ## Members
 

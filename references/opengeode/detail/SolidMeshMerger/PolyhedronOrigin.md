@@ -1,8 +1,5 @@
 # struct PolyhedronOrigin
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/solid_merger.h#47
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public index_t polyhedron
 public void PolyhedronOrigin(index_t solid_in, index_t polyhedron_in)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/solid_merger.h#49
-```
 
 
 

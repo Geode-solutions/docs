@@ -2,9 +2,6 @@
 
 # class TetrahedralSolid
 
-```cpp
-Defined at ../../include/geode/mesh/core/tetrahedral_solid.h#39
-```
 
 ```cpp
 Inherits from SolidMesh<dimension>
@@ -38,9 +35,6 @@ public std::unique_ptr<TetrahedralSolid<dimension> > create(const MeshImpl & imp
 public NamedType type_name_static()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#118
-```
 
 ### clone
 
@@ -48,9 +42,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#118
 public std::unique_ptr<TetrahedralSolid<dimension> > clone()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#124
-```
 
 ### polyhedron_edges_vertices
 
@@ -58,9 +49,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#124
 public PolyhedronEdgesVertices polyhedron_edges_vertices(index_t polyhedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#281
-```
 
 ### polyhedron_facets_vertices
 
@@ -68,9 +56,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#281
 public PolyhedronFacetsVertices polyhedron_facets_vertices(index_t polyhedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#313
-```
 
 ### polyhedra_around_edge
 
@@ -78,9 +63,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#313
 public PolyhedraAroundEdge polyhedra_around_edge(const std::array<index_t, 2> & vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#205
-```
 
 ### polyhedra_around_edge
 
@@ -88,9 +70,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#205
 public PolyhedraAroundEdge polyhedra_around_edge(const std::array<index_t, 2> & vertices, index_t first_polyhedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#228
-```
 
 ### polyhedra_around_edge
 
@@ -98,9 +77,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#228
 public PolyhedraAroundEdge polyhedra_around_edge(const PolyhedronFacetEdge & edge)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#272
-```
 
 ### polyhedron_adjacent_facet
 
@@ -108,9 +84,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#272
 public absl::optional<PolyhedronFacet> polyhedron_adjacent_facet(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#332
-```
 
 ### edge_incident_facets
 
@@ -118,9 +91,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#332
 public std::array<PolyhedronFacet, 2> edge_incident_facets(index_t tetrahedron_id, const std::array<index_t, 2> & edge_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#134
-```
 
  Return the local indices of the two facets incident to the edge in tetrahedron.
 
@@ -136,9 +106,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#134
 public std::array<PolyhedronFacet, 2> opposite_edge_incident_facets(index_t tetrahedron_id, const std::array<index_t, 2> & edge_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#159
-```
 
  Return the local indices of the two facets incident to the opposite edge in tetrahedron.
 
@@ -154,9 +121,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#159
 public Tetrahedron tetrahedron(index_t tetrahedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#185
-```
 
  Return a geometrical Tetra from an element of the mesh.
 
@@ -166,9 +130,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#185
 public Triangle<dimension> triangle(const PolyhedronFacet & facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#196
-```
 
  Return a geometrical Triangle from a tetrahedron facet of the mesh.
 
@@ -178,9 +139,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#196
 protected void TetrahedralSolid<>()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/tetrahedral_solid.h#117
-```
 
 ### TetrahedralSolid
 
@@ -188,9 +146,6 @@ Defined at ../../include/geode/mesh/core/tetrahedral_solid.h#117
 protected void TetrahedralSolid<>(TetrahedralSolid<> && other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/tetrahedral_solid.h#118
-```
 
 ### operator=
 
@@ -198,9 +153,6 @@ Defined at ../../include/geode/mesh/core/tetrahedral_solid.h#118
 protected TetrahedralSolid<> & operator=(TetrahedralSolid<> && other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/tetrahedral_solid.h#119
-```
 
 ### create
 
@@ -208,9 +160,6 @@ Defined at ../../include/geode/mesh/core/tetrahedral_solid.h#119
 public int create()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#101
-```
 
 ### create
 
@@ -218,9 +167,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#101
 public int create(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#110
-```
 
 ### polyhedron_vertex_facets
 
@@ -228,9 +174,6 @@ Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#110
 public PolyhedronFacets polyhedron_vertex_facets(const PolyhedronVertex & polyhedron_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/tetrahedral_solid.cpp#300
-```
 
 
 

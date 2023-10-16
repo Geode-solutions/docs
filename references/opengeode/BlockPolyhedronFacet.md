@@ -1,8 +1,5 @@
 # struct BlockPolyhedronFacet
 
-```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#92
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public InlinedVector vertices
 public void BlockPolyhedronFacet()
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#94
-```
 
 ### BlockPolyhedronFacet
 
@@ -36,9 +30,6 @@ Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#94
 public void BlockPolyhedronFacet(PolyhedronFacet facet_in)
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#95
-```
 
 
 

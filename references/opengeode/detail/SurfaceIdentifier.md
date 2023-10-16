@@ -4,9 +4,6 @@
 
 # class SurfaceIdentifier
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#87
-```
 
 ## Functions
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#87
 public void SurfaceIdentifier<dimension>(const SurfaceIdentifier<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#89
-```
 
 ### operator=
 
@@ -26,9 +20,6 @@ Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#89
 public SurfaceIdentifier<dimension> & operator=(const SurfaceIdentifier<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#89
-```
 
 ### SurfaceIdentifier
 
@@ -36,9 +27,6 @@ Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#89
 public void SurfaceIdentifier<dimension>(SurfaceIdentifier<dimension> && )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#89
-```
 
 ### operator=
 
@@ -46,9 +34,6 @@ Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#89
 public SurfaceIdentifier<dimension> & operator=(SurfaceIdentifier<dimension> && )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#89
-```
 
 ### SurfaceIdentifier
 
@@ -56,9 +41,6 @@ Defined at ../../include/geode/mesh/helpers/detail/component_identifier.h#89
 public void SurfaceIdentifier<dimension>(const SurfaceMesh<dimension> & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#277
-```
 
 ### ~SurfaceIdentifier
 
@@ -66,9 +48,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.
 public void ~SurfaceIdentifier<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#284
-```
 
 ### identify_polygons
 
@@ -76,9 +55,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.
 public index_t identify_polygons()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#289
-```
 
 ### polygon_identifier
 
@@ -86,9 +62,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.
 public index_t polygon_identifier(index_t polygon)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#295
-```
 
 ### identified_connected_polygons
 
@@ -96,9 +69,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.
 public absl::FixedArray<std::vector<index_t> > identified_connected_polygons()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/component_identifier.cpp#302
-```
 
 
 

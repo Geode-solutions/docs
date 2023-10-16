@@ -1,8 +1,5 @@
 # class OwnerCircle
 
-```cpp
-Defined at ../../include/geode/geometry/basic_objects/circle.h#65
-```
 
 ```cpp
 Inherits from GenericCircle<OwnerPlane>
@@ -18,9 +15,6 @@ Inherits from GenericCircle<OwnerPlane>
 public void OwnerCircle(OwnerPlane plane, double radius)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#97
-```
 
 ### OwnerCircle
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#97
 public void OwnerCircle(const OwnerCircle & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#101
-```
 
 ### operator=
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#101
 public OwnerCircle & operator=(const OwnerCircle & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#102
-```
 
 ### OwnerCircle
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#102
 public void OwnerCircle(OwnerCircle && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#107
-```
 
 ### operator=
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#107
 public OwnerCircle & operator=(OwnerCircle && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#108
-```
 
 
 

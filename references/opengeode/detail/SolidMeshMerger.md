@@ -1,8 +1,5 @@
 # class SolidMeshMerger
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#296
-```
 
 ```cpp
 Inherits from VertexMerger<SolidMesh<3U> >
@@ -12,9 +9,6 @@ Inherits from VertexMerger<SolidMesh<3U> >
 
 # class SolidMeshMerger
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/solid_merger.h#44
-```
 
 ```cpp
 Inherits from VertexMerger<SolidMesh<dimension> >
@@ -36,9 +30,6 @@ PolyhedronOrigin
 public void SolidMeshMerger<dimension>(absl::Span<const std::reference_wrapper<const SolidMesh<dimension> > > solids, double epsilon)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#260
-```
 
 ### ~SolidMeshMerger
 
@@ -46,9 +37,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#260
 public void ~SolidMeshMerger<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#270
-```
 
 ### merge
 
@@ -56,9 +44,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#270
 public std::unique_ptr<SolidMesh<dimension> > merge()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#275
-```
 
 ### polyhedron_in_merged
 
@@ -66,9 +51,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#275
 public index_t polyhedron_in_merged(index_t solid, index_t polyhedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#282
-```
 
 ### polyhedron_origins
 
@@ -76,9 +58,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#282
 public const PolyhedronOrigins & polyhedron_origins(index_t polyhedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/solid_merger.cpp#289
-```
 
 
 

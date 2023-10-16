@@ -1,8 +1,5 @@
 # class BeginEnd
 
-```cpp
-Defined at ../../include/geode/basic/range.h#98
-```
 
  Begin and end methods for range-based iteration on custom range. See derived classes for usage.
 
@@ -18,9 +15,6 @@ Defined at ../../include/geode/basic/range.h#98
 public void BeginEnd<Type>(const Type & type)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#101
-```
 
 ### begin
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/basic/range.h#101
 public const Type & begin()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#103
-```
 
 ### end
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/basic/range.h#103
 public const Type & end()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#108
-```
 
 
 

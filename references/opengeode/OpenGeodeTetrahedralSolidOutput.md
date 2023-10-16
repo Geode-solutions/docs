@@ -1,8 +1,5 @@
 # class OpenGeodeTetrahedralSolidOutput
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_tetrahedral_solid_output.h#32
-```
 
 ```cpp
 Inherits from TetrahedralSolidOutput<dimension>
@@ -18,9 +15,6 @@ Inherits from TetrahedralSolidOutput<dimension>
 public void OpenGeodeTetrahedralSolidOutput<dimension>(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_tetrahedral_solid_output.h#32
-```
 
 ### write
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/mesh/io/geode/geode_tetrahedral_solid_output.h#32
 public void write(const TetrahedralSolid<dimension> & mesh)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_tetrahedral_solid_output.h#32
-```
 
 
 

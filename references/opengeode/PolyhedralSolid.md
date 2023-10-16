@@ -1,8 +1,5 @@
 # class PolyhedralSolid
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/polyhedral_solid.cpp#76
-```
 
 ```cpp
 Inherits from SolidMesh<3U>
@@ -12,9 +9,6 @@ Inherits from SolidMesh<3U>
 
 # class PolyhedralSolid
 
-```cpp
-Defined at ../../include/geode/mesh/core/polyhedral_solid.h#46
-```
 
  This class represents a 3D Solid made up with polyhedra and provides mesh functionnalities.
 
@@ -34,9 +28,6 @@ Inherits from SolidMesh<dimension>
 public void PolyhedralSolid<dimension>(const PolyhedralSolid<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/polyhedral_solid.h#48
-```
 
 ### operator=
 
@@ -44,9 +35,6 @@ Defined at ../../include/geode/mesh/core/polyhedral_solid.h#48
 public PolyhedralSolid<dimension> & operator=(const PolyhedralSolid<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/polyhedral_solid.h#48
-```
 
 ### create
 
@@ -54,9 +42,6 @@ Defined at ../../include/geode/mesh/core/polyhedral_solid.h#48
 public std::unique_ptr<PolyhedralSolid<dimension> > create()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/polyhedral_solid.cpp#33
-```
 
  Create a new PolyhedralSolid using default data structure.
 
@@ -66,9 +51,6 @@ Defined at /github/workspace/src/geode/mesh/core/polyhedral_solid.cpp#33
 public std::unique_ptr<PolyhedralSolid<dimension> > create(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/polyhedral_solid.cpp#41
-```
 
  Create a new PolyhedralSolid using a specified data structure.
 
@@ -80,9 +62,6 @@ Defined at /github/workspace/src/geode/mesh/core/polyhedral_solid.cpp#41
 public NamedType type_name_static()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/polyhedral_solid.cpp#48
-```
 
 ### clone
 
@@ -90,9 +69,6 @@ Defined at /github/workspace/src/geode/mesh/core/polyhedral_solid.cpp#48
 public std::unique_ptr<PolyhedralSolid<dimension> > clone()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/polyhedral_solid.cpp#54
-```
 
 ### PolyhedralSolid
 
@@ -100,9 +76,6 @@ Defined at /github/workspace/src/geode/mesh/core/polyhedral_solid.cpp#54
 protected void PolyhedralSolid<dimension>()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/polyhedral_solid.h#72
-```
 
 ### PolyhedralSolid
 
@@ -110,9 +83,6 @@ Defined at ../../include/geode/mesh/core/polyhedral_solid.h#72
 protected void PolyhedralSolid<dimension>(PolyhedralSolid<dimension> && other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/polyhedral_solid.h#73
-```
 
 ### operator=
 
@@ -120,9 +90,6 @@ Defined at ../../include/geode/mesh/core/polyhedral_solid.h#73
 protected PolyhedralSolid<dimension> & operator=(PolyhedralSolid<dimension> && other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/polyhedral_solid.h#74
-```
 
 
 

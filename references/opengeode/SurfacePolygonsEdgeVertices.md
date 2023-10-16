@@ -1,8 +1,5 @@
 # struct SurfacePolygonsEdgeVertices
 
-```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#135
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public optional opposite_edge
 public index_t nb_edges()
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#137
-```
 
 
 

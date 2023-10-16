@@ -1,8 +1,5 @@
 # class TReverseRange
 
-```cpp
-Defined at ../../include/geode/basic/range.h#166
-```
 
 ```cpp
 Inherits from BaseRange<Type, geode::DecrementOperator>
@@ -18,9 +15,6 @@ Inherits from BaseRange<Type, geode::DecrementOperator>
 public void TReverseRange<Type>(T1 begin, T2 end)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#170
-```
 
 ### TReverseRange
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/basic/range.h#170
 public void TReverseRange<Type>(T begin)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#176
-```
 
 ### begin
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/basic/range.h#176
 public const TReverseRange<Type> & begin()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#180
-```
 
 ### end
 
@@ -48,9 +36,6 @@ Defined at ../../include/geode/basic/range.h#180
 public const TReverseRange<Type> & end()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#185
-```
 
 ### operator*
 
@@ -58,9 +43,6 @@ Defined at ../../include/geode/basic/range.h#185
 public Type operator*()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#190
-```
 
 
 

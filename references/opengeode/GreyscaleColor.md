@@ -1,8 +1,5 @@
 # class GreyscaleColor
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#39
-```
 
  Description of a color in grey scale
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/image/core/greyscale_color.h#39
 public void GreyscaleColor()
 ```
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#42
-```
 
 ### GreyscaleColor
 
@@ -26,9 +20,6 @@ Defined at ../../include/geode/image/core/greyscale_color.h#42
 public void GreyscaleColor(local_index_t value)
 ```
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#47
-```
 
 ### value
 
@@ -36,9 +27,6 @@ Defined at ../../include/geode/image/core/greyscale_color.h#47
 public local_index_t value()
 ```
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#49
-```
 
 ### set_value
 
@@ -46,9 +34,6 @@ Defined at ../../include/geode/image/core/greyscale_color.h#49
 public void set_value(local_index_t greyscale)
 ```
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#54
-```
 
 ### operator==
 
@@ -56,9 +41,6 @@ Defined at ../../include/geode/image/core/greyscale_color.h#54
 public bool operator==(const GreyscaleColor & other)
 ```
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#59
-```
 
 ### operator!=
 
@@ -66,9 +48,6 @@ Defined at ../../include/geode/image/core/greyscale_color.h#59
 public bool operator!=(const GreyscaleColor & other)
 ```
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#64
-```
 
 ### operator+
 
@@ -76,9 +55,6 @@ Defined at ../../include/geode/image/core/greyscale_color.h#64
 public GreyscaleColor operator+(const GreyscaleColor & other)
 ```
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#69
-```
 
 ### operator+=
 
@@ -86,9 +62,6 @@ Defined at ../../include/geode/image/core/greyscale_color.h#69
 public void operator+=(const GreyscaleColor & other)
 ```
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#75
-```
 
 ### string
 
@@ -96,9 +69,6 @@ Defined at ../../include/geode/image/core/greyscale_color.h#75
 public basic_string string()
 ```
 
-```cpp
-Defined at ../../include/geode/image/core/greyscale_color.h#80
-```
 
 
 

@@ -1,20 +1,11 @@
 # class GenericSphere
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#165
-```
 
 # class GenericSphere
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#164
-```
 
 # class GenericSphere
 
-```cpp
-Defined at ../../include/geode/geometry/basic_objects/sphere.h#43
-```
 
 ## Functions
 
@@ -24,9 +15,6 @@ Defined at ../../include/geode/geometry/basic_objects/sphere.h#43
 public void GenericSphere<PointType, dimension>(PointType origin, double radius)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#30
-```
 
 ### GenericSphere
 
@@ -34,9 +22,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#30
 public void GenericSphere<PointType, dimension>(const GenericSphere<PointType, dimension> & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#36
-```
 
 ### operator=
 
@@ -44,9 +29,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#36
 public GenericSphere<PointType, dimension> & operator=(const GenericSphere<PointType, dimension> & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#42
-```
 
 ### GenericSphere
 
@@ -54,9 +36,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#42
 public void GenericSphere<PointType, dimension>(GenericSphere<PointType, dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#51
-```
 
 ### operator=
 
@@ -64,9 +43,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#51
 public GenericSphere<PointType, dimension> & operator=(GenericSphere<PointType, dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#58
-```
 
 ### origin
 
@@ -74,9 +50,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#58
 public const Point<dimension> & origin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#67
-```
 
 ### radius
 
@@ -84,9 +57,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#67
 public double radius()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#73
-```
 
 ### bounding_box
 
@@ -94,21 +64,12 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#73
 public BoundingBox<dimension> bounding_box()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#79
-```
 
 
 
 # class GenericSphere
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#162
-```
 
 # class GenericSphere
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#163
-```
 

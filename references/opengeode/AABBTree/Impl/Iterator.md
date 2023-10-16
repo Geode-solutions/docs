@@ -1,8 +1,5 @@
 # struct Iterator
 
-```cpp
-Defined at ../../include/geode/geometry/detail/aabb_impl.h#55
-```
 
 ## Members
 

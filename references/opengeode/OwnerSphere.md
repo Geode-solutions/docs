@@ -1,8 +1,5 @@
 # class OwnerSphere
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#167
-```
 
 ```cpp
 Inherits from GenericSphere<Point<3U>, 3U>
@@ -12,9 +9,6 @@ Inherits from GenericSphere<Point<3U>, 3U>
 
 # class OwnerSphere
 
-```cpp
-Defined at ../../include/geode/geometry/basic_objects/sphere.h#65
-```
 
 ```cpp
 Inherits from GenericSphere<Point<dimension>, dimension>
@@ -30,9 +24,6 @@ Inherits from GenericSphere<Point<dimension>, dimension>
 public void OwnerSphere<>(Point<dimension> origin, double radius)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#95
-```
 
 ### OwnerSphere
 
@@ -40,9 +31,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#95
 public void OwnerSphere<>(const OwnerSphere<dimension> & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#101
-```
 
 ### operator=
 
@@ -50,9 +38,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#101
 public OwnerSphere<dimension> & operator=(const OwnerSphere<dimension> & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#107
-```
 
 ### OwnerSphere
 
@@ -60,9 +45,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#107
 public void OwnerSphere<>(OwnerSphere<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#114
-```
 
 ### operator=
 
@@ -70,17 +52,11 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#114
 public OwnerSphere<dimension> & operator=(OwnerSphere<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#119
-```
 
 
 
 # class OwnerSphere
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/sphere.cpp#166
-```
 
 ```cpp
 Inherits from GenericSphere<Point<2U>, 2U>

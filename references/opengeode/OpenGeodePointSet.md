@@ -1,8 +1,5 @@
 # class OpenGeodePointSet
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#43
-```
 
 ```cpp
 Inherits from PointSet<dimension>
@@ -18,9 +15,6 @@ Inherits from PointSet<dimension>
 public void OpenGeodePointSet<dimension>(const OpenGeodePointSet<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#45
-```
 
 ### operator=
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#45
 public OpenGeodePointSet<dimension> & operator=(const OpenGeodePointSet<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#45
-```
 
 ### OpenGeodePointSet
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#45
 public void OpenGeodePointSet<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_point_set.cpp#63
-```
 
 ### OpenGeodePointSet
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_point_set.cpp#63
 public void OpenGeodePointSet<dimension>(OpenGeodePointSet<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_point_set.cpp#68
-```
 
 ### operator=
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_point_set.cpp#68
 public OpenGeodePointSet<dimension> & operator=(OpenGeodePointSet<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_point_set.cpp#76
-```
 
 ### ~OpenGeodePointSet
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_point_set.cpp#76
 public void ~OpenGeodePointSet<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_point_set.cpp#85
-```
 
 ### impl_name_static
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_point_set.cpp#85
 public NamedType impl_name_static()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#57
-```
 
 ### impl_name
 
@@ -88,9 +64,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#57
 public NamedType impl_name()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#63
-```
 
 ### type_name
 
@@ -98,9 +71,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#63
 public NamedType type_name()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#68
-```
 
 ### native_extension_static
 
@@ -108,9 +78,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#68
 public string_view native_extension_static()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#73
-```
 
 ### native_extension
 
@@ -118,9 +85,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#73
 public string_view native_extension()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#80
-```
 
 ### set_vertex
 
@@ -128,9 +92,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_point_set.h#80
 public void set_vertex(index_t vertex_id, Point<dimension> point, OGPointSetKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_point_set.cpp#90
-```
 
 
 

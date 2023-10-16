@@ -1,8 +1,5 @@
 # class GraphOutput
 
-```cpp
-Defined at ../../include/geode/mesh/io/graph_output.h#49
-```
 
 ```cpp
 Inherits from Output<Graph>
@@ -18,9 +15,6 @@ Inherits from Output<Graph>
 protected void GraphOutput(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/graph_output.h#52
-```
 
 
 

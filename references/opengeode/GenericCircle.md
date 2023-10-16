@@ -1,14 +1,8 @@
 # class GenericCircle
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#137
-```
 
 # class GenericCircle
 
-```cpp
-Defined at ../../include/geode/geometry/basic_objects/circle.h#46
-```
 
 ## Functions
 
@@ -18,9 +12,6 @@ Defined at ../../include/geode/geometry/basic_objects/circle.h#46
 public void GenericCircle<PlaneType>(PlaneType plane, double radius)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#30
-```
 
 ### GenericCircle
 
@@ -28,9 +19,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#30
 public void GenericCircle<PlaneType>(const GenericCircle<PlaneType> & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#35
-```
 
 ### operator=
 
@@ -38,9 +26,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#35
 public GenericCircle<PlaneType> & operator=(const GenericCircle<PlaneType> & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#40
-```
 
 ### GenericCircle
 
@@ -48,9 +33,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#40
 public void GenericCircle<PlaneType>(GenericCircle<PlaneType> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#48
-```
 
 ### operator=
 
@@ -58,9 +40,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#48
 public GenericCircle<PlaneType> & operator=(GenericCircle<PlaneType> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#54
-```
 
 ### plane
 
@@ -68,9 +47,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#54
 public const PlaneType & plane()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#62
-```
 
 ### radius
 
@@ -78,9 +54,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#62
 public double radius()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#67
-```
 
 ### bounding_box
 
@@ -88,15 +61,9 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#67
 public BoundingBox3D bounding_box()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#72
-```
 
 
 
 # class GenericCircle
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#136
-```
 

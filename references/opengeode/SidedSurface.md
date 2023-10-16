@@ -1,8 +1,5 @@
 # struct SidedSurface
 
-```cpp
-Defined at ../../include/geode/model/helpers/surface_radial_sort.h#44
-```
 
 ## Members
 
@@ -31,9 +28,6 @@ public PolygonEdge edge
 public void SidedSurface()
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/surface_radial_sort.h#49
-```
 
 ### SidedSurface
 
@@ -41,9 +35,6 @@ Defined at ../../include/geode/model/helpers/surface_radial_sort.h#49
 public void SidedSurface(uuid id_in, local_index_t side_in, PolygonEdge edge_in)
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/surface_radial_sort.h#50
-```
 
 ### SidedSurface
 
@@ -51,9 +42,6 @@ Defined at ../../include/geode/model/helpers/surface_radial_sort.h#50
 public void SidedSurface(uuid id_in, local_index_t side_in)
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/surface_radial_sort.h#56
-```
 
 ### operator==
 
@@ -61,9 +49,6 @@ Defined at ../../include/geode/model/helpers/surface_radial_sort.h#56
 public bool operator==(const SidedSurface & other)
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/surface_radial_sort.h#61
-```
 
 ### operator!=
 
@@ -71,9 +56,6 @@ Defined at ../../include/geode/model/helpers/surface_radial_sort.h#61
 public bool operator!=(const SidedSurface & other)
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/surface_radial_sort.h#66
-```
 
 
 

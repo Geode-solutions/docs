@@ -1,8 +1,5 @@
 # class EmbeddingSurfaceRange
 
-```cpp
-Defined at ../../include/geode/model/representation/core/brep.h#245
-```
 
 ```cpp
 Inherits from EmbeddingRangeIterator
@@ -18,9 +15,6 @@ Inherits from EmbeddingRangeIterator
 public void EmbeddingSurfaceRange(const BRep & brep, const Corner3D & corner)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#463
-```
 
 ### EmbeddingSurfaceRange
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#463
 public void EmbeddingSurfaceRange(const BRep & brep, const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#497
-```
 
 ### EmbeddingSurfaceRange
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#497
 public void EmbeddingSurfaceRange(const EmbeddingSurfaceRange & range)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#471
-```
 
 ### ~EmbeddingSurfaceRange
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#471
 public void ~EmbeddingSurfaceRange()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#477
-```
 
 ### begin
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#477
 public const EmbeddingSurfaceRange & begin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#479
-```
 
 ### end
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#479
 public const EmbeddingSurfaceRange & end()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#485
-```
 
 ### operator++
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#485
 public void operator++()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#505
-```
 
 ### operator*
 
@@ -88,9 +64,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#505
 public const Surface3D & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#511
-```
 
 
 

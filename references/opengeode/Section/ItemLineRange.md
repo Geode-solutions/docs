@@ -1,8 +1,5 @@
 # class ItemLineRange
 
-```cpp
-Defined at ../../include/geode/model/representation/core/section.h#209
-```
 
 ```cpp
 Inherits from ItemRangeIterator
@@ -18,9 +15,6 @@ Inherits from ItemRangeIterator
 public void ItemLineRange(const Section & section, const ModelBoundary2D & boundary)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#387
-```
 
 ### ItemLineRange
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#387
 public void ItemLineRange(const ItemLineRange & range)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#394
-```
 
 ### ~ItemLineRange
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#394
 public void ~ItemLineRange()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#399
-```
 
 ### begin
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#399
 public const ItemLineRange & begin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#401
-```
 
 ### end
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#401
 public const ItemLineRange & end()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#406
-```
 
 ### operator*
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#406
 public const Line2D & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#411
-```
 
 
 

@@ -1,8 +1,5 @@
 # class Singleton
 
-```cpp
-Defined at ../../include/geode/basic/singleton.h#52
-```
 
   Cross platform singleton implementation  Classic templated singleton cannot be exported on Windows.  To ensure a unique instance of the singleton, we store it and  export methods to retrieve the unique instance.
 
@@ -18,9 +15,6 @@ Defined at ../../include/geode/basic/singleton.h#52
 public void Singleton(const Singleton & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/singleton.h#54
-```
 
 ### operator=
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/basic/singleton.h#54
 public Singleton & operator=(const Singleton & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/singleton.h#54
-```
 
 ### Singleton
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/basic/singleton.h#54
 public void Singleton(Singleton && )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/singleton.h#54
-```
 
 ### operator=
 
@@ -48,9 +36,6 @@ Defined at ../../include/geode/basic/singleton.h#54
 public Singleton & operator=(Singleton && )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/singleton.h#54
-```
 
 ### ~Singleton
 
@@ -58,9 +43,6 @@ Defined at ../../include/geode/basic/singleton.h#54
 public void ~Singleton()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/singleton.cpp#63
-```
 
 ### Singleton
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/basic/singleton.cpp#63
 protected void Singleton()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/singleton.cpp#61
-```
 
 ### instance
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/basic/singleton.cpp#61
 protected SingletonType & instance()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/singleton.h#63
-```
 
 
 

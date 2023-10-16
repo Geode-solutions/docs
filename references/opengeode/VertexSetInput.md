@@ -1,8 +1,5 @@
 # class VertexSetInput
 
-```cpp
-Defined at ../../include/geode/mesh/io/vertex_set_input.h#59
-```
 
 ```cpp
 Inherits from Input<std::unique_ptr<VertexSet>, MeshImpl>
@@ -18,9 +15,6 @@ Inherits from Input<std::unique_ptr<VertexSet>, MeshImpl>
 protected void VertexSetInput(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/vertex_set_input.h#68
-```
 
 
 

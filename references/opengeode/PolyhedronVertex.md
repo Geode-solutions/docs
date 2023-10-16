@@ -1,8 +1,5 @@
 # struct PolyhedronVertex
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#56
-```
 
  This struct represents a local vertex in a polyhedron
 
@@ -30,9 +27,6 @@ public local_index_t vertex_id
 public void PolyhedronVertex()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#58
-```
 
 ### PolyhedronVertex
 
@@ -40,9 +34,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#58
 public void PolyhedronVertex(index_t polyhedron_id_in, local_index_t vertex_id_in)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#59
-```
 
 ### operator==
 
@@ -50,9 +41,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#59
 public bool operator==(const PolyhedronVertex & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#63
-```
 
 ### operator!=
 
@@ -60,9 +48,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#63
 public bool operator!=(const PolyhedronVertex & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#68
-```
 
 ### operator<
 
@@ -70,9 +55,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#68
 public bool operator<(const PolyhedronVertex & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#72
-```
 
 ### string
 
@@ -80,9 +62,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#72
 public basic_string string()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#80
-```
 
 ### serialize
 
@@ -90,9 +69,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#80
 public void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#292
-```
 
 
 

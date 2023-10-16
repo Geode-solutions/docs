@@ -1,8 +1,5 @@
 # class ComponentID
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#45
-```
 
  Identify a component by its type and a unique index
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/model/mixin/core/component_type.h#45
 public void ComponentID()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#48
-```
 
 ### ComponentID
 
@@ -26,9 +20,6 @@ Defined at ../../include/geode/model/mixin/core/component_type.h#48
 public void ComponentID(NamedType component_type, uuid id)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#50
-```
 
 ### id
 
@@ -36,9 +27,6 @@ Defined at ../../include/geode/model/mixin/core/component_type.h#50
 public const uuid & id()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#55
-```
 
 ### id
 
@@ -46,9 +34,6 @@ Defined at ../../include/geode/model/mixin/core/component_type.h#55
 public uuid && id()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#60
-```
 
 ### type
 
@@ -56,9 +41,6 @@ Defined at ../../include/geode/model/mixin/core/component_type.h#60
 public const ComponentType & type()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#65
-```
 
 ### type
 
@@ -66,9 +48,6 @@ Defined at ../../include/geode/model/mixin/core/component_type.h#65
 public ComponentType && type()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#70
-```
 
 ### operator!=
 
@@ -76,9 +55,6 @@ Defined at ../../include/geode/model/mixin/core/component_type.h#70
 public bool operator!=(const ComponentID & other)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#75
-```
 
 ### operator==
 
@@ -86,9 +62,6 @@ Defined at ../../include/geode/model/mixin/core/component_type.h#75
 public bool operator==(const ComponentID & other)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#80
-```
 
 ### string
 
@@ -96,9 +69,6 @@ Defined at ../../include/geode/model/mixin/core/component_type.h#80
 public basic_string string()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_type.h#85
-```
 
 
 

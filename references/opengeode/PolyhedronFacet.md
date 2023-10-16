@@ -1,8 +1,5 @@
 # struct PolyhedronFacet
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#94
-```
 
  This struct represents a facet in a polyhedron
 
@@ -30,9 +27,6 @@ public local_index_t facet_id
 public void PolyhedronFacet()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#96
-```
 
 ### PolyhedronFacet
 
@@ -40,9 +34,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#96
 public void PolyhedronFacet(index_t polyhedron_id_in, local_index_t facet_id_in)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#97
-```
 
 ### operator==
 
@@ -50,9 +41,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#97
 public bool operator==(const PolyhedronFacet & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#101
-```
 
 ### operator!=
 
@@ -60,9 +48,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#101
 public bool operator!=(const PolyhedronFacet & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#106
-```
 
 ### operator<
 
@@ -70,9 +55,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#106
 public bool operator<(const PolyhedronFacet & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#110
-```
 
 ### string
 
@@ -80,9 +62,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#110
 public basic_string string()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#118
-```
 
 ### serialize
 
@@ -90,9 +69,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#118
 public void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#309
-```
 
 
 

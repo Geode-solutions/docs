@@ -1,8 +1,5 @@
 # struct PolygonDistance
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/ray_tracing.h#47
-```
 
 ## Members
 
@@ -36,9 +33,6 @@ public Point point
 public void PolygonDistance()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/ray_tracing.h#49
-```
 
 ### PolygonDistance
 
@@ -46,9 +40,6 @@ Defined at ../../include/geode/mesh/helpers/ray_tracing.h#49
 public void PolygonDistance(index_t polygon_in, double distance_in, Position position_in, Point point_in)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/ray_tracing.h#51
-```
 
 ### operator<
 
@@ -56,9 +47,6 @@ Defined at ../../include/geode/mesh/helpers/ray_tracing.h#51
 public bool operator<(const PolygonDistance & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/ray_tracing.h#62
-```
 
 
 

@@ -1,8 +1,5 @@
 # class InternalCornerRange
 
-```cpp
-Defined at ../../include/geode/model/representation/core/brep.h#183
-```
 
 ```cpp
 Inherits from InternalRangeIterator
@@ -18,9 +15,6 @@ Inherits from InternalRangeIterator
 public void InternalCornerRange(const BRep & brep, const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#360
-```
 
 ### InternalCornerRange
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#360
 public void InternalCornerRange(const BRep & brep, const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#392
-```
 
 ### InternalCornerRange
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#392
 public void InternalCornerRange(const InternalCornerRange & range)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#368
-```
 
 ### ~InternalCornerRange
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#368
 public void ~InternalCornerRange()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#374
-```
 
 ### begin
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#374
 public const InternalCornerRange & begin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#376
-```
 
 ### end
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#376
 public const InternalCornerRange & end()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#381
-```
 
 ### operator++
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#381
 public void operator++()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#400
-```
 
 ### operator*
 
@@ -88,9 +64,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#400
 public const Corner3D & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#406
-```
 
 
 

@@ -1,8 +1,5 @@
 # class TetrahedralSolidBuilder
 
-```cpp
-Defined at ../../include/geode/mesh/builder/tetrahedral_solid_builder.h#40
-```
 
 ```cpp
 Inherits from SolidMeshBuilder<dimension>
@@ -18,9 +15,6 @@ Inherits from SolidMeshBuilder<dimension>
 public std::unique_ptr<TetrahedralSolidBuilder<dimension> > create(TetrahedralSolid<dimension> & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cpp#46
-```
 
 ### create_tetrahedron
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cp
 public index_t create_tetrahedron(const std::array<index_t, 4> & vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cpp#69
-```
 
  Create a new tetrahedron from four vertices.
 
@@ -44,9 +35,6 @@ Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cp
 public index_t create_tetrahedra(index_t nb)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cpp#99
-```
 
  Create new tetrahedra.
 
@@ -60,9 +48,6 @@ Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cp
 public void reserve_tetrahedra(index_t nb)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cpp#81
-```
 
  Reserve storage for new tetrahedra without creating them.
 
@@ -74,9 +59,6 @@ Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cp
 public void copy(const TetrahedralSolid<dimension> & tetrahedral_solid)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cpp#110
-```
 
 ### TetrahedralSolidBuilder
 
@@ -84,17 +66,11 @@ Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cp
 protected void TetrahedralSolidBuilder<dimension>(TetrahedralSolid<dimension> & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cpp#39
-```
 
 
 
 # class TetrahedralSolidBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/tetrahedral_solid_builder.cpp#121
-```
 
 ```cpp
 Inherits from SolidMeshBuilder<3U>

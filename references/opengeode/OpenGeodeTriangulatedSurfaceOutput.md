@@ -1,8 +1,5 @@
 # class OpenGeodeTriangulatedSurfaceOutput
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_triangulated_surface_output.h#32
-```
 
 ```cpp
 Inherits from TriangulatedSurfaceOutput<dimension>
@@ -18,9 +15,6 @@ Inherits from TriangulatedSurfaceOutput<dimension>
 public void OpenGeodeTriangulatedSurfaceOutput<dimension>(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_triangulated_surface_output.h#32
-```
 
 ### write
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/mesh/io/geode/geode_triangulated_surface_output.h
 public void write(const TriangulatedSurface<dimension> & mesh)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_triangulated_surface_output.h#32
-```
 
 
 

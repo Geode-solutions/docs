@@ -1,8 +1,5 @@
 # class TriangulatedSurfaceBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder.cpp#121
-```
 
 ```cpp
 Inherits from SurfaceMeshBuilder<2U>
@@ -12,9 +9,6 @@ Inherits from SurfaceMeshBuilder<2U>
 
 # class TriangulatedSurfaceBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder.cpp#122
-```
 
 ```cpp
 Inherits from SurfaceMeshBuilder<3U>
@@ -24,9 +18,6 @@ Inherits from SurfaceMeshBuilder<3U>
 
 # class TriangulatedSurfaceBuilder
 
-```cpp
-Defined at ../../include/geode/mesh/builder/triangulated_surface_builder.h#43
-```
 
  Interface class to represent the builder of a TriangulatedSurface
 
@@ -46,9 +37,6 @@ Inherits from SurfaceMeshBuilder<dimension>
 public int create(TriangulatedSurface<dimension> & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder.cpp#43
-```
 
  Create the builder associated with a TriangulatedSurface.
 
@@ -60,9 +48,6 @@ Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder
 public index_t create_triangle(const std::array<index_t, 3> & vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder.cpp#64
-```
 
  Create a new triangle from three vertices.
 
@@ -76,9 +61,6 @@ Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder
 public index_t create_triangles(index_t nb)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder.cpp#90
-```
 
  Create new triangles.
 
@@ -92,9 +74,6 @@ Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder
 public void reserve_triangles(index_t nb)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder.cpp#101
-```
 
  Reserve storage for new triangles without creating them.
 
@@ -106,9 +85,6 @@ Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder
 public void copy(const TriangulatedSurface<dimension> & triangulated_surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder.cpp#110
-```
 
 ### TriangulatedSurfaceBuilder
 
@@ -116,9 +92,6 @@ Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder
 protected void TriangulatedSurfaceBuilder<dimension>(TriangulatedSurface<dimension> & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/triangulated_surface_builder.cpp#36
-```
 
 
 

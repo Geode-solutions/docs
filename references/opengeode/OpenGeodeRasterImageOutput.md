@@ -1,8 +1,5 @@
 # class OpenGeodeRasterImageOutput
 
-```cpp
-Defined at ../../include/geode/image/io/geode/geode_bitsery_raster_output.h#34
-```
 
 ```cpp
 Inherits from RasterImageOutput<dimension>
@@ -18,9 +15,6 @@ Inherits from RasterImageOutput<dimension>
 public void OpenGeodeRasterImageOutput<dimension>(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/image/io/geode/geode_bitsery_raster_output.h#37
-```
 
 ### write
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/image/io/geode/geode_bitsery_raster_output.h#37
 public void write(const RasterImage<dimension> & mesh)
 ```
 
-```cpp
-Defined at ../../include/geode/image/io/geode/geode_bitsery_raster_output.h#42
-```
 
 
 

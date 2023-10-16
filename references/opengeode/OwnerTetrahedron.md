@@ -1,8 +1,5 @@
 # class OwnerTetrahedron
 
-```cpp
-Defined at ../../include/geode/geometry/basic_objects/tetrahedron.h#72
-```
 
 ```cpp
 Inherits from GenericTetrahedron<Point3D>
@@ -18,9 +15,6 @@ Inherits from GenericTetrahedron<Point3D>
 public void OwnerTetrahedron(Point3D point0, Point3D point1, Point3D point2, Point3D point3)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#96
-```
 
 ### OwnerTetrahedron
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#96
 public void OwnerTetrahedron(const OwnerTetrahedron & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#103
-```
 
 ### operator=
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#10
 public OwnerTetrahedron & operator=(const OwnerTetrahedron & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#105
-```
 
 ### OwnerTetrahedron
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#10
 public void OwnerTetrahedron(OwnerTetrahedron && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#111
-```
 
 ### operator=
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#11
 public OwnerTetrahedron & operator=(OwnerTetrahedron && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/tetrahedron.cpp#115
-```
 
 
 

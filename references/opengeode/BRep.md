@@ -1,8 +1,5 @@
 # class BRep
 
-```cpp
-Defined at ../../include/geode/model/representation/core/brep.h#61
-```
 
  A BRep (for Boundary Representation) is a 3D model composed of Corners, Lines, Surfaces and Blocks. This class provides classes for range-based iteration on Component boundaries and incidences.**extends** **extends** **extends** **extends** **extends** 
 
@@ -50,9 +47,6 @@ ItemSurfaceRange
 public void BRep()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#617
-```
 
 ### BRep
 
@@ -60,9 +54,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#617
 public void BRep(BRep && brep)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#619
-```
 
 ### operator=
 
@@ -70,9 +61,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#619
 public BRep & operator=(BRep && brep)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#630
-```
 
 ### ~BRep
 
@@ -80,9 +68,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#630
 public void ~BRep()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#642
-```
 
 ### boundaries
 
@@ -90,9 +75,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#642
 public BoundaryCornerRange boundaries(const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#83
-```
 
 ### boundaries
 
@@ -100,9 +82,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#83
 public BoundaryLineRange boundaries(const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#118
-```
 
 ### boundaries
 
@@ -110,9 +89,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#118
 public BoundarySurfaceRange boundaries(const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#153
-```
 
 ### incidences
 
@@ -120,9 +96,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#153
 public IncidentLineRange incidences(const Corner3D & corner)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#190
-```
 
 ### incidences
 
@@ -130,9 +103,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#190
 public IncidentSurfaceRange incidences(const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#225
-```
 
 ### incidences
 
@@ -140,9 +110,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#225
 public IncidentBlockRange incidences(const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#262
-```
 
 ### nb_internal_corners
 
@@ -150,9 +117,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#262
 public index_t nb_internal_corners(const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#650
-```
 
 ### internal_corners
 
@@ -160,9 +124,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#650
 public InternalCornerRange internal_corners(const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#354
-```
 
 ### nb_internal_lines
 
@@ -170,9 +131,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#354
 public index_t nb_internal_lines(const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#655
-```
 
 ### internal_lines
 
@@ -180,9 +138,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#655
 public InternalLineRange internal_lines(const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#298
-```
 
 ### nb_internal_corners
 
@@ -190,9 +145,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#298
 public index_t nb_internal_corners(const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#660
-```
 
 ### internal_corners
 
@@ -200,9 +152,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#660
 public InternalCornerRange internal_corners(const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#386
-```
 
 ### nb_internal_lines
 
@@ -210,9 +159,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#386
 public index_t nb_internal_lines(const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#665
-```
 
 ### internal_lines
 
@@ -220,9 +166,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#665
 public InternalLineRange internal_lines(const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#317
-```
 
 ### nb_internal_surfaces
 
@@ -230,9 +173,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#317
 public index_t nb_internal_surfaces(const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#670
-```
 
 ### internal_surfaces
 
@@ -240,9 +180,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#670
 public InternalSurfaceRange internal_surfaces(const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#412
-```
 
 ### nb_embedding_surfaces
 
@@ -250,9 +187,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#412
 public index_t nb_embedding_surfaces(const Corner3D & corner)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#675
-```
 
 ### embedding_surfaces
 
@@ -260,9 +194,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#675
 public EmbeddingSurfaceRange embedding_surfaces(const Corner3D & corner)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#457
-```
 
 ### nb_embedding_surfaces
 
@@ -270,9 +201,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#457
 public index_t nb_embedding_surfaces(const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#680
-```
 
 ### embedding_surfaces
 
@@ -280,9 +208,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#680
 public EmbeddingSurfaceRange embedding_surfaces(const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#491
-```
 
 ### nb_embedding_blocks
 
@@ -290,9 +215,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#491
 public index_t nb_embedding_blocks(const Corner3D & corner)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#685
-```
 
 ### embedding_blocks
 
@@ -300,9 +222,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#685
 public EmbeddingBlockRange embedding_blocks(const Corner3D & corner)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#517
-```
 
 ### nb_embedding_blocks
 
@@ -310,9 +229,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#517
 public index_t nb_embedding_blocks(const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#690
-```
 
 ### embedding_blocks
 
@@ -320,9 +236,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#690
 public EmbeddingBlockRange embedding_blocks(const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#531
-```
 
 ### nb_embedding_blocks
 
@@ -330,9 +243,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#531
 public index_t nb_embedding_blocks(const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#695
-```
 
 ### embedding_blocks
 
@@ -340,9 +250,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#695
 public EmbeddingBlockRange embedding_blocks(const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#562
-```
 
 ### model_boundary_items
 
@@ -350,9 +257,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#562
 public ItemSurfaceRange model_boundary_items(const ModelBoundary3D & boundary)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#644
-```
 
 ### is_closed
 
@@ -360,9 +264,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#644
 public bool is_closed(const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#700
-```
 
 ### is_closed
 
@@ -370,9 +271,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#700
 public bool is_closed(const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#705
-```
 
 ### is_boundary
 
@@ -380,9 +278,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#705
 public bool is_boundary(const Corner3D & corner, const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#710
-```
 
 ### is_boundary
 
@@ -390,9 +285,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#710
 public bool is_boundary(const Line3D & line, const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#715
-```
 
 ### is_boundary
 
@@ -400,9 +292,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#715
 public bool is_boundary(const Surface3D & surface, const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#720
-```
 
 ### is_internal
 
@@ -410,9 +299,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#720
 public bool is_internal(const Corner3D & corner, const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#726
-```
 
 ### is_internal
 
@@ -420,9 +306,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#726
 public bool is_internal(const Line3D & line, const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#732
-```
 
 ### is_internal
 
@@ -430,9 +313,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#732
 public bool is_internal(const Corner3D & corner, const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#737
-```
 
 ### is_internal
 
@@ -440,9 +320,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#737
 public bool is_internal(const Line3D & line, const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#742
-```
 
 ### is_internal
 
@@ -450,9 +327,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#742
 public bool is_internal(const Surface3D & surface, const Block3D & block)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#747
-```
 
 ### is_model_boundary_item
 
@@ -460,9 +334,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#747
 public bool is_model_boundary_item(const Surface3D & surface, const ModelBoundary3D & boundary)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#753
-```
 
 ### bounding_box
 
@@ -470,9 +341,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#753
 public BoundingBox3D bounding_box()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#759
-```
 
  Compute the bounding box from component meshes
 
@@ -482,9 +350,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#759
 public string_view native_extension_static()
 ```
 
-```cpp
-Defined at ../../include/geode/model/representation/core/brep.h#400
-```
 
 ### native_extension
 
@@ -492,9 +357,6 @@ Defined at ../../include/geode/model/representation/core/brep.h#400
 public string_view native_extension()
 ```
 
-```cpp
-Defined at ../../include/geode/model/representation/core/brep.h#406
-```
 
 
 

@@ -1,8 +1,5 @@
 # class GraphBuilder
 
-```cpp
-Defined at ../../include/geode/mesh/builder/graph_builder.h#44
-```
 
  Interface class to represent the builder of a Graph
 
@@ -22,9 +19,6 @@ Inherits from VertexSetBuilder
 public std::unique_ptr<GraphBuilder> create(Graph & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#84
-```
 
  Create the builder associated with a Graph.
 
@@ -36,9 +30,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#84
 public index_t create_edge()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#121
-```
 
  Create a new edge.
 
@@ -50,9 +41,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#121
 public index_t create_edge(index_t v0_id, index_t v1_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#129
-```
 
  Create a new edge between to vertex.
 
@@ -68,9 +56,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#129
 public index_t create_edges(index_t nb)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#141
-```
 
  Create several new edges.
 
@@ -84,9 +69,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#141
 public void set_edge_vertex(const EdgeVertex & edge_vertex, index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#89
-```
 
  Set a vertex as an edge endpoint
 
@@ -100,9 +82,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#89
 public void associate_edge_vertex_to_vertex(const EdgeVertex & edge_vertex, index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#109
-```
 
 ### disassociate_edge_vertex_to_vertex
 
@@ -110,9 +89,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#109
 public void disassociate_edge_vertex_to_vertex(const EdgeVertex & edge_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#115
-```
 
 ### set_edges_around_vertex
 
@@ -120,9 +96,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#115
 public void set_edges_around_vertex(index_t vertex_id, EdgesAroundVertex edges)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#164
-```
 
 ### delete_edges
 
@@ -130,9 +103,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#164
 public std::vector<index_t> delete_edges(const std::vector<bool> & to_delete)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#170
-```
 
  Delete a set of edges
 
@@ -146,9 +116,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#170
 public std::vector<index_t> permute_edges(Span permutation)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#184
-```
 
  Permute edges to match the given order.
 
@@ -162,9 +129,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#184
 public std::vector<index_t> delete_isolated_vertices()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#194
-```
 
  Delete all the isolated vertices (not used as edge endpoint)
 
@@ -176,9 +140,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#194
 public void copy(const Graph & graph)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#208
-```
 
 ### GraphBuilder
 
@@ -186,9 +147,6 @@ Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#208
 protected void GraphBuilder(Graph & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/graph_builder.cpp#79
-```
 
 ### delete_edges
 

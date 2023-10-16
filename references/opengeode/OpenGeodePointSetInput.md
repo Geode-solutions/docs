@@ -1,8 +1,5 @@
 # class OpenGeodePointSetInput
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_point_set_input.h#32
-```
 
 ```cpp
 Inherits from PointSetInput<dimension>
@@ -18,9 +15,6 @@ Inherits from PointSetInput<dimension>
 public void OpenGeodePointSetInput<dimension>(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_point_set_input.h#32
-```
 
 ### read
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/mesh/io/geode/geode_point_set_input.h#32
 public std::unique_ptr<PointSet<dimension> > read(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_point_set_input.h#32
-```
 
 
 

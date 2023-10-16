@@ -1,8 +1,5 @@
 # class Logger
 
-```cpp
-Defined at ../../include/geode/basic/logger.h#39
-```
 
  Custom OpenGeode logger. Can be used with several levels:    Logger::info( "My information is ", 42 );    Logger::warn( "My warning is ", 42, " or more" );
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/basic/logger.h#39
 public Level level()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger.cpp#106
-```
 
 ### set_level
 
@@ -26,9 +20,6 @@ Defined at /github/workspace/src/geode/basic/logger.cpp#106
 public void set_level(Level level)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger.cpp#111
-```
 
 ### trace
 
@@ -36,9 +27,6 @@ Defined at /github/workspace/src/geode/basic/logger.cpp#111
 public void trace(const Args &... args)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/logger.h#58
-```
 
 ### debug
 
@@ -46,9 +34,6 @@ Defined at ../../include/geode/basic/logger.h#58
 public void debug(const Args &... args)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/logger.h#64
-```
 
 ### info
 
@@ -56,9 +41,6 @@ Defined at ../../include/geode/basic/logger.h#64
 public void info(const Args &... args)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/logger.h#70
-```
 
 ### warn
 
@@ -66,9 +48,6 @@ Defined at ../../include/geode/basic/logger.h#70
 public void warn(const Args &... args)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/logger.h#76
-```
 
 ### error
 
@@ -76,9 +55,6 @@ Defined at ../../include/geode/basic/logger.h#76
 public void error(const Args &... args)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/logger.h#82
-```
 
 ### critical
 
@@ -86,9 +62,6 @@ Defined at ../../include/geode/basic/logger.h#82
 public void critical(const Args &... args)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/logger.h#88
-```
 
 
 
@@ -107,9 +80,6 @@ Defined at ../../include/geode/basic/logger.h#88
 | off |
 
 
-```cpp
-Defined at ../../include/geode/basic/logger.h#42
-```
 
 
 

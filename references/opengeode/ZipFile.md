@@ -1,8 +1,5 @@
 # class ZipFile
 
-```cpp
-Defined at ../../include/geode/basic/zip_file.h#34
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/basic/zip_file.h#34
 public void ZipFile(string_view file, string_view archive_temp_filename)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/zip_file.cpp#107
-```
 
 ### ~ZipFile
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/basic/zip_file.cpp#107
 public void ~ZipFile()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/zip_file.cpp#113
-```
 
 ### archive_files
 
@@ -32,9 +23,6 @@ Defined at /github/workspace/src/geode/basic/zip_file.cpp#113
 public void archive_files(absl::Span<const absl::string_view> & files)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/zip_file.cpp#120
-```
 
 ### archive_file
 
@@ -42,9 +30,6 @@ Defined at /github/workspace/src/geode/basic/zip_file.cpp#120
 public void archive_file(string_view file)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/zip_file.cpp#115
-```
 
 ### directory
 
@@ -52,9 +37,6 @@ Defined at /github/workspace/src/geode/basic/zip_file.cpp#115
 public basic_string directory()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/zip_file.cpp#126
-```
 
 
 

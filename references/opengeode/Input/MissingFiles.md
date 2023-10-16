@@ -1,8 +1,5 @@
 # struct MissingFiles
 
-```cpp
-Defined at ../../include/geode/basic/input.h#38
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public vector mandatory_files
 public bool has_missing_files()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/input.h#40
-```
 
 ### operator bool
 
@@ -36,9 +30,6 @@ Defined at ../../include/geode/basic/input.h#40
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/input.h#45
-```
 
 
 

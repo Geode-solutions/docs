@@ -1,8 +1,5 @@
 # struct BlockDefinition
 
-```cpp
-Defined at ../../include/geode/model/helpers/simplicial_creator_definitions.h#56
-```
 
 ## Members
 

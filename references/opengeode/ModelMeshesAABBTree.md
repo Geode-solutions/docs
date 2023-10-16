@@ -1,8 +1,5 @@
 # struct ModelMeshesAABBTree
 
-```cpp
-Defined at ../../include/geode/model/helpers/aabb_model_helpers.h#59
-```
 
 ## Members
 
@@ -36,9 +33,6 @@ public flat_hash_map mesh_tree_ids_
 public void ModelMeshesAABBTree<dimension>(index_t nb_components)
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/aabb_model_helpers.h#61
-```
 
 
 

@@ -1,8 +1,5 @@
 # class Circle
 
-```cpp
-Defined at ../../include/geode/geometry/basic_objects/circle.h#80
-```
 
 ```cpp
 Inherits from GenericCircle<Plane>
@@ -18,9 +15,6 @@ Inherits from GenericCircle<Plane>
 public void Circle(Plane plane, double radius)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#114
-```
 
 ### Circle
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#114
 public void Circle(const Circle & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#118
-```
 
 ### Circle
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#118
 public void Circle(const OwnerCircle & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#119
-```
 
 ### operator=
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#119
 public Circle & operator=(const Circle & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#124
-```
 
 ### Circle
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#124
 public void Circle(Circle && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#129
-```
 
 ### operator=
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#129
 public Circle & operator=(Circle && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/circle.cpp#130
-```
 
 
 

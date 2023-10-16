@@ -1,8 +1,5 @@
 # class CoordinateReferenceSystemManager
 
-```cpp
-Defined at ../../include/geode/mesh/core/coordinate_reference_system_manager.h#43
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/mesh/core/coordinate_reference_system_manager.h#4
 public void CoordinateReferenceSystemManager<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#173
-```
 
 ### CoordinateReferenceSystemManager
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public void CoordinateReferenceSystemManager<dimension>(CoordinateReferenceSystemManager<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#179
-```
 
 ### ~CoordinateReferenceSystemManager
 
@@ -32,9 +23,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public void ~CoordinateReferenceSystemManager<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#187
-```
 
 ### nb_coordinate_reference_systems
 
@@ -42,9 +30,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public index_t nb_coordinate_reference_systems()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#193
-```
 
 ### find_coordinate_reference_system
 
@@ -52,9 +37,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public const CoordinateReferenceSystem<dimension> & find_coordinate_reference_system(string_view name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#200
-```
 
 ### active_coordinate_reference_system
 
@@ -62,9 +44,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public const CoordinateReferenceSystem<dimension> & active_coordinate_reference_system()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#208
-```
 
 ### active_coordinate_reference_system_name
 
@@ -72,9 +51,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public string_view active_coordinate_reference_system_name()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#216
-```
 
 ### coordinate_reference_system_names
 
@@ -82,9 +58,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public FixedArray coordinate_reference_system_names()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#223
-```
 
 ### coordinate_reference_system_exists
 
@@ -92,9 +65,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public bool coordinate_reference_system_exists(string_view name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#230
-```
 
 ### register_coordinate_reference_system
 
@@ -102,9 +72,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public void register_coordinate_reference_system(string_view name, std::shared_ptr<CoordinateReferenceSystem<dimension> > && crs, CRSManagerKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#237
-```
 
 ### delete_coordinate_reference_system
 
@@ -112,9 +79,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public void delete_coordinate_reference_system(string_view name, CRSManagerKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#246
-```
 
 ### set_active_coordinate_reference_system
 
@@ -122,9 +86,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public void set_active_coordinate_reference_system(string_view name, CRSManagerKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#254
-```
 
 ### modifiable_active_coordinate_reference_system
 
@@ -132,9 +93,6 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public CoordinateReferenceSystem<dimension> & modifiable_active_coordinate_reference_system(CRSManagerKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#262
-```
 
 ### modifiable_coordinate_reference_system
 
@@ -142,27 +100,15 @@ Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_man
 public CoordinateReferenceSystem<dimension> & modifiable_coordinate_reference_system(string_view name, CRSManagerKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#270
-```
 
 
 
 # class CoordinateReferenceSystemManager
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#293
-```
 
 # class CoordinateReferenceSystemManager
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#292
-```
 
 # class CoordinateReferenceSystemManager
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/coordinate_reference_system_manager.cpp#291
-```
 

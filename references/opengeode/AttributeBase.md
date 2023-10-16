@@ -1,8 +1,5 @@
 # class AttributeBase
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#57
-```
 
  Base class defining the virtual API used by the AttributeManager.
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/basic/attribute.h#57
 public void AttributeBase(const AttributeBase & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#59
-```
 
 ### operator=
 
@@ -26,9 +20,6 @@ Defined at ../../include/geode/basic/attribute.h#59
 public AttributeBase & operator=(const AttributeBase & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#59
-```
 
 ### ~AttributeBase
 
@@ -36,9 +27,6 @@ Defined at ../../include/geode/basic/attribute.h#59
 public void ~AttributeBase()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#65
-```
 
 ### generic_value
 
@@ -76,9 +64,6 @@ public string_view type()
 public string_view name()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#78
-```
 
 ### properties
 
@@ -86,9 +71,6 @@ Defined at ../../include/geode/basic/attribute.h#78
 public const AttributeProperties & properties()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#83
-```
 
 ### set_properties
 
@@ -96,9 +78,6 @@ Defined at ../../include/geode/basic/attribute.h#83
 public void set_properties(AttributeProperties new_properties)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#88
-```
 
 ### set_name
 
@@ -106,9 +85,6 @@ Defined at ../../include/geode/basic/attribute.h#88
 public void set_name(string_view name, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#94
-```
 
 ### clone
 
@@ -176,9 +152,6 @@ public void compute_value(const AttributeLinearInterpolation & interpolation, in
 protected void AttributeBase(AttributeProperties properties)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#153
-```
 
 ### extract
 

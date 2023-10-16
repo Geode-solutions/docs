@@ -1,8 +1,5 @@
 # class RayTracing3D
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/ray_tracing.h#44
-```
 
 ## Records
 
@@ -20,9 +17,6 @@ Impl
 public void RayTracing3D(const SurfaceMesh3D & mesh, const Ray3D & ray)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#309
-```
 
 ### RayTracing3D
 
@@ -30,9 +24,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#309
 public void RayTracing3D(const SurfaceMesh3D & mesh, const InfiniteLine3D & infinite_line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#314
-```
 
 ### RayTracing3D
 
@@ -40,9 +31,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#314
 public void RayTracing3D(RayTracing3D && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#320
-```
 
 ### ~RayTracing3D
 
@@ -50,9 +38,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#320
 public void ~RayTracing3D()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#325
-```
 
 ### closest_polygon
 
@@ -60,9 +45,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#325
 public absl::optional<PolygonDistance> closest_polygon()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#327
-```
 
 ### closest_polygons
 
@@ -70,9 +52,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#327
 public absl::optional<absl::FixedArray<PolygonDistance> > closest_polygons(index_t size)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#333
-```
 
 ### all_intersections
 
@@ -80,9 +59,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#333
 public vector all_intersections()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#339
-```
 
 ### operator()
 
@@ -90,9 +66,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#339
 public bool operator()(index_t polygon_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/ray_tracing.cpp#345
-```
 
 
 

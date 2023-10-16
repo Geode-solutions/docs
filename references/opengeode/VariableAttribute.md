@@ -1,8 +1,5 @@
 # class VariableAttribute
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#560
-```
 
  Read and write interface for boolean variable attribute storage. This class removes the custom storage use by the STL for std::vector of bool.
 
@@ -22,9 +19,6 @@ Inherits from ReadOnlyAttribute<_Bool>
 public void VariableAttribute(bool default_value, AttributeProperties properties, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#566
-```
 
 ### value
 
@@ -32,9 +26,6 @@ Defined at ../../include/geode/basic/attribute.h#566
 public const bool & value(index_t element)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#573
-```
 
 ### set_value
 
@@ -42,9 +33,6 @@ Defined at ../../include/geode/basic/attribute.h#573
 public void set_value(index_t element, bool value)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#578
-```
 
 ### default_value
 
@@ -52,9 +40,6 @@ Defined at ../../include/geode/basic/attribute.h#578
 public bool default_value()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#583
-```
 
 ### modify_value
 
@@ -62,9 +47,6 @@ Defined at ../../include/geode/basic/attribute.h#583
 public void modify_value(index_t element, Modifier && modifier)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#589
-```
 
 ### size
 
@@ -72,9 +54,6 @@ Defined at ../../include/geode/basic/attribute.h#589
 public index_t size()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#594
-```
 
 ### compute_value
 
@@ -82,9 +61,6 @@ Defined at ../../include/geode/basic/attribute.h#594
 public void compute_value(index_t from_element, index_t to_element, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#600
-```
 
 ### compute_value
 
@@ -92,9 +68,6 @@ Defined at ../../include/geode/basic/attribute.h#600
 public void compute_value(const AttributeLinearInterpolation & interpolation, index_t to_element, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#607
-```
 
 ### VariableAttribute
 
@@ -102,9 +75,6 @@ Defined at ../../include/geode/basic/attribute.h#607
 protected void VariableAttribute(bool default_value, AttributeProperties properties)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#615
-```
 
 ### VariableAttribute
 
@@ -112,9 +82,6 @@ Defined at ../../include/geode/basic/attribute.h#615
 protected void VariableAttribute()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#622
-```
 
 ### serialize
 
@@ -122,9 +89,6 @@ Defined at ../../include/geode/basic/attribute.h#622
 protected void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#626
-```
 
 ### resize
 
@@ -132,9 +96,6 @@ Defined at ../../include/geode/basic/attribute.h#626
 protected void resize(index_t size, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#640
-```
 
 ### reserve
 
@@ -142,9 +103,6 @@ Defined at ../../include/geode/basic/attribute.h#640
 protected void reserve(index_t capacity, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#651
-```
 
 ### delete_elements
 
@@ -152,9 +110,6 @@ Defined at ../../include/geode/basic/attribute.h#651
 protected void delete_elements(const std::vector<bool> & to_delete, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#656
-```
 
 ### permute_elements
 
@@ -162,9 +117,6 @@ Defined at ../../include/geode/basic/attribute.h#656
 protected void permute_elements(Span permutation, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#662
-```
 
 ### clone
 
@@ -172,9 +124,6 @@ Defined at ../../include/geode/basic/attribute.h#662
 protected shared_ptr clone(PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#668
-```
 
 ### copy
 
@@ -182,9 +131,6 @@ Defined at ../../include/geode/basic/attribute.h#668
 protected void copy(const AttributeBase & attribute, index_t nb_elements, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#679
-```
 
 ### extract
 
@@ -192,9 +138,6 @@ Defined at ../../include/geode/basic/attribute.h#679
 protected shared_ptr extract(Span old2new, index_t nb_elements, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#696
-```
 
 ### extract
 
@@ -202,9 +145,6 @@ Defined at ../../include/geode/basic/attribute.h#696
 protected shared_ptr extract(const GenericMapping<index_t> & old2new_mapping, index_t nb_elements, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#721
-```
 
 ### delete_elements
 
@@ -212,9 +152,6 @@ Defined at ../../include/geode/basic/attribute.h#721
 protected void delete_elements(const int & to_delete, class AttributeBase::AttributeKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#656
-```
 
 ### extract
 
@@ -222,17 +159,11 @@ Defined at ../../include/geode/basic/attribute.h#656
 protected std::shared_ptr<AttributeBase> extract(const int & old2new_mapping, index_t nb_elements, class AttributeBase::AttributeKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#721
-```
 
 
 
 # class VariableAttribute
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#366
-```
 
  Read and write interface for variable attribute storage
 
@@ -252,9 +183,6 @@ Inherits from ReadOnlyAttribute<T>
 public void VariableAttribute<T>(T default_value, AttributeProperties properties, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#371
-```
 
 ### value
 
@@ -262,9 +190,6 @@ Defined at ../../include/geode/basic/attribute.h#371
 public const T & value(index_t element)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#379
-```
 
 ### set_value
 
@@ -272,9 +197,6 @@ Defined at ../../include/geode/basic/attribute.h#379
 public void set_value(index_t element, T value)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#384
-```
 
 ### default_value
 
@@ -282,9 +204,6 @@ Defined at ../../include/geode/basic/attribute.h#384
 public const T & default_value()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#389
-```
 
 ### modify_value
 
@@ -292,9 +211,6 @@ Defined at ../../include/geode/basic/attribute.h#389
 public void modify_value(index_t element, Modifier && modifier)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#395
-```
 
 ### size
 
@@ -302,9 +218,6 @@ Defined at ../../include/geode/basic/attribute.h#395
 public index_t size()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#400
-```
 
 ### compute_value
 
@@ -312,9 +225,6 @@ Defined at ../../include/geode/basic/attribute.h#400
 public void compute_value(index_t from_element, index_t to_element, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#406
-```
 
 ### compute_value
 
@@ -322,9 +232,6 @@ Defined at ../../include/geode/basic/attribute.h#406
 public void compute_value(const AttributeLinearInterpolation & interpolation, index_t to_element, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#413
-```
 
 ### VariableAttribute
 
@@ -332,9 +239,6 @@ Defined at ../../include/geode/basic/attribute.h#413
 protected void VariableAttribute<T>(T default_value, AttributeProperties properties)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#421
-```
 
 ### VariableAttribute
 
@@ -342,9 +246,6 @@ Defined at ../../include/geode/basic/attribute.h#421
 protected void VariableAttribute<T>()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#428
-```
 
 ### serialize
 
@@ -352,9 +253,6 @@ Defined at ../../include/geode/basic/attribute.h#428
 protected void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#431
-```
 
 ### resize
 
@@ -362,9 +260,6 @@ Defined at ../../include/geode/basic/attribute.h#431
 protected void resize(index_t size, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#448
-```
 
 ### reserve
 
@@ -372,9 +267,6 @@ Defined at ../../include/geode/basic/attribute.h#448
 protected void reserve(index_t capacity, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#459
-```
 
 ### delete_elements
 
@@ -382,9 +274,6 @@ Defined at ../../include/geode/basic/attribute.h#459
 protected void delete_elements(const std::vector<bool> & to_delete, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#464
-```
 
 ### permute_elements
 
@@ -392,9 +281,6 @@ Defined at ../../include/geode/basic/attribute.h#464
 protected void permute_elements(Span permutation, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#470
-```
 
 ### clone
 
@@ -402,9 +288,6 @@ Defined at ../../include/geode/basic/attribute.h#470
 protected shared_ptr clone(PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#476
-```
 
 ### copy
 
@@ -412,9 +295,6 @@ Defined at ../../include/geode/basic/attribute.h#476
 protected void copy(const AttributeBase & attribute, index_t nb_elements, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#486
-```
 
 ### extract
 
@@ -422,9 +302,6 @@ Defined at ../../include/geode/basic/attribute.h#486
 protected shared_ptr extract(Span old2new, index_t nb_elements, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#503
-```
 
 ### extract
 
@@ -432,9 +309,6 @@ Defined at ../../include/geode/basic/attribute.h#503
 protected shared_ptr extract(const GenericMapping<index_t> & old2new_mapping, index_t nb_elements, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#527
-```
 
 ### delete_elements
 
@@ -442,9 +316,6 @@ Defined at ../../include/geode/basic/attribute.h#527
 protected void delete_elements(const int & to_delete, class AttributeBase::AttributeKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#464
-```
 
 ### extract
 
@@ -452,9 +323,6 @@ Defined at ../../include/geode/basic/attribute.h#464
 protected std::shared_ptr<AttributeBase> extract(const int & old2new_mapping, index_t nb_elements, class AttributeBase::AttributeKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#527
-```
 
 
 

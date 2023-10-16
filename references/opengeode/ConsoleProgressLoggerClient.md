@@ -1,8 +1,5 @@
 # class ConsoleProgressLoggerClient
 
-```cpp
-Defined at ../../include/geode/basic/console_progress_logger_client.h#34
-```
 
 ```cpp
 Inherits from ProgressLoggerClient
@@ -18,9 +15,6 @@ Inherits from ProgressLoggerClient
 public void ConsoleProgressLoggerClient()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/console_progress_logger_client.cpp#86
-```
 
 ### ~ConsoleProgressLoggerClient
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/basic/console_progress_logger_client.cpp#
 public void ~ConsoleProgressLoggerClient()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/console_progress_logger_client.cpp#88
-```
 
 
 

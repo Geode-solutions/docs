@@ -1,8 +1,5 @@
 # class TIndices
 
-```cpp
-Defined at ../../include/geode/basic/range.h#199
-```
 
 ```cpp
 Inherits from BaseRange<Type, geode::IncrementOperator>
@@ -18,9 +15,6 @@ Inherits from BaseRange<Type, geode::IncrementOperator>
 public void TIndices<Type>(const Container & container)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#203
-```
 
 ### begin
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/basic/range.h#203
 public const TIndices<Type> & begin()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#208
-```
 
 ### end
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/basic/range.h#208
 public const TIndices<Type> & end()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#213
-```
 
 ### operator*
 
@@ -48,9 +36,6 @@ Defined at ../../include/geode/basic/range.h#213
 public Type operator*()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/range.h#218
-```
 
 
 

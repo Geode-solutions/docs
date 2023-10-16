@@ -1,8 +1,5 @@
 # class Relationships
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#49
-```
 
  This class stores all the relations between a set of components. Each relationship links two components. Relationship types are boundary and its dual incidence, and item and its dual collection. Components should be added through their uuids.
 
@@ -48,9 +45,6 @@ CollectionRange
 public void Relationships()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#263
-```
 
 ### ~Relationships
 
@@ -58,9 +52,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#263
 public void ~Relationships()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#274
-```
 
 ### nb_components_with_relations
 
@@ -68,9 +59,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#274
 public index_t nb_components_with_relations()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#282
-```
 
 ### component_with_relation
 
@@ -78,9 +66,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#282
 public const ComponentID & component_with_relation(index_t relation_component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#287
-```
 
 ### nb_relations
 
@@ -88,9 +73,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#287
 public index_t nb_relations(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#293
-```
 
 ### relations
 
@@ -98,9 +80,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#293
 public RelationRange relations(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#298
-```
 
 ### nb_boundaries
 
@@ -108,9 +87,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#298
 public index_t nb_boundaries(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#304
-```
 
 ### boundaries
 
@@ -118,9 +94,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#304
 public BoundaryRange boundaries(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#309
-```
 
 ### nb_incidences
 
@@ -128,9 +101,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#309
 public index_t nb_incidences(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#315
-```
 
 ### incidences
 
@@ -138,9 +108,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#315
 public IncidenceRange incidences(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#320
-```
 
 ### nb_internals
 
@@ -148,9 +115,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#320
 public index_t nb_internals(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#334
-```
 
 ### internals
 
@@ -158,9 +122,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#334
 public InternalRange internals(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#339
-```
 
 ### nb_embeddings
 
@@ -168,9 +129,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#339
 public index_t nb_embeddings(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#345
-```
 
 ### embeddings
 
@@ -178,9 +136,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#345
 public EmbeddingRange embeddings(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#350
-```
 
 ### nb_items
 
@@ -188,9 +143,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#350
 public index_t nb_items(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#364
-```
 
 ### items
 
@@ -198,9 +150,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#364
 public ItemRange items(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#369
-```
 
 ### nb_collections
 
@@ -208,9 +157,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#369
 public index_t nb_collections(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#375
-```
 
 ### collections
 
@@ -218,9 +164,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#375
 public CollectionRange collections(const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#380
-```
 
 ### is_boundary
 
@@ -228,9 +171,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#380
 public bool is_boundary(const uuid & boundary, const uuid & incidence)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#401
-```
 
 ### is_internal
 
@@ -238,9 +178,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#401
 public bool is_internal(const uuid & internal, const uuid & embedding)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#407
-```
 
 ### is_item
 
@@ -248,9 +185,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#407
 public bool is_item(const uuid & item, const uuid & collection)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#413
-```
 
 ### relation_attribute_manager
 
@@ -258,9 +192,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#413
 public AttributeManager & relation_attribute_manager()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#437
-```
 
 ### relation_index
 
@@ -268,9 +199,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#437
 public absl::optional<index_t> relation_index(const uuid & component_id1, const uuid & component_id2)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#442
-```
 
 ### relation_from_index
 
@@ -278,9 +206,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#442
 public std::tuple<ComponentID, ComponentID> relation_from_index(index_t component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#448
-```
 
 ### save_relationships
 
@@ -288,9 +213,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#448
 public void save_relationships(string_view directory)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#419
-```
 
 ### remove_component
 
@@ -298,9 +220,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#419
 public void remove_component(const uuid & component_id, RelationshipsBuilderKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#276
-```
 
  Remove a component from the set of components registered by the Relationships and all its associated relationships
 
@@ -312,9 +231,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#276
 public index_t add_boundary_relation(const ComponentID & boundary, const ComponentID & incidence, RelationshipsBuilderKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#326
-```
 
  Add a new relationship of type boundary-incidence between two components
 
@@ -324,9 +240,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#326
 public index_t add_internal_relation(const ComponentID & internal, const ComponentID & embedding, RelationshipsBuilderKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#356
-```
 
  Add a new relationship of type internal-embedding between two components
 
@@ -336,9 +249,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#356
 public index_t add_item_in_collection(const ComponentID & item, const ComponentID & collection, RelationshipsBuilderKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#386
-```
 
  Add a new relationship of type item-collection between two components
 
@@ -348,9 +258,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#386
 public void remove_relation(const uuid & component_id1, const uuid & component_id2, RelationshipsBuilderKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#394
-```
 
  Remove a relationship between two components
 
@@ -360,9 +267,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#394
 public void copy_relationships(const ModelCopyMapping & mapping, const Relationships & relationships, RelationshipsBuilderKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#424
-```
 
 ### load_relationships
 
@@ -370,9 +274,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#424
 public void load_relationships(string_view directory, RelationshipsBuilderKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#431
-```
 
 ### Relationships
 
@@ -380,9 +281,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#431
 protected void Relationships(Relationships && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#264
-```
 
 ### operator=
 
@@ -390,9 +288,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#264
 protected Relationships & operator=(Relationships && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#268
-```
 
 ### copy_relationships
 

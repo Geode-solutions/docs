@@ -1,8 +1,5 @@
 # class ConstantAttribute
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#228
-```
 
  Read and write interface for constant attribute storage
 
@@ -22,9 +19,6 @@ Inherits from ReadOnlyAttribute<T>
 public void ConstantAttribute<T>(T value, AttributeProperties properties, PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#233
-```
 
 ### value
 
@@ -32,9 +26,6 @@ Defined at ../../include/geode/basic/attribute.h#233
 public const T & value(index_t )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#240
-```
 
 ### value
 
@@ -42,9 +33,6 @@ Defined at ../../include/geode/basic/attribute.h#240
 public const T & value()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#245
-```
 
 ### set_value
 
@@ -52,9 +40,6 @@ Defined at ../../include/geode/basic/attribute.h#245
 public void set_value(T value)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#250
-```
 
 ### default_value
 
@@ -62,9 +47,6 @@ Defined at ../../include/geode/basic/attribute.h#250
 public const T & default_value()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#255
-```
 
 ### modify_value
 
@@ -72,9 +54,6 @@ Defined at ../../include/geode/basic/attribute.h#255
 public void modify_value(Modifier && modifier)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#261
-```
 
 ### compute_value
 
@@ -82,9 +61,6 @@ Defined at ../../include/geode/basic/attribute.h#261
 public void compute_value(index_t , index_t , PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#267
-```
 
 ### compute_value
 
@@ -92,9 +68,6 @@ Defined at ../../include/geode/basic/attribute.h#267
 public void compute_value(const AttributeLinearInterpolation & , index_t , PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#273
-```
 
 ### resize
 
@@ -102,9 +75,6 @@ Defined at ../../include/geode/basic/attribute.h#273
 public void resize(index_t , PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#301
-```
 
 ### reserve
 
@@ -112,9 +82,6 @@ Defined at ../../include/geode/basic/attribute.h#301
 public void reserve(index_t , PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#305
-```
 
 ### delete_elements
 
@@ -122,9 +89,6 @@ Defined at ../../include/geode/basic/attribute.h#305
 public void delete_elements(const std::vector<bool> & , PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#309
-```
 
 ### permute_elements
 
@@ -132,9 +96,6 @@ Defined at ../../include/geode/basic/attribute.h#309
 public void permute_elements(Span , PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#314
-```
 
 ### clone
 
@@ -142,9 +103,6 @@ Defined at ../../include/geode/basic/attribute.h#314
 public shared_ptr clone(PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#319
-```
 
 ### copy
 
@@ -152,9 +110,6 @@ Defined at ../../include/geode/basic/attribute.h#319
 public void copy(const AttributeBase & attribute, index_t , PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#328
-```
 
 ### extract
 
@@ -162,9 +117,6 @@ Defined at ../../include/geode/basic/attribute.h#328
 public shared_ptr extract(Span , index_t , PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#336
-```
 
 ### extract
 
@@ -172,9 +124,6 @@ Defined at ../../include/geode/basic/attribute.h#336
 public shared_ptr extract(const GenericMapping<index_t> & , index_t , PassKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#347
-```
 
 ### delete_elements
 
@@ -182,9 +131,6 @@ Defined at ../../include/geode/basic/attribute.h#347
 public void delete_elements(const int & , class AttributeBase::AttributeKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#309
-```
 
 ### extract
 
@@ -192,9 +138,6 @@ Defined at ../../include/geode/basic/attribute.h#309
 public std::shared_ptr<AttributeBase> extract(const int & , index_t , class AttributeBase::AttributeKey )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute.h#347
-```
 
 
 

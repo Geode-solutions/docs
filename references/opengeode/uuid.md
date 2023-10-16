@@ -1,8 +1,5 @@
 # struct uuid
 
-```cpp
-Defined at ../../include/geode/basic/uuid.h#102
-```
 
  128-bit basic UUID type that allows comparison and sorting.
 
@@ -30,9 +27,6 @@ public uint64_t cd
 public void uuid()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/uuid.cpp#53
-```
 
 ### uuid
 
@@ -40,9 +34,6 @@ Defined at /github/workspace/src/geode/basic/uuid.cpp#53
 public void uuid(string_view string)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/uuid.cpp#123
-```
 
 ### uuid
 
@@ -50,9 +41,6 @@ Defined at /github/workspace/src/geode/basic/uuid.cpp#123
 public void uuid(const uuid & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/uuid.h#107
-```
 
 ### uuid
 
@@ -60,9 +48,6 @@ Defined at ../../include/geode/basic/uuid.h#107
 public void uuid(uuid && )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/uuid.h#108
-```
 
 ### operator=
 
@@ -70,9 +55,6 @@ Defined at ../../include/geode/basic/uuid.h#108
 public uuid & operator=(uuid && other)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/uuid.h#109
-```
 
 ### operator=
 
@@ -80,9 +62,6 @@ Defined at ../../include/geode/basic/uuid.h#109
 public uuid & operator=(const uuid & other)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/uuid.h#110
-```
 
 ### ~uuid
 
@@ -90,9 +69,6 @@ Defined at ../../include/geode/basic/uuid.h#110
 public void ~uuid()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/uuid.h#111
-```
 
 ### operator==
 
@@ -100,9 +76,6 @@ Defined at ../../include/geode/basic/uuid.h#111
 public bool operator==(const uuid & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/uuid.cpp#66
-```
 
 ### operator!=
 
@@ -110,9 +83,6 @@ Defined at /github/workspace/src/geode/basic/uuid.cpp#66
 public bool operator!=(const uuid & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/uuid.cpp#71
-```
 
 ### operator<
 
@@ -120,9 +90,6 @@ Defined at /github/workspace/src/geode/basic/uuid.cpp#71
 public bool operator<(const uuid & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/uuid.cpp#76
-```
 
 ### string
 
@@ -130,9 +97,6 @@ Defined at /github/workspace/src/geode/basic/uuid.cpp#76
 public basic_string string()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/uuid.cpp#93
-```
 
 
 

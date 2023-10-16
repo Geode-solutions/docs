@@ -1,8 +1,5 @@
 # class CachedValue
 
-```cpp
-Defined at ../../include/geode/basic/cached_value.h#35
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/basic/cached_value.h#35
 public const ReturnType & operator()(CachedFunction<Args...> computer, Args &&... args)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/cached_value.h#43
-```
 
 ### operator!=
 
@@ -22,9 +16,6 @@ Defined at ../../include/geode/basic/cached_value.h#43
 public bool operator!=(const CachedValue<ReturnType> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/cached_value.h#54
-```
 
 ### reset
 
@@ -32,9 +23,6 @@ Defined at ../../include/geode/basic/cached_value.h#54
 public void reset()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/cached_value.h#63
-```
 
 ### computed
 
@@ -42,9 +30,6 @@ Defined at ../../include/geode/basic/cached_value.h#63
 public bool computed()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/cached_value.h#68
-```
 
 ### value
 
@@ -52,9 +37,6 @@ Defined at ../../include/geode/basic/cached_value.h#68
 public const ReturnType & value()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/cached_value.h#73
-```
 
 ### operator()
 
@@ -62,9 +44,6 @@ Defined at ../../include/geode/basic/cached_value.h#73
 public const ReturnType & operator()(int computer, Args &&... args)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/cached_value.h#43
-```
 
 
 

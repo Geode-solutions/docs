@@ -1,14 +1,8 @@
 # class Blocks
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#389
-```
 
 # class Blocks
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/blocks.h#46
-```
 
  Storage class providing range loop to iterate on Blocks
 
@@ -30,9 +24,6 @@ BlockRange
 public void Blocks<dimension>(const Blocks<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/blocks.h#48
-```
 
 ### operator=
 
@@ -40,9 +31,6 @@ Defined at ../../include/geode/model/mixin/core/blocks.h#48
 public Blocks<dimension> & operator=(const Blocks<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/blocks.h#48
-```
 
 ### ~Blocks
 
@@ -50,9 +38,6 @@ Defined at ../../include/geode/model/mixin/core/blocks.h#48
 public void ~Blocks<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#65
-```
 
 ### nb_blocks
 
@@ -60,9 +45,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#65
 public index_t nb_blocks()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#77
-```
 
 ### has_block
 
@@ -70,9 +52,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#77
 public bool has_block(const uuid & id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#83
-```
 
 ### block
 
@@ -80,9 +59,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#83
 public const Block<dimension> & block(const uuid & id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#89
-```
 
  Access to an unmodifiable Block by its unique index
 
@@ -92,9 +68,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#89
 public BlockRange blocks()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#245
-```
 
 ### save_blocks
 
@@ -102,9 +75,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#245
 public void save_blocks(string_view directory)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#101
-```
 
  Save each Block in a file located in the specified directory
 
@@ -114,9 +84,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#101
 protected void Blocks<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#54
-```
 
 ### Blocks
 
@@ -124,9 +91,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#54
 protected void Blocks<dimension>(Blocks<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#59
-```
 
 ### operator=
 
@@ -134,9 +98,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#59
 protected Blocks<dimension> & operator=(Blocks<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#70
-```
 
 
 

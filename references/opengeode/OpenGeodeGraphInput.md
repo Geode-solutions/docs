@@ -1,8 +1,5 @@
 # class OpenGeodeGraphInput
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_graph_input.h#32
-```
 
 ```cpp
 Inherits from GraphInput
@@ -18,9 +15,6 @@ Inherits from GraphInput
 public void OpenGeodeGraphInput(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_graph_input.h#32
-```
 
 ### read
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/mesh/io/geode/geode_graph_input.h#32
 public unique_ptr read(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_graph_input.h#32
-```
 
 
 

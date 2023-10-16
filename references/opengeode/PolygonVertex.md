@@ -1,8 +1,5 @@
 # struct PolygonVertex
 
-```cpp
-Defined at ../../include/geode/mesh/core/surface_mesh.h#56
-```
 
  This struct represents a local vertex in a polygon
 
@@ -30,9 +27,6 @@ public local_index_t vertex_id
 public void PolygonVertex()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/surface_mesh.h#58
-```
 
 ### PolygonVertex
 
@@ -40,9 +34,6 @@ Defined at ../../include/geode/mesh/core/surface_mesh.h#58
 public void PolygonVertex(index_t polygon_id_in, local_index_t vertex_id_in)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/surface_mesh.h#59
-```
 
 ### PolygonVertex
 
@@ -50,9 +41,6 @@ Defined at ../../include/geode/mesh/core/surface_mesh.h#59
 public void PolygonVertex(PolygonEdge polygon_edge)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#162
-```
 
 ### operator==
 
@@ -60,9 +48,6 @@ Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#162
 public bool operator==(const PolygonVertex & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/surface_mesh.h#64
-```
 
 ### operator!=
 
@@ -70,9 +55,6 @@ Defined at ../../include/geode/mesh/core/surface_mesh.h#64
 public bool operator!=(const PolygonVertex & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/surface_mesh.h#69
-```
 
 ### operator<
 
@@ -80,9 +62,6 @@ Defined at ../../include/geode/mesh/core/surface_mesh.h#69
 public bool operator<(const PolygonVertex & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/surface_mesh.h#73
-```
 
 ### string
 
@@ -90,9 +69,6 @@ Defined at ../../include/geode/mesh/core/surface_mesh.h#73
 public basic_string string()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/surface_mesh.h#81
-```
 
 ### serialize
 
@@ -100,9 +76,6 @@ Defined at ../../include/geode/mesh/core/surface_mesh.h#81
 public void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/surface_mesh.cpp#175
-```
 
 
 

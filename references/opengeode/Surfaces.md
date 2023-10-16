@@ -1,14 +1,8 @@
 # class Surfaces
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#389
-```
 
 # class Surfaces
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/surfaces.h#43
-```
 
 ## Records
 
@@ -26,9 +20,6 @@ SurfaceRange
 public void Surfaces<>(const Surfaces<> & )
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/surfaces.h#45
-```
 
 ### operator=
 
@@ -36,9 +27,6 @@ Defined at ../../include/geode/model/mixin/core/surfaces.h#45
 public Surfaces<> & operator=(const Surfaces<> & )
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/surfaces.h#45
-```
 
 ### ~Surfaces
 
@@ -46,9 +34,6 @@ Defined at ../../include/geode/model/mixin/core/surfaces.h#45
 public void ~Surfaces<>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#65
-```
 
 ### nb_surfaces
 
@@ -56,9 +41,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#65
 public index_t nb_surfaces()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#78
-```
 
 ### has_surface
 
@@ -66,9 +48,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#78
 public bool has_surface(const uuid & id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#84
-```
 
 ### surface
 
@@ -76,9 +55,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#84
 public const Surface<dimension> & surface(const uuid & id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#90
-```
 
 ### surfaces
 
@@ -86,9 +62,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#90
 public SurfaceRange surfaces()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#186
-```
 
 ### save_surfaces
 
@@ -96,9 +69,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#186
 public void save_surfaces(string_view directory)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#104
-```
 
 ### Surfaces
 
@@ -106,9 +76,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#104
 protected void Surfaces<>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#54
-```
 
 ### Surfaces
 
@@ -116,9 +83,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#54
 protected void Surfaces<>(Surfaces<> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#59
-```
 
 ### operator=
 
@@ -126,15 +90,9 @@ Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#59
 protected Surfaces<> & operator=(Surfaces<> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#70
-```
 
 
 
 # class Surfaces
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/surfaces.cpp#390
-```
 

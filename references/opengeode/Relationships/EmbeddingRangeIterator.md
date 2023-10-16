@@ -1,8 +1,5 @@
 # class EmbeddingRangeIterator
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#225
-```
 
  Range to iterate on all embeddings of one component
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/model/mixin/core/relationships.h#225
 public void EmbeddingRangeIterator(const Relationships & relationships, const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#832
-```
 
 ### EmbeddingRangeIterator
 
@@ -26,9 +20,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#832
 public void EmbeddingRangeIterator(EmbeddingRangeIterator && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#840
-```
 
 ### EmbeddingRangeIterator
 
@@ -36,9 +27,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#840
 public void EmbeddingRangeIterator(const EmbeddingRangeIterator & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#846
-```
 
 ### ~EmbeddingRangeIterator
 
@@ -46,9 +34,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#846
 public void ~EmbeddingRangeIterator()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#852
-```
 
 ### operator!=
 
@@ -56,9 +41,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#852
 public bool operator!=(const EmbeddingRangeIterator & )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#855
-```
 
 ### operator++
 
@@ -66,9 +48,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#855
 public void operator++()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#861
-```
 
 ### operator*
 
@@ -76,9 +55,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#861
 public const ComponentID & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#866
-```
 
 
 

@@ -1,8 +1,5 @@
 # class EmbeddingSurfaceRange
 
-```cpp
-Defined at ../../include/geode/model/representation/core/section.h#187
-```
 
 ```cpp
 Inherits from EmbeddingRangeIterator
@@ -18,9 +15,6 @@ Inherits from EmbeddingRangeIterator
 public void EmbeddingSurfaceRange(const Section & section, const Line2D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#338
-```
 
 ### EmbeddingSurfaceRange
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#338
 public void EmbeddingSurfaceRange(const Section & section, const Corner2D & corner)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#346
-```
 
 ### EmbeddingSurfaceRange
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#346
 public void EmbeddingSurfaceRange(const EmbeddingSurfaceRange & range)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#354
-```
 
 ### ~EmbeddingSurfaceRange
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#354
 public void ~EmbeddingSurfaceRange()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#361
-```
 
 ### begin
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#361
 public const EmbeddingSurfaceRange & begin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#363
-```
 
 ### end
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#363
 public const EmbeddingSurfaceRange & end()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#369
-```
 
 ### operator++
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#369
 public void operator++()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#375
-```
 
 ### operator*
 
@@ -88,9 +64,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#375
 public const Surface2D & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#381
-```
 
 
 

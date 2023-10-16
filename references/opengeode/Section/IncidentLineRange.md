@@ -1,8 +1,5 @@
 # class IncidentLineRange
 
-```cpp
-Defined at ../../include/geode/model/representation/core/section.h#109
-```
 
 ```cpp
 Inherits from IncidenceRangeIterator
@@ -18,9 +15,6 @@ Inherits from IncidenceRangeIterator
 public void IncidentLineRange(const Section & section, const Corner2D & corner)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#163
-```
 
 ### IncidentLineRange
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#163
 public void IncidentLineRange(const IncidentLineRange & range)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#170
-```
 
 ### ~IncidentLineRange
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#170
 public void ~IncidentLineRange()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#177
-```
 
 ### begin
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#177
 public const IncidentLineRange & begin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#179
-```
 
 ### end
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#179
 public const IncidentLineRange & end()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#184
-```
 
 ### operator*
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#184
 public const Line2D & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#189
-```
 
 
 

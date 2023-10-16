@@ -1,8 +1,5 @@
 # struct ComponentMeshElement
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#35
-```
 
  Identify an element in a model component
 
@@ -30,9 +27,6 @@ public index_t element_id
 public void ComponentMeshElement()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#37
-```
 
 ### ComponentMeshElement
 
@@ -40,9 +34,6 @@ Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#37
 public void ComponentMeshElement(ComponentID component_id_in, index_t element_id_in)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#39
-```
 
 ### mesh_element
 
@@ -50,9 +41,6 @@ Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#39
 public MeshElement mesh_element()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#46
-```
 
 ### operator==
 
@@ -60,9 +48,6 @@ Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#46
 public bool operator==(const ComponentMeshElement & other)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#51
-```
 
 ### serialize
 
@@ -70,9 +55,6 @@ Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#51
 public void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#58
-```
 
 ### string
 
@@ -80,9 +62,6 @@ Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#58
 public basic_string string()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/component_mesh_element.h#68
-```
 
 
 

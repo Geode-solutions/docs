@@ -1,8 +1,5 @@
 # class Factory
 
-```cpp
-Defined at ../../include/geode/basic/factory.h#62
-```
 
  Generic factory Example of use with A the base class and B, C derived classes      // Instantiation      using MyFactory = Factory< std::string, A, int, double >;      // where: - std::string is the Key type      //        - int and double are the constructor arguments required by      //        the derived classes B and C
 
@@ -26,9 +23,6 @@ Inherits from Singleton
 public void register_creator(Key key)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/factory.h#73
-```
 
 ### create
 
@@ -36,9 +30,6 @@ Defined at ../../include/geode/basic/factory.h#73
 public std::unique_ptr<BaseClass> create(const Key & key, Args... args)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/factory.h#91
-```
 
 ### list_creators
 
@@ -46,9 +37,6 @@ Defined at ../../include/geode/basic/factory.h#91
 public absl::FixedArray<Key> list_creators()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/factory.h#102
-```
 
 ### has_creator
 
@@ -56,9 +44,6 @@ Defined at ../../include/geode/basic/factory.h#102
 public bool has_creator(const Key & key)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/factory.h#114
-```
 
 
 

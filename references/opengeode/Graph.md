@@ -1,8 +1,5 @@
 # class Graph
 
-```cpp
-Defined at ../../include/geode/mesh/core/graph.h#97
-```
 
  Interface class to represent a Graph. A graph is a set of vertices linked by edges
 
@@ -46,9 +43,6 @@ public std::unique_ptr<Graph> create(const MeshImpl & impl)
 public NamedType type_name_static()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#172
-```
 
 ### clone
 
@@ -56,9 +50,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#172
 public std::unique_ptr<Graph> clone()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#259
-```
 
 ### ~Graph
 
@@ -66,9 +57,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#259
 public void ~Graph()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#159
-```
 
 ### edge_vertex
 
@@ -76,9 +64,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#159
 public index_t edge_vertex(const EdgeVertex & edge_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#177
-```
 
  Return the vertex index corresponding to an edge endpoint
 
@@ -90,9 +75,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#177
 public std::array<index_t, 2> edge_vertices(index_t edge_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#187
-```
 
  Return the indices of the two edge vertices
 
@@ -104,9 +86,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#187
 public index_t nb_edges()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#192
-```
 
 ### edge_attribute_manager
 
@@ -114,9 +93,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#192
 public AttributeManager & edge_attribute_manager()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#244
-```
 
  Access to the manager of attributes associated with edges.
 
@@ -126,9 +102,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#244
 public const EdgesAroundVertex & edges_around_vertex(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#197
-```
 
  Get all edge endpoints corresponding to a given vertex
 
@@ -140,9 +113,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#197
 public bool is_vertex_isolated(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#205
-```
 
 ### edge_from_vertices
 
@@ -150,9 +120,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#205
 public absl::optional<index_t> edge_from_vertices(index_t v0, index_t v1)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#210
-```
 
 ### set_edges_around_vertex
 
@@ -160,9 +127,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#210
 public void set_edges_around_vertex(index_t vertex_id, EdgesAroundVertex edges, GraphKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#224
-```
 
 ### associate_edge_vertex_to_vertex
 
@@ -170,9 +134,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#224
 public void associate_edge_vertex_to_vertex(const EdgeVertex & edge_vertex, index_t vertex_id, GraphKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#232
-```
 
 ### disassociate_edge_vertex_to_vertex
 
@@ -180,9 +141,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#232
 public void disassociate_edge_vertex_to_vertex(const EdgeVertex & edge_vertex, GraphKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#238
-```
 
 ### Graph
 
@@ -190,9 +148,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#238
 protected void Graph()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#145
-```
 
 ### Graph
 
@@ -200,9 +155,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#145
 protected void Graph(Graph && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#147
-```
 
 ### operator=
 
@@ -210,9 +162,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#147
 protected Graph & operator=(Graph && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#152
-```
 
 ### create
 
@@ -220,9 +169,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#152
 public int create()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#161
-```
 
 ### create
 
@@ -230,9 +176,6 @@ Defined at /github/workspace/src/geode/mesh/core/graph.cpp#161
 public int create(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/graph.cpp#167
-```
 
 ### set_edges_around_vertex
 

@@ -1,8 +1,5 @@
 # class ItemRangeIterator
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#267
-```
 
  Range to iterate on all items of one component
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/model/mixin/core/relationships.h#267
 public void ItemRangeIterator(const Relationships & relationships, const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#920
-```
 
 ### ItemRangeIterator
 
@@ -26,9 +20,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#920
 public void ItemRangeIterator(ItemRangeIterator && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#928
-```
 
 ### ItemRangeIterator
 
@@ -36,9 +27,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#928
 public void ItemRangeIterator(const ItemRangeIterator & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#934
-```
 
 ### ~ItemRangeIterator
 
@@ -46,9 +34,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#934
 public void ~ItemRangeIterator()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#940
-```
 
 ### operator!=
 
@@ -56,9 +41,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#940
 public bool operator!=(const ItemRangeIterator & )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#942
-```
 
 ### operator++
 
@@ -66,9 +48,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#942
 public void operator++()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#948
-```
 
 ### operator*
 
@@ -76,9 +55,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#948
 public const ComponentID & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#953
-```
 
 
 

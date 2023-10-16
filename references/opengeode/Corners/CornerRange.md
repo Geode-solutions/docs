@@ -1,8 +1,5 @@
 # class CornerRange
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/corners.h#78
-```
 
  Class for range-based iteration on unmodifiable Corners
 
@@ -22,9 +19,6 @@ Inherits from CornerRangeBase
 public void CornerRange(const Corners<> & corners)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#276
-```
 
 ### CornerRange
 
@@ -32,9 +26,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#276
 public void CornerRange(const CornerRange & range)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#282
-```
 
 ### ~CornerRange
 
@@ -42,9 +33,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#282
 public void ~CornerRange()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#288
-```
 
 ### begin
 
@@ -52,9 +40,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#288
 public const CornerRange & begin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#293
-```
 
 ### end
 
@@ -62,9 +47,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#293
 public const CornerRange & end()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#299
-```
 
 ### operator*
 
@@ -72,9 +54,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#299
 public const Corner<dimension> & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#305
-```
 
 
 

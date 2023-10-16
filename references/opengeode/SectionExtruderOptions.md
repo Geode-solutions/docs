@@ -1,8 +1,5 @@
 # struct SectionExtruderOptions
 
-```cpp
-Defined at ../../include/geode/model/helpers/convert_brep_section.h#46
-```
 
 ## Members
 
@@ -31,9 +28,6 @@ public double max_coordinate
 public void SectionExtruderOptions()
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/convert_brep_section.h#48
-```
 
 
 

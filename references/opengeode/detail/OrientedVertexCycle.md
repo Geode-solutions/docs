@@ -1,8 +1,5 @@
 # class OrientedVertexCycle
 
-```cpp
-Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#83
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#83
 public void OrientedVertexCycle<Container>(Container vertices)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#88
-```
 
 ### vertices
 
@@ -22,9 +16,6 @@ Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#88
 public const Container & vertices()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#94
-```
 
 ### is_opposite
 
@@ -32,9 +23,6 @@ Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#94
 public bool is_opposite(const OrientedVertexCycle<Container> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#99
-```
 
 ### operator==
 
@@ -42,9 +30,6 @@ Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#99
 public bool operator==(const OrientedVertexCycle<Container> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#119
-```
 
 ### operator!=
 
@@ -52,9 +37,6 @@ Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#119
 public bool operator!=(const OrientedVertexCycle<Container> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#124
-```
 
 ### operator<
 
@@ -62,9 +44,6 @@ Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#124
 public bool operator<(const OrientedVertexCycle<Container> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#129
-```
 
 ### OrientedVertexCycle
 
@@ -72,9 +51,6 @@ Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#129
 protected void OrientedVertexCycle<Container>()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#135
-```
 
 ### modifiable_vertices
 
@@ -82,9 +58,6 @@ Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#135
 protected Container & modifiable_vertices()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/detail/vertex_cycle.h#137
-```
 
 
 

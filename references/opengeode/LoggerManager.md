@@ -1,8 +1,5 @@
 # class LoggerManager
 
-```cpp
-Defined at ../../include/geode/basic/logger_manager.h#36
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/basic/logger_manager.h#36
 public void ~LoggerManager()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger_manager.cpp#93
-```
 
 ### register_client
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/basic/logger_manager.cpp#93
 public void register_client(std::unique_ptr<LoggerClient> && client)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger_manager.cpp#95
-```
 
 ### trace
 
@@ -32,9 +23,6 @@ Defined at /github/workspace/src/geode/basic/logger_manager.cpp#95
 public void trace(const std::string & message)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger_manager.cpp#101
-```
 
 ### debug
 
@@ -42,9 +30,6 @@ Defined at /github/workspace/src/geode/basic/logger_manager.cpp#101
 public void debug(const std::string & message)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger_manager.cpp#106
-```
 
 ### info
 
@@ -52,9 +37,6 @@ Defined at /github/workspace/src/geode/basic/logger_manager.cpp#106
 public void info(const std::string & message)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger_manager.cpp#111
-```
 
 ### warn
 
@@ -62,9 +44,6 @@ Defined at /github/workspace/src/geode/basic/logger_manager.cpp#111
 public void warn(const std::string & message)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger_manager.cpp#116
-```
 
 ### error
 
@@ -72,9 +51,6 @@ Defined at /github/workspace/src/geode/basic/logger_manager.cpp#116
 public void error(const std::string & message)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger_manager.cpp#121
-```
 
 ### critical
 
@@ -82,9 +58,6 @@ Defined at /github/workspace/src/geode/basic/logger_manager.cpp#121
 public void critical(const std::string & message)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/logger_manager.cpp#126
-```
 
 
 

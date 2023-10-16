@@ -1,8 +1,5 @@
 # class BlockRange
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/blocks.h#79
-```
 
  Class for range-based iteration on unmodifiable Blocks
 
@@ -22,9 +19,6 @@ Inherits from BlockRangeBase
 public void BlockRange(const Blocks<dimension> & blocks)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#307
-```
 
 ### BlockRange
 
@@ -32,9 +26,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#307
 public void BlockRange(const BlockRange & range)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#313
-```
 
 ### ~BlockRange
 
@@ -42,9 +33,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#313
 public void ~BlockRange()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#319
-```
 
 ### begin
 
@@ -52,9 +40,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#319
 public const BlockRange & begin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#324
-```
 
 ### end
 
@@ -62,9 +47,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#324
 public const BlockRange & end()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#330
-```
 
 ### operator*
 
@@ -72,9 +54,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#330
 public const Block<dimension> & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/blocks.cpp#336
-```
 
 
 

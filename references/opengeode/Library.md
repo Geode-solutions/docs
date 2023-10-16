@@ -1,8 +1,5 @@
 # class Library
 
-```cpp
-Defined at ../../include/geode/basic/library.h#32
-```
 
 ```cpp
 Inherits from Singleton
@@ -18,9 +15,6 @@ Inherits from Singleton
 public void ~Library()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/library.cpp#51
-```
 
 ### Library
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/basic/library.cpp#51
 protected void Library()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/library.cpp#49
-```
 
 ### call_initialize
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/basic/library.cpp#49
 protected void call_initialize(const char * library_name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/library.cpp#53
-```
 
 
 

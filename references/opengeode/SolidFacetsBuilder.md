@@ -1,8 +1,5 @@
 # class SolidFacetsBuilder
 
-```cpp
-Defined at ../../include/geode/mesh/builder/solid_facets_builder.h#41
-```
 
  Interface class to represent the builder of a SolidFacets
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/mesh/builder/solid_facets_builder.h#41
 public void SolidFacetsBuilder<dimension>(SolidFacets<dimension> & facets)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#34
-```
 
 ### delete_isolated_facets
 
@@ -26,9 +20,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#34
 public int delete_isolated_facets()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#48
-```
 
  Delete all the isolated facets (not used as polyhedron facets)
 
@@ -40,9 +31,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#48
 public index_t find_or_create_facet(PolyhedronFacetVertices facet_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#41
-```
 
 ### delete_facets
 
@@ -56,9 +44,6 @@ public int delete_facets(const int & to_delete)
 public void remove_facet(PolyhedronFacetVertices facet_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#76
-```
 
 ### update_facet_vertex
 
@@ -66,9 +51,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#76
 public void update_facet_vertex(PolyhedronFacetVertices facet_vertices, index_t facet_vertex_id, index_t new_vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#63
-```
 
 ### update_facet_vertices
 
@@ -76,9 +58,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#63
 public int update_facet_vertices(Span old2new)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#55
-```
 
 ### copy
 
@@ -86,9 +65,6 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#55
 public void copy(const SolidFacets<dimension> & facets)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#90
-```
 
 ### delete_facets
 
@@ -96,15 +72,9 @@ Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#90
 public vector delete_facets(const std::vector<bool> & to_delete)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#83
-```
 
 
 
 # class SolidFacetsBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/solid_facets_builder.cpp#100
-```
 

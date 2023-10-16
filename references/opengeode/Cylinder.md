@@ -1,8 +1,5 @@
 # class Cylinder
 
-```cpp
-Defined at ../../include/geode/geometry/basic_objects/cylinder.h#31
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/geometry/basic_objects/cylinder.h#31
 public void Cylinder(Segment axis, double radius)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#30
-```
 
 ### Cylinder
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#30
 public void Cylinder(const Cylinder & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#35
-```
 
 ### operator=
 
@@ -32,9 +23,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#35
 public Cylinder & operator=(const Cylinder & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#40
-```
 
 ### Cylinder
 
@@ -42,9 +30,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#40
 public void Cylinder(Cylinder && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#47
-```
 
 ### operator=
 
@@ -52,9 +37,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#47
 public Cylinder & operator=(Cylinder && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#52
-```
 
 ### axis
 
@@ -62,9 +44,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#52
 public const Segment3D & axis()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#59
-```
 
 ### radius
 
@@ -72,9 +51,6 @@ Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#59
 public double radius()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geometry/basic_objects/cylinder.cpp#63
-```
 
 
 

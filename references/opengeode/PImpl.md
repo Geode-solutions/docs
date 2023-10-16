@@ -1,8 +1,5 @@
 # class PImpl
 
-```cpp
-Defined at ../../include/geode/basic/pimpl.h#36
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/basic/pimpl.h#36
 public void PImpl<T>(const PImpl<T> & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl.h#38
-```
 
 ### operator=
 
@@ -22,9 +16,6 @@ Defined at ../../include/geode/basic/pimpl.h#38
 public PImpl<T> & operator=(const PImpl<T> & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl.h#38
-```
 
 ### PImpl
 
@@ -32,9 +23,6 @@ Defined at ../../include/geode/basic/pimpl.h#38
 public void PImpl<T>(Args &&... )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#30
-```
 
 ### PImpl
 
@@ -42,9 +30,6 @@ Defined at ../../include/geode/basic/pimpl_impl.h#30
 public void PImpl<T>(PImpl<T> && other)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#37
-```
 
 ### ~PImpl
 
@@ -52,9 +37,6 @@ Defined at ../../include/geode/basic/pimpl_impl.h#37
 public void ~PImpl<T>()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#43
-```
 
 ### operator=
 
@@ -62,9 +44,6 @@ Defined at ../../include/geode/basic/pimpl_impl.h#43
 public PImpl<T> & operator=(PImpl<T> && other)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#48
-```
 
 ### reset
 
@@ -72,9 +51,6 @@ Defined at ../../include/geode/basic/pimpl_impl.h#48
 public void reset()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#55
-```
 
 ### operator->
 
@@ -82,9 +58,6 @@ Defined at ../../include/geode/basic/pimpl_impl.h#55
 public T * operator->()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#67
-```
 
 ### operator->
 
@@ -92,9 +65,6 @@ Defined at ../../include/geode/basic/pimpl_impl.h#67
 public const T * operator->()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#61
-```
 
 ### operator*
 
@@ -102,9 +72,6 @@ Defined at ../../include/geode/basic/pimpl_impl.h#61
 public T & operator*()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#73
-```
 
 ### operator*
 
@@ -112,9 +79,6 @@ Defined at ../../include/geode/basic/pimpl_impl.h#73
 public const T & operator*()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#79
-```
 
 ### serialize
 
@@ -122,9 +86,6 @@ Defined at ../../include/geode/basic/pimpl_impl.h#79
 public void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/pimpl_impl.h#85
-```
 
 
 

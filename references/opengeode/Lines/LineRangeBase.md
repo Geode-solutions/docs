@@ -1,8 +1,5 @@
 # class LineRangeBase
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/lines.h#51
-```
 
 ## Members
 
@@ -27,9 +24,6 @@ Impl
 public void ~LineRangeBase()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#250
-```
 
 ### operator!=
 
@@ -37,9 +31,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#250
 public bool operator!=(const LineRangeBase & )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#255
-```
 
 ### operator++
 
@@ -47,9 +38,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#255
 public void operator++()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#262
-```
 
 ### LineRangeBase
 
@@ -57,9 +45,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#262
 protected void LineRangeBase(const Lines<> & lines)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#230
-```
 
 ### LineRangeBase
 
@@ -67,9 +52,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#230
 protected void LineRangeBase(LineRangeBase && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#236
-```
 
 ### LineRangeBase
 
@@ -77,9 +59,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#236
 protected void LineRangeBase(const LineRangeBase & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/lines.cpp#243
-```
 
 
 

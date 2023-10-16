@@ -1,8 +1,5 @@
 # class PolygonalSurfaceOutput
 
-```cpp
-Defined at ../../include/geode/mesh/io/polygonal_surface_output.h#53
-```
 
 ```cpp
 Inherits from Output<PolygonalSurface<dimension> >
@@ -18,9 +15,6 @@ Inherits from Output<PolygonalSurface<dimension> >
 protected void PolygonalSurfaceOutput<dimension>(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/polygonal_surface_output.h#57
-```
 
 
 

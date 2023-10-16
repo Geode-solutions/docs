@@ -1,8 +1,5 @@
 # class ProgressLogger
 
-```cpp
-Defined at ../../include/geode/basic/progress_logger.h#33
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/basic/progress_logger.h#33
 public void ProgressLogger(const std::string & message, index_t nb_steps)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/progress_logger.cpp#91
-```
 
 ### ~ProgressLogger
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/basic/progress_logger.cpp#91
 public void ~ProgressLogger()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/progress_logger.cpp#97
-```
 
 ### increment
 
@@ -32,9 +23,6 @@ Defined at /github/workspace/src/geode/basic/progress_logger.cpp#97
 public index_t increment()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/progress_logger.cpp#99
-```
 
 ### increment
 
@@ -42,9 +30,6 @@ Defined at /github/workspace/src/geode/basic/progress_logger.cpp#99
 public index_t increment(index_t nb_increments)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/progress_logger.cpp#104
-```
 
 ### increment_nb_steps
 
@@ -52,9 +37,6 @@ Defined at /github/workspace/src/geode/basic/progress_logger.cpp#104
 public index_t increment_nb_steps()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/progress_logger.cpp#109
-```
 
 ### increment_nb_steps
 
@@ -62,9 +44,6 @@ Defined at /github/workspace/src/geode/basic/progress_logger.cpp#109
 public index_t increment_nb_steps(index_t nb_steps)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/progress_logger.cpp#114
-```
 
 
 

@@ -1,8 +1,5 @@
 # class Identifier
 
-```cpp
-Defined at ../../include/geode/basic/identifier.h#38
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/basic/identifier.h#38
 public void Identifier(Identifier && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#114
-```
 
 ### ~Identifier
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#114
 public void ~Identifier()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#112
-```
 
 ### id
 
@@ -32,9 +23,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#112
 public const uuid & id()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#125
-```
 
 ### name
 
@@ -42,9 +30,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#125
 public string_view name()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#130
-```
 
 ### save_identifier
 
@@ -52,9 +37,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#130
 public void save_identifier(string_view directory)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#135
-```
 
 ### set_id
 
@@ -62,9 +44,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#135
 public void set_id(const uuid & unique_id, IdentifierKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#146
-```
 
 ### set_name
 
@@ -72,9 +51,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#146
 public void set_name(string_view name, IdentifierKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#151
-```
 
 ### load_identifier
 
@@ -82,9 +58,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#151
 public void load_identifier(string_view directory, IdentifierKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#140
-```
 
 ### Identifier
 
@@ -92,9 +65,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#140
 protected void Identifier()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#110
-```
 
 ### operator=
 
@@ -102,9 +72,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#110
 protected Identifier & operator=(Identifier && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#119
-```
 
 ### set_id
 
@@ -112,9 +79,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#119
 protected void set_id(const uuid & unique_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#157
-```
 
 ### set_name
 
@@ -122,9 +86,6 @@ Defined at /github/workspace/src/geode/basic/identifier.cpp#157
 protected void set_name(string_view name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/identifier.cpp#162
-```
 
 
 

@@ -1,8 +1,5 @@
 # struct ColocatedInfo
 
-```cpp
-Defined at ../../include/geode/geometry/nn_search.h#43
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public std::vector<Point<dimension> > unique_points
 public index_t nb_unique_points()
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/nn_search.h#45
-```
 
 ### nb_colocated_points
 
@@ -36,9 +30,6 @@ Defined at ../../include/geode/geometry/nn_search.h#45
 public index_t nb_colocated_points()
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/nn_search.h#49
-```
 
 
 

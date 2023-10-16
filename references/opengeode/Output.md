@@ -1,8 +1,5 @@
 # class Output
 
-```cpp
-Defined at ../../include/geode/basic/output.h#32
-```
 
 ```cpp
 Inherits from IOFile
@@ -24,9 +21,6 @@ public void write(const Object & object)
 public bool is_saveable(const Object & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/output.h#37
-```
 
 ### Output
 
@@ -34,9 +28,6 @@ Defined at ../../include/geode/basic/output.h#37
 protected void Output<Object>(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/output.h#43
-```
 
 
 

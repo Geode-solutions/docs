@@ -1,8 +1,5 @@
 # class Corners
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/corners.h#46
-```
 
  Storage class providing range loop to iterate on Corners
 
@@ -24,9 +21,6 @@ CornerRange
 public void Corners<>(const Corners<> & )
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/corners.h#48
-```
 
 ### operator=
 
@@ -34,9 +28,6 @@ Defined at ../../include/geode/model/mixin/core/corners.h#48
 public Corners<> & operator=(const Corners<> & )
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/corners.h#48
-```
 
 ### ~Corners
 
@@ -44,9 +35,6 @@ Defined at ../../include/geode/model/mixin/core/corners.h#48
 public void ~Corners<>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#58
-```
 
 ### nb_corners
 
@@ -54,9 +42,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#58
 public index_t nb_corners()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#77
-```
 
 ### has_corner
 
@@ -64,9 +49,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#77
 public bool has_corner(const uuid & id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#71
-```
 
 ### corner
 
@@ -74,9 +56,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#71
 public const Corner<dimension> & corner(const uuid & id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#83
-```
 
  Access to an unmodifiable Corner by its unique index
 
@@ -86,9 +65,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#83
 public CornerRange corners()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#152
-```
 
 ### save_corners
 
@@ -96,9 +72,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#152
 public void save_corners(string_view directory)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#97
-```
 
  Save each Corner in a file located in the specified directory
 
@@ -108,9 +81,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#97
 protected void Corners<>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#47
-```
 
 ### Corners
 
@@ -118,9 +88,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#47
 protected void Corners<>(Corners<> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#52
-```
 
 ### operator=
 
@@ -128,21 +95,12 @@ Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#52
 protected Corners<> & operator=(Corners<> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#63
-```
 
 
 
 # class Corners
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#353
-```
 
 # class Corners
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/corners.cpp#352
-```
 

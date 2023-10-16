@@ -1,8 +1,5 @@
 # struct PolygonsAroundVertexImpl
 
-```cpp
-Defined at ../../include/geode/mesh/core/private/surface_mesh_impl.h#34
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public bool vertex_is_on_border
 public void PolygonsAroundVertexImpl()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/private/surface_mesh_impl.h#36
-```
 
 ### PolygonsAroundVertexImpl
 
@@ -36,9 +30,6 @@ Defined at ../../include/geode/mesh/core/private/surface_mesh_impl.h#36
 public void PolygonsAroundVertexImpl(InlinedVector polygons_in, bool vertex_is_on_border_in)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/private/surface_mesh_impl.h#37
-```
 
 ### operator!=
 
@@ -46,9 +37,6 @@ Defined at ../../include/geode/mesh/core/private/surface_mesh_impl.h#37
 public bool operator!=(const PolygonsAroundVertexImpl & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/private/surface_mesh_impl.h#44
-```
 
 ### serialize
 
@@ -56,9 +44,6 @@ Defined at ../../include/geode/mesh/core/private/surface_mesh_impl.h#44
 public void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/private/surface_mesh_impl.h#55
-```
 
 
 

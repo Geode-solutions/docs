@@ -1,8 +1,5 @@
 # class ModelBoundaryRangeBase
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/model_boundaries.h#51
-```
 
 ## Members
 
@@ -27,9 +24,6 @@ Impl
 public void ~ModelBoundaryRangeBase()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#187
-```
 
 ### operator!=
 
@@ -37,9 +31,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#187
 public bool operator!=(const ModelBoundaryRangeBase & )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#193
-```
 
 ### operator++
 
@@ -47,9 +38,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#193
 public void operator++()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#200
-```
 
 ### ModelBoundaryRangeBase
 
@@ -57,9 +45,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#200
 protected void ModelBoundaryRangeBase(const ModelBoundaries<> & boundaries)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#166
-```
 
 ### ModelBoundaryRangeBase
 
@@ -67,9 +52,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#166
 protected void ModelBoundaryRangeBase(ModelBoundaryRangeBase && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#173
-```
 
 ### ModelBoundaryRangeBase
 
@@ -77,9 +59,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#173
 protected void ModelBoundaryRangeBase(const ModelBoundaryRangeBase & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/model_boundaries.cpp#180
-```
 
 
 

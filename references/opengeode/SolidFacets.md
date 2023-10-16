@@ -1,8 +1,5 @@
 # class SolidFacets
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_facets.h#41
-```
 
 ## Records
 
@@ -18,9 +15,6 @@ Impl
 public void SolidFacets<>(const SolidFacets<> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_facets.h#43
-```
 
 ### operator=
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/mesh/core/solid_facets.h#43
 public SolidFacets<> & operator=(const SolidFacets<> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_facets.h#43
-```
 
 ### SolidFacets
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/mesh/core/solid_facets.h#43
 public void SolidFacets<>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#163
-```
 
 ### SolidFacets
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#163
 public void SolidFacets<>(const SolidMesh<dimension> & solid)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#157
-```
 
 ### ~SolidFacets
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#157
 public void ~SolidFacets<>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#168
-```
 
 ### nb_facets
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#168
 public index_t nb_facets()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#248
-```
 
 ### is_facet_isolated
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#248
 public bool is_facet_isolated(index_t facet_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#173
-```
 
 ### facet_vertices
 
@@ -88,9 +64,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#173
 public const PolyhedronFacetVertices & facet_vertices(index_t facet_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#187
-```
 
  Return the indices of facet vertices.
 
@@ -102,9 +75,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#187
 public absl::optional<index_t> facet_from_vertices(const PolyhedronFacetVertices & vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#195
-```
 
  Get the index of facet corresponding to given vertices
 
@@ -116,9 +86,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#195
 public AttributeManager & facet_attribute_manager()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#254
-```
 
  Access to the manager of attributes associated with facets.
 
@@ -128,9 +95,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#254
 public int update_facet_vertices(Span old2new, SolidFacetsKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#202
-```
 
 ### update_facet_vertex
 
@@ -138,9 +102,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#202
 public void update_facet_vertex(PolyhedronFacetVertices facet_vertices, index_t facet_vertex_id, index_t new_vertex_id, SolidFacetsKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#209
-```
 
 ### remove_facet
 
@@ -148,9 +109,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#209
 public void remove_facet(PolyhedronFacetVertices facet_vertices, SolidFacetsKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#220
-```
 
 ### delete_facets
 
@@ -158,9 +116,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#220
 public int delete_facets(const int & to_delete, SolidFacetsKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#234
-```
 
 ### remove_isolated_facets
 
@@ -168,9 +123,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#234
 public int remove_isolated_facets(SolidFacetsKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#227
-```
 
 ### find_or_create_facet
 
@@ -178,9 +130,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#227
 public index_t find_or_create_facet(PolyhedronFacetVertices facet_vertices, SolidFacetsKey )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_facets.h#94
-```
 
 ### overwrite_facets
 
@@ -188,9 +137,6 @@ Defined at ../../include/geode/mesh/core/solid_facets.h#94
 public void overwrite_facets(const SolidFacets<dimension> & from, SolidFacetsKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_facets.cpp#241
-```
 
 ### delete_facets
 

@@ -1,8 +1,5 @@
 # class BoundaryCornerRange
 
-```cpp
-Defined at ../../include/geode/model/representation/core/brep.h#75
-```
 
 ```cpp
 Inherits from BoundaryRangeIterator
@@ -18,9 +15,6 @@ Inherits from BoundaryRangeIterator
 public void BoundaryCornerRange(const BRep & brep, const Line3D & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#88
-```
 
 ### BoundaryCornerRange
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#88
 public void BoundaryCornerRange(const BoundaryCornerRange & range)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#94
-```
 
 ### ~BoundaryCornerRange
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#94
 public void ~BoundaryCornerRange()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#100
-```
 
 ### begin
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#100
 public const BoundaryCornerRange & begin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#102
-```
 
 ### end
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#102
 public const BoundaryCornerRange & end()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#107
-```
 
 ### operator*
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#107
 public const Corner3D & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/brep.cpp#112
-```
 
 
 

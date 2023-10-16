@@ -1,8 +1,5 @@
 # struct MeshElement
 
-```cpp
-Defined at ../../include/geode/mesh/core/mesh_element.h#32
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public index_t element_id
 public void MeshElement(uuid mesh_id_in, index_t element_id_in)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/mesh_element.h#34
-```
 
 ### operator==
 
@@ -36,9 +30,6 @@ Defined at ../../include/geode/mesh/core/mesh_element.h#34
 public bool operator==(const MeshElement & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/mesh_element.h#39
-```
 
 ### operator!=
 
@@ -46,9 +37,6 @@ Defined at ../../include/geode/mesh/core/mesh_element.h#39
 public bool operator!=(const MeshElement & other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/mesh_element.h#44
-```
 
 ### serialize
 
@@ -56,9 +44,6 @@ Defined at ../../include/geode/mesh/core/mesh_element.h#44
 public void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/mesh_element.h#50
-```
 
 ### string
 
@@ -66,9 +51,6 @@ Defined at ../../include/geode/mesh/core/mesh_element.h#50
 public basic_string string()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/mesh_element.h#60
-```
 
 
 

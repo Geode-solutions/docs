@@ -1,8 +1,5 @@
 # class OpenGeodePolygonalSurfaceOutput
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_polygonal_surface_output.h#32
-```
 
 ```cpp
 Inherits from PolygonalSurfaceOutput<dimension>
@@ -18,9 +15,6 @@ Inherits from PolygonalSurfaceOutput<dimension>
 public void OpenGeodePolygonalSurfaceOutput<dimension>(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_polygonal_surface_output.h#32
-```
 
 ### write
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/mesh/io/geode/geode_polygonal_surface_output.h#32
 public void write(const PolygonalSurface<dimension> & mesh)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_polygonal_surface_output.h#32
-```
 
 
 

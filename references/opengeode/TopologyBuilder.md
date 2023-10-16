@@ -1,8 +1,5 @@
 # class TopologyBuilder
 
-```cpp
-Defined at ../../include/geode/model/mixin/builder/topology_builder.h#36
-```
 
  Class managing modification of Topology
 
@@ -22,9 +19,6 @@ Inherits from RelationshipsBuilder, VertexIdentifierBuilder
 protected void TopologyBuilder(Topology & topology)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/builder/topology_builder.h#40
-```
 
 
 

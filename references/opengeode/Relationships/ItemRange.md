@@ -1,8 +1,5 @@
 # class ItemRange
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#286
-```
 
 ```cpp
 Inherits from ItemRangeIterator
@@ -18,9 +15,6 @@ Inherits from ItemRangeIterator
 public void ItemRange(const Relationships & relationships, const uuid & component_id)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#289
-```
 
 ### begin
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/model/mixin/core/relationships.h#289
 public const ItemRange & begin()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#295
-```
 
 ### end
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/model/mixin/core/relationships.h#295
 public const ItemRange & end()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#300
-```
 
 
 

@@ -1,8 +1,5 @@
 # class InternalRange
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#202
-```
 
 ```cpp
 Inherits from InternalRangeIterator
@@ -18,9 +15,6 @@ Inherits from InternalRangeIterator
 public void InternalRange(const Relationships & relationships, const uuid & component_id)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#205
-```
 
 ### begin
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/model/mixin/core/relationships.h#205
 public const InternalRange & begin()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#211
-```
 
 ### end
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/model/mixin/core/relationships.h#211
 public const InternalRange & end()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#216
-```
 
 
 

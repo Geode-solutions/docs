@@ -1,8 +1,5 @@
 # class BitseryExtensions
 
-```cpp
-Defined at ../../include/geode/basic/bitsery_archive.h#70
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/basic/bitsery_archive.h#70
 public void register_functions(RegisterFunction serializer, RegisterFunction deserializer)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/bitsery_archive.cpp#66
-```
 
 ### register_serialize_pcontext
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/basic/bitsery_archive.cpp#66
 public void register_serialize_pcontext(PContext & context)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/bitsery_archive.cpp#73
-```
 
 ### register_deserialize_pcontext
 
@@ -32,9 +23,6 @@ Defined at /github/workspace/src/geode/basic/bitsery_archive.cpp#73
 public void register_deserialize_pcontext(PContext & context)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/bitsery_archive.cpp#81
-```
 
 
 

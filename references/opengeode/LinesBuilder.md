@@ -1,8 +1,5 @@
 # class LinesBuilder
 
-```cpp
-Defined at ../../include/geode/model/mixin/builder/lines_builder.h#45
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/model/mixin/builder/lines_builder.h#45
 public void load_lines(string_view directory)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#65
-```
 
 ### line_mesh_builder
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#65
 public std::unique_ptr<EdgedCurveBuilder<dimension> > line_mesh_builder(const uuid & id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#71
-```
 
  Get a pointer to the builder of a Line mesh
 
@@ -36,9 +27,6 @@ Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#71
 public void set_line_name(const uuid & id, string_view name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#80
-```
 
 ### LinesBuilder
 
@@ -46,9 +34,6 @@ Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#80
 protected void LinesBuilder<dimension>(Lines<dimension> & lines)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/builder/lines_builder.h#60
-```
 
 ### create_line
 
@@ -56,9 +41,6 @@ Defined at ../../include/geode/model/mixin/builder/lines_builder.h#60
 protected const uuid & create_line()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#34
-```
 
 ### create_line
 
@@ -66,9 +48,6 @@ Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#34
 protected const uuid & create_line(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#40
-```
 
 ### create_line
 
@@ -76,9 +55,6 @@ Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#40
 protected void create_line(uuid line_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#46
-```
 
 ### create_line
 
@@ -86,9 +62,6 @@ Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#46
 protected void create_line(uuid line_id, const MeshImpl & impl)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#52
-```
 
 ### delete_line
 
@@ -96,9 +69,6 @@ Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#52
 protected void delete_line(const Line<dimension> & line)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#59
-```
 
 ### set_line_mesh
 
@@ -106,9 +76,6 @@ Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#59
 protected void set_line_mesh(const uuid & id, std::unique_ptr<EdgedCurve<dimension> > mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#88
-```
 
 ### modifiable_line_mesh
 
@@ -116,21 +83,12 @@ Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#88
 protected EdgedCurve<dimension> & modifiable_line_mesh(const uuid & id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#96
-```
 
 
 
 # class LinesBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#105
-```
 
 # class LinesBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/builder/lines_builder.cpp#104
-```
 

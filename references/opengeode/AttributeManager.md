@@ -1,8 +1,5 @@
 # class AttributeManager
 
-```cpp
-Defined at ../../include/geode/basic/attribute_manager.h#44
-```
 
  This class manages all its associated Attributes. Each Attribute is registered and can be retrieved by a given name.
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/basic/attribute_manager.h#44
 public void AttributeManager(const AttributeManager & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute_manager.h#46
-```
 
 ### operator=
 
@@ -26,9 +20,6 @@ Defined at ../../include/geode/basic/attribute_manager.h#46
 public AttributeManager & operator=(const AttributeManager & )
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute_manager.h#46
-```
 
 ### AttributeManager
 
@@ -36,9 +27,6 @@ Defined at ../../include/geode/basic/attribute_manager.h#46
 public void AttributeManager()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#325
-```
 
 ### AttributeManager
 
@@ -46,9 +34,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#325
 public void AttributeManager(AttributeManager && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#326
-```
 
 ### ~AttributeManager
 
@@ -56,9 +41,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#326
 public void ~AttributeManager()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#330
-```
 
 ### find_generic_attribute
 
@@ -66,9 +48,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#330
 public shared_ptr find_generic_attribute(string_view name)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute_manager.h#60
-```
 
  Recover the non-typed/generic Attribute from the attribute name. This can be used when attribute type is not known in a context.
 
@@ -82,9 +61,6 @@ Defined at ../../include/geode/basic/attribute_manager.h#60
 public std::shared_ptr<ReadOnlyAttribute<T> > find_attribute(string_view name)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute_manager.h#73
-```
 
  Recover the typed Attribute from the attribute name
 
@@ -100,9 +76,6 @@ Defined at ../../include/geode/basic/attribute_manager.h#73
 public std::shared_ptr<Attribute<T> > find_or_create_attribute(string_view name, T default_value, AttributeProperties properties)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute_manager.h#104
-```
 
  Recover or create the attribute from the manager and the attribute name. If the recovered Attribute is not a of the same type than the attribute, it replaces it by the Attribute corresponding to the attribute.
 
@@ -124,9 +97,6 @@ Defined at ../../include/geode/basic/attribute_manager.h#104
 public std::shared_ptr<Attribute<T> > find_or_create_attribute(string_view name, T default_value)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute_manager.h#128
-```
 
 ### resize
 
@@ -134,9 +104,6 @@ Defined at ../../include/geode/basic/attribute_manager.h#128
 public void resize(index_t size)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#344
-```
 
  Resize all the attributes to the given size
 
@@ -148,9 +115,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#344
 public void reserve(index_t capacity)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#349
-```
 
  Reserve all the attributes to the given capacity
 
@@ -162,9 +126,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#349
 public void assign_attribute_value(index_t from_element, index_t to_element)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#364
-```
 
  Assign attribute value from other value in the same attribute
 
@@ -180,9 +141,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#364
 public void interpolate_attribute_value(const AttributeLinearInterpolation & interpolation, index_t to_element)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#370
-```
 
  Interpolate attribute value from other values in the same attribute
 
@@ -198,9 +156,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#370
 public bool has_assignable_attributes()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#354
-```
 
 ### has_interpolable_attributes
 
@@ -208,9 +163,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#354
 public bool has_interpolable_attributes()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#359
-```
 
 ### attribute_names
 
@@ -218,9 +170,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#359
 public absl::FixedArray<absl::string_view> attribute_names()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#376
-```
 
  Get all the associated attribute names
 
@@ -230,9 +179,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#376
 public bool attribute_exists(string_view name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#382
-```
 
  Return true if an attribute matching the given name.
 
@@ -244,9 +190,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#382
 public void delete_attribute(string_view name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#387
-```
 
  Delete the attribute matching the given name. Do nothing if the name does not exist.
 
@@ -258,9 +201,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#387
 public string_view attribute_type(string_view name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#392
-```
 
  Get the typeid name of the attribute type
 
@@ -272,9 +212,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#392
 public void rename_attribute(string_view old_name, string_view new_name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#449
-```
 
 ### set_attribute_properties
 
@@ -282,9 +219,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#449
 public void set_attribute_properties(string_view attribute_name, const AttributeProperties & new_properties)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#455
-```
 
 ### clear
 
@@ -292,9 +226,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#455
 public void clear()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#398
-```
 
  Remove all the attributes in the manager
 
@@ -304,9 +235,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#398
 public void clear_attributes()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#403
-```
 
  Clear all the attribute content. This is equivalent to calling resize( 0 ).
 
@@ -316,9 +244,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#403
 public void delete_elements(const std::vector<bool> & to_delete)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#408
-```
 
  Delete a set of attribute elements.
 
@@ -334,9 +259,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#408
 public void permute_elements(Span permutation)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#421
-```
 
  Permute attribute elements.
 
@@ -352,9 +274,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#421
 public index_t nb_elements()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#427
-```
 
  Get the number of elements in each attribute
 
@@ -364,9 +283,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#427
 public void copy(const AttributeManager & attribute_manager)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#432
-```
 
 ### import
 
@@ -374,9 +290,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#432
 public void import(const AttributeManager & attribute_manager, Span old2new)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#437
-```
 
 ### import
 
@@ -384,9 +297,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#437
 public void import(const AttributeManager & attribute_manager, const GenericMapping<index_t> & old2new_mapping)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#443
-```
 
 ### register_attribute_type
 
@@ -394,9 +304,6 @@ Defined at /github/workspace/src/geode/basic/attribute_manager.cpp#443
 public void register_attribute_type(PContext & context, string_view name)
 ```
 
-```cpp
-Defined at ../../include/geode/basic/attribute_manager.h#240
-```
 
 ### delete_elements
 

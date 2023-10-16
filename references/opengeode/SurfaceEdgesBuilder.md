@@ -1,8 +1,5 @@
 # class SurfaceEdgesBuilder
 
-```cpp
-Defined at ../../include/geode/mesh/builder/surface_edges_builder.h#43
-```
 
  Interface class to represent the builder of a SurfaceEdges
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/mesh/builder/surface_edges_builder.h#43
 public void SurfaceEdgesBuilder<dimension>(SurfaceEdges<dimension> & edges)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#30
-```
 
 ### delete_isolated_edges
 
@@ -26,9 +20,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#30
 public int delete_isolated_edges()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#37
-```
 
  Delete all the isolated edges (not used as polygon edges)
 
@@ -40,9 +31,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#37
 public index_t find_or_create_edge(std::array<index_t, 2> edge_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#88
-```
 
 ### delete_edges
 
@@ -56,9 +44,6 @@ public int delete_edges(const int & to_delete)
 public void remove_edge(std::array<index_t, 2> edge_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#81
-```
 
 ### update_edge_vertices
 
@@ -66,9 +51,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#81
 public void update_edge_vertices(Span old2new)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#44
-```
 
 ### update_edge_vertex
 
@@ -76,9 +58,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#44
 public void update_edge_vertex(std::array<index_t, 2> edge_vertices, index_t edge_vertex_id, index_t new_vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#51
-```
 
 ### copy
 
@@ -86,9 +65,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#51
 public void copy(const SurfaceEdges<dimension> & edges)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#71
-```
 
 ### delete_edges
 
@@ -96,21 +72,12 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#71
 public vector delete_edges(const std::vector<bool> & to_delete)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#64
-```
 
 
 
 # class SurfaceEdgesBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#95
-```
 
 # class SurfaceEdgesBuilder
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_edges_builder.cpp#96
-```
 

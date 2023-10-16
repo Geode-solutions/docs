@@ -1,8 +1,5 @@
 # class Vector
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#37
-```
 
  Description of a vector in the given dimension with double coordinates
 
@@ -22,9 +19,6 @@ Inherits from Point<dimension>
 public void Vector<dimension>()
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#40
-```
 
 ### Vector
 
@@ -32,9 +26,6 @@ Defined at ../../include/geode/geometry/vector.h#40
 public void Vector<dimension>(const Point<dimension> & vector)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#42
-```
 
 ### Vector
 
@@ -42,9 +33,6 @@ Defined at ../../include/geode/geometry/vector.h#42
 public void Vector<dimension>(std::array<double, dimension> values)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#47
-```
 
 ### Vector
 
@@ -52,9 +40,6 @@ Defined at ../../include/geode/geometry/vector.h#47
 public void Vector<dimension>(const Point<dimension> & from, const Point<dimension> & to)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#52
-```
 
 ### length2
 
@@ -62,9 +47,6 @@ Defined at ../../include/geode/geometry/vector.h#52
 public double length2()
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#57
-```
 
 ### length
 
@@ -72,9 +54,6 @@ Defined at ../../include/geode/geometry/vector.h#57
 public double length()
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#62
-```
 
 ### operator*
 
@@ -82,9 +61,6 @@ Defined at ../../include/geode/geometry/vector.h#62
 public Vector operator*(double multiplier)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#67
-```
 
 ### operator/
 
@@ -92,9 +68,6 @@ Defined at ../../include/geode/geometry/vector.h#67
 public Vector operator/(double divider)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#72
-```
 
 ### operator+
 
@@ -102,9 +75,6 @@ Defined at ../../include/geode/geometry/vector.h#72
 public Vector operator+(const Vector<dimension> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#77
-```
 
 ### operator-
 
@@ -112,9 +82,6 @@ Defined at ../../include/geode/geometry/vector.h#77
 public Vector operator-(const Vector<dimension> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#82
-```
 
 ### operator*=
 
@@ -122,9 +89,6 @@ Defined at ../../include/geode/geometry/vector.h#82
 public void operator*=(double multiplier)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#87
-```
 
 ### operator/=
 
@@ -132,9 +96,6 @@ Defined at ../../include/geode/geometry/vector.h#87
 public void operator/=(double divider)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#92
-```
 
 ### operator+=
 
@@ -142,9 +103,6 @@ Defined at ../../include/geode/geometry/vector.h#92
 public void operator+=(const Vector<dimension> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#97
-```
 
 ### operator-=
 
@@ -152,9 +110,6 @@ Defined at ../../include/geode/geometry/vector.h#97
 public void operator-=(const Vector<dimension> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#102
-```
 
 ### normalize
 
@@ -162,9 +117,6 @@ Defined at ../../include/geode/geometry/vector.h#102
 public Vector normalize()
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#107
-```
 
 ### dot
 
@@ -172,9 +124,6 @@ Defined at ../../include/geode/geometry/vector.h#107
 public double dot(const Vector<dimension> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#112
-```
 
 ### cross
 
@@ -182,9 +131,6 @@ Defined at ../../include/geode/geometry/vector.h#112
 public Vector cross(const Vector<dimension> & other)
 ```
 
-```cpp
-Defined at ../../include/geode/geometry/vector.h#122
-```
 
 
 

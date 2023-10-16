@@ -1,8 +1,5 @@
 # class OpenGeodeGraphBuilder
 
-```cpp
-Defined at ../../include/geode/mesh/builder/geode/geode_graph_builder.h#42
-```
 
  Implementation class for GraphBuilder using OpenGeode data structure
 
@@ -22,9 +19,6 @@ Inherits from GraphBuilder
 public void OpenGeodeGraphBuilder(VertexSet & vertex_set, MeshBuilderFactoryKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/geode/geode_graph_builder.cpp#31
-```
 
 ### OpenGeodeGraphBuilder
 
@@ -32,9 +26,6 @@ Defined at /github/workspace/src/geode/mesh/builder/geode/geode_graph_builder.cp
 public void OpenGeodeGraphBuilder(OpenGeodeGraph & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/geode/geode_graph_builder.cpp#37
-```
 
 
 

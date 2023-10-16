@@ -1,8 +1,5 @@
 # class RelationRangeIterator
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/relationships.h#57
-```
 
  Range to iterate on all relations of one component
 
@@ -22,9 +19,6 @@ Impl
 public void RelationRangeIterator(const Relationships & relationships, const uuid & component_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#483
-```
 
 ### RelationRangeIterator
 
@@ -32,9 +26,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#483
 public void RelationRangeIterator(RelationRangeIterator && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#491
-```
 
 ### RelationRangeIterator
 
@@ -42,9 +33,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#491
 public void RelationRangeIterator(const RelationRangeIterator & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#497
-```
 
 ### ~RelationRangeIterator
 
@@ -52,9 +40,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#497
 public void ~RelationRangeIterator()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#503
-```
 
 ### operator!=
 
@@ -62,9 +47,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#503
 public bool operator!=(const RelationRangeIterator & )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#505
-```
 
 ### operator++
 
@@ -72,9 +54,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#505
 public void operator++()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#511
-```
 
 ### operator*
 
@@ -82,9 +61,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#511
 public const ComponentID & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/relationships.cpp#516
-```
 
 
 

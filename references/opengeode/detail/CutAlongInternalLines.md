@@ -4,9 +4,6 @@
 
 # class CutAlongInternalLines
 
-```cpp
-Defined at ../../include/geode/model/helpers/detail/cut_along_internal_lines.h#41
-```
 
 ## Functions
 
@@ -16,9 +13,6 @@ Defined at ../../include/geode/model/helpers/detail/cut_along_internal_lines.h#4
 public void CutAlongInternalLines<Model>(Model & model)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_lines.cpp#266
-```
 
 ### CutAlongInternalLines
 
@@ -26,9 +20,6 @@ Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_l
 public void CutAlongInternalLines<Model>(const Model & model, typename Model::Builder & builder)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_lines.cpp#272
-```
 
 ### ~CutAlongInternalLines
 
@@ -36,9 +27,6 @@ Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_l
 public void ~CutAlongInternalLines<Model>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_lines.cpp#279
-```
 
 ### cut_all_surfaces
 
@@ -46,9 +34,6 @@ Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_l
 public vector cut_all_surfaces()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_lines.cpp#284
-```
 
 ### cut_surface
 
@@ -56,9 +41,6 @@ Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_l
 public vector cut_surface(const Surface<Model::dim> & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/helpers/detail/cut_along_internal_lines.cpp#291
-```
 
 
 

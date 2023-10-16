@@ -1,8 +1,5 @@
 # struct BlockPolyhedraFacetVertices
 
-```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#104
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public optional opposite_polyhedron_facet
 public index_t nb_facets()
 ```
 
-```cpp
-Defined at ../../include/geode/model/helpers/component_mesh_polygons.h#106
-```
 
 
 

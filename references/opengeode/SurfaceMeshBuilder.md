@@ -2,9 +2,6 @@
 
 # class SurfaceMeshBuilder
 
-```cpp
-Defined at ../../include/geode/mesh/builder/surface_mesh_builder.h#50
-```
 
  Interface class to represent the builder of a SurfaceMesh
 
@@ -24,9 +21,6 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<dimensi
 public void ~SurfaceMeshBuilder<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#313
-```
 
 ### create
 
@@ -44,9 +38,6 @@ public int create(SurfaceMesh<dimension> & mesh)
 public SurfaceEdgesBuilder<dimension> edges_builder()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#632
-```
 
 ### create_point
 
@@ -54,9 +45,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#632
 public index_t create_point(Point<dimension> point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#696
-```
 
  Create a new point with associated coordinates.
 
@@ -70,9 +58,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#696
 public index_t create_polygon(Span vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#327
-```
 
  Create a new polygon from vertices.
 
@@ -86,9 +71,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#327
 public void set_polygon_vertex(const PolygonVertex & polygon_vertex, index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#403
-```
 
  Modify a polygon vertex.
 
@@ -102,9 +84,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#403
 public void replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#380
-```
 
  Replace old polygon vertices from a given vertex to another.
 
@@ -118,9 +97,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#380
 public void set_polygon_adjacent(const PolygonEdge & polygon_edge, index_t adjacent_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#509
-```
 
  Set a polygon adjacent through an edge.
 
@@ -134,9 +110,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#509
 public void unset_polygon_adjacent(const PolygonEdge & polygon_edge)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#524
-```
 
  Unset a polygon adjacency through an edge.
 
@@ -148,9 +121,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#524
 public void compute_polygon_adjacencies()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#536
-```
 
  Compute all the adjacencies between the surface polygons
 
@@ -160,9 +130,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#536
 public void compute_polygon_adjacencies(Span polygons_to_connect)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#545
-```
 
  Compute the adjacencies between the given surface polygons
 
@@ -174,9 +141,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#545
 public int delete_polygons(const int & to_delete)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#639
-```
 
  Delete a set of surface polygons
 
@@ -190,9 +154,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#639
 public int permute_polygons(Span permutation)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#671
-```
 
  Permute polygons to match the given order.
 
@@ -206,9 +167,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#671
 public int delete_isolated_vertices()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#684
-```
 
  Delete all the isolated vertices (not used as polygon vertices)
 
@@ -220,9 +178,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#684
 public void associate_polygon_vertex_to_vertex(const PolygonVertex & polygon_vertex, index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#358
-```
 
  Set a polygon vertex to a given vertex.
 
@@ -236,9 +191,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#358
 public void disassociate_polygon_vertex_to_vertex(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#372
-```
 
 Unset polygon vertex information to a given vertex.
 
@@ -250,9 +202,6 @@ Unset polygon vertex information to a given vertex.
 public void reset_polygons_around_vertex(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#351
-```
 
 ### copy
 
@@ -260,9 +209,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#351
 public void copy(const SurfaceMesh<dimension> & surface_mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#732
-```
 
 ### SurfaceMeshBuilder
 
@@ -270,9 +216,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#732
 protected void SurfaceMeshBuilder<dimension>(SurfaceMesh<dimension> & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#304
-```
 
 ### delete_polygons
 
@@ -292,9 +235,6 @@ public std::vector<index_t> delete_polygons(const std::vector<bool> & to_delete)
 public int create(SurfaceMesh<dimension> & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#318
-```
 
 ### do_delete_vertices
 
@@ -302,9 +242,6 @@ Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#318
 public void do_delete_vertices(const int & to_delete, Span old2new)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/builder/surface_mesh_builder.cpp#483
-```
 
 
 

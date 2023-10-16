@@ -10,9 +10,6 @@
 
 # class VertexMerger
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/vertex_merger.h#36
-```
 
 ## Records
 
@@ -28,9 +25,6 @@ VertexOrigin
 public index_t vertex_in_merged(index_t mesh, index_t vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#190
-```
 
 ### vertex_origins
 
@@ -38,9 +32,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#190
 public const VertexOrigins & vertex_origins(index_t vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#197
-```
 
 ### VertexMerger
 
@@ -48,9 +39,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#197
 protected void VertexMerger<Mesh>(absl::Span<const std::reference_wrapper<const Mesh> > meshes, double epsilon)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#177
-```
 
 ### ~VertexMerger
 
@@ -58,9 +46,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#177
 protected void ~VertexMerger<Mesh>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#185
-```
 
 ### meshes
 
@@ -68,9 +53,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#185
 protected absl::Span<const std::reference_wrapper<const Mesh> > meshes()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#204
-```
 
 ### mesh
 
@@ -78,9 +60,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#204
 protected const Mesh & mesh()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#211
-```
 
 ### steal_mesh
 
@@ -88,9 +67,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#211
 protected std::unique_ptr<Mesh> steal_mesh()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#217
-```
 
 ### builder
 
@@ -98,9 +74,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#217
 protected Builder & builder()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#223
-```
 
 ### create_points
 
@@ -108,9 +81,6 @@ Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#223
 protected void create_points()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/helpers/detail/vertex_merger.cpp#229
-```
 
 
 

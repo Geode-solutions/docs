@@ -1,8 +1,5 @@
 # class TriangulatedSurface
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#92
-```
 
 ```cpp
 Inherits from SurfaceMesh<3U>
@@ -12,9 +9,6 @@ Inherits from SurfaceMesh<3U>
 
 # class TriangulatedSurface
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#91
-```
 
 ```cpp
 Inherits from SurfaceMesh<2U>
@@ -24,9 +18,6 @@ Inherits from SurfaceMesh<2U>
 
 # class TriangulatedSurface
 
-```cpp
-Defined at ../../include/geode/mesh/core/triangulated_surface.h#42
-```
 
  Interface class for Surface of arbitrary dimension made up with triangles only.
 
@@ -46,9 +37,6 @@ Inherits from SurfaceMesh<dimension>
 public std::unique_ptr<TriangulatedSurface<dimension> > create()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#35
-```
 
  Create a new TriangulatedSurface using default data structure.
 
@@ -58,9 +46,6 @@ Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#35
 public std::unique_ptr<TriangulatedSurface<dimension> > create(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#44
-```
 
  Create a new TriangulatedSurface using a specified data structure.
 
@@ -72,9 +57,6 @@ Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#44
 public NamedType type_name_static()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#52
-```
 
 ### clone
 
@@ -82,9 +64,6 @@ Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#52
 public std::unique_ptr<TriangulatedSurface<dimension> > clone()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#59
-```
 
 ### triangle
 
@@ -92,9 +71,6 @@ Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#59
 public Triangle<dimension> triangle(index_t triangle_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#70
-```
 
 ### TriangulatedSurface
 
@@ -102,9 +78,6 @@ Defined at /github/workspace/src/geode/mesh/core/triangulated_surface.cpp#70
 protected void TriangulatedSurface<dimension>()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/triangulated_surface.h#67
-```
 
 ### TriangulatedSurface
 
@@ -112,9 +85,6 @@ Defined at ../../include/geode/mesh/core/triangulated_surface.h#67
 protected void TriangulatedSurface<dimension>(TriangulatedSurface<dimension> && other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/triangulated_surface.h#68
-```
 
 ### operator=
 
@@ -122,9 +92,6 @@ Defined at ../../include/geode/mesh/core/triangulated_surface.h#68
 protected TriangulatedSurface<dimension> & operator=(TriangulatedSurface<dimension> && other)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/triangulated_surface.h#69
-```
 
 
 

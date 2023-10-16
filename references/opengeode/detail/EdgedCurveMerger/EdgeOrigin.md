@@ -1,8 +1,5 @@
 # struct EdgeOrigin
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/curve_merger.h#47
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public index_t edge
 public void EdgeOrigin(index_t curve_in, index_t edge_in)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/helpers/detail/curve_merger.h#49
-```
 
 
 

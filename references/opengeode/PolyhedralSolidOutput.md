@@ -1,8 +1,5 @@
 # class PolyhedralSolidOutput
 
-```cpp
-Defined at ../../include/geode/mesh/io/polyhedral_solid_output.h#52
-```
 
 ```cpp
 Inherits from Output<PolyhedralSolid<dimension> >
@@ -18,9 +15,6 @@ Inherits from Output<PolyhedralSolid<dimension> >
 protected void PolyhedralSolidOutput<dimension>(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/polyhedral_solid_output.h#57
-```
 
 
 

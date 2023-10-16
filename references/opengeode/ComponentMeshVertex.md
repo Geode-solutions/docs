@@ -1,8 +1,5 @@
 # struct ComponentMeshVertex
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/vertex_identifier.h#22
-```
 
  Identify a vertex in a geometric component
 
@@ -30,9 +27,6 @@ public index_t vertex
 public void ComponentMeshVertex(ComponentID component_id_in, index_t vertex_id_in)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#33
-```
 
 ### ~ComponentMeshVertex
 
@@ -40,9 +34,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#33
 public void ~ComponentMeshVertex()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#44
-```
 
 ### mesh_vertex
 
@@ -50,9 +41,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#44
 public MeshVertex mesh_vertex()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#46
-```
 
 ### operator==
 
@@ -60,9 +48,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#46
 public bool operator==(const ComponentMeshVertex & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#51
-```
 
 ### serialize
 
@@ -70,9 +55,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#51
 public void serialize(Archive & archive)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#58
-```
 
 ### string
 
@@ -80,9 +62,6 @@ Defined at /github/workspace/src/geode/model/mixin/core/vertex_identifier.cpp#58
 public basic_string string()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/vertex_identifier.h#36
-```
 
 
 

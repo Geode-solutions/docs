@@ -1,8 +1,5 @@
 # class BoundaryLineRange
 
-```cpp
-Defined at ../../include/geode/model/representation/core/section.h#90
-```
 
 ```cpp
 Inherits from BoundaryRangeIterator
@@ -18,9 +15,6 @@ Inherits from BoundaryRangeIterator
 public void BoundaryLineRange(const Section & section, const Surface2D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#125
-```
 
 ### BoundaryLineRange
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#125
 public void BoundaryLineRange(const BoundaryLineRange & range)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#132
-```
 
 ### ~BoundaryLineRange
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#132
 public void ~BoundaryLineRange()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#139
-```
 
 ### begin
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#139
 public const BoundaryLineRange & begin()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#141
-```
 
 ### end
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#141
 public const BoundaryLineRange & end()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#146
-```
 
 ### operator*
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/model/representation/core/section.cpp#146
 public const Line2D & operator*()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/model/representation/core/section.cpp#151
-```
 
 
 

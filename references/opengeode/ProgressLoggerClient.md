@@ -1,8 +1,5 @@
 # class ProgressLoggerClient
 
-```cpp
-Defined at ../../include/geode/basic/progress_logger_client.h#37
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/basic/progress_logger_client.h#37
 public void ~ProgressLoggerClient()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/progress_logger_client.h#40
-```
 
 ### start
 
@@ -46,9 +40,6 @@ public void failed(const uuid & progress_logger_id)
 protected void ProgressLoggerClient()
 ```
 
-```cpp
-Defined at ../../include/geode/basic/progress_logger_client.h#55
-```
 
 
 

@@ -1,8 +1,5 @@
 # class ConsoleLoggerClient
 
-```cpp
-Defined at ../../include/geode/basic/console_logger_client.h#32
-```
 
 ```cpp
 Inherits from LoggerClient
@@ -18,9 +15,6 @@ Inherits from LoggerClient
 public void ConsoleLoggerClient()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/console_logger_client.cpp#79
-```
 
 ### ~ConsoleLoggerClient
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/basic/console_logger_client.cpp#79
 public void ~ConsoleLoggerClient()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/basic/console_logger_client.cpp#81
-```
 
 
 

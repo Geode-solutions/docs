@@ -1,8 +1,5 @@
 # class OpenGeodeRegularGridInput
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_regular_grid_input.h#33
-```
 
 ```cpp
 Inherits from RegularGridInput<dimension>
@@ -18,9 +15,6 @@ Inherits from RegularGridInput<dimension>
 public void OpenGeodeRegularGridInput<dimension>(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_regular_grid_input.h#33
-```
 
 ### read
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/mesh/io/geode/geode_regular_grid_input.h#33
 public std::unique_ptr<RegularGrid<dimension> > read(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/io/geode/geode_regular_grid_input.h#33
-```
 
 
 

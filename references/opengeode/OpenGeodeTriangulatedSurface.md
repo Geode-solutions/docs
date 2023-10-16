@@ -2,9 +2,6 @@
 
 # class OpenGeodeTriangulatedSurface
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#43
-```
 
 ```cpp
 Inherits from TriangulatedSurface<dimension>
@@ -26,9 +23,6 @@ Impl
 public void OpenGeodeTriangulatedSurface<dimension>(const OpenGeodeTriangulatedSurface<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#45
-```
 
 ### operator=
 
@@ -36,9 +30,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#45
 public OpenGeodeTriangulatedSurface<dimension> & operator=(const OpenGeodeTriangulatedSurface<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#45
-```
 
 ### OpenGeodeTriangulatedSurface
 
@@ -46,9 +37,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#45
 public void OpenGeodeTriangulatedSurface<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surface.cpp#134
-```
 
 ### OpenGeodeTriangulatedSurface
 
@@ -56,9 +44,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surfac
 public void OpenGeodeTriangulatedSurface<dimension>(OpenGeodeTriangulatedSurface<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surface.cpp#140
-```
 
 ### operator=
 
@@ -66,9 +51,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surfac
 public OpenGeodeTriangulatedSurface<dimension> & operator=(OpenGeodeTriangulatedSurface<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surface.cpp#148
-```
 
 ### ~OpenGeodeTriangulatedSurface
 
@@ -76,9 +58,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surfac
 public void ~OpenGeodeTriangulatedSurface<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surface.cpp#158
-```
 
 ### impl_name_static
 
@@ -86,9 +65,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surfac
 public NamedType impl_name_static()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#59
-```
 
 ### impl_name
 
@@ -96,9 +72,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#59
 public NamedType impl_name()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#65
-```
 
 ### type_name
 
@@ -106,9 +79,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#65
 public NamedType type_name()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#70
-```
 
 ### native_extension_static
 
@@ -116,9 +86,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#70
 public string_view native_extension_static()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#75
-```
 
 ### native_extension
 
@@ -126,9 +93,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#75
 public string_view native_extension()
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#82
-```
 
 ### set_vertex
 
@@ -136,9 +100,6 @@ Defined at ../../include/geode/mesh/core/geode/geode_triangulated_surface.h#82
 public void set_vertex(index_t vertex_id, Point<dimension> point, OGTriangulatedSurfaceKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surface.cpp#164
-```
 
 ### set_polygon_vertex
 
@@ -146,9 +107,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surfac
 public void set_polygon_vertex(const PolygonVertex & polygon_vertex, index_t vertex_id, OGTriangulatedSurfaceKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surface.cpp#207
-```
 
 ### set_polygon_adjacent
 
@@ -156,9 +114,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surfac
 public void set_polygon_adjacent(const PolygonEdge & polygon_edge, index_t adjacent_id, OGTriangulatedSurfaceKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surface.cpp#223
-```
 
 ### add_triangle
 
@@ -166,9 +121,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surfac
 public void add_triangle(const std::array<index_t, 3> & vertices, OGTriangulatedSurfaceKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surface.cpp#216
-```
 
 ### get_polygon_adjacent
 
@@ -176,9 +128,6 @@ Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surfac
 public absl::optional<index_t> get_polygon_adjacent(const PolygonEdge & polygon_edge)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/geode/geode_triangulated_surface.cpp#178
-```
 
 
 

@@ -1,8 +1,5 @@
 # class SolidMesh
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#227
-```
 
  This class represents a 3D Solid made up with polyhedra and provides mesh functionnalities.
 
@@ -28,9 +25,6 @@ Impl
 public void SolidMesh<dimension>(const SolidMesh<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#230
-```
 
 ### operator=
 
@@ -38,9 +32,6 @@ Defined at ../../include/geode/mesh/core/solid_mesh.h#230
 public SolidMesh<dimension> & operator=(const SolidMesh<dimension> & )
 ```
 
-```cpp
-Defined at ../../include/geode/mesh/core/solid_mesh.h#230
-```
 
 ### create
 
@@ -66,9 +57,6 @@ public std::unique_ptr<SolidMesh<dimension> > create(const MeshImpl & impl)
 public std::unique_ptr<SolidMesh<dimension> > clone()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1497
-```
 
 ### ~SolidMesh
 
@@ -76,9 +64,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1497
 public void ~SolidMesh<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#629
-```
 
 ### nb_polyhedra
 
@@ -86,9 +71,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#629
 public index_t nb_polyhedra()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#834
-```
 
 ### is_vertex_isolated
 
@@ -96,9 +78,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#834
 public bool is_vertex_isolated(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#840
-```
 
 ### nb_polyhedron_vertices
 
@@ -106,9 +85,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#840
 public local_index_t nb_polyhedron_vertices(index_t polyhedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1208
-```
 
  Return the number of vertices in a polyhedron.
 
@@ -118,9 +94,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1208
 public local_index_t nb_polyhedron_facets(index_t polyhedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1216
-```
 
  Return the number of facets in a polyhedron.
 
@@ -130,9 +103,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1216
 public local_index_t nb_polyhedron_facet_vertices(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1269
-```
 
  Return the number of vertices in polyhedron facet.
 
@@ -144,9 +114,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1269
 public index_t polyhedron_vertex(const PolyhedronVertex & polyhedron_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#657
-```
 
  Return the index in the mesh of a local vertex in a polyhedron.
 
@@ -158,9 +125,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#657
 public PolyhedronVertices polyhedron_vertices(index_t polyhedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#667
-```
 
  Return all the indices in the mesh of polyhedron vertices.
 
@@ -172,9 +136,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#667
 public absl::optional<local_index_t> vertex_in_polyhedron(index_t polyhedron_id, index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#680
-```
 
  Return the local index in the polyhedron of a vertex in the mesh.
 
@@ -190,9 +151,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#680
 public index_t polyhedron_facet_vertex(const PolyhedronFacetVertex & polyhedron_facet_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1224
-```
 
  Return the index in the mesh of a given polyhedron facet vertex.
 
@@ -204,9 +162,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1224
 public PolyhedronVertex polyhedron_facet_vertex_id(const PolyhedronFacetVertex & polyhedron_facet_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#731
-```
 
 ### polyhedron_facet_edge_vertices
 
@@ -214,9 +169,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#731
 public std::array<index_t, 2> polyhedron_facet_edge_vertices(const PolyhedronFacetEdge & polyhedron_facet_edge)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1241
-```
 
  Return the indices in the mesh of the two polyhedron edge vertices.
 
@@ -228,9 +180,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1241
 public absl::optional<PolyhedronFacetEdge> polyhedron_facet_edge_from_vertices(const std::array<index_t, 2> & edge_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#913
-```
 
 ### polyhedron_facet_edge_from_vertices
 
@@ -238,9 +187,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#913
 public absl::optional<PolyhedronFacetEdge> polyhedron_facet_edge_from_vertices(const std::array<index_t, 2> & edge_vertices, index_t polyhedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#874
-```
 
 ### polyhedron_edges_vertices
 
@@ -248,9 +194,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#874
 public PolyhedronEdgesVertices polyhedron_edges_vertices(index_t polyhedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1106
-```
 
 ### polyhedron_facet_from_vertices
 
@@ -258,9 +201,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1106
 public absl::optional<PolyhedronFacet> polyhedron_facet_from_vertices(PolyhedronFacetVertices polyhedron_facet_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#847
-```
 
 ### polyhedron_facet_vertices
 
@@ -268,9 +208,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#847
 public PolyhedronFacetVertices polyhedron_facet_vertices(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#738
-```
 
 ### polyhedron_facets_vertices
 
@@ -278,9 +215,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#738
 public PolyhedronFacetsVertices polyhedron_facets_vertices(index_t polyhedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1127
-```
 
 ### polyhedron_vertex_facets
 
@@ -288,9 +222,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1127
 public PolyhedronFacets polyhedron_vertex_facets(const PolyhedronVertex & polyhedron_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1149
-```
 
 ### polyhedron_adjacent
 
@@ -298,9 +229,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1149
 public absl::optional<index_t> polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1279
-```
 
  Return the index of the polyhedron adjacent through a facet.
 
@@ -314,9 +242,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1279
 public absl::optional<PolyhedronFacet> polyhedron_adjacent_facet(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1289
-```
 
  Return the index of the facet of the adjacent polyhedron through which polyhedra are adjacent.
 
@@ -330,9 +255,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1289
 public bool is_polyhedron_facet_on_border(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1337
-```
 
  Return true if the facet is on border, i.e. if the polyhedron has no adjacent through the specified facet.
 
@@ -344,9 +266,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1337
 public bool is_polyhedron_on_border(index_t polyhedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1344
-```
 
  Return true if at least one polyhedron facet is on border
 
@@ -360,9 +279,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1344
 public bool is_edge_in_polyhedron_facet(const PolyhedronFacet & polyhedron_facet, const std::array<index_t, 2> & edge_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#970
-```
 
  Return true if the edge belongs to the facet
 
@@ -376,9 +292,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#970
 public PolyhedronFacetsOnBorder polyhedron_facets_on_border(index_t polyhedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1351
-```
 
  Return all the facets of a polyhedron that are on border
 
@@ -390,9 +303,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1351
 public double edge_length(const std::array<index_t, 2> & edge_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#648
-```
 
  Return the length of a given edge.
 
@@ -404,9 +314,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#648
 public Point<dimension> polyhedron_barycenter(index_t polyhedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#696
-```
 
  Return the barycenter of a polyhedron
 
@@ -418,9 +325,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#696
 public Point<dimension> facet_barycenter(const PolyhedronFacetVertices & facet_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#710
-```
 
  Return the barycenter coordinates of a given facet.
 
@@ -432,9 +336,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#710
 public Point<dimension> edge_barycenter(const std::array<index_t, 2> & edge_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#722
-```
 
  Return the coordinates of the barycenter of a given edge.
 
@@ -446,9 +347,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#722
 public double polyhedron_volume(index_t polyhedron_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#752
-```
 
  Return the volume of a given polyhedron.
 
@@ -460,9 +358,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#752
 public Vector3D polyhedron_facet_normal(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#786
-```
 
  Return the normal of a given PolyhedronFacet.
 
@@ -474,9 +369,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#786
 public absl::optional<Vector3D> new_polyhedron_facet_normal(const PolyhedronFacet & polyhedron_facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#803
-```
 
  Return the normal of a given PolyhedronFacet.
 
@@ -488,9 +380,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#803
 public const PolyhedraAroundVertex & polyhedra_around_vertex(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#960
-```
 
  Get all the polyhedra with one of the vertices matching given vertex.
 
@@ -504,9 +393,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#960
 public const PolyhedraAroundVertex & polyhedra_around_vertex(const PolyhedronVertex & polyhedron_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#951
-```
 
  Get all the polyhedra with one of the vertices matching given polyhedron vertex.
 
@@ -520,9 +406,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#951
 public bool is_vertex_on_border(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1015
-```
 
  Return true if at least one of the polyhedron facets around the vertex is on border.
 
@@ -536,9 +419,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1015
 public bool is_edge_on_border(const std::array<index_t, 2> & vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1022
-```
 
  Return true if at least one of the polyhedron facets around the edge is on border
 
@@ -550,9 +430,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1022
 public bool is_edge_on_border(const std::array<index_t, 2> & vertices, index_t first_polyhedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1034
-```
 
  Return true if at least one of the polyhedron facets around the edges is on border
 
@@ -566,9 +443,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1034
 public PolyhedraAroundEdge polyhedra_around_edge(const std::array<index_t, 2> & vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1055
-```
 
  Get all the polyhedra with both edge vertices.
 
@@ -582,9 +456,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1055
 public PolyhedraAroundEdge polyhedra_around_edge(const PolyhedronFacetEdge & edge)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1067
-```
 
  Get all the polyhedra around the edge.
 
@@ -598,9 +469,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1067
 public absl::optional<index_t> polyhedron_around_edge(const std::array<index_t, 2> & vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1099
-```
 
  Get one polyhedron with both edge vertices.
 
@@ -614,9 +482,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1099
 public PolyhedraAroundEdge polyhedra_around_edge(const std::array<index_t, 2> & vertices, index_t first_polyhedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1075
-```
 
  Get all the polyhedra with both edge vertices.
 
@@ -632,9 +497,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1075
 public PolyhedraAroundFacet polyhedra_from_facet_vertices(PolyhedronFacetVertices facet_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#931
-```
 
  Return all polyhedra facets made with the given facet vertices.
 
@@ -646,9 +508,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#931
 public std::array<local_index_t, 2> edge_vertices_in_polyhedron(index_t polyhedron_id, const std::array<index_t, 2> & edge_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1369
-```
 
  Get the local indices in the polyhedra of both edge vertices.
 
@@ -664,9 +523,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1369
 public bool are_edges_enabled()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1399
-```
 
 ### enable_edges
 
@@ -674,9 +530,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1399
 public void enable_edges()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1405
-```
 
 ### disable_edges
 
@@ -684,9 +537,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1405
 public void disable_edges()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1418
-```
 
 ### edges
 
@@ -694,9 +544,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1418
 public const SolidEdges<dimension> & edges()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1424
-```
 
 ### are_facets_enabled
 
@@ -704,9 +551,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1424
 public bool are_facets_enabled()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1436
-```
 
 ### enable_facets
 
@@ -714,9 +558,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1436
 public void enable_facets()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1442
-```
 
 ### disable_facets
 
@@ -724,9 +565,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1442
 public void disable_facets()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1455
-```
 
 ### facets
 
@@ -734,9 +572,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1455
 public const SolidFacets<dimension> & facets()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1461
-```
 
 ### polyhedron_attribute_manager
 
@@ -744,9 +579,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1461
 public AttributeManager & polyhedron_attribute_manager()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1392
-```
 
  Access to the manager of attributes associated with polyhedra.
 
@@ -756,9 +588,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1392
 public TextureManager3D texture_manager()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1518
-```
 
 ### bounding_box
 
@@ -766,9 +595,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1518
 public BoundingBox<dimension> bounding_box()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1507
-```
 
  Compute the bounding box from mesh vertices
 
@@ -778,9 +604,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1507
 public absl::optional<PolyhedronVertex> polyhedron_around_vertex(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1174
-```
 
  Return one polyhedron with one of the vertices matching given vertex.
 
@@ -792,9 +615,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1174
 public void associate_polyhedron_vertex_to_vertex(const PolyhedronVertex & polyhedron_vertex, index_t vertex_id, SolidMeshKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1191
-```
 
 ### reset_polyhedra_around_vertex
 
@@ -802,9 +622,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1191
 public void reset_polyhedra_around_vertex(index_t vertex_id, SolidMeshKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1201
-```
 
 ### edges
 
@@ -812,9 +629,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1201
 public SolidEdges<dimension> & edges(SolidMeshKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1430
-```
 
 ### copy_edges
 
@@ -822,9 +636,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1430
 public void copy_edges(const SolidMesh<dimension> & solid, SolidMeshKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1411
-```
 
 ### facets
 
@@ -832,9 +643,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1411
 public SolidFacets<dimension> & facets(SolidMeshKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1467
-```
 
 ### copy_facets
 
@@ -842,9 +650,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1467
 public void copy_facets(const SolidMesh<dimension> & solid, SolidMeshKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1448
-```
 
 ### SolidMesh
 
@@ -852,9 +657,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1448
 protected void SolidMesh<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#605
-```
 
 ### SolidMesh
 
@@ -862,9 +664,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#605
 protected void SolidMesh<dimension>(SolidMesh<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#610
-```
 
 ### operator=
 
@@ -872,9 +671,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#610
 protected SolidMesh<dimension> & operator=(SolidMesh<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#618
-```
 
 ### create
 
@@ -882,9 +678,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#618
 public int create()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#634
-```
 
 ### create
 
@@ -892,9 +685,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#634
 public int create(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#641
-```
 
 ### get_polyhedron_around_vertex
 
@@ -902,9 +692,6 @@ Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#641
 public absl::optional<PolyhedronVertex> get_polyhedron_around_vertex(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/mesh/core/solid_mesh.cpp#1183
-```
 
 ### polyhedron_facet_from_vertices
 

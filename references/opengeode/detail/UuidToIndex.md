@@ -1,8 +1,5 @@
 # class UuidToIndex
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#37
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#37
 public index_t nb_mappings()
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#40
-```
 
 ### index
 
@@ -22,9 +16,6 @@ Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#40
 public optional index(const uuid & id)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#45
-```
 
 ### erase
 
@@ -32,9 +23,6 @@ Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#45
 public void erase(const uuid & id)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#55
-```
 
 ### erase
 
@@ -42,9 +30,6 @@ Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#55
 public void erase(index_t index)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#60
-```
 
 ### set_new_mapping
 
@@ -52,9 +37,6 @@ Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#60
 public void set_new_mapping(const uuid & id, const index_t index)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#72
-```
 
 ### update
 
@@ -62,9 +44,6 @@ Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#72
 public void update(Span old2new)
 ```
 
-```cpp
-Defined at ../../include/geode/model/mixin/core/detail/uuid_to_index.h#77
-```
 
 
 
