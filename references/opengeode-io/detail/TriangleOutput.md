@@ -1,10 +1,11 @@
 # class TriangleOutput
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/triangle_output.h#38
+```
 
 ```cpp
-```cpp
 Inherits from TriangulatedSurfaceOutput<2>
-```
 ```
 
 
@@ -14,29 +15,32 @@ Inherits from TriangulatedSurfaceOutput<2>
 ### TriangleOutput
 
 ```cpp
-```cpp
 public void TriangleOutput(string_view filename)
 ```
-```
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/triangle_output.h#41
+```
 
 ### extension
 
 ```cpp
-```cpp
 public string_view extension()
 ```
-```
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/triangle_output.h#46
+```
 
 ### write
 
 ```cpp
-```cpp
 public void write(const TriangulatedSurface2D & surface)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/io/mesh/triangle_output.cpp#96
+```
 
 
 

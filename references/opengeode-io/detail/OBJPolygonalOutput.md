@@ -1,10 +1,11 @@
 # class OBJPolygonalOutput
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/obj_polygonal_output.h#38
+```
 
 ```cpp
-```cpp
 Inherits from PolygonalSurfaceOutput<3>
-```
 ```
 
 
@@ -14,29 +15,32 @@ Inherits from PolygonalSurfaceOutput<3>
 ### OBJPolygonalOutput
 
 ```cpp
-```cpp
 public void OBJPolygonalOutput(string_view filename)
 ```
-```
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/obj_polygonal_output.h#41
+```
 
 ### extension
 
 ```cpp
-```cpp
 public string_view extension()
 ```
-```
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/obj_polygonal_output.h#46
+```
 
 ### write
 
 ```cpp
-```cpp
 public void write(const PolygonalSurface3D & surface)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/io/mesh/obj_polygonal_output.cpp#34
+```
 
 
 

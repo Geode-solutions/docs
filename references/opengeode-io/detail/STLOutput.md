@@ -1,10 +1,11 @@
 # class STLOutput
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/stl_output.h#38
+```
 
 ```cpp
-```cpp
 Inherits from TriangulatedSurfaceOutput<3>
-```
 ```
 
 
@@ -14,29 +15,32 @@ Inherits from TriangulatedSurfaceOutput<3>
 ### STLOutput
 
 ```cpp
-```cpp
 public void STLOutput(string_view filename)
 ```
-```
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/stl_output.h#41
+```
 
 ### extension
 
 ```cpp
-```cpp
 public string_view extension()
 ```
-```
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/stl_output.h#46
+```
 
 ### write
 
 ```cpp
-```cpp
 public void write(const TriangulatedSurface3D & surface)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/io/mesh/stl_output.cpp#34
+```
 
 
 

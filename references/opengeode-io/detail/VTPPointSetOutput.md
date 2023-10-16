@@ -1,10 +1,11 @@
 # class VTPPointSetOutput
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/vtp_point_set_output.h#33
+```
 
 ```cpp
-```cpp
 Inherits from PointSetOutput<dimension>
-```
 ```
 
 
@@ -14,29 +15,32 @@ Inherits from PointSetOutput<dimension>
 ### VTPPointSetOutput
 
 ```cpp
-```cpp
 public void VTPPointSetOutput<dimension>(string_view filename)
 ```
-```
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/vtp_point_set_output.h#36
+```
 
 ### extension
 
 ```cpp
-```cpp
 public string_view extension()
 ```
-```
 
+```cpp
+Defined at ../../include/geode/io/mesh/private/vtp_point_set_output.h#41
+```
 
 ### write
 
 ```cpp
-```cpp
 public void write(const PointSet<dimension> & point_set)
 ```
-```
 
+```cpp
+Defined at /github/workspace/src/geode/io/mesh/vtp_point_set_output.cpp#95
+```
 
 
 
