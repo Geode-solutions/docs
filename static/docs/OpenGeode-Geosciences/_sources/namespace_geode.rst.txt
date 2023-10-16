@@ -336,6 +336,11 @@ Overview
 		absl::string_view filename
 		);
 
+	bool opengeode_geosciences_explicit_api :target:`is_cross_section_saveable<doxid-namespacegeode_1a357718ec2dc4dea156a16002b763f503>`(
+		const :ref:`CrossSection<doxid-classgeode_1_1_cross_section>`& cross_section,
+		absl::string_view filename
+		);
+
 	:ref:`StructuralModel<doxid-classgeode_1_1_structural_model>` opengeode_geosciences_explicit_api :ref:`load_structural_model<doxid-namespacegeode_1a97cf55105e7f5eb56f411bf5ace110d0>`(absl::string_view filename);
 	StructuralModelInput::MissingFiles opengeode_geosciences_explicit_api :target:`check_structural_model_missing_files<doxid-namespacegeode_1ab0f72968bc95e0fbc045871ea195e15b>`(absl::string_view filename);
 
