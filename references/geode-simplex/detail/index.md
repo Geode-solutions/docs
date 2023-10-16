@@ -8,6 +8,7 @@
 * [BRepSurfaceRelaxer](BRepSurfaceRelaxer.md)
 * [BlockSampler](BlockSampler.md)
 * [BlockTetgenMesher](BlockTetgenMesher.md)
+* [Edge](Edge.md)
 * [FillRemaining](FillRemaining.md)
 * [FrontalRemesher2D](FrontalRemesher2D.md)
 * [FrontalRemesher3D](FrontalRemesher3D.md)
@@ -34,6 +35,7 @@
 * [SurfaceInserter](SurfaceInserter.md)
 * [SurfaceRelaxer](SurfaceRelaxer.md)
 * [SurfaceRemesher](SurfaceRemesher.md)
+* [SurfaceSampler3D](SurfaceSampler3D.md)
 * [TetgenMesher](TetgenMesher.md)
 * [Triangle](Triangle.md)
 * [VertexOrigin](VertexOrigin.md)
@@ -216,7 +218,7 @@ Defined at /github/workspace/src/geode/simplex/section/detail/remesh.cpp#44
 ### remesh_surface
 
 ```cpp
-RemeshedSurface2D remesh_surface(const TriangulatedSurface2D & background_mesh, TriangulatedSurfaceBuilder2D & background_builder, TriangulatedSurfaceEpsilonModifier2D & background_modifier, const Metric2D & metric, absl::Span<const index_t> lock_vertices)
+RemeshedSurface2D remesh_surface(const TriangulatedSurface2D & background_mesh, TriangulatedSurfaceBuilder2D & background_builder, TriangulatedSurfaceEpsilonModifier2D & background_modifier, const Metric2D & metric, Span lock_vertices)
 ```
 
 ```cpp

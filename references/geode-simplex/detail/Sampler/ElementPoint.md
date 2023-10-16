@@ -1,7 +1,7 @@
 # struct ElementPoint
 
 ```cpp
-Defined at ../../include/geode/simplex/private/core/private/sampler.h#32
+Defined at ../../include/geode/simplex/private/core/private/sampler.h#35
 ```
 
 ## Members
@@ -27,7 +27,7 @@ public void ElementPoint(Point3D point_in)
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/core/private/sampler.h#34
+Defined at ../../include/geode/simplex/private/core/private/sampler.h#37
 ```
 
 ### ElementPoint
@@ -37,7 +37,7 @@ public void ElementPoint(index_t element_in, Point3D point_in)
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/core/private/sampler.h#39
+Defined at ../../include/geode/simplex/private/core/private/sampler.h#42
 ```
 
 

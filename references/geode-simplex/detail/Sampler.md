@@ -1,7 +1,7 @@
 # class Sampler
 
 ```cpp
-Defined at ../../include/geode/simplex/private/core/private/sampler.h#24
+Defined at ../../include/geode/simplex/private/core/private/sampler.h#27
 ```
 
 ## Records
@@ -19,7 +19,7 @@ public void ~Sampler<Element>()
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/core/private/sampler.h#49
+Defined at ../../include/geode/simplex/private/core/private/sampler.h#52
 ```
 
 ### sample
@@ -29,7 +29,7 @@ public int sample()
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/core/private/sampler.h#51
+Defined at ../../include/geode/simplex/private/core/private/sampler.h#54
 ```
 
 ### Sampler
@@ -39,7 +39,7 @@ protected void Sampler<Element>(const Metric3D & metric)
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/core/private/sampler.h#66
+Defined at ../../include/geode/simplex/private/core/private/sampler.h#69
 ```
 
 ### add_point_to_cells
@@ -49,7 +49,7 @@ protected void add_point_to_cells(const Point3D & point)
 ```
 
 ```cpp
-Defined at ../../include/geode/simplex/private/core/private/sampler.h#68
+Defined at ../../include/geode/simplex/private/core/private/sampler.h#71
 ```
 
 

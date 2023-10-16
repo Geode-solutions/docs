@@ -181,7 +181,7 @@ flat_hash_map sample_surfaces(BRepSamplingData & data)
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/sample.cpp#243
+Defined at /github/workspace/src/geode/simplex/private/surface/3d/sample.cpp#150
 ```
 
 ### sample_surfaces
@@ -191,7 +191,7 @@ flat_hash_map sample_surfaces(BRepSamplingData & data, BRepSamplingData::Tasks &
 ```
 
 ```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/sample.cpp#255
+Defined at /github/workspace/src/geode/simplex/private/surface/3d/sample.cpp#162
 ```
 
 ### repair_lines
