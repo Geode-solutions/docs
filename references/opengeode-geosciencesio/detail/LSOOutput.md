@@ -1,8 +1,5 @@
 # class LSOOutput
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/lso_output.h#33
-```
 
 ```cpp
 Inherits from StructuralModelOutput
@@ -18,9 +15,6 @@ Inherits from StructuralModelOutput
 public void LSOOutput(string_view filename)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/lso_output.h#36
-```
 
 ### extension
 
@@ -28,9 +22,6 @@ Defined at ../include/geode/geosciences_io/model/private/lso_output.h#36
 public string_view extension()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/lso_output.h#41
-```
 
 ### write
 
@@ -38,9 +29,13 @@ Defined at ../include/geode/geosciences_io/model/private/lso_output.h#41
 public void write(const StructuralModel & structural_model)
 ```
 
+
+### is_saveable
+
 ```cpp
-Defined at /github/workspace/src/geode/geosciences_io/model/lso_output.cpp#268
+public bool is_saveable(const StructuralModel & structural_model)
 ```
+
 
 
 

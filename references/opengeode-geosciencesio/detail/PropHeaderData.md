@@ -1,8 +1,5 @@
 # struct PropHeaderData
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#62
-```
 
 ## Members
 
@@ -56,9 +53,6 @@ public int units
 public bool empty()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#75
-```
 
 
 

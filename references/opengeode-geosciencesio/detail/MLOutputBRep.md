@@ -1,8 +1,5 @@
 # class MLOutputBRep
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_brep.h#33
-```
 
 ```cpp
 Inherits from BRepOutput
@@ -18,9 +15,6 @@ Inherits from BRepOutput
 public void MLOutputBRep(string_view filename)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_brep.h#36
-```
 
 ### extension
 
@@ -28,9 +22,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_brep.h#36
 public string_view extension()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_brep.h#40
-```
 
 ### write
 
@@ -38,9 +29,13 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_brep.h#40
 public void write(const BRep & brep)
 ```
 
+
+### is_saveable
+
 ```cpp
-Defined at /github/workspace/src/geode/geosciences_io/model/ml_output_brep.cpp#85
+public bool is_saveable(const BRep & brep)
 ```
+
 
 
 

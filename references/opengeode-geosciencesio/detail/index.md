@@ -39,9 +39,6 @@
 HeaderData read_header(std::ifstream & file)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#205
-```
 
 ### read_name
 
@@ -49,9 +46,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#205
 basic_string read_name(absl::Span<const absl::string_view> tokens)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#468
-```
 
 ### write_header
 
@@ -59,9 +53,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#468
 void write_header(std::ofstream & file, const HeaderData & data)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#229
-```
 
 ### read_CRS
 
@@ -69,9 +60,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#229
 CRSData read_CRS(std::ifstream & file)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#236
-```
 
 ### write_CRS
 
@@ -79,9 +67,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#236
 void write_CRS(std::ofstream & file, const CRSData & data)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#262
-```
 
 ### read_prop_header
 
@@ -89,9 +74,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#262
 PropHeaderData read_prop_header(std::ifstream & file, string_view prefix)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#275
-```
 
 ### read_properties
 
@@ -99,9 +81,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#275
 void read_properties(const PropHeaderData & properties_header, int & attribute_values, absl::Span<const absl::string_view> tokens, geode::index_t line_properties_position)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#323
-```
 
 ### create_attributes
 
@@ -109,9 +88,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#323
 void create_attributes(const PropHeaderData & attributes_header, int attributes_values, geode::AttributeManager & attribute_manager, geode::index_t nb_vertices, absl::Span<const geode::index_t> inverse_vertex_mapping)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#347
-```
 
 ### write_prop_header
 
@@ -119,9 +95,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#347
 void write_prop_header(std::ofstream & file, const PropHeaderData & data)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#401
-```
 
 ### write_property_class_header
 
@@ -129,9 +102,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#401
 void write_property_class_header(std::ofstream & file, const PropClassHeaderData & data)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#454
-```
 
 ### read_tsurf
 
@@ -139,9 +109,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#454
 absl::optional<TSurfData> read_tsurf(std::ifstream & file)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#475
-```
 
 ### determine_surface_to_regions_sides
 
@@ -149,9 +116,6 @@ Defined at /github/workspace/src/geode/geosciences_io/mesh/gocad_common.cpp#475
 RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/model/gocad_common.cpp#251
-```
 
 ### clone_with_model_boundaries
 
@@ -159,9 +123,6 @@ Defined at /github/workspace/src/geode/geosciences_io/model/gocad_common.cpp#251
 Model clone_with_model_boundaries(const Model & model)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#52
-```
 
 ### check_brep_polygons
 
@@ -169,9 +130,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#52
 bool check_brep_polygons(const BRep & brep)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#61
-```
 
 ### get_one_border_edge
 
@@ -179,9 +137,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#61
 absl::optional<PolygonEdge> get_one_border_edge(const SurfaceMesh3D & mesh)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#77
-```
 
 
 

@@ -1,8 +1,5 @@
 # struct PropClassHeaderData
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#99
-```
 
 ## Members
 

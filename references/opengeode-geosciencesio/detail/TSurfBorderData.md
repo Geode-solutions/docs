@@ -1,8 +1,5 @@
 # struct TSurfBorderData
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#109
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public index_t next_id
 public void TSurfBorderData(index_t corner_id_in, index_t next_id_in)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#111
-```
 
 
 

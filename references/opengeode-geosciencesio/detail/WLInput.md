@@ -1,8 +1,5 @@
 # class WLInput
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/wl_input.h#40
-```
 
 ```cpp
 Inherits from EdgedCurveInput<3>
@@ -18,9 +15,6 @@ Inherits from EdgedCurveInput<3>
 public void WLInput(string_view filename)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/wl_input.h#43
-```
 
 ### extension
 
@@ -28,9 +22,6 @@ Defined at ../include/geode/geosciences_io/mesh/private/wl_input.h#43
 public string_view extension()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/wl_input.h#48
-```
 
 ### read
 
@@ -38,9 +29,6 @@ Defined at ../include/geode/geosciences_io/mesh/private/wl_input.h#48
 public std::unique_ptr<EdgedCurve3D> read(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/wl_input.cpp#119
-```
 
 
 

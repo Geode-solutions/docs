@@ -1,8 +1,5 @@
 # struct RegionSurfaceSide
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/gocad_common.h#39
-```
 
 ## Members
 

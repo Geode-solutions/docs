@@ -1,8 +1,5 @@
 # class MLOutputImpl
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#94
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#94
 public void ~MLOutputImpl<Model>()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#101
-```
 
 ### write_file
 
@@ -22,9 +16,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#101
 public void write_file()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#103
-```
 
 ### MLOutputImpl
 
@@ -32,9 +23,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#103
 protected void MLOutputImpl<Model>(string_view filename, const Model & model)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#115
-```
 
 ### component_id
 
@@ -42,9 +30,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#115
 protected index_t & component_id()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#124
-```
 
 ### components
 
@@ -52,9 +37,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#124
 protected int & components()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#129
-```
 
 ### file
 
@@ -62,9 +44,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#129
 protected std::ofstream & file()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#134
-```
 
 ### write_key_triangle
 
@@ -72,9 +51,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#134
 protected void write_key_triangle(const Component & component)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#140
-```
 
 ### write_geological_tsurfs
 
@@ -94,9 +70,6 @@ protected int unclassified_tsurfs()
 protected void write_tsurfs()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#156
-```
 
 ### write_geological_tfaces
 
@@ -110,9 +83,6 @@ protected void write_geological_tfaces()
 protected void write_tfaces()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#174
-```
 
 ### write_universe
 
@@ -120,9 +90,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#174
 protected void write_universe()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#207
-```
 
 ### write_regions
 
@@ -130,9 +97,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#207
 protected void write_regions()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#235
-```
 
 ### write_geological_regions
 
@@ -146,9 +110,6 @@ protected void write_geological_regions()
 protected void write_model_components()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#283
-```
 
 ### write_surface
 
@@ -156,9 +117,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#283
 protected index_t write_surface(const Surface3D & surface, const index_t current_offset)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#291
-```
 
 ### process_surface_edge
 
@@ -166,9 +124,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#291
 protected void process_surface_edge(const Surface3D & surface, const PolygonEdge & edge, const index_t current_offset, int & line_starts)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#313
-```
 
 ### add_corners_and_line_starts
 
@@ -176,9 +131,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#313
 protected void add_corners_and_line_starts(const Surface3D & surface, const index_t current_offset, int & line_starts)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#334
-```
 
 ### find_boundary_corners_and_line_starts
 
@@ -186,9 +138,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#334
 protected void find_boundary_corners_and_line_starts(const ModelBoundary3D & surface_collection, int & line_starts)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#357
-```
 
 ### find_corners_and_line_starts
 
@@ -196,9 +145,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#357
 protected void find_corners_and_line_starts(const ItemRange & item_range, int & line_starts)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#372
-```
 
 ### find_corners_and_line_starts_for_unclassified_surface
 
@@ -206,9 +152,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#372
 protected int find_corners_and_line_starts_for_unclassified_surface(const uuid & surface_id)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#384
-```
 
 ### write_corners
 
@@ -216,9 +159,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#384
 protected void write_corners(absl::Span<const std::array<index_t, 2> > line_starts)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#395
-```
 
 ### write_line_starts
 
@@ -226,9 +166,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#395
 protected void write_line_starts(index_t current_offset, absl::Span<const std::array<index_t, 2> > line_starts)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#404
-```
 
 ### write_geological_model_surfaces
 
@@ -242,9 +179,6 @@ protected void write_geological_model_surfaces()
 protected void write_model_surfaces()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#416
-```
 
 ### component_name
 
@@ -252,9 +186,6 @@ Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#416
 protected basic_string component_name(const Component & component)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/model/private/ml_output_impl.h#468
-```
 
 
 

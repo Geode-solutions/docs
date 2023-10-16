@@ -1,8 +1,5 @@
 # class VOInput
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/vo_input.h#40
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../include/geode/geosciences_io/mesh/private/vo_input.h#40
 public void VOInput(string_view filename)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/vo_input.h#43
-```
 
 ### extension
 
@@ -22,9 +16,6 @@ Defined at ../include/geode/geosciences_io/mesh/private/vo_input.h#43
 public string_view extension()
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/vo_input.h#48
-```
 
 ### read
 
@@ -32,9 +23,6 @@ Defined at ../include/geode/geosciences_io/mesh/private/vo_input.h#48
 public std::unique_ptr<RegularGrid3D> read(const MeshImpl & impl)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/geosciences_io/mesh/vo_input.cpp#187
-```
 
 
 

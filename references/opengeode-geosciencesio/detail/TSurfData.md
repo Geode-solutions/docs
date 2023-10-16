@@ -1,8 +1,5 @@
 # struct TSurfData
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#119
-```
 
 ## Members
 
@@ -71,9 +68,6 @@ public int vertices_attribute_values
 public index_t tface_id(index_t vertex_id)
 ```
 
-```cpp
-Defined at ../include/geode/geosciences_io/mesh/private/gocad_common.h#121
-```
 
 
 
