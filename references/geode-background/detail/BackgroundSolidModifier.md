@@ -1,8 +1,5 @@
 # class BackgroundSolidModifier
 
-```cpp
-Defined at ../include/geode/background/solid/private/background_solid_modifier.h#24
-```
 
 ```cpp
 Inherits from BackgroundSolidBuilder, TetrahedralSolidModifier
@@ -18,9 +15,6 @@ Inherits from BackgroundSolidBuilder, TetrahedralSolidModifier
 public void BackgroundSolidModifier(BackgroundSolid & mesh)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#178
-```
 
 ### ~BackgroundSolidModifier
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public void ~BackgroundSolidModifier()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#187
-```
 
 ### split_tetrahedron
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public SolidSplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#191
-```
 
 ### split_facet
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public SolidSplitInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#198
-```
 
 ### split_edge
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public SolidSplitEdgeInfo split_edge(index_t edge_id, const Point3D & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#205
-```
 
 ### split_edge
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public SolidSplitEdgeInfo split_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#212
-```
 
 ### collapse_edge
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public SolidCollapseEdgeInfo collapse_edge(index_t edge_id, const Point3D & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#219
-```
 
 ### collapse_edge
 
@@ -88,9 +64,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public SolidCollapseEdgeInfo collapse_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#226
-```
 
 ### swap_facet
 
@@ -98,9 +71,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public SolidSwapFacetInfo swap_facet(const PolyhedronFacet & facet)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#233
-```
 
 ### swap_edge
 
@@ -108,9 +78,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public SolidSwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#239
-```
 
 ### set_updated_vertex
 
@@ -118,9 +85,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public void set_updated_vertex(const VertexMultiMapping & mapping)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#251
-```
 
 ### clean_background_solid
 
@@ -128,9 +92,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_modifie
 public void clean_background_solid()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_modifier.cpp#246
-```
 
 
 

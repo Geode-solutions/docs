@@ -1,8 +1,5 @@
 # class BackgroundSolidBuilder
 
-```cpp
-Defined at ../include/geode/background/solid/private/background_solid_builder.h#25
-```
 
 ```cpp
 Inherits from MacroInfoBuilder3D
@@ -18,9 +15,6 @@ Inherits from MacroInfoBuilder3D
 public void BackgroundSolidBuilder(VertexSet & vertex_set, MeshBuilderFactoryKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_builder.cpp#16
-```
 
 ### BackgroundSolidBuilder
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_builder
 public void BackgroundSolidBuilder(BackgroundSolid & background)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_builder.cpp#23
-```
 
 ### ~BackgroundSolidBuilder
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_builder
 public void ~BackgroundSolidBuilder()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_builder.cpp#32
-```
 
 ### copy
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_builder
 public void copy(const BackgroundSolid & source)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_builder.cpp#36
-```
 
 
 

@@ -1,8 +1,5 @@
 # class MacroEdgeSolidPathFinder
 
-```cpp
-Defined at ../include/geode/background/solid/private/macro_edge_path_finder.h#26
-```
 
 ```cpp
 Inherits from SolidPathFinder

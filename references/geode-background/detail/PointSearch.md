@@ -4,9 +4,6 @@
 
 # class PointSearch
 
-```cpp
-Defined at ../include/geode/background/common/private/point_search.h#31
-```
 
 ## Records
 
@@ -22,9 +19,6 @@ Impl
 public void ~PointSearch<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/common/point_search.cpp#70
-```
 
 ### vertex_search
 
@@ -32,9 +26,6 @@ Defined at /github/workspace/src/geode/background/common/point_search.cpp#70
 public const NNSearch<dimension> & vertex_search()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/common/point_search.cpp#75
-```
 
 ### element_search
 
@@ -42,9 +33,6 @@ Defined at /github/workspace/src/geode/background/common/point_search.cpp#75
 public const NNSearch<dimension> & element_search()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/common/point_search.cpp#82
-```
 
 ### mesh_points
 
@@ -52,9 +40,6 @@ Defined at /github/workspace/src/geode/background/common/point_search.cpp#82
 public int mesh_points(const Mesh & mesh)
 ```
 
-```cpp
-Defined at ../include/geode/background/common/private/point_search.h#43
-```
 
 ### mesh_element_barycenters
 
@@ -62,9 +47,6 @@ Defined at ../include/geode/background/common/private/point_search.h#43
 public int mesh_element_barycenters(const Mesh & mesh)
 ```
 
-```cpp
-Defined at ../include/geode/background/common/private/point_search.h#56
-```
 
 ### build_vertex_tree
 
@@ -72,9 +54,6 @@ Defined at ../include/geode/background/common/private/point_search.h#56
 public void build_vertex_tree(int points, PointSearchKey )
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/common/point_search.cpp#89
-```
 
 ### PointSearch
 
@@ -82,9 +61,6 @@ Defined at /github/workspace/src/geode/background/common/point_search.cpp#89
 protected void PointSearch<dimension>(int points, int element_barycenters)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/common/point_search.cpp#55
-```
 
 ### PointSearch
 
@@ -92,9 +68,6 @@ Defined at /github/workspace/src/geode/background/common/point_search.cpp#55
 protected void PointSearch<dimension>(PointSearch<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/common/point_search.cpp#63
-```
 
 ### mesh_points
 
@@ -102,9 +75,6 @@ Defined at /github/workspace/src/geode/background/common/point_search.cpp#63
 public std::vector<Point<Mesh::dim> > mesh_points(const Mesh & mesh)
 ```
 
-```cpp
-Defined at ../include/geode/background/common/private/point_search.h#43
-```
 
 ### mesh_element_barycenters
 
@@ -112,9 +82,6 @@ Defined at ../include/geode/background/common/private/point_search.h#43
 public std::vector<Point<Mesh::dim> > mesh_element_barycenters(const Mesh & mesh)
 ```
 
-```cpp
-Defined at ../include/geode/background/common/private/point_search.h#56
-```
 
 ### build_vertex_tree
 

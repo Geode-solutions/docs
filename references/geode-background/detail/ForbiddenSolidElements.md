@@ -1,8 +1,5 @@
 # struct ForbiddenSolidElements
 
-```cpp
-Defined at ../include/geode/background/solid/private/background_solid_repairer.h#29
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public int facets
 public bool is_edge_forbidden(const EdgeVertices & edge, const VerticesModifier & vertices_modifier)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_repairer.cpp#3452
-```
 
 ### is_facet_forbidden
 
@@ -42,9 +36,6 @@ public bool is_facet_forbidden(const int & facet, const VerticesModifier & verti
 public bool is_facet_forbidden(const FacetVertices & facet, const VerticesModifier & vertices_modifier)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_repairer.cpp#3475
-```
 
 
 

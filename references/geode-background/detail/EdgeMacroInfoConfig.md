@@ -1,8 +1,5 @@
 # struct EdgeMacroInfoConfig
 
-```cpp
-Defined at ../include/geode/background/common/private/macro_info.h#38
-```
 
 ## Members
 

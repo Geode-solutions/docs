@@ -1,8 +1,5 @@
 # class BackgroundSolidOptimizer
 
-```cpp
-Defined at ../include/geode/background/solid/private/background_solid_optimizer.h#26
-```
 
 ## Records
 
@@ -18,9 +15,6 @@ Impl
 public void BackgroundSolidOptimizer(const BackgroundSolid & background, BackgroundSolidModifier & modifier)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3441
-```
 
 ### ~BackgroundSolidOptimizer
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_optimiz
 public void ~BackgroundSolidOptimizer()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3448
-```
 
 ### optimize_background_elements
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_optimiz
 public void optimize_background_elements()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3452
-```
 
 ### optimize_background_elements
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_optimiz
 public void optimize_background_elements(index_t first_element)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3457
-```
 
 ### optimize_background_elements
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/background/solid/background_solid_optimiz
 public void optimize_background_elements(index_t first_element, Span immuable_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/solid/background_solid_optimizer.cpp#3463
-```
 
 
 

@@ -1,8 +1,5 @@
 # struct ForbiddenSurfaceElements
 
-```cpp
-Defined at ../include/geode/background/surface/private/background_surface_repairer.h#28
-```
 
 ## Members
 
@@ -21,9 +18,6 @@ public vector edges
 public bool is_edge_forbidden(const EdgeVertices & edge, const VerticesModifier & vertices_modifier)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/background/surface/background_surface_repairer.cpp#905
-```
 
 
 
