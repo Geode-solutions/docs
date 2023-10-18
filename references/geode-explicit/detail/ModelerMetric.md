@@ -2,9 +2,6 @@
 
 # class ModelerMetric
 
-```cpp
-Defined at ../include/geode/explicit/common/private/grid_info.h#39
-```
 
 ## Records
 
@@ -20,9 +17,6 @@ Impl
 public void ModelerMetric<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#196
-```
 
 ### ~ModelerMetric
 
@@ -30,9 +24,6 @@ Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#196
 public void ~ModelerMetric<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#201
-```
 
 ### add_point
 
@@ -40,9 +31,6 @@ Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#201
 public void add_point(const Point<dimension> & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#206
-```
 
 ### bbox
 
@@ -50,9 +38,6 @@ Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#206
 public const BoundingBox<dimension> & bbox()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#213
-```
 
 ### grid
 
@@ -60,9 +45,6 @@ Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#213
 public const Grid<dimension> & grid()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#219
-```
 
 ### build
 
@@ -70,9 +52,6 @@ Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#219
 public const Metric<dimension> & build()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#225
-```
 
 
 

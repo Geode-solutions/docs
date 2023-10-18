@@ -30,9 +30,6 @@
 void simplify_brep_from_macro_information(BRep & brep, ModelMeshesElementMapping & mesh_element_mappings, ModelMeshesVertexMapping & mesh_vertices_mappings)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/brep/brep_simplification.cpp#842
-```
 
 
 

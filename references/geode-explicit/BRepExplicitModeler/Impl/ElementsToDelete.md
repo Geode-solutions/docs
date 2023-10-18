@@ -1,8 +1,5 @@
 # struct ElementsToDelete
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/brep/brep_explicit_modeler.cpp#2643
-```
 
 ## Members
 

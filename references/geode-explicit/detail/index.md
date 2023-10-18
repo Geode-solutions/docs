@@ -15,9 +15,6 @@
 int build_solid(const BoundingBox3D & bbox, const Metric3D & metric)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/brep/private/solid.cpp#162
-```
 
 ### compute_grid
 
@@ -25,9 +22,6 @@ Defined at /github/workspace/src/geode/explicit/brep/private/solid.cpp#162
 LightRegularGrid<dimension> compute_grid(const BoundingBox<dimension> & bbox, double cell_size, bool adapt_bbox_to_cell_size)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#103
-```
 
 ### smallest_acceptable_or_median_distance
 
@@ -35,9 +29,6 @@ Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#103
 double smallest_acceptable_or_median_distance(const BoundingBox<dimension> & bbox, const NNSearch<dimension> & points_search)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#136
-```
 
 ### build_surface
 
@@ -45,9 +36,6 @@ Defined at /github/workspace/src/geode/explicit/common/grid_info.cpp#136
 int build_surface(const BoundingBox2D & bbox, const Metric2D & metric)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/explicit/section/private/surface.cpp#148
-```
 
 
 
