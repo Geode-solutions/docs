@@ -38,28 +38,12 @@
 ImplicitCrossSection extract_implicit_cross_section_from_axis(const ImplicitStructuralModel & model, local_index_t axis_direction, double axis_coordinate)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/implicit/explicitation/implicit_model_part.cpp#216
-```
 
 ### extract_stratigraphic_section_from_axis
 
 ```cpp
 StratigraphicSection extract_stratigraphic_section_from_axis(const StratigraphicModel & model, local_index_t axis_direction, double axis_coordinate)
 ```
-
-```cpp
-Defined at /github/workspace/src/geode/implicit/explicitation/implicit_model_part.cpp#256
-```
-
-
-
-## Enums
-
-| enum class GridScalarFunctionComputerType |
-
---
-
 
 
 
