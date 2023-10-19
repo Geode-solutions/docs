@@ -33,7 +33,7 @@ void rotate_one_ring_from_apex(absl::FixedArray<index_t> & one_ring_vertices, in
 ### intersect_one_ring_vertices
 
 ```cpp
-absl::flat_hash_set<geode::index_t> intersect_one_ring_vertices(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedraAroundVertex & pav0, const geode::PolyhedraAroundVertex & pav1)
+vector intersect_one_ring_vertices(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedraAroundVertex & pav0, const geode::PolyhedraAroundVertex & pav1)
 ```
 
 
@@ -146,6 +146,13 @@ int invalid_surfaces(const Model & model, const ModelComponentMeshEdges & edges)
 
 ```cpp
 typename SurfaceCollapseEdgeValidities<Model::dim>::MeshInvalidities invalid_collapse_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+```
+
+
+### is_collapse_edges_valid
+
+```cpp
+bool is_collapse_edges_valid(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
 ```
 
 
