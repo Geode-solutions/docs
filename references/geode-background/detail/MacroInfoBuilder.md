@@ -4,6 +4,9 @@
 # class MacroInfoBuilder
 
 
+# class MacroInfoBuilder
+
+
 ## Functions
 
 ### ~MacroInfoBuilder
@@ -41,8 +44,5 @@ protected void MacroInfoBuilder<>(MacroInfo<dimension> & macro_info)
 ```
 
 
-
-
-# class MacroInfoBuilder
 
 
