@@ -1,8 +1,5 @@
 # struct SolidCutPathInfo
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/cut_along_path.h#21
-```
 
 ## Members
 

@@ -1,8 +1,5 @@
 # struct SolidTopologicalValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#39
-```
 
 ## Members
 
@@ -31,9 +28,6 @@ public bool all_edges_are_manifold
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#41
-```
 
 
 

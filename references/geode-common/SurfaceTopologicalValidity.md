@@ -1,8 +1,5 @@
 # struct SurfaceTopologicalValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#44
-```
 
 ## Members
 
@@ -31,9 +28,6 @@ public vector vertices_creating_non_manifold_edges
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#46
-```
 
 
 

@@ -1,8 +1,5 @@
 # class FrontCycle
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/private/front_cycle.h#27
-```
 
 ```cpp
 Inherits from std::list<index_t>
@@ -18,9 +15,6 @@ Inherits from std::list<index_t>
 public optional position_in_cycle(index_t vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#18
-```
 
 ### vertex0
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#18
 public index_t vertex0()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#33
-```
 
 ### vertex1
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#33
 public index_t vertex1()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#38
-```
 
 ### previous
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#38
 public index_t previous()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#43
-```
 
 ### next
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#43
 public index_t next()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#49
-```
 
 ### increment
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#49
 public void increment()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#59
-```
 
 ### current
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#59
 public index_t current()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#54
-```
 
 ### vertex_at_position
 
@@ -88,9 +64,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#54
 public index_t vertex_at_position(index_t position)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#67
-```
 
 ### is_in_cycle
 
@@ -98,9 +71,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#67
 public bool is_in_cycle(index_t vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#85
-```
 
 ### insert_before
 
@@ -108,9 +78,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#85
 public void insert_before(index_t vertex, index_t new_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#90
-```
 
 ### insert_after
 
@@ -118,9 +85,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#90
 public void insert_after(index_t vertex, index_t new_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#97
-```
 
 ### remove_vertex
 
@@ -128,9 +92,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#97
 public void remove_vertex(index_t vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#161
-```
 
 ### split_cycle
 
@@ -138,9 +99,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#161
 public FrontCycle split_cycle(index_t tie_vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#126
-```
 
 ### tie_vertex
 
@@ -148,9 +106,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#126
 public optional tie_vertex()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#147
-```
 
 ### generate_simple_cycles
 
@@ -158,9 +113,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#147
 public vector generate_simple_cycles()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/front_cycle.cpp#167
-```
 
 
 

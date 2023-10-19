@@ -1,8 +1,5 @@
 # struct SolidPatch
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/solid_patch.h#26
-```
 
 ## Members
 
@@ -31,9 +28,6 @@ public index_t vertex_id
 public void SolidPatch(const TetrahedralSolid3D & solid, index_t edge_in, Position position_in)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#12
-```
 
 ### SolidPatch
 
@@ -41,9 +35,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#12
 public void SolidPatch(index_t vertex_in)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#23
-```
 
 ### SolidPatch
 
@@ -51,9 +42,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#23
 public void SolidPatch()
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/solid_patch.h#34
-```
 
 ### is_vertex
 
@@ -61,9 +49,6 @@ Defined at ../include/geode/common/cutter/solid/solid_patch.h#34
 public bool is_vertex()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#25
-```
 
 ### is_edge_vertex
 
@@ -71,9 +56,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#25
 public bool is_edge_vertex()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#30
-```
 
 ### is_edge
 
@@ -81,9 +63,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#30
 public bool is_edge()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#35
-```
 
 ### are_same_paths
 
@@ -91,9 +70,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#35
 public bool are_same_paths(const SolidPatch & other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#40
-```
 
 ### get_vertex_position
 
@@ -101,9 +77,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#40
 public Position get_vertex_position(geode::index_t vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#53
-```
 
 ### get_vertex_index
 
@@ -111,9 +84,6 @@ Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#53
 public geode::index_t get_vertex_index()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/solid/solid_patch.cpp#58
-```
 
 
 

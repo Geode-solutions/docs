@@ -1,8 +1,5 @@
 # struct SolidCutPatchInfo
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/cut_along_patch.h#24
-```
 
 ## Members
 

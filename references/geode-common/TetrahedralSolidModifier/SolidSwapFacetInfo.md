@@ -1,8 +1,5 @@
 # struct SolidSwapFacetInfo
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier.h#84
-```
 
 ## Members
 

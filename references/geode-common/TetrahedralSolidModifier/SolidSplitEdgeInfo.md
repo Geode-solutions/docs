@@ -1,8 +1,5 @@
 # struct SolidSplitEdgeInfo
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier.h#52
-```
 
 ## Members
 
@@ -36,9 +33,6 @@ public AlongSolidSplitEdgeInfo along
 public void SolidSplitEdgeInfo()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier.h#54
-```
 
 ### SolidSplitEdgeInfo
 
@@ -46,9 +40,6 @@ Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier.h#5
 public void SolidSplitEdgeInfo(index_t nb_tetrahedra, bool with_edges, bool with_facets)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#3053
-```
 
 
 

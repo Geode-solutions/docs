@@ -1,8 +1,5 @@
 # struct SurfaceCutPathInfo
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/cut_along_surface_path.h#21
-```
 
 ## Members
 

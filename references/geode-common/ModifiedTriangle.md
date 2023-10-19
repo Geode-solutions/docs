@@ -1,8 +1,5 @@
 # struct ModifiedTriangle
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#264
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public index_t old_index
 public void ModifiedTriangle<dimension>(Triangle<dimension> && new_triangle_in, index_t old_index_in)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#266
-```
 
 ### ModifiedTriangle
 
@@ -36,9 +30,6 @@ Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifie
 public void ModifiedTriangle<dimension>(const Triangle<dimension> & new_triangle_in, index_t old_index_in)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#273
-```
 
 
 

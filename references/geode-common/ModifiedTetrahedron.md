@@ -1,8 +1,5 @@
 # struct ModifiedTetrahedron
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#284
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public index_t old_index
 public void ModifiedTetrahedron(Tetrahedron && new_tetrahedron_in, index_t old_index_in)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#286
-```
 
 ### ModifiedTetrahedron
 
@@ -36,9 +30,6 @@ Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_sim
 public void ModifiedTetrahedron(const Tetrahedron & new_tetrahedron_in, index_t old_index_in)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#293
-```
 
 
 

@@ -4,9 +4,6 @@
 
 # class CustomGridMetric
 
-```cpp
-Defined at ../include/geode/common/metric/custom_grid_metric.h#20
-```
 
 ```cpp
 Inherits from Metric<dimension>
@@ -22,9 +19,6 @@ Inherits from Metric<dimension>
 public void CustomGridMetric<dimension>(const Grid<dimension> & grid, string_view attribute_name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#57
-```
 
 ### ~CustomGridMetric
 
@@ -32,9 +26,6 @@ Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#57
 public void ~CustomGridMetric<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#64
-```
 
 ### grid
 
@@ -42,9 +33,6 @@ Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#64
 public const Grid<dimension> & grid()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#69
-```
 
 ### metric
 
@@ -52,9 +40,6 @@ Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#69
 public double metric(const Point<dimension> & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#75
-```
 
 ### metric
 
@@ -62,9 +47,6 @@ Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#75
 public double metric(index_t cell_index)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#82
-```
 
 ### minimal_metric
 
@@ -72,9 +54,6 @@ Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#82
 public double minimal_metric(const Segment<dimension> & segment)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#88
-```
 
 ### minimal_metric
 
@@ -82,9 +61,6 @@ Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#88
 public double minimal_metric(const Triangle<dimension> & triangle)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#95
-```
 
 ### average_metric
 
@@ -92,9 +68,6 @@ Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#95
 public double average_metric()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#102
-```
 
 ### median_metric
 
@@ -102,9 +75,6 @@ Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#102
 public double median_metric()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/metric/custom_grid_metric.cpp#108
-```
 
 
 

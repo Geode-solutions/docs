@@ -1,8 +1,5 @@
 # struct SurfacePathFinderException
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#73
-```
 
 ```cpp
 Inherits from OpenGeodeException
@@ -18,9 +15,6 @@ Inherits from OpenGeodeException
 public void SurfacePathFinderException(const char * message)
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#75
-```
 
 ### SurfacePathFinderException
 
@@ -28,9 +22,6 @@ Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#75
 public void SurfacePathFinderException()
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#79
-```
 
 
 

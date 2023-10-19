@@ -1,8 +1,5 @@
 # struct ModelSwapEdgeValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/model/information.h#177
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public SurfaceSwapEdgeValidities<dimension> surface_validities
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/information.h#179
-```
 
 
 

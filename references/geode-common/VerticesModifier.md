@@ -1,8 +1,5 @@
 # class VerticesModifier
 
-```cpp
-Defined at ../include/geode/common/modifier/common/vertices_modifier.h#13
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../include/geode/common/modifier/common/vertices_modifier.h#13
 public void VerticesModifier(const VerticesModifier & )
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/common/vertices_modifier.h#15
-```
 
 ### operator=
 
@@ -22,9 +16,6 @@ Defined at ../include/geode/common/modifier/common/vertices_modifier.h#15
 public VerticesModifier & operator=(const VerticesModifier & )
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/common/vertices_modifier.h#15
-```
 
 ### updated_vertex
 
@@ -32,9 +23,6 @@ Defined at ../include/geode/common/modifier/common/vertices_modifier.h#15
 public index_t updated_vertex(index_t vertex_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#70
-```
 
 ### VerticesModifier
 
@@ -42,9 +30,6 @@ Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.
 protected void VerticesModifier()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#56
-```
 
 ### VerticesModifier
 
@@ -52,9 +37,6 @@ Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.
 protected void VerticesModifier(VerticesModifier && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#61
-```
 
 ### ~VerticesModifier
 
@@ -62,9 +44,6 @@ Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.
 protected void ~VerticesModifier()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#66
-```
 
 ### set_updated_vertex
 
@@ -72,9 +51,6 @@ Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.
 protected void set_updated_vertex(const VertexMultiMapping & mapping)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#75
-```
 
 ### clean_vertices_modifier
 
@@ -82,9 +58,6 @@ Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.
 protected void clean_vertices_modifier()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/common/vertices_modifier.cpp#81
-```
 
 
 

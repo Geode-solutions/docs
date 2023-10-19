@@ -1,8 +1,5 @@
 # struct TetrahedronInfo
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/solid/tetrahedral_solid_modifier.cpp#2767
-```
 
 ## Members
 

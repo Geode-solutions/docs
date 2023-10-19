@@ -1,8 +1,5 @@
 # struct SolidCollapseEdgeValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#52
-```
 
 ```cpp
 Inherits from SolidGeometricalValidity, SolidTopologicalValidity
@@ -18,9 +15,6 @@ Inherits from SolidGeometricalValidity, SolidTopologicalValidity
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#55
-```
 
 
 

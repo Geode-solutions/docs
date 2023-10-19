@@ -2,9 +2,6 @@
 
 # class EdgedCurveModifier
 
-```cpp
-Defined at ../include/geode/common/modifier/edged_curve/edged_curve_modifier.h#22
-```
 
 ```cpp
 Inherits from VerticesModifier
@@ -20,9 +17,6 @@ Inherits from VerticesModifier
 public void EdgedCurveModifier<dimension>(const EdgedCurve<dimension> & curve, EdgedCurveBuilder<dimension> & builder)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_modifier.cpp#247
-```
 
 ### EdgedCurveModifier
 
@@ -30,9 +24,6 @@ Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_m
 public void EdgedCurveModifier<dimension>(EdgedCurveModifier<dimension> && other)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_modifier.cpp#255
-```
 
 ### ~EdgedCurveModifier
 
@@ -40,9 +31,6 @@ Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_m
 public void ~EdgedCurveModifier<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_modifier.cpp#263
-```
 
 ### is_edge_active
 
@@ -50,9 +38,6 @@ Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_m
 public bool is_edge_active(index_t edge_id)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_modifier.cpp#275
-```
 
 ### collapse_edge
 
@@ -60,9 +45,6 @@ Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_m
 public index_t collapse_edge(index_t edge_id, const Point<dimension> & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_modifier.cpp#282
-```
 
  Collapse an edge.
 
@@ -78,9 +60,6 @@ Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_m
 public index_t split_edge(index_t edge_id, const Point<dimension> & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_modifier.cpp#289
-```
 
  Split an edge.
 
@@ -96,9 +75,6 @@ Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_m
 public int clean_edges()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_modifier.cpp#303
-```
 
  Clean up the mesh removing inactive edges
 
@@ -110,9 +86,6 @@ Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_m
 public int clean_vertices()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_modifier.cpp#309
-```
 
  Clean up the mesh removing isolated vertices
 
@@ -124,9 +97,6 @@ Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_m
 protected const EdgedCurve<dimension> & curve()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/edged_curve/edged_curve_modifier.cpp#268
-```
 
 ### clean
 

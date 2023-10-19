@@ -1,8 +1,5 @@
 # struct ModelCollapseEdgeValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/model/information.h#137
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public SurfaceCollapseEdgeValidities<dimension> surface_validities
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/information.h#139
-```
 
 
 

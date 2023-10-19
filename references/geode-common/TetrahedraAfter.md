@@ -1,8 +1,5 @@
 # struct TetrahedraAfter
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#303
-```
 
 ## Members
 
@@ -21,9 +18,6 @@ public FixedArray modified
 public void TetrahedraAfter(size_t nb_modified_tetrahedra)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#305
-```
 
 
 

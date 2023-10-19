@@ -1,8 +1,5 @@
 # struct SurfaceSwapEdgeValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#92
-```
 
 ```cpp
 Inherits from SurfaceGeometricalValidity<dimension>, SurfaceTopologicalValidity
@@ -27,9 +24,6 @@ public bool is_on_border
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#96
-```
 
 
 

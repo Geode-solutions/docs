@@ -1,8 +1,5 @@
 # struct Invalidity
 
-```cpp
-Defined at ../include/geode/common/modifier/model/information.h#60
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public InvalidityType invalidities
 public void Invalidity<MeshElement, InvalidityType>(MeshElement element_in, InvalidityType && invalidities_in)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/information.h#62
-```
 
 
 

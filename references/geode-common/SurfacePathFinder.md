@@ -1,8 +1,5 @@
 # class SurfacePathFinder
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#90
-```
 
  The objective of this class is to find paths inside TrianguledSurface< dimension >. This class may be derived for custom path findings.
 
@@ -16,9 +13,6 @@ Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#90
 public void SurfacePathFinder<dimension>(const SurfacePathFinder<dimension> & )
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#92
-```
 
 ### operator=
 
@@ -26,9 +20,6 @@ Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#92
 public SurfacePathFinder<dimension> & operator=(const SurfacePathFinder<dimension> & )
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#92
-```
 
 ### SurfacePathFinder
 
@@ -36,9 +27,6 @@ Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#92
 public void SurfacePathFinder<dimension>(SurfacePathFinder<dimension> && )
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#92
-```
 
 ### operator=
 
@@ -46,9 +34,6 @@ Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#92
 public SurfacePathFinder<dimension> & operator=(SurfacePathFinder<dimension> && )
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#92
-```
 
 ### ~SurfacePathFinder
 
@@ -56,9 +41,6 @@ Defined at ../include/geode/common/cutter/surface/surface_path_finder.h#92
 public void ~SurfacePathFinder<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_path_finder.cpp#22
-```
 
 ### SurfacePathFinder
 
@@ -66,9 +48,6 @@ Defined at /github/workspace/src/geode/common/cutter/surface/surface_path_finder
 protected void SurfacePathFinder<dimension>(const TriangulatedSurface<dimension> & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_path_finder.cpp#15
-```
 
 ### adjacent_opposite_vertex
 
@@ -76,9 +55,6 @@ Defined at /github/workspace/src/geode/common/cutter/surface/surface_path_finder
 protected PolygonVertex adjacent_opposite_vertex(const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_path_finder.cpp#27
-```
 
 ### edge_segment
 
@@ -86,9 +62,6 @@ Defined at /github/workspace/src/geode/common/cutter/surface/surface_path_finder
 protected Segment<dimension> edge_segment(const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_path_finder.cpp#39
-```
 
 ### surface
 
@@ -96,9 +69,6 @@ Defined at /github/workspace/src/geode/common/cutter/surface/surface_path_finder
 protected const TriangulatedSurface<dimension> & surface()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_path_finder.cpp#47
-```
 
 
 

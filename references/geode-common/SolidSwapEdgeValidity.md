@@ -1,8 +1,5 @@
 # struct SolidSwapEdgeValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#86
-```
 
 ```cpp
 Inherits from SolidGeometricalValidity
@@ -37,9 +34,6 @@ public bool is_apex_on_border
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#88
-```
 
 
 

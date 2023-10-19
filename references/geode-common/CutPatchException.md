@@ -1,8 +1,5 @@
 # struct CutPatchException
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/cut_exceptions.h#53
-```
 
 ```cpp
 Inherits from OpenGeodeException
@@ -42,9 +39,6 @@ public SolidCutPatchInfo cut_info
 public void CutPatchException()
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/cut_exceptions.h#55
-```
 
 
 

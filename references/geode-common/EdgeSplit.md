@@ -1,8 +1,5 @@
 # struct EdgeSplit
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/cut_exceptions.h#30
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public PolyhedronFacetEdge edge
 public void EdgeSplit(Point3D location_in, PolyhedronFacetEdge edge_in)
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/cut_exceptions.h#32
-```
 
 ### EdgeSplit
 
@@ -36,9 +30,6 @@ Defined at ../include/geode/common/cutter/solid/cut_exceptions.h#32
 public void EdgeSplit()
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/cut_exceptions.h#36
-```
 
 
 

@@ -1,8 +1,5 @@
 # struct ModelSplitTriangleValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/model/information.h#165
-```
 
 ## Members
 
@@ -21,9 +18,6 @@ public SurfaceSplitTriangleValidities<dimension> surface_validities
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/information.h#167
-```
 
 
 

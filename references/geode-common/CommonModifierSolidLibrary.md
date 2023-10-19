@@ -1,8 +1,5 @@
 # class CommonModifierSolidLibrary
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/common.h#13
-```
 
 ```cpp
 Inherits from Library
@@ -18,9 +15,6 @@ Inherits from Library
 public void initialize()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/common.h#13
-```
 
 
 

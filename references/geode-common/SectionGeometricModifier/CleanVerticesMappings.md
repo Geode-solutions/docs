@@ -1,8 +1,5 @@
 # struct CleanVerticesMappings
 
-```cpp
-Defined at ../include/geode/common/modifier/model/section_geometric_modifier.h#36
-```
 
 ## Members
 

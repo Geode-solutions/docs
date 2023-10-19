@@ -1,8 +1,5 @@
 # struct SolidSwapFacetValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#99
-```
 
 ```cpp
 Inherits from SolidGeometricalValidity
@@ -27,9 +24,6 @@ public bool is_on_border
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/solid/tetrahedral_solid_modifier_simulation.h#101
-```
 
 
 

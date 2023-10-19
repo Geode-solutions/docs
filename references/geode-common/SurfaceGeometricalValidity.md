@@ -1,8 +1,5 @@
 # struct SurfaceGeometricalValidity
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#31
-```
 
 ## Members
 
@@ -31,9 +28,6 @@ public vector invalid_triangle_ids
 public bool operator bool()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#33
-```
 
 
 

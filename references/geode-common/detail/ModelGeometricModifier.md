@@ -1,8 +1,5 @@
 # class ModelGeometricModifier
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#43
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public void ModelGeometricModifier<Model, ModelBuilder, dimension>(Model & model)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#58
-```
 
 ### ~ModelGeometricModifier
 
@@ -22,9 +16,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public void ~ModelGeometricModifier<Model, ModelBuilder, dimension>()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#67
-```
 
 ### move_point
 
@@ -32,9 +23,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public void move_point(index_t unique_vertex, const Point<dimension> & point)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#69
-```
 
 ### translate_point
 
@@ -42,9 +30,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public void translate_point(index_t unique_vertex, const Vector<dimension> & translation)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#75
-```
 
 ### rescale_point
 
@@ -52,9 +37,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public void rescale_point(index_t unique_vertex, const std::array<double, dimension> & scale)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#83
-```
 
 ### rescale_point
 
@@ -62,9 +44,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public void rescale_point(index_t unique_vertex, double scale)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#95
-```
 
 ### clean_triangles_surfaces
 
@@ -72,9 +51,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public int clean_triangles_surfaces()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#102
-```
 
 ### clean_vertices_surfaces
 
@@ -82,9 +58,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public int clean_vertices_surfaces()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#122
-```
 
 ### clean_edges_lines
 
@@ -92,9 +65,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public int clean_edges_lines()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#146
-```
 
 ### clean_vertices_lines
 
@@ -102,9 +72,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public int clean_vertices_lines()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#166
-```
 
 ### clean_unique_vertices
 
@@ -112,9 +79,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public int clean_unique_vertices()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#190
-```
 
 ### updated_line_vertex
 
@@ -122,9 +86,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public index_t updated_line_vertex(const Line<dimension> & line, index_t vertex)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#195
-```
 
 ### updated_surface_vertex
 
@@ -132,9 +93,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public index_t updated_surface_vertex(const Surface<dimension> & surface, index_t vertex)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#206
-```
 
 ### is_triangle_active
 
@@ -142,9 +100,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public bool is_triangle_active(const Surface<dimension> & surface, index_t triangle)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#217
-```
 
 ### is_edge_active
 
@@ -152,9 +107,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public bool is_edge_active(const Surface<dimension> & surface, index_t edge)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#228
-```
 
 ### is_edge_active
 
@@ -162,9 +114,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 public bool is_edge_active(const Line<dimension> & line, index_t edge)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#239
-```
 
 ### builder
 
@@ -172,9 +121,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected ModelBuilder & builder()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#251
-```
 
 ### model
 
@@ -182,9 +128,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected const Model & model()
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#256
-```
 
 ### model_point
 
@@ -192,9 +135,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected const Point<dimension> & model_point(const ComponentMeshVertex & cmv)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#261
-```
 
 ### set_point
 
@@ -202,9 +142,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected void set_point(const ComponentMeshVertex & cmv, const Point<dimension> & point)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#283
-```
 
 ### collapse_vertex_identifier
 
@@ -212,9 +149,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected void collapse_vertex_identifier(const ModelCollapsePolygonEdgeInfo<dimension> & info, const Point<dimension> & point)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#306
-```
 
 ### collapse_edge_surfaces
 
@@ -222,9 +156,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected void collapse_edge_surfaces(const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<dimension> & point, ModelCollapsePolygonEdgeInfo<dimension> & info)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#317
-```
 
 ### split_triangle_surface
 
@@ -232,9 +163,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected void split_triangle_surface(const Surface<dimension> & surface, index_t triangle, const Point<dimension> & point, ModelSplitTriangleInfo<dimension> & info)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#343
-```
 
 ### swap_edge_surface
 
@@ -242,9 +170,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected void swap_edge_surface(const Surface<dimension> & surface, const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#362
-```
 
 ### split_edge_surfaces
 
@@ -252,9 +177,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected void split_edge_surfaces(const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<dimension> & point, ModelSplitPolygonEdgeInfo<dimension> & info)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#373
-```
 
 ### collapse_edge_lines
 
@@ -262,9 +184,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected void collapse_edge_lines(const struct ModelComponentMeshEdges::LineEdges & line_edges, const Point<dimension> & point, ModelCollapsePolygonEdgeInfo<dimension> & info)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#403
-```
 
 ### split_edge_lines
 
@@ -272,9 +191,6 @@ Defined at ../include/geode/common/modifier/model/private/model_geometric_modifi
 protected void split_edge_lines(const struct ModelComponentMeshEdges::LineEdges & line_edges, const Point<dimension> & point, ModelSplitPolygonEdgeInfo<dimension> & info)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/model/private/model_geometric_modifier.h#433
-```
 
 
 

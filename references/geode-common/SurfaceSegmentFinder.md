@@ -2,9 +2,6 @@
 
 # class SurfaceSegmentFinder
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_segment_finder.h#25
-```
 
  This class is able to find a rectilinear path between two vertices. This class may be derived for custom path findings.
 
@@ -24,9 +21,6 @@ Inherits from SurfacePathFinder<dimension>
 public void SurfaceSegmentFinder<dimension>(const TriangulatedSurface<dimension> & surface, index_t begin, index_t end)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_segment_finder.cpp#13
-```
 
 ### ~SurfaceSegmentFinder
 
@@ -34,9 +28,6 @@ Defined at /github/workspace/src/geode/common/cutter/surface/surface_segment_fin
 public void ~SurfaceSegmentFinder<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_segment_finder.cpp#25
-```
 
 ### find_path
 
@@ -44,9 +35,6 @@ Defined at /github/workspace/src/geode/common/cutter/surface/surface_segment_fin
 public int find_path()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_segment_finder.cpp#56
-```
 
 ### stop_propagation
 
@@ -54,9 +42,6 @@ Defined at /github/workspace/src/geode/common/cutter/surface/surface_segment_fin
 protected bool stop_propagation(const SurfacePath & path)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_segment_finder.cpp#30
-```
 
 ### next_intersection
 
@@ -64,9 +49,6 @@ Defined at /github/workspace/src/geode/common/cutter/surface/surface_segment_fin
 protected SurfacePath next_intersection(const SurfacePath & previous_path, const SurfacePath & current_path)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/cutter/surface/surface_segment_finder.cpp#78
-```
 
 ### next_vertex_intersection
 
@@ -86,9 +68,6 @@ protected SurfacePath next_edge_intersection(const PolygonEdge & adjacent_edge)
 protected index_t begin()
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_segment_finder.h#48
-```
 
 ### end
 
@@ -96,9 +75,6 @@ Defined at ../include/geode/common/cutter/surface/surface_segment_finder.h#48
 protected index_t end()
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_segment_finder.h#53
-```
 
 ### segment
 
@@ -106,9 +82,6 @@ Defined at ../include/geode/common/cutter/surface/surface_segment_finder.h#53
 protected const Segment<dimension> & segment()
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/surface/surface_segment_finder.h#58
-```
 
 
 

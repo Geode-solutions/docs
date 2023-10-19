@@ -1,8 +1,5 @@
 # class FileLicenseChecker
 
-```cpp
-Defined at ../include/geode/common/core/file_license_checker.h#13
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at ../include/geode/common/core/file_license_checker.h#13
 public void ~FileLicenseChecker()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/core/file_license_checker.cpp#133
-```
 
 ### FileLicenseChecker
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/common/core/file_license_checker.cpp#133
 protected void FileLicenseChecker(string_view license_name)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/core/file_license_checker.cpp#128
-```
 
 ### is_license_file_available
 
@@ -32,9 +23,6 @@ Defined at /github/workspace/src/geode/common/core/file_license_checker.cpp#128
 protected tuple is_license_file_available()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/core/file_license_checker.cpp#135
-```
 
 ### acquire_license_file
 
@@ -42,9 +30,6 @@ Defined at /github/workspace/src/geode/common/core/file_license_checker.cpp#135
 protected void acquire_license_file()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/common/core/file_license_checker.cpp#141
-```
 
 
 

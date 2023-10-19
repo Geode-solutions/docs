@@ -1,8 +1,5 @@
 # struct PatchFrontEdge
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/private/front_edge.h#13
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public bool orientation
 public void PatchFrontEdge(index_t id_in, bool orientation_in)
 ```
 
-```cpp
-Defined at ../include/geode/common/cutter/solid/private/front_edge.h#15
-```
 
 
 

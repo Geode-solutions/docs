@@ -1,8 +1,5 @@
 # struct PolygonEdgeGroup
 
-```cpp
-Defined at /github/workspace/src/geode/common/modifier/surface/triangulated_surface_modifier.cpp#739
-```
 
 ## Members
 

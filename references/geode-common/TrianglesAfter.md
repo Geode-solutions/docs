@@ -1,8 +1,5 @@
 # struct TrianglesAfter
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#285
-```
 
 ## Members
 
@@ -21,9 +18,6 @@ public absl::FixedArray<ModifiedTriangle<dimension> > modified
 public void TrianglesAfter<dimension>(size_t nb_modified_triangles)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#287
-```
 
 ### TrianglesAfter
 
@@ -31,9 +25,6 @@ Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifie
 public void TrianglesAfter<dimension>(size_t nb_modified_triangles, const Triangle<dimension> & base_triangle)
 ```
 
-```cpp
-Defined at ../include/geode/common/modifier/surface/triangulated_surface_modifier_simulation.h#292
-```
 
 
 
