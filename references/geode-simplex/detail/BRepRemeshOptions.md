@@ -1,8 +1,5 @@
 # struct BRepRemeshOptions
 
-```cpp
-Defined at ../../include/geode/simplex/brep/detail/remesh.h#22
-```
 
 ## Members
 

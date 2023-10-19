@@ -1,8 +1,5 @@
 # struct LineConstraint
 
-```cpp
-Defined at ../../include/geode/simplex/private/line/common/private/remesher.h#26
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public index_t remeshed_vertex
 public void LineConstraint(EdgeVertex vertex_in, index_t remeshed_vertex_in)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/line/common/private/remesher.h#28
-```
 
 
 

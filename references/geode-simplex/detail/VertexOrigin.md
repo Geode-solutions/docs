@@ -1,8 +1,5 @@
 # struct VertexOrigin
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/remeshed_info.h#24
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public bool is_locked
 public void VertexOrigin()
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/remeshed_info.h#26
-```
 
 ### VertexOrigin
 
@@ -36,9 +30,6 @@ Defined at ../../include/geode/simplex/private/surface/common/private/remeshed_i
 public void VertexOrigin(index_t vertex_in, bool is_locked_in)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/remeshed_info.h#27
-```
 
 
 

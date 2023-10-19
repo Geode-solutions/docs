@@ -1,8 +1,5 @@
 # struct ElementStamp
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#54
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public index_t stamp
 public void ElementStamp(index_t element_in, index_t stamp_in)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#56
-```
 
 
 

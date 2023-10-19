@@ -1,8 +1,5 @@
 # struct MacroEdgesInfo
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#107
-```
 
 ## Members
 
@@ -51,9 +48,6 @@ public optional refined_apex
 public void MacroEdgesInfo(index_t macro_edge_id_in, index_t start_in, index_t end_in)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#109
-```
 
 ### MacroEdgesInfo
 
@@ -61,9 +55,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/fr
 public void MacroEdgesInfo(index_t refined_apex_in)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#117
-```
 
 ### update
 
@@ -71,9 +62,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/fr
 public void update(VerticesModifier & modifier)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#122
-```
 
 
 

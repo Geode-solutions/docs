@@ -1,8 +1,5 @@
 # struct Edge
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#25
-```
 
 ## Members
 

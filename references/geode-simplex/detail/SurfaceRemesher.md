@@ -4,9 +4,6 @@
 
 # class SurfaceRemesher
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/remesher.h#37
-```
 
 ## Records
 
@@ -22,9 +19,6 @@ Impl
 public void ~SurfaceRemesher<Data>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#442
-```
 
 ### remesh
 
@@ -32,9 +26,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 public RemeshedCMV remesh()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#447
-```
 
 ### SurfaceRemesher
 
@@ -42,9 +33,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected void SurfaceRemesher<Data>(Data & data, const Surface<dimension> & input_surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#435
-```
 
 ### background_surface
 
@@ -52,9 +40,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected const Surface<dimension> & background_surface()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#453
-```
 
 ### background_mesh
 
@@ -62,9 +47,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected const TriangulatedSurface<dimension> & background_mesh()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#460
-```
 
 ### background_builder
 
@@ -72,9 +54,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected TriangulatedSurfaceBuilder<dimension> & background_builder()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#467
-```
 
 ### background_modifier
 
@@ -82,9 +61,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected TriangulatedSurfaceEpsilonModifier<dimension> & background_modifier()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#474
-```
 
 ### remeshed
 
@@ -92,9 +68,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected const SurfaceMesh<dimension> & remeshed()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#481
-```
 
 ### remeshed_builder
 
@@ -102,9 +75,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected SurfaceMeshBuilder<dimension> & remeshed_builder()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#488
-```
 
 ### metric
 
@@ -112,9 +82,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected const Metric<dimension> & metric()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#495
-```
 
 ### lock_vertices
 
@@ -122,9 +89,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected const int & lock_vertices()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#502
-```
 
 ### transfer_remeshed
 
@@ -132,9 +96,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected int transfer_remeshed(const RemeshedSurface<dimension> & remeshed)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#516
-```
 
 ### transfer_remeshed
 
@@ -142,9 +103,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected int transfer_remeshed(const RemainingSurface<dimension> & remaining, const RemeshedSurface<dimension> & remeshed, absl::Span<const index_t> remaining_mapping)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#523
-```
 
 ### compute_remaining_adjacencies
 
@@ -152,9 +110,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected void compute_remaining_adjacencies()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#533
-```
 
 ### fill_remaining
 
@@ -162,9 +117,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected int fill_remaining(RemainingSurface<dimension> & remaining, absl::Span<const index_t> remaining_mapping)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#539
-```
 
 ### transfer_remeshed_polygons
 
@@ -172,9 +124,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected void transfer_remeshed_polygons(const SurfaceMesh<dimension> & mesh, absl::Span<const index_t> vertex_mapping)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#547
-```
 
 ### add_remeshed_point
 
@@ -182,9 +131,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected index_t add_remeshed_point(index_t vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#555
-```
 
 ### is_locked
 
@@ -192,9 +138,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected bool is_locked(index_t vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#561
-```
 
 ### update_vertices
 
@@ -202,9 +145,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected void update_vertices(absl::Span<const VertexMultiMapping> mappings)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesher.cpp#509
-```
 
 
 

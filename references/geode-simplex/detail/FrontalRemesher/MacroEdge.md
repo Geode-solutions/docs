@@ -1,8 +1,5 @@
 # struct MacroEdge
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/frontal.h#32
-```
 
 ## Members
 
@@ -61,9 +58,6 @@ public index_t apex
 public void MacroEdge(const FrontalRemesher<> & remesher, index_t v0, index_t v1, BorderType border_type_in)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2255
-```
 
 ### operator<
 
@@ -71,9 +65,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/fr
 public bool operator<(const MacroEdge & rhs)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2277
-```
 
 ### update
 
@@ -81,9 +72,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/fr
 public void update(VerticesModifier & modifier)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/frontal.cpp#2288
-```
 
 
 
@@ -97,9 +85,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/fr
 | NO_BORDER |
 
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/frontal.h#34
-```
 
 
 

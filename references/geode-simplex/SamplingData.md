@@ -1,8 +1,5 @@
 # class SamplingData
 
-```cpp
-Defined at ../../include/geode/simplex/private/core/sampling_data.h#38
-```
 
  Structure holding all the data required for the remeshing algorithm Aliases are defined for BRep and Section.
 
@@ -22,9 +19,6 @@ Impl
 public void SamplingData<DataModel>(DataModel & model, const Metric<dimension> & metric)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#264
-```
 
 ### ~SamplingData
 
@@ -32,9 +26,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#26
 public void ~SamplingData<DataModel>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#271
-```
 
 ### model
 
@@ -42,9 +33,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#27
 public const Model & model()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#276
-```
 
 ### builder
 
@@ -52,9 +40,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#27
 public Builder & builder()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#282
-```
 
 ### modifier
 
@@ -62,9 +47,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#28
 public Modifier & modifier()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#288
-```
 
 ### metric
 
@@ -72,9 +54,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#28
 public const Metric<dimension> & metric()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#294
-```
 
 ### mutex
 
@@ -82,9 +61,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#29
 public std::mutex & mutex()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#300
-```
 
 ### tag_unique_vertices
 
@@ -92,9 +68,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#30
 public void tag_unique_vertices(absl::Span<const index_t> unique_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#306
-```
 
 ### clean_model
 
@@ -102,9 +75,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#30
 public CleanMappings clean_model()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#327
-```
 
 ### release_model
 
@@ -112,9 +82,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#32
 public DataModel release_model()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#333
-```
 
 ### updated_triangles
 
@@ -122,9 +89,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#33
 public vector updated_triangles(const Surface<dimension> & surface, index_t triangle)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#313
-```
 
 ### updated_tetrahedra
 
@@ -132,9 +96,6 @@ Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#31
 public vector updated_tetrahedra(const Block<dimension> & block, index_t tetrahedron)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/core/sampling_data.cpp#320
-```
 
 
 

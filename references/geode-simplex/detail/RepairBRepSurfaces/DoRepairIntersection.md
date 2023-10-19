@@ -1,8 +1,5 @@
 # class DoRepairIntersection
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#1065
-```
 
 ```cpp
 Inherits from DoRepair
@@ -18,9 +15,6 @@ Inherits from DoRepair
 public void DoRepairIntersection(RepairBRepSurfaces & repair, const Surface3D & edge_surface, const PolygonEdge & edge, const Surface3D & triangles_surface, index_t triangle)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#1068
-```
 
 ### apply
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public int apply()
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#1085
-```
 
 ### process_inverted_edge
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public absl::optional<BRepGeometricModifier::BRepSplitPolygonEdgeInfo> process_inverted_edge(RepairSurface & surface, const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#1172
-```
 
 ### process_inverted_edge_on_border
 
@@ -48,9 +36,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public absl::optional<BRepGeometricModifier::BRepSplitPolygonEdgeInfo> process_inverted_edge_on_border(RepairSurface & surface, const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#1210
-```
 
 ### process_inverted_edge_inside
 
@@ -58,9 +43,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public absl::optional<BRepGeometricModifier::BRepSplitPolygonEdgeInfo> process_inverted_edge_inside(RepairSurface & surface, const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#1221
-```
 
 ### inverted_edges_to_split
 
@@ -68,9 +50,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public std::array<PolygonEdge, 3> inverted_edges_to_split(const RepairSurface & surface, index_t trgl)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#1352
-```
 
 ### do_split_triangle
 
@@ -78,9 +57,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public absl::optional<std::pair<BRepGeometricModifier::BRepSplitPolygonEdgeInfo, Point3D> > do_split_triangle(const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#1458
-```
 
 ### new_triangle_point
 
@@ -88,9 +64,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public Point3D new_triangle_point(RepairSurface & surface, const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#1497
-```
 
 
 

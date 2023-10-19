@@ -1,8 +1,5 @@
 # class LSCMRemesher
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/lscm.h#29
-```
 
 ```cpp
 Inherits from RemeshAlgo<3>
@@ -18,9 +15,6 @@ Inherits from RemeshAlgo<3>
 public void LSCMRemesher(const TriangulatedSurface3D & input_mesh, const Metric3D & metric, Span lock_vertices, Span outside_polygons, int macro_edges)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/lscm.h#34
-```
 
 ### remesh
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/lscm.h#34
 public RemeshedSurface3D remesh()
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/lscm.h#46
-```
 
 ### remesh_in_2d
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/lscm.h#46
 public RemeshedSurface2D remesh_in_2d()
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/lscm.h#121
-```
 
 
 

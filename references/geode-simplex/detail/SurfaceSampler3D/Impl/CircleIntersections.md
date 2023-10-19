@@ -1,8 +1,5 @@
 # class CircleIntersections
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sampler.cpp#89
-```
 
 ## Functions
 
@@ -12,9 +9,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sample
 public void CircleIntersections(const Impl & impl, const Circle & circle)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sampler.cpp#92
-```
 
 ### operator()
 
@@ -22,9 +16,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sample
 public bool operator()(index_t element)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sampler.cpp#97
-```
 
 ### result
 
@@ -32,9 +23,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sample
 public int result()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sampler.cpp#119
-```
 
 
 

@@ -1,8 +1,5 @@
 # struct RemainingSurface
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/remeshed_info.h#36
-```
 
 ## Members
 

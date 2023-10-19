@@ -1,8 +1,5 @@
 # class DoRepair
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#582
-```
 
 ## Members
 
@@ -42,9 +39,6 @@ RepairSurface
 protected void DoRepair(RepairBRepSurfaces & repair, const Surface3D & edge_surface, const PolygonEdge & edge, const Surface3D & triangle_surface, int triangle_edges)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#604
-```
 
 ### is_edge_inverted
 
@@ -52,9 +46,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public absl::optional<index_t> is_edge_inverted(const Surface3D & surface, const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#619
-```
 
 ### add_modified_surfaces
 
@@ -62,9 +53,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 protected void add_modified_surfaces(const class BRepGeometricModifier::BRepSplitPolygonEdgeInfo & output)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#675
-```
 
 ### save
 
@@ -72,9 +60,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 protected void save(const TriangulatedSurface3D & mesh, basic_string suffix)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#685
-```
 
 ### closest_point
 
@@ -82,9 +67,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public std::pair<Point3D, index_t> closest_point(const RepairSurface & surface, const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#699
-```
 
 ### is_repair_split_edge_valid
 
@@ -92,9 +74,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 protected bool is_repair_split_edge_valid(const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#715
-```
 
 ### intersection_plane
 
@@ -102,9 +81,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 protected OwnerPlane intersection_plane(const SurfaceMesh3D & mesh, const PolygonEdge & edge, const Point3D & opposite)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#742
-```
 
 ### line_part
 
@@ -112,9 +88,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 protected int line_part(const Line3D & line, index_t start, index_t end)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#755
-```
 
 ### new_triangle_edge_point
 
@@ -122,9 +95,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 public Point3D new_triangle_edge_point(RepairSurface & surface, const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#802
-```
 
 ### split_edge
 
@@ -132,9 +102,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 protected bool split_edge(const PolygonEdge & edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#864
-```
 
 ### update_edges
 
@@ -142,9 +109,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 protected void update_edges(absl::Span<const TriangulatedSurfaceModifier3D::PolygonEdgeMapping> mappings)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#895
-```
 
 ### update_edges
 
@@ -152,9 +116,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_su
 protected void update_edges(const PolygonEdge & edge, absl::Span<const TriangulatedSurfaceModifier3D::PolygonEdgeMapping> mappings)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#905
-```
 
 
 

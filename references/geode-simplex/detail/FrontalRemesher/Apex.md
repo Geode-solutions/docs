@@ -1,8 +1,5 @@
 # struct Apex
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/frontal.h#73
-```
 
 ## Members
 
@@ -46,9 +43,6 @@ public Point<dimension> min_point
 public void Apex(Point<dimension> point_in, index_t polygon_id_in, double length_in, double min_length_in, Point<dimension> min_point_in)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/frontal.h#75
-```
 
 ### Apex
 
@@ -56,9 +50,6 @@ Defined at ../../include/geode/simplex/private/surface/common/private/frontal.h#
 public void Apex(Point<dimension> point_in, index_t polygon_id_in, index_t macro_edge_id_in, double length_in, double min_length_in, Point<dimension> min_point_in)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/frontal.h#88
-```
 
 
 

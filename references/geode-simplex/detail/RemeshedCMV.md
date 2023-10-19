@@ -1,8 +1,5 @@
 # struct RemeshedCMV
 
-```cpp
-Defined at ../../include/geode/simplex/private/core/private/remeshed_cmv.h#17
-```
 
 ## Members
 
@@ -26,9 +23,6 @@ public vector unique_vertices
 public void RemeshedCMV(ComponentID id_in)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/core/private/remeshed_cmv.h#19
-```
 
 
 

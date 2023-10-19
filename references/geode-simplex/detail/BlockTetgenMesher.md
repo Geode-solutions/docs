@@ -1,8 +1,5 @@
 # class BlockTetgenMesher
 
-```cpp
-Defined at ../../include/geode/simplex/private/solid/private/block_tetgen_mesher.h#24
-```
 
 ```cpp
 Inherits from TetgenMesher
@@ -18,9 +15,6 @@ Inherits from TetgenMesher
 public void BlockTetgenMesher(const BRep & brep, BRepBuilder & builder, const Block3D & block, absl::Span<const Point3D> internal_points)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/solid/private/block_tetgen_mesher.h#27
-```
 
 ### ~BlockTetgenMesher
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/simplex/private/solid/private/block_tetgen_mesher
 public void ~BlockTetgenMesher()
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/solid/private/block_tetgen_mesher.h#40
-```
 
 ### tetrahedralize
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/simplex/private/solid/private/block_tetgen_mesher
 public RemeshedCMV tetrahedralize()
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/solid/private/block_tetgen_mesher.h#42
-```
 
 
 

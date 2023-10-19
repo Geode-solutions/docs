@@ -1,8 +1,5 @@
 # struct PolygonData
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#82
-```
 
 ## Members
 
@@ -31,9 +28,6 @@ public EdgeData cur
 public void PolygonData(const SurfaceMesh<dimension> & mesh, PolygonEdge edge)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/relaxer.h#84
-```
 
 
 

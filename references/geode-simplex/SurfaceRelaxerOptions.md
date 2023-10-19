@@ -1,8 +1,5 @@
 # struct SurfaceRelaxerOptions
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/options.cpp#9
-```
 
 ## Members
 
@@ -25,9 +22,6 @@ public const Metric<2U> * metric
 
 # struct SurfaceRelaxerOptions
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/options.h#17
-```
 
 ## Members
 
@@ -50,9 +44,6 @@ public const Metric<dimension> * metric
 
 # struct SurfaceRelaxerOptions
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/options.cpp#10
-```
 
 ## Members
 

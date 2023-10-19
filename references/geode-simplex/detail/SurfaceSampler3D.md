@@ -1,8 +1,5 @@
 # class SurfaceSampler3D
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#33
-```
 
 ## Records
 
@@ -18,9 +15,6 @@ Impl
 public void SurfaceSampler3D(const SurfaceSampler3D & )
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#36
-```
 
 ### operator=
 
@@ -28,9 +22,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#36
 public SurfaceSampler3D & operator=(const SurfaceSampler3D & )
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#36
-```
 
 ### SurfaceSampler3D
 
@@ -38,9 +29,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#36
 public void SurfaceSampler3D(SurfaceSampler3D && )
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#36
-```
 
 ### operator=
 
@@ -48,9 +36,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#36
 public SurfaceSampler3D & operator=(SurfaceSampler3D && )
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#36
-```
 
 ### ~SurfaceSampler3D
 
@@ -58,9 +43,6 @@ Defined at ../../include/geode/simplex/private/surface/3d/private/sampler.h#36
 public void ~SurfaceSampler3D()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sampler.cpp#145
-```
 
 ### SurfaceSampler3D
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sample
 protected void SurfaceSampler3D(BRepSamplingData & data, const Surface3D & surface)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sampler.cpp#139
-```
 
 ### compute_potential_points
 
@@ -78,9 +57,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sample
 public int compute_potential_points(const Element & element)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sampler.cpp#147
-```
 
 ### compute_new_elements
 
@@ -88,9 +64,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sample
 public int compute_new_elements(absl::Span<const Point3D> points, double , const Point3D & point)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sampler.cpp#154
-```
 
 ### compute_bbox
 
@@ -98,9 +71,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sample
 public BoundingBox3D compute_bbox()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/3d/private/sampler.cpp#162
-```
 
 
 

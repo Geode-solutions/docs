@@ -1,8 +1,5 @@
 # struct SectionRemeshOptions
 
-```cpp
-Defined at ../../include/geode/simplex/section/detail/remesh.h#22
-```
 
 ## Members
 

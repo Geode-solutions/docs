@@ -1,8 +1,5 @@
 # struct RepairSurface
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#585
-```
 
 ## Members
 
@@ -36,9 +33,6 @@ public int edges
 public void RepairSurface(RepairBRepSurfaces & repair, const Surface3D & surface_in)
 ```
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/3d/private/repair_brep_surfaces.h#587
-```
 
 
 

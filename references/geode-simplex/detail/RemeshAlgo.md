@@ -1,8 +1,5 @@
 # class RemeshAlgo
 
-```cpp
-Defined at ../../include/geode/simplex/private/surface/common/private/remesh_algo.h#28
-```
 
 ## Records
 
@@ -18,9 +15,6 @@ Impl
 protected void RemeshAlgo<dimension>(const Metric<dimension> & metric, absl::Span<const index_t> lock_vertices)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesh_algo.cpp#81
-```
 
 ### ~RemeshAlgo
 
@@ -28,9 +22,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected void ~RemeshAlgo<dimension>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesh_algo.cpp#88
-```
 
 ### common_output
 
@@ -38,9 +29,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected RemeshedSurface<dimension> common_output()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesh_algo.cpp#93
-```
 
 ### remeshed
 
@@ -48,9 +36,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected const TriangulatedSurface<dimension> & remeshed()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesh_algo.cpp#99
-```
 
 ### remeshed_builder
 
@@ -58,9 +43,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected TriangulatedSurfaceBuilder<dimension> & remeshed_builder()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesh_algo.cpp#106
-```
 
 ### lock_vertices
 
@@ -68,9 +50,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected absl::Span<const index_t> lock_vertices()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesh_algo.cpp#113
-```
 
 ### set_mapping
 
@@ -84,9 +63,6 @@ protected void set_mapping(std::vector<VertexOrigin> && mapping)
 protected void add_mapping(index_t background_vertex, bool is_locked)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesh_algo.cpp#127
-```
 
 ### metric
 
@@ -94,9 +70,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 protected const Metric<dimension> & metric()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesh_algo.cpp#134
-```
 
 ### set_mapping
 
@@ -104,9 +77,6 @@ Defined at /github/workspace/src/geode/simplex/private/surface/common/private/re
 public void set_mapping(int && mapping)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/simplex/private/surface/common/private/remesh_algo.cpp#120
-```
 
 
 
