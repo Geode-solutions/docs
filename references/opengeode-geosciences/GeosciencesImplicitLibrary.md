@@ -1,14 +1,8 @@
 # class GeosciencesImplicitLibrary
 
 ```cpp
-Defined at ../include/geode/geosciences/implicit/common.h#32
-```
-
-```cpp
 Inherits from Library
 ```
-
-
 
 ## Functions
 
@@ -17,10 +11,3 @@ Inherits from Library
 ```cpp
 public void initialize()
 ```
-
-```cpp
-Defined at ../include/geode/geosciences/implicit/common.h#32
-```
-
-
-

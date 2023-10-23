@@ -1,9 +1,5 @@
 # struct IndexToModelMeshElementsMapping
 
-```cpp
-Defined at ../include/geode/conversion/model/types.h#23
-```
-
 ## Members
 
 ```cpp
@@ -20,6 +16,3 @@ public GenericMapping lines
 public GenericMapping surfaces
 
 ```
-
-
-

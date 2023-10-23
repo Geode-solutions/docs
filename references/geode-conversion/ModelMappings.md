@@ -1,9 +1,5 @@
 # struct ModelMappings
 
-```cpp
-Defined at ../include/geode/conversion/model/types.h#51
-```
-
 ## Members
 
 ```cpp
@@ -20,6 +16,3 @@ public ModelMeshesElementMapping mesh_element_mapping
 public ModelMeshesVertexMapping mesh_vertices_mapping
 
 ```
-
-
-

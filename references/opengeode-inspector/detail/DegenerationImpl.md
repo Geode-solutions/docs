@@ -1,18 +1,8 @@
 # class DegenerationImpl
 
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#130
-```
-
 # class DegenerationImpl
 
-```cpp
-Defined at ../include/geode/inspector/criterion/private/degeneration_impl.h#36
-```
-
- Implementation of the inspection of the degeneration of a Mesh
-
-
+Implementation of the inspection of the degeneration of a Mesh
 
 ## Functions
 
@@ -22,18 +12,10 @@ Defined at ../include/geode/inspector/criterion/private/degeneration_impl.h#36
 public void ~DegenerationImpl<Mesh>()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#48
-```
-
 ### is_mesh_degenerated
 
 ```cpp
 public bool is_mesh_degenerated()
-```
-
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#53
 ```
 
 ### nb_degenerated_edges
@@ -42,18 +24,10 @@ Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_
 public index_t nb_degenerated_edges()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#66
-```
-
 ### degenerated_edges
 
 ```cpp
 public vector degenerated_edges()
-```
-
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#80
 ```
 
 ### DegenerationImpl
@@ -62,18 +36,10 @@ Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_
 protected void DegenerationImpl<Mesh>(const Mesh & mesh, bool verbose)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#40
-```
-
 ### mesh
 
 ```cpp
 protected const Mesh & mesh()
-```
-
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#114
 ```
 
 ### verbose
@@ -82,21 +48,6 @@ Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_
 protected bool verbose()
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#120
-```
-
-
-
 # class DegenerationImpl
 
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#126
-```
-
 # class DegenerationImpl
-
-```cpp
-Defined at /github/workspace/src/geode/inspector/criterion/private/degeneration_impl.cpp#128
-```
-

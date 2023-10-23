@@ -1,9 +1,5 @@
 # struct Quad
 
-```cpp
-Defined at ../include/geode/hybrid/brep/private/hybrid_combining_data.h#41
-```
-
 ## Members
 
 ```cpp
@@ -20,6 +16,3 @@ public array edges
 public InlinedVector triangles
 
 ```
-
-
-

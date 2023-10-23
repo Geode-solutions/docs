@@ -1,9 +1,5 @@
 # struct ExtractedElements
 
-```cpp
-Defined at ../../include/geode/numerics/frame_field/frame_field_parameterization.h#28
-```
-
 ## Members
 
 ```cpp
@@ -30,6 +26,3 @@ public flat_hash_map surface_mapping
 public flat_hash_map block_mapping
 
 ```
-
-
-

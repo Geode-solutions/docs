@@ -1,9 +1,5 @@
 # struct Hex
 
-```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#640
-```
-
 ## Members
 
 ```cpp
@@ -36,8 +32,6 @@ public int local_parameterization
 
 ```
 
-
-
 ## Functions
 
 ### Hex
@@ -46,18 +40,10 @@ public int local_parameterization
 public void Hex(const Point3D & center)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#642
-```
-
 ### is_complete
 
 ```cpp
 public bool is_complete()
-```
-
-```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#658
 ```
 
 ### done
@@ -66,19 +52,8 @@ Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_paramete
 public bool done(local_index_t vertex)
 ```
 
-```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#670
-```
-
 ### is_visited
 
 ```cpp
 public bool is_visited(index_t element)
 ```
-
-```cpp
-Defined at /github/workspace/src/geode/numerics/frame_field/frame_field_parameterization.cpp#675
-```
-
-
-

@@ -1,14 +1,8 @@
 # class VTMSectionOutput
 
 ```cpp
-Defined at ../../include/geode/io/model/private/vtm_section_output.h#37
-```
-
-```cpp
 Inherits from SectionOutput
 ```
-
-
 
 ## Functions
 
@@ -18,18 +12,10 @@ Inherits from SectionOutput
 public void VTMSectionOutput(string_view filename)
 ```
 
-```cpp
-Defined at ../../include/geode/io/model/private/vtm_section_output.h#40
-```
-
 ### extension
 
 ```cpp
 public string_view extension()
-```
-
-```cpp
-Defined at ../../include/geode/io/model/private/vtm_section_output.h#45
 ```
 
 ### write
@@ -37,10 +23,3 @@ Defined at ../../include/geode/io/model/private/vtm_section_output.h#45
 ```cpp
 public void write(const Section & section)
 ```
-
-```cpp
-Defined at /github/workspace/src/geode/io/model/vtm_section_output.cpp#55
-```
-
-
-
