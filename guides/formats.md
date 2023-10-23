@@ -42,6 +42,8 @@ import CodeExample from '/components/CodeExample.vue'
 | .og_stgm    | [`StratigraphicModel`]      |
 | .og_stgs    | [`StratigraphicSection`]    |
 
+# Supported file formats
+
 ## Using OpenGeode-IO
 
 | File format | OpenGeode object                                                                                                                                                  | Input | Output | Notes                                                                                                               |
