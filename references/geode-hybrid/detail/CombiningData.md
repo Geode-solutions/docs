@@ -1,12 +1,29 @@
-# class CombiningData
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
 
 # class CombiningData
+
+
+# class CombiningData
+
 
 ## Records
 
 Quad
 
 Hex
+
+
 
 ## Functions
 
@@ -16,11 +33,13 @@ Hex
 public void CombiningData<DataModel>(const CombiningData<DataModel> & )
 ```
 
+
 ### operator=
 
 ```cpp
 public CombiningData<DataModel> & operator=(const CombiningData<DataModel> & )
 ```
+
 
 ### CombiningData
 
@@ -28,11 +47,13 @@ public CombiningData<DataModel> & operator=(const CombiningData<DataModel> & )
 public void CombiningData<DataModel>(CombiningData<DataModel> && )
 ```
 
+
 ### operator=
 
 ```cpp
 public CombiningData<DataModel> & operator=(CombiningData<DataModel> && )
 ```
+
 
 ### CombiningData
 
@@ -40,11 +61,13 @@ public CombiningData<DataModel> & operator=(CombiningData<DataModel> && )
 public void CombiningData<DataModel>(Model & model, const class FrameFieldParameterization::ExtractedElements & elements)
 ```
 
+
 ### ~CombiningData
 
 ```cpp
 public void ~CombiningData<DataModel>()
 ```
+
 
 ### model
 
@@ -52,11 +75,13 @@ public void ~CombiningData<DataModel>()
 public const Model & model()
 ```
 
+
 ### builder
 
 ```cpp
 public Builder & builder()
 ```
+
 
 ### modifier
 
@@ -64,11 +89,13 @@ public Builder & builder()
 public Modifier & modifier()
 ```
 
+
 ### unique_vertices_mapping
 
 ```cpp
 public BijectiveMapping<index_t> & unique_vertices_mapping()
 ```
+
 
 ### elements
 
@@ -76,11 +103,13 @@ public BijectiveMapping<index_t> & unique_vertices_mapping()
 public const class FrameFieldParameterization::ExtractedElements & elements()
 ```
 
+
 ### register_quad
 
 ```cpp
 public void register_quad(const Surface3D & surface, index_t quad_id, Quad quad)
 ```
+
 
 ### nb_quads
 
@@ -88,11 +117,13 @@ public void register_quad(const Surface3D & surface, index_t quad_id, Quad quad)
 public index_t nb_quads(const Surface3D & surface)
 ```
 
+
 ### quad
 
 ```cpp
 public const absl::optional<Quad> & quad(const Surface3D & surface, index_t quad_id)
 ```
+
 
 ### register_hex
 
@@ -100,11 +131,13 @@ public const absl::optional<Quad> & quad(const Surface3D & surface, index_t quad
 public void register_hex(const Block3D & block, index_t hex_id, Hex hex)
 ```
 
+
 ### nb_hexes
 
 ```cpp
 public index_t nb_hexes(const Block3D & block)
 ```
+
 
 ### hex
 
@@ -112,14 +145,20 @@ public index_t nb_hexes(const Block3D & block)
 public const absl::optional<Hex> & hex(const Block3D & block, index_t hex_id)
 ```
 
+
 ### convert_to_hybrid_storage
 
 ```cpp
 public void convert_to_hybrid_storage()
 ```
 
+
 ### clean
 
 ```cpp
 public CleanMappings clean()
 ```
+
+
+
+
