@@ -1,24 +1,11 @@
-.. index:: pair: struct; geode::Modifier<BRep>
-.. _doxid-structgeode_1_1_modifier_3_01_b_rep_01_4:
+.. index:: pair: struct; geode::Modifier
+.. _doxid-structgeode_1_1_modifier:
 
-template struct geode::Modifier<BRep>
-=====================================
+template struct geode::Modifier
+===============================
 
 .. toctree::
 	:hidden:
 
 
 
-
-.. ref-code-block:: cpp
-	:class: doxyrest-overview-code-block
-
-	#include <brep_geometric_modifier.h>
-	
-	template <>
-	struct Modifier<BRep>
-	{
-		// typedefs
-	
-		typedef :ref:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier>` :target:`type<doxid-structgeode_1_1_modifier_3_01_b_rep_01_4_1aed930cf0574130ea90f12c39a6eb2b8c>`;
-	};

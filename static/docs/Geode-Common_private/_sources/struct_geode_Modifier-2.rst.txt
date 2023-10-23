@@ -1,8 +1,8 @@
-.. index:: pair: struct; geode::Modifier<TetrahedralSolid3D>
-.. _doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4:
+.. index:: pair: struct; geode::Modifier<Section>
+.. _doxid-structgeode_1_1_modifier_3_01_section_01_4:
 
-template struct geode::Modifier<TetrahedralSolid3D>
-===================================================
+template struct geode::Modifier<Section>
+========================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct geode::Modifier<TetrahedralSolid3D>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <tetrahedral_solid_modifier.h>
+	#include <section_geometric_modifier.h>
 	
 	template <>
-	struct Modifier<TetrahedralSolid3D>
+	struct Modifier<Section>
 	{
 		// typedefs
 	
-		typedef :ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>` :target:`type<doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4_1a2a1a02a8367af4ef4d3bee86151ae2e9>`;
+		typedef :ref:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier>` :target:`type<doxid-structgeode_1_1_modifier_3_01_section_01_4_1a0adda38a8249242ebd1debe4905ec6a8>`;
 	};

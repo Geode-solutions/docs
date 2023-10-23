@@ -1,0 +1,50 @@
+.. index:: pair: struct; geode::BlockSwapFacetValidities
+.. _doxid-structgeode_1_1_block_swap_facet_validities:
+
+struct geode::BlockSwapFacetValidities
+======================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BlockSwapFacetValidities
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolyhedronFacet, :ref:`SolidSwapFacetValidity<doxid-structgeode_1_1_solid_swap_facet_validity>`>>> :ref:`MeshInvalidities<doxid-structgeode_1_1_block_swap_facet_validities_1a4e29a28bffbe5a199e9f67fbfd262815>`;
+
+		// fields
+	
+		:ref:`MeshInvalidities<doxid-structgeode_1_1_block_swap_facet_validities_1a4e29a28bffbe5a199e9f67fbfd262815>` :target:`mesh_invalidities<doxid-structgeode_1_1_block_swap_facet_validities_1a2bef4e485902cd3ff4ea818f6d320315>` {};
+	};
+.. _details-structgeode_1_1_block_swap_facet_validities:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Typedefs
+--------
+
+.. index:: pair: typedef; MeshInvalidities
+.. _doxid-structgeode_1_1_block_swap_facet_validities_1a4e29a28bffbe5a199e9f67fbfd262815:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolyhedronFacet, :ref:`SolidSwapFacetValidity<doxid-structgeode_1_1_solid_swap_facet_validity>`>>> MeshInvalidities
+
+Information on how the meshes become invalid or not.
+
