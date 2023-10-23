@@ -1,3 +1,16 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # namespace geode
 
 
@@ -17,11 +30,13 @@
 * [BRepSplitEdgeValidity](BRepSplitEdgeValidity.md)
 * [BRepSplitTriangleValidity](BRepSplitTriangleValidity.md)
 * [BRepSwapEdgeValidity](BRepSwapEdgeValidity.md)
+* [BRepSwapFacetValidity](BRepSwapFacetValidity.md)
 * [BlockCollapseEdgeValidities](BlockCollapseEdgeValidities.md)
 * [BlockMovePointValidities](BlockMovePointValidities.md)
 * [BlockSplitEdgeValidities](BlockSplitEdgeValidities.md)
 * [BlockSplitFacetValidities](BlockSplitFacetValidities.md)
 * [BlockSwapEdgeValidities](BlockSwapEdgeValidities.md)
+* [BlockSwapFacetValidities](BlockSwapFacetValidities.md)
 * [CommonCoreLibrary](CommonCoreLibrary.md)
 * [CommonCutterSolidLibrary](CommonCutterSolidLibrary.md)
 * [CommonCutterSurfaceLibrary](CommonCutterSurfaceLibrary.md)
@@ -108,6 +123,7 @@
 * [SurfaceSplitTriangleValidity](SurfaceSplitTriangleValidity.md)
 * [SurfaceSwapEdgeValidities](SurfaceSwapEdgeValidities.md)
 * [SurfaceSwapEdgeValidity](SurfaceSwapEdgeValidity.md)
+* [SurfaceSwapFacetValidities](SurfaceSwapFacetValidities.md)
 * [SurfaceTopologicalValidity](SurfaceTopologicalValidity.md)
 * [SwapTetrahedraAfter](SwapTetrahedraAfter.md)
 * [SwapTrianglesAfter](SwapTrianglesAfter.md)
@@ -1033,6 +1049,20 @@ BRepSplitTriangleValidity split_facet_validity(const BRep & brep, const Block3D 
 
 ```cpp
 BRepSplitTriangleValidity split_triangle_validity(const BRep & brep, const Surface3D & surface, index_t triangle, const Point3D & point)
+```
+
+
+### is_swap_facet_valid
+
+```cpp
+bool is_swap_facet_valid(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet)
+```
+
+
+### swap_facet_validity
+
+```cpp
+BRepSwapFacetValidity swap_facet_validity(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet)
 ```
 
 

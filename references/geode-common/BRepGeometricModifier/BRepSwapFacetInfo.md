@@ -11,23 +11,15 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct EdgedCurveMovePointValidity
+# struct BRepSwapFacetInfo
 
 
-```cpp
-Inherits from EdgedCurveTopologicalValidity
-```
-
-
-
-## Functions
-
-### operator bool
+## Members
 
 ```cpp
-public bool operator bool()
-```
+public flat_hash_map block_info
 
+```
 
 
 

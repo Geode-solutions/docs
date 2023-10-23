@@ -11,23 +11,15 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct EdgedCurveMovePointValidity
+# struct SurfaceSwapFacetValidities
 
 
-```cpp
-Inherits from EdgedCurveTopologicalValidity
-```
-
-
-
-## Functions
-
-### operator bool
+## Members
 
 ```cpp
-public bool operator bool()
-```
+public int invalid_surfaces
 
+```
 
 
 

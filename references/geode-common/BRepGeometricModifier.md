@@ -1,3 +1,16 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class BRepGeometricModifier
 
 
@@ -24,6 +37,8 @@ BRepSplitPolygonEdgeInfo
 BRepCollapsePolygonEdgeInfo
 
 BRepSwapEdgeInfo
+
+BRepSwapFacetInfo
 
 Impl
 
@@ -112,6 +127,13 @@ public BRepSplitPolygonEdgeInfo split_edge(const Surface3D & surface, const Poly
 
 ```cpp
 public BRepSplitPolygonEdgeInfo split_edge(const Line3D & line, index_t edge, const Point3D & point)
+```
+
+
+### swap_facet
+
+```cpp
+public BRepSwapFacetInfo swap_facet(const Block3D & block, const PolyhedronFacet & facet)
 ```
 
 
