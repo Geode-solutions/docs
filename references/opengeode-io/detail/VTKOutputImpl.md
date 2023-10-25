@@ -1,4 +1,18 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class VTKOutputImpl
+
 
 ## Functions
 
@@ -8,11 +22,13 @@
 public void write_file()
 ```
 
+
 ### VTKOutputImpl
 
 ```cpp
 protected void VTKOutputImpl<Mesh>(string_view filename, const Mesh & mesh, const char * type)
 ```
+
 
 ### ~VTKOutputImpl
 
@@ -20,11 +36,13 @@ protected void VTKOutputImpl<Mesh>(string_view filename, const Mesh & mesh, cons
 protected void ~VTKOutputImpl<Mesh>()
 ```
 
+
 ### mesh
 
 ```cpp
 protected const Mesh & mesh()
 ```
+
 
 ### filename
 
@@ -32,11 +50,13 @@ protected const Mesh & mesh()
 protected string_view filename()
 ```
 
+
 ### write_attributes
 
 ```cpp
 protected void write_attributes(pugi::xml_node & attribute_node, const AttributeManager & manager)
 ```
+
 
 ### write_attributes
 
@@ -44,8 +64,13 @@ protected void write_attributes(pugi::xml_node & attribute_node, const Attribute
 protected void write_attributes(pugi::xml_node & attribute_node, const AttributeManager & manager, Span elements)
 ```
 
+
 ### write_attribute_header
 
 ```cpp
 protected xml_node write_attribute_header(pugi::xml_node & attribute_node, string_view name, local_index_t nb_components)
 ```
+
+
+
+
