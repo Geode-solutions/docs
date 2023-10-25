@@ -1,8 +1,24 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class PGP3D
+
 
 ## Records
 
 Constraint
+
+
 
 ## Functions
 
@@ -12,11 +28,13 @@ Constraint
 public void PGP3D(class FrameFieldParameterization::Impl & impl, double mesh_size)
 ```
 
+
 ### compute_parameterization
 
 ```cpp
 public void compute_parameterization()
 ```
+
 
 ### translation
 
@@ -24,8 +42,13 @@ public void compute_parameterization()
 public Vector3D translation(index_t i, index_t j)
 ```
 
+
 ### compute_constant
 
 ```cpp
 public Vector3D compute_constant(index_t vertex_i, index_t vertex_j, const FrameTransform3D & mapping)
 ```
+
+
+
+
