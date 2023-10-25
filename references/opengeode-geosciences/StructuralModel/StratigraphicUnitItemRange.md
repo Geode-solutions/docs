@@ -1,8 +1,24 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class StratigraphicUnitItemRange
+
 
 ```cpp
 Inherits from ItemRangeIterator
 ```
+
+
 
 ## Functions
 
@@ -12,11 +28,13 @@ Inherits from ItemRangeIterator
 public void StratigraphicUnitItemRange(const StructuralModel & structural_model, const StratigraphicUnit3D & stratigraphic_unit)
 ```
 
+
 ### StratigraphicUnitItemRange
 
 ```cpp
 public void StratigraphicUnitItemRange(const StratigraphicUnitItemRange & range)
 ```
+
 
 ### ~StratigraphicUnitItemRange
 
@@ -24,11 +42,13 @@ public void StratigraphicUnitItemRange(const StratigraphicUnitItemRange & range)
 public void ~StratigraphicUnitItemRange()
 ```
 
+
 ### begin
 
 ```cpp
 public const StratigraphicUnitItemRange & begin()
 ```
+
 
 ### end
 
@@ -36,8 +56,13 @@ public const StratigraphicUnitItemRange & begin()
 public const StratigraphicUnitItemRange & end()
 ```
 
-### operator\*
+
+### operator*
 
 ```cpp
 public const Block3D & operator*()
 ```
+
+
+
+

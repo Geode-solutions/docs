@@ -1,16 +1,37 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class Horizon
+
 
 ```cpp
 Inherits from Component<2U>
 ```
 
+
+
 # class Horizon
 
-Geological component describing a Horizon. This component is described by a horizon type.
+
+ Geological component describing a Horizon. This component is described by a horizon type.
+
+
 
 ```cpp
 Inherits from Component<dimension>
 ```
+
+
 
 ## Functions
 
@@ -20,11 +41,13 @@ Inherits from Component<dimension>
 public void Horizon<dimension>(const Horizon<dimension> & )
 ```
 
+
 ### operator=
 
 ```cpp
 public Horizon<dimension> & operator=(const Horizon<dimension> & )
 ```
+
 
 ### Horizon
 
@@ -32,11 +55,13 @@ public Horizon<dimension> & operator=(const Horizon<dimension> & )
 public void Horizon<dimension>(Horizon<dimension> && other)
 ```
 
+
 ### ~Horizon
 
 ```cpp
 public void ~Horizon<dimension>()
 ```
+
 
 ### component_type_static
 
@@ -44,11 +69,13 @@ public void ~Horizon<dimension>()
 public NamedType component_type_static()
 ```
 
+
 ### component_type
 
 ```cpp
 public NamedType component_type()
 ```
+
 
 ### component_id
 
@@ -56,11 +83,13 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+
 ### has_type
 
 ```cpp
 public bool has_type()
 ```
+
 
 ### type
 
@@ -68,11 +97,13 @@ public bool has_type()
 public HORIZON_TYPE type()
 ```
 
+
 ### Horizon
 
 ```cpp
 public void Horizon<dimension>(HorizonsKey )
 ```
+
 
 ### Horizon
 
@@ -80,17 +111,22 @@ public void Horizon<dimension>(HorizonsKey )
 public void Horizon<dimension>(HORIZON_TYPE type, HorizonsKey )
 ```
 
+
 ### set_type
 
 ```cpp
 public void set_type(HORIZON_TYPE type, HorizonsBuilderKey )
 ```
 
+
 ### set_horizon_name
 
 ```cpp
 public void set_horizon_name(string_view name, HorizonsBuilderKey )
 ```
+
+
+
 
 ## Enums
 
@@ -104,8 +140,16 @@ public void set_horizon_name(string_view name, HorizonsBuilderKey )
 | TOPOGRAPHY |
 | INTRUSION |
 
+
+
+
+
 # class Horizon
+
 
 ```cpp
 Inherits from Component<3U>
 ```
+
+
+

@@ -1,10 +1,28 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class Fault
 
-Geological component describing a Fault. This component is described by a fault type.
+
+ Geological component describing a Fault. This component is described by a fault type.
+
+
 
 ```cpp
 Inherits from Component<dimension>
 ```
+
+
 
 ## Functions
 
@@ -14,11 +32,13 @@ Inherits from Component<dimension>
 public void Fault<dimension>(const Fault<dimension> & )
 ```
 
+
 ### operator=
 
 ```cpp
 public Fault<dimension> & operator=(const Fault<dimension> & )
 ```
+
 
 ### Fault
 
@@ -26,11 +46,13 @@ public Fault<dimension> & operator=(const Fault<dimension> & )
 public void Fault<dimension>(Fault<dimension> && other)
 ```
 
+
 ### ~Fault
 
 ```cpp
 public void ~Fault<dimension>()
 ```
+
 
 ### component_type_static
 
@@ -38,11 +60,13 @@ public void ~Fault<dimension>()
 public NamedType component_type_static()
 ```
 
+
 ### component_type
 
 ```cpp
 public NamedType component_type()
 ```
+
 
 ### component_id
 
@@ -50,11 +74,13 @@ public NamedType component_type()
 public ComponentID component_id()
 ```
 
+
 ### has_type
 
 ```cpp
 public bool has_type()
 ```
+
 
 ### type
 
@@ -62,11 +88,13 @@ public bool has_type()
 public FAULT_TYPE type()
 ```
 
+
 ### Fault
 
 ```cpp
 public void Fault<dimension>(FaultsKey )
 ```
+
 
 ### Fault
 
@@ -74,17 +102,22 @@ public void Fault<dimension>(FaultsKey )
 public void Fault<dimension>(FAULT_TYPE type, FaultsKey )
 ```
 
+
 ### set_type
 
 ```cpp
 public void set_type(FAULT_TYPE type, FaultsBuilderKey )
 ```
 
+
 ### set_fault_name
 
 ```cpp
 public void set_fault_name(string_view name, FaultsBuilderKey )
 ```
+
+
+
 
 ## Enums
 
@@ -99,14 +132,25 @@ public void set_fault_name(string_view name, FaultsBuilderKey )
 | LISTRIC |
 | DECOLLEMENT |
 
+
+
+
+
 # class Fault
+
 
 ```cpp
 Inherits from Component<3U>
 ```
 
+
+
 # class Fault
+
 
 ```cpp
 Inherits from Component<2U>
 ```
+
+
+

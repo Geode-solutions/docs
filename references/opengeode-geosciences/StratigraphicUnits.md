@@ -1,14 +1,32 @@
-# class StratigraphicUnits
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
 
 # class StratigraphicUnits
 
+
 # class StratigraphicUnits
+
+
+# class StratigraphicUnits
+
 
 ## Records
 
 StratigraphicUnitRangeBase
 
 StratigraphicUnitRange
+
+
 
 ## Functions
 
@@ -18,11 +36,13 @@ StratigraphicUnitRange
 public void StratigraphicUnits<>(const StratigraphicUnits<> & )
 ```
 
+
 ### operator=
 
 ```cpp
 public StratigraphicUnits<> & operator=(const StratigraphicUnits<> & )
 ```
+
 
 ### ~StratigraphicUnits
 
@@ -30,11 +50,13 @@ public StratigraphicUnits<> & operator=(const StratigraphicUnits<> & )
 public void ~StratigraphicUnits<>()
 ```
 
+
 ### nb_stratigraphic_units
 
 ```cpp
 public index_t nb_stratigraphic_units()
 ```
+
 
 ### has_stratigraphic_unit
 
@@ -42,11 +64,13 @@ public index_t nb_stratigraphic_units()
 public bool has_stratigraphic_unit(const uuid & id)
 ```
 
+
 ### stratigraphic_unit
 
 ```cpp
 public const StratigraphicUnit<dimension> & stratigraphic_unit(const uuid & id)
 ```
+
 
 ### stratigraphic_units
 
@@ -54,11 +78,13 @@ public const StratigraphicUnit<dimension> & stratigraphic_unit(const uuid & id)
 public StratigraphicUnitRange stratigraphic_units()
 ```
 
+
 ### save_stratigraphic_units
 
 ```cpp
 public void save_stratigraphic_units(string_view directory)
 ```
+
 
 ### StratigraphicUnits
 
@@ -66,14 +92,20 @@ public void save_stratigraphic_units(string_view directory)
 protected void StratigraphicUnits<>()
 ```
 
+
 ### StratigraphicUnits
 
 ```cpp
 protected void StratigraphicUnits<>(StratigraphicUnits<> && )
 ```
 
+
 ### operator=
 
 ```cpp
 protected StratigraphicUnits<dimension> & operator=(StratigraphicUnits<dimension> && other)
 ```
+
+
+
+

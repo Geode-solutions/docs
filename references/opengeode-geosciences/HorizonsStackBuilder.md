@@ -1,26 +1,43 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class HorizonsStackBuilder
+
 
 ```cpp
 Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<3U>, StratigraphicUnitsBuilder<3U>, IdentifierBuilder
 ```
 
-# class HorizonsStackBuilder
 
-```cpp
-Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
-```
 
 # class HorizonsStackBuilder
 
-Class managing modifications of a HorizonsStack**extends** **extends** **extends**
+
+ Class managing modifications of a HorizonsStack**extends** **extends** **extends** 
+
+
 
 ```cpp
 Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<dimension>, StratigraphicUnitsBuilder<dimension>, IdentifierBuilder
 ```
 
+
+
 ## Records
 
 InsertedHorizonInfo
+
+
 
 ## Functions
 
@@ -30,11 +47,13 @@ InsertedHorizonInfo
 public void HorizonsStackBuilder<>(const HorizonsStackBuilder<> & )
 ```
 
+
 ### operator=
 
 ```cpp
 public HorizonsStackBuilder<> & operator=(const HorizonsStackBuilder<> & )
 ```
+
 
 ### HorizonsStackBuilder
 
@@ -42,11 +61,13 @@ public HorizonsStackBuilder<> & operator=(const HorizonsStackBuilder<> & )
 public void HorizonsStackBuilder<>(HorizonsStack<dimension> & horizons_stack)
 ```
 
+
 ### HorizonsStackBuilder
 
 ```cpp
 public void HorizonsStackBuilder<>(HorizonsStackBuilder<dimension> && )
 ```
+
 
 ### copy
 
@@ -54,11 +75,13 @@ public void HorizonsStackBuilder<>(HorizonsStackBuilder<dimension> && )
 public ModelMapping copy(const HorizonsStack<dimension> & horizons_stack)
 ```
 
+
 ### copy_components
 
 ```cpp
 public ModelMapping copy_components(const HorizonsStack<dimension> & horizons_stack)
 ```
+
 
 ### copy
 
@@ -66,7 +89,8 @@ public ModelMapping copy_components(const HorizonsStack<dimension> & horizons_st
 public void copy(ModelCopyMapping & mapping, const HorizonsStack<dimension> & horizons_stack)
 ```
 
-Copies the stack with the component uuids given by the mapping. Components for which the mapping does not exist are created with a new uuid and added to the mapping.
+
+ Copies the stack with the component uuids given by the mapping. Components for which the mapping does not exist are created with a new uuid and added to the mapping.
 
 ### copy_components
 
@@ -74,7 +98,8 @@ Copies the stack with the component uuids given by the mapping. Components for w
 public void copy_components(ModelCopyMapping & mapping, const HorizonsStack<dimension> & horizons_stack)
 ```
 
-Copies the components with the uuid given by the mapping. If the mapping does not exist, creates a component with a new uuid and adds it to the mapping.
+
+ Copies the components with the uuid given by the mapping. If the mapping does not exist, creates a component with a new uuid and adds it to the mapping.
 
 ### add_horizon
 
@@ -82,11 +107,13 @@ Copies the components with the uuid given by the mapping. If the mapping does no
 public const uuid & add_horizon()
 ```
 
+
 ### add_horizon
 
 ```cpp
 public void add_horizon(uuid horizon_id)
 ```
+
 
 ### add_stratigraphic_unit
 
@@ -94,11 +121,13 @@ public void add_horizon(uuid horizon_id)
 public const uuid & add_stratigraphic_unit()
 ```
 
+
 ### add_stratigraphic_unit
 
 ```cpp
 public void add_stratigraphic_unit(uuid stratigraphic_unit_id)
 ```
+
 
 ### add_horizon_in_stratigraphic_unit
 
@@ -106,11 +135,13 @@ public void add_stratigraphic_unit(uuid stratigraphic_unit_id)
 public InsertedHorizonInfo add_horizon_in_stratigraphic_unit(const StratigraphicUnit<dimension> & strati_unit)
 ```
 
+
 ### add_horizon_above
 
 ```cpp
 public void add_horizon_above(const Horizon<dimension> & horizon_above, const StratigraphicUnit<dimension> & strati_unit_under)
 ```
+
 
 ### add_horizon_under
 
@@ -118,11 +149,13 @@ public void add_horizon_above(const Horizon<dimension> & horizon_above, const St
 public void add_horizon_under(const Horizon<dimension> & horizon_under, const StratigraphicUnit<dimension> & strati_unit_above)
 ```
 
+
 ### add_erosion_above
 
 ```cpp
 public void add_erosion_above(const Horizon<dimension> & erosion_horizon, const StratigraphicUnit<dimension> & eroded_unit)
 ```
+
 
 ### add_baselap_under
 
@@ -130,14 +163,29 @@ public void add_erosion_above(const Horizon<dimension> & erosion_horizon, const 
 public void add_baselap_under(const Horizon<dimension> & baselap_horizon, const StratigraphicUnit<dimension> & baselaping_unit)
 ```
 
+
 ### remove_horizon
 
 ```cpp
 public void remove_horizon(const Horizon<dimension> & horizon)
 ```
 
+
 ### remove_stratigraphic_unit
 
 ```cpp
 public void remove_stratigraphic_unit(const StratigraphicUnit<dimension> & stratigraphic_unit)
 ```
+
+
+
+
+# class HorizonsStackBuilder
+
+
+```cpp
+Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
+```
+
+
+

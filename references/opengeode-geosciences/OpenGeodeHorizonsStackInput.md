@@ -1,14 +1,33 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class OpenGeodeHorizonsStackInput
+
 
 ```cpp
 Inherits from HorizonsStackInput<3U>
 ```
 
+
+
 # class OpenGeodeHorizonsStackInput
+
 
 ```cpp
 Inherits from HorizonsStackInput<dimension>
 ```
+
+
 
 ## Functions
 
@@ -18,11 +37,13 @@ Inherits from HorizonsStackInput<dimension>
 public void OpenGeodeHorizonsStackInput<dimension>(string_view filename)
 ```
 
+
 ### extension
 
 ```cpp
 public string_view extension()
 ```
+
 
 ### load_horizons_stack_files
 
@@ -30,14 +51,22 @@ public string_view extension()
 public void load_horizons_stack_files(HorizonsStack<dimension> & horizons_stack, string_view directory)
 ```
 
+
 ### read
 
 ```cpp
 public HorizonsStack<dimension> read()
 ```
 
+
+
+
 # class OpenGeodeHorizonsStackInput
+
 
 ```cpp
 Inherits from HorizonsStackInput<2U>
 ```
+
+
+

@@ -1,14 +1,34 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class ImplicitCrossSection
 
-An ImplicitCrossSection is a CrossSection where each surface has a specific attribute to store the stratigraphic coordinates of its vertices.
+
+ An ImplicitCrossSection is a CrossSection where each surface has a specific attribute to store the stratigraphic coordinates of its vertices.
+
+
 
 ```cpp
 Inherits from CrossSection
 ```
 
+
+
 ## Records
 
 Impl
+
+
 
 ## Functions
 
@@ -18,11 +38,13 @@ Impl
 public void ImplicitCrossSection()
 ```
 
+
 ### ImplicitCrossSection
 
 ```cpp
 public void ImplicitCrossSection(ImplicitCrossSection && implicit_model)
 ```
+
 
 ### ImplicitCrossSection
 
@@ -30,11 +52,13 @@ public void ImplicitCrossSection(ImplicitCrossSection && implicit_model)
 public void ImplicitCrossSection(CrossSection && cross_section)
 ```
 
+
 ### ~ImplicitCrossSection
 
 ```cpp
 public void ~ImplicitCrossSection()
 ```
+
 
 ### native_extension_static
 
@@ -42,11 +66,13 @@ public void ~ImplicitCrossSection()
 public string_view native_extension_static()
 ```
 
+
 ### native_extension
 
 ```cpp
 public string_view native_extension()
 ```
+
 
 ### implicit_value
 
@@ -54,7 +80,8 @@ public string_view native_extension()
 public double implicit_value(const Surface2D & surface, index_t vertex_id)
 ```
 
-Return the implicit value of the given vertex of the given surface.
+
+ Return the implicit value of the given vertex of the given surface.
 
 ### implicit_value
 
@@ -62,7 +89,8 @@ Return the implicit value of the given vertex of the given surface.
 public optional implicit_value(const Surface2D & surface, const Point2D & point)
 ```
 
-Return the implicit value of the point, calculated in the polygon containing the given point in the given surface, if there is any.
+
+ Return the implicit value of the point, calculated in the polygon containing the given point in the given surface, if there is any.
 
 ### implicit_value
 
@@ -70,7 +98,8 @@ Return the implicit value of the point, calculated in the polygon containing the
 public double implicit_value(const Surface2D & surface, const Point2D & point, index_t polygon_id)
 ```
 
-Return the implicit value of the point, calculated in the given polygon of the given surface.
+
+ Return the implicit value of the point, calculated in the given polygon of the given surface.
 
 ### containing_polygon
 
@@ -78,7 +107,8 @@ Return the implicit value of the point, calculated in the given polygon of the g
 public absl::optional<index_t> containing_polygon(const Surface2D & surface, const Point2D & point)
 ```
 
-Returns the surface polygon containing the given point, if there is any.
+
+ Returns the surface polygon containing the given point, if there is any.
 
 ### horizons_stack
 
@@ -86,11 +116,13 @@ Returns the surface polygon containing the given point, if there is any.
 public const HorizonsStack2D & horizons_stack()
 ```
 
+
 ### horizon_implicit_value
 
 ```cpp
 public optional horizon_implicit_value(const Horizon2D & horizon)
 ```
+
 
 ### implicit_value_is_above_horizon
 
@@ -98,11 +130,13 @@ public optional horizon_implicit_value(const Horizon2D & horizon)
 public bool implicit_value_is_above_horizon(double implicit_function_value, const Horizon2D & horizon)
 ```
 
+
 ### containing_stratigraphic_unit
 
 ```cpp
 public absl::optional<uuid> containing_stratigraphic_unit(implicit_attribute_type implicit_function_value)
 ```
+
 
 ### initialize_implicit_query_trees
 
@@ -110,11 +144,13 @@ public absl::optional<uuid> containing_stratigraphic_unit(implicit_attribute_typ
 public void initialize_implicit_query_trees(PassKey )
 ```
 
+
 ### instantiate_implicit_attribute_on_surfaces
 
 ```cpp
 public void instantiate_implicit_attribute_on_surfaces(PassKey )
 ```
+
 
 ### set_implicit_value
 
@@ -122,11 +158,13 @@ public void instantiate_implicit_attribute_on_surfaces(PassKey )
 public void set_implicit_value(const Surface2D & surface, index_t vertex_id, double value, PassKey )
 ```
 
+
 ### set_horizons_stack
 
 ```cpp
 public void set_horizons_stack(HorizonsStack2D && stack, PassKey )
 ```
+
 
 ### set_horizon_implicit_value
 
@@ -134,14 +172,20 @@ public void set_horizons_stack(HorizonsStack2D && stack, PassKey )
 public void set_horizon_implicit_value(const Horizon2D & horizon, implicit_attribute_type isovalue, PassKey )
 ```
 
+
 ### modifiable_horizons_stack
 
 ```cpp
 public HorizonsStack2D & modifiable_horizons_stack(PassKey )
 ```
 
+
 ### do_set_implicit_value
 
 ```cpp
 protected void do_set_implicit_value(const Surface2D & surface, index_t vertex_id, double value)
 ```
+
+
+
+
