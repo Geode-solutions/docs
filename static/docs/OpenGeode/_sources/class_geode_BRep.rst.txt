@@ -273,12 +273,12 @@ Inherited Members
 		bool :ref:`is_unique_vertex_isolated<doxid-classgeode_1_1_vertex_identifier_1a11b48ab205ab3ec266bbee9389050461>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id) const;
 		const std::vector<:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`>& :ref:`component_mesh_vertices<doxid-classgeode_1_1_vertex_identifier_1af914ee0ec482214e1e5442e1594a8306>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id) const;
 	
-		std::vector<:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> :ref:`component_mesh_vertices<doxid-classgeode_1_1_vertex_identifier_1ae90118e8736628e0aa7bd2434f36fcf7>`(
+		OPENGEODE_MODEL_DEPRECATED std::vector<:ref:`ComponentMeshVertex<doxid-structgeode_1_1_component_mesh_vertex>`> :ref:`component_mesh_vertices<doxid-classgeode_1_1_vertex_identifier_1a239005d09d023e85dcd9a1a1b5c45f93>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
 			const :ref:`ComponentType<doxid-namespacegeode_1a21470130d8cd560c7be98c9e4207e526>`& type
 			) const;
 	
-		std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`component_mesh_vertices<doxid-classgeode_1_1_vertex_identifier_1a5f904087d551a9a83c65ef0ccebc8c39>`(
+		OPENGEODE_MODEL_DEPRECATED std::vector<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`> :ref:`component_mesh_vertices<doxid-classgeode_1_1_vertex_identifier_1addd8522ad8dc7b42d28469420432ea18>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` unique_vertex_id,
 			const :ref:`uuid<doxid-structgeode_1_1uuid>`& component_id
 			) const;
