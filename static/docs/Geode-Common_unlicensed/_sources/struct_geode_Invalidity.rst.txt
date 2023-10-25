@@ -1,0 +1,29 @@
+.. index:: pair: struct; geode::Invalidity
+.. _doxid-structgeode_1_1_invalidity:
+
+template struct geode::Invalidity
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <typename MeshElement, typename InvalidityType>
+	struct Invalidity
+	{
+		// fields
+	
+		MeshElement :target:`element<doxid-structgeode_1_1_invalidity_1a617779209f1ef0f4c376a313e93687af>`;
+		InvalidityType :target:`invalidities<doxid-structgeode_1_1_invalidity_1af076af7b550637bee9ccb32370c7bbb5>`;
+
+		// construction
+	
+		:target:`Invalidity<doxid-structgeode_1_1_invalidity_1a94d312ec7c62da6f454ccf4884bfbae0>`(MeshElement element_in, InvalidityType&& invalidities_in);
+	};

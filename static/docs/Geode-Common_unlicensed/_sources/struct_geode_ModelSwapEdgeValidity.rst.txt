@@ -1,0 +1,29 @@
+.. index:: pair: struct; geode::ModelSwapEdgeValidity
+.. _doxid-structgeode_1_1_model_swap_edge_validity:
+
+template struct geode::ModelSwapEdgeValidity
+============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <index_t dimension>
+	struct ModelSwapEdgeValidity
+	{
+		// fields
+	
+		bool :target:`edge_is_on_line<doxid-structgeode_1_1_model_swap_edge_validity_1a4bcf6a7eb7e9b41a91f82e35daa00948>` { false };
+		:ref:`SurfaceSwapEdgeValidities<doxid-structgeode_1_1_surface_swap_edge_validities>`<dimension> :target:`surface_validities<doxid-structgeode_1_1_model_swap_edge_validity_1ab5afb7582c0b6218bd49a0c429027dca>` {};
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_model_swap_edge_validity_1a7811892cdbf8e2a9bbe35801f9dcd1bd>` () const;
+	};

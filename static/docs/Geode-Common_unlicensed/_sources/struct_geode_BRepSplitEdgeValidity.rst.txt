@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::BRepSplitEdgeValidity
+.. _doxid-structgeode_1_1_b_rep_split_edge_validity:
+
+struct geode::BRepSplitEdgeValidity
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BRepSplitEdgeValidity: public ModelSplitEdgeValidity3D
+	{
+		// fields
+	
+		:ref:`BlockSplitEdgeValidities<doxid-structgeode_1_1_block_split_edge_validities>` :target:`block_validities<doxid-structgeode_1_1_b_rep_split_edge_validity_1a98139575cc6a7a87fb15ab06251aae30>` {};
+	};

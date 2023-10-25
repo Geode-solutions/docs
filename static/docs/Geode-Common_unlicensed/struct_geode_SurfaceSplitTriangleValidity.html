@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>template struct geode::SurfaceSplitTriangleValidity &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="template struct geode::SurfaceSwapEdgeValidities" href="struct_geode_SurfaceSwapEdgeValidities.html" />
+    <link rel="prev" title="template struct geode::SurfaceSplitTriangleValidities" href="struct_geode_SurfaceSplitTriangleValidities.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="template-struct-geode-surfacesplittrianglevalidity">
+<span id="doxid-structgeode-1-1-surface-split-triangle-validity"></span><span id="index-0"></span><h1>template struct geode::SurfaceSplitTriangleValidity<a class="headerlink" href="#template-struct-geode-surfacesplittrianglevalidity" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;triangulated_surface_modifier_simulation.h&gt;</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="nl">SurfaceSplitTriangleValidity</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity"><span class="std std-ref">geode::SurfaceGeometricalValidity</span></a><span></span>
+<span class="p">{</span>
+    <span class="c1">// methods</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-surface-split-triangle-validity-1a1b186c880aee95e1dafd1cd02606e4d9"><span></span><span class="k">operator</span> <span class="kt">bool</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+<section id="inherited-members">
+<h2>Inherited Members<a class="headerlink" href="#inherited-members" title="Permalink to this heading">¶</a></h2>
+<pre class="highlight doxyrest-overview-inherited-code-block literal-block"><span></span><span class="k">public</span><span class="o">:</span>
+    <span class="c1">// fields</span>
+
+    <span class="kt">bool</span> <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity-1ab8de689f81f0843c1dfdfcf905bbd278"><span class="std std-ref">is_geometrically_valid</span></a><span></span> <span class="p">{</span> <span class="nb">true</span> <span class="p">};</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&gt;</span> <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity-1a09b184e1c5009db9cbfb0c8ca9c149be"><span class="std std-ref">invalid_new_triangles</span></a><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity-1abf78c9109a784dd48fbdc342345d4242"><span class="std std-ref">invalid_triangle_ids</span></a><span></span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <a class="reference internal" href="struct_geode_SurfaceGeometricalValidity.html#doxid-structgeode-1-1-surface-geometrical-validity-1a634f83ac63ed1c75a848b5a31f45c522"><span class="std std-ref">operator bool</span></a><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span></pre>
+</section>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/struct_geode_SurfaceSplitTriangleValidity.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

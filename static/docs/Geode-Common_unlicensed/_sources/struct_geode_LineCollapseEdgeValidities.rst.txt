@@ -1,0 +1,64 @@
+.. index:: pair: struct; geode::LineCollapseEdgeValidities
+.. _doxid-structgeode_1_1_line_collapse_edge_validities:
+
+struct geode::LineCollapseEdgeValidities
+========================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	struct LineCollapseEdgeValidities
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<index_t, :ref:`EdgedCurveCollapseEdgeValidity<doxid-structgeode_1_1_edged_curve_collapse_edge_validity>`>>> :ref:`MeshInvalidities<doxid-structgeode_1_1_line_collapse_edge_validities_1aab3e1611dc902cdef27ce62f13ed5d11>`;
+
+		// fields
+	
+		:ref:`MeshInvalidities<doxid-structgeode_1_1_line_collapse_edge_validities_1aab3e1611dc902cdef27ce62f13ed5d11>` :target:`mesh_invalidities<doxid-structgeode_1_1_line_collapse_edge_validities_1a7ca51015b394fa5982347127cf471068>` {};
+		std::vector<uuid> :ref:`invalid_lines<doxid-structgeode_1_1_line_collapse_edge_validities_1a933ce34e35ee987481a005cc235c3a41>` {};
+	};
+.. _details-structgeode_1_1_line_collapse_edge_validities:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Typedefs
+--------
+
+.. index:: pair: typedef; MeshInvalidities
+.. _doxid-structgeode_1_1_line_collapse_edge_validities_1aab3e1611dc902cdef27ce62f13ed5d11:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<index_t, :ref:`EdgedCurveCollapseEdgeValidity<doxid-structgeode_1_1_edged_curve_collapse_edge_validity>`>>> MeshInvalidities
+
+Information on how the meshes become invalid or not.
+
+Fields
+------
+
+.. index:: pair: variable; invalid_lines
+.. _doxid-structgeode_1_1_line_collapse_edge_validities_1a933ce34e35ee987481a005cc235c3a41:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<uuid> invalid_lines {}
+
+List of lines becoming invalid due to topology.
+

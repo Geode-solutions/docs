@@ -1,0 +1,46 @@
+.. index:: pair: struct; geode::SurfaceSwapFacetValidities
+.. _doxid-structgeode_1_1_surface_swap_facet_validities:
+
+struct geode::SurfaceSwapFacetValidities
+========================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct SurfaceSwapFacetValidities
+	{
+		// fields
+	
+		std::vector<uuid> :ref:`invalid_surfaces<doxid-structgeode_1_1_surface_swap_facet_validities_1a55fbcf232a42f5eeb49fb9b9b3d8aeb2>` {};
+	};
+.. _details-structgeode_1_1_surface_swap_facet_validities:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; invalid_surfaces
+.. _doxid-structgeode_1_1_surface_swap_facet_validities_1a55fbcf232a42f5eeb49fb9b9b3d8aeb2:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<uuid> invalid_surfaces {}
+
+List of surfaces becoming invalid due to topology.
+

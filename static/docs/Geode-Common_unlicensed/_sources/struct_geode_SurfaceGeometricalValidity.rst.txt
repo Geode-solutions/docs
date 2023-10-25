@@ -1,0 +1,47 @@
+.. index:: pair: struct; geode::SurfaceGeometricalValidity
+.. _doxid-structgeode_1_1_surface_geometrical_validity:
+
+template struct geode::SurfaceGeometricalValidity
+=================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier_simulation.h>
+	
+	template <index_t dimension>
+	struct SurfaceGeometricalValidity
+	{
+		// fields
+	
+		bool :target:`is_geometrically_valid<doxid-structgeode_1_1_surface_geometrical_validity_1ab8de689f81f0843c1dfdfcf905bbd278>` { true };
+		std::vector<Triangle<dimension>> :target:`invalid_new_triangles<doxid-structgeode_1_1_surface_geometrical_validity_1a09b184e1c5009db9cbfb0c8ca9c149be>`;
+		std::vector<index_t> :target:`invalid_triangle_ids<doxid-structgeode_1_1_surface_geometrical_validity_1abf78c9109a784dd48fbdc342345d4242>`;
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_surface_geometrical_validity_1a634f83ac63ed1c75a848b5a31f45c522>` () const;
+	};
+
+	// direct descendants
+
+	template <index_t dimension>
+	struct :ref:`SurfaceCollapseEdgeValidity<doxid-structgeode_1_1_surface_collapse_edge_validity>`;
+
+	template <index_t dimension>
+	struct :ref:`SurfaceMovePointValidity<doxid-structgeode_1_1_surface_move_point_validity>`;
+
+	template <index_t dimension>
+	struct :ref:`SurfaceSplitEdgeValidity<doxid-structgeode_1_1_surface_split_edge_validity>`;
+
+	template <index_t dimension>
+	struct :ref:`SurfaceSplitTriangleValidity<doxid-structgeode_1_1_surface_split_triangle_validity>`;
+
+	template <index_t dimension>
+	struct :ref:`SurfaceSwapEdgeValidity<doxid-structgeode_1_1_surface_swap_edge_validity>`;

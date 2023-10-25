@@ -81,6 +81,32 @@
     <span class="p">);</span>
 
 <span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a91f6c493ddd91c88cf504815f9f4484f"><span></span><span class="n">is_modified_triangle_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">modified_triangle</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">old_triangle_id</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
+<span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1ab03ae7663849f5ec7c783697a84a719e"><span></span><span class="n">is_modified_triangle_valid</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">modified_triangle</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">old_edge</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1aa216f185de5aa0a4569be2e4b9a92c9a"><span></span><span class="n">is_modified_triangle_flipped</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">modified_triangle</span><span class="p">,</span>
+    <span class="n">index_t</span> <span class="n">old_triangle_id</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">geode_common_modifier_surface_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a8e19ad909692bcd1ae37415ba5f6e5b6"><span></span><span class="n">is_modified_triangle_flipped</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <span class="n">TriangulatedSurface3D</span><span class="o">&amp;</span> <span class="n">mesh</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">Triangle3D</span><span class="o">&amp;</span> <span class="n">modified_triangle</span><span class="p">,</span>
+    <span class="k">const</span> <span class="n">PolygonEdge</span><span class="o">&amp;</span> <span class="n">old_edge</span>
+    <span class="p">);</span>
+
+<span class="k">template</span> <span class="o">&lt;</span><span class="n">index_t</span> <span class="n">dimension</span><span class="o">&gt;</span>
 <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">local_index_t</span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1-1detail-1a7f86008e4f61b3099860fdea17fd0727"><span></span><span class="n">snapping_detection</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <span class="n">SurfaceMesh</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">surface</span><span class="p">,</span>
     <span class="n">index_t</span> <span class="n">polygon</span><span class="p">,</span>

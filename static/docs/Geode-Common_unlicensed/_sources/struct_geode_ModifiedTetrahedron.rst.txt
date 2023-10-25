@@ -1,0 +1,29 @@
+.. index:: pair: struct; geode::ModifiedTetrahedron
+.. _doxid-structgeode_1_1_modified_tetrahedron:
+
+struct geode::ModifiedTetrahedron
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier_simulation.h>
+	
+	struct ModifiedTetrahedron
+	{
+		// fields
+	
+		Tetrahedron :target:`new_tetrahedron<doxid-structgeode_1_1_modified_tetrahedron_1a42d2513dac5a6586868a680aa9ad8084>`;
+		index_t :target:`old_index<doxid-structgeode_1_1_modified_tetrahedron_1a282cc53669d1cfb464798c0d8842b7b8>` { NO_ID };
+
+		// construction
+	
+		:target:`ModifiedTetrahedron<doxid-structgeode_1_1_modified_tetrahedron_1a7e2b3ef78952aa2d79e650417425b218>`(Tetrahedron&& new_tetrahedron_in, index_t old_index_in);
+		:target:`ModifiedTetrahedron<doxid-structgeode_1_1_modified_tetrahedron_1aa95d24f84b1e5d79535529559bf5503d>`(const Tetrahedron& new_tetrahedron_in, index_t old_index_in);
+	};

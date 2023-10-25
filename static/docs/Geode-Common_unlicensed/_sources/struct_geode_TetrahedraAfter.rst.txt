@@ -1,0 +1,27 @@
+.. index:: pair: struct; geode::TetrahedraAfter
+.. _doxid-structgeode_1_1_tetrahedra_after:
+
+struct geode::TetrahedraAfter
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tetrahedral_solid_modifier_simulation.h>
+	
+	struct TetrahedraAfter
+	{
+		// fields
+	
+		absl::FixedArray<:ref:`ModifiedTetrahedron<doxid-structgeode_1_1_modified_tetrahedron>`> :target:`modified<doxid-structgeode_1_1_tetrahedra_after_1a2a7f24c33a1d79d800c623cec852c3e9>`;
+
+		// construction
+	
+		:target:`TetrahedraAfter<doxid-structgeode_1_1_tetrahedra_after_1ae33592e118007b4bc15d17c386f25ba5>`(size_t nb_modified_tetrahedra);
+	};

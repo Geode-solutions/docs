@@ -1,0 +1,65 @@
+.. index:: pair: struct; geode::SurfaceCollapseEdgeValidities
+.. _doxid-structgeode_1_1_surface_collapse_edge_validities:
+
+template struct geode::SurfaceCollapseEdgeValidities
+====================================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <index_t dimension>
+	struct SurfaceCollapseEdgeValidities
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolygonEdge, :ref:`SurfaceCollapseEdgeValidity<doxid-structgeode_1_1_surface_collapse_edge_validity>`<dimension>>>> :ref:`MeshInvalidities<doxid-structgeode_1_1_surface_collapse_edge_validities_1a265c307d924adc0f5326d044b6ffd3ad>`;
+
+		// fields
+	
+		:ref:`MeshInvalidities<doxid-structgeode_1_1_surface_collapse_edge_validities_1a265c307d924adc0f5326d044b6ffd3ad>` :target:`mesh_invalidities<doxid-structgeode_1_1_surface_collapse_edge_validities_1a330c44660a986527dced20d65ebf792b>` {};
+		std::vector<uuid> :ref:`invalid_surfaces<doxid-structgeode_1_1_surface_collapse_edge_validities_1af8dd35b2f9d1bd9e8585c269077660fe>` {};
+	};
+.. _details-structgeode_1_1_surface_collapse_edge_validities:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Typedefs
+--------
+
+.. index:: pair: typedef; MeshInvalidities
+.. _doxid-structgeode_1_1_surface_collapse_edge_validities_1a265c307d924adc0f5326d044b6ffd3ad:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolygonEdge, :ref:`SurfaceCollapseEdgeValidity<doxid-structgeode_1_1_surface_collapse_edge_validity>`<dimension>>>> MeshInvalidities
+
+Information on how the meshes become invalid or not.
+
+Fields
+------
+
+.. index:: pair: variable; invalid_surfaces
+.. _doxid-structgeode_1_1_surface_collapse_edge_validities_1af8dd35b2f9d1bd9e8585c269077660fe:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::vector<uuid> invalid_surfaces {}
+
+List of surfaces becoming invalid due to topology.
+

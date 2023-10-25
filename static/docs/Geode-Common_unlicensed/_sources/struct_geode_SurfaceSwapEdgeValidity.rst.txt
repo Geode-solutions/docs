@@ -1,0 +1,52 @@
+.. index:: pair: struct; geode::SurfaceSwapEdgeValidity
+.. _doxid-structgeode_1_1_surface_swap_edge_validity:
+
+template struct geode::SurfaceSwapEdgeValidity
+==============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier_simulation.h>
+	
+	template <index_t dimension>
+	struct SurfaceSwapEdgeValidity:
+	    public :ref:`geode::SurfaceGeometricalValidity<doxid-structgeode_1_1_surface_geometrical_validity>`,
+	    public :ref:`geode::SurfaceTopologicalValidity<doxid-structgeode_1_1_surface_topological_validity>`
+	{
+		// fields
+	
+		bool :target:`is_on_border<doxid-structgeode_1_1_surface_swap_edge_validity_1acf9586f543afd1bb4c52b8911fe901a8>` { false };
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_surface_swap_edge_validity_1ae7b93849a44cc182490f829ab9fc667e>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		bool :ref:`is_geometrically_valid<doxid-structgeode_1_1_surface_geometrical_validity_1ab8de689f81f0843c1dfdfcf905bbd278>` { true };
+		std::vector<Triangle<dimension>> :ref:`invalid_new_triangles<doxid-structgeode_1_1_surface_geometrical_validity_1a09b184e1c5009db9cbfb0c8ca9c149be>`;
+		std::vector<index_t> :ref:`invalid_triangle_ids<doxid-structgeode_1_1_surface_geometrical_validity_1abf78c9109a784dd48fbdc342345d4242>`;
+		bool :ref:`is_topologically_valid<doxid-structgeode_1_1_surface_topological_validity_1a3ddcf244085c0372441fccfcbae81a9b>` { true };
+		bool :ref:`new_vertex_is_manifold<doxid-structgeode_1_1_surface_topological_validity_1a7d153951ad27bb236598804afc4ae06c>` { true };
+		std::vector<index_t> :ref:`vertices_creating_non_manifold_edges<doxid-structgeode_1_1_surface_topological_validity_1a6c8ea6ac2ee4101f827617e41600d9f3>`;
+
+		// methods
+	
+		:ref:`operator bool<doxid-structgeode_1_1_surface_geometrical_validity_1a634f83ac63ed1c75a848b5a31f45c522>` () const;
+		:ref:`operator bool<doxid-structgeode_1_1_surface_topological_validity_1afd2938b4734a76fdcd19141b1f7d35a9>` () const;
+

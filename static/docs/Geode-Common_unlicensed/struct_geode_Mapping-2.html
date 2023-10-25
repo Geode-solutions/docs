@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>template struct geode::Mapping&lt;index_t&gt; &#8212; Python  documentation</title>
+    <title>template struct geode::Mapping &#8212; Python  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="template struct geode::ModelCollapseEdgeValidity" href="struct_geode_ModelCollapseEdgeValidity.html" />
-    <link rel="prev" title="template struct geode::Mapping" href="struct_geode_Mapping.html" />
+    <link rel="prev" title="template struct geode::Mapping&lt;index_t&gt;" href="struct_geode_Mapping.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,30 +33,29 @@
 
           <div class="body" role="main">
             
-  <section id="template-struct-geode-mapping-index-t">
-<span id="doxid-structgeode-1-1-mapping-3-01index-t-01-4"></span><span id="index-0"></span><h1>template struct geode::Mapping&lt;index_t&gt;<a class="headerlink" href="#template-struct-geode-mapping-index-t" title="Permalink to this heading">¶</a></h1>
+  <section id="template-struct-geode-mapping">
+<span id="doxid-structgeode-1-1-mapping"></span><span id="index-0"></span><h1>template struct geode::Mapping<a class="headerlink" href="#template-struct-geode-mapping" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;information.h&gt;</span>
 
-<span class="k">template</span> <span class="o">&lt;&gt;</span>
-<span class="k">struct</span> <span class="n">Mapping</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span>
+<span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">Type</span><span class="o">&gt;</span>
+<span class="k">struct</span> <span class="n">Mapping</span>
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-3-01index-t-01-4-1a2c11baf68f7da1b62719dfb20a3101f7"><span></span><span class="n">new_id</span></span><span></span> <span class="p">{</span> <span class="n">NO_ID</span> <span class="p">};</span>
-    <span class="n">index_t</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-3-01index-t-01-4-1a3ed2c553e67aa1f1d19aaf22f93eb248"><span></span><span class="n">old_id</span></span><span></span> <span class="p">{</span> <span class="n">NO_ID</span> <span class="p">};</span>
+    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-1affe5e3c6e103d5d9d4cbca4f372140d4"><span></span><span class="n">new_id</span></span><span></span><span class="p">;</span>
+    <span class="n">Type</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-1a9d90a5d9d3ad45272bc66190e09dee1a"><span></span><span class="n">old_id</span></span><span></span><span class="p">;</span>
 
     <span class="c1">// construction</span>
 
-    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-3-01index-t-01-4-1a92e9454424dfd557026e62718ed9c1a9"><span></span><span class="n">Mapping</span></span><span></span><span class="p">();</span>
-    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-3-01index-t-01-4-1a8b683d3ebbd0f500966b9922c32b11ba"><span></span><span class="n">Mapping</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">new_id_in</span><span class="p">,</span> <span class="n">index_t</span> <span class="n">old_id_in</span><span class="p">);</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-1a24b8abb6665c1fe06ff17f15d80040e4"><span></span><span class="n">Mapping</span></span><span></span><span class="p">();</span>
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-1a3b26d6454dd275dc999bad0f296d8035"><span></span><span class="n">Mapping</span></span><span></span><span class="p">(</span><span class="n">Type</span> <span class="n">new_id_in</span><span class="p">,</span> <span class="n">Type</span> <span class="n">old_id_in</span><span class="p">);</span>
 
     <span class="c1">// methods</span>
 
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-3-01index-t-01-4-1a5c7fc26a560eb88fde8558cee3c7dae0"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-3-01index-t-01-4-1a4d681997e5feaf62bd4b508a60c1ac78"><span></span><span class="k">operator</span> <span class="o">&lt;</span></span><span></span> <span class="p">(</span><span class="k">const</span> <a class="reference internal" href="struct_geode_Mapping.html#doxid-structgeode-1-1-mapping"><span class="std std-ref">Mapping</span></a><span></span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-3-01index-t-01-4-1aae78febe999099a833f5430b8754a3fe"><span></span><span class="n">string</span></span><span></span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-1ad9a8029ca74bab6dfe93345f9af7fd65"><span></span><span class="k">operator</span> <span class="o">==</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Mapping</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-mapping-1afa96db0d75841f5460098bc7ee8848c0"><span></span><span class="k">operator</span> <span class="o">&lt;</span></span><span></span> <span class="p">(</span><span class="k">const</span> <span class="n">Mapping</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span></pre>
 </section>
 

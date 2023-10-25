@@ -1,0 +1,34 @@
+.. index:: pair: struct; geode::ModifiedTriangle
+.. _doxid-structgeode_1_1_modified_triangle:
+
+template struct geode::ModifiedTriangle
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier_simulation.h>
+	
+	template <index_t dimension>
+	struct ModifiedTriangle
+	{
+		// fields
+	
+		Triangle<dimension> :target:`new_triangle<doxid-structgeode_1_1_modified_triangle_1aaf2b9d5daf552d721dce7f1a0db691b6>`;
+		index_t :target:`old_index<doxid-structgeode_1_1_modified_triangle_1aadc6ae7d0779913fde2b73fa29cf48ac>` { NO_ID };
+
+		// construction
+	
+		:target:`ModifiedTriangle<doxid-structgeode_1_1_modified_triangle_1afa2ff4cf4de7fe1ab49882900087a282>`(Triangle<dimension>&& new_triangle_in, index_t old_index_in);
+	
+		:target:`ModifiedTriangle<doxid-structgeode_1_1_modified_triangle_1aae82eb241d5b0988de3dec4d9f939757>`(
+			const Triangle<dimension>& new_triangle_in,
+			index_t old_index_in
+			);
+	};

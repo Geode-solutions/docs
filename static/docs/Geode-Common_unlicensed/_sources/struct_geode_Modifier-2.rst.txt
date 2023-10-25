@@ -1,8 +1,8 @@
-.. index:: pair: struct; geode::Modifier<TriangulatedSurface<dimension>>
-.. _doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4:
+.. index:: pair: struct; geode::Modifier<Section>
+.. _doxid-structgeode_1_1_modifier_3_01_section_01_4:
 
-template struct geode::Modifier<TriangulatedSurface<dimension>>
-===============================================================
+template struct geode::Modifier<Section>
+========================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct geode::Modifier<TriangulatedSurface<dimension>>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <triangulated_surface_modifier.h>
+	#include <section_geometric_modifier.h>
 	
-	template <index_t dimension>
-	struct Modifier<TriangulatedSurface<dimension>>
+	template <>
+	struct Modifier<Section>
 	{
 		// typedefs
 	
-		typedef :ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`<dimension> :target:`type<doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4_1a0b5e2809f28b1377246abfebbe257cb9>`;
+		typedef :ref:`SectionGeometricModifier<doxid-classgeode_1_1_section_geometric_modifier>` :target:`type<doxid-structgeode_1_1_modifier_3_01_section_01_4_1a0adda38a8249242ebd1debe4905ec6a8>`;
 	};

@@ -1,8 +1,8 @@
-.. index:: pair: struct; geode::Modifier<BRep>
-.. _doxid-structgeode_1_1_modifier_3_01_b_rep_01_4:
+.. index:: pair: struct; geode::Modifier<TetrahedralSolid3D>
+.. _doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4:
 
-template struct geode::Modifier<BRep>
-=====================================
+template struct geode::Modifier<TetrahedralSolid3D>
+===================================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct geode::Modifier<BRep>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <brep_geometric_modifier.h>
+	#include <tetrahedral_solid_modifier.h>
 	
 	template <>
-	struct Modifier<BRep>
+	struct Modifier<TetrahedralSolid3D>
 	{
 		// typedefs
 	
-		typedef :ref:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier>` :target:`type<doxid-structgeode_1_1_modifier_3_01_b_rep_01_4_1aed930cf0574130ea90f12c39a6eb2b8c>`;
+		typedef :ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>` :target:`type<doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4_1a2a1a02a8367af4ef4d3bee86151ae2e9>`;
 	};

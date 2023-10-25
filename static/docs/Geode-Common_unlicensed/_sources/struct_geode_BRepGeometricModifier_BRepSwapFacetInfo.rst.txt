@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::BRepGeometricModifier::BRepSwapFacetInfo
+.. _doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_b_rep_swap_facet_info:
+
+struct geode::BRepGeometricModifier::BRepSwapFacetInfo
+======================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier.h>
+	
+	struct BRepSwapFacetInfo
+	{
+		// fields
+	
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`TetrahedralSolidModifier::SolidSwapFacetInfo<doxid-structgeode_1_1_tetrahedral_solid_modifier_1_1_solid_swap_facet_info>`, 1>> :target:`block_info<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_b_rep_swap_facet_info_1af0535953739281b5249cef606e2423e4>`;
+	};

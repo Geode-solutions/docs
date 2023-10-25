@@ -1,0 +1,42 @@
+.. index:: pair: struct; geode::SurfaceMovePointValidity
+.. _doxid-structgeode_1_1_surface_move_point_validity:
+
+template struct geode::SurfaceMovePointValidity
+===============================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <triangulated_surface_modifier_simulation.h>
+	
+	template <index_t dimension>
+	struct SurfaceMovePointValidity: public :ref:`geode::SurfaceGeometricalValidity<doxid-structgeode_1_1_surface_geometrical_validity>`
+	{
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_surface_move_point_validity_1ae99c83552ed86e10b926d2c6c884b5aa>` () const;
+	};
+
+Inherited Members
+-----------------
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-inherited-code-block
+
+	public:
+		// fields
+	
+		bool :ref:`is_geometrically_valid<doxid-structgeode_1_1_surface_geometrical_validity_1ab8de689f81f0843c1dfdfcf905bbd278>` { true };
+		std::vector<Triangle<dimension>> :ref:`invalid_new_triangles<doxid-structgeode_1_1_surface_geometrical_validity_1a09b184e1c5009db9cbfb0c8ca9c149be>`;
+		std::vector<index_t> :ref:`invalid_triangle_ids<doxid-structgeode_1_1_surface_geometrical_validity_1abf78c9109a784dd48fbdc342345d4242>`;
+
+		// methods
+	
+		:ref:`operator bool<doxid-structgeode_1_1_surface_geometrical_validity_1a634f83ac63ed1c75a848b5a31f45c522>` () const;
+

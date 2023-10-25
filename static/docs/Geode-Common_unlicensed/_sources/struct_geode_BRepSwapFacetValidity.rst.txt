@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::BRepSwapFacetValidity
+.. _doxid-structgeode_1_1_b_rep_swap_facet_validity:
+
+struct geode::BRepSwapFacetValidity
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BRepSwapFacetValidity
+	{
+		// fields
+	
+		:ref:`SurfaceSwapFacetValidities<doxid-structgeode_1_1_surface_swap_facet_validities>` :target:`surface_validities<doxid-structgeode_1_1_b_rep_swap_facet_validity_1a61d6591bb1ef7a6438b0675b77441700>` {};
+		:ref:`BlockSwapFacetValidities<doxid-structgeode_1_1_block_swap_facet_validities>` :target:`block_validities<doxid-structgeode_1_1_b_rep_swap_facet_validity_1a874515e361ea46d7e036fe44dfd73804>` {};
+	};

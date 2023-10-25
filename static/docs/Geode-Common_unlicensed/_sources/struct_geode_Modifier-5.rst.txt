@@ -1,8 +1,8 @@
-.. index:: pair: struct; geode::Modifier<EdgedCurve<dimension>>
-.. _doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4:
+.. index:: pair: struct; geode::Modifier<BRep>
+.. _doxid-structgeode_1_1_modifier_3_01_b_rep_01_4:
 
-template struct geode::Modifier<EdgedCurve<dimension>>
-======================================================
+template struct geode::Modifier<BRep>
+=====================================
 
 .. toctree::
 	:hidden:
@@ -13,12 +13,12 @@ template struct geode::Modifier<EdgedCurve<dimension>>
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <edged_curve_modifier.h>
+	#include <brep_geometric_modifier.h>
 	
-	template <index_t dimension>
-	struct Modifier<EdgedCurve<dimension>>
+	template <>
+	struct Modifier<BRep>
 	{
 		// typedefs
 	
-		typedef :ref:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier>`<dimension> :target:`type<doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4_1a27f5a36a1651d357f206e742493386dd>`;
+		typedef :ref:`BRepGeometricModifier<doxid-classgeode_1_1_b_rep_geometric_modifier>` :target:`type<doxid-structgeode_1_1_modifier_3_01_b_rep_01_4_1aed930cf0574130ea90f12c39a6eb2b8c>`;
 	};

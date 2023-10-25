@@ -1,0 +1,23 @@
+.. index:: pair: struct; geode::BRepSwapEdgeValidity
+.. _doxid-structgeode_1_1_b_rep_swap_edge_validity:
+
+struct geode::BRepSwapEdgeValidity
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BRepSwapEdgeValidity: public ModelSwapEdgeValidity3D
+	{
+		// fields
+	
+		:ref:`BlockSwapEdgeValidities<doxid-structgeode_1_1_block_swap_edge_validities>` :target:`block_validities<doxid-structgeode_1_1_b_rep_swap_edge_validity_1acbbd1ab1f05327f45dae8695a79ab665>` {};
+	};

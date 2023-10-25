@@ -1,0 +1,50 @@
+.. index:: pair: struct; geode::BlockSplitFacetValidities
+.. _doxid-structgeode_1_1_block_split_facet_validities:
+
+struct geode::BlockSplitFacetValidities
+=======================================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_geometric_modifier_simulation.h>
+	
+	struct BlockSplitFacetValidities
+	{
+		// typedefs
+	
+		typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolyhedronFacet, :ref:`SolidSplitFacetValidity<doxid-structgeode_1_1_solid_split_facet_validity>`>>> :ref:`MeshInvalidities<doxid-structgeode_1_1_block_split_facet_validities_1a233b67892d57d5e5fd38a7ed2a2a0cc6>`;
+
+		// fields
+	
+		:ref:`MeshInvalidities<doxid-structgeode_1_1_block_split_facet_validities_1a233b67892d57d5e5fd38a7ed2a2a0cc6>` :target:`mesh_invalidities<doxid-structgeode_1_1_block_split_facet_validities_1abc61058fc9cb187886d4510b59b72688>` {};
+	};
+.. _details-structgeode_1_1_block_split_facet_validities:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Typedefs
+--------
+
+.. index:: pair: typedef; MeshInvalidities
+.. _doxid-structgeode_1_1_block_split_facet_validities_1a233b67892d57d5e5fd38a7ed2a2a0cc6:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	typedef absl::flat_hash_map<uuid, std::vector<:ref:`Invalidity<doxid-structgeode_1_1_invalidity>`<PolyhedronFacet, :ref:`SolidSplitFacetValidity<doxid-structgeode_1_1_solid_split_facet_validity>`>>> MeshInvalidities
+
+Information on how the meshes become invalid or not.
+
