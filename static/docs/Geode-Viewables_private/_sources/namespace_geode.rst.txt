@@ -1,0 +1,410 @@
+.. index:: pair: namespace; geode
+.. _doxid-namespacegeode:
+
+namespace geode
+===============
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	namespace geode {
+
+	// typedefs
+
+	typedef ModuleLicenseChecker<Viewables> :target:`ViewablesLicenseChecker<doxid-namespacegeode_1ab0e69d4c8837e05421a6f58d3b6d91b0>`;
+
+	// global variables
+
+	static constexpr char :target:`Viewables<doxid-namespacegeode_1a933d575963cadbb781b1c573753b55a2>`[] = "Viewables";
+
+	// global functions
+
+	std::string geode_viewables_conversion_api :ref:`save_viewable_brep<doxid-namespacegeode_1a5dea8b5ea61d037c4f2552d2c987aad8>`(
+		const BRep& brep,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`brep_viewable_extension<doxid-namespacegeode_1a29a0472b547b3cd14cb0ae2215acf1f0>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1add31962255253e09f2a631a272a862ca>`(geode_viewables_conversion_api, ViewablesConversion);
+
+	std::string geode_viewables_conversion_api :ref:`save_viewable_cross_section<doxid-namespacegeode_1ab3dd6796016776a14e1b40a4638de667>`(
+		const CrossSection& cross_section,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`cross_section_viewable_extension<doxid-namespacegeode_1ad7b04b09e0bb210297086017aec134c7>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1ab37389a784cc08889088d057d6745c8e>`(EdgedCurve);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_edged_curve<doxid-namespacegeode_1a3c7ef9032f92f75de1cd8b4986892cd4>`(
+		const EdgedCurve<dimension>& edged_curve,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`edged_curve_viewable_extension<doxid-namespacegeode_1ae14fee3680dc7eb8b20613bb2e5d316d>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1da5adee14f91deff17a0b855b2c8e84>`(HybridSolid);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_hybrid_solid<doxid-namespacegeode_1a61e4b46005fbacfbefbce49ff6dc6501>`(
+		const HybridSolid<dimension>& hybrid_solid,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`hybrid_solid_viewable_extension<doxid-namespacegeode_1a5dbc01cad7cba651b21ca0cab102aa0f>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a55897b30a3ff5e25684f4268a974caad>`(PointSet);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_point_set<doxid-namespacegeode_1a01e7d6ce6056d0d3a0f9e6a93820cd46>`(
+		const PointSet<dimension>& point_set,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`point_set_viewable_extension<doxid-namespacegeode_1a9c02d8c1b1adc5a7fc378fd31497f399>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aa326268026b80210a023b9d2edec059d>`(PolygonalSurface);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_polygonal_surface<doxid-namespacegeode_1acced4f5f7f37d93a3f4c6381b43c4bdc>`(
+		const PolygonalSurface<dimension>& polygonal_surface,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`polygonal_surface_viewable_extension<doxid-namespacegeode_1a6bbef2e31e98ca6f7a2a1794e6ee0a98>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a1e8e55e5371b72b9963704762267ff26>`(PolyhedralSolid);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_polyhedral_solid<doxid-namespacegeode_1a55dd7bfbbf4748c53e4cb2e1a49d22e0>`(
+		const PolyhedralSolid<dimension>& polyhedral_solid,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`polyhedral_solid_viewable_extension<doxid-namespacegeode_1a16ed5f0c3d7215cdc1153aa6d8290216>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1abb1366c0b9eae9a09bd1d1de2ff08a26>`(RasterImage);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_raster_image<doxid-namespacegeode_1a51fd25cd453f9fb80936cc23765fbe3e>`(
+		const RasterImage<dimension>& raster_image,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`raster_image_viewable_extension<doxid-namespacegeode_1aa5686b6eacc59c2ceb75f75821c454d6>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca4385eb3d676a070003e6270f6472ab>`(RegularGrid);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_regular_grid<doxid-namespacegeode_1aac96b946c787e59f19939443d425fad1>`(
+		const RegularGrid<dimension>& regular_grid,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`regular_grid_viewable_extension<doxid-namespacegeode_1a216719dd01672dccf304eb502195a6a7>`();
+
+	std::string geode_viewables_conversion_api :ref:`save_viewable_section<doxid-namespacegeode_1ae2edc3115f723f4ee75177627424ddd7>`(
+		const Section& section,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`section_viewable_extension<doxid-namespacegeode_1ae6a654a6e555616ccb139c739e8e7071>`();
+
+	std::string geode_viewables_conversion_api :ref:`save_viewable_structural_model<doxid-namespacegeode_1a842cf32cf1f8112ec9815faf8c63914e>`(
+		const StructuralModel& structural_model,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`structural_model_viewable_extension<doxid-namespacegeode_1a180f5e6b4d844a8a6b76193eb42548fe>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a3b691d4711522d638d7d8f1b087e597a>`(TetrahedralSolid);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_tetrahedral_solid<doxid-namespacegeode_1a6950083b4b55b8a479cce7e081e19dbd>`(
+		const TetrahedralSolid<dimension>& tetrahedral_solid,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`tetrahedral_solid_viewable_extension<doxid-namespacegeode_1ac8772f6c003c4706a1c8bd56752a5a04>`();
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1aca0fde735cff4e277ede564650324fd0>`(TriangulatedSurface);
+
+	template <index_t dimension>
+	std::string :ref:`save_viewable_triangulated_surface<doxid-namespacegeode_1a69103141949b89fc2eb65fdb1337ad25>`(
+		const TriangulatedSurface<dimension>& triangulated_surface,
+		absl::string_view filename_without_extension
+		);
+
+	absl::string_view geode_viewables_conversion_api :target:`triangulated_surface_viewable_extension<doxid-namespacegeode_1a959cdc1e2befed662b9394f06a3c1133>`();
+	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1aa12c9dce24aabcfb01ce616b0c8323bb>`(geode_viewables_qem_proxy_api, ViewablesQEMProxy);
+	bool geode_viewables_qem_proxy_api :target:`simplify<doxid-namespacegeode_1a4b20da8bf7b73c124177762a2857375e>`(geode::TriangulatedSurface3D& mesh);
+
+	} // namespace geode
+.. _details-namespacegeode:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Global Functions
+----------------
+
+.. index:: pair: function; save_viewable_brep
+.. _doxid-namespacegeode_1a5dea8b5ea61d037c4f2552d2c987aad8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::string geode_viewables_conversion_api save_viewable_brep(
+		const BRep& brep,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_cross_section
+.. _doxid-namespacegeode_1ab3dd6796016776a14e1b40a4638de667:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::string geode_viewables_conversion_api save_viewable_cross_section(
+		const CrossSection& cross_section,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_edged_curve
+.. _doxid-namespacegeode_1a3c7ef9032f92f75de1cd8b4986892cd4:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_edged_curve(
+		const EdgedCurve<dimension>& edged_curve,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_hybrid_solid
+.. _doxid-namespacegeode_1a61e4b46005fbacfbefbce49ff6dc6501:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_hybrid_solid(
+		const HybridSolid<dimension>& hybrid_solid,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_point_set
+.. _doxid-namespacegeode_1a01e7d6ce6056d0d3a0f9e6a93820cd46:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_point_set(
+		const PointSet<dimension>& point_set,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_polygonal_surface
+.. _doxid-namespacegeode_1acced4f5f7f37d93a3f4c6381b43c4bdc:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_polygonal_surface(
+		const PolygonalSurface<dimension>& polygonal_surface,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_polyhedral_solid
+.. _doxid-namespacegeode_1a55dd7bfbbf4748c53e4cb2e1a49d22e0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_polyhedral_solid(
+		const PolyhedralSolid<dimension>& polyhedral_solid,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_raster_image
+.. _doxid-namespacegeode_1a51fd25cd453f9fb80936cc23765fbe3e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_raster_image(
+		const RasterImage<dimension>& raster_image,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_regular_grid
+.. _doxid-namespacegeode_1aac96b946c787e59f19939443d425fad1:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_regular_grid(
+		const RegularGrid<dimension>& regular_grid,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_section
+.. _doxid-namespacegeode_1ae2edc3115f723f4ee75177627424ddd7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::string geode_viewables_conversion_api save_viewable_section(
+		const Section& section,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_structural_model
+.. _doxid-namespacegeode_1a842cf32cf1f8112ec9815faf8c63914e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	std::string geode_viewables_conversion_api save_viewable_structural_model(
+		const StructuralModel& structural_model,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_tetrahedral_solid
+.. _doxid-namespacegeode_1a6950083b4b55b8a479cce7e081e19dbd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_tetrahedral_solid(
+		const TetrahedralSolid<dimension>& tetrahedral_solid,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
+.. index:: pair: function; save_viewable_triangulated_surface
+.. _doxid-namespacegeode_1a69103141949b89fc2eb65fdb1337ad25:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	template <index_t dimension>
+	std::string save_viewable_triangulated_surface(
+		const TriangulatedSurface<dimension>& triangulated_surface,
+		absl::string_view filename_without_extension
+		)
+
+Save the Data in viewable file format (e.g. VTK format)
+
+
+
+.. rubric:: Returns:
+
+the name of th newly created file
+
