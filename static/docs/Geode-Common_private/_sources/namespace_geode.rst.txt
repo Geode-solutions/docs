@@ -71,6 +71,7 @@ namespace geode
 	struct_geode_SolidSplitTetrahedronValidity.rst
 	struct_geode_SolidSwapEdgeValidity.rst
 	struct_geode_SolidSwapFacetValidity.rst
+	struct_geode_SolidSwapPathInfo.rst
 	struct_geode_SolidTopologicalValidity.rst
 	struct_geode_SplitInfo.rst
 	struct_geode_SurfaceCollapseEdgeValidities.rst
@@ -143,7 +144,6 @@ Overview
 	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>`;
 	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`EdgeMultiMapping<doxid-namespacegeode_1a940546afc1c9ff9d7a0285a1377285c5>`;
 	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`FacetMultiMapping<doxid-namespacegeode_1a9f8b3d4c75c6f9208940640c573c9e5a>`;
-	typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`TetrahedronMultiMapping<doxid-namespacegeode_1a655dcda7e13504c6dfa582021f76a42c>`;
 
 	// enums
 
@@ -219,8 +219,8 @@ Overview
 	template <index_t dimension>
 	struct :ref:`ModifiedTriangle<doxid-structgeode_1_1_modified_triangle>`;
 
-	template <index_t dimension>
-	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
+	template <>
+	struct :ref:`Modifier<TetrahedralSolid3D><doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4>`;
 
 	template <>
 	struct :ref:`Modifier<Section><doxid-structgeode_1_1_modifier_3_01_section_01_4>`;
@@ -228,14 +228,14 @@ Overview
 	template <index_t dimension>
 	struct :ref:`Modifier<EdgedCurve<dimension>><doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4>`;
 
-	template <>
-	struct :ref:`Modifier<TetrahedralSolid3D><doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4>`;
-
-	template <>
-	struct :ref:`Modifier<BRep><doxid-structgeode_1_1_modifier_3_01_b_rep_01_4>`;
+	template <index_t dimension>
+	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
 
 	template <typename Data>
 	struct :ref:`Modifier<doxid-structgeode_1_1_modifier>`;
+
+	template <>
+	struct :ref:`Modifier<BRep><doxid-structgeode_1_1_modifier_3_01_b_rep_01_4>`;
 
 	template <typename Type>
 	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;
@@ -260,6 +260,7 @@ Overview
 	struct :ref:`SolidSplitTetrahedronValidity<doxid-structgeode_1_1_solid_split_tetrahedron_validity>`;
 	struct :ref:`SolidSwapEdgeValidity<doxid-structgeode_1_1_solid_swap_edge_validity>`;
 	struct :ref:`SolidSwapFacetValidity<doxid-structgeode_1_1_solid_swap_facet_validity>`;
+	struct :ref:`SolidSwapPathInfo<doxid-structgeode_1_1_solid_swap_path_info>`;
 	struct :ref:`SolidTopologicalValidity<doxid-structgeode_1_1_solid_topological_validity>`;
 	struct :ref:`SplitInfo<doxid-structgeode_1_1_split_info>`;
 
@@ -392,6 +393,13 @@ Overview
 		);
 
 	:ref:`SolidCutPathInfo<doxid-structgeode_1_1_solid_cut_path_info>` geode_common_cutter_solid_api :target:`cut_along_path<doxid-namespacegeode_1aedbecdec51423415b76d81966d6edacf>`(
+		const TetrahedralSolid3D& solid,
+		:ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`& modifier,
+		index_t begin,
+		index_t end
+		);
+
+	:ref:`SolidSwapPathInfo<doxid-structgeode_1_1_solid_swap_path_info>` geode_common_cutter_solid_api :target:`swap_along_path<doxid-namespacegeode_1a123bbec3f8f5ed67591133b762a47e43>`(
 		const TetrahedralSolid3D& solid,
 		:ref:`TetrahedralSolidModifier<doxid-classgeode_1_1_tetrahedral_solid_modifier>`& modifier,
 		index_t begin,

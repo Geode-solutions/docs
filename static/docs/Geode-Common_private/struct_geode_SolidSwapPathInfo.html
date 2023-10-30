@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>struct geode::SolidSwapPathInfo &#8212; Python  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct geode::SolidTopologicalValidity" href="struct_geode_SolidTopologicalValidity.html" />
+    <link rel="prev" title="struct geode::SolidSwapFacetValidity" href="struct_geode_SolidSwapFacetValidity.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="struct-geode-solidswappathinfo">
+<span id="doxid-structgeode-1-1-solid-swap-path-info"></span><span id="index-0"></span><h1>struct geode::SolidSwapPathInfo<a class="headerlink" href="#struct-geode-solidswappathinfo" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;swap_along_path.h&gt;</span>
+
+<span class="k">struct</span> <span class="n">SolidSwapPathInfo</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">absl</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">PolyhedronFacetEdge</span><span class="o">&gt;&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-swap-path-info-1a2f63d1df44c1a3b8bf7b9442a4b442f3"><span></span><span class="n">along_path</span></span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a315e9cc8781e01e715d417830c2edc14"><span class="std std-ref">TetrahedralSolidModifier::PolyhedronFacetEdgeMultiMapping</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-swap-path-info-1aa4c1f66d0a94b31022991b602bcef208"><span></span><span class="n">edges</span></span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier-1a2c52e67fdc90c3cb710a0213a98d54ed"><span class="std std-ref">TetrahedralSolidModifier::PolyhedronFacetMultiMapping</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-swap-path-info-1a9bd7332c4e07cd058d506f0028907658"><span></span><span class="n">facets</span></span><span></span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><a class="reference internal" href="class_geode_TetrahedralSolidModifier.html#doxid-classgeode-1-1-tetrahedral-solid-modifier-1acc2d59eada8107c77f6048c696fe2572"><span class="std std-ref">TetrahedralSolidModifier::TetrahedronMultiMapping</span></a><span></span><span class="o">&gt;</span> <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-swap-path-info-1ac874a9ea01ec2b884df87c3ae2e08c25"><span></span><span class="n">tetrahedra</span></span><span></span><span class="p">;</span>
+
+    <span class="c1">// methods</span>
+
+    <span class="doxyrest-code-target target" id="doxid-structgeode-1-1-solid-swap-path-info-1aacb68a3ae293a132ecad15bb23b571da"><span></span><span class="k">operator</span> <span class="kt">bool</span></span><span></span> <span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></pre>
+</section>
+
+
+          </div>
+          
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/struct_geode_SolidSwapPathInfo.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
