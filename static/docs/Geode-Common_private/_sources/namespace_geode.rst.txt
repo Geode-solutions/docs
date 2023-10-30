@@ -43,6 +43,7 @@ namespace geode
 	struct_geode_ModelSplitPolygonEdgeInfo.rst
 	struct_geode_ModelSplitTriangleInfo.rst
 	struct_geode_ModelSplitTriangleValidity.rst
+	struct_geode_ModelSwapEdgeInfo.rst
 	struct_geode_ModelSwapEdgeValidity.rst
 	struct_geode_ModifiedTetrahedron.rst
 	struct_geode_ModifiedTriangle.rst
@@ -181,11 +182,11 @@ Overview
 
 	struct :ref:`LineCollapseEdgeValidities<doxid-structgeode_1_1_line_collapse_edge_validities>`;
 
-	template <>
-	struct :ref:`Mapping<index_t><doxid-structgeode_1_1_mapping_3_01index__t_01_4>`;
-
 	template <typename Type>
 	struct :ref:`Mapping<doxid-structgeode_1_1_mapping>`;
+
+	template <>
+	struct :ref:`Mapping<index_t><doxid-structgeode_1_1_mapping_3_01index__t_01_4>`;
 
 	template <index_t dimension>
 	struct :ref:`ModelCollapseEdgeValidity<doxid-structgeode_1_1_model_collapse_edge_validity>`;
@@ -212,6 +213,9 @@ Overview
 	struct :ref:`ModelSplitTriangleValidity<doxid-structgeode_1_1_model_split_triangle_validity>`;
 
 	template <index_t dimension>
+	struct :ref:`ModelSwapEdgeInfo<doxid-structgeode_1_1_model_swap_edge_info>`;
+
+	template <index_t dimension>
 	struct :ref:`ModelSwapEdgeValidity<doxid-structgeode_1_1_model_swap_edge_validity>`;
 
 	struct :ref:`ModifiedTetrahedron<doxid-structgeode_1_1_modified_tetrahedron>`;
@@ -220,22 +224,22 @@ Overview
 	struct :ref:`ModifiedTriangle<doxid-structgeode_1_1_modified_triangle>`;
 
 	template <>
-	struct :ref:`Modifier<TetrahedralSolid3D><doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4>`;
-
-	template <>
 	struct :ref:`Modifier<Section><doxid-structgeode_1_1_modifier_3_01_section_01_4>`;
-
-	template <index_t dimension>
-	struct :ref:`Modifier<EdgedCurve<dimension>><doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4>`;
 
 	template <index_t dimension>
 	struct :ref:`Modifier<TriangulatedSurface<dimension>><doxid-structgeode_1_1_modifier_3_01_triangulated_surface_3_01dimension_01_4_01_4>`;
 
-	template <typename Data>
-	struct :ref:`Modifier<doxid-structgeode_1_1_modifier>`;
+	template <index_t dimension>
+	struct :ref:`Modifier<EdgedCurve<dimension>><doxid-structgeode_1_1_modifier_3_01_edged_curve_3_01dimension_01_4_01_4>`;
+
+	template <>
+	struct :ref:`Modifier<TetrahedralSolid3D><doxid-structgeode_1_1_modifier_3_01_tetrahedral_solid3_d_01_4>`;
 
 	template <>
 	struct :ref:`Modifier<BRep><doxid-structgeode_1_1_modifier_3_01_b_rep_01_4>`;
+
+	template <typename Data>
+	struct :ref:`Modifier<doxid-structgeode_1_1_modifier>`;
 
 	template <typename Type>
 	struct :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`;

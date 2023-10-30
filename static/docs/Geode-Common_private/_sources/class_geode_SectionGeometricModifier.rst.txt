@@ -13,6 +13,7 @@ class geode::SectionGeometricModifier
 	struct_geode_SectionGeometricModifier_SectionCollapsePolygonEdgeInfo.rst
 	struct_geode_SectionGeometricModifier_SectionSplitPolygonEdgeInfo.rst
 	struct_geode_SectionGeometricModifier_SectionSplitTriangleInfo.rst
+	struct_geode_SectionGeometricModifier_SectionSwapEdgeInfo.rst
 
 
 
@@ -37,6 +38,7 @@ class geode::SectionGeometricModifier
 		struct :ref:`SectionCollapsePolygonEdgeInfo<doxid-structgeode_1_1_section_geometric_modifier_1_1_section_collapse_polygon_edge_info>`;
 		struct :ref:`SectionSplitPolygonEdgeInfo<doxid-structgeode_1_1_section_geometric_modifier_1_1_section_split_polygon_edge_info>`;
 		struct :ref:`SectionSplitTriangleInfo<doxid-structgeode_1_1_section_geometric_modifier_1_1_section_split_triangle_info>`;
+		struct :ref:`SectionSwapEdgeInfo<doxid-structgeode_1_1_section_geometric_modifier_1_1_section_swap_edge_info>`;
 
 		// construction
 	
@@ -75,7 +77,7 @@ class geode::SectionGeometricModifier
 			const Point2D& point
 			);
 	
-		void :target:`swap_edge<doxid-classgeode_1_1_section_geometric_modifier_1a4d316bd8eda2028baab1225da1966e2d>`(const Surface2D& surface, const PolygonEdge& edge);
+		:ref:`SectionSwapEdgeInfo<doxid-structgeode_1_1_section_geometric_modifier_1_1_section_swap_edge_info>` :target:`swap_edge<doxid-classgeode_1_1_section_geometric_modifier_1a668b9a9cb03238a6c841080e91c4a7ef>`(const Surface2D& surface, const PolygonEdge& edge);
 		void :target:`move_point<doxid-classgeode_1_1_section_geometric_modifier_1aebe4d67cdf869984cbd175cdf2792976>`(index_t unique_vertex, const Point2D& point);
 		void :target:`translate_point<doxid-classgeode_1_1_section_geometric_modifier_1ab5870645911caa115d22e56e8535e305>`(index_t unique_vertex, const Vector2D& translation);
 		void :target:`rescale_point<doxid-classgeode_1_1_section_geometric_modifier_1afbc0715e7e309c56ef860eca870426b1>`(index_t unique_vertex, double scale);

@@ -1,0 +1,33 @@
+.. index:: pair: struct; geode::ModelSwapEdgeInfo
+.. _doxid-structgeode_1_1_model_swap_edge_info:
+
+template struct geode::ModelSwapEdgeInfo
+========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <information.h>
+	
+	template <index_t dimension>
+	struct ModelSwapEdgeInfo
+	{
+		// typedefs
+	
+		typedef typename :ref:`TriangulatedSurfaceModifier<doxid-classgeode_1_1_triangulated_surface_modifier>`<dimension>:::ref:`SwapEdgeInfo<doxid-structgeode_1_1_model_swap_edge_info_1a1fb3a8e9887a58b226bfa2985908ad08>` :target:`SwapEdgeInfo<doxid-structgeode_1_1_model_swap_edge_info_1a1fb3a8e9887a58b226bfa2985908ad08>`;
+
+		// fields
+	
+		absl::flat_hash_map<uuid, absl::InlinedVector<:ref:`SwapEdgeInfo<doxid-structgeode_1_1_model_swap_edge_info_1a1fb3a8e9887a58b226bfa2985908ad08>`, 1>> :target:`surface_info<doxid-structgeode_1_1_model_swap_edge_info_1ab4f87fa791f2919383bfed9cab19a282>`;
+	};
+
+	// direct descendants
+
+	struct :ref:`BRepSwapEdgeInfo<doxid-structgeode_1_1_b_rep_geometric_modifier_1_1_b_rep_swap_edge_info>`;
+	struct :ref:`SectionSwapEdgeInfo<doxid-structgeode_1_1_section_geometric_modifier_1_1_section_swap_edge_info>`;
