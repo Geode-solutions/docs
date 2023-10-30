@@ -73,6 +73,7 @@ const name = words.join('-');
 * [ModelSplitPolygonEdgeInfo](ModelSplitPolygonEdgeInfo.md)
 * [ModelSplitTriangleInfo](ModelSplitTriangleInfo.md)
 * [ModelSplitTriangleValidity](ModelSplitTriangleValidity.md)
+* [ModelSwapEdgeInfo](ModelSwapEdgeInfo.md)
 * [ModelSwapEdgeValidity](ModelSwapEdgeValidity.md)
 * [ModifiedTetrahedron](ModifiedTetrahedron.md)
 * [ModifiedTriangle](ModifiedTriangle.md)

@@ -180,7 +180,7 @@ protected void split_triangle_surface(const Surface<dimension> & surface, index_
 ### swap_edge_surface
 
 ```cpp
-protected void swap_edge_surface(const Surface<dimension> & surface, const PolygonEdge & edge)
+protected void swap_edge_surface(const Surface<dimension> & surface, const PolygonEdge & edge, ModelSwapEdgeInfo<dimension> & info)
 ```
 
 

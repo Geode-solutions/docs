@@ -11,19 +11,13 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepSwapEdgeInfo
-
-
-```cpp
-Inherits from ModelSwapEdgeInfo<3>
-```
-
+# struct ModelSwapEdgeInfo
 
 
 ## Members
 
 ```cpp
-public flat_hash_map block_info
+public absl::flat_hash_map<uuid, absl::InlinedVector<SwapEdgeInfo, 1> > surface_info
 
 ```
 

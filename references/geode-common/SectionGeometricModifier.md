@@ -34,6 +34,8 @@ SectionSplitPolygonEdgeInfo
 
 SectionCollapsePolygonEdgeInfo
 
+SectionSwapEdgeInfo
+
 Impl
 
 
@@ -99,7 +101,7 @@ public SectionSplitPolygonEdgeInfo split_edge(const Line2D & line, index_t edge,
 ### swap_edge
 
 ```cpp
-public void swap_edge(const Surface2D & surface, const PolygonEdge & edge)
+public SectionSwapEdgeInfo swap_edge(const Surface2D & surface, const PolygonEdge & edge)
 ```
 
 

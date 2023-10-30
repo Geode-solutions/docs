@@ -11,20 +11,11 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepSwapEdgeInfo
+# struct SectionSwapEdgeInfo
 
 
 ```cpp
-Inherits from ModelSwapEdgeInfo<3>
-```
-
-
-
-## Members
-
-```cpp
-public flat_hash_map block_info
-
+Inherits from ModelSwapEdgeInfo<2>
 ```
 
 
