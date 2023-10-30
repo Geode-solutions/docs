@@ -103,6 +103,7 @@ const name = words.join('-');
 * [SolidSplitTetrahedronValidity](SolidSplitTetrahedronValidity.md)
 * [SolidSwapEdgeValidity](SolidSwapEdgeValidity.md)
 * [SolidSwapFacetValidity](SolidSwapFacetValidity.md)
+* [SolidSwapPathInfo](SolidSwapPathInfo.md)
 * [SolidTopologicalValidity](SolidTopologicalValidity.md)
 * [SplitInfo](SplitInfo.md)
 * [SurfaceCollapseEdgeValidities](SurfaceCollapseEdgeValidities.md)
@@ -1130,6 +1131,13 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 
 ```cpp
 BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+### swap_along_path
+
+```cpp
+SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
 ```
 
 

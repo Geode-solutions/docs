@@ -19,6 +19,7 @@ const name = words.join('-');
 
 * [GridMetricImpl](GridMetricImpl.md)
 * [ModelGeometricModifier](ModelGeometricModifier.md)
+* [SolidSwapAlongPath](SolidSwapAlongPath.md)
 
 
 ## Functions
@@ -113,6 +114,13 @@ bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Tria
 ```
 
 
+### rotate_one_ring_from_apex
+
+```cpp
+void rotate_one_ring_from_apex(int & one_ring_vertices, index_t apex)
+```
+
+
 ### is_move_point_valid
 
 ```cpp
@@ -194,13 +202,6 @@ typename ModelCollapseEdgeValidity<Model::dim>::SurfaceCollapseEdgeValidities co
 
 ```cpp
 typename ModelElementsAfterOperation<Model::dim>::SurfaceTriangles model_triangles_after_collapse_edge(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
-```
-
-
-### rotate_one_ring_from_apex
-
-```cpp
-void rotate_one_ring_from_apex(int & one_ring_vertices, index_t apex)
 ```
 
 
