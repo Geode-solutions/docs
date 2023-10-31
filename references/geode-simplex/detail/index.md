@@ -184,7 +184,7 @@ tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionR
 ### remesh_surface
 
 ```cpp
-RemeshedSurface2D remesh_surface(const TriangulatedSurface2D & background_mesh, TriangulatedSurfaceBuilder2D & background_builder, TriangulatedSurfaceEpsilonModifier2D & background_modifier, const Metric2D & metric, Span lock_vertices)
+RemeshedSurface2D remesh_surface(const TriangulatedSurface2D & background_mesh, TriangulatedSurfaceBuilder2D & background_builder, TriangulatedSurfaceEpsilonModifier2D & background_modifier, const Metric2D & metric, absl::Span<const index_t> lock_vertices)
 ```
 
 
