@@ -1,0 +1,30 @@
+.. index:: pair: struct; geode::SolidSwapPathInfo
+.. _doxid-structgeode_1_1_solid_swap_path_info:
+
+struct geode::SolidSwapPathInfo
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <swap_along_path.h>
+	
+	struct SolidSwapPathInfo
+	{
+		// fields
+	
+		absl::optional<std::vector<PolyhedronFacetEdge>> :target:`along_path<doxid-structgeode_1_1_solid_swap_path_info_1a2f63d1df44c1a3b8bf7b9442a4b442f3>`;
+		std::vector<:ref:`TetrahedralSolidModifier::PolyhedronFacetEdgeMultiMapping<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a315e9cc8781e01e715d417830c2edc14>`> :target:`edges<doxid-structgeode_1_1_solid_swap_path_info_1aa4c1f66d0a94b31022991b602bcef208>`;
+		std::vector<:ref:`TetrahedralSolidModifier::PolyhedronFacetMultiMapping<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a2c52e67fdc90c3cb710a0213a98d54ed>`> :target:`facets<doxid-structgeode_1_1_solid_swap_path_info_1a9bd7332c4e07cd058d506f0028907658>`;
+		std::vector<:ref:`TetrahedralSolidModifier::TetrahedronMultiMapping<doxid-classgeode_1_1_tetrahedral_solid_modifier_1acc2d59eada8107c77f6048c696fe2572>`> :target:`tetrahedra<doxid-structgeode_1_1_solid_swap_path_info_1ac874a9ea01ec2b884df87c3ae2e08c25>`;
+
+		// methods
+	
+		:target:`operator bool<doxid-structgeode_1_1_solid_swap_path_info_1aacb68a3ae293a132ecad15bb23b571da>` () const;
+	};

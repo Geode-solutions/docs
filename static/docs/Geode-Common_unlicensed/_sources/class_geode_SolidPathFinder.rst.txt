@@ -27,7 +27,7 @@ The objective of this class is to find paths inside TetrahedralSolid3D. :ref:`Mo
 
 		// methods
 	
-		std::vector<:ref:`SolidPath<doxid-structgeode_1_1_solid_path>`> :target:`find_path<doxid-classgeode_1_1_solid_path_finder_1aa044d06e1ec4c568bb5acfc7f8448b15>`() const;
+		absl::optional<std::vector<:ref:`SolidPath<doxid-structgeode_1_1_solid_path>`>> :target:`find_path<doxid-classgeode_1_1_solid_path_finder_1a3bcc020f925bf6fb986f2c8a0fd65a13>`() const;
 	};
 .. _details-classgeode_1_1_solid_path_finder:
 

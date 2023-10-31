@@ -33,6 +33,9 @@ Overview
 		// typedefs
 	
 		typedef :ref:`Mapping<doxid-structgeode_1_1_mapping>`<PolyhedronFacet> :target:`PolyhedronFacetMapping<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a7f2464b3c00d3b1981a037bd0745cb43>`;
+		typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<PolyhedronFacet> :target:`PolyhedronFacetMultiMapping<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a2c52e67fdc90c3cb710a0213a98d54ed>`;
+		typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<PolyhedronFacetEdge> :target:`PolyhedronFacetEdgeMultiMapping<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a315e9cc8781e01e715d417830c2edc14>`;
+		typedef :ref:`MultiMapping<doxid-structgeode_1_1_multi_mapping>`<index_t> :target:`TetrahedronMultiMapping<doxid-classgeode_1_1_tetrahedral_solid_modifier_1acc2d59eada8107c77f6048c696fe2572>`;
 		typedef :ref:`SplitInfo<doxid-structgeode_1_1_split_info>` :target:`SplitTetrahedron<doxid-classgeode_1_1_tetrahedral_solid_modifier_1ad95cac1e40d9e8b219cf5ef4f0b617c4>`;
 		typedef :ref:`SplitInfo<doxid-structgeode_1_1_split_info>` :target:`SplitFacet<doxid-classgeode_1_1_tetrahedral_solid_modifier_1a2fabccd18b83e612612347918a38ab83>`;
 
