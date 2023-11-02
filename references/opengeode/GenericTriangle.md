@@ -116,6 +116,20 @@ public BoundingBox<dimension> bounding_box()
 ```
 
 
+### longest_edge_index
+
+```cpp
+public local_index_t longest_edge_index()
+```
+
+
+### minimum_height
+
+```cpp
+public double minimum_height()
+```
+
+
 
 
 # class GenericTriangle

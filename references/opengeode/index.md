@@ -1251,32 +1251,6 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 ```
 
 
-### register_image_serialize_pcontext
-
-```cpp
-void register_image_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### register_image_deserialize_pcontext
-
-```cpp
-void register_image_deserialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to deserialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
 ### convert_surface_mesh_into_polygonal_surface
 
 ```cpp
@@ -1378,6 +1352,32 @@ int convert_surface_mesh_into_triangulated_surface(const SurfaceMesh<dimension> 
 int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
 ```
 
+
+### register_image_serialize_pcontext
+
+```cpp
+void register_image_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### register_image_deserialize_pcontext
+
+```cpp
+void register_image_deserialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to deserialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
 
 ### create_aabb_tree
 
