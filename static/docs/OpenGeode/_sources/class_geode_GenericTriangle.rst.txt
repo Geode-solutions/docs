@@ -49,6 +49,8 @@ template class geode::GenericTriangle
 		void :target:`set_point<doxid-classgeode_1_1_generic_triangle_1a2be2ab311cfd6a7cd28da74f0addecf3>`(:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` vertex, PointType point);
 		const std::array<PointType, 3>& :target:`vertices<doxid-classgeode_1_1_generic_triangle_1ad9281b6fcbd2c41d0a4dd89e4208e43c>`() const;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :target:`bounding_box<doxid-classgeode_1_1_generic_triangle_1a8758562d665daaffc5cd431da00ea29d>`() const;
+		:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` :target:`longest_edge_index<doxid-classgeode_1_1_generic_triangle_1a99d59cc97f3d2e748fc7ae4584dc9b14>`() const;
+		double :target:`minimum_height<doxid-classgeode_1_1_generic_triangle_1a90a6e878537560fcabb5dab74ff0398e>`() const;
 	};
 
 	// direct descendants
