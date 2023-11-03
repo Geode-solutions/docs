@@ -22,12 +22,15 @@ Description of a vector in the given dimension with double coordinates
 		// construction
 	
 		:target:`SquareMatrix<doxid-classgeode_1_1_square_matrix_1a76cc5262a56da9fbab3dc08a4c3d4345>`();
+		:target:`SquareMatrix<doxid-classgeode_1_1_square_matrix_1a5c946cac6ab52ce72cb3bc91abfdaf37>`(double default_value);
 		:target:`SquareMatrix<doxid-classgeode_1_1_square_matrix_1aac00e7012ab89f7de5ba2894db6f7215>`(std::array<:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>, dimension> matrix_rows);
 
 		// methods
 	
 		double :target:`value<doxid-classgeode_1_1_square_matrix_1aac0226437a98092f9d6448371b960c2e>`(:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` row, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` column) const;
-		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`operator *<doxid-classgeode_1_1_square_matrix_1a53fb7a46c4c6d36183558f3487443a6a>` (const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> vector) const;
+		void :target:`set_value<doxid-classgeode_1_1_square_matrix_1ab0c583a710ba20c268338cbc1d61e436>`(:ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` row, :ref:`local_index_t<doxid-namespacegeode_1aa4af2b9c3c63eb304286e812ba69a9a9>` column, double value);
+		:ref:`Vector<doxid-classgeode_1_1_vector>`<dimension> :target:`operator *<doxid-classgeode_1_1_square_matrix_1ae78859c88206fa78d0bb69fb3868da9d>` (const :ref:`Vector<doxid-classgeode_1_1_vector>`<dimension>& vector) const;
+		SquareMatrix<dimension> :target:`operator *<doxid-classgeode_1_1_square_matrix_1a738c42d96ffdcf6f32bf77fecb12d3c5>` (const SquareMatrix<dimension>& matrix) const;
 		double :target:`determinant<doxid-classgeode_1_1_square_matrix_1a932893150ca33da68395036301d49a62>`() const;
 		SquareMatrix<dimension> :target:`transpose<doxid-classgeode_1_1_square_matrix_1ab27ecbd54d5bfee6cf7aed25e40d1bc1>`() const;
 		SquareMatrix<dimension> :target:`inverse<doxid-classgeode_1_1_square_matrix_1a475e101fa94bee88a0f0faec51cd42e5>`() const;
