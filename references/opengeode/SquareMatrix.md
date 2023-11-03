@@ -34,24 +34,7 @@ public SquareMatrix inverse()
 
 # class SquareMatrix
 
-
-## Functions
-
-### determinant
-
-```cpp
-public double determinant()
-```
-
-
-### inverse
-
-```cpp
-public SquareMatrix inverse()
-```
-
-
-
+# class SquareMatrix
 
 # class SquareMatrix
 
@@ -72,6 +55,13 @@ public void SquareMatrix<dimension>()
 ### SquareMatrix
 
 ```cpp
+public void SquareMatrix<dimension>(double default_value)
+```
+
+
+### SquareMatrix
+
+```cpp
 public void SquareMatrix<dimension>(std::array<Vector<dimension>, dimension> matrix_rows)
 ```
 
@@ -83,10 +73,24 @@ public double value(local_index_t row, local_index_t column)
 ```
 
 
+### set_value
+
+```cpp
+public void set_value(local_index_t row, local_index_t column, double value)
+```
+
+
 ### operator*
 
 ```cpp
-public Vector<dimension> operator*(const Vector<dimension> vector)
+public Vector<dimension> operator*(const Vector<dimension> & vector)
+```
+
+
+### operator*
+
+```cpp
+public SquareMatrix operator*(const SquareMatrix<dimension> & matrix)
 ```
 
 
@@ -95,6 +99,7 @@ public Vector<dimension> operator*(const Vector<dimension> vector)
 ```cpp
 public double determinant()
 ```
+
 
 ### transpose
 
@@ -108,6 +113,7 @@ public SquareMatrix transpose()
 ```cpp
 public SquareMatrix inverse()
 ```
+
 
 
 

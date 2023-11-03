@@ -48,41 +48,6 @@ const name = words.join('-');
 
 ## Functions
 
-### update_default_name
-
-```cpp
-void update_default_name(Object & object, string_view filename)
-```
-
-
-### update_default_name
-
-```cpp
-void update_default_name(std::unique_ptr<Object> & object, string_view filename)
-```
-
-
-### geode_object_input_reader
-
-```cpp
-std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(absl::string_view & filename)
-```
-
-
-### geode_object_input_impl
-
-```cpp
-typename Factory::BaseClass::InputData geode_object_input_impl(string_view type, string_view filename, Args... args)
-```
-
-
-### add_to_message
-
-```cpp
-void add_to_message(std::string & message, geode::index_t nb_components, string_view component_text)
-```
-
-
 ### mapping_after_deletion
 
 ```cpp
@@ -157,6 +122,41 @@ std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(absl::st
 
 ```cpp
 void geode_object_output_impl(string_view type, const Object & object, string_view filename)
+```
+
+
+### update_default_name
+
+```cpp
+void update_default_name(Object & object, string_view filename)
+```
+
+
+### update_default_name
+
+```cpp
+void update_default_name(std::unique_ptr<Object> & object, string_view filename)
+```
+
+
+### geode_object_input_reader
+
+```cpp
+std::unique_ptr<typename Factory::BaseClass> geode_object_input_reader(absl::string_view & filename)
+```
+
+
+### geode_object_input_impl
+
+```cpp
+typename Factory::BaseClass::InputData geode_object_input_impl(string_view type, string_view filename, Args... args)
+```
+
+
+### add_to_message
+
+```cpp
+void add_to_message(std::string & message, geode::index_t nb_components, string_view component_text)
 ```
 
 
@@ -258,6 +258,13 @@ H AbslHashValue(H h, const OrientedVertexCycle<Container> & m)
 ```
 
 
+### oriented_rotate
+
+```cpp
+void oriented_rotate(std::array<index_t, 2> & vertices)
+```
+
+
 ### copy_points3d_into_2d
 
 ```cpp
@@ -290,13 +297,6 @@ void copy_meta_info(const MeshFrom & from, Builder & builder)
 
 ```cpp
 void copy_attributes(const AttributeManager & manager_in, AttributeManager & manager_out)
-```
-
-
-### oriented_rotate
-
-```cpp
-void oriented_rotate(std::array<index_t, 2> & vertices)
 ```
 
 

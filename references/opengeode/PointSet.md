@@ -81,21 +81,21 @@ public BoundingBox<dimension> bounding_box()
 ### PointSet
 
 ```cpp
-protected void PointSet<>()
+protected void PointSet<dimension>()
 ```
 
 
 ### PointSet
 
 ```cpp
-protected void PointSet<>(PointSet<> && other)
+protected void PointSet<dimension>(PointSet<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected PointSet<> & operator=(PointSet<> && other)
+protected PointSet<dimension> & operator=(PointSet<dimension> && other)
 ```
 
 
