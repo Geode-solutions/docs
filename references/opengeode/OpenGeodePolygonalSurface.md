@@ -35,42 +35,42 @@ Impl
 ### OpenGeodePolygonalSurface
 
 ```cpp
-public void OpenGeodePolygonalSurface<dimension>(const OpenGeodePolygonalSurface<dimension> & )
+public void OpenGeodePolygonalSurface<>(const OpenGeodePolygonalSurface<> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodePolygonalSurface<dimension> & operator=(const OpenGeodePolygonalSurface<dimension> & )
+public OpenGeodePolygonalSurface<> & operator=(const OpenGeodePolygonalSurface<> & )
 ```
 
 
 ### OpenGeodePolygonalSurface
 
 ```cpp
-public void OpenGeodePolygonalSurface<dimension>()
+public void OpenGeodePolygonalSurface<>()
 ```
 
 
 ### OpenGeodePolygonalSurface
 
 ```cpp
-public void OpenGeodePolygonalSurface<dimension>(OpenGeodePolygonalSurface<dimension> && other)
+public void OpenGeodePolygonalSurface<>(OpenGeodePolygonalSurface<> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodePolygonalSurface<dimension> & operator=(OpenGeodePolygonalSurface<dimension> && other)
+public OpenGeodePolygonalSurface<> & operator=(OpenGeodePolygonalSurface<> && other)
 ```
 
 
 ### ~OpenGeodePolygonalSurface
 
 ```cpp
-public void ~OpenGeodePolygonalSurface<dimension>()
+public void ~OpenGeodePolygonalSurface<>()
 ```
 
 

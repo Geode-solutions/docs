@@ -31,42 +31,42 @@ Impl
 ### OpenGeodeEdgedCurve
 
 ```cpp
-public void OpenGeodeEdgedCurve<dimension>(const OpenGeodeEdgedCurve<dimension> & )
+public void OpenGeodeEdgedCurve<>(const OpenGeodeEdgedCurve<> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeEdgedCurve<dimension> & operator=(const OpenGeodeEdgedCurve<dimension> & )
+public OpenGeodeEdgedCurve<> & operator=(const OpenGeodeEdgedCurve<> & )
 ```
 
 
 ### OpenGeodeEdgedCurve
 
 ```cpp
-public void OpenGeodeEdgedCurve<dimension>()
+public void OpenGeodeEdgedCurve<>()
 ```
 
 
 ### OpenGeodeEdgedCurve
 
 ```cpp
-public void OpenGeodeEdgedCurve<dimension>(OpenGeodeEdgedCurve<dimension> && other)
+public void OpenGeodeEdgedCurve<>(OpenGeodeEdgedCurve<> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeEdgedCurve<dimension> & operator=(OpenGeodeEdgedCurve<dimension> && other)
+public OpenGeodeEdgedCurve<> & operator=(OpenGeodeEdgedCurve<> && other)
 ```
 
 
 ### ~OpenGeodeEdgedCurve
 
 ```cpp
-public void ~OpenGeodeEdgedCurve<dimension>()
+public void ~OpenGeodeEdgedCurve<>()
 ```
 
 

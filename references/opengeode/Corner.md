@@ -47,28 +47,28 @@ Inherits from Component<dimension>
 ### Corner
 
 ```cpp
-public void Corner<dimension>(const Corner<dimension> & )
+public void Corner<>(const Corner<> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Corner<dimension> & operator=(const Corner<dimension> & )
+public Corner<> & operator=(const Corner<> & )
 ```
 
 
 ### Corner
 
 ```cpp
-public void Corner<dimension>(Corner<dimension> && other)
+public void Corner<>(Corner<> && other)
 ```
 
 
 ### ~Corner
 
 ```cpp
-public void ~Corner<dimension>()
+public void ~Corner<>()
 ```
 
 
@@ -117,14 +117,14 @@ public const MeshImpl & mesh_type()
 ### Corner
 
 ```cpp
-public void Corner<dimension>(CornersKey key)
+public void Corner<>(CornersKey key)
 ```
 
 
 ### Corner
 
 ```cpp
-public void Corner<dimension>(const MeshImpl & impl, CornersKey key)
+public void Corner<>(const MeshImpl & impl, CornersKey key)
 ```
 
 
