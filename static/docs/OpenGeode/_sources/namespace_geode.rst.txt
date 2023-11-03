@@ -1210,6 +1210,7 @@ Overview
 	template <typename T, typename... Args>
 	constexpr std::array<T, sizeof...(Args)> :target:`to_array<doxid-namespacegeode_1a6b322af2fa0d7784638947dd6603e433>`(Args&&... args);
 
+	bool opengeode_basic_api :target:`is_zip_file<doxid-namespacegeode_1a78bc14d44724fcc792fed91eaeafc877>`(absl::string_view file);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a704add8ff33f82fa87b376794c8183d1>`(:ref:`AABBTree<doxid-classgeode_1_1_a_a_b_b_tree>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(:ref:`Point<doxid-classgeode_1_1_point>`);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a713615f1e1f632a857fbbda376b9b832>`(:ref:`Segment<doxid-classgeode_1_1_segment>`);
