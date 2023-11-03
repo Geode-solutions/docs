@@ -224,6 +224,263 @@ SurfaceCutPathInfo<2> cut_along_path(const TriangulatedSurface2D & surface, Tria
 ```
 
 
+### dummy_triangle
+
+```cpp
+Triangle<dimension> dummy_triangle()
+```
+
+
+### is_split_triangle_valid
+
+```cpp
+bool is_split_triangle_valid(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
+```
+
+
+ Check if a triangle split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**triangle_id** [in] Index of the triangle to split.
+
+**point** [in] Coordinates of the split point.
+
+**return** true if split will keep mesh valid.
+
+### split_triangle_validity
+
+```cpp
+SurfaceSplitTriangleValidity<dimension> split_triangle_validity(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
+```
+
+
+### is_split_edge_valid
+
+```cpp
+bool is_split_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+ Check if an edge split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to split.
+
+**point** [in] Coordinates of the split point.
+
+**return** true if split will keep mesh valid.
+
+### split_edge_validity
+
+```cpp
+SurfaceSplitEdgeValidity<dimension> split_edge_validity(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
+bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** true if collapse will keep mesh valid.
+
+### is_collapse_edge_valid
+
+```cpp
+bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** true if collapse will keep mesh valid.
+
+### collapse_edge_validity
+
+```cpp
+SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** all the information about validity issues this collapse would generate.
+
+### collapse_edge_validity
+
+```cpp
+SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
+
+ Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+**return** all the information about validity issues this collapse would generate.
+
+### is_swap_edge_valid
+
+```cpp
+bool is_swap_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
+```
+
+
+ Check if an edge swap will keep the mesh valid, meaning the sign of the triangle areas are positive. The swap is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to swap.
+
+**return** true if swap edge will keep mesh valid.
+
+### swap_edge_validity
+
+```cpp
+SurfaceSwapEdgeValidity<dimension> swap_edge_validity(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
+```
+
+
+### is_move_point_valid
+
+```cpp
+bool is_move_point_valid(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
+```
+
+
+ Check if a vertex relocation will keep the mesh valid, meaning the sign of the triangle areas are positive. The relocation is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**vertex** [in] Index of the vertex to relocate.
+
+**point** [in] Coordinates of the destination point.
+
+**return** true if vertex relocation will keep mesh valid.
+
+### move_point_validity
+
+```cpp
+SurfaceMovePointValidity<dimension> move_point_validity(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
+```
+
+
+### triangles_after_split_triangle
+
+```cpp
+std::array<Triangle<dimension>, 3> triangles_after_split_triangle(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
+```
+
+
+ Return the three triangles resulting from a triangle split. The split is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**triangle_id** [in] Index of the triangle on which simulate split.
+
+**point** [in] Coordinates of the split point.
+
+### triangles_after_split_edge
+
+```cpp
+TrianglesAfter<dimension> triangles_after_split_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+ Return all the triangles resulting from a triangle edge split. The split is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to split.
+
+**point** [in] Coordinates of the split point.
+
+### triangles_after_collapse_edge
+
+```cpp
+TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+ Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+### triangles_after_collapse_edge
+
+```cpp
+TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
+
+ Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge_id** [in] Unique index of the edge to collapse.
+
+**point** [in] Coordinates of the collapse point.
+
+### triangles_after_swap_edge
+
+```cpp
+SwapTrianglesAfter<dimension> triangles_after_swap_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
+```
+
+
+ Return all the triangles resulting from an edge swap. The swap is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to swap.
+
+### triangles_after_move_point
+
+```cpp
+TrianglesAfter<dimension> triangles_after_move_point(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
+```
+
+
+ Return all the triangles resulting from a vertex relocation. The vertex relocation is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**vertex** [in] Index of the vertex to relocate.
+
+**point** [in] Coordinates of the destination point.
+
 ### is_split_tetrahedron_valid
 
 ```cpp
@@ -684,263 +941,6 @@ bool is_collapse_edge_valid(const EdgedCurve<dimension> & mesh, index_t edge_id,
 EdgedCurveCollapseEdgeValidity collapse_edge_validity(const EdgedCurve<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
 ```
 
-
-### dummy_triangle
-
-```cpp
-Triangle<dimension> dummy_triangle()
-```
-
-
-### is_split_triangle_valid
-
-```cpp
-bool is_split_triangle_valid(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
-```
-
-
- Check if a triangle split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**triangle_id** [in] Index of the triangle to split.
-
-**point** [in] Coordinates of the split point.
-
-**return** true if split will keep mesh valid.
-
-### split_triangle_validity
-
-```cpp
-SurfaceSplitTriangleValidity<dimension> split_triangle_validity(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
-```
-
-
-### is_split_edge_valid
-
-```cpp
-bool is_split_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
-```
-
-
- Check if an edge split will keep the mesh valid, meaning the signs of the triangle areas are positive. The split is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge** [in] Index of the PolygonEdge to split.
-
-**point** [in] Coordinates of the split point.
-
-**return** true if split will keep mesh valid.
-
-### split_edge_validity
-
-```cpp
-SurfaceSplitEdgeValidity<dimension> split_edge_validity(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
-```
-
-
-### is_collapse_edge_valid
-
-```cpp
-bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
-```
-
-
- Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge** [in] Index of the PolygonEdge to collapse.
-
-**point** [in] Coordinates of the collapse point.
-
-**return** true if collapse will keep mesh valid.
-
-### is_collapse_edge_valid
-
-```cpp
-bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
-```
-
-
- Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge_id** [in] Unique index of the edge to collapse.
-
-**point** [in] Coordinates of the collapse point.
-
-**return** true if collapse will keep mesh valid.
-
-### collapse_edge_validity
-
-```cpp
-SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
-```
-
-
- Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge** [in] Index of the PolygonEdge to collapse.
-
-**point** [in] Coordinates of the collapse point.
-
-**return** all the information about validity issues this collapse would generate.
-
-### collapse_edge_validity
-
-```cpp
-SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
-```
-
-
- Check if an edge collapse will keep the mesh valid, meaning the signs of the triangle areas are positive, and mesh remains manifold. The collapse is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge_id** [in] Unique index of the edge to collapse.
-
-**point** [in] Coordinates of the collapse point.
-
-**return** all the information about validity issues this collapse would generate.
-
-### is_swap_edge_valid
-
-```cpp
-bool is_swap_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
-```
-
-
- Check if an edge swap will keep the mesh valid, meaning the sign of the triangle areas are positive. The swap is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge** [in] Index of the PolygonEdge to swap.
-
-**return** true if swap edge will keep mesh valid.
-
-### swap_edge_validity
-
-```cpp
-SurfaceSwapEdgeValidity<dimension> swap_edge_validity(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
-```
-
-
-### is_move_point_valid
-
-```cpp
-bool is_move_point_valid(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
-```
-
-
- Check if a vertex relocation will keep the mesh valid, meaning the sign of the triangle areas are positive. The relocation is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**vertex** [in] Index of the vertex to relocate.
-
-**point** [in] Coordinates of the destination point.
-
-**return** true if vertex relocation will keep mesh valid.
-
-### move_point_validity
-
-```cpp
-SurfaceMovePointValidity<dimension> move_point_validity(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
-```
-
-
-### triangles_after_split_triangle
-
-```cpp
-std::array<Triangle<dimension>, 3> triangles_after_split_triangle(const TriangulatedSurface<dimension> & mesh, index_t triangle_id, const Point<dimension> & point)
-```
-
-
- Return the three triangles resulting from a triangle split. The split is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**triangle_id** [in] Index of the triangle on which simulate split.
-
-**point** [in] Coordinates of the split point.
-
-### triangles_after_split_edge
-
-```cpp
-TrianglesAfter<dimension> triangles_after_split_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
-```
-
-
- Return all the triangles resulting from a triangle edge split. The split is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge** [in] Index of the PolygonEdge to split.
-
-**point** [in] Coordinates of the split point.
-
-### triangles_after_collapse_edge
-
-```cpp
-TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, const Point<dimension> & point)
-```
-
-
- Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge** [in] Index of the PolygonEdge to collapse.
-
-**point** [in] Coordinates of the collapse point.
-
-### triangles_after_collapse_edge
-
-```cpp
-TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
-```
-
-
- Return all the triangles resulting from a triangle edge collapse. The collapse is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge_id** [in] Unique index of the edge to collapse.
-
-**point** [in] Coordinates of the collapse point.
-
-### triangles_after_swap_edge
-
-```cpp
-SwapTrianglesAfter<dimension> triangles_after_swap_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
-```
-
-
- Return all the triangles resulting from an edge swap. The swap is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**edge** [in] Index of the PolygonEdge to swap.
-
-### triangles_after_move_point
-
-```cpp
-TrianglesAfter<dimension> triangles_after_move_point(const TriangulatedSurface<dimension> & mesh, index_t vertex, const Point<dimension> & point)
-```
-
-
- Return all the triangles resulting from a vertex relocation. The vertex relocation is not applied.
-
-**mesh** [in] Triangulated mesh on which simulate operation.
-
-**vertex** [in] Index of the vertex to relocate.
-
-**point** [in] Coordinates of the destination point.
 
 ### is_collapse_edge_valid
 

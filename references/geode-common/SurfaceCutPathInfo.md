@@ -41,5 +41,10 @@ public std::vector<PolygonEdgeMultiMapping> right_along_path
 
 ```
 
+```cpp
+public vector small_egdes
+
+```
+
 
 
