@@ -385,6 +385,72 @@ void register_basic_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
+### load_polyhedral_solid
+
+```cpp
+std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImpl & impl, string_view filename)
+```
+
+
+ API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polyhedral_solid
+
+```cpp
+std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(string_view filename)
+```
+
+
+ API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polyhedral_solid_missing_files
+
+```cpp
+typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(string_view filename)
+```
+
+
+### filename_with_extension
+
+```cpp
+basic_string filename_with_extension(string_view path)
+```
+
+
+### filename_without_extension
+
+```cpp
+basic_string filename_without_extension(string_view path)
+```
+
+
+### filepath_without_extension
+
+```cpp
+basic_string filepath_without_extension(string_view path)
+```
+
+
+### filepath_without_filename
+
+```cpp
+basic_string filepath_without_filename(string_view path)
+```
+
+
+### extension_from_filename
+
+```cpp
+string_view extension_from_filename(string_view filename)
+```
+
+
 ### delete_vector_elements
 
 ```cpp
@@ -473,72 +539,6 @@ void register_geometry_deserialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
-
-### load_polyhedral_solid
-
-```cpp
-std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImpl & impl, string_view filename)
-```
-
-
- API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polyhedral_solid
-
-```cpp
-std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(string_view filename)
-```
-
-
- API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polyhedral_solid_missing_files
-
-```cpp
-typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(string_view filename)
-```
-
-
-### filename_with_extension
-
-```cpp
-basic_string filename_with_extension(string_view path)
-```
-
-
-### filename_without_extension
-
-```cpp
-basic_string filename_without_extension(string_view path)
-```
-
-
-### filepath_without_extension
-
-```cpp
-basic_string filepath_without_extension(string_view path)
-```
-
-
-### filepath_without_filename
-
-```cpp
-basic_string filepath_without_filename(string_view path)
-```
-
-
-### extension_from_filename
-
-```cpp
-string_view extension_from_filename(string_view filename)
-```
-
 
 ### save_graph
 
@@ -961,6 +961,13 @@ void save_brep(const BRep & brep, string_view filename)
 
 ```cpp
 bool is_brep_saveable(const BRep & brep, string_view filename)
+```
+
+
+### is_zip_file
+
+```cpp
+bool is_zip_file(string_view file)
 ```
 
 
@@ -2751,13 +2758,6 @@ typename class VertexSetInput::MissingFiles check_vertex_set_missing_files(strin
 ```
 
 
-### create_aabb_tree
-
-```cpp
-AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
-```
-
-
 ### save_point_set
 
 ```cpp
@@ -2795,6 +2795,13 @@ void save_vertex_set(const VertexSet & vertex_set, string_view filename)
 
 ```cpp
 bool is_vertex_set_saveable(const VertexSet & vertex_set, string_view filename)
+```
+
+
+### create_aabb_tree
+
+```cpp
+AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
 ```
 
 

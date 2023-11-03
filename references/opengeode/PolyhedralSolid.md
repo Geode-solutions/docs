@@ -38,14 +38,14 @@ Inherits from SolidMesh<dimension>
 ### PolyhedralSolid
 
 ```cpp
-public void PolyhedralSolid<dimension>(const PolyhedralSolid<dimension> & )
+public void PolyhedralSolid<>(const PolyhedralSolid<> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public PolyhedralSolid<dimension> & operator=(const PolyhedralSolid<dimension> & )
+public PolyhedralSolid<> & operator=(const PolyhedralSolid<> & )
 ```
 
 
@@ -86,21 +86,21 @@ public std::unique_ptr<PolyhedralSolid<dimension> > clone()
 ### PolyhedralSolid
 
 ```cpp
-protected void PolyhedralSolid<dimension>()
+protected void PolyhedralSolid<>()
 ```
 
 
 ### PolyhedralSolid
 
 ```cpp
-protected void PolyhedralSolid<dimension>(PolyhedralSolid<dimension> && other)
+protected void PolyhedralSolid<>(PolyhedralSolid<> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected PolyhedralSolid<dimension> & operator=(PolyhedralSolid<dimension> && other)
+protected PolyhedralSolid<> & operator=(PolyhedralSolid<> && other)
 ```
 
 

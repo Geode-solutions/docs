@@ -43,7 +43,7 @@ public VertexSet & operator=(const VertexSet & )
 ### create
 
 ```cpp
-public std::unique_ptr<VertexSet> create()
+public unique_ptr create()
 ```
 
 
@@ -52,7 +52,7 @@ public std::unique_ptr<VertexSet> create()
 ### create
 
 ```cpp
-public std::unique_ptr<VertexSet> create(const MeshImpl & impl)
+public unique_ptr create(const MeshImpl & impl)
 ```
 
 
@@ -70,7 +70,7 @@ public NamedType type_name_static()
 ### clone
 
 ```cpp
-public std::unique_ptr<VertexSet> clone()
+public unique_ptr clone()
 ```
 
 
