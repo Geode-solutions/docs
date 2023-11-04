@@ -1,0 +1,42 @@
+.. index:: pair: class; geode::LinearSolver
+.. _doxid-classgeode_1_1_linear_solver:
+
+class geode::LinearSolver
+=========================
+
+.. toctree::
+	:hidden:
+
+	struct_geode_LinearSolver_Coefficient.rst
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <linear_solver.h>
+	
+	class LinearSolver
+	{
+	public:
+		// structs
+	
+		struct :ref:`Coefficient<doxid-structgeode_1_1_linear_solver_1_1_coefficient>`;
+
+		// construction
+	
+		:target:`LinearSolver<doxid-classgeode_1_1_linear_solver_1a3177ab634568919c33bb97b40d0e4261>`(index_t nb_variables);
+
+		// methods
+	
+		index_t :target:`nb_variables<doxid-classgeode_1_1_linear_solver_1a500848a96fc6514d594d08a3d048d9ce>`() const;
+		double :target:`variable<doxid-classgeode_1_1_linear_solver_1a3f13fd5a9909dd0b40fdc469466f4be0>`(index_t variable) const;
+		void :target:`set_variable<doxid-classgeode_1_1_linear_solver_1a591f36029c1d507e0e4272517142dcf7>`(index_t variable, double value);
+		void :target:`lock_variable<doxid-classgeode_1_1_linear_solver_1a347d2006affb8faa24b7dfdbbf69cf26>`(index_t variable);
+		bool :target:`is_variable_locked<doxid-classgeode_1_1_linear_solver_1aaaec07b4b4581f3725321f2983845258>`(index_t variable) const;
+		void :target:`create_system<doxid-classgeode_1_1_linear_solver_1a0bfc7e72a8e2f0cdd37c57206a225289>`(index_t nb_rows);
+		void :target:`add_coefficient<doxid-classgeode_1_1_linear_solver_1a0b71c59eb2516b63ba1b7caebe6fc52d>`(const :ref:`Coefficient<doxid-structgeode_1_1_linear_solver_1_1_coefficient>`& coefficient);
+		void :target:`add_rhs<doxid-classgeode_1_1_linear_solver_1abe9f31c1aba8bb1837abc66c6defc42b>`(index_t variable, double value);
+		void :target:`solve<doxid-classgeode_1_1_linear_solver_1a04e6a29005e6b52a0a03bf85d6aa39ba>`();
+	};

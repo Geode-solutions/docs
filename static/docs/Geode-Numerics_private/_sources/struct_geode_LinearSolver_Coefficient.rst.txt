@@ -1,0 +1,25 @@
+.. index:: pair: struct; geode::LinearSolver::Coefficient
+.. _doxid-structgeode_1_1_linear_solver_1_1_coefficient:
+
+struct geode::LinearSolver::Coefficient
+=======================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <linear_solver.h>
+	
+	struct Coefficient
+	{
+		// fields
+	
+		index_t :target:`row_id<doxid-structgeode_1_1_linear_solver_1_1_coefficient_1a54f937e85f9030fb61791c1d5efc2a25>` { NO_ID };
+		index_t :target:`column_id<doxid-structgeode_1_1_linear_solver_1_1_coefficient_1ada42dd6b13e31b9b955361f45ad93f13>` { NO_ID };
+		double :target:`value<doxid-structgeode_1_1_linear_solver_1_1_coefficient_1a70fb0368389e73851811828d1d19ec5a>` { 0 };
+	};
