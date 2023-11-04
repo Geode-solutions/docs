@@ -29,4 +29,5 @@ template struct geode::SurfaceCutPathInfo
 		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-structgeode_1_1_surface_cut_path_info_1a327cb4337ff607f317e418df82094e99>`> :target:`modified<doxid-structgeode_1_1_surface_cut_path_info_1a52254510cf9d60b09c2a7401e3252636>`;
 		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-structgeode_1_1_surface_cut_path_info_1a327cb4337ff607f317e418df82094e99>`> :target:`left_along_path<doxid-structgeode_1_1_surface_cut_path_info_1a8f0b341ab221b7500e7564645027998c>`;
 		std::vector<:ref:`PolygonEdgeMultiMapping<doxid-structgeode_1_1_surface_cut_path_info_1a327cb4337ff607f317e418df82094e99>`> :target:`right_along_path<doxid-structgeode_1_1_surface_cut_path_info_1a850edbc2410debffbe61077a2fd56a72>`;
+		std::vector<PolygonEdge> :target:`small_egdes<doxid-structgeode_1_1_surface_cut_path_info_1a32a069b7be0c168cdacc30fef7dc0b2f>`;
 	};

@@ -369,7 +369,6 @@ Overview
 	// global variables
 
 	static constexpr char :target:`Common<doxid-namespacegeode_1abd624419c33a1b81e85404ea231a0406>`[] = "Common";
-	static const Tetrahedron :target:`DUMMY_TETRA<doxid-namespacegeode_1a0a35d2e623e42fe7426a584c0ba6ee57>` { {}, {}, {}, {} };
 
 	// global functions
 
