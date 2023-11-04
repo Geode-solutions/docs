@@ -14,12 +14,6 @@ const name = words.join('-');
 # class PGP3D
 
 
-## Records
-
-Constraint
-
-
-
 ## Functions
 
 ### PGP3D

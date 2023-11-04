@@ -11,13 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Constraint
+# struct Coefficient
 
 
 ## Members
 
 ```cpp
-public std::array<bool, 3> locks
+public index_t row_id
+
+```
+
+```cpp
+public index_t column_id
+
+```
+
+```cpp
+public double value
 
 ```
 
@@ -25,24 +35,10 @@ public std::array<bool, 3> locks
 
 ## Functions
 
-### Constraint
+### Coefficient
 
 ```cpp
-public void Constraint()
-```
-
-
-### is_locked
-
-```cpp
-public bool is_locked(local_index_t direction)
-```
-
-
-### lock
-
-```cpp
-public void lock(local_index_t direction)
+public void Coefficient()
 ```
 
 

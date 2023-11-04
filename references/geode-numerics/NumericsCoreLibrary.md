@@ -11,29 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct NormalConstraint
+# class NumericsCoreLibrary
 
-
-## Members
 
 ```cpp
-public index_t vertex
-
-```
-
-```cpp
-public Vector3D normal
-
+Inherits from Library
 ```
 
 
 
 ## Functions
 
-### NormalConstraint
+### initialize
 
 ```cpp
-public void NormalConstraint(index_t vertex_in, Vector3D normal_in)
+public void initialize()
 ```
 
 
