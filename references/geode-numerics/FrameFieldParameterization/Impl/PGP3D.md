@@ -33,14 +33,14 @@ public void compute_parameterization()
 ### translation
 
 ```cpp
-public Vector3D translation(index_t i, index_t j)
+public Vector3D translation(index_t vertex_i, index_t vertex_j)
 ```
 
 
-### compute_constant
+### constant
 
 ```cpp
-public Vector3D compute_constant(index_t vertex_i, index_t vertex_j, const FrameTransform3D & mapping)
+public Vector3D constant(index_t vertex_i, index_t vertex_j)
 ```
 
 
