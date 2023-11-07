@@ -25,42 +25,42 @@ Inherits from PointSet<dimension>
 ### OpenGeodePointSet
 
 ```cpp
-public void OpenGeodePointSet<>(const OpenGeodePointSet<> & )
+public void OpenGeodePointSet<dimension>(const OpenGeodePointSet<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodePointSet<> & operator=(const OpenGeodePointSet<> & )
+public OpenGeodePointSet<dimension> & operator=(const OpenGeodePointSet<dimension> & )
 ```
 
 
 ### OpenGeodePointSet
 
 ```cpp
-public void OpenGeodePointSet<>()
+public void OpenGeodePointSet<dimension>()
 ```
 
 
 ### OpenGeodePointSet
 
 ```cpp
-public void OpenGeodePointSet<>(OpenGeodePointSet<> && other)
+public void OpenGeodePointSet<dimension>(OpenGeodePointSet<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodePointSet<> & operator=(OpenGeodePointSet<> && other)
+public OpenGeodePointSet<dimension> & operator=(OpenGeodePointSet<dimension> && other)
 ```
 
 
 ### ~OpenGeodePointSet
 
 ```cpp
-public void ~OpenGeodePointSet<>()
+public void ~OpenGeodePointSet<dimension>()
 ```
 
 

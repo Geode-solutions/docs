@@ -25,7 +25,7 @@ Inherits from SurfaceMesh<2>, Grid<2>
 ### create
 
 ```cpp
-public int create()
+public std::unique_ptr<RegularGrid2D> create()
 ```
 
 
@@ -34,7 +34,7 @@ public int create()
 ### create
 
 ```cpp
-public int create(const MeshImpl & impl)
+public std::unique_ptr<RegularGrid2D> create(const MeshImpl & impl)
 ```
 
 
@@ -45,7 +45,7 @@ public int create(const MeshImpl & impl)
 ### type_name_static
 
 ```cpp
-public MeshType type_name_static()
+public NamedType type_name_static()
 ```
 
 
@@ -80,7 +80,7 @@ public AttributeManager & grid_vertex_attribute_manager()
 ### clone
 
 ```cpp
-public int clone()
+public std::unique_ptr<RegularGrid2D> clone()
 ```
 
 

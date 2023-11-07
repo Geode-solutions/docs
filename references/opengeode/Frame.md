@@ -62,6 +62,13 @@ public Frame operator+(const Frame<dimension> & rhs)
 ```
 
 
+### operator*
+
+```cpp
+public Vector<dimension> operator*(const Vector<dimension> & rhs)
+```
+
+
 ### rescale
 
 ```cpp

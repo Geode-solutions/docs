@@ -31,42 +31,42 @@ Impl
 ### OpenGeodeHybridSolid
 
 ```cpp
-public void OpenGeodeHybridSolid<>(const OpenGeodeHybridSolid<> & )
+public void OpenGeodeHybridSolid<dimension>(const OpenGeodeHybridSolid<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeHybridSolid<> & operator=(const OpenGeodeHybridSolid<> & )
+public OpenGeodeHybridSolid<dimension> & operator=(const OpenGeodeHybridSolid<dimension> & )
 ```
 
 
 ### OpenGeodeHybridSolid
 
 ```cpp
-public void OpenGeodeHybridSolid<>()
+public void OpenGeodeHybridSolid<dimension>()
 ```
 
 
 ### OpenGeodeHybridSolid
 
 ```cpp
-public void OpenGeodeHybridSolid<>(OpenGeodeHybridSolid<> && other)
+public void OpenGeodeHybridSolid<dimension>(OpenGeodeHybridSolid<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeHybridSolid<> & operator=(OpenGeodeHybridSolid<> && other)
+public OpenGeodeHybridSolid<dimension> & operator=(OpenGeodeHybridSolid<dimension> && other)
 ```
 
 
 ### ~OpenGeodeHybridSolid
 
 ```cpp
-public void ~OpenGeodeHybridSolid<>()
+public void ~OpenGeodeHybridSolid<dimension>()
 ```
 
 

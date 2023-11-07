@@ -385,72 +385,6 @@ void register_basic_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
-### load_polyhedral_solid
-
-```cpp
-std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImpl & impl, string_view filename)
-```
-
-
- API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polyhedral_solid
-
-```cpp
-std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(string_view filename)
-```
-
-
- API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polyhedral_solid_missing_files
-
-```cpp
-typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(string_view filename)
-```
-
-
-### filename_with_extension
-
-```cpp
-basic_string filename_with_extension(string_view path)
-```
-
-
-### filename_without_extension
-
-```cpp
-basic_string filename_without_extension(string_view path)
-```
-
-
-### filepath_without_extension
-
-```cpp
-basic_string filepath_without_extension(string_view path)
-```
-
-
-### filepath_without_filename
-
-```cpp
-basic_string filepath_without_filename(string_view path)
-```
-
-
-### extension_from_filename
-
-```cpp
-string_view extension_from_filename(string_view filename)
-```
-
-
 ### delete_vector_elements
 
 ```cpp
@@ -560,6 +494,41 @@ bool is_graph_saveable(const Graph & graph, string_view filename)
 ```
 
 
+### filename_with_extension
+
+```cpp
+basic_string filename_with_extension(string_view path)
+```
+
+
+### filename_without_extension
+
+```cpp
+basic_string filename_without_extension(string_view path)
+```
+
+
+### filepath_without_extension
+
+```cpp
+basic_string filepath_without_extension(string_view path)
+```
+
+
+### filepath_without_filename
+
+```cpp
+basic_string filepath_without_filename(string_view path)
+```
+
+
+### extension_from_filename
+
+```cpp
+string_view extension_from_filename(string_view filename)
+```
+
+
 ### load_section
 
 ```cpp
@@ -577,6 +546,37 @@ Section load_section(string_view filename)
 
 ```cpp
 MissingFiles check_section_missing_files(string_view filename)
+```
+
+
+### load_polyhedral_solid
+
+```cpp
+std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImpl & impl, string_view filename)
+```
+
+
+ API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polyhedral_solid
+
+```cpp
+std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(string_view filename)
+```
+
+
+ API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polyhedral_solid_missing_files
+
+```cpp
+typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(string_view filename)
 ```
 
 
@@ -926,24 +926,6 @@ tuple point_disk_distance(const Point3D & point, const Disk & disk)
 
 **details** Result is always positive or null. If point is inside the disk, the returned distance is 0.
 
-### perpendicular
-
-```cpp
-Vector perpendicular(const Vector2D & v)
-```
-
-
- Return a 2D vector perpendicular to the given one
-
-### dot_perpendicular
-
-```cpp
-double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
-```
-
-
- Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
-
 ### save_brep
 
 ```cpp
@@ -970,6 +952,24 @@ bool is_brep_saveable(const BRep & brep, string_view filename)
 bool is_zip_file(string_view file)
 ```
 
+
+### perpendicular
+
+```cpp
+Vector perpendicular(const Vector2D & v)
+```
+
+
+ Return a 2D vector perpendicular to the given one
+
+### dot_perpendicular
+
+```cpp
+double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
+```
+
+
+ Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
 
 ### load_tetrahedral_solid
 
@@ -1132,34 +1132,6 @@ bool is_triangulated_surface_saveable(const TriangulatedSurface<dimension> & tri
 ```
 
 
-### convert_solid_mesh_into_tetrahedral_solid
-
-```cpp
-absl::optional<std::unique_ptr<TetrahedralSolid3D> > convert_solid_mesh_into_tetrahedral_solid(const SolidMesh3D & solid)
-```
-
-
-### convert_grid_into_tetrahedral_solid
-
-```cpp
-std::unique_ptr<TetrahedralSolid3D> convert_grid_into_tetrahedral_solid(const Grid3D & grid)
-```
-
-
-### convert_solid_mesh_into_hybrid_solid
-
-```cpp
-absl::optional<std::unique_ptr<HybridSolid3D> > convert_solid_mesh_into_hybrid_solid(const SolidMesh3D & solid)
-```
-
-
-### merge_solid_meshes
-
-```cpp
-std::unique_ptr<SolidMesh3D> merge_solid_meshes(absl::Span<const std::reference_wrapper<const SolidMesh3D> > solids)
-```
-
-
 ### polyhedron_unique_vertices
 
 ```cpp
@@ -1230,6 +1202,34 @@ ComponentMeshVertexGeneric<dimension> component_mesh_vertex_tuple(UniqueVertices
 ```
 
 
+### convert_solid_mesh_into_tetrahedral_solid
+
+```cpp
+absl::optional<std::unique_ptr<TetrahedralSolid3D> > convert_solid_mesh_into_tetrahedral_solid(const SolidMesh3D & solid)
+```
+
+
+### convert_grid_into_tetrahedral_solid
+
+```cpp
+std::unique_ptr<TetrahedralSolid3D> convert_grid_into_tetrahedral_solid(const Grid3D & grid)
+```
+
+
+### convert_solid_mesh_into_hybrid_solid
+
+```cpp
+absl::optional<std::unique_ptr<HybridSolid3D> > convert_solid_mesh_into_hybrid_solid(const SolidMesh3D & solid)
+```
+
+
+### merge_solid_meshes
+
+```cpp
+std::unique_ptr<SolidMesh3D> merge_solid_meshes(absl::Span<const std::reference_wrapper<const SolidMesh3D> > solids)
+```
+
+
 ### brep_coordinate_reference_systems
 
 ```cpp
@@ -1257,6 +1257,32 @@ FixedArray brep_active_coordinate_reference_systems(const BRep & brep)
 FixedArray section_active_coordinate_reference_systems(const Section & section)
 ```
 
+
+### register_image_serialize_pcontext
+
+```cpp
+void register_image_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### register_image_deserialize_pcontext
+
+```cpp
+void register_image_deserialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to deserialize the objects in the image library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
 
 ### convert_surface_mesh_into_polygonal_surface
 
@@ -1366,32 +1392,6 @@ int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMe
 AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
 ```
 
-
-### register_image_serialize_pcontext
-
-```cpp
-void register_image_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### register_image_deserialize_pcontext
-
-```cpp
-void register_image_deserialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to deserialize the objects in the image library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
 
 ### register_geode_builder
 
@@ -1505,6 +1505,97 @@ BRep load_brep(string_view filename)
 
 ```cpp
 MissingFiles check_brep_missing_files(string_view filename)
+```
+
+
+### convert_surface_mesh
+
+```cpp
+void convert_surface_mesh(const Section & model, SectionBuilder & builder, const geode::Surface2D & surface, const geode::MeshType & mesh_type)
+```
+
+
+### convert_surface_mesh
+
+```cpp
+void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode::Surface3D & surface, const geode::MeshType & mesh_type)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(const BRep & brep, BRepBuilder & builder)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(Section & section)
+```
+
+
+### convert_surface_meshes_into_triangulated_surfaces
+
+```cpp
+void convert_surface_meshes_into_triangulated_surfaces(const Section & section, SectionBuilder & builder)
+```
+
+
+### convert_block_mesh
+
+```cpp
+void convert_block_mesh(const BRep & model, BRepBuilder & builder, const Block3D & block, const MeshType & new_mesh_type)
+```
+
+
+### convert_block_meshes_into_tetrahedral_solids
+
+```cpp
+void convert_block_meshes_into_tetrahedral_solids(BRep & brep)
+```
+
+
+### convert_block_meshes_into_tetrahedral_solids
+
+```cpp
+void convert_block_meshes_into_tetrahedral_solids(const BRep & brep, BRepBuilder & builder)
+```
+
+
+### triangulate_surface_meshes
+
+```cpp
+void triangulate_surface_meshes(BRep & brep)
+```
+
+
+### triangulate_surface_meshes
+
+```cpp
+void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
+```
+
+
+### triangulate_surface_meshes
+
+```cpp
+void triangulate_surface_meshes(Section & section)
+```
+
+
+### triangulate_surface_meshes
+
+```cpp
+void triangulate_surface_meshes(const Section & section, SectionBuilder & builder)
 ```
 
 
@@ -1633,97 +1724,6 @@ std::tuple<double, Point<dimension> > point_ball_distance(const Point<dimension>
 **return** a tuple containing: - the smallest distance. - the closest point on the ball.
 
 **details** Result is always positive or null. If point is inside the ball, the returned distance is 0.
-
-### convert_surface_mesh
-
-```cpp
-void convert_surface_mesh(const Section & model, SectionBuilder & builder, const geode::Surface2D & surface, const geode::MeshType & mesh_type)
-```
-
-
-### convert_surface_mesh
-
-```cpp
-void convert_surface_mesh(const BRep & model, BRepBuilder & builder, const geode::Surface3D & surface, const geode::MeshType & mesh_type)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(BRep & brep)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(const BRep & brep, BRepBuilder & builder)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(Section & section)
-```
-
-
-### convert_surface_meshes_into_triangulated_surfaces
-
-```cpp
-void convert_surface_meshes_into_triangulated_surfaces(const Section & section, SectionBuilder & builder)
-```
-
-
-### convert_block_mesh
-
-```cpp
-void convert_block_mesh(const BRep & model, BRepBuilder & builder, const Block3D & block, const MeshType & new_mesh_type)
-```
-
-
-### convert_block_meshes_into_tetrahedral_solids
-
-```cpp
-void convert_block_meshes_into_tetrahedral_solids(BRep & brep)
-```
-
-
-### convert_block_meshes_into_tetrahedral_solids
-
-```cpp
-void convert_block_meshes_into_tetrahedral_solids(const BRep & brep, BRepBuilder & builder)
-```
-
-
-### triangulate_surface_meshes
-
-```cpp
-void triangulate_surface_meshes(BRep & brep)
-```
-
-
-### triangulate_surface_meshes
-
-```cpp
-void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
-```
-
-
-### triangulate_surface_meshes
-
-```cpp
-void triangulate_surface_meshes(Section & section)
-```
-
-
-### triangulate_surface_meshes
-
-```cpp
-void triangulate_surface_meshes(const Section & section, SectionBuilder & builder)
-```
-
 
 ### polygon_unique_vertices
 
@@ -1983,83 +1983,6 @@ shared_ptr euclidean_distance_transform(const Grid<dimension> & grid, absl::Span
 
 **return** the created attribute
 
-### convert_section_into_curve
-
-```cpp
-std::unique_ptr<EdgedCurve2D> convert_section_into_curve(const Section & section)
-```
-
-
-### convert_section_into_surface
-
-```cpp
-std::unique_ptr<SurfaceType> convert_section_into_surface(const Section & section)
-```
-
-### convert_section_into_curve_and_surface
-
-```cpp
-std::tuple<std::unique_ptr<EdgedCurve2D>, std::unique_ptr<SurfaceType> > convert_section_into_curve_and_surface(const Section & section)
-```
-
-### convert_brep_into_curve
-
-```cpp
-std::unique_ptr<EdgedCurve3D> convert_brep_into_curve(const BRep & brep)
-```
-
-
-### convert_brep_into_surface
-
-```cpp
-std::unique_ptr<SurfaceType> convert_brep_into_surface(const BRep & brep)
-```
-
-### convert_brep_into_solid
-
-```cpp
-std::unique_ptr<SolidType> convert_brep_into_solid(const BRep & brep)
-```
-
-### convert_brep_into_curve_and_surface
-
-```cpp
-std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType> > convert_brep_into_curve_and_surface(const BRep & brep)
-```
-
-### convert_brep_into_surface_and_solid
-
-```cpp
-std::tuple<std::unique_ptr<SurfaceType>, std::unique_ptr<SolidType> > convert_brep_into_surface_and_solid(const BRep & brep)
-```
-
-### convert_brep_into_curve_and_surface_and_solid
-
-```cpp
-std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType>, std::unique_ptr<SolidType> > convert_brep_into_curve_and_surface_and_solid(const BRep & brep)
-```
-
-### convert_brep_into_solid
-
-```cpp
-int convert_brep_into_solid(const BRep & brep)
-```
-
-
-### convert_brep_into_surface
-
-```cpp
-int convert_brep_into_surface(const BRep & brep)
-```
-
-
-### convert_section_into_surface
-
-```cpp
-int convert_section_into_surface(const Section & section)
-```
-
-
 ### edge_unique_vertices
 
 ```cpp
@@ -2144,6 +2067,114 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & b
 ```
 
 
+### convert_section_into_curve
+
+```cpp
+std::unique_ptr<EdgedCurve2D> convert_section_into_curve(const Section & section)
+```
+
+
+### convert_section_into_surface
+
+```cpp
+std::unique_ptr<SurfaceType> convert_section_into_surface(const Section & section)
+```
+
+### convert_section_into_curve_and_surface
+
+```cpp
+std::tuple<std::unique_ptr<EdgedCurve2D>, std::unique_ptr<SurfaceType> > convert_section_into_curve_and_surface(const Section & section)
+```
+
+### convert_brep_into_curve
+
+```cpp
+std::unique_ptr<EdgedCurve3D> convert_brep_into_curve(const BRep & brep)
+```
+
+
+### convert_brep_into_surface
+
+```cpp
+std::unique_ptr<SurfaceType> convert_brep_into_surface(const BRep & brep)
+```
+
+### convert_brep_into_solid
+
+```cpp
+std::unique_ptr<SolidType> convert_brep_into_solid(const BRep & brep)
+```
+
+### convert_brep_into_curve_and_surface
+
+```cpp
+std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType> > convert_brep_into_curve_and_surface(const BRep & brep)
+```
+
+### convert_brep_into_surface_and_solid
+
+```cpp
+std::tuple<std::unique_ptr<SurfaceType>, std::unique_ptr<SolidType> > convert_brep_into_surface_and_solid(const BRep & brep)
+```
+
+### convert_brep_into_curve_and_surface_and_solid
+
+```cpp
+std::tuple<std::unique_ptr<EdgedCurve3D>, std::unique_ptr<SurfaceType>, std::unique_ptr<SolidType> > convert_brep_into_curve_and_surface_and_solid(const BRep & brep)
+```
+
+### convert_brep_into_solid
+
+```cpp
+int convert_brep_into_solid(const BRep & brep)
+```
+
+
+### convert_brep_into_surface
+
+```cpp
+int convert_brep_into_surface(const BRep & brep)
+```
+
+
+### convert_section_into_surface
+
+```cpp
+int convert_section_into_surface(const Section & section)
+```
+
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polygonal_surface_missing_files
+
+```cpp
+typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
+```
+
+
 ### convert_brep_into_section
 
 ```cpp
@@ -2196,37 +2227,6 @@ std::unique_ptr<PointSet2D> convert_point_set3d_into_2d(const PointSet3D & point
 
 ```cpp
 std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point_set2d, index_t axis_to_add, double axis_coordinate)
-```
-
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polygonal_surface_missing_files
-
-```cpp
-typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
 ```
 
 
@@ -2561,6 +2561,20 @@ Point rotate(const Point3D & point, const Vector3D & axis, double angle)
 
 **angle** [in] Rotation angle expresses in radians.
 
+### repair_polygon_orientations
+
+```cpp
+void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
+```
+
+
+### repair_polygon_orientations
+
+```cpp
+void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
+```
+
+
 ### save_regular_grid
 
 ```cpp
@@ -2578,20 +2592,6 @@ void save_regular_grid(const RegularGrid<dimension> & regular_grid, string_view 
 
 ```cpp
 bool is_regular_grid_saveable(const RegularGrid<dimension> & regular_grid, string_view filename)
-```
-
-
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
-```
-
-
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
 ```
 
 
@@ -2758,13 +2758,6 @@ typename class VertexSetInput::MissingFiles check_vertex_set_missing_files(strin
 ```
 
 
-### create_aabb_tree
-
-```cpp
-AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
-```
-
-
 ### save_point_set
 
 ```cpp
@@ -2802,6 +2795,13 @@ void save_vertex_set(const VertexSet & vertex_set, string_view filename)
 
 ```cpp
 bool is_vertex_set_saveable(const VertexSet & vertex_set, string_view filename)
+```
+
+
+### create_aabb_tree
+
+```cpp
+AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
 ```
 
 
@@ -2913,6 +2913,33 @@ double surface_area(const Surface<dimension> & surface)
 ```
 
 
+### register_geode_mesh_output
+
+```cpp
+void register_geode_mesh_output()
+```
+
+
+### save_tetrahedral_solid
+
+```cpp
+void save_tetrahedral_solid(const TetrahedralSolid<dimension> & tetrahedral_solid, string_view filename)
+```
+
+
+ API function for saving a TetrahedralSolid. The adequate saver is called depending on the given filename extension.
+
+**tetrahedral_solid** [in] TetrahedralSolid to save.
+
+**filename** [in] Path to the file where save the TetrahedralSolid.
+
+### is_tetrahedral_solid_saveable
+
+```cpp
+bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedral_solid, string_view filename)
+```
+
+
 ### create_lines_aabb_tree
 
 ```cpp
@@ -3000,33 +3027,6 @@ void save_raster_image(const RasterImage<dimension> & raster, string_view filena
 
 ```cpp
 bool is_raster_image_saveable(const RasterImage<dimension> & raster, string_view filename)
-```
-
-
-### register_geode_mesh_output
-
-```cpp
-void register_geode_mesh_output()
-```
-
-
-### save_tetrahedral_solid
-
-```cpp
-void save_tetrahedral_solid(const TetrahedralSolid<dimension> & tetrahedral_solid, string_view filename)
-```
-
-
- API function for saving a TetrahedralSolid. The adequate saver is called depending on the given filename extension.
-
-**tetrahedral_solid** [in] TetrahedralSolid to save.
-
-**filename** [in] Path to the file where save the TetrahedralSolid.
-
-### is_tetrahedral_solid_saveable
-
-```cpp
-bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedral_solid, string_view filename)
 ```
 
 
