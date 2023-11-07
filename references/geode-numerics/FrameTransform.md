@@ -54,6 +54,13 @@ public Frame<dimension> apply(const Frame<dimension> & frame)
 ### apply
 
 ```cpp
+public Vector<dimension> apply(const Vector<dimension> & vector)
+```
+
+
+### apply
+
+```cpp
 public Point<dimension> apply(const Point<dimension> & point)
 ```
 
