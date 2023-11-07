@@ -81,6 +81,7 @@ Overview
 	:target:`ALIAS_3D<doxid-namespacegeode_1a82b6b61fdb928daf4084c93632f90f47>`(Frame);
 	:target:`ALIAS_3D<doxid-namespacegeode_1a80b5a064401aa01835668d57032444e2>`(TetrahedralSolid);
 	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1afb6e6b42596c062c9d8764d858209433>`(Point);
+	:target:`FORWARD_DECLARATION_DIMENSION_CLASS<doxid-namespacegeode_1a8aa2b23c4d6223ad5baa9bd94971837a>`(Vector);
 	:target:`ALIAS_2D_AND_3D<doxid-namespacegeode_1a1e631365afa91db8a83b01da36eb4ea8>`(:ref:`FrameTransform<doxid-classgeode_1_1_frame_transform>`);
 	:target:`OPENGEODE_LIBRARY<doxid-namespacegeode_1ac7460483fc781252e3a9b61ecaac8b41>`(geode_numerics_scalar_function_api, NumericsScalarFunction);
 	:target:`ALIAS_2D<doxid-namespacegeode_1a4bd02aabaf2cf4d25e7f1471d6f5f682>`(Point);
