@@ -11,28 +11,18 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelCollapsePolygonEdgeInfo
+# struct CollapseEdgeInfo
 
 
 ## Members
 
 ```cpp
-public MultiMapping unique_vertex
+public MultiMapping vertex
 
 ```
 
 ```cpp
-public array old_cmvs
-
-```
-
-```cpp
-public absl::flat_hash_map<uuid, absl::InlinedVector<CollapseEdgeInfo, 1> > line_info
-
-```
-
-```cpp
-public absl::flat_hash_map<uuid, absl::InlinedVector<CollapsePolygonEdgeInfo, 1> > surface_info
+public index_t inactive_edge
 
 ```
 

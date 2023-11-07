@@ -22,6 +22,12 @@ Inherits from VerticesModifier
 
 
 
+## Records
+
+CollapseEdgeInfo
+
+
+
 ## Functions
 
 ### EdgedCurveModifier
@@ -55,7 +61,7 @@ public bool is_edge_active(index_t edge_id)
 ### collapse_edge
 
 ```cpp
-public index_t collapse_edge(index_t edge_id, const Point<dimension> & point)
+public CollapseEdgeInfo collapse_edge(index_t edge_id, const Point<dimension> & point)
 ```
 
 
@@ -85,7 +91,7 @@ public index_t split_edge(index_t edge_id, const Point<dimension> & point)
 ### clean_edges
 
 ```cpp
-public int clean_edges()
+public vector clean_edges()
 ```
 
 
@@ -96,20 +102,13 @@ public int clean_edges()
 ### clean_vertices
 
 ```cpp
-public int clean_vertices()
+public vector clean_vertices()
 ```
 
 
  Clean up the mesh removing isolated vertices
 
 **return** old2new mappings for vertices
-
-### curve
-
-```cpp
-protected const EdgedCurve<dimension> & curve()
-```
-
 
 ### clean
 
@@ -120,6 +119,13 @@ public std::tuple<std::vector<index_t>, std::vector<index_t> > clean()
  Clean up the mesh removing inactive edges, isolated vertices.
 
 **return** old2new mappings for edges and vertices.
+
+### curve
+
+```cpp
+protected const EdgedCurve<dimension> & curve()
+```
+
 
 
 
