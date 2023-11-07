@@ -16,7 +16,7 @@
     <script src="_static/target-highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="class geode::FileLicenseChecker" href="class_geode_FileLicenseChecker.html" />
+    <link rel="next" title="struct geode::EdgedCurveModifier::CollapseEdgeInfo" href="struct_geode_EdgedCurveModifier_CollapseEdgeInfo.html" />
     <link rel="prev" title="template class geode::CustomGridMetric" href="class_geode_CustomGridMetric.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -45,6 +45,10 @@
 <span class="k">class</span> <span class="nl">EdgedCurveModifier</span><span class="p">:</span> <span class="k">public</span> <a class="reference internal" href="class_geode_VerticesModifier.html#doxid-classgeode-1-1-vertices-modifier"><span class="std std-ref">geode::VerticesModifier</span></a><span></span>
 <span class="p">{</span>
 <span class="k">public</span><span class="o">:</span>
+    <span class="c1">// structs</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_geode_EdgedCurveModifier_CollapseEdgeInfo.html#doxid-structgeode-1-1-edged-curve-modifier-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span><span class="p">;</span>
+
     <span class="c1">// construction</span>
 
     <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-edged-curve-modifier-1adbed168275a611b1d8089b270dc864ed"><span></span><span class="n">EdgedCurveModifier</span></span><span></span><span class="p">(</span>
@@ -57,7 +61,7 @@
     <span class="c1">// methods</span>
 
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-classgeode-1-1-edged-curve-modifier-1a553dbffd4b277e8ae7a099ada35b8aab"><span></span><span class="n">is_edge_active</span></span><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-    <span class="n">index_t</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1a7285707c860415a2dc3ead5c097bb8c5"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
+    <a class="reference internal" href="struct_geode_EdgedCurveModifier_CollapseEdgeInfo.html#doxid-structgeode-1-1-edged-curve-modifier-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1ac92c8515395f385632f356871eddedad"><span class="std std-ref">collapse_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
     <span class="n">index_t</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1a89a83b95c825a8866a56e9e0ecc902d4"><span class="std std-ref">split_edge</span></a><span></span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">);</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1aded8d8cd0bf12d83b9a078487fbffa1c"><span class="std std-ref">clean_edges</span></a><span></span><span class="p">();</span>
     <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">index_t</span><span class="o">&gt;</span> <a class="reference internal" href="#doxid-classgeode-1-1-edged-curve-modifier-1a15627e5266d1fc7b5c953011f7b7cde9"><span class="std std-ref">clean_vertices</span></a><span></span><span class="p">();</span>
@@ -75,7 +79,7 @@
 <span id="details-classgeode-1-1-edged-curve-modifier"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this heading">¶</a></h2>
 <section id="methods">
 <h3>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">¶</a></h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-edged-curve-modifier-1a7285707c860415a2dc3ead5c097bb8c5"><span id="index-1"></span><span></span><span class="n">index_t</span> <span class="n">collapse_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-classgeode-1-1-edged-curve-modifier-1ac92c8515395f385632f356871eddedad"><span id="index-1"></span><a class="reference internal" href="struct_geode_EdgedCurveModifier_CollapseEdgeInfo.html#doxid-structgeode-1-1-edged-curve-modifier-1-1-collapse-edge-info"><span class="std std-ref">CollapseEdgeInfo</span></a><span></span> <span class="n">collapse_edge</span><span class="p">(</span><span class="n">index_t</span> <span class="n">edge_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">Point</span><span class="o">&lt;</span><span class="n">dimension</span><span class="o">&gt;&amp;</span> <span class="n">point</span><span class="p">)</span></pre>
 <p>Collapse an edge.</p>
 <p class="rubric">Parameters:</p>
 <table class="docutils align-default">

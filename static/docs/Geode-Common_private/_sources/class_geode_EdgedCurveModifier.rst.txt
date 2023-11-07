@@ -7,6 +7,8 @@ template class geode::EdgedCurveModifier
 .. toctree::
 	:hidden:
 
+	struct_geode_EdgedCurveModifier_CollapseEdgeInfo.rst
+
 Overview
 ~~~~~~~~
 
@@ -22,6 +24,10 @@ Overview
 	class EdgedCurveModifier: public :ref:`geode::VerticesModifier<doxid-classgeode_1_1_vertices_modifier>`
 	{
 	public:
+		// structs
+	
+		struct :ref:`CollapseEdgeInfo<doxid-structgeode_1_1_edged_curve_modifier_1_1_collapse_edge_info>`;
+
 		// construction
 	
 		:target:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier_1adbed168275a611b1d8089b270dc864ed>`(
@@ -34,7 +40,7 @@ Overview
 		// methods
 	
 		bool :target:`is_edge_active<doxid-classgeode_1_1_edged_curve_modifier_1a553dbffd4b277e8ae7a099ada35b8aab>`(index_t edge_id) const;
-		index_t :ref:`collapse_edge<doxid-classgeode_1_1_edged_curve_modifier_1a7285707c860415a2dc3ead5c097bb8c5>`(index_t edge_id, const Point<dimension>& point);
+		:ref:`CollapseEdgeInfo<doxid-structgeode_1_1_edged_curve_modifier_1_1_collapse_edge_info>` :ref:`collapse_edge<doxid-classgeode_1_1_edged_curve_modifier_1ac92c8515395f385632f356871eddedad>`(index_t edge_id, const Point<dimension>& point);
 		index_t :ref:`split_edge<doxid-classgeode_1_1_edged_curve_modifier_1a89a83b95c825a8866a56e9e0ecc902d4>`(index_t edge_id, const Point<dimension>& point);
 		std::vector<index_t> :ref:`clean_edges<doxid-classgeode_1_1_edged_curve_modifier_1aded8d8cd0bf12d83b9a078487fbffa1c>`();
 		std::vector<index_t> :ref:`clean_vertices<doxid-classgeode_1_1_edged_curve_modifier_1a15627e5266d1fc7b5c953011f7b7cde9>`();
@@ -63,12 +69,12 @@ Methods
 -------
 
 .. index:: pair: function; collapse_edge
-.. _doxid-classgeode_1_1_edged_curve_modifier_1a7285707c860415a2dc3ead5c097bb8c5:
+.. _doxid-classgeode_1_1_edged_curve_modifier_1ac92c8515395f385632f356871eddedad:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	index_t collapse_edge(index_t edge_id, const Point<dimension>& point)
+	:ref:`CollapseEdgeInfo<doxid-structgeode_1_1_edged_curve_modifier_1_1_collapse_edge_info>` collapse_edge(index_t edge_id, const Point<dimension>& point)
 
 Collapse an edge.
 

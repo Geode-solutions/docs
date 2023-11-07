@@ -1,0 +1,24 @@
+.. index:: pair: struct; geode::EdgedCurveModifier::CollapseEdgeInfo
+.. _doxid-structgeode_1_1_edged_curve_modifier_1_1_collapse_edge_info:
+
+struct geode::EdgedCurveModifier::CollapseEdgeInfo
+==================================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <edged_curve_modifier.h>
+	
+	struct CollapseEdgeInfo
+	{
+		// fields
+	
+		:ref:`VertexMultiMapping<doxid-namespacegeode_1a981fe588540e18c37bf329ddf946ecff>` :target:`vertex<doxid-structgeode_1_1_edged_curve_modifier_1_1_collapse_edge_info_1a0e66df972763a596c6f39d2c7aee1bbc>`;
+		index_t :target:`inactive_edge<doxid-structgeode_1_1_edged_curve_modifier_1_1_collapse_edge_info_1aa072b5a469ad4bfaece81faf24459a4a>` { NO_ID };
+	};
