@@ -227,6 +227,11 @@ Inherited Members
 		virtual :ref:`PolyhedraAroundEdge<doxid-namespacegeode_1aa50986e7408aba331844fe80d1ba983c>` :ref:`polyhedra_around_edge<doxid-classgeode_1_1_tetrahedral_solid_1a25421b33f21e3e1f318b8417bfd63194>`(const :ref:`PolyhedronFacetEdge<doxid-structgeode_1_1_polyhedron_facet_edge>`& edge) const;
 		virtual absl::optional<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`> :ref:`polyhedron_adjacent_facet<doxid-classgeode_1_1_tetrahedral_solid_1ad70accda00b786fce40b81e66593b0dd>`(const :ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`& polyhedron_facet) const;
 	
+		std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2> :ref:`opposite_edge_vertices<doxid-classgeode_1_1_tetrahedral_solid_1a747a85ba47776603083550e645c3cba2>`(
+			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id,
+			const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
+			) const;
+	
 		std::array<:ref:`PolyhedronFacet<doxid-structgeode_1_1_polyhedron_facet>`, 2> :ref:`edge_incident_facets<doxid-classgeode_1_1_tetrahedral_solid_1a18f25717f66e149630909fd120b05a06>`(
 			:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` tetrahedron_id,
 			const std::array<:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>`, 2>& edge_vertices
