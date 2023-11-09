@@ -47,7 +47,7 @@ Inherits from SurfaceMesh<dimension>
 ### create
 
 ```cpp
-public std::unique_ptr<PolygonalSurface<dimension> > create()
+public int create()
 ```
 
 
@@ -56,7 +56,7 @@ public std::unique_ptr<PolygonalSurface<dimension> > create()
 ### create
 
 ```cpp
-public std::unique_ptr<PolygonalSurface<dimension> > create(const MeshImpl & impl)
+public int create(const MeshImpl & impl)
 ```
 
 
@@ -67,35 +67,35 @@ public std::unique_ptr<PolygonalSurface<dimension> > create(const MeshImpl & imp
 ### type_name_static
 
 ```cpp
-public NamedType type_name_static()
+public MeshType type_name_static()
 ```
 
 
 ### clone
 
 ```cpp
-public std::unique_ptr<PolygonalSurface<dimension> > clone()
+public int clone()
 ```
 
 
 ### PolygonalSurface
 
 ```cpp
-protected void PolygonalSurface<dimension>()
+protected void PolygonalSurface<>()
 ```
 
 
 ### PolygonalSurface
 
 ```cpp
-protected void PolygonalSurface<dimension>(PolygonalSurface<dimension> && other)
+protected void PolygonalSurface<>(PolygonalSurface<> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected PolygonalSurface<dimension> & operator=(PolygonalSurface<dimension> && other)
+protected PolygonalSurface<> & operator=(PolygonalSurface<> && other)
 ```
 
 

@@ -31,42 +31,42 @@ Impl
 ### OpenGeodeTetrahedralSolid
 
 ```cpp
-public void OpenGeodeTetrahedralSolid<dimension>(const OpenGeodeTetrahedralSolid<dimension> & )
+public void OpenGeodeTetrahedralSolid<>(const OpenGeodeTetrahedralSolid<> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeTetrahedralSolid<dimension> & operator=(const OpenGeodeTetrahedralSolid<dimension> & )
+public OpenGeodeTetrahedralSolid<> & operator=(const OpenGeodeTetrahedralSolid<> & )
 ```
 
 
 ### OpenGeodeTetrahedralSolid
 
 ```cpp
-public void OpenGeodeTetrahedralSolid<dimension>()
+public void OpenGeodeTetrahedralSolid<>()
 ```
 
 
 ### OpenGeodeTetrahedralSolid
 
 ```cpp
-public void OpenGeodeTetrahedralSolid<dimension>(OpenGeodeTetrahedralSolid<dimension> && other)
+public void OpenGeodeTetrahedralSolid<>(OpenGeodeTetrahedralSolid<> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-public OpenGeodeTetrahedralSolid<dimension> & operator=(OpenGeodeTetrahedralSolid<dimension> && other)
+public OpenGeodeTetrahedralSolid<> & operator=(OpenGeodeTetrahedralSolid<> && other)
 ```
 
 
 ### ~OpenGeodeTetrahedralSolid
 
 ```cpp
-public void ~OpenGeodeTetrahedralSolid<dimension>()
+public void ~OpenGeodeTetrahedralSolid<>()
 ```
 
 

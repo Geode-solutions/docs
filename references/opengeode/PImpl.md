@@ -44,17 +44,17 @@ public void PImpl<T>(PImpl<T> && other)
 ```
 
 
-### ~PImpl
-
-```cpp
-public void ~PImpl<T>()
-```
-
-
 ### operator=
 
 ```cpp
 public PImpl<T> & operator=(PImpl<T> && other)
+```
+
+
+### ~PImpl
+
+```cpp
+public void ~PImpl<T>()
 ```
 
 

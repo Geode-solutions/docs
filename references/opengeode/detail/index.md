@@ -111,20 +111,6 @@ void coords_substract_equal(Coords<dimension> & input, const Coords<dimension> &
 ```
 
 
-### geode_object_output_writer
-
-```cpp
-std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(absl::string_view & filename)
-```
-
-
-### geode_object_output_impl
-
-```cpp
-void geode_object_output_impl(string_view type, const Object & object, string_view filename)
-```
-
-
 ### update_default_name
 
 ```cpp
@@ -157,6 +143,20 @@ typename Factory::BaseClass::InputData geode_object_input_impl(string_view type,
 
 ```cpp
 void add_to_message(std::string & message, geode::index_t nb_components, string_view component_text)
+```
+
+
+### geode_object_output_writer
+
+```cpp
+std::unique_ptr<typename Factory::BaseClass> geode_object_output_writer(absl::string_view & filename)
+```
+
+
+### geode_object_output_impl
+
+```cpp
+void geode_object_output_impl(string_view type, const Object & object, string_view filename)
 ```
 
 
@@ -258,13 +258,6 @@ H AbslHashValue(H h, const OrientedVertexCycle<Container> & m)
 ```
 
 
-### oriented_rotate
-
-```cpp
-void oriented_rotate(std::array<index_t, 2> & vertices)
-```
-
-
 ### copy_points3d_into_2d
 
 ```cpp
@@ -297,6 +290,13 @@ void copy_meta_info(const MeshFrom & from, Builder & builder)
 
 ```cpp
 void copy_attributes(const AttributeManager & manager_in, AttributeManager & manager_out)
+```
+
+
+### oriented_rotate
+
+```cpp
+void oriented_rotate(std::array<index_t, 2> & vertices)
 ```
 
 
