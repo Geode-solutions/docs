@@ -98,6 +98,13 @@ public absl::optional<PolyhedronFacet> polyhedron_adjacent_facet(const Polyhedro
 ```
 
 
+### opposite_edge_vertices
+
+```cpp
+public std::array<index_t, 2> opposite_edge_vertices(index_t tetrahedron_id, const std::array<index_t, 2> & edge_vertices)
+```
+
+
 ### edge_incident_facets
 
 ```cpp
