@@ -17,17 +17,17 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public InlinedVector tetrahedra
+public int tetrahedra
 
 ```
 
 ```cpp
-public InlinedVector facets
+public int facets
 
 ```
 
 ```cpp
-public InlinedVector edges
+public int edges
 
 ```
 

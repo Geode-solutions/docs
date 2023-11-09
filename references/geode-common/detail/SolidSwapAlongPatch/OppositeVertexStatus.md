@@ -11,15 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SolidRemoveMultipleAdjacencyInfo
+# struct OppositeVertexStatus
 
 
 ## Members
 
 ```cpp
-public std::array<index_t, 2> inactive_tetrahedra
+public bool found
 
 ```
+
+```cpp
+public bool updated_front
+
+```
+
+
+
+## Functions
+
+### OppositeVertexStatus
+
+```cpp
+public void OppositeVertexStatus()
+```
+
 
 
 

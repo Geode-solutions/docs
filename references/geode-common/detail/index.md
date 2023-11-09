@@ -19,6 +19,7 @@ const name = words.join('-');
 
 * [GridMetricImpl](GridMetricImpl.md)
 * [ModelGeometricModifier](ModelGeometricModifier.md)
+* [SolidSwapAlongPatch](SolidSwapAlongPatch.md)
 * [SolidSwapAlongPath](SolidSwapAlongPath.md)
 
 
@@ -58,20 +59,6 @@ optional snapping_detection(const SurfaceMesh<dimension> & surface, index_t poly
 ```
 
 
-### triangles_after_collapse_edge
-
-```cpp
-int triangles_after_collapse_edge(const BRep & brep, const struct BRepComponentMeshEdges::SurfaceEdges & surface_edges, const Point3D & point)
-```
-
-
-### tetrahedra_after_collapse_edge
-
-```cpp
-int tetrahedra_after_collapse_edge(const BRep & brep, const struct BRepComponentMeshEdges::BlockEdges & block_edges, const Point3D & point)
-```
-
-
 ### snapping_detection
 
 ```cpp
@@ -83,6 +70,20 @@ absl::optional<local_index_t> snapping_detection(const SolidMesh<dimension> & so
 
 ```cpp
 absl::optional<local_index_t> snapping_detection(const SolidMesh<dimension> & solid, const PolyhedronFacet & facet, const Point<dimension> & point)
+```
+
+
+### triangles_after_collapse_edge
+
+```cpp
+int triangles_after_collapse_edge(const BRep & brep, const struct BRepComponentMeshEdges::SurfaceEdges & surface_edges, const Point3D & point)
+```
+
+
+### tetrahedra_after_collapse_edge
+
+```cpp
+int tetrahedra_after_collapse_edge(const BRep & brep, const struct BRepComponentMeshEdges::BlockEdges & block_edges, const Point3D & point)
 ```
 
 
@@ -111,13 +112,6 @@ bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Tria
 
 ```cpp
 bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Triangle3D & modified_triangle, const PolygonEdge & old_edge)
-```
-
-
-### rotate_one_ring_from_apex
-
-```cpp
-void rotate_one_ring_from_apex(int & one_ring_vertices, index_t apex)
 ```
 
 
@@ -202,6 +196,13 @@ typename ModelCollapseEdgeValidity<Model::dim>::SurfaceCollapseEdgeValidities co
 
 ```cpp
 typename ModelElementsAfterOperation<Model::dim>::SurfaceTriangles model_triangles_after_collapse_edge(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+```
+
+
+### rotate_one_ring_from_apex
+
+```cpp
+void rotate_one_ring_from_apex(int & one_ring_vertices, index_t apex)
 ```
 
 

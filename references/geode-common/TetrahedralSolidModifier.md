@@ -253,7 +253,7 @@ public SolidRemoveMultipleAdjacencyInfo remove_triple_adjacency(const Polyhedron
 ### clean_tetrahedra
 
 ```cpp
-public vector clean_tetrahedra()
+public int clean_tetrahedra()
 ```
 
 
@@ -264,7 +264,7 @@ public vector clean_tetrahedra()
 ### clean_vertices
 
 ```cpp
-public vector clean_vertices()
+public int clean_vertices()
 ```
 
 
@@ -277,7 +277,7 @@ public vector clean_vertices()
 ### clean_edges
 
 ```cpp
-public vector clean_edges()
+public int clean_edges()
 ```
 
 
@@ -290,7 +290,7 @@ public vector clean_edges()
 ### clean_facets
 
 ```cpp
-public vector clean_facets()
+public int clean_facets()
 ```
 
 
@@ -299,6 +299,13 @@ public vector clean_facets()
 **return** old2new mappings for facets
 
 **warning** This method should be called after clean_tetrahedra()
+
+### solid
+
+```cpp
+protected const TetrahedralSolid3D & solid()
+```
+
 
 ### clean
 
@@ -309,13 +316,6 @@ public std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_
  Clean up the mesh removing inactive tetrahedra, isolated vertices, edges and facets.
 
 **return** old2new mappings for tetrahedra, vertices, edges and facets.
-
-### solid
-
-```cpp
-protected const TetrahedralSolid3D & solid()
-```
-
 
 
 

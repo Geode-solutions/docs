@@ -22,7 +22,7 @@ public geode::index_t solid_edge_id
 ```
 
 ```cpp
-public array patch_vertices
+public std::array<geode::index_t, 2> patch_vertices
 
 ```
 
@@ -32,7 +32,7 @@ public PolyhedronFacet hint_facet
 ```
 
 ```cpp
-public pair hint_edge
+public std::pair<geode::index_t, geode::index_t> hint_edge
 
 ```
 
@@ -48,14 +48,14 @@ public geode::index_t triangle_info_ptr
 ### FrontEdge
 
 ```cpp
-public void FrontEdge(array patch_vertices_in, PolyhedronFacet hint_facet_in, geode::index_t triangle_info_ptr_in)
+public void FrontEdge(std::array<geode::index_t, 2> patch_vertices_in, PolyhedronFacet hint_facet_in, geode::index_t triangle_info_ptr_in)
 ```
 
 
 ### FrontEdge
 
 ```cpp
-public void FrontEdge(geode::index_t solid_edge_in, array patch_vertices_in, geode::index_t triangle_info_ptr_in)
+public void FrontEdge(geode::index_t solid_edge_in, std::array<geode::index_t, 2> patch_vertices_in, geode::index_t triangle_info_ptr_in)
 ```
 
 

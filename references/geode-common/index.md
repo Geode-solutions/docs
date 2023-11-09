@@ -104,6 +104,7 @@ const name = words.join('-');
 * [SolidSplitTetrahedronValidity](SolidSplitTetrahedronValidity.md)
 * [SolidSwapEdgeValidity](SolidSwapEdgeValidity.md)
 * [SolidSwapFacetValidity](SolidSwapFacetValidity.md)
+* [SolidSwapPatchInfo](SolidSwapPatchInfo.md)
 * [SolidSwapPathInfo](SolidSwapPathInfo.md)
 * [SolidTopologicalValidity](SolidTopologicalValidity.md)
 * [SplitInfo](SplitInfo.md)
@@ -942,6 +943,49 @@ EdgedCurveCollapseEdgeValidity collapse_edge_validity(const EdgedCurve<dimension
 ```
 
 
+### cut_along_patch
+
+```cpp
+SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const PatchFrontEdge> boundary_edges, const Triangle3D & triangle)
+```
+
+
+ Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
+
+**solid** [in] TetrahedralSolid to cut
+
+**builder** [in] Builder of the Solid
+
+**boundary_edges** [in] List of oriented Patch boundary as solid edges
+
+**triangle** [in] The triangle corresponding to the patch to insert in solid
+
+**warning** Cut tetrahedra are set as inactive but not deleted.
+
+### cut_along_path
+
+```cpp
+SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end, absl::Span<const SolidPath> path_splits)
+```
+
+
+ Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
+
+**begin** [in] Index of the cut starting vertex
+
+**end** [in] Index of the cut ending vertex
+
+**path_splits** [in] Ordered list of Path splits
+
+**warning** Cut tetrahedra are set as inactive but not deleted.
+
+### cut_along_path
+
+```cpp
+SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
+```
+
+
 ### is_collapse_edge_valid
 
 ```cpp
@@ -1135,61 +1179,19 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 ```
 
 
+### swap_along_patch
+
+```cpp
+SolidSwapPatchInfo swap_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, Span patch_vertices, const Triangle3D & macro_triangle)
+```
+
+
 ### swap_along_path
 
 ```cpp
 SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
 ```
 
-
-### cut_along_patch
-
-```cpp
-SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const PatchFrontEdge> boundary_edges, const Triangle3D & triangle)
-```
-
-
- Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
-
-**solid** [in] TetrahedralSolid to cut
-
-**builder** [in] Builder of the Solid
-
-**boundary_edges** [in] List of oriented Patch boundary as solid edges
-
-**triangle** [in] The triangle corresponding to the patch to insert in solid
-
-**warning** Cut tetrahedra are set as inactive but not deleted.
-
-### cut_along_path
-
-```cpp
-SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end, absl::Span<const SolidPath> path_splits)
-```
-
-
- Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
-
-**begin** [in] Index of the cut starting vertex
-
-**end** [in] Index of the cut ending vertex
-
-**path_splits** [in] Ordered list of Path splits
-
-**warning** Cut tetrahedra are set as inactive but not deleted.
-
-### cut_along_path
-
-```cpp
-SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
-```
-
-
-### minimal_metric
-
-```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
-```
 
 ### is_collapse_edge_valid
 
@@ -1282,6 +1284,12 @@ SectionElementsAfterOperation elements_after_collapse_edge(const Section & secti
 SectionElementsAfterOperation elements_after_collapse_edge(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
 ```
 
+
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
 
 
 
