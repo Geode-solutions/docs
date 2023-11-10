@@ -209,6 +209,13 @@ public CellsAroundVertex cells(const Point<dimension> & query)
 
 **details** When query point is geometrically near to cell limit, several cell indices are returned: they correspond the potential cells that may contain the point.
 
+### cells_around
+
+```cpp
+public CellsAroundVertex cells_around(VertexIndices vertex_indices)
+```
+
+
 ### cell_attribute_manager
 
 ```cpp

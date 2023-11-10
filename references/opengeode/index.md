@@ -1393,13 +1393,6 @@ void register_image_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
-### register_geode_builder
-
-```cpp
-void register_geode_builder()
-```
-
-
 ### load_point_set
 
 ```cpp
@@ -1428,6 +1421,13 @@ std::unique_ptr<PointSet<dimension> > load_point_set(string_view filename)
 
 ```cpp
 typename PointSetInput<dimension>::MissingFiles check_point_set_missing_files(string_view filename)
+```
+
+
+### register_geode_builder
+
+```cpp
+void register_geode_builder()
 ```
 
 
@@ -2144,37 +2144,6 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & b
 ```
 
 
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polygonal_surface_missing_files
-
-```cpp
-typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
-```
-
-
 ### convert_brep_into_section
 
 ```cpp
@@ -2227,6 +2196,37 @@ std::unique_ptr<PointSet2D> convert_point_set3d_into_2d(const PointSet3D & point
 
 ```cpp
 std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point_set2d, index_t axis_to_add, double axis_coordinate)
+```
+
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polygonal_surface_missing_files
+
+```cpp
+typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
 ```
 
 
@@ -2758,6 +2758,13 @@ typename class VertexSetInput::MissingFiles check_vertex_set_missing_files(strin
 ```
 
 
+### create_aabb_tree
+
+```cpp
+AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
+```
+
+
 ### save_point_set
 
 ```cpp
@@ -2795,13 +2802,6 @@ void save_vertex_set(const VertexSet & vertex_set, string_view filename)
 
 ```cpp
 bool is_vertex_set_saveable(const VertexSet & vertex_set, string_view filename)
-```
-
-
-### create_aabb_tree
-
-```cpp
-AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
 ```
 
 
@@ -2983,6 +2983,13 @@ ModelMeshesAABBTree create_surface_meshes_aabb_trees(const Section & model)
 ```
 
 
+### register_geode_mesh_output
+
+```cpp
+void register_geode_mesh_output()
+```
+
+
 ### save_raster_image
 
 ```cpp
@@ -3000,13 +3007,6 @@ void save_raster_image(const RasterImage<dimension> & raster, string_view filena
 
 ```cpp
 bool is_raster_image_saveable(const RasterImage<dimension> & raster, string_view filename)
-```
-
-
-### register_geode_mesh_output
-
-```cpp
-void register_geode_mesh_output()
 ```
 
 
