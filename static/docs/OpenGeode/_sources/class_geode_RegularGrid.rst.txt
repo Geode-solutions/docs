@@ -256,6 +256,7 @@ Inherited Members
 		bool :ref:`contains<doxid-classgeode_1_1_grid_1ae40317e28fbbb3b1b665460ce200fd26>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>` :ref:`closest_vertex<doxid-classgeode_1_1_grid_1afb70a567aabc60b134739e392c6819eb>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
 		:ref:`CellsAroundVertex<doxid-classgeode_1_1_grid_1aef9092356509be9512cc08f610f3cc67>` :ref:`cells<doxid-classgeode_1_1_grid_1aa2715e6c5fceda7836ac3b775af7d4b6>`(const :ref:`Point<doxid-classgeode_1_1_point>`<dimension>& query) const;
+		:ref:`CellsAroundVertex<doxid-classgeode_1_1_grid_1aef9092356509be9512cc08f610f3cc67>` :ref:`cells_around<doxid-classgeode_1_1_grid_1af0598a069241be45af5ca5f778aec4b9>`(:ref:`VertexIndices<doxid-classgeode_1_1_grid_1a2c46330e025932330378e1ab514e5148>` vertex_indices) const;
 		virtual :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`cell_attribute_manager<doxid-classgeode_1_1_grid_1ac1700582e458b4f7de05a37f12811497>`() const = 0;
 		virtual :ref:`AttributeManager<doxid-classgeode_1_1_attribute_manager>`& :ref:`grid_vertex_attribute_manager<doxid-classgeode_1_1_grid_1a0e1c6cedd4994c1099b588836760cfa1>`() const = 0;
 		:ref:`BoundingBox<doxid-classgeode_1_1_bounding_box>`<dimension> :ref:`grid_bounding_box<doxid-classgeode_1_1_grid_1aa8e929bb5853b175ee9652ceec4a7464>`() const;

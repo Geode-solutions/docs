@@ -285,7 +285,7 @@ namespace geode::detail
 	:ref:`index_t<doxid-namespacegeode_1a128f6686f72f4c3ef6c04172aacb7f05>` :target:`count_relationships<doxid-namespacegeode_1_1detail_1a3922ed9d6481362fb802c3a6bcbfe712>`(const :ref:`Range<doxid-namespacegeode_1af2b42e3794d9eb6a1abf901029f56c5e>`& range);
 
 	template <typename ModelFrom, typename BuilderTo>
-	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_corner_components<doxid-namespacegeode_1_1detail_1a837accf1bf9f4be1cec3862f6c106baa>`(
+	OPENGEODE_MODEL_DEPRECATED :ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_corner_components<doxid-namespacegeode_1_1detail_1a1b69a7e3053b04f9f23881c82e65d244>`(
 		const ModelFrom& from,
 		BuilderTo& builder_to
 		);
@@ -298,7 +298,7 @@ namespace geode::detail
 		);
 
 	template <typename ModelFrom, typename BuilderTo>
-	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_line_components<doxid-namespacegeode_1_1detail_1aaebb2df4a9f83fc399fafe27032637af>`(
+	OPENGEODE_MODEL_DEPRECATED :ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_line_components<doxid-namespacegeode_1_1detail_1a3d01ba47f90f23ce7333c8432fb20a45>`(
 		const ModelFrom& from,
 		BuilderTo& builder_to
 		);
@@ -311,7 +311,7 @@ namespace geode::detail
 		);
 
 	template <typename ModelFrom, typename BuilderTo>
-	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_surface_components<doxid-namespacegeode_1_1detail_1a65990397f877a48d2aa02eb09c77021d>`(
+	OPENGEODE_MODEL_DEPRECATED :ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_surface_components<doxid-namespacegeode_1_1detail_1a00b78194d59f049f30b6fa60e67a9630>`(
 		const ModelFrom& from,
 		BuilderTo& builder_to
 		);
@@ -324,7 +324,7 @@ namespace geode::detail
 		);
 
 	template <typename ModelFrom, typename BuilderTo>
-	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_block_components<doxid-namespacegeode_1_1detail_1afcae45dd55dd1641010fe6d9ba0e1e53>`(
+	OPENGEODE_MODEL_DEPRECATED :ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_block_components<doxid-namespacegeode_1_1detail_1a1ce07ea1d95f230d198bf7bd71716bff>`(
 		const ModelFrom& from,
 		BuilderTo& builder_to
 		);
@@ -337,7 +337,7 @@ namespace geode::detail
 		);
 
 	template <typename Model, typename BuilderTo>
-	:ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_model_boundary_components<doxid-namespacegeode_1_1detail_1a37efd9128fecff2a59ad00a6f8e0ee0f>`(
+	OPENGEODE_MODEL_DEPRECATED :ref:`Mapping<doxid-namespacegeode_1_1detail_1a6d2355911e396d6c746fdf0843caf3a0>` :target:`copy_model_boundary_components<doxid-namespacegeode_1_1detail_1afee4e593272fc62c4d7d3e62a5a0ca30>`(
 		const Model& from,
 		BuilderTo& builder_to
 		);
