@@ -60,6 +60,13 @@ public void BRepGeometricModifier(BRepGeometricModifier && other)
 ```
 
 
+### operator=
+
+```cpp
+public BRepGeometricModifier & operator=(BRepGeometricModifier && other)
+```
+
+
 ### ~BRepGeometricModifier
 
 ```cpp
@@ -259,49 +266,77 @@ public CleanElementsMappings clean_elements()
 ### clean_triangles_surfaces
 
 ```cpp
-public flat_hash_map clean_triangles_surfaces()
+public int clean_triangles_surfaces()
 ```
 
 
 ### clean_vertices_surfaces
 
 ```cpp
-public flat_hash_map clean_vertices_surfaces()
+public int clean_vertices_surfaces()
 ```
 
 
 ### clean_edges_lines
 
 ```cpp
-public flat_hash_map clean_edges_lines()
+public int clean_edges_lines()
 ```
 
 
 ### clean_vertices_lines
 
 ```cpp
-public flat_hash_map clean_vertices_lines()
+public int clean_vertices_lines()
 ```
 
 
 ### clean_tetrahedra_blocks
 
 ```cpp
-public flat_hash_map clean_tetrahedra_blocks()
+public int clean_tetrahedra_blocks()
 ```
 
 
 ### clean_vertices_blocks
 
 ```cpp
-public flat_hash_map clean_vertices_blocks()
+public int clean_vertices_blocks()
 ```
 
 
 ### clean_unique_vertices
 
 ```cpp
-public vector clean_unique_vertices()
+public int clean_unique_vertices()
+```
+
+
+### model
+
+```cpp
+protected const BRep & model()
+```
+
+
+### line_modifier
+
+```cpp
+protected EdgedCurveModifier3D & line_modifier(const Line3D & line)
+```
+
+
+### surface_modifier
+
+```cpp
+protected TriangulatedSurfaceModifier3D & surface_modifier(const Surface3D & surface)
+```
+
+
+### block_modifier
+
+```cpp
+protected TetrahedralSolidModifier & block_modifier(const Block3D & block)
 ```
 
 

@@ -224,5 +224,26 @@ public vector clean_unique_vertices()
 ```
 
 
+### model
+
+```cpp
+protected const Section & model()
+```
+
+
+### line_modifier
+
+```cpp
+protected EdgedCurveModifier2D & line_modifier(const Line2D & line)
+```
+
+
+### surface_modifier
+
+```cpp
+protected TriangulatedSurfaceModifier2D & surface_modifier(const Surface2D & surface)
+```
+
+
 
 

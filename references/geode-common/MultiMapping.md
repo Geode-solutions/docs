@@ -65,6 +65,13 @@ public basic_string string()
 ```
 
 
+### MultiMapping
+
+```cpp
+public void MultiMapping(index_t new_id_in, int old_id_in)
+```
+
+
 
 
 # struct MultiMapping
@@ -111,6 +118,13 @@ public void MultiMapping<Type>(Mapping<Type> mapping)
 
 ```cpp
 public bool operator==(const MultiMapping<Type> & other)
+```
+
+
+### MultiMapping
+
+```cpp
+public void MultiMapping<Type>(Type new_id_in, int old_id_in)
 ```
 
 

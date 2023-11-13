@@ -30,6 +30,27 @@ public void ~ModelGeometricModifier<Model, ModelBuilder, dimension>()
 ```
 
 
+### model
+
+```cpp
+public const Model & model()
+```
+
+
+### line_modifier
+
+```cpp
+public EdgedCurveModifier<dimension> & line_modifier(const Line<dimension> & line)
+```
+
+
+### surface_modifier
+
+```cpp
+public TriangulatedSurfaceModifier<dimension> & surface_modifier(const Surface<dimension> & surface)
+```
+
+
 ### move_point
 
 ```cpp
@@ -132,13 +153,6 @@ public bool is_edge_active(const Line<dimension> & line, index_t edge)
 
 ```cpp
 protected ModelBuilder & builder()
-```
-
-
-### model
-
-```cpp
-protected const Model & model()
 ```
 
 

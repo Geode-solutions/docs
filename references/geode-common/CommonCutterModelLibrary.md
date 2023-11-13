@@ -11,20 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepSplitTetrahedronInfo
+# class CommonCutterModelLibrary
 
-
-## Members
 
 ```cpp
-public index_t unique_vertex
-
+Inherits from Library
 ```
+
+
+
+## Functions
+
+### initialize
 
 ```cpp
-public int block_info
-
+public void initialize()
 ```
+
 
 
 

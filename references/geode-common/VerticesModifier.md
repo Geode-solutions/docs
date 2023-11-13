@@ -51,6 +51,13 @@ protected void VerticesModifier(VerticesModifier && other)
 ```
 
 
+### operator=
+
+```cpp
+protected VerticesModifier & operator=(VerticesModifier && other)
+```
+
+
 ### ~VerticesModifier
 
 ```cpp

@@ -11,20 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepSplitTetrahedronInfo
+# struct BlockPathVertices
 
 
 ## Members
 
 ```cpp
-public index_t unique_vertex
+public const Block3D & block
 
 ```
 
 ```cpp
-public int block_info
+public index_t begin
 
 ```
+
+```cpp
+public index_t end
+
+```
+
+
+
+## Functions
+
+### BlockPathVertices
+
+```cpp
+public void BlockPathVertices(const Block3D & block_in)
+```
+
 
 
 

@@ -59,20 +59,6 @@ optional snapping_detection(const SurfaceMesh<dimension> & surface, index_t poly
 ```
 
 
-### snapping_detection
-
-```cpp
-absl::optional<local_index_t> snapping_detection(const SolidMesh<dimension> & solid, index_t polyhedron, const Point<dimension> & point)
-```
-
-
-### snapping_detection
-
-```cpp
-absl::optional<local_index_t> snapping_detection(const SolidMesh<dimension> & solid, const PolyhedronFacet & facet, const Point<dimension> & point)
-```
-
-
 ### triangles_after_collapse_edge
 
 ```cpp
@@ -84,6 +70,20 @@ int triangles_after_collapse_edge(const BRep & brep, const struct BRepComponentM
 
 ```cpp
 int tetrahedra_after_collapse_edge(const BRep & brep, const struct BRepComponentMeshEdges::BlockEdges & block_edges, const Point3D & point)
+```
+
+
+### snapping_detection
+
+```cpp
+absl::optional<local_index_t> snapping_detection(const SolidMesh<dimension> & solid, index_t polyhedron, const Point<dimension> & point)
+```
+
+
+### snapping_detection
+
+```cpp
+absl::optional<local_index_t> snapping_detection(const SolidMesh<dimension> & solid, const PolyhedronFacet & facet, const Point<dimension> & point)
 ```
 
 

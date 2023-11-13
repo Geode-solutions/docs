@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public flat_hash_map block_info
+public int block_info
 
 ```
 

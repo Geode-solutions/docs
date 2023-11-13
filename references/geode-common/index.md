@@ -23,6 +23,7 @@ const name = words.join('-');
 ## Records
 
 * [BRepCollapseEdgeValidity](BRepCollapseEdgeValidity.md)
+* [BRepCutter](BRepCutter.md)
 * [BRepElementsAfterOperation](BRepElementsAfterOperation.md)
 * [BRepGeometricModifier](BRepGeometricModifier.md)
 * [BRepGridMetric](BRepGridMetric.md)
@@ -33,11 +34,14 @@ const name = words.join('-');
 * [BRepSwapFacetValidity](BRepSwapFacetValidity.md)
 * [BlockCollapseEdgeValidities](BlockCollapseEdgeValidities.md)
 * [BlockMovePointValidities](BlockMovePointValidities.md)
+* [BlockPatchVertices](BlockPatchVertices.md)
+* [BlockPathVertices](BlockPathVertices.md)
 * [BlockSplitEdgeValidities](BlockSplitEdgeValidities.md)
 * [BlockSplitFacetValidities](BlockSplitFacetValidities.md)
 * [BlockSwapEdgeValidities](BlockSwapEdgeValidities.md)
 * [BlockSwapFacetValidities](BlockSwapFacetValidities.md)
 * [CommonCoreLibrary](CommonCoreLibrary.md)
+* [CommonCutterModelLibrary](CommonCutterModelLibrary.md)
 * [CommonCutterSolidLibrary](CommonCutterSolidLibrary.md)
 * [CommonCutterSurfaceLibrary](CommonCutterSurfaceLibrary.md)
 * [CommonMetricLibrary](CommonMetricLibrary.md)
@@ -943,46 +947,65 @@ EdgedCurveCollapseEdgeValidity collapse_edge_validity(const EdgedCurve<dimension
 ```
 
 
-### cut_along_patch
+### update_vertex_mappings
 
 ```cpp
-SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const PatchFrontEdge> boundary_edges, const Triangle3D & triangle)
+void update_vertex_mappings(int & vertex_multi_mappings, const geode::VertexMultiMapping & collapse_mapping)
+```
+
+### add_mappings_in_multi_mappings
+
+```cpp
+void add_mappings_in_multi_mappings(int & multi_mappings, absl::Span<const Mapping<T> > new_mappings)
 ```
 
 
- Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
-
-**solid** [in] TetrahedralSolid to cut
-
-**builder** [in] Builder of the Solid
-
-**boundary_edges** [in] List of oriented Patch boundary as solid edges
-
-**triangle** [in] The triangle corresponding to the patch to insert in solid
-
-**warning** Cut tetrahedra are set as inactive but not deleted.
-
-### cut_along_path
+### process_mapping_element
 
 ```cpp
-SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end, absl::Span<const SolidPath> path_splits)
+void process_mapping_element(const geode::Mapping<T> & element, int & to_remove, int & new_to_old, const T & )
 ```
 
 
- Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
-
-**begin** [in] Index of the cut starting vertex
-
-**end** [in] Index of the cut ending vertex
-
-**path_splits** [in] Ordered list of Path splits
-
-**warning** Cut tetrahedra are set as inactive but not deleted.
-
-### cut_along_path
+### process_mapping_element
 
 ```cpp
-SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
+void process_mapping_element(geode::MultiMapping<T> & element, int & to_remove, int & new_to_olds, const T & no_value)
+```
+
+
+### update_mappings
+
+```cpp
+void update_mappings(int & mappings, NewToOldMap & new_to_old, const T & no_value)
+```
+
+
+### update_mappings
+
+```cpp
+void update_mappings(int & mappings, const T & no_value)
+```
+
+
+### update_multi_mappings
+
+```cpp
+void update_multi_mappings(int & multi_mappings, const T & no_value)
+```
+
+
+### swap_along_patch
+
+```cpp
+SolidSwapPatchInfo swap_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const index_t> patch_vertices, const Triangle3D & macro_triangle)
+```
+
+
+### swap_along_path
+
+```cpp
+SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
 ```
 
 
@@ -1179,17 +1202,46 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 ```
 
 
-### swap_along_patch
+### cut_along_patch
 
 ```cpp
-SolidSwapPatchInfo swap_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, Span patch_vertices, const Triangle3D & macro_triangle)
+SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const PatchFrontEdge> boundary_edges, const Triangle3D & triangle)
 ```
 
 
-### swap_along_path
+ Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
+
+**solid** [in] TetrahedralSolid to cut
+
+**builder** [in] Builder of the Solid
+
+**boundary_edges** [in] List of oriented Patch boundary as solid edges
+
+**triangle** [in] The triangle corresponding to the patch to insert in solid
+
+**warning** Cut tetrahedra are set as inactive but not deleted.
+
+### cut_along_path
 
 ```cpp
-SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
+SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end, absl::Span<const SolidPath> path_splits)
+```
+
+
+ Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
+
+**begin** [in] Index of the cut starting vertex
+
+**end** [in] Index of the cut ending vertex
+
+**path_splits** [in] Ordered list of Path splits
+
+**warning** Cut tetrahedra are set as inactive but not deleted.
+
+### cut_along_path
+
+```cpp
+SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
 ```
 
 
