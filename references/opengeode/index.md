@@ -547,6 +547,26 @@ string_view extension_from_filename(string_view filename)
 ```
 
 
+### load_section
+
+```cpp
+Section load_section(string_view filename)
+```
+
+
+ API function for loading a Section. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+**return** Loaded Section.
+
+### check_section_missing_files
+
+```cpp
+MissingFiles check_section_missing_files(string_view filename)
+```
+
+
 ### load_vertex_set
 
 ```cpp
@@ -575,26 +595,6 @@ unique_ptr load_vertex_set(string_view filename)
 
 ```cpp
 MissingFiles check_vertex_set_missing_files(string_view filename)
-```
-
-
-### load_section
-
-```cpp
-Section load_section(string_view filename)
-```
-
-
- API function for loading a Section. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-**return** Loaded Section.
-
-### check_section_missing_files
-
-```cpp
-MissingFiles check_section_missing_files(string_view filename)
 ```
 
 
@@ -758,6 +758,26 @@ Point point_plane_projection(const Point3D & point, const Plane & plane)
 **point** [in] the point to project
 
 **plane** [in] the plane
+
+### save_section
+
+```cpp
+void save_section(const Section & section, string_view filename)
+```
+
+
+ API function for saving a Section. The adequate saver is called depending on the given filename extension.
+
+**section** [in] Section to save.
+
+**filename** [in] Path to the file where save the section.
+
+### is_section_saveable
+
+```cpp
+bool is_section_saveable(const Section & section, string_view filename)
+```
+
 
 ### point_point_distance
 
@@ -963,26 +983,6 @@ tuple point_disk_distance(const Point3D & point, const Disk & disk)
 **return** a tuple containing: - the smallest distance. - the closest point on the disk.
 
 **details** Result is always positive or null. If point is inside the disk, the returned distance is 0.
-
-### save_section
-
-```cpp
-void save_section(const Section & section, string_view filename)
-```
-
-
- API function for saving a Section. The adequate saver is called depending on the given filename extension.
-
-**section** [in] Section to save.
-
-**filename** [in] Path to the file where save the section.
-
-### is_section_saveable
-
-```cpp
-bool is_section_saveable(const Section & section, string_view filename)
-```
-
 
 ### save_brep
 
@@ -1418,6 +1418,13 @@ int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMe
 ```
 
 
+### create_aabb_tree
+
+```cpp
+AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
+```
+
+
 ### register_image_serialize_pcontext
 
 ```cpp
@@ -1443,13 +1450,6 @@ void register_image_deserialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
-
-### create_aabb_tree
-
-```cpp
-AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
-```
-
 
 ### load_point_set
 
@@ -2202,37 +2202,6 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & b
 ```
 
 
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polygonal_surface_missing_files
-
-```cpp
-typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
-```
-
-
 ### convert_brep_into_section
 
 ```cpp
@@ -2285,6 +2254,37 @@ std::unique_ptr<PointSet2D> convert_point_set3d_into_2d(const PointSet3D & point
 
 ```cpp
 std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point_set2d, index_t axis_to_add, double axis_coordinate)
+```
+
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polygonal_surface_missing_files
+
+```cpp
+typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
 ```
 
 
@@ -2785,13 +2785,6 @@ typename RegularGridInput<dimension>::MissingFiles check_regular_grid_missing_fi
 ```
 
 
-### create_aabb_tree
-
-```cpp
-AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
-```
-
-
 ### save_point_set
 
 ```cpp
@@ -2809,6 +2802,13 @@ void save_point_set(const PointSet<dimension> & point_set, string_view filename)
 
 ```cpp
 bool is_point_set_saveable(const PointSet<dimension> & point_set, string_view filename)
+```
+
+
+### create_aabb_tree
+
+```cpp
+AABBTree<dimension> create_aabb_tree(const EdgedCurve<dimension> & mesh)
 ```
 
 
@@ -2990,6 +2990,13 @@ ModelMeshesAABBTree create_surface_meshes_aabb_trees(const Section & model)
 ```
 
 
+### register_geode_mesh_output
+
+```cpp
+void register_geode_mesh_output()
+```
+
+
 ### save_raster_image
 
 ```cpp
@@ -3007,13 +3014,6 @@ void save_raster_image(const RasterImage<dimension> & raster, string_view filena
 
 ```cpp
 bool is_raster_image_saveable(const RasterImage<dimension> & raster, string_view filename)
-```
-
-
-### register_geode_mesh_output
-
-```cpp
-void register_geode_mesh_output()
 ```
 
 

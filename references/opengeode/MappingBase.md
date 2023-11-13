@@ -37,6 +37,13 @@ public void reserve(index_t capacity)
 ```
 
 
+### clear
+
+```cpp
+public void clear()
+```
+
+
 ### has_mapping_input
 
 ```cpp
