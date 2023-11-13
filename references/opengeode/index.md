@@ -474,6 +474,13 @@ void register_geometry_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
+### print_available_extensions
+
+```cpp
+void print_available_extensions(string_view type)
+```
+
+
 ### load_polyhedral_solid
 
 ```cpp
@@ -540,6 +547,37 @@ string_view extension_from_filename(string_view filename)
 ```
 
 
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(const MeshImpl & impl, string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_vertex_set_missing_files
+
+```cpp
+MissingFiles check_vertex_set_missing_files(string_view filename)
+```
+
+
 ### load_section
 
 ```cpp
@@ -577,6 +615,26 @@ void save_graph(const Graph & graph, string_view filename)
 
 ```cpp
 bool is_graph_saveable(const Graph & graph, string_view filename)
+```
+
+
+### save_vertex_set
+
+```cpp
+void save_vertex_set(const VertexSet & vertex_set, string_view filename)
+```
+
+
+ API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
+
+**vertex_set** [in] VertexSet to save.
+
+**filename** [in] Path to the file where save the VertexSet.
+
+### is_vertex_set_saveable
+
+```cpp
+bool is_vertex_set_saveable(const VertexSet & vertex_set, string_view filename)
 ```
 
 
@@ -700,26 +758,6 @@ Point point_plane_projection(const Point3D & point, const Plane & plane)
 **point** [in] the point to project
 
 **plane** [in] the plane
-
-### save_section
-
-```cpp
-void save_section(const Section & section, string_view filename)
-```
-
-
- API function for saving a Section. The adequate saver is called depending on the given filename extension.
-
-**section** [in] Section to save.
-
-**filename** [in] Path to the file where save the section.
-
-### is_section_saveable
-
-```cpp
-bool is_section_saveable(const Section & section, string_view filename)
-```
-
 
 ### point_point_distance
 
@@ -926,23 +964,25 @@ tuple point_disk_distance(const Point3D & point, const Disk & disk)
 
 **details** Result is always positive or null. If point is inside the disk, the returned distance is 0.
 
-### perpendicular
+### save_section
 
 ```cpp
-Vector perpendicular(const Vector2D & v)
+void save_section(const Section & section, string_view filename)
 ```
 
 
- Return a 2D vector perpendicular to the given one
+ API function for saving a Section. The adequate saver is called depending on the given filename extension.
 
-### dot_perpendicular
+**section** [in] Section to save.
+
+**filename** [in] Path to the file where save the section.
+
+### is_section_saveable
 
 ```cpp
-double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
+bool is_section_saveable(const Section & section, string_view filename)
 ```
 
-
- Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
 
 ### save_brep
 
@@ -970,6 +1010,24 @@ bool is_brep_saveable(const BRep & brep, string_view filename)
 bool is_zip_file(string_view file)
 ```
 
+
+### perpendicular
+
+```cpp
+Vector perpendicular(const Vector2D & v)
+```
+
+
+ Return a 2D vector perpendicular to the given one
+
+### dot_perpendicular
+
+```cpp
+double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
+```
+
+
+ Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
 
 ### load_tetrahedral_solid
 
@@ -1360,13 +1418,6 @@ int merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMe
 ```
 
 
-### create_aabb_tree
-
-```cpp
-AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
-```
-
-
 ### register_image_serialize_pcontext
 
 ```cpp
@@ -1392,6 +1443,13 @@ void register_image_deserialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
+
+### create_aabb_tree
+
+```cpp
+AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
+```
+
 
 ### load_point_set
 
@@ -2144,6 +2202,37 @@ BRepComponentMeshEdges component_mesh_edges(const BRep & brep, const Block3D & b
 ```
 
 
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polygonal_surface_missing_files
+
+```cpp
+typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
+```
+
+
 ### convert_brep_into_section
 
 ```cpp
@@ -2196,37 +2285,6 @@ std::unique_ptr<PointSet2D> convert_point_set3d_into_2d(const PointSet3D & point
 
 ```cpp
 std::unique_ptr<PointSet3D> convert_point_set2d_into_3d(const PointSet2D & point_set2d, index_t axis_to_add, double axis_coordinate)
-```
-
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polygonal_surface_missing_files
-
-```cpp
-typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(string_view filename)
 ```
 
 
@@ -2727,37 +2785,6 @@ typename RegularGridInput<dimension>::MissingFiles check_regular_grid_missing_fi
 ```
 
 
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(const MeshImpl & impl, string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_vertex_set_missing_files
-
-```cpp
-typename class VertexSetInput::MissingFiles check_vertex_set_missing_files(string_view filename)
-```
-
-
 ### create_aabb_tree
 
 ```cpp
@@ -2782,26 +2809,6 @@ void save_point_set(const PointSet<dimension> & point_set, string_view filename)
 
 ```cpp
 bool is_point_set_saveable(const PointSet<dimension> & point_set, string_view filename)
-```
-
-
-### save_vertex_set
-
-```cpp
-void save_vertex_set(const VertexSet & vertex_set, string_view filename)
-```
-
-
- API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
-
-**vertex_set** [in] VertexSet to save.
-
-**filename** [in] Path to the file where save the VertexSet.
-
-### is_vertex_set_saveable
-
-```cpp
-bool is_vertex_set_saveable(const VertexSet & vertex_set, string_view filename)
 ```
 
 
@@ -2983,13 +2990,6 @@ ModelMeshesAABBTree create_surface_meshes_aabb_trees(const Section & model)
 ```
 
 
-### register_geode_mesh_output
-
-```cpp
-void register_geode_mesh_output()
-```
-
-
 ### save_raster_image
 
 ```cpp
@@ -3007,6 +3007,13 @@ void save_raster_image(const RasterImage<dimension> & raster, string_view filena
 
 ```cpp
 bool is_raster_image_saveable(const RasterImage<dimension> & raster, string_view filename)
+```
+
+
+### register_geode_mesh_output
+
+```cpp
+void register_geode_mesh_output()
 ```
 
 

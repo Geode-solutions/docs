@@ -440,17 +440,17 @@ void build_model_boundaries(const BRep & model, BRepBuilder & builder)
 ```
 
 
-### count_relationships
-
-```cpp
-index_t count_relationships(const Range & range)
-```
-
-
 ### register_basic_pcontext
 
 ```cpp
 void register_basic_pcontext(PContext & context)
+```
+
+
+### count_relationships
+
+```cpp
+index_t count_relationships(const Range & range)
 ```
 
 
