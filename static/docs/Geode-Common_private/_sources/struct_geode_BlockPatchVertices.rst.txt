@@ -1,0 +1,29 @@
+.. index:: pair: struct; geode::BlockPatchVertices
+.. _doxid-structgeode_1_1_block_patch_vertices:
+
+struct geode::BlockPatchVertices
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_cutter.h>
+	
+	struct BlockPatchVertices
+	{
+		// fields
+	
+		const Block3D& :target:`block<doxid-structgeode_1_1_block_patch_vertices_1a885e05d06151a83dd5eeefaa0a3d4a02>`;
+		Triangle3D :target:`macro_triangle<doxid-structgeode_1_1_block_patch_vertices_1a75431d649d59afab1a4cc92593e25470>`;
+		std::vector<index_t> :target:`vertices<doxid-structgeode_1_1_block_patch_vertices_1a69ccf02c8a98b09d91c4b8ca0741886e>` {};
+
+		// construction
+	
+		:target:`BlockPatchVertices<doxid-structgeode_1_1_block_patch_vertices_1a04f65739812057ce7cf24dfc984bfaa6>`(const Block3D& block_in, Triangle3D macro_triangle_in);
+	};

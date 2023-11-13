@@ -1,0 +1,29 @@
+.. index:: pair: struct; geode::BlockPathVertices
+.. _doxid-structgeode_1_1_block_path_vertices:
+
+struct geode::BlockPathVertices
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <brep_cutter.h>
+	
+	struct BlockPathVertices
+	{
+		// fields
+	
+		const Block3D& :target:`block<doxid-structgeode_1_1_block_path_vertices_1accbc941a3c01c0d1321fba1aabeef66f>`;
+		index_t :target:`begin<doxid-structgeode_1_1_block_path_vertices_1a69de305ee8abe6d0dc956a5f2177e8a7>` { NO_ID };
+		index_t :target:`end<doxid-structgeode_1_1_block_path_vertices_1a207ced0648d33001ba22794f306e91c3>` { NO_ID };
+
+		// construction
+	
+		:target:`BlockPathVertices<doxid-structgeode_1_1_block_path_vertices_1ab857b292f390f67bf4c7a3304acade1e>`(const Block3D& block_in);
+	};
