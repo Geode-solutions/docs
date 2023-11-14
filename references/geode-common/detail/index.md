@@ -35,7 +35,7 @@ RingVertices unordered_one_ring_vertices(const TetrahedralSolid3D & mesh, const 
 ### one_ring_vertices
 
 ```cpp
-FixedArray one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
+std::tuple<absl::FixedArray<index_t>, bool> one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
 ```
 
 
