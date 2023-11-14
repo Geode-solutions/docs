@@ -1,0 +1,25 @@
+.. index:: pair: class; geode::ForbiddenTriangles
+.. _doxid-classgeode_1_1_forbidden_triangles:
+
+class geode::ForbiddenTriangles
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <forbidden.h>
+	
+	class ForbiddenTriangles
+	{
+	public:
+		// methods
+	
+		bool :target:`is_forbidden<doxid-classgeode_1_1_forbidden_triangles_1a19e4df037fb76e7493264d99179b9f7e>`(const std::array<index_t, 3>& triangle_vertices) const;
+		void :target:`add<doxid-classgeode_1_1_forbidden_triangles_1a584fbfa63fe5b9f25112d5d3771273bd>`(const std::array<index_t, 3>& triangle_vertices);
+	};

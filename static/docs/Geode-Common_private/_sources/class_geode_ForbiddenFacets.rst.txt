@@ -1,0 +1,25 @@
+.. index:: pair: class; geode::ForbiddenFacets
+.. _doxid-classgeode_1_1_forbidden_facets:
+
+class geode::ForbiddenFacets
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <forbidden.h>
+	
+	class ForbiddenFacets
+	{
+	public:
+		// methods
+	
+		bool :target:`is_forbidden<doxid-classgeode_1_1_forbidden_facets_1a427eecfcff60754c2c244fa518189300>`(const PolyhedronFacetVertices& facet_vertices) const;
+		void :target:`add<doxid-classgeode_1_1_forbidden_facets_1accd434d966d4f3ccb1ee9e59aa781e6d>`(const PolyhedronFacetVertices& facet_vertices);
+	};

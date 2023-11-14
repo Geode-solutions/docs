@@ -1,0 +1,25 @@
+.. index:: pair: class; geode::ForbiddenEdges
+.. _doxid-classgeode_1_1_forbidden_edges:
+
+class geode::ForbiddenEdges
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <forbidden.h>
+	
+	class ForbiddenEdges
+	{
+	public:
+		// methods
+	
+		bool :target:`is_forbidden<doxid-classgeode_1_1_forbidden_edges_1a6d1a65da8fe1f54762c8f10fb0ce580f>`(const std::array<index_t, 2>& edge_vertices) const;
+		void :target:`add<doxid-classgeode_1_1_forbidden_edges_1a1e2143e00684de085251691e9b077549>`(const std::array<index_t, 2>& edge_vertices);
+	};

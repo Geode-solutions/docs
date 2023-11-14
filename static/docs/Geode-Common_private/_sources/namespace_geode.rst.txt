@@ -105,6 +105,9 @@ namespace geode
 	class_geode_CustomGridMetric.rst
 	class_geode_EdgedCurveModifier.rst
 	class_geode_FileLicenseChecker.rst
+	class_geode_ForbiddenEdges.rst
+	class_geode_ForbiddenFacets.rst
+	class_geode_ForbiddenTriangles.rst
 	class_geode_GridMetric.rst
 	class_geode_Metric.rst
 	class_geode_ModuleLicenseChecker.rst
@@ -342,6 +345,9 @@ Overview
 	class :ref:`EdgedCurveModifier<doxid-classgeode_1_1_edged_curve_modifier>`;
 
 	class :ref:`FileLicenseChecker<doxid-classgeode_1_1_file_license_checker>`;
+	class :ref:`ForbiddenEdges<doxid-classgeode_1_1_forbidden_edges>`;
+	class :ref:`ForbiddenFacets<doxid-classgeode_1_1_forbidden_facets>`;
+	class :ref:`ForbiddenTriangles<doxid-classgeode_1_1_forbidden_triangles>`;
 
 	template <index_t dimension>
 	class :ref:`GridMetric<doxid-classgeode_1_1_grid_metric>`;
