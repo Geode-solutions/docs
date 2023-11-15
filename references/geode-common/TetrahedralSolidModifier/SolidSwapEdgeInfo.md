@@ -17,27 +17,27 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public int inactive_tetrahedra
+public vector inactive_tetrahedra
 
 ```
 
 ```cpp
-public int new_tetrahedra
+public vector new_tetrahedra
 
 ```
 
 ```cpp
-public int modified
+public vector modified
 
 ```
 
 ```cpp
-public int added
+public vector added
 
 ```
 
 ```cpp
-public int removed
+public vector removed
 
 ```
 

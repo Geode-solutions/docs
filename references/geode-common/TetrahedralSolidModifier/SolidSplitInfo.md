@@ -22,17 +22,17 @@ public index_t vertex
 ```
 
 ```cpp
-public int tetrahedra
+public InlinedVector tetrahedra
 
 ```
 
 ```cpp
-public int facets
+public InlinedVector facets
 
 ```
 
 ```cpp
-public int edges
+public InlinedVector edges
 
 ```
 

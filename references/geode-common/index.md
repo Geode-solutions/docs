@@ -950,68 +950,6 @@ EdgedCurveCollapseEdgeValidity collapse_edge_validity(const EdgedCurve<dimension
 ```
 
 
-### update_vertex_mappings
-
-```cpp
-void update_vertex_mappings(int & vertex_multi_mappings, const geode::VertexMultiMapping & collapse_mapping)
-```
-
-### add_mappings_in_multi_mappings
-
-```cpp
-void add_mappings_in_multi_mappings(int & multi_mappings, absl::Span<const Mapping<T> > new_mappings)
-```
-
-
-### process_mapping_element
-
-```cpp
-void process_mapping_element(const geode::Mapping<T> & element, int & to_remove, int & new_to_old, const T & )
-```
-
-
-### process_mapping_element
-
-```cpp
-void process_mapping_element(geode::MultiMapping<T> & element, int & to_remove, int & new_to_olds, const T & no_value)
-```
-
-
-### update_mappings
-
-```cpp
-void update_mappings(int & mappings, NewToOldMap & new_to_old, const T & no_value)
-```
-
-
-### update_mappings
-
-```cpp
-void update_mappings(int & mappings, const T & no_value)
-```
-
-
-### update_multi_mappings
-
-```cpp
-void update_multi_mappings(int & multi_mappings, const T & no_value)
-```
-
-
-### swap_along_patch
-
-```cpp
-SolidSwapPatchInfo swap_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const index_t> patch_vertices, const Triangle3D & macro_triangle)
-```
-
-
-### swap_along_path
-
-```cpp
-SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
-```
-
-
 ### is_collapse_edge_valid
 
 ```cpp
@@ -1202,6 +1140,68 @@ BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const
 
 ```cpp
 BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+### update_vertex_mappings
+
+```cpp
+void update_vertex_mappings(int & vertex_multi_mappings, const geode::VertexMultiMapping & collapse_mapping)
+```
+
+### add_mappings_in_multi_mappings
+
+```cpp
+void add_mappings_in_multi_mappings(int & multi_mappings, absl::Span<const Mapping<T> > new_mappings)
+```
+
+
+### process_mapping_element
+
+```cpp
+void process_mapping_element(const geode::Mapping<T> & element, int & to_remove, int & new_to_old, const T & )
+```
+
+
+### process_mapping_element
+
+```cpp
+void process_mapping_element(geode::MultiMapping<T> & element, int & to_remove, int & new_to_olds, const T & no_value)
+```
+
+
+### update_mappings
+
+```cpp
+void update_mappings(int & mappings, NewToOldMap & new_to_old, const T & no_value)
+```
+
+
+### update_mappings
+
+```cpp
+void update_mappings(int & mappings, const T & no_value)
+```
+
+
+### update_multi_mappings
+
+```cpp
+void update_multi_mappings(int & multi_mappings, const T & no_value)
+```
+
+
+### swap_along_patch
+
+```cpp
+SolidSwapPatchInfo swap_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const index_t> patch_vertices, const Triangle3D & macro_triangle)
+```
+
+
+### swap_along_path
+
+```cpp
+SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
 ```
 
 

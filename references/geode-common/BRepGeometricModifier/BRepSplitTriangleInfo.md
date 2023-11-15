@@ -23,7 +23,7 @@ Inherits from ModelSplitTriangleInfo<3>
 ## Members
 
 ```cpp
-public int block_info
+public flat_hash_map block_info
 
 ```
 

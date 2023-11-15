@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public std::array<index_t, 2> inactive_tetrahedra
+public array inactive_tetrahedra
 
 ```
 

@@ -22,22 +22,22 @@ public MultiMapping vertex
 ```
 
 ```cpp
-public int inactive_tetrahedra
+public vector inactive_tetrahedra
 
 ```
 
 ```cpp
-public int modified_tetrahedra
+public vector modified_tetrahedra
 
 ```
 
 ```cpp
-public int facets
+public vector facets
 
 ```
 
 ```cpp
-public int edges
+public vector edges
 
 ```
 

@@ -266,49 +266,49 @@ public CleanElementsMappings clean_elements()
 ### clean_triangles_surfaces
 
 ```cpp
-public int clean_triangles_surfaces()
+public flat_hash_map clean_triangles_surfaces()
 ```
 
 
 ### clean_vertices_surfaces
 
 ```cpp
-public int clean_vertices_surfaces()
+public flat_hash_map clean_vertices_surfaces()
 ```
 
 
 ### clean_edges_lines
 
 ```cpp
-public int clean_edges_lines()
+public flat_hash_map clean_edges_lines()
 ```
 
 
 ### clean_vertices_lines
 
 ```cpp
-public int clean_vertices_lines()
+public flat_hash_map clean_vertices_lines()
 ```
 
 
 ### clean_tetrahedra_blocks
 
 ```cpp
-public int clean_tetrahedra_blocks()
+public flat_hash_map clean_tetrahedra_blocks()
 ```
 
 
 ### clean_vertices_blocks
 
 ```cpp
-public int clean_vertices_blocks()
+public flat_hash_map clean_vertices_blocks()
 ```
 
 
 ### clean_unique_vertices
 
 ```cpp
-public int clean_unique_vertices()
+public vector clean_unique_vertices()
 ```
 
 

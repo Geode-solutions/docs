@@ -17,32 +17,32 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public std::array<index_t, 2> inactive_tetrahedra
+public array inactive_tetrahedra
 
 ```
 
 ```cpp
-public std::array<index_t, 3> new_tetrahedra
+public array new_tetrahedra
 
 ```
 
 ```cpp
-public std::array<PolyhedronFacetMapping, 6> modified
+public array modified
 
 ```
 
 ```cpp
-public std::array<PolyhedronFacet, 6> added
+public array added
 
 ```
 
 ```cpp
-public std::array<PolyhedronFacet, 2> removed
+public array removed
 
 ```
 
 ```cpp
-public std::array<index_t, 2> edge_vertices
+public array edge_vertices
 
 ```
 
