@@ -124,32 +124,6 @@ bool is_cross_section_saveable(const CrossSection & cross_section, string_view f
 ```
 
 
-### save_implicit_structural_model
-
-```cpp
-void save_implicit_structural_model(const ImplicitStructuralModel & implicit_model, string_view filename)
-```
-
-
- API function for saving an ImplicitStructuralModel. The adequate saver is called depending on the given filename extension.
-
-**implicit_model** [in] ImplicitStructuralModel to save.
-
-**filename** [in] Path to the file where save the ImplicitStructuralModel.
-
-### save_horizons_stack
-
-```cpp
-void save_horizons_stack(const HorizonsStack<dimension> & horizons_stack, string_view filename)
-```
-
-
- API function for saving a HorizonsStack. The adequate saver is called depending on the given filename extension.
-
-**horizons_stack** [in] HorizonsStack to save.
-
-**filename** [in] Path to the file where save the brep.
-
 ### load_structural_model
 
 ```cpp
@@ -167,6 +141,39 @@ StructuralModel load_structural_model(string_view filename)
 MissingFiles check_structural_model_missing_files(string_view filename)
 ```
 
+
+### save_implicit_structural_model
+
+```cpp
+void save_implicit_structural_model(const ImplicitStructuralModel & implicit_model, string_view filename)
+```
+
+
+ API function for saving an ImplicitStructuralModel. The adequate saver is called depending on the given filename extension.
+
+**implicit_model** [in] ImplicitStructuralModel to save.
+
+**filename** [in] Path to the file where save the ImplicitStructuralModel.
+
+### is_implicit_structural_model_saveable
+
+```cpp
+bool is_implicit_structural_model_saveable(const ImplicitStructuralModel & implicit_model, string_view filename)
+```
+
+
+### save_horizons_stack
+
+```cpp
+void save_horizons_stack(const HorizonsStack<dimension> & horizons_stack, string_view filename)
+```
+
+
+ API function for saving a HorizonsStack. The adequate saver is called depending on the given filename extension.
+
+**horizons_stack** [in] HorizonsStack to save.
+
+**filename** [in] Path to the file where save the brep.
 
 ### load_implicit_cross_section
 
@@ -281,10 +288,17 @@ void save_implicit_cross_section(const ImplicitCrossSection & implicit_model, st
 
 **filename** [in] Path to the file where save the ImplicitCrossSection.
 
-### is_implicit_structural_model_saveable
+### is_implicit_cross_section_saveable
 
 ```cpp
-bool is_implicit_structural_model_saveable(const ImplicitStructuralModel & implicit_model, string_view filename)
+bool is_implicit_cross_section_saveable(const ImplicitCrossSection & section, string_view filename)
+```
+
+
+### is_horizons_stack_saveable
+
+```cpp
+bool is_horizons_stack_saveable(const HorizonsStack<dimension> & horizons_stack, string_view filename)
 ```
 
 
@@ -303,20 +317,6 @@ StratigraphicSection load_stratigraphic_section(string_view filename)
 
 ```cpp
 MissingFiles check_stratigraphic_section_missing_files(string_view filename)
-```
-
-
-### is_horizons_stack_saveable
-
-```cpp
-bool is_horizons_stack_saveable(const HorizonsStack<dimension> & horizons_stack, string_view filename)
-```
-
-
-### is_implicit_cross_section_saveable
-
-```cpp
-bool is_implicit_cross_section_saveable(const ImplicitCrossSection & section, string_view filename)
 ```
 
 
