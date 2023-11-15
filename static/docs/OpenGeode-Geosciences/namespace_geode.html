@@ -315,6 +315,11 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">);</span>
 
+<span class="kt">bool</span> <span class="n">opengeode_geosciences_explicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aa147f639f55fa450c250af382025779a"><span></span><span class="n">is_structural_model_saveable</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StructuralModel.html#doxid-classgeode-1-1-structural-model"><span class="std std-ref">StructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">structural_model</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab2f0a5c633a07ea2da0f4c7f03eaba32"><span></span><span class="n">OPENGEODE_LIBRARY</span></span><span></span><span class="p">(</span><span class="n">opengeode_geosciences_implicit_api</span><span class="p">,</span> <span class="n">GeosciencesImplicit</span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a6e9570cdaaa15581446649877e605e6b"><span></span><span class="n">ALIAS_2D_AND_3D</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_StratigraphicPoint.html#doxid-classgeode-1-1-stratigraphic-point"><span class="std std-ref">StratigraphicPoint</span></a><span></span><span class="p">);</span>
 <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a18035d3eb6b3f6acdee811f711c57196"><span></span><span class="n">FORWARD_DECLARATION_DIMENSION_CLASS</span></span><span></span><span class="p">(</span><a class="reference internal" href="class_geode_HorizonsStack.html#doxid-classgeode-1-1-horizons-stack"><span class="std std-ref">HorizonsStack</span></a><span></span><span class="p">);</span>
@@ -363,10 +368,20 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">);</span>
 
+<span class="kt">bool</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aee610428b281b9ff187a827e164cc699"><span></span><span class="n">is_implicit_cross_section_saveable</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitCrossSection.html#doxid-classgeode-1-1-implicit-cross-section"><span class="std std-ref">ImplicitCrossSection</span></a><span></span><span class="o">&amp;</span> <span class="n">section</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
 <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span> <span class="n">opengeode_geosciences_implicit_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a8bba1ebdd0aa29057a593a6281e52649"><span class="std std-ref">load_implicit_structural_model</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 <span class="n">ImplicitStructuralModelInput</span><span class="o">::</span><span class="n">MissingFiles</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1aeb0b1296897d3f491a8cd9e9c34fcfcd"><span></span><span class="n">check_implicit_structural_model_missing_files</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">opengeode_geosciences_implicit_api</span> <a class="reference internal" href="#doxid-namespacegeode-1af33e5f5c005948afeb32c1310073e48f"><span class="std std-ref">save_implicit_structural_model</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab4c46a1a33b86aca39abae775d3543ea"><span></span><span class="n">is_implicit_structural_model_saveable</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_ImplicitStructuralModel.html#doxid-classgeode-1-1-implicit-structural-model"><span class="std std-ref">ImplicitStructuralModel</span></a><span></span><span class="o">&amp;</span> <span class="n">implicit_model</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">);</span>
@@ -379,10 +394,20 @@
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">);</span>
 
+<span class="kt">bool</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ab430072f92aa4e528041e79e45c238e9"><span></span><span class="n">is_stratigraphic_model_saveable</span></span><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicModel.html#doxid-classgeode-1-1-stratigraphic-model"><span class="std std-ref">StratigraphicModel</span></a><span></span><span class="o">&amp;</span> <span class="n">stratigraphic_model</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
 <a class="reference internal" href="class_geode_StratigraphicSection.html#doxid-classgeode-1-1-stratigraphic-section"><span class="std std-ref">StratigraphicSection</span></a><span></span> <span class="n">opengeode_geosciences_implicit_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a59203e72974abb3bec1de2d8e1fb7bb4"><span class="std std-ref">load_stratigraphic_section</span></a><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 <span class="n">StratigraphicSectionInput</span><span class="o">::</span><span class="n">MissingFiles</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1ae456c16894248fca67b4c692229980fd"><span></span><span class="n">check_stratigraphic_section_missing_files</span></span><span></span><span class="p">(</span><span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span><span class="p">);</span>
 
 <span class="kt">void</span> <span class="n">opengeode_geosciences_implicit_api</span> <a class="reference internal" href="#doxid-namespacegeode-1a41b6a009c51a5f766250b805844718a4"><span class="std std-ref">save_stratigraphic_section</span></a><span></span><span class="p">(</span>
+    <span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicSection.html#doxid-classgeode-1-1-stratigraphic-section"><span class="std std-ref">StratigraphicSection</span></a><span></span><span class="o">&amp;</span> <span class="n">stratigraphic_section</span><span class="p">,</span>
+    <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
+    <span class="p">);</span>
+
+<span class="kt">bool</span> <span class="n">opengeode_geosciences_implicit_api</span> <span class="doxyrest-code-target target" id="doxid-namespacegeode-1a4de844422452a84bf8ac511c5737b4ae"><span></span><span class="n">is_stratigraphic_section_saveable</span></span><span></span><span class="p">(</span>
     <span class="k">const</span> <a class="reference internal" href="class_geode_StratigraphicSection.html#doxid-classgeode-1-1-stratigraphic-section"><span class="std std-ref">StratigraphicSection</span></a><span></span><span class="o">&amp;</span> <span class="n">stratigraphic_section</span><span class="p">,</span>
     <span class="n">absl</span><span class="o">::</span><span class="n">string_view</span> <span class="n">filename</span>
     <span class="p">);</span>
