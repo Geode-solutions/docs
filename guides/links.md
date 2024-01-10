@@ -15,6 +15,8 @@
 [`HorizonsStack2D`]: /references/opengeode-geosciences/HorizonsStack.md
 [`HorizonsStack3D`]: /references/opengeode-geosciences/HorizonsStack.md
 [`HybridSolid3D`]: /references/opengeode/HybridSolid.md
+[`LightRegularGrid2D`]: /references/opengeode/LightRegularGrid.md
+[`LightRegularGrid3D`]: /references/opengeode/LightRegularGrid.md
 [`PointSet2D`]: /references/opengeode/PointSet.md
 [`PointSet3D`]: /references/opengeode/PointSet.md
 [`PolygonEdge`]: /references/opengeode/PolygonEdge.md
