@@ -12,9 +12,9 @@ As for OpenGeode configuration, this step depends on your platform. Follow the s
 
 For example:
 
-`cmake -DCMAKE_PREFIX_PATH=path/to/OpenGeode/build/opengeode/install ..`
+`cmake -DCMAKE_PREFIX_PATH=path/to/OpenGeode/build ..`
 
 
 If the module depends on several modules (for instance OpenGeode-GeosciencesIO that depends on OpenGeode and OpenGeode-Geosciences), do the following:
 
-`cmake -DCMAKE_PREFIX_PATH="where/is/install/OpenGeode;where/is/install/OpenGeode-Geosciences" ..`
+`cmake -DCMAKE_PREFIX_PATH="where/is/OpenGeode/build;where/is/install/OpenGeode-Geosciences" ..`

@@ -31,7 +31,7 @@ This [`PolygonalSurface`] is defined by 11 vertices (left) and 6 polygons (right
 
 Indexing of vertices is continuous, starting at `0` and ending at `number of vertices - 1`. The polygon indexing is the same.
 
-To known the number of vertices and polygons, use the following methods :
+To know the number of vertices and polygons, use the following methods :
 
 <CodeExample>
 <template v-slot:cpp>
@@ -125,7 +125,7 @@ As for vertices, it is possible to have access to the global index of a polygon 
 
 ## Topological queries
 
-Meshes provide numerous methods to query the mesh topology. One information you can get, for example, is which polygons are adjacent to each other. More precisely, to known which polygon is adjacent to another one through a given [`PolygonEdge`], you can use the following code :
+Meshes provide numerous methods to query the mesh topology. One information you can get, for example, is which polygons are adjacent to each other. More precisely, to know which polygon is adjacent to another one through a given [`PolygonEdge`], you can use the following code :
 
 <CodeExample>
 <template v-slot:cpp>
@@ -167,7 +167,7 @@ polygon = surface.polygon_adjacent_edge( opengeode.PolygonEdge([0, 0]) ) ## {1, 
 
 ajdacent 
 
-If there is no polygon adjacent to the given [`PolygonEdge`], the results of these methods are empty optionals, and the given [`PolygonEdge`] is on a border. There is a method to known if a [`PolygonEdge`] is on a border :
+If there is no polygon adjacent to the given [`PolygonEdge`], the results of these methods are empty optionals, and the given [`PolygonEdge`] is on a border. There is a method to know if a [`PolygonEdge`] is on a border :
 
 <CodeExample>
 <template v-slot:cpp>
