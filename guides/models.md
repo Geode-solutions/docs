@@ -139,11 +139,11 @@ class BRep( Corners3D, Lines3D, Surfaces3D, Blocks3D ):
 
 
 ## Relationships between Components
-A BRep is composed of several Components and several types of Components. There are some relations between Components; for example and as mentionned above, Lines are boundaries of Surfaces (boundaries are depicted by curved black arrows). All these relations between Components are stored in the class [`Relationships`]. [`BRep`] inherits from this class.
+A BRep is composed of several Components and several types of Components. There are some relations between Components; for example and as mentionned above, Lines are boundaries of Surfaces (boundaries are depicted by curved blue arrows). All these relations between Components are stored in the class [`Relationships`]. [`BRep`] inherits from this class.
 
 ![data model 5](datamodel5.svg)
 
-Methods and ranges are provided to request relationships between Components. For example, you can get the number of Lines which are boundaries of a given Surface (using its [`uuis`]):
+Methods and ranges are provided to request relationships between Components. For example, you can get the number of Lines which are boundaries of a given Surface (using its [`uuid`]):
 
 <CodeExample>
 <template v-slot:cpp>
@@ -240,7 +240,7 @@ You may define your own Collections to identify Components by making groups of C
 
 ## Unique indexing of Components mesh vertices
 
-In an OpenGeode model, each Component mesh has its own set of vertices with a continuous indexing. But several vertices from several BRep Component meshes may represent a single point in the model (groups of black points on image). A model vertex represented by potentially several mesh vertices is called **unique vertex**.
+In an OpenGeode model, each Component mesh has its own set of vertices with a continuous indexing. But several vertices from several BRep Component meshes may represent a single point in the model (groups of blue points on image). A model vertex represented by potentially several mesh vertices is called **unique vertex**.
 
 ![data model 8](datamodel8.svg)
 
@@ -253,9 +253,15 @@ The class [`BRep`] also inherits from the class [`VertexIdentifier`] that stores
 BRep my_brep;
 auto nb_unique_v = my_brep.nb_unique_vertices();
 index_t unique_v_id;
-const auto& mesh_vertices = my_brep.mesh_component_vertices( unique_v_id );
+const auto& mesh_vertices = my_brep.component_mesh_vertices( unique_v_id );
 uuid surf_id;
-const auto& mesh_vertices_in_surface = my_brep.mesh_component_vertices( unique_v_id, surf_id );
+for( const auto& cmv : mesh_vertices )
+{
+  if( cmv.component_id.id() == surf_id )
+  {
+    const auto vertex_in_surface = cmv.vertex;
+  }  
+}
 ```
 </template>
 <template v-slot:py>
@@ -264,9 +270,11 @@ const auto& mesh_vertices_in_surface = my_brep.mesh_component_vertices( unique_v
 my_brep = opengeode.BRep()
 nb_unique_v = my_brep.nb_unique_vertices()
 unique_v_id = 0
-mesh_vertices = my_brep.mesh_component_vertices( unique_v_id )
+mesh_vertices = my_brep.component_mesh_vertices( unique_v_id )
 surf_id = opengeode.uuid()
-mesh_vertices_in_surface = my_brep.mesh_component_vertices( unique_v_id, surf_id )
+for(cmv in mesh_vertices):
+  if(cmv.component_id.id() == surf_id):
+    mesh_vertices_in_surface = cmv.vertex
 ```
   </template>
 </CodeExample> 
