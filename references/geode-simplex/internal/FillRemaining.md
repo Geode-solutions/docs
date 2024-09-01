@@ -11,31 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
-
-
-
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
+# class FillRemaining
 
 
 ## Functions
 
-### simplex_remesh
+### FillRemaining
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public void FillRemaining<dimension>(RemainingSurface<dimension> & remaining)
 ```
 
 
-### simplex_remesh
+### ~FillRemaining
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public void ~FillRemaining<dimension>()
 ```
 
 
+### fill
+
+```cpp
+public FixedArray fill()
+```
+
+
+
+
+# class FillRemaining
+
+
+# class FillRemaining
 
 

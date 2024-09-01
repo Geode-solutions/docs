@@ -11,29 +11,24 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# struct Triangle
 
 
+## Members
 
-## Records
+```cpp
+public OwnerTriangle triangle
 
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
+```
+
 
 
 ## Functions
 
-### simplex_remesh
+### Triangle
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
-```
-
-
-### simplex_remesh
-
-```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public void Triangle(const Point3D & p0, const Point3D & p1, const Point3D & p2)
 ```
 
 

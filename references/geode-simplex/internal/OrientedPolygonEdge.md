@@ -11,40 +11,50 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepRemeshOptions
+# struct OrientedPolygonEdge
 
 
 ## Members
 
 ```cpp
-public bool repair_lines
+public PolygonEdge edge
 
 ```
 
 ```cpp
-public bool relax_lines
+public PolygonVertex starting_vertex
 
 ```
 
 ```cpp
-public bool repair_surfaces
+public bool oriented
 
 ```
+
+
+
+## Functions
+
+### OrientedPolygonEdge
 
 ```cpp
-public bool relax_surfaces
-
+public void OrientedPolygonEdge(PolygonEdge edge_in, bool oriented_in)
 ```
+
+
+### next_vertex
 
 ```cpp
-public bool relax_blocks
-
+public index_t next_vertex(const TriangulatedSurface<dimension> & surface)
 ```
+
+
+### vertex
 
 ```cpp
-public bool mesh
-
+public index_t vertex(const TriangulatedSurface<dimension> & surface)
 ```
+
 
 
 

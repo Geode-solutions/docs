@@ -11,40 +11,38 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepRemeshOptions
+# class LineRelaxer
 
 
-## Members
+## Functions
 
-```cpp
-public bool repair_lines
-
-```
+### LineRelaxer
 
 ```cpp
-public bool relax_lines
-
+public void LineRelaxer<Model>(const Model & model, ModelModifier & modifier, const Line<dimension> & line)
 ```
+
+
+### LineRelaxer
 
 ```cpp
-public bool repair_surfaces
-
+public void LineRelaxer<Model>(const Model & model, ModelModifier & modifier, const Line<dimension> & line, const Metric<dimension> & metric)
 ```
+
+
+### ~LineRelaxer
 
 ```cpp
-public bool relax_surfaces
-
+public void ~LineRelaxer<Model>()
 ```
+
+
+### relax
 
 ```cpp
-public bool relax_blocks
-
+public void relax()
 ```
 
-```cpp
-public bool mesh
-
-```
 
 
 

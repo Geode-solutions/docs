@@ -11,31 +11,20 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# struct Edge
 
 
-
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
-
-
-## Functions
-
-### simplex_remesh
+## Members
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public Point p0
+
 ```
-
-
-### simplex_remesh
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
-```
+public Point p1
 
+```
 
 
 

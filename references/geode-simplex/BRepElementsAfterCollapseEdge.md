@@ -11,38 +11,12 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepRemeshOptions
-
+# struct BRepElementsAfterCollapseEdge
 
 ## Members
 
 ```cpp
-public bool repair_lines
-
-```
-
-```cpp
-public bool relax_lines
-
-```
-
-```cpp
-public bool repair_surfaces
-
-```
-
-```cpp
-public bool relax_surfaces
-
-```
-
-```cpp
-public bool relax_blocks
-
-```
-
-```cpp
-public bool mesh
+public flat_hash_map block_tetrahedra
 
 ```
 

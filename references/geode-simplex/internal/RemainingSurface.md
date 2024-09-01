@@ -11,31 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# struct RemainingSurface
 
 
-
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
-
-
-## Functions
-
-### simplex_remesh
+## Members
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public std::unique_ptr<TriangulatedSurface<dimension> > surface
+
 ```
-
-
-### simplex_remesh
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public vector remeshed_mapping
+
 ```
 
+```cpp
+public vector background_mapping
+
+```
+
+```cpp
+public vector macro_edges
+
+```
+
+```cpp
+public vector outside_remaining
+
+```
 
 
 

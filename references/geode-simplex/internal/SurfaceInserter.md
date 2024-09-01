@@ -11,29 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
-
-
-
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
+# class SurfaceInserter
 
 
 ## Functions
 
-### simplex_remesh
+### SurfaceInserter
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public void SurfaceInserter<Data>(Data & data, const Surface<dimension> & surface)
 ```
 
 
-### simplex_remesh
+### split_triangle
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public FixedArray split_triangle(vector triangles, absl::Span<const Point<dimension> > points)
+```
+
+
+### unique_vertices
+
+```cpp
+public Span unique_vertices()
 ```
 
 

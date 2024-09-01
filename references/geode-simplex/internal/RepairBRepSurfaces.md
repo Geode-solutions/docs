@@ -11,29 +11,22 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
-
-
-
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
+# class RepairBRepSurfaces
 
 
 ## Functions
 
-### simplex_remesh
+### RepairBRepSurfaces
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public void RepairBRepSurfaces(BRepRemeshingData & data)
 ```
 
 
-### simplex_remesh
+### repair
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public void repair()
 ```
 
 

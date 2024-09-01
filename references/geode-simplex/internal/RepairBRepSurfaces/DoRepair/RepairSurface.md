@@ -11,29 +11,39 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# struct RepairSurface
 
 
+## Members
 
-## Records
+```cpp
+public const Surface3D & surface
 
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
+```
+
+```cpp
+public const TriangulatedSurface3D & mesh
+
+```
+
+```cpp
+public DistanceToTriangle distance
+
+```
+
+```cpp
+public vector edges
+
+```
+
 
 
 ## Functions
 
-### simplex_remesh
+### RepairSurface
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
-```
-
-
-### simplex_remesh
-
-```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public void RepairSurface(RepairBRepSurfaces & repair, const Surface3D & surface_in)
 ```
 
 

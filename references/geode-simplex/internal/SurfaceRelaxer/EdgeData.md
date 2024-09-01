@@ -11,29 +11,39 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# struct EdgeData
 
 
+## Members
 
-## Records
+```cpp
+public PolygonEdge id
 
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
+```
+
+```cpp
+public index_t vertex
+
+```
+
+```cpp
+public const Point<dimension> & point
+
+```
+
+```cpp
+public optional adj
+
+```
+
 
 
 ## Functions
 
-### simplex_remesh
+### EdgeData
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
-```
-
-
-### simplex_remesh
-
-```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public void EdgeData(const SurfaceMesh<dimension> & mesh, PolygonEdge edge_in)
 ```
 
 

@@ -117,11 +117,5 @@ public const uuid & from_output_id(const ComponentID & component)
 ```
 
 
-### RemeshingData
-
-```cpp
-public void RemeshingData<DataModel>(Model && background, Model & output, const Metric<dimension> & metric, const int & components_to_remesh)
-```
-
 
 

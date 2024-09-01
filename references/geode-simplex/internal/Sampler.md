@@ -11,29 +11,42 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
-
+# class Sampler
 
 
 ## Records
 
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
+ElementPoint
+
 
 
 ## Functions
 
-### simplex_remesh
+### ~Sampler
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public void ~Sampler<Element>()
 ```
 
 
-### simplex_remesh
+### sample
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public flat_hash_map sample()
+```
+
+
+### Sampler
+
+```cpp
+protected void Sampler<Element>(const Metric3D & metric)
+```
+
+
+### add_point_to_cells
+
+```cpp
+protected void add_point_to_cells(const Point3D & point)
 ```
 
 

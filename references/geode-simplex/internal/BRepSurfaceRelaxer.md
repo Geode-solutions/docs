@@ -11,29 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# class BRepSurfaceRelaxer
 
 
+```cpp
+Inherits from SurfaceRelaxer<BRep>
+```
 
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
 
 
 ## Functions
 
-### simplex_remesh
+### BRepSurfaceRelaxer
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public void BRepSurfaceRelaxer(const BRep & model, BRepGeometricModifier & modifier, const Surface3D & surface, const SurfaceRelaxerOptions3D & options)
 ```
 
 
-### simplex_remesh
+### ~BRepSurfaceRelaxer
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public void ~BRepSurfaceRelaxer()
 ```
 
 

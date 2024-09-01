@@ -11,29 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# class JsonMetricConstraintsImpl
 
 
+```cpp
+Inherits from MetricConstraintsImpl<Model>
+```
 
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
 
 
 ## Functions
 
-### simplex_remesh
+### JsonMetricConstraintsImpl
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public void JsonMetricConstraintsImpl<Model>(const Model & model)
 ```
 
 
-### simplex_remesh
+### import_constraints
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public void import_constraints(basic_string_view filename)
+```
+
+
+### export_constraints
+
+```cpp
+public void export_constraints(basic_string_view filename)
 ```
 
 

@@ -11,31 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# class Splitter
 
 
-
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
+# class Splitter
 
 
 ## Functions
 
-### simplex_remesh
+### Splitter
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public void Splitter<Model>(Model & model, ModelModifier & modifier, const Metric<dimension> & metric)
 ```
 
 
-### simplex_remesh
+### Splitter
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public void Splitter<Model>(Model & model, ModelModifier & modifier, const Metric<dimension> & metric, Span surfaces)
 ```
 
 
+### split
+
+```cpp
+public void split()
+```
+
+
+
+
+# class Splitter
 
 

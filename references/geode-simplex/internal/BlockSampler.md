@@ -11,29 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# class BlockSampler
 
 
+```cpp
+Inherits from Sampler<Triangle>
+```
 
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
 
 
 ## Functions
 
-### simplex_remesh
+### BlockSampler
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+protected void BlockSampler(const BRep & output, const Block3D & block, const Metric3D & metric)
 ```
 
 
-### simplex_remesh
+### new_potential_points
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+protected tuple new_potential_points(const Element & element)
 ```
 
 

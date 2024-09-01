@@ -11,29 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# class LSCMRemesher
 
 
+```cpp
+Inherits from RemeshAlgo<3>
+```
 
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
 
 
 ## Functions
 
-### simplex_remesh
+### LSCMRemesher
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public void LSCMRemesher(const TriangulatedSurface3D & input_mesh, const Metric3D & metric, Span lock_vertices, Span outside_polygons, vector macro_edges)
 ```
 
 
-### simplex_remesh
+### remesh
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public RemeshedSurface remesh()
 ```
 
 

@@ -14,22 +14,12 @@ const name = words.join('-');
 # class SamplingData
 
 
- Structure holding all the data required for the remeshing algorithm Aliases are defined for BRep and Section.
-
-
-
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### SamplingData
 
 ```cpp
-public void SamplingData<DataModel>(DataModel & model, const Metric<dimension> & metric)
+public void SamplingData<DataModel>(DataModel && model, const Metric<dimension> & metric)
 ```
 
 
@@ -78,7 +68,14 @@ public std::mutex & mutex()
 ### tag_unique_vertices
 
 ```cpp
-public void tag_unique_vertices(absl::Span<const index_t> unique_vertices)
+public void tag_unique_vertices(Span unique_vertices)
+```
+
+
+### release_tagged_vertices
+
+```cpp
+public void release_tagged_vertices()
 ```
 
 
@@ -113,4 +110,5 @@ public vector updated_tetrahedra(const Block<dimension> & block, index_t tetrahe
 
 
 # class SamplingData
+
 

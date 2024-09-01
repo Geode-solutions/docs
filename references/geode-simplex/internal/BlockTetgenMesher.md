@@ -11,29 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# class BlockTetgenMesher
 
 
+```cpp
+Inherits from TetgenMesher
+```
 
-## Records
-
-* [BRepRemeshOptions](BRepRemeshOptions.md)
-* [SectionRemeshOptions](SectionRemeshOptions.md)
 
 
 ## Functions
 
-### simplex_remesh
+### BlockTetgenMesher
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+public void BlockTetgenMesher(const BRep & brep, BRepBuilder & builder, const Block3D & block, Span internal_points)
 ```
 
 
-### simplex_remesh
+### ~BlockTetgenMesher
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+public void ~BlockTetgenMesher()
+```
+
+
+### tetrahedralize
+
+```cpp
+public tuple tetrahedralize()
 ```
 
 

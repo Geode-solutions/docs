@@ -33,14 +33,14 @@ public void ~SectionMetricConstraints()
 ### import_constraints
 
 ```cpp
-public void import_constraints(string_view filename)
+public void import_constraints(basic_string_view filename)
 ```
 
 
 ### export_constraints
 
 ```cpp
-public void export_constraints(string_view filename)
+public void export_constraints(basic_string_view filename)
 ```
 
 
@@ -111,6 +111,27 @@ public void set_surface_metric(const Surface2D & surface, double metric)
 
 ```cpp
 public optional surface_metric(const Surface2D & surface)
+```
+
+
+### set_point_set_metric
+
+```cpp
+public void set_point_set_metric(const geode::PointSet2D & mesh, double metric)
+```
+
+
+### set_edged_curve_metric
+
+```cpp
+public void set_edged_curve_metric(const geode::EdgedCurve2D & mesh, double metric)
+```
+
+
+### set_triangulated_surface_metric
+
+```cpp
+public void set_triangulated_surface_metric(geode::TriangulatedSurface2D & mesh, double metric)
 ```
 
 
