@@ -24,12 +24,6 @@ Inherits from ImplicitStructuralModel
 
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### StratigraphicModel
@@ -60,6 +54,13 @@ public void StratigraphicModel(StructuralModel && structural_model)
 ```
 
 
+### StratigraphicModel
+
+```cpp
+public void StratigraphicModel(const StratigraphicModel & initial_model, BRep && brep, const ModelGenericMapping & initial_to_brep_mappings)
+```
+
+
 ### ~StratigraphicModel
 
 ```cpp
@@ -67,17 +68,24 @@ public void ~StratigraphicModel()
 ```
 
 
+### clone
+
+```cpp
+public StratigraphicModel clone()
+```
+
+
 ### native_extension_static
 
 ```cpp
-public string_view native_extension_static()
+public basic_string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public string_view native_extension()
+public basic_string_view native_extension()
 ```
 
 
@@ -93,7 +101,7 @@ public StratigraphicPoint3D stratigraphic_coordinates(const Block3D & block, ind
 ### stratigraphic_coordinates
 
 ```cpp
-public absl::optional<StratigraphicPoint3D> stratigraphic_coordinates(const Block3D & block, const Point3D & geometric_point)
+public std::optional<StratigraphicPoint3D> stratigraphic_coordinates(const Block3D & block, const Point3D & geometric_point)
 ```
 
 
@@ -111,7 +119,7 @@ public StratigraphicPoint3D stratigraphic_coordinates(const Block3D & block, con
 ### geometric_coordinates
 
 ```cpp
-public absl::optional<Point3D> geometric_coordinates(const Block3D & block, const StratigraphicPoint3D & stratigraphic_point)
+public std::optional<Point3D> geometric_coordinates(const Block3D & block, const StratigraphicPoint3D & stratigraphic_point)
 ```
 
 
@@ -129,7 +137,7 @@ public Point3D geometric_coordinates(const Block3D & block, const StratigraphicP
 ### stratigraphic_containing_polyhedron
 
 ```cpp
-public absl::optional<index_t> stratigraphic_containing_polyhedron(const Block3D & block, const StratigraphicPoint3D & stratigraphic_point)
+public std::optional<index_t> stratigraphic_containing_polyhedron(const Block3D & block, const StratigraphicPoint3D & stratigraphic_point)
 ```
 
 
@@ -138,7 +146,7 @@ public absl::optional<index_t> stratigraphic_containing_polyhedron(const Block3D
 ### stratigraphic_surface
 
 ```cpp
-public int stratigraphic_surface(const Block3D & block, const Surface3D & surface)
+public absl::InlinedVector<std::unique_ptr<TriangulatedSurface3D>, 2> stratigraphic_surface(const Block3D & block, const Surface3D & surface)
 ```
 
 

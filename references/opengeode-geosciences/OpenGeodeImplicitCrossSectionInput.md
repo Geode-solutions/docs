@@ -25,21 +25,21 @@ Inherits from ImplicitCrossSectionInput
 ### OpenGeodeImplicitCrossSectionInput
 
 ```cpp
-public void OpenGeodeImplicitCrossSectionInput(string_view filename)
+public void OpenGeodeImplicitCrossSectionInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### load_implicit_cross_section_files
 
 ```cpp
-public void load_implicit_cross_section_files(ImplicitCrossSection & section, string_view directory)
+public void load_implicit_cross_section_files(ImplicitCrossSection & section, basic_string_view directory)
 ```
 
 

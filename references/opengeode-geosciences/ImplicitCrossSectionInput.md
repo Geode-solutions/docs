@@ -25,7 +25,7 @@ Inherits from Input<ImplicitCrossSection>
 ### ImplicitCrossSectionInput
 
 ```cpp
-protected void ImplicitCrossSectionInput(string_view filename)
+protected void ImplicitCrossSectionInput(basic_string_view filename)
 ```
 
 

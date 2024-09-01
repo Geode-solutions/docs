@@ -24,12 +24,6 @@ Inherits from CrossSection
 
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### ImplicitCrossSection
@@ -53,6 +47,13 @@ public void ImplicitCrossSection(CrossSection && cross_section)
 ```
 
 
+### ImplicitCrossSection
+
+```cpp
+public void ImplicitCrossSection(const ImplicitCrossSection & initial_model, Section && section, const ModelGenericMapping & initial_to_section_mappings)
+```
+
+
 ### ~ImplicitCrossSection
 
 ```cpp
@@ -60,17 +61,24 @@ public void ~ImplicitCrossSection()
 ```
 
 
+### clone
+
+```cpp
+public ImplicitCrossSection clone()
+```
+
+
 ### native_extension_static
 
 ```cpp
-public string_view native_extension_static()
+public basic_string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public string_view native_extension()
+public basic_string_view native_extension()
 ```
 
 
@@ -86,7 +94,7 @@ public double implicit_value(const Surface2D & surface, index_t vertex_id)
 ### implicit_value
 
 ```cpp
-public optional implicit_value(const Surface2D & surface, const Point2D & point)
+public std::optional<double> implicit_value(const Surface2D & surface, const Point2D & point)
 ```
 
 
@@ -104,7 +112,7 @@ public double implicit_value(const Surface2D & surface, const Point2D & point, i
 ### containing_polygon
 
 ```cpp
-public absl::optional<index_t> containing_polygon(const Surface2D & surface, const Point2D & point)
+public std::optional<index_t> containing_polygon(const Surface2D & surface, const Point2D & point)
 ```
 
 
@@ -120,7 +128,7 @@ public const HorizonsStack2D & horizons_stack()
 ### horizon_implicit_value
 
 ```cpp
-public optional horizon_implicit_value(const Horizon2D & horizon)
+public std::optional<implicit_attribute_type> horizon_implicit_value(const Horizon2D & horizon)
 ```
 
 
@@ -134,49 +142,49 @@ public bool implicit_value_is_above_horizon(double implicit_function_value, cons
 ### containing_stratigraphic_unit
 
 ```cpp
-public absl::optional<uuid> containing_stratigraphic_unit(implicit_attribute_type implicit_function_value)
+public std::optional<uuid> containing_stratigraphic_unit(implicit_attribute_type implicit_function_value)
 ```
 
 
 ### initialize_implicit_query_trees
 
 ```cpp
-public void initialize_implicit_query_trees(PassKey )
+public void initialize_implicit_query_trees(ImplicitCrossSectionBuilderKey )
 ```
 
 
 ### instantiate_implicit_attribute_on_surfaces
 
 ```cpp
-public void instantiate_implicit_attribute_on_surfaces(PassKey )
+public void instantiate_implicit_attribute_on_surfaces(ImplicitCrossSectionBuilderKey )
 ```
 
 
 ### set_implicit_value
 
 ```cpp
-public void set_implicit_value(const Surface2D & surface, index_t vertex_id, double value, PassKey )
+public void set_implicit_value(const Surface2D & surface, index_t vertex_id, double value, ImplicitCrossSectionBuilderKey )
 ```
 
 
 ### set_horizons_stack
 
 ```cpp
-public void set_horizons_stack(HorizonsStack2D && stack, PassKey )
+public void set_horizons_stack(HorizonsStack2D && stack, ImplicitCrossSectionBuilderKey )
 ```
 
 
 ### set_horizon_implicit_value
 
 ```cpp
-public void set_horizon_implicit_value(const Horizon2D & horizon, implicit_attribute_type isovalue, PassKey )
+public void set_horizon_implicit_value(const Horizon2D & horizon, implicit_attribute_type isovalue, ImplicitCrossSectionBuilderKey )
 ```
 
 
 ### modifiable_horizons_stack
 
 ```cpp
-public HorizonsStack2D & modifiable_horizons_stack(PassKey )
+public HorizonsStack2D & modifiable_horizons_stack(ImplicitCrossSectionBuilderKey )
 ```
 
 

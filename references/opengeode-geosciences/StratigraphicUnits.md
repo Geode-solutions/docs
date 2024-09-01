@@ -82,7 +82,7 @@ public StratigraphicUnitRange stratigraphic_units()
 ### save_stratigraphic_units
 
 ```cpp
-public void save_stratigraphic_units(string_view directory)
+public void save_stratigraphic_units(basic_string_view directory)
 ```
 
 
@@ -96,7 +96,7 @@ protected void StratigraphicUnits<>()
 ### StratigraphicUnits
 
 ```cpp
-protected void StratigraphicUnits<>(StratigraphicUnits<> && )
+protected void StratigraphicUnits<>(StratigraphicUnits<> && other)
 ```
 
 

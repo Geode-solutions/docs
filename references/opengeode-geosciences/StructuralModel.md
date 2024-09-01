@@ -59,17 +59,31 @@ public void StructuralModel(BRep && brep)
 ```
 
 
+### StructuralModel
+
+```cpp
+public void StructuralModel(const StructuralModel & initial_model, BRep && brep, const ModelGenericMapping & initial_to_brep_mappings)
+```
+
+
+### clone
+
+```cpp
+public StructuralModel clone()
+```
+
+
 ### native_extension_static
 
 ```cpp
-public string_view native_extension_static()
+public basic_string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public string_view native_extension()
+public basic_string_view native_extension()
 ```
 
 

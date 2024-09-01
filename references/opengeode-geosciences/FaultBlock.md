@@ -94,7 +94,7 @@ public void FaultBlock<dimension>(FaultBlocksKey )
 ### set_fault_block_name
 
 ```cpp
-public void set_fault_block_name(string_view name, FaultBlocksBuilderKey )
+public void set_fault_block_name(basic_string_view name, FaultBlocksBuilderKey )
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from Input<ImplicitStructuralModel>
 ### ImplicitStructuralModelInput
 
 ```cpp
-protected void ImplicitStructuralModelInput(string_view filename)
+protected void ImplicitStructuralModelInput(basic_string_view filename)
 ```
 
 

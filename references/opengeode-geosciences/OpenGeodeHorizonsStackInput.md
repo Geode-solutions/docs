@@ -34,21 +34,21 @@ Inherits from HorizonsStackInput<dimension>
 ### OpenGeodeHorizonsStackInput
 
 ```cpp
-public void OpenGeodeHorizonsStackInput<dimension>(string_view filename)
+public void OpenGeodeHorizonsStackInput<dimension>(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### load_horizons_stack_files
 
 ```cpp
-public void load_horizons_stack_files(HorizonsStack<dimension> & horizons_stack, string_view directory)
+public void load_horizons_stack_files(HorizonsStack<dimension> & horizons_stack, basic_string_view directory)
 ```
 
 

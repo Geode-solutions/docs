@@ -76,7 +76,7 @@ public FaultBlockRange fault_blocks()
 ### save_fault_blocks
 
 ```cpp
-public void save_fault_blocks(string_view directory)
+public void save_fault_blocks(basic_string_view directory)
 ```
 
 
@@ -90,7 +90,7 @@ protected void FaultBlocks<>()
 ### FaultBlocks
 
 ```cpp
-protected void FaultBlocks<>(FaultBlocks<> && )
+protected void FaultBlocks<>(FaultBlocks<> && other)
 ```
 
 

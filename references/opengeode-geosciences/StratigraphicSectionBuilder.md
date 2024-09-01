@@ -36,7 +36,7 @@ public void StratigraphicSectionBuilder(StratigraphicSection & stratigraphic_sec
 ### copy
 
 ```cpp
-public ModelCopyMapping copy(const StratigraphicSection & stratigraphic_section)
+public ModelMapping copy(const StratigraphicSection & stratigraphic_section)
 ```
 
 

@@ -24,12 +24,6 @@ Inherits from StructuralModel
 
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### ImplicitStructuralModel
@@ -53,6 +47,13 @@ public void ImplicitStructuralModel(StructuralModel && structural_model)
 ```
 
 
+### ImplicitStructuralModel
+
+```cpp
+public void ImplicitStructuralModel(const ImplicitStructuralModel & initial_model, BRep && brep, const ModelGenericMapping & initial_to_brep_mappings)
+```
+
+
 ### ~ImplicitStructuralModel
 
 ```cpp
@@ -60,17 +61,24 @@ public void ~ImplicitStructuralModel()
 ```
 
 
+### clone
+
+```cpp
+public ImplicitStructuralModel clone()
+```
+
+
 ### native_extension_static
 
 ```cpp
-public string_view native_extension_static()
+public basic_string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public string_view native_extension()
+public basic_string_view native_extension()
 ```
 
 
@@ -86,7 +94,7 @@ public implicit_attribute_type implicit_value(const Block3D & block, index_t ver
 ### implicit_value
 
 ```cpp
-public absl::optional<implicit_attribute_type> implicit_value(const Block3D & block, const Point3D & point)
+public std::optional<implicit_attribute_type> implicit_value(const Block3D & block, const Point3D & point)
 ```
 
 
@@ -104,7 +112,7 @@ public implicit_attribute_type implicit_value(const Block3D & block, const Point
 ### containing_polyhedron
 
 ```cpp
-public absl::optional<index_t> containing_polyhedron(const Block3D & block, const Point3D & point)
+public std::optional<index_t> containing_polyhedron(const Block3D & block, const Point3D & point)
 ```
 
 
@@ -120,7 +128,7 @@ public const HorizonsStack3D & horizons_stack()
 ### horizon_implicit_value
 
 ```cpp
-public absl::optional<implicit_attribute_type> horizon_implicit_value(const Horizon3D & horizon)
+public std::optional<implicit_attribute_type> horizon_implicit_value(const Horizon3D & horizon)
 ```
 
 
@@ -134,7 +142,7 @@ public bool implicit_value_is_above_horizon(double implicit_function_value, cons
 ### containing_stratigraphic_unit
 
 ```cpp
-public absl::optional<uuid> containing_stratigraphic_unit(implicit_attribute_type implicit_function_value)
+public std::optional<uuid> containing_stratigraphic_unit(implicit_attribute_type implicit_function_value)
 ```
 
 

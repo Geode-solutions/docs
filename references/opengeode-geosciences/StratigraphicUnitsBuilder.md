@@ -19,21 +19,21 @@ const name = words.join('-');
 ### load_stratigraphic_units
 
 ```cpp
-public void load_stratigraphic_units(string_view directory)
+public void load_stratigraphic_units(basic_string_view directory)
 ```
 
 
 ### set_stratigraphic_unit_name
 
 ```cpp
-public void set_stratigraphic_unit_name(const uuid & id, string_view name)
+public void set_stratigraphic_unit_name(const uuid & id, basic_string_view name)
 ```
 
 
 ### StratigraphicUnitsBuilder
 
 ```cpp
-protected void StratigraphicUnitsBuilder<dimension>(StratigraphicUnits<dimension> & stratigraphic_units)
+protected void StratigraphicUnitsBuilder<>(StratigraphicUnits<dimension> & stratigraphic_units)
 ```
 
 

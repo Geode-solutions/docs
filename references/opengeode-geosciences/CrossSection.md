@@ -59,17 +59,31 @@ public void CrossSection(Section && section)
 ```
 
 
+### CrossSection
+
+```cpp
+public void CrossSection(const CrossSection & initial_model, Section && section, const ModelGenericMapping & initial_to_section_mappings)
+```
+
+
+### clone
+
+```cpp
+public CrossSection clone()
+```
+
+
 ### native_extension_static
 
 ```cpp
-public string_view native_extension_static()
+public basic_string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public string_view native_extension()
+public basic_string_view native_extension()
 ```
 
 

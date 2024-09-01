@@ -75,7 +75,7 @@ public void copy_stratigraphic_relationships(const ModelCopyMapping & mapping, c
 ### load_stratigraphic_relationships
 
 ```cpp
-public void load_stratigraphic_relationships(string_view directory)
+public void load_stratigraphic_relationships(basic_string_view directory)
 ```
 
 

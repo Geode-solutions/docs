@@ -25,7 +25,7 @@ Inherits from Input<HorizonsStack<dimension> >
 ### HorizonsStackInput
 
 ```cpp
-protected void HorizonsStackInput<dimension>(string_view filename)
+protected void HorizonsStackInput<dimension>(basic_string_view filename)
 ```
 
 

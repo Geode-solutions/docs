@@ -14,6 +14,15 @@ const name = words.join('-');
 # class Fault
 
 
+```cpp
+Inherits from Component<2U>
+```
+
+
+
+# class Fault
+
+
  Geological component describing a Fault. This component is described by a fault type.
 
 
@@ -113,7 +122,7 @@ public void set_type(FAULT_TYPE type, FaultsBuilderKey )
 ### set_fault_name
 
 ```cpp
-public void set_fault_name(string_view name, FaultsBuilderKey )
+public void set_fault_name(basic_string_view name, FaultsBuilderKey )
 ```
 
 
@@ -125,12 +134,12 @@ public void set_fault_name(string_view name, FaultsBuilderKey )
 
 --
 
-| NO_TYPE |
-| NORMAL |
-| REVERSE |
-| STRIKE_SLIP |
-| LISTRIC |
-| DECOLLEMENT |
+| no_type |
+| normal |
+| reverse |
+| strike_slip |
+| listric |
+| decollement |
 
 
 
@@ -141,15 +150,6 @@ public void set_fault_name(string_view name, FaultsBuilderKey )
 
 ```cpp
 Inherits from Component<3U>
-```
-
-
-
-# class Fault
-
-
-```cpp
-Inherits from Component<2U>
 ```
 
 

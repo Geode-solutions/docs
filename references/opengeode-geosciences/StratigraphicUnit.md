@@ -85,7 +85,7 @@ public void StratigraphicUnit<dimension>(StratigraphicUnitsKey )
 ### set_stratigraphic_unit_name
 
 ```cpp
-public void set_stratigraphic_unit_name(string_view name, StratigraphicUnitsBuilderKey )
+public void set_stratigraphic_unit_name(basic_string_view name, StratigraphicUnitsBuilderKey )
 ```
 
 

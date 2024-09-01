@@ -82,7 +82,7 @@ public HorizonRange horizons()
 ### save_horizons
 
 ```cpp
-public void save_horizons(string_view directory)
+public void save_horizons(basic_string_view directory)
 ```
 
 
@@ -96,7 +96,7 @@ protected void Horizons<>()
 ### Horizons
 
 ```cpp
-protected void Horizons<>(Horizons<> && )
+protected void Horizons<>(Horizons<> && other)
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from Input<StructuralModel>
 ### StructuralModelInput
 
 ```cpp
-protected void StructuralModelInput(string_view filename)
+protected void StructuralModelInput(basic_string_view filename)
 ```
 
 

@@ -13,8 +13,6 @@ const name = words.join('-');
 
 # class GeographicCoordinateSystem
 
-# class GeographicCoordinateSystem
-
 
 ```cpp
 Inherits from AttributeCoordinateReferenceSystem<dimension>
@@ -77,6 +75,7 @@ public const Info & info()
 public absl::FixedArray<Info> geographic_coordinate_systems()
 ```
 
+
 ### import_coordinates
 
 ```cpp
@@ -84,14 +83,23 @@ public void import_coordinates(const GeographicCoordinateSystem<dimension> & crs
 ```
 
 
-### geographic_coordinate_systems
+
+
+# class GeographicCoordinateSystem
+
 
 ```cpp
-public int geographic_coordinate_systems()
+Inherits from AttributeCoordinateReferenceSystem<3U>
 ```
 
 
 
-
 # class GeographicCoordinateSystem
+
+
+```cpp
+Inherits from AttributeCoordinateReferenceSystem<2U>
+```
+
+
 

@@ -23,6 +23,15 @@ Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<3U>, Stratigrap
 # class HorizonsStackBuilder
 
 
+```cpp
+Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
+```
+
+
+
+# class HorizonsStackBuilder
+
+
  Class managing modifications of a HorizonsStack**extends** **extends** **extends** 
 
 
@@ -72,14 +81,14 @@ public void HorizonsStackBuilder<>(HorizonsStackBuilder<dimension> && )
 ### copy
 
 ```cpp
-public ModelMapping copy(const HorizonsStack<dimension> & horizons_stack)
+public ModelCopyMapping copy(const HorizonsStack<dimension> & horizons_stack)
 ```
 
 
 ### copy_components
 
 ```cpp
-public ModelMapping copy_components(const HorizonsStack<dimension> & horizons_stack)
+public ModelCopyMapping copy_components(const HorizonsStack<dimension> & horizons_stack)
 ```
 
 
@@ -99,7 +108,7 @@ public void copy_components(ModelCopyMapping & mapping, const HorizonsStack<dime
 ```
 
 
- Copies the components with the uuid given by the mapping. If the mapping does not exist, creates a component with a new uuid and adds it to the mapping.
+ Copies the components with the uuid given by the mapping. If the mapping does not exist, creates a component with a new uuid and adds it to the mapping. This does not copy the relations between the components.
 
 ### add_horizon
 
@@ -177,15 +186,6 @@ public void remove_horizon(const Horizon<dimension> & horizon)
 public void remove_stratigraphic_unit(const StratigraphicUnit<dimension> & stratigraphic_unit)
 ```
 
-
-
-
-# class HorizonsStackBuilder
-
-
-```cpp
-Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
-```
 
 
 

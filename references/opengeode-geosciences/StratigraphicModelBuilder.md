@@ -36,7 +36,7 @@ public void StratigraphicModelBuilder(StratigraphicModel & stratigraphic_model_)
 ### copy
 
 ```cpp
-public int copy(const StratigraphicModel & implicit_model)
+public ModelMapping copy(const StratigraphicModel & implicit_model)
 ```
 
 
@@ -57,7 +57,7 @@ public void instantiate_stratigraphic_attribute_on_blocks()
 ### set_stratigraphic_location
 
 ```cpp
-public void set_stratigraphic_location(const Block3D & block, index_t vertex_id, Point2D value)
+public void set_stratigraphic_location(const Block3D & block, index_t vertex_id, Point value)
 ```
 
 

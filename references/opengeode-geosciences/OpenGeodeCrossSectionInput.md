@@ -25,21 +25,21 @@ Inherits from CrossSectionInput
 ### OpenGeodeCrossSectionInput
 
 ```cpp
-public void OpenGeodeCrossSectionInput(string_view filename)
+public void OpenGeodeCrossSectionInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### load_cross_section_files
 
 ```cpp
-public void load_cross_section_files(CrossSection & cross_section, string_view directory)
+public void load_cross_section_files(CrossSection & cross_section, basic_string_view directory)
 ```
 
 

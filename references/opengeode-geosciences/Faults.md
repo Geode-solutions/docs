@@ -79,7 +79,7 @@ public FaultRange faults()
 ### save_faults
 
 ```cpp
-public void save_faults(string_view directory)
+public void save_faults(basic_string_view directory)
 ```
 
 
@@ -93,7 +93,7 @@ protected void Faults<>()
 ### Faults
 
 ```cpp
-protected void Faults<>(Faults<> && )
+protected void Faults<>(Faults<> && other)
 ```
 
 

@@ -24,12 +24,6 @@ Inherits from ImplicitCrossSection
 
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### StratigraphicSection
@@ -42,14 +36,14 @@ public void StratigraphicSection()
 ### StratigraphicSection
 
 ```cpp
-public void StratigraphicSection(StratigraphicSection && implicit_model)
+public void StratigraphicSection(StratigraphicSection && stratigraphic_section)
 ```
 
 
 ### StratigraphicSection
 
 ```cpp
-public void StratigraphicSection(ImplicitCrossSection && implicit_model)
+public void StratigraphicSection(ImplicitCrossSection && implicit_section)
 ```
 
 
@@ -60,6 +54,13 @@ public void StratigraphicSection(CrossSection && cross_section)
 ```
 
 
+### StratigraphicSection
+
+```cpp
+public void StratigraphicSection(const StratigraphicSection & initial_model, Section && section, const ModelGenericMapping & initial_to_section_mappings)
+```
+
+
 ### ~StratigraphicSection
 
 ```cpp
@@ -67,17 +68,24 @@ public void ~StratigraphicSection()
 ```
 
 
+### clone
+
+```cpp
+public StratigraphicSection clone()
+```
+
+
 ### native_extension_static
 
 ```cpp
-public string_view native_extension_static()
+public basic_string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public string_view native_extension()
+public basic_string_view native_extension()
 ```
 
 
@@ -93,7 +101,7 @@ public StratigraphicPoint2D stratigraphic_coordinates(const Surface2D & surface,
 ### stratigraphic_coordinates
 
 ```cpp
-public absl::optional<StratigraphicPoint2D> stratigraphic_coordinates(const Surface2D & surface, const Point2D & geometric_point)
+public std::optional<StratigraphicPoint2D> stratigraphic_coordinates(const Surface2D & surface, const Point2D & geometric_point)
 ```
 
 
@@ -111,7 +119,7 @@ public StratigraphicPoint2D stratigraphic_coordinates(const Surface2D & surface,
 ### geometric_coordinates
 
 ```cpp
-public absl::optional<Point2D> geometric_coordinates(const Surface2D & surface, const StratigraphicPoint2D & stratigraphic_point)
+public std::optional<Point2D> geometric_coordinates(const Surface2D & surface, const StratigraphicPoint2D & stratigraphic_point)
 ```
 
 
@@ -129,7 +137,7 @@ public Point2D geometric_coordinates(const Surface2D & surface, const Stratigrap
 ### stratigraphic_containing_polygon
 
 ```cpp
-public absl::optional<index_t> stratigraphic_containing_polygon(const Surface2D & surface, const StratigraphicPoint2D & stratigraphic_point)
+public std::optional<index_t> stratigraphic_containing_polygon(const Surface2D & surface, const StratigraphicPoint2D & stratigraphic_point)
 ```
 
 

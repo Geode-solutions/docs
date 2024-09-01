@@ -32,7 +32,7 @@ public void ~ImplicitStructuralModelOutput()
 ### ImplicitStructuralModelOutput
 
 ```cpp
-protected void ImplicitStructuralModelOutput(string_view filename)
+protected void ImplicitStructuralModelOutput(basic_string_view filename)
 ```
 
 

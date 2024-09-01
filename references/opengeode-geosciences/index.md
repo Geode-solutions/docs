@@ -84,10 +84,30 @@ const name = words.join('-');
 
 ## Functions
 
+### save_stratigraphic_model
+
+```cpp
+vector save_stratigraphic_model(const StratigraphicModel & stratigraphic_model, basic_string_view filename)
+```
+
+
+ API function for saving a StratigraphicModel. The adequate saver is called depending on the given filename extension.
+
+**stratigraphic_model** [in] StratigraphicModel to save.
+
+**filename** [in] Path to the file where save the StratigraphicModel.
+
+### is_stratigraphic_model_saveable
+
+```cpp
+bool is_stratigraphic_model_saveable(const StratigraphicModel & stratigraphic_model, basic_string_view filename)
+```
+
+
 ### save_structural_model
 
 ```cpp
-void save_structural_model(const StructuralModel & structural_model, string_view filename)
+vector save_structural_model(const StructuralModel & structural_model, basic_string_view filename)
 ```
 
 
@@ -100,52 +120,14 @@ void save_structural_model(const StructuralModel & structural_model, string_view
 ### is_structural_model_saveable
 
 ```cpp
-bool is_structural_model_saveable(const StructuralModel & structural_model, string_view filename)
-```
-
-
-### save_cross_section
-
-```cpp
-void save_cross_section(const CrossSection & cross_section, string_view filename)
-```
-
-
- API function for saving a CrossSection. The adequate saver is called depending on the given filename extension.
-
-**cross_section** [in] CrossSection to save.
-
-**filename** [in] Path to the file where save the CrossSection.
-
-### is_cross_section_saveable
-
-```cpp
-bool is_cross_section_saveable(const CrossSection & cross_section, string_view filename)
-```
-
-
-### load_structural_model
-
-```cpp
-StructuralModel load_structural_model(string_view filename)
-```
-
-
- API function for loading a StructuralModel. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### check_structural_model_missing_files
-
-```cpp
-MissingFiles check_structural_model_missing_files(string_view filename)
+bool is_structural_model_saveable(const StructuralModel & structural_model, basic_string_view filename)
 ```
 
 
 ### save_implicit_structural_model
 
 ```cpp
-void save_implicit_structural_model(const ImplicitStructuralModel & implicit_model, string_view filename)
+vector save_implicit_structural_model(const ImplicitStructuralModel & implicit_model, basic_string_view filename)
 ```
 
 
@@ -158,45 +140,39 @@ void save_implicit_structural_model(const ImplicitStructuralModel & implicit_mod
 ### is_implicit_structural_model_saveable
 
 ```cpp
-bool is_implicit_structural_model_saveable(const ImplicitStructuralModel & implicit_model, string_view filename)
+bool is_implicit_structural_model_saveable(const ImplicitStructuralModel & implicit_model, basic_string_view filename)
 ```
 
 
-### save_horizons_stack
+### load_stratigraphic_section
 
 ```cpp
-void save_horizons_stack(const HorizonsStack<dimension> & horizons_stack, string_view filename)
+StratigraphicSection load_stratigraphic_section(basic_string_view filename)
 ```
 
 
- API function for saving a HorizonsStack. The adequate saver is called depending on the given filename extension.
-
-**horizons_stack** [in] HorizonsStack to save.
-
-**filename** [in] Path to the file where save the brep.
-
-### load_implicit_cross_section
-
-```cpp
-ImplicitCrossSection load_implicit_cross_section(string_view filename)
-```
-
-
- API function for loading an ImplicitCrossSection. The adequate loader is called depending on the filename extension.
+ API function for loading a StratigraphicSection. The adequate loader is called depending on the filename extension.
 
 **filename** [in] Path to the file to load.
 
-### check_implicit_cross_section_missing_files
+### check_stratigraphic_section_missing_files
 
 ```cpp
-MissingFiles check_implicit_cross_section_missing_files(string_view filename)
+MissingFiles check_stratigraphic_section_missing_files(basic_string_view filename)
+```
+
+
+### is_stratigraphic_section_loadable
+
+```cpp
+bool is_stratigraphic_section_loadable(basic_string_view filename)
 ```
 
 
 ### load_cross_section
 
 ```cpp
-CrossSection load_cross_section(string_view filename)
+CrossSection load_cross_section(basic_string_view filename)
 ```
 
 
@@ -207,14 +183,106 @@ CrossSection load_cross_section(string_view filename)
 ### check_cross_section_missing_files
 
 ```cpp
-MissingFiles check_cross_section_missing_files(string_view filename)
+MissingFiles check_cross_section_missing_files(basic_string_view filename)
+```
+
+
+### is_cross_section_loadable
+
+```cpp
+bool is_cross_section_loadable(basic_string_view filename)
+```
+
+
+### load_implicit_cross_section
+
+```cpp
+ImplicitCrossSection load_implicit_cross_section(basic_string_view filename)
+```
+
+
+ API function for loading an ImplicitCrossSection. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### check_implicit_cross_section_missing_files
+
+```cpp
+MissingFiles check_implicit_cross_section_missing_files(basic_string_view filename)
+```
+
+
+### is_implicit_cross_section_loadable
+
+```cpp
+bool is_implicit_cross_section_loadable(basic_string_view filename)
+```
+
+
+### save_stratigraphic_section
+
+```cpp
+vector save_stratigraphic_section(const StratigraphicSection & stratigraphic_section, basic_string_view filename)
+```
+
+
+ API function for saving a StratigraphicSection. The adequate saver is called depending on the given filename extension.
+
+**stratigraphic_section** [in] StratigraphicSection to save.
+
+**filename** [in] Path to the file where save the StratigraphicSection.
+
+### is_stratigraphic_section_saveable
+
+```cpp
+bool is_stratigraphic_section_saveable(const StratigraphicSection & stratigraphic_section, basic_string_view filename)
+```
+
+
+### save_cross_section
+
+```cpp
+vector save_cross_section(const CrossSection & cross_section, basic_string_view filename)
+```
+
+
+ API function for saving a CrossSection. The adequate saver is called depending on the given filename extension.
+
+**cross_section** [in] CrossSection to save.
+
+**filename** [in] Path to the file where save the CrossSection.
+
+### is_cross_section_saveable
+
+```cpp
+bool is_cross_section_saveable(const CrossSection & cross_section, basic_string_view filename)
+```
+
+
+### save_implicit_cross_section
+
+```cpp
+vector save_implicit_cross_section(const ImplicitCrossSection & implicit_model, basic_string_view filename)
+```
+
+
+ API function for saving an ImplicitCrossSection. The adequate saver is called depending on the given filename extension.
+
+**implicit_model** [in] ImplicitCrossSection to save.
+
+**filename** [in] Path to the file where save the ImplicitCrossSection.
+
+### is_implicit_cross_section_saveable
+
+```cpp
+bool is_implicit_cross_section_saveable(const ImplicitCrossSection & section, basic_string_view filename)
 ```
 
 
 ### load_horizons_stack
 
 ```cpp
-HorizonsStack<dimension> load_horizons_stack(string_view filename)
+HorizonsStack<dimension> load_horizons_stack(basic_string_view filename)
 ```
 
 
@@ -227,25 +295,34 @@ HorizonsStack<dimension> load_horizons_stack(string_view filename)
 ### check_horizons_stack_missing_files
 
 ```cpp
-typename HorizonsStackInput<dimension>::MissingFiles check_horizons_stack_missing_files(string_view filename)
+typename HorizonsStackInput<dimension>::MissingFiles check_horizons_stack_missing_files(basic_string_view filename)
 ```
 
 
-### load_implicit_structural_model
+### is_horizons_stack_loadable
 
 ```cpp
-ImplicitStructuralModel load_implicit_structural_model(string_view filename)
+bool is_horizons_stack_loadable(basic_string_view filename)
 ```
 
 
- API function for loading an ImplicitStructuralModel. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### check_implicit_structural_model_missing_files
+### save_horizons_stack
 
 ```cpp
-MissingFiles check_implicit_structural_model_missing_files(string_view filename)
+vector save_horizons_stack(const HorizonsStack<dimension> & horizons_stack, basic_string_view filename)
+```
+
+
+ API function for saving a HorizonsStack. The adequate saver is called depending on the given filename extension.
+
+**horizons_stack** [in] HorizonsStack to save.
+
+**filename** [in] Path to the file where save the brep.
+
+### is_horizons_stack_saveable
+
+```cpp
+bool is_horizons_stack_saveable(const HorizonsStack<dimension> & horizons_stack, basic_string_view filename)
 ```
 
 
@@ -275,139 +352,144 @@ void register_explicit_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
-### save_implicit_cross_section
+### load_structural_model
 
 ```cpp
-void save_implicit_cross_section(const ImplicitCrossSection & implicit_model, string_view filename)
+StructuralModel load_structural_model(basic_string_view filename)
 ```
 
 
- API function for saving an ImplicitCrossSection. The adequate saver is called depending on the given filename extension.
-
-**implicit_model** [in] ImplicitCrossSection to save.
-
-**filename** [in] Path to the file where save the ImplicitCrossSection.
-
-### is_implicit_cross_section_saveable
-
-```cpp
-bool is_implicit_cross_section_saveable(const ImplicitCrossSection & section, string_view filename)
-```
-
-
-### is_horizons_stack_saveable
-
-```cpp
-bool is_horizons_stack_saveable(const HorizonsStack<dimension> & horizons_stack, string_view filename)
-```
-
-
-### load_stratigraphic_section
-
-```cpp
-StratigraphicSection load_stratigraphic_section(string_view filename)
-```
-
-
- API function for loading a StratigraphicSection. The adequate loader is called depending on the filename extension.
+ API function for loading a StructuralModel. The adequate loader is called depending on the filename extension.
 
 **filename** [in] Path to the file to load.
 
-### check_stratigraphic_section_missing_files
+### check_structural_model_missing_files
 
 ```cpp
-MissingFiles check_stratigraphic_section_missing_files(string_view filename)
+MissingFiles check_structural_model_missing_files(basic_string_view filename)
+```
+
+
+### is_structural_model_loadable
+
+```cpp
+bool is_structural_model_loadable(basic_string_view filename)
 ```
 
 
 ### assign_edged_curve_geographic_coordinate_system_info
 
 ```cpp
-void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
 
 ### assign_point_set_geographic_coordinate_system_info
 
 ```cpp
-void assign_point_set_geographic_coordinate_system_info(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void assign_point_set_geographic_coordinate_system_info(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
 
 ### assign_solid_mesh_geographic_coordinate_system_info
 
 ```cpp
-void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
 
 ### assign_surface_mesh_geographic_coordinate_system_info
 
 ```cpp
-void assign_surface_mesh_geographic_coordinate_system_info(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void assign_surface_mesh_geographic_coordinate_system_info(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
 
 ### assign_brep_geographic_coordinate_system_info
 
 ```cpp
-void assign_brep_geographic_coordinate_system_info(const BRep & brep, BRepBuilder & builder, string_view crs_name, const GeographicCoordinateSystem3D::Info & info)
+void assign_brep_geographic_coordinate_system_info(const BRep & brep, BRepBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystem3D::Info & info)
 ```
 
 
 ### assign_section_geographic_coordinate_system_info
 
 ```cpp
-void assign_section_geographic_coordinate_system_info(const Section & section, SectionBuilder & builder, string_view crs_name, const GeographicCoordinateSystem2D::Info & info)
+void assign_section_geographic_coordinate_system_info(const Section & section, SectionBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystem2D::Info & info)
 ```
 
 
 ### convert_edged_curve_coordinate_reference_system
 
 ```cpp
-void convert_edged_curve_coordinate_reference_system(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void convert_edged_curve_coordinate_reference_system(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
 
 ### convert_point_set_coordinate_reference_system
 
 ```cpp
-void convert_point_set_coordinate_reference_system(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void convert_point_set_coordinate_reference_system(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
 
 ### convert_solid_mesh_coordinate_reference_system
 
 ```cpp
-void convert_solid_mesh_coordinate_reference_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void convert_solid_mesh_coordinate_reference_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
 
 ### convert_surface_mesh_coordinate_reference_system
 
 ```cpp
-void convert_surface_mesh_coordinate_reference_system(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void convert_surface_mesh_coordinate_reference_system(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
 ```
 
 
 ### convert_brep_coordinate_reference_system
 
 ```cpp
-void convert_brep_coordinate_reference_system(const BRep & brep, BRepBuilder & builder, string_view crs_name, const GeographicCoordinateSystem3D::Info & info)
+void convert_brep_coordinate_reference_system(const BRep & brep, BRepBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystem3D::Info & info)
 ```
 
 
 ### convert_section_coordinate_reference_system
 
 ```cpp
-void convert_section_coordinate_reference_system(const Section & section, SectionBuilder & builder, string_view crs_name, const GeographicCoordinateSystem2D::Info & info)
+void convert_section_coordinate_reference_system(const Section & section, SectionBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystem2D::Info & info)
+```
+
+
+### load_implicit_structural_model
+
+```cpp
+ImplicitStructuralModel load_implicit_structural_model(basic_string_view filename)
+```
+
+
+ API function for loading an ImplicitStructuralModel. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### check_implicit_structural_model_missing_files
+
+```cpp
+MissingFiles check_implicit_structural_model_missing_files(basic_string_view filename)
+```
+
+
+### is_implicit_structural_model_loadable
+
+```cpp
+bool is_implicit_structural_model_loadable(basic_string_view filename)
 ```
 
 
 ### load_stratigraphic_model
 
 ```cpp
-StratigraphicModel load_stratigraphic_model(string_view filename)
+StratigraphicModel load_stratigraphic_model(basic_string_view filename)
 ```
 
 
@@ -418,47 +500,14 @@ StratigraphicModel load_stratigraphic_model(string_view filename)
 ### check_stratigraphic_model_missing_files
 
 ```cpp
-MissingFiles check_stratigraphic_model_missing_files(string_view filename)
+MissingFiles check_stratigraphic_model_missing_files(basic_string_view filename)
 ```
 
 
-### save_stratigraphic_model
+### is_stratigraphic_model_loadable
 
 ```cpp
-void save_stratigraphic_model(const StratigraphicModel & stratigraphic_model, string_view filename)
-```
-
-
- API function for saving a StratigraphicModel. The adequate saver is called depending on the given filename extension.
-
-**stratigraphic_model** [in] StratigraphicModel to save.
-
-**filename** [in] Path to the file where save the StratigraphicModel.
-
-### is_stratigraphic_model_saveable
-
-```cpp
-bool is_stratigraphic_model_saveable(const StratigraphicModel & stratigraphic_model, string_view filename)
-```
-
-
-### save_stratigraphic_section
-
-```cpp
-void save_stratigraphic_section(const StratigraphicSection & stratigraphic_section, string_view filename)
-```
-
-
- API function for saving a StratigraphicSection. The adequate saver is called depending on the given filename extension.
-
-**stratigraphic_section** [in] StratigraphicSection to save.
-
-**filename** [in] Path to the file where save the StratigraphicSection.
-
-### is_stratigraphic_section_saveable
-
-```cpp
-bool is_stratigraphic_section_saveable(const StratigraphicSection & stratigraphic_section, string_view filename)
+bool is_stratigraphic_model_loadable(basic_string_view filename)
 ```
 
 

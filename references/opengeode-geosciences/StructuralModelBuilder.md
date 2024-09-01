@@ -215,35 +215,5 @@ public void remove_stratigraphic_unit(const StratigraphicUnit3D & stratigraphic_
 ```
 
 
-### copy_geological_components
-
-```cpp
-public void copy_geological_components(int & mapping, const StructuralModel & structural_model)
-```
-
-### add_fault
-
-```cpp
-public const uuid & add_fault(int type)
-```
-
-### add_fault
-
-```cpp
-public void add_fault(uuid fault_id, int type)
-```
-
-### add_horizon
-
-```cpp
-public const uuid & add_horizon(int type)
-```
-
-### add_horizon
-
-```cpp
-public void add_horizon(uuid horizon_id, int type)
-```
-
 
 

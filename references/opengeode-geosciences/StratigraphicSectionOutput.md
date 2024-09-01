@@ -32,7 +32,7 @@ public void ~StratigraphicSectionOutput()
 ### StratigraphicSectionOutput
 
 ```cpp
-protected void StratigraphicSectionOutput(string_view filename)
+protected void StratigraphicSectionOutput(basic_string_view filename)
 ```
 
 

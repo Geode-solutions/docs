@@ -14,15 +14,6 @@ const name = words.join('-');
 # class Horizon
 
 
-```cpp
-Inherits from Component<2U>
-```
-
-
-
-# class Horizon
-
-
  Geological component describing a Horizon. This component is described by a horizon type.
 
 
@@ -122,7 +113,7 @@ public void set_type(HORIZON_TYPE type, HorizonsBuilderKey )
 ### set_horizon_name
 
 ```cpp
-public void set_horizon_name(string_view name, HorizonsBuilderKey )
+public void set_horizon_name(basic_string_view name, HorizonsBuilderKey )
 ```
 
 
@@ -134,11 +125,11 @@ public void set_horizon_name(string_view name, HorizonsBuilderKey )
 
 --
 
-| NO_TYPE |
-| CONFORMAL |
-| NON_CONFORMAL |
-| TOPOGRAPHY |
-| INTRUSION |
+| no_type |
+| conformal |
+| non_conformal |
+| topography |
+| intrusion |
 
 
 
@@ -149,6 +140,15 @@ public void set_horizon_name(string_view name, HorizonsBuilderKey )
 
 ```cpp
 Inherits from Component<3U>
+```
+
+
+
+# class Horizon
+
+
+```cpp
+Inherits from Component<2U>
 ```
 
 

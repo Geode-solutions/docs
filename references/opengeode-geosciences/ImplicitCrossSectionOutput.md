@@ -32,7 +32,7 @@ public void ~ImplicitCrossSectionOutput()
 ### ImplicitCrossSectionOutput
 
 ```cpp
-protected void ImplicitCrossSectionOutput(string_view filename)
+protected void ImplicitCrossSectionOutput(basic_string_view filename)
 ```
 
 

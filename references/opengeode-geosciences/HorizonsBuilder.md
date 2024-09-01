@@ -25,7 +25,7 @@ const name = words.join('-');
 ### load_horizons
 
 ```cpp
-public void load_horizons(string_view directory)
+public void load_horizons(basic_string_view directory)
 ```
 
 
@@ -39,14 +39,14 @@ public void set_horizon_type(const uuid & horizon_id, typename Horizon<dimension
 ### set_horizon_name
 
 ```cpp
-public void set_horizon_name(const uuid & id, string_view name)
+public void set_horizon_name(const uuid & id, basic_string_view name)
 ```
 
 
 ### HorizonsBuilder
 
 ```cpp
-protected void HorizonsBuilder<dimension>(Horizons<dimension> & horizons)
+protected void HorizonsBuilder<>(Horizons<dimension> & horizons)
 ```
 
 

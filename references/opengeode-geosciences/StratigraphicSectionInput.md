@@ -25,7 +25,7 @@ Inherits from Input<StratigraphicSection>
 ### StratigraphicSectionInput
 
 ```cpp
-protected void StratigraphicSectionInput(string_view filename)
+protected void StratigraphicSectionInput(basic_string_view filename)
 ```
 
 

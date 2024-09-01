@@ -89,11 +89,5 @@ public HorizonsStackBuilder horizons_stack_builder()
 ```
 
 
-### copy_implicit_information
-
-```cpp
-public void copy_implicit_information(int & mapping, const ImplicitCrossSection & other_model)
-```
-
 
 

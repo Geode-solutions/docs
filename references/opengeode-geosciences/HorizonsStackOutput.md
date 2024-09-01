@@ -25,7 +25,7 @@ Inherits from Output<HorizonsStack<dimension> >
 ### HorizonsStackOutput
 
 ```cpp
-protected void HorizonsStackOutput<dimension>(string_view filename)
+protected void HorizonsStackOutput<dimension>(basic_string_view filename)
 ```
 
 

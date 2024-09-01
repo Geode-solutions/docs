@@ -25,21 +25,21 @@ const name = words.join('-');
 ### load_fault_blocks
 
 ```cpp
-public void load_fault_blocks(string_view directory)
+public void load_fault_blocks(basic_string_view directory)
 ```
 
 
 ### set_fault_block_name
 
 ```cpp
-public void set_fault_block_name(const uuid & id, string_view name)
+public void set_fault_block_name(const uuid & id, basic_string_view name)
 ```
 
 
 ### FaultBlocksBuilder
 
 ```cpp
-protected void FaultBlocksBuilder<dimension>(FaultBlocks<dimension> & fault_blocks)
+protected void FaultBlocksBuilder<>(FaultBlocks<dimension> & fault_blocks)
 ```
 
 

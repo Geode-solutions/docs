@@ -45,7 +45,7 @@ public void HorizonsStack<>()
 ### HorizonsStack
 
 ```cpp
-public void HorizonsStack<>(HorizonsStack<> && horizons_stack)
+public void HorizonsStack<>(HorizonsStack<dimension> && horizons_stack)
 ```
 
 
@@ -63,17 +63,52 @@ public HorizonsStack<dimension> & operator=(HorizonsStack<dimension> && other)
 ```
 
 
+### clone
+
+```cpp
+public HorizonsStack clone()
+```
+
+
 ### native_extension_static
 
 ```cpp
-public string_view native_extension_static()
+public basic_string_view native_extension_static()
 ```
 
 
 ### native_extension
 
 ```cpp
-public string_view native_extension()
+public basic_string_view native_extension()
+```
+
+
+### top_horizon
+
+```cpp
+public uuid top_horizon()
+```
+
+
+### bottom_horizon
+
+```cpp
+public uuid bottom_horizon()
+```
+
+
+### is_eroded_by
+
+```cpp
+public bool is_eroded_by(const StratigraphicUnit<dimension> & eroded, const Horizon<dimension> & erosion)
+```
+
+
+### is_baselap_of
+
+```cpp
+public bool is_baselap_of(const Horizon<dimension> & baselap, const StratigraphicUnit<dimension> & baselap_top)
 ```
 
 

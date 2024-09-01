@@ -25,7 +25,7 @@ const name = words.join('-');
 ### load_faults
 
 ```cpp
-public void load_faults(string_view directory)
+public void load_faults(basic_string_view directory)
 ```
 
 
@@ -39,14 +39,14 @@ public void set_fault_type(const uuid & fault_id, typename Fault<dimension>::FAU
 ### set_fault_name
 
 ```cpp
-public void set_fault_name(const uuid & id, string_view name)
+public void set_fault_name(const uuid & id, basic_string_view name)
 ```
 
 
 ### FaultsBuilder
 
 ```cpp
-protected void FaultsBuilder<dimension>(Faults<dimension> & faults)
+protected void FaultsBuilder<>(Faults<dimension> & faults)
 ```
 
 
