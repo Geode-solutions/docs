@@ -14,12 +14,29 @@ const name = words.join('-');
 # struct BRepMovePointValidity
 
 
+```cpp
+Inherits from ModelMovePointValidity3D
+```
+
+
+
 ## Members
 
 ```cpp
 public BlockMovePointValidities block_validities
 
 ```
+
+
+
+## Functions
+
+### operator bool
+
+```cpp
+public bool operator bool()
+```
+
 
 
 

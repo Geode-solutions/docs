@@ -13,7 +13,21 @@ const name = words.join('-');
 
 # class TriangulatedSurfaceEpsilonModifier
 
+
+```cpp
+Inherits from TriangulatedSurfaceModifier<3U>
+```
+
+
+
 # class TriangulatedSurfaceEpsilonModifier
+
+
+```cpp
+Inherits from TriangulatedSurfaceModifier<2U>
+```
+
+
 
 # class TriangulatedSurfaceEpsilonModifier
 
@@ -29,7 +43,7 @@ Inherits from TriangulatedSurfaceModifier<dimension>
 ### TriangulatedSurfaceEpsilonModifier
 
 ```cpp
-public void TriangulatedSurfaceEpsilonModifier<dimension>(const SurfaceMesh<dimension> & surface, TriangulatedSurfaceBuilder<dimension> & builder)
+public void TriangulatedSurfaceEpsilonModifier<dimension>(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceBuilder<dimension> & builder)
 ```
 
 
@@ -43,7 +57,7 @@ public void ~TriangulatedSurfaceEpsilonModifier<dimension>()
 ### insert_point_in_triangle
 
 ```cpp
-public std::tuple<Position, SplitTriangleInfo> insert_point_in_triangle(index_t triangle_id, const Point<dimension> & point)
+public std::tuple<POSITION, SplitTriangleInfo> insert_point_in_triangle(index_t triangle_id, const Point<dimension> & point)
 ```
 
 
@@ -60,7 +74,7 @@ public std::tuple<Position, SplitTriangleInfo> insert_point_in_triangle(index_t 
 ### insert_point_on_edge
 
 ```cpp
-public std::tuple<Position, SplitPolygonEdgeInfo> insert_point_on_edge(const PolygonEdge & edge, const Point<dimension> & point)
+public std::tuple<POSITION, SplitPolygonEdgeInfo> insert_point_on_edge(const PolygonEdge & edge, const Point<dimension> & point)
 ```
 
 

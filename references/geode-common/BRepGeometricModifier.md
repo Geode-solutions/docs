@@ -32,6 +32,8 @@ BRepSplitTriangleInfo
 
 BRepSplitTetrahedronInfo
 
+BRepRemoveMultipleAdjacencyInfo
+
 BRepSplitPolygonEdgeInfo
 
 BRepCollapsePolygonEdgeInfo
@@ -40,8 +42,6 @@ BRepSwapEdgeInfo
 
 BRepSwapFacetInfo
 
-Impl
-
 
 
 ## Functions
@@ -49,7 +49,7 @@ Impl
 ### BRepGeometricModifier
 
 ```cpp
-public void BRepGeometricModifier(BRep & brep)
+public void BRepGeometricModifier(const BRep & brep, BRepBuilder & builder)
 ```
 
 
@@ -155,6 +155,20 @@ public BRepSwapEdgeInfo swap_edge(const Block3D & block, const PolyhedronFacetEd
 
 ```cpp
 public BRepSwapEdgeInfo swap_edge(const Surface3D & surface, const PolygonEdge & edge)
+```
+
+
+### remove_double_adjacency
+
+```cpp
+public BRepRemoveMultipleAdjacencyInfo remove_double_adjacency(const Block3D & block, const PolyhedronFacetEdge & edge)
+```
+
+
+### remove_triple_adjacency
+
+```cpp
+public BRepRemoveMultipleAdjacencyInfo remove_triple_adjacency(const Block3D & block, const PolyhedronVertex & vertex)
 ```
 
 

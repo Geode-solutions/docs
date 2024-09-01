@@ -14,12 +14,29 @@ const name = words.join('-');
 # struct BRepSplitTriangleValidity
 
 
+```cpp
+Inherits from ModelSplitTriangleValidity3D
+```
+
+
+
 ## Members
 
 ```cpp
 public BlockSplitFacetValidities block_validities
 
 ```
+
+
+
+## Functions
+
+### operator bool
+
+```cpp
+public bool operator bool()
+```
+
 
 
 

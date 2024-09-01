@@ -39,7 +39,7 @@ public BRepCutter & operator=(const BRepCutter & )
 ### BRepCutter
 
 ```cpp
-public void BRepCutter(BRep & brep)
+public void BRepCutter(const BRep & brep, BRepBuilder & builder)
 ```
 
 

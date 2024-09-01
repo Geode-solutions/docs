@@ -28,3 +28,14 @@ public vector invalid_lines
 
 
 
+## Functions
+
+### operator bool
+
+```cpp
+public bool operator bool()
+```
+
+
+
+

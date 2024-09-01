@@ -18,15 +18,19 @@ const name = words.join('-');
 ## Namespaces
 
 * [detail](detail/index.md)
+* [internal](internal/index.md)
 
 
 ## Records
 
 * [BRepCollapseEdgeValidity](BRepCollapseEdgeValidity.md)
 * [BRepCutter](BRepCutter.md)
-* [BRepElementsAfterOperation](BRepElementsAfterOperation.md)
+* [BRepElementsAfterCollapseEdge](BRepElementsAfterCollapseEdge.md)
+* [BRepElementsAfterMovePoint](BRepElementsAfterMovePoint.md)
+* [BRepElementsAfterSwapEdge](BRepElementsAfterSwapEdge.md)
 * [BRepGeometricModifier](BRepGeometricModifier.md)
 * [BRepGridMetric](BRepGridMetric.md)
+* [BRepModifier](BRepModifier.md)
 * [BRepMovePointValidity](BRepMovePointValidity.md)
 * [BRepSplitEdgeValidity](BRepSplitEdgeValidity.md)
 * [BRepSplitTriangleValidity](BRepSplitTriangleValidity.md)
@@ -50,6 +54,7 @@ const name = words.join('-');
 * [CommonModifierModelLibrary](CommonModifierModelLibrary.md)
 * [CommonModifierSolidLibrary](CommonModifierSolidLibrary.md)
 * [CommonModifierSurfaceLibrary](CommonModifierSurfaceLibrary.md)
+* [ComponentMeshVertexInclusionQuery](ComponentMeshVertexInclusionQuery.md)
 * [CustomGridMetric](CustomGridMetric.md)
 * [CutPatchException](CutPatchException.md)
 * [CutPathException](CutPathException.md)
@@ -61,20 +66,25 @@ const name = words.join('-');
 * [EdgedCurveTopologicalValidity](EdgedCurveTopologicalValidity.md)
 * [FacetSplit](FacetSplit.md)
 * [FileLicenseChecker](FileLicenseChecker.md)
+* [ForbbidenImpl](ForbbidenImpl.md)
 * [ForbiddenEdges](ForbiddenEdges.md)
 * [ForbiddenFacets](ForbiddenFacets.md)
 * [ForbiddenTriangles](ForbiddenTriangles.md)
 * [FrontCycle](FrontCycle.md)
 * [FrontEdge](FrontEdge.md)
+* [GeometricSolidPath](GeometricSolidPath.md)
 * [GeometricSurfacePath](GeometricSurfacePath.md)
 * [GridMetric](GridMetric.md)
 * [Invalidity](Invalidity.md)
 * [LineCollapseEdgeValidities](LineCollapseEdgeValidities.md)
 * [Mapping](Mapping.md)
+* [MeshModifierFactoryKey](MeshModifierFactoryKey.md)
+* [MeshModifierFactory](MeshModifierFactory.md)
 * [Metric](Metric.md)
 * [ModelCollapseEdgeValidity](ModelCollapseEdgeValidity.md)
 * [ModelCollapsePolygonEdgeInfo](ModelCollapsePolygonEdgeInfo.md)
-* [ModelElementsAfterOperation](ModelElementsAfterOperation.md)
+* [ModelElementsAfterCollapseEdge](ModelElementsAfterCollapseEdge.md)
+* [ModelElementsAfterSwapEdge](ModelElementsAfterSwapEdge.md)
 * [ModelMovePointValidity](ModelMovePointValidity.md)
 * [ModelSplitEdgeValidity](ModelSplitEdgeValidity.md)
 * [ModelSplitPolygonEdgeInfo](ModelSplitPolygonEdgeInfo.md)
@@ -82,21 +92,27 @@ const name = words.join('-');
 * [ModelSplitTriangleValidity](ModelSplitTriangleValidity.md)
 * [ModelSwapEdgeInfo](ModelSwapEdgeInfo.md)
 * [ModelSwapEdgeValidity](ModelSwapEdgeValidity.md)
+* [ModifiableObject](ModifiableObject.md)
+* [ModifiedElements](ModifiedElements.md)
 * [ModifiedTetrahedron](ModifiedTetrahedron.md)
 * [ModifiedTriangle](ModifiedTriangle.md)
 * [Modifier](Modifier.md)
 * [ModuleLicenseChecker](ModuleLicenseChecker.md)
 * [MultiMapping](MultiMapping.md)
 * [PatchFrontEdge](PatchFrontEdge.md)
+* [PolygonEdgeSplit](PolygonEdgeSplit.md)
 * [PolygonEdge](PolygonEdge.md)
 * [PolyhedronFacetEdge](PolyhedronFacetEdge.md)
 * [PolyhedronFacet](PolyhedronFacet.md)
+* [PreviousPaths](PreviousPaths.md)
 * [SectionCollapseEdgeValidity](SectionCollapseEdgeValidity.md)
-* [SectionElementsAfterOperation](SectionElementsAfterOperation.md)
+* [SectionElementsAfterCollapseEdge](SectionElementsAfterCollapseEdge.md)
+* [SectionElementsAfterSwapEdge](SectionElementsAfterSwapEdge.md)
 * [SectionGeometricModifier](SectionGeometricModifier.md)
 * [SectionMovePointValidity](SectionMovePointValidity.md)
 * [SectionSplitEdgeValidity](SectionSplitEdgeValidity.md)
 * [SectionSwapEdgeValidity](SectionSwapEdgeValidity.md)
+* [SolidBorderPathFinder](SolidBorderPathFinder.md)
 * [SolidCollapseEdgeValidity](SolidCollapseEdgeValidity.md)
 * [SolidCutPatchInfo](SolidCutPatchInfo.md)
 * [SolidCutPathInfo](SolidCutPathInfo.md)
@@ -117,6 +133,7 @@ const name = words.join('-');
 * [SplitInfo](SplitInfo.md)
 * [SurfaceCollapseEdgeValidities](SurfaceCollapseEdgeValidities.md)
 * [SurfaceCollapseEdgeValidity](SurfaceCollapseEdgeValidity.md)
+* [SurfaceCutPathException](SurfaceCutPathException.md)
 * [SurfaceCutPathInfo](SurfaceCutPathInfo.md)
 * [SurfaceGeometricalValidity](SurfaceGeometricalValidity.md)
 * [SurfaceMovePointValidities](SurfaceMovePointValidities.md)
@@ -151,7 +168,7 @@ const name = words.join('-');
 ### extract_mappings_from_split_info
 
 ```cpp
-absl::FixedArray<Mapping<index_t> > extract_mappings_from_split_info(absl::Span<const SplitInfo> split_info)
+FixedArray extract_mappings_from_split_info(Span split_info)
 ```
 
 
@@ -201,34 +218,6 @@ void update_mappings(std::vector<geode::Mapping<T> > & mappings, const T & no_va
 
 ```cpp
 void update_multi_mappings(std::vector<geode::MultiMapping<T> > & multi_mappings, const T & no_value)
-```
-
-
-### determine_cuts
-
-```cpp
-std::vector<GeometricSurfacePath2D> determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, absl::Span<const geode::SurfacePath> path_splits)
-```
-
-
-### determine_cuts
-
-```cpp
-std::vector<GeometricSurfacePath3D> determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, absl::Span<const geode::SurfacePath> path_splits)
-```
-
-
-### cut_along_path
-
-```cpp
-SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
-```
-
-
-### cut_along_path
-
-```cpp
-SurfaceCutPathInfo<2> cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
 ```
 
 
@@ -307,6 +296,13 @@ bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const P
 ### is_collapse_edge_valid
 
 ```cpp
+bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, local_index_t apex)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
 bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
 ```
 
@@ -320,6 +316,13 @@ bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t
 **point** [in] Coordinates of the collapse point.
 
 **return** true if collapse will keep mesh valid.
+
+### is_collapse_edge_valid
+
+```cpp
+bool is_collapse_edge_valid(const TriangulatedSurface<dimension> & mesh, index_t edge_id, local_index_t apex)
+```
+
 
 ### collapse_edge_validity
 
@@ -341,6 +344,13 @@ SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const Triangulated
 ### collapse_edge_validity
 
 ```cpp
+SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, local_index_t apex)
+```
+
+
+### collapse_edge_validity
+
+```cpp
 SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
 ```
 
@@ -354,6 +364,13 @@ SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const Triangulated
 **point** [in] Coordinates of the collapse point.
 
 **return** all the information about validity issues this collapse would generate.
+
+### collapse_edge_validity
+
+```cpp
+SurfaceCollapseEdgeValidity<dimension> collapse_edge_validity(const TriangulatedSurface<dimension> & mesh, index_t edge_id, local_index_t apex)
+```
+
 
 ### is_swap_edge_valid
 
@@ -449,6 +466,13 @@ TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurfac
 ### triangles_after_collapse_edge
 
 ```cpp
+TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge, local_index_t apex)
+```
+
+
+### triangles_after_collapse_edge
+
+```cpp
 TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurface<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
 ```
 
@@ -460,6 +484,13 @@ TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurfac
 **edge_id** [in] Unique index of the edge to collapse.
 
 **point** [in] Coordinates of the collapse point.
+
+### triangles_after_collapse_edge
+
+```cpp
+TrianglesAfter<dimension> triangles_after_collapse_edge(const TriangulatedSurface<dimension> & mesh, index_t edge_id, local_index_t apex)
+```
+
 
 ### triangles_after_swap_edge
 
@@ -488,6 +519,55 @@ TrianglesAfter<dimension> triangles_after_move_point(const TriangulatedSurface<d
 **vertex** [in] Index of the vertex to relocate.
 
 **point** [in] Coordinates of the destination point.
+
+### is_move_point_valid
+
+```cpp
+bool is_move_point_valid(const EdgedCurve<dimension> & mesh, index_t vertex, const Point<dimension> & point)
+```
+
+
+### move_point_validity
+
+```cpp
+EdgedCurveMovePointValidity move_point_validity(const EdgedCurve<dimension> & mesh, index_t vertex, const Point<dimension> & point)
+```
+
+
+### is_split_edge_valid
+
+```cpp
+bool is_split_edge_valid(const EdgedCurve<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
+
+### split_edge_validity
+
+```cpp
+EdgedCurveSplitEdgeValidity split_edge_validity(const EdgedCurve<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
+bool is_collapse_edge_valid(const EdgedCurve<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
+bool is_collapse_edge_valid(const EdgedCurve<dimension> & mesh, index_t edge_id, local_index_t apex)
+```
+
+
+### collapse_edge_validity
+
+```cpp
+EdgedCurveCollapseEdgeValidity collapse_edge_validity(const EdgedCurve<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
+```
+
 
 ### is_split_tetrahedron_valid
 
@@ -629,6 +709,13 @@ bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFac
 ### is_collapse_edge_valid
 
 ```cpp
+bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, local_index_t apex)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
 bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
 ```
 
@@ -643,6 +730,13 @@ bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, co
 
 **return** true if collapse will keep mesh valid.
 
+### is_collapse_edge_valid
+
+```cpp
+bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, local_index_t apex)
+```
+
+
 ### collapse_edge_validity
 
 ```cpp
@@ -653,7 +747,21 @@ SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh
 ### collapse_edge_validity
 
 ```cpp
+SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, local_index_t apex)
+```
+
+
+### collapse_edge_validity
+
+```cpp
 SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
+```
+
+
+### collapse_edge_validity
+
+```cpp
+SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh, index_t edge_id, local_index_t apex)
 ```
 
 
@@ -851,6 +959,13 @@ TetrahedraAfter tetrahedra_after_collapse_edge(const TetrahedralSolid3D & mesh, 
 ### tetrahedra_after_collapse_edge
 
 ```cpp
+TetrahedraAfter tetrahedra_after_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, local_index_t apex)
+```
+
+
+### tetrahedra_after_collapse_edge
+
+```cpp
 TetrahedraAfter tetrahedra_after_collapse_edge(const TetrahedralSolid3D & mesh, index_t edge_id, const Point3D & point)
 ```
 
@@ -862,6 +977,13 @@ TetrahedraAfter tetrahedra_after_collapse_edge(const TetrahedralSolid3D & mesh, 
 **edge_id** [in] Unique index of the edge on which simulate collapse.
 
 **point** [in] Coordinates of the collapse point.
+
+### tetrahedra_after_collapse_edge
+
+```cpp
+TetrahedraAfter tetrahedra_after_collapse_edge(const TetrahedralSolid3D & mesh, index_t edge_id, local_index_t apex)
+```
+
 
 ### tetrahedra_after_swap_facet
 
@@ -908,52 +1030,17 @@ TetrahedraAfter tetrahedra_after_move_point(const TetrahedralSolid3D & mesh, ind
 
 **point** [in] Coordinates of the destination point.
 
-### is_move_point_valid
-
-```cpp
-bool is_move_point_valid(const EdgedCurve<dimension> & mesh, index_t vertex, const Point<dimension> & point)
-```
-
-
-### move_point_validity
-
-```cpp
-EdgedCurveMovePointValidity move_point_validity(const EdgedCurve<dimension> & mesh, index_t vertex, const Point<dimension> & point)
-```
-
-
-### is_split_edge_valid
-
-```cpp
-bool is_split_edge_valid(const EdgedCurve<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
-```
-
-
-### split_edge_validity
-
-```cpp
-EdgedCurveSplitEdgeValidity split_edge_validity(const EdgedCurve<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
-```
-
-
-### is_collapse_edge_valid
-
-```cpp
-bool is_collapse_edge_valid(const EdgedCurve<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
-```
-
-
-### collapse_edge_validity
-
-```cpp
-EdgedCurveCollapseEdgeValidity collapse_edge_validity(const EdgedCurve<dimension> & mesh, index_t edge_id, const Point<dimension> & point)
-```
-
-
 ### is_collapse_edge_valid
 
 ```cpp
 bool is_collapse_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
+```
+
+
+### is_collapse_edge_valid
+
+```cpp
+bool is_collapse_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, local_index_t apex)
 ```
 
 
@@ -981,7 +1068,21 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D
 ### collapse_edge_validity
 
 ```cpp
+BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, local_index_t apex)
+```
+
+
+### collapse_edge_validity
+
+```cpp
 BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
+```
+
+
+### collapse_edge_validity
+
+```cpp
+BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, local_index_t apex)
 ```
 
 
@@ -1125,76 +1226,56 @@ BRepMovePointValidity move_point_validity(const BRep & brep, index_t unique_vert
 ### elements_after_collapse_edge
 
 ```cpp
-BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
+BRepElementsAfterCollapseEdge elements_after_collapse_edge(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
 ```
 
 
 ### elements_after_collapse_edge
 
 ```cpp
-BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
+BRepElementsAfterCollapseEdge elements_after_collapse_edge(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge, const Point3D & point)
 ```
 
 
 ### elements_after_collapse_edge
 
 ```cpp
-BRepElementsAfterOperation elements_after_collapse_edge(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
+BRepElementsAfterCollapseEdge elements_after_collapse_edge(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
 
-### update_vertex_mappings
+### elements_after_swap_edge
 
 ```cpp
-void update_vertex_mappings(int & vertex_multi_mappings, const geode::VertexMultiMapping & collapse_mapping)
-```
-
-### add_mappings_in_multi_mappings
-
-```cpp
-void add_mappings_in_multi_mappings(int & multi_mappings, absl::Span<const Mapping<T> > new_mappings)
+BRepElementsAfterSwapEdge elements_after_swap_edge(const BRep & brep, const Surface3D & surface, const PolygonEdge & edge)
 ```
 
 
-### process_mapping_element
+### elements_after_swap_edge
 
 ```cpp
-void process_mapping_element(const geode::Mapping<T> & element, int & to_remove, int & new_to_old, const T & )
+BRepElementsAfterSwapEdge elements_after_swap_edge(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
 
-### process_mapping_element
+### elements_after_move_point
 
 ```cpp
-void process_mapping_element(geode::MultiMapping<T> & element, int & to_remove, int & new_to_olds, const T & no_value)
+BRepElementsAfterMovePoint elements_after_move_point(const BRep & brep, index_t unique_vertex, const Point3D & point)
 ```
 
 
-### update_mappings
+### are_component_mesh_vertices_included
 
 ```cpp
-void update_mappings(int & mappings, NewToOldMap & new_to_old, const T & no_value)
-```
-
-
-### update_mappings
-
-```cpp
-void update_mappings(int & mappings, const T & no_value)
-```
-
-
-### update_multi_mappings
-
-```cpp
-void update_multi_mappings(int & multi_mappings, const T & no_value)
+bool are_component_mesh_vertices_included(const ComponentMeshVertexInclusionQuery & query)
 ```
 
 
 ### swap_along_patch
 
 ```cpp
-SolidSwapPatchInfo swap_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const index_t> patch_vertices, const Triangle3D & macro_triangle)
+SolidSwapPatchInfo swap_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, Span patch_vertices, const Triangle3D & macro_triangle)
 ```
 
 
@@ -1202,49 +1283,6 @@ SolidSwapPatchInfo swap_along_patch(const TetrahedralSolid3D & solid, Tetrahedra
 
 ```cpp
 SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
-```
-
-
-### cut_along_patch
-
-```cpp
-SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const PatchFrontEdge> boundary_edges, const Triangle3D & triangle)
-```
-
-
- Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
-
-**solid** [in] TetrahedralSolid to cut
-
-**builder** [in] Builder of the Solid
-
-**boundary_edges** [in] List of oriented Patch boundary as solid edges
-
-**triangle** [in] The triangle corresponding to the patch to insert in solid
-
-**warning** Cut tetrahedra are set as inactive but not deleted.
-
-### cut_along_path
-
-```cpp
-SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end, absl::Span<const SolidPath> path_splits)
-```
-
-
- Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
-
-**begin** [in] Index of the cut starting vertex
-
-**end** [in] Index of the cut ending vertex
-
-**path_splits** [in] Ordered list of Path splits
-
-**warning** Cut tetrahedra are set as inactive but not deleted.
-
-### cut_along_path
-
-```cpp
-SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
 ```
 
 
@@ -1268,11 +1306,13 @@ bool is_collapse_edge_valid(const Section & section, const Line2D & line, index_
 SectionCollapseEdgeValidity collapse_edge_validity(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
 ```
 
+
 ### collapse_edge_validity
 
 ```cpp
 SectionCollapseEdgeValidity collapse_edge_validity(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
 ```
+
 
 ### is_split_edge_valid
 
@@ -1329,14 +1369,42 @@ SectionMovePointValidity move_point_validity(const Section & section, index_t un
 ### elements_after_collapse_edge
 
 ```cpp
-SectionElementsAfterOperation elements_after_collapse_edge(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
+SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & section, const Line2D & line, index_t edge, const Point2D & point)
 ```
 
 
 ### elements_after_collapse_edge
 
 ```cpp
-SectionElementsAfterOperation elements_after_collapse_edge(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
+SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
+```
+
+
+### determine_cuts
+
+```cpp
+vector determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, Span path_splits)
+```
+
+
+### determine_cuts
+
+```cpp
+vector determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, Span path_splits)
+```
+
+
+### cut_along_path
+
+```cpp
+SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
+```
+
+
+### cut_along_path
+
+```cpp
+SurfaceCutPathInfo cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
 ```
 
 
@@ -1346,11 +1414,68 @@ SectionElementsAfterOperation elements_after_collapse_edge(const Section & secti
 double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
 ```
 
+### cut_along_path
+
+```cpp
+SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, Span path_splits)
+```
+
+
+ Perform a TetrahedralSolid3D rectilinear cut between two vertices given where to split the tetrahedra.
+
+**begin** [in] Index of the cut starting vertex
+
+**end** [in] Index of the cut ending vertex
+
+**path_splits** [in] Ordered list of Path splits
+
+**warning** Cut tetrahedra are set as inactive but not deleted.
+
+### cut_along_path
+
+```cpp
+SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
+```
+
+
+### cut_along_patch
+
+```cpp
+SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, Span boundary_edges, const Triangle3D & triangle)
+```
+
+
+ Perform a TetrahedralSolid3D planar cut along a triangle given its boundary edges. These boundary edges are oriented solid edges.
+
+**solid** [in] TetrahedralSolid to cut
+
+**builder** [in] Builder of the Solid
+
+**boundary_edges** [in] List of oriented Patch boundary as solid edges
+
+**triangle** [in] The triangle corresponding to the patch to insert in solid
+
+**warning** Cut tetrahedra are set as inactive but not deleted.
+
+### determine_cuts
+
+```cpp
+vector determine_cuts(const TetrahedralSolid3D & solid, Span path_splits)
+```
+
+
+### determine_cuts
+
+```cpp
+vector determine_cuts(const TetrahedralSolid3D & solid, const Plane & plane, Span path_splits)
+```
+
+
 
 
 ## Enums
 
-| enum class SplitSide |
+| enum class SPLIT_SIDE |
 
 --
 
@@ -1359,7 +1484,7 @@ double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tet
 
 
 
-| enum class Position |
+| enum class POSITION |
 
 --
 

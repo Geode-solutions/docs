@@ -14,12 +14,29 @@ const name = words.join('-');
 # struct BRepSplitEdgeValidity
 
 
+```cpp
+Inherits from ModelSplitEdgeValidity3D
+```
+
+
+
 ## Members
 
 ```cpp
 public BlockSplitEdgeValidities block_validities
 
 ```
+
+
+
+## Functions
+
+### operator bool
+
+```cpp
+public bool operator bool()
+```
+
 
 
 

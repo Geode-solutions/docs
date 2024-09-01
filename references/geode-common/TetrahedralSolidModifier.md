@@ -30,6 +30,8 @@ SolidSplitEdgeInfo
 
 SolidSplitInfo
 
+SolidSplitFacetInfo
+
 SolidCollapseEdgeInfo
 
 SolidSwapFacetInfo
@@ -38,11 +40,25 @@ SolidSwapEdgeInfo
 
 SolidRemoveMultipleAdjacencyInfo
 
-Impl
+CleanMappings
 
 
 
 ## Functions
+
+### TetrahedralSolidModifier
+
+```cpp
+public void TetrahedralSolidModifier(const TetrahedralSolidModifier & )
+```
+
+
+### operator=
+
+```cpp
+public TetrahedralSolidModifier & operator=(const TetrahedralSolidModifier & )
+```
+
 
 ### TetrahedralSolidModifier
 
@@ -55,6 +71,13 @@ public void TetrahedralSolidModifier(const TetrahedralSolid3D & solid, Tetrahedr
 
 ```cpp
 public void TetrahedralSolidModifier(TetrahedralSolidModifier && other)
+```
+
+
+### operator=
+
+```cpp
+public TetrahedralSolidModifier & operator=(TetrahedralSolidModifier && other)
 ```
 
 
@@ -99,7 +122,7 @@ public SolidSplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & 
 ### split_facet
 
 ```cpp
-public SolidSplitInfo split_facet(index_t facet_id, const Point3D & point)
+public SolidSplitFacetInfo split_facet(index_t facet_id, const Point3D & point)
 ```
 
 
@@ -116,7 +139,7 @@ public SolidSplitInfo split_facet(index_t facet_id, const Point3D & point)
 ### split_facet
 
 ```cpp
-public SolidSplitInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
+public SolidSplitFacetInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 
@@ -250,6 +273,13 @@ public SolidRemoveMultipleAdjacencyInfo remove_triple_adjacency(const Polyhedron
 
 **warning** Old tetrahedra are set as inactive but not deleted.
 
+### move_point
+
+```cpp
+public void move_point(index_t vertex, const Point3D & point)
+```
+
+
 ### clean_tetrahedra
 
 ```cpp
@@ -303,17 +333,32 @@ public vector clean_facets()
 ### clean
 
 ```cpp
-public std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_t>, std::vector<index_t> > clean()
+public CleanMappings clean()
 ```
+
 
  Clean up the mesh removing inactive tetrahedra, isolated vertices, edges and facets.
 
 **return** old2new mappings for tetrahedra, vertices, edges and facets.
 
+### TetrahedralSolidModifier
+
+```cpp
+public void TetrahedralSolidModifier(const VertexSet & solid, VertexSetBuilder & builder, MeshModifierFactoryKey key)
+```
+
+
 ### solid
 
 ```cpp
 protected const TetrahedralSolid3D & solid()
+```
+
+
+### builder
+
+```cpp
+protected TetrahedralSolidBuilder3D & builder()
 ```
 
 

@@ -33,21 +33,21 @@ public ForbiddenEdges & operator=(const ForbiddenEdges & )
 ### ForbiddenEdges
 
 ```cpp
-public void ForbiddenEdges(ForbiddenEdges && )
-```
-
-
-### operator=
-
-```cpp
-public ForbiddenEdges & operator=(ForbiddenEdges && )
+public void ForbiddenEdges()
 ```
 
 
 ### ForbiddenEdges
 
 ```cpp
-public void ForbiddenEdges()
+public void ForbiddenEdges(ForbiddenEdges && other)
+```
+
+
+### operator=
+
+```cpp
+public ForbiddenEdges & operator=(ForbiddenEdges && other)
 ```
 
 
@@ -61,7 +61,7 @@ public void ~ForbiddenEdges()
 ### is_forbidden
 
 ```cpp
-public bool is_forbidden(const std::array<index_t, 2> & edge_vertices)
+public bool is_forbidden(const std::array<index_t, 2> & edge_vertices, const VerticesModifier & vertices_modifier)
 ```
 
 
@@ -69,6 +69,27 @@ public bool is_forbidden(const std::array<index_t, 2> & edge_vertices)
 
 ```cpp
 public void add(const std::array<index_t, 2> & edge_vertices)
+```
+
+
+### add
+
+```cpp
+public void add(const ForbiddenEdges & forbiddens)
+```
+
+
+### empty
+
+```cpp
+public bool empty()
+```
+
+
+### filter
+
+```cpp
+public void filter(index_t moved_old_vertex_id, const VerticesModifier & vertices_modifier)
 ```
 
 

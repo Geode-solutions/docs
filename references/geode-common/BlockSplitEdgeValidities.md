@@ -17,9 +17,20 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public int mesh_invalidities
+public flat_hash_map mesh_invalidities
 
 ```
+
+
+
+## Functions
+
+### operator bool
+
+```cpp
+public bool operator bool()
+```
+
 
 
 

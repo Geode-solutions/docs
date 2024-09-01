@@ -23,3 +23,14 @@ public SurfaceMovePointValidities<dimension> surface_validities
 
 
 
+## Functions
+
+### operator bool
+
+```cpp
+public bool operator bool()
+```
+
+
+
+

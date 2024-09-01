@@ -13,7 +13,21 @@ const name = words.join('-');
 
 # class TriangulatedSurfaceModifier
 
+
+```cpp
+Inherits from VerticesModifier
+```
+
+
+
 # class TriangulatedSurfaceModifier
+
+
+```cpp
+Inherits from VerticesModifier
+```
+
+
 
 # class TriangulatedSurfaceModifier
 
@@ -40,6 +54,8 @@ CollapseEdgeInfo
 
 SwapEdgeInfo
 
+CleanMappings
+
 
 
 ## Functions
@@ -47,7 +63,7 @@ SwapEdgeInfo
 ### TriangulatedSurfaceModifier
 
 ```cpp
-public void TriangulatedSurfaceModifier<dimension>(const SurfaceMesh<dimension> & surface, TriangulatedSurfaceBuilder<dimension> & builder)
+public void TriangulatedSurfaceModifier<dimension>(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceBuilder<dimension> & builder)
 ```
 
 
@@ -55,6 +71,13 @@ public void TriangulatedSurfaceModifier<dimension>(const SurfaceMesh<dimension> 
 
 ```cpp
 public void TriangulatedSurfaceModifier<dimension>(TriangulatedSurfaceModifier<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public TriangulatedSurfaceModifier<dimension> & operator=(TriangulatedSurfaceModifier<dimension> && other)
 ```
 
 
@@ -153,10 +176,17 @@ public SwapEdgeInfo swap_edge(const PolygonEdge & edge)
 
 **edge** [in] The edge to swap.
 
+### move_point
+
+```cpp
+public void move_point(index_t vertex, const Point<dimension> & point)
+```
+
+
 ### clean_triangles
 
 ```cpp
-public std::vector<index_t> clean_triangles()
+public vector clean_triangles()
 ```
 
 
@@ -167,7 +197,7 @@ public std::vector<index_t> clean_triangles()
 ### clean_vertices
 
 ```cpp
-public std::vector<index_t> clean_vertices()
+public vector clean_vertices()
 ```
 
 
@@ -180,7 +210,7 @@ public std::vector<index_t> clean_vertices()
 ### clean_edges
 
 ```cpp
-public std::vector<index_t> clean_edges()
+public vector clean_edges()
 ```
 
 
@@ -193,17 +223,32 @@ public std::vector<index_t> clean_edges()
 ### clean
 
 ```cpp
-public std::tuple<std::vector<index_t>, std::vector<index_t>, std::vector<index_t> > clean()
+public CleanMappings clean()
 ```
+
 
  Clean up the mesh removing inactive triangles, isolated vertices and edges.
 
 **return** old2new mappings for triangles, vertices and edges.
 
+### TriangulatedSurfaceModifier
+
+```cpp
+public void TriangulatedSurfaceModifier<dimension>(const VertexSet & surface, VertexSetBuilder & builder, MeshModifierFactoryKey key)
+```
+
+
 ### surface
 
 ```cpp
 protected const SurfaceMesh<dimension> & surface()
+```
+
+
+### builder
+
+```cpp
+protected TriangulatedSurfaceBuilder<dimension> & builder()
 ```
 
 

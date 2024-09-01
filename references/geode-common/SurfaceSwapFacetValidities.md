@@ -17,9 +17,20 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public int invalid_surfaces
+public vector invalid_surfaces
 
 ```
+
+
+
+## Functions
+
+### operator bool
+
+```cpp
+public bool operator bool()
+```
+
 
 
 

@@ -28,12 +28,12 @@ public bool blocked
 ```
 
 ```cpp
-public int edge_splits
+public vector edge_splits
 
 ```
 
 ```cpp
-public int immuable_vertices
+public vector immuable_vertices
 
 ```
 

@@ -33,21 +33,21 @@ public ForbiddenTriangles & operator=(const ForbiddenTriangles & )
 ### ForbiddenTriangles
 
 ```cpp
-public void ForbiddenTriangles(ForbiddenTriangles && )
-```
-
-
-### operator=
-
-```cpp
-public ForbiddenTriangles & operator=(ForbiddenTriangles && )
+public void ForbiddenTriangles()
 ```
 
 
 ### ForbiddenTriangles
 
 ```cpp
-public void ForbiddenTriangles()
+public void ForbiddenTriangles(ForbiddenTriangles && other)
+```
+
+
+### operator=
+
+```cpp
+public ForbiddenTriangles & operator=(ForbiddenTriangles && other)
 ```
 
 
@@ -61,7 +61,7 @@ public void ~ForbiddenTriangles()
 ### is_forbidden
 
 ```cpp
-public bool is_forbidden(const std::array<index_t, 3> & triangle_vertices)
+public bool is_forbidden(const std::array<index_t, 3> & triangle_vertices, const VerticesModifier & vertices_modifier)
 ```
 
 
@@ -69,6 +69,27 @@ public bool is_forbidden(const std::array<index_t, 3> & triangle_vertices)
 
 ```cpp
 public void add(const std::array<index_t, 3> & triangle_vertices)
+```
+
+
+### add
+
+```cpp
+public void add(const ForbiddenTriangles & forbiddens)
+```
+
+
+### empty
+
+```cpp
+public bool empty()
+```
+
+
+### filter
+
+```cpp
+public void filter(index_t moved_old_vertex_id, const VerticesModifier & vertices_modifier)
 ```
 
 

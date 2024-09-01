@@ -14,12 +14,29 @@ const name = words.join('-');
 # struct BRepSwapEdgeValidity
 
 
+```cpp
+Inherits from ModelSwapEdgeValidity3D
+```
+
+
+
 ## Members
 
 ```cpp
 public BlockSwapEdgeValidities block_validities
 
 ```
+
+
+
+## Functions
+
+### operator bool
+
+```cpp
+public bool operator bool()
+```
+
 
 
 

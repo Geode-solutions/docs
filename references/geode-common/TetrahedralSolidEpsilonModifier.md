@@ -93,6 +93,7 @@ public SolidSplitEdgeInfo insert_point_on_edge(const PolyhedronFacetEdge & edge,
 public SolidSplitEdgeInfo insert_point_on_edge(index_t edge_id, const Point3D & point)
 ```
 
+
  Insert a point on an edge either by spliting the edge into two new ones, or by snapping the point on a vertex.
 
 **edge_id** [in] Unique index of the edge to split.
@@ -102,13 +103,6 @@ public SolidSplitEdgeInfo insert_point_on_edge(index_t edge_id, const Point3D & 
 **warning** Potential split tetrahedra are set as inactive but not deleted.
 
 **return** new vertex index and mappings between old and new mesh.
-
-### insert_point_on_edge
-
-```cpp
-public SolidSplitEdgeInfo insert_point_on_edge(const index_t edge_id, const Point3D & point)
-```
-
 
 
 

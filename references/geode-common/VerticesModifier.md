@@ -30,10 +30,24 @@ public VerticesModifier & operator=(const VerticesModifier & )
 ```
 
 
+### ~VerticesModifier
+
+```cpp
+public void ~VerticesModifier()
+```
+
+
 ### updated_vertex
 
 ```cpp
 public index_t updated_vertex(index_t vertex_id)
+```
+
+
+### set_updated_vertex
+
+```cpp
+public void set_updated_vertex(const VertexMultiMapping & mapping)
 ```
 
 
@@ -55,20 +69,6 @@ protected void VerticesModifier(VerticesModifier && other)
 
 ```cpp
 protected VerticesModifier & operator=(VerticesModifier && other)
-```
-
-
-### ~VerticesModifier
-
-```cpp
-protected void ~VerticesModifier()
-```
-
-
-### set_updated_vertex
-
-```cpp
-protected void set_updated_vertex(const VertexMultiMapping & mapping)
 ```
 
 

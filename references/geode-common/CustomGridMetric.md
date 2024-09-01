@@ -13,7 +13,21 @@ const name = words.join('-');
 
 # class CustomGridMetric
 
+
+```cpp
+Inherits from Metric<3U>
+```
+
+
+
 # class CustomGridMetric
+
+
+```cpp
+Inherits from Metric<2U>
+```
+
+
 
 # class CustomGridMetric
 
@@ -29,7 +43,7 @@ Inherits from Metric<dimension>
 ### CustomGridMetric
 
 ```cpp
-public void CustomGridMetric<dimension>(const Grid<dimension> & grid, string_view attribute_name)
+public void CustomGridMetric<dimension>(const Grid<dimension> & grid, basic_string_view attribute_name)
 ```
 
 

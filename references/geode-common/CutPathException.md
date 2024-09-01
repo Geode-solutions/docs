@@ -23,17 +23,17 @@ Inherits from OpenGeodeException
 ## Members
 
 ```cpp
-public int invalid_facet_splits
+public vector invalid_facet_splits
 
 ```
 
 ```cpp
-public int invalid_edge_splits
+public vector invalid_edge_splits
 
 ```
 
 ```cpp
-public int uncut_subpaths
+public vector uncut_subpaths
 
 ```
 

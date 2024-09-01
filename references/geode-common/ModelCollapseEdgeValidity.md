@@ -17,6 +17,11 @@ const name = words.join('-');
 ## Members
 
 ```cpp
+public bool model_collapse_is_valid
+
+```
+
+```cpp
 public LineCollapseEdgeValidities line_validities
 
 ```

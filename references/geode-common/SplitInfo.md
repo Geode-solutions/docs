@@ -22,7 +22,7 @@ public Mapping mapping
 ```
 
 ```cpp
-public SplitSide side
+public SPLIT_SIDE side
 
 ```
 
@@ -40,7 +40,7 @@ public void SplitInfo()
 ### SplitInfo
 
 ```cpp
-public void SplitInfo(index_t new_id_in, index_t old_id_in, SplitSide side_in)
+public void SplitInfo(index_t new_id_in, index_t old_id_in, SPLIT_SIDE side_in)
 ```
 
 

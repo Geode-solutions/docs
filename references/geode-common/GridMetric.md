@@ -13,7 +13,21 @@ const name = words.join('-');
 
 # class GridMetric
 
+
+```cpp
+Inherits from Metric<2U>
+```
+
+
+
 # class GridMetric
+
+
+```cpp
+Inherits from Metric<3U>
+```
+
+
 
 # class GridMetric
 

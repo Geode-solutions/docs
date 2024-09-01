@@ -27,7 +27,7 @@ public bool new_vertex_is_manifold
 ```
 
 ```cpp
-public int vertices_creating_non_manifold_edges
+public vector vertices_creating_non_manifold_edges
 
 ```
 

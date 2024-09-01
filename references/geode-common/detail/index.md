@@ -15,75 +15,12 @@ const name = words.join('-');
 
 
 
-## Records
-
-* [GridMetricImpl](GridMetricImpl.md)
-* [ModelGeometricModifier](ModelGeometricModifier.md)
-* [SolidSwapAlongPatch](SolidSwapAlongPatch.md)
-* [SolidSwapAlongPath](SolidSwapAlongPath.md)
-
-
 ## Functions
-
-### unordered_one_ring_vertices
-
-```cpp
-RingVertices unordered_one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
-```
-
-
-### one_ring_vertices
-
-```cpp
-std::tuple<absl::FixedArray<index_t>, bool> one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
-```
-
-
-### rotate_one_ring_from_apex
-
-```cpp
-void rotate_one_ring_from_apex(absl::FixedArray<index_t> & one_ring_vertices, index_t apex)
-```
-
-### intersect_one_ring_vertices
-
-```cpp
-vector intersect_one_ring_vertices(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedraAroundVertex & pav0, const geode::PolyhedraAroundVertex & pav1)
-```
-
 
 ### snapping_detection
 
 ```cpp
 optional snapping_detection(const SurfaceMesh<dimension> & surface, index_t polygon, const Point<dimension> & point)
-```
-
-
-### triangles_after_collapse_edge
-
-```cpp
-int triangles_after_collapse_edge(const BRep & brep, const struct BRepComponentMeshEdges::SurfaceEdges & surface_edges, const Point3D & point)
-```
-
-
-### tetrahedra_after_collapse_edge
-
-```cpp
-int tetrahedra_after_collapse_edge(const BRep & brep, const struct BRepComponentMeshEdges::BlockEdges & block_edges, const Point3D & point)
-```
-
-
-### snapping_detection
-
-```cpp
-absl::optional<local_index_t> snapping_detection(const SolidMesh<dimension> & solid, index_t polyhedron, const Point<dimension> & point)
-```
-
-
-### snapping_detection
-
-```cpp
-absl::optional<local_index_t> snapping_detection(const SolidMesh<dimension> & solid, const PolyhedronFacet & facet, const Point<dimension> & point)
 ```
 
 
@@ -115,94 +52,66 @@ bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Tria
 ```
 
 
-### is_move_point_valid
+### snapping_detection
 
 ```cpp
-bool is_move_point_valid(const Model & model, index_t unique_vertex, const Point<Model::dim> & point)
+optional snapping_detection(const EdgedCurve<dimension> & curve, index_t edge, const Point<dimension> & point)
 ```
 
 
-### sort_cmvs
+### is_swap_edge_valid
 
 ```cpp
-int sort_cmvs(absl::Span<const ComponentMeshVertex> cmvs, const geode::ComponentType & type)
+bool is_swap_edge_valid(const BRep & brep, const BRepComponentMeshEdges & edges, index_t unique_apex)
 ```
 
 
-### move_point_surface_validity
+### triangles_after_collapse_edge
 
 ```cpp
-SurfaceMovePointValidities<Model::dim> move_point_surface_validity(const Model & model, index_t unique_vertex, const Point<Model::dim> & point)
+flat_hash_map triangles_after_collapse_edge(const BRep & brep, const struct BRepComponentMeshEdges::SurfaceEdges & surface_edges, const Point3D & point)
 ```
 
 
-### invalid_lines
+### tetrahedra_after_collapse_edge
 
 ```cpp
-int invalid_lines(const Model & model, const ModelComponentMeshEdges & edges)
+flat_hash_map tetrahedra_after_collapse_edge(const BRep & brep, const struct BRepComponentMeshEdges::BlockEdges & block_edges, const Point3D & point)
 ```
 
 
-### invalid_surfaces
+### triangles_after_swap_edge
 
 ```cpp
-int invalid_surfaces(const Model & model, const ModelComponentMeshEdges & edges)
+flat_hash_map triangles_after_swap_edge(const BRep & brep, const struct BRepComponentMeshEdges::SurfaceEdges & surface_edges)
 ```
 
 
-### invalid_collapse_edges
+### tetrahedra_after_swap_edge
 
 ```cpp
-typename SurfaceCollapseEdgeValidities<Model::dim>::MeshInvalidities invalid_collapse_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+flat_hash_map tetrahedra_after_swap_edge(const BRep & brep, const struct BRepComponentMeshEdges::BlockEdges & block_edges, index_t unique_apex)
 ```
 
 
-### is_collapse_edges_valid
+### snapping_detection
 
 ```cpp
-bool is_collapse_edges_valid(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+optional snapping_detection(const SolidMesh<dimension> & solid, index_t polyhedron, const Point<dimension> & point)
 ```
 
 
-### invalid_split_edges
+### snapping_detection
 
 ```cpp
-typename SurfaceSplitEdgeValidities<Model::dim>::MeshInvalidities invalid_split_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+optional snapping_detection(const SolidMesh<dimension> & solid, const PolyhedronFacet & facet, const Point<dimension> & point)
 ```
 
 
-### invalid_split_triangles
+### snapping_detection
 
 ```cpp
-typename SurfaceSplitTriangleValidities<Model::dim>::MeshInvalidities invalid_split_triangles(const Model & model, const int & surface_polygons, const Point<Model::dim> & point)
-```
-
-
-### invalid_swap_edges
-
-```cpp
-flat_hash_map invalid_swap_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges)
-```
-
-
-### collapse_edge_validity
-
-```cpp
-typename ModelCollapseEdgeValidity<Model::dim>::SurfaceCollapseEdgeValidities collapse_edge_validity(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
-```
-
-
-### model_triangles_after_collapse_edge
-
-```cpp
-typename ModelElementsAfterOperation<Model::dim>::SurfaceTriangles model_triangles_after_collapse_edge(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
-```
-
-
-### rotate_one_ring_from_apex
-
-```cpp
-void rotate_one_ring_from_apex(int & one_ring_vertices, index_t apex)
+optional snapping_detection(const SolidMesh<dimension> & solid, const PolyhedronFacetEdge & edge, const Point<dimension> & point)
 ```
 
 
@@ -210,13 +119,6 @@ void rotate_one_ring_from_apex(int & one_ring_vertices, index_t apex)
 
 ```cpp
 flat_hash_map triangles_after_collapse_edge(const Section & section, const struct SectionComponentMeshEdges::SurfaceEdges & surface_edges, const Point2D & point)
-```
-
-
-### snapping_detection
-
-```cpp
-optional snapping_detection(const EdgedCurve<dimension> & curve, index_t edge, const Point<dimension> & point)
 ```
 
 

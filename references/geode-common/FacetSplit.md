@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public Point3D location
+public Point location
 
 ```
 
@@ -33,7 +33,7 @@ public PolyhedronFacet facet
 ### FacetSplit
 
 ```cpp
-public void FacetSplit(Point3D location_in, PolyhedronFacet facet_in)
+public void FacetSplit(Point location_in, PolyhedronFacet facet_in)
 ```
 
 

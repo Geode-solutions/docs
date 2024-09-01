@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public Position position
+public POSITION position
 
 ```
 
@@ -38,7 +38,7 @@ public index_t vertex_id
 ### SolidPatch
 
 ```cpp
-public void SolidPatch(const TetrahedralSolid3D & solid, index_t edge_in, Position position_in)
+public void SolidPatch(const TetrahedralSolid3D & solid, index_t edge_in, POSITION position_in)
 ```
 
 
@@ -87,7 +87,7 @@ public bool are_same_paths(const SolidPatch & other)
 ### get_vertex_position
 
 ```cpp
-public Position get_vertex_position(geode::index_t vertex)
+public POSITION get_vertex_position(geode::index_t vertex)
 ```
 
 

@@ -22,12 +22,12 @@ public const Block3D & block
 ```
 
 ```cpp
-public Triangle3D macro_triangle
+public Triangle macro_triangle
 
 ```
 
 ```cpp
-public int vertices
+public vector vertices
 
 ```
 
@@ -38,7 +38,7 @@ public int vertices
 ### BlockPatchVertices
 
 ```cpp
-public void BlockPatchVertices(const Block3D & block_in, Triangle3D macro_triangle_in)
+public void BlockPatchVertices(const Block3D & block_in, Triangle macro_triangle_in, vector vertices_in)
 ```
 
 

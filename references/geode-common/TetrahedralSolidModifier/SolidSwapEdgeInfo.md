@@ -41,5 +41,10 @@ public vector removed
 
 ```
 
+```cpp
+public array edge_vertices
+
+```
+
 
 

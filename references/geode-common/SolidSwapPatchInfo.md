@@ -17,22 +17,22 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public int along_patch
+public optional along_patch
 
 ```
 
 ```cpp
-public int edges
+public vector edges
 
 ```
 
 ```cpp
-public int facets
+public vector facets
 
 ```
 
 ```cpp
-public int tetrahedra
+public vector tetrahedra
 
 ```
 

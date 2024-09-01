@@ -46,5 +46,10 @@ public array edge_vertices
 
 ```
 
+```cpp
+public InlinedVector facet_vertices
+
+```
+
 
 

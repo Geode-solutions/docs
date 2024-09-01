@@ -36,14 +36,7 @@ public void SolidPathFinder(const TetrahedralSolid3D & solid, index_t begin, ind
 ### find_path
 
 ```cpp
-public absl::optional<std::vector<SolidPath> > find_path()
-```
-
-
-### edge_exists
-
-```cpp
-protected bool edge_exists()
+public optional find_path()
 ```
 
 
@@ -78,28 +71,28 @@ protected PolyhedronVertex opposite_vertex(const PolyhedronFacet & facet)
 ### facet_triangle
 
 ```cpp
-protected Triangle3D facet_triangle(const PolyhedronFacet & facet)
+protected Triangle facet_triangle(const PolyhedronFacet & facet)
 ```
 
 
 ### find_path_intersection_with_facet
 
 ```cpp
-protected absl::optional<SolidPath> find_path_intersection_with_facet(const PolyhedronFacet & facet)
+protected optional find_path_intersection_with_facet(const PolyhedronFacet & facet)
 ```
 
 
 ### find_first_path
 
 ```cpp
-protected absl::optional<SolidPath> find_first_path()
+protected optional find_first_path()
 ```
 
 
 ### find_next_path
 
 ```cpp
-protected absl::optional<SolidPath> find_next_path(index_t current)
+protected optional find_next_path(index_t current)
 ```
 
 
@@ -109,17 +102,18 @@ protected absl::optional<SolidPath> find_next_path(index_t current)
 protected bool find_next_paths(std::vector<SolidPath> & paths)
 ```
 
+
 ### find_next_facet
 
 ```cpp
-protected absl::optional<SolidPath> find_next_facet(const PolyhedronFacet & facet_from)
+protected optional find_next_facet(const PolyhedronFacet & facet_from)
 ```
 
 
 ### next_intersection
 
 ```cpp
-protected absl::optional<SolidPath> next_intersection(const SolidPath & previous_path, const SolidPath & current_path)
+protected optional next_intersection(const PreviousPaths & previous_paths)
 ```
 
 
@@ -148,13 +142,6 @@ protected index_t end()
 
 ```cpp
 protected const Segment3D & begin_to_end()
-```
-
-
-### find_next_paths
-
-```cpp
-protected bool find_next_paths(int & paths)
 ```
 
 

@@ -36,8 +36,6 @@ SectionCollapsePolygonEdgeInfo
 
 SectionSwapEdgeInfo
 
-Impl
-
 
 
 ## Functions
@@ -45,7 +43,7 @@ Impl
 ### SectionGeometricModifier
 
 ```cpp
-public void SectionGeometricModifier(Section & section)
+public void SectionGeometricModifier(const Section & section, SectionBuilder & builder)
 ```
 
 
@@ -158,6 +156,13 @@ public index_t updated_unique_vertex(index_t unique_vertex)
 
 ```cpp
 public bool is_edge_active(const Line2D & line, index_t edge)
+```
+
+
+### is_edge_active
+
+```cpp
+public bool is_edge_active(const Surface2D & surface, index_t edge)
 ```
 
 

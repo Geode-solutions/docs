@@ -24,12 +24,6 @@ Inherits from GridMetric<3>
 
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### BRepGridMetric

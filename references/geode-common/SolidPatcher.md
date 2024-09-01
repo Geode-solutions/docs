@@ -47,7 +47,7 @@ public const SolidPatch & solid_patch(index_t patch_vertex)
 ### front_edge
 
 ```cpp
-public absl::optional<FrontEdge> front_edge(Span patch_edge_vertices)
+public optional front_edge(Span patch_edge_vertices)
 ```
 
 
@@ -68,14 +68,14 @@ public bool is_facet_in_patch(const std::array<index_t, 3> & patch_vertices)
 ### patch_vertex_id
 
 ```cpp
-public absl::optional<index_t> patch_vertex_id(index_t solid_vertex_id)
+public optional patch_vertex_id(index_t solid_vertex_id)
 ```
 
 
 ### initialize_front_edge
 
 ```cpp
-public std::array<index_t, 2> initialize_front_edge(const PatchFrontEdge & edge, const std::array<index_t, 2> & solid_edge_vertices)
+public array initialize_front_edge(const PatchFrontEdge & edge, const std::array<index_t, 2> & solid_edge_vertices)
 ```
 
 
@@ -110,7 +110,7 @@ public index_t find_or_create_patch_vertex(const TetrahedralSolid3D & solid, con
 ### create_patch_triangle
 
 ```cpp
-public index_t create_patch_triangle(const std::array<index_t, 2> edge_vertices, index_t third_vertex)
+public index_t create_patch_triangle(array edge_vertices, index_t third_vertex)
 ```
 
 

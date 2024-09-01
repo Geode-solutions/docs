@@ -22,7 +22,7 @@ public PolygonEdge edge
 ```
 
 ```cpp
-public Position position
+public POSITION position
 
 ```
 
@@ -43,7 +43,7 @@ public bool opposite_side
 ### SurfacePath
 
 ```cpp
-public void SurfacePath(const TriangulatedSurface<dimension> & surface, PolygonEdge edge_in, Position position_in)
+public void SurfacePath(const TriangulatedSurface<dimension> & surface, PolygonEdge edge_in, POSITION position_in)
 ```
 
 

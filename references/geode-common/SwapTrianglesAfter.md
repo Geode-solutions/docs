@@ -17,12 +17,12 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public int new_triangles
+public absl::FixedArray<Triangle<dimension> > new_triangles
 
 ```
 
 ```cpp
-public int old_triangles_ids
+public FixedArray old_triangles_ids
 
 ```
 

@@ -13,6 +13,13 @@ const name = words.join('-');
 
 # class EdgedCurveModifier
 
+
+```cpp
+Inherits from VerticesModifier
+```
+
+
+
 # class EdgedCurveModifier
 
 
@@ -41,6 +48,13 @@ public void EdgedCurveModifier<dimension>(const EdgedCurve<dimension> & curve, E
 
 ```cpp
 public void EdgedCurveModifier<dimension>(EdgedCurveModifier<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public EdgedCurveModifier<dimension> & operator=(EdgedCurveModifier<dimension> && other)
 ```
 
 
@@ -88,6 +102,13 @@ public index_t split_edge(index_t edge_id, const Point<dimension> & point)
 
 **return** the index of the new vertex.
 
+### move_point
+
+```cpp
+public void move_point(index_t vertex, const Point<dimension> & point)
+```
+
+
 ### clean_edges
 
 ```cpp
@@ -113,12 +134,20 @@ public vector clean_vertices()
 ### clean
 
 ```cpp
-public std::tuple<std::vector<index_t>, std::vector<index_t> > clean()
+public tuple clean()
 ```
+
 
  Clean up the mesh removing inactive edges, isolated vertices.
 
 **return** old2new mappings for edges and vertices.
+
+### EdgedCurveModifier
+
+```cpp
+public void EdgedCurveModifier<dimension>(const VertexSet & curve, VertexSetBuilder & builder, MeshModifierFactoryKey key)
+```
+
 
 ### curve
 
@@ -127,7 +156,21 @@ protected const EdgedCurve<dimension> & curve()
 ```
 
 
+### builder
+
+```cpp
+protected EdgedCurveBuilder<dimension> & builder()
+```
+
+
 
 
 # class EdgedCurveModifier
+
+
+```cpp
+Inherits from VerticesModifier
+```
+
+
 

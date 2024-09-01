@@ -13,6 +13,13 @@ const name = words.join('-');
 
 # class SurfaceSegmentFinder
 
+
+```cpp
+Inherits from SurfacePathFinder<2U>
+```
+
+
+
 # class SurfaceSegmentFinder
 
 
@@ -45,7 +52,7 @@ public void ~SurfaceSegmentFinder<dimension>()
 ### find_path
 
 ```cpp
-public int find_path()
+public vector find_path()
 ```
 
 
@@ -99,4 +106,11 @@ protected const Segment<dimension> & segment()
 
 
 # class SurfaceSegmentFinder
+
+
+```cpp
+Inherits from SurfacePathFinder<3U>
+```
+
+
 

@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public Position position
+public POSITION position
 
 ```
 
@@ -38,7 +38,7 @@ public index_t vertex_id
 ### SolidPath
 
 ```cpp
-public void SolidPath(const TetrahedralSolid3D & solid, PolyhedronFacet facet_in, Position position_in)
+public void SolidPath(const TetrahedralSolid3D & solid, PolyhedronFacet facet_in, POSITION position_in)
 ```
 
 
@@ -94,14 +94,14 @@ public bool are_same_paths(const TetrahedralSolid3D & solid, const SolidPath & o
 ### get_vertex_position
 
 ```cpp
-public Position get_vertex_position(geode::local_index_t vertex)
+public POSITION get_vertex_position(geode::local_index_t vertex)
 ```
 
 
 ### get_edge_position
 
 ```cpp
-public Position get_edge_position(geode::local_index_t edge)
+public POSITION get_edge_position(geode::local_index_t edge)
 ```
 
 

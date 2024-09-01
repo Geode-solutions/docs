@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public int modified
+public absl::FixedArray<ModifiedTriangle<dimension> > modified
 
 ```
 

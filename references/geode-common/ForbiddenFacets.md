@@ -33,21 +33,21 @@ public ForbiddenFacets & operator=(const ForbiddenFacets & )
 ### ForbiddenFacets
 
 ```cpp
-public void ForbiddenFacets(ForbiddenFacets && )
-```
-
-
-### operator=
-
-```cpp
-public ForbiddenFacets & operator=(ForbiddenFacets && )
+public void ForbiddenFacets()
 ```
 
 
 ### ForbiddenFacets
 
 ```cpp
-public void ForbiddenFacets()
+public void ForbiddenFacets(ForbiddenFacets && other)
+```
+
+
+### operator=
+
+```cpp
+public ForbiddenFacets & operator=(ForbiddenFacets && other)
 ```
 
 
@@ -61,14 +61,35 @@ public void ~ForbiddenFacets()
 ### is_forbidden
 
 ```cpp
-public bool is_forbidden(const PolyhedronFacetVertices & facet_vertices)
+public bool is_forbidden(InlinedVector facet_vertices, const VerticesModifier & vertices_modifier)
 ```
 
 
 ### add
 
 ```cpp
-public void add(const PolyhedronFacetVertices & facet_vertices)
+public void add(InlinedVector facet_vertices)
+```
+
+
+### add
+
+```cpp
+public void add(const ForbiddenFacets & forbiddens)
+```
+
+
+### empty
+
+```cpp
+public bool empty()
+```
+
+
+### filter
+
+```cpp
+public void filter(index_t moved_old_vertex_id, const VerticesModifier & vertices_modifier)
 ```
 
 

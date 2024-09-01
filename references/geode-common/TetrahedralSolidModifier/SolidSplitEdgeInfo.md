@@ -22,6 +22,11 @@ public index_t vertex
 ```
 
 ```cpp
+public array edge_vertices
+
+```
+
+```cpp
 public SidedSolidSplitEdgeInfo left
 
 ```

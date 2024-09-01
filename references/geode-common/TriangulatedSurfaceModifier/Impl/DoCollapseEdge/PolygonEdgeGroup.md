@@ -32,12 +32,12 @@ public PolygonEdge previous_edge
 ```
 
 ```cpp
-public absl::optional<PolygonEdge> next_adjacent
+public optional next_adjacent
 
 ```
 
 ```cpp
-public absl::optional<PolygonEdge> previous_adjacent
+public optional previous_adjacent
 
 ```
 

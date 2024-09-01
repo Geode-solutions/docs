@@ -26,7 +26,7 @@ public void ~FileLicenseChecker()
 ### FileLicenseChecker
 
 ```cpp
-protected void FileLicenseChecker(string_view license_name)
+protected void FileLicenseChecker(basic_string_view license_name)
 ```
 
 
