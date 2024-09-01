@@ -11,29 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class WellInputImpl
+# class MLInput
+
+
+```cpp
+Inherits from StructuralModelInput
+```
+
 
 
 ## Functions
 
-### WellInputImpl
+### MLInput
 
 ```cpp
-public void WellInputImpl(string_view filename, geode::EdgedCurve3D & curve)
+public void MLInput(basic_string_view filename)
 ```
 
 
-### read_file
+### extension
 
 ```cpp
-public void read_file()
+public basic_string_view extension()
 ```
 
 
-### read_coord
+### read
 
 ```cpp
-public geode::Point3D read_coord(string_view line)
+public StructuralModel read()
 ```
 
 

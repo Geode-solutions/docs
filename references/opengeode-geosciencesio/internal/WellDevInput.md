@@ -11,53 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class HorizonStackSKUAInput
+# class WellDevInput
 
 
 ```cpp
-Inherits from HorizonsStackInput<3U>
-```
-
-
-
-# class HorizonStackSKUAInput
-
-
-```cpp
-Inherits from HorizonsStackInput<2U>
-```
-
-
-
-# class HorizonStackSKUAInput
-
-
-```cpp
-Inherits from HorizonsStackInput<dimension>
+Inherits from EdgedCurveInput<3>
 ```
 
 
 
 ## Functions
 
-### HorizonStackSKUAInput
+### WellDevInput
 
 ```cpp
-public void HorizonStackSKUAInput<dimension>(string_view filename)
+public void WellDevInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public HorizonsStack<dimension> read()
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

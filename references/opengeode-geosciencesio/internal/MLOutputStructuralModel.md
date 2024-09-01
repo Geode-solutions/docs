@@ -11,29 +11,42 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class GRDECLInput
+# class MLOutputStructuralModel
+
+
+```cpp
+Inherits from StructuralModelOutput
+```
+
 
 
 ## Functions
 
-### GRDECLInput
+### MLOutputStructuralModel
 
 ```cpp
-public void GRDECLInput(string_view filename)
+public void MLOutputStructuralModel(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
-### read
+### write
 
 ```cpp
-public std::unique_ptr<HybridSolid3D> read(const MeshImpl & impl)
+public vector write(const StructuralModel & structural_model)
+```
+
+
+### is_saveable
+
+```cpp
+public bool is_saveable(const StructuralModel & structural_model)
 ```
 
 

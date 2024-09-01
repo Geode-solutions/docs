@@ -11,35 +11,59 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class MLInput
+# struct PropHeaderData
 
+
+## Members
 
 ```cpp
-Inherits from StructuralModelInput
+public vector names
+
+```
+
+```cpp
+public vector prop_legal_ranges
+
+```
+
+```cpp
+public vector no_data_values
+
+```
+
+```cpp
+public vector property_classes
+
+```
+
+```cpp
+public vector kinds
+
+```
+
+```cpp
+public vector property_subclass
+
+```
+
+```cpp
+public vector esizes
+
+```
+
+```cpp
+public vector units
+
 ```
 
 
 
 ## Functions
 
-### MLInput
+### empty
 
 ```cpp
-public void MLInput(string_view filename)
-```
-
-
-### extension
-
-```cpp
-public string_view extension()
-```
-
-
-### read
-
-```cpp
-public StructuralModel read()
+public bool empty()
 ```
 
 

@@ -11,35 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class WLInput
+# class PLOutput
 
 
 ```cpp
-Inherits from EdgedCurveInput<3>
+Inherits from EdgedCurveOutput<3>
 ```
 
 
 
 ## Functions
 
-### WLInput
+### PLOutput
 
 ```cpp
-public void WLInput(string_view filename)
+public void PLOutput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
-### read
+### write
 
 ```cpp
-public std::unique_ptr<EdgedCurve3D> read(const MeshImpl & impl)
+public vector write(const EdgedCurve3D & edged_curve)
 ```
 
 

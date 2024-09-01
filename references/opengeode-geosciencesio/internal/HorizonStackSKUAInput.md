@@ -11,44 +11,55 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class LSOOutput
+# class HorizonStackSKUAInput
 
 
 ```cpp
-Inherits from StructuralModelOutput
+Inherits from HorizonsStackInput<dimension>
 ```
 
 
 
 ## Functions
 
-### LSOOutput
+### HorizonStackSKUAInput
 
 ```cpp
-public void LSOOutput(string_view filename)
+public void HorizonStackSKUAInput<dimension>(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
-### write
+### read
 
 ```cpp
-public void write(const StructuralModel & structural_model)
+public HorizonsStack<dimension> read()
 ```
 
 
-### is_saveable
+
+
+# class HorizonStackSKUAInput
+
 
 ```cpp
-public bool is_saveable(const StructuralModel & structural_model)
+Inherits from HorizonsStackInput<3U>
 ```
 
+
+
+# class HorizonStackSKUAInput
+
+
+```cpp
+Inherits from HorizonsStackInput<2U>
+```
 
 
 

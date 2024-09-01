@@ -11,42 +11,42 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class MLOutputStructuralModel
+# class MLOutputBRep
 
 
 ```cpp
-Inherits from StructuralModelOutput
+Inherits from BRepOutput
 ```
 
 
 
 ## Functions
 
-### MLOutputStructuralModel
+### MLOutputBRep
 
 ```cpp
-public void MLOutputStructuralModel(string_view filename)
+public void MLOutputBRep(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public void write(const StructuralModel & structural_model)
+public vector write(const BRep & brep)
 ```
 
 
 ### is_saveable
 
 ```cpp
-public bool is_saveable(const StructuralModel & structural_model)
+public bool is_saveable(const BRep & brep)
 ```
 
 

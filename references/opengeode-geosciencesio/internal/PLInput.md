@@ -11,35 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class LSOInput
+# class PLInput
 
 
 ```cpp
-Inherits from StructuralModelInput
+Inherits from EdgedCurveInput<3>
 ```
 
 
 
 ## Functions
 
-### LSOInput
+### PLInput
 
 ```cpp
-public void LSOInput(string_view filename)
+public void PLInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public StructuralModel read()
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

@@ -11,37 +11,19 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class TSOutput
+# struct uuid
 
-
-```cpp
-Inherits from TriangulatedSurfaceOutput<3>
-```
-
-
-
-## Functions
-
-### TSOutput
+## Members
 
 ```cpp
-public void TSOutput(string_view filename)
+public uint64_t ab
+
 ```
-
-
-### extension
 
 ```cpp
-public string_view extension()
+public uint64_t cd
+
 ```
-
-
-### write
-
-```cpp
-public void write(const TriangulatedSurface3D & surface)
-```
-
 
 
 

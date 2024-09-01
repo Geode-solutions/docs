@@ -11,29 +11,42 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class WellDatInput
+# class VOInput
+
+
+```cpp
+Inherits from RegularGridInput<3>
+```
+
 
 
 ## Functions
 
-### WellDatInput
+### VOInput
 
 ```cpp
-public void WellDatInput(string_view filename)
+public void VOInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public std::unique_ptr<EdgedCurve3D> read(const MeshImpl & impl)
+public unique_ptr read(const MeshImpl & impl)
+```
+
+
+### check_missing_files
+
+```cpp
+public MissingFiles check_missing_files()
 ```
 
 

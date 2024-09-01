@@ -11,31 +11,40 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class TSInput
+# struct CRSData
 
 
-## Functions
-
-### TSInput
+## Members
 
 ```cpp
-public void TSInput(string_view filename)
+public array axis_names
+
 ```
-
-
-### extension
 
 ```cpp
-public string_view extension()
+public array axis_units
+
 ```
-
-
-### read
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface3D> read(const MeshImpl & impl)
+public bool z_sign_positive
+
 ```
 
+```cpp
+public basic_string name
+
+```
+
+```cpp
+public basic_string projection
+
+```
+
+```cpp
+public basic_string datum
+
+```
 
 
 

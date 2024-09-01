@@ -11,14 +11,16 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# namespace internal
 
 
 
 ## Records
 
 * [CRSData](CRSData.md)
+* [ECurveData](ECurveData.md)
 * [GRDECLInput](GRDECLInput.md)
+* [GeosExporterImpl](GeosExporterImpl.md)
 * [HeaderData](HeaderData.md)
 * [HorizonStackSKUAInput](HorizonStackSKUAInput.md)
 * [LSOInput](LSOInput.md)
@@ -27,6 +29,7 @@ const name = words.join('-');
 * [MLOutputBRep](MLOutputBRep.md)
 * [MLOutputImpl](MLOutputImpl.md)
 * [MLOutputStructuralModel](MLOutputStructuralModel.md)
+* [PLInput](PLInput.md)
 * [PLOutput](PLOutput.md)
 * [PropClassHeaderData](PropClassHeaderData.md)
 * [PropHeaderData](PropHeaderData.md)
@@ -56,7 +59,7 @@ HeaderData read_header(std::ifstream & file)
 ### read_name
 
 ```cpp
-basic_string read_name(absl::Span<const absl::string_view> tokens)
+basic_string read_name(Span tokens)
 ```
 
 
@@ -84,21 +87,21 @@ void write_CRS(std::ofstream & file, const CRSData & data)
 ### read_prop_header
 
 ```cpp
-PropHeaderData read_prop_header(std::ifstream & file, string_view prefix)
+PropHeaderData read_prop_header(std::ifstream & file, basic_string_view prefix)
 ```
 
 
 ### read_properties
 
 ```cpp
-void read_properties(const PropHeaderData & properties_header, int & attribute_values, absl::Span<const absl::string_view> tokens, geode::index_t line_properties_position)
+void read_properties(const PropHeaderData & properties_header, std::vector<std::vector<double> > & attribute_values, Span tokens, geode::index_t line_properties_position)
 ```
 
 
 ### create_attributes
 
 ```cpp
-void create_attributes(const PropHeaderData & attributes_header, int attributes_values, geode::AttributeManager & attribute_manager, geode::index_t nb_vertices, absl::Span<const geode::index_t> inverse_vertex_mapping)
+void create_attributes(const PropHeaderData & attributes_header, absl::Span<const std::vector<double> > attributes_values, geode::AttributeManager & attribute_manager, geode::index_t nb_vertices, Span inverse_vertex_mapping)
 ```
 
 
@@ -119,7 +122,14 @@ void write_property_class_header(std::ofstream & file, const PropClassHeaderData
 ### read_tsurf
 
 ```cpp
-absl::optional<TSurfData> read_tsurf(std::ifstream & file)
+std::optional<TSurfData> read_tsurf(std::ifstream & file)
+```
+
+
+### read_ecurve
+
+```cpp
+std::optional<ECurveData> read_ecurve(std::ifstream & file)
 ```
 
 
@@ -147,7 +157,7 @@ bool check_brep_polygons(const BRep & brep)
 ### get_one_border_edge
 
 ```cpp
-absl::optional<PolygonEdge> get_one_border_edge(const SurfaceMesh3D & mesh)
+optional get_one_border_edge(const SurfaceMesh3D & mesh)
 ```
 
 

@@ -11,42 +11,22 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class MLOutputBRep
-
-
-```cpp
-Inherits from BRepOutput
-```
-
+# class WellInputImpl
 
 
 ## Functions
 
-### MLOutputBRep
+### WellInputImpl
 
 ```cpp
-public void MLOutputBRep(string_view filename)
+public void WellInputImpl(basic_string_view filename, EdgedCurve3D & curve)
 ```
 
 
-### extension
+### read_file
 
 ```cpp
-public string_view extension()
-```
-
-
-### write
-
-```cpp
-public void write(const BRep & brep)
-```
-
-
-### is_saveable
-
-```cpp
-public bool is_saveable(const BRep & brep)
+public void read_file()
 ```
 
 

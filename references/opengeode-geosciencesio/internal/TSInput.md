@@ -11,59 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct PropHeaderData
+# class TSInput
 
-
-## Members
 
 ```cpp
-public int names
-
-```
-
-```cpp
-public int prop_legal_ranges
-
-```
-
-```cpp
-public int no_data_values
-
-```
-
-```cpp
-public int property_classes
-
-```
-
-```cpp
-public int kinds
-
-```
-
-```cpp
-public int property_subclass
-
-```
-
-```cpp
-public int esizes
-
-```
-
-```cpp
-public int units
-
+Inherits from TriangulatedSurfaceInput<3>
 ```
 
 
 
 ## Functions
 
-### empty
+### TSInput
 
 ```cpp
-public bool empty()
+public void TSInput(basic_string_view filename)
+```
+
+
+### extension
+
+```cpp
+public basic_string_view extension()
+```
+
+
+### read
+
+```cpp
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

@@ -33,7 +33,7 @@ public void write_file()
 ### MLOutputImpl
 
 ```cpp
-protected void MLOutputImpl<Model>(string_view filename, const Model & model)
+protected void MLOutputImpl<Model>(basic_string_view filename, const Model & model)
 ```
 
 
@@ -47,7 +47,7 @@ protected index_t & component_id()
 ### components
 
 ```cpp
-protected int & components()
+protected absl::flat_hash_map<uuid, index_t> & components()
 ```
 
 
@@ -74,7 +74,7 @@ protected void write_geological_tsurfs()
 ### unclassified_tsurfs
 
 ```cpp
-protected int unclassified_tsurfs()
+protected vector unclassified_tsurfs()
 ```
 
 ### write_tsurfs
@@ -134,49 +134,49 @@ protected index_t write_surface(const Surface3D & surface, const index_t current
 ### process_surface_edge
 
 ```cpp
-protected void process_surface_edge(const Surface3D & surface, const PolygonEdge & edge, const index_t current_offset, int & line_starts)
+protected void process_surface_edge(const Surface3D & surface, const PolygonEdge & edge, const index_t current_offset, std::vector<std::array<index_t, 2> > & line_starts)
 ```
 
 
 ### add_corners_and_line_starts
 
 ```cpp
-protected void add_corners_and_line_starts(const Surface3D & surface, const index_t current_offset, int & line_starts)
+protected void add_corners_and_line_starts(const Surface3D & surface, const index_t current_offset, std::vector<std::array<index_t, 2> > & line_starts)
 ```
 
 
 ### find_boundary_corners_and_line_starts
 
 ```cpp
-protected void find_boundary_corners_and_line_starts(const ModelBoundary3D & surface_collection, int & line_starts)
+protected void find_boundary_corners_and_line_starts(const ModelBoundary3D & surface_collection, std::vector<std::array<index_t, 2> > & line_starts)
 ```
 
 
 ### find_corners_and_line_starts
 
 ```cpp
-protected void find_corners_and_line_starts(const ItemRange & item_range, int & line_starts)
+protected void find_corners_and_line_starts(const ItemRange & item_range, std::vector<std::array<index_t, 2> > & line_starts)
 ```
 
 
 ### find_corners_and_line_starts_for_unclassified_surface
 
 ```cpp
-protected int find_corners_and_line_starts_for_unclassified_surface(const uuid & surface_id)
+protected vector find_corners_and_line_starts_for_unclassified_surface(const uuid & surface_id)
 ```
 
 
 ### write_corners
 
 ```cpp
-protected void write_corners(absl::Span<const std::array<index_t, 2> > line_starts)
+protected void write_corners(Span line_starts)
 ```
 
 
 ### write_line_starts
 
 ```cpp
-protected void write_line_starts(index_t current_offset, absl::Span<const std::array<index_t, 2> > line_starts)
+protected void write_line_starts(index_t current_offset, Span line_starts)
 ```
 
 

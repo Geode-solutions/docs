@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class WellTxtInput
+# class WellDatInput
 
 
 ```cpp
@@ -22,24 +22,24 @@ Inherits from EdgedCurveInput<3>
 
 ## Functions
 
-### WellTxtInput
+### WellDatInput
 
 ```cpp
-public void WellTxtInput(string_view filename)
+public void WellDatInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public std::unique_ptr<EdgedCurve3D> read(const MeshImpl & impl)
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

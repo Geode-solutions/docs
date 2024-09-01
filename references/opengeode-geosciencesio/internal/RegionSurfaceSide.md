@@ -11,37 +11,20 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class PLOutput
+# struct RegionSurfaceSide
 
 
-```cpp
-Inherits from EdgedCurveOutput<3>
-```
-
-
-
-## Functions
-
-### PLOutput
+## Members
 
 ```cpp
-public void PLOutput(string_view filename)
+public flat_hash_map universe_surface_sides
+
 ```
-
-
-### extension
 
 ```cpp
-public string_view extension()
+public flat_hash_map regions_surface_sides
+
 ```
-
-
-### write
-
-```cpp
-public void write(const EdgedCurve3D & edged_curve)
-```
-
 
 
 

@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct TSurfData
+# struct ECurveData
 
 
 ## Members
@@ -32,55 +32,14 @@ public CRSData crs
 ```
 
 ```cpp
-public PropHeaderData vertices_properties_header
+public vector points
 
 ```
 
 ```cpp
-public int points
+public vector edges
 
 ```
-
-```cpp
-public int triangles
-
-```
-
-```cpp
-public int tface_triangles_offset
-
-```
-
-```cpp
-public int tface_vertices_offset
-
-```
-
-```cpp
-public int bstones
-
-```
-
-```cpp
-public int borders
-
-```
-
-```cpp
-public int vertices_attribute_values
-
-```
-
-
-
-## Functions
-
-### tface_id
-
-```cpp
-public index_t tface_id(index_t vertex_id)
-```
-
 
 
 

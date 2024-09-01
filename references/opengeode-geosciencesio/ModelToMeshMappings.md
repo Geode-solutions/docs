@@ -11,31 +11,34 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VOInput
+# struct ModelToMeshMappings
 
-
-## Functions
-
-### VOInput
+## Members
 
 ```cpp
-public void VOInput(string_view filename)
+public GenericMapping corner_vertices_mapping
+
 ```
-
-
-### extension
 
 ```cpp
-public string_view extension()
+public GenericMapping line_edges_mapping
+
 ```
-
-
-### read
 
 ```cpp
-public std::unique_ptr<RegularGrid3D> read(const MeshImpl & impl)
+public GenericMapping surface_polygons_mapping
+
 ```
 
+```cpp
+public GenericMapping solid_polyhedra_mapping
+
+```
+
+```cpp
+public BijectiveMapping unique_vertices_mapping
+
+```
 
 
 

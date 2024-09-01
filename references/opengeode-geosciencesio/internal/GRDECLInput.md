@@ -11,30 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct CRSData
+# class GRDECLInput
 
-
-## Members
 
 ```cpp
-public basic_string name
-
+Inherits from HybridSolidInput<3>
 ```
+
+
+
+## Functions
+
+### GRDECLInput
 
 ```cpp
-public std::array<std::string, 3> axis_names
-
+public void GRDECLInput(basic_string_view filename)
 ```
+
+
+### extension
 
 ```cpp
-public std::array<std::string, 3> axis_units
-
+public basic_string_view extension()
 ```
+
+
+### read
 
 ```cpp
-public int z_sign
-
+public unique_ptr read(const MeshImpl & impl)
 ```
+
 
 
 

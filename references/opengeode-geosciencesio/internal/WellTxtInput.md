@@ -11,42 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class SHPInput
+# class WellTxtInput
 
 
 ```cpp
-Inherits from SectionInput
+Inherits from EdgedCurveInput<3>
 ```
 
 
 
 ## Functions
 
-### SHPInput
+### WellTxtInput
 
 ```cpp
-public void SHPInput(string_view filename)
+public void WellTxtInput(basic_string_view filename)
 ```
 
 
-### extensions
+### extension
 
 ```cpp
-public vector extensions()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public Section read()
-```
-
-
-### check_missing_files
-
-```cpp
-public MissingFiles check_missing_files()
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

@@ -11,20 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct RegionSurfaceSide
+# class WLInput
 
-
-## Members
 
 ```cpp
-public int universe_surface_sides
-
+Inherits from EdgedCurveInput<3>
 ```
+
+
+
+## Functions
+
+### WLInput
 
 ```cpp
-public int regions_surface_sides
-
+public void WLInput(basic_string_view filename)
 ```
+
+
+### extension
+
+```cpp
+public basic_string_view extension()
+```
+
+
+### read
+
+```cpp
+public unique_ptr read(const MeshImpl & impl)
+```
+
 
 
 

@@ -11,22 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace geode
+# class LSOInput
+
+
+```cpp
+Inherits from StructuralModelInput
+```
 
 
 
-## Namespaces
+## Functions
 
-* [internal](internal/index.md)
+### LSOInput
+
+```cpp
+public void LSOInput(basic_string_view filename)
+```
 
 
-## Records
+### extension
 
-* [BRepGeosExporter](BRepGeosExporter.md)
-* [GeosciencesIOMeshLibrary](GeosciencesIOMeshLibrary.md)
-* [GeosciencesIOModelLibrary](GeosciencesIOModelLibrary.md)
-* [ModelToMeshMappings](ModelToMeshMappings.md)
-* [StructuralModelGeosExporter](StructuralModelGeosExporter.md)
-* [uuid](uuid.md)
+```cpp
+public basic_string_view extension()
+```
+
+
+### read
+
+```cpp
+public StructuralModel read()
+```
+
+
 
 
