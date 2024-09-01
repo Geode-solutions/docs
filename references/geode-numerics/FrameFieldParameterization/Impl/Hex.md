@@ -17,32 +17,32 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public std::array<Point3D, NB_HEX_VERTICES> uvw
+public array uvw
 
 ```
 
 ```cpp
-public std::array<Point3D, NB_HEX_VERTICES> xyz
+public array xyz
 
 ```
 
 ```cpp
-public std::array<index_t, NB_HEX_VERTICES> containing_element
+public array containing_element
 
 ```
 
 ```cpp
-public BoundingBox3D bbox
+public BoundingBox bbox
 
 ```
 
 ```cpp
-public int visited
+public InlinedVector visited
 
 ```
 
 ```cpp
-public int local_parameterization
+public flat_hash_map local_parameterization
 
 ```
 

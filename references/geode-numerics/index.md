@@ -17,13 +17,14 @@ const name = words.join('-');
 
 ## Namespaces
 
-* [detail](detail/index.md)
+* [internal](internal/index.md)
 
 
 ## Records
 
 * [ComputationGrid](ComputationGrid.md)
 * [CutGridFDMCurvatureMinimization](CutGridFDMCurvatureMinimization.md)
+* [CutGridScalarFunction](CutGridScalarFunction.md)
 * [CutGrid](CutGrid.md)
 * [DataConstraintsManager](DataConstraintsManager.md)
 * [DataPointsManager](DataPointsManager.md)
@@ -44,27 +45,27 @@ const name = words.join('-');
 
 ## Functions
 
-### compute_LSCM_parameterization
+### convert_surface3d_into_2d
 
 ```cpp
-void compute_LSCM_parameterization(const TriangulatedSurface3D & mesh, string_view attribute_name)
+unique_ptr convert_surface3d_into_2d(const TriangulatedSurface3D & mesh, basic_string_view attribute_name)
 ```
 
 
- Compute Least Squares Conformal Maps
+ Compute a 2D mesh from a 3D mesh and its parametric coordinates
 
 **mesh** [in] Input triangulated mesh
 
 **attribute_name** [in] The VariableAttribute< Point2D > name which holds the parametric values. Values are stored on the vertices.
 
-### convert_surface3d_into_2d
+### compute_LSCM_parameterization
 
 ```cpp
-std::unique_ptr<TriangulatedSurface2D> convert_surface3d_into_2d(const TriangulatedSurface3D & mesh, string_view attribute_name)
+void compute_LSCM_parameterization(const TriangulatedSurface3D & mesh, basic_string_view attribute_name)
 ```
 
 
- Compute a 2D mesh from a 3D mesh and its parametric coordinates
+ Compute Least Squares Conformal Maps
 
 **mesh** [in] Input triangulated mesh
 

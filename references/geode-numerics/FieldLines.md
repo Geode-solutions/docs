@@ -14,12 +14,6 @@ const name = words.join('-');
 # class FieldLines
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### FieldLines
@@ -39,7 +33,7 @@ public void ~FieldLines()
 ### compute_lines
 
 ```cpp
-public std::unique_ptr<EdgedCurve3D> compute_lines()
+public unique_ptr compute_lines()
 ```
 
 

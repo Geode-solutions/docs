@@ -14,12 +14,6 @@ const name = words.join('-');
 # class PGP3D
 
 
-## Records
-
-CurlCorrection
-
-
-
 ## Functions
 
 ### PGP3D
@@ -33,20 +27,6 @@ public void PGP3D(class FrameFieldParameterization::Impl & impl, double mesh_siz
 
 ```cpp
 public void compute_parameterization()
-```
-
-
-### translation
-
-```cpp
-public Vector3D translation(index_t vertex_i, index_t vertex_j)
-```
-
-
-### constant
-
-```cpp
-public Vector3D constant(index_t vertex_i, index_t vertex_j)
 ```
 
 

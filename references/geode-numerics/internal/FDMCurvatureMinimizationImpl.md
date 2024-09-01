@@ -40,14 +40,14 @@ public void use_constraint_value_preconditioning()
 ### use_scalar_function_preconditioning
 
 ```cpp
-public void use_scalar_function_preconditioning(string_view function_name)
+public void use_scalar_function_preconditioning(const ComputationGrid<dimension> & preconditioner_grid, basic_string_view function_name)
 ```
 
 
 ### compute_scalar_function
 
 ```cpp
-public void compute_scalar_function(string_view scalar_function_name)
+public void compute_scalar_function(basic_string_view scalar_function_name)
 ```
 
 
@@ -100,10 +100,17 @@ protected void set_data_coefficient_value(index_t data_id, double value)
 ```
 
 
-### nb_computation_points
+### set_node_coefficient_value
 
 ```cpp
-protected index_t nb_computation_points()
+protected void set_node_coefficient_value(index_t value_node_id, double value)
+```
+
+
+### nb_computation_nodes
+
+```cpp
+protected index_t nb_computation_nodes()
 ```
 
 
@@ -111,6 +118,13 @@ protected index_t nb_computation_points()
 
 ```cpp
 protected local_index_t nb_derivatives()
+```
+
+
+### first_active_cell_around
+
+```cpp
+protected std::optional<typename Grid<dimension>::CellIndices> first_active_cell_around(const Point<dimension> & data_point)
 ```
 
 

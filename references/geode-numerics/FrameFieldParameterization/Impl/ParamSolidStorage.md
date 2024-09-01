@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public std::shared_ptr<VariableAttribute<TetrahedronCornerParam> > corner_parameterization
+public shared_ptr corner_parameterization
 
 ```
 

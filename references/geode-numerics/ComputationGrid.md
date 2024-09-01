@@ -20,39 +20,54 @@ Inherits from LightRegularGrid<dimension>
 
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### ComputationGrid
 
 ```cpp
-public void ComputationGrid<>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
+public void ComputationGrid<dimension>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
 ```
 
 
 ### ComputationGrid
 
 ```cpp
-public void ComputationGrid<>(ComputationGrid<dimension> && other)
+public void ComputationGrid<dimension>(ComputationGrid<dimension> && other)
 ```
 
 
 ### ComputationGrid
 
 ```cpp
-public void ComputationGrid<>(LightRegularGrid<dimension> && other)
+public void ComputationGrid<dimension>(LightRegularGrid<dimension> && other)
 ```
 
 
 ### ~ComputationGrid
 
 ```cpp
-public void ~ComputationGrid<>()
+public void ~ComputationGrid<dimension>()
+```
+
+
+### set_inactive_cells
+
+```cpp
+public void set_inactive_cells(absl::Span<const CellIndices> cells_list)
+```
+
+
+### remove_computation_node
+
+```cpp
+public void remove_computation_node(const VertexIndices & node_indices)
+```
+
+
+### is_cell_active
+
+```cpp
+public bool is_cell_active(const CellIndices & cell)
 ```
 
 
@@ -63,17 +78,38 @@ public index_t nb_computation_nodes()
 ```
 
 
-### grid_vertex_from_computation_node
+### value_node_from_grid_vertex_indices
 
 ```cpp
-public index_t grid_vertex_from_computation_node(index_t computation_node)
+public optional value_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
+```
+
+
+### computation_node_from_grid_vertex_indices
+
+```cpp
+public optional computation_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
+```
+
+
+### grid_vertex_indices_from_value_node
+
+```cpp
+public const VertexIndices & grid_vertex_indices_from_value_node(index_t value_node)
+```
+
+
+### grid_vertex_indices_from_computation_node
+
+```cpp
+public const VertexIndices & grid_vertex_indices_from_computation_node(index_t computation_node)
 ```
 
 
 ### set_node_values_attribute_name
 
 ```cpp
-public void set_node_values_attribute_name(string_view name)
+public void set_node_values_attribute_name(basic_string_view name)
 ```
 
 
@@ -98,9 +134,30 @@ public double get_node_value(index_t value_node_id)
 ```
 
 
+### remove_all_value_nodes_but_computation_nodes
+
+```cpp
+protected void remove_all_value_nodes_but_computation_nodes()
+```
+
+
 
 
 # class ComputationGrid
 
+
+```cpp
+Inherits from LightRegularGrid<2U>
+```
+
+
+
 # class ComputationGrid
+
+
+```cpp
+Inherits from LightRegularGrid<3U>
+```
+
+
 

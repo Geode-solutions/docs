@@ -14,12 +14,6 @@ const name = words.join('-');
 # class FrameField
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### FrameField
@@ -74,7 +68,7 @@ public const Frame3D & frame(index_t vertex)
 ### set_frame
 
 ```cpp
-public void set_frame(index_t vertex, Frame3D frame)
+public void set_frame(index_t vertex, Frame frame)
 ```
 
 

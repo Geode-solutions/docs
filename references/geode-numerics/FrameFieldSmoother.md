@@ -14,12 +14,6 @@ const name = words.join('-');
 # class FrameFieldSmoother
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### FrameFieldSmoother
@@ -36,10 +30,66 @@ public void ~FrameFieldSmoother()
 ```
 
 
-### initialize_frame_field
+### add_brep_constraint
 
 ```cpp
-public void initialize_frame_field()
+public void add_brep_constraint(double weight)
+```
+
+
+### add_lines_constraint
+
+```cpp
+public void add_lines_constraint(double weight)
+```
+
+
+### add_surfaces_constraint
+
+```cpp
+public void add_surfaces_constraint(double weight)
+```
+
+
+### add_line_constraint
+
+```cpp
+public void add_line_constraint(const Line3D & line, double weight)
+```
+
+
+### add_surface_constraint
+
+```cpp
+public void add_surface_constraint(const Surface3D & surface, double weight)
+```
+
+
+### add_line_vertex_constraint
+
+```cpp
+public void add_line_vertex_constraint(const Line3D & line, index_t vertex, double weight)
+```
+
+
+### add_surface_vertex_constraint
+
+```cpp
+public void add_surface_vertex_constraint(const Surface3D & surface, index_t vertex, double weight)
+```
+
+
+### add_gradient_constraint
+
+```cpp
+public void add_gradient_constraint(basic_string_view attribute_name, double weight)
+```
+
+
+### smooth_frame_field
+
+```cpp
+public void smooth_frame_field()
 ```
 
 

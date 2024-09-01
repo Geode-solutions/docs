@@ -54,7 +54,7 @@ public void ~DataPointsManager<dimension>()
 ### load_data_points
 
 ```cpp
-public void load_data_points(string_view filename)
+public void load_data_points(basic_string_view filename)
 ```
 
 
@@ -124,7 +124,7 @@ public double data_point_weight(index_t data_point_index)
 ### save_data_points_manager
 
 ```cpp
-public void save_data_points_manager(string_view filename)
+public void save_data_points_manager(basic_string_view filename)
 ```
 
 
