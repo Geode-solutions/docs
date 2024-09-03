@@ -1286,6 +1286,34 @@ SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralS
 ```
 
 
+### determine_cuts
+
+```cpp
+vector determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, Span path_splits)
+```
+
+
+### determine_cuts
+
+```cpp
+vector determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, Span path_splits)
+```
+
+
+### cut_along_path
+
+```cpp
+SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
+```
+
+
+### cut_along_path
+
+```cpp
+SurfaceCutPathInfo cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
+```
+
+
 ### is_collapse_edge_valid
 
 ```cpp
@@ -1377,34 +1405,6 @@ SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & se
 
 ```cpp
 SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
-```
-
-
-### determine_cuts
-
-```cpp
-vector determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, Span path_splits)
-```
-
-
-### determine_cuts
-
-```cpp
-vector determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, Span path_splits)
-```
-
-
-### cut_along_path
-
-```cpp
-SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
-```
-
-
-### cut_along_path
-
-```cpp
-SurfaceCutPathInfo cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
 ```
 
 
