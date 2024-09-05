@@ -17,7 +17,7 @@ const name = words.join('-');
 
 ## Namespaces
 
-* [detail](detail/index.md)
+* [internal](internal/index.md)
 
 
 ## Records
@@ -26,7 +26,8 @@ const name = words.join('-');
 * [BackgroundCommonLibrary](BackgroundCommonLibrary.md)
 * [BackgroundSolidLibrary](BackgroundSolidLibrary.md)
 * [BackgroundSurfaceLibrary](BackgroundSurfaceLibrary.md)
-* [PolyhedronFacet](PolyhedronFacet.md)
+* [ModifiedTetrahedron](ModifiedTetrahedron.md)
+* [Modifier](Modifier.md)
 * [uuid](uuid.md)
 
 
