@@ -17,7 +17,22 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public optional removed_element
+public vector removed_corners
+
+```
+
+```cpp
+public vector removed_lines
+
+```
+
+```cpp
+public vector removed_surfaces
+
+```
+
+```cpp
+public vector removed_blocks
 
 ```
 
