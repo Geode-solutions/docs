@@ -37,6 +37,13 @@ public void ~Timer()
 ```
 
 
+### raw_duration
+
+```cpp
+public Duration raw_duration()
+```
+
+
 ### duration
 
 ```cpp
