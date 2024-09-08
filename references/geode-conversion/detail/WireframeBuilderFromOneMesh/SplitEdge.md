@@ -11,18 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SurfaceLineRelations
+# struct SplitEdge
 
 
 ## Members
 
 ```cpp
-public int boundary_lines
+public array unique_vertices
 
 ```
 
 ```cpp
-public int internal_lines
+public Point<dimension> split_point
+
+```
+
+```cpp
+public ModelSplitPolygonEdgeInfo<dimension> split_info
 
 ```
 

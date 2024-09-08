@@ -14,12 +14,6 @@ const name = words.join('-');
 # class CornersLinesBuilder
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### ~CornersLinesBuilder
@@ -73,7 +67,7 @@ public void add_corner(index_t vertex)
 ### wireframe_edge_id
 
 ```cpp
-public absl::optional<index_t> wireframe_edge_id(const std::array<index_t, 2> & edge_vertices)
+public optional wireframe_edge_id(const std::array<index_t, 2> & edge_vertices)
 ```
 
 
@@ -94,7 +88,7 @@ public const uuid & line_uuid(index_t edge)
 ### corner_uuid
 
 ```cpp
-public absl::optional<uuid> corner_uuid(index_t vertex)
+public optional corner_uuid(index_t vertex)
 ```
 
 
@@ -137,5 +131,7 @@ protected index_t find_or_create_corner(index_t corner_vertex, const Point<dimen
 
 # class CornersLinesBuilder
 
+
 # class CornersLinesBuilder
+
 

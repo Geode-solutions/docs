@@ -25,7 +25,7 @@ Inherits from ModelBuilderFromMeshes<Section>
 ### SectionFromMeshesBuilder
 
 ```cpp
-public void SectionFromMeshesBuilder(Section & brep, absl::Span<const std::reference_wrapper<const PointSet2D> > corners, absl::Span<const std::reference_wrapper<const EdgedCurve2D> > curves, absl::Span<const std::reference_wrapper<const SurfaceMesh2D> > surfaces)
+public void SectionFromMeshesBuilder(Section & brep, Span corners, Span curves, Span surfaces)
 ```
 
 

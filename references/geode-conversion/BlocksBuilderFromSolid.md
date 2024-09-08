@@ -14,12 +14,6 @@ const name = words.join('-');
 # class BlocksBuilderFromSolid
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### BlocksBuilderFromSolid
@@ -39,7 +33,7 @@ public void ~BlocksBuilderFromSolid()
 ### build_blocks_step
 
 ```cpp
-public std::pair<IndexToMeshVertexMapping, IndexToMeshElementMapping> build_blocks_step()
+public pair build_blocks_step()
 ```
 
 

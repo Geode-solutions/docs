@@ -20,6 +20,12 @@ Inherits from CornersLinesBuilder<Model>
 
 
 
+## Records
+
+SplitEdge
+
+
+
 ## Functions
 
 ### ~WireframeBuilderFromOneMesh
@@ -95,13 +101,14 @@ protected void update_corner_line_mappings()
 ### build_surfaces
 
 ```cpp
-protected void build_surfaces(const SurfaceMesh<dimension> & whole_surface, const absl::flat_hash_map<index_t, index_t> & whole_surface_to_one_mesh_vertices, Span whole_surface_to_one_mesh_polygons)
+protected std::vector<SplitEdge> build_surfaces(const SurfaceMesh<dimension> & whole_surface, const absl::flat_hash_map<index_t, index_t> & whole_surface_to_one_mesh_vertices, Span whole_surface_to_one_mesh_polygons, WireframeBuilderFromOneMesh<Model, Mesh>::ModelModifier & model_modifer)
 ```
 
-### build_surfaces
+
+### build_surfaces_without_split
 
 ```cpp
-protected void build_surfaces(const SurfaceMesh<dimension> & whole_surface, const int & whole_surface_to_one_mesh_vertices, Span whole_surface_to_one_mesh_polygons)
+protected void build_surfaces_without_split(const SurfaceMesh<dimension> & whole_surface, const absl::flat_hash_map<index_t, index_t> & whole_surface_to_one_mesh_vertices, Span whole_surface_to_one_mesh_polygons)
 ```
 
 
@@ -109,5 +116,19 @@ protected void build_surfaces(const SurfaceMesh<dimension> & whole_surface, cons
 
 # class WireframeBuilderFromOneMesh
 
+
+```cpp
+Inherits from CornersLinesBuilder<Section>
+```
+
+
+
 # class WireframeBuilderFromOneMesh
+
+
+```cpp
+Inherits from CornersLinesBuilder<BRep>
+```
+
+
 

@@ -11,25 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepMappings
+# struct BuildLineConfig
 
 
 ## Members
 
 ```cpp
-public ModelMapping component_mapping
+public EdgeVertex line_start
 
 ```
 
 ```cpp
-public BRepMeshesElementMapping mesh_element_mapping
+public bool start_on_corner
 
 ```
+
+
+
+## Functions
+
+### BuildLineConfig
 
 ```cpp
-public BRepMeshesVertexMapping mesh_vertices_mapping
-
+public void BuildLineConfig()
 ```
+
 
 
 

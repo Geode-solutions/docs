@@ -54,17 +54,18 @@ public void ~BRepTopologyRebuilder()
 public void add_block_facets_to_topology(const Block3D & block, vector facet_ids)
 ```
 
+
+### remove_conformity_on_model_surface
+
+```cpp
+public void remove_conformity_on_model_surface(const Surface3D & surface)
+```
+
+
 ### rebuild
 
 ```cpp
 public tuple rebuild()
-```
-
-
-### add_block_facets_to_topology
-
-```cpp
-public void add_block_facets_to_topology(const Block3D & block, int facet_ids)
 ```
 
 

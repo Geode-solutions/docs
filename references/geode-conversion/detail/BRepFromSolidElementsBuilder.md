@@ -24,12 +24,6 @@ Inherits from WireframeBuilderFromOneMesh<BRep, SolidMesh3D>
 
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### BRepFromSolidElementsBuilder
@@ -49,7 +43,7 @@ public void ~BRepFromSolidElementsBuilder()
 ### build_brep_without_block_mesh
 
 ```cpp
-public std::pair<VertexIndexMapping, IndexToModelMeshElementsMapping> build_brep_without_block_mesh()
+public pair build_brep_without_block_mesh()
 ```
 
 
@@ -58,7 +52,7 @@ public std::pair<VertexIndexMapping, IndexToModelMeshElementsMapping> build_brep
 ### build_brep_with_block_mesh
 
 ```cpp
-public std::pair<VertexIndexMapping, IndexToBRepMeshElementsMapping> build_brep_with_block_mesh()
+public pair build_brep_with_block_mesh()
 ```
 
 

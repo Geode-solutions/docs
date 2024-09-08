@@ -20,12 +20,6 @@ Inherits from CornersLinesBuilder<Model>
 
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### ~ModelBuilderFromMeshes
@@ -42,24 +36,17 @@ public void build_wireframe_step()
 ```
 
 
-### build_surfaces
-
-```cpp
-public void build_surfaces()
-```
-
-
-### mappings
-
-```cpp
-public ModelMappings mappings()
-```
-
-
 ### is_corner
 
 ```cpp
 public bool is_corner(index_t vertex)
+```
+
+
+### build_surfaces
+
+```cpp
+public ModelMappings build_surfaces()
 ```
 
 
@@ -74,5 +61,19 @@ protected void ModelBuilderFromMeshes<Model>(Model & model, absl::Span<const std
 
 # class ModelBuilderFromMeshes
 
+
+```cpp
+Inherits from CornersLinesBuilder<Section>
+```
+
+
+
 # class ModelBuilderFromMeshes
+
+
+```cpp
+Inherits from CornersLinesBuilder<BRep>
+```
+
+
 

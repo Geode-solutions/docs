@@ -25,7 +25,7 @@ Inherits from ModelBuilderFromMeshes<BRep>
 ### BRepFromMeshesBuilder
 
 ```cpp
-public void BRepFromMeshesBuilder(BRep & brep, absl::Span<const std::reference_wrapper<const PointSet3D> > corners, absl::Span<const std::reference_wrapper<const EdgedCurve3D> > curves, absl::Span<const std::reference_wrapper<const SurfaceMesh3D> > surfaces)
+public void BRepFromMeshesBuilder(BRep & brep, Span corners, Span curves, Span surfaces)
 ```
 
 
