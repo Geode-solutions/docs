@@ -14,12 +14,6 @@ const name = words.join('-');
 # class SectionExplicitModeler
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### SectionExplicitModeler
@@ -39,7 +33,7 @@ public SectionExplicitModeler & operator=(const SectionExplicitModeler & )
 ### SectionExplicitModeler
 
 ```cpp
-public void SectionExplicitModeler(BoundingBox2D bbox)
+public void SectionExplicitModeler(BoundingBox bbox)
 ```
 
 
@@ -57,10 +51,17 @@ public void select_curve_to_insert(const EdgedCurve2D & mesh)
 ```
 
 
+### add_section
+
+```cpp
+public void add_section(const Section & section)
+```
+
+
 ### insert_and_build
 
 ```cpp
-public std::tuple<Section, ModelGenericMapping> insert_and_build()
+public tuple insert_and_build()
 ```
 
 

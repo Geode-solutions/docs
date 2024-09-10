@@ -17,32 +17,27 @@ const name = words.join('-');
 
 ## Namespaces
 
-* [detail](detail/index.md)
+* [internal](internal/index.md)
 
 
 ## Records
 
+* [BRepExplicitModelerRemainingException](BRepExplicitModelerRemainingException.md)
 * [BRepExplicitModeler](BRepExplicitModeler.md)
 * [BRepMappings](BRepMappings.md)
+* [BRepModelerMappingsBuilder](BRepModelerMappingsBuilder.md)
+* [BRepSolidModeler](BRepSolidModeler.md)
 * [BRepVolumicInserter](BRepVolumicInserter.md)
 * [ExplicitBRepLibrary](ExplicitBRepLibrary.md)
 * [ExplicitCommonLibrary](ExplicitCommonLibrary.md)
 * [ExplicitSectionLibrary](ExplicitSectionLibrary.md)
+* [InsertionData](InsertionData.md)
+* [MeshElementsMap](MeshElementsMap.md)
+* [MeshElements](MeshElements.md)
+* [Meshes](Meshes.md)
 * [ModelMappings](ModelMappings.md)
-* [ModelMeshesElementMapping](ModelMeshesElementMapping.md)
-* [ModelMeshesVertexMapping](ModelMeshesVertexMapping.md)
 * [SectionExplicitModeler](SectionExplicitModeler.md)
+* [SolidElementsIndices](SolidElementsIndices.md)
 * [uuid](uuid.md)
-
-
-## Functions
-
-### simplify_brep_from_macro_information
-
-```cpp
-void simplify_brep_from_macro_information(BRep & brep, ModelMeshesElementMapping & mesh_element_mappings, ModelMeshesVertexMapping & mesh_vertices_mappings)
-```
-
-
 
 

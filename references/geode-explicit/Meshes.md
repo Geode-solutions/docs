@@ -11,24 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelMeshesVertexMapping
+# struct Meshes
+
 
 ## Members
 
 ```cpp
-public MeshVertexMapping corners
+public vector surfaces
 
 ```
 
 ```cpp
-public MeshVertexMapping lines
+public vector curves
 
 ```
 
 ```cpp
-public MeshVertexMapping surfaces
+public vector point_sets
 
 ```
+
+
+
+## Functions
+
+### Meshes
+
+```cpp
+public void Meshes()
+```
+
 
 
 

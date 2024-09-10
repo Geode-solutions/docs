@@ -16,7 +16,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public ModelGenericMapping component_mapping
+public ModelMapping component_mapping
 
 ```
 

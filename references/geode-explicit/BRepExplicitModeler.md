@@ -14,12 +14,6 @@ const name = words.join('-');
 # class BRepExplicitModeler
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### BRepExplicitModeler
@@ -39,7 +33,14 @@ public BRepExplicitModeler & operator=(const BRepExplicitModeler & )
 ### BRepExplicitModeler
 
 ```cpp
-public void BRepExplicitModeler(BoundingBox3D bbox)
+public void BRepExplicitModeler()
+```
+
+
+### BRepExplicitModeler
+
+```cpp
+public void BRepExplicitModeler(const BRep & brep)
 ```
 
 
@@ -92,13 +93,6 @@ public void add_surface(const Surface3D & surface)
 ```
 
 
-### add_block
-
-```cpp
-public void add_block(const BRep & brep, const Block3D & block)
-```
-
-
 ### add_brep
 
 ```cpp
@@ -106,34 +100,14 @@ public void add_brep(const BRep & brep)
 ```
 
 
-### paint_volume
-
-```cpp
-public void paint_volume(const uuid & volume_uuid, absl::Span<const uuid> bounding_surface_uuids)
-```
-
-
- Paints the given uuid on the tetrahedra inside the given surfaces.         These surfaces should have already been added
-
 ### build
 
 ```cpp
-public std::tuple<BRep, ModelMappings> build()
+public tuple build()
 ```
 
 
  Returns the merged BRep (no mesh in Blocks) including all the added curves and surfaces and gives the "input to output" and "output to input" mappings between Surfaces and Lines
-
-### build_painted_volumes
-
-```cpp
-public std::tuple<BRep, ModelMappings> build_painted_volumes()
-```
-
-
- Returns the Merged BRep including the added surfaces and curves around painted volumes only and gives the "input to output" and "output to input" mappings between Surfaces and Lines.
-
-**warning** Generated BRep does not include added Blocks nor PointSets/Corners
 
 
 

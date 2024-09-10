@@ -11,35 +11,39 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct PointSetStat
+# struct InsertionData
 
 
 ## Members
 
 ```cpp
-public index_t ref_position
+public ExtractedMeshes extracted_meshes
 
 ```
 
 ```cpp
-public index_t nb_points
+public MeshElements not_inserted_elements
 
 ```
 
 ```cpp
-public Point3D bbox_min
+public INSERTION_STATUS insertion_status
 
 ```
 
 
 
-## Functions
+## Enums
 
-### operator<
+| enum class INSERTION_STATUS |
 
-```cpp
-public bool operator<(const PointSetStat & other)
-```
+--
+
+| nothing_inserted |
+| some_inserted |
+| all_inserted |
+| none |
+
 
 
 

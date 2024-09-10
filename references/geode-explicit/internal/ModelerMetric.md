@@ -13,14 +13,6 @@ const name = words.join('-');
 
 # class ModelerMetric
 
-# class ModelerMetric
-
-
-## Records
-
-Impl
-
-
 
 ## Functions
 
@@ -69,4 +61,8 @@ public const Metric<dimension> & build()
 
 
 # class ModelerMetric
+
+
+# class ModelerMetric
+
 

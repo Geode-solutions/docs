@@ -11,22 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelMeshesElementMapping
+# struct SolidElementsIndices
+
 
 ## Members
 
 ```cpp
-public MeshElementMapping corners
+public vector facets
 
 ```
 
 ```cpp
-public MeshElementMapping lines
+public vector edges
 
 ```
 
 ```cpp
-public MeshElementMapping surfaces
+public vector vertices
 
 ```
 
