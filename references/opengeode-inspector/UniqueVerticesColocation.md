@@ -1,42 +1,58 @@
-# class UniqueVerticesColocation
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
 
 # class UniqueVerticesColocation
 
+
 # class UniqueVerticesColocation
 
-Class for inspecting the colocation of unique vertices in a Model (BRep or Section)
+
+# class UniqueVerticesColocation
+
+
+ Class for inspecting the colocation of unique vertices in a Model (BRep or Section)
+
+
 
 ## Functions
 
 ### UniqueVerticesColocation
 
 ```cpp
-public void UniqueVerticesColocation<dimension, Model>(const UniqueVerticesColocation<dimension, Model> & )
+public void UniqueVerticesColocation<Model>(const UniqueVerticesColocation<Model> & )
 ```
+
 
 ### operator=
 
 ```cpp
-public UniqueVerticesColocation<dimension, Model> & operator=(const UniqueVerticesColocation<dimension, Model> & )
+public UniqueVerticesColocation<Model> & operator=(const UniqueVerticesColocation<Model> & )
 ```
+
 
 ### UniqueVerticesColocation
 
 ```cpp
-public void UniqueVerticesColocation<dimension, Model>(const Model & model)
+public void UniqueVerticesColocation<Model>(const Model & model)
 ```
 
-### UniqueVerticesColocation
-
-```cpp
-public void UniqueVerticesColocation<dimension, Model>(const Model & model, bool verbose)
-```
 
 ### ~UniqueVerticesColocation
 
 ```cpp
-public void ~UniqueVerticesColocation<dimension, Model>()
+public void ~UniqueVerticesColocation<Model>()
 ```
+
 
 ### model_has_unique_vertices_linked_to_different_points
 
@@ -44,32 +60,20 @@ public void ~UniqueVerticesColocation<dimension, Model>()
 public bool model_has_unique_vertices_linked_to_different_points()
 ```
 
+
 ### model_has_colocated_unique_vertices
 
 ```cpp
 public bool model_has_colocated_unique_vertices()
 ```
 
-### nb_colocated_unique_vertices
+
+### inspect_unique_vertices
 
 ```cpp
-public index_t nb_colocated_unique_vertices()
+public UniqueVerticesInspectionResult inspect_unique_vertices()
 ```
 
-### nb_unique_vertices_linked_to_different_points
 
-```cpp
-public index_t nb_unique_vertices_linked_to_different_points()
-```
 
-### colocated_unique_vertices_groups
 
-```cpp
-public std::vector<std::vector<index_t> > colocated_unique_vertices_groups()
-```
-
-### unique_vertices_linked_to_different_points
-
-```cpp
-public vector unique_vertices_linked_to_different_points()
-```

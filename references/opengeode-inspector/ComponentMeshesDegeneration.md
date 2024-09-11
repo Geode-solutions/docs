@@ -1,57 +1,72 @@
-# class ComponentMeshesDegeneration
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
 
 # class ComponentMeshesDegeneration
 
-# class ComponentMeshesDegeneration
 
-Class for inspecting the degeneration of elements in the Component Meshes of a Model (BRep or Section).
+ Class for inspecting the degeneration of elements in the Component Meshes of a Model (BRep or Section).
+
+
 
 ## Functions
 
 ### ComponentMeshesDegeneration
 
 ```cpp
-public void ComponentMeshesDegeneration<dimension, Model>(const ComponentMeshesDegeneration<dimension, Model> & )
+public void ComponentMeshesDegeneration<Model>(const ComponentMeshesDegeneration<Model> & )
 ```
+
 
 ### operator=
 
 ```cpp
-public ComponentMeshesDegeneration<dimension, Model> & operator=(const ComponentMeshesDegeneration<dimension, Model> & )
+public ComponentMeshesDegeneration<Model> & operator=(const ComponentMeshesDegeneration<Model> & )
 ```
+
+
+### add_degenerated_edges
+
+```cpp
+public void add_degenerated_edges(InspectionIssuesMap<index_t> & issues_map)
+```
+
+
+### add_degenerated_polygons
+
+```cpp
+public void add_degenerated_polygons(InspectionIssuesMap<index_t> & issues_map)
+```
+
 
 ### ComponentMeshesDegeneration
 
 ```cpp
-public void ComponentMeshesDegeneration<dimension, Model>(const Model & model)
+protected void ComponentMeshesDegeneration<Model>(const Model & model)
 ```
 
-### ComponentMeshesDegeneration
+
+### model
 
 ```cpp
-public void ComponentMeshesDegeneration<dimension, Model>(const Model & model, bool verbose)
+protected const Model & model()
 ```
 
-### ~ComponentMeshesDegeneration
 
-```cpp
-public void ~ComponentMeshesDegeneration<dimension, Model>()
-```
 
-### degenerated_component_meshes
 
-```cpp
-public vector degenerated_component_meshes()
-```
+# class ComponentMeshesDegeneration
 
-### components_nb_degenerated_elements
 
-```cpp
-public flat_hash_map components_nb_degenerated_elements()
-```
+# class ComponentMeshesDegeneration
 
-### components_degenerated_elements
 
-```cpp
-public flat_hash_map components_degenerated_elements()
-```

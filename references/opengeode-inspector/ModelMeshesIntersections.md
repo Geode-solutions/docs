@@ -1,38 +1,55 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class ModelMeshesIntersections
 
-Class for inspecting the intersections of a Model meshes
+
+# class ModelMeshesIntersections
+
+
+ Class for inspecting the intersections of a Model meshes
+
+
 
 ## Functions
 
 ### ModelMeshesIntersections
 
 ```cpp
-public void ModelMeshesIntersections<dimension, Model>(const ModelMeshesIntersections<dimension, Model> & )
+public void ModelMeshesIntersections<Model>(const ModelMeshesIntersections<Model> & )
 ```
+
 
 ### operator=
 
 ```cpp
-public ModelMeshesIntersections<dimension, Model> & operator=(const ModelMeshesIntersections<dimension, Model> & )
+public ModelMeshesIntersections<Model> & operator=(const ModelMeshesIntersections<Model> & )
 ```
+
 
 ### ModelMeshesIntersections
 
 ```cpp
-public void ModelMeshesIntersections<dimension, Model>(const Model & model)
+public void ModelMeshesIntersections<Model>(const Model & model)
 ```
 
-### ModelMeshesIntersections
-
-```cpp
-public void ModelMeshesIntersections<dimension, Model>(const Model & model, bool verbose)
-```
 
 ### ~ModelMeshesIntersections
 
 ```cpp
-public void ~ModelMeshesIntersections<dimension, Model>()
+public void ~ModelMeshesIntersections<Model>()
 ```
+
 
 ### model_has_intersecting_surfaces
 
@@ -40,18 +57,16 @@ public void ~ModelMeshesIntersections<dimension, Model>()
 public bool model_has_intersecting_surfaces()
 ```
 
-### nb_intersecting_surfaces_elements_pair
+
+### inspect_intersections
 
 ```cpp
-public index_t nb_intersecting_surfaces_elements_pair()
+public ElementsIntersectionsInspectionResult inspect_intersections()
 ```
 
-### intersecting_surfaces_elements
 
-```cpp
-public std::vector<std::pair<ComponentMeshElement, ComponentMeshElement> > intersecting_surfaces_elements()
-```
+
 
 # class ModelMeshesIntersections
 
-# class ModelMeshesIntersections
+

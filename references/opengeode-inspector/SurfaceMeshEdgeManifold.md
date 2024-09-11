@@ -1,8 +1,28 @@
-# class SurfaceMeshEdgeManifold
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
 
 # class SurfaceMeshEdgeManifold
 
-Class for inspecting the manifold property of a SurfaceMesh
+
+# class SurfaceMeshEdgeManifold
+
+
+# class SurfaceMeshEdgeManifold
+
+
+ Class for inspecting the manifold property of a SurfaceMesh
+
+
 
 ## Functions
 
@@ -12,11 +32,13 @@ Class for inspecting the manifold property of a SurfaceMesh
 public void SurfaceMeshEdgeManifold<dimension>(const SurfaceMeshEdgeManifold<dimension> & )
 ```
 
+
 ### operator=
 
 ```cpp
 public SurfaceMeshEdgeManifold<dimension> & operator=(const SurfaceMeshEdgeManifold<dimension> & )
 ```
+
 
 ### SurfaceMeshEdgeManifold
 
@@ -24,11 +46,6 @@ public SurfaceMeshEdgeManifold<dimension> & operator=(const SurfaceMeshEdgeManif
 public void SurfaceMeshEdgeManifold<dimension>(const SurfaceMesh<dimension> & mesh)
 ```
 
-### SurfaceMeshEdgeManifold
-
-```cpp
-public void SurfaceMeshEdgeManifold<dimension>(const SurfaceMesh<dimension> & mesh, bool verbose)
-```
 
 ### ~SurfaceMeshEdgeManifold
 
@@ -36,22 +53,20 @@ public void SurfaceMeshEdgeManifold<dimension>(const SurfaceMesh<dimension> & me
 public void ~SurfaceMeshEdgeManifold<dimension>()
 ```
 
+
 ### mesh_edges_are_manifold
 
 ```cpp
 public bool mesh_edges_are_manifold()
 ```
 
-### nb_non_manifold_edges
-
-```cpp
-public index_t nb_non_manifold_edges()
-```
 
 ### non_manifold_edges
 
 ```cpp
-public vector non_manifold_edges()
+public InspectionIssues non_manifold_edges()
 ```
 
-# class SurfaceMeshEdgeManifold
+
+
+

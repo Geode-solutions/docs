@@ -1,6 +1,22 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class BRepComponentMeshesAdjacency
 
-Class for inspecting the adjacency of the surface edges and solid facets in the Component Meshes of a BRep.
+
+ Class for inspecting the adjacency of the surface edges and solid facets in the Component Meshes of a BRep.
+
+
 
 ## Functions
 
@@ -10,11 +26,13 @@ Class for inspecting the adjacency of the surface edges and solid facets in the 
 public void BRepComponentMeshesAdjacency(const BRepComponentMeshesAdjacency & )
 ```
 
+
 ### operator=
 
 ```cpp
 public BRepComponentMeshesAdjacency & operator=(const BRepComponentMeshesAdjacency & )
 ```
+
 
 ### BRepComponentMeshesAdjacency
 
@@ -22,11 +40,6 @@ public BRepComponentMeshesAdjacency & operator=(const BRepComponentMeshesAdjacen
 public void BRepComponentMeshesAdjacency(const BRep & model)
 ```
 
-### BRepComponentMeshesAdjacency
-
-```cpp
-public void BRepComponentMeshesAdjacency(const BRep & model, bool verbose)
-```
 
 ### ~BRepComponentMeshesAdjacency
 
@@ -34,32 +47,13 @@ public void BRepComponentMeshesAdjacency(const BRep & model, bool verbose)
 public void ~BRepComponentMeshesAdjacency()
 ```
 
-### components_with_wrong_adjacencies
+
+### inspect_brep_meshes_adjacencies
 
 ```cpp
-public vector components_with_wrong_adjacencies()
+public BRepMeshesAdjacencyInspectionResult inspect_brep_meshes_adjacencies()
 ```
 
-### surfaces_nb_edges_with_wrong_adjacencies
 
-```cpp
-public flat_hash_map surfaces_nb_edges_with_wrong_adjacencies()
-```
 
-### surfaces_edges_with_wrong_adjacencies
 
-```cpp
-public flat_hash_map surfaces_edges_with_wrong_adjacencies()
-```
-
-### blocks_nb_facets_with_wrong_adjacencies
-
-```cpp
-public flat_hash_map blocks_nb_facets_with_wrong_adjacencies()
-```
-
-### blocks_facets_with_wrong_adjacencies
-
-```cpp
-public flat_hash_map blocks_facets_with_wrong_adjacencies()
-```

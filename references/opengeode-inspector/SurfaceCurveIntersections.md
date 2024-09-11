@@ -1,8 +1,25 @@
-# class SurfaceCurveIntersections
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
 
 # class SurfaceCurveIntersections
 
-Class for inspecting the intersections of TriangulatedSurfacees
+
+# class SurfaceCurveIntersections
+
+
+ Class for inspecting the intersections of TriangulatedSurfacees
+
+
 
 ## Functions
 
@@ -12,11 +29,13 @@ Class for inspecting the intersections of TriangulatedSurfacees
 public void SurfaceCurveIntersections<dimension>(const SurfaceCurveIntersections<dimension> & )
 ```
 
+
 ### operator=
 
 ```cpp
 public SurfaceCurveIntersections<dimension> & operator=(const SurfaceCurveIntersections<dimension> & )
 ```
+
 
 ### SurfaceCurveIntersections
 
@@ -24,11 +43,6 @@ public SurfaceCurveIntersections<dimension> & operator=(const SurfaceCurveInters
 public void SurfaceCurveIntersections<dimension>(const TriangulatedSurface<dimension> & surface, const EdgedCurve<dimension> & curve)
 ```
 
-### SurfaceCurveIntersections
-
-```cpp
-public void SurfaceCurveIntersections<dimension>(const TriangulatedSurface<dimension> & mesh, const EdgedCurve<dimension> & curve, bool verbose)
-```
 
 ### ~SurfaceCurveIntersections
 
@@ -36,22 +50,23 @@ public void SurfaceCurveIntersections<dimension>(const TriangulatedSurface<dimen
 public void ~SurfaceCurveIntersections<dimension>()
 ```
 
+
 ### meshes_have_intersections
 
 ```cpp
 public bool meshes_have_intersections()
 ```
 
-### nb_intersecting_elements_pair
-
-```cpp
-public index_t nb_intersecting_elements_pair()
-```
 
 ### intersecting_elements
 
 ```cpp
-public std::vector<std::pair<index_t, index_t> > intersecting_elements()
+public InspectionIssues intersecting_elements()
 ```
 
+
+
+
 # class SurfaceCurveIntersections
+
+

@@ -1,10 +1,28 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class BRepInspector
 
-Class for inspecting a BRep model**extends**
+
+ Class for inspecting a BRep model**extends** 
+
+
 
 ```cpp
-Inherits from AddInspectors<BRep, BRepTopologyInspector, BRepUniqueVerticesColocation, BRepComponentMeshesAdjacency, BRepComponentMeshesColocation, BRepComponentMeshesDegeneration, BRepComponentMeshesManifold, BRepMeshesIntersections>
+Inherits from AddInspectors<BRep, BRepMeshesInspector, BRepTopologyInspector>
 ```
+
+
 
 ## Functions
 
@@ -14,11 +32,13 @@ Inherits from AddInspectors<BRep, BRepTopologyInspector, BRepUniqueVerticesColoc
 public void BRepInspector(const BRepInspector & )
 ```
 
+
 ### operator=
 
 ```cpp
 public BRepInspector & operator=(const BRepInspector & )
 ```
+
 
 ### BRepInspector
 
@@ -26,8 +46,13 @@ public BRepInspector & operator=(const BRepInspector & )
 public void BRepInspector(const BRep & brep)
 ```
 
-### BRepInspector
+
+### inspect_brep
 
 ```cpp
-public void BRepInspector(const BRep & brep, bool verbose)
+public BRepInspectionResult inspect_brep()
 ```
+
+
+
+

@@ -1,48 +1,52 @@
-# class ComponentMeshesAdjacency
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
 
 # class ComponentMeshesAdjacency
 
-# class ComponentMeshesAdjacency
 
-Class for inspecting the adjacency of edges in the Component Meshes of a Model (BRep or Section).
+ Class for inspecting the adjacency of edges in the Component Meshes of a Model (BRep or Section).
+
+
 
 ## Functions
 
 ### ComponentMeshesAdjacency
 
 ```cpp
-public void ComponentMeshesAdjacency<dimension, Model>(const ComponentMeshesAdjacency<dimension, Model> & )
+public void ComponentMeshesAdjacency<Model>(const ComponentMeshesAdjacency<Model> & )
 ```
+
 
 ### operator=
 
 ```cpp
-public ComponentMeshesAdjacency<dimension, Model> & operator=(const ComponentMeshesAdjacency<dimension, Model> & )
+public ComponentMeshesAdjacency<Model> & operator=(const ComponentMeshesAdjacency<Model> & )
 ```
 
-### surfaces_with_wrong_adjacencies
+
+### add_surfaces_edges_with_wrong_adjacencies
 
 ```cpp
-public vector surfaces_with_wrong_adjacencies()
+public void add_surfaces_edges_with_wrong_adjacencies(InspectionIssuesMap<PolygonEdge> & issues_map)
 ```
 
-### surfaces_nb_edges_with_wrong_adjacencies
-
-```cpp
-public flat_hash_map surfaces_nb_edges_with_wrong_adjacencies()
-```
-
-### surfaces_edges_with_wrong_adjacencies
-
-```cpp
-public flat_hash_map surfaces_edges_with_wrong_adjacencies()
-```
 
 ### ComponentMeshesAdjacency
 
 ```cpp
-protected void ComponentMeshesAdjacency<dimension, Model>(const Model & model, bool verbose)
+protected void ComponentMeshesAdjacency<Model>(const Model & model)
 ```
+
 
 ### model
 
@@ -50,8 +54,12 @@ protected void ComponentMeshesAdjacency<dimension, Model>(const Model & model, b
 protected const Model & model()
 ```
 
-### verbose
 
-```cpp
-protected bool verbose()
-```
+
+
+# class ComponentMeshesAdjacency
+
+
+# class ComponentMeshesAdjacency
+
+

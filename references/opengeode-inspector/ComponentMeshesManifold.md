@@ -1,58 +1,59 @@
-# class ComponentMeshesManifold
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
 
 # class ComponentMeshesManifold
 
-Class for inspecting the manifold property in the Component Meshes of a Model (BRep or Section).
+
+ Class for inspecting the manifold property in the Component Meshes of a Model (BRep or Section).
+
+
 
 ## Functions
 
 ### ComponentMeshesManifold
 
 ```cpp
-public void ComponentMeshesManifold<dimension, Model>(const ComponentMeshesManifold<dimension, Model> & )
+public void ComponentMeshesManifold<Model>(const ComponentMeshesManifold<Model> & )
 ```
+
 
 ### operator=
 
 ```cpp
-public ComponentMeshesManifold<dimension, Model> & operator=(const ComponentMeshesManifold<dimension, Model> & )
+public ComponentMeshesManifold<Model> & operator=(const ComponentMeshesManifold<Model> & )
 ```
 
-### surfaces_non_manifold_meshes
+
+### add_surfaces_meshes_non_manifold_vertices
 
 ```cpp
-public vector surfaces_non_manifold_meshes()
+public void add_surfaces_meshes_non_manifold_vertices(InspectionIssuesMap<index_t> & issues_map)
 ```
 
-### surfaces_meshes_nb_non_manifold_vertices
+
+### add_surfaces_meshes_non_manifold_edges
 
 ```cpp
-public flat_hash_map surfaces_meshes_nb_non_manifold_vertices()
+public void add_surfaces_meshes_non_manifold_edges(InspectionIssuesMap<std::array<index_t, 2> > & issues_map)
 ```
 
-### surfaces_meshes_nb_non_manifold_edges
-
-```cpp
-public flat_hash_map surfaces_meshes_nb_non_manifold_edges()
-```
-
-### surfaces_meshes_non_manifold_vertices
-
-```cpp
-public flat_hash_map surfaces_meshes_non_manifold_vertices()
-```
-
-### surfaces_meshes_non_manifold_edges
-
-```cpp
-public flat_hash_map surfaces_meshes_non_manifold_edges()
-```
 
 ### ComponentMeshesManifold
 
 ```cpp
-protected void ComponentMeshesManifold<dimension, Model>(const Model & model, bool verbose)
+protected void ComponentMeshesManifold<Model>(const Model & model)
 ```
+
 
 ### model
 
@@ -60,10 +61,12 @@ protected void ComponentMeshesManifold<dimension, Model>(const Model & model, bo
 protected const Model & model()
 ```
 
-### verbose
 
-```cpp
-protected bool verbose()
-```
+
 
 # class ComponentMeshesManifold
+
+
+# class ComponentMeshesManifold
+
+

@@ -1,6 +1,22 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class SectionComponentMeshesAdjacency
 
-Class for inspecting the adjacency of the surface edges in the Component Meshes of a Section.
+
+ Class for inspecting the adjacency of the surface edges in the Component Meshes of a Section.
+
+
 
 ## Functions
 
@@ -10,11 +26,13 @@ Class for inspecting the adjacency of the surface edges in the Component Meshes 
 public void SectionComponentMeshesAdjacency(const SectionComponentMeshesAdjacency & )
 ```
 
+
 ### operator=
 
 ```cpp
 public SectionComponentMeshesAdjacency & operator=(const SectionComponentMeshesAdjacency & )
 ```
+
 
 ### SectionComponentMeshesAdjacency
 
@@ -22,11 +40,6 @@ public SectionComponentMeshesAdjacency & operator=(const SectionComponentMeshesA
 public void SectionComponentMeshesAdjacency(const Section & model)
 ```
 
-### SectionComponentMeshesAdjacency
-
-```cpp
-public void SectionComponentMeshesAdjacency(const Section & model, bool verbose)
-```
 
 ### ~SectionComponentMeshesAdjacency
 
@@ -34,20 +47,13 @@ public void SectionComponentMeshesAdjacency(const Section & model, bool verbose)
 public void ~SectionComponentMeshesAdjacency()
 ```
 
-### components_with_wrong_adjacencies
+
+### inspect_section_meshes_adjacencies
 
 ```cpp
-public std::vector<uuid> components_with_wrong_adjacencies()
+public SectionMeshesAdjacencyInspectionResult inspect_section_meshes_adjacencies()
 ```
 
-### surfaces_nb_edges_with_wrong_adjacencies
 
-```cpp
-public flat_hash_map surfaces_nb_edges_with_wrong_adjacencies()
-```
 
-### surfaces_edges_with_wrong_adjacencies
 
-```cpp
-public absl::flat_hash_map<uuid, std::vector<PolygonEdge> > surfaces_edges_with_wrong_adjacencies()
-```

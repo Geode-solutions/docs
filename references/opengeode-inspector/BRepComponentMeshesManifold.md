@@ -1,6 +1,22 @@
+<script setup>
+import {useRoute} from 'vitepress'
+const {path} = useRoute()
+const tokens = path.split('/')
+const words = tokens[2].split('-');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    words[i] = words[i].replace('geode', 'Geode')
+}
+const name = words.join('-');
+</script>
+# Project {{ name }}
+
 # class BRepComponentMeshesManifold
 
-Class for inspecting the manifold property in the Component Meshes of a BRep.
+
+ Class for inspecting the manifold property in the Component Meshes of a BRep.
+
+
 
 ## Functions
 
@@ -10,11 +26,13 @@ Class for inspecting the manifold property in the Component Meshes of a BRep.
 public void BRepComponentMeshesManifold(const BRepComponentMeshesManifold & )
 ```
 
+
 ### operator=
 
 ```cpp
 public BRepComponentMeshesManifold & operator=(const BRepComponentMeshesManifold & )
 ```
+
 
 ### BRepComponentMeshesManifold
 
@@ -22,11 +40,6 @@ public BRepComponentMeshesManifold & operator=(const BRepComponentMeshesManifold
 public void BRepComponentMeshesManifold(const BRep & brep)
 ```
 
-### BRepComponentMeshesManifold
-
-```cpp
-public void BRepComponentMeshesManifold(const BRep & brep, bool verbose)
-```
 
 ### ~BRepComponentMeshesManifold
 
@@ -34,50 +47,13 @@ public void BRepComponentMeshesManifold(const BRep & brep, bool verbose)
 public void ~BRepComponentMeshesManifold()
 ```
 
-### components_non_manifold_meshes
+
+### inspect_brep_manifold
 
 ```cpp
-public std::vector<uuid> components_non_manifold_meshes()
+public BRepMeshesManifoldInspectionResult inspect_brep_manifold()
 ```
 
-### component_meshes_nb_non_manifold_vertices
 
-```cpp
-public absl::flat_hash_map<uuid, index_t> component_meshes_nb_non_manifold_vertices()
-```
 
-### component_meshes_nb_non_manifold_edges
 
-```cpp
-public absl::flat_hash_map<uuid, index_t> component_meshes_nb_non_manifold_edges()
-```
-
-### component_meshes_nb_non_manifold_facets
-
-```cpp
-public absl::flat_hash_map<uuid, index_t> component_meshes_nb_non_manifold_facets()
-```
-
-### component_meshes_non_manifold_vertices
-
-```cpp
-public absl::flat_hash_map<uuid, std::vector<index_t> > component_meshes_non_manifold_vertices()
-```
-
-### component_meshes_non_manifold_edges
-
-```cpp
-public absl::flat_hash_map<uuid, std::vector<std::array<index_t, 2> > > component_meshes_non_manifold_edges()
-```
-
-### component_meshes_non_manifold_facets
-
-```cpp
-public absl::flat_hash_map<uuid, std::vector<PolyhedronFacetVertices> > component_meshes_non_manifold_facets()
-```
-
-### model_non_manifold_edges
-
-```cpp
-public absl::flat_hash_map<std::array<index_t, 2>, std::vector<uuid> > model_non_manifold_edges()
-```
