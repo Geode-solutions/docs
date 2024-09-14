@@ -2387,13 +2387,6 @@ bool is_light_regular_grid_saveable(const LightRegularGrid<dimension> & light_re
 ```
 
 
-### register_geode_mesh
-
-```cpp
-void register_geode_mesh()
-```
-
-
 ### file_exists
 
 ```cpp
@@ -2482,6 +2475,13 @@ float string_to_float(basic_string_view string)
 
 ```cpp
 double string_to_double(basic_string_view string)
+```
+
+
+### register_geode_mesh
+
+```cpp
+void register_geode_mesh()
 ```
 
 
@@ -3066,6 +3066,41 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### find_intersections_with_boundaries
+
+```cpp
+flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
+```
+
+
+### is_point_inside_block
+
+```cpp
+bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
+```
+
+
+### block_containing_point
+
+```cpp
+optional block_containing_point(const BRep & brep, const Point3D & point)
+```
+
+
 ### convert_surface_mesh
 
 ```cpp
@@ -3231,41 +3266,6 @@ FixedArray brep_active_coordinate_reference_systems(const BRep & brep)
 
 ```cpp
 FixedArray section_active_coordinate_reference_systems(const Section & section)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### find_intersections_with_boundaries
-
-```cpp
-flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
-```
-
-
-### is_point_inside_block
-
-```cpp
-bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
-```
-
-
-### block_containing_point
-
-```cpp
-optional block_containing_point(const BRep & brep, const Point3D & point)
 ```
 
 
