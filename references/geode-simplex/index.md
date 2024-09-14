@@ -76,6 +76,13 @@ void constrained_mesh_blocks(const BRep & output, BRepBuilder & builder)
 ```
 
 
+### constrained_mesh_block
+
+```cpp
+void constrained_mesh_block(const BRep & output, BRepBuilder & builder, const Block3D & block, Span internal_points)
+```
+
+
 ### mesh_blocks
 
 ```cpp
