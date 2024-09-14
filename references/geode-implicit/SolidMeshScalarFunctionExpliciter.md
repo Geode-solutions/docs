@@ -14,18 +14,12 @@ const name = words.join('-');
 # class SolidMeshScalarFunctionExpliciter
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### SolidMeshScalarFunctionExpliciter
 
 ```cpp
-public void SolidMeshScalarFunctionExpliciter(TetrahedralSolid3D && solid, string_view scalar_function_name)
+public void SolidMeshScalarFunctionExpliciter(TetrahedralSolid3D && solid, basic_string_view scalar_function_name)
 ```
 
 
@@ -46,7 +40,7 @@ public void ~SolidMeshScalarFunctionExpliciter()
 ### add_scalar_isovalues
 
 ```cpp
-public void add_scalar_isovalues(absl::Span<const double> scalar_function_values)
+public void add_scalar_isovalues(Span scalar_function_values)
 ```
 
 

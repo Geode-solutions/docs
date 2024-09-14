@@ -14,12 +14,6 @@ const name = words.join('-');
 # class StratigraphicModelInserter
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### StratigraphicModelInserter
@@ -46,7 +40,7 @@ public void select_stratigraphic_surface_to_insert(const TriangulatedSurface3D &
 ### insert_and_build
 
 ```cpp
-public std::tuple<BRep, ModelMappings> insert_and_build()
+public tuple insert_and_build()
 ```
 
 

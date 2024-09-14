@@ -11,35 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class StratigraphicLSOInput
+# class ImplicitWorkflowsLibrary
 
 
 ```cpp
-Inherits from StratigraphicModelInput
+Inherits from Library
 ```
 
 
 
 ## Functions
 
-### StratigraphicLSOInput
+### initialize
 
 ```cpp
-public void StratigraphicLSOInput(string_view filename)
-```
-
-
-### extension
-
-```cpp
-public string_view extension()
-```
-
-
-### read
-
-```cpp
-public StratigraphicModel read()
+public void initialize()
 ```
 
 

@@ -19,7 +19,7 @@ const name = words.join('-');
 ### add_scalar_isovalues
 
 ```cpp
-public void add_scalar_isovalues(absl::Span<const double> scalar_function_values)
+public void add_scalar_isovalues(Span scalar_function_values)
 ```
 
 ### add_one_scalar_isovalue
@@ -38,7 +38,7 @@ public BRep build_brep()
 ### ScalarFunctionExpliciter3DImpl
 
 ```cpp
-protected void ScalarFunctionExpliciter3DImpl(BackgroundSolid bmesh, string_view scalar_function_name)
+protected void ScalarFunctionExpliciter3DImpl(BackgroundSolid bmesh, basic_string_view scalar_function_name)
 ```
 
 
@@ -59,7 +59,7 @@ protected BackgroundSolidInserter & inserter()
 ### scalar_function_name
 
 ```cpp
-protected string_view scalar_function_name()
+protected basic_string_view scalar_function_name()
 ```
 
 
@@ -67,13 +67,6 @@ protected string_view scalar_function_name()
 
 ```cpp
 protected void add_inserted_isovalue_to_list(double isovalue)
-```
-
-
-### bmesh_solid_with_isovalue_attribute_on_tetrahedra
-
-```cpp
-public int bmesh_solid_with_isovalue_attribute_on_tetrahedra()
 ```
 
 

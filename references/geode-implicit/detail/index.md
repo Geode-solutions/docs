@@ -15,9 +15,28 @@ const name = words.join('-');
 
 
 
-## Records
+## Functions
 
-* [ScalarFunctionExpliciter3DImpl](ScalarFunctionExpliciter3DImpl.md)
-* [StratigraphicLSOInput](StratigraphicLSOInput.md)
+### extrapolate_surface_mesh_scalar_function
+
+```cpp
+void extrapolate_surface_mesh_scalar_function(const SurfaceMesh<dimension> & surface_mesh, basic_string_view scalar_function_name, Span undefined_vertices)
+```
+
+
+### extrapolate_solid_mesh_scalar_function
+
+```cpp
+void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, basic_string_view scalar_function_name, Span undefined_vertices)
+```
+
+
+### extrapolate_light_regular_grid_scalar_function
+
+```cpp
+void extrapolate_light_regular_grid_scalar_function(const LightRegularGrid<dimension> & grid, basic_string_view scalar_function_name, Span undefined_vertices)
+```
+
+
 
 

@@ -14,18 +14,12 @@ const name = words.join('-');
 # class GridScalarFunctionExpliciter3D
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### GridScalarFunctionExpliciter3D
 
 ```cpp
-public void GridScalarFunctionExpliciter3D(const Grid3D & grid, string_view scalar_function_name)
+public void GridScalarFunctionExpliciter3D(const Grid3D & grid, basic_string_view scalar_function_name)
 ```
 
 
@@ -39,7 +33,7 @@ public void ~GridScalarFunctionExpliciter3D()
 ### add_scalar_isovalues
 
 ```cpp
-public void add_scalar_isovalues(absl::Span<const double> scalar_function_values)
+public void add_scalar_isovalues(Span scalar_function_values)
 ```
 
 

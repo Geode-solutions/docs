@@ -11,22 +11,18 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelMappings
+# struct DuplicatedPart
+
 
 ## Members
 
 ```cpp
-public ModelMapping component_mapping
+public bool is_active
 
 ```
 
 ```cpp
-public ModelMeshesElementMapping mesh_element_mapping
-
-```
-
-```cpp
-public ModelMeshesVertexMapping mesh_vertices_mapping
+public array value_nodes
 
 ```
 

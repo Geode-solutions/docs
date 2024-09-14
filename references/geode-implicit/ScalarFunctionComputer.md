@@ -13,8 +13,6 @@ const name = words.join('-');
 
 # class ScalarFunctionComputer
 
-# class ScalarFunctionComputer
-
 
 ## Functions
 
@@ -35,14 +33,14 @@ public void ~ScalarFunctionComputer<dimension>()
 ### compute_scalar_function
 
 ```cpp
-public void compute_scalar_function(string_view scalar_function_name)
+public void compute_scalar_function(basic_string_view scalar_function_name)
 ```
 
 
 ### compute_scalar_function_with_value_preconditioning
 
 ```cpp
-public void compute_scalar_function_with_value_preconditioning(string_view scalar_function_name, string_view existing_scalar_function_name)
+public void compute_scalar_function_with_value_preconditioning(basic_string_view scalar_function_name, basic_string_view existing_scalar_function_name)
 ```
 
 
@@ -56,4 +54,8 @@ public const LightRegularGrid<dimension> & grid_with_results()
 
 
 # class ScalarFunctionComputer
+
+
+# class ScalarFunctionComputer
+
 

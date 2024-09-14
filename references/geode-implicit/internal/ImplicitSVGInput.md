@@ -11,24 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelMappings
+# class ImplicitSVGInput
 
-## Members
-
-```cpp
-public ModelMapping component_mapping
-
-```
 
 ```cpp
-public ModelMeshesElementMapping mesh_element_mapping
-
+Inherits from ImplicitCrossSectionInput
 ```
+
+
+
+## Functions
+
+### ImplicitSVGInput
 
 ```cpp
-public ModelMeshesVertexMapping mesh_vertices_mapping
-
+public void ImplicitSVGInput(basic_string_view filename)
 ```
+
+
+### extension
+
+```cpp
+public basic_string_view extension()
+```
+
+
+### read
+
+```cpp
+public ImplicitCrossSection read()
+```
+
 
 
 

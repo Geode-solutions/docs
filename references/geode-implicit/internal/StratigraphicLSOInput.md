@@ -11,24 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelMappings
+# class StratigraphicLSOInput
 
-## Members
-
-```cpp
-public ModelMapping component_mapping
-
-```
 
 ```cpp
-public ModelMeshesElementMapping mesh_element_mapping
-
+Inherits from StratigraphicModelInput
 ```
+
+
+
+## Functions
+
+### StratigraphicLSOInput
 
 ```cpp
-public ModelMeshesVertexMapping mesh_vertices_mapping
-
+public void StratigraphicLSOInput(basic_string_view filename)
 ```
+
+
+### extension
+
+```cpp
+public basic_string_view extension()
+```
+
+
+### read
+
+```cpp
+public StratigraphicModel read()
+```
+
 
 
 

@@ -11,23 +11,20 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class ImplicitModelerLibrary
+# struct DuplicatedPart
 
 
-```cpp
-Inherits from Library
-```
-
-
-
-## Functions
-
-### initialize
+## Members
 
 ```cpp
-public void initialize()
+public bool is_active
+
 ```
 
+```cpp
+public array value_nodes
+
+```
 
 
 

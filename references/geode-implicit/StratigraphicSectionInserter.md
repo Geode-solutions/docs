@@ -14,12 +14,6 @@ const name = words.join('-');
 # class StratigraphicSectionInserter
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### StratigraphicSectionInserter
@@ -46,7 +40,7 @@ public void select_stratigraphic_curve_to_insert(const EdgedCurve2D & curve)
 ### insert_and_build
 
 ```cpp
-public std::tuple<Section, ModelGenericMapping> insert_and_build()
+public tuple insert_and_build()
 ```
 
 

@@ -18,28 +18,32 @@ const name = words.join('-');
 ## Namespaces
 
 * [detail](detail/index.md)
+* [internal](internal/index.md)
 
 
 ## Records
 
 * [BRepMappings](BRepMappings.md)
-* [CutSurfaceGrid](CutSurfaceGrid.md)
+* [CrossSectionImpliciter](CrossSectionImpliciter.md)
+* [EdgeVertex](EdgeVertex.md)
 * [GridScalarFunctionExpliciter2D](GridScalarFunctionExpliciter2D.md)
 * [GridScalarFunctionExpliciter3D](GridScalarFunctionExpliciter3D.md)
-* [ImplicitBlockModeler](ImplicitBlockModeler.md)
-* [ImplicitDataManager](ImplicitDataManager.md)
 * [ImplicitExplicitationLibrary](ImplicitExplicitationLibrary.md)
 * [ImplicitIOLibrary](ImplicitIOLibrary.md)
 * [ImplicitImplicitationLibrary](ImplicitImplicitationLibrary.md)
 * [ImplicitInsertionLibrary](ImplicitInsertionLibrary.md)
-* [ImplicitModelerLibrary](ImplicitModelerLibrary.md)
+* [ImplicitModelFromSolid](ImplicitModelFromSolid.md)
+* [ImplicitModelFromStructuralModel](ImplicitModelFromStructuralModel.md)
 * [ImplicitStructuralModelHorizonExpliciter](ImplicitStructuralModelHorizonExpliciter.md)
-* [ImplicitStructuralModeler](ImplicitStructuralModeler.md)
+* [ImplicitWorkflowsLibrary](ImplicitWorkflowsLibrary.md)
+* [ModelComponentToSectionComponentMapping](ModelComponentToSectionComponentMapping.md)
 * [ModelMappings](ModelMappings.md)
 * [ScalarFunctionComputer](ScalarFunctionComputer.md)
 * [SolidMeshScalarFunctionExpliciter](SolidMeshScalarFunctionExpliciter.md)
 * [StratigraphicModelInserter](StratigraphicModelInserter.md)
 * [StratigraphicSectionInserter](StratigraphicSectionInserter.md)
+* [StructuralModelImpliciter](StructuralModelImpliciter.md)
+* [StructuralModelToCrossSectionMapping](StructuralModelToCrossSectionMapping.md)
 * [uuid](uuid.md)
 
 
@@ -48,14 +52,14 @@ const name = words.join('-');
 ### extract_implicit_cross_section_from_axis
 
 ```cpp
-ImplicitCrossSection extract_implicit_cross_section_from_axis(const ImplicitStructuralModel & model, local_index_t axis_direction, double axis_coordinate)
+tuple extract_implicit_cross_section_from_axis(const ImplicitStructuralModel & model, local_index_t axis_direction, double axis_coordinate)
 ```
 
 
 ### extract_stratigraphic_section_from_axis
 
 ```cpp
-StratigraphicSection extract_stratigraphic_section_from_axis(const StratigraphicModel & model, local_index_t axis_direction, double axis_coordinate)
+tuple extract_stratigraphic_section_from_axis(const StratigraphicModel & model, local_index_t axis_direction, double axis_coordinate)
 ```
 
 

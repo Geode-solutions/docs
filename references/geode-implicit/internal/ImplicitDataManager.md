@@ -15,14 +15,26 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from DataConstraintsManager<dimension>
+Inherits from DataConstraintsManager<2U>
 ```
 
 
 
-## Records
+# class ImplicitDataManager
 
-Impl
+
+```cpp
+Inherits from DataConstraintsManager<3U>
+```
+
+
+
+# class ImplicitDataManager
+
+
+```cpp
+Inherits from DataConstraintsManager<dimension>
+```
 
 
 
@@ -49,10 +61,10 @@ public void ~ImplicitDataManager<dimension>()
 ```
 
 
-### add_data_pointset
+### add_data_mesh_points
 
 ```cpp
-public void add_data_pointset(const uuid & data_id, const PointSet<dimension> & pointset, double weight)
+public void add_data_mesh_points(const uuid & data_id, const BoundingBox<dimension> & voi_box, const Mesh & data_mesh, double weight)
 ```
 
 
@@ -99,8 +111,4 @@ public double data_value_from_uuid(const uuid & data_id)
 
 
 
-
-# class ImplicitDataManager
-
-# class ImplicitDataManager
 
