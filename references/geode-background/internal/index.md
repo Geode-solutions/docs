@@ -128,6 +128,13 @@ optional compute_number_of_negative_tetrahedra(Span tetrahedra)
 ```
 
 
+### edge_from_internal_distance
+
+```cpp
+PolyhedronFacetEdge edge_from_internal_distance(const SolidMesh3D & solid, index_t tetrahedron_id, const InternalDistance & idistance)
+```
+
+
 ### optimize_background_solid_elements
 
 ```cpp

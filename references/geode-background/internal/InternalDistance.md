@@ -36,11 +36,6 @@ public array vertices
 
 ```
 
-```cpp
-public Point base_point
-
-```
-
 
 
 ## Records
@@ -75,7 +70,7 @@ public void InternalDistance()
 ### InternalDistance
 
 ```cpp
-public void InternalDistance(double distance_in, array vertices_in)
+public void InternalDistance(CONFIGURATION_TYPE type_in, double distance_in, array vertices_in)
 ```
 
 
@@ -104,13 +99,6 @@ public void InternalDistance(double distance_in, local_index_t vertex_in)
 
 ```cpp
 public void InternalDistance(local_index_t vertex_in)
-```
-
-
-### InternalDistance
-
-```cpp
-public void InternalDistance(double distance_in, array edge_in, Point base_point_in)
 ```
 
 
