@@ -57,6 +57,13 @@ public bool is_vertex_part_of_component_vertices(index_t background_mesh_vertex,
 ```
 
 
+### is_macro_info_mandatory
+
+```cpp
+public bool is_macro_info_mandatory(const uuid & mesh_id)
+```
+
+
 ### add_component_vertex_to_background_mesh_vertex
 
 ```cpp
@@ -96,6 +103,13 @@ public void remove_component_edge_from_background_mesh_edge(const uuid & mesh_id
 
 ```cpp
 public void remove_component_edge_from_background_mesh_vertex(const uuid & mesh_id, index_t edge_id, index_t background_mesh_vertex_id, MacroInfoKey )
+```
+
+
+### set_macro_info_mandatory
+
+```cpp
+public void set_macro_info_mandatory(const uuid & mesh_id, MacroInfoKey )
 ```
 
 

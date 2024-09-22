@@ -51,6 +51,13 @@ public void update_vertices(Span mappings)
 ```
 
 
+### set_macro_info_mandatory
+
+```cpp
+public void set_macro_info_mandatory(const uuid & mesh_id)
+```
+
+
 ### MacroInfoBuilder
 
 ```cpp

@@ -29,5 +29,12 @@ public void PolygonOrchestrator(class BackgroundSolidInserter::Impl & inserter, 
 ```
 
 
+### insert_vertices
+
+```cpp
+public void insert_vertices(Span elements)
+```
+
+
 
 

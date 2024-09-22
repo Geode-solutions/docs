@@ -63,6 +63,12 @@ protected void InserterOrchestrator(ProgressLogger & logger)
 protected void do_process_element(const Element & element)
 ```
 
+### insert_vertices
+
+```cpp
+protected void insert_vertices(Span elements)
+```
+
 ### skip_element
 
 ```cpp

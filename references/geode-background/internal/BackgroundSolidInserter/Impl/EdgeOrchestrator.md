@@ -29,5 +29,12 @@ public void EdgeOrchestrator(class BackgroundSolidInserter::Impl & inserter, Pro
 ```
 
 
+### insert_vertices
+
+```cpp
+public void insert_vertices(Span elements)
+```
+
+
 
 
