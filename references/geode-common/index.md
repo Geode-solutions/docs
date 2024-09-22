@@ -765,6 +765,13 @@ SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh
 ```
 
 
+### is_split_split_collapse_edge_valid
+
+```cpp
+bool is_split_split_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
+```
+
+
 ### is_swap_facet_valid
 
 ```cpp
@@ -940,6 +947,30 @@ FixedArray tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh,
 **edge** [in] Index of the PolyhedronFacetEdge on which simulate split.
 
 **vertex** [in] Index towards which the split vertex is collapse on.
+
+### tetrahedra_after_split_split_collapse_edge
+
+```cpp
+TetrahedraAfter tetrahedra_after_split_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & collapse_point)
+```
+
+
+ Return all the tetrahedra resulting from a double edge split and edge collapse. The split-collapse operations are not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge0** [in] Index of the first PolyhedronFacetEdge on which simulate split.
+
+**edge1** [in] Index of the second PolyhedronFacetEdge on which simulate split.
+
+**vertex** [in] Index towards which the split vertex is collapse on.
+
+### tetrahedra_with_vertex_ids_after_split_split_collapse_edge
+
+```cpp
+std::vector<std::array<geode::index_t, 4> > tetrahedra_with_vertex_ids_after_split_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1)
+```
+
 
 ### tetrahedra_after_collapse_edge
 
@@ -1286,34 +1317,6 @@ SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralS
 ```
 
 
-### determine_cuts
-
-```cpp
-vector determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, Span path_splits)
-```
-
-
-### determine_cuts
-
-```cpp
-vector determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, Span path_splits)
-```
-
-
-### cut_along_path
-
-```cpp
-SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
-```
-
-
-### cut_along_path
-
-```cpp
-SurfaceCutPathInfo cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
-```
-
-
 ### is_collapse_edge_valid
 
 ```cpp
@@ -1405,6 +1408,34 @@ SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & se
 
 ```cpp
 SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
+```
+
+
+### determine_cuts
+
+```cpp
+vector determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, Span path_splits)
+```
+
+
+### determine_cuts
+
+```cpp
+vector determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, Span path_splits)
+```
+
+
+### cut_along_path
+
+```cpp
+SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
+```
+
+
+### cut_along_path
+
+```cpp
+SurfaceCutPathInfo cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
 ```
 
 
