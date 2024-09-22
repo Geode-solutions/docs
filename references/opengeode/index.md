@@ -647,6 +647,13 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
+### are_mesh_elements_included
+
+```cpp
+bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion, const SkipMeshElement & skip)
+```
+
+
 ### lexicographic_mapping
 
 ```cpp
@@ -2387,6 +2394,13 @@ bool is_light_regular_grid_saveable(const LightRegularGrid<dimension> & light_re
 ```
 
 
+### register_geode_mesh
+
+```cpp
+void register_geode_mesh()
+```
+
+
 ### file_exists
 
 ```cpp
@@ -2475,13 +2489,6 @@ float string_to_float(basic_string_view string)
 
 ```cpp
 double string_to_double(basic_string_view string)
-```
-
-
-### register_geode_mesh
-
-```cpp
-void register_geode_mesh()
 ```
 
 
