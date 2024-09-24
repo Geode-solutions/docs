@@ -15,30 +15,24 @@ const name = words.join('-');
 
 
 
-## Namespaces
-
-* [detail](detail/index.md)
-
-
 ## Records
 
-* [SimplexGeosciencesCrossSectionLibrary](SimplexGeosciencesCrossSectionLibrary.md)
-* [SimplexGeosciencesStructuralModelLibrary](SimplexGeosciencesStructuralModelLibrary.md)
+* [SimplexGeosciencesModelLibrary](SimplexGeosciencesModelLibrary.md)
 
 
 ## Functions
 
-### simplex_remesh
+### model_simplex_remesh
 
 ```cpp
-tuple simplex_remesh(CrossSection && cross_section, const Metric2D & metric)
+std::tuple<Model, ModelCopyMapping> model_simplex_remesh(const Model & model, const Metric3D & metric)
 ```
 
 
-### simplex_remesh
+### model_simplex_remesh
 
 ```cpp
-tuple simplex_remesh(StructuralModel && structural_model, const Metric3D & metric)
+std::tuple<Model, ModelCopyMapping> model_simplex_remesh(const Model & model, const Metric2D & metric)
 ```
 
 
