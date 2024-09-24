@@ -223,13 +223,6 @@ void remesh_surfaces(SectionRemeshingData & data, absl::Span<const uuid> surface
 ```
 
 
-### sample_corners
-
-```cpp
-void sample_corners(BRepSamplingData & data)
-```
-
-
 ### relax_surfaces
 
 ```cpp
@@ -269,6 +262,13 @@ flat_hash_map sample_surfaces(BRepSamplingData & data)
 
 ```cpp
 flat_hash_map sample_surfaces(BRepSamplingData & data, BRepSamplingData::Tasks & line_tasks)
+```
+
+
+### sample_corners
+
+```cpp
+void sample_corners(BRepSamplingData & data)
 ```
 
 
