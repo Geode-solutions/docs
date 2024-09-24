@@ -51,13 +51,6 @@ public void TriangulatedSurfaceInspector<dimension>(const TriangulatedSurface<di
 ```
 
 
-### ~TriangulatedSurfaceInspector
-
-```cpp
-public void ~TriangulatedSurfaceInspector<dimension>()
-```
-
-
 ### inspect_surface
 
 ```cpp
