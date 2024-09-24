@@ -11,48 +11,22 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ProcessElementResult
-
-
-## Members
-
-```cpp
-public bool success
-
-```
-
-```cpp
-public std::vector<Element> retry_elements
-
-```
-
-```cpp
-public std::vector<Element> new_elements
-
-```
-
+# class ThreePointsInternalDistance
 
 
 ## Functions
 
-### ProcessElementResult
+### ThreePointsInternalDistance
 
 ```cpp
-public void ProcessElementResult()
+public void ThreePointsInternalDistance()
 ```
 
 
-### operator bool
+### smallest_internal_distance
 
 ```cpp
-public bool operator bool()
-```
-
-
-### add_result
-
-```cpp
-public void add_result(ProcessElementResult && result)
+public double smallest_internal_distance(const geode::Triangle2D & triangle)
 ```
 
 

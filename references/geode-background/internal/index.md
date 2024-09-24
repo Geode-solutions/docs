@@ -52,7 +52,10 @@ const name = words.join('-');
 * [ElementSearchBuilder](ElementSearchBuilder.md)
 * [ElementSearch](ElementSearch.md)
 * [ForbiddenSurfaceElements](ForbiddenSurfaceElements.md)
+* [FourPointsCmp](FourPointsCmp.md)
+* [FourPointsHash](FourPointsHash.md)
 * [FourPointsInternalDistance](FourPointsInternalDistance.md)
+* [FourPoints](FourPoints.md)
 * [InternalDistance](InternalDistance.md)
 * [MacroInfo2D](MacroInfo2D.md)
 * [MacroInfo3D](MacroInfo3D.md)
@@ -61,6 +64,10 @@ const name = words.join('-');
 * [MacroInfoBuilder](MacroInfoBuilder.md)
 * [MacroInfo](MacroInfo.md)
 * [Orchestrator](Orchestrator.md)
+* [ThreePointsCmp](ThreePointsCmp.md)
+* [ThreePointsHash](ThreePointsHash.md)
+* [ThreePointsInternalDistance](ThreePointsInternalDistance.md)
+* [ThreePoints](ThreePoints.md)
 
 
 ## Functions

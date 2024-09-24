@@ -11,48 +11,15 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ProcessElementResult
-
-
-## Members
-
-```cpp
-public bool success
-
-```
-
-```cpp
-public std::vector<Element> retry_elements
-
-```
-
-```cpp
-public std::vector<Element> new_elements
-
-```
-
+# struct FourPointsCmp
 
 
 ## Functions
 
-### ProcessElementResult
+### operator()
 
 ```cpp
-public void ProcessElementResult()
-```
-
-
-### operator bool
-
-```cpp
-public bool operator bool()
-```
-
-
-### add_result
-
-```cpp
-public void add_result(ProcessElementResult && result)
+public bool operator()(const FourPoints & a, const FourPoints & b)
 ```
 
 
