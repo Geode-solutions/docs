@@ -11,29 +11,42 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class SMESHTriangulatedInput
+# class MSHOutput
+
+
+```cpp
+Inherits from BRepOutput
+```
+
 
 
 ## Functions
 
-### SMESHTriangulatedInput
+### MSHOutput
 
 ```cpp
-public void SMESHTriangulatedInput(string_view filename)
+public void MSHOutput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
-### read
+### write
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface3D> read(const MeshImpl & impl)
+public vector write(const BRep & brep)
+```
+
+
+### is_saveable
+
+```cpp
+public bool is_saveable(const BRep & brep)
 ```
 
 

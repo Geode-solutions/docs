@@ -11,29 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BMPInput
+# class SVGInput
+
+
+```cpp
+Inherits from SectionInput
+```
+
 
 
 ## Functions
 
-### BMPInput
+### SVGInput
 
 ```cpp
-public void BMPInput(string_view filename)
+public void SVGInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public RasterImage read()
+public Section read()
 ```
 
 

@@ -11,35 +11,39 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# struct GridAttributes
 
+
+## Members
 
 ```cpp
-Inherits from BRepOutput
+public Point<dimension> origin
+
+```
+
+```cpp
+public std::array<index_t, dimension> cells_number
+
+```
+
+```cpp
+public std::array<double, dimension> cells_length
+
+```
+
+```cpp
+public std::array<Vector<dimension>, dimension> cell_directions
+
 ```
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### GridAttributes
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
-```
-
-
-### extension
-
-```cpp
-public basic_string_view extension()
-```
-
-
-### write
-
-```cpp
-public vector write(const BRep & brep)
+public void GridAttributes()
 ```
 
 

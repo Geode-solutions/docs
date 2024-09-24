@@ -14,12 +14,18 @@ const name = words.join('-');
 # class VTPSurfaceOutputImpl
 
 
+```cpp
+Inherits from VTKMeshOutputImpl<Mesh, dimension>
+```
+
+
+
 ## Functions
 
 ### VTPSurfaceOutputImpl
 
 ```cpp
-public void VTPSurfaceOutputImpl<Mesh, dimension>(string_view filename, const Mesh<dimension> & polygonal_surface)
+public void VTPSurfaceOutputImpl<Mesh, dimension>(basic_string_view filename, const Mesh<dimension> & polygonal_surface)
 ```
 
 

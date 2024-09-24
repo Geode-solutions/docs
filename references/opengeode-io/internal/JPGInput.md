@@ -11,21 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# class JPGInput
 
 
 ```cpp
-Inherits from BRepOutput
+Inherits from RasterImageInput<2>
 ```
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### JPGInput
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
+public void JPGInput(basic_string_view filename)
 ```
 
 
@@ -36,10 +36,10 @@ public basic_string_view extension()
 ```
 
 
-### write
+### read
 
 ```cpp
-public vector write(const BRep & brep)
+public RasterImage read()
 ```
 
 

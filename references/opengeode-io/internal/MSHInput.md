@@ -11,35 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class AssimpMeshInput
+# class MSHInput
+
+
+```cpp
+Inherits from BRepInput
+```
+
 
 
 ## Functions
 
-### AssimpMeshInput
+### MSHInput
 
 ```cpp
-public void AssimpMeshInput<Mesh>(string_view filename)
+public void MSHInput(basic_string_view filename)
 ```
 
 
-### ~AssimpMeshInput
+### extension
 
 ```cpp
-public void ~AssimpMeshInput<Mesh>()
+public basic_string_view extension()
 ```
 
 
-### read_file
+### read
 
 ```cpp
-public int read_file()
+public BRep read()
 ```
 
 
 
-
-# class AssimpMeshInput
-
-# class AssimpMeshInput
 

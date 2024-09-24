@@ -15,6 +15,24 @@ const name = words.join('-');
 
 
 ```cpp
+Inherits from PolygonalSurfaceOutput<2U>
+```
+
+
+
+# class VTPPolygonalOutput
+
+
+```cpp
+Inherits from PolygonalSurfaceOutput<3U>
+```
+
+
+
+# class VTPPolygonalOutput
+
+
+```cpp
 Inherits from PolygonalSurfaceOutput<dimension>
 ```
 
@@ -25,27 +43,23 @@ Inherits from PolygonalSurfaceOutput<dimension>
 ### VTPPolygonalOutput
 
 ```cpp
-public void VTPPolygonalOutput<dimension>(string_view filename)
+public void VTPPolygonalOutput<dimension>(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public void write(const PolygonalSurface<dimension> & surface)
+public vector write(const PolygonalSurface<dimension> & surface)
 ```
 
 
 
-
-# class VTPPolygonalOutput
-
-# class VTPPolygonalOutput
 

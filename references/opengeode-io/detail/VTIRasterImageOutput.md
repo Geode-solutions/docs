@@ -25,21 +25,21 @@ Inherits from RasterImageOutput<dimension>
 ### VTIRasterImageOutput
 
 ```cpp
-public void VTIRasterImageOutput<dimension>(string_view filename)
+public void VTIRasterImageOutput<dimension>(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public void write(const RasterImage<dimension> & raster)
+public vector write(const RasterImage<dimension> & raster)
 ```
 
 
@@ -47,5 +47,19 @@ public void write(const RasterImage<dimension> & raster)
 
 # class VTIRasterImageOutput
 
+
+```cpp
+Inherits from RasterImageOutput<3U>
+```
+
+
+
 # class VTIRasterImageOutput
+
+
+```cpp
+Inherits from RasterImageOutput<2U>
+```
+
+
 

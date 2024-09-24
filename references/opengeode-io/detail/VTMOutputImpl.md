@@ -25,7 +25,14 @@ Inherits from VTKOutputImpl<Model>
 ### VTMOutputImpl
 
 ```cpp
-public void VTMOutputImpl<Model, dimension>(string_view filename, const Model & brep)
+public void VTMOutputImpl<Model, dimension>(basic_string_view filename, const Model & brep)
+```
+
+
+### files
+
+```cpp
+public vector files()
 ```
 
 
@@ -36,10 +43,24 @@ protected index_t write_corners_lines_surfaces(pugi::xml_node & object)
 ```
 
 
+### prefix
+
+```cpp
+protected basic_string_view prefix()
+```
+
+
 ### files_directory
 
 ```cpp
-protected string_view files_directory()
+protected basic_string_view files_directory()
+```
+
+
+### add_file
+
+```cpp
+protected void add_file(const std::string & filename)
 ```
 
 

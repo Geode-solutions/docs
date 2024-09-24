@@ -14,26 +14,32 @@ const name = words.join('-');
 # class VTUHybridInput
 
 
+```cpp
+Inherits from HybridSolidInput<3>
+```
+
+
+
 ## Functions
 
 ### VTUHybridInput
 
 ```cpp
-public void VTUHybridInput(string_view filename)
+public void VTUHybridInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public std::unique_ptr<HybridSolid3D> read(const MeshImpl & impl)
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

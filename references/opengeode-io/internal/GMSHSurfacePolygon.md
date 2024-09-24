@@ -11,35 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# class GMSHSurfacePolygon
 
 
 ```cpp
-Inherits from BRepOutput
+Inherits from GMSHElement
 ```
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### GMSHSurfacePolygon
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
+public void GMSHSurfacePolygon(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, geode::index_t nb_vertices, Span vertex_ids)
 ```
 
 
-### extension
+### add_element
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### write
-
-```cpp
-public vector write(const BRep & brep)
+public void add_element(geode::BRep & brep, GmshId2Uuids & id_map)
 ```
 
 

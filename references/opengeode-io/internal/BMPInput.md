@@ -11,29 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class DXFInput
+# class BMPInput
+
+
+```cpp
+Inherits from RasterImageInput<2>
+```
+
 
 
 ## Functions
 
-### DXFInput
+### BMPInput
 
 ```cpp
-public void DXFInput(string_view filename)
+public void BMPInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
+public RasterImage read()
 ```
 
 

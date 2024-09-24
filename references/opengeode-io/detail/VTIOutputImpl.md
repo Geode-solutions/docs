@@ -25,7 +25,7 @@ Inherits from detail::VTKOutputImpl<CellArray>
 ### VTIOutputImpl
 
 ```cpp
-protected void VTIOutputImpl<CellArray>(const CellArray & array, string_view filename)
+protected void VTIOutputImpl<CellArray>(const CellArray & array, basic_string_view filename)
 ```
 
 

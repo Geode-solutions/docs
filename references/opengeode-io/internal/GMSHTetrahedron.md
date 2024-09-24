@@ -11,35 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# class GMSHTetrahedron
 
 
 ```cpp
-Inherits from BRepOutput
+Inherits from GMSHSolidPolyhedron
 ```
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### GMSHTetrahedron
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
+public void GMSHTetrahedron(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, Span vertex_ids)
 ```
 
 
-### extension
+### create_gmsh_polyhedron
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### write
-
-```cpp
-public vector write(const BRep & brep)
+public geode::index_t create_gmsh_polyhedron(geode::BRepBuilder & builder, const geode::uuid & block_uuid, const std::vector<geode::index_t> & v_ids)
 ```
 
 

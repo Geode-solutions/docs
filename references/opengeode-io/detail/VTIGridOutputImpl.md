@@ -11,35 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# class VTIGridOutputImpl
 
 
 ```cpp
-Inherits from BRepOutput
+Inherits from VTIOutputImpl<Grid<dimension> >
 ```
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### VTIGridOutputImpl
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
-```
-
-
-### extension
-
-```cpp
-public basic_string_view extension()
-```
-
-
-### write
-
-```cpp
-public vector write(const BRep & brep)
+public void VTIGridOutputImpl<dimension>(const Grid<dimension> & grid, basic_string_view filename)
 ```
 
 

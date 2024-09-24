@@ -11,35 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class PLYOutput
+# class GMSHQuadrangle
 
 
 ```cpp
-Inherits from PolygonalSurfaceOutput<3>
+Inherits from GMSHSurfacePolygon
 ```
 
 
 
 ## Functions
 
-### PLYOutput
+### GMSHQuadrangle
 
 ```cpp
-public void PLYOutput(string_view filename)
-```
-
-
-### extension
-
-```cpp
-public string_view extension()
-```
-
-
-### write
-
-```cpp
-public void write(const PolygonalSurface3D & surface)
+public void GMSHQuadrangle(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, Span vertex_ids)
 ```
 
 

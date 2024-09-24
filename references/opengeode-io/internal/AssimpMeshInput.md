@@ -11,35 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class STLOutput
+# class AssimpMeshInput
 
 
-```cpp
-Inherits from TriangulatedSurfaceOutput<3>
-```
+# class AssimpMeshInput
 
+
+# class AssimpMeshInput
 
 
 ## Functions
 
-### STLOutput
+### AssimpMeshInput
 
 ```cpp
-public void STLOutput(string_view filename)
+public void AssimpMeshInput<Mesh>(basic_string_view filename)
 ```
 
 
-### extension
+### ~AssimpMeshInput
 
 ```cpp
-public string_view extension()
+public void ~AssimpMeshInput<Mesh>()
 ```
 
 
-### write
+### read_file
 
 ```cpp
-public void write(const TriangulatedSurface3D & surface)
+public std::unique_ptr<Mesh> read_file()
 ```
 
 

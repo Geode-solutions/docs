@@ -11,35 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
-
-
-```cpp
-Inherits from BRepOutput
-```
-
+# class ImageInputImpl
 
 
 ## Functions
 
-### VTMBRepOutput
+### ImageInputImpl
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
+public void ImageInputImpl(basic_string_view filename)
 ```
 
 
-### extension
+### read_file
 
 ```cpp
-public basic_string_view extension()
+public RasterImage read_file()
 ```
 
 
-### write
+### read_reversed_y_axis_file
 
 ```cpp
-public vector write(const BRep & brep)
+public RasterImage read_reversed_y_axis_file()
 ```
 
 

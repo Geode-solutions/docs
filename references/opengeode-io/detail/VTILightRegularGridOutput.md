@@ -11,21 +11,39 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# class VTILightRegularGridOutput
 
 
 ```cpp
-Inherits from BRepOutput
+Inherits from LightRegularGridOutput<3U>
+```
+
+
+
+# class VTILightRegularGridOutput
+
+
+```cpp
+Inherits from LightRegularGridOutput<2U>
+```
+
+
+
+# class VTILightRegularGridOutput
+
+
+```cpp
+Inherits from LightRegularGridOutput<dimension>
 ```
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### VTILightRegularGridOutput
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
+public void VTILightRegularGridOutput<dimension>(basic_string_view filename)
 ```
 
 
@@ -39,7 +57,7 @@ public basic_string_view extension()
 ### write
 
 ```cpp
-public vector write(const BRep & brep)
+public vector write(const LightRegularGrid<dimension> & grid)
 ```
 
 

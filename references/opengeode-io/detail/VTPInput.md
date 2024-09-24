@@ -25,21 +25,21 @@ Inherits from PolygonalSurfaceInput<3>
 ### VTPInput
 
 ```cpp
-public void VTPInput(string_view filename)
+public void VTPInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

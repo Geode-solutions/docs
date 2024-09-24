@@ -11,35 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class OBJTriangulatedOutput
-
-
-```cpp
-Inherits from TriangulatedSurfaceOutput<3>
-```
-
+# class SMESHInputImpl
 
 
 ## Functions
 
-### OBJTriangulatedOutput
+### SMESHInputImpl
 
 ```cpp
-public void OBJTriangulatedOutput(string_view filename)
+public void SMESHInputImpl<Mesh, Builder, element>(basic_string_view filename, Mesh & mesh)
 ```
 
 
-### extension
+### ~SMESHInputImpl
 
 ```cpp
-public string_view extension()
+public void ~SMESHInputImpl<Mesh, Builder, element>()
 ```
 
 
-### write
+### read_file
 
 ```cpp
-public void write(const TriangulatedSurface3D & surface)
+public void read_file()
+```
+
+
+### builder
+
+```cpp
+protected Builder & builder()
 ```
 
 

@@ -14,26 +14,32 @@ const name = words.join('-');
 # class VTUPolyhedralInput
 
 
+```cpp
+Inherits from PolyhedralSolidInput<3>
+```
+
+
+
 ## Functions
 
 ### VTUPolyhedralInput
 
 ```cpp
-public void VTUPolyhedralInput(string_view filename)
+public void VTUPolyhedralInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public int read(const MeshImpl & impl)
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

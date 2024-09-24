@@ -11,35 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class TriangleOutput
+# class PLYOutput
 
 
 ```cpp
-Inherits from TriangulatedSurfaceOutput<2>
+Inherits from PolygonalSurfaceOutput<3>
 ```
 
 
 
 ## Functions
 
-### TriangleOutput
+### PLYOutput
 
 ```cpp
-public void TriangleOutput(string_view filename)
+public void PLYOutput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public void write(const TriangulatedSurface2D & surface)
+public vector write(const PolygonalSurface3D & surface)
 ```
 
 

@@ -11,29 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class ImageInputImpl
+# class SMESHTriangulatedInput
+
+
+```cpp
+Inherits from TriangulatedSurfaceInput<3>
+```
+
 
 
 ## Functions
 
-### ImageInputImpl
+### SMESHTriangulatedInput
 
 ```cpp
-public void ImageInputImpl(string_view filename)
+public void SMESHTriangulatedInput(basic_string_view filename)
 ```
 
 
-### read_file
+### extension
 
 ```cpp
-public RasterImage read_file()
+public basic_string_view extension()
 ```
 
 
-### read_reversed_y_axis_file
+### read
 
 ```cpp
-public RasterImage read_reversed_y_axis_file()
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

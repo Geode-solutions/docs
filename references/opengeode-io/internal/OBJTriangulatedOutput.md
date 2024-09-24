@@ -11,21 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# class OBJTriangulatedOutput
 
 
 ```cpp
-Inherits from BRepOutput
+Inherits from TriangulatedSurfaceOutput<3>
 ```
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### OBJTriangulatedOutput
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
+public void OBJTriangulatedOutput(basic_string_view filename)
 ```
 
 
@@ -39,7 +39,7 @@ public basic_string_view extension()
 ### write
 
 ```cpp
-public vector write(const BRep & brep)
+public vector write(const TriangulatedSurface3D & surface)
 ```
 
 

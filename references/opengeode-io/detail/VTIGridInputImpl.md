@@ -11,37 +11,49 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# class VTIGridInputImpl
 
 
 ```cpp
-Inherits from BRepOutput
+Inherits from VTKInputImpl<Mesh>
 ```
+
+
+
+## Records
+
+GridAttributes
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### VTIGridInputImpl
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
+public void VTIGridInputImpl<Mesh>(basic_string_view filename)
 ```
 
 
-### extension
+### is_loadable
 
 ```cpp
-public basic_string_view extension()
+public bool is_loadable(basic_string_view filename)
 ```
 
 
-### write
+### read_grid_attributes
 
 ```cpp
-public vector write(const BRep & brep)
+protected GridAttributes read_grid_attributes(const pugi::xml_node & vtk_object)
 ```
 
+
+### build_grid
+
+```cpp
+protected void build_grid(const pugi::xml_node & vtk_object)
+```
 
 
 

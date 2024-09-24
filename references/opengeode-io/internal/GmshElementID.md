@@ -11,35 +11,43 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# struct GmshElementID
 
+
+## Members
 
 ```cpp
-Inherits from BRepOutput
+public NamedType type
+
+```
+
+```cpp
+public geode::index_t id
+
 ```
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### GmshElementID
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
+public void GmshElementID()
 ```
 
 
-### extension
+### GmshElementID
 
 ```cpp
-public basic_string_view extension()
+public void GmshElementID(NamedType gmsh_type, geode::index_t gmsh_id)
 ```
 
 
-### write
+### operator==
 
 ```cpp
-public vector write(const BRep & brep)
+public bool operator==(const GmshElementID & other)
 ```
 
 

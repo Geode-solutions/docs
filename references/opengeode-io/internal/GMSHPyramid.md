@@ -11,35 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class JPGInput
+# class GMSHPyramid
 
 
 ```cpp
-Inherits from RasterImageInput<2>
+Inherits from GMSHSolidPolyhedron
 ```
 
 
 
 ## Functions
 
-### JPGInput
+### GMSHPyramid
 
 ```cpp
-public void JPGInput(string_view filename)
+public void GMSHPyramid(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, Span vertex_ids)
 ```
 
 
-### extension
+### create_gmsh_polyhedron
 
 ```cpp
-public string_view extension()
-```
-
-
-### read
-
-```cpp
-public RasterImage2D read()
+public geode::index_t create_gmsh_polyhedron(geode::BRepBuilder & builder, const geode::uuid & block_uuid, const std::vector<geode::index_t> & v_ids)
 ```
 
 

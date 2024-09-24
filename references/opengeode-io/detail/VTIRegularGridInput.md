@@ -25,14 +25,14 @@ Inherits from RegularGridInput<dimension>
 ### VTIRegularGridInput
 
 ```cpp
-public void VTIRegularGridInput<dimension>(string_view filename)
+public void VTIRegularGridInput<dimension>(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
@@ -43,9 +43,30 @@ public std::unique_ptr<RegularGrid<dimension> > read(const MeshImpl & impl)
 ```
 
 
+### is_loadable
+
+```cpp
+public bool is_loadable()
+```
+
+
 
 
 # class VTIRegularGridInput
 
+
+```cpp
+Inherits from RegularGridInput<3U>
+```
+
+
+
 # class VTIRegularGridInput
+
+
+```cpp
+Inherits from RegularGridInput<2U>
+```
+
+
 

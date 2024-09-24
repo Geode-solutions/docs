@@ -11,35 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class PLYInput
+# class OBJPolygonalOutput
 
 
 ```cpp
-Inherits from PolygonalSurfaceInput<3>
+Inherits from PolygonalSurfaceOutput<3>
 ```
 
 
 
 ## Functions
 
-### PLYInput
+### OBJPolygonalOutput
 
 ```cpp
-public void PLYInput(string_view filename)
+public void OBJPolygonalOutput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
-### read
+### write
 
 ```cpp
-public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
+public vector write(const PolygonalSurface3D & surface)
 ```
 
 

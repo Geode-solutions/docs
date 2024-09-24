@@ -11,29 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class AssimpMeshOutput
+# class GMSHHexahedron
+
+
+```cpp
+Inherits from GMSHSolidPolyhedron
+```
+
 
 
 ## Functions
 
-### AssimpMeshOutput
+### GMSHHexahedron
 
 ```cpp
-public void AssimpMeshOutput<SurfaceMesh>(string_view filename, const SurfaceMesh & surface_mesh, string_view assimp_export_id)
+public void GMSHHexahedron(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, Span vertex_ids)
 ```
 
 
-### build_assimp_scene
+### create_gmsh_polyhedron
 
 ```cpp
-public void build_assimp_scene()
-```
-
-
-### write_file
-
-```cpp
-public void write_file()
+public geode::index_t create_gmsh_polyhedron(geode::BRepBuilder & builder, const geode::uuid & block_uuid, const std::vector<geode::index_t> & v_ids)
 ```
 
 

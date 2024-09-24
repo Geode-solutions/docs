@@ -11,35 +11,43 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class MSHInput
+# struct GmshId2Uuids
 
+
+## Members
 
 ```cpp
-Inherits from BRepInput
+public flat_hash_map elementary_ids
+
+```
+
+```cpp
+public flat_hash_map physical_ids
+
 ```
 
 
 
 ## Functions
 
-### MSHInput
+### GmshId2Uuids
 
 ```cpp
-public void MSHInput(string_view filename)
+public void GmshId2Uuids()
 ```
 
 
-### extension
+### contains_elementary_id
 
 ```cpp
-public string_view extension()
+public bool contains_elementary_id(const GmshElementID & elementary_id)
 ```
 
 
-### read
+### contains_physical_id
 
 ```cpp
-public BRep read()
+public bool contains_physical_id(const GmshElementID & physical_id)
 ```
 
 

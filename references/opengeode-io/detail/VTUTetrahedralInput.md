@@ -14,26 +14,32 @@ const name = words.join('-');
 # class VTUTetrahedralInput
 
 
+```cpp
+Inherits from TetrahedralSolidInput<3>
+```
+
+
+
 ## Functions
 
 ### VTUTetrahedralInput
 
 ```cpp
-public void VTUTetrahedralInput(string_view filename)
+public void VTUTetrahedralInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public std::unique_ptr<TetrahedralSolid3D> read(const MeshImpl & impl)
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

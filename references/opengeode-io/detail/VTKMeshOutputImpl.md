@@ -25,14 +25,14 @@ Inherits from VTKOutputImpl<Mesh<dimension> >
 ### VTKMeshOutputImpl
 
 ```cpp
-protected void VTKMeshOutputImpl<Mesh, dimension>(string_view filename, const Mesh<dimension> & mesh, const char * type)
+protected void VTKMeshOutputImpl<Mesh, dimension>(basic_string_view filename, const Mesh<dimension> & mesh, const char * type)
 ```
 
 
 ### compute_vertices
 
 ```cpp
-protected int compute_vertices()
+protected vector compute_vertices()
 ```
 
 

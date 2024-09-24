@@ -25,7 +25,7 @@ Inherits from VTKMeshInputImpl<Mesh>
 ### VTUInputImpl
 
 ```cpp
-public void VTUInputImpl<Mesh>(string_view filename, Mesh & solid)
+protected void VTUInputImpl<Mesh>(basic_string_view filename, const geode::MeshImpl & impl)
 ```
 
 

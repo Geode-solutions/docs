@@ -13,7 +13,21 @@ const name = words.join('-');
 
 # class VTPTriangulatedOutput
 
+
+```cpp
+Inherits from TriangulatedSurfaceOutput<3U>
+```
+
+
+
 # class VTPTriangulatedOutput
+
+
+```cpp
+Inherits from TriangulatedSurfaceOutput<2U>
+```
+
+
 
 # class VTPTriangulatedOutput
 
@@ -29,21 +43,21 @@ Inherits from TriangulatedSurfaceOutput<dimension>
 ### VTPTriangulatedOutput
 
 ```cpp
-public void VTPTriangulatedOutput<dimension>(string_view filename)
+public void VTPTriangulatedOutput<dimension>(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public void write(const TriangulatedSurface<dimension> & surface)
+public vector write(const TriangulatedSurface<dimension> & surface)
 ```
 
 

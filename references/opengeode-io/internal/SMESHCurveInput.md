@@ -11,35 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class PNGInput
+# class SMESHCurveInput
 
 
 ```cpp
-Inherits from RasterImageInput<2>
+Inherits from EdgedCurveInput<3>
 ```
 
 
 
 ## Functions
 
-### PNGInput
+### SMESHCurveInput
 
 ```cpp
-public void PNGInput(string_view filename)
+public void SMESHCurveInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public RasterImage2D read()
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

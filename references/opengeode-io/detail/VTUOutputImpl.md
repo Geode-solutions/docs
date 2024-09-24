@@ -14,12 +14,18 @@ const name = words.join('-');
 # class VTUOutputImpl
 
 
+```cpp
+Inherits from VTKMeshOutputImpl<Mesh, 3>
+```
+
+
+
 ## Functions
 
 ### VTUOutputImpl
 
 ```cpp
-public void VTUOutputImpl<Mesh>(string_view filename, const Mesh<3> & solid)
+protected void VTUOutputImpl<Mesh>(basic_string_view filename, const Mesh<3> & solid)
 ```
 
 

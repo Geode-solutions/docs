@@ -25,21 +25,21 @@ Inherits from SectionOutput
 ### VTMSectionOutput
 
 ```cpp
-public void VTMSectionOutput(string_view filename)
+public void VTMSectionOutput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public void write(const Section & section)
+public vector write(const Section & section)
 ```
 
 

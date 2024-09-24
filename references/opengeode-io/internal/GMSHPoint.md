@@ -11,35 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class OBJPolygonalOutput
+# class GMSHPoint
 
 
 ```cpp
-Inherits from PolygonalSurfaceOutput<3>
+Inherits from GMSHElement
 ```
 
 
 
 ## Functions
 
-### OBJPolygonalOutput
+### GMSHPoint
 
 ```cpp
-public void OBJPolygonalOutput(string_view filename)
+public void GMSHPoint(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, Span vertex_ids)
 ```
 
 
-### extension
+### add_element
 
 ```cpp
-public string_view extension()
-```
-
-
-### write
-
-```cpp
-public void write(const PolygonalSurface3D & surface)
+public void add_element(geode::BRep & brep, GmshId2Uuids & id_map)
 ```
 
 

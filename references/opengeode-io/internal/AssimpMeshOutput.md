@@ -11,42 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class OBJInput
-
-
-```cpp
-Inherits from PolygonalSurfaceInput<3>
-```
-
+# class AssimpMeshOutput
 
 
 ## Functions
 
-### OBJInput
+### AssimpMeshOutput
 
 ```cpp
-public void OBJInput(string_view filename)
+public void AssimpMeshOutput<SurfaceMesh>(basic_string_view filename, const SurfaceMesh & surface_mesh, basic_string_view assimp_export_id)
 ```
 
 
-### extension
+### build_assimp_scene
 
 ```cpp
-public string_view extension()
+public void build_assimp_scene()
 ```
 
 
-### read
+### write_file
 
 ```cpp
-public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
-```
-
-
-### check_missing_files
-
-```cpp
-public PolygonalSurfaceInput<3>::MissingFiles check_missing_files()
+public void write_file()
 ```
 
 

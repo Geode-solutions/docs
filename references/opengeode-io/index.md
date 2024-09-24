@@ -18,6 +18,7 @@ const name = words.join('-');
 ## Namespaces
 
 * [detail](detail/index.md)
+* [internal](internal/index.md)
 
 
 ## Records

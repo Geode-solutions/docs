@@ -11,35 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class SVGInput
+# class DXFInput
 
 
 ```cpp
-Inherits from SectionInput
+Inherits from PolygonalSurfaceInput<3>
 ```
 
 
 
 ## Functions
 
-### SVGInput
+### DXFInput
 
 ```cpp
-public void SVGInput(string_view filename)
+public void DXFInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public Section read()
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

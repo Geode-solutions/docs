@@ -11,42 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class MSHOutput
+# class GMSHEdge
 
 
 ```cpp
-Inherits from BRepOutput
+Inherits from GMSHElement
 ```
 
 
 
 ## Functions
 
-### MSHOutput
+### GMSHEdge
 
 ```cpp
-public void MSHOutput(string_view filename)
+public void GMSHEdge(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, Span vertex_ids)
 ```
 
 
-### extension
+### add_element
 
 ```cpp
-public string_view extension()
-```
-
-
-### write
-
-```cpp
-public void write(const BRep & brep)
-```
-
-
-### is_saveable
-
-```cpp
-public bool is_saveable(const BRep & brep)
+public void add_element(geode::BRep & brep, GmshId2Uuids & id_map)
 ```
 
 

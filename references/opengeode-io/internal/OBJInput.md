@@ -11,21 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTMBRepOutput
+# class OBJInput
 
 
 ```cpp
-Inherits from BRepOutput
+Inherits from PolygonalSurfaceInput<3>
 ```
 
 
 
 ## Functions
 
-### VTMBRepOutput
+### OBJInput
 
 ```cpp
-public void VTMBRepOutput(basic_string_view filename)
+public void OBJInput(basic_string_view filename)
 ```
 
 
@@ -36,10 +36,17 @@ public basic_string_view extension()
 ```
 
 
-### write
+### read
 
 ```cpp
-public vector write(const BRep & brep)
+public unique_ptr read(const MeshImpl & impl)
+```
+
+
+### check_missing_files
+
+```cpp
+public MissingFiles check_missing_files()
 ```
 
 

@@ -25,21 +25,21 @@ Inherits from TriangulatedSurfaceInput<3>
 ### STLInput
 
 ```cpp
-public void STLInput(string_view filename)
+public void STLInput(basic_string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public string_view extension()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface3D> read(const MeshImpl & impl)
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 

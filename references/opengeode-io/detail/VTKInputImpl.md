@@ -26,77 +26,77 @@ public void ~VTKInputImpl<Mesh>()
 ### read_file
 
 ```cpp
-public void read_file()
+public std::unique_ptr<Mesh> read_file()
 ```
 
 
 ### VTKInputImpl
 
 ```cpp
-public void VTKInputImpl<Mesh>(string_view filename, Mesh & mesh, const char * type)
+protected void VTKInputImpl<Mesh>(basic_string_view filename, const char * type)
+```
+
+
+### initialize_mesh
+
+```cpp
+protected void initialize_mesh(std::unique_ptr<Mesh> && mesh)
 ```
 
 
 ### mesh
 
 ```cpp
-protected const Mesh & mesh()
-```
-
-
-### builder
-
-```cpp
-protected MeshBuilder & builder()
+protected Mesh & mesh()
 ```
 
 
 ### match
 
 ```cpp
-protected bool match(string_view query, string_view ref)
+protected bool match(basic_string_view query, basic_string_view ref)
 ```
 
 
 ### read_attribute
 
 ```cpp
-protected index_t read_attribute(const pugi::xml_node & piece, string_view attribute)
+protected index_t read_attribute(const pugi::xml_node & piece, basic_string_view attribute)
 ```
 
 
 ### read_integer_data_array
 
 ```cpp
-protected int read_integer_data_array(const pugi::xml_node & data)
+protected std::vector<T> read_integer_data_array(const pugi::xml_node & data)
 ```
 
 
 ### read_uint8_data_array
 
 ```cpp
-protected int read_uint8_data_array(const pugi::xml_node & data)
+protected std::vector<T> read_uint8_data_array(const pugi::xml_node & data)
 ```
 
 
 ### read_float_data_array
 
 ```cpp
-protected int read_float_data_array(const pugi::xml_node & data)
+protected std::vector<T> read_float_data_array(const pugi::xml_node & data)
 ```
 
 
 ### cast_to
 
 ```cpp
-protected int cast_to(absl::Span<const In> values)
+protected std::vector<Out> cast_to(absl::Span<const In> values)
 ```
 
 
 ### build_attribute
 
 ```cpp
-protected void build_attribute(AttributeManager & manager, string_view name, absl::Span<const T> values, index_t nb_components, index_t offset)
+protected void build_attribute(AttributeManager & manager, basic_string_view name, absl::Span<const T> values, index_t nb_components, index_t offset)
 ```
 
 
@@ -107,24 +107,24 @@ protected void read_attribute_data(const pugi::xml_node & data, index_t offset, 
 ```
 
 
-### read_point_data
+### read_data
 
 ```cpp
-protected void read_point_data(const pugi::xml_node & point_data, index_t offset)
+protected void read_data(const pugi::xml_node & point_data, index_t offset, AttributeManager & attribute_manager)
 ```
 
 
 ### read_appended_data
 
 ```cpp
-protected string_view read_appended_data(const pugi::xml_node & data)
+protected basic_string_view read_appended_data(const pugi::xml_node & data)
 ```
 
 
 ### decode
 
 ```cpp
-protected int decode(string_view input)
+protected std::vector<T> decode(basic_string_view input)
 ```
 
 
