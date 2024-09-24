@@ -31,7 +31,6 @@ const name = words.join('-');
 * [ExplicitBRepLibrary](ExplicitBRepLibrary.md)
 * [ExplicitCommonLibrary](ExplicitCommonLibrary.md)
 * [ExplicitSectionLibrary](ExplicitSectionLibrary.md)
-* [InsertionData](InsertionData.md)
 * [MeshElementsMap](MeshElementsMap.md)
 * [MeshElements](MeshElements.md)
 * [Meshes](Meshes.md)
