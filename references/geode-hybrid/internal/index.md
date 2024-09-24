@@ -11,23 +11,38 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace detail
+# namespace internal
 
 
 
 ## Records
 
-* [CombiningData](CombiningData.md)
+* [BRepCombiningData](BRepCombiningData.md)
+* [HybridImpl](HybridImpl.md)
 * [HybridSamplingData](HybridSamplingData.md)
 * [InsertedVertices](InsertedVertices.md)
 
 
 ## Functions
 
-### sample_lines
+### sample_surfaces
 
 ```cpp
-void sample_lines(BRepHybridSamplingData & data)
+void sample_surfaces(BRepHybridSamplingData & data)
+```
+
+
+### combining_surfaces
+
+```cpp
+void combining_surfaces(BRepCombiningData & data)
+```
+
+
+### build_surfaces_quads
+
+```cpp
+void build_surfaces_quads(BRepCombiningData & data)
 ```
 
 
@@ -66,24 +81,24 @@ ExtractedElements compute_elements(BRep & brep, const ConstantMetric3D & metric)
 ```
 
 
-### sample_surfaces
+### compute_elements_with_attribute
 
 ```cpp
-void sample_surfaces(BRepHybridSamplingData & data)
+ExtractedElements compute_elements_with_attribute(BRep & brep, const ConstantMetric3D & metric, basic_string_view attribute_name)
 ```
 
 
-### combining_surfaces
+### sample_lines
 
 ```cpp
-void combining_surfaces(BRepCombiningData & data)
+void sample_lines(BRepHybridSamplingData & data)
 ```
 
 
-### build_surfaces_quads
+### build_pyramid_layer
 
 ```cpp
-void build_surfaces_quads(BRepCombiningData & data)
+void build_pyramid_layer(BRepCombiningData & data)
 ```
 
 

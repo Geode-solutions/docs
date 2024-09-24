@@ -11,25 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Hex
+# class HybridImpl
 
 
-## Members
+## Functions
 
-```cpp
-public array vertices
-
-```
+### HybridImpl
 
 ```cpp
-public InlinedVector facets
-
+public void HybridImpl(const class FrameFieldParameterization::ExtractedElements & elements)
 ```
+
+
+### unique_vertices_mapping
 
 ```cpp
-public InlinedVector tetrahedra
-
+public BijectiveMapping<index_t> & unique_vertices_mapping()
 ```
+
+
+### elements
+
+```cpp
+public const class FrameFieldParameterization::ExtractedElements & elements()
+```
+
 
 
 

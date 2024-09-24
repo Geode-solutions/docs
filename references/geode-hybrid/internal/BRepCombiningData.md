@@ -11,10 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class CombiningData
-
-
-# class CombiningData
+# class BRepCombiningData
 
 
 ## Records
@@ -27,66 +24,66 @@ Hex
 
 ## Functions
 
-### CombiningData
+### BRepCombiningData
 
 ```cpp
-public void CombiningData<DataModel>(const CombiningData<DataModel> & )
+public void BRepCombiningData(const BRepCombiningData & )
 ```
 
 
 ### operator=
 
 ```cpp
-public CombiningData<DataModel> & operator=(const CombiningData<DataModel> & )
+public BRepCombiningData & operator=(const BRepCombiningData & )
 ```
 
 
-### CombiningData
+### BRepCombiningData
 
 ```cpp
-public void CombiningData<DataModel>(CombiningData<DataModel> && )
+public void BRepCombiningData(BRepCombiningData && )
 ```
 
 
 ### operator=
 
 ```cpp
-public CombiningData<DataModel> & operator=(CombiningData<DataModel> && )
+public BRepCombiningData & operator=(BRepCombiningData && )
 ```
 
 
-### CombiningData
+### BRepCombiningData
 
 ```cpp
-public void CombiningData<DataModel>(Model & model, const class FrameFieldParameterization::ExtractedElements & elements)
+public void BRepCombiningData(BRep & model, const class FrameFieldParameterization::ExtractedElements & elements)
 ```
 
 
-### ~CombiningData
+### ~BRepCombiningData
 
 ```cpp
-public void ~CombiningData<DataModel>()
+public void ~BRepCombiningData()
 ```
 
 
 ### model
 
 ```cpp
-public const Model & model()
+public const BRep & model()
 ```
 
 
 ### builder
 
 ```cpp
-public Builder & builder()
+public BRepBuilder & builder()
 ```
 
 
 ### modifier
 
 ```cpp
-public Modifier & modifier()
+public BRepCutter & modifier()
 ```
 
 
@@ -121,7 +118,7 @@ public index_t nb_quads(const Surface3D & surface)
 ### quad
 
 ```cpp
-public const absl::optional<Quad> & quad(const Surface3D & surface, index_t quad_id)
+public const std::optional<Quad> & quad(const Surface3D & surface, index_t quad_id)
 ```
 
 
@@ -142,7 +139,7 @@ public index_t nb_hexes(const Block3D & block)
 ### hex
 
 ```cpp
-public const absl::optional<Hex> & hex(const Block3D & block, index_t hex_id)
+public const std::optional<Hex> & hex(const Block3D & block, index_t hex_id)
 ```
 
 

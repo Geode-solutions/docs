@@ -15,15 +15,6 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from SamplingData<BRep>
-```
-
-
-
-# class HybridSamplingData
-
-
-```cpp
 Inherits from SamplingData<DataModel>
 ```
 
@@ -86,6 +77,15 @@ public BijectiveMapping<index_t> & unique_vertices_mapping()
 public const class FrameFieldParameterization::ExtractedElements & elements()
 ```
 
+
+
+
+# class HybridSamplingData
+
+
+```cpp
+Inherits from SamplingData<BRep>
+```
 
 
 

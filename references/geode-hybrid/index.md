@@ -17,7 +17,7 @@ const name = words.join('-');
 
 ## Namespaces
 
-* [detail](detail/index.md)
+* [internal](internal/index.md)
 
 
 ## Records
@@ -31,6 +31,13 @@ const name = words.join('-');
 
 ```cpp
 void hex_dominant_remesh(BRep & brep, const Metric3D & metric)
+```
+
+
+### hex_dominant_remesh_following_attribute
+
+```cpp
+void hex_dominant_remesh_following_attribute(BRep & brep, const Metric3D & metric, basic_string_view attribute_name)
 ```
 
 
