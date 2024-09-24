@@ -14,6 +14,12 @@ const name = words.join('-');
 # class ScalarFunctionComputer
 
 
+# class ScalarFunctionComputer
+
+
+# class ScalarFunctionComputer
+
+
 ## Functions
 
 ### ScalarFunctionComputer
@@ -51,11 +57,5 @@ public const LightRegularGrid<dimension> & grid_with_results()
 ```
 
 
-
-
-# class ScalarFunctionComputer
-
-
-# class ScalarFunctionComputer
 
 
