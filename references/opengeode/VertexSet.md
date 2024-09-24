@@ -40,6 +40,13 @@ public VertexSet & operator=(const VertexSet & )
 ```
 
 
+### ~VertexSet
+
+```cpp
+public void ~VertexSet()
+```
+
+
 ### create
 
 ```cpp
@@ -71,13 +78,6 @@ public NamedType type_name_static()
 
 ```cpp
 public std::unique_ptr<VertexSet> clone()
-```
-
-
-### ~VertexSet
-
-```cpp
-public void ~VertexSet()
 ```
 
 

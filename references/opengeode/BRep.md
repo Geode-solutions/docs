@@ -424,8 +424,6 @@ public BoundingBox bounding_box()
 ```
 
 
- Compute the bounding box from component meshes
-
 ### native_extension_static
 
 ```cpp

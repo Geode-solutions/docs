@@ -26,6 +26,13 @@ Inherits from VertexSet
 
 ## Functions
 
+### ~Graph
+
+```cpp
+public void ~Graph()
+```
+
+
 ### create
 
 ```cpp
@@ -57,13 +64,6 @@ public NamedType type_name_static()
 
 ```cpp
 public std::unique_ptr<Graph> clone()
-```
-
-
-### ~Graph
-
-```cpp
-public void ~Graph()
 ```
 
 

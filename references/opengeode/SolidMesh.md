@@ -40,6 +40,13 @@ public SolidMesh<dimension> & operator=(const SolidMesh<dimension> & )
 ```
 
 
+### ~SolidMesh
+
+```cpp
+public void ~SolidMesh<dimension>()
+```
+
+
 ### create
 
 ```cpp
@@ -64,13 +71,6 @@ public std::unique_ptr<SolidMesh<dimension> > create(const MeshImpl & impl)
 
 ```cpp
 public std::unique_ptr<SolidMesh<dimension> > clone()
-```
-
-
-### ~SolidMesh
-
-```cpp
-public void ~SolidMesh<dimension>()
 ```
 
 
@@ -284,8 +284,6 @@ public bool is_polyhedron_on_border(index_t polyhedron_id)
 
 
  Return true if at least one polyhedron facet is on border
-
-
 
 **polyhedron_id** [in] Index of a polyhedron
 
