@@ -15,6 +15,8 @@ const name = words.join('-');
 
 # class DataPointsManager
 
+# class DataPointsManager
+
 
 ```cpp
 Inherits from DataConstraintsManager<dimension>
@@ -129,6 +131,4 @@ public void save_data_points_manager(basic_string_view filename)
 
 
 
-
-# class DataPointsManager
 
