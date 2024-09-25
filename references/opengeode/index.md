@@ -2020,6 +2020,44 @@ SurfacePolygonsEdgeVertices oriented_surface_vertices_from_line_edge(const Secti
 ```
 
 
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_edged_curve_missing_files
+
+```cpp
+typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
+```
+
+
+### is_edged_curve_loadable
+
+```cpp
+bool is_edged_curve_loadable(basic_string_view filename)
+```
+
+
 ### polyhedron_unique_vertices
 
 ```cpp
@@ -2073,163 +2111,6 @@ tuple convert_section_into_brep(const Section & section, index_t axis_to_add, do
 
 ```cpp
 BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptions & options)
-```
-
-
-### convert_edged_curve3d_into_2d
-
-```cpp
-unique_ptr convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, index_t axis_to_remove)
-```
-
-
-### convert_edged_curve2d_into_3d
-
-```cpp
-unique_ptr convert_edged_curve2d_into_3d(const EdgedCurve2D & curve2d, index_t axis_to_add, double axis_coordinate)
-```
-
-
-### merge_edged_curves
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > merge_edged_curves(absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves)
-```
-
-
-### convert_point_set3d_into_2d
-
-```cpp
-unique_ptr convert_point_set3d_into_2d(const PointSet3D & point_set3d, index_t axis_to_remove)
-```
-
-
-### convert_point_set2d_into_3d
-
-```cpp
-unique_ptr convert_point_set2d_into_3d(const PointSet2D & point_set2d, index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_surface_mesh_into_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & surface)
-```
-
-
-### convert_surface_mesh_into_triangulated_surface
-
-```cpp
-std::optional<std::unique_ptr<TriangulatedSurface<dimension> > > convert_surface_mesh_into_triangulated_surface(const SurfaceMesh<dimension> & surface)
-```
-
-
-### convert_grid_into_triangulated_surface
-
-```cpp
-std::unique_ptr<TriangulatedSurface2D> convert_grid_into_triangulated_surface(const Grid2D & grid)
-```
-
-
-### triangulate_surface_mesh
-
-```cpp
-void triangulate_surface_mesh(SurfaceMesh<dimension> & surface)
-```
-
-
-### triangulate_surface_mesh
-
-```cpp
-void triangulate_surface_mesh(const SurfaceMesh<dimension> & surface, SurfaceMeshBuilder<dimension> & builder)
-```
-
-
-### convert_surface_mesh2d_into_3d
-
-```cpp
-unique_ptr convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_surface_mesh3d_into_2d
-
-```cpp
-unique_ptr convert_surface_mesh3d_into_2d(const SurfaceMesh3D & surface3d, index_t axis_to_remove)
-```
-
-
-### convert_polygonal_surface2d_into_3d
-
-```cpp
-std::unique_ptr<PolygonalSurface3D> convert_polygonal_surface2d_into_3d(const PolygonalSurface2D & surface2d, index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_polygonal_surface3d_into_2d
-
-```cpp
-std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const PolygonalSurface3D & surface3d, index_t axis_to_remove)
-```
-
-
-### convert_triangulated_surface2d_into_3d
-
-```cpp
-std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(const TriangulatedSurface2D & surface2d, index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_triangulated_surface3d_into_2d
-
-```cpp
-std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, index_t axis_to_remove)
-```
-
-
-### merge_surface_meshes
-
-```cpp
-std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
-```
-
-
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_edged_curve_missing_files
-
-```cpp
-typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
-```
-
-
-### is_edged_curve_loadable
-
-```cpp
-bool is_edged_curve_loadable(basic_string_view filename)
 ```
 
 
@@ -2329,6 +2210,41 @@ bool is_hybrid_solid_loadable(basic_string_view filename)
 ```
 
 
+### convert_edged_curve3d_into_2d
+
+```cpp
+unique_ptr convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, index_t axis_to_remove)
+```
+
+
+### convert_edged_curve2d_into_3d
+
+```cpp
+unique_ptr convert_edged_curve2d_into_3d(const EdgedCurve2D & curve2d, index_t axis_to_add, double axis_coordinate)
+```
+
+
+### merge_edged_curves
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > merge_edged_curves(absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves)
+```
+
+
+### convert_point_set3d_into_2d
+
+```cpp
+unique_ptr convert_point_set3d_into_2d(const PointSet3D & point_set3d, index_t axis_to_remove)
+```
+
+
+### convert_point_set2d_into_3d
+
+```cpp
+unique_ptr convert_point_set2d_into_3d(const PointSet2D & point_set2d, index_t axis_to_add, double axis_coordinate)
+```
+
+
 ### save_hybrid_solid
 
 ```cpp
@@ -2342,10 +2258,80 @@ vector save_hybrid_solid(const HybridSolid<dimension> & hybrid_solid, basic_stri
 
 **filename** [in] Path to the file where save the HybridSolid.
 
+### convert_surface_mesh_into_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & surface)
+```
+
+
 ### is_hybrid_solid_saveable
 
 ```cpp
 bool is_hybrid_solid_saveable(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
+```
+
+
+### convert_surface_mesh_into_triangulated_surface
+
+```cpp
+std::optional<std::unique_ptr<TriangulatedSurface<dimension> > > convert_surface_mesh_into_triangulated_surface(const SurfaceMesh<dimension> & surface)
+```
+
+
+### convert_grid_into_triangulated_surface
+
+```cpp
+std::unique_ptr<TriangulatedSurface2D> convert_grid_into_triangulated_surface(const Grid2D & grid)
+```
+
+
+### triangulate_surface_mesh
+
+```cpp
+void triangulate_surface_mesh(SurfaceMesh<dimension> & surface)
+```
+
+
+### triangulate_surface_mesh
+
+```cpp
+void triangulate_surface_mesh(const SurfaceMesh<dimension> & surface, SurfaceMeshBuilder<dimension> & builder)
+```
+
+
+### convert_surface_mesh2d_into_3d
+
+```cpp
+unique_ptr convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, index_t axis_to_add, double axis_coordinate)
+```
+
+
+### convert_surface_mesh3d_into_2d
+
+```cpp
+unique_ptr convert_surface_mesh3d_into_2d(const SurfaceMesh3D & surface3d, index_t axis_to_remove)
+```
+
+
+### convert_polygonal_surface2d_into_3d
+
+```cpp
+std::unique_ptr<PolygonalSurface3D> convert_polygonal_surface2d_into_3d(const PolygonalSurface2D & surface2d, index_t axis_to_add, double axis_coordinate)
+```
+
+
+### convert_polygonal_surface3d_into_2d
+
+```cpp
+std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const PolygonalSurface3D & surface3d, index_t axis_to_remove)
+```
+
+
+### convert_triangulated_surface2d_into_3d
+
+```cpp
+std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(const TriangulatedSurface2D & surface2d, index_t axis_to_add, double axis_coordinate)
 ```
 
 
@@ -2359,6 +2345,20 @@ LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
  API function for loading an LightRegularGrid. The adequate loader is called depending on the filename extension.
 
 **filename** [in] Path to the file to load.
+
+### convert_triangulated_surface3d_into_2d
+
+```cpp
+std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, index_t axis_to_remove)
+```
+
+
+### merge_surface_meshes
+
+```cpp
+std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
+```
+
 
 ### check_light_regular_grid_missing_files
 
@@ -3073,41 +3073,6 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### find_intersections_with_boundaries
-
-```cpp
-flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
-```
-
-
-### is_point_inside_block
-
-```cpp
-bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
-```
-
-
-### block_containing_point
-
-```cpp
-optional block_containing_point(const BRep & brep, const Point3D & point)
-```
-
-
 ### convert_surface_mesh
 
 ```cpp
@@ -3273,6 +3238,41 @@ FixedArray brep_active_coordinate_reference_systems(const BRep & brep)
 
 ```cpp
 FixedArray section_active_coordinate_reference_systems(const Section & section)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### find_intersections_with_boundaries
+
+```cpp
+flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
+```
+
+
+### is_point_inside_block
+
+```cpp
+bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
+```
+
+
+### block_containing_point
+
+```cpp
+optional block_containing_point(const BRep & brep, const Point3D & point)
 ```
 
 
