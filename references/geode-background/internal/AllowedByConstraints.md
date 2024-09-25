@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public bool is_allowed
+public Allowed allowed
 
 ```
 
@@ -33,7 +33,14 @@ public vector forbidden_vertices
 ### AllowedByConstraints
 
 ```cpp
-public void AllowedByConstraints(bool is_allowed_in)
+public void AllowedByConstraints<Allowed>()
+```
+
+
+### AllowedByConstraints
+
+```cpp
+public void AllowedByConstraints<Allowed>(Allowed allowed_in)
 ```
 
 

@@ -81,6 +81,13 @@ public SolidSplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & 
 ### split_facet
 
 ```cpp
+public SolidSplitFacetInfo split_facet(index_t facet_id, const Point3D & point)
+```
+
+
+### split_facet
+
+```cpp
 public SolidSplitFacetInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
 ```
 

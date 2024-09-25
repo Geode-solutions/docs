@@ -149,24 +149,10 @@ void optimize_background_solid_elements(BackgroundSolidConstraintModifier & cons
 ```
 
 
-### allowed_collapse_vertex_vertex_considering_border_conditions
-
-```cpp
-ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_vertex_vertex_considering_border_conditions(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, const class BackgroundSolidConstraintModifier::Constraints & constraints)
-```
-
-
 ### allowed_collapse_vertex_vertex
 
 ```cpp
 ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_vertex_vertex(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, const class BackgroundSolidConstraintModifier::Constraints & constraints)
-```
-
-
-### is_collapse_vertex_vertex_allowed_by_constraints
-
-```cpp
-bool is_collapse_vertex_vertex_allowed_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
@@ -233,38 +219,45 @@ bool is_edge_removal_allowed(const ModifiableBackgroundSolid & solid, const Poly
 ```
 
 
-### is_split_collapse_edge_allowed
+### allowed_split_collapse_edge
 
 ```cpp
-AllowedByConstraints is_split_collapse_edge_allowed(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+AllowedByConstraints allowed_split_collapse_edge(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
-### is_split_collapse_edge_allowed_by_constraints
+### allowed_split_collapse_edge_by_constraints
 
 ```cpp
-AllowedByConstraints is_split_collapse_edge_allowed_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+AllowedByConstraints allowed_split_collapse_edge_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
-### is_split_collapse_facet_allowed
+### allowed_split_collapse_facet
 
 ```cpp
-AllowedByConstraints is_split_collapse_facet_allowed(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+AllowedByConstraints allowed_split_collapse_facet(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
-### is_split_collapse_facet_allowed_by_constraints
+### allowed_split_collapse_facet_by_constraints
 
 ```cpp
-AllowedByConstraints is_split_collapse_facet_allowed_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+AllowedByConstraints allowed_split_collapse_facet_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
-### is_split_split_collapse_allowed_by_constraints
+### allowed_split_split_collapse
 
 ```cpp
-bool is_split_split_collapse_allowed_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+ALLOWED_COLLAPSE_EDGE_EDGE allowed_split_split_collapse(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### allowed_split_split_collapse_by_constraints
+
+```cpp
+ALLOWED_COLLAPSE_EDGE_EDGE allowed_split_split_collapse_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
@@ -279,6 +272,13 @@ bool is_edge_removal_allowed_by_constraints(const ModifiableBackgroundSolid & so
 
 ```cpp
 bool is_swap_edge_allowed_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### is_swap_facet_allowed_by_constraints
+
+```cpp
+bool is_swap_facet_allowed_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
@@ -307,6 +307,20 @@ geode::index_t count_nb_surface_orientations(const std::vector<geode::Vector3D> 
 
 ```cpp
 bool is_collapse_vertex_vertex_allowed_by_border_conditions(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, const geode::index_t vertex_from)
+```
+
+
+### allowed_collapse_vertex_vertex_considering_border_conditions
+
+```cpp
+ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_vertex_vertex_considering_border_conditions(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### is_collapse_vertex_vertex_allowed_by_constraints
+
+```cpp
+bool is_collapse_vertex_vertex_allowed_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, const geode::index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 

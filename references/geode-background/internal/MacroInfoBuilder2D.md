@@ -78,6 +78,13 @@ public void update_information(const TriangulatedSurfaceModifier2D::CollapseEdge
 ```
 
 
+### update_information
+
+```cpp
+public void update_information(const TriangulatedSurfaceModifier2D::CollapsePolygonEdgeInfo & collapse_info)
+```
+
+
 ### update_edges
 
 ```cpp

@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public flat_hash_map blocks
+public absl::flat_hash_map<uuid, std::vector<AllowedByConstraints<Allowed> > > blocks
 
 ```
 
