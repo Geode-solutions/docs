@@ -39,7 +39,7 @@ public void ~TetrahedralSolidEpsilonModifier()
 ### insert_point_in_tetrahedron
 
 ```cpp
-public SolidSplitInfo insert_point_in_tetrahedron(index_t tetrahedron_id, const Point3D & point)
+public SplitInfo insert_point_in_tetrahedron(index_t tetrahedron_id, const Point3D & point)
 ```
 
 
@@ -56,7 +56,7 @@ public SolidSplitInfo insert_point_in_tetrahedron(index_t tetrahedron_id, const 
 ### insert_point_on_facet
 
 ```cpp
-public SolidSplitInfo insert_point_on_facet(const PolyhedronFacet & facet, const Point3D & point)
+public SplitInfo insert_point_on_facet(const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 
@@ -73,7 +73,7 @@ public SolidSplitInfo insert_point_on_facet(const PolyhedronFacet & facet, const
 ### insert_point_on_edge
 
 ```cpp
-public SolidSplitEdgeInfo insert_point_on_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
+public SplitEdgeInfo insert_point_on_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
 
@@ -90,7 +90,7 @@ public SolidSplitEdgeInfo insert_point_on_edge(const PolyhedronFacetEdge & edge,
 ### insert_point_on_edge
 
 ```cpp
-public SolidSplitEdgeInfo insert_point_on_edge(index_t edge_id, const Point3D & point)
+public SplitEdgeInfo insert_point_on_edge(index_t edge_id, const Point3D & point)
 ```
 
 

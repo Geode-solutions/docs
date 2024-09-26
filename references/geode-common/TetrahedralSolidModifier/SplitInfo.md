@@ -11,21 +11,48 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SolidSplitFacetInfo
-
-
-```cpp
-Inherits from SolidSplitInfo
-```
-
+# struct SplitInfo
 
 
 ## Members
 
 ```cpp
-public InlinedVector facet_vertices
+public index_t vertex
 
 ```
+
+```cpp
+public InlinedVector tetrahedra
+
+```
+
+```cpp
+public InlinedVector facets
+
+```
+
+```cpp
+public InlinedVector edges
+
+```
+
+
+
+## Functions
+
+### SplitInfo
+
+```cpp
+public void SplitInfo()
+```
+
+
+### SplitInfo
+
+```cpp
+public void SplitInfo(SplitEdgeInfo && split_edge_info)
+```
+
 
 
 

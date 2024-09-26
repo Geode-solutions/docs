@@ -11,48 +11,45 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SolidSplitInfo
+# struct SwapFacetInfo
 
 
 ## Members
 
 ```cpp
-public index_t vertex
+public array inactive_tetrahedra
 
 ```
 
 ```cpp
-public InlinedVector tetrahedra
+public array new_tetrahedra
 
 ```
 
 ```cpp
-public InlinedVector facets
+public array modified
 
 ```
 
 ```cpp
-public InlinedVector edges
+public array added
 
 ```
-
-
-
-## Functions
-
-### SolidSplitInfo
 
 ```cpp
-public void SolidSplitInfo()
+public array removed
+
 ```
-
-
-### SolidSplitInfo
 
 ```cpp
-public void SolidSplitInfo(SolidSplitEdgeInfo && split_edge_info)
+public array edge_vertices
+
 ```
 
+```cpp
+public InlinedVector facet_vertices
+
+```
 
 
 

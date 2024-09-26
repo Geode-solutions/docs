@@ -22,23 +22,25 @@ Inherits from VerticesModifier
 
 ## Records
 
-SidedSolidSplitEdgeInfo
+SidedSplitEdgeInfo
 
-AlongSolidSplitEdgeInfo
+AlongSplitEdgeInfo
 
-SolidSplitEdgeInfo
+SplitEdgeInfo
 
-SolidSplitInfo
+SplitInfo
 
-SolidSplitFacetInfo
+SplitFacetInfo
 
-SolidCollapseEdgeInfo
+CollapseEdgeInfo
 
-SolidSwapFacetInfo
+SplitCollapseInfo
 
-SolidSwapEdgeInfo
+SwapFacetInfo
 
-SolidRemoveMultipleAdjacencyInfo
+SwapEdgeInfo
+
+RemoveMultipleAdjacencyInfo
 
 CleanMappings
 
@@ -105,7 +107,7 @@ public bool is_facet_active(index_t facet_id)
 ### split_tetrahedron
 
 ```cpp
-public SolidSplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & point)
+public SplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & point)
 ```
 
 
@@ -122,7 +124,7 @@ public SolidSplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & 
 ### split_facet
 
 ```cpp
-public SolidSplitFacetInfo split_facet(index_t facet_id, const Point3D & point)
+public SplitFacetInfo split_facet(index_t facet_id, const Point3D & point)
 ```
 
 
@@ -139,7 +141,7 @@ public SolidSplitFacetInfo split_facet(index_t facet_id, const Point3D & point)
 ### split_facet
 
 ```cpp
-public SolidSplitFacetInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
+public SplitFacetInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 
@@ -158,7 +160,7 @@ public SolidSplitFacetInfo split_facet(const PolyhedronFacet & facet, const Poin
 ### split_edge
 
 ```cpp
-public SolidSplitEdgeInfo split_edge(index_t edge_id, const Point3D & point)
+public SplitEdgeInfo split_edge(index_t edge_id, const Point3D & point)
 ```
 
 
@@ -175,7 +177,7 @@ public SolidSplitEdgeInfo split_edge(index_t edge_id, const Point3D & point)
 ### split_edge
 
 ```cpp
-public SolidSplitEdgeInfo split_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
+public SplitEdgeInfo split_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
 
@@ -192,7 +194,7 @@ public SolidSplitEdgeInfo split_edge(const PolyhedronFacetEdge & edge, const Poi
 ### collapse_edge
 
 ```cpp
-public SolidCollapseEdgeInfo collapse_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
+public CollapseEdgeInfo collapse_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
 
@@ -207,7 +209,7 @@ public SolidCollapseEdgeInfo collapse_edge(const PolyhedronFacetEdge & edge, con
 ### collapse_edge
 
 ```cpp
-public SolidCollapseEdgeInfo collapse_edge(index_t edge_id, const Point3D & point)
+public CollapseEdgeInfo collapse_edge(index_t edge_id, const Point3D & point)
 ```
 
 
@@ -222,7 +224,7 @@ public SolidCollapseEdgeInfo collapse_edge(index_t edge_id, const Point3D & poin
 ### swap_facet
 
 ```cpp
-public SolidSwapFacetInfo swap_facet(const PolyhedronFacet & facet)
+public SwapFacetInfo swap_facet(const PolyhedronFacet & facet)
 ```
 
 
@@ -235,7 +237,7 @@ public SolidSwapFacetInfo swap_facet(const PolyhedronFacet & facet)
 ### swap_edge
 
 ```cpp
-public SolidSwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
+public SwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
 
@@ -250,7 +252,7 @@ public SolidSwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t ape
 ### remove_double_adjacency
 
 ```cpp
-public SolidRemoveMultipleAdjacencyInfo remove_double_adjacency(const PolyhedronFacetEdge & edge)
+public RemoveMultipleAdjacencyInfo remove_double_adjacency(const PolyhedronFacetEdge & edge)
 ```
 
 
@@ -263,7 +265,7 @@ public SolidRemoveMultipleAdjacencyInfo remove_double_adjacency(const Polyhedron
 ### remove_triple_adjacency
 
 ```cpp
-public SolidRemoveMultipleAdjacencyInfo remove_triple_adjacency(const PolyhedronVertex & vertex)
+public RemoveMultipleAdjacencyInfo remove_triple_adjacency(const PolyhedronVertex & vertex)
 ```
 
 
@@ -272,6 +274,41 @@ public SolidRemoveMultipleAdjacencyInfo remove_triple_adjacency(const Polyhedron
 **vertex** [in] Index of the PolyhedronVertex shared by the three PolyhedronFacet adjacent to the same tetrahedron.
 
 **warning** Old tetrahedra are set as inactive but not deleted.
+
+### split_collapse_edge
+
+```cpp
+public SplitCollapseInfo split_collapse_edge(const PolyhedronFacetEdge & edge, index_t apex)
+```
+
+
+### split_collapse_edge
+
+```cpp
+public SplitCollapseInfo split_collapse_edge(const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point)
+```
+
+
+### split_collapse_facet
+
+```cpp
+public SplitCollapseInfo split_collapse_facet(const PolyhedronFacet & facet)
+```
+
+
+### split_collapse_facet
+
+```cpp
+public SplitCollapseInfo split_collapse_facet(const PolyhedronFacet & facet, const Point3D & point)
+```
+
+
+### split_split_collapse
+
+```cpp
+public SplitCollapseInfo split_split_collapse(const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
+```
+
 
 ### move_point
 

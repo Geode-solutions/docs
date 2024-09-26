@@ -11,23 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SidedSolidSplitEdgeInfo
+# struct SplitCollapseInfo
 
 
 ## Members
 
 ```cpp
-public InlinedVector tetrahedra
+public Mapping vertex
 
 ```
 
 ```cpp
-public InlinedVector facets
+public vector inactive_tetrahedra
 
 ```
 
 ```cpp
-public InlinedVector edges
+public vector modified_tetrahedra
 
 ```
 

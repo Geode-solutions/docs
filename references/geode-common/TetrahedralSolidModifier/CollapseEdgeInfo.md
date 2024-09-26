@@ -11,53 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SolidSplitEdgeInfo
+# struct CollapseEdgeInfo
 
 
 ## Members
 
 ```cpp
-public index_t vertex
+public MultiMapping vertex
 
 ```
 
 ```cpp
-public array edge_vertices
+public vector inactive_tetrahedra
 
 ```
 
 ```cpp
-public SidedSolidSplitEdgeInfo left
+public vector modified_tetrahedra
 
 ```
 
 ```cpp
-public SidedSolidSplitEdgeInfo right
+public vector facets
 
 ```
 
 ```cpp
-public AlongSolidSplitEdgeInfo along
+public vector edges
 
 ```
-
-
-
-## Functions
-
-### SolidSplitEdgeInfo
-
-```cpp
-public void SolidSplitEdgeInfo()
-```
-
-
-### SolidSplitEdgeInfo
-
-```cpp
-public void SolidSplitEdgeInfo(index_t nb_tetrahedra, bool with_edges, bool with_facets)
-```
-
 
 
 

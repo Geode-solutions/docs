@@ -11,33 +11,13 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SolidCollapseEdgeInfo
+# struct RemoveMultipleAdjacencyInfo
 
 
 ## Members
 
 ```cpp
-public MultiMapping vertex
-
-```
-
-```cpp
-public vector inactive_tetrahedra
-
-```
-
-```cpp
-public vector modified_tetrahedra
-
-```
-
-```cpp
-public vector facets
-
-```
-
-```cpp
-public vector edges
+public array inactive_tetrahedra
 
 ```
 

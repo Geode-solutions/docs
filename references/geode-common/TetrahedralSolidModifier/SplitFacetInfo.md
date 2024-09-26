@@ -11,38 +11,19 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SolidSwapEdgeInfo
+# struct SplitFacetInfo
+
+
+```cpp
+Inherits from SplitInfo
+```
+
 
 
 ## Members
 
 ```cpp
-public vector inactive_tetrahedra
-
-```
-
-```cpp
-public vector new_tetrahedra
-
-```
-
-```cpp
-public vector modified
-
-```
-
-```cpp
-public vector added
-
-```
-
-```cpp
-public vector removed
-
-```
-
-```cpp
-public array edge_vertices
+public InlinedVector facet_vertices
 
 ```
 

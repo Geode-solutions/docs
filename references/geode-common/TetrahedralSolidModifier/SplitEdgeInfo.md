@@ -11,20 +11,53 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct AlongSolidSplitEdgeInfo
+# struct SplitEdgeInfo
 
 
 ## Members
 
 ```cpp
-public InlinedVector facets
+public index_t vertex
 
 ```
 
 ```cpp
-public InlinedVector edges
+public array edge_vertices
 
 ```
+
+```cpp
+public SidedSplitEdgeInfo left
+
+```
+
+```cpp
+public SidedSplitEdgeInfo right
+
+```
+
+```cpp
+public AlongSplitEdgeInfo along
+
+```
+
+
+
+## Functions
+
+### SplitEdgeInfo
+
+```cpp
+public void SplitEdgeInfo()
+```
+
+
+### SplitEdgeInfo
+
+```cpp
+public void SplitEdgeInfo(index_t nb_tetrahedra, bool with_edges, bool with_facets)
+```
+
 
 
 
