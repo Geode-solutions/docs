@@ -102,21 +102,21 @@ public void reset_all_blocks_of_background_tetrahedra()
 ### update_information
 
 ```cpp
-public void update_information(const class TetrahedralSolidModifier::SolidSplitInfo & split_info)
+public void update_information(const class TetrahedralSolidModifier::SplitInfo & split_info)
 ```
 
 
 ### update_information
 
 ```cpp
-public void update_information(const class TetrahedralSolidModifier::SolidSplitEdgeInfo & split_info)
+public void update_information(const class TetrahedralSolidModifier::SplitEdgeInfo & split_info)
 ```
 
 
 ### update_information
 
 ```cpp
-public void update_information(const class TetrahedralSolidModifier::SolidCollapseEdgeInfo & collapse_info)
+public void update_information(const class TetrahedralSolidModifier::CollapseEdgeInfo & collapse_info)
 ```
 
 

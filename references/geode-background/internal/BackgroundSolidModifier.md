@@ -74,63 +74,63 @@ public void ~BackgroundSolidModifier()
 ### split_tetrahedron
 
 ```cpp
-public SolidSplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & point)
+public SplitInfo split_tetrahedron(index_t tetrahedron_id, const Point3D & point)
 ```
 
 
 ### split_facet
 
 ```cpp
-public SolidSplitFacetInfo split_facet(index_t facet_id, const Point3D & point)
+public SplitFacetInfo split_facet(index_t facet_id, const Point3D & point)
 ```
 
 
 ### split_facet
 
 ```cpp
-public SolidSplitFacetInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
+public SplitFacetInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 
 ### split_edge
 
 ```cpp
-public SolidSplitEdgeInfo split_edge(index_t edge_id, const Point3D & point)
+public SplitEdgeInfo split_edge(index_t edge_id, const Point3D & point)
 ```
 
 
 ### split_edge
 
 ```cpp
-public SolidSplitEdgeInfo split_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
+public SplitEdgeInfo split_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
 
 ### collapse_edge
 
 ```cpp
-public SolidCollapseEdgeInfo collapse_edge(index_t edge_id, const Point3D & point)
+public CollapseEdgeInfo collapse_edge(index_t edge_id, const Point3D & point)
 ```
 
 
 ### collapse_edge
 
 ```cpp
-public SolidCollapseEdgeInfo collapse_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
+public CollapseEdgeInfo collapse_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
 ```
 
 
 ### swap_facet
 
 ```cpp
-public SolidSwapFacetInfo swap_facet(const PolyhedronFacet & facet)
+public SwapFacetInfo swap_facet(const PolyhedronFacet & facet)
 ```
 
 
 ### swap_edge
 
 ```cpp
-public SolidSwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
+public SwapEdgeInfo swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
 
