@@ -93,6 +93,13 @@ public double value(local_index_t row, local_index_t column)
 ```
 
 
+### row
+
+```cpp
+public const Vector<dimension> & row(local_index_t row)
+```
+
+
 ### set_value
 
 ```cpp
@@ -111,6 +118,27 @@ public Vector<dimension> operator*(const Vector<dimension> & vector)
 
 ```cpp
 public SquareMatrix operator*(const SquareMatrix<dimension> & matrix)
+```
+
+
+### operator+=
+
+```cpp
+public void operator+=(const SquareMatrix<dimension> & other)
+```
+
+
+### operator-=
+
+```cpp
+public void operator-=(const SquareMatrix<dimension> & other)
+```
+
+
+### operator*=
+
+```cpp
+public void operator*=(double multiplier)
 ```
 
 
