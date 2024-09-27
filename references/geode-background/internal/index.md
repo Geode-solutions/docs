@@ -28,10 +28,13 @@ const name = words.join('-');
 * [BackgroundBRep](BackgroundBRep.md)
 * [BackgroundInsertionException](BackgroundInsertionException.md)
 * [BackgroundOrchestrator](BackgroundOrchestrator.md)
+* [BackgroundSolidAspectRatioImprovementSimulator](BackgroundSolidAspectRatioImprovementSimulator.md)
 * [BackgroundSolidBuilder](BackgroundSolidBuilder.md)
 * [BackgroundSolidConstraintModifier](BackgroundSolidConstraintModifier.md)
 * [BackgroundSolidDecimator](BackgroundSolidDecimator.md)
+* [BackgroundSolidImprovementSimulator](BackgroundSolidImprovementSimulator.md)
 * [BackgroundSolidInserter](BackgroundSolidInserter.md)
+* [BackgroundSolidInternalDistanceImprovementSimulator](BackgroundSolidInternalDistanceImprovementSimulator.md)
 * [BackgroundSolidInternalDistanceOptimizer](BackgroundSolidInternalDistanceOptimizer.md)
 * [BackgroundSolidModifier](BackgroundSolidModifier.md)
 * [BackgroundSolidOptimizer](BackgroundSolidOptimizer.md)
@@ -79,6 +82,34 @@ void repair_background_surface_elements(const BackgroundSurface & background, Ba
 ```
 
 
+### does_collapse_edge_improve_metric
+
+```cpp
+bool does_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, const Point3D & collapse_point, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_swap_edge_improve_metric
+
+```cpp
+bool does_swap_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_swap_facet_improve_metric
+
+```cpp
+bool does_swap_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_split_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_split_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
 ### AbslHashValue
 
 ```cpp
@@ -96,14 +127,14 @@ InternalDistance minimal_tetrahedron_internal_distance(const Tetrahedron & tetra
 ### fast_tetrahedron_internal_distances
 
 ```cpp
-InlinedVector fast_tetrahedron_internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id, const struct InternalDistance::Options & options)
+InternalDistances fast_tetrahedron_internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id, const struct InternalDistance::Options & options)
 ```
 
 
 ### fast_tetrahedron_internal_distances
 
 ```cpp
-InlinedVector fast_tetrahedron_internal_distances(const Tetrahedron & tetra, const struct InternalDistance::Options & options)
+InternalDistances fast_tetrahedron_internal_distances(const Tetrahedron & tetra, const struct InternalDistance::Options & options)
 ```
 
 
@@ -145,7 +176,7 @@ PolyhedronFacetEdge edge_from_internal_distance(const SolidMesh3D & solid, index
 ### optimize_background_solid_elements
 
 ```cpp
-void optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
+void optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const BackgroundSolidImprovementSimulator & improvement_simulator)
 ```
 
 

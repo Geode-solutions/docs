@@ -53,7 +53,7 @@ public BackgroundSolidOptimizer & operator=(BackgroundSolidOptimizer && )
 ### BackgroundSolidOptimizer
 
 ```cpp
-public void BackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constraint_modifier)
+public void BackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidImprovementSimulator & improvement_simulator)
 ```
 
 

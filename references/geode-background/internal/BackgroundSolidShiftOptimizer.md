@@ -53,7 +53,7 @@ public BackgroundSolidShiftOptimizer & operator=(BackgroundSolidShiftOptimizer &
 ### BackgroundSolidShiftOptimizer
 
 ```cpp
-public void BackgroundSolidShiftOptimizer(BackgroundSolidConstraintModifier & constraint_modifier)
+public void BackgroundSolidShiftOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidImprovementSimulator & improvement_simulator)
 ```
 
 

@@ -53,7 +53,7 @@ public BlindedQualityBackgroundSolidOptimizer & operator=(BlindedQualityBackgrou
 ### BlindedQualityBackgroundSolidOptimizer
 
 ```cpp
-public void BlindedQualityBackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constraint_modifier)
+public void BlindedQualityBackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidImprovementSimulator & improvement_simulator)
 ```
 
 

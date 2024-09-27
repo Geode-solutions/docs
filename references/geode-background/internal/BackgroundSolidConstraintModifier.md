@@ -142,10 +142,24 @@ public SplitInfo split_collapse_edge(const PolyhedronFacetEdge & edge, index_t a
 ```
 
 
+### split_collapse_edge
+
+```cpp
+public SplitInfo split_collapse_edge(const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point)
+```
+
+
 ### split_collapse_facet
 
 ```cpp
 public SplitInfo split_collapse_facet(const PolyhedronFacet & facet)
+```
+
+
+### split_collapse_facet
+
+```cpp
+public SplitInfo split_collapse_facet(const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 
