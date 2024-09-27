@@ -123,6 +123,13 @@ public double data_point_weight(index_t data_point_index)
 ```
 
 
+### data_bounding_box
+
+```cpp
+public BoundingBox<dimension> data_bounding_box()
+```
+
+
 ### save_data_points_manager
 
 ```cpp

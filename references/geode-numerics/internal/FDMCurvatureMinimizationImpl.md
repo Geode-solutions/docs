@@ -16,20 +16,6 @@ const name = words.join('-');
 
 ## Functions
 
-### FDMCurvatureMinimizationImpl
-
-```cpp
-public void FDMCurvatureMinimizationImpl<dimension>(ComputationGrid<dimension> & grid, const DataConstraintsManager<dimension> & data_constraints)
-```
-
-
-### ~FDMCurvatureMinimizationImpl
-
-```cpp
-protected void ~FDMCurvatureMinimizationImpl<dimension>()
-```
-
-
 ### use_constraint_value_preconditioning
 
 ```cpp
@@ -48,6 +34,20 @@ public void use_scalar_function_preconditioning(const ComputationGrid<dimension>
 
 ```cpp
 public void compute_scalar_function(basic_string_view scalar_function_name)
+```
+
+
+### FDMCurvatureMinimizationImpl
+
+```cpp
+protected void FDMCurvatureMinimizationImpl<dimension>(ComputationGrid<dimension> & grid, const DataConstraintsManager<dimension> & data_constraints)
+```
+
+
+### ~FDMCurvatureMinimizationImpl
+
+```cpp
+protected void ~FDMCurvatureMinimizationImpl<dimension>()
 ```
 
 
@@ -129,4 +129,8 @@ protected std::optional<typename Grid<dimension>::CellIndices> first_active_cell
 
 
 
+
+# class FDMCurvatureMinimizationImpl
+
+# class FDMCurvatureMinimizationImpl
 
