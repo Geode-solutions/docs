@@ -17,6 +17,7 @@ const name = words.join('-');
 
 ## Namespaces
 
+* [detail](detail/index.md)
 * [internal](internal/index.md)
 
 
@@ -70,6 +71,31 @@ void compute_LSCM_parameterization(const TriangulatedSurface3D & mesh, basic_str
 **mesh** [in] Input triangulated mesh
 
 **attribute_name** [in] The VariableAttribute< Point2D > name which holds the parametric values. Values are stored on the vertices.
+
+### mean_plane_around_points
+
+```cpp
+OwnerPlane mean_plane_around_points(const PointSet3D & mesh)
+```
+
+
+ Compute mean plane around mesh Points with Least Squares
+
+**mesh** [in] Input mesh
+
+### mean_plane_around_curve_points
+
+```cpp
+OwnerPlane mean_plane_around_curve_points(const EdgedCurve3D & mesh)
+```
+
+
+### mean_plane_around_surface_points
+
+```cpp
+OwnerPlane mean_plane_around_surface_points(const SurfaceMesh3D & mesh)
+```
+
 
 
 
