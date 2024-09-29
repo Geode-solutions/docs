@@ -33,6 +33,8 @@ Inherits from VerticesModifier
 
 CollapseEdgeInfo
 
+SplitEdgeInfo
+
 
 
 ## Functions
@@ -90,7 +92,7 @@ public CollapseEdgeInfo collapse_edge(index_t edge_id, const Point<dimension> & 
 ### split_edge
 
 ```cpp
-public index_t split_edge(index_t edge_id, const Point<dimension> & point)
+public SplitEdgeInfo split_edge(index_t edge_id, const Point<dimension> & point)
 ```
 
 

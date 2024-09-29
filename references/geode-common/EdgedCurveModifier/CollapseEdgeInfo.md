@@ -28,3 +28,14 @@ public index_t inactive_edge
 
 
 
+## Functions
+
+### CollapseEdgeInfo
+
+```cpp
+public void CollapseEdgeInfo()
+```
+
+
+
+

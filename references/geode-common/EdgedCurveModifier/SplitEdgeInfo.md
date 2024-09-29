@@ -11,25 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelSplitPolygonEdgeInfo
+# struct SplitEdgeInfo
 
 
 ## Members
 
 ```cpp
-public index_t unique_vertex
+public array new_edges
 
 ```
 
 ```cpp
-public absl::flat_hash_map<uuid, absl::InlinedVector<SplitEdgeInfo, 1> > line_info
+public index_t old_edge
 
 ```
 
 ```cpp
-public absl::flat_hash_map<uuid, absl::InlinedVector<SplitPolygonEdgeInfo, 1> > surface_info
+public index_t vertex
 
 ```
+
+
+
+## Functions
+
+### SplitEdgeInfo
+
+```cpp
+public void SplitEdgeInfo()
+```
+
 
 
 
