@@ -441,20 +441,6 @@ void register_basic_pcontext(PContext & context)
 ```
 
 
-### register_inlinedvector
-
-```cpp
-void register_inlinedvector(PContext & context, basic_string_view type)
-```
-
-
-### register_geometry_pcontext
-
-```cpp
-void register_geometry_pcontext(PContext & context)
-```
-
-
 ### section_clone_mapping
 
 ```cpp
@@ -522,6 +508,20 @@ void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const Su
 
 ```cpp
 void transfer_solids_metadata(Span solids, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### register_inlinedvector
+
+```cpp
+void register_inlinedvector(PContext & context, basic_string_view type)
+```
+
+
+### register_geometry_pcontext
+
+```cpp
+void register_geometry_pcontext(PContext & context)
 ```
 
 
