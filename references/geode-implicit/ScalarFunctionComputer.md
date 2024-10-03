@@ -25,7 +25,7 @@ const name = words.join('-');
 ### ScalarFunctionComputer
 
 ```cpp
-public void ScalarFunctionComputer<dimension>(const DataConstraintsManager<dimension> & constraints_manager, const BoundingBox<dimension> & computation_bbox, double min_cell_length)
+public void ScalarFunctionComputer<dimension>(DataPointsManager<dimension> & constraints_manager, const BoundingBox<dimension> & computation_bbox, double target_cell_length)
 ```
 
 
@@ -33,6 +33,13 @@ public void ScalarFunctionComputer<dimension>(const DataConstraintsManager<dimen
 
 ```cpp
 public void ~ScalarFunctionComputer<dimension>()
+```
+
+
+### add_border_value_constraints
+
+```cpp
+public void add_border_value_constraints(double border_value, double weight)
 ```
 
 

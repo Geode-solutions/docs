@@ -25,6 +25,7 @@ const name = words.join('-');
 
 * [BMeshEdgeOnIntersection](BMeshEdgeOnIntersection.md)
 * [BRepMappings](BRepMappings.md)
+* [ClosedSurfacesFromCurves](ClosedSurfacesFromCurves.md)
 * [CrossSectionImpliciter](CrossSectionImpliciter.md)
 * [EdgeVertex](EdgeVertex.md)
 * [GridScalarFunctionExpliciter2D](GridScalarFunctionExpliciter2D.md)
@@ -40,6 +41,7 @@ const name = words.join('-');
 * [ModelComponentToSectionComponentMapping](ModelComponentToSectionComponentMapping.md)
 * [ModelMappings](ModelMappings.md)
 * [ScalarFunctionComputer](ScalarFunctionComputer.md)
+* [SingleSurfaceFromVertices](SingleSurfaceFromVertices.md)
 * [SolidMeshScalarFunctionExpliciter](SolidMeshScalarFunctionExpliciter.md)
 * [StratigraphicLine](StratigraphicLine.md)
 * [StratigraphicModelInserter](StratigraphicModelInserter.md)

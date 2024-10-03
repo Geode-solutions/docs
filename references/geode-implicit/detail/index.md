@@ -38,5 +38,12 @@ void extrapolate_light_regular_grid_scalar_function(const LightRegularGrid<dimen
 ```
 
 
+### compute_cell_size
+
+```cpp
+double compute_cell_size(geode::BoundingBox<dimension> bbox, const geode::DataPointsManager<dimension> & data, bool dense_data)
+```
+
+
 
 
