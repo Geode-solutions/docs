@@ -36,6 +36,11 @@ public InspectionIssues brep_non_manifold_edges
 
 ```
 
+```cpp
+public InspectionIssues brep_non_manifold_facets
+
+```
+
 
 
 ## Functions

@@ -43,6 +43,7 @@ const name = words.join('-');
 * [BRepMeshesManifoldInspectionResult](BRepMeshesManifoldInspectionResult.md)
 * [BRepMeshesNegativeElementsInspectionResult](BRepMeshesNegativeElementsInspectionResult.md)
 * [BRepNonManifoldEdge](BRepNonManifoldEdge.md)
+* [BRepNonManifoldFacet](BRepNonManifoldFacet.md)
 * [BRepSurfacesTopologyInspectionResult](BRepSurfacesTopologyInspectionResult.md)
 * [BRepSurfacesTopology](BRepSurfacesTopology.md)
 * [BRepTopologyInspectionResult](BRepTopologyInspectionResult.md)
