@@ -130,10 +130,10 @@ public BoundingBox<dimension> data_bounding_box()
 ```
 
 
-### save_data_points_manager
+### data_points
 
 ```cpp
-public void save_data_points_manager(basic_string_view filename)
+public const PointSet<dimension> & data_points()
 ```
 
 
