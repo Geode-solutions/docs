@@ -152,6 +152,13 @@ void repair_horizon_stack_if_possible(const HorizonsStack<dimension> & horizon_s
 ```
 
 
+### horizon_id_from_name
+
+```cpp
+optional horizon_id_from_name(const HorizonsStack<dimension> & horizon_stack, basic_string_view horizon_name)
+```
+
+
 ### invalid_stratigraphic_tetrahedra
 
 ```cpp
