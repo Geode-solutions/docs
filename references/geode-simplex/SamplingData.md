@@ -72,6 +72,13 @@ public void tag_unique_vertices(Span unique_vertices)
 ```
 
 
+### is_vertex_tagged
+
+```cpp
+public bool is_vertex_tagged(index_t unique_vertex)
+```
+
+
 ### release_tagged_vertices
 
 ```cpp
