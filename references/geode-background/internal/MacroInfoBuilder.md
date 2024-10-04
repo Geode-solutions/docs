@@ -26,14 +26,42 @@ public void ~MacroInfoBuilder<>()
 ### add_macro_vertex_info
 
 ```cpp
-public void add_macro_vertex_info(const uuid & component_uuid, index_t macro_vertex_id, index_t background_mesh_vertex_id)
+public void add_macro_vertex_info(const MeshVertex & macro_vertex, index_t background_mesh_vertex_id)
 ```
 
 
 ### remove_macro_vertex_info
 
 ```cpp
-public void remove_macro_vertex_info(const uuid & component_uuid, index_t macro_vertex_id, index_t background_mesh_vertex_id)
+public void remove_macro_vertex_info(const MeshVertex & macro_vertex, index_t background_mesh_vertex_id)
+```
+
+
+### add_macro_edge_info
+
+```cpp
+public void add_macro_edge_info(const MeshEdge & macro_edge, Span background_surface_edge_ids)
+```
+
+
+### add_macro_edge_info_on_vertex
+
+```cpp
+public void add_macro_edge_info_on_vertex(const MeshEdge & macro_edge, index_t background_surface_vertex_id)
+```
+
+
+### remove_macro_edge_info_on_edge
+
+```cpp
+public void remove_macro_edge_info_on_edge(const MeshEdge & macro_edge, index_t background_surface_edge_id)
+```
+
+
+### remove_macro_edge_info_on_vertex
+
+```cpp
+public void remove_macro_edge_info_on_vertex(const MeshEdge & macro_edge, index_t background_surface_vertex_id)
 ```
 
 
@@ -48,6 +76,34 @@ public void update_vertex(const VertexMultiMapping & mapping)
 
 ```cpp
 public void update_vertices(Span mappings)
+```
+
+
+### update_edge
+
+```cpp
+public void update_edge(const EdgeMapping & edge)
+```
+
+
+### update_edges
+
+```cpp
+public void update_edges(Span edges)
+```
+
+
+### update_edge
+
+```cpp
+public void update_edge(const EdgeMultiMapping & edge)
+```
+
+
+### update_edges
+
+```cpp
+public void update_edges(Span edges)
 ```
 
 

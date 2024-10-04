@@ -29,31 +29,24 @@ public void ~MacroInfo<dimension>()
 ```
 
 
-### component_vertices
+### macro_vertices
 
 ```cpp
-public const std::vector<MeshVertex> & component_vertices(index_t background_mesh_vertex)
+public const std::vector<MeshVertex> & macro_vertices(index_t background_mesh_vertex)
 ```
 
 
-### component_edges
+### macro_edges
 
 ```cpp
-public const std::vector<MeshEdge> & component_edges(index_t background_mesh_edge)
+public const std::vector<MeshEdge> & macro_edges(index_t background_mesh_edge)
 ```
 
 
-### incident_component_edges
+### incident_macro_edges
 
 ```cpp
-public const std::vector<MeshEdge> & incident_component_edges(index_t background_mesh_vertex)
-```
-
-
-### is_vertex_part_of_component_vertices
-
-```cpp
-public bool is_vertex_part_of_component_vertices(index_t background_mesh_vertex, const uuid & mesh_component_id)
+public const std::vector<MeshEdge> & incident_macro_edges(index_t background_mesh_vertex)
 ```
 
 
@@ -64,45 +57,51 @@ public bool is_macro_info_mandatory(const uuid & mesh_id)
 ```
 
 
-### add_component_vertex_to_background_mesh_vertex
+### edge_vertices
 
 ```cpp
-public void add_component_vertex_to_background_mesh_vertex(const uuid & mesh_id, index_t vertex_id, index_t background_mesh_vertex_id, MacroInfoKey )
+public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
+```
+
+### add_macro_vertex_to_background_mesh_vertex
+
+```cpp
+public void add_macro_vertex_to_background_mesh_vertex(const MeshVertex & macro_vertex, index_t background_mesh_vertex_id, MacroInfoKey )
 ```
 
 
-### remove_component_vertex_from_background_mesh_vertex
+### remove_macro_vertex_from_background_mesh_vertex
 
 ```cpp
-public void remove_component_vertex_from_background_mesh_vertex(const uuid & mesh_id, index_t vertex_id, index_t background_mesh_vertex_id, MacroInfoKey )
+public void remove_macro_vertex_from_background_mesh_vertex(const MeshVertex & macro_vertex, index_t background_mesh_vertex_id, MacroInfoKey )
 ```
 
 
-### add_component_edge_to_background_mesh_edge
+### add_macro_edge_to_background_mesh_edge
 
 ```cpp
-public void add_component_edge_to_background_mesh_edge(const uuid & mesh_id, index_t edge_id, index_t background_mesh_edge_id, MacroInfoKey )
+public void add_macro_edge_to_background_mesh_edge(const MeshEdge & macro_edge, index_t background_mesh_edge_id, MacroInfoKey )
 ```
 
 
-### add_component_edge_to_background_mesh_vertices
+### add_macro_edge_to_background_mesh_vertices
 
 ```cpp
-public void add_component_edge_to_background_mesh_vertices(const uuid & mesh_id, index_t edge_id, Span background_mesh_vertex_ids, MacroInfoKey )
+public void add_macro_edge_to_background_mesh_vertices(const MeshEdge & macro_edge, Span background_mesh_vertex_ids, MacroInfoKey )
 ```
 
 
-### remove_component_edge_from_background_mesh_edge
+### remove_macro_edge_from_background_mesh_edge
 
 ```cpp
-public void remove_component_edge_from_background_mesh_edge(const uuid & mesh_id, index_t edge_id, index_t background_mesh_edge_id, MacroInfoKey )
+public void remove_macro_edge_from_background_mesh_edge(const MeshEdge & macro_edge, index_t background_mesh_edge_id, MacroInfoKey )
 ```
 
 
-### remove_component_edge_from_background_mesh_vertex
+### remove_macro_edge_from_background_mesh_vertex
 
 ```cpp
-public void remove_component_edge_from_background_mesh_vertex(const uuid & mesh_id, index_t edge_id, index_t background_mesh_vertex_id, MacroInfoKey )
+public void remove_macro_edge_from_background_mesh_vertex(const MeshEdge & macro_edge, index_t background_mesh_vertex_id, MacroInfoKey )
 ```
 
 
@@ -134,38 +133,38 @@ protected void initialize_macro_info_data_base(AttributeManager & mesh_vertex_at
 ```
 
 
-### add_component_vertex_to_background_mesh_vertex
+### add_macro_vertex_to_background_mesh_vertex
 
 ```cpp
-protected void add_component_vertex_to_background_mesh_vertex(const uuid & mesh_id, index_t vertex_id, index_t background_mesh_vertex_id)
+protected void add_macro_vertex_to_background_mesh_vertex(const MeshVertex & macro_vertex, index_t background_mesh_vertex_id)
 ```
 
 
-### add_component_edge_to_background_mesh_edge
+### add_macro_edge_to_background_mesh_edge
 
 ```cpp
-protected void add_component_edge_to_background_mesh_edge(const uuid & mesh_id, index_t edge_id, index_t background_mesh_edge_id)
+protected void add_macro_edge_to_background_mesh_edge(const MeshEdge & macro_edge, index_t background_mesh_edge_id)
 ```
 
 
-### add_component_edge_to_background_mesh_vertices
+### add_macro_edge_to_background_mesh_vertices
 
 ```cpp
-protected void add_component_edge_to_background_mesh_vertices(const uuid & mesh_id, index_t edge_id, Span background_mesh_vertex_ids)
+protected void add_macro_edge_to_background_mesh_vertices(const MeshEdge & macro_edge, Span background_mesh_vertex_ids)
 ```
 
 
-### remove_component_edge_from_background_mesh_edge
+### remove_macro_edge_from_background_mesh_edge
 
 ```cpp
-protected void remove_component_edge_from_background_mesh_edge(const uuid & mesh_id, index_t edge_id, index_t background_mesh_edge_id)
+protected void remove_macro_edge_from_background_mesh_edge(const MeshEdge & macro_edge, index_t background_mesh_edge_id)
 ```
 
 
-### remove_component_edge_from_background_mesh_vertex
+### remove_macro_edge_from_background_mesh_vertex
 
 ```cpp
-protected void remove_component_edge_from_background_mesh_vertex(const uuid & mesh_id, index_t edge_id, index_t background_mesh_vertex_id)
+protected void remove_macro_edge_from_background_mesh_vertex(const MeshEdge & macro_edge, index_t background_mesh_vertex_id)
 ```
 
 

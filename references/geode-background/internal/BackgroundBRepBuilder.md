@@ -67,7 +67,7 @@ public void convert_blocks_to_tetrahedral_solid()
 ### add_macro_vertex_info
 
 ```cpp
-public void add_macro_vertex_info(const uuid & component_uuid, index_t macro_vertex_id, index_t unique_vertex_id)
+public void add_macro_vertex_info(const MeshVertex & macro_vertex, index_t unique_vertex_id)
 ```
 
 

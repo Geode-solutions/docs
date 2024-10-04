@@ -29,52 +29,24 @@ public void ~MacroInfoBuilder3D()
 ```
 
 
-### add_macro_edge_info
-
-```cpp
-public void add_macro_edge_info(const uuid & component_uuid, index_t macro_edge_id, Span background_solid_edge_ids)
-```
-
-
-### add_macro_edge_info_on_vertex
-
-```cpp
-public void add_macro_edge_info_on_vertex(const uuid & component_uuid, index_t macro_edge_id, index_t background_solid_vertex_id)
-```
-
-
-### remove_macro_edge_info_on_edge
-
-```cpp
-public void remove_macro_edge_info_on_edge(const uuid & component_uuid, index_t macro_edge_id, index_t background_solid_edge_id)
-```
-
-
-### remove_macro_edge_info_on_vertex
-
-```cpp
-public void remove_macro_edge_info_on_vertex(const uuid & component_uuid, index_t macro_edge_id, index_t background_solid_vertex_id)
-```
-
-
 ### add_macro_facet_info
 
 ```cpp
-public void add_macro_facet_info(const uuid & surface_uuid, geode::index_t macro_polygon_id, Span background_solid_facets_id)
+public void add_macro_facet_info(const MeshPolygon & macro_facet, Span background_solid_facets_id)
 ```
 
 
 ### add_macro_facet_info_on_vertex
 
 ```cpp
-public void add_macro_facet_info_on_vertex(const uuid & component_uuid, index_t macro_facet_id, index_t background_solid_vertex_id)
+public void add_macro_facet_info_on_vertex(const MeshPolygon & macro_facet, index_t background_solid_vertex_id)
 ```
 
 
 ### remove_macro_facet_info
 
 ```cpp
-public void remove_macro_facet_info(const uuid & surface_uuid, geode::index_t macro_polygon_id, index_t background_solid_facet_id)
+public void remove_macro_facet_info(const MeshPolygon & macro_facet, index_t background_solid_facet_id)
 ```
 
 
@@ -124,41 +96,6 @@ public void update_information(const class TetrahedralSolidModifier::CollapseEdg
 
 ```cpp
 public void update_vertex(const VertexMultiMapping & mapping)
-```
-
-
-### update_vertices
-
-```cpp
-public void update_vertices(Span mappings)
-```
-
-
-### update_edge
-
-```cpp
-public void update_edge(const EdgeMapping & mapping)
-```
-
-
-### update_edges
-
-```cpp
-public void update_edges(Span mappings)
-```
-
-
-### update_edge
-
-```cpp
-public void update_edge(const EdgeMultiMapping & mapping)
-```
-
-
-### update_edges
-
-```cpp
-public void update_edges(Span mappings)
 ```
 
 

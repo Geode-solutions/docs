@@ -29,38 +29,24 @@ public void ~MacroInfo3D()
 ```
 
 
-### component_facets
+### macro_facets
 
 ```cpp
-public const std::vector<MeshPolygon> & component_facets(index_t background_solid_facet)
+public const std::vector<MeshPolygon> & macro_facets(index_t background_solid_facet)
 ```
 
 
-### incident_component_facets
+### incident_macro_facets
 
 ```cpp
-public const std::vector<MeshPolygon> & incident_component_facets(index_t background_solid_vertex)
+public const std::vector<MeshPolygon> & incident_macro_facets(index_t background_solid_vertex)
 ```
 
 
-### component_blocks
+### macro_blocks
 
 ```cpp
-public const std::vector<uuid> & component_blocks(index_t background_solid_tetrahedron)
-```
-
-
-### is_facet_part_of_component_elements
-
-```cpp
-public bool is_facet_part_of_component_elements(index_t background_solid_facet, const uuid & mesh_component_id)
-```
-
-
-### is_tetrahedron_part_of_block
-
-```cpp
-public bool is_tetrahedron_part_of_block(index_t tetrahedron_id, const uuid & block_id)
+public const std::vector<uuid> & macro_blocks(index_t background_solid_tetrahedron)
 ```
 
 
@@ -78,66 +64,31 @@ public void clean_background_solid_attributes(AttributeManager & mesh_vertex_att
 ```
 
 
-### add_component_vertex_to_background_solid_vertex
+### add_macro_facet_to_background_solid_facet
 
 ```cpp
-public void add_component_vertex_to_background_solid_vertex(const uuid & mesh_id, index_t vertex_id, index_t background_solid_vertex_id, MacroInfo3DKey )
+public void add_macro_facet_to_background_solid_facet(const MeshPolygon & macro_facet, index_t background_solid_facet_id, MacroInfo3DKey )
 ```
 
 
-### add_component_edge_to_background_solid_edge
+### add_macro_facet_to_background_solid_vertices
 
 ```cpp
-public void add_component_edge_to_background_solid_edge(const uuid & mesh_id, index_t edge_id, index_t background_solid_edge_id, MacroInfo3DKey )
+public void add_macro_facet_to_background_solid_vertices(const MeshPolygon & macro_facet, Span background_solid_vertex_ids, MacroInfo3DKey )
 ```
 
 
-### add_component_edge_to_background_solid_vertices
+### remove_macro_facet_from_background_solid_facet
 
 ```cpp
-public void add_component_edge_to_background_solid_vertices(const uuid & mesh_id, index_t edge_id, Span background_solid_vertex_ids, MacroInfo3DKey )
+public void remove_macro_facet_from_background_solid_facet(const MeshPolygon & macro_facet, index_t background_solid_facet_id, MacroInfo3DKey )
 ```
 
 
-### remove_component_edge_from_background_solid_edge
+### remove_macro_facet_from_background_solid_vertices
 
 ```cpp
-public void remove_component_edge_from_background_solid_edge(const uuid & mesh_id, index_t edge_id, index_t background_solid_edge_id, MacroInfo3DKey )
-```
-
-
-### remove_component_edge_from_background_solid_vertex
-
-```cpp
-public void remove_component_edge_from_background_solid_vertex(const uuid & mesh_id, index_t edge_id, index_t background_solid_vertex_id, MacroInfo3DKey )
-```
-
-
-### add_component_facet_to_background_solid_facet
-
-```cpp
-public void add_component_facet_to_background_solid_facet(const uuid & mesh_id, index_t facet_id, index_t background_solid_facet_id, MacroInfo3DKey )
-```
-
-
-### add_component_facet_to_background_solid_vertices
-
-```cpp
-public void add_component_facet_to_background_solid_vertices(const uuid & mesh_id, index_t facet_id, Span background_solid_vertex_ids, MacroInfo3DKey )
-```
-
-
-### remove_component_facet_from_background_solid_facet
-
-```cpp
-public void remove_component_facet_from_background_solid_facet(const uuid & mesh_id, index_t facet_id, index_t background_solid_facet_id, MacroInfo3DKey )
-```
-
-
-### remove_component_facet_from_background_solid_vertices
-
-```cpp
-public void remove_component_facet_from_background_solid_vertices(const uuid & mesh_id, index_t facet_id, Span background_solid_vertex_ids, MacroInfo3DKey )
+public void remove_macro_facet_from_background_solid_vertices(const MeshPolygon & macro_facet, Span background_solid_vertex_ids, MacroInfo3DKey )
 ```
 
 
@@ -183,17 +134,17 @@ protected void initialize_macro_info_3d_data_base(AttributeManager & mesh_vertex
 ```
 
 
-### edge_incident_component_facets
+### edge_incident_macro_facets
 
 ```cpp
-protected flat_hash_map edge_incident_component_facets(const std::array<index_t, 2> & edge_vertices, const BackgroundSolid & background_solid)
+protected flat_hash_map edge_incident_macro_facets(const std::array<index_t, 2> & edge_vertices, const BackgroundSolid & background_solid)
 ```
 
 
-### edge_has_incident_component_facet
+### edge_has_incident_macro_facet
 
 ```cpp
-protected bool edge_has_incident_component_facet(index_t tetrahedron_id, const std::array<index_t, 2> & edge_vertices, const BackgroundSolid & background_solid)
+protected bool edge_has_incident_macro_facet(index_t tetrahedron_id, const std::array<index_t, 2> & edge_vertices, const BackgroundSolid & background_solid)
 ```
 
 

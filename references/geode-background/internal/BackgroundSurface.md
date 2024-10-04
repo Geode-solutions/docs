@@ -92,5 +92,12 @@ public PolygonEdge one_border_polygon_edge()
 ```
 
 
+### edge_vertices
+
+```cpp
+public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
+```
+
+
 
 

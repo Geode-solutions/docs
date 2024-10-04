@@ -85,17 +85,17 @@ public OpenGeodeTetrahedralSolid release_solid()
 ```
 
 
-### edge_has_incident_component_facet
+### edge_has_incident_macro_facet
 
 ```cpp
-public bool edge_has_incident_component_facet(index_t tetrahedron_id, const std::array<index_t, 2> & edge_vertices)
+public bool edge_has_incident_macro_facet(index_t tetrahedron_id, const std::array<index_t, 2> & edge_vertices)
 ```
 
 
-### edge_incident_component_facets
+### edge_incident_macro_facets
 
 ```cpp
-public flat_hash_map edge_incident_component_facets(const std::array<index_t, 2> & edge_vertices)
+public flat_hash_map edge_incident_macro_facets(const std::array<index_t, 2> & edge_vertices)
 ```
 
 
@@ -103,6 +103,13 @@ public flat_hash_map edge_incident_component_facets(const std::array<index_t, 2>
 
 ```cpp
 public PolyhedronFacet one_border_polyhedron_facet()
+```
+
+
+### edge_vertices
+
+```cpp
+public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 ```
 
 

@@ -36,27 +36,6 @@ public EdgeMacroInfoConfig edge_configuration(index_t edge_id, const BackgroundS
 ```
 
 
-### add_component_vertex_to_background_surface_vertex
-
-```cpp
-public void add_component_vertex_to_background_surface_vertex(const uuid & mesh_id, index_t vertex_id, index_t background_surface_vertex_id, PassKey )
-```
-
-
-### add_component_edge_to_background_surface_edge
-
-```cpp
-public void add_component_edge_to_background_surface_edge(const uuid & mesh_id, index_t edge_id, index_t background_surface_edge_id, PassKey )
-```
-
-
-### add_component_edge_to_background_surface_vertices
-
-```cpp
-public void add_component_edge_to_background_surface_vertices(const uuid & mesh_id, index_t edge_id, Span background_surface_vertex_ids, PassKey )
-```
-
-
 ### clean_background_surface_attributes
 
 ```cpp
