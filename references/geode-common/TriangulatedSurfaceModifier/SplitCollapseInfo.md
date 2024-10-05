@@ -11,33 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SwapEdgeInfo
+# struct SplitCollapseInfo
 
 
 ## Members
 
 ```cpp
-public array inactive_triangles
+public Mapping vertex
 
 ```
 
 ```cpp
-public array new_triangles
+public vector inactive_triangles
 
 ```
 
 ```cpp
-public array modified
-
-```
-
-```cpp
-public array added
-
-```
-
-```cpp
-public array removed
+public vector modified_triangles
 
 ```
 

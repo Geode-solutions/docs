@@ -54,6 +54,10 @@ CollapseEdgeInfo
 
 SwapEdgeInfo
 
+RemoveMultipleAdjacencyInfo
+
+SplitCollapseInfo
+
 CleanMappings
 
 
@@ -180,6 +184,27 @@ public SwapEdgeInfo swap_edge(const PolygonEdge & edge)
 
 ```cpp
 public void move_point(index_t vertex, const Point<dimension> & point)
+```
+
+
+### remove_double_adjacency
+
+```cpp
+public RemoveMultipleAdjacencyInfo remove_double_adjacency(index_t vertex)
+```
+
+
+### split_collapse_edge
+
+```cpp
+public SplitCollapseInfo split_collapse_edge(const PolygonEdge & edge)
+```
+
+
+### split_collapse_edge
+
+```cpp
+public SplitCollapseInfo split_collapse_edge(const PolygonEdge & edge, const Point<dimension> & point)
 ```
 
 

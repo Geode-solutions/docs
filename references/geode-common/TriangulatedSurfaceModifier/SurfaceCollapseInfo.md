@@ -22,12 +22,12 @@ public MultiMapping vertex
 ```
 
 ```cpp
-public InlinedVector inactive_polygons
+public InlinedVector inactive_triangles
 
 ```
 
 ```cpp
-public vector modified_polygons
+public vector modified_triangles
 
 ```
 

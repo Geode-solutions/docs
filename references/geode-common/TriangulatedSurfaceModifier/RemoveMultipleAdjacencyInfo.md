@@ -11,33 +11,13 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SwapEdgeInfo
+# struct RemoveMultipleAdjacencyInfo
 
 
 ## Members
 
 ```cpp
 public array inactive_triangles
-
-```
-
-```cpp
-public array new_triangles
-
-```
-
-```cpp
-public array modified
-
-```
-
-```cpp
-public array added
-
-```
-
-```cpp
-public array removed
 
 ```
 
