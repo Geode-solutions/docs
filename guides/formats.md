@@ -83,6 +83,7 @@ import CodeExample from '/components/CodeExample.vue'
 | .ts         | [`TriangulatedSurface3D`] | ✓     | ✓      |                                |
 | .wl         | [`EdgedCurve3D`]          | ✓     | ✓      |                                |
 | .vo         | [`RegularGrid3D`]         | ✓     |        |                                |
+| .vs         | [`PointSet3D`]            | ✓     | ✓      |                                |
 | .dev        | [`EdgedCurve3D`]          | ✓     |        |                                |
 | .txt        | [`EdgedCurve3D`]          | ✓     |        |                                |
 | .dat        | [`EdgedCurve3D`]          | ✓     |        |                                |
