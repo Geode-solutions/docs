@@ -46,10 +46,6 @@ SplitPolygonEdgeInfo
 
 SplitTriangleInfo
 
-SurfaceCollapseInfo
-
-CollapsePolygonEdgeInfo
-
 CollapseEdgeInfo
 
 SwapEdgeInfo
@@ -146,7 +142,7 @@ public SplitPolygonEdgeInfo split_edge(const PolygonEdge & edge, const Point<dim
 ### collapse_edge
 
 ```cpp
-public CollapsePolygonEdgeInfo collapse_edge(const PolygonEdge & edge, const Point<dimension> & point)
+public CollapseEdgeInfo collapse_edge(const PolygonEdge & edge, const Point<dimension> & point)
 ```
 
 

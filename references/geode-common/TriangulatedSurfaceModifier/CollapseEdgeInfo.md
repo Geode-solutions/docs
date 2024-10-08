@@ -14,16 +14,30 @@ const name = words.join('-');
 # struct CollapseEdgeInfo
 
 
-```cpp
-Inherits from SurfaceCollapseInfo
-```
-
-
-
 ## Members
 
 ```cpp
-public vector modified
+public MultiMapping vertex
+
+```
+
+```cpp
+public InlinedVector inactive_triangles
+
+```
+
+```cpp
+public vector modified_triangles
+
+```
+
+```cpp
+public InlinedVector modified_polygon_edges
+
+```
+
+```cpp
+public vector modified_edges
 
 ```
 
