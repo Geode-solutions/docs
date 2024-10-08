@@ -42,6 +42,9 @@ const name = words.join('-');
 * [TSurfBorderData](TSurfBorderData.md)
 * [TSurfData](TSurfData.md)
 * [VOInput](VOInput.md)
+* [VSInput](VSInput.md)
+* [VSOutput](VSOutput.md)
+* [VSetData](VSetData.md)
 * [WLInput](WLInput.md)
 * [WellDatInput](WellDatInput.md)
 * [WellDevInput](WellDevInput.md)
@@ -103,7 +106,7 @@ void read_properties(const PropHeaderData & properties_header, std::vector<std::
 ### create_attributes
 
 ```cpp
-void create_attributes(const PropHeaderData & attributes_header, absl::Span<const std::vector<double> > attributes_values, geode::AttributeManager & attribute_manager, geode::index_t nb_vertices, Span inverse_vertex_mapping)
+void create_attributes(const PropHeaderData & attributes_header, Span attributes_values, geode::AttributeManager & attribute_manager, geode::index_t nb_vertices, Span inverse_vertex_mapping)
 ```
 
 
@@ -132,6 +135,13 @@ std::optional<TSurfData> read_tsurf(std::ifstream & file)
 
 ```cpp
 std::optional<ECurveData> read_ecurve(std::ifstream & file)
+```
+
+
+### read_vs_points
+
+```cpp
+optional read_vs_points(std::ifstream & file)
 ```
 
 
