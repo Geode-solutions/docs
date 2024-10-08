@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BlindedQualityBackgroundSolidOptimizer
+# class BackgroundSolidBlindedQualityOptimizer
 
 
 ```cpp
@@ -22,45 +22,45 @@ Inherits from BackgroundSolidShiftOptimizer
 
 ## Functions
 
-### BlindedQualityBackgroundSolidOptimizer
+### BackgroundSolidBlindedQualityOptimizer
 
 ```cpp
-public void BlindedQualityBackgroundSolidOptimizer(const BlindedQualityBackgroundSolidOptimizer & )
+public void BackgroundSolidBlindedQualityOptimizer(const BackgroundSolidBlindedQualityOptimizer & )
 ```
 
 
 ### operator=
 
 ```cpp
-public BlindedQualityBackgroundSolidOptimizer & operator=(const BlindedQualityBackgroundSolidOptimizer & )
+public BackgroundSolidBlindedQualityOptimizer & operator=(const BackgroundSolidBlindedQualityOptimizer & )
 ```
 
 
-### BlindedQualityBackgroundSolidOptimizer
+### BackgroundSolidBlindedQualityOptimizer
 
 ```cpp
-public void BlindedQualityBackgroundSolidOptimizer(BlindedQualityBackgroundSolidOptimizer && )
+public void BackgroundSolidBlindedQualityOptimizer(BackgroundSolidBlindedQualityOptimizer && )
 ```
 
 
 ### operator=
 
 ```cpp
-public BlindedQualityBackgroundSolidOptimizer & operator=(BlindedQualityBackgroundSolidOptimizer && )
+public BackgroundSolidBlindedQualityOptimizer & operator=(BackgroundSolidBlindedQualityOptimizer && )
 ```
 
 
-### BlindedQualityBackgroundSolidOptimizer
+### BackgroundSolidBlindedQualityOptimizer
 
 ```cpp
-public void BlindedQualityBackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidImprovementSimulator & improvement_simulator)
+public void BackgroundSolidBlindedQualityOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidImprovementSimulator & improvement_simulator)
 ```
 
 
-### ~BlindedQualityBackgroundSolidOptimizer
+### ~BackgroundSolidBlindedQualityOptimizer
 
 ```cpp
-public void ~BlindedQualityBackgroundSolidOptimizer()
+public void ~BackgroundSolidBlindedQualityOptimizer()
 ```
 
 

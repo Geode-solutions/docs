@@ -75,7 +75,7 @@ public void update_vertex(const VertexMultiMapping & mapping)
 ### update_vertices
 
 ```cpp
-public void update_vertices(Span mappings)
+public void update_vertices(absl::Span<const VertexMultiMapping> mappings)
 ```
 
 
@@ -89,7 +89,7 @@ public void update_edge(const EdgeMapping & edge)
 ### update_edges
 
 ```cpp
-public void update_edges(Span edges)
+public void update_edges(absl::Span<const EdgeMapping> edges)
 ```
 
 
@@ -103,7 +103,7 @@ public void update_edge(const EdgeMultiMapping & edge)
 ### update_edges
 
 ```cpp
-public void update_edges(Span edges)
+public void update_edges(absl::Span<const EdgeMultiMapping> edges)
 ```
 
 

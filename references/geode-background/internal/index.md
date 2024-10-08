@@ -29,6 +29,7 @@ const name = words.join('-');
 * [BackgroundInsertionException](BackgroundInsertionException.md)
 * [BackgroundOrchestrator](BackgroundOrchestrator.md)
 * [BackgroundSolidAspectRatioImprovementSimulator](BackgroundSolidAspectRatioImprovementSimulator.md)
+* [BackgroundSolidBlindedQualityOptimizer](BackgroundSolidBlindedQualityOptimizer.md)
 * [BackgroundSolidBuilder](BackgroundSolidBuilder.md)
 * [BackgroundSolidConstraintModifier](BackgroundSolidConstraintModifier.md)
 * [BackgroundSolidDecimator](BackgroundSolidDecimator.md)
@@ -43,12 +44,12 @@ const name = words.join('-');
 * [BackgroundSolidShiftOptimizer](BackgroundSolidShiftOptimizer.md)
 * [BackgroundSolid](BackgroundSolid.md)
 * [BackgroundSurfaceBuilder](BackgroundSurfaceBuilder.md)
+* [BackgroundSurfaceConstraintModifier](BackgroundSurfaceConstraintModifier.md)
 * [BackgroundSurfaceInserter](BackgroundSurfaceInserter.md)
 * [BackgroundSurfaceModifier](BackgroundSurfaceModifier.md)
 * [BackgroundSurfaceOptimizer](BackgroundSurfaceOptimizer.md)
 * [BackgroundSurface](BackgroundSurface.md)
 * [Background](Background.md)
-* [BlindedQualityBackgroundSolidOptimizer](BlindedQualityBackgroundSolidOptimizer.md)
 * [BlockElement](BlockElement.md)
 * [BlocksAllowedByConstraints](BlocksAllowedByConstraints.md)
 * [EdgeMacroInfoConfig](EdgeMacroInfoConfig.md)
@@ -74,13 +75,6 @@ const name = words.join('-');
 
 
 ## Functions
-
-### repair_background_surface_elements
-
-```cpp
-void repair_background_surface_elements(const BackgroundSurface & background, BackgroundSurfaceBuilder & builder, BackgroundSurfaceModifier & modifier, Span triangles, const ForbiddenSurfaceElements & forbidden_elements, Span immuable_vertices)
-```
-
 
 ### does_collapse_edge_improve_metric
 
@@ -110,17 +104,17 @@ bool does_split_split_collapse_edge_improve_metric(const BackgroundSolid & solid
 ```
 
 
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ElementStamp & element_stamp)
-```
-
-
 ### minimal_tetrahedron_internal_distance
 
 ```cpp
 InternalDistance minimal_tetrahedron_internal_distance(const Tetrahedron & tetra)
+```
+
+
+### minimal_triangle_internal_distance
+
+```cpp
+InternalDistance minimal_triangle_internal_distance(const Triangle2D & triangle)
 ```
 
 
@@ -138,6 +132,13 @@ InternalDistances fast_tetrahedron_internal_distances(const Tetrahedron & tetra,
 ```
 
 
+### fast_triangle_internal_distances
+
+```cpp
+InternalDistances fast_triangle_internal_distances(const Triangle2D & triangle, const struct InternalDistance::Options & options)
+```
+
+
 ### has_internal_distance_below_epsilon
 
 ```cpp
@@ -148,7 +149,7 @@ bool has_internal_distance_below_epsilon(const Tetrahedron & tetra)
 ### tetrahedron_volume_status
 
 ```cpp
-TETRAHEDRON_VOLUME_STATUS tetrahedron_volume_status(const geode::Tetrahedron & tetrahedron)
+ELEMENT_VOLUME_STATUS tetrahedron_volume_status(const geode::Tetrahedron & tetrahedron)
 ```
 
 
@@ -173,10 +174,31 @@ PolyhedronFacetEdge edge_from_internal_distance(const SolidMesh3D & solid, index
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ElementStamp & element_stamp)
+```
+
+
 ### optimize_background_solid_elements
 
 ```cpp
 void optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### shift_optimize_background_solid_elements
+
+```cpp
+void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
+```
+
+
+### blinded_quality_optimize_background_solid_elements
+
+```cpp
+void blinded_quality_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
 ```
 
 
@@ -313,6 +335,20 @@ bool is_swap_facet_allowed_by_constraints(const ModifiableBackgroundSolid & soli
 ```
 
 
+### epsilon_optimize_background_solid_elements
+
+```cpp
+vector epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, Span tetrahedra)
+```
+
+
+### epsilon_optimize_background_solid_elements
+
+```cpp
+vector epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
+```
+
+
 ### find_incident_facets_on_border
 
 ```cpp
@@ -355,24 +391,17 @@ bool is_collapse_vertex_vertex_allowed_by_constraints(const ModifiableBackground
 ```
 
 
-### epsilon_optimize_background_solid_elements
+### optimize_background_surface_elements
 
 ```cpp
-vector epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, Span tetrahedra)
+void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, index_t first_element)
 ```
 
 
-### epsilon_optimize_background_solid_elements
+### repair_background_surface_elements
 
 ```cpp
-vector epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
-```
-
-
-### shift_optimize_background_solid_elements
-
-```cpp
-void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
+void repair_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, Span triangles)
 ```
 
 
@@ -387,13 +416,6 @@ void simplify_background_solid_macro_edge(BackgroundSolidConstraintModifier & co
 
 ```cpp
 void simplify_background_solid_macro_facet(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshPolygon & macro_facet)
-```
-
-
-### blinded_quality_optimize_background_solid_elements
-
-```cpp
-void blinded_quality_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
 ```
 
 
@@ -518,7 +540,7 @@ vector epsilon_optimize_background_brep_elements(BackgroundBRepConstraintModifie
 
 
 
-| enum class TETRAHEDRON_VOLUME_STATUS |
+| enum class ELEMENT_VOLUME_STATUS |
 
 --
 

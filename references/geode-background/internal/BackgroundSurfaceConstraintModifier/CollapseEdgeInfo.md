@@ -11,31 +11,20 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BackgroundSurfaceOptimizer
+# struct CollapseEdgeInfo
 
 
-## Functions
-
-### BackgroundSurfaceOptimizer
+## Members
 
 ```cpp
-public void BackgroundSurfaceOptimizer(BackgroundSurfaceConstraintModifier & constraint_modifier)
+public MultiMapping vertex
+
 ```
-
-
-### ~BackgroundSurfaceOptimizer
 
 ```cpp
-public void ~BackgroundSurfaceOptimizer()
+public vector modified_triangles
+
 ```
-
-
-### optimize_background_elements
-
-```cpp
-public void optimize_background_elements(index_t first_element)
-```
-
 
 
 

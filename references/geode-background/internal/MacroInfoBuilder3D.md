@@ -109,7 +109,7 @@ public void update_facet(const FacetMultiMapping & mapping)
 ### update_facets
 
 ```cpp
-public void update_facets(Span mappings)
+public void update_facets(absl::Span<const FacetMultiMapping> mappings)
 ```
 
 
@@ -123,7 +123,7 @@ public void update_facet(const FacetMapping & mapping)
 ### update_facets
 
 ```cpp
-public void update_facets(Span mappings)
+public void update_facets(absl::Span<const FacetMapping> mappings)
 ```
 
 
@@ -137,7 +137,7 @@ public void update_tetrahedron(const TetrahedronMapping & tetrahedron)
 ### update_tetrahedra
 
 ```cpp
-public void update_tetrahedra(Span tetrahedra)
+public void update_tetrahedra(absl::Span<const TetrahedronMapping> tetrahedra)
 ```
 
 

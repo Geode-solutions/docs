@@ -53,7 +53,7 @@ public SplitPolygonEdgeInfo split_edge(const PolygonEdge & edge, const Point2D &
 ### collapse_edge
 
 ```cpp
-public CollapsePolygonEdgeInfo collapse_edge(const PolygonEdge & edge, const Point2D & point)
+public CollapseEdgeInfo collapse_edge(const PolygonEdge & edge, const Point2D & point)
 ```
 
 
