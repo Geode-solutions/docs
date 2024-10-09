@@ -26,8 +26,27 @@ const name = words.join('-');
 * [BackgroundCommonLibrary](BackgroundCommonLibrary.md)
 * [BackgroundSolidLibrary](BackgroundSolidLibrary.md)
 * [BackgroundSurfaceLibrary](BackgroundSurfaceLibrary.md)
+* [MeshElement](MeshElement.md)
 * [ModifiedTetrahedron](ModifiedTetrahedron.md)
 * [Modifier](Modifier.md)
 * [uuid](uuid.md)
+
+
+## Functions
+
+### add_macro_info
+
+```cpp
+void add_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribute, const MacroInfo & macro_info, index_t background_mesh_element_id)
+```
+
+
+### remove_macro_info
+
+```cpp
+void remove_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribute, const MacroInfo & macro_info, index_t background_mesh_element_id)
+```
+
+
 
 

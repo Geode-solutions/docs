@@ -50,27 +50,6 @@ public void remove_macro_facet_info(const MeshPolygon & macro_facet, index_t bac
 ```
 
 
-### initialize_block_info_database
-
-```cpp
-public void initialize_block_info_database()
-```
-
-
-### add_block_to_background_tetrahedron
-
-```cpp
-public void add_block_to_background_tetrahedron(const uuid & block_id, index_t tetrahedron_id)
-```
-
-
-### reset_all_blocks_of_background_tetrahedra
-
-```cpp
-public void reset_all_blocks_of_background_tetrahedra()
-```
-
-
 ### update_information
 
 ```cpp
@@ -124,20 +103,6 @@ public void update_facet(const FacetMapping & mapping)
 
 ```cpp
 public void update_facets(absl::Span<const FacetMapping> mappings)
-```
-
-
-### update_tetrahedron
-
-```cpp
-public void update_tetrahedron(const TetrahedronMapping & tetrahedron)
-```
-
-
-### update_tetrahedra
-
-```cpp
-public void update_tetrahedra(absl::Span<const TetrahedronMapping> tetrahedra)
 ```
 
 

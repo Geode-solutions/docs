@@ -39,7 +39,7 @@ public EdgeMacroInfoConfig edge_configuration(index_t edge_id, const BackgroundS
 ### clean_background_surface_attributes
 
 ```cpp
-public void clean_background_surface_attributes(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_edge_attribute_manager)
+public void clean_background_surface_attributes(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_edge_attribute_manager, AttributeManager & mesh_element_attribute_manager)
 ```
 
 

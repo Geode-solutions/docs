@@ -43,13 +43,6 @@ public const std::vector<MeshPolygon> & incident_macro_facets(index_t background
 ```
 
 
-### macro_blocks
-
-```cpp
-public const std::vector<uuid> & macro_blocks(index_t background_solid_tetrahedron)
-```
-
-
 ### edge_configuration
 
 ```cpp
@@ -92,27 +85,6 @@ public void remove_macro_facet_from_background_solid_vertices(const MeshPolygon 
 ```
 
 
-### initialize_block_info_database
-
-```cpp
-public void initialize_block_info_database(AttributeManager & mesh_tetrahedron_attribute_manager, MacroInfo3DKey )
-```
-
-
-### add_block_to_background_solid_tetrahedron
-
-```cpp
-public void add_block_to_background_solid_tetrahedron(const uuid & block_id, index_t tetrahedron_id, MacroInfo3DKey )
-```
-
-
-### reset_all_blocks_of_background_solid_tetrahedra
-
-```cpp
-public void reset_all_blocks_of_background_solid_tetrahedra(index_t nb_tetrahedra, MacroInfo3DKey )
-```
-
-
 ### MacroInfo3D
 
 ```cpp
@@ -127,10 +99,10 @@ protected void MacroInfo3D(MacroInfo3D && other)
 ```
 
 
-### initialize_macro_info_3d_data_base
+### initialize_macro_info_solid_data_base
 
 ```cpp
-protected void initialize_macro_info_3d_data_base(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_facet_attribute_manager, AttributeManager & mesh_tetrahedron_attribute_manager)
+protected void initialize_macro_info_solid_data_base(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_edge_attribute_manager, AttributeManager & mesh_facet_attribute_manager, AttributeManager & mesh_tetrahedron_attribute_manager)
 ```
 
 
