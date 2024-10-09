@@ -27,7 +27,7 @@ public flat_hash_map intersections
 ```
 
 ```cpp
-public const std::vector<uuid> & surrounding_blocks
+public vector surrounding_blocks
 
 ```
 
