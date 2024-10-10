@@ -58,6 +58,20 @@ public void insert_point_set_points(const PointSet2D & mesh, Span vertex_ids)
 ```
 
 
+### insert_surface
+
+```cpp
+public void insert_surface(const TriangulatedSurface2D & mesh)
+```
+
+
+### insert_surface_triangles
+
+```cpp
+public void insert_surface_triangles(const TriangulatedSurface2D & mesh, Span triangle_ids)
+```
+
+
 ### insert_scalar_function_isovalues
 
 ```cpp
