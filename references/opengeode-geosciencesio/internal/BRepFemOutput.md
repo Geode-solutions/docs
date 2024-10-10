@@ -43,5 +43,12 @@ public vector write(const BRep & brep)
 ```
 
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const BRep & brep)
+```
+
+
 
 
