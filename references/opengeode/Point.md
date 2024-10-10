@@ -146,5 +146,12 @@ public basic_string string()
 ```
 
 
+### project_point
+
+```cpp
+public Point<dimension - 1> project_point(geode::local_index_t axis_to_remove)
+```
+
+
 
 

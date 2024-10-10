@@ -145,5 +145,19 @@ public Vector cross(const Vector<> & other)
 ```
 
 
+### most_meaningful_axis
+
+```cpp
+public geode::local_index_t most_meaningful_axis()
+```
+
+
+### least_meaningful_axis
+
+```cpp
+public geode::local_index_t least_meaningful_axis()
+```
+
+
 
 
