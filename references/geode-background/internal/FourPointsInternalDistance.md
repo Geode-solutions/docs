@@ -33,7 +33,7 @@ public void ~FourPointsInternalDistance()
 ### smallest_internal_distance
 
 ```cpp
-public double smallest_internal_distance(const geode::Tetrahedron & tetrahedron)
+public double smallest_internal_distance(const Tetrahedron & tetrahedron)
 ```
 
 

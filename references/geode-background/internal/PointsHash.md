@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ThreePointsHash
+# struct PointsHash
 
 
 ## Functions
@@ -19,7 +19,14 @@ const name = words.join('-');
 ### operator()
 
 ```cpp
-public size_t operator()(const ThreePoints & a)
+public size_t operator()(const Points<dimension> & a)
+```
+
+
+### operator()
+
+```cpp
+public size_t operator()(const RefPoints<dimension> & a)
 ```
 
 

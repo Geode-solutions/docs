@@ -23,10 +23,17 @@ public void ThreePointsInternalDistance()
 ```
 
 
+### ~ThreePointsInternalDistance
+
+```cpp
+public void ~ThreePointsInternalDistance()
+```
+
+
 ### smallest_internal_distance
 
 ```cpp
-public double smallest_internal_distance(const geode::Triangle2D & triangle)
+public double smallest_internal_distance(const Triangle2D & triangle)
 ```
 
 

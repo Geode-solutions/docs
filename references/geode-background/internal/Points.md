@@ -11,24 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ForbiddenSurfaceElements
-
-
-## Members
-
-```cpp
-public vector edges
-
-```
-
+# class Points
 
 
 ## Functions
 
-### is_edge_forbidden
+### Points
 
 ```cpp
-public bool is_edge_forbidden(const EdgeVertices & edge, const VerticesModifier & vertices_modifier)
+public void Points<dimension>(Vertices points_in)
+```
+
+
+### point
+
+```cpp
+public const Point<dimension> & point(local_index_t position)
+```
+
+
+### operator==
+
+```cpp
+public bool operator==(const PointsType & other)
 ```
 
 

@@ -11,29 +11,15 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ElementStamp
-
-
-## Members
-
-```cpp
-public geode::index_t element
-
-```
-
-```cpp
-public geode::index_t stamp
-
-```
-
+# class PointsInternalDistanceImpl
 
 
 ## Functions
 
-### ElementStamp
+### smallest_internal_distance
 
 ```cpp
-public void ElementStamp(geode::index_t element_in, geode::index_t stamp_in)
+public double smallest_internal_distance(const Simplex & simplex)
 ```
 
 

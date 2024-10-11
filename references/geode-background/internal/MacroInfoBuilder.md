@@ -51,6 +51,13 @@ public void add_macro_edge_info_on_vertex(const MeshEdge & macro_edge, index_t b
 ```
 
 
+### remove_macro_edge_info
+
+```cpp
+public void remove_macro_edge_info(const MeshEdge & macro_edge, index_t background_surface_edge_id)
+```
+
+
 ### remove_macro_edge_info_on_edge
 
 ```cpp

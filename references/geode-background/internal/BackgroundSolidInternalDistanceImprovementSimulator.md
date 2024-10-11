@@ -22,38 +22,24 @@ Inherits from BackgroundSolidImprovementSimulator
 
 ## Functions
 
-### BackgroundSolidInternalDistanceImprovementSimulator
-
-```cpp
-public void BackgroundSolidInternalDistanceImprovementSimulator()
-```
-
-
-### ~BackgroundSolidInternalDistanceImprovementSimulator
-
-```cpp
-public void ~BackgroundSolidInternalDistanceImprovementSimulator()
-```
-
-
 ### worst
 
 ```cpp
-protected double worst(double metric_tetrahedron_1, double metric_tetrahedron_2)
+public double worst(double metric_tetrahedron_1, double metric_tetrahedron_2)
 ```
 
 
 ### is_better_after_simulation
 
 ```cpp
-protected bool is_better_after_simulation(const TetrahedraMetrics & tetrahedra_metrics)
+public bool is_better_after_simulation(const TetrahedraMetrics & tetrahedra_metrics)
 ```
 
 
 ### metric
 
 ```cpp
-protected double metric(const Tetrahedron & tetrahedron)
+public double metric(const Tetrahedron & tetrahedron)
 ```
 
 

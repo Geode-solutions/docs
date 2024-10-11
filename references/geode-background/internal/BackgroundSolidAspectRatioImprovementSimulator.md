@@ -22,17 +22,24 @@ Inherits from BackgroundSolidImprovementSimulator
 
 ## Functions
 
-### BackgroundSolidAspectRatioImprovementSimulator
+### worst
 
 ```cpp
-public void BackgroundSolidAspectRatioImprovementSimulator()
+public double worst(double metric_tetrahedron_1, double metric_tetrahedron_2)
 ```
 
 
-### ~BackgroundSolidAspectRatioImprovementSimulator
+### is_better_after_simulation
 
 ```cpp
-public void ~BackgroundSolidAspectRatioImprovementSimulator()
+public bool is_better_after_simulation(const TetrahedraMetrics & tetrahedra_metrics)
+```
+
+
+### metric
+
+```cpp
+public double metric(const Tetrahedron & tetrahedron)
 ```
 
 

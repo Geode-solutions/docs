@@ -134,6 +134,16 @@ public bool operator<(const InternalDistance & other)
 
 ## Enums
 
+| enum class ELEMENT_STATUS |
+
+--
+
+| positive |
+| negative |
+| invalid |
+
+
+
 | enum class CONFIGURATION_TYPE |
 
 --

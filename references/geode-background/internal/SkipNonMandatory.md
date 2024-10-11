@@ -11,29 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class FourPoints
+# struct SkipNonMandatory
+
+
+## Members
+
+```cpp
+public const MacroInfo<dimension> & info
+
+```
+
 
 
 ## Functions
 
-### FourPoints
+### SkipNonMandatory
 
 ```cpp
-public void FourPoints(array points_in)
+public void SkipNonMandatory<dimension>(const MacroInfo<dimension> & info_in)
 ```
 
 
-### point
+### operator()
 
 ```cpp
-public const Point3D & point(local_index_t position)
-```
-
-
-### operator==
-
-```cpp
-public bool operator==(const FourPointsType & other)
+public bool operator()(const MeshElement & element)
 ```
 
 

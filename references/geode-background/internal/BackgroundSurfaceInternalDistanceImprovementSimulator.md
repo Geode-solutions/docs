@@ -11,29 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class ThreePoints
+# class BackgroundSurfaceInternalDistanceImprovementSimulator
+
+
+```cpp
+Inherits from BackgroundSurfaceImprovementSimulator
+```
+
 
 
 ## Functions
 
-### ThreePoints
+### worst
 
 ```cpp
-public void ThreePoints(array points_in)
+public double worst(double metric_triangle_1, double metric_triangle_2)
 ```
 
 
-### point
+### is_better_after_simulation
 
 ```cpp
-public const geode::Point2D & point(geode::local_index_t position)
+public bool is_better_after_simulation(const TrianglesMetrics & metrics)
 ```
 
 
-### operator==
+### metric
 
 ```cpp
-public bool operator==(const ThreePointsType & other)
+public double metric(const Triangle2D & triangle)
 ```
 
 

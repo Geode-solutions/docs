@@ -11,15 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct FourPointsHash
+# struct TrianglesMetrics
+
+
+## Members
+
+```cpp
+public double initial_metric
+
+```
+
+```cpp
+public double metric_after_simulation
+
+```
+
 
 
 ## Functions
 
-### operator()
+### TrianglesMetrics
 
 ```cpp
-public size_t operator()(const FourPoints & a)
+public void TrianglesMetrics()
 ```
 
 
