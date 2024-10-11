@@ -33,7 +33,7 @@ public SectionExplicitModeler & operator=(const SectionExplicitModeler & )
 ### SectionExplicitModeler
 
 ```cpp
-public void SectionExplicitModeler(BoundingBox bbox)
+public void SectionExplicitModeler()
 ```
 
 

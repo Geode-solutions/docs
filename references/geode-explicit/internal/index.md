@@ -17,7 +17,11 @@ const name = words.join('-');
 
 ## Records
 
+* [BRepModelerMappingsBuilder](BRepModelerMappingsBuilder.md)
+* [MeshElementsIndices](MeshElementsIndices.md)
+* [ModelerMappingsBuilder](ModelerMappingsBuilder.md)
 * [ModelerMetric](ModelerMetric.md)
+* [SolidElementsIndices](SolidElementsIndices.md)
 
 
 ## Functions

@@ -14,20 +14,16 @@ const name = words.join('-');
 # struct SolidElementsIndices
 
 
+```cpp
+Inherits from MeshElementsIndices
+```
+
+
+
 ## Members
 
 ```cpp
 public vector facets
-
-```
-
-```cpp
-public vector edges
-
-```
-
-```cpp
-public vector vertices
 
 ```
 
