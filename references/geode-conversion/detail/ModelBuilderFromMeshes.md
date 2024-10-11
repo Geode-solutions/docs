@@ -39,7 +39,7 @@ public void build_wireframe_step()
 ### is_corner
 
 ```cpp
-public bool is_corner(index_t vertex)
+public bool is_corner(index_t wireframe_vertex_id)
 ```
 
 

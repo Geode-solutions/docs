@@ -61,7 +61,7 @@ public pair build_brep_with_block_mesh()
 ### is_corner
 
 ```cpp
-public bool is_corner(index_t vertex)
+public bool is_corner(index_t wireframe_vertex_id)
 ```
 
 

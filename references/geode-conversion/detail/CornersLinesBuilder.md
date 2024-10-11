@@ -71,38 +71,38 @@ public optional wireframe_edge_id(const std::array<index_t, 2> & edge_vertices)
 ```
 
 
-### vertex_id
+### support_mesh_vertex_id
 
 ```cpp
-public index_t vertex_id(index_t vertex)
+public index_t support_mesh_vertex_id(index_t wireframe_vertex_id)
 ```
 
 
 ### line_uuid
 
 ```cpp
-public const uuid & line_uuid(index_t edge)
+public const uuid & line_uuid(index_t wireframe_edge_id)
 ```
 
 
 ### corner_uuid
 
 ```cpp
-public optional corner_uuid(index_t vertex)
+public optional corner_uuid(index_t wireframe_vertex_id)
 ```
 
 
 ### line_edge_id
 
 ```cpp
-public index_t line_edge_id(index_t edge)
+public index_t line_edge_id(index_t wireframe_edge_id)
 ```
 
 
 ### line_vertex_id
 
 ```cpp
-public index_t line_vertex_id(index_t vertex, const uuid & output_line_uuid)
+public index_t line_vertex_id(index_t wireframe_vertex_id, const uuid & output_line_uuid)
 ```
 
 
