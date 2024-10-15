@@ -1754,185 +1754,6 @@ ModelMeshesAABBTree create_surface_meshes_aabb_trees(const Section & model)
 ```
 
 
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_edged_curve_missing_files
-
-```cpp
-typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
-```
-
-
-### is_edged_curve_loadable
-
-```cpp
-bool is_edged_curve_loadable(basic_string_view filename)
-```
-
-
-### load_graph
-
-```cpp
-unique_ptr load_graph(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an Graph. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_graph
-
-```cpp
-unique_ptr load_graph(basic_string_view filename)
-```
-
-
- API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_graph_missing_files
-
-```cpp
-MissingFiles check_graph_missing_files(basic_string_view filename)
-```
-
-
-### is_graph_loadable
-
-```cpp
-bool is_graph_loadable(basic_string_view filename)
-```
-
-
-### save_graph
-
-```cpp
-vector save_graph(const Graph & graph, basic_string_view filename)
-```
-
-
- API function for saving a Graph. The adequate saver is called depending on the given filename extension.
-
-**graph** [in] Graph to save.
-
-**filename** [in] Path to the file where save the Graph.
-
-### is_graph_saveable
-
-```cpp
-bool is_graph_saveable(const Graph & graph, basic_string_view filename)
-```
-
-
-### load_hybrid_solid
-
-```cpp
-std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_hybrid_solid
-
-```cpp
-std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view filename)
-```
-
-
- API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_hybrid_solid_missing_files
-
-```cpp
-typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(basic_string_view filename)
-```
-
-
-### is_hybrid_solid_loadable
-
-```cpp
-bool is_hybrid_solid_loadable(basic_string_view filename)
-```
-
-
-### save_hybrid_solid
-
-```cpp
-vector save_hybrid_solid(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
-```
-
-
- API function for saving a HybridSolid. The adequate saver is called depending on the given filename extension.
-
-**hybrid_solid** [in] HybridSolid to save.
-
-**filename** [in] Path to the file where save the HybridSolid.
-
-### is_hybrid_solid_saveable
-
-```cpp
-bool is_hybrid_solid_saveable(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
-```
-
-
-### load_light_regular_grid
-
-```cpp
-LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
-```
-
-
- API function for loading an LightRegularGrid. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### check_light_regular_grid_missing_files
-
-```cpp
-typename LightRegularGridInput<dimension>::MissingFiles check_light_regular_grid_missing_files(basic_string_view filename)
-```
-
-
-### is_light_regular_grid_loadable
-
-```cpp
-bool is_light_regular_grid_loadable(basic_string_view filename)
-```
-
-
 ### create_aabb_tree
 
 ```cpp
@@ -1951,26 +1772,6 @@ AABBTree<dimension> create_aabb_tree(const SolidMesh<dimension> & mesh)
 
 ```cpp
 AABBTree<dimension> create_aabb_tree(const SurfaceMesh<dimension> & mesh)
-```
-
-
-### save_light_regular_grid
-
-```cpp
-vector save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, basic_string_view filename)
-```
-
-
- API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
-
-**light_regular_grid** [in] LightRegularGrid to save.
-
-**filename** [in] Path to the file where save the LightRegularGrid.
-
-### is_light_regular_grid_saveable
-
-```cpp
-bool is_light_regular_grid_saveable(const LightRegularGrid<dimension> & light_regular_grid, basic_string_view filename)
 ```
 
 
@@ -2331,6 +2132,13 @@ std::unique_ptr<TriangulatedSurface2D> convert_grid_into_triangulated_surface(co
 ```
 
 
+### convert_grid_into_densified_triangulated_surface
+
+```cpp
+std::unique_ptr<TriangulatedSurface2D> convert_grid_into_densified_triangulated_surface(const Grid2D & grid, Span cells_to_densify)
+```
+
+
 ### triangulate_surface_mesh
 
 ```cpp
@@ -2391,6 +2199,205 @@ std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(co
 
 ```cpp
 std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
+```
+
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_edged_curve_missing_files
+
+```cpp
+typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
+```
+
+
+### is_edged_curve_loadable
+
+```cpp
+bool is_edged_curve_loadable(basic_string_view filename)
+```
+
+
+### load_graph
+
+```cpp
+unique_ptr load_graph(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an Graph. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_graph
+
+```cpp
+unique_ptr load_graph(basic_string_view filename)
+```
+
+
+ API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_graph_missing_files
+
+```cpp
+MissingFiles check_graph_missing_files(basic_string_view filename)
+```
+
+
+### is_graph_loadable
+
+```cpp
+bool is_graph_loadable(basic_string_view filename)
+```
+
+
+### save_graph
+
+```cpp
+vector save_graph(const Graph & graph, basic_string_view filename)
+```
+
+
+ API function for saving a Graph. The adequate saver is called depending on the given filename extension.
+
+**graph** [in] Graph to save.
+
+**filename** [in] Path to the file where save the Graph.
+
+### is_graph_saveable
+
+```cpp
+bool is_graph_saveable(const Graph & graph, basic_string_view filename)
+```
+
+
+### load_hybrid_solid
+
+```cpp
+std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_hybrid_solid
+
+```cpp
+std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view filename)
+```
+
+
+ API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_hybrid_solid_missing_files
+
+```cpp
+typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(basic_string_view filename)
+```
+
+
+### is_hybrid_solid_loadable
+
+```cpp
+bool is_hybrid_solid_loadable(basic_string_view filename)
+```
+
+
+### save_hybrid_solid
+
+```cpp
+vector save_hybrid_solid(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
+```
+
+
+ API function for saving a HybridSolid. The adequate saver is called depending on the given filename extension.
+
+**hybrid_solid** [in] HybridSolid to save.
+
+**filename** [in] Path to the file where save the HybridSolid.
+
+### is_hybrid_solid_saveable
+
+```cpp
+bool is_hybrid_solid_saveable(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
+```
+
+
+### load_light_regular_grid
+
+```cpp
+LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
+```
+
+
+ API function for loading an LightRegularGrid. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### check_light_regular_grid_missing_files
+
+```cpp
+typename LightRegularGridInput<dimension>::MissingFiles check_light_regular_grid_missing_files(basic_string_view filename)
+```
+
+
+### is_light_regular_grid_loadable
+
+```cpp
+bool is_light_regular_grid_loadable(basic_string_view filename)
+```
+
+
+### save_light_regular_grid
+
+```cpp
+vector save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, basic_string_view filename)
+```
+
+
+ API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
+
+**light_regular_grid** [in] LightRegularGrid to save.
+
+**filename** [in] Path to the file where save the LightRegularGrid.
+
+### is_light_regular_grid_saveable
+
+```cpp
+bool is_light_regular_grid_saveable(const LightRegularGrid<dimension> & light_regular_grid, basic_string_view filename)
 ```
 
 
@@ -2757,6 +2764,13 @@ optional convert_solid_mesh_into_tetrahedral_solid(const SolidMesh3D & solid)
 
 ```cpp
 unique_ptr convert_grid_into_tetrahedral_solid(const Grid3D & grid)
+```
+
+
+### convert_grid_into_densified_tetrahedral_solid
+
+```cpp
+unique_ptr convert_grid_into_densified_tetrahedral_solid(const Grid3D & grid, Span cells_to_densify)
 ```
 
 
