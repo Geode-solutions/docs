@@ -24,7 +24,6 @@ const name = words.join('-');
 * [DuplicatedCell3D](DuplicatedCell3D.md)
 * [ImplicitDataManager](ImplicitDataManager.md)
 * [ImplicitSVGInput](ImplicitSVGInput.md)
-* [ScalarFunctionExpliciter3DImpl](ScalarFunctionExpliciter3DImpl.md)
 * [StratigraphicLSOInput](StratigraphicLSOInput.md)
 * [StructuralModelBlockImpliciter](StructuralModelBlockImpliciter.md)
 
