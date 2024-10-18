@@ -102,5 +102,12 @@ void build_pyramid_layer(BRepCombiningData & data)
 ```
 
 
+### build_pyramid_layer
+
+```cpp
+void build_pyramid_layer(HybridSolid3D & solid)
+```
+
+
 
 
