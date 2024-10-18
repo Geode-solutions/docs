@@ -89,7 +89,7 @@ public optional edge_from_vertices(const std::array<index_t, 2> & vertices)
 
  Get the index of edge corresponding to given vertices
 
-**vertices** [in] Ordered vertex indices
+**vertices** [in] Unordered vertex indices
 
 ### edge_attribute_manager
 
