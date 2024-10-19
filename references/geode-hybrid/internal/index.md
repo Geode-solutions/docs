@@ -98,7 +98,7 @@ void sample_lines(BRepHybridSamplingData & data)
 ### build_pyramid_layer
 
 ```cpp
-void build_pyramid_layer(BRepCombiningData & data)
+void build_pyramid_layer(const BRep & brep, BRepBuilder & builder)
 ```
 
 
