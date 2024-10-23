@@ -64,6 +64,13 @@ protected void VertexMerger<Mesh>(absl::Span<const std::reference_wrapper<const 
 ```
 
 
+### VertexMerger
+
+```cpp
+protected void VertexMerger<Mesh>(VertexMerger<Mesh> && )
+```
+
+
 ### ~VertexMerger
 
 ```cpp

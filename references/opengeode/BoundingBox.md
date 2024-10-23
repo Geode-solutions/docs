@@ -100,6 +100,13 @@ public void add_point(const Point<dimension> & point)
 ```
 
 
+### extends
+
+```cpp
+public void extends(double length)
+```
+
+
 ### contains
 
 ```cpp

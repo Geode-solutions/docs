@@ -44,6 +44,13 @@ public void SurfaceMeshMerger<dimension>(absl::Span<const std::reference_wrapper
 ```
 
 
+### SurfaceMeshMerger
+
+```cpp
+public void SurfaceMeshMerger<dimension>(SurfaceMeshMerger<dimension> && )
+```
+
+
 ### ~SurfaceMeshMerger
 
 ```cpp

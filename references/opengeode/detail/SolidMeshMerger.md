@@ -44,6 +44,13 @@ public void SolidMeshMerger<dimension>(absl::Span<const std::reference_wrapper<c
 ```
 
 
+### SolidMeshMerger
+
+```cpp
+public void SolidMeshMerger<dimension>(SolidMeshMerger<dimension> && )
+```
+
+
 ### ~SolidMeshMerger
 
 ```cpp

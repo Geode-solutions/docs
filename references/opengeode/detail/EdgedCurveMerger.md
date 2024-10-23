@@ -53,6 +53,13 @@ public void EdgedCurveMerger<dimension>(absl::Span<const std::reference_wrapper<
 ```
 
 
+### EdgedCurveMerger
+
+```cpp
+public void EdgedCurveMerger<dimension>(EdgedCurveMerger<dimension> && )
+```
+
+
 ### ~EdgedCurveMerger
 
 ```cpp

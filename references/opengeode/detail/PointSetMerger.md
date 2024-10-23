@@ -47,6 +47,13 @@ public void PointSetMerger<dimension>(absl::Span<const std::reference_wrapper<co
 ```
 
 
+### PointSetMerger
+
+```cpp
+public void PointSetMerger<dimension>(PointSetMerger<dimension> && )
+```
+
+
 ### ~PointSetMerger
 
 ```cpp
