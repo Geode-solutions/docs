@@ -17,6 +17,13 @@ const name = words.join('-');
 
 ## Functions
 
+### compute_cell_size
+
+```cpp
+double compute_cell_size(geode::BoundingBox<dimension> bbox, const geode::DataPointsManager<dimension> & data, bool dense_data)
+```
+
+
 ### extrapolate_surface_mesh_scalar_function
 
 ```cpp
@@ -35,13 +42,6 @@ void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, basi
 
 ```cpp
 void extrapolate_light_regular_grid_scalar_function(const LightRegularGrid<dimension> & grid, basic_string_view scalar_function_name, Span undefined_vertices)
-```
-
-
-### compute_cell_size
-
-```cpp
-double compute_cell_size(geode::BoundingBox<dimension> bbox, const geode::DataPointsManager<dimension> & data, bool dense_data)
 ```
 
 
