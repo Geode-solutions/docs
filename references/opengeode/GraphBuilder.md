@@ -110,6 +110,19 @@ public void set_edges_around_vertex(index_t vertex_id, EdgesAroundVertex edges)
 ```
 
 
+### replace_vertex
+
+```cpp
+public void replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
+```
+
+
+ Replace old edge vertices from a given vertex to another.
+
+**old_vertex_id** [in] Index of the initial mesh vertex to modify
+
+**new_vertex_id** [in] Index of the target mesh vertex to set as edge vertex
+
 ### delete_edges
 
 ```cpp

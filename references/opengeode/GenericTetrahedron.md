@@ -82,6 +82,13 @@ public BoundingBox3D bounding_box()
 ```
 
 
+### is_degenerated
+
+```cpp
+public bool is_degenerated()
+```
+
+
 
 
 # class GenericTetrahedron

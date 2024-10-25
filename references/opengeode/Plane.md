@@ -32,6 +32,13 @@ public void Plane(const Vector3D & normal, const Point3D & origin)
 ### Plane
 
 ```cpp
+public void Plane(const Triangle3D & triangle)
+```
+
+
+### Plane
+
+```cpp
 public void Plane(const Plane & other)
 ```
 

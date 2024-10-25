@@ -134,6 +134,13 @@ public double minimum_height()
 ```
 
 
+### is_degenerated
+
+```cpp
+public bool is_degenerated()
+```
+
+
 
 
 # class GenericTriangle

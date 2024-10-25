@@ -29,7 +29,7 @@ public void GenericLine<PointType, dimension>(const Vector<dimension> & directio
 ### GenericLine
 
 ```cpp
-public void GenericLine<PointType, dimension>(const GenericSegment<PointType, dimension> & segment)
+public void GenericLine<PointType, dimension>(const Segment<dimension> & segment)
 ```
 
 

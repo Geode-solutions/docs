@@ -17,18 +17,30 @@ const name = words.join('-');
 ## Members
 
 ```cpp
+public std::vector<Point<dimension> > unique_points
+
+```
+
+```cpp
 public vector colocated_mapping
 
 ```
 
 ```cpp
-public std::vector<Point<dimension> > unique_points
+public vector colocated_input_points
 
 ```
 
 
 
 ## Functions
+
+### ColocatedInfo
+
+```cpp
+public void ColocatedInfo()
+```
+
 
 ### nb_unique_points
 

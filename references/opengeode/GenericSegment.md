@@ -115,6 +115,13 @@ public BoundingBox<dimension> bounding_box()
 ```
 
 
+### is_degenerated
+
+```cpp
+public bool is_degenerated()
+```
+
+
 
 
 # class GenericSegment

@@ -29,6 +29,13 @@ public void GenericPlane<PointType>(const Vector3D & normal, PointType origin)
 ### GenericPlane
 
 ```cpp
+public void GenericPlane<PointType>(const Triangle3D & triangle)
+```
+
+
+### GenericPlane
+
+```cpp
 public void GenericPlane<PointType>(const GenericPlane<PointType> & other)
 ```
 

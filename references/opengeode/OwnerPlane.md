@@ -32,6 +32,13 @@ public void OwnerPlane(const Vector3D & normal, Point origin)
 ### OwnerPlane
 
 ```cpp
+public void OwnerPlane(const Triangle3D & triangle)
+```
+
+
+### OwnerPlane
+
+```cpp
 public void OwnerPlane(const OwnerPlane & other)
 ```
 
