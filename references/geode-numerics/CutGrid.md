@@ -65,6 +65,18 @@ public double get_node_value(index_t value_node_id)
 ```
 
 
+### cell_is_duplicated
+
+```cpp
+public bool cell_is_duplicated(const CellIndices & cell_indices)
+```
+
+### nb_cell_duplicates
+
+```cpp
+public index_t nb_cell_duplicates(const CellIndices & cell_indices)
+```
+
 ### is_cell_duplicate_active
 
 ```cpp
