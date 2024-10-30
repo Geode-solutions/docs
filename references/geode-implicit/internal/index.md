@@ -19,6 +19,7 @@ const name = words.join('-');
 
 * [CrossSectionSurfaceImpliciter](CrossSectionSurfaceImpliciter.md)
 * [CutSolidGrid](CutSolidGrid.md)
+* [CutSurfaceGridOutput](CutSurfaceGridOutput.md)
 * [CutSurfaceGrid](CutSurfaceGrid.md)
 * [DuplicatedCell2D](DuplicatedCell2D.md)
 * [DuplicatedCell3D](DuplicatedCell3D.md)
@@ -26,5 +27,30 @@ const name = words.join('-');
 * [ImplicitSVGInput](ImplicitSVGInput.md)
 * [StratigraphicLSOInput](StratigraphicLSOInput.md)
 * [StructuralModelBlockImpliciter](StructuralModelBlockImpliciter.md)
+* [VTPCutSurfaceGridOutput](VTPCutSurfaceGridOutput.md)
+
+
+## Functions
+
+### save_cut_surface_grid
+
+```cpp
+vector save_cut_surface_grid(const CutSurfaceGrid & cut_surface_grid, basic_string_view filename)
+```
+
+
+ API function for saving a CutSurfaceGrid. The adequate saver is called depending on the given filename         extension. const CutSurfaceGrid& cut_surface_grid,
+
+**edged_curve** [in] CutSurfaceGrid to save.
+
+**filename** [in] Path to the file where save the CutSurfaceGrid.
+
+### is_cut_surface_grid_saveable
+
+```cpp
+bool is_cut_surface_grid_saveable(const CutSurfaceGrid & cut_surface_grid, basic_string_view filename)
+```
+
+
 
 
