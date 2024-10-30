@@ -59,6 +59,13 @@ public void GenericMeshAccessor<SurfaceMesh<dimension> >(const SurfaceMesh<dimen
 ```
 
 
+### nb_vertices
+
+```cpp
+public index_t nb_vertices()
+```
+
+
 ### nb_elements
 
 ```cpp
@@ -77,6 +84,20 @@ public index_t nb_element_vertices(index_t polygon_id)
 
 ```cpp
 public index_t nb_element_facets(index_t polygon_id)
+```
+
+
+### element_index
+
+```cpp
+public index_t element_index(const ElementFacet & polygon_edge)
+```
+
+
+### facet_index
+
+```cpp
+public index_t facet_index(const ElementFacet & polygon_edge)
 ```
 
 
@@ -104,21 +125,21 @@ public Point<dimension> element_barycenter(index_t polygon_id)
 ### element_facet_vertices
 
 ```cpp
-public array element_facet_vertices(const ElementFacet & polygon_edge)
+public array element_facet_vertices(const ElementFacet & element_facet)
 ```
 
 
 ### element_adjacent
 
 ```cpp
-public optional element_adjacent(const ElementFacet & polygon_edge)
+public optional element_adjacent(const ElementFacet & element_facet)
 ```
 
 
 ### element_adjacent_facet
 
 ```cpp
-public optional element_adjacent_facet(const ElementFacet & polygon_edge)
+public optional element_adjacent_facet(const ElementFacet & element_facet)
 ```
 
 
@@ -195,6 +216,13 @@ public void GenericMeshAccessor<SolidMesh<dimension> >(const SolidMesh<dimension
 ```
 
 
+### nb_vertices
+
+```cpp
+public index_t nb_vertices()
+```
+
+
 ### nb_elements
 
 ```cpp
@@ -213,6 +241,20 @@ public index_t nb_element_vertices(index_t polyhedron_id)
 
 ```cpp
 public index_t nb_element_facets(index_t polyhedron_id)
+```
+
+
+### element_index
+
+```cpp
+public index_t element_index(const ElementFacet & polyhedron_facet)
+```
+
+
+### facet_index
+
+```cpp
+public index_t facet_index(const ElementFacet & polyhedron_facet)
 ```
 
 
@@ -240,21 +282,21 @@ public Point<dimension> element_barycenter(index_t polyhedron_id)
 ### element_facet_vertices
 
 ```cpp
-public InlinedVector element_facet_vertices(const ElementFacet & polyhedron_facet)
+public InlinedVector element_facet_vertices(const ElementFacet & element_facet)
 ```
 
 
 ### element_adjacent
 
 ```cpp
-public optional element_adjacent(const ElementFacet & polyhedron_facet)
+public optional element_adjacent(const ElementFacet & element_facet)
 ```
 
 
 ### element_adjacent_facet
 
 ```cpp
-public optional element_adjacent_facet(const ElementFacet & polyhedron_facet)
+public optional element_adjacent_facet(PolyhedronFacet element_facet)
 ```
 
 

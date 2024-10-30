@@ -121,6 +121,13 @@ double shape_function_value(const typename Grid<dimension>::CellIndices & cell_i
 ```
 
 
+### gradient_shape_function_value
+
+```cpp
+double gradient_shape_function_value(const typename Grid<dimension>::CellIndices & cell_id, local_index_t node_id, const Point<dimension> & point_in_grid, local_index_t derivative_direction)
+```
+
+
 ### segment_intersection_detection
 
 ```cpp
@@ -153,6 +160,20 @@ void next_filtered_embedding_iterator(Iterator & iterator)
 
 ```cpp
 BoundingBox<dimension> meshes_bounding_box(MeshComponentRange range)
+```
+
+
+### compute_surface_scalar_function_gradient
+
+```cpp
+tuple compute_surface_scalar_function_gradient(const SurfaceMesh<dimension> & mesh, basic_string_view scalar_function_name, Span no_value_vertices)
+```
+
+
+### compute_solid_scalar_function_gradient
+
+```cpp
+tuple compute_solid_scalar_function_gradient(const SolidMesh3D & mesh, basic_string_view scalar_function_name, Span no_value_vertices)
 ```
 
 
