@@ -23,7 +23,6 @@ const name = words.join('-');
 
 ## Records
 
-* [BRepTopologyRebuilder](BRepTopologyRebuilder.md)
 * [BlocksBuilderFromSolid](BlocksBuilderFromSolid.md)
 * [ConversionModelLibrary](ConversionModelLibrary.md)
 * [IndexToBRepMeshElementsMapping](IndexToBRepMeshElementsMapping.md)

@@ -19,6 +19,7 @@ const name = words.join('-');
 
 * [BRepFromMeshesBuilder](BRepFromMeshesBuilder.md)
 * [BRepFromSolidElementsBuilder](BRepFromSolidElementsBuilder.md)
+* [BRepTopologyRebuilder](BRepTopologyRebuilder.md)
 * [CornersLinesBuilder](CornersLinesBuilder.md)
 * [ModelBuilderFromMeshes](ModelBuilderFromMeshes.md)
 * [SectionFromMeshesBuilder](SectionFromMeshesBuilder.md)
