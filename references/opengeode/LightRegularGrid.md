@@ -25,28 +25,28 @@ Inherits from Grid<dimension>, Identifier
 ### LightRegularGrid
 
 ```cpp
-public void LightRegularGrid<>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
+public void LightRegularGrid<dimension>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
 ```
 
 
 ### LightRegularGrid
 
 ```cpp
-public void LightRegularGrid<>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<Vector<dimension>, dimension> directions)
+public void LightRegularGrid<dimension>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<Vector<dimension>, dimension> directions)
 ```
 
 
 ### LightRegularGrid
 
 ```cpp
-public void LightRegularGrid<>(LightRegularGrid<> && other)
+public void LightRegularGrid<dimension>(LightRegularGrid<dimension> && other)
 ```
 
 
 ### ~LightRegularGrid
 
 ```cpp
-public void ~LightRegularGrid<>()
+public void ~LightRegularGrid<dimension>()
 ```
 
 

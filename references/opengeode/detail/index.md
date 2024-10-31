@@ -203,34 +203,6 @@ local_index_t position_to_index(POSITION position)
 ```
 
 
-### save_segment
-
-```cpp
-void save_segment(const Segment<dimension> & segment, basic_string_view suffix)
-```
-
-
-### save_triangle
-
-```cpp
-void save_triangle(const Triangle<dimension> & triangle, basic_string_view suffix)
-```
-
-
-### save_tetrahedron
-
-```cpp
-void save_tetrahedron(const Tetrahedron & tetrahedron, basic_string_view suffix)
-```
-
-
-### save_tetrahedra
-
-```cpp
-void save_tetrahedra(const TetrahedralSolid3D & solid, Span indices, basic_string_view suffix)
-```
-
-
 ### solid_polyhedron_is_a_tetrahedron
 
 ```cpp
@@ -256,6 +228,13 @@ bool solid_polyhedron_is_a_pyramid(const SolidMesh3D & solid, index_t polyhedron
 
 ```cpp
 bool solid_polyhedron_is_a_prism(const SolidMesh3D & solid, index_t polyhedron_id)
+```
+
+
+### polygons_intersection_detection
+
+```cpp
+bool polygons_intersection_detection(const Mesh & mesh, const PolygonVertices & polygon, const PolygonVertices & other_polygon)
 ```
 
 
@@ -522,6 +501,34 @@ void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const Su
 
 ```cpp
 void transfer_solids_metadata(Span solids, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### save_segment
+
+```cpp
+void save_segment(const Segment<dimension> & segment, basic_string_view suffix)
+```
+
+
+### save_triangle
+
+```cpp
+void save_triangle(const Triangle<dimension> & triangle, basic_string_view suffix)
+```
+
+
+### save_tetrahedron
+
+```cpp
+void save_tetrahedron(const Tetrahedron & tetrahedron, basic_string_view suffix)
+```
+
+
+### save_tetrahedra
+
+```cpp
+void save_tetrahedra(const TetrahedralSolid3D & solid, Span indices, basic_string_view suffix)
 ```
 
 

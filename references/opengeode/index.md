@@ -1318,6 +1318,13 @@ array safe_segment_barycentric_coordinates(const Point<dimension> & point, const
 
 **return** an array containing the parametric coordinates corresponding to the segment vertices.
 
+### register_geode_mesh_output
+
+```cpp
+void register_geode_mesh_output()
+```
+
+
 ### save_edged_curve
 
 ```cpp
@@ -1338,17 +1345,183 @@ bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_st
 ```
 
 
-### repair_polygon_orientations
+### save_graph
 
 ```cpp
-void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
+vector save_graph(const Graph & graph, basic_string_view filename)
 ```
 
 
-### repair_polygon_orientations
+ API function for saving a Graph. The adequate saver is called depending on the given filename extension.
+
+**graph** [in] Graph to save.
+
+**filename** [in] Path to the file where save the Graph.
+
+### is_graph_saveable
 
 ```cpp
-void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
+bool is_graph_saveable(const Graph & graph, basic_string_view filename)
+```
+
+
+### save_hybrid_solid
+
+```cpp
+vector save_hybrid_solid(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
+```
+
+
+ API function for saving a HybridSolid. The adequate saver is called depending on the given filename extension.
+
+**hybrid_solid** [in] HybridSolid to save.
+
+**filename** [in] Path to the file where save the HybridSolid.
+
+### is_hybrid_solid_saveable
+
+```cpp
+bool is_hybrid_solid_saveable(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
+```
+
+
+### save_point_set
+
+```cpp
+vector save_point_set(const PointSet<dimension> & point_set, basic_string_view filename)
+```
+
+
+ API function for saving a PointSet. The adequate saver is called depending on the given filename extension.
+
+**point_set** [in] PointSet to save.
+
+**filename** [in] Path to the file where save the PointSet.
+
+### is_point_set_saveable
+
+```cpp
+bool is_point_set_saveable(const PointSet<dimension> & point_set, basic_string_view filename)
+```
+
+
+### save_polygonal_surface
+
+```cpp
+vector save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
+```
+
+
+ API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
+
+**edged_curve** [in] PolygonalSurface to save.
+
+**filename** [in] Path to the file where save the PolygonalSurface.
+
+### is_polygonal_surface_saveable
+
+```cpp
+bool is_polygonal_surface_saveable(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
+```
+
+
+### save_polyhedral_solid
+
+```cpp
+vector save_polyhedral_solid(const PolyhedralSolid<dimension> & polyhedral_solid, basic_string_view filename)
+```
+
+
+ API function for saving a PolyhedralSolid. The adequate saver is called depending on the given filename extension.
+
+**polyhedral_solid** [in] PolyhedralSolid to save.
+
+**filename** [in] Path to the file where save the PolyhedralSolid.
+
+### is_polyhedral_solid_saveable
+
+```cpp
+bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_solid, basic_string_view filename)
+```
+
+
+### save_regular_grid
+
+```cpp
+vector save_regular_grid(const RegularGrid<dimension> & regular_grid, basic_string_view filename)
+```
+
+
+ API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
+
+**regular_grid** [in] RegularGrid to save.
+
+**filename** [in] Path to the file where save the RegularGrid.
+
+### is_regular_grid_saveable
+
+```cpp
+bool is_regular_grid_saveable(const RegularGrid<dimension> & regular_grid, basic_string_view filename)
+```
+
+
+### save_tetrahedral_solid
+
+```cpp
+vector save_tetrahedral_solid(const TetrahedralSolid<dimension> & tetrahedral_solid, basic_string_view filename)
+```
+
+
+ API function for saving a TetrahedralSolid. The adequate saver is called depending on the given filename extension.
+
+**tetrahedral_solid** [in] TetrahedralSolid to save.
+
+**filename** [in] Path to the file where save the TetrahedralSolid.
+
+### is_tetrahedral_solid_saveable
+
+```cpp
+bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedral_solid, basic_string_view filename)
+```
+
+
+### save_vertex_set
+
+```cpp
+vector save_vertex_set(const VertexSet & vertex_set, basic_string_view filename)
+```
+
+
+ API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
+
+**vertex_set** [in] VertexSet to save.
+
+**filename** [in] Path to the file where save the VertexSet.
+
+### is_vertex_set_saveable
+
+```cpp
+bool is_vertex_set_saveable(const VertexSet & vertex_set, basic_string_view filename)
+```
+
+
+### save_light_regular_grid
+
+```cpp
+vector save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, basic_string_view filename)
+```
+
+
+ API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
+
+**light_regular_grid** [in] LightRegularGrid to save.
+
+**filename** [in] Path to the file where save the LightRegularGrid.
+
+### is_light_regular_grid_saveable
+
+```cpp
+bool is_light_regular_grid_saveable(const LightRegularGrid<dimension> & light_regular_grid, basic_string_view filename)
 ```
 
 
@@ -1428,46 +1601,6 @@ bool is_vertex_set_loadable(basic_string_view filename)
 ```
 
 
-### save_regular_grid
-
-```cpp
-vector save_regular_grid(const RegularGrid<dimension> & regular_grid, basic_string_view filename)
-```
-
-
- API function for saving a RegularGrid. The adequate saver is called depending on the given filename extension.
-
-**regular_grid** [in] RegularGrid to save.
-
-**filename** [in] Path to the file where save the RegularGrid.
-
-### is_regular_grid_saveable
-
-```cpp
-bool is_regular_grid_saveable(const RegularGrid<dimension> & regular_grid, basic_string_view filename)
-```
-
-
-### save_vertex_set
-
-```cpp
-vector save_vertex_set(const VertexSet & vertex_set, basic_string_view filename)
-```
-
-
- API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
-
-**vertex_set** [in] VertexSet to save.
-
-**filename** [in] Path to the file where save the VertexSet.
-
-### is_vertex_set_saveable
-
-```cpp
-bool is_vertex_set_saveable(const VertexSet & vertex_set, basic_string_view filename)
-```
-
-
 ### load_tetrahedral_solid
 
 ```cpp
@@ -1506,26 +1639,6 @@ bool is_tetrahedral_solid_loadable(basic_string_view filename)
 ```
 
 
-### save_tetrahedral_solid
-
-```cpp
-vector save_tetrahedral_solid(const TetrahedralSolid<dimension> & tetrahedral_solid, basic_string_view filename)
-```
-
-
- API function for saving a TetrahedralSolid. The adequate saver is called depending on the given filename extension.
-
-**tetrahedral_solid** [in] TetrahedralSolid to save.
-
-**filename** [in] Path to the file where save the TetrahedralSolid.
-
-### is_tetrahedral_solid_saveable
-
-```cpp
-bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedral_solid, basic_string_view filename)
-```
-
-
 ### load_triangulated_surface
 
 ```cpp
@@ -1561,6 +1674,86 @@ typename TriangulatedSurfaceInput<dimension>::MissingFiles check_triangulated_su
 
 ```cpp
 bool is_triangulated_surface_loadable(basic_string_view filename)
+```
+
+
+### segment_segment_intersection_detection
+
+```cpp
+pair segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+ Detect if there is an intersection between two 2D segments
+
+**return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
+
+### colinear_segment_segment_intersection_detection
+
+```cpp
+pair colinear_segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+ Detect the configuration between two 2D colinear segments
+
+**return** the position of the intersection on the two segments. Returns parallel-pallel if there is segment overlap
+
+### segment_line_intersection_detection
+
+```cpp
+POSITION segment_line_intersection_detection(const Segment2D & segment, const InfiniteLine2D & line)
+```
+
+
+ Detect if there is an intersection between a line and a segment
+
+**return** the position of the intersection on the segment. Returns outside if there is no intersection or all points are colinear
+
+### line_triangle_intersection_detection
+
+```cpp
+POSITION line_triangle_intersection_detection(const InfiniteLine3D & line, const Triangle3D & triangle)
+```
+
+
+ Detect if there is an intersection between a line and a triangle
+
+**return** the position of the intersection on the triangle. Returns outside if there is no intersection or the line is coplanar with the triangle
+
+### segment_triangle_intersection_detection
+
+```cpp
+pair segment_triangle_intersection_detection(const Segment3D & segment, const Triangle3D & triangle)
+```
+
+
+ Detect if there is an intersection between a segment and a triangle
+
+**return** the position of the intersection on the segment and on the triangle. Returns outside if there is no intersection or the segment is coplanar with the triangle
+
+### segment_plane_intersection_detection
+
+```cpp
+POSITION segment_plane_intersection_detection(const Segment3D & segment, const Plane & plane)
+```
+
+
+ Detect if there is an intersection between a segment and a plane
+
+**return** the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane
+
+### repair_polygon_orientations
+
+```cpp
+void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
+```
+
+
+### repair_polygon_orientations
+
+```cpp
+void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
 ```
 
 
@@ -2278,26 +2471,6 @@ bool is_graph_loadable(basic_string_view filename)
 ```
 
 
-### save_graph
-
-```cpp
-vector save_graph(const Graph & graph, basic_string_view filename)
-```
-
-
- API function for saving a Graph. The adequate saver is called depending on the given filename extension.
-
-**graph** [in] Graph to save.
-
-**filename** [in] Path to the file where save the Graph.
-
-### is_graph_saveable
-
-```cpp
-bool is_graph_saveable(const Graph & graph, basic_string_view filename)
-```
-
-
 ### load_hybrid_solid
 
 ```cpp
@@ -2336,26 +2509,6 @@ bool is_hybrid_solid_loadable(basic_string_view filename)
 ```
 
 
-### save_hybrid_solid
-
-```cpp
-vector save_hybrid_solid(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
-```
-
-
- API function for saving a HybridSolid. The adequate saver is called depending on the given filename extension.
-
-**hybrid_solid** [in] HybridSolid to save.
-
-**filename** [in] Path to the file where save the HybridSolid.
-
-### is_hybrid_solid_saveable
-
-```cpp
-bool is_hybrid_solid_saveable(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
-```
-
-
 ### load_light_regular_grid
 
 ```cpp
@@ -2378,26 +2531,6 @@ typename LightRegularGridInput<dimension>::MissingFiles check_light_regular_grid
 
 ```cpp
 bool is_light_regular_grid_loadable(basic_string_view filename)
-```
-
-
-### save_light_regular_grid
-
-```cpp
-vector save_light_regular_grid(const LightRegularGrid<dimension> & light_regular_grid, basic_string_view filename)
-```
-
-
- API function for saving a LightRegularGrid. The adequate saver is called depending on the given filename extension.
-
-**light_regular_grid** [in] LightRegularGrid to save.
-
-**filename** [in] Path to the file where save the LightRegularGrid.
-
-### is_light_regular_grid_saveable
-
-```cpp
-bool is_light_regular_grid_saveable(const LightRegularGrid<dimension> & light_regular_grid, basic_string_view filename)
 ```
 
 
@@ -2659,83 +2792,10 @@ IntersectionResult plane_plane_intersection(const Plane & plane0, const Plane & 
 
 **return** an optional of the intersection line.
 
-### segment_segment_intersection_detection
-
-```cpp
-pair segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
- Detect if there is an intersection between two 2D segments
-
-**return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
-
-### colinear_segment_segment_intersection_detection
-
-```cpp
-pair colinear_segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
- Detect the configuration between two 2D colinear segments
-
-**return** the position of the intersection on the two segments. Returns parallel-pallel if there is segment overlap
-
-### segment_line_intersection_detection
-
-```cpp
-POSITION segment_line_intersection_detection(const Segment2D & segment, const InfiniteLine2D & line)
-```
-
-
- Detect if there is an intersection between a line and a segment
-
-**return** the position of the intersection on the segment. Returns outside if there is no intersection or all points are colinear
-
-### line_triangle_intersection_detection
-
-```cpp
-POSITION line_triangle_intersection_detection(const InfiniteLine3D & line, const Triangle3D & triangle)
-```
-
-
- Detect if there is an intersection between a line and a triangle
-
-**return** the position of the intersection on the triangle. Returns outside if there is no intersection or the line is coplanar with the triangle
-
-### segment_triangle_intersection_detection
-
-```cpp
-pair segment_triangle_intersection_detection(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Detect if there is an intersection between a segment and a triangle
-
-**return** the position of the intersection on the segment and on the triangle. Returns outside if there is no intersection or the segment is coplanar with the triangle
-
-### segment_plane_intersection_detection
-
-```cpp
-POSITION segment_plane_intersection_detection(const Segment3D & segment, const Plane & plane)
-```
-
-
- Detect if there is an intersection between a segment and a plane
-
-**return** the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane
-
 ### register_geode_mesh_input
 
 ```cpp
 void register_geode_mesh_input()
-```
-
-
-### register_geode_mesh_output
-
-```cpp
-void register_geode_mesh_output()
 ```
 
 
@@ -2854,26 +2914,6 @@ bool is_polygonal_surface_loadable(basic_string_view filename)
 ```
 
 
-### save_polygonal_surface
-
-```cpp
-vector save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
-```
-
-
- API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
-
-**edged_curve** [in] PolygonalSurface to save.
-
-**filename** [in] Path to the file where save the PolygonalSurface.
-
-### is_polygonal_surface_saveable
-
-```cpp
-bool is_polygonal_surface_saveable(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
-```
-
-
 ### load_point_set
 
 ```cpp
@@ -2912,26 +2952,6 @@ bool is_point_set_loadable(basic_string_view filename)
 ```
 
 
-### save_point_set
-
-```cpp
-vector save_point_set(const PointSet<dimension> & point_set, basic_string_view filename)
-```
-
-
- API function for saving a PointSet. The adequate saver is called depending on the given filename extension.
-
-**point_set** [in] PointSet to save.
-
-**filename** [in] Path to the file where save the PointSet.
-
-### is_point_set_saveable
-
-```cpp
-bool is_point_set_saveable(const PointSet<dimension> & point_set, basic_string_view filename)
-```
-
-
 ### load_polyhedral_solid
 
 ```cpp
@@ -2967,26 +2987,6 @@ typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_mi
 
 ```cpp
 bool is_polyhedral_solid_loadable(basic_string_view filename)
-```
-
-
-### save_polyhedral_solid
-
-```cpp
-vector save_polyhedral_solid(const PolyhedralSolid<dimension> & polyhedral_solid, basic_string_view filename)
-```
-
-
- API function for saving a PolyhedralSolid. The adequate saver is called depending on the given filename extension.
-
-**polyhedral_solid** [in] PolyhedralSolid to save.
-
-**filename** [in] Path to the file where save the PolyhedralSolid.
-
-### is_polyhedral_solid_saveable
-
-```cpp
-bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_solid, basic_string_view filename)
 ```
 
 
