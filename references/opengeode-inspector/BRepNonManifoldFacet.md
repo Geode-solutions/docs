@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public array facet
+public InlinedVector facet
 
 ```
 
