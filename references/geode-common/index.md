@@ -182,7 +182,7 @@ void update_vertex_mappings(std::vector<geode::VertexMultiMapping> & vertex_mult
 ### add_mappings_in_multi_mappings
 
 ```cpp
-void add_mappings_in_multi_mappings(std::vector<MultiMapping<T> > & multi_mappings, absl::Span<const Mapping<T> > new_mappings)
+void add_mappings_in_multi_mappings(std::vector<MultiMapping<T> > & multi_mappings, absl::Span<const MultiMapping<T> > new_mappings)
 ```
 
 
