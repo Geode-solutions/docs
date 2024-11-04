@@ -472,6 +472,20 @@ bool does_swap_facet_improve_metric(const BackgroundSolid & solid, const Polyhed
 ```
 
 
+### does_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_split_collapse_facet_improve_metric
+
+```cpp
+bool does_split_collapse_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
 ### does_split_split_collapse_edge_improve_metric
 
 ```cpp

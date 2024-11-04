@@ -100,6 +100,13 @@ public Constraints & constraints()
 ```
 
 
+### builder
+
+```cpp
+public BackgroundSolidBuilder & builder()
+```
+
+
 ### collapse_edge
 
 ```cpp
