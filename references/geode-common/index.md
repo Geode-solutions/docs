@@ -890,16 +890,15 @@ TetrahedraAfter tetrahedra_after_split_facet(const TetrahedralSolid3D & mesh, in
 ### tetrahedra_after_split_collapse_facet
 
 ```cpp
-FixedArray tetrahedra_after_split_collapse_facet(const TetrahedralSolid3D & mesh, index_t facet_id, index_t vertex_id, const Point3D & point)
+TetrahedraAfter tetrahedra_after_split_collapse_facet(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
 ```
+
 
  Return all the tetrahedra resulting from a facet split then collapsed. The split and the collapse are not applied.
 
 **mesh** [in] Tetrahedral mesh on which simulate operation.
 
-**facet_id** [in] Unique index of the facet on which simulate split.
-
-**vertex_id** [in] Index of the vertex used to proceed collapse.
+**facet** [in] The facet on which simulate split.
 
 **point** [in] Destimation of the collapse point.
 
@@ -947,6 +946,13 @@ FixedArray tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh,
 **edge** [in] Index of the PolyhedronFacetEdge on which simulate split.
 
 **vertex** [in] Index towards which the split vertex is collapse on.
+
+### tetrahedra_after_split_collapse_edge
+
+```cpp
+TetrahedraAfter tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex, const Point3D & point)
+```
+
 
 ### tetrahedra_after_split_split_collapse_edge
 
