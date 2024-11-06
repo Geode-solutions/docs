@@ -19,6 +19,20 @@ const name = words.join('-');
 ### compute
 
 ```cpp
+public std::array<double, array_size> compute(const AttributeLinearInterpolation & interpolator, const Attribute<std::array<double, array_size> > & attribute)
+```
+
+
+
+
+# struct AttributeLinearInterpolationImpl
+
+
+## Functions
+
+### compute
+
+```cpp
 public GreyscaleColor compute(const AttributeLinearInterpolation & interpolator, const Attribute<GreyscaleColor> & attribute)
 ```
 
@@ -94,6 +108,20 @@ public RGBColor compute(const AttributeLinearInterpolation & interpolator, const
 
 ```cpp
 public AttributeType compute(const AttributeLinearInterpolation & , const Attribute<AttributeType> & attribute)
+```
+
+
+
+
+# struct AttributeLinearInterpolationImpl
+
+
+## Functions
+
+### compute
+
+```cpp
+public std::array<float, array_size> compute(const AttributeLinearInterpolation & interpolator, const Attribute<std::array<float, array_size> > & attribute)
 ```
 
 

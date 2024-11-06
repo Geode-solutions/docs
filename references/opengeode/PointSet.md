@@ -23,15 +23,6 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<2U>
 # class PointSet
 
 
-```cpp
-Inherits from VertexSet, CoordinateReferenceSystemManagers<3U>
-```
-
-
-
-# class PointSet
-
-
  Interface class to represent a set of 2D or 3D points. A point is a vertex associated to spatial coordinates
 
 
@@ -107,6 +98,15 @@ protected void PointSet<>(PointSet<> && other)
 protected PointSet<> & operator=(PointSet<> && other)
 ```
 
+
+
+
+# class PointSet
+
+
+```cpp
+Inherits from VertexSet, CoordinateReferenceSystemManagers<3U>
+```
 
 
 
