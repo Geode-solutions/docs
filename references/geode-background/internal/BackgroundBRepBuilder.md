@@ -71,6 +71,27 @@ public void add_macro_vertex_info(const MeshVertex & macro_vertex, index_t uniqu
 ```
 
 
+### add_macro_edge_info
+
+```cpp
+public void add_macro_edge_info(const MeshEdge & macro_edge, const Line3D & line, index_t edge)
+```
+
+
+### add_macro_edge_info
+
+```cpp
+public void add_macro_edge_info(const MeshEdge & macro_edge, const Surface3D & surface, const PolygonEdge & edge)
+```
+
+
+### add_macro_facet_info
+
+```cpp
+public void add_macro_facet_info(const MeshPolygon & macro_facet, const Surface3D & surface, index_t triangle)
+```
+
+
 ### update_information
 
 ```cpp

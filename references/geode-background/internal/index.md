@@ -17,9 +17,11 @@ const name = words.join('-');
 
 ## Records
 
+* [AllNonMacroVertex](AllNonMacroVertex.md)
 * [AllowedByConstraints](AllowedByConstraints.md)
 * [BackgroundBRepBuilder](BackgroundBRepBuilder.md)
 * [BackgroundBRepConstraintModifier](BackgroundBRepConstraintModifier.md)
+* [BackgroundBRepDecimatorOperator](BackgroundBRepDecimatorOperator.md)
 * [BackgroundBRepGenericOptimizer](BackgroundBRepGenericOptimizer.md)
 * [BackgroundBRepInserter](BackgroundBRepInserter.md)
 * [BackgroundBRepInternalDistanceOptimizer](BackgroundBRepInternalDistanceOptimizer.md)
@@ -615,7 +617,7 @@ bool is_split_split_collapse_allowed_by_constraints(const ModifiableBackgroundBR
 ### decimate_background_brep
 
 ```cpp
-void decimate_background_brep(ModifiableObject brep, BackgroundBRepBuilder & builder)
+void decimate_background_brep(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundBRepDecimatorOperator & decimator_operator)
 ```
 
 
