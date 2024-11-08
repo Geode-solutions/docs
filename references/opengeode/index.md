@@ -2827,6 +2827,13 @@ unique_ptr convert_grid_into_tetrahedral_solid(const Grid3D & grid)
 ```
 
 
+### convert_grid_into_hybrid_solid
+
+```cpp
+unique_ptr convert_grid_into_hybrid_solid(const Grid3D & grid)
+```
+
+
 ### convert_grid_into_densified_tetrahedral_solid
 
 ```cpp
