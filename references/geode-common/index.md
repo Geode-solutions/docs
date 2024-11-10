@@ -130,6 +130,7 @@ const name = words.join('-');
 * [SolidSwapPatchInfo](SolidSwapPatchInfo.md)
 * [SolidSwapPathInfo](SolidSwapPathInfo.md)
 * [SolidTopologicalValidity](SolidTopologicalValidity.md)
+* [SplitCollapseTetrahedraAfter](SplitCollapseTetrahedraAfter.md)
 * [SplitInfo](SplitInfo.md)
 * [SurfaceCollapseEdgeValidities](SurfaceCollapseEdgeValidities.md)
 * [SurfaceCollapseEdgeValidity](SurfaceCollapseEdgeValidity.md)
@@ -765,6 +766,34 @@ SolidCollapseEdgeValidity collapse_edge_validity(const TetrahedralSolid3D & mesh
 ```
 
 
+### is_split_collapse_edge_valid
+
+```cpp
+bool is_split_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex)
+```
+
+
+### is_split_collapse_edge_valid
+
+```cpp
+bool is_split_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point)
+```
+
+
+### is_split_collapse_facet_valid
+
+```cpp
+bool is_split_collapse_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet)
+```
+
+
+### is_split_collapse_facet_valid
+
+```cpp
+bool is_split_collapse_facet_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
+```
+
+
 ### is_split_split_collapse_edge_valid
 
 ```cpp
@@ -890,17 +919,16 @@ TetrahedraAfter tetrahedra_after_split_facet(const TetrahedralSolid3D & mesh, in
 ### tetrahedra_after_split_collapse_facet
 
 ```cpp
-TetrahedraAfter tetrahedra_after_split_collapse_facet(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
+SplitCollapseTetrahedraAfter tetrahedra_after_split_collapse_facet(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet)
 ```
 
 
- Return all the tetrahedra resulting from a facet split then collapsed. The split and the collapse are not applied.
+### tetrahedra_after_split_collapse_facet
 
-**mesh** [in] Tetrahedral mesh on which simulate operation.
+```cpp
+SplitCollapseTetrahedraAfter tetrahedra_after_split_collapse_facet(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet, const Point3D & point)
+```
 
-**facet** [in] The facet on which simulate split.
-
-**point** [in] Destimation of the collapse point.
 
 ### tetrahedra_after_split_edge
 
@@ -935,7 +963,7 @@ TetrahedraAfter tetrahedra_after_split_edge(const TetrahedralSolid3D & mesh, ind
 ### tetrahedra_after_split_collapse_edge
 
 ```cpp
-FixedArray tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex)
+SplitCollapseTetrahedraAfter tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex)
 ```
 
 
@@ -950,7 +978,7 @@ FixedArray tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh,
 ### tetrahedra_after_split_collapse_edge
 
 ```cpp
-TetrahedraAfter tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex, const Point3D & point)
+SplitCollapseTetrahedraAfter tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex, const Point3D & point)
 ```
 
 
@@ -970,13 +998,6 @@ TetrahedraAfter tetrahedra_after_split_split_collapse_edge(const TetrahedralSoli
 **edge1** [in] Index of the second PolyhedronFacetEdge on which simulate split.
 
 **vertex** [in] Index towards which the split vertex is collapse on.
-
-### tetrahedra_with_vertex_ids_after_split_split_collapse_edge
-
-```cpp
-std::vector<std::array<geode::index_t, 4> > tetrahedra_with_vertex_ids_after_split_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1)
-```
-
 
 ### tetrahedra_after_collapse_edge
 
