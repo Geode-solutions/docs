@@ -484,6 +484,13 @@ bool does_split_collapse_edge_improve_metric(const BackgroundSolid & solid, cons
 ### does_split_collapse_facet_improve_metric
 
 ```cpp
+bool does_split_collapse_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_split_collapse_facet_improve_metric
+
+```cpp
 bool does_split_collapse_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
 ```
 
