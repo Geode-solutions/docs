@@ -51,6 +51,11 @@ public InspectionIssues non_manifold_facets
 
 ```
 
+```cpp
+public InspectionIssues negative_polyhedra
+
+```
+
 
 
 ## Functions

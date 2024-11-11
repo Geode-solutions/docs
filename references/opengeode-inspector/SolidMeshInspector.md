@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from AddInspectors<SolidMesh<3U>, SolidMeshAdjacency<3U>, SolidMeshColocation<3U>, SolidMeshDegeneration<3U>, SolidMeshVertexManifold<3U>, SolidMeshEdgeManifold<3U>, SolidMeshFacetManifold<3U> >
+Inherits from AddInspectors<SolidMesh<3U>, SolidMeshAdjacency<3U>, SolidMeshColocation<3U>, SolidMeshDegeneration<3U>, SolidMeshVertexManifold<3U>, SolidMeshEdgeManifold<3U>, SolidMeshFacetManifold<3U>, SolidMeshNegativeElements<3U> >
 ```
 
 
@@ -28,7 +28,7 @@ Inherits from AddInspectors<SolidMesh<3U>, SolidMeshAdjacency<3U>, SolidMeshColo
 
 
 ```cpp
-Inherits from AddInspectors<SolidMesh<dimension>, SolidMeshAdjacency<dimension>, SolidMeshColocation<dimension>, SolidMeshDegeneration<dimension>, SolidMeshVertexManifold<dimension>, SolidMeshEdgeManifold<dimension>, SolidMeshFacetManifold<dimension> >
+Inherits from AddInspectors<SolidMesh<dimension>, SolidMeshAdjacency<dimension>, SolidMeshColocation<dimension>, SolidMeshDegeneration<dimension>, SolidMeshVertexManifold<dimension>, SolidMeshEdgeManifold<dimension>, SolidMeshFacetManifold<dimension>, SolidMeshNegativeElements<dimension> >
 ```
 
 
