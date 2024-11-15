@@ -39,7 +39,7 @@ public void ~BackgroundBRepBuilder()
 ### background_solid_builder
 
 ```cpp
-public std::unique_ptr<BackgroundSolidBuilder> background_solid_builder(const uuid & block_id)
+public std::unique_ptr<BackgroundSolidBuilder> background_solid_builder(const Block3D & block)
 ```
 
 

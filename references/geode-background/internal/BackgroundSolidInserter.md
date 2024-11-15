@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BackgroundSolidInserter
 
 ```cpp
-public void BackgroundSolidInserter(BackgroundSolid & background)
+public void BackgroundSolidInserter(ModifiableObject solid, BackgroundSolidBuilder & builder)
 ```
 
 
