@@ -65,7 +65,7 @@ protected void SurfacePathFinder<dimension>(const TriangulatedSurface<dimension>
 ### adjacent_opposite_vertex
 
 ```cpp
-protected PolygonVertex adjacent_opposite_vertex(const PolygonEdge & edge)
+protected std::optional<PolygonVertex> adjacent_opposite_vertex(const PolygonEdge & edge)
 ```
 
 

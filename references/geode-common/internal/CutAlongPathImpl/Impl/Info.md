@@ -11,28 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SurfacePathFinderException
+# struct Info
 
+
+## Members
 
 ```cpp
-Inherits from OpenGeodeException
+public Type old
+
+```
+
+```cpp
+public local_index_t tag
+
 ```
 
 
 
 ## Functions
 
-### SurfacePathFinderException
+### Info
 
 ```cpp
-public void SurfacePathFinderException(const char * message)
-```
-
-
-### SurfacePathFinderException
-
-```cpp
-public void SurfacePathFinderException()
+public void Info<Type>(Type type, local_index_t info)
 ```
 
 

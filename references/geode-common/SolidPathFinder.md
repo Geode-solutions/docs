@@ -40,6 +40,13 @@ public optional find_path()
 ```
 
 
+### find_first_path
+
+```cpp
+public optional find_first_path()
+```
+
+
 ### stop_propagation
 
 ```cpp
@@ -79,13 +86,6 @@ protected Triangle facet_triangle(const PolyhedronFacet & facet)
 
 ```cpp
 protected optional find_path_intersection_with_facet(const PolyhedronFacet & facet)
-```
-
-
-### find_first_path
-
-```cpp
-protected optional find_first_path()
 ```
 
 

@@ -18,6 +18,7 @@ const name = words.join('-');
 ## Records
 
 * [BlockMeshFusion](BlockMeshFusion.md)
+* [CutAlongPathImpl](CutAlongPathImpl.md)
 * [GridMetricImpl](GridMetricImpl.md)
 * [ModelGeometricModifier](ModelGeometricModifier.md)
 * [OrientedEdgeUniqueVertices](OrientedEdgeUniqueVertices.md)

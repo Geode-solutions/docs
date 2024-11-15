@@ -32,7 +32,7 @@ public void SurfaceSegmentFinder3D(const TriangulatedSurface3D & surface, index_
 ### next_vertex_intersection
 
 ```cpp
-protected SurfacePath next_vertex_intersection(const SurfacePath & previous_path, index_t vertex)
+protected optional next_vertex_intersection(const SurfacePath & previous_path, index_t vertex)
 ```
 
 

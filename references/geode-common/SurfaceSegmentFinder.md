@@ -59,21 +59,21 @@ public optional find_path()
 ### stop_propagation
 
 ```cpp
-protected bool stop_propagation(const SurfacePath & path)
+protected optional stop_propagation(const SurfacePath & path)
 ```
 
 
 ### next_intersection
 
 ```cpp
-protected SurfacePath next_intersection(const SurfacePath & previous_path, const SurfacePath & current_path)
+protected optional next_intersection(const SurfacePath & previous_path, const SurfacePath & current_path)
 ```
 
 
 ### next_vertex_intersection
 
 ```cpp
-protected SurfacePath next_vertex_intersection(const SurfacePath & previous_path, index_t vertex)
+protected optional next_vertex_intersection(const SurfacePath & previous_path, index_t vertex)
 ```
 
 ### next_edge_intersection

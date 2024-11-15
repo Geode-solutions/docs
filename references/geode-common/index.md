@@ -139,7 +139,6 @@ const name = words.join('-');
 * [SurfaceGeometricalValidity](SurfaceGeometricalValidity.md)
 * [SurfaceMovePointValidities](SurfaceMovePointValidities.md)
 * [SurfaceMovePointValidity](SurfaceMovePointValidity.md)
-* [SurfacePathFinderException](SurfacePathFinderException.md)
 * [SurfacePathFinder](SurfacePathFinder.md)
 * [SurfacePath](SurfacePath.md)
 * [SurfaceSegmentFinder2D](SurfaceSegmentFinder2D.md)
@@ -1347,14 +1346,14 @@ SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralS
 ### determine_cuts
 
 ```cpp
-vector determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, Span path_splits)
+std::vector<GeometricSurfacePath2D> determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, absl::Span<const SurfacePath> path_splits)
 ```
 
 
 ### determine_cuts
 
 ```cpp
-vector determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, Span path_splits)
+std::vector<GeometricSurfacePath3D> determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, absl::Span<const SurfacePath> path_splits)
 ```
 
 
@@ -1368,7 +1367,14 @@ SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension
 ### cut_along_path
 
 ```cpp
-SurfaceCutPathInfo cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
+SurfaceCutPathInfo<2> cut_along_path(const TriangulatedSurface2D & surface, TriangulatedSurfaceModifier2D & modifier, index_t begin, index_t end)
+```
+
+
+### cut_along_path
+
+```cpp
+SurfaceCutPathInfo cut_along_path(BRepGeometricModifier & modifier, const Surface3D & surface, index_t begin, index_t end, Span path_splits)
 ```
 
 
