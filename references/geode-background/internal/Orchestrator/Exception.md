@@ -23,11 +23,6 @@ Inherits from OpenGeodeException
 ## Members
 
 ```cpp
-public std::queue<ElementStamp> queue_
-
-```
-
-```cpp
 public std::vector<ElementType> not_processed_elements_
 
 ```
