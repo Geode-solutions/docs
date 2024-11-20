@@ -52,27 +52,6 @@ void copy_collection_item_relationships(const ModelFrom & from, const Collection
 ```
 
 
-### add_geology_clone_mapping
-
-```cpp
-void add_geology_clone_mapping(ModelCopyMapping & mapping, const Model & model)
-```
-
-
-### clone_horizon_mapping
-
-```cpp
-BijectiveMapping clone_horizon_mapping(const Model & model)
-```
-
-
-### clone_stratigraphic_unit_mapping
-
-```cpp
-BijectiveMapping clone_stratigraphic_unit_mapping(const Model & model)
-```
-
-
 ### rescale_implicit_value
 
 ```cpp
@@ -163,6 +142,27 @@ optional horizon_id_from_name(const HorizonsStack<dimension> & horizon_stack, ba
 
 ```cpp
 vector invalid_stratigraphic_tetrahedra(const StratigraphicModel & model)
+```
+
+
+### add_geology_clone_mapping
+
+```cpp
+void add_geology_clone_mapping(ModelCopyMapping & mapping, const Model & model)
+```
+
+
+### clone_horizon_mapping
+
+```cpp
+BijectiveMapping clone_horizon_mapping(const Model & model)
+```
+
+
+### clone_stratigraphic_unit_mapping
+
+```cpp
+BijectiveMapping clone_stratigraphic_unit_mapping(const Model & model)
 ```
 
 
