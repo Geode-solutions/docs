@@ -100,6 +100,54 @@ public void add_brep(const BRep & brep)
 ```
 
 
+### process
+
+```cpp
+public void process()
+```
+
+
+ Compute all intersections between input Meshes
+
+### get_surface
+
+```cpp
+public unique_ptr get_surface(const uuid & surface_id)
+```
+
+
+ Creates a clone of the (modified) triangulated surface with given surface_id. Returns nullptr if the surface_id does not exist.
+
+**surface_id** [in] the id of the surface to retrieve
+
+**return** the triangulated surface (or nullptr if not found)
+
+### get_curve
+
+```cpp
+public unique_ptr get_curve(const uuid & curve_id)
+```
+
+
+ Creates a clone of the (modified) curve with given curve_id. Returns nullptr if the curve_id does not exist.
+
+**curve_id** [in] the id of the curve to retrieve
+
+**return** the curve (or nullptr if not found)
+
+### get_point_set
+
+```cpp
+public unique_ptr get_point_set(const uuid & point_set_id)
+```
+
+
+ Creates a clone of the (modified) point set with given point_set_id. Returns nullptr if the point_set_id does not exist.
+
+**point_set_id** [in] the id of the point set to retrieve
+
+**return** the point set (or nullptr if not found)
+
 ### build
 
 ```cpp
@@ -108,6 +156,8 @@ public tuple build()
 
 
  Returns the merged BRep (no mesh in Blocks) including all the added curves and surfaces and gives the "input to output" and "output to input" mappings between Surfaces and Lines
+
+**details** calls process() then creates the model
 
 
 
