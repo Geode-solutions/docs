@@ -32,5 +32,33 @@ public void TetrahedraAfter(size_t nb_modified_tetrahedra)
 ```
 
 
+### TetrahedraAfter
+
+```cpp
+public void TetrahedraAfter(const TetrahedraAfter & other)
+```
+
+
+### TetrahedraAfter
+
+```cpp
+public void TetrahedraAfter(TetrahedraAfter && other)
+```
+
+
+### operator=
+
+```cpp
+public TetrahedraAfter & operator=(const TetrahedraAfter & other)
+```
+
+
+### operator=
+
+```cpp
+public TetrahedraAfter & operator=(TetrahedraAfter && other)
+```
+
+
 
 

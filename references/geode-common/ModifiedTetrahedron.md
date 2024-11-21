@@ -44,5 +44,33 @@ public void ModifiedTetrahedron(const Tetrahedron & new_tetrahedron_in, index_t 
 ```
 
 
+### ModifiedTetrahedron
+
+```cpp
+public void ModifiedTetrahedron(const ModifiedTetrahedron & other)
+```
+
+
+### ModifiedTetrahedron
+
+```cpp
+public void ModifiedTetrahedron(ModifiedTetrahedron && other)
+```
+
+
+### operator=
+
+```cpp
+public ModifiedTetrahedron & operator=(const ModifiedTetrahedron & other)
+```
+
+
+### operator=
+
+```cpp
+public ModifiedTetrahedron & operator=(ModifiedTetrahedron && other)
+```
+
+
 
 

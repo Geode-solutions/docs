@@ -37,5 +37,33 @@ public void SwapTetrahedraAfter(size_t nb_new_tetrahedra, size_t nb_old_tetrahed
 ```
 
 
+### SwapTetrahedraAfter
+
+```cpp
+public void SwapTetrahedraAfter(const SwapTetrahedraAfter & other)
+```
+
+
+### SwapTetrahedraAfter
+
+```cpp
+public void SwapTetrahedraAfter(SwapTetrahedraAfter && other)
+```
+
+
+### operator=
+
+```cpp
+public SwapTetrahedraAfter & operator=(const SwapTetrahedraAfter & other)
+```
+
+
+### operator=
+
+```cpp
+public SwapTetrahedraAfter & operator=(SwapTetrahedraAfter && other)
+```
+
+
 
 

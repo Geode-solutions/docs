@@ -45,5 +45,33 @@ public void SplitCollapseTetrahedraAfter(size_t nb_new_tetrahedra, size_t nb_old
 ```
 
 
+### SplitCollapseTetrahedraAfter
+
+```cpp
+public void SplitCollapseTetrahedraAfter(const SplitCollapseTetrahedraAfter & other)
+```
+
+
+### SplitCollapseTetrahedraAfter
+
+```cpp
+public void SplitCollapseTetrahedraAfter(SplitCollapseTetrahedraAfter && other)
+```
+
+
+### operator=
+
+```cpp
+public SplitCollapseTetrahedraAfter & operator=(const SplitCollapseTetrahedraAfter & other)
+```
+
+
+### operator=
+
+```cpp
+public SplitCollapseTetrahedraAfter & operator=(SplitCollapseTetrahedraAfter && other)
+```
+
+
 
 
