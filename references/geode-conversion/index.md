@@ -47,55 +47,6 @@ ModelMapping build_brep_component_mapping(const BRep & out_brep, const BRepMeshe
 ```
 
 
-### convert_surface_elements_into_section
-
-```cpp
-tuple convert_surface_elements_into_section(SurfaceMesh2D & surface, Span corner_vertices, Span line_edges)
-```
-
-
-### convert_meshes_into_section
-
-```cpp
-tuple convert_meshes_into_section(Span corners, Span curves, Span surfaces)
-```
-
-
-### convert_surface_into_section_from_attribute
-
-```cpp
-tuple convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, basic_string_view attribute_name)
-```
-
-
- Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values.
-
-**solid** [in] Input solid
-
-**attribute_name** [in] Name of attribute stored on solid polygons
-
-**warning** Attribute should be convertible to float.
-
-### add_sharp_features
-
-```cpp
-tuple add_sharp_features(const Section & model, double max_angle)
-```
-
-
- Creates a new Section from the given one, with new corners on the sharp features of the lines (points where the angle between the edges is higher than the given max_angle).
-
-**model** [in] Input section
-
-**max_angle** [in] Angle between the edges under which their common vertex is considered a sharp feature.
-
-### build_blocks
-
-```cpp
-void build_blocks(BRep & brep)
-```
-
-
 ### convert_meshes_into_brep
 
 ```cpp
@@ -143,6 +94,55 @@ tuple add_sharp_features(const BRep & model, double max_angle)
 vector surface_facets_from_attribute(SolidMesh3D & solid, basic_string_view attribute_name)
 ```
 
+
+### build_blocks
+
+```cpp
+void build_blocks(BRep & brep)
+```
+
+
+### convert_surface_elements_into_section
+
+```cpp
+tuple convert_surface_elements_into_section(SurfaceMesh2D & surface, Span corner_vertices, Span line_edges)
+```
+
+
+### convert_meshes_into_section
+
+```cpp
+tuple convert_meshes_into_section(Span corners, Span curves, Span surfaces)
+```
+
+
+### convert_surface_into_section_from_attribute
+
+```cpp
+tuple convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, basic_string_view attribute_name)
+```
+
+
+ Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values.
+
+**solid** [in] Input solid
+
+**attribute_name** [in] Name of attribute stored on solid polygons
+
+**warning** Attribute should be convertible to float.
+
+### add_sharp_features
+
+```cpp
+tuple add_sharp_features(const Section & model, double max_angle)
+```
+
+
+ Creates a new Section from the given one, with new corners on the sharp features of the lines (points where the angle between the edges is higher than the given max_angle).
+
+**model** [in] Input section
+
+**max_angle** [in] Angle between the edges under which their common vertex is considered a sharp feature.
 
 
 

@@ -27,3 +27,14 @@ const name = words.join('-');
 * [WireframeBuilderFromOneMesh](WireframeBuilderFromOneMesh.md)
 
 
+## Functions
+
+### build_brep_from_brep_element
+
+```cpp
+BRep build_brep_from_brep_element(const Block3D & block, index_t element_id)
+```
+
+
+
+
