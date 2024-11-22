@@ -7,7 +7,7 @@
 OpenGeode is supported and continuously tested on several platforms:
 
 - Windows - Visual Studio 2019
-- Ubuntu 18.04
+- Ubuntu 22.04
 - RHEL 7 / CentOS 7
 
 Pre-compiled binaries on these platforms are also provided. [This page](/guides/get-opengeode-code.md) describes where to download these binaries.
