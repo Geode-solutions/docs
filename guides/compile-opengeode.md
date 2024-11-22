@@ -6,7 +6,7 @@
 
 OpenGeode is supported and continuously tested on several platforms:
 
-- Windows - Visual Studio 2017
+- Windows - Visual Studio 2019
 - Ubuntu 18.04
 - RHEL 7 / CentOS 7
 
