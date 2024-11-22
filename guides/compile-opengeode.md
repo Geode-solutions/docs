@@ -6,9 +6,9 @@
 
 OpenGeode is supported and continuously tested on several platforms:
 
-- Windows - Visual Studio 2019
+- Windows - Visual Studio 2022
 - Ubuntu 22.04
-- RHEL 7 / CentOS 7
+- RHEL 8 / Alma 8
 
 Pre-compiled binaries on these platforms are also provided. [This page](/guides/get-opengeode-code.md) describes where to download these binaries.
 
@@ -22,11 +22,11 @@ OpenGeode comes with a CMake configuration file. You can modify three items:
 - `OPENGEODE_WITH_TESTS`: switch on/off the OpenGeode test environment.
 - `OPENGEODE_WITH_PYTHON`: switch on/off the OpenGeode Python binding (see [this page](/guides/use-opengeode-binding.md) for usage).
 
-Your version of CMake should be at least 3.14.
+Your version of CMake should be at least 3.19.
 
 #### Compiler
 
-On Windows, we recommend using Visual Studio 15 2017. On Linux, you can use gcc/g++ as a compiler. You need a version equal to or higher than 4.8.
+On Windows, we recommend using Visual Studio 17 2022. On Linux, you can use gcc/g++ as a compiler. You need a version supporting C++17.
 
 #### Git
 
@@ -34,7 +34,7 @@ You need git to clone OpenGeode's dependency repositories during configuration.
 
 ## OpenGeode configuration and compilation
 
-The configuration and compilation of OpenGeode are very simple. They can be achieved in a few steps depending on your platform.
+The configuration and compilation of OpenGeode are straightforward. They can be achieved in a few steps depending on your platform.
 
 ### On Windows
 
