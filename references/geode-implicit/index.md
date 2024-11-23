@@ -31,6 +31,7 @@ const name = words.join('-');
 * [EdgeVertex](EdgeVertex.md)
 * [GridScalarFunctionExpliciter2D](GridScalarFunctionExpliciter2D.md)
 * [GridScalarFunctionExpliciter3D](GridScalarFunctionExpliciter3D.md)
+* [HorizonsStack](HorizonsStack.md)
 * [ImplicitExplicitationLibrary](ImplicitExplicitationLibrary.md)
 * [ImplicitIOLibrary](ImplicitIOLibrary.md)
 * [ImplicitImplicitationLibrary](ImplicitImplicitationLibrary.md)
