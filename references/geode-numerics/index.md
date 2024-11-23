@@ -46,6 +46,47 @@ const name = words.join('-');
 
 ## Functions
 
+### smooth_attribute_values
+
+```cpp
+vector smooth_attribute_values(const Mesh & mesh, VariableAttribute<AttributeType> & attribute, double smoothing_factor, Span vertices_to_treat)
+```
+
+
+ Smooth attribute on mesh points using adjacent vertices. Given attribute should have operator++ and operator*(double) available, as well as generic attribute conversion.
+
+**mesh** [in] Input mesh
+
+**attribute** [in] attribute to smooth
+
+**smoothing_factor** [in] factor between 0 and 1 to control how much adjacent vertices affect value: 0 means no smoothing, 1 means value is computed only from adjacent vertices.
+
+**vertices_to_treat** [in] vertices on which to apply the smoothing.
+
+**return** max ratio between initial and smoothed values, computed from genericable values.
+
+### smooth_attribute_values
+
+```cpp
+void smooth_attribute_values(const Mesh & mesh, VariableAttribute<AttributeType> & attribute, double smoothing_factor)
+```
+
+
+### iterative_attribute_values_smoothing
+
+```cpp
+void iterative_attribute_values_smoothing(const Mesh & mesh, VariableAttribute<AttributeType> & attribute, double max_change_ratio, index_t max_iterations)
+```
+
+
+ Smooth attribute on mesh points using adjacent vertices. Given attribute should have operator++ and operator*(double) available. Smoothing will be applied iteratively until change ratio is inferior to given max_change_ratio
+
+**mesh** [in] Input mesh
+
+**attribute** [in] attribute to smooth
+
+**max_change_ratio** [in] maximum factor between values from one iteration to the other. Under it iterations will stop.
+
 ### convert_surface3d_into_2d
 
 ```cpp
