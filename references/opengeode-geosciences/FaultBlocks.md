@@ -101,6 +101,48 @@ protected FaultBlocks<> & operator=(FaultBlocks<> && other)
 ```
 
 
+### create_fault_block
+
+```cpp
+public const uuid & create_fault_block(FaultBlocksBuilderKey key)
+```
+
+
+### create_fault_block
+
+```cpp
+public void create_fault_block(uuid fault_block_id, FaultBlocksBuilderKey key)
+```
+
+
+### delete_fault_block
+
+```cpp
+public void delete_fault_block(const FaultBlock<dimension> & fault_block, FaultBlocksBuilderKey key)
+```
+
+
+### load_fault_blocks
+
+```cpp
+public void load_fault_blocks(basic_string_view directory, FaultBlocksBuilderKey key)
+```
+
+
+### modifiable_fault_blocks
+
+```cpp
+public ModifiableFaultBlockRange modifiable_fault_blocks(FaultBlocksBuilderKey key)
+```
+
+
+### modifiable_fault_block
+
+```cpp
+public FaultBlock<dimension> & modifiable_fault_block(const uuid & id, FaultBlocksBuilderKey key)
+```
+
+
 
 
 # class FaultBlocks

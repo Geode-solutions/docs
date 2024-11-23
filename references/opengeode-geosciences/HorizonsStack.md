@@ -20,6 +20,15 @@ Inherits from StratigraphicRelationships, Horizons<2U>, StratigraphicUnits<2U>, 
 
 
 
+## Members
+
+```cpp
+protected PImpl impl_
+
+```
+
+
+
 # class HorizonsStack
 
 
@@ -30,6 +39,25 @@ Inherits from StratigraphicRelationships, Horizons<2U>, StratigraphicUnits<2U>, 
 ```cpp
 Inherits from StratigraphicRelationships, Horizons<dimension>, StratigraphicUnits<dimension>, Identifier
 ```
+
+
+
+## Members
+
+```cpp
+protected geode::PImpl<Impl> impl_
+
+```
+
+
+
+## Records
+
+HorizonOrderedRange
+
+StratigraphicUnitOrderedRange
+
+Impl
 
 
 
@@ -87,14 +115,28 @@ public basic_string_view native_extension()
 ### top_horizon
 
 ```cpp
-public uuid top_horizon()
+public std::optional<uuid> top_horizon()
 ```
 
 
 ### bottom_horizon
 
 ```cpp
-public uuid bottom_horizon()
+public std::optional<uuid> bottom_horizon()
+```
+
+
+### bottom_to_top_horizons
+
+```cpp
+public HorizonOrderedRange bottom_to_top_horizons()
+```
+
+
+### bottom_to_top_units
+
+```cpp
+public StratigraphicUnitOrderedRange bottom_to_top_units()
 ```
 
 
@@ -112,6 +154,27 @@ public bool is_baselap_of(const Horizon<dimension> & baselap, const Stratigraphi
 ```
 
 
+### compute_top_and_bottom_horizons
+
+```cpp
+public void compute_top_and_bottom_horizons(HorizonsStackBuilderKey key)
+```
+
+
+### set_top_horizon
+
+```cpp
+public void set_top_horizon(const uuid & horizon_id, HorizonsStackBuilderKey key)
+```
+
+
+### set_bottom_horizon
+
+```cpp
+public void set_bottom_horizon(const uuid & horizon_id, HorizonsStackBuilderKey key)
+```
+
+
 
 
 # class HorizonsStack
@@ -119,6 +182,15 @@ public bool is_baselap_of(const Horizon<dimension> & baselap, const Stratigraphi
 
 ```cpp
 Inherits from StratigraphicRelationships, Horizons<3U>, StratigraphicUnits<3U>, Identifier
+```
+
+
+
+## Members
+
+```cpp
+protected PImpl impl_
+
 ```
 
 

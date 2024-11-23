@@ -145,31 +145,31 @@ public InsertedHorizonInfo add_horizon_in_stratigraphic_unit(const Stratigraphic
 ```
 
 
-### add_horizon_above
+### set_horizon_above
 
 ```cpp
-public void add_horizon_above(const Horizon<dimension> & horizon_above, const StratigraphicUnit<dimension> & strati_unit_under)
+public void set_horizon_above(const Horizon<dimension> & horizon_above, const StratigraphicUnit<dimension> & strati_unit_under)
 ```
 
 
-### add_horizon_under
+### set_horizon_under
 
 ```cpp
-public void add_horizon_under(const Horizon<dimension> & horizon_under, const StratigraphicUnit<dimension> & strati_unit_above)
+public void set_horizon_under(const Horizon<dimension> & horizon_under, const StratigraphicUnit<dimension> & strati_unit_above)
 ```
 
 
-### add_erosion_above
+### set_as_erosion_above
 
 ```cpp
-public void add_erosion_above(const Horizon<dimension> & erosion_horizon, const StratigraphicUnit<dimension> & eroded_unit)
+public void set_as_erosion_above(const Horizon<dimension> & erosion_horizon, const StratigraphicUnit<dimension> & eroded_unit)
 ```
 
 
-### add_baselap_under
+### set_as_baselap_under
 
 ```cpp
-public void add_baselap_under(const Horizon<dimension> & baselap_horizon, const StratigraphicUnit<dimension> & baselaping_unit)
+public void set_as_baselap_under(const Horizon<dimension> & baselap_horizon, const StratigraphicUnit<dimension> & baselaping_unit)
 ```
 
 
@@ -184,6 +184,13 @@ public void remove_horizon(const Horizon<dimension> & horizon)
 
 ```cpp
 public void remove_stratigraphic_unit(const StratigraphicUnit<dimension> & stratigraphic_unit)
+```
+
+
+### compute_top_and_bottom_horizons
+
+```cpp
+public void compute_top_and_bottom_horizons()
 ```
 
 

@@ -104,6 +104,74 @@ protected Faults<> & operator=(Faults<> && other)
 ```
 
 
+### create_fault
+
+```cpp
+public const uuid & create_fault(FaultsBuilderKey key)
+```
+
+
+### create_fault
+
+```cpp
+public const uuid & create_fault(typename Fault<dimension>::FAULT_TYPE type, FaultsBuilderKey key)
+```
+
+
+### create_fault
+
+```cpp
+public void create_fault(uuid fault_id, FaultsBuilderKey key)
+```
+
+
+### create_fault
+
+```cpp
+public void create_fault(uuid fault_id, typename Fault<dimension>::FAULT_TYPE type, FaultsBuilderKey key)
+```
+
+
+### delete_fault
+
+```cpp
+public void delete_fault(const Fault<dimension> & fault, FaultsBuilderKey key)
+```
+
+
+### load_faults
+
+```cpp
+public void load_faults(basic_string_view directory, FaultsBuilderKey key)
+```
+
+
+### modifiable_faults
+
+```cpp
+public ModifiableFaultRange modifiable_faults(FaultsBuilderKey key)
+```
+
+
+### modifiable_fault
+
+```cpp
+public Fault<dimension> & modifiable_fault(const uuid & id, FaultsBuilderKey key)
+```
+
+
+### create_fault
+
+```cpp
+public const uuid & create_fault(typename Fault<dimension>::FAULT_TYPE type, FaultsBuilderKey key)
+```
+
+### create_fault
+
+```cpp
+public void create_fault(uuid fault_id, typename Fault<dimension>::FAULT_TYPE type, FaultsBuilderKey key)
+```
+
 
 
 # class Faults

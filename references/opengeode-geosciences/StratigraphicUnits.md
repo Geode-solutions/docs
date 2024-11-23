@@ -107,5 +107,47 @@ protected StratigraphicUnits<dimension> & operator=(StratigraphicUnits<dimension
 ```
 
 
+### create_stratigraphic_unit
+
+```cpp
+public const uuid & create_stratigraphic_unit(StratigraphicUnitsBuilderKey key)
+```
+
+
+### create_stratigraphic_unit
+
+```cpp
+public void create_stratigraphic_unit(uuid stratigraphic_unit_id, StratigraphicUnitsBuilderKey key)
+```
+
+
+### delete_stratigraphic_unit
+
+```cpp
+public void delete_stratigraphic_unit(const StratigraphicUnit<dimension> & stratigraphic_unit, StratigraphicUnitsBuilderKey key)
+```
+
+
+### load_stratigraphic_units
+
+```cpp
+public void load_stratigraphic_units(basic_string_view directory, StratigraphicUnitsBuilderKey key)
+```
+
+
+### modifiable_stratigraphic_units
+
+```cpp
+public ModifiableStratigraphicUnitRange modifiable_stratigraphic_units(StratigraphicUnitsBuilderKey key)
+```
+
+
+### modifiable_stratigraphic_unit
+
+```cpp
+public StratigraphicUnit<dimension> & modifiable_stratigraphic_unit(const uuid & id, StratigraphicUnitsBuilderKey key)
+```
+
+
 
 

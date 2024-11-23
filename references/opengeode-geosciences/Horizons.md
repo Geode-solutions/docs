@@ -107,5 +107,73 @@ protected Horizons<dimension> & operator=(Horizons<dimension> && other)
 ```
 
 
+### create_horizon
+
+```cpp
+public const uuid & create_horizon(HorizonsBuilderKey key)
+```
+
+
+### create_horizon
+
+```cpp
+public const uuid & create_horizon(typename Horizon<dimension>::HORIZON_TYPE type, HorizonsBuilderKey key)
+```
+
+
+### create_horizon
+
+```cpp
+public void create_horizon(uuid horizon_id, HorizonsBuilderKey key)
+```
+
+
+### create_horizon
+
+```cpp
+public void create_horizon(uuid horizon_id, typename Horizon<dimension>::HORIZON_TYPE type, HorizonsBuilderKey key)
+```
+
+
+### delete_horizon
+
+```cpp
+public void delete_horizon(const Horizon<dimension> & horizon, HorizonsBuilderKey key)
+```
+
+
+### load_horizons
+
+```cpp
+public void load_horizons(basic_string_view directory, HorizonsBuilderKey key)
+```
+
+
+### modifiable_horizons
+
+```cpp
+public ModifiableHorizonRange modifiable_horizons(HorizonsBuilderKey key)
+```
+
+
+### modifiable_horizon
+
+```cpp
+public Horizon<dimension> & modifiable_horizon(const uuid & id, HorizonsBuilderKey key)
+```
+
+
+### create_horizon
+
+```cpp
+public const uuid & create_horizon(typename Horizon<dimension>::HORIZON_TYPE type, HorizonsBuilderKey key)
+```
+
+### create_horizon
+
+```cpp
+public void create_horizon(uuid horizon_id, typename Horizon<dimension>::HORIZON_TYPE type, HorizonsBuilderKey key)
+```
+
 
 
