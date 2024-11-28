@@ -102,6 +102,13 @@ void build_blocks(BRep & brep)
 ```
 
 
+### add_breps_block_mapping
+
+```cpp
+void add_breps_block_mapping(const BRep & initial_brep, const BRep & output_brep, geode::ModelGenericMapping & brep_mapping)
+```
+
+
 ### convert_surface_elements_into_section
 
 ```cpp
