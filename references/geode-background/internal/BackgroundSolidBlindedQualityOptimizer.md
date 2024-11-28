@@ -53,7 +53,7 @@ public BackgroundSolidBlindedQualityOptimizer & operator=(BackgroundSolidBlinded
 ### BackgroundSolidBlindedQualityOptimizer
 
 ```cpp
-public void BackgroundSolidBlindedQualityOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidImprovementSimulator & improvement_simulator)
+public void BackgroundSolidBlindedQualityOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 
@@ -61,13 +61,6 @@ public void BackgroundSolidBlindedQualityOptimizer(BackgroundSolidConstraintModi
 
 ```cpp
 public void ~BackgroundSolidBlindedQualityOptimizer()
-```
-
-
-### try_shift_vertex
-
-```cpp
-protected optional try_shift_vertex(const PolyhedronFacetEdge & edge, const class BackgroundSolidConstraintModifier::OrientedEdgeVertices & edge_vertices)
 ```
 
 
@@ -96,13 +89,6 @@ protected optional process_facet_vertex_configuration(const PolyhedronFacet & fa
 
 ```cpp
 protected optional process_edge_edge_configuration(const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, index_t level)
-```
-
-
-### custom_skip_element
-
-```cpp
-protected bool custom_skip_element(const ElementStamp & element_stamp)
 ```
 
 

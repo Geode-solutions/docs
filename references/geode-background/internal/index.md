@@ -40,6 +40,7 @@ const name = words.join('-');
 * [BackgroundSolidInternalDistanceImprovementSimulator](BackgroundSolidInternalDistanceImprovementSimulator.md)
 * [BackgroundSolidInternalDistanceOptimizer](BackgroundSolidInternalDistanceOptimizer.md)
 * [BackgroundSolidModifier](BackgroundSolidModifier.md)
+* [BackgroundSolidOptimizerImprovementSimulator](BackgroundSolidOptimizerImprovementSimulator.md)
 * [BackgroundSolidOptimizer](BackgroundSolidOptimizer.md)
 * [BackgroundSolidOrchestrator](BackgroundSolidOrchestrator.md)
 * [BackgroundSolidPainter](BackgroundSolidPainter.md)
@@ -285,24 +286,87 @@ bool does_swap_edge_improve_metric(const BackgroundSurface & surface, const Poly
 ```
 
 
+### does_split_edge_improve_metric
+
+```cpp
+bool does_split_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, const Point3D & split_point, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_collapse_edge_improve_metric
+
+```cpp
+bool does_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, const local_index_t apex, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_collapse_edge_improve_metric
+
+```cpp
+bool does_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, const Point3D & collapse_point, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_swap_edge_improve_metric
+
+```cpp
+bool does_swap_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_swap_facet_improve_metric
+
+```cpp
+bool does_swap_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_split_collapse_facet_improve_metric
+
+```cpp
+bool does_split_collapse_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_split_collapse_facet_improve_metric
+
+```cpp
+bool does_split_collapse_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
+### does_split_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_split_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
+```
+
+
 ### optimize_background_solid_elements
 
 ```cpp
-void optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
+void optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
 ```
 
 
 ### shift_optimize_background_solid_elements
 
 ```cpp
-void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
+void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
 ```
 
 
 ### blinded_quality_optimize_background_solid_elements
 
 ```cpp
-void blinded_quality_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
+void blinded_quality_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
 ```
 
 
@@ -443,62 +507,6 @@ bool is_swap_facet_allowed_by_constraints(const ModifiableBackgroundSolid & soli
 
 ```cpp
 vector epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, Span tetrahedra)
-```
-
-
-### epsilon_optimize_background_solid_elements
-
-```cpp
-vector epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element)
-```
-
-
-### does_collapse_edge_improve_metric
-
-```cpp
-bool does_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, const Point3D & collapse_point, const BackgroundSolidImprovementSimulator & improvement_simulator)
-```
-
-
-### does_swap_edge_improve_metric
-
-```cpp
-bool does_swap_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const BackgroundSolidImprovementSimulator & improvement_simulator)
-```
-
-
-### does_swap_facet_improve_metric
-
-```cpp
-bool does_swap_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const BackgroundSolidImprovementSimulator & improvement_simulator)
-```
-
-
-### does_split_collapse_edge_improve_metric
-
-```cpp
-bool does_split_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
-```
-
-
-### does_split_collapse_facet_improve_metric
-
-```cpp
-bool does_split_collapse_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const BackgroundSolidImprovementSimulator & improvement_simulator)
-```
-
-
-### does_split_collapse_facet_improve_metric
-
-```cpp
-bool does_split_collapse_facet_improve_metric(const BackgroundSolid & solid, const PolyhedronFacet & facet, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
-```
-
-
-### does_split_split_collapse_edge_improve_metric
-
-```cpp
-bool does_split_split_collapse_edge_improve_metric(const BackgroundSolid & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const BackgroundSolidImprovementSimulator & improvement_simulator)
 ```
 
 

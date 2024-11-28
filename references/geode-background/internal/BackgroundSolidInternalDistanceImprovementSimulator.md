@@ -43,5 +43,19 @@ public double metric(const Tetrahedron & tetrahedron)
 ```
 
 
+### current_distances
+
+```cpp
+public const InternalDistances & current_distances()
+```
+
+
+### set_current_distances
+
+```cpp
+protected index_t set_current_distances(InternalDistances && current_distances)
+```
+
+
 
 

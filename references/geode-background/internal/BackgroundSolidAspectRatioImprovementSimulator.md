@@ -15,12 +15,26 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from BackgroundSolidImprovementSimulator
+Inherits from BackgroundSolidInternalDistanceImprovementSimulator
 ```
 
 
 
 ## Functions
+
+### BackgroundSolidAspectRatioImprovementSimulator
+
+```cpp
+public void BackgroundSolidAspectRatioImprovementSimulator(const BackgroundSolid & background, double aspect_ratio_threshold)
+```
+
+
+### ~BackgroundSolidAspectRatioImprovementSimulator
+
+```cpp
+public void ~BackgroundSolidAspectRatioImprovementSimulator()
+```
+
 
 ### worst
 
@@ -40,6 +54,13 @@ public bool is_better_after_simulation(const TetrahedraMetrics & tetrahedra_metr
 
 ```cpp
 public double metric(const Tetrahedron & tetrahedron)
+```
+
+
+### require_improvement
+
+```cpp
+public bool require_improvement(const BackgroundSolid & background, index_t tetrahedron_id)
 ```
 
 

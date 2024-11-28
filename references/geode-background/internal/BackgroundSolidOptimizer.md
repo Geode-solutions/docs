@@ -53,7 +53,7 @@ public BackgroundSolidOptimizer & operator=(BackgroundSolidOptimizer && )
 ### BackgroundSolidOptimizer
 
 ```cpp
-public void BackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidImprovementSimulator & improvement_simulator)
+public void BackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 
@@ -109,7 +109,7 @@ protected optional process_edge_edge_configuration(const PolyhedronFacetEdge & e
 ### try_shift_vertex
 
 ```cpp
-protected optional try_shift_vertex(const PolyhedronFacetEdge & edge, const class BackgroundSolidConstraintModifier::OrientedEdgeVertices & edge_vertices)
+protected optional try_shift_vertex(const PolyhedronFacetEdge & edge, const local_index_t apex)
 ```
 
 

@@ -72,7 +72,7 @@ protected void insert_vertices(Span elements)
 ### skip_element
 
 ```cpp
-protected bool skip_element(const ElementStamp & )
+protected bool skip_element(const Element & )
 ```
 
 
@@ -93,7 +93,7 @@ protected index_t nb_levels()
 ### process_element
 
 ```cpp
-protected ProcessElementResult process_element(const ElementStamp & element_stamp)
+protected ProcessElementResult process_element(const Element & element)
 ```
 
 

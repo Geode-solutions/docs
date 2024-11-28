@@ -49,20 +49,6 @@ Options
 ### InternalDistance
 
 ```cpp
-public void InternalDistance(const InternalDistance & )
-```
-
-
-### operator=
-
-```cpp
-public InternalDistance & operator=(const InternalDistance & )
-```
-
-
-### InternalDistance
-
-```cpp
 public void InternalDistance()
 ```
 
@@ -113,6 +99,20 @@ public void InternalDistance(InternalDistance && other)
 
 ```cpp
 public InternalDistance & operator=(InternalDistance && other)
+```
+
+
+### InternalDistance
+
+```cpp
+public void InternalDistance(const InternalDistance & other)
+```
+
+
+### operator=
+
+```cpp
+public InternalDistance & operator=(const InternalDistance & other)
 ```
 
 

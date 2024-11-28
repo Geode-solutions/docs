@@ -60,14 +60,7 @@ public void ~BackgroundSolidInternalDistanceOptimizer()
 ### BackgroundSolidInternalDistanceOptimizer
 
 ```cpp
-protected void BackgroundSolidInternalDistanceOptimizer(BackgroundSolidConstraintModifier & constraint_modifier)
-```
-
-
-### compute_tetrahedron_internal_distances
-
-```cpp
-protected bool compute_tetrahedron_internal_distances(index_t tetrahedron_id, const struct InternalDistance::Options & options)
+protected void BackgroundSolidInternalDistanceOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

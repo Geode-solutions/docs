@@ -29,6 +29,12 @@ public void ~BackgroundSolidImprovementSimulator()
 ```
 
 
+### require_improvement
+
+```cpp
+public bool require_improvement(const BackgroundSolid & background, index_t tetrahedron_id)
+```
+
 ### worst
 
 ```cpp
