@@ -17,34 +17,25 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public bool repair_lines
+public const Metric3D & metric
 
 ```
 
 ```cpp
-public bool relax_lines
+public optional sharp_feature_angle
 
 ```
+
+
+
+## Functions
+
+### BRepRemeshOptions
 
 ```cpp
-public bool repair_surfaces
-
+public void BRepRemeshOptions(const Metric3D & metric_in)
 ```
 
-```cpp
-public bool relax_surfaces
-
-```
-
-```cpp
-public bool relax_blocks
-
-```
-
-```cpp
-public bool mesh
-
-```
 
 
 

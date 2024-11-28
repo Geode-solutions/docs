@@ -25,6 +25,7 @@ const name = words.join('-');
 
 * [BRepElementsAfterCollapseEdge](BRepElementsAfterCollapseEdge.md)
 * [BRepMetricConstraints](BRepMetricConstraints.md)
+* [BRepRemeshOptions](BRepRemeshOptions.md)
 * [GeometricSurfacePath](GeometricSurfacePath.md)
 * [PolygonEdge](PolygonEdge.md)
 * [RemeshingData](RemeshingData.md)
@@ -324,14 +325,14 @@ void brep_simplex_constrained_mesh(BRep & brep)
 ### brep_simplex_remesh
 
 ```cpp
-tuple brep_simplex_remesh(BRep && brep, const Metric3D & metric)
+tuple brep_simplex_remesh(BRep && brep, const BRepRemeshOptions & options)
 ```
 
 
 ### brep_volumic_simplex_remesh
 
 ```cpp
-void brep_volumic_simplex_remesh(BRep & brep, const Metric3D & metric)
+void brep_volumic_simplex_remesh(BRep & brep, const BRepRemeshOptions & options)
 ```
 
 

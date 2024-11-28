@@ -17,7 +17,7 @@ const name = words.join('-');
 
 ## Records
 
-* [BRepRemeshOptions](BRepRemeshOptions.md)
+* [BRepRemeshInternalOptions](BRepRemeshInternalOptions.md)
 * [SectionRemeshOptions](SectionRemeshOptions.md)
 
 
@@ -33,7 +33,7 @@ tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionR
 ### simplex_remesh
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const Metric3D & metric, const BRepRemeshOptions & options)
+tuple simplex_remesh(BRep && brep, const BRepRemeshOptions & options, const BRepRemeshInternalOptions & internal_options)
 ```
 
 
