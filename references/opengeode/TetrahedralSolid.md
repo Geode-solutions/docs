@@ -72,6 +72,13 @@ public PolyhedronEdgesVertices polyhedron_edges_vertices(index_t polyhedron)
 ```
 
 
+### polyhedron_edges
+
+```cpp
+public std::array<PolyhedronFacetEdge, 6> polyhedron_edges(index_t polyhedron)
+```
+
+
 ### polyhedron_facets_vertices
 
 ```cpp

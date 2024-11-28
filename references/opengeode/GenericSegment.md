@@ -122,6 +122,13 @@ public bool is_degenerated()
 ```
 
 
+### string
+
+```cpp
+public basic_string string()
+```
+
+
 
 
 # class GenericSegment
