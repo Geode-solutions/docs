@@ -22,6 +22,11 @@ public InspectionIssues blocks_not_meshed
 ```
 
 ```cpp
+public InspectionIssues wrong_block_boundary_surface
+
+```
+
+```cpp
 public InspectionIssuesMap blocks_not_linked_to_a_unique_vertex
 
 ```
