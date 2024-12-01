@@ -98,13 +98,6 @@ public const MeshImpl & mesh_type()
 ```
 
 
-### modifiable_mesh
-
-```cpp
-public TypedMesh & modifiable_mesh(BlocksKey )
-```
-
-
 ### Block
 
 ```cpp
@@ -136,6 +129,13 @@ public void set_mesh(std::unique_ptr<Mesh> mesh, BlocksBuilderKey key)
 ### modifiable_mesh
 
 ```cpp
+public TypedMesh & modifiable_mesh(BlocksKey )
+```
+
+
+### modifiable_mesh
+
+```cpp
 public TypedMesh & modifiable_mesh(BlocksBuilderKey )
 ```
 
@@ -144,6 +144,13 @@ public TypedMesh & modifiable_mesh(BlocksBuilderKey )
 
 ```cpp
 public void set_block_name(basic_string_view name, BlocksBuilderKey key)
+```
+
+
+### steal_mesh
+
+```cpp
+public std::unique_ptr<Mesh> steal_mesh(BlocksBuilderKey key)
 ```
 
 

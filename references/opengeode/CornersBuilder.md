@@ -97,6 +97,13 @@ protected PointSet<dimension> & modifiable_corner_mesh(const uuid & id)
 ```
 
 
+### steal_corner_mesh
+
+```cpp
+protected std::unique_ptr<PointSet<dimension> > steal_corner_mesh(const uuid & id)
+```
+
+
 
 
 # class CornersBuilder

@@ -100,13 +100,6 @@ public const Mesh & mesh()
 ```
 
 
-### modifiable_mesh
-
-```cpp
-public Mesh & modifiable_mesh(CornersKey key)
-```
-
-
 ### mesh_type
 
 ```cpp
@@ -152,7 +145,21 @@ public void set_corner_name(basic_string_view name, CornersBuilderKey key)
 ### modifiable_mesh
 
 ```cpp
+public Mesh & modifiable_mesh(CornersKey key)
+```
+
+
+### modifiable_mesh
+
+```cpp
 public Mesh & modifiable_mesh(CornersBuilderKey key)
+```
+
+
+### steal_mesh
+
+```cpp
+public std::unique_ptr<Mesh> steal_mesh(CornersBuilderKey key)
 ```
 
 

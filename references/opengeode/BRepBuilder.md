@@ -61,6 +61,13 @@ public ModelMapping copy(const BRep & brep)
 ```
 
 
+### replace_components_meshes_by_others
+
+```cpp
+public void replace_components_meshes_by_others(BRep && other, const ModelCopyMapping & mapping)
+```
+
+
 ### copy_components
 
 ```cpp

@@ -29,6 +29,13 @@ public void map(const T1 & in, const T2 & out)
 ```
 
 
+### unmap
+
+```cpp
+public void unmap(const T1 & in, const T2 & out)
+```
+
+
 ### erase_in
 
 ```cpp

@@ -56,5 +56,12 @@ public index_t nb_colocated_points()
 ```
 
 
+### points_mapping
+
+```cpp
+public GenericMapping points_mapping()
+```
+
+
 
 

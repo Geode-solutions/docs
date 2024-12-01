@@ -44,6 +44,13 @@ public Mesh & modifiable_mesh()
 ```
 
 
+### steal_mesh
+
+```cpp
+public std::unique_ptr<Mesh> steal_mesh()
+```
+
+
 ### mesh_type
 
 ```cpp

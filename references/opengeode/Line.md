@@ -98,13 +98,6 @@ public const MeshImpl & mesh_type()
 ```
 
 
-### modifiable_mesh
-
-```cpp
-public Mesh & modifiable_mesh(LinesKey key)
-```
-
-
 ### Line
 
 ```cpp
@@ -143,7 +136,21 @@ public void set_line_name(basic_string_view name, LinesBuilderKey key)
 ### modifiable_mesh
 
 ```cpp
+public Mesh & modifiable_mesh(LinesKey key)
+```
+
+
+### modifiable_mesh
+
+```cpp
 public Mesh & modifiable_mesh(LinesBuilderKey key)
+```
+
+
+### steal_mesh
+
+```cpp
+public std::unique_ptr<Mesh> steal_mesh(LinesBuilderKey key)
 ```
 
 

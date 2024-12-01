@@ -163,6 +163,13 @@ public std::optional<local_index_t> vertex_in_polygon(index_t polygon_id, index_
 
 **return** Index in [0,nb_polygon_vertices()[ if polygon is around the given vertex
 
+### polygon
+
+```cpp
+public Polygon<dimension> polygon(index_t polygon_id)
+```
+
+
 ### polygon_edge_vertex
 
 ```cpp

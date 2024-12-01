@@ -103,5 +103,12 @@ protected SurfaceMesh<dimension> & modifiable_surface_mesh(const uuid & id)
 ```
 
 
+### steal_surface_mesh
+
+```cpp
+protected std::unique_ptr<SurfaceMesh<dimension> > steal_surface_mesh(const uuid & id)
+```
+
+
 
 

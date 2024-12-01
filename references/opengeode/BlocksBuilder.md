@@ -100,5 +100,12 @@ protected SolidMesh<dimension> & modifiable_block_mesh(const uuid & id)
 ```
 
 
+### steal_block_mesh
+
+```cpp
+protected std::unique_ptr<SolidMesh<dimension> > steal_block_mesh(const uuid & id)
+```
+
+
 
 

@@ -156,5 +156,12 @@ public TypedMesh & modifiable_mesh(SurfacesBuilderKey )
 ```
 
 
+### steal_mesh
+
+```cpp
+public std::unique_ptr<Mesh> steal_mesh(SurfacesBuilderKey key)
+```
+
+
 
 
