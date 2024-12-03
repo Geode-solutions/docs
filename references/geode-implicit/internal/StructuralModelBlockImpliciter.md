@@ -65,6 +65,13 @@ public void add_horizon_surface_data(const Horizon3D & horizon, const SurfaceMes
 ```
 
 
+### compute_target_grid_length
+
+```cpp
+public double compute_target_grid_length()
+```
+
+
 ### compute_implicit_function
 
 ```cpp
@@ -82,7 +89,7 @@ public void interpolate_function_on_mesh()
 ### create_mesh_with_function_in_block
 
 ```cpp
-public void create_mesh_with_function_in_block(ImplicitStructuralModelBuilder & builder)
+public void create_mesh_with_function_in_block(ImplicitStructuralModelBuilder & builder, Span values_to_densify_around)
 ```
 
 
