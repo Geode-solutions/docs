@@ -101,6 +101,20 @@ public index_t cell_duplicate_index(const CellIndices & index, local_index_t cel
 public InlinedVector cell_duplicate_index(const CellIndices & index, const Point<dimension> & position)
 ```
 
+### isovalue_goes_through_cell_duplicate
+
+```cpp
+public bool isovalue_goes_through_cell_duplicate(const CellIndices & cell_id, index_t cell_duplicate_index, double isovalue)
+```
+
+
+### isovalue_goes_through_cell
+
+```cpp
+public bool isovalue_goes_through_cell(const CellIndices & cell_id, double isovalue)
+```
+
+
 ### CutGrid
 
 ```cpp

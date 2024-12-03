@@ -134,6 +134,13 @@ public double get_node_value(index_t value_node_id)
 ```
 
 
+### isovalue_goes_through_cell
+
+```cpp
+public bool isovalue_goes_through_cell(const CellIndices & cell_id, double isovalue)
+```
+
+
 ### remove_all_value_nodes_but_computation_nodes
 
 ```cpp
