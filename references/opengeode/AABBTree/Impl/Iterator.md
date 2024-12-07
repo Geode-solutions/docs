@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public index_t middle_box
+public index_t element_middle
 
 ```
 
