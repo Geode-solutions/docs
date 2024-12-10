@@ -1771,120 +1771,6 @@ void register_model_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_edged_curve_missing_files
-
-```cpp
-typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
-```
-
-
-### is_edged_curve_loadable
-
-```cpp
-bool is_edged_curve_loadable(basic_string_view filename)
-```
-
-
-### load_graph
-
-```cpp
-unique_ptr load_graph(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an Graph. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_graph
-
-```cpp
-unique_ptr load_graph(basic_string_view filename)
-```
-
-
- API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_graph_missing_files
-
-```cpp
-MissingFiles check_graph_missing_files(basic_string_view filename)
-```
-
-
-### is_graph_loadable
-
-```cpp
-bool is_graph_loadable(basic_string_view filename)
-```
-
-
-### load_hybrid_solid
-
-```cpp
-std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_hybrid_solid
-
-```cpp
-std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view filename)
-```
-
-
- API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_hybrid_solid_missing_files
-
-```cpp
-typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(basic_string_view filename)
-```
-
-
-### is_hybrid_solid_loadable
-
-```cpp
-bool is_hybrid_solid_loadable(basic_string_view filename)
-```
-
-
 ### load_brep
 
 ```cpp
@@ -1912,17 +1798,6 @@ bool is_brep_loadable(basic_string_view filename)
 ```
 
 
-### load_light_regular_grid
-
-```cpp
-LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
-```
-
-
- API function for loading an LightRegularGrid. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
 ### save_brep
 
 ```cpp
@@ -1935,20 +1810,6 @@ vector save_brep(const BRep & brep, basic_string_view filename)
 **brep** [in] BRep to save.
 
 **filename** [in] Path to the file where save the brep.
-
-### check_light_regular_grid_missing_files
-
-```cpp
-typename LightRegularGridInput<dimension>::MissingFiles check_light_regular_grid_missing_files(basic_string_view filename)
-```
-
-
-### is_light_regular_grid_loadable
-
-```cpp
-bool is_light_regular_grid_loadable(basic_string_view filename)
-```
-
 
 ### is_brep_saveable
 
@@ -2519,6 +2380,145 @@ std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(co
 
 ```cpp
 std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
+```
+
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_edged_curve_missing_files
+
+```cpp
+typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
+```
+
+
+### is_edged_curve_loadable
+
+```cpp
+bool is_edged_curve_loadable(basic_string_view filename)
+```
+
+
+### load_graph
+
+```cpp
+unique_ptr load_graph(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an Graph. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_graph
+
+```cpp
+unique_ptr load_graph(basic_string_view filename)
+```
+
+
+ API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_graph_missing_files
+
+```cpp
+MissingFiles check_graph_missing_files(basic_string_view filename)
+```
+
+
+### is_graph_loadable
+
+```cpp
+bool is_graph_loadable(basic_string_view filename)
+```
+
+
+### load_hybrid_solid
+
+```cpp
+std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_hybrid_solid
+
+```cpp
+std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view filename)
+```
+
+
+ API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_hybrid_solid_missing_files
+
+```cpp
+typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(basic_string_view filename)
+```
+
+
+### is_hybrid_solid_loadable
+
+```cpp
+bool is_hybrid_solid_loadable(basic_string_view filename)
+```
+
+
+### load_light_regular_grid
+
+```cpp
+LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
+```
+
+
+ API function for loading an LightRegularGrid. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### check_light_regular_grid_missing_files
+
+```cpp
+typename LightRegularGridInput<dimension>::MissingFiles check_light_regular_grid_missing_files(basic_string_view filename)
+```
+
+
+### is_light_regular_grid_loadable
+
+```cpp
+bool is_light_regular_grid_loadable(basic_string_view filename)
 ```
 
 
@@ -3109,41 +3109,6 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### find_intersections_with_boundaries
-
-```cpp
-flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
-```
-
-
-### is_point_inside_block
-
-```cpp
-bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
-```
-
-
-### block_containing_point
-
-```cpp
-optional block_containing_point(const BRep & brep, const Point3D & point)
-```
-
-
 ### convert_surface_mesh
 
 ```cpp
@@ -3309,6 +3274,41 @@ FixedArray brep_active_coordinate_reference_systems(const BRep & brep)
 
 ```cpp
 FixedArray section_active_coordinate_reference_systems(const Section & section)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### find_intersections_with_boundaries
+
+```cpp
+flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
+```
+
+
+### is_point_inside_block
+
+```cpp
+bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
+```
+
+
+### block_containing_point
+
+```cpp
+optional block_containing_point(const BRep & brep, const Point3D & point)
 ```
 
 
