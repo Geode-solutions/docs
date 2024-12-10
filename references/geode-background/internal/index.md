@@ -60,6 +60,7 @@ const name = words.join('-');
 * [BlockElement](BlockElement.md)
 * [BlocksAllowedByConstraints](BlocksAllowedByConstraints.md)
 * [EdgeMacroInfoConfig](EdgeMacroInfoConfig.md)
+* [ElementInsertionInfo](ElementInsertionInfo.md)
 * [ElementSearchBuilder](ElementSearchBuilder.md)
 * [ElementSearch](ElementSearch.md)
 * [FourPointsInternalDistance](FourPointsInternalDistance.md)

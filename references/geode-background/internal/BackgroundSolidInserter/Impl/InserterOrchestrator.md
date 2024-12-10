@@ -50,6 +50,13 @@ public InserterOrchestrator & operator=(InserterOrchestrator && )
 ```
 
 
+### output_insertion_info
+
+```cpp
+public ElementInsertionInfo && output_insertion_info()
+```
+
+
 ### InserterOrchestrator
 
 ```cpp
@@ -87,6 +94,13 @@ protected bool skip_on_infinite_loop()
 
 ```cpp
 protected index_t nb_levels()
+```
+
+
+### insertion_info
+
+```cpp
+protected ElementInsertionInfo & insertion_info()
 ```
 
 

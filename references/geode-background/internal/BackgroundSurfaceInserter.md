@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BackgroundSurfaceInserter
 
 ```cpp
-public void BackgroundSurfaceInserter(BackgroundSurface & background)
+public void BackgroundSurfaceInserter(ModifiableBackgroundSurface & surface, BackgroundSurfaceBuilder & builder)
 ```
 
 
@@ -33,42 +33,42 @@ public void ~BackgroundSurfaceInserter()
 ### insert_curve
 
 ```cpp
-public void insert_curve(const EdgedCurve2D & mesh)
+public ElementInsertionInfo insert_curve(const EdgedCurve2D & mesh)
 ```
 
 
 ### insert_curve_edges
 
 ```cpp
-public void insert_curve_edges(const EdgedCurve2D & mesh, Span edges_ids)
+public ElementInsertionInfo insert_curve_edges(const EdgedCurve2D & mesh, Span edges_ids)
 ```
 
 
 ### insert_point_set
 
 ```cpp
-public void insert_point_set(const PointSet2D & mesh)
+public ElementInsertionInfo insert_point_set(const PointSet2D & mesh)
 ```
 
 
 ### insert_point_set_points
 
 ```cpp
-public void insert_point_set_points(const PointSet2D & mesh, Span vertex_ids)
+public ElementInsertionInfo insert_point_set_points(const PointSet2D & mesh, Span vertex_ids)
 ```
 
 
 ### insert_surface
 
 ```cpp
-public void insert_surface(const TriangulatedSurface2D & mesh)
+public ElementInsertionInfo insert_surface(const TriangulatedSurface2D & mesh)
 ```
 
 
 ### insert_surface_triangles
 
 ```cpp
-public void insert_surface_triangles(const TriangulatedSurface2D & mesh, Span triangle_ids)
+public ElementInsertionInfo insert_surface_triangles(const TriangulatedSurface2D & mesh, Span triangle_ids)
 ```
 
 
