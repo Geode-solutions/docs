@@ -120,7 +120,7 @@ protected void compute_remaining_adjacencies()
 ### fill_remaining
 
 ```cpp
-protected FixedArray fill_remaining(RemainingSurface<dimension> & remaining, Span remaining_mapping)
+protected std::tuple<std::unique_ptr<TriangulatedSurface<dimension> >, absl::FixedArray<index_t> > fill_remaining(RemainingSurface<dimension> & remaining, Span remaining_mapping)
 ```
 
 
