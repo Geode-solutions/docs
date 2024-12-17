@@ -1320,6 +1320,72 @@ void register_geode_mesh_output()
 ```
 
 
+### segment_segment_intersection_detection
+
+```cpp
+pair segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+ Detect if there is an intersection between two 2D segments
+
+**return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
+
+### colinear_segment_segment_intersection_detection
+
+```cpp
+pair colinear_segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+ Detect the configuration between two 2D colinear segments
+
+**return** the position of the intersection on the two segments. Returns parallel-pallel if there is segment overlap
+
+### segment_line_intersection_detection
+
+```cpp
+POSITION segment_line_intersection_detection(const Segment2D & segment, const InfiniteLine2D & line)
+```
+
+
+ Detect if there is an intersection between a line and a segment
+
+**return** the position of the intersection on the segment. Returns outside if there is no intersection or all points are colinear
+
+### line_triangle_intersection_detection
+
+```cpp
+POSITION line_triangle_intersection_detection(const InfiniteLine3D & line, const Triangle3D & triangle)
+```
+
+
+ Detect if there is an intersection between a line and a triangle
+
+**return** the position of the intersection on the triangle. Returns outside if there is no intersection or the line is coplanar with the triangle
+
+### segment_triangle_intersection_detection
+
+```cpp
+pair segment_triangle_intersection_detection(const Segment3D & segment, const Triangle3D & triangle)
+```
+
+
+ Detect if there is an intersection between a segment and a triangle
+
+**return** the position of the intersection on the segment and on the triangle. Returns outside if there is no intersection or the segment is coplanar with the triangle
+
+### segment_plane_intersection_detection
+
+```cpp
+POSITION segment_plane_intersection_detection(const Segment3D & segment, const Plane & plane)
+```
+
+
+ Detect if there is an intersection between a segment and a plane
+
+**return** the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane
+
 ### save_edged_curve
 
 ```cpp
@@ -1397,6 +1463,20 @@ vector save_point_set(const PointSet<dimension> & point_set, basic_string_view f
 
 ```cpp
 bool is_point_set_saveable(const PointSet<dimension> & point_set, basic_string_view filename)
+```
+
+
+### repair_polygon_orientations
+
+```cpp
+void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
+```
+
+
+### repair_polygon_orientations
+
+```cpp
+void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
 ```
 
 
@@ -1669,86 +1749,6 @@ typename TriangulatedSurfaceInput<dimension>::MissingFiles check_triangulated_su
 
 ```cpp
 bool is_triangulated_surface_loadable(basic_string_view filename)
-```
-
-
-### segment_segment_intersection_detection
-
-```cpp
-pair segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
- Detect if there is an intersection between two 2D segments
-
-**return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
-
-### colinear_segment_segment_intersection_detection
-
-```cpp
-pair colinear_segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
- Detect the configuration between two 2D colinear segments
-
-**return** the position of the intersection on the two segments. Returns parallel-pallel if there is segment overlap
-
-### segment_line_intersection_detection
-
-```cpp
-POSITION segment_line_intersection_detection(const Segment2D & segment, const InfiniteLine2D & line)
-```
-
-
- Detect if there is an intersection between a line and a segment
-
-**return** the position of the intersection on the segment. Returns outside if there is no intersection or all points are colinear
-
-### line_triangle_intersection_detection
-
-```cpp
-POSITION line_triangle_intersection_detection(const InfiniteLine3D & line, const Triangle3D & triangle)
-```
-
-
- Detect if there is an intersection between a line and a triangle
-
-**return** the position of the intersection on the triangle. Returns outside if there is no intersection or the line is coplanar with the triangle
-
-### segment_triangle_intersection_detection
-
-```cpp
-pair segment_triangle_intersection_detection(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Detect if there is an intersection between a segment and a triangle
-
-**return** the position of the intersection on the segment and on the triangle. Returns outside if there is no intersection or the segment is coplanar with the triangle
-
-### segment_plane_intersection_detection
-
-```cpp
-POSITION segment_plane_intersection_detection(const Segment3D & segment, const Plane & plane)
-```
-
-
- Detect if there is an intersection between a segment and a plane
-
-**return** the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane
-
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
-```
-
-
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
 ```
 
 
@@ -2264,6 +2264,44 @@ BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptio
 ```
 
 
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_edged_curve_missing_files
+
+```cpp
+typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
+```
+
+
+### is_edged_curve_loadable
+
+```cpp
+bool is_edged_curve_loadable(basic_string_view filename)
+```
+
+
 ### convert_edged_curve3d_into_2d
 
 ```cpp
@@ -2387,44 +2425,6 @@ std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(co
 
 ```cpp
 std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
-```
-
-
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_edged_curve_missing_files
-
-```cpp
-typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
-```
-
-
-### is_edged_curve_loadable
-
-```cpp
-bool is_edged_curve_loadable(basic_string_view filename)
 ```
 
 
