@@ -37,5 +37,12 @@ public void MacroEdgeBackgroundVertices()
 ```
 
 
+### update_vertices
+
+```cpp
+public void update_vertices(const BackgroundSolidModifier & modifier)
+```
+
+
 
 

@@ -113,5 +113,12 @@ public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 ```
 
 
+### macro_edge_path
+
+```cpp
+public optional macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
+```
+
+
 
 

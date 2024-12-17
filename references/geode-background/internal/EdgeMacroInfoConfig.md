@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public geode::index_t edge_id
+public index_t edge_id
 
 ```
 
