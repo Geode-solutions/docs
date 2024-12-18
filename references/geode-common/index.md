@@ -221,6 +221,13 @@ void update_multi_mappings(std::vector<geode::MultiMapping<T> > & multi_mappings
 ```
 
 
+### new_indices
+
+```cpp
+vector new_indices(absl::Span<const MappingType> mappings)
+```
+
+
 ### dummy_triangle
 
 ```cpp
