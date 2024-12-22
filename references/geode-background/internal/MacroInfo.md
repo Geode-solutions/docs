@@ -147,6 +147,13 @@ protected void MacroInfo<dimension>(MacroInfo<dimension> && other)
 ```
 
 
+### operator=
+
+```cpp
+protected MacroInfo<dimension> & operator=(MacroInfo<dimension> && other)
+```
+
+
 ### initialize_macro_info_data_base
 
 ```cpp

@@ -99,6 +99,13 @@ protected void MacroInfo3D(MacroInfo3D && other)
 ```
 
 
+### operator=
+
+```cpp
+protected MacroInfo3D & operator=(MacroInfo3D && other)
+```
+
+
 ### initialize_macro_info_solid_data_base
 
 ```cpp

@@ -43,6 +43,13 @@ public void BackgroundSolid(BackgroundSolid && other)
 ```
 
 
+### operator=
+
+```cpp
+public BackgroundSolid & operator=(BackgroundSolid && other)
+```
+
+
 ### ~BackgroundSolid
 
 ```cpp
@@ -117,6 +124,13 @@ public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 
 ```cpp
 public optional macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
+```
+
+
+### macro_facet_patch
+
+```cpp
+public optional macro_facet_patch(Span boundary_edges, const MeshPolygon & macro_facet)
 ```
 
 

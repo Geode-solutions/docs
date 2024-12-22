@@ -11,29 +11,34 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BackgroundBRepInserter
+# struct ScalarFunctionIsovalue
+
+
+## Members
+
+```cpp
+public uuid id
+
+```
+
+```cpp
+public shared_ptr scalar_function
+
+```
+
+```cpp
+public double isovalue
+
+```
+
 
 
 ## Functions
 
-### BackgroundBRepInserter
+### ScalarFunctionIsovalue
 
 ```cpp
-public void BackgroundBRepInserter(ModifiableObject background_brep, BackgroundBRepBuilder & builder)
-```
-
-
-### ~BackgroundBRepInserter
-
-```cpp
-public void ~BackgroundBRepInserter()
-```
-
-
-### insert_scalar_function_isovalues
-
-```cpp
-public flat_hash_map insert_scalar_function_isovalues(basic_string_view function_name, Span isovalues)
+public void ScalarFunctionIsovalue(const TetrahedralSolid3D & background_solid, basic_string_view function_name, double function_isovalue)
 ```
 
 
