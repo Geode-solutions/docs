@@ -70,6 +70,13 @@ tuple extract_implicit_cross_section_from_axis(const ImplicitStructuralModel & m
 ```
 
 
+### extract_implicit_cross_section_from_plane
+
+```cpp
+tuple extract_implicit_cross_section_from_plane(const ImplicitStructuralModel & model, const Plane & section_plane)
+```
+
+
 ### extract_stratigraphic_section_from_axis
 
 ```cpp
