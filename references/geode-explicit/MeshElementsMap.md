@@ -51,6 +51,20 @@ public index_t nb_pairs()
 ```
 
 
+### nb_elements
+
+```cpp
+public index_t nb_elements()
+```
+
+
+### empty
+
+```cpp
+public bool empty()
+```
+
+
 ### graph
 
 ```cpp
@@ -62,13 +76,6 @@ public const Graph & graph()
 
 ```cpp
 public array pair(index_t pair_id)
-```
-
-
-### contains_elements
-
-```cpp
-public bool contains_elements()
 ```
 
 
