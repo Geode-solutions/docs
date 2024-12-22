@@ -31,5 +31,20 @@ public flat_hash_map blocks
 
 ```
 
+```cpp
+public flat_hash_map surface_edges
+
+```
+
+```cpp
+public flat_hash_map block_edges
+
+```
+
+```cpp
+public flat_hash_map block_facets
+
+```
+
 
 

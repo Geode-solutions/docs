@@ -100,6 +100,13 @@ public flat_hash_map clean_triangles_surfaces()
 ```
 
 
+### clean_surface_edges
+
+```cpp
+public flat_hash_map clean_surface_edges()
+```
+
+
 ### clean_vertices_surfaces
 
 ```cpp

@@ -284,6 +284,13 @@ public flat_hash_map clean_triangles_surfaces()
 ```
 
 
+### clean_surface_edges
+
+```cpp
+public flat_hash_map clean_surface_edges()
+```
+
+
 ### clean_vertices_surfaces
 
 ```cpp
@@ -309,6 +316,20 @@ public flat_hash_map clean_vertices_lines()
 
 ```cpp
 public flat_hash_map clean_tetrahedra_blocks()
+```
+
+
+### clean_block_edges
+
+```cpp
+public flat_hash_map clean_block_edges()
+```
+
+
+### clean_block_facets
+
+```cpp
+public flat_hash_map clean_block_facets()
 ```
 
 
