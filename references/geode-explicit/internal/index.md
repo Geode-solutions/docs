@@ -23,6 +23,7 @@ const name = words.join('-');
 * [ExtractedMeshes](ExtractedMeshes.md)
 * [ExtractedTriangulatedSurfaceInfo](ExtractedTriangulatedSurfaceInfo.md)
 * [InformationToExtract](InformationToExtract.md)
+* [InsertionGraphPerformer](InsertionGraphPerformer.md)
 * [MeshElementsIndices](MeshElementsIndices.md)
 * [ModelerMappingsBuilder](ModelerMappingsBuilder.md)
 * [ModelerMetric](ModelerMetric.md)
@@ -55,14 +56,14 @@ tuple extract_macro_info(const BackgroundSolid & background_solid, const Informa
 ### find_elements_to_insert
 
 ```cpp
-MeshElementsMap find_elements_to_insert(const geode::Meshes & meshes)
+ElementGraph find_elements_to_insert(const Meshes & meshes)
 ```
 
 
 ### find_elements_to_insert_on_border
 
 ```cpp
-MeshElementsMap find_elements_to_insert_on_border(const geode::Meshes & meshes, vector border_surfaces)
+ElementGraph find_elements_to_insert_on_border(const Meshes & meshes, vector border_surfaces)
 ```
 
 

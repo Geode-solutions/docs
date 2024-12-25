@@ -11,36 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class MeshElementsMap
+# class ElementGraph
 
 
 ## Functions
 
-### MeshElementsMap
+### ElementGraph
 
 ```cpp
-public void MeshElementsMap(const Meshes & meshes)
+public void ElementGraph(const Meshes & meshes)
 ```
 
 
-### ~MeshElementsMap
+### ~ElementGraph
 
 ```cpp
-public void ~MeshElementsMap()
+public void ~ElementGraph()
 ```
 
 
-### MeshElementsMap
+### ElementGraph
 
 ```cpp
-public void MeshElementsMap(MeshElementsMap && )
+public void ElementGraph(ElementGraph && )
 ```
 
 
 ### operator=
 
 ```cpp
-public MeshElementsMap & operator=(MeshElementsMap && )
+public ElementGraph & operator=(ElementGraph && )
 ```
 
 
@@ -69,6 +69,20 @@ public bool empty()
 
 ```cpp
 public const Graph & graph()
+```
+
+
+### mesh_element
+
+```cpp
+public ComponentMeshElement mesh_element(index_t element_id)
+```
+
+
+### element_id
+
+```cpp
+public optional element_id(const MeshElement & mesh_element)
 ```
 
 
@@ -107,10 +121,10 @@ public const MeshElements & element_maps()
 ```
 
 
-### get_connected_component_elements
+### get_mesh_elements
 
 ```cpp
-public MeshElements get_connected_component_elements(Span connected_elements)
+public MeshElements get_mesh_elements(Span elements)
 ```
 
 
@@ -118,6 +132,13 @@ public MeshElements get_connected_component_elements(Span connected_elements)
 
 ```cpp
 public index_t find_or_create_graph_vertex(const ComponentMeshElement & cme)
+```
+
+
+### remove_graph_pair
+
+```cpp
+public void remove_graph_pair(index_t pair_id)
 ```
 
 
@@ -132,6 +153,13 @@ public void add_pair(const ComponentMeshElement & first, const ComponentMeshElem
 
 ```cpp
 public void add_isolated_graph_node(const ComponentMeshElement & element)
+```
+
+
+### clean_graph
+
+```cpp
+public tuple clean_graph()
 ```
 
 
