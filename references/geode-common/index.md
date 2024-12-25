@@ -51,6 +51,7 @@ const name = words.join('-');
 * [CommonMetricLibrary](CommonMetricLibrary.md)
 * [CommonModifierCommonLibrary](CommonModifierCommonLibrary.md)
 * [CommonModifierEdgedCurveLibrary](CommonModifierEdgedCurveLibrary.md)
+* [CommonModifierGraphLibrary](CommonModifierGraphLibrary.md)
 * [CommonModifierModelLibrary](CommonModifierModelLibrary.md)
 * [CommonModifierSolidLibrary](CommonModifierSolidLibrary.md)
 * [CommonModifierSurfaceLibrary](CommonModifierSurfaceLibrary.md)
@@ -74,6 +75,7 @@ const name = words.join('-');
 * [FrontEdge](FrontEdge.md)
 * [GeometricSolidPath](GeometricSolidPath.md)
 * [GeometricSurfacePath](GeometricSurfacePath.md)
+* [GraphModifier](GraphModifier.md)
 * [GridMetric](GridMetric.md)
 * [Invalidity](Invalidity.md)
 * [LineCollapseEdgeValidities](LineCollapseEdgeValidities.md)
@@ -1479,12 +1481,6 @@ SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & se
 ```
 
 
-### minimal_metric
-
-```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
-```
-
 ### cut_along_path
 
 ```cpp
@@ -1541,6 +1537,12 @@ vector determine_cuts(const TetrahedralSolid3D & solid, Span path_splits)
 vector determine_cuts(const TetrahedralSolid3D & solid, const Plane & plane, Span path_splits)
 ```
 
+
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
 
 
 
