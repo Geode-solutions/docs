@@ -1481,6 +1481,12 @@ SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & se
 ```
 
 
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
+
 ### cut_along_path
 
 ```cpp
@@ -1537,12 +1543,6 @@ vector determine_cuts(const TetrahedralSolid3D & solid, Span path_splits)
 vector determine_cuts(const TetrahedralSolid3D & solid, const Plane & plane, Span path_splits)
 ```
 
-
-### minimal_metric
-
-```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
-```
 
 
 

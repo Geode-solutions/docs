@@ -20,6 +20,14 @@ Inherits from VerticesModifier
 
 
 
+## Records
+
+CollapseEdgeInfo
+
+SplitEdgeInfo
+
+
+
 ## Functions
 
 ### GraphModifier
@@ -71,6 +79,20 @@ public void inactive_edges(Span edge_ids)
 ```
 
 
+### collapse_edge
+
+```cpp
+public CollapseEdgeInfo collapse_edge(index_t edge_id)
+```
+
+
+### split_edge
+
+```cpp
+public SplitEdgeInfo split_edge(index_t edge_id)
+```
+
+
 ### clean_edges
 
 ```cpp
@@ -96,7 +118,7 @@ public vector clean_vertices()
 ### clean
 
 ```cpp
-public tuple clean()
+public std::tuple<std::vector<index_t>, std::vector<index_t> > clean()
 ```
 
 

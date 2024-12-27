@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from VerticesModifier
+Inherits from GraphModifier
 ```
 
 
@@ -24,16 +24,8 @@ Inherits from VerticesModifier
 
 
 ```cpp
-Inherits from VerticesModifier
+Inherits from GraphModifier
 ```
-
-
-
-## Records
-
-CollapseEdgeInfo
-
-SplitEdgeInfo
 
 
 
@@ -64,13 +56,6 @@ public EdgedCurveModifier<dimension> & operator=(EdgedCurveModifier<dimension> &
 
 ```cpp
 public void ~EdgedCurveModifier<dimension>()
-```
-
-
-### is_edge_active
-
-```cpp
-public bool is_edge_active(index_t edge_id)
 ```
 
 
@@ -111,39 +96,6 @@ public void move_point(index_t vertex, const Point<dimension> & point)
 ```
 
 
-### clean_edges
-
-```cpp
-public vector clean_edges()
-```
-
-
- Clean up the mesh removing inactive edges
-
-**return** old2new mappings for edges
-
-### clean_vertices
-
-```cpp
-public vector clean_vertices()
-```
-
-
- Clean up the mesh removing isolated vertices
-
-**return** old2new mappings for vertices
-
-### clean
-
-```cpp
-public tuple clean()
-```
-
-
- Clean up the mesh removing inactive edges, isolated vertices.
-
-**return** old2new mappings for edges and vertices.
-
 ### EdgedCurveModifier
 
 ```cpp
@@ -171,7 +123,7 @@ protected EdgedCurveBuilder<dimension> & builder()
 
 
 ```cpp
-Inherits from VerticesModifier
+Inherits from GraphModifier
 ```
 
 
