@@ -470,6 +470,13 @@ public optional polygon_edge_from_vertices(index_t from_vertex_id, index_t to_ve
 
 **return** Local index if the edge is found.
 
+### segment
+
+```cpp
+public Segment<dimension> segment(const PolygonEdge & polygon_edge)
+```
+
+
 ### polygons_from_edge_vertices
 
 ```cpp

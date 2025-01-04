@@ -127,6 +127,13 @@ public local_index_t longest_edge_index()
 ```
 
 
+### smallest_edge_index
+
+```cpp
+public local_index_t smallest_edge_index()
+```
+
+
 ### minimum_height
 
 ```cpp
