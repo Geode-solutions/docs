@@ -520,6 +520,13 @@ vector find_unique_facet_normals(const geode::internal::BackgroundSolid & backgr
 ```
 
 
+### optimize_background_surface_elements
+
+```cpp
+void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, index_t first_element)
+```
+
+
 ### simplify_background_solid_macro_edge
 
 ```cpp
@@ -531,13 +538,6 @@ void simplify_background_solid_macro_edge(BackgroundSolidConstraintModifier & co
 
 ```cpp
 void simplify_background_solid_macro_facet(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshPolygon & macro_facet)
-```
-
-
-### optimize_background_surface_elements
-
-```cpp
-void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, index_t first_element)
 ```
 
 
