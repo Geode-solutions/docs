@@ -49,12 +49,6 @@ void extrapolate_surface_mesh_scalar_function(const SurfaceMesh<dimension> & sur
 void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, const ScalarFunctionExtrapolationInfo & extrapolation_info)
 ```
 
-### extrapolate_solid_mesh_scalar_function
-
-```cpp
-void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, const ScalarFunctionExtrapolationInfo & extrapolation_info)
-```
-
 
 ### compute_cell_size
 

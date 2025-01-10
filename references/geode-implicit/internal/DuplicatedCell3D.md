@@ -30,6 +30,13 @@ public void DuplicatedCell3D(DuplicatedCell3D && other)
 ```
 
 
+### operator=
+
+```cpp
+public DuplicatedCell3D & operator=(DuplicatedCell3D && other)
+```
+
+
 ### ~DuplicatedCell3D
 
 ```cpp
@@ -51,10 +58,10 @@ public void paint_connected_blocks()
 ```
 
 
-### output_connected_components
+### cell_duplicate_mesh
 
 ```cpp
-public void output_connected_components(basic_string_view file_name)
+public unique_ptr cell_duplicate_mesh(index_t duplicate_id)
 ```
 
 
@@ -153,6 +160,13 @@ public InlinedVector cell_duplicate_index(const Point3D & position)
 
 ```cpp
 public optional discontinuity_vertex_duplicate(const uuid & discontinuity_id, index_t discontinuity_vertex, index_t discontinuity_facet, const Vector3D & normal_towards_duplicate)
+```
+
+
+### copy
+
+```cpp
+public void copy(const DuplicatedCell3D & other)
 ```
 
 

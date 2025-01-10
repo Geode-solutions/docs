@@ -50,10 +50,10 @@ public void ~CutSolidGrid()
 ```
 
 
-### add_discontinuity
+### try_add_discontinuity
 
 ```cpp
-public void add_discontinuity(const TriangulatedSurface3D & surface)
+public bool try_add_discontinuity(const TriangulatedSurface3D & surface)
 ```
 
 
@@ -68,6 +68,20 @@ public void inactivate_grid_outside_domain()
 
 ```cpp
 public void compute_grid_nodes_indexation()
+```
+
+
+### cell_is_duplicated
+
+```cpp
+public bool cell_is_duplicated(const CellIndices & cell_indices)
+```
+
+
+### nb_cell_duplicates
+
+```cpp
+public index_t nb_cell_duplicates(const CellIndices & cell_indices)
 ```
 
 
@@ -103,6 +117,13 @@ public InlinedVector cell_duplicate_index(const CellIndices & cell, const Point3
 
 ```cpp
 public optional discontinuity_vertex_duplicate(const CellIndices & cell_indices, const uuid & discontinuity_id, index_t discontinuity_vertex, index_t discontinuity_facet, const Vector3D & normal_towards_duplicate)
+```
+
+
+### output_grid_cells
+
+```cpp
+public void output_grid_cells(basic_string_view folder_name)
 ```
 
 
