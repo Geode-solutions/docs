@@ -65,6 +65,13 @@ public index_t identify_elements()
 ```
 
 
+### identify_elements
+
+```cpp
+public index_t identify_elements(index_t nb_max_elements)
+```
+
+
 ### identified_components
 
 ```cpp

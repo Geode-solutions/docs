@@ -65,6 +65,13 @@ public index_t identify_vertices()
 ```
 
 
+### identify_vertices
+
+```cpp
+public index_t identify_vertices(index_t nb_max_vertices)
+```
+
+
 ### vertex_identifier
 
 ```cpp
