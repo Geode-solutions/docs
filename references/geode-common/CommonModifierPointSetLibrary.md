@@ -11,27 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Modifier
+# class CommonModifierPointSetLibrary
 
 
-# struct Modifier
+```cpp
+Inherits from Library
+```
 
 
-# struct Modifier
+
+## Functions
+
+### initialize
+
+```cpp
+public void initialize()
+```
 
 
-# struct Modifier
-
-
-# struct Modifier
-
-
-# struct Modifier
-
-
-# struct Modifier
-
-
-# struct Modifier
 
 
