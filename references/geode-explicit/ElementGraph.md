@@ -159,7 +159,7 @@ public void add_isolated_graph_node(const ComponentMeshElement & element)
 ### clean_graph
 
 ```cpp
-public tuple clean_graph()
+public CleanMappings clean_graph()
 ```
 
 
