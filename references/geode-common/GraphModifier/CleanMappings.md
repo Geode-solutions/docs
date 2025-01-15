@@ -11,42 +11,20 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SurfaceCutPathException
-
-
-```cpp
-Inherits from OpenGeodeException
-```
-
+# struct CleanMappings
 
 
 ## Members
 
 ```cpp
-public std::vector<std::pair<index_t, PolygonEdgeSplit<dimension> > > invalid_splits
+public vector old2new_vertices
 
 ```
 
 ```cpp
-public vector small_edges
+public vector old2new_edges
 
 ```
-
-```cpp
-public SurfaceCutPathInfo<dimension> info
-
-```
-
-
-
-## Functions
-
-### SurfaceCutPathException
-
-```cpp
-public void SurfaceCutPathException<dimension>()
-```
-
 
 
 

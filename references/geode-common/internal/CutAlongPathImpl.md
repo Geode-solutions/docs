@@ -39,7 +39,7 @@ public SurfaceCutPathInfo<dimension> perform_cut()
 ### CutAlongPathImpl
 
 ```cpp
-protected void CutAlongPathImpl<dimension>(const TriangulatedSurface<dimension> & surface, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
+protected void CutAlongPathImpl<dimension>(const TriangulatedSurface<dimension> & surface, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
 ```
 
 

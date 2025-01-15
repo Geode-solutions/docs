@@ -104,6 +104,13 @@ public bool is_facet_active(index_t facet_id)
 ```
 
 
+### inactive_tetrahedra
+
+```cpp
+public void inactive_tetrahedra(Span tetrahedra)
+```
+
+
 ### split_tetrahedron
 
 ```cpp

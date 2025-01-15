@@ -26,6 +26,8 @@ CollapseEdgeInfo
 
 SplitEdgeInfo
 
+CleanMappings
+
 
 
 ## Functions
@@ -118,7 +120,7 @@ public vector clean_vertices()
 ### clean
 
 ```cpp
-public std::tuple<std::vector<index_t>, std::vector<index_t> > clean()
+public CleanMappings clean()
 ```
 
 

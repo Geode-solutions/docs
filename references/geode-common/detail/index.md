@@ -24,6 +24,13 @@ optional snapping_detection(const SurfaceMesh<dimension> & surface, index_t poly
 ```
 
 
+### snapping_detection
+
+```cpp
+optional snapping_detection(const SurfaceMesh<dimension> & surface, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
 ### is_modified_triangle_valid
 
 ```cpp

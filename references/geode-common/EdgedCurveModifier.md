@@ -29,6 +29,15 @@ Inherits from GraphModifier
 
 
 
+# class EdgedCurveModifier
+
+
+```cpp
+Inherits from GraphModifier
+```
+
+
+
 ## Functions
 
 ### EdgedCurveModifier

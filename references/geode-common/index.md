@@ -1357,21 +1357,21 @@ SolidSwapPathInfo swap_along_path(const TetrahedralSolid3D & solid, TetrahedralS
 ### determine_cuts
 
 ```cpp
-std::vector<GeometricSurfacePath2D> determine_cuts(const TriangulatedSurface2D & surface, index_t begin, index_t end, absl::Span<const SurfacePath> path_splits)
+std::vector<GeometricSurfacePath2D> determine_cuts(const TriangulatedSurface2D & surface, absl::Span<const SurfacePath> path_splits)
 ```
 
 
 ### determine_cuts
 
 ```cpp
-std::vector<GeometricSurfacePath3D> determine_cuts(const TriangulatedSurface3D & surface, index_t begin, index_t end, const Plane & plane, absl::Span<const SurfacePath> path_splits)
+std::vector<GeometricSurfacePath3D> determine_cuts(const TriangulatedSurface3D & surface, const Plane & plane, absl::Span<const SurfacePath> path_splits)
 ```
 
 
 ### cut_along_path
 
 ```cpp
-SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, index_t begin, index_t end, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
+SurfaceCutPathInfo<dimension> cut_along_path(const TriangulatedSurface<dimension> & surface, TriangulatedSurfaceModifier<dimension> & modifier, absl::Span<const GeometricSurfacePath<dimension> > path_splits)
 ```
 
 
@@ -1385,7 +1385,7 @@ SurfaceCutPathInfo<2> cut_along_path(const TriangulatedSurface2D & surface, Tria
 ### cut_along_path
 
 ```cpp
-SurfaceCutPathInfo cut_along_path(BRepGeometricModifier & modifier, const Surface3D & surface, index_t begin, index_t end, Span path_splits)
+SurfaceCutPathInfo cut_along_path(BRepGeometricModifier & modifier, const Surface3D & surface, Span path_splits)
 ```
 
 

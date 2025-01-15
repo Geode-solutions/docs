@@ -109,6 +109,20 @@ public bool is_edge_active(const PolygonEdge & edge)
 ```
 
 
+### inactive_triangle
+
+```cpp
+public void inactive_triangle(index_t triangle_id)
+```
+
+
+### inactive_triangles
+
+```cpp
+public void inactive_triangles(Span triangles)
+```
+
+
 ### split_triangle
 
 ```cpp
