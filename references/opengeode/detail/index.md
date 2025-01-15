@@ -518,6 +518,13 @@ void save_triangle(const Triangle<dimension> & triangle, basic_string_view suffi
 ```
 
 
+### save_triangles
+
+```cpp
+void save_triangles(const TriangulatedSurface<dimension> & surface, Span indices, basic_string_view suffix)
+```
+
+
 ### save_tetrahedron
 
 ```cpp

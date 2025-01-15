@@ -24,6 +24,15 @@ Inherits from Graph, CoordinateReferenceSystemManagers<2U>
 
 
 ```cpp
+Inherits from Graph, CoordinateReferenceSystemManagers<1U>
+```
+
+
+
+# class EdgedCurve
+
+
+```cpp
 Inherits from Graph, CoordinateReferenceSystemManagers<dimension>
 ```
 

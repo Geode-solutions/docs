@@ -20,6 +20,9 @@ const name = words.join('-');
 # class DistanceToEdge
 
 
+# class DistanceToEdge
+
+
 ## Functions
 
 ### DistanceToEdge

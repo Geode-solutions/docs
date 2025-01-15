@@ -15,6 +15,15 @@ const name = words.join('-');
 
 
 ```cpp
+Inherits from PointSet<1U>
+```
+
+
+
+# class OpenGeodePointSet
+
+
+```cpp
 Inherits from PointSet<dimension>
 ```
 

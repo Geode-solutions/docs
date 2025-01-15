@@ -55,6 +55,15 @@ Inherits from PointSetBuilder<2U>
 
 
 ```cpp
+Inherits from PointSetBuilder<1U>
+```
+
+
+
+# class OpenGeodePointSetBuilder
+
+
+```cpp
 Inherits from PointSetBuilder<3U>
 ```
 

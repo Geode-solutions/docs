@@ -55,6 +55,15 @@ Inherits from EdgedCurveBuilder<3U>
 
 
 ```cpp
+Inherits from EdgedCurveBuilder<1U>
+```
+
+
+
+# class OpenGeodeEdgedCurveBuilder
+
+
+```cpp
 Inherits from EdgedCurveBuilder<2U>
 ```
 

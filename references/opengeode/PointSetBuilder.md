@@ -84,3 +84,12 @@ protected void PointSetBuilder<dimension>(PointSet<dimension> & mesh)
 
 
 
+# class PointSetBuilder
+
+
+```cpp
+Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<1U>
+```
+
+
+

@@ -119,6 +119,15 @@ public void set_edge_vertex(const EdgeVertex & edge_vertex, index_t vertex_id, O
 
 
 ```cpp
+Inherits from EdgedCurve<1U>
+```
+
+
+
+# class OpenGeodeEdgedCurve
+
+
+```cpp
 Inherits from EdgedCurve<3U>
 ```
 

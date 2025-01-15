@@ -110,3 +110,12 @@ Inherits from VertexSet, CoordinateReferenceSystemManagers<3U>
 
 
 
+# class PointSet
+
+
+```cpp
+Inherits from VertexSet, CoordinateReferenceSystemManagers<1U>
+```
+
+
+

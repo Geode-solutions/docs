@@ -22,6 +22,27 @@ Inherits from MappingBase<T1, T2, MultipleValueStorage>
 
 ## Functions
 
+### GenericMapping
+
+```cpp
+public void GenericMapping<T1, T2>()
+```
+
+
+### GenericMapping
+
+```cpp
+public void GenericMapping<T1, T2>(GenericMapping<T1, T2> && other)
+```
+
+
+### operator=
+
+```cpp
+public GenericMapping<T1, T2> & operator=(GenericMapping<T1, T2> && other)
+```
+
+
 ### map
 
 ```cpp

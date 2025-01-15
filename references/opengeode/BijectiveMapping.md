@@ -22,6 +22,27 @@ Inherits from MappingBase<T1, T2, OneValueStorage>
 
 ## Functions
 
+### BijectiveMapping
+
+```cpp
+public void BijectiveMapping<T1, T2>()
+```
+
+
+### BijectiveMapping
+
+```cpp
+public void BijectiveMapping<T1, T2>(BijectiveMapping<T1, T2> && other)
+```
+
+
+### operator=
+
+```cpp
+public BijectiveMapping<T1, T2> & operator=(BijectiveMapping<T1, T2> && other)
+```
+
+
 ### map
 
 ```cpp

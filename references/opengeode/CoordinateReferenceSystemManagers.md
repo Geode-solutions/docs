@@ -122,3 +122,6 @@ protected CoordinateReferenceSystemManagers<> & operator=(CoordinateReferenceSys
 # class CoordinateReferenceSystemManagers
 
 
+# class CoordinateReferenceSystemManagers
+
+

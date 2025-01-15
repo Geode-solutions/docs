@@ -32,6 +32,15 @@ Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<3U>
 # class EdgedCurveBuilder
 
 
+```cpp
+Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<1U>
+```
+
+
+
+# class EdgedCurveBuilder
+
+
  Interface class to represent the builder of a EdgedCurve
 
 
