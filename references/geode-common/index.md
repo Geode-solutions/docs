@@ -27,6 +27,7 @@ const name = words.join('-');
 * [BRepCutter](BRepCutter.md)
 * [BRepElementsAfterCollapseEdge](BRepElementsAfterCollapseEdge.md)
 * [BRepElementsAfterMovePoint](BRepElementsAfterMovePoint.md)
+* [BRepElementsAfterSplitCollapse](BRepElementsAfterSplitCollapse.md)
 * [BRepElementsAfterSwapEdge](BRepElementsAfterSwapEdge.md)
 * [BRepGeometricModifier](BRepGeometricModifier.md)
 * [BRepGridMetric](BRepGridMetric.md)
@@ -135,6 +136,7 @@ const name = words.join('-');
 * [SolidSwapPathInfo](SolidSwapPathInfo.md)
 * [SolidTopologicalValidity](SolidTopologicalValidity.md)
 * [SplitCollapseTetrahedraAfter](SplitCollapseTetrahedraAfter.md)
+* [SplitCollapseTrianglesAfter](SplitCollapseTrianglesAfter.md)
 * [SplitInfo](SplitInfo.md)
 * [SurfaceCollapseEdgeValidities](SurfaceCollapseEdgeValidities.md)
 * [SurfaceCollapseEdgeValidity](SurfaceCollapseEdgeValidity.md)
@@ -530,6 +532,19 @@ TrianglesAfter<dimension> triangles_after_move_point(const TriangulatedSurface<d
 **vertex** [in] Index of the vertex to relocate.
 
 **point** [in] Coordinates of the destination point.
+
+### triangles_after_split_collapse_edge
+
+```cpp
+SplitCollapseTrianglesAfter<dimension> triangles_after_split_collapse_edge(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
+```
+
+
+ Return all the triangles resulting from a split collapse edge. The split collapse edge is not applied.
+
+**mesh** [in] Triangulated mesh on which simulate operation.
+
+**edge** [in] Index of the PolygonEdge to swap.
 
 ### is_move_point_valid
 
@@ -1126,6 +1141,20 @@ bool is_collapse_edge_valid(const BRep & brep, const Line3D & line, index_t edge
 ```
 
 
+### is_split_collapse_facet_valid
+
+```cpp
+bool is_split_collapse_facet_valid(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
+```
+
+
+### is_split_collapse_facet_valid
+
+```cpp
+bool is_split_collapse_facet_valid(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet)
+```
+
+
 ### collapse_edge_validity
 
 ```cpp
@@ -1330,6 +1359,20 @@ BRepElementsAfterSwapEdge elements_after_swap_edge(const BRep & brep, const Bloc
 
 ```cpp
 BRepElementsAfterMovePoint elements_after_move_point(const BRep & brep, index_t unique_vertex, const Point3D & point)
+```
+
+
+### elements_after_split_collapse_facet
+
+```cpp
+BRepElementsAfterSplitCollapse elements_after_split_collapse_facet(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
+```
+
+
+### elements_after_split_collapse_facet
+
+```cpp
+BRepElementsAfterSplitCollapse elements_after_split_collapse_facet(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet)
 ```
 
 

@@ -37,5 +37,33 @@ public void SwapTrianglesAfter<dimension>(size_t nb_new_triangles, size_t nb_old
 ```
 
 
+### SwapTrianglesAfter
+
+```cpp
+public void SwapTrianglesAfter<dimension>(const SwapTrianglesAfter<dimension> & other)
+```
+
+
+### SwapTrianglesAfter
+
+```cpp
+public void SwapTrianglesAfter<dimension>(SwapTrianglesAfter<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public SwapTrianglesAfter<dimension> & operator=(const SwapTrianglesAfter<dimension> & other)
+```
+
+
+### operator=
+
+```cpp
+public SwapTrianglesAfter<dimension> & operator=(SwapTrianglesAfter<dimension> && other)
+```
+
+
 
 
