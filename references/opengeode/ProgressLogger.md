@@ -23,6 +23,13 @@ public void ProgressLogger(const std::string & message, index_t nb_steps)
 ```
 
 
+### ProgressLogger
+
+```cpp
+public void ProgressLogger(LEVEL level, const std::string & message, index_t nb_steps)
+```
+
+
 ### ~ProgressLogger
 
 ```cpp

@@ -34,6 +34,13 @@ public void set_level(LEVEL level)
 ```
 
 
+### log
+
+```cpp
+public void log(LEVEL level, const Args &... args)
+```
+
+
 ### trace
 
 ```cpp
