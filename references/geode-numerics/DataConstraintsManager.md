@@ -36,6 +36,13 @@ public double data_points_mean_value()
 ```
 
 
+### data_points_max_weight
+
+```cpp
+public double data_points_max_weight()
+```
+
+
 ### data_point_position
 
 ```cpp

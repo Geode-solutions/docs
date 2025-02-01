@@ -141,6 +141,13 @@ public bool isovalue_goes_through_cell(const CellIndices & cell_id, double isova
 ```
 
 
+### node_values_are_set
+
+```cpp
+public bool node_values_are_set()
+```
+
+
 ### remove_all_value_nodes_but_computation_nodes
 
 ```cpp
