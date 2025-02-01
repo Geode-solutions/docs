@@ -870,6 +870,30 @@ std::tuple<double, Point3D, Point3D> segment_triangle_distance(const Segment3D &
 
 **return** a tuple containing: - the smallest distance. - the closest point on the segment. - the closest point on the triangle.
 
+### triangle_triangle_distance
+
+```cpp
+std::tuple<double, Point3D, Point3D> triangle_triangle_distance(const Triangle3D & triangle0, const Triangle3D & triangle1)
+```
+
+
+ Compute the smallest distance between two triangles
+
+**return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
+
+### triangle_triangle_distance_between_non_conformal_parts
+
+```cpp
+std::optional<std::tuple<double, Point3D, Point3D> > triangle_triangle_distance_between_non_conformal_parts(const Triangle3D & triangle0, const Triangle3D & triangle1)
+```
+
+
+ Compute the smallest distance between two triangles
+
+**details** if the two triangles are the same, return nullopt. Only non conformal part of triangles are considered in computation of distance, i.e. if the triangle have a common point, it iterates on opposite segment, if the triangle have a common edge, it computes distance with the opposite point
+
+**return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
+
 ### point_tetrahedron_distance
 
 ```cpp
@@ -2271,120 +2295,6 @@ BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptio
 ```
 
 
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_edged_curve
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
-```
-
-
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_edged_curve_missing_files
-
-```cpp
-typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
-```
-
-
-### is_edged_curve_loadable
-
-```cpp
-bool is_edged_curve_loadable(basic_string_view filename)
-```
-
-
-### load_graph
-
-```cpp
-unique_ptr load_graph(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an Graph. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_graph
-
-```cpp
-unique_ptr load_graph(basic_string_view filename)
-```
-
-
- API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_graph_missing_files
-
-```cpp
-MissingFiles check_graph_missing_files(basic_string_view filename)
-```
-
-
-### is_graph_loadable
-
-```cpp
-bool is_graph_loadable(basic_string_view filename)
-```
-
-
-### load_hybrid_solid
-
-```cpp
-std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_hybrid_solid
-
-```cpp
-std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view filename)
-```
-
-
- API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_hybrid_solid_missing_files
-
-```cpp
-typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(basic_string_view filename)
-```
-
-
-### is_hybrid_solid_loadable
-
-```cpp
-bool is_hybrid_solid_loadable(basic_string_view filename)
-```
-
-
 ### convert_edged_curve3d_into_2d
 
 ```cpp
@@ -2508,6 +2418,120 @@ std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(co
 
 ```cpp
 std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
+```
+
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_edged_curve_missing_files
+
+```cpp
+typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
+```
+
+
+### is_edged_curve_loadable
+
+```cpp
+bool is_edged_curve_loadable(basic_string_view filename)
+```
+
+
+### load_graph
+
+```cpp
+unique_ptr load_graph(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an Graph. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_graph
+
+```cpp
+unique_ptr load_graph(basic_string_view filename)
+```
+
+
+ API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_graph_missing_files
+
+```cpp
+MissingFiles check_graph_missing_files(basic_string_view filename)
+```
+
+
+### is_graph_loadable
+
+```cpp
+bool is_graph_loadable(basic_string_view filename)
+```
+
+
+### load_hybrid_solid
+
+```cpp
+std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_hybrid_solid
+
+```cpp
+std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view filename)
+```
+
+
+ API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_hybrid_solid_missing_files
+
+```cpp
+typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(basic_string_view filename)
+```
+
+
+### is_hybrid_solid_loadable
+
+```cpp
+bool is_hybrid_solid_loadable(basic_string_view filename)
 ```
 
 
