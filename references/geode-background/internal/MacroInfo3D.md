@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from MacroInfo<3>
+Inherits from MacroInfo, MacroEdges
 ```
 
 
@@ -47,13 +47,6 @@ public const std::vector<MeshPolygon> & incident_macro_facets(index_t background
 
 ```cpp
 public EdgeMacroInfoConfig edge_configuration(index_t edge_id, const BackgroundSolid & solid)
-```
-
-
-### clean_background_solid_attributes
-
-```cpp
-public void clean_background_solid_attributes(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_edge_attribute_manager, AttributeManager & mesh_facet_attribute_manager, AttributeManager & mesh_tetrahedron_attribute_manager)
 ```
 
 
@@ -110,6 +103,13 @@ protected MacroInfo3D & operator=(MacroInfo3D && other)
 
 ```cpp
 protected void initialize_macro_info_solid_data_base(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_edge_attribute_manager, AttributeManager & mesh_facet_attribute_manager, AttributeManager & mesh_tetrahedron_attribute_manager)
+```
+
+
+### clean_background_solid_data_base
+
+```cpp
+protected void clean_background_solid_data_base(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_edge_attribute_manager, AttributeManager & mesh_facet_attribute_manager, AttributeManager & mesh_tetrahedron_attribute_manager)
 ```
 
 

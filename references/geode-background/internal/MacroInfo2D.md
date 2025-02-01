@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from MacroInfo<2>
+Inherits from MacroInfo, MacroEdges
 ```
 
 
@@ -36,13 +36,6 @@ public EdgeMacroInfoConfig edge_configuration(index_t edge_id, const BackgroundS
 ```
 
 
-### clean_background_surface_attributes
-
-```cpp
-public void clean_background_surface_attributes(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_edge_attribute_manager, AttributeManager & mesh_element_attribute_manager)
-```
-
-
 ### MacroInfo2D
 
 ```cpp
@@ -54,6 +47,20 @@ protected void MacroInfo2D()
 
 ```cpp
 protected void MacroInfo2D(MacroInfo2D && other)
+```
+
+
+### initialize_macro_info_surface_data_base
+
+```cpp
+protected void initialize_macro_info_surface_data_base(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_edge_attribute_manager, AttributeManager & mesh_element_attribute_manager)
+```
+
+
+### clean_background_surface_data_base
+
+```cpp
+protected void clean_background_surface_data_base(AttributeManager & mesh_vertex_attribute_manager, AttributeManager & mesh_edge_attribute_manager, AttributeManager & mesh_element_attribute_manager)
 ```
 
 

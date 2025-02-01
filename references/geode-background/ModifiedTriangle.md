@@ -11,33 +11,19 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SkipNonMandatory
-
+# struct ModifiedTriangle
 
 ## Members
 
 ```cpp
-public const MacroInfo & info
+public Triangle<dimension> new_triangle
 
 ```
-
-
-
-## Functions
-
-### SkipNonMandatory
 
 ```cpp
-public void SkipNonMandatory(const MacroInfo & info_in)
+public index_t old_index
+
 ```
-
-
-### operator()
-
-```cpp
-public bool operator()(const MeshElement & element)
-```
-
 
 
 

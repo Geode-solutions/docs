@@ -11,32 +11,44 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SkipNonMandatory
+# struct MultilayerData
 
 
 ## Members
 
 ```cpp
-public const MacroInfo & info
+public vector modified_tetrahedra
 
 ```
-
-
-
-## Functions
-
-### SkipNonMandatory
 
 ```cpp
-public void SkipNonMandatory(const MacroInfo & info_in)
+public array edge_to_split
+
 ```
-
-
-### operator()
 
 ```cpp
-public bool operator()(const MeshElement & element)
+public Point split_point
+
 ```
+
+```cpp
+public MultilayerStatus status
+
+```
+
+
+
+## Enums
+
+| enum class MultilayerStatus |
+
+--
+
+| forbidden_edges_created |
+| forbidden_split_done |
+| merge_failed |
+| sucess |
+
 
 
 

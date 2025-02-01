@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from MacroInfoBuilder<2>
+Inherits from MacroInfoBuilder, MacroEdgesBuilder
 ```
 
 
@@ -47,6 +47,13 @@ public void update_information(const TriangulatedSurfaceModifier2D::SplitPolygon
 
 ```cpp
 public void update_information(const TriangulatedSurfaceModifier2D::CollapseEdgeInfo & collapse_info)
+```
+
+
+### update_vertex
+
+```cpp
+public void update_vertex(const VertexMultiMapping & mapping)
 ```
 
 

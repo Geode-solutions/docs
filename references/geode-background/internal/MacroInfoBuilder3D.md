@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from MacroInfoBuilder<3>
+Inherits from MacroInfoBuilder, MacroEdgesBuilder
 ```
 
 

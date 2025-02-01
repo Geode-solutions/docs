@@ -86,6 +86,13 @@ public ModifiableBackgroundSurface & surface()
 ```
 
 
+### builder
+
+```cpp
+public BackgroundSurfaceBuilder & builder()
+```
+
+
 ### constraints
 
 ```cpp
@@ -104,6 +111,13 @@ public Constraints & constraints()
 
 ```cpp
 public CollapseEdgeInfo collapse_edge(const PolygonEdge & edge, const OrientedEdgeVertices & edge_vertices)
+```
+
+
+### collapse_edge
+
+```cpp
+public CollapseEdgeInfo collapse_edge(const PolygonEdge & edge, const Point2D & point)
 ```
 
 

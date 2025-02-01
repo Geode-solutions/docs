@@ -11,31 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SkipNonMandatory
+# class BackgroundLineLibrary
 
-
-## Members
 
 ```cpp
-public const MacroInfo & info
-
+Inherits from Library
 ```
 
 
 
 ## Functions
 
-### SkipNonMandatory
+### initialize
 
 ```cpp
-public void SkipNonMandatory(const MacroInfo & info_in)
-```
-
-
-### operator()
-
-```cpp
-public bool operator()(const MeshElement & element)
+public void initialize()
 ```
 
 

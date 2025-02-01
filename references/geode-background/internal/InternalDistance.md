@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct InternalDistance
+# class InternalDistance
 
 
 ## Members
@@ -130,6 +130,13 @@ public bool operator<(const InternalDistance & other)
 ```
 
 
+### string
+
+```cpp
+public basic_string string()
+```
+
+
 
 
 ## Enums
@@ -152,8 +159,8 @@ public bool operator<(const InternalDistance & other)
 | edge_vertex |
 | facet_vertex |
 | edge_edge |
-| double_adjacency |
-| triple_adjacency |
+| edge_adjacency |
+| vertex_adjacency |
 | no_type |
 
 

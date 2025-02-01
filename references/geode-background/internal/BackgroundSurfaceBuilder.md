@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from OpenGeodeTriangulatedSurfaceBuilder2D, internal::ElementSearchBuilder<TriangulatedSurface2D>, MacroInfoBuilder2D
+Inherits from OpenGeodeTriangulatedSurfaceBuilder2D, ElementSearchBuilder<TriangulatedSurface2D>, MacroInfoBuilder2D
 ```
 
 

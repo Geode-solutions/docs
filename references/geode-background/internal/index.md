@@ -29,6 +29,10 @@ const name = words.join('-');
 * [BackgroundBRepOrchestrator](BackgroundBRepOrchestrator.md)
 * [BackgroundBRep](BackgroundBRep.md)
 * [BackgroundInsertionException](BackgroundInsertionException.md)
+* [BackgroundLineBuilder](BackgroundLineBuilder.md)
+* [BackgroundLineInserter](BackgroundLineInserter.md)
+* [BackgroundLineModifier](BackgroundLineModifier.md)
+* [BackgroundLine](BackgroundLine.md)
 * [BackgroundOrchestrator](BackgroundOrchestrator.md)
 * [BackgroundSolidAspectRatioImprovementSimulator](BackgroundSolidAspectRatioImprovementSimulator.md)
 * [BackgroundSolidBlindedQualityOptimizer](BackgroundSolidBlindedQualityOptimizer.md)
@@ -67,12 +71,17 @@ const name = words.join('-');
 * [FourPointsInternalDistance](FourPointsInternalDistance.md)
 * [InternalDistance](InternalDistance.md)
 * [MacroEdgeBackgroundVertices](MacroEdgeBackgroundVertices.md)
+* [MacroEdgesBuilder](MacroEdgesBuilder.md)
+* [MacroEdges](MacroEdges.md)
+* [MacroInfo1D](MacroInfo1D.md)
 * [MacroInfo2D](MacroInfo2D.md)
 * [MacroInfo3D](MacroInfo3D.md)
+* [MacroInfoBuilder1D](MacroInfoBuilder1D.md)
 * [MacroInfoBuilder2D](MacroInfoBuilder2D.md)
 * [MacroInfoBuilder3D](MacroInfoBuilder3D.md)
 * [MacroInfoBuilder](MacroInfoBuilder.md)
 * [MacroInfo](MacroInfo.md)
+* [MultilayerData](MultilayerData.md)
 * [Orchestrator](Orchestrator.md)
 * [PointsCmp](PointsCmp.md)
 * [PointsHash](PointsHash.md)
@@ -89,7 +98,119 @@ const name = words.join('-');
 ### carve_background_surface
 
 ```cpp
-void carve_background_surface(BackgroundSurface & background_surface)
+CleanMappings carve_background_surface(ModifiableObject background_surface)
+```
+
+
+### minimal_tetrahedron_internal_distance
+
+```cpp
+InternalDistance minimal_tetrahedron_internal_distance(const Tetrahedron & tetra)
+```
+
+
+### minimal_triangle_internal_distance
+
+```cpp
+InternalDistance minimal_triangle_internal_distance(const Triangle2D & triangle)
+```
+
+
+### fast_tetrahedron_internal_distances
+
+```cpp
+InternalDistances fast_tetrahedron_internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id, const struct InternalDistance::Options & options)
+```
+
+
+### fast_triangle_internal_distances
+
+```cpp
+InternalDistances fast_triangle_internal_distances(const TriangulatedSurface2D & surface, index_t triangle_id, const struct InternalDistance::Options & options)
+```
+
+
+### fast_tetrahedron_internal_distances
+
+```cpp
+InternalDistances fast_tetrahedron_internal_distances(const Tetrahedron & tetra, const struct InternalDistance::Options & options)
+```
+
+
+### fast_triangle_internal_distances
+
+```cpp
+InternalDistances fast_triangle_internal_distances(const Triangle2D & triangle, const struct InternalDistance::Options & options)
+```
+
+
+### has_internal_distance_below_epsilon
+
+```cpp
+bool has_internal_distance_below_epsilon(const Tetrahedron & tetra)
+```
+
+
+### has_internal_distance_below_epsilon
+
+```cpp
+bool has_internal_distance_below_epsilon(const Triangle2D & triangle)
+```
+
+
+### tetrahedron_status
+
+```cpp
+ELEMENT_STATUS tetrahedron_status(const Tetrahedron & tetrahedron)
+```
+
+
+### triangle_status
+
+```cpp
+ELEMENT_STATUS triangle_status(const Triangle2D & triangle)
+```
+
+
+### compute_number_of_negative_tetrahedra
+
+```cpp
+optional compute_number_of_negative_tetrahedra(absl::Span<const Tetrahedron> tetrahedra)
+```
+
+
+### compute_number_of_negative_tetrahedra
+
+```cpp
+optional compute_number_of_negative_tetrahedra(absl::Span<const ModifiedTetrahedron> tetrahedra)
+```
+
+
+### compute_number_of_negative_triangles
+
+```cpp
+optional compute_number_of_negative_triangles(Span triangles)
+```
+
+
+### compute_number_of_negative_triangles
+
+```cpp
+optional compute_number_of_negative_triangles(Span triangles)
+```
+
+
+### edge_from_internal_distance
+
+```cpp
+PolyhedronFacetEdge edge_from_internal_distance(const SolidMesh3D & solid, index_t tetrahedron_id, const InternalDistance & idistance)
+```
+
+
+### edge_from_internal_distance
+
+```cpp
+PolygonEdge edge_from_internal_distance(const SurfaceMesh2D & surface, index_t triangle_id, const InternalDistance & idistance)
 ```
 
 
@@ -163,108 +284,17 @@ ALLOWED_COLLAPSE_EDGE_VERTEX allowed_split_collapse_edge_by_constraints(const Mo
 ```
 
 
+### decimate_background_surface
+
+```cpp
+void decimate_background_surface(BackgroundSurfaceConstraintModifier & constraint_modifier)
+```
+
+
 ### epsilon_optimize_background_surface_elements
 
 ```cpp
 void epsilon_optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, Span triangles)
-```
-
-
-### minimal_tetrahedron_internal_distance
-
-```cpp
-InternalDistance minimal_tetrahedron_internal_distance(const Tetrahedron & tetra)
-```
-
-
-### minimal_triangle_internal_distance
-
-```cpp
-InternalDistance minimal_triangle_internal_distance(const Triangle2D & triangle)
-```
-
-
-### fast_tetrahedron_internal_distances
-
-```cpp
-InternalDistances fast_tetrahedron_internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id, const struct InternalDistance::Options & options)
-```
-
-
-### fast_triangle_internal_distances
-
-```cpp
-InternalDistances fast_triangle_internal_distances(const TriangulatedSurface2D & surface, index_t triangle_id, const struct InternalDistance::Options & options)
-```
-
-
-### fast_tetrahedron_internal_distances
-
-```cpp
-InternalDistances fast_tetrahedron_internal_distances(const Tetrahedron & tetra, const struct InternalDistance::Options & options)
-```
-
-
-### fast_triangle_internal_distances
-
-```cpp
-InternalDistances fast_triangle_internal_distances(const Triangle2D & triangle, const struct InternalDistance::Options & options)
-```
-
-
-### has_internal_distance_below_epsilon
-
-```cpp
-bool has_internal_distance_below_epsilon(const Tetrahedron & tetra)
-```
-
-
-### tetrahedron_status
-
-```cpp
-ELEMENT_STATUS tetrahedron_status(const Tetrahedron & tetrahedron)
-```
-
-
-### triangle_status
-
-```cpp
-ELEMENT_STATUS triangle_status(const Triangle2D & triangle)
-```
-
-
-### compute_number_of_negative_tetrahedra
-
-```cpp
-optional compute_number_of_negative_tetrahedra(absl::Span<const Tetrahedron> tetrahedra)
-```
-
-
-### compute_number_of_negative_tetrahedra
-
-```cpp
-optional compute_number_of_negative_tetrahedra(absl::Span<const ModifiedTetrahedron> tetrahedra)
-```
-
-
-### compute_number_of_negative_triangles
-
-```cpp
-optional compute_number_of_negative_triangles(Span triangles)
-```
-
-
-### edge_from_internal_distance
-
-```cpp
-PolyhedronFacetEdge edge_from_internal_distance(const SolidMesh3D & solid, index_t tetrahedron_id, const InternalDistance & idistance)
-```
-
-
-### edge_from_internal_distance
-
-```cpp
-PolygonEdge edge_from_internal_distance(const SurfaceMesh2D & surface, index_t triangle_id, const InternalDistance & idistance)
 ```
 
 
@@ -275,17 +305,24 @@ H AbslHashValue(H h, const ElementStamp & element_stamp)
 ```
 
 
-### does_collapse_edge_improve_metric
+### optimize_background_surface_elements
 
 ```cpp
-bool does_collapse_edge_improve_metric(const BackgroundSurface & surface, const PolygonEdge & edge, const Point2D & collapse_point, const BackgroundSurfaceImprovementSimulator & improvement_simulator)
+void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, index_t first_element)
 ```
 
 
-### does_swap_edge_improve_metric
+### simplify_background_surface_multilayers
 
 ```cpp
-bool does_swap_edge_improve_metric(const BackgroundSurface & surface, const PolygonEdge & edge, const BackgroundSurfaceImprovementSimulator & improvement_simulator)
+std::optional<std::vector<index_t> > simplify_background_surface_multilayers(BackgroundSurfaceConstraintModifier & constraint_modifier, Span triangles, const InfiniteLine2D & line)
+```
+
+
+### detect_coplanar_multilayers
+
+```cpp
+std::tuple<std::vector<geode::index_t>, OwnerInfiniteLine2D> detect_coplanar_multilayers(const BackgroundSurface & surface, index_t triangle_id)
 ```
 
 
@@ -520,6 +557,20 @@ vector find_unique_facet_normals(const geode::internal::BackgroundSolid & backgr
 ```
 
 
+### simplify_background_solid_multilayers
+
+```cpp
+MultilayerData simplify_background_solid_multilayers(BackgroundSolidConstraintModifier & constraint_modifier, Span tetrahedra, const Plane & plane)
+```
+
+
+### detect_coplanar_multilayers
+
+```cpp
+optional detect_coplanar_multilayers(const BackgroundSolid & solid, index_t tetrahedron_id)
+```
+
+
 ### simplify_background_solid_macro_edge
 
 ```cpp
@@ -534,10 +585,17 @@ void simplify_background_solid_macro_facet(BackgroundSolidConstraintModifier & c
 ```
 
 
-### optimize_background_surface_elements
+### does_collapse_edge_improve_metric
 
 ```cpp
-void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, index_t first_element)
+bool does_collapse_edge_improve_metric(const BackgroundSurface & surface, const PolygonEdge & edge, const Point2D & collapse_point, const BackgroundSurfaceImprovementSimulator & improvement_simulator)
+```
+
+
+### does_swap_edge_improve_metric
+
+```cpp
+bool does_swap_edge_improve_metric(const BackgroundSurface & surface, const PolygonEdge & edge, const BackgroundSurfaceImprovementSimulator & improvement_simulator)
 ```
 
 
@@ -646,10 +704,17 @@ vector epsilon_optimize_background_brep_elements(BackgroundBRepConstraintModifie
 ```
 
 
-### has_internal_distance_below_epsilon
+### add_macro_info
 
 ```cpp
-bool has_internal_distance_below_epsilon(const Triangle2D & triangle)
+void add_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribute, const MacroInfo & macro_info, index_t background_mesh_element_id)
+```
+
+
+### remove_macro_info
+
+```cpp
+void remove_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribute, const MacroInfo & macro_info, index_t background_mesh_element_id)
 ```
 
 

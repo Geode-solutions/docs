@@ -57,6 +57,13 @@ public void ~BackgroundSolidInternalDistanceOptimizer()
 ```
 
 
+### apply
+
+```cpp
+public void apply(Span elements)
+```
+
+
 ### BackgroundSolidInternalDistanceOptimizer
 
 ```cpp

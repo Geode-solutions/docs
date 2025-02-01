@@ -24,29 +24,13 @@ const name = words.join('-');
 
 * [BackgroundBRepLibrary](BackgroundBRepLibrary.md)
 * [BackgroundCommonLibrary](BackgroundCommonLibrary.md)
+* [BackgroundLineLibrary](BackgroundLineLibrary.md)
 * [BackgroundSolidLibrary](BackgroundSolidLibrary.md)
 * [BackgroundSurfaceLibrary](BackgroundSurfaceLibrary.md)
 * [MeshElement](MeshElement.md)
 * [ModifiedTetrahedron](ModifiedTetrahedron.md)
+* [ModifiedTriangle](ModifiedTriangle.md)
 * [Modifier](Modifier.md)
 * [uuid](uuid.md)
-
-
-## Functions
-
-### add_macro_info
-
-```cpp
-void add_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribute, const MacroInfo & macro_info, index_t background_mesh_element_id)
-```
-
-
-### remove_macro_info
-
-```cpp
-void remove_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribute, const MacroInfo & macro_info, index_t background_mesh_element_id)
-```
-
-
 
 
