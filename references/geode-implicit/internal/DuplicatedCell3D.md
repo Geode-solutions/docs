@@ -86,10 +86,10 @@ public bool cell_duplicate_is_active(index_t cell_duplicate)
 ```
 
 
-### set_node_as_inactive
+### set_node_duplicate_as_inactive
 
 ```cpp
-public void set_node_as_inactive(local_index_t cell_node)
+public void set_node_duplicate_as_inactive(local_index_t cell_node)
 ```
 
 
