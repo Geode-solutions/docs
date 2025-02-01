@@ -74,5 +74,12 @@ unique_ptr build_solid(const BoundingBox3D & bbox, const Metric3D & metric)
 ```
 
 
+### output_subgraphs
+
+```cpp
+void output_subgraphs(const Graph & graph, Span subgraph_ids, index_t nb_subgraph)
+```
+
+
 
 

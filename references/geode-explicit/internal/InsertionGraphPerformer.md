@@ -33,21 +33,21 @@ public void ~InsertionGraphPerformer()
 ### analyze_graph
 
 ```cpp
-public void analyze_graph()
+public void analyze_graph(bool parallel)
 ```
 
 
 ### process_subgraphs
 
 ```cpp
-public void process_subgraphs(SubGraphAction & action)
+public flat_hash_map process_subgraphs(SubGraphAction & action)
 ```
 
 
 ### edit_graph
 
 ```cpp
-public void edit_graph()
+public void edit_graph(const OldToNews & old_to_news)
 ```
 
 

@@ -14,6 +14,12 @@ const name = words.join('-');
 # class BRepExplicitModeler
 
 
+## Records
+
+Parameters
+
+
+
 ## Functions
 
 ### BRepExplicitModeler
@@ -103,7 +109,7 @@ public void add_brep(const BRep & brep)
 ### process
 
 ```cpp
-public void process()
+public void process(const Parameters & parameters)
 ```
 
 
@@ -142,7 +148,7 @@ public unique_ptr get_point_set(const uuid & point_set_id)
 ```
 
 
- Creates a clone of the (modified) point set with given point_set_id. Returns nullptr if the point_set_id does not exist.
+ Creates a clone of the (modified) point set with given         point_set_id. Returns nullptr if the point_set_id does not exist.
 
 **point_set_id** [in] the id of the point set to retrieve
 
@@ -151,7 +157,7 @@ public unique_ptr get_point_set(const uuid & point_set_id)
 ### build
 
 ```cpp
-public tuple build()
+public tuple build(const Parameters & parameters)
 ```
 
 

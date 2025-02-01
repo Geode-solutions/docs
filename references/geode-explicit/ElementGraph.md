@@ -156,6 +156,20 @@ public void add_isolated_graph_node(const ComponentMeshElement & element)
 ```
 
 
+### delete_all_pairs
+
+```cpp
+public void delete_all_pairs()
+```
+
+
+### resize_maps
+
+```cpp
+public void resize_maps(const Meshes & meshes)
+```
+
+
 ### clean_graph
 
 ```cpp
