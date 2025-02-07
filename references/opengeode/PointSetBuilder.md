@@ -44,6 +44,13 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<dimensi
 
 ## Functions
 
+### PointSetBuilder
+
+```cpp
+public void PointSetBuilder<dimension>(PointSetBuilder<dimension> && )
+```
+
+
 ### create
 
 ```cpp

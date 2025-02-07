@@ -22,6 +22,13 @@ Inherits from SolidMeshBuilder<dimension>
 
 ## Functions
 
+### TetrahedralSolidBuilder
+
+```cpp
+public void TetrahedralSolidBuilder<dimension>(TetrahedralSolidBuilder<dimension> && )
+```
+
+
 ### create
 
 ```cpp

@@ -29,6 +29,13 @@ public void GridBuilder<dimension>(Grid<dimension> & grid)
 ```
 
 
+### GridBuilder
+
+```cpp
+public void GridBuilder<dimension>(GridBuilder<dimension> && )
+```
+
+
 ### set_grid_origin
 
 ```cpp

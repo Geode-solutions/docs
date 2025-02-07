@@ -40,6 +40,13 @@ public void OpenGeodeEdgedCurveBuilder<dimension>(OpenGeodeEdgedCurve<dimension>
 ```
 
 
+### OpenGeodeEdgedCurveBuilder
+
+```cpp
+public void OpenGeodeEdgedCurveBuilder<dimension>(OpenGeodeEdgedCurveBuilder<dimension> && )
+```
+
+
 
 
 # class OpenGeodeEdgedCurveBuilder

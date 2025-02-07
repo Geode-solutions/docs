@@ -27,6 +27,13 @@ public void SolidEdgesBuilder<>(SolidEdges<dimension> & edges)
 ```
 
 
+### SolidEdgesBuilder
+
+```cpp
+public void SolidEdgesBuilder<>(SolidEdgesBuilder<> && )
+```
+
+
 ### delete_isolated_edges
 
 ```cpp

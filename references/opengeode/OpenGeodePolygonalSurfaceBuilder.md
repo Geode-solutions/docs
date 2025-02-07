@@ -40,6 +40,13 @@ public void OpenGeodePolygonalSurfaceBuilder<dimension>(OpenGeodePolygonalSurfac
 ```
 
 
+### OpenGeodePolygonalSurfaceBuilder
+
+```cpp
+public void OpenGeodePolygonalSurfaceBuilder<dimension>(OpenGeodePolygonalSurfaceBuilder<dimension> && )
+```
+
+
 
 
 # class OpenGeodePolygonalSurfaceBuilder

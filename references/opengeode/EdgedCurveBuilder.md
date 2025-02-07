@@ -53,6 +53,13 @@ Inherits from GraphBuilder, CoordinateReferenceSystemManagersBuilder<dimension>
 
 ## Functions
 
+### EdgedCurveBuilder
+
+```cpp
+public void EdgedCurveBuilder<dimension>(EdgedCurveBuilder<dimension> && )
+```
+
+
 ### create
 
 ```cpp

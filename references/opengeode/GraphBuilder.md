@@ -26,6 +26,13 @@ Inherits from VertexSetBuilder
 
 ## Functions
 
+### GraphBuilder
+
+```cpp
+public void GraphBuilder(GraphBuilder && )
+```
+
+
 ### create
 
 ```cpp

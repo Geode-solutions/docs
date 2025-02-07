@@ -35,6 +35,13 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<dimensi
 
 ## Functions
 
+### SurfaceMeshBuilder
+
+```cpp
+public void SurfaceMeshBuilder<dimension>(SurfaceMeshBuilder<dimension> && )
+```
+
+
 ### ~SurfaceMeshBuilder
 
 ```cpp

@@ -26,6 +26,13 @@ Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<dimensi
 
 ## Functions
 
+### SolidMeshBuilder
+
+```cpp
+public void SolidMeshBuilder<>(SolidMeshBuilder<> && )
+```
+
+
 ### ~SolidMeshBuilder
 
 ```cpp

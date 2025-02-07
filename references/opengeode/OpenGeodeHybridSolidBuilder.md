@@ -40,6 +40,13 @@ public void OpenGeodeHybridSolidBuilder<dimension>(OpenGeodeHybridSolid<dimensio
 ```
 
 
+### OpenGeodeHybridSolidBuilder
+
+```cpp
+public void OpenGeodeHybridSolidBuilder<dimension>(OpenGeodeHybridSolidBuilder<dimension> && )
+```
+
+
 
 
 # class OpenGeodeHybridSolidBuilder

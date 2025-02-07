@@ -22,6 +22,13 @@ Inherits from SolidMeshBuilder<dimension>
 
 ## Functions
 
+### HybridSolidBuilder
+
+```cpp
+public void HybridSolidBuilder<dimension>(HybridSolidBuilder<dimension> && )
+```
+
+
 ### create
 
 ```cpp

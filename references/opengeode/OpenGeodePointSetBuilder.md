@@ -40,6 +40,13 @@ public void OpenGeodePointSetBuilder<dimension>(OpenGeodePointSet<dimension> & m
 ```
 
 
+### OpenGeodePointSetBuilder
+
+```cpp
+public void OpenGeodePointSetBuilder<dimension>(OpenGeodePointSetBuilder<dimension> && )
+```
+
+
 
 
 # class OpenGeodePointSetBuilder

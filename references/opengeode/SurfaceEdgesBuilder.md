@@ -27,6 +27,13 @@ public void SurfaceEdgesBuilder<>(SurfaceEdges<dimension> & edges)
 ```
 
 
+### SurfaceEdgesBuilder
+
+```cpp
+public void SurfaceEdgesBuilder<>(SurfaceEdgesBuilder<> && )
+```
+
+
 ### delete_isolated_edges
 
 ```cpp

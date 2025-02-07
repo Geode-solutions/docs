@@ -40,5 +40,12 @@ public void OpenGeodeGraphBuilder(OpenGeodeGraph & mesh)
 ```
 
 
+### OpenGeodeGraphBuilder
+
+```cpp
+public void OpenGeodeGraphBuilder(OpenGeodeGraphBuilder && )
+```
+
+
 
 

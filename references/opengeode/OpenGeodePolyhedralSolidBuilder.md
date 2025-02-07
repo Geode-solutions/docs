@@ -40,6 +40,13 @@ public void OpenGeodePolyhedralSolidBuilder<dimension>(OpenGeodePolyhedralSolid<
 ```
 
 
+### OpenGeodePolyhedralSolidBuilder
+
+```cpp
+public void OpenGeodePolyhedralSolidBuilder<dimension>(OpenGeodePolyhedralSolidBuilder<dimension> && )
+```
+
+
 
 
 # class OpenGeodePolyhedralSolidBuilder

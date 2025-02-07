@@ -44,6 +44,13 @@ Inherits from SurfaceMeshBuilder<dimension>
 
 ## Functions
 
+### TriangulatedSurfaceBuilder
+
+```cpp
+public void TriangulatedSurfaceBuilder<dimension>(TriangulatedSurfaceBuilder<dimension> && )
+```
+
+
 ### create
 
 ```cpp

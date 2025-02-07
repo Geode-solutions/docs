@@ -27,6 +27,13 @@ public void SolidFacetsBuilder<>(SolidFacets<dimension> & facets)
 ```
 
 
+### SolidFacetsBuilder
+
+```cpp
+public void SolidFacetsBuilder<>(SolidFacetsBuilder<> && )
+```
+
+
 ### delete_isolated_facets
 
 ```cpp

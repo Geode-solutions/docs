@@ -47,13 +47,6 @@ public void VertexSetBuilder(VertexSetBuilder && )
 ```
 
 
-### operator=
-
-```cpp
-public VertexSetBuilder & operator=(VertexSetBuilder && )
-```
-
-
 ### ~VertexSetBuilder
 
 ```cpp

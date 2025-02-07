@@ -22,6 +22,13 @@ Inherits from SurfaceMeshBuilder<2>, GridBuilder<2>
 
 ## Functions
 
+### RegularGridBuilder
+
+```cpp
+public void RegularGridBuilder(RegularGridBuilder<2> && )
+```
+
+
 ### create
 
 ```cpp
@@ -90,6 +97,13 @@ Inherits from SolidMeshBuilder<3>, GridBuilder<3>
 
 
 ## Functions
+
+### RegularGridBuilder
+
+```cpp
+public void RegularGridBuilder(RegularGridBuilder<3> && )
+```
+
 
 ### create
 

@@ -40,6 +40,13 @@ public void OpenGeodeTetrahedralSolidBuilder<dimension>(OpenGeodeTetrahedralSoli
 ```
 
 
+### OpenGeodeTetrahedralSolidBuilder
+
+```cpp
+public void OpenGeodeTetrahedralSolidBuilder<dimension>(OpenGeodeTetrahedralSolidBuilder<dimension> && )
+```
+
+
 
 
 # class OpenGeodeTetrahedralSolidBuilder

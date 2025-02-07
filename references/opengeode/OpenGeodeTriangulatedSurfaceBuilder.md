@@ -58,5 +58,12 @@ public void OpenGeodeTriangulatedSurfaceBuilder<dimension>(OpenGeodeTriangulated
 ```
 
 
+### OpenGeodeTriangulatedSurfaceBuilder
+
+```cpp
+public void OpenGeodeTriangulatedSurfaceBuilder<dimension>(OpenGeodeTriangulatedSurfaceBuilder<dimension> && )
+```
+
+
 
 

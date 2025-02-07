@@ -26,6 +26,13 @@ Inherits from SolidMeshBuilder<dimension>
 
 ## Functions
 
+### PolyhedralSolidBuilder
+
+```cpp
+public void PolyhedralSolidBuilder<>(PolyhedralSolidBuilder<> && )
+```
+
+
 ### create
 
 ```cpp

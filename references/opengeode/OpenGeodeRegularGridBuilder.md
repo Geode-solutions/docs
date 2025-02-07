@@ -42,6 +42,13 @@ public void OpenGeodeRegularGridBuilder(OpenGeodeRegularGrid<2> & mesh)
 ```
 
 
+### OpenGeodeRegularGridBuilder
+
+```cpp
+public void OpenGeodeRegularGridBuilder(OpenGeodeRegularGridBuilder<2> && )
+```
+
+
 
 
 # class OpenGeodeRegularGridBuilder
@@ -70,6 +77,13 @@ public void OpenGeodeRegularGridBuilder(VertexSet & vertex_set, MeshBuilderFacto
 
 ```cpp
 public void OpenGeodeRegularGridBuilder(OpenGeodeRegularGrid<3> & mesh)
+```
+
+
+### OpenGeodeRegularGridBuilder
+
+```cpp
+public void OpenGeodeRegularGridBuilder(OpenGeodeRegularGridBuilder<3> && )
 ```
 
 

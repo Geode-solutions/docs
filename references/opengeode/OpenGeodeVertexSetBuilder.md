@@ -40,5 +40,12 @@ public void OpenGeodeVertexSetBuilder(OpenGeodeVertexSet & mesh)
 ```
 
 
+### OpenGeodeVertexSetBuilder
+
+```cpp
+public void OpenGeodeVertexSetBuilder(OpenGeodeVertexSetBuilder && )
+```
+
+
 
 

@@ -44,6 +44,13 @@ Inherits from SurfaceMeshBuilder<dimension>
 
 ## Functions
 
+### PolygonalSurfaceBuilder
+
+```cpp
+public void PolygonalSurfaceBuilder<dimension>(PolygonalSurfaceBuilder<dimension> && )
+```
+
+
 ### create
 
 ```cpp
