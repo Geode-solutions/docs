@@ -51,6 +51,7 @@ const name = words.join('-');
 * [STLInput](STLInput.md)
 * [STLOutput](STLOutput.md)
 * [SVGInput](SVGInput.md)
+* [TIFFInput](TIFFInput.md)
 * [TriangleOutput](TriangleOutput.md)
 
 

@@ -17,6 +17,9 @@ const name = words.join('-');
 
 ## Records
 
+* [DotPolygonalOutput](DotPolygonalOutput.md)
+* [DotSurfaceOutputImpl](DotSurfaceOutputImpl.md)
+* [DotTriangulatedOutput](DotTriangulatedOutput.md)
 * [VTIGridInputImpl](VTIGridInputImpl.md)
 * [VTIGridOutputImpl](VTIGridOutputImpl.md)
 * [VTILightRegularGridInput](VTILightRegularGridInput.md)
