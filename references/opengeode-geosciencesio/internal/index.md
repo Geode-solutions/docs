@@ -20,6 +20,7 @@ const name = words.join('-');
 * [BRepFemOutput](BRepFemOutput.md)
 * [CRSData](CRSData.md)
 * [ECurveData](ECurveData.md)
+* [GEOTIFFInput](GEOTIFFInput.md)
 * [GRDECLInput](GRDECLInput.md)
 * [GeosExporterImpl](GeosExporterImpl.md)
 * [HeaderData](HeaderData.md)
