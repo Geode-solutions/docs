@@ -106,5 +106,12 @@ public optional macro_edge_path(const std::array<index_t, 2> & edge_vertices, co
 ```
 
 
+### macro_element_patch
+
+```cpp
+public optional macro_element_patch(Span boundary_edges, const MeshElement & macro_element)
+```
+
+
 
 

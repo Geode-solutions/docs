@@ -64,7 +64,10 @@ const name = words.join('-');
 * [BlockElement](BlockElement.md)
 * [BlockIsovalueInserter](BlockIsovalueInserter.md)
 * [BlocksAllowedByConstraints](BlocksAllowedByConstraints.md)
+* [CorafinatedSurface](CorafinatedSurface.md)
+* [DetermineSplitsOrderException](DetermineSplitsOrderException.md)
 * [EdgeMacroInfoConfig](EdgeMacroInfoConfig.md)
+* [Element2Split](Element2Split.md)
 * [ElementInsertionInfo](ElementInsertionInfo.md)
 * [ElementSearchBuilder](ElementSearchBuilder.md)
 * [ElementSearch](ElementSearch.md)
@@ -81,13 +84,14 @@ const name = words.join('-');
 * [MacroInfoBuilder3D](MacroInfoBuilder3D.md)
 * [MacroInfoBuilder](MacroInfoBuilder.md)
 * [MacroInfo](MacroInfo.md)
-* [MultilayerData](MultilayerData.md)
+* [MultilayerException](MultilayerException.md)
 * [Orchestrator](Orchestrator.md)
 * [PointsCmp](PointsCmp.md)
 * [PointsHash](PointsHash.md)
 * [PointsInternalDistanceImpl](PointsInternalDistanceImpl.md)
 * [Points](Points.md)
 * [ScalarFunctionIsovalue](ScalarFunctionIsovalue.md)
+* [Skin](Skin.md)
 * [SkipNonMandatory](SkipNonMandatory.md)
 * [SkipNothing](SkipNothing.md)
 * [ThreePointsInternalDistance](ThreePointsInternalDistance.md)
@@ -315,7 +319,7 @@ void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & 
 ### simplify_background_surface_multilayers
 
 ```cpp
-std::optional<std::vector<index_t> > simplify_background_surface_multilayers(BackgroundSurfaceConstraintModifier & constraint_modifier, Span triangles, const InfiniteLine2D & line)
+optional simplify_background_surface_multilayers(BackgroundSurfaceConstraintModifier & constraint_modifier, Span triangles, const InfiniteLine2D & line)
 ```
 
 
@@ -557,10 +561,17 @@ vector find_unique_facet_normals(const geode::internal::BackgroundSolid & backgr
 ```
 
 
+### determine_splits_order
+
+```cpp
+optional determine_splits_order(const CorafinatedSurface & corafinated_surface, Skin & skin)
+```
+
+
 ### simplify_background_solid_multilayers
 
 ```cpp
-MultilayerData simplify_background_solid_multilayers(BackgroundSolidConstraintModifier & constraint_modifier, Span tetrahedra, const Plane & plane)
+vector simplify_background_solid_multilayers(BackgroundSolidConstraintModifier & constraint_modifier, Span tetrahedra, const Plane & plane)
 ```
 
 

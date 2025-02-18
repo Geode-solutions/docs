@@ -43,6 +43,13 @@ public const std::vector<MeshEdge> & incident_macro_edges(index_t background_mes
 public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 ```
 
+### common_macro_edges
+
+```cpp
+public vector common_macro_edges(index_t vertex, index_t other_vertex)
+```
+
+
 ### add_macro_edge_to_background_mesh_edge
 
 ```cpp

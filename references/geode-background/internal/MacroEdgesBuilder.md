@@ -16,6 +16,13 @@ const name = words.join('-');
 
 ## Functions
 
+### MacroEdgesBuilder
+
+```cpp
+public void MacroEdgesBuilder(MacroEdgesBuilder && )
+```
+
+
 ### ~MacroEdgesBuilder
 
 ```cpp

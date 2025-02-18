@@ -36,6 +36,13 @@ public void BackgroundSurfaceBuilder(BackgroundSurface & background)
 ```
 
 
+### BackgroundSurfaceBuilder
+
+```cpp
+public void BackgroundSurfaceBuilder(BackgroundSurfaceBuilder && )
+```
+
+
 ### ~BackgroundSurfaceBuilder
 
 ```cpp

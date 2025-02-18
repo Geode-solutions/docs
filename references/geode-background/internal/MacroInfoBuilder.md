@@ -16,6 +16,13 @@ const name = words.join('-');
 
 ## Functions
 
+### MacroInfoBuilder
+
+```cpp
+public void MacroInfoBuilder(MacroInfoBuilder && )
+```
+
+
 ### ~MacroInfoBuilder
 
 ```cpp

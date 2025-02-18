@@ -29,6 +29,13 @@ public void BackgroundSurfaceModifier(const BackgroundSurface & mesh, Background
 ```
 
 
+### BackgroundSurfaceModifier
+
+```cpp
+public void BackgroundSurfaceModifier(BackgroundSurfaceModifier && )
+```
+
+
 ### ~BackgroundSurfaceModifier
 
 ```cpp

@@ -11,43 +11,56 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct MultilayerData
+# struct Element2Split
 
 
 ## Members
 
 ```cpp
-public vector modified_tetrahedra
+public InlinedVector element_points
 
 ```
 
 ```cpp
-public array edge_to_split
+public index_t split_point
 
 ```
 
 ```cpp
-public Point split_point
+public TYPE type
 
 ```
+
+
+
+## Functions
+
+### Element2Split
 
 ```cpp
-public MultilayerStatus status
-
+public void Element2Split()
 ```
+
+
+### string
+
+```cpp
+public basic_string string()
+```
+
 
 
 
 ## Enums
 
-| enum class MultilayerStatus |
+| enum class TYPE |
 
 --
 
-| forbidden_edges_created |
-| forbidden_split_done |
-| merge_failed |
-| sucess |
+| none |
+| split_edge |
+| split_polygon |
+| split_collapse |
 
 
 

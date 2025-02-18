@@ -23,6 +23,13 @@ public void BackgroundSolidInserter(ModifiableObject solid, BackgroundSolidBuild
 ```
 
 
+### BackgroundSolidInserter
+
+```cpp
+public void BackgroundSolidInserter(BackgroundSolidInserter && other)
+```
+
+
 ### ~BackgroundSolidInserter
 
 ```cpp

@@ -22,6 +22,13 @@ Inherits from MacroInfoBuilder, MacroEdgesBuilder
 
 ## Functions
 
+### MacroInfoBuilder2D
+
+```cpp
+public void MacroInfoBuilder2D(MacroInfoBuilder2D && )
+```
+
+
 ### ~MacroInfoBuilder2D
 
 ```cpp
