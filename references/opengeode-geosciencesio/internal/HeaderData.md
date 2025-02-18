@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public basic_string name
+public optional name
 
 ```
 
