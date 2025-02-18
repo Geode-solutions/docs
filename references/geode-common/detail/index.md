@@ -66,10 +66,34 @@ optional snapping_detection(const EdgedCurve<dimension> & curve, index_t edge, c
 ```
 
 
+### tetrahedra_after_split_split_collapse
+
+```cpp
+TetrahedraAfter tetrahedra_after_split_split_collapse(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & collapse_point, const PolyhedraAroundEdge & poly_around_edges, const index_t ssc_tetra_index)
+```
+
+
+ Return all the tetrahedra resulting from a double edge split and edge collapse. The split-collapse operations are not applied.
+
+**mesh** [in] Tetrahedral mesh on which simulate operation.
+
+**edge0** [in] Index of the first PolyhedronFacetEdge on which simulate split.
+
+**edge1** [in] Index of the second PolyhedronFacetEdge on which simulate split.
+
+**vertex** [in] Index towards which the split vertex is collapse on.
+
 ### is_swap_edge_valid
 
 ```cpp
 bool is_swap_edge_valid(const BRep & brep, const BRepComponentMeshEdges & edges, index_t unique_apex)
+```
+
+
+### is_swap_edge_valid
+
+```cpp
+bool is_swap_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edges, index_t unique_apex)
 ```
 
 

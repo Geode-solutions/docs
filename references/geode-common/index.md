@@ -819,10 +819,10 @@ bool is_split_collapse_facet_valid(const TetrahedralSolid3D & mesh, const Polyhe
 ```
 
 
-### is_split_split_collapse_edge_valid
+### is_split_split_collapse_valid
 
 ```cpp
-bool is_split_split_collapse_edge_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
+bool is_split_split_collapse_valid(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
 ```
 
 
@@ -1007,10 +1007,10 @@ SplitCollapseTetrahedraAfter tetrahedra_after_split_collapse_edge(const Tetrahed
 ```
 
 
-### tetrahedra_after_split_split_collapse_edge
+### tetrahedra_after_split_split_collapse
 
 ```cpp
-TetrahedraAfter tetrahedra_after_split_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & collapse_point)
+TetrahedraAfter tetrahedra_after_split_split_collapse(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & collapse_point)
 ```
 
 
@@ -1187,6 +1187,27 @@ BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Surface
 
 ```cpp
 BRepCollapseEdgeValidity collapse_edge_validity(const BRep & brep, const Line3D & line, index_t edge, const Point3D & point)
+```
+
+
+### is_split_split_collapse_valid
+
+```cpp
+bool is_split_split_collapse_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
+```
+
+
+### is_split_collapse_edge_valid
+
+```cpp
+bool is_split_collapse_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex)
+```
+
+
+### is_split_collapse_edge_valid
+
+```cpp
+bool is_split_collapse_edge_valid(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const Point3D & point)
 ```
 
 
@@ -1380,6 +1401,27 @@ BRepElementsAfterSplitCollapse elements_after_split_collapse_facet(const BRep & 
 
 ```cpp
 bool are_component_mesh_vertices_included(const ComponentMeshVertexInclusionQuery & query)
+```
+
+
+### are_split_collapse_block_facets_valids
+
+```cpp
+bool are_split_collapse_block_facets_valids(const BRep & brep, const Block3D & initial_block, const PolyhedronFacet & initial_facet, const geode::struct BRepComponentMeshPolygons::BlockPolygons & block_polygons, const geode::index_t facet_opposite_vertex)
+```
+
+
+### elements_after_block_facets_split_collapse
+
+```cpp
+void elements_after_block_facets_split_collapse(const BRep & brep, const geode::struct BRepComponentMeshPolygons::BlockPolygons & block_triangles, const Block3D & initial_block, const PolyhedronFacet & initial_facet, const Point3D & point, BRepElementsAfterSplitCollapse & result)
+```
+
+
+### elements_after_block_facets_split_collapse
+
+```cpp
+void elements_after_block_facets_split_collapse(const BRep & brep, const geode::struct BRepComponentMeshPolygons::BlockPolygons & block_triangles, const Block3D & initial_block, const PolyhedronFacet & initial_facet, BRepElementsAfterSplitCollapse & result)
 ```
 
 
