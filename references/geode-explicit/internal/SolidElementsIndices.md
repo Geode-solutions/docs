@@ -23,7 +23,7 @@ Inherits from MeshElementsIndices
 ## Members
 
 ```cpp
-public vector facets
+public int facets
 
 ```
 
