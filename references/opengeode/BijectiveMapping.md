@@ -32,14 +32,28 @@ public void BijectiveMapping<T1, T2>()
 ### BijectiveMapping
 
 ```cpp
-public void BijectiveMapping<T1, T2>(BijectiveMapping<T1, T2> && other)
+public void BijectiveMapping<T1, T2>(BijectiveMapping<T1, T2> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public BijectiveMapping<T1, T2> & operator=(BijectiveMapping<T1, T2> && other)
+public BijectiveMapping<T1, T2> & operator=(BijectiveMapping<T1, T2> & )
+```
+
+
+### BijectiveMapping
+
+```cpp
+public void BijectiveMapping<T1, T2>(BijectiveMapping<T1, T2> && )
+```
+
+
+### operator=
+
+```cpp
+public BijectiveMapping<T1, T2> & operator=(BijectiveMapping<T1, T2> && )
 ```
 
 

@@ -56,6 +56,7 @@ const name = words.join('-');
 * [CRSTag](CRSTag.md)
 * [CachedValue](CachedValue.md)
 * [CellArray](CellArray.md)
+* [Chronometer](Chronometer.md)
 * [Circle](Circle.md)
 * [ComponentID](ComponentID.md)
 * [ComponentMeshElement](ComponentMeshElement.md)
@@ -1790,6 +1791,13 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 ```
 
 
+### is_zip_file
+
+```cpp
+bool is_zip_file(basic_string_view file)
+```
+
+
 ### register_model_serialize_pcontext
 
 ```cpp
@@ -2574,97 +2582,6 @@ void register_geode_mesh()
 ```
 
 
-### file_exists
-
-```cpp
-bool file_exists(basic_string_view file_path)
-```
-
-
-### check_keyword
-
-```cpp
-void check_keyword(std::ifstream & file, basic_string_view keyword)
-```
-
-
-### line_starts_with
-
-```cpp
-bool line_starts_with(std::ifstream & file, basic_string_view check)
-```
-
-
-### goto_keyword
-
-```cpp
-basic_string goto_keyword(std::ifstream & file, basic_string_view word)
-```
-
-
-### goto_keywords
-
-```cpp
-basic_string goto_keywords(std::ifstream & file, Span words)
-```
-
-
-### goto_keyword_if_it_exists
-
-```cpp
-optional goto_keyword_if_it_exists(std::ifstream & file, basic_string_view word)
-```
-
-
-### next_keyword_if_it_exists
-
-```cpp
-optional next_keyword_if_it_exists(std::ifstream & file, basic_string_view word)
-```
-
-
-### string_split
-
-```cpp
-std::vector<std::string_view> string_split(basic_string_view string)
-```
-
-
-### string_starts_with
-
-```cpp
-bool string_starts_with(basic_string_view string, basic_string_view check)
-```
-
-
-### string_to_index
-
-```cpp
-index_t string_to_index(basic_string_view string)
-```
-
-
-### string_to_int
-
-```cpp
-int string_to_int(basic_string_view string)
-```
-
-
-### string_to_float
-
-```cpp
-float string_to_float(basic_string_view string)
-```
-
-
-### string_to_double
-
-```cpp
-double string_to_double(basic_string_view string)
-```
-
-
 ### tetrahedron_volume_sign
 
 ```cpp
@@ -2866,17 +2783,101 @@ IntersectionResult plane_plane_intersection(const Plane & plane0, const Plane & 
 
 **return** an optional of the intersection line.
 
+### file_exists
+
+```cpp
+bool file_exists(basic_string_view file_path)
+```
+
+
+### check_keyword
+
+```cpp
+void check_keyword(std::ifstream & file, basic_string_view keyword)
+```
+
+
+### line_starts_with
+
+```cpp
+bool line_starts_with(std::ifstream & file, basic_string_view check)
+```
+
+
+### goto_keyword
+
+```cpp
+basic_string goto_keyword(std::ifstream & file, basic_string_view word)
+```
+
+
+### goto_keywords
+
+```cpp
+basic_string goto_keywords(std::ifstream & file, Span words)
+```
+
+
+### goto_keyword_if_it_exists
+
+```cpp
+optional goto_keyword_if_it_exists(std::ifstream & file, basic_string_view word)
+```
+
+
+### next_keyword_if_it_exists
+
+```cpp
+optional next_keyword_if_it_exists(std::ifstream & file, basic_string_view word)
+```
+
+
+### string_split
+
+```cpp
+std::vector<std::string_view> string_split(basic_string_view string)
+```
+
+
+### string_starts_with
+
+```cpp
+bool string_starts_with(basic_string_view string, basic_string_view check)
+```
+
+
+### string_to_index
+
+```cpp
+index_t string_to_index(basic_string_view string)
+```
+
+
+### string_to_int
+
+```cpp
+int string_to_int(basic_string_view string)
+```
+
+
+### string_to_float
+
+```cpp
+float string_to_float(basic_string_view string)
+```
+
+
+### string_to_double
+
+```cpp
+double string_to_double(basic_string_view string)
+```
+
+
 ### register_geode_mesh_input
 
 ```cpp
 void register_geode_mesh_input()
-```
-
-
-### is_zip_file
-
-```cpp
-bool is_zip_file(basic_string_view file)
 ```
 
 

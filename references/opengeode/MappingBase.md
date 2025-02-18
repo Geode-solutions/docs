@@ -16,20 +16,6 @@ const name = words.join('-');
 
 ## Functions
 
-### MappingBase
-
-```cpp
-public void MappingBase<T1, T2, StorageType>(const MappingBase<T1, T2, StorageType> & )
-```
-
-
-### operator=
-
-```cpp
-public MappingBase<T1, T2, StorageType> & operator=(const MappingBase<T1, T2, StorageType> & )
-```
-
-
 ### reserve
 
 ```cpp
@@ -96,14 +82,28 @@ protected void MappingBase<T1, T2, StorageType>()
 ### MappingBase
 
 ```cpp
-protected void MappingBase<T1, T2, StorageType>(MappingBase<T1, T2, StorageType> && other)
+protected void MappingBase<T1, T2, StorageType>(MappingBase<T1, T2, StorageType> & )
 ```
 
 
 ### operator=
 
 ```cpp
-protected MappingBase<T1, T2, StorageType> & operator=(MappingBase<T1, T2, StorageType> && other)
+protected MappingBase<T1, T2, StorageType> & operator=(MappingBase<T1, T2, StorageType> & )
+```
+
+
+### MappingBase
+
+```cpp
+protected void MappingBase<T1, T2, StorageType>(MappingBase<T1, T2, StorageType> && )
+```
+
+
+### operator=
+
+```cpp
+protected MappingBase<T1, T2, StorageType> & operator=(MappingBase<T1, T2, StorageType> && )
 ```
 
 
