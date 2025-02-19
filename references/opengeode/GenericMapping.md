@@ -32,14 +32,14 @@ public void GenericMapping<T1, T2>()
 ### GenericMapping
 
 ```cpp
-public void GenericMapping<T1, T2>(GenericMapping<T1, T2> & )
+public void GenericMapping<T1, T2>(const GenericMapping<T1, T2> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public GenericMapping<T1, T2> & operator=(GenericMapping<T1, T2> & )
+public GenericMapping<T1, T2> & operator=(const GenericMapping<T1, T2> & )
 ```
 
 

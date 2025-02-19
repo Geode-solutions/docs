@@ -82,14 +82,14 @@ protected void MappingBase<T1, T2, StorageType>()
 ### MappingBase
 
 ```cpp
-protected void MappingBase<T1, T2, StorageType>(MappingBase<T1, T2, StorageType> & )
+protected void MappingBase<T1, T2, StorageType>(const MappingBase<T1, T2, StorageType> & )
 ```
 
 
 ### operator=
 
 ```cpp
-protected MappingBase<T1, T2, StorageType> & operator=(MappingBase<T1, T2, StorageType> & )
+protected MappingBase<T1, T2, StorageType> & operator=(const MappingBase<T1, T2, StorageType> & )
 ```
 
 
