@@ -64,7 +64,7 @@ public void Skin()
 ### Skin
 
 ```cpp
-public void Skin(std::unique_ptr<TriangulatedSurface2D> && mesh)
+public void Skin(std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping)
 ```
 
 
