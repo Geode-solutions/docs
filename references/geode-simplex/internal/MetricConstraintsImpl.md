@@ -37,22 +37,27 @@ protected double gradation_
 ```
 
 ```cpp
-protected flat_hash_map corners_
+protected flat_hash_map user_corners_
 
 ```
 
 ```cpp
-protected flat_hash_map lines_
+protected flat_hash_map user_lines_
 
 ```
 
 ```cpp
-protected flat_hash_map surfaces_
+protected flat_hash_map geometric_lines_
 
 ```
 
 ```cpp
-protected flat_hash_map blocks_
+protected flat_hash_map user_surfaces_
+
+```
+
+```cpp
+protected flat_hash_map user_blocks_
 
 ```
 
