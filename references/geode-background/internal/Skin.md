@@ -36,6 +36,11 @@ public GenericMapping skin_to_corafinated_vertex_mapping
 
 ```
 
+```cpp
+public BijectiveMapping skin_to_solid_vertex_mapping
+
+```
+
 
 
 ## Functions

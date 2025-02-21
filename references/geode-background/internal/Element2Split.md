@@ -17,12 +17,12 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public InlinedVector element_points
+public InlinedVector skin_vertices
 
 ```
 
 ```cpp
-public index_t split_point
+public index_t corafinated_vertex
 
 ```
 

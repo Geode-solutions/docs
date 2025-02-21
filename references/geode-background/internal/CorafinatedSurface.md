@@ -72,17 +72,17 @@ public flat_hash_map facet_orientations
 ```
 
 ```cpp
-public BijectiveMapping mesh_to_solid_vertex_mapping
+public BijectiveMapping solid_to_mesh_vertex_mapping
 
 ```
 
 ```cpp
-public BijectiveMapping mesh_to_solid_edge_mapping
+public BijectiveMapping solid_to_mesh_edge_mapping
 
 ```
 
 ```cpp
-public BijectiveMapping mesh_to_solid_facet_mapping
+public BijectiveMapping solid_to_mesh_facet_mapping
 
 ```
 
@@ -150,6 +150,27 @@ public Point point3d(index_t vertex)
 
 ```cpp
 public bool is_edge_exist(index_t begin, index_t end)
+```
+
+
+### build_solid_to_bsurface_vertex_mapping
+
+```cpp
+public void build_solid_to_bsurface_vertex_mapping()
+```
+
+
+### build_solid_to_bsurface_edge_mapping
+
+```cpp
+public void build_solid_to_bsurface_edge_mapping()
+```
+
+
+### build_solid_to_bsurface_facet_mapping
+
+```cpp
+public void build_solid_to_bsurface_facet_mapping()
 ```
 
 
