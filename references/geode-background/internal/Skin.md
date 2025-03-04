@@ -41,6 +41,11 @@ public BijectiveMapping skin_to_solid_vertex_mapping
 
 ```
 
+```cpp
+public bool solid_oriented
+
+```
+
 
 
 ## Functions
@@ -69,7 +74,7 @@ public void Skin()
 ### Skin
 
 ```cpp
-public void Skin(std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping)
+public void Skin(std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
 ```
 
 

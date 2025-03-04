@@ -67,11 +67,6 @@ public unique_ptr intermediate_surface
 ```
 
 ```cpp
-public flat_hash_map facet_orientations
-
-```
-
-```cpp
 public BijectiveMapping solid_to_mesh_vertex_mapping
 
 ```
