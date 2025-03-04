@@ -23,6 +23,20 @@ public void BRepMetricConstraints(const BRep & brep)
 ```
 
 
+### BRepMetricConstraints
+
+```cpp
+public void BRepMetricConstraints(BRepMetricConstraints && other)
+```
+
+
+### operator=
+
+```cpp
+public BRepMetricConstraints & operator=(BRepMetricConstraints && other)
+```
+
+
 ### ~BRepMetricConstraints
 
 ```cpp

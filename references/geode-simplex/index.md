@@ -98,20 +98,6 @@ void mesh_blocks(const BRep & output, BRepBuilder & builder, const Metric3D & me
 ```
 
 
-### relax_background_blocks
-
-```cpp
-void relax_background_blocks(const internal::BackgroundBRep & brep, internal::BackgroundBRepModifier & modifier, internal::BackgroundBRepBuilder & builder)
-```
-
-
-### relax_background_blocks
-
-```cpp
-void relax_background_blocks(const internal::BackgroundBRep & brep, internal::BackgroundBRepModifier & modifier, internal::BackgroundBRepBuilder & builder, const Metric3D & metric)
-```
-
-
 ### relax_blocks
 
 ```cpp

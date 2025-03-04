@@ -18,6 +18,11 @@ const name = words.join('-');
 ## Records
 
 * [BRepSurfaceRelaxer](BRepSurfaceRelaxer.md)
+* [BackgroundBRepEdgeDecimatorOperator](BackgroundBRepEdgeDecimatorOperator.md)
+* [BackgroundBRepEdgeDecimator](BackgroundBRepEdgeDecimator.md)
+* [BackgroundBRepRelaxer](BackgroundBRepRelaxer.md)
+* [BackgroundBRepVertexSmoother](BackgroundBRepVertexSmoother.md)
+* [BackgroundSolidTetrahedronQualityMetricImprovementSimulator](BackgroundSolidTetrahedronQualityMetricImprovementSimulator.md)
 * [BlockSampler](BlockSampler.md)
 * [BlockTetgenMesher](BlockTetgenMesher.md)
 * [Edge](Edge.md)
@@ -44,6 +49,8 @@ const name = words.join('-');
 * [RemeshedSurface](RemeshedSurface.md)
 * [RepairBRepSurfaces](RepairBRepSurfaces.md)
 * [Sampler](Sampler.md)
+* [SolidEdge](SolidEdge.md)
+* [SolidVertex](SolidVertex.md)
 * [Splitter](Splitter.md)
 * [SurfaceInserter](SurfaceInserter.md)
 * [SurfaceRelaxer](SurfaceRelaxer.md)
@@ -179,6 +186,55 @@ void do_remesh_lines_impl(Data & data, Span lines_to_remesh)
 
 ```cpp
 void repair_lines(Data & data)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const SolidEdge & solid_edge)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const SolidVertex & solid_vertex)
+```
+
+
+### relax_background_brep_elements
+
+```cpp
+void relax_background_brep_elements(BRepSamplingData & model)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const Edge & edge)
+```
+
+
+### decimate_edges
+
+```cpp
+void decimate_edges(BackgroundBRepConstraintModifier & constraint_modifier, const geode::Metric3D & metric)
+```
+
+
+### relax_polyhedra
+
+```cpp
+void relax_polyhedra(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, const geode::Metric3D & metric)
+```
+
+
+### smooth_vertices
+
+```cpp
+void smooth_vertices(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 
