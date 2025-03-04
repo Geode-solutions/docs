@@ -46,6 +46,13 @@ public void TetrahedraAfter(TetrahedraAfter && other)
 ```
 
 
+### ~TetrahedraAfter
+
+```cpp
+public void ~TetrahedraAfter()
+```
+
+
 ### operator=
 
 ```cpp
