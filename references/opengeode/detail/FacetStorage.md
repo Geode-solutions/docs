@@ -16,6 +16,13 @@ const name = words.join('-');
 
 ## Functions
 
+### is_opposite
+
+```cpp
+public bool is_opposite(index_t facet_id, const VertexContainer & vertices)
+```
+
+
 ### FacetStorage
 
 ```cpp

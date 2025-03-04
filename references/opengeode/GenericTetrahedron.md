@@ -78,7 +78,7 @@ public const std::array<PointType, 4> & vertices()
 ### bounding_box
 
 ```cpp
-public BoundingBox3D bounding_box()
+public BoundingBox bounding_box()
 ```
 
 

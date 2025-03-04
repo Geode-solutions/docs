@@ -87,6 +87,13 @@ public optional facet_from_vertices(const PolyhedronFacetVertices & vertices)
 
 **vertices** [in] Ordered vertex indices
 
+### is_opposite
+
+```cpp
+public bool is_opposite(index_t facet_id, const PolyhedronFacetVertices & vertices)
+```
+
+
 ### facet_attribute_manager
 
 ```cpp

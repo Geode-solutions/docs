@@ -91,6 +91,13 @@ public optional edge_from_vertices(const std::array<index_t, 2> & vertices)
 
 **vertices** [in] Unordered vertex indices
 
+### is_opposite
+
+```cpp
+public bool is_opposite(index_t edge_id, const std::array<index_t, 2> & vertices)
+```
+
+
 ### edge_attribute_manager
 
 ```cpp

@@ -91,12 +91,14 @@ const name = words.join('-');
 * [EdgedCurveInput](EdgedCurveInput.md)
 * [EdgedCurveOutput](EdgedCurveOutput.md)
 * [EdgedCurve](EdgedCurve.md)
+* [Ellipse](Ellipse.md)
 * [EraserRange](EraserRange.md)
 * [EuclideanDistanceTransform](EuclideanDistanceTransform.md)
 * [Factory](Factory.md)
 * [Frame](Frame.md)
 * [GenericAttributeConversion](GenericAttributeConversion.md)
 * [GenericCircle](GenericCircle.md)
+* [GenericEllipse](GenericEllipse.md)
 * [GenericLine](GenericLine.md)
 * [GenericMapping](GenericMapping.md)
 * [GenericMeshAABB](GenericMeshAABB.md)
@@ -231,6 +233,7 @@ const name = words.join('-');
 * [OpenGeodeVertexSet](OpenGeodeVertexSet.md)
 * [Output](Output.md)
 * [OwnerCircle](OwnerCircle.md)
+* [OwnerEllipse](OwnerEllipse.md)
 * [OwnerInfiniteLine](OwnerInfiniteLine.md)
 * [OwnerPlane](OwnerPlane.md)
 * [OwnerPolygon](OwnerPolygon.md)
@@ -670,107 +673,31 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
-### perpendicular
+### register_mesh_serialize_pcontext
 
 ```cpp
-Vector perpendicular(const Vector2D & v)
+void register_mesh_serialize_pcontext(PContext & context)
 ```
 
 
- Return a 2D vector perpendicular to the given one
+ Register all the information needed by Bitsery to serialize the objects in the mesh library.
 
-### dot_perpendicular
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### register_mesh_deserialize_pcontext
 
 ```cpp
-double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
+void register_mesh_deserialize_pcontext(PContext & context)
 ```
 
 
- Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
+ Register all the information needed by Bitsery to deserialize the objects in the mesh library.
 
-### lexicographic_mapping
+**context** [in] The context where to register this information.
 
-```cpp
-vector lexicographic_mapping(absl::Span<const Point<dimension> > points)
-```
-
-
-### morton_mapping
-
-```cpp
-vector morton_mapping(absl::Span<const Point<dimension> > points)
-```
-
-
-### point_side_to_segment
-
-```cpp
-SIDE point_side_to_segment(const Point2D & point, const Segment2D & segment)
-```
-
-
- Return the point side to a segment.
-
-### point_side_to_line
-
-```cpp
-SIDE point_side_to_line(const Point2D & point, const InfiniteLine2D & line)
-```
-
-
- Return the point side to a line.
-
-### point_side_to_plane
-
-```cpp
-SIDE point_side_to_plane(const Point3D & point, const Plane & plane)
-```
-
-
- Return the point side to a plane.
-
-### point_side_to_triangle
-
-```cpp
-SIDE point_side_to_triangle(const Point3D & point, const Triangle3D & triangle)
-```
-
-
- Return the point side to a 3D triangle.
-
-### point_segment_position
-
-```cpp
-POSITION point_segment_position(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Return the position of a point on a segment: inside, outside or on segment vertex.
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
- Return the position of a point in a triangle: inside, outside, on a triangle vertex or an edge.
-
-### point_tetrahedron_position
-
-```cpp
-POSITION point_tetrahedron_position(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
- Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
-```
-
- Return true if the three points are exactly aligned.
+**warning** The context can be used only once per archive.
 
 ### point_point_distance
 
@@ -1002,6 +929,17 @@ tuple point_disk_distance(const Point3D & point, const Disk & disk)
 
 **details** Result is always positive or null. If point is inside the disk, the returned distance is 0.
 
+### point_ellipse_distance
+
+```cpp
+std::tuple<double, Point<dimension> > point_ellipse_distance(const Point<dimension> & point, const Ellipse<dimension> & ellipse)
+```
+
+
+ Compute the smallest distance between a point and an ellipse
+
+**return** a tuple containing: - the smallest distance. - the closest point on the ellipse.
+
 ### triangle_area
 
 ```cpp
@@ -1054,6 +992,128 @@ double tetrahedron_volume(const Tetrahedron & tetra)
 
 
  Compute the (positive) volume of a tetrahedron
+
+### save_triangulated_surface
+
+```cpp
+vector save_triangulated_surface(const TriangulatedSurface<dimension> & triangulated_surface, basic_string_view filename)
+```
+
+
+ API function for saving a TriangulatedSurface. The adequate saver is called depending on the given filename extension.
+
+**triangulated_surface** [in] TriangulatedSurface to save.
+
+**filename** [in] Path to the file where save the TriangulatedSurface.
+
+### is_triangulated_surface_saveable
+
+```cpp
+bool is_triangulated_surface_saveable(const TriangulatedSurface<dimension> & triangulated_surface, basic_string_view filename)
+```
+
+
+### perpendicular
+
+```cpp
+Vector perpendicular(const Vector2D & v)
+```
+
+
+ Return a 2D vector perpendicular to the given one
+
+### dot_perpendicular
+
+```cpp
+double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
+```
+
+
+ Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
+
+### lexicographic_mapping
+
+```cpp
+vector lexicographic_mapping(absl::Span<const Point<dimension> > points)
+```
+
+
+### morton_mapping
+
+```cpp
+vector morton_mapping(absl::Span<const Point<dimension> > points)
+```
+
+
+### point_side_to_segment
+
+```cpp
+SIDE point_side_to_segment(const Point2D & point, const Segment2D & segment)
+```
+
+
+ Return the point side to a segment.
+
+### point_side_to_line
+
+```cpp
+SIDE point_side_to_line(const Point2D & point, const InfiniteLine2D & line)
+```
+
+
+ Return the point side to a line.
+
+### point_side_to_plane
+
+```cpp
+SIDE point_side_to_plane(const Point3D & point, const Plane & plane)
+```
+
+
+ Return the point side to a plane.
+
+### point_side_to_triangle
+
+```cpp
+SIDE point_side_to_triangle(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+ Return the point side to a 3D triangle.
+
+### point_segment_position
+
+```cpp
+POSITION point_segment_position(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Return the position of a point on a segment: inside, outside or on segment vertex.
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+ Return the position of a point in a triangle: inside, outside, on a triangle vertex or an edge.
+
+### point_tetrahedron_position
+
+```cpp
+POSITION point_tetrahedron_position(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+ Return the position of a point in a tetrahedron: inside, outside, on a tetra vertex, an edge or a facet.
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> & point1, const Point<dimension> & point2)
+```
+
+ Return true if the three points are exactly aligned.
 
 ### point_segment_position_exact
 
@@ -1216,67 +1276,6 @@ double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
 
 ```cpp
 FixedArray radial_sort(const Segment3D & segment, Span points)
-```
-
-
-### rotate
-
-```cpp
-Point rotate(const Point3D & point, const Vector3D & axis, double angle)
-```
-
-
- Rotate a Point3D by an angle around an axis
-
-**point** [in] The point to rotate.
-
-**axis** [in] Axis for the rotation (not null but not necessary normalized).
-
-**angle** [in] Rotation angle expresses in radians.
-
-### register_mesh_serialize_pcontext
-
-```cpp
-void register_mesh_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the mesh library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### register_mesh_deserialize_pcontext
-
-```cpp
-void register_mesh_deserialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to deserialize the objects in the mesh library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### save_triangulated_surface
-
-```cpp
-vector save_triangulated_surface(const TriangulatedSurface<dimension> & triangulated_surface, basic_string_view filename)
-```
-
-
- API function for saving a TriangulatedSurface. The adequate saver is called depending on the given filename extension.
-
-**triangulated_surface** [in] TriangulatedSurface to save.
-
-**filename** [in] Path to the file where save the TriangulatedSurface.
-
-### is_triangulated_surface_saveable
-
-```cpp
-bool is_triangulated_surface_saveable(const TriangulatedSurface<dimension> & triangulated_surface, basic_string_view filename)
 ```
 
 
@@ -2582,6 +2581,21 @@ void register_geode_mesh()
 ```
 
 
+### rotate
+
+```cpp
+Point rotate(const Point3D & point, const Vector3D & axis, double angle)
+```
+
+
+ Rotate a Point3D by an angle around an axis
+
+**point** [in] The point to rotate.
+
+**axis** [in] Axis for the rotation (not null but not necessary normalized).
+
+**angle** [in] Rotation angle expresses in radians.
+
 ### tetrahedron_volume_sign
 
 ```cpp
@@ -2620,6 +2634,27 @@ tuple point_triangle_distance(const Point3D & point, const Triangle3D & triangle
 
 ```cpp
 tuple point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### Bisector
+
+```cpp
+double Bisector(const geode::index_t number_of_components, const std::array<double, dimension> & locE, const std::array<double, dimension> & locY, std::array<double, dimension> & locX)
+```
+
+
+### SqrDistanceSpecial
+
+```cpp
+std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std::array<double, dimension> & extents, const std::array<double, dimension> & query_point_coordinates)
+```
+
+
+### SquaredDistance
+
+```cpp
+std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
 ```
 
 
@@ -2782,6 +2817,28 @@ IntersectionResult plane_plane_intersection(const Plane & plane0, const Plane & 
  Compute the intersection between two planes
 
 **return** an optional of the intersection line.
+
+### segment_ellipse_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > segment_ellipse_intersection(const Segment<dimension> & segment, const Ellipse<dimension> & ellipse)
+```
+
+
+ Compute the intersection between a segment and an ellipse
+
+**return** an optional of the intersection points.
+
+### line_ellipse_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > line_ellipse_intersection(const InfiniteLine<dimension> & line, const Ellipse<dimension> & ellipse)
+```
+
+
+ Compute the intersection between a line and an ellipse
+
+**return** an optional of the intersection points.
 
 ### file_exists
 
@@ -3155,6 +3212,41 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### find_intersections_with_boundaries
+
+```cpp
+flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
+```
+
+
+### is_point_inside_block
+
+```cpp
+bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
+```
+
+
+### block_containing_point
+
+```cpp
+optional block_containing_point(const BRep & brep, const Point3D & point)
+```
+
+
 ### convert_surface_mesh
 
 ```cpp
@@ -3320,41 +3412,6 @@ FixedArray brep_active_coordinate_reference_systems(const BRep & brep)
 
 ```cpp
 FixedArray section_active_coordinate_reference_systems(const Section & section)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### find_intersections_with_boundaries
-
-```cpp
-flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
-```
-
-
-### is_point_inside_block
-
-```cpp
-bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
-```
-
-
-### block_containing_point
-
-```cpp
-optional block_containing_point(const BRep & brep, const Point3D & point)
 ```
 
 
