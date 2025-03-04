@@ -14,12 +14,6 @@ const name = words.join('-');
 # class BRepSolidModeler
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### BRepSolidModeler
@@ -81,7 +75,7 @@ public void add_triangulated_surface(const TriangulatedSurface3D & mesh)
 ### paint_volume
 
 ```cpp
-public void paint_volume(const uuid & volume_uuid, absl::Span<const uuid> bounding_surface_uuids)
+public void paint_volume(const uuid & volume_uuid, Span bounding_surface_uuids)
 ```
 
 

@@ -89,7 +89,7 @@ public optional element_id(const MeshElement & mesh_element)
 ### pair
 
 ```cpp
-public std::array<ComponentMeshElement, 2> pair(index_t pair_id)
+public array pair(index_t pair_id)
 ```
 
 

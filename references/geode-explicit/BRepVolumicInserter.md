@@ -14,12 +14,6 @@ const name = words.join('-');
 # class BRepVolumicInserter
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### BRepVolumicInserter
@@ -67,7 +61,7 @@ public void add_scalar_isovalues(basic_string_view scalar_function_name, Span sc
 ### build
 
 ```cpp
-public std::tuple<BRep, BRepMappings> build()
+public tuple build()
 ```
 
 

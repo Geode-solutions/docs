@@ -66,17 +66,11 @@ ElementGraph find_elements_to_insert(const Meshes & meshes)
 ElementGraph find_elements_to_insert_on_border(const Meshes & meshes, vector border_surfaces)
 ```
 
+
 ### build_solid
 
 ```cpp
 unique_ptr build_solid(const BoundingBox3D & bbox, const Metric3D & metric)
-```
-
-
-### find_elements_to_insert_on_border
-
-```cpp
-ElementGraph find_elements_to_insert_on_border(const Meshes & meshes, int border_surfaces)
 ```
 
 

@@ -14,18 +14,12 @@ const name = words.join('-');
 # class BRepModelerMappingsBuilder
 
 
-## Records
-
-Impl
-
-
-
 ## Functions
 
 ### BRepModelerMappingsBuilder
 
 ```cpp
-public void BRepModelerMappingsBuilder(const geode::BRep & brep, const geode::internal::BackgroundSolid & background, absl::Span<const uuid> points_sets_uuids, absl::Span<const uuid> curves_uuids, absl::Span<const uuid> surfaces_uuids)
+public void BRepModelerMappingsBuilder(const geode::BRep & brep, const geode::internal::BackgroundSolid & background, Span points_sets_uuids, Span curves_uuids, Span surfaces_uuids)
 ```
 
 
