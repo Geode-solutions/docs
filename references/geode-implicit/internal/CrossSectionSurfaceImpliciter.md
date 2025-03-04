@@ -61,7 +61,7 @@ public void add_horizon_curve_data(const Horizon2D & horizon, const EdgedCurve2D
 ### compute_implicit_function
 
 ```cpp
-public void compute_implicit_function()
+public void compute_implicit_function(double function_value_interval)
 ```
 
 

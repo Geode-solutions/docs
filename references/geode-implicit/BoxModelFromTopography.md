@@ -14,6 +14,10 @@ const name = words.join('-');
 # class BoxModelFromTopography
 
 
+ Builds a BRep from a given set of topography points using implicit modeling.
+
+
+
 ## Functions
 
 ### BoxModelFromTopography
@@ -47,7 +51,7 @@ public void add_topography(const PointSet3D & data_points, double min_distance, 
 ### build
 
 ```cpp
-public BRep build(bool dense_data)
+public BRep build(const ImplicitationParameters & computation_parameters)
 ```
 
 

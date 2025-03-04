@@ -50,12 +50,5 @@ void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, cons
 ```
 
 
-### compute_cell_size
-
-```cpp
-double compute_cell_size(geode::BoundingBox<dimension> bbox, const geode::DataPointsManager<dimension> & data, bool dense_data)
-```
-
-
 
 

@@ -40,6 +40,7 @@ const name = words.join('-');
 * [ImplicitModelFromStructuralModel](ImplicitModelFromStructuralModel.md)
 * [ImplicitStructuralModelHorizonExpliciter](ImplicitStructuralModelHorizonExpliciter.md)
 * [ImplicitWorkflowsLibrary](ImplicitWorkflowsLibrary.md)
+* [ImplicitationParameters](ImplicitationParameters.md)
 * [ModelComponentToSectionComponentMapping](ModelComponentToSectionComponentMapping.md)
 * [ModelMappings](ModelMappings.md)
 * [ScalarFunctionComputer](ScalarFunctionComputer.md)

@@ -54,14 +54,14 @@ public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance,
 ### add_outline
 
 ```cpp
-public void add_outline(const EdgedCurve3D & outline)
+public void add_outline(const EdgedCurve3D & outline, double weight)
 ```
 
 
 ### build
 
 ```cpp
-public unique_ptr build(bool dense_data)
+public unique_ptr build(const ImplicitationParameters & computation_parameters)
 ```
 
 

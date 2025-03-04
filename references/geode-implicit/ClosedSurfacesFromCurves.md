@@ -47,7 +47,7 @@ public void add_closed_curve_data(const EdgedCurve3D & curve, double min_distanc
 ### build
 
 ```cpp
-public vector build(bool dense_data)
+public vector build(const ImplicitationParameters & computation_parameters)
 ```
 
 
