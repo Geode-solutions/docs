@@ -73,6 +73,20 @@ BijectiveMapping clone_stratigraphic_unit_mapping(const Model & model)
 ```
 
 
+### transfer_geological_information
+
+```cpp
+ModelMapping transfer_geological_information(const Model & initial_model, const Model & modified_model, typename Model::Builder & model_builder, const ModelGenericMapping & components_mappings)
+```
+
+
+### add_geological_components_mappings
+
+```cpp
+void add_geological_components_mappings(const ModelCopyMapping & geological_mappings, ModelGenericMapping & component_mappings)
+```
+
+
 ### rescale_implicit_value
 
 ```cpp
