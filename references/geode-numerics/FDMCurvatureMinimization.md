@@ -13,7 +13,9 @@ const name = words.join('-');
 
 # class FDMCurvatureMinimization
 
+
 # class FDMCurvatureMinimization
+
 
 # class FDMCurvatureMinimization
 
@@ -34,17 +36,10 @@ public void ~FDMCurvatureMinimization<dimension>()
 ```
 
 
-### use_constraint_value_preconditioning
-
-```cpp
-public void use_constraint_value_preconditioning()
-```
-
-
 ### use_scalar_function_preconditioning
 
 ```cpp
-public void use_scalar_function_preconditioning(const ComputationGrid<dimension> & preconditioner_grid, basic_string_view function_name)
+public void use_scalar_function_preconditioning(basic_string_view function_name)
 ```
 
 

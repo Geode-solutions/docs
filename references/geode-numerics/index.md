@@ -72,6 +72,16 @@ void smooth_attribute_values(const Mesh & mesh, VariableAttribute<AttributeType>
 ```
 
 
+ Smooth attribute on mesh points using adjacent vertices. Given attribute should have operator++ and operator*(double) available, as well as generic attribute conversion.
+
+**mesh** [in] Input mesh
+
+**attribute** [in] attribute to smooth
+
+**smoothing_factor** [in] factor between 0 and 1 to control how much adjacent vertices affect value: 0 means no smoothing, 1 means value is computed only from adjacent vertices.
+
+**return** max ratio between initial and smoothed values, computed from genericable values.
+
 ### iterative_attribute_values_smoothing
 
 ```cpp

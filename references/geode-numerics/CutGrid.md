@@ -13,18 +13,19 @@ const name = words.join('-');
 
 # class CutGrid
 
+
+```cpp
+Inherits from ComputationGrid<3U>
+```
+
+
+
 # class CutGrid
 
 
 ```cpp
 Inherits from ComputationGrid<dimension>
 ```
-
-
-
-## Records
-
-Impl
 
 
 
@@ -139,4 +140,11 @@ protected void CutGrid<>(ComputationGrid<dimension> && other)
 
 
 # class CutGrid
+
+
+```cpp
+Inherits from ComputationGrid<2U>
+```
+
+
 

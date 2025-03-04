@@ -13,6 +13,7 @@ const name = words.join('-');
 
 # class CutGridScalarFunction
 
+
 # class CutGridScalarFunction
 
 
@@ -42,14 +43,14 @@ public void ~CutGridScalarFunction<dimension>()
 ### value
 
 ```cpp
-public std::optional<double> value(const VertexIndices & vertex_indices)
+public optional value(const VertexIndices & vertex_indices)
 ```
 
 
 ### value
 
 ```cpp
-public std::optional<double> value(const Point<dimension> & point, const CellIndices & cell_indices, index_t cell_duplicate)
+public optional value(const Point<dimension> & point, const CellIndices & cell_indices, index_t cell_duplicate)
 ```
 
 
@@ -77,4 +78,5 @@ public std::optional<Vector<dimension> > gradient_value(const Point<dimension> &
 
 
 # class CutGridScalarFunction
+
 

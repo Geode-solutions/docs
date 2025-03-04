@@ -57,6 +57,13 @@ public void set_inactive_cells(absl::Span<const CellIndices> cells_list)
 ```
 
 
+### inactivate_cells_outside_voi
+
+```cpp
+public void inactivate_cells_outside_voi(absl::Span<const CellIndices> rasterized_voi)
+```
+
+
 ### remove_computation_node
 
 ```cpp

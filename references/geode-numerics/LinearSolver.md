@@ -118,7 +118,14 @@ public void add_coefficient(const Coefficient & coefficient)
 ### add_rhs
 
 ```cpp
-public void add_rhs(index_t variable, double value)
+public void add_rhs(index_t row, double value)
+```
+
+
+### resize_nb_rows
+
+```cpp
+public void resize_nb_rows(index_t new_nb_rows)
 ```
 
 

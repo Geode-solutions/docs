@@ -13,7 +13,21 @@ const name = words.join('-');
 
 # class DataPointsManager
 
+
+```cpp
+Inherits from DataConstraintsManager<3U>
+```
+
+
+
 # class DataPointsManager
+
+
+```cpp
+Inherits from DataConstraintsManager<2U>
+```
+
+
 
 # class DataPointsManager
 
@@ -21,12 +35,6 @@ const name = words.join('-');
 ```cpp
 Inherits from DataConstraintsManager<dimension>
 ```
-
-
-
-## Records
-
-Impl
 
 
 
