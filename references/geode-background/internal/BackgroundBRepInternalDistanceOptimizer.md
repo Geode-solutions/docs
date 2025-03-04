@@ -60,14 +60,7 @@ public void ~BackgroundBRepInternalDistanceOptimizer()
 ### BackgroundBRepInternalDistanceOptimizer
 
 ```cpp
-protected void BackgroundBRepInternalDistanceOptimizer(BackgroundBRepConstraintModifier & constraint_modifier)
-```
-
-
-### compute_tetrahedron_internal_distances
-
-```cpp
-protected bool compute_tetrahedron_internal_distances(const BlockElementId & element, const struct InternalDistance::Options & options)
+protected void BackgroundBRepInternalDistanceOptimizer(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

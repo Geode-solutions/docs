@@ -25,7 +25,7 @@ Inherits from BackgroundSolidInternalDistanceImprovementSimulator
 ### BackgroundSolidAspectRatioImprovementSimulator
 
 ```cpp
-public void BackgroundSolidAspectRatioImprovementSimulator(const BackgroundSolid & background, double aspect_ratio_threshold)
+public void BackgroundSolidAspectRatioImprovementSimulator(const double aspect_ratio_threshold)
 ```
 
 

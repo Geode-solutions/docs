@@ -47,7 +47,7 @@ public BackgroundBRepConstraintModifier & operator=(BackgroundBRepConstraintModi
 ### BackgroundBRepConstraintModifier
 
 ```cpp
-public void BackgroundBRepConstraintModifier(ModifiableObject brep, BackgroundBRepBuilder & builder, Constraints constraints)
+public void BackgroundBRepConstraintModifier(ModifiableObject brep, BackgroundBRepBuilder & builder, flat_hash_map constraints)
 ```
 
 
@@ -138,7 +138,14 @@ public flat_hash_map split_tetrahedron(const Block3D & block, index_t tetrahedro
 ### split_collapse_edge
 
 ```cpp
-public flat_hash_map split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex)
+public flat_hash_map split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex)
+```
+
+
+### split_collapse_edge
+
+```cpp
+public flat_hash_map split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const Point3D & point)
 ```
 
 
@@ -146,6 +153,13 @@ public flat_hash_map split_collapse_edge(const Block3D & block, const Polyhedron
 
 ```cpp
 public flat_hash_map split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet)
+```
+
+
+### split_collapse_facet
+
+```cpp
+public flat_hash_map split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 

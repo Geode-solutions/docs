@@ -81,7 +81,7 @@ public BackgroundSolid clone()
 ### clone_solid
 
 ```cpp
-public unique_ptr clone_solid()
+public std::unique_ptr<TetrahedralSolid3D> clone_solid()
 ```
 
 
@@ -123,14 +123,14 @@ public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 ### macro_edge_path
 
 ```cpp
-public optional macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
+public std::optional<std::vector<OrientedEdge> > macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
 ```
 
 
 ### macro_facet_patch
 
 ```cpp
-public optional macro_facet_patch(Span boundary_edges, const MeshPolygon & macro_facet)
+public std::optional<std::vector<index_t> > macro_facet_patch(Span boundary_edges, const MeshPolygon & macro_facet)
 ```
 
 

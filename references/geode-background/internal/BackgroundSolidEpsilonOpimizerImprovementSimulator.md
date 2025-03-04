@@ -11,24 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BlocksAllowedByConstraints
+# class BackgroundSolidEpsilonOpimizerImprovementSimulator
 
-
-## Members
 
 ```cpp
-public absl::flat_hash_map<uuid, std::vector<AllowedByConstraints<Allowed> > > blocks
-
+Inherits from BackgroundSolidInternalDistanceImprovementSimulator
 ```
 
 
 
 ## Functions
 
-### operator bool
+### require_improvement
 
 ```cpp
-public bool operator bool()
+public bool require_improvement(const BackgroundSolid & background, index_t tetrahedron_id)
 ```
 
 

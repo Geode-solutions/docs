@@ -11,15 +11,10 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct AllowedByConstraints
+# struct ForbiddenInfos
 
 
 ## Members
-
-```cpp
-public Allowed allowed
-
-```
 
 ```cpp
 public vector forbidden_vertices
@@ -30,24 +25,10 @@ public vector forbidden_vertices
 
 ## Functions
 
-### AllowedByConstraints
+### ForbiddenInfos
 
 ```cpp
-public void AllowedByConstraints<Allowed>()
-```
-
-
-### AllowedByConstraints
-
-```cpp
-public void AllowedByConstraints<Allowed>(Allowed allowed_in)
-```
-
-
-### operator bool
-
-```cpp
-public bool operator bool()
+public void ForbiddenInfos()
 ```
 
 
