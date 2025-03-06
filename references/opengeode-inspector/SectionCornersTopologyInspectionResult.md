@@ -50,6 +50,13 @@ public InspectionIssues unique_vertices_linked_to_not_boundary_line_corner
 
 ## Functions
 
+### nb_issues
+
+```cpp
+public index_t nb_issues()
+```
+
+
 ### string
 
 ```cpp

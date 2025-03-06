@@ -45,6 +45,13 @@ public InspectionIssues brep_non_manifold_facets
 
 ## Functions
 
+### nb_issues
+
+```cpp
+public index_t nb_issues()
+```
+
+
 ### string
 
 ```cpp

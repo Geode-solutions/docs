@@ -55,6 +55,13 @@ public SectionMeshesNegativeElementsInspectionResult meshes_negative_elements
 
 ## Functions
 
+### nb_issues
+
+```cpp
+public index_t nb_issues()
+```
+
+
 ### string
 
 ```cpp

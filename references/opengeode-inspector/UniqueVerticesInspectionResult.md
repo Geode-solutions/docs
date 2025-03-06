@@ -30,6 +30,13 @@ public InspectionIssues unique_vertices_linked_to_different_points
 
 ## Functions
 
+### nb_issues
+
+```cpp
+public index_t nb_issues()
+```
+
+
 ### string
 
 ```cpp

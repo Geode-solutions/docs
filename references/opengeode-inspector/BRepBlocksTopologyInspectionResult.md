@@ -45,6 +45,13 @@ public InspectionIssues unique_vertices_with_incorrect_block_cmvs_count
 
 ## Functions
 
+### nb_issues
+
+```cpp
+public index_t nb_issues()
+```
+
+
 ### string
 
 ```cpp

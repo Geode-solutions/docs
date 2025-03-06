@@ -30,6 +30,13 @@ public InspectionIssuesMap meshes_non_manifold_edges
 
 ## Functions
 
+### nb_issues
+
+```cpp
+public index_t nb_issues()
+```
+
+
 ### string
 
 ```cpp

@@ -55,6 +55,13 @@ public InspectionIssues unique_vertices_linked_to_a_line_but_is_not_on_a_surface
 
 ## Functions
 
+### nb_issues
+
+```cpp
+public index_t nb_issues()
+```
+
+
 ### string
 
 ```cpp

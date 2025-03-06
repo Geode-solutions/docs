@@ -25,6 +25,13 @@ public InspectionIssuesMap colocated_points_groups
 
 ## Functions
 
+### nb_issues
+
+```cpp
+public index_t nb_issues()
+```
+
+
 ### string
 
 ```cpp

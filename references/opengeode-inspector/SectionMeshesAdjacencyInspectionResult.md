@@ -25,6 +25,13 @@ public InspectionIssuesMap surfaces_edges_with_wrong_adjacencies
 
 ## Functions
 
+### nb_issues
+
+```cpp
+public index_t nb_issues()
+```
+
+
 ### string
 
 ```cpp
