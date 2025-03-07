@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from BackgroundSolidImprovementSimulator
+Inherits from TetrahedralSolidImprovementSimulator3D
 ```
 
 

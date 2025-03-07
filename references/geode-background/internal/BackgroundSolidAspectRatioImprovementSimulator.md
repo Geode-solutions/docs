@@ -60,7 +60,7 @@ public double metric(const Tetrahedron & tetrahedron)
 ### require_improvement
 
 ```cpp
-public bool require_improvement(const BackgroundSolid & background, index_t tetrahedron_id)
+public bool require_improvement(const TetrahedralSolid3D & background, index_t tetrahedron_id)
 ```
 
 
