@@ -34,7 +34,6 @@ const name = words.join('-');
 * [FrameFieldParameterization](FrameFieldParameterization.md)
 * [FrameFieldSmoother](FrameFieldSmoother.md)
 * [FrameField](FrameField.md)
-* [FrameTransform](FrameTransform.md)
 * [LinearSolver](LinearSolver.md)
 * [MeshElement](MeshElement.md)
 * [NumericsCoreLibrary](NumericsCoreLibrary.md)
