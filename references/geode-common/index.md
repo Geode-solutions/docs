@@ -162,9 +162,11 @@ const name = words.join('-');
 * [SwapTrianglesAfter](SwapTrianglesAfter.md)
 * [TetrahedraAfter](TetrahedraAfter.md)
 * [TetrahedralSolidEpsilonModifier](TetrahedralSolidEpsilonModifier.md)
+* [TetrahedralSolidImprovementSimulator3D](TetrahedralSolidImprovementSimulator3D.md)
 * [TetrahedralSolidModifier](TetrahedralSolidModifier.md)
 * [TrianglesAfter](TrianglesAfter.md)
 * [TriangulatedSurfaceEpsilonModifier](TriangulatedSurfaceEpsilonModifier.md)
+* [TriangulatedSurfaceImprovementSimulator2D](TriangulatedSurfaceImprovementSimulator2D.md)
 * [TriangulatedSurfaceModifier](TriangulatedSurfaceModifier.md)
 * [VerticesModifier](VerticesModifier.md)
 
@@ -545,6 +547,20 @@ SplitCollapseTrianglesAfter<dimension> triangles_after_split_collapse_edge(const
 **mesh** [in] Triangulated mesh on which simulate operation.
 
 **edge** [in] Index of the PolygonEdge to swap.
+
+### does_collapse_edge_improve_metric
+
+```cpp
+bool does_collapse_edge_improve_metric(const TriangulatedSurface2D & surface, const PolygonEdge & edge, const Point2D & collapse_point, const TriangulatedSurfaceImprovementSimulator2D & improvement_simulator)
+```
+
+
+### does_swap_edge_improve_metric
+
+```cpp
+bool does_swap_edge_improve_metric(const TriangulatedSurface2D & surface, const PolygonEdge & edge, const TriangulatedSurfaceImprovementSimulator2D & improvement_simulator)
+```
+
 
 ### is_move_point_valid
 
@@ -1425,6 +1441,160 @@ void elements_after_block_facets_split_collapse(const BRep & brep, const geode::
 ```
 
 
+### does_split_edge_improve_metric
+
+```cpp
+bool does_split_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, const Point3D & split_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_facet_improve_metric
+
+```cpp
+bool does_split_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const Point3D & apex_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_move_point_improve_metric
+
+```cpp
+bool does_move_point_improve_metric(const TetrahedralSolid3D & solid, const index_t point_to_relocate_local_id, const Point3D & new_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_collapse_edge_improve_metric
+
+```cpp
+bool does_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, const local_index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_collapse_edge_improve_metric
+
+```cpp
+bool does_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, const Point3D & collapse_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_swap_edge_improve_metric
+
+```cpp
+bool does_swap_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_swap_facet_improve_metric
+
+```cpp
+bool does_swap_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_collapse_facet_improve_metric
+
+```cpp
+bool does_split_collapse_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_collapse_facet_improve_metric
+
+```cpp
+bool does_split_collapse_facet_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacet & facet, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_split_collapse_edge_improve_metric(const TetrahedralSolid3D & solid, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_edge_improve_metric
+
+```cpp
+bool does_split_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & split_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_collapse_edge_improve_metric
+
+```cpp
+bool does_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const local_index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_collapse_edge_improve_metric
+
+```cpp
+bool does_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & collapse_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_swap_edge_improve_metric
+
+```cpp
+bool does_swap_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_swap_facet_improve_metric
+
+```cpp
+bool does_swap_facet_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_collapse_facet_improve_metric
+
+```cpp
+bool does_split_collapse_facet_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_collapse_facet_improve_metric
+
+```cpp
+bool does_split_collapse_facet_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_split_split_collapse_edge_improve_metric
+
+```cpp
+bool does_split_split_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
+### does_smoothing_improve_metric
+
+```cpp
+bool does_smoothing_improve_metric(const BRep & brep, const Block3D & block, const index_t & vertex, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+```
+
+
 ### swap_along_patch
 
 ```cpp
@@ -1568,12 +1738,6 @@ SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & se
 ```
 
 
-### minimal_metric
-
-```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
-```
-
 ### cut_along_path
 
 ```cpp
@@ -1630,6 +1794,12 @@ vector determine_cuts(const TetrahedralSolid3D & solid, Span path_splits)
 vector determine_cuts(const TetrahedralSolid3D & solid, const Plane & plane, Span path_splits)
 ```
 
+
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
 
 
 
