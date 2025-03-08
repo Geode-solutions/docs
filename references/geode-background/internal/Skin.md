@@ -81,7 +81,21 @@ public void Skin(std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMa
 ### Skin
 
 ```cpp
+public void Skin(BackgroundSurface && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
+```
+
+
+### Skin
+
+```cpp
 public void Skin(Skin && other)
+```
+
+
+### operator=
+
+```cpp
+public Skin & operator=(Skin && other)
 ```
 
 
