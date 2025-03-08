@@ -77,13 +77,6 @@ public NamedType component_type()
 ```
 
 
-### component_id
-
-```cpp
-public ComponentID component_id()
-```
-
-
 ### mesh
 
 ```cpp
