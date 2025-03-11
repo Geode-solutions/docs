@@ -36,13 +36,6 @@ public basic_string_view extension()
 ```
 
 
-### load_implicit_cross_section_files
-
-```cpp
-public void load_implicit_cross_section_files(ImplicitCrossSection & section, basic_string_view directory)
-```
-
-
 ### read
 
 ```cpp

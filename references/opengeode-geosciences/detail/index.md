@@ -17,6 +17,34 @@ const name = words.join('-');
 
 ## Functions
 
+### load_cross_section_files
+
+```cpp
+void load_cross_section_files(CrossSection & cross_section, basic_string_view directory)
+```
+
+
+### load_structural_model_files
+
+```cpp
+void load_structural_model_files(StructuralModel & structural_model, basic_string_view directory)
+```
+
+
+### load_implicit_cross_section_files
+
+```cpp
+void load_implicit_cross_section_files(ImplicitCrossSection & section, basic_string_view directory)
+```
+
+
+### load_implicit_structural_model_files
+
+```cpp
+void load_implicit_structural_model_files(ImplicitStructuralModel & model, basic_string_view directory)
+```
+
+
 ### copy_faults
 
 ```cpp

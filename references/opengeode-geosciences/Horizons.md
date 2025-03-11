@@ -79,6 +79,13 @@ public HorizonRange horizons()
 ```
 
 
+### components
+
+```cpp
+public HorizonRange components()
+```
+
+
 ### save_horizons
 
 ```cpp

@@ -92,14 +92,14 @@ public const uuid & add_fault(typename Fault2D::FAULT_TYPE type)
 ### add_fault
 
 ```cpp
-public void add_fault(uuid fault_id)
+public void add_fault(const uuid & fault_id)
 ```
 
 
 ### add_fault
 
 ```cpp
-public void add_fault(uuid fault_id, typename Fault2D::FAULT_TYPE type)
+public void add_fault(const uuid & fault_id, typename Fault2D::FAULT_TYPE type)
 ```
 
 
@@ -134,14 +134,14 @@ public const uuid & add_horizon(typename Horizon2D::HORIZON_TYPE type)
 ### add_horizon
 
 ```cpp
-public void add_horizon(uuid horizon_id)
+public void add_horizon(const uuid & horizon_id)
 ```
 
 
 ### add_horizon
 
 ```cpp
-public void add_horizon(uuid horizon_id, typename Horizon2D::HORIZON_TYPE type)
+public void add_horizon(const uuid & horizon_id, typename Horizon2D::HORIZON_TYPE type)
 ```
 
 
@@ -169,7 +169,7 @@ public const uuid & add_fault_block()
 ### add_fault_block
 
 ```cpp
-public void add_fault_block(uuid fault_block_id)
+public void add_fault_block(const uuid & fault_block_id)
 ```
 
 
@@ -197,7 +197,7 @@ public const uuid & add_stratigraphic_unit()
 ### add_stratigraphic_unit
 
 ```cpp
-public void add_stratigraphic_unit(uuid stratigraphic_unit_id)
+public void add_stratigraphic_unit(const uuid & stratigraphic_unit_id)
 ```
 
 

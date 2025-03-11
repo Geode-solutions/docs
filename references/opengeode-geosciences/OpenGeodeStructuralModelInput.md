@@ -36,13 +36,6 @@ public basic_string_view extension()
 ```
 
 
-### load_structural_model_files
-
-```cpp
-public void load_structural_model_files(StructuralModel & structural_model, basic_string_view directory)
-```
-
-
 ### read
 
 ```cpp

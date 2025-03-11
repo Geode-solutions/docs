@@ -76,6 +76,13 @@ public FaultRange faults()
 ```
 
 
+### components
+
+```cpp
+public FaultRange components()
+```
+
+
 ### save_faults
 
 ```cpp

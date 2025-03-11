@@ -73,6 +73,13 @@ public FaultBlockRange fault_blocks()
 ```
 
 
+### components
+
+```cpp
+public FaultBlockRange components()
+```
+
+
 ### save_fault_blocks
 
 ```cpp

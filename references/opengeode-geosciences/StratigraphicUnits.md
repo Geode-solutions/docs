@@ -79,6 +79,13 @@ public StratigraphicUnitRange stratigraphic_units()
 ```
 
 
+### components
+
+```cpp
+public StratigraphicUnitRange components()
+```
+
+
 ### save_stratigraphic_units
 
 ```cpp
