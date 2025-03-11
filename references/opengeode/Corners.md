@@ -79,6 +79,13 @@ public CornerRange corners()
 ```
 
 
+### components
+
+```cpp
+public CornerRange components()
+```
+
+
 ### save_corners
 
 ```cpp

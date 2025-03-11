@@ -55,7 +55,7 @@ public void operator++()
 ### BlockCollectionRangeBase
 
 ```cpp
-protected void BlockCollectionRangeBase(const BlockCollections<dimension> & collections)
+protected void BlockCollectionRangeBase(const BlockCollections<> & collections)
 ```
 
 

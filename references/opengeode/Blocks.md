@@ -82,6 +82,13 @@ public BlockRange blocks()
 ```
 
 
+### components
+
+```cpp
+public BlockRange components()
+```
+
+
 ### save_blocks
 
 ```cpp

@@ -46,7 +46,7 @@ public tuple closest_element(const Point<dimension> & query)
 ### GenericMeshAABB
 
 ```cpp
-public void GenericMeshAABB<SolidMesh<dimension> >(const SolidMesh<dimension> & mesh)
+public void GenericMeshAABB<SolidMesh<> >(const SolidMesh<dimension> & mesh)
 ```
 
 
@@ -94,7 +94,7 @@ public tuple closest_element(const Point<dimension> & query)
 ### GenericMeshAABB
 
 ```cpp
-public void GenericMeshAABB<EdgedCurve<dimension> >(const EdgedCurve<dimension> & mesh)
+public void GenericMeshAABB<EdgedCurve<> >(const EdgedCurve<dimension> & mesh)
 ```
 
 
@@ -124,7 +124,7 @@ protected const AABBTree<dimension> & elements_aabb()
 ### GenericMeshAABB
 
 ```cpp
-public void GenericMeshAABB<SurfaceMesh<dimension> >(const SurfaceMesh<dimension> & mesh)
+public void GenericMeshAABB<SurfaceMesh<> >(const SurfaceMesh<dimension> & mesh)
 ```
 
 

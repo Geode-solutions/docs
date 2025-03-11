@@ -73,6 +73,13 @@ public LineRange lines()
 ```
 
 
+### components
+
+```cpp
+public LineRange components()
+```
+
+
 ### save_lines
 
 ```cpp

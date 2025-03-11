@@ -36,13 +36,6 @@ public basic_string_view extension()
 ```
 
 
-### load_section_files
-
-```cpp
-public void load_section_files(Section & section, basic_string_view directory)
-```
-
-
 ### read
 
 ```cpp

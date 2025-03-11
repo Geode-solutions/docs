@@ -72,6 +72,13 @@ public CornerCollectionRange corner_collections()
 ```
 
 
+### components
+
+```cpp
+public CornerCollectionRange components()
+```
+
+
 ### save_corner_collections
 
 ```cpp

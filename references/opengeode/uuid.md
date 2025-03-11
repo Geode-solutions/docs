@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct uuid
+# class uuid
 
 
  128-bit basic UUID type that allows comparison and sorting.

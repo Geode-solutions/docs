@@ -36,7 +36,7 @@ public void set_block_collection_name(const uuid & id, basic_string_view name)
 ### BlockCollectionsBuilder
 
 ```cpp
-protected void BlockCollectionsBuilder<>(BlockCollections<dimension> & collections)
+protected void BlockCollectionsBuilder<dimension>(BlockCollections<dimension> & collections)
 ```
 
 

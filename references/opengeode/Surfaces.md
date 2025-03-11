@@ -76,6 +76,13 @@ public SurfaceRange surfaces()
 ```
 
 
+### components
+
+```cpp
+public SurfaceRange components()
+```
+
+
 ### save_surfaces
 
 ```cpp

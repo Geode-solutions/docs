@@ -18,9 +18,12 @@ const name = words.join('-');
 ## Records
 
 * [ArrayImpl](ArrayImpl.md)
+* [CollectionComponentsRegistrator](CollectionComponentsRegistrator.md)
+* [ComponentsTypesChecker](ComponentsTypesChecker.md)
 * [EdgesImpl](EdgesImpl.md)
 * [FacetEdgesImpl](FacetEdgesImpl.md)
 * [GridImpl](GridImpl.md)
+* [MeshComponentsRegistrator](MeshComponentsRegistrator.md)
 * [PointsImpl](PointsImpl.md)
 * [PolygonsAroundVertexImpl](PolygonsAroundVertexImpl.md)
 * [PolyhedraAroundVertexImpl](PolyhedraAroundVertexImpl.md)
@@ -111,6 +114,27 @@ void copy_meta_info(const MeshFrom & from, Builder & builder)
 
 ```cpp
 void copy_attributes(const AttributeManager & manager_in, AttributeManager & manager_out)
+```
+
+
+### is_component_supported
+
+```cpp
+bool is_component_supported(const ComponentType & component_type)
+```
+
+
+### register_mesh_components
+
+```cpp
+void register_mesh_components(const Model & model, typename Model::Builder & builder)
+```
+
+
+### register_collection_components
+
+```cpp
+void register_collection_components(const Model & model, typename Model::Builder & builder)
 ```
 
 

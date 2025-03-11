@@ -33,21 +33,21 @@ BlockCollectionRange
 ### BlockCollections
 
 ```cpp
-public void BlockCollections<dimension>(const BlockCollections<dimension> & )
+public void BlockCollections<>(const BlockCollections<> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public BlockCollections<dimension> & operator=(const BlockCollections<dimension> & )
+public BlockCollections<> & operator=(const BlockCollections<> & )
 ```
 
 
 ### ~BlockCollections
 
 ```cpp
-public void ~BlockCollections<dimension>()
+public void ~BlockCollections<>()
 ```
 
 
@@ -72,6 +72,13 @@ public BlockCollectionRange block_collections()
 ```
 
 
+### components
+
+```cpp
+public BlockCollectionRange components()
+```
+
+
 ### save_block_collections
 
 ```cpp
@@ -82,21 +89,21 @@ public void save_block_collections(basic_string_view directory)
 ### BlockCollections
 
 ```cpp
-protected void BlockCollections<dimension>()
+protected void BlockCollections<>()
 ```
 
 
 ### BlockCollections
 
 ```cpp
-protected void BlockCollections<dimension>(BlockCollections<dimension> && other)
+protected void BlockCollections<>(BlockCollections<> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected BlockCollections<dimension> & operator=(BlockCollections<dimension> && other)
+protected BlockCollections<> & operator=(BlockCollections<> && other)
 ```
 
 

@@ -230,7 +230,7 @@ public void save_relationships(basic_string_view directory)
 ### remove_component
 
 ```cpp
-public void remove_component(const uuid & component_id, PassKey )
+public void remove_component(const uuid & component_id, RelationshipsBuilderKey )
 ```
 
 
@@ -241,7 +241,7 @@ public void remove_component(const uuid & component_id, PassKey )
 ### add_boundary_relation
 
 ```cpp
-public index_t add_boundary_relation(const ComponentID & boundary, const ComponentID & incidence, PassKey )
+public index_t add_boundary_relation(const ComponentID & boundary, const ComponentID & incidence, RelationshipsBuilderKey )
 ```
 
 
@@ -250,7 +250,7 @@ public index_t add_boundary_relation(const ComponentID & boundary, const Compone
 ### add_internal_relation
 
 ```cpp
-public index_t add_internal_relation(const ComponentID & internal, const ComponentID & embedding, PassKey )
+public index_t add_internal_relation(const ComponentID & internal, const ComponentID & embedding, RelationshipsBuilderKey )
 ```
 
 
@@ -259,7 +259,7 @@ public index_t add_internal_relation(const ComponentID & internal, const Compone
 ### add_item_in_collection
 
 ```cpp
-public index_t add_item_in_collection(const ComponentID & item, const ComponentID & collection, PassKey )
+public index_t add_item_in_collection(const ComponentID & item, const ComponentID & collection, RelationshipsBuilderKey )
 ```
 
 
@@ -268,7 +268,7 @@ public index_t add_item_in_collection(const ComponentID & item, const ComponentI
 ### remove_relation
 
 ```cpp
-public void remove_relation(const uuid & component_id1, const uuid & component_id2, PassKey )
+public void remove_relation(const uuid & component_id1, const uuid & component_id2, RelationshipsBuilderKey )
 ```
 
 
@@ -277,14 +277,14 @@ public void remove_relation(const uuid & component_id1, const uuid & component_i
 ### copy_relationships
 
 ```cpp
-public void copy_relationships(const ModelCopyMapping & mapping, const Relationships & relationships, PassKey )
+public void copy_relationships(const ModelCopyMapping & mapping, const Relationships & relationships, RelationshipsBuilderKey )
 ```
 
 
 ### load_relationships
 
 ```cpp
-public void load_relationships(basic_string_view directory, PassKey )
+public void load_relationships(basic_string_view directory, RelationshipsBuilderKey )
 ```
 
 

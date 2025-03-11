@@ -69,6 +69,13 @@ public SurfaceCollectionRange surface_collections()
 ```
 
 
+### components
+
+```cpp
+public SurfaceCollectionRange components()
+```
+
+
 ### save_surface_collections
 
 ```cpp

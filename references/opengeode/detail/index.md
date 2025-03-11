@@ -18,7 +18,6 @@ const name = words.join('-');
 ## Records
 
 * [ComponentsStorage](ComponentsStorage.md)
-* [ComponentsTypesChecker](ComponentsTypesChecker.md)
 * [EdgedCurveIdentifier](EdgedCurveIdentifier.md)
 * [EdgedCurveMerger](EdgedCurveMerger.md)
 * [FacetStorage](FacetStorage.md)
@@ -245,6 +244,62 @@ std::unique_ptr<Mesh> create_mesh(absl::Span<const std::reference_wrapper<const 
 ```
 
 
+### filter_unsupported_components
+
+```cpp
+void filter_unsupported_components(Model & model)
+```
+
+
+### add_mesh_component
+
+```cpp
+void add_mesh_component(ModelBuilder & builder, const MeshComponent & component)
+```
+
+
+### remove_mesh_component
+
+```cpp
+void remove_mesh_component(ModelBuilder & builder, const MeshComponent & component)
+```
+
+
+### add_collection_component
+
+```cpp
+void add_collection_component(ModelBuilder & builder, const CollectionComponent & component)
+```
+
+
+### remove_collection_component
+
+```cpp
+void remove_collection_component(ModelBuilder & builder, const CollectionComponent & component)
+```
+
+
+### register_all_components
+
+```cpp
+void register_all_components(Model & model)
+```
+
+
+### load_brep_files
+
+```cpp
+void load_brep_files(Model & brep, basic_string_view directory)
+```
+
+
+### load_section_files
+
+```cpp
+void load_section_files(Model & section, basic_string_view directory)
+```
+
+
 ### line_component_mesh_edges
 
 ```cpp
@@ -385,31 +440,24 @@ void copy_vertex_identifier_components(const Model & from, BuilderTo & builder_t
 ```
 
 
-### is_component_supported
-
-```cpp
-bool is_component_supported(const ComponentType & component_type)
-```
-
-
-### is_component_supported
-
-```cpp
-bool is_component_supported(const ComponentType & component_type)
-```
-
-
-### filter_unsupported_components
-
-```cpp
-void filter_unsupported_components(Model & model)
-```
-
-
 ### count_relationships
 
 ```cpp
 index_t count_relationships(const Range & range)
+```
+
+
+### section_clone_mapping
+
+```cpp
+ModelMapping section_clone_mapping(const Section & model)
+```
+
+
+### brep_clone_mapping
+
+```cpp
+ModelMapping brep_clone_mapping(const BRep & model)
 ```
 
 
@@ -431,20 +479,6 @@ void register_inlinedvector(PContext & context, basic_string_view type)
 
 ```cpp
 void register_geometry_pcontext(PContext & context)
-```
-
-
-### section_clone_mapping
-
-```cpp
-ModelMapping section_clone_mapping(const Section & model)
-```
-
-
-### brep_clone_mapping
-
-```cpp
-ModelMapping brep_clone_mapping(const BRep & model)
 ```
 
 

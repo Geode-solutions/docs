@@ -19,7 +19,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from Relationships, VertexIdentifier
+Inherits from ComponentRegistry, Relationships, VertexIdentifier
 ```
 
 

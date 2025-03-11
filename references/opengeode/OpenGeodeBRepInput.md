@@ -36,13 +36,6 @@ public basic_string_view extension()
 ```
 
 
-### load_brep_files
-
-```cpp
-public void load_brep_files(BRep & brep, basic_string_view directory)
-```
-
-
 ### read
 
 ```cpp

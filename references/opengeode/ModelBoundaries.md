@@ -69,6 +69,13 @@ public ModelBoundaryRange model_boundaries()
 ```
 
 
+### components
+
+```cpp
+public ModelBoundaryRange components()
+```
+
+
 ### save_model_boundaries
 
 ```cpp

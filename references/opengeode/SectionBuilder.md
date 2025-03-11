@@ -155,70 +155,70 @@ public const uuid & add_surface_collection()
 ### add_corner
 
 ```cpp
-public void add_corner(uuid corner_id)
+public void add_corner(const uuid & corner_id)
 ```
 
 
 ### add_corner
 
 ```cpp
-public void add_corner(uuid corner_id, const MeshImpl & impl)
+public void add_corner(const uuid & corner_id, const MeshImpl & impl)
 ```
 
 
 ### add_line
 
 ```cpp
-public void add_line(uuid line_id)
+public void add_line(const uuid & line_id)
 ```
 
 
 ### add_line
 
 ```cpp
-public void add_line(uuid line_id, const MeshImpl & impl)
+public void add_line(const uuid & line_id, const MeshImpl & impl)
 ```
 
 
 ### add_surface
 
 ```cpp
-public void add_surface(uuid surface_id)
+public void add_surface(const uuid & surface_id)
 ```
 
 
 ### add_surface
 
 ```cpp
-public void add_surface(uuid surface_id, const MeshImpl & impl)
+public void add_surface(const uuid & surface_id, const MeshImpl & impl)
 ```
 
 
 ### add_model_boundary
 
 ```cpp
-public void add_model_boundary(uuid model_boundary_id)
+public void add_model_boundary(const uuid & model_boundary_id)
 ```
 
 
 ### add_corner_collection
 
 ```cpp
-public void add_corner_collection(uuid corner_collection_id)
+public void add_corner_collection(const uuid & corner_collection_id)
 ```
 
 
 ### add_line_collection
 
 ```cpp
-public void add_line_collection(uuid line_collection_id)
+public void add_line_collection(const uuid & line_collection_id)
 ```
 
 
 ### add_surface_collection
 
 ```cpp
-public void add_surface_collection(uuid surface_collection_id)
+public void add_surface_collection(const uuid & surface_collection_id)
 ```
 
 

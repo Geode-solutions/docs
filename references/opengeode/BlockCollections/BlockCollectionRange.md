@@ -25,7 +25,7 @@ Inherits from BlockCollectionRangeBase
 ### BlockCollectionRange
 
 ```cpp
-public void BlockCollectionRange(const BlockCollections<dimension> & boundaries)
+public void BlockCollectionRange(const BlockCollections<> & boundaries)
 ```
 
 

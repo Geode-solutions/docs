@@ -66,6 +66,13 @@ public LineCollectionRange line_collections()
 ```
 
 
+### components
+
+```cpp
+public LineCollectionRange components()
+```
+
+
 ### save_line_collections
 
 ```cpp

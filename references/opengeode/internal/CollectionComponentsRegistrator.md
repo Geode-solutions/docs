@@ -11,25 +11,17 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class TopologyBuilder
+# struct CollectionComponentsRegistrator
 
-
- Class managing modification of Topology
-
-
-
-```cpp
-Inherits from ComponentRegistryBuilder, RelationshipsBuilder, VertexIdentifierBuilder
-```
-
+# struct CollectionComponentsRegistrator
 
 
 ## Functions
 
-### TopologyBuilder
+### apply
 
 ```cpp
-protected void TopologyBuilder(Topology & topology)
+public void apply(const Model & model, typename Model::Builder & builder)
 ```
 
 

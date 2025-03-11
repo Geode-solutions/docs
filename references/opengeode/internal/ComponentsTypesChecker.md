@@ -13,6 +13,8 @@ const name = words.join('-');
 
 # struct ComponentsTypesChecker
 
+# struct ComponentsTypesChecker
+
 
 ## Functions
 
@@ -23,8 +25,5 @@ public bool apply(const ComponentType & component_type)
 ```
 
 
-
-
-# struct ComponentsTypesChecker
 
 

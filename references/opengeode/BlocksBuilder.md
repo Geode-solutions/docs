@@ -47,7 +47,7 @@ public void set_block_name(const uuid & id, basic_string_view name)
 ### BlocksBuilder
 
 ```cpp
-protected void BlocksBuilder<>(Blocks<dimension> & blocks)
+protected void BlocksBuilder<dimension>(Blocks<dimension> & blocks)
 ```
 
 

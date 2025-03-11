@@ -263,7 +263,7 @@ public bool is_surface_collection_item(const Surface2D & surface, const SurfaceC
 ### bounding_box
 
 ```cpp
-public BoundingBox bounding_box()
+public BoundingBox2D bounding_box()
 ```
 
 
