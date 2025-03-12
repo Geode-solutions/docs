@@ -33,28 +33,28 @@ public const Container & vertices()
 ### is_opposite
 
 ```cpp
-public bool is_opposite(const OrientedVertexCycle<Container> & other)
+public bool is_opposite(const OrientedVertexCycle<OtherContainer> & other)
 ```
 
 
 ### operator==
 
 ```cpp
-public bool operator==(const OrientedVertexCycle<Container> & other)
+public bool operator==(const OrientedVertexCycle<OtherContainer> & other)
 ```
 
 
 ### operator!=
 
 ```cpp
-public bool operator!=(const OrientedVertexCycle<Container> & other)
+public bool operator!=(const OrientedVertexCycle<OtherContainer> & other)
 ```
 
 
 ### operator<
 
 ```cpp
-public bool operator<(const OrientedVertexCycle<Container> & other)
+public bool operator<(const OrientedVertexCycle<OtherContainer> & other)
 ```
 
 
