@@ -87,14 +87,14 @@ void constrained_mesh_block(const BRep & output, BRepBuilder & builder, const Bl
 ### mesh_blocks
 
 ```cpp
-void mesh_blocks(const BRep & output, BRepBuilder & builder, const Metric3D & metric)
+void mesh_blocks(const BRep & output, BRepBuilder & builder, BRepGeometricModifier & modifier, const Metric3D & metric)
 ```
 
 
 ### mesh_blocks
 
 ```cpp
-void mesh_blocks(const BRep & output, BRepBuilder & builder, const Metric3D & metric, Span blocks_to_mesh)
+void mesh_blocks(const BRep & output, BRepBuilder & builder, BRepGeometricModifier & modifier, const Metric3D & metric, Span blocks_to_mesh)
 ```
 
 

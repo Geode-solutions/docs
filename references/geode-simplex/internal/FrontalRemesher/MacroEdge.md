@@ -32,17 +32,22 @@ public Point<dimension> p1
 ```
 
 ```cpp
-public double length
-
-```
-
-```cpp
 public double metric
 
 ```
 
 ```cpp
 public double target
+
+```
+
+```cpp
+public double length
+
+```
+
+```cpp
+public Vector<dimension> propagation_direction
 
 ```
 

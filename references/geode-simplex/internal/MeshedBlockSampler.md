@@ -74,7 +74,7 @@ protected vector initial_queue_elements()
 ### compute_potential_points
 
 ```cpp
-protected tuple compute_potential_points(const Element & element)
+protected vector compute_potential_points(const Element & element)
 ```
 
 
