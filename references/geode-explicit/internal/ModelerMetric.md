@@ -54,7 +54,7 @@ public const Grid<dimension> & grid()
 ### build
 
 ```cpp
-public const Metric<dimension> & build()
+public const IsotropicMetric<dimension> & build()
 ```
 
 

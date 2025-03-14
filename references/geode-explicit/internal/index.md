@@ -42,7 +42,7 @@ double smallest_acceptable_or_median_distance(const BoundingBox<dimension> & bbo
 ### build_surface
 
 ```cpp
-unique_ptr build_surface(const BoundingBox2D & bbox, const Metric2D & metric)
+unique_ptr build_surface(const BoundingBox2D & bbox, const IsotropicMetric2D & metric)
 ```
 
 
@@ -70,7 +70,7 @@ ElementGraph find_elements_to_insert_on_border(const Meshes & meshes, vector bor
 ### build_solid
 
 ```cpp
-unique_ptr build_solid(const BoundingBox3D & bbox, const Metric3D & metric)
+unique_ptr build_solid(const BoundingBox3D & bbox, const IsotropicMetric3D & metric)
 ```
 
 
