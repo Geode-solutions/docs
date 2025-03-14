@@ -1021,6 +1021,188 @@ double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
 
  Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
 
+### line_plane_intersection
+
+```cpp
+IntersectionResult<Point3D> line_plane_intersection(const InfiniteLine3D & line, const Plane & plane)
+```
+
+
+ Compute the intersection between a plane and an infinite line
+
+**return** an optional of the intersection.
+
+### line_sphere_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > line_sphere_intersection(const InfiniteLine<dimension> & line, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the intersection(s) between a sphere and an infinite line
+
+**return** an optional of the intersection points.
+
+### segment_sphere_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
+```
+
+
+ Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
+
+**return** an optional of the intersection points.
+
+### segment_plane_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_plane_intersection(const Segment3D & segment, const Plane & plane)
+```
+
+
+ Compute the intersection between a plane and a segment
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the plane nothing is returned
+
+### segment_triangle_intersection
+
+```cpp
+IntersectionResult<Point3D> segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
+```
+
+
+ Compute the intersection of a segment and a triangle
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the triangle plane nothing is returned
+
+### line_triangle_intersection
+
+```cpp
+IntersectionResult<Point3D> line_triangle_intersection(const InfiniteLine3D & line, const Triangle3D & triangle)
+```
+
+
+ Compute the intersection of a line and a triangle
+
+**return** an optional of the intersection point.
+
+**warning** if the segment is included in the triangle plane nothing is returned
+
+### line_line_intersection
+
+```cpp
+IntersectionResult<Point2D> line_line_intersection(const InfiniteLine2D & line0, const InfiniteLine2D & line1)
+```
+
+
+ Compute the intersection between two infinite lines
+
+**return** an optional of the intersection point.
+
+### segment_segment_intersection
+
+```cpp
+IntersectionResult<Point2D> segment_segment_intersection(const Segment2D & segment0, const Segment2D & segment1)
+```
+
+
+ Compute the intersection between two segments
+
+**return** an optional of the intersection point.
+
+### segment_line_intersection
+
+```cpp
+IntersectionResult<Point2D> segment_line_intersection(const Segment2D & segment, const InfiniteLine2D & line)
+```
+
+
+ Compute the intersection between a segment and an infinite line
+
+**return** an optional of the intersection point.
+
+### segment_cylinder_intersection
+
+```cpp
+IntersectionResult segment_cylinder_intersection(const Segment3D & segment, const Cylinder & cylinder)
+```
+
+
+ Compute the intersection between a segment and a cylinder
+
+**return** an optional of the intersection points.
+
+### line_cylinder_intersection
+
+```cpp
+IntersectionResult line_cylinder_intersection(const InfiniteLine3D & line, const Cylinder & cylinder)
+```
+
+
+ Compute the intersection between a line and a cylinder
+
+**return** an optional of the intersection points.
+
+### triangle_circle_intersection
+
+```cpp
+IntersectionResult triangle_circle_intersection(const Triangle3D & triangle, const Circle & circle)
+```
+
+
+ Compute the intersection between a triangle and a circle
+
+**return** an optional of the intersection points.
+
+### plane_circle_intersection
+
+```cpp
+IntersectionResult plane_circle_intersection(const Plane & plane, const Circle & circle)
+```
+
+
+ Compute the intersection between a plane and a circle
+
+**return** an optional of the intersection points.
+
+### plane_plane_intersection
+
+```cpp
+IntersectionResult<OwnerInfiniteLine3D> plane_plane_intersection(const Plane & plane0, const Plane & plane1)
+```
+
+
+ Compute the intersection between two planes
+
+**return** an optional of the intersection line.
+
+### segment_ellipse_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > segment_ellipse_intersection(const Segment<dimension> & segment, const Ellipse<dimension> & ellipse)
+```
+
+
+ Compute the intersection between a segment and an ellipse
+
+**return** an optional of the intersection points.
+
+### line_ellipse_intersection
+
+```cpp
+IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > line_ellipse_intersection(const InfiniteLine<dimension> & line, const Ellipse<dimension> & ellipse)
+```
+
+
+ Compute the intersection between a line and an ellipse
+
+**return** an optional of the intersection points.
+
 ### lexicographic_mapping
 
 ```cpp
@@ -2627,223 +2809,6 @@ SIDE triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
 
  Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
 
-### point_triangle_distance
-
-```cpp
-tuple point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-tuple point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### Bisector
-
-```cpp
-double Bisector(const geode::index_t number_of_components, const std::array<double, dimension> & locE, const std::array<double, dimension> & locY, std::array<double, dimension> & locX)
-```
-
-
-### SqrDistanceSpecial
-
-```cpp
-std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std::array<double, dimension> & extents, const std::array<double, dimension> & query_point_coordinates)
-```
-
-
-### SquaredDistance
-
-```cpp
-std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
-```
-
-
-### line_plane_intersection
-
-```cpp
-IntersectionResult line_plane_intersection(const InfiniteLine3D & line, const Plane & plane)
-```
-
-
- Compute the intersection between a plane and an infinite line
-
-**return** an optional of the intersection.
-
-### line_sphere_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > line_sphere_intersection(const InfiniteLine<dimension> & line, const Sphere<dimension> & sphere)
-```
-
-
- Compute the intersection(s) between a sphere and an infinite line
-
-**return** an optional of the intersection points.
-
-### segment_sphere_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > segment_sphere_intersection(const Segment<dimension> & segment, const Sphere<dimension> & sphere)
-```
-
-
- Compute the intersection(s) between a (n-1)-sphere and a segment in n-dimension space.
-
-**return** an optional of the intersection points.
-
-### segment_plane_intersection
-
-```cpp
-IntersectionResult segment_plane_intersection(const Segment3D & segment, const Plane & plane)
-```
-
-
- Compute the intersection between a plane and a segment
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the plane nothing is returned
-
-### segment_triangle_intersection
-
-```cpp
-IntersectionResult segment_triangle_intersection(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Compute the intersection of a segment and a triangle
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the triangle plane nothing is returned
-
-### line_triangle_intersection
-
-```cpp
-IntersectionResult line_triangle_intersection(const InfiniteLine3D & line, const Triangle3D & triangle)
-```
-
-
- Compute the intersection of a line and a triangle
-
-**return** an optional of the intersection point.
-
-**warning** if the segment is included in the triangle plane nothing is returned
-
-### line_line_intersection
-
-```cpp
-IntersectionResult line_line_intersection(const InfiniteLine2D & line0, const InfiniteLine2D & line1)
-```
-
-
- Compute the intersection between two infinite lines
-
-**return** an optional of the intersection point.
-
-### segment_segment_intersection
-
-```cpp
-IntersectionResult segment_segment_intersection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
- Compute the intersection between two segments
-
-**return** an optional of the intersection point.
-
-### segment_line_intersection
-
-```cpp
-IntersectionResult segment_line_intersection(const Segment2D & segment, const InfiniteLine2D & line)
-```
-
-
- Compute the intersection between a segment and an infinite line
-
-**return** an optional of the intersection point.
-
-### segment_cylinder_intersection
-
-```cpp
-IntersectionResult segment_cylinder_intersection(const Segment3D & segment, const Cylinder & cylinder)
-```
-
-
- Compute the intersection between a segment and a cylinder
-
-**return** an optional of the intersection points.
-
-### line_cylinder_intersection
-
-```cpp
-IntersectionResult line_cylinder_intersection(const InfiniteLine3D & line, const Cylinder & cylinder)
-```
-
-
- Compute the intersection between a line and a cylinder
-
-**return** an optional of the intersection points.
-
-### triangle_circle_intersection
-
-```cpp
-IntersectionResult triangle_circle_intersection(const Triangle3D & triangle, const Circle & circle)
-```
-
-
- Compute the intersection between a triangle and a circle
-
-**return** an optional of the intersection points.
-
-### plane_circle_intersection
-
-```cpp
-IntersectionResult plane_circle_intersection(const Plane & plane, const Circle & circle)
-```
-
-
- Compute the intersection between a plane and a circle
-
-**return** an optional of the intersection points.
-
-### plane_plane_intersection
-
-```cpp
-IntersectionResult plane_plane_intersection(const Plane & plane0, const Plane & plane1)
-```
-
-
- Compute the intersection between two planes
-
-**return** an optional of the intersection line.
-
-### segment_ellipse_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > segment_ellipse_intersection(const Segment<dimension> & segment, const Ellipse<dimension> & ellipse)
-```
-
-
- Compute the intersection between a segment and an ellipse
-
-**return** an optional of the intersection points.
-
-### line_ellipse_intersection
-
-```cpp
-IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > line_ellipse_intersection(const InfiniteLine<dimension> & line, const Ellipse<dimension> & ellipse)
-```
-
-
- Compute the intersection between a line and an ellipse
-
-**return** an optional of the intersection points.
-
 ### file_exists
 
 ```cpp
@@ -2932,6 +2897,41 @@ float string_to_float(basic_string_view string)
 
 ```cpp
 double string_to_double(basic_string_view string)
+```
+
+
+### point_triangle_distance
+
+```cpp
+tuple point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_triangle_distance
+
+```cpp
+tuple point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### Bisector
+
+```cpp
+double Bisector(const geode::index_t number_of_components, const std::array<double, dimension> & locE, const std::array<double, dimension> & locY, std::array<double, dimension> & locX)
+```
+
+
+### SqrDistanceSpecial
+
+```cpp
+std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std::array<double, dimension> & extents, const std::array<double, dimension> & query_point_coordinates)
+```
+
+
+### SquaredDistance
+
+```cpp
+std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
 ```
 
 
@@ -3423,6 +3423,17 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ## Enums
 
+| enum class INTERSECTION_TYPE |
+
+--
+
+| none |
+| intersect |
+| parallel |
+| incorrect |
+
+
+
 | enum class POSITION |
 
 --
@@ -3457,17 +3468,6 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 | positive |
 | negative |
 | zero |
-
-
-
-| enum class INTERSECTION_TYPE |
-
---
-
-| none |
-| intersect |
-| parallel |
-| incorrect |
 
 
 

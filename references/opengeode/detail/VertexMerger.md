@@ -60,7 +60,7 @@ public const VertexOrigins & vertex_origins(index_t vertex)
 ### VertexMerger
 
 ```cpp
-protected void VertexMerger<Mesh>(absl::Span<const std::reference_wrapper<const Mesh> > meshes, double epsilon)
+protected void VertexMerger<Mesh>(absl::Span<const std::reference_wrapper<const Mesh> > meshes)
 ```
 
 
@@ -109,7 +109,14 @@ protected Builder & builder()
 ### create_points
 
 ```cpp
-protected void create_points()
+protected void create_points(double epsilon)
+```
+
+
+### create_points
+
+```cpp
+protected void create_points(const Frame<Mesh::dim> & epsilons_frame)
 ```
 
 

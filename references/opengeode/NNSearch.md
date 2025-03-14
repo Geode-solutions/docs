@@ -106,6 +106,21 @@ public vector radius_neighbors(const Point<dimension> & point, double threshold_
 
 **return** the list of points inside this distance
 
+### frame_neighbors
+
+```cpp
+public vector frame_neighbors(const Point<dimension> & point, const Frame<dimension> & epsilons_frame)
+```
+
+
+ Get the neighbors within an ellipse described by its frame, centered on the given point
+
+**point** [in] The center of the ellipse
+
+**epsilons_frame** [in] The frame describing the ellipse
+
+**return** the list of points inside this distance
+
 ### neighbors
 
 ```cpp
@@ -113,7 +128,7 @@ public vector neighbors(const Point<dimension> & point, index_t nb_neighbors)
 ```
 
 
- Get a number ol close neighbors from the given point
+ Get a number of close neighbors from the given point
 
 **point** [in] The requested point
 
@@ -133,6 +148,13 @@ public ColocatedInfo colocated_index_mapping(double epsilon)
 **epsilon** [in] The approximation allowed to test if two points are identical
 
 **return** The information related to this colocated operation
+
+### colocated_index_mapping
+
+```cpp
+public ColocatedInfo colocated_index_mapping(const Frame<dimension> & epsilon)
+```
+
 
 
 

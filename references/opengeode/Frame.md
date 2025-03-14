@@ -85,6 +85,20 @@ public basic_string string()
 ```
 
 
+### max_elongation_direction
+
+```cpp
+public local_index_t max_elongation_direction()
+```
+
+
+### min_elongation_direction
+
+```cpp
+public local_index_t min_elongation_direction()
+```
+
+
 
 
 # class Frame
