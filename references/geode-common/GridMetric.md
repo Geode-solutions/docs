@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from Metric<2U>
+Inherits from IsotropicMetric<2U>
 ```
 
 
@@ -24,7 +24,7 @@ Inherits from Metric<2U>
 
 
 ```cpp
-Inherits from Metric<3U>
+Inherits from IsotropicMetric<3U>
 ```
 
 
@@ -37,7 +37,7 @@ Inherits from Metric<3U>
 
 
 ```cpp
-Inherits from Metric<dimension>
+Inherits from IsotropicMetric<dimension>
 ```
 
 
@@ -68,7 +68,7 @@ public const Grid<dimension> & grid()
 ### metric
 
 ```cpp
-public double metric(const Point<dimension> & point)
+public double metric(const Point<dimension> & point, const Vector<dimension> & )
 ```
 
 
@@ -96,7 +96,7 @@ public double minimal_metric(const Triangle<dimension> & triangle)
 ### average_metric
 
 ```cpp
-public double average_metric()
+public std::array<double, dimension> average_metric()
 ```
 
 
@@ -104,6 +104,13 @@ public double average_metric()
 
 ```cpp
 public double median_metric()
+```
+
+
+### coordinate_system
+
+```cpp
+public CoordinateSystem<dimension> coordinate_system(const Point<dimension> & point)
 ```
 
 

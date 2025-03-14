@@ -23,6 +23,7 @@ const name = words.join('-');
 
 ## Records
 
+* [AnisotropicMetric](AnisotropicMetric.md)
 * [BRepCollapseEdgeValidity](BRepCollapseEdgeValidity.md)
 * [BRepCutter](BRepCutter.md)
 * [BRepElementsAfterCollapseEdge](BRepElementsAfterCollapseEdge.md)
@@ -80,6 +81,7 @@ const name = words.join('-');
 * [GraphModifier](GraphModifier.md)
 * [GridMetric](GridMetric.md)
 * [Invalidity](Invalidity.md)
+* [IsotropicMetric](IsotropicMetric.md)
 * [LineCollapseEdgeValidities](LineCollapseEdgeValidities.md)
 * [Mapping](Mapping.md)
 * [MeshModifierFactoryKey](MeshModifierFactoryKey.md)

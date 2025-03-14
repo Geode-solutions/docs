@@ -11,21 +11,16 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class Metric
+# class AnisotropicMetric
 
 
- Interface class for metric computation
+```cpp
+Inherits from Metric<dimension>
+```
 
 
 
 ## Functions
-
-### ~Metric
-
-```cpp
-public void ~Metric<dimension>()
-```
-
 
 ### metric
 
@@ -33,16 +28,30 @@ public void ~Metric<dimension>()
 public double metric(const Point<dimension> & point, const Vector<dimension> & vector)
 ```
 
+
 ### average_metric
 
 ```cpp
 public std::array<double, dimension> average_metric()
 ```
 
-### coordinate_system
+
+
+
+# class AnisotropicMetric
+
 
 ```cpp
-public CoordinateSystem<dimension> coordinate_system(const Point<dimension> & point)
+Inherits from Metric<2U>
+```
+
+
+
+# class AnisotropicMetric
+
+
+```cpp
+Inherits from Metric<3U>
 ```
 
 

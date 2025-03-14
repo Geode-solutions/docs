@@ -68,7 +68,7 @@ protected void replace_default(double default_metric)
 ### average_metric
 
 ```cpp
-public double average_metric()
+public std::array<double, dimension> average_metric()
 ```
 
 
@@ -90,6 +90,13 @@ public double minimal_metric(const Segment<dimension> & segment)
 
 ```cpp
 public double minimal_metric(const Triangle<dimension> & triangle)
+```
+
+
+### coordinate_system
+
+```cpp
+public CoordinateSystem<dimension> coordinate_system(const Point<dimension> & point)
 ```
 
 
