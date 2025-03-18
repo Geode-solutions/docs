@@ -71,6 +71,13 @@ public optional wireframe_edge_id(const std::array<index_t, 2> & edge_vertices)
 ```
 
 
+### wireframe_vertex_id
+
+```cpp
+public optional wireframe_vertex_id(index_t support_mesh_vertex_id)
+```
+
+
 ### support_mesh_vertex_id
 
 ```cpp
@@ -124,6 +131,34 @@ protected index_t find_or_create_edge(const std::array<index_t, 2> & edge_vertic
 
 ```cpp
 protected index_t find_or_create_corner(index_t corner_vertex, const Point<dimension> & corner_point)
+```
+
+
+### find_or_create_vertex
+
+```cpp
+protected index_t find_or_create_vertex(index_t unique_vertex, const Point<dimension> & point)
+```
+
+
+### declare_corner
+
+```cpp
+protected void declare_corner(index_t wireframe_vertex_id, const uuid & corner_uuid)
+```
+
+
+### declare_line_edge
+
+```cpp
+protected void declare_line_edge(index_t wireframe_edge_id, const uuid & line_uuid, index_t line_edge_id)
+```
+
+
+### remove_line_edges
+
+```cpp
+protected void remove_line_edges(const uuid & line_uuid)
 ```
 
 

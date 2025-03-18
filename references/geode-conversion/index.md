@@ -151,5 +151,12 @@ tuple add_sharp_features(const Section & model, double max_angle)
 
 **max_angle** [in] Angle between the edges under which their common vertex is considered a sharp feature.
 
+### build_topology_using_unique_vertices
+
+```cpp
+ModelMappings build_topology_using_unique_vertices(BRep & brep)
+```
+
+
 
 
