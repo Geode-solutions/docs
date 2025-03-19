@@ -96,6 +96,9 @@ const name = words.join('-');
 * [Skin](Skin.md)
 * [SkipNonMandatory](SkipNonMandatory.md)
 * [SkipNothing](SkipNothing.md)
+* [SolidSkinSplitOrder](SolidSkinSplitOrder.md)
+* [SolidSkin](SolidSkin.md)
+* [SolidSplitInfo](SolidSplitInfo.md)
 * [ThreePointsInternalDistance](ThreePointsInternalDistance.md)
 
 
@@ -500,21 +503,28 @@ vector find_unique_facet_normals(const geode::internal::BackgroundSolid & backgr
 ```
 
 
-### determine_splits_order
-
-```cpp
-vector determine_splits_order(const CorafinatedSurface & corafinated_surface, Skin & skin)
-```
-
-
 ### find_split_orders
 
 ```cpp
-array find_split_orders(CorafinatedSurface & corafinated_surface, Skins & skins)
+InlinedVector find_split_orders(CorafinatedSurface & corafinated_surface, Skins & skins)
 ```
 
 
  Find the order of the splits between the corafinated surface and the skins. The corafinated surface may be modified to be able to find a correct split order for all skins.
+
+### do_corafinated_solid_splits
+
+```cpp
+SolidSplitInfo do_corafinated_solid_splits(CorafinatedSurface & corafinated_surface, SolidSkinSplitOrders & split_orders)
+```
+
+
+### vertex_skins_solid_mapping
+
+```cpp
+BijectiveMapping vertex_skins_solid_mapping(const CorafinatedSurface & corafinated_surface, const std::array<SolidSkin, 2> & solid_skins)
+```
+
 
 ### simplify_background_solid_multilayers
 
