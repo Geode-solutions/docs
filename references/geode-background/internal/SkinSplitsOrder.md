@@ -11,18 +11,18 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SolidSkin
+# struct SkinSplitsOrder
 
 
 ## Members
 
 ```cpp
-public ModifiableObject solid
+public Skin & skin
 
 ```
 
 ```cpp
-public Skin & skin
+public const SplitsOrder & splits_order
 
 ```
 
@@ -30,10 +30,10 @@ public Skin & skin
 
 ## Functions
 
-### SolidSkin
+### SkinSplitsOrder
 
 ```cpp
-public void SolidSkin(ModifiableObject solid_in, Skin & skin_in)
+public void SkinSplitsOrder(Skin & skin_in, const SplitsOrder & splits_order_in)
 ```
 
 

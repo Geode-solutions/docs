@@ -93,11 +93,10 @@ const name = words.join('-');
 * [PointsInternalDistanceImpl](PointsInternalDistanceImpl.md)
 * [Points](Points.md)
 * [ScalarFunctionIsovalue](ScalarFunctionIsovalue.md)
+* [SkinSplitsOrder](SkinSplitsOrder.md)
 * [Skin](Skin.md)
 * [SkipNonMandatory](SkipNonMandatory.md)
 * [SkipNothing](SkipNothing.md)
-* [SolidSkinSplitOrder](SolidSkinSplitOrder.md)
-* [SolidSkin](SolidSkin.md)
 * [SolidSplitInfo](SolidSplitInfo.md)
 * [ThreePointsInternalDistance](ThreePointsInternalDistance.md)
 
@@ -515,14 +514,14 @@ InlinedVector find_split_orders(CorafinatedSurface & corafinated_surface, Skins 
 ### do_corafinated_solid_splits
 
 ```cpp
-SolidSplitInfo do_corafinated_solid_splits(CorafinatedSurface & corafinated_surface, SolidSkinSplitOrders & split_orders)
+SolidSplitInfo do_corafinated_solid_splits(CorafinatedSurface & corafinated_surface, SkinSplitsOrders & split_orders)
 ```
 
 
 ### vertex_skins_solid_mapping
 
 ```cpp
-BijectiveMapping vertex_skins_solid_mapping(const CorafinatedSurface & corafinated_surface, const std::array<SolidSkin, 2> & solid_skins)
+BijectiveMapping vertex_skins_solid_mapping(const CorafinatedSurface & corafinated_surface, const Skins & skins)
 ```
 
 
