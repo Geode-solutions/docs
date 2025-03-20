@@ -58,6 +58,13 @@ public bool operator!=(const MeshElement & other)
 ```
 
 
+### operator<
+
+```cpp
+public bool operator<(const MeshElement & other)
+```
+
+
 ### serialize
 
 ```cpp
