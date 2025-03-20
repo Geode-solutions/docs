@@ -36,6 +36,20 @@ public void ~ScalarFunctionComputer2D()
 ```
 
 
+### add_computation_boundary
+
+```cpp
+public void add_computation_boundary(const EdgedCurve2D & boundary_line)
+```
+
+
+### add_internal_discontinuity
+
+```cpp
+public void add_internal_discontinuity(const EdgedCurve2D & discontinuity_line)
+```
+
+
 ### grid_with_results
 
 ```cpp

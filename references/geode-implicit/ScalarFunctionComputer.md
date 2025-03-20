@@ -17,9 +17,6 @@ const name = words.join('-');
 # class ScalarFunctionComputer
 
 
-# class ScalarFunctionComputer
-
-
 ## Functions
 
 ### ~ScalarFunctionComputer
@@ -71,5 +68,8 @@ protected const DataConstraintsManager<dimension> & data_constraints()
 ```
 
 
+
+
+# class ScalarFunctionComputer
 
 

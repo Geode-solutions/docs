@@ -117,7 +117,7 @@ public void add_horizon_data_surface_in_model(const Horizon3D & horizon, const S
 ### build
 
 ```cpp
-public ImplicitStructuralModel build()
+public ImplicitStructuralModel build(const ImplicitationParameters & computation_parameters)
 ```
 
 

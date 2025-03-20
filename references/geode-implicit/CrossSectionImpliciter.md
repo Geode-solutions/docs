@@ -89,7 +89,7 @@ public void add_horizon_data_pointset_in_surface(const Surface2D & surface, cons
 ### build
 
 ```cpp
-public ImplicitCrossSection build()
+public ImplicitCrossSection build(const ImplicitationParameters & computation_parameters)
 ```
 
 
