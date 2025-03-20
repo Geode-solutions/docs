@@ -87,17 +87,17 @@ void add_geology_clone_mapping(ModelCopyMapping & mapping, const Model & model)
 ```
 
 
-### clone_horizon_mapping
+### add_horizons_clone_mapping
 
 ```cpp
-BijectiveMapping clone_horizon_mapping(const Model & model)
+void add_horizons_clone_mapping(const Model & model, BijectiveMapping<uuid> & horizons_mapping)
 ```
 
 
-### clone_stratigraphic_unit_mapping
+### add_stratigraphic_units_clone_mapping
 
 ```cpp
-BijectiveMapping clone_stratigraphic_unit_mapping(const Model & model)
+void add_stratigraphic_units_clone_mapping(const Model & model, BijectiveMapping<uuid> & stratigraphic_units_mapping)
 ```
 
 
