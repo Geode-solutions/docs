@@ -170,6 +170,20 @@ public bool is_edge_active(const Line<dimension> & line, index_t edge)
 ```
 
 
+### inactive_edges
+
+```cpp
+public void inactive_edges(const Line<dimension> & line, Span edges)
+```
+
+
+### inactive_triangles
+
+```cpp
+public void inactive_triangles(const Surface<dimension> & surface, Span triangles)
+```
+
+
 ### mutex
 
 ```cpp

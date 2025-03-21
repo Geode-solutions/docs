@@ -256,6 +256,27 @@ public bool is_tetrahedron_active(const Block3D & block, index_t tetrahedron)
 ```
 
 
+### inactive_edges
+
+```cpp
+public void inactive_edges(const Line3D & line, Span edges)
+```
+
+
+### inactive_triangles
+
+```cpp
+public void inactive_triangles(const Surface3D & surface, Span triangles)
+```
+
+
+### inactive_tetrahedra
+
+```cpp
+public void inactive_tetrahedra(const Block3D & block, Span tetrahedra)
+```
+
+
 ### clean
 
 ```cpp

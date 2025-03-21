@@ -173,6 +173,20 @@ public bool is_triangle_active(const Surface2D & surface, index_t triangle)
 ```
 
 
+### inactive_edges
+
+```cpp
+public void inactive_edges(const Line2D & line, Span edges)
+```
+
+
+### inactive_triangles
+
+```cpp
+public void inactive_triangles(const Surface2D & surface, Span triangles)
+```
+
+
 ### clean
 
 ```cpp
