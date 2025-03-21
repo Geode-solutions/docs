@@ -148,6 +148,13 @@ public bool is_edge_exist(index_t begin, index_t end)
 ```
 
 
+### build_solid_to_bsurface_mappings
+
+```cpp
+public void build_solid_to_bsurface_mappings()
+```
+
+
 ### build_solid_to_bsurface_vertex_mapping
 
 ```cpp

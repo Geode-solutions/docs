@@ -72,14 +72,21 @@ public Skin & operator=(const Skin & )
 ### Skin
 
 ```cpp
-public void Skin(ModifiableObject solid_in, std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
+public void Skin(ModifiableObject solid)
 ```
 
 
 ### Skin
 
 ```cpp
-public void Skin(ModifiableObject solid_in, BackgroundSurface && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
+public void Skin(ModifiableObject solid, std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
+```
+
+
+### Skin
+
+```cpp
+public void Skin(ModifiableObject solid, BackgroundSurface && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
 ```
 
 
