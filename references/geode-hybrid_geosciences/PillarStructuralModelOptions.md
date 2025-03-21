@@ -11,14 +11,15 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace geode
+# struct PillarStructuralModelOptions
 
 
+## Members
 
-## Records
+```cpp
+public bool add_model_boundary
 
-* [HybridGeosciencesPillarLibrary](HybridGeosciencesPillarLibrary.md)
-* [PillarStructuralModelBuilder](PillarStructuralModelBuilder.md)
-* [PillarStructuralModelOptions](PillarStructuralModelOptions.md)
+```
+
 
 
