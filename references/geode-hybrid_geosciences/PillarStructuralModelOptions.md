@@ -21,5 +21,10 @@ public bool add_model_boundary
 
 ```
 
+```cpp
+public bool add_block_mesh
+
+```
+
 
 
