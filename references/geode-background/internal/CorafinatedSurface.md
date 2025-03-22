@@ -102,21 +102,14 @@ public CorafinatedSurface & operator=(const CorafinatedSurface & )
 ### CorafinatedSurface
 
 ```cpp
-public void CorafinatedSurface(CorafinatedSurface && )
-```
-
-
-### operator=
-
-```cpp
-public CorafinatedSurface & operator=(CorafinatedSurface && )
+public void CorafinatedSurface()
 ```
 
 
 ### CorafinatedSurface
 
 ```cpp
-public void CorafinatedSurface()
+public void CorafinatedSurface(CorafinatedSurface && other)
 ```
 
 
@@ -141,10 +134,10 @@ public Point point3d(index_t vertex)
 ```
 
 
-### is_edge_exist
+### does_edge_exist
 
 ```cpp
-public bool is_edge_exist(index_t begin, index_t end)
+public bool does_edge_exist(index_t begin, index_t end)
 ```
 
 

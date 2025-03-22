@@ -30,6 +30,20 @@ public void ~BackgroundBRepInserter()
 ```
 
 
+### insert_curve
+
+```cpp
+public flat_hash_map insert_curve(const EdgedCurve3D & mesh)
+```
+
+
+### insert_curve_edges
+
+```cpp
+public flat_hash_map insert_curve_edges(const EdgedCurve3D & mesh, Span edges_ids)
+```
+
+
 ### insert_scalar_function_isovalues
 
 ```cpp
