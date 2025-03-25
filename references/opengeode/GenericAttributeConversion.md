@@ -89,6 +89,41 @@ public local_index_t nb_items()
 ### converted_value
 
 ```cpp
+public float converted_value(const unsigned short & value)
+```
+
+
+### converted_item_value
+
+```cpp
+public float converted_item_value(const unsigned short & value, local_index_t )
+```
+
+
+### is_genericable
+
+```cpp
+public bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_value
+
+```cpp
 public float converted_value(const Container & value)
 ```
 
@@ -237,6 +272,41 @@ public float converted_value(const int & value)
 
 ```cpp
 public float converted_item_value(const int & value, local_index_t )
+```
+
+
+### is_genericable
+
+```cpp
+public bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_value
+
+```cpp
+public float converted_value(const signed char & value)
+```
+
+
+### converted_item_value
+
+```cpp
+public float converted_item_value(const signed char & value, local_index_t )
 ```
 
 
@@ -513,14 +583,14 @@ public local_index_t nb_items()
 ### converted_value
 
 ```cpp
-public float converted_value(const local_index_t & value)
+public float converted_value(const unsigned char & value)
 ```
 
 
 ### converted_item_value
 
 ```cpp
-public float converted_item_value(const local_index_t & value, local_index_t )
+public float converted_item_value(const unsigned char & value, local_index_t )
 ```
 
 
@@ -556,6 +626,41 @@ public float converted_value(const Container & value)
 
 ```cpp
 public float converted_item_value(const Container & value, local_index_t item)
+```
+
+
+### is_genericable
+
+```cpp
+public bool is_genericable()
+```
+
+
+### nb_items
+
+```cpp
+public local_index_t nb_items()
+```
+
+
+
+
+# struct GenericAttributeConversion
+
+
+## Functions
+
+### converted_value
+
+```cpp
+public float converted_value(const short & value)
+```
+
+
+### converted_item_value
+
+```cpp
+public float converted_item_value(const short & value, local_index_t )
 ```
 
 
