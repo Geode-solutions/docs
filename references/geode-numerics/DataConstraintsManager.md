@@ -19,7 +19,7 @@ const name = words.join('-');
 ### ~DataConstraintsManager
 
 ```cpp
-public void ~DataConstraintsManager<>()
+public void ~DataConstraintsManager<dimension>()
 ```
 
 
@@ -64,7 +64,7 @@ public double data_point_weight(index_t data_point_index)
 ### DataConstraintsManager
 
 ```cpp
-protected void DataConstraintsManager<>()
+protected void DataConstraintsManager<dimension>()
 ```
 
 

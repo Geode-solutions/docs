@@ -78,6 +78,13 @@ public bool is_cell_active(const CellIndices & cell)
 ```
 
 
+### nb_active_cells
+
+```cpp
+public index_t nb_active_cells()
+```
+
+
 ### nb_computation_nodes
 
 ```cpp

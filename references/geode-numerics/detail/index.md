@@ -17,6 +17,20 @@ const name = words.join('-');
 
 ## Functions
 
+### convert_computation_grid_to_surface_mesh
+
+```cpp
+unique_ptr convert_computation_grid_to_surface_mesh(const ComputationGrid<2> & grid)
+```
+
+
+### convert_computation_grid_to_solid_mesh
+
+```cpp
+unique_ptr convert_computation_grid_to_solid_mesh(const ComputationGrid<3> & grid)
+```
+
+
 ### mean_plane_around_points
 
 ```cpp
