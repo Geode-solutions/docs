@@ -42,7 +42,7 @@ vector save_cut_surface_grid(const CutSurfaceGrid & cut_surface_grid, basic_stri
 ```
 
 
- API function for saving a CutSurfaceGrid. The adequate saver is called depending on the given filename         extension. const CutSurfaceGrid& cut_surface_grid,
+ API function for saving a CutSurfaceGrid. The adequate saver is called depending on the given filename         extension.
 
 **edged_curve** [in] CutSurfaceGrid to save.
 
