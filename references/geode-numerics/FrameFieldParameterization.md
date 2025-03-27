@@ -25,7 +25,7 @@ ExtractedElements
 ### FrameFieldParameterization
 
 ```cpp
-public void FrameFieldParameterization(const FrameField & frame_field, double mesh_size)
+public void FrameFieldParameterization(const FrameField & frame_field)
 ```
 
 
