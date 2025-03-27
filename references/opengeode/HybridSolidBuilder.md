@@ -56,7 +56,7 @@ public index_t create_hexahedron(const std::array<index_t, 8> & vertices)
 ```
 
 
- Create a new hexahedron from four vertices.
+ Create a new hexahedron from eight vertices.
 
 **vertices** [in] The eight vertices defining the hexahedron to create
 

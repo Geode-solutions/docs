@@ -24,6 +24,9 @@ const name = words.join('-');
 ## Records
 
 * [AABBTree](AABBTree.md)
+* [AnisotropicDistanceToEdge](AnisotropicDistanceToEdge.md)
+* [AnisotropicDistanceToTetrahedron](AnisotropicDistanceToTetrahedron.md)
+* [AnisotropicDistanceToTriangle](AnisotropicDistanceToTriangle.md)
 * [AttributeBase](AttributeBase.md)
 * [AttributeCoordinateReferenceSystem](AttributeCoordinateReferenceSystem.md)
 * [AttributeLinearInterpolationImpl](AttributeLinearInterpolationImpl.md)
