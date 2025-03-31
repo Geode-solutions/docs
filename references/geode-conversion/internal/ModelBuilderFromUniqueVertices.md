@@ -29,12 +29,18 @@ Inherits from detail::CornersLinesBuilder<Model>
 
 
 
+## Records
+
+Parameters
+
+
+
 ## Functions
 
 ### ModelBuilderFromUniqueVertices
 
 ```cpp
-public void ModelBuilderFromUniqueVertices<Model>(Model & model)
+public void ModelBuilderFromUniqueVertices<Model>(Model & model, const Parameters & parameters)
 ```
 
 

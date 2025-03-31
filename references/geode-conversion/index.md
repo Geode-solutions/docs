@@ -23,6 +23,7 @@ const name = words.join('-');
 
 ## Records
 
+* [BRepBuildTopologyParameters](BRepBuildTopologyParameters.md)
 * [BlocksBuilderFromSolid](BlocksBuilderFromSolid.md)
 * [ConversionModelLibrary](ConversionModelLibrary.md)
 * [IndexToBRepMeshElementsMapping](IndexToBRepMeshElementsMapping.md)
@@ -154,7 +155,7 @@ tuple add_sharp_features(const Section & model, double max_angle)
 ### build_topology_using_unique_vertices
 
 ```cpp
-ModelMappings build_topology_using_unique_vertices(BRep & brep)
+ModelMappings build_topology_using_unique_vertices(BRep & brep, const BRepBuildTopologyParameters & parameters)
 ```
 
 
