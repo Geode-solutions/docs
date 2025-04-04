@@ -89,7 +89,7 @@ public void import_coordinates(const GeographicCoordinateSystem<dimension> & crs
 
 
 ```cpp
-Inherits from AttributeCoordinateReferenceSystem<2U>
+Inherits from AttributeCoordinateReferenceSystem<3U>
 ```
 
 
@@ -98,7 +98,7 @@ Inherits from AttributeCoordinateReferenceSystem<2U>
 
 
 ```cpp
-Inherits from AttributeCoordinateReferenceSystem<3U>
+Inherits from AttributeCoordinateReferenceSystem<2U>
 ```
 
 
