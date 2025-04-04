@@ -989,7 +989,7 @@ double tetrahedron_volume(const Tetrahedron & tetra)
 ### save_triangulated_surface
 
 ```cpp
-vector save_triangulated_surface(const TriangulatedSurface<dimension> & triangulated_surface, basic_string_view filename)
+std::vector<std::string> save_triangulated_surface(const TriangulatedSurface<dimension> & triangulated_surface, basic_string_view filename)
 ```
 
 
