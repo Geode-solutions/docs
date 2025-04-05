@@ -52,6 +52,7 @@ const name = words.join('-');
 * [StratigraphicSolidPathFinder](StratigraphicSolidPathFinder.md)
 * [StratigraphicSurfaceCutter](StratigraphicSurfaceCutter.md)
 * [StratigraphicSurface](StratigraphicSurface.md)
+* [StructuralModelImplicitationParameters](StructuralModelImplicitationParameters.md)
 * [StructuralModelImpliciter](StructuralModelImpliciter.md)
 * [StructuralModelToCrossSectionMapping](StructuralModelToCrossSectionMapping.md)
 * [SurfaceCutByBoundaries](SurfaceCutByBoundaries.md)

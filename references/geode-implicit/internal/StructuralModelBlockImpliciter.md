@@ -65,10 +65,17 @@ public void add_horizon_surface_data(const Horizon3D & horizon, const SurfaceMes
 ```
 
 
+### initialize_impliciter
+
+```cpp
+public void initialize_impliciter()
+```
+
+
 ### compute_target_grid_length
 
 ```cpp
-public double compute_target_grid_length()
+public double compute_target_grid_length(local_index_t target_nb_multi_grid_steps)
 ```
 
 

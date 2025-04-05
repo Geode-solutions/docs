@@ -79,6 +79,13 @@ public void build(const BoundingBox3D & computation_bbox, const ImplicitationPar
 ```
 
 
+### build
+
+```cpp
+public void build(const BoundingBox3D & computation_bbox, double expected_mesh_size)
+```
+
+
 ### resulting_grid
 
 ```cpp

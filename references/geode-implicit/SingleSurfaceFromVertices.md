@@ -65,5 +65,12 @@ public unique_ptr build(const ImplicitationParameters & computation_parameters)
 ```
 
 
+### build
+
+```cpp
+public unique_ptr build(double expected_mesh_size)
+```
+
+
 
 

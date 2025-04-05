@@ -17,12 +17,29 @@ const name = words.join('-');
 # class ScalarFunctionComputer
 
 
+# class ScalarFunctionComputer
+
+
 ## Functions
 
 ### ~ScalarFunctionComputer
 
 ```cpp
 public void ~ScalarFunctionComputer<dimension>()
+```
+
+
+### cell_size_at_multi_grid_step
+
+```cpp
+public double cell_size_at_multi_grid_step(local_index_t multi_grid_step)
+```
+
+
+### expected_nb_steps_to_reach_target_cell_size
+
+```cpp
+public local_index_t expected_nb_steps_to_reach_target_cell_size(double target_cell_size)
 ```
 
 
@@ -68,8 +85,12 @@ protected const DataConstraintsManager<dimension> & data_constraints()
 ```
 
 
+### initial_grid_cell_size
+
+```cpp
+protected double initial_grid_cell_size()
+```
 
 
-# class ScalarFunctionComputer
 
 
