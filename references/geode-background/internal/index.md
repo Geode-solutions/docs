@@ -700,6 +700,13 @@ vector epsilon_optimize_background_brep_elements(BackgroundBRepConstraintModifie
 ```
 
 
+### decimate_background_brep
+
+```cpp
+void decimate_background_brep(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundBRepDecimatorOperator & decimator_operator)
+```
+
+
 ### add_macro_info
 
 ```cpp
@@ -711,13 +718,6 @@ void add_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribut
 
 ```cpp
 void remove_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribute, const MacroInfo & macro_info, index_t background_mesh_element_id)
-```
-
-
-### decimate_background_brep
-
-```cpp
-void decimate_background_brep(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundBRepDecimatorOperator & decimator_operator)
 ```
 
 
