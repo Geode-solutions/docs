@@ -53,14 +53,14 @@ public void ~ComputationGrid<dimension>()
 ### set_inactive_cells
 
 ```cpp
-public void set_inactive_cells(absl::Span<const CellIndices> cells_list)
+public void set_inactive_cells(const absl::flat_hash_set<CellIndices> & cells_list)
 ```
 
 
 ### inactivate_cells_outside_voi
 
 ```cpp
-public void inactivate_cells_outside_voi(absl::Span<const CellIndices> rasterized_voi)
+public void inactivate_cells_outside_voi(const absl::flat_hash_set<CellIndices> & rasterized_voi)
 ```
 
 

@@ -24,6 +24,15 @@ Inherits from DataConstraintsManager<3U>
 
 
 ```cpp
+Inherits from DataConstraintsManager<2U>
+```
+
+
+
+# class DataPointsManager
+
+
+```cpp
 Inherits from DataConstraintsManager<dimension>
 ```
 
@@ -135,15 +144,6 @@ public BoundingBox<dimension> data_bounding_box()
 public const PointSet<dimension> & data_points()
 ```
 
-
-
-
-# class DataPointsManager
-
-
-```cpp
-Inherits from DataConstraintsManager<2U>
-```
 
 
 
