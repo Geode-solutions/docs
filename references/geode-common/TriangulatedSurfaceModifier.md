@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from VerticesModifier
+Inherits from VerticesModifier, EdgesModifier, TrianglesModifier
 ```
 
 
@@ -24,7 +24,7 @@ Inherits from VerticesModifier
 
 
 ```cpp
-Inherits from VerticesModifier
+Inherits from VerticesModifier, EdgesModifier, TrianglesModifier
 ```
 
 
@@ -33,7 +33,7 @@ Inherits from VerticesModifier
 
 
 ```cpp
-Inherits from VerticesModifier
+Inherits from VerticesModifier, EdgesModifier, TrianglesModifier
 ```
 
 

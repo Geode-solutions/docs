@@ -149,6 +149,27 @@ public index_t updated_surface_vertex(const Surface<dimension> & surface, index_
 ```
 
 
+### updated_line_edge
+
+```cpp
+public const SmallSet<index_t> & updated_line_edge(const Line<dimension> & line, index_t edge)
+```
+
+
+### updated_surface_edge
+
+```cpp
+public const SmallSet<index_t> & updated_surface_edge(const Surface<dimension> & surface, index_t edge)
+```
+
+
+### updated_surface_triangle
+
+```cpp
+public const SmallSet<index_t> & updated_surface_triangle(const Surface<dimension> & surface, index_t triangle)
+```
+
+
 ### is_triangle_active
 
 ```cpp

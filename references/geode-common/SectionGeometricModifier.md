@@ -138,10 +138,31 @@ public index_t updated_vertex(const Line2D & line, index_t vertex)
 ```
 
 
+### updated_edge
+
+```cpp
+public const SmallSet<index_t> & updated_edge(const Line2D & line, index_t edge)
+```
+
+
 ### updated_vertex
 
 ```cpp
 public index_t updated_vertex(const Surface2D & surface, index_t vertex)
+```
+
+
+### updated_edge
+
+```cpp
+public const SmallSet<index_t> & updated_edge(const Surface2D & surface, index_t edge)
+```
+
+
+### updated_triangle
+
+```cpp
+public const SmallSet<index_t> & updated_triangle(const Surface2D & surface, index_t triangle)
 ```
 
 

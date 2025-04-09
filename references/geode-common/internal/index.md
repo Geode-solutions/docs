@@ -19,6 +19,7 @@ const name = words.join('-');
 
 * [BlockMeshFusion](BlockMeshFusion.md)
 * [CutAlongPathImpl](CutAlongPathImpl.md)
+* [ElementsModifier](ElementsModifier.md)
 * [GridMetricImpl](GridMetricImpl.md)
 * [ModelGeometricModifier](ModelGeometricModifier.md)
 * [OrientedEdgeUniqueVertices](OrientedEdgeUniqueVertices.md)
@@ -28,6 +29,34 @@ const name = words.join('-');
 
 
 ## Functions
+
+### unordered_one_ring_vertices
+
+```cpp
+InlinedVector unordered_one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
+```
+
+
+### one_ring_vertices
+
+```cpp
+tuple one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
+```
+
+
+### rotate_one_ring_from_apex
+
+```cpp
+void rotate_one_ring_from_apex(absl::FixedArray<index_t> & one_ring_vertices, index_t apex)
+```
+
+
+### intersect_one_ring_vertices
+
+```cpp
+vector intersect_one_ring_vertices(const SolidMesh3D & mesh, index_t vertex0, index_t vertex1)
+```
+
 
 ### is_move_point_valid
 
@@ -145,34 +174,6 @@ typename ModelElementsAfterCollapseEdge<Model::dim>::SurfaceTriangles model_tria
 
 ```cpp
 typename ModelElementsAfterSwapEdge<Model::dim>::SurfaceTriangles model_triangles_after_swap_edge(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges)
-```
-
-
-### unordered_one_ring_vertices
-
-```cpp
-InlinedVector unordered_one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
-```
-
-
-### one_ring_vertices
-
-```cpp
-std::tuple<absl::FixedArray<index_t>, bool> one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
-```
-
-
-### rotate_one_ring_from_apex
-
-```cpp
-void rotate_one_ring_from_apex(absl::FixedArray<index_t> & one_ring_vertices, index_t apex)
-```
-
-
-### intersect_one_ring_vertices
-
-```cpp
-vector intersect_one_ring_vertices(const SolidMesh3D & mesh, index_t vertex0, index_t vertex1)
 ```
 
 

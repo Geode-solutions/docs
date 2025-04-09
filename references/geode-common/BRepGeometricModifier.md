@@ -207,6 +207,13 @@ public index_t updated_vertex(const Line3D & line, index_t vertex)
 ```
 
 
+### updated_edge
+
+```cpp
+public const SmallSet<index_t> & updated_edge(const Line3D & line, index_t edge)
+```
+
+
 ### updated_vertex
 
 ```cpp
@@ -214,10 +221,45 @@ public index_t updated_vertex(const Surface3D & surface, index_t vertex)
 ```
 
 
+### updated_edge
+
+```cpp
+public const SmallSet<index_t> & updated_edge(const Surface3D & surface, index_t edge)
+```
+
+
+### updated_triangle
+
+```cpp
+public const SmallSet<index_t> & updated_triangle(const Surface3D & surface, index_t triangle)
+```
+
+
 ### updated_vertex
 
 ```cpp
 public index_t updated_vertex(const Block3D & block, index_t vertex)
+```
+
+
+### updated_edge
+
+```cpp
+public const SmallSet<index_t> & updated_edge(const Block3D & block, index_t edge)
+```
+
+
+### updated_facet
+
+```cpp
+public const SmallSet<index_t> & updated_facet(const Block3D & block, index_t facet)
+```
+
+
+### updated_tetrahedron
+
+```cpp
+public const SmallSet<index_t> & updated_tetrahedron(const Block3D & block, index_t tetrahedron)
 ```
 
 
