@@ -17,6 +17,5 @@ const name = words.join('-');
 
 ## Records
 
-* [uuid](uuid.md)
 
 
