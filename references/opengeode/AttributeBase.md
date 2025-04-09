@@ -123,6 +123,18 @@ public shared_ptr extract(Span old2new, index_t nb_elements, PassKey )
 public shared_ptr extract(const GenericMapping<index_t> & old2new_mapping, index_t nb_elements, PassKey )
 ```
 
+### import
+
+```cpp
+public void import(Span old2new, const std::shared_ptr<AttributeBase> & from, PassKey )
+```
+
+### import
+
+```cpp
+public void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, PassKey )
+```
+
 ### resize
 
 ```cpp

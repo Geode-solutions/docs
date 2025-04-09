@@ -159,6 +159,34 @@ protected shared_ptr extract(const GenericMapping<index_t> & old2new_mapping, in
 ```
 
 
+### import
+
+```cpp
+protected void import(Span old2new, const std::shared_ptr<AttributeBase> & from, PassKey )
+```
+
+
+### import
+
+```cpp
+protected void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, PassKey )
+```
+
+
+### import
+
+```cpp
+protected void import(Span old2new, const ReadOnlyAttribute<bool> & from)
+```
+
+
+### import
+
+```cpp
+protected void import(const GenericMapping<index_t> & old2new_mapping, const ReadOnlyAttribute<bool> & from)
+```
+
+
 
 
 # class VariableAttribute
@@ -306,6 +334,34 @@ protected shared_ptr extract(Span old2new, index_t nb_elements, PassKey )
 
 ```cpp
 protected shared_ptr extract(const GenericMapping<index_t> & old2new_mapping, index_t nb_elements, PassKey )
+```
+
+
+### import
+
+```cpp
+protected void import(Span old2new, const std::shared_ptr<AttributeBase> & from, PassKey )
+```
+
+
+### import
+
+```cpp
+protected void import(const GenericMapping<index_t> & old2new_mapping, const std::shared_ptr<AttributeBase> & from, PassKey )
+```
+
+
+### import
+
+```cpp
+protected void import(Span old2new, const ReadOnlyAttribute<T> & from)
+```
+
+
+### import
+
+```cpp
+protected void import(const GenericMapping<index_t> & old2new_mapping, const ReadOnlyAttribute<T> & from)
 ```
 
 

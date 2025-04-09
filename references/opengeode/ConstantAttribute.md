@@ -138,5 +138,26 @@ public shared_ptr extract(const GenericMapping<index_t> & , index_t , PassKey )
 ```
 
 
+### import
+
+```cpp
+public void import(Span , const std::shared_ptr<AttributeBase> & from, PassKey )
+```
+
+
+### import
+
+```cpp
+public void import(const GenericMapping<index_t> & , const std::shared_ptr<AttributeBase> & from, PassKey )
+```
+
+
+### import
+
+```cpp
+public void import(const ReadOnlyAttribute<T> & from)
+```
+
+
 
 

@@ -37,13 +37,6 @@ public void set_edge_vertex(const EdgeVertex & edge_vertex, const index_t vertex
 ```
 
 
-### register_attributes
-
-```cpp
-public void register_attributes(Graph & graph)
-```
-
-
 ### EdgesImpl
 
 ```cpp

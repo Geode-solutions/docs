@@ -30,6 +30,11 @@ public bool interpolable
 
 ```
 
+```cpp
+public bool transferable
+
+```
+
 
 
 ## Functions
@@ -45,6 +50,13 @@ public void AttributeProperties()
 
 ```cpp
 public void AttributeProperties(bool is_assignable, bool is_interpolable)
+```
+
+
+### AttributeProperties
+
+```cpp
+public void AttributeProperties(bool is_assignable, bool is_interpolable, bool is_transferable)
 ```
 
 
