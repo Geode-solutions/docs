@@ -59,6 +59,13 @@ bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Tria
 ```
 
 
+### snapping_detection
+
+```cpp
+optional snapping_detection(const EdgedCurve<dimension> & curve, index_t edge, const Point<dimension> & point)
+```
+
+
 ### tetrahedra_after_split_split_collapse
 
 ```cpp
@@ -115,13 +122,6 @@ flat_hash_map triangles_after_swap_edge(const BRep & brep, const struct BRepComp
 
 ```cpp
 flat_hash_map tetrahedra_after_swap_edge(const BRep & brep, const struct BRepComponentMeshEdges::BlockEdges & block_edges, index_t unique_apex)
-```
-
-
-### snapping_detection
-
-```cpp
-optional snapping_detection(const EdgedCurve<dimension> & curve, index_t edge, const Point<dimension> & point)
 ```
 
 

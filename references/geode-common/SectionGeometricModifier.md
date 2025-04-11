@@ -14,12 +14,6 @@ const name = words.join('-');
 # class SectionGeometricModifier
 
 
-```cpp
-Inherits from VerticesModifier
-```
-
-
-
 ## Records
 
 CleanVerticesMappings
@@ -138,10 +132,24 @@ public index_t updated_vertex(const Line2D & line, index_t vertex)
 ```
 
 
+### set_updated_vertex
+
+```cpp
+public void set_updated_vertex(const Line2D & line, const VertexMultiMapping & mapping)
+```
+
+
 ### updated_edge
 
 ```cpp
 public const SmallSet<index_t> & updated_edge(const Line2D & line, index_t edge)
+```
+
+
+### set_updated_edge
+
+```cpp
+public void set_updated_edge(const Line2D & line, const EdgeMapping & mapping)
 ```
 
 
@@ -152,10 +160,24 @@ public index_t updated_vertex(const Surface2D & surface, index_t vertex)
 ```
 
 
+### set_updated_vertex
+
+```cpp
+public void set_updated_vertex(const Surface2D & surface, const VertexMultiMapping & mapping)
+```
+
+
 ### updated_edge
 
 ```cpp
 public const SmallSet<index_t> & updated_edge(const Surface2D & surface, index_t edge)
+```
+
+
+### set_updated_edge
+
+```cpp
+public void set_updated_edge(const Surface2D & surface, const EdgeMapping & mapping)
 ```
 
 
@@ -166,10 +188,31 @@ public const SmallSet<index_t> & updated_triangle(const Surface2D & surface, ind
 ```
 
 
+### set_updated_triangle
+
+```cpp
+public void set_updated_triangle(const Surface2D & surface, const TriangleMapping & mapping)
+```
+
+
 ### updated_unique_vertex
 
 ```cpp
 public index_t updated_unique_vertex(index_t unique_vertex)
+```
+
+
+### set_updated_unique_vertex
+
+```cpp
+public void set_updated_unique_vertex(const VertexMultiMapping & mapping)
+```
+
+
+### unique_vertices_modifier
+
+```cpp
+public const VerticesModifier & unique_vertices_modifier()
 ```
 
 

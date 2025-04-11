@@ -14,12 +14,6 @@ const name = words.join('-');
 # class BRepGeometricModifier
 
 
-```cpp
-Inherits from VerticesModifier
-```
-
-
-
 ## Records
 
 CleanVerticesMappings
@@ -207,10 +201,24 @@ public index_t updated_vertex(const Line3D & line, index_t vertex)
 ```
 
 
+### set_updated_vertex
+
+```cpp
+public void set_updated_vertex(const Line3D & line, const VertexMultiMapping & mapping)
+```
+
+
 ### updated_edge
 
 ```cpp
 public const SmallSet<index_t> & updated_edge(const Line3D & line, index_t edge)
+```
+
+
+### set_updated_edge
+
+```cpp
+public void set_updated_edge(const Line3D & line, const EdgeMapping & mapping)
 ```
 
 
@@ -221,10 +229,24 @@ public index_t updated_vertex(const Surface3D & surface, index_t vertex)
 ```
 
 
+### set_updated_vertex
+
+```cpp
+public void set_updated_vertex(const Surface3D & surface, const VertexMultiMapping & mapping)
+```
+
+
 ### updated_edge
 
 ```cpp
 public const SmallSet<index_t> & updated_edge(const Surface3D & surface, index_t edge)
+```
+
+
+### set_updated_edge
+
+```cpp
+public void set_updated_edge(const Surface3D & surface, const EdgeMapping & mapping)
 ```
 
 
@@ -235,10 +257,24 @@ public const SmallSet<index_t> & updated_triangle(const Surface3D & surface, ind
 ```
 
 
+### set_updated_triangle
+
+```cpp
+public void set_updated_triangle(const Surface3D & surface, const TriangleMapping & mapping)
+```
+
+
 ### updated_vertex
 
 ```cpp
 public index_t updated_vertex(const Block3D & block, index_t vertex)
+```
+
+
+### set_updated_vertex
+
+```cpp
+public void set_updated_vertex(const Block3D & block, const VertexMultiMapping & mapping)
 ```
 
 
@@ -249,10 +285,24 @@ public const SmallSet<index_t> & updated_edge(const Block3D & block, index_t edg
 ```
 
 
+### set_updated_edge
+
+```cpp
+public void set_updated_edge(const Block3D & block, const EdgeMapping & mapping)
+```
+
+
 ### updated_facet
 
 ```cpp
 public const SmallSet<index_t> & updated_facet(const Block3D & block, index_t facet)
+```
+
+
+### set_updated_facet
+
+```cpp
+public void set_updated_facet(const Block3D & block, const FacetMapping & mapping)
 ```
 
 
@@ -263,10 +313,31 @@ public const SmallSet<index_t> & updated_tetrahedron(const Block3D & block, inde
 ```
 
 
+### set_updated_tetrahedron
+
+```cpp
+public void set_updated_tetrahedron(const Block3D & block, const TetrahedronMapping & mapping)
+```
+
+
 ### updated_unique_vertex
 
 ```cpp
 public index_t updated_unique_vertex(index_t unique_vertex)
+```
+
+
+### set_updated_unique_vertex
+
+```cpp
+public void set_updated_unique_vertex(const VertexMultiMapping & mapping)
+```
+
+
+### unique_vertices_modifier
+
+```cpp
+public const VerticesModifier & unique_vertices_modifier()
 ```
 
 

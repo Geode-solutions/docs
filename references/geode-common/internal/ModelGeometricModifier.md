@@ -14,6 +14,12 @@ const name = words.join('-');
 # class ModelGeometricModifier
 
 
+```cpp
+Inherits from VerticesModifier
+```
+
+
+
 ## Functions
 
 ### ModelGeometricModifier
@@ -142,10 +148,24 @@ public index_t updated_line_vertex(const Line<dimension> & line, index_t vertex)
 ```
 
 
+### set_updated_line_vertex
+
+```cpp
+public void set_updated_line_vertex(const Line<dimension> & line, const VertexMultiMapping & mapping)
+```
+
+
 ### updated_surface_vertex
 
 ```cpp
 public index_t updated_surface_vertex(const Surface<dimension> & surface, index_t vertex)
+```
+
+
+### set_updated_surface_vertex
+
+```cpp
+public void set_updated_surface_vertex(const Surface<dimension> & surface, const VertexMultiMapping & mapping)
 ```
 
 
@@ -156,6 +176,13 @@ public const SmallSet<index_t> & updated_line_edge(const Line<dimension> & line,
 ```
 
 
+### set_updated_line_edge
+
+```cpp
+public void set_updated_line_edge(const Line<dimension> & line, const EdgeMapping & mapping)
+```
+
+
 ### updated_surface_edge
 
 ```cpp
@@ -163,10 +190,24 @@ public const SmallSet<index_t> & updated_surface_edge(const Surface<dimension> &
 ```
 
 
+### set_updated_surface_edge
+
+```cpp
+public void set_updated_surface_edge(const Surface<dimension> & surface, const EdgeMapping & mapping)
+```
+
+
 ### updated_surface_triangle
 
 ```cpp
 public const SmallSet<index_t> & updated_surface_triangle(const Surface<dimension> & surface, index_t triangle)
+```
+
+
+### set_updated_surface_triangle
+
+```cpp
+public void set_updated_surface_triangle(const Surface<dimension> & surface, const TriangleMapping & mapping)
 ```
 
 
