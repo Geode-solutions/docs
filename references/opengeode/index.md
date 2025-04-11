@@ -2771,6 +2771,48 @@ FixedArray radial_sort(const Segment3D & segment, Span points)
 ```
 
 
+### rotate
+
+```cpp
+Point rotate(const Point3D & point, const Vector3D & axis, double angle)
+```
+
+
+ Rotate a Point3D by an angle around an axis
+
+**point** [in] The point to rotate.
+
+**axis** [in] Axis for the rotation (not null but not necessary normalized).
+
+**angle** [in] Rotation angle expresses in radians.
+
+### tetrahedron_volume_sign
+
+```cpp
+SIDE tetrahedron_volume_sign(const Tetrahedron & tetra)
+```
+
+
+ Return the sign of a tetrahedron volume.
+
+### triangle_area_sign
+
+```cpp
+SIDE triangle_area_sign(const Triangle2D & triangle)
+```
+
+
+ Return the sign of a 2D triangle area.
+
+### triangle_area_sign
+
+```cpp
+SIDE triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
+```
+
+
+ Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
+
 ### file_exists
 
 ```cpp
@@ -2861,48 +2903,6 @@ float string_to_float(basic_string_view string)
 double string_to_double(basic_string_view string)
 ```
 
-
-### rotate
-
-```cpp
-Point rotate(const Point3D & point, const Vector3D & axis, double angle)
-```
-
-
- Rotate a Point3D by an angle around an axis
-
-**point** [in] The point to rotate.
-
-**axis** [in] Axis for the rotation (not null but not necessary normalized).
-
-**angle** [in] Rotation angle expresses in radians.
-
-### tetrahedron_volume_sign
-
-```cpp
-SIDE tetrahedron_volume_sign(const Tetrahedron & tetra)
-```
-
-
- Return the sign of a tetrahedron volume.
-
-### triangle_area_sign
-
-```cpp
-SIDE triangle_area_sign(const Triangle2D & triangle)
-```
-
-
- Return the sign of a 2D triangle area.
-
-### triangle_area_sign
-
-```cpp
-SIDE triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
-```
-
-
- Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
 
 ### point_triangle_distance
 
