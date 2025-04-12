@@ -38,3 +38,14 @@ const name = words.join('-');
 * [uuid](uuid.md)
 
 
+## Functions
+
+### inspect_generated_brep
+
+```cpp
+void inspect_generated_brep(const BRep & brep)
+```
+
+
+
+
