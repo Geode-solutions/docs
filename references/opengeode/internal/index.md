@@ -82,6 +82,27 @@ POSITION point_tetrahedron_position(const std::array<GEO::SIGN, 4> & signs)
 ```
 
 
+### is_component_supported
+
+```cpp
+bool is_component_supported(const ComponentType & component_type)
+```
+
+
+### register_mesh_components
+
+```cpp
+void register_mesh_components(const Model & model, typename Model::Builder & builder)
+```
+
+
+### register_collection_components
+
+```cpp
+void register_collection_components(const Model & model, typename Model::Builder & builder)
+```
+
+
 ### copy_points3d_into_2d
 
 ```cpp
@@ -114,27 +135,6 @@ void copy_meta_info(const MeshFrom & from, Builder & builder)
 
 ```cpp
 void copy_attributes(const AttributeManager & manager_in, AttributeManager & manager_out)
-```
-
-
-### is_component_supported
-
-```cpp
-bool is_component_supported(const ComponentType & component_type)
-```
-
-
-### register_mesh_components
-
-```cpp
-void register_mesh_components(const Model & model, typename Model::Builder & builder)
-```
-
-
-### register_collection_components
-
-```cpp
-void register_collection_components(const Model & model, typename Model::Builder & builder)
 ```
 
 

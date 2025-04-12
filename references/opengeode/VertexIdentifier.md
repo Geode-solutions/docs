@@ -102,7 +102,7 @@ public void save_unique_vertices(basic_string_view directory)
 ### register_mesh_component
 
 ```cpp
-public void register_mesh_component(const MeshComponent & component, BuilderKey )
+public void register_mesh_component(const MeshComponent & component, PassKey )
 ```
 
 
@@ -111,7 +111,7 @@ public void register_mesh_component(const MeshComponent & component, BuilderKey 
 ### unregister_mesh_component
 
 ```cpp
-public void unregister_mesh_component(const MeshComponent & component, BuilderKey )
+public void unregister_mesh_component(const MeshComponent & component, PassKey )
 ```
 
 
@@ -120,7 +120,7 @@ public void unregister_mesh_component(const MeshComponent & component, BuilderKe
 ### create_unique_vertex
 
 ```cpp
-public index_t create_unique_vertex(BuilderKey )
+public index_t create_unique_vertex(PassKey )
 ```
 
 
@@ -131,7 +131,7 @@ public index_t create_unique_vertex(BuilderKey )
 ### create_unique_vertices
 
 ```cpp
-public index_t create_unique_vertices(index_t nb, BuilderKey )
+public index_t create_unique_vertices(index_t nb, PassKey )
 ```
 
 
@@ -142,7 +142,7 @@ public index_t create_unique_vertices(index_t nb, BuilderKey )
 ### set_unique_vertex
 
 ```cpp
-public void set_unique_vertex(ComponentMeshVertex component_vertex_id, index_t unique_vertex_id, BuilderKey )
+public void set_unique_vertex(ComponentMeshVertex component_vertex_id, index_t unique_vertex_id, PassKey )
 ```
 
 
@@ -155,7 +155,7 @@ public void set_unique_vertex(ComponentMeshVertex component_vertex_id, index_t u
 ### unset_unique_vertex
 
 ```cpp
-public void unset_unique_vertex(const ComponentMeshVertex & component_vertex_id, index_t unique_vertex_id, BuilderKey )
+public void unset_unique_vertex(const ComponentMeshVertex & component_vertex_id, index_t unique_vertex_id, PassKey )
 ```
 
 
@@ -168,7 +168,7 @@ public void unset_unique_vertex(const ComponentMeshVertex & component_vertex_id,
 ### update_unique_vertices
 
 ```cpp
-public void update_unique_vertices(const ComponentID & component_id, absl::Span<const index_t> old2new, BuilderKey )
+public void update_unique_vertices(const ComponentID & component_id, absl::Span<const index_t> old2new, PassKey )
 ```
 
 
@@ -181,7 +181,7 @@ public void update_unique_vertices(const ComponentID & component_id, absl::Span<
 ### load_unique_vertices
 
 ```cpp
-public void load_unique_vertices(basic_string_view directory, BuilderKey )
+public void load_unique_vertices(basic_string_view directory, PassKey )
 ```
 
 
@@ -192,7 +192,7 @@ public void load_unique_vertices(basic_string_view directory, BuilderKey )
 ### delete_isolated_vertices
 
 ```cpp
-public vector delete_isolated_vertices(BuilderKey )
+public vector delete_isolated_vertices(PassKey )
 ```
 
 

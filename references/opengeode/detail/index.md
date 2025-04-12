@@ -202,48 +202,6 @@ local_index_t position_to_index(POSITION position)
 ```
 
 
-### solid_polyhedron_is_a_tetrahedron
-
-```cpp
-bool solid_polyhedron_is_a_tetrahedron(const SolidMesh3D & solid, index_t polyhedron_id)
-```
-
-
-### solid_polyhedron_is_a_hexaedron
-
-```cpp
-bool solid_polyhedron_is_a_hexaedron(const SolidMesh3D & solid, index_t polyhedron_id)
-```
-
-
-### solid_polyhedron_is_a_pyramid
-
-```cpp
-bool solid_polyhedron_is_a_pyramid(const SolidMesh3D & solid, index_t polyhedron_id)
-```
-
-
-### solid_polyhedron_is_a_prism
-
-```cpp
-bool solid_polyhedron_is_a_prism(const SolidMesh3D & solid, index_t polyhedron_id)
-```
-
-
-### polygons_intersection_detection
-
-```cpp
-bool polygons_intersection_detection(const Mesh & mesh, const PolygonVertices & polygon, const PolygonVertices & other_polygon)
-```
-
-
-### create_mesh
-
-```cpp
-std::unique_ptr<Mesh> create_mesh(absl::Span<const std::reference_wrapper<const Mesh> > meshes)
-```
-
-
 ### filter_unsupported_components
 
 ```cpp
@@ -286,17 +244,59 @@ void register_all_components(Model & model)
 ```
 
 
-### load_brep_files
-
-```cpp
-void load_brep_files(Model & brep, basic_string_view directory)
-```
-
-
 ### load_section_files
 
 ```cpp
 void load_section_files(Model & section, basic_string_view directory)
+```
+
+
+### solid_polyhedron_is_a_tetrahedron
+
+```cpp
+bool solid_polyhedron_is_a_tetrahedron(const SolidMesh3D & solid, index_t polyhedron_id)
+```
+
+
+### solid_polyhedron_is_a_hexaedron
+
+```cpp
+bool solid_polyhedron_is_a_hexaedron(const SolidMesh3D & solid, index_t polyhedron_id)
+```
+
+
+### solid_polyhedron_is_a_pyramid
+
+```cpp
+bool solid_polyhedron_is_a_pyramid(const SolidMesh3D & solid, index_t polyhedron_id)
+```
+
+
+### solid_polyhedron_is_a_prism
+
+```cpp
+bool solid_polyhedron_is_a_prism(const SolidMesh3D & solid, index_t polyhedron_id)
+```
+
+
+### polygons_intersection_detection
+
+```cpp
+bool polygons_intersection_detection(const Mesh & mesh, const PolygonVertices & polygon, const PolygonVertices & other_polygon)
+```
+
+
+### create_mesh
+
+```cpp
+std::unique_ptr<Mesh> create_mesh(absl::Span<const std::reference_wrapper<const Mesh> > meshes)
+```
+
+
+### load_brep_files
+
+```cpp
+void load_brep_files(Model & brep, basic_string_view directory)
 ```
 
 
@@ -612,6 +612,13 @@ ModelMapping copy_to_generic_mappings(const ModelCopyMapping & mappings2)
 
 ```cpp
 ModelMappings merge_mappings(const ModelMappings & mappings1, const ModelMappings & mappings2)
+```
+
+
+### repair_non_manifold_vertices
+
+```cpp
+void repair_non_manifold_vertices(Model & model, const Surface<Model::dim> & surface)
 ```
 
 

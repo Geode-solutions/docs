@@ -57,14 +57,14 @@ public void SectionBuilder(SectionBuilder && other)
 ### copy
 
 ```cpp
-public ModelMapping copy(const Section & section)
+public ModelCopyMapping copy(const Section & section)
 ```
 
 
 ### copy_components
 
 ```cpp
-public ModelMapping copy_components(const Section & section)
+public ModelCopyMapping copy_components(const Section & section)
 ```
 
 
@@ -225,21 +225,21 @@ public void add_surface_collection(const uuid & surface_collection_id)
 ### update_corner_mesh
 
 ```cpp
-public void update_corner_mesh(const Corner2D & corner, unique_ptr mesh)
+public void update_corner_mesh(const Corner2D & corner, std::unique_ptr<PointSet2D> mesh)
 ```
 
 
 ### update_line_mesh
 
 ```cpp
-public void update_line_mesh(const Line2D & line, unique_ptr mesh)
+public void update_line_mesh(const Line2D & line, std::unique_ptr<EdgedCurve2D> mesh)
 ```
 
 
 ### update_surface_mesh
 
 ```cpp
-public void update_surface_mesh(const Surface2D & surface, unique_ptr mesh)
+public void update_surface_mesh(const Surface2D & surface, std::unique_ptr<SurfaceMesh2D> mesh)
 ```
 
 

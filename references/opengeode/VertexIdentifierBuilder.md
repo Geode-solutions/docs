@@ -96,7 +96,7 @@ public void unset_unique_vertex(const ComponentMeshVertex & component_vertex_id,
 ### update_unique_vertices
 
 ```cpp
-public void update_unique_vertices(const ComponentID & component_id, Span old2new)
+public void update_unique_vertices(const ComponentID & component_id, absl::Span<const index_t> old2new)
 ```
 
 

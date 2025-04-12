@@ -222,6 +222,7 @@ const name = words.join('-');
 * [OpenGeodeRegularGridInput](OpenGeodeRegularGridInput.md)
 * [OpenGeodeRegularGridOutput](OpenGeodeRegularGridOutput.md)
 * [OpenGeodeRegularGrid](OpenGeodeRegularGrid.md)
+* [OpenGeodeResultException](OpenGeodeResultException.md)
 * [OpenGeodeSectionInput](OpenGeodeSectionInput.md)
 * [OpenGeodeSectionOutput](OpenGeodeSectionOutput.md)
 * [OpenGeodeSegmentException](OpenGeodeSegmentException.md)
@@ -1513,6 +1514,40 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
+### load_section
+
+```cpp
+Section load_section(basic_string_view filename)
+```
+
+
+ API function for loading a Section. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+**return** Loaded Section.
+
+### check_section_missing_files
+
+```cpp
+MissingFiles check_section_missing_files(basic_string_view filename)
+```
+
+
+### is_section_loadable
+
+```cpp
+bool is_section_loadable(basic_string_view filename)
+```
+
+
+### is_zip_file
+
+```cpp
+bool is_zip_file(basic_string_view file)
+```
+
+
 ### save_section
 
 ```cpp
@@ -1530,13 +1565,6 @@ vector save_section(const Section & section, basic_string_view filename)
 
 ```cpp
 bool is_section_saveable(const Section & section, basic_string_view filename)
-```
-
-
-### is_zip_file
-
-```cpp
-bool is_zip_file(basic_string_view file)
 ```
 
 
@@ -2049,33 +2077,6 @@ vector save_brep(const BRep & brep, basic_string_view filename)
 
 ```cpp
 bool is_brep_saveable(const BRep & brep, basic_string_view filename)
-```
-
-
-### load_section
-
-```cpp
-Section load_section(basic_string_view filename)
-```
-
-
- API function for loading a Section. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-**return** Loaded Section.
-
-### check_section_missing_files
-
-```cpp
-MissingFiles check_section_missing_files(basic_string_view filename)
-```
-
-
-### is_section_loadable
-
-```cpp
-bool is_section_loadable(basic_string_view filename)
 ```
 
 
