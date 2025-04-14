@@ -93,10 +93,17 @@ public double minimal_metric(const Triangle<dimension> & triangle)
 ```
 
 
-### average_metric
+### global_average_metric
 
 ```cpp
-public std::array<double, dimension> average_metric()
+public std::array<double, dimension> global_average_metric()
+```
+
+
+### global_minimal_metric
+
+```cpp
+public std::array<double, dimension> global_minimal_metric()
 ```
 
 

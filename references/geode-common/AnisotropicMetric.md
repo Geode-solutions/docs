@@ -29,10 +29,17 @@ public double metric(const Point<dimension> & point, const Vector<dimension> & v
 ```
 
 
-### average_metric
+### global_average_metric
 
 ```cpp
-public std::array<double, dimension> average_metric()
+public std::array<double, dimension> global_average_metric()
+```
+
+
+### global_minimal_metric
+
+```cpp
+public std::array<double, dimension> global_minimal_metric()
 ```
 
 

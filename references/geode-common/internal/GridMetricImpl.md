@@ -72,6 +72,13 @@ public std::array<double, dimension> average_metric()
 ```
 
 
+### minimal_metric
+
+```cpp
+public std::array<double, dimension> minimal_metric()
+```
+
+
 ### median_metric
 
 ```cpp
