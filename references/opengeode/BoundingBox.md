@@ -212,6 +212,13 @@ public std::tuple<local_index_t, double> largest_length()
 ```
 
 
+### string
+
+```cpp
+public basic_string string()
+```
+
+
 
 
 # class BoundingBox

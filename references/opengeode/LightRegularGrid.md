@@ -43,6 +43,13 @@ public void LightRegularGrid<dimension>(LightRegularGrid<dimension> && other)
 ```
 
 
+### operator=
+
+```cpp
+public LightRegularGrid<dimension> & operator=(LightRegularGrid<dimension> && other)
+```
+
+
 ### ~LightRegularGrid
 
 ```cpp
