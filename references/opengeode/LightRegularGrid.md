@@ -127,6 +127,13 @@ public AttributeManager & grid_vertex_attribute_manager()
 ```
 
 
+### bounding_box
+
+```cpp
+public BoundingBox<dimension> bounding_box()
+```
+
+
 
 
 # class LightRegularGrid
