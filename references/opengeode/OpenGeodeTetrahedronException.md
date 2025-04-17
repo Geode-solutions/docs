@@ -34,7 +34,7 @@ public OwnerTetrahedron tetrahedron
 ### OpenGeodeTetrahedronException
 
 ```cpp
-public void OpenGeodeTetrahedronException(Tetrahedron tetrahedron_in, const Args &... message)
+public void OpenGeodeTetrahedronException(const Tetrahedron & tetrahedron_in, const Args &... message)
 ```
 
 

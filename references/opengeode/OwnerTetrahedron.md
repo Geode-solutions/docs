@@ -32,6 +32,13 @@ public void OwnerTetrahedron(Point point0, Point point1, Point point2, Point poi
 ### OwnerTetrahedron
 
 ```cpp
+public void OwnerTetrahedron(const Tetrahedron & other)
+```
+
+
+### OwnerTetrahedron
+
+```cpp
 public void OwnerTetrahedron(const OwnerTetrahedron & other)
 ```
 
