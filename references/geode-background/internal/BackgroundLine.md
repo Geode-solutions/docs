@@ -85,5 +85,12 @@ public OpenGeodeEdgedCurve release_line()
 ```
 
 
+### macro_edge_path
+
+```cpp
+public optional macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
+```
+
+
 
 

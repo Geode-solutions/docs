@@ -65,16 +65,17 @@ const name = words.join('-');
 * [BlockElement](BlockElement.md)
 * [BlockForbiddenInfos](BlockForbiddenInfos.md)
 * [BlockIsovalueInserter](BlockIsovalueInserter.md)
+* [CorafinatedLine](CorafinatedLine.md)
 * [CorafinatedSurface](CorafinatedSurface.md)
 * [DetermineSplitsOrderException](DetermineSplitsOrderException.md)
 * [EdgeMacroInfoConfig](EdgeMacroInfoConfig.md)
-* [Element2Split](Element2Split.md)
 * [ElementInsertionInfo](ElementInsertionInfo.md)
 * [ElementSearchBuilder](ElementSearchBuilder.md)
 * [ElementSearch](ElementSearch.md)
 * [ForbiddenInfos](ForbiddenInfos.md)
 * [FourPointsInternalDistance](FourPointsInternalDistance.md)
 * [InternalDistance](InternalDistance.md)
+* [LineSkin](LineSkin.md)
 * [MacroEdgeBackgroundVertices](MacroEdgeBackgroundVertices.md)
 * [MacroEdgesBuilder](MacroEdgesBuilder.md)
 * [MacroEdges](MacroEdges.md)
@@ -93,11 +94,12 @@ const name = words.join('-');
 * [PointsInternalDistanceImpl](PointsInternalDistanceImpl.md)
 * [Points](Points.md)
 * [ScalarFunctionIsovalue](ScalarFunctionIsovalue.md)
-* [SkinSplitsOrder](SkinSplitsOrder.md)
-* [Skin](Skin.md)
 * [SkipNonMandatory](SkipNonMandatory.md)
 * [SkipNothing](SkipNothing.md)
 * [SolidSplitInfo](SolidSplitInfo.md)
+* [SurfaceElement2Split](SurfaceElement2Split.md)
+* [SurfaceSkinSplitsOrder](SurfaceSkinSplitsOrder.md)
+* [SurfaceSkin](SurfaceSkin.md)
 * [ThreePointsInternalDistance](ThreePointsInternalDistance.md)
 
 
@@ -334,24 +336,17 @@ std::tuple<std::vector<geode::index_t>, OwnerInfiniteLine2D> detect_coplanar_mul
 ```
 
 
-### optimize_background_solid_elements
+### simplify_background_solid_macro_edge
 
 ```cpp
-void optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
+void simplify_background_solid_macro_edge(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshEdge & macro_edge)
 ```
 
 
-### shift_optimize_background_solid_elements
+### simplify_background_solid_macro_facet
 
 ```cpp
-void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
-```
-
-
-### blinded_quality_optimize_background_solid_elements
-
-```cpp
-void blinded_quality_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
+void simplify_background_solid_macro_facet(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshPolygon & macro_facet)
 ```
 
 
@@ -428,28 +423,28 @@ bool is_edge_removal_allowed(const ModifiableBackgroundSolid & solid, const Poly
 ### allowed_split_collapse_edge
 
 ```cpp
-tuple allowed_split_collapse_edge(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+std::tuple<ALLOWED_COLLAPSE_EDGE_VERTEX, ForbiddenInfos> allowed_split_collapse_edge(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
 ### allowed_split_collapse_edge_by_constraints
 
 ```cpp
-tuple allowed_split_collapse_edge_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+std::tuple<ALLOWED_COLLAPSE_EDGE_VERTEX, ForbiddenInfos> allowed_split_collapse_edge_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
 ### allowed_split_collapse_facet
 
 ```cpp
-tuple allowed_split_collapse_facet(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+std::tuple<ALLOWED_COLLAPSE_FACET_VERTEX, ForbiddenInfos> allowed_split_collapse_facet(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
 ### allowed_split_collapse_facet_by_constraints
 
 ```cpp
-tuple allowed_split_collapse_facet_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+std::tuple<ALLOWED_COLLAPSE_FACET_VERTEX, ForbiddenInfos> allowed_split_collapse_facet_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
@@ -488,6 +483,27 @@ bool is_swap_facet_allowed_by_constraints(const ModifiableBackgroundSolid & soli
 ```
 
 
+### optimize_background_solid_elements
+
+```cpp
+void optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
+```
+
+
+### shift_optimize_background_solid_elements
+
+```cpp
+void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
+```
+
+
+### blinded_quality_optimize_background_solid_elements
+
+```cpp
+void blinded_quality_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
+```
+
+
 ### epsilon_optimize_background_solid_elements
 
 ```cpp
@@ -502,10 +518,17 @@ vector find_unique_facet_normals(const geode::internal::BackgroundSolid & backgr
 ```
 
 
+### do_corafinated_solid_splits
+
+```cpp
+void do_corafinated_solid_splits(const CorafinatedLine & corafinated_line, LineSkins & skins)
+```
+
+
 ### find_split_orders
 
 ```cpp
-InlinedVector find_split_orders(CorafinatedSurface & corafinated_surface, Skins & skins)
+InlinedVector find_split_orders(CorafinatedSurface & corafinated_surface, SurfaceSkins & skins)
 ```
 
 
@@ -514,14 +537,14 @@ InlinedVector find_split_orders(CorafinatedSurface & corafinated_surface, Skins 
 ### do_corafinated_solid_splits
 
 ```cpp
-SolidSplitInfo do_corafinated_solid_splits(CorafinatedSurface & corafinated_surface, SkinSplitsOrders & split_orders)
+SolidSplitInfo do_corafinated_solid_splits(CorafinatedSurface & corafinated_surface, SurfaceSkinSplitsOrders & split_orders)
 ```
 
 
 ### vertex_skins_solid_mapping
 
 ```cpp
-BijectiveMapping vertex_skins_solid_mapping(const CorafinatedSurface & corafinated_surface, const Skins & skins)
+BijectiveMapping vertex_skins_solid_mapping(const CorafinatedSurface & corafinated_surface, const SurfaceSkins & skins)
 ```
 
 
@@ -536,20 +559,6 @@ vector simplify_background_solid_multilayers(BackgroundSolidConstraintModifier &
 
 ```cpp
 optional detect_coplanar_multilayers(const BackgroundSolid & solid, index_t tetrahedron_id)
-```
-
-
-### simplify_background_solid_macro_edge
-
-```cpp
-void simplify_background_solid_macro_edge(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshEdge & macro_edge)
-```
-
-
-### simplify_background_solid_macro_facet
-
-```cpp
-void simplify_background_solid_macro_facet(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshPolygon & macro_facet)
 ```
 
 
@@ -700,6 +709,13 @@ vector epsilon_optimize_background_brep_elements(BackgroundBRepConstraintModifie
 ```
 
 
+### decimate_background_brep
+
+```cpp
+void decimate_background_brep(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundBRepDecimatorOperator & decimator_operator)
+```
+
+
 ### add_macro_info
 
 ```cpp
@@ -711,13 +727,6 @@ void add_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribut
 
 ```cpp
 void remove_macro_info(geode::VariableAttribute<std::vector<MacroInfo> > & attribute, const MacroInfo & macro_info, index_t background_mesh_element_id)
-```
-
-
-### decimate_background_brep
-
-```cpp
-void decimate_background_brep(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundBRepDecimatorOperator & decimator_operator)
 ```
 
 

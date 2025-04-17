@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Skin
+# struct SurfaceSkin
 
 
 ## Members
@@ -55,66 +55,66 @@ public bool solid_oriented
 
 ## Functions
 
-### Skin
+### SurfaceSkin
 
 ```cpp
-public void Skin(const Skin & )
+public void SurfaceSkin(const SurfaceSkin & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Skin & operator=(const Skin & )
+public SurfaceSkin & operator=(const SurfaceSkin & )
 ```
 
 
-### Skin
+### SurfaceSkin
 
 ```cpp
-public void Skin(ModifiableObject solid)
+public void SurfaceSkin(ModifiableObject solid)
 ```
 
 
-### Skin
+### SurfaceSkin
 
 ```cpp
-public void Skin(ModifiableObject solid, std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
+public void SurfaceSkin(ModifiableObject solid, std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
 ```
 
 
-### Skin
+### SurfaceSkin
 
 ```cpp
-public void Skin(ModifiableObject solid, BackgroundSurface && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
+public void SurfaceSkin(ModifiableObject solid, BackgroundSurface && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
 ```
 
 
-### Skin
+### SurfaceSkin
 
 ```cpp
-public void Skin(Skin && other)
+public void SurfaceSkin(SurfaceSkin && other)
 ```
 
 
 ### operator=
 
 ```cpp
-public Skin & operator=(Skin && other)
+public SurfaceSkin & operator=(SurfaceSkin && other)
 ```
 
 
-### ~Skin
+### ~SurfaceSkin
 
 ```cpp
-public void ~Skin()
+public void ~SurfaceSkin()
 ```
 
 
 ### clone
 
 ```cpp
-public Skin clone()
+public SurfaceSkin clone()
 ```
 
 

@@ -40,7 +40,21 @@ public flat_hash_map insert_curve(const EdgedCurve3D & mesh)
 ### insert_curve_edges
 
 ```cpp
-public flat_hash_map insert_curve_edges(const EdgedCurve3D & mesh, Span edges_ids)
+public flat_hash_map insert_curve_edges(const EdgedCurve3D & mesh, Span edges)
+```
+
+
+### insert_surface
+
+```cpp
+public flat_hash_map insert_surface(const TriangulatedSurface3D & mesh)
+```
+
+
+### insert_surface_triangles
+
+```cpp
+public flat_hash_map insert_surface_triangles(const TriangulatedSurface3D & mesh, Span triangles)
 ```
 
 

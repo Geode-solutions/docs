@@ -11,18 +11,18 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct CorafinatedSurface
+# struct CorafinatedLine
 
 
 ## Members
 
 ```cpp
-public BackgroundSurface surface
+public BackgroundLine line
 
 ```
 
 ```cpp
-public BackgroundSurfaceBuilder builder
+public BackgroundLineBuilder builder
 
 ```
 
@@ -32,17 +32,12 @@ public unique_ptr modifier
 ```
 
 ```cpp
-public BackgroundSurfaceConstraintModifier constraint_modifier
-
-```
-
-```cpp
 public shared_ptr removed_coordinates
 
 ```
 
 ```cpp
-public local_index_t axis_to_remove
+public local_index_t axis_to_keep
 
 ```
 
@@ -57,12 +52,7 @@ public GenericMapping solid_to_corafinated_edge_mapping
 ```
 
 ```cpp
-public GenericMapping solid_to_corafinated_facet_mapping
-
-```
-
-```cpp
-public unique_ptr intermediate_surface
+public unique_ptr intermediate_line
 
 ```
 
@@ -76,54 +66,49 @@ public BijectiveMapping solid_to_mesh_edge_mapping
 
 ```
 
-```cpp
-public BijectiveMapping solid_to_mesh_facet_mapping
-
-```
-
 
 
 ## Functions
 
-### CorafinatedSurface
+### CorafinatedLine
 
 ```cpp
-public void CorafinatedSurface(const CorafinatedSurface & )
+public void CorafinatedLine(const CorafinatedLine & )
 ```
 
 
 ### operator=
 
 ```cpp
-public CorafinatedSurface & operator=(const CorafinatedSurface & )
+public CorafinatedLine & operator=(const CorafinatedLine & )
 ```
 
 
-### CorafinatedSurface
+### CorafinatedLine
 
 ```cpp
-public void CorafinatedSurface()
+public void CorafinatedLine()
 ```
 
 
-### CorafinatedSurface
+### CorafinatedLine
 
 ```cpp
-public void CorafinatedSurface(CorafinatedSurface && other)
+public void CorafinatedLine(CorafinatedLine && other)
 ```
 
 
-### ~CorafinatedSurface
+### ~CorafinatedLine
 
 ```cpp
-public void ~CorafinatedSurface()
+public void ~CorafinatedLine()
 ```
 
 
-### modifiable_surface
+### modifiable_line
 
 ```cpp
-public ModifiableObject modifiable_surface()
+public ModifiableObject modifiable_line()
 ```
 
 
@@ -131,13 +116,6 @@ public ModifiableObject modifiable_surface()
 
 ```cpp
 public Point point3d(index_t vertex)
-```
-
-
-### does_edge_exist
-
-```cpp
-public bool does_edge_exist(index_t begin, index_t end)
 ```
 
 
@@ -159,13 +137,6 @@ public void build_solid_to_corafinated_vertex_mapping()
 
 ```cpp
 public void build_solid_to_corafinated_edge_mapping()
-```
-
-
-### build_solid_to_corafinated_facet_mapping
-
-```cpp
-public void build_solid_to_corafinated_facet_mapping()
 ```
 
 

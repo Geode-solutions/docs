@@ -11,18 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SkinSplitsOrder
+# struct SurfaceElement2Split
 
 
 ## Members
 
 ```cpp
-public Skin & skin
+public InlinedVector skin_vertices
 
 ```
 
 ```cpp
-public const SplitsOrder & splits_order
+public index_t corafinated_vertex
+
+```
+
+```cpp
+public TYPE type
 
 ```
 
@@ -30,11 +35,33 @@ public const SplitsOrder & splits_order
 
 ## Functions
 
-### SkinSplitsOrder
+### SurfaceElement2Split
 
 ```cpp
-public void SkinSplitsOrder(Skin & skin_in, const SplitsOrder & splits_order_in)
+public void SurfaceElement2Split()
 ```
+
+
+### string
+
+```cpp
+public basic_string string()
+```
+
+
+
+
+## Enums
+
+| enum class TYPE |
+
+--
+
+| none |
+| split_edge |
+| split_polygon |
+| split_collapse |
+
 
 
 

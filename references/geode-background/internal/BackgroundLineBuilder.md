@@ -36,6 +36,13 @@ public void BackgroundLineBuilder(BackgroundLine & background)
 ```
 
 
+### BackgroundLineBuilder
+
+```cpp
+public void BackgroundLineBuilder(BackgroundLineBuilder && )
+```
+
+
 ### ~BackgroundLineBuilder
 
 ```cpp

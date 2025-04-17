@@ -22,6 +22,13 @@ Inherits from MacroInfoBuilder
 
 ## Functions
 
+### MacroInfoBuilder1D
+
+```cpp
+public void MacroInfoBuilder1D(MacroInfoBuilder1D && )
+```
+
+
 ### ~MacroInfoBuilder1D
 
 ```cpp

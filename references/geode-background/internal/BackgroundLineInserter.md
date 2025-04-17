@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BackgroundLineInserter
 
 ```cpp
-public void BackgroundLineInserter(ModifiableBackgroundLine & line, BackgroundLineBuilder & builder)
+public void BackgroundLineInserter(ModifiableObject line, BackgroundLineBuilder & builder)
 ```
 
 
