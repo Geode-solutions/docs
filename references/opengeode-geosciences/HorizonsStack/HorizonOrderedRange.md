@@ -34,7 +34,7 @@ Impl
 ### HorizonOrderedRange
 
 ```cpp
-public void HorizonOrderedRange(const HorizonsStack<> & horizons_stack)
+public void HorizonOrderedRange(const HorizonsStack<> & horizons_stack, RANGEORDER range_order)
 ```
 
 

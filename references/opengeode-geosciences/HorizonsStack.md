@@ -140,6 +140,20 @@ public StratigraphicUnitOrderedRange bottom_to_top_units()
 ```
 
 
+### top_to_bottom_horizons
+
+```cpp
+public HorizonOrderedRange top_to_bottom_horizons()
+```
+
+
+### top_to_bottom_units
+
+```cpp
+public StratigraphicUnitOrderedRange top_to_bottom_units()
+```
+
+
 ### is_eroded_by
 
 ```cpp
@@ -173,6 +187,19 @@ public void set_top_horizon(const uuid & horizon_id, HorizonsStackBuilderKey key
 ```cpp
 public void set_bottom_horizon(const uuid & horizon_id, HorizonsStackBuilderKey key)
 ```
+
+
+
+
+## Enums
+
+| enum class RANGEORDER |
+
+--
+
+| bottom_to_top |
+| top_to_bottom |
+
 
 
 

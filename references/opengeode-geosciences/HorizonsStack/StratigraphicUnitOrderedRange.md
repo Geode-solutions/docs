@@ -34,7 +34,7 @@ Impl
 ### StratigraphicUnitOrderedRange
 
 ```cpp
-public void StratigraphicUnitOrderedRange(const HorizonsStack<> & horizons_stack)
+public void StratigraphicUnitOrderedRange(const HorizonsStack<> & horizons_stack, RANGEORDER range_order)
 ```
 
 
