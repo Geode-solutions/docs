@@ -428,14 +428,14 @@ public void add_surface_in_model_boundary(const Surface3D & surface, const Model
 ### add_corner_in_corner_collection
 
 ```cpp
-public void add_corner_in_corner_collection(const Corner3D & surface, const CornerCollection3D & collection)
+public void add_corner_in_corner_collection(const Corner3D & corner, const CornerCollection3D & collection)
 ```
 
 
 ### add_line_in_line_collection
 
 ```cpp
-public void add_line_in_line_collection(const Line3D & surface, const LineCollection3D & collection)
+public void add_line_in_line_collection(const Line3D & line, const LineCollection3D & collection)
 ```
 
 
@@ -449,7 +449,7 @@ public void add_surface_in_surface_collection(const Surface3D & surface, const S
 ### add_block_in_block_collection
 
 ```cpp
-public void add_block_in_block_collection(const Block3D & surface, const BlockCollection3D & collection)
+public void add_block_in_block_collection(const Block3D & block, const BlockCollection3D & collection)
 ```
 
 

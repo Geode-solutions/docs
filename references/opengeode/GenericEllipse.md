@@ -74,6 +74,13 @@ public const Frame<dimension> & axes()
 ```
 
 
+### bounding_box
+
+```cpp
+public BoundingBox<dimension> bounding_box()
+```
+
+
 
 
 # class GenericEllipse
