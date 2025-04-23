@@ -25,7 +25,7 @@ ExtractedElements
 ### FrameFieldParameterization
 
 ```cpp
-public void FrameFieldParameterization(const FrameField & frame_field)
+public void FrameFieldParameterization(FrameField & frame_field, const Metric3D & metric)
 ```
 
 

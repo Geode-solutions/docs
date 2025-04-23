@@ -65,10 +65,24 @@ public const Frame3D & frame(index_t vertex)
 ```
 
 
+### normalize
+
+```cpp
+public void normalize()
+```
+
+
 ### apply_metric
 
 ```cpp
 public void apply_metric(const Metric3D & metric)
+```
+
+
+### apply_inverse_metric
+
+```cpp
+public void apply_inverse_metric(const Metric3D & metric)
 ```
 
 
