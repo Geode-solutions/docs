@@ -68,21 +68,21 @@ public void add_horizon_surface_data(const Horizon3D & horizon, const SurfaceMes
 ### initialize_impliciter
 
 ```cpp
-public void initialize_impliciter()
+public void initialize_impliciter(const ImplicitationParameters & computation_parameters)
 ```
 
 
-### compute_target_grid_length
+### target_cell_grid_length
 
 ```cpp
-public double compute_target_grid_length(local_index_t target_nb_multi_grid_steps)
+public double target_cell_grid_length()
 ```
 
 
 ### compute_implicit_function
 
 ```cpp
-public void compute_implicit_function(double function_value_interval, const ImplicitationParameters & computation_parameters)
+public void compute_implicit_function(double function_value_interval)
 ```
 
 
