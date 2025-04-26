@@ -45,10 +45,14 @@ const name = words.join('-');
 * [VTUHybridOutput](VTUHybridOutput.md)
 * [VTUInputImpl](VTUInputImpl.md)
 * [VTUOutputImpl](VTUOutputImpl.md)
+* [VTUPolygonalInput](VTUPolygonalInput.md)
 * [VTUPolyhedralInput](VTUPolyhedralInput.md)
 * [VTUPolyhedralOutput](VTUPolyhedralOutput.md)
+* [VTUSolidInput](VTUSolidInput.md)
+* [VTUSurfaceInput](VTUSurfaceInput.md)
 * [VTUTetrahedralInput](VTUTetrahedralInput.md)
 * [VTUTetrahedralOutput](VTUTetrahedralOutput.md)
+* [VTUTriangulatedInput](VTUTriangulatedInput.md)
 
 
 ## Functions

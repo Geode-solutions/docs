@@ -11,28 +11,49 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTUInputImpl
+# class VTUSolidInput
 
 
 ```cpp
-Inherits from VTKMeshInputImpl<Mesh>
+Inherits from VTUInputImpl<Mesh>
 ```
 
 
 
 ## Functions
 
-### VTUInputImpl
+### VTUSolidInput
 
 ```cpp
-protected void VTUInputImpl<Mesh>(basic_string_view filename, const geode::MeshImpl & impl)
+protected void VTUSolidInput<Mesh>(basic_string_view filename, const geode::MeshImpl & impl)
 ```
 
 
-### read_cells
+### enable_tetrahedron
 
 ```cpp
-protected tuple read_cells(const pugi::xml_node & piece, index_t nb_cells)
+protected void enable_tetrahedron()
+```
+
+
+### enable_hexahedron
+
+```cpp
+protected void enable_hexahedron()
+```
+
+
+### enable_prism
+
+```cpp
+protected void enable_prism()
+```
+
+
+### enable_pyramid
+
+```cpp
+protected void enable_pyramid()
 ```
 
 

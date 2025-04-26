@@ -11,28 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class VTUInputImpl
+# class VTUTriangulatedInput
 
 
 ```cpp
-Inherits from VTKMeshInputImpl<Mesh>
+Inherits from TriangulatedSurfaceInput<3>
 ```
 
 
 
 ## Functions
 
-### VTUInputImpl
+### VTUTriangulatedInput
 
 ```cpp
-protected void VTUInputImpl<Mesh>(basic_string_view filename, const geode::MeshImpl & impl)
+public void VTUTriangulatedInput(basic_string_view filename)
 ```
 
 
-### read_cells
+### extension
 
 ```cpp
-protected tuple read_cells(const pugi::xml_node & piece, index_t nb_cells)
+public basic_string_view extension()
+```
+
+
+### read
+
+```cpp
+public unique_ptr read(const MeshImpl & impl)
 ```
 
 
