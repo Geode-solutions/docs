@@ -36,6 +36,20 @@ public bool section_vertex_surfaces_topology_is_valid(index_t unique_vertex_inde
 
  Checks if the section unique vertices are parts of valid surfaces, i.e. verify: If a unique vertex is part of two surfaces, it is part of a least one line which is boundary of the two blocks.
 
+### surface_is_meshed
+
+```cpp
+public bool surface_is_meshed(const Surface2D & surface)
+```
+
+
+### surface_vertices_are_associated_to_unique_vertices
+
+```cpp
+public bool surface_vertices_are_associated_to_unique_vertices(const Surface2D & surface)
+```
+
+
 ### vertex_is_part_of_invalid_embedded_surface
 
 ```cpp

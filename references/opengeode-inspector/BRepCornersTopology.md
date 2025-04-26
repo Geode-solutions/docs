@@ -32,6 +32,20 @@ public bool brep_corner_topology_is_valid(index_t unique_vertex_index)
 
  Checks if the brep unique vertices are valid corners, i.e. corners that verify: Each unique_vertex can only be associated to one corner. Each corner can only be internal to one object (surface or block). Each corner is a boundary of every line it is associated to.
 
+### corner_is_meshed
+
+```cpp
+public bool corner_is_meshed(const Corner3D & corner)
+```
+
+
+### corner_vertices_are_associated_to_unique_vertices
+
+```cpp
+public bool corner_vertices_are_associated_to_unique_vertices(const Corner3D & corner)
+```
+
+
 ### unique_vertex_has_multiple_corners
 
 ```cpp

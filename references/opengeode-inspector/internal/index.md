@@ -44,17 +44,17 @@ vector components_uuids(const Model & model, index_t unique_vertex_index, const 
 ```
 
 
-### brep_component_vertices_not_associated_to_unique_vertices
+### model_component_vertices_are_associated_to_unique_vertices
 
 ```cpp
-InspectionIssues brep_component_vertices_not_associated_to_unique_vertices(const BRep & brep, const ComponentID & component_id, const VertexSet & component_mesh)
+bool model_component_vertices_are_associated_to_unique_vertices(const Model & model, const ComponentID & component_id, const Mesh & component_mesh)
 ```
 
 
-### section_component_vertices_are_associated_to_unique_vertices
+### model_component_vertices_not_associated_to_unique_vertices
 
 ```cpp
-InspectionIssues section_component_vertices_are_associated_to_unique_vertices(const Section & section, const ComponentID & component_id, const VertexSet & component_mesh)
+InspectionIssues model_component_vertices_not_associated_to_unique_vertices(const Model & model, const ComponentID & component_id, const Mesh & component_mesh)
 ```
 
 

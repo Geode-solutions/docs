@@ -36,6 +36,16 @@ public InspectionIssues unique_vertices_not_linked_to_any_component
 
 ```
 
+```cpp
+public InspectionIssues unique_vertices_linked_to_inexistant_cmv
+
+```
+
+```cpp
+public InspectionIssues unique_vertices_nonbijectively_linked_to_cmv
+
+```
+
 
 
 ## Functions

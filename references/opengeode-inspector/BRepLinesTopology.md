@@ -36,6 +36,20 @@ public bool brep_lines_topology_is_valid(index_t unique_vertex_index)
 
  Checks if the brep unique vertices are parts of valid lines, i.e. verify: Each line is either internal or boundary. If a line is internal to an object, it cannot be incident to it. If the vertex is part of only one line, the line is either internal to a surface, internal to a block, or a boundary of multiple surfaces. If the vertex is part of multiple lines, it is also a corner.
 
+### line_is_meshed
+
+```cpp
+public bool line_is_meshed(const Line3D & line)
+```
+
+
+### line_vertices_are_associated_to_unique_vertices
+
+```cpp
+public bool line_vertices_are_associated_to_unique_vertices(const Line3D & line)
+```
+
+
 ### vertex_is_part_of_not_internal_nor_boundary_line
 
 ```cpp

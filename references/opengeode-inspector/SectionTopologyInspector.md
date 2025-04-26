@@ -63,17 +63,10 @@ public bool section_topology_is_valid()
 
  Checks if the section is topologically valid through the unique vertices.
 
-### section_meshed_components_are_linked_to_unique_vertices
+### section_unique_vertices_are_bijectively_linked_to_an_existing_component_vertex
 
 ```cpp
-public bool section_meshed_components_are_linked_to_unique_vertices()
-```
-
-
-### section_unique_vertices_are_linked_to_a_component_vertex
-
-```cpp
-public bool section_unique_vertices_are_linked_to_a_component_vertex()
+public bool section_unique_vertices_are_bijectively_linked_to_an_existing_component_vertex()
 ```
 
 

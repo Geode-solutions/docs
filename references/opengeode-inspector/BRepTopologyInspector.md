@@ -63,17 +63,10 @@ public bool brep_topology_is_valid()
 
  Checks if the brep is topologically valid through the unique vertices.
 
-### brep_meshed_components_are_linked_to_unique_vertices
+### brep_unique_vertices_are_bijectively_linked_to_an_existing_component_vertex
 
 ```cpp
-public bool brep_meshed_components_are_linked_to_unique_vertices()
-```
-
-
-### brep_unique_vertices_are_linked_to_a_component_vertex
-
-```cpp
-public bool brep_unique_vertices_are_linked_to_a_component_vertex()
+public bool brep_unique_vertices_are_bijectively_linked_to_an_existing_component_vertex()
 ```
 
 
