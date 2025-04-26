@@ -48,6 +48,48 @@ vector mapping_after_deletion(const std::vector<bool> & to_delete)
 ```
 
 
+### polygon_sort
+
+```cpp
+void polygon_sort(Container & vertices)
+```
+
+
+### oriented_rotate
+
+```cpp
+void oriented_rotate(Container & vertices)
+```
+
+
+### oriented_rotate
+
+```cpp
+void oriented_rotate(std::array<index_t, 2> & vertices)
+```
+
+
+### remove_orientation
+
+```cpp
+void remove_orientation(Container & vertices)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const VertexCycle<Container> & m)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const OrientedVertexCycle<Container> & m)
+```
+
+
 ### coords_multiply
 
 ```cpp
@@ -101,48 +143,6 @@ void coords_add_equal(Coords<dimension> & input, const Coords<dimension> & other
 
 ```cpp
 void coords_substract_equal(Coords<dimension> & input, const Coords<dimension> & other)
-```
-
-
-### polygon_sort
-
-```cpp
-void polygon_sort(Container & vertices)
-```
-
-
-### oriented_rotate
-
-```cpp
-void oriented_rotate(Container & vertices)
-```
-
-
-### oriented_rotate
-
-```cpp
-void oriented_rotate(std::array<index_t, 2> & vertices)
-```
-
-
-### remove_orientation
-
-```cpp
-void remove_orientation(Container & vertices)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const VertexCycle<Container> & m)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const OrientedVertexCycle<Container> & m)
 ```
 
 
@@ -244,10 +244,59 @@ void register_all_components(Model & model)
 ```
 
 
+### load_brep_files
+
+```cpp
+void load_brep_files(Model & brep, basic_string_view directory)
+```
+
+
 ### load_section_files
 
 ```cpp
 void load_section_files(Model & section, basic_string_view directory)
+```
+
+
+### create_mesh
+
+```cpp
+std::unique_ptr<Mesh> create_mesh(absl::Span<const std::reference_wrapper<const Mesh> > meshes)
+```
+
+
+### save_segment
+
+```cpp
+void save_segment(const Segment<dimension> & segment, basic_string_view suffix)
+```
+
+
+### save_triangle
+
+```cpp
+void save_triangle(const Triangle<dimension> & triangle, basic_string_view suffix)
+```
+
+
+### save_triangles
+
+```cpp
+void save_triangles(const TriangulatedSurface<dimension> & surface, Span indices, basic_string_view suffix)
+```
+
+
+### save_tetrahedron
+
+```cpp
+void save_tetrahedron(const Tetrahedron & tetrahedron, basic_string_view suffix)
+```
+
+
+### save_tetrahedra
+
+```cpp
+void save_tetrahedra(const TetrahedralSolid3D & solid, Span indices, basic_string_view suffix)
 ```
 
 
@@ -283,20 +332,6 @@ bool solid_polyhedron_is_a_prism(const SolidMesh3D & solid, index_t polyhedron_i
 
 ```cpp
 bool polygons_intersection_detection(const Mesh & mesh, const PolygonVertices & polygon, const PolygonVertices & other_polygon)
-```
-
-
-### create_mesh
-
-```cpp
-std::unique_ptr<Mesh> create_mesh(absl::Span<const std::reference_wrapper<const Mesh> > meshes)
-```
-
-
-### load_brep_files
-
-```cpp
-void load_brep_files(Model & brep, basic_string_view directory)
 ```
 
 
@@ -440,48 +475,6 @@ void copy_vertex_identifier_components(const Model & from, BuilderTo & builder_t
 ```
 
 
-### count_relationships
-
-```cpp
-index_t count_relationships(const Range & range)
-```
-
-
-### section_clone_mapping
-
-```cpp
-ModelMapping section_clone_mapping(const Section & model)
-```
-
-
-### brep_clone_mapping
-
-```cpp
-ModelMapping brep_clone_mapping(const BRep & model)
-```
-
-
-### register_basic_pcontext
-
-```cpp
-void register_basic_pcontext(PContext & context)
-```
-
-
-### register_inlinedvector
-
-```cpp
-void register_inlinedvector(PContext & context, basic_string_view type)
-```
-
-
-### register_geometry_pcontext
-
-```cpp
-void register_geometry_pcontext(PContext & context)
-```
-
-
 ### transfer_brep_collections
 
 ```cpp
@@ -538,38 +531,45 @@ void transfer_solids_metadata(Span solids, BRepBuilder & model_builder, const Mo
 ```
 
 
-### save_segment
+### count_relationships
 
 ```cpp
-void save_segment(const Segment<dimension> & segment, basic_string_view suffix)
+index_t count_relationships(const Range & range)
 ```
 
 
-### save_triangle
+### section_clone_mapping
 
 ```cpp
-void save_triangle(const Triangle<dimension> & triangle, basic_string_view suffix)
+ModelMapping section_clone_mapping(const Section & model)
 ```
 
 
-### save_triangles
+### brep_clone_mapping
 
 ```cpp
-void save_triangles(const TriangulatedSurface<dimension> & surface, Span indices, basic_string_view suffix)
+ModelMapping brep_clone_mapping(const BRep & model)
 ```
 
 
-### save_tetrahedron
+### register_basic_pcontext
 
 ```cpp
-void save_tetrahedron(const Tetrahedron & tetrahedron, basic_string_view suffix)
+void register_basic_pcontext(PContext & context)
 ```
 
 
-### save_tetrahedra
+### register_inlinedvector
 
 ```cpp
-void save_tetrahedra(const TetrahedralSolid3D & solid, Span indices, basic_string_view suffix)
+void register_inlinedvector(PContext & context, basic_string_view type)
+```
+
+
+### register_geometry_pcontext
+
+```cpp
+void register_geometry_pcontext(PContext & context)
 ```
 
 

@@ -29,7 +29,7 @@ Inherits from BlockRangeBase
 ### BlockRange
 
 ```cpp
-public void BlockRange(const Blocks<dimension> & blocks)
+public void BlockRange(const Blocks<> & blocks)
 ```
 
 

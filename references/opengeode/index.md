@@ -411,32 +411,6 @@ std::array<T, sizeof...(Args)> to_array(Args &&... args)
 ```
 
 
-### register_basic_serialize_pcontext
-
-```cpp
-void register_basic_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the basic library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
-### register_basic_deserialize_pcontext
-
-```cpp
-void register_basic_deserialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to deserialize the objects in the basic library.
-
-**context** [in] The context where to register this information.
-
-**warning** The context can be used only once per archive.
-
 ### concatenate
 
 ```cpp
@@ -501,6 +475,13 @@ void sort_unique(Container & container, Comparison comp)
 ```
 
 
+### register_geode_builder
+
+```cpp
+void register_geode_builder()
+```
+
+
 ### permute
 
 ```cpp
@@ -515,34 +496,27 @@ vector old2new_permutation(Span permutation)
 ```
 
 
-### register_geode_builder
+### register_basic_serialize_pcontext
 
 ```cpp
-void register_geode_builder()
+void register_basic_serialize_pcontext(PContext & context)
 ```
 
 
-### register_geometry_serialize_pcontext
-
-```cpp
-void register_geometry_serialize_pcontext(PContext & context)
-```
-
-
- Register all the information needed by Bitsery to serialize the objects in the geometry library.
+ Register all the information needed by Bitsery to serialize the objects in the basic library.
 
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
 
-### register_geometry_deserialize_pcontext
+### register_basic_deserialize_pcontext
 
 ```cpp
-void register_geometry_deserialize_pcontext(PContext & context)
+void register_basic_deserialize_pcontext(PContext & context)
 ```
 
 
- Register all the information needed by Bitsery to deserialize the objects in the geometry library.
+ Register all the information needed by Bitsery to deserialize the objects in the basic library.
 
 **context** [in] The context where to register this information.
 
@@ -665,6 +639,20 @@ vector save_raster_image(const RasterImage<dimension> & raster, basic_string_vie
 
 ```cpp
 bool is_raster_image_saveable(const RasterImage<dimension> & raster, basic_string_view filename)
+```
+
+
+### register_attribute_type
+
+```cpp
+void register_attribute_type(PContext & context, basic_string_view name)
+```
+
+
+### register_geode_mesh
+
+```cpp
+void register_geode_mesh()
 ```
 
 
@@ -1376,58 +1364,6 @@ bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Po
 ```
 
 
-### point_segment_projection
-
-```cpp
-Point<dimension> point_segment_projection(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Return the projection of a point on a segment
-
-**point** [in] the point to project
-
-**segment** [in] the segment
-
-### point_line_projection
-
-```cpp
-Point<dimension> point_line_projection(const Point<dimension> & point, const InfiniteLine<dimension> & line)
-```
-
-
- Return the projection of a point on a line
-
-**point** [in] the point to project
-
-**line** [in] the line
-
-### point_triangle_projection
-
-```cpp
-Point<dimension> point_triangle_projection(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
- Return the projection of a point on a triangle
-
-**point** [in] the point to project
-
-**triangle** [in] the triangle
-
-### point_plane_projection
-
-```cpp
-Point point_plane_projection(const Point3D & point, const Plane & plane)
-```
-
-
- Return the projection of a point on a plane
-
-**point** [in] the point to project
-
-**plane** [in] the plane
-
 ### tetrahedron_barycentric_coordinates
 
 ```cpp
@@ -1514,6 +1450,60 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 ```
 
 
+### load_brep
+
+```cpp
+BRep load_brep(basic_string_view filename)
+```
+
+
+ API function for loading a BoundaryRepresentation. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+**return** Loaded BRep.
+
+### check_brep_missing_files
+
+```cpp
+MissingFiles check_brep_missing_files(basic_string_view filename)
+```
+
+
+### is_brep_loadable
+
+```cpp
+bool is_brep_loadable(basic_string_view filename)
+```
+
+
+### is_zip_file
+
+```cpp
+bool is_zip_file(basic_string_view file)
+```
+
+
+### save_brep
+
+```cpp
+vector save_brep(const BRep & brep, basic_string_view filename)
+```
+
+
+ API function for saving a BoundaryRepresentation. The adequate saver is called depending on the given filename extension.
+
+**brep** [in] BRep to save.
+
+**filename** [in] Path to the file where save the brep.
+
+### is_brep_saveable
+
+```cpp
+bool is_brep_saveable(const BRep & brep, basic_string_view filename)
+```
+
+
 ### load_section
 
 ```cpp
@@ -1541,13 +1531,6 @@ bool is_section_loadable(basic_string_view filename)
 ```
 
 
-### is_zip_file
-
-```cpp
-bool is_zip_file(basic_string_view file)
-```
-
-
 ### save_section
 
 ```cpp
@@ -1565,6 +1548,484 @@ vector save_section(const Section & section, basic_string_view filename)
 
 ```cpp
 bool is_section_saveable(const Section & section, basic_string_view filename)
+```
+
+
+### load_polyhedral_solid
+
+```cpp
+std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polyhedral_solid
+
+```cpp
+std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(basic_string_view filename)
+```
+
+
+ API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polyhedral_solid_missing_files
+
+```cpp
+typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(basic_string_view filename)
+```
+
+
+### is_polyhedral_solid_loadable
+
+```cpp
+bool is_polyhedral_solid_loadable(basic_string_view filename)
+```
+
+
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(basic_string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_vertex_set_missing_files
+
+```cpp
+MissingFiles check_vertex_set_missing_files(basic_string_view filename)
+```
+
+
+### is_vertex_set_loadable
+
+```cpp
+bool is_vertex_set_loadable(basic_string_view filename)
+```
+
+
+### save_polyhedral_solid
+
+```cpp
+vector save_polyhedral_solid(const PolyhedralSolid<dimension> & polyhedral_solid, basic_string_view filename)
+```
+
+
+ API function for saving a PolyhedralSolid. The adequate saver is called depending on the given filename extension.
+
+**polyhedral_solid** [in] PolyhedralSolid to save.
+
+**filename** [in] Path to the file where save the PolyhedralSolid.
+
+### is_polyhedral_solid_saveable
+
+```cpp
+bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_solid, basic_string_view filename)
+```
+
+
+### save_vertex_set
+
+```cpp
+vector save_vertex_set(const VertexSet & vertex_set, basic_string_view filename)
+```
+
+
+ API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
+
+**vertex_set** [in] VertexSet to save.
+
+**filename** [in] Path to the file where save the VertexSet.
+
+### is_vertex_set_saveable
+
+```cpp
+bool is_vertex_set_saveable(const VertexSet & vertex_set, basic_string_view filename)
+```
+
+
+### register_geode_mesh_input
+
+```cpp
+void register_geode_mesh_input()
+```
+
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_edged_curve
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
+```
+
+
+ API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_edged_curve_missing_files
+
+```cpp
+typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
+```
+
+
+### is_edged_curve_loadable
+
+```cpp
+bool is_edged_curve_loadable(basic_string_view filename)
+```
+
+
+### register_geometry_serialize_pcontext
+
+```cpp
+void register_geometry_serialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to serialize the objects in the geometry library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### register_geometry_deserialize_pcontext
+
+```cpp
+void register_geometry_deserialize_pcontext(PContext & context)
+```
+
+
+ Register all the information needed by Bitsery to deserialize the objects in the geometry library.
+
+**context** [in] The context where to register this information.
+
+**warning** The context can be used only once per archive.
+
+### load_graph
+
+```cpp
+unique_ptr load_graph(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an Graph. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_graph
+
+```cpp
+unique_ptr load_graph(basic_string_view filename)
+```
+
+
+ API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_graph_missing_files
+
+```cpp
+MissingFiles check_graph_missing_files(basic_string_view filename)
+```
+
+
+### is_graph_loadable
+
+```cpp
+bool is_graph_loadable(basic_string_view filename)
+```
+
+
+### load_hybrid_solid
+
+```cpp
+std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_hybrid_solid
+
+```cpp
+std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view filename)
+```
+
+
+ API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_hybrid_solid_missing_files
+
+```cpp
+typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(basic_string_view filename)
+```
+
+
+### is_hybrid_solid_loadable
+
+```cpp
+bool is_hybrid_solid_loadable(basic_string_view filename)
+```
+
+
+### load_point_set
+
+```cpp
+std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an PointSet. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_point_set
+
+```cpp
+std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
+```
+
+
+ API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_point_set_missing_files
+
+```cpp
+typename PointSetInput<dimension>::MissingFiles check_point_set_missing_files(basic_string_view filename)
+```
+
+
+### is_point_set_loadable
+
+```cpp
+bool is_point_set_loadable(basic_string_view filename)
+```
+
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(basic_string_view filename)
+```
+
+
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polygonal_surface_missing_files
+
+```cpp
+typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(basic_string_view filename)
+```
+
+
+### is_polygonal_surface_loadable
+
+```cpp
+bool is_polygonal_surface_loadable(basic_string_view filename)
+```
+
+
+### load_regular_grid
+
+```cpp
+std::unique_ptr<RegularGrid<dimension> > load_regular_grid(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an RegularGrid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_regular_grid
+
+```cpp
+std::unique_ptr<RegularGrid<dimension> > load_regular_grid(basic_string_view filename)
+```
+
+
+ API function for loading a RegularGrid. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### check_regular_grid_missing_files
+
+```cpp
+typename RegularGridInput<dimension>::MissingFiles check_regular_grid_missing_files(basic_string_view filename)
+```
+
+
+### is_regular_grid_loadable
+
+```cpp
+bool is_regular_grid_loadable(basic_string_view filename)
+```
+
+
+### load_tetrahedral_solid
+
+```cpp
+std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an TetrahedralSolid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_tetrahedral_solid
+
+```cpp
+std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(basic_string_view filename)
+```
+
+
+ API function for loading an TetrahedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_tetrahedral_solid_missing_files
+
+```cpp
+typename TetrahedralSolidInput<dimension>::MissingFiles check_tetrahedral_solid_missing_files(basic_string_view filename)
+```
+
+
+### is_tetrahedral_solid_loadable
+
+```cpp
+bool is_tetrahedral_solid_loadable(basic_string_view filename)
+```
+
+
+### load_triangulated_surface
+
+```cpp
+std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an TriangulatedSurface. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_triangulated_surface
+
+```cpp
+std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(basic_string_view filename)
+```
+
+
+ API function for loading an TriangulatedSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_triangulated_surface_missing_files
+
+```cpp
+typename TriangulatedSurfaceInput<dimension>::MissingFiles check_triangulated_surface_missing_files(basic_string_view filename)
+```
+
+
+### is_triangulated_surface_loadable
+
+```cpp
+bool is_triangulated_surface_loadable(basic_string_view filename)
+```
+
+
+### load_light_regular_grid
+
+```cpp
+LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
+```
+
+
+ API function for loading an LightRegularGrid. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### check_light_regular_grid_missing_files
+
+```cpp
+typename LightRegularGridInput<dimension>::MissingFiles check_light_regular_grid_missing_files(basic_string_view filename)
+```
+
+
+### is_light_regular_grid_loadable
+
+```cpp
+bool is_light_regular_grid_loadable(basic_string_view filename)
 ```
 
 
@@ -1675,26 +2136,6 @@ bool is_polygonal_surface_saveable(const PolygonalSurface<dimension> & polygonal
 ```
 
 
-### save_polyhedral_solid
-
-```cpp
-vector save_polyhedral_solid(const PolyhedralSolid<dimension> & polyhedral_solid, basic_string_view filename)
-```
-
-
- API function for saving a PolyhedralSolid. The adequate saver is called depending on the given filename extension.
-
-**polyhedral_solid** [in] PolyhedralSolid to save.
-
-**filename** [in] Path to the file where save the PolyhedralSolid.
-
-### is_polyhedral_solid_saveable
-
-```cpp
-bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_solid, basic_string_view filename)
-```
-
-
 ### save_regular_grid
 
 ```cpp
@@ -1735,26 +2176,6 @@ bool is_tetrahedral_solid_saveable(const TetrahedralSolid<dimension> & tetrahedr
 ```
 
 
-### save_vertex_set
-
-```cpp
-vector save_vertex_set(const VertexSet & vertex_set, basic_string_view filename)
-```
-
-
- API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
-
-**vertex_set** [in] VertexSet to save.
-
-**filename** [in] Path to the file where save the VertexSet.
-
-### is_vertex_set_saveable
-
-```cpp
-bool is_vertex_set_saveable(const VertexSet & vertex_set, basic_string_view filename)
-```
-
-
 ### save_light_regular_grid
 
 ```cpp
@@ -1772,158 +2193,6 @@ vector save_light_regular_grid(const LightRegularGrid<dimension> & light_regular
 
 ```cpp
 bool is_light_regular_grid_saveable(const LightRegularGrid<dimension> & light_regular_grid, basic_string_view filename)
-```
-
-
-### load_regular_grid
-
-```cpp
-std::unique_ptr<RegularGrid<dimension> > load_regular_grid(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an RegularGrid. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_regular_grid
-
-```cpp
-std::unique_ptr<RegularGrid<dimension> > load_regular_grid(basic_string_view filename)
-```
-
-
- API function for loading a RegularGrid. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### check_regular_grid_missing_files
-
-```cpp
-typename RegularGridInput<dimension>::MissingFiles check_regular_grid_missing_files(basic_string_view filename)
-```
-
-
-### is_regular_grid_loadable
-
-```cpp
-bool is_regular_grid_loadable(basic_string_view filename)
-```
-
-
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(basic_string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_vertex_set_missing_files
-
-```cpp
-MissingFiles check_vertex_set_missing_files(basic_string_view filename)
-```
-
-
-### is_vertex_set_loadable
-
-```cpp
-bool is_vertex_set_loadable(basic_string_view filename)
-```
-
-
-### load_tetrahedral_solid
-
-```cpp
-std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an TetrahedralSolid. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_tetrahedral_solid
-
-```cpp
-std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(basic_string_view filename)
-```
-
-
- API function for loading an TetrahedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_tetrahedral_solid_missing_files
-
-```cpp
-typename TetrahedralSolidInput<dimension>::MissingFiles check_tetrahedral_solid_missing_files(basic_string_view filename)
-```
-
-
-### is_tetrahedral_solid_loadable
-
-```cpp
-bool is_tetrahedral_solid_loadable(basic_string_view filename)
-```
-
-
-### load_triangulated_surface
-
-```cpp
-std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an TriangulatedSurface. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_triangulated_surface
-
-```cpp
-std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(basic_string_view filename)
-```
-
-
- API function for loading an TriangulatedSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_triangulated_surface_missing_files
-
-```cpp
-typename TriangulatedSurfaceInput<dimension>::MissingFiles check_triangulated_surface_missing_files(basic_string_view filename)
-```
-
-
-### is_triangulated_surface_loadable
-
-```cpp
-bool is_triangulated_surface_loadable(basic_string_view filename)
 ```
 
 
@@ -1993,20 +2262,6 @@ POSITION segment_plane_intersection_detection(const Segment3D & segment, const P
 
 **return** the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane
 
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
-```
-
-
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
-```
-
-
 ### register_model_serialize_pcontext
 
 ```cpp
@@ -2032,53 +2287,6 @@ void register_model_deserialize_pcontext(PContext & context)
 **context** [in] The context where to register this information.
 
 **warning** The context can be used only once per archive.
-
-### load_brep
-
-```cpp
-BRep load_brep(basic_string_view filename)
-```
-
-
- API function for loading a BoundaryRepresentation. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-**return** Loaded BRep.
-
-### check_brep_missing_files
-
-```cpp
-MissingFiles check_brep_missing_files(basic_string_view filename)
-```
-
-
-### is_brep_loadable
-
-```cpp
-bool is_brep_loadable(basic_string_view filename)
-```
-
-
-### save_brep
-
-```cpp
-vector save_brep(const BRep & brep, basic_string_view filename)
-```
-
-
- API function for saving a BoundaryRepresentation. The adequate saver is called depending on the given filename extension.
-
-**brep** [in] BRep to save.
-
-**filename** [in] Path to the file where save the brep.
-
-### is_brep_saveable
-
-```cpp
-bool is_brep_saveable(const BRep & brep, basic_string_view filename)
-```
-
 
 ### create_lines_aabb_tree
 
@@ -2598,151 +2806,176 @@ std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const s
 ```
 
 
-### load_edged_curve
+### repair_polygon_orientations
 
 ```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(const MeshImpl & impl, basic_string_view filename)
+void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
 ```
 
 
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_edged_curve
+### repair_polygon_orientations
 
 ```cpp
-std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filename)
+void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
 ```
 
 
- API function for loading an EdgedCurve. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_edged_curve_missing_files
+### point_segment_projection
 
 ```cpp
-typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
+Point<dimension> point_segment_projection(const Point<dimension> & point, const Segment<dimension> & segment)
 ```
 
 
-### is_edged_curve_loadable
+ Return the projection of a point on a segment
+
+**point** [in] the point to project
+
+**segment** [in] the segment
+
+### point_line_projection
 
 ```cpp
-bool is_edged_curve_loadable(basic_string_view filename)
+Point<dimension> point_line_projection(const Point<dimension> & point, const InfiniteLine<dimension> & line)
 ```
 
 
-### load_graph
+ Return the projection of a point on a line
+
+**point** [in] the point to project
+
+**line** [in] the line
+
+### point_triangle_projection
 
 ```cpp
-unique_ptr load_graph(const MeshImpl & impl, basic_string_view filename)
+Point<dimension> point_triangle_projection(const Point<dimension> & point, const Triangle<dimension> & triangle)
 ```
 
 
- API function for loading an Graph. The adequate loader is called depending on the filename extension.
+ Return the projection of a point on a triangle
 
-**impl** [in] Data structure implementation.
+**point** [in] the point to project
 
-**filename** [in] Path to the file to load.
+**triangle** [in] the triangle
 
-### load_graph
+### point_plane_projection
 
 ```cpp
-unique_ptr load_graph(basic_string_view filename)
+Point point_plane_projection(const Point3D & point, const Plane & plane)
 ```
 
 
- API function for loading an Graph. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+ Return the projection of a point on a plane
 
-**filename** [in] Path to the file to load.
+**point** [in] the point to project
 
-### check_graph_missing_files
+**plane** [in] the plane
+
+### tetrahedron_volume_sign
 
 ```cpp
-MissingFiles check_graph_missing_files(basic_string_view filename)
+SIDE tetrahedron_volume_sign(const Tetrahedron & tetra)
 ```
 
 
-### is_graph_loadable
+ Return the sign of a tetrahedron volume.
+
+### triangle_area_sign
 
 ```cpp
-bool is_graph_loadable(basic_string_view filename)
+SIDE triangle_area_sign(const Triangle2D & triangle)
 ```
 
 
-### load_hybrid_solid
+ Return the sign of a 2D triangle area.
+
+### triangle_area_sign
 
 ```cpp
-std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(const MeshImpl & impl, basic_string_view filename)
+SIDE triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
 ```
 
 
- API function for loading an HybridSolid. The adequate loader is called depending on the filename extension.
+ Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
 
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_hybrid_solid
+### point_triangle_distance
 
 ```cpp
-std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view filename)
+tuple point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
 ```
 
 
- API function for loading an HybridSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_hybrid_solid_missing_files
+### point_triangle_distance
 
 ```cpp
-typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(basic_string_view filename)
+tuple point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
 ```
 
 
-### is_hybrid_solid_loadable
+### Bisector
 
 ```cpp
-bool is_hybrid_solid_loadable(basic_string_view filename)
+double Bisector(const geode::index_t number_of_components, const std::array<double, dimension> & locE, const std::array<double, dimension> & locY, std::array<double, dimension> & locX)
 ```
 
 
-### load_light_regular_grid
+### SqrDistanceSpecial
 
 ```cpp
-LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
+std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std::array<double, dimension> & extents, const std::array<double, dimension> & query_point_coordinates)
 ```
 
 
- API function for loading an LightRegularGrid. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### check_light_regular_grid_missing_files
+### SquaredDistance
 
 ```cpp
-typename LightRegularGridInput<dimension>::MissingFiles check_light_regular_grid_missing_files(basic_string_view filename)
+std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
 ```
 
 
-### is_light_regular_grid_loadable
+### tetrahedron_aspect_ratio
 
 ```cpp
-bool is_light_regular_grid_loadable(basic_string_view filename)
+double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
 ```
 
 
-### register_geode_mesh
+### tetrahedron_volume_to_edge_ratio
 
 ```cpp
-void register_geode_mesh()
+double tetrahedron_volume_to_edge_ratio(const Tetrahedron & tetra)
 ```
 
+
+### tetrahedron_collapse_aspect_ratio
+
+```cpp
+double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
+### radial_sort
+
+```cpp
+FixedArray radial_sort(const Segment3D & segment, Span points)
+```
+
+
+### rotate
+
+```cpp
+Point rotate(const Point3D & point, const Vector3D & axis, double angle)
+```
+
+
+ Rotate a Point3D by an angle around an axis
+
+**point** [in] The point to rotate.
+
+**axis** [in] Axis for the rotation (not null but not necessary normalized).
+
+**angle** [in] Rotation angle expresses in radians.
 
 ### file_exists
 
@@ -2835,118 +3068,6 @@ double string_to_double(basic_string_view string)
 ```
 
 
-### tetrahedron_aspect_ratio
-
-```cpp
-double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### tetrahedron_volume_to_edge_ratio
-
-```cpp
-double tetrahedron_volume_to_edge_ratio(const Tetrahedron & tetra)
-```
-
-
-### tetrahedron_collapse_aspect_ratio
-
-```cpp
-double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### radial_sort
-
-```cpp
-FixedArray radial_sort(const Segment3D & segment, Span points)
-```
-
-
-### rotate
-
-```cpp
-Point rotate(const Point3D & point, const Vector3D & axis, double angle)
-```
-
-
- Rotate a Point3D by an angle around an axis
-
-**point** [in] The point to rotate.
-
-**axis** [in] Axis for the rotation (not null but not necessary normalized).
-
-**angle** [in] Rotation angle expresses in radians.
-
-### tetrahedron_volume_sign
-
-```cpp
-SIDE tetrahedron_volume_sign(const Tetrahedron & tetra)
-```
-
-
- Return the sign of a tetrahedron volume.
-
-### triangle_area_sign
-
-```cpp
-SIDE triangle_area_sign(const Triangle2D & triangle)
-```
-
-
- Return the sign of a 2D triangle area.
-
-### triangle_area_sign
-
-```cpp
-SIDE triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
-```
-
-
- Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
-
-### point_triangle_distance
-
-```cpp
-tuple point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-tuple point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### Bisector
-
-```cpp
-double Bisector(const geode::index_t number_of_components, const std::array<double, dimension> & locE, const std::array<double, dimension> & locY, std::array<double, dimension> & locX)
-```
-
-
-### SqrDistanceSpecial
-
-```cpp
-std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std::array<double, dimension> & extents, const std::array<double, dimension> & query_point_coordinates)
-```
-
-
-### SquaredDistance
-
-```cpp
-std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
-```
-
-
-### register_geode_mesh_input
-
-```cpp
-void register_geode_mesh_input()
-```
-
-
 ### build_grid_from_bbox_target_length_and_maximum_cell_number
 
 ```cpp
@@ -3021,120 +3142,6 @@ void create_surface_mesh_coordinate_system(const SurfaceMesh<dimension> & mesh, 
 
 ```cpp
 void create_solid_mesh_coordinate_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, basic_string_view new_coordinate_system_name, const CoordinateSystem2D & input, const CoordinateSystem2D & output)
-```
-
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(basic_string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polygonal_surface_missing_files
-
-```cpp
-typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(basic_string_view filename)
-```
-
-
-### is_polygonal_surface_loadable
-
-```cpp
-bool is_polygonal_surface_loadable(basic_string_view filename)
-```
-
-
-### load_point_set
-
-```cpp
-std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an PointSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_point_set
-
-```cpp
-std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
-```
-
-
- API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_point_set_missing_files
-
-```cpp
-typename PointSetInput<dimension>::MissingFiles check_point_set_missing_files(basic_string_view filename)
-```
-
-
-### is_point_set_loadable
-
-```cpp
-bool is_point_set_loadable(basic_string_view filename)
-```
-
-
-### load_polyhedral_solid
-
-```cpp
-std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polyhedral_solid
-
-```cpp
-std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(basic_string_view filename)
-```
-
-
- API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polyhedral_solid_missing_files
-
-```cpp
-typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(basic_string_view filename)
-```
-
-
-### is_polyhedral_solid_loadable
-
-```cpp
-bool is_polyhedral_solid_loadable(basic_string_view filename)
 ```
 
 

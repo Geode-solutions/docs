@@ -14,10 +14,6 @@ const name = words.join('-');
 # class GreyscaleColor
 
 
- Description of a color in grey scale
-
-
-
 ## Functions
 
 ### GreyscaleColor

@@ -34,21 +34,21 @@ BlockRange
 ### Blocks
 
 ```cpp
-public void Blocks<dimension>(const Blocks<dimension> & )
+public void Blocks<>(const Blocks<> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Blocks<dimension> & operator=(const Blocks<dimension> & )
+public Blocks<> & operator=(const Blocks<> & )
 ```
 
 
 ### ~Blocks
 
 ```cpp
-public void ~Blocks<dimension>()
+public void ~Blocks<>()
 ```
 
 
@@ -101,21 +101,21 @@ public void save_blocks(basic_string_view directory)
 ### Blocks
 
 ```cpp
-protected void Blocks<dimension>()
+protected void Blocks<>()
 ```
 
 
 ### Blocks
 
 ```cpp
-protected void Blocks<dimension>(Blocks<dimension> && other)
+protected void Blocks<>(Blocks<> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected Blocks<dimension> & operator=(Blocks<dimension> && other)
+protected Blocks<> & operator=(Blocks<> && other)
 ```
 
 

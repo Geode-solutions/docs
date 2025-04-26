@@ -57,7 +57,7 @@ public void BRepBuilder(BRepBuilder && other)
 ### copy
 
 ```cpp
-public ModelMapping copy(const BRep & brep)
+public ModelCopyMapping copy(const BRep & brep)
 ```
 
 
@@ -71,7 +71,7 @@ public void replace_components_meshes_by_others(BRep && other, const ModelCopyMa
 ### copy_components
 
 ```cpp
-public ModelMapping copy_components(const BRep & brep)
+public ModelCopyMapping copy_components(const BRep & brep)
 ```
 
 
@@ -274,21 +274,21 @@ public void add_block_collection(const uuid & block_collection_id)
 ### update_corner_mesh
 
 ```cpp
-public void update_corner_mesh(const Corner3D & corner, unique_ptr mesh)
+public void update_corner_mesh(const Corner3D & corner, std::unique_ptr<PointSet3D> mesh)
 ```
 
 
 ### update_line_mesh
 
 ```cpp
-public void update_line_mesh(const Line3D & line, unique_ptr mesh)
+public void update_line_mesh(const Line3D & line, std::unique_ptr<EdgedCurve3D> mesh)
 ```
 
 
 ### update_surface_mesh
 
 ```cpp
-public void update_surface_mesh(const Surface3D & surface, unique_ptr mesh)
+public void update_surface_mesh(const Surface3D & surface, std::unique_ptr<SurfaceMesh3D> mesh)
 ```
 
 

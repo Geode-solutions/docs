@@ -420,7 +420,7 @@ public bool is_block_collection_item(const Block3D & block, const BlockCollectio
 ### bounding_box
 
 ```cpp
-public BoundingBox bounding_box()
+public BoundingBox3D bounding_box()
 ```
 
 

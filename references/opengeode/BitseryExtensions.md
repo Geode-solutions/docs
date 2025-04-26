@@ -19,7 +19,7 @@ const name = words.join('-');
 ### register_functions
 
 ```cpp
-public void register_functions(RegisterFunction serializer, RegisterFunction deserializer)
+public void register_functions(function serializer, function deserializer)
 ```
 
 

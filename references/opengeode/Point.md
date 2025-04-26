@@ -14,6 +14,15 @@ const name = words.join('-');
 # class Point
 
 
+# class Point
+
+
+# class Point
+
+
+# class Point
+
+
  Description of a point in the given dimension with double coordinates
 
 
@@ -26,6 +35,8 @@ const name = words.join('-');
 public void Point<>()
 ```
 
+
+ Description of a point in the given dimension with double coordinates
 
 ### Point
 
@@ -153,5 +164,11 @@ public Point<dimension - 1> project_point(geode::local_index_t axis_to_remove)
 ```
 
 
+
+
+# class Point
+
+
+# class Point
 
 

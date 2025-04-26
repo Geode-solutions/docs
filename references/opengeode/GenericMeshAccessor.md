@@ -55,7 +55,7 @@ public Tetrahedron element(index_t tetrahedron_id)
 ### GenericMeshAccessor
 
 ```cpp
-public void GenericMeshAccessor<SurfaceMesh<dimension> >(const SurfaceMesh<dimension> & mesh)
+public void GenericMeshAccessor<SurfaceMesh<> >(const SurfaceMesh<dimension> & mesh)
 ```
 
 

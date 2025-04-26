@@ -324,12 +324,5 @@ public void import(const AttributeManager & attribute_manager, const GenericMapp
 ```
 
 
-### register_attribute_type
-
-```cpp
-public void register_attribute_type(PContext & context, basic_string_view name)
-```
-
-
 
 

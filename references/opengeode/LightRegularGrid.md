@@ -134,6 +134,18 @@ public BoundingBox<dimension> bounding_box()
 ```
 
 
+### vertex_index
+
+```cpp
+public index_t vertex_index(const VertexIndices & index)
+```
+
+### cell_index
+
+```cpp
+public index_t cell_index(const CellIndices & index)
+```
+
 
 
 # class LightRegularGrid

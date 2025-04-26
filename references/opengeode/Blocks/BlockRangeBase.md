@@ -59,7 +59,7 @@ public void operator++()
 ### BlockRangeBase
 
 ```cpp
-protected void BlockRangeBase(const Blocks<dimension> & blocks)
+protected void BlockRangeBase(const Blocks<> & blocks)
 ```
 
 

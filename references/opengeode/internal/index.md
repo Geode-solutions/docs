@@ -201,5 +201,17 @@ tuple compute_solid_scalar_function_gradient(const SolidMesh3D & mesh, basic_str
 ```
 
 
+### shape_function_value
+
+```cpp
+double shape_function_value(const typename Grid<dimension>::CellIndices & cell_id, local_index_t node_id, const Point<dimension> & point_in_grid)
+```
+
+### gradient_shape_function_value
+
+```cpp
+double gradient_shape_function_value(const typename Grid<dimension>::CellIndices & cell_id, local_index_t node_id, const Point<dimension> & point_in_grid, local_index_t derivative_direction)
+```
+
 
 

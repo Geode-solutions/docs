@@ -14,10 +14,6 @@ const name = words.join('-');
 # class RGBColor
 
 
- Description of a color in RGB
-
-
-
 ## Functions
 
 ### RGBColor
