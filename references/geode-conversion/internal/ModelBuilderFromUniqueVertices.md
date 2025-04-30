@@ -51,31 +51,24 @@ public void ~ModelBuilderFromUniqueVertices<Model>()
 ```
 
 
-### mappings
-
-```cpp
-public const ModelMappings & mappings()
-```
-
-
-### build_wireframe_step
-
-```cpp
-public void build_wireframe_step()
-```
-
-
 ### update_model
 
 ```cpp
-public void update_model()
+public ModelMappings update_model()
 ```
 
 
 ### is_corner
 
 ```cpp
-public bool is_corner(index_t wireframe_vertex_id)
+protected bool is_corner(index_t wireframe_vertex_id)
+```
+
+
+### build_wireframe_step
+
+```cpp
+protected void build_wireframe_step()
 ```
 
 

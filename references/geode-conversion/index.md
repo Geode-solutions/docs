@@ -76,37 +76,10 @@ tuple convert_solid_elements_into_brep(SolidMesh3D & solid, Span corner_vertices
 
 **solid** [in] Input solid
 
-### add_sharp_features
-
-```cpp
-tuple add_sharp_features(const BRep & model, double max_angle)
-```
-
-
- Creates a new BRep from the given one, with new lines on the sharp features of the surfaces (edges where the angle between the normals of the facets is higher than the given max_angle).
-
-**model** [in] Input brep
-
-**max_angle** [in] Dihedral angle between the facets under which their common edge is considered a sharp feature.
-
 ### surface_facets_from_attribute
 
 ```cpp
 vector surface_facets_from_attribute(SolidMesh3D & solid, basic_string_view attribute_name)
-```
-
-
-### build_blocks
-
-```cpp
-void build_blocks(BRep & brep)
-```
-
-
-### add_breps_block_mapping
-
-```cpp
-void add_breps_block_mapping(const BRep & initial_brep, const BRep & output_brep, geode::ModelGenericMapping & brep_mapping)
 ```
 
 
@@ -142,15 +115,64 @@ tuple convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, basic
 ### add_sharp_features
 
 ```cpp
-tuple add_sharp_features(const Section & model, double max_angle)
+ModelMappings add_sharp_features(Section & model, double max_angle)
 ```
 
 
- Creates a new Section from the given one, with new corners on the sharp features of the lines (points where the angle between the edges is higher than the given max_angle).
+ Update the given Section, with the sharp features (e.g., points where the angle between the edges is higher than the given max_angle) on the lines explicited into corners, eventually splitting input lines.
 
-**model** [in] Input section
+**model** [in] Section
 
 **max_angle** [in] Angle between the edges under which their common vertex is considered a sharp feature.
+
+### remove_sharp_features
+
+```cpp
+ModelMappings remove_sharp_features(Section & model)
+```
+
+
+ Update the given Section removing the sharp features stored in a CornerCollection2D, and if necessary merge input lines.
+
+**model** [in] Section
+
+### add_sharp_features
+
+```cpp
+ModelMappings add_sharp_features(BRep & model, double max_angle)
+```
+
+
+ Update the given BRep, with the sharp features (e.g., edges where the angle between the normals of the facets is higher than the given max_angle) on the lines and surfaces explicited into corners and lines, eventually splitting input lines and surfaces.
+
+**model** [in] BRep
+
+**max_angle** [in] Dihedral angle between the facets and angle between line edges, under which their common edge/vertex is considered a sharp feature.
+
+### remove_sharp_features
+
+```cpp
+ModelMappings remove_sharp_features(BRep & model)
+```
+
+
+ Update the given BRep removing the sharp features stored in a CornerCollection3D and a LineCollection3D, and if necessary merge input lines and surfaces.
+
+**model** [in] Section
+
+### build_blocks
+
+```cpp
+void build_blocks(BRep & brep)
+```
+
+
+### add_breps_block_mapping
+
+```cpp
+void add_breps_block_mapping(const BRep & initial_brep, const BRep & output_brep, geode::ModelGenericMapping & brep_mapping)
+```
+
 
 ### build_topology_using_unique_vertices
 

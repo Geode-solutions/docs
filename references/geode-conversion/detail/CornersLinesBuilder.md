@@ -123,21 +123,21 @@ protected void CornersLinesBuilder<Model>(Model & model)
 ### find_or_create_edge
 
 ```cpp
-protected index_t find_or_create_edge(const std::array<index_t, 2> & edge_vertices, const std::array<Point<dimension>, 2> & edge_points)
+protected tuple find_or_create_edge(const std::array<index_t, 2> & edge_vertices, const std::array<Point<dimension>, 2> & edge_points)
 ```
 
 
 ### find_or_create_corner
 
 ```cpp
-protected index_t find_or_create_corner(index_t corner_vertex, const Point<dimension> & corner_point)
+protected tuple find_or_create_corner(index_t corner_vertex, const Point<dimension> & corner_point)
 ```
 
 
 ### find_or_create_vertex
 
 ```cpp
-protected index_t find_or_create_vertex(index_t unique_vertex, const Point<dimension> & point)
+protected tuple find_or_create_vertex(index_t unique_vertex, const Point<dimension> & point)
 ```
 
 
