@@ -304,6 +304,7 @@ const name = words.join('-');
 * [SimplicialBRepCreator](SimplicialBRepCreator.md)
 * [SimplicialSectionCreator](SimplicialSectionCreator.md)
 * [Singleton](Singleton.md)
+* [SmallSet](SmallSet.md)
 * [SolidEdgesBuilder](SolidEdgesBuilder.md)
 * [SolidEdges](SolidEdges.md)
 * [SolidFacetsBuilder](SolidFacetsBuilder.md)
@@ -2872,6 +2873,49 @@ Point point_plane_projection(const Point3D & point, const Plane & plane)
 
 **plane** [in] the plane
 
+### tetrahedron_aspect_ratio
+
+```cpp
+double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
+### tetrahedron_volume_to_edge_ratio
+
+```cpp
+double tetrahedron_volume_to_edge_ratio(const Tetrahedron & tetra)
+```
+
+
+### tetrahedron_collapse_aspect_ratio
+
+```cpp
+double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
+### radial_sort
+
+```cpp
+FixedArray radial_sort(const Segment3D & segment, Span points)
+```
+
+
+### rotate
+
+```cpp
+Point rotate(const Point3D & point, const Vector3D & axis, double angle)
+```
+
+
+ Rotate a Point3D by an angle around an axis
+
+**point** [in] The point to rotate.
+
+**axis** [in] Axis for the rotation (not null but not necessary normalized).
+
+**angle** [in] Rotation angle expresses in radians.
+
 ### tetrahedron_volume_sign
 
 ```cpp
@@ -2933,49 +2977,6 @@ std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std:
 std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
 ```
 
-
-### tetrahedron_aspect_ratio
-
-```cpp
-double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### tetrahedron_volume_to_edge_ratio
-
-```cpp
-double tetrahedron_volume_to_edge_ratio(const Tetrahedron & tetra)
-```
-
-
-### tetrahedron_collapse_aspect_ratio
-
-```cpp
-double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### radial_sort
-
-```cpp
-FixedArray radial_sort(const Segment3D & segment, Span points)
-```
-
-
-### rotate
-
-```cpp
-Point rotate(const Point3D & point, const Vector3D & axis, double angle)
-```
-
-
- Rotate a Point3D by an angle around an axis
-
-**point** [in] The point to rotate.
-
-**axis** [in] Axis for the rotation (not null but not necessary normalized).
-
-**angle** [in] Rotation angle expresses in radians.
 
 ### file_exists
 

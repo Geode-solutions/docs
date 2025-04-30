@@ -22,6 +22,16 @@ public ModelMapping component_mapping
 ```
 
 ```cpp
+public ModelMapping added_components
+
+```
+
+```cpp
+public ModelMapping unchanged_components
+
+```
+
+```cpp
 public ModelMeshesElementMapping mesh_element_mapping
 
 ```
