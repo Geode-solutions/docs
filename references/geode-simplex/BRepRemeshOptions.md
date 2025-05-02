@@ -21,11 +21,6 @@ public const Metric3D & metric
 
 ```
 
-```cpp
-public optional sharp_feature_angle
-
-```
-
 
 
 ## Functions
