@@ -148,6 +148,13 @@ protected void declare_corner(index_t wireframe_vertex_id, const uuid & corner_u
 ```
 
 
+### undeclare_corner
+
+```cpp
+protected void undeclare_corner(index_t wireframe_vertex_id)
+```
+
+
 ### declare_line_edge
 
 ```cpp
