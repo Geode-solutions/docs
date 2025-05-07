@@ -55,6 +55,20 @@ public std::optional<uuid> under(const uuid & element)
 ```
 
 
+### is_conformal_above
+
+```cpp
+public bool is_conformal_above(const uuid & element)
+```
+
+
+### is_conformal_under
+
+```cpp
+public bool is_conformal_under(const uuid & element)
+```
+
+
 ### save_stratigraphic_relationships
 
 ```cpp

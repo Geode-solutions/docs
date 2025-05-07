@@ -168,6 +168,13 @@ public bool is_baselap_of(const Horizon<dimension> & baselap, const Stratigraphi
 ```
 
 
+### string
+
+```cpp
+public basic_string string()
+```
+
+
 ### compute_top_and_bottom_horizons
 
 ```cpp

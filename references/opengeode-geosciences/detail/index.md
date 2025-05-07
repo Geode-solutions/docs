@@ -201,6 +201,13 @@ optional horizon_id_from_name(const HorizonsStack<dimension> & horizon_stack, ba
 ```
 
 
+### stratigraphic_unit_id_from_name
+
+```cpp
+optional stratigraphic_unit_id_from_name(const HorizonsStack<dimension> & horizon_stack, basic_string_view unit_name)
+```
+
+
 ### invalid_stratigraphic_tetrahedra
 
 ```cpp
