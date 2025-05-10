@@ -55,5 +55,12 @@ bool is_cut_surface_grid_saveable(const CutSurfaceGrid & cut_surface_grid, basic
 ```
 
 
+### ordered_groups_of_horizons_to_implicit
+
+```cpp
+vector ordered_groups_of_horizons_to_implicit(const HorizonsStack<dimension> & horizons_stack)
+```
+
+
 
 
