@@ -14,6 +14,9 @@ const name = words.join('-');
 # class ComponentMeshesAdjacency
 
 
+# class ComponentMeshesAdjacency
+
+
  Class for inspecting the adjacency of edges in the Component Meshes of a Model (BRep or Section).
 
 
@@ -55,9 +58,6 @@ protected const Model & model()
 ```
 
 
-
-
-# class ComponentMeshesAdjacency
 
 
 # class ComponentMeshesAdjacency

@@ -14,6 +14,9 @@ const name = words.join('-');
 # class ComponentMeshesDegeneration
 
 
+# class ComponentMeshesDegeneration
+
+
  Class for inspecting the degeneration of elements in the Component Meshes of a Model (BRep or Section).
 
 
@@ -62,9 +65,6 @@ protected const Model & model()
 ```
 
 
-
-
-# class ComponentMeshesDegeneration
 
 
 # class ComponentMeshesDegeneration

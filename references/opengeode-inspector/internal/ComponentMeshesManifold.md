@@ -14,6 +14,9 @@ const name = words.join('-');
 # class ComponentMeshesManifold
 
 
+# class ComponentMeshesManifold
+
+
  Class for inspecting the manifold property in the Component Meshes of a Model (BRep or Section).
 
 
@@ -62,9 +65,6 @@ protected const Model & model()
 ```
 
 
-
-
-# class ComponentMeshesManifold
 
 
 # class ComponentMeshesManifold

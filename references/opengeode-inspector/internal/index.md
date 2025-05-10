@@ -18,6 +18,9 @@ const name = words.join('-');
 ## Records
 
 * [ColocationImpl](ColocationImpl.md)
+* [ComponentMeshesAdjacency](ComponentMeshesAdjacency.md)
+* [ComponentMeshesDegeneration](ComponentMeshesDegeneration.md)
+* [ComponentMeshesManifold](ComponentMeshesManifold.md)
 * [DegenerationImpl](DegenerationImpl.md)
 
 
