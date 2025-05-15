@@ -17,55 +17,6 @@ const name = words.join('-');
 
 ## Functions
 
-### snapping_detection
-
-```cpp
-optional snapping_detection(const SurfaceMesh<dimension> & surface, index_t polygon, const Point<dimension> & point)
-```
-
-
-### snapping_detection
-
-```cpp
-optional snapping_detection(const SurfaceMesh<dimension> & surface, const PolygonEdge & edge, const Point<dimension> & point)
-```
-
-
-### is_modified_triangle_valid
-
-```cpp
-bool is_modified_triangle_valid(const TriangulatedSurface<dimension> & mesh, const Triangle<dimension> & modified_triangle, index_t old_triangle_id)
-```
-
-
-### is_modified_triangle_valid
-
-```cpp
-bool is_modified_triangle_valid(const TriangulatedSurface<dimension> & mesh, const Triangle<dimension> & modified_triangle, const PolygonEdge & old_edge)
-```
-
-
-### is_modified_triangle_flipped
-
-```cpp
-bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Triangle3D & modified_triangle, index_t old_triangle_id)
-```
-
-
-### is_modified_triangle_flipped
-
-```cpp
-bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Triangle3D & modified_triangle, const PolygonEdge & old_edge)
-```
-
-
-### snapping_detection
-
-```cpp
-optional snapping_detection(const EdgedCurve<dimension> & curve, index_t edge, const Point<dimension> & point)
-```
-
-
 ### tetrahedra_after_split_split_collapse
 
 ```cpp
@@ -125,6 +76,34 @@ flat_hash_map tetrahedra_after_swap_edge(const BRep & brep, const struct BRepCom
 ```
 
 
+### is_modified_triangle_valid
+
+```cpp
+bool is_modified_triangle_valid(const TriangulatedSurface<dimension> & mesh, const Triangle<dimension> & modified_triangle, index_t old_triangle_id)
+```
+
+
+### is_modified_triangle_valid
+
+```cpp
+bool is_modified_triangle_valid(const TriangulatedSurface<dimension> & mesh, const Triangle<dimension> & modified_triangle, const PolygonEdge & old_edge)
+```
+
+
+### is_modified_triangle_flipped
+
+```cpp
+bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Triangle3D & modified_triangle, index_t old_triangle_id)
+```
+
+
+### is_modified_triangle_flipped
+
+```cpp
+bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Triangle3D & modified_triangle, const PolygonEdge & old_edge)
+```
+
+
 ### snapping_detection
 
 ```cpp
@@ -143,6 +122,27 @@ optional snapping_detection(const SolidMesh<dimension> & solid, const Polyhedron
 
 ```cpp
 optional snapping_detection(const SolidMesh<dimension> & solid, const PolyhedronFacetEdge & edge, const Point<dimension> & point)
+```
+
+
+### snapping_detection
+
+```cpp
+optional snapping_detection(const SurfaceMesh<dimension> & surface, index_t polygon, const Point<dimension> & point)
+```
+
+
+### snapping_detection
+
+```cpp
+optional snapping_detection(const SurfaceMesh<dimension> & surface, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
+### snapping_detection
+
+```cpp
+optional snapping_detection(const EdgedCurve<dimension> & curve, index_t edge, const Point<dimension> & point)
 ```
 
 
