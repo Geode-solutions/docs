@@ -86,6 +86,13 @@ public void release_tagged_vertices()
 ```
 
 
+### add_surface_constraints
+
+```cpp
+public void add_surface_constraints()
+```
+
+
 ### clean_model
 
 ```cpp

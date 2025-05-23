@@ -11,37 +11,25 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BlockTetgenMesher
+# struct Mappings
 
 
-```cpp
-Inherits from TetgenMesher
-```
-
-
-
-## Functions
-
-### BlockTetgenMesher
+## Members
 
 ```cpp
-public void BlockTetgenMesher(const BRep & brep, BRepBuilder & builder, const Block3D & block, std::vector<Point3D> && internal_points)
+public BijectiveMapping internal_points
+
 ```
-
-
-### ~BlockTetgenMesher
 
 ```cpp
-public void ~BlockTetgenMesher()
+public BijectiveMapping boundary_points
+
 ```
-
-
-### tetrahedralize
 
 ```cpp
-public tuple tetrahedralize()
-```
+public vector steiner_points
 
+```
 
 
 

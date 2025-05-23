@@ -14,12 +14,18 @@ const name = words.join('-');
 # class TetgenMesher
 
 
+## Records
+
+Mappings
+
+
+
 ## Functions
 
 ### TetgenMesher
 
 ```cpp
-protected void TetgenMesher(std::unique_ptr<TetrahedralSolidBuilder3D> && mesh_builder, Span internal_points)
+protected void TetgenMesher(std::unique_ptr<TetrahedralSolidBuilder3D> && mesh_builder, std::vector<Point3D> && internal_points)
 ```
 
 
@@ -47,7 +53,7 @@ protected void create_input_vertices(index_t nb_vertices)
 ### set_input_point
 
 ```cpp
-protected void set_input_point(index_t vertex_id, const Point3D & point, index_t info)
+protected void set_input_point(index_t vertex_id, const Point3D & point)
 ```
 
 
@@ -82,7 +88,7 @@ protected void set_input_edge(index_t edge_id, index_t v0, index_t v1)
 ### assign_result
 
 ```cpp
-protected tuple assign_result()
+protected Mappings assign_result()
 ```
 
 
