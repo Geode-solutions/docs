@@ -63,5 +63,12 @@ public GenericMapping points_mapping()
 ```
 
 
+### vertices_mapping
+
+```cpp
+public GenericMapping vertices_mapping()
+```
+
+
 
 

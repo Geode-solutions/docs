@@ -113,11 +113,24 @@ public void replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
 ```
 
 
- Replace old polygon vertices from a given vertex to another.
+ Replace old polyhedron vertices from a given vertex to another.
 
 **old_vertex_id** [in] Index of the initial mesh vertex to modify
 
 **new_vertex_id** [in] Index of the target mesh vertex to set as polyhedron vertex
+
+**warning** This function supposes that the mesh is manifold around old vertex
+
+### replace_vertices
+
+```cpp
+public void replace_vertices(const GenericMapping<index_t> & vertices_mapping)
+```
+
+
+ Replace old polyhedron vertices from given vertices to another ones.
+
+**warning** This function does not suppose that the mesh is manifold around old vertices
 
 ### set_polyhedron_adjacent
 
@@ -128,7 +141,7 @@ public void set_polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet, in
 
  Set a polyhedron adgjacent through a facet.
 
-**polygon_facet** [in] The index of the polygon facet
+**polyhedron_facet** [in] The index of the polyhedron facet
 
 **adjacent_id** [in] Index of the adjacent polyhedron
 
@@ -143,7 +156,7 @@ public void unset_polyhedron_adjacent(const PolyhedronFacet & polyhedron_facet)
 
 
 
-**polygon_facet** [in] The index of the polygon facet
+**polyhedron_facet** [in] The index of the polyhedron facet
 
 ### compute_polyhedron_adjacencies
 

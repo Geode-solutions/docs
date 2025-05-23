@@ -1559,6 +1559,46 @@ bool is_section_saveable(const Section & section, basic_string_view filename)
 ```
 
 
+### save_polygonal_surface
+
+```cpp
+vector save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
+```
+
+
+ API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
+
+**edged_curve** [in] PolygonalSurface to save.
+
+**filename** [in] Path to the file where save the PolygonalSurface.
+
+### is_polygonal_surface_saveable
+
+```cpp
+bool is_polygonal_surface_saveable(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
+```
+
+
+### save_vertex_set
+
+```cpp
+vector save_vertex_set(const VertexSet & vertex_set, basic_string_view filename)
+```
+
+
+ API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
+
+**vertex_set** [in] VertexSet to save.
+
+**filename** [in] Path to the file where save the VertexSet.
+
+### is_vertex_set_saveable
+
+```cpp
+bool is_vertex_set_saveable(const VertexSet & vertex_set, basic_string_view filename)
+```
+
+
 ### load_polyhedral_solid
 
 ```cpp
@@ -1652,26 +1692,6 @@ vector save_polyhedral_solid(const PolyhedralSolid<dimension> & polyhedral_solid
 
 ```cpp
 bool is_polyhedral_solid_saveable(const PolyhedralSolid<dimension> & polyhedral_solid, basic_string_view filename)
-```
-
-
-### save_vertex_set
-
-```cpp
-vector save_vertex_set(const VertexSet & vertex_set, basic_string_view filename)
-```
-
-
- API function for saving a VertexSet. The adequate saver is called depending on the given filename extension.
-
-**vertex_set** [in] VertexSet to save.
-
-**filename** [in] Path to the file where save the VertexSet.
-
-### is_vertex_set_saveable
-
-```cpp
-bool is_vertex_set_saveable(const VertexSet & vertex_set, basic_string_view filename)
 ```
 
 
@@ -2121,26 +2141,6 @@ vector save_point_set(const PointSet<dimension> & point_set, basic_string_view f
 
 ```cpp
 bool is_point_set_saveable(const PointSet<dimension> & point_set, basic_string_view filename)
-```
-
-
-### save_polygonal_surface
-
-```cpp
-vector save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
-```
-
-
- API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
-
-**edged_curve** [in] PolygonalSurface to save.
-
-**filename** [in] Path to the file where save the PolygonalSurface.
-
-### is_polygonal_surface_saveable
-
-```cpp
-bool is_polygonal_surface_saveable(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
 ```
 
 
@@ -2880,49 +2880,6 @@ Point point_plane_projection(const Point3D & point, const Plane & plane)
 
 **plane** [in] the plane
 
-### tetrahedron_aspect_ratio
-
-```cpp
-double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### tetrahedron_volume_to_edge_ratio
-
-```cpp
-double tetrahedron_volume_to_edge_ratio(const Tetrahedron & tetra)
-```
-
-
-### tetrahedron_collapse_aspect_ratio
-
-```cpp
-double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### radial_sort
-
-```cpp
-FixedArray radial_sort(const Segment3D & segment, Span points)
-```
-
-
-### rotate
-
-```cpp
-Point rotate(const Point3D & point, const Vector3D & axis, double angle)
-```
-
-
- Rotate a Point3D by an angle around an axis
-
-**point** [in] The point to rotate.
-
-**axis** [in] Axis for the rotation (not null but not necessary normalized).
-
-**angle** [in] Rotation angle expresses in radians.
-
 ### tetrahedron_volume_sign
 
 ```cpp
@@ -2984,6 +2941,49 @@ std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std:
 std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
 ```
 
+
+### tetrahedron_aspect_ratio
+
+```cpp
+double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
+### tetrahedron_volume_to_edge_ratio
+
+```cpp
+double tetrahedron_volume_to_edge_ratio(const Tetrahedron & tetra)
+```
+
+
+### tetrahedron_collapse_aspect_ratio
+
+```cpp
+double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
+### radial_sort
+
+```cpp
+FixedArray radial_sort(const Segment3D & segment, Span points)
+```
+
+
+### rotate
+
+```cpp
+Point rotate(const Point3D & point, const Vector3D & axis, double angle)
+```
+
+
+ Rotate a Point3D by an angle around an axis
+
+**point** [in] The point to rotate.
+
+**axis** [in] Axis for the rotation (not null but not necessary normalized).
+
+**angle** [in] Rotation angle expresses in radians.
 
 ### file_exists
 
@@ -3080,6 +3080,41 @@ double string_to_double(basic_string_view string)
 
 ```cpp
 LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_number(const BoundingBox<dimension> & bbox, double target_cell_length, index_t max_nb_cells)
+```
+
+
+### remove_vertex_duplication
+
+```cpp
+void remove_vertex_duplication(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder)
+```
+
+
+### remove_vertex_duplication
+
+```cpp
+void remove_vertex_duplication(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder)
+```
+
+
+### remove_vertex_duplication
+
+```cpp
+void remove_vertex_duplication(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
+```
+
+
+### remove_vertex_duplication
+
+```cpp
+void remove_vertex_duplication(const SolidMesh3D & mesh, SolidMeshBuilder3D & builder)
+```
+
+
+### create_nn_search
+
+```cpp
+NNSearch<dimension> create_nn_search(const Mesh<dimension> & mesh)
 ```
 
 
@@ -3236,6 +3271,41 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### find_intersections_with_boundaries
+
+```cpp
+flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
+```
+
+
+### is_point_inside_block
+
+```cpp
+bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
+```
+
+
+### block_containing_point
+
+```cpp
+optional block_containing_point(const BRep & brep, const Point3D & point)
+```
+
+
 ### convert_surface_mesh
 
 ```cpp
@@ -3289,13 +3359,6 @@ void triangulate_surface_meshes(const BRep & brep, BRepBuilder & builder)
 
 ```cpp
 void triangulate_surface_meshes(const Section & section, SectionBuilder & builder)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
 ```
 
 
@@ -3408,34 +3471,6 @@ FixedArray brep_active_coordinate_reference_systems(const BRep & brep)
 
 ```cpp
 FixedArray section_active_coordinate_reference_systems(const Section & section)
-```
-
-
-### find_intersections_with_boundaries
-
-```cpp
-flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
-```
-
-
-### is_point_inside_block
-
-```cpp
-bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
-```
-
-
-### block_containing_point
-
-```cpp
-optional block_containing_point(const BRep & brep, const Point3D & point)
 ```
 
 

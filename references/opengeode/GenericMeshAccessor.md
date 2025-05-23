@@ -34,7 +34,7 @@ Inherits from GenericMeshAccessor<SolidMesh<dimension> >
 ### GenericMeshAccessor
 
 ```cpp
-public void GenericMeshAccessor<TetrahedralSolid<> >(const TetrahedralSolid<dimension> & mesh)
+public void GenericMeshAccessor<TetrahedralSolid<dimension> >(const TetrahedralSolid<dimension> & mesh)
 ```
 
 
@@ -182,7 +182,7 @@ Inherits from GenericMeshAccessor<SurfaceMesh<dimension> >
 ### GenericMeshAccessor
 
 ```cpp
-public void GenericMeshAccessor<TriangulatedSurface<> >(const TriangulatedSurface<dimension> & mesh)
+public void GenericMeshAccessor<TriangulatedSurface<dimension> >(const TriangulatedSurface<dimension> & mesh)
 ```
 
 
@@ -212,7 +212,7 @@ Inherits from GenericMeshAccessor<SolidMesh<dimension> >
 ### GenericMeshAccessor
 
 ```cpp
-public void GenericMeshAccessor<SolidMesh<dimension> >(const SolidMesh<dimension> & mesh)
+public void GenericMeshAccessor<SolidMesh<> >(const SolidMesh<dimension> & mesh)
 ```
 
 

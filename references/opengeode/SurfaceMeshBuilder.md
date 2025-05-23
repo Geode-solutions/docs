@@ -119,6 +119,19 @@ public void replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
 
 **new_vertex_id** [in] Index of the target mesh vertex to set as polygon vertex
 
+**warning** This function supposes that the mesh is manifold around old vertex
+
+### replace_vertices
+
+```cpp
+public void replace_vertices(const GenericMapping<index_t> & vertices_mapping)
+```
+
+
+ Replace old polygon vertices from given vertices to another ones.
+
+**warning** This function does not suppose that the mesh is manifold around old vertices
+
 ### set_polygon_adjacent
 
 ```cpp
