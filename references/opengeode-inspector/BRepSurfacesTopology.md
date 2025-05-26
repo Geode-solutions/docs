@@ -50,24 +50,10 @@ public bool surface_vertices_are_associated_to_unique_vertices(const Surface3D &
 ```
 
 
-### vertex_is_part_of_not_internal_nor_boundary_surface
-
-```cpp
-public std::optional<std::string> vertex_is_part_of_not_internal_nor_boundary_surface(index_t unique_vertex_index)
-```
-
-
 ### vertex_is_part_of_invalid_embedded_surface
 
 ```cpp
 public std::optional<std::string> vertex_is_part_of_invalid_embedded_surface(index_t unique_vertex_index)
-```
-
-
-### vertex_is_part_of_invalid_single_surface
-
-```cpp
-public std::optional<std::string> vertex_is_part_of_invalid_single_surface(index_t unique_vertex_index)
 ```
 
 

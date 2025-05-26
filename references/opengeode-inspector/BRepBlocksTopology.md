@@ -62,6 +62,27 @@ public std::optional<std::string> unique_vertex_block_cmvs_count_is_incorrect(in
 ```
 
 
+### vertex_is_part_of_surface_with_wrong_relationships_to_block
+
+```cpp
+public std::optional<std::string> vertex_is_part_of_surface_with_wrong_relationships_to_block(index_t unique_vertex_index, absl::Span<const uuid> not_boundaries_surfaces, absl::Span<const uuid> dangling_surface)
+```
+
+
+### vertex_is_part_of_invalid_single_surface
+
+```cpp
+public std::optional<std::string> vertex_is_part_of_invalid_single_surface(index_t unique_vertex_index, absl::Span<const uuid> not_boundaries_surfaces)
+```
+
+
+### vertex_is_part_of_invalid_multiple_surfaces
+
+```cpp
+public std::optional<std::string> vertex_is_part_of_invalid_multiple_surfaces(index_t unique_vertex_index)
+```
+
+
 ### inspect_blocks
 
 ```cpp

@@ -65,6 +65,13 @@ public ElementsIntersectionsInspectionResult inspect_intersections()
 ```
 
 
+### inspect_surfaces_self_intersections
+
+```cpp
+public ElementsIntersectionsInspectionResult inspect_surfaces_self_intersections()
+```
+
+
 
 
 # class ModelMeshesIntersections

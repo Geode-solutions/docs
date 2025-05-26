@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public InspectionIssues blocks_not_meshed
+public InspectionIssues some_blocks_not_meshed
 
 ```
 
@@ -38,6 +38,31 @@ public InspectionIssues unique_vertices_part_of_two_blocks_and_no_boundary_surfa
 
 ```cpp
 public InspectionIssues unique_vertices_with_incorrect_block_cmvs_count
+
+```
+
+```cpp
+public InspectionIssues unique_vertices_linked_to_surface_with_wrong_relationship_to_blocks
+
+```
+
+```cpp
+public InspectionIssues unique_vertices_linked_to_a_single_and_invalid_surface
+
+```
+
+```cpp
+public InspectionIssues blocks_with_not_closed_boundary_surfaces
+
+```
+
+```cpp
+public InspectionIssues model_boundaries_dont_form_a_closed_surface
+
+```
+
+```cpp
+public InspectionIssues unique_vertex_linked_to_multiple_invalid_surfaces
 
 ```
 

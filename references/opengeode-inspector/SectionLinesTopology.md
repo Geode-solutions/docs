@@ -50,10 +50,10 @@ public bool line_vertices_are_associated_to_unique_vertices(const Line2D & line)
 ```
 
 
-### vertex_is_part_of_not_internal_nor_boundary_line
+### vertex_is_part_of_line_with_wrong_relationships_to_surface
 
 ```cpp
-public optional vertex_is_part_of_not_internal_nor_boundary_line(const index_t unique_vertex_index)
+public optional vertex_is_part_of_line_with_wrong_relationships_to_surface(const index_t unique_vertex_index)
 ```
 
 

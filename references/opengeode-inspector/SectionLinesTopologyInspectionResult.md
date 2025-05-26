@@ -27,7 +27,7 @@ public InspectionIssuesMap lines_not_linked_to_a_unique_vertex
 ```
 
 ```cpp
-public InspectionIssues unique_vertices_linked_to_not_internal_nor_boundary_line
+public InspectionIssues unique_vertices_linked_to_line_with_wrong_relationship_to_surface
 
 ```
 

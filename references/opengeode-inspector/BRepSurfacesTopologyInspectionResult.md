@@ -27,17 +27,7 @@ public InspectionIssuesMap surfaces_not_linked_to_a_unique_vertex
 ```
 
 ```cpp
-public InspectionIssues unique_vertices_linked_to_not_internal_nor_boundary_surface
-
-```
-
-```cpp
 public InspectionIssues unique_vertices_linked_to_a_surface_with_invalid_embbedings
-
-```
-
-```cpp
-public InspectionIssues unique_vertices_linked_to_a_single_and_invalid_surface
 
 ```
 

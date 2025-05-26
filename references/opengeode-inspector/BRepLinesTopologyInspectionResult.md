@@ -22,12 +22,12 @@ public InspectionIssues lines_not_meshed
 ```
 
 ```cpp
-public InspectionIssuesMap lines_not_linked_to_a_unique_vertex
+public InspectionIssues unique_vertices_linked_to_line_with_wrong_relationship_to_surface
 
 ```
 
 ```cpp
-public InspectionIssues unique_vertices_linked_to_not_internal_nor_boundary_line
+public InspectionIssuesMap lines_not_linked_to_a_unique_vertex
 
 ```
 
