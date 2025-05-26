@@ -26,6 +26,9 @@ const name = words.join('-');
 * [BRepElementsAfterCollapseEdge](BRepElementsAfterCollapseEdge.md)
 * [BRepMetricConstraints](BRepMetricConstraints.md)
 * [BRepRemeshOptions](BRepRemeshOptions.md)
+* [BRepRemeshValidity](BRepRemeshValidity.md)
+* [BRepRemeshWithoutBlockValidity](BRepRemeshWithoutBlockValidity.md)
+* [BrepSurfacesRemeshValidity](BrepSurfacesRemeshValidity.md)
 * [GeometricSurfacePath](GeometricSurfacePath.md)
 * [PolygonEdge](PolygonEdge.md)
 * [RemeshingData](RemeshingData.md)
@@ -346,7 +349,21 @@ bool is_triangulated_surface_remeshable(const TriangulatedSurface3D & surface)
 ### is_brep_remeshable
 
 ```cpp
-bool is_brep_remeshable(const BRep & brep)
+BRepRemeshValidity is_brep_remeshable(const BRep & brep)
+```
+
+
+### are_brep_surfaces_remeshable
+
+```cpp
+BrepSurfacesRemeshValidity are_brep_surfaces_remeshable(const BRep & brep)
+```
+
+
+### is_brep_without_block_remeshable
+
+```cpp
+BRepRemeshWithoutBlockValidity is_brep_without_block_remeshable(const BRep & brep)
 ```
 
 
