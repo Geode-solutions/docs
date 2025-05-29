@@ -47,38 +47,17 @@ SIDE opposite_side(const GEO::SIGN & sign)
 ```
 
 
-### point_segment_position
+### segment_intersection_detection
 
 ```cpp
-POSITION point_segment_position(const SIDE & s0, const SIDE & s1)
+POSITION segment_intersection_detection(const SIDE & s0, const SIDE & s1)
 ```
 
 
-### point_segment_position
+### triangle_intersection_detection
 
 ```cpp
-POSITION point_segment_position(const SIDE & s0, const SIDE & s1, bool points_aligned)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(SIDE s0, SIDE s1, SIDE s2)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(SIDE s0, SIDE s1, SIDE s2, bool point_on_plane)
-```
-
-
-### point_tetrahedron_position
-
-```cpp
-POSITION point_tetrahedron_position(const std::array<GEO::SIGN, 4> & signs)
+POSITION triangle_intersection_detection(SIDE s0, SIDE s1, SIDE s2)
 ```
 
 
@@ -152,17 +131,38 @@ double gradient_shape_function_value(const typename Grid<dimension>::CellIndices
 ```
 
 
-### segment_intersection_detection
+### point_segment_position
 
 ```cpp
-POSITION segment_intersection_detection(const SIDE & s0, const SIDE & s1)
+POSITION point_segment_position(const SIDE & s0, const SIDE & s1)
 ```
 
 
-### triangle_intersection_detection
+### point_segment_position
 
 ```cpp
-POSITION triangle_intersection_detection(SIDE s0, SIDE s1, SIDE s2)
+POSITION point_segment_position(const SIDE & s0, const SIDE & s1, bool points_aligned)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(SIDE s0, SIDE s1, SIDE s2)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(SIDE s0, SIDE s1, SIDE s2, bool point_on_plane)
+```
+
+
+### point_tetrahedron_position
+
+```cpp
+POSITION point_tetrahedron_position(const std::array<GEO::SIGN, 4> & signs)
 ```
 
 

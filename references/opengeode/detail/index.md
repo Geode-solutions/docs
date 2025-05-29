@@ -475,6 +475,13 @@ void copy_vertex_identifier_components(const Model & from, BuilderTo & builder_t
 ```
 
 
+### count_relationships
+
+```cpp
+index_t count_relationships(const Range & range)
+```
+
+
 ### transfer_brep_collections
 
 ```cpp
@@ -528,13 +535,6 @@ void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const Su
 
 ```cpp
 void transfer_solids_metadata(Span solids, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### count_relationships
-
-```cpp
-index_t count_relationships(const Range & range)
 ```
 
 

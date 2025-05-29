@@ -24,6 +24,7 @@ const name = words.join('-');
 ## Records
 
 * [AABBTree](AABBTree.md)
+* [Angle](Angle.md)
 * [AnisotropicDistanceToEdge](AnisotropicDistanceToEdge.md)
 * [AnisotropicDistanceToTetrahedron](AnisotropicDistanceToTetrahedron.md)
 * [AnisotropicDistanceToTriangle](AnisotropicDistanceToTriangle.md)
@@ -997,23 +998,71 @@ bool is_triangulated_surface_saveable(const TriangulatedSurface<dimension> & tri
 ```
 
 
-### perpendicular
+### segment_segment_intersection_detection
 
 ```cpp
-Vector perpendicular(const Vector2D & v)
+pair segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
 ```
 
 
- Return a 2D vector perpendicular to the given one
+ Detect if there is an intersection between two 2D segments
 
-### dot_perpendicular
+**return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
+
+### colinear_segment_segment_intersection_detection
 
 ```cpp
-double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
+pair colinear_segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
 ```
 
 
- Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
+ Detect the configuration between two 2D colinear segments
+
+**return** the position of the intersection on the two segments. Returns parallel-pallel if there is segment overlap
+
+### segment_line_intersection_detection
+
+```cpp
+POSITION segment_line_intersection_detection(const Segment2D & segment, const InfiniteLine2D & line)
+```
+
+
+ Detect if there is an intersection between a line and a segment
+
+**return** the position of the intersection on the segment. Returns outside if there is no intersection or all points are colinear
+
+### line_triangle_intersection_detection
+
+```cpp
+POSITION line_triangle_intersection_detection(const InfiniteLine3D & line, const Triangle3D & triangle)
+```
+
+
+ Detect if there is an intersection between a line and a triangle
+
+**return** the position of the intersection on the triangle. Returns outside if there is no intersection or the line is coplanar with the triangle
+
+### segment_triangle_intersection_detection
+
+```cpp
+pair segment_triangle_intersection_detection(const Segment3D & segment, const Triangle3D & triangle)
+```
+
+
+ Detect if there is an intersection between a segment and a triangle
+
+**return** the position of the intersection on the segment and on the triangle. Returns outside if there is no intersection or the segment is coplanar with the triangle
+
+### segment_plane_intersection_detection
+
+```cpp
+POSITION segment_plane_intersection_detection(const Segment3D & segment, const Plane & plane)
+```
+
+
+ Detect if there is an intersection between a segment and a plane
+
+**return** the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane
 
 ### line_plane_intersection
 
@@ -1197,27 +1246,6 @@ IntersectionResult<absl::InlinedVector<Point<dimension>, 2> > line_ellipse_inter
 
 **return** an optional of the intersection points.
 
-### lexicographic_mapping
-
-```cpp
-vector lexicographic_mapping(absl::Span<const Point<dimension> > points)
-```
-
-
-### morton_mapping
-
-```cpp
-vector morton_mapping(absl::Span<const Point<dimension> > points)
-```
-
-
-### hilbert_mapping
-
-```cpp
-vector hilbert_mapping(absl::Span<const Point<dimension> > points)
-```
-
-
 ### point_side_to_segment
 
 ```cpp
@@ -1288,87 +1316,42 @@ bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> 
 
  Return true if the three points are exactly aligned.
 
-### point_segment_position_exact
+### perpendicular
 
 ```cpp
-POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
+Vector perpendicular(const Vector2D & v)
 ```
 
 
-### point_segment_position_exact
+ Return a 2D vector perpendicular to the given one
+
+### dot_perpendicular
 
 ```cpp
-POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
+double dot_perpendicular(const Vector2D & v0, const Vector2D & v1)
 ```
 
 
-### point_segment_position_exact
+ Compute the dot product between a 2D vector **p**  and another 2D vector perpendicular to **p** 
+
+### lexicographic_mapping
 
 ```cpp
-POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
+vector lexicographic_mapping(absl::Span<const Point<dimension> > points)
 ```
 
 
-### point_triangle_position_all_zero
+### morton_mapping
 
 ```cpp
-POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
+vector morton_mapping(absl::Span<const Point<dimension> > points)
 ```
 
 
-### point_triangle_position_exact
+### hilbert_mapping
 
 ```cpp
-POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### compute_determinants
-
-```cpp
-POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_tetrahedron_position_exact
-
-```cpp
-POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
+vector hilbert_mapping(absl::Span<const Point<dimension> > points)
 ```
 
 
@@ -2204,72 +2187,6 @@ bool is_light_regular_grid_saveable(const LightRegularGrid<dimension> & light_re
 ```
 
 
-### segment_segment_intersection_detection
-
-```cpp
-pair segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
- Detect if there is an intersection between two 2D segments
-
-**return** the position of the intersection on the two segments. Returns outside-outside if there is no intersection or parallel-pallel if all points are colinear
-
-### colinear_segment_segment_intersection_detection
-
-```cpp
-pair colinear_segment_segment_intersection_detection(const Segment2D & segment0, const Segment2D & segment1)
-```
-
-
- Detect the configuration between two 2D colinear segments
-
-**return** the position of the intersection on the two segments. Returns parallel-pallel if there is segment overlap
-
-### segment_line_intersection_detection
-
-```cpp
-POSITION segment_line_intersection_detection(const Segment2D & segment, const InfiniteLine2D & line)
-```
-
-
- Detect if there is an intersection between a line and a segment
-
-**return** the position of the intersection on the segment. Returns outside if there is no intersection or all points are colinear
-
-### line_triangle_intersection_detection
-
-```cpp
-POSITION line_triangle_intersection_detection(const InfiniteLine3D & line, const Triangle3D & triangle)
-```
-
-
- Detect if there is an intersection between a line and a triangle
-
-**return** the position of the intersection on the triangle. Returns outside if there is no intersection or the line is coplanar with the triangle
-
-### segment_triangle_intersection_detection
-
-```cpp
-pair segment_triangle_intersection_detection(const Segment3D & segment, const Triangle3D & triangle)
-```
-
-
- Detect if there is an intersection between a segment and a triangle
-
-**return** the position of the intersection on the segment and on the triangle. Returns outside if there is no intersection or the segment is coplanar with the triangle
-
-### segment_plane_intersection_detection
-
-```cpp
-POSITION segment_plane_intersection_detection(const Segment3D & segment, const Plane & plane)
-```
-
-
- Detect if there is an intersection between a segment and a plane
-
-**return** the position of the intersection on the segment. Returns outside if there is no intersection or the segment is coplanar with the plane
-
 ### register_model_serialize_pcontext
 
 ```cpp
@@ -2828,6 +2745,90 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 ```
 
 
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
+```
+
+
+### point_triangle_position_all_zero
+
+```cpp
+POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### compute_determinants
+
+```cpp
+POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_tetrahedron_position_exact
+
+```cpp
+POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
+```
+
+
 ### point_segment_projection
 
 ```cpp
@@ -2942,49 +2943,6 @@ std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> &
 ```
 
 
-### tetrahedron_aspect_ratio
-
-```cpp
-double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### tetrahedron_volume_to_edge_ratio
-
-```cpp
-double tetrahedron_volume_to_edge_ratio(const Tetrahedron & tetra)
-```
-
-
-### tetrahedron_collapse_aspect_ratio
-
-```cpp
-double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
-```
-
-
-### radial_sort
-
-```cpp
-FixedArray radial_sort(const Segment3D & segment, Span points)
-```
-
-
-### rotate
-
-```cpp
-Point rotate(const Point3D & point, const Vector3D & axis, double angle)
-```
-
-
- Rotate a Point3D by an angle around an axis
-
-**point** [in] The point to rotate.
-
-**axis** [in] Axis for the rotation (not null but not necessary normalized).
-
-**angle** [in] Rotation angle expresses in radians.
-
 ### file_exists
 
 ```cpp
@@ -3075,6 +3033,49 @@ float string_to_float(basic_string_view string)
 double string_to_double(basic_string_view string)
 ```
 
+
+### tetrahedron_aspect_ratio
+
+```cpp
+double tetrahedron_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
+### tetrahedron_volume_to_edge_ratio
+
+```cpp
+double tetrahedron_volume_to_edge_ratio(const Tetrahedron & tetra)
+```
+
+
+### tetrahedron_collapse_aspect_ratio
+
+```cpp
+double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
+```
+
+
+### radial_sort
+
+```cpp
+FixedArray radial_sort(const Segment3D & segment, Span points)
+```
+
+
+### rotate
+
+```cpp
+Point rotate(const Point3D & point, const Vector3D & axis, double angle)
+```
+
+
+ Rotate a Point3D by an angle around an axis
+
+**point** [in] The point to rotate.
+
+**axis** [in] Axis for the rotation (not null but not necessary normalized).
+
+**angle** [in] Rotation angle expresses in radians.
 
 ### build_grid_from_bbox_target_length_and_maximum_cell_number
 
@@ -3478,17 +3479,6 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ## Enums
 
-| enum class INTERSECTION_TYPE |
-
---
-
-| none |
-| intersect |
-| parallel |
-| incorrect |
-
-
-
 | enum class POSITION |
 
 --
@@ -3523,6 +3513,17 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 | positive |
 | negative |
 | zero |
+
+
+
+| enum class INTERSECTION_TYPE |
+
+--
+
+| none |
+| intersect |
+| parallel |
+| incorrect |
 
 
 
