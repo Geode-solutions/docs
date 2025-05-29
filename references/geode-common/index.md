@@ -50,6 +50,7 @@ const name = words.join('-');
 * [CommonCutterModelLibrary](CommonCutterModelLibrary.md)
 * [CommonCutterSolidLibrary](CommonCutterSolidLibrary.md)
 * [CommonCutterSurfaceLibrary](CommonCutterSurfaceLibrary.md)
+* [CommonHelpersLibrary](CommonHelpersLibrary.md)
 * [CommonMetricLibrary](CommonMetricLibrary.md)
 * [CommonModifierCommonLibrary](CommonModifierCommonLibrary.md)
 * [CommonModifierEdgedCurveLibrary](CommonModifierEdgedCurveLibrary.md)
@@ -107,6 +108,7 @@ const name = words.join('-');
 * [Modifier](Modifier.md)
 * [ModuleLicenseChecker](ModuleLicenseChecker.md)
 * [MultiMapping](MultiMapping.md)
+* [PartitionnerParameters](PartitionnerParameters.md)
 * [PatchFrontEdge](PatchFrontEdge.md)
 * [PointSetModifier](PointSetModifier.md)
 * [PolygonEdgeSplit](PolygonEdgeSplit.md)
@@ -1712,6 +1714,27 @@ bool does_swap_edge_improve_metric(const TriangulatedSurface2D & surface, const 
 ```cpp
 double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
 ```
+
+### mesh_partitionner
+
+```cpp
+FixedArray mesh_partitionner(const EdgedCurve<dimension> & mesh, const PartitionnerParameters & parameters)
+```
+
+
+### mesh_partitionner
+
+```cpp
+FixedArray mesh_partitionner(const SurfaceMesh<dimension> & mesh, const PartitionnerParameters & parameters)
+```
+
+
+### mesh_partitionner
+
+```cpp
+FixedArray mesh_partitionner(const SolidMesh3D & mesh, const PartitionnerParameters & parameters)
+```
+
 
 ### is_collapse_edge_valid
 
