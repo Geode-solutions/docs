@@ -117,6 +117,13 @@ void copy_attributes(const AttributeManager & manager_in, AttributeManager & man
 ```
 
 
+### local_cell_node_is_on_axis_origin
+
+```cpp
+bool local_cell_node_is_on_axis_origin(geode::local_index_t node_id, geode::local_index_t axis_id)
+```
+
+
 ### shape_function_value
 
 ```cpp

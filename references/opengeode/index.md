@@ -2745,90 +2745,6 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 ```
 
 
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
-```
-
-
-### point_triangle_position_all_zero
-
-```cpp
-POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### compute_determinants
-
-```cpp
-POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_tetrahedron_position_exact
-
-```cpp
-POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
-
 ### point_segment_projection
 
 ```cpp
@@ -2940,6 +2856,90 @@ std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std:
 
 ```cpp
 std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
+```
+
+
+### point_triangle_position_all_zero
+
+```cpp
+POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### compute_determinants
+
+```cpp
+POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_tetrahedron_position_exact
+
+```cpp
+POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 
