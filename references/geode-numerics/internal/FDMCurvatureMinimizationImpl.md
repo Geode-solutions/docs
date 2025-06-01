@@ -55,6 +55,20 @@ protected void ~FDMCurvatureMinimizationImpl<dimension>()
 ```
 
 
+### enlarged_cell_local_coords
+
+```cpp
+protected Point<dimension> enlarged_cell_local_coords(const Point<dimension> & data_point_in_grid, const typename Grid<dimension>::VertexIndices & closest_node)
+```
+
+
+### enlarged_shape_function_value
+
+```cpp
+protected double enlarged_shape_function_value(local_index_t node_id, const Point<dimension> & local_point_coords)
+```
+
+
 ### lock_node_value
 
 ```cpp
@@ -72,14 +86,14 @@ protected double node_weight()
 ### derivative_axis_direction
 
 ```cpp
-protected std::array<int, dimension> derivative_axis_direction(geode::local_index_t derivative_axis_id)
+protected std::array<int, dimension> derivative_axis_direction(local_index_t derivative_axis_id)
 ```
 
 
 ### derivative_contribution
 
 ```cpp
-protected double derivative_contribution(geode::local_index_t derivative_axis_id)
+protected double derivative_contribution(local_index_t derivative_axis_id)
 ```
 
 
