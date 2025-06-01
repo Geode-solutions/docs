@@ -17,9 +17,6 @@ const name = words.join('-');
 # class ScalarFunctionComputer
 
 
-# class ScalarFunctionComputer
-
-
 ## Functions
 
 ### ~ScalarFunctionComputer
@@ -105,5 +102,8 @@ protected bool rasterization_deactivates_too_many_cells(const CutGrid<dimension>
 ```
 
 
+
+
+# class ScalarFunctionComputer
 
 
