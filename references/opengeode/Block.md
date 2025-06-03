@@ -140,6 +140,13 @@ public void set_block_name(basic_string_view name, BlocksBuilderKey key)
 ```
 
 
+### set_block_active
+
+```cpp
+public void set_block_active(bool is_active, BlocksBuilderKey key)
+```
+
+
 ### steal_mesh
 
 ```cpp

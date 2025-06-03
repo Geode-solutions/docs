@@ -41,6 +41,13 @@ public void set_corner_name(const uuid & id, basic_string_view name)
 ```
 
 
+### set_corner_active
+
+```cpp
+public void set_corner_active(const uuid & id, bool active)
+```
+
+
 ### CornersBuilder
 
 ```cpp

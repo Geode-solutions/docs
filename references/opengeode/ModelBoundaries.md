@@ -55,6 +55,13 @@ public index_t nb_model_boundaries()
 ```
 
 
+### nb_active_model_boundaries
+
+```cpp
+public index_t nb_active_model_boundaries()
+```
+
+
 ### model_boundary
 
 ```cpp
@@ -66,6 +73,13 @@ public const ModelBoundary<dimension> & model_boundary(const uuid & id)
 
 ```cpp
 public ModelBoundaryRange model_boundaries()
+```
+
+
+### active_model_boundaries
+
+```cpp
+public ModelBoundaryRange active_model_boundaries()
 ```
 
 

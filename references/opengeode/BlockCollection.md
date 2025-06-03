@@ -91,6 +91,13 @@ public void set_block_collection_name(basic_string_view name, BlockCollectionsBu
 ```
 
 
+### set_block_collection_active
+
+```cpp
+public void set_block_collection_active(bool is_active, BlockCollectionsBuilderKey )
+```
+
+
 
 
 # class BlockCollection

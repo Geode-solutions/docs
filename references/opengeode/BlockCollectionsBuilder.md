@@ -33,6 +33,13 @@ public void set_block_collection_name(const uuid & id, basic_string_view name)
 ```
 
 
+### set_block_collection_active
+
+```cpp
+public void set_block_collection_active(const uuid & id, bool active)
+```
+
+
 ### BlockCollectionsBuilder
 
 ```cpp

@@ -126,6 +126,13 @@ public void set_line_name(basic_string_view name, LinesBuilderKey key)
 ```
 
 
+### set_line_active
+
+```cpp
+public void set_line_active(bool is_active, LinesBuilderKey key)
+```
+
+
 ### modifiable_mesh
 
 ```cpp

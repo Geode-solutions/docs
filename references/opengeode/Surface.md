@@ -142,6 +142,13 @@ public void set_surface_name(basic_string_view name, SurfacesBuilderKey key)
 ```
 
 
+### set_surface_active
+
+```cpp
+public void set_surface_active(bool active, SurfacesBuilderKey key)
+```
+
+
 ### modifiable_mesh
 
 ```cpp

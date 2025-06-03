@@ -41,6 +41,13 @@ public void set_line_name(const uuid & id, basic_string_view name)
 ```
 
 
+### set_line_active
+
+```cpp
+public void set_line_active(const uuid & id, bool active)
+```
+
+
 ### LinesBuilder
 
 ```cpp

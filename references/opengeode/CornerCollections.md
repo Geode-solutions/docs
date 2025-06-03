@@ -58,6 +58,13 @@ public index_t nb_corner_collections()
 ```
 
 
+### nb_active_corner_collections
+
+```cpp
+public index_t nb_active_corner_collections()
+```
+
+
 ### corner_collection
 
 ```cpp
@@ -69,6 +76,13 @@ public const CornerCollection<dimension> & corner_collection(const uuid & id)
 
 ```cpp
 public CornerCollectionRange corner_collections()
+```
+
+
+### active_corner_collections
+
+```cpp
+public CornerCollectionRange active_corner_collections()
 ```
 
 

@@ -135,6 +135,13 @@ public void set_corner_name(basic_string_view name, CornersBuilderKey key)
 ```
 
 
+### set_corner_active
+
+```cpp
+public void set_corner_active(bool is_active, CornersBuilderKey key)
+```
+
+
 ### modifiable_mesh
 
 ```cpp

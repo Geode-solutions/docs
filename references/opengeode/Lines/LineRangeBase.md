@@ -52,6 +52,13 @@ public void operator++()
 ```
 
 
+### set_active_only
+
+```cpp
+public void set_active_only()
+```
+
+
 ### LineRangeBase
 
 ```cpp

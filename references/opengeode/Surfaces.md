@@ -55,6 +55,13 @@ public index_t nb_surfaces()
 ```
 
 
+### nb_active_surfaces
+
+```cpp
+public index_t nb_active_surfaces()
+```
+
+
 ### has_surface
 
 ```cpp
@@ -73,6 +80,13 @@ public const Surface<dimension> & surface(const uuid & id)
 
 ```cpp
 public SurfaceRange surfaces()
+```
+
+
+### active_surfaces
+
+```cpp
+public SurfaceRange active_surfaces()
 ```
 
 

@@ -100,5 +100,12 @@ public void set_model_boundary_name(basic_string_view name, ModelBoundariesBuild
 ```
 
 
+### set_model_boundary_active
+
+```cpp
+public void set_model_boundary_active(bool active, ModelBoundariesBuilderKey )
+```
+
+
 
 

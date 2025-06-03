@@ -47,6 +47,13 @@ public void set_surface_name(const uuid & id, basic_string_view name)
 ```
 
 
+### set_surface_active
+
+```cpp
+public void set_surface_active(const uuid & id, bool active)
+```
+
+
 ### SurfacesBuilder
 
 ```cpp

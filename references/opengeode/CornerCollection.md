@@ -82,6 +82,13 @@ public void set_corner_collection_name(basic_string_view name, CornerCollections
 ```
 
 
+### set_corner_collection_active
+
+```cpp
+public void set_corner_collection_active(bool active, CornerCollectionsBuilderKey )
+```
+
+
 
 
 # class CornerCollection

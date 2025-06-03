@@ -56,6 +56,13 @@ public index_t nb_corners()
 ```
 
 
+### nb_active_corners
+
+```cpp
+public index_t nb_active_corners()
+```
+
+
 ### has_corner
 
 ```cpp
@@ -76,6 +83,13 @@ public const Corner<dimension> & corner(const uuid & id)
 
 ```cpp
 public CornerRange corners()
+```
+
+
+### active_corners
+
+```cpp
+public CornerRange active_corners()
 ```
 
 

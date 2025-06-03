@@ -52,6 +52,13 @@ public index_t nb_line_collections()
 ```
 
 
+### nb_active_line_collections
+
+```cpp
+public index_t nb_active_line_collections()
+```
+
+
 ### line_collection
 
 ```cpp
@@ -63,6 +70,13 @@ public const LineCollection<dimension> & line_collection(const uuid & id)
 
 ```cpp
 public LineCollectionRange line_collections()
+```
+
+
+### active_line_collections
+
+```cpp
+public LineCollectionRange active_line_collections()
 ```
 
 

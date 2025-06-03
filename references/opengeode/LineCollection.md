@@ -82,6 +82,13 @@ public void set_line_collection_name(basic_string_view name, LineCollectionsBuil
 ```
 
 
+### set_line_collection_active
+
+```cpp
+public void set_line_collection_active(bool active, LineCollectionsBuilderKey )
+```
+
+
 
 
 # class LineCollection

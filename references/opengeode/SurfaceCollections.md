@@ -55,6 +55,13 @@ public index_t nb_surface_collections()
 ```
 
 
+### nb_active_surface_collections
+
+```cpp
+public index_t nb_active_surface_collections()
+```
+
+
 ### surface_collection
 
 ```cpp
@@ -66,6 +73,13 @@ public const SurfaceCollection<dimension> & surface_collection(const uuid & id)
 
 ```cpp
 public SurfaceCollectionRange surface_collections()
+```
+
+
+### active_surface_collections
+
+```cpp
+public SurfaceCollectionRange active_surface_collections()
 ```
 
 

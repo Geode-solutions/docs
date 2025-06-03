@@ -59,6 +59,13 @@ public index_t nb_blocks()
 ```
 
 
+### nb_active_blocks
+
+```cpp
+public index_t nb_active_blocks()
+```
+
+
 ### has_block
 
 ```cpp
@@ -79,6 +86,13 @@ public const Block<dimension> & block(const uuid & id)
 
 ```cpp
 public BlockRange blocks()
+```
+
+
+### active_blocks
+
+```cpp
+public BlockRange active_blocks()
 ```
 
 

@@ -58,6 +58,13 @@ public index_t nb_block_collections()
 ```
 
 
+### nb_active_block_collections
+
+```cpp
+public index_t nb_active_block_collections()
+```
+
+
 ### block_collection
 
 ```cpp
@@ -69,6 +76,13 @@ public const BlockCollection<dimension> & block_collection(const uuid & id)
 
 ```cpp
 public BlockCollectionRange block_collections()
+```
+
+
+### active_block_collections
+
+```cpp
+public BlockCollectionRange active_block_collections()
 ```
 
 

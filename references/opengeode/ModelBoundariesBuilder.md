@@ -30,6 +30,13 @@ public void set_model_boundary_name(const uuid & id, basic_string_view name)
 ```
 
 
+### set_model_boundary_active
+
+```cpp
+public void set_model_boundary_active(const uuid & id, bool active)
+```
+
+
 ### ModelBoundariesBuilder
 
 ```cpp

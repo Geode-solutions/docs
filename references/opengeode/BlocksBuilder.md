@@ -44,6 +44,13 @@ public void set_block_name(const uuid & id, basic_string_view name)
 ```
 
 
+### set_block_active
+
+```cpp
+public void set_block_active(const uuid & id, bool active)
+```
+
+
 ### BlocksBuilder
 
 ```cpp

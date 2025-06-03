@@ -36,6 +36,13 @@ public void set_surface_collection_name(const uuid & id, basic_string_view name)
 ```
 
 
+### set_surface_collection_active
+
+```cpp
+public void set_surface_collection_active(const uuid & id, bool active)
+```
+
+
 ### SurfaceCollectionsBuilder
 
 ```cpp

@@ -33,6 +33,13 @@ public void set_corner_collection_name(const uuid & id, basic_string_view name)
 ```
 
 
+### set_corner_collection_active
+
+```cpp
+public void set_corner_collection_active(const uuid & id, bool active)
+```
+
+
 ### CornerCollectionsBuilder
 
 ```cpp

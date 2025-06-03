@@ -85,10 +85,24 @@ public ComponentID component_id()
 ```
 
 
+### is_active
+
+```cpp
+public bool is_active()
+```
+
+
 ### Component
 
 ```cpp
 protected void Component<dimension>()
+```
+
+
+### set_active
+
+```cpp
+protected void set_active(bool active)
 ```
 
 

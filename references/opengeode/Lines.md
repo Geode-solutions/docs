@@ -52,6 +52,13 @@ public index_t nb_lines()
 ```
 
 
+### nb_active_lines
+
+```cpp
+public index_t nb_active_lines()
+```
+
+
 ### has_line
 
 ```cpp
@@ -70,6 +77,13 @@ public const Line<dimension> & line(const uuid & id)
 
 ```cpp
 public LineRange lines()
+```
+
+
+### active_lines
+
+```cpp
+public LineRange active_lines()
 ```
 
 
