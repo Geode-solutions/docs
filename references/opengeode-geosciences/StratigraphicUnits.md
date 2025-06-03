@@ -58,6 +58,13 @@ public index_t nb_stratigraphic_units()
 ```
 
 
+### nb_active_stratigraphic_units
+
+```cpp
+public index_t nb_active_stratigraphic_units()
+```
+
+
 ### has_stratigraphic_unit
 
 ```cpp
@@ -76,6 +83,13 @@ public const StratigraphicUnit<dimension> & stratigraphic_unit(const uuid & id)
 
 ```cpp
 public StratigraphicUnitRange stratigraphic_units()
+```
+
+
+### active_stratigraphic_units
+
+```cpp
+public StratigraphicUnitRange active_stratigraphic_units()
 ```
 
 

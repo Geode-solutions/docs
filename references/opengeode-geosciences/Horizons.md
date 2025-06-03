@@ -58,6 +58,13 @@ public index_t nb_horizons()
 ```
 
 
+### nb_active_horizons
+
+```cpp
+public index_t nb_active_horizons()
+```
+
+
 ### has_horizon
 
 ```cpp
@@ -76,6 +83,13 @@ public const Horizon<dimension> & horizon(const uuid & id)
 
 ```cpp
 public HorizonRange horizons()
+```
+
+
+### active_horizons
+
+```cpp
+public HorizonRange active_horizons()
 ```
 
 

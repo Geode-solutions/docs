@@ -52,6 +52,13 @@ public index_t nb_fault_blocks()
 ```
 
 
+### nb_active_fault_blocks
+
+```cpp
+public index_t nb_active_fault_blocks()
+```
+
+
 ### has_fault_block
 
 ```cpp
@@ -70,6 +77,13 @@ public const FaultBlock<dimension> & fault_block(const uuid & id)
 
 ```cpp
 public FaultBlockRange fault_blocks()
+```
+
+
+### active_fault_blocks
+
+```cpp
+public FaultBlockRange active_fault_blocks()
 ```
 
 
