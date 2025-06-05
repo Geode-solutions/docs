@@ -47,6 +47,13 @@ public void BRepRemeshWithoutBlockValidity(const ElementsIntersectionsInspection
 ```
 
 
+### string
+
+```cpp
+public basic_string string()
+```
+
+
 ### operator bool
 
 ```cpp

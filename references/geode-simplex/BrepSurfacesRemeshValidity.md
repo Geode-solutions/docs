@@ -47,6 +47,13 @@ public void BrepSurfacesRemeshValidity(const ElementsIntersectionsInspectionResu
 ```
 
 
+### string
+
+```cpp
+public basic_string string()
+```
+
+
 ### operator bool
 
 ```cpp
