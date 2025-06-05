@@ -552,6 +552,13 @@ public optional polygon_around_vertex(index_t vertex_id)
 
 **vertex_id** [in] Index of the vertex.
 
+### polygon_minimum_height
+
+```cpp
+public double polygon_minimum_height(index_t polygon_id)
+```
+
+
 ### associate_polygon_vertex_to_vertex
 
 ```cpp

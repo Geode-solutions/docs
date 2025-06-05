@@ -641,6 +641,13 @@ public std::optional<PolyhedronVertex> polyhedron_around_vertex(index_t vertex_i
 
 **vertex_id** [in] Index of the vertex.
 
+### polyhedron_minimum_height
+
+```cpp
+public double polyhedron_minimum_height(index_t polyhedron_id)
+```
+
+
 ### associate_polyhedron_vertex_to_vertex
 
 ```cpp

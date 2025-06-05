@@ -117,6 +117,13 @@ public std::vector<std::array<index_t, 3> > triangulate()
 ```
 
 
+### minimum_height
+
+```cpp
+public double minimum_height()
+```
+
+
 ### is_degenerated
 
 ```cpp

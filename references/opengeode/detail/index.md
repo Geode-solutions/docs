@@ -342,6 +342,13 @@ flat_hash_map line_component_mesh_edges(const Model & model, const std::array<in
 ```
 
 
+### line_component_mesh_edges
+
+```cpp
+vector line_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices, const geode::Line<Model::dim> & line)
+```
+
+
 ### surface_component_mesh_edges
 
 ```cpp
@@ -349,10 +356,24 @@ flat_hash_map surface_component_mesh_edges(const Model & model, const std::array
 ```
 
 
+### surface_component_mesh_edges
+
+```cpp
+vector surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices, const geode::Surface<Model::dim> & surface)
+```
+
+
 ### block_component_mesh_edges
 
 ```cpp
 flat_hash_map block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
+```
+
+
+### block_component_mesh_edges
+
+```cpp
+vector block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices, const Block3D & block)
 ```
 
 
