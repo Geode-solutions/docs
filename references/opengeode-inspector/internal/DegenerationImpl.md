@@ -37,6 +37,13 @@ public bool is_mesh_degenerated()
 ```
 
 
+### small_edges
+
+```cpp
+public InspectionIssues small_edges(double threshold)
+```
+
+
 ### degenerated_edges
 
 ```cpp

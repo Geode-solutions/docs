@@ -68,5 +68,12 @@ public InspectionIssues degenerated_edges()
 ```
 
 
+### small_edges
+
+```cpp
+public InspectionIssues small_edges(double threshold)
+```
+
+
 
 

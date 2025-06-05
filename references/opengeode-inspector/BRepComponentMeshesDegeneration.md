@@ -55,5 +55,26 @@ public BRepMeshesDegenerationInspectionResult inspect_elements_degeneration()
 ```
 
 
+### inspect_edges_degeneration
+
+```cpp
+public BRepMeshesDegenerationInspectionResult inspect_edges_degeneration(double threshold)
+```
+
+
+### inspect_polygons_degeneration
+
+```cpp
+public BRepMeshesDegenerationInspectionResult inspect_polygons_degeneration(double threshold)
+```
+
+
+### inspect_polyhedra_degeneration
+
+```cpp
+public BRepMeshesDegenerationInspectionResult inspect_polyhedra_degeneration(double threshold)
+```
+
+
 
 
