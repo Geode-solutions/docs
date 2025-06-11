@@ -11,13 +11,19 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ElementInsertionInfo
+# struct BackgroundMeshInsertionException
+
+
+```cpp
+Inherits from OpenGeodeException
+```
+
 
 
 ## Members
 
 ```cpp
-public flat_hash_map info
+public ElementInsertionInfo info
 
 ```
 
@@ -25,35 +31,11 @@ public flat_hash_map info
 
 ## Functions
 
-### ElementInsertionInfo
+### BackgroundMeshInsertionException
 
 ```cpp
-public void ElementInsertionInfo()
+public void BackgroundMeshInsertionException(ElementInsertionInfo && insertion_info, const Args &... message)
 ```
-
-
-### add
-
-```cpp
-public void add(INSERTION_STATUS insertion_status, geode::index_t element_id)
-```
-
-
-
-
-## Enums
-
-| enum class INSERTION_STATUS |
-
---
-
-| inserted |
-| partially_inserted |
-| outside |
-| degenerated |
-| failed |
-| not_inserted |
-
 
 
 

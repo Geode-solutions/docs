@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BackgroundInsertionException
+# struct BackgroundModelInsertionException
 
 
 ```cpp
@@ -23,7 +23,7 @@ Inherits from OpenGeodeException
 ## Members
 
 ```cpp
-public vector not_inserted_elements
+public flat_hash_map info
 
 ```
 
@@ -31,10 +31,10 @@ public vector not_inserted_elements
 
 ## Functions
 
-### BackgroundInsertionException
+### BackgroundModelInsertionException
 
 ```cpp
-public void BackgroundInsertionException(const std::vector<index_t> & not_inserted_elements_in, optional failing_element, const Args &... message)
+public void BackgroundModelInsertionException(BlockElementInsertionInfo && insertion_info, const Args &... message)
 ```
 
 
