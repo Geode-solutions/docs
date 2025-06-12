@@ -496,6 +496,13 @@ void copy_vertex_identifier_components(const Model & from, BuilderTo & builder_t
 ```
 
 
+### count_range_elements
+
+```cpp
+index_t count_range_elements(const Range & range)
+```
+
+
 ### transfer_brep_collections
 
 ```cpp
@@ -507,13 +514,6 @@ void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRe
 
 ```cpp
 void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### count_range_elements
-
-```cpp
-index_t count_range_elements(const Range & range)
 ```
 
 
