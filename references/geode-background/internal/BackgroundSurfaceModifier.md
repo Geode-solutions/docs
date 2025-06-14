@@ -71,10 +71,10 @@ public CollapseEdgeInfo collapse_edge(index_t edge_id, const Point2D & point)
 ```
 
 
-### clean
+### clean_triangles
 
 ```cpp
-public CleanMappings clean()
+public vector clean_triangles()
 ```
 
 

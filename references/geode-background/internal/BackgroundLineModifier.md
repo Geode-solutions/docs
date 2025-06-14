@@ -50,10 +50,10 @@ public CollapseEdgeInfo collapse_edge(index_t edge, const Point1D & point)
 ```
 
 
-### clean
+### clean_edges
 
 ```cpp
-public CleanMappings clean()
+public vector clean_edges()
 ```
 
 
