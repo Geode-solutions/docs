@@ -11,33 +11,38 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class ElementSearchBuilder
-
-
-# class ElementSearchBuilder
+# class Skin
 
 
 ## Functions
 
-### ElementSearchBuilder
+### Skin
 
 ```cpp
-public void ElementSearchBuilder<Mesh>(ElementSearch<Mesh> & element_search)
+public void Skin(const BackgroundSurface & surface, const BackgroundSurfaceModifier & modifier)
 ```
 
 
-### reinitialize_elements_tree
+### skin
 
 ```cpp
-public void reinitialize_elements_tree(const Mesh & mesh)
+public const std::unique_ptr<geode::EdgedCurve2D> & skin()
 ```
 
 
+### skin_vertices
+
+```cpp
+public const std::vector<OrientedSkinVertices> & skin_vertices()
+```
 
 
-# class ElementSearchBuilder
+### skin_aabb
+
+```cpp
+public const geode::AABBTree2D & skin_aabb()
+```
 
 
-# class ElementSearchBuilder
 
 
