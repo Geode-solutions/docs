@@ -17,6 +17,13 @@ const name = words.join('-');
 
 ## Functions
 
+### save_light_viewable_bbox
+
+```cpp
+basic_string save_light_viewable_bbox(const BoundingBox<dimension> & bbox, basic_string_view filename_without_extension)
+```
+
+
 ### save_light_viewable_object
 
 ```cpp

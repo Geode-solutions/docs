@@ -128,6 +128,13 @@ basic_string_view raster_image_viewable_extension()
 ```
 
 
+### save_light_viewable_raster_image
+
+```cpp
+basic_string save_light_viewable_raster_image(const RasterImage<dimension> & raster_image, basic_string_view filename_without_extension)
+```
+
+
 ### save_viewable_regular_grid
 
 ```cpp
