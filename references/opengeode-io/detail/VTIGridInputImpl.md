@@ -35,13 +35,6 @@ public void VTIGridInputImpl<Mesh>(basic_string_view filename)
 ```
 
 
-### is_loadable
-
-```cpp
-public bool is_loadable(basic_string_view filename)
-```
-
-
 ### read_grid_attributes
 
 ```cpp
