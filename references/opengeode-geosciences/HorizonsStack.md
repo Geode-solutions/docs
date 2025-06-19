@@ -154,17 +154,17 @@ public StratigraphicUnitOrderedRange top_to_bottom_units()
 ```
 
 
-### is_eroded_by
+### is_conformal_above
 
 ```cpp
-public bool is_eroded_by(const StratigraphicUnit<dimension> & eroded, const Horizon<dimension> & erosion)
+public bool is_conformal_above(const uuid & component)
 ```
 
 
-### is_baselap_of
+### is_conformal_under
 
 ```cpp
-public bool is_baselap_of(const Horizon<dimension> & baselap, const StratigraphicUnit<dimension> & baselap_top)
+public bool is_conformal_under(const uuid & component)
 ```
 
 

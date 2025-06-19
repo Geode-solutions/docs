@@ -178,14 +178,23 @@ StratigraphicModel stratigraphic_model_from_implicit_model_and_coords(ImplicitSt
 ```
 
 
-### horizons_stack_from_name_list
+### horizons_stack_from_top_to_bottom_names
 
 ```cpp
-HorizonsStack<dimension> horizons_stack_from_name_list(Span horizons_names, Span units_names)
+HorizonsStack<dimension> horizons_stack_from_top_to_bottom_names(Span horizons_names, Span units_names)
 ```
 
 
- Creates a HorizonsStack from a list of names of Horizons and StratigraphicUnits. The bottom horizon and stratigraphic unit will be the first in the lists, respectively.
+ Creates a HorizonsStack from a list of names of Horizons and StratigraphicUnits. The top horizon and stratigraphic unit will be the first in the lists, respectively.
+
+### horizons_stack_from_bottom_to_top_names
+
+```cpp
+HorizonsStack<dimension> horizons_stack_from_bottom_to_top_names(Span horizons_names, Span units_names)
+```
+
+
+ Creates a HorizonsStack from a list of names of Horizons and StratigraphicUnits.The bottom horizon and stratigraphic unit will be the first in the lists, respectively.
 
 ### repair_horizon_stack_if_possible
 

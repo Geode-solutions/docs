@@ -68,17 +68,10 @@ public NamedType component_type()
 ```
 
 
-### has_type
+### contact_type
 
 ```cpp
-public bool has_type()
-```
-
-
-### type
-
-```cpp
-public HORIZON_TYPE type()
+public CONTACT_TYPE contact_type()
 ```
 
 
@@ -92,14 +85,14 @@ public void Horizon<dimension>(HorizonsKey )
 ### Horizon
 
 ```cpp
-public void Horizon<dimension>(HORIZON_TYPE type, HorizonsKey )
+public void Horizon<dimension>(CONTACT_TYPE type, HorizonsKey )
 ```
 
 
-### set_type
+### set_contact_type
 
 ```cpp
-public void set_type(HORIZON_TYPE type, HorizonsBuilderKey )
+public void set_contact_type(CONTACT_TYPE type, HorizonsBuilderKey )
 ```
 
 
@@ -114,13 +107,14 @@ public void set_horizon_name(basic_string_view name, HorizonsBuilderKey )
 
 ## Enums
 
-| enum class HORIZON_TYPE |
+| enum class CONTACT_TYPE |
 
 --
 
-| no_type |
 | conformal |
-| non_conformal |
+| erosion |
+| baselap |
+| discontinuity |
 | topography |
 | intrusion |
 

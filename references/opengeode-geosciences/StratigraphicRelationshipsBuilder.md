@@ -56,15 +56,6 @@ public void remove_above_relation(const uuid & id1, const uuid & id2)
 
  Remove a relationship of type above/under between two components
 
-### remove_unconformity_relation
-
-```cpp
-public void remove_unconformity_relation(const uuid & id1, const uuid & id2)
-```
-
-
- Remove an unconformity relationship between two components
-
 ### copy_stratigraphic_relationships
 
 ```cpp
@@ -87,24 +78,6 @@ protected index_t add_above_relation(const ComponentID & above, const ComponentI
 
 
  Adds a new relationship of type above-under between two components
-
-### add_erosion_relation
-
-```cpp
-protected index_t add_erosion_relation(const ComponentID & erosion, const ComponentID & eroded)
-```
-
-
- Adds a new unconformity relationship of erosion type between two components
-
-### add_baselap_relation
-
-```cpp
-protected index_t add_baselap_relation(const ComponentID & baselap_top, const ComponentID & baselap)
-```
-
-
- Adds a new unconformity relationship of baselap type between two components
 
 
 

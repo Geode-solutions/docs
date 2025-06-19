@@ -138,7 +138,7 @@ public const uuid & create_horizon(HorizonsBuilderKey key)
 ### create_horizon
 
 ```cpp
-public const uuid & create_horizon(typename Horizon<dimension>::HORIZON_TYPE type, HorizonsBuilderKey key)
+public const uuid & create_horizon(CONTACT_TYPE contact_type, HorizonsBuilderKey key)
 ```
 
 
@@ -152,7 +152,7 @@ public void create_horizon(uuid horizon_id, HorizonsBuilderKey key)
 ### create_horizon
 
 ```cpp
-public void create_horizon(uuid horizon_id, typename Horizon<dimension>::HORIZON_TYPE type, HorizonsBuilderKey key)
+public void create_horizon(uuid horizon_id, CONTACT_TYPE contact_type, HorizonsBuilderKey key)
 ```
 
 
@@ -187,13 +187,13 @@ public Horizon<dimension> & modifiable_horizon(const uuid & id, HorizonsBuilderK
 ### create_horizon
 
 ```cpp
-public const uuid & create_horizon(typename Horizon<dimension>::HORIZON_TYPE type, HorizonsBuilderKey key)
+public const uuid & create_horizon(CONTACT_TYPE contact_type, HorizonsBuilderKey key)
 ```
 
 ### create_horizon
 
 ```cpp
-public void create_horizon(uuid horizon_id, typename Horizon<dimension>::HORIZON_TYPE type, HorizonsBuilderKey key)
+public void create_horizon(uuid horizon_id, CONTACT_TYPE contact_type, HorizonsBuilderKey key)
 ```
 
 

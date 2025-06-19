@@ -55,20 +55,6 @@ public std::optional<uuid> under(const uuid & element)
 ```
 
 
-### is_conformal_above
-
-```cpp
-public bool is_conformal_above(const uuid & element)
-```
-
-
-### is_conformal_under
-
-```cpp
-public bool is_conformal_under(const uuid & element)
-```
-
-
 ### save_stratigraphic_relationships
 
 ```cpp
@@ -96,20 +82,6 @@ public index_t add_above_relation(const ComponentID & above, const ComponentID &
 
  Adds a new relationship of type above-under between two components
 
-### add_erosion_relation
-
-```cpp
-public index_t add_erosion_relation(const ComponentID & erosion, const ComponentID & eroded, StratigraphicRelationshipsBuilderKey )
-```
-
-
-### add_baselap_relation
-
-```cpp
-public index_t add_baselap_relation(const ComponentID & baselap_top, const ComponentID & baselap, StratigraphicRelationshipsBuilderKey )
-```
-
-
 ### remove_relation
 
 ```cpp
@@ -127,15 +99,6 @@ public void remove_above_relation(const uuid & id1, const uuid & id2, Stratigrap
 
 
  Removes any above/under relationship between two components
-
-### remove_unconformity_relation
-
-```cpp
-public void remove_unconformity_relation(const uuid & id1, const uuid & id2, StratigraphicRelationshipsBuilderKey )
-```
-
-
- Removes any unconformity relationship between two components
 
 ### copy_stratigraphic_relationships
 
@@ -162,20 +125,6 @@ protected void StratigraphicRelationships(StratigraphicRelationships && other)
 
 ```cpp
 protected StratigraphicRelationships & operator=(StratigraphicRelationships && other)
-```
-
-
-### is_eroded_by
-
-```cpp
-protected bool is_eroded_by(const uuid & eroded, const uuid & erosion)
-```
-
-
-### is_baselap_of
-
-```cpp
-protected bool is_baselap_of(const uuid & baselap, const uuid & baselap_top)
 ```
 
 

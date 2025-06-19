@@ -29,10 +29,10 @@ public void load_horizons(basic_string_view directory)
 ```
 
 
-### set_horizon_type
+### set_horizon_contact_type
 
 ```cpp
-public void set_horizon_type(const uuid & horizon_id, typename Horizon<dimension>::HORIZON_TYPE type)
+public void set_horizon_contact_type(const uuid & horizon_id, CONTACT_TYPE contact_type)
 ```
 
 
@@ -60,7 +60,7 @@ protected const uuid & create_horizon()
 ### create_horizon
 
 ```cpp
-protected const uuid & create_horizon(typename Horizon<dimension>::HORIZON_TYPE type)
+protected const uuid & create_horizon(CONTACT_TYPE type)
 ```
 
 
@@ -74,7 +74,7 @@ protected void create_horizon(uuid horizon_id)
 ### create_horizon
 
 ```cpp
-protected void create_horizon(uuid horizon_id, typename Horizon<dimension>::HORIZON_TYPE type)
+protected void create_horizon(uuid horizon_id, CONTACT_TYPE type)
 ```
 
 
@@ -85,22 +85,22 @@ protected void delete_horizon(const Horizon<dimension> & horizon)
 ```
 
 
-### set_horizon_type
+### set_horizon_contact_type
 
 ```cpp
-public void set_horizon_type(const uuid & horizon_id, typename Horizon<dimension>::HORIZON_TYPE type)
+public void set_horizon_contact_type(const uuid & horizon_id, CONTACT_TYPE contact_type)
 ```
 
 ### create_horizon
 
 ```cpp
-protected const uuid & create_horizon(typename Horizon<dimension>::HORIZON_TYPE type)
+protected const uuid & create_horizon(CONTACT_TYPE type)
 ```
 
 ### create_horizon
 
 ```cpp
-protected void create_horizon(uuid horizon_id, typename Horizon<dimension>::HORIZON_TYPE type)
+protected void create_horizon(uuid horizon_id, CONTACT_TYPE type)
 ```
 
 

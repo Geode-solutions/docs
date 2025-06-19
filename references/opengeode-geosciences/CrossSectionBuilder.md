@@ -127,7 +127,7 @@ public const uuid & add_horizon()
 ### add_horizon
 
 ```cpp
-public const uuid & add_horizon(typename Horizon2D::HORIZON_TYPE type)
+public const uuid & add_horizon(typename Horizon2D::CONTACT_TYPE contact_type)
 ```
 
 
@@ -141,7 +141,7 @@ public void add_horizon(const uuid & horizon_id)
 ### add_horizon
 
 ```cpp
-public void add_horizon(const uuid & horizon_id, typename Horizon2D::HORIZON_TYPE type)
+public void add_horizon(const uuid & horizon_id, typename Horizon2D::CONTACT_TYPE contact_type)
 ```
 
 

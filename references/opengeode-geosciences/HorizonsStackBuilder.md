@@ -159,20 +159,6 @@ public void set_horizon_under(const Horizon<dimension> & horizon_under, const St
 ```
 
 
-### set_as_erosion_above
-
-```cpp
-public void set_as_erosion_above(const Horizon<dimension> & erosion_horizon, const StratigraphicUnit<dimension> & eroded_unit)
-```
-
-
-### set_as_baselap_under
-
-```cpp
-public void set_as_baselap_under(const Horizon<dimension> & baselap_horizon, const StratigraphicUnit<dimension> & baselaping_unit)
-```
-
-
 ### remove_horizon
 
 ```cpp
