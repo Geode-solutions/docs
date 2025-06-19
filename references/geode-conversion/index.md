@@ -24,6 +24,7 @@ const name = words.join('-');
 ## Records
 
 * [BRepBuildTopologyParameters](BRepBuildTopologyParameters.md)
+* [BlockRelationships](BlockRelationships.md)
 * [BlocksBuilderFromSolid](BlocksBuilderFromSolid.md)
 * [ConversionModelLibrary](ConversionModelLibrary.md)
 * [IndexToBRepMeshElementsMapping](IndexToBRepMeshElementsMapping.md)
@@ -160,10 +161,24 @@ ModelMappings remove_sharp_features(BRep & model)
 
 **model** [in] Section
 
+### determine_blocks
+
+```cpp
+vector determine_blocks(const BRep & brep)
+```
+
+
 ### build_blocks
 
 ```cpp
-void build_blocks(BRep & brep)
+vector build_blocks(const BRep & brep, BRepBuilder & builder, Span blocks_to_build)
+```
+
+
+### build_blocks
+
+```cpp
+void build_blocks(const BRep & brep, BRepBuilder & builder)
 ```
 
 
