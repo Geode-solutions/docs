@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from InserterOrchestrator
+Inherits from InserterOrchestrator<TriangulatedSurface3D>
 ```
 
 
@@ -26,13 +26,6 @@ Inherits from InserterOrchestrator
 
 ```cpp
 public void PolygonOrchestrator(class BackgroundSolidInserter::Impl & inserter, ProgressLogger & logger, const TriangulatedSurface3D & surface_mesh)
-```
-
-
-### insert_vertices
-
-```cpp
-public void insert_vertices(Span elements)
 ```
 
 

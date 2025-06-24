@@ -26,7 +26,7 @@ public void Skin(const BackgroundSurface & surface, const BackgroundSurfaceModif
 ### skin
 
 ```cpp
-public const std::unique_ptr<geode::EdgedCurve2D> & skin()
+public const geode::EdgedCurve2D & skin()
 ```
 
 

@@ -11,21 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class EdgeOrchestrator
+# struct BackgroundEdgeVertices
 
+
+## Members
 
 ```cpp
-Inherits from InserterOrchestrator<EdgedCurve3D>
+public array mesh_vertices
+
+```
+
+```cpp
+public array background_vertices
+
 ```
 
 
 
 ## Functions
 
-### EdgeOrchestrator
+### BackgroundEdgeVertices
 
 ```cpp
-public void EdgeOrchestrator(class BackgroundSolidInserter::Impl & inserter, ProgressLogger & logger, const EdgedCurve3D & curve_mesh)
+public void BackgroundEdgeVertices()
+```
+
+
+### update_vertices
+
+```cpp
+public void update_vertices(const VerticesModifier & modifier)
 ```
 
 

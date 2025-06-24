@@ -25,28 +25,28 @@ Inherits from Orchestrator<index_t>
 ### InserterOrchestrator
 
 ```cpp
-public void InserterOrchestrator(const InserterOrchestrator & )
+public void InserterOrchestrator<Mesh>(const InserterOrchestrator<Mesh> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public InserterOrchestrator & operator=(const InserterOrchestrator & )
+public InserterOrchestrator<Mesh> & operator=(const InserterOrchestrator<Mesh> & )
 ```
 
 
 ### InserterOrchestrator
 
 ```cpp
-public void InserterOrchestrator(InserterOrchestrator && )
+public void InserterOrchestrator<Mesh>(InserterOrchestrator<Mesh> && )
 ```
 
 
 ### operator=
 
 ```cpp
-public InserterOrchestrator & operator=(InserterOrchestrator && )
+public InserterOrchestrator<Mesh> & operator=(InserterOrchestrator<Mesh> && )
 ```
 
 
@@ -57,10 +57,17 @@ public ElementInsertionInfo && output_insertion_info()
 ```
 
 
+### insert_vertices
+
+```cpp
+public void insert_vertices(Span elements)
+```
+
+
 ### InserterOrchestrator
 
 ```cpp
-protected void InserterOrchestrator(ProgressLogger & logger)
+protected void InserterOrchestrator<Mesh>(class BackgroundSolidInserter::Impl & inserter, ProgressLogger & logger, const Mesh & mesh)
 ```
 
 
@@ -68,12 +75,6 @@ protected void InserterOrchestrator(ProgressLogger & logger)
 
 ```cpp
 protected void do_process_element(const Element & element)
-```
-
-### insert_vertices
-
-```cpp
-protected void insert_vertices(Span elements)
 ```
 
 ### skip_element
@@ -101,6 +102,27 @@ protected index_t nb_levels()
 
 ```cpp
 protected ElementInsertionInfo & insertion_info()
+```
+
+
+### inserter
+
+```cpp
+protected class BackgroundSolidInserter::Impl & inserter()
+```
+
+
+### mesh
+
+```cpp
+protected const Mesh & mesh()
+```
+
+
+### mesh_vertex_to_background_vertex
+
+```cpp
+protected Span mesh_vertex_to_background_vertex()
 ```
 
 
