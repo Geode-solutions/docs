@@ -47,7 +47,7 @@ public bool is_model_construction_possible()
 ### build
 
 ```cpp
-public StructuralModel build(const PillarStructuralModelOptions & options)
+public tuple build(const PillarStructuralModelOptions & options)
 ```
 
 
