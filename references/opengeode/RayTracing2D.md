@@ -11,56 +11,56 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class RayTracing3D
+# class RayTracing2D
 
 
 ## Records
 
-PolygonDistance
+EdgeDistance
 
 
 
 ## Functions
 
-### RayTracing3D
+### RayTracing2D
 
 ```cpp
-public void RayTracing3D(const SurfaceMesh3D & mesh, const Ray3D & ray)
+public void RayTracing2D(const EdgedCurve2D & mesh, const Ray2D & ray)
 ```
 
 
-### RayTracing3D
+### RayTracing2D
 
 ```cpp
-public void RayTracing3D(const SurfaceMesh3D & mesh, const InfiniteLine3D & infinite_line)
+public void RayTracing2D(const EdgedCurve2D & mesh, const InfiniteLine2D & infinite_line)
 ```
 
 
-### RayTracing3D
+### RayTracing2D
 
 ```cpp
-public void RayTracing3D(RayTracing3D && other)
+public void RayTracing2D(RayTracing2D && other)
 ```
 
 
-### ~RayTracing3D
+### ~RayTracing2D
 
 ```cpp
-public void ~RayTracing3D()
+public void ~RayTracing2D()
 ```
 
 
-### closest_polygon
+### closest_edge
 
 ```cpp
-public optional closest_polygon()
+public optional closest_edge()
 ```
 
 
-### closest_polygons
+### closest_edges
 
 ```cpp
-public optional closest_polygons(index_t nb_closest_wanted)
+public optional closest_edges(index_t nb_closest_wanted)
 ```
 
 
@@ -74,7 +74,7 @@ public vector all_intersections()
 ### operator()
 
 ```cpp
-public bool operator()(index_t polygon_id)
+public bool operator()(index_t edge_id)
 ```
 
 

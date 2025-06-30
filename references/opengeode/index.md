@@ -282,6 +282,7 @@ const name = words.join('-');
 * [RasterImageInput](RasterImageInput.md)
 * [RasterImageOutput](RasterImageOutput.md)
 * [RasterImage](RasterImage.md)
+* [RayTracing2D](RayTracing2D.md)
 * [RayTracing3D](RayTracing3D.md)
 * [Ray](Ray.md)
 * [ReadOnlyAttribute](ReadOnlyAttribute.md)
@@ -1901,26 +1902,6 @@ bool is_polygonal_surface_loadable(basic_string_view filename)
 ```
 
 
-### save_edged_curve
-
-```cpp
-vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
- API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
-
-**edged_curve** [in] EdgedCurve to save.
-
-**filename** [in] Path to the file where save the EdgedCurve.
-
-### is_edged_curve_saveable
-
-```cpp
-bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
 ### load_regular_grid
 
 ```cpp
@@ -2064,6 +2045,26 @@ bool is_light_regular_grid_loadable(basic_string_view filename)
 
 ```cpp
 void register_geode_mesh_output()
+```
+
+
+### save_edged_curve
+
+```cpp
+vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
+ API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
+
+**edged_curve** [in] EdgedCurve to save.
+
+**filename** [in] Path to the file where save the EdgedCurve.
+
+### is_edged_curve_saveable
+
+```cpp
+bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
 ```
 
 
@@ -2773,6 +2774,127 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 ```
 
 
+### point_segment_projection
+
+```cpp
+Point<dimension> point_segment_projection(const Point<dimension> & point, const Segment<dimension> & segment)
+```
+
+
+ Return the projection of a point on a segment
+
+**point** [in] the point to project
+
+**segment** [in] the segment
+
+### point_line_projection
+
+```cpp
+Point<dimension> point_line_projection(const Point<dimension> & point, const InfiniteLine<dimension> & line)
+```
+
+
+ Return the projection of a point on a line
+
+**point** [in] the point to project
+
+**line** [in] the line
+
+### point_triangle_projection
+
+```cpp
+Point<dimension> point_triangle_projection(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+
+ Return the projection of a point on a triangle
+
+**point** [in] the point to project
+
+**triangle** [in] the triangle
+
+### point_plane_projection
+
+```cpp
+Point point_plane_projection(const Point3D & point, const Plane & plane)
+```
+
+
+ Return the projection of a point on a plane
+
+**point** [in] the point to project
+
+**plane** [in] the plane
+
+### tetrahedron_volume_sign
+
+```cpp
+SIDE tetrahedron_volume_sign(const Tetrahedron & tetra)
+```
+
+
+ Return the sign of a tetrahedron volume.
+
+### triangle_area_sign
+
+```cpp
+SIDE triangle_area_sign(const Triangle2D & triangle)
+```
+
+
+ Return the sign of a 2D triangle area.
+
+### polygon_area_sign
+
+```cpp
+SIDE polygon_area_sign(const Polygon2D & polygon)
+```
+
+
+### triangle_area_sign
+
+```cpp
+SIDE triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
+```
+
+
+ Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
+
+### point_triangle_distance
+
+```cpp
+tuple point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_triangle_distance
+
+```cpp
+tuple point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### Bisector
+
+```cpp
+double Bisector(const geode::index_t number_of_components, const std::array<double, dimension> & locE, const std::array<double, dimension> & locY, std::array<double, dimension> & locX)
+```
+
+
+### SqrDistanceSpecial
+
+```cpp
+std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std::array<double, dimension> & extents, const std::array<double, dimension> & query_point_coordinates)
+```
+
+
+### SquaredDistance
+
+```cpp
+std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
+```
+
+
 ### point_segment_position_exact
 
 ```cpp
@@ -2854,120 +2976,6 @@ bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Po
 
 ```cpp
 bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
-
-### point_segment_projection
-
-```cpp
-Point<dimension> point_segment_projection(const Point<dimension> & point, const Segment<dimension> & segment)
-```
-
-
- Return the projection of a point on a segment
-
-**point** [in] the point to project
-
-**segment** [in] the segment
-
-### point_line_projection
-
-```cpp
-Point<dimension> point_line_projection(const Point<dimension> & point, const InfiniteLine<dimension> & line)
-```
-
-
- Return the projection of a point on a line
-
-**point** [in] the point to project
-
-**line** [in] the line
-
-### point_triangle_projection
-
-```cpp
-Point<dimension> point_triangle_projection(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
- Return the projection of a point on a triangle
-
-**point** [in] the point to project
-
-**triangle** [in] the triangle
-
-### point_plane_projection
-
-```cpp
-Point point_plane_projection(const Point3D & point, const Plane & plane)
-```
-
-
- Return the projection of a point on a plane
-
-**point** [in] the point to project
-
-**plane** [in] the plane
-
-### tetrahedron_volume_sign
-
-```cpp
-SIDE tetrahedron_volume_sign(const Tetrahedron & tetra)
-```
-
-
- Return the sign of a tetrahedron volume.
-
-### triangle_area_sign
-
-```cpp
-SIDE triangle_area_sign(const Triangle2D & triangle)
-```
-
-
- Return the sign of a 2D triangle area.
-
-### triangle_area_sign
-
-```cpp
-SIDE triangle_area_sign(const Triangle3D & triangle, local_index_t axis)
-```
-
-
- Return the sign of a 3D triangle area aligned on X- Y- or Z-axis.
-
-### point_triangle_distance
-
-```cpp
-tuple point_triangle_distance(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_triangle_distance
-
-```cpp
-tuple point_triangle_distance(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### Bisector
-
-```cpp
-double Bisector(const geode::index_t number_of_components, const std::array<double, dimension> & locE, const std::array<double, dimension> & locY, std::array<double, dimension> & locX)
-```
-
-
-### SqrDistanceSpecial
-
-```cpp
-std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std::array<double, dimension> & extents, const std::array<double, dimension> & query_point_coordinates)
-```
-
-
-### SquaredDistance
-
-```cpp
-std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
 ```
 
 
@@ -3300,41 +3308,6 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### find_intersections_with_boundaries
-
-```cpp
-flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
-```
-
-
-### is_point_inside_block
-
-```cpp
-bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
-```
-
-
-### block_containing_point
-
-```cpp
-optional block_containing_point(const BRep & brep, const Point3D & point)
-```
-
-
 ### convert_surface_mesh
 
 ```cpp
@@ -3500,6 +3473,55 @@ FixedArray brep_active_coordinate_reference_systems(const BRep & brep)
 
 ```cpp
 FixedArray section_active_coordinate_reference_systems(const Section & section)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### find_intersections_with_boundaries
+
+```cpp
+flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
+```
+
+
+### is_point_inside_block
+
+```cpp
+bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
+```
+
+
+### block_containing_point
+
+```cpp
+optional block_containing_point(const BRep & brep, const Point3D & point)
+```
+
+
+### is_point_inside_surface
+
+```cpp
+bool is_point_inside_surface(const Section & section, const Surface2D & surface, const Point2D & point)
+```
+
+
+### surface_containing_point
+
+```cpp
+optional surface_containing_point(const Section & section, const Point2D & point)
 ```
 
 
