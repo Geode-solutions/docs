@@ -17,7 +17,9 @@ const name = words.join('-');
 
 ## Records
 
-* [CrossSectionSurfaceImpliciter](CrossSectionSurfaceImpliciter.md)
+* [BRepBlockImpliciter](BRepBlockImpliciter.md)
+* [BlockImplicitInfo](BlockImplicitInfo.md)
+* [CrossSectionSequenceImpliciter](CrossSectionSequenceImpliciter.md)
 * [CutSolidGrid](CutSolidGrid.md)
 * [CutSurfaceGridOutput](CutSurfaceGridOutput.md)
 * [CutSurfaceGrid](CutSurfaceGrid.md)
@@ -27,9 +29,11 @@ const name = words.join('-');
 * [ImplicitSVGInput](ImplicitSVGInput.md)
 * [ScalarFunctionComputer2D](ScalarFunctionComputer2D.md)
 * [ScalarFunctionComputer3D](ScalarFunctionComputer3D.md)
+* [SectionSurfaceImpliciter](SectionSurfaceImpliciter.md)
 * [SingleSurfaceImplicitation](SingleSurfaceImplicitation.md)
 * [StratigraphicLSOInput](StratigraphicLSOInput.md)
-* [StructuralModelBlockImpliciter](StructuralModelBlockImpliciter.md)
+* [StructuralModelSequenceImpliciter](StructuralModelSequenceImpliciter.md)
+* [SurfaceImplicitInfo](SurfaceImplicitInfo.md)
 * [VTPCutSurfaceGridOutput](VTPCutSurfaceGridOutput.md)
 
 

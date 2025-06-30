@@ -27,6 +27,7 @@ const name = words.join('-');
 * [BRepMappings](BRepMappings.md)
 * [BoxModelFromTopography](BoxModelFromTopography.md)
 * [ClosedSurfacesFromCurves](ClosedSurfacesFromCurves.md)
+* [CrossSectionImplicitationParameters](CrossSectionImplicitationParameters.md)
 * [CrossSectionImpliciter](CrossSectionImpliciter.md)
 * [EdgeVertex](EdgeVertex.md)
 * [GridScalarFunctionExpliciter2D](GridScalarFunctionExpliciter2D.md)

@@ -19,7 +19,7 @@ const name = words.join('-');
 ### CrossSectionImpliciter
 
 ```cpp
-public void CrossSectionImpliciter(CrossSection && cross_section)
+public void CrossSectionImpliciter(CrossSection && cross_section, HorizonsStack2D && horizons_stack)
 ```
 
 
@@ -65,13 +65,6 @@ public const HorizonsStack2D & horizons_stack()
 ```
 
 
-### horizons_stack_builder
-
-```cpp
-public HorizonsStackBuilder horizons_stack_builder()
-```
-
-
 ### set_stratigraphic_unit_thickness
 
 ```cpp
@@ -79,17 +72,17 @@ public void set_stratigraphic_unit_thickness(const StratigraphicUnit2D & strati_
 ```
 
 
-### add_horizon_data_pointset_in_surface
+### add_horizon_data_points
 
 ```cpp
-public void add_horizon_data_pointset_in_surface(const Surface2D & surface, const Horizon2D & horizon, const PointSet2D & pointset, double weight)
+public void add_horizon_data_points(const Horizon2D & horizon, const PointSet2D & pointset, double weight)
 ```
 
 
 ### build
 
 ```cpp
-public ImplicitCrossSection build(const ImplicitationParameters & computation_parameters)
+public ImplicitCrossSection build(const CrossSectionImplicitationParameters & computation_parameters)
 ```
 
 

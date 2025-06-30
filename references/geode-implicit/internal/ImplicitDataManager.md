@@ -43,28 +43,28 @@ Inherits from DataPointsManager<dimension>
 ### ImplicitDataManager
 
 ```cpp
-public void ImplicitDataManager<dimension>()
+public void ImplicitDataManager<>()
 ```
 
 
 ### ImplicitDataManager
 
 ```cpp
-public void ImplicitDataManager<dimension>(ImplicitDataManager<dimension> && other)
+public void ImplicitDataManager<>(ImplicitDataManager<dimension> && other)
 ```
 
 
 ### ~ImplicitDataManager
 
 ```cpp
-public void ~ImplicitDataManager<dimension>()
+public void ~ImplicitDataManager<>()
 ```
 
 
-### add_data_mesh_points
+### add_data_point
 
 ```cpp
-public void add_data_mesh_points(const uuid & data_id, const BoundingBox<dimension> & voi_box, const Mesh & data_mesh, double weight)
+public index_t add_data_point(const Point<dimension> & position, const uuid & data_id, double weight)
 ```
 
 
@@ -72,6 +72,13 @@ public void add_data_mesh_points(const uuid & data_id, const BoundingBox<dimensi
 
 ```cpp
 public void set_data_value(const uuid & data_id, double value)
+```
+
+
+### nb_data_values
+
+```cpp
+public index_t nb_data_values()
 ```
 
 
@@ -85,7 +92,7 @@ public double data_point_value(index_t data_point_index)
 ### data_value_from_uuid
 
 ```cpp
-public double data_value_from_uuid(const uuid & data_id)
+public optional data_value_from_uuid(const uuid & data_id)
 ```
 
 

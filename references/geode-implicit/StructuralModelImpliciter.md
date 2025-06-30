@@ -19,13 +19,6 @@ const name = words.join('-');
 ### StructuralModelImpliciter
 
 ```cpp
-public void StructuralModelImpliciter(StructuralModel && structural_model)
-```
-
-
-### StructuralModelImpliciter
-
-```cpp
 public void StructuralModelImpliciter(StructuralModel && structural_model, HorizonsStack3D && horizons_stack)
 ```
 
@@ -72,13 +65,6 @@ public const HorizonsStack3D & horizons_stack()
 ```
 
 
-### horizons_stack_builder
-
-```cpp
-public HorizonsStackBuilder horizons_stack_builder()
-```
-
-
 ### set_stratigraphic_unit_thickness
 
 ```cpp
@@ -86,31 +72,24 @@ public void set_stratigraphic_unit_thickness(const StratigraphicUnit3D & strati_
 ```
 
 
-### add_horizon_data_points_in_block
+### add_horizon_data_points
 
 ```cpp
-public void add_horizon_data_points_in_block(const Block3D & block, const Horizon3D & horizon, const PointSet3D & pointset, double weight)
+public void add_horizon_data_points(const Horizon3D & horizon, const PointSet3D & data_points, double weight)
 ```
 
 
-### add_horizon_data_points_in_model
+### add_horizon_data_curve
 
 ```cpp
-public void add_horizon_data_points_in_model(const Horizon3D & horizon, const PointSet3D & data_points, double weight)
+public void add_horizon_data_curve(const Horizon3D & horizon, const EdgedCurve3D & data_curve, double weight)
 ```
 
 
-### add_horizon_data_curve_in_model
+### add_horizon_data_surface
 
 ```cpp
-public void add_horizon_data_curve_in_model(const Horizon3D & horizon, const EdgedCurve3D & data_curve, double weight)
-```
-
-
-### add_horizon_data_surface_in_model
-
-```cpp
-public void add_horizon_data_surface_in_model(const Horizon3D & horizon, const SurfaceMesh3D & data_surface, double weight)
+public void add_horizon_data_surface(const Horizon3D & horizon, const SurfaceMesh3D & data_surface, double weight)
 ```
 
 
