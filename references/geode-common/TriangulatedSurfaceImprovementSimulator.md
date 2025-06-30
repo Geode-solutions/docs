@@ -11,7 +11,13 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class TriangulatedSurfaceImprovementSimulator2D
+# class TriangulatedSurfaceImprovementSimulator
+
+
+# class TriangulatedSurfaceImprovementSimulator
+
+
+# class TriangulatedSurfaceImprovementSimulator
 
 
 ## Records
@@ -22,10 +28,10 @@ TrianglesMetrics
 
 ## Functions
 
-### ~TriangulatedSurfaceImprovementSimulator2D
+### ~TriangulatedSurfaceImprovementSimulator
 
 ```cpp
-public void ~TriangulatedSurfaceImprovementSimulator2D()
+public void ~TriangulatedSurfaceImprovementSimulator<dimension>()
 ```
 
 
@@ -44,13 +50,13 @@ public bool is_better_after_simulation(const TrianglesMetrics & triangles_metric
 ### metric
 
 ```cpp
-public double metric(const Triangle2D & triangle)
+public double metric(const Triangle<dimension> & triangle)
 ```
 
-### TriangulatedSurfaceImprovementSimulator2D
+### TriangulatedSurfaceImprovementSimulator
 
 ```cpp
-protected void TriangulatedSurfaceImprovementSimulator2D()
+protected void TriangulatedSurfaceImprovementSimulator<dimension>()
 ```
 
 

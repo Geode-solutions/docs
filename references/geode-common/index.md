@@ -174,7 +174,8 @@ const name = words.join('-');
 * [TrianglesAfter](TrianglesAfter.md)
 * [TrianglesModifier](TrianglesModifier.md)
 * [TriangulatedSurfaceEpsilonModifier](TriangulatedSurfaceEpsilonModifier.md)
-* [TriangulatedSurfaceImprovementSimulator2D](TriangulatedSurfaceImprovementSimulator2D.md)
+* [TriangulatedSurfaceHeightImprovementSimulator](TriangulatedSurfaceHeightImprovementSimulator.md)
+* [TriangulatedSurfaceImprovementSimulator](TriangulatedSurfaceImprovementSimulator.md)
 * [TriangulatedSurfaceModifier](TriangulatedSurfaceModifier.md)
 * [VerticesModifier](VerticesModifier.md)
 
@@ -1698,14 +1699,14 @@ vector determine_cuts(const TetrahedralSolid3D & solid, const Plane & plane, Spa
 ### does_collapse_edge_improve_metric
 
 ```cpp
-bool does_collapse_edge_improve_metric(const TriangulatedSurface2D & surface, const PolygonEdge & edge, const Point2D & collapse_point, const TriangulatedSurfaceImprovementSimulator2D & improvement_simulator)
+bool does_collapse_edge_improve_metric(const TriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const Point<dimension> & collapse_point, const TriangulatedSurfaceImprovementSimulator<dimension> & improvement_simulator)
 ```
 
 
 ### does_swap_edge_improve_metric
 
 ```cpp
-bool does_swap_edge_improve_metric(const TriangulatedSurface2D & surface, const PolygonEdge & edge, const TriangulatedSurfaceImprovementSimulator2D & improvement_simulator)
+bool does_swap_edge_improve_metric(const TriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const TriangulatedSurfaceImprovementSimulator<dimension> & improvement_simulator)
 ```
 
 
