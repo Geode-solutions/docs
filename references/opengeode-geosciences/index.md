@@ -511,5 +511,12 @@ bool is_stratigraphic_model_loadable(basic_string_view filename)
 ```
 
 
+### build_structural_model_fault_blocks
+
+```cpp
+void build_structural_model_fault_blocks(StructuralModel & structural_model)
+```
+
+
 
 
