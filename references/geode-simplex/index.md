@@ -30,6 +30,7 @@ const name = words.join('-');
 * [BRepRemeshWithoutBlockValidity](BRepRemeshWithoutBlockValidity.md)
 * [BrepSurfacesRemeshValidity](BrepSurfacesRemeshValidity.md)
 * [GeometricSurfacePath](GeometricSurfacePath.md)
+* [OpenGeodeRemeshDataException](OpenGeodeRemeshDataException.md)
 * [PolygonEdge](PolygonEdge.md)
 * [RemeshingData](RemeshingData.md)
 * [SamplingData](SamplingData.md)
