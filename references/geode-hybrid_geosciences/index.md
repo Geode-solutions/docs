@@ -18,7 +18,12 @@ const name = words.join('-');
 ## Records
 
 * [HybridGeosciencesPillarLibrary](HybridGeosciencesPillarLibrary.md)
+* [LinesInspectionResult](LinesInspectionResult.md)
+* [MultiZInspectionResult](MultiZInspectionResult.md)
 * [PillarStructuralModelBuilder](PillarStructuralModelBuilder.md)
+* [PillarStructuralModelException](PillarStructuralModelException.md)
+* [PillarStructuralModelInspectionResult](PillarStructuralModelInspectionResult.md)
 * [PillarStructuralModelOptions](PillarStructuralModelOptions.md)
+* [PointsOutsideTopographyInspectionResult](PointsOutsideTopographyInspectionResult.md)
 
 

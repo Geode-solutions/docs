@@ -40,7 +40,7 @@ public void ~PillarStructuralModelBuilder()
 ### is_model_construction_possible
 
 ```cpp
-public bool is_model_construction_possible()
+public const PillarStructuralModelInspectionResult & is_model_construction_possible()
 ```
 
 
