@@ -31,6 +31,11 @@ public typename Modifier<Mesh>::type modifier
 
 ```
 
+```cpp
+public bool active_for_geometrical_computation
+
+```
+
 
 
 ## Functions
@@ -39,6 +44,13 @@ public typename Modifier<Mesh>::type modifier
 
 ```cpp
 public void MeshTools<Mesh>(std::unique_ptr<Mesh> mesh_in)
+```
+
+
+### MeshTools
+
+```cpp
+public void MeshTools<Mesh>(std::unique_ptr<Mesh> mesh_in, bool active)
 ```
 
 
