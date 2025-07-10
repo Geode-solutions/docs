@@ -1696,6 +1696,12 @@ vector determine_cuts(const TetrahedralSolid3D & solid, const Plane & plane, Spa
 ```
 
 
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
+
 ### does_collapse_edge_improve_metric
 
 ```cpp
@@ -1709,12 +1715,6 @@ bool does_collapse_edge_improve_metric(const TriangulatedSurface<dimension> & su
 bool does_swap_edge_improve_metric(const TriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const TriangulatedSurfaceImprovementSimulator<dimension> & improvement_simulator)
 ```
 
-
-### minimal_metric
-
-```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
-```
 
 ### mesh_partitionner
 

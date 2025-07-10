@@ -15,6 +15,13 @@ const name = words.join('-');
 
 
 
+## Records
+
+* [DistanceToTetrahedron](DistanceToTetrahedron.md)
+* [EdgeDistance](EdgeDistance.md)
+* [TriangleDistance](TriangleDistance.md)
+
+
 ## Functions
 
 ### tetrahedra_after_split_split_collapse
@@ -125,6 +132,13 @@ optional snapping_detection(const SolidMesh<dimension> & solid, const Polyhedron
 ```
 
 
+### find_containing_triangle
+
+```cpp
+optional find_containing_triangle(const Point<dimension> & point, const TriangulatedSurface<dimension> & surface, const TriangulatedSurfaceModifier<dimension> & modifier, const index_t mesh_initial_tri_id)
+```
+
+
 ### snapping_detection
 
 ```cpp
@@ -139,6 +153,13 @@ optional snapping_detection(const SurfaceMesh<dimension> & surface, const Polygo
 ```
 
 
+### find_containing_edge
+
+```cpp
+optional find_containing_edge(const Point1D & point, const EdgedCurve1D & line, const EdgedCurveModifier1D & modifier_, const index_t initial_edge_id)
+```
+
+
 ### snapping_detection
 
 ```cpp
@@ -150,6 +171,13 @@ optional snapping_detection(const EdgedCurve<dimension> & curve, index_t edge, c
 
 ```cpp
 flat_hash_map triangles_after_collapse_edge(const Section & section, const struct SectionComponentMeshEdges::SurfaceEdges & surface_edges, const Point2D & point)
+```
+
+
+### find_containing_tetrahedron
+
+```cpp
+optional find_containing_tetrahedron(const Point3D & point, const TetrahedralSolid3D & solid, const TetrahedralSolidModifier & modifier, geode::index_t mesh_initial_tet_id)
 ```
 
 
