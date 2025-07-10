@@ -249,6 +249,13 @@ void remesh_surfaces(BRepRemeshingData & data, Span surfaces_to_remesh)
 ```
 
 
+### target_point
+
+```cpp
+Point<dimension> target_point(const Point<dimension> & prev, const Point<dimension> & last, const Point<dimension> & origin, double target)
+```
+
+
 ### sample_surfaces
 
 ```cpp

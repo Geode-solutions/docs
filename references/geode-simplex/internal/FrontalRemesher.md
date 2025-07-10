@@ -128,13 +128,6 @@ public optional last_active_macro_edge_id(const PolygonEdge & edge, index_t me)
 ```
 
 
-### target_point
-
-```cpp
-protected Point<dimension> target_point(const Point<dimension> & prev, const Point<dimension> & last, const Point<dimension> & origin, double target)
-```
-
-
 ### should_snap_on_macro_edge
 
 ```cpp
