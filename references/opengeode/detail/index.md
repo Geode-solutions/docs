@@ -496,6 +496,48 @@ void copy_vertex_identifier_components(const Model & from, BuilderTo & builder_t
 ```
 
 
+### repair_non_manifold_vertices
+
+```cpp
+GenericMapping repair_non_manifold_vertices(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder)
+```
+
+
+### repair_non_manifold_vertices
+
+```cpp
+GenericMapping repair_non_manifold_vertices(const Model & model, typename Model::Builder & builder, const Surface<Model::dim> & surface)
+```
+
+
+### repair_non_manifold_vertices
+
+```cpp
+GenericMapping repair_non_manifold_vertices(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
+```
+
+
+### count_range_elements
+
+```cpp
+index_t count_range_elements(const Range & range)
+```
+
+
+### section_clone_mapping
+
+```cpp
+ModelMapping section_clone_mapping(const Section & model)
+```
+
+
+### brep_clone_mapping
+
+```cpp
+ModelMapping brep_clone_mapping(const BRep & model)
+```
+
+
 ### transfer_brep_collections
 
 ```cpp
@@ -507,13 +549,6 @@ void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRe
 
 ```cpp
 void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### count_range_elements
-
-```cpp
-index_t count_range_elements(const Range & range)
 ```
 
 
@@ -556,20 +591,6 @@ void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const Su
 
 ```cpp
 void transfer_solids_metadata(Span solids, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### section_clone_mapping
-
-```cpp
-ModelMapping section_clone_mapping(const Section & model)
-```
-
-
-### brep_clone_mapping
-
-```cpp
-ModelMapping brep_clone_mapping(const BRep & model)
 ```
 
 
@@ -632,14 +653,21 @@ ModelMapping copy_to_generic_mappings(const ModelCopyMapping & mappings2)
 ### merge_mappings
 
 ```cpp
-ModelMappings merge_mappings(const ModelMappings & mappings1, const ModelMappings & mappings2)
+SectionMappings merge_mappings(const SectionMappings & mappings1, const SectionMappings & mappings2)
+```
+
+
+### merge_mappings
+
+```cpp
+BRepMappings merge_mappings(const BRepMappings & mappings1, const BRepMappings & mappings2)
 ```
 
 
 ### repair_non_manifold_vertices
 
 ```cpp
-void repair_non_manifold_vertices(Model & model, const Surface<Model::dim> & surface)
+GenericMapping repair_non_manifold_vertices(const BRep & model, BRepBuilder & builder, const Block3D & block)
 ```
 
 

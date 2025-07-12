@@ -30,21 +30,21 @@ SurfaceRange
 ### Surfaces
 
 ```cpp
-public void Surfaces<>(const Surfaces<> & )
+public void Surfaces<dimension>(const Surfaces<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Surfaces<> & operator=(const Surfaces<> & )
+public Surfaces<dimension> & operator=(const Surfaces<dimension> & )
 ```
 
 
 ### ~Surfaces
 
 ```cpp
-public void ~Surfaces<>()
+public void ~Surfaces<dimension>()
 ```
 
 
@@ -107,21 +107,21 @@ public void save_surfaces(basic_string_view directory)
 ### Surfaces
 
 ```cpp
-protected void Surfaces<>()
+protected void Surfaces<dimension>()
 ```
 
 
 ### Surfaces
 
 ```cpp
-protected void Surfaces<>(Surfaces<> && other)
+protected void Surfaces<dimension>(Surfaces<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected Surfaces<> & operator=(Surfaces<> && other)
+protected Surfaces<dimension> & operator=(Surfaces<dimension> && other)
 ```
 
 

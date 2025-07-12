@@ -62,7 +62,7 @@ public void set_active_only()
 ### SurfaceRangeBase
 
 ```cpp
-protected void SurfaceRangeBase(const Surfaces<> & surfaces)
+protected void SurfaceRangeBase(const Surfaces<dimension> & surfaces)
 ```
 
 

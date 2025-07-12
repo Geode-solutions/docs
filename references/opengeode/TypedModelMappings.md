@@ -11,26 +11,12 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ModelMappings
+# struct TypedModelMappings
 
 
-```cpp
-Inherits from ModelComponentMappings
-```
+# struct TypedModelMappings
 
 
-
-## Members
-
-```cpp
-public ModelMeshesElementMapping mesh_element_mapping
-
-```
-
-```cpp
-public ModelMeshesVertexMapping mesh_vertices_mapping
-
-```
-
+# struct TypedModelMappings
 
 

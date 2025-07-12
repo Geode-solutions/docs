@@ -25,7 +25,7 @@ Inherits from SurfaceCollectionRangeBase
 ### SurfaceCollectionRange
 
 ```cpp
-public void SurfaceCollectionRange(const SurfaceCollections<> & boundaries)
+public void SurfaceCollectionRange(const SurfaceCollections<dimension> & boundaries)
 ```
 
 

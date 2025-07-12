@@ -169,6 +169,7 @@ const name = words.join('-');
 * [ModelBoundariesBuilder](ModelBoundariesBuilder.md)
 * [ModelBoundaries](ModelBoundaries.md)
 * [ModelBoundary](ModelBoundary.md)
+* [ModelComponentMappings](ModelComponentMappings.md)
 * [ModelComponentMeshEdges](ModelComponentMeshEdges.md)
 * [ModelComponentMeshPolygons](ModelComponentMeshPolygons.md)
 * [ModelConcatener](ModelConcatener.md)
@@ -297,6 +298,7 @@ const name = words.join('-');
 * [SectionComponentMeshPolygons](SectionComponentMeshPolygons.md)
 * [SectionExtruderOptions](SectionExtruderOptions.md)
 * [SectionInput](SectionInput.md)
+* [SectionMappings](SectionMappings.md)
 * [SectionMeshesElementMapping](SectionMeshesElementMapping.md)
 * [SectionMeshesVertexMapping](SectionMeshesVertexMapping.md)
 * [SectionOutput](SectionOutput.md)
@@ -353,6 +355,9 @@ const name = words.join('-');
 * [TriangulatedSurfacePointFunction](TriangulatedSurfacePointFunction.md)
 * [TriangulatedSurfaceScalarFunction](TriangulatedSurfaceScalarFunction.md)
 * [TriangulatedSurface](TriangulatedSurface.md)
+* [TypedModelMappings](TypedModelMappings.md)
+* [TypedModelMeshesElementMapping](TypedModelMeshesElementMapping.md)
+* [TypedModelMeshesVertexMapping](TypedModelMeshesVertexMapping.md)
 * [UnzipFile](UnzipFile.md)
 * [VariableAttribute](VariableAttribute.md)
 * [Vector](Vector.md)
@@ -1428,6 +1433,26 @@ array safe_segment_barycentric_coordinates(const Point<dimension> & point, const
 
 **return** an array containing the parametric coordinates corresponding to the segment vertices.
 
+### save_section
+
+```cpp
+vector save_section(const Section & section, basic_string_view filename)
+```
+
+
+ API function for saving a Section. The adequate saver is called depending on the given filename extension.
+
+**section** [in] Section to save.
+
+**filename** [in] Path to the file where save the section.
+
+### is_section_saveable
+
+```cpp
+bool is_section_saveable(const Section & section, basic_string_view filename)
+```
+
+
 ### are_mesh_elements_included
 
 ```cpp
@@ -1523,43 +1548,23 @@ bool is_section_loadable(basic_string_view filename)
 ```
 
 
-### save_section
+### save_point_set
 
 ```cpp
-vector save_section(const Section & section, basic_string_view filename)
+vector save_point_set(const PointSet<dimension> & point_set, basic_string_view filename)
 ```
 
 
- API function for saving a Section. The adequate saver is called depending on the given filename extension.
+ API function for saving a PointSet. The adequate saver is called depending on the given filename extension.
 
-**section** [in] Section to save.
+**point_set** [in] PointSet to save.
 
-**filename** [in] Path to the file where save the section.
+**filename** [in] Path to the file where save the PointSet.
 
-### is_section_saveable
-
-```cpp
-bool is_section_saveable(const Section & section, basic_string_view filename)
-```
-
-
-### save_polygonal_surface
+### is_point_set_saveable
 
 ```cpp
-vector save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
-```
-
-
- API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
-
-**edged_curve** [in] PolygonalSurface to save.
-
-**filename** [in] Path to the file where save the PolygonalSurface.
-
-### is_polygonal_surface_saveable
-
-```cpp
-bool is_polygonal_surface_saveable(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
+bool is_point_set_saveable(const PointSet<dimension> & point_set, basic_string_view filename)
 ```
 
 
@@ -1583,41 +1588,41 @@ bool is_vertex_set_saveable(const VertexSet & vertex_set, basic_string_view file
 ```
 
 
-### load_polyhedral_solid
+### load_polygonal_surface
 
 ```cpp
-std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImpl & impl, basic_string_view filename)
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, basic_string_view filename)
 ```
 
 
- API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
 
 **impl** [in] Data structure implementation.
 
 **filename** [in] Path to the file to load.
 
-### load_polyhedral_solid
+### load_polygonal_surface
 
 ```cpp
-std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(basic_string_view filename)
+std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(basic_string_view filename)
 ```
 
 
- API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+ API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
 
 **filename** [in] Path to the file to load.
 
-### check_polyhedral_solid_missing_files
+### check_polygonal_surface_missing_files
 
 ```cpp
-typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(basic_string_view filename)
+typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(basic_string_view filename)
 ```
 
 
-### is_polyhedral_solid_loadable
+### is_polygonal_surface_loadable
 
 ```cpp
-bool is_polyhedral_solid_loadable(basic_string_view filename)
+bool is_polygonal_surface_loadable(basic_string_view filename)
 ```
 
 
@@ -1656,6 +1661,64 @@ MissingFiles check_vertex_set_missing_files(basic_string_view filename)
 
 ```cpp
 bool is_vertex_set_loadable(basic_string_view filename)
+```
+
+
+### save_polygonal_surface
+
+```cpp
+vector save_polygonal_surface(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
+```
+
+
+ API function for saving a PolygonalSurface. The adequate saver is called depending on the given filename extension.        const PolygonalSurface< dimension >& polygonal_surface,
+
+**edged_curve** [in] PolygonalSurface to save.
+
+**filename** [in] Path to the file where save the PolygonalSurface.
+
+### is_polygonal_surface_saveable
+
+```cpp
+bool is_polygonal_surface_saveable(const PolygonalSurface<dimension> & polygonal_surface, basic_string_view filename)
+```
+
+
+### load_polyhedral_solid
+
+```cpp
+std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_polyhedral_solid
+
+```cpp
+std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(basic_string_view filename)
+```
+
+
+ API function for loading an PolyhedralSolid. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_polyhedral_solid_missing_files
+
+```cpp
+typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(basic_string_view filename)
+```
+
+
+### is_polyhedral_solid_loadable
+
+```cpp
+bool is_polyhedral_solid_loadable(basic_string_view filename)
 ```
 
 
@@ -1864,44 +1927,6 @@ bool is_point_set_loadable(basic_string_view filename)
 ```
 
 
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(basic_string_view filename)
-```
-
-
- API function for loading an PolygonalSurface. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_polygonal_surface_missing_files
-
-```cpp
-typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(basic_string_view filename)
-```
-
-
-### is_polygonal_surface_loadable
-
-```cpp
-bool is_polygonal_surface_loadable(basic_string_view filename)
-```
-
-
 ### load_regular_grid
 
 ```cpp
@@ -2105,26 +2130,6 @@ vector save_hybrid_solid(const HybridSolid<dimension> & hybrid_solid, basic_stri
 
 ```cpp
 bool is_hybrid_solid_saveable(const HybridSolid<dimension> & hybrid_solid, basic_string_view filename)
-```
-
-
-### save_point_set
-
-```cpp
-vector save_point_set(const PointSet<dimension> & point_set, basic_string_view filename)
-```
-
-
- API function for saving a PointSet. The adequate saver is called depending on the given filename extension.
-
-**point_set** [in] PointSet to save.
-
-**filename** [in] Path to the file where save the PointSet.
-
-### is_point_set_saveable
-
-```cpp
-bool is_point_set_saveable(const PointSet<dimension> & point_set, basic_string_view filename)
 ```
 
 
@@ -2774,6 +2779,90 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 ```
 
 
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
+```
+
+
+### point_triangle_position_all_zero
+
+```cpp
+POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### compute_determinants
+
+```cpp
+POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_tetrahedron_position_exact
+
+```cpp
+POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
+```
+
+
 ### point_segment_projection
 
 ```cpp
@@ -2892,90 +2981,6 @@ std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std:
 
 ```cpp
 std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
-```
-
-
-### point_triangle_position_all_zero
-
-```cpp
-POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### compute_determinants
-
-```cpp
-POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_tetrahedron_position_exact
-
-```cpp
-POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 

@@ -57,7 +57,7 @@ public void set_surface_active(const uuid & id, bool active)
 ### SurfacesBuilder
 
 ```cpp
-protected void SurfacesBuilder<dimension>(Surfaces<dimension> & surfaces)
+protected void SurfacesBuilder<>(Surfaces<dimension> & surfaces)
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from SurfaceRangeBase
 ### SurfaceRange
 
 ```cpp
-public void SurfaceRange(const Surfaces<> & surfaces)
+public void SurfaceRange(const Surfaces<dimension> & surfaces)
 ```
 
 

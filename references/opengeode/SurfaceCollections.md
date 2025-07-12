@@ -30,21 +30,21 @@ SurfaceCollectionRange
 ### SurfaceCollections
 
 ```cpp
-public void SurfaceCollections<>(const SurfaceCollections<> & )
+public void SurfaceCollections<dimension>(const SurfaceCollections<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public SurfaceCollections<> & operator=(const SurfaceCollections<> & )
+public SurfaceCollections<dimension> & operator=(const SurfaceCollections<dimension> & )
 ```
 
 
 ### ~SurfaceCollections
 
 ```cpp
-public void ~SurfaceCollections<>()
+public void ~SurfaceCollections<dimension>()
 ```
 
 
@@ -100,21 +100,21 @@ public void save_surface_collections(basic_string_view directory)
 ### SurfaceCollections
 
 ```cpp
-protected void SurfaceCollections<>()
+protected void SurfaceCollections<dimension>()
 ```
 
 
 ### SurfaceCollections
 
 ```cpp
-protected void SurfaceCollections<>(SurfaceCollections<> && other)
+protected void SurfaceCollections<dimension>(SurfaceCollections<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected SurfaceCollections<> & operator=(SurfaceCollections<> && other)
+protected SurfaceCollections<dimension> & operator=(SurfaceCollections<dimension> && other)
 ```
 
 

@@ -14,12 +14,13 @@ const name = words.join('-');
 # struct BRepMappings
 
 
-## Members
-
 ```cpp
-public ModelMapping component_mapping
-
+Inherits from ModelComponentMappings
 ```
+
+
+
+## Members
 
 ```cpp
 public BRepMeshesElementMapping mesh_element_mapping

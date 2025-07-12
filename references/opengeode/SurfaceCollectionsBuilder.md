@@ -46,7 +46,7 @@ public void set_surface_collection_active(const uuid & id, bool active)
 ### SurfaceCollectionsBuilder
 
 ```cpp
-protected void SurfaceCollectionsBuilder<dimension>(SurfaceCollections<dimension> & collections)
+protected void SurfaceCollectionsBuilder<>(SurfaceCollections<dimension> & collections)
 ```
 
 
