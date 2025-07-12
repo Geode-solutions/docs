@@ -43,7 +43,6 @@ const name = words.join('-');
 * [ImplicitWorkflowsLibrary](ImplicitWorkflowsLibrary.md)
 * [ImplicitationParameters](ImplicitationParameters.md)
 * [ModelComponentToSectionComponentMapping](ModelComponentToSectionComponentMapping.md)
-* [ModelMappings](ModelMappings.md)
 * [ScalarFunctionComputer](ScalarFunctionComputer.md)
 * [SingleSurfaceFromVertices](SingleSurfaceFromVertices.md)
 * [SolidMeshScalarFunctionExpliciter](SolidMeshScalarFunctionExpliciter.md)

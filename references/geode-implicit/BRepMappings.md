@@ -16,11 +16,6 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public ModelMapping component_mapping
-
-```
-
-```cpp
 public BRepMeshesElementMapping mesh_element_mapping
 
 ```
