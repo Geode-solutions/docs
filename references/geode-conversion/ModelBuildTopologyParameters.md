@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepBuildTopologyParameters
+# struct ModelBuildTopologyParameters
 
 
 ## Members
@@ -25,10 +25,10 @@ public bool merge_components_if_no_boundaries
 
 ## Functions
 
-### BRepBuildTopologyParameters
+### ModelBuildTopologyParameters
 
 ```cpp
-public void BRepBuildTopologyParameters()
+public void ModelBuildTopologyParameters()
 ```
 
 

@@ -15,23 +15,8 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from detail::CornersLinesBuilder<Section>
-```
-
-
-
-# class ModelBuilderFromUniqueVertices
-
-
-```cpp
 Inherits from detail::CornersLinesBuilder<Model>
 ```
-
-
-
-## Records
-
-Parameters
 
 
 
@@ -40,7 +25,7 @@ Parameters
 ### ModelBuilderFromUniqueVertices
 
 ```cpp
-public void ModelBuilderFromUniqueVertices<Model>(Model & model, const Parameters & parameters)
+public void ModelBuilderFromUniqueVertices<Model>(Model & model, const ModelBuildTopologyParameters & parameters)
 ```
 
 
@@ -54,7 +39,7 @@ public void ~ModelBuilderFromUniqueVertices<Model>()
 ### update_model
 
 ```cpp
-public ModelMappings update_model()
+public TypedModelMappings update_model()
 ```
 
 
@@ -79,6 +64,15 @@ protected void build_wireframe_step()
 
 ```cpp
 Inherits from detail::CornersLinesBuilder<BRep>
+```
+
+
+
+# class ModelBuilderFromUniqueVertices
+
+
+```cpp
+Inherits from detail::CornersLinesBuilder<Section>
 ```
 
 

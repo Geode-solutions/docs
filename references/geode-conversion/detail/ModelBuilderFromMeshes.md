@@ -46,7 +46,7 @@ public bool is_corner(index_t wireframe_vertex_id)
 ### build_surfaces
 
 ```cpp
-public ModelMappings build_surfaces()
+public typename TypedModelMappings<Model>::type build_surfaces()
 ```
 
 

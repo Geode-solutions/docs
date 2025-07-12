@@ -39,14 +39,14 @@ public void ~BRepFromMeshesBuilder()
 ### build_brep_without_blocks
 
 ```cpp
-public ModelMappings build_brep_without_blocks()
+public BRepMappings build_brep_without_blocks()
 ```
 
 
 ### build_brep_with_blocks
 
 ```cpp
-public ModelMappings build_brep_with_blocks()
+public BRepMappings build_brep_with_blocks()
 ```
 
 

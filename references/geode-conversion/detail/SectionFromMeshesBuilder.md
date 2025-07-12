@@ -39,7 +39,7 @@ public void ~SectionFromMeshesBuilder()
 ### build_section
 
 ```cpp
-public ModelMappings build_section()
+public SectionMappings build_section()
 ```
 
 
