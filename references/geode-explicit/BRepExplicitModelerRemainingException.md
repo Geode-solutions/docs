@@ -25,7 +25,7 @@ Inherits from OpenGeodeException
 ### BRepExplicitModelerRemainingException
 
 ```cpp
-public void BRepExplicitModelerRemainingException(BRep && brep, ModelMappings && mappings, const ElementGraph & remaining_elements)
+public void BRepExplicitModelerRemainingException(BRep && brep, BRepMappings && mappings, const ElementGraph & remaining_elements)
 ```
 
 
@@ -46,7 +46,7 @@ public const BRep & brep()
 ### mappings
 
 ```cpp
-public const ModelMappings & mappings()
+public const BRepMappings & mappings()
 ```
 
 

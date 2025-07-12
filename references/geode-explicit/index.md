@@ -33,7 +33,6 @@ const name = words.join('-');
 * [ExplicitSectionLibrary](ExplicitSectionLibrary.md)
 * [MeshElements](MeshElements.md)
 * [Meshes](Meshes.md)
-* [ModelMappings](ModelMappings.md)
 * [SectionExplicitModeler](SectionExplicitModeler.md)
 * [uuid](uuid.md)
 

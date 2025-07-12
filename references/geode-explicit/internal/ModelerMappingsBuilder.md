@@ -39,7 +39,7 @@ public void ~ModelerMappingsBuilder<Model, BackgroundMesh>()
 ### mappings_from_background
 
 ```cpp
-public ModelMappings mappings_from_background(const MeshElementsIndices & model_elements, const VertexIndexMapping & vertex_index_mappings, const IndexToModelMeshElementsMapping & index_to_meshes_mappings)
+public typename TypedModelMappings<Model>::type mappings_from_background(const MeshElementsIndices & model_elements, const VertexIndexMapping & vertex_index_mappings, const IndexToModelMeshElementsMapping & index_to_meshes_mappings)
 ```
 
 
