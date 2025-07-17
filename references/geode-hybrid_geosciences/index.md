@@ -20,6 +20,7 @@ const name = words.join('-');
 * [HybridGeosciencesPillarLibrary](HybridGeosciencesPillarLibrary.md)
 * [LinesInspectionResult](LinesInspectionResult.md)
 * [MultiZInspectionResult](MultiZInspectionResult.md)
+* [PillarStructuralModelBuilderResult](PillarStructuralModelBuilderResult.md)
 * [PillarStructuralModelBuilder](PillarStructuralModelBuilder.md)
 * [PillarStructuralModelException](PillarStructuralModelException.md)
 * [PillarStructuralModelInspectionResult](PillarStructuralModelInspectionResult.md)
