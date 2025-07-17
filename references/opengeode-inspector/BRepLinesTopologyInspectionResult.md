@@ -46,6 +46,11 @@ public InspectionIssues unique_vertices_linked_to_several_lines_but_not_linked_t
 
 ```
 
+```cpp
+public InspectionIssuesMap line_edges_with_wrong_component_edges_around
+
+```
+
 
 
 ## Functions

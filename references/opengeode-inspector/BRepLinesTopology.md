@@ -78,6 +78,13 @@ public std::optional<std::string> vertex_has_lines_but_is_not_a_corner(index_t u
 ```
 
 
+### line_edge_has_wrong_component_edges_around
+
+```cpp
+public std::optional<std::string> line_edge_has_wrong_component_edges_around(const Line3D & line, const index_t edge_index)
+```
+
+
 ### inspect_lines_topology
 
 ```cpp

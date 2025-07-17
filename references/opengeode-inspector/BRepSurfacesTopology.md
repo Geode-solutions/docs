@@ -71,6 +71,13 @@ public std::optional<std::string> vertex_is_part_of_line_and_not_on_surface_bord
 ```
 
 
+### surface_facet_has_wrong_component_facets_around
+
+```cpp
+public std::optional<std::string> surface_facet_has_wrong_component_facets_around(const Surface3D & line, const index_t facet_index)
+```
+
+
 ### inspect_surfaces_topology
 
 ```cpp

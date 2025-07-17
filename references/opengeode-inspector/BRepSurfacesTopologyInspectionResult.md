@@ -41,6 +41,11 @@ public InspectionIssues unique_vertices_linked_to_a_line_but_is_not_on_a_surface
 
 ```
 
+```cpp
+public InspectionIssuesMap surface_polygons_with_wrong_component_facets_around
+
+```
+
 
 
 ## Functions
