@@ -22,7 +22,7 @@ public Edge edge
 ```
 
 ```cpp
-public geode::index_t stamp
+public index_t stamp
 
 ```
 
@@ -33,7 +33,7 @@ public geode::index_t stamp
 ### EdgeStamp
 
 ```cpp
-public void EdgeStamp(Edge element_in, geode::index_t stamp_in)
+public void EdgeStamp(Edge element_in, index_t stamp_in)
 ```
 
 

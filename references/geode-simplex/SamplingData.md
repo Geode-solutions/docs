@@ -19,7 +19,7 @@ const name = words.join('-');
 ### SamplingData
 
 ```cpp
-public void SamplingData<DataModel>(DataModel && model, const Metric<dimension> & metric)
+public void SamplingData<DataModel>(Model & model, const Metric<dimension> & metric)
 ```
 
 
@@ -33,7 +33,14 @@ public void ~SamplingData<DataModel>()
 ### model
 
 ```cpp
-public const Model & model()
+public const BackgroundModel & model()
+```
+
+
+### model_builder
+
+```cpp
+public ModelBuilder & model_builder()
 ```
 
 
@@ -103,7 +110,7 @@ public CleanMappings clean_model()
 ### release_model
 
 ```cpp
-public DataModel release_model()
+public void release_model()
 ```
 
 

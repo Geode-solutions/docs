@@ -220,14 +220,14 @@ H AbslHashValue(H h, const Edge & edge)
 ### decimate_edges
 
 ```cpp
-void decimate_edges(BackgroundBRepConstraintModifier & constraint_modifier, const geode::Metric3D & metric)
+void decimate_edges(BackgroundBRepConstraintModifier & constraint_modifier, const Metric3D & metric)
 ```
 
 
 ### relax_polyhedra
 
 ```cpp
-void relax_polyhedra(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, const geode::Metric3D & metric)
+void relax_polyhedra(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, const Metric3D & metric)
 ```
 
 
