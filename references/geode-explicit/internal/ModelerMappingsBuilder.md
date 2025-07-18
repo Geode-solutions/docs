@@ -25,7 +25,7 @@ const name = words.join('-');
 ### ModelerMappingsBuilder
 
 ```cpp
-public void ModelerMappingsBuilder<Model, BackgroundMesh>(const Model & model, const BackgroundMesh & background, Span points_sets_uuids, Span curves_uuids)
+public void ModelerMappingsBuilder<Model, BackgroundMesh>(const Model & model, const Mesh & mesh, const BackgroundMesh & background, Span points_sets_uuids, Span curves_uuids)
 ```
 
 
@@ -47,6 +47,13 @@ public typename TypedModelMappings<Model>::type mappings_from_background(const M
 
 ```cpp
 protected const Model & model()
+```
+
+
+### mesh
+
+```cpp
+protected const Mesh & mesh()
 ```
 
 

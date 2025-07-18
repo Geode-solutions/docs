@@ -33,7 +33,7 @@ public BRepSolidModeler & operator=(const BRepSolidModeler & )
 ### BRepSolidModeler
 
 ```cpp
-public void BRepSolidModeler(TetrahedralSolid3D && solid)
+public void BRepSolidModeler(std::unique_ptr<TetrahedralSolid3D> && solid)
 ```
 
 

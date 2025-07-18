@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BRepModelerMappingsBuilder
 
 ```cpp
-public void BRepModelerMappingsBuilder(const geode::BRep & brep, const geode::internal::BackgroundSolid & background, Span points_sets_uuids, Span curves_uuids, Span surfaces_uuids)
+public void BRepModelerMappingsBuilder(const BRep & brep, const TetrahedralSolid3D & solid, const BackgroundSolid & background, Span points_sets_uuids, Span curves_uuids, Span surfaces_uuids)
 ```
 
 
@@ -33,7 +33,7 @@ public void ~BRepModelerMappingsBuilder()
 ### build_mappings_from_background
 
 ```cpp
-public BRepMappings build_mappings_from_background(const SolidElementsIndices & model_elements, const geode::VertexIndexMapping & vertex_index_mappings, const geode::IndexToModelMeshElementsMapping & index_to_meshes_mappings)
+public BRepMappings build_mappings_from_background(const SolidElementsIndices & model_elements, const VertexIndexMapping & vertex_index_mappings, const IndexToModelMeshElementsMapping & index_to_meshes_mappings)
 ```
 
 
