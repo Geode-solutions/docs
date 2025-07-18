@@ -19,6 +19,7 @@ const name = words.join('-');
 
 * [BRepFemOutput](BRepFemOutput.md)
 * [CRSData](CRSData.md)
+* [DEMInput](DEMInput.md)
 * [ECurveData](ECurveData.md)
 * [GEOTIFFInput](GEOTIFFInput.md)
 * [GRDECLInput](GRDECLInput.md)
@@ -128,7 +129,7 @@ void write_property_class_header(std::ofstream & file, const PropClassHeaderData
 ### read_tsurf
 
 ```cpp
-std::optional<TSurfData> read_tsurf(std::ifstream & file)
+optional read_tsurf(std::ifstream & file)
 ```
 
 
