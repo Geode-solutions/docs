@@ -509,5 +509,12 @@ protected TetrahedralSolidModifier & block_modifier(const Block3D & block)
 ```
 
 
+### create_block_modifier
+
+```cpp
+protected std::unique_ptr<TetrahedralSolidModifier> create_block_modifier(const Block3D & block, TetrahedralSolidBuilder3D & builder)
+```
+
+
 
 
