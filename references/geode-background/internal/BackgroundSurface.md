@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from OpenGeodeTriangulatedSurface2D, ElementSearch<TriangulatedSurface2D>, MacroInfo2D
+Inherits from ElementSearch<TriangulatedSurface2D>, MacroInfo2D
 ```
 
 
@@ -25,14 +25,7 @@ Inherits from OpenGeodeTriangulatedSurface2D, ElementSearch<TriangulatedSurface2
 ### BackgroundSurface
 
 ```cpp
-public void BackgroundSurface()
-```
-
-
-### BackgroundSurface
-
-```cpp
-public void BackgroundSurface(TriangulatedSurface2D && surface)
+public void BackgroundSurface(const TriangulatedSurface2D & surface)
 ```
 
 
@@ -50,24 +43,17 @@ public void ~BackgroundSurface()
 ```
 
 
-### impl_name_static
+### surface
 
 ```cpp
-public NamedType impl_name_static()
-```
-
-
-### impl_name
-
-```cpp
-public NamedType impl_name()
+public const TriangulatedSurface2D & surface()
 ```
 
 
 ### clone
 
 ```cpp
-public BackgroundSurface clone()
+public tuple clone()
 ```
 
 
@@ -75,13 +61,6 @@ public BackgroundSurface clone()
 
 ```cpp
 public unique_ptr clone_surface()
-```
-
-
-### release_surface
-
-```cpp
-public OpenGeodeTriangulatedSurface release_surface()
 ```
 
 

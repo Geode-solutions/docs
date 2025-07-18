@@ -15,19 +15,12 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from OpenGeodeEdgedCurveBuilder1D, ElementSearchBuilder<EdgedCurve1D>, MacroInfoBuilder1D
+Inherits from ElementSearchBuilder<EdgedCurve1D>, MacroInfoBuilder1D
 ```
 
 
 
 ## Functions
-
-### BackgroundLineBuilder
-
-```cpp
-public void BackgroundLineBuilder(VertexSet & vertex_set, MeshBuilderFactoryKey )
-```
-
 
 ### BackgroundLineBuilder
 
@@ -47,13 +40,6 @@ public void BackgroundLineBuilder(BackgroundLineBuilder && )
 
 ```cpp
 public void ~BackgroundLineBuilder()
-```
-
-
-### copy
-
-```cpp
-public void copy(const BackgroundLine & source)
 ```
 
 

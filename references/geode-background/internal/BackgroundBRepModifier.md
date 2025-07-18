@@ -25,7 +25,7 @@ Inherits from BRepGeometricModifier
 ### BackgroundBRepModifier
 
 ```cpp
-public void BackgroundBRepModifier(const BackgroundBRep & background_brep, BackgroundBRepBuilder & builder)
+public void BackgroundBRepModifier(const BackgroundBRep & background_brep, BackgroundBRepBuilder & background_builder, BRepBuilder & builder)
 ```
 
 

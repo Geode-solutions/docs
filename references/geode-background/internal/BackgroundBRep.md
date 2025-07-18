@@ -14,18 +14,26 @@ const name = words.join('-');
 # class BackgroundBRep
 
 
-```cpp
-Inherits from BRep
-```
-
-
-
 ## Functions
 
 ### BackgroundBRep
 
 ```cpp
-public void BackgroundBRep(BRep && brep)
+public void BackgroundBRep(BRep & brep)
+```
+
+
+### ~BackgroundBRep
+
+```cpp
+public void ~BackgroundBRep()
+```
+
+
+### brep
+
+```cpp
+public const BRep & brep()
 ```
 
 
@@ -36,17 +44,10 @@ public const BackgroundSolid & background_solid(const Block3D & block)
 ```
 
 
-### release_brep
-
-```cpp
-public BRep release_brep()
-```
-
-
 ### clone
 
 ```cpp
-public BackgroundBRep clone()
+public std::tuple<BRep, std::unique_ptr<BackgroundBRep> > clone()
 ```
 
 
@@ -57,10 +58,10 @@ public BRep clone_brep()
 ```
 
 
-### macro_vertices
+### background_solid
 
 ```cpp
-public const std::vector<MeshVertex> & macro_vertices(const Block3D & block, index_t vertex_id)
+public BackgroundSolid & background_solid(const Block3D & block, BackgroundBRepBuilderKey key)
 ```
 
 

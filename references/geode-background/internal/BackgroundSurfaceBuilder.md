@@ -15,19 +15,12 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from OpenGeodeTriangulatedSurfaceBuilder2D, ElementSearchBuilder<TriangulatedSurface2D>, MacroInfoBuilder2D
+Inherits from ElementSearchBuilder<TriangulatedSurface2D>, MacroInfoBuilder2D
 ```
 
 
 
 ## Functions
-
-### BackgroundSurfaceBuilder
-
-```cpp
-public void BackgroundSurfaceBuilder(VertexSet & vertex_set, MeshBuilderFactoryKey )
-```
-
 
 ### BackgroundSurfaceBuilder
 
@@ -47,13 +40,6 @@ public void BackgroundSurfaceBuilder(BackgroundSurfaceBuilder && )
 
 ```cpp
 public void ~BackgroundSurfaceBuilder()
-```
-
-
-### copy
-
-```cpp
-public void copy(const BackgroundSurface & source)
 ```
 
 

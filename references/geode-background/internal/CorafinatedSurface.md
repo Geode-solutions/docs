@@ -17,7 +17,17 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public BackgroundSurface surface
+public unique_ptr surface
+
+```
+
+```cpp
+public unique_ptr surface_builder
+
+```
+
+```cpp
+public BackgroundSurface background
 
 ```
 

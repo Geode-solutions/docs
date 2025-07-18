@@ -39,7 +39,7 @@ public BackgroundSolidModifier & operator=(const BackgroundSolidModifier & )
 ### BackgroundSolidModifier
 
 ```cpp
-public void BackgroundSolidModifier(const BackgroundSolid & mesh, BackgroundSolidBuilder & builder)
+public void BackgroundSolidModifier(const BackgroundSolid & background, BackgroundSolidBuilder & background_builder, TetrahedralSolidBuilder3D & builder)
 ```
 
 
@@ -47,20 +47,6 @@ public void BackgroundSolidModifier(const BackgroundSolid & mesh, BackgroundSoli
 
 ```cpp
 public void BackgroundSolidModifier(BackgroundSolidModifier && other)
-```
-
-
-### BackgroundSolidModifier
-
-```cpp
-public void BackgroundSolidModifier(TetrahedralSolidModifier && other)
-```
-
-
-### operator=
-
-```cpp
-public BackgroundSolidModifier & operator=(BackgroundSolidModifier && other)
 ```
 
 
@@ -146,7 +132,6 @@ public vector clean_tetrahedra()
 ```cpp
 public void BackgroundSolidModifier(const VertexSet & solid, VertexSetBuilder & builder, MeshModifierFactoryKey key)
 ```
-
 
 
 

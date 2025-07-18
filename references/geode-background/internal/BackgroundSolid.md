@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from OpenGeodeTetrahedralSolid3D, ElementSearch<TetrahedralSolid3D>, MacroInfo3D
+Inherits from ElementSearch<TetrahedralSolid3D>, MacroInfo3D
 ```
 
 
@@ -25,14 +25,7 @@ Inherits from OpenGeodeTetrahedralSolid3D, ElementSearch<TetrahedralSolid3D>, Ma
 ### BackgroundSolid
 
 ```cpp
-public void BackgroundSolid()
-```
-
-
-### BackgroundSolid
-
-```cpp
-public void BackgroundSolid(TetrahedralSolid3D && solid)
+public void BackgroundSolid(const TetrahedralSolid3D & solid)
 ```
 
 
@@ -43,13 +36,6 @@ public void BackgroundSolid(BackgroundSolid && other)
 ```
 
 
-### operator=
-
-```cpp
-public BackgroundSolid & operator=(BackgroundSolid && other)
-```
-
-
 ### ~BackgroundSolid
 
 ```cpp
@@ -57,24 +43,17 @@ public void ~BackgroundSolid()
 ```
 
 
-### impl_name_static
+### solid
 
 ```cpp
-public NamedType impl_name_static()
-```
-
-
-### impl_name
-
-```cpp
-public NamedType impl_name()
+public const TetrahedralSolid3D & solid()
 ```
 
 
 ### clone
 
 ```cpp
-public BackgroundSolid clone()
+public std::tuple<std::unique_ptr<TetrahedralSolid3D>, std::unique_ptr<BackgroundSolid> > clone()
 ```
 
 
@@ -82,13 +61,6 @@ public BackgroundSolid clone()
 
 ```cpp
 public std::unique_ptr<TetrahedralSolid3D> clone_solid()
-```
-
-
-### release_solid
-
-```cpp
-public OpenGeodeTetrahedralSolid release_solid()
 ```
 
 

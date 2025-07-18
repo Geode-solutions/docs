@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from OpenGeodeEdgedCurve1D, ElementSearch<EdgedCurve1D>, MacroInfo1D
+Inherits from ElementSearch<EdgedCurve1D>, MacroInfo1D
 ```
 
 
@@ -25,14 +25,7 @@ Inherits from OpenGeodeEdgedCurve1D, ElementSearch<EdgedCurve1D>, MacroInfo1D
 ### BackgroundLine
 
 ```cpp
-public void BackgroundLine()
-```
-
-
-### BackgroundLine
-
-```cpp
-public void BackgroundLine(EdgedCurve1D && line)
+public void BackgroundLine(const EdgedCurve1D & line)
 ```
 
 
@@ -50,24 +43,17 @@ public void ~BackgroundLine()
 ```
 
 
-### impl_name_static
+### line
 
 ```cpp
-public NamedType impl_name_static()
-```
-
-
-### impl_name
-
-```cpp
-public NamedType impl_name()
+public const EdgedCurve1D & line()
 ```
 
 
 ### clone
 
 ```cpp
-public BackgroundLine clone()
+public tuple clone()
 ```
 
 
@@ -75,13 +61,6 @@ public BackgroundLine clone()
 
 ```cpp
 public unique_ptr clone_line()
-```
-
-
-### release_line
-
-```cpp
-public OpenGeodeEdgedCurve release_line()
 ```
 
 

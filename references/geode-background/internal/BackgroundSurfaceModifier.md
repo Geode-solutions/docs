@@ -25,7 +25,7 @@ Inherits from TriangulatedSurfaceModifier2D
 ### BackgroundSurfaceModifier
 
 ```cpp
-public void BackgroundSurfaceModifier(const BackgroundSurface & mesh, BackgroundSurfaceBuilder & builder)
+public void BackgroundSurfaceModifier(const BackgroundSurface & background, BackgroundSurfaceBuilder & background_builder, TriangulatedSurfaceBuilder2D & builder)
 ```
 
 
@@ -75,13 +75,6 @@ public CollapseEdgeInfo collapse_edge(index_t edge_id, const Point2D & point)
 
 ```cpp
 public vector clean_triangles()
-```
-
-
-### BackgroundSurfaceModifier
-
-```cpp
-public void BackgroundSurfaceModifier(const VertexSet & surface, VertexSetBuilder & builder, MeshModifierFactoryKey key)
 ```
 
 

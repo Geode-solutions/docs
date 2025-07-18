@@ -17,7 +17,17 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public BackgroundLine line
+public unique_ptr line
+
+```
+
+```cpp
+public unique_ptr line_builder
+
+```
+
+```cpp
+public BackgroundLine background
 
 ```
 

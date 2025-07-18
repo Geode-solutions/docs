@@ -14,12 +14,6 @@ const name = words.join('-');
 # class BackgroundBRepBuilder
 
 
-```cpp
-Inherits from BRepBuilder
-```
-
-
-
 ## Functions
 
 ### BackgroundBRepBuilder
@@ -39,28 +33,7 @@ public void ~BackgroundBRepBuilder()
 ### background_solid_builder
 
 ```cpp
-public std::unique_ptr<BackgroundSolidBuilder> background_solid_builder(const Block3D & block)
-```
-
-
-### copy
-
-```cpp
-public void copy(const BackgroundBRep & source)
-```
-
-
-### convert_blocks_to_background_solid
-
-```cpp
-public void convert_blocks_to_background_solid()
-```
-
-
-### convert_blocks_to_tetrahedral_solid
-
-```cpp
-public void convert_blocks_to_tetrahedral_solid()
+public unique_ptr background_solid_builder(const Block3D & block)
 ```
 
 

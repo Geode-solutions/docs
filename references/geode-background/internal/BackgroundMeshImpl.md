@@ -11,35 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BackgroundSolidBuilder
-
-
-```cpp
-Inherits from ElementSearchBuilder<TetrahedralSolid3D>, MacroInfoBuilder3D
-```
-
+# class BackgroundMeshImpl
 
 
 ## Functions
 
-### BackgroundSolidBuilder
+### BackgroundMeshImpl
 
 ```cpp
-public void BackgroundSolidBuilder(BackgroundSolid & background)
+public void BackgroundMeshImpl<Background>(const Mesh & mesh)
 ```
 
 
-### BackgroundSolidBuilder
+### mesh
 
 ```cpp
-public void BackgroundSolidBuilder(BackgroundSolidBuilder && )
+public const Mesh & mesh()
 ```
 
 
-### ~BackgroundSolidBuilder
+### clone
 
 ```cpp
-public void ~BackgroundSolidBuilder()
+public std::tuple<std::unique_ptr<Mesh>, std::unique_ptr<Background> > clone()
+```
+
+
+### clone_mesh
+
+```cpp
+public std::unique_ptr<Mesh> clone_mesh()
 ```
 
 

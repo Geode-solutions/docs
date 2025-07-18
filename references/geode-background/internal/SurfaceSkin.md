@@ -27,6 +27,16 @@ public unique_ptr surface
 ```
 
 ```cpp
+public unique_ptr surface_builder
+
+```
+
+```cpp
+public unique_ptr background
+
+```
+
+```cpp
 public unique_ptr builder
 
 ```
@@ -80,13 +90,6 @@ public void SurfaceSkin(ModifiableObject solid)
 
 ```cpp
 public void SurfaceSkin(ModifiableObject solid, std::unique_ptr<TriangulatedSurface2D> && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
-```
-
-
-### SurfaceSkin
-
-```cpp
-public void SurfaceSkin(ModifiableObject solid, BackgroundSurface && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping, bool solid_oriented)
 ```
 
 

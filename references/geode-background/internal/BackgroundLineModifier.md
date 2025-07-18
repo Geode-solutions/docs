@@ -25,7 +25,7 @@ Inherits from EdgedCurveModifier1D
 ### BackgroundLineModifier
 
 ```cpp
-public void BackgroundLineModifier(const BackgroundLine & mesh, BackgroundLineBuilder & builder)
+public void BackgroundLineModifier(const BackgroundLine & background, BackgroundLineBuilder & background_builder, EdgedCurveBuilder1D & builder)
 ```
 
 
@@ -54,13 +54,6 @@ public CollapseEdgeInfo collapse_edge(index_t edge, const Point1D & point)
 
 ```cpp
 public vector clean_edges()
-```
-
-
-### BackgroundLineModifier
-
-```cpp
-public void BackgroundLineModifier(const VertexSet & line, VertexSetBuilder & builder, MeshModifierFactoryKey key)
 ```
 
 

@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BackgroundSolidDecimator
 
 ```cpp
-public void BackgroundSolidDecimator(BackgroundSolid & background)
+public void BackgroundSolidDecimator(BackgroundSolid & background, TetrahedralSolidBuilder3D & builder)
 ```
 
 

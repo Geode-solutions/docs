@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BackgroundBRepInserter
 
 ```cpp
-public void BackgroundBRepInserter(ModifiableObject background_brep, BackgroundBRepBuilder & builder)
+public void BackgroundBRepInserter(ModifiableObject background_brep, BackgroundBRepBuilder & background_builder, BRepBuilder & builder)
 ```
 
 

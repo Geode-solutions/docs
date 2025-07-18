@@ -22,7 +22,17 @@ public ModifiableObject solid
 ```
 
 ```cpp
-public unique_ptr line
+public unique_ptr mesh
+
+```
+
+```cpp
+public unique_ptr mesh_builder
+
+```
+
+```cpp
+public unique_ptr background
 
 ```
 
@@ -81,7 +91,7 @@ public void LineSkin(ModifiableObject solid, std::unique_ptr<EdgedCurve1D> && me
 ### LineSkin
 
 ```cpp
-public void LineSkin(ModifiableObject solid, BackgroundLine && mesh, const GenericMapping<index_t> & corafinated_vertex_mapping)
+public void LineSkin(ModifiableObject solid, std::unique_ptr<EdgedCurve1D> && mesh, std::unique_ptr<BackgroundLine> && background, const GenericMapping<index_t> & corafinated_vertex_mapping)
 ```
 
 

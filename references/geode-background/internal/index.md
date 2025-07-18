@@ -33,6 +33,7 @@ const name = words.join('-');
 * [BackgroundLineInserter](BackgroundLineInserter.md)
 * [BackgroundLineModifier](BackgroundLineModifier.md)
 * [BackgroundLine](BackgroundLine.md)
+* [BackgroundMeshImpl](BackgroundMeshImpl.md)
 * [BackgroundMeshInsertionException](BackgroundMeshInsertionException.md)
 * [BackgroundModelInsertionException](BackgroundModelInsertionException.md)
 * [BackgroundOrchestrator](BackgroundOrchestrator.md)
@@ -306,13 +307,6 @@ void decimate_background_surface(BackgroundSurfaceConstraintModifier & constrain
 ```
 
 
-### epsilon_optimize_background_surface_elements
-
-```cpp
-void epsilon_optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, Span triangles)
-```
-
-
 ### AbslHashValue
 
 ```cpp
@@ -320,24 +314,10 @@ H AbslHashValue(H h, const ElementStamp & element_stamp)
 ```
 
 
-### optimize_background_surface_elements
+### epsilon_optimize_background_surface_elements
 
 ```cpp
-void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, index_t first_element)
-```
-
-
-### simplify_background_surface_multilayers
-
-```cpp
-optional simplify_background_surface_multilayers(BackgroundSurfaceConstraintModifier & constraint_modifier, Span triangles, const InfiniteLine2D & line)
-```
-
-
-### detect_coplanar_multilayers
-
-```cpp
-std::tuple<std::vector<geode::index_t>, OwnerInfiniteLine2D> detect_coplanar_multilayers(const BackgroundSurface & surface, index_t triangle_id)
+void epsilon_optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, Span triangles)
 ```
 
 
@@ -509,13 +489,6 @@ void blinded_quality_optimize_background_solid_elements(BackgroundSolidConstrain
 ```
 
 
-### epsilon_optimize_background_solid_elements
-
-```cpp
-vector epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, Span tetrahedra)
-```
-
-
 ### find_unique_facet_normals
 
 ```cpp
@@ -553,10 +526,24 @@ BijectiveMapping vertex_skins_solid_mapping(const CorafinatedSurface & corafinat
 ```
 
 
+### optimize_background_surface_elements
+
+```cpp
+void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, index_t first_element)
+```
+
+
+### epsilon_optimize_background_solid_elements
+
+```cpp
+vector epsilon_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, TetrahedralSolidBuilder3D & builder, Span tetrahedra)
+```
+
+
 ### simplify_background_solid_multilayers
 
 ```cpp
-vector simplify_background_solid_multilayers(BackgroundSolidConstraintModifier & constraint_modifier, Span tetrahedra, const Plane & plane)
+vector simplify_background_solid_multilayers(BackgroundSolidConstraintModifier & constraint_modifier, TetrahedralSolidBuilder3D & builder, Span tetrahedra, const Plane & plane)
 ```
 
 
