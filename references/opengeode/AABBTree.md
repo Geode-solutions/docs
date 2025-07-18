@@ -243,6 +243,29 @@ public void compute_line_element_bbox_intersections(const InfiniteLine<dimension
 
 **note** The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
 
+### compute_generic_element_bbox_intersections
+
+```cpp
+public void compute_generic_element_bbox_intersections(const EvalBox & box_filter, EvalIntersection & action)
+```
+
+
+
+
+**brief** Computes the intersections between any object (for which intersection against an arbitrary axis-aligned bounding box can be detected efficiently) and all element boxes.
+
+**box_filter** [in] The functor to run to determine whether a box is intersected by the searched object or not. The box may correspond either to an internal tree node or to a tree element.
+
+**action** [in] The functor to run when a tree element box is intersected by the search object.
+
+**EvalBox** this functor should have an operator() defined like this: bool operator( const BoundingBox<dimension> & ) ;
+
+**EvalIntersection** this functor should have an operator() defined like this: bool operator()( index_t cur_element_box ) ;
+
+**note** the operator define what to do with the box **p**  if it is intersected by the searched object.
+
+**note** The returned boolean indicates if the search should stop or continue. Return true to stop the search, false to continue.
+
 ### compute_segment_element_bbox_intersections
 
 ```cpp
