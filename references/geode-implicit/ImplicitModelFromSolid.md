@@ -19,7 +19,7 @@ const name = words.join('-');
 ### ImplicitModelFromSolid
 
 ```cpp
-public void ImplicitModelFromSolid(TetrahedralSolid3D && solid, HorizonsStack3D && horizon_stack)
+public void ImplicitModelFromSolid(std::unique_ptr<TetrahedralSolid3D> && solid, HorizonsStack3D && horizon_stack)
 ```
 
 
