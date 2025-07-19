@@ -17,7 +17,16 @@ const name = words.join('-');
 
 ## Records
 
-* [StochasticGeometryLibrary](StochasticGeometryLibrary.md)
+* [BallSampler](BallSampler.md)
+* [BoundingBoxSampler](BoundingBoxSampler.md)
+* [DoubleSampler](DoubleSampler.md)
+* [Gaussian](Gaussian.md)
+* [PointUniformSampler](PointUniformSampler.md)
+* [RandomEngine](RandomEngine.md)
+* [StochasticLibrary](StochasticLibrary.md)
+* [TruncatedGaussian](TruncatedGaussian.md)
+* [UniformClosedOpen](UniformClosedOpen.md)
+* [UniformClosed](UniformClosed.md)
 
 
 ## Functions

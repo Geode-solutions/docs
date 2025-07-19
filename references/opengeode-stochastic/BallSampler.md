@@ -11,23 +11,37 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class StochasticGeometryLibrary
+# class BallSampler
 
 
-```cpp
-Inherits from Library
-```
-
+# class BallSampler
 
 
 ## Functions
 
-### initialize
+### BallSampler
 
 ```cpp
-public void initialize()
+public void BallSampler<dimension>(const Sphere<dimension> & ball)
 ```
 
 
+### ~BallSampler
+
+```cpp
+public void ~BallSampler<dimension>()
+```
+
+
+### sample_uniform
+
+```cpp
+public Point<dimension> sample_uniform(RandomEngine & engine)
+```
+
+
+
+
+# class BallSampler
 
 
