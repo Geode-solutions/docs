@@ -11,28 +11,13 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct PillarStructuralModelInspectionResult
+# struct DifferentHorizonBoundariesSizeInspectionResult
 
 
 ## Members
 
 ```cpp
-public PointsOutsideTopographyInspectionResult points_outside
-
-```
-
-```cpp
-public MultiZInspectionResult multi_z_surfaces
-
-```
-
-```cpp
-public LinesInspectionResult not_crossing_lines
-
-```
-
-```cpp
-public DifferentHorizonBoundariesSizeInspectionResult different_horizon_boundaries_size
+public InspectionIssues different_horizon_boundaries_size
 
 ```
 
@@ -40,10 +25,10 @@ public DifferentHorizonBoundariesSizeInspectionResult different_horizon_boundari
 
 ## Functions
 
-### PillarStructuralModelInspectionResult
+### nb_issues
 
 ```cpp
-public void PillarStructuralModelInspectionResult()
+public index_t nb_issues()
 ```
 
 
@@ -54,10 +39,10 @@ public basic_string string()
 ```
 
 
-### operator bool
+### inspection_type
 
 ```cpp
-public bool operator bool()
+public basic_string inspection_type()
 ```
 
 

@@ -17,6 +17,7 @@ const name = words.join('-');
 
 ## Records
 
+* [DifferentHorizonBoundariesSizeInspectionResult](DifferentHorizonBoundariesSizeInspectionResult.md)
 * [HybridGeosciencesPillarLibrary](HybridGeosciencesPillarLibrary.md)
 * [LinesInspectionResult](LinesInspectionResult.md)
 * [MultiZInspectionResult](MultiZInspectionResult.md)
