@@ -85,14 +85,14 @@ void register_collection_components(const Model & model, typename Model::Builder
 ### copy_points3d_into_2d
 
 ```cpp
-void copy_points3d_into_2d(const MeshFrom & from, Builder & builder, index_t axis_to_remove)
+void copy_points3d_into_2d(const MeshFrom & from, Builder & builder, local_index_t axis_to_remove)
 ```
 
 
 ### copy_points2d_into_3d
 
 ```cpp
-void copy_points2d_into_3d(const MeshFrom & from, Builder & builder, index_t axis_to_add, double axis_coordinate)
+void copy_points2d_into_3d(const MeshFrom & from, Builder & builder, local_index_t axis_to_add, double axis_coordinate)
 ```
 
 

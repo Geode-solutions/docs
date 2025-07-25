@@ -1548,6 +1548,82 @@ bool is_section_loadable(basic_string_view filename)
 ```
 
 
+### load_point_set
+
+```cpp
+std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an PointSet. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_point_set
+
+```cpp
+std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
+```
+
+
+ API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_point_set_missing_files
+
+```cpp
+typename PointSetInput<dimension>::MissingFiles check_point_set_missing_files(basic_string_view filename)
+```
+
+
+### is_point_set_loadable
+
+```cpp
+bool is_point_set_loadable(basic_string_view filename)
+```
+
+
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(basic_string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### check_vertex_set_missing_files
+
+```cpp
+MissingFiles check_vertex_set_missing_files(basic_string_view filename)
+```
+
+
+### is_vertex_set_loadable
+
+```cpp
+bool is_vertex_set_loadable(basic_string_view filename)
+```
+
+
 ### save_point_set
 
 ```cpp
@@ -1623,44 +1699,6 @@ typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_
 
 ```cpp
 bool is_polygonal_surface_loadable(basic_string_view filename)
-```
-
-
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(basic_string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_vertex_set_missing_files
-
-```cpp
-MissingFiles check_vertex_set_missing_files(basic_string_view filename)
-```
-
-
-### is_vertex_set_loadable
-
-```cpp
-bool is_vertex_set_loadable(basic_string_view filename)
 ```
 
 
@@ -1886,44 +1924,6 @@ typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_fi
 
 ```cpp
 bool is_hybrid_solid_loadable(basic_string_view filename)
-```
-
-
-### load_point_set
-
-```cpp
-std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an PointSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_point_set
-
-```cpp
-std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
-```
-
-
- API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### check_point_set_missing_files
-
-```cpp
-typename PointSetInput<dimension>::MissingFiles check_point_set_missing_files(basic_string_view filename)
-```
-
-
-### is_point_set_loadable
-
-```cpp
-bool is_point_set_loadable(basic_string_view filename)
 ```
 
 
@@ -2621,14 +2621,14 @@ double surface_area(const Surface<dimension> & surface)
 ### convert_brep_into_section
 
 ```cpp
-tuple convert_brep_into_section(const BRep & brep, index_t axis_to_remove)
+tuple convert_brep_into_section(const BRep & brep, local_index_t axis_to_remove)
 ```
 
 
 ### convert_section_into_brep
 
 ```cpp
-tuple convert_section_into_brep(const Section & section, index_t axis_to_add, double axis_coordinate)
+tuple convert_section_into_brep(const Section & section, local_index_t axis_to_add, double axis_coordinate)
 ```
 
 
@@ -2642,14 +2642,14 @@ BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptio
 ### convert_edged_curve3d_into_2d
 
 ```cpp
-unique_ptr convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, index_t axis_to_remove)
+unique_ptr convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, local_index_t axis_to_remove)
 ```
 
 
 ### convert_edged_curve2d_into_3d
 
 ```cpp
-unique_ptr convert_edged_curve2d_into_3d(const EdgedCurve2D & curve2d, index_t axis_to_add, double axis_coordinate)
+unique_ptr convert_edged_curve2d_into_3d(const EdgedCurve2D & curve2d, local_index_t axis_to_add, double axis_coordinate)
 ```
 
 
@@ -2663,14 +2663,14 @@ std::unique_ptr<EdgedCurve<dimension> > merge_edged_curves(absl::Span<const std:
 ### convert_point_set3d_into_2d
 
 ```cpp
-unique_ptr convert_point_set3d_into_2d(const PointSet3D & point_set3d, index_t axis_to_remove)
+unique_ptr convert_point_set3d_into_2d(const PointSet3D & point_set3d, local_index_t axis_to_remove)
 ```
 
 
 ### convert_point_set2d_into_3d
 
 ```cpp
-unique_ptr convert_point_set2d_into_3d(const PointSet2D & point_set2d, index_t axis_to_add, double axis_coordinate)
+unique_ptr convert_point_set2d_into_3d(const PointSet2D & point_set2d, local_index_t axis_to_add, double axis_coordinate)
 ```
 
 
@@ -2692,6 +2692,13 @@ std::optional<std::unique_ptr<TriangulatedSurface<dimension> > > convert_surface
 
 ```cpp
 std::unique_ptr<TriangulatedSurface2D> convert_grid_into_triangulated_surface(const Grid2D & grid)
+```
+
+
+### convert_grid_into_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface2D> convert_grid_into_polygonal_surface(const Grid2D & grid)
 ```
 
 
@@ -2719,42 +2726,42 @@ void triangulate_surface_mesh(const SurfaceMesh<dimension> & surface, SurfaceMes
 ### convert_surface_mesh2d_into_3d
 
 ```cpp
-unique_ptr convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, index_t axis_to_add, double axis_coordinate)
+unique_ptr convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
 ```
 
 
 ### convert_surface_mesh3d_into_2d
 
 ```cpp
-unique_ptr convert_surface_mesh3d_into_2d(const SurfaceMesh3D & surface3d, index_t axis_to_remove)
+unique_ptr convert_surface_mesh3d_into_2d(const SurfaceMesh3D & surface3d, local_index_t axis_to_remove)
 ```
 
 
 ### convert_polygonal_surface2d_into_3d
 
 ```cpp
-std::unique_ptr<PolygonalSurface3D> convert_polygonal_surface2d_into_3d(const PolygonalSurface2D & surface2d, index_t axis_to_add, double axis_coordinate)
+std::unique_ptr<PolygonalSurface3D> convert_polygonal_surface2d_into_3d(const PolygonalSurface2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
 ```
 
 
 ### convert_polygonal_surface3d_into_2d
 
 ```cpp
-std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const PolygonalSurface3D & surface3d, index_t axis_to_remove)
+std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const PolygonalSurface3D & surface3d, local_index_t axis_to_remove)
 ```
 
 
 ### convert_triangulated_surface2d_into_3d
 
 ```cpp
-std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(const TriangulatedSurface2D & surface2d, index_t axis_to_add, double axis_coordinate)
+std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(const TriangulatedSurface2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
 ```
 
 
 ### convert_triangulated_surface3d_into_2d
 
 ```cpp
-std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, index_t axis_to_remove)
+std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, local_index_t axis_to_remove)
 ```
 
 
@@ -3122,6 +3129,13 @@ Point rotate(const Point3D & point, const Vector3D & axis, double angle)
 
 ```cpp
 LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_number(const BoundingBox<dimension> & bbox, double target_cell_length, index_t max_nb_cells)
+```
+
+
+### convert_raster_image_into_grid
+
+```cpp
+LightRegularGrid<dimension> convert_raster_image_into_grid(const RasterImage<dimension> & raster, const CoordinateSystem<dimension> & coordinate_system)
 ```
 
 

@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public index_t axis_to_extrude
+public local_index_t axis_to_extrude
 
 ```
 
