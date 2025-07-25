@@ -15,7 +15,26 @@ const name = words.join('-');
 
 
 
+## Records
+
+* [BlocksBuilderFromSolid](BlocksBuilderFromSolid.md)
+
+
 ## Functions
+
+### add_block_boundaries_as_surfaces_in_model
+
+```cpp
+void add_block_boundaries_as_surfaces_in_model(const BRep & model, BRepBuilder & builder)
+```
+
+
+### identify_blocks
+
+```cpp
+void identify_blocks(const BRep & model, BRepBuilder & builder, BRepMappings & mappings)
+```
+
 
 ### point_set_on_lines_sharp_vertices
 

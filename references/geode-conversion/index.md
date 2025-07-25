@@ -23,9 +23,8 @@ const name = words.join('-');
 
 ## Records
 
-* [BlockBuilder](BlockBuilder.md)
+* [BRepMappings](BRepMappings.md)
 * [BlockRelationships](BlockRelationships.md)
-* [BlocksBuilderFromSolid](BlocksBuilderFromSolid.md)
 * [ConversionModelLibrary](ConversionModelLibrary.md)
 * [IndexToBRepMeshElementsMapping](IndexToBRepMeshElementsMapping.md)
 * [IndexToModelMeshElementsMapping](IndexToModelMeshElementsMapping.md)
@@ -51,81 +50,17 @@ ModelMapping build_brep_component_mapping(const BRep & out_brep, const BRepMeshe
 ```
 
 
-### convert_meshes_into_brep
-
-```cpp
-tuple convert_meshes_into_brep(Span corners, Span curves, Span surfaces)
-```
-
-
- Convert a set of EdgedCurve3D and SurfaceMesh3D into a BRep, without meshed Blocks. This function first merges the input surfaces together and then uses the adjacencies between surface polygons to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to merged SurfaceMesh3D edges shared by 1 or more than 2 polygons, by 2 polygons if there are not set as adjacent, or by Curve edges. A colocation between the points of the input corners, curves and the merged surface is used to determine their common points, the position of the corners and the curves in the final model, and the corresponding topology of the corners and lines (internal/separating a line/surface in two/...).
-
-**corners** [in] Input corners
-
-**curves** [in] Input curves
-
-**surfaces** [in] Input surfaces
-
-**return** the BRep and the mapping between input corners, curves and surfaces and Corner, Line and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.
-
-### convert_solid_elements_into_brep
-
-```cpp
-tuple convert_solid_elements_into_brep(SolidMesh3D & solid, Span corner_vertices, Span line_edges, Span surface_facets)
-```
-
-
- Convert a SolidMesh3D into a BRep without meshed Blocks. This function uses the given solid points, edges and facets to define BRep corners, lines and surfaces. Returns VertexIndexMappings mapping the indices of the vertices in the given solid to the corresponding unique vertices in the output model, and IndexToBRepMeshElementsMapping mapping the indices of the given corner, line and surface elements to their elements in the output model. The attributes on the vertices and polyhedra of the given solid will be transfered to the corresponding blocks in the output model.
-
-**solid** [in] Input solid
-
-### surface_facets_from_attribute
-
-```cpp
-vector surface_facets_from_attribute(SolidMesh3D & solid, basic_string_view attribute_name)
-```
-
-
-### convert_surface_elements_into_section
-
-```cpp
-tuple convert_surface_elements_into_section(SurfaceMesh2D & surface, Span corner_vertices, Span line_edges)
-```
-
-
-### convert_meshes_into_section
-
-```cpp
-tuple convert_meshes_into_section(Span corners, Span curves, Span surfaces)
-```
-
-
-### convert_surface_into_section_from_attribute
-
-```cpp
-tuple convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, basic_string_view attribute_name)
-```
-
-
- Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values.
-
-**solid** [in] Input solid
-
-**attribute_name** [in] Name of attribute stored on solid polygons
-
-**warning** Attribute should be convertible to float.
-
 ### determine_blocks
 
 ```cpp
-vector determine_blocks(const BRep & brep)
+std::vector<BlockRelationships> determine_blocks(const BRep & brep)
 ```
 
 
 ### build_blocks
 
 ```cpp
-vector build_blocks(const BRep & brep, BRepBuilder & builder, Span blocks_to_build)
+vector build_blocks(const BRep & brep, BRepBuilder & builder, absl::Span<const BlockRelationships> blocks_to_build)
 ```
 
 
@@ -211,6 +146,70 @@ BRepMappings remove_sharp_features(BRep & model)
  Update the given BRep removing the sharp features stored in a CornerCollection3D and a LineCollection3D, and if necessary merge input lines and surfaces.
 
 **model** [in] Section
+
+### convert_meshes_into_brep
+
+```cpp
+tuple convert_meshes_into_brep(Span corners, Span curves, Span surfaces)
+```
+
+
+ Convert a set of EdgedCurve3D and SurfaceMesh3D into a BRep, without meshed Blocks. This function first merges the input surfaces together and then uses the adjacencies between surface polygons to determine BRep Surface extensions and, as a consequence, geometries of BRep Lines. BRep Lines will correspond to merged SurfaceMesh3D edges shared by 1 or more than 2 polygons, by 2 polygons if there are not set as adjacent, or by Curve edges. A colocation between the points of the input corners, curves and the merged surface is used to determine their common points, the position of the corners and the curves in the final model, and the corresponding topology of the corners and lines (internal/separating a line/surface in two/...).
+
+**corners** [in] Input corners
+
+**curves** [in] Input curves
+
+**surfaces** [in] Input surfaces
+
+**return** the BRep and the mapping between input corners, curves and surfaces and Corner, Line and Surface uuid. One input surface could contribute to several Surfaces depending on the merging result.
+
+### convert_solid_elements_into_brep
+
+```cpp
+tuple convert_solid_elements_into_brep(SolidMesh3D & solid, Span corner_vertices, Span line_edges, Span surface_facets)
+```
+
+
+ Convert a SolidMesh3D into a BRep without meshed Blocks. This function uses the given solid points, edges and facets to define BRep corners, lines and surfaces. Returns VertexIndexMappings mapping the indices of the vertices in the given solid to the corresponding unique vertices in the output model, and IndexToBRepMeshElementsMapping mapping the indices of the given corner, line and surface elements to their elements in the output model. The attributes on the vertices and polyhedra of the given solid will be transfered to the corresponding blocks in the output model.
+
+**solid** [in] Input solid
+
+### surface_facets_from_attribute
+
+```cpp
+vector surface_facets_from_attribute(SolidMesh3D & solid, basic_string_view attribute_name)
+```
+
+
+### convert_surface_elements_into_section
+
+```cpp
+tuple convert_surface_elements_into_section(SurfaceMesh2D & surface, Span corner_vertices, Span line_edges)
+```
+
+
+### convert_meshes_into_section
+
+```cpp
+tuple convert_meshes_into_section(Span corners, Span curves, Span surfaces)
+```
+
+
+### convert_surface_into_section_from_attribute
+
+```cpp
+tuple convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, basic_string_view attribute_name)
+```
+
+
+ Convert a SurfaceMesh2D into a Section with meshed Surfaces. This function uses the Attribute values on each surface polygon to determine Section surface. Section Lines will correspond to SurfaceMesh2D edges shared by only 1 polygon, or by 2 polygons with different attribute values.
+
+**solid** [in] Input solid
+
+**attribute_name** [in] Name of attribute stored on solid polygons
+
+**warning** Attribute should be convertible to float.
 
 
 
