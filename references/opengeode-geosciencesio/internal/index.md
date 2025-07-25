@@ -34,6 +34,7 @@ const name = words.join('-');
 * [MLOutputStructuralModel](MLOutputStructuralModel.md)
 * [PLInput](PLInput.md)
 * [PLOutput](PLOutput.md)
+* [PolyTIFFInput](PolyTIFFInput.md)
 * [PropClassHeaderData](PropClassHeaderData.md)
 * [PropHeaderData](PropHeaderData.md)
 * [RegionSurfaceSide](RegionSurfaceSide.md)
@@ -66,7 +67,7 @@ HeaderData read_header(std::ifstream & file)
 ### read_name
 
 ```cpp
-basic_string read_name(Span tokens)
+basic_string read_name(absl::Span<const std::string_view> tokens)
 ```
 
 
@@ -101,7 +102,7 @@ PropHeaderData read_prop_header(std::ifstream & file, basic_string_view prefix)
 ### read_properties
 
 ```cpp
-void read_properties(const PropHeaderData & properties_header, std::vector<std::vector<double> > & attribute_values, Span tokens, geode::index_t line_properties_position)
+void read_properties(const PropHeaderData & properties_header, std::vector<std::vector<double> > & attribute_values, absl::Span<const std::string_view> tokens, geode::index_t line_properties_position)
 ```
 
 
@@ -172,6 +173,13 @@ bool check_brep_polygons(const BRep & brep)
 
 ```cpp
 optional get_one_border_edge(const SurfaceMesh3D & mesh)
+```
+
+
+### read_coordinate_system
+
+```cpp
+CoordinateSystem read_coordinate_system(GDALDataset & dataset)
 ```
 
 
