@@ -213,7 +213,7 @@ void relax_background_brep_elements(BRepSamplingData & model)
 ### AbslHashValue
 
 ```cpp
-H AbslHashValue(H h, const Edge & edge)
+H AbslHashValue(H h, const Edge & other)
 ```
 
 
