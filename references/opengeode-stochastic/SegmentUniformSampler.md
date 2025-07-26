@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct PointUniformSampler
+# struct SegmentUniformSampler
 
 
 ## Functions
@@ -19,7 +19,7 @@ const name = words.join('-');
 ### sample
 
 ```cpp
-public Point<dimension> sample(RandomEngine & engine, const Object<dimension> & object)
+public OwnerSegment sample(RandomEngine & engine, const struct PointUniformSampler::Object<2> & object, const struct DoubleSampler::Distribution & length, const struct DoubleSampler::Distribution & azimuth)
 ```
 
 

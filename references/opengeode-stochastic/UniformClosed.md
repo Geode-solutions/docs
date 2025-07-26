@@ -34,12 +34,12 @@ public int max_value
 ## Members
 
 ```cpp
-public double min_value
+public unsigned char min_value
 
 ```
 
 ```cpp
-public double max_value
+public unsigned char max_value
 
 ```
 
@@ -51,12 +51,12 @@ public double max_value
 ## Members
 
 ```cpp
-public unsigned char min_value
+public double min_value
 
 ```
 
 ```cpp
-public unsigned char max_value
+public double max_value
 
 ```
 

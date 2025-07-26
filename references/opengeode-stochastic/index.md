@@ -23,6 +23,7 @@ const name = words.join('-');
 * [Gaussian](Gaussian.md)
 * [PointUniformSampler](PointUniformSampler.md)
 * [RandomEngine](RandomEngine.md)
+* [SegmentUniformSampler](SegmentUniformSampler.md)
 * [StochasticLibrary](StochasticLibrary.md)
 * [TruncatedGaussian](TruncatedGaussian.md)
 * [UniformClosedOpen](UniformClosedOpen.md)
