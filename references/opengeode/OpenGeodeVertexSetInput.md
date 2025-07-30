@@ -29,6 +29,13 @@ public void OpenGeodeVertexSetInput(basic_string_view filename)
 ```
 
 
+### additional_files
+
+```cpp
+public AdditionalFiles additional_files()
+```
+
+
 ### read
 
 ```cpp

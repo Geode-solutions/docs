@@ -43,14 +43,7 @@ Inherits from Input<LightRegularGrid<dimension> >
 ### LightRegularGridInput
 
 ```cpp
-public void LightRegularGridInput<dimension>(basic_string_view filename)
-```
-
-
-### read
-
-```cpp
-public LightRegularGrid<dimension> read()
+protected void LightRegularGridInput<dimension>(basic_string_view filename)
 ```
 
 

@@ -22,18 +22,19 @@ Inherits from IOFile
 
 ## Records
 
-MissingFiles
+AdditionalFile
+
+AdditionalFiles
 
 
 
 ## Functions
 
-### check_missing_files
+### additional_files
 
 ```cpp
-public MissingFiles check_missing_files()
+public AdditionalFiles additional_files()
 ```
-
 
 ### is_loadable
 

@@ -203,6 +203,7 @@ const name = words.join('-');
 * [OpenGeodeHybridSolidOutput](OpenGeodeHybridSolidOutput.md)
 * [OpenGeodeHybridSolid](OpenGeodeHybridSolid.md)
 * [OpenGeodeImageLibrary](OpenGeodeImageLibrary.md)
+* [OpenGeodeLightRegularGridInput](OpenGeodeLightRegularGridInput.md)
 * [OpenGeodeMeshLibrary](OpenGeodeMeshLibrary.md)
 * [OpenGeodeModelLibrary](OpenGeodeModelLibrary.md)
 * [OpenGeodePointException](OpenGeodePointException.md)
@@ -616,10 +617,10 @@ RasterImage<dimension> load_raster_image(basic_string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### check_raster_image_missing_files
+### raster_image_additional_files
 
 ```cpp
-typename RasterImageInput<dimension>::MissingFiles check_raster_image_missing_files(basic_string_view filename)
+typename RasterImageInput<dimension>::AdditionalFiles raster_image_additional_files(basic_string_view filename)
 ```
 
 
@@ -1480,10 +1481,10 @@ BRep load_brep(basic_string_view filename)
 
 **return** Loaded BRep.
 
-### check_brep_missing_files
+### brep_additional_files
 
 ```cpp
-MissingFiles check_brep_missing_files(basic_string_view filename)
+AdditionalFiles brep_additional_files(basic_string_view filename)
 ```
 
 
@@ -1534,10 +1535,10 @@ Section load_section(basic_string_view filename)
 
 **return** Loaded Section.
 
-### check_section_missing_files
+### section_additional_files
 
 ```cpp
-MissingFiles check_section_missing_files(basic_string_view filename)
+AdditionalFiles section_additional_files(basic_string_view filename)
 ```
 
 
@@ -1572,10 +1573,10 @@ std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### check_point_set_missing_files
+### point_set_additional_files
 
 ```cpp
-typename PointSetInput<dimension>::MissingFiles check_point_set_missing_files(basic_string_view filename)
+typename PointSetInput<dimension>::AdditionalFiles point_set_additional_files(basic_string_view filename)
 ```
 
 
@@ -1610,10 +1611,10 @@ unique_ptr load_vertex_set(basic_string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### check_vertex_set_missing_files
+### vertex_set_additional_files
 
 ```cpp
-MissingFiles check_vertex_set_missing_files(basic_string_view filename)
+AdditionalFiles vertex_set_additional_files(basic_string_view filename)
 ```
 
 
@@ -1664,6 +1665,19 @@ bool is_vertex_set_saveable(const VertexSet & vertex_set, basic_string_view file
 ```
 
 
+### save_edged_curve
+
+```cpp
+vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
+ API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
+
+**edged_curve** [in] EdgedCurve to save.
+
+**filename** [in] Path to the file where save the EdgedCurve.
+
 ### load_polygonal_surface
 
 ```cpp
@@ -1677,6 +1691,13 @@ std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshI
 
 **filename** [in] Path to the file to load.
 
+### is_edged_curve_saveable
+
+```cpp
+bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
 ### load_polygonal_surface
 
 ```cpp
@@ -1688,10 +1709,10 @@ std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(basic_strin
 
 **filename** [in] Path to the file to load.
 
-### check_polygonal_surface_missing_files
+### polygonal_surface_additional_files
 
 ```cpp
-typename PolygonalSurfaceInput<dimension>::MissingFiles check_polygonal_surface_missing_files(basic_string_view filename)
+typename PolygonalSurfaceInput<dimension>::AdditionalFiles polygonal_surface_additional_files(basic_string_view filename)
 ```
 
 
@@ -1746,10 +1767,10 @@ std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(basic_string_
 
 **filename** [in] Path to the file to load.
 
-### check_polyhedral_solid_missing_files
+### polyhedral_solid_additional_files
 
 ```cpp
-typename PolyhedralSolidInput<dimension>::MissingFiles check_polyhedral_solid_missing_files(basic_string_view filename)
+typename PolyhedralSolidInput<dimension>::AdditionalFiles polyhedral_solid_additional_files(basic_string_view filename)
 ```
 
 
@@ -1811,10 +1832,10 @@ std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filen
 
 **filename** [in] Path to the file to load.
 
-### check_edged_curve_missing_files
+### edged_curve_additional_files
 
 ```cpp
-typename EdgedCurveInput<dimension>::MissingFiles check_edged_curve_missing_files(basic_string_view filename)
+typename EdgedCurveInput<dimension>::AdditionalFiles edged_curve_additional_files(basic_string_view filename)
 ```
 
 
@@ -1875,10 +1896,10 @@ unique_ptr load_graph(basic_string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### check_graph_missing_files
+### graph_additional_files
 
 ```cpp
-MissingFiles check_graph_missing_files(basic_string_view filename)
+AdditionalFiles graph_additional_files(basic_string_view filename)
 ```
 
 
@@ -1913,10 +1934,10 @@ std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view fil
 
 **filename** [in] Path to the file to load.
 
-### check_hybrid_solid_missing_files
+### hybrid_solid_additional_files
 
 ```cpp
-typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_files(basic_string_view filename)
+typename HybridSolidInput<dimension>::AdditionalFiles hybrid_solid_additional_files(basic_string_view filename)
 ```
 
 
@@ -1924,6 +1945,31 @@ typename HybridSolidInput<dimension>::MissingFiles check_hybrid_solid_missing_fi
 
 ```cpp
 bool is_hybrid_solid_loadable(basic_string_view filename)
+```
+
+
+### load_light_regular_grid
+
+```cpp
+LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
+```
+
+
+ API function for loading an LightRegularGrid. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### light_regular_grid_additional_files
+
+```cpp
+typename LightRegularGridInput<dimension>::AdditionalFiles light_regular_grid_additional_files(basic_string_view filename)
+```
+
+
+### is_light_regular_grid_loadable
+
+```cpp
+bool is_light_regular_grid_loadable(basic_string_view filename)
 ```
 
 
@@ -1951,10 +1997,10 @@ std::unique_ptr<RegularGrid<dimension> > load_regular_grid(basic_string_view fil
 
 **filename** [in] Path to the file to load.
 
-### check_regular_grid_missing_files
+### regular_grid_additional_files
 
 ```cpp
-typename RegularGridInput<dimension>::MissingFiles check_regular_grid_missing_files(basic_string_view filename)
+typename RegularGridInput<dimension>::AdditionalFiles regular_grid_additional_files(basic_string_view filename)
 ```
 
 
@@ -1989,10 +2035,10 @@ std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(basic_strin
 
 **filename** [in] Path to the file to load.
 
-### check_tetrahedral_solid_missing_files
+### tetrahedral_solid_additional_files
 
 ```cpp
-typename TetrahedralSolidInput<dimension>::MissingFiles check_tetrahedral_solid_missing_files(basic_string_view filename)
+typename TetrahedralSolidInput<dimension>::AdditionalFiles tetrahedral_solid_additional_files(basic_string_view filename)
 ```
 
 
@@ -2027,10 +2073,10 @@ std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(basic
 
 **filename** [in] Path to the file to load.
 
-### check_triangulated_surface_missing_files
+### triangulated_surface_additional_files
 
 ```cpp
-typename TriangulatedSurfaceInput<dimension>::MissingFiles check_triangulated_surface_missing_files(basic_string_view filename)
+typename TriangulatedSurfaceInput<dimension>::AdditionalFiles triangulated_surface_additional_files(basic_string_view filename)
 ```
 
 
@@ -2041,55 +2087,10 @@ bool is_triangulated_surface_loadable(basic_string_view filename)
 ```
 
 
-### load_light_regular_grid
-
-```cpp
-LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
-```
-
-
- API function for loading an LightRegularGrid. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### check_light_regular_grid_missing_files
-
-```cpp
-typename LightRegularGridInput<dimension>::MissingFiles check_light_regular_grid_missing_files(basic_string_view filename)
-```
-
-
-### is_light_regular_grid_loadable
-
-```cpp
-bool is_light_regular_grid_loadable(basic_string_view filename)
-```
-
-
 ### register_geode_mesh_output
 
 ```cpp
 void register_geode_mesh_output()
-```
-
-
-### save_edged_curve
-
-```cpp
-vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
- API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
-
-**edged_curve** [in] EdgedCurve to save.
-
-**filename** [in] Path to the file where save the EdgedCurve.
-
-### is_edged_curve_saveable
-
-```cpp
-bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
 ```
 
 
@@ -2786,90 +2787,6 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 ```
 
 
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
-```
-
-
-### point_triangle_position_all_zero
-
-```cpp
-POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### compute_determinants
-
-```cpp
-POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_tetrahedron_position_exact
-
-```cpp
-POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
-```
-
-
 ### point_segment_projection
 
 ```cpp
@@ -2988,6 +2905,90 @@ std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std:
 
 ```cpp
 std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
+```
+
+
+### point_triangle_position_all_zero
+
+```cpp
+POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### compute_determinants
+
+```cpp
+POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_tetrahedron_position_exact
+
+```cpp
+POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 

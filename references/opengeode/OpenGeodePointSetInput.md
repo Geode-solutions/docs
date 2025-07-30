@@ -29,6 +29,13 @@ public void OpenGeodePointSetInput<dimension>(basic_string_view filename)
 ```
 
 
+### additional_files
+
+```cpp
+public typename PointSetInput<dimension>::AdditionalFiles additional_files()
+```
+
+
 ### read
 
 ```cpp

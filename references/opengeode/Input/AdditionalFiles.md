@@ -11,18 +11,18 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct MissingFiles
+# struct AdditionalFiles
 
 
 ## Members
 
 ```cpp
-public vector additional_files
+public std::vector<AdditionalFile> optional_files
 
 ```
 
 ```cpp
-public vector mandatory_files
+public std::vector<AdditionalFile> mandatory_files
 
 ```
 
@@ -30,17 +30,10 @@ public vector mandatory_files
 
 ## Functions
 
-### has_missing_files
+### has_additional_files
 
 ```cpp
-public bool has_missing_files()
-```
-
-
-### operator bool
-
-```cpp
-public bool operator bool()
+public bool has_additional_files()
 ```
 
 

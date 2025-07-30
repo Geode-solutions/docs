@@ -11,35 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class OpenGeodeEdgedCurveInput
+# class OpenGeodeLightRegularGridInput
 
 
 ```cpp
-Inherits from EdgedCurveInput<dimension>
+Inherits from LightRegularGridInput<dimension>
 ```
 
 
 
 ## Functions
 
-### OpenGeodeEdgedCurveInput
+### OpenGeodeLightRegularGridInput
 
 ```cpp
-public void OpenGeodeEdgedCurveInput<dimension>(basic_string_view filename)
-```
-
-
-### additional_files
-
-```cpp
-public typename EdgedCurveInput<dimension>::AdditionalFiles additional_files()
+public void OpenGeodeLightRegularGridInput<dimension>(basic_string_view filename)
 ```
 
 
 ### read
 
 ```cpp
-public std::unique_ptr<EdgedCurve<dimension> > read(const MeshImpl & impl)
+protected LightRegularGrid<dimension> read()
+```
+
+
+### additional_files
+
+```cpp
+protected typename LightRegularGridInput<dimension>::AdditionalFiles additional_files()
 ```
 
 

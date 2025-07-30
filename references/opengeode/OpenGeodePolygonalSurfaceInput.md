@@ -29,6 +29,13 @@ public void OpenGeodePolygonalSurfaceInput<dimension>(basic_string_view filename
 ```
 
 
+### additional_files
+
+```cpp
+public typename PolygonalSurfaceInput<dimension>::AdditionalFiles additional_files()
+```
+
+
 ### read
 
 ```cpp

@@ -11,35 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class OpenGeodeRasterImageInput
+# struct AdditionalFile
 
+
+## Members
 
 ```cpp
-Inherits from RasterImageInput<dimension>
+public basic_string filename
+
+```
+
+```cpp
+public bool is_missing
+
 ```
 
 
 
 ## Functions
 
-### OpenGeodeRasterImageInput
+### AdditionalFile
 
 ```cpp
-public void OpenGeodeRasterImageInput<dimension>(basic_string_view filename)
-```
-
-
-### read
-
-```cpp
-public RasterImage<dimension> read()
-```
-
-
-### additional_files
-
-```cpp
-public typename RasterImageInput<dimension>::AdditionalFiles additional_files()
+public void AdditionalFile(basic_string filename_in, bool is_missing_in)
 ```
 
 
