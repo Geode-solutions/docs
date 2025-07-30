@@ -50,5 +50,12 @@ public bool is_loadable()
 ```
 
 
+### additional_files
+
+```cpp
+public AdditionalFiles additional_files()
+```
+
+
 
 

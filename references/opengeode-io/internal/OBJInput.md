@@ -43,10 +43,10 @@ public unique_ptr read(const MeshImpl & impl)
 ```
 
 
-### check_missing_files
+### additional_files
 
 ```cpp
-public MissingFiles check_missing_files()
+public AdditionalFiles additional_files()
 ```
 
 

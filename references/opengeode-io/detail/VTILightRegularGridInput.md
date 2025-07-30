@@ -50,6 +50,13 @@ public bool is_loadable()
 ```
 
 
+### additional_files
+
+```cpp
+public typename LightRegularGridInput<dimension>::AdditionalFiles additional_files()
+```
+
+
 
 
 # class VTILightRegularGridInput

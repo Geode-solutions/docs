@@ -20,6 +20,7 @@ const name = words.join('-');
 * [DotPolygonalOutput](DotPolygonalOutput.md)
 * [DotSurfaceOutputImpl](DotSurfaceOutputImpl.md)
 * [DotTriangulatedOutput](DotTriangulatedOutput.md)
+* [GDALFile](GDALFile.md)
 * [VTIGridInputImpl](VTIGridInputImpl.md)
 * [VTIGridOutputImpl](VTIGridOutputImpl.md)
 * [VTILightRegularGridInput](VTILightRegularGridInput.md)

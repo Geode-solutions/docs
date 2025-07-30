@@ -11,35 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class SVGInput
-
-
-```cpp
-Inherits from SectionInput
-```
-
+# class GDALFile
 
 
 ## Functions
 
-### SVGInput
+### GDALFile
 
 ```cpp
-public void SVGInput(basic_string_view filename)
+public void GDALFile(basic_string_view filename)
 ```
 
 
-### extension
+### ~GDALFile
 
 ```cpp
-public basic_string_view extension()
+public void ~GDALFile()
 ```
 
 
-### read
+### read_coordinate_system
 
 ```cpp
-public Section read()
+public CoordinateSystem read_coordinate_system()
 ```
 
 
@@ -47,6 +41,13 @@ public Section read()
 
 ```cpp
 public AdditionalFiles additional_files()
+```
+
+
+### dataset
+
+```cpp
+protected GDALDataset & dataset()
 ```
 
 

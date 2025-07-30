@@ -14,6 +14,12 @@ const name = words.join('-');
 # class ImageInputImpl
 
 
+```cpp
+Inherits from GDALFile
+```
+
+
+
 ## Functions
 
 ### ImageInputImpl

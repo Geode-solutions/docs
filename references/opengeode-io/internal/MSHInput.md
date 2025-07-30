@@ -43,5 +43,12 @@ public BRep read()
 ```
 
 
+### additional_files
+
+```cpp
+public AdditionalFiles additional_files()
+```
+
+
 
 
