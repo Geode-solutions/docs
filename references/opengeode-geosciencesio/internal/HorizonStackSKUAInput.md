@@ -43,6 +43,13 @@ public HorizonsStack<dimension> read()
 ```
 
 
+### additional_files
+
+```cpp
+public typename HorizonsStackInput<dimension>::AdditionalFiles additional_files()
+```
+
+
 
 
 # class HorizonStackSKUAInput

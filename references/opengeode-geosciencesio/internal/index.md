@@ -176,12 +176,5 @@ optional get_one_border_edge(const SurfaceMesh3D & mesh)
 ```
 
 
-### read_coordinate_system
-
-```cpp
-CoordinateSystem read_coordinate_system(GDALDataset & dataset)
-```
-
-
 
 
