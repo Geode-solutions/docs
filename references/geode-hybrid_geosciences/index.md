@@ -27,5 +27,6 @@ const name = words.join('-');
 * [PillarStructuralModelInspectionResult](PillarStructuralModelInspectionResult.md)
 * [PillarStructuralModelOptions](PillarStructuralModelOptions.md)
 * [PointsOutsideTopographyInspectionResult](PointsOutsideTopographyInspectionResult.md)
+* [SurfacesCollectionInspectionResult](SurfacesCollectionInspectionResult.md)
 
 

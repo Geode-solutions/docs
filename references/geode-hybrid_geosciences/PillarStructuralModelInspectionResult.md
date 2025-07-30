@@ -36,6 +36,11 @@ public DifferentHorizonBoundariesSizeInspectionResult different_horizon_boundari
 
 ```
 
+```cpp
+public SurfacesCollectionInspectionResult surfaces_with_no_geological_collection
+
+```
+
 
 
 ## Functions
