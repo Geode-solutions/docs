@@ -155,10 +155,10 @@ StratigraphicSection load_stratigraphic_section(basic_string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### check_stratigraphic_section_missing_files
+### stratigraphic_section_additional_files
 
 ```cpp
-MissingFiles check_stratigraphic_section_missing_files(basic_string_view filename)
+AdditionalFiles stratigraphic_section_additional_files(basic_string_view filename)
 ```
 
 
@@ -180,10 +180,10 @@ CrossSection load_cross_section(basic_string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### check_cross_section_missing_files
+### cross_section_additional_files
 
 ```cpp
-MissingFiles check_cross_section_missing_files(basic_string_view filename)
+class CrossSectionInput::AdditionalFiles cross_section_additional_files(basic_string_view filename)
 ```
 
 
@@ -205,10 +205,10 @@ ImplicitCrossSection load_implicit_cross_section(basic_string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### check_implicit_cross_section_missing_files
+### implicit_cross_section_additional_files
 
 ```cpp
-MissingFiles check_implicit_cross_section_missing_files(basic_string_view filename)
+class ImplicitCrossSectionInput::AdditionalFiles implicit_cross_section_additional_files(basic_string_view filename)
 ```
 
 
@@ -292,10 +292,10 @@ HorizonsStack<dimension> load_horizons_stack(basic_string_view filename)
 
 **return** Loaded HorizonsStack.
 
-### check_horizons_stack_missing_files
+### horizons_stack_additional_files
 
 ```cpp
-typename HorizonsStackInput<dimension>::MissingFiles check_horizons_stack_missing_files(basic_string_view filename)
+typename HorizonsStackInput<dimension>::AdditionalFiles horizons_stack_additional_files(basic_string_view filename)
 ```
 
 
@@ -363,10 +363,10 @@ StructuralModel load_structural_model(basic_string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### check_structural_model_missing_files
+### structural_model_additional_files
 
 ```cpp
-MissingFiles check_structural_model_missing_files(basic_string_view filename)
+AdditionalFiles structural_model_additional_files(basic_string_view filename)
 ```
 
 
@@ -472,10 +472,10 @@ ImplicitStructuralModel load_implicit_structural_model(basic_string_view filenam
 
 **filename** [in] Path to the file to load.
 
-### check_implicit_structural_model_missing_files
+### implicit_structural_model_additional_files
 
 ```cpp
-MissingFiles check_implicit_structural_model_missing_files(basic_string_view filename)
+AdditionalFiles implicit_structural_model_additional_files(basic_string_view filename)
 ```
 
 
@@ -497,10 +497,10 @@ StratigraphicModel load_stratigraphic_model(basic_string_view filename)
 
 **filename** [in] Path to the file to load.
 
-### check_stratigraphic_model_missing_files
+### stratigraphic_model_additional_files
 
 ```cpp
-MissingFiles check_stratigraphic_model_missing_files(basic_string_view filename)
+AdditionalFiles stratigraphic_model_additional_files(basic_string_view filename)
 ```
 
 

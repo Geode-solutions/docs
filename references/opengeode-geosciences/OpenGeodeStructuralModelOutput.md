@@ -53,7 +53,7 @@ public void archive_structural_model_files(const ZipFile & zip_writer)
 ### write
 
 ```cpp
-public vector write(const StructuralModel & structural_model)
+public std::vector<std::string> write(const StructuralModel & structural_model)
 ```
 
 

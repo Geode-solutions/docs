@@ -53,7 +53,7 @@ public void archive_cross_section_files(const ZipFile & zip_writer)
 ### write
 
 ```cpp
-public vector write(const CrossSection & cross_section)
+public std::vector<std::string> write(const CrossSection & cross_section)
 ```
 
 
