@@ -169,6 +169,13 @@ bool is_stratigraphic_section_loadable(basic_string_view filename)
 ```
 
 
+### stratigraphic_section_object_priority
+
+```cpp
+index_t stratigraphic_section_object_priority(basic_string_view filename)
+```
+
+
 ### load_cross_section
 
 ```cpp
@@ -194,6 +201,13 @@ bool is_cross_section_loadable(basic_string_view filename)
 ```
 
 
+### cross_section_object_priority
+
+```cpp
+index_t cross_section_object_priority(basic_string_view filename)
+```
+
+
 ### load_implicit_cross_section
 
 ```cpp
@@ -216,6 +230,13 @@ class ImplicitCrossSectionInput::AdditionalFiles implicit_cross_section_addition
 
 ```cpp
 bool is_implicit_cross_section_loadable(basic_string_view filename)
+```
+
+
+### implicit_cross_section_object_priority
+
+```cpp
+index_t implicit_cross_section_object_priority(basic_string_view filename)
 ```
 
 
@@ -306,6 +327,13 @@ bool is_horizons_stack_loadable(basic_string_view filename)
 ```
 
 
+### horizons_stack_object_priority
+
+```cpp
+index_t horizons_stack_object_priority(basic_string_view filename)
+```
+
+
 ### save_horizons_stack
 
 ```cpp
@@ -374,6 +402,13 @@ AdditionalFiles structural_model_additional_files(basic_string_view filename)
 
 ```cpp
 bool is_structural_model_loadable(basic_string_view filename)
+```
+
+
+### structural_model_object_priority
+
+```cpp
+index_t structural_model_object_priority(basic_string_view filename)
 ```
 
 
@@ -486,6 +521,13 @@ bool is_implicit_structural_model_loadable(basic_string_view filename)
 ```
 
 
+### implicit_structural_model_object_priority
+
+```cpp
+index_t implicit_structural_model_object_priority(basic_string_view filename)
+```
+
+
 ### load_stratigraphic_model
 
 ```cpp
@@ -508,6 +550,13 @@ AdditionalFiles stratigraphic_model_additional_files(basic_string_view filename)
 
 ```cpp
 bool is_stratigraphic_model_loadable(basic_string_view filename)
+```
+
+
+### stratigraphic_model_object_priority
+
+```cpp
+index_t stratigraphic_model_object_priority(basic_string_view filename)
 ```
 
 
