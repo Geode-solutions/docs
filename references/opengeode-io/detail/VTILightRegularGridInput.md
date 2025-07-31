@@ -57,6 +57,13 @@ public typename LightRegularGridInput<dimension>::AdditionalFiles additional_fil
 ```
 
 
+### object_priority
+
+```cpp
+public index_t object_priority()
+```
+
+
 
 
 # class VTILightRegularGridInput
