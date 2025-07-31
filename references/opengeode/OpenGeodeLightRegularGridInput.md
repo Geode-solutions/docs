@@ -43,5 +43,12 @@ protected typename LightRegularGridInput<dimension>::AdditionalFiles additional_
 ```
 
 
+### object_priority
+
+```cpp
+protected index_t object_priority()
+```
+
+
 
 

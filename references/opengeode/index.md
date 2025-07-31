@@ -631,6 +631,13 @@ bool is_raster_image_loadable(basic_string_view filename)
 ```
 
 
+### raster_image_object_priority
+
+```cpp
+index_t raster_image_object_priority(basic_string_view filename)
+```
+
+
 ### save_raster_image
 
 ```cpp
@@ -1495,6 +1502,13 @@ bool is_brep_loadable(basic_string_view filename)
 ```
 
 
+### brep_object_priority
+
+```cpp
+index_t brep_object_priority(basic_string_view filename)
+```
+
+
 ### is_zip_file
 
 ```cpp
@@ -1549,6 +1563,33 @@ bool is_section_loadable(basic_string_view filename)
 ```
 
 
+### section_object_priority
+
+```cpp
+index_t section_object_priority(basic_string_view filename)
+```
+
+
+### save_edged_curve
+
+```cpp
+vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
+ API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
+
+**edged_curve** [in] EdgedCurve to save.
+
+**filename** [in] Path to the file where save the EdgedCurve.
+
+### is_edged_curve_saveable
+
+```cpp
+bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
 ### load_point_set
 
 ```cpp
@@ -1587,6 +1628,13 @@ bool is_point_set_loadable(basic_string_view filename)
 ```
 
 
+### point_set_object_priority
+
+```cpp
+index_t point_set_object_priority(basic_string_view filename)
+```
+
+
 ### load_vertex_set
 
 ```cpp
@@ -1622,6 +1670,13 @@ AdditionalFiles vertex_set_additional_files(basic_string_view filename)
 
 ```cpp
 bool is_vertex_set_loadable(basic_string_view filename)
+```
+
+
+### vertex_set_object_priority
+
+```cpp
+index_t vertex_set_object_priority(basic_string_view filename)
 ```
 
 
@@ -1665,19 +1720,6 @@ bool is_vertex_set_saveable(const VertexSet & vertex_set, basic_string_view file
 ```
 
 
-### save_edged_curve
-
-```cpp
-vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
- API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
-
-**edged_curve** [in] EdgedCurve to save.
-
-**filename** [in] Path to the file where save the EdgedCurve.
-
 ### load_polygonal_surface
 
 ```cpp
@@ -1690,13 +1732,6 @@ std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(const MeshI
 **impl** [in] Data structure implementation.
 
 **filename** [in] Path to the file to load.
-
-### is_edged_curve_saveable
-
-```cpp
-bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
 
 ### load_polygonal_surface
 
@@ -1720,6 +1755,13 @@ typename PolygonalSurfaceInput<dimension>::AdditionalFiles polygonal_surface_add
 
 ```cpp
 bool is_polygonal_surface_loadable(basic_string_view filename)
+```
+
+
+### polygonal_surface_object_priority
+
+```cpp
+index_t polygonal_surface_object_priority(basic_string_view filename)
 ```
 
 
@@ -1778,6 +1820,13 @@ typename PolyhedralSolidInput<dimension>::AdditionalFiles polyhedral_solid_addit
 
 ```cpp
 bool is_polyhedral_solid_loadable(basic_string_view filename)
+```
+
+
+### polyhedral_solid_object_priority
+
+```cpp
+index_t polyhedral_solid_object_priority(basic_string_view filename)
 ```
 
 
@@ -1846,6 +1895,13 @@ bool is_edged_curve_loadable(basic_string_view filename)
 ```
 
 
+### edged_curve_object_priority
+
+```cpp
+index_t edged_curve_object_priority(basic_string_view filename)
+```
+
+
 ### register_geometry_serialize_pcontext
 
 ```cpp
@@ -1910,6 +1966,13 @@ bool is_graph_loadable(basic_string_view filename)
 ```
 
 
+### graph_object_priority
+
+```cpp
+index_t graph_object_priority(basic_string_view filename)
+```
+
+
 ### load_hybrid_solid
 
 ```cpp
@@ -1948,6 +2011,13 @@ bool is_hybrid_solid_loadable(basic_string_view filename)
 ```
 
 
+### hybrid_solid_object_priority
+
+```cpp
+index_t hybrid_solid_object_priority(basic_string_view filename)
+```
+
+
 ### load_light_regular_grid
 
 ```cpp
@@ -1970,6 +2040,13 @@ typename LightRegularGridInput<dimension>::AdditionalFiles light_regular_grid_ad
 
 ```cpp
 bool is_light_regular_grid_loadable(basic_string_view filename)
+```
+
+
+### light_regular_grid_object_priority
+
+```cpp
+index_t light_regular_grid_object_priority(basic_string_view filename)
 ```
 
 
@@ -2011,6 +2088,13 @@ bool is_regular_grid_loadable(basic_string_view filename)
 ```
 
 
+### regular_grid_object_priority
+
+```cpp
+index_t regular_grid_object_priority(basic_string_view filename)
+```
+
+
 ### load_tetrahedral_solid
 
 ```cpp
@@ -2049,6 +2133,13 @@ bool is_tetrahedral_solid_loadable(basic_string_view filename)
 ```
 
 
+### tetrahedral_solid_object_priority
+
+```cpp
+index_t tetrahedral_solid_object_priority(basic_string_view filename)
+```
+
+
 ### load_triangulated_surface
 
 ```cpp
@@ -2084,6 +2175,13 @@ typename TriangulatedSurfaceInput<dimension>::AdditionalFiles triangulated_surfa
 
 ```cpp
 bool is_triangulated_surface_loadable(basic_string_view filename)
+```
+
+
+### triangulated_surface_object_priority
+
+```cpp
+index_t triangulated_surface_object_priority(basic_string_view filename)
 ```
 
 

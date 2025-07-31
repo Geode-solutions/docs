@@ -36,6 +36,13 @@ public typename RegularGridInput<dimension>::AdditionalFiles additional_files()
 ```
 
 
+### object_priority
+
+```cpp
+public index_t object_priority()
+```
+
+
 ### read
 
 ```cpp

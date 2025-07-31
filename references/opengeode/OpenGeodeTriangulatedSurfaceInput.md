@@ -36,6 +36,13 @@ public typename TriangulatedSurfaceInput<dimension>::AdditionalFiles additional_
 ```
 
 
+### object_priority
+
+```cpp
+public index_t object_priority()
+```
+
+
 ### read
 
 ```cpp

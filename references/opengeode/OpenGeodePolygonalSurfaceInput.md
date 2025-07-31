@@ -36,6 +36,13 @@ public typename PolygonalSurfaceInput<dimension>::AdditionalFiles additional_fil
 ```
 
 
+### object_priority
+
+```cpp
+public index_t object_priority()
+```
+
+
 ### read
 
 ```cpp

@@ -36,6 +36,13 @@ public typename PolyhedralSolidInput<dimension>::AdditionalFiles additional_file
 ```
 
 
+### object_priority
+
+```cpp
+public index_t object_priority()
+```
+
+
 ### read
 
 ```cpp
