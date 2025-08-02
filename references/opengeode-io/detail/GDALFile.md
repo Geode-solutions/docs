@@ -37,6 +37,13 @@ public CoordinateSystem read_coordinate_system()
 ```
 
 
+### is_coordinate_system_loadable
+
+```cpp
+public bool is_coordinate_system_loadable()
+```
+
+
 ### additional_files
 
 ```cpp
@@ -47,7 +54,7 @@ public AdditionalFiles additional_files()
 ### dataset
 
 ```cpp
-protected GDALDataset & dataset()
+public GDALDataset & dataset()
 ```
 
 

@@ -19,14 +19,21 @@ const name = words.join('-');
 ### SMESHInputImpl
 
 ```cpp
-public void SMESHInputImpl<Mesh, Builder, element>(basic_string_view filename, Mesh & mesh)
+public void SMESHInputImpl<Mesh, element>(basic_string_view filename, Mesh & mesh)
 ```
 
 
 ### ~SMESHInputImpl
 
 ```cpp
-public void ~SMESHInputImpl<Mesh, Builder, element>()
+public void ~SMESHInputImpl<Mesh, element>()
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 

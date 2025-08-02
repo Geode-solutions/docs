@@ -43,5 +43,12 @@ public RasterImage read_reversed_y_axis_file()
 ```
 
 
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
+```
+
+
 
 

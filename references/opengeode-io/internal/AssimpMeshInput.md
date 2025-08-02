@@ -43,5 +43,12 @@ public std::unique_ptr<Mesh> read_file()
 ```
 
 
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
+```
+
+
 
 

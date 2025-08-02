@@ -33,7 +33,7 @@ public std::unique_ptr<Mesh> read_file()
 ### is_loadable
 
 ```cpp
-public bool is_loadable()
+public Percentage is_loadable()
 ```
 
 
@@ -47,7 +47,7 @@ protected void VTKInputImpl<Mesh>(basic_string_view filename, const char * type)
 ### is_vtk_object_loadable
 
 ```cpp
-protected bool is_vtk_object_loadable(const pugi::xml_node & vtk_object)
+protected void is_vtk_object_loadable(const pugi::xml_node & vtk_object, std::vector<Percentage> & percentages)
 ```
 
 ### read_common_data

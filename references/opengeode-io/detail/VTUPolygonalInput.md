@@ -46,7 +46,7 @@ public unique_ptr read(const MeshImpl & impl)
 ### is_loadable
 
 ```cpp
-public bool is_loadable()
+public Percentage is_loadable()
 ```
 
 

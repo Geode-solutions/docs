@@ -46,7 +46,7 @@ public LightRegularGrid<dimension> read()
 ### is_loadable
 
 ```cpp
-public bool is_loadable()
+public Percentage is_loadable()
 ```
 
 
