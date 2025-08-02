@@ -256,6 +256,7 @@ const name = words.join('-');
 * [OwnerTriangle](OwnerTriangle.md)
 * [PImpl](PImpl.md)
 * [PassKey](PassKey.md)
+* [Percentage](Percentage.md)
 * [Plane](Plane.md)
 * [PointSetBuilder](PointSetBuilder.md)
 * [PointSetInput](PointSetInput.md)
@@ -627,7 +628,7 @@ typename RasterImageInput<dimension>::AdditionalFiles raster_image_additional_fi
 ### is_raster_image_loadable
 
 ```cpp
-bool is_raster_image_loadable(basic_string_view filename)
+Percentage is_raster_image_loadable(basic_string_view filename)
 ```
 
 
@@ -1498,7 +1499,7 @@ AdditionalFiles brep_additional_files(basic_string_view filename)
 ### is_brep_loadable
 
 ```cpp
-bool is_brep_loadable(basic_string_view filename)
+Percentage is_brep_loadable(basic_string_view filename)
 ```
 
 
@@ -1559,7 +1560,7 @@ AdditionalFiles section_additional_files(basic_string_view filename)
 ### is_section_loadable
 
 ```cpp
-bool is_section_loadable(basic_string_view filename)
+Percentage is_section_loadable(basic_string_view filename)
 ```
 
 
@@ -1567,26 +1568,6 @@ bool is_section_loadable(basic_string_view filename)
 
 ```cpp
 index_t section_object_priority(basic_string_view filename)
-```
-
-
-### save_edged_curve
-
-```cpp
-vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
- API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
-
-**edged_curve** [in] EdgedCurve to save.
-
-**filename** [in] Path to the file where save the EdgedCurve.
-
-### is_edged_curve_saveable
-
-```cpp
-bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
 ```
 
 
@@ -1624,7 +1605,7 @@ typename PointSetInput<dimension>::AdditionalFiles point_set_additional_files(ba
 ### is_point_set_loadable
 
 ```cpp
-bool is_point_set_loadable(basic_string_view filename)
+Percentage is_point_set_loadable(basic_string_view filename)
 ```
 
 
@@ -1669,7 +1650,7 @@ AdditionalFiles vertex_set_additional_files(basic_string_view filename)
 ### is_vertex_set_loadable
 
 ```cpp
-bool is_vertex_set_loadable(basic_string_view filename)
+Percentage is_vertex_set_loadable(basic_string_view filename)
 ```
 
 
@@ -1754,7 +1735,7 @@ typename PolygonalSurfaceInput<dimension>::AdditionalFiles polygonal_surface_add
 ### is_polygonal_surface_loadable
 
 ```cpp
-bool is_polygonal_surface_loadable(basic_string_view filename)
+Percentage is_polygonal_surface_loadable(basic_string_view filename)
 ```
 
 
@@ -1819,7 +1800,7 @@ typename PolyhedralSolidInput<dimension>::AdditionalFiles polyhedral_solid_addit
 ### is_polyhedral_solid_loadable
 
 ```cpp
-bool is_polyhedral_solid_loadable(basic_string_view filename)
+Percentage is_polyhedral_solid_loadable(basic_string_view filename)
 ```
 
 
@@ -1891,7 +1872,7 @@ typename EdgedCurveInput<dimension>::AdditionalFiles edged_curve_additional_file
 ### is_edged_curve_loadable
 
 ```cpp
-bool is_edged_curve_loadable(basic_string_view filename)
+Percentage is_edged_curve_loadable(basic_string_view filename)
 ```
 
 
@@ -1962,7 +1943,7 @@ AdditionalFiles graph_additional_files(basic_string_view filename)
 ### is_graph_loadable
 
 ```cpp
-bool is_graph_loadable(basic_string_view filename)
+Percentage is_graph_loadable(basic_string_view filename)
 ```
 
 
@@ -2007,7 +1988,7 @@ typename HybridSolidInput<dimension>::AdditionalFiles hybrid_solid_additional_fi
 ### is_hybrid_solid_loadable
 
 ```cpp
-bool is_hybrid_solid_loadable(basic_string_view filename)
+Percentage is_hybrid_solid_loadable(basic_string_view filename)
 ```
 
 
@@ -2039,7 +2020,7 @@ typename LightRegularGridInput<dimension>::AdditionalFiles light_regular_grid_ad
 ### is_light_regular_grid_loadable
 
 ```cpp
-bool is_light_regular_grid_loadable(basic_string_view filename)
+Percentage is_light_regular_grid_loadable(basic_string_view filename)
 ```
 
 
@@ -2084,7 +2065,7 @@ typename RegularGridInput<dimension>::AdditionalFiles regular_grid_additional_fi
 ### is_regular_grid_loadable
 
 ```cpp
-bool is_regular_grid_loadable(basic_string_view filename)
+Percentage is_regular_grid_loadable(basic_string_view filename)
 ```
 
 
@@ -2129,7 +2110,7 @@ typename TetrahedralSolidInput<dimension>::AdditionalFiles tetrahedral_solid_add
 ### is_tetrahedral_solid_loadable
 
 ```cpp
-bool is_tetrahedral_solid_loadable(basic_string_view filename)
+Percentage is_tetrahedral_solid_loadable(basic_string_view filename)
 ```
 
 
@@ -2174,7 +2155,7 @@ typename TriangulatedSurfaceInput<dimension>::AdditionalFiles triangulated_surfa
 ### is_triangulated_surface_loadable
 
 ```cpp
-bool is_triangulated_surface_loadable(basic_string_view filename)
+Percentage is_triangulated_surface_loadable(basic_string_view filename)
 ```
 
 
@@ -2189,6 +2170,26 @@ index_t triangulated_surface_object_priority(basic_string_view filename)
 
 ```cpp
 void register_geode_mesh_output()
+```
+
+
+### save_edged_curve
+
+```cpp
+vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
+ API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
+
+**edged_curve** [in] EdgedCurve to save.
+
+**filename** [in] Path to the file where save the EdgedCurve.
+
+### is_edged_curve_saveable
+
+```cpp
+bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
 ```
 
 
@@ -2885,6 +2886,90 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 ```
 
 
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
+```
+
+
+### point_segment_position_exact
+
+```cpp
+POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
+```
+
+
+### point_triangle_position_all_zero
+
+```cpp
+POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### compute_determinants
+
+```cpp
+POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
+```
+
+
+### point_triangle_position_exact
+
+```cpp
+POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### point_tetrahedron_position_exact
+
+```cpp
+POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
+```
+
+
+### point_triangle_position
+
+```cpp
+POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
+```
+
+
+### are_points_aligned
+
+```cpp
+bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
+```
+
+
 ### point_segment_projection
 
 ```cpp
@@ -3003,90 +3088,6 @@ std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std:
 
 ```cpp
 std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
-```
-
-
-### point_triangle_position_all_zero
-
-```cpp
-POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### compute_determinants
-
-```cpp
-POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_tetrahedron_position_exact
-
-```cpp
-POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### point_triangle_position
-
-```cpp
-POSITION point_triangle_position(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point2D & point0, const Point2D & point1, const Point2D & point2)
-```
-
-
-### are_points_aligned
-
-```cpp
-bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Point3D & point2)
 ```
 
 

@@ -11,56 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class OpenGeodeSectionInput
-
-
-```cpp
-Inherits from SectionInput
-```
-
+# class Percentage
 
 
 ## Functions
 
-### OpenGeodeSectionInput
+### Percentage
 
 ```cpp
-public void OpenGeodeSectionInput(basic_string_view filename)
+public void Percentage(double value)
 ```
 
 
-### extension
+### value
 
 ```cpp
-public basic_string_view extension()
+public double value()
 ```
 
 
-### read
+### set_value
 
 ```cpp
-public Section read()
+public void set_value(double value)
 ```
 
 
-### additional_files
+### string
 
 ```cpp
-public AdditionalFiles additional_files()
-```
-
-
-### object_priority
-
-```cpp
-public index_t object_priority()
-```
-
-
-### is_loadable
-
-```cpp
-public Percentage is_loadable()
+public basic_string string()
 ```
 
 

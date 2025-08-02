@@ -36,6 +36,13 @@ public typename PointSetInput<dimension>::AdditionalFiles additional_files()
 ```
 
 
+### read
+
+```cpp
+public std::unique_ptr<PointSet<dimension> > read(const MeshImpl & impl)
+```
+
+
 ### object_priority
 
 ```cpp
@@ -43,10 +50,10 @@ public index_t object_priority()
 ```
 
 
-### read
+### is_loadable
 
 ```cpp
-public std::unique_ptr<PointSet<dimension> > read(const MeshImpl & impl)
+public Percentage is_loadable()
 ```
 
 

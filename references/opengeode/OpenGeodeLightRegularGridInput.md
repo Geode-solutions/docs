@@ -50,5 +50,12 @@ protected index_t object_priority()
 ```
 
 
+### is_loadable
+
+```cpp
+protected Percentage is_loadable()
+```
+
+
 
 
