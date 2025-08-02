@@ -165,7 +165,7 @@ AdditionalFiles stratigraphic_section_additional_files(basic_string_view filenam
 ### is_stratigraphic_section_loadable
 
 ```cpp
-bool is_stratigraphic_section_loadable(basic_string_view filename)
+Percentage is_stratigraphic_section_loadable(basic_string_view filename)
 ```
 
 
@@ -197,7 +197,7 @@ class CrossSectionInput::AdditionalFiles cross_section_additional_files(basic_st
 ### is_cross_section_loadable
 
 ```cpp
-bool is_cross_section_loadable(basic_string_view filename)
+Percentage is_cross_section_loadable(basic_string_view filename)
 ```
 
 
@@ -229,7 +229,7 @@ class ImplicitCrossSectionInput::AdditionalFiles implicit_cross_section_addition
 ### is_implicit_cross_section_loadable
 
 ```cpp
-bool is_implicit_cross_section_loadable(basic_string_view filename)
+Percentage is_implicit_cross_section_loadable(basic_string_view filename)
 ```
 
 
@@ -323,7 +323,7 @@ typename HorizonsStackInput<dimension>::AdditionalFiles horizons_stack_additiona
 ### is_horizons_stack_loadable
 
 ```cpp
-bool is_horizons_stack_loadable(basic_string_view filename)
+Percentage is_horizons_stack_loadable(basic_string_view filename)
 ```
 
 
@@ -401,7 +401,7 @@ AdditionalFiles structural_model_additional_files(basic_string_view filename)
 ### is_structural_model_loadable
 
 ```cpp
-bool is_structural_model_loadable(basic_string_view filename)
+Percentage is_structural_model_loadable(basic_string_view filename)
 ```
 
 
@@ -517,7 +517,7 @@ AdditionalFiles implicit_structural_model_additional_files(basic_string_view fil
 ### is_implicit_structural_model_loadable
 
 ```cpp
-bool is_implicit_structural_model_loadable(basic_string_view filename)
+Percentage is_implicit_structural_model_loadable(basic_string_view filename)
 ```
 
 
@@ -549,7 +549,7 @@ AdditionalFiles stratigraphic_model_additional_files(basic_string_view filename)
 ### is_stratigraphic_model_loadable
 
 ```cpp
-bool is_stratigraphic_model_loadable(basic_string_view filename)
+Percentage is_stratigraphic_model_loadable(basic_string_view filename)
 ```
 
 
