@@ -31,7 +31,6 @@ const name = words.join('-');
 * [ScalarFunctionComputer3D](ScalarFunctionComputer3D.md)
 * [SectionSurfaceImpliciter](SectionSurfaceImpliciter.md)
 * [SingleSurfaceImplicitation](SingleSurfaceImplicitation.md)
-* [StratigraphicLSOInput](StratigraphicLSOInput.md)
 * [StructuralModelSequenceImpliciter](StructuralModelSequenceImpliciter.md)
 * [SurfaceImplicitInfo](SurfaceImplicitInfo.md)
 * [VTPCutSurfaceGridOutput](VTPCutSurfaceGridOutput.md)
