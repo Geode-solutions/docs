@@ -57,5 +57,12 @@ public index_t object_priority()
 ```
 
 
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
+```
+
+
 
 

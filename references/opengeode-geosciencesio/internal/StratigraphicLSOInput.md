@@ -11,42 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class GEOTIFFInput
+# class StratigraphicLSOInput
 
 
 ```cpp
-Inherits from LightRegularGridInput2D
+Inherits from StratigraphicModelInput
 ```
 
 
 
 ## Functions
 
-### GEOTIFFInput
+### StratigraphicLSOInput
 
 ```cpp
-public void GEOTIFFInput(basic_string_view filename)
+public void StratigraphicLSOInput(basic_string_view filename)
 ```
 
 
-### extensions
+### extension
 
 ```cpp
-public vector extensions()
+public basic_string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public LightRegularGrid read()
-```
-
-
-### is_loadable
-
-```cpp
-public Percentage is_loadable()
+public StratigraphicModel read()
 ```
 
 
@@ -61,6 +54,13 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 

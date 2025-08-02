@@ -40,6 +40,7 @@ const name = words.join('-');
 * [RegionSurfaceSide](RegionSurfaceSide.md)
 * [SHPInput](SHPInput.md)
 * [SolidFemOutput](SolidFemOutput.md)
+* [StratigraphicLSOInput](StratigraphicLSOInput.md)
 * [TSInput](TSInput.md)
 * [TSOutput](TSOutput.md)
 * [TSurfBorderData](TSurfBorderData.md)
