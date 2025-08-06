@@ -33,7 +33,7 @@ public BRepVolumicInserter & operator=(const BRepVolumicInserter & )
 ### BRepVolumicInserter
 
 ```cpp
-public void BRepVolumicInserter(BRep && brep)
+public void BRepVolumicInserter(BRep & brep)
 ```
 
 
@@ -61,7 +61,7 @@ public void add_scalar_isovalues(basic_string_view scalar_function_name, Span sc
 ### build
 
 ```cpp
-public tuple build()
+public BRepMappings build()
 ```
 
 
