@@ -19,8 +19,11 @@ const name = words.join('-');
 
 * [BallSampler](BallSampler.md)
 * [BoundingBoxSampler](BoundingBoxSampler.md)
+* [Configuration](Configuration.md)
 * [DoubleSampler](DoubleSampler.md)
 * [Gaussian](Gaussian.md)
+* [Mark](Mark.md)
+* [MarkedObject](MarkedObject.md)
 * [PointUniformSampler](PointUniformSampler.md)
 * [RandomEngine](RandomEngine.md)
 * [SegmentUniformSampler](SegmentUniformSampler.md)
