@@ -19,7 +19,7 @@ const name = words.join('-');
 ### StructuralModelSequenceImpliciter
 
 ```cpp
-public void StructuralModelSequenceImpliciter(const StructuralModel & structural_model, StructuralModelBuilder & model_builder, const std::vector<uuid> & sequence_horizons)
+public void StructuralModelSequenceImpliciter(const StructuralModel & structural_model, StructuralModelBuilder & model_builder, const HorizonsStack3D & horizons_stack, const std::vector<uuid> & sequence_horizons)
 ```
 
 

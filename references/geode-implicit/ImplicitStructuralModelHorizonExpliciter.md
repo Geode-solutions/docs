@@ -19,7 +19,7 @@ const name = words.join('-');
 ### ImplicitStructuralModelHorizonExpliciter
 
 ```cpp
-public void ImplicitStructuralModelHorizonExpliciter(const ImplicitStructuralModel & model)
+public void ImplicitStructuralModelHorizonExpliciter(ImplicitStructuralModel & model)
 ```
 
 
@@ -47,11 +47,11 @@ public void explicit_all_horizons()
 ### build
 
 ```cpp
-public tuple build()
+public BRepMappings build()
 ```
 
 
- Returns a new ImplicitStructuralModel with all the given horizons inserted as surfaces and the topology rebuilt. Also gives the "input to output" and "output to input" mappings between given and new implicit model. Only the attributes marked as interpolable will be interpolated along the inserted surfaces.
+ Inserts all the given horizons as surfaces, rebuilds the topology and updates the geological components. Returns the "input to output" and "output to input" mappings between given and new implicit model components. Only the attributes marked as interpolable will be interpolated along the inserted surfaces.
 
 
 
