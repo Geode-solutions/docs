@@ -37,6 +37,13 @@ public ComponentMeshesDegeneration<Model> & operator=(const ComponentMeshesDegen
 ```
 
 
+### ~ComponentMeshesDegeneration
+
+```cpp
+public void ~ComponentMeshesDegeneration<Model>()
+```
+
+
 ### add_small_edges
 
 ```cpp
