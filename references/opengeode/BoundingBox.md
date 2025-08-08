@@ -114,6 +114,13 @@ public bool contains(const Point<dimension> & point)
 ```
 
 
+### contains
+
+```cpp
+public bool contains(const BoundingBox<dimension> & bbox)
+```
+
+
 ### intersects
 
 ```cpp
