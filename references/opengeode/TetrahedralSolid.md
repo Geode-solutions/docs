@@ -86,6 +86,13 @@ public PolyhedronFacetsVertices polyhedron_facets_vertices(index_t polyhedron)
 ```
 
 
+### polyhedron_facets_local_vertices
+
+```cpp
+public PolyhedronFacetsLocalVertices polyhedron_facets_local_vertices(index_t polyhedron)
+```
+
+
 ### vertices_around_vertex
 
 ```cpp
