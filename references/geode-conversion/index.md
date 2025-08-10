@@ -99,6 +99,13 @@ BRepMappings add_brep_segmentation(BRep & brep)
 ```
 
 
+### remove_brep_segmentation
+
+```cpp
+BRepMappings remove_brep_segmentation(BRep & brep)
+```
+
+
 ### add_sharp_features
 
 ```cpp
