@@ -11,13 +11,13 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct PointsOutsideTopographyInspectionResult
+# struct PointsTooFarFromTopographyBoundaryInspectionResult
 
 
 ## Members
 
 ```cpp
-public InspectionIssues points_outside
+public InspectionIssues points_too_far_from_topography
 
 ```
 

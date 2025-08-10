@@ -17,12 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public vector surface_order
-
-```
-
-```cpp
-public GenericMapping slice_to_surfaces_mapping
+public vector slice_collection_order
 
 ```
 

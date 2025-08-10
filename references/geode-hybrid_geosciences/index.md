@@ -17,7 +17,6 @@ const name = words.join('-');
 
 ## Records
 
-* [DifferentHorizonBoundariesSizeInspectionResult](DifferentHorizonBoundariesSizeInspectionResult.md)
 * [HybridGeosciencesPillarLibrary](HybridGeosciencesPillarLibrary.md)
 * [LinesInspectionResult](LinesInspectionResult.md)
 * [MultiZInspectionResult](MultiZInspectionResult.md)
@@ -26,7 +25,18 @@ const name = words.join('-');
 * [PillarStructuralModelException](PillarStructuralModelException.md)
 * [PillarStructuralModelInspectionResult](PillarStructuralModelInspectionResult.md)
 * [PillarStructuralModelOptions](PillarStructuralModelOptions.md)
-* [PointsOutsideTopographyInspectionResult](PointsOutsideTopographyInspectionResult.md)
+* [PointsTooFarFromTopographyBoundaryInspectionResult](PointsTooFarFromTopographyBoundaryInspectionResult.md)
 * [SurfacesCollectionInspectionResult](SurfacesCollectionInspectionResult.md)
+
+
+## Functions
+
+### repair_pillar_model_input
+
+```cpp
+void repair_pillar_model_input(StructuralModel & model, const PillarStructuralModelInspectionResult & inspection_result)
+```
+
+
 
 

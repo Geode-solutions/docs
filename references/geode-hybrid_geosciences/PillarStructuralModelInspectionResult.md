@@ -17,11 +17,6 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public PointsOutsideTopographyInspectionResult points_outside
-
-```
-
-```cpp
 public MultiZInspectionResult multi_z_surfaces
 
 ```
@@ -32,7 +27,7 @@ public LinesInspectionResult not_crossing_lines
 ```
 
 ```cpp
-public DifferentHorizonBoundariesSizeInspectionResult different_horizon_boundaries_size
+public PointsTooFarFromTopographyBoundaryInspectionResult points_too_far_from_topography
 
 ```
 
