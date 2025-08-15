@@ -88,14 +88,14 @@ public bool has_mark()
 ### bounding_box
 
 ```cpp
-public decltype(auto) bounding_box()
+public auto bounding_box()
 ```
 
 
 ### barycenter
 
 ```cpp
-public decltype(auto) barycenter()
+public auto barycenter()
 ```
 
 

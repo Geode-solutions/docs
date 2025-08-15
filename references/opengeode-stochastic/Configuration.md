@@ -54,6 +54,23 @@ public const MarkedObject<Geometry> & object(index_t idx)
 ```
 
 
+
+
+**brief** Bounds-checked access to the marked object at index **p**   Wrapper for std::vector::at().
+
+**throws**if idx is out of range.
+
+### operator[]
+
+```cpp
+public const MarkedObject<Geometry> & operator[](index_t idx)
+```
+
+
+
+
+**brief** Unchecked access to the marked object at index **p**   Wrapper for std::vector::operator[]().
+
 ### object_ids_with_mark
 
 ```cpp
