@@ -72,10 +72,24 @@ public bool is_edge_on_macro_edge(const PolygonEdge & edge)
 ```
 
 
+### is_edge_on_macro_edge
+
+```cpp
+public bool is_edge_on_macro_edge(index_t macro_edge_id, const PolygonEdge & edge)
+```
+
+
 ### is_macro_triangle
 
 ```cpp
 public bool is_macro_triangle(index_t triangle)
+```
+
+
+### macro_edge_vertices
+
+```cpp
+public pair macro_edge_vertices(index_t macro_edge)
 ```
 
 
