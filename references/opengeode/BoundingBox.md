@@ -219,6 +219,13 @@ public std::tuple<local_index_t, double> largest_length()
 ```
 
 
+### n_volume
+
+```cpp
+public double n_volume()
+```
+
+
 ### string
 
 ```cpp
