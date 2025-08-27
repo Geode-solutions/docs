@@ -100,6 +100,13 @@ public double sample_truncated_gaussian(const TruncatedGaussian & law)
 ```
 
 
+### sample_log
+
+```cpp
+public double sample_log()
+```
+
+
 ### sample_bernoulli
 
 ```cpp

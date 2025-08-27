@@ -32,7 +32,7 @@ public void MarkedObject<Geometry>(Geometry && geometry)
 ### MarkedObject
 
 ```cpp
-public void MarkedObject<Geometry>(Geometry && geometry, Mark mark)
+public void MarkedObject<Geometry>(Geometry && geometry, optional mark)
 ```
 
 
