@@ -93,5 +93,12 @@ public void filter(index_t moved_old_vertex_id, const VerticesModifier & vertice
 ```
 
 
+### clean
+
+```cpp
+public void clean()
+```
+
+
 
 

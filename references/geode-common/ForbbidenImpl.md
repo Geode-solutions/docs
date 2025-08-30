@@ -44,6 +44,13 @@ public bool empty()
 ```
 
 
+### clean
+
+```cpp
+public void clean()
+```
+
+
 ### filter
 
 ```cpp
