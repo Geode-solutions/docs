@@ -89,5 +89,12 @@ public bool is_position_forbidden(const Point3D & query)
 ```
 
 
+### clean_forbidden
+
+```cpp
+public void clean_forbidden()
+```
+
+
 
 
