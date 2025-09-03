@@ -26,13 +26,6 @@ public void Splitter<Model>(Model & model, ModelModifier & modifier, const Metri
 ```
 
 
-### Splitter
-
-```cpp
-public void Splitter<Model>(Model & model, ModelModifier & modifier, const Metric<dimension> & metric, Span surfaces)
-```
-
-
 ### split
 
 ```cpp

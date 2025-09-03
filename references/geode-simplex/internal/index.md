@@ -143,7 +143,7 @@ LineRemesherOutput<Data::dimension> sample_line_step(Data & data, const uuid & l
 ### remesh_line_step
 
 ```cpp
-LineRemesherOutput<Data::dimension> remesh_line_step(Data & data, const uuid & input_line_id)
+LineRemesherOutput<Data::dimension> remesh_line_step(Data & data, const Line<Data::dimension> & input_line)
 ```
 
 
@@ -161,24 +161,10 @@ void remesh_lines_impl(Data & data)
 ```
 
 
-### remesh_lines_impl
-
-```cpp
-void remesh_lines_impl(Data & data, Span lines_to_remesh)
-```
-
-
 ### sample_lines_impl
 
 ```cpp
 typename Data::Tasks sample_lines_impl(Data & data)
-```
-
-
-### do_remesh_lines_impl
-
-```cpp
-void do_remesh_lines_impl(Data & data, Span lines_to_remesh)
 ```
 
 

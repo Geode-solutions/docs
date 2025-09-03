@@ -84,7 +84,7 @@ void constrained_mesh_blocks(const BRep & output, BRepBuilder & builder)
 ### constrained_mesh_block
 
 ```cpp
-void constrained_mesh_block(const BRep & output, BRepBuilder & builder, const Block3D & block, std::vector<Point3D> && internal_points)
+GenericMapping constrained_mesh_block(const BRep & output, BRepBuilder & builder, const Block3D & block, std::vector<Point3D> && internal_points)
 ```
 
 
@@ -92,13 +92,6 @@ void constrained_mesh_block(const BRep & output, BRepBuilder & builder, const Bl
 
 ```cpp
 void mesh_blocks(const BRep & output, BRepBuilder & builder, BRepGeometricModifier & modifier, const Metric3D & metric)
-```
-
-
-### mesh_blocks
-
-```cpp
-void mesh_blocks(const BRep & output, BRepBuilder & builder, BRepGeometricModifier & modifier, const Metric3D & metric, Span blocks_to_mesh)
 ```
 
 
@@ -137,20 +130,6 @@ tuple section_simplex_remesh(Section && section, const Metric2D & metric)
 ```
 
 
-### remesh_corners
-
-```cpp
-void remesh_corners(SectionRemeshingData & data)
-```
-
-
-### remesh_corners
-
-```cpp
-void remesh_corners(BRepRemeshingData & data)
-```
-
-
 ### relax_lines
 
 ```cpp
@@ -158,24 +137,10 @@ void relax_lines(const Section & section, SectionGeometricModifier & modifier, c
 ```
 
 
-### relax_lines
-
-```cpp
-void relax_lines(const Section & section, SectionGeometricModifier & modifier, const Metric2D & metric, absl::Span<const uuid> lines_to_relax)
-```
-
-
 ### remesh_lines
 
 ```cpp
 void remesh_lines(SectionRemeshingData & data)
-```
-
-
-### remesh_lines
-
-```cpp
-void remesh_lines(SectionRemeshingData & data, absl::Span<const uuid> lines_to_remesh)
 ```
 
 
@@ -190,13 +155,6 @@ void repair_lines(SectionRemeshingData & data)
 
 ```cpp
 void relax_surfaces(const Section & section, SectionGeometricModifier & modifier, const SurfaceRelaxerOptions2D & options)
-```
-
-
-### relax_surfaces
-
-```cpp
-void relax_surfaces(const Section & section, SectionGeometricModifier & modifier, const SurfaceRelaxerOptions2D & options, absl::Span<const uuid> surfaces_to_relax)
 ```
 
 
@@ -228,24 +186,10 @@ void relax_surfaces(const BRep & brep, BRepGeometricModifier & modifier, const S
 ```
 
 
-### relax_surfaces
-
-```cpp
-void relax_surfaces(const BRep & brep, BRepGeometricModifier & modifier, const SurfaceRelaxerOptions3D & options, Span surfaces_to_relax)
-```
-
-
 ### remesh_surfaces
 
 ```cpp
 void remesh_surfaces(BRepRemeshingData & data)
-```
-
-
-### remesh_surfaces
-
-```cpp
-void remesh_surfaces(BRepRemeshingData & data, Span surfaces_to_remesh)
 ```
 
 
@@ -267,41 +211,6 @@ flat_hash_map sample_surfaces(BRepSamplingData & data)
 
 ```cpp
 flat_hash_map sample_surfaces(BRepSamplingData & data, BRepSamplingData::Tasks & line_tasks)
-```
-
-
-### brep_local_simplex_remesh
-
-```cpp
-tuple brep_local_simplex_remesh(BRep && brep, const Metric3D & metric, vector blocks)
-```
-
-
-### relax_lines
-
-```cpp
-void relax_lines(const BRep & brep, BRepGeometricModifier & modifier, const Metric3D & metric)
-```
-
-
-### relax_lines
-
-```cpp
-void relax_lines(const BRep & brep, BRepGeometricModifier & modifier, const Metric3D & metric, Span lines_to_relax)
-```
-
-
-### remesh_lines
-
-```cpp
-void remesh_lines(BRepRemeshingData & data)
-```
-
-
-### remesh_lines
-
-```cpp
-void remesh_lines(BRepRemeshingData & data, Span lines_to_remesh)
 ```
 
 
@@ -330,6 +239,13 @@ tuple brep_simplex_remesh(BRep && brep, const BRepRemeshOptions & options)
 
 ```cpp
 void brep_volumic_simplex_remesh(BRep & brep, const BRepRemeshOptions & options)
+```
+
+
+### relax_lines
+
+```cpp
+void relax_lines(const BRep & brep, BRepGeometricModifier & modifier, const Metric3D & metric)
 ```
 
 
@@ -372,6 +288,13 @@ BrepSurfacesRemeshValidity are_brep_surfaces_remeshable(const BRep & brep)
 
 ```cpp
 BRepRemeshWithoutBlockValidity is_brep_without_block_remeshable(const BRep & brep)
+```
+
+
+### remesh_lines
+
+```cpp
+void remesh_lines(BRepRemeshingData & data)
 ```
 
 

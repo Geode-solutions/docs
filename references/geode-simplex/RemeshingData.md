@@ -33,13 +33,6 @@ public void RemeshingData<DataModel>(Model && background, Model & output, const 
 ```
 
 
-### RemeshingData
-
-```cpp
-public void RemeshingData<DataModel>(Model && background, Model & output, const Metric<dimension> & metric, const absl::flat_hash_map<ComponentType, std::vector<uuid> > & components_to_remesh)
-```
-
-
 ### ~RemeshingData
 
 ```cpp
