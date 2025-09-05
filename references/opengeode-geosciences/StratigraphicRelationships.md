@@ -41,6 +41,13 @@ public bool is_above(const uuid & above, const uuid & under)
 ```
 
 
+### is_directly_above
+
+```cpp
+public bool is_directly_above(const uuid & above, const uuid & under)
+```
+
+
 ### above
 
 ```cpp
