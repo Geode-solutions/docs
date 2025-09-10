@@ -72,6 +72,7 @@ const name = words.join('-');
 * [StratigraphicSectionInput](StratigraphicSectionInput.md)
 * [StratigraphicSectionOutput](StratigraphicSectionOutput.md)
 * [StratigraphicSection](StratigraphicSection.md)
+* [StratigraphicUnitToBlockResult](StratigraphicUnitToBlockResult.md)
 * [StratigraphicUnit](StratigraphicUnit.md)
 * [StratigraphicUnitsBuilder](StratigraphicUnitsBuilder.md)
 * [StratigraphicUnits](StratigraphicUnits.md)
@@ -83,6 +84,102 @@ const name = words.join('-');
 
 
 ## Functions
+
+### load_stratigraphic_model
+
+```cpp
+StratigraphicModel load_stratigraphic_model(basic_string_view filename)
+```
+
+
+ API function for loading a StratigraphicModel. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### stratigraphic_model_additional_files
+
+```cpp
+AdditionalFiles stratigraphic_model_additional_files(basic_string_view filename)
+```
+
+
+### is_stratigraphic_model_loadable
+
+```cpp
+Percentage is_stratigraphic_model_loadable(basic_string_view filename)
+```
+
+
+### stratigraphic_model_object_priority
+
+```cpp
+index_t stratigraphic_model_object_priority(basic_string_view filename)
+```
+
+
+### load_structural_model
+
+```cpp
+StructuralModel load_structural_model(basic_string_view filename)
+```
+
+
+ API function for loading a StructuralModel. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### structural_model_additional_files
+
+```cpp
+class StructuralModelInput::AdditionalFiles structural_model_additional_files(basic_string_view filename)
+```
+
+
+### is_structural_model_loadable
+
+```cpp
+Percentage is_structural_model_loadable(basic_string_view filename)
+```
+
+
+### structural_model_object_priority
+
+```cpp
+index_t structural_model_object_priority(basic_string_view filename)
+```
+
+
+### load_implicit_structural_model
+
+```cpp
+ImplicitStructuralModel load_implicit_structural_model(basic_string_view filename)
+```
+
+
+ API function for loading an ImplicitStructuralModel. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+### implicit_structural_model_additional_files
+
+```cpp
+class ImplicitStructuralModelInput::AdditionalFiles implicit_structural_model_additional_files(basic_string_view filename)
+```
+
+
+### is_implicit_structural_model_loadable
+
+```cpp
+Percentage is_implicit_structural_model_loadable(basic_string_view filename)
+```
+
+
+### implicit_structural_model_object_priority
+
+```cpp
+index_t implicit_structural_model_object_priority(basic_string_view filename)
+```
+
 
 ### save_stratigraphic_model
 
@@ -380,38 +477,6 @@ void register_explicit_deserialize_pcontext(PContext & context)
 
 **warning** The context can be used only once per archive.
 
-### load_structural_model
-
-```cpp
-StructuralModel load_structural_model(basic_string_view filename)
-```
-
-
- API function for loading a StructuralModel. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### structural_model_additional_files
-
-```cpp
-AdditionalFiles structural_model_additional_files(basic_string_view filename)
-```
-
-
-### is_structural_model_loadable
-
-```cpp
-Percentage is_structural_model_loadable(basic_string_view filename)
-```
-
-
-### structural_model_object_priority
-
-```cpp
-index_t structural_model_object_priority(basic_string_view filename)
-```
-
-
 ### assign_edged_curve_geographic_coordinate_system_info
 
 ```cpp
@@ -496,74 +561,17 @@ void convert_section_coordinate_reference_system(const Section & section, Sectio
 ```
 
 
-### load_implicit_structural_model
-
-```cpp
-ImplicitStructuralModel load_implicit_structural_model(basic_string_view filename)
-```
-
-
- API function for loading an ImplicitStructuralModel. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### implicit_structural_model_additional_files
-
-```cpp
-AdditionalFiles implicit_structural_model_additional_files(basic_string_view filename)
-```
-
-
-### is_implicit_structural_model_loadable
-
-```cpp
-Percentage is_implicit_structural_model_loadable(basic_string_view filename)
-```
-
-
-### implicit_structural_model_object_priority
-
-```cpp
-index_t implicit_structural_model_object_priority(basic_string_view filename)
-```
-
-
-### load_stratigraphic_model
-
-```cpp
-StratigraphicModel load_stratigraphic_model(basic_string_view filename)
-```
-
-
- API function for loading a StratigraphicModel. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-### stratigraphic_model_additional_files
-
-```cpp
-AdditionalFiles stratigraphic_model_additional_files(basic_string_view filename)
-```
-
-
-### is_stratigraphic_model_loadable
-
-```cpp
-Percentage is_stratigraphic_model_loadable(basic_string_view filename)
-```
-
-
-### stratigraphic_model_object_priority
-
-```cpp
-index_t stratigraphic_model_object_priority(basic_string_view filename)
-```
-
-
 ### build_structural_model_fault_blocks
 
 ```cpp
 void build_structural_model_fault_blocks(StructuralModel & structural_model)
+```
+
+
+### complete_stratigraphic_unit_block_relationships
+
+```cpp
+StratigraphicUnitToBlockResult complete_stratigraphic_unit_block_relationships(ImplicitStructuralModel & implicit_model)
 ```
 
 

@@ -14,7 +14,7 @@ const name = words.join('-');
 # class ImplicitStructuralModel
 
 
- An Implicit Model is a Structural model where each block has a specific attribute to store the implicit value on its vertices.
+ An Implicit Model is a Structural model where each block has a specific attribute to store the implicit value on its vertices. Moreover, an ImplicitStructuralModel is associated to a HorizonsStack. If one or several horizons of the HorizonsStack is explicited in the model, they have the same uuid as in the HorizonsStack. Either way, each horizon of the HorizonsStack is associated to a specific value of the Implicit attribute.
 
 
 
