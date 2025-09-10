@@ -153,6 +153,13 @@ optional snapping_detection(const SurfaceMesh<dimension> & surface, const Polygo
 ```
 
 
+### edge_snapping_detection
+
+```cpp
+optional edge_snapping_detection(const SurfaceMesh<dimension> & surface, const PolygonEdge & edge, const Point<dimension> & point)
+```
+
+
 ### find_containing_edge
 
 ```cpp
