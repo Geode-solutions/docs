@@ -124,50 +124,72 @@ public CoordinateSystem<dimension> coordinate_system(const Point<dimension> & po
 ### paint_point
 
 ```cpp
-public void paint_point(const Point<dimension> & point, double metric)
+public void paint_point(const Point<dimension> & point, double metric, Compare compare)
 ```
 
 
 ### paint_segment
 
 ```cpp
-public void paint_segment(const Segment<dimension> & segment, double metric)
+public void paint_segment(const Segment<dimension> & segment, double metric, Compare compare)
 ```
 
 
 ### paint_triangle
 
 ```cpp
-public void paint_triangle(const Triangle<dimension> & triangle, double metric)
+public void paint_triangle(const Triangle<dimension> & triangle, double metric, Compare compare)
 ```
 
 
 ### paint_mesh
 
 ```cpp
-public void paint_mesh(const PointSet<dimension> & mesh, double metric)
+public void paint_mesh(const PointSet<dimension> & mesh, double metric, Compare compare)
 ```
 
 
 ### paint_mesh
 
 ```cpp
-public void paint_mesh(const EdgedCurve<dimension> & mesh, double metric)
+public void paint_mesh(const EdgedCurve<dimension> & mesh, double metric, Compare compare)
 ```
 
 
 ### paint_mesh
 
 ```cpp
-public void paint_mesh(const TriangulatedSurface<dimension> & mesh, double metric)
+public void paint_mesh(const TriangulatedSurface<dimension> & mesh, double metric, Compare compare)
 ```
 
 
 ### optimize
 
 ```cpp
-public void optimize(double gradation)
+public void optimize(double gradation, Smoothing smoothing)
 ```
+
+
+
+
+## Enums
+
+| enum class Compare |
+
+--
+
+| minimal |
+| maximal |
+
+
+
+| enum class Smoothing |
+
+--
+
+| ascending |
+| descending |
+
 
 
 

@@ -54,7 +54,7 @@ protected double index_metric(index_t index)
 ### paint_cell
 
 ```cpp
-protected void paint_cell(const Index & index, double metric)
+protected void paint_cell(const Index & index, double metric, Compare compare)
 ```
 
 
