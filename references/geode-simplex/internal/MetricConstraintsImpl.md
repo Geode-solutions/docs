@@ -77,7 +77,7 @@ protected std::vector<std::pair<std::reference_wrapper<const TriangulatedSurface
 ```
 
 ```cpp
-protected std::unique_ptr<Metric<dimension> > metric_
+protected std::unique_ptr<GridMetric<dimension> > metric_
 
 ```
 
