@@ -59,6 +59,9 @@ public SquareMatrix inverse()
 # class SquareMatrix
 
 
+# class SquareMatrix
+
+
  Description of a vector in the given dimension with double coordinates
 
 

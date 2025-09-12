@@ -105,3 +105,12 @@ Inherits from Frame<3U>
 
 
 
+# class CoordinateSystem
+
+
+```cpp
+Inherits from Frame<1U>
+```
+
+
+
