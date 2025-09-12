@@ -68,23 +68,6 @@ public float max_value
 ## Members
 
 ```cpp
-public int min_value
-
-```
-
-```cpp
-public int max_value
-
-```
-
-
-
-# struct UniformClosedOpen
-
-
-## Members
-
-```cpp
 public Type min_value
 
 ```
@@ -111,6 +94,23 @@ public void UniformClosedOpen<Type>()
 public bool is_valid()
 ```
 
+
+
+
+# struct UniformClosedOpen
+
+
+## Members
+
+```cpp
+public int min_value
+
+```
+
+```cpp
+public int max_value
+
+```
 
 
 

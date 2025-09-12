@@ -19,15 +19,15 @@ const name = words.join('-');
 
 * [BallSampler](BallSampler.md)
 * [BoundingBoxSampler](BoundingBoxSampler.md)
-* [Configuration](Configuration.md)
 * [DoubleSampler](DoubleSampler.md)
 * [Gaussian](Gaussian.md)
-* [Mark](Mark.md)
-* [MarkedObject](MarkedObject.md)
+* [ObjectId](ObjectId.md)
+* [ObjectSet](ObjectSet.md)
 * [PointUniformSampler](PointUniformSampler.md)
 * [RandomEngine](RandomEngine.md)
 * [SegmentUniformSampler](SegmentUniformSampler.md)
 * [StochasticLibrary](StochasticLibrary.md)
+* [SubSetDescriptor](SubSetDescriptor.md)
 * [TruncatedGaussian](TruncatedGaussian.md)
 * [UniformClosedOpen](UniformClosedOpen.md)
 * [UniformClosed](UniformClosed.md)
@@ -39,6 +39,20 @@ const name = words.join('-');
 
 ```cpp
 bool hello_world()
+```
+
+
+### object_bounding_box
+
+```cpp
+auto object_bounding_box(const Type & object)
+```
+
+
+### object_barycenter
+
+```cpp
+auto object_barycenter(const Type & object)
 ```
 
 

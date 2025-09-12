@@ -11,13 +11,18 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Mark
+# struct ObjectId
 
 
 ## Members
 
 ```cpp
-public int label
+public index_t index
+
+```
+
+```cpp
+public uuid subset
 
 ```
 
@@ -28,7 +33,7 @@ public int label
 ### operator==
 
 ```cpp
-public bool operator==(const Mark & other)
+public bool operator==(const ObjectId & other)
 ```
 
 
