@@ -267,6 +267,13 @@ public BoundingBox2D bounding_box()
 ```
 
 
+### active_components_bounding_box
+
+```cpp
+public BoundingBox2D active_components_bounding_box()
+```
+
+
 ### native_extension_static
 
 ```cpp

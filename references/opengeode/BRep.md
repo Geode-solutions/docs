@@ -424,6 +424,13 @@ public BoundingBox3D bounding_box()
 ```
 
 
+### active_components_bounding_box
+
+```cpp
+public BoundingBox3D active_components_bounding_box()
+```
+
+
 ### native_extension_static
 
 ```cpp
