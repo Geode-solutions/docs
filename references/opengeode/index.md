@@ -1746,26 +1746,6 @@ index_t polygonal_surface_object_priority(basic_string_view filename)
 ```
 
 
-### save_edged_curve
-
-```cpp
-vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
- API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
-
-**edged_curve** [in] EdgedCurve to save.
-
-**filename** [in] Path to the file where save the EdgedCurve.
-
-### is_edged_curve_saveable
-
-```cpp
-bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
 ### save_polygonal_surface
 
 ```cpp
@@ -2190,6 +2170,26 @@ index_t triangulated_surface_object_priority(basic_string_view filename)
 
 ```cpp
 void register_geode_mesh_output()
+```
+
+
+### save_edged_curve
+
+```cpp
+vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
+ API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
+
+**edged_curve** [in] EdgedCurve to save.
+
+**filename** [in] Path to the file where save the EdgedCurve.
+
+### is_edged_curve_saveable
+
+```cpp
+bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
 ```
 
 
