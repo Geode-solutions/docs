@@ -127,6 +127,13 @@ public void set_node_values_attribute_name(basic_string_view name)
 ```
 
 
+### node_values_attribute_name
+
+```cpp
+public basic_string_view node_values_attribute_name()
+```
+
+
 ### nb_value_nodes
 
 ```cpp
