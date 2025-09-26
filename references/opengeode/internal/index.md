@@ -190,7 +190,7 @@ void next_filtered_embedding_iterator(Iterator & iterator)
 ### meshes_bounding_box
 
 ```cpp
-BoundingBox<dimension> meshes_bounding_box(MeshComponentRange range)
+std::optional<BoundingBox<dimension> > meshes_bounding_box(MeshComponentRange range)
 ```
 
 
