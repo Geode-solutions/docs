@@ -113,6 +113,13 @@ public InlinedVector cell_duplicate_index(const CellIndices & cell, const Point3
 ```
 
 
+### discontinuity_facet_duplicate
+
+```cpp
+public optional discontinuity_facet_duplicate(const CellIndices & cell_indices, const uuid & discontinuity_id, index_t discontinuity_facet, const Vector3D & normal_towards_duplicate)
+```
+
+
 ### discontinuity_vertex_duplicate
 
 ```cpp

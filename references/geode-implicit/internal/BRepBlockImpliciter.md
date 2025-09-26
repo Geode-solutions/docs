@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BRepBlockImpliciter
 
 ```cpp
-public void BRepBlockImpliciter(const BRep & model, BRepBuilder & builder, const Block3D & block, const ImplicitDataManager3D & data_manager)
+public void BRepBlockImpliciter(BRep & model, const Block3D & block, const ImplicitDataManager3D & data_manager)
 ```
 
 

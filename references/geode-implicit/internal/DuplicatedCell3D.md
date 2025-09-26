@@ -47,7 +47,7 @@ public void ~DuplicatedCell3D()
 ### insert_surface_triangles_in_cell
 
 ```cpp
-public void insert_surface_triangles_in_cell(const TriangulatedSurface3D & mesh, Span triangles_ids)
+public bool insert_surface_triangles_in_cell(const TriangulatedSurface3D & mesh, Span triangles_ids)
 ```
 
 
@@ -153,6 +153,13 @@ public optional cell_node_edge_duplicate(local_index_t cell_node, local_index_t 
 
 ```cpp
 public InlinedVector cell_duplicate_index(const Point3D & position)
+```
+
+
+### discontinuity_facet_duplicate
+
+```cpp
+public optional discontinuity_facet_duplicate(const uuid & discontinuity_id, index_t discontinuity_facet, const Vector3D & normal_towards_duplicate)
 ```
 
 

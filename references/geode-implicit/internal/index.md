@@ -34,9 +34,52 @@ const name = words.join('-');
 * [StructuralModelSequenceImpliciter](StructuralModelSequenceImpliciter.md)
 * [SurfaceImplicitInfo](SurfaceImplicitInfo.md)
 * [VTPCutSurfaceGridOutput](VTPCutSurfaceGridOutput.md)
+* [VolumeBorderIdentificationInfo](VolumeBorderIdentificationInfo.md)
 
 
 ## Functions
+
+### computation_grid_explicitation_points
+
+```cpp
+pair computation_grid_explicitation_points(const ComputationGrid3D & computation_grid, Span explicitation_values)
+```
+
+
+### cut_grid_explicitation_points
+
+```cpp
+pair cut_grid_explicitation_points(const CutGrid3D & cut_grid, Span explicitation_values)
+```
+
+
+### snap_function_isovalue_to_vertices
+
+```cpp
+void snap_function_isovalue_to_vertices(const BRep & model, basic_string_view function_name, double isovalue, double tolerance)
+```
+
+
+### horizon_implicit_function_tolerance
+
+```cpp
+double horizon_implicit_function_tolerance(const ImplicitStructuralModel & model, const Horizon3D & horizon)
+```
+
+
+### edge_points_on_isovalue_from_grid
+
+```cpp
+vector edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const ComputationGrid3D & computation_grid, double function_isovalue)
+```
+
+
+### edge_points_on_isovalue_from_grid
+
+```cpp
+vector edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const CutSolidGrid & cut_grid, double function_isovalue, optional border_info)
+```
+
 
 ### save_cut_surface_grid
 
