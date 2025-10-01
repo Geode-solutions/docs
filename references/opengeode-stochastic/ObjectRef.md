@@ -11,13 +11,13 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ObjectId
+# struct ObjectRef
 
 
 ## Members
 
 ```cpp
-public index_t index
+public const Type & object
 
 ```
 
@@ -25,24 +25,6 @@ public index_t index
 public uuid subset
 
 ```
-
-
-
-## Functions
-
-### operator==
-
-```cpp
-public bool operator==(const ObjectId & other)
-```
-
-
-### operator!=
-
-```cpp
-public bool operator!=(const ObjectId & other)
-```
-
 
 
 

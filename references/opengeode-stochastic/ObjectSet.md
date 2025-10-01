@@ -17,6 +17,9 @@ const name = words.join('-');
 # class ObjectSet
 
 
+# class ObjectSet
+
+
 ## Functions
 
 ### get_subset
@@ -103,9 +106,6 @@ public vector neighbors(const Type & object, double searching_distance)
 ```
 
 
-
-
-# class ObjectSet
 
 
 # class ObjectSet

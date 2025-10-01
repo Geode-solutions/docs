@@ -22,6 +22,8 @@ const name = words.join('-');
 * [DoubleSampler](DoubleSampler.md)
 * [Gaussian](Gaussian.md)
 * [ObjectId](ObjectId.md)
+* [ObjectNeighborhood](ObjectNeighborhood.md)
+* [ObjectRef](ObjectRef.md)
 * [ObjectSet](ObjectSet.md)
 * [PointUniformSampler](PointUniformSampler.md)
 * [RandomEngine](RandomEngine.md)

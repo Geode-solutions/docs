@@ -17,6 +17,23 @@ const name = words.join('-');
 ## Members
 
 ```cpp
+public unsigned int min_value
+
+```
+
+```cpp
+public unsigned int max_value
+
+```
+
+
+
+# struct UniformClosedOpen
+
+
+## Members
+
+```cpp
 public double min_value
 
 ```
@@ -51,12 +68,12 @@ public unsigned char max_value
 ## Members
 
 ```cpp
-public float min_value
+public int min_value
 
 ```
 
 ```cpp
-public float max_value
+public int max_value
 
 ```
 
@@ -103,29 +120,12 @@ public bool is_valid()
 ## Members
 
 ```cpp
-public int min_value
+public float min_value
 
 ```
 
 ```cpp
-public int max_value
-
-```
-
-
-
-# struct UniformClosedOpen
-
-
-## Members
-
-```cpp
-public unsigned int min_value
-
-```
-
-```cpp
-public unsigned int max_value
+public float max_value
 
 ```
 
