@@ -214,6 +214,13 @@ flat_hash_map sample_surfaces(BRepSamplingData & data, BRepSamplingData::Tasks &
 ```
 
 
+### compute_worst_quality
+
+```cpp
+double compute_worst_quality(const SwapTrianglesAfter3D & triangles)
+```
+
+
 ### brep_simplex_mesh
 
 ```cpp

@@ -53,6 +53,7 @@ const name = words.join('-');
 * [SolidVertex](SolidVertex.md)
 * [Splitter](Splitter.md)
 * [SurfaceInserter](SurfaceInserter.md)
+* [SurfaceRelaxer3D](SurfaceRelaxer3D.md)
 * [SurfaceRelaxer](SurfaceRelaxer.md)
 * [SurfaceRemesher](SurfaceRemesher.md)
 * [SurfaceSampler3D](SurfaceSampler3D.md)
