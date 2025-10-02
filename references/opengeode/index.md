@@ -3203,6 +3203,13 @@ double tetrahedron_collapse_aspect_ratio(const Tetrahedron & tetra)
 ```
 
 
+### triangle_angle_based_quality
+
+```cpp
+double triangle_angle_based_quality(const Triangle<dimension> & triangle)
+```
+
+
 ### radial_sort
 
 ```cpp
