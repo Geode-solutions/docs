@@ -52,7 +52,7 @@ public void ~SurfaceSegmentFinder<dimension>()
 ### find_path
 
 ```cpp
-public optional find_path()
+public Path find_path()
 ```
 
 

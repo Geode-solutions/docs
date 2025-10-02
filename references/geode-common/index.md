@@ -110,6 +110,7 @@ const name = words.join('-');
 * [MultiMapping](MultiMapping.md)
 * [PartitionnerParameters](PartitionnerParameters.md)
 * [PatchFrontEdge](PatchFrontEdge.md)
+* [Path](Path.md)
 * [PointSetModifier](PointSetModifier.md)
 * [PolygonEdgeSplit](PolygonEdgeSplit.md)
 * [PolygonEdge](PolygonEdge.md)

@@ -111,6 +111,13 @@ bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Tria
 ```
 
 
+### is_modified_triangle_flipped
+
+```cpp
+bool is_modified_triangle_flipped(const Triangle3D & old_triangle, const Triangle3D & modified_triangle)
+```
+
+
 ### snapping_detection
 
 ```cpp
