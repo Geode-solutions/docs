@@ -391,7 +391,7 @@ public std::optional<Vector3D> polyhedron_facet_normal(const PolyhedronFacet & p
 ```
 
 
- Return the normal of a given PolyhedronFacet.
+ Return the normal of a given PolyhedronFacet (in the geode convention, it is oriented towards the inside of the polyhedron).
 
 **polyhedron_facet** [in] Local index of facet in polyhedron.
 
