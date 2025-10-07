@@ -104,17 +104,10 @@ bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Tria
 ```
 
 
-### is_modified_triangle_flipped
+### does_swap_edge_flip_triangles
 
 ```cpp
-bool is_modified_triangle_flipped(const TriangulatedSurface3D & mesh, const Triangle3D & modified_triangle, const PolygonEdge & old_edge)
-```
-
-
-### is_modified_triangle_flipped
-
-```cpp
-bool is_modified_triangle_flipped(const Triangle3D & old_triangle, const Triangle3D & modified_triangle)
+bool does_swap_edge_flip_triangles(const TriangulatedSurface3D & mesh, const PolygonEdge & old_edge)
 ```
 
 
