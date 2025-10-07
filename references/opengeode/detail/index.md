@@ -601,6 +601,13 @@ void transfer_solids_metadata(Span solids, BRepBuilder & model_builder, const Mo
 ```
 
 
+### model_component
+
+```cpp
+const Component<Model::dim> & model_component(Model & model, const uuid & component_id)
+```
+
+
 ### register_basic_pcontext
 
 ```cpp

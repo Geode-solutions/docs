@@ -72,6 +72,13 @@ public const CornerCollection<dimension> & corner_collection(const uuid & id)
 ```
 
 
+### has_corner_collection
+
+```cpp
+public bool has_corner_collection(const uuid & id)
+```
+
+
 ### corner_collections
 
 ```cpp
@@ -90,6 +97,20 @@ public CornerCollectionRange active_corner_collections()
 
 ```cpp
 public CornerCollectionRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const CornerCollection<dimension> & component(const uuid & id)
 ```
 
 

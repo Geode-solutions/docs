@@ -24,6 +24,7 @@ const name = words.join('-');
 * [FacetEdgesImpl](FacetEdgesImpl.md)
 * [GridImpl](GridImpl.md)
 * [MeshComponentsRegistrator](MeshComponentsRegistrator.md)
+* [ModelComponentGetter](ModelComponentGetter.md)
 * [PointsImpl](PointsImpl.md)
 * [PolygonsAroundVertexImpl](PolygonsAroundVertexImpl.md)
 * [PolyhedraAroundVertexImpl](PolyhedraAroundVertexImpl.md)
@@ -170,6 +171,13 @@ POSITION point_triangle_position(SIDE s0, SIDE s1, SIDE s2, bool point_on_plane)
 
 ```cpp
 POSITION point_tetrahedron_position(const std::array<GEO::SIGN, 4> & signs)
+```
+
+
+### get_model_component
+
+```cpp
+const Component<Model::dim> & get_model_component(const Model & model, const uuid & component_id)
 ```
 
 

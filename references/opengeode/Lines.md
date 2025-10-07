@@ -94,6 +94,20 @@ public LineRange components()
 ```
 
 
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const Line<dimension> & component(const uuid & id)
+```
+
+
 ### save_lines
 
 ```cpp

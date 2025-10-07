@@ -103,6 +103,20 @@ public BlockRange components()
 ```
 
 
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const Block<dimension> & component(const uuid & id)
+```
+
+
 ### save_blocks
 
 ```cpp

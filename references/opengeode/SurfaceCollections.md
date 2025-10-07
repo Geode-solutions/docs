@@ -69,6 +69,13 @@ public const SurfaceCollection<dimension> & surface_collection(const uuid & id)
 ```
 
 
+### has_surface_collection
+
+```cpp
+public bool has_surface_collection(const uuid & id)
+```
+
+
 ### surface_collections
 
 ```cpp
@@ -87,6 +94,20 @@ public SurfaceCollectionRange active_surface_collections()
 
 ```cpp
 public SurfaceCollectionRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const SurfaceCollection<dimension> & component(const uuid & id)
 ```
 
 

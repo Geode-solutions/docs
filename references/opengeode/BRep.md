@@ -95,6 +95,13 @@ public BRep clone()
 ```
 
 
+### component
+
+```cpp
+public const Component3D & component(const uuid & component_id)
+```
+
+
 ### boundaries
 
 ```cpp

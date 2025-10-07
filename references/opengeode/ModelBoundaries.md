@@ -69,6 +69,13 @@ public const ModelBoundary<dimension> & model_boundary(const uuid & id)
 ```
 
 
+### has_model_boundary
+
+```cpp
+public bool has_model_boundary(const uuid & id)
+```
+
+
 ### model_boundaries
 
 ```cpp
@@ -87,6 +94,20 @@ public ModelBoundaryRange active_model_boundaries()
 
 ```cpp
 public ModelBoundaryRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const ModelBoundary<dimension> & component(const uuid & id)
 ```
 
 

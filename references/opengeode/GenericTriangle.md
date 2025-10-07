@@ -71,13 +71,6 @@ public typename std::enable_if<T == 3, optional<Vector3D> >::type normal()
 ```
 
 
-### strict_normal
-
-```cpp
-public typename std::enable_if<T == 3, optional<Vector3D> >::type strict_normal()
-```
-
-
 ### plane
 
 ```cpp
@@ -96,13 +89,6 @@ public typename std::enable_if<T == 3, optional<OwnerPlane> >::type owner_plane(
 
 ```cpp
 public typename std::enable_if<T == 3, optional<local_index_t> >::type pivot()
-```
-
-
-### strict_pivot_and_normal
-
-```cpp
-public typename std::enable_if<T == 3, optional<std::pair<local_index_t, Vector3D> > >::type strict_pivot_and_normal()
 ```
 
 

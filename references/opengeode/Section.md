@@ -85,6 +85,13 @@ public Section clone()
 ```
 
 
+### component
+
+```cpp
+public const Component2D & component(const uuid & id)
+```
+
+
 ### boundaries
 
 ```cpp

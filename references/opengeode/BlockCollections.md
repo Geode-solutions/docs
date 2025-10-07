@@ -72,6 +72,13 @@ public const BlockCollection<dimension> & block_collection(const uuid & id)
 ```
 
 
+### has_block_collection
+
+```cpp
+public bool has_block_collection(const uuid & id)
+```
+
+
 ### block_collections
 
 ```cpp
@@ -90,6 +97,20 @@ public BlockCollectionRange active_block_collections()
 
 ```cpp
 public BlockCollectionRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const BlockCollection<dimension> & component(const uuid & id)
 ```
 
 
