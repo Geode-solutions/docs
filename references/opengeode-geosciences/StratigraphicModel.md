@@ -75,6 +75,13 @@ public StratigraphicModel clone()
 ```
 
 
+### component
+
+```cpp
+public const Component3D & component(const uuid & id)
+```
+
+
 ### native_extension_static
 
 ```cpp

@@ -100,6 +100,20 @@ public StratigraphicUnitRange components()
 ```
 
 
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const StratigraphicUnit<dimension> & component(const uuid & id)
+```
+
+
 ### save_stratigraphic_units
 
 ```cpp

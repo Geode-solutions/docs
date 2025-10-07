@@ -75,6 +75,13 @@ public StratigraphicSection clone()
 ```
 
 
+### component
+
+```cpp
+public const Component2D & component(const uuid & id)
+```
+
+
 ### native_extension_static
 
 ```cpp

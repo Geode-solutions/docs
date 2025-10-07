@@ -97,6 +97,20 @@ public FaultRange components()
 ```
 
 
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const Fault<dimension> & component(const uuid & id)
+```
+
+
 ### save_faults
 
 ```cpp

@@ -98,6 +98,13 @@ public HorizonsStack clone()
 ```
 
 
+### component
+
+```cpp
+public const Component<dimension> & component(const uuid & id)
+```
+
+
 ### native_extension_static
 
 ```cpp
