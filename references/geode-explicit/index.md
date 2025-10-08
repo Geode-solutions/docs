@@ -39,6 +39,13 @@ const name = words.join('-');
 
 ## Functions
 
+### add_mesh_elements
+
+```cpp
+void add_mesh_elements(MeshElements & to_elements, const MeshElements & from_elements)
+```
+
+
 ### inspect_generated_brep
 
 ```cpp

@@ -109,11 +109,11 @@ public void add_brep(const BRep & brep)
 ### process
 
 ```cpp
-public void process(const Parameters & parameters)
+public MeshElements process(const Parameters & parameters)
 ```
 
 
- Compute all intersections between input Meshes
+ Compute all intersections between input Meshes, and return the list of not processed elements (e.g. because of process failure).
 
 ### get_surface
 
@@ -161,9 +161,22 @@ public tuple build(const Parameters & parameters)
 ```
 
 
- Returns the merged BRep (no mesh in Blocks) including all the added curves and surfaces and gives the "input to output" and "output to input" mappings between Surfaces and Lines
+ Returns the merged BRep (no mesh in Blocks) including all the added curves and surfaces, gives the "input to output" and "output to input" mappings between Surfaces and Lines, and the list of not processed elements (i.e. input elements that are not in the BRep).
 
 **details** calls process() then creates the model
+
+
+
+## Enums
+
+| enum class ERROR_HANDLING_MODE |
+
+--
+
+| strict |
+| best_effort |
+
+
 
 
 

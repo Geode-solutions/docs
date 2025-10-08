@@ -21,5 +21,10 @@ public bool parallel
 
 ```
 
+```cpp
+public ERROR_HANDLING_MODE build_mode
+
+```
+
 
 

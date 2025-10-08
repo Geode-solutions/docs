@@ -121,6 +121,13 @@ public const MeshElements & element_maps()
 ```
 
 
+### failing_elements
+
+```cpp
+public vector failing_elements()
+```
+
+
 ### get_mesh_elements
 
 ```cpp
@@ -132,6 +139,20 @@ public MeshElements get_mesh_elements(Span elements)
 
 ```cpp
 public index_t find_or_create_graph_vertex(const ComponentMeshElement & cme)
+```
+
+
+### processed_status
+
+```cpp
+public FAILING_STATUS processed_status(index_t element_id)
+```
+
+
+### set_processed_status
+
+```cpp
+public void set_processed_status(index_t element_id, FAILING_STATUS status)
 ```
 
 
@@ -175,6 +196,20 @@ public void resize_maps(const Meshes & meshes)
 ```cpp
 public CleanMappings clean_graph()
 ```
+
+
+
+
+## Enums
+
+| enum class FAILING_STATUS |
+
+--
+
+| not_processed |
+| processed |
+| failed |
+
 
 
 
