@@ -111,6 +111,13 @@ bool does_swap_edge_flip_triangles(const TriangulatedSurface3D & mesh, const Pol
 ```
 
 
+### does_split_edge_flip_triangles
+
+```cpp
+bool does_split_edge_flip_triangles(const TriangulatedSurface3D & mesh, const PolygonEdge & old_edge, const Point3D & apex)
+```
+
+
 ### snapping_detection
 
 ```cpp
