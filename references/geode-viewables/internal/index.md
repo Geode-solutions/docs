@@ -17,6 +17,13 @@ const name = words.join('-');
 
 ## Functions
 
+### save_empty_light_viewable
+
+```cpp
+basic_string save_empty_light_viewable(basic_string_view filename_without_extension)
+```
+
+
 ### save_light_viewable_bbox
 
 ```cpp
