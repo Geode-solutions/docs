@@ -71,6 +71,13 @@ public void add_subset(const uuid & subset_id)
 ```
 
 
+### add_subset
+
+```cpp
+public uuid add_subset()
+```
+
+
 ### add_object
 
 ```cpp
@@ -103,6 +110,13 @@ public vector neighbors(const ObjectId & object_id, double searching_distance)
 
 ```cpp
 public vector neighbors(const Type & object, double searching_distance)
+```
+
+
+### string
+
+```cpp
+public basic_string string()
 ```
 
 
