@@ -50,5 +50,19 @@ void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, cons
 ```
 
 
+### split_block_mesh_from_isovalues_on_grid
+
+```cpp
+void split_block_mesh_from_isovalues_on_grid(BRep & model, const Block3D & block, const geode::TetrahedralSolid3D & block_mesh, geode::VariableAttribute<double> & block_function_attribute, const ComputationGrid3D & grid, Span values_to_densify_around)
+```
+
+
+### split_block_mesh_from_isovalues_on_cut_solid_grid
+
+```cpp
+void split_block_mesh_from_isovalues_on_cut_solid_grid(BRep & model, const Block3D & block, const geode::TetrahedralSolid3D & block_mesh, geode::VariableAttribute<double> & block_function_attribute, const internal::CutSolidGrid & grid, Span values_to_densify_around)
+```
+
+
 
 

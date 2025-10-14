@@ -47,14 +47,14 @@ public void compute_implicit_function(const ImplicitationParameters & computatio
 ### interpolate_function_on_mesh
 
 ```cpp
-public void interpolate_function_on_mesh()
+public void interpolate_function_on_mesh(Span implicit_isovalues)
 ```
 
 
 ### create_mesh_with_function_in_block
 
 ```cpp
-public void create_mesh_with_function_in_block(Span values_to_densify_around)
+public void create_mesh_with_function_in_block(Span implicit_isovalues)
 ```
 
 

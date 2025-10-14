@@ -72,17 +72,17 @@ public const DataPointsManager3D & data_manager()
 ```
 
 
-### build
+### compute_surface_function
 
 ```cpp
-public void build(const BoundingBox3D & computation_bbox, const ImplicitationParameters & computation_parameters)
+public void compute_surface_function(const BoundingBox3D & computation_bbox, const ImplicitationParameters & computation_parameters)
 ```
 
 
-### build
+### compute_surface_function
 
 ```cpp
-public void build(const BoundingBox3D & computation_bbox, double expected_mesh_size)
+public void compute_surface_function(const BoundingBox3D & computation_bbox, double expected_mesh_size)
 ```
 
 
