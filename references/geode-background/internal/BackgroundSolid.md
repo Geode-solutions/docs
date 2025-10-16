@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from ElementSearch<TetrahedralSolid3D>, MacroInfo3D
+Inherits from MacroInfo3D
 ```
 
 
@@ -53,14 +53,14 @@ public const TetrahedralSolid3D & solid()
 ### clone
 
 ```cpp
-public std::tuple<std::unique_ptr<TetrahedralSolid3D>, std::unique_ptr<BackgroundSolid> > clone()
+public tuple clone()
 ```
 
 
 ### clone_solid
 
 ```cpp
-public std::unique_ptr<TetrahedralSolid3D> clone_solid()
+public unique_ptr clone_solid()
 ```
 
 
@@ -95,14 +95,14 @@ public const std::array<index_t, 2> & edge_vertices(index_t edge_id)
 ### macro_edge_path
 
 ```cpp
-public std::optional<std::vector<OrientedEdge> > macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
+public optional macro_edge_path(const std::array<index_t, 2> & edge_vertices, const MeshEdge & macro_edge)
 ```
 
 
 ### macro_facet_patch
 
 ```cpp
-public std::optional<std::vector<index_t> > macro_facet_patch(Span boundary_edges, const MeshPolygon & macro_facet)
+public optional macro_facet_patch(Span boundary_edges, const MeshPolygon & macro_facet)
 ```
 
 

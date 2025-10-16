@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from ElementSearchBuilder<TetrahedralSolid3D>, MacroInfoBuilder3D
+Inherits from MacroInfoBuilder3D
 ```
 
 

@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from ElementSearch<EdgedCurve1D>, MacroInfo1D
+Inherits from MacroInfo1D
 ```
 
 

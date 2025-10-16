@@ -74,7 +74,6 @@ const name = words.join('-');
 * [DetermineSplitsOrderException](DetermineSplitsOrderException.md)
 * [EdgeMacroInfoConfig](EdgeMacroInfoConfig.md)
 * [ElementInsertionInfo](ElementInsertionInfo.md)
-* [ElementSearchBuilder](ElementSearchBuilder.md)
 * [ElementSearch](ElementSearch.md)
 * [ForbiddenInfos](ForbiddenInfos.md)
 * [FourPointsInternalDistance](FourPointsInternalDistance.md)
@@ -321,17 +320,24 @@ void epsilon_optimize_background_surface_elements(BackgroundSurfaceConstraintMod
 ```
 
 
-### simplify_background_solid_macro_edge
+### optimize_background_solid_elements
 
 ```cpp
-void simplify_background_solid_macro_edge(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshEdge & macro_edge)
+void optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
 ```
 
 
-### simplify_background_solid_macro_facet
+### shift_optimize_background_solid_elements
 
 ```cpp
-void simplify_background_solid_macro_facet(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshPolygon & macro_facet)
+void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
+```
+
+
+### blinded_quality_optimize_background_solid_elements
+
+```cpp
+void blinded_quality_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
 ```
 
 
@@ -408,28 +414,28 @@ bool is_edge_removal_allowed(const ModifiableBackgroundSolid & solid, const Poly
 ### allowed_split_collapse_edge
 
 ```cpp
-std::tuple<ALLOWED_COLLAPSE_EDGE_VERTEX, ForbiddenInfos> allowed_split_collapse_edge(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+tuple allowed_split_collapse_edge(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
 ### allowed_split_collapse_edge_by_constraints
 
 ```cpp
-std::tuple<ALLOWED_COLLAPSE_EDGE_VERTEX, ForbiddenInfos> allowed_split_collapse_edge_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+tuple allowed_split_collapse_edge_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
 ### allowed_split_collapse_facet
 
 ```cpp
-std::tuple<ALLOWED_COLLAPSE_FACET_VERTEX, ForbiddenInfos> allowed_split_collapse_facet(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+tuple allowed_split_collapse_facet(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
 ### allowed_split_collapse_facet_by_constraints
 
 ```cpp
-std::tuple<ALLOWED_COLLAPSE_FACET_VERTEX, ForbiddenInfos> allowed_split_collapse_facet_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
+tuple allowed_split_collapse_facet_by_constraints(const ModifiableBackgroundSolid & solid, const PolyhedronFacet & facet, const class BackgroundSolidConstraintModifier::Constraints & constraints)
 ```
 
 
@@ -468,27 +474,6 @@ bool is_swap_facet_allowed_by_constraints(const ModifiableBackgroundSolid & soli
 ```
 
 
-### optimize_background_solid_elements
-
-```cpp
-void optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
-```
-
-
-### shift_optimize_background_solid_elements
-
-```cpp
-void shift_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
-```
-
-
-### blinded_quality_optimize_background_solid_elements
-
-```cpp
-void blinded_quality_optimize_background_solid_elements(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
-```
-
-
 ### find_unique_facet_normals
 
 ```cpp
@@ -523,6 +508,20 @@ SolidSplitInfo do_corafinated_solid_splits(CorafinatedSurface & corafinated_surf
 
 ```cpp
 BijectiveMapping vertex_skins_solid_mapping(const CorafinatedSurface & corafinated_surface, const SurfaceSkins & skins)
+```
+
+
+### simplify_background_solid_macro_edge
+
+```cpp
+void simplify_background_solid_macro_edge(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshEdge & macro_edge)
+```
+
+
+### simplify_background_solid_macro_facet
+
+```cpp
+void simplify_background_solid_macro_facet(BackgroundSolidConstraintModifier & constraint_modifier, index_t first_element, const MeshPolygon & macro_facet)
 ```
 
 

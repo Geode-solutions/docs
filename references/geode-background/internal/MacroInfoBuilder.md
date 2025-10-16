@@ -68,7 +68,7 @@ public void update_vertex(const VertexMultiMapping & mapping)
 ### update_vertices
 
 ```cpp
-public void update_vertices(Span mappings)
+public void update_vertices(absl::Span<const VertexMultiMapping> mappings)
 ```
 
 
@@ -82,7 +82,7 @@ public void update_element(const ElementMapping & element)
 ### update_elements
 
 ```cpp
-public void update_elements(Span elements)
+public void update_elements(absl::Span<const ElementMapping> elements)
 ```
 
 

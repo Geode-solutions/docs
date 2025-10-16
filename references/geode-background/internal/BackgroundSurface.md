@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from ElementSearch<TriangulatedSurface2D>, MacroInfo2D
+Inherits from MacroInfo2D
 ```
 
 

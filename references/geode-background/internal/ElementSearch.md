@@ -39,6 +39,13 @@ public ElementSearch<Mesh> & operator=(const ElementSearch<Mesh> & )
 ```
 
 
+### ElementSearch
+
+```cpp
+public void ElementSearch<Mesh>()
+```
+
+
 ### ~ElementSearch
 
 ```cpp
@@ -53,31 +60,10 @@ public optional initial_containing_element(const Point<Mesh::dim> & point)
 ```
 
 
-### initial_border_element
-
-```cpp
-public index_t initial_border_element()
-```
-
-
 ### reinitialize_elements_tree
 
 ```cpp
-public void reinitialize_elements_tree(const Mesh & mesh, ElementSearchKey )
-```
-
-
-### ElementSearch
-
-```cpp
-protected void ElementSearch<Mesh>()
-```
-
-
-### ElementSearch
-
-```cpp
-protected void ElementSearch<Mesh>(const Mesh & mesh)
+public void reinitialize_elements_tree(const Mesh & mesh)
 ```
 
 

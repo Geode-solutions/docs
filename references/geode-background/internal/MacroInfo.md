@@ -47,35 +47,35 @@ public bool is_macro_info_mandatory(const uuid & mesh_id)
 ### add_macro_vertex_to_background_mesh_vertex
 
 ```cpp
-public void add_macro_vertex_to_background_mesh_vertex(const MeshVertex & macro_vertex, index_t background_mesh_vertex_id, PassKey )
+public void add_macro_vertex_to_background_mesh_vertex(const MeshVertex & macro_vertex, index_t background_mesh_vertex_id, MacroInfoKey )
 ```
 
 
 ### remove_macro_vertex_from_background_mesh_vertex
 
 ```cpp
-public void remove_macro_vertex_from_background_mesh_vertex(const MeshVertex & macro_vertex, index_t background_mesh_vertex_id, PassKey )
+public void remove_macro_vertex_from_background_mesh_vertex(const MeshVertex & macro_vertex, index_t background_mesh_vertex_id, MacroInfoKey )
 ```
 
 
 ### add_macro_element_to_background_mesh_element
 
 ```cpp
-public void add_macro_element_to_background_mesh_element(const MeshElement & macro_element, index_t background_mesh_element_id, PassKey )
+public void add_macro_element_to_background_mesh_element(const MeshElement & macro_element, index_t background_mesh_element_id, MacroInfoKey )
 ```
 
 
 ### remove_macro_element_from_background_mesh_element
 
 ```cpp
-public void remove_macro_element_from_background_mesh_element(const MeshElement & macro_element, index_t background_mesh_element_id, PassKey )
+public void remove_macro_element_from_background_mesh_element(const MeshElement & macro_element, index_t background_mesh_element_id, MacroInfoKey )
 ```
 
 
 ### set_macro_info_mandatory
 
 ```cpp
-public void set_macro_info_mandatory(const uuid & mesh_id, PassKey )
+public void set_macro_info_mandatory(const uuid & mesh_id, MacroInfoKey )
 ```
 
 
