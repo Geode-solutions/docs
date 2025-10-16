@@ -79,5 +79,12 @@ protected void clean_triangles_modifier()
 ```
 
 
+### triangles_clean_stamp
+
+```cpp
+protected index_t triangles_clean_stamp()
+```
+
+
 
 

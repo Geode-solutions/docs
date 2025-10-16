@@ -481,6 +481,13 @@ public vector clean_unique_vertices()
 ```
 
 
+### clean_stamp
+
+```cpp
+public index_t clean_stamp()
+```
+
+
 ### model
 
 ```cpp

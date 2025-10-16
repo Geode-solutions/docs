@@ -330,5 +330,19 @@ protected void split_edge_lines(const struct ModelComponentMeshEdges::LineEdges 
 ```
 
 
+### lines_clean_stamp
+
+```cpp
+protected index_t lines_clean_stamp()
+```
+
+
+### surfaces_clean_stamp
+
+```cpp
+protected index_t surfaces_clean_stamp()
+```
+
+
 
 

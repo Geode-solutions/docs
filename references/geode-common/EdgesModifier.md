@@ -86,5 +86,12 @@ protected void clean_edges_modifier()
 ```
 
 
+### edges_clean_stamp
+
+```cpp
+protected index_t edges_clean_stamp()
+```
+
+
 
 

@@ -128,6 +128,13 @@ public CleanMappings clean()
 
 **return** old2new mappings for edges and vertices.
 
+### clean_stamp
+
+```cpp
+public index_t clean_stamp()
+```
+
+
 ### GraphModifier
 
 ```cpp

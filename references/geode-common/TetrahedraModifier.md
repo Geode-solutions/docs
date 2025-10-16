@@ -79,5 +79,12 @@ protected void clean_tetrahedra_modifier()
 ```
 
 
+### tetrahedra_clean_stamp
+
+```cpp
+protected index_t tetrahedra_clean_stamp()
+```
+
+
 
 

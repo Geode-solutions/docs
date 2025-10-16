@@ -79,5 +79,12 @@ protected void clean_vertices_modifier()
 ```
 
 
+### vertices_clean_stamp
+
+```cpp
+protected index_t vertices_clean_stamp()
+```
+
+
 
 

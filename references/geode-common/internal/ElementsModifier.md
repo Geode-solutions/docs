@@ -44,5 +44,12 @@ public void clean_elements_modifier()
 ```
 
 
+### elements_clean_stamp
+
+```cpp
+public index_t elements_clean_stamp()
+```
+
+
 
 

@@ -80,6 +80,13 @@ public vector clean()
 ```
 
 
+### clean_stamp
+
+```cpp
+public index_t clean_stamp()
+```
+
+
 ### PointSetModifier
 
 ```cpp

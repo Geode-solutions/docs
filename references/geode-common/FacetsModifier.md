@@ -79,5 +79,12 @@ protected void clean_facets_modifier()
 ```
 
 
+### facets_clean_stamp
+
+```cpp
+protected index_t facets_clean_stamp()
+```
+
+
 
 

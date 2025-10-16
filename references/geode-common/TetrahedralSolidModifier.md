@@ -385,6 +385,17 @@ public CleanMappings clean()
 
 **return** old2new mappings for tetrahedra, vertices, edges and facets.
 
+### clean_stamp
+
+```cpp
+public index_t clean_stamp()
+```
+
+
+ Get the modifier clean stamp, which is incremented every time a clean is called on the modifier
+
+**return** the mesh stamp
+
 ### TetrahedralSolidModifier
 
 ```cpp
