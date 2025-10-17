@@ -1571,6 +1571,26 @@ index_t section_object_priority(basic_string_view filename)
 ```
 
 
+### save_edged_curve
+
+```cpp
+vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
+ API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
+
+**edged_curve** [in] EdgedCurve to save.
+
+**filename** [in] Path to the file where save the EdgedCurve.
+
+### is_edged_curve_saveable
+
+```cpp
+bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
 ### load_point_set
 
 ```cpp
@@ -2028,26 +2048,6 @@ Percentage is_light_regular_grid_loadable(basic_string_view filename)
 
 ```cpp
 index_t light_regular_grid_object_priority(basic_string_view filename)
-```
-
-
-### save_edged_curve
-
-```cpp
-vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
- API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
-
-**edged_curve** [in] EdgedCurve to save.
-
-**filename** [in] Path to the file where save the EdgedCurve.
-
-### is_edged_curve_saveable
-
-```cpp
-bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
 ```
 
 
@@ -3434,55 +3434,6 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### find_intersections_with_boundaries
-
-```cpp
-flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
-```
-
-
-### is_point_inside_block
-
-```cpp
-bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
-```
-
-
-### block_containing_point
-
-```cpp
-optional block_containing_point(const BRep & brep, const Point3D & point)
-```
-
-
-### is_point_inside_surface
-
-```cpp
-bool is_point_inside_surface(const Section & section, const Surface2D & surface, const Point2D & point)
-```
-
-
-### surface_containing_point
-
-```cpp
-optional surface_containing_point(const Section & section, const Point2D & point)
-```
-
-
 ### convert_surface_mesh
 
 ```cpp
@@ -3648,6 +3599,55 @@ FixedArray brep_active_coordinate_reference_systems(const BRep & brep)
 
 ```cpp
 FixedArray section_active_coordinate_reference_systems(const Section & section)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### find_intersections_with_boundaries
+
+```cpp
+flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
+```
+
+
+### is_point_inside_block
+
+```cpp
+bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
+```
+
+
+### block_containing_point
+
+```cpp
+optional block_containing_point(const BRep & brep, const Point3D & point)
+```
+
+
+### is_point_inside_surface
+
+```cpp
+bool is_point_inside_surface(const Section & section, const Surface2D & surface, const Point2D & point)
+```
+
+
+### surface_containing_point
+
+```cpp
+optional surface_containing_point(const Section & section, const Point2D & point)
 ```
 
 
