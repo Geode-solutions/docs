@@ -49,6 +49,7 @@ public void add(INSERTION_STATUS insertion_status, geode::index_t element_id)
 
 | inserted |
 | partially_inserted |
+| on_border |
 | outside |
 | degenerated |
 | failed |
