@@ -49,28 +49,28 @@ public bool corner_vertices_are_associated_to_unique_vertices(const Corner2D & c
 ### unique_vertex_has_multiple_corners
 
 ```cpp
-public optional unique_vertex_has_multiple_corners(index_t unique_vertex_index)
+public std::optional<std::string> unique_vertex_has_multiple_corners(index_t unique_vertex_index)
 ```
 
 
 ### corner_has_multiple_embeddings
 
 ```cpp
-public optional corner_has_multiple_embeddings(index_t unique_vertex_index)
+public std::optional<std::string> corner_has_multiple_embeddings(index_t unique_vertex_index)
 ```
 
 
 ### corner_is_not_internal_nor_boundary
 
 ```cpp
-public optional corner_is_not_internal_nor_boundary(index_t unique_vertex_index)
+public std::optional<std::string> corner_is_not_internal_nor_boundary(index_t unique_vertex_index)
 ```
 
 
 ### corner_is_part_of_line_but_not_boundary
 
 ```cpp
-public optional corner_is_part_of_line_but_not_boundary(index_t unique_vertex_index)
+public std::optional<std::string> corner_is_part_of_line_but_not_boundary(index_t unique_vertex_index)
 ```
 
 

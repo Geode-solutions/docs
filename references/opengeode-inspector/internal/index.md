@@ -22,6 +22,7 @@ const name = words.join('-');
 * [ComponentMeshesDegeneration](ComponentMeshesDegeneration.md)
 * [ComponentMeshesManifold](ComponentMeshesManifold.md)
 * [DegenerationImpl](DegenerationImpl.md)
+* [VertexCMVsByComponent](VertexCMVsByComponent.md)
 
 
 ## Functions
@@ -58,6 +59,27 @@ bool model_component_vertices_are_associated_to_unique_vertices(const Model & mo
 
 ```cpp
 InspectionIssues model_component_vertices_not_associated_to_unique_vertices(const Model & model, const ComponentID & component_id, const Mesh & component_mesh)
+```
+
+
+### vertex_cmvs_by_component
+
+```cpp
+VertexCMVsByComponent vertex_cmvs_by_component(const BRep & brep, index_t unique_vertex_id)
+```
+
+
+### nb_expected_block_cmvs
+
+```cpp
+index_t nb_expected_block_cmvs(const BRep & brep, index_t unique_vertex_id, const geode::uuid & block_uuid, const VertexCMVsByComponent & unique_vertex_cmvs)
+```
+
+
+### wrong_nb_expected_block_cmvs
+
+```cpp
+optional wrong_nb_expected_block_cmvs(const BRep & brep, index_t unique_vertex_id, const geode::uuid & block_uuid, const VertexCMVsByComponent & unique_vertex_cmvs)
 ```
 
 

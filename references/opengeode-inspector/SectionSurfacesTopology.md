@@ -53,14 +53,14 @@ public bool surface_vertices_are_associated_to_unique_vertices(const Surface2D &
 ### vertex_is_part_of_invalid_embedded_surface
 
 ```cpp
-public optional vertex_is_part_of_invalid_embedded_surface(index_t unique_vertex_index)
+public std::optional<std::string> vertex_is_part_of_invalid_embedded_surface(index_t unique_vertex_index)
 ```
 
 
 ### vertex_is_part_of_line_and_not_on_surface_border
 
 ```cpp
-public optional vertex_is_part_of_line_and_not_on_surface_border(index_t unique_vertex_index)
+public std::optional<std::string> vertex_is_part_of_line_and_not_on_surface_border(index_t unique_vertex_index)
 ```
 
 

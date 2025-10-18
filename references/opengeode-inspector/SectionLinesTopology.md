@@ -53,28 +53,28 @@ public bool line_vertices_are_associated_to_unique_vertices(const Line2D & line)
 ### vertex_is_part_of_line_with_wrong_relationships_to_surface
 
 ```cpp
-public optional vertex_is_part_of_line_with_wrong_relationships_to_surface(const index_t unique_vertex_index)
+public std::optional<std::string> vertex_is_part_of_line_with_wrong_relationships_to_surface(const index_t unique_vertex_index)
 ```
 
 
 ### vertex_is_part_of_invalid_embedded_line
 
 ```cpp
-public optional vertex_is_part_of_invalid_embedded_line(const index_t unique_vertex_index)
+public std::optional<std::string> vertex_is_part_of_invalid_embedded_line(const index_t unique_vertex_index)
 ```
 
 
 ### vertex_is_part_of_invalid_single_line
 
 ```cpp
-public optional vertex_is_part_of_invalid_single_line(index_t unique_vertex_index)
+public std::optional<std::string> vertex_is_part_of_invalid_single_line(index_t unique_vertex_index)
 ```
 
 
 ### vertex_has_lines_but_is_not_a_corner
 
 ```cpp
-public optional vertex_has_lines_but_is_not_a_corner(index_t unique_vertex_index)
+public std::optional<std::string> vertex_has_lines_but_is_not_a_corner(index_t unique_vertex_index)
 ```
 
 
