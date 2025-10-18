@@ -11,23 +11,18 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct InformationToExtract
+# struct EdgeStamp
 
 
 ## Members
 
 ```cpp
-public vector point_set_ids
+public PolygonEdge edge
 
 ```
 
 ```cpp
-public vector curve_ids
-
-```
-
-```cpp
-public vector surface_ids
+public geode::index_t stamp
 
 ```
 
@@ -35,10 +30,10 @@ public vector surface_ids
 
 ## Functions
 
-### InformationToExtract
+### EdgeStamp
 
 ```cpp
-public void InformationToExtract()
+public void EdgeStamp(PolygonEdge edge_in, geode::index_t stamp_in)
 ```
 
 

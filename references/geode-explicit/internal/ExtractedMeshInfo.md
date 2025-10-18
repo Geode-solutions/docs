@@ -37,7 +37,17 @@ public shared_ptr component_vertices
 ```
 
 ```cpp
-public flat_hash_map background_vertices_to_vertices
+public shared_ptr incident_macro_edges
+
+```
+
+```cpp
+public shared_ptr incident_macro_facets
+
+```
+
+```cpp
+public BijectiveMapping background_vertices_to_vertices
 
 ```
 
@@ -52,17 +62,31 @@ public void ExtractedMeshInfo<Mesh>()
 ```
 
 
-### add_point
+### ExtractedMeshInfo
 
 ```cpp
-public index_t add_point(const BackgroundSolid & background_solid, index_t background_vertex)
+public void ExtractedMeshInfo<Mesh>(ExtractedMeshInfo<Mesh> && )
 ```
 
 
-### find_or_create_point
+### operator=
 
 ```cpp
-public index_t find_or_create_point(const internal::BackgroundSolid & background_solid, index_t background_vertex)
+public ExtractedMeshInfo<Mesh> & operator=(ExtractedMeshInfo<Mesh> && )
+```
+
+
+### ~ExtractedMeshInfo
+
+```cpp
+public void ~ExtractedMeshInfo<Mesh>()
+```
+
+
+### initialize_base_attributes
+
+```cpp
+public void initialize_base_attributes()
 ```
 
 

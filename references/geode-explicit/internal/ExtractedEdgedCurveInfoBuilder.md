@@ -11,25 +11,30 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Parameters
+# class ExtractedEdgedCurveInfoBuilder
 
-
-## Members
 
 ```cpp
-public bool connectivity_parallelization
-
+Inherits from ExtractedMeshInfoBuilder<EdgedCurve3D>
 ```
+
+
+
+## Functions
+
+### ExtractedEdgedCurveInfoBuilder
 
 ```cpp
-public bool geometrical_parallelization
-
+public void ExtractedEdgedCurveInfoBuilder(ExtractedEdgedCurveInfo & extracted_mesh)
 ```
+
+
+### add_mesh
 
 ```cpp
-public ERROR_HANDLING_MODE build_mode
-
+public void add_mesh(const BackgroundSolid & background_solid, const ExtractedEdgedCurveInfo & other_extracted_mesh)
 ```
+
 
 
 

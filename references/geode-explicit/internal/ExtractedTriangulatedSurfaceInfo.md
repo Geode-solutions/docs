@@ -23,11 +23,6 @@ Inherits from ExtractedMeshInfo<TriangulatedSurface3D>
 ## Members
 
 ```cpp
-public shared_ptr polygon_origin
-
-```
-
-```cpp
 public shared_ptr macro_facets
 
 ```
@@ -53,10 +48,38 @@ public void ExtractedTriangulatedSurfaceInfo()
 ```
 
 
+### ExtractedTriangulatedSurfaceInfo
+
+```cpp
+public void ExtractedTriangulatedSurfaceInfo(ExtractedTriangulatedSurfaceInfo && )
+```
+
+
+### operator=
+
+```cpp
+public ExtractedTriangulatedSurfaceInfo & operator=(ExtractedTriangulatedSurfaceInfo && )
+```
+
+
+### ~ExtractedTriangulatedSurfaceInfo
+
+```cpp
+public void ~ExtractedTriangulatedSurfaceInfo()
+```
+
+
 ### enable_edge_attributes
 
 ```cpp
 public void enable_edge_attributes()
+```
+
+
+### initialize_attributes
+
+```cpp
+public void initialize_attributes()
 ```
 
 

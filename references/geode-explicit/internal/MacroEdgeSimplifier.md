@@ -11,25 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Parameters
+# class MacroEdgeSimplifier
 
 
-## Members
+## Functions
 
-```cpp
-public bool connectivity_parallelization
-
-```
+### MacroEdgeSimplifier
 
 ```cpp
-public bool geometrical_parallelization
-
+public void MacroEdgeSimplifier(ExtractedEdgedCurveInfo & data)
 ```
+
+
+### ~MacroEdgeSimplifier
 
 ```cpp
-public ERROR_HANDLING_MODE build_mode
-
+public void ~MacroEdgeSimplifier()
 ```
+
+
+### apply
+
+```cpp
+public void apply()
+```
+
 
 
 

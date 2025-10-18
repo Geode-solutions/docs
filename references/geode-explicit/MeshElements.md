@@ -49,6 +49,27 @@ public bool empty()
 ```
 
 
+### contains_polygon
+
+```cpp
+public bool contains_polygon(const uuid & surface_id, index_t polygon_id)
+```
+
+
+### contains_edge
+
+```cpp
+public bool contains_edge(const uuid & curve_id, index_t edge_id)
+```
+
+
+### contains_point
+
+```cpp
+public bool contains_point(const uuid & point_set_id, index_t point_id)
+```
+
+
 ### size
 
 ```cpp

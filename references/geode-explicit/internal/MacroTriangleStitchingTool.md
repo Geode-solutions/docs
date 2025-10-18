@@ -11,25 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Parameters
+# class MacroTriangleStitchingTool
 
 
-## Members
+## Functions
 
-```cpp
-public bool connectivity_parallelization
-
-```
+### MacroTriangleStitchingTool
 
 ```cpp
-public bool geometrical_parallelization
-
+public void MacroTriangleStitchingTool(geode::internal::ExtractedTriangulatedSurfaceInfo & data, geode::internal::ExtractedTriangulatedSurfaceInfoBuilder & data_builder)
 ```
+
+
+### ~MacroTriangleStitchingTool
 
 ```cpp
-public ERROR_HANDLING_MODE build_mode
-
+public void ~MacroTriangleStitchingTool()
 ```
+
+
+### apply
+
+```cpp
+public void apply()
+```
+
 
 
 

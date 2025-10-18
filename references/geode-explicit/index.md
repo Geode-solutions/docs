@@ -53,5 +53,12 @@ void inspect_generated_brep(const BRep & brep)
 ```
 
 
+### output_mesh
+
+```cpp
+void output_mesh(const TriangulatedSurface3D & mesh)
+```
+
+
 
 

@@ -23,11 +23,6 @@ Inherits from ExtractedMeshInfo<EdgedCurve3D>
 ## Members
 
 ```cpp
-public shared_ptr edge_origin
-
-```
-
-```cpp
 public shared_ptr component_edges
 
 ```
@@ -40,6 +35,27 @@ public shared_ptr component_edges
 
 ```cpp
 public void ExtractedEdgedCurveInfo()
+```
+
+
+### ExtractedEdgedCurveInfo
+
+```cpp
+public void ExtractedEdgedCurveInfo(ExtractedEdgedCurveInfo && )
+```
+
+
+### operator=
+
+```cpp
+public ExtractedEdgedCurveInfo & operator=(ExtractedEdgedCurveInfo && )
+```
+
+
+### ~ExtractedEdgedCurveInfo
+
+```cpp
+public void ~ExtractedEdgedCurveInfo()
 ```
 
 

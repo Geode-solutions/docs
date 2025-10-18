@@ -17,13 +17,20 @@ const name = words.join('-');
 
 ## Records
 
+* [BRepComputer](BRepComputer.md)
 * [BRepModelerMappingsBuilder](BRepModelerMappingsBuilder.md)
+* [EdgeStamp](EdgeStamp.md)
+* [ExtractedEdgedCurveInfoBuilder](ExtractedEdgedCurveInfoBuilder.md)
 * [ExtractedEdgedCurveInfo](ExtractedEdgedCurveInfo.md)
+* [ExtractedMeshInfoBuilder](ExtractedMeshInfoBuilder.md)
 * [ExtractedMeshInfo](ExtractedMeshInfo.md)
 * [ExtractedMeshes](ExtractedMeshes.md)
+* [ExtractedTriangulatedSurfaceInfoBuilder](ExtractedTriangulatedSurfaceInfoBuilder.md)
 * [ExtractedTriangulatedSurfaceInfo](ExtractedTriangulatedSurfaceInfo.md)
-* [InformationToExtract](InformationToExtract.md)
 * [InsertionGraphPerformer](InsertionGraphPerformer.md)
+* [MacroEdgeSimplifier](MacroEdgeSimplifier.md)
+* [MacroTriangleSimplifier](MacroTriangleSimplifier.md)
+* [MacroTriangleStitchingTool](MacroTriangleStitchingTool.md)
 * [MeshElementsIndices](MeshElementsIndices.md)
 * [ModelerMappingsBuilder](ModelerMappingsBuilder.md)
 * [ModelerMetric](ModelerMetric.md)
@@ -46,10 +53,17 @@ unique_ptr build_surface(const BoundingBox2D & bbox, const IsotropicMetric2D & m
 ```
 
 
+### build_solid
+
+```cpp
+unique_ptr build_solid(const BoundingBox3D & bbox, const IsotropicMetric3D & metric)
+```
+
+
 ### extract_macro_info
 
 ```cpp
-tuple extract_macro_info(const BackgroundSolid & background_solid, const InformationToExtract & uuids)
+tuple extract_macro_info(const BackgroundSolid & background_solid, const MeshElements & to_extract)
 ```
 
 
@@ -64,13 +78,6 @@ ElementGraph find_elements_to_insert(const Meshes & meshes)
 
 ```cpp
 ElementGraph find_elements_to_insert_on_border(const Meshes & meshes, vector border_surfaces)
-```
-
-
-### build_solid
-
-```cpp
-unique_ptr build_solid(const BoundingBox3D & bbox, const IsotropicMetric3D & metric)
 ```
 
 

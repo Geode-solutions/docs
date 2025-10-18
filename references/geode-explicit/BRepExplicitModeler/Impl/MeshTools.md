@@ -27,7 +27,7 @@ public std::unique_ptr<typename Mesh::Builder> builder
 ```
 
 ```cpp
-public typename Modifier<Mesh>::type modifier
+public std::unique_ptr<typename Modifier<Mesh>::type> modifier
 
 ```
 
@@ -51,6 +51,13 @@ public void MeshTools<Mesh>(std::unique_ptr<Mesh> mesh_in)
 
 ```cpp
 public void MeshTools<Mesh>(std::unique_ptr<Mesh> mesh_in, bool active)
+```
+
+
+### update
+
+```cpp
+public void update(std::unique_ptr<Mesh> && from_mesh)
 ```
 
 

@@ -11,25 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Parameters
+# class MacroTriangleSimplifier
 
 
-## Members
+## Functions
 
-```cpp
-public bool connectivity_parallelization
-
-```
+### MacroTriangleSimplifier
 
 ```cpp
-public bool geometrical_parallelization
-
+public void MacroTriangleSimplifier(ExtractedTriangulatedSurfaceInfo & data)
 ```
+
+
+### ~MacroTriangleSimplifier
 
 ```cpp
-public ERROR_HANDLING_MODE build_mode
-
+public void ~MacroTriangleSimplifier()
 ```
+
+
+### apply
+
+```cpp
+public void apply()
+```
+
 
 
 
