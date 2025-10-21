@@ -22,7 +22,7 @@ public index_t index
 ```
 
 ```cpp
-public uuid subset
+public uuid set_id
 
 ```
 

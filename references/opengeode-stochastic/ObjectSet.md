@@ -14,102 +14,92 @@ const name = words.join('-');
 # class ObjectSet
 
 
+```cpp
+Inherits from Identifier
+```
+
+
+
 # class ObjectSet
 
 
+```cpp
+Inherits from Identifier
+```
+
+
+
 # class ObjectSet
+
+
+```cpp
+Inherits from Identifier
+```
+
 
 
 ## Functions
 
-### get_subset
+### ObjectSet
 
 ```cpp
-public const std::vector<Type> & get_subset(const uuid & subset_id)
+public void ObjectSet<Type>()
+```
+
+
+### ObjectSet
+
+```cpp
+public void ObjectSet<Type>(ObjectSet<Type> && )
+```
+
+
+### operator=
+
+```cpp
+public ObjectSet<Type> & operator=(ObjectSet<Type> && )
 ```
 
 
 ### get_object
 
 ```cpp
-public const Type & get_object(const ObjectId & object_id)
-```
-
-
-### get_all_object
-
-```cpp
-public vector get_all_object()
-```
-
-
-### nb_subsets
-
-```cpp
-public index_t nb_subsets()
-```
-
-
-### nb_objects_in_subset
-
-```cpp
-public index_t nb_objects_in_subset(const uuid & subset_id)
-```
-
-
-### nb_objects
-
-```cpp
-public index_t nb_objects()
-```
-
-
-### add_subset
-
-```cpp
-public void add_subset(const uuid & subset_id)
-```
-
-
-### add_subset
-
-```cpp
-public uuid add_subset()
+public const Type & get_object(index_t index)
 ```
 
 
 ### add_object
 
 ```cpp
-public ObjectId add_object(Type && object, const uuid & subset_id)
+public index_t add_object(Type && object)
 ```
 
 
 ### update_object
 
 ```cpp
-public void update_object(const ObjectId & object_id, Type && object)
+public void update_object(index_t index, Type && object)
 ```
 
 
 ### remove_object
 
 ```cpp
-public void remove_object(const ObjectId & object_id)
+public void remove_object(index_t index)
 ```
 
 
-### neighbors
+### size
 
 ```cpp
-public vector neighbors(const ObjectId & object_id, double searching_distance)
+public index_t size()
 ```
 
 
-### neighbors
+### empty
 
 ```cpp
-public vector neighbors(const Type & object, double searching_distance)
+public bool empty()
 ```
 
 
@@ -123,5 +113,11 @@ public basic_string string()
 
 
 # class ObjectSet
+
+
+```cpp
+Inherits from Identifier
+```
+
 
 

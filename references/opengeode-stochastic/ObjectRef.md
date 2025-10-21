@@ -22,7 +22,7 @@ public const Type & object
 ```
 
 ```cpp
-public uuid subset
+public uuid set_id
 
 ```
 
