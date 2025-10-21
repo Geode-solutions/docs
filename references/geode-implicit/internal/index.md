@@ -39,13 +39,6 @@ const name = words.join('-');
 
 ## Functions
 
-### brep_from_computation_grid
-
-```cpp
-BRep brep_from_computation_grid(const BoundingBox3D & bounding_box, const ComputationGrid3D & computation_grid, Span values_to_densify_around)
-```
-
-
 ### snap_function_isovalue_to_vertices
 
 ```cpp
@@ -85,6 +78,13 @@ pair computation_grid_explicitation_points(const ComputationGrid3D & computation
 
 ```cpp
 pair cut_grid_explicitation_points(const CutGrid3D & cut_grid, Span explicitation_values)
+```
+
+
+### brep_from_computation_grid
+
+```cpp
+BRep brep_from_computation_grid(const BoundingBox3D & bounding_box, const ComputationGrid3D & computation_grid, Span values_to_densify_around)
 ```
 
 
