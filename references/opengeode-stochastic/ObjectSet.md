@@ -61,6 +61,13 @@ public ObjectSet<Type> & operator=(ObjectSet<Type> && )
 ```
 
 
+### set_name
+
+```cpp
+public void set_name(basic_string_view name)
+```
+
+
 ### get_object
 
 ```cpp

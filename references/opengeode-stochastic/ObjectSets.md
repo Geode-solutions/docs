@@ -102,7 +102,7 @@ public index_t nb_objects()
 ### add_set
 
 ```cpp
-public uuid add_set()
+public uuid add_set(basic_string_view name)
 ```
 
 
