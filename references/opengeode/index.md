@@ -818,7 +818,7 @@ std::optional<std::tuple<double, Point3D, Point3D> > triangle_triangle_distance_
 
  Compute the smallest distance between two triangles
 
-**details** if the two triangles are the same, return nullopt. Only non conformal part of triangles are considered in computation of distance, i.e. if the triangle have a common point, it iterates on opposite segment, if the triangle have a common edge, it computes distance with the opposite point
+**details** if the two triangles are the same, return nullopt. Only non conformal part of triangles are considered in computation of distance, i.e. if the triangles have a common point, it iterates on opposite segments, if the triangles have a common edge, it computes distance with
 
 **return** a tuple containing: - the smallest distance. - the closest point on the first triangle. - the closest point on the second triangle.
 
@@ -1883,26 +1883,6 @@ index_t edged_curve_object_priority(basic_string_view filename)
 ```
 
 
-### save_edged_curve
-
-```cpp
-vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
- API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
-
-**edged_curve** [in] EdgedCurve to save.
-
-**filename** [in] Path to the file where save the EdgedCurve.
-
-### is_edged_curve_saveable
-
-```cpp
-bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
 ### register_geometry_serialize_pcontext
 
 ```cpp
@@ -2190,6 +2170,26 @@ index_t triangulated_surface_object_priority(basic_string_view filename)
 
 ```cpp
 void register_geode_mesh_output()
+```
+
+
+### save_edged_curve
+
+```cpp
+vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
+ API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
+
+**edged_curve** [in] EdgedCurve to save.
+
+**filename** [in] Path to the file where save the EdgedCurve.
+
+### is_edged_curve_saveable
+
+```cpp
+bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
 ```
 
 

@@ -100,6 +100,28 @@ public const BoundingBox<dimension> & bounding_box()
 ```
 
 
+### parallel
+
+```cpp
+public bool parallel()
+```
+
+
+
+
+**brief** Whether or not the queries run on this tree are parallelized.
+
+### set_parallel
+
+```cpp
+public void set_parallel(bool parallel)
+```
+
+
+
+
+**brief** Sets whether or not the queries run on this tree are parallelized.
+
 ### containing_boxes
 
 ```cpp
