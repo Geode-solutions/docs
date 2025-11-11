@@ -39,6 +39,27 @@ const name = words.join('-');
 
 ## Functions
 
+### brep_from_computation_grid
+
+```cpp
+BRep brep_from_computation_grid(const BoundingBox3D & bounding_box, const ComputationGrid3D & computation_grid, Span values_to_densify_around)
+```
+
+
+### computation_grid_explicitation_points
+
+```cpp
+pair computation_grid_explicitation_points(const ComputationGrid3D & computation_grid, Span explicitation_values)
+```
+
+
+### cut_grid_explicitation_points
+
+```cpp
+pair cut_grid_explicitation_points(const CutGrid3D & cut_grid, Span explicitation_values)
+```
+
+
 ### snap_function_isovalue_to_vertices
 
 ```cpp
@@ -64,27 +85,6 @@ vector edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D 
 
 ```cpp
 vector edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const CutSolidGrid & cut_grid, double function_isovalue, optional border_info)
-```
-
-
-### computation_grid_explicitation_points
-
-```cpp
-pair computation_grid_explicitation_points(const ComputationGrid3D & computation_grid, Span explicitation_values)
-```
-
-
-### cut_grid_explicitation_points
-
-```cpp
-pair cut_grid_explicitation_points(const CutGrid3D & cut_grid, Span explicitation_values)
-```
-
-
-### brep_from_computation_grid
-
-```cpp
-BRep brep_from_computation_grid(const BoundingBox3D & bounding_box, const ComputationGrid3D & computation_grid, Span values_to_densify_around)
 ```
 
 

@@ -113,6 +113,20 @@ public InlinedVector cell_duplicate_index(const CellIndices & cell, const Point2
 ```
 
 
+### grid_vertex_indices_from_ghost_node
+
+```cpp
+public array grid_vertex_indices_from_ghost_node(index_t ghost_node_id)
+```
+
+
+### ghost_node_cell_duplicate_id
+
+```cpp
+public optional ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIndices & cell_indices)
+```
+
+
 ### discontinuity_vertex_duplicate
 
 ```cpp
