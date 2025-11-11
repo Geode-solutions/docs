@@ -95,6 +95,20 @@ public bool is_valid()
 ```
 
 
+### distribution_type_static
+
+```cpp
+public NamedType distribution_type_static()
+```
+
+
+### distribution_type
+
+```cpp
+public NamedType distribution_type()
+```
+
+
 
 
 # struct UniformClosed

@@ -11,28 +11,15 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DoubleSampler
-
-
-## Records
-
-DistributionDescription
-
+# struct DistributionTypeHasher
 
 
 ## Functions
 
-### create_distribution
+### operator()
 
 ```cpp
-public variant create_distribution(const DistributionDescription & desc)
-```
-
-
-### sample
-
-```cpp
-public double sample(RandomEngine & engine, const Distribution & dist)
+public std::size_t operator()(const DistributionType & d)
 ```
 
 

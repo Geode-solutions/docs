@@ -11,30 +11,6 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DoubleSampler
-
-
-## Records
-
-DistributionDescription
-
-
-
-## Functions
-
-### create_distribution
-
-```cpp
-public variant create_distribution(const DistributionDescription & desc)
-```
-
-
-### sample
-
-```cpp
-public double sample(RandomEngine & engine, const Distribution & dist)
-```
-
-
+# struct DistributionTag
 
 

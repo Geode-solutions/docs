@@ -11,30 +11,40 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DoubleSampler
+# struct DistributionDescription
 
 
-## Records
-
-DistributionDescription
-
-
-
-## Functions
-
-### create_distribution
+## Members
 
 ```cpp
-public variant create_distribution(const DistributionDescription & desc)
+public basic_string name
+
 ```
-
-
-### sample
 
 ```cpp
-public double sample(RandomEngine & engine, const Distribution & dist)
+public NamedType distribution_type
+
 ```
 
+```cpp
+public optional min_value
+
+```
+
+```cpp
+public optional max_value
+
+```
+
+```cpp
+public optional mean
+
+```
+
+```cpp
+public optional standard_deviation
+
+```
 
 
 
