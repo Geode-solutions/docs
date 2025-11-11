@@ -83,13 +83,6 @@ protected double node_weight()
 ```
 
 
-### derivative_axis_direction
-
-```cpp
-protected std::array<int, dimension> derivative_axis_direction(local_index_t derivative_axis_id)
-```
-
-
 ### derivative_contribution
 
 ```cpp

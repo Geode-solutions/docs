@@ -45,10 +45,10 @@ public index_t nb_value_nodes()
 ```
 
 
-### set_nb_additional_value_nodes
+### set_nb_ghost_nodes
 
 ```cpp
-public void set_nb_additional_value_nodes(index_t nb_additional_value_nodes)
+public void set_nb_ghost_nodes(index_t nb_ghost_nodes)
 ```
 
 
@@ -102,6 +102,18 @@ public index_t cell_duplicate_index(const CellIndices & index, local_index_t cel
 public InlinedVector cell_duplicate_index(const CellIndices & index, const Point<dimension> & position)
 ```
 
+### grid_vertex_indices_from_ghost_node
+
+```cpp
+public VertexIndices grid_vertex_indices_from_ghost_node(index_t ghost_node_id)
+```
+
+### ghost_node_cell_duplicate_id
+
+```cpp
+public optional ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIndices & cell_indices)
+```
+
 ### isovalue_goes_through_cell_duplicate
 
 ```cpp
@@ -113,6 +125,27 @@ public bool isovalue_goes_through_cell_duplicate(const CellIndices & cell_id, in
 
 ```cpp
 public bool isovalue_goes_through_cell(const CellIndices & cell_id, double isovalue)
+```
+
+
+### compute_ghost_nodes_derivatives
+
+```cpp
+public void compute_ghost_nodes_derivatives()
+```
+
+
+### ghost_nodes_derivatives
+
+```cpp
+public const absl::flat_hash_map<index_t, std::vector<index_t> > & ghost_nodes_derivatives()
+```
+
+
+### value_node_surrounding_ghost_node_id
+
+```cpp
+public optional value_node_surrounding_ghost_node_id(index_t ghost_node_id, const std::array<int, dimension> & search_direction, local_index_t surrounding_node)
 ```
 
 

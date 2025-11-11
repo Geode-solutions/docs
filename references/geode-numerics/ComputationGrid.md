@@ -162,6 +162,20 @@ public bool isovalue_goes_through_cell(const CellIndices & cell_id, double isova
 ```
 
 
+### nb_border_derivatives
+
+```cpp
+public index_t nb_border_derivatives()
+```
+
+
+### border_value_nodes_derivatives
+
+```cpp
+public const absl::flat_hash_map<index_t, std::vector<index_t> > & border_value_nodes_derivatives()
+```
+
+
 ### node_values_are_set
 
 ```cpp
