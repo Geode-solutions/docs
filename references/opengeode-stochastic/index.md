@@ -41,13 +41,6 @@ const name = words.join('-');
 
 ## Functions
 
-### hello_world
-
-```cpp
-bool hello_world()
-```
-
-
 ### object_bounding_box
 
 ```cpp

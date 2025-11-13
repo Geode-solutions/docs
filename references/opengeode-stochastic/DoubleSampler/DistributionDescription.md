@@ -48,3 +48,14 @@ public optional standard_deviation
 
 
 
+## Functions
+
+### string
+
+```cpp
+public basic_string string()
+```
+
+
+
+

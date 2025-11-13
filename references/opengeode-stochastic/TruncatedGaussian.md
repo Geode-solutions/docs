@@ -68,5 +68,12 @@ public NamedType distribution_type()
 ```
 
 
+### string
+
+```cpp
+public basic_string string()
+```
+
+
 
 

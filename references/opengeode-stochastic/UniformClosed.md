@@ -17,57 +17,6 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public double min_value
-
-```
-
-```cpp
-public double max_value
-
-```
-
-
-
-# struct UniformClosed
-
-
-## Members
-
-```cpp
-public unsigned char min_value
-
-```
-
-```cpp
-public unsigned char max_value
-
-```
-
-
-
-# struct UniformClosed
-
-
-## Members
-
-```cpp
-public unsigned int min_value
-
-```
-
-```cpp
-public unsigned int max_value
-
-```
-
-
-
-# struct UniformClosed
-
-
-## Members
-
-```cpp
 public Type min_value
 
 ```
@@ -109,39 +58,12 @@ public NamedType distribution_type()
 ```
 
 
-
-
-# struct UniformClosed
-
-
-## Members
+### string
 
 ```cpp
-public float min_value
-
+public basic_string string()
 ```
 
-```cpp
-public float max_value
-
-```
-
-
-
-# struct UniformClosed
-
-
-## Members
-
-```cpp
-public int min_value
-
-```
-
-```cpp
-public int max_value
-
-```
 
 
 
