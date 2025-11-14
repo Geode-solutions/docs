@@ -37,6 +37,7 @@ const name = words.join('-');
 * [TruncatedGaussian](TruncatedGaussian.md)
 * [UniformClosedOpen](UniformClosedOpen.md)
 * [UniformClosed](UniformClosed.md)
+* [VonMises](VonMises.md)
 
 
 ## Functions

@@ -100,6 +100,13 @@ public double sample_truncated_gaussian(const TruncatedGaussian & law)
 ```
 
 
+### sample_von_mises
+
+```cpp
+public double sample_von_mises(const VonMises & law)
+```
+
+
 ### sample_log
 
 ```cpp

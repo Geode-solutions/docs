@@ -11,35 +11,57 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DoubleSampler
+# struct VonMises
 
 
-## Records
+## Members
 
-DistributionDescription
+```cpp
+public double mean
+
+```
+
+```cpp
+public double concentration
+
+```
 
 
 
 ## Functions
 
-### create_distribution
+### VonMises
 
 ```cpp
-public Distribution create_distribution(const DistributionDescription & desc)
+public void VonMises()
 ```
 
 
-### create_rad_angle_distribution_from_degree
+### distribution_type_static
 
 ```cpp
-public Distribution create_rad_angle_distribution_from_degree(const DistributionDescription & angle_desc_deg)
+public NamedType distribution_type_static()
 ```
 
 
-### sample
+### distribution_type
 
 ```cpp
-public double sample(RandomEngine & engine, const Distribution & dist)
+public NamedType distribution_type()
+```
+
+
+### is_valid
+
+```cpp
+public bool is_valid()
+```
+
+
+### string
+
+```cpp
+public basic_string string()
 ```
 
 
