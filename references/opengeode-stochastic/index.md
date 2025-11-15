@@ -35,6 +35,8 @@ const name = words.join('-');
 * [SegmentUniformSampler](SegmentUniformSampler.md)
 * [StochasticLibrary](StochasticLibrary.md)
 * [TruncatedGaussian](TruncatedGaussian.md)
+* [TruncatedLogNormal](TruncatedLogNormal.md)
+* [TruncatedPowerLaw](TruncatedPowerLaw.md)
 * [UniformClosedOpen](UniformClosedOpen.md)
 * [UniformClosed](UniformClosed.md)
 * [VonMises](VonMises.md)

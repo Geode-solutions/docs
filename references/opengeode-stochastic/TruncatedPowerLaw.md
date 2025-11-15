@@ -11,18 +11,13 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct DistributionDescription
+# struct TruncatedPowerLaw
 
 
 ## Members
 
 ```cpp
-public basic_string name
-
-```
-
-```cpp
-public NamedType distribution_type
+public double alpha
 
 ```
 
@@ -36,29 +31,37 @@ public optional max_value
 
 ```
 
-```cpp
-public optional mean
-
-```
-
-```cpp
-public optional standard_deviation
-
-```
-
-```cpp
-public optional kappa
-
-```
-
-```cpp
-public optional alpha
-
-```
-
 
 
 ## Functions
+
+### TruncatedPowerLaw
+
+```cpp
+public void TruncatedPowerLaw()
+```
+
+
+### distribution_type_static
+
+```cpp
+public NamedType distribution_type_static()
+```
+
+
+### distribution_type
+
+```cpp
+public NamedType distribution_type()
+```
+
+
+### is_valid
+
+```cpp
+public bool is_valid()
+```
+
 
 ### string
 

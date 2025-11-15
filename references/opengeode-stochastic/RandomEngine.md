@@ -107,6 +107,20 @@ public double sample_von_mises(const VonMises & law)
 ```
 
 
+### sample_truncated_lognormal
+
+```cpp
+public double sample_truncated_lognormal(const TruncatedLogNormal & law)
+```
+
+
+### sample_truncated_powerlaw
+
+```cpp
+public double sample_truncated_powerlaw(const TruncatedPowerLaw & law)
+```
+
+
 ### sample_log
 
 ```cpp
