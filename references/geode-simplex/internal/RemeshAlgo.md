@@ -75,6 +75,13 @@ protected void add_mapping(index_t background_vertex, bool is_locked)
 ```
 
 
+### vertex_origin
+
+```cpp
+protected const VertexOrigin & vertex_origin(index_t remesh_vertex)
+```
+
+
 ### metric
 
 ```cpp
