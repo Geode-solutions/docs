@@ -131,7 +131,7 @@ StructuralModel load_structural_model(basic_string_view filename)
 ### structural_model_additional_files
 
 ```cpp
-class StructuralModelInput::AdditionalFiles structural_model_additional_files(basic_string_view filename)
+AdditionalFiles structural_model_additional_files(basic_string_view filename)
 ```
 
 
@@ -163,7 +163,7 @@ ImplicitStructuralModel load_implicit_structural_model(basic_string_view filenam
 ### implicit_structural_model_additional_files
 
 ```cpp
-class ImplicitStructuralModelInput::AdditionalFiles implicit_structural_model_additional_files(basic_string_view filename)
+AdditionalFiles implicit_structural_model_additional_files(basic_string_view filename)
 ```
 
 
@@ -287,7 +287,7 @@ CrossSection load_cross_section(basic_string_view filename)
 ### cross_section_additional_files
 
 ```cpp
-class CrossSectionInput::AdditionalFiles cross_section_additional_files(basic_string_view filename)
+AdditionalFiles cross_section_additional_files(basic_string_view filename)
 ```
 
 
@@ -319,7 +319,7 @@ ImplicitCrossSection load_implicit_cross_section(basic_string_view filename)
 ### implicit_cross_section_additional_files
 
 ```cpp
-class ImplicitCrossSectionInput::AdditionalFiles implicit_cross_section_additional_files(basic_string_view filename)
+AdditionalFiles implicit_cross_section_additional_files(basic_string_view filename)
 ```
 
 
@@ -413,7 +413,7 @@ HorizonsStack<dimension> load_horizons_stack(basic_string_view filename)
 ### horizons_stack_additional_files
 
 ```cpp
-typename HorizonsStackInput<dimension>::AdditionalFiles horizons_stack_additional_files(basic_string_view filename)
+AdditionalFiles horizons_stack_additional_files(basic_string_view filename)
 ```
 
 
