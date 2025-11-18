@@ -24,6 +24,8 @@ const name = words.join('-');
 ## Records
 
 * [AABBTree](AABBTree.md)
+* [AdditionalFile](AdditionalFile.md)
+* [AdditionalFiles](AdditionalFiles.md)
 * [Angle](Angle.md)
 * [AnisotropicDistanceToEdge](AnisotropicDistanceToEdge.md)
 * [AnisotropicDistanceToTetrahedron](AnisotropicDistanceToTetrahedron.md)
@@ -621,7 +623,7 @@ RasterImage<dimension> load_raster_image(basic_string_view filename)
 ### raster_image_additional_files
 
 ```cpp
-typename RasterImageInput<dimension>::AdditionalFiles raster_image_additional_files(basic_string_view filename)
+AdditionalFiles raster_image_additional_files(basic_string_view filename)
 ```
 
 
@@ -1598,7 +1600,7 @@ std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
 ### point_set_additional_files
 
 ```cpp
-typename PointSetInput<dimension>::AdditionalFiles point_set_additional_files(basic_string_view filename)
+AdditionalFiles point_set_additional_files(basic_string_view filename)
 ```
 
 
@@ -1728,7 +1730,7 @@ std::unique_ptr<PolygonalSurface<dimension> > load_polygonal_surface(basic_strin
 ### polygonal_surface_additional_files
 
 ```cpp
-typename PolygonalSurfaceInput<dimension>::AdditionalFiles polygonal_surface_additional_files(basic_string_view filename)
+AdditionalFiles polygonal_surface_additional_files(basic_string_view filename)
 ```
 
 
@@ -1793,7 +1795,7 @@ std::unique_ptr<PolyhedralSolid<dimension> > load_polyhedral_solid(basic_string_
 ### polyhedral_solid_additional_files
 
 ```cpp
-typename PolyhedralSolidInput<dimension>::AdditionalFiles polyhedral_solid_additional_files(basic_string_view filename)
+AdditionalFiles polyhedral_solid_additional_files(basic_string_view filename)
 ```
 
 
@@ -1865,7 +1867,7 @@ std::unique_ptr<EdgedCurve<dimension> > load_edged_curve(basic_string_view filen
 ### edged_curve_additional_files
 
 ```cpp
-typename EdgedCurveInput<dimension>::AdditionalFiles edged_curve_additional_files(basic_string_view filename)
+AdditionalFiles edged_curve_additional_files(basic_string_view filename)
 ```
 
 
@@ -1981,7 +1983,7 @@ std::unique_ptr<HybridSolid<dimension> > load_hybrid_solid(basic_string_view fil
 ### hybrid_solid_additional_files
 
 ```cpp
-typename HybridSolidInput<dimension>::AdditionalFiles hybrid_solid_additional_files(basic_string_view filename)
+AdditionalFiles hybrid_solid_additional_files(basic_string_view filename)
 ```
 
 
@@ -2013,7 +2015,7 @@ LightRegularGrid<dimension> load_light_regular_grid(basic_string_view filename)
 ### light_regular_grid_additional_files
 
 ```cpp
-typename LightRegularGridInput<dimension>::AdditionalFiles light_regular_grid_additional_files(basic_string_view filename)
+AdditionalFiles light_regular_grid_additional_files(basic_string_view filename)
 ```
 
 
@@ -2058,7 +2060,7 @@ std::unique_ptr<RegularGrid<dimension> > load_regular_grid(basic_string_view fil
 ### regular_grid_additional_files
 
 ```cpp
-typename RegularGridInput<dimension>::AdditionalFiles regular_grid_additional_files(basic_string_view filename)
+AdditionalFiles regular_grid_additional_files(basic_string_view filename)
 ```
 
 
@@ -2103,7 +2105,7 @@ std::unique_ptr<TetrahedralSolid<dimension> > load_tetrahedral_solid(basic_strin
 ### tetrahedral_solid_additional_files
 
 ```cpp
-typename TetrahedralSolidInput<dimension>::AdditionalFiles tetrahedral_solid_additional_files(basic_string_view filename)
+AdditionalFiles tetrahedral_solid_additional_files(basic_string_view filename)
 ```
 
 
@@ -2148,7 +2150,7 @@ std::unique_ptr<TriangulatedSurface<dimension> > load_triangulated_surface(basic
 ### triangulated_surface_additional_files
 
 ```cpp
-typename TriangulatedSurfaceInput<dimension>::AdditionalFiles triangulated_surface_additional_files(basic_string_view filename)
+AdditionalFiles triangulated_surface_additional_files(basic_string_view filename)
 ```
 
 

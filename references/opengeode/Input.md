@@ -20,14 +20,6 @@ Inherits from IOFile
 
 
 
-## Records
-
-AdditionalFile
-
-AdditionalFiles
-
-
-
 ## Functions
 
 ### additional_files

@@ -17,12 +17,12 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public std::vector<AdditionalFile> optional_files
+public vector optional_files
 
 ```
 
 ```cpp
-public std::vector<AdditionalFile> mandatory_files
+public vector mandatory_files
 
 ```
 

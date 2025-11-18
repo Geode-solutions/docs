@@ -32,7 +32,7 @@ public void OpenGeodeTriangulatedSurfaceInput<dimension>(basic_string_view filen
 ### additional_files
 
 ```cpp
-public typename TriangulatedSurfaceInput<dimension>::AdditionalFiles additional_files()
+public AdditionalFiles additional_files()
 ```
 
 

@@ -39,7 +39,7 @@ public RasterImage<dimension> read()
 ### additional_files
 
 ```cpp
-public typename RasterImageInput<dimension>::AdditionalFiles additional_files()
+public AdditionalFiles additional_files()
 ```
 
 

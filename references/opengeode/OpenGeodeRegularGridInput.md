@@ -32,7 +32,7 @@ public void OpenGeodeRegularGridInput<dimension>(basic_string_view filename)
 ### additional_files
 
 ```cpp
-public typename RegularGridInput<dimension>::AdditionalFiles additional_files()
+public AdditionalFiles additional_files()
 ```
 
 

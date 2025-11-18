@@ -32,7 +32,7 @@ public void OpenGeodeTetrahedralSolidInput<dimension>(basic_string_view filename
 ### additional_files
 
 ```cpp
-public typename TetrahedralSolidInput<dimension>::AdditionalFiles additional_files()
+public AdditionalFiles additional_files()
 ```
 
 

@@ -39,7 +39,7 @@ protected LightRegularGrid<dimension> read()
 ### additional_files
 
 ```cpp
-protected typename LightRegularGridInput<dimension>::AdditionalFiles additional_files()
+protected AdditionalFiles additional_files()
 ```
 
 
