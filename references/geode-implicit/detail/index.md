@@ -22,20 +22,6 @@ const name = words.join('-');
 
 ## Functions
 
-### split_block_mesh_from_isovalues_on_grid
-
-```cpp
-void split_block_mesh_from_isovalues_on_grid(BRep & model, const Block3D & block, const TetrahedralSolid3D & block_mesh, VariableAttribute<double> & block_function_attribute, const ComputationGrid3D & grid, Span values_to_densify_around)
-```
-
-
-### split_block_mesh_from_isovalues_on_cut_solid_grid
-
-```cpp
-void split_block_mesh_from_isovalues_on_cut_solid_grid(BRep & model, const Block3D & block, const TetrahedralSolid3D & block_mesh, VariableAttribute<double> & block_function_attribute, const internal::CutSolidGrid & grid, Span values_to_densify_around)
-```
-
-
 ### extrapolate_surface_mesh_scalar_function
 
 ```cpp
@@ -61,6 +47,20 @@ void extrapolate_surface_mesh_scalar_function(const SurfaceMesh<dimension> & sur
 
 ```cpp
 void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, const ScalarFunctionExtrapolationInfo & extrapolation_info)
+```
+
+
+### split_block_mesh_from_isovalues_on_grid
+
+```cpp
+void split_block_mesh_from_isovalues_on_grid(BRep & model, const Block3D & block, const TetrahedralSolid3D & block_mesh, VariableAttribute<double> & block_function_attribute, const ComputationGrid3D & grid, Span values_to_densify_around)
+```
+
+
+### split_block_mesh_from_isovalues_on_cut_solid_grid
+
+```cpp
+void split_block_mesh_from_isovalues_on_cut_solid_grid(BRep & model, const Block3D & block, const TetrahedralSolid3D & block_mesh, VariableAttribute<double> & block_function_attribute, const internal::CutSolidGrid & grid, Span values_to_densify_around)
 ```
 
 
