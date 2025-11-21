@@ -20,18 +20,12 @@ Inherits from AttributeCoordinateReferenceSystem<dimension>
 
 
 
-## Records
-
-Info
-
-
-
 ## Functions
 
 ### GeographicCoordinateSystem
 
 ```cpp
-public void GeographicCoordinateSystem<dimension>(AttributeManager & manager, Info info)
+public void GeographicCoordinateSystem<dimension>(AttributeManager & manager, GeographicCoordinateSystemInfo info)
 ```
 
 
@@ -45,7 +39,7 @@ public void ~GeographicCoordinateSystem<dimension>()
 ### create_from_attribute
 
 ```cpp
-public GeographicCoordinateSystem create_from_attribute(const AttributeCoordinateReferenceSystem<dimension> & crs, AttributeManager & manager, Info info)
+public GeographicCoordinateSystem create_from_attribute(const AttributeCoordinateReferenceSystem<dimension> & crs, AttributeManager & manager, GeographicCoordinateSystemInfo info)
 ```
 
 ### type_name_static
@@ -65,14 +59,14 @@ public NamedType type_name()
 ### info
 
 ```cpp
-public const Info & info()
+public const GeographicCoordinateSystemInfo & info()
 ```
 
 
 ### geographic_coordinate_systems
 
 ```cpp
-public absl::FixedArray<Info> geographic_coordinate_systems()
+public FixedArray geographic_coordinate_systems()
 ```
 
 

@@ -32,6 +32,7 @@ const name = words.join('-');
 * [Fault](Fault.md)
 * [FaultsBuilder](FaultsBuilder.md)
 * [Faults](Faults.md)
+* [GeographicCoordinateSystemInfo](GeographicCoordinateSystemInfo.md)
 * [GeographicCoordinateSystem](GeographicCoordinateSystem.md)
 * [GeosciencesExplicitLibrary](GeosciencesExplicitLibrary.md)
 * [GeosciencesImplicitLibrary](GeosciencesImplicitLibrary.md)
@@ -480,84 +481,84 @@ void register_explicit_deserialize_pcontext(PContext & context)
 ### assign_edged_curve_geographic_coordinate_system_info
 
 ```cpp
-void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void assign_edged_curve_geographic_coordinate_system_info(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, basic_string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
 ### assign_point_set_geographic_coordinate_system_info
 
 ```cpp
-void assign_point_set_geographic_coordinate_system_info(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void assign_point_set_geographic_coordinate_system_info(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, basic_string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
 ### assign_solid_mesh_geographic_coordinate_system_info
 
 ```cpp
-void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void assign_solid_mesh_geographic_coordinate_system_info(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, basic_string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
 ### assign_surface_mesh_geographic_coordinate_system_info
 
 ```cpp
-void assign_surface_mesh_geographic_coordinate_system_info(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void assign_surface_mesh_geographic_coordinate_system_info(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, basic_string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
 ### assign_brep_geographic_coordinate_system_info
 
 ```cpp
-void assign_brep_geographic_coordinate_system_info(const BRep & brep, BRepBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystem3D::Info & info)
+void assign_brep_geographic_coordinate_system_info(const BRep & brep, BRepBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystemInfo & info)
 ```
 
 
 ### assign_section_geographic_coordinate_system_info
 
 ```cpp
-void assign_section_geographic_coordinate_system_info(const Section & section, SectionBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystem2D::Info & info)
+void assign_section_geographic_coordinate_system_info(const Section & section, SectionBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystemInfo & info)
 ```
 
 
 ### convert_edged_curve_coordinate_reference_system
 
 ```cpp
-void convert_edged_curve_coordinate_reference_system(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void convert_edged_curve_coordinate_reference_system(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder, basic_string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
 ### convert_point_set_coordinate_reference_system
 
 ```cpp
-void convert_point_set_coordinate_reference_system(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void convert_point_set_coordinate_reference_system(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder, basic_string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
 ### convert_solid_mesh_coordinate_reference_system
 
 ```cpp
-void convert_solid_mesh_coordinate_reference_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void convert_solid_mesh_coordinate_reference_system(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder, basic_string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
 ### convert_surface_mesh_coordinate_reference_system
 
 ```cpp
-void convert_surface_mesh_coordinate_reference_system(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, basic_string_view crs_name, typename GeographicCoordinateSystem<dimension>::Info info)
+void convert_surface_mesh_coordinate_reference_system(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, basic_string_view crs_name, GeographicCoordinateSystemInfo info)
 ```
 
 
 ### convert_brep_coordinate_reference_system
 
 ```cpp
-void convert_brep_coordinate_reference_system(const BRep & brep, BRepBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystem3D::Info & info)
+void convert_brep_coordinate_reference_system(const BRep & brep, BRepBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystemInfo & info)
 ```
 
 
 ### convert_section_coordinate_reference_system
 
 ```cpp
-void convert_section_coordinate_reference_system(const Section & section, SectionBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystem2D::Info & info)
+void convert_section_coordinate_reference_system(const Section & section, SectionBuilder & builder, basic_string_view crs_name, const GeographicCoordinateSystemInfo & info)
 ```
 
 

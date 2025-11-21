@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct Info
+# struct GeographicCoordinateSystemInfo
 
 
 ## Members
@@ -35,17 +35,24 @@ public basic_string name
 
 ## Functions
 
-### Info
+### GeographicCoordinateSystemInfo
 
 ```cpp
-public void Info(basic_string authority_in, basic_string code_in, basic_string name_in)
+public void GeographicCoordinateSystemInfo(basic_string authority_in, basic_string code_in, basic_string name_in)
 ```
 
 
-### Info
+### GeographicCoordinateSystemInfo
 
 ```cpp
-public void Info()
+public void GeographicCoordinateSystemInfo()
+```
+
+
+### ~GeographicCoordinateSystemInfo
+
+```cpp
+public void ~GeographicCoordinateSystemInfo()
 ```
 
 
