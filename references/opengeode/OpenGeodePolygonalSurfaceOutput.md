@@ -29,6 +29,13 @@ public void OpenGeodePolygonalSurfaceOutput<dimension>(basic_string_view filenam
 ```
 
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const PolygonalSurface<dimension> & mesh)
+```
+
+
 ### write
 
 ```cpp

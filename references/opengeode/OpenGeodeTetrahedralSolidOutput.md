@@ -29,6 +29,13 @@ public void OpenGeodeTetrahedralSolidOutput<dimension>(basic_string_view filenam
 ```
 
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const TetrahedralSolid<dimension> & mesh)
+```
+
+
 ### write
 
 ```cpp

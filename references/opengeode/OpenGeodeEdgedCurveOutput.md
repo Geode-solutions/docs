@@ -29,6 +29,13 @@ public void OpenGeodeEdgedCurveOutput<dimension>(basic_string_view filename)
 ```
 
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const EdgedCurve<dimension> & mesh)
+```
+
+
 ### write
 
 ```cpp

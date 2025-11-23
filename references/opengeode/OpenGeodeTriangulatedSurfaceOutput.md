@@ -29,6 +29,13 @@ public void OpenGeodeTriangulatedSurfaceOutput<dimension>(basic_string_view file
 ```
 
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const TriangulatedSurface<dimension> & mesh)
+```
+
+
 ### write
 
 ```cpp

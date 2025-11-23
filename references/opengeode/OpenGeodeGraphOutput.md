@@ -29,6 +29,13 @@ public void OpenGeodeGraphOutput(basic_string_view filename)
 ```
 
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const Graph & mesh)
+```
+
+
 ### write
 
 ```cpp

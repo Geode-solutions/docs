@@ -29,6 +29,13 @@ public void OpenGeodePointSetOutput<dimension>(basic_string_view filename)
 ```
 
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const PointSet<dimension> & mesh)
+```
+
+
 ### write
 
 ```cpp

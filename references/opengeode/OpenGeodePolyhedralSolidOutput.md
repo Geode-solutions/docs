@@ -29,6 +29,13 @@ public void OpenGeodePolyhedralSolidOutput<dimension>(basic_string_view filename
 ```
 
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const PolyhedralSolid<dimension> & mesh)
+```
+
+
 ### write
 
 ```cpp

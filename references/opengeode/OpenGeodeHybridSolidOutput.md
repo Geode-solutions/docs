@@ -29,6 +29,13 @@ public void OpenGeodeHybridSolidOutput<dimension>(basic_string_view filename)
 ```
 
 
+### is_saveable
+
+```cpp
+public bool is_saveable(const HybridSolid<dimension> & mesh)
+```
+
+
 ### write
 
 ```cpp
