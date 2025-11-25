@@ -17,8 +17,23 @@ const name = words.join('-');
 
 ## Records
 
+* [BackgroundSurfaceMetricDecimator](BackgroundSurfaceMetricDecimator.md)
+* [BackgroundSurfaceQualityOptimizer](BackgroundSurfaceQualityOptimizer.md)
+* [MetricBasedDecimator](MetricBasedDecimator.md)
+* [Metric](Metric.md)
 * [PillarBuilder](PillarBuilder.md)
 * [Pillar](Pillar.md)
 * [PropagateAlongPlane](PropagateAlongPlane.md)
+
+
+## Functions
+
+### decimate_background_surface_with_metric
+
+```cpp
+void decimate_background_surface_with_metric(BackgroundSurfaceConstraintModifier & constraint_modifier, const BackgroundSurfaceDecimatorOperator & decimator_operator, const geode::internal::Metric & metric)
+```
+
+
 
 
