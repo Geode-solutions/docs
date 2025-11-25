@@ -35,6 +35,12 @@ public void ~TriangulatedSurfaceImprovementSimulator<dimension>()
 ```
 
 
+### require_improvement
+
+```cpp
+public bool require_improvement(const TriangulatedSurface<dimension> & background, index_t triangle_id)
+```
+
 ### worst
 
 ```cpp
