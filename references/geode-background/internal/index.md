@@ -43,8 +43,8 @@ const name = words.join('-');
 * [BackgroundSolidBuilder](BackgroundSolidBuilder.md)
 * [BackgroundSolidConstraintModifier](BackgroundSolidConstraintModifier.md)
 * [BackgroundSolidDecimator](BackgroundSolidDecimator.md)
-* [BackgroundSolidEpsilonOpimizerImprovementSimulator](BackgroundSolidEpsilonOpimizerImprovementSimulator.md)
 * [BackgroundSolidEpsilonOptimizerException](BackgroundSolidEpsilonOptimizerException.md)
+* [BackgroundSolidEpsilonOptimizerImprovementSimulator](BackgroundSolidEpsilonOptimizerImprovementSimulator.md)
 * [BackgroundSolidInserter](BackgroundSolidInserter.md)
 * [BackgroundSolidInternalDistanceImprovementSimulator](BackgroundSolidInternalDistanceImprovementSimulator.md)
 * [BackgroundSolidInternalDistanceOptimizer](BackgroundSolidInternalDistanceOptimizer.md)
@@ -57,13 +57,18 @@ const name = words.join('-');
 * [BackgroundSolid](BackgroundSolid.md)
 * [BackgroundSurfaceBuilder](BackgroundSurfaceBuilder.md)
 * [BackgroundSurfaceConstraintModifier](BackgroundSurfaceConstraintModifier.md)
+* [BackgroundSurfaceDecimatorOperator](BackgroundSurfaceDecimatorOperator.md)
+* [BackgroundSurfaceDecimator](BackgroundSurfaceDecimator.md)
 * [BackgroundSurfaceEpsilonOptimizerException](BackgroundSurfaceEpsilonOptimizerException.md)
+* [BackgroundSurfaceEpsilonOptimizerImprovementSimulator](BackgroundSurfaceEpsilonOptimizerImprovementSimulator.md)
 * [BackgroundSurfaceInserter](BackgroundSurfaceInserter.md)
 * [BackgroundSurfaceInternalDistanceImprovementSimulator](BackgroundSurfaceInternalDistanceImprovementSimulator.md)
 * [BackgroundSurfaceInternalDistanceOptimizer](BackgroundSurfaceInternalDistanceOptimizer.md)
 * [BackgroundSurfaceModifier](BackgroundSurfaceModifier.md)
+* [BackgroundSurfaceOptimizerImprovementSimulator](BackgroundSurfaceOptimizerImprovementSimulator.md)
 * [BackgroundSurfaceOptimizer](BackgroundSurfaceOptimizer.md)
 * [BackgroundSurfaceOrchestrator](BackgroundSurfaceOrchestrator.md)
+* [BackgroundSurfaceShiftOptimizer](BackgroundSurfaceShiftOptimizer.md)
 * [BackgroundSurface](BackgroundSurface.md)
 * [Background](Background.md)
 * [BlockElement](BlockElement.md)
@@ -102,6 +107,7 @@ const name = words.join('-');
 * [SkipNonMandatory](SkipNonMandatory.md)
 * [SkipNothing](SkipNothing.md)
 * [SolidSplitInfo](SolidSplitInfo.md)
+* [SurfaceEdge](SurfaceEdge.md)
 * [SurfaceElement2Split](SurfaceElement2Split.md)
 * [SurfaceSkinSplitsOrder](SurfaceSkinSplitsOrder.md)
 * [SurfaceSkin](SurfaceSkin.md)
@@ -134,28 +140,28 @@ InternalDistance minimal_triangle_internal_distance(const Triangle2D & triangle)
 ### fast_tetrahedron_internal_distances
 
 ```cpp
-InternalDistances fast_tetrahedron_internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id, const struct InternalDistance::Options & options)
+InlinedVector fast_tetrahedron_internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id, const struct InternalDistance::Options & options)
 ```
 
 
 ### fast_triangle_internal_distances
 
 ```cpp
-InternalDistances fast_triangle_internal_distances(const TriangulatedSurface2D & surface, index_t triangle_id, const struct InternalDistance::Options & options)
+InlinedVector fast_triangle_internal_distances(const TriangulatedSurface2D & surface, index_t triangle_id, const struct InternalDistance::Options & options)
 ```
 
 
 ### fast_tetrahedron_internal_distances
 
 ```cpp
-InternalDistances fast_tetrahedron_internal_distances(const Tetrahedron & tetra, const struct InternalDistance::Options & options)
+InlinedVector fast_tetrahedron_internal_distances(const Tetrahedron & tetra, const struct InternalDistance::Options & options)
 ```
 
 
 ### fast_triangle_internal_distances
 
 ```cpp
-InternalDistances fast_triangle_internal_distances(const Triangle2D & triangle, const struct InternalDistance::Options & options)
+InlinedVector fast_triangle_internal_distances(const Triangle2D & triangle, const struct InternalDistance::Options & options)
 ```
 
 
@@ -299,17 +305,24 @@ ALLOWED_COLLAPSE_EDGE_VERTEX allowed_split_collapse_edge_by_constraints(const Mo
 ```
 
 
-### decimate_background_surface
+### AbslHashValue
 
 ```cpp
-void decimate_background_surface(BackgroundSurfaceConstraintModifier & constraint_modifier)
+H AbslHashValue(H h, const ElementStamp & element_stamp)
 ```
 
 
 ### AbslHashValue
 
 ```cpp
-H AbslHashValue(H h, const ElementStamp & element_stamp)
+H AbslHashValue(H h, const SurfaceEdge & surface_edge)
+```
+
+
+### decimate_background_surface
+
+```cpp
+void decimate_background_surface(BackgroundSurfaceConstraintModifier & constraint_modifier, const BackgroundSurfaceDecimatorOperator & operator_)
 ```
 
 
@@ -528,7 +541,14 @@ void simplify_background_solid_macro_facet(BackgroundSolidConstraintModifier & c
 ### optimize_background_surface_elements
 
 ```cpp
-void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, index_t first_element)
+void optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, const BackgroundSurfaceInternalDistanceImprovementSimulator & improvement_simulator, index_t first_element)
+```
+
+
+### shift_optimize_background_surface_elements
+
+```cpp
+void shift_optimize_background_surface_elements(BackgroundSurfaceConstraintModifier & constraint_modifier, const BackgroundSurfaceInternalDistanceImprovementSimulator & improvement_simulator, index_t first_element)
 ```
 
 

@@ -11,21 +11,15 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class AllNonMacroVertex
-
-
-```cpp
-Inherits from BackgroundSurfaceDecimatorOperator
-```
-
+# class BackgroundSurfaceDecimatorOperator
 
 
 ## Functions
 
-### AllNonMacroVertex
+### ~BackgroundSurfaceDecimatorOperator
 
 ```cpp
-public void AllNonMacroVertex(const BackgroundSurface & background)
+public void ~BackgroundSurfaceDecimatorOperator()
 ```
 
 
@@ -35,18 +29,17 @@ public void AllNonMacroVertex(const BackgroundSurface & background)
 public bool skip_edge(const BackgroundSurface & surface, const PolygonEdge & edge)
 ```
 
-
-### AllNonMacroVertex
+### BackgroundSurfaceDecimatorOperator
 
 ```cpp
-public void AllNonMacroVertex(const BackgroundBRep & background)
+protected void BackgroundSurfaceDecimatorOperator(const BackgroundSurface & background)
 ```
 
 
-### skip_edge
+### background
 
 ```cpp
-public bool skip_edge(const Block3D & block, const std::array<index_t, 2> & edge)
+protected const BackgroundSurface & background()
 ```
 
 

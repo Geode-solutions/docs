@@ -60,14 +60,7 @@ public void ~BackgroundSurfaceInternalDistanceOptimizer()
 ### BackgroundSurfaceInternalDistanceOptimizer
 
 ```cpp
-protected void BackgroundSurfaceInternalDistanceOptimizer(BackgroundSurfaceConstraintModifier & constraint_modifier)
-```
-
-
-### compute_triangle_internal_distances
-
-```cpp
-protected bool compute_triangle_internal_distances(index_t triangle_id, const struct InternalDistance::Options & options)
+protected void BackgroundSurfaceInternalDistanceOptimizer(BackgroundSurfaceConstraintModifier & constraint_modifier, const BackgroundSurfaceInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

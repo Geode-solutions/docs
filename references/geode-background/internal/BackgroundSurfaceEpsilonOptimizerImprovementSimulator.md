@@ -11,11 +11,11 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BackgroundSolidEpsilonOpimizerImprovementSimulator
+# class BackgroundSurfaceEpsilonOptimizerImprovementSimulator
 
 
 ```cpp
-Inherits from BackgroundSolidInternalDistanceImprovementSimulator
+Inherits from BackgroundSurfaceInternalDistanceImprovementSimulator
 ```
 
 
@@ -25,7 +25,7 @@ Inherits from BackgroundSolidInternalDistanceImprovementSimulator
 ### require_improvement
 
 ```cpp
-public bool require_improvement(const TetrahedralSolid3D & background, index_t tetrahedron_id)
+public bool require_improvement(const TriangulatedSurface2D & surface, index_t triangle_id)
 ```
 
 
