@@ -11,15 +11,10 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SolidTopologicalValidity
+# struct SolidVertexTopologicalValidity
 
 
 ## Members
-
-```cpp
-public bool is_topologically_valid
-
-```
 
 ```cpp
 public bool new_vertex_is_manifold
@@ -27,25 +22,9 @@ public bool new_vertex_is_manifold
 ```
 
 ```cpp
-public bool all_edges_are_manifold
-
-```
-
-```cpp
 public bool no_isolated_vertex
 
 ```
-
-
-
-## Functions
-
-### operator bool
-
-```cpp
-public bool operator bool()
-```
-
 
 
 

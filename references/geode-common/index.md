@@ -142,6 +142,7 @@ const name = words.join('-');
 * [SolidSwapPatchInfo](SolidSwapPatchInfo.md)
 * [SolidSwapPathInfo](SolidSwapPathInfo.md)
 * [SolidTopologicalValidity](SolidTopologicalValidity.md)
+* [SolidVertexTopologicalValidity](SolidVertexTopologicalValidity.md)
 * [SplitCollapseTetrahedraAfter](SplitCollapseTetrahedraAfter.md)
 * [SplitCollapseTrianglesAfter](SplitCollapseTrianglesAfter.md)
 * [SplitInfo](SplitInfo.md)
@@ -821,6 +822,20 @@ bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, co
 
 ```cpp
 bool is_collapse_edge_valid(const TetrahedralSolid3D & mesh, index_t edge_id, local_index_t apex)
+```
+
+
+### does_collapse_edge_create_topological_invalidities
+
+```cpp
+SolidVertexTopologicalValidity does_collapse_edge_create_topological_invalidities(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedronFacetEdge & edge)
+```
+
+
+### does_split_collapse_edge_create_topological_invalidities
+
+```cpp
+SolidVertexTopologicalValidity does_split_collapse_edge_create_topological_invalidities(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedronFacetEdge & edge, index_t apex)
 ```
 
 
