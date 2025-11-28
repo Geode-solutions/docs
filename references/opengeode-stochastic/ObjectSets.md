@@ -130,14 +130,14 @@ public void remove_object(const ObjectId & object_id)
 ### neighbors
 
 ```cpp
-public vector neighbors(const ObjectId & object_id, double searching_distance)
+public vector neighbors(const ObjectId & object_id, const std::vector<uuid> & targeted_set_ids, double searching_distance)
 ```
 
 
 ### neighbors
 
 ```cpp
-public vector neighbors(const Type & object, double searching_distance)
+public vector neighbors(const Type & object, const std::vector<uuid> & targeted_set_ids, double searching_distance)
 ```
 
 

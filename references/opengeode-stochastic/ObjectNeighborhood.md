@@ -61,7 +61,7 @@ public void remove(const BoundingBox<dimension> & box, const ObjectId & id)
 ### get_all_neighbor_ids
 
 ```cpp
-public vector get_all_neighbor_ids(const BoundingBox<dimension> & box, optional exclude_self_id)
+public vector get_all_neighbor_ids(const BoundingBox<dimension> & box, const std::vector<uuid> & targeted_set_ids, optional exclude_self_id)
 ```
 
 
