@@ -26,6 +26,7 @@ const name = words.join('-');
 * [LinesInspectionResult](LinesInspectionResult.md)
 * [ModelMeshesAABBTree](ModelMeshesAABBTree.md)
 * [MultiZInspectionResult](MultiZInspectionResult.md)
+* [PillarModelSurfaceOrder](PillarModelSurfaceOrder.md)
 * [PillarStructuralModelBuilderResult](PillarStructuralModelBuilderResult.md)
 * [PillarStructuralModelBuilder](PillarStructuralModelBuilder.md)
 * [PillarStructuralModelException](PillarStructuralModelException.md)
