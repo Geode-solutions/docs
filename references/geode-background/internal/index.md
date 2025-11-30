@@ -19,9 +19,11 @@ const name = words.join('-');
 
 * [AllNonMacroVertex](AllNonMacroVertex.md)
 * [BackgroundBRepBuilder](BackgroundBRepBuilder.md)
+* [BackgroundBRepConformityHelpers](BackgroundBRepConformityHelpers.md)
 * [BackgroundBRepConstraintModifier](BackgroundBRepConstraintModifier.md)
 * [BackgroundBRepDecimatorOperator](BackgroundBRepDecimatorOperator.md)
 * [BackgroundBRepEpsilonOptimizerException](BackgroundBRepEpsilonOptimizerException.md)
+* [BackgroundBRepEpsilonOptimizer](BackgroundBRepEpsilonOptimizer.md)
 * [BackgroundBRepInserter](BackgroundBRepInserter.md)
 * [BackgroundBRepInternalDistanceOptimizer](BackgroundBRepInternalDistanceOptimizer.md)
 * [BackgroundBRepModifier](BackgroundBRepModifier.md)
@@ -112,6 +114,7 @@ const name = words.join('-');
 * [SurfaceSkinSplitsOrder](SurfaceSkinSplitsOrder.md)
 * [SurfaceSkin](SurfaceSkin.md)
 * [ThreePointsInternalDistance](ThreePointsInternalDistance.md)
+* [UnconformalElements](UnconformalElements.md)
 
 
 ## Functions
@@ -573,20 +576,6 @@ optional detect_coplanar_multilayers(const BackgroundSolid & solid, index_t tetr
 ```
 
 
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const BlockElement<ElementId> & element)
-```
-
-
-### optimize_background_brep_elements
-
-```cpp
-vector optimize_background_brep_elements(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span tetrahedra)
-```
-
-
 ### allowed_collapse_vertex_vertex
 
 ```cpp
@@ -713,17 +702,31 @@ bool is_split_split_collapse_allowed_by_constraints(const ModifiableBackgroundBR
 ```
 
 
-### epsilon_optimize_background_brep_elements
-
-```cpp
-vector epsilon_optimize_background_brep_elements(BackgroundBRepConstraintModifier & constraint_modifier, Span tetrahedra)
-```
-
-
 ### decimate_background_brep
 
 ```cpp
-void decimate_background_brep(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundBRepDecimatorOperator & decimator_operator)
+void decimate_background_brep(BackgroundBRepConstraintModifier & constraint_modifier, BRepBuilder & brep_builder, const BackgroundBRepDecimatorOperator & decimator_operator)
+```
+
+
+### epsilon_optimize_background_brep_elements
+
+```cpp
+vector epsilon_optimize_background_brep_elements(BackgroundBRepConstraintModifier & constraint_modifier, BRepBuilder & brep_builder, Span tetrahedra)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const BlockElement<type-parameter-0-0> & element)
+```
+
+
+### optimize_background_brep_elements
+
+```cpp
+vector optimize_background_brep_elements(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, Span tetrahedra)
 ```
 
 

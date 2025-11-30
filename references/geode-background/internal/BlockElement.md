@@ -33,14 +33,14 @@ public ElementId element_id
 ### BlockElement
 
 ```cpp
-public void BlockElement<ElementId>(const Block3D & block_in, ElementId element)
+public void BlockElement<type-parameter-0-0>(const Block3D & block_in, ElementId element)
 ```
 
 
 ### operator==
 
 ```cpp
-public bool operator==(const BlockElement<ElementId> & other)
+public bool operator==(const BlockElement<type-parameter-0-0> & other)
 ```
 
 
