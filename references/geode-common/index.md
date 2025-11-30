@@ -839,6 +839,13 @@ SolidVertexTopologicalValidity does_split_collapse_edge_create_topological_inval
 ```
 
 
+### does_split_collapse_facet_create_topological_invalidities
+
+```cpp
+SolidVertexTopologicalValidity does_split_collapse_facet_create_topological_invalidities(const geode::TetrahedralSolid3D & mesh, const geode::PolyhedronFacet & facet)
+```
+
+
 ### collapse_edge_validity
 
 ```cpp

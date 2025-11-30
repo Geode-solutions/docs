@@ -110,6 +110,13 @@ public BRepCollapsePolygonEdgeInfo collapse_edge(const Line3D & line, index_t ed
 ```
 
 
+### collapse_edge
+
+```cpp
+public BRepCollapsePolygonEdgeInfo collapse_edge(index_t from_unique_vertex, index_t to_unique_vertex)
+```
+
+
 ### split_edge
 
 ```cpp
