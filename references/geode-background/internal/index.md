@@ -17,7 +17,7 @@ const name = words.join('-');
 
 ## Records
 
-* [AllNonMacroVertex](AllNonMacroVertex.md)
+* [BackgroundBRepAllNonMacroVertex](BackgroundBRepAllNonMacroVertex.md)
 * [BackgroundBRepBuilder](BackgroundBRepBuilder.md)
 * [BackgroundBRepConformityHelpers](BackgroundBRepConformityHelpers.md)
 * [BackgroundBRepConstraintModifier](BackgroundBRepConstraintModifier.md)
@@ -57,6 +57,7 @@ const name = words.join('-');
 * [BackgroundSolidPainter](BackgroundSolidPainter.md)
 * [BackgroundSolidShiftOptimizer](BackgroundSolidShiftOptimizer.md)
 * [BackgroundSolid](BackgroundSolid.md)
+* [BackgroundSurfaceAllNonMacroVertex](BackgroundSurfaceAllNonMacroVertex.md)
 * [BackgroundSurfaceBuilder](BackgroundSurfaceBuilder.md)
 * [BackgroundSurfaceConstraintModifier](BackgroundSurfaceConstraintModifier.md)
 * [BackgroundSurfaceDecimatorOperator](BackgroundSurfaceDecimatorOperator.md)

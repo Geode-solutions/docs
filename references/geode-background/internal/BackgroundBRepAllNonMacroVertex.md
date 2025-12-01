@@ -11,35 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class AllNonMacroVertex
+# class BackgroundBRepAllNonMacroVertex
 
 
 ```cpp
-Inherits from BackgroundSurfaceDecimatorOperator
+Inherits from BackgroundBRepDecimatorOperator
 ```
 
 
 
 ## Functions
 
-### AllNonMacroVertex
+### BackgroundBRepAllNonMacroVertex
 
 ```cpp
-public void AllNonMacroVertex(const BackgroundSurface & background)
-```
-
-
-### skip_edge
-
-```cpp
-public bool skip_edge(const BackgroundSurface & surface, const PolygonEdge & edge)
-```
-
-
-### AllNonMacroVertex
-
-```cpp
-public void AllNonMacroVertex(const BackgroundBRep & background)
+public void BackgroundBRepAllNonMacroVertex(const BackgroundBRep & background)
 ```
 
 

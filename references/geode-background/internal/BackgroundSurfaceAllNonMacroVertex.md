@@ -11,30 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct MultilayerException
+# class BackgroundSurfaceAllNonMacroVertex
 
 
 ```cpp
-Inherits from OpenGeodeException
-```
-
-
-
-## Members
-
-```cpp
-public optional edge_to_split
-
+Inherits from BackgroundSurfaceDecimatorOperator
 ```
 
 
 
 ## Functions
 
-### MultilayerException
+### BackgroundSurfaceAllNonMacroVertex
 
 ```cpp
-public void MultilayerException()
+public void BackgroundSurfaceAllNonMacroVertex(const BackgroundSurface & background)
+```
+
+
+### skip_edge
+
+```cpp
+public bool skip_edge(const BackgroundSurface & surface, const PolygonEdge & edge)
 ```
 
 
