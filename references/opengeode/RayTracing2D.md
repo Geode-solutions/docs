@@ -39,6 +39,13 @@ public void RayTracing2D(const EdgedCurve2D & mesh, const InfiniteLine2D & infin
 ### RayTracing2D
 
 ```cpp
+public void RayTracing2D(const EdgedCurve2D & mesh, const Point2D & origin, const OwnerSegment2D & segment)
+```
+
+
+### RayTracing2D
+
+```cpp
 public void RayTracing2D(RayTracing2D && other)
 ```
 

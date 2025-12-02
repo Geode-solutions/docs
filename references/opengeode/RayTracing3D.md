@@ -39,6 +39,13 @@ public void RayTracing3D(const SurfaceMesh3D & mesh, const InfiniteLine3D & infi
 ### RayTracing3D
 
 ```cpp
+public void RayTracing3D(const SurfaceMesh3D & mesh, const Point3D & origin, const OwnerSegment3D & segment)
+```
+
+
+### RayTracing3D
+
+```cpp
 public void RayTracing3D(RayTracing3D && other)
 ```
 
