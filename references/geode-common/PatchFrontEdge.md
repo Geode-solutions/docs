@@ -37,5 +37,12 @@ public void PatchFrontEdge(index_t id_in, bool orientation_in)
 ```
 
 
+### operator==
+
+```cpp
+public bool operator==(const PatchFrontEdge & other)
+```
+
+
 
 
