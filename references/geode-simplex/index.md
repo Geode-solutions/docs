@@ -221,6 +221,13 @@ double compute_worst_quality(const SwapTrianglesAfter3D & triangles)
 ```
 
 
+### is_lucarne_edge
+
+```cpp
+bool is_lucarne_edge(const geode::BRep & brep, Span edge_unique_vertices)
+```
+
+
 ### brep_simplex_mesh
 
 ```cpp
