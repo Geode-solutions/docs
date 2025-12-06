@@ -96,5 +96,12 @@ public optional data_value_from_uuid(const uuid & data_id)
 ```
 
 
+### min_distance_between_data_points
+
+```cpp
+public optional min_distance_between_data_points(const uuid & first_data_id, const uuid & second_data_id)
+```
+
+
 
 

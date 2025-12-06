@@ -19,7 +19,7 @@ const name = words.join('-');
 ### StructuralModelSequenceImpliciter
 
 ```cpp
-public void StructuralModelSequenceImpliciter(StructuralModel & structural_model, const HorizonsStack3D & horizons_stack, const std::vector<uuid> & sequence_horizons)
+public void StructuralModelSequenceImpliciter(ImplicitStructuralModel & structural_model, const std::vector<uuid> & sequence_horizons)
 ```
 
 
@@ -54,7 +54,7 @@ public void set_horizon_implicit_value(const uuid & horizon_id, double value)
 ### compute_implicit_in_blocks
 
 ```cpp
-public vector compute_implicit_in_blocks(const ImplicitationParameters & computation_parameters)
+public vector compute_implicit_in_blocks(const ImplicitationParameters & computation_parameters, bool compute_first_thickness_guess)
 ```
 
 

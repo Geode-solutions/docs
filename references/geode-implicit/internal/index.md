@@ -30,6 +30,7 @@ const name = words.join('-');
 * [ScalarFunctionComputer2D](ScalarFunctionComputer2D.md)
 * [ScalarFunctionComputer3D](ScalarFunctionComputer3D.md)
 * [SectionSurfaceImpliciter](SectionSurfaceImpliciter.md)
+* [SegmentInGrid](SegmentInGrid.md)
 * [SingleSurfaceImplicitation](SingleSurfaceImplicitation.md)
 * [StructuralModelSequenceImpliciter](StructuralModelSequenceImpliciter.md)
 * [SurfaceImplicitInfo](SurfaceImplicitInfo.md)
@@ -39,17 +40,10 @@ const name = words.join('-');
 
 ## Functions
 
-### snap_function_isovalue_to_vertices
+### segments_in_grid
 
 ```cpp
-void snap_function_isovalue_to_vertices(const BRep & model, basic_string_view function_name, double isovalue, double tolerance)
-```
-
-
-### horizon_implicit_function_tolerance
-
-```cpp
-double horizon_implicit_function_tolerance(const ImplicitStructuralModel & model, const Horizon3D & horizon)
+std::vector<SegmentInGrid<dimension> > segments_in_grid(const Point<dimension> & p0, const Point<dimension> & p1, const ComputationGrid<dimension> & grid)
 ```
 
 
@@ -64,6 +58,20 @@ vector edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D 
 
 ```cpp
 vector edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const CutSolidGrid & cut_grid, double function_isovalue, optional border_info)
+```
+
+
+### snap_function_isovalue_to_vertices
+
+```cpp
+void snap_function_isovalue_to_vertices(const BRep & model, basic_string_view function_name, double isovalue, double tolerance)
+```
+
+
+### horizon_implicit_function_tolerance
+
+```cpp
+double horizon_implicit_function_tolerance(const ImplicitStructuralModel & model, const Horizon3D & horizon)
 ```
 
 

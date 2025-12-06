@@ -44,6 +44,13 @@ public void compute_implicit_function(const ImplicitationParameters & computatio
 ```
 
 
+### implicit_stream_lines
+
+```cpp
+public vector implicit_stream_lines()
+```
+
+
 ### interpolate_function_on_mesh
 
 ```cpp

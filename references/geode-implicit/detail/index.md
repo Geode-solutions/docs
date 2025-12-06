@@ -17,10 +17,18 @@ const name = words.join('-');
 
 ## Records
 
+* [ImplicitStreamLine](ImplicitStreamLine.md)
 * [ScalarFunctionExtrapolationInfo](ScalarFunctionExtrapolationInfo.md)
 
 
 ## Functions
+
+### compute_cut_grid_streamline
+
+```cpp
+std::optional<ImplicitStreamLine<dimension> > compute_cut_grid_streamline(const CutGrid<dimension> & grid, const Point<dimension> & starting_position, absl::flat_hash_set<typename CutGrid<dimension>::CellIndices> & visited_cells)
+```
+
 
 ### extrapolate_surface_mesh_scalar_function
 
