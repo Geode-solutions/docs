@@ -44,6 +44,7 @@ const name = words.join('-');
 * [BRepMeshesElementMapping](BRepMeshesElementMapping.md)
 * [BRepMeshesVertexMapping](BRepMeshesVertexMapping.md)
 * [BRepOutput](BRepOutput.md)
+* [BRepRayTracing](BRepRayTracing.md)
 * [BRep](BRep.md)
 * [BaseRange](BaseRange.md)
 * [BijectiveMapping](BijectiveMapping.md)
@@ -306,6 +307,7 @@ const name = words.join('-');
 * [SectionMeshesElementMapping](SectionMeshesElementMapping.md)
 * [SectionMeshesVertexMapping](SectionMeshesVertexMapping.md)
 * [SectionOutput](SectionOutput.md)
+* [SectionRayTracing](SectionRayTracing.md)
 * [Section](Section.md)
 * [Segment](Segment.md)
 * [SidedSurface](SidedSurface.md)
@@ -3450,45 +3452,10 @@ SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
 ```
 
 
-### find_intersections_with_boundaries
-
-```cpp
-flat_hash_map find_intersections_with_boundaries(const InfiniteLine3D & infinite_line, const BRep & brep, const Block3D & block)
-```
-
-
-### is_point_inside_block
-
-```cpp
-bool is_point_inside_block(const BRep & brep, const Block3D & block, const Point3D & point)
-```
-
-
 ### is_point_inside_closed_surface
 
 ```cpp
-bool is_point_inside_closed_surface(const SurfaceMesh3D & surface, const Point3D & point)
-```
-
-
-### block_containing_point
-
-```cpp
-optional block_containing_point(const BRep & brep, const Point3D & point)
-```
-
-
-### is_point_inside_surface
-
-```cpp
-bool is_point_inside_surface(const Section & section, const Surface2D & surface, const Point2D & point)
-```
-
-
-### surface_containing_point
-
-```cpp
-optional surface_containing_point(const Section & section, const Point2D & point)
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
