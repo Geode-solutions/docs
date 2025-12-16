@@ -127,11 +127,5 @@ public vector clean_tetrahedra()
 ```
 
 
-### BackgroundSolidModifier
-
-```cpp
-public void BackgroundSolidModifier(const VertexSet & solid, VertexSetBuilder & builder, MeshModifierFactoryKey key)
-```
-
 
 
