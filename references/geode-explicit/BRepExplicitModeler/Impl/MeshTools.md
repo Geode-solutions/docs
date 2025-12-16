@@ -27,7 +27,7 @@ public std::unique_ptr<typename Mesh::Builder> builder
 ```
 
 ```cpp
-public std::unique_ptr<typename Modifier<Mesh>::type> modifier
+public std::unique_ptr<Modifier> modifier
 
 ```
 
