@@ -246,13 +246,6 @@ public void inactive_triangles(const Surface<dimension> & surface, Span triangle
 ```
 
 
-### mutex
-
-```cpp
-protected absl::Mutex & mutex()
-```
-
-
 ### builder
 
 ```cpp

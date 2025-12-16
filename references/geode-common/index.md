@@ -87,8 +87,6 @@ const name = words.join('-');
 * [IsotropicMetric](IsotropicMetric.md)
 * [LineCollapseEdgeValidities](LineCollapseEdgeValidities.md)
 * [Mapping](Mapping.md)
-* [MeshModifierFactoryKey](MeshModifierFactoryKey.md)
-* [MeshModifierFactory](MeshModifierFactory.md)
 * [Metric](Metric.md)
 * [ModelCollapseEdgeValidity](ModelCollapseEdgeValidity.md)
 * [ModelCollapsePolygonEdgeInfo](ModelCollapsePolygonEdgeInfo.md)

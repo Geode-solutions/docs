@@ -17,6 +17,7 @@ const name = words.join('-');
 
 ## Records
 
+* [AdvancedModelMeshModifiers](AdvancedModelMeshModifiers.md)
 * [DistanceToTetrahedron](DistanceToTetrahedron.md)
 * [EdgeDistance](EdgeDistance.md)
 * [TriangleDistance](TriangleDistance.md)

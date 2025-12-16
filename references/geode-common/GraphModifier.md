@@ -135,13 +135,6 @@ public index_t clean_stamp()
 ```
 
 
-### GraphModifier
-
-```cpp
-public void GraphModifier(const VertexSet & graph, VertexSetBuilder & builder, MeshModifierFactoryKey key)
-```
-
-
 ### graph
 
 ```cpp

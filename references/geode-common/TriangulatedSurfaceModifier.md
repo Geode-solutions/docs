@@ -277,13 +277,6 @@ public index_t clean_stamp()
 
 **return** the mesh stamp
 
-### TriangulatedSurfaceModifier
-
-```cpp
-public void TriangulatedSurfaceModifier<dimension>(const VertexSet & surface, VertexSetBuilder & builder, MeshModifierFactoryKey key)
-```
-
-
 ### surface
 
 ```cpp

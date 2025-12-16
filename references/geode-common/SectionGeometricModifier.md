@@ -16,6 +16,8 @@ const name = words.join('-');
 
 ## Records
 
+AdvancedSectionMeshModifiers
+
 CleanVerticesMappings
 
 CleanElementsMappings
@@ -54,6 +56,12 @@ public void SectionGeometricModifier(SectionGeometricModifier && other)
 public void ~SectionGeometricModifier()
 ```
 
+
+### advanced_mesh_modifiers
+
+```cpp
+public AdvancedSectionMeshModifiers & advanced_mesh_modifiers()
+```
 
 ### split_triangle
 

@@ -396,13 +396,6 @@ public index_t clean_stamp()
 
 **return** the mesh stamp
 
-### TetrahedralSolidModifier
-
-```cpp
-public void TetrahedralSolidModifier(const VertexSet & solid, VertexSetBuilder & builder, MeshModifierFactoryKey key)
-```
-
-
 ### solid
 
 ```cpp

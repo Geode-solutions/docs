@@ -11,28 +11,28 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class MeshModifierFactory
+# class AdvancedBRepMeshModifiers
 
 
 ```cpp
-Inherits from Factory<MeshImpl, VerticesModifier, const VertexSet &, VertexSetBuilder &, MeshModifierFactoryKey>
+Inherits from detail::AdvancedModelMeshModifiers<BRep>
 ```
 
 
 
 ## Functions
 
-### register_mesh_modifier
+### AdvancedBRepMeshModifiers
 
 ```cpp
-public void register_mesh_modifier(NamedType key)
+public void AdvancedBRepMeshModifiers(const BRep & model, BRepBuilder & builder, BRepGeometricModifier & brep_modifier, PassKey )
 ```
 
 
-### create_mesh_modifier
+### block_modifier
 
 ```cpp
-public std::unique_ptr<MeshModifier> create_mesh_modifier(const Mesh & mesh, typename Mesh::Builder & builder)
+public TetrahedralSolidModifier & block_modifier(const Block3D & block)
 ```
 
 

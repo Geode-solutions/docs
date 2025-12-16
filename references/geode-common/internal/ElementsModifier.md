@@ -51,5 +51,12 @@ public index_t elements_clean_stamp()
 ```
 
 
+### ~ElementsModifier
+
+```cpp
+protected void ~ElementsModifier()
+```
+
+
 
 

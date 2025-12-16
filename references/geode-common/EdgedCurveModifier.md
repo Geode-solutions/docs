@@ -105,13 +105,6 @@ public void move_point(index_t vertex, const Point<dimension> & point)
 ```
 
 
-### EdgedCurveModifier
-
-```cpp
-public void EdgedCurveModifier<dimension>(const VertexSet & curve, VertexSetBuilder & builder, MeshModifierFactoryKey key)
-```
-
-
 ### curve
 
 ```cpp

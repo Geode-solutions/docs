@@ -87,13 +87,6 @@ public index_t clean_stamp()
 ```
 
 
-### PointSetModifier
-
-```cpp
-public void PointSetModifier<dimension>(const VertexSet & point_set, VertexSetBuilder & builder, MeshModifierFactoryKey key)
-```
-
-
 ### point_set
 
 ```cpp

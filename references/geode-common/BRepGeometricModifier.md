@@ -16,6 +16,8 @@ const name = words.join('-');
 
 ## Records
 
+AdvancedBRepMeshModifiers
+
 CleanVerticesMappings
 
 CleanElementsMappings
@@ -65,6 +67,13 @@ public BRepGeometricModifier & operator=(BRepGeometricModifier && other)
 
 ```cpp
 public void ~BRepGeometricModifier()
+```
+
+
+### advanced_mesh_modifiers
+
+```cpp
+public AdvancedBRepMeshModifiers & advanced_mesh_modifiers()
 ```
 
 
@@ -502,31 +511,10 @@ protected const BRep & model()
 ```
 
 
-### line_modifier
-
-```cpp
-protected EdgedCurveModifier3D & line_modifier(const Line3D & line)
-```
-
-
-### surface_modifier
-
-```cpp
-protected TriangulatedSurfaceModifier3D & surface_modifier(const Surface3D & surface)
-```
-
-
 ### block_modifier
 
 ```cpp
 protected TetrahedralSolidModifier & block_modifier(const Block3D & block)
-```
-
-
-### create_block_modifier
-
-```cpp
-protected std::unique_ptr<TetrahedralSolidModifier> create_block_modifier(const Block3D & block, TetrahedralSolidBuilder3D & builder)
 ```
 
 
