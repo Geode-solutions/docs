@@ -37,5 +37,19 @@ public MeshesElementsMapping split_solid_along_facets(Span facets_list)
 ```
 
 
+### remove_adjacencies_along_facets
+
+```cpp
+public SolidInfo remove_adjacencies_along_facets(Span facets_list)
+```
+
+
+### duplicate_points_and_process_solid_facets_and_edges
+
+```cpp
+public MeshesElementsMapping duplicate_points_and_process_solid_facets_and_edges(const SolidInfo & solid_info)
+```
+
+
 
 

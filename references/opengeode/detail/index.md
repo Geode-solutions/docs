@@ -28,6 +28,7 @@ const name = words.join('-');
 * [Propagator](Propagator.md)
 * [RelationshipsImpl](RelationshipsImpl.md)
 * [SolidIdentifier](SolidIdentifier.md)
+* [SolidInfo](SolidInfo.md)
 * [SolidMeshMerger](SolidMeshMerger.md)
 * [SplitAlongBlockMeshBorders](SplitAlongBlockMeshBorders.md)
 * [SplitAlongSolidFacets](SplitAlongSolidFacets.md)

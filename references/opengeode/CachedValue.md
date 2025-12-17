@@ -16,6 +16,41 @@ const name = words.join('-');
 
 ## Functions
 
+### CachedValue
+
+```cpp
+public void CachedValue<ReturnType>()
+```
+
+
+### CachedValue
+
+```cpp
+public void CachedValue<ReturnType>(const CachedValue<ReturnType> & other)
+```
+
+
+### CachedValue
+
+```cpp
+public void CachedValue<ReturnType>(CachedValue<ReturnType> && other)
+```
+
+
+### operator=
+
+```cpp
+public CachedValue<ReturnType> & operator=(const CachedValue<ReturnType> & other)
+```
+
+
+### operator=
+
+```cpp
+public CachedValue<ReturnType> & operator=(CachedValue<ReturnType> && other)
+```
+
+
 ### operator()
 
 ```cpp
