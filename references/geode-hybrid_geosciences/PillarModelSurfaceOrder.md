@@ -32,6 +32,16 @@ public BijectiveMapping fault_id_to_sequence_before_id
 ```
 
 ```cpp
+public GenericMapping fault_id_to_surface_before_id
+
+```
+
+```cpp
+public GenericMapping fault_id_to_surface_after_id
+
+```
+
+```cpp
 public vector final_order
 
 ```
