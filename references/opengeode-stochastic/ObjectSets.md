@@ -78,6 +78,13 @@ public vector get_all_object()
 ```
 
 
+### get_objects_in_set
+
+```cpp
+public vector get_objects_in_set(const uuid & set_id)
+```
+
+
 ### nb_sets
 
 ```cpp
@@ -109,21 +116,21 @@ public uuid add_set(basic_string_view name)
 ### add_object
 
 ```cpp
-public ObjectId add_object(Type && object, const uuid & set_id)
+public ObjectId add_object(Type && object, const uuid & set_id, bool fixed)
 ```
 
 
-### update_object
+### update_free_object
 
 ```cpp
-public void update_object(const ObjectId & object_id, Type && object)
+public void update_free_object(const ObjectId & object_id, Type && object)
 ```
 
 
-### remove_object
+### remove_free_object
 
 ```cpp
-public void remove_object(const ObjectId & object_id)
+public void remove_free_object(const ObjectId & object_id)
 ```
 
 

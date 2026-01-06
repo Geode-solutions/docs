@@ -22,6 +22,11 @@ public index_t index
 ```
 
 ```cpp
+public bool fixed
+
+```
+
+```cpp
 public uuid set_id
 
 ```

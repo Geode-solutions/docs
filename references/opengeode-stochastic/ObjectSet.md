@@ -68,38 +68,66 @@ public void set_name(basic_string_view name)
 ```
 
 
-### get_object
+### get_fixed_object
 
 ```cpp
-public const Type & get_object(index_t index)
+public const Type & get_fixed_object(index_t index)
 ```
 
 
-### add_object
+### get_free_object
 
 ```cpp
-public index_t add_object(Type && object)
+public const Type & get_free_object(index_t index)
 ```
 
 
-### update_object
+### add_fixed_object
 
 ```cpp
-public void update_object(index_t index, Type && object)
+public index_t add_fixed_object(Type && object)
 ```
 
 
-### remove_object
+### add_free_object
 
 ```cpp
-public void remove_object(index_t index)
+public index_t add_free_object(Type && object)
 ```
 
 
-### size
+### update_free_object
 
 ```cpp
-public index_t size()
+public void update_free_object(index_t index, Type && object)
+```
+
+
+### remove_free_object
+
+```cpp
+public void remove_free_object(index_t index)
+```
+
+
+### nb_objects
+
+```cpp
+public index_t nb_objects()
+```
+
+
+### nb_fixed_objects
+
+```cpp
+public index_t nb_fixed_objects()
+```
+
+
+### nb_free_objects
+
+```cpp
+public index_t nb_free_objects()
 ```
 
 
