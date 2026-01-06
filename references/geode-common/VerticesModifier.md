@@ -40,7 +40,7 @@ public void ~VerticesModifier()
 ### updated_vertex
 
 ```cpp
-public index_t updated_vertex(index_t vertex_id)
+public std::optional<index_t> updated_vertex(index_t vertex_id)
 ```
 
 

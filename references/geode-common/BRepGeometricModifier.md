@@ -213,7 +213,7 @@ public void rescale_point(index_t unique_vertex, const std::array<double, 3> & s
 ### updated_vertex
 
 ```cpp
-public index_t updated_vertex(const Line3D & line, index_t vertex)
+public std::optional<index_t> updated_vertex(const Line3D & line, index_t vertex)
 ```
 
 
@@ -241,7 +241,7 @@ public void set_updated_edge(const Line3D & line, const EdgeMapping & mapping)
 ### updated_vertex
 
 ```cpp
-public index_t updated_vertex(const Surface3D & surface, index_t vertex)
+public std::optional<index_t> updated_vertex(const Surface3D & surface, index_t vertex)
 ```
 
 
@@ -283,7 +283,7 @@ public void set_updated_triangle(const Surface3D & surface, const TriangleMappin
 ### updated_vertex
 
 ```cpp
-public index_t updated_vertex(const Block3D & block, index_t vertex)
+public std::optional<index_t> updated_vertex(const Block3D & block, index_t vertex)
 ```
 
 
@@ -339,7 +339,7 @@ public void set_updated_tetrahedron(const Block3D & block, const TetrahedronMapp
 ### updated_unique_vertex
 
 ```cpp
-public index_t updated_unique_vertex(index_t unique_vertex)
+public std::optional<index_t> updated_unique_vertex(index_t unique_vertex)
 ```
 
 

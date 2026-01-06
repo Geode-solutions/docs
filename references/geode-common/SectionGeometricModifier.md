@@ -136,7 +136,7 @@ public void rescale_point(index_t unique_vertex, const std::array<double, 2> & s
 ### updated_vertex
 
 ```cpp
-public index_t updated_vertex(const Line2D & line, index_t vertex)
+public optional updated_vertex(const Line2D & line, index_t vertex)
 ```
 
 
@@ -164,7 +164,7 @@ public void set_updated_edge(const Line2D & line, const EdgeMapping & mapping)
 ### updated_vertex
 
 ```cpp
-public index_t updated_vertex(const Surface2D & surface, index_t vertex)
+public optional updated_vertex(const Surface2D & surface, index_t vertex)
 ```
 
 
@@ -206,7 +206,7 @@ public void set_updated_triangle(const Surface2D & surface, const TriangleMappin
 ### updated_unique_vertex
 
 ```cpp
-public index_t updated_unique_vertex(index_t unique_vertex)
+public optional updated_unique_vertex(index_t unique_vertex)
 ```
 
 

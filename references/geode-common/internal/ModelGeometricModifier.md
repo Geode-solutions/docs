@@ -144,7 +144,7 @@ public vector clean_unique_vertices()
 ### updated_line_vertex
 
 ```cpp
-public index_t updated_line_vertex(const Line<dimension> & line, index_t vertex)
+public optional updated_line_vertex(const Line<dimension> & line, index_t vertex)
 ```
 
 
@@ -158,7 +158,7 @@ public void set_updated_line_vertex(const Line<dimension> & line, const VertexMu
 ### updated_surface_vertex
 
 ```cpp
-public index_t updated_surface_vertex(const Surface<dimension> & surface, index_t vertex)
+public optional updated_surface_vertex(const Surface<dimension> & surface, index_t vertex)
 ```
 
 
