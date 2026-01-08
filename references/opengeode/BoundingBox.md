@@ -26,6 +26,13 @@ public bool intersects(const Triangle<3> & triangle)
 ```
 
 
+### epsilon_intersects
+
+```cpp
+public bool epsilon_intersects(const Triangle<3> & triangle)
+```
+
+
 
 
 # class BoundingBox
@@ -121,6 +128,20 @@ public bool contains(const BoundingBox<dimension> & bbox)
 ```
 
 
+### epsilon_contains
+
+```cpp
+public bool epsilon_contains(const Point<dimension> & point)
+```
+
+
+### epsilon_contains
+
+```cpp
+public bool epsilon_contains(const BoundingBox<dimension> & bbox)
+```
+
+
 ### intersects
 
 ```cpp
@@ -167,6 +188,49 @@ public typename std::enable_if<T == 3, bool>::type intersects(const Tetrahedron 
 
 
  Returns true if the element is crossing, is inside, or is containing the bbox
+
+### epsilon_intersects
+
+```cpp
+public bool epsilon_intersects(const BoundingBox<dimension> & bbox)
+```
+
+
+ Epsilon intersection methods are equivalent to intersects ones, but considering an epsilon extension of the bbox
+
+### epsilon_intersects
+
+```cpp
+public bool epsilon_intersects(const Ray<dimension> & ray)
+```
+
+
+### epsilon_intersects
+
+```cpp
+public bool epsilon_intersects(const InfiniteLine<dimension> & line)
+```
+
+
+### epsilon_intersects
+
+```cpp
+public bool epsilon_intersects(const Segment<dimension> & segment)
+```
+
+
+### epsilon_intersects
+
+```cpp
+public typename std::enable_if<T == 2 || T == 3, bool>::type epsilon_intersects(const Triangle<T> & triangle)
+```
+
+### epsilon_intersects
+
+```cpp
+public typename std::enable_if<T == 3, bool>::type epsilon_intersects(const Tetrahedron & tetra)
+```
+
 
 ### signed_distance
 
@@ -244,6 +308,13 @@ public basic_string string()
 
 ```cpp
 public bool intersects(const Triangle<2> & triangle)
+```
+
+
+### epsilon_intersects
+
+```cpp
+public bool epsilon_intersects(const Triangle<2> & triangle)
 ```
 
 

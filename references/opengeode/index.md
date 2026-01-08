@@ -3627,6 +3627,13 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 ```
 
 
+### create_model_from_bounding_box
+
+```cpp
+BRep create_model_from_bounding_box(const BoundingBox3D & box)
+```
+
+
 
 
 ## Enums
