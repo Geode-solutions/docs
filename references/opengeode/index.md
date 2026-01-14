@@ -3501,6 +3501,13 @@ void triangulate_surface_meshes(const Section & section, SectionBuilder & builde
 ```
 
 
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
 ### convert_surface_meshes_into_triangulated_surfaces
 
 ```cpp
@@ -3617,13 +3624,6 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
 ```
 
 
