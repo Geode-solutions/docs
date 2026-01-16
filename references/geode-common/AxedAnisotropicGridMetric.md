@@ -11,34 +11,55 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class AnisotropicMetric
+# class AxedAnisotropicGridMetric
 
 
 ```cpp
-Inherits from Metric<2U>
+Inherits from AnisotropicMetric<3U>
 ```
 
 
 
-# class AnisotropicMetric
+# class AxedAnisotropicGridMetric
 
 
 ```cpp
-Inherits from Metric<3U>
+Inherits from AnisotropicMetric<2U>
 ```
 
 
 
-# class AnisotropicMetric
+# class AxedAnisotropicGridMetric
 
 
 ```cpp
-Inherits from Metric<dimension>
+Inherits from AnisotropicMetric<dimension>
 ```
 
 
 
 ## Functions
+
+### AxedAnisotropicGridMetric
+
+```cpp
+public void AxedAnisotropicGridMetric<dimension>(const CoordinateSystem<dimension> & coordinate_system)
+```
+
+
+### ~AxedAnisotropicGridMetric
+
+```cpp
+public void ~AxedAnisotropicGridMetric<dimension>()
+```
+
+
+### set_metric
+
+```cpp
+public void set_metric(index_t axis, std::unique_ptr<GridMetric<dimension> > metric)
+```
+
 
 ### metric
 

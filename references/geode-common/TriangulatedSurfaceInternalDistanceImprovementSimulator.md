@@ -11,7 +11,16 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class TriangulatedSurfaceHeightImprovementSimulator
+# class TriangulatedSurfaceInternalDistanceImprovementSimulator
+
+
+```cpp
+Inherits from TriangulatedSurfaceImprovementSimulator<3U>
+```
+
+
+
+# class TriangulatedSurfaceInternalDistanceImprovementSimulator
 
 
 ```cpp
@@ -21,13 +30,6 @@ Inherits from TriangulatedSurfaceImprovementSimulator<dimension>
 
 
 ## Functions
-
-### TriangulatedSurfaceHeightImprovementSimulator
-
-```cpp
-public void TriangulatedSurfaceHeightImprovementSimulator<dimension>()
-```
-
 
 ### worst
 
@@ -39,7 +41,7 @@ public double worst(double metric_triangle_1, double metric_triangle_2)
 ### is_better_after_simulation
 
 ```cpp
-public bool is_better_after_simulation(const typename TriangulatedSurfaceImprovementSimulator<dimension>::TrianglesMetrics & triangles_metrics)
+public bool is_better_after_simulation(const TrianglesMetrics & metrics)
 ```
 
 
@@ -50,22 +52,27 @@ public double metric(const Triangle<dimension> & triangle)
 ```
 
 
-
-
-# class TriangulatedSurfaceHeightImprovementSimulator
-
+### current_distances
 
 ```cpp
-Inherits from TriangulatedSurfaceImprovementSimulator<2U>
+public const InternalDistances & current_distances()
+```
+
+
+### set_current_distances
+
+```cpp
+protected index_t set_current_distances(InternalDistances && current_distances)
 ```
 
 
 
-# class TriangulatedSurfaceHeightImprovementSimulator
+
+# class TriangulatedSurfaceInternalDistanceImprovementSimulator
 
 
 ```cpp
-Inherits from TriangulatedSurfaceImprovementSimulator<3U>
+Inherits from TriangulatedSurfaceImprovementSimulator<2U>
 ```
 
 

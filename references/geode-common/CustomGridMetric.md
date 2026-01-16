@@ -15,24 +15,6 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from IsotropicMetric<3U>
-```
-
-
-
-# class CustomGridMetric
-
-
-```cpp
-Inherits from IsotropicMetric<2U>
-```
-
-
-
-# class CustomGridMetric
-
-
-```cpp
 Inherits from IsotropicMetric<dimension>
 ```
 
@@ -116,6 +98,24 @@ public double median_metric()
 public CoordinateSystem<dimension> coordinate_system(const Point<dimension> & point)
 ```
 
+
+
+
+# class CustomGridMetric
+
+
+```cpp
+Inherits from IsotropicMetric<3U>
+```
+
+
+
+# class CustomGridMetric
+
+
+```cpp
+Inherits from IsotropicMetric<2U>
+```
 
 
 

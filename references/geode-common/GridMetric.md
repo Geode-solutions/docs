@@ -51,6 +51,13 @@ public void GridMetric<dimension>(const Grid<dimension> & grid, double default_m
 ```
 
 
+### GridMetric
+
+```cpp
+public void GridMetric<dimension>(GridMetric<dimension> && )
+```
+
+
 ### ~GridMetric
 
 ```cpp

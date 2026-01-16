@@ -11,53 +11,48 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class AnisotropicMetric
+# struct ProcessElementResult
 
+
+## Members
 
 ```cpp
-Inherits from Metric<2U>
+public bool success
+
 ```
 
-
-
-# class AnisotropicMetric
-
-
 ```cpp
-Inherits from Metric<3U>
+public std::vector<Element> retry_elements
+
 ```
 
-
-
-# class AnisotropicMetric
-
-
 ```cpp
-Inherits from Metric<dimension>
+public std::vector<Element> new_elements
+
 ```
 
 
 
 ## Functions
 
-### metric
+### ProcessElementResult
 
 ```cpp
-public double metric(const Point<dimension> & point, const Vector<dimension> & vector)
+public void ProcessElementResult()
 ```
 
 
-### global_average_metric
+### operator bool
 
 ```cpp
-public std::array<double, dimension> global_average_metric()
+public bool operator bool()
 ```
 
 
-### global_minimal_metric
+### add_result
 
 ```cpp
-public std::array<double, dimension> global_minimal_metric()
+public void add_result(ProcessElementResult && result)
 ```
 
 

@@ -24,21 +24,30 @@ const name = words.join('-');
 ## Records
 
 * [AnisotropicMetric](AnisotropicMetric.md)
+* [AxedAnisotropicGridMetric](AxedAnisotropicGridMetric.md)
 * [BRepCollapseEdgeValidity](BRepCollapseEdgeValidity.md)
 * [BRepCutter](BRepCutter.md)
+* [BRepEdgeTShape](BRepEdgeTShape.md)
 * [BRepElementsAfterCollapseEdge](BRepElementsAfterCollapseEdge.md)
 * [BRepElementsAfterMovePoint](BRepElementsAfterMovePoint.md)
 * [BRepElementsAfterSplitCollapse](BRepElementsAfterSplitCollapse.md)
 * [BRepElementsAfterSwapEdge](BRepElementsAfterSwapEdge.md)
+* [BRepFacetTShape](BRepFacetTShape.md)
+* [BRepGeometricConstraintModifier](BRepGeometricConstraintModifier.md)
 * [BRepGeometricModifier](BRepGeometricModifier.md)
 * [BRepGridMetric](BRepGridMetric.md)
+* [BRepInternalDistanceOptimizer](BRepInternalDistanceOptimizer.md)
 * [BRepModifier](BRepModifier.md)
 * [BRepMovePointValidity](BRepMovePointValidity.md)
+* [BRepOptimizer](BRepOptimizer.md)
+* [BRepOrchestrator](BRepOrchestrator.md)
 * [BRepSplitEdgeValidity](BRepSplitEdgeValidity.md)
 * [BRepSplitTriangleValidity](BRepSplitTriangleValidity.md)
 * [BRepSwapEdgeValidity](BRepSwapEdgeValidity.md)
 * [BRepSwapFacetValidity](BRepSwapFacetValidity.md)
 * [BlockCollapseEdgeValidities](BlockCollapseEdgeValidities.md)
+* [BlockElement](BlockElement.md)
+* [BlockForbiddenInfos](BlockForbiddenInfos.md)
 * [BlockMovePointValidities](BlockMovePointValidities.md)
 * [BlockPatchVertices](BlockPatchVertices.md)
 * [BlockPathVertices](BlockPathVertices.md)
@@ -59,7 +68,12 @@ const name = words.join('-');
 * [CommonModifierPointSetLibrary](CommonModifierPointSetLibrary.md)
 * [CommonModifierSolidLibrary](CommonModifierSolidLibrary.md)
 * [CommonModifierSurfaceLibrary](CommonModifierSurfaceLibrary.md)
+* [CommonOrchestratorCommonLibrary](CommonOrchestratorCommonLibrary.md)
+* [CommonOrchestratorModelLibrary](CommonOrchestratorModelLibrary.md)
+* [CommonOrchestratorSolidLibrary](CommonOrchestratorSolidLibrary.md)
+* [CommonOrchestratorSurfaceLibrary](CommonOrchestratorSurfaceLibrary.md)
 * [ComponentMeshVertexInclusionQuery](ComponentMeshVertexInclusionQuery.md)
+* [ConstraintModifier](ConstraintModifier.md)
 * [CustomGridMetric](CustomGridMetric.md)
 * [CutPatchException](CutPatchException.md)
 * [CutPathException](CutPathException.md)
@@ -76,13 +90,16 @@ const name = words.join('-');
 * [ForbbidenImpl](ForbbidenImpl.md)
 * [ForbiddenEdges](ForbiddenEdges.md)
 * [ForbiddenFacets](ForbiddenFacets.md)
+* [ForbiddenInfos](ForbiddenInfos.md)
 * [ForbiddenTriangles](ForbiddenTriangles.md)
+* [FourPointsInternalDistance](FourPointsInternalDistance.md)
 * [FrontCycle](FrontCycle.md)
 * [FrontEdge](FrontEdge.md)
 * [GeometricSolidPath](GeometricSolidPath.md)
 * [GeometricSurfacePath](GeometricSurfacePath.md)
 * [GraphModifier](GraphModifier.md)
 * [GridMetric](GridMetric.md)
+* [InternalDistance](InternalDistance.md)
 * [Invalidity](Invalidity.md)
 * [IsotropicMetric](IsotropicMetric.md)
 * [LineCollapseEdgeValidities](LineCollapseEdgeValidities.md)
@@ -99,6 +116,7 @@ const name = words.join('-');
 * [ModelSplitTriangleValidity](ModelSplitTriangleValidity.md)
 * [ModelSwapEdgeInfo](ModelSwapEdgeInfo.md)
 * [ModelSwapEdgeValidity](ModelSwapEdgeValidity.md)
+* [ModifiableObjectOrchestrator](ModifiableObjectOrchestrator.md)
 * [ModifiableObject](ModifiableObject.md)
 * [ModifiedElements](ModifiedElements.md)
 * [ModifiedTetrahedron](ModifiedTetrahedron.md)
@@ -106,10 +124,15 @@ const name = words.join('-');
 * [Modifier](Modifier.md)
 * [ModuleLicenseChecker](ModuleLicenseChecker.md)
 * [MultiMapping](MultiMapping.md)
+* [Orchestrator](Orchestrator.md)
 * [PartitionnerParameters](PartitionnerParameters.md)
 * [PatchFrontEdge](PatchFrontEdge.md)
 * [Path](Path.md)
 * [PointSetModifier](PointSetModifier.md)
+* [PointsCmp](PointsCmp.md)
+* [PointsHash](PointsHash.md)
+* [PointsInternalDistanceImpl](PointsInternalDistanceImpl.md)
+* [Points](Points.md)
 * [PolygonEdgeSplit](PolygonEdgeSplit.md)
 * [PolygonEdge](PolygonEdge.md)
 * [PolyhedronFacetEdge](PolyhedronFacetEdge.md)
@@ -126,6 +149,7 @@ const name = words.join('-');
 * [SolidCollapseEdgeValidity](SolidCollapseEdgeValidity.md)
 * [SolidCutPatchInfo](SolidCutPatchInfo.md)
 * [SolidCutPathInfo](SolidCutPathInfo.md)
+* [SolidEdgeTShape](SolidEdgeTShape.md)
 * [SolidGeometricalValidity](SolidGeometricalValidity.md)
 * [SolidMovePointValidity](SolidMovePointValidity.md)
 * [SolidPatch](SolidPatch.md)
@@ -148,6 +172,7 @@ const name = words.join('-');
 * [SurfaceCollapseEdgeValidity](SurfaceCollapseEdgeValidity.md)
 * [SurfaceCutPathException](SurfaceCutPathException.md)
 * [SurfaceCutPathInfo](SurfaceCutPathInfo.md)
+* [SurfaceEdge](SurfaceEdge.md)
 * [SurfaceGeometricalValidity](SurfaceGeometricalValidity.md)
 * [SurfaceMovePointValidities](SurfaceMovePointValidities.md)
 * [SurfaceMovePointValidity](SurfaceMovePointValidity.md)
@@ -168,16 +193,33 @@ const name = words.join('-');
 * [SwapTrianglesAfter](SwapTrianglesAfter.md)
 * [TetrahedraAfter](TetrahedraAfter.md)
 * [TetrahedraModifier](TetrahedraModifier.md)
+* [TetrahedralSolidConstraintModifier](TetrahedralSolidConstraintModifier.md)
 * [TetrahedralSolidEpsilonModifier](TetrahedralSolidEpsilonModifier.md)
 * [TetrahedralSolidImprovementSimulator3D](TetrahedralSolidImprovementSimulator3D.md)
+* [TetrahedralSolidInternalDistanceImprovementSimulator](TetrahedralSolidInternalDistanceImprovementSimulator.md)
+* [TetrahedralSolidInternalDistanceOptimizer](TetrahedralSolidInternalDistanceOptimizer.md)
 * [TetrahedralSolidModifier](TetrahedralSolidModifier.md)
+* [TetrahedralSolidOptimizerImprovementSimulator](TetrahedralSolidOptimizerImprovementSimulator.md)
+* [TetrahedralSolidOptimizer](TetrahedralSolidOptimizer.md)
+* [TetrahedralSolidOrchestrator](TetrahedralSolidOrchestrator.md)
+* [TetrahedralSolidShiftOptimizer](TetrahedralSolidShiftOptimizer.md)
+* [ThreePointsInternalDistance](ThreePointsInternalDistance.md)
 * [TrianglesAfter](TrianglesAfter.md)
 * [TrianglesModifier](TrianglesModifier.md)
+* [TriangulatedSurfaceConstraintModifier](TriangulatedSurfaceConstraintModifier.md)
+* [TriangulatedSurfaceDecimatorOperator](TriangulatedSurfaceDecimatorOperator.md)
+* [TriangulatedSurfaceDecimator](TriangulatedSurfaceDecimator.md)
 * [TriangulatedSurfaceEpsilonModifier](TriangulatedSurfaceEpsilonModifier.md)
-* [TriangulatedSurfaceHeightImprovementSimulator](TriangulatedSurfaceHeightImprovementSimulator.md)
 * [TriangulatedSurfaceImprovementSimulator](TriangulatedSurfaceImprovementSimulator.md)
+* [TriangulatedSurfaceInternalDistanceImprovementSimulator](TriangulatedSurfaceInternalDistanceImprovementSimulator.md)
+* [TriangulatedSurfaceInternalDistanceOptimizer](TriangulatedSurfaceInternalDistanceOptimizer.md)
 * [TriangulatedSurfaceModifier](TriangulatedSurfaceModifier.md)
+* [TriangulatedSurfaceOptimizerImprovementSimulator](TriangulatedSurfaceOptimizerImprovementSimulator.md)
+* [TriangulatedSurfaceOptimizer](TriangulatedSurfaceOptimizer.md)
+* [TriangulatedSurfaceOrchestrator](TriangulatedSurfaceOrchestrator.md)
+* [TriangulatedSurfaceShiftOptimizer](TriangulatedSurfaceShiftOptimizer.md)
 * [VerticesModifier](VerticesModifier.md)
+* [uuid](uuid.md)
 
 
 ## Functions
@@ -652,6 +694,131 @@ SurfaceCutPathInfo<2> cut_along_path(const TriangulatedSurface2D & surface, Tria
 
 ```cpp
 SurfaceCutPathInfo cut_along_path(BRepGeometricModifier & modifier, const Surface3D & surface, Span path_splits)
+```
+
+
+### edge_tshape_apex
+
+```cpp
+optional edge_tshape_apex(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge)
+```
+
+
+### facet_tshape_apex
+
+```cpp
+optional facet_tshape_apex(const TetrahedralSolid3D & mesh, const PolyhedronFacet & facet)
+```
+
+
+### edge_tshape_apex
+
+```cpp
+BRepEdgeTShape edge_tshape_apex(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge)
+```
+
+
+### facet_tshape_apex
+
+```cpp
+BRepFacetTShape facet_tshape_apex(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet)
+```
+
+
+### combined_allowed
+
+```cpp
+ALLOWED_COLLAPSE_VERTEX_VERTEX combined_allowed(ALLOWED_COLLAPSE_VERTEX_VERTEX lhs, ALLOWED_COLLAPSE_VERTEX_VERTEX rhs)
+```
+
+
+### combined_allowed
+
+```cpp
+ALLOWED_COLLAPSE_EDGE_VERTEX combined_allowed(ALLOWED_COLLAPSE_EDGE_VERTEX lhs, ALLOWED_COLLAPSE_EDGE_VERTEX rhs)
+```
+
+
+### combined_allowed
+
+```cpp
+ALLOWED_COLLAPSE_FACET_VERTEX combined_allowed(ALLOWED_COLLAPSE_FACET_VERTEX lhs, ALLOWED_COLLAPSE_FACET_VERTEX rhs)
+```
+
+
+### combined_allowed
+
+```cpp
+ALLOWED_COLLAPSE_EDGE_EDGE combined_allowed(ALLOWED_COLLAPSE_EDGE_EDGE lhs, ALLOWED_COLLAPSE_EDGE_EDGE rhs)
+```
+
+
+### allowed_collapse_edge_by_constraints
+
+```cpp
+ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const ModifiableBRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const class BRepGeometricConstraintModifier::Constraints & constraints)
+```
+
+
+### is_swap_edge_allowed_by_constraints
+
+```cpp
+bool is_swap_edge_allowed_by_constraints(const ModifiableBRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepEdgeTShape & tshapes, const class BRepGeometricConstraintModifier::Constraints & constraints)
+```
+
+### is_swap_facet_allowed_by_constraints
+
+```cpp
+bool is_swap_facet_allowed_by_constraints(const ModifiableBRep & brep, const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes, const class BRepGeometricConstraintModifier::Constraints & constraints)
+```
+
+
+### allowed_split_collapse_edge_by_constraints
+
+```cpp
+tuple allowed_split_collapse_edge_by_constraints(const ModifiableBRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepEdgeTShape & tshapes, const class BRepGeometricConstraintModifier::Constraints & constraints)
+```
+
+
+### allowed_split_collapse_facet_by_constraints
+
+```cpp
+tuple allowed_split_collapse_facet_by_constraints(const ModifiableBRep & brep, const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes, const class BRepGeometricConstraintModifier::Constraints & constraints)
+```
+
+
+### allowed_collapse_edge_by_constraints
+
+```cpp
+ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacetEdge & edge, const class TetrahedralSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### is_swap_edge_allowed_by_constraints
+
+```cpp
+bool is_swap_edge_allowed_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape, const class TetrahedralSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### is_swap_facet_allowed_by_constraints
+
+```cpp
+bool is_swap_facet_allowed_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacet & facet, const std::optional<PolyhedronVertex> & tshape_apex, const class TetrahedralSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### allowed_split_collapse_edge_by_constraints
+
+```cpp
+tuple allowed_split_collapse_edge_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape, const class TetrahedralSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### allowed_split_collapse_facet_by_constraints
+
+```cpp
+tuple allowed_split_collapse_facet_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacet & facet, const std::optional<PolyhedronVertex> & tshape_apex, const class TetrahedralSolidConstraintModifier::Constraints & constraints)
 ```
 
 
@@ -1653,10 +1820,10 @@ bool does_split_split_collapse_edge_improve_metric(const BRep & brep, const Bloc
 ```
 
 
-### does_smoothing_improve_metric
+### does_move_point_improve_metric
 
 ```cpp
-bool does_smoothing_improve_metric(const BRep & brep, const Block3D & block, const index_t & vertex, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_move_point_improve_metric(const BRep & brep, const Block3D & block, const index_t & vertex, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
@@ -1717,11 +1884,159 @@ vector determine_cuts(const TetrahedralSolid3D & solid, const Plane & plane, Spa
 ```
 
 
-### minimal_metric
+### minimal_tetrahedron_internal_distance
 
 ```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+InternalDistance minimal_tetrahedron_internal_distance(const Tetrahedron & tetra)
 ```
+
+
+### minimal_triangle_internal_distance
+
+```cpp
+InternalDistance minimal_triangle_internal_distance(const Triangle<dimension> & triangle)
+```
+
+
+### fast_tetrahedron_internal_distances
+
+```cpp
+InlinedVector fast_tetrahedron_internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id, const struct InternalDistance::Options & options)
+```
+
+
+### fast_triangle_internal_distances
+
+```cpp
+InlinedVector fast_triangle_internal_distances(const TriangulatedSurface<dimension> & surface, index_t triangle_id, const struct InternalDistance::Options & options)
+```
+
+
+### fast_tetrahedron_internal_distances
+
+```cpp
+InlinedVector fast_tetrahedron_internal_distances(const Tetrahedron & tetra, const struct InternalDistance::Options & options)
+```
+
+
+### fast_triangle_internal_distances
+
+```cpp
+InlinedVector fast_triangle_internal_distances(const Triangle<dimension> & triangle, const struct InternalDistance::Options & options)
+```
+
+
+### has_internal_distance_below_epsilon
+
+```cpp
+bool has_internal_distance_below_epsilon(const Tetrahedron & tetra)
+```
+
+
+### has_internal_distance_below_epsilon
+
+```cpp
+bool has_internal_distance_below_epsilon(const Triangle<dimension> & triangle)
+```
+
+
+### tetrahedron_status
+
+```cpp
+ELEMENT_STATUS tetrahedron_status(const Tetrahedron & tetrahedron)
+```
+
+
+### triangle_status
+
+```cpp
+ELEMENT_STATUS triangle_status(const Triangle<dimension> & triangle)
+```
+
+
+### compute_number_of_negative_tetrahedra
+
+```cpp
+optional compute_number_of_negative_tetrahedra(Span tetrahedra)
+```
+
+
+### compute_number_of_negative_tetrahedra
+
+```cpp
+optional compute_number_of_negative_tetrahedra(Span tetrahedra)
+```
+
+
+### compute_number_of_negative_triangles
+
+```cpp
+optional compute_number_of_negative_triangles(absl::Span<const Triangle<dimension> > triangles)
+```
+
+
+### compute_number_of_negative_triangles
+
+```cpp
+optional compute_number_of_negative_triangles(absl::Span<const ModifiedTriangle<dimension> > triangles)
+```
+
+
+### edge_from_internal_distance
+
+```cpp
+PolyhedronFacetEdge edge_from_internal_distance(const SolidMesh3D & solid, index_t tetrahedron_id, const InternalDistance & idistance)
+```
+
+
+### edge_from_internal_distance
+
+```cpp
+PolygonEdge edge_from_internal_distance(const SurfaceMesh<dimension> & surface, index_t triangle_id, const InternalDistance & idistance)
+```
+
+
+### allowed_collapse_edge_by_constraints
+
+```cpp
+ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge_by_constraints(const ModifiableTriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const typename TriangulatedSurfaceConstraintModifier<dimension>::Constraints & constraints)
+```
+
+
+### is_swap_edge_allowed_by_constraints
+
+```cpp
+bool is_swap_edge_allowed_by_constraints(const ModifiableTriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex, const typename TriangulatedSurfaceConstraintModifier<dimension>::Constraints & constraints)
+```
+
+
+### allowed_split_collapse_edge_by_constraints
+
+```cpp
+ALLOWED_COLLAPSE_EDGE_VERTEX allowed_split_collapse_edge_by_constraints(const ModifiableTriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex, const typename TriangulatedSurfaceConstraintModifier<dimension>::Constraints & constraints)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ElementStamp & element_stamp)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const SurfaceEdge<dimension> & surface_edge)
+```
+
+
+### decimate_triangulated_surface
+
+```cpp
+void decimate_triangulated_surface(TriangulatedSurfaceConstraintModifier<dimension> & constraint_modifier, const TriangulatedSurfaceDecimatorOperator<dimension> & decimator_operator)
+```
+
 
 ### does_collapse_edge_improve_metric
 
@@ -1734,6 +2049,20 @@ bool does_collapse_edge_improve_metric(const TriangulatedSurface<dimension> & su
 
 ```cpp
 bool does_swap_edge_improve_metric(const TriangulatedSurface<dimension> & surface, const PolygonEdge & edge, const TriangulatedSurfaceImprovementSimulator<dimension> & improvement_simulator)
+```
+
+
+### optimize_triangulated_surface_elements
+
+```cpp
+void optimize_triangulated_surface_elements(TriangulatedSurfaceConstraintModifier<dimension> & constraint_modifier, const TriangulatedSurfaceInternalDistanceImprovementSimulator<dimension> & improvement_simulator, index_t first_element)
+```
+
+
+### shift_optimize_triangulated_surface_elements
+
+```cpp
+void shift_optimize_triangulated_surface_elements(TriangulatedSurfaceConstraintModifier<dimension> & constraint_modifier, const TriangulatedSurfaceInternalDistanceImprovementSimulator<dimension> & improvement_simulator, index_t first_element)
 ```
 
 
@@ -1755,6 +2084,19 @@ FixedArray mesh_partitionner(const SurfaceMesh<dimension> & mesh, const Partitio
 
 ```cpp
 FixedArray mesh_partitionner(const SolidMesh3D & mesh, const PartitionnerParameters & parameters)
+```
+
+
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
+
+### edge_tshape_apex
+
+```cpp
+optional edge_tshape_apex(const TriangulatedSurface<dimension> & mesh, const PolygonEdge & edge)
 ```
 
 
@@ -1852,6 +2194,34 @@ SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & se
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const BlockElement<ElementId> & element)
+```
+
+
+### optimize_brep_elements
+
+```cpp
+vector optimize_brep_elements(BRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, Span tetrahedra)
+```
+
+
+### optimize_tetrahedral_solid_elements
+
+```cpp
+void optimize_tetrahedral_solid_elements(TetrahedralSolidConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
+```
+
+
+### shift_optimize_tetrahedral_solid_elements
+
+```cpp
+void shift_optimize_tetrahedral_solid_elements(TetrahedralSolidConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
+```
+
+
 
 
 ## Enums
@@ -1862,6 +2232,50 @@ SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & se
 
 | left |
 | right |
+
+
+
+| enum class ALLOWED_COLLAPSE_VERTEX_VERTEX |
+
+--
+
+| none |
+| from_vertex0 |
+| from_vertex1 |
+| from_both |
+
+
+
+| enum class ALLOWED_COLLAPSE_EDGE_VERTEX |
+
+--
+
+| none |
+| from_edge |
+| from_vertex |
+| from_both |
+
+
+
+| enum class ALLOWED_COLLAPSE_FACET_VERTEX |
+
+--
+
+| none |
+| from_facet |
+| from_vertex |
+| from_both |
+
+
+
+| enum class ALLOWED_COLLAPSE_EDGE_EDGE |
+
+--
+
+| none |
+| from_edge0 |
+| from_edge1 |
+| from_both |
 
 
 

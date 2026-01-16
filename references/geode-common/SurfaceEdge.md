@@ -11,35 +11,43 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class AdvancedBRepMeshModifiers
+# struct SurfaceEdge
 
+
+## Members
 
 ```cpp
-Inherits from detail::AdvancedModelMeshModifiers<BRep>
+public PolygonEdge edge
+
+```
+
+```cpp
+public array vertices
+
 ```
 
 
 
 ## Functions
 
-### AdvancedBRepMeshModifiers
+### SurfaceEdge
 
 ```cpp
-public void AdvancedBRepMeshModifiers(const BRep & model, BRepBuilder & builder, BRepGeometricModifier & brep_modifier, PassKey )
+public void SurfaceEdge<dimension>(const SurfaceMesh<dimension> & surface, PolygonEdge edge_in)
 ```
 
 
-### block_modifier
+### operator==
 
 ```cpp
-public TetrahedralSolidModifier & block_modifier(const Block3D & block)
+public bool operator==(const SurfaceEdge<dimension> & other)
 ```
 
 
-### modifiable_solid
+### string
 
 ```cpp
-public ModifiableObject modifiable_solid(const Block3D & block)
+public basic_string string()
 ```
 
 

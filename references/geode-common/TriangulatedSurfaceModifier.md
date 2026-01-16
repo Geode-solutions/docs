@@ -20,24 +20,6 @@ Inherits from VerticesModifier, EdgesModifier, TrianglesModifier
 
 
 
-# class TriangulatedSurfaceModifier
-
-
-```cpp
-Inherits from VerticesModifier, EdgesModifier, TrianglesModifier
-```
-
-
-
-# class TriangulatedSurfaceModifier
-
-
-```cpp
-Inherits from VerticesModifier, EdgesModifier, TrianglesModifier
-```
-
-
-
 ## Records
 
 PolygonEdgeInfo
@@ -290,6 +272,24 @@ protected const SurfaceMesh<dimension> & surface()
 protected TriangulatedSurfaceBuilder<dimension> & builder()
 ```
 
+
+
+
+# class TriangulatedSurfaceModifier
+
+
+```cpp
+Inherits from VerticesModifier, EdgesModifier, TrianglesModifier
+```
+
+
+
+# class TriangulatedSurfaceModifier
+
+
+```cpp
+Inherits from VerticesModifier, EdgesModifier, TrianglesModifier
+```
 
 
 

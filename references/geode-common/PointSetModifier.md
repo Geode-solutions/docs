@@ -20,15 +20,6 @@ Inherits from VerticesModifier
 
 
 
-# class PointSetModifier
-
-
-```cpp
-Inherits from VerticesModifier
-```
-
-
-
 ## Functions
 
 ### PointSetModifier
@@ -100,6 +91,15 @@ protected const PointSet<dimension> & point_set()
 protected PointSetBuilder<dimension> & builder()
 ```
 
+
+
+
+# class PointSetModifier
+
+
+```cpp
+Inherits from VerticesModifier
+```
 
 
 

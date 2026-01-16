@@ -11,53 +11,58 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class AnisotropicMetric
+# struct Constraints
 
 
 ```cpp
-Inherits from Metric<2U>
+Inherits from CommonConstraints
 ```
 
 
 
-# class AnisotropicMetric
-
-
-```cpp
-Inherits from Metric<3U>
-```
-
-
-
-# class AnisotropicMetric
-
+## Members
 
 ```cpp
-Inherits from Metric<dimension>
+public ForbiddenFacets forbidden_facets
+
 ```
 
 
 
 ## Functions
 
-### metric
+### Constraints
 
 ```cpp
-public double metric(const Point<dimension> & point, const Vector<dimension> & vector)
+public void Constraints(BORDER_CONSTRAINT border_constraint)
 ```
 
 
-### global_average_metric
+### Constraints
 
 ```cpp
-public std::array<double, dimension> global_average_metric()
+public void Constraints(Constraints && )
 ```
 
 
-### global_minimal_metric
+### operator=
 
 ```cpp
-public std::array<double, dimension> global_minimal_metric()
+public Constraints & operator=(Constraints && )
+```
+
+
+### ~Constraints
+
+```cpp
+public void ~Constraints()
+```
+
+
+### add_constraints
+
+```cpp
+public void add_constraints(const Constraints & constraints)
 ```
 
 
