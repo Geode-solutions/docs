@@ -31,7 +31,7 @@ const name = words.join('-');
 ### decimate_background_surface_with_metric
 
 ```cpp
-void decimate_background_surface_with_metric(BackgroundSurfaceConstraintModifier & constraint_modifier, const BackgroundSurfaceDecimatorOperator & decimator_operator, const geode::internal::Metric & metric)
+void decimate_background_surface_with_metric(BackgroundSurfaceConstraintModifier & constraint_modifier, const TriangulatedSurfaceDecimatorOperator2D & decimator_operator, const geode::internal::Metric & metric)
 ```
 
 

@@ -32,7 +32,7 @@ public void MetricBasedDecimator(const BackgroundSurface & background, const Gri
 ### skip_edge
 
 ```cpp
-public bool skip_edge(const BackgroundSurface & bsurface, const PolygonEdge & edge)
+public bool skip_edge(const TriangulatedSurface2D & surface, const PolygonEdge & edge)
 ```
 
 

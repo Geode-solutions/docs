@@ -53,7 +53,7 @@ public BackgroundSurfaceMetricDecimator & operator=(BackgroundSurfaceMetricDecim
 ### BackgroundSurfaceMetricDecimator
 
 ```cpp
-public void BackgroundSurfaceMetricDecimator(BackgroundSurfaceConstraintModifier & constraint_modifier, const BackgroundSurfaceDecimatorOperator & decimator_operator, const geode::internal::Metric & metric)
+public void BackgroundSurfaceMetricDecimator(BackgroundSurfaceConstraintModifier & constraint_modifier, const TriangulatedSurfaceDecimatorOperator2D & decimator_operator, const geode::internal::Metric & metric)
 ```
 
 
