@@ -60,7 +60,7 @@ public void ~BackgroundBRepRelaxer()
 ### BackgroundBRepRelaxer
 
 ```cpp
-public void BackgroundBRepRelaxer(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, const geode::Metric3D & metric)
+public void BackgroundBRepRelaxer(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, const geode::Metric3D & metric)
 ```
 
 

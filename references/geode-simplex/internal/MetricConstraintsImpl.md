@@ -216,5 +216,12 @@ public const Metric<dimension> & build_metric()
 ```
 
 
+### generate_grid_metric
+
+```cpp
+public std::unique_ptr<GridMetric<dimension> > generate_grid_metric()
+```
+
+
 
 

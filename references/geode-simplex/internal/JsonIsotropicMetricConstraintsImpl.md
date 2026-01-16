@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class JsonMetricConstraintsImpl
+# class JsonIsotropicMetricConstraintsImpl
 
 
 ```cpp
@@ -22,10 +22,10 @@ Inherits from MetricConstraintsImpl<Model>
 
 ## Functions
 
-### JsonMetricConstraintsImpl
+### JsonIsotropicMetricConstraintsImpl
 
 ```cpp
-public void JsonMetricConstraintsImpl<Model>(const Model & model)
+public void JsonIsotropicMetricConstraintsImpl<Model>(const Model & model)
 ```
 
 

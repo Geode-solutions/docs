@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from BackgroundBRepOrchestrator<SolidVertex>
+Inherits from BRepOrchestrator<SolidVertex>
 ```
 
 
@@ -25,7 +25,7 @@ Inherits from BackgroundBRepOrchestrator<SolidVertex>
 ### BackgroundBRepVertexSmoother
 
 ```cpp
-public void BackgroundBRepVertexSmoother(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
+public void BackgroundBRepVertexSmoother(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

@@ -30,7 +30,7 @@ const name = words.join('-');
 * [FrontalRemesher2D](FrontalRemesher2D.md)
 * [FrontalRemesher3D](FrontalRemesher3D.md)
 * [FrontalRemesher](FrontalRemesher.md)
-* [JsonMetricConstraintsImpl](JsonMetricConstraintsImpl.md)
+* [JsonIsotropicMetricConstraintsImpl](JsonIsotropicMetricConstraintsImpl.md)
 * [LSCMRemesher](LSCMRemesher.md)
 * [LineConstraint](LineConstraint.md)
 * [LineRelaxer](LineRelaxer.md)
@@ -207,21 +207,21 @@ H AbslHashValue(H h, const Edge & other)
 ### decimate_edges
 
 ```cpp
-void decimate_edges(BackgroundBRepConstraintModifier & constraint_modifier, const Metric3D & metric)
+void decimate_edges(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const Metric3D & metric)
 ```
 
 
 ### relax_polyhedra
 
 ```cpp
-void relax_polyhedra(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator, const Metric3D & metric)
+void relax_polyhedra(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, const Metric3D & metric)
 ```
 
 
 ### smooth_vertices
 
 ```cpp
-void smooth_vertices(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
+void smooth_vertices(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

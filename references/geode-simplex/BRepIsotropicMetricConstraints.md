@@ -11,36 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BRepMetricConstraints
+# class BRepIsotropicMetricConstraints
 
 
 ## Functions
 
-### BRepMetricConstraints
+### BRepIsotropicMetricConstraints
 
 ```cpp
-public void BRepMetricConstraints(const BRep & brep)
+public void BRepIsotropicMetricConstraints(const BRep & brep)
 ```
 
 
-### BRepMetricConstraints
+### BRepIsotropicMetricConstraints
 
 ```cpp
-public void BRepMetricConstraints(BRepMetricConstraints && other)
+public void BRepIsotropicMetricConstraints(BRepIsotropicMetricConstraints && other)
 ```
 
 
 ### operator=
 
 ```cpp
-public BRepMetricConstraints & operator=(BRepMetricConstraints && other)
+public BRepIsotropicMetricConstraints & operator=(BRepIsotropicMetricConstraints && other)
 ```
 
 
-### ~BRepMetricConstraints
+### ~BRepIsotropicMetricConstraints
 
 ```cpp
-public void ~BRepMetricConstraints()
+public void ~BRepIsotropicMetricConstraints()
 ```
 
 

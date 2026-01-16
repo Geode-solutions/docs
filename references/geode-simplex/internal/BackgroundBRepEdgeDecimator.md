@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from BackgroundBRepOrchestrator<SolidEdge>
+Inherits from BRepOrchestrator<SolidEdge>
 ```
 
 
@@ -25,7 +25,7 @@ Inherits from BackgroundBRepOrchestrator<SolidEdge>
 ### BackgroundBRepEdgeDecimator
 
 ```cpp
-public void BackgroundBRepEdgeDecimator(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundBRepEdgeDecimatorOperator & decimator_operator, const geode::Metric3D & metric)
+public void BackgroundBRepEdgeDecimator(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BackgroundBRepEdgeDecimatorOperator & decimator_operator, const geode::Metric3D & metric)
 ```
 
 

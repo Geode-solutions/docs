@@ -11,22 +11,22 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class SectionMetricConstraints
+# class SectionIsotropicMetricConstraints
 
 
 ## Functions
 
-### SectionMetricConstraints
+### SectionIsotropicMetricConstraints
 
 ```cpp
-public void SectionMetricConstraints(const Section & brep)
+public void SectionIsotropicMetricConstraints(const Section & brep)
 ```
 
 
-### ~SectionMetricConstraints
+### ~SectionIsotropicMetricConstraints
 
 ```cpp
-public void ~SectionMetricConstraints()
+public void ~SectionIsotropicMetricConstraints()
 ```
 
 

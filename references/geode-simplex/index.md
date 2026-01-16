@@ -23,8 +23,9 @@ const name = words.join('-');
 
 ## Records
 
+* [BRepAnisotropicMetricConstraints](BRepAnisotropicMetricConstraints.md)
 * [BRepElementsAfterCollapseEdge](BRepElementsAfterCollapseEdge.md)
-* [BRepMetricConstraints](BRepMetricConstraints.md)
+* [BRepIsotropicMetricConstraints](BRepIsotropicMetricConstraints.md)
 * [BRepRemeshOptions](BRepRemeshOptions.md)
 * [BRepRemeshValidity](BRepRemeshValidity.md)
 * [BRepRemeshWithoutBlockValidity](BRepRemeshWithoutBlockValidity.md)
@@ -34,7 +35,8 @@ const name = words.join('-');
 * [PolygonEdge](PolygonEdge.md)
 * [RemeshingData](RemeshingData.md)
 * [SamplingData](SamplingData.md)
-* [SectionMetricConstraints](SectionMetricConstraints.md)
+* [SectionAnisotropicMetricConstraints](SectionAnisotropicMetricConstraints.md)
+* [SectionIsotropicMetricConstraints](SectionIsotropicMetricConstraints.md)
 * [SimplexBRepLibrary](SimplexBRepLibrary.md)
 * [SimplexCoreLibrary](SimplexCoreLibrary.md)
 * [SimplexCornerLibrary](SimplexCornerLibrary.md)
