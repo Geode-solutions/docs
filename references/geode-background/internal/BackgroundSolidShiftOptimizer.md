@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from BackgroundSolidOptimizer
+Inherits from TetrahedralSolidShiftOptimizer
 ```
 
 
@@ -53,7 +53,7 @@ public BackgroundSolidShiftOptimizer & operator=(BackgroundSolidShiftOptimizer &
 ### BackgroundSolidShiftOptimizer
 
 ```cpp
-public void BackgroundSolidShiftOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
+public void BackgroundSolidShiftOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 
@@ -61,27 +61,6 @@ public void BackgroundSolidShiftOptimizer(BackgroundSolidConstraintModifier & co
 
 ```cpp
 public void ~BackgroundSolidShiftOptimizer()
-```
-
-
-### process_edge_vertex_configuration
-
-```cpp
-protected optional process_edge_vertex_configuration(const PolyhedronFacetEdge & edge, index_t apex, index_t level)
-```
-
-
-### process_facet_vertex_configuration
-
-```cpp
-protected optional process_facet_vertex_configuration(const PolyhedronFacet & facet, index_t level)
-```
-
-
-### process_edge_edge_configuration
-
-```cpp
-protected optional process_edge_edge_configuration(const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, index_t level)
 ```
 
 

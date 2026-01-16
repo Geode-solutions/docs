@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from BackgroundSurfaceInternalDistanceOptimizer
+Inherits from TriangulatedSurfaceOptimizer2D
 ```
 
 
@@ -53,7 +53,7 @@ public BackgroundSurfaceOptimizer & operator=(BackgroundSurfaceOptimizer && )
 ### BackgroundSurfaceOptimizer
 
 ```cpp
-public void BackgroundSurfaceOptimizer(BackgroundSurfaceConstraintModifier & constraint_modifier, const BackgroundSurfaceInternalDistanceImprovementSimulator & improvement_simulator)
+public void BackgroundSurfaceOptimizer(BackgroundSurfaceConstraintModifier & constraint_modifier, const TriangulatedSurfaceInternalDistanceImprovementSimulator2D & improvement_simulator)
 ```
 
 
@@ -61,27 +61,6 @@ public void BackgroundSurfaceOptimizer(BackgroundSurfaceConstraintModifier & con
 
 ```cpp
 public void ~BackgroundSurfaceOptimizer()
-```
-
-
-### process_vertex_vertex_configuration
-
-```cpp
-protected optional process_vertex_vertex_configuration(const PolygonEdge & edge, index_t level)
-```
-
-
-### process_double_adjacency_configuration
-
-```cpp
-protected optional process_double_adjacency_configuration(index_t vertex, index_t level)
-```
-
-
-### process_edge_vertex_configuration
-
-```cpp
-protected optional process_edge_vertex_configuration(const PolygonEdge & edge, index_t level)
 ```
 
 

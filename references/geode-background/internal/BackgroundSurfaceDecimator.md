@@ -15,14 +15,8 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from geode::internal::BackgroundSurfaceOrchestrator<geode::internal::SurfaceEdge>
+Inherits from TriangulatedSurfaceDecimator2D
 ```
-
-
-
-## Records
-
-OrientedEdge
 
 
 
@@ -31,7 +25,7 @@ OrientedEdge
 ### BackgroundSurfaceDecimator
 
 ```cpp
-public void BackgroundSurfaceDecimator(geode::internal::BackgroundSurfaceConstraintModifier & constraint_modifier, const BackgroundSurfaceDecimatorOperator & decimator_operator)
+public void BackgroundSurfaceDecimator(BackgroundSurfaceConstraintModifier & constraint_modifier, const TriangulatedSurfaceDecimatorOperator2D & decimator_operator)
 ```
 
 
@@ -39,27 +33,6 @@ public void BackgroundSurfaceDecimator(geode::internal::BackgroundSurfaceConstra
 
 ```cpp
 public void ~BackgroundSurfaceDecimator()
-```
-
-
-### collapse_edge
-
-```cpp
-protected optional collapse_edge(const OrientedEdge & edge)
-```
-
-
-### skip_element
-
-```cpp
-protected bool skip_element(const Element & element)
-```
-
-
-### process_element
-
-```cpp
-protected ProcessElementResult process_element(const Element & element)
 ```
 
 

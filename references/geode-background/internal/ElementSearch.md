@@ -20,9 +20,6 @@ const name = words.join('-');
 # class ElementSearch
 
 
-# class ElementSearch
-
-
 ## Functions
 
 ### ElementSearch
@@ -81,5 +78,8 @@ protected ElementSearch<Mesh> & operator=(ElementSearch<Mesh> && other)
 ```
 
 
+
+
+# class ElementSearch
 
 

@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from BackgroundSolidInternalDistanceOptimizer
+Inherits from TetrahedralSolidOptimizer
 ```
 
 
@@ -53,7 +53,7 @@ public BackgroundSolidOptimizer & operator=(BackgroundSolidOptimizer && )
 ### BackgroundSolidOptimizer
 
 ```cpp
-public void BackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
+public void BackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 
@@ -61,55 +61,6 @@ public void BackgroundSolidOptimizer(BackgroundSolidConstraintModifier & constra
 
 ```cpp
 public void ~BackgroundSolidOptimizer()
-```
-
-
-### process_vertex_vertex_configuration
-
-```cpp
-protected optional process_vertex_vertex_configuration(const PolyhedronFacetEdge & edge, index_t level)
-```
-
-
-### process_triple_adjacency_configuration
-
-```cpp
-protected optional process_triple_adjacency_configuration(const PolyhedronVertex & vertex, index_t level)
-```
-
-
-### process_double_adjacency_configuration
-
-```cpp
-protected optional process_double_adjacency_configuration(const PolyhedronFacetEdge & edge, index_t level)
-```
-
-
-### process_edge_vertex_configuration
-
-```cpp
-protected optional process_edge_vertex_configuration(const PolyhedronFacetEdge & edge, index_t apex, index_t level)
-```
-
-
-### process_facet_vertex_configuration
-
-```cpp
-protected optional process_facet_vertex_configuration(const PolyhedronFacet & facet, index_t level)
-```
-
-
-### process_edge_edge_configuration
-
-```cpp
-protected optional process_edge_edge_configuration(const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, index_t level)
-```
-
-
-### try_shift_vertex
-
-```cpp
-protected optional try_shift_vertex(const PolyhedronFacetEdge & edge, const local_index_t apex)
 ```
 
 

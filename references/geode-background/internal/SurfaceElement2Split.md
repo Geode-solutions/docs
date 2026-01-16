@@ -22,7 +22,7 @@ public InlinedVector skin_vertices
 ```
 
 ```cpp
-public index_t corafinated_vertex
+public index_t new_vertex
 
 ```
 

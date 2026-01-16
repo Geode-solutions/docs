@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from BackgroundBRepInternalDistanceOptimizer
+Inherits from BRepOptimizer
 ```
 
 
@@ -60,35 +60,7 @@ public void ~BackgroundBRepOptimizer()
 ### BackgroundBRepOptimizer
 
 ```cpp
-public void BackgroundBRepOptimizer(BackgroundBRepConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
-```
-
-
-### process_vertex_vertex_configuration
-
-```cpp
-protected optional process_vertex_vertex_configuration(const Block3D & block, const PolyhedronFacetEdge & edge, index_t level)
-```
-
-
-### process_edge_vertex_configuration
-
-```cpp
-protected optional process_edge_vertex_configuration(const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, index_t level)
-```
-
-
-### process_facet_vertex_configuration
-
-```cpp
-protected optional process_facet_vertex_configuration(const Block3D & block, const PolyhedronFacet & facet, index_t level)
-```
-
-
-### process_edge_edge_configuration
-
-```cpp
-protected optional process_edge_edge_configuration(const Block3D & block, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, index_t level)
+public void BackgroundBRepOptimizer(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

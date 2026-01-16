@@ -53,7 +53,7 @@ public BackgroundSolidBlindedQualityOptimizer & operator=(BackgroundSolidBlinded
 ### BackgroundSolidBlindedQualityOptimizer
 
 ```cpp
-public void BackgroundSolidBlindedQualityOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const BackgroundSolidInternalDistanceImprovementSimulator & improvement_simulator)
+public void BackgroundSolidBlindedQualityOptimizer(BackgroundSolidConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

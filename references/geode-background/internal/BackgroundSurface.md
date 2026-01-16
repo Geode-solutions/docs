@@ -92,5 +92,12 @@ public optional macro_element_patch(Span boundary_edges, const MeshElement & mac
 ```
 
 
+### common_macro_facets
+
+```cpp
+public vector common_macro_facets(const std::array<index_t, 3> & facet_vertices)
+```
+
+
 
 

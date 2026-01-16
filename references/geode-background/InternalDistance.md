@@ -11,50 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct ProcessElementResult
-
+# struct InternalDistance
 
 ## Members
 
 ```cpp
-public bool success
+public CONFIGURATION_TYPE type
 
 ```
 
 ```cpp
-public std::vector<Element> retry_elements
+public double distance
 
 ```
 
 ```cpp
-public std::vector<Element> new_elements
+public local_index_t vertex
 
 ```
-
-
-
-## Functions
-
-### ProcessElementResult
 
 ```cpp
-public void ProcessElementResult()
+public array vertices
+
 ```
-
-
-### operator bool
-
-```cpp
-public bool operator bool()
-```
-
-
-### add_result
-
-```cpp
-public void add_result(ProcessElementResult && result)
-```
-
 
 
 

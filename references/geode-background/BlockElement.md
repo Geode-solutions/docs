@@ -11,18 +11,17 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct SplitInfo
-
+# struct BlockElement
 
 ## Members
 
 ```cpp
-public index_t vertex
+public const Block3D & block
 
 ```
 
 ```cpp
-public vector modified_tetrahedra
+public ElementId element_id
 
 ```
 

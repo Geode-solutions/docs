@@ -25,7 +25,7 @@ Inherits from BackgroundBRepConformityHelpers
 ### BackgroundBRepEpsilonOptimizer
 
 ```cpp
-public void BackgroundBRepEpsilonOptimizer(BackgroundBRepConstraintModifier & constraint_modifier, BRepBuilder & builder)
+public void BackgroundBRepEpsilonOptimizer(BackgroundBRepGeometricConstraintModifier & constraint_modifier, BRepBuilder & builder)
 ```
 
 

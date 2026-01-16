@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from BackgroundSurfaceDecimatorOperator
+Inherits from TriangulatedSurfaceDecimatorOperator2D
 ```
 
 
@@ -32,7 +32,7 @@ public void BackgroundSurfaceAllNonMacroVertex(const BackgroundSurface & backgro
 ### skip_edge
 
 ```cpp
-public bool skip_edge(const BackgroundSurface & surface, const PolygonEdge & edge)
+public bool skip_edge(const TriangulatedSurface2D & surface, const PolygonEdge & edge)
 ```
 
 

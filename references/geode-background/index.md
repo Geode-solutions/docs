@@ -27,9 +27,9 @@ const name = words.join('-');
 * [BackgroundLineLibrary](BackgroundLineLibrary.md)
 * [BackgroundSolidLibrary](BackgroundSolidLibrary.md)
 * [BackgroundSurfaceLibrary](BackgroundSurfaceLibrary.md)
+* [BlockElement](BlockElement.md)
+* [InternalDistance](InternalDistance.md)
 * [MeshElement](MeshElement.md)
-* [ModifiedTetrahedron](ModifiedTetrahedron.md)
-* [ModifiedTriangle](ModifiedTriangle.md)
 * [Modifier](Modifier.md)
 * [uuid](uuid.md)
 

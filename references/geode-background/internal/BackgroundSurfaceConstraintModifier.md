@@ -14,17 +14,9 @@ const name = words.join('-');
 # class BackgroundSurfaceConstraintModifier
 
 
-## Records
-
-Constraints
-
-OrientedEdgeVertices
-
-CollapseEdgeInfo
-
-SplitInfo
-
-RemoveAdjacencyInfo
+```cpp
+Inherits from TriangulatedSurfaceConstraintModifier2D
+```
 
 
 
@@ -47,7 +39,7 @@ public BackgroundSurfaceConstraintModifier & operator=(const BackgroundSurfaceCo
 ### BackgroundSurfaceConstraintModifier
 
 ```cpp
-public void BackgroundSurfaceConstraintModifier(ModifiableObject surface, BackgroundSurfaceBuilder & builder, Constraints constraints)
+public void BackgroundSurfaceConstraintModifier(ModifiableObject surface, BackgroundSurfaceBuilder & builder, CommonConstraints constraints)
 ```
 
 
@@ -72,80 +64,38 @@ public void ~BackgroundSurfaceConstraintModifier()
 ```
 
 
-### surface
+### modifiable_background
 
 ```cpp
-public const ModifiableBackgroundSurface & surface()
+public const ModifiableBackgroundSurface & modifiable_background()
 ```
 
 
-### surface
+### modifiable_background
 
 ```cpp
-public ModifiableBackgroundSurface & surface()
+public ModifiableBackgroundSurface & modifiable_background()
 ```
 
 
-### builder
+### background_builder
 
 ```cpp
-public BackgroundSurfaceBuilder & builder()
-```
-
-
-### constraints
-
-```cpp
-public const Constraints & constraints()
-```
-
-
-### constraints
-
-```cpp
-public Constraints & constraints()
-```
-
-
-### collapse_edge
-
-```cpp
-public CollapseEdgeInfo collapse_edge(const PolygonEdge & edge, const OrientedEdgeVertices & edge_vertices)
-```
-
-
-### collapse_edge
-
-```cpp
-public CollapseEdgeInfo collapse_edge(const PolygonEdge & edge, const Point2D & point)
-```
-
-
-### split_edge
-
-```cpp
-public SplitInfo split_edge(const PolygonEdge & edge, const Point2D & point)
+public BackgroundSurfaceBuilder & background_builder()
 ```
 
 
 ### swap_edge
 
 ```cpp
-public vector swap_edge(const PolygonEdge & edge)
+public vector swap_edge(const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
 ```
 
 
 ### split_collapse_edge
 
 ```cpp
-public SplitInfo split_collapse_edge(const PolygonEdge & edge)
-```
-
-
-### split_collapse_edge
-
-```cpp
-public SplitInfo split_collapse_edge(const PolygonEdge & edge, const Point2D & point)
+public SplitInfo split_collapse_edge(const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
 ```
 
 

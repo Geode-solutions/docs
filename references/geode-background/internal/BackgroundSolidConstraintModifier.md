@@ -14,17 +14,9 @@ const name = words.join('-');
 # class BackgroundSolidConstraintModifier
 
 
-## Records
-
-Constraints
-
-OrientedEdgeVertices
-
-CollapseEdgeInfo
-
-SplitInfo
-
-RemoveAdjacencyInfo
+```cpp
+Inherits from TetrahedralSolidConstraintModifier
+```
 
 
 
@@ -72,108 +64,66 @@ public void ~BackgroundSolidConstraintModifier()
 ```
 
 
-### solid
+### modifiable_background
 
 ```cpp
-public const ModifiableBackgroundSolid & solid()
+public const ModifiableBackgroundSolid & modifiable_background()
 ```
 
 
-### solid
+### modifiable_background
 
 ```cpp
-public ModifiableBackgroundSolid & solid()
+public ModifiableBackgroundSolid & modifiable_background()
 ```
 
 
-### constraints
+### background_builder
 
 ```cpp
-public const Constraints & constraints()
-```
-
-
-### constraints
-
-```cpp
-public Constraints & constraints()
-```
-
-
-### builder
-
-```cpp
-public BackgroundSolidBuilder & builder()
-```
-
-
-### collapse_edge
-
-```cpp
-public CollapseEdgeInfo collapse_edge(const PolyhedronFacetEdge & edge, const OrientedEdgeVertices & edge_vertices)
-```
-
-
-### split_edge
-
-```cpp
-public SplitInfo split_edge(const PolyhedronFacetEdge & edge, const Point3D & point)
+public BackgroundSolidBuilder & background_builder()
 ```
 
 
 ### swap_edge
 
 ```cpp
-public vector swap_edge(const PolyhedronFacetEdge & edge, index_t apex)
-```
-
-
-### split_facet
-
-```cpp
-public SplitInfo split_facet(const PolyhedronFacet & facet, const Point3D & point)
+public vector swap_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
 ```
 
 
 ### swap_facet
 
 ```cpp
-public array swap_facet(const PolyhedronFacet & facet)
+public vector swap_facet(const PolyhedronFacet & facet, const std::optional<PolyhedronVertex> & tshape_apex)
 ```
 
 
 ### split_collapse_edge
 
 ```cpp
-public SplitInfo split_collapse_edge(const PolyhedronFacetEdge & edge, index_t apex)
+public SplitInfo split_collapse_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
 ```
 
 
 ### split_collapse_edge
 
 ```cpp
-public SplitInfo split_collapse_edge(const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point)
+public SplitInfo split_collapse_edge(const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const std::optional<SolidEdgeTShape> & tshape)
 ```
 
 
 ### split_collapse_facet
 
 ```cpp
-public SplitInfo split_collapse_facet(const PolyhedronFacet & facet)
+public SplitInfo split_collapse_facet(const PolyhedronFacet & facet, const std::optional<PolyhedronVertex> & tshape_apex)
 ```
 
 
 ### split_collapse_facet
 
 ```cpp
-public SplitInfo split_collapse_facet(const PolyhedronFacet & facet, const Point3D & point)
-```
-
-
-### split_split_collapse
-
-```cpp
-public SplitInfo split_split_collapse(const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
+public SplitInfo split_collapse_facet(const PolyhedronFacet & facet, const Point3D & point, const std::optional<PolyhedronVertex> & tshape_apex)
 ```
 
 
