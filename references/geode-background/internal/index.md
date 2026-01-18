@@ -390,6 +390,7 @@ SolidSplitInfo do_corafinated_solid_splits(CorafinatedSurface & corafinated_surf
 BijectiveMapping vertex_skins_solid_mapping(const CorafinatedSurface & corafinated_surface, geode::internal::BackgroundSolidBuilder & solid_builder, const SurfaceSkins & skins)
 ```
 
+
 ### vertex_skins_solid_mapping
 
 ```cpp
