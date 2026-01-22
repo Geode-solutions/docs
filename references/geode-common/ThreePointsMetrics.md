@@ -11,37 +11,44 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class ThreePointsInternalDistance
+# class ThreePointsMetrics
+
+
+# class ThreePointsMetrics
 
 
 ## Functions
 
-### ThreePointsInternalDistance
+### ThreePointsMetrics
 
 ```cpp
-public void ThreePointsInternalDistance<dimension>()
+public void ThreePointsMetrics<dimension>()
 ```
 
 
-### ~ThreePointsInternalDistance
+### ~ThreePointsMetrics
 
 ```cpp
-public void ~ThreePointsInternalDistance<dimension>()
+public void ~ThreePointsMetrics<dimension>()
 ```
 
 
-### smallest_internal_distance
+### metric
 
 ```cpp
-public double smallest_internal_distance(const Triangle<dimension> & triangle)
+public optional metric(const Triangle<dimension> & triangle)
+```
+
+
+### set_metric
+
+```cpp
+public void set_metric(const Triangle<dimension> & triangle, double metric)
 ```
 
 
 
 
-# class ThreePointsInternalDistance
-
-
-# class ThreePointsInternalDistance
+# class ThreePointsMetrics
 
 

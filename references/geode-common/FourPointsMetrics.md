@@ -11,29 +11,36 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class FourPointsInternalDistance
+# class FourPointsMetrics
 
 
 ## Functions
 
-### FourPointsInternalDistance
+### FourPointsMetrics
 
 ```cpp
-public void FourPointsInternalDistance()
+public void FourPointsMetrics()
 ```
 
 
-### ~FourPointsInternalDistance
+### ~FourPointsMetrics
 
 ```cpp
-public void ~FourPointsInternalDistance()
+public void ~FourPointsMetrics()
 ```
 
 
-### smallest_internal_distance
+### metric
 
 ```cpp
-public double smallest_internal_distance(const Tetrahedron & tetrahedron)
+public optional metric(const Tetrahedron & tetrahedron)
+```
+
+
+### set_metric
+
+```cpp
+public void set_metric(const Tetrahedron & tetrahedron, double metric)
 ```
 
 

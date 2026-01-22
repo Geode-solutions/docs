@@ -16,10 +16,17 @@ const name = words.join('-');
 
 ## Functions
 
-### smallest_internal_distance
+### metric
 
 ```cpp
-public double smallest_internal_distance(const Simplex & simplex)
+public optional metric(const Simplex & simplex)
+```
+
+
+### set_metric
+
+```cpp
+public void set_metric(const Simplex & simplex, double metric)
 ```
 
 

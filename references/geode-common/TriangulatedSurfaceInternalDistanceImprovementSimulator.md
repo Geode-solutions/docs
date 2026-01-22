@@ -66,6 +66,12 @@ protected index_t set_current_distances(InternalDistances && current_distances)
 ```
 
 
+### compute_metric
+
+```cpp
+protected double compute_metric(const Triangle<dimension> & triangle)
+```
+
 
 
 # class TriangulatedSurfaceInternalDistanceImprovementSimulator
