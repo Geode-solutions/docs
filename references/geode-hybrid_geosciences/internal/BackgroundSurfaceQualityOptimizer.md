@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from TriangulatedSurfaceInternalDistanceImprovementSimulator2D
+Inherits from TriangulatedSurfaceOptimizerImprovementSimulator2D
 ```
 
 
