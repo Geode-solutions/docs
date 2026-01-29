@@ -50,10 +50,10 @@ public bool is_better_after_simulation(const TetrahedraMetrics & tetrahedra_metr
 ```
 
 
-### compute_metric
+### metric
 
 ```cpp
-public double compute_metric(const Tetrahedron & tetrahedron)
+public double metric(const Tetrahedron & tetrahedron)
 ```
 
 
