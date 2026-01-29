@@ -40,10 +40,10 @@ Inherits from TriangulatedSurfaceInternalDistanceImprovementSimulator<dimension>
 
 ## Functions
 
-### compute_metric
+### metric
 
 ```cpp
-public double compute_metric(const Triangle<dimension> & triangle)
+public double metric(const Triangle<dimension> & triangle)
 ```
 
 

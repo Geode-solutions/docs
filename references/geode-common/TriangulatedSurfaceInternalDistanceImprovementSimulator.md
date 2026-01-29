@@ -45,13 +45,6 @@ public bool is_better_after_simulation(const TrianglesMetrics & metrics)
 ```
 
 
-### metric
-
-```cpp
-public double metric(const Triangle<dimension> & triangle)
-```
-
-
 ### current_distances
 
 ```cpp
@@ -65,12 +58,6 @@ public const InternalDistances & current_distances()
 protected index_t set_current_distances(InternalDistances && current_distances)
 ```
 
-
-### compute_metric
-
-```cpp
-protected double compute_metric(const Triangle<dimension> & triangle)
-```
 
 
 

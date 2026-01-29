@@ -92,7 +92,6 @@ const name = words.join('-');
 * [ForbiddenFacets](ForbiddenFacets.md)
 * [ForbiddenInfos](ForbiddenInfos.md)
 * [ForbiddenTriangles](ForbiddenTriangles.md)
-* [FourPointsMetrics](FourPointsMetrics.md)
 * [FrontCycle](FrontCycle.md)
 * [FrontEdge](FrontEdge.md)
 * [GeometricSolidPath](GeometricSolidPath.md)
@@ -131,7 +130,6 @@ const name = words.join('-');
 * [PointSetModifier](PointSetModifier.md)
 * [PointsCmp](PointsCmp.md)
 * [PointsHash](PointsHash.md)
-* [PointsInternalDistanceImpl](PointsInternalDistanceImpl.md)
 * [Points](Points.md)
 * [PolygonEdgeSplit](PolygonEdgeSplit.md)
 * [PolygonEdge](PolygonEdge.md)
@@ -203,7 +201,6 @@ const name = words.join('-');
 * [TetrahedralSolidOptimizer](TetrahedralSolidOptimizer.md)
 * [TetrahedralSolidOrchestrator](TetrahedralSolidOrchestrator.md)
 * [TetrahedralSolidShiftOptimizer](TetrahedralSolidShiftOptimizer.md)
-* [ThreePointsMetrics](ThreePointsMetrics.md)
 * [TrianglesAfter](TrianglesAfter.md)
 * [TrianglesModifier](TrianglesModifier.md)
 * [TriangulatedSurfaceConstraintModifier](TriangulatedSurfaceConstraintModifier.md)
@@ -1993,6 +1990,13 @@ PolyhedronFacetEdge edge_from_internal_distance(const SolidMesh3D & solid, index
 
 ```cpp
 PolygonEdge edge_from_internal_distance(const SurfaceMesh<dimension> & surface, index_t triangle_id, const InternalDistance & idistance)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const Points<dimension, nb_points> & points)
 ```
 
 

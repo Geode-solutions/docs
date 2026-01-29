@@ -19,7 +19,21 @@ const name = words.join('-');
 ### Points
 
 ```cpp
-public void Points<dimension, nb_points>(Vertices points_in)
+public void Points<dimension, nb_points>(Vertices points)
+```
+
+
+### Points
+
+```cpp
+public void Points<dimension, nb_points>(const RefVertices & points)
+```
+
+
+### barycenter
+
+```cpp
+public Point<dimension> barycenter()
 ```
 
 

@@ -36,13 +36,6 @@ public bool is_better_after_simulation(const TetrahedraMetrics & metrics)
 ```
 
 
-### metric
-
-```cpp
-public double metric(const Tetrahedron & tetra)
-```
-
-
 ### current_distances
 
 ```cpp
@@ -56,12 +49,6 @@ public const InternalDistances & current_distances()
 protected index_t set_current_distances(InternalDistances && current_distances)
 ```
 
-
-### compute_metric
-
-```cpp
-protected double compute_metric(const Tetrahedron & tetra)
-```
 
 
 
