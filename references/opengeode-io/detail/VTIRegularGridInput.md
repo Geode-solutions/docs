@@ -53,7 +53,7 @@ public Percentage is_loadable()
 ### additional_files
 
 ```cpp
-public typename RegularGridInput<dimension>::AdditionalFiles additional_files()
+public AdditionalFiles additional_files()
 ```
 
 
