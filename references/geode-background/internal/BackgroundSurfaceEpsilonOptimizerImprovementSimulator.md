@@ -22,10 +22,10 @@ Inherits from TriangulatedSurfaceInternalDistanceImprovementSimulator2D
 
 ## Functions
 
-### compute_metric
+### metric
 
 ```cpp
-public double compute_metric(const Triangle2D & triangle)
+public double metric(const Triangle2D & triangle)
 ```
 
 

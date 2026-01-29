@@ -22,10 +22,10 @@ Inherits from TetrahedralSolidInternalDistanceImprovementSimulator
 
 ## Functions
 
-### compute_metric
+### metric
 
 ```cpp
-public double compute_metric(const Tetrahedron & tetrahedron)
+public double metric(const Tetrahedron & tetrahedron)
 ```
 
 
