@@ -163,6 +163,7 @@ const name = words.join('-');
 * [SolidSwapPathInfo](SolidSwapPathInfo.md)
 * [SolidTopologicalValidity](SolidTopologicalValidity.md)
 * [SolidVertexTopologicalValidity](SolidVertexTopologicalValidity.md)
+* [SplitCollapseEdgeTetrahedraAfter](SplitCollapseEdgeTetrahedraAfter.md)
 * [SplitCollapseTetrahedraAfter](SplitCollapseTetrahedraAfter.md)
 * [SplitCollapseTrianglesAfter](SplitCollapseTrianglesAfter.md)
 * [SplitInfo](SplitInfo.md)
@@ -187,6 +188,7 @@ const name = words.join('-');
 * [SurfaceSwapEdgeValidity](SurfaceSwapEdgeValidity.md)
 * [SurfaceSwapFacetValidities](SurfaceSwapFacetValidities.md)
 * [SurfaceTopologicalValidity](SurfaceTopologicalValidity.md)
+* [SwapEdgeTetrahedraAfter](SwapEdgeTetrahedraAfter.md)
 * [SwapTetrahedraAfter](SwapTetrahedraAfter.md)
 * [SwapTrianglesAfter](SwapTrianglesAfter.md)
 * [TetrahedraAfter](TetrahedraAfter.md)
@@ -1233,7 +1235,7 @@ TetrahedraAfter tetrahedra_after_split_edge(const TetrahedralSolid3D & mesh, ind
 ### tetrahedra_after_split_collapse_edge
 
 ```cpp
-SplitCollapseTetrahedraAfter tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex)
+SplitCollapseEdgeTetrahedraAfter tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex)
 ```
 
 
@@ -1248,7 +1250,7 @@ SplitCollapseTetrahedraAfter tetrahedra_after_split_collapse_edge(const Tetrahed
 ### tetrahedra_after_split_collapse_edge
 
 ```cpp
-SplitCollapseTetrahedraAfter tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex, const Point3D & point)
+SplitCollapseEdgeTetrahedraAfter tetrahedra_after_split_collapse_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t vertex, const Point3D & point)
 ```
 
 
@@ -1331,7 +1333,7 @@ SwapTetrahedraAfter tetrahedra_after_swap_facet(const TetrahedralSolid3D & mesh,
 ### tetrahedra_after_swap_edge
 
 ```cpp
-SwapTetrahedraAfter tetrahedra_after_swap_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex)
+SwapEdgeTetrahedraAfter tetrahedra_after_swap_edge(const TetrahedralSolid3D & mesh, const PolyhedronFacetEdge & edge, index_t apex)
 ```
 
 

@@ -36,19 +36,11 @@ public bool is_better_after_simulation(const TetrahedraMetrics & metrics)
 ```
 
 
-### current_distances
+### internal_distances
 
 ```cpp
-public const InternalDistances & current_distances()
+public const InternalDistances & internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id)
 ```
-
-
-### set_current_distances
-
-```cpp
-protected index_t set_current_distances(InternalDistances && current_distances)
-```
-
 
 
 

@@ -36,5 +36,12 @@ public bool require_improvement(const TetrahedralSolid3D & tetrahedral, index_t 
 ```
 
 
+### internal_distances
+
+```cpp
+public const InternalDistances & internal_distances(const TetrahedralSolid3D & , index_t )
+```
+
+
 
 

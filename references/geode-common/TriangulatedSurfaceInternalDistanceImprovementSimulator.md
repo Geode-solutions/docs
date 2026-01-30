@@ -45,17 +45,17 @@ public bool is_better_after_simulation(const TrianglesMetrics & metrics)
 ```
 
 
-### current_distances
+### internal_distances
 
 ```cpp
-public const InternalDistances & current_distances()
+public const InternalDistances & internal_distances()
 ```
 
 
-### set_current_distances
+### set_internal_distances
 
 ```cpp
-protected index_t set_current_distances(InternalDistances && current_distances)
+protected index_t set_internal_distances(InternalDistances && internal_distances)
 ```
 
 

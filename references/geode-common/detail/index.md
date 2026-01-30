@@ -25,6 +25,20 @@ const name = words.join('-');
 
 ## Functions
 
+### is_swap_edge_allowed_by_constraints
+
+```cpp
+bool is_swap_edge_allowed_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape, SwapEdgeTetrahedraAfter & tetra_after, const class TetrahedralSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### allowed_split_collapse_edge_by_constraints
+
+```cpp
+tuple allowed_split_collapse_edge_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape, SplitCollapseEdgeTetrahedraAfter & tetra_after, const class TetrahedralSolidConstraintModifier::Constraints & constraints)
+```
+
+
 ### tetrahedra_after_split_split_collapse
 
 ```cpp
@@ -41,6 +55,13 @@ TetrahedraAfter tetrahedra_after_split_split_collapse(const TetrahedralSolid3D &
 **edge1** [in] Index of the second PolyhedronFacetEdge on which simulate split.
 
 **vertex** [in] Index towards which the split vertex is collapse on.
+
+### is_swap_edge_valid
+
+```cpp
+bool is_swap_edge_valid(const TetrahedralSolid3D & mesh, index_t apex, const SwapEdgeTetrahedraAfter & tetra_after)
+```
+
 
 ### is_swap_edge_valid
 
@@ -116,6 +137,13 @@ bool does_swap_edge_flip_triangles(const TriangulatedSurface3D & mesh, const Pol
 
 ```cpp
 bool does_split_edge_flip_triangles(const TriangulatedSurface3D & mesh, const PolygonEdge & old_edge, const Point3D & apex)
+```
+
+
+### does_swap_edge_improve_metric
+
+```cpp
+bool does_swap_edge_improve_metric(const TetrahedralSolid3D & solid, const SwapEdgeTetrahedraAfter & tetra_after, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 
