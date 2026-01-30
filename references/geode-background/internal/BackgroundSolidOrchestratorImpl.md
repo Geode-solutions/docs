@@ -33,7 +33,7 @@ public ALLOWED_COLLAPSE_VERTEX_VERTEX allowed_collapse_edge(const PolyhedronFace
 ### allowed_split_collapse_edge
 
 ```cpp
-public ALLOWED_COLLAPSE_EDGE_VERTEX allowed_split_collapse_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
+public ALLOWED_COLLAPSE_EDGE_VERTEX allowed_split_collapse_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape, SplitCollapseEdgeTetrahedraAfter & tetra_after)
 ```
 
 
