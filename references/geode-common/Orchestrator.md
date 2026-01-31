@@ -20,6 +20,8 @@ ProcessElementResult
 
 ElementStamp
 
+Stamp
+
 Exception
 
 
