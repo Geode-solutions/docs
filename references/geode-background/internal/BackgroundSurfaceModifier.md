@@ -71,6 +71,13 @@ public CollapseEdgeInfo collapse_edge(index_t edge_id, const Point2D & point)
 ```
 
 
+### replace_vertex
+
+```cpp
+public BijectiveMapping<index_t> replace_vertex(index_t old_id, index_t new_id)
+```
+
+
 ### clean_triangles
 
 ```cpp

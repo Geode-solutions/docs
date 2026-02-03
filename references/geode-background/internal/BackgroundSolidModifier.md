@@ -127,5 +127,12 @@ public vector clean_tetrahedra()
 ```
 
 
+### replace_vertex
+
+```cpp
+public ReplaceVertexInfo replace_vertex(index_t old_id, index_t new_id)
+```
+
+
 
 
