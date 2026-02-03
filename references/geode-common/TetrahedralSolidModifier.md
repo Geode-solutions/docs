@@ -324,6 +324,13 @@ public void move_point(index_t vertex, const Point3D & point)
 ```
 
 
+### replace_vertex
+
+```cpp
+public ReplaceVertexInfo replace_vertex(index_t old_id, index_t new_id)
+```
+
+
 ### clean_tetrahedra
 
 ```cpp

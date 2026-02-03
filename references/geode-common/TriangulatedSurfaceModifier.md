@@ -200,6 +200,13 @@ public SplitCollapseInfo split_collapse_edge(const PolygonEdge & edge, const Poi
 ```
 
 
+### replace_vertex
+
+```cpp
+public BijectiveMapping replace_vertex(index_t old_id, index_t new_id)
+```
+
+
 ### clean_triangles
 
 ```cpp
