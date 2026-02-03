@@ -298,6 +298,7 @@ const name = words.join('-');
 * [RegularGrid](RegularGrid.md)
 * [RelationshipsBuilder](RelationshipsBuilder.md)
 * [Relationships](Relationships.md)
+* [ReplaceVertexInfo](ReplaceVertexInfo.md)
 * [SectionBuilder](SectionBuilder.md)
 * [SectionComponentMeshEdges](SectionComponentMeshEdges.md)
 * [SectionComponentMeshPolygons](SectionComponentMeshPolygons.md)

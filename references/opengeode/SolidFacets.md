@@ -113,7 +113,7 @@ public vector update_facet_vertices(Span old2new, SolidFacetsKey )
 ### update_facet_vertex
 
 ```cpp
-public void update_facet_vertex(InlinedVector facet_vertices, index_t facet_vertex_id, index_t new_vertex_id, SolidFacetsKey )
+public BijectiveMapping update_facet_vertex(InlinedVector facet_vertices, index_t facet_vertex_id, index_t new_vertex_id, SolidFacetsKey )
 ```
 
 

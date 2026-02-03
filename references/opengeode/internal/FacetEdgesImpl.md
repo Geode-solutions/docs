@@ -53,7 +53,7 @@ public const std::array<index_t, 2> & edge_vertices(const index_t edge_id)
 ### update_edge_vertex
 
 ```cpp
-public void update_edge_vertex(array edge_vertices, const index_t edge_vertex_id, const index_t new_vertex_id)
+public BijectiveMapping update_edge_vertex(array edge_vertices, const index_t edge_vertex_id, const index_t new_vertex_id)
 ```
 
 

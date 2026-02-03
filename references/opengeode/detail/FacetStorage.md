@@ -54,7 +54,7 @@ protected index_t add_facet(TypedVertexCycle vertices)
 ### remove_facet
 
 ```cpp
-protected void remove_facet(TypedVertexCycle vertices)
+protected index_t remove_facet(TypedVertexCycle vertices)
 ```
 
 
@@ -75,7 +75,7 @@ protected vector delete_facets(const std::vector<bool> & to_delete)
 ### update_facet_vertex
 
 ```cpp
-protected void update_facet_vertex(VertexContainer facet_vertices, const index_t facet_vertex_id, const index_t new_vertex_id)
+protected BijectiveMapping update_facet_vertex(VertexContainer facet_vertices, const index_t facet_vertex_id, const index_t new_vertex_id)
 ```
 
 

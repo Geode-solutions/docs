@@ -76,7 +76,7 @@ public void update_edge_vertices(Span old2new)
 ### update_edge_vertex
 
 ```cpp
-public void update_edge_vertex(array edge_vertices, index_t edge_vertex_id, index_t new_vertex_id)
+public BijectiveMapping update_edge_vertex(array edge_vertices, index_t edge_vertex_id, index_t new_vertex_id)
 ```
 
 

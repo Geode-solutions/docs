@@ -69,7 +69,7 @@ public void remove_facet(InlinedVector facet_vertices)
 ### update_facet_vertex
 
 ```cpp
-public void update_facet_vertex(InlinedVector facet_vertices, index_t facet_vertex_id, index_t new_vertex_id)
+public BijectiveMapping update_facet_vertex(InlinedVector facet_vertices, index_t facet_vertex_id, index_t new_vertex_id)
 ```
 
 

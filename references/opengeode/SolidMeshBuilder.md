@@ -14,10 +14,6 @@ const name = words.join('-');
 # class SolidMeshBuilder
 
 
- Interface class to represent the builder of a SolidMesh
-
-
-
 ```cpp
 Inherits from VertexSetBuilder, CoordinateReferenceSystemManagersBuilder<dimension>
 ```
@@ -109,7 +105,7 @@ public void set_polyhedron_vertex(const PolyhedronVertex & polyhedron_vertex, in
 ### replace_vertex
 
 ```cpp
-public void replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
+public ReplaceVertexInfo replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
 ```
 
 

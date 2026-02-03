@@ -109,7 +109,7 @@ public void set_polygon_vertex(const PolygonVertex & polygon_vertex, index_t ver
 ### replace_vertex
 
 ```cpp
-public void replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
+public BijectiveMapping replace_vertex(index_t old_vertex_id, index_t new_vertex_id)
 ```
 
 
