@@ -27,7 +27,7 @@ public geode::index_t border_surface_facet
 ```
 
 ```cpp
-public const geode::Vector3D & normal_towards_volume
+public Vector normal_towards_volume
 
 ```
 
