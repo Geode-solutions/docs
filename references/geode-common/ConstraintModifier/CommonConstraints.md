@@ -22,7 +22,12 @@ public BORDER_CONSTRAINT border
 ```
 
 ```cpp
-public vector immuable_vertices
+public ImmuableVertices immuable_vertices
+
+```
+
+```cpp
+public ImmuableEdges immuable_edges
 
 ```
 
@@ -60,13 +65,6 @@ public CommonConstraints & operator=(CommonConstraints && )
 
 ```cpp
 public void ~CommonConstraints()
-```
-
-
-### is_immuable
-
-```cpp
-public bool is_immuable(index_t vertex, const VerticesModifier & vertices_modifier)
 ```
 
 

@@ -60,7 +60,7 @@ public void ~BRepInternalDistanceOptimizer()
 ### BRepInternalDistanceOptimizer
 
 ```cpp
-protected void BRepInternalDistanceOptimizer(BRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
+protected void BRepInternalDistanceOptimizer(BRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

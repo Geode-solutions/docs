@@ -22,6 +22,13 @@ Inherits from TetrahedralSolidInternalDistanceImprovementSimulator
 
 ## Functions
 
+### TetrahedralSolidOptimizerImprovementSimulator
+
+```cpp
+public void TetrahedralSolidOptimizerImprovementSimulator(const TetrahedralSolid3D & solid)
+```
+
+
 ### metric
 
 ```cpp
@@ -32,14 +39,14 @@ public double metric(const Tetrahedron & tetra)
 ### require_improvement
 
 ```cpp
-public bool require_improvement(const TetrahedralSolid3D & tetrahedral, index_t tetrahedron_id)
+public bool require_improvement(index_t tetrahedron_id)
 ```
 
 
 ### internal_distances
 
 ```cpp
-public const InternalDistances & internal_distances(const TetrahedralSolid3D & , index_t )
+public const InternalDistances & internal_distances(index_t )
 ```
 
 

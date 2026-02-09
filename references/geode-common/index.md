@@ -36,6 +36,8 @@ const name = words.join('-');
 * [BRepGeometricConstraintModifier](BRepGeometricConstraintModifier.md)
 * [BRepGeometricModifier](BRepGeometricModifier.md)
 * [BRepGridMetric](BRepGridMetric.md)
+* [BRepImprovementSimulator](BRepImprovementSimulator.md)
+* [BRepInternalDistanceImprovementSimulator](BRepInternalDistanceImprovementSimulator.md)
 * [BRepInternalDistanceOptimizer](BRepInternalDistanceOptimizer.md)
 * [BRepModifier](BRepModifier.md)
 * [BRepMovePointValidity](BRepMovePointValidity.md)
@@ -73,6 +75,7 @@ const name = words.join('-');
 * [CommonOrchestratorSolidLibrary](CommonOrchestratorSolidLibrary.md)
 * [CommonOrchestratorSurfaceLibrary](CommonOrchestratorSurfaceLibrary.md)
 * [ComponentMeshVertexInclusionQuery](ComponentMeshVertexInclusionQuery.md)
+* [ConstantMetric](ConstantMetric.md)
 * [ConstraintModifier](ConstraintModifier.md)
 * [CustomGridMetric](CustomGridMetric.md)
 * [CutPatchException](CutPatchException.md)
@@ -87,7 +90,6 @@ const name = words.join('-');
 * [FacetSplit](FacetSplit.md)
 * [FacetsModifier](FacetsModifier.md)
 * [FileLicenseChecker](FileLicenseChecker.md)
-* [ForbbidenImpl](ForbbidenImpl.md)
 * [ForbiddenEdges](ForbiddenEdges.md)
 * [ForbiddenFacets](ForbiddenFacets.md)
 * [ForbiddenInfos](ForbiddenInfos.md)
@@ -98,6 +100,8 @@ const name = words.join('-');
 * [GeometricSurfacePath](GeometricSurfacePath.md)
 * [GraphModifier](GraphModifier.md)
 * [GridMetric](GridMetric.md)
+* [ImmuableEdges](ImmuableEdges.md)
+* [ImmuableVertices](ImmuableVertices.md)
 * [InternalDistance](InternalDistance.md)
 * [Invalidity](Invalidity.md)
 * [IsotropicMetric](IsotropicMetric.md)
@@ -149,6 +153,7 @@ const name = words.join('-');
 * [SolidCutPathInfo](SolidCutPathInfo.md)
 * [SolidEdgeTShape](SolidEdgeTShape.md)
 * [SolidGeometricalValidity](SolidGeometricalValidity.md)
+* [SolidGridMetric](SolidGridMetric.md)
 * [SolidMovePointValidity](SolidMovePointValidity.md)
 * [SolidPatch](SolidPatch.md)
 * [SolidPatcher](SolidPatcher.md)
@@ -818,6 +823,13 @@ tuple allowed_split_collapse_edge_by_constraints(const ModifiableTetrahedralSoli
 
 ```cpp
 tuple allowed_split_collapse_facet_by_constraints(const ModifiableTetrahedralSolid & solid, const PolyhedronFacet & facet, const std::optional<PolyhedronVertex> & tshape_apex, const class TetrahedralSolidConstraintModifier::Constraints & constraints)
+```
+
+
+### is_move_point_allowed_by_constraints
+
+```cpp
+bool is_move_point_allowed_by_constraints(const ModifiableTetrahedralSolid & solid, index_t vertex, const class TetrahedralSolidConstraintModifier::Constraints & constraints)
 ```
 
 
@@ -1752,77 +1764,77 @@ bool does_split_split_collapse_edge_improve_metric(const TetrahedralSolid3D & so
 ### does_split_edge_improve_metric
 
 ```cpp
-bool does_split_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & split_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_split_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & split_point, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_collapse_edge_improve_metric
 
 ```cpp
-bool does_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const local_index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const local_index_t apex, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_collapse_edge_improve_metric
 
 ```cpp
-bool does_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & collapse_point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, const Point3D & collapse_point, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_swap_edge_improve_metric
 
 ```cpp
-bool does_swap_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_swap_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_swap_facet_improve_metric
 
 ```cpp
-bool does_swap_facet_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_swap_facet_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_split_collapse_edge_improve_metric
 
 ```cpp
-bool does_split_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_split_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const Point3D & point, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_split_collapse_edge_improve_metric
 
 ```cpp
-bool does_split_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_split_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_split_collapse_facet_improve_metric
 
 ```cpp
-bool does_split_collapse_facet_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_split_collapse_facet_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const Point3D & point, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_split_collapse_facet_improve_metric
 
 ```cpp
-bool does_split_collapse_facet_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_split_collapse_facet_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacet & facet, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_split_split_collapse_edge_improve_metric
 
 ```cpp
-bool does_split_split_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_split_split_collapse_edge_improve_metric(const BRep & brep, const Block3D & block, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
 ### does_move_point_improve_metric
 
 ```cpp
-bool does_move_point_improve_metric(const BRep & brep, const Block3D & block, const index_t & vertex, const Point3D & point, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_move_point_improve_metric(const BRep & brep, const Block3D & block, const index_t & vertex, const Point3D & point, const BRepImprovementSimulator & improvement_simulator)
 ```
 
 
@@ -2099,6 +2111,20 @@ FixedArray mesh_partitionner(const SolidMesh3D & mesh, const PartitionnerParamet
 double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
 ```
 
+### compute_constant_metric_from_maximal_edge_length
+
+```cpp
+ConstantMetric compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
+```
+
+
+### compute_grid_metric_from_maximal_edge_length
+
+```cpp
+SolidGridMetric compute_grid_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
+```
+
+
 ### edge_tshape_apex
 
 ```cpp
@@ -2210,7 +2236,7 @@ H AbslHashValue(H h, const BlockElement<ElementId> & element)
 ### optimize_brep_elements
 
 ```cpp
-vector optimize_brep_elements(BRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, Span tetrahedra)
+vector optimize_brep_elements(BRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator, Span tetrahedra)
 ```
 
 

@@ -11,14 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct uuid
+# struct SolidGridMetric
+
 
 ## Members
 
 ```cpp
-public array bytes_
+public unique_ptr grid
 
 ```
+
+```cpp
+public unique_ptr metric
+
+```
+
+
+
+## Functions
+
+### SolidGridMetric
+
+```cpp
+public void SolidGridMetric()
+```
+
 
 
 

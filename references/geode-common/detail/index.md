@@ -143,7 +143,7 @@ bool does_split_edge_flip_triangles(const TriangulatedSurface3D & mesh, const Po
 ### does_swap_edge_improve_metric
 
 ```cpp
-bool does_swap_edge_improve_metric(const TetrahedralSolid3D & solid, const SwapEdgeTetrahedraAfter & tetra_after, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
+bool does_swap_edge_improve_metric(const SwapEdgeTetrahedraAfter & tetra_after, const TetrahedralSolidImprovementSimulator3D & improvement_simulator)
 ```
 
 

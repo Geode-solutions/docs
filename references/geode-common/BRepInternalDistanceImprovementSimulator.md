@@ -11,14 +11,23 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct uuid
+# class BRepInternalDistanceImprovementSimulator
 
-## Members
 
 ```cpp
-public array bytes_
-
+Inherits from BRepImprovementSimulator
 ```
+
+
+
+## Functions
+
+### internal_distance_block_simulator
+
+```cpp
+public const TetrahedralSolidInternalDistanceImprovementSimulator & internal_distance_block_simulator(const Block3D & block)
+```
+
 
 
 

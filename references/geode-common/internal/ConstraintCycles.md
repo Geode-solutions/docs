@@ -11,15 +11,24 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class ForbbidenImpl
+# class ConstraintCycles
+
+
+## Members
+
+```cpp
+protected std::vector<Cycle> cycles_
+
+```
+
 
 
 ## Functions
 
-### is_forbidden
+### contains
 
 ```cpp
-public bool is_forbidden(T vertices, const VerticesModifier & vertices_modifier)
+public bool contains(T vertices, const VerticesModifier & vertices_modifier)
 ```
 
 
@@ -33,7 +42,7 @@ public void add(T vertices)
 ### add
 
 ```cpp
-public void add(const ForbbidenImpl<T> & forbiddens)
+public void add(const ConstraintCycles<T> & forbiddens)
 ```
 
 
