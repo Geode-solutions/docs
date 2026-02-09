@@ -25,7 +25,7 @@ Inherits from BRepOrchestrator<SolidVertex>
 ### BackgroundBRepVertexSmoother
 
 ```cpp
-public void BackgroundBRepVertexSmoother(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
+public void BackgroundBRepVertexSmoother(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

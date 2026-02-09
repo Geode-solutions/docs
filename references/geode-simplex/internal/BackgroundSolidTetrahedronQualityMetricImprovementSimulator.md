@@ -25,7 +25,7 @@ Inherits from TetrahedralSolidInternalDistanceImprovementSimulator
 ### BackgroundSolidTetrahedronQualityMetricImprovementSimulator
 
 ```cpp
-public void BackgroundSolidTetrahedronQualityMetricImprovementSimulator()
+public void BackgroundSolidTetrahedronQualityMetricImprovementSimulator(const TetrahedralSolid3D & solid)
 ```
 
 
@@ -60,14 +60,14 @@ public double metric(const Tetrahedron & tetrahedron)
 ### require_improvement
 
 ```cpp
-public bool require_improvement(const TetrahedralSolid3D & solid, index_t tetrahedron_id)
+public bool require_improvement(index_t tetrahedron_id)
 ```
 
 
 ### internal_distances
 
 ```cpp
-public const InternalDistances & internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id)
+public const InternalDistances & internal_distances(index_t tetrahedron_id)
 ```
 
 

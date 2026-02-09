@@ -71,6 +71,27 @@ void update_unique_vertices(Builder & builder, const geode::internal::RemeshedCM
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const SolidEdge & solid_edge)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const SolidVertex & solid_vertex)
+```
+
+
+### relax_background_brep_elements
+
+```cpp
+void relax_background_brep_elements(BRepSamplingData & model)
+```
+
+
 ### has_degenerated_elements
 
 ```cpp
@@ -179,27 +200,6 @@ void repair_lines(Data & data)
 ### AbslHashValue
 
 ```cpp
-H AbslHashValue(H h, const SolidEdge & solid_edge)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const SolidVertex & solid_vertex)
-```
-
-
-### relax_background_brep_elements
-
-```cpp
-void relax_background_brep_elements(BRepSamplingData & model)
-```
-
-
-### AbslHashValue
-
-```cpp
 H AbslHashValue(H h, const Edge & other)
 ```
 
@@ -214,14 +214,14 @@ void decimate_edges(BackgroundBRepGeometricConstraintModifier & constraint_modif
 ### relax_polyhedra
 
 ```cpp
-void relax_polyhedra(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, const Metric3D & metric)
+void relax_polyhedra(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator, const Metric3D & metric)
 ```
 
 
 ### smooth_vertices
 
 ```cpp
-void smooth_vertices(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
+void smooth_vertices(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 

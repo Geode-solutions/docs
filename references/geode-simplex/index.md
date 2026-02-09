@@ -104,13 +104,6 @@ void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier)
 ```
 
 
-### relax_blocks
-
-```cpp
-void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier, const Metric3D & metric)
-```
-
-
 ### sample_blocks
 
 ```cpp
