@@ -429,7 +429,7 @@ void shift_optimize_background_surface_elements(BackgroundSurfaceConstraintModif
 ### optimize_background_brep_elements
 
 ```cpp
-vector optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, Span tetrahedra)
+vector optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator, Span tetrahedra)
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from TetrahedralSolidInternalDistanceImprovementSimulator
 ### BackgroundSolidAspectRatioImprovementSimulator
 
 ```cpp
-public void BackgroundSolidAspectRatioImprovementSimulator(const double aspect_ratio_threshold)
+public void BackgroundSolidAspectRatioImprovementSimulator(const TetrahedralSolid3D & solid, const double aspect_ratio_threshold)
 ```
 
 
@@ -60,14 +60,14 @@ public double metric(const Tetrahedron & tetrahedron)
 ### require_improvement
 
 ```cpp
-public bool require_improvement(const TetrahedralSolid3D & solid, index_t tetrahedron_id)
+public bool require_improvement(index_t tetrahedron_id)
 ```
 
 
 ### internal_distances
 
 ```cpp
-public const InternalDistances & internal_distances(const TetrahedralSolid3D & solid, index_t tetrahedron_id)
+public const InternalDistances & internal_distances(index_t tetrahedron_id)
 ```
 
 

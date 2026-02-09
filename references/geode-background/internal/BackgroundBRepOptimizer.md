@@ -60,7 +60,7 @@ public void ~BackgroundBRepOptimizer()
 ### BackgroundBRepOptimizer
 
 ```cpp
-public void BackgroundBRepOptimizer(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator)
+public void BackgroundBRepOptimizer(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator)
 ```
 
 
