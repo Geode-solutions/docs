@@ -203,6 +203,13 @@ local_index_t position_to_index(POSITION position)
 ```
 
 
+### position_to_string
+
+```cpp
+basic_string position_to_string(POSITION position)
+```
+
+
 ### filter_unsupported_components
 
 ```cpp
@@ -553,10 +560,24 @@ void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRe
 ```
 
 
+### transfer_brep_collections
+
+```cpp
+void transfer_brep_collections(const BRep & old_brep, const BRep & new_brep, BRepBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
+```
+
+
 ### transfer_section_collections
 
 ```cpp
 void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### transfer_section_collections
+
+```cpp
+void transfer_section_collections(const Section & old_section, const Section & new_section, SectionBuilder & new_brep_builder, const ModelUnchangedComponentMapping & unchanged_components)
 ```
 
 

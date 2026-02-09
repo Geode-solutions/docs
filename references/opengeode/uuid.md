@@ -14,19 +14,10 @@ const name = words.join('-');
 # struct uuid
 
 
- 128-bit basic UUID type that allows comparison and sorting.
-
-
-
 ## Members
 
 ```cpp
-public uint64_t ab
-
-```
-
-```cpp
-public uint64_t cd
+public array bytes_
 
 ```
 
