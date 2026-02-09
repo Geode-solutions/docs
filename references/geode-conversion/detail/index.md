@@ -17,12 +17,10 @@ const name = words.join('-');
 
 ## Records
 
-* [BRepFromMeshesBuilder](BRepFromMeshesBuilder.md)
 * [BRepFromSolidElementsBuilder](BRepFromSolidElementsBuilder.md)
 * [BRepTopologyRebuilder](BRepTopologyRebuilder.md)
 * [CornersLinesBuilder](CornersLinesBuilder.md)
 * [ModelBuilderFromMeshes](ModelBuilderFromMeshes.md)
-* [SectionFromMeshesBuilder](SectionFromMeshesBuilder.md)
 * [SectionFromSurfaceElementsBuilder](SectionFromSurfaceElementsBuilder.md)
 * [WireframeBuilderFromOneMesh](WireframeBuilderFromOneMesh.md)
 

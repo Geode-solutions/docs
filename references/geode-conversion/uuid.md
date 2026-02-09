@@ -16,12 +16,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public uint64_t ab
-
-```
-
-```cpp
-public uint64_t cd
+public array bytes_
 
 ```
 

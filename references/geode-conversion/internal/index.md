@@ -36,26 +36,5 @@ void identify_blocks(const BRep & model, BRepBuilder & builder, BRepMappings & m
 ```
 
 
-### point_set_on_lines_sharp_vertices
-
-```cpp
-std::unique_ptr<PointSet<dimension> > point_set_on_lines_sharp_vertices(absl::Span<const std::unique_ptr<EdgedCurve<dimension> > > lines, double max_angle)
-```
-
-
-### model_component_meshes_with_updated_id
-
-```cpp
-std::vector<std::unique_ptr<Mesh> > model_component_meshes_with_updated_id(const ComponentRange & range)
-```
-
-
-### ref_meshes
-
-```cpp
-std::vector<std::reference_wrapper<const Mesh> > ref_meshes(absl::Span<const std::unique_ptr<Mesh> > meshes)
-```
-
-
 
 

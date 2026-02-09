@@ -14,13 +14,14 @@ const name = words.join('-');
 # class ModelBuilderFromMeshes
 
 
+## Functions
+
+### ModelBuilderFromMeshes
+
 ```cpp
-Inherits from CornersLinesBuilder<Model>
+public void ModelBuilderFromMeshes<Model>(Model & model, absl::Span<const std::reference_wrapper<const PointSet<dimension> > > corners, absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves, absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
 ```
 
-
-
-## Functions
 
 ### ~ModelBuilderFromMeshes
 
@@ -29,31 +30,10 @@ public void ~ModelBuilderFromMeshes<Model>()
 ```
 
 
-### build_wireframe_step
+### build_model
 
 ```cpp
-public void build_wireframe_step()
-```
-
-
-### is_corner
-
-```cpp
-public bool is_corner(index_t wireframe_vertex_id)
-```
-
-
-### build_surfaces
-
-```cpp
-public typename TypedModelMappings<Model>::type build_surfaces()
-```
-
-
-### ModelBuilderFromMeshes
-
-```cpp
-protected void ModelBuilderFromMeshes<Model>(Model & model, absl::Span<const std::reference_wrapper<const PointSet<dimension> > > corners, absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves, absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
+public TypedModelMappings build_model()
 ```
 
 
@@ -62,18 +42,6 @@ protected void ModelBuilderFromMeshes<Model>(Model & model, absl::Span<const std
 # class ModelBuilderFromMeshes
 
 
-```cpp
-Inherits from CornersLinesBuilder<Section>
-```
-
-
-
 # class ModelBuilderFromMeshes
-
-
-```cpp
-Inherits from CornersLinesBuilder<BRep>
-```
-
 
 

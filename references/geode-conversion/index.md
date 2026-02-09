@@ -53,14 +53,14 @@ ModelMapping build_brep_component_mapping(const BRep & out_brep, const BRepMeshe
 ### determine_blocks
 
 ```cpp
-std::vector<BlockRelationships> determine_blocks(const BRep & brep)
+vector determine_blocks(const BRep & brep)
 ```
 
 
 ### build_blocks
 
 ```cpp
-vector build_blocks(const BRep & brep, BRepBuilder & builder, absl::Span<const BlockRelationships> blocks_to_build)
+vector build_blocks(const BRep & brep, BRepBuilder & builder, Span blocks_to_build)
 ```
 
 
@@ -89,20 +89,6 @@ void add_breps_block_mapping_case_surjective(const BRep & initial_brep, const BR
 
 ```cpp
 void add_breps_block_mapping_case_multivaluate(const BRep & initial_brep, const BRep & output_brep, ModelGenericMapping & brep_mapping)
-```
-
-
-### add_brep_segmentation
-
-```cpp
-BRepMappings add_brep_segmentation(BRep & brep)
-```
-
-
-### remove_brep_segmentation
-
-```cpp
-BRepMappings remove_brep_segmentation(BRep & brep)
 ```
 
 
@@ -153,6 +139,13 @@ BRepMappings remove_sharp_features(BRep & model)
  Update the given BRep removing the sharp features stored in a CornerCollection3D and a LineCollection3D, and if necessary merge input lines and surfaces.
 
 **model** [in] Section
+
+### curve_from_surface_borders
+
+```cpp
+std::unique_ptr<EdgedCurve<dimension> > curve_from_surface_borders(const SurfaceMesh<dimension> & surface)
+```
+
 
 ### convert_meshes_into_brep
 
@@ -217,6 +210,20 @@ tuple convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, basic
 **attribute_name** [in] Name of attribute stored on solid polygons
 
 **warning** Attribute should be convertible to float.
+
+### add_brep_segmentation
+
+```cpp
+BRepMappings add_brep_segmentation(BRep & brep)
+```
+
+
+### remove_brep_segmentation
+
+```cpp
+BRepMappings remove_brep_segmentation(BRep & brep)
+```
+
 
 
 
