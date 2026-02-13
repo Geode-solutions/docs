@@ -57,10 +57,10 @@ public void ~TetrahedralSolidInternalDistanceOptimizer()
 ```
 
 
-### apply
+### restrict_to_zone
 
 ```cpp
-public void apply(Span elements)
+public void restrict_to_zone(Span elements)
 ```
 
 

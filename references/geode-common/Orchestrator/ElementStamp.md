@@ -33,7 +33,7 @@ public index_t stamp
 ### ElementStamp
 
 ```cpp
-public void ElementStamp(const Element & element_in)
+public void ElementStamp(const Element & element_in, index_t stamp_in)
 ```
 
 

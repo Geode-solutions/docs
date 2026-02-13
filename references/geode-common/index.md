@@ -2240,20 +2240,6 @@ vector optimize_brep_elements(BRepGeometricConstraintModifier & constraint_modif
 ```
 
 
-### optimize_tetrahedral_solid_elements
-
-```cpp
-void optimize_tetrahedral_solid_elements(TetrahedralSolidConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
-```
-
-
-### shift_optimize_tetrahedral_solid_elements
-
-```cpp
-void shift_optimize_tetrahedral_solid_elements(TetrahedralSolidConstraintModifier & constraint_modifier, const TetrahedralSolidInternalDistanceImprovementSimulator & improvement_simulator, Span elements)
-```
-
-
 
 
 ## Enums
