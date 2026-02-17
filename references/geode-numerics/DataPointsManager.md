@@ -14,28 +14,7 @@ const name = words.join('-');
 # class DataPointsManager
 
 
-```cpp
-Inherits from DataConstraintsManager<3U>
-```
-
-
-
 # class DataPointsManager
-
-
-```cpp
-Inherits from DataConstraintsManager<2U>
-```
-
-
-
-# class DataPointsManager
-
-
-```cpp
-Inherits from DataConstraintsManager<dimension>
-```
-
 
 
 ## Functions
@@ -58,13 +37,6 @@ public void DataPointsManager<dimension>(DataPointsManager<dimension> && other)
 
 ```cpp
 public void ~DataPointsManager<dimension>()
-```
-
-
-### load_data_points
-
-```cpp
-public void load_data_points(basic_string_view filename)
 ```
 
 
@@ -110,6 +82,13 @@ public double data_points_mean_value()
 ```
 
 
+### data_points_max_weight
+
+```cpp
+public double data_points_max_weight()
+```
+
+
 ### data_point_position
 
 ```cpp
@@ -131,13 +110,6 @@ public double data_point_weight(index_t data_point_index)
 ```
 
 
-### data_bounding_box
-
-```cpp
-public BoundingBox<dimension> data_bounding_box()
-```
-
-
 ### data_points
 
 ```cpp
@@ -145,5 +117,8 @@ public const PointSet<dimension> & data_points()
 ```
 
 
+
+
+# class DataPointsManager
 
 

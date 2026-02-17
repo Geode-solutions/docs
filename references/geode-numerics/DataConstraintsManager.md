@@ -14,7 +14,27 @@ const name = words.join('-');
 # class DataConstraintsManager
 
 
+```cpp
+Inherits from DataPointsManager<dimension>, GradientDataManager<dimension>, TangentialDataManager<dimension>
+```
+
+
+
 ## Functions
+
+### DataConstraintsManager
+
+```cpp
+public void DataConstraintsManager<dimension>()
+```
+
+
+### DataConstraintsManager
+
+```cpp
+public void DataConstraintsManager<dimension>(DataConstraintsManager<dimension> && other)
+```
+
 
 ### ~DataConstraintsManager
 
@@ -23,50 +43,30 @@ public void ~DataConstraintsManager<dimension>()
 ```
 
 
-### nb_data_points
+### data_bounding_box
 
 ```cpp
-public index_t nb_data_points()
-```
-
-### data_points_mean_value
-
-```cpp
-public double data_points_mean_value()
+public BoundingBox<dimension> data_bounding_box()
 ```
 
 
-### data_points_max_weight
+
+
+# class DataConstraintsManager
+
 
 ```cpp
-public double data_points_max_weight()
+Inherits from DataPointsManager<3U>, GradientDataManager<3U>, TangentialDataManager<3U>
 ```
 
 
-### data_point_position
+
+# class DataConstraintsManager
+
 
 ```cpp
-public const Point<dimension> & data_point_position(index_t data_point_index)
+Inherits from DataPointsManager<2U>, GradientDataManager<2U>, TangentialDataManager<2U>
 ```
-
-### data_point_value
-
-```cpp
-public double data_point_value(index_t data_point_index)
-```
-
-### data_point_weight
-
-```cpp
-public double data_point_weight(index_t data_point_index)
-```
-
-### DataConstraintsManager
-
-```cpp
-protected void DataConstraintsManager<dimension>()
-```
-
 
 
 

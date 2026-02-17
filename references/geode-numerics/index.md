@@ -34,12 +34,14 @@ const name = words.join('-');
 * [FrameFieldParameterization](FrameFieldParameterization.md)
 * [FrameFieldSmoother](FrameFieldSmoother.md)
 * [FrameField](FrameField.md)
+* [GradientDataManager](GradientDataManager.md)
 * [LinearSolver](LinearSolver.md)
 * [MeshElement](MeshElement.md)
 * [NumericsCoreLibrary](NumericsCoreLibrary.md)
 * [NumericsFrameFieldLibrary](NumericsFrameFieldLibrary.md)
 * [NumericsScalarFunctionLibrary](NumericsScalarFunctionLibrary.md)
 * [NumericsSurfaceLibrary](NumericsSurfaceLibrary.md)
+* [TangentialDataManager](TangentialDataManager.md)
 * [uuid](uuid.md)
 
 

@@ -25,28 +25,28 @@ Inherits from LightRegularGrid<dimension>
 ### ComputationGrid
 
 ```cpp
-public void ComputationGrid<dimension>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
+public void ComputationGrid<>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
 ```
 
 
 ### ComputationGrid
 
 ```cpp
-public void ComputationGrid<dimension>(ComputationGrid<dimension> && other)
+public void ComputationGrid<>(ComputationGrid<dimension> && other)
 ```
 
 
 ### ComputationGrid
 
 ```cpp
-public void ComputationGrid<dimension>(LightRegularGrid<dimension> && other)
+public void ComputationGrid<>(LightRegularGrid<dimension> && other)
 ```
 
 
 ### ~ComputationGrid
 
 ```cpp
-public void ~ComputationGrid<dimension>()
+public void ~ComputationGrid<>()
 ```
 
 
@@ -56,13 +56,11 @@ public void ~ComputationGrid<dimension>()
 public void set_inactive_cells(const absl::flat_hash_set<CellIndices> & cells_list)
 ```
 
-
 ### inactivate_cells_outside_voi
 
 ```cpp
 public void inactivate_cells_outside_voi(const absl::flat_hash_set<CellIndices> & rasterized_voi)
 ```
-
 
 ### remove_computation_node
 
@@ -70,13 +68,11 @@ public void inactivate_cells_outside_voi(const absl::flat_hash_set<CellIndices> 
 public void remove_computation_node(const VertexIndices & node_indices)
 ```
 
-
 ### is_cell_active
 
 ```cpp
 public bool is_cell_active(const CellIndices & cell)
 ```
-
 
 ### nb_active_cells
 
@@ -98,13 +94,11 @@ public index_t nb_computation_nodes()
 public optional value_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
 ```
 
-
 ### computation_node_from_grid_vertex_indices
 
 ```cpp
 public optional computation_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
 ```
-
 
 ### grid_vertex_indices_from_value_node
 
@@ -161,7 +155,6 @@ public double get_node_value(index_t value_node_id)
 public bool isovalue_goes_through_cell(const CellIndices & cell_id, double isovalue)
 ```
 
-
 ### nb_border_derivatives
 
 ```cpp
@@ -187,6 +180,55 @@ public bool node_values_are_set()
 
 ```cpp
 protected void remove_all_value_nodes_but_computation_nodes()
+```
+
+
+### set_inactive_cells
+
+```cpp
+public void set_inactive_cells(const absl::flat_hash_set<CellIndices> & cells_list)
+```
+
+
+### inactivate_cells_outside_voi
+
+```cpp
+public void inactivate_cells_outside_voi(const absl::flat_hash_set<CellIndices> & rasterized_voi)
+```
+
+
+### remove_computation_node
+
+```cpp
+public void remove_computation_node(const VertexIndices & node_indices)
+```
+
+
+### is_cell_active
+
+```cpp
+public bool is_cell_active(const CellIndices & cell)
+```
+
+
+### value_node_from_grid_vertex_indices
+
+```cpp
+public optional value_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
+```
+
+
+### computation_node_from_grid_vertex_indices
+
+```cpp
+public optional computation_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
+```
+
+
+### isovalue_goes_through_cell
+
+```cpp
+public bool isovalue_goes_through_cell(const CellIndices & cell_id, double isovalue)
 ```
 
 

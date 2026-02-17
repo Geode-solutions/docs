@@ -125,6 +125,12 @@ protected local_index_t nb_derivatives()
 ```
 
 
+### enlarged_cell_local_coords
+
+```cpp
+protected Point<dimension> enlarged_cell_local_coords(const Point<dimension> & data_point_in_grid, const typename Grid<dimension>::VertexIndices & closest_node)
+```
+
 
 
 # class FDMCurvatureMinimizationImpl
