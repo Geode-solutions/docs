@@ -68,7 +68,7 @@ public void add_data_point(const Point3D & data_point, double weight)
 ### data_manager
 
 ```cpp
-public const DataPointsManager3D & data_manager()
+public const DataConstraintsManager3D & data_manager()
 ```
 
 
