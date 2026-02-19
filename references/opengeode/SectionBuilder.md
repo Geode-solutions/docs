@@ -61,6 +61,13 @@ public ModelCopyMapping copy(const Section & section)
 ```
 
 
+### replace_components_meshes_by_others
+
+```cpp
+public void replace_components_meshes_by_others(Section && other, const ModelCopyMapping & mapping)
+```
+
+
 ### copy_components
 
 ```cpp

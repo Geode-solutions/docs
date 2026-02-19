@@ -581,6 +581,20 @@ void transfer_section_collections(const Section & old_section, const Section & n
 ```
 
 
+### transfer_brep_meshes
+
+```cpp
+void transfer_brep_meshes(const BRep & brep, BRepBuilder & brep_builder, BRep && other, const ModelCopyMapping & component_mapping)
+```
+
+
+### transfer_section_meshes
+
+```cpp
+void transfer_section_meshes(const Section & section, SectionBuilder & section_builder, Section && other, const ModelCopyMapping & component_mapping)
+```
+
+
 ### transfer_brep_metadata
 
 ```cpp
@@ -591,7 +605,7 @@ void transfer_brep_metadata(const BRep & old_brep, BRepBuilder & new_brep_builde
 ### transfer_section_metadata
 
 ```cpp
-void transfer_section_metadata(const Section & old_section, SectionBuilder & new_brep_builder, const ModelGenericMapping & component_mapping)
+void transfer_section_metadata(const Section & old_section, SectionBuilder & new_section_builder, const ModelGenericMapping & component_mapping)
 ```
 
 

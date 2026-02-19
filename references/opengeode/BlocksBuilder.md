@@ -51,6 +51,13 @@ public void set_block_active(const uuid & id, bool active)
 ```
 
 
+### steal_block_mesh
+
+```cpp
+public std::unique_ptr<SolidMesh<dimension> > steal_block_mesh(const uuid & id)
+```
+
+
 ### BlocksBuilder
 
 ```cpp
@@ -104,13 +111,6 @@ protected void set_block_mesh(const uuid & id, std::unique_ptr<SolidMesh<dimensi
 
 ```cpp
 protected SolidMesh<dimension> & modifiable_block_mesh(const uuid & id)
-```
-
-
-### steal_block_mesh
-
-```cpp
-protected std::unique_ptr<SolidMesh<dimension> > steal_block_mesh(const uuid & id)
 ```
 
 

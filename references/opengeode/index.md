@@ -1524,23 +1524,23 @@ array safe_segment_barycentric_coordinates(const Point<dimension> & point, const
 
 **return** an array containing the parametric coordinates corresponding to the segment vertices.
 
-### save_section
+### save_brep
 
 ```cpp
-vector save_section(const Section & section, basic_string_view filename)
+vector save_brep(const BRep & brep, basic_string_view filename)
 ```
 
 
- API function for saving a Section. The adequate saver is called depending on the given filename extension.
+ API function for saving a BoundaryRepresentation. The adequate saver is called depending on the given filename extension.
 
-**section** [in] Section to save.
+**brep** [in] BRep to save.
 
-**filename** [in] Path to the file where save the section.
+**filename** [in] Path to the file where save the brep.
 
-### is_section_saveable
+### is_brep_saveable
 
 ```cpp
-bool is_section_saveable(const Section & section, basic_string_view filename)
+bool is_brep_saveable(const BRep & brep, basic_string_view filename)
 ```
 
 
@@ -1569,6 +1569,26 @@ bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & i
 
 ```cpp
 H AbslHashValue(H h, const ComponentMeshVertex & value)
+```
+
+
+### save_section
+
+```cpp
+vector save_section(const Section & section, basic_string_view filename)
+```
+
+
+ API function for saving a Section. The adequate saver is called depending on the given filename extension.
+
+**section** [in] Section to save.
+
+**filename** [in] Path to the file where save the section.
+
+### is_section_saveable
+
+```cpp
+bool is_section_saveable(const Section & section, basic_string_view filename)
 ```
 
 
@@ -1610,26 +1630,6 @@ index_t brep_object_priority(basic_string_view filename)
 
 ```cpp
 bool is_zip_file(basic_string_view file)
-```
-
-
-### save_brep
-
-```cpp
-vector save_brep(const BRep & brep, basic_string_view filename)
-```
-
-
- API function for saving a BoundaryRepresentation. The adequate saver is called depending on the given filename extension.
-
-**brep** [in] BRep to save.
-
-**filename** [in] Path to the file where save the brep.
-
-### is_brep_saveable
-
-```cpp
-bool is_brep_saveable(const BRep & brep, basic_string_view filename)
 ```
 
 
@@ -3537,20 +3537,6 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
-```
-
-
 ### convert_surface_mesh
 
 ```cpp
@@ -3723,6 +3709,20 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 

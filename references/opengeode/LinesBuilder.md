@@ -48,6 +48,13 @@ public void set_line_active(const uuid & id, bool active)
 ```
 
 
+### steal_line_mesh
+
+```cpp
+public std::unique_ptr<EdgedCurve<dimension> > steal_line_mesh(const uuid & id)
+```
+
+
 ### LinesBuilder
 
 ```cpp
@@ -101,13 +108,6 @@ protected void set_line_mesh(const uuid & id, std::unique_ptr<EdgedCurve<dimensi
 
 ```cpp
 protected EdgedCurve<dimension> & modifiable_line_mesh(const uuid & id)
-```
-
-
-### steal_line_mesh
-
-```cpp
-protected std::unique_ptr<EdgedCurve<dimension> > steal_line_mesh(const uuid & id)
 ```
 
 

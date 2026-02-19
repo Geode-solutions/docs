@@ -54,6 +54,13 @@ public void set_surface_active(const uuid & id, bool active)
 ```
 
 
+### steal_surface_mesh
+
+```cpp
+public std::unique_ptr<SurfaceMesh<dimension> > steal_surface_mesh(const uuid & id)
+```
+
+
 ### SurfacesBuilder
 
 ```cpp
@@ -107,13 +114,6 @@ protected void set_surface_mesh(const uuid & id, std::unique_ptr<SurfaceMesh<dim
 
 ```cpp
 protected SurfaceMesh<dimension> & modifiable_surface_mesh(const uuid & id)
-```
-
-
-### steal_surface_mesh
-
-```cpp
-protected std::unique_ptr<SurfaceMesh<dimension> > steal_surface_mesh(const uuid & id)
 ```
 
 

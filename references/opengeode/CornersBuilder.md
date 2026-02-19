@@ -48,6 +48,13 @@ public void set_corner_active(const uuid & id, bool active)
 ```
 
 
+### steal_corner_mesh
+
+```cpp
+public std::unique_ptr<PointSet<dimension> > steal_corner_mesh(const uuid & id)
+```
+
+
 ### CornersBuilder
 
 ```cpp
@@ -101,13 +108,6 @@ protected void set_corner_mesh(const uuid & id, std::unique_ptr<PointSet<dimensi
 
 ```cpp
 protected PointSet<dimension> & modifiable_corner_mesh(const uuid & id)
-```
-
-
-### steal_corner_mesh
-
-```cpp
-protected std::unique_ptr<PointSet<dimension> > steal_corner_mesh(const uuid & id)
 ```
 
 
