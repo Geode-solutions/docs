@@ -29,7 +29,7 @@ const name = words.join('-');
 ### RemeshingData
 
 ```cpp
-public void RemeshingData<DataModel>(Model && background, Model & output, const Metric<dimension> & metric)
+public void RemeshingData<DataModel>(Model & model, const Metric<dimension> & metric)
 ```
 
 
@@ -89,10 +89,10 @@ public const Metric<dimension> & metric()
 ```
 
 
-### output_mapping
+### release
 
 ```cpp
-public ModelCopyMapping && output_mapping()
+public void release()
 ```
 
 

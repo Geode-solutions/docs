@@ -121,7 +121,7 @@ flat_hash_map sample_blocks(BRepSamplingData & data, BRepSamplingData::Tasks & s
 ### section_simplex_remesh
 
 ```cpp
-tuple section_simplex_remesh(Section && section, const Metric2D & metric)
+void section_simplex_remesh(Section & section, const Metric2D & metric)
 ```
 
 
@@ -240,7 +240,7 @@ void brep_simplex_constrained_mesh(BRep & brep)
 ### brep_simplex_remesh
 
 ```cpp
-tuple brep_simplex_remesh(BRep && brep, const BRepRemeshOptions & options)
+void brep_simplex_remesh(BRep & brep, const BRepRemeshOptions & options)
 ```
 
 

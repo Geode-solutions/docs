@@ -26,14 +26,14 @@ const name = words.join('-');
 ### simplex_remesh
 
 ```cpp
-tuple simplex_remesh(Section && section, const Metric2D & metric, const SectionRemeshOptions & options)
+void simplex_remesh(Section & section, const Metric2D & metric, const SectionRemeshOptions & options)
 ```
 
 
 ### simplex_remesh
 
 ```cpp
-tuple simplex_remesh(BRep && brep, const BRepRemeshOptions & options, const BRepRemeshInternalOptions & internal_options)
+void simplex_remesh(BRep & brep, const BRepRemeshOptions & options, const BRepRemeshInternalOptions & internal_options)
 ```
 
 
