@@ -2084,6 +2084,40 @@ void shift_optimize_triangulated_surface_elements(TriangulatedSurfaceConstraintM
 ```
 
 
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
+
+### compute_constant_metric_from_maximal_edge_length
+
+```cpp
+ConstantMetric compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
+```
+
+
+### compute_grid_metric_from_maximal_edge_length
+
+```cpp
+SolidGridMetric compute_grid_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
+```
+
+
+### colocalise_brep_unique_vertices
+
+```cpp
+void colocalise_brep_unique_vertices(ModifiableObject model, BRepBuilder & builder)
+```
+
+
+### colocalise_section_unique_vertices
+
+```cpp
+void colocalise_section_unique_vertices(ModifiableObject model, SectionBuilder & builder)
+```
+
+
 ### mesh_partitionner
 
 ```cpp
@@ -2102,26 +2136,6 @@ FixedArray mesh_partitionner(const SurfaceMesh<dimension> & mesh, const Partitio
 
 ```cpp
 FixedArray mesh_partitionner(const SolidMesh3D & mesh, const PartitionnerParameters & parameters)
-```
-
-
-### minimal_metric
-
-```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
-```
-
-### compute_constant_metric_from_maximal_edge_length
-
-```cpp
-ConstantMetric compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
-```
-
-
-### compute_grid_metric_from_maximal_edge_length
-
-```cpp
-SolidGridMetric compute_grid_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
 ```
 
 
