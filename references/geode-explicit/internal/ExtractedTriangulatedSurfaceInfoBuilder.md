@@ -43,26 +43,5 @@ public void add_mesh(const BackgroundSolid & background_solid, const ExtractedTr
 ```
 
 
-### update_mesh
-
-```cpp
-public void update_mesh(std::unique_ptr<TriangulatedSurface3D> && mesh)
-```
-
-
-### stitch_patches
-
-```cpp
-public void stitch_patches(const MeshPolygon & macro_triangle_id)
-```
-
-
-### simplify
-
-```cpp
-public void simplify()
-```
-
-
 
 

@@ -19,7 +19,6 @@ const name = words.join('-');
 
 * [BRepComputer](BRepComputer.md)
 * [BRepModelerMappingsBuilder](BRepModelerMappingsBuilder.md)
-* [EdgeStamp](EdgeStamp.md)
 * [ExtractedEdgedCurveInfoBuilder](ExtractedEdgedCurveInfoBuilder.md)
 * [ExtractedEdgedCurveInfo](ExtractedEdgedCurveInfo.md)
 * [ExtractedMeshInfoBuilder](ExtractedMeshInfoBuilder.md)
@@ -28,9 +27,6 @@ const name = words.join('-');
 * [ExtractedTriangulatedSurfaceInfoBuilder](ExtractedTriangulatedSurfaceInfoBuilder.md)
 * [ExtractedTriangulatedSurfaceInfo](ExtractedTriangulatedSurfaceInfo.md)
 * [InsertionGraphPerformer](InsertionGraphPerformer.md)
-* [MacroEdgeSimplifier](MacroEdgeSimplifier.md)
-* [MacroTriangleSimplifier](MacroTriangleSimplifier.md)
-* [MacroTriangleStitchingTool](MacroTriangleStitchingTool.md)
 * [MeshElementsIndices](MeshElementsIndices.md)
 * [ModelerMappingsBuilder](ModelerMappingsBuilder.md)
 * [ModelerMetric](ModelerMetric.md)
@@ -63,7 +59,7 @@ unique_ptr build_solid(const BoundingBox3D & bbox, const IsotropicMetric3D & met
 ### extract_macro_info
 
 ```cpp
-tuple extract_macro_info(const BackgroundSolid & background_solid, const MeshElements & to_extract)
+ExtractedMeshes extract_macro_info(const BackgroundSolid & background_solid, const MeshElements & to_extract)
 ```
 
 
@@ -78,6 +74,20 @@ ElementGraph find_elements_to_insert(const Meshes & meshes)
 
 ```cpp
 ElementGraph find_elements_to_insert_on_border(const Meshes & meshes, vector border_surfaces)
+```
+
+
+### perform_surface_stitching
+
+```cpp
+void perform_surface_stitching(const TriangulatedSurface3D & surface, TriangulatedSurfaceModifier3D & modifier, Span points, GenericMapping<index_t> & old2new)
+```
+
+
+### perform_curve_stitching
+
+```cpp
+void perform_curve_stitching(const EdgedCurve3D & curve, EdgedCurveModifier3D & modifier, Span points, GenericMapping<index_t> & old2new)
 ```
 
 
