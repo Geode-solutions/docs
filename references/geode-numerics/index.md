@@ -18,30 +18,19 @@ const name = words.join('-');
 ## Namespaces
 
 * [detail](detail/index.md)
-* [internal](internal/index.md)
 
 
 ## Records
 
-* [ComputationGrid](ComputationGrid.md)
-* [CutGridFDMCurvatureMinimization](CutGridFDMCurvatureMinimization.md)
-* [CutGridScalarFunction](CutGridScalarFunction.md)
-* [CutGrid](CutGrid.md)
-* [DataConstraintsManager](DataConstraintsManager.md)
-* [DataPointsManager](DataPointsManager.md)
-* [FDMCurvatureMinimization](FDMCurvatureMinimization.md)
 * [FieldLines](FieldLines.md)
 * [FrameFieldParameterization](FrameFieldParameterization.md)
 * [FrameFieldSmoother](FrameFieldSmoother.md)
 * [FrameField](FrameField.md)
-* [GradientDataManager](GradientDataManager.md)
 * [LinearSolver](LinearSolver.md)
 * [MeshElement](MeshElement.md)
 * [NumericsCoreLibrary](NumericsCoreLibrary.md)
 * [NumericsFrameFieldLibrary](NumericsFrameFieldLibrary.md)
-* [NumericsScalarFunctionLibrary](NumericsScalarFunctionLibrary.md)
 * [NumericsSurfaceLibrary](NumericsSurfaceLibrary.md)
-* [TangentialDataManager](TangentialDataManager.md)
 * [uuid](uuid.md)
 
 
