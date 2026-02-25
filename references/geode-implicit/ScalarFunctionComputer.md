@@ -95,12 +95,12 @@ protected double initial_grid_cell_size()
 protected bool rasterization_deactivates_too_many_cells(const CutGrid<dimension> & grid, const absl::flat_hash_set<typename CutGrid<dimension>::CellIndices> & rasterized_cells)
 ```
 
-
 ### rasterization_deactivates_too_many_cells
 
 ```cpp
 protected bool rasterization_deactivates_too_many_cells(const CutGrid<dimension> & grid, const absl::flat_hash_set<typename CutGrid<dimension>::CellIndices> & rasterized_cells)
 ```
+
 
 
 

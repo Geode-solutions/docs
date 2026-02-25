@@ -20,11 +20,13 @@ const name = words.join('-');
 * [BRepBlockImpliciter](BRepBlockImpliciter.md)
 * [BlockImplicitInfo](BlockImplicitInfo.md)
 * [CrossSectionSequenceImpliciter](CrossSectionSequenceImpliciter.md)
+* [CutGridGradientContributions](CutGridGradientContributions.md)
 * [CutSolidGrid](CutSolidGrid.md)
 * [CutSurfaceGridOutput](CutSurfaceGridOutput.md)
 * [CutSurfaceGrid](CutSurfaceGrid.md)
 * [DuplicatedCell2D](DuplicatedCell2D.md)
 * [DuplicatedCell3D](DuplicatedCell3D.md)
+* [FDMCurvatureMinimizationImpl](FDMCurvatureMinimizationImpl.md)
 * [ImplicitDataManager](ImplicitDataManager.md)
 * [ImplicitSVGInput](ImplicitSVGInput.md)
 * [ScalarFunctionComputer2D](ScalarFunctionComputer2D.md)
@@ -39,6 +41,27 @@ const name = words.join('-');
 
 
 ## Functions
+
+### int_pow
+
+```cpp
+geode::local_index_t int_pow(geode::local_index_t base, geode::local_index_t exponent)
+```
+
+
+### nb_fdm_derivatives
+
+```cpp
+geode::local_index_t nb_fdm_derivatives(geode::local_index_t dimension)
+```
+
+
+### derivative_direction
+
+```cpp
+const std::array<int, dimension> & derivative_direction(geode::local_index_t axis_id)
+```
+
 
 ### segments_in_grid
 
@@ -89,10 +112,10 @@ pair cut_grid_explicitation_points(const CutGrid3D & cut_grid, Span explicitatio
 ```
 
 
-### brep_from_computation_grid
+### ordered_groups_of_horizons_to_implicit
 
 ```cpp
-BRep brep_from_computation_grid(const BoundingBox3D & bounding_box, const ComputationGrid3D & computation_grid, Span values_to_densify_around)
+vector ordered_groups_of_horizons_to_implicit(const HorizonsStack<dimension> & horizons_stack)
 ```
 
 
@@ -116,10 +139,10 @@ bool is_cut_surface_grid_saveable(const CutSurfaceGrid & cut_surface_grid, basic
 ```
 
 
-### ordered_groups_of_horizons_to_implicit
+### brep_from_computation_grid
 
 ```cpp
-vector ordered_groups_of_horizons_to_implicit(const HorizonsStack<dimension> & horizons_stack)
+BRep brep_from_computation_grid(const BoundingBox3D & bounding_box, const ComputationGrid3D & computation_grid, Span values_to_densify_around)
 ```
 
 

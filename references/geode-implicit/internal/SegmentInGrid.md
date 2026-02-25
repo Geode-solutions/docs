@@ -61,7 +61,7 @@ public Point p1_in_grid
 ## Members
 
 ```cpp
-public typename geode::Grid<dimension>::CellIndices cell
+public typename geode::ComputationGrid<dimension>::CellIndices cell
 
 ```
 
@@ -82,7 +82,14 @@ public geode::Point<dimension> p1_in_grid
 ### SegmentInGrid
 
 ```cpp
-public void SegmentInGrid<dimension>(typename geode::Grid<dimension>::CellIndices cell_in, geode::Point<dimension> p0_in_grid_in, geode::Point<dimension> p1_in_grid_in)
+public void SegmentInGrid<dimension>(typename geode::ComputationGrid<dimension>::CellIndices cell_in, geode::Point<dimension> p0_in_grid_in, geode::Point<dimension> p1_in_grid_in)
+```
+
+
+### SegmentInGrid
+
+```cpp
+public void SegmentInGrid<dimension>(typename geode::ComputationGrid<dimension>::CellIndices cell_in, geode::Point<dimension> p0_in_grid_in, geode::Point<dimension> p1_in_grid_in)
 ```
 
 

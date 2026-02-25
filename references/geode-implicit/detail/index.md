@@ -30,6 +30,34 @@ std::optional<ImplicitStreamLine<dimension> > compute_cut_grid_streamline(const 
 ```
 
 
+### split_block_mesh_from_isovalues_on_grid
+
+```cpp
+void split_block_mesh_from_isovalues_on_grid(BRep & model, const Block3D & block, const TetrahedralSolid3D & block_mesh, VariableAttribute<double> & block_function_attribute, const ComputationGrid3D & grid, Span values_to_densify_around)
+```
+
+
+### split_block_mesh_from_isovalues_on_cut_solid_grid
+
+```cpp
+void split_block_mesh_from_isovalues_on_cut_solid_grid(BRep & model, const Block3D & block, const TetrahedralSolid3D & block_mesh, VariableAttribute<double> & block_function_attribute, const internal::CutSolidGrid & grid, Span values_to_densify_around)
+```
+
+
+### convert_computation_grid_to_surface_mesh
+
+```cpp
+std::unique_ptr<TriangulatedSurface2D> convert_computation_grid_to_surface_mesh(const ComputationGrid<2> & grid)
+```
+
+
+### convert_computation_grid_to_solid_mesh
+
+```cpp
+std::unique_ptr<HybridSolid3D> convert_computation_grid_to_solid_mesh(const ComputationGrid<3> & grid)
+```
+
+
 ### extrapolate_surface_mesh_scalar_function
 
 ```cpp
@@ -55,20 +83,6 @@ void extrapolate_surface_mesh_scalar_function(const SurfaceMesh<dimension> & sur
 
 ```cpp
 void extrapolate_solid_mesh_scalar_function(const SolidMesh3D & solid_mesh, const ScalarFunctionExtrapolationInfo & extrapolation_info)
-```
-
-
-### split_block_mesh_from_isovalues_on_grid
-
-```cpp
-void split_block_mesh_from_isovalues_on_grid(BRep & model, const Block3D & block, const TetrahedralSolid3D & block_mesh, VariableAttribute<double> & block_function_attribute, const ComputationGrid3D & grid, Span values_to_densify_around)
-```
-
-
-### split_block_mesh_from_isovalues_on_cut_solid_grid
-
-```cpp
-void split_block_mesh_from_isovalues_on_cut_solid_grid(BRep & model, const Block3D & block, const TetrahedralSolid3D & block_mesh, VariableAttribute<double> & block_function_attribute, const internal::CutSolidGrid & grid, Span values_to_densify_around)
 ```
 
 
