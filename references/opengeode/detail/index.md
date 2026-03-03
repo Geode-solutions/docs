@@ -147,20 +147,6 @@ void coords_substract_equal(Coords<dimension> & input, const Coords<dimension> &
 ```
 
 
-### update_default_name
-
-```cpp
-void update_default_name(Object & object, basic_string_view filename)
-```
-
-
-### update_default_name
-
-```cpp
-void update_default_name(std::unique_ptr<Object> & object, basic_string_view filename)
-```
-
-
 ### geode_object_input_reader
 
 ```cpp

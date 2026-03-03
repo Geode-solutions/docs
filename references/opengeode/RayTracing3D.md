@@ -25,20 +25,6 @@ PolygonDistance
 ### RayTracing3D
 
 ```cpp
-public void RayTracing3D(const SurfaceMesh3D & mesh, const Ray3D & ray)
-```
-
-
-### RayTracing3D
-
-```cpp
-public void RayTracing3D(const SurfaceMesh3D & mesh, const InfiniteLine3D & infinite_line)
-```
-
-
-### RayTracing3D
-
-```cpp
 public void RayTracing3D(const SurfaceMesh3D & mesh, const BoundingBox3D & bbox, const Ray3D & ray)
 ```
 

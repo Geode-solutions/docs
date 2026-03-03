@@ -177,7 +177,6 @@ const name = words.join('-');
 * [ModelComponentMeshPolygons](ModelComponentMeshPolygons.md)
 * [ModelConcatener](ModelConcatener.md)
 * [ModelMapping](ModelMapping.md)
-* [ModelMappings](ModelMappings.md)
 * [ModelMeshesAABBTree](ModelMeshesAABBTree.md)
 * [ModelMeshesElementMapping](ModelMeshesElementMapping.md)
 * [ModelMeshesVertexMapping](ModelMeshesVertexMapping.md)
@@ -1667,96 +1666,6 @@ index_t section_object_priority(basic_string_view filename)
 ```
 
 
-### load_point_set
-
-```cpp
-std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an PointSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_point_set
-
-```cpp
-std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
-```
-
-
- API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### point_set_additional_files
-
-```cpp
-AdditionalFiles point_set_additional_files(basic_string_view filename)
-```
-
-
-### is_point_set_loadable
-
-```cpp
-Percentage is_point_set_loadable(basic_string_view filename)
-```
-
-
-### point_set_object_priority
-
-```cpp
-index_t point_set_object_priority(basic_string_view filename)
-```
-
-
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(basic_string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### vertex_set_additional_files
-
-```cpp
-AdditionalFiles vertex_set_additional_files(basic_string_view filename)
-```
-
-
-### is_vertex_set_loadable
-
-```cpp
-Percentage is_vertex_set_loadable(basic_string_view filename)
-```
-
-
-### vertex_set_object_priority
-
-```cpp
-index_t vertex_set_object_priority(basic_string_view filename)
-```
-
-
 ### save_point_set
 
 ```cpp
@@ -1839,6 +1748,51 @@ Percentage is_polygonal_surface_loadable(basic_string_view filename)
 
 ```cpp
 index_t polygonal_surface_object_priority(basic_string_view filename)
+```
+
+
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(basic_string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### vertex_set_additional_files
+
+```cpp
+AdditionalFiles vertex_set_additional_files(basic_string_view filename)
+```
+
+
+### is_vertex_set_loadable
+
+```cpp
+Percentage is_vertex_set_loadable(basic_string_view filename)
+```
+
+
+### vertex_set_object_priority
+
+```cpp
+index_t vertex_set_object_priority(basic_string_view filename)
 ```
 
 
@@ -2124,6 +2078,51 @@ Percentage is_light_regular_grid_loadable(basic_string_view filename)
 
 ```cpp
 index_t light_regular_grid_object_priority(basic_string_view filename)
+```
+
+
+### load_point_set
+
+```cpp
+std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an PointSet. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_point_set
+
+```cpp
+std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
+```
+
+
+ API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### point_set_additional_files
+
+```cpp
+AdditionalFiles point_set_additional_files(basic_string_view filename)
+```
+
+
+### is_point_set_loadable
+
+```cpp
+Percentage is_point_set_loadable(basic_string_view filename)
+```
+
+
+### point_set_object_priority
+
+```cpp
+index_t point_set_object_priority(basic_string_view filename)
 ```
 
 
@@ -2849,13 +2848,6 @@ unique_ptr convert_edged_curve2d_into_3d(const EdgedCurve2D & curve2d, local_ind
 ```
 
 
-### merge_edged_curves
-
-```cpp
-std::unique_ptr<EdgedCurve<dimension> > merge_edged_curves(absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves)
-```
-
-
 ### convert_point_set3d_into_2d
 
 ```cpp
@@ -2958,20 +2950,6 @@ std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(co
 
 ```cpp
 std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, local_index_t axis_to_remove)
-```
-
-
-### merge_surface_meshes
-
-```cpp
-std::unique_ptr<SurfaceMesh<dimension> > merge_surface_meshes(absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
-```
-
-
-### repair_polygon_orientations
-
-```cpp
-void repair_polygon_orientations(SurfaceMesh<dimension> & mesh)
 ```
 
 
@@ -3349,41 +3327,6 @@ LightRegularGrid<dimension> convert_raster_image_into_grid(const RasterImage<dim
 ```
 
 
-### remove_vertex_duplication
-
-```cpp
-void remove_vertex_duplication(const PointSet<dimension> & mesh, PointSetBuilder<dimension> & builder)
-```
-
-
-### remove_vertex_duplication
-
-```cpp
-void remove_vertex_duplication(const EdgedCurve<dimension> & mesh, EdgedCurveBuilder<dimension> & builder)
-```
-
-
-### remove_vertex_duplication
-
-```cpp
-void remove_vertex_duplication(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
-```
-
-
-### remove_vertex_duplication
-
-```cpp
-void remove_vertex_duplication(const SolidMesh3D & mesh, SolidMeshBuilder3D & builder)
-```
-
-
-### create_nn_search
-
-```cpp
-NNSearch<dimension> create_nn_search(const Mesh<dimension> & mesh)
-```
-
-
 ### convert_solid_mesh_into_tetrahedral_solid
 
 ```cpp
@@ -3416,13 +3359,6 @@ unique_ptr convert_grid_into_densified_tetrahedral_solid(const Grid3D & grid, Sp
 
 ```cpp
 optional convert_solid_mesh_into_hybrid_solid(const SolidMesh3D & solid)
-```
-
-
-### merge_solid_meshes
-
-```cpp
-unique_ptr merge_solid_meshes(Span solids)
 ```
 
 
@@ -3534,6 +3470,20 @@ vector rasterize_tetrahedron(const Grid3D & grid, const Tetrahedron & tetrahedro
 
 ```cpp
 vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D & closed_surface)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
@@ -3709,20 +3659,6 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 

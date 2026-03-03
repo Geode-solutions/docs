@@ -40,7 +40,7 @@ public const uuid & id()
 ### name
 
 ```cpp
-public basic_string_view name()
+public const std::optional<std::string> & name()
 ```
 
 

@@ -25,20 +25,6 @@ EdgeDistance
 ### RayTracing2D
 
 ```cpp
-public void RayTracing2D(const EdgedCurve2D & mesh, const Ray2D & ray)
-```
-
-
-### RayTracing2D
-
-```cpp
-public void RayTracing2D(const EdgedCurve2D & mesh, const InfiniteLine2D & infinite_line)
-```
-
-
-### RayTracing2D
-
-```cpp
 public void RayTracing2D(const EdgedCurve2D & mesh, const BoundingBox2D & bbox, const Ray2D & ray)
 ```
 
