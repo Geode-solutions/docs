@@ -92,6 +92,13 @@ public index_t nb_computation_nodes()
 ```
 
 
+### active_cells_around
+
+```cpp
+public std::vector<CellIndices> active_cells_around(const Point<dimension> & point)
+```
+
+
 ### value_node_from_grid_vertex_indices
 
 ```cpp

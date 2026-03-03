@@ -43,7 +43,7 @@ public void ~TangentialDataManager<dimension>()
 ### add_tangential_data
 
 ```cpp
-public index_t add_tangential_data(Point<dimension> position, Vector<dimension> tangential_value, double weight)
+public index_t add_tangential_data(Point<dimension> position, Vector<dimension> tangential_direction, double weight)
 ```
 
 
