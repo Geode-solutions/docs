@@ -104,6 +104,7 @@ const name = words.join('-');
 * [EraserRange](EraserRange.md)
 * [EuclideanDistanceTransform](EuclideanDistanceTransform.md)
 * [Factory](Factory.md)
+* [FileLoggerClient](FileLoggerClient.md)
 * [FrameTransform](FrameTransform.md)
 * [Frame](Frame.md)
 * [GenericAttributeConversion](GenericAttributeConversion.md)
@@ -2960,62 +2961,6 @@ void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMes
 ```
 
 
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point3D & point, const Segment3D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point2D & point, const Segment2D & segment)
-```
-
-
-### point_segment_position_exact
-
-```cpp
-POSITION point_segment_position_exact(const Point1D & point, const Segment1D & segment)
-```
-
-
-### point_triangle_position_all_zero
-
-```cpp
-POSITION point_triangle_position_all_zero(const Point<dimension> & point, const Triangle<dimension> & triangle)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point2D & point, const Triangle2D & triangle)
-```
-
-
-### compute_determinants
-
-```cpp
-POSITION compute_determinants(const Point3D & point, const Triangle3D & triangle, const Vector3D & third_vector)
-```
-
-
-### point_triangle_position_exact
-
-```cpp
-POSITION point_triangle_position_exact(const Point3D & point, const Triangle3D & triangle)
-```
-
-
-### point_tetrahedron_position_exact
-
-```cpp
-POSITION point_tetrahedron_position_exact(const Point3D & point, const Tetrahedron & tetra)
-```
-
-
 ### point_triangle_position
 
 ```cpp
@@ -3473,20 +3418,6 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
-```
-
-
 ### convert_surface_mesh
 
 ```cpp
@@ -3659,6 +3590,20 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
