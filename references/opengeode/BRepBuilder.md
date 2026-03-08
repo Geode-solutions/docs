@@ -274,14 +274,14 @@ public void add_block_collection(const uuid & block_collection_id)
 ### update_corner_mesh
 
 ```cpp
-public void update_corner_mesh(const Corner3D & corner, std::unique_ptr<PointSet3D> mesh)
+public void update_corner_mesh(const Corner3D & corner, unique_ptr mesh)
 ```
 
 
 ### update_line_mesh
 
 ```cpp
-public void update_line_mesh(const Line3D & line, std::unique_ptr<EdgedCurve3D> mesh)
+public void update_line_mesh(const Line3D & line, unique_ptr mesh)
 ```
 
 
@@ -295,7 +295,7 @@ public void update_surface_mesh(const Surface3D & surface, std::unique_ptr<Surfa
 ### update_block_mesh
 
 ```cpp
-public void update_block_mesh(const Block3D & block, std::unique_ptr<SolidMesh3D> mesh)
+public void update_block_mesh(const Block3D & block, unique_ptr mesh)
 ```
 
 

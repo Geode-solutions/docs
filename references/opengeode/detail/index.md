@@ -182,6 +182,20 @@ vector geode_object_output_impl(basic_string_view type, const Object & object, b
 ```
 
 
+### repair_non_manifold_vertices
+
+```cpp
+GenericMapping repair_non_manifold_vertices(const Model & model, typename Model::Builder & builder, const Surface<Model::dim> & surface)
+```
+
+
+### repair_non_manifold_vertices
+
+```cpp
+GenericMapping repair_non_manifold_vertices(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
+```
+
+
 ### position_to_index
 
 ```cpp
@@ -392,6 +406,13 @@ vector block_component_mesh_polygons(const BRep & brep, const PolygonVertices & 
 ```
 
 
+### repair_non_manifold_vertices
+
+```cpp
+GenericMapping repair_non_manifold_vertices(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder)
+```
+
+
 ### copy_corner_components
 
 ```cpp
@@ -497,31 +518,17 @@ void copy_vertex_identifier_components(const Model & from, BuilderTo & builder_t
 ```
 
 
-### repair_non_manifold_vertices
+### transfer_brep_meshes
 
 ```cpp
-GenericMapping repair_non_manifold_vertices(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder)
+void transfer_brep_meshes(const BRep & brep, BRepBuilder & brep_builder, BRep && other, const ModelCopyMapping & component_mapping)
 ```
 
 
-### repair_non_manifold_vertices
+### transfer_section_meshes
 
 ```cpp
-GenericMapping repair_non_manifold_vertices(const Model & model, typename Model::Builder & builder, const Surface<Model::dim> & surface)
-```
-
-
-### repair_non_manifold_vertices
-
-```cpp
-GenericMapping repair_non_manifold_vertices(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
-```
-
-
-### count_range_elements
-
-```cpp
-index_t count_range_elements(const Range & range)
+void transfer_section_meshes(const Section & section, SectionBuilder & section_builder, Section && other, const ModelCopyMapping & component_mapping)
 ```
 
 
@@ -567,20 +574,6 @@ void transfer_section_collections(const Section & old_section, const Section & n
 ```
 
 
-### transfer_brep_meshes
-
-```cpp
-void transfer_brep_meshes(const BRep & brep, BRepBuilder & brep_builder, BRep && other, const ModelCopyMapping & component_mapping)
-```
-
-
-### transfer_section_meshes
-
-```cpp
-void transfer_section_meshes(const Section & section, SectionBuilder & section_builder, Section && other, const ModelCopyMapping & component_mapping)
-```
-
-
 ### transfer_brep_metadata
 
 ```cpp
@@ -620,6 +613,13 @@ void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const Su
 
 ```cpp
 void transfer_solids_metadata(Span solids, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### count_range_elements
+
+```cpp
+index_t count_range_elements(const Range & range)
 ```
 
 

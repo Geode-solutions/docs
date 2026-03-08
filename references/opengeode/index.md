@@ -748,6 +748,34 @@ H AbslHashValue(H h, const ComponentID & value)
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const MeshElement & value)
+```
+
+
+### are_mesh_elements_included
+
+```cpp
+bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion)
+```
+
+
+### are_mesh_elements_included
+
+```cpp
+bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion, const SkipMeshElement & skip)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const ComponentMeshVertex & value)
+```
+
+
 ### register_geode_mesh
 
 ```cpp
@@ -1524,6 +1552,40 @@ array safe_segment_barycentric_coordinates(const Point<dimension> & point, const
 
 **return** an array containing the parametric coordinates corresponding to the segment vertices.
 
+### load_section
+
+```cpp
+Section load_section(basic_string_view filename)
+```
+
+
+ API function for loading a Section. The adequate loader is called depending on the filename extension.
+
+**filename** [in] Path to the file to load.
+
+**return** Loaded Section.
+
+### section_additional_files
+
+```cpp
+AdditionalFiles section_additional_files(basic_string_view filename)
+```
+
+
+### is_section_loadable
+
+```cpp
+Percentage is_section_loadable(basic_string_view filename)
+```
+
+
+### section_object_priority
+
+```cpp
+index_t section_object_priority(basic_string_view filename)
+```
+
+
 ### save_brep
 
 ```cpp
@@ -1541,34 +1603,6 @@ vector save_brep(const BRep & brep, basic_string_view filename)
 
 ```cpp
 bool is_brep_saveable(const BRep & brep, basic_string_view filename)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MeshElement & value)
-```
-
-
-### are_mesh_elements_included
-
-```cpp
-bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion)
-```
-
-
-### are_mesh_elements_included
-
-```cpp
-bool are_mesh_elements_included(const MeshElementsInclusion<MeshElementType> & inclusion, const SkipMeshElement & skip)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const ComponentMeshVertex & value)
 ```
 
 
@@ -1630,40 +1664,6 @@ index_t brep_object_priority(basic_string_view filename)
 
 ```cpp
 bool is_zip_file(basic_string_view file)
-```
-
-
-### load_section
-
-```cpp
-Section load_section(basic_string_view filename)
-```
-
-
- API function for loading a Section. The adequate loader is called depending on the filename extension.
-
-**filename** [in] Path to the file to load.
-
-**return** Loaded Section.
-
-### section_additional_files
-
-```cpp
-AdditionalFiles section_additional_files(basic_string_view filename)
-```
-
-
-### is_section_loadable
-
-```cpp
-Percentage is_section_loadable(basic_string_view filename)
-```
-
-
-### section_object_priority
-
-```cpp
-index_t section_object_priority(basic_string_view filename)
 ```
 
 
@@ -2814,143 +2814,10 @@ double surface_area(const Surface<dimension> & surface)
 ```
 
 
-### convert_brep_into_section
+### compute_model_unique_vertices
 
 ```cpp
-tuple convert_brep_into_section(const BRep & brep, local_index_t axis_to_remove)
-```
-
-
-### convert_section_into_brep
-
-```cpp
-tuple convert_section_into_brep(const Section & section, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
-### extrude_section_to_brep
-
-```cpp
-BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptions & options)
-```
-
-
-### convert_edged_curve3d_into_2d
-
-```cpp
-unique_ptr convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, local_index_t axis_to_remove)
-```
-
-
-### convert_edged_curve2d_into_3d
-
-```cpp
-unique_ptr convert_edged_curve2d_into_3d(const EdgedCurve2D & curve2d, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_point_set3d_into_2d
-
-```cpp
-unique_ptr convert_point_set3d_into_2d(const PointSet3D & point_set3d, local_index_t axis_to_remove)
-```
-
-
-### convert_point_set2d_into_3d
-
-```cpp
-unique_ptr convert_point_set2d_into_3d(const PointSet2D & point_set2d, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_surface_mesh_into_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface<dimension> > convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & surface)
-```
-
-
-### convert_surface_mesh_into_triangulated_surface
-
-```cpp
-std::optional<std::unique_ptr<TriangulatedSurface<dimension> > > convert_surface_mesh_into_triangulated_surface(const SurfaceMesh<dimension> & surface)
-```
-
-
-### convert_grid_into_triangulated_surface
-
-```cpp
-std::unique_ptr<TriangulatedSurface2D> convert_grid_into_triangulated_surface(const Grid2D & grid)
-```
-
-
-### convert_grid_into_polygonal_surface
-
-```cpp
-std::unique_ptr<PolygonalSurface2D> convert_grid_into_polygonal_surface(const Grid2D & grid)
-```
-
-
-### convert_grid_into_densified_triangulated_surface
-
-```cpp
-std::unique_ptr<TriangulatedSurface2D> convert_grid_into_densified_triangulated_surface(const Grid2D & grid, Span cells_to_densify)
-```
-
-
-### triangulate_surface_mesh
-
-```cpp
-void triangulate_surface_mesh(SurfaceMesh<dimension> & surface)
-```
-
-
-### triangulate_surface_mesh
-
-```cpp
-void triangulate_surface_mesh(const SurfaceMesh<dimension> & surface, SurfaceMeshBuilder<dimension> & builder)
-```
-
-
-### convert_surface_mesh2d_into_3d
-
-```cpp
-unique_ptr convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_surface_mesh3d_into_2d
-
-```cpp
-unique_ptr convert_surface_mesh3d_into_2d(const SurfaceMesh3D & surface3d, local_index_t axis_to_remove)
-```
-
-
-### convert_polygonal_surface2d_into_3d
-
-```cpp
-std::unique_ptr<PolygonalSurface3D> convert_polygonal_surface2d_into_3d(const PolygonalSurface2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_polygonal_surface3d_into_2d
-
-```cpp
-std::unique_ptr<PolygonalSurface2D> convert_polygonal_surface3d_into_2d(const PolygonalSurface3D & surface3d, local_index_t axis_to_remove)
-```
-
-
-### convert_triangulated_surface2d_into_3d
-
-```cpp
-std::unique_ptr<TriangulatedSurface3D> convert_triangulated_surface2d_into_3d(const TriangulatedSurface2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
-```
-
-
-### convert_triangulated_surface3d_into_2d
-
-```cpp
-std::unique_ptr<TriangulatedSurface2D> convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, local_index_t axis_to_remove)
+void compute_model_unique_vertices(const Model & model, typename Model::Builder & builder)
 ```
 
 
@@ -3265,10 +3132,129 @@ LightRegularGrid<dimension> build_grid_from_bbox_target_length_and_maximum_cell_
 ```
 
 
+### convert_edged_curve3d_into_2d
+
+```cpp
+unique_ptr convert_edged_curve3d_into_2d(const EdgedCurve3D & curve3d, local_index_t axis_to_remove)
+```
+
+
+### convert_edged_curve2d_into_3d
+
+```cpp
+unique_ptr convert_edged_curve2d_into_3d(const EdgedCurve2D & curve2d, local_index_t axis_to_add, double axis_coordinate)
+```
+
+
 ### convert_raster_image_into_grid
 
 ```cpp
 LightRegularGrid<dimension> convert_raster_image_into_grid(const RasterImage<dimension> & raster, const CoordinateSystem<dimension> & coordinate_system)
+```
+
+
+### convert_point_set3d_into_2d
+
+```cpp
+unique_ptr convert_point_set3d_into_2d(const PointSet3D & point_set3d, local_index_t axis_to_remove)
+```
+
+
+### convert_point_set2d_into_3d
+
+```cpp
+unique_ptr convert_point_set2d_into_3d(const PointSet2D & point_set2d, local_index_t axis_to_add, double axis_coordinate)
+```
+
+
+### convert_surface_mesh_into_polygonal_surface
+
+```cpp
+std::unique_ptr<PolygonalSurface<dimension> > convert_surface_mesh_into_polygonal_surface(const SurfaceMesh<dimension> & surface)
+```
+
+
+### convert_surface_mesh_into_triangulated_surface
+
+```cpp
+std::optional<std::unique_ptr<TriangulatedSurface<dimension> > > convert_surface_mesh_into_triangulated_surface(const SurfaceMesh<dimension> & surface)
+```
+
+
+### convert_grid_into_triangulated_surface
+
+```cpp
+unique_ptr convert_grid_into_triangulated_surface(const Grid2D & grid)
+```
+
+
+### convert_grid_into_polygonal_surface
+
+```cpp
+unique_ptr convert_grid_into_polygonal_surface(const Grid2D & grid)
+```
+
+
+### convert_grid_into_densified_triangulated_surface
+
+```cpp
+unique_ptr convert_grid_into_densified_triangulated_surface(const Grid2D & grid, Span cells_to_densify)
+```
+
+
+### triangulate_surface_mesh
+
+```cpp
+void triangulate_surface_mesh(SurfaceMesh<dimension> & surface)
+```
+
+
+### triangulate_surface_mesh
+
+```cpp
+void triangulate_surface_mesh(const SurfaceMesh<dimension> & surface, SurfaceMeshBuilder<dimension> & builder)
+```
+
+
+### convert_surface_mesh2d_into_3d
+
+```cpp
+unique_ptr convert_surface_mesh2d_into_3d(const SurfaceMesh2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
+```
+
+
+### convert_surface_mesh3d_into_2d
+
+```cpp
+unique_ptr convert_surface_mesh3d_into_2d(const SurfaceMesh3D & surface3d, local_index_t axis_to_remove)
+```
+
+
+### convert_polygonal_surface2d_into_3d
+
+```cpp
+unique_ptr convert_polygonal_surface2d_into_3d(const PolygonalSurface2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
+```
+
+
+### convert_polygonal_surface3d_into_2d
+
+```cpp
+unique_ptr convert_polygonal_surface3d_into_2d(const PolygonalSurface3D & surface3d, local_index_t axis_to_remove)
+```
+
+
+### convert_triangulated_surface2d_into_3d
+
+```cpp
+unique_ptr convert_triangulated_surface2d_into_3d(const TriangulatedSurface2D & surface2d, local_index_t axis_to_add, double axis_coordinate)
+```
+
+
+### convert_triangulated_surface3d_into_2d
+
+```cpp
+unique_ptr convert_triangulated_surface3d_into_2d(const TriangulatedSurface3D & surface3d, local_index_t axis_to_remove)
 ```
 
 
@@ -3415,6 +3401,41 @@ vector rasterize_tetrahedron(const Grid3D & grid, const Tetrahedron & tetrahedro
 
 ```cpp
 vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D & closed_surface)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
+```
+
+
+### convert_brep_into_section
+
+```cpp
+tuple convert_brep_into_section(const BRep & brep, local_index_t axis_to_remove)
+```
+
+
+### convert_section_into_brep
+
+```cpp
+tuple convert_section_into_brep(const Section & section, local_index_t axis_to_add, double axis_coordinate)
+```
+
+
+### extrude_section_to_brep
+
+```cpp
+BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptions & options)
 ```
 
 
@@ -3590,20 +3611,6 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
