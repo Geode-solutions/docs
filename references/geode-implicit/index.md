@@ -23,7 +23,6 @@ const name = words.join('-');
 
 ## Records
 
-* [BMeshEdgeOnIntersection](BMeshEdgeOnIntersection.md)
 * [BRepMappings](BRepMappings.md)
 * [BoxModelFromTopography](BoxModelFromTopography.md)
 * [ClosedSurfacesFromCurves](ClosedSurfacesFromCurves.md)
@@ -43,7 +42,6 @@ const name = words.join('-');
 * [ImplicitExplicitationLibrary](ImplicitExplicitationLibrary.md)
 * [ImplicitIOLibrary](ImplicitIOLibrary.md)
 * [ImplicitImplicitationLibrary](ImplicitImplicitationLibrary.md)
-* [ImplicitInsertionLibrary](ImplicitInsertionLibrary.md)
 * [ImplicitModelFromSolid](ImplicitModelFromSolid.md)
 * [ImplicitModelFromStructuralModel](ImplicitModelFromStructuralModel.md)
 * [ImplicitScalarFunctionLibrary](ImplicitScalarFunctionLibrary.md)
@@ -54,20 +52,9 @@ const name = words.join('-');
 * [ScalarFunctionComputer](ScalarFunctionComputer.md)
 * [SingleSurfaceFromVertices](SingleSurfaceFromVertices.md)
 * [SolidMeshScalarFunctionExpliciter](SolidMeshScalarFunctionExpliciter.md)
-* [StratigraphicLine](StratigraphicLine.md)
-* [StratigraphicModelInserter](StratigraphicModelInserter.md)
-* [StratigraphicSectionInserter](StratigraphicSectionInserter.md)
-* [StratigraphicSolidPathFinder](StratigraphicSolidPathFinder.md)
-* [StratigraphicSurfaceCutter](StratigraphicSurfaceCutter.md)
-* [StratigraphicSurface](StratigraphicSurface.md)
 * [StructuralModelImplicitationParameters](StructuralModelImplicitationParameters.md)
 * [StructuralModelImpliciter](StructuralModelImpliciter.md)
 * [StructuralModelToCrossSectionMapping](StructuralModelToCrossSectionMapping.md)
-* [SurfaceCutByBoundaries](SurfaceCutByBoundaries.md)
-* [SurfacePartXYZConverter](SurfacePartXYZConverter.md)
-* [SurfacePart](SurfacePart.md)
-* [SurfacePartsStitcher](SurfacePartsStitcher.md)
-* [SurfaceStitcher](SurfaceStitcher.md)
 * [TangentialDataManager](TangentialDataManager.md)
 * [uuid](uuid.md)
 
@@ -93,69 +80,6 @@ tuple extract_implicit_cross_section_from_plane(const ImplicitStructuralModel & 
 ```cpp
 tuple extract_stratigraphic_section_from_axis(const StratigraphicModel & model, local_index_t axis_direction, double axis_coordinate)
 ```
-
-
-### lists_have_common_intersections
-
-```cpp
-bool lists_have_common_intersections(Span first_edges_list, Span second_edges_list)
-```
-
-
-### has_surface_parts_on_other_side
-
-```cpp
-bool has_surface_parts_on_other_side(Span cut_surface_parts, index_t surface_part_id, const uuid & cutting_surface_id)
-```
-
-
-### surface_on_interior_side
-
-```cpp
-optional surface_on_interior_side(Span cut_surface_parts)
-```
-
-
-### surface_parts_on_other_side
-
-```cpp
-vector surface_parts_on_other_side(Span cut_surface_parts, index_t surface_part_id, const uuid & cutting_surface_id)
-```
-
-
-### surface_parts_common_intersections
-
-```cpp
-vector surface_parts_common_intersections(const SurfacePart & surface_part_to_stitch, const SurfacePart & surface_to_stitch_on, const uuid & cutting_surface_id, absl::FixedArray<index_t> & vertices_mapping)
-```
-
-
-### remove_stitched_surface_parts
-
-```cpp
-void remove_stitched_surface_parts(std::vector<SurfacePart> & cut_surface_parts)
-```
-
-
-### solid_path_to_string
-
-```cpp
-basic_string solid_path_to_string(const SolidPath & path)
-```
-
-
-
-
-## Enums
-
-| enum class SURFACE_ORIENTATION |
-
---
-
-| towards_block |
-| opposite_to_block |
-| no_orientation |
-
 
 
 
