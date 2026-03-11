@@ -31,5 +31,10 @@ public ERROR_HANDLING_MODE build_mode
 
 ```
 
+```cpp
+public bool remove_outside_block_elements
+
+```
+
 
 

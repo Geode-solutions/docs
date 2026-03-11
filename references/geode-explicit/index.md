@@ -53,6 +53,13 @@ void inspect_generated_brep(const BRep & brep)
 ```
 
 
+### inspect_generated_brep_without_block_topology
+
+```cpp
+void inspect_generated_brep_without_block_topology(const BRep & brep)
+```
+
+
 ### output_mesh
 
 ```cpp

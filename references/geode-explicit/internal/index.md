@@ -18,6 +18,7 @@ const name = words.join('-');
 ## Records
 
 * [BRepComputer](BRepComputer.md)
+* [BRepConformityComputer](BRepConformityComputer.md)
 * [BRepModelerMappingsBuilder](BRepModelerMappingsBuilder.md)
 * [ExtractedEdgedCurveInfoBuilder](ExtractedEdgedCurveInfoBuilder.md)
 * [ExtractedEdgedCurveInfo](ExtractedEdgedCurveInfo.md)
@@ -80,14 +81,14 @@ ElementGraph find_elements_to_insert_on_border(const Meshes & meshes, vector bor
 ### perform_surface_stitching
 
 ```cpp
-void perform_surface_stitching(const TriangulatedSurface3D & surface, TriangulatedSurfaceModifier3D & modifier, Span points, GenericMapping<index_t> & old2new)
+GenericMapping perform_surface_stitching(const TriangulatedSurface3D & surface, TriangulatedSurfaceModifier3D & modifier, Span points, GenericMapping<index_t> & old2new)
 ```
 
 
 ### perform_curve_stitching
 
 ```cpp
-void perform_curve_stitching(const EdgedCurve3D & curve, EdgedCurveModifier3D & modifier, Span points, GenericMapping<index_t> & old2new)
+GenericMapping perform_curve_stitching(const EdgedCurve3D & curve, EdgedCurveModifier3D & modifier, Span points, GenericMapping<index_t> & old2new)
 ```
 
 
