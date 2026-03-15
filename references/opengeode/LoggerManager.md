@@ -26,7 +26,7 @@ public void ~LoggerManager()
 ### register_client
 
 ```cpp
-public void register_client(std::unique_ptr<LoggerClient> && client)
+public LoggerClient & register_client(std::unique_ptr<LoggerClient> && client)
 ```
 
 

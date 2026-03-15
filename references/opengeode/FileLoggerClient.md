@@ -36,5 +36,12 @@ public void ~FileLoggerClient()
 ```
 
 
+### always_flush
+
+```cpp
+public void always_flush()
+```
+
+
 
 
