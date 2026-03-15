@@ -127,5 +127,19 @@ public vector generate_simple_cycles()
 ```
 
 
+### id
+
+```cpp
+public uuid id()
+```
+
+
+### extract_range
+
+```cpp
+public FrontCycle extract_range(index_t start_pos, index_t end_pos)
+```
+
+
 
 

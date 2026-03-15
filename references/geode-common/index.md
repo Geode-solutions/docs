@@ -156,7 +156,6 @@ const name = words.join('-');
 * [SolidGridMetric](SolidGridMetric.md)
 * [SolidMovePointValidity](SolidMovePointValidity.md)
 * [SolidPatch](SolidPatch.md)
-* [SolidPatcher](SolidPatcher.md)
 * [SolidPathFinder](SolidPathFinder.md)
 * [SolidPath](SolidPath.md)
 * [SolidSplitEdgeValidity](SolidSplitEdgeValidity.md)
@@ -1865,7 +1864,7 @@ SolidCutPathInfo cut_along_path(const TetrahedralSolid3D & solid, TetrahedralSol
 ### cut_along_patch
 
 ```cpp
-SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, Span boundary_edges, const Triangle3D & triangle)
+SolidCutPatchInfo cut_along_patch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, vector boundary_cycles, const Triangle3D & triangle)
 ```
 
 
@@ -2084,26 +2083,6 @@ void shift_optimize_triangulated_surface_elements(TriangulatedSurfaceConstraintM
 ```
 
 
-### minimal_metric
-
-```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
-```
-
-### compute_constant_metric_from_maximal_edge_length
-
-```cpp
-ConstantMetric compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
-```
-
-
-### compute_grid_metric_from_maximal_edge_length
-
-```cpp
-SolidGridMetric compute_grid_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
-```
-
-
 ### colocalise_brep_unique_vertices
 
 ```cpp
@@ -2136,6 +2115,26 @@ FixedArray mesh_partitionner(const SurfaceMesh<dimension> & mesh, const Partitio
 
 ```cpp
 FixedArray mesh_partitionner(const SolidMesh3D & mesh, const PartitionnerParameters & parameters)
+```
+
+
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
+
+### compute_constant_metric_from_maximal_edge_length
+
+```cpp
+ConstantMetric compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
+```
+
+
+### compute_grid_metric_from_maximal_edge_length
+
+```cpp
+SolidGridMetric compute_grid_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
 ```
 
 
