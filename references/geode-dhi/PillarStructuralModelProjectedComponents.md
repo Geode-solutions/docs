@@ -11,12 +11,19 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace geode
+# class PillarStructuralModelProjectedComponents
 
+## Members
 
+```cpp
+public vector projected_corners
 
-## Records
+```
 
-* [PillarStructuralModelProjectedComponents](PillarStructuralModelProjectedComponents.md)
+```cpp
+public vector projected_lines
+
+```
+
 
 
