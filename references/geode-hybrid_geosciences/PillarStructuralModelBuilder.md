@@ -51,5 +51,12 @@ public PillarStructuralModelBuilderResult build(const PillarStructuralModelOptio
 ```
 
 
+### projected_components
+
+```cpp
+public PillarStructuralModelProjectedComponents projected_components()
+```
+
+
 
 

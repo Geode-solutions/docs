@@ -32,6 +32,7 @@ const name = words.join('-');
 * [PillarStructuralModelException](PillarStructuralModelException.md)
 * [PillarStructuralModelInspectionResult](PillarStructuralModelInspectionResult.md)
 * [PillarStructuralModelOptions](PillarStructuralModelOptions.md)
+* [PillarStructuralModelProjectedComponents](PillarStructuralModelProjectedComponents.md)
 * [PointsTooFarFromTopographyBoundaryInspectionResult](PointsTooFarFromTopographyBoundaryInspectionResult.md)
 * [SurfacesCollectionInspectionResult](SurfacesCollectionInspectionResult.md)
 
