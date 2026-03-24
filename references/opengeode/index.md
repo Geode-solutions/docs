@@ -1889,6 +1889,26 @@ void register_geode_mesh_input()
 ```
 
 
+### save_edged_curve
+
+```cpp
+vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
+ API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
+
+**edged_curve** [in] EdgedCurve to save.
+
+**filename** [in] Path to the file where save the EdgedCurve.
+
+### is_edged_curve_saveable
+
+```cpp
+bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
+```
+
+
 ### load_edged_curve
 
 ```cpp
@@ -2266,26 +2286,6 @@ index_t triangulated_surface_object_priority(basic_string_view filename)
 
 ```cpp
 void register_geode_mesh_output()
-```
-
-
-### save_edged_curve
-
-```cpp
-vector save_edged_curve(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
-```
-
-
- API function for saving a EdgedCurve. The adequate saver is called depending on the given filename extension.
-
-**edged_curve** [in] EdgedCurve to save.
-
-**filename** [in] Path to the file where save the EdgedCurve.
-
-### is_edged_curve_saveable
-
-```cpp
-bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_string_view filename)
 ```
 
 
@@ -2856,97 +2856,6 @@ bool are_points_aligned(const Point3D & point0, const Point3D & point1, const Po
 ```
 
 
-### file_exists
-
-```cpp
-bool file_exists(basic_string_view file_path)
-```
-
-
-### check_keyword
-
-```cpp
-void check_keyword(std::ifstream & file, basic_string_view keyword)
-```
-
-
-### line_starts_with
-
-```cpp
-bool line_starts_with(std::ifstream & file, basic_string_view check)
-```
-
-
-### goto_keyword
-
-```cpp
-basic_string goto_keyword(std::ifstream & file, basic_string_view word)
-```
-
-
-### goto_keywords
-
-```cpp
-basic_string goto_keywords(std::ifstream & file, Span words)
-```
-
-
-### goto_keyword_if_it_exists
-
-```cpp
-optional goto_keyword_if_it_exists(std::ifstream & file, basic_string_view word)
-```
-
-
-### next_keyword_if_it_exists
-
-```cpp
-optional next_keyword_if_it_exists(std::ifstream & file, basic_string_view word)
-```
-
-
-### string_split
-
-```cpp
-std::vector<std::string_view> string_split(basic_string_view string)
-```
-
-
-### string_starts_with
-
-```cpp
-bool string_starts_with(basic_string_view string, basic_string_view check)
-```
-
-
-### string_to_index
-
-```cpp
-index_t string_to_index(basic_string_view string)
-```
-
-
-### string_to_int
-
-```cpp
-int string_to_int(basic_string_view string)
-```
-
-
-### string_to_float
-
-```cpp
-float string_to_float(basic_string_view string)
-```
-
-
-### string_to_double
-
-```cpp
-double string_to_double(basic_string_view string)
-```
-
-
 ### point_segment_projection
 
 ```cpp
@@ -3065,6 +2974,97 @@ std::tuple<double, std::array<double, dimension> > SqrDistanceSpecial(const std:
 
 ```cpp
 std::tuple<double, Point<dimension> > SquaredDistance(const Ellipse<dimension> & ellipse, const std::array<double, dimension> & query_point_coordinates)
+```
+
+
+### file_exists
+
+```cpp
+bool file_exists(basic_string_view file_path)
+```
+
+
+### check_keyword
+
+```cpp
+void check_keyword(std::ifstream & file, basic_string_view keyword)
+```
+
+
+### line_starts_with
+
+```cpp
+bool line_starts_with(std::ifstream & file, basic_string_view check)
+```
+
+
+### goto_keyword
+
+```cpp
+basic_string goto_keyword(std::ifstream & file, basic_string_view word)
+```
+
+
+### goto_keywords
+
+```cpp
+basic_string goto_keywords(std::ifstream & file, Span words)
+```
+
+
+### goto_keyword_if_it_exists
+
+```cpp
+optional goto_keyword_if_it_exists(std::ifstream & file, basic_string_view word)
+```
+
+
+### next_keyword_if_it_exists
+
+```cpp
+optional next_keyword_if_it_exists(std::ifstream & file, basic_string_view word)
+```
+
+
+### string_split
+
+```cpp
+std::vector<std::string_view> string_split(basic_string_view string)
+```
+
+
+### string_starts_with
+
+```cpp
+bool string_starts_with(basic_string_view string, basic_string_view check)
+```
+
+
+### string_to_index
+
+```cpp
+index_t string_to_index(basic_string_view string)
+```
+
+
+### string_to_int
+
+```cpp
+int string_to_int(basic_string_view string)
+```
+
+
+### string_to_float
+
+```cpp
+float string_to_float(basic_string_view string)
+```
+
+
+### string_to_double
+
+```cpp
+double string_to_double(basic_string_view string)
 ```
 
 
@@ -3404,6 +3404,20 @@ vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D
 ```
 
 
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
+```
+
+
 ### convert_brep_into_section
 
 ```cpp
@@ -3597,20 +3611,6 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
