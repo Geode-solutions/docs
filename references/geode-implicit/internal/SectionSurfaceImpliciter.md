@@ -19,6 +19,20 @@ const name = words.join('-');
 ### SectionSurfaceImpliciter
 
 ```cpp
+public void SectionSurfaceImpliciter(const SectionSurfaceImpliciter & )
+```
+
+
+### operator=
+
+```cpp
+public SectionSurfaceImpliciter & operator=(const SectionSurfaceImpliciter & )
+```
+
+
+### SectionSurfaceImpliciter
+
+```cpp
 public void SectionSurfaceImpliciter(const Section & model, const Surface2D & surface, const ImplicitDataManager2D & data_manager)
 ```
 
@@ -26,7 +40,14 @@ public void SectionSurfaceImpliciter(const Section & model, const Surface2D & su
 ### SectionSurfaceImpliciter
 
 ```cpp
-public void SectionSurfaceImpliciter(SectionSurfaceImpliciter && surface_modeler)
+public void SectionSurfaceImpliciter(SectionSurfaceImpliciter && other)
+```
+
+
+### operator=
+
+```cpp
+public SectionSurfaceImpliciter & operator=(SectionSurfaceImpliciter && other)
 ```
 
 

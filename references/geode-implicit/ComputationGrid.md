@@ -25,7 +25,28 @@ Inherits from LightRegularGrid<dimension>
 ### ComputationGrid
 
 ```cpp
+public void ComputationGrid<dimension>(const ComputationGrid<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public ComputationGrid<dimension> & operator=(const ComputationGrid<dimension> & )
+```
+
+
+### ComputationGrid
+
+```cpp
 public void ComputationGrid<dimension>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
+```
+
+
+### ComputationGrid
+
+```cpp
+public void ComputationGrid<dimension>(LightRegularGrid<dimension> && light_grid)
 ```
 
 
@@ -36,10 +57,10 @@ public void ComputationGrid<dimension>(ComputationGrid<dimension> && other)
 ```
 
 
-### ComputationGrid
+### operator=
 
 ```cpp
-public void ComputationGrid<dimension>(LightRegularGrid<dimension> && other)
+public ComputationGrid<dimension> & operator=(ComputationGrid<dimension> && other)
 ```
 
 
@@ -95,7 +116,7 @@ public index_t nb_computation_nodes()
 ### active_cells_around
 
 ```cpp
-public std::vector<CellIndices> active_cells_around(const Point<dimension> & point)
+public std::vector<CellIndices> active_cells_around(const Point<dimension> & position)
 ```
 
 

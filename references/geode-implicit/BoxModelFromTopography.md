@@ -23,6 +23,20 @@ const name = words.join('-');
 ### BoxModelFromTopography
 
 ```cpp
+public void BoxModelFromTopography(const BoxModelFromTopography & )
+```
+
+
+### operator=
+
+```cpp
+public BoxModelFromTopography & operator=(const BoxModelFromTopography & )
+```
+
+
+### BoxModelFromTopography
+
+```cpp
 public void BoxModelFromTopography(const BoundingBox3D & bounding_box)
 ```
 
@@ -31,6 +45,13 @@ public void BoxModelFromTopography(const BoundingBox3D & bounding_box)
 
 ```cpp
 public void BoxModelFromTopography(BoxModelFromTopography && other)
+```
+
+
+### operator=
+
+```cpp
+public BoxModelFromTopography & operator=(BoxModelFromTopography && other)
 ```
 
 

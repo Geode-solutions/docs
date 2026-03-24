@@ -19,6 +19,20 @@ const name = words.join('-');
 ### DuplicatedCell2D
 
 ```cpp
+public void DuplicatedCell2D(const DuplicatedCell2D & )
+```
+
+
+### operator=
+
+```cpp
+public DuplicatedCell2D & operator=(const DuplicatedCell2D & )
+```
+
+
+### DuplicatedCell2D
+
+```cpp
 public void DuplicatedCell2D(const Grid2D & grid, const Grid2D::CellIndices & cell_indices)
 ```
 
@@ -27,6 +41,13 @@ public void DuplicatedCell2D(const Grid2D & grid, const Grid2D::CellIndices & ce
 
 ```cpp
 public void DuplicatedCell2D(DuplicatedCell2D && other)
+```
+
+
+### operator=
+
+```cpp
+public DuplicatedCell2D & operator=(DuplicatedCell2D && other)
 ```
 
 

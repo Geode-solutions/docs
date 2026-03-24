@@ -16,6 +16,34 @@ const name = words.join('-');
 
 ## Functions
 
+### FDMCurvatureMinimizationImpl
+
+```cpp
+public void FDMCurvatureMinimizationImpl<dimension>(const FDMCurvatureMinimizationImpl<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public FDMCurvatureMinimizationImpl<dimension> & operator=(const FDMCurvatureMinimizationImpl<dimension> & )
+```
+
+
+### FDMCurvatureMinimizationImpl
+
+```cpp
+public void FDMCurvatureMinimizationImpl<dimension>(FDMCurvatureMinimizationImpl<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public FDMCurvatureMinimizationImpl<dimension> & operator=(FDMCurvatureMinimizationImpl<dimension> && )
+```
+
+
 ### use_scalar_function_preconditioning
 
 ```cpp

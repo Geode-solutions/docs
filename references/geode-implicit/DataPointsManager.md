@@ -19,6 +19,20 @@ const name = words.join('-');
 ### DataPointsManager
 
 ```cpp
+public void DataPointsManager<dimension>(const DataPointsManager<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public DataPointsManager<dimension> & operator=(const DataPointsManager<dimension> & )
+```
+
+
+### DataPointsManager
+
+```cpp
 public void DataPointsManager<dimension>()
 ```
 
@@ -27,6 +41,13 @@ public void DataPointsManager<dimension>()
 
 ```cpp
 public void DataPointsManager<dimension>(DataPointsManager<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public DataPointsManager<dimension> & operator=(DataPointsManager<dimension> && other)
 ```
 
 
@@ -40,7 +61,7 @@ public void ~DataPointsManager<dimension>()
 ### add_data_point
 
 ```cpp
-public index_t add_data_point(Point<dimension> position, double value, double weight)
+public index_t add_data_point(const Point<dimension> & position, double value, double weight)
 ```
 
 

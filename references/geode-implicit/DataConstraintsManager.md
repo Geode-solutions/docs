@@ -25,6 +25,20 @@ Inherits from DataPointsManager<dimension>, GradientDataManager<dimension>, Tang
 ### DataConstraintsManager
 
 ```cpp
+public void DataConstraintsManager<>(const DataConstraintsManager<> & )
+```
+
+
+### operator=
+
+```cpp
+public DataConstraintsManager<> & operator=(const DataConstraintsManager<> & )
+```
+
+
+### DataConstraintsManager
+
+```cpp
 public void DataConstraintsManager<>()
 ```
 
@@ -33,6 +47,13 @@ public void DataConstraintsManager<>()
 
 ```cpp
 public void DataConstraintsManager<>(DataConstraintsManager<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public DataConstraintsManager<> & operator=(DataConstraintsManager<dimension> && other)
 ```
 
 

@@ -25,6 +25,20 @@ Inherits from CutGrid2D
 ### CutSurfaceGrid
 
 ```cpp
+public void CutSurfaceGrid(const CutSurfaceGrid & )
+```
+
+
+### operator=
+
+```cpp
+public CutSurfaceGrid & operator=(const CutSurfaceGrid & )
+```
+
+
+### CutSurfaceGrid
+
+```cpp
 public void CutSurfaceGrid(Point origin, array cells_number, array cells_length)
 ```
 
@@ -32,7 +46,7 @@ public void CutSurfaceGrid(Point origin, array cells_number, array cells_length)
 ### CutSurfaceGrid
 
 ```cpp
-public void CutSurfaceGrid(ComputationGrid2D && other)
+public void CutSurfaceGrid(ComputationGrid2D && computation_grid)
 ```
 
 
@@ -40,6 +54,13 @@ public void CutSurfaceGrid(ComputationGrid2D && other)
 
 ```cpp
 public void CutSurfaceGrid(CutSurfaceGrid && other)
+```
+
+
+### operator=
+
+```cpp
+public CutSurfaceGrid & operator=(CutSurfaceGrid && other)
 ```
 
 
@@ -95,7 +116,7 @@ public bool is_cell_duplicate_active(const CellIndices & cell_indices, index_t c
 ### value_node_in_cut_grid
 
 ```cpp
-public optional value_node_in_cut_grid(const CellIndices & cell_id, local_index_t cell_node_id, index_t cell_duplicate_id)
+public optional value_node_in_cut_grid(const CellIndices & cell_indices, local_index_t cell_node_id, index_t cell_duplicate_id)
 ```
 
 
@@ -130,7 +151,7 @@ public optional ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIn
 ### discontinuity_vertex_duplicate
 
 ```cpp
-public optional discontinuity_vertex_duplicate(const CellIndices & cell, const uuid & discontinuity_id, const geode::index_t discontinuity_vertex, const geode::index_t discontinuity_edge, bool edge_towards_vertex)
+public optional discontinuity_vertex_duplicate(const CellIndices & cell, const uuid & discontinuity_id, index_t discontinuity_vertex, index_t discontinuity_edge, bool edge_towards_vertex)
 ```
 
 

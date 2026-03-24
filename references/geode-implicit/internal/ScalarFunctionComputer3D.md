@@ -25,7 +25,35 @@ Inherits from ScalarFunctionComputer<3>
 ### ScalarFunctionComputer3D
 
 ```cpp
+public void ScalarFunctionComputer3D(const ScalarFunctionComputer3D & )
+```
+
+
+### operator=
+
+```cpp
+public ScalarFunctionComputer3D & operator=(const ScalarFunctionComputer3D & )
+```
+
+
+### ScalarFunctionComputer3D
+
+```cpp
 public void ScalarFunctionComputer3D(const BoundingBox3D & computation_bbox, const DataConstraintsManager3D & constraints_manager)
+```
+
+
+### ScalarFunctionComputer3D
+
+```cpp
+public void ScalarFunctionComputer3D(ScalarFunctionComputer3D && other)
+```
+
+
+### operator=
+
+```cpp
+public ScalarFunctionComputer3D & operator=(ScalarFunctionComputer3D && other)
 ```
 
 

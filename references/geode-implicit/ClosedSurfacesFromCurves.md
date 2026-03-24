@@ -19,6 +19,20 @@ const name = words.join('-');
 ### ClosedSurfacesFromCurves
 
 ```cpp
+public void ClosedSurfacesFromCurves(const ClosedSurfacesFromCurves & )
+```
+
+
+### operator=
+
+```cpp
+public ClosedSurfacesFromCurves & operator=(const ClosedSurfacesFromCurves & )
+```
+
+
+### ClosedSurfacesFromCurves
+
+```cpp
 public void ClosedSurfacesFromCurves()
 ```
 
@@ -27,6 +41,13 @@ public void ClosedSurfacesFromCurves()
 
 ```cpp
 public void ClosedSurfacesFromCurves(ClosedSurfacesFromCurves && other)
+```
+
+
+### operator=
+
+```cpp
+public ClosedSurfacesFromCurves & operator=(ClosedSurfacesFromCurves && other)
 ```
 
 

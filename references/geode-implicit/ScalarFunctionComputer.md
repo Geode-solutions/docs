@@ -19,6 +19,20 @@ const name = words.join('-');
 
 ## Functions
 
+### ScalarFunctionComputer
+
+```cpp
+public void ScalarFunctionComputer<dimension>(const ScalarFunctionComputer<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public ScalarFunctionComputer<dimension> & operator=(const ScalarFunctionComputer<dimension> & )
+```
+
+
 ### ~ScalarFunctionComputer
 
 ```cpp
@@ -58,6 +72,20 @@ public void compute_scalar_function(basic_string_view scalar_function_name, doub
 
 ```cpp
 protected void ScalarFunctionComputer<dimension>(const BoundingBox<dimension> & computation_bbox, const DataConstraintsManager<dimension> & constraints_manager)
+```
+
+
+### ScalarFunctionComputer
+
+```cpp
+protected void ScalarFunctionComputer<dimension>(ScalarFunctionComputer<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected ScalarFunctionComputer<dimension> & operator=(ScalarFunctionComputer<dimension> && other)
 ```
 
 

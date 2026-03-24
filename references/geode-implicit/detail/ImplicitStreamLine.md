@@ -19,6 +19,20 @@ const name = words.join('-');
 ### ImplicitStreamLine
 
 ```cpp
+public void ImplicitStreamLine<>(const ImplicitStreamLine<> & )
+```
+
+
+### operator=
+
+```cpp
+public ImplicitStreamLine<> & operator=(const ImplicitStreamLine<> & )
+```
+
+
+### ImplicitStreamLine
+
+```cpp
 public void ImplicitStreamLine<>()
 ```
 
@@ -27,6 +41,13 @@ public void ImplicitStreamLine<>()
 
 ```cpp
 public void ImplicitStreamLine<>(ImplicitStreamLine<> && stream_line)
+```
+
+
+### operator=
+
+```cpp
+public ImplicitStreamLine<> & operator=(ImplicitStreamLine<> && stream_line)
 ```
 
 

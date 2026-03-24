@@ -19,6 +19,20 @@ const name = words.join('-');
 ### StructuralModelSequenceImpliciter
 
 ```cpp
+public void StructuralModelSequenceImpliciter(const StructuralModelSequenceImpliciter & )
+```
+
+
+### operator=
+
+```cpp
+public StructuralModelSequenceImpliciter & operator=(const StructuralModelSequenceImpliciter & )
+```
+
+
+### StructuralModelSequenceImpliciter
+
+```cpp
 public void StructuralModelSequenceImpliciter(ImplicitStructuralModel & structural_model, const std::vector<uuid> & sequence_horizons)
 ```
 
@@ -27,6 +41,13 @@ public void StructuralModelSequenceImpliciter(ImplicitStructuralModel & structur
 
 ```cpp
 public void StructuralModelSequenceImpliciter(StructuralModelSequenceImpliciter && other)
+```
+
+
+### operator=
+
+```cpp
+public StructuralModelSequenceImpliciter & operator=(StructuralModelSequenceImpliciter && other)
 ```
 
 
@@ -41,6 +62,20 @@ public void ~StructuralModelSequenceImpliciter()
 
 ```cpp
 public void add_horizon_data_point_in_block(const uuid & horizon_id, const Block3D & block, const Point3D & point, double weight)
+```
+
+
+### add_gradient_data_in_block
+
+```cpp
+public void add_gradient_data_in_block(const Block3D & block, const Point3D & position, const Vector3D & gradient_value, double weight)
+```
+
+
+### add_tangential_data_in_block
+
+```cpp
+public void add_tangential_data_in_block(const Block3D & block, const Point3D & position, const Vector3D & direction, double weight)
 ```
 
 

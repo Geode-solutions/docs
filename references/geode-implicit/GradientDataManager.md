@@ -19,6 +19,20 @@ const name = words.join('-');
 ### GradientDataManager
 
 ```cpp
+public void GradientDataManager<dimension>(const GradientDataManager<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public GradientDataManager<dimension> & operator=(const GradientDataManager<dimension> & )
+```
+
+
+### GradientDataManager
+
+```cpp
 public void GradientDataManager<dimension>()
 ```
 
@@ -27,6 +41,13 @@ public void GradientDataManager<dimension>()
 
 ```cpp
 public void GradientDataManager<dimension>(GradientDataManager<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public GradientDataManager<dimension> & operator=(GradientDataManager<dimension> && other)
 ```
 
 
@@ -40,7 +61,7 @@ public void ~GradientDataManager<dimension>()
 ### add_gradient_data
 
 ```cpp
-public index_t add_gradient_data(Point<dimension> position, Vector<dimension> gradient_value, double weight)
+public index_t add_gradient_data(const Point<dimension> & position, const Vector<dimension> & gradient_value, double weight)
 ```
 
 

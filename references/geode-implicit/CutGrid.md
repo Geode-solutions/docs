@@ -40,6 +40,20 @@ Inherits from ComputationGrid<dimension>
 
 ## Functions
 
+### CutGrid
+
+```cpp
+public void CutGrid<>(const CutGrid<> & )
+```
+
+
+### operator=
+
+```cpp
+public CutGrid<> & operator=(const CutGrid<> & )
+```
+
+
 ### ~CutGrid
 
 ```cpp
@@ -126,7 +140,7 @@ public optional ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIn
 ### isovalue_goes_through_cell_duplicate
 
 ```cpp
-public bool isovalue_goes_through_cell_duplicate(const CellIndices & cell_id, index_t cell_duplicate_index, double isovalue)
+public bool isovalue_goes_through_cell_duplicate(const CellIndices & cell_indices, index_t cell_duplicate_index, double isovalue)
 ```
 
 
@@ -169,6 +183,13 @@ protected void CutGrid<>(Point<dimension> origin, std::array<index_t, dimension>
 
 ```cpp
 protected void CutGrid<>(CutGrid<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected CutGrid<> & operator=(CutGrid<dimension> && other)
 ```
 
 

@@ -19,6 +19,20 @@ const name = words.join('-');
 ### StructuralModelImpliciter
 
 ```cpp
+public void StructuralModelImpliciter(const StructuralModelImpliciter & )
+```
+
+
+### operator=
+
+```cpp
+public StructuralModelImpliciter & operator=(const StructuralModelImpliciter & )
+```
+
+
+### StructuralModelImpliciter
+
+```cpp
 public void StructuralModelImpliciter(StructuralModel && structural_model, HorizonsStack3D && horizons_stack)
 ```
 
@@ -27,6 +41,13 @@ public void StructuralModelImpliciter(StructuralModel && structural_model, Horiz
 
 ```cpp
 public void StructuralModelImpliciter(StructuralModelImpliciter && other)
+```
+
+
+### operator=
+
+```cpp
+public StructuralModelImpliciter & operator=(StructuralModelImpliciter && other)
 ```
 
 

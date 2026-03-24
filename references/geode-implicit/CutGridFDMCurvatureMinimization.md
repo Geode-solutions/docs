@@ -25,14 +25,35 @@ const name = words.join('-');
 ### CutGridFDMCurvatureMinimization
 
 ```cpp
-public void CutGridFDMCurvatureMinimization<dimension>(CutGrid<dimension> & grid, const DataConstraintsManager<dimension> & data_constraints)
+public void CutGridFDMCurvatureMinimization<dimension>(const CutGridFDMCurvatureMinimization<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public CutGridFDMCurvatureMinimization<dimension> & operator=(const CutGridFDMCurvatureMinimization<dimension> & )
 ```
 
 
 ### CutGridFDMCurvatureMinimization
 
 ```cpp
-public void CutGridFDMCurvatureMinimization<dimension>(CutGridFDMCurvatureMinimization<dimension> && other)
+public void CutGridFDMCurvatureMinimization<dimension>(CutGridFDMCurvatureMinimization<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public CutGridFDMCurvatureMinimization<dimension> & operator=(CutGridFDMCurvatureMinimization<dimension> && )
+```
+
+
+### CutGridFDMCurvatureMinimization
+
+```cpp
+public void CutGridFDMCurvatureMinimization<dimension>(CutGrid<dimension> & grid, const DataConstraintsManager<dimension> & data_constraints)
 ```
 
 

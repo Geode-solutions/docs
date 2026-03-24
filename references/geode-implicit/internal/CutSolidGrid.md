@@ -25,6 +25,20 @@ Inherits from CutGrid3D
 ### CutSolidGrid
 
 ```cpp
+public void CutSolidGrid(const CutSolidGrid & )
+```
+
+
+### operator=
+
+```cpp
+public CutSolidGrid & operator=(const CutSolidGrid & )
+```
+
+
+### CutSolidGrid
+
+```cpp
 public void CutSolidGrid(Point origin, array cells_number, array cells_length)
 ```
 
@@ -32,7 +46,7 @@ public void CutSolidGrid(Point origin, array cells_number, array cells_length)
 ### CutSolidGrid
 
 ```cpp
-public void CutSolidGrid(ComputationGrid3D && other)
+public void CutSolidGrid(ComputationGrid3D && computation_grid)
 ```
 
 
@@ -40,6 +54,13 @@ public void CutSolidGrid(ComputationGrid3D && other)
 
 ```cpp
 public void CutSolidGrid(CutSolidGrid && other)
+```
+
+
+### operator=
+
+```cpp
+public CutSolidGrid & operator=(CutSolidGrid && other)
 ```
 
 
@@ -95,7 +116,7 @@ public bool is_cell_duplicate_active(const CellIndices & cell_indices, index_t c
 ### value_node_in_cut_grid
 
 ```cpp
-public optional value_node_in_cut_grid(const CellIndices & cell_id, local_index_t cell_node_id, index_t cell_duplicate_id)
+public optional value_node_in_cut_grid(const CellIndices & cell_indices, local_index_t cell_node_id, index_t cell_duplicate_id)
 ```
 
 

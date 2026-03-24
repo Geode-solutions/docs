@@ -22,6 +22,20 @@ const name = words.join('-');
 ### CutGridScalarFunction
 
 ```cpp
+public void CutGridScalarFunction<dimension>(const CutGridScalarFunction<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public CutGridScalarFunction<dimension> & operator=(const CutGridScalarFunction<dimension> & )
+```
+
+
+### CutGridScalarFunction
+
+```cpp
 public void CutGridScalarFunction<dimension>(const CutGrid<dimension> & grid)
 ```
 
@@ -30,6 +44,13 @@ public void CutGridScalarFunction<dimension>(const CutGrid<dimension> & grid)
 
 ```cpp
 public void CutGridScalarFunction<dimension>(CutGridScalarFunction<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public CutGridScalarFunction<dimension> & operator=(CutGridScalarFunction<dimension> && other)
 ```
 
 

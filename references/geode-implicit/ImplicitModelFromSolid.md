@@ -19,6 +19,20 @@ const name = words.join('-');
 ### ImplicitModelFromSolid
 
 ```cpp
+public void ImplicitModelFromSolid(const ImplicitModelFromSolid & )
+```
+
+
+### operator=
+
+```cpp
+public ImplicitModelFromSolid & operator=(const ImplicitModelFromSolid & )
+```
+
+
+### ImplicitModelFromSolid
+
+```cpp
 public void ImplicitModelFromSolid(std::unique_ptr<TetrahedralSolid3D> && solid, HorizonsStack3D && horizon_stack)
 ```
 
@@ -27,6 +41,13 @@ public void ImplicitModelFromSolid(std::unique_ptr<TetrahedralSolid3D> && solid,
 
 ```cpp
 public void ImplicitModelFromSolid(ImplicitModelFromSolid && other)
+```
+
+
+### operator=
+
+```cpp
+public ImplicitModelFromSolid & operator=(ImplicitModelFromSolid && other)
 ```
 
 

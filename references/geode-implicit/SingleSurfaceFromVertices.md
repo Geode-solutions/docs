@@ -19,6 +19,20 @@ const name = words.join('-');
 ### SingleSurfaceFromVertices
 
 ```cpp
+public void SingleSurfaceFromVertices(const SingleSurfaceFromVertices & )
+```
+
+
+### operator=
+
+```cpp
+public SingleSurfaceFromVertices & operator=(const SingleSurfaceFromVertices & )
+```
+
+
+### SingleSurfaceFromVertices
+
+```cpp
 public void SingleSurfaceFromVertices()
 ```
 
@@ -27,6 +41,13 @@ public void SingleSurfaceFromVertices()
 
 ```cpp
 public void SingleSurfaceFromVertices(SingleSurfaceFromVertices && other)
+```
+
+
+### operator=
+
+```cpp
+public SingleSurfaceFromVertices & operator=(SingleSurfaceFromVertices && other)
 ```
 
 

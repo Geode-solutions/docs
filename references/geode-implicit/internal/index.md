@@ -66,7 +66,7 @@ const std::array<int, dimension> & derivative_direction(geode::local_index_t axi
 ### segments_in_grid
 
 ```cpp
-std::vector<SegmentInGrid<dimension> > segments_in_grid(const Point<dimension> & p0, const Point<dimension> & p1, const ComputationGrid<dimension> & grid)
+std::vector<SegmentInGrid<dimension> > segments_in_grid(const Point<dimension> & p_0, const Point<dimension> & p_1, const ComputationGrid<dimension> & grid)
 ```
 
 
@@ -126,7 +126,7 @@ vector save_cut_surface_grid(const CutSurfaceGrid & cut_surface_grid, basic_stri
 ```
 
 
- API function for saving a CutSurfaceGrid. The adequate saver is called depending on the given filename         extension.
+ API function for saving a CutSurfaceGrid. The adequate saver is called depending on the given filename     extension.
 
 **edged_curve** [in] CutSurfaceGrid to save.
 

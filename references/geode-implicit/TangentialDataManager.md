@@ -22,6 +22,20 @@ const name = words.join('-');
 ### TangentialDataManager
 
 ```cpp
+public void TangentialDataManager<dimension>(const TangentialDataManager<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public TangentialDataManager<dimension> & operator=(const TangentialDataManager<dimension> & )
+```
+
+
+### TangentialDataManager
+
+```cpp
 public void TangentialDataManager<dimension>()
 ```
 
@@ -30,6 +44,13 @@ public void TangentialDataManager<dimension>()
 
 ```cpp
 public void TangentialDataManager<dimension>(TangentialDataManager<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public TangentialDataManager<dimension> & operator=(TangentialDataManager<dimension> && other)
 ```
 
 
@@ -43,7 +64,7 @@ public void ~TangentialDataManager<dimension>()
 ### add_tangential_data
 
 ```cpp
-public index_t add_tangential_data(Point<dimension> position, Vector<dimension> tangential_direction, double weight)
+public index_t add_tangential_data(const Point<dimension> & position, const Vector<dimension> & tangential_direction, double weight)
 ```
 
 

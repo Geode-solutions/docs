@@ -19,6 +19,20 @@ const name = words.join('-');
 ### SingleSurfaceImplicitation
 
 ```cpp
+public void SingleSurfaceImplicitation(const SingleSurfaceImplicitation & )
+```
+
+
+### operator=
+
+```cpp
+public SingleSurfaceImplicitation & operator=(const SingleSurfaceImplicitation & )
+```
+
+
+### SingleSurfaceImplicitation
+
+```cpp
 public void SingleSurfaceImplicitation()
 ```
 
@@ -27,6 +41,13 @@ public void SingleSurfaceImplicitation()
 
 ```cpp
 public void SingleSurfaceImplicitation(SingleSurfaceImplicitation && other)
+```
+
+
+### operator=
+
+```cpp
+public SingleSurfaceImplicitation & operator=(SingleSurfaceImplicitation && other)
 ```
 
 

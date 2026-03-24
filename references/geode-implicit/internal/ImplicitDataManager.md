@@ -43,6 +43,20 @@ Inherits from DataConstraintsManager<dimension>
 ### ImplicitDataManager
 
 ```cpp
+public void ImplicitDataManager<>(const ImplicitDataManager<> & )
+```
+
+
+### operator=
+
+```cpp
+public ImplicitDataManager<> & operator=(const ImplicitDataManager<> & )
+```
+
+
+### ImplicitDataManager
+
+```cpp
 public void ImplicitDataManager<>()
 ```
 
@@ -51,6 +65,13 @@ public void ImplicitDataManager<>()
 
 ```cpp
 public void ImplicitDataManager<>(ImplicitDataManager<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+public ImplicitDataManager<dimension> & operator=(ImplicitDataManager<dimension> && other)
 ```
 
 

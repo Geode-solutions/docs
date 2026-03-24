@@ -25,7 +25,35 @@ Inherits from ScalarFunctionComputer<2>
 ### ScalarFunctionComputer2D
 
 ```cpp
+public void ScalarFunctionComputer2D(const ScalarFunctionComputer2D & )
+```
+
+
+### operator=
+
+```cpp
+public ScalarFunctionComputer2D & operator=(const ScalarFunctionComputer2D & )
+```
+
+
+### ScalarFunctionComputer2D
+
+```cpp
 public void ScalarFunctionComputer2D(const BoundingBox2D & computation_bbox, const DataConstraintsManager2D & constraints_manager)
+```
+
+
+### ScalarFunctionComputer2D
+
+```cpp
+public void ScalarFunctionComputer2D(ScalarFunctionComputer2D && other)
+```
+
+
+### operator=
+
+```cpp
+public ScalarFunctionComputer2D & operator=(ScalarFunctionComputer2D && other)
 ```
 
 

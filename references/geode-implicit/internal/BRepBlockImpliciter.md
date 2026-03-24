@@ -19,6 +19,20 @@ const name = words.join('-');
 ### BRepBlockImpliciter
 
 ```cpp
+public void BRepBlockImpliciter(const BRepBlockImpliciter & )
+```
+
+
+### operator=
+
+```cpp
+public BRepBlockImpliciter & operator=(const BRepBlockImpliciter & )
+```
+
+
+### BRepBlockImpliciter
+
+```cpp
 public void BRepBlockImpliciter(BRep & model, const Block3D & block, const ImplicitDataManager3D & data_manager)
 ```
 
@@ -27,6 +41,13 @@ public void BRepBlockImpliciter(BRep & model, const Block3D & block, const Impli
 
 ```cpp
 public void BRepBlockImpliciter(BRepBlockImpliciter && block_modeler)
+```
+
+
+### operator=
+
+```cpp
+public BRepBlockImpliciter & operator=(BRepBlockImpliciter && other)
 ```
 
 

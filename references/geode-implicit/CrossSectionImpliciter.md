@@ -19,6 +19,20 @@ const name = words.join('-');
 ### CrossSectionImpliciter
 
 ```cpp
+public void CrossSectionImpliciter(const CrossSectionImpliciter & )
+```
+
+
+### operator=
+
+```cpp
+public CrossSectionImpliciter & operator=(const CrossSectionImpliciter & )
+```
+
+
+### CrossSectionImpliciter
+
+```cpp
 public void CrossSectionImpliciter(CrossSection && cross_section, HorizonsStack2D && horizons_stack)
 ```
 
@@ -27,6 +41,13 @@ public void CrossSectionImpliciter(CrossSection && cross_section, HorizonsStack2
 
 ```cpp
 public void CrossSectionImpliciter(CrossSectionImpliciter && other)
+```
+
+
+### operator=
+
+```cpp
+public CrossSectionImpliciter & operator=(CrossSectionImpliciter && other)
 ```
 
 

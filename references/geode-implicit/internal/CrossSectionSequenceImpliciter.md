@@ -19,7 +19,21 @@ const name = words.join('-');
 ### CrossSectionSequenceImpliciter
 
 ```cpp
-public void CrossSectionSequenceImpliciter(const CrossSection & structural_model, const std::vector<uuid> & sequence_horizons)
+public void CrossSectionSequenceImpliciter(const CrossSectionSequenceImpliciter & )
+```
+
+
+### operator=
+
+```cpp
+public CrossSectionSequenceImpliciter & operator=(const CrossSectionSequenceImpliciter & )
+```
+
+
+### CrossSectionSequenceImpliciter
+
+```cpp
+public void CrossSectionSequenceImpliciter(const CrossSection & cross_section, const std::vector<uuid> & sequence_horizons)
 ```
 
 
@@ -27,6 +41,13 @@ public void CrossSectionSequenceImpliciter(const CrossSection & structural_model
 
 ```cpp
 public void CrossSectionSequenceImpliciter(CrossSectionSequenceImpliciter && other)
+```
+
+
+### operator=
+
+```cpp
+public CrossSectionSequenceImpliciter & operator=(CrossSectionSequenceImpliciter && other)
 ```
 
 
