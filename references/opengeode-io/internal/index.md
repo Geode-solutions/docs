@@ -22,6 +22,7 @@ const name = words.join('-');
 * [BMPInput](BMPInput.md)
 * [DXFInput](DXFInput.md)
 * [GEXFOutput](GEXFOutput.md)
+* [GIDOutput](GIDOutput.md)
 * [GMSHEdge](GMSHEdge.md)
 * [GMSHElement](GMSHElement.md)
 * [GMSHHexahedron](GMSHHexahedron.md)
