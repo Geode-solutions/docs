@@ -11,38 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BoundingBoxSampler
+# class IntensityTerm
 
 
-# class BoundingBoxSampler
+```cpp
+Inherits from SingleObjectTerm<OwnerSegment2D, std::function<double (const OwnerSegment2D &, const SpatialDomain<OwnerSegment2D::dim> &)> >
+```
 
-
-# class BoundingBoxSampler
-
-
-# class BoundingBoxSampler
 
 
 ## Functions
 
-### BoundingBoxSampler
+### IntensityTerm
 
 ```cpp
-public void BoundingBoxSampler<dimension>(const BoundingBox<dimension> & box)
-```
-
-
-### ~BoundingBoxSampler
-
-```cpp
-public void ~BoundingBoxSampler<dimension>()
-```
-
-
-### sample_uniform
-
-```cpp
-public Point<dimension> sample_uniform(RandomEngine & engine)
+public void IntensityTerm(basic_string_view name, double lambda, vector targeted_set_ids, double caracteristic_length, const SpatialDomain<OwnerSegment2D::dim> & domain)
 ```
 
 

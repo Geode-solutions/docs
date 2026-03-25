@@ -11,40 +11,35 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BoundingBoxSampler
-
-
-# class BoundingBoxSampler
-
-
-# class BoundingBoxSampler
-
-
-# class BoundingBoxSampler
+# struct EnergyScale
 
 
 ## Functions
 
-### BoundingBoxSampler
+### EnergyScale
 
 ```cpp
-public void BoundingBoxSampler<dimension>(const BoundingBox<dimension> & box)
+public void EnergyScale(double param)
 ```
 
 
-### ~BoundingBoxSampler
+### contribution
 
 ```cpp
-public void ~BoundingBoxSampler<dimension>()
+public double contribution(double multiplier)
 ```
 
 
-### sample_uniform
+ Compute energy contribution for a given statistic multiplier
+
+### parameter
 
 ```cpp
-public Point<dimension> sample_uniform(RandomEngine & engine)
+public double parameter()
 ```
 
+
+ Return original parameter (gamma)
 
 
 
