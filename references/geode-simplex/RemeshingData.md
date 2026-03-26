@@ -82,6 +82,13 @@ public Modifier & output_modifier()
 ```
 
 
+### background_to_output_unique_vertex_mapping
+
+```cpp
+public BijectiveMapping<index_t> & background_to_output_unique_vertex_mapping()
+```
+
+
 ### metric
 
 ```cpp
@@ -107,6 +114,13 @@ public const uuid & output_id(const ComponentID & component)
 
 ```cpp
 public const uuid & from_output_id(const ComponentID & component)
+```
+
+
+### update_unique_vertices
+
+```cpp
+public void update_unique_vertices(const Component & old_component, const Component & new_component)
 ```
 
 

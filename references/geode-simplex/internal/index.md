@@ -67,6 +67,13 @@ const name = words.join('-');
 ### update_unique_vertices
 
 ```cpp
+void update_unique_vertices(Builder & builder, Modifier & modifier, const geode::internal::RemeshedCMV & info)
+```
+
+
+### update_unique_vertices
+
+```cpp
 void update_unique_vertices(Builder & builder, const geode::internal::RemeshedCMV & info)
 ```
 
@@ -187,6 +194,13 @@ void remesh_lines_impl(Data & data)
 
 ```cpp
 typename Data::Tasks sample_lines_impl(Data & data)
+```
+
+
+### treat_inactive_lines
+
+```cpp
+void treat_inactive_lines(Data & data)
 ```
 
 

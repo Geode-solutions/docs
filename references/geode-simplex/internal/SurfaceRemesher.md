@@ -33,6 +33,13 @@ public RemeshedCMV remesh()
 ```
 
 
+### treat_inactive_surface
+
+```cpp
+public void treat_inactive_surface()
+```
+
+
 ### SurfaceRemesher
 
 ```cpp
