@@ -65,6 +65,20 @@ public void add_horizon_data_point_in_surface(const uuid & horizon_id, const Sur
 ```
 
 
+### add_gradient_data_in_surface
+
+```cpp
+public void add_gradient_data_in_surface(const Surface2D & surface, const Point2D & position, const Vector2D & gradient_value, double weight)
+```
+
+
+### add_tangential_data_in_surface
+
+```cpp
+public void add_tangential_data_in_surface(const Surface2D & surface, const Point2D & position, const Vector2D & direction, double weight)
+```
+
+
 ### set_horizon_implicit_value
 
 ```cpp

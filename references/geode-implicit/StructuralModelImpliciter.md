@@ -114,6 +114,20 @@ public void add_horizon_data_surface(const Horizon3D & horizon, const SurfaceMes
 ```
 
 
+### add_tangential_directional_data
+
+```cpp
+public void add_tangential_directional_data(const PointSet3D & tangential_data, basic_string_view vector_attribute_name, basic_string_view weight_attribute_name)
+```
+
+
+### add_normal_directional_data
+
+```cpp
+public void add_normal_directional_data(const PointSet3D & normal_data, basic_string_view vector_attribute_name, basic_string_view weight_attribute_name)
+```
+
+
 ### build
 
 ```cpp
