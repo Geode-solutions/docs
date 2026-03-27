@@ -139,13 +139,6 @@ void remesh_lines(SectionRemeshingData & data)
 ```
 
 
-### repair_lines
-
-```cpp
-void repair_lines(SectionRemeshingData & data)
-```
-
-
 ### relax_surfaces
 
 ```cpp
@@ -304,13 +297,6 @@ BRepRemeshWithoutBlockValidity is_brep_without_block_remeshable(const BRep & bre
 
 ```cpp
 void remesh_lines(BRepRemeshingData & data)
-```
-
-
-### repair_lines
-
-```cpp
-void repair_lines(BRepRemeshingData & data)
 ```
 
 

@@ -47,7 +47,6 @@ const name = words.join('-');
 * [RemeshAlgo](RemeshAlgo.md)
 * [RemeshedCMV](RemeshedCMV.md)
 * [RemeshedSurface](RemeshedSurface.md)
-* [RepairBRepSurfaces](RepairBRepSurfaces.md)
 * [Sampler](Sampler.md)
 * [SolidEdge](SolidEdge.md)
 * [SolidVertex](SolidVertex.md)
@@ -201,13 +200,6 @@ typename Data::Tasks sample_lines_impl(Data & data)
 
 ```cpp
 void treat_inactive_lines(Data & data)
-```
-
-
-### repair_lines
-
-```cpp
-void repair_lines(Data & data)
 ```
 
 
