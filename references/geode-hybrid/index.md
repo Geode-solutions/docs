@@ -22,7 +22,14 @@ const name = words.join('-');
 
 ## Records
 
+* [FieldLines](FieldLines.md)
+* [FrameFieldParameterization](FrameFieldParameterization.md)
+* [FrameFieldSmoother](FrameFieldSmoother.md)
+* [FrameField](FrameField.md)
 * [HybridBRepLibrary](HybridBRepLibrary.md)
+* [HybridFrameFieldLibrary](HybridFrameFieldLibrary.md)
+* [MeshElement](MeshElement.md)
+* [uuid](uuid.md)
 
 
 ## Functions
