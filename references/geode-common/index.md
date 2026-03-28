@@ -70,6 +70,7 @@ const name = words.join('-');
 * [CommonModifierPointSetLibrary](CommonModifierPointSetLibrary.md)
 * [CommonModifierSolidLibrary](CommonModifierSolidLibrary.md)
 * [CommonModifierSurfaceLibrary](CommonModifierSurfaceLibrary.md)
+* [CommonNumericsLibrary](CommonNumericsLibrary.md)
 * [CommonOrchestratorCommonLibrary](CommonOrchestratorCommonLibrary.md)
 * [CommonOrchestratorModelLibrary](CommonOrchestratorModelLibrary.md)
 * [CommonOrchestratorSolidLibrary](CommonOrchestratorSolidLibrary.md)
@@ -106,6 +107,7 @@ const name = words.join('-');
 * [Invalidity](Invalidity.md)
 * [IsotropicMetric](IsotropicMetric.md)
 * [LineCollapseEdgeValidities](LineCollapseEdgeValidities.md)
+* [LinearSolver](LinearSolver.md)
 * [Mapping](Mapping.md)
 * [Metric](Metric.md)
 * [ModelCollapseEdgeValidity](ModelCollapseEdgeValidity.md)
@@ -2083,6 +2085,26 @@ void shift_optimize_triangulated_surface_elements(TriangulatedSurfaceConstraintM
 ```
 
 
+### minimal_metric
+
+```cpp
+double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
+```
+
+### compute_constant_metric_from_maximal_edge_length
+
+```cpp
+ConstantMetric compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
+```
+
+
+### compute_grid_metric_from_maximal_edge_length
+
+```cpp
+SolidGridMetric compute_grid_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
+```
+
+
 ### colocalise_brep_unique_vertices
 
 ```cpp
@@ -2115,26 +2137,6 @@ FixedArray mesh_partitionner(const SurfaceMesh<dimension> & mesh, const Partitio
 
 ```cpp
 FixedArray mesh_partitionner(const SolidMesh3D & mesh, const PartitionnerParameters & parameters)
-```
-
-
-### minimal_metric
-
-```cpp
-double minimal_metric(const CustomGridMetric3D & metric, const Tetrahedron & tetrahedron)
-```
-
-### compute_constant_metric_from_maximal_edge_length
-
-```cpp
-ConstantMetric compute_constant_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
-```
-
-
-### compute_grid_metric_from_maximal_edge_length
-
-```cpp
-SolidGridMetric compute_grid_metric_from_maximal_edge_length(const SolidMesh3D & mesh)
 ```
 
 
@@ -2236,6 +2238,31 @@ SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & se
 
 ```cpp
 SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & section, const Surface2D & surface, const PolygonEdge & edge, const Point2D & point)
+```
+
+
+### mean_plane_around_points
+
+```cpp
+OwnerPlane mean_plane_around_points(const PointSet3D & mesh)
+```
+
+
+ Compute mean plane around mesh Points with Least Squares
+
+**mesh** [in] Input mesh
+
+### mean_plane_around_curve_points
+
+```cpp
+OwnerPlane mean_plane_around_curve_points(const EdgedCurve3D & mesh)
+```
+
+
+### mean_plane_around_surface_points
+
+```cpp
+OwnerPlane mean_plane_around_surface_points(const SurfaceMesh3D & mesh)
 ```
 
 

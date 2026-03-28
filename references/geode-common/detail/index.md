@@ -217,6 +217,33 @@ flat_hash_map triangles_after_collapse_edge(const Section & section, const struc
 ```
 
 
+### mean_plane_around_points
+
+```cpp
+OwnerPlane mean_plane_around_points(const PointSet3D & mesh, absl::Span<const geode::index_t> mesh_vertices_indices)
+```
+
+
+ Compute mean plane around mesh Points with Least Squares, using only the points with given indices.
+
+**mesh** [in] Input mesh
+
+**mesh_vertices_indices** [in] Indices of mesh vertices to use
+
+### mean_plane_around_curve_points
+
+```cpp
+OwnerPlane mean_plane_around_curve_points(const EdgedCurve3D & mesh, absl::Span<const geode::index_t> mesh_vertices_indices)
+```
+
+
+### mean_plane_around_surface_points
+
+```cpp
+OwnerPlane mean_plane_around_surface_points(const SurfaceMesh3D & mesh, absl::Span<const geode::index_t> mesh_vertices_indices)
+```
+
+
 ### find_containing_tetrahedron
 
 ```cpp
