@@ -14,12 +14,18 @@ const name = words.join('-');
 # class BackgroundBRepInserter
 
 
+## Records
+
+Options
+
+
+
 ## Functions
 
 ### BackgroundBRepInserter
 
 ```cpp
-public void BackgroundBRepInserter(ModifiableObject background_brep, BackgroundBRepBuilder & background_builder, BRepBuilder & builder)
+public void BackgroundBRepInserter(ModifiableObject background_brep, BackgroundBRepBuilder & background_builder, BRepBuilder & builder, const Options & options)
 ```
 
 

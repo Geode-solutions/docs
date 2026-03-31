@@ -14,12 +14,18 @@ const name = words.join('-');
 # class BackgroundSolidInserter
 
 
+## Records
+
+Options
+
+
+
 ## Functions
 
 ### BackgroundSolidInserter
 
 ```cpp
-public void BackgroundSolidInserter(ModifiableObject solid, BackgroundSolidBuilder & builder, TetrahedralSolidBuilder3D & solid_builder, const Metric3D & metric)
+public void BackgroundSolidInserter(ModifiableObject solid, BackgroundSolidBuilder & builder, TetrahedralSolidBuilder3D & solid_builder, const Options & options)
 ```
 
 
