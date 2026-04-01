@@ -11,15 +11,31 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct CrossSectionImplicitationParameters
+# struct DirectionalDataAttributes
 
 
 ## Members
 
 ```cpp
-public local_index_t max_nb_multigrid_steps
+public basic_string_view vector_attribute_name
 
 ```
+
+```cpp
+public basic_string_view weight_attribute_name
+
+```
+
+
+
+## Functions
+
+### DirectionalDataAttributes
+
+```cpp
+public void DirectionalDataAttributes()
+```
+
 
 
 

@@ -34,6 +34,7 @@ const name = words.join('-');
 * [CutGrid](CutGrid.md)
 * [DataConstraintsManager](DataConstraintsManager.md)
 * [DataPointsManager](DataPointsManager.md)
+* [DirectionalDataAttributes](DirectionalDataAttributes.md)
 * [EdgeVertex](EdgeVertex.md)
 * [GradientDataManager](GradientDataManager.md)
 * [GridScalarFunctionExpliciter2D](GridScalarFunctionExpliciter2D.md)

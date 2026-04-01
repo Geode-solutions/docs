@@ -107,17 +107,17 @@ public void add_horizon_data_curve(const Horizon2D & horizon, const EdgedCurve2D
 ```
 
 
-### add_tangential_directional_data
+### add_horizon_tangential_directional_data
 
 ```cpp
-public void add_tangential_directional_data(const PointSet2D & tangential_data, basic_string_view vector_attribute_name, basic_string_view weight_attribute_name)
+public void add_horizon_tangential_directional_data(const Horizon2D & horizon, const PointSet2D & tangential_data, const DirectionalDataAttributes & attribute_names)
 ```
 
 
-### add_normal_directional_data
+### add_horizon_normal_directional_data
 
 ```cpp
-public void add_normal_directional_data(const PointSet2D & normal_data, basic_string_view vector_attribute_name, basic_string_view weight_attribute_name)
+public void add_horizon_normal_directional_data(const Horizon2D & horizon, const PointSet2D & normal_data, const DirectionalDataAttributes & attribute_names)
 ```
 
 
