@@ -120,7 +120,7 @@ public void load_unique_vertices(basic_string_view directory)
 ### delete_isolated_vertices
 
 ```cpp
-public vector delete_isolated_vertices()
+public std::vector<index_t> delete_isolated_vertices()
 ```
 
 
