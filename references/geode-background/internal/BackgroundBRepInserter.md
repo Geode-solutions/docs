@@ -25,6 +25,34 @@ Options
 ### BackgroundBRepInserter
 
 ```cpp
+public void BackgroundBRepInserter(const BackgroundBRepInserter & )
+```
+
+
+### operator=
+
+```cpp
+public BackgroundBRepInserter & operator=(const BackgroundBRepInserter & )
+```
+
+
+### BackgroundBRepInserter
+
+```cpp
+public void BackgroundBRepInserter(BackgroundBRepInserter && )
+```
+
+
+### operator=
+
+```cpp
+public BackgroundBRepInserter & operator=(BackgroundBRepInserter && )
+```
+
+
+### BackgroundBRepInserter
+
+```cpp
 public void BackgroundBRepInserter(ModifiableObject background_brep, BackgroundBRepBuilder & background_builder, BRepBuilder & builder, const Options & options)
 ```
 
@@ -67,7 +95,7 @@ public flat_hash_map insert_surface_triangles(const TriangulatedSurface3D & mesh
 ### insert_scalar_function_isovalues
 
 ```cpp
-public flat_hash_map insert_scalar_function_isovalues(basic_string_view function_name, Span isovalues)
+public btree_map insert_scalar_function_isovalues(basic_string_view function_name, Span isovalues)
 ```
 
 

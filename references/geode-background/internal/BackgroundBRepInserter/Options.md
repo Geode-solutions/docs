@@ -67,6 +67,13 @@ public void ~Options()
 ```
 
 
+### ensure_initialized
+
+```cpp
+public void ensure_initialized(const BRep & brep)
+```
+
+
 ### options
 
 ```cpp
