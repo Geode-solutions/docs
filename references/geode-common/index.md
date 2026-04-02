@@ -2241,31 +2241,6 @@ SectionElementsAfterCollapseEdge elements_after_collapse_edge(const Section & se
 ```
 
 
-### mean_plane_around_points
-
-```cpp
-OwnerPlane mean_plane_around_points(const PointSet3D & mesh)
-```
-
-
- Compute mean plane around mesh Points with Least Squares
-
-**mesh** [in] Input mesh
-
-### mean_plane_around_curve_points
-
-```cpp
-OwnerPlane mean_plane_around_curve_points(const EdgedCurve3D & mesh)
-```
-
-
-### mean_plane_around_surface_points
-
-```cpp
-OwnerPlane mean_plane_around_surface_points(const SurfaceMesh3D & mesh)
-```
-
-
 ### AbslHashValue
 
 ```cpp

@@ -18,8 +18,6 @@ const name = words.join('-');
 
 Coefficient
 
-Impl
-
 
 
 ## Functions
@@ -58,13 +56,11 @@ public LinearSolver & operator=(LinearSolver && )
 public void LinearSolver(index_t nb_variables)
 ```
 
-
 ### ~LinearSolver
 
 ```cpp
 public void ~LinearSolver()
 ```
-
 
 ### nb_variables
 
@@ -72,13 +68,11 @@ public void ~LinearSolver()
 public index_t nb_variables()
 ```
 
-
 ### variable
 
 ```cpp
 public double variable(index_t variable)
 ```
-
 
 ### set_variable
 
@@ -86,13 +80,11 @@ public double variable(index_t variable)
 public void set_variable(index_t variable, double value)
 ```
 
-
 ### lock_variable
 
 ```cpp
 public void lock_variable(index_t variable)
 ```
-
 
 ### is_variable_locked
 
@@ -100,13 +92,11 @@ public void lock_variable(index_t variable)
 public bool is_variable_locked(index_t variable)
 ```
 
-
 ### create_system
 
 ```cpp
 public void create_system(index_t nb_rows)
 ```
-
 
 ### add_coefficient
 
@@ -114,13 +104,11 @@ public void create_system(index_t nb_rows)
 public void add_coefficient(const Coefficient & coefficient)
 ```
 
-
 ### add_rhs
 
 ```cpp
 public void add_rhs(index_t row, double value)
 ```
-
 
 ### resize_nb_rows
 
@@ -128,13 +116,11 @@ public void add_rhs(index_t row, double value)
 public void resize_nb_rows(index_t new_nb_rows)
 ```
 
-
 ### solve
 
 ```cpp
 public void solve()
 ```
-
 
 
 
