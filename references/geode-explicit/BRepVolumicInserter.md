@@ -44,6 +44,13 @@ public void BRepVolumicInserter(BRepVolumicInserter && inserter)
 ```
 
 
+### operator=
+
+```cpp
+public BRepVolumicInserter & operator=(BRepVolumicInserter && inserter)
+```
+
+
 ### ~BRepVolumicInserter
 
 ```cpp
