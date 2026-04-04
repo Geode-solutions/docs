@@ -53,28 +53,28 @@ public EdgeMacroInfoConfig edge_configuration(index_t edge_id, const BackgroundS
 ### add_macro_facet_to_background_solid_facet
 
 ```cpp
-public void add_macro_facet_to_background_solid_facet(const MeshPolygon & macro_facet, index_t background_solid_facet_id, PassKey )
+public void add_macro_facet_to_background_solid_facet(const MeshPolygon & macro_facet, index_t background_solid_facet_id, MacroInfo3DKey )
 ```
 
 
 ### add_macro_facet_to_background_solid_vertices
 
 ```cpp
-public void add_macro_facet_to_background_solid_vertices(const MeshPolygon & macro_facet, Span background_solid_vertex_ids, PassKey )
+public void add_macro_facet_to_background_solid_vertices(const MeshPolygon & macro_facet, Span background_solid_vertex_ids, MacroInfo3DKey )
 ```
 
 
 ### remove_macro_facet_from_background_solid_facet
 
 ```cpp
-public void remove_macro_facet_from_background_solid_facet(const MeshPolygon & macro_facet, index_t background_solid_facet_id, PassKey )
+public void remove_macro_facet_from_background_solid_facet(const MeshPolygon & macro_facet, index_t background_solid_facet_id, MacroInfo3DKey )
 ```
 
 
 ### remove_macro_facet_from_background_solid_vertices
 
 ```cpp
-public void remove_macro_facet_from_background_solid_vertices(const MeshPolygon & macro_facet, Span background_solid_vertex_ids, PassKey )
+public void remove_macro_facet_from_background_solid_vertices(const MeshPolygon & macro_facet, Span background_solid_vertex_ids, MacroInfo3DKey )
 ```
 
 
@@ -116,7 +116,7 @@ protected void clean_background_solid_data_base(AttributeManager & mesh_vertex_a
 ### edge_incident_macro_facets
 
 ```cpp
-protected absl::flat_hash_map<index_t, std::vector<MeshPolygon> > edge_incident_macro_facets(const std::array<index_t, 2> & edge_vertices, const BackgroundSolid & background_solid)
+protected flat_hash_map edge_incident_macro_facets(const std::array<index_t, 2> & edge_vertices, const BackgroundSolid & background_solid)
 ```
 
 

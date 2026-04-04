@@ -95,7 +95,7 @@ public flat_hash_map insert_surface_triangles(const TriangulatedSurface3D & mesh
 ### insert_scalar_function_isovalues
 
 ```cpp
-public btree_map insert_scalar_function_isovalues(basic_string_view function_name, Span isovalues)
+public linked_hash_map insert_scalar_function_isovalues(basic_string_view function_name, Span isovalues)
 ```
 
 
