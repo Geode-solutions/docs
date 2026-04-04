@@ -40,7 +40,7 @@ public void analyze_graph(bool parallel)
 ### process_subgraphs
 
 ```cpp
-public flat_hash_map process_subgraphs(SubGraphAction & action)
+public linked_hash_map process_subgraphs(SubGraphAction & action)
 ```
 
 
