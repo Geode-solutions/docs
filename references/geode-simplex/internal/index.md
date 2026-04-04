@@ -231,5 +231,12 @@ void smooth_vertices(BackgroundBRepGeometricConstraintModifier & constraint_modi
 ```
 
 
+### pre_process_meshing_step
+
+```cpp
+void pre_process_meshing_step(const BRep & brep, BRepGeometricModifier & modifier)
+```
+
+
 
 

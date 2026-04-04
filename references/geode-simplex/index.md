@@ -258,13 +258,6 @@ flat_hash_map sample_lines(BRepSamplingData & data)
 ```
 
 
-### mesh_brep_empty_blocks
-
-```cpp
-void mesh_brep_empty_blocks(BRep & brep)
-```
-
-
 ### is_triangulated_surface_remeshable
 
 ```cpp
