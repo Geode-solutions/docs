@@ -253,14 +253,14 @@ void add_mappings_in_multi_mappings(std::vector<MultiMapping<T> > & multi_mappin
 ### process_mapping_element
 
 ```cpp
-void process_mapping_element(const geode::Mapping<T> & element, absl::flat_hash_set<T> & to_remove, absl::flat_hash_map<T, T> & new_to_old, const T & )
+void process_mapping_element(const geode::Mapping<T> & element, absl::linked_hash_set<T> & to_remove, absl::linked_hash_map<T, T> & new_to_old, const T & )
 ```
 
 
 ### process_mapping_element
 
 ```cpp
-void process_mapping_element(geode::MultiMapping<T> & element, absl::flat_hash_set<T> & to_remove, absl::flat_hash_map<T, absl::InlinedVector<T, 1> > & new_to_olds, const T & no_value)
+void process_mapping_element(geode::MultiMapping<T> & element, absl::linked_hash_set<T> & to_remove, absl::linked_hash_map<T, absl::InlinedVector<T, 1> > & new_to_olds, const T & no_value)
 ```
 
 

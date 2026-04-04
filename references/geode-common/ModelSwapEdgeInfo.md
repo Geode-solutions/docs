@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public absl::flat_hash_map<uuid, absl::InlinedVector<SwapEdgeInfo, 1> > surface_info
+public absl::linked_hash_map<uuid, absl::InlinedVector<SwapEdgeInfo, 1> > surface_info
 
 ```
 

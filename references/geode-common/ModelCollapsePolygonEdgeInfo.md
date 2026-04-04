@@ -27,12 +27,12 @@ public array old_cmvs
 ```
 
 ```cpp
-public absl::flat_hash_map<uuid, absl::InlinedVector<CollapseEdgeInfo, 1> > line_info
+public absl::linked_hash_map<uuid, absl::InlinedVector<CollapseEdgeInfo, 1> > line_info
 
 ```
 
 ```cpp
-public absl::flat_hash_map<uuid, absl::InlinedVector<CollapsePolygonEdgeInfo, 1> > surface_info
+public absl::linked_hash_map<uuid, absl::InlinedVector<CollapsePolygonEdgeInfo, 1> > surface_info
 
 ```
 
