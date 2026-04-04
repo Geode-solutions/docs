@@ -61,14 +61,14 @@ public const Storage<T1> & out2in(const T2 & out)
 ### in2out_map
 
 ```cpp
-public const absl::flat_hash_map<T1, Storage<T2> > & in2out_map()
+public const absl::linked_hash_map<T1, Storage<T2> > & in2out_map()
 ```
 
 
 ### out2in_map
 
 ```cpp
-public const absl::flat_hash_map<T2, Storage<T1> > & out2in_map()
+public const absl::linked_hash_map<T2, Storage<T1> > & out2in_map()
 ```
 
 
@@ -124,14 +124,14 @@ protected index_t size_output()
 ### in2out_mapping
 
 ```cpp
-protected absl::flat_hash_map<T1, Storage<T2> > & in2out_mapping()
+protected absl::linked_hash_map<T1, Storage<T2> > & in2out_mapping()
 ```
 
 
 ### out2in_mapping
 
 ```cpp
-protected absl::flat_hash_map<T2, Storage<T1> > & out2in_mapping()
+protected absl::linked_hash_map<T2, Storage<T1> > & out2in_mapping()
 ```
 
 

@@ -62,6 +62,13 @@ public bool operator==(const ComponentMeshVertex & other)
 ```
 
 
+### operator<
+
+```cpp
+public bool operator<(const ComponentMeshVertex & other)
+```
+
+
 ### serialize
 
 ```cpp

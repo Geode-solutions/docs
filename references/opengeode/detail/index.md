@@ -413,6 +413,13 @@ GenericMapping repair_non_manifold_vertices(const SolidMesh<dimension> & mesh, S
 ```
 
 
+### count_range_elements
+
+```cpp
+index_t count_range_elements(const Range & range)
+```
+
+
 ### copy_corner_components
 
 ```cpp
@@ -613,13 +620,6 @@ void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const Su
 
 ```cpp
 void transfer_solids_metadata(Span solids, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
-```
-
-
-### count_range_elements
-
-```cpp
-index_t count_range_elements(const Range & range)
 ```
 
 

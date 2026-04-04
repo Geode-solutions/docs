@@ -76,6 +76,13 @@ public bool operator==(const ComponentID & other)
 ```
 
 
+### operator<
+
+```cpp
+public bool operator<(const ComponentID & other)
+```
+
+
 ### string
 
 ```cpp
