@@ -67,7 +67,7 @@ public uuid add_horizon(std::vector<std::unique_ptr<TriangulatedSurface3D> > & m
 ### process
 
 ```cpp
-public MeshElements process()
+public FailedElements process()
 ```
 
 
