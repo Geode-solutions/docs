@@ -61,7 +61,7 @@ public void ~BRepConformityComputer()
 ### process
 
 ```cpp
-public MeshElements process()
+public FailedElements process()
 ```
 
 

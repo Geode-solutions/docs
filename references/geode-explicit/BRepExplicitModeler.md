@@ -18,6 +18,8 @@ const name = words.join('-');
 
 Parameters
 
+FailedElements
+
 
 
 ## Functions
@@ -74,11 +76,11 @@ public void add_triangulated_surface(std::unique_ptr<TriangulatedSurface3D> && m
 ### process
 
 ```cpp
-public MeshElements process()
+public FailedElements process()
 ```
 
 
- Compute all intersections between input BRep meshes, and return the list of not processed elements (e.g. because of process failure).
+ Compute all intersections between input BRep meshes, and return the list of not processed elements (e.g. because of process failure). These failing elements are returned as both input and output failing elements. Should be empty if build mode is strict. Output elements will be empty if build mode is best effort with deletion.
 
 
 
@@ -90,6 +92,7 @@ public MeshElements process()
 
 | strict |
 | best_effort |
+| best_effort_with_deletion |
 
 
 
