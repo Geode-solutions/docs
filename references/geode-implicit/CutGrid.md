@@ -161,7 +161,7 @@ public void compute_ghost_nodes_derivatives()
 ### ghost_nodes_derivatives
 
 ```cpp
-public const absl::flat_hash_map<index_t, std::vector<index_t> > & ghost_nodes_derivatives()
+public const absl::linked_hash_map<index_t, std::vector<index_t> > & ghost_nodes_derivatives()
 ```
 
 
