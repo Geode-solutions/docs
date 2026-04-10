@@ -14,6 +14,9 @@ const name = words.join('-');
 # class SurfaceMeshNegativeElements
 
 
+# class SurfaceMeshNegativeElements
+
+
  Class for inspecting the negative elements of a SurfaceMesh
 
 

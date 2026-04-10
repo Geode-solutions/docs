@@ -51,6 +51,11 @@ public InspectionIssues intersecting_elements
 
 ```
 
+```cpp
+public InspectionIssues negative_polygons
+
+```
+
 
 
 ## Functions
