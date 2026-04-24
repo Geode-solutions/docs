@@ -166,6 +166,7 @@ const name = words.join('-');
 * [MeshImplTag](MeshImplTag.md)
 * [MeshPolygon](MeshPolygon.md)
 * [MeshPolygonsInclusion](MeshPolygonsInclusion.md)
+* [MeshStatistics](MeshStatistics.md)
 * [MeshTypeTag](MeshTypeTag.md)
 * [MeshVertex](MeshVertex.md)
 * [MeshVerticesInclusion](MeshVerticesInclusion.md)
@@ -1687,6 +1688,96 @@ bool is_edged_curve_saveable(const EdgedCurve<dimension> & edged_curve, basic_st
 ```
 
 
+### load_point_set
+
+```cpp
+std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an PointSet. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_point_set
+
+```cpp
+std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
+```
+
+
+ API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### point_set_additional_files
+
+```cpp
+AdditionalFiles point_set_additional_files(basic_string_view filename)
+```
+
+
+### is_point_set_loadable
+
+```cpp
+Percentage is_point_set_loadable(basic_string_view filename)
+```
+
+
+### point_set_object_priority
+
+```cpp
+index_t point_set_object_priority(basic_string_view filename)
+```
+
+
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(const MeshImpl & impl, basic_string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
+
+**impl** [in] Data structure implementation.
+
+**filename** [in] Path to the file to load.
+
+### load_vertex_set
+
+```cpp
+unique_ptr load_vertex_set(basic_string_view filename)
+```
+
+
+ API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
+
+**filename** [in] Path to the file to load.
+
+### vertex_set_additional_files
+
+```cpp
+AdditionalFiles vertex_set_additional_files(basic_string_view filename)
+```
+
+
+### is_vertex_set_loadable
+
+```cpp
+Percentage is_vertex_set_loadable(basic_string_view filename)
+```
+
+
+### vertex_set_object_priority
+
+```cpp
+index_t vertex_set_object_priority(basic_string_view filename)
+```
+
+
 ### save_point_set
 
 ```cpp
@@ -1769,51 +1860,6 @@ Percentage is_polygonal_surface_loadable(basic_string_view filename)
 
 ```cpp
 index_t polygonal_surface_object_priority(basic_string_view filename)
-```
-
-
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_vertex_set
-
-```cpp
-unique_ptr load_vertex_set(basic_string_view filename)
-```
-
-
- API function for loading an VertexSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### vertex_set_additional_files
-
-```cpp
-AdditionalFiles vertex_set_additional_files(basic_string_view filename)
-```
-
-
-### is_vertex_set_loadable
-
-```cpp
-Percentage is_vertex_set_loadable(basic_string_view filename)
-```
-
-
-### vertex_set_object_priority
-
-```cpp
-index_t vertex_set_object_priority(basic_string_view filename)
 ```
 
 
@@ -2099,51 +2145,6 @@ Percentage is_light_regular_grid_loadable(basic_string_view filename)
 
 ```cpp
 index_t light_regular_grid_object_priority(basic_string_view filename)
-```
-
-
-### load_point_set
-
-```cpp
-std::unique_ptr<PointSet<dimension> > load_point_set(const MeshImpl & impl, basic_string_view filename)
-```
-
-
- API function for loading an PointSet. The adequate loader is called depending on the filename extension.
-
-**impl** [in] Data structure implementation.
-
-**filename** [in] Path to the file to load.
-
-### load_point_set
-
-```cpp
-std::unique_ptr<PointSet<dimension> > load_point_set(basic_string_view filename)
-```
-
-
- API function for loading an PointSet. The adequate loader is called depending on the filename extension. Default data structure implémentation is used.
-
-**filename** [in] Path to the file to load.
-
-### point_set_additional_files
-
-```cpp
-AdditionalFiles point_set_additional_files(basic_string_view filename)
-```
-
-
-### is_point_set_loadable
-
-```cpp
-Percentage is_point_set_loadable(basic_string_view filename)
-```
-
-
-### point_set_object_priority
-
-```cpp
-index_t point_set_object_priority(basic_string_view filename)
 ```
 
 
@@ -3153,6 +3154,41 @@ LightRegularGrid<dimension> convert_raster_image_into_grid(const RasterImage<dim
 ```
 
 
+### rasterize_segment
+
+```cpp
+std::vector<typename Grid<dimension>::CellIndices> rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
+```
+
+
+### conservative_rasterize_segment
+
+```cpp
+std::vector<typename Grid<dimension>::CellIndices> conservative_rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
+```
+
+
+### conservative_rasterize_triangle
+
+```cpp
+std::vector<typename Grid<dimension>::CellIndices> conservative_rasterize_triangle(const Grid<dimension> & grid, const Triangle<dimension> & triangle)
+```
+
+
+### rasterize_tetrahedron
+
+```cpp
+vector rasterize_tetrahedron(const Grid3D & grid, const Tetrahedron & tetrahedron)
+```
+
+
+### rasterize_closed_surface
+
+```cpp
+vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D & closed_surface)
+```
+
+
 ### convert_point_set3d_into_2d
 
 ```cpp
@@ -3369,52 +3405,10 @@ double hausdorff_distance(const TriangulatedSurface3D & mesh_A, const Triangulat
 ```
 
 
-### rasterize_segment
+### compute_surface_metrics
 
 ```cpp
-std::vector<typename Grid<dimension>::CellIndices> rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
-```
-
-
-### conservative_rasterize_segment
-
-```cpp
-std::vector<typename Grid<dimension>::CellIndices> conservative_rasterize_segment(const Grid<dimension> & grid, const Segment<dimension> & segment)
-```
-
-
-### conservative_rasterize_triangle
-
-```cpp
-std::vector<typename Grid<dimension>::CellIndices> conservative_rasterize_triangle(const Grid<dimension> & grid, const Triangle<dimension> & triangle)
-```
-
-
-### rasterize_tetrahedron
-
-```cpp
-vector rasterize_tetrahedron(const Grid3D & grid, const Tetrahedron & tetrahedron)
-```
-
-
-### rasterize_closed_surface
-
-```cpp
-vector rasterize_closed_surface(const Grid3D & grid, const TriangulatedSurface3D & closed_surface)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
+MeshStatistics compute_surface_metrics(const SurfaceMesh<dimension> & mesh)
 ```
 
 
@@ -3611,6 +3605,20 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
