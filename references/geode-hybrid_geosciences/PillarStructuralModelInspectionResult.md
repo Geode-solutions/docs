@@ -36,6 +36,11 @@ public SurfacesCollectionInspectionResult surfaces_with_no_geological_collection
 
 ```
 
+```cpp
+public SurfaceActivityInspectionResult not_active_surfaces
+
+```
+
 
 
 ## Functions
