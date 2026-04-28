@@ -23,7 +23,7 @@ Inherits from OpenGeodeException
 ## Members
 
 ```cpp
-public flat_hash_map info
+public linked_hash_map info
 
 ```
 

@@ -74,7 +74,7 @@ public bool edge_has_incident_macro_facet(index_t tetrahedron_id, const std::arr
 ### edge_incident_macro_facets
 
 ```cpp
-public absl::flat_hash_map<index_t, std::vector<MeshPolygon> > edge_incident_macro_facets(const std::array<index_t, 2> & edge_vertices)
+public absl::linked_hash_map<index_t, std::vector<MeshPolygon> > edge_incident_macro_facets(const std::array<index_t, 2> & edge_vertices)
 ```
 
 

@@ -114,5 +114,12 @@ protected void collapse_colocated_points()
 ```
 
 
+### clean_painted_information
+
+```cpp
+protected void clean_painted_information()
+```
+
+
 
 

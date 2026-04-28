@@ -67,28 +67,28 @@ public void ~BackgroundBRepInserter()
 ### insert_curve
 
 ```cpp
-public flat_hash_map insert_curve(const EdgedCurve3D & mesh)
+public linked_hash_map insert_curve(const EdgedCurve3D & mesh)
 ```
 
 
 ### insert_curve_edges
 
 ```cpp
-public flat_hash_map insert_curve_edges(const EdgedCurve3D & mesh, Span edges)
+public linked_hash_map insert_curve_edges(const EdgedCurve3D & mesh, Span edges)
 ```
 
 
 ### insert_surface
 
 ```cpp
-public flat_hash_map insert_surface(const TriangulatedSurface3D & mesh)
+public linked_hash_map insert_surface(const TriangulatedSurface3D & mesh)
 ```
 
 
 ### insert_surface_triangles
 
 ```cpp
-public flat_hash_map insert_surface_triangles(const TriangulatedSurface3D & mesh, Span triangles)
+public linked_hash_map insert_surface_triangles(const TriangulatedSurface3D & mesh, Span triangles)
 ```
 
 
