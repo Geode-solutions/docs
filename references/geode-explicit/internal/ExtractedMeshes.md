@@ -17,17 +17,17 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public flat_hash_map point_sets
+public linked_hash_map point_sets
 
 ```
 
 ```cpp
-public flat_hash_map curves
+public linked_hash_map curves
 
 ```
 
 ```cpp
-public flat_hash_map surfaces
+public linked_hash_map surfaces
 
 ```
 
