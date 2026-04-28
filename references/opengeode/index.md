@@ -1442,6 +1442,17 @@ bool are_points_aligned(const Point<dimension> & point0, const Point<dimension> 
 
  Return true if the three points are exactly aligned.
 
+### is_point_inside_polygon
+
+```cpp
+bool is_point_inside_polygon(const Point2D & point, const Polygon2D & polygon)
+```
+
+
+ Find if point is inside a polygon.
+
+**point** [in] The point to rotate.
+
 ### perpendicular
 
 ```cpp
@@ -2615,42 +2626,42 @@ ComponentMeshVertexGeneric<dimension> component_mesh_vertex_generic(Span unique_
 ### component_mesh_vertex_pairs
 
 ```cpp
-flat_hash_map component_mesh_vertex_pairs(Span unique_vertices0, Span unique_vertices1)
+linked_hash_map component_mesh_vertex_pairs(Span unique_vertices0, Span unique_vertices1)
 ```
 
 
 ### component_mesh_vertex_pairs
 
 ```cpp
-flat_hash_map component_mesh_vertex_pairs(Span unique_vertices0, Span unique_vertices1, const ComponentType & type)
+linked_hash_map component_mesh_vertex_pairs(Span unique_vertices0, Span unique_vertices1, const ComponentType & type)
 ```
 
 
 ### component_mesh_vertex_pairs
 
 ```cpp
-flat_hash_map component_mesh_vertex_pairs(Span unique_vertices0, Span unique_vertices1, const ComponentID & component)
+linked_hash_map component_mesh_vertex_pairs(Span unique_vertices0, Span unique_vertices1, const ComponentID & component)
 ```
 
 
 ### component_mesh_vertex_triplets
 
 ```cpp
-flat_hash_map component_mesh_vertex_triplets(Span unique_vertices0, Span unique_vertices1, Span unique_vertices2)
+linked_hash_map component_mesh_vertex_triplets(Span unique_vertices0, Span unique_vertices1, Span unique_vertices2)
 ```
 
 
 ### component_mesh_vertex_triplets
 
 ```cpp
-flat_hash_map component_mesh_vertex_triplets(Span unique_vertices0, Span unique_vertices1, Span unique_vertices2, const ComponentType & type)
+linked_hash_map component_mesh_vertex_triplets(Span unique_vertices0, Span unique_vertices1, Span unique_vertices2, const ComponentType & type)
 ```
 
 
 ### component_mesh_vertex_triplets
 
 ```cpp
-flat_hash_map component_mesh_vertex_triplets(Span unique_vertices0, Span unique_vertices1, Span unique_vertices2, const ComponentID & component)
+linked_hash_map component_mesh_vertex_triplets(Span unique_vertices0, Span unique_vertices1, Span unique_vertices2, const ComponentID & component)
 ```
 
 
@@ -2826,6 +2837,13 @@ void compute_model_unique_vertices(const Model & model, typename Model::Builder 
 
 ```cpp
 void repair_polygon_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder)
+```
+
+
+### repair_polygons_orientations
+
+```cpp
+void repair_polygons_orientations(const SurfaceMesh<dimension> & mesh, SurfaceMeshBuilder<dimension> & builder, Span polygons_to_reorient)
 ```
 
 
