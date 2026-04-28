@@ -51,7 +51,7 @@ public SolidBorderPathFinder & operator=(SolidBorderPathFinder && )
 ### SolidBorderPathFinder
 
 ```cpp
-public void SolidBorderPathFinder(const TetrahedralSolid3D & solid, index_t begin, index_t end, const Triangle3D & triangle)
+public void SolidBorderPathFinder(const TetrahedralSolid3D & solid, index_t begin_point, Span end_points, const Triangle3D & triangle)
 ```
 
 
