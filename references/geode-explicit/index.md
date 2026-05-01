@@ -31,6 +31,7 @@ const name = words.join('-');
 * [ExplicitBRepLibrary](ExplicitBRepLibrary.md)
 * [ExplicitCommonLibrary](ExplicitCommonLibrary.md)
 * [ExplicitSectionLibrary](ExplicitSectionLibrary.md)
+* [ExplicitWorkflowsLibrary](ExplicitWorkflowsLibrary.md)
 * [MeshElements](MeshElements.md)
 * [Meshes](Meshes.md)
 * [SectionExplicitModeler](SectionExplicitModeler.md)
@@ -38,6 +39,13 @@ const name = words.join('-');
 
 
 ## Functions
+
+### build_brep_from_topography_and_curve
+
+```cpp
+BRep build_brep_from_topography_and_curve(const TriangulatedSurface3D & topography, const EdgedCurve2D & curve, const double bottom_surface_depth)
+```
+
 
 ### add_mesh_elements
 
