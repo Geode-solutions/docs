@@ -11,18 +11,22 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class Splitter
-
-
-# class Splitter
+# class BlockInternalLineSplitter
 
 
 ## Functions
 
-### Splitter
+### BlockInternalLineSplitter
 
 ```cpp
-public void Splitter<Model>(Model & model, ModelModifier & modifier, const Metric<dimension> & metric)
+public void BlockInternalLineSplitter(const BRep & brep, BRepGeometricModifier & modifier, const Metric3D & metric)
+```
+
+
+### ~BlockInternalLineSplitter
+
+```cpp
+public void ~BlockInternalLineSplitter()
 ```
 
 
@@ -33,8 +37,5 @@ public void split()
 ```
 
 
-
-
-# class Splitter
 
 
