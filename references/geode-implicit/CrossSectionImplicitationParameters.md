@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public local_index_t max_nb_multigrid_steps
+public local_index_t max_nb_multigrid_densification
 
 ```
 

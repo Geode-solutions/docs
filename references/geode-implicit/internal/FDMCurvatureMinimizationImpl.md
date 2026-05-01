@@ -83,10 +83,17 @@ protected void ~FDMCurvatureMinimizationImpl<dimension>()
 ```
 
 
+### enlarged_cells_around
+
+```cpp
+protected std::optional<typename Grid<dimension>::CellsAroundVertex> enlarged_cells_around(const geode::Point<dimension> & data_point_in_grid, const typename Grid<dimension>::VertexIndices & closest_node)
+```
+
+
 ### enlarged_cell_local_coords
 
 ```cpp
-protected Point<dimension> enlarged_cell_local_coords(const Point<dimension> & data_point_in_grid, const typename Grid<dimension>::VertexIndices & closest_node)
+protected Point<dimension> enlarged_cell_local_coords(const Point<dimension> & data_point_in_grid, const typename Grid<dimension>::CellsAroundVertex & cells_around)
 ```
 
 

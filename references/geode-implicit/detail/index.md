@@ -58,6 +58,13 @@ std::unique_ptr<HybridSolid3D> convert_computation_grid_to_solid_mesh(const Comp
 ```
 
 
+### grid_densification_pattern
+
+```cpp
+std::array<bool, dimension> grid_densification_pattern(const BoundingBox<dimension> & box, const std::array<index_t, dimension> & current_cells_number)
+```
+
+
 ### extrapolate_surface_mesh_scalar_function
 
 ```cpp

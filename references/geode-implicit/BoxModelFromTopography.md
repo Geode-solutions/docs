@@ -69,6 +69,13 @@ public void add_topography(const PointSet3D & data_points, double min_distance, 
 ```
 
 
+### add_topography
+
+```cpp
+public void add_topography(const SurfaceMesh3D & data_surface, double min_distance, double weight)
+```
+
+
 ### build
 
 ```cpp
