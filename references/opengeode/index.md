@@ -3423,10 +3423,31 @@ double hausdorff_distance(const TriangulatedSurface3D & mesh_A, const Triangulat
 ```
 
 
-### compute_surface_metrics
+### compute_surface_statistics
 
 ```cpp
-MeshStatistics compute_surface_metrics(const SurfaceMesh<dimension> & mesh)
+MeshStatistics compute_surface_statistics(const SurfaceMesh<dimension> & mesh)
+```
+
+
+### compute_curve_statistics
+
+```cpp
+MeshStatistics compute_curve_statistics(const EdgedCurve<dimension> & mesh)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
@@ -3623,20 +3644,6 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
