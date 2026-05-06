@@ -20,6 +20,7 @@ const name = words.join('-');
 * [AssimpMeshInput](AssimpMeshInput.md)
 * [AssimpMeshOutput](AssimpMeshOutput.md)
 * [BMPInput](BMPInput.md)
+* [CSVInput](CSVInput.md)
 * [DXFInput](DXFInput.md)
 * [GEXFOutput](GEXFOutput.md)
 * [GIDOutput](GIDOutput.md)

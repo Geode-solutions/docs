@@ -23,6 +23,7 @@ const name = words.join('-');
 
 ## Records
 
+* [CsvInputHelpers](CsvInputHelpers.md)
 * [IOImageLibrary](IOImageLibrary.md)
 * [IOMeshLibrary](IOMeshLibrary.md)
 * [IOModelLibrary](IOModelLibrary.md)
