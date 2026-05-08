@@ -11,23 +11,12 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class IOModelLibrary
+# class OpenGeodeIOException
 
 
 ```cpp
-Inherits from Library
+Inherits from OpenGeodeException
 ```
-
-
-
-## Functions
-
-### initialize
-
-```cpp
-public void initialize()
-```
-
 
 
 

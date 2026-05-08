@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class IOMeshLibrary
+# class OpenGeodeIOModelLibrary
 
 
 ```cpp
