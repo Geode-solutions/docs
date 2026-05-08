@@ -23,6 +23,15 @@ Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<3U>, Stratigrap
 # class HorizonsStackBuilder
 
 
+```cpp
+Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
+```
+
+
+
+# class HorizonsStackBuilder
+
+
  Class managing modifications of a HorizonsStack**extends** **extends** **extends** 
 
 
@@ -170,15 +179,6 @@ public void remove_stratigraphic_unit(const StratigraphicUnit<dimension> & strat
 public void compute_top_and_bottom_horizons()
 ```
 
-
-
-
-# class HorizonsStackBuilder
-
-
-```cpp
-Inherits from StratigraphicRelationshipsBuilder, HorizonsBuilder<2U>, StratigraphicUnitsBuilder<2U>, IdentifierBuilder
-```
 
 
 
