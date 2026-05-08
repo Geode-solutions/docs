@@ -22,8 +22,11 @@ const name = words.join('-');
 
 ## Records
 
-* [ViewablesConversionLibrary](ViewablesConversionLibrary.md)
-* [ViewablesQEMProxyLibrary](ViewablesQEMProxyLibrary.md)
+* [GeodeViewablesConversionException](GeodeViewablesConversionException.md)
+* [GeodeViewablesConversionLibrary](GeodeViewablesConversionLibrary.md)
+* [GeodeViewablesException](GeodeViewablesException.md)
+* [GeodeViewablesQEMProxyException](GeodeViewablesQEMProxyException.md)
+* [GeodeViewablesQEMProxyLibrary](GeodeViewablesQEMProxyLibrary.md)
 
 
 ## Functions
