@@ -26,8 +26,11 @@ const name = words.join('-');
 * [FrameFieldParameterization](FrameFieldParameterization.md)
 * [FrameFieldSmoother](FrameFieldSmoother.md)
 * [FrameField](FrameField.md)
-* [HybridBRepLibrary](HybridBRepLibrary.md)
-* [HybridFrameFieldLibrary](HybridFrameFieldLibrary.md)
+* [GeodeHybridBRepException](GeodeHybridBRepException.md)
+* [GeodeHybridBRepLibrary](GeodeHybridBRepLibrary.md)
+* [GeodeHybridException](GeodeHybridException.md)
+* [GeodeHybridFrameFieldException](GeodeHybridFrameFieldException.md)
+* [GeodeHybridFrameFieldLibrary](GeodeHybridFrameFieldLibrary.md)
 * [MeshElement](MeshElement.md)
 * [uuid](uuid.md)
 
