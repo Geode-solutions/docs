@@ -23,9 +23,12 @@ const name = words.join('-');
 ## Records
 
 * [BRepGeosExporter](BRepGeosExporter.md)
-* [GeosciencesIOMeshLibrary](GeosciencesIOMeshLibrary.md)
-* [GeosciencesIOModelLibrary](GeosciencesIOModelLibrary.md)
 * [ModelToMeshMappings](ModelToMeshMappings.md)
+* [OpenGeodeGeosciencesIOException](OpenGeodeGeosciencesIOException.md)
+* [OpenGeodeGeosciencesIOMeshException](OpenGeodeGeosciencesIOMeshException.md)
+* [OpenGeodeGeosciencesIOMeshLibrary](OpenGeodeGeosciencesIOMeshLibrary.md)
+* [OpenGeodeGeosciencesIOModelException](OpenGeodeGeosciencesIOModelException.md)
+* [OpenGeodeGeosciencesIOModelLibrary](OpenGeodeGeosciencesIOModelLibrary.md)
 * [StructuralModelGeosExporter](StructuralModelGeosExporter.md)
 * [uuid](uuid.md)
 
