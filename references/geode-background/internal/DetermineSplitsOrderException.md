@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from OpenGeodeException
+Inherits from GeodeBackgroundSolidException
 ```
 
 

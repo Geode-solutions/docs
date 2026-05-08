@@ -11,21 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class BackgroundSurfaceEpsilonOptimizerException
+# class GeodeBackgroundSurfaceLibrary
 
 
 ```cpp
-Inherits from OpenGeodeException
+Inherits from Library
 ```
 
 
 
 ## Functions
 
-### BackgroundSurfaceEpsilonOptimizerException
+### initialize
 
 ```cpp
-public void BackgroundSurfaceEpsilonOptimizerException(OpenGeodeException && geode_exception)
+public void initialize()
 ```
 
 

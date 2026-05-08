@@ -22,12 +22,18 @@ const name = words.join('-');
 
 ## Records
 
-* [BackgroundBRepLibrary](BackgroundBRepLibrary.md)
-* [BackgroundCommonLibrary](BackgroundCommonLibrary.md)
-* [BackgroundLineLibrary](BackgroundLineLibrary.md)
-* [BackgroundSolidLibrary](BackgroundSolidLibrary.md)
-* [BackgroundSurfaceLibrary](BackgroundSurfaceLibrary.md)
 * [BlockElement](BlockElement.md)
+* [GeodeBackgroundBRepException](GeodeBackgroundBRepException.md)
+* [GeodeBackgroundBRepLibrary](GeodeBackgroundBRepLibrary.md)
+* [GeodeBackgroundCommonException](GeodeBackgroundCommonException.md)
+* [GeodeBackgroundCommonLibrary](GeodeBackgroundCommonLibrary.md)
+* [GeodeBackgroundException](GeodeBackgroundException.md)
+* [GeodeBackgroundLineException](GeodeBackgroundLineException.md)
+* [GeodeBackgroundLineLibrary](GeodeBackgroundLineLibrary.md)
+* [GeodeBackgroundSolidException](GeodeBackgroundSolidException.md)
+* [GeodeBackgroundSolidLibrary](GeodeBackgroundSolidLibrary.md)
+* [GeodeBackgroundSurfaceException](GeodeBackgroundSurfaceException.md)
+* [GeodeBackgroundSurfaceLibrary](GeodeBackgroundSurfaceLibrary.md)
 * [InternalDistance](InternalDistance.md)
 * [MeshElement](MeshElement.md)
 * [Modifier](Modifier.md)

@@ -11,30 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct MultilayerException
+# class GeodeBackgroundBRepLibrary
 
 
 ```cpp
-Inherits from GeodeBackgroundSolidException
-```
-
-
-
-## Members
-
-```cpp
-public optional edge_to_split
-
+Inherits from Library
 ```
 
 
 
 ## Functions
 
-### MultilayerException
+### initialize
 
 ```cpp
-public void MultilayerException()
+public void initialize()
 ```
 
 
