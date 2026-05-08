@@ -11,30 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class OpenGeodeRemeshDataException
+# class GeodeSimplexSurfaceCommonLibrary
 
 
 ```cpp
-Inherits from OpenGeodeDataException
-```
-
-
-
-## Members
-
-```cpp
-public InspectionResult inspection_result
-
+Inherits from Library
 ```
 
 
 
 ## Functions
 
-### OpenGeodeRemeshDataException
+### initialize
 
 ```cpp
-public void OpenGeodeRemeshDataException<InspectionResult>(InspectionResult inspection_result_in, const Args &... message)
+public void initialize()
 ```
 
 

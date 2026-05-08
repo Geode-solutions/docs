@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class SimplexLine2dLibrary
+# class GeodeSimplexSurface2dLibrary
 
 
 ```cpp
