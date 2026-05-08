@@ -25,7 +25,9 @@ const name = words.join('-');
 
 * [BRepMappings](BRepMappings.md)
 * [BlockRelationships](BlockRelationships.md)
-* [ConversionModelLibrary](ConversionModelLibrary.md)
+* [GeodeConversionException](GeodeConversionException.md)
+* [GeodeConversionModelException](GeodeConversionModelException.md)
+* [GeodeConversionModelLibrary](GeodeConversionModelLibrary.md)
 * [IndexToBRepMeshElementsMapping](IndexToBRepMeshElementsMapping.md)
 * [IndexToModelMeshElementsMapping](IndexToModelMeshElementsMapping.md)
 * [IndexToSectionMeshElementsMapping](IndexToSectionMeshElementsMapping.md)
