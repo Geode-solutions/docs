@@ -22,7 +22,9 @@ const name = words.join('-');
 
 ## Records
 
-* [HybridGeosciencesPillarLibrary](HybridGeosciencesPillarLibrary.md)
+* [GeodeHybridGeosciencesException](GeodeHybridGeosciencesException.md)
+* [GeodeHybridGeosciencesPillarException](GeodeHybridGeosciencesPillarException.md)
+* [GeodeHybridGeosciencesPillarLibrary](GeodeHybridGeosciencesPillarLibrary.md)
 * [LinesInspectionResult](LinesInspectionResult.md)
 * [ModelMeshesAABBTree](ModelMeshesAABBTree.md)
 * [MultiZInspectionResult](MultiZInspectionResult.md)

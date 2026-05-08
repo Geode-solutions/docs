@@ -11,32 +11,12 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class PillarStructuralModelException
+# class GeodeHybridGeosciencesException
 
 
 ```cpp
-Inherits from GeodeHybridGeosciencesPillarException
+Inherits from OpenGeodeException
 ```
-
-
-
-## Members
-
-```cpp
-public PillarStructuralModelInspectionResult inspection_result
-
-```
-
-
-
-## Functions
-
-### PillarStructuralModelException
-
-```cpp
-public void PillarStructuralModelException(PillarStructuralModelInspectionResult inspection_result_in, const Args &... message)
-```
-
 
 
 
