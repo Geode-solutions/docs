@@ -17,7 +17,9 @@ const name = words.join('-');
 
 ## Records
 
-* [ExplicitGeosciencesGeosciencesLibrary](ExplicitGeosciencesGeosciencesLibrary.md)
+* [GeodeExplicitGeosciencesException](GeodeExplicitGeosciencesException.md)
+* [GeodeExplicitGeosciencesGeosciencesException](GeodeExplicitGeosciencesGeosciencesException.md)
+* [GeodeExplicitGeosciencesGeosciencesLibrary](GeodeExplicitGeosciencesGeosciencesLibrary.md)
 * [StructuralModelExplicitModeler](StructuralModelExplicitModeler.md)
 * [uuid](uuid.md)
 
