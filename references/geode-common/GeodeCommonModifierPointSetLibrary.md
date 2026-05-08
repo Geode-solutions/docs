@@ -11,45 +11,21 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct CutPatchException
+# class GeodeCommonModifierPointSetLibrary
 
 
 ```cpp
-Inherits from GeodeCommonCutterSolidException
-```
-
-
-
-## Members
-
-```cpp
-public bool blocked
-
-```
-
-```cpp
-public vector edge_splits
-
-```
-
-```cpp
-public vector immuable_vertices
-
-```
-
-```cpp
-public SolidCutPatchInfo cut_info
-
+Inherits from Library
 ```
 
 
 
 ## Functions
 
-### CutPatchException
+### initialize
 
 ```cpp
-public void CutPatchException()
+public void initialize()
 ```
 
 

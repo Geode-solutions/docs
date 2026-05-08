@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from OpenGeodeException
+Inherits from GeodeCommonCutterSurfaceException
 ```
 
 
@@ -44,7 +44,42 @@ public SurfaceCutPathInfo<dimension> info
 ### SurfaceCutPathException
 
 ```cpp
+public void SurfaceCutPathException<dimension>(const SurfaceCutPathException<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public SurfaceCutPathException<dimension> & operator=(const SurfaceCutPathException<dimension> & )
+```
+
+
+### SurfaceCutPathException
+
+```cpp
 public void SurfaceCutPathException<dimension>()
+```
+
+
+### SurfaceCutPathException
+
+```cpp
+public void SurfaceCutPathException<dimension>(SurfaceCutPathException<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public SurfaceCutPathException<dimension> & operator=(SurfaceCutPathException<dimension> && )
+```
+
+
+### ~SurfaceCutPathException
+
+```cpp
+public void ~SurfaceCutPathException<dimension>()
 ```
 
 
