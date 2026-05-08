@@ -48,6 +48,13 @@ public void AttributeManager(AttributeManager && other)
 ```
 
 
+### operator=
+
+```cpp
+public AttributeManager & operator=(AttributeManager && other)
+```
+
+
 ### ~AttributeManager
 
 ```cpp

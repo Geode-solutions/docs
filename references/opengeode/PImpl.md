@@ -19,21 +19,21 @@ const name = words.join('-');
 ### PImpl
 
 ```cpp
-public void PImpl<T>(const PImpl<T> & )
-```
-
-
-### operator=
-
-```cpp
-public PImpl<T> & operator=(const PImpl<T> & )
+public void PImpl<T>(Args &&... )
 ```
 
 
 ### PImpl
 
 ```cpp
-public void PImpl<T>(Args &&... )
+public void PImpl<T>(const PImpl<T> & other)
+```
+
+
+### operator=
+
+```cpp
+public PImpl<T> & operator=(const PImpl<T> & other)
 ```
 
 
@@ -96,7 +96,7 @@ public const T & operator*()
 ### serialize
 
 ```cpp
-public void serialize(Archive & archive)
+public void serialize(Archive & serializer)
 ```
 
 

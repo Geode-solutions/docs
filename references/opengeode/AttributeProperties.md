@@ -63,7 +63,7 @@ public void AttributeProperties(bool is_assignable, bool is_interpolable, bool i
 ### serialize
 
 ```cpp
-public void serialize(Archive & archive)
+public void serialize(Archive & serializer)
 ```
 
 

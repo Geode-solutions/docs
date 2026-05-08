@@ -26,14 +26,14 @@ public void Growable<Archive, T>(absl::FixedArray<std::function<void (Archive &,
 ### serialize
 
 ```cpp
-public void serialize(Archive & ser, const T & obj, Fnc && fnc)
+public void serialize(Archive & ser, const T & obj, Fnc && )
 ```
 
 
 ### deserialize
 
 ```cpp
-public void deserialize(Archive & des, T & obj, Fnc && fnc)
+public void deserialize(Archive & des, T & obj, Fnc && )
 ```
 
 

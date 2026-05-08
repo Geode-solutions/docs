@@ -190,13 +190,14 @@ const name = words.join('-');
 * [OneValueStorage](OneValueStorage.md)
 * [OpenGeodeBRepInput](OpenGeodeBRepInput.md)
 * [OpenGeodeBRepOutput](OpenGeodeBRepOutput.md)
+* [OpenGeodeBasicException](OpenGeodeBasicException.md)
 * [OpenGeodeBasicLibrary](OpenGeodeBasicLibrary.md)
-* [OpenGeodeDataException](OpenGeodeDataException.md)
 * [OpenGeodeEdgedCurveBuilder](OpenGeodeEdgedCurveBuilder.md)
 * [OpenGeodeEdgedCurveInput](OpenGeodeEdgedCurveInput.md)
 * [OpenGeodeEdgedCurveOutput](OpenGeodeEdgedCurveOutput.md)
 * [OpenGeodeEdgedCurve](OpenGeodeEdgedCurve.md)
 * [OpenGeodeException](OpenGeodeException.md)
+* [OpenGeodeGeometryException](OpenGeodeGeometryException.md)
 * [OpenGeodeGeometryLibrary](OpenGeodeGeometryLibrary.md)
 * [OpenGeodeGraphBuilder](OpenGeodeGraphBuilder.md)
 * [OpenGeodeGraphInput](OpenGeodeGraphInput.md)
@@ -206,11 +207,13 @@ const name = words.join('-');
 * [OpenGeodeHybridSolidInput](OpenGeodeHybridSolidInput.md)
 * [OpenGeodeHybridSolidOutput](OpenGeodeHybridSolidOutput.md)
 * [OpenGeodeHybridSolid](OpenGeodeHybridSolid.md)
+* [OpenGeodeImageException](OpenGeodeImageException.md)
 * [OpenGeodeImageLibrary](OpenGeodeImageLibrary.md)
 * [OpenGeodeLightRegularGridInput](OpenGeodeLightRegularGridInput.md)
+* [OpenGeodeMeshException](OpenGeodeMeshException.md)
 * [OpenGeodeMeshLibrary](OpenGeodeMeshLibrary.md)
+* [OpenGeodeModelException](OpenGeodeModelException.md)
 * [OpenGeodeModelLibrary](OpenGeodeModelLibrary.md)
-* [OpenGeodePointException](OpenGeodePointException.md)
 * [OpenGeodePointSetBuilder](OpenGeodePointSetBuilder.md)
 * [OpenGeodePointSetInput](OpenGeodePointSetInput.md)
 * [OpenGeodePointSetOutput](OpenGeodePointSetOutput.md)
@@ -229,16 +232,12 @@ const name = words.join('-');
 * [OpenGeodeRegularGridInput](OpenGeodeRegularGridInput.md)
 * [OpenGeodeRegularGridOutput](OpenGeodeRegularGridOutput.md)
 * [OpenGeodeRegularGrid](OpenGeodeRegularGrid.md)
-* [OpenGeodeResultException](OpenGeodeResultException.md)
 * [OpenGeodeSectionInput](OpenGeodeSectionInput.md)
 * [OpenGeodeSectionOutput](OpenGeodeSectionOutput.md)
-* [OpenGeodeSegmentException](OpenGeodeSegmentException.md)
 * [OpenGeodeTetrahedralSolidBuilder](OpenGeodeTetrahedralSolidBuilder.md)
 * [OpenGeodeTetrahedralSolidInput](OpenGeodeTetrahedralSolidInput.md)
 * [OpenGeodeTetrahedralSolidOutput](OpenGeodeTetrahedralSolidOutput.md)
 * [OpenGeodeTetrahedralSolid](OpenGeodeTetrahedralSolid.md)
-* [OpenGeodeTetrahedronException](OpenGeodeTetrahedronException.md)
-* [OpenGeodeTriangleException](OpenGeodeTriangleException.md)
 * [OpenGeodeTriangulatedSurfaceBuilder](OpenGeodeTriangulatedSurfaceBuilder.md)
 * [OpenGeodeTriangulatedSurfaceInput](OpenGeodeTriangulatedSurfaceInput.md)
 * [OpenGeodeTriangulatedSurfaceOutput](OpenGeodeTriangulatedSurfaceOutput.md)
@@ -380,13 +379,6 @@ const name = words.join('-');
 
 
 ## Functions
-
-### geode_assertion_failed
-
-```cpp
-void geode_assertion_failed(basic_string_view condition, basic_string_view message, basic_string_view file, int line)
-```
-
 
 ### geode_lippincott
 
@@ -3437,6 +3429,20 @@ MeshStatistics compute_curve_statistics(const EdgedCurve<dimension> & mesh)
 ```
 
 
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
+```
+
+
 ### convert_brep_into_section
 
 ```cpp
@@ -3630,20 +3636,6 @@ FixedArray section_active_coordinate_reference_systems(const Section & section)
 
 ```cpp
 BRep create_model_from_bounding_box(const BoundingBox3D & box)
-```
-
-
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 

@@ -54,7 +54,7 @@ public bool operator!=(const PolyhedraAroundVertexImpl & other)
 ### serialize
 
 ```cpp
-public void serialize(Archive & archive)
+public void serialize(Archive & serializer)
 ```
 
 

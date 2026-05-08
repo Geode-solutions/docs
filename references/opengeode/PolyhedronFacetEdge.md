@@ -75,7 +75,7 @@ public basic_string string()
 ### serialize
 
 ```cpp
-public void serialize(Archive & archive)
+public void serialize(Archive & serializer)
 ```
 
 

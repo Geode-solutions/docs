@@ -22,6 +22,34 @@ Inherits from Singleton
 
 ## Functions
 
+### Library
+
+```cpp
+public void Library(const Library & )
+```
+
+
+### operator=
+
+```cpp
+public Library & operator=(const Library & )
+```
+
+
+### Library
+
+```cpp
+public void Library(Library && )
+```
+
+
+### operator=
+
+```cpp
+public Library & operator=(Library && )
+```
+
+
 ### ~Library
 
 ```cpp

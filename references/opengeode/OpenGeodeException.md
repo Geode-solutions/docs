@@ -31,7 +31,28 @@ Inherits from runtime_error
 ### OpenGeodeException
 
 ```cpp
-public void OpenGeodeException(const Args &... message)
+public void OpenGeodeException(OpenGeodeException && )
+```
+
+
+### OpenGeodeException
+
+```cpp
+public void OpenGeodeException(const OpenGeodeException & )
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodeException & operator=(const OpenGeodeException & )
+```
+
+
+### operator=
+
+```cpp
+public OpenGeodeException & operator=(OpenGeodeException && )
 ```
 
 
@@ -42,11 +63,95 @@ public void ~OpenGeodeException()
 ```
 
 
+### type
+
+```cpp
+public TYPE type()
+```
+
+
+### type_name
+
+```cpp
+public basic_string_view type_name()
+```
+
+
+### project
+
+```cpp
+public basic_string_view project()
+```
+
+
+### library
+
+```cpp
+public basic_string_view library()
+```
+
+
+### data
+
+```cpp
+public const std::any & data()
+```
+
+
 ### stack_trace
 
 ```cpp
 public basic_string stack_trace()
 ```
+
+
+### has_parent
+
+```cpp
+public bool has_parent()
+```
+
+
+### parent
+
+```cpp
+public const OpenGeodeException & parent()
+```
+
+
+### set_parent
+
+```cpp
+public void set_parent(OpenGeodeException && parent)
+```
+
+
+### string
+
+```cpp
+public basic_string string()
+```
+
+
+### OpenGeodeException
+
+```cpp
+protected void OpenGeodeException(basic_string project, basic_string library, any data, TYPE type, const Args &... message)
+```
+
+
+
+
+## Enums
+
+| enum class TYPE |
+
+--
+
+| data |
+| internal |
+| result |
+
 
 
 

@@ -57,7 +57,7 @@ public bool default_value()
 ### modify_value
 
 ```cpp
-public void modify_value(index_t element, Modifier && modifier)
+public void modify_value(index_t element, Modifier modifier)
 ```
 
 
@@ -99,7 +99,7 @@ protected void VariableAttribute()
 ### serialize
 
 ```cpp
-protected void serialize(Archive & archive)
+protected void serialize(Archive & serializer)
 ```
 
 
@@ -235,7 +235,7 @@ public const T & default_value()
 ### modify_value
 
 ```cpp
-public void modify_value(index_t element, Modifier && modifier)
+public void modify_value(index_t element, Modifier modifier)
 ```
 
 
@@ -277,7 +277,7 @@ protected void VariableAttribute<T>()
 ### serialize
 
 ```cpp
-protected void serialize(Archive & archive)
+protected void serialize(Archive & serializer)
 ```
 
 

@@ -57,7 +57,7 @@ public const T & default_value()
 ### modify_value
 
 ```cpp
-public void modify_value(index_t element, Modifier && modifier)
+public void modify_value(index_t element, Modifier modifier)
 ```
 
 

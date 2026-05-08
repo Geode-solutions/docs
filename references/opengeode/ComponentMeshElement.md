@@ -65,7 +65,7 @@ public bool operator==(const ComponentMeshElement & other)
 ### serialize
 
 ```cpp
-public void serialize(Archive & archive)
+public void serialize(Archive & serializer)
 ```
 
 

@@ -104,7 +104,7 @@ protected void AttributeCoordinateReferenceSystem<dimension>()
 ### serialize
 
 ```cpp
-protected void serialize(Archive & archive)
+protected void serialize(Archive & serializer)
 ```
 
 

@@ -61,7 +61,7 @@ public const MeshImpl & mesh_type()
 ### serialize
 
 ```cpp
-public void serialize(Archive & archive)
+public void serialize(Archive & serializer)
 ```
 
 

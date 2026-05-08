@@ -64,7 +64,7 @@ public const T & default_value()
 ### modify_value
 
 ```cpp
-public void modify_value(Modifier && modifier)
+public void modify_value(Modifier modifier)
 ```
 
 

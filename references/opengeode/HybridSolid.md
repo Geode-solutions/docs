@@ -73,7 +73,7 @@ public std::unique_ptr<HybridSolid<dimension> > clone()
 ### polyhedron_type
 
 ```cpp
-public Type polyhedron_type(index_t polyhedron_id)
+public TYPE polyhedron_type(index_t polyhedron_id)
 ```
 
 ### HybridSolid
@@ -101,15 +101,14 @@ protected HybridSolid<> & operator=(HybridSolid<> && other)
 
 ## Enums
 
-| enum class Type |
+| enum class TYPE |
 
 --
 
-| UNKNOWN |
-| TETRAHEDRON |
-| HEXAHEDRON |
-| PRISM |
-| PYRAMID |
+| tetrahedron |
+| hexahedron |
+| prism |
+| pyramid |
 
 
 

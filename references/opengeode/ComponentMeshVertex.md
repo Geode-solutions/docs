@@ -72,7 +72,7 @@ public bool operator<(const ComponentMeshVertex & other)
 ### serialize
 
 ```cpp
-public void serialize(Archive & archive)
+public void serialize(Archive & serializer)
 ```
 
 
