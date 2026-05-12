@@ -11,29 +11,29 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# namespace internal
-
-
-
-## Records
-
-* [BlockMappingIdentifier](BlockMappingIdentifier.md)
-* [BlocksBuilderFromSolid](BlocksBuilderFromSolid.md)
+# class BlockMappingIdentifier
 
 
 ## Functions
 
-### add_block_boundaries_as_surfaces_in_model
+### BlockMappingIdentifier
 
 ```cpp
-void add_block_boundaries_as_surfaces_in_model(const BRep & model, BRepBuilder & builder)
+public void BlockMappingIdentifier(const BRep & model, Span blocks)
 ```
 
 
-### identify_blocks
+### ~BlockMappingIdentifier
 
 ```cpp
-void identify_blocks(const BRep & model, BRepBuilder & builder, BRepMappings & mappings)
+public void ~BlockMappingIdentifier()
+```
+
+
+### create_block_mappings
+
+```cpp
+public GenericMapping create_block_mappings()
 ```
 
 

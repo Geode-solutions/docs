@@ -38,6 +38,20 @@ const name = words.join('-');
 
 ## Functions
 
+### add_brep_segmentation
+
+```cpp
+BRepMappings add_brep_segmentation(BRep & brep)
+```
+
+
+### remove_brep_segmentation
+
+```cpp
+BRepMappings remove_brep_segmentation(BRep & brep)
+```
+
+
 ### build_model_component_mapping
 
 ```cpp
@@ -212,20 +226,6 @@ tuple convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, basic
 **attribute_name** [in] Name of attribute stored on solid polygons
 
 **warning** Attribute should be convertible to float.
-
-### add_brep_segmentation
-
-```cpp
-BRepMappings add_brep_segmentation(BRep & brep)
-```
-
-
-### remove_brep_segmentation
-
-```cpp
-BRepMappings remove_brep_segmentation(BRep & brep)
-```
-
 
 
 

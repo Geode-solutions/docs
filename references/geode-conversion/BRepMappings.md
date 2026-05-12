@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# struct BRepMappings
+# class BRepMappings
 
 ## Members
 
