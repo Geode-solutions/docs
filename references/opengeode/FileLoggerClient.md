@@ -25,6 +25,34 @@ Inherits from LoggerClient
 ### FileLoggerClient
 
 ```cpp
+public void FileLoggerClient(const FileLoggerClient & )
+```
+
+
+### operator=
+
+```cpp
+public FileLoggerClient & operator=(const FileLoggerClient & )
+```
+
+
+### FileLoggerClient
+
+```cpp
+public void FileLoggerClient(FileLoggerClient && )
+```
+
+
+### operator=
+
+```cpp
+public FileLoggerClient & operator=(FileLoggerClient && )
+```
+
+
+### FileLoggerClient
+
+```cpp
 public void FileLoggerClient(basic_string_view file_path)
 ```
 
@@ -40,6 +68,13 @@ public void ~FileLoggerClient()
 
 ```cpp
 public void always_flush()
+```
+
+
+### set_file_path
+
+```cpp
+public void set_file_path(basic_string_view file_path)
 ```
 
 
