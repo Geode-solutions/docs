@@ -426,13 +426,6 @@ void shift_optimize_background_surface_elements(BackgroundSurfaceConstraintModif
 ```
 
 
-### optimize_background_brep_elements
-
-```cpp
-vector optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator, Span tetrahedra)
-```
-
-
 ### allowed_collapse_edge_by_macro_info
 
 ```cpp
@@ -563,6 +556,13 @@ void decimate_background_brep(BackgroundBRepGeometricConstraintModifier & constr
 
 ```cpp
 vector epsilon_optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, BRepBuilder & brep_builder, Span tetrahedra)
+```
+
+
+### optimize_background_brep_elements
+
+```cpp
+vector optimize_background_brep_elements(BackgroundBRepGeometricConstraintModifier & constraint_modifier, const BRepInternalDistanceImprovementSimulator & improvement_simulator, Span tetrahedra)
 ```
 
 

@@ -47,7 +47,7 @@ public const BackgroundSolid & background_solid(const Block3D & block)
 ### clone
 
 ```cpp
-public std::tuple<BRep, std::unique_ptr<BackgroundBRep> > clone()
+public tuple clone()
 ```
 
 
@@ -61,7 +61,7 @@ public BRep clone_brep()
 ### background_solid
 
 ```cpp
-public BackgroundSolid & background_solid(const Block3D & block, BackgroundBRepBuilderKey key)
+public BackgroundSolid & background_solid(const Block3D & block, PassKey key)
 ```
 
 
