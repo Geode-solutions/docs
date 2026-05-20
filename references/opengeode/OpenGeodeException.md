@@ -35,10 +35,10 @@ public void OpenGeodeException(OpenGeodeException && )
 ```
 
 
-### OpenGeodeException
+### operator=
 
 ```cpp
-public void OpenGeodeException(const OpenGeodeException & )
+public OpenGeodeException & operator=(OpenGeodeException && )
 ```
 
 
@@ -49,10 +49,10 @@ public OpenGeodeException & operator=(const OpenGeodeException & )
 ```
 
 
-### operator=
+### OpenGeodeException
 
 ```cpp
-public OpenGeodeException & operator=(OpenGeodeException && )
+public void OpenGeodeException(const OpenGeodeException & )
 ```
 
 
@@ -95,13 +95,6 @@ public basic_string_view library()
 
 ```cpp
 public const std::any & data()
-```
-
-
-### stack_trace
-
-```cpp
-public basic_string stack_trace()
 ```
 
 

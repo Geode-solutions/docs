@@ -392,7 +392,7 @@ int geode_lippincott()
 ### throw_lippincott
 
 ```cpp
-void throw_lippincott()
+void throw_lippincott(TYPE type, const Args &... message)
 ```
 
 
