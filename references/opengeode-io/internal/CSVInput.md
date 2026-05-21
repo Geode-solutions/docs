@@ -50,17 +50,17 @@ public AdditionalFiles additional_files()
 ```
 
 
-### object_priority
-
-```cpp
-public index_t object_priority()
-```
-
-
 ### is_loadable
 
 ```cpp
 public Percentage is_loadable()
+```
+
+
+### object_priority
+
+```cpp
+public index_t object_priority()
 ```
 
 
