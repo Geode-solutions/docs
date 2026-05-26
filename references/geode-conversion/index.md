@@ -38,34 +38,6 @@ const name = words.join('-');
 
 ## Functions
 
-### add_brep_segmentation
-
-```cpp
-BRepMappings add_brep_segmentation(BRep & brep)
-```
-
-
-### remove_brep_segmentation
-
-```cpp
-BRepMappings remove_brep_segmentation(BRep & brep)
-```
-
-
-### build_model_component_mapping
-
-```cpp
-ModelMapping build_model_component_mapping(const Model & out_model, const ModelMeshesElementMapping & mesh_element_mappings)
-```
-
-
-### build_brep_component_mapping
-
-```cpp
-ModelMapping build_brep_component_mapping(const BRep & out_brep, const BRepMeshesElementMapping & mesh_element_mappings)
-```
-
-
 ### determine_blocks
 
 ```cpp
@@ -105,6 +77,20 @@ void add_breps_block_mapping_case_surjective(const BRep & initial_brep, const BR
 
 ```cpp
 void add_breps_block_mapping_case_multivaluate(const BRep & initial_brep, const BRep & output_brep, ModelGenericMapping & brep_mapping)
+```
+
+
+### build_model_component_mapping
+
+```cpp
+ModelMapping build_model_component_mapping(const Model & out_model, const ModelMeshesElementMapping & mesh_element_mappings)
+```
+
+
+### build_brep_component_mapping
+
+```cpp
+ModelMapping build_brep_component_mapping(const BRep & out_brep, const BRepMeshesElementMapping & mesh_element_mappings)
 ```
 
 
@@ -226,6 +212,20 @@ tuple convert_surface_into_section_from_attribute(SurfaceMesh2D & surface, basic
 **attribute_name** [in] Name of attribute stored on solid polygons
 
 **warning** Attribute should be convertible to float.
+
+### add_brep_segmentation
+
+```cpp
+BRepMappings add_brep_segmentation(BRep & brep)
+```
+
+
+### remove_brep_segmentation
+
+```cpp
+BRepMappings remove_brep_segmentation(BRep & brep)
+```
+
 
 
 

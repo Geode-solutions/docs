@@ -37,5 +37,45 @@ void identify_blocks(const BRep & model, BRepBuilder & builder, BRepMappings & m
 ```
 
 
+### build_new_model_boundary
+
+```cpp
+optional build_new_model_boundary(const Model & model, typename Model::Builder & builder)
+```
+
+### remove_obsolete_model_boundaries
+
+```cpp
+vector remove_obsolete_model_boundaries(const Model & model, typename Model::Builder & builder)
+```
+
+### build_new_model_boundary
+
+```cpp
+optional build_new_model_boundary(const Section & model, SectionBuilder & builder)
+```
+
+
+### build_new_model_boundary
+
+```cpp
+optional build_new_model_boundary(const BRep & model, BRepBuilder & builder)
+```
+
+
+### remove_obsolete_model_boundaries
+
+```cpp
+vector remove_obsolete_model_boundaries(const Section & model, SectionBuilder & builder)
+```
+
+
+### remove_obsolete_model_boundaries
+
+```cpp
+vector remove_obsolete_model_boundaries(const BRep & model, BRepBuilder & builder)
+```
+
+
 
 

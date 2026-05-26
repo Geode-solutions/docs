@@ -67,14 +67,14 @@ public void add_corner(index_t vertex)
 ### wireframe_edge_id
 
 ```cpp
-public std::optional<index_t> wireframe_edge_id(const std::array<index_t, 2> & edge_vertices)
+public optional wireframe_edge_id(const std::array<index_t, 2> & edge_vertices)
 ```
 
 
 ### wireframe_vertex_id
 
 ```cpp
-public std::optional<index_t> wireframe_vertex_id(index_t support_mesh_vertex_id)
+public optional wireframe_vertex_id(index_t support_mesh_vertex_id)
 ```
 
 
@@ -95,7 +95,7 @@ public const uuid & line_uuid(index_t wireframe_edge_id)
 ### corner_uuid
 
 ```cpp
-public std::optional<uuid> corner_uuid(index_t wireframe_vertex_id)
+public optional corner_uuid(index_t wireframe_vertex_id)
 ```
 
 
