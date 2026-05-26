@@ -27,6 +27,11 @@ public ModelMapping added_components
 ```
 
 ```cpp
+public ModelMapping removed_components
+
+```
+
+```cpp
 public ModelMapping unchanged_components
 
 ```

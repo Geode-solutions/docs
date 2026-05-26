@@ -3429,20 +3429,6 @@ MeshStatistics compute_curve_statistics(const EdgedCurve<dimension> & mesh)
 ```
 
 
-### surface_radial_sort
-
-```cpp
-SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
-```
-
-
-### is_point_inside_closed_surface
-
-```cpp
-bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
-```
-
-
 ### convert_brep_into_section
 
 ```cpp
@@ -3461,6 +3447,20 @@ tuple convert_section_into_brep(const Section & section, local_index_t axis_to_a
 
 ```cpp
 BRep extrude_section_to_brep(const Section & section, const SectionExtruderOptions & options)
+```
+
+
+### surface_radial_sort
+
+```cpp
+SortedSurfaces surface_radial_sort(const BRep & brep, const Line3D & line)
+```
+
+
+### is_point_inside_closed_surface
+
+```cpp
+bool is_point_inside_closed_surface(const Point3D & point, const SurfaceMesh3D & surface, const AABBTree3D & surface_aabb)
 ```
 
 
