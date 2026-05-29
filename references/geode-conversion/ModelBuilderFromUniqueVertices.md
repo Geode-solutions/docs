@@ -14,12 +14,6 @@ const name = words.join('-');
 # class ModelBuilderFromUniqueVertices
 
 
-```cpp
-Inherits from detail::CornersLinesBuilder<Model>
-```
-
-
-
 ## Functions
 
 ### ModelBuilderFromUniqueVertices
@@ -43,37 +37,11 @@ public TypedModelMappings update_model()
 ```
 
 
-### is_corner
-
-```cpp
-protected bool is_corner(index_t wireframe_vertex_id)
-```
-
-
-### build_wireframe_step
-
-```cpp
-protected void build_wireframe_step()
-```
-
-
 
 
 # class ModelBuilderFromUniqueVertices
 
 
-```cpp
-Inherits from detail::CornersLinesBuilder<BRep>
-```
-
-
-
 # class ModelBuilderFromUniqueVertices
-
-
-```cpp
-Inherits from detail::CornersLinesBuilder<Section>
-```
-
 
 
