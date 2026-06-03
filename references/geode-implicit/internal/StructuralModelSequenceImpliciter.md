@@ -58,24 +58,31 @@ public void ~StructuralModelSequenceImpliciter()
 ```
 
 
-### add_horizon_data_point_in_block
+### add_horizon_data_points_in_block
 
 ```cpp
-public void add_horizon_data_point_in_block(const uuid & horizon_id, const Block3D & block, const Point3D & point, double weight)
+public void add_horizon_data_points_in_block(const uuid & horizon_id, const Block3D & block, const PointSet3D & points, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
 ```
 
 
 ### add_gradient_data_in_block
 
 ```cpp
-public void add_gradient_data_in_block(const Block3D & block, const Point3D & position, const Vector3D & gradient_value, double weight)
+public void add_gradient_data_in_block(const Block3D & block, const PointSet3D & gradient_data, const ReadOnlyAttribute<Vector3D> & gradient_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
 ```
 
 
 ### add_tangential_data_in_block
 
 ```cpp
-public void add_tangential_data_in_block(const Block3D & block, const Point3D & position, const Vector3D & direction, double weight)
+public void add_tangential_data_in_block(const Block3D & block, const PointSet3D & tangential_data, const ReadOnlyAttribute<Vector3D> & tangents_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
+```
+
+
+### add_orthogonal_vectors_data_in_block
+
+```cpp
+public void add_orthogonal_vectors_data_in_block(const Block3D & block, const PointSet3D & direction_data, const ReadOnlyAttribute<Vector3D> & direction_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
 ```
 
 

@@ -23,6 +23,34 @@ const name = words.join('-');
 
 ## Functions
 
+### tangential_data_from_curve
+
+```cpp
+std::unique_ptr<PointSet<dimension> > tangential_data_from_curve(const EdgedCurve<dimension> & data_curve, basic_string_view weight_attribute_name)
+```
+
+
+### normal_data_from_surface
+
+```cpp
+unique_ptr normal_data_from_surface(const SurfaceMesh3D & data_surface, basic_string_view weight_attribute_name)
+```
+
+
+### geode_implicit_weight_attribute
+
+```cpp
+shared_ptr geode_implicit_weight_attribute(const Mesh & mesh)
+```
+
+
+### geode_implicit_direction_attribute
+
+```cpp
+std::shared_ptr<VariableAttribute<Vector<Mesh::dim> > > geode_implicit_direction_attribute(const Mesh & mesh)
+```
+
+
 ### compute_cut_grid_streamline
 
 ```cpp

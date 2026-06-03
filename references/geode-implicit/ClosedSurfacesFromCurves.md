@@ -61,7 +61,7 @@ public void ~ClosedSurfacesFromCurves()
 ### add_closed_curve_data
 
 ```cpp
-public void add_closed_curve_data(const EdgedCurve3D & curve, double min_distance, double weight)
+public void add_closed_curve_data(const EdgedCurve3D & curve, double min_distance, basic_string_view weight_attribute_name)
 ```
 
 

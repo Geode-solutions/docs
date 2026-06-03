@@ -89,6 +89,13 @@ public index_t add_data_point(const Point<dimension> & position, const uuid & da
 ```
 
 
+### add_data_points
+
+```cpp
+public void add_data_points(const PointSet<dimension> & data_points, const uuid & data_id, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
+```
+
+
 ### set_data_value
 
 ```cpp

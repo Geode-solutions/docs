@@ -65,6 +65,13 @@ public index_t add_gradient_data(const Point<dimension> & position, const Vector
 ```
 
 
+### add_gradient_data
+
+```cpp
+public void add_gradient_data(const PointSet<dimension> & gradient_data, const ReadOnlyAttribute<Vector<dimension> > & gradient_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
+```
+
+
 ### remove_gradient_data
 
 ```cpp

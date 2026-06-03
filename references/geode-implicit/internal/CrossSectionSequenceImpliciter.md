@@ -58,24 +58,31 @@ public void ~CrossSectionSequenceImpliciter()
 ```
 
 
-### add_horizon_data_point_in_surface
+### add_horizon_data_points_in_surface
 
 ```cpp
-public void add_horizon_data_point_in_surface(const uuid & horizon_id, const Surface2D & surface, const Point2D & point, double weight)
+public void add_horizon_data_points_in_surface(const uuid & horizon_id, const Surface2D & surface, const PointSet2D & points, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
 ```
 
 
 ### add_gradient_data_in_surface
 
 ```cpp
-public void add_gradient_data_in_surface(const Surface2D & surface, const Point2D & position, const Vector2D & gradient_value, double weight)
+public void add_gradient_data_in_surface(const Surface2D & surface, const PointSet2D & gradient_data, const ReadOnlyAttribute<Vector2D> & gradient_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
 ```
 
 
 ### add_tangential_data_in_surface
 
 ```cpp
-public void add_tangential_data_in_surface(const Surface2D & surface, const Point2D & position, const Vector2D & direction, double weight)
+public void add_tangential_data_in_surface(const Surface2D & surface, const PointSet2D & tangential_data, const ReadOnlyAttribute<Vector2D> & tangents_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
+```
+
+
+### add_orthogonal_vectors_data_in_surface
+
+```cpp
+public void add_orthogonal_vectors_data_in_surface(const Surface2D & surface, const PointSet2D & direction_data, const ReadOnlyAttribute<Vector2D> & direction_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
 ```
 
 

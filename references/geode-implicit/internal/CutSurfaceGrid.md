@@ -130,7 +130,7 @@ public index_t cell_duplicate_index(const CellIndices & index, local_index_t cel
 ### cell_duplicate_index
 
 ```cpp
-public absl::InlinedVector<index_t, 1> cell_duplicate_index(const CellIndices & cell, const Point2D & position)
+public InlinedVector cell_duplicate_index(const CellIndices & cell, const Point2D & position)
 ```
 
 

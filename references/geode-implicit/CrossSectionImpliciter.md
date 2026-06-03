@@ -96,14 +96,14 @@ public void set_stratigraphic_unit_thickness(const StratigraphicUnit2D & strati_
 ### add_horizon_data_points
 
 ```cpp
-public void add_horizon_data_points(const Horizon2D & horizon, const PointSet2D & pointset, double weight)
+public void add_horizon_data_points(const Horizon2D & horizon, const PointSet2D & pointset, basic_string_view weight_attribute_name)
 ```
 
 
 ### add_horizon_data_curve
 
 ```cpp
-public void add_horizon_data_curve(const Horizon2D & horizon, const EdgedCurve2D & data_curve, double weight)
+public void add_horizon_data_curve(const Horizon2D & horizon, const EdgedCurve2D & data_curve, basic_string_view weight_attribute_name)
 ```
 
 

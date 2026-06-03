@@ -65,6 +65,13 @@ public index_t add_data_point(const Point<dimension> & position, double value, d
 ```
 
 
+### add_data_points
+
+```cpp
+public void add_data_points(const Mesh & data_mesh, double value, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
+```
+
+
 ### remove_data_point
 
 ```cpp
