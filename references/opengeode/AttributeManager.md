@@ -327,7 +327,21 @@ public void import(const AttributeManager & attribute_manager, Span old2new)
 ### import
 
 ```cpp
+public void import(const AttributeManager & attribute_manager, Span old2new, basic_string_view attribute_name)
+```
+
+
+### import
+
+```cpp
 public void import(const AttributeManager & attribute_manager, const GenericMapping<index_t> & old2new_mapping)
+```
+
+
+### import
+
+```cpp
+public void import(const AttributeManager & attribute_manager, const GenericMapping<index_t> & old2new_mapping, basic_string_view attribute_name)
 ```
 
 
