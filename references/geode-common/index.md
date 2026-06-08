@@ -128,6 +128,7 @@ const name = words.join('-');
 * [LineCollapseEdgeValidities](LineCollapseEdgeValidities.md)
 * [LinearSolver](LinearSolver.md)
 * [Mapping](Mapping.md)
+* [MedialBallExtractor](MedialBallExtractor.md)
 * [Metric](Metric.md)
 * [ModelCollapseEdgeValidity](ModelCollapseEdgeValidity.md)
 * [ModelCollapsePolygonEdgeInfo](ModelCollapsePolygonEdgeInfo.md)
