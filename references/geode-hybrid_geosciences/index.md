@@ -22,6 +22,8 @@ const name = words.join('-');
 
 ## Records
 
+* [BlocksCollectionInspectionResult](BlocksCollectionInspectionResult.md)
+* [DanglingSurfacesInspectionResult](DanglingSurfacesInspectionResult.md)
 * [GeodeHybridGeosciencesException](GeodeHybridGeosciencesException.md)
 * [GeodeHybridGeosciencesPillarException](GeodeHybridGeosciencesPillarException.md)
 * [GeodeHybridGeosciencesPillarLibrary](GeodeHybridGeosciencesPillarLibrary.md)

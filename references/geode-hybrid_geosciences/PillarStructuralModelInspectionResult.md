@@ -41,6 +41,16 @@ public SurfaceActivityInspectionResult not_active_surfaces
 
 ```
 
+```cpp
+public DanglingSurfacesInspectionResult dangling_surfaces
+
+```
+
+```cpp
+public BlocksCollectionInspectionResult blocks_with_no_geological_collection
+
+```
+
 
 
 ## Functions
