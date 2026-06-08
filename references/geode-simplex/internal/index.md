@@ -141,13 +141,6 @@ RemeshedSurface remesh_surface(const TriangulatedSurface2D & background_mesh, Tr
 ```
 
 
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MacroPolygonEdge & m)
-```
-
-
 ### line_extremities
 
 ```cpp
@@ -201,6 +194,13 @@ typename Data::Tasks sample_lines_impl(Data & data)
 
 ```cpp
 void treat_inactive_lines(Data & data)
+```
+
+
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const MacroPolygonEdge & m)
 ```
 
 
