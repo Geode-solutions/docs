@@ -26,21 +26,21 @@ public index_t nb_components()
 ### has_component
 
 ```cpp
-public bool has_component(const uuid & id)
+public bool has_component(const uuid & component_id)
 ```
 
 
 ### component
 
 ```cpp
-public const Component & component(const uuid & id)
+public const Component & component(const uuid & component_id)
 ```
 
 
 ### component
 
 ```cpp
-public Component & component(const uuid & id)
+public Component & component(const uuid & component_id)
 ```
 
 
@@ -75,7 +75,7 @@ public void save_components(basic_string_view filename)
 ### delete_component
 
 ```cpp
-public void delete_component(const uuid & id)
+public void delete_component(const uuid & component_id)
 ```
 
 
