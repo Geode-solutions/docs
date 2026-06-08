@@ -11,7 +11,7 @@ const name = words.join('-');
 </script>
 # Project {{ name }}
 
-# class OpenGeodeInspectorInspectorException
+# class OpenGeodeInspectorInspectionException
 
 
 ```cpp
@@ -22,10 +22,10 @@ Inherits from OpenGeodeInspectorException
 
 ## Functions
 
-### OpenGeodeInspectorInspectorException
+### OpenGeodeInspectorInspectionException
 
 ```cpp
-public void OpenGeodeInspectorInspectorException(any data, TYPE type, const Args &... message)
+public void OpenGeodeInspectorInspectionException(any data, TYPE type, const Args &... message)
 ```
 
 

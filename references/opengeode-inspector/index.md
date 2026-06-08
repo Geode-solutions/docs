@@ -60,8 +60,10 @@ const name = words.join('-');
 * [MeshesColocationInspectionResult](MeshesColocationInspectionResult.md)
 * [ModelMeshesIntersections](ModelMeshesIntersections.md)
 * [OpenGeodeInspectorException](OpenGeodeInspectorException.md)
-* [OpenGeodeInspectorInspectorException](OpenGeodeInspectorInspectorException.md)
-* [OpenGeodeInspectorInspectorLibrary](OpenGeodeInspectorInspectorLibrary.md)
+* [OpenGeodeInspectorInspectionException](OpenGeodeInspectorInspectionException.md)
+* [OpenGeodeInspectorInspectionLibrary](OpenGeodeInspectorInspectionLibrary.md)
+* [OpenGeodeInspectorValidityException](OpenGeodeInspectorValidityException.md)
+* [OpenGeodeInspectorValidityLibrary](OpenGeodeInspectorValidityLibrary.md)
 * [PointSetColocation](PointSetColocation.md)
 * [PointSetInspectionResult](PointSetInspectionResult.md)
 * [PointSetInspector](PointSetInspector.md)
@@ -109,5 +111,16 @@ const name = words.join('-');
 * [UniqueVerticesColocation](UniqueVerticesColocation.md)
 * [UniqueVerticesInspectionResult](UniqueVerticesInspectionResult.md)
 * [uuid](uuid.md)
+
+
+## Functions
+
+### pointset_invalidity
+
+```cpp
+vector pointset_invalidity(const PointSet<dimension> & pointset)
+```
+
+
 
 
