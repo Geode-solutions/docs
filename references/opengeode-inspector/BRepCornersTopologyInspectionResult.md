@@ -32,12 +32,17 @@ public InspectionIssues unique_vertices_linked_to_multiple_corners
 ```
 
 ```cpp
+public InspectionIssues unique_vertices_linked_to_multiply_embedded_corner
+
+```
+
+```cpp
 public InspectionIssues unique_vertices_linked_to_not_internal_nor_boundary_corner
 
 ```
 
 ```cpp
-public InspectionIssues unique_vertices_liked_to_not_boundary_line_corner
+public InspectionIssues unique_vertices_linked_to_not_boundary_line_corner
 
 ```
 

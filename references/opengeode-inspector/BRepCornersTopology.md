@@ -53,6 +53,13 @@ public std::optional<std::string> unique_vertex_has_multiple_corners(index_t uni
 ```
 
 
+### corner_is_multiply_embedded
+
+```cpp
+public std::optional<std::string> corner_is_multiply_embedded(index_t unique_vertex_index)
+```
+
+
 ### corner_is_not_internal_nor_boundary
 
 ```cpp

@@ -59,6 +59,7 @@ const name = words.join('-');
 * [InspectionIssues](InspectionIssues.md)
 * [MeshesColocationInspectionResult](MeshesColocationInspectionResult.md)
 * [ModelMeshesIntersections](ModelMeshesIntersections.md)
+* [ObjectValidity](ObjectValidity.md)
 * [OpenGeodeInspectorException](OpenGeodeInspectorException.md)
 * [OpenGeodeInspectorInspectionException](OpenGeodeInspectorInspectionException.md)
 * [OpenGeodeInspectorInspectionLibrary](OpenGeodeInspectorInspectionLibrary.md)
@@ -115,10 +116,45 @@ const name = words.join('-');
 
 ## Functions
 
-### pointset_invalidity
+### is_brep_valid
 
 ```cpp
-vector pointset_invalidity(const PointSet<dimension> & pointset)
+ObjectValidity is_brep_valid(const BRep & brep)
+```
+
+
+### is_edged_curve_valid
+
+```cpp
+ObjectValidity is_edged_curve_valid(const EdgedCurve<dimension> & curve)
+```
+
+
+### is_pointset_valid
+
+```cpp
+ObjectValidity is_pointset_valid(const PointSet<dimension> & pointset)
+```
+
+
+### is_section_valid
+
+```cpp
+ObjectValidity is_section_valid(const Section & section)
+```
+
+
+### is_solid_valid
+
+```cpp
+ObjectValidity is_solid_valid(const SolidMesh<dimension> & solid)
+```
+
+
+### is_surface_valid
+
+```cpp
+ObjectValidity is_surface_valid(const SurfaceMesh<dimension> & surface)
 ```
 
 

@@ -23,7 +23,7 @@ Inherits from AddInspectors<SolidMesh<3U>, SolidMeshAdjacency<3U>, SolidMeshColo
 # class SolidMeshInspector
 
 
- Class for inspecting a SolidMesh**extends** **extends** 
+ Class for inspecting a SolidMesh**extends** **extends** **extends** **extends** **extends** **extends** **extends** 
 
 
 
