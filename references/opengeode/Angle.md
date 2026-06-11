@@ -30,6 +30,13 @@ public Angle create_from_degrees(double degrees)
 ```
 
 
+### create_from_vectors
+
+```cpp
+public Angle create_from_vectors(const Vector3D & vector1, const Vector3D & vector2)
+```
+
+
 ### radians
 
 ```cpp

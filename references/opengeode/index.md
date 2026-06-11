@@ -553,6 +553,13 @@ H AbslHashValue(H h, const PolygonEdge & value)
 ```
 
 
+### multiple_permute
+
+```cpp
+void multiple_permute(Container & data, Span permutation)
+```
+
+
 ### permute
 
 ```cpp

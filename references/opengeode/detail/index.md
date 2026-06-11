@@ -346,7 +346,7 @@ bool polygons_intersection_detection(const Mesh & mesh, const PolygonVertices & 
 ### line_component_mesh_edges
 
 ```cpp
-flat_hash_map line_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
+linked_hash_map line_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
 
@@ -360,7 +360,7 @@ vector line_component_mesh_edges(const Model & model, const std::array<index_t, 
 ### surface_component_mesh_edges
 
 ```cpp
-flat_hash_map surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
+linked_hash_map surface_component_mesh_edges(const Model & model, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
 
@@ -374,7 +374,7 @@ vector surface_component_mesh_edges(const Model & model, const std::array<index_
 ### block_component_mesh_edges
 
 ```cpp
-flat_hash_map block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
+linked_hash_map block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2> & edge_unique_vertices)
 ```
 
 
@@ -388,14 +388,14 @@ vector block_component_mesh_edges(const BRep & brep, const std::array<index_t, 2
 ### surface_component_mesh_polygons
 
 ```cpp
-flat_hash_map surface_component_mesh_polygons(const Model & model, const PolygonVertices & polygon_unique_vertices)
+linked_hash_map surface_component_mesh_polygons(const Model & model, const PolygonVertices & polygon_unique_vertices)
 ```
 
 
 ### block_component_mesh_polygons
 
 ```cpp
-flat_hash_map block_component_mesh_polygons(const BRep & brep, const PolygonVertices & polygon_unique_vertices)
+linked_hash_map block_component_mesh_polygons(const BRep & brep, const PolygonVertices & polygon_unique_vertices)
 ```
 
 
@@ -410,13 +410,6 @@ vector block_component_mesh_polygons(const BRep & brep, const PolygonVertices & 
 
 ```cpp
 GenericMapping repair_non_manifold_vertices(const SolidMesh<dimension> & mesh, SolidMeshBuilder<dimension> & builder)
-```
-
-
-### count_range_elements
-
-```cpp
-index_t count_range_elements(const Range & range)
 ```
 
 
@@ -620,6 +613,13 @@ void transfer_surfaces_metadata(absl::Span<const std::reference_wrapper<const Su
 
 ```cpp
 void transfer_solids_metadata(Span solids, BRepBuilder & model_builder, const ModelGenericMapping & component_mapping)
+```
+
+
+### count_range_elements
+
+```cpp
+index_t count_range_elements(const Range & range)
 ```
 
 

@@ -23,7 +23,7 @@ Inherits from ModelComponentMeshPolygons
 ## Members
 
 ```cpp
-public flat_hash_map block_polygons
+public linked_hash_map block_polygons
 
 ```
 
