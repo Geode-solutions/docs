@@ -67,7 +67,7 @@ public uuid output_id
 ```
 
 ```cpp
-public flat_hash_map points
+public linked_hash_map points
 
 ```
 
@@ -89,7 +89,7 @@ public uuid output_id
 ```
 
 ```cpp
-public flat_hash_map points
+public linked_hash_map points
 
 ```
 

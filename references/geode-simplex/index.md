@@ -236,13 +236,6 @@ void brep_simplex_mesh(BRep & brep, const Metric3D & metric)
 ```
 
 
-### brep_simplex_constrained_mesh
-
-```cpp
-void brep_simplex_constrained_mesh(BRep & brep)
-```
-
-
 ### brep_simplex_remesh
 
 ```cpp
