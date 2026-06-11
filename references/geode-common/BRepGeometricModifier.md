@@ -430,63 +430,63 @@ public CleanElementsMappings clean_elements()
 ### clean_triangles_surfaces
 
 ```cpp
-public flat_hash_map clean_triangles_surfaces()
+public linked_hash_map clean_triangles_surfaces()
 ```
 
 
 ### clean_surface_edges
 
 ```cpp
-public flat_hash_map clean_surface_edges()
+public linked_hash_map clean_surface_edges()
 ```
 
 
 ### clean_vertices_surfaces
 
 ```cpp
-public flat_hash_map clean_vertices_surfaces()
+public linked_hash_map clean_vertices_surfaces()
 ```
 
 
 ### clean_edges_lines
 
 ```cpp
-public flat_hash_map clean_edges_lines()
+public linked_hash_map clean_edges_lines()
 ```
 
 
 ### clean_vertices_lines
 
 ```cpp
-public flat_hash_map clean_vertices_lines()
+public linked_hash_map clean_vertices_lines()
 ```
 
 
 ### clean_tetrahedra_blocks
 
 ```cpp
-public flat_hash_map clean_tetrahedra_blocks()
+public linked_hash_map clean_tetrahedra_blocks()
 ```
 
 
 ### clean_block_edges
 
 ```cpp
-public flat_hash_map clean_block_edges()
+public linked_hash_map clean_block_edges()
 ```
 
 
 ### clean_block_facets
 
 ```cpp
-public flat_hash_map clean_block_facets()
+public linked_hash_map clean_block_facets()
 ```
 
 
 ### clean_vertices_blocks
 
 ```cpp
-public flat_hash_map clean_vertices_blocks()
+public linked_hash_map clean_vertices_blocks()
 ```
 
 

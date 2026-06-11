@@ -22,7 +22,7 @@ public index_t unique_vertex
 ```
 
 ```cpp
-public flat_hash_map block_info
+public linked_hash_map block_info
 
 ```
 

@@ -153,7 +153,7 @@ typename SurfaceSplitTriangleValidities<Model::dim>::MeshInvalidities invalid_sp
 ### invalid_swap_edges
 
 ```cpp
-flat_hash_map invalid_swap_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges)
+linked_hash_map invalid_swap_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges)
 ```
 
 
