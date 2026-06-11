@@ -25,7 +25,7 @@ Inherits from SurfacePathFinder<3>
 ### PropagateAlongPlane
 
 ```cpp
-public void PropagateAlongPlane(const StructuralModel & model, const TriangulatedSurface3D & surface, const OwnerPlane & plane, Span top_surfaces, Span bottom_surfaces, bool same_orientation)
+public void PropagateAlongPlane(const StructuralModel & model, const TriangulatedSurface3D & surface, const OwnerPlane & plane, Span top_surfaces, Span bottom_surfaces, bool dot_positive)
 ```
 
 
