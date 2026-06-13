@@ -23,17 +23,17 @@ public void ObjectNeighborhood<dimension>()
 ```
 
 
-### ~ObjectNeighborhood
-
-```cpp
-public void ~ObjectNeighborhood<dimension>()
-```
-
-
 ### add
 
 ```cpp
 public void add(const BoundingBox<dimension> & box, const ObjectId & id)
+```
+
+
+### ~ObjectNeighborhood
+
+```cpp
+public void ~ObjectNeighborhood<dimension>()
 ```
 
 
@@ -61,7 +61,7 @@ public void remove(const BoundingBox<dimension> & box, const ObjectId & id)
 ### get_all_neighbor_ids
 
 ```cpp
-public vector get_all_neighbor_ids(const BoundingBox<dimension> & box, const std::vector<uuid> & targeted_set_ids, std::optional<ObjectId> exclude_self_id)
+public std::vector<ObjectId> get_all_neighbor_ids(const BoundingBox<dimension> & box, const std::vector<uuid> & targeted_set_ids, std::optional<ObjectId> exclude_self_id)
 ```
 
 

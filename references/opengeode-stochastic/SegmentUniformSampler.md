@@ -19,7 +19,7 @@ const name = words.join('-');
 ### sample
 
 ```cpp
-public OwnerSegment sample(RandomEngine & engine, const struct PointUniformSampler::Object<2> & object, const struct DoubleSampler::Distribution & length, const struct DoubleSampler::Distribution & azimuth)
+public static OwnerSegment2D sample(RandomEngine & engine, const PointUniformSampler::Object<2> & object, const DoubleSampler::Distribution & length, const DoubleSampler::Distribution & azimuth)
 ```
 
 

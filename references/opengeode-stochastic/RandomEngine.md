@@ -19,6 +19,13 @@ const name = words.join('-');
 ### RandomEngine
 
 ```cpp
+public void RandomEngine(RandomEngine && )
+```
+
+
+### RandomEngine
+
+```cpp
 public void RandomEngine(const RandomEngine & )
 ```
 
@@ -27,13 +34,6 @@ public void RandomEngine(const RandomEngine & )
 
 ```cpp
 public RandomEngine & operator=(const RandomEngine & )
-```
-
-
-### RandomEngine
-
-```cpp
-public void RandomEngine(RandomEngine && )
 ```
 
 
@@ -68,7 +68,7 @@ public void set_seed(uint64_t number)
 ### set_seed
 
 ```cpp
-public void set_seed(basic_string_view word)
+public void set_seed(std::string_view word)
 ```
 
 

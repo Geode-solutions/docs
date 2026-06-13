@@ -47,21 +47,21 @@ public bool is_valid()
 ### distribution_type_static
 
 ```cpp
-public NamedType distribution_type_static()
+public static DistributionType distribution_type_static()
 ```
 
 
 ### distribution_type
 
 ```cpp
-public NamedType distribution_type()
+public DistributionType distribution_type()
 ```
 
 
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

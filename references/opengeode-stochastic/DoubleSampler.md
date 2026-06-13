@@ -25,21 +25,21 @@ DistributionDescription
 ### create_distribution
 
 ```cpp
-public Distribution create_distribution(const DistributionDescription & desc)
+public static Distribution create_distribution(const DistributionDescription & desc)
 ```
 
 
 ### create_rad_angle_distribution_from_degree
 
 ```cpp
-public Distribution create_rad_angle_distribution_from_degree(const DistributionDescription & angle_desc_deg)
+public static Distribution create_rad_angle_distribution_from_degree(const DistributionDescription & angle_desc_deg)
 ```
 
 
 ### sample
 
 ```cpp
-public double sample(RandomEngine & engine, const Distribution & dist)
+public static double sample(RandomEngine & engine, const Distribution & dist)
 ```
 
 

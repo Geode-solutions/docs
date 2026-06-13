@@ -25,6 +25,13 @@ Inherits from Identifier
 ### EnergyTerm
 
 ```cpp
+public void EnergyTerm<ObjectType>(EnergyTerm<ObjectType> && )
+```
+
+
+### EnergyTerm
+
+```cpp
 public void EnergyTerm<ObjectType>(const EnergyTerm<ObjectType> & )
 ```
 
@@ -33,13 +40,6 @@ public void EnergyTerm<ObjectType>(const EnergyTerm<ObjectType> & )
 
 ```cpp
 public EnergyTerm<ObjectType> & operator=(const EnergyTerm<ObjectType> & )
-```
-
-
-### EnergyTerm
-
-```cpp
-public void EnergyTerm<ObjectType>(EnergyTerm<ObjectType> && )
 ```
 
 
@@ -53,7 +53,7 @@ public EnergyTerm<ObjectType> & operator=(EnergyTerm<ObjectType> && )
 ### EnergyTerm
 
 ```cpp
-public void EnergyTerm<ObjectType>(basic_string_view name, double param, std::vector<uuid> && targeted_set_ids, const SpatialDomain<ObjectType::dim> & domain)
+public void EnergyTerm<ObjectType>(std::string_view name, double param, std::vector<uuid> && targeted_set_ids, const SpatialDomain<ObjectType::dim> & domain)
 ```
 
 
@@ -87,12 +87,6 @@ public double contribution(double multiplier)
 
  Energy contribution for a given statistic multiplier
 
-### total_log
-
-```cpp
-public double total_log(const ObjectSets<ObjectType> & state)
-```
-
 ### delta_log_add
 
 ```cpp
@@ -111,16 +105,10 @@ public double delta_log_remove(const ObjectSets<ObjectType> & state, const Objec
 public double delta_log_change(const ObjectSets<ObjectType> & state, const ObjectId & old_object_id, const ObjectRef<ObjectType> & new_object)
 ```
 
-### statistic
-
-```cpp
-public double statistic(const ObjectSets<ObjectType> & state)
-```
-
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
@@ -144,6 +132,18 @@ protected const SpatialDomain<ObjectType::dim> & domain()
 protected void for_each_targeted_object(const ObjectSets<ObjectType> & state, Func && do_apply)
 ```
 
+
+### total_log
+
+```cpp
+public double total_log(const ObjectSets<ObjectType> & state)
+```
+
+### statistic
+
+```cpp
+public double statistic(const ObjectSets<ObjectType> & state)
+```
 
 
 

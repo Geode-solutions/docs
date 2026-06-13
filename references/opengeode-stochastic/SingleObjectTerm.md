@@ -25,7 +25,7 @@ Inherits from EnergyTerm<ObjectType>
 ### SingleObjectTerm
 
 ```cpp
-public void SingleObjectTerm<ObjectType, ObjectContributionFunc>(basic_string_view name, double lambda, vector targeted_set_ids, double scale, ObjectContributionFunc contribution_func, const SpatialDomain<ObjectType::dim> & domain)
+public void SingleObjectTerm<ObjectType, ObjectContributionFunc>(std::string_view name, double lambda, std::vector<uuid> targeted_set_ids, double scale, ObjectContributionFunc contribution_func, const SpatialDomain<ObjectType::dim> & domain)
 ```
 
 

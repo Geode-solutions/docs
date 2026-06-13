@@ -19,14 +19,14 @@ const name = words.join('-');
 ### is_anchored_in_domain
 
 ```cpp
-public bool is_anchored_in_domain(const SpatialDomain<ObjectType::dim> & domain, const ObjectType & obj)
+public static bool is_anchored_in_domain(const SpatialDomain<ObjectType::dim> & domain, const ObjectType & obj)
 ```
 
 
 ### intersects_domain
 
 ```cpp
-public bool intersects_domain(const SpatialDomain<ObjectType::dim> & domain, const ObjectType & obj)
+public static bool intersects_domain(const SpatialDomain<ObjectType::dim> & domain, const ObjectType & obj)
 ```
 
 
@@ -40,14 +40,14 @@ public bool intersects_domain(const SpatialDomain<ObjectType::dim> & domain, con
 ### is_anchored_in_domain
 
 ```cpp
-public bool is_anchored_in_domain(const SpatialDomain<2> & domain, const OwnerSegment2D & seg)
+public static bool is_anchored_in_domain(const SpatialDomain<2> & domain, const OwnerSegment2D & seg)
 ```
 
 
 ### intersects_domain
 
 ```cpp
-public bool intersects_domain(const SpatialDomain<2> & domain, const OwnerSegment2D & seg)
+public static bool intersects_domain(const SpatialDomain<2> & domain, const OwnerSegment2D & seg)
 ```
 
 

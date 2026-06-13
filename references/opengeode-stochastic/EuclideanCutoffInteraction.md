@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from PairwiseInteraction<Point<2> >
+Inherits from PairwiseInteraction<class geode::Point<2> >
 ```
 
 
@@ -69,7 +69,7 @@ protected double compute(const ObjectRef<Type> & object_a, const ObjectRef<Type>
 
 
 ```cpp
-Inherits from PairwiseInteraction<OwnerSegment<2> >
+Inherits from PairwiseInteraction<class geode::OwnerSegment<2> >
 ```
 
 
@@ -78,7 +78,7 @@ Inherits from PairwiseInteraction<OwnerSegment<2> >
 
 
 ```cpp
-Inherits from PairwiseInteraction<Point<3> >
+Inherits from PairwiseInteraction<class geode::Point<3> >
 ```
 
 

@@ -40,14 +40,14 @@ public void VonMises()
 ### distribution_type_static
 
 ```cpp
-public NamedType distribution_type_static()
+public static DistributionType distribution_type_static()
 ```
 
 
 ### distribution_type
 
 ```cpp
-public NamedType distribution_type()
+public DistributionType distribution_type()
 ```
 
 
@@ -61,7 +61,7 @@ public bool is_valid()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

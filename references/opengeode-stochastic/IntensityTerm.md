@@ -25,7 +25,7 @@ Inherits from SingleObjectTerm<OwnerSegment2D, std::function<double (const Owner
 ### IntensityTerm
 
 ```cpp
-public void IntensityTerm(basic_string_view name, double lambda, vector targeted_set_ids, double caracteristic_length, const SpatialDomain<OwnerSegment2D::dim> & domain)
+public void IntensityTerm(std::string_view name, double lambda, std::vector<uuid> targeted_set_ids, double caracteristic_length, const SpatialDomain<OwnerSegment2D::dim> & domain)
 ```
 
 

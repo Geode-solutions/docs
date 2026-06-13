@@ -19,7 +19,7 @@ const name = words.join('-');
 ### sample
 
 ```cpp
-public Point<dimension> sample(RandomEngine & engine, const Object<dimension> & object)
+public static Point<dimension> sample(RandomEngine & engine, const Object<dimension> & object)
 ```
 
 

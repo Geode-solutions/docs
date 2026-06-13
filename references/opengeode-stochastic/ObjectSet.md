@@ -40,6 +40,13 @@ Inherits from Identifier
 
 ## Functions
 
+### set_name
+
+```cpp
+public void set_name(std::string_view name)
+```
+
+
 ### ObjectSet
 
 ```cpp
@@ -58,13 +65,6 @@ public void ObjectSet<Type>(ObjectSet<Type> && )
 
 ```cpp
 public ObjectSet<Type> & operator=(ObjectSet<Type> && )
-```
-
-
-### set_name
-
-```cpp
-public void set_name(basic_string_view name)
 ```
 
 
@@ -141,7 +141,7 @@ public bool empty()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
