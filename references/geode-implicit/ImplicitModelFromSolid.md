@@ -82,14 +82,14 @@ public void add_fault_surface(const TriangulatedSurface3D & fault_surface)
 ### set_horizon_scalar_function_and_isovalue
 
 ```cpp
-public void set_horizon_scalar_function_and_isovalue(const Horizon3D & stack_horizon, basic_string_view scalar_function_name, double isovalue)
+public void set_horizon_scalar_function_and_isovalue(const Horizon3D & stack_horizon, std::string_view scalar_function_name, double isovalue)
 ```
 
 
 ### set_stratigraphic_unit_scalar_function
 
 ```cpp
-public void set_stratigraphic_unit_scalar_function(const StratigraphicUnit3D & stack_unit, basic_string_view scalar_function_name)
+public void set_stratigraphic_unit_scalar_function(const StratigraphicUnit3D & stack_unit, std::string_view scalar_function_name)
 ```
 
 

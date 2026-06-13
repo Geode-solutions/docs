@@ -14,6 +14,15 @@ const name = words.join('-');
 # class DuplicatedCell3D
 
 
+## Members
+
+```cpp
+public static const auto VALUE_NODE_INDEX_ATTRIBUTE_NAME
+
+```
+
+
+
 ## Functions
 
 ### DuplicatedCell3D
@@ -61,7 +70,7 @@ public void ~DuplicatedCell3D()
 ### insert_surface_triangles_in_cell
 
 ```cpp
-public bool insert_surface_triangles_in_cell(const TriangulatedSurface3D & mesh, Span triangles_ids)
+public bool insert_surface_triangles_in_cell(const TriangulatedSurface3D & mesh, absl::Span<const index_t> triangles_ids)
 ```
 
 
@@ -75,7 +84,7 @@ public void paint_connected_blocks()
 ### cell_duplicate_mesh
 
 ```cpp
-public unique_ptr cell_duplicate_mesh(index_t duplicate_id)
+public std::unique_ptr<TetrahedralSolid3D> cell_duplicate_mesh(index_t duplicate_id)
 ```
 
 
@@ -159,28 +168,28 @@ public void set_node_on_discontinuity_final_duplicate(local_index_t cell_node, i
 ### cell_node_edge_duplicate
 
 ```cpp
-public optional cell_node_edge_duplicate(local_index_t cell_node, local_index_t cell_edge)
+public absl::optional<index_t> cell_node_edge_duplicate(local_index_t cell_node, local_index_t cell_edge)
 ```
 
 
 ### cell_duplicate_index
 
 ```cpp
-public InlinedVector cell_duplicate_index(const Point3D & position)
+public absl::InlinedVector<index_t, 1> cell_duplicate_index(const Point3D & position)
 ```
 
 
 ### discontinuity_facet_duplicate
 
 ```cpp
-public optional discontinuity_facet_duplicate(const uuid & discontinuity_id, index_t discontinuity_facet, const Vector3D & normal_towards_duplicate)
+public absl::optional<index_t> discontinuity_facet_duplicate(const uuid & discontinuity_id, index_t discontinuity_facet, const Vector3D & normal_towards_duplicate)
 ```
 
 
 ### discontinuity_vertex_duplicate
 
 ```cpp
-public optional discontinuity_vertex_duplicate(const uuid & discontinuity_id, index_t discontinuity_vertex, index_t discontinuity_facet, const Vector3D & normal_towards_duplicate)
+public absl::optional<index_t> discontinuity_vertex_duplicate(const uuid & discontinuity_id, index_t discontinuity_vertex, index_t discontinuity_facet, const Vector3D & normal_towards_duplicate)
 ```
 
 

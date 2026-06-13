@@ -71,14 +71,14 @@ public index_t add_tangential_data(const Point<dimension> & position, const Vect
 ### add_tangential_data
 
 ```cpp
-public void add_tangential_data(const PointSet<dimension> & tangential_data, const ReadOnlyAttribute<Vector<dimension> > & tangents_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
+public void add_tangential_data(const PointSet<dimension> & tangential_data, const ReadOnlyAttribute<Vector<dimension>> & tangents_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
 ```
 
 
 ### add_orthogonal_vectors_to_tangential_data
 
 ```cpp
-public void add_orthogonal_vectors_to_tangential_data(const PointSet<dimension> & direction_data, const ReadOnlyAttribute<Vector<dimension> > & direction_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
+public void add_orthogonal_vectors_to_tangential_data(const PointSet<dimension> & direction_data, const ReadOnlyAttribute<Vector<dimension>> & direction_attribute, const ReadOnlyAttribute<double> & weight_attribute, const std::vector<bool> & data_to_account)
 ```
 
 

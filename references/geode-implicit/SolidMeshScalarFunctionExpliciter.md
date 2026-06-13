@@ -19,7 +19,7 @@ const name = words.join('-');
 ### SolidMeshScalarFunctionExpliciter
 
 ```cpp
-public void SolidMeshScalarFunctionExpliciter(std::unique_ptr<TetrahedralSolid3D> && solid, basic_string_view scalar_function_name)
+public void SolidMeshScalarFunctionExpliciter(std::unique_ptr<TetrahedralSolid3D> && solid, std::string_view scalar_function_name)
 ```
 
 
@@ -40,7 +40,7 @@ public void ~SolidMeshScalarFunctionExpliciter()
 ### add_scalar_isovalues
 
 ```cpp
-public void add_scalar_isovalues(Span scalar_function_values)
+public void add_scalar_isovalues(absl::Span<const double> scalar_function_values)
 ```
 
 

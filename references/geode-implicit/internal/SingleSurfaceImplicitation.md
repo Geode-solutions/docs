@@ -14,6 +14,20 @@ const name = words.join('-');
 # class SingleSurfaceImplicitation
 
 
+## Members
+
+```cpp
+public static const auto SCALAR_FUNCTION_NAME
+
+```
+
+```cpp
+public static const double SURFACE_IMPLICIT_VALUE
+
+```
+
+
+
 ## Functions
 
 ### SingleSurfaceImplicitation
@@ -61,21 +75,21 @@ public void ~SingleSurfaceImplicitation()
 ### add_data_points
 
 ```cpp
-public void add_data_points(const PointSet3D & data_points, double min_distance, basic_string_view weight_attribute_name)
+public void add_data_points(const PointSet3D & data_points, double min_distance, std::string_view weight_attribute_name)
 ```
 
 
 ### add_data_curve
 
 ```cpp
-public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance, basic_string_view weight_attribute_name)
+public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance, std::string_view weight_attribute_name)
 ```
 
 
 ### add_data_surface
 
 ```cpp
-public void add_data_surface(const SurfaceMesh3D & data_surface, double min_distance, basic_string_view weight_attribute_name)
+public void add_data_surface(const SurfaceMesh3D & data_surface, double min_distance, std::string_view weight_attribute_name)
 ```
 
 

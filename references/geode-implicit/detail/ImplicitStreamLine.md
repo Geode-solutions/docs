@@ -19,42 +19,42 @@ const name = words.join('-');
 ### ImplicitStreamLine
 
 ```cpp
-public void ImplicitStreamLine<>(const ImplicitStreamLine<> & )
+public void ImplicitStreamLine<value-parameter-0-0>(const ImplicitStreamLine<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public ImplicitStreamLine<> & operator=(const ImplicitStreamLine<> & )
+public ImplicitStreamLine<dimension> & operator=(const ImplicitStreamLine<dimension> & )
 ```
 
 
 ### ImplicitStreamLine
 
 ```cpp
-public void ImplicitStreamLine<>()
+public void ImplicitStreamLine<value-parameter-0-0>()
 ```
 
 
 ### ImplicitStreamLine
 
 ```cpp
-public void ImplicitStreamLine<>(ImplicitStreamLine<> && stream_line)
+public void ImplicitStreamLine<value-parameter-0-0>(ImplicitStreamLine<dimension> && stream_line)
 ```
 
 
 ### operator=
 
 ```cpp
-public ImplicitStreamLine<> & operator=(ImplicitStreamLine<> && stream_line)
+public ImplicitStreamLine<dimension> & operator=(ImplicitStreamLine<dimension> && stream_line)
 ```
 
 
 ### ~ImplicitStreamLine
 
 ```cpp
-public void ~ImplicitStreamLine<>()
+public void ~ImplicitStreamLine<value-parameter-0-0>()
 ```
 
 
@@ -82,7 +82,7 @@ public double point_value(index_t point_index)
 ### length_between_values
 
 ```cpp
-public optional length_between_values(double value1, double value2)
+public std::optional<double> length_between_values(double value1, double value2)
 ```
 
 

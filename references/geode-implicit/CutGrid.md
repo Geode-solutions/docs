@@ -43,21 +43,63 @@ Inherits from ComputationGrid<dimension>
 ### CutGrid
 
 ```cpp
-public void CutGrid<>(const CutGrid<> & )
+public void CutGrid<value-parameter-0-0>(const CutGrid<dimension> & )
 ```
 
+
+### cell_is_duplicated
+
+```cpp
+public bool cell_is_duplicated(const CellIndices & cell_indices)
+```
+
+### nb_cell_duplicates
+
+```cpp
+public index_t nb_cell_duplicates(const CellIndices & cell_indices)
+```
+
+### is_cell_duplicate_active
+
+```cpp
+public bool is_cell_duplicate_active(const CellIndices & cell_indices, index_t cell_duplicate_index)
+```
+
+### cell_duplicate_index
+
+```cpp
+public index_t cell_duplicate_index(const CellIndices & index, local_index_t cell_node_id)
+```
+
+### cell_duplicate_index
+
+```cpp
+public absl::InlinedVector<index_t, 1> cell_duplicate_index(const CellIndices & index, const Point<dimension> & position)
+```
+
+### grid_vertex_indices_from_ghost_node
+
+```cpp
+public VertexIndices grid_vertex_indices_from_ghost_node(index_t ghost_node_id)
+```
+
+### ghost_node_cell_duplicate_id
+
+```cpp
+public std::optional<index_t> ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIndices & cell_indices)
+```
 
 ### operator=
 
 ```cpp
-public CutGrid<> & operator=(const CutGrid<> & )
+public CutGrid<dimension> & operator=(const CutGrid<dimension> & )
 ```
 
 
 ### ~CutGrid
 
 ```cpp
-public void ~CutGrid<>()
+public void ~CutGrid<value-parameter-0-0>()
 ```
 
 
@@ -89,52 +131,10 @@ public double get_node_value(index_t value_node_id)
 ```
 
 
-### cell_is_duplicated
-
-```cpp
-public bool cell_is_duplicated(const CellIndices & cell_indices)
-```
-
-### nb_cell_duplicates
-
-```cpp
-public index_t nb_cell_duplicates(const CellIndices & cell_indices)
-```
-
-### is_cell_duplicate_active
-
-```cpp
-public bool is_cell_duplicate_active(const CellIndices & cell_indices, index_t cell_duplicate_index)
-```
-
 ### value_node_in_cut_grid
 
 ```cpp
-public optional value_node_in_cut_grid(const CellIndices & cell_indices, local_index_t cell_node_id, index_t cell_duplicate_index)
-```
-
-### cell_duplicate_index
-
-```cpp
-public index_t cell_duplicate_index(const CellIndices & index, local_index_t cell_node_id)
-```
-
-### cell_duplicate_index
-
-```cpp
-public InlinedVector cell_duplicate_index(const CellIndices & index, const Point<dimension> & position)
-```
-
-### grid_vertex_indices_from_ghost_node
-
-```cpp
-public VertexIndices grid_vertex_indices_from_ghost_node(index_t ghost_node_id)
-```
-
-### ghost_node_cell_duplicate_id
-
-```cpp
-public optional ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIndices & cell_indices)
+public std::optional<index_t> value_node_in_cut_grid(const CellIndices & cell_indices, local_index_t cell_node_id, index_t cell_duplicate_index)
 ```
 
 ### isovalue_goes_through_cell_duplicate
@@ -161,42 +161,42 @@ public void compute_ghost_nodes_derivatives()
 ### ghost_nodes_derivatives
 
 ```cpp
-public const absl::linked_hash_map<index_t, std::vector<index_t> > & ghost_nodes_derivatives()
+public const absl::linked_hash_map<index_t, std::vector<index_t>> & ghost_nodes_derivatives()
 ```
 
 
 ### value_node_surrounding_ghost_node_id
 
 ```cpp
-public optional value_node_surrounding_ghost_node_id(index_t ghost_node_id, const std::array<int, dimension> & search_direction, local_index_t surrounding_node)
+public std::optional<index_t> value_node_surrounding_ghost_node_id(index_t ghost_node_id, const std::array<int, dimension> & search_direction, local_index_t surrounding_node)
 ```
 
 
 ### CutGrid
 
 ```cpp
-protected void CutGrid<>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
+protected void CutGrid<value-parameter-0-0>(Point<dimension> origin, std::array<index_t, dimension> cells_number, std::array<double, dimension> cells_length)
 ```
 
 
 ### CutGrid
 
 ```cpp
-protected void CutGrid<>(CutGrid<dimension> && other)
+protected void CutGrid<value-parameter-0-0>(CutGrid<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected CutGrid<> & operator=(CutGrid<dimension> && other)
+protected CutGrid<dimension> & operator=(CutGrid<dimension> && other)
 ```
 
 
 ### CutGrid
 
 ```cpp
-protected void CutGrid<>(ComputationGrid<dimension> && other)
+protected void CutGrid<value-parameter-0-0>(ComputationGrid<dimension> && other)
 ```
 
 

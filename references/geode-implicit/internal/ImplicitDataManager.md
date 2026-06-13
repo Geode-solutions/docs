@@ -43,28 +43,28 @@ Inherits from DataConstraintsManager<dimension>
 ### ImplicitDataManager
 
 ```cpp
-public void ImplicitDataManager<>(const ImplicitDataManager<> & )
+public void ImplicitDataManager<value-parameter-0-0>(const ImplicitDataManager<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public ImplicitDataManager<> & operator=(const ImplicitDataManager<> & )
+public ImplicitDataManager<dimension> & operator=(const ImplicitDataManager<dimension> & )
 ```
 
 
 ### ImplicitDataManager
 
 ```cpp
-public void ImplicitDataManager<>()
+public void ImplicitDataManager<value-parameter-0-0>()
 ```
 
 
 ### ImplicitDataManager
 
 ```cpp
-public void ImplicitDataManager<>(ImplicitDataManager<dimension> && other)
+public void ImplicitDataManager<value-parameter-0-0>(ImplicitDataManager<dimension> && other)
 ```
 
 
@@ -78,7 +78,7 @@ public ImplicitDataManager<dimension> & operator=(ImplicitDataManager<dimension>
 ### ~ImplicitDataManager
 
 ```cpp
-public void ~ImplicitDataManager<>()
+public void ~ImplicitDataManager<value-parameter-0-0>()
 ```
 
 
@@ -120,14 +120,14 @@ public double data_point_value(index_t data_point_index)
 ### data_value_from_uuid
 
 ```cpp
-public optional data_value_from_uuid(const uuid & data_id)
+public std::optional<double> data_value_from_uuid(const uuid & data_id)
 ```
 
 
 ### min_distance_between_data_points
 
 ```cpp
-public optional min_distance_between_data_points(const uuid & first_data_id, const uuid & second_data_id)
+public std::optional<double> min_distance_between_data_points(const uuid & first_data_id, const uuid & second_data_id)
 ```
 
 

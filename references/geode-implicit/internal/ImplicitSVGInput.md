@@ -25,21 +25,14 @@ Inherits from ImplicitCrossSectionInput
 ### ImplicitSVGInput
 
 ```cpp
-public void ImplicitSVGInput(basic_string_view filename)
+public void ImplicitSVGInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public ImplicitCrossSection read()
+public static std::string_view extension()
 ```
 
 
@@ -61,6 +54,13 @@ public index_t object_priority()
 
 ```cpp
 public Percentage is_loadable()
+```
+
+
+### read
+
+```cpp
+public ImplicitCrossSection read()
 ```
 
 

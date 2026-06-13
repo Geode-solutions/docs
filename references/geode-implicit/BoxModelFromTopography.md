@@ -65,14 +65,14 @@ public void ~BoxModelFromTopography()
 ### add_topography
 
 ```cpp
-public void add_topography(const PointSet3D & data_points, double min_distance, basic_string_view weight_attribute_name)
+public void add_topography(const PointSet3D & data_points, double min_distance, std::string_view weight_attribute_name)
 ```
 
 
 ### add_topography
 
 ```cpp
-public void add_topography(const SurfaceMesh3D & data_surface, double min_distance, basic_string_view weight_attribute_name)
+public void add_topography(const SurfaceMesh3D & data_surface, double min_distance, std::string_view weight_attribute_name)
 ```
 
 

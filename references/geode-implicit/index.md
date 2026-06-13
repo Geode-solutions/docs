@@ -71,21 +71,21 @@ const name = words.join('-');
 ### extract_implicit_cross_section_from_axis
 
 ```cpp
-tuple extract_implicit_cross_section_from_axis(const ImplicitStructuralModel & model, local_index_t axis_direction, double axis_coordinate)
+std::tuple<ImplicitCrossSection, StructuralModelToCrossSectionMapping> extract_implicit_cross_section_from_axis(const ImplicitStructuralModel & model, local_index_t axis_direction, double axis_coordinate)
 ```
 
 
 ### extract_implicit_cross_section_from_plane
 
 ```cpp
-tuple extract_implicit_cross_section_from_plane(const ImplicitStructuralModel & model, const Plane & section_plane)
+std::tuple<ImplicitCrossSection, StructuralModelToCrossSectionMapping> extract_implicit_cross_section_from_plane(const ImplicitStructuralModel & model, const Plane & section_plane)
 ```
 
 
 ### extract_stratigraphic_section_from_axis
 
 ```cpp
-tuple extract_stratigraphic_section_from_axis(const StratigraphicModel & model, local_index_t axis_direction, double axis_coordinate)
+std::tuple<StratigraphicSection, StructuralModelToCrossSectionMapping> extract_stratigraphic_section_from_axis(const StratigraphicModel & model, local_index_t axis_direction, double axis_coordinate)
 ```
 
 

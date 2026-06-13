@@ -96,7 +96,7 @@ public void set_horizon_implicit_value(const uuid & horizon_id, double value)
 ### compute_implicit_in_blocks
 
 ```cpp
-public vector compute_implicit_in_blocks(const ImplicitationParameters & computation_parameters, bool compute_first_thickness_guess)
+public std::vector<BlockImplicitInfo> compute_implicit_in_blocks(const ImplicitationParameters & computation_parameters, bool compute_first_thickness_guess)
 ```
 
 

@@ -61,35 +61,35 @@ public void ~SingleSurfaceFromVertices()
 ### add_data_points
 
 ```cpp
-public void add_data_points(const PointSet3D & data_points, double min_distance, basic_string_view weight_attribute_name)
+public void add_data_points(const PointSet3D & data_points, double min_distance, std::string_view weight_attribute_name)
 ```
 
 
 ### add_data_curve
 
 ```cpp
-public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance, basic_string_view weight_attribute_name)
+public void add_data_curve(const EdgedCurve3D & data_curve, double min_distance, std::string_view weight_attribute_name)
 ```
 
 
 ### add_outline
 
 ```cpp
-public void add_outline(const EdgedCurve3D & outline, basic_string_view weight_attribute_name)
+public void add_outline(const EdgedCurve3D & outline, std::string_view weight_attribute_name)
 ```
 
 
 ### build
 
 ```cpp
-public unique_ptr build(const ImplicitationParameters & computation_parameters)
+public std::unique_ptr<TriangulatedSurface3D> build(const ImplicitationParameters & computation_parameters)
 ```
 
 
 ### build
 
 ```cpp
-public unique_ptr build(double expected_mesh_size)
+public std::unique_ptr<TriangulatedSurface3D> build(double expected_mesh_size)
 ```
 
 

@@ -14,7 +14,28 @@ const name = words.join('-');
 # class FDMCurvatureMinimizationImpl
 
 
+## Members
+
+```cpp
+protected static const double ENLARGED_CELL_PART_RATIO
+
+```
+
+```cpp
+protected static const double ENLARGED_DATA_WEIGHT_RATIO
+
+```
+
+
+
 ## Functions
+
+### FDMCurvatureMinimizationImpl
+
+```cpp
+public void FDMCurvatureMinimizationImpl<dimension>(FDMCurvatureMinimizationImpl<dimension> && )
+```
+
 
 ### FDMCurvatureMinimizationImpl
 
@@ -30,13 +51,6 @@ public FDMCurvatureMinimizationImpl<dimension> & operator=(const FDMCurvatureMin
 ```
 
 
-### FDMCurvatureMinimizationImpl
-
-```cpp
-public void FDMCurvatureMinimizationImpl<dimension>(FDMCurvatureMinimizationImpl<dimension> && )
-```
-
-
 ### operator=
 
 ```cpp
@@ -47,7 +61,7 @@ public FDMCurvatureMinimizationImpl<dimension> & operator=(FDMCurvatureMinimizat
 ### use_scalar_function_preconditioning
 
 ```cpp
-public void use_scalar_function_preconditioning(basic_string_view function_name)
+public void use_scalar_function_preconditioning(std::string_view function_name)
 ```
 
 
@@ -65,7 +79,7 @@ public void add_boundary_value_condition(double value_to_set)
 ### compute_scalar_function
 
 ```cpp
-public void compute_scalar_function(basic_string_view scalar_function_name)
+public void compute_scalar_function(std::string_view scalar_function_name)
 ```
 
 
@@ -165,6 +179,34 @@ protected local_index_t nb_derivatives()
 # class FDMCurvatureMinimizationImpl
 
 
+## Members
+
+```cpp
+protected static const double ENLARGED_CELL_PART_RATIO
+
+```
+
+```cpp
+protected static const double ENLARGED_DATA_WEIGHT_RATIO
+
+```
+
+
+
 # class FDMCurvatureMinimizationImpl
+
+
+## Members
+
+```cpp
+protected static const double ENLARGED_CELL_PART_RATIO
+
+```
+
+```cpp
+protected static const double ENLARGED_DATA_WEIGHT_RATIO
+
+```
+
 
 

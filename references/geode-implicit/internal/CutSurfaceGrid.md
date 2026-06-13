@@ -39,7 +39,7 @@ public CutSurfaceGrid & operator=(const CutSurfaceGrid & )
 ### CutSurfaceGrid
 
 ```cpp
-public void CutSurfaceGrid(Point origin, array cells_number, array cells_length)
+public void CutSurfaceGrid(Point2D origin, std::array<index_t, 2> cells_number, std::array<double, 2> cells_length)
 ```
 
 
@@ -116,7 +116,7 @@ public bool is_cell_duplicate_active(const CellIndices & cell_indices, index_t c
 ### value_node_in_cut_grid
 
 ```cpp
-public optional value_node_in_cut_grid(const CellIndices & cell_indices, local_index_t cell_node_id, index_t cell_duplicate_id)
+public std::optional<index_t> value_node_in_cut_grid(const CellIndices & cell_indices, local_index_t cell_node_id, index_t cell_duplicate_id)
 ```
 
 
@@ -130,28 +130,28 @@ public index_t cell_duplicate_index(const CellIndices & index, local_index_t cel
 ### cell_duplicate_index
 
 ```cpp
-public InlinedVector cell_duplicate_index(const CellIndices & cell, const Point2D & position)
+public absl::InlinedVector<index_t, 1> cell_duplicate_index(const CellIndices & cell, const Point2D & position)
 ```
 
 
 ### grid_vertex_indices_from_ghost_node
 
 ```cpp
-public array grid_vertex_indices_from_ghost_node(index_t ghost_node_id)
+public VertexIndices grid_vertex_indices_from_ghost_node(index_t ghost_node_id)
 ```
 
 
 ### ghost_node_cell_duplicate_id
 
 ```cpp
-public optional ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIndices & cell_indices)
+public std::optional<index_t> ghost_node_cell_duplicate_id(index_t ghost_node_id, const CellIndices & cell_indices)
 ```
 
 
 ### discontinuity_vertex_duplicate
 
 ```cpp
-public optional discontinuity_vertex_duplicate(const CellIndices & cell, const uuid & discontinuity_id, index_t discontinuity_vertex, index_t discontinuity_edge, bool edge_towards_vertex)
+public std::optional<index_t> discontinuity_vertex_duplicate(const CellIndices & cell, const uuid & discontinuity_id, index_t discontinuity_vertex, index_t discontinuity_edge, bool edge_towards_vertex)
 ```
 
 

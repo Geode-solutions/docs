@@ -86,12 +86,5 @@ public void SegmentInGrid<dimension>(typename geode::ComputationGrid<dimension>:
 ```
 
 
-### SegmentInGrid
-
-```cpp
-public void SegmentInGrid<dimension>(typename geode::ComputationGrid<dimension>::CellIndices cell_in, geode::Point<dimension> p0_in_grid_in, geode::Point<dimension> p1_in_grid_in)
-```
-
-
 
 

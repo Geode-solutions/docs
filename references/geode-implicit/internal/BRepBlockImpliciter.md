@@ -68,21 +68,21 @@ public void compute_implicit_function(const ImplicitationParameters & computatio
 ### implicit_stream_lines
 
 ```cpp
-public vector implicit_stream_lines()
+public std::vector<detail::ImplicitStreamLine3D> implicit_stream_lines()
 ```
 
 
 ### interpolate_function_on_mesh
 
 ```cpp
-public void interpolate_function_on_mesh(Span implicit_isovalues)
+public void interpolate_function_on_mesh(absl::Span<const double> implicit_isovalues)
 ```
 
 
 ### create_mesh_with_function_in_block
 
 ```cpp
-public void create_mesh_with_function_in_block(Span implicit_isovalues)
+public void create_mesh_with_function_in_block(absl::Span<const double> implicit_isovalues)
 ```
 
 

@@ -25,7 +25,7 @@ Inherits from Output<CutSurfaceGrid>
 ### CutSurfaceGridOutput
 
 ```cpp
-protected void CutSurfaceGridOutput(basic_string_view filename)
+protected void CutSurfaceGridOutput(std::string_view filename)
 ```
 
 

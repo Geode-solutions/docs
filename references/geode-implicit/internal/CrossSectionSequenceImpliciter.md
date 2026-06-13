@@ -96,7 +96,7 @@ public void set_horizon_implicit_value(const uuid & horizon_id, double value)
 ### compute_implicit_in_surfaces
 
 ```cpp
-public vector compute_implicit_in_surfaces(const ImplicitationParameters & computation_parameters)
+public std::vector<SurfaceImplicitInfo> compute_implicit_in_surfaces(const ImplicitationParameters & computation_parameters)
 ```
 
 

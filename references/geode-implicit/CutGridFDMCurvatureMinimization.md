@@ -29,17 +29,17 @@ public void CutGridFDMCurvatureMinimization<dimension>(const CutGridFDMCurvature
 ```
 
 
-### operator=
-
-```cpp
-public CutGridFDMCurvatureMinimization<dimension> & operator=(const CutGridFDMCurvatureMinimization<dimension> & )
-```
-
-
 ### CutGridFDMCurvatureMinimization
 
 ```cpp
 public void CutGridFDMCurvatureMinimization<dimension>(CutGridFDMCurvatureMinimization<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public CutGridFDMCurvatureMinimization<dimension> & operator=(const CutGridFDMCurvatureMinimization<dimension> & )
 ```
 
 
@@ -67,7 +67,7 @@ public void ~CutGridFDMCurvatureMinimization<dimension>()
 ### use_scalar_function_preconditioning
 
 ```cpp
-public void use_scalar_function_preconditioning(basic_string_view function_name)
+public void use_scalar_function_preconditioning(std::string_view function_name)
 ```
 
 
@@ -81,14 +81,14 @@ public void add_boundary_value_condition(double value_to_set)
 ### compute_scalar_function
 
 ```cpp
-public void compute_scalar_function(basic_string_view scalar_function_name)
+public void compute_scalar_function(std::string_view scalar_function_name)
 ```
 
 
 ### surrounding_value_nodes
 
 ```cpp
-public array surrounding_value_nodes(const typename Grid<dimension>::VertexIndices & node_indices, local_index_t derivative_axis_id)
+public std::array<index_t, 3> surrounding_value_nodes(const typename Grid<dimension>::VertexIndices & node_indices, local_index_t derivative_axis_id)
 ```
 
 

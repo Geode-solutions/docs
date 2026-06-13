@@ -30,6 +30,20 @@ public CrossSectionImpliciter & operator=(const CrossSectionImpliciter & )
 ```
 
 
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
+```
+
+
 ### CrossSectionImpliciter
 
 ```cpp
@@ -58,20 +72,6 @@ public void ~CrossSectionImpliciter()
 ```
 
 
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
-```
-
-
 ### cross_section
 
 ```cpp
@@ -96,14 +96,14 @@ public void set_stratigraphic_unit_thickness(const StratigraphicUnit2D & strati_
 ### add_horizon_data_points
 
 ```cpp
-public void add_horizon_data_points(const Horizon2D & horizon, const PointSet2D & pointset, basic_string_view weight_attribute_name)
+public void add_horizon_data_points(const Horizon2D & horizon, const PointSet2D & pointset, std::string_view weight_attribute_name)
 ```
 
 
 ### add_horizon_data_curve
 
 ```cpp
-public void add_horizon_data_curve(const Horizon2D & horizon, const EdgedCurve2D & data_curve, basic_string_view weight_attribute_name)
+public void add_horizon_data_curve(const Horizon2D & horizon, const EdgedCurve2D & data_curve, std::string_view weight_attribute_name)
 ```
 
 

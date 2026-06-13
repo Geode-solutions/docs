@@ -56,38 +56,31 @@ geode::local_index_t nb_fdm_derivatives(geode::local_index_t dimension)
 ```
 
 
+### snap_function_isovalue_to_vertices
+
+```cpp
+void snap_function_isovalue_to_vertices(const BRep & model, std::string_view function_name, double isovalue, double tolerance)
+```
+
+
+### ordered_groups_of_horizons_to_implicit
+
+```cpp
+std::vector<HorizonsList> ordered_groups_of_horizons_to_implicit(const HorizonsStack<dimension> & horizons_stack)
+```
+
+
+### brep_from_computation_grid
+
+```cpp
+BRep brep_from_computation_grid(const BoundingBox3D & bounding_box, const ComputationGrid3D & computation_grid, absl::Span<const double> values_to_densify_around)
+```
+
+
 ### derivative_direction
 
 ```cpp
 const std::array<int, dimension> & derivative_direction(geode::local_index_t axis_id)
-```
-
-
-### segments_in_grid
-
-```cpp
-std::vector<SegmentInGrid<dimension> > segments_in_grid(const Point<dimension> & p_0, const Point<dimension> & p_1, const ComputationGrid<dimension> & grid)
-```
-
-
-### edge_points_on_isovalue_from_grid
-
-```cpp
-vector edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const ComputationGrid3D & computation_grid, double function_isovalue)
-```
-
-
-### edge_points_on_isovalue_from_grid
-
-```cpp
-vector edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const CutSolidGrid & cut_grid, double function_isovalue, optional border_info)
-```
-
-
-### snap_function_isovalue_to_vertices
-
-```cpp
-void snap_function_isovalue_to_vertices(const BRep & model, basic_string_view function_name, double isovalue, double tolerance)
 ```
 
 
@@ -101,28 +94,14 @@ double horizon_implicit_function_tolerance(const ImplicitStructuralModel & model
 ### computation_grid_explicitation_points
 
 ```cpp
-pair computation_grid_explicitation_points(const ComputationGrid3D & computation_grid, Span explicitation_values)
-```
-
-
-### cut_grid_explicitation_points
-
-```cpp
-pair cut_grid_explicitation_points(const CutGrid3D & cut_grid, Span explicitation_values)
-```
-
-
-### ordered_groups_of_horizons_to_implicit
-
-```cpp
-vector ordered_groups_of_horizons_to_implicit(const HorizonsStack<dimension> & horizons_stack)
+std::pair<std::vector<geode::Point3D>, std::vector<double>> computation_grid_explicitation_points(const ComputationGrid3D & computation_grid, absl::Span<const double> explicitation_values)
 ```
 
 
 ### save_cut_surface_grid
 
 ```cpp
-vector save_cut_surface_grid(const CutSurfaceGrid & cut_surface_grid, basic_string_view filename)
+std::vector<std::string> save_cut_surface_grid(const CutSurfaceGrid & cut_surface_grid, std::string_view filename)
 ```
 
 
@@ -132,17 +111,38 @@ vector save_cut_surface_grid(const CutSurfaceGrid & cut_surface_grid, basic_stri
 
 **filename** [in] Path to the file where save the CutSurfaceGrid.
 
-### is_cut_surface_grid_saveable
+### cut_grid_explicitation_points
 
 ```cpp
-bool is_cut_surface_grid_saveable(const CutSurfaceGrid & cut_surface_grid, basic_string_view filename)
+std::pair<std::vector<geode::Point3D>, std::vector<double>> cut_grid_explicitation_points(const CutGrid3D & cut_grid, absl::Span<const double> explicitation_values)
 ```
 
 
-### brep_from_computation_grid
+### is_cut_surface_grid_saveable
 
 ```cpp
-BRep brep_from_computation_grid(const BoundingBox3D & bounding_box, const ComputationGrid3D & computation_grid, Span values_to_densify_around)
+bool is_cut_surface_grid_saveable(const CutSurfaceGrid & cut_surface_grid, std::string_view filename)
+```
+
+
+### segments_in_grid
+
+```cpp
+std::vector<SegmentInGrid<dimension>> segments_in_grid(const Point<dimension> & p_0, const Point<dimension> & p_1, const ComputationGrid<dimension> & grid)
+```
+
+
+### edge_points_on_isovalue_from_grid
+
+```cpp
+std::vector<geode::Point3D> edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const ComputationGrid3D & computation_grid, double function_isovalue)
+```
+
+
+### edge_points_on_isovalue_from_grid
+
+```cpp
+std::vector<geode::Point3D> edge_points_on_isovalue_from_grid(const Point3D & edge_p0, const Point3D & edge_p1, const CutSolidGrid & cut_grid, double function_isovalue, std::optional<VolumeBorderIdentificationInfo> border_info)
 ```
 
 

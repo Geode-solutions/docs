@@ -61,14 +61,14 @@ public void ~ClosedSurfacesFromCurves()
 ### add_closed_curve_data
 
 ```cpp
-public void add_closed_curve_data(const EdgedCurve3D & curve, double min_distance, basic_string_view weight_attribute_name)
+public void add_closed_curve_data(const EdgedCurve3D & curve, double min_distance, std::string_view weight_attribute_name)
 ```
 
 
 ### build
 
 ```cpp
-public vector build(const ImplicitationParameters & computation_parameters)
+public std::vector<std::unique_ptr<TriangulatedSurface3D>> build(const ImplicitationParameters & computation_parameters)
 ```
 
 

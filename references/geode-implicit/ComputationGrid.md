@@ -20,6 +20,15 @@ Inherits from LightRegularGrid<dimension>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 ## Functions
 
 ### ComputationGrid
@@ -123,14 +132,14 @@ public std::vector<CellIndices> active_cells_around(const Point<dimension> & pos
 ### value_node_from_grid_vertex_indices
 
 ```cpp
-public optional value_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
+public std::optional<index_t> value_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
 ```
 
 
 ### computation_node_from_grid_vertex_indices
 
 ```cpp
-public optional computation_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
+public std::optional<index_t> computation_node_from_grid_vertex_indices(const VertexIndices & vertex_indices)
 ```
 
 
@@ -151,14 +160,14 @@ public const VertexIndices & grid_vertex_indices_from_computation_node(index_t c
 ### set_node_values_attribute_name
 
 ```cpp
-public void set_node_values_attribute_name(basic_string_view name)
+public void set_node_values_attribute_name(std::string_view name)
 ```
 
 
 ### node_values_attribute_name
 
 ```cpp
-public basic_string_view node_values_attribute_name()
+public std::string_view node_values_attribute_name()
 ```
 
 
@@ -200,7 +209,7 @@ public index_t nb_border_derivatives()
 ### border_value_nodes_derivatives
 
 ```cpp
-public const absl::linked_hash_map<index_t, std::vector<index_t> > & border_value_nodes_derivatives()
+public const absl::linked_hash_map<index_t, std::vector<index_t>> & border_value_nodes_derivatives()
 ```
 
 
@@ -229,11 +238,29 @@ Inherits from LightRegularGrid<3U>
 
 
 
+## Members
+
+```cpp
+public static const auto dim
+
+```
+
+
+
 # class ComputationGrid
 
 
 ```cpp
 Inherits from LightRegularGrid<2U>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dim
+
 ```
 
 
