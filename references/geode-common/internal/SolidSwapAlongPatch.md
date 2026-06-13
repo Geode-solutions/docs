@@ -25,14 +25,14 @@ OppositeVertexStatus
 ### SolidSwapAlongPatch
 
 ```cpp
-public void SolidSwapAlongPatch(const SolidSwapAlongPatch & )
+public void SolidSwapAlongPatch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, absl::Span<const index_t> patch_vertices, const Triangle3D & macro_triangle)
 ```
 
 
-### operator=
+### SolidSwapAlongPatch
 
 ```cpp
-public SolidSwapAlongPatch & operator=(const SolidSwapAlongPatch & )
+public void SolidSwapAlongPatch(const SolidSwapAlongPatch & )
 ```
 
 
@@ -46,21 +46,14 @@ public void SolidSwapAlongPatch(SolidSwapAlongPatch && )
 ### operator=
 
 ```cpp
+public SolidSwapAlongPatch & operator=(const SolidSwapAlongPatch & )
+```
+
+
+### operator=
+
+```cpp
 public SolidSwapAlongPatch & operator=(SolidSwapAlongPatch && )
-```
-
-
-### SolidSwapAlongPatch
-
-```cpp
-public void SolidSwapAlongPatch(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, Span patch_vertices, const Triangle3D & macro_triangle)
-```
-
-
-### ~SolidSwapAlongPatch
-
-```cpp
-public void ~SolidSwapAlongPatch()
 ```
 
 
@@ -68,6 +61,13 @@ public void ~SolidSwapAlongPatch()
 
 ```cpp
 public SolidSwapPatchInfo swap()
+```
+
+
+### ~SolidSwapAlongPatch
+
+```cpp
+public void ~SolidSwapAlongPatch()
 ```
 
 

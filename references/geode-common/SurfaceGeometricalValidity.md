@@ -22,7 +22,7 @@ public bool is_geometrically_valid
 ```
 
 ```cpp
-public std::vector<Triangle<dimension> > invalid_new_triangles
+public std::vector<Triangle<dimension>> invalid_new_triangles
 
 ```
 

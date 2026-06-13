@@ -23,13 +23,6 @@ public void SolidSwapAlongPath(const SolidSwapAlongPath & )
 ```
 
 
-### operator=
-
-```cpp
-public SolidSwapAlongPath & operator=(const SolidSwapAlongPath & )
-```
-
-
 ### SolidSwapAlongPath
 
 ```cpp
@@ -40,14 +33,14 @@ public void SolidSwapAlongPath(SolidSwapAlongPath && )
 ### operator=
 
 ```cpp
-public SolidSwapAlongPath & operator=(SolidSwapAlongPath && )
+public SolidSwapAlongPath & operator=(const SolidSwapAlongPath & )
 ```
 
 
-### SolidSwapAlongPath
+### operator=
 
 ```cpp
-public void SolidSwapAlongPath(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
+public SolidSwapAlongPath & operator=(SolidSwapAlongPath && )
 ```
 
 
@@ -55,6 +48,13 @@ public void SolidSwapAlongPath(const TetrahedralSolid3D & solid, TetrahedralSoli
 
 ```cpp
 public void ~SolidSwapAlongPath()
+```
+
+
+### SolidSwapAlongPath
+
+```cpp
+public void SolidSwapAlongPath(const TetrahedralSolid3D & solid, TetrahedralSolidModifier & modifier, index_t begin, index_t end)
 ```
 
 

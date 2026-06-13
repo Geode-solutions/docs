@@ -85,7 +85,7 @@ public bool is_vertex()
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

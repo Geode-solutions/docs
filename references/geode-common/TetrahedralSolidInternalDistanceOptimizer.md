@@ -29,17 +29,17 @@ public void TetrahedralSolidInternalDistanceOptimizer(const TetrahedralSolidInte
 ```
 
 
-### operator=
-
-```cpp
-public TetrahedralSolidInternalDistanceOptimizer & operator=(const TetrahedralSolidInternalDistanceOptimizer & )
-```
-
-
 ### TetrahedralSolidInternalDistanceOptimizer
 
 ```cpp
 public void TetrahedralSolidInternalDistanceOptimizer(TetrahedralSolidInternalDistanceOptimizer && )
+```
+
+
+### operator=
+
+```cpp
+public TetrahedralSolidInternalDistanceOptimizer & operator=(const TetrahedralSolidInternalDistanceOptimizer & )
 ```
 
 
@@ -60,7 +60,7 @@ public void ~TetrahedralSolidInternalDistanceOptimizer()
 ### restrict_to_zone
 
 ```cpp
-public void restrict_to_zone(Span elements)
+public void restrict_to_zone(absl::Span<const Element> elements)
 ```
 
 

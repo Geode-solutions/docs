@@ -30,6 +30,13 @@ public BRepImprovementSimulator & operator=(const BRepImprovementSimulator & )
 ```
 
 
+### initialize_block_simulators
+
+```cpp
+public void initialize_block_simulators(const BRep & brep)
+```
+
+
 ### BRepImprovementSimulator
 
 ```cpp
@@ -41,13 +48,6 @@ public void BRepImprovementSimulator()
 
 ```cpp
 public void ~BRepImprovementSimulator()
-```
-
-
-### initialize_block_simulators
-
-```cpp
-public void initialize_block_simulators(const BRep & brep)
 ```
 
 

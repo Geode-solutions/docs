@@ -16,15 +16,15 @@ const name = words.join('-');
 
 ## Records
 
+CollapseEdgeInfo
+
 CommonConstraints
 
 OrientedEdgeVertices
 
-CollapseEdgeInfo
+RemoveAdjacencyInfo
 
 SplitInfo
-
-RemoveAdjacencyInfo
 
 
 

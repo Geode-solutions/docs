@@ -30,6 +30,20 @@ public FixedArray old_tetrahedra_ids
 
 ## Functions
 
+### operator=
+
+```cpp
+public SwapTetrahedraAfter & operator=(const SwapTetrahedraAfter & other)
+```
+
+
+### operator=
+
+```cpp
+public SwapTetrahedraAfter & operator=(SwapTetrahedraAfter && other)
+```
+
+
 ### SwapTetrahedraAfter
 
 ```cpp
@@ -48,20 +62,6 @@ public void SwapTetrahedraAfter(const SwapTetrahedraAfter & other)
 
 ```cpp
 public void SwapTetrahedraAfter(SwapTetrahedraAfter && other)
-```
-
-
-### operator=
-
-```cpp
-public SwapTetrahedraAfter & operator=(const SwapTetrahedraAfter & other)
-```
-
-
-### operator=
-
-```cpp
-public SwapTetrahedraAfter & operator=(SwapTetrahedraAfter && other)
 ```
 
 

@@ -23,7 +23,7 @@ Inherits from GeodeCommonCutterSurfaceException
 ## Members
 
 ```cpp
-public std::vector<std::pair<index_t, PolygonEdgeSplit<dimension> > > invalid_splits
+public std::vector<std::pair<index_t, PolygonEdgeSplit<dimension>>> invalid_splits
 
 ```
 

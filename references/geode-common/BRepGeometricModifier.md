@@ -18,25 +18,25 @@ const name = words.join('-');
 
 AdvancedBRepMeshModifiers
 
-CleanVerticesMappings
-
-CleanElementsMappings
-
-CleanMappings
-
-BRepSplitTriangleInfo
-
-BRepSplitTetrahedronInfo
+BRepCollapsePolygonEdgeInfo
 
 BRepRemoveMultipleAdjacencyInfo
 
 BRepSplitPolygonEdgeInfo
 
-BRepCollapsePolygonEdgeInfo
+BRepSplitTetrahedronInfo
+
+BRepSplitTriangleInfo
 
 BRepSwapEdgeInfo
 
 BRepSwapFacetInfo
+
+CleanElementsMappings
+
+CleanMappings
+
+CleanVerticesMappings
 
 
 
@@ -388,21 +388,21 @@ public bool is_tetrahedron_active(const Block3D & block, index_t tetrahedron)
 ### inactive_edges
 
 ```cpp
-public void inactive_edges(const Line3D & line, Span edges)
+public void inactive_edges(const Line3D & line, absl::Span<const index_t> edges)
 ```
 
 
 ### inactive_triangles
 
 ```cpp
-public void inactive_triangles(const Surface3D & surface, Span triangles)
+public void inactive_triangles(const Surface3D & surface, absl::Span<const index_t> triangles)
 ```
 
 
 ### inactive_tetrahedra
 
 ```cpp
-public void inactive_tetrahedra(const Block3D & block, Span tetrahedra)
+public void inactive_tetrahedra(const Block3D & block, absl::Span<const index_t> tetrahedra)
 ```
 
 
@@ -430,70 +430,70 @@ public CleanElementsMappings clean_elements()
 ### clean_triangles_surfaces
 
 ```cpp
-public linked_hash_map clean_triangles_surfaces()
+public OldToNews clean_triangles_surfaces()
 ```
 
 
 ### clean_surface_edges
 
 ```cpp
-public linked_hash_map clean_surface_edges()
+public OldToNews clean_surface_edges()
 ```
 
 
 ### clean_vertices_surfaces
 
 ```cpp
-public linked_hash_map clean_vertices_surfaces()
+public OldToNews clean_vertices_surfaces()
 ```
 
 
 ### clean_edges_lines
 
 ```cpp
-public linked_hash_map clean_edges_lines()
+public OldToNews clean_edges_lines()
 ```
 
 
 ### clean_vertices_lines
 
 ```cpp
-public linked_hash_map clean_vertices_lines()
+public OldToNews clean_vertices_lines()
 ```
 
 
 ### clean_tetrahedra_blocks
 
 ```cpp
-public linked_hash_map clean_tetrahedra_blocks()
+public OldToNews clean_tetrahedra_blocks()
 ```
 
 
 ### clean_block_edges
 
 ```cpp
-public linked_hash_map clean_block_edges()
+public OldToNews clean_block_edges()
 ```
 
 
 ### clean_block_facets
 
 ```cpp
-public linked_hash_map clean_block_facets()
+public OldToNews clean_block_facets()
 ```
 
 
 ### clean_vertices_blocks
 
 ```cpp
-public linked_hash_map clean_vertices_blocks()
+public OldToNews clean_vertices_blocks()
 ```
 
 
 ### clean_unique_vertices
 
 ```cpp
-public vector clean_unique_vertices()
+public std::vector<index_t> clean_unique_vertices()
 ```
 
 

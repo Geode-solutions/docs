@@ -29,17 +29,17 @@ public void TriangulatedSurfaceOrchestrator<dimension, ElementId>(const Triangul
 ```
 
 
-### operator=
-
-```cpp
-public TriangulatedSurfaceOrchestrator<dimension, ElementId> & operator=(const TriangulatedSurfaceOrchestrator<dimension, ElementId> & )
-```
-
-
 ### TriangulatedSurfaceOrchestrator
 
 ```cpp
 public void TriangulatedSurfaceOrchestrator<dimension, ElementId>(TriangulatedSurfaceOrchestrator<dimension, ElementId> && )
+```
+
+
+### operator=
+
+```cpp
+public TriangulatedSurfaceOrchestrator<dimension, ElementId> & operator=(const TriangulatedSurfaceOrchestrator<dimension, ElementId> & )
 ```
 
 

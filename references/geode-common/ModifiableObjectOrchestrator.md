@@ -29,17 +29,17 @@ public void ModifiableObjectOrchestrator<Object, Element>(const ModifiableObject
 ```
 
 
-### operator=
-
-```cpp
-public ModifiableObjectOrchestrator<Object, Element> & operator=(const ModifiableObjectOrchestrator<Object, Element> & )
-```
-
-
 ### ModifiableObjectOrchestrator
 
 ```cpp
 public void ModifiableObjectOrchestrator<Object, Element>(ModifiableObjectOrchestrator<Object, Element> && )
+```
+
+
+### operator=
+
+```cpp
+public ModifiableObjectOrchestrator<Object, Element> & operator=(const ModifiableObjectOrchestrator<Object, Element> & )
 ```
 
 

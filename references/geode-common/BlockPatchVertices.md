@@ -38,7 +38,7 @@ public vector vertices
 ### BlockPatchVertices
 
 ```cpp
-public void BlockPatchVertices(const Block3D & block_in, Triangle macro_triangle_in, vector vertices_in)
+public void BlockPatchVertices(const Block3D & block_in, Triangle3D macro_triangle_in, std::vector<index_t> vertices_in)
 ```
 
 

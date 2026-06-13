@@ -39,7 +39,7 @@ public TriangulatedSurfaceConstraintModifier<dimension> & operator=(const Triang
 ### TriangulatedSurfaceConstraintModifier
 
 ```cpp
-public void TriangulatedSurfaceConstraintModifier<dimension>(ModifiableTriangulatedSurface<dimension> surface, CommonConstraints constraints)
+public void TriangulatedSurfaceConstraintModifier<dimension>(ModifiableTriangulatedSurface<dimension> surface, Constraints constraints)
 ```
 
 
@@ -116,7 +116,7 @@ public SplitInfo split_edge(const PolygonEdge & edge, const Point<dimension> & p
 ### swap_edge
 
 ```cpp
-public vector swap_edge(const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
+public std::vector<index_t> swap_edge(const PolygonEdge & edge, const std::optional<PolygonVertex> & tshape_apex)
 ```
 
 

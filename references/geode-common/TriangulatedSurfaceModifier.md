@@ -22,21 +22,21 @@ Inherits from VerticesModifier, EdgesModifier, TrianglesModifier
 
 ## Records
 
-PolygonEdgeInfo
-
-SplitPolygonEdgeInfo
-
-SplitTriangleInfo
+CleanMappings
 
 CollapseEdgeInfo
 
-SwapEdgeInfo
+PolygonEdgeInfo
 
 RemoveMultipleAdjacencyInfo
 
 SplitCollapseInfo
 
-CleanMappings
+SplitPolygonEdgeInfo
+
+SplitTriangleInfo
+
+SwapEdgeInfo
 
 
 
@@ -101,7 +101,7 @@ public void inactive_triangle(index_t triangle_id)
 ### inactive_triangles
 
 ```cpp
-public void inactive_triangles(Span triangles)
+public void inactive_triangles(absl::Span<const index_t> triangles)
 ```
 
 
@@ -203,14 +203,14 @@ public SplitCollapseInfo split_collapse_edge(const PolygonEdge & edge, const Poi
 ### replace_vertex
 
 ```cpp
-public BijectiveMapping replace_vertex(index_t old_id, index_t new_id)
+public BijectiveMapping<index_t> replace_vertex(index_t old_id, index_t new_id)
 ```
 
 
 ### clean_triangles
 
 ```cpp
-public vector clean_triangles()
+public std::vector<index_t> clean_triangles()
 ```
 
 
@@ -221,7 +221,7 @@ public vector clean_triangles()
 ### clean_vertices
 
 ```cpp
-public vector clean_vertices()
+public std::vector<index_t> clean_vertices()
 ```
 
 
@@ -234,7 +234,7 @@ public vector clean_vertices()
 ### clean_edges
 
 ```cpp
-public vector clean_edges()
+public std::vector<index_t> clean_edges()
 ```
 
 

@@ -22,6 +22,12 @@ Inherits from Metric<dimension>
 
 ## Functions
 
+### median_metric
+
+```cpp
+public double median_metric()
+```
+
 ### metric
 
 ```cpp
@@ -47,12 +53,6 @@ public double minimal_metric(const Triangle<dimension> & triangle)
 public typename std::enable_if<T == 3, double>::type minimal_metric(const Tetrahedron & tetrahedron)
 ```
 
-
-### median_metric
-
-```cpp
-public double median_metric()
-```
 
 
 

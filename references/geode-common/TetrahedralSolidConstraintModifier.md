@@ -45,7 +45,7 @@ public TetrahedralSolidConstraintModifier & operator=(const TetrahedralSolidCons
 ### TetrahedralSolidConstraintModifier
 
 ```cpp
-public void TetrahedralSolidConstraintModifier(ModifiableObject solid, Constraints constraints)
+public void TetrahedralSolidConstraintModifier(ModifiableTetrahedralSolid solid, Constraints constraints)
 ```
 
 
@@ -115,7 +115,7 @@ public SplitInfo split_edge(const PolyhedronFacetEdge & edge, const Point3D & po
 ### swap_edge
 
 ```cpp
-public vector swap_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
+public std::vector<index_t> swap_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
 ```
 
 
@@ -129,7 +129,7 @@ public SplitInfo split_facet(const PolyhedronFacet & facet, const Point3D & poin
 ### swap_facet
 
 ```cpp
-public vector swap_facet(const PolyhedronFacet & facet, const std::optional<PolyhedronVertex> & tshape_apex)
+public std::vector<index_t> swap_facet(const PolyhedronFacet & facet, const std::optional<PolyhedronVertex> & tshape_apex)
 ```
 
 
@@ -185,7 +185,7 @@ public RemoveAdjacencyInfo remove_double_adjacency(const PolyhedronFacetEdge & e
 ### do_swap_edge
 
 ```cpp
-protected std::tuple<TetrahedralSolidModifier::SwapEdgeInfo, std::vector<index_t> > do_swap_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
+protected std::tuple<TetrahedralSolidModifier::SwapEdgeInfo, std::vector<index_t>> do_swap_edge(const PolyhedronFacetEdge & edge, index_t apex, const std::optional<SolidEdgeTShape> & tshape)
 ```
 
 

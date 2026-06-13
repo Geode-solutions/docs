@@ -18,17 +18,17 @@ const name = words.join('-');
 
 AdvancedSectionMeshModifiers
 
-CleanVerticesMappings
-
 CleanElementsMappings
 
 CleanMappings
 
-SectionSplitTriangleInfo
+CleanVerticesMappings
+
+SectionCollapsePolygonEdgeInfo
 
 SectionSplitPolygonEdgeInfo
 
-SectionCollapsePolygonEdgeInfo
+SectionSplitTriangleInfo
 
 SectionSwapEdgeInfo
 
@@ -136,7 +136,7 @@ public void rescale_point(index_t unique_vertex, const std::array<double, 2> & s
 ### updated_vertex
 
 ```cpp
-public optional updated_vertex(const Line2D & line, index_t vertex)
+public std::optional<index_t> updated_vertex(const Line2D & line, index_t vertex)
 ```
 
 
@@ -164,7 +164,7 @@ public void set_updated_edge(const Line2D & line, const EdgeMapping & mapping)
 ### updated_vertex
 
 ```cpp
-public optional updated_vertex(const Surface2D & surface, index_t vertex)
+public std::optional<index_t> updated_vertex(const Surface2D & surface, index_t vertex)
 ```
 
 
@@ -206,7 +206,7 @@ public void set_updated_triangle(const Surface2D & surface, const TriangleMappin
 ### updated_unique_vertex
 
 ```cpp
-public optional updated_unique_vertex(index_t unique_vertex)
+public std::optional<index_t> updated_unique_vertex(index_t unique_vertex)
 ```
 
 
@@ -248,14 +248,14 @@ public bool is_triangle_active(const Surface2D & surface, index_t triangle)
 ### inactive_edges
 
 ```cpp
-public void inactive_edges(const Line2D & line, Span edges)
+public void inactive_edges(const Line2D & line, absl::Span<const index_t> edges)
 ```
 
 
 ### inactive_triangles
 
 ```cpp
-public void inactive_triangles(const Surface2D & surface, Span triangles)
+public void inactive_triangles(const Surface2D & surface, absl::Span<const index_t> triangles)
 ```
 
 
@@ -283,42 +283,42 @@ public CleanElementsMappings clean_elements()
 ### clean_triangles_surfaces
 
 ```cpp
-public linked_hash_map clean_triangles_surfaces()
+public OldToNews clean_triangles_surfaces()
 ```
 
 
 ### clean_surface_edges
 
 ```cpp
-public linked_hash_map clean_surface_edges()
+public OldToNews clean_surface_edges()
 ```
 
 
 ### clean_vertices_surfaces
 
 ```cpp
-public linked_hash_map clean_vertices_surfaces()
+public OldToNews clean_vertices_surfaces()
 ```
 
 
 ### clean_edges_lines
 
 ```cpp
-public linked_hash_map clean_edges_lines()
+public OldToNews clean_edges_lines()
 ```
 
 
 ### clean_vertices_lines
 
 ```cpp
-public linked_hash_map clean_vertices_lines()
+public OldToNews clean_vertices_lines()
 ```
 
 
 ### clean_unique_vertices
 
 ```cpp
-public vector clean_unique_vertices()
+public std::vector<index_t> clean_unique_vertices()
 ```
 
 

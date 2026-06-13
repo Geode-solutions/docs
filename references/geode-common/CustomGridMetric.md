@@ -25,7 +25,7 @@ Inherits from IsotropicMetric<dimension>
 ### CustomGridMetric
 
 ```cpp
-public void CustomGridMetric<dimension>(const Grid<dimension> & grid, basic_string_view attribute_name)
+public void CustomGridMetric<dimension>(const Grid<dimension> & grid, std::string_view attribute_name)
 ```
 
 

@@ -47,17 +47,17 @@ public void TriangulatedSurfaceShiftOptimizer<dimension>(const TriangulatedSurfa
 ```
 
 
-### operator=
-
-```cpp
-public TriangulatedSurfaceShiftOptimizer<dimension> & operator=(const TriangulatedSurfaceShiftOptimizer<dimension> & )
-```
-
-
 ### TriangulatedSurfaceShiftOptimizer
 
 ```cpp
 public void TriangulatedSurfaceShiftOptimizer<dimension>(TriangulatedSurfaceShiftOptimizer<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public TriangulatedSurfaceShiftOptimizer<dimension> & operator=(const TriangulatedSurfaceShiftOptimizer<dimension> & )
 ```
 
 
@@ -85,7 +85,7 @@ public void ~TriangulatedSurfaceShiftOptimizer<dimension>()
 ### process_edge_vertex_configuration
 
 ```cpp
-protected optional process_edge_vertex_configuration(const PolygonEdge & edge, index_t level)
+protected std::optional<ProcessElementResult> process_edge_vertex_configuration(const PolygonEdge & edge, index_t level)
 ```
 
 

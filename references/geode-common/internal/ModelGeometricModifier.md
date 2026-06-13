@@ -20,6 +20,15 @@ Inherits from VerticesModifier
 
 
 
+## Members
+
+```cpp
+protected static const auto dimension
+
+```
+
+
+
 ## Functions
 
 ### ModelGeometricModifier
@@ -102,49 +111,49 @@ public void rescale_point(index_t unique_vertex, double scale)
 ### clean_triangles_surfaces
 
 ```cpp
-public linked_hash_map clean_triangles_surfaces()
+public OldToNews clean_triangles_surfaces()
 ```
 
 
 ### clean_surface_edges
 
 ```cpp
-public linked_hash_map clean_surface_edges()
+public OldToNews clean_surface_edges()
 ```
 
 
 ### clean_vertices_surfaces
 
 ```cpp
-public linked_hash_map clean_vertices_surfaces()
+public OldToNews clean_vertices_surfaces()
 ```
 
 
 ### clean_edges_lines
 
 ```cpp
-public linked_hash_map clean_edges_lines()
+public OldToNews clean_edges_lines()
 ```
 
 
 ### clean_vertices_lines
 
 ```cpp
-public linked_hash_map clean_vertices_lines()
+public OldToNews clean_vertices_lines()
 ```
 
 
 ### clean_unique_vertices
 
 ```cpp
-public vector clean_unique_vertices()
+public std::vector<index_t> clean_unique_vertices()
 ```
 
 
 ### updated_line_vertex
 
 ```cpp
-public optional updated_line_vertex(const Line<dimension> & line, index_t vertex)
+public std::optional<index_t> updated_line_vertex(const Line<dimension> & line, index_t vertex)
 ```
 
 
@@ -158,7 +167,7 @@ public void set_updated_line_vertex(const Line<dimension> & line, const VertexMu
 ### updated_surface_vertex
 
 ```cpp
-public optional updated_surface_vertex(const Surface<dimension> & surface, index_t vertex)
+public std::optional<index_t> updated_surface_vertex(const Surface<dimension> & surface, index_t vertex)
 ```
 
 
@@ -235,14 +244,14 @@ public bool is_edge_active(const Line<dimension> & line, index_t edge)
 ### inactive_edges
 
 ```cpp
-public void inactive_edges(const Line<dimension> & line, Span edges)
+public void inactive_edges(const Line<dimension> & line, absl::Span<const index_t> edges)
 ```
 
 
 ### inactive_triangles
 
 ```cpp
-public void inactive_triangles(const Surface<dimension> & surface, Span triangles)
+public void inactive_triangles(const Surface<dimension> & surface, absl::Span<const index_t> triangles)
 ```
 
 
@@ -277,14 +286,14 @@ protected void collapse_vertex_identifier(const ModelCollapsePolygonEdgeInfo<dim
 ### collapse_edge_surfaces
 
 ```cpp
-protected void collapse_edge_surfaces(const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<dimension> & point, ModelCollapsePolygonEdgeInfo<dimension> & info)
+protected void collapse_edge_surfaces(const ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<dimension> & point, ModelCollapsePolygonEdgeInfo<dimension> & info)
 ```
 
 
 ### split_triangle_surfaces
 
 ```cpp
-protected void split_triangle_surfaces(const struct ModelComponentMeshPolygons::SurfacePolygons & surface_polygons, const Point<dimension> & point, ModelSplitTriangleInfo<dimension> & info)
+protected void split_triangle_surfaces(const ModelComponentMeshPolygons::SurfacePolygons & surface_polygons, const Point<dimension> & point, ModelSplitTriangleInfo<dimension> & info)
 ```
 
 
@@ -305,21 +314,21 @@ protected void swap_edge_surface(const Surface<dimension> & surface, const Polyg
 ### split_edge_surfaces
 
 ```cpp
-protected void split_edge_surfaces(const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<dimension> & point, ModelSplitPolygonEdgeInfo<dimension> & info)
+protected void split_edge_surfaces(const ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<dimension> & point, ModelSplitPolygonEdgeInfo<dimension> & info)
 ```
 
 
 ### collapse_edge_lines
 
 ```cpp
-protected void collapse_edge_lines(const struct ModelComponentMeshEdges::LineEdges & line_edges, const Point<dimension> & point, ModelCollapsePolygonEdgeInfo<dimension> & info)
+protected void collapse_edge_lines(const ModelComponentMeshEdges::LineEdges & line_edges, const Point<dimension> & point, ModelCollapsePolygonEdgeInfo<dimension> & info)
 ```
 
 
 ### split_edge_lines
 
 ```cpp
-protected void split_edge_lines(const struct ModelComponentMeshEdges::LineEdges & line_edges, const Point<dimension> & point, ModelSplitPolygonEdgeInfo<dimension> & info)
+protected void split_edge_lines(const ModelComponentMeshEdges::LineEdges & line_edges, const Point<dimension> & point, ModelSplitPolygonEdgeInfo<dimension> & info)
 ```
 
 

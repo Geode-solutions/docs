@@ -25,27 +25,6 @@ public FixedArray modified
 
 ## Functions
 
-### TetrahedraAfter
-
-```cpp
-public void TetrahedraAfter(size_t nb_modified_tetrahedra)
-```
-
-
-### TetrahedraAfter
-
-```cpp
-public void TetrahedraAfter(const TetrahedraAfter & other)
-```
-
-
-### TetrahedraAfter
-
-```cpp
-public void TetrahedraAfter(TetrahedraAfter && other)
-```
-
-
 ### ~TetrahedraAfter
 
 ```cpp
@@ -64,6 +43,27 @@ public TetrahedraAfter & operator=(const TetrahedraAfter & other)
 
 ```cpp
 public TetrahedraAfter & operator=(TetrahedraAfter && other)
+```
+
+
+### TetrahedraAfter
+
+```cpp
+public void TetrahedraAfter(size_t nb_modified_tetrahedra)
+```
+
+
+### TetrahedraAfter
+
+```cpp
+public void TetrahedraAfter(const TetrahedraAfter & other)
+```
+
+
+### TetrahedraAfter
+
+```cpp
+public void TetrahedraAfter(TetrahedraAfter && other)
 ```
 
 

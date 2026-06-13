@@ -26,14 +26,14 @@ public void ~FileLicenseChecker()
 ### FileLicenseChecker
 
 ```cpp
-protected void FileLicenseChecker(basic_string_view license_name)
+protected void FileLicenseChecker(std::string_view license_name)
 ```
 
 
 ### is_license_file_available
 
 ```cpp
-protected tuple is_license_file_available()
+protected std::tuple<bool, std::string> is_license_file_available()
 ```
 
 

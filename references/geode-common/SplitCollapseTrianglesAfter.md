@@ -23,13 +23,27 @@ Inherits from SwapTrianglesAfter<dimension>
 ## Members
 
 ```cpp
-public absl::FixedArray<ModifiedTriangle<dimension> > modified
+public absl::FixedArray<ModifiedTriangle<dimension>> modified
 
 ```
 
 
 
 ## Functions
+
+### operator=
+
+```cpp
+public SplitCollapseTrianglesAfter<dimension> & operator=(const SplitCollapseTrianglesAfter<dimension> & other)
+```
+
+
+### operator=
+
+```cpp
+public SplitCollapseTrianglesAfter<dimension> & operator=(SplitCollapseTrianglesAfter<dimension> && other)
+```
+
 
 ### SplitCollapseTrianglesAfter
 
@@ -56,20 +70,6 @@ public void SplitCollapseTrianglesAfter<dimension>(const SplitCollapseTrianglesA
 
 ```cpp
 public void SplitCollapseTrianglesAfter<dimension>(SplitCollapseTrianglesAfter<dimension> && other)
-```
-
-
-### operator=
-
-```cpp
-public SplitCollapseTrianglesAfter<dimension> & operator=(const SplitCollapseTrianglesAfter<dimension> & other)
-```
-
-
-### operator=
-
-```cpp
-public SplitCollapseTrianglesAfter<dimension> & operator=(SplitCollapseTrianglesAfter<dimension> && other)
 ```
 
 

@@ -40,6 +40,13 @@ public ForbiddenEdges forbidden_edges
 
 ## Functions
 
+### add_constraints
+
+```cpp
+public void add_constraints(const CommonConstraints & constraints)
+```
+
+
 ### CommonConstraints
 
 ```cpp
@@ -65,13 +72,6 @@ public CommonConstraints & operator=(CommonConstraints && )
 
 ```cpp
 public void ~CommonConstraints()
-```
-
-
-### add_constraints
-
-```cpp
-public void add_constraints(const CommonConstraints & constraints)
 ```
 
 

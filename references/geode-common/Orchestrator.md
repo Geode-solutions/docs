@@ -14,15 +14,24 @@ const name = words.join('-');
 # class Orchestrator
 
 
-## Records
+## Members
 
-ProcessElementResult
+```cpp
+public static const bool ACTIVE_DEBUG
+
+```
+
+
+
+## Records
 
 ElementStamp
 
-Stamp
-
 Exception
+
+ProcessElementResult
+
+Stamp
 
 
 
@@ -35,17 +44,17 @@ public void Orchestrator<ElementType>(const Orchestrator<ElementType> & )
 ```
 
 
-### operator=
-
-```cpp
-public Orchestrator<ElementType> & operator=(const Orchestrator<ElementType> & )
-```
-
-
 ### Orchestrator
 
 ```cpp
 public void Orchestrator<ElementType>(Orchestrator<ElementType> && )
+```
+
+
+### operator=
+
+```cpp
+public Orchestrator<ElementType> & operator=(const Orchestrator<ElementType> & )
 ```
 
 

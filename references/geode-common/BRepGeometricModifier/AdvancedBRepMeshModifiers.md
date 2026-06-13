@@ -25,7 +25,7 @@ Inherits from detail::AdvancedModelMeshModifiers<BRep>
 ### AdvancedBRepMeshModifiers
 
 ```cpp
-public void AdvancedBRepMeshModifiers(const BRep & model, BRepBuilder & builder, BRepGeometricModifier & brep_modifier, PassKey )
+public void AdvancedBRepMeshModifiers(const BRep & model, BRepBuilder & builder, BRepGeometricModifier & brep_modifier, BRepGeometricModifierKey )
 ```
 
 
@@ -39,7 +39,7 @@ public TetrahedralSolidModifier & block_modifier(const Block3D & block)
 ### modifiable_solid
 
 ```cpp
-public ModifiableObject modifiable_solid(const Block3D & block)
+public ModifiableTetrahedralSolid modifiable_solid(const Block3D & block)
 ```
 
 

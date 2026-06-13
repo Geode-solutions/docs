@@ -33,7 +33,7 @@ public Point location
 ### GeometricSolidPath
 
 ```cpp
-public void GeometricSolidPath(SolidPath path_in, Point point)
+public void GeometricSolidPath(SolidPath path_in, Point3D point)
 ```
 
 

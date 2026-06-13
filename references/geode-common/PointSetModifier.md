@@ -67,7 +67,7 @@ public bool is_point_active(index_t point_id)
 ### clean
 
 ```cpp
-public vector clean()
+public std::vector<index_t> clean()
 ```
 
 

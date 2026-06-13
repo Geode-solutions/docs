@@ -19,13 +19,6 @@ const name = words.join('-');
 
 ## Functions
 
-### ~TriangulatedSurfaceDecimatorOperator
-
-```cpp
-public void ~TriangulatedSurfaceDecimatorOperator<dimension>()
-```
-
-
 ### skip_edge
 
 ```cpp
@@ -36,6 +29,13 @@ public bool skip_edge(const TriangulatedSurface<dimension> & surface, const Poly
 
 ```cpp
 protected void TriangulatedSurfaceDecimatorOperator<dimension>(const TriangulatedSurface<dimension> & triangulated)
+```
+
+
+### ~TriangulatedSurfaceDecimatorOperator
+
+```cpp
+public void ~TriangulatedSurfaceDecimatorOperator<dimension>()
 ```
 
 

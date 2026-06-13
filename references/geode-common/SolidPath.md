@@ -31,9 +31,26 @@ public index_t vertex_id
 
 ```
 
+```cpp
+public static array VERTEX_POSITION
+
+```
+
+```cpp
+public static array EDGE_POSITION
+
+```
+
 
 
 ## Functions
+
+### SolidPath
+
+```cpp
+public void SolidPath()
+```
+
 
 ### SolidPath
 
@@ -46,13 +63,6 @@ public void SolidPath(const TetrahedralSolid3D & solid, PolyhedronFacet facet_in
 
 ```cpp
 public void SolidPath(index_t vertex_in)
-```
-
-
-### SolidPath
-
-```cpp
-public void SolidPath()
 ```
 
 
@@ -94,14 +104,14 @@ public bool are_same_paths(const TetrahedralSolid3D & solid, const SolidPath & o
 ### get_vertex_position
 
 ```cpp
-public POSITION get_vertex_position(geode::local_index_t vertex)
+public geode::POSITION get_vertex_position(geode::local_index_t vertex)
 ```
 
 
 ### get_edge_position
 
 ```cpp
-public POSITION get_edge_position(geode::local_index_t edge)
+public geode::POSITION get_edge_position(geode::local_index_t edge)
 ```
 
 

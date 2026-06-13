@@ -30,6 +30,20 @@ public index_t vertex_to
 
 ## Functions
 
+### opposite
+
+```cpp
+public OrientedEdgeVertices opposite()
+```
+
+
+### updated
+
+```cpp
+public OrientedEdgeVertices updated(const VerticesModifier & modifier)
+```
+
+
 ### OrientedEdgeVertices
 
 ```cpp
@@ -72,24 +86,10 @@ public void ~OrientedEdgeVertices()
 ```
 
 
-### opposite
-
-```cpp
-public OrientedEdgeVertices opposite()
-```
-
-
-### updated
-
-```cpp
-public OrientedEdgeVertices updated(const VerticesModifier & modifier)
-```
-
-
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

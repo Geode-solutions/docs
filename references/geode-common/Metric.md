@@ -20,13 +20,6 @@ const name = words.join('-');
 
 ## Functions
 
-### ~Metric
-
-```cpp
-public void ~Metric<dimension>()
-```
-
-
 ### metric
 
 ```cpp
@@ -50,6 +43,13 @@ public std::array<double, dimension> global_minimal_metric()
 ```cpp
 public CoordinateSystem<dimension> coordinate_system(const Point<dimension> & point)
 ```
+
+### ~Metric
+
+```cpp
+public void ~Metric<dimension>()
+```
+
 
 
 

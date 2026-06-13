@@ -29,17 +29,17 @@ public void TriangulatedSurfaceInternalDistanceOptimizer<dimension>(const Triang
 ```
 
 
-### operator=
-
-```cpp
-public TriangulatedSurfaceInternalDistanceOptimizer<dimension> & operator=(const TriangulatedSurfaceInternalDistanceOptimizer<dimension> & )
-```
-
-
 ### TriangulatedSurfaceInternalDistanceOptimizer
 
 ```cpp
 public void TriangulatedSurfaceInternalDistanceOptimizer<dimension>(TriangulatedSurfaceInternalDistanceOptimizer<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public TriangulatedSurfaceInternalDistanceOptimizer<dimension> & operator=(const TriangulatedSurfaceInternalDistanceOptimizer<dimension> & )
 ```
 
 

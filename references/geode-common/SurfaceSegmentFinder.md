@@ -59,28 +59,9 @@ public Path find_path()
 ### stop_propagation
 
 ```cpp
-protected optional stop_propagation(const SurfacePath & path)
+protected std::optional<bool> stop_propagation(const SurfacePath & path)
 ```
 
-
-### next_intersection
-
-```cpp
-protected optional next_intersection(const SurfacePath & previous_path, const SurfacePath & current_path)
-```
-
-
-### next_vertex_intersection
-
-```cpp
-protected optional next_vertex_intersection(const SurfacePath & previous_path, index_t vertex)
-```
-
-### next_edge_intersection
-
-```cpp
-protected SurfacePath next_edge_intersection(const PolygonEdge & adjacent_edge)
-```
 
 ### begin
 
@@ -95,6 +76,25 @@ protected index_t begin()
 protected index_t end()
 ```
 
+
+### next_intersection
+
+```cpp
+protected std::optional<SurfacePath> next_intersection(const SurfacePath & previous_path, const SurfacePath & current_path)
+```
+
+
+### next_vertex_intersection
+
+```cpp
+protected std::optional<SurfacePath> next_vertex_intersection(const SurfacePath & previous_path, index_t vertex)
+```
+
+### next_edge_intersection
+
+```cpp
+protected SurfacePath next_edge_intersection(const PolygonEdge & adjacent_edge)
+```
 
 ### segment
 

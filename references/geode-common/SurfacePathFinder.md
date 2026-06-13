@@ -20,34 +20,6 @@ const name = words.join('-');
 
 ## Functions
 
-### SurfacePathFinder
-
-```cpp
-public void SurfacePathFinder<dimension>(const SurfacePathFinder<dimension> & )
-```
-
-
-### operator=
-
-```cpp
-public SurfacePathFinder<dimension> & operator=(const SurfacePathFinder<dimension> & )
-```
-
-
-### SurfacePathFinder
-
-```cpp
-public void SurfacePathFinder<dimension>(SurfacePathFinder<dimension> && )
-```
-
-
-### operator=
-
-```cpp
-public SurfacePathFinder<dimension> & operator=(SurfacePathFinder<dimension> && )
-```
-
-
 ### ~SurfacePathFinder
 
 ```cpp
@@ -80,6 +52,34 @@ protected Segment<dimension> edge_segment(const PolygonEdge & edge)
 
 ```cpp
 protected const TriangulatedSurface<dimension> & surface()
+```
+
+
+### SurfacePathFinder
+
+```cpp
+public void SurfacePathFinder<dimension>(const SurfacePathFinder<dimension> & )
+```
+
+
+### SurfacePathFinder
+
+```cpp
+public void SurfacePathFinder<dimension>(SurfacePathFinder<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public SurfacePathFinder<dimension> & operator=(const SurfacePathFinder<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public SurfacePathFinder<dimension> & operator=(SurfacePathFinder<dimension> && )
 ```
 
 

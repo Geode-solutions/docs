@@ -14,6 +14,15 @@ const name = words.join('-');
 # class TetrahedralSolidImprovementSimulator3D
 
 
+## Members
+
+```cpp
+public static const double IMPROVEMENT_FACTOR
+
+```
+
+
+
 ## Records
 
 TetrahedraMetrics

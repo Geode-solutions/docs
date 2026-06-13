@@ -47,7 +47,7 @@ public bool operator==(const SurfaceEdge<dimension> & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

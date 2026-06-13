@@ -27,17 +27,17 @@ public void SolidBorderPathFinder(const SolidBorderPathFinder & )
 ```
 
 
-### operator=
-
-```cpp
-public SolidBorderPathFinder & operator=(const SolidBorderPathFinder & )
-```
-
-
 ### SolidBorderPathFinder
 
 ```cpp
 public void SolidBorderPathFinder(SolidBorderPathFinder && )
+```
+
+
+### operator=
+
+```cpp
+public SolidBorderPathFinder & operator=(const SolidBorderPathFinder & )
 ```
 
 
@@ -51,7 +51,7 @@ public SolidBorderPathFinder & operator=(SolidBorderPathFinder && )
 ### SolidBorderPathFinder
 
 ```cpp
-public void SolidBorderPathFinder(const TetrahedralSolid3D & solid, index_t begin_point, Span end_points, const Triangle3D & triangle)
+public void SolidBorderPathFinder(const TetrahedralSolid3D & solid, index_t begin_point, absl::Span<const index_t> end_points, const Triangle3D & triangle)
 ```
 
 
@@ -71,7 +71,7 @@ public void ~SolidBorderPathFinder()
 ### find_paths
 
 ```cpp
-public vector find_paths()
+public std::vector<std::vector<SolidPath>> find_paths()
 ```
 
 

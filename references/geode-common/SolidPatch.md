@@ -49,13 +49,6 @@ public void SolidPatch(index_t vertex_in)
 ```
 
 
-### SolidPatch
-
-```cpp
-public void SolidPatch()
-```
-
-
 ### is_vertex
 
 ```cpp
@@ -67,6 +60,13 @@ public bool is_vertex()
 
 ```cpp
 public bool is_edge_vertex()
+```
+
+
+### SolidPatch
+
+```cpp
+public void SolidPatch()
 ```
 
 
@@ -87,7 +87,7 @@ public bool are_same_paths(const SolidPatch & other)
 ### get_vertex_position
 
 ```cpp
-public POSITION get_vertex_position(geode::index_t vertex)
+public geode::POSITION get_vertex_position(geode::index_t vertex)
 ```
 
 

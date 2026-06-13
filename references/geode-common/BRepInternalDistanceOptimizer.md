@@ -29,17 +29,17 @@ public void BRepInternalDistanceOptimizer(const BRepInternalDistanceOptimizer & 
 ```
 
 
-### operator=
-
-```cpp
-public BRepInternalDistanceOptimizer & operator=(const BRepInternalDistanceOptimizer & )
-```
-
-
 ### BRepInternalDistanceOptimizer
 
 ```cpp
 public void BRepInternalDistanceOptimizer(BRepInternalDistanceOptimizer && )
+```
+
+
+### operator=
+
+```cpp
+public BRepInternalDistanceOptimizer & operator=(const BRepInternalDistanceOptimizer & )
 ```
 
 
@@ -67,7 +67,7 @@ protected void BRepInternalDistanceOptimizer(BRepGeometricConstraintModifier & c
 ### get_output
 
 ```cpp
-protected vector get_output(const absl::flat_hash_map<uuid, std::vector<index_t> > & info)
+protected std::vector<BlockElementId> get_output(const absl::flat_hash_map<uuid, std::vector<index_t>> & info)
 ```
 
 

@@ -14,6 +14,15 @@ const name = words.join('-');
 # class MedialBallExtractor
 
 
+## Members
+
+```cpp
+public static const auto RADIUS_ATTRIBUTE_NAME
+
+```
+
+
+
 ## Functions
 
 ### MedialBallExtractor
@@ -23,17 +32,17 @@ public void MedialBallExtractor(const MedialBallExtractor & )
 ```
 
 
-### operator=
-
-```cpp
-public MedialBallExtractor & operator=(const MedialBallExtractor & )
-```
-
-
 ### MedialBallExtractor
 
 ```cpp
 public void MedialBallExtractor(MedialBallExtractor && )
+```
+
+
+### operator=
+
+```cpp
+public MedialBallExtractor & operator=(const MedialBallExtractor & )
 ```
 
 
@@ -61,14 +70,14 @@ public void ~MedialBallExtractor()
 ### compute_all_blocks
 
 ```cpp
-public linked_hash_map compute_all_blocks()
+public absl::linked_hash_map<uuid, std::unique_ptr<PointSet3D>> compute_all_blocks()
 ```
 
 
 ### compute_block
 
 ```cpp
-public unique_ptr compute_block(const uuid & block_id)
+public std::unique_ptr<PointSet3D> compute_block(const uuid & block_id)
 ```
 
 

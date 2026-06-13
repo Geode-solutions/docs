@@ -25,7 +25,7 @@ Inherits from std::list<index_t>
 ### position_in_cycle
 
 ```cpp
-public optional position_in_cycle(index_t vertex)
+public std::optional<index_t> position_in_cycle(index_t vertex)
 ```
 
 
@@ -116,14 +116,14 @@ public FrontCycle split_cycle(index_t tie_vertex)
 ### tie_vertex
 
 ```cpp
-public optional tie_vertex()
+public std::optional<index_t> tie_vertex()
 ```
 
 
 ### generate_simple_cycles
 
 ```cpp
-public vector generate_simple_cycles()
+public std::vector<FrontCycle> generate_simple_cycles()
 ```
 
 

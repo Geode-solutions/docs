@@ -25,7 +25,7 @@ Inherits from Library
 ### initialize
 
 ```cpp
-public void initialize()
+public static void initialize()
 ```
 
 

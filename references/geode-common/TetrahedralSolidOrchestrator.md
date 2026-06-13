@@ -29,17 +29,17 @@ public void TetrahedralSolidOrchestrator<ElementId>(const TetrahedralSolidOrches
 ```
 
 
-### operator=
-
-```cpp
-public TetrahedralSolidOrchestrator<ElementId> & operator=(const TetrahedralSolidOrchestrator<ElementId> & )
-```
-
-
 ### TetrahedralSolidOrchestrator
 
 ```cpp
 public void TetrahedralSolidOrchestrator<ElementId>(TetrahedralSolidOrchestrator<ElementId> && )
+```
+
+
+### operator=
+
+```cpp
+public TetrahedralSolidOrchestrator<ElementId> & operator=(const TetrahedralSolidOrchestrator<ElementId> & )
 ```
 
 

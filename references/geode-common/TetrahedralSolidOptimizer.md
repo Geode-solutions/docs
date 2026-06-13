@@ -29,17 +29,17 @@ public void TetrahedralSolidOptimizer(const TetrahedralSolidOptimizer & )
 ```
 
 
-### operator=
-
-```cpp
-public TetrahedralSolidOptimizer & operator=(const TetrahedralSolidOptimizer & )
-```
-
-
 ### TetrahedralSolidOptimizer
 
 ```cpp
 public void TetrahedralSolidOptimizer(TetrahedralSolidOptimizer && )
+```
+
+
+### operator=
+
+```cpp
+public TetrahedralSolidOptimizer & operator=(const TetrahedralSolidOptimizer & )
 ```
 
 
@@ -67,42 +67,42 @@ public void ~TetrahedralSolidOptimizer()
 ### process_vertex_vertex_configuration
 
 ```cpp
-protected optional process_vertex_vertex_configuration(const PolyhedronFacetEdge & edge, index_t level)
+protected std::optional<ProcessElementResult> process_vertex_vertex_configuration(const PolyhedronFacetEdge & edge, index_t level)
 ```
 
 
 ### process_triple_adjacency_configuration
 
 ```cpp
-protected optional process_triple_adjacency_configuration(const PolyhedronVertex & vertex, index_t level)
+protected std::optional<ProcessElementResult> process_triple_adjacency_configuration(const PolyhedronVertex & vertex, index_t level)
 ```
 
 
 ### process_double_adjacency_configuration
 
 ```cpp
-protected optional process_double_adjacency_configuration(const PolyhedronFacetEdge & edge, index_t level)
+protected std::optional<ProcessElementResult> process_double_adjacency_configuration(const PolyhedronFacetEdge & edge, index_t level)
 ```
 
 
 ### process_edge_vertex_configuration
 
 ```cpp
-protected optional process_edge_vertex_configuration(const PolyhedronFacetEdge & edge, index_t apex, index_t level)
+protected std::optional<ProcessElementResult> process_edge_vertex_configuration(const PolyhedronFacetEdge & edge, index_t apex, index_t level)
 ```
 
 
 ### process_facet_vertex_configuration
 
 ```cpp
-protected optional process_facet_vertex_configuration(const PolyhedronFacet & facet, index_t level)
+protected std::optional<ProcessElementResult> process_facet_vertex_configuration(const PolyhedronFacet & facet, index_t level)
 ```
 
 
 ### process_edge_edge_configuration
 
 ```cpp
-protected optional process_edge_edge_configuration(const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, index_t level)
+protected std::optional<ProcessElementResult> process_edge_edge_configuration(const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, index_t level)
 ```
 
 

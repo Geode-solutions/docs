@@ -33,6 +33,13 @@ RemoveAdjacencyInfo
 ### BRepGeometricConstraintModifier
 
 ```cpp
+public void BRepGeometricConstraintModifier(BRepGeometricConstraintModifier && )
+```
+
+
+### BRepGeometricConstraintModifier
+
+```cpp
 public void BRepGeometricConstraintModifier(const BRepGeometricConstraintModifier & )
 ```
 
@@ -41,13 +48,6 @@ public void BRepGeometricConstraintModifier(const BRepGeometricConstraintModifie
 
 ```cpp
 public BRepGeometricConstraintModifier & operator=(const BRepGeometricConstraintModifier & )
-```
-
-
-### BRepGeometricConstraintModifier
-
-```cpp
-public void BRepGeometricConstraintModifier(BRepGeometricConstraintModifier && )
 ```
 
 
@@ -61,7 +61,7 @@ public BRepGeometricConstraintModifier & operator=(BRepGeometricConstraintModifi
 ### BRepGeometricConstraintModifier
 
 ```cpp
-public void BRepGeometricConstraintModifier(ModifiableObject brep, Constraints constraints)
+public void BRepGeometricConstraintModifier(ModifiableBRep brep, Constraints constraints)
 ```
 
 
@@ -110,70 +110,70 @@ public BlockConstraints & constraints(const Block3D & block)
 ### collapse_edge
 
 ```cpp
-public flat_hash_map collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const OrientedEdgeVertices & edge_vertices)
+public absl::flat_hash_map<uuid, std::vector<index_t>> collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const OrientedEdgeVertices & edge_vertices)
 ```
 
 
 ### swap_edge
 
 ```cpp
-public flat_hash_map swap_edge(const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepEdgeTShape & tshapes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> swap_edge(const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepEdgeTShape & tshapes)
 ```
 
 
 ### swap_facet
 
 ```cpp
-public flat_hash_map swap_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> swap_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
 ```
 
 
 ### split_facet
 
 ```cpp
-public flat_hash_map split_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point)
 ```
 
 
 ### split_tetrahedron
 
 ```cpp
-public flat_hash_map split_tetrahedron(const Block3D & block, index_t tetrahedron, const Point3D & point)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_tetrahedron(const Block3D & block, index_t tetrahedron, const Point3D & point)
 ```
 
 
 ### split_collapse_edge
 
 ```cpp
-public flat_hash_map split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const BRepEdgeTShape & tshapes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const BRepEdgeTShape & tshapes)
 ```
 
 
 ### split_collapse_edge
 
 ```cpp
-public flat_hash_map split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const Point3D & point, const BRepEdgeTShape & tshapes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const Point3D & point, const BRepEdgeTShape & tshapes)
 ```
 
 
 ### split_collapse_facet
 
 ```cpp
-public flat_hash_map split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
 ```
 
 
 ### split_collapse_facet
 
 ```cpp
-public flat_hash_map split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point, const BRepFacetTShape & tshape_apexes)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point, const BRepFacetTShape & tshape_apexes)
 ```
 
 
 ### split_split_collapse
 
 ```cpp
-public flat_hash_map split_split_collapse(const Block3D & block, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
+public absl::flat_hash_map<uuid, std::vector<index_t>> split_split_collapse(const Block3D & block, const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, const Point3D & point)
 ```
 
 
@@ -194,35 +194,35 @@ public RemoveAdjacencyInfo remove_double_adjacency(const Block3D & block, const 
 ### do_swap_edge
 
 ```cpp
-protected tuple do_swap_edge(const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepEdgeTShape & tshapes)
+protected std::tuple<absl::flat_hash_map<uuid, std::vector<index_t>>, BRepGeometricModifier::BRepSwapEdgeInfo> do_swap_edge(const Block3D & block, const PolyhedronFacetEdge & edge, index_t apex, const BRepEdgeTShape & tshapes)
 ```
 
 
 ### do_swap_facet
 
 ```cpp
-protected tuple do_swap_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
+protected std::tuple<absl::flat_hash_map<uuid, std::vector<index_t>>, BRepGeometricModifier::BRepSwapFacetInfo> do_swap_facet(const Block3D & block, const PolyhedronFacet & facet, const BRepFacetTShape & tshape_apexes)
 ```
 
 
 ### do_split_collapse_edge
 
 ```cpp
-protected tuple do_split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const Point3D & apex_point, const BRepEdgeTShape & tshapes)
+protected std::tuple<absl::flat_hash_map<uuid, std::vector<index_t>>, BRepGeometricModifier::BRepSplitPolygonEdgeInfo> do_split_collapse_edge(const Block3D & block, const PolyhedronFacetEdge & edge, const index_t apex, const Point3D & apex_point, const BRepEdgeTShape & tshapes)
 ```
 
 
 ### do_split_collapse_facet
 
 ```cpp
-protected tuple do_split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point, const BRepFacetTShape & tshape_apexes)
+protected std::tuple<absl::flat_hash_map<uuid, std::vector<index_t>>, BRepGeometricModifier::BRepSplitTriangleInfo> do_split_collapse_facet(const Block3D & block, const PolyhedronFacet & facet, const Point3D & point, const BRepFacetTShape & tshape_apexes)
 ```
 
 
 ### do_remove_triple_adjacency
 
 ```cpp
-protected tuple do_remove_triple_adjacency(const Block3D & block, const PolyhedronVertex & vertex, bool keep_vertex)
+protected std::tuple<RemoveAdjacencyInfo, BRepGeometricModifier::BRepSplitTriangleInfo> do_remove_triple_adjacency(const Block3D & block, const PolyhedronVertex & vertex, bool keep_vertex)
 ```
 
 

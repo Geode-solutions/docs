@@ -40,14 +40,14 @@ public void MultiMapping()
 ### MultiMapping
 
 ```cpp
-public void MultiMapping(index_t new_id_in, InlinedVector old_id_in)
+public void MultiMapping(index_t new_id_in, absl::InlinedVector<index_t, 1> old_id_in)
 ```
 
 
 ### MultiMapping
 
 ```cpp
-public void MultiMapping(Mapping mapping)
+public void MultiMapping(Mapping<index_t> mapping)
 ```
 
 
@@ -61,7 +61,7 @@ public bool operator==(const MultiMapping<index_t> & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

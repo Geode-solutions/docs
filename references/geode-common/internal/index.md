@@ -31,10 +31,45 @@ const name = words.join('-');
 
 ## Functions
 
+### is_move_point_valid
+
+```cpp
+bool is_move_point_valid(const Model & model, index_t unique_vertex, const Point<Model::dim> & point)
+```
+
+
+### sort_cmvs
+
+```cpp
+absl::flat_hash_map<uuid, std::vector<index_t>> sort_cmvs(absl::Span<const ComponentMeshVertex> cmvs, const geode::ComponentType & type)
+```
+
+
+### move_point_surface_validity
+
+```cpp
+SurfaceMovePointValidities<Model::dim> move_point_surface_validity(const Model & model, index_t unique_vertex, const Point<Model::dim> & point)
+```
+
+
+### invalid_lines
+
+```cpp
+std::vector<uuid> invalid_lines(const Model & model, const ModelComponentMeshEdges & edges)
+```
+
+
+### invalid_surfaces
+
+```cpp
+std::vector<uuid> invalid_surfaces(const Model & model, const ModelComponentMeshEdges & edges)
+```
+
+
 ### unordered_one_ring_vertices
 
 ```cpp
-InlinedVector unordered_one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
+RingVertices unordered_one_ring_vertices(const TetrahedralSolid3D & mesh, const std::array<index_t, 2> & edge_vertices, const PolyhedraAroundEdge & polyhedra)
 ```
 
 
@@ -55,56 +90,21 @@ void rotate_one_ring_from_apex(absl::FixedArray<index_t> & one_ring_vertices, in
 ### intersect_one_ring_vertices
 
 ```cpp
-vector intersect_one_ring_vertices(const SolidMesh3D & mesh, index_t vertex0, index_t vertex1)
-```
-
-
-### is_move_point_valid
-
-```cpp
-bool is_move_point_valid(const Model & model, index_t unique_vertex, const Point<Model::dim> & point)
-```
-
-
-### sort_cmvs
-
-```cpp
-flat_hash_map sort_cmvs(Span cmvs, const geode::ComponentType & type)
-```
-
-
-### move_point_surface_validity
-
-```cpp
-SurfaceMovePointValidities<Model::dim> move_point_surface_validity(const Model & model, index_t unique_vertex, const Point<Model::dim> & point)
-```
-
-
-### invalid_lines
-
-```cpp
-vector invalid_lines(const Model & model, const ModelComponentMeshEdges & edges)
-```
-
-
-### invalid_surfaces
-
-```cpp
-vector invalid_surfaces(const Model & model, const ModelComponentMeshEdges & edges)
+std::vector<index_t> intersect_one_ring_vertices(const SolidMesh3D & mesh, index_t vertex0, index_t vertex1)
 ```
 
 
 ### invalid_collapse_edges
 
 ```cpp
-typename SurfaceCollapseEdgeValidities<Model::dim>::MeshInvalidities invalid_collapse_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+typename SurfaceCollapseEdgeValidities<Model::dim>::MeshInvalidities invalid_collapse_edges(const Model & model, const ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
 ```
 
 
 ### invalid_collapse_edges
 
 ```cpp
-typename SurfaceCollapseEdgeValidities<Model::dim>::MeshInvalidities invalid_collapse_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, index_t unique_apex)
+typename SurfaceCollapseEdgeValidities<Model::dim>::MeshInvalidities invalid_collapse_edges(const Model & model, const ModelComponentMeshEdges::SurfaceEdges & surface_edges, index_t unique_apex)
 ```
 
 
@@ -125,56 +125,56 @@ bool is_collapse_model_edge_valid(const Model & model, const OrientedEdgeUniqueV
 ### is_collapse_edges_valid
 
 ```cpp
-bool is_collapse_edges_valid(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+bool is_collapse_edges_valid(const Model & model, const ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
 ```
 
 
 ### is_collapse_edges_valid
 
 ```cpp
-bool is_collapse_edges_valid(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, index_t unique_apex)
+bool is_collapse_edges_valid(const Model & model, const ModelComponentMeshEdges::SurfaceEdges & surface_edges, index_t unique_apex)
 ```
 
 
 ### invalid_split_edges
 
 ```cpp
-typename SurfaceSplitEdgeValidities<Model::dim>::MeshInvalidities invalid_split_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+typename SurfaceSplitEdgeValidities<Model::dim>::MeshInvalidities invalid_split_edges(const Model & model, const ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
 ```
 
 
 ### invalid_split_triangles
 
 ```cpp
-typename SurfaceSplitTriangleValidities<Model::dim>::MeshInvalidities invalid_split_triangles(const Model & model, const struct ModelComponentMeshPolygons::SurfacePolygons & surface_polygons, const Point<Model::dim> & point)
+typename SurfaceSplitTriangleValidities<Model::dim>::MeshInvalidities invalid_split_triangles(const Model & model, const ModelComponentMeshPolygons::SurfacePolygons & surface_polygons, const Point<Model::dim> & point)
 ```
 
 
 ### invalid_swap_edges
 
 ```cpp
-linked_hash_map invalid_swap_edges(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges)
+ModelComponentMeshEdges::SurfaceEdges invalid_swap_edges(const Model & model, const ModelComponentMeshEdges::SurfaceEdges & surface_edges)
 ```
 
 
 ### collapse_edge_validity
 
 ```cpp
-typename ModelCollapseEdgeValidity<Model::dim>::SurfaceCollapseEdgeValidities collapse_edge_validity(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+typename ModelCollapseEdgeValidity<Model::dim>::SurfaceCollapseEdgeValidities collapse_edge_validity(const Model & model, const ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
 ```
 
 
 ### model_triangles_after_collapse_edge
 
 ```cpp
-typename ModelElementsAfterCollapseEdge<Model::dim>::SurfaceTriangles model_triangles_after_collapse_edge(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
+typename ModelElementsAfterCollapseEdge<Model::dim>::SurfaceTriangles model_triangles_after_collapse_edge(const Model & model, const ModelComponentMeshEdges::SurfaceEdges & surface_edges, const Point<Model::dim> & point)
 ```
 
 
 ### model_triangles_after_swap_edge
 
 ```cpp
-typename ModelElementsAfterSwapEdge<Model::dim>::SurfaceTriangles model_triangles_after_swap_edge(const Model & model, const struct ModelComponentMeshEdges::SurfaceEdges & surface_edges)
+typename ModelElementsAfterSwapEdge<Model::dim>::SurfaceTriangles model_triangles_after_swap_edge(const Model & model, const ModelComponentMeshEdges::SurfaceEdges & surface_edges)
 ```
 
 

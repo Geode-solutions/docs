@@ -36,18 +36,18 @@ public bool is_better_after_simulation(const TetrahedraMetrics & metrics)
 ```
 
 
-### internal_distances
-
-```cpp
-public const InternalDistances & internal_distances(index_t tetrahedron_id)
-```
-
 ### TetrahedralSolidInternalDistanceImprovementSimulator
 
 ```cpp
 protected void TetrahedralSolidInternalDistanceImprovementSimulator(const TetrahedralSolid3D & solid)
 ```
 
+
+### internal_distances
+
+```cpp
+public const InternalDistances & internal_distances(index_t tetrahedron_id)
+```
 
 
 

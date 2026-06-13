@@ -31,6 +31,20 @@ public FixedArray modified
 
 ## Functions
 
+### operator=
+
+```cpp
+public SplitCollapseTetrahedraAfter & operator=(const SplitCollapseTetrahedraAfter & other)
+```
+
+
+### operator=
+
+```cpp
+public SplitCollapseTetrahedraAfter & operator=(SplitCollapseTetrahedraAfter && other)
+```
+
+
 ### SplitCollapseTetrahedraAfter
 
 ```cpp
@@ -56,20 +70,6 @@ public void SplitCollapseTetrahedraAfter(const SplitCollapseTetrahedraAfter & ot
 
 ```cpp
 public void SplitCollapseTetrahedraAfter(SplitCollapseTetrahedraAfter && other)
-```
-
-
-### operator=
-
-```cpp
-public SplitCollapseTetrahedraAfter & operator=(const SplitCollapseTetrahedraAfter & other)
-```
-
-
-### operator=
-
-```cpp
-public SplitCollapseTetrahedraAfter & operator=(SplitCollapseTetrahedraAfter && other)
 ```
 
 

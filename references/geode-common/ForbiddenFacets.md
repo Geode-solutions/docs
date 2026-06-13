@@ -61,14 +61,14 @@ public void ~ForbiddenFacets()
 ### is_forbidden
 
 ```cpp
-public bool is_forbidden(InlinedVector facet_vertices, const VerticesModifier & vertices_modifier)
+public bool is_forbidden(PolyhedronFacetVertices facet_vertices, const VerticesModifier & vertices_modifier)
 ```
 
 
 ### add
 
 ```cpp
-public void add(InlinedVector facet_vertices)
+public void add(PolyhedronFacetVertices facet_vertices)
 ```
 
 

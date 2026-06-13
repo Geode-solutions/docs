@@ -29,7 +29,7 @@ Inherits from IsotropicMetric<dimension>
 ### ConstantMetric
 
 ```cpp
-public void ConstantMetric<>(double metric)
+public void ConstantMetric<value-parameter-0-0>(double metric)
 ```
 
 

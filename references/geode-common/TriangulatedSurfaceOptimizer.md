@@ -47,17 +47,17 @@ public void TriangulatedSurfaceOptimizer<dimension>(const TriangulatedSurfaceOpt
 ```
 
 
-### operator=
-
-```cpp
-public TriangulatedSurfaceOptimizer<dimension> & operator=(const TriangulatedSurfaceOptimizer<dimension> & )
-```
-
-
 ### TriangulatedSurfaceOptimizer
 
 ```cpp
 public void TriangulatedSurfaceOptimizer<dimension>(TriangulatedSurfaceOptimizer<dimension> && )
+```
+
+
+### operator=
+
+```cpp
+public TriangulatedSurfaceOptimizer<dimension> & operator=(const TriangulatedSurfaceOptimizer<dimension> & )
 ```
 
 
@@ -85,21 +85,21 @@ public void ~TriangulatedSurfaceOptimizer<dimension>()
 ### process_vertex_vertex_configuration
 
 ```cpp
-protected optional process_vertex_vertex_configuration(const PolygonEdge & edge, index_t level)
+protected std::optional<ProcessElementResult> process_vertex_vertex_configuration(const PolygonEdge & edge, index_t level)
 ```
 
 
 ### process_double_adjacency_configuration
 
 ```cpp
-protected optional process_double_adjacency_configuration(index_t vertex, index_t level)
+protected std::optional<ProcessElementResult> process_double_adjacency_configuration(index_t vertex, index_t level)
 ```
 
 
 ### process_edge_vertex_configuration
 
 ```cpp
-protected optional process_edge_vertex_configuration(const PolygonEdge & edge, index_t level)
+protected std::optional<ProcessElementResult> process_edge_vertex_configuration(const PolygonEdge & edge, index_t level)
 ```
 
 

@@ -22,27 +22,27 @@ Inherits from VerticesModifier, EdgesModifier, FacetsModifier, TetrahedraModifie
 
 ## Records
 
-SidedSplitEdgeInfo
-
 AlongSplitEdgeInfo
 
-SplitEdgeInfo
-
-SplitInfo
-
-SplitFacetInfo
+CleanMappings
 
 CollapseEdgeInfo
 
+RemoveMultipleAdjacencyInfo
+
+SidedSplitEdgeInfo
+
 SplitCollapseInfo
 
-SwapFacetInfo
+SplitEdgeInfo
+
+SplitFacetInfo
+
+SplitInfo
 
 SwapEdgeInfo
 
-RemoveMultipleAdjacencyInfo
-
-CleanMappings
+SwapFacetInfo
 
 
 
@@ -107,7 +107,7 @@ public bool is_facet_active(index_t facet_id)
 ### inactive_tetrahedra
 
 ```cpp
-public void inactive_tetrahedra(Span tetrahedra)
+public void inactive_tetrahedra(absl::Span<const index_t> tetrahedra)
 ```
 
 
@@ -334,7 +334,7 @@ public ReplaceVertexInfo replace_vertex(index_t old_id, index_t new_id)
 ### clean_tetrahedra
 
 ```cpp
-public vector clean_tetrahedra()
+public std::vector<index_t> clean_tetrahedra()
 ```
 
 
@@ -345,7 +345,7 @@ public vector clean_tetrahedra()
 ### clean_vertices
 
 ```cpp
-public vector clean_vertices()
+public std::vector<index_t> clean_vertices()
 ```
 
 
@@ -358,7 +358,7 @@ public vector clean_vertices()
 ### clean_edges
 
 ```cpp
-public vector clean_edges()
+public std::vector<index_t> clean_edges()
 ```
 
 
@@ -371,7 +371,7 @@ public vector clean_edges()
 ### clean_facets
 
 ```cpp
-public vector clean_facets()
+public std::vector<index_t> clean_facets()
 ```
 
 

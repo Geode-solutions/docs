@@ -14,6 +14,15 @@ const name = words.join('-');
 # class AdvancedModelMeshModifiers
 
 
+## Members
+
+```cpp
+protected static const auto dimension
+
+```
+
+
+
 ## Functions
 
 ### AdvancedModelMeshModifiers

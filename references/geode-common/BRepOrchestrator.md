@@ -29,17 +29,17 @@ public void BRepOrchestrator<ElementId>(const BRepOrchestrator<ElementId> & )
 ```
 
 
-### operator=
-
-```cpp
-public BRepOrchestrator<ElementId> & operator=(const BRepOrchestrator<ElementId> & )
-```
-
-
 ### BRepOrchestrator
 
 ```cpp
 public void BRepOrchestrator<ElementId>(BRepOrchestrator<ElementId> && )
+```
+
+
+### operator=
+
+```cpp
+public BRepOrchestrator<ElementId> & operator=(const BRepOrchestrator<ElementId> & )
 ```
 
 

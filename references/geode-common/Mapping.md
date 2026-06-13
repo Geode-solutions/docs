@@ -110,7 +110,7 @@ public bool operator<(const Mapping<index_t> & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

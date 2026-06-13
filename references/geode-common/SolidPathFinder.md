@@ -20,6 +20,34 @@ const name = words.join('-');
 
 ## Functions
 
+### solid
+
+```cpp
+protected const TetrahedralSolid3D & solid()
+```
+
+
+### begin
+
+```cpp
+protected index_t begin()
+```
+
+
+### end
+
+```cpp
+protected index_t end()
+```
+
+
+### begin_to_end
+
+```cpp
+protected const Segment3D & begin_to_end()
+```
+
+
 ### SolidPathFinder
 
 ```cpp
@@ -36,14 +64,14 @@ public void SolidPathFinder(const TetrahedralSolid3D & solid, index_t begin, ind
 ### find_path
 
 ```cpp
-public optional find_path()
+public std::optional<std::vector<SolidPath>> find_path()
 ```
 
 
 ### find_first_path
 
 ```cpp
-public optional find_first_path()
+public std::optional<SolidPath> find_first_path()
 ```
 
 
@@ -78,21 +106,21 @@ protected PolyhedronVertex opposite_vertex(const PolyhedronFacet & facet)
 ### facet_triangle
 
 ```cpp
-protected Triangle facet_triangle(const PolyhedronFacet & facet)
+protected Triangle3D facet_triangle(const PolyhedronFacet & facet)
 ```
 
 
 ### find_path_intersection_with_facet
 
 ```cpp
-protected optional find_path_intersection_with_facet(const PolyhedronFacet & facet)
+protected std::optional<SolidPath> find_path_intersection_with_facet(const PolyhedronFacet & facet)
 ```
 
 
 ### find_next_path
 
 ```cpp
-protected optional find_next_path(index_t current)
+protected std::optional<SolidPath> find_next_path(index_t current)
 ```
 
 
@@ -106,42 +134,14 @@ protected bool find_next_paths(std::vector<SolidPath> & paths)
 ### find_next_facet
 
 ```cpp
-protected optional find_next_facet(const PolyhedronFacet & facet_from)
+protected std::optional<SolidPath> find_next_facet(const PolyhedronFacet & facet_from)
 ```
 
 
 ### next_intersection
 
 ```cpp
-protected optional next_intersection(const PreviousPaths & previous_paths)
-```
-
-
-### solid
-
-```cpp
-protected const TetrahedralSolid3D & solid()
-```
-
-
-### begin
-
-```cpp
-protected index_t begin()
-```
-
-
-### end
-
-```cpp
-protected index_t end()
-```
-
-
-### begin_to_end
-
-```cpp
-protected const Segment3D & begin_to_end()
+protected std::optional<SolidPath> next_intersection(const PreviousPaths & previous_paths)
 ```
 
 

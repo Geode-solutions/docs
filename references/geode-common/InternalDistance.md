@@ -56,41 +56,6 @@ public void InternalDistance()
 ### InternalDistance
 
 ```cpp
-public void InternalDistance(CONFIGURATION_TYPE type_in, double distance_in, array vertices_in)
-```
-
-
-### InternalDistance
-
-```cpp
-public void InternalDistance(array vertices_in)
-```
-
-
-### InternalDistance
-
-```cpp
-public void InternalDistance(double distance_in, local_index_t vertex_in, array edge_in)
-```
-
-
-### InternalDistance
-
-```cpp
-public void InternalDistance(double distance_in, local_index_t vertex_in)
-```
-
-
-### InternalDistance
-
-```cpp
-public void InternalDistance(local_index_t vertex_in)
-```
-
-
-### InternalDistance
-
-```cpp
 public void InternalDistance(InternalDistance && other)
 ```
 
@@ -123,6 +88,41 @@ public void ~InternalDistance()
 ```
 
 
+### InternalDistance
+
+```cpp
+public void InternalDistance(CONFIGURATION_TYPE type_in, double distance_in, LocalVertices vertices_in)
+```
+
+
+### InternalDistance
+
+```cpp
+public void InternalDistance(LocalVertices vertices_in)
+```
+
+
+### InternalDistance
+
+```cpp
+public void InternalDistance(double distance_in, local_index_t vertex_in, LocalVertices edge_in)
+```
+
+
+### InternalDistance
+
+```cpp
+public void InternalDistance(double distance_in, local_index_t vertex_in)
+```
+
+
+### InternalDistance
+
+```cpp
+public void InternalDistance(local_index_t vertex_in)
+```
+
+
 ### operator<
 
 ```cpp
@@ -133,7 +133,7 @@ public bool operator<(const InternalDistance & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

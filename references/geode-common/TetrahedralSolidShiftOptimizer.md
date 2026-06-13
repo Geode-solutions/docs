@@ -29,17 +29,17 @@ public void TetrahedralSolidShiftOptimizer(const TetrahedralSolidShiftOptimizer 
 ```
 
 
-### operator=
-
-```cpp
-public TetrahedralSolidShiftOptimizer & operator=(const TetrahedralSolidShiftOptimizer & )
-```
-
-
 ### TetrahedralSolidShiftOptimizer
 
 ```cpp
 public void TetrahedralSolidShiftOptimizer(TetrahedralSolidShiftOptimizer && )
+```
+
+
+### operator=
+
+```cpp
+public TetrahedralSolidShiftOptimizer & operator=(const TetrahedralSolidShiftOptimizer & )
 ```
 
 
@@ -67,21 +67,21 @@ public void ~TetrahedralSolidShiftOptimizer()
 ### process_edge_vertex_configuration
 
 ```cpp
-protected optional process_edge_vertex_configuration(const PolyhedronFacetEdge & edge, index_t apex, index_t level)
+protected std::optional<ProcessElementResult> process_edge_vertex_configuration(const PolyhedronFacetEdge & edge, index_t apex, index_t level)
 ```
 
 
 ### process_facet_vertex_configuration
 
 ```cpp
-protected optional process_facet_vertex_configuration(const PolyhedronFacet & facet, index_t level)
+protected std::optional<ProcessElementResult> process_facet_vertex_configuration(const PolyhedronFacet & facet, index_t level)
 ```
 
 
 ### process_edge_edge_configuration
 
 ```cpp
-protected optional process_edge_edge_configuration(const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, index_t level)
+protected std::optional<ProcessElementResult> process_edge_edge_configuration(const PolyhedronFacetEdge & edge0, const PolyhedronFacetEdge & edge1, index_t level)
 ```
 
 

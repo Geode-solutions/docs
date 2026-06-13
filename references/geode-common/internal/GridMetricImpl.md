@@ -14,12 +14,21 @@ const name = words.join('-');
 # class GridMetricImpl
 
 
+## Members
+
+```cpp
+protected static const auto MAX
+
+```
+
+
+
 ## Functions
 
 ### GridMetricImpl
 
 ```cpp
-protected void GridMetricImpl<dimension>(const Grid<dimension> & grid, basic_string_view attribute_name)
+protected void GridMetricImpl<dimension>(const Grid<dimension> & grid, std::string_view attribute_name)
 ```
 
 

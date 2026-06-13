@@ -14,10 +14,37 @@ const name = words.join('-');
 # class TriangulatedSurfaceImprovementSimulator
 
 
+## Members
+
+```cpp
+public static const double IMPROVEMENT_FACTOR
+
+```
+
+
+
 # class TriangulatedSurfaceImprovementSimulator
 
 
+## Members
+
+```cpp
+public static const double IMPROVEMENT_FACTOR
+
+```
+
+
+
 # class TriangulatedSurfaceImprovementSimulator
+
+
+## Members
+
+```cpp
+public static const double IMPROVEMENT_FACTOR
+
+```
+
 
 
 ## Records
@@ -28,10 +55,10 @@ TrianglesMetrics
 
 ## Functions
 
-### ~TriangulatedSurfaceImprovementSimulator
+### TriangulatedSurfaceImprovementSimulator
 
 ```cpp
-public void ~TriangulatedSurfaceImprovementSimulator<dimension>()
+protected void TriangulatedSurfaceImprovementSimulator<dimension>()
 ```
 
 
@@ -59,10 +86,10 @@ public bool is_better_after_simulation(const TrianglesMetrics & triangles_metric
 public double metric(const Triangle<dimension> & triangle)
 ```
 
-### TriangulatedSurfaceImprovementSimulator
+### ~TriangulatedSurfaceImprovementSimulator
 
 ```cpp
-protected void TriangulatedSurfaceImprovementSimulator<dimension>()
+public void ~TriangulatedSurfaceImprovementSimulator<dimension>()
 ```
 
 

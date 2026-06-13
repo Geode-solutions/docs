@@ -25,20 +25,6 @@ Inherits from BRepGeometricModifier
 ### BRepCutter
 
 ```cpp
-public void BRepCutter(const BRepCutter & )
-```
-
-
-### operator=
-
-```cpp
-public BRepCutter & operator=(const BRepCutter & )
-```
-
-
-### BRepCutter
-
-```cpp
 public void BRepCutter(const BRep & brep, BRepBuilder & builder)
 ```
 
@@ -75,6 +61,20 @@ public SolidSwapPathInfo swap_along_path(const BlockPathVertices & path)
 
 ```cpp
 public SolidSwapPatchInfo swap_along_patch(const BlockPatchVertices & patch)
+```
+
+
+### BRepCutter
+
+```cpp
+public void BRepCutter(const BRepCutter & )
+```
+
+
+### operator=
+
+```cpp
+public BRepCutter & operator=(const BRepCutter & )
 ```
 
 

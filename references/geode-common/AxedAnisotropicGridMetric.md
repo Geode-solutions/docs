@@ -57,7 +57,7 @@ public void ~AxedAnisotropicGridMetric<dimension>()
 ### set_metric
 
 ```cpp
-public void set_metric(index_t axis, std::unique_ptr<GridMetric<dimension> > metric)
+public void set_metric(index_t axis, std::unique_ptr<GridMetric<dimension>> metric)
 ```
 
 

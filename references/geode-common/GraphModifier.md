@@ -22,11 +22,11 @@ Inherits from VerticesModifier, EdgesModifier
 
 ## Records
 
+CleanMappings
+
 CollapseEdgeInfo
 
 SplitEdgeInfo
-
-CleanMappings
 
 
 
@@ -77,7 +77,7 @@ public void inactive_edge(index_t edge_id)
 ### inactive_edges
 
 ```cpp
-public void inactive_edges(Span edge_ids)
+public void inactive_edges(absl::Span<const index_t> edge_ids)
 ```
 
 
@@ -98,7 +98,7 @@ public SplitEdgeInfo split_edge(index_t edge_id)
 ### clean_edges
 
 ```cpp
-public vector clean_edges()
+public std::vector<index_t> clean_edges()
 ```
 
 
@@ -109,7 +109,7 @@ public vector clean_edges()
 ### clean_vertices
 
 ```cpp
-public vector clean_vertices()
+public std::vector<index_t> clean_vertices()
 ```
 
 
