@@ -39,7 +39,7 @@ public StructuralModelExplicitModeler & operator=(const StructuralModelExplicitM
 ### StructuralModelExplicitModeler
 
 ```cpp
-public void StructuralModelExplicitModeler(StructuralModel & model, const class BRepExplicitModeler::Parameters & parameters)
+public void StructuralModelExplicitModeler(StructuralModel & model, const BRepExplicitModeler::Parameters & parameters)
 ```
 
 
@@ -53,21 +53,21 @@ public void ~StructuralModelExplicitModeler()
 ### add_fault
 
 ```cpp
-public uuid add_fault(std::vector<std::unique_ptr<TriangulatedSurface3D> > & meshes)
+public uuid add_fault(std::vector<std::unique_ptr<TriangulatedSurface3D>> & meshes)
 ```
 
 
 ### add_horizon
 
 ```cpp
-public uuid add_horizon(std::vector<std::unique_ptr<TriangulatedSurface3D> > & meshes)
+public uuid add_horizon(std::vector<std::unique_ptr<TriangulatedSurface3D>> & meshes)
 ```
 
 
 ### process
 
 ```cpp
-public FailedElements process()
+public BRepExplicitModeler::FailedElements process()
 ```
 
 
