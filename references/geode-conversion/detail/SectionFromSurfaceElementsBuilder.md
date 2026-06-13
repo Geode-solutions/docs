@@ -29,7 +29,7 @@ Inherits from WireframeBuilderFromOneMesh<Section, SurfaceMesh2D>
 ### SectionFromSurfaceElementsBuilder
 
 ```cpp
-public void SectionFromSurfaceElementsBuilder(Section & model, SurfaceMesh2D & surface, Span corner_vertices, Span line_edges)
+public void SectionFromSurfaceElementsBuilder(Section & model, SurfaceMesh2D & surface, absl::Span<const index_t> corner_vertices, absl::Span<const index_t> line_edges)
 ```
 
 
@@ -43,7 +43,7 @@ public void ~SectionFromSurfaceElementsBuilder()
 ### build_section_with_surface_mesh
 
 ```cpp
-public pair build_section_with_surface_mesh()
+public std::pair<VertexIndexMapping, IndexToModelMeshElementsMapping> build_section_with_surface_mesh()
 ```
 
 

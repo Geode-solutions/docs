@@ -51,7 +51,7 @@ public void ~BRepTopologyRebuilder()
 ### add_block_facets_to_topology
 
 ```cpp
-public void add_block_facets_to_topology(const Block3D & block, vector facet_ids)
+public void add_block_facets_to_topology(const Block3D & block, std::vector<PolyhedronFacet> facet_ids)
 ```
 
 
@@ -65,7 +65,7 @@ public void remove_conformity_on_model_surface(const Surface3D & surface)
 ### rebuild
 
 ```cpp
-public tuple rebuild()
+public std::tuple<BRep, BRepMappings> rebuild()
 ```
 
 

@@ -41,7 +41,7 @@ public void IndexToBRepMeshElementsMapping()
 ### IndexToBRepMeshElementsMapping
 
 ```cpp
-public void IndexToBRepMeshElementsMapping(IndexToModelMeshElementsMapping model_mappings, GenericMapping block_mappings)
+public void IndexToBRepMeshElementsMapping(IndexToModelMeshElementsMapping model_mappings, IndexToMeshElementMapping block_mappings)
 ```
 
 

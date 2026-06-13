@@ -20,6 +20,15 @@ Inherits from CornersLinesBuilder<Model>
 
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 ## Records
 
 SplitEdge
@@ -66,7 +75,7 @@ protected void WireframeBuilderFromOneMesh<Model, Mesh>(Model & model, const Mes
 ### add_corner_vertices
 
 ```cpp
-protected void add_corner_vertices(Span additional_corner_vertices)
+protected void add_corner_vertices(absl::Span<const index_t> additional_corner_vertices)
 ```
 
 
@@ -80,7 +89,7 @@ protected const std::vector<index_t> & corner_vertices()
 ### add_line_edges
 
 ```cpp
-protected void add_line_edges(Span additional_line_edges)
+protected void add_line_edges(absl::Span<const index_t> additional_line_edges)
 ```
 
 
@@ -101,14 +110,14 @@ protected void update_corner_line_mappings()
 ### build_surfaces
 
 ```cpp
-protected std::vector<SplitEdge> build_surfaces(const SurfaceMesh<dimension> & whole_surface, const absl::flat_hash_map<index_t, index_t> & whole_surface_to_one_mesh_vertices, Span whole_surface_to_one_mesh_polygons, WireframeBuilderFromOneMesh<Model, Mesh>::ModelModifier & model_modifer)
+protected std::vector<SplitEdge> build_surfaces(const SurfaceMesh<dimension> & whole_surface, const absl::flat_hash_map<index_t, index_t> & whole_surface_to_one_mesh_vertices, absl::Span<const index_t> whole_surface_to_one_mesh_polygons, WireframeBuilderFromOneMesh<Model, Mesh>::ModelModifier & model_modifer)
 ```
 
 
 ### build_surfaces_without_split
 
 ```cpp
-protected void build_surfaces_without_split(const SurfaceMesh<dimension> & whole_surface, const absl::flat_hash_map<index_t, index_t> & whole_surface_to_one_mesh_vertices, Span whole_surface_to_one_mesh_polygons)
+protected void build_surfaces_without_split(const SurfaceMesh<dimension> & whole_surface, const absl::flat_hash_map<index_t, index_t> & whole_surface_to_one_mesh_vertices, absl::Span<const index_t> whole_surface_to_one_mesh_polygons)
 ```
 
 
@@ -118,7 +127,16 @@ protected void build_surfaces_without_split(const SurfaceMesh<dimension> & whole
 
 
 ```cpp
-Inherits from CornersLinesBuilder<Section>
+Inherits from CornersLinesBuilder<class geode::Section>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
 ```
 
 
@@ -127,7 +145,16 @@ Inherits from CornersLinesBuilder<Section>
 
 
 ```cpp
-Inherits from CornersLinesBuilder<BRep>
+Inherits from CornersLinesBuilder<class geode::BRep>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
 ```
 
 

@@ -15,7 +15,7 @@ const name = words.join('-');
 
 
 ```cpp
-Inherits from detail::CornersLinesBuilder<Section>
+Inherits from detail::CornersLinesBuilder<class geode::Section>
 ```
 
 
@@ -24,7 +24,7 @@ Inherits from detail::CornersLinesBuilder<Section>
 
 
 ```cpp
-Inherits from detail::CornersLinesBuilder<BRep>
+Inherits from detail::CornersLinesBuilder<class geode::BRep>
 ```
 
 
@@ -64,7 +64,7 @@ public void build_unique_edges_inventory()
 ### identify_corners_and_lines
 
 ```cpp
-public void identify_corners_and_lines(Span initial_corner_ids, Span initial_line_ids)
+public void identify_corners_and_lines(absl::Span<const uuid> initial_corner_ids, absl::Span<const uuid> initial_line_ids)
 ```
 
 
@@ -99,14 +99,14 @@ protected typename geode::TypedModelMappings<Model>::type && steal_mappings()
 ### merge_lines_not_bounded_by_corners
 
 ```cpp
-protected void merge_lines_not_bounded_by_corners(Span initial_line_ids)
+protected void merge_lines_not_bounded_by_corners(absl::Span<const uuid> initial_line_ids)
 ```
 
 
 ### split_lines_by_corners
 
 ```cpp
-protected void split_lines_by_corners(Span initial_line_ids, Span input_lines)
+protected void split_lines_by_corners(absl::Span<const uuid> initial_line_ids, absl::Span<const uuid> input_lines)
 ```
 
 

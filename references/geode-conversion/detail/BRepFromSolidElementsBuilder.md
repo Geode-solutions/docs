@@ -29,7 +29,7 @@ Inherits from WireframeBuilderFromOneMesh<BRep, SolidMesh3D>
 ### BRepFromSolidElementsBuilder
 
 ```cpp
-public void BRepFromSolidElementsBuilder(BRep & model, SolidMesh3D & solid, Span corner_vertices, Span line_edges, Span surface_facets)
+public void BRepFromSolidElementsBuilder(BRep & model, SolidMesh3D & solid, absl::Span<const index_t> corner_vertices, absl::Span<const index_t> line_edges, absl::Span<const index_t> surface_facets)
 ```
 
 
@@ -43,7 +43,7 @@ public void ~BRepFromSolidElementsBuilder()
 ### build_brep_without_block_mesh
 
 ```cpp
-public pair build_brep_without_block_mesh()
+public std::pair<VertexIndexMapping, IndexToModelMeshElementsMapping> build_brep_without_block_mesh()
 ```
 
 
@@ -52,7 +52,7 @@ public pair build_brep_without_block_mesh()
 ### build_brep_with_block_mesh
 
 ```cpp
-public pair build_brep_with_block_mesh()
+public std::pair<VertexIndexMapping, IndexToBRepMeshElementsMapping> build_brep_with_block_mesh()
 ```
 
 

@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BlockMappingIdentifier
 
 ```cpp
-public void BlockMappingIdentifier(const BRep & model, Span blocks)
+public void BlockMappingIdentifier(const BRep & model, absl::Span<const BlockRelationships> blocks)
 ```
 
 
@@ -33,7 +33,7 @@ public void ~BlockMappingIdentifier()
 ### create_block_mappings
 
 ```cpp
-public GenericMapping create_block_mappings()
+public MappingOldToIdentified create_block_mappings()
 ```
 
 

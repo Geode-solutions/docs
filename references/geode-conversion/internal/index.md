@@ -25,12 +25,53 @@ const name = words.join('-');
 
 ## Functions
 
+### build_new_model_boundary
+
+```cpp
+std::optional<uuid> build_new_model_boundary(const Section & model, SectionBuilder & builder)
+```
+
+
+### build_new_model_boundary
+
+```cpp
+std::optional<uuid> build_new_model_boundary(const BRep & model, BRepBuilder & builder)
+```
+
+
+### remove_obsolete_model_boundaries
+
+```cpp
+std::vector<uuid> remove_obsolete_model_boundaries(const Section & model, SectionBuilder & builder)
+```
+
+
+### remove_obsolete_model_boundaries
+
+```cpp
+std::vector<uuid> remove_obsolete_model_boundaries(const BRep & model, BRepBuilder & builder)
+```
+
+
+### identify_surfaces
+
+```cpp
+void identify_surfaces(const Model & model, typename Model::Builder & builder, const typename detail::CornersLinesBuilder<Model> & wireframe, typename TypedModelMappings<Model>::type & mappings, absl::Span<const uuid> old_surface_ids, bool merge_components_if_no_boundaries)
+```
+
+
 ### add_block_boundaries_as_surfaces_in_model
 
 ```cpp
 void add_block_boundaries_as_surfaces_in_model(const BRep & model, BRepBuilder & builder)
 ```
 
+
+### build_new_model_boundary
+
+```cpp
+std::optional<uuid> build_new_model_boundary(const Model & model, typename Model::Builder & builder)
+```
 
 ### identify_blocks
 
@@ -39,17 +80,23 @@ void identify_blocks(const BRep & model, BRepBuilder & builder, BRepMappings & m
 ```
 
 
+### remove_obsolete_model_boundaries
+
+```cpp
+std::vector<geode::uuid> remove_obsolete_model_boundaries(const Model & model, typename Model::Builder & builder)
+```
+
 ### map_old_to_new_mesh_vertices
 
 ```cpp
-void map_old_to_new_mesh_vertices(const MeshVertex & old_mesh_vertex, const MeshVertex & new_mesh_vertex, MeshVertexMapping & mesh_vertex_mapping, Span old_mesh_ids)
+void map_old_to_new_mesh_vertices(const MeshVertex & old_mesh_vertex, const MeshVertex & new_mesh_vertex, MeshVertexMapping & mesh_vertex_mapping, absl::Span<const uuid> old_mesh_ids)
 ```
 
 
 ### map_old_to_new_mesh_elements
 
 ```cpp
-void map_old_to_new_mesh_elements(const MeshElement & old_mesh_element, const MeshElement & new_mesh_element, MeshElementMapping & mesh_element_mapping, Span old_mesh_ids)
+void map_old_to_new_mesh_elements(const MeshElement & old_mesh_element, const MeshElement & new_mesh_element, MeshElementMapping & mesh_element_mapping, absl::Span<const uuid> old_mesh_ids)
 ```
 
 
@@ -63,28 +110,28 @@ void transfer_relationships(const Model & model, typename Model::Builder & model
 ### find_duplicated_components
 
 ```cpp
-std::vector<std::vector<uuid> > find_duplicated_components(const Model & model, const ComponentRange & components)
+std::vector<std::vector<uuid>> find_duplicated_components(const Model & model, const ComponentRange & components)
 ```
 
 
 ### transfer_corner_metadata
 
 ```cpp
-void transfer_corner_metadata(const Model & model, typename Model::Builder & model_builder, const uuid & new_corner_id, Span old_corner_ids)
+void transfer_corner_metadata(const Model & model, typename Model::Builder & model_builder, const uuid & new_corner_id, absl::Span<const uuid> old_corner_ids)
 ```
 
 
 ### transfer_line_metadata
 
 ```cpp
-void transfer_line_metadata(const Model & model, typename Model::Builder & model_builder, const uuid & new_line_id, Span old_line_ids)
+void transfer_line_metadata(const Model & model, typename Model::Builder & model_builder, const uuid & new_line_id, absl::Span<const uuid> old_line_ids)
 ```
 
 
 ### transfer_surface_metadata
 
 ```cpp
-void transfer_surface_metadata(const Model & model, typename Model::Builder & model_builder, const uuid & new_surface_id, Span old_surface_ids)
+void transfer_surface_metadata(const Model & model, typename Model::Builder & model_builder, const uuid & new_surface_id, absl::Span<const uuid> old_surface_ids)
 ```
 
 
@@ -92,53 +139,6 @@ void transfer_surface_metadata(const Model & model, typename Model::Builder & mo
 
 ```cpp
 void split_surfaces_on_internal_lines(const Model & model, typename Model::Builder & model_builder, MeshVertexMapping & surface_vertex_mapping)
-```
-
-
-### build_new_model_boundary
-
-```cpp
-optional build_new_model_boundary(const Model & model, typename Model::Builder & builder)
-```
-
-### remove_obsolete_model_boundaries
-
-```cpp
-vector remove_obsolete_model_boundaries(const Model & model, typename Model::Builder & builder)
-```
-
-### identify_surfaces
-
-```cpp
-void identify_surfaces(const Model & model, typename Model::Builder & builder, const typename detail::CornersLinesBuilder<Model> & wireframe, typename TypedModelMappings<Model>::type & mappings, Span old_surface_ids, bool merge_components_if_no_boundaries)
-```
-
-
-### build_new_model_boundary
-
-```cpp
-optional build_new_model_boundary(const Section & model, SectionBuilder & builder)
-```
-
-
-### build_new_model_boundary
-
-```cpp
-optional build_new_model_boundary(const BRep & model, BRepBuilder & builder)
-```
-
-
-### remove_obsolete_model_boundaries
-
-```cpp
-vector remove_obsolete_model_boundaries(const Section & model, SectionBuilder & builder)
-```
-
-
-### remove_obsolete_model_boundaries
-
-```cpp
-vector remove_obsolete_model_boundaries(const BRep & model, BRepBuilder & builder)
 ```
 
 

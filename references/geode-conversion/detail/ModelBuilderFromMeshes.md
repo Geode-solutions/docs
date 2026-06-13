@@ -14,12 +14,21 @@ const name = words.join('-');
 # class ModelBuilderFromMeshes
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 ## Functions
 
 ### ModelBuilderFromMeshes
 
 ```cpp
-public void ModelBuilderFromMeshes<Model>(Model & model, absl::Span<const std::reference_wrapper<const PointSet<dimension> > > corners, absl::Span<const std::reference_wrapper<const EdgedCurve<dimension> > > curves, absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension> > > surfaces)
+public void ModelBuilderFromMeshes<Model>(Model & model, absl::Span<const std::reference_wrapper<const PointSet<dimension>>> corners, absl::Span<const std::reference_wrapper<const EdgedCurve<dimension>>> curves, absl::Span<const std::reference_wrapper<const SurfaceMesh<dimension>>> surfaces)
 ```
 
 
@@ -42,6 +51,24 @@ public TypedModelMappings build_model()
 # class ModelBuilderFromMeshes
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 # class ModelBuilderFromMeshes
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
 
 

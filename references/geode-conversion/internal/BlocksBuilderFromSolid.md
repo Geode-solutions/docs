@@ -33,7 +33,7 @@ public void ~BlocksBuilderFromSolid()
 ### build_blocks_step
 
 ```cpp
-public pair build_blocks_step()
+public std::pair<IndexToMeshVertexMapping, IndexToMeshElementMapping> build_blocks_step()
 ```
 
 

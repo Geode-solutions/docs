@@ -14,6 +14,15 @@ const name = words.join('-');
 # class ModelBuilderFromUniqueVertices
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 ## Functions
 
 ### ModelBuilderFromUniqueVertices
@@ -42,6 +51,24 @@ public TypedModelMappings update_model()
 # class ModelBuilderFromUniqueVertices
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 # class ModelBuilderFromUniqueVertices
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
 
 

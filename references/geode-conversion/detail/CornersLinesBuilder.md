@@ -14,6 +14,15 @@ const name = words.join('-');
 # class CornersLinesBuilder
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 ## Functions
 
 ### ~CornersLinesBuilder
@@ -67,14 +76,14 @@ public void add_corner(index_t vertex)
 ### wireframe_edge_id
 
 ```cpp
-public optional wireframe_edge_id(const std::array<index_t, 2> & edge_vertices)
+public std::optional<index_t> wireframe_edge_id(const std::array<index_t, 2> & edge_vertices)
 ```
 
 
 ### wireframe_vertex_id
 
 ```cpp
-public optional wireframe_vertex_id(index_t support_mesh_vertex_id)
+public std::optional<index_t> wireframe_vertex_id(index_t support_mesh_vertex_id)
 ```
 
 
@@ -95,7 +104,7 @@ public const uuid & line_uuid(index_t wireframe_edge_id)
 ### corner_uuid
 
 ```cpp
-public optional corner_uuid(index_t wireframe_vertex_id)
+public std::optional<uuid> corner_uuid(index_t wireframe_vertex_id)
 ```
 
 
@@ -123,21 +132,21 @@ protected void CornersLinesBuilder<Model>(Model & model)
 ### find_or_create_edge
 
 ```cpp
-protected tuple find_or_create_edge(const std::array<index_t, 2> & edge_vertices, const std::array<Point<dimension>, 2> & edge_points)
+protected std::tuple<index_t, bool> find_or_create_edge(const std::array<index_t, 2> & edge_vertices, const std::array<Point<dimension>, 2> & edge_points)
 ```
 
 
 ### find_or_create_corner
 
 ```cpp
-protected tuple find_or_create_corner(index_t corner_vertex, const Point<dimension> & corner_point)
+protected std::tuple<index_t, bool> find_or_create_corner(index_t corner_vertex, const Point<dimension> & corner_point)
 ```
 
 
 ### find_or_create_vertex
 
 ```cpp
-protected tuple find_or_create_vertex(index_t unique_vertex, const Point<dimension> & point)
+protected std::tuple<index_t, bool> find_or_create_vertex(index_t unique_vertex, const Point<dimension> & point)
 ```
 
 
@@ -174,6 +183,24 @@ protected void remove_line_edges(const uuid & line_uuid)
 # class CornersLinesBuilder
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 # class CornersLinesBuilder
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
 
 
