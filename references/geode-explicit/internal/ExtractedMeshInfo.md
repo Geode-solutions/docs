@@ -51,6 +51,31 @@ public BijectiveMapping background_vertices_to_vertices
 
 ```
 
+```cpp
+public static const auto VERTEX_ORIGIN_ATTRIBUTE_NAME
+
+```
+
+```cpp
+public static const auto COMPONENT_VERTICES_ATTRIBUTE_NAME
+
+```
+
+```cpp
+public static const auto VERTEX_INCIDENT_COMPONENT_FACETS_ATTRIBUTE_NAME
+
+```
+
+```cpp
+public static const auto VERTEX_INCIDENT_COMPONENT_EDGES_ATTRIBUTE_NAME
+
+```
+
+```cpp
+public static const auto EDGE_INCIDENT_COMPONENTS_ATTRIBUTE_NAME
+
+```
+
 
 
 ## Functions

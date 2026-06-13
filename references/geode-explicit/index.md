@@ -45,17 +45,17 @@ const name = words.join('-');
 
 ## Functions
 
+### output_mesh
+
+```cpp
+void output_mesh(const TriangulatedSurface3D & mesh)
+```
+
+
 ### build_brep_from_topography_and_curve
 
 ```cpp
 BRep build_brep_from_topography_and_curve(const TriangulatedSurface3D & topography, const EdgedCurve2D & curve, const double bottom_surface_depth)
-```
-
-
-### add_mesh_elements
-
-```cpp
-void add_mesh_elements(MeshElements & to_elements, const MeshElements & from_elements)
 ```
 
 
@@ -73,10 +73,10 @@ void inspect_generated_brep_without_block_topology(const BRep & brep)
 ```
 
 
-### output_mesh
+### add_mesh_elements
 
 ```cpp
-void output_mesh(const TriangulatedSurface3D & mesh)
+void add_mesh_elements(MeshElements & to_elements, const MeshElements & from_elements)
 ```
 
 

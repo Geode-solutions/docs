@@ -33,14 +33,14 @@ public void ~BRepComputer()
 ### compute_surface_elements_metric
 
 ```cpp
-public void compute_surface_elements_metric(const TriangulatedSurface3D & surface, Span elements_to_insert)
+public void compute_surface_elements_metric(const TriangulatedSurface3D & surface, const absl::Span<const index_t> elements_to_insert)
 ```
 
 
 ### compute_curve_elements_metric
 
 ```cpp
-public void compute_curve_elements_metric(const EdgedCurve3D & curve, Span elements_to_insert)
+public void compute_curve_elements_metric(const EdgedCurve3D & curve, const absl::Span<const index_t> elements_to_insert)
 ```
 
 

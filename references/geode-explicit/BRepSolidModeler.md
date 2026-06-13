@@ -75,7 +75,7 @@ public void add_triangulated_surface(const TriangulatedSurface3D & mesh)
 ### paint_volume
 
 ```cpp
-public void paint_volume(const uuid & volume_uuid, Span bounding_surface_uuids)
+public void paint_volume(const uuid & volume_uuid, absl::Span<const uuid> bounding_surface_uuids)
 ```
 
 
@@ -84,7 +84,7 @@ public void paint_volume(const uuid & volume_uuid, Span bounding_surface_uuids)
 ### build
 
 ```cpp
-public tuple build()
+public std::tuple<BRep, BRepMappings> build()
 ```
 
 
@@ -93,7 +93,7 @@ public tuple build()
 ### build_painted_volumes
 
 ```cpp
-public tuple build_painted_volumes()
+public std::tuple<BRep, BRepMappings> build_painted_volumes()
 ```
 
 

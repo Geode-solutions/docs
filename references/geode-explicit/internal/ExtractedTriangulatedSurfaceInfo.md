@@ -37,6 +37,16 @@ public shared_ptr edge_incident_components
 
 ```
 
+```cpp
+public static const auto COMPONENT_FACETS_ATTRIBUTE_NAME
+
+```
+
+```cpp
+public static const auto EDGE_COMPONENTS_ATTRIBUTE_NAME
+
+```
+
 
 
 ## Functions
@@ -45,6 +55,20 @@ public shared_ptr edge_incident_components
 
 ```cpp
 public void ExtractedTriangulatedSurfaceInfo()
+```
+
+
+### enable_edge_attributes
+
+```cpp
+public void enable_edge_attributes()
+```
+
+
+### initialize_attributes
+
+```cpp
+public void initialize_attributes()
 ```
 
 
@@ -66,20 +90,6 @@ public ExtractedTriangulatedSurfaceInfo & operator=(ExtractedTriangulatedSurface
 
 ```cpp
 public void ~ExtractedTriangulatedSurfaceInfo()
-```
-
-
-### enable_edge_attributes
-
-```cpp
-public void enable_edge_attributes()
-```
-
-
-### initialize_attributes
-
-```cpp
-public void initialize_attributes()
 ```
 
 

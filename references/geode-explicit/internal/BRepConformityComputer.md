@@ -23,17 +23,17 @@ public void BRepConformityComputer(const BRepConformityComputer & )
 ```
 
 
-### operator=
-
-```cpp
-public BRepConformityComputer & operator=(const BRepConformityComputer & )
-```
-
-
 ### BRepConformityComputer
 
 ```cpp
 public void BRepConformityComputer(BRepConformityComputer && )
+```
+
+
+### operator=
+
+```cpp
+public BRepConformityComputer & operator=(const BRepConformityComputer & )
 ```
 
 
@@ -47,7 +47,7 @@ public BRepConformityComputer & operator=(BRepConformityComputer && )
 ### BRepConformityComputer
 
 ```cpp
-public void BRepConformityComputer(const BRep & brep, BRepBuilder & builder, Parameters parameters)
+public void BRepConformityComputer(const BRep & brep, BRepBuilder & builder, BRepExplicitModeler::Parameters parameters)
 ```
 
 
@@ -61,7 +61,7 @@ public void ~BRepConformityComputer()
 ### process
 
 ```cpp
-public FailedElements process()
+public BRepExplicitModeler::FailedElements process()
 ```
 
 

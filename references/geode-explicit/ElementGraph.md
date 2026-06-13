@@ -82,14 +82,14 @@ public ComponentMeshElement mesh_element(index_t element_id)
 ### element_id
 
 ```cpp
-public optional element_id(const MeshElement & mesh_element)
+public std::optional<index_t> element_id(const MeshElement & mesh_element)
 ```
 
 
 ### pair
 
 ```cpp
-public array pair(index_t pair_id)
+public std::array<ComponentMeshElement, 2> pair(index_t pair_id)
 ```
 
 
@@ -124,14 +124,14 @@ public const MeshElements & element_maps()
 ### failing_elements
 
 ```cpp
-public vector failing_elements()
+public std::vector<index_t> failing_elements()
 ```
 
 
 ### get_mesh_elements
 
 ```cpp
-public MeshElements get_mesh_elements(Span elements)
+public MeshElements get_mesh_elements(absl::Span<const index_t> elements)
 ```
 
 
@@ -194,7 +194,7 @@ public void resize_maps(const Meshes & meshes)
 ### clean_graph
 
 ```cpp
-public CleanMappings clean_graph()
+public GraphModifier::CleanMappings clean_graph()
 ```
 
 

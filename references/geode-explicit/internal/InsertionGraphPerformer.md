@@ -16,13 +16,6 @@ const name = words.join('-');
 
 ## Functions
 
-### InsertionGraphPerformer
-
-```cpp
-public void InsertionGraphPerformer(ElementGraph & elements)
-```
-
-
 ### ~InsertionGraphPerformer
 
 ```cpp
@@ -30,17 +23,24 @@ public void ~InsertionGraphPerformer()
 ```
 
 
+### process_subgraphs
+
+```cpp
+public OldToNews process_subgraphs(SubGraphAction & action)
+```
+
+
+### InsertionGraphPerformer
+
+```cpp
+public void InsertionGraphPerformer(ElementGraph & elements)
+```
+
+
 ### analyze_graph
 
 ```cpp
 public void analyze_graph(bool parallel)
-```
-
-
-### process_subgraphs
-
-```cpp
-public linked_hash_map process_subgraphs(SubGraphAction & action)
 ```
 
 

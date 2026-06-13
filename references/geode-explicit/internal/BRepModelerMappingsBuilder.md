@@ -19,7 +19,7 @@ const name = words.join('-');
 ### BRepModelerMappingsBuilder
 
 ```cpp
-public void BRepModelerMappingsBuilder(const BRep & brep, const TetrahedralSolid3D & solid, const BackgroundSolid & background, Span points_sets_uuids, Span curves_uuids, Span surfaces_uuids)
+public void BRepModelerMappingsBuilder(const BRep & brep, const TetrahedralSolid3D & solid, const BackgroundSolid & background, absl::Span<const uuid> points_sets_uuids, absl::Span<const uuid> curves_uuids, absl::Span<const uuid> surfaces_uuids)
 ```
 
 

@@ -27,6 +27,16 @@ public shared_ptr component_edges
 
 ```
 
+```cpp
+public static const auto COMPONENT_EDGES_ATTRIBUTE_NAME
+
+```
+
+```cpp
+public static const auto VERTEX_INCIDENT_COMPONENT_FACETS_ATTRIBUTE_NAME
+
+```
+
 
 
 ## Functions

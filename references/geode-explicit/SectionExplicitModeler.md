@@ -61,7 +61,7 @@ public void add_section(const Section & section)
 ### insert_and_build
 
 ```cpp
-public tuple insert_and_build()
+public std::tuple<Section, SectionMappings> insert_and_build()
 ```
 
 

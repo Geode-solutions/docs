@@ -25,7 +25,7 @@ const name = words.join('-');
 ### ModelerMappingsBuilder
 
 ```cpp
-public void ModelerMappingsBuilder<Model, BackgroundMesh>(const Model & model, const Mesh & mesh, const BackgroundMesh & background, Span points_sets_uuids, Span curves_uuids)
+public void ModelerMappingsBuilder<Model, BackgroundMesh>(const Model & model, const Mesh & mesh, const BackgroundMesh & background, absl::Span<const uuid> points_sets_uuids, absl::Span<const uuid> curves_uuids)
 ```
 
 

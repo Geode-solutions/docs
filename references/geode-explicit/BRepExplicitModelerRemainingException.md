@@ -60,7 +60,7 @@ public const MeshElements & remaining_elements()
 ### release_brep_and_mappings
 
 ```cpp
-public tuple release_brep_and_mappings()
+public std::tuple<BRep, BRepMappings> release_brep_and_mappings()
 ```
 
 
