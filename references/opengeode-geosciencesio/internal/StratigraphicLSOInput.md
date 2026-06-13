@@ -25,21 +25,14 @@ Inherits from StratigraphicModelInput
 ### StratigraphicLSOInput
 
 ```cpp
-public void StratigraphicLSOInput(basic_string_view filename)
+public void StratigraphicLSOInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public StratigraphicModel read()
+public static std::string_view extension()
 ```
 
 
@@ -54,6 +47,13 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public StratigraphicModel read()
 ```
 
 

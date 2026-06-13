@@ -25,21 +25,21 @@ Inherits from StructuralModelOutput
 ### MLOutputStructuralModel
 
 ```cpp
-public void MLOutputStructuralModel(basic_string_view filename)
+public void MLOutputStructuralModel(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const StructuralModel & structural_model)
+public std::vector<std::string> write(const StructuralModel & structural_model)
 ```
 
 

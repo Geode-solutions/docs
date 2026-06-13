@@ -25,28 +25,14 @@ Inherits from PolygonalSurfaceInput<3>
 ### DEMInput
 
 ```cpp
-public void DEMInput(basic_string_view filename)
+public void DEMInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public unique_ptr read(const MeshImpl & impl)
-```
-
-
-### additional_files
-
-```cpp
-public AdditionalFiles additional_files()
+public static std::string_view extension()
 ```
 
 
@@ -54,6 +40,20 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public std::unique_ptr<PolygonalSurface<3>> read(const MeshImpl & impl)
+```
+
+
+### additional_files
+
+```cpp
+public AdditionalFiles additional_files()
 ```
 
 

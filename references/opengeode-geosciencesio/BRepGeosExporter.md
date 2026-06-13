@@ -23,17 +23,17 @@ public void BRepGeosExporter(const BRepGeosExporter & )
 ```
 
 
-### operator=
-
-```cpp
-public BRepGeosExporter & operator=(const BRepGeosExporter & )
-```
-
-
 ### BRepGeosExporter
 
 ```cpp
 public void BRepGeosExporter(BRepGeosExporter && )
+```
+
+
+### operator=
+
+```cpp
+public BRepGeosExporter & operator=(const BRepGeosExporter & )
 ```
 
 
@@ -54,7 +54,7 @@ public void BRepGeosExporter()
 ### BRepGeosExporter
 
 ```cpp
-public void BRepGeosExporter(const BRep & brep, basic_string_view files_directory)
+public void BRepGeosExporter(const BRep & brep, std::string_view files_directory)
 ```
 
 
@@ -75,21 +75,21 @@ public void add_well_perforations(const PointSet3D & well_perforations)
 ### add_cell_property_1d
 
 ```cpp
-public void add_cell_property_1d(basic_string_view name)
+public void add_cell_property_1d(std::string_view name)
 ```
 
 
 ### add_cell_property_2d
 
 ```cpp
-public void add_cell_property_2d(basic_string_view name)
+public void add_cell_property_2d(std::string_view name)
 ```
 
 
 ### add_cell_property_3d
 
 ```cpp
-public void add_cell_property_3d(basic_string_view name)
+public void add_cell_property_3d(std::string_view name)
 ```
 
 

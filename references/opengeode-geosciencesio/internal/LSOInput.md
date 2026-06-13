@@ -25,21 +25,14 @@ Inherits from StructuralModelInput
 ### LSOInput
 
 ```cpp
-public void LSOInput(basic_string_view filename)
+public void LSOInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public StructuralModel read()
+public static std::string_view extension()
 ```
 
 
@@ -54,6 +47,13 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public StructuralModel read()
 ```
 
 

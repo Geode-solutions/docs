@@ -25,21 +25,21 @@ Inherits from StructuralModelOutput
 ### LSOOutput
 
 ```cpp
-public void LSOOutput(basic_string_view filename)
+public void LSOOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const StructuralModel & structural_model)
+public std::vector<std::string> write(const StructuralModel & structural_model)
 ```
 
 

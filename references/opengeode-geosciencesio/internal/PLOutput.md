@@ -25,21 +25,21 @@ Inherits from EdgedCurveOutput<3>
 ### PLOutput
 
 ```cpp
-public void PLOutput(basic_string_view filename)
+public void PLOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const EdgedCurve3D & edged_curve)
+public std::vector<std::string> write(const EdgedCurve3D & edged_curve)
 ```
 
 

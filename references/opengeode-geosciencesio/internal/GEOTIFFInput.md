@@ -25,21 +25,28 @@ Inherits from LightRegularGridInput2D
 ### GEOTIFFInput
 
 ```cpp
-public void GEOTIFFInput(basic_string_view filename)
+public void GEOTIFFInput(std::string_view filename)
 ```
 
 
 ### extensions
 
 ```cpp
-public vector extensions()
+public static std::vector<std::string> extensions()
 ```
 
 
 ### read
 
 ```cpp
-public LightRegularGrid read()
+public LightRegularGrid<2> read()
+```
+
+
+### object_priority
+
+```cpp
+public index_t object_priority()
 ```
 
 
@@ -54,13 +61,6 @@ public Percentage is_loadable()
 
 ```cpp
 public AdditionalFiles additional_files()
-```
-
-
-### object_priority
-
-```cpp
-public index_t object_priority()
 ```
 
 

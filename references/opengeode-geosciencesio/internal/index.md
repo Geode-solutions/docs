@@ -58,6 +58,27 @@ const name = words.join('-');
 
 ## Functions
 
+### clone_with_model_boundaries
+
+```cpp
+Model clone_with_model_boundaries(const Model & model)
+```
+
+
+### check_brep_polygons
+
+```cpp
+bool check_brep_polygons(const BRep & brep)
+```
+
+
+### get_one_border_edge
+
+```cpp
+std::optional<PolygonEdge> get_one_border_edge(const SurfaceMesh3D & mesh)
+```
+
+
 ### read_header
 
 ```cpp
@@ -68,7 +89,14 @@ HeaderData read_header(std::ifstream & file)
 ### read_name
 
 ```cpp
-basic_string read_name(absl::Span<const std::string_view> tokens)
+std::string read_name(absl::Span<const std::string_view> tokens)
+```
+
+
+### determine_surface_to_regions_sides
+
+```cpp
+RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
 ```
 
 
@@ -96,21 +124,21 @@ void write_CRS(std::ofstream & file, const CRSData & data)
 ### read_prop_header
 
 ```cpp
-PropHeaderData read_prop_header(std::ifstream & file, basic_string_view prefix)
+PropHeaderData read_prop_header(std::ifstream & file, std::string_view prefix)
 ```
 
 
 ### read_properties
 
 ```cpp
-void read_properties(const PropHeaderData & properties_header, std::vector<std::vector<double> > & attribute_values, absl::Span<const std::string_view> tokens, geode::index_t line_properties_position)
+void read_properties(const PropHeaderData & properties_header, std::vector<std::vector<double>> & attribute_values, absl::Span<const std::string_view> tokens, geode::index_t line_properties_position)
 ```
 
 
 ### create_attributes
 
 ```cpp
-void create_attributes(const PropHeaderData & attributes_header, Span attributes_values, geode::AttributeManager & attribute_manager, geode::index_t nb_vertices, Span inverse_vertex_mapping)
+void create_attributes(const PropHeaderData & attributes_header, absl::Span<const std::vector<double>> attributes_values, geode::AttributeManager & attribute_manager, geode::index_t nb_vertices, absl::Span<const geode::index_t> inverse_vertex_mapping)
 ```
 
 
@@ -131,7 +159,7 @@ void write_property_class_header(std::ofstream & file, const PropClassHeaderData
 ### read_tsurf
 
 ```cpp
-optional read_tsurf(std::ifstream & file)
+std::optional<TSurfData> read_tsurf(std::ifstream & file)
 ```
 
 
@@ -145,35 +173,7 @@ std::optional<ECurveData> read_ecurve(std::ifstream & file)
 ### read_vs_points
 
 ```cpp
-optional read_vs_points(std::ifstream & file)
-```
-
-
-### determine_surface_to_regions_sides
-
-```cpp
-RegionSurfaceSide determine_surface_to_regions_sides(const BRep & brep)
-```
-
-
-### clone_with_model_boundaries
-
-```cpp
-Model clone_with_model_boundaries(const Model & model)
-```
-
-
-### check_brep_polygons
-
-```cpp
-bool check_brep_polygons(const BRep & brep)
-```
-
-
-### get_one_border_edge
-
-```cpp
-optional get_one_border_edge(const SurfaceMesh3D & mesh)
+std::optional<VSetData> read_vs_points(std::ifstream & file)
 ```
 
 

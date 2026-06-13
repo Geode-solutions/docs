@@ -25,28 +25,14 @@ Inherits from PolygonalSurfaceInput3D
 ### PolyTIFFInput
 
 ```cpp
-public void PolyTIFFInput(basic_string_view filename)
+public void PolyTIFFInput(std::string_view filename)
 ```
 
 
 ### extensions
 
 ```cpp
-public vector extensions()
-```
-
-
-### read
-
-```cpp
-public unique_ptr read(const MeshImpl & impl)
-```
-
-
-### additional_files
-
-```cpp
-public AdditionalFiles additional_files()
+public static std::vector<std::string> extensions()
 ```
 
 
@@ -54,6 +40,20 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
+```
+
+
+### additional_files
+
+```cpp
+public AdditionalFiles additional_files()
 ```
 
 

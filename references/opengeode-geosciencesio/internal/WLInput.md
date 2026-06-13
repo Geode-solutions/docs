@@ -25,21 +25,14 @@ Inherits from EdgedCurveInput<3>
 ### WLInput
 
 ```cpp
-public void WLInput(basic_string_view filename)
+public void WLInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public unique_ptr read(const MeshImpl & impl)
+public static std::string_view extension()
 ```
 
 
@@ -54,6 +47,13 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public std::unique_ptr<EdgedCurve3D> read(const MeshImpl & impl)
 ```
 
 

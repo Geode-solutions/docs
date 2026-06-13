@@ -25,21 +25,21 @@ Inherits from BRepOutput
 ### BRepFemOutput
 
 ```cpp
-public void BRepFemOutput(basic_string_view filename)
+public void BRepFemOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const BRep & brep)
+public std::vector<std::string> write(const BRep & brep)
 ```
 
 

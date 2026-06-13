@@ -19,7 +19,7 @@ const name = words.join('-');
 ### WellInputImpl
 
 ```cpp
-public void WellInputImpl(basic_string_view filename, EdgedCurve3D & curve)
+public void WellInputImpl(std::string_view filename, EdgedCurve3D & curve)
 ```
 
 

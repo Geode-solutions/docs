@@ -25,14 +25,21 @@ Inherits from SectionInput
 ### SHPInput
 
 ```cpp
-public void SHPInput(basic_string_view filename)
+public void SHPInput(std::string_view filename)
 ```
 
 
 ### extensions
 
 ```cpp
-public vector extensions()
+public static std::vector<std::string> extensions()
+```
+
+
+### object_priority
+
+```cpp
+public index_t object_priority()
 ```
 
 
@@ -47,13 +54,6 @@ public Section read()
 
 ```cpp
 public AdditionalFiles additional_files()
-```
-
-
-### object_priority
-
-```cpp
-public index_t object_priority()
 ```
 
 

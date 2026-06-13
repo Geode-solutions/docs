@@ -22,6 +22,13 @@ const name = words.join('-');
 ### GeosExporterImpl
 
 ```cpp
+public void GeosExporterImpl<Model>(GeosExporterImpl<Model> && )
+```
+
+
+### GeosExporterImpl
+
+```cpp
 public void GeosExporterImpl<Model>(const GeosExporterImpl<Model> & )
 ```
 
@@ -30,13 +37,6 @@ public void GeosExporterImpl<Model>(const GeosExporterImpl<Model> & )
 
 ```cpp
 public GeosExporterImpl<Model> & operator=(const GeosExporterImpl<Model> & )
-```
-
-
-### GeosExporterImpl
-
-```cpp
-public void GeosExporterImpl<Model>(GeosExporterImpl<Model> && )
 ```
 
 
@@ -54,17 +54,17 @@ public void GeosExporterImpl<Model>()
 ```
 
 
-### GeosExporterImpl
-
-```cpp
-public void GeosExporterImpl<Model>(basic_string_view files_directory, const Model & model)
-```
-
-
 ### ~GeosExporterImpl
 
 ```cpp
 public void ~GeosExporterImpl<Model>()
+```
+
+
+### GeosExporterImpl
+
+```cpp
+public void GeosExporterImpl<Model>(std::string_view files_directory, const Model & model)
 ```
 
 
@@ -92,35 +92,35 @@ public void add_well_perforations(const PointSet3D & perforations)
 ### add_cell_property1d
 
 ```cpp
-public void add_cell_property1d(basic_string_view property_name)
+public void add_cell_property1d(std::string_view property_name)
 ```
 
 
 ### add_cell_property2d
 
 ```cpp
-public void add_cell_property2d(basic_string_view property_name)
+public void add_cell_property2d(std::string_view property_name)
 ```
 
 
 ### add_cell_property3d
 
 ```cpp
-public void add_cell_property3d(basic_string_view property_name)
+public void add_cell_property3d(std::string_view property_name)
 ```
 
 
 ### files_directory
 
 ```cpp
-protected basic_string_view files_directory()
+protected std::string_view files_directory()
 ```
 
 
 ### prefix
 
 ```cpp
-protected basic_string_view prefix()
+protected std::string_view prefix()
 ```
 
 
@@ -134,7 +134,7 @@ protected index_t initialize_solid_region_attribute()
 ### create_region_attribute_map
 
 ```cpp
-protected flat_hash_map create_region_attribute_map(const Model & model)
+protected absl::flat_hash_map<uuid, index_t> create_region_attribute_map(const Model & model)
 ```
 
 ### write_well_perforations_boxes
@@ -154,7 +154,7 @@ protected void write_mesh_files(pugi::xml_node & root)
 ### check_property_name
 
 ```cpp
-protected bool check_property_name(basic_string_view property_name)
+protected bool check_property_name(std::string_view property_name)
 ```
 
 
@@ -174,7 +174,7 @@ protected void delete_mapping_attributes()
 ### write_solid_file
 
 ```cpp
-protected basic_string write_solid_file()
+protected std::string write_solid_file()
 ```
 
 

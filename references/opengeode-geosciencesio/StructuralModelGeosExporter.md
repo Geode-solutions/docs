@@ -23,17 +23,17 @@ public void StructuralModelGeosExporter(const StructuralModelGeosExporter & )
 ```
 
 
-### operator=
-
-```cpp
-public StructuralModelGeosExporter & operator=(const StructuralModelGeosExporter & )
-```
-
-
 ### StructuralModelGeosExporter
 
 ```cpp
 public void StructuralModelGeosExporter(StructuralModelGeosExporter && )
+```
+
+
+### operator=
+
+```cpp
+public StructuralModelGeosExporter & operator=(const StructuralModelGeosExporter & )
 ```
 
 
@@ -54,7 +54,7 @@ public void StructuralModelGeosExporter()
 ### StructuralModelGeosExporter
 
 ```cpp
-public void StructuralModelGeosExporter(const StructuralModel & model, basic_string_view files_directory)
+public void StructuralModelGeosExporter(const StructuralModel & model, std::string_view files_directory)
 ```
 
 
@@ -75,21 +75,21 @@ public void add_well_perforations(const PointSet3D & well_perforations)
 ### add_cell_property_1d
 
 ```cpp
-public void add_cell_property_1d(basic_string_view name)
+public void add_cell_property_1d(std::string_view name)
 ```
 
 
 ### add_cell_property_2d
 
 ```cpp
-public void add_cell_property_2d(basic_string_view name)
+public void add_cell_property_2d(std::string_view name)
 ```
 
 
 ### add_cell_property_3d
 
 ```cpp
-public void add_cell_property_3d(basic_string_view name)
+public void add_cell_property_3d(std::string_view name)
 ```
 
 
