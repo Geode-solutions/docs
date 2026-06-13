@@ -29,17 +29,17 @@ public void BackgroundSurfaceMetricDecimator(const BackgroundSurfaceMetricDecima
 ```
 
 
-### operator=
-
-```cpp
-public BackgroundSurfaceMetricDecimator & operator=(const BackgroundSurfaceMetricDecimator & )
-```
-
-
 ### BackgroundSurfaceMetricDecimator
 
 ```cpp
 public void BackgroundSurfaceMetricDecimator(BackgroundSurfaceMetricDecimator && )
+```
+
+
+### operator=
+
+```cpp
+public BackgroundSurfaceMetricDecimator & operator=(const BackgroundSurfaceMetricDecimator & )
 ```
 
 
@@ -67,7 +67,7 @@ public void ~BackgroundSurfaceMetricDecimator()
 ### collapse_edge
 
 ```cpp
-protected optional collapse_edge(const OrientedEdge & edge)
+protected std::optional<ProcessElementResult> collapse_edge(const OrientedEdge & edge)
 ```
 
 

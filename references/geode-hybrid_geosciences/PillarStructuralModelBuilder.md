@@ -19,7 +19,7 @@ const name = words.join('-');
 ### PillarStructuralModelBuilder
 
 ```cpp
-public void PillarStructuralModelBuilder(StructuralModel & model, Span top_surfaces, Span bottom_surfaces)
+public void PillarStructuralModelBuilder(StructuralModel & model, absl::Span<const uuid> top_surfaces, absl::Span<const uuid> bottom_surfaces)
 ```
 
 

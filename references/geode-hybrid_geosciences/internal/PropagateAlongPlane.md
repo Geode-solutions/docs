@@ -25,14 +25,14 @@ Inherits from SurfacePathFinder<3>
 ### PropagateAlongPlane
 
 ```cpp
-public void PropagateAlongPlane(const StructuralModel & model, const TriangulatedSurface3D & surface, const OwnerPlane & plane, Span top_surfaces, Span bottom_surfaces, bool dot_positive)
+public void PropagateAlongPlane(const StructuralModel & model, const TriangulatedSurface3D & surface, const OwnerPlane & plane, absl::Span<const uuid> top_surfaces, absl::Span<const uuid> bottom_surfaces, bool dot_positive)
 ```
 
 
 ### along_plane
 
 ```cpp
-public optional along_plane(const SurfacePath & first_path)
+public std::optional<std::vector<SurfacePath>> along_plane(const SurfacePath & first_path)
 ```
 
 
@@ -46,28 +46,28 @@ protected bool stop_propagation(const SurfacePath & path)
 ### next_intersection
 
 ```cpp
-protected optional next_intersection(const SurfacePath & path, bool is_first_path)
+protected std::optional<SurfacePath> next_intersection(const SurfacePath & path, bool is_first_path)
 ```
 
 
 ### next_vertex_intersection
 
 ```cpp
-protected optional next_vertex_intersection(const index_t vertex)
+protected std::optional<SurfacePath> next_vertex_intersection(const index_t vertex)
 ```
 
 
 ### next_edge_intersection
 
 ```cpp
-protected optional next_edge_intersection(const PolygonEdge & adjacent_edge)
+protected std::optional<SurfacePath> next_edge_intersection(const PolygonEdge & adjacent_edge)
 ```
 
 
 ### oriented_edge_segment
 
 ```cpp
-protected Segment oriented_edge_segment(const OrientedPolygonEdge & edge)
+protected Segment<3> oriented_edge_segment(const OrientedPolygonEdge & edge)
 ```
 
 

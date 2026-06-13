@@ -21,7 +21,7 @@ public AABBTree<dimension> components_tree_
 ```
 
 ```cpp
-public absl::FixedArray<AABBTree<dimension> > mesh_trees_
+public absl::FixedArray<AABBTree<dimension>> mesh_trees_
 
 ```
 

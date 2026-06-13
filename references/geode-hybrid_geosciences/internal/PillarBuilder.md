@@ -19,7 +19,7 @@ const name = words.join('-');
 ### PillarBuilder
 
 ```cpp
-public void PillarBuilder(Pillar & pillar, const StructuralModel & model, Span top_surfaces_ids, Span bottom_surfaces_ids, const ModelMeshesAABBTree3D & surfaces_aabb_trees, const BackgroundSurface & background_surface, Span surface_groups_order, const TriangulatedSurface2D & top_surface, const OwnerSegment3D & pillar_segment)
+public void PillarBuilder(Pillar & pillar, const StructuralModel & model, absl::Span<const uuid> top_surfaces_ids, absl::Span<const uuid> bottom_surfaces_ids, const ModelMeshesAABBTree3D & surfaces_aabb_trees, const BackgroundSurface & background_surface, absl::Span<const std::vector<uuid>> surface_groups_order, const TriangulatedSurface2D & top_surface, const OwnerSegment3D & pillar_segment)
 ```
 
 
