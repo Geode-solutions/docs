@@ -29,6 +29,27 @@ Inherits from BRepBuilder, FaultsBuilder3D, HorizonsBuilder3D, FaultBlocksBuilde
 ### StructuralModelBuilder
 
 ```cpp
+public void StructuralModelBuilder(StructuralModel & structural_model)
+```
+
+
+### copy
+
+```cpp
+public ModelCopyMapping copy(const StructuralModel & structural_model)
+```
+
+
+### StructuralModelBuilder
+
+```cpp
+public void StructuralModelBuilder(StructuralModelBuilder && )
+```
+
+
+### StructuralModelBuilder
+
+```cpp
 public void StructuralModelBuilder(const StructuralModelBuilder & )
 ```
 
@@ -40,31 +61,10 @@ public StructuralModelBuilder & operator=(const StructuralModelBuilder & )
 ```
 
 
-### StructuralModelBuilder
-
-```cpp
-public void StructuralModelBuilder(StructuralModelBuilder && )
-```
-
-
 ### operator=
 
 ```cpp
 public StructuralModelBuilder & operator=(StructuralModelBuilder && )
-```
-
-
-### StructuralModelBuilder
-
-```cpp
-public void StructuralModelBuilder(StructuralModel & structural_model)
-```
-
-
-### copy
-
-```cpp
-public ModelMapping copy(const StructuralModel & structural_model)
 ```
 
 

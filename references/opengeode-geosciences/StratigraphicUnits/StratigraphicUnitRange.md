@@ -22,13 +22,6 @@ Inherits from StratigraphicUnitRangeBase
 
 ## Functions
 
-### StratigraphicUnitRange
-
-```cpp
-public void StratigraphicUnitRange(const StratigraphicUnits<> & stratigraphic_units)
-```
-
-
 ### begin
 
 ```cpp
@@ -40,6 +33,13 @@ public const StratigraphicUnitRange & begin()
 
 ```cpp
 public const StratigraphicUnitRange & end()
+```
+
+
+### StratigraphicUnitRange
+
+```cpp
+public void StratigraphicUnitRange(const StratigraphicUnits<dimension> & stratigraphic_units)
 ```
 
 

@@ -36,7 +36,7 @@ public void ImplicitStructuralModelBuilder(ImplicitStructuralModel & implicit_mo
 ### copy
 
 ```cpp
-public ModelMapping copy(const ImplicitStructuralModel & implicit_model)
+public ModelCopyMapping copy(const ImplicitStructuralModel & implicit_model)
 ```
 
 
@@ -85,7 +85,7 @@ public void set_horizon_implicit_value(const Horizon3D & horizon, double isovalu
 ### horizons_stack_builder
 
 ```cpp
-public HorizonsStackBuilder horizons_stack_builder()
+public HorizonsStackBuilder3D horizons_stack_builder()
 ```
 
 

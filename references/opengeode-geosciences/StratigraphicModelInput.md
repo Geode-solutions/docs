@@ -25,7 +25,7 @@ Inherits from Input<StratigraphicModel>
 ### StratigraphicModelInput
 
 ```cpp
-protected void StratigraphicModelInput(basic_string_view filename)
+protected void StratigraphicModelInput(std::string_view filename)
 ```
 
 

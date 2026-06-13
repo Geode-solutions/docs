@@ -32,7 +32,7 @@ public void ~CrossSectionOutput()
 ### CrossSectionOutput
 
 ```cpp
-protected void CrossSectionOutput(basic_string_view filename)
+protected void CrossSectionOutput(std::string_view filename)
 ```
 
 

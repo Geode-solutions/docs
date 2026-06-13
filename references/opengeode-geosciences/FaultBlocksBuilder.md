@@ -22,31 +22,31 @@ const name = words.join('-');
 
 ## Functions
 
-### load_fault_blocks
+### create_fault_block
 
 ```cpp
-public void load_fault_blocks(basic_string_view directory)
-```
-
-
-### set_fault_block_name
-
-```cpp
-public void set_fault_block_name(const uuid & id, basic_string_view name)
+protected const uuid & create_fault_block()
 ```
 
 
 ### FaultBlocksBuilder
 
 ```cpp
-protected void FaultBlocksBuilder<>(FaultBlocks<dimension> & fault_blocks)
+protected void FaultBlocksBuilder<value-parameter-0-0>(FaultBlocks<dimension> & fault_blocks)
 ```
 
 
-### create_fault_block
+### load_fault_blocks
 
 ```cpp
-protected const uuid & create_fault_block()
+public void load_fault_blocks(std::string_view directory)
+```
+
+
+### set_fault_block_name
+
+```cpp
+public void set_fault_block_name(const uuid & id, std::string_view name)
 ```
 
 

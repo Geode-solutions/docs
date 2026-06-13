@@ -25,14 +25,7 @@ Inherits from ImplicitStructuralModelOutput
 ### OpenGeodeImplicitStructuralModelOutput
 
 ```cpp
-public void OpenGeodeImplicitStructuralModelOutput(basic_string_view filename)
-```
-
-
-### extension
-
-```cpp
-public basic_string_view extension()
+public void OpenGeodeImplicitStructuralModelOutput(std::string_view filename)
 ```
 
 
@@ -43,17 +36,24 @@ public void archive_implicit_model_files(const ZipFile & zip_writer)
 ```
 
 
+### extension
+
+```cpp
+public static std::string_view extension()
+```
+
+
 ### save_implicit_model_files
 
 ```cpp
-public void save_implicit_model_files(const ImplicitStructuralModel & implicit_model, basic_string_view directory)
+public void save_implicit_model_files(const ImplicitStructuralModel & implicit_model, std::string_view directory)
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const ImplicitStructuralModel & implicit_model)
+public std::vector<std::string> write(const ImplicitStructuralModel & implicit_model)
 ```
 
 

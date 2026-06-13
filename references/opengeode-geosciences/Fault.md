@@ -56,6 +56,13 @@ public void Fault<dimension>(Fault<dimension> && other)
 ```
 
 
+### component_type_static
+
+```cpp
+public static ComponentType component_type_static()
+```
+
+
 ### ~Fault
 
 ```cpp
@@ -63,17 +70,10 @@ public void ~Fault<dimension>()
 ```
 
 
-### component_type_static
-
-```cpp
-public NamedType component_type_static()
-```
-
-
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
@@ -115,7 +115,7 @@ public void set_type(FAULT_TYPE type, FaultsBuilderKey )
 ### set_fault_name
 
 ```cpp
-public void set_fault_name(basic_string_view name, FaultsBuilderKey )
+public void set_fault_name(std::string_view name, FaultsBuilderKey )
 ```
 
 

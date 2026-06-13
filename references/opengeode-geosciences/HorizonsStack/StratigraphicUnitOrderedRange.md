@@ -31,10 +31,24 @@ Impl
 
 ## Functions
 
+### begin
+
+```cpp
+public const StratigraphicUnitOrderedRange & begin()
+```
+
+
+### end
+
+```cpp
+public const StratigraphicUnitOrderedRange & end()
+```
+
+
 ### StratigraphicUnitOrderedRange
 
 ```cpp
-public void StratigraphicUnitOrderedRange(const HorizonsStack<> & horizons_stack, RANGEORDER range_order)
+public void StratigraphicUnitOrderedRange(const HorizonsStack<dimension> & horizons_stack, RANGEORDER range_order)
 ```
 
 
@@ -70,20 +84,6 @@ public bool operator!=(const StratigraphicUnitOrderedRange & )
 
 ```cpp
 public void operator++()
-```
-
-
-### begin
-
-```cpp
-public const StratigraphicUnitOrderedRange & begin()
-```
-
-
-### end
-
-```cpp
-public const StratigraphicUnitOrderedRange & end()
 ```
 
 

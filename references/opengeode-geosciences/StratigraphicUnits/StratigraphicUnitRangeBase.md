@@ -62,7 +62,7 @@ public void set_active_only()
 ### StratigraphicUnitRangeBase
 
 ```cpp
-protected void StratigraphicUnitRangeBase(const StratigraphicUnits<> & stratigraphic_units)
+protected void StratigraphicUnitRangeBase(const StratigraphicUnits<dimension> & stratigraphic_units)
 ```
 
 

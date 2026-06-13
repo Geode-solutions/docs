@@ -24,7 +24,30 @@ Inherits from CrossSection
 
 
 
+## Members
+
+```cpp
+public static const auto IMPLICIT_ATTRIBUTE_NAME
+
+```
+
+
+
 ## Functions
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
+```
+
 
 ### ImplicitCrossSection
 
@@ -72,20 +95,6 @@ public ImplicitCrossSection clone()
 
 ```cpp
 public const Component2D & component(const uuid & id)
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
 ```
 
 

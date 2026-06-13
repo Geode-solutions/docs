@@ -19,9 +19,9 @@ const name = words.join('-');
 
 ## Records
 
-FaultRangeBase
-
 FaultRange
+
+FaultRangeBase
 
 
 
@@ -30,21 +30,28 @@ FaultRange
 ### Faults
 
 ```cpp
-public void Faults<>(const Faults<> & )
+protected void Faults<value-parameter-0-0>()
+```
+
+
+### Faults
+
+```cpp
+public void Faults<value-parameter-0-0>(const Faults<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Faults<> & operator=(const Faults<> & )
+public Faults<dimension> & operator=(const Faults<dimension> & )
 ```
 
 
 ### ~Faults
 
 ```cpp
-public void ~Faults<>()
+public void ~Faults<value-parameter-0-0>()
 ```
 
 
@@ -90,6 +97,27 @@ public FaultRange active_faults()
 ```
 
 
+### save_faults
+
+```cpp
+public void save_faults(std::string_view directory)
+```
+
+
+### Faults
+
+```cpp
+protected void Faults<value-parameter-0-0>(Faults<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected Faults<dimension> & operator=(Faults<dimension> && other)
+```
+
+
 ### components
 
 ```cpp
@@ -108,34 +136,6 @@ public bool has_component(const uuid & id)
 
 ```cpp
 public const Fault<dimension> & component(const uuid & id)
-```
-
-
-### save_faults
-
-```cpp
-public void save_faults(basic_string_view directory)
-```
-
-
-### Faults
-
-```cpp
-protected void Faults<>()
-```
-
-
-### Faults
-
-```cpp
-protected void Faults<>(Faults<> && other)
-```
-
-
-### operator=
-
-```cpp
-protected Faults<> & operator=(Faults<> && other)
 ```
 
 
@@ -177,7 +177,7 @@ public void delete_fault(const Fault<dimension> & fault, FaultsBuilderKey key)
 ### load_faults
 
 ```cpp
-public void load_faults(basic_string_view directory, FaultsBuilderKey key)
+public void load_faults(std::string_view directory, FaultsBuilderKey key)
 ```
 
 
@@ -194,18 +194,6 @@ public ModifiableFaultRange modifiable_faults(FaultsBuilderKey key)
 public Fault<dimension> & modifiable_fault(const uuid & id, FaultsBuilderKey key)
 ```
 
-
-### create_fault
-
-```cpp
-public const uuid & create_fault(typename Fault<dimension>::FAULT_TYPE type, FaultsBuilderKey key)
-```
-
-### create_fault
-
-```cpp
-public void create_fault(uuid fault_id, typename Fault<dimension>::FAULT_TYPE type, FaultsBuilderKey key)
-```
 
 
 

@@ -25,14 +25,7 @@ Inherits from ImplicitCrossSectionOutput
 ### OpenGeodeImplicitCrossSectionOutput
 
 ```cpp
-public void OpenGeodeImplicitCrossSectionOutput(basic_string_view filename)
-```
-
-
-### extension
-
-```cpp
-public basic_string_view extension()
+public void OpenGeodeImplicitCrossSectionOutput(std::string_view filename)
 ```
 
 
@@ -43,17 +36,24 @@ public void archive_implicit_section_files(const ZipFile & zip_writer)
 ```
 
 
+### extension
+
+```cpp
+public static std::string_view extension()
+```
+
+
 ### save_implicit_section_files
 
 ```cpp
-public void save_implicit_section_files(const ImplicitCrossSection & implicit_section, basic_string_view directory)
+public void save_implicit_section_files(const ImplicitCrossSection & implicit_section, std::string_view directory)
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const ImplicitCrossSection & implicit_section)
+public std::vector<std::string> write(const ImplicitCrossSection & implicit_section)
 ```
 
 

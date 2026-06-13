@@ -22,10 +22,24 @@ const name = words.join('-');
 
 ## Functions
 
+### create_fault
+
+```cpp
+protected const uuid & create_fault()
+```
+
+
+### FaultsBuilder
+
+```cpp
+protected void FaultsBuilder<value-parameter-0-0>(Faults<dimension> & faults)
+```
+
+
 ### load_faults
 
 ```cpp
-public void load_faults(basic_string_view directory)
+public void load_faults(std::string_view directory)
 ```
 
 
@@ -39,21 +53,7 @@ public void set_fault_type(const uuid & fault_id, typename Fault<dimension>::FAU
 ### set_fault_name
 
 ```cpp
-public void set_fault_name(const uuid & id, basic_string_view name)
-```
-
-
-### FaultsBuilder
-
-```cpp
-protected void FaultsBuilder<>(Faults<dimension> & faults)
-```
-
-
-### create_fault
-
-```cpp
-protected const uuid & create_fault()
+public void set_fault_name(const uuid & id, std::string_view name)
 ```
 
 
@@ -84,24 +84,6 @@ protected void create_fault(uuid fault_id, typename Fault<dimension>::FAULT_TYPE
 protected void delete_fault(const Fault<dimension> & fault)
 ```
 
-
-### set_fault_type
-
-```cpp
-public void set_fault_type(const uuid & fault_id, typename Fault<dimension>::FAULT_TYPE type)
-```
-
-### create_fault
-
-```cpp
-protected const uuid & create_fault(typename Fault<dimension>::FAULT_TYPE type)
-```
-
-### create_fault
-
-```cpp
-protected void create_fault(uuid fault_id, typename Fault<dimension>::FAULT_TYPE type)
-```
 
 
 

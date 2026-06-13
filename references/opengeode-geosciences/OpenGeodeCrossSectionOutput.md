@@ -25,21 +25,21 @@ Inherits from CrossSectionOutput
 ### OpenGeodeCrossSectionOutput
 
 ```cpp
-public void OpenGeodeCrossSectionOutput(basic_string_view filename)
+public void OpenGeodeCrossSectionOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### save_cross_section_files
 
 ```cpp
-public void save_cross_section_files(const CrossSection & cross_section, basic_string_view directory)
+public void save_cross_section_files(const CrossSection & cross_section, std::string_view directory)
 ```
 
 
@@ -53,7 +53,7 @@ public void archive_cross_section_files(const ZipFile & zip_writer)
 ### write
 
 ```cpp
-public vector write(const CrossSection & cross_section)
+public std::vector<std::string> write(const CrossSection & cross_section)
 ```
 
 

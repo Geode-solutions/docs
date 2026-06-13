@@ -22,13 +22,6 @@ Inherits from FaultBlockRangeBase
 
 ## Functions
 
-### FaultBlockRange
-
-```cpp
-public void FaultBlockRange(const FaultBlocks<> & fault_blocks)
-```
-
-
 ### begin
 
 ```cpp
@@ -40,6 +33,13 @@ public const FaultBlockRange & begin()
 
 ```cpp
 public const FaultBlockRange & end()
+```
+
+
+### FaultBlockRange
+
+```cpp
+public void FaultBlockRange(const FaultBlocks<dimension> & fault_blocks)
 ```
 
 

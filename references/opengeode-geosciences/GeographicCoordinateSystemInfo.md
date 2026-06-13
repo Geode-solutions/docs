@@ -38,7 +38,7 @@ public basic_string name
 ### GeographicCoordinateSystemInfo
 
 ```cpp
-public void GeographicCoordinateSystemInfo(basic_string authority_in, basic_string code_in, basic_string name_in)
+public void GeographicCoordinateSystemInfo(std::string authority_in, std::string code_in, std::string name_in)
 ```
 
 
@@ -59,14 +59,14 @@ public void ~GeographicCoordinateSystemInfo()
 ### authority_code
 
 ```cpp
-public basic_string authority_code()
+public std::string authority_code()
 ```
 
 
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

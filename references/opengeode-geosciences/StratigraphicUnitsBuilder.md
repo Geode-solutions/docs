@@ -16,31 +16,31 @@ const name = words.join('-');
 
 ## Functions
 
-### load_stratigraphic_units
+### create_stratigraphic_unit
 
 ```cpp
-public void load_stratigraphic_units(basic_string_view directory)
-```
-
-
-### set_stratigraphic_unit_name
-
-```cpp
-public void set_stratigraphic_unit_name(const uuid & id, basic_string_view name)
+protected const uuid & create_stratigraphic_unit()
 ```
 
 
 ### StratigraphicUnitsBuilder
 
 ```cpp
-protected void StratigraphicUnitsBuilder<>(StratigraphicUnits<dimension> & stratigraphic_units)
+protected void StratigraphicUnitsBuilder<value-parameter-0-0>(StratigraphicUnits<dimension> & stratigraphic_units)
 ```
 
 
-### create_stratigraphic_unit
+### load_stratigraphic_units
 
 ```cpp
-protected const uuid & create_stratigraphic_unit()
+public void load_stratigraphic_units(std::string_view directory)
+```
+
+
+### set_stratigraphic_unit_name
+
+```cpp
+public void set_stratigraphic_unit_name(const uuid & id, std::string_view name)
 ```
 
 

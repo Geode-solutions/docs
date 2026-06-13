@@ -62,7 +62,7 @@ public void set_active_only()
 ### FaultBlockRangeBase
 
 ```cpp
-protected void FaultBlockRangeBase(const FaultBlocks<> & fault_blocks)
+protected void FaultBlockRangeBase(const FaultBlocks<dimension> & fault_blocks)
 ```
 
 

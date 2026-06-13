@@ -24,7 +24,35 @@ Inherits from ImplicitCrossSection
 
 
 
+## Members
+
+```cpp
+public static const auto STRATIGRAPHIC_LOCATION_ATTRIBUTE_NAME
+
+```
+
+```cpp
+public static const auto STRATIGRAPHIC_LINE_POLYGON_EDGE_ATTRIBUTE_NAME
+
+```
+
+
+
 ## Functions
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
+```
+
 
 ### StratigraphicSection
 
@@ -79,20 +107,6 @@ public StratigraphicSection clone()
 
 ```cpp
 public const Component2D & component(const uuid & id)
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
 ```
 
 

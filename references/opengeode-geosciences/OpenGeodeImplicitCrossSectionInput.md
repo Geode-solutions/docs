@@ -25,14 +25,14 @@ Inherits from ImplicitCrossSectionInput
 ### OpenGeodeImplicitCrossSectionInput
 
 ```cpp
-public void OpenGeodeImplicitCrossSectionInput(basic_string_view filename)
+public void OpenGeodeImplicitCrossSectionInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 

@@ -38,20 +38,6 @@ Inherits from Component<dimension>
 ### FaultBlock
 
 ```cpp
-public void FaultBlock<dimension>(const FaultBlock<dimension> & )
-```
-
-
-### operator=
-
-```cpp
-public FaultBlock<dimension> & operator=(const FaultBlock<dimension> & )
-```
-
-
-### FaultBlock
-
-```cpp
 public void FaultBlock<dimension>(FaultBlock<dimension> && other)
 ```
 
@@ -63,17 +49,31 @@ public void ~FaultBlock<dimension>()
 ```
 
 
+### FaultBlock
+
+```cpp
+public void FaultBlock<dimension>(const FaultBlock<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public FaultBlock<dimension> & operator=(const FaultBlock<dimension> & )
+```
+
+
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
@@ -87,7 +87,7 @@ public void FaultBlock<dimension>(FaultBlocksKey )
 ### set_fault_block_name
 
 ```cpp
-public void set_fault_block_name(basic_string_view name, FaultBlocksBuilderKey )
+public void set_fault_block_name(std::string_view name, FaultBlocksBuilderKey )
 ```
 
 

@@ -17,73 +17,10 @@ const name = words.join('-');
 
 ## Functions
 
-### load_cross_section_files
-
-```cpp
-void load_cross_section_files(CrossSection & cross_section, basic_string_view directory)
-```
-
-
-### load_structural_model_files
-
-```cpp
-void load_structural_model_files(StructuralModel & structural_model, basic_string_view directory)
-```
-
-
-### load_implicit_cross_section_files
-
-```cpp
-void load_implicit_cross_section_files(ImplicitCrossSection & section, basic_string_view directory)
-```
-
-
-### load_implicit_structural_model_files
-
-```cpp
-void load_implicit_structural_model_files(ImplicitStructuralModel & model, basic_string_view directory)
-```
-
-
 ### copy_faults
 
 ```cpp
 void copy_faults(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
-```
-
-
-### copy_horizons
-
-```cpp
-void copy_horizons(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
-```
-
-
-### copy_fault_blocks
-
-```cpp
-void copy_fault_blocks(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
-```
-
-
-### copy_stratigraphic_units
-
-```cpp
-void copy_stratigraphic_units(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
-```
-
-
-### copy_collection_item_relationships
-
-```cpp
-void copy_collection_item_relationships(const ModelFrom & from, const CollectionRangeFrom & collection_range_from, const Mapping & collection_mapping, const Mapping & item_mapping, BuilderTo & builder_to)
-```
-
-
-### add_geology_clone_mapping
-
-```cpp
-void add_geology_clone_mapping(ModelCopyMapping & mapping, const Model & model)
 ```
 
 
@@ -101,10 +38,17 @@ void add_stratigraphic_units_clone_mapping(const Model & model, BijectiveMapping
 ```
 
 
+### add_geology_clone_mapping
+
+```cpp
+void add_geology_clone_mapping(ModelCopyMapping & mapping, const Model & model)
+```
+
+
 ### transfer_geological_information
 
 ```cpp
-ModelMapping transfer_geological_information(const Model & initial_model, const Model & modified_model, typename Model::Builder & model_builder, const ModelGenericMapping & components_mappings)
+ModelCopyMapping transfer_geological_information(const Model & initial_model, const Model & modified_model, typename Model::Builder & model_builder, const ModelGenericMapping & components_mappings)
 ```
 
 
@@ -136,6 +80,48 @@ void rescale_implicit_value(ImplicitStructuralModel & model, double scaling_fact
 ```
 
 
+### load_cross_section_files
+
+```cpp
+void load_cross_section_files(CrossSection & cross_section, std::string_view directory)
+```
+
+
+### load_structural_model_files
+
+```cpp
+void load_structural_model_files(StructuralModel & structural_model, std::string_view directory)
+```
+
+
+### copy_horizons
+
+```cpp
+void copy_horizons(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
+```
+
+
+### load_implicit_cross_section_files
+
+```cpp
+void load_implicit_cross_section_files(ImplicitCrossSection & section, std::string_view directory)
+```
+
+
+### load_implicit_structural_model_files
+
+```cpp
+void load_implicit_structural_model_files(ImplicitStructuralModel & model, std::string_view directory)
+```
+
+
+### copy_fault_blocks
+
+```cpp
+void copy_fault_blocks(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
+```
+
+
 ### rescale_implicit_value_to_bbox_scale
 
 ```cpp
@@ -143,31 +129,45 @@ void rescale_implicit_value_to_bbox_scale(StratigraphicModel & model)
 ```
 
 
+### copy_stratigraphic_units
+
+```cpp
+void copy_stratigraphic_units(const ModelFrom & from, BuilderTo & builder_to, Mapping & mapping)
+```
+
+
 ### save_stratigraphic_surfaces
 
 ```cpp
-void save_stratigraphic_surfaces(const StratigraphicSection & section, basic_string_view prefix)
+void save_stratigraphic_surfaces(const StratigraphicSection & section, std::string_view prefix)
+```
+
+
+### copy_collection_item_relationships
+
+```cpp
+void copy_collection_item_relationships(const ModelFrom & from, const CollectionRangeFrom & collection_range_from, const Mapping & collection_mapping, const Mapping & item_mapping, BuilderTo & builder_to)
 ```
 
 
 ### save_stratigraphic_blocks
 
 ```cpp
-void save_stratigraphic_blocks(const StratigraphicModel & model, basic_string_view prefix)
+void save_stratigraphic_blocks(const StratigraphicModel & model, std::string_view prefix)
 ```
 
 
 ### implicit_section_from_cross_section_scalar_field
 
 ```cpp
-ImplicitCrossSection implicit_section_from_cross_section_scalar_field(CrossSection && section, basic_string_view scalar_attribute_name)
+ImplicitCrossSection implicit_section_from_cross_section_scalar_field(CrossSection && section, std::string_view scalar_attribute_name)
 ```
 
 
 ### implicit_model_from_structural_model_scalar_field
 
 ```cpp
-ImplicitStructuralModel implicit_model_from_structural_model_scalar_field(StructuralModel && model, basic_string_view scalar_attribute_name)
+ImplicitStructuralModel implicit_model_from_structural_model_scalar_field(StructuralModel && model, std::string_view scalar_attribute_name)
 ```
 
 
@@ -181,7 +181,7 @@ StratigraphicModel stratigraphic_model_from_implicit_model_and_coords(ImplicitSt
 ### horizons_stack_from_top_to_bottom_names
 
 ```cpp
-HorizonsStack<dimension> horizons_stack_from_top_to_bottom_names(Span horizons_names, Span units_names)
+HorizonsStack<dimension> horizons_stack_from_top_to_bottom_names(absl::Span<const std::string> horizons_names, absl::Span<const std::string> units_names)
 ```
 
 
@@ -190,7 +190,7 @@ HorizonsStack<dimension> horizons_stack_from_top_to_bottom_names(Span horizons_n
 ### horizons_stack_from_bottom_to_top_names
 
 ```cpp
-HorizonsStack<dimension> horizons_stack_from_bottom_to_top_names(Span horizons_names, Span units_names)
+HorizonsStack<dimension> horizons_stack_from_bottom_to_top_names(absl::Span<const std::string> horizons_names, absl::Span<const std::string> units_names)
 ```
 
 
@@ -206,21 +206,21 @@ void repair_horizon_stack_if_possible(const HorizonsStack<dimension> & horizon_s
 ### horizon_id_from_name
 
 ```cpp
-optional horizon_id_from_name(const HorizonsStack<dimension> & horizon_stack, basic_string_view horizon_name)
+std::optional<uuid> horizon_id_from_name(const HorizonsStack<dimension> & horizon_stack, std::string_view horizon_name)
 ```
 
 
 ### stratigraphic_unit_id_from_name
 
 ```cpp
-optional stratigraphic_unit_id_from_name(const HorizonsStack<dimension> & horizon_stack, basic_string_view unit_name)
+std::optional<uuid> stratigraphic_unit_id_from_name(const HorizonsStack<dimension> & horizon_stack, std::string_view unit_name)
 ```
 
 
 ### invalid_stratigraphic_tetrahedra
 
 ```cpp
-vector invalid_stratigraphic_tetrahedra(const StratigraphicModel & model)
+std::vector<MeshElement> invalid_stratigraphic_tetrahedra(const StratigraphicModel & model)
 ```
 
 

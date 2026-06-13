@@ -22,13 +22,6 @@ Inherits from HorizonRangeBase
 
 ## Functions
 
-### HorizonRange
-
-```cpp
-public void HorizonRange(const Horizons<> & horizons)
-```
-
-
 ### begin
 
 ```cpp
@@ -40,6 +33,13 @@ public const HorizonRange & begin()
 
 ```cpp
 public const HorizonRange & end()
+```
+
+
+### HorizonRange
+
+```cpp
+public void HorizonRange(const Horizons<dimension> & horizons)
 ```
 
 

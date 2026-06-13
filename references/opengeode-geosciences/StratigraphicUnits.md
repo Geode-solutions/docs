@@ -22,32 +22,18 @@ const name = words.join('-');
 
 ## Records
 
-StratigraphicUnitRangeBase
-
 StratigraphicUnitRange
+
+StratigraphicUnitRangeBase
 
 
 
 ## Functions
 
-### StratigraphicUnits
-
-```cpp
-public void StratigraphicUnits<>(const StratigraphicUnits<> & )
-```
-
-
-### operator=
-
-```cpp
-public StratigraphicUnits<> & operator=(const StratigraphicUnits<> & )
-```
-
-
 ### ~StratigraphicUnits
 
 ```cpp
-public void ~StratigraphicUnits<>()
+public void ~StratigraphicUnits<value-parameter-0-0>()
 ```
 
 
@@ -55,6 +41,27 @@ public void ~StratigraphicUnits<>()
 
 ```cpp
 public index_t nb_stratigraphic_units()
+```
+
+
+### StratigraphicUnits
+
+```cpp
+protected void StratigraphicUnits<value-parameter-0-0>()
+```
+
+
+### StratigraphicUnits
+
+```cpp
+public void StratigraphicUnits<value-parameter-0-0>(const StratigraphicUnits<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public StratigraphicUnits<dimension> & operator=(const StratigraphicUnits<dimension> & )
 ```
 
 
@@ -93,45 +100,17 @@ public StratigraphicUnitRange active_stratigraphic_units()
 ```
 
 
-### components
-
-```cpp
-public StratigraphicUnitRange components()
-```
-
-
-### has_component
-
-```cpp
-public bool has_component(const uuid & id)
-```
-
-
-### component
-
-```cpp
-public const StratigraphicUnit<dimension> & component(const uuid & id)
-```
-
-
 ### save_stratigraphic_units
 
 ```cpp
-public void save_stratigraphic_units(basic_string_view directory)
+public void save_stratigraphic_units(std::string_view directory)
 ```
 
 
 ### StratigraphicUnits
 
 ```cpp
-protected void StratigraphicUnits<>()
-```
-
-
-### StratigraphicUnits
-
-```cpp
-protected void StratigraphicUnits<>(StratigraphicUnits<> && other)
+protected void StratigraphicUnits<value-parameter-0-0>(StratigraphicUnits<dimension> && other)
 ```
 
 
@@ -166,7 +145,7 @@ public void delete_stratigraphic_unit(const StratigraphicUnit<dimension> & strat
 ### load_stratigraphic_units
 
 ```cpp
-public void load_stratigraphic_units(basic_string_view directory, StratigraphicUnitsBuilderKey key)
+public void load_stratigraphic_units(std::string_view directory, StratigraphicUnitsBuilderKey key)
 ```
 
 
@@ -181,6 +160,27 @@ public ModifiableStratigraphicUnitRange modifiable_stratigraphic_units(Stratigra
 
 ```cpp
 public StratigraphicUnit<dimension> & modifiable_stratigraphic_unit(const uuid & id, StratigraphicUnitsBuilderKey key)
+```
+
+
+### components
+
+```cpp
+public StratigraphicUnitRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const StratigraphicUnit<dimension> & component(const uuid & id)
 ```
 
 

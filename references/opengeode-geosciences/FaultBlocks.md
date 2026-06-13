@@ -16,32 +16,18 @@ const name = words.join('-');
 
 ## Records
 
-FaultBlockRangeBase
-
 FaultBlockRange
+
+FaultBlockRangeBase
 
 
 
 ## Functions
 
-### FaultBlocks
-
-```cpp
-public void FaultBlocks<>(const FaultBlocks<> & )
-```
-
-
-### operator=
-
-```cpp
-public FaultBlocks<> & operator=(const FaultBlocks<> & )
-```
-
-
 ### ~FaultBlocks
 
 ```cpp
-public void ~FaultBlocks<>()
+public void ~FaultBlocks<value-parameter-0-0>()
 ```
 
 
@@ -49,6 +35,27 @@ public void ~FaultBlocks<>()
 
 ```cpp
 public index_t nb_fault_blocks()
+```
+
+
+### FaultBlocks
+
+```cpp
+protected void FaultBlocks<value-parameter-0-0>()
+```
+
+
+### FaultBlocks
+
+```cpp
+public void FaultBlocks<value-parameter-0-0>(const FaultBlocks<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public FaultBlocks<dimension> & operator=(const FaultBlocks<dimension> & )
 ```
 
 
@@ -87,52 +94,24 @@ public FaultBlockRange active_fault_blocks()
 ```
 
 
-### components
-
-```cpp
-public FaultBlockRange components()
-```
-
-
-### has_component
-
-```cpp
-public bool has_component(const uuid & id)
-```
-
-
-### component
-
-```cpp
-public const FaultBlock<dimension> & component(const uuid & id)
-```
-
-
 ### save_fault_blocks
 
 ```cpp
-public void save_fault_blocks(basic_string_view directory)
+public void save_fault_blocks(std::string_view directory)
 ```
 
 
 ### FaultBlocks
 
 ```cpp
-protected void FaultBlocks<>()
-```
-
-
-### FaultBlocks
-
-```cpp
-protected void FaultBlocks<>(FaultBlocks<> && other)
+protected void FaultBlocks<value-parameter-0-0>(FaultBlocks<dimension> && other)
 ```
 
 
 ### operator=
 
 ```cpp
-protected FaultBlocks<> & operator=(FaultBlocks<> && other)
+protected FaultBlocks<dimension> & operator=(FaultBlocks<dimension> && other)
 ```
 
 
@@ -160,7 +139,7 @@ public void delete_fault_block(const FaultBlock<dimension> & fault_block, FaultB
 ### load_fault_blocks
 
 ```cpp
-public void load_fault_blocks(basic_string_view directory, FaultBlocksBuilderKey key)
+public void load_fault_blocks(std::string_view directory, FaultBlocksBuilderKey key)
 ```
 
 
@@ -175,6 +154,27 @@ public ModifiableFaultBlockRange modifiable_fault_blocks(FaultBlocksBuilderKey k
 
 ```cpp
 public FaultBlock<dimension> & modifiable_fault_block(const uuid & id, FaultBlocksBuilderKey key)
+```
+
+
+### components
+
+```cpp
+public FaultBlockRange components()
+```
+
+
+### has_component
+
+```cpp
+public bool has_component(const uuid & id)
+```
+
+
+### component
+
+```cpp
+public const FaultBlock<dimension> & component(const uuid & id)
 ```
 
 

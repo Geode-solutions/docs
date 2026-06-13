@@ -24,19 +24,35 @@ Inherits from Section, Faults2D, Horizons2D, FaultBlocks2D, StratigraphicUnits2D
 
 
 
+## Members
+
+```cpp
+public static const index_t dim
+
+```
+
+
+
 ## Records
 
-HorizonItemRange
+FaultBlockItemRange
 
 FaultItemRange
 
-FaultBlockItemRange
+HorizonItemRange
 
 StratigraphicUnitItemRange
 
 
 
 ## Functions
+
+### horizon_items
+
+```cpp
+public HorizonItemRange horizon_items(const Horizon2D & horizon)
+```
+
 
 ### CrossSection
 
@@ -49,6 +65,20 @@ public void CrossSection()
 
 ```cpp
 public void CrossSection(CrossSection && )
+```
+
+
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
 ```
 
 
@@ -77,27 +107,6 @@ public CrossSection clone()
 
 ```cpp
 public const Component2D & component(const uuid & id)
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
-```
-
-
-### horizon_items
-
-```cpp
-public HorizonItemRange horizon_items(const Horizon2D & horizon)
 ```
 
 

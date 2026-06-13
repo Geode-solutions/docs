@@ -27,6 +27,11 @@ protected PImpl impl_
 
 ```
 
+```cpp
+public static const auto dim
+
+```
+
 
 
 # class HorizonsStack
@@ -55,9 +60,9 @@ protected geode::PImpl<Impl> impl_
 
 HorizonOrderedRange
 
-StratigraphicUnitOrderedRange
-
 Impl
+
+StratigraphicUnitOrderedRange
 
 
 
@@ -66,21 +71,21 @@ Impl
 ### HorizonsStack
 
 ```cpp
-public void HorizonsStack<>()
+public void HorizonsStack<value-parameter-0-0>()
 ```
 
 
 ### HorizonsStack
 
 ```cpp
-public void HorizonsStack<>(HorizonsStack<dimension> && horizons_stack)
+public void HorizonsStack<value-parameter-0-0>(HorizonsStack<dimension> && horizons_stack)
 ```
 
 
 ### ~HorizonsStack
 
 ```cpp
-public void ~HorizonsStack<>()
+public void ~HorizonsStack<value-parameter-0-0>()
 ```
 
 
@@ -94,7 +99,7 @@ public HorizonsStack<dimension> & operator=(HorizonsStack<dimension> && other)
 ### clone
 
 ```cpp
-public HorizonsStack clone()
+public HorizonsStack<dimension> clone()
 ```
 
 
@@ -102,20 +107,6 @@ public HorizonsStack clone()
 
 ```cpp
 public const Component<dimension> & component(const uuid & id)
-```
-
-
-### native_extension_static
-
-```cpp
-public basic_string_view native_extension_static()
-```
-
-
-### native_extension
-
-```cpp
-public basic_string_view native_extension()
 ```
 
 
@@ -154,6 +145,20 @@ public HorizonOrderedRange top_to_bottom_horizons()
 ```
 
 
+### native_extension_static
+
+```cpp
+public static std::string_view native_extension_static()
+```
+
+
+### native_extension
+
+```cpp
+public std::string_view native_extension()
+```
+
+
 ### top_to_bottom_units
 
 ```cpp
@@ -178,7 +183,7 @@ public bool is_conformal_under(const uuid & component)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 
@@ -231,6 +236,11 @@ Inherits from StratigraphicRelationships, Horizons<3U>, StratigraphicUnits<3U>, 
 
 ```cpp
 protected PImpl impl_
+
+```
+
+```cpp
+public static const auto dim
 
 ```
 

@@ -29,20 +29,6 @@ Inherits from Component<dimension>
 ### StratigraphicUnit
 
 ```cpp
-public void StratigraphicUnit<dimension>(const StratigraphicUnit<dimension> & )
-```
-
-
-### operator=
-
-```cpp
-public StratigraphicUnit<dimension> & operator=(const StratigraphicUnit<dimension> & )
-```
-
-
-### StratigraphicUnit
-
-```cpp
 public void StratigraphicUnit<dimension>(StratigraphicUnit<dimension> && other)
 ```
 
@@ -54,17 +40,31 @@ public void ~StratigraphicUnit<dimension>()
 ```
 
 
+### StratigraphicUnit
+
+```cpp
+public void StratigraphicUnit<dimension>(const StratigraphicUnit<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public StratigraphicUnit<dimension> & operator=(const StratigraphicUnit<dimension> & )
+```
+
+
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
+public ComponentType component_type()
 ```
 
 
@@ -78,7 +78,7 @@ public void StratigraphicUnit<dimension>(StratigraphicUnitsKey )
 ### set_stratigraphic_unit_name
 
 ```cpp
-public void set_stratigraphic_unit_name(basic_string_view name, StratigraphicUnitsBuilderKey )
+public void set_stratigraphic_unit_name(std::string_view name, StratigraphicUnitsBuilderKey )
 ```
 
 

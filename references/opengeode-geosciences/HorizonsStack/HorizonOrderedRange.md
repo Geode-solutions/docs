@@ -31,10 +31,24 @@ Impl
 
 ## Functions
 
+### begin
+
+```cpp
+public const HorizonOrderedRange & begin()
+```
+
+
+### end
+
+```cpp
+public const HorizonOrderedRange & end()
+```
+
+
 ### HorizonOrderedRange
 
 ```cpp
-public void HorizonOrderedRange(const HorizonsStack<> & horizons_stack, RANGEORDER range_order)
+public void HorizonOrderedRange(const HorizonsStack<dimension> & horizons_stack, RANGEORDER range_order)
 ```
 
 
@@ -70,20 +84,6 @@ public bool operator!=(const HorizonOrderedRange & )
 
 ```cpp
 public void operator++()
-```
-
-
-### begin
-
-```cpp
-public const HorizonOrderedRange & begin()
-```
-
-
-### end
-
-```cpp
-public const HorizonOrderedRange & end()
 ```
 
 

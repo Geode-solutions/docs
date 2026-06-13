@@ -53,28 +53,7 @@ InsertedHorizonInfo
 ### HorizonsStackBuilder
 
 ```cpp
-public void HorizonsStackBuilder<>(const HorizonsStackBuilder<> & )
-```
-
-
-### operator=
-
-```cpp
-public HorizonsStackBuilder<> & operator=(const HorizonsStackBuilder<> & )
-```
-
-
-### HorizonsStackBuilder
-
-```cpp
-public void HorizonsStackBuilder<>(HorizonsStack<dimension> & horizons_stack)
-```
-
-
-### HorizonsStackBuilder
-
-```cpp
-public void HorizonsStackBuilder<>(HorizonsStackBuilder<dimension> && )
+public void HorizonsStackBuilder<value-parameter-0-0>(HorizonsStack<dimension> & horizons_stack)
 ```
 
 
@@ -82,6 +61,27 @@ public void HorizonsStackBuilder<>(HorizonsStackBuilder<dimension> && )
 
 ```cpp
 public ModelCopyMapping copy(const HorizonsStack<dimension> & horizons_stack)
+```
+
+
+### HorizonsStackBuilder
+
+```cpp
+public void HorizonsStackBuilder<value-parameter-0-0>(const HorizonsStackBuilder<dimension> & )
+```
+
+
+### operator=
+
+```cpp
+public HorizonsStackBuilder<dimension> & operator=(const HorizonsStackBuilder<dimension> & )
+```
+
+
+### HorizonsStackBuilder
+
+```cpp
+public void HorizonsStackBuilder<value-parameter-0-0>(HorizonsStackBuilder<dimension> && )
 ```
 
 

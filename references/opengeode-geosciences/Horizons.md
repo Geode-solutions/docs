@@ -22,9 +22,9 @@ const name = words.join('-');
 
 ## Records
 
-HorizonRangeBase
-
 HorizonRange
+
+HorizonRangeBase
 
 
 
@@ -33,21 +33,28 @@ HorizonRange
 ### Horizons
 
 ```cpp
-public void Horizons<>(const Horizons<> & )
+protected void Horizons<value-parameter-0-0>()
+```
+
+
+### Horizons
+
+```cpp
+public void Horizons<value-parameter-0-0>(const Horizons<dimension> & )
 ```
 
 
 ### operator=
 
 ```cpp
-public Horizons<> & operator=(const Horizons<> & )
+public Horizons<dimension> & operator=(const Horizons<dimension> & )
 ```
 
 
 ### ~Horizons
 
 ```cpp
-public void ~Horizons<>()
+public void ~Horizons<value-parameter-0-0>()
 ```
 
 
@@ -93,6 +100,27 @@ public HorizonRange active_horizons()
 ```
 
 
+### save_horizons
+
+```cpp
+public void save_horizons(std::string_view directory)
+```
+
+
+### Horizons
+
+```cpp
+protected void Horizons<value-parameter-0-0>(Horizons<dimension> && other)
+```
+
+
+### operator=
+
+```cpp
+protected Horizons<dimension> & operator=(Horizons<dimension> && other)
+```
+
+
 ### components
 
 ```cpp
@@ -111,34 +139,6 @@ public bool has_component(const uuid & id)
 
 ```cpp
 public const Horizon<dimension> & component(const uuid & id)
-```
-
-
-### save_horizons
-
-```cpp
-public void save_horizons(basic_string_view directory)
-```
-
-
-### Horizons
-
-```cpp
-protected void Horizons<>()
-```
-
-
-### Horizons
-
-```cpp
-protected void Horizons<>(Horizons<> && other)
-```
-
-
-### operator=
-
-```cpp
-protected Horizons<dimension> & operator=(Horizons<dimension> && other)
 ```
 
 
@@ -180,7 +180,7 @@ public void delete_horizon(const Horizon<dimension> & horizon, HorizonsBuilderKe
 ### load_horizons
 
 ```cpp
-public void load_horizons(basic_string_view directory, HorizonsBuilderKey key)
+public void load_horizons(std::string_view directory, HorizonsBuilderKey key)
 ```
 
 
@@ -197,18 +197,6 @@ public ModifiableHorizonRange modifiable_horizons(HorizonsBuilderKey key)
 public Horizon<dimension> & modifiable_horizon(const uuid & id, HorizonsBuilderKey key)
 ```
 
-
-### create_horizon
-
-```cpp
-public const uuid & create_horizon(CONTACT_TYPE contact_type, HorizonsBuilderKey key)
-```
-
-### create_horizon
-
-```cpp
-public void create_horizon(uuid horizon_id, CONTACT_TYPE contact_type, HorizonsBuilderKey key)
-```
 
 
 

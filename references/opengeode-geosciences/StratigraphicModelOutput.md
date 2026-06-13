@@ -32,7 +32,7 @@ public void ~StratigraphicModelOutput()
 ### StratigraphicModelOutput
 
 ```cpp
-protected void StratigraphicModelOutput(basic_string_view filename)
+protected void StratigraphicModelOutput(std::string_view filename)
 ```
 
 

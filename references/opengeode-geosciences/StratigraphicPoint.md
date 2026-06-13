@@ -23,28 +23,28 @@ const name = words.join('-');
 ### StratigraphicPoint
 
 ```cpp
-public void StratigraphicPoint<>()
+public void StratigraphicPoint<value-parameter-0-0>()
 ```
 
 
 ### StratigraphicPoint
 
 ```cpp
-public void StratigraphicPoint<>(Point<location_dim> stratigraphic_location, double implicit_value)
+public void StratigraphicPoint<value-parameter-0-0>(Point<location_dim> stratigraphic_location, double implicit_value)
 ```
 
 
 ### StratigraphicPoint
 
 ```cpp
-public void StratigraphicPoint<>(const std::array<double, dimension> & values)
+public void StratigraphicPoint<value-parameter-0-0>(const std::array<double, dimension> & values)
 ```
 
 
 ### StratigraphicPoint
 
 ```cpp
-public void StratigraphicPoint<>(const Point<dimension> & stratigraphic_coordinates)
+public void StratigraphicPoint<value-parameter-0-0>(const Point<dimension> & stratigraphic_coordinates)
 ```
 
 
@@ -86,7 +86,7 @@ public void set_implicit_value(double implicit_value)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

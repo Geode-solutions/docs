@@ -14,6 +14,15 @@ const name = words.join('-');
 # class Horizon
 
 
+```cpp
+Inherits from Component<2U>
+```
+
+
+
+# class Horizon
+
+
  Geological component describing a Horizon. This component is described by a horizon type.
 
 
@@ -40,38 +49,17 @@ public Horizon<dimension> & operator=(const Horizon<dimension> & )
 ```
 
 
-### Horizon
-
-```cpp
-public void Horizon<dimension>(Horizon<dimension> && other)
-```
-
-
-### ~Horizon
-
-```cpp
-public void ~Horizon<dimension>()
-```
-
-
 ### component_type_static
 
 ```cpp
-public NamedType component_type_static()
+public static ComponentType component_type_static()
 ```
 
 
 ### component_type
 
 ```cpp
-public NamedType component_type()
-```
-
-
-### contact_type
-
-```cpp
-public CONTACT_TYPE contact_type()
+public ComponentType component_type()
 ```
 
 
@@ -89,17 +77,38 @@ public void Horizon<dimension>(CONTACT_TYPE type, HorizonsKey )
 ```
 
 
+### set_horizon_name
+
+```cpp
+public void set_horizon_name(std::string_view name, HorizonsBuilderKey )
+```
+
+
+### Horizon
+
+```cpp
+public void Horizon<dimension>(Horizon<dimension> && other)
+```
+
+
+### ~Horizon
+
+```cpp
+public void ~Horizon<dimension>()
+```
+
+
+### contact_type
+
+```cpp
+public CONTACT_TYPE contact_type()
+```
+
+
 ### set_contact_type
 
 ```cpp
 public void set_contact_type(CONTACT_TYPE type, HorizonsBuilderKey )
-```
-
-
-### set_horizon_name
-
-```cpp
-public void set_horizon_name(basic_string_view name, HorizonsBuilderKey )
 ```
 
 
@@ -127,15 +136,6 @@ public void set_horizon_name(basic_string_view name, HorizonsBuilderKey )
 
 ```cpp
 Inherits from Component<3U>
-```
-
-
-
-# class Horizon
-
-
-```cpp
-Inherits from Component<2U>
 ```
 
 

@@ -25,14 +25,14 @@ Inherits from ImplicitStructuralModelInput
 ### OpenGeodeImplicitStructuralModelInput
 
 ```cpp
-public void OpenGeodeImplicitStructuralModelInput(basic_string_view filename)
+public void OpenGeodeImplicitStructuralModelInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 

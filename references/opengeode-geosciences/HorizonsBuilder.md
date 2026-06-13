@@ -22,10 +22,24 @@ const name = words.join('-');
 
 ## Functions
 
+### create_horizon
+
+```cpp
+protected const uuid & create_horizon()
+```
+
+
+### HorizonsBuilder
+
+```cpp
+protected void HorizonsBuilder<value-parameter-0-0>(Horizons<dimension> & horizons)
+```
+
+
 ### load_horizons
 
 ```cpp
-public void load_horizons(basic_string_view directory)
+public void load_horizons(std::string_view directory)
 ```
 
 
@@ -39,21 +53,7 @@ public void set_horizon_contact_type(const uuid & horizon_id, CONTACT_TYPE conta
 ### set_horizon_name
 
 ```cpp
-public void set_horizon_name(const uuid & id, basic_string_view name)
-```
-
-
-### HorizonsBuilder
-
-```cpp
-protected void HorizonsBuilder<>(Horizons<dimension> & horizons)
-```
-
-
-### create_horizon
-
-```cpp
-protected const uuid & create_horizon()
+public void set_horizon_name(const uuid & id, std::string_view name)
 ```
 
 
@@ -84,24 +84,6 @@ protected void create_horizon(uuid horizon_id, CONTACT_TYPE type)
 protected void delete_horizon(const Horizon<dimension> & horizon)
 ```
 
-
-### set_horizon_contact_type
-
-```cpp
-public void set_horizon_contact_type(const uuid & horizon_id, CONTACT_TYPE contact_type)
-```
-
-### create_horizon
-
-```cpp
-protected const uuid & create_horizon(CONTACT_TYPE type)
-```
-
-### create_horizon
-
-```cpp
-protected void create_horizon(uuid horizon_id, CONTACT_TYPE type)
-```
 
 
 

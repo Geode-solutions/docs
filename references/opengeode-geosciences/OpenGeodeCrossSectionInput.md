@@ -22,24 +22,10 @@ Inherits from CrossSectionInput
 
 ## Functions
 
-### OpenGeodeCrossSectionInput
-
-```cpp
-public void OpenGeodeCrossSectionInput(basic_string_view filename)
-```
-
-
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public CrossSection read()
+public static std::string_view extension()
 ```
 
 
@@ -50,10 +36,24 @@ public AdditionalFiles additional_files()
 ```
 
 
+### OpenGeodeCrossSectionInput
+
+```cpp
+public void OpenGeodeCrossSectionInput(std::string_view filename)
+```
+
+
 ### object_priority
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public CrossSection read()
 ```
 
 

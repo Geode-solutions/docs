@@ -36,7 +36,7 @@ public void StratigraphicSectionBuilder(StratigraphicSection & stratigraphic_sec
 ### copy
 
 ```cpp
-public ModelMapping copy(const StratigraphicSection & stratigraphic_section)
+public ModelCopyMapping copy(const StratigraphicSection & stratigraphic_section)
 ```
 
 
@@ -57,7 +57,7 @@ public void instantiate_stratigraphic_attribute_on_surfaces()
 ### set_stratigraphic_location
 
 ```cpp
-public void set_stratigraphic_location(const Surface2D & surface, index_t vertex_id, Point value)
+public void set_stratigraphic_location(const Surface2D & surface, index_t vertex_id, Point1D value)
 ```
 
 

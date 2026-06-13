@@ -22,24 +22,10 @@ Inherits from StructuralModelInput
 
 ## Functions
 
-### OpenGeodeStructuralModelInput
-
-```cpp
-public void OpenGeodeStructuralModelInput(basic_string_view filename)
-```
-
-
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public StructuralModel read()
+public static std::string_view extension()
 ```
 
 
@@ -57,10 +43,24 @@ public index_t object_priority()
 ```
 
 
+### OpenGeodeStructuralModelInput
+
+```cpp
+public void OpenGeodeStructuralModelInput(std::string_view filename)
+```
+
+
 ### is_loadable
 
 ```cpp
 public Percentage is_loadable()
+```
+
+
+### read
+
+```cpp
+public StructuralModel read()
 ```
 
 

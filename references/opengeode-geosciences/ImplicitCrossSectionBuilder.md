@@ -36,7 +36,7 @@ public void ImplicitCrossSectionBuilder(ImplicitCrossSection & implicit_section)
 ### copy
 
 ```cpp
-public ModelMapping copy(const ImplicitCrossSection & implicit_model)
+public ModelCopyMapping copy(const ImplicitCrossSection & implicit_model)
 ```
 
 
@@ -85,7 +85,7 @@ public void set_horizon_implicit_value(const Horizon2D & horizon, double isovalu
 ### horizons_stack_builder
 
 ```cpp
-public HorizonsStackBuilder horizons_stack_builder()
+public HorizonsStackBuilder2D horizons_stack_builder()
 ```
 
 

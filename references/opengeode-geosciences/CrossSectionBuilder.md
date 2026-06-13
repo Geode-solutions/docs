@@ -29,6 +29,27 @@ Inherits from SectionBuilder, FaultsBuilder2D, HorizonsBuilder2D, FaultBlocksBui
 ### CrossSectionBuilder
 
 ```cpp
+public void CrossSectionBuilder(CrossSection & cross_section)
+```
+
+
+### copy
+
+```cpp
+public ModelCopyMapping copy(const CrossSection & cross_section)
+```
+
+
+### CrossSectionBuilder
+
+```cpp
+public void CrossSectionBuilder(CrossSectionBuilder && )
+```
+
+
+### CrossSectionBuilder
+
+```cpp
 public void CrossSectionBuilder(const CrossSectionBuilder & )
 ```
 
@@ -40,31 +61,10 @@ public CrossSectionBuilder & operator=(const CrossSectionBuilder & )
 ```
 
 
-### CrossSectionBuilder
-
-```cpp
-public void CrossSectionBuilder(CrossSectionBuilder && )
-```
-
-
 ### operator=
 
 ```cpp
 public CrossSectionBuilder & operator=(CrossSectionBuilder && )
-```
-
-
-### CrossSectionBuilder
-
-```cpp
-public void CrossSectionBuilder(CrossSection & cross_section)
-```
-
-
-### copy
-
-```cpp
-public ModelMapping copy(const CrossSection & cross_section)
 ```
 
 

@@ -62,7 +62,7 @@ public void set_active_only()
 ### HorizonRangeBase
 
 ```cpp
-protected void HorizonRangeBase(const Horizons<> & horizons)
+protected void HorizonRangeBase(const Horizons<dimension> & horizons)
 ```
 
 
