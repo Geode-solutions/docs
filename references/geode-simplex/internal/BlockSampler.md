@@ -32,7 +32,7 @@ protected void BlockSampler(const BRep & output, const Block3D & block, const Me
 ### new_potential_points
 
 ```cpp
-protected tuple new_potential_points(const Element & element)
+protected std::tuple<std::vector<Point3D>, double> new_potential_points(const Element & element)
 ```
 
 

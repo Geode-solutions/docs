@@ -21,6 +21,11 @@ public OwnerTriangle triangle
 
 ```
 
+```cpp
+public static const double DISTANCE
+
+```
+
 
 
 ## Functions

@@ -14,13 +14,40 @@ const name = words.join('-');
 # class RemeshingData
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 # class RemeshingData
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
 
 
 # class RemeshingData
 
 
  Structure holding all the data required for the remeshing algorithm Aliases are defined for BRep and Section.
+
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
+```
 
 
 

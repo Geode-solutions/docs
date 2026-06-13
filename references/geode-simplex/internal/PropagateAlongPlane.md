@@ -32,14 +32,14 @@ public void PropagateAlongPlane(const FrontalRemesher3D & remesher, const Plane 
 ### along_plane
 
 ```cpp
-public optional along_plane(const std::vector<OrientedPolygonEdge> & initial_edges, double target)
+public std::optional<std::vector<SurfacePath>> along_plane(const std::vector<OrientedPolygonEdge> & initial_edges, double target)
 ```
 
 
 ### find_first_path
 
 ```cpp
-protected vector find_first_path(const std::vector<OrientedPolygonEdge> & initial_edges)
+protected std::vector<SurfacePath> find_first_path(const std::vector<OrientedPolygonEdge> & initial_edges)
 ```
 
 
@@ -60,7 +60,7 @@ protected SurfacePath next_intersection(const PolygonEdge & adjacent_edge)
 ### oriented_edge_segment
 
 ```cpp
-protected Segment oriented_edge_segment(const OrientedPolygonEdge & edge)
+protected Segment<3> oriented_edge_segment(const OrientedPolygonEdge & edge)
 ```
 
 

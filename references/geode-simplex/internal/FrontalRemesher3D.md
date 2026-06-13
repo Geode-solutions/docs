@@ -25,14 +25,14 @@ Inherits from FrontalRemesher<3>
 ### FrontalRemesher3D
 
 ```cpp
-public void FrontalRemesher3D(const TriangulatedSurface3D & background_mesh, TriangulatedSurfaceBuilder3D & background_builder, TriangulatedSurfaceEpsilonModifier3D & background_modifier, const Metric3D & metric, Span lock_vertices)
+public void FrontalRemesher3D(const TriangulatedSurface3D & background_mesh, TriangulatedSurfaceBuilder3D & background_builder, TriangulatedSurfaceEpsilonModifier3D & background_modifier, const Metric3D & metric, absl::Span<const index_t> lock_vertices)
 ```
 
 
 ### compute_intersection
 
 ```cpp
-public Point compute_intersection(const Plane & plane, const SurfacePath & path)
+public Point3D compute_intersection(const Plane & plane, const SurfacePath & path)
 ```
 
 

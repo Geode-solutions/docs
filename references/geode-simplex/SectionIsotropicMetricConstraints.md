@@ -33,14 +33,14 @@ public void ~SectionIsotropicMetricConstraints()
 ### import_constraints
 
 ```cpp
-public void import_constraints(basic_string_view filename)
+public void import_constraints(std::string_view filename)
 ```
 
 
 ### export_constraints
 
 ```cpp
-public void export_constraints(basic_string_view filename)
+public void export_constraints(std::string_view filename)
 ```
 
 
@@ -82,7 +82,7 @@ public void set_corner_metric(const Corner2D & corner, double metric)
 ### corner_metric
 
 ```cpp
-public optional corner_metric(const Corner2D & corner)
+public std::optional<double> corner_metric(const Corner2D & corner)
 ```
 
 
@@ -96,7 +96,7 @@ public void set_line_metric(const Line2D & line, double metric)
 ### line_metric
 
 ```cpp
-public optional line_metric(const Line2D & line)
+public std::optional<double> line_metric(const Line2D & line)
 ```
 
 
@@ -110,7 +110,7 @@ public void set_surface_metric(const Surface2D & surface, double metric)
 ### surface_metric
 
 ```cpp
-public optional surface_metric(const Surface2D & surface)
+public std::optional<double> surface_metric(const Surface2D & surface)
 ```
 
 

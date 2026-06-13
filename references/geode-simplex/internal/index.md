@@ -64,6 +64,34 @@ const name = words.join('-');
 
 ## Functions
 
+### pre_process_meshing_step
+
+```cpp
+void pre_process_meshing_step(const BRep & brep, BRepGeometricModifier & modifier)
+```
+
+
+### remesh_surface
+
+```cpp
+RemeshedSurface2D remesh_surface(const TriangulatedSurface2D & background_mesh, TriangulatedSurfaceBuilder2D & background_builder, TriangulatedSurfaceEpsilonModifier2D & background_modifier, const Metric2D & metric, absl::Span<const index_t> lock_vertices)
+```
+
+
+### remesh_surface_using_parameterization
+
+```cpp
+RemeshedSurface3D remesh_surface_using_parameterization(const TriangulatedSurface3D & mesh, const Metric3D & metric, absl::Span<const index_t> lock_vertices, absl::Span<const index_t> outside_polygons, std::vector<std::vector<index_t>> macro_edges)
+```
+
+
+### remesh_surface_using_plane
+
+```cpp
+RemeshedSurface3D remesh_surface_using_plane(const TriangulatedSurface3D & background_mesh, TriangulatedSurfaceBuilder3D & background_builder, TriangulatedSurfaceEpsilonModifier3D & background_modifier, const Metric3D & metric, absl::Span<const index_t> lock_vertices)
+```
+
+
 ### update_unique_vertices
 
 ```cpp
@@ -85,17 +113,17 @@ H AbslHashValue(H h, const SolidEdge & solid_edge)
 ```
 
 
+### lock_vertices
+
+```cpp
+std::vector<index_t> lock_vertices(absl::Span<const index_t> vertex_mapping)
+```
+
+
 ### AbslHashValue
 
 ```cpp
 H AbslHashValue(H h, const SolidVertex & solid_vertex)
-```
-
-
-### relax_background_brep_elements
-
-```cpp
-void relax_background_brep_elements(BRepSamplingData & model)
 ```
 
 
@@ -106,6 +134,13 @@ bool has_degenerated_elements(const BRep & brep, const BRepElementsAfterCollapse
 ```
 
 
+### AbslHashValue
+
+```cpp
+H AbslHashValue(H h, const MacroPolygonEdge & m)
+```
+
+
 ### has_degenerated_elements
 
 ```cpp
@@ -113,38 +148,10 @@ bool has_degenerated_elements(const Section & section, const SectionElementsAfte
 ```
 
 
-### remesh_surface_using_parameterization
-
-```cpp
-RemeshedSurface remesh_surface_using_parameterization(const TriangulatedSurface3D & mesh, const Metric3D & metric, Span lock_vertices, Span outside_polygons, vector macro_edges)
-```
-
-
-### remesh_surface_using_plane
-
-```cpp
-RemeshedSurface remesh_surface_using_plane(const TriangulatedSurface3D & background_mesh, TriangulatedSurfaceBuilder3D & background_builder, TriangulatedSurfaceEpsilonModifier3D & background_modifier, const Metric3D & metric, Span lock_vertices)
-```
-
-
-### lock_vertices
-
-```cpp
-vector lock_vertices(Span vertex_mapping)
-```
-
-
-### remesh_surface
-
-```cpp
-RemeshedSurface remesh_surface(const TriangulatedSurface2D & background_mesh, TriangulatedSurfaceBuilder2D & background_builder, TriangulatedSurfaceEpsilonModifier2D & background_modifier, const Metric2D & metric, Span lock_vertices)
-```
-
-
 ### line_extremities
 
 ```cpp
-array line_extremities(const Model & model, const Line<Model::dim> & line)
+std::array<EdgeVertex, 2> line_extremities(const Model & model, const Line<Model::dim> & line)
 ```
 
 
@@ -172,7 +179,7 @@ LineRemesherOutput<Data::dimension> remesh_line_step(Data & data, const Line<Dat
 ### insert_line_step
 
 ```cpp
-flat_hash_map insert_line_step(Data & data, const LineRemesherOutput<Data::dimension> & result)
+absl::flat_hash_map<geode::index_t, geode::index_t> insert_line_step(Data & data, const LineRemesherOutput<Data::dimension> & result)
 ```
 
 
@@ -194,13 +201,6 @@ typename Data::Tasks sample_lines_impl(Data & data)
 
 ```cpp
 void treat_inactive_lines(Data & data)
-```
-
-
-### AbslHashValue
-
-```cpp
-H AbslHashValue(H h, const MacroPolygonEdge & m)
 ```
 
 
@@ -232,10 +232,10 @@ void smooth_vertices(BackgroundBRepGeometricConstraintModifier & constraint_modi
 ```
 
 
-### pre_process_meshing_step
+### relax_background_brep_elements
 
 ```cpp
-void pre_process_meshing_step(const BRep & brep, BRepGeometricModifier & modifier)
+void relax_background_brep_elements(BRepSamplingData & model)
 ```
 
 

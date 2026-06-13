@@ -17,7 +17,7 @@ const name = words.join('-');
 ## Members
 
 ```cpp
-public std::unique_ptr<TriangulatedSurface<dimension> > remeshed
+public std::unique_ptr<TriangulatedSurface<dimension>> remeshed
 
 ```
 

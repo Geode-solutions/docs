@@ -29,17 +29,17 @@ public void BackgroundBRepRelaxer(const BackgroundBRepRelaxer & )
 ```
 
 
-### operator=
-
-```cpp
-public BackgroundBRepRelaxer & operator=(const BackgroundBRepRelaxer & )
-```
-
-
 ### BackgroundBRepRelaxer
 
 ```cpp
 public void BackgroundBRepRelaxer(BackgroundBRepRelaxer && )
+```
+
+
+### operator=
+
+```cpp
+public BackgroundBRepRelaxer & operator=(const BackgroundBRepRelaxer & )
 ```
 
 

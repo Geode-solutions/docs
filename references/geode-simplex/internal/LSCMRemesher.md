@@ -25,14 +25,14 @@ Inherits from RemeshAlgo<3>
 ### LSCMRemesher
 
 ```cpp
-public void LSCMRemesher(const TriangulatedSurface3D & input_mesh, const Metric3D & metric, Span lock_vertices, Span outside_polygons, vector macro_edges)
+public void LSCMRemesher(const TriangulatedSurface3D & input_mesh, const Metric3D & metric, absl::Span<const index_t> lock_vertices, absl::Span<const index_t> outside_polygons, std::vector<std::vector<index_t>> macro_edges)
 ```
 
 
 ### remesh
 
 ```cpp
-public RemeshedSurface remesh()
+public RemeshedSurface3D remesh()
 ```
 
 

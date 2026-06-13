@@ -29,17 +29,17 @@ public void SurfaceSampler3D(const SurfaceSampler3D & )
 ```
 
 
-### operator=
-
-```cpp
-public SurfaceSampler3D & operator=(const SurfaceSampler3D & )
-```
-
-
 ### SurfaceSampler3D
 
 ```cpp
 public void SurfaceSampler3D(SurfaceSampler3D && )
+```
+
+
+### operator=
+
+```cpp
+public SurfaceSampler3D & operator=(const SurfaceSampler3D & )
 ```
 
 

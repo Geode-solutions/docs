@@ -62,27 +62,27 @@ protected flat_hash_map user_blocks_
 ```
 
 ```cpp
-protected std::vector<std::pair<std::reference_wrapper<const PointSet<dimension> >, double> > point_sets_
+protected std::vector<std::pair<std::reference_wrapper<const PointSet<dimension>>, double>> point_sets_
 
 ```
 
 ```cpp
-protected std::vector<std::pair<std::reference_wrapper<const EdgedCurve<dimension> >, double> > edged_curves_
+protected std::vector<std::pair<std::reference_wrapper<const EdgedCurve<dimension>>, double>> edged_curves_
 
 ```
 
 ```cpp
-protected std::vector<std::pair<std::reference_wrapper<const TriangulatedSurface<dimension> >, double> > triangulated_surfaces_
+protected std::vector<std::pair<std::reference_wrapper<const TriangulatedSurface<dimension>>, double>> triangulated_surfaces_
 
 ```
 
 ```cpp
-protected std::unique_ptr<GridMetric<dimension> > metric_
+protected std::unique_ptr<GridMetric<dimension>> metric_
 
 ```
 
 ```cpp
-protected std::unique_ptr<LightRegularGrid<dimension> > grid_
+protected std::unique_ptr<LightRegularGrid<dimension>> grid_
 
 ```
 
@@ -128,7 +128,7 @@ public void set_corner_metric(const uuid & corner, double metric)
 ### corner_metric
 
 ```cpp
-public optional corner_metric(const uuid & corner)
+public std::optional<double> corner_metric(const uuid & corner)
 ```
 
 
@@ -142,7 +142,7 @@ public void set_line_metric(const uuid & line, double metric)
 ### line_metric
 
 ```cpp
-public optional line_metric(const uuid & line)
+public std::optional<double> line_metric(const uuid & line)
 ```
 
 
@@ -156,7 +156,7 @@ public void set_surface_metric(const uuid & surface, double metric)
 ### surface_metric
 
 ```cpp
-public optional surface_metric(const uuid & surface)
+public std::optional<double> surface_metric(const uuid & surface)
 ```
 
 
@@ -170,7 +170,7 @@ public void set_block_metric(const uuid & block, double metric)
 ### block_metric
 
 ```cpp
-public optional block_metric(const uuid & block)
+public std::optional<double> block_metric(const uuid & block)
 ```
 
 
@@ -219,7 +219,7 @@ public const Metric<dimension> & build_metric()
 ### generate_grid_metric
 
 ```cpp
-public std::unique_ptr<GridMetric<dimension> > generate_grid_metric()
+public std::unique_ptr<GridMetric<dimension>> generate_grid_metric()
 ```
 
 

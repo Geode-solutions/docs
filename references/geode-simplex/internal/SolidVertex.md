@@ -42,7 +42,7 @@ public bool operator==(const SolidVertex & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

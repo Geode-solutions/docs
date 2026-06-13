@@ -22,7 +22,7 @@ const name = words.join('-');
 ### RemeshAlgo
 
 ```cpp
-protected void RemeshAlgo<dimension>(const Metric<dimension> & metric, Span lock_vertices)
+protected void RemeshAlgo<dimension>(const Metric<dimension> & metric, absl::Span<const index_t> lock_vertices)
 ```
 
 
@@ -57,7 +57,7 @@ protected TriangulatedSurfaceBuilder<dimension> & remeshed_builder()
 ### lock_vertices
 
 ```cpp
-protected Span lock_vertices()
+protected absl::Span<const index_t> lock_vertices()
 ```
 
 

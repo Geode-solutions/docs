@@ -22,9 +22,9 @@ Inherits from RemeshAlgo<dimension>
 
 ## Records
 
-MacroEdge
-
 Apex
+
+MacroEdge
 
 
 
@@ -33,14 +33,14 @@ Apex
 ### FrontalRemesher
 
 ```cpp
-public void FrontalRemesher<>(const TriangulatedSurface<dimension> & background_mesh, TriangulatedSurfaceBuilder<dimension> & background_builder, TriangulatedSurfaceEpsilonModifier<dimension> & background_modifier, const Metric<dimension> & metric, Span lock_vertices)
+public void FrontalRemesher<value-parameter-0-0>(const TriangulatedSurface<dimension> & background_mesh, TriangulatedSurfaceBuilder<dimension> & background_builder, TriangulatedSurfaceEpsilonModifier<dimension> & background_modifier, const Metric<dimension> & metric, absl::Span<const index_t> lock_vertices)
 ```
 
 
 ### ~FrontalRemesher
 
 ```cpp
-public void ~FrontalRemesher<>()
+public void ~FrontalRemesher<value-parameter-0-0>()
 ```
 
 
@@ -89,21 +89,21 @@ public bool is_macro_triangle(index_t triangle)
 ### macro_edge_vertices
 
 ```cpp
-public pair macro_edge_vertices(index_t macro_edge)
+public std::pair<index_t, index_t> macro_edge_vertices(index_t macro_edge)
 ```
 
 
 ### active_macro_edges
 
 ```cpp
-public vector active_macro_edges(const PolygonEdge & edge)
+public std::vector<index_t> active_macro_edges(const PolygonEdge & edge)
 ```
 
 
 ### all_macro_edges
 
 ```cpp
-public vector all_macro_edges(const PolygonEdge & edge)
+public std::vector<index_t> all_macro_edges(const PolygonEdge & edge)
 ```
 
 
@@ -131,21 +131,21 @@ public std::optional<OrientedPolygonEdge> find_next_edge_on_macro_edge(const Ori
 ### macro_edge_path
 
 ```cpp
-public vector macro_edge_path(index_t start, index_t end, index_t macro_edge_id)
+public std::vector<OrientedPolygonEdge> macro_edge_path(index_t start, index_t end, index_t macro_edge_id)
 ```
 
 
 ### last_active_macro_edge_id
 
 ```cpp
-public optional last_active_macro_edge_id(const PolygonEdge & edge, index_t me)
+public std::optional<index_t> last_active_macro_edge_id(const PolygonEdge & edge, index_t me)
 ```
 
 
 ### should_snap_on_macro_edge
 
 ```cpp
-protected std::optional<std::tuple<Point<dimension>, index_t> > should_snap_on_macro_edge(index_t triangle_id, const Point<dimension> & point)
+protected std::optional<std::tuple<Point<dimension>, index_t>> should_snap_on_macro_edge(index_t triangle_id, const Point<dimension> & point)
 ```
 
 

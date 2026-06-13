@@ -33,7 +33,7 @@ public array vertices
 ### SolidEdge
 
 ```cpp
-public void SolidEdge(const geode::Block3D & block, PolyhedronFacetEdge edge_in)
+public void SolidEdge(const geode::Block3D & block, geode::PolyhedronFacetEdge edge_in)
 ```
 
 
@@ -47,7 +47,7 @@ public bool operator==(const SolidEdge & other)
 ### string
 
 ```cpp
-public basic_string string()
+public std::string string()
 ```
 
 

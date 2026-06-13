@@ -26,14 +26,14 @@ public void SurfaceInserter<Data>(Data & data, const Surface<dimension> & surfac
 ### split_triangle
 
 ```cpp
-public FixedArray split_triangle(vector triangles, absl::Span<const Point<dimension> > points)
+public absl::FixedArray<index_t> split_triangle(std::vector<index_t> triangles, absl::Span<const Point<dimension>> points)
 ```
 
 
 ### unique_vertices
 
 ```cpp
-public Span unique_vertices()
+public absl::Span<const index_t> unique_vertices()
 ```
 
 

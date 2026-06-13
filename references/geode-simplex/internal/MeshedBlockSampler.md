@@ -29,17 +29,17 @@ public void MeshedBlockSampler(const MeshedBlockSampler & )
 ```
 
 
-### operator=
-
-```cpp
-public MeshedBlockSampler & operator=(const MeshedBlockSampler & )
-```
-
-
 ### MeshedBlockSampler
 
 ```cpp
 public void MeshedBlockSampler(MeshedBlockSampler && )
+```
+
+
+### operator=
+
+```cpp
+public MeshedBlockSampler & operator=(const MeshedBlockSampler & )
 ```
 
 
@@ -67,14 +67,14 @@ protected void MeshedBlockSampler(BRepSamplingData & data, const Block3D & block
 ### initial_queue_elements
 
 ```cpp
-protected vector initial_queue_elements()
+protected std::vector<Element> initial_queue_elements()
 ```
 
 
 ### compute_potential_points
 
 ```cpp
-protected vector compute_potential_points(const Element & element)
+protected std::vector<ElementPoint> compute_potential_points(const Element & element)
 ```
 
 

@@ -31,10 +31,10 @@ Inherits from SurfaceSegmentFinder<dimension>
 
 ## Functions
 
-### along_segment
+### PropagateAlongSurfaceMacroEdge
 
 ```cpp
-public optional along_segment()
+protected void PropagateAlongSurfaceMacroEdge<dimension>(const FrontalRemesher<dimension> & remesher, index_t begin, index_t end)
 ```
 
 
@@ -45,17 +45,17 @@ public void ~PropagateAlongSurfaceMacroEdge<dimension>()
 ```
 
 
-### PropagateAlongSurfaceMacroEdge
-
-```cpp
-protected void PropagateAlongSurfaceMacroEdge<dimension>(const FrontalRemesher<dimension> & remesher, index_t begin, index_t end)
-```
-
-
 ### remesher
 
 ```cpp
 protected const FrontalRemesher<dimension> & remesher()
+```
+
+
+### along_segment
+
+```cpp
+public std::optional<Cuts> along_segment()
 ```
 
 

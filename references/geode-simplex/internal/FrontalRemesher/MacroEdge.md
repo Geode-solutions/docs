@@ -73,7 +73,7 @@ public index_t apex
 ### MacroEdge
 
 ```cpp
-public void MacroEdge(const FrontalRemesher<> & remesher, index_t v0, index_t v1, BORDER_TYPE border_type_in)
+public void MacroEdge(const FrontalRemesher<dimension> & remesher, index_t v0, index_t v1, BORDER_TYPE border_type_in)
 ```
 
 

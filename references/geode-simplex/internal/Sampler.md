@@ -32,7 +32,7 @@ public void ~Sampler<Element>()
 ### sample
 
 ```cpp
-public flat_hash_map sample()
+public Result sample()
 ```
 
 

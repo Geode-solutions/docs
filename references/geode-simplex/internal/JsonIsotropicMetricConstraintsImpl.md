@@ -32,14 +32,14 @@ public void JsonIsotropicMetricConstraintsImpl<Model>(const Model & model)
 ### import_constraints
 
 ```cpp
-public void import_constraints(basic_string_view filename)
+public void import_constraints(std::string_view filename)
 ```
 
 
 ### export_constraints
 
 ```cpp
-public void export_constraints(basic_string_view filename)
+public void export_constraints(std::string_view filename)
 ```
 
 

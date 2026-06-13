@@ -16,9 +16,9 @@ const name = words.join('-');
 
 ## Records
 
-ElementStamp
-
 EdgeData
+
+ElementStamp
 
 PolygonData
 

@@ -14,7 +14,25 @@ const name = words.join('-');
 # class SurfaceRemesher
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 # class SurfaceRemesher
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
 
 
 ## Functions
@@ -106,14 +124,14 @@ protected const std::vector<index_t> & lock_vertices()
 ### transfer_remeshed
 
 ```cpp
-protected FixedArray transfer_remeshed(const RemeshedSurface<dimension> & remeshed)
+protected absl::FixedArray<index_t> transfer_remeshed(const RemeshedSurface<dimension> & remeshed)
 ```
 
 
 ### transfer_remeshed
 
 ```cpp
-protected FixedArray transfer_remeshed(const RemainingSurface<dimension> & remaining, const RemeshedSurface<dimension> & remeshed, Span remaining_mapping)
+protected absl::FixedArray<index_t> transfer_remeshed(const RemainingSurface<dimension> & remaining, const RemeshedSurface<dimension> & remeshed, absl::Span<const index_t> remaining_mapping)
 ```
 
 
@@ -127,14 +145,14 @@ protected void compute_remaining_adjacencies()
 ### fill_remaining
 
 ```cpp
-protected std::tuple<std::unique_ptr<TriangulatedSurface<dimension> >, absl::FixedArray<index_t> > fill_remaining(RemainingSurface<dimension> & remaining, Span remaining_mapping)
+protected std::tuple<std::unique_ptr<TriangulatedSurface<dimension>>, absl::FixedArray<index_t>> fill_remaining(RemainingSurface<dimension> & remaining, absl::Span<const index_t> remaining_mapping)
 ```
 
 
 ### transfer_remeshed_polygons
 
 ```cpp
-protected void transfer_remeshed_polygons(const SurfaceMesh<dimension> & mesh, Span vertex_mapping)
+protected void transfer_remeshed_polygons(const SurfaceMesh<dimension> & mesh, absl::Span<const index_t> vertex_mapping)
 ```
 
 
@@ -162,5 +180,14 @@ protected void update_vertices(absl::Span<const VertexMultiMapping> mappings)
 
 
 # class SurfaceRemesher
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
 
 

@@ -26,5 +26,10 @@ public Point p1
 
 ```
 
+```cpp
+public static const double DISTANCE
+
+```
+
 
 

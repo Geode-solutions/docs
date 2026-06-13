@@ -47,105 +47,105 @@ public void ~BRepAnisotropicMetricConstraints()
 ### set_default_metric_values
 
 ```cpp
-public void set_default_metric_values(array metric)
+public void set_default_metric_values(std::array<double, 3> metric)
 ```
 
 
 ### default_metric
 
 ```cpp
-public array default_metric()
+public std::array<double, 3> default_metric()
 ```
 
 
 ### set_gradations
 
 ```cpp
-public void set_gradations(array gradation)
+public void set_gradations(std::array<double, 3> gradation)
 ```
 
 
 ### gradations
 
 ```cpp
-public array gradations()
+public std::array<double, 3> gradations()
 ```
 
 
 ### set_corner_metric
 
 ```cpp
-public void set_corner_metric(const Corner3D & corner, array metric)
+public void set_corner_metric(const Corner3D & corner, std::array<double, 3> metric)
 ```
 
 
 ### corner_metric
 
 ```cpp
-public optional corner_metric(const Corner3D & corner)
+public std::optional<std::array<double, 3>> corner_metric(const Corner3D & corner)
 ```
 
 
 ### set_line_metric
 
 ```cpp
-public void set_line_metric(const Line3D & line, array metric)
+public void set_line_metric(const Line3D & line, std::array<double, 3> metric)
 ```
 
 
 ### line_metric
 
 ```cpp
-public optional line_metric(const Line3D & line)
+public std::optional<std::array<double, 3>> line_metric(const Line3D & line)
 ```
 
 
 ### set_surface_metric
 
 ```cpp
-public void set_surface_metric(const Surface3D & surface, array metric)
+public void set_surface_metric(const Surface3D & surface, std::array<double, 3> metric)
 ```
 
 
 ### surface_metric
 
 ```cpp
-public optional surface_metric(const Surface3D & surface)
+public std::optional<std::array<double, 3>> surface_metric(const Surface3D & surface)
 ```
 
 
 ### set_block_metric
 
 ```cpp
-public void set_block_metric(const Block3D & block, array metric)
+public void set_block_metric(const Block3D & block, std::array<double, 3> metric)
 ```
 
 
 ### block_metric
 
 ```cpp
-public optional block_metric(const Block3D & block)
+public std::optional<std::array<double, 3>> block_metric(const Block3D & block)
 ```
 
 
 ### set_point_set_metric
 
 ```cpp
-public void set_point_set_metric(const geode::PointSet3D & mesh, array metric)
+public void set_point_set_metric(const geode::PointSet3D & mesh, std::array<double, 3> metric)
 ```
 
 
 ### set_edged_curve_metric
 
 ```cpp
-public void set_edged_curve_metric(const geode::EdgedCurve3D & mesh, array metric)
+public void set_edged_curve_metric(const geode::EdgedCurve3D & mesh, std::array<double, 3> metric)
 ```
 
 
 ### set_triangulated_surface_metric
 
 ```cpp
-public void set_triangulated_surface_metric(geode::TriangulatedSurface3D & mesh, array metric)
+public void set_triangulated_surface_metric(geode::TriangulatedSurface3D & mesh, std::array<double, 3> metric)
 ```
 
 

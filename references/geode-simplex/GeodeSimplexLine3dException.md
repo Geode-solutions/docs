@@ -25,28 +25,28 @@ Inherits from GeodeSimplexException
 ### GeodeSimplexLine3dException
 
 ```cpp
-public void GeodeSimplexLine3dException(any data, TYPE type, const Args &... message)
-```
-
-
-### exception
-
-```cpp
-public void exception(bool condition, DataProvider && data_provider, TYPE type, MessageProvider && message_provider)
+public void GeodeSimplexLine3dException(std::any data, TYPE type, const Args &... message)
 ```
 
 
 ### assertion
 
 ```cpp
-public void assertion(Condition && condition, MessageProvider && message_provider)
+public static void assertion(Condition && condition, MessageProvider && message_provider)
+```
+
+
+### exception
+
+```cpp
+public static void exception(bool condition, DataProvider && data_provider, TYPE type, MessageProvider && message_provider)
 ```
 
 
 ### test
 
 ```cpp
-public void test(bool condition, const Args &... message)
+public static void test(bool condition, const Args &... message)
 ```
 
 

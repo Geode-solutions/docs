@@ -33,7 +33,7 @@ public void ~FillRemaining<dimension>()
 ### fill
 
 ```cpp
-public FixedArray fill()
+public absl::FixedArray<index_t> fill()
 ```
 
 

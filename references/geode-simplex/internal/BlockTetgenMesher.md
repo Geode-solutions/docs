@@ -39,7 +39,7 @@ public void ~BlockTetgenMesher()
 ### tetrahedralize
 
 ```cpp
-public tuple tetrahedralize()
+public std::tuple<RemeshedCMV, Mappings> tetrahedralize()
 ```
 
 

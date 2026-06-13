@@ -68,45 +68,52 @@ const name = words.join('-');
 
 ## Functions
 
-### nb_minimum_apriori_simplex_elements
+### remesh_lines
 
 ```cpp
-index_t nb_minimum_apriori_simplex_elements(const ConstantMetric<Model::dim> & metric, const Model & model)
+void remesh_lines(SectionRemeshingData & data)
 ```
 
 
-### nb_minimum_apriori_simplex_elements
+### remesh_lines
 
 ```cpp
-index_t nb_minimum_apriori_simplex_elements(const GridMetric<Model::dim> & metric, const Model & model)
+void remesh_lines(BRepRemeshingData & data)
 ```
 
 
-### nb_minimum_apriori_simplex_elements
+### sample_lines
 
 ```cpp
-index_t nb_minimum_apriori_simplex_elements(const CustomGridMetric<Model::dim> & metric, const Model & model)
+BRepSamplingData::Tasks sample_lines(BRepSamplingData & data)
 ```
 
 
-### constrained_mesh_blocks
+### target_point
 
 ```cpp
-void constrained_mesh_blocks(const BRep & output, BRepBuilder & builder)
+Point<dimension> target_point(const Point<dimension> & prev, const Point<dimension> & last, const Point<dimension> & origin, double target)
 ```
 
 
-### constrained_mesh_block
+### sample_blocks
 
 ```cpp
-GenericMapping constrained_mesh_block(const BRep & output, BRepBuilder & builder, const Block3D & block, std::vector<Point3D> && internal_points)
+BRepSamplingData::Tasks sample_blocks(BRepSamplingData & data)
 ```
 
 
-### mesh_blocks
+### sample_surfaces
 
 ```cpp
-void mesh_blocks(const BRep & output, BRepBuilder & builder, BRepGeometricModifier & modifier, const Metric3D & metric)
+BRepSamplingData::Tasks sample_surfaces(BRepSamplingData & data)
+```
+
+
+### sample_corners
+
+```cpp
+void sample_corners(BRepSamplingData & data)
 ```
 
 
@@ -117,17 +124,45 @@ void relax_blocks(const BRep & brep, BRepGeometricModifier & modifier)
 ```
 
 
-### sample_blocks
+### brep_simplex_mesh
 
 ```cpp
-flat_hash_map sample_blocks(BRepSamplingData & data)
+void brep_simplex_mesh(BRep & brep, const Metric3D & metric)
 ```
 
 
 ### sample_blocks
 
 ```cpp
-flat_hash_map sample_blocks(BRepSamplingData & data, BRepSamplingData::Tasks & surface_tasks)
+BRepSamplingData::Tasks sample_blocks(BRepSamplingData & data, BRepSamplingData::Tasks & surface_tasks)
+```
+
+
+### sample_surfaces
+
+```cpp
+BRepSamplingData::Tasks sample_surfaces(BRepSamplingData & data, BRepSamplingData::Tasks & line_tasks)
+```
+
+
+### remesh_surfaces
+
+```cpp
+void remesh_surfaces(BRepRemeshingData & data)
+```
+
+
+### remesh_surfaces
+
+```cpp
+void remesh_surfaces(SectionRemeshingData & data)
+```
+
+
+### nb_minimum_apriori_simplex_elements
+
+```cpp
+index_t nb_minimum_apriori_simplex_elements(const ConstantMetric<Model::dim> & metric, const Model & model)
 ```
 
 
@@ -138,6 +173,13 @@ void section_simplex_remesh(Section & section, const Metric2D & metric)
 ```
 
 
+### constrained_mesh_blocks
+
+```cpp
+void constrained_mesh_blocks(const BRep & output, BRepBuilder & builder)
+```
+
+
 ### relax_lines
 
 ```cpp
@@ -145,10 +187,10 @@ void relax_lines(const Section & section, SectionGeometricModifier & modifier, c
 ```
 
 
-### remesh_lines
+### relax_lines
 
 ```cpp
-void remesh_lines(SectionRemeshingData & data)
+void relax_lines(const BRep & brep, BRepGeometricModifier & modifier, const Metric3D & metric)
 ```
 
 
@@ -162,21 +204,7 @@ void relax_surfaces(const Section & section, SectionGeometricModifier & modifier
 ### remesh_surfaces
 
 ```cpp
-void remesh_surfaces(SectionRemeshingData & data)
-```
-
-
-### remesh_surfaces
-
-```cpp
 void remesh_surfaces(SectionRemeshingData & data, absl::Span<const uuid> surfaces_to_remesh)
-```
-
-
-### sample_corners
-
-```cpp
-void sample_corners(BRepSamplingData & data)
 ```
 
 
@@ -184,34 +212,6 @@ void sample_corners(BRepSamplingData & data)
 
 ```cpp
 void relax_surfaces(const BRep & brep, BRepGeometricModifier & modifier, const SurfaceRelaxerOptions3D & options)
-```
-
-
-### remesh_surfaces
-
-```cpp
-void remesh_surfaces(BRepRemeshingData & data)
-```
-
-
-### target_point
-
-```cpp
-Point<dimension> target_point(const Point<dimension> & prev, const Point<dimension> & last, const Point<dimension> & origin, double target)
-```
-
-
-### sample_surfaces
-
-```cpp
-flat_hash_map sample_surfaces(BRepSamplingData & data)
-```
-
-
-### sample_surfaces
-
-```cpp
-flat_hash_map sample_surfaces(BRepSamplingData & data, BRepSamplingData::Tasks & line_tasks)
 ```
 
 
@@ -225,14 +225,28 @@ double compute_worst_quality(const SwapTrianglesAfter3D & triangles)
 ### is_lucarne_edge
 
 ```cpp
-bool is_lucarne_edge(const geode::BRep & brep, Span edge_unique_vertices)
+bool is_lucarne_edge(const geode::BRep & brep, absl::Span<const geode::index_t> edge_unique_vertices)
 ```
 
 
-### brep_simplex_mesh
+### nb_minimum_apriori_simplex_elements
 
 ```cpp
-void brep_simplex_mesh(BRep & brep, const Metric3D & metric)
+index_t nb_minimum_apriori_simplex_elements(const GridMetric<Model::dim> & metric, const Model & model)
+```
+
+
+### mesh_blocks
+
+```cpp
+void mesh_blocks(const BRep & output, BRepBuilder & builder, BRepGeometricModifier & modifier, const Metric3D & metric)
+```
+
+
+### constrained_mesh_block
+
+```cpp
+GenericMapping<index_t> constrained_mesh_block(const BRep & output, BRepBuilder & builder, const Block3D & block, std::vector<Point3D> && internal_points)
 ```
 
 
@@ -243,24 +257,17 @@ void brep_simplex_remesh(BRep & brep, const BRepRemeshOptions & options)
 ```
 
 
+### nb_minimum_apriori_simplex_elements
+
+```cpp
+index_t nb_minimum_apriori_simplex_elements(const CustomGridMetric<Model::dim> & metric, const Model & model)
+```
+
+
 ### brep_volumic_simplex_remesh
 
 ```cpp
 void brep_volumic_simplex_remesh(BRep & brep, const BRepRemeshOptions & options)
-```
-
-
-### relax_lines
-
-```cpp
-void relax_lines(const BRep & brep, BRepGeometricModifier & modifier, const Metric3D & metric)
-```
-
-
-### sample_lines
-
-```cpp
-flat_hash_map sample_lines(BRepSamplingData & data)
 ```
 
 
@@ -289,13 +296,6 @@ BrepSurfacesRemeshValidity are_brep_surfaces_remeshable(const BRep & brep)
 
 ```cpp
 BRepRemeshWithoutBlockValidity is_brep_without_block_remeshable(const BRep & brep)
-```
-
-
-### remesh_lines
-
-```cpp
-void remesh_lines(BRepRemeshingData & data)
 ```
 
 

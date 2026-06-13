@@ -47,14 +47,14 @@ public void ~BRepIsotropicMetricConstraints()
 ### import_constraints
 
 ```cpp
-public void import_constraints(basic_string_view filename)
+public void import_constraints(std::string_view filename)
 ```
 
 
 ### export_constraints
 
 ```cpp
-public void export_constraints(basic_string_view filename)
+public void export_constraints(std::string_view filename)
 ```
 
 
@@ -96,7 +96,7 @@ public void set_corner_metric(const Corner3D & corner, double metric)
 ### corner_metric
 
 ```cpp
-public optional corner_metric(const Corner3D & corner)
+public std::optional<double> corner_metric(const Corner3D & corner)
 ```
 
 
@@ -110,7 +110,7 @@ public void set_line_metric(const Line3D & line, double metric)
 ### line_metric
 
 ```cpp
-public optional line_metric(const Line3D & line)
+public std::optional<double> line_metric(const Line3D & line)
 ```
 
 
@@ -124,7 +124,7 @@ public void set_surface_metric(const Surface3D & surface, double metric)
 ### surface_metric
 
 ```cpp
-public optional surface_metric(const Surface3D & surface)
+public std::optional<double> surface_metric(const Surface3D & surface)
 ```
 
 
@@ -138,7 +138,7 @@ public void set_block_metric(const Block3D & block, double metric)
 ### block_metric
 
 ```cpp
-public optional block_metric(const Block3D & block)
+public std::optional<double> block_metric(const Block3D & block)
 ```
 
 

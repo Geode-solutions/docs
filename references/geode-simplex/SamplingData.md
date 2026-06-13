@@ -14,6 +14,15 @@ const name = words.join('-');
 # class SamplingData
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 ## Functions
 
 ### SamplingData
@@ -75,7 +84,7 @@ public std::mutex & mutex()
 ### tag_unique_vertices
 
 ```cpp
-public void tag_unique_vertices(Span unique_vertices)
+public void tag_unique_vertices(absl::Span<const index_t> unique_vertices)
 ```
 
 
@@ -117,19 +126,28 @@ public void release_model()
 ### updated_triangles
 
 ```cpp
-public vector updated_triangles(const Surface<dimension> & surface, index_t triangle)
+public std::vector<index_t> updated_triangles(const Surface<dimension> & surface, index_t triangle)
 ```
 
 
 ### updated_tetrahedra
 
 ```cpp
-public vector updated_tetrahedra(const Block<dimension> & block, index_t tetrahedron)
+public std::vector<index_t> updated_tetrahedra(const Block<dimension> & block, index_t tetrahedron)
 ```
 
 
 
 
 # class SamplingData
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
 
 
