@@ -20,21 +20,21 @@ const name = words.join('-');
 ### save_empty_light_viewable
 
 ```cpp
-basic_string save_empty_light_viewable(basic_string_view filename_without_extension)
+std::string save_empty_light_viewable(std::string_view filename_without_extension)
 ```
 
 
 ### save_light_viewable_bbox
 
 ```cpp
-basic_string save_light_viewable_bbox(const BoundingBox<dimension> & bbox, basic_string_view filename_without_extension)
+std::string save_light_viewable_bbox(const BoundingBox<dimension> & bbox, std::string_view filename_without_extension)
 ```
 
 
 ### save_light_viewable_object
 
 ```cpp
-basic_string save_light_viewable_object(const Object & object, basic_string_view filename_without_extension)
+std::string save_light_viewable_object(const Object & object, std::string_view filename_without_extension)
 ```
 
 
