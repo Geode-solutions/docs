@@ -26,5 +26,15 @@ public array facet_diagonal
 
 ```
 
+```cpp
+public static const auto NB_VERTICES
+
+```
+
+```cpp
+public static const auto NB_FACETS
+
+```
+
 
 

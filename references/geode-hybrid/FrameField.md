@@ -89,7 +89,7 @@ public void apply_inverse_metric(const Metric3D & metric)
 ### set_frame
 
 ```cpp
-public void set_frame(index_t vertex, Frame frame)
+public void set_frame(index_t vertex, Frame3D frame)
 ```
 
 

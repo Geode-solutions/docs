@@ -20,19 +20,21 @@ Inherits from SamplingData<DataModel>
 
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 ## Functions
 
 ### HybridSamplingData
 
 ```cpp
 public void HybridSamplingData<DataModel>(const HybridSamplingData<DataModel> & )
-```
-
-
-### operator=
-
-```cpp
-public HybridSamplingData<DataModel> & operator=(const HybridSamplingData<DataModel> & )
 ```
 
 
@@ -46,6 +48,13 @@ public void HybridSamplingData<DataModel>(HybridSamplingData<DataModel> && )
 ### operator=
 
 ```cpp
+public HybridSamplingData<DataModel> & operator=(const HybridSamplingData<DataModel> & )
+```
+
+
+### operator=
+
+```cpp
 public HybridSamplingData<DataModel> & operator=(HybridSamplingData<DataModel> && )
 ```
 
@@ -53,7 +62,7 @@ public HybridSamplingData<DataModel> & operator=(HybridSamplingData<DataModel> &
 ### HybridSamplingData
 
 ```cpp
-public void HybridSamplingData<DataModel>(DataModel & model, const Metric<dimension> & metric, const class FrameFieldParameterization::ExtractedElements & elements)
+public void HybridSamplingData<DataModel>(DataModel & model, const Metric<dimension> & metric, const FrameFieldParameterization::ExtractedElements & elements)
 ```
 
 
@@ -74,7 +83,7 @@ public BijectiveMapping<index_t> & unique_vertices_mapping()
 ### elements
 
 ```cpp
-public const class FrameFieldParameterization::ExtractedElements & elements()
+public const FrameFieldParameterization::ExtractedElements & elements()
 ```
 
 
@@ -84,7 +93,16 @@ public const class FrameFieldParameterization::ExtractedElements & elements()
 
 
 ```cpp
-Inherits from SamplingData<BRep>
+Inherits from SamplingData<class geode::BRep>
+```
+
+
+
+## Members
+
+```cpp
+public static const auto dimension
+
 ```
 
 

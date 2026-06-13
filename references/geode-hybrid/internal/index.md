@@ -25,45 +25,10 @@ const name = words.join('-');
 
 ## Functions
 
-### sample_surfaces
+### sample_lines
 
 ```cpp
-void sample_surfaces(BRepHybridSamplingData & data)
-```
-
-
-### combining_surfaces
-
-```cpp
-void combining_surfaces(BRepCombiningData & data)
-```
-
-
-### build_surfaces_quads
-
-```cpp
-void build_surfaces_quads(BRepCombiningData & data)
-```
-
-
-### sample_blocks
-
-```cpp
-void sample_blocks(BRepHybridSamplingData & data)
-```
-
-
-### combining_blocks
-
-```cpp
-void combining_blocks(BRepCombiningData & data)
-```
-
-
-### build_blocks_hexes
-
-```cpp
-void build_blocks_hexes(BRepCombiningData & data)
+void sample_lines(BRepHybridSamplingData & data)
 ```
 
 
@@ -74,24 +39,45 @@ void sample_corners(BRepHybridSamplingData & data)
 ```
 
 
-### compute_elements
+### sample_blocks
 
 ```cpp
-ExtractedElements compute_elements(BRep & brep, const ConstantMetric3D & metric)
+void sample_blocks(BRepHybridSamplingData & data)
 ```
 
 
-### compute_elements_with_attribute
+### sample_surfaces
 
 ```cpp
-ExtractedElements compute_elements_with_attribute(BRep & brep, const ConstantMetric3D & metric, basic_string_view attribute_name)
+void sample_surfaces(BRepHybridSamplingData & data)
 ```
 
 
-### sample_lines
+### combining_blocks
 
 ```cpp
-void sample_lines(BRepHybridSamplingData & data)
+void combining_blocks(BRepCombiningData & data)
+```
+
+
+### combining_surfaces
+
+```cpp
+void combining_surfaces(BRepCombiningData & data)
+```
+
+
+### build_blocks_hexes
+
+```cpp
+void build_blocks_hexes(BRepCombiningData & data)
+```
+
+
+### build_surfaces_quads
+
+```cpp
+void build_surfaces_quads(BRepCombiningData & data)
 ```
 
 
@@ -102,10 +88,24 @@ void build_pyramid_layer(const BRep & brep, BRepBuilder & builder)
 ```
 
 
+### compute_elements
+
+```cpp
+FrameFieldParameterization::ExtractedElements compute_elements(BRep & brep, const ConstantMetric3D & metric)
+```
+
+
 ### build_pyramid_layer
 
 ```cpp
 void build_pyramid_layer(HybridSolid3D & solid)
+```
+
+
+### compute_elements_with_attribute
+
+```cpp
+FrameFieldParameterization::ExtractedElements compute_elements_with_attribute(BRep & brep, const ConstantMetric3D & metric, std::string_view attribute_name)
 ```
 
 

@@ -31,5 +31,20 @@ public InlinedVector triangles
 
 ```
 
+```cpp
+public static const auto NB_VERTICES
+
+```
+
+```cpp
+public static const auto NB_EDGES
+
+```
+
+```cpp
+public static const auto NB_TRIANGLES
+
+```
+
 
 

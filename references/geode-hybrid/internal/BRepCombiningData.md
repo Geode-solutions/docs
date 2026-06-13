@@ -16,13 +16,20 @@ const name = words.join('-');
 
 ## Records
 
-Quad
-
 Hex
+
+Quad
 
 
 
 ## Functions
+
+### BRepCombiningData
+
+```cpp
+public void BRepCombiningData(BRepCombiningData && )
+```
+
 
 ### BRepCombiningData
 
@@ -38,13 +45,6 @@ public BRepCombiningData & operator=(const BRepCombiningData & )
 ```
 
 
-### BRepCombiningData
-
-```cpp
-public void BRepCombiningData(BRepCombiningData && )
-```
-
-
 ### operator=
 
 ```cpp
@@ -55,7 +55,7 @@ public BRepCombiningData & operator=(BRepCombiningData && )
 ### BRepCombiningData
 
 ```cpp
-public void BRepCombiningData(BRep & model, const class FrameFieldParameterization::ExtractedElements & elements)
+public void BRepCombiningData(BRep & model, const FrameFieldParameterization::ExtractedElements & elements)
 ```
 
 
@@ -97,7 +97,7 @@ public BijectiveMapping<index_t> & unique_vertices_mapping()
 ### elements
 
 ```cpp
-public const class FrameFieldParameterization::ExtractedElements & elements()
+public const FrameFieldParameterization::ExtractedElements & elements()
 ```
 
 

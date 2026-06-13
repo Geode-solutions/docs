@@ -23,17 +23,17 @@ public void InsertedVertices<Component>(const InsertedVertices<Component> & )
 ```
 
 
-### operator=
-
-```cpp
-public InsertedVertices<Component> & operator=(const InsertedVertices<Component> & )
-```
-
-
 ### InsertedVertices
 
 ```cpp
 public void InsertedVertices<Component>(InsertedVertices<Component> && )
+```
+
+
+### operator=
+
+```cpp
+public InsertedVertices<Component> & operator=(const InsertedVertices<Component> & )
 ```
 
 
@@ -61,21 +61,21 @@ public void ~InsertedVertices<Component>()
 ### filter_points
 
 ```cpp
-public tuple filter_points(const class FrameFieldParameterization::struct ExtractedElements::Vertex2ElementMapping::Storage<index_t> & vertex2element_mapping)
+public std::tuple<std::vector<Point3D>, std::vector<index_t>> filter_points(const FrameFieldParameterization::ExtractedElements::Vertex2ElementMapping::Storage<index_t> & vertex2element_mapping)
 ```
 
 
 ### update_mapping
 
 ```cpp
-public void update_mapping(Span vertex_ids, Span new_vertices)
+public void update_mapping(absl::Span<const index_t> vertex_ids, absl::Span<const index_t> new_vertices)
 ```
 
 
 ### result
 
 ```cpp
-public FixedArray result()
+public absl::FixedArray<index_t> result()
 ```
 
 

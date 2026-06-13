@@ -47,7 +47,7 @@ void hex_dominant_remesh(BRep & brep, const Metric3D & metric)
 ### hex_dominant_remesh_following_attribute
 
 ```cpp
-void hex_dominant_remesh_following_attribute(BRep & brep, const Metric3D & metric, basic_string_view attribute_name)
+void hex_dominant_remesh_following_attribute(BRep & brep, const Metric3D & metric, std::string_view attribute_name)
 ```
 
 

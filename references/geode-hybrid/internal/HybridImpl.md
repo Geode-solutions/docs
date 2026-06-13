@@ -19,7 +19,7 @@ const name = words.join('-');
 ### HybridImpl
 
 ```cpp
-public void HybridImpl(const class FrameFieldParameterization::ExtractedElements & elements)
+public void HybridImpl(const FrameFieldParameterization::ExtractedElements & elements)
 ```
 
 
@@ -33,7 +33,7 @@ public BijectiveMapping<index_t> & unique_vertices_mapping()
 ### elements
 
 ```cpp
-public const class FrameFieldParameterization::ExtractedElements & elements()
+public const FrameFieldParameterization::ExtractedElements & elements()
 ```
 
 

@@ -19,7 +19,7 @@ const name = words.join('-');
 ### PGP3D
 
 ```cpp
-public void PGP3D(class FrameFieldParameterization::Impl & impl)
+public void PGP3D(FrameFieldParameterization::Impl & impl)
 ```
 
 

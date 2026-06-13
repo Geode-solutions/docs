@@ -33,7 +33,7 @@ public void ~FieldLines()
 ### compute_lines
 
 ```cpp
-public unique_ptr compute_lines()
+public std::unique_ptr<EdgedCurve3D> compute_lines()
 ```
 
 

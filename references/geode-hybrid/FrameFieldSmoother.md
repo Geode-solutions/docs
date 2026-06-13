@@ -82,7 +82,7 @@ public void add_surface_vertex_constraint(const Surface3D & surface, index_t ver
 ### add_gradient_constraint
 
 ```cpp
-public void add_gradient_constraint(basic_string_view attribute_name, double weight)
+public void add_gradient_constraint(std::string_view attribute_name, double weight)
 ```
 
 
