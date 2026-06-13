@@ -22,24 +22,24 @@ Inherits from PolygonalSurfaceOutput<dimension>
 
 ## Functions
 
+### write
+
+```cpp
+public std::vector<std::string> write(const PolygonalSurface<dimension> & surface)
+```
+
+
 ### DotPolygonalOutput
 
 ```cpp
-public void DotPolygonalOutput<dimension>(basic_string_view filename)
+public void DotPolygonalOutput<dimension>(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### write
-
-```cpp
-public vector write(const PolygonalSurface<dimension> & surface)
+public static std::string_view extension()
 ```
 
 

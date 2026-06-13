@@ -25,7 +25,7 @@ Inherits from GMSHElement
 ### GMSHSurfacePolygon
 
 ```cpp
-public void GMSHSurfacePolygon(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, geode::index_t nb_vertices, Span vertex_ids)
+public void GMSHSurfacePolygon(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, geode::index_t nb_vertices, absl::Span<const std::string_view> vertex_ids)
 ```
 
 

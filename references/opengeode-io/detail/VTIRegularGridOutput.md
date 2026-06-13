@@ -25,21 +25,21 @@ Inherits from RegularGridOutput<dimension>
 ### VTIRegularGridOutput
 
 ```cpp
-public void VTIRegularGridOutput<dimension>(basic_string_view filename)
-```
-
-
-### extension
-
-```cpp
-public basic_string_view extension()
+public void VTIRegularGridOutput<dimension>(std::string_view filename)
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const RegularGrid<dimension> & grid)
+public std::vector<std::string> write(const RegularGrid<dimension> & grid)
+```
+
+
+### extension
+
+```cpp
+public static std::string_view extension()
 ```
 
 

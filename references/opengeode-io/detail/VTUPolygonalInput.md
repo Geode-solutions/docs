@@ -25,28 +25,21 @@ Inherits from PolygonalSurfaceInput<3>
 ### VTUPolygonalInput
 
 ```cpp
-public void VTUPolygonalInput(basic_string_view filename)
+public void VTUPolygonalInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public unique_ptr read(const MeshImpl & impl)
-```
-
-
-### is_loadable
-
-```cpp
-public Percentage is_loadable()
+public std::unique_ptr<PolygonalSurface3D> read(const MeshImpl & impl)
 ```
 
 
@@ -61,6 +54,13 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 

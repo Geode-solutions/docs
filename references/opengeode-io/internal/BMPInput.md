@@ -22,24 +22,10 @@ Inherits from RasterImageInput<2>
 
 ## Functions
 
-### BMPInput
-
-```cpp
-public void BMPInput(basic_string_view filename)
-```
-
-
-### extension
-
-```cpp
-public basic_string_view extension()
-```
-
-
 ### read
 
 ```cpp
-public RasterImage read()
+public RasterImage2D read()
 ```
 
 
@@ -50,10 +36,17 @@ public AdditionalFiles additional_files()
 ```
 
 
-### object_priority
+### BMPInput
 
 ```cpp
-public index_t object_priority()
+public void BMPInput(std::string_view filename)
+```
+
+
+### extension
+
+```cpp
+public static std::string_view extension()
 ```
 
 
@@ -61,6 +54,13 @@ public index_t object_priority()
 
 ```cpp
 public Percentage is_loadable()
+```
+
+
+### object_priority
+
+```cpp
+public index_t object_priority()
 ```
 
 

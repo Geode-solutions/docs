@@ -20,6 +20,15 @@ Inherits from VTKInputImpl<Mesh>
 
 
 
+## Members
+
+```cpp
+public static const auto dimension
+
+```
+
+
+
 ## Records
 
 GridAttributes
@@ -31,14 +40,7 @@ GridAttributes
 ### VTIGridInputImpl
 
 ```cpp
-public void VTIGridInputImpl<Mesh>(basic_string_view filename)
-```
-
-
-### read_grid_attributes
-
-```cpp
-protected GridAttributes read_grid_attributes(const pugi::xml_node & vtk_object)
+public void VTIGridInputImpl<Mesh>(std::string_view filename)
 ```
 
 
@@ -47,6 +49,13 @@ protected GridAttributes read_grid_attributes(const pugi::xml_node & vtk_object)
 ```cpp
 protected void build_grid(const pugi::xml_node & vtk_object)
 ```
+
+### read_grid_attributes
+
+```cpp
+protected static GridAttributes read_grid_attributes(const pugi::xml_node & vtk_object)
+```
+
 
 
 

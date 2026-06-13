@@ -25,21 +25,21 @@ Inherits from PointSetOutput<dimension>
 ### VTPPointSetOutput
 
 ```cpp
-public void VTPPointSetOutput<dimension>(basic_string_view filename)
+public void VTPPointSetOutput<dimension>(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const PointSet<dimension> & point_set)
+public std::vector<std::string> write(const PointSet<dimension> & point_set)
 ```
 
 

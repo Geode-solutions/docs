@@ -25,28 +25,14 @@ Inherits from PolyhedralSolidInput<3>
 ### VTUPolyhedralInput
 
 ```cpp
-public void VTUPolyhedralInput(basic_string_view filename)
+public void VTUPolyhedralInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public unique_ptr read(const MeshImpl & impl)
-```
-
-
-### is_loadable
-
-```cpp
-public Percentage is_loadable()
+public static std::string_view extension()
 ```
 
 
@@ -57,10 +43,24 @@ public AdditionalFiles additional_files()
 ```
 
 
+### read
+
+```cpp
+public std::unique_ptr<PolyhedralSolid3D> read(const MeshImpl & impl)
+```
+
+
 ### object_priority
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 

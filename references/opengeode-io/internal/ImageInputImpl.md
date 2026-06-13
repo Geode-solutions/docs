@@ -25,21 +25,21 @@ Inherits from GDALFile
 ### ImageInputImpl
 
 ```cpp
-public void ImageInputImpl(basic_string_view filename)
+public void ImageInputImpl(std::string_view filename)
 ```
 
 
 ### read_file
 
 ```cpp
-public RasterImage read_file()
+public RasterImage2D read_file()
 ```
 
 
 ### read_reversed_y_axis_file
 
 ```cpp
-public RasterImage read_reversed_y_axis_file()
+public RasterImage2D read_reversed_y_axis_file()
 ```
 
 

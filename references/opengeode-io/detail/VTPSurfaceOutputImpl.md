@@ -25,7 +25,7 @@ Inherits from VTKMeshOutputImpl<Mesh, dimension>
 ### VTPSurfaceOutputImpl
 
 ```cpp
-public void VTPSurfaceOutputImpl<Mesh, dimension>(basic_string_view filename, const Mesh<dimension> & polygonal_surface)
+public void VTPSurfaceOutputImpl<Mesh, dimension>(std::string_view filename, const Mesh<dimension> & polygonal_surface)
 ```
 
 

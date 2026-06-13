@@ -25,21 +25,14 @@ Inherits from TriangulatedSurfaceInput<3>
 ### SMESHTriangulatedInput
 
 ```cpp
-public void SMESHTriangulatedInput(basic_string_view filename)
+public void SMESHTriangulatedInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public unique_ptr read(const MeshImpl & impl)
+public static std::string_view extension()
 ```
 
 
@@ -54,6 +47,13 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public std::unique_ptr<TriangulatedSurface3D> read(const MeshImpl & impl)
 ```
 
 

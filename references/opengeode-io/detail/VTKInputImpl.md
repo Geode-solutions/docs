@@ -23,6 +23,19 @@ public void ~VTKInputImpl<Mesh>()
 ```
 
 
+### initialize_mesh
+
+```cpp
+protected void initialize_mesh(std::unique_ptr<Mesh> && mesh)
+```
+
+
+### is_vtk_object_loadable
+
+```cpp
+protected void is_vtk_object_loadable(const pugi::xml_node & vtk_object, std::vector<Percentage> & percentages)
+```
+
 ### read_file
 
 ```cpp
@@ -40,27 +53,14 @@ public Percentage is_loadable()
 ### VTKInputImpl
 
 ```cpp
-protected void VTKInputImpl<Mesh>(basic_string_view filename, const char * type)
+protected void VTKInputImpl<Mesh>(std::string_view filename, const char * type)
 ```
 
-
-### is_vtk_object_loadable
-
-```cpp
-protected void is_vtk_object_loadable(const pugi::xml_node & vtk_object, std::vector<Percentage> & percentages)
-```
 
 ### read_common_data
 
 ```cpp
 protected void read_common_data()
-```
-
-
-### initialize_mesh
-
-```cpp
-protected void initialize_mesh(std::unique_ptr<Mesh> && mesh)
 ```
 
 
@@ -74,14 +74,14 @@ protected Mesh & mesh()
 ### match
 
 ```cpp
-protected bool match(basic_string_view query, basic_string_view ref)
+protected bool match(std::string_view query, std::string_view ref)
 ```
 
 
 ### read_attribute
 
 ```cpp
-protected index_t read_attribute(const pugi::xml_node & piece, basic_string_view attribute)
+protected index_t read_attribute(const pugi::xml_node & piece, std::string_view attribute)
 ```
 
 
@@ -116,7 +116,7 @@ protected std::vector<Out> cast_to(absl::Span<const In> values)
 ### build_attribute
 
 ```cpp
-protected void build_attribute(AttributeManager & manager, basic_string_view name, absl::Span<const T> values, index_t nb_components, index_t offset)
+protected void build_attribute(AttributeManager & manager, std::string_view name, absl::Span<const T> values, index_t nb_components, index_t offset)
 ```
 
 
@@ -137,14 +137,14 @@ protected void read_data(const pugi::xml_node & point_data, index_t offset, Attr
 ### read_appended_data
 
 ```cpp
-protected basic_string_view read_appended_data(const pugi::xml_node & data)
+protected std::string_view read_appended_data(const pugi::xml_node & data)
 ```
 
 
 ### decode
 
 ```cpp
-protected std::vector<T> decode(basic_string_view input)
+protected std::vector<T> decode(std::string_view input)
 ```
 
 

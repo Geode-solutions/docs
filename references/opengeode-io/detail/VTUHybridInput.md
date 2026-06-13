@@ -25,28 +25,14 @@ Inherits from HybridSolidInput<3>
 ### VTUHybridInput
 
 ```cpp
-public void VTUHybridInput(basic_string_view filename)
+public void VTUHybridInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public unique_ptr read(const MeshImpl & impl)
-```
-
-
-### is_loadable
-
-```cpp
-public Percentage is_loadable()
+public static std::string_view extension()
 ```
 
 
@@ -57,10 +43,24 @@ public AdditionalFiles additional_files()
 ```
 
 
+### read
+
+```cpp
+public std::unique_ptr<HybridSolid3D> read(const MeshImpl & impl)
+```
+
+
 ### object_priority
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 

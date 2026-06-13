@@ -25,7 +25,7 @@ Inherits from GMSHElement
 ### GMSHEdge
 
 ```cpp
-public void GMSHEdge(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, Span vertex_ids)
+public void GMSHEdge(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, absl::Span<const std::string_view> vertex_ids)
 ```
 
 

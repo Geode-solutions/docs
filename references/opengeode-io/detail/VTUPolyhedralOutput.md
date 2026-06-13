@@ -25,21 +25,21 @@ Inherits from PolyhedralSolidOutput<3>
 ### VTUPolyhedralOutput
 
 ```cpp
-public void VTUPolyhedralOutput(basic_string_view filename)
+public void VTUPolyhedralOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const PolyhedralSolid3D & solid)
+public std::vector<std::string> write(const PolyhedralSolid3D & solid)
 ```
 
 

@@ -16,10 +16,17 @@ const name = words.join('-');
 
 ## Functions
 
+### additional_files
+
+```cpp
+public AdditionalFiles additional_files()
+```
+
+
 ### GDALFile
 
 ```cpp
-public void GDALFile(basic_string_view filename)
+public void GDALFile(std::string_view filename)
 ```
 
 
@@ -33,7 +40,7 @@ public void ~GDALFile()
 ### read_coordinate_system
 
 ```cpp
-public CoordinateSystem read_coordinate_system()
+public CoordinateSystem2D read_coordinate_system()
 ```
 
 
@@ -41,13 +48,6 @@ public CoordinateSystem read_coordinate_system()
 
 ```cpp
 public bool is_coordinate_system_loadable()
-```
-
-
-### additional_files
-
-```cpp
-public AdditionalFiles additional_files()
 ```
 
 

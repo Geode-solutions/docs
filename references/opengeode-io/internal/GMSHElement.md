@@ -19,14 +19,7 @@ const name = words.join('-');
 ### GMSHElement
 
 ```cpp
-public void GMSHElement(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, geode::index_t nb_vertices, Span vertex_ids)
-```
-
-
-### ~GMSHElement
-
-```cpp
-public void ~GMSHElement()
+public void GMSHElement(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, geode::index_t nb_vertices, absl::Span<const std::string_view> vertex_ids)
 ```
 
 
@@ -35,6 +28,13 @@ public void ~GMSHElement()
 ```cpp
 public void add_element(geode::BRep & brep, GmshId2Uuids & id_map)
 ```
+
+### ~GMSHElement
+
+```cpp
+public void ~GMSHElement()
+```
+
 
 ### physical_entity_id
 

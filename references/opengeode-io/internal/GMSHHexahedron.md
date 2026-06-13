@@ -25,7 +25,7 @@ Inherits from GMSHSolidPolyhedron
 ### GMSHHexahedron
 
 ```cpp
-public void GMSHHexahedron(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, Span vertex_ids)
+public void GMSHHexahedron(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, absl::Span<const std::string_view> vertex_ids)
 ```
 
 

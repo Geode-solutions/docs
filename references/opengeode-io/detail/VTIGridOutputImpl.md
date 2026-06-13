@@ -25,7 +25,7 @@ Inherits from VTIOutputImpl<Grid<dimension> >
 ### VTIGridOutputImpl
 
 ```cpp
-public void VTIGridOutputImpl<dimension>(const Grid<dimension> & grid, basic_string_view filename)
+public void VTIGridOutputImpl<dimension>(const Grid<dimension> & grid, std::string_view filename)
 ```
 
 

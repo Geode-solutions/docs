@@ -25,7 +25,7 @@ Inherits from VTKInputImpl<Mesh>
 ### VTKMeshInputImpl
 
 ```cpp
-protected void VTKMeshInputImpl<Mesh>(basic_string_view filename, const MeshImpl & impl, const char * type)
+protected void VTKMeshInputImpl<Mesh>(std::string_view filename, const MeshImpl & impl, const char * type)
 ```
 
 
@@ -39,7 +39,7 @@ protected MeshBuilder & builder()
 ### get_cell_vertices
 
 ```cpp
-protected FixedArray get_cell_vertices(Span connectivity, Span offsets)
+protected absl::FixedArray<std::vector<index_t>> get_cell_vertices(absl::Span<const int64_t> connectivity, absl::Span<const int64_t> offsets)
 ```
 
 

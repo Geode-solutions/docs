@@ -19,7 +19,7 @@ const name = words.join('-');
 ### CsvInputHelpers
 
 ```cpp
-public void CsvInputHelpers(basic_string_view filename)
+public void CsvInputHelpers(std::string_view filename)
 ```
 
 
@@ -82,7 +82,7 @@ public void set_first_row(index_t first_row)
 ### create_point_set
 
 ```cpp
-public unique_ptr create_point_set()
+public std::unique_ptr<PointSet3D> create_point_set()
 ```
 
 

@@ -25,7 +25,14 @@ Inherits from GMSHElement
 ### GMSHSolidPolyhedron
 
 ```cpp
-public void GMSHSolidPolyhedron(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, geode::index_t nb_vertices, Span vertex_ids)
+public void GMSHSolidPolyhedron(geode::index_t physical_entity_id, geode::index_t elementary_entity_id, geode::index_t nb_vertices, absl::Span<const std::string_view> vertex_ids)
+```
+
+
+### add_element
+
+```cpp
+public void add_element(geode::BRep & brep, GmshId2Uuids & id_map)
 ```
 
 
@@ -34,13 +41,6 @@ public void GMSHSolidPolyhedron(geode::index_t physical_entity_id, geode::index_
 ```cpp
 public geode::index_t create_gmsh_polyhedron(geode::BRepBuilder & builder, const geode::uuid & block_uuid, const std::vector<geode::index_t> & v_ids)
 ```
-
-### add_element
-
-```cpp
-public void add_element(geode::BRep & brep, GmshId2Uuids & id_map)
-```
-
 
 
 

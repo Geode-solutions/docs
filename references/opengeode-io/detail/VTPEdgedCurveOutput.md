@@ -25,21 +25,21 @@ Inherits from EdgedCurveOutput<dimension>
 ### VTPEdgedCurveOutput
 
 ```cpp
-public void VTPEdgedCurveOutput<dimension>(basic_string_view filename)
+public void VTPEdgedCurveOutput<dimension>(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const EdgedCurve<dimension> & curve)
+public std::vector<std::string> write(const EdgedCurve<dimension> & curve)
 ```
 
 

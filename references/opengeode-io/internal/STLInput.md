@@ -22,24 +22,31 @@ Inherits from TriangulatedSurfaceInput<3>
 
 ## Functions
 
+### read
+
+```cpp
+public std::unique_ptr<TriangulatedSurface3D> read(const MeshImpl & impl)
+```
+
+
 ### STLInput
 
 ```cpp
-public void STLInput(basic_string_view filename)
+public void STLInput(std::string_view filename)
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public unique_ptr read(const MeshImpl & impl)
+public static std::string_view extension()
 ```
 
 
@@ -54,13 +61,6 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
-```
-
-
-### is_loadable
-
-```cpp
-public Percentage is_loadable()
 ```
 
 

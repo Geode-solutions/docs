@@ -25,21 +25,21 @@ Inherits from HybridSolidOutput<3>
 ### VTUHybridOutput
 
 ```cpp
-public void VTUHybridOutput(basic_string_view filename)
+public void VTUHybridOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const HybridSolid3D & solid)
+public std::vector<std::string> write(const HybridSolid3D & solid)
 ```
 
 

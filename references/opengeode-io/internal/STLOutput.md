@@ -22,24 +22,24 @@ Inherits from TriangulatedSurfaceOutput<3>
 
 ## Functions
 
+### write
+
+```cpp
+public std::vector<std::string> write(const TriangulatedSurface3D & surface)
+```
+
+
 ### STLOutput
 
 ```cpp
-public void STLOutput(basic_string_view filename)
+public void STLOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### write
-
-```cpp
-public vector write(const TriangulatedSurface3D & surface)
+public static std::string_view extension()
 ```
 
 

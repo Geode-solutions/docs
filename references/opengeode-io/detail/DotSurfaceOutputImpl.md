@@ -19,7 +19,7 @@ const name = words.join('-');
 ### DotSurfaceOutputImpl
 
 ```cpp
-public void DotSurfaceOutputImpl<Mesh>(basic_string_view filename, const Mesh & surface)
+public void DotSurfaceOutputImpl<Mesh>(std::string_view filename, const Mesh & surface)
 ```
 
 

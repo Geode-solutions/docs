@@ -25,28 +25,14 @@ Inherits from RegularGridInput<dimension>
 ### VTIRegularGridInput
 
 ```cpp
-public void VTIRegularGridInput<dimension>(basic_string_view filename)
+public void VTIRegularGridInput<dimension>(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### read
-
-```cpp
-public std::unique_ptr<RegularGrid<dimension> > read(const MeshImpl & impl)
-```
-
-
-### is_loadable
-
-```cpp
-public Percentage is_loadable()
+public static std::string_view extension()
 ```
 
 
@@ -61,6 +47,20 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public index_t object_priority()
+```
+
+
+### read
+
+```cpp
+public std::unique_ptr<RegularGrid<dimension>> read(const MeshImpl & impl)
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 

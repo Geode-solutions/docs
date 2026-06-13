@@ -25,28 +25,21 @@ Inherits from TetrahedralSolidInput<3>
 ### VTUTetrahedralInput
 
 ```cpp
-public void VTUTetrahedralInput(basic_string_view filename)
+public void VTUTetrahedralInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### read
 
 ```cpp
-public unique_ptr read(const MeshImpl & impl)
-```
-
-
-### is_loadable
-
-```cpp
-public Percentage is_loadable()
+public std::unique_ptr<TetrahedralSolid3D> read(const MeshImpl & impl)
 ```
 
 
@@ -54,6 +47,13 @@ public Percentage is_loadable()
 
 ```cpp
 public AdditionalFiles additional_files()
+```
+
+
+### is_loadable
+
+```cpp
+public Percentage is_loadable()
 ```
 
 

@@ -22,24 +22,10 @@ Inherits from RasterImageInput<2>
 
 ## Functions
 
-### TIFFInput
-
-```cpp
-public void TIFFInput(basic_string_view filename)
-```
-
-
-### extensions
-
-```cpp
-public vector extensions()
-```
-
-
 ### read
 
 ```cpp
-public RasterImage read()
+public RasterImage2D read()
 ```
 
 
@@ -50,10 +36,10 @@ public AdditionalFiles additional_files()
 ```
 
 
-### object_priority
+### TIFFInput
 
 ```cpp
-public index_t object_priority()
+public void TIFFInput(std::string_view filename)
 ```
 
 
@@ -61,6 +47,20 @@ public index_t object_priority()
 
 ```cpp
 public Percentage is_loadable()
+```
+
+
+### extensions
+
+```cpp
+public static std::vector<std::string> extensions()
+```
+
+
+### object_priority
+
+```cpp
+public index_t object_priority()
 ```
 
 

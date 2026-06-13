@@ -25,21 +25,28 @@ Inherits from PointSetInput<3>
 ### CSVInput
 
 ```cpp
-public void CSVInput(basic_string_view filename)
+public void CSVInput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
+```
+
+
+### object_priority
+
+```cpp
+public index_t object_priority()
 ```
 
 
 ### read
 
 ```cpp
-public unique_ptr read(const MeshImpl & impl)
+public std::unique_ptr<PointSet3D> read(const MeshImpl & impl)
 ```
 
 
@@ -54,13 +61,6 @@ public AdditionalFiles additional_files()
 
 ```cpp
 public Percentage is_loadable()
-```
-
-
-### object_priority
-
-```cpp
-public index_t object_priority()
 ```
 
 

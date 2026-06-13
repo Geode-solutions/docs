@@ -26,7 +26,7 @@ public void write_file()
 ### VTKOutputImpl
 
 ```cpp
-protected void VTKOutputImpl<Mesh>(basic_string_view filename, const Mesh & mesh, const char * type)
+protected void VTKOutputImpl<Mesh>(std::string_view filename, const Mesh & mesh, const char * type)
 ```
 
 
@@ -47,7 +47,7 @@ protected const Mesh & mesh()
 ### filename
 
 ```cpp
-protected basic_string_view filename()
+protected std::string_view filename()
 ```
 
 
@@ -61,14 +61,14 @@ protected void write_attributes(pugi::xml_node & attribute_node, const Attribute
 ### write_attributes
 
 ```cpp
-protected void write_attributes(pugi::xml_node & attribute_node, const AttributeManager & manager, Span elements)
+protected void write_attributes(pugi::xml_node & attribute_node, const AttributeManager & manager, absl::Span<const index_t> elements)
 ```
 
 
 ### write_attribute_header
 
 ```cpp
-protected xml_node write_attribute_header(pugi::xml_node & attribute_node, basic_string_view name, local_index_t nb_components)
+protected pugi::xml_node write_attribute_header(pugi::xml_node & attribute_node, std::string_view name, local_index_t nb_components)
 ```
 
 

@@ -25,14 +25,14 @@ Inherits from VTKMeshInputImpl<Mesh>
 ### VTUInputImpl
 
 ```cpp
-protected void VTUInputImpl<Mesh>(basic_string_view filename, const geode::MeshImpl & impl)
+protected void VTUInputImpl<Mesh>(std::string_view filename, const geode::MeshImpl & impl)
 ```
 
 
 ### read_cells
 
 ```cpp
-protected tuple read_cells(const pugi::xml_node & piece, index_t nb_cells)
+protected std::tuple<absl::FixedArray<std::vector<index_t>>, std::vector<uint8_t>> read_cells(const pugi::xml_node & piece, index_t nb_cells)
 ```
 
 

@@ -19,7 +19,7 @@ const name = words.join('-');
 ### AssimpMeshOutput
 
 ```cpp
-public void AssimpMeshOutput<SurfaceMesh>(basic_string_view filename, const SurfaceMesh & surface_mesh, basic_string_view assimp_export_id)
+public void AssimpMeshOutput<SurfaceMesh>(std::string_view filename, const SurfaceMesh & surface_mesh, std::string_view assimp_export_id)
 ```
 
 

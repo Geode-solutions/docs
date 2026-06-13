@@ -25,7 +25,7 @@ Inherits from VTKMeshOutputImpl<Mesh, 3>
 ### VTUOutputImpl
 
 ```cpp
-protected void VTUOutputImpl<Mesh>(basic_string_view filename, const Mesh<3> & solid)
+protected void VTUOutputImpl<Mesh>(std::string_view filename, const Mesh<3> & solid)
 ```
 
 

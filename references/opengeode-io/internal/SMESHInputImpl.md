@@ -19,7 +19,7 @@ const name = words.join('-');
 ### SMESHInputImpl
 
 ```cpp
-public void SMESHInputImpl<Mesh, element>(basic_string_view filename, Mesh & mesh)
+public void SMESHInputImpl<Mesh, element>(std::string_view filename, Mesh & mesh)
 ```
 
 

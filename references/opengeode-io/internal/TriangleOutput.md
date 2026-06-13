@@ -25,21 +25,21 @@ Inherits from TriangulatedSurfaceOutput<2>
 ### TriangleOutput
 
 ```cpp
-public void TriangleOutput(basic_string_view filename)
+public void TriangleOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const TriangulatedSurface2D & surface)
+public std::vector<std::string> write(const TriangulatedSurface2D & surface)
 ```
 
 

@@ -22,24 +22,24 @@ Inherits from PolygonalSurfaceOutput<3>
 
 ## Functions
 
+### write
+
+```cpp
+public std::vector<std::string> write(const PolygonalSurface3D & surface)
+```
+
+
 ### OBJPolygonalOutput
 
 ```cpp
-public void OBJPolygonalOutput(basic_string_view filename)
+public void OBJPolygonalOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
-```
-
-
-### write
-
-```cpp
-public vector write(const PolygonalSurface3D & surface)
+public static std::string_view extension()
 ```
 
 

@@ -40,7 +40,7 @@ public void GmshElementID()
 ### GmshElementID
 
 ```cpp
-public void GmshElementID(NamedType gmsh_type, geode::index_t gmsh_id)
+public void GmshElementID(geode::ComponentType gmsh_type, geode::index_t gmsh_id)
 ```
 
 

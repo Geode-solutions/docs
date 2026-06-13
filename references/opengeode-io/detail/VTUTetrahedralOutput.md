@@ -25,21 +25,21 @@ Inherits from TetrahedralSolidOutput<3>
 ### VTUTetrahedralOutput
 
 ```cpp
-public void VTUTetrahedralOutput(basic_string_view filename)
+public void VTUTetrahedralOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const TetrahedralSolid3D & solid)
+public std::vector<std::string> write(const TetrahedralSolid3D & solid)
 ```
 
 

@@ -25,21 +25,21 @@ Inherits from GraphOutput
 ### GEXFOutput
 
 ```cpp
-public void GEXFOutput(basic_string_view filename)
+public void GEXFOutput(std::string_view filename)
 ```
 
 
 ### extension
 
 ```cpp
-public basic_string_view extension()
+public static std::string_view extension()
 ```
 
 
 ### write
 
 ```cpp
-public vector write(const Graph & curve)
+public std::vector<std::string> write(const Graph & curve)
 ```
 
 

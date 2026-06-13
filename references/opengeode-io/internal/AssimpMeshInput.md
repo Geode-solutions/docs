@@ -25,7 +25,7 @@ const name = words.join('-');
 ### AssimpMeshInput
 
 ```cpp
-public void AssimpMeshInput<Mesh>(basic_string_view filename)
+public void AssimpMeshInput<Mesh>(std::string_view filename)
 ```
 
 
